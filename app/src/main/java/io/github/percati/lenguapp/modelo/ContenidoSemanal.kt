@@ -15,6 +15,13 @@ import kotlinx.serialization.json.jsonObject
 @Serializable(with = ContenidoSemanalSerializer::class)
 sealed interface ContenidoSemanal
 
+/** El id ya es unico entre Ficha y SemanaEspecial (prefijos distintos); sirve para indexar por id sin conocer el subtipo. */
+val ContenidoSemanal.id: String
+    get() = when (this) {
+        is Ficha -> id
+        is SemanaEspecial -> id
+    }
+
 internal object ContenidoSemanalSerializer :
     JsonContentPolymorphicSerializer<ContenidoSemanal>(ContenidoSemanal::class) {
     override fun selectDeserializer(element: JsonElement) =
