@@ -1,0 +1,68 @@
+{
+  "idioma": "en",
+  "_nota": "Los PDF de Oxford y los CSV de CEFR-J NO se versionan en el repo. Descargarlos con las URL de abajo y colocarlos en fuentes/. Citar segun FUENTES-INGLES.md seccion 5.",
+  "fuentes": [
+    {
+      "id": "oxford-3000-brE",
+      "formato": "oxford",
+      "variante": "BrE",
+      "anio": 2024,
+      "archivo": "fuentes/The_Oxford_3000.pdf",
+      "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_3000.pdf"
+    },
+    {
+      "id": "oxford-3000-amE",
+      "formato": "oxford",
+      "variante": "AmE",
+      "anio": 2024,
+      "archivo": "fuentes/American_Oxford_3000.pdf",
+      "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/American_Oxford_3000.pdf"
+    },
+    {
+      "id": "oxford-5000-brE",
+      "formato": "oxford",
+      "variante": "BrE",
+      "anio": 2024,
+      "archivo": "fuentes/The_Oxford_5000.pdf",
+      "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/The_Oxford_5000.pdf"
+    },
+    {
+      "id": "oxford-5000-amE",
+      "formato": "oxford",
+      "variante": "AmE",
+      "anio": 2024,
+      "archivo": "fuentes/American_Oxford_5000.pdf",
+      "url": "https://www.oxfordlearnersdictionaries.com/external/pdf/wordlists/oxford-3000-5000/American_Oxford_5000.pdf"
+    },
+    {
+      "id": "cefrj-vocab-1.5",
+      "formato": "csv",
+      "anio": 2020,
+      "archivo": "fuentes/cefrj-vocabulary-profile-1.5.csv",
+      "url": "https://raw.githubusercontent.com/openlanguageprofiles/olp-en-cefrj/master/cefrj-vocabulary-profile-1.5.csv"
+    },
+    {
+      "id": "octanove-c1c2-1.0",
+      "formato": "csv",
+      "anio": 2020,
+      "archivo": "fuentes/octanove-vocabulary-profile-c1c2-1.0.csv",
+      "url": "https://raw.githubusercontent.com/openlanguageprofiles/olp-en-cefrj/master/octanove-vocabulary-profile-c1c2-1.0.csv"
+    },
+    {
+      "id": "cefrj-vocab-1.6",
+      "formato": "csv",
+      "anio": 2020,
+      "archivo": "fuentes/cefrj-16.csv",
+      "url": "http://www.cefr-j.org/download.html (requiere aceptar licencia)"
+    },
+    {
+      "id": "cambridge-b1-preliminary",
+      "formato": "cambridge",
+      "variante": "BrE",
+      "anio": 2025,
+      "archivo": "fuentes/506887b1preliminaryvocabularylist.pdf",
+      "url": "https://www.cambridgeenglish.org/ (B1 Preliminary vocabulary list)",
+      "_nota": "Unica fuente inglesa que etiqueta phrasal verbs (phr v) y frases (phr)."
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/USUARIO/retos-linguisticos/schema/ficha.schema.json",
+  "title": "Ficha semanal",
+  "description": "Una aparicion (occurrence) de un Skill en un nivel concreto, con su Topic asignado. Es la unidad que la app muestra una semana.",
+  "type": "object",
+  "required": [
+    "id",
+    "skillId",
+    "order",
+    "idioma",
+    "nivel",
+    "categoria",
+    "topicId",
+    "titulo",
+    "subtitulo",
+    "challengeType",
+    "evidencia",
+    "descripcion",
+    "ejemplos",
+    "notas",
+    "errores",
+    "vocabulario",
+    "redemittel",
+    "mision",
+    "microtareas",
+    "autochequeo",
+    "promptCorreccion"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(EN|DE|ES|FR|IT|PT)-[A-Z]\\d{2}-[ABC][12]-\\d$",
+      "description": "skillId + nivel + order. Ej: DE-G01-B2-1"
+    },
+    "skillId": {
+      "type": "string",
+      "pattern": "^(EN|DE|ES|FR|IT|PT)-[A-Z]\\d{2}$"
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4,
+      "description": "Cual de las apariciones del anio es esta"
+    },
+    "idioma": {
+      "enum": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "pt"
+      ]
+    },
+    "nivel": {
+      "enum": [
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ]
+    },
+    "categoria": {
+      "enum": [
+        "grammar",
+        "fluency",
+        "vocabulary"
+      ]
+    },
+    "topicId": {
+      "type": "string",
+      "pattern": "^T\\d{2}$"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "subtitulo": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 160,
+      "description": "Enfoque propio de ESTA aparicion. Debe diferir entre orders."
+    },
+    "ancla": {
+      "type": "string",
+      "description": "Referencia MCER/EGP/Profile deutsch/Goethe"
+    },
+    "challengeType": {
+      "enum": [
+        "chunk_deployment",
+        "guided_production",
+        "constrained_production",
+        "open_production",
+        "adaptive_production"
+      ]
+    },
+    "bilingue": {
+      "type": "boolean",
+      "default": false,
+      "description": "true en A2 y B1: la prosa se muestra tambien en la lengua base"
+    },
+    "evidencia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "escritura",
+        "oralMin",
+        "minutosEstimados"
+      ],
+      "properties": {
+        "escritura": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "oralMin": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 30
+        },
+        "minutosEstimados": {
+          "type": "integer",
+          "minimum": 10,
+          "maximum": 180
+        }
+      }
+    },
+    "descripcion": {
+      "type": "string",
+      "minLength": 200,
+      "maxLength": 1600
+    },
+    "cuadroReferencia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "titulo",
+        "columnas",
+        "filas"
+      ],
+      "description": "Tabla consultable. Obligatoria de facto en grammar y vocabulary.",
+      "properties": {
+        "titulo": {
+          "type": "string"
+        },
+        "columnas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "maxItems": 5
+        },
+        "filas": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 20,
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "notaPie": {
+          "type": "string"
+        }
+      }
+    },
+    "ejemplos": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "texto"
+        ],
+        "properties": {
+          "grupo": {
+            "type": "string"
+          },
+          "texto": {
+            "type": "string",
+            "minLength": 5
+          },
+          "audio": {
+            "type": "boolean",
+            "default": false,
+            "description": "true => se genera MP3 con Piper (normal y 80%)"
+          }
+        }
+      },
+      "description": "Ejemplos de la ficha mas las lineas marcadas para audio que no coincidan con ninguno. El tope es 14 porque una ficha con 6 ejemplos y 5 lineas de audio distintas es contenido legitimo, no exceso."
+    },
+    "notas": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 8,
+      "items": {
+        "type": "string",
+        "minLength": 20
+      }
+    },
+    "contraste": {
+      "type": "object",
+      "description": "Una linea por lengua base. Solo 'es' esta poblado en 2026.",
+      "propertyNames": {
+        "enum": [
+          "es",
+          "en",
+          "de",
+          "fr",
+          "it",
+          "pt"
+        ]
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 20
+      }
+    },
+    "errores": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 8,
+      "items": {
+        "type": "string",
+        "minLength": 10
+      }
+    },
+    "vocabulario": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 18,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "item",
+          "prioridad",
+          "traducciones"
+        ],
+        "properties": {
+          "item": {
+            "type": "string",
+            "minLength": 2
+          },
+          "prioridad": {
+            "enum": [
+              "nucleo",
+              "ampliacion"
+            ]
+          },
+          "reccion": {
+            "type": "string",
+            "description": "Caso o preposicion que rige. Obligatorio de facto en aleman."
+          },
+          "tipo": {
+            "type": "string"
+          },
+          "nota": {
+            "type": "string"
+          },
+          "variante": {
+            "type": "string",
+            "description": "p.ej. CH para helvetismos"
+          },
+          "nivelVerificado": {
+            "type": "string",
+            "description": "Lo rellena check_level.py; no se escribe a mano."
+          },
+          "traducciones": {
+            "type": "object",
+            "propertyNames": {
+              "enum": [
+                "es",
+                "en",
+                "de",
+                "fr",
+                "it",
+                "pt"
+              ]
+            },
+            "additionalProperties": {
+              "type": "string"
+            },
+            "minProperties": 1
+          }
+        }
+      }
+    },
+    "redemittel": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "expresion",
+          "funcion",
+          "traducciones"
+        ],
+        "properties": {
+          "expresion": {
+            "type": "string"
+          },
+          "funcion": {
+            "type": "string",
+            "description": "Que hace, no que significa"
+          },
+          "traducciones": {
+            "type": "object",
+            "propertyNames": {
+              "enum": [
+                "es",
+                "en",
+                "de",
+                "fr",
+                "it",
+                "pt"
+              ]
+            },
+            "additionalProperties": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "null = sin equivalencia directa; se aprende por situacion"
+            }
+          }
+        }
+      }
+    },
+    "mision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "consigna",
+        "requisitos"
+      ],
+      "properties": {
+        "consigna": {
+          "type": "string",
+          "minLength": 30
+        },
+        "requisitos": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 8,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "microtareas": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "dia",
+          "texto",
+          "minutos"
+        ],
+        "properties": {
+          "dia": {
+            "enum": [
+              "lun",
+              "mie",
+              "vie"
+            ]
+          },
+          "texto": {
+            "type": "string",
+            "minLength": 15
+          },
+          "minutos": {
+            "type": "integer",
+            "minimum": 2,
+            "maximum": 20
+          }
+        }
+      }
+    },
+    "autochequeo": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "string",
+        "minLength": 10
+      },
+      "description": "Cinco preguntas de si/no antes de entregar"
+    },
+    "promptCorreccion": {
+      "type": "string",
+      "minLength": 150
+    },
+    "skillsRelacionados": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Solo dato; no se muestra en la ficha"
+    },
+    "topicBlocklist": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^T\\d{2}$"
+      },
+      "description": "Topics con los que este skill no debe combinarse"
+    },
+    "variante": {
+      "type": "string",
+      "description": "Variedad regional a la que pertenece esta ficha (CH, AT, AmE, BrE, rioplatense...). Si esta presente, la app DEBE mostrarla etiquetada y permitir desactivarla. Ausente = estandar."
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "nivel": {
+            "enum": [
+              "A2",
+              "B1"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "bilingue": {
+            "const": true
+          }
+        },
+        "description": "A2 y B1 son bilingues por decision de diseno"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "idioma": {
+            "const": "de"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "vocabulario": {
+            "items": {
+              "required": [
+                "item",
+                "prioridad",
+                "traducciones",
+                "reccion"
+              ]
+            }
+          }
+        },
+        "description": "En aleman el caso/reccion es obligatorio"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "categoria": {
+            "enum": [
+              "grammar",
+              "vocabulary"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "cuadroReferencia"
+        ]
+      }
+    }
+  ]
+}
