@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "org.lenguapp.app"
+    namespace = "io.github.percati.lenguapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "org.lenguapp.app"
+        applicationId = "io.github.percati.lenguapp"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

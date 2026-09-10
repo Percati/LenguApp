@@ -1,12 +1,12 @@
-package org.lenguapp.app.datos
+package io.github.percati.lenguapp.datos
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Assert.fail
 import org.junit.Test
-import org.lenguapp.app.modelo.Clase
-import org.lenguapp.app.modelo.Ficha
-import org.lenguapp.app.modelo.SemanaEspecial
+import io.github.percati.lenguapp.modelo.Clase
+import io.github.percati.lenguapp.modelo.Ficha
+import io.github.percati.lenguapp.modelo.SemanaEspecial
 import java.io.File
 import kotlinx.serialization.SerializationException
 import kotlinx.serialization.json.Json

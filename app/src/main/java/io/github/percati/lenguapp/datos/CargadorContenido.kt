@@ -1,8 +1,8 @@
-package org.lenguapp.app.datos
+package io.github.percati.lenguapp.datos
 
 import android.content.Context
 import kotlinx.serialization.json.Json
-import org.lenguapp.app.modelo.ContenidoSemanal
+import io.github.percati.lenguapp.modelo.ContenidoSemanal
 
 /**
  * Compilar_fichas.py ya valido este JSON contra el schema antes de que

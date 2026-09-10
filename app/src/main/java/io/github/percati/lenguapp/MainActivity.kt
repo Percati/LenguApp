@@ -1,4 +1,4 @@
-package org.lenguapp.app
+package io.github.percati.lenguapp
 
 import android.app.Activity
 import android.os.Bundle

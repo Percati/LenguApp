@@ -1,4 +1,4 @@
-package org.lenguapp.app.modelo
+package io.github.percati.lenguapp.modelo
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
