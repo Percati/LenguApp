@@ -5,3 +5,8 @@ local.properties
 *.iml
 .idea/
 .kotlin/
+
+# Generado por generarCalendarioAssets (app/build.gradle.kts) con
+# proyecto/tools/generar_calendario.py en cada build. No se versiona: el
+# calendario se deriva, no se escribe a mano (ni se copia a mano).
+app/src/main/assets/calendario/

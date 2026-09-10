@@ -4,7 +4,10 @@ import android.content.Context
 import io.github.percati.lenguapp.modelo.EntradaCalendario
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Nivel
-import java.io.FileNotFoundException
+import io.github.percati.lenguapp.semana.CalendarioCargado
+import io.github.percati.lenguapp.semana.DisponibilidadCalendario
+import io.github.percati.lenguapp.semana.clasificarDisponibilidad
+import io.github.percati.lenguapp.semana.nombreArchivoCalendario
 
 private const val CARPETA_CALENDARIO = "calendario"
 
@@ -13,16 +16,20 @@ fun parsearCalendario(texto: String): List<EntradaCalendario> =
     jsonContenido.decodeFromString(texto)
 
 /**
- * `null` si no hay calendario embebido para (anioIso, idioma, nivel): la
- * matriz idioma x nivel x anio esta casi siempre vacia, por diseno (ver
- * CLAUDE.md), y eso no es un error.
+ * Distingue "no hay calendario para este (idioma, nivel)" de "no hay ningun
+ * calendario para este anio": la Fase 4 necesita decirle al usuario cual de
+ * los dos es, no solo que "no hay nada". clasificarDisponibilidad() es la
+ * misma funcion que usan los tests JVM contra los assets reales.
  */
-fun cargarCalendarioDesdeAssets(context: Context, anioIso: Int, idioma: Idioma, nivel: Nivel): List<EntradaCalendario>? {
-    val nombre = "calendario_${anioIso}_${idioma.name.lowercase()}_${nivel.name}.json"
-    val texto = try {
-        context.assets.open("$CARPETA_CALENDARIO/$nombre").bufferedReader().use { it.readText() }
-    } catch (e: FileNotFoundException) {
-        return null
+fun cargarCalendarioDesdeAssets(context: Context, anioIso: Int, idioma: Idioma, nivel: Nivel): CalendarioCargado {
+    val disponibles = context.assets.list(CARPETA_CALENDARIO)?.toSet() ?: emptySet()
+    return when (clasificarDisponibilidad(disponibles, anioIso, idioma, nivel)) {
+        DisponibilidadCalendario.SIN_CALENDARIO_PARA_EL_ANIO -> CalendarioCargado.SinCalendarioParaElAnio
+        DisponibilidadCalendario.SIN_CALENDARIO_PARA_IDIOMA_O_NIVEL -> CalendarioCargado.SinCalendarioParaIdiomaONivel
+        DisponibilidadCalendario.PRESENTE -> {
+            val nombre = nombreArchivoCalendario(anioIso, idioma, nivel)
+            val texto = context.assets.open("$CARPETA_CALENDARIO/$nombre").bufferedReader().use { it.readText() }
+            CalendarioCargado.Encontrado(parsearCalendario(texto))
+        }
     }
-    return parsearCalendario(texto)
 }
