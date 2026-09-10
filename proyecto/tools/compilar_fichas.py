@@ -12,6 +12,22 @@ Uso:
 import argparse, json, re, sys
 from pathlib import Path
 
+# --- Portabilidad Windows -------------------------------------------------
+# En Linux el locale suele ser UTF-8 y todo funciona por accidente. En Windows
+# Python cae a cp1252 y rompe cualquier caracter no ASCII: los "·" de las
+# cabeceras de las fichas, las dieresis, la marca "†". Por eso:
+#   1. toda lectura y escritura de archivos declara encoding="utf-8"
+#   2. stdout y stderr se reconfiguran para no fallar al imprimir
+def _utf8_io():
+    for flujo in (sys.stdout, sys.stderr):
+        try:
+            flujo.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass  # entorno sin reconfigure: no es critico
+
+_utf8_io()
+
+
 # Etiquetas de seccion por idioma. La ficha se escribe en el idioma que se
 # aprende, asi que los encabezados cambian y hay que mapearlos.
 ETIQUETAS = {
@@ -244,11 +260,11 @@ def main():
     val = None
     if a.schema:
         import jsonschema
-        val = jsonschema.Draft202012Validator(json.loads(Path(a.schema).read_text()))
+        val = jsonschema.Draft202012Validator(json.loads(Path(a.schema).read_text(encoding="utf-8")))
 
     ok = fallos = 0
     for f in a.fichas:
-        texto = Path(f).read_text()
+        texto = Path(f).read_text(encoding="utf-8")
         idioma = "de" if re.search(r"Deutsch|Woche", texto[:400]) else "en"
         for bloque in trocear(texto):
             ficha, err = compilar(bloque, idioma)
@@ -265,7 +281,7 @@ def main():
                 fallos += 1
             else:
                 Path(a.salida, ficha["id"] + ".json").write_text(
-                    json.dumps(ficha, ensure_ascii=False, indent=1))
+                    json.dumps(ficha, ensure_ascii=False, indent=1), encoding="utf-8")
                 marca = "~~" if especial else "ok"
                 print(f"  {marca} {ficha['id']:18s} {ficha['titulo'][:42]}")
                 ok += 1

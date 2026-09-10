@@ -23,6 +23,22 @@ Salida distinta de 0 si se supera el umbral de items demasiado faciles.
 import argparse, json, re, sys, unicodedata
 from pathlib import Path
 
+# --- Portabilidad Windows -------------------------------------------------
+# En Linux el locale suele ser UTF-8 y todo funciona por accidente. En Windows
+# Python cae a cp1252 y rompe cualquier caracter no ASCII: los "·" de las
+# cabeceras de las fichas, las dieresis, la marca "†". Por eso:
+#   1. toda lectura y escritura de archivos declara encoding="utf-8"
+#   2. stdout y stderr se reconfiguran para no fallar al imprimir
+def _utf8_io():
+    for flujo in (sys.stdout, sys.stderr):
+        try:
+            flujo.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass  # entorno sin reconfigure: no es critico
+
+_utf8_io()
+
+
 NIVELES = ["A1", "A2", "B1", "B2", "C1", "C2"]
 ART = ("der", "die", "das")
 VERDE, AMBAR, ROJO, FIN = "\033[32m", "\033[33m", "\033[31m", "\033[0m"
@@ -132,16 +148,16 @@ def main():
                     help="fraccion maxima tolerada de items demasiado faciles")
     a = ap.parse_args()
 
-    vocab = json.loads(Path(a.vocab).read_text())
+    vocab = json.loads(Path(a.vocab).read_text(encoding="utf-8"))
     total_malos = total_items = 0
 
     for f in a.fichas:
         p = Path(f)
         if p.suffix == ".json":
-            d = json.loads(p.read_text())
+            d = json.loads(p.read_text(encoding="utf-8"))
             items, nivel = items_de_json(d), d["nivel"]
         else:
-            txt = p.read_text()
+            txt = p.read_text(encoding="utf-8")
             items = items_de_md(txt)
             m = re.search(r"\bnivel:\s*([ABC][12])\b", txt, re.I) or \
                 re.search(r"\b([ABC][12])\b", txt)

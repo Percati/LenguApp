@@ -16,6 +16,22 @@ import argparse, json, re, subprocess, sys, unicodedata
 from pathlib import Path
 from collections import defaultdict, Counter
 
+# --- Portabilidad Windows -------------------------------------------------
+# En Linux el locale suele ser UTF-8 y todo funciona por accidente. En Windows
+# Python cae a cp1252 y rompe cualquier caracter no ASCII: los "·" de las
+# cabeceras de las fichas, las dieresis, la marca "†". Por eso:
+#   1. toda lectura y escritura de archivos declara encoding="utf-8"
+#   2. stdout y stderr se reconfiguran para no fallar al imprimir
+def _utf8_io():
+    for flujo in (sys.stdout, sys.stderr):
+        try:
+            flujo.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass  # entorno sin reconfigure: no es critico
+
+_utf8_io()
+
+
 NIVELES = ["A1", "A2", "B1", "B2", "C1", "C2"]
 ART = ("der", "die", "das")
 
@@ -25,7 +41,8 @@ def leer(path: Path) -> str:
     raw = path.read_bytes()[:5]
     if raw.startswith(b"%PDF"):
         r = subprocess.run(["pdftotext", "-layout", str(path), "-"],
-                           capture_output=True, text=True)
+                           capture_output=True, text=True,
+                           encoding="utf-8", errors="replace")
         return r.stdout
     return path.read_text(encoding="utf-8", errors="replace")
 
@@ -240,7 +257,7 @@ def main():
     ap.add_argument("--out-tokens")
     a = ap.parse_args()
 
-    cfg = json.loads(Path(a.config).read_text())
+    cfg = json.loads(Path(a.config).read_text(encoding="utf-8"))
     print(f"Construyendo vocabulario [{cfg['idioma']}]", file=sys.stderr)
     vocab, tokens = construir(cfg["fuentes"])
 
@@ -259,7 +276,7 @@ def main():
           file=sys.stderr)
 
     if a.out_tokens:
-        Path(a.out_tokens).write_text(json.dumps(tokens, ensure_ascii=False))
+        Path(a.out_tokens).write_text(json.dumps(tokens, ensure_ascii=False), encoding="utf-8")
         print(f"  tokens -> {a.out_tokens}", file=sys.stderr)
 
 if __name__ == "__main__":

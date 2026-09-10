@@ -15,6 +15,22 @@ import argparse, json, random, sys
 from datetime import date
 from pathlib import Path
 
+# --- Portabilidad Windows -------------------------------------------------
+# En Linux el locale suele ser UTF-8 y todo funciona por accidente. En Windows
+# Python cae a cp1252 y rompe cualquier caracter no ASCII: los "·" de las
+# cabeceras de las fichas, las dieresis, la marca "†". Por eso:
+#   1. toda lectura y escritura de archivos declara encoding="utf-8"
+#   2. stdout y stderr se reconfiguran para no fallar al imprimir
+def _utf8_io():
+    for flujo in (sys.stdout, sys.stderr):
+        try:
+            flujo.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass  # entorno sin reconfigure: no es critico
+
+_utf8_io()
+
+
 REVIEW   = {8, 16, 24, 32, 40, 48}
 SURVIVAL = {12, 28, 44}
 SEP_MIN  = 10          # semanas minimas entre apariciones de un mismo skill
@@ -150,10 +166,10 @@ def main():
     ap.add_argument("--fijas", help="JSON con semanas fijadas a mano")
     a = ap.parse_args()
 
-    d = json.loads(Path(a.banco).read_text())
+    d = json.loads(Path(a.banco).read_text(encoding="utf-8"))
     fijas = {}
     if a.fijas:
-        fijas = json.loads(Path(a.fijas).read_text()).get(f"{a.anio}-{a.idioma}-{a.nivel}", {})
+        fijas = json.loads(Path(a.fijas).read_text(encoding="utf-8")).get(f"{a.anio}-{a.idioma}-{a.nivel}", {})
     filas = generar(a.anio, a.idioma, a.nivel, d["skills"], d["topics"], a.desde,
                     fijas=fijas)
 

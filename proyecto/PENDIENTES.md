@@ -49,7 +49,13 @@ Estado a septiembre 2026, semana ISO 37. Ordenados por lo que bloquea, no por an
 | D3 | Publicación en F-Droid con cero Anti-Features | Sin permiso INTERNET, sin Play Services, build reproducible, informe de Exodus |
 | D4 | Audio con Piper | **Script escrito** (`tools/generar_audio.py`), con `--dry-run` para estimar antes de generar. Falta que instales Piper y bajes las voces. 90 clips en el piloto, ~2 MB |
 
-## E. Decisiones que siguen abiertas
+## E. Corregido tras la Fase 1
+
+| Qué | Detalle |
+|---|---|
+| Codificación en Windows | Las cinco herramientas usaban `read_text()` / `write_text()` sin declarar codificación. En Linux funcionaba por el locale; en Windows rompía el `·` de las cabeceras. **Detectado por Claude Code en la Fase 1 y corregido en las cinco.** También se añadió reconfiguración de stdout y decodificación explícita de la salida de `pdftotext` |
+
+## F. Decisiones que siguen abiertas
 
 Ninguna. Las tres que quedaban se resolvieron:
 

@@ -22,6 +22,22 @@ que regenerar solo produce lo que falta.
 import argparse, hashlib, json, shutil, subprocess, sys
 from pathlib import Path
 
+# --- Portabilidad Windows -------------------------------------------------
+# En Linux el locale suele ser UTF-8 y todo funciona por accidente. En Windows
+# Python cae a cp1252 y rompe cualquier caracter no ASCII: los "·" de las
+# cabeceras de las fichas, las dieresis, la marca "†". Por eso:
+#   1. toda lectura y escritura de archivos declara encoding="utf-8"
+#   2. stdout y stderr se reconfiguran para no fallar al imprimir
+def _utf8_io():
+    for flujo in (sys.stdout, sys.stderr):
+        try:
+            flujo.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass  # entorno sin reconfigure: no es critico
+
+_utf8_io()
+
+
 VOCES = {
     "en": ["en_US-ryan-high", "en_US-lessac-high"],   # el usuario elige
     "de": ["de_DE-thorsten-high"],
@@ -59,7 +75,7 @@ def main():
     indice, pendientes, hechos = {}, 0, 0
 
     for f in a.fichas:
-        ficha = json.loads(Path(f).read_text())
+        ficha = json.loads(Path(f).read_text(encoding="utf-8"))
         idioma = ficha.get("idioma")
         if not idioma or idioma not in VOCES:
             continue
@@ -92,7 +108,7 @@ def main():
                     hechos += 1
 
     Path(a.salida, "indice.json").write_text(
-        json.dumps(indice, ensure_ascii=False, indent=1))
+        json.dumps(indice, ensure_ascii=False, indent=1), encoding="utf-8")
     total = sum(len(v) for v in indice.values())
     print(f"{total} clips referenciados por {len(indice)} fichas")
     if a.dry_run:

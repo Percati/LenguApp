@@ -20,6 +20,10 @@ El brief completo está en `proyecto/PROMPT-CLAUDE-CODE.md`.
 
 2027 no existe todavía. Y ningún otro nivel ni idioma tiene contenido. **"Esta semana / este nivel no tiene contenido" sigue siendo el caso normal para casi toda la matriz**, así que hay que manejarlo con elegancia desde la fase 1.
 
+## Portabilidad
+
+Las herramientas de `proyecto/tools/` declaran `encoding="utf-8"` en toda lectura y escritura, y reconfiguran stdout. **En Windows, sin eso, Python cae a cp1252 y rompe los caracteres no ASCII** de las fichas. Si se agrega una herramienta, mantener la misma convención.
+
 ## Comandos
 
 ```sh
