@@ -1,8 +1,8 @@
-package org.retoslinguisticos.app.datos
+package org.lenguapp.app.datos
 
 import android.content.Context
 import kotlinx.serialization.json.Json
-import org.retoslinguisticos.app.modelo.ContenidoSemanal
+import org.lenguapp.app.modelo.ContenidoSemanal
 
 /**
  * Compilar_fichas.py ya valido este JSON contra el schema antes de que

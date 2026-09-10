@@ -1,4 +1,4 @@
-package org.retoslinguisticos.app
+package org.lenguapp.app
 
 import android.app.Activity
 import android.os.Bundle

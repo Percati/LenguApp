@@ -1,12 +1,12 @@
-package org.retoslinguisticos.app.datos
+package org.lenguapp.app.datos
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Assert.fail
 import org.junit.Test
-import org.retoslinguisticos.app.modelo.Clase
-import org.retoslinguisticos.app.modelo.Ficha
-import org.retoslinguisticos.app.modelo.SemanaEspecial
+import org.lenguapp.app.modelo.Clase
+import org.lenguapp.app.modelo.Ficha
+import org.lenguapp.app.modelo.SemanaEspecial
 import java.io.File
 import kotlinx.serialization.SerializationException
 import kotlinx.serialization.json.Json

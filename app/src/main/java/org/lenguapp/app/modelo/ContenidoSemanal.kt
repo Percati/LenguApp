@@ -1,4 +1,4 @@
-package org.retoslinguisticos.app.modelo
+package org.lenguapp.app.modelo
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

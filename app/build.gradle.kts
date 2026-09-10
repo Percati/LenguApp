@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "org.retoslinguisticos.app"
+    namespace = "org.lenguapp.app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "org.retoslinguisticos.app"
+        applicationId = "org.lenguapp.app"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
