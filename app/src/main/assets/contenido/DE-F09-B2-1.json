@@ -1,0 +1,321 @@
+{
+ "id": "DE-F09-B2-1",
+ "skillId": "DE-F09",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "fluency",
+ "topicId": "T11",
+ "titulo": "Argumentieren und überzeugen",
+ "subtitulo": "Das Gegenargument zuerst",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 60
+ },
+ "descripcion": "Deutschsprachige Argumentation erwartet, dass man das Gegenargument nennt, bevor man es entkräftet. Wer nur die eigene Seite darstellt, wirkt nicht überzeugend, sondern schlecht informiert. Zweites Merkmal: Argumente werden gewichtet, nicht aufgezählt. *Das wichtigste Argument ist…* macht mehr Eindruck als fünf gleichrangige Punkte.",
+ "ejemplos": [
+  {
+   "texto": "Zwar ist die Berichterstattung ausgewogener geworden, allerdings bleibt die Themenauswahl einseitig."
+  },
+  {
+   "texto": "Man könnte einwenden, dass… Dagegen spricht allerdings, dass…"
+  },
+  {
+   "texto": "Daraus folgt allerdings nicht, dass…"
+  },
+  {
+   "texto": "*Zwar ist die Berichterstattung ausgewogener geworden, allerdings bleibt die Themenauswahl einseitig.*",
+   "audio": true
+  },
+  {
+   "texto": "*Man könnte einwenden, dass die Quellen nicht überprüfbar sind.*",
+   "audio": true
+  },
+  {
+   "texto": "*Das entscheidende Argument ist für mich ein anderes.*",
+   "audio": true
+  },
+  {
+   "texto": "*Daraus folgt allerdings nicht, dass alle Medien gleich arbeiten.*",
+   "audio": true
+  },
+  {
+   "texto": "*Ich würde das differenzieren.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Zwar* steht meist an Position 1 oder direkt nach dem Verb und kündigt zwingend ein *aber* oder *allerdings* an.",
+  "Differenzieren* ist im Deutschen ein starkes positives Signal: wer differenziert, gilt als kompetent.",
+  "Meiner Meinung nach* ist korrekt, aber schwach und überbenutzt."
+ ],
+ "errores": [
+  "Zwar* ohne folgendes *aber*.",
+  "Ich bin einverstanden mit dir* — korrekt, aber *Ich stimme dir zu* (+ Dat.) ist idiomatischer.",
+  "Argumente aufzählen, ohne sie zu gewichten.",
+  "Zu direkt widersprechen: auch in der Sache harte Kritik wird sprachlich abgefedert."
+ ],
+ "vocabulario": [
+  {
+   "item": "etwas hinterfragen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "cuestionar críticamente"
+   },
+   "reccion": "Akk.",
+   "nota": "Schlüsselverb ab B2"
+  },
+  {
+   "item": "der Sachverhalt",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los hechos del caso"
+   },
+   "reccion": "—",
+   "nota": "formell, sehr nützlich zum Zusammenfassen"
+  },
+  {
+   "item": "einseitig / ausgewogen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "sesgado / equilibrado"
+   },
+   "reccion": "—",
+   "nota": "festes Gegensatzpaar"
+  },
+  {
+   "item": "die Tragweite",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el alcance"
+   },
+   "reccion": "—"
+  },
+  {
+   "item": "die Berichterstattung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cobertura informativa"
+   },
+   "reccion": "—"
+  },
+  {
+   "item": "die Schlagzeile",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el titular"
+   },
+   "reccion": "—"
+  },
+  {
+   "item": "jemanden zu Wort kommen lassen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dar voz a alguien"
+   },
+   "reccion": "Akk."
+  },
+  {
+   "item": "aus zuverlässiger Quelle",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "de fuente fiable"
+   },
+   "reccion": "—"
+  },
+  {
+   "item": "etwas relativieren",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "matizar"
+   },
+   "reccion": "Akk."
+  },
+  {
+   "item": "jemandem etwas vorwerfen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "reprochar algo a alguien"
+   },
+   "reccion": "Dat. + Akk."
+  },
+  {
+   "item": "in die Kritik geraten",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser objeto de críticas"
+   },
+   "reccion": "—"
+  },
+  {
+   "item": "die Meinungsmache",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la manipulación de la opinión"
+   },
+   "reccion": "—",
+   "nota": "abwertend"
+  },
+  {
+   "item": "sich distanzieren von",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "distanciarse de"
+   },
+   "reccion": "+ Dat."
+  },
+  {
+   "item": "etwas dementieren",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "desmentir"
+   },
+   "reccion": "Akk.",
+   "nota": "journalistisch"
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "*Man könnte einwenden, dass…*",
+   "funcion": "Gegenargument einführen",
+   "traducciones": {
+    "es": "se podría objetar que…"
+   }
+  },
+  {
+   "expresion": "*Dagegen spricht, dass…*",
+   "funcion": "Gegenargument entkräften",
+   "traducciones": {
+    "es": "en contra está que…"
+   }
+  },
+  {
+   "expresion": "*Zwar…, allerdings…*",
+   "funcion": "einräumen und einschränken",
+   "traducciones": {
+    "es": "si bien…, ahora bien…"
+   }
+  },
+  {
+   "expresion": "*Das entscheidende Argument ist…*",
+   "funcion": "gewichten",
+   "traducciones": {
+    "es": "el argumento decisivo es…"
+   }
+  },
+  {
+   "expresion": "*Ich würde das differenzieren*",
+   "funcion": "Kompetenzsignal",
+   "traducciones": {
+    "es": "yo lo matizaría"
+   }
+  },
+  {
+   "expresion": "*Daraus folgt nicht, dass…*",
+   "funcion": "Fehlschluss zurückweisen",
+   "traducciones": {
+    "es": "de eso no se sigue que…"
+   }
+  },
+  {
+   "expresion": "*Das gilt nur, sofern…*",
+   "funcion": "Bedingung setzen",
+   "traducciones": {
+    "es": "eso vale solo si…"
+   }
+  },
+  {
+   "expresion": "*Unterm Strich…*",
+   "funcion": "Bilanz ziehen",
+   "traducciones": {
+    "es": "en definitiva…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Nehmen Sie zu einer aktuellen Debatte Stellung.",
+  "requisitos": [
+   "zwei *zwar–aber*-Konstruktionen",
+   "ein explizit genanntes und entkräftetes Gegenargument",
+   "eine Gewichtung",
+   "eine Differenzierung",
+   "Alle vier Kernwörter",
+   "Keine konkreten Ereignisse in der Aufgabenstellung — nur in Ihrem Text."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Das stärkste Argument gegen Ihre eigene Position aufschreiben. Nur das."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei *zwar–allerdings*-Sätze bauen."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Sind soziale Medien für die Demokratie schädlich? Gegenargument zuerst."
+  }
+ ],
+ "autochequeo": [
+  "Habe ich das Gegenargument wirklich ausformuliert oder nur erwähnt?",
+  "Hat jedes *zwar* seinen zweiten Teil?",
+  "Sind meine Argumente gewichtet oder nur aufgezählt?",
+  "Klingt meine Kritik zu direkt für einen deutschsprachigen Leser?",
+  "Alle vier Kernwörter?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Argumentationsstruktur. (1) Habe ich das Gegenargument wirklich genannt oder nur behauptet, es zu kennen? (2) Prüfen Sie jede *zwar*-Konstruktion auf ihren zweiten Teil. (3) Sind meine Argumente gewichtet oder aufgezählt? (4) Wo klingt meine Kritik im Deutschen zu direkt? Schreiben Sie den Text nicht neu.",
+ "cuadroReferencia": {
+  "titulo": "Argumentationsschritte",
+  "columnas": [
+   "Schritt",
+   "Redemittel"
+  ],
+  "filas": [
+   [
+    "These",
+    "*Meines Erachtens…* / *Ich halte X für…*"
+   ],
+   [
+    "Begründung",
+    "*Das liegt vor allem daran, dass…*"
+   ],
+   [
+    "Beleg",
+    "*Das zeigt sich zum Beispiel an…*"
+   ],
+   [
+    "Gegenargument nennen",
+    "*Man könnte einwenden, dass…* / *Zwar…*"
+   ],
+   [
+    "Entkräften",
+    "*Dagegen spricht allerdings, dass…* / *…aber*"
+   ],
+   [
+    "Einschränken",
+    "*Das gilt allerdings nur, sofern…*"
+   ],
+   [
+    "Gewichten",
+    "*Das entscheidende Argument ist für mich…*"
+   ],
+   [
+    "Differenzieren",
+    "*Ich würde das differenzieren: bei X…, bei Y…*"
+   ],
+   [
+    "Schlussfolgern",
+    "*Daraus folgt, dass…* / *Unterm Strich…*"
+   ]
+  ]
+ },
+ "contraste": {
+  "es": "Spanische Argumentation baut die eigene Position oft zuerst vollständig auf und behandelt Einwände am Schluss, wenn überhaupt. Die deutsche Erwartung ist umgekehrt — und wer sie nicht bedient, wirkt nicht höflich, sondern unvorbereitet."
+ }
+}

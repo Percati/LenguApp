@@ -1,0 +1,370 @@
+{
+ "id": "DE-G02-B2-1",
+ "skillId": "DE-G02",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T02",
+ "titulo": "Konnektoren",
+ "subtitulo": "Nach Stellung sortieren, nicht nach Bedeutung",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Das eigentliche Problem bei Konnektoren ist nicht die Bedeutung — *weil* und *denn* heissen dasselbe — sondern die Satzstellung, die jeder von ihnen verlangt. Es gibt vier Gruppen, und wer diese vier Gruppen unterscheidet, macht praktisch keine Stellungsfehler mehr. Diese Woche ist deshalb eine Sortierübung, keine Bedeutungsübung.",
+ "ejemplos": [
+  {
+   "texto": "Ich spare, weil ich später ein Velo kaufen möchte.* / *Ich spare, denn ich möchte…"
+  },
+  {
+   "texto": "Obwohl die Rendite niedrig ist, lasse ich das Geld dort.* / *Die Rendite ist niedrig. Trotzdem lasse ich das Geld dort.",
+   "audio": true
+  },
+  {
+   "texto": "Zwar ist die Rendite höher, aber das Risiko ist es auch."
+  },
+  {
+   "texto": "Je länger man einzahlt, desto mehr bekommt man später."
+  },
+  {
+   "texto": "*Ich spare, weil ich später ein Velo kaufen möchte.*",
+   "audio": true
+  },
+  {
+   "texto": "*Obwohl die Rendite niedrig ist, lasse ich das Geld dort.*",
+   "audio": true
+  },
+  {
+   "texto": "*Zwar ist die Rendite höher, aber das Risiko ist es auch.*",
+   "audio": true
+  },
+  {
+   "texto": "*Je länger man einzahlt, desto mehr bekommt man später.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Denn* und *weil* bedeuten dasselbe und verlangen verschiedene Stellung: der beste Selbsttest, ob die Gruppen sitzen.",
+  "Allerdings* und *jedoch* wirken abschwächend, nicht widersprechend, und sind schriftsprachlicher als *aber*.",
+  "Während* ist zweideutig: temporal (*während ich arbeite*) und adversativ (*während andere sparen, gibt er alles aus*)."
+ ],
+ "errores": [
+  "Deshalb ich habe…* — Umstellung vergessen.",
+  "Trotz dass* existiert nicht. Richtig: *obwohl* oder *trotz* + Genitiv.",
+  "Zwar* ohne folgendes *aber*.",
+  "obwohl* und *trotzdem* vertauscht."
+ ],
+ "vocabulario": [
+  {
+   "item": "die Altersvorsorge",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la previsión para la vejez"
+   },
+   "reccion": "—",
+   "nota": "Schlüsselkonzept in DACH",
+   "variante": "CH"
+  },
+  {
+   "item": "sich verschulden",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "endeudarse"
+   },
+   "reccion": "reflexiv"
+  },
+  {
+   "item": "die Rücklage / Rücklagen bilden",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la reserva / constituir reservas"
+   },
+   "reccion": "Akk."
+  },
+  {
+   "item": "über die Runden kommen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "llegar a fin de mes"
+   },
+   "reccion": "—",
+   "nota": "Redewendung, neutral"
+  },
+  {
+   "item": "der Dauerauftrag",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la orden permanente"
+   },
+   "reccion": "—"
+  },
+  {
+   "item": "die Lastschrift",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la domiciliación"
+   },
+   "reccion": "—"
+  },
+  {
+   "item": "die Rendite",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la rentabilidad"
+   },
+   "reccion": "—"
+  },
+  {
+   "item": "die Säule (1./2./3.)",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el pilar"
+   },
+   "reccion": "—",
+   "nota": "**CH**, Rentensystem",
+   "variante": "CH"
+  },
+  {
+   "item": "etwas abbuchen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "cargar en cuenta"
+   },
+   "reccion": "Akk."
+  },
+  {
+   "item": "die Steuererklärung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la declaración de impuestos"
+   },
+   "reccion": "—"
+  },
+  {
+   "item": "in Raten zahlen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "pagar a plazos"
+   },
+   "reccion": "—"
+  },
+  {
+   "item": "sich etwas leisten können",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "poder permitirse algo"
+   },
+   "reccion": "Akk.",
+   "nota": "sehr hochfrequent"
+  },
+  {
+   "item": "die Bonität",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la solvencia crediticia"
+   },
+   "reccion": "—"
+  },
+  {
+   "item": "die Laufzeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el plazo, la duración"
+   },
+   "reccion": "—"
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "*Das liegt vor allem daran, dass…*",
+   "funcion": "begründet mit Gewichtung",
+   "traducciones": {
+    "es": "eso se debe sobre todo a que…"
+   }
+  },
+  {
+   "expresion": "*Zwar…, allerdings…*",
+   "funcion": "räumt ein und schränkt ein",
+   "traducciones": {
+    "es": "si bien…, ahora bien…"
+   }
+  },
+  {
+   "expresion": "*Je…, desto…*",
+   "funcion": "koppelt zwei Grössen",
+   "traducciones": {
+    "es": "cuanto…, tanto…"
+   }
+  },
+  {
+   "expresion": "*Indem ich…, …*",
+   "funcion": "nennt das Mittel",
+   "traducciones": {
+    "es": "mediante… / al hacer…"
+   }
+  },
+  {
+   "expresion": "*Sobald…, …*",
+   "funcion": "knüpft an eine Bedingung",
+   "traducciones": {
+    "es": "en cuanto…"
+   }
+  },
+  {
+   "expresion": "*Damit ich… kann, …*",
+   "funcion": "nennt die Absicht",
+   "traducciones": {
+    "es": "para que yo pueda…"
+   }
+  },
+  {
+   "expresion": "*Deshalb…*",
+   "funcion": "zieht die Folge",
+   "traducciones": {
+    "es": "por eso…"
+   }
+  },
+  {
+   "expresion": "*Trotzdem…*",
+   "funcion": "markiert das unerwartete Ergebnis",
+   "traducciones": {
+    "es": "aun así…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Erklären Sie einer Person aus Ihrem Heimatland, wie Sie Ihre Finanzen organisieren und warum.",
+  "requisitos": [
+   "mindestens zehn verschiedene Konnektoren aus allen vier Gruppen",
+   "mindestens eine zweiteilige Konstruktion",
+   "kein Konnektor mehr als zweimal",
+   "Alle vier Kernwörter."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Denselben Inhalt viermal schreiben: mit *weil*, *denn*, *deshalb*, *da*. Die Stellung vergleichen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei Satzpaare bilden: einmal mit *obwohl*, einmal mit *trotzdem*, gleicher Inhalt."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Wie sparen Sie? Sechs Konnektoren, mindestens drei Gruppen."
+  }
+ ],
+ "autochequeo": [
+  "Sind alle vier Gruppen vertreten?",
+  "Habe ich nach jedem Konnektor der Gruppe 3 umgestellt?",
+  "Hat jedes *zwar* sein *aber*?",
+  "Habe ich *obwohl* und *trotzdem* richtig herum benutzt?",
+  "Alle vier Kernwörter?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Konnektoren. (1) Ordnen Sie jeden Konnektor seiner Gruppe zu und prüfen Sie die Stellung. (2) Markieren Sie Wiederholungen. (3) Prüfen Sie *obwohl* gegen *trotzdem*. (4) Nennen Sie drei Konnektoren, die hier gepasst hätten und die ich nicht benutzt habe. Schreiben Sie den Text nicht neu.",
+ "cuadroReferencia": {
+  "titulo": "Konnektoren nach Gruppe und Bedeutung",
+  "columnas": [
+   "Konnektor",
+   "Verbindet",
+   "Bedeutung",
+   "Gruppe / Stellung"
+  ],
+  "filas": [
+   [
+    "*weil, da*",
+    "Ursache → Folge",
+    "kausal",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "*denn*",
+    "Ursache → Folge",
+    "kausal",
+    "2 · keine Umstellung"
+   ],
+   [
+    "*deshalb, darum, deswegen*",
+    "Ursache → Folge",
+    "kausal",
+    "3 · Verb-Subjekt-Umstellung"
+   ],
+   [
+    "*obwohl*",
+    "erwartete Folge tritt **nicht** ein",
+    "konzessiv",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "*trotzdem, dennoch*",
+    "dieselbe Idee, andere Blickrichtung",
+    "konzessiv",
+    "3 · Umstellung"
+   ],
+   [
+    "*damit* / *um… zu*",
+    "Handlung → Absicht",
+    "final",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "*sodass, folglich*",
+    "Handlung → unbeabsichtigtes Ergebnis",
+    "konsekutiv",
+    "1 bzw. 3"
+   ],
+   [
+    "*als, wenn, nachdem, bevor, seitdem, sobald*",
+    "zwei Zeitpunkte",
+    "temporal",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "*indem*",
+    "Ziel → Mittel",
+    "modal",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "*aber, sondern*",
+    "zwei Gegensätze",
+    "adversativ",
+    "2 · keine Umstellung"
+   ],
+   [
+    "*während, wohingegen*",
+    "zwei Gegensätze",
+    "adversativ",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "*allerdings, jedoch*",
+    "schwächt den Gegensatz ab",
+    "adversativ",
+    "3 · Umstellung"
+   ],
+   [
+    "*zwar… aber*",
+    "Zugeständnis + Einwand",
+    "konzessiv",
+    "zweiteilig"
+   ],
+   [
+    "*je… desto*",
+    "zwei Grössen, die zusammen wachsen",
+    "proportional",
+    "zweiteilig"
+   ]
+  ]
+ },
+ "contraste": {
+  "es": "Für *weil / denn / deshalb* hat das Spanische im Grunde *porque* und *por eso*, ohne Stellungsfolgen. Die Bedeutung ist also gratis; gelernt werden muss ausschliesslich die Gruppe."
+ }
+}
