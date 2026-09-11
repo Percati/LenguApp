@@ -14,20 +14,8 @@
   "oralMin": 4,
   "minutosEstimados": 55
  },
- "descripcion": "Redewendungen haben das schlechteste Verhältnis von Aufwand zu Nutzen, wenn man die falschen lernt. *Da steppt der Bär* steht in jedem Lehrbuch und sagt niemand. Diese Karte beschränkt sich auf Wendungen mittlerer Frequenz, die unter Erwachsenen tatsächlich fallen. Gebrauchsregel: eine pro Absatz, nie zwei hintereinander.",
+ "descripcion": "Redewendungen haben das schlechteste Verhältnis von Aufwand zu Nutzen, wenn man die falschen lernt. *Da steppt der Bär* steht in jedem Lehrbuch und sagt niemand. Diese Karte beschränkt sich auf Wendungen mittlerer Frequenz, die unter Erwachsenen tatsächlich fallen. Gebrauchsregel: **eine pro Absatz, nie zwei hintereinander.**",
  "ejemplos": [
-  {
-   "texto": "Ich habe mich am Anfang überhaupt nicht zurechtgefunden."
-  },
-  {
-   "texto": "Das hat auf Anhieb geklappt."
-  },
-  {
-   "texto": "Da habe ich erst mal Bahnhof verstanden."
-  },
-  {
-   "texto": "Meine Begeisterung hielt sich in Grenzen."
-  },
   {
    "texto": "*Ich habe mich am Anfang überhaupt nicht zurechtgefunden.*",
    "audio": true
@@ -81,16 +69,14 @@
    "prioridad": "nucleo",
    "traducciones": {
     "es": "chocante, extraño"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "auf Anhieb",
    "prioridad": "nucleo",
    "traducciones": {
     "es": "a la primera"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "das Heimweh / das Fernweh",
@@ -98,16 +84,15 @@
    "traducciones": {
     "es": "la nostalgia / el ansia de partir"
    },
-   "reccion": "—",
    "nota": "*Fernweh* ohne Entsprechung"
   },
   {
-   "item": "die Unterkunft †",
+   "item": "die Unterkunft",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "el alojamiento"
    },
-   "reccion": "—",
+   "bajoNivelJustificado": true,
    "nota": "genererisch, sehr nützlich"
   },
   {
@@ -115,24 +100,22 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la duración de la estancia"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Behörde / der Behördengang",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la administración / el trámite"
-   },
-   "reccion": "—"
+   }
   },
   {
-   "item": "die Anmeldung †",
+   "item": "die Anmeldung",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "el empadronamiento"
    },
-   "reccion": "—",
+   "bajoNivelJustificado": true,
    "nota": "echter Verwaltungsakt in DACH",
    "variante": "CH"
   },
@@ -141,8 +124,7 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "estar rodado"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Gepflogenheiten (Pl.)",
@@ -150,7 +132,6 @@
    "traducciones": {
     "es": "los usos y costumbres"
    },
-   "reccion": "—",
    "nota": "gehoben"
   },
   {
@@ -158,8 +139,7 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "el entendimiento"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "das Velo",
@@ -167,7 +147,6 @@
    "traducciones": {
     "es": "la bicicleta"
    },
-   "reccion": "—",
    "nota": "**CH**",
    "variante": "CH"
   },
@@ -182,56 +161,56 @@
  ],
  "redemittel": [
   {
-   "expresion": "*Am Anfang fiel es mir schwer, …*",
+   "expresion": "Am Anfang fiel es mir schwer, …",
    "funcion": "Rückblick auf Schwierigkeiten",
    "traducciones": {
     "es": "al principio me costó…"
    }
   },
   {
-   "expresion": "*Inzwischen habe ich mich daran gewöhnt*",
+   "expresion": "Inzwischen habe ich mich daran gewöhnt",
    "funcion": "Veränderung markieren",
    "traducciones": {
     "es": "ya me acostumbré"
    }
   },
   {
-   "expresion": "*Das war für mich befremdlich*",
+   "expresion": "Das war für mich befremdlich",
    "funcion": "Befremden ausdrücken",
    "traducciones": {
     "es": "me resultó chocante"
    }
   },
   {
-   "expresion": "*Da habe ich erst mal…*",
+   "expresion": "Da habe ich erst mal…",
    "funcion": "Reaktion einleiten",
    "traducciones": {
     "es": "ahí primero…"
    }
   },
   {
-   "expresion": "*Es hat eine Weile gedauert, bis…*",
+   "expresion": "Es hat eine Weile gedauert, bis…",
    "funcion": "Zeitverlauf",
    "traducciones": {
     "es": "tardó un rato hasta que…"
    }
   },
   {
-   "expresion": "*Rückblickend würde ich sagen…*",
+   "expresion": "Rückblickend würde ich sagen…",
    "funcion": "Bilanz",
    "traducciones": {
     "es": "en retrospectiva diría…"
    }
   },
   {
-   "expresion": "*Was mich am meisten überrascht hat, war…*",
+   "expresion": "Was mich am meisten überrascht hat, war…",
    "funcion": "Fokus setzen",
    "traducciones": {
     "es": "lo que más me sorprendió fue…"
    }
   },
   {
-   "expresion": "*Daran musste ich mich erst gewöhnen*",
+   "expresion": "Daran musste ich mich erst gewöhnen",
    "funcion": "Anpassung",
    "traducciones": {
     "es": "a eso tuve que acostumbrarme"
@@ -283,12 +262,12 @@
   "filas": [
    [
     "umgangssprachlich",
-    "*jemandem auf den Keks gehen*",
+    "jemandem auf den Keks gehen",
     "jemanden nerven"
    ],
    [
     "umgangssprachlich",
-    "*Bahnhof verstehen*",
+    "Bahnhof verstehen",
     "gar nichts verstehen"
    ],
    [
@@ -298,22 +277,22 @@
    ],
    [
     "neutral",
-    "*auf Anhieb*",
+    "auf Anhieb",
     "sofort, beim ersten Versuch"
    ],
    [
     "neutral",
-    "*sich über den Weg laufen*",
+    "sich über den Weg laufen",
     "zufällig treffen"
    ],
    [
     "neutral",
-    "*auf dem Laufenden bleiben*",
+    "auf dem Laufenden bleiben",
     "aktuell informiert bleiben"
    ],
    [
     "neutral",
-    "*etwas auf die lange Bank schieben*",
+    "etwas auf die lange Bank schieben",
     "aufschieben"
    ],
    [
@@ -323,17 +302,17 @@
    ],
    [
     "gehoben",
-    "*jemandem ein Dorn im Auge sein*",
+    "jemandem ein Dorn im Auge sein",
     "jemanden stören"
    ],
    [
     "gehoben",
-    "*etwas in Kauf nehmen*",
+    "etwas in Kauf nehmen",
     "als Preis akzeptieren"
    ],
    [
     "gehoben",
-    "*sich in Grenzen halten*",
+    "sich in Grenzen halten",
     "mässig ausfallen"
    ]
   ]

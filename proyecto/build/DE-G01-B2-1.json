@@ -17,16 +17,16 @@
  "descripcion": "Die Verbstellung ist der Fehler, der spanischsprachige Lernende am längsten begleitet — nicht weil die Regel schwierig wäre, sondern weil sie unter Zeitdruck zusammenbricht: Man plant den Satz spanisch und spricht ihn deutsch aus. Diese Woche geht es deshalb nicht um die Regel, sondern um die Automatisierung: Verb an zweiter Stelle im Hauptsatz, Verb am Ende im Nebensatz, und die Umstellung, wenn etwas anderes im Vorfeld steht.",
  "ejemplos": [
   {
-   "texto": "Ich glaube, dass die Wohnung zu teuer ist."
+   "texto": "Ich glaube, dass die Wohnung zu teuer **ist**."
   },
   {
-   "texto": "Weil die Nebenkosten so hoch sind, suchen wir etwas anderes."
+   "texto": "Weil die Nebenkosten so hoch **sind**, **suchen** wir etwas anderes."
   },
   {
-   "texto": "Ich habe der Verwaltung gesagt, dass der Mangel schon vor einem Monat gemeldet worden ist."
+   "texto": "Ich habe der Verwaltung gesagt, dass der Mangel schon vor einem Monat gemeldet worden **ist**."
   },
   {
-   "texto": "Deshalb haben wir die Besichtigung abgesagt."
+   "texto": "Deshalb **haben wir** die Besichtigung abgesagt."
   },
   {
    "texto": "*Ich glaube, dass die Wohnung zu teuer ist.*",
@@ -50,15 +50,15 @@
   }
  ],
  "notas": [
-  "Verb-Verb-Kontakt: Steht der Nebensatz vorne, treffen zwei Verben aufeinander, getrennt nur durch ein Komma. Das fühlt sich falsch an und ist richtig.",
-  "Im Nebensatz mit Modalverb steht am Ende das konjugierte Verb, nicht das Partizip.",
+  "**Verb-Verb-Kontakt:** Steht der Nebensatz vorne, treffen zwei Verben aufeinander, getrennt nur durch ein Komma. Das fühlt sich falsch an und ist richtig.",
+  "Im Nebensatz mit Modalverb steht am Ende das **konjugierte** Verb, nicht das Partizip.",
   "Trennbare Verben werden im Nebensatz wieder zusammengeschrieben."
  ],
  "errores": [
-  "Ich denke, dass die Wohnung ist zu teuer.* — der häufigste Fehler überhaupt.",
+  "*Ich denke, dass die Wohnung ist zu teuer.* — der häufigste Fehler überhaupt.",
   "Komma vor *dass*, *weil*, *obwohl* vergessen: im Deutschen Pflicht, im Spanischen nicht.",
-  "Deshalb wir haben…* statt *Deshalb haben wir…",
-  "Weil* mit Hauptsatzstellung: umgangssprachlich verbreitet, schriftlich falsch."
+  "*Deshalb wir haben…* statt *Deshalb haben wir…*",
+  "*Weil* mit Hauptsatzstellung: umgangssprachlich verbreitet, schriftlich falsch."
  ],
  "vocabulario": [
   {
@@ -66,8 +66,7 @@
    "prioridad": "nucleo",
    "traducciones": {
     "es": "el plazo de preaviso"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "einen Mangel melden",
@@ -83,7 +82,6 @@
    "traducciones": {
     "es": "los gastos aparte"
    },
-   "reccion": "—",
    "nota": "nur Plural; klassischer Streitpunkt"
   },
   {
@@ -92,7 +90,6 @@
    "traducciones": {
     "es": "la necesidad propia"
    },
-   "reccion": "—",
    "nota": "gesetzlicher Kündigungsgrund"
   },
   {
@@ -100,16 +97,14 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la fianza"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "der Mietvertrag",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "el contrato de alquiler"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Besichtigung",
@@ -117,7 +112,6 @@
    "traducciones": {
     "es": "la visita a la vivienda"
    },
-   "reccion": "—",
    "nota": "nicht *Besuch*"
   },
   {
@@ -126,7 +120,6 @@
    "traducciones": {
     "es": "las normas de la comunidad"
    },
-   "reccion": "—",
    "nota": "in CH wird sie ernst genommen",
    "variante": "CH"
   },
@@ -135,8 +128,7 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la escasez de vivienda"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Verdrängung",
@@ -144,7 +136,6 @@
    "traducciones": {
     "es": "el desplazamiento"
    },
-   "reccion": "—",
    "nota": "Begriff der Gentrifizierungsdebatte"
   },
   {
@@ -161,7 +152,6 @@
    "traducciones": {
     "es": "la cooperativa"
    },
-   "reccion": "—",
    "nota": "**CH** sehr verbreitet",
    "variante": "CH"
   },
@@ -180,63 +170,62 @@
    "traducciones": {
     "es": "el uso temporal"
    },
-   "reccion": "—",
    "nota": "**CH**",
    "variante": "CH"
   }
  ],
  "redemittel": [
   {
-   "expresion": "*Ich glaube, dass…*",
+   "expresion": "Ich glaube, dass…",
    "funcion": "leitet eine Einschätzung ein",
    "traducciones": {
     "es": "creo que…"
    }
   },
   {
-   "expresion": "*Das liegt daran, dass…*",
+   "expresion": "Das liegt daran, dass…",
    "funcion": "begründet",
    "traducciones": {
     "es": "eso se debe a que…"
    }
   },
   {
-   "expresion": "*Nachdem wir… hatten, …*",
+   "expresion": "Nachdem wir… hatten, …",
    "funcion": "ordnet zeitlich vor",
    "traducciones": {
     "es": "después de que…"
    }
   },
   {
-   "expresion": "*Obwohl…, …*",
+   "expresion": "Obwohl…, …",
    "funcion": "räumt ein",
    "traducciones": {
     "es": "aunque…"
    }
   },
   {
-   "expresion": "*Deshalb…*",
+   "expresion": "Deshalb…",
    "funcion": "zieht die Folge",
    "traducciones": {
     "es": "por eso…"
    }
   },
   {
-   "expresion": "*Seitdem wir hier wohnen, …*",
+   "expresion": "Seitdem wir hier wohnen, …",
    "funcion": "markiert den Beginn",
    "traducciones": {
     "es": "desde que vivimos aquí…"
    }
   },
   {
-   "expresion": "*Sobald…, …*",
+   "expresion": "Sobald…, …",
    "funcion": "knüpft an eine Bedingung",
    "traducciones": {
     "es": "en cuanto…"
    }
   },
   {
-   "expresion": "*Es kann sein, dass…*",
+   "expresion": "Es kann sein, dass…",
    "funcion": "schwächt ab",
    "traducciones": {
     "es": "puede ser que…"
@@ -271,7 +260,7 @@
   }
  ],
  "autochequeo": [
-  "Steht in jedem Nebensatz das finite Verb am Ende?",
+  "Steht in **jedem** Nebensatz das finite Verb am Ende?",
   "Steht nach *deshalb/trotzdem* das Verb vor dem Subjekt?",
   "Habe ich vor jedem *dass/weil/obwohl* ein Komma?",
   "Sind trennbare Verben im Nebensatz zusammengeschrieben?",
@@ -291,51 +280,52 @@
     "Hauptsatz",
     "Subjekt im Vorfeld",
     "Position 2",
-    "*Wir **suchen** eine Wohnung.*"
+    "Wir **suchen** eine Wohnung."
    ],
    [
     "Hauptsatz",
     "anderes im Vorfeld",
     "Position 2, Subjekt danach",
-    "*Seit Januar **suchen wir**…*"
+    "Seit Januar **suchen wir**…"
    ],
    [
     "Hauptsatz",
-    "*deshalb, trotzdem, dann, danach, ausserdem*",
+    "deshalb, trotzdem, dann, danach, ausserdem",
     "Verb-Subjekt-Umstellung",
-    "*Deshalb **haben wir** gekündigt.*"
+    "Deshalb **haben wir** gekündigt."
    ],
    [
     "Nebensatz",
-    "*weil, dass, obwohl, wenn, als, damit, sobald*",
+    "weil, dass, obwohl, wenn, als, damit, sobald",
     "Verb ans Ende",
-    "*…, weil wir umziehen **müssen**.*"
+    "…, weil wir umziehen **müssen**."
    ],
    [
     "Nebensatz vorangestellt",
     "derselbe Auslöser",
     "Verb-Komma-Verb",
-    "*Weil wir umziehen **müssen**, **kündigen** wir.*"
+    "Weil wir umziehen **müssen**, **kündigen** wir."
    ],
    [
     "Nebensatz + Modalverb / Perfekt",
     "",
     "finites Verb ganz ans Ende",
-    "*…, dass er es **hat machen müssen**.*"
+    "…, dass er es **hat machen müssen**."
    ],
    [
     "Nebensatz + trennbares Verb",
     "",
     "bleibt zusammen",
-    "*…, weil wir **umziehen**.*"
+    "…, weil wir **umziehen**."
    ],
    [
     "Frage / Imperativ",
     "",
     "Position 1",
-    "***Melden** Sie den Mangel.*"
+    "**Melden** Sie den Mangel."
    ]
-  ]
+  ],
+  "notaPie": "Merke: **und, aber, denn, sondern, oder** lösen gar keine Umstellung aus. Sie stehen auf „Position 0\"."
  },
  "contraste": {
   "es": "Das Spanische kennt keine Verbendstellung: Es gibt hier nichts zu übertragen, nur etwas Neues zu automatisieren. Deshalb hilft Erklären wenig und Wiederholen viel — und deshalb überlebt der Fehler bis C1, obwohl die Regel in einer Minute erklärt ist."

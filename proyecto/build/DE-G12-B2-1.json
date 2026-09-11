@@ -14,22 +14,31 @@
   "oralMin": 4,
   "minutosEstimados": 65
  },
- "descripcion": "Der Nominalstil ist das Tor zum deutschen Fach-, Verwaltungs- und Ingenieurdeutsch: Berichte, Protokolle und Normen sind fast vollständig nominal geschrieben. Die B2-Kompetenz ist nicht, ihn zu benutzen, sondern zwischen beiden Stilen zu wechseln. Wer alles nominalisiert, schreibt unlesbar; wer nichts nominalisiert, klingt im Bericht wie in einer E-Mail.",
+ "descripcion": "Der Nominalstil ist das Tor zum deutschen Fach-, Verwaltungs- und Ingenieurdeutsch: Berichte, Protokolle und Normen sind fast vollständig nominal geschrieben. Die B2-Kompetenz ist nicht, ihn zu benutzen, sondern **zwischen beiden Stilen zu wechseln**. Wer alles nominalisiert, schreibt unlesbar; wer nichts nominalisiert, klingt im Bericht wie in einer E-Mail.",
  "ejemplos": [
   {
-   "texto": "Nachdem die Anlage geprüft worden war, …* → *Nach der Prüfung der Anlage, …",
+   "texto": "Nachdem die Anlage geprüft worden war, … → Nach **der Prüfung** der Anlage, …"
+  },
+  {
+   "texto": "Weil die Software fehleranfällig ist, … → Wegen **der Fehleranfälligkeit** der Software, …"
+  },
+  {
+   "texto": "Wenn man die Daten auswertet, … → Bei **der Auswertung** der Daten, …"
+  },
+  {
+   "texto": "Rückwärts: *Die Inbetriebnahme erfolgt nach Abschluss der Prüfung.* → *Die Anlage wird in Betrieb genommen, sobald die Prüfung abgeschlossen ist.*"
+  },
+  {
+   "texto": "*Nach der Prüfung der Anlage wurde die Freigabe erteilt.*",
    "audio": true
   },
   {
-   "texto": "Weil die Software fehleranfällig ist, …* → *Wegen der Fehleranfälligkeit der Software, …",
+   "texto": "*Wegen der Fehleranfälligkeit der Software haben wir den Termin verschoben.*",
    "audio": true
   },
   {
-   "texto": "Wenn man die Daten auswertet, …* → *Bei der Auswertung der Daten, …",
+   "texto": "*Bei der Auswertung der Daten ist uns ein Muster aufgefallen.*",
    "audio": true
-  },
-  {
-   "texto": "Rückwärts: *Die Inbetriebnahme erfolgt nach Abschluss der Prüfung.* → *Die Anlage wird in Betrieb genommen, sobald die Prüfung abgeschlossen ist."
   },
   {
    "texto": "*Der Umgang mit personenbezogenen Daten ist streng geregelt.*",
@@ -42,7 +51,7 @@
  ],
  "notas": [
   "Genitivketten sind das Erkennungszeichen von schlechtem Nominalstil: *die Prüfung der Auswertung der Ergebnisse der Messung*. Ab drei Gliedern umschreiben.",
-  "ung* und *-heit/-keit* sind ausnahmslos feminin. Eine der wenigen verlässlichen Genusregeln des Deutschen.",
+  "*-ung* und *-heit/-keit* sind ausnahmslos feminin. Eine der wenigen verlässlichen Genusregeln des Deutschen.",
   "Der Nominalstil erhöht die Formalität und senkt die Lesbarkeit. Bewusst einsetzen, nicht als Standard."
  ],
  "errores": [
@@ -75,7 +84,6 @@
    "traducciones": {
     "es": "la propensión a fallos"
    },
-   "reccion": "—",
    "nota": "produktive Nominalisierung"
   },
   {
@@ -92,8 +100,7 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la aplicación"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Schnittstelle",
@@ -101,7 +108,6 @@
    "traducciones": {
     "es": "la interfaz"
    },
-   "reccion": "—",
    "nota": "wörtlich und übertragen"
   },
   {
@@ -109,8 +115,7 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "maduro, acabado"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "der Datenschutz",
@@ -118,7 +123,6 @@
    "traducciones": {
     "es": "la protección de datos"
    },
-   "reccion": "—",
    "nota": "starkes Kulturkonzept"
   },
   {
@@ -144,7 +148,6 @@
    "traducciones": {
     "es": "la fiabilidad"
    },
-   "reccion": "—",
    "nota": "besser als *Reliabilität*"
   },
   {
@@ -161,7 +164,6 @@
    "traducciones": {
     "es": "sesgado"
    },
-   "reccion": "—",
    "nota": "Alternative zu *Bias*"
   },
   {
@@ -169,62 +171,61 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "similar a lo humano"
-   },
-   "reccion": "—"
+   }
   }
  ],
  "redemittel": [
   {
-   "expresion": "*Nach Abschluss der…*",
+   "expresion": "Nach Abschluss der…",
    "funcion": "zeitliche Vorordnung, nominal",
    "traducciones": {
     "es": "tras la conclusión de…"
    }
   },
   {
-   "expresion": "*Wegen der…*",
+   "expresion": "Wegen der…",
    "funcion": "Begründung, nominal",
    "traducciones": {
     "es": "debido a…"
    }
   },
   {
-   "expresion": "*Bei der Auswertung…*",
+   "expresion": "Bei der Auswertung…",
    "funcion": "Bedingung, nominal",
    "traducciones": {
     "es": "al evaluar…"
    }
   },
   {
-   "expresion": "*Zur Sicherstellung der…*",
+   "expresion": "Zur Sicherstellung der…",
    "funcion": "Zweck, nominal",
    "traducciones": {
     "es": "para garantizar…"
    }
   },
   {
-   "expresion": "*Trotz der…*",
+   "expresion": "Trotz der…",
    "funcion": "Einräumung, nominal",
    "traducciones": {
     "es": "a pesar de…"
    }
   },
   {
-   "expresion": "*Im Hinblick auf…*",
+   "expresion": "Im Hinblick auf…",
    "funcion": "Bezug herstellen",
    "traducciones": {
     "es": "con vistas a…"
    }
   },
   {
-   "expresion": "*Unter Berücksichtigung der…*",
+   "expresion": "Unter Berücksichtigung der…",
    "funcion": "Abwägung, sehr formell",
    "traducciones": {
     "es": "teniendo en cuenta…"
    }
   },
   {
-   "expresion": "*Das setzt voraus, dass…*",
+   "expresion": "Das setzt voraus, dass…",
    "funcion": "Bedingung, verbal",
    "traducciones": {
     "es": "eso presupone que…"
@@ -234,7 +235,7 @@
  "mision": {
   "consigna": "Schreiben Sie einen kurzen technischen Bericht über ein KI-Werkzeug — und danach dieselbe Information als E-Mail an eine Kollegin.",
   "requisitos": [
-   "im Bericht mindestens acht Nominalisierungen und drei nominale Konnektoren; in der E-Mail dieselbe Information vollständig verbal",
+   "im Bericht mindestens acht Nominalisierungen und drei nominale Konnektoren; in der E-Mail dieselbe Information **vollständig verbal**",
    "Alle vier Kernwörter."
   ]
  },
@@ -272,51 +273,52 @@
   ],
   "filas": [
    [
-    "*weil*",
-    "*wegen*",
+    "weil",
+    "wegen",
     "Gen. (ugs. Dat.)"
    ],
    [
-    "*obwohl*",
-    "*trotz*",
+    "obwohl",
+    "trotz",
     "Gen."
    ],
    [
-    "*nachdem*",
-    "*nach*",
+    "nachdem",
+    "nach",
     "Dat."
    ],
    [
-    "*bevor*",
-    "*vor*",
+    "bevor",
+    "vor",
     "Dat."
    ],
    [
-    "*wenn / falls*",
-    "*bei*",
+    "wenn / falls",
+    "bei",
     "Dat."
    ],
    [
     "*während* (temporal)",
-    "*während*",
+    "während",
     "Gen."
    ],
    [
-    "*damit / um… zu*",
+    "damit / um… zu",
     "*zu* / *zwecks*",
     "Dat. / Gen."
    ],
    [
-    "*ohne dass*",
-    "*ohne*",
+    "ohne dass",
+    "ohne",
     "Akk."
    ],
    [
-    "*seitdem*",
-    "*seit*",
+    "seitdem",
+    "seit",
     "Dat."
    ]
-  ]
+  ],
+  "notaPie": "Suffixe: *-ung* (Prozess, **immer feminin**), *-heit / -keit* (Eigenschaft, **immer feminin**), *-nis*, substantivierter Infinitiv (*das Messen*, **neutrum**)."
  },
  "contraste": {
   "es": "Spanisch nominalisiert deutlich weniger und bevorzugt Infinitivkonstruktionen (*tras revisar la instalación*). Wer spanisch denkt, unternominalisiert im Bericht — und wer den Nominalstil neu entdeckt, übertreibt sofort."

@@ -72,8 +72,20 @@ def secciones(cuerpo, et):
     return out
 
 def vinetas(bloque):
-    return [re.sub(r"\s+", " ", l.strip("-* ").strip())
-            for l in bloque.splitlines() if l.strip().startswith("-")]
+    """Extrae las lineas de una lista con guiones.
+
+    OJO: solo se quita el guion de la vinuela, NUNCA los asteriscos. Un
+    strip("-* ") se come el asterisco inicial de una linea que empieza con una
+    cita ("- *Zwar* steht meist...") y deja el marcado sin cerrar. Ese bug
+    afectaba 104 campos y la app los habria mostrado con asteriscos huerfanos.
+    """
+    out = []
+    for l in bloque.splitlines():
+        t = l.strip()
+        if not t.startswith("-"):
+            continue
+        out.append(re.sub(r"\s+", " ", t.lstrip("-").strip()))
+    return out
 
 def numeradas(bloque):
     return [re.sub(r"\s+", " ", re.sub(r"^\d+\.\s*", "", l.strip()))
@@ -94,7 +106,105 @@ def tabla(bloque):
     return cab, filas
 
 def limpiar(t):
-    return re.sub(r"\s+", " ", t.replace("**", "").replace("★", "").strip())
+    """Normaliza espacios y quita los marcadores de prioridad y de nivel.
+
+    NO toca el marcado en linea: "*cita*" y "**destaque**" son semanticos y
+    los renderiza la app. Ver desenvolver() para el caso del campo entero.
+    """
+    t = t.replace("\u2605", "").replace("\u2020", "")
+    return re.sub(r"\s+", " ", t.strip())
+
+def aplanar_marcado(t):
+    """Normaliza el marcado en linea a un solo nivel, sin anidar.
+
+    El Markdown fuente mezcla cita (*x*) y destaque (**x**) y a veces los
+    anida: "*Zwar* ist..." dentro de una cita, o "***Zwar** ist...*". Un regex
+    no alcanza —lo intente y corrompia texto—, asi que esto tokeniza de
+    verdad: parte el texto en tramos con sus estilos, resuelve el conflicto
+    (si un tramo es cita Y destaque, gana el destaque, porque es el que dirige
+    la mirada) y vuelve a emitir marcado plano.
+
+    Garantia de salida: marcadores balanceados y sin anidamiento, de modo que
+    la app necesita un parser de un solo nivel.
+    """
+    tramos, buf, cita, dest, i = [], [], False, False, 0
+    while i < len(t):
+        if t.startswith("**", i):
+            if buf: tramos.append(("".join(buf), cita, dest)); buf = []
+            dest = not dest; i += 2
+        elif t[i] == "*":
+            if buf: tramos.append(("".join(buf), cita, dest)); buf = []
+            cita = not cita; i += 1
+        else:
+            buf.append(t[i]); i += 1
+    if buf: tramos.append(("".join(buf), cita, dest))
+
+    # Si algun tramo es cita Y destaque a la vez, la cita se cae en TODO el
+    # campo. Cerrar la cita y abrir el destaque pegados produce "***", que es
+    # marcado ambiguo; y conservar solo el destaque es justo la regla
+    # documentada: es el que dirige la mirada.
+    if any(c and d for _, c, d in tramos):
+        tramos = [(txt, False, d) for txt, _, d in tramos]
+
+    salida, estilo_prev = [], None
+    for texto, c, d in tramos:
+        estilo = "dest" if d else ("cita" if c else None)
+        if estilo != estilo_prev:
+            if estilo_prev == "dest": salida.append("**")
+            elif estilo_prev == "cita": salida.append("*")
+            if estilo == "dest": salida.append("**")
+            elif estilo == "cita": salida.append("*")
+            estilo_prev = estilo
+        salida.append(texto)
+    if estilo_prev == "dest": salida.append("**")
+    elif estilo_prev == "cita": salida.append("*")
+    return re.sub(r"\s+", " ", "".join(salida)).strip()
+
+def tramos_de(t):
+    """Parte el texto en (texto, es_cita, es_destaque).
+
+    Base de todo el manejo de marcado. Tokenizador y no regex: con regex se
+    corrompia el texto en los campos que mezclan cita y destaque.
+    """
+    out, buf, cita, dest, i = [], [], False, False, 0
+    while i < len(t):
+        if t.startswith("**", i):
+            if buf: out.append(("".join(buf), cita, dest)); buf = []
+            dest = not dest; i += 2
+        elif t[i] == "*":
+            if buf: out.append(("".join(buf), cita, dest)); buf = []
+            cita = not cita; i += 1
+        else:
+            buf.append(t[i]); i += 1
+    if buf: out.append(("".join(buf), cita, dest))
+    return out
+
+
+def desenvolver(t):
+    """Quita el marcado que cubre el campo ENTERO.
+
+    En el Markdown fuente los ejemplos van en cursiva de punta a punta. Esa
+    cursiva no es semantica: significa "esto es una cita", y la app ya lo sabe
+    por el rol del campo. Solo se quita si TODOS los tramos son cita y ninguno
+    es destaque; si el campo mezcla los dos, se deja como esta.
+    """
+    t = aplanar_marcado(limpiar(t))
+    tr = tramos_de(t)
+    if tr and all(c for _, c, _ in tr) and not any(d for _, _, d in tr):
+        return "".join(x for x, _, _ in tr).strip()
+    return t
+
+
+def sin_marcado(t):
+    """Texto plano, sin marcadores.
+
+    Para campos que la app estiliza por su rol y donde el marcado seria
+    redundante: items de vocabulario (la prioridad viaja en su propio campo)
+    y expresiones de Redemittel.
+    """
+    return re.sub(r"\s+", " ",
+                  "".join(x for x, _, _ in tramos_de(limpiar(t)))).strip()
+
 
 def semana_especial(semana, clase, cuerpo, idioma):
     """Las semanas de repaso y Survival no son fichas: no tienen skill ni topic.
@@ -164,7 +274,7 @@ def compilar(bloque, idioma):
         "evidencia": {"escritura": int(me.group(1)) if me else 250,
                       "oralMin": min(int(ms.group(1)), 30) if ms else 4,
                       "minutosEstimados": sum(int(x) for x in mtime[:2]) or 55},
-        "descripcion": limpiar(s["descripcion"])[:1590],
+        "descripcion": aplanar_marcado(limpiar(s["descripcion"]))[:1590],
         "ejemplos": [], "notas": [], "errores": [], "vocabulario": [],
         "redemittel": [], "mision": {}, "microtareas": [], "autochequeo": [],
         "promptCorreccion": "",
@@ -172,32 +282,53 @@ def compilar(bloque, idioma):
 
     if "cuadro" in s:
         c, f = tabla(s["cuadro"])
+        # Nota al pie: las lineas de prosa que van DESPUES de la tabla dentro
+        # del bloque del cuadro. Llevan reglas mnemotecnicas que estaban
+        # perdiendose en silencio ("Merke: und, aber, denn... no provocan
+        # inversion"), que es peor que un problema estetico.
+        pie = []
+        vista_tabla = False
+        for linea in s["cuadro"].splitlines():
+            t = linea.strip()
+            if t.startswith("|"):
+                vista_tabla = True
+            elif vista_tabla and t:
+                pie.append(t)
         if c and f:
             ficha["cuadroReferencia"] = {
                 "titulo": s.get("cuadro__titulo", "").split("—")[-1].strip(),
-                "columnas": c[:5], "filas": [x[:5] for x in f[:20]]}
+                "columnas": [desenvolver(x) for x in c[:5]],
+                "filas": [[desenvolver(y) for y in x[:5]] for x in f[:20]],
+                **({"notaPie": desenvolver(" ".join(pie))} if pie else {})}
 
     for l in vinetas(s.get("ejemplos", "")):
-        ficha["ejemplos"].append({"texto": limpiar(l)})
-    ficha["notas"] = [limpiar(x) for x in vinetas(s.get("notas", ""))]
-    ficha["errores"] = [limpiar(x) for x in vinetas(s.get("errores", ""))]
+        ficha["ejemplos"].append({"texto": aplanar_marcado(limpiar(l))})
+    ficha["notas"] = [aplanar_marcado(limpiar(x)) for x in vinetas(s.get("notas", ""))]
+    ficha["errores"] = [aplanar_marcado(limpiar(x)) for x in vinetas(s.get("errores", ""))]
 
     if "contraste" in s:
-        ficha["contraste"] = {"es": limpiar(s["contraste"])}
+        ficha["contraste"] = {"es": aplanar_marcado(limpiar(s["contraste"]))}
 
     c, f = tabla(s.get("vocabulario", ""))
     if c:
         col = {n.upper(): i for i, n in enumerate(c)}
         for fila in f:
             item = fila[0]
-            v = {"item": limpiar(item),
-                 "prioridad": "nucleo" if "★" in item else "ampliacion",
+            v = {"item": sin_marcado(item),
+                 "prioridad": "nucleo" if "\u2605" in item else "ampliacion",
                  "traducciones": {"es": fila[col["ES"]] if "ES" in col and
                                   len(fila) > col["ES"] else ""}}
+            if "\u2020" in item:
+                # Declarado por debajo del nivel a proposito: lo que se ensena
+                # es una distincion, un registro o un doble sentido que si
+                # corresponde al nivel. La app debe poder mostrarlo como nota.
+                v["bajoNivelJustificado"] = True
             if idioma == "de":
-                v["reccion"] = fila[1] if len(fila) > 1 else "—"
-            if len(fila) > 2 and fila[2]:
-                v["nota"] = fila[2]
+                r = limpiar(fila[1]) if len(fila) > 1 else ""
+                if r and r not in ("—", "-"):      # "—" significa "sin rección"
+                    v["reccion"] = r
+            if len(fila) > 2 and fila[2].strip() and fila[2].strip() != "—":
+                v["nota"] = limpiar(fila[2])
             if "CH" in " ".join(fila):
                 v["variante"] = "CH"
             ficha["vocabulario"].append(v)
@@ -207,11 +338,12 @@ def compilar(bloque, idioma):
         for fila in f:
             tr = fila[2].strip() if len(fila) > 2 else ""
             ficha["redemittel"].append({
-                "expresion": limpiar(fila[0]), "funcion": limpiar(fila[1]),
+                "expresion": sin_marcado(fila[0]),
+                "funcion": aplanar_marcado(limpiar(fila[1])),
                 "traducciones": {"es": None if tr in ("—", "-", "") else tr}})
     else:  # formato en linea: "*X* · *Y* · *Z*"
         for e in re.findall(r"\*([^*]{4,60})\*", s.get("redemittel", "")):
-            ficha["redemittel"].append({"expresion": e.strip(),
+            ficha["redemittel"].append({"expresion": sin_marcado(e),
                                         "funcion": "—", "traducciones": {"es": None}})
 
     bloque_m = s.get("mision", "")
@@ -226,7 +358,8 @@ def compilar(bloque, idioma):
         requisitos = [limpiar(x) for x in re.split(r",\s*(?:and\s+)?|\.\s+", crudo)
                       if len(x.strip()) > 4]
         consigna = consigna.split("Required")[0].split("Vorgaben")[0].strip() or consigna
-    ficha["mision"] = {"consigna": limpiar(consigna), "requisitos": requisitos[:8]}
+    ficha["mision"] = {"consigna": aplanar_marcado(limpiar(consigna)),
+                       "requisitos": [aplanar_marcado(r) for r in requisitos[:8]]}
 
     for l in vinetas(s.get("microtareas", "")):
         md = re.match(r"\*?(\w+)\*?\s*\((\d+)\s*(?:min|Min)[^)]*\)\.?\*?\s*(.+)", l)
@@ -234,10 +367,10 @@ def compilar(bloque, idioma):
             ficha["microtareas"].append({
                 "dia": DIAS.get(md.group(1), "lun"),
                 "minutos": int(md.group(2)), "texto": limpiar(md.group(3))})
-    ficha["autochequeo"] = [limpiar(x) for x in numeradas(s.get("autochequeo", ""))][:5]
+    ficha["autochequeo"] = [aplanar_marcado(limpiar(x)) for x in numeradas(s.get("autochequeo", ""))][:5]
 
     pr = s.get("prompt", "")
-    ficha["promptCorreccion"] = limpiar(re.sub(r"^>\s*", "", pr, flags=re.M))
+    ficha["promptCorreccion"] = aplanar_marcado(limpiar(re.sub(r"^>\s*", "", pr, flags=re.M)))
 
     audio = numeradas(s.get("audio", ""))
     for i, a in enumerate(audio):

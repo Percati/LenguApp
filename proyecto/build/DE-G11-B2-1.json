@@ -14,25 +14,25 @@
   "oralMin": 4,
   "minutosEstimados": 65
  },
- "descripcion": "Der einfache Relativsatz ist B1. Auf B2 kommen drei Dinge dazu, die fast alle Lernenden umgehen: der Genitivrelativsatz (*dessen*, *deren*), der Relativsatz mit Präposition und die Formen *was* und *wo(r)-*. Die zentrale Regel bleibt einfach: Genus und Numerus vom Bezugswort, der Kasus von der Funktion im Relativsatz.",
+ "descripcion": "Der einfache Relativsatz ist B1. Auf B2 kommen drei Dinge dazu, die fast alle Lernenden umgehen: der **Genitivrelativsatz** (dessen, deren), der Relativsatz mit **Präposition** und die Formen **was** und **wo(r)-**. Die zentrale Regel bleibt einfach: **Genus und Numerus** vom Bezugswort, der **Kasus** von der Funktion im Relativsatz.",
  "ejemplos": [
   {
-   "texto": "Der Kurs, den ich gemacht habe, …* (Akk.)"
+   "texto": "Der Kurs, **den** ich gemacht habe, … (Akk.)"
   },
   {
-   "texto": "Die Kollegin, mit der ich zusammenarbeite, …* (Dat. nach *mit*)"
+   "texto": "Die Kollegin, **mit der** ich zusammenarbeite, … (Dat. nach mit)"
   },
   {
-   "texto": "Der Dozent, dessen Buch wir lesen, …"
+   "texto": "Der Dozent, **dessen** Buch wir lesen, …"
   },
   {
-   "texto": "Die Leute, denen ich das verdanke, …* (Dat. Pl.)"
+   "texto": "Die Leute, **denen** ich das verdanke, … (Dat. Pl.)"
   },
   {
-   "texto": "Alles, was ich gelernt habe, …"
+   "texto": "Alles, **was** ich gelernt habe, …"
   },
   {
-   "texto": "Das Einzige, worauf es ankommt, …"
+   "texto": "Das Einzige, **worauf** es ankommt, …"
   },
   {
    "texto": "*Der Kurs, den ich gemacht habe, war praxisnäher als erwartet.*",
@@ -56,14 +56,14 @@
   }
  ],
  "notas": [
-  "welcher/welche/welches* ist grammatisch möglich, klingt aber veraltet oder amtlich. Im Gespräch vermeiden.",
-  "Relativsätze werden im Deutschen immer von Kommas eingeschlossen.",
-  "deren* für feminin und Plural, *dessen* für maskulin und neutrum. Verwechslung ist der häufigste Genitivfehler."
+  "*welcher/welche/welches* ist grammatisch möglich, klingt aber veraltet oder amtlich. Im Gespräch vermeiden.",
+  "Relativsätze werden im Deutschen **immer** von Kommas eingeschlossen.",
+  "*deren* für feminin und Plural, *dessen* für maskulin und neutrum. Verwechslung ist der häufigste Genitivfehler."
  ],
  "errores": [
   "Kasus vom Bezugswort statt von der Funktion übernehmen.",
-  "dessen das Buch* statt *dessen Buch*.",
-  "Alles, das…* statt *Alles, was…",
+  "*dessen das Buch* statt *dessen Buch*.",
+  "*Alles, das…* statt *Alles, was…*",
   "Komma vergessen."
  ],
  "vocabulario": [
@@ -91,7 +91,6 @@
    "traducciones": {
     "es": "el déficit por recuperar"
    },
-   "reccion": "—",
    "nota": "sehr deutsches Konzept"
   },
   {
@@ -99,16 +98,15 @@
    "prioridad": "nucleo",
    "traducciones": {
     "es": "compatible con el trabajo"
-   },
-   "reccion": "—"
+   }
   },
   {
-   "item": "die Lehre †",
+   "item": "die Lehre",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la formación dual"
    },
-   "reccion": "—",
+   "bajoNivelJustificado": true,
    "nota": "**CH/DE** duale Ausbildung",
    "variante": "CH"
   },
@@ -117,8 +115,7 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "el título universitario"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "etwas vertiefen",
@@ -134,7 +131,6 @@
    "traducciones": {
     "es": "la capacidad de comprensión"
    },
-   "reccion": "—",
    "nota": "gehoben"
   },
   {
@@ -142,8 +138,7 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "mantenerse al día"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "eine Prüfung ablegen / bestehen",
@@ -159,16 +154,14 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "suspender"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "das Fachwissen",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "el conocimiento especializado"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Nachdiplomausbildung",
@@ -176,7 +169,6 @@
    "traducciones": {
     "es": "la formación de posgrado"
    },
-   "reccion": "—",
    "nota": "**CH**",
    "variante": "CH"
   },
@@ -186,63 +178,62 @@
    "traducciones": {
     "es": "la permeabilidad del sistema"
    },
-   "reccion": "—",
    "nota": "echte Bildungsdebatte in CH",
    "variante": "CH"
   }
  ],
  "redemittel": [
   {
-   "expresion": "*Der Kurs, den ich…*",
+   "expresion": "Der Kurs, den ich…",
    "funcion": "Akkusativrelativsatz",
    "traducciones": {
     "es": "el curso que…"
    }
   },
   {
-   "expresion": "*Die Person, mit der…*",
+   "expresion": "Die Person, mit der…",
    "funcion": "Relativsatz mit Präposition",
    "traducciones": {
     "es": "la persona con la que…"
    }
   },
   {
-   "expresion": "*Das, was mir am meisten geholfen hat, …*",
+   "expresion": "Das, was mir am meisten geholfen hat, …",
    "funcion": "Fokus mit *was*",
    "traducciones": {
     "es": "lo que más me ayudó…"
    }
   },
   {
-   "expresion": "*Alles, was…*",
+   "expresion": "Alles, was…",
    "funcion": "nach Indefinitpronomen",
    "traducciones": {
     "es": "todo lo que…"
    }
   },
   {
-   "expresion": "*Das Einzige, worauf…*",
+   "expresion": "Das Einzige, worauf…",
    "funcion": "*wo(r)-*Form",
    "traducciones": {
     "es": "lo único a lo que…"
    }
   },
   {
-   "expresion": "*Die Zeit, in der…*",
+   "expresion": "Die Zeit, in der…",
    "funcion": "temporaler Relativsatz",
    "traducciones": {
     "es": "la época en la que…"
    }
   },
   {
-   "expresion": "*jemand, dessen…*",
+   "expresion": "jemand, dessen…",
    "funcion": "Genitivrelativsatz",
    "traducciones": {
     "es": "alguien cuyo…"
    }
   },
   {
-   "expresion": "*…, weshalb ich mich entschieden habe*",
+   "expresion": "…, weshalb ich mich entschieden habe",
    "funcion": "weiterführender Relativsatz",
    "traducciones": {
     "es": "por lo cual decidí…"
@@ -279,7 +270,7 @@
   }
  ],
  "autochequeo": [
-  "Kommt der Kasus bei jedem Pronomen von der Funktion im Relativsatz?",
+  "Kommt der Kasus bei jedem Pronomen von der **Funktion** im Relativsatz?",
   "Fehlt nach *dessen/deren* der Artikel?",
   "Habe ich *das* geschrieben, wo *was* hingehört?",
   "Ist jeder Relativsatz von Kommas eingeschlossen?",
@@ -324,7 +315,8 @@
     "**dessen**",
     "**deren**"
    ]
-  ]
+  ],
+  "notaPie": "Sonderfälle: nach *alles, nichts, etwas, vieles, das* und nach substantivierten Superlativen steht **was**. Präposition + *was* wird **wo(r)-**. Nach *dessen/deren* folgt das Substantiv **ohne Artikel**."
  },
  "contraste": {
   "es": "Spanisch hat *que* für fast alles und markiert den Kasus nicht. Die spanische Ökonomie führt dazu, dass Lernende im Deutschen den Kasus vom Bezugswort statt von der Funktion ableiten — der Hauptfehler dieser Woche."

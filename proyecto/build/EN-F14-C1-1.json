@@ -17,28 +17,19 @@
  "descripcion": "Feedback in English professional culture follows conventions strong enough to learn as formulas. The core one: describe behaviour and impact, not character. *You were unprepared* is character; *the deck arrived an hour before the meeting, so we spent fifteen minutes reading* is behaviour and impact — and only the second gives the person something to change.",
  "ejemplos": [
   {
-   "texto": "Can I give you some feedback on the report? Two things worked, one didn't."
-  },
-  {
-   "texto": "When the estimate changed without a note, the client assumed we'd hidden it. That's the bit I'd do differently."
-  },
-  {
-   "texto": "I might be missing context — what's your read on why it slipped?"
-  },
-  {
-   "texto": "*Can I give you some feedback on the report?*",
+   "texto": "*Can I give you some feedback on the report? Two things worked, one didn't.*",
    "audio": true
   },
   {
-   "texto": "*When the estimate changed without a note, the client assumed we'd hidden it.*",
+   "texto": "*When the estimate changed without a note, the client assumed we'd hidden it. That's the bit I'd do differently.*",
+   "audio": true
+  },
+  {
+   "texto": "*I might be missing context — what's your read on why it slipped?*",
    "audio": true
   },
   {
    "texto": "*That's the bit I'd do differently.*",
-   "audio": true
-  },
-  {
-   "texto": "*I might be missing context here.*",
    "audio": true
   },
   {
@@ -52,7 +43,7 @@
   "Naming your own uncertainty makes the feedback easier to accept without weakening it."
  ],
  "errores": [
-  "You always* / *You never* — indefensible, and guarantees defensiveness.",
+  "*You always* / *You never* — indefensible, and guarantees defensiveness.",
   "Passive evasion: *mistakes were made*.",
   "Softening until the message is invisible. If they leave unsure there was a problem, there wasn't one.",
   "Feedback on personality rather than output."
@@ -165,56 +156,56 @@
  ],
  "redemittel": [
   {
-   "expresion": "*Can I give you some feedback?*",
+   "expresion": "Can I give you some feedback?",
    "funcion": "asks permission",
    "traducciones": {
     "es": "¿te puedo dar una devolución?"
    }
   },
   {
-   "expresion": "*When X happened, the effect was Y*",
+   "expresion": "When X happened, the effect was Y",
    "funcion": "behaviour plus impact",
    "traducciones": {
     "es": "cuando pasó X, el efecto fue Y"
    }
   },
   {
-   "expresion": "*That's the bit I'd do differently*",
+   "expresion": "That's the bit I'd do differently",
    "funcion": "names the change without blaming",
    "traducciones": {
     "es": "eso es lo que yo haría distinto"
    }
   },
   {
-   "expresion": "*What's your read?*",
+   "expresion": "What's your read?",
    "funcion": "invites their account",
    "traducciones": {
     "es": "¿cómo lo ves vos?"
    }
   },
   {
-   "expresion": "*I might be missing context*",
+   "expresion": "I might be missing context",
    "funcion": "declares your limit",
    "traducciones": {
     "es": "puede que me falte contexto"
    }
   },
   {
-   "expresion": "*Here's what would help next time*",
+   "expresion": "Here's what would help next time",
    "funcion": "forward-looking",
    "traducciones": {
     "es": "lo que ayudaría la próxima es…"
    }
   },
   {
-   "expresion": "*Two things worked, one didn't*",
+   "expresion": "Two things worked, one didn't",
    "funcion": "frames the balance up front",
    "traducciones": {
     "es": "dos cosas salieron bien, una no"
    }
   },
   {
-   "expresion": "*How do you want to handle it?*",
+   "expresion": "How do you want to handle it?",
    "funcion": "transfers ownership",
    "traducciones": {
     "es": "¿cómo querés encararlo?"
@@ -267,27 +258,27 @@
    [
     "1 · Permission",
     "signals it is coming",
-    "*Can I give you some feedback on the report?*"
+    "Can I give you some feedback on the report?"
    ],
    [
     "2 · Behaviour",
     "observable, not interpreted",
-    "*When the estimate changed without a note…*"
+    "When the estimate changed without a note…"
    ],
    [
     "3 · Impact",
     "consequence, not judgement",
-    "*…the client assumed we'd hidden it.*"
+    "…the client assumed we'd hidden it."
    ],
    [
     "4 · Invitation",
     "hands the turn back",
-    "*What's your read on why it slipped?*"
+    "What's your read on why it slipped?"
    ],
    [
     "(optional) Limit",
     "your own uncertainty",
-    "*I might be missing context here.*"
+    "I might be missing context here."
    ]
   ]
  },

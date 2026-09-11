@@ -17,15 +17,6 @@
  "descripcion": "At C1 the issue is not knowing phrasal verbs — it is that you avoid them and reach for the Latinate synonym, which is transparent to a Spanish speaker and therefore comfortable. The result is technically correct English that sounds like a translation: *investigate* instead of *look into*, *tolerate* instead of *put up with*, *postpone* instead of *put off*. This week the Latinate options are banned.",
  "ejemplos": [
   {
-   "texto": "I got into it through a friend and ended up sinking about ten years into it."
-  },
-  {
-   "texto": "I've been meaning to take it back up, but I keep putting it off."
-  },
-  {
-   "texto": "It started as something to wind down with and turned into a second job."
-  },
-  {
    "texto": "*I got into it through a friend and ended up sinking about ten years into it.*",
    "audio": true
   },
@@ -52,7 +43,7 @@
   "Three-part verbs are the ones learners most often mangle, because the middle particle looks droppable and is not."
  ],
  "errores": [
-  "Discuss about* — no preposition. Contrast with *talk about*.",
+  "*Discuss about* — no preposition. Contrast with *talk about*.",
   "Pronoun after the particle: *turn on it*.",
   "Splitting a three-part verb.",
   "Defaulting to the Latinate verb, which is the whole point this week."
@@ -97,11 +88,12 @@
    }
   },
   {
-   "item": "a gateway (hobby) †",
+   "item": "a gateway (hobby)",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "puerta de entrada"
-   }
+   },
+   "bajoNivelJustificado": true
   },
   {
    "item": "a busman's holiday",
@@ -166,63 +158,63 @@
  ],
  "redemittel": [
   {
-   "expresion": "*to get into*",
+   "expresion": "to get into",
    "funcion": "start being interested",
    "traducciones": {
     "es": "aficionarse"
    }
   },
   {
-   "expresion": "*to take up / take back up*",
+   "expresion": "to take up / take back up",
    "funcion": "begin or resume an activity",
    "traducciones": {
     "es": "empezar / retomar"
    }
   },
   {
-   "expresion": "*to put off* †",
+   "expresion": "to put off",
    "funcion": "postpone",
    "traducciones": {
     "es": "postergar"
    }
   },
   {
-   "expresion": "*to end up -ing*",
+   "expresion": "to end up -ing",
    "funcion": "arrive somewhere unplanned",
    "traducciones": {
     "es": "terminar haciendo"
    }
   },
   {
-   "expresion": "*to wind down*",
+   "expresion": "to wind down",
    "funcion": "decompress",
    "traducciones": {
     "es": "desconectar"
    }
   },
   {
-   "expresion": "*to put up with*",
+   "expresion": "to put up with",
    "funcion": "tolerate",
    "traducciones": {
     "es": "aguantar"
    }
   },
   {
-   "expresion": "*to come up with*",
+   "expresion": "to come up with",
    "funcion": "invent, produce",
    "traducciones": {
     "es": "ocurrírsele"
    }
   },
   {
-   "expresion": "*to look into*",
+   "expresion": "to look into",
    "funcion": "investigate",
    "traducciones": {
     "es": "averiguar"
    }
   },
   {
-   "expresion": "*to keep at it*",
+   "expresion": "to keep at it",
    "funcion": "persist",
    "traducciones": {
     "es": "seguir insistiendo"
@@ -285,7 +277,7 @@
    [
     "Inseparable, two-part",
     "never splits",
-    "*look after the kids*"
+    "look after the kids"
    ],
    [
     "Three-part",

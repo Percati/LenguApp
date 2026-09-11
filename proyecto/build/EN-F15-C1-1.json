@@ -17,24 +17,18 @@
  "descripcion": "This is probably the skill that limits spoken English most, and the least taught. Courses train you to produce sentences; they do not train you to get a turn, keep it while you think, hand it over, or recover when you lose the thread mid-sentence. Fluency is not speed — it is the ability to keep the channel open while you think.",
  "ejemplos": [
   {
-   "texto": "Sorry, before we move on — can I go back to what you said about your sister?"
+   "texto": "*Sorry, before we move on — can I go back to what you said about your sister?*"
   },
   {
-   "texto": "There's a word I'm looking for, bear with me… estranged. That's it."
+   "texto": "*There's a word I'm looking for, bear with me… estranged. That's it.*",
+   "audio": true
   },
   {
-   "texto": "That came out wrong. What I meant was that I understood why she did it, not that I agreed."
+   "texto": "*That came out wrong. What I meant was that I understood why she did it, not that I agreed.*",
+   "audio": true
   },
   {
    "texto": "*Can I jump in on that?*",
-   "audio": true
-  },
-  {
-   "texto": "*There's a word I'm looking for — bear with me.*",
-   "audio": true
-  },
-  {
-   "texto": "*That came out wrong. What I meant was something else.*",
    "audio": true
   },
   {
@@ -53,7 +47,7 @@
  ],
  "errores": [
   "Apologising for your English mid-conversation. It moves the listener's attention onto your level.",
-  "Sorry, my English is bad* — never say this. Say *bear with me*.",
+  "*Sorry, my English is bad* — never say this. Say *bear with me*.",
   "Abandoning a lost sentence instead of repairing it aloud.",
   "Waiting for a clean gap that never comes."
  ],
@@ -164,56 +158,56 @@
  ],
  "redemittel": [
   {
-   "expresion": "*Can I jump in?*",
+   "expresion": "Can I jump in?",
    "funcion": "takes the floor",
    "traducciones": {
     "es": "¿puedo meter una?"
    }
   },
   {
-   "expresion": "*Sorry, before we move on —*",
+   "expresion": "Sorry, before we move on —",
    "funcion": "takes it back to an earlier point",
    "traducciones": {
     "es": "perdón, antes de seguir…"
    }
   },
   {
-   "expresion": "*Bear with me*",
+   "expresion": "Bear with me",
    "funcion": "holds the turn while searching",
    "traducciones": {
     "es": "dame un segundo"
    }
   },
   {
-   "expresion": "*Let me start that again*",
+   "expresion": "Let me start that again",
    "funcion": "explicit repair",
    "traducciones": {
     "es": "lo digo de nuevo"
    }
   },
   {
-   "expresion": "*I've lost my thread*",
+   "expresion": "I've lost my thread",
    "funcion": "admits the breakdown and keeps going",
    "traducciones": {
     "es": "perdí el hilo"
    }
   },
   {
-   "expresion": "*What's your take?*",
+   "expresion": "What's your take?",
    "funcion": "yields the turn",
    "traducciones": {
     "es": "¿vos qué opinás?"
    }
   },
   {
-   "expresion": "*I'll stop there*",
+   "expresion": "I'll stop there",
    "funcion": "closes your turn cleanly",
    "traducciones": {
     "es": "lo dejo ahí"
    }
   },
   {
-   "expresion": "*It depends what you mean by…*",
+   "expresion": "It depends what you mean by…",
    "funcion": "buys time and clarifies",
    "traducciones": {
     "es": "depende de qué entiendas por…"

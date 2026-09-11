@@ -14,17 +14,8 @@
   "oralMin": 6,
   "minutosEstimados": 65
  },
- "descripcion": "This is a structural difference between B2 and C1 written English. *The patients who were given the drug* becomes *the patients given the drug*. The information is identical; the density is not. The rule is narrow and learnable: drop the relative pronoun and the auxiliary when the clause is passive or continuous, and only when the pronoun is the subject.",
+ "descripcion": "This is a structural difference between B2 and C1 written English. *The patients who were given the drug* becomes *the patients given the drug*. The information is identical; the density is not. The rule is narrow and learnable: drop the relative pronoun and the auxiliary when the clause is passive or continuous, and only when the pronoun is the **subject**.",
  "ejemplos": [
-  {
-   "texto": "The study, published last month, contradicts three earlier trials."
-  },
-  {
-   "texto": "Anyone taking that medication should avoid alcohol."
-  },
-  {
-   "texto": "Having been misdiagnosed twice, she stopped trusting the referral system."
-  },
   {
    "texto": "*The study, published last month, contradicts three earlier trials.*",
    "audio": true
@@ -52,7 +43,7 @@
   "These are written structures. In conversation they sound stiff."
  ],
  "errores": [
-  "Walking into the room, the lights were off* — the lights were not walking.",
+  "*Walking into the room, the lights were off* — the lights were not walking.",
   "Reducing where the pronoun is the object: *the book read*.",
   "Overusing it in speech."
  ],
@@ -165,56 +156,56 @@
  ],
  "redemittel": [
   {
-   "expresion": "*published last month*",
+   "expresion": "published last month",
    "funcion": "reduced passive relative",
    "traducciones": {
     "es": "publicado el mes pasado"
    }
   },
   {
-   "expresion": "*anyone taking…*",
+   "expresion": "anyone taking…",
    "funcion": "reduced active relative",
    "traducciones": {
     "es": "quien tome…"
    }
   },
   {
-   "expresion": "*having been…*",
+   "expresion": "having been…",
    "funcion": "perfect passive participle",
    "traducciones": {
     "es": "habiendo sido…"
    }
   },
   {
-   "expresion": "*given the circumstances*",
+   "expresion": "given the circumstances",
    "funcion": "fixed participial",
    "traducciones": {
     "es": "dadas las circunstancias"
    }
   },
   {
-   "expresion": "*weighed against…*",
+   "expresion": "weighed against…",
    "funcion": "participial contrast",
    "traducciones": {
     "es": "frente a…"
    }
   },
   {
-   "expresion": "*the data available*",
+   "expresion": "the data available",
    "funcion": "postposed adjective",
    "traducciones": {
     "es": "los datos disponibles"
    }
   },
   {
-   "expresion": "*followed by…*",
+   "expresion": "followed by…",
    "funcion": "sequencing participial",
    "traducciones": {
     "es": "seguido de…"
    }
   },
   {
-   "expresion": "*based on…*",
+   "expresion": "based on…",
    "funcion": "very frequent, often dangles",
    "traducciones": {
     "es": "basado en…"
@@ -265,32 +256,32 @@
   ],
   "filas": [
    [
-    "*the study which was published…*",
-    "*the study published…*",
+    "the study which was published…",
+    "the study published…",
     "past participle (passive)"
    ],
    [
-    "*anyone who is taking…*",
-    "*anyone taking…*",
+    "anyone who is taking…",
+    "anyone taking…",
     "present participle (active)"
    ],
    [
-    "*because it had been delayed…*",
-    "*having been delayed…*",
+    "because it had been delayed…",
+    "having been delayed…",
     "perfect passive"
    ],
    [
-    "*after she had finished…*",
-    "*having finished…*",
+    "after she had finished…",
+    "having finished…",
     "perfect active"
    ],
    [
-    "*the data which is available*",
-    "*the data available*",
+    "the data which is available",
+    "the data available",
     "adjective postposition"
    ],
    [
-    "*the book which I read*",
+    "the book which I read",
     "✗ cannot reduce",
     "pronoun is the object"
    ]

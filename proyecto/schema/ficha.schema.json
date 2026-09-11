@@ -132,7 +132,8 @@
     "descripcion": {
       "type": "string",
       "minLength": 200,
-      "maxLength": 1600
+      "maxLength": 1600,
+      "description": "Prosa de la ficha. Puede contener marcado en linea: *cita* y **destaque**. Ver $comment del schema."
     },
     "cuadroReferencia": {
       "type": "object",
@@ -259,7 +260,7 @@
           },
           "reccion": {
             "type": "string",
-            "description": "Caso o preposicion que rige. Obligatorio de facto en aleman."
+            "description": "Caso o preposicion que rige. AUSENTE cuando el item no rige nada; nunca un guion vacio."
           },
           "tipo": {
             "type": "string"
@@ -291,6 +292,10 @@
               "type": "string"
             },
             "minProperties": 1
+          },
+          "bajoNivelJustificado": {
+            "type": "boolean",
+            "description": "El item esta por debajo del nivel declarado a proposito: lo que se ensena es una distincion, un registro o un doble sentido que si corresponde al nivel. La app puede senalarlo."
           }
         }
       }
@@ -450,30 +455,6 @@
     {
       "if": {
         "properties": {
-          "idioma": {
-            "const": "de"
-          }
-        }
-      },
-      "then": {
-        "properties": {
-          "vocabulario": {
-            "items": {
-              "required": [
-                "item",
-                "prioridad",
-                "traducciones",
-                "reccion"
-              ]
-            }
-          }
-        },
-        "description": "En aleman el caso/reccion es obligatorio"
-      }
-    },
-    {
-      "if": {
-        "properties": {
           "categoria": {
             "enum": [
               "grammar",
@@ -488,5 +469,6 @@
         ]
       }
     }
-  ]
+  ],
+  "$comment": "MARCADO EN LINEA. Los campos de prosa y de tabla pueden contener dos marcadores, planos y sin anidar: *cita* para una palabra o expresion citada, y **destaque** para el elemento sobre el que se llama la atencion (por ejemplo la posicion del verbo en la ficha de Satzbau). La app necesita UN solo renderizador que los convierta a texto con estilo. El marcado que envolvia el campo entero ya fue quitado por el compilador: los ejemplos y los Redemittel llegan limpios y la app los estiliza por su rol."
 }

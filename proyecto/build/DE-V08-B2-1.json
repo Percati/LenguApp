@@ -14,20 +14,8 @@
   "oralMin": 4,
   "minutosEstimados": 55
  },
- "descripcion": "Schweizer Standarddeutsch ist kein „falsches Deutsch\", sondern eine eigene Standardvarietät mit eigenem Wortschatz, eigener Rechtschreibung und teilweise eigener Grammatik. Wer in der Deutschschweiz arbeitet, braucht sie — und wer sie ausserhalb benutzt, fällt auf. Drei Ebenen: Wortschatz, Rechtschreibung und Verwaltungssprache.",
+ "descripcion": "Schweizer Standarddeutsch ist kein „falsches Deutsch\", sondern eine eigene Standardvarietät mit eigenem Wortschatz, eigener Rechtschreibung und teilweise eigener Grammatik. Wer in der Deutschschweiz arbeitet, braucht sie — und wer sie ausserhalb benutzt, fällt auf. Drei Ebenen: **Wortschatz**, **Rechtschreibung** und **Verwaltungssprache**.",
  "ejemplos": [
-  {
-   "texto": "Bitte reichen Sie die Unterlagen bis Freitag ein."
-  },
-  {
-   "texto": "Das Traktandum verschieben wir auf die nächste Sitzung."
-  },
-  {
-   "texto": "Ich parkiere vor dem Gebäude."
-  },
-  {
-   "texto": "Allfällige Rückfragen bitte an die Projektleitung."
-  },
   {
    "texto": "*Bitte reichen Sie die Unterlagen bis Freitag ein.*",
    "audio": true
@@ -35,6 +23,9 @@
   {
    "texto": "*Das Traktandum verschieben wir auf die nächste Sitzung.*",
    "audio": true
+  },
+  {
+   "texto": "*Ich parkiere vor dem Gebäude.*"
   },
   {
    "texto": "*Allfällige Rückfragen bitte an die Projektleitung.*",
@@ -50,12 +41,12 @@
   }
  ],
  "notas": [
-  "Das ß existiert im Schweizer Standard nicht. Immer *ss*. Das ist Norm, nicht Nachlässigkeit.",
+  "Das **ß existiert im Schweizer Standard nicht**. Immer *ss*. Das ist Norm, nicht Nachlässigkeit.",
   "Viele Helvetismen kommen aus dem Französischen: *Billett, Trottoir, Coiffeur, Velo, Retraite*.",
   "Das Höflichkeitsregister ist schriftlich formeller als in Deutschland, mündlich oft weniger."
  ],
  "errores": [
-  "Mundart und Standard verwechseln: *gäll*, *lueg*, *scho* gehören nicht ins Schriftdeutsch, *Velo* und *parkieren* schon.",
+  "Mundart und Standard verwechseln: *gäll*, *lueg*, *scho* gehören **nicht** ins Schriftdeutsch, *Velo* und *parkieren* schon.",
   "Annehmen, alles Schweizerische sei umgangssprachlich. *Traktandum* ist gehobene Verwaltungssprache.",
   "Ein ß in einem Schweizer Dokument."
  ],
@@ -66,7 +57,6 @@
    "traducciones": {
     "es": "el punto del orden del día"
    },
-   "reccion": "—",
    "nota": "**CH**",
    "variante": "CH"
   },
@@ -76,7 +66,6 @@
    "traducciones": {
     "es": "el asunto pendiente"
    },
-   "reccion": "—",
    "nota": "**CH**",
    "variante": "CH"
   },
@@ -86,7 +75,6 @@
    "traducciones": {
     "es": "eventual"
    },
-   "reccion": "—",
    "nota": "**CH**, Verwaltung",
    "variante": "CH"
   },
@@ -96,17 +84,16 @@
    "traducciones": {
     "es": "la interrupción"
    },
-   "reccion": "—",
    "nota": "**CH**, technisch",
    "variante": "CH"
   },
   {
-   "item": "parkieren †",
+   "item": "parkieren",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "aparcar"
    },
-   "reccion": "—",
+   "bajoNivelJustificado": true,
    "nota": "**CH**",
    "variante": "CH"
   },
@@ -116,7 +103,6 @@
    "traducciones": {
     "es": "la bicicleta"
    },
-   "reccion": "—",
    "nota": "**CH**",
    "variante": "CH"
   },
@@ -135,7 +121,6 @@
    "traducciones": {
     "es": "el tentempié"
    },
-   "reccion": "—",
    "nota": "**CH**",
    "variante": "CH"
   },
@@ -145,7 +130,6 @@
    "traducciones": {
     "es": "la franquicia"
    },
-   "reccion": "—",
    "nota": "**CH**, Versicherung",
    "variante": "CH"
   },
@@ -155,7 +139,6 @@
    "traducciones": {
     "es": "la consulta pública"
    },
-   "reccion": "—",
    "nota": "**CH**, Politik",
    "variante": "CH"
   },
@@ -165,7 +148,6 @@
    "traducciones": {
     "es": "el pliego de condiciones"
    },
-   "reccion": "—",
    "nota": "**CH/DE**, Projekt",
    "variante": "CH"
   },
@@ -196,56 +178,56 @@
  ],
  "redemittel": [
   {
-   "expresion": "*Wir haben anlässlich der letzten Sitzung…*",
+   "expresion": "Wir haben anlässlich der letzten Sitzung…",
    "funcion": "Bezug auf ein Treffen",
    "traducciones": {
     "es": "con ocasión de la última reunión…"
    }
   },
   {
-   "expresion": "*Als Traktandum 3 wurde behandelt…*",
+   "expresion": "Als Traktandum 3 wurde behandelt…",
    "funcion": "Protokollformel",
    "traducciones": {
     "es": "como punto 3 se trató…"
    }
   },
   {
-   "expresion": "*Allfällige Rückfragen richten Sie bitte an…*",
+   "expresion": "Allfällige Rückfragen richten Sie bitte an…",
    "funcion": "Verwaltungsformel",
    "traducciones": {
     "es": "para eventuales consultas, diríjase a…"
    }
   },
   {
-   "expresion": "*Die Pendenz bleibt offen*",
+   "expresion": "Die Pendenz bleibt offen",
    "funcion": "Statusmeldung",
    "traducciones": {
     "es": "el asunto queda pendiente"
    }
   },
   {
-   "expresion": "*Zuständig ist…*",
+   "expresion": "Zuständig ist…",
    "funcion": "Verantwortung zuweisen",
    "traducciones": {
     "es": "responsable es…"
    }
   },
   {
-   "expresion": "*Termin: bis spätestens…*",
+   "expresion": "Termin: bis spätestens…",
    "funcion": "Frist setzen",
    "traducciones": {
     "es": "plazo: hasta el…"
    }
   },
   {
-   "expresion": "*Zur Kenntnis genommen*",
+   "expresion": "Zur Kenntnis genommen",
    "funcion": "Protokollformel",
    "traducciones": {
     "es": "tomado en conocimiento"
    }
   },
   {
-   "expresion": "*Beschlossen wurde, dass…*",
+   "expresion": "Beschlossen wurde, dass…",
    "funcion": "Beschluss festhalten",
    "traducciones": {
     "es": "se acordó que…"

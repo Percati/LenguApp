@@ -14,20 +14,8 @@
   "oralMin": 4,
   "minutosEstimados": 60
  },
- "descripcion": "Der Konjunktiv II wird meistens als Hypothese eingeführt, aber im Alltag ist die häufigste Funktion die Höflichkeit: *Könnten Sie…*, *Ich hätte gern…* machen mindestens die Hälfte des tatsächlichen Gebrauchs aus. Die dritte Funktion, der irreale Vorwurf, ist die schwierigste und die nützlichste für Konfliktgespräche.",
+ "descripcion": "Der Konjunktiv II wird meistens als Hypothese eingeführt, aber im Alltag ist die häufigste Funktion die **Höflichkeit**: *Könnten Sie…*, *Ich hätte gern…* machen mindestens die Hälfte des tatsächlichen Gebrauchs aus. Die dritte Funktion, der irreale Vorwurf, ist die schwierigste und die nützlichste für Konfliktgespräche.",
  "ejemplos": [
-  {
-   "texto": "Ich hätte da eine Bitte."
-  },
-  {
-   "texto": "Wenn wir früher darüber gesprochen hätten, wäre das nicht passiert."
-  },
-  {
-   "texto": "Du hättest mir das sagen sollen."
-  },
-  {
-   "texto": "Das hätte nicht sein müssen."
-  },
   {
    "texto": "*Ich hätte da eine Bitte.*",
    "audio": true
@@ -41,6 +29,9 @@
    "audio": true
   },
   {
+   "texto": "*Das hätte nicht sein müssen.*"
+  },
+  {
    "texto": "*An deiner Stelle würde ich das direkt ansprechen.*",
    "audio": true
   },
@@ -50,13 +41,13 @@
   }
  ],
  "notas": [
-  "Bei den Originalformen klingt *würde* falsch: *Wenn ich Zeit hätte*, nicht *würde haben*.",
-  "Wenn* = si condicional, *ob* = si interrogativo. Nicht verwechseln.",
-  "Der Doppelinfinitiv ist der Prüfstein: *hätte machen können*, nie *gekonnt*."
+  "Bei den Originalformen klingt würde falsch: Wenn ich Zeit **hätte**, nicht würde haben.",
+  "*Wenn* = si condicional, *ob* = si interrogativo. Nicht verwechseln.",
+  "Der Doppelinfinitiv ist der Prüfstein: hätte machen **können**, nie gekonnt."
  ],
  "errores": [
-  "Würde* überall: *Wenn ich reich sein würde* statt *wäre*.",
-  "Hätte gekonnt* statt *hätte können*.",
+  "*Würde* überall: *Wenn ich reich sein würde* statt *wäre*.",
+  "*Hätte gekonnt* statt *hätte können*.",
   "Im Vorwurf das Modalverb vergessen: *Das hättest du gesagt* heisst etwas anderes als *Das hättest du sagen sollen*."
  ],
  "vocabulario": [
@@ -118,7 +109,6 @@
    "traducciones": {
     "es": "el afecto"
    },
-   "reccion": "—",
    "nota": "eher formell"
   },
   {
@@ -131,12 +121,12 @@
    "nota": "Redewendung"
   },
   {
-   "item": "die Erziehung †",
+   "item": "die Erziehung",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la crianza"
    },
-   "reccion": "—",
+   "bajoNivelJustificado": true,
    "nota": "≠ *Bildung*"
   },
   {
@@ -153,16 +143,14 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "ser rencoroso"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Aufgabenteilung",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "el reparto de tareas"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "jemandem den Rücken stärken",
@@ -184,56 +172,56 @@
  ],
  "redemittel": [
   {
-   "expresion": "*An deiner Stelle würde ich…*",
+   "expresion": "An deiner Stelle würde ich…",
    "funcion": "Ratschlag ohne Belehrung",
    "traducciones": {
     "es": "yo en tu lugar…"
    }
   },
   {
-   "expresion": "*Ich hätte gern…*",
+   "expresion": "Ich hätte gern…",
    "funcion": "höfliche Bitte",
    "traducciones": {
     "es": "quisiera…"
    }
   },
   {
-   "expresion": "*Es wäre besser, wenn…*",
+   "expresion": "Es wäre besser, wenn…",
    "funcion": "abgeschwächte Empfehlung",
    "traducciones": {
     "es": "sería mejor que…"
    }
   },
   {
-   "expresion": "*Das hättest du… sollen*",
+   "expresion": "Das hättest du… sollen",
    "funcion": "irrealer Vorwurf",
    "traducciones": {
     "es": "deberías haber…"
    }
   },
   {
-   "expresion": "*Ich wünschte, …*",
+   "expresion": "Ich wünschte, …",
    "funcion": "irrealer Wunsch",
    "traducciones": {
     "es": "ojalá…"
    }
   },
   {
-   "expresion": "*Könntest du…?*",
+   "expresion": "Könntest du…?",
    "funcion": "Bitte",
    "traducciones": {
     "es": "¿podrías…?"
    }
   },
   {
-   "expresion": "*Das könnte daran liegen, dass…*",
+   "expresion": "Das könnte daran liegen, dass…",
    "funcion": "vorsichtige Erklärung",
    "traducciones": {
     "es": "podría deberse a que…"
    }
   },
   {
-   "expresion": "*Wäre es möglich, dass…?*",
+   "expresion": "Wäre es möglich, dass…?",
    "funcion": "vorsichtige Vermutung",
    "traducciones": {
     "es": "¿sería posible que…?"
@@ -286,35 +274,36 @@
   "filas": [
    [
     "Höflichkeit",
-    "*könnte, hätte, würde, wäre*",
-    "*Könntest du mir kurz helfen?*"
+    "könnte, hätte, würde, wäre",
+    "Könntest du mir kurz helfen?"
    ],
    [
     "Irreale Bedingung",
     "*wenn* + K II, K II",
-    "*Wenn ich Zeit hätte, würde ich kommen.*"
+    "Wenn ich Zeit hätte, würde ich kommen."
    ],
    [
     "Ratschlag",
-    "*An deiner Stelle würde ich…*",
-    "*An deiner Stelle würde ich das ansprechen.*"
+    "An deiner Stelle würde ich…",
+    "An deiner Stelle würde ich das ansprechen."
    ],
    [
     "Irrealer Wunsch",
     "*Wenn… nur…!* / *Ich wünschte…*",
-    "*Wenn ich das nur früher gewusst hätte!*"
+    "Wenn ich das nur früher gewusst hätte!"
    ],
    [
     "Irrealer Vorwurf",
     "*hätte* + Inf. + Modalverb",
-    "*Das hättest du sagen sollen.*"
+    "Das hättest du sagen sollen."
    ],
    [
     "Vorsichtige Vermutung",
-    "*könnte, dürfte*",
-    "*Das könnte am Termindruck liegen.*"
+    "könnte, dürfte",
+    "Das könnte am Termindruck liegen."
    ]
-  ]
+  ],
+  "notaPie": "**Originalformen statt würde:** hätte, wäre, könnte, müsste, sollte, dürfte, wüsste, ginge, käme, gäbe, bräuchte. **Vergangenheit:** nur **eine** Form — hätte/wäre + Partizip. Mit Modalverb: **Doppelinfinitiv** (hätte machen können)."
  },
  "contraste": {
   "es": "Der spanische *condicional* und der *imperfecto de subjuntivo* teilen sich die Arbeit, die im Deutschen ein einziger Modus leistet. Die spanische Zweiteilung (*si tuviera… haría*) verleitet dazu, im Deutschen *würde* in beiden Satzteilen zu setzen — im *wenn*-Satz ist das stilistisch schlecht."
