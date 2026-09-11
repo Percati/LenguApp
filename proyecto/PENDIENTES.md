@@ -49,6 +49,15 @@ Estado a septiembre 2026, semana ISO 37. Ordenados por lo que bloquea, no por an
 | D3 | Publicación en F-Droid con cero Anti-Features | Sin permiso INTERNET, sin Play Services, build reproducible, informe de Exodus |
 | D4 | Audio con Piper | **Script escrito** (`tools/generar_audio.py`), con `--dry-run` para estimar antes de generar. Falta que instales Piper y bajes las voces. 90 clips en el piloto, ~2 MB |
 
+## D-bis. Contenido pendiente por el cambio de variantes
+
+| Qué | Detalle |
+|---|---|
+| Rehacer la ficha de la semana 53 (`DE-V08 Helvetismen`) | Al eliminarse el ajuste de variantes, una ficha entera dedicada a los helvetismos deja de encajar. El contenido regional pasa a ser ítems adicionales de los demás packs, hasta 5 por pack |
+| Decidir si `DE-V08` sigue en el banco | O se disuelve en ítems marcados con `variante` dentro de los otros skills |
+| Equidad entre variedades | Hoy solo hay `CH`. El mecanismo por ítem ya soporta `AT`, `BrE`, `AmE`, `BR`: es trabajo de contenido, no de arquitectura |
+| Fichas de ES, IT, FR y PT | Ver `BIBLIOGRAFIA-ES-IT-FR-PT.pdf`. Empezar por español: es el único con inventario oficial hasta C2 (PCIC) y está gratis en línea |
+
 ## E. Corregido tras la Fase 1
 
 | Qué | Detalle |

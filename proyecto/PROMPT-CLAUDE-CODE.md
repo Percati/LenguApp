@@ -15,7 +15,7 @@ El contenido pedagógico **ya está diseñado, auditado y compilado**. No hay qu
 Estos no se discuten ni se optimizan. Un PR que los rompa se descarta.
 
 1. **Sin permiso `INTERNET` en el manifiesto.** No es una recomendación: es la prueba verificable de que la app no puede rastrear nada. Si algo parece necesitar red, la respuesta es que no se hace.
-2. **El único dato que se lee del dispositivo es la fecha.** Sin ubicación, sin cuentas, sin identificadores, sin sensores.
+2. **Los únicos datos que se leen del dispositivo son la fecha y, si el usuario lo activa, el idioma del sistema.** Sin ubicación, sin cuentas, sin identificadores, sin sensores. Nada sale del dispositivo. (Enmienda registrada en `AJUSTES-FASE-6.md`, bloque E.)
 3. **Sin Google Play Services, sin Firebase, sin analítica, sin informes de fallos automáticos, sin SDK de terceros.**
 4. **Compilación reproducible.** Objetivo declarado: publicar en F-Droid con cero Anti-Features.
 5. **Modo "revista": manda la fecha.** La semana 14 es la semana 14 haya hecho el usuario la 13 o no. No hay puntero de progreso, ni estado guardado, ni recuperación de semanas perdidas. No implementar persistencia de progreso aunque parezca una mejora obvia — es una decisión de diseño, no un olvido.
