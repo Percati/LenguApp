@@ -17,6 +17,10 @@ El brief completo está en `proyecto/PROMPT-CLAUDE-CODE.md`.
 7. El calendario se **precalcula y se embebe**, no se genera en el dispositivo.
 8. Las semanas de repaso y Survival usan `semana-especial.schema.json`, **no** el schema de ficha.
 
+## Convenciones de git
+
+Cuando un test falla por un cambio intencional, la actualización del test va en un **commit aparte** del cambio de código, con el motivo en el mensaje. **Si el motivo no entra en una línea, el problema es el cambio, no el test** — no lo actualices, revisá el cambio primero.
+
 ## Estado del contenido
 
 **2026 está completo**: 34 fichas compiladas y validadas en `proyecto/build/` — semanas 37 a 53 en inglés C1 y alemán B2, con sus 4 semanas de repaso y 2 Survival.
