@@ -54,7 +54,8 @@ Estado a septiembre 2026, semana ISO 37. Ordenados por lo que bloquea, no por an
 | # | Pendiente | Detalle | Estado |
 |---|---|---|---|
 | C11 | Traducir el *chrome* de la interfaz a los seis idiomas | Code lo señaló al cerrar la Fase 6 y **tuvo razón en no asumirlo**: traducir a seis idiomas sin revisor nativo repite el problema que ya tuvimos con el contenido. **Excepción abierta en la Fase 7**: «Semanas», «Ajustes», «Hoy» y el aviso de doble atrás sí se traducen, porque son las únicas cadenas visibles en la pantalla principal | Parcial. El resto sigue diferido |
-| C12 | Transcribir la sección *Phrase* del IELTS 6.5 | Única fuente de expresiones multipalabra. Requiere versión con capa de texto | Abierto |
+| C12 | ~~Transcribir el IELTS 6.5~~ | **CERRADO.** Transcrito a Excel e integrado: 547 lemas, 1.021 multipalabra en la base. Primera vez que el verificador inglés reconoce expresiones idiomáticas | Hecho |
+| C13 | Colocaciones del registro profesional inglés (*sign off on*, *put up with*, *pushback*) | Ninguna de las nueve fuentes las trae. Probado con CEFR-J, Oxford, Cambridge First, Cambridge Advanced e IELTS. Conclusión: **ese registro no está en ninguna lista publicada**. Solo se cerraría con un corpus de inglés profesional | Abierto, probablemente permanente |
 
 ## D-bis. Contenido pendiente por el cambio de variantes
 

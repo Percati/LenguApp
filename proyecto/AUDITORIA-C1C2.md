@@ -103,15 +103,26 @@ Dos archivos que estaban y ya no: la wordlist 1.6 de CEFR-J y la lista de B1 Pre
 
 ---
 
-## 3bis. IELTS Vocabulary 6.5 — útil, pero no integrable
+## 3bis. IELTS Vocabulary 6.5 — integrado
 
 El PDF es un **escaneo sin capa de texto**, como los otros ocho. Lo leí como imagen para ver qué contiene, y vale la pena: está organizado por unidad y clase de palabra, y trae una **sección «Phrase»** con expresiones de varias palabras — *pressed for time*, *in the blink of an eye*, *in next to no time*, *have time on your hands*, *there aren't enough hours in the day*. **Ninguna de las ocho fuentes actuales trae eso.**
 
-**Por qué no lo integré.** Transcribir cinco páginas de escaneo a mano significa meter unos 600 ítems sin verificar en la base que existe precisamente para verificar. Un error de transcripción silencioso en el verificador es peor que no tener la fuente: haría pasar como C1 algo que no lo es, y nadie se daría cuenta.
+**Resuelto por transcripción manual a Excel**, una columna por unidad, con las clases de palabra como filas de cabecera. Integrado con un lector nuevo (`formato: xlsx-unidades`): **547 lemas**, sección *Phrase* incluida.
 
-**Cómo aprovecharlo.** Subirlo con capa de texto, igual que los otros ocho. Si no aparece versión con texto, la alternativa razonable es transcribir **solo la sección Phrase** — son unas decenas de ítems en vez de 600, revisables de un vistazo, y es la parte que aporta lo que no tenemos.
+Efecto en la base inglesa:
 
-**Una advertencia sobre su nivel.** La banda 6.5 de IELTS cae exactamente en el límite B2/C1: Cambridge mapea 5.5–6.5 a B2 y 6.5–7 a C1. No se puede asignar limpio a un nivel, así que su etiqueta correcta es la doble `B2/C1`. El constructor ya soporta ese mecanismo. Queda registrado en `fuentes_en.json` con estado `PENDIENTE`.
+| | Antes | Ahora |
+|---|---|---|
+| Lemas totales | 10.023 | **10.284** |
+| Lemas C1 | 2.108 | **2.354** |
+| **Lemas multipalabra** | — | **1.021** |
+| Etiquetas dobles | 335 | **416** |
+
+Ahora se verifican *pressed for time*, *in the blink of an eye*, *in next to no time*, *have time on your hands*, *status quo*. **Es la primera vez que el verificador inglés reconoce expresiones idiomáticas completas.**
+
+Lo que sigue sin atestiguar: *sign off on*, *put up with*, *stopgap*, *pushback*. Son colocaciones del registro profesional, no del examen. Ninguna de las nueve fuentes las trae, y a esta altura la conclusión razonable es que **ese registro no está cubierto por ninguna lista publicada** — lo probamos con CEFR-J, Oxford, Cambridge First, Cambridge Advanced e IELTS.
+
+**Cómo se resolvió su nivel.** La banda 6.5 cae exactamente en el límite: Cambridge mapea 5.5–6.5 a B2 y 6.5–7 a C1. Se etiquetó **C1**, porque el umbral marca la entrada a ese nivel, y porque el criterio de fusión es *gana el nivel más bajo atestiguado*: las palabras que también aparecen en listas B2 conservan B2, así que etiquetar C1 solo afecta a las exclusivas de esta lista, que plausiblemente son C1. Las 345 etiquetas `B2/C1` son precisamente los lemas donde las fuentes discrepan en ese borde.
 
 ## 4. Lo que no se puede concluir todavía
 

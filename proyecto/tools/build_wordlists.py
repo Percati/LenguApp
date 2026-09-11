@@ -125,6 +125,40 @@ def lemas_cambridge_wordlist(texto, nivel):
             entradas[seg.lower()] = (seg.lower(), nivel)
     return entradas
 
+def lemas_xlsx_por_unidad(path, nivel):
+    """Wordlist transcrita a Excel: una columna por unidad.
+
+    Dentro de cada columna, las filas que dicen Noun / Adjective / Verb /
+    Adverb / Phrase son cabeceras de clase de palabra, no vocabulario. Todo lo
+    demas es un item. La seccion "Phrase" aporta expresiones de varias
+    palabras, que es lo que las listas de palabra sueltas no cubren.
+    """
+    import openpyxl
+    CLASES = {"noun", "nouns", "adjective", "adjectives", "verb", "verbs",
+              "adverb", "adverbs", "phrase", "phrases", "expression",
+              "expressions", "collocation", "collocations"}
+    # read_only=True no expone iter_cols, y aqui hace falta recorrer por
+    # columna porque cada unidad es una columna. Se carga completo.
+    wb = openpyxl.load_workbook(path, data_only=True)
+    entradas = {}
+    for ws in wb.worksheets:
+        for col in ws.iter_cols(values_only=True):
+            for celda in col:
+                if celda is None:
+                    continue
+                t = re.sub(r"\s+", " ", str(celda)).strip(" ,;.")
+                if not t or len(t) > 45:
+                    continue
+                bajo = t.lower()
+                if bajo in CLASES or re.match(r"^u?unit\s*\d", bajo):
+                    continue
+                if not re.fullmatch(r"[a-zA-Z][a-zA-Z'\-' ]{1,43}", t):
+                    continue
+                if len(t) < 3:
+                    continue
+                entradas[bajo] = (bajo, nivel)
+    return entradas
+
 def lemas_csv(path, col_lema="headword", col_nivel="CEFR"):
     """CSV de CEFR-J / Octanove. El nivel CEFR-J trae subniveles (A1.1) que
     se colapsan al nivel MCER (A1)."""
@@ -221,6 +255,8 @@ def construir(fuentes):
         if formato == "csv":
             pares = lemas_csv(path, f.get("colLema", "headword"),
                               f.get("colNivel", "CEFR"))
+        elif formato == "xlsx-unidades":
+            pares = lemas_xlsx_por_unidad(path, f["nivel"])
         elif formato == "cambridge-wordlist":
             pares = lemas_cambridge_wordlist(leer(path), f["nivel"])
         elif formato == "cambridge":
