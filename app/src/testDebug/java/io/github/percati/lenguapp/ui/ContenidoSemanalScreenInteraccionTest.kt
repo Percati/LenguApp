@@ -56,16 +56,21 @@ class ContenidoSemanalScreenInteraccionTest {
     fun `vocabulario y redemittel arrancan plegados y se abren al tocar el titulo`() {
         val ficha = ficha()
         composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+        // Los titulos siguen el idioma de la ficha desde la Fase 5 (B1): DE-G01
+        // es alemana, asi que la seccion se llama "Themenwortschatz", no
+        // "Vocabulario".
+        val tituloVocabulario = etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)
+        val tituloRedemittel = etiquetaSeccion("redemittel", ficha.idioma, ficha.bilingue)
 
         // Plegado: el primer item de vocabulario no esta en pantalla todavia.
         composeTestRule.onNode(hasText(ficha.vocabulario.first().item, substring = true)).assertDoesNotExist()
 
-        composeTestRule.onNode(hasText("Vocabulario (", substring = true)).performScrollTo().performClick()
+        composeTestRule.onNode(hasText(tituloVocabulario, substring = true)).performScrollTo().performClick()
         composeTestRule.onNode(hasText(ficha.vocabulario.first().item, substring = true)).assertExists()
 
         // El Redemittel sigue plegado: abrir uno no abre el otro.
         composeTestRule.onNode(hasText(ficha.redemittel.first().expresion, substring = true)).assertDoesNotExist()
-        composeTestRule.onNode(hasText("Redemittel (", substring = true)).performScrollTo().performClick()
+        composeTestRule.onNode(hasText(tituloRedemittel, substring = true)).performScrollTo().performClick()
         composeTestRule.onNode(hasText(ficha.redemittel.first().expresion, substring = true)).assertExists()
     }
 
@@ -73,10 +78,12 @@ class ContenidoSemanalScreenInteraccionTest {
     fun `el cuadro de referencia arranca plegado y se abre al tocar el titulo`() {
         val ficha = ficha()
         val cuadro = ficha.cuadroReferencia ?: error("DE-G01-B2-1 deberia traer cuadroReferencia")
-        // La ultima columna (el ejemplo) no se repite en otra seccion de la ficha,
-        // a diferencia de la primera ("Hauptsatz"), que tambien aparece en la
-        // descripcion siempre visible.
-        val celdaUnicaDeLaTabla = cuadro.filas.first().last()
+        // La ultima columna (el ejemplo) no se repite en otra seccion de la
+        // ficha, a diferencia de la primera ("Hauptsatz"), que tambien
+        // aparece en la descripcion siempre visible. El texto renderizado no
+        // trae los asteriscos del marcado en linea (Fase 5, bloque A): hay
+        // que buscar el texto ya limpio, no el crudo del JSON.
+        val celdaUnicaDeLaTabla = textoConMarcado(cuadro.filas.first().last()).text
         composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
 
         composeTestRule.onNode(hasText(celdaUnicaDeLaTabla, substring = true)).assertDoesNotExist()
@@ -138,6 +145,42 @@ class ContenidoSemanalScreenInteraccionTest {
         val bitmap = Bitmap.createBitmap(anchoPx, altoPx, Bitmap.Config.ARGB_8888)
         vista.draw(Canvas(bitmap))
         val destino = File("build/pantallazos-fase3", "DE-G01-B2-1-cuadro-expandido.png")
+        destino.parentFile?.mkdirs()
+        FileOutputStream(destino).use { bitmap.compress(Bitmap.CompressFormat.PNG, 100, it) }
+    }
+
+    /**
+     * B4.4 y B4.6: nucleo, variante e bajoNivelJustificado se distinguen con
+     * insignias, no solo con negrita. DE-G05 tiene los tres casos reales.
+     */
+    @Test
+    @GraphicsMode(GraphicsMode.Mode.NATIVE)
+    fun `pantallazo del vocabulario expandido, para inspeccion visual`() {
+        val carpeta = listOf(File("src/main/assets"), File("app/src/main/assets")).first { it.isDirectory }
+        val ficha = parsearContenido(File(carpeta, "contenido/DE-G05-B2-1.json").readText()) as Ficha
+        composeTestRule.setContent {
+            Box(Modifier.size(360.dp, 800.dp)) {
+                ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES)
+            }
+        }
+        val tituloVocabulario = etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)
+        composeTestRule.onNode(hasText(tituloVocabulario, substring = true)).performScrollTo().performClick()
+        composeTestRule.waitForIdle()
+        composeTestRule.onNode(hasText(ficha.vocabulario.first().item, substring = true)).performScrollTo()
+
+        val activity = composeTestRule.activity
+        val vista: View = activity.window.decorView
+        val densidad = activity.resources.displayMetrics.density
+        val anchoPx = (360 * densidad).toInt()
+        val altoPx = (800 * densidad).toInt()
+        vista.measure(
+            View.MeasureSpec.makeMeasureSpec(anchoPx, View.MeasureSpec.EXACTLY),
+            View.MeasureSpec.makeMeasureSpec(altoPx, View.MeasureSpec.EXACTLY),
+        )
+        vista.layout(0, 0, anchoPx, altoPx)
+        val bitmap = Bitmap.createBitmap(anchoPx, altoPx, Bitmap.Config.ARGB_8888)
+        vista.draw(Canvas(bitmap))
+        val destino = File("build/pantallazos-fase3", "DE-G05-B2-1-vocabulario-expandido.png")
         destino.parentFile?.mkdirs()
         FileOutputStream(destino).use { bitmap.compress(Bitmap.CompressFormat.PNG, 100, it) }
     }

@@ -1,8 +1,10 @@
 package io.github.percati.lenguapp.ui
 
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -18,10 +20,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalClipboardManager
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import io.github.percati.lenguapp.modelo.ChallengeType
 import io.github.percati.lenguapp.modelo.Clase
 import io.github.percati.lenguapp.modelo.ContenidoSemanal
 import io.github.percati.lenguapp.modelo.CuadroReferencia
@@ -95,7 +99,7 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
         modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp),
     ) {
-        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
             ficha.variante?.let { EtiquetaVariante(it) }
             Text(ficha.titulo, style = MaterialTheme.typography.headlineSmall)
             Text(
@@ -103,67 +107,72 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
-            Text(
-                "Tema ${ficha.topicId} · ${ficha.evidencia.minutosEstimados} min",
-                style = MaterialTheme.typography.labelLarge,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
+            Row(
+                modifier = Modifier.horizontalScroll(rememberScrollState()),
+                horizontalArrangement = Arrangement.spacedBy(6.dp),
+            ) {
+                Insignia(ficha.topicId)
+                Insignia(etiquetaChallengeType(ficha.challengeType))
+                Insignia("${ficha.evidencia.escritura}w · ${formatoOralMin(ficha.evidencia.oralMin)}")
+                Insignia("${ficha.evidencia.minutosEstimados} min")
+            }
         }
 
-        Text(ficha.descripcion, style = MaterialTheme.typography.bodyLarge)
+        Text(textoConMarcado(ficha.descripcion), style = MaterialTheme.typography.bodyLarge)
 
         ficha.cuadroReferencia?.let { cuadro ->
-            SeccionPlegable(titulo = cuadro.titulo.ifBlank { "Cuadro de referencia" }) {
+            val tituloPropio = etiquetaSeccion("cuadroReferencia", ficha.idioma, ficha.bilingue)
+            SeccionPlegable(titulo = cuadro.titulo.ifBlank { tituloPropio }) {
                 CuadroReferenciaTabla(cuadro)
             }
         }
 
-        Seccion("Ejemplos") {
+        Seccion(etiquetaSeccion("ejemplos", ficha.idioma, ficha.bilingue)) {
             ficha.ejemplos.forEach { Vinieta(it.texto) }
         }
 
-        Seccion("Para tener en cuenta") {
+        Seccion(etiquetaSeccion("notas", ficha.idioma, ficha.bilingue)) {
             ficha.notas.forEach { Vinieta(it) }
         }
 
         ficha.contraste.contrasteParaMostrar(idiomaBase)?.let { texto ->
-            Seccion("Contraste con tu lengua") {
-                Text(texto, style = MaterialTheme.typography.bodyMedium)
+            Seccion(etiquetaContraste(ficha.idioma, idiomaBase)) {
+                Text(textoConMarcado(texto), style = MaterialTheme.typography.bodyMedium)
             }
         }
 
-        Seccion("Errores comunes") {
+        Seccion(etiquetaSeccion("errores", ficha.idioma, ficha.bilingue)) {
             ficha.errores.forEach { Vinieta(it) }
         }
 
-        SeccionPlegable(titulo = "Vocabulario (${ficha.vocabulario.size})") {
+        SeccionPlegable(titulo = "${etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)} (${ficha.vocabulario.size})") {
             Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
                 ficha.vocabulario.forEach { VocabularioFila(it, idiomaBase) }
             }
         }
 
-        SeccionPlegable(titulo = "Redemittel (${ficha.redemittel.size})") {
+        SeccionPlegable(titulo = "${etiquetaSeccion("redemittel", ficha.idioma, ficha.bilingue)} (${ficha.redemittel.size})") {
             Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
                 ficha.redemittel.forEach { RedemittelFila(it, idiomaBase) }
             }
         }
 
-        Seccion("Misión de la semana") {
-            Text(ficha.mision.consigna, style = MaterialTheme.typography.bodyLarge)
+        Seccion(etiquetaSeccion("mision", ficha.idioma, ficha.bilingue)) {
+            Text(textoConMarcado(ficha.mision.consigna), style = MaterialTheme.typography.bodyLarge)
             ficha.mision.requisitos.forEach { Vinieta(it) }
         }
 
-        Seccion("Micro-tareas") {
+        Seccion(etiquetaSeccion("microtareas", ficha.idioma, ficha.bilingue)) {
             ficha.microtareas.forEach {
                 Vinieta("${etiquetaDia(it.dia)} (${it.minutos} min) — ${it.texto}")
             }
         }
 
-        Seccion("Autochequeo") {
+        Seccion(etiquetaSeccion("autochequeo", ficha.idioma, ficha.bilingue)) {
             ficha.autochequeo.forEach { Vinieta(it) }
         }
 
-        TarjetaPrompt(ficha.promptCorreccion)
+        TarjetaPrompt(ficha.promptCorreccion, etiquetaSeccion("promptCorreccion", ficha.idioma, ficha.bilingue))
     }
 }
 
@@ -183,28 +192,35 @@ private fun SemanaEspecialContenido(especial: SemanaEspecial, modifier: Modifier
             )
         }
 
-        Text(especial.consigna, style = MaterialTheme.typography.bodyLarge)
+        Text(textoConMarcado(especial.consigna), style = MaterialTheme.typography.bodyLarge)
 
         especial.requisitos?.takeIf { it.isNotEmpty() }?.let { requisitos ->
-            Seccion("Requisitos") { requisitos.forEach { Vinieta(it) } }
+            Seccion(etiquetaSeccion("requisitos", especial.idioma, bilingue = false)) { requisitos.forEach { Vinieta(it) } }
         }
 
         especial.microtareas?.takeIf { it.isNotEmpty() }?.let { tareas ->
-            Seccion("Micro-tareas") { tareas.forEach { Vinieta(it) } }
+            Seccion(etiquetaSeccion("microtareas", especial.idioma, bilingue = false)) { tareas.forEach { Vinieta(it) } }
         }
 
-        Seccion("Autochequeo") {
+        Seccion(etiquetaSeccion("autochequeo", especial.idioma, bilingue = false)) {
             especial.autochequeo.forEach { Vinieta(it) }
         }
 
-        especial.promptCorreccion.takeIf { it.isNotBlank() }?.let { TarjetaPrompt(it) }
+        especial.promptCorreccion.takeIf { it.isNotBlank() }?.let {
+            TarjetaPrompt(it, etiquetaSeccion("promptCorreccion", especial.idioma, bilingue = false))
+        }
     }
 }
 
+/**
+ * Jerarquia tipografica en vez de lineas divisorias -- AJUSTES-FASE-5.md,
+ * B4.3: titleLarge contra bodyMedium/bodyLarge ya distingue titulo de
+ * cuerpo sin necesitar una regla horizontal.
+ */
 @Composable
 private fun Seccion(titulo: String, contenido: @Composable () -> Unit) {
-    Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
-        Text(titulo, style = MaterialTheme.typography.titleMedium)
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text(titulo, style = MaterialTheme.typography.titleLarge)
         contenido()
     }
 }
@@ -213,44 +229,78 @@ private fun Seccion(titulo: String, contenido: @Composable () -> Unit) {
 private fun Vinieta(texto: String) {
     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         Text("•", style = MaterialTheme.typography.bodyMedium)
-        Text(texto, style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(end = 4.dp))
+        Text(textoConMarcado(texto), style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(end = 4.dp))
+    }
+}
+
+/** Insignia chica y neutra: metadatos de cabecera, "núcleo", variante regional, bajo nivel a propósito. */
+@Composable
+private fun Insignia(
+    texto: String,
+    contenedor: Color = MaterialTheme.colorScheme.surfaceVariant,
+    contenido: Color = MaterialTheme.colorScheme.onSurfaceVariant,
+) {
+    Surface(color = contenedor, contentColor = contenido, shape = RoundedCornerShape(6.dp)) {
+        Text(
+            texto,
+            style = MaterialTheme.typography.labelMedium,
+            modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp),
+        )
     }
 }
 
 @Composable
 private fun EtiquetaVariante(variante: String) {
-    Surface(
-        color = MaterialTheme.colorScheme.tertiaryContainer,
-        contentColor = MaterialTheme.colorScheme.onTertiaryContainer,
-        shape = RoundedCornerShape(50),
-    ) {
-        Text(
-            "Variante regional: $variante",
-            style = MaterialTheme.typography.labelMedium,
-            modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp),
-        )
-    }
+    Insignia(
+        "Variante regional: $variante",
+        contenedor = MaterialTheme.colorScheme.tertiaryContainer,
+        contenido = MaterialTheme.colorScheme.onTertiaryContainer,
+    )
 }
 
 @Composable
 private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma) {
-    Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-        Text(
-            item.item,
-            style = MaterialTheme.typography.bodyLarge,
-            fontWeight = if (item.prioridad == Prioridad.NUCLEO) FontWeight.Bold else FontWeight.Normal,
-        )
+    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            Text(
+                item.item,
+                style = MaterialTheme.typography.bodyLarge,
+                fontWeight = if (item.prioridad == Prioridad.NUCLEO) FontWeight.Bold else FontWeight.Normal,
+            )
+            // Los cuatro items nucleo se distinguen de los diez secundarios,
+            // no solo por el peso de fuente -- AJUSTES-FASE-5.md, B4.4.
+            if (item.prioridad == Prioridad.NUCLEO) {
+                Insignia(
+                    "núcleo",
+                    contenedor = MaterialTheme.colorScheme.primaryContainer,
+                    contenido = MaterialTheme.colorScheme.onPrimaryContainer,
+                )
+            }
+        }
         Text(
             item.traduccionParaMostrar(idiomaBase),
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
-        listOfNotNull(
-            item.reccion?.takeIf { it.isNotBlank() && it != "—" }?.let { "rección: $it" },
-            item.variante?.let { "variante: $it" },
-            item.nota,
-        ).forEach { detalle ->
-            Text(detalle, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        item.reccion?.takeIf { it.isNotBlank() }?.let {
+            Text(
+                "rección: $it",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        item.nota?.let {
+            Text(
+                textoConMarcado(it),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        if (item.variante != null || item.bajoNivelJustificado) {
+            Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                item.variante?.let { Insignia(it) }
+                if (item.bajoNivelJustificado) Insignia("bajo nivel, a propósito")
+            }
         }
     }
 }
@@ -259,7 +309,11 @@ private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma) {
 private fun RedemittelFila(item: RedemittelItem, idiomaBase: Idioma) {
     Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
         Text(item.expresion, style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Medium)
-        Text(item.funcion, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+        Text(
+            textoConMarcado(item.funcion),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
         val texto = when (val traduccion = item.traduccionParaMostrar(idiomaBase)) {
             is TraduccionRedemittel.Disponible -> traduccion.texto
             TraduccionRedemittel.SinEquivalenciaDirecta -> "Sin equivalencia directa: se aprende por situación."
@@ -288,7 +342,7 @@ private fun CuadroReferenciaTabla(cuadro: CuadroReferencia) {
                         if (celda.isNotBlank()) {
                             val etiqueta = cuadro.columnas.getOrNull(i)
                             Text(
-                                if (etiqueta != null) "$etiqueta: $celda" else celda,
+                                textoConMarcado(if (etiqueta != null) "$etiqueta: $celda" else celda),
                                 style = MaterialTheme.typography.bodyMedium,
                             )
                         }
@@ -297,14 +351,18 @@ private fun CuadroReferenciaTabla(cuadro: CuadroReferencia) {
             }
         }
         cuadro.notaPie?.takeIf { it.isNotBlank() }?.let {
-            Text(it, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+            Text(
+                textoConMarcado(it),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
         }
     }
 }
 
 /** El unico botón que toca el sistema: copia el prompt de corrección al portapapeles. */
 @Composable
-private fun TarjetaPrompt(prompt: String) {
+private fun TarjetaPrompt(prompt: String, titulo: String) {
     val portapapeles = LocalClipboardManager.current
     var copiado by remember { mutableStateOf(false) }
     Surface(
@@ -313,15 +371,18 @@ private fun TarjetaPrompt(prompt: String) {
         contentColor = MaterialTheme.colorScheme.onSecondaryContainer,
     ) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
-            Text("Prompt de corrección", style = MaterialTheme.typography.titleMedium)
-            Text(prompt, style = MaterialTheme.typography.bodyMedium)
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Button(onClick = {
+            Text(titulo, style = MaterialTheme.typography.titleMedium)
+            Text(textoConMarcado(prompt), style = MaterialTheme.typography.bodyMedium)
+            // Es la unica accion de la pantalla: boton de ancho completo,
+            // no un boton mas perdido entre el resto -- AJUSTES-FASE-5.md, B4.5.
+            Button(
+                onClick = {
                     portapapeles.setText(AnnotatedString(prompt))
                     copiado = true
-                }) {
-                    Text(if (copiado) "Copiado" else "Copiar al portapapeles")
-                }
+                },
+                modifier = Modifier.fillMaxWidth(),
+            ) {
+                Text(if (copiado) "Copiado" else "Copiar al portapapeles")
             }
         }
     }
@@ -336,4 +397,12 @@ private fun etiquetaDia(dia: Dia): String = when (dia) {
 private fun etiquetaClase(clase: Clase): String = when (clase) {
     Clase.REVIEW -> "Semana de repaso"
     Clase.SURVIVAL -> "Semana Survival"
+}
+
+private fun etiquetaChallengeType(tipo: ChallengeType): String =
+    tipo.name.lowercase().replace('_', ' ').replaceFirstChar { it.uppercase() }
+
+private fun formatoOralMin(oralMin: Double): String {
+    val redondeado = if (oralMin == oralMin.toInt().toDouble()) oralMin.toInt().toString() else oralMin.toString()
+    return "${redondeado}min oral"
 }

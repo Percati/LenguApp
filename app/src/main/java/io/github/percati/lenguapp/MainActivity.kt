@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -32,7 +33,9 @@ import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.presentacion.filtrarVariantesDesactivadas
 import io.github.percati.lenguapp.presentacion.variantesConocidas
+import io.github.percati.lenguapp.semana.SemanaIso
 import io.github.percati.lenguapp.semana.ResultadoSemana
+import io.github.percati.lenguapp.semana.semanaIsoDe
 import io.github.percati.lenguapp.ui.AjustesScreen
 import io.github.percati.lenguapp.ui.ContenidoSemanalScreen
 import io.github.percati.lenguapp.ui.PantallaSemana
@@ -61,7 +64,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-private fun LenguAppApp(
+internal fun LenguAppApp(
     ajustesIniciales: Ajustes,
     variantesConocidas: Set<String>,
     resolver: (Idioma, Nivel, LocalDate) -> ResultadoSemana,
@@ -89,10 +92,13 @@ private fun LenguAppApp(
             } else {
                 Column(Modifier.fillMaxSize()) {
                     BarraNavegacion(
+                        semanaIso = semanaIsoDe(fechaVista),
                         esHoy = fechaVista == LocalDate.now(),
                         onSemanaAnterior = { fechaVistaIso = fechaVista.minusWeeks(1).toString() },
                         onHoy = { fechaVistaIso = LocalDate.now().toString() },
                         onSemanaSiguiente = { fechaVistaIso = fechaVista.plusWeeks(1).toString() },
+                        idiomaAprendido = ajustes.idiomaAprendido,
+                        onCambiarIdioma = { actualizarAjustes(ajustes.copy(idiomaAprendido = it, nivel = nivelConContenidoPara(it))) },
                         onAjustes = { mostrandoAjustes = true },
                     )
                     val resultado = remember(fechaVista, ajustes.idiomaAprendido, ajustes.nivel) {
@@ -108,25 +114,53 @@ private fun LenguAppApp(
 /**
  * Barra de navegacion en modo lectura: mover la semana en pantalla no toca
  * ningun puntero de progreso, solo cambia que fecha se le pasa al resolutor
- * (que sigue siendo la misma funcion de la Fase 2).
+ * (que sigue siendo la misma funcion de la Fase 2). Con dos idiomas, un
+ * conmutador visible aca es mejor que enterrarlo en Ajustes -- el selector
+ * completo (los 6 idiomas) sigue estando en Ajustes tambien.
  */
 @Composable
 private fun BarraNavegacion(
+    semanaIso: SemanaIso,
     esHoy: Boolean,
     onSemanaAnterior: () -> Unit,
     onHoy: () -> Unit,
     onSemanaSiguiente: () -> Unit,
+    idiomaAprendido: Idioma,
+    onCambiarIdioma: (Idioma) -> Unit,
     onAjustes: () -> Unit,
 ) {
-    Row(
-        modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp),
-        horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.CenterVertically,
-    ) {
-        TextButton(onClick = onSemanaAnterior) { Text("< Semana") }
-        TextButton(onClick = onHoy, enabled = !esHoy) { Text("Hoy") }
-        TextButton(onClick = onSemanaSiguiente) { Text("Semana >") }
-        TextButton(onClick = onAjustes) { Text("Ajustes") }
+    Column(modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp)) {
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            TextButton(onClick = onSemanaAnterior) { Text("< Semana") }
+            Text(
+                "Semana ${semanaIso.semana} · ${semanaIso.anio}" + if (esHoy) " (hoy)" else "",
+                style = MaterialTheme.typography.labelLarge,
+            )
+            TextButton(onClick = onSemanaSiguiente) { Text("Semana >") }
+        }
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                listOf(Idioma.DE, Idioma.EN).forEach { idioma ->
+                    FilterChip(
+                        selected = idioma == idiomaAprendido,
+                        onClick = { onCambiarIdioma(idioma) },
+                        label = { Text(idioma.name) },
+                    )
+                }
+            }
+            Row(horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                TextButton(onClick = onHoy, enabled = !esHoy) { Text("Hoy") }
+                TextButton(onClick = onAjustes) { Text("Ajustes") }
+            }
+        }
     }
 }
 
@@ -150,6 +184,18 @@ private fun PantallaConVariantesFiltradas(resultado: ResultadoSemana, ajustes: A
     } else {
         PantallaSemana(resultado, ajustes.idiomaBase)
     }
+}
+
+/**
+ * DE solo tiene contenido en B2 y EN solo en C1 (piloto 2026): sin esto, el
+ * conmutador de idioma de la cabecera cambiaria a EN pero se quedaria en
+ * B2, mostrando "sin contenido" -- justo lo que B3 pide arreglar. Cuando
+ * haya mas de un nivel por idioma, esto se reemplaza por elegir el nivel
+ * mas cercano al que tenia antes.
+ */
+internal fun nivelConContenidoPara(idioma: Idioma): Nivel = when (idioma) {
+    Idioma.EN -> Nivel.C1
+    else -> Nivel.B2
 }
 
 @Composable

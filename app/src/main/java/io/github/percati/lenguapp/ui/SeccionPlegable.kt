@@ -43,7 +43,7 @@ fun SeccionPlegable(
         ) {
             Text(
                 text = titulo,
-                style = MaterialTheme.typography.titleMedium,
+                style = MaterialTheme.typography.titleLarge,
                 modifier = Modifier.weight(1f),
             )
             Icon(

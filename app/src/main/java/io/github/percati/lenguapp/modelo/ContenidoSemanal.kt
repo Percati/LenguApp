@@ -134,6 +134,9 @@ data class VocabularioItem(
     // Valores vacios a proposito en los idiomas todavia sin traducir: no es
     // un error, hay que caer al idioma base y nunca mostrar la clave cruda.
     val traducciones: Map<String, String>,
+    // El item esta bajo el nivel declarado a proposito (distincion, registro
+    // o doble sentido que si corresponde al nivel), no es un error de banco.
+    val bajoNivelJustificado: Boolean = false,
 )
 
 @Serializable

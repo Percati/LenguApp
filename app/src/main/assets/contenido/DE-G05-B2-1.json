@@ -14,20 +14,8 @@
   "oralMin": 4,
   "minutosEstimados": 55
  },
- "descripcion": "Dasselbe Modalverb hat im Deutschen zwei völlig verschiedene Verwendungen. *Er muss zum Arzt* heisst „es ist notwendig\". *Er muss krank sein* heisst „ich bin mir fast sicher\". Die zweite ist der subjektive Gebrauch, und sie ersetzt eine ganze Reihe umständlicher Konstruktionen: statt *Ich bin ziemlich sicher, dass er es vergessen hat* sagt man *Er wird es vergessen haben*.",
+ "descripcion": "Dasselbe Modalverb hat im Deutschen zwei völlig verschiedene Verwendungen. *Er muss zum Arzt* heisst „es ist notwendig\". *Er muss krank sein* heisst „ich bin mir fast sicher\". Die zweite ist der **subjektive** Gebrauch, und sie ersetzt eine ganze Reihe umständlicher Konstruktionen: statt *Ich bin ziemlich sicher, dass er es vergessen hat* sagt man *Er wird es vergessen haben*.",
  "ejemplos": [
-  {
-   "texto": "Die Beschwerden müssen mit dem Stress zusammenhängen."
-  },
-  {
-   "texto": "Das dürfte eine Nebenwirkung sein."
-  },
-  {
-   "texto": "Das neue Medikament soll besser verträglich sein."
-  },
-  {
-   "texto": "Sie will nie geraucht haben."
-  },
   {
    "texto": "*Die Beschwerden müssen mit dem Stress zusammenhängen.*",
    "audio": true
@@ -37,26 +25,26 @@
    "audio": true
   },
   {
-   "texto": "*Er wird sich krankgemeldet haben.*",
-   "audio": true
-  },
-  {
    "texto": "*Das neue Medikament soll besser verträglich sein.*",
    "audio": true
   },
   {
    "texto": "*Sie will nie geraucht haben.*",
    "audio": true
+  },
+  {
+   "texto": "*Er wird sich krankgemeldet haben.*",
+   "audio": true
   }
  ],
  "notas": [
-  "Dürfte* ist die eleganteste Vermutungsform im Deutschen und wird von Lernenden fast nie benutzt.",
-  "Soll* und *will* subjektiv sind hochfrequent in Nachrichten und im Klatsch. Sie zu verstehen ist Hörverstehen; sie zu benutzen ist B2+.",
+  "*Dürfte* ist die eleganteste Vermutungsform im Deutschen und wird von Lernenden fast nie benutzt.",
+  "*Soll* und *will* subjektiv sind hochfrequent in Nachrichten und im Klatsch. Sie zu verstehen ist Hörverstehen; sie zu benutzen ist B2+.",
   "Die Betonung entscheidet oft, ob objektiv oder subjektiv gemeint ist."
  ],
  "errores": [
-  "Er musste krank sein* statt *Er muss krank gewesen sein*.",
-  "soll* als Empfehlung missverstehen, wenn eine Fremdbehauptung gemeint ist.",
+  "*Er musste krank sein* statt *Er muss krank gewesen sein*.",
+  "*soll* als Empfehlung missverstehen, wenn eine Fremdbehauptung gemeint ist.",
   "Den Infinitiv Perfekt vergessen."
  ],
  "vocabulario": [
@@ -66,7 +54,6 @@
    "traducciones": {
     "es": "las molestias"
    },
-   "reccion": "—",
    "nota": "fast immer Plural"
   },
   {
@@ -74,8 +61,7 @@
    "prioridad": "nucleo",
    "traducciones": {
     "es": "el efecto secundario"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "sich schonen",
@@ -90,16 +76,15 @@
    "prioridad": "nucleo",
    "traducciones": {
     "es": "el límite de tolerancia"
-   },
-   "reccion": "—"
+   }
   },
   {
-   "item": "die Überweisung †",
+   "item": "die Überweisung",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la derivación / la transferencia"
    },
-   "reccion": "—",
+   "bajoNivelJustificado": true,
    "nota": "doppelte Bedeutung: Arzt und Bank"
   },
   {
@@ -107,24 +92,22 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la revisión preventiva"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "ausgebrannt sein",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "estar quemado"
-   },
-   "reccion": "—"
+   }
   },
   {
-   "item": "die Krankenkasse †",
+   "item": "die Krankenkasse",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la caja de seguro médico"
    },
-   "reccion": "—",
+   "bajoNivelJustificado": true,
    "nota": "in CH obligatorisch",
    "variante": "CH"
   },
@@ -134,7 +117,6 @@
    "traducciones": {
     "es": "la franquicia"
    },
-   "reccion": "—",
    "nota": "**CH**",
    "variante": "CH"
   },
@@ -152,7 +134,6 @@
    "traducciones": {
     "es": "la recuperación"
    },
-   "reccion": "—",
    "nota": "formell"
   },
   {
@@ -168,8 +149,7 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "crónico / agudo"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "das Wohlbefinden",
@@ -177,62 +157,61 @@
    "traducciones": {
     "es": "el bienestar"
    },
-   "reccion": "—",
    "nota": "besser als *Wellbeing*"
   }
  ],
  "redemittel": [
   {
-   "expresion": "*Das dürfte…*",
+   "expresion": "Das dürfte…",
    "funcion": "wahrscheinliche Vermutung",
    "traducciones": {
     "es": "probablemente sea…"
    }
   },
   {
-   "expresion": "*Das muss… sein*",
+   "expresion": "Das muss… sein",
    "funcion": "sehr hohe Sicherheit",
    "traducciones": {
     "es": "tiene que ser…"
    }
   },
   {
-   "expresion": "*Es könnte sein, dass…*",
+   "expresion": "Es könnte sein, dass…",
    "funcion": "Möglichkeit",
    "traducciones": {
     "es": "podría ser que…"
    }
   },
   {
-   "expresion": "*Angeblich…*",
+   "expresion": "Angeblich…",
    "funcion": "Fremdbehauptung",
    "traducciones": {
     "es": "supuestamente…"
    }
   },
   {
-   "expresion": "*Soweit ich weiss…*",
+   "expresion": "Soweit ich weiss…",
    "funcion": "begrenztes Wissen",
    "traducciones": {
     "es": "por lo que sé…"
    }
   },
   {
-   "expresion": "*Das kann eigentlich nicht…*",
+   "expresion": "Das kann eigentlich nicht…",
    "funcion": "Ausschluss",
    "traducciones": {
     "es": "en realidad no puede…"
    }
   },
   {
-   "expresion": "*Er wird wohl… haben*",
+   "expresion": "Er wird wohl… haben",
    "funcion": "Vermutung über Vergangenes",
    "traducciones": {
     "es": "habrá…"
    }
   },
   {
-   "expresion": "*Vermutlich…*",
+   "expresion": "Vermutlich…",
    "funcion": "neutrale Vermutung",
    "traducciones": {
     "es": "presumiblemente…"
@@ -282,41 +261,42 @@
   ],
   "filas": [
    [
-    "*muss*",
+    "muss",
     "~95 %",
-    "*Das muss eine Nebenwirkung sein.*"
+    "Das muss eine Nebenwirkung sein."
    ],
    [
-    "*dürfte*",
+    "dürfte",
     "~75 %",
-    "*Das dürfte harmlos sein.*"
+    "Das dürfte harmlos sein."
    ],
    [
     "*wird* (Futur als Vermutung)",
     "~70 %",
-    "*Er wird sich krankgemeldet haben.*"
+    "Er wird sich krankgemeldet haben."
    ],
    [
-    "*könnte / mag*",
+    "könnte / mag",
     "~40 %",
-    "*Das könnte am Stress liegen.*"
+    "Das könnte am Stress liegen."
    ],
    [
-    "*kann nicht*",
+    "kann nicht",
     "~5 %",
-    "*Das kann nicht stimmen.*"
+    "Das kann nicht stimmen."
    ],
    [
-    "*soll*",
+    "soll",
     "Fremdbehauptung",
-    "*Das Mittel soll gut verträglich sein.*"
+    "Das Mittel soll gut verträglich sein."
    ],
    [
-    "*will*",
+    "will",
     "Eigenbehauptung",
-    "*Sie will nie geraucht haben.*"
+    "Sie will nie geraucht haben."
    ]
-  ]
+  ],
+  "notaPie": "**Vergangenheit:** Modalverb + **Infinitiv Perfekt**: Er muss es vergessen **haben**."
  },
  "contraste": {
   "es": "Spanisch hat mit *deber de* (Vermutung) gegen *deber* (Pflicht) eine ähnliche Unterscheidung — aber sie wird umgangssprachlich kaum eingehalten. Wer *deber de* nie aktiv benutzt, überträgt die Unterscheidung auch im Deutschen nicht."

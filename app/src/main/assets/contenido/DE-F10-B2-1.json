@@ -17,27 +17,21 @@
  "descripcion": "Das deutsche Gegenstück zum englischen *hedging*, aber mit anderen Mitteln: neben Modalverben und Adverbien arbeiten Modalpartikeln und der Konjunktiv II mit. Beruflich relevant, um eine fachliche Einschätzung so zu formulieren, dass sie belastbar bleibt, wenn sich die Datenlage ändert.",
  "ejemplos": [
   {
-   "texto": "Das dürfte eher die Ausnahme sein."
-  },
-  {
-   "texto": "Ich würde das nicht verallgemeinern wollen."
-  },
-  {
-   "texto": "Das lässt sich so pauschal nicht sagen."
-  },
-  {
-   "texto": "In gewisser Hinsicht stimmt das, allerdings…"
-  },
-  {
    "texto": "*Das dürfte eher die Ausnahme sein.*",
    "audio": true
   },
   {
-   "texto": "*Da wäre ich vorsichtig.*",
-   "audio": true
+   "texto": "*Ich würde das nicht verallgemeinern wollen.*"
   },
   {
    "texto": "*Das lässt sich so pauschal nicht sagen.*",
+   "audio": true
+  },
+  {
+   "texto": "*In gewisser Hinsicht stimmt das, allerdings…*"
+  },
+  {
+   "texto": "*Da wäre ich vorsichtig.*",
    "audio": true
   },
   {
@@ -50,15 +44,15 @@
   }
  ],
  "notas": [
-  "Tendenziell* ist besonders nützlich und wird von Lernenden selten benutzt.",
-  "Das lässt sich so nicht sagen* ist die höflichste Form des Widerspruchs im Deutschen.",
+  "*Tendenziell* ist besonders nützlich und wird von Lernenden selten benutzt.",
+  "*Das lässt sich so nicht sagen* ist die höflichste Form des Widerspruchs im Deutschen.",
   "Zwei Mittel pro Aussage sind das Maximum. Mehr, und die Aussage verschwindet."
  ],
  "errores": [
   "Zu viel abschwächen, bis die Kernaussage nicht mehr erkennbar ist.",
   "Gesicherte Zahlen abschwächen — wirkt ausweichend, nicht vorsichtig.",
-  "Vielleicht* am Satzanfang klingt unsicher, nicht überlegt. Besser *möglicherweise* oder *unter Umständen*.",
-  "Ein bisschen* in fachlichen Kontexten: zu umgangssprachlich."
+  "*Vielleicht* am Satzanfang klingt unsicher, nicht überlegt. Besser *möglicherweise* oder *unter Umständen*.",
+  "*Ein bisschen* in fachlichen Kontexten: zu umgangssprachlich."
  ],
  "vocabulario": [
   {
@@ -82,24 +76,21 @@
    "prioridad": "nucleo",
    "traducciones": {
     "es": "la fluctuación"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Bonität",
    "prioridad": "nucleo",
    "traducciones": {
     "es": "la solvencia crediticia"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "in Raten zahlen",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "pagar a plazos"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "etwas abbuchen",
@@ -114,24 +105,21 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la declaración de impuestos"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Lastschrift",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la domiciliación"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Rücklage",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la reserva"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "sich etwas leisten können",
@@ -146,8 +134,7 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "la rentabilidad"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Anlageklasse",
@@ -155,7 +142,6 @@
    "traducciones": {
     "es": "la clase de activo"
    },
-   "reccion": "—",
    "nota": "Aktien, Obligationen, Immobilien"
   },
   {
@@ -163,70 +149,68 @@
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "el plazo, la duración"
-   },
-   "reccion": "—"
+   }
   },
   {
    "item": "die Gebühren (Pl.)",
    "prioridad": "ampliacion",
    "traducciones": {
     "es": "las comisiones"
-   },
-   "reccion": "—"
+   }
   }
  ],
  "redemittel": [
   {
-   "expresion": "*Das dürfte…*",
+   "expresion": "Das dürfte…",
    "funcion": "wahrscheinliche Vermutung",
    "traducciones": {
     "es": "probablemente sea…"
    }
   },
   {
-   "expresion": "*Da wäre ich vorsichtig*",
+   "expresion": "Da wäre ich vorsichtig",
    "funcion": "Warnung ohne Konfrontation",
    "traducciones": {
     "es": "ahí yo tendría cuidado"
    }
   },
   {
-   "expresion": "*Soweit ich das beurteilen kann…*",
+   "expresion": "Soweit ich das beurteilen kann…",
    "funcion": "Grenzen des Wissens",
    "traducciones": {
     "es": "por lo que puedo juzgar…"
    }
   },
   {
-   "expresion": "*Das lässt sich so pauschal nicht sagen*",
+   "expresion": "Das lässt sich so pauschal nicht sagen",
    "funcion": "höflichster Widerspruch",
    "traducciones": {
     "es": "eso no se puede decir así en general"
    }
   },
   {
-   "expresion": "*Tendenziell…*",
+   "expresion": "Tendenziell…",
    "funcion": "Neigung ohne Regel",
    "traducciones": {
     "es": "tendencialmente…"
    }
   },
   {
-   "expresion": "*In gewisser Hinsicht…*",
+   "expresion": "In gewisser Hinsicht…",
    "funcion": "Teilzustimmung",
    "traducciones": {
     "es": "en cierto sentido…"
    }
   },
   {
-   "expresion": "*Ich würde das nicht verallgemeinern*",
+   "expresion": "Ich würde das nicht verallgemeinern",
    "funcion": "Reichweite begrenzen",
    "traducciones": {
     "es": "yo no lo generalizaría"
    }
   },
   {
-   "expresion": "*Den Zahlen zufolge…*",
+   "expresion": "Den Zahlen zufolge…",
    "funcion": "Quelle nennen",
    "traducciones": {
     "es": "según las cifras…"
@@ -238,7 +222,7 @@
   "requisitos": [
    "mindestens sechs Mittel aus drei Kategorien",
    "höchstens zwei pro Aussage",
-   "mindestens eine bewusst nicht abgeschwächte Tatsachenaussage",
+   "mindestens eine bewusst **nicht** abgeschwächte Tatsachenaussage",
    "Alle vier Kernwörter."
   ]
  },
@@ -276,11 +260,11 @@
   "filas": [
    [
     "Abtönungsadverb",
-    "*eher, durchaus, relativ, tendenziell, im Grunde, weitgehend, vermutlich*"
+    "eher, durchaus, relativ, tendenziell, im Grunde, weitgehend, vermutlich"
    ],
    [
     "Modalverb",
-    "*dürfte, könnte, müsste, mag sein*"
+    "dürfte, könnte, müsste, mag sein"
    ],
    [
     "Konjunktiv II",
@@ -292,7 +276,7 @@
    ],
    [
     "Einschränkung",
-    "*in gewisser Hinsicht, bis zu einem gewissen Grad, zumindest bei X*"
+    "in gewisser Hinsicht, bis zu einem gewissen Grad, zumindest bei X"
    ],
    [
     "Quellenbezug",
