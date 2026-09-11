@@ -6,6 +6,7 @@ El brief completo está en `proyecto/PROMPT-CLAUDE-CODE.md`.
 ## Reglas duras
 
 1. **Nunca agregar el permiso `INTERNET` al manifiesto.** Es la prueba verificable de que la app no puede rastrear nada. Si algo parece necesitar red, no se hace.
+   **Excepción ya revisada:** el manifiesto fusionado trae `io.github.percati.lenguapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`, con `protectionLevel="signature"`. No es de red: la agrega AndroidX (Compose/Activity) para que `registerReceiver` con receptores no exportados sea seguro entre apps del mismo firmante en versiones viejas de Android. Es de solo la propia app (nadie más puede tenerla salvo que firme con la misma clave), no aparece en Exodus como rastreador, y sacarla arriesgaría romper `registerReceiver` sin ganar nada real. No tocar esto por estética.
 2. El único dato que se lee del dispositivo es **la fecha**.
 3. Sin Google Play Services, Firebase, analítica, informes de fallos ni SDK de terceros.
 4. **Sin persistencia de progreso.** Modo revista: manda la fecha. No implementarla aunque parezca una mejora obvia.
