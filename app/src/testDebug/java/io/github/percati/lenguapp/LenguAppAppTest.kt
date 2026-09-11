@@ -24,9 +24,9 @@ import java.io.File
 import java.time.LocalDate
 
 /**
- * B2 (navegacion) y B3 (selector de idioma) de la Fase 5, de punta a punta:
- * usa los assets reales, no dobles de prueba, para que un cambio en el
- * resolutor o en el cableado de MainActivity se note aca.
+ * B2 (navegacion) de la Fase 5 y B (multi-idioma con pestañas) de la Fase 6,
+ * de punta a punta: usa los assets reales, no dobles de prueba, para que un
+ * cambio en el resolutor o en el cableado de MainActivity se note aca.
  */
 @RunWith(RobolectricTestRunner::class)
 class LenguAppAppTest {
@@ -53,34 +53,62 @@ class LenguAppAppTest {
     }
 
     @Test
-    fun `el conmutador de idioma cambia a ingles y mantiene la misma semana`() {
+    fun `la pestaña de otro idioma aprendido cambia de idioma y mantiene la misma semana`() {
         composeTestRule.setContent {
             LenguAppApp(
-                ajustesIniciales = Ajustes(idiomaAprendido = Idioma.DE, nivel = Nivel.B2),
-                variantesConocidas = emptySet(),
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2, Idioma.EN to Nivel.C1)),
+                idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
         }
-        // Semana 37 de 2026 en aleman: DE-G01.
-        composeTestRule.onNode(hasText("Satzbau", substring = true)).assertExists()
-
-        // La barra de navegacion no esta dentro del scroll de la ficha, asi
-        // que siempre esta a la vista: no hace falta performScrollTo().
-        composeTestRule.onNodeWithText("EN").performClick()
-
-        // Misma semana (37), ahora en ingles: EN-F01. Si el nivel no
-        // cambiara junto con el idioma (B3 rompiendo B2 sin querer), esto
-        // mostraria "sin contenido" en vez del titulo.
+        // Las pestañas van en orden fijo (el de declaracion de Idioma: EN
+        // antes que DE), no en el orden en que se seleccionaron: por eso la
+        // pestaña activa por defecto es EN, semana 37 de 2026 -> EN-F01.
         composeTestRule.onNode(hasText("Giving and Asking for Opinions", substring = true)).assertExists()
+
+        // Las pestañas no estan dentro del scroll de la ficha, asi que
+        // siempre estan a la vista: no hace falta performScrollTo().
+        composeTestRule.onNodeWithText("DE").performClick()
+
+        // Misma semana (37), ahora en aleman: DE-G01. Si el nivel no
+        // viniera del mapa por idioma, esto mostraria "sin contenido".
+        composeTestRule.onNode(hasText("Satzbau", substring = true)).assertExists()
+    }
+
+    @Test
+    fun `un solo idioma aprendido muestra su pestaña y su contenido`() {
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
+                idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
+                resolver = ::resolverDePrueba,
+                onGuardarAjustes = {},
+            )
+        }
+        composeTestRule.onNodeWithText("DE").assertExists()
+        composeTestRule.onNode(hasText("Satzbau", substring = true)).assertExists()
+    }
+
+    @Test
+    fun `sin ningun idioma aprendido lo dice, no se rompe`() {
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(idiomasAprendidos = emptyMap()),
+                idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
+                resolver = ::resolverDePrueba,
+                onGuardarAjustes = {},
+            )
+        }
+        composeTestRule.onNodeWithText("Sin idioma seleccionado").assertExists()
     }
 
     @Test
     fun `la barra muestra la semana ISO actual`() {
         composeTestRule.setContent {
             LenguAppApp(
-                ajustesIniciales = Ajustes(idiomaAprendido = Idioma.DE, nivel = Nivel.B2),
-                variantesConocidas = emptySet(),
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
+                idiomasConContenido = setOf(Idioma.DE),
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
@@ -93,8 +121,8 @@ class LenguAppAppTest {
     fun `una semana de 2026 fuera de la edicion (1-36) muestra el motivo, no en blanco`() {
         composeTestRule.setContent {
             LenguAppApp(
-                ajustesIniciales = Ajustes(idiomaAprendido = Idioma.DE, nivel = Nivel.B2),
-                variantesConocidas = emptySet(),
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
+                idiomasConContenido = setOf(Idioma.DE),
                 resolver = { idioma, nivel, _ -> resolverDePrueba(idioma, nivel, LocalDate.of(2026, 2, 16)) }, // semana ISO 8
                 onGuardarAjustes = {},
             )

@@ -55,6 +55,20 @@ fun clasificarDisponibilidad(disponibles: Set<String>, anioIso: Int, idioma: Idi
 
 enum class DisponibilidadCalendario { PRESENTE, SIN_CALENDARIO_PARA_IDIOMA_O_NIVEL, SIN_CALENDARIO_PARA_EL_ANIO }
 
+private val PATRON_NOMBRE_CALENDARIO = Regex("""^calendario_\d{4}_([a-z]{2})_[A-Z]\d\.json$""")
+
+/**
+ * Que idiomas tienen contenido, en cualquier anio o nivel. Se deriva de los
+ * nombres de archivo de `assets/calendario/`, nunca se escribe a mano
+ * (CLAUDE.md, regla dura #10): cuando se agreguen fichas de un idioma
+ * nuevo, su calendario aparece solo y esto lo recoge sin tocar codigo.
+ */
+fun idiomasConContenido(nombresCalendario: Collection<String>): Set<Idioma> =
+    nombresCalendario
+        .mapNotNull { PATRON_NOMBRE_CALENDARIO.matchEntire(it)?.groupValues?.get(1) }
+        .mapNotNull { codigo -> runCatching { Idioma.valueOf(codigo.uppercase()) }.getOrNull() }
+        .toSet()
+
 /** Por que no hay contenido esta semana. La Fase 4 se lo dice al usuario segun este motivo. */
 enum class RazonSinContenido {
     /** Ningun calendario embebido para este anio ISO, en ningun idioma ni nivel (ej.: 2027 todavia). */

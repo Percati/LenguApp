@@ -15,6 +15,10 @@ private const val CARPETA_CALENDARIO = "calendario"
 fun parsearCalendario(texto: String): List<EntradaCalendario> =
     jsonContenido.decodeFromString(texto)
 
+/** Nombres tal cual estan en `assets/calendario/`. Base para derivar que idiomas tienen contenido (ver semana/idiomasConContenido). */
+fun nombresCalendarioDisponibles(context: Context): List<String> =
+    context.assets.list(CARPETA_CALENDARIO)?.toList() ?: emptyList()
+
 /**
  * Distingue "no hay calendario para este (idioma, nivel)" de "no hay ningun
  * calendario para este anio": la Fase 4 necesita decirle al usuario cual de
@@ -22,8 +26,8 @@ fun parsearCalendario(texto: String): List<EntradaCalendario> =
  * misma funcion que usan los tests JVM contra los assets reales.
  */
 fun cargarCalendarioDesdeAssets(context: Context, anioIso: Int, idioma: Idioma, nivel: Nivel): CalendarioCargado {
-    val disponibles = context.assets.list(CARPETA_CALENDARIO)?.toSet() ?: emptySet()
-    return when (clasificarDisponibilidad(disponibles, anioIso, idioma, nivel)) {
+    val disponibles = nombresCalendarioDisponibles(context)
+    return when (clasificarDisponibilidad(disponibles.toSet(), anioIso, idioma, nivel)) {
         DisponibilidadCalendario.SIN_CALENDARIO_PARA_EL_ANIO -> CalendarioCargado.SinCalendarioParaElAnio
         DisponibilidadCalendario.SIN_CALENDARIO_PARA_IDIOMA_O_NIVEL -> CalendarioCargado.SinCalendarioParaIdiomaONivel
         DisponibilidadCalendario.PRESENTE -> {

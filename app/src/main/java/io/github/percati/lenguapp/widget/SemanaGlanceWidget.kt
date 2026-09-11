@@ -36,7 +36,15 @@ import io.github.percati.lenguapp.semana.ResultadoSemana
 class SemanaGlanceWidget : GlanceAppWidget() {
     override suspend fun provideGlance(context: Context, id: GlanceId) {
         val ajustes = cargarAjustes(context)
-        val resultado = resolverSemana(context, ajustes.idiomaAprendido, ajustes.nivel)
+        // El widget muestra un solo idioma: el primero de los seleccionados,
+        // en el mismo orden estable (declaracion del enum) que las pestañas
+        // de la pantalla principal. Si no hay ninguno, no hay nada que
+        // resolver -- no es un ResultadoSemana.SinContenido (eso es sobre
+        // disponibilidad de calendario, esto es sobre preferencia vacia).
+        val primerIdioma = ajustes.idiomasAprendidos.keys.minByOrNull { it.ordinal }
+        val resultado = primerIdioma?.let { idioma ->
+            resolverSemana(context, idioma, ajustes.idiomasAprendidos.getValue(idioma))
+        }
 
         provideContent {
             GlanceTheme {
@@ -47,7 +55,7 @@ class SemanaGlanceWidget : GlanceAppWidget() {
 }
 
 @Composable
-private fun ContenidoWidget(resultado: ResultadoSemana) {
+private fun ContenidoWidget(resultado: ResultadoSemana?) {
     val context = LocalContext.current
     Column(
         modifier = GlanceModifier
@@ -72,6 +80,10 @@ private fun ContenidoWidget(resultado: ResultadoSemana) {
             }
             is ResultadoSemana.SinContenido -> Text(
                 text = mensajeSinContenido(resultado),
+                style = TextStyle(color = GlanceTheme.colors.onBackground),
+            )
+            null -> Text(
+                text = "Elegí un idioma en Ajustes.",
                 style = TextStyle(color = GlanceTheme.colors.onBackground),
             )
         }
