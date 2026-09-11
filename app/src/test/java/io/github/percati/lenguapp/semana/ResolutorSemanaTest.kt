@@ -150,4 +150,29 @@ class ResolutorSemanaTest {
         assertEquals(CalendarioCargado.SinCalendarioParaIdiomaONivel, calendarioCargado(2026, Idioma.DE, Nivel.A2))
         assertEquals(CalendarioCargado.SinCalendarioParaElAnio, calendarioCargado(2027, Idioma.DE, Nivel.B2))
     }
+
+    // --- idiomasConContenido: Fase 6, se deriva de assets/calendario/, nunca a mano ---
+
+    @Test
+    fun `idiomasConContenido en los assets reales es exactamente DE y EN`() {
+        val nombres = File(carpetaAssets(), "calendario").list()!!.toList()
+        assertEquals(setOf(Idioma.DE, Idioma.EN), idiomasConContenido(nombres))
+    }
+
+    @Test
+    fun `idiomasConContenido ignora archivos que no siguen el patron de nombre`() {
+        val nombres = listOf("calendario_2026_de_B2.json", "LEEME.txt", "calendario_2026_xx_B2.json")
+        assertEquals(setOf(Idioma.DE), idiomasConContenido(nombres))
+    }
+
+    @Test
+    fun `idiomasConContenido sin ningun archivo es un conjunto vacio, no un error`() {
+        assertEquals(emptySet<Idioma>(), idiomasConContenido(emptyList()))
+    }
+
+    @Test
+    fun `idiomasConContenido no duplica un idioma con calendarios de mas de un anio o nivel`() {
+        val nombres = listOf("calendario_2026_de_B2.json", "calendario_2027_de_C1.json")
+        assertEquals(setOf(Idioma.DE), idiomasConContenido(nombres))
+    }
 }
