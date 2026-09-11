@@ -57,6 +57,14 @@ Estado a septiembre 2026, semana ISO 37. Ordenados por lo que bloquea, no por an
 | C12 | ~~Transcribir el IELTS 6.5~~ | **CERRADO.** Transcrito a Excel e integrado: 547 lemas, 1.021 multipalabra en la base. Primera vez que el verificador inglés reconoce expresiones idiomáticas | Hecho |
 | C13 | Colocaciones del registro profesional inglés (*sign off on*, *put up with*, *pushback*) | Ninguna de las nueve fuentes las trae. Probado con CEFR-J, Oxford, Cambridge First, Cambridge Advanced e IELTS. Conclusión: **ese registro no está en ninguna lista publicada**. Solo se cerraría con un corpus de inglés profesional | Abierto, probablemente permanente |
 
+## C-ter. Traducciones y contraste
+
+| # | Pendiente | Volumen | Estado |
+|---|---|---|---|
+| C14 | Glosas de vocabulario y Redemittel en EN, FR, IT y PT | 392 × 4 = **1.568 glosas**, más Redemittel. No validables en FR/IT/PT | Abierto |
+| C15 | Sección de contraste para otros idiomas base | Material nuevo, no traducción: contrastar alemán con inglés no es lo mismo que con español | Abierto |
+| C16 | Fichas de las 8 combinaciones idioma × nivel restantes | **~136 fichas, ~120.000 palabras.** A2 y B1 son bilingües: doble texto. Ver `AJUSTES-FASE-8.md`, C.3, con el orden propuesto | Abierto. Decisión de alcance pendiente |
+
 ## D-bis. Contenido pendiente por el cambio de variantes
 
 | Qué | Detalle |

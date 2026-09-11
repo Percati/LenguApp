@@ -105,6 +105,19 @@ def tabla(bloque):
             filas.append(celdas)
     return cab, filas
 
+def capitalizar(t):
+    """Mayuscula inicial sin tocar el resto.
+
+    El titulo del cuadro sale de partir "Ubersichtskasten - die drei
+    Deklinationstypen" por el guion, asi que llega en minuscula. No se puede
+    usar .capitalize() porque bajaria el resto: en aleman los sustantivos van
+    en mayuscula y "die drei Deklinationstypen" se volveria
+    "Die drei deklinationstypen".
+    """
+    t = t.strip()
+    return t[:1].upper() + t[1:] if t else t
+
+
 def limpiar(t):
     """Normaliza espacios y quita los marcadores de prioridad y de nivel.
 
@@ -296,7 +309,7 @@ def compilar(bloque, idioma):
                 pie.append(t)
         if c and f:
             ficha["cuadroReferencia"] = {
-                "titulo": s.get("cuadro__titulo", "").split("—")[-1].strip(),
+                "titulo": capitalizar(desenvolver(s.get("cuadro__titulo", "").split("—")[-1])),
                 "columnas": [desenvolver(x) for x in c[:5]],
                 "filas": [[desenvolver(y) for y in x[:5]] for x in f[:20]],
                 **({"notaPie": desenvolver(" ".join(pie))} if pie else {})}
