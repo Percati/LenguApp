@@ -267,20 +267,16 @@ private fun EtiquetaVariante(variante: String) {
 private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma) {
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+            // AJUSTES-FASE-8.md, B.5: sin la etiqueta "núcleo" (nombre de
+            // campo mostrado en crudo, y siempre en español -- CLAUDE.md,
+            // regla dura #9). El dato se sigue usando: el peso tipografico
+            // ya distinguia los items nucleo de los diez secundarios
+            // (AJUSTES-FASE-5.md, B4.4), asi que alcanza con eso solo.
             Text(
                 item.item,
                 style = MaterialTheme.typography.bodyLarge,
                 fontWeight = if (item.prioridad == Prioridad.NUCLEO) FontWeight.Bold else FontWeight.Normal,
             )
-            // Los cuatro items nucleo se distinguen de los diez secundarios,
-            // no solo por el peso de fuente -- AJUSTES-FASE-5.md, B4.4.
-            if (item.prioridad == Prioridad.NUCLEO) {
-                Insignia(
-                    "núcleo",
-                    contenedor = MaterialTheme.colorScheme.primaryContainer,
-                    contenido = MaterialTheme.colorScheme.onPrimaryContainer,
-                )
-            }
         }
         Text(
             item.traduccionParaMostrar(idiomaBase),

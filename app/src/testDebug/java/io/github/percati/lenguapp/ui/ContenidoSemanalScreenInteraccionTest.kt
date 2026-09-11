@@ -150,8 +150,10 @@ class ContenidoSemanalScreenInteraccionTest {
     }
 
     /**
-     * B4.4 y B4.6: nucleo, variante e bajoNivelJustificado se distinguen con
-     * insignias, no solo con negrita. DE-G05 tiene los tres casos reales.
+     * B4.4 y B4.6: nucleo se distingue por negrita (AJUSTES-FASE-8.md, B.5
+     * saco la insignia "núcleo" pero conservo el peso tipografico); variante
+     * y bajoNivelJustificado siguen con insignia. DE-G05 tiene los tres
+     * casos reales.
      */
     @Test
     @GraphicsMode(GraphicsMode.Mode.NATIVE)
