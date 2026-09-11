@@ -75,15 +75,28 @@ class PresentacionTest {
         assertEquals(TraduccionRedemittel.SinEquivalenciaDirecta, resultado)
     }
 
-    // --- contraste: opcional, seccion completa se oculta si no hay nada util ---
+    // --- contraste: a diferencia de las glosas, NUNCA cae a espanol (AJUSTES-FASE-8.md, B.6) ---
 
     @Test
     fun `contraste ausente no muestra nada`() {
-        assertEquals(null, null.contrasteParaMostrar(Idioma.DE))
+        assertEquals(null, null.contrasteParaMostrar(Idioma.DE, Idioma.ES))
     }
 
     @Test
-    fun `contraste cae a espanol si el idioma base no esta poblado`() {
-        assertEquals("El espanol no...", mapOf("es" to "El espanol no...").contrasteParaMostrar(Idioma.DE))
+    fun `contraste con el idioma base disponible se muestra`() {
+        assertEquals(
+            "El espanol no...",
+            mapOf("es" to "El espanol no...", "de" to "Das Deutsche...").contrasteParaMostrar(Idioma.DE, Idioma.ES),
+        )
+    }
+
+    @Test
+    fun `contraste NO cae a espanol si el idioma base no esta poblado -- se oculta la seccion entera`() {
+        assertEquals(null, mapOf("es" to "El espanol no...").contrasteParaMostrar(Idioma.DE, Idioma.FR))
+    }
+
+    @Test
+    fun `contraste se oculta si el idioma que se aprende coincide con el idioma base, no hay contraste posible`() {
+        assertEquals(null, mapOf("de" to "Das Deutsche...").contrasteParaMostrar(Idioma.DE, Idioma.DE))
     }
 }
