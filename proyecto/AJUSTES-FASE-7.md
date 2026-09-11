@@ -1,6 +1,60 @@
-# Ajustes para la Fase 7 — temas visuales y navegación hacia atrás
+# Ajustes para la Fase 7 — correcciones de interfaz, navegación y temas
 
-Dos bloques: los cuatro temas y un cambio en la navegación.
+Tres bloques. **El 2 va primero**: son cuatro defectos encontrados usando la app, y dos de ellos son errores reales, no preferencias. Arreglar defectos antes de rediseñar evita rediseñar sobre algo roto.
+
+---
+
+## Bloque 2 — Cuatro defectos encontrados en uso
+
+### 2.1 El botón de ajustes choca con el encabezado y rompe el diseño
+
+Síntomas observados:
+
+- Se superpone con la información del encabezado.
+- En la **semana actual** el diseño se rompe y pasa a vertical.
+- Cuando **no** es la semana actual, se parte en dos renglones.
+
+Que el diseño cambie según sea o no la semana en curso indica que la barra se está acomodando al ancho de su contenido, y ese ancho varía: la etiqueta "Hoy" aparece o desaparece. **Un diseño que depende del largo del texto se va a volver a romper** — con otro idioma de interfaz, con una semana de dos dígitos, o con la fuente del sistema agrandada.
+
+Reubicar el botón de ajustes fuera de la zona del encabezado.
+
+**Criterio de aceptación, no negociable:** verificar el diseño en las cuatro combinaciones —semana actual y semana anterior, por cada uno de los dos idiomas— **y además con la fuente del sistema al 150 %**, que es la condición con la que ya se probaron las fichas en la Fase 3. Sin desbordes, sin saltos de renglón inesperados y sin cambio de orientación del contenido.
+
+### 2.2 «Semanas», «Ajustes» y «Hoy» no se traducen
+
+Estas tres palabras siguen en un idioma fijo al cambiar el idioma de la aplicación.
+
+Es el *chrome* que quedó diferido al cerrar la Fase 6, y la decisión de diferirlo fue correcta: traducir toda la interfaz a seis idiomas sin revisor nativo repite el problema que ya tuvimos con el contenido. **Pero estas tres son las únicas visibles en la pantalla principal**, y verlas en otro idioma mientras todo lo demás cambió es peor que no haber traducido nada.
+
+Alcance acotado a propósito: **solo esas tres cadenas**, en los seis idiomas. El resto del chrome sigue diferido.
+
+### 2.3 Los días de las micro-tareas están siempre en español
+
+En los datos, `microtareas[].dia` es un enum con tres valores: `lun`, `mie`, `vie`. Es una clave interna, no texto para mostrar — y hoy se muestra tal cual.
+
+Los días van **en el idioma que se aprende**, no en el de la aplicación. Es la misma regla que ya rige para los títulos de sección: el contenido de la ficha se muestra en su propio idioma.
+
+| Clave | en | de | es | fr | it | pt |
+|---|---|---|---|---|---|---|
+| `lun` | Mon | Mo | lun | lun | lun | seg |
+| `mie` | Wed | Mi | mié | mer | mer | qua |
+| `vie` | Fri | Fr | vie | ven | ven | sex |
+
+La tabla va escrita, no derivada de `Locale`: los nombres abreviados que produce el sistema no coinciden con la convención de los manuales (*Mo/Mi/Fr* en alemán, no *Mon/Wed/Fri*), y son justo los que el usuario va a reconocer del material impreso.
+
+### 2.4 El gesto de atrás desde Ajustes cierra la app
+
+Estando en Ajustes, el gesto de atrás del sistema —o el botón de la barra del teléfono— cierra la aplicación en vez de volver a la pantalla anterior.
+
+**La causa probable, que importa más que el síntoma:** si Ajustes se muestra con una bandera booleana dentro de `MainActivity` y no como un destino de navegación, el gesto de atrás no tiene nada que apilar y va directo al sistema. Interceptar el gesto con un `BackHandler` tapa el síntoma; **la corrección es que Ajustes sea un destino real con su propia entrada en la pila**. Si no lo es, hay que hacerlo así.
+
+Comportamiento pedido:
+
+- **Desde Ajustes**: atrás vuelve a la pantalla principal.
+- **Desde la pantalla principal**: el primer atrás muestra un mensaje breve —del mismo tipo que el del idioma no disponible— indicando que hay que repetirlo para salir. El segundo, dentro de dos o tres segundos, cierra.
+- El mensaje va traducido según el idioma de la aplicación, igual que el punto 2.2.
+
+Nota: el doble atrás para salir es un patrón que Android ya no recomienda, porque interfiere con el *predictive back*. Se implementa porque lo pediste, pero conviene saber que puede sentirse raro en Android 14 o posterior. Si molesta, quitarlo es de una línea.
 
 ---
 
@@ -76,6 +130,14 @@ Si alguno no llega, hay que ajustar el color, no el tamaño de letra. Y reportar
 **2. El marcado en línea tiene que seguir distinguiéndose.** `*cita*` y `**destaque**` se ven por estilo, no por color. En Satzbau el destaque marca **dónde va el verbo** y es el punto de la ficha: si en algún tema se pierde, el tema está mal, no la ficha.
 
 ---
+
+## Orden de trabajo
+
+1. **Bloque 2** — los cuatro defectos. Son errores, no gusto.
+2. **Bloque 0** — navegación solo hacia atrás. Chico y sin dependencias.
+3. **Bloque 1** — los cuatro temas. Al final, sobre una pantalla ya correcta.
+
+El 2.1 y el Bloque 1 tocan la misma zona, así que hacer el 2.1 primero evita reubicar el botón dos veces.
 
 ## Lo que no cambia
 

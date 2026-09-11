@@ -53,7 +53,7 @@ Estado a septiembre 2026, semana ISO 37. Ordenados por lo que bloquea, no por an
 
 | # | Pendiente | Detalle | Estado |
 |---|---|---|---|
-| C11 | Traducir el *chrome* de la interfaz a los seis idiomas | Barra de navegación, mensajes de "sin contenido", etiquetas de ajustes. Hoy están en un solo idioma. Code lo señaló al cerrar la Fase 6 y **tuvo razón en no asumirlo**: traducir a seis idiomas sin revisor nativo repite el problema que ya tuvimos con el contenido | **Diferido a propósito.** Con un solo usuario no molesta |
+| C11 | Traducir el *chrome* de la interfaz a los seis idiomas | Code lo señaló al cerrar la Fase 6 y **tuvo razón en no asumirlo**: traducir a seis idiomas sin revisor nativo repite el problema que ya tuvimos con el contenido. **Excepción abierta en la Fase 7**: «Semanas», «Ajustes», «Hoy» y el aviso de doble atrás sí se traducen, porque son las únicas cadenas visibles en la pantalla principal | Parcial. El resto sigue diferido |
 | C12 | Transcribir la sección *Phrase* del IELTS 6.5 | Única fuente de expresiones multipalabra. Requiere versión con capa de texto | Abierto |
 
 ## D-bis. Contenido pendiente por el cambio de variantes
