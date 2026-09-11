@@ -66,6 +66,12 @@ dependencies {
     implementation("androidx.compose.material:material-icons-core")
     debugImplementation("androidx.compose.ui:ui-tooling")
 
+    // Ajustes es un destino real de navegacion (con su propia entrada en la
+    // pila), no una bandera booleana en MainActivity -- AJUSTES-FASE-7.md,
+    // bloque 2.4: eso es lo que le da al gesto de atras del sistema algo
+    // para desapilar, en vez de cerrar la app.
+    implementation("androidx.navigation:navigation-compose:2.8.4")
+
     implementation("androidx.glance:glance-appwidget:1.1.1")
     implementation("androidx.glance:glance-material3:1.1.1")
 

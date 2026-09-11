@@ -1,7 +1,10 @@
 package io.github.percati.lenguapp
 
+import android.app.Activity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -9,6 +12,11 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ScrollableTabRow
 import androidx.compose.material3.Surface
@@ -17,13 +25,19 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import io.github.percati.lenguapp.datos.cargarAjustes
 import io.github.percati.lenguapp.datos.guardarAjustes
 import io.github.percati.lenguapp.datos.nombresCalendarioDisponibles
@@ -39,12 +53,22 @@ import io.github.percati.lenguapp.semana.semanaIsoDe
 import io.github.percati.lenguapp.ui.AjustesScreen
 import io.github.percati.lenguapp.ui.PantallaSemana
 import io.github.percati.lenguapp.ui.TemaLenguApp
+import io.github.percati.lenguapp.ui.etiquetaAjustes
+import io.github.percati.lenguapp.ui.etiquetaHoy
+import io.github.percati.lenguapp.ui.etiquetaSemana
+import io.github.percati.lenguapp.ui.mensajeDobleAtrasParaSalir
 import java.time.LocalDate
 import java.util.Locale
 
+private const val DESTINO_PRINCIPAL = "principal"
+private const val DESTINO_AJUSTES = "ajustes"
+private const val VENTANA_DOBLE_ATRAS_MS = 3000L
+
 /**
  * Pantalla unica + ajustes + navegacion por semana + una pestaña por idioma
- * aprendido (Fase 6). La pantalla de contenido en si
+ * aprendido. Ajustes es un destino real de navegacion (AJUSTES-FASE-7.md,
+ * bloque 2.4), no una bandera booleana: asi el gesto de atras del sistema
+ * tiene algo para desapilar. La pantalla de contenido en si
  * (io.github.percati.lenguapp.ui.ContenidoSemanalScreen) no se toca aca.
  */
 class MainActivity : ComponentActivity() {
@@ -69,12 +93,19 @@ internal fun LenguAppApp(
     idiomasConContenido: Set<Idioma>,
     resolver: (Idioma, Nivel, LocalDate) -> ResultadoSemana,
     onGuardarAjustes: (Ajustes) -> Unit,
+    // Parametro de prueba: la produccion nunca lo pasa, asi que siempre
+    // arranca en la fecha real de hoy. Los tests de pantallazo del Bloque
+    // 2.1 lo necesitan para fijar de verdad "semana anterior" (no alcanza
+    // con que el resolutor devuelva otro contenido: "esHoy" tiene que
+    // reflejar la fecha inicial real, no una fecha distinta escondida
+    // detras de un resolutor con trampa).
+    fechaInicial: LocalDate = LocalDate.now(),
 ) {
     var ajustes by remember { mutableStateOf(ajustesIniciales) }
-    var fechaVistaIso by rememberSaveable { mutableStateOf(LocalDate.now().toString()) }
-    var mostrandoAjustes by rememberSaveable { mutableStateOf(false) }
+    var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
     var idiomaActivoElegido by rememberSaveable { mutableStateOf<String?>(null) }
     val fechaVista = remember(fechaVistaIso) { LocalDate.parse(fechaVistaIso) }
+    val navController = rememberNavController()
 
     // Solo se lee el idioma del dispositivo si el usuario activo "Segun el
     // sistema" -- CLAUDE.md, regla dura #2 enmendada (AJUSTES-FASE-6.md, E).
@@ -93,77 +124,152 @@ internal fun LenguAppApp(
 
     TemaLenguApp {
         Surface(modifier = Modifier.fillMaxSize()) {
-            if (mostrandoAjustes) {
-                AjustesScreen(
-                    ajustes = ajustes,
-                    idiomasConContenido = idiomasConContenido,
-                    idiomaAplicacionEfectivo = idiomaAplicacion,
-                    onAjustesCambiados = ::actualizarAjustes,
-                    onVolver = { mostrandoAjustes = false },
-                )
-            } else {
-                Column(Modifier.fillMaxSize()) {
-                    BarraNavegacion(
-                        semanaIso = semanaIsoDe(fechaVista),
-                        esHoy = fechaVista == LocalDate.now(),
+            NavHost(navController = navController, startDestination = DESTINO_PRINCIPAL) {
+                composable(DESTINO_PRINCIPAL) {
+                    PantallaPrincipal(
+                        ajustes = ajustes,
+                        idiomaAplicacion = idiomaAplicacion,
+                        fechaVista = fechaVista,
+                        idiomasSeleccionados = idiomasSeleccionados,
+                        idiomaActivo = idiomaActivo,
+                        resolver = resolver,
+                        onIdiomaActivoElegido = { idiomaActivoElegido = it.name },
                         onSemanaAnterior = { fechaVistaIso = fechaVista.minusWeeks(1).toString() },
                         onHoy = { fechaVistaIso = LocalDate.now().toString() },
                         onSemanaSiguiente = { fechaVistaIso = fechaVista.plusWeeks(1).toString() },
-                        onAjustes = { mostrandoAjustes = true },
+                        onAjustes = { navController.navigate(DESTINO_AJUSTES) },
                     )
-
-                    if (idiomasSeleccionados.isEmpty() || idiomaActivo == null) {
-                        SinIdiomaSeleccionado()
-                    } else {
-                        ScrollableTabRow(selectedTabIndex = idiomasSeleccionados.indexOf(idiomaActivo).coerceAtLeast(0)) {
-                            idiomasSeleccionados.forEach { idioma ->
-                                Tab(
-                                    selected = idioma == idiomaActivo,
-                                    onClick = { idiomaActivoElegido = idioma.name },
-                                    text = { Text(idioma.name) },
-                                )
-                            }
-                        }
-                        val nivelActivo = ajustes.idiomasAprendidos.getValue(idiomaActivo)
-                        val resultado = remember(fechaVista, idiomaActivo, nivelActivo) {
-                            resolver(idiomaActivo, nivelActivo, fechaVista)
-                        }
-                        PantallaSemana(resultado, ajustes.idiomaBase)
-                    }
+                }
+                composable(DESTINO_AJUSTES) {
+                    AjustesScreen(
+                        ajustes = ajustes,
+                        idiomasConContenido = idiomasConContenido,
+                        idiomaAplicacionEfectivo = idiomaAplicacion,
+                        onAjustesCambiados = ::actualizarAjustes,
+                        onVolver = { navController.popBackStack() },
+                    )
                 }
             }
         }
     }
 }
 
-/**
- * Navegacion en modo lectura: mover la semana en pantalla no toca ningun
- * puntero de progreso, solo cambia que fecha se le pasa al resolutor (la
- * misma funcion de la Fase 2). El selector de idioma vive en las pestañas
- * de abajo desde la Fase 6, no aca.
- */
 @Composable
-private fun BarraNavegacion(
-    semanaIso: SemanaIso,
-    esHoy: Boolean,
+private fun PantallaPrincipal(
+    ajustes: Ajustes,
+    idiomaAplicacion: Idioma,
+    fechaVista: LocalDate,
+    idiomasSeleccionados: List<Idioma>,
+    idiomaActivo: Idioma?,
+    resolver: (Idioma, Nivel, LocalDate) -> ResultadoSemana,
+    onIdiomaActivoElegido: (Idioma) -> Unit,
     onSemanaAnterior: () -> Unit,
     onHoy: () -> Unit,
     onSemanaSiguiente: () -> Unit,
     onAjustes: () -> Unit,
 ) {
-    Row(
-        modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp),
-        horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.CenterVertically,
-    ) {
-        TextButton(onClick = onSemanaAnterior) { Text("< Semana") }
-        Text(
-            "Semana ${semanaIso.semana} · ${semanaIso.anio}" + if (esHoy) " (hoy)" else "",
-            style = MaterialTheme.typography.labelLarge,
+    ManejarDobleAtrasParaSalir(idiomaAplicacion)
+
+    Column(Modifier.fillMaxSize()) {
+        BarraNavegacion(
+            semanaIso = semanaIsoDe(fechaVista),
+            esHoy = fechaVista == LocalDate.now(),
+            idiomaAplicacion = idiomaAplicacion,
+            onSemanaAnterior = onSemanaAnterior,
+            onHoy = onHoy,
+            onSemanaSiguiente = onSemanaSiguiente,
+            onAjustes = onAjustes,
         )
-        TextButton(onClick = onSemanaSiguiente) { Text("Semana >") }
-        TextButton(onClick = onHoy, enabled = !esHoy) { Text("Hoy") }
-        TextButton(onClick = onAjustes) { Text("Ajustes") }
+
+        if (idiomasSeleccionados.isEmpty() || idiomaActivo == null) {
+            SinIdiomaSeleccionado()
+        } else {
+            ScrollableTabRow(selectedTabIndex = idiomasSeleccionados.indexOf(idiomaActivo).coerceAtLeast(0)) {
+                idiomasSeleccionados.forEach { idioma ->
+                    Tab(
+                        selected = idioma == idiomaActivo,
+                        onClick = { onIdiomaActivoElegido(idioma) },
+                        text = { Text(idioma.name) },
+                    )
+                }
+            }
+            val nivelActivo = ajustes.idiomasAprendidos.getValue(idiomaActivo)
+            val resultado = remember(fechaVista, idiomaActivo, nivelActivo) {
+                resolver(idiomaActivo, nivelActivo, fechaVista)
+            }
+            PantallaSemana(resultado, ajustes.idiomaBase)
+        }
+    }
+}
+
+/**
+ * AJUSTES-FASE-7.md, bloque 2.4: el primer atras en la pantalla principal
+ * (la raiz de la pila: no hay nada que NavHost pueda desapilar) avisa;
+ * repetirlo dentro de la ventana cierra. El aviso es un toast, "del mismo
+ * tipo que el del idioma no disponible", y va traducido.
+ */
+@Composable
+private fun ManejarDobleAtrasParaSalir(idiomaAplicacion: Idioma) {
+    val contexto = LocalContext.current
+    val actividad = contexto as? Activity
+    var ultimoAtras by remember { mutableLongStateOf(0L) }
+    BackHandler {
+        val ahora = System.currentTimeMillis()
+        if (ahora - ultimoAtras < VENTANA_DOBLE_ATRAS_MS) {
+            actividad?.finish()
+        } else {
+            ultimoAtras = ahora
+            Toast.makeText(contexto, mensajeDobleAtrasParaSalir(idiomaAplicacion), Toast.LENGTH_SHORT).show()
+        }
+    }
+}
+
+/**
+ * AJUSTES-FASE-7.md, bloque 2.1: el boton de Ajustes se movio a su propia
+ * fila, fuera de la zona del encabezado. La fila de la semana tiene solo
+ * tres elementos con las flechas de ancho fijo (iconos, no texto: no varian
+ * con el idioma ni con el escalado de fuente) y el texto del medio con
+ * `weight(1f)`, asi que ninguno de los dos botones cambia de posicion
+ * cuando el sufijo "(hoy)" aparece o desaparece, ni con otro idioma, ni con
+ * la fuente del sistema al 150 %.
+ */
+@Composable
+private fun BarraNavegacion(
+    semanaIso: SemanaIso,
+    esHoy: Boolean,
+    idiomaAplicacion: Idioma,
+    onSemanaAnterior: () -> Unit,
+    onHoy: () -> Unit,
+    onSemanaSiguiente: () -> Unit,
+    onAjustes: () -> Unit,
+) {
+    val textoSemana = etiquetaSemana(idiomaAplicacion)
+    Column(modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp)) {
+        Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+            IconButton(onClick = onSemanaAnterior) {
+                Icon(Icons.AutoMirrored.Filled.KeyboardArrowLeft, contentDescription = "< $textoSemana")
+            }
+            Text(
+                "$textoSemana ${semanaIso.semana} · ${semanaIso.anio}" +
+                    if (esHoy) " (${etiquetaHoy(idiomaAplicacion)})" else "",
+                style = MaterialTheme.typography.labelLarge,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.weight(1f),
+            )
+            // Bloque 0 (AJUSTES-FASE-7.md) saca este boton de la interfaz;
+            // por ahora, en el Bloque 2, sigue activo.
+            IconButton(onClick = onSemanaSiguiente) {
+                Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = "$textoSemana >")
+            }
+        }
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            TextButton(onClick = onHoy, enabled = !esHoy) { Text(etiquetaHoy(idiomaAplicacion)) }
+            TextButton(onClick = onAjustes) { Text(etiquetaAjustes(idiomaAplicacion)) }
+        }
     }
 }
 

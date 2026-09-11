@@ -3,6 +3,8 @@ package io.github.percati.lenguapp
 import androidx.activity.ComponentActivity
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import io.github.percati.lenguapp.datos.parsearCalendario
@@ -16,10 +18,15 @@ import io.github.percati.lenguapp.semana.CalendarioCargado
 import io.github.percati.lenguapp.semana.ResultadoSemana
 import io.github.percati.lenguapp.semana.resolverContenidoDeLaSemana
 import io.github.percati.lenguapp.semana.semanaIsoDe
+import io.github.percati.lenguapp.ui.mensajeDobleAtrasParaSalir
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.shadows.ShadowToast
 import java.io.File
 import java.time.LocalDate
 
@@ -128,5 +135,84 @@ class LenguAppAppTest {
             )
         }
         composeTestRule.onNode(hasText("no forma parte de la edición actual", substring = true)).assertExists()
+    }
+
+    // --- AJUSTES-FASE-7.md, bloque 2.4: Ajustes es un destino real, no una bandera ---
+
+    @Test
+    fun `el boton de ajustes navega, y el gesto de atras del sistema vuelve a la principal (no cierra la app)`() {
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
+                idiomasConContenido = setOf(Idioma.DE),
+                resolver = ::resolverDePrueba,
+                onGuardarAjustes = {},
+            )
+        }
+        composeTestRule.onNodeWithText("Ajustes").performClick()
+        composeTestRule.onNodeWithText("Idioma que aprendés").assertExists()
+
+        composeTestRule.activity.onBackPressedDispatcher.onBackPressed()
+
+        // De vuelta en la principal, no cerrada: el gesto de atras desapilo
+        // el destino "ajustes" en vez de ir directo al sistema.
+        assertFalse(composeTestRule.activity.isFinishing)
+        composeTestRule.onNode(hasText("Satzbau", substring = true)).assertExists()
+    }
+
+    @Test
+    fun `un solo atras en la principal avisa con un toast, no cierra`() {
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
+                idiomasConContenido = setOf(Idioma.DE),
+                resolver = ::resolverDePrueba,
+                onGuardarAjustes = {},
+            )
+        }
+        composeTestRule.activity.onBackPressedDispatcher.onBackPressed()
+
+        assertEquals(mensajeDobleAtrasParaSalir(Idioma.ES), ShadowToast.getTextOfLatestToast())
+        assertFalse(composeTestRule.activity.isFinishing)
+    }
+
+    @Test
+    fun `doble atras en la principal, dentro de la ventana, cierra`() {
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
+                idiomasConContenido = setOf(Idioma.DE),
+                resolver = ::resolverDePrueba,
+                onGuardarAjustes = {},
+            )
+        }
+        composeTestRule.activity.onBackPressedDispatcher.onBackPressed()
+        composeTestRule.activity.onBackPressedDispatcher.onBackPressed()
+
+        assertTrue(composeTestRule.activity.isFinishing)
+    }
+
+    // --- AJUSTES-FASE-7.md, bloque 2.2: "Semana", "Ajustes" y "Hoy" siguen el idioma de la aplicacion ---
+
+    @Test
+    fun `el encabezado se traduce con el idioma de la aplicacion (aleman)`() {
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(
+                    idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2),
+                    idiomaBase = Idioma.DE,
+                    idiomaInterfaz = Idioma.DE,
+                ),
+                idiomasConContenido = setOf(Idioma.DE),
+                resolver = ::resolverDePrueba,
+                onGuardarAjustes = {},
+            )
+        }
+        // "Woche" tambien aparece dentro de la prosa alemana de la ficha, y
+        // "Heute" tambien en el boton (ahora traducido): alcanza con que la
+        // primera ocurrencia de cada uno exista.
+        composeTestRule.onAllNodesWithText("Woche", substring = true).onFirst().assertExists()
+        composeTestRule.onAllNodesWithText("Heute", substring = true).onFirst().assertExists()
+        composeTestRule.onNodeWithText("Einstellungen").assertExists()
     }
 }

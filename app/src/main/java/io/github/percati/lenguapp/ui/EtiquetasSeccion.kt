@@ -1,5 +1,6 @@
 package io.github.percati.lenguapp.ui
 
+import io.github.percati.lenguapp.modelo.Dia
 import io.github.percati.lenguapp.modelo.Idioma
 
 /**
@@ -93,3 +94,23 @@ fun etiquetaContraste(idioma: Idioma, idiomaBase: Idioma): String = when (idioma
     Idioma.DE -> "Kontrast zum ${NOMBRE_IDIOMA_DE_DATIVO[idiomaBase] ?: idiomaBase.name}"
     else -> "Contrast with ${NOMBRE_IDIOMA_EN[idiomaBase] ?: idiomaBase.name}"
 }
+
+/**
+ * `microtareas[].dia` es una clave interna (lun/mie/vie), no texto para
+ * mostrar. Va en el idioma que se aprende, igual que los titulos de
+ * seccion -- AJUSTES-FASE-7.md, bloque 2.3. Tabla escrita a mano, no
+ * derivada de `Locale`: los abreviados del sistema no coinciden con la
+ * convencion de los manuales (*Mo/Mi/Fr* en aleman, no *Mon/Wed/Fri*), y
+ * son justo los que el usuario reconoce del material impreso.
+ */
+private val ETIQUETAS_DIA: Map<Idioma, Map<Dia, String>> = mapOf(
+    Idioma.EN to mapOf(Dia.LUN to "Mon", Dia.MIE to "Wed", Dia.VIE to "Fri"),
+    Idioma.DE to mapOf(Dia.LUN to "Mo", Dia.MIE to "Mi", Dia.VIE to "Fr"),
+    Idioma.ES to mapOf(Dia.LUN to "lun", Dia.MIE to "mié", Dia.VIE to "vie"),
+    Idioma.FR to mapOf(Dia.LUN to "lun", Dia.MIE to "mer", Dia.VIE to "ven"),
+    Idioma.IT to mapOf(Dia.LUN to "lun", Dia.MIE to "mer", Dia.VIE to "ven"),
+    Idioma.PT to mapOf(Dia.LUN to "seg", Dia.MIE to "qua", Dia.VIE to "sex"),
+)
+
+fun etiquetaDia(dia: Dia, idioma: Idioma): String =
+    ETIQUETAS_DIA[idioma]?.get(dia) ?: ETIQUETAS_DIA.getValue(Idioma.ES).getValue(dia)

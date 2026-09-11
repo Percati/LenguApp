@@ -29,7 +29,6 @@ import io.github.percati.lenguapp.modelo.ChallengeType
 import io.github.percati.lenguapp.modelo.Clase
 import io.github.percati.lenguapp.modelo.ContenidoSemanal
 import io.github.percati.lenguapp.modelo.CuadroReferencia
-import io.github.percati.lenguapp.modelo.Dia
 import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Prioridad
@@ -164,7 +163,7 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
 
         Seccion(etiquetaSeccion("microtareas", ficha.idioma, ficha.bilingue)) {
             ficha.microtareas.forEach {
-                Vinieta("${etiquetaDia(it.dia)} (${it.minutos} min) — ${it.texto}")
+                Vinieta("${etiquetaDia(it.dia, ficha.idioma)} (${it.minutos} min) — ${it.texto}")
             }
         }
 
@@ -386,12 +385,6 @@ private fun TarjetaPrompt(prompt: String, titulo: String) {
             }
         }
     }
-}
-
-private fun etiquetaDia(dia: Dia): String = when (dia) {
-    Dia.LUN -> "Lunes"
-    Dia.MIE -> "Miércoles"
-    Dia.VIE -> "Viernes"
 }
 
 private fun etiquetaClase(clase: Clase): String = when (clase) {
