@@ -163,3 +163,62 @@ tasks.matching { it.name == "preBuild" }.configureEach {
 tasks.matching { it.name == "assembleDebug" }.configureEach {
     dependsOn("testDebugUnitTest")
 }
+
+// Lista blanca de permisos aceptados en el APK -- ver CLAUDE.md, regla dura
+// #1. Cualquier otro permiso hace fallar el build: Glance demostro que una
+// dependencia de AndroidX puede meter WAKE_LOCK, RECEIVE_BOOT_COMPLETED,
+// FOREGROUND_SERVICE y ACCESS_NETWORK_STATE sin avisar, y depender de que
+// alguien se acuerde de correr `aapt dump permissions` a mano no escala.
+val permisosPermitidos = setOf(
+    "io.github.percati.lenguapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+)
+
+val verificarPermisosApk by tasks.registering {
+    group = "verification"
+    description = "Falla si el APK tiene un permiso fuera de la lista blanca de CLAUDE.md."
+
+    val apkDebug = layout.buildDirectory.file("outputs/apk/debug/app-debug.apk")
+    val sdkDir = android.sdkDirectory
+    inputs.file(apkDebug)
+
+    doLast {
+        val apk = apkDebug.get().asFile
+        check(apk.isFile) { "No se encontro el APK en $apk; esta tarea corre despues de assembleDebug." }
+
+        // aapt (no aapt2: mismo binario que se uso para descubrir y
+        // verificar el problema de Glance/WorkManager, ver CLAUDE.md).
+        val buildToolsDir = File(sdkDir, "build-tools")
+        val versionMasNueva = buildToolsDir.listFiles { f -> f.isDirectory }
+            ?.maxByOrNull { it.name }
+            ?: error("No se encontro ninguna build-tools instalada en $buildToolsDir")
+        val esWindows = System.getProperty("os.name").lowercase().contains("win")
+        val aapt = File(versionMasNueva, if (esWindows) "aapt.exe" else "aapt")
+        check(aapt.isFile) { "No se encontro aapt en $aapt" }
+
+        val salida = ByteArrayOutputStream()
+        exec {
+            commandLine(aapt.absolutePath, "dump", "permissions", apk.absolutePath)
+            standardOutput = salida
+        }
+
+        val permisosEnElApk = Regex("""uses-permission: name='([^']+)'""")
+            .findAll(salida.toString(Charsets.UTF_8))
+            .map { it.groupValues[1] }
+            .toSet()
+        val fueraDeLaListaBlanca = permisosEnElApk - permisosPermitidos
+
+        if (fueraDeLaListaBlanca.isNotEmpty()) {
+            throw GradleException(
+                "El APK tiene permisos fuera de la lista blanca de CLAUDE.md: $fueraDeLaListaBlanca. " +
+                    "Ver CLAUDE.md, regla dura #1, antes de agregarlos a permisosPermitidos.",
+            )
+        }
+    }
+}
+
+// finalizedBy, no dependsOn: esta tarea necesita que el APK ya exista, asi
+// que tiene que correr despues de assembleDebug, no antes. Si falla, el
+// build de todos modos se reporta como fallido.
+tasks.matching { it.name == "assembleDebug" }.configureEach {
+    finalizedBy(verificarPermisosApk)
+}
