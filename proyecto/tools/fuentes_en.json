@@ -49,20 +49,22 @@
       "url": "https://raw.githubusercontent.com/openlanguageprofiles/olp-en-cefrj/master/octanove-vocabulary-profile-c1c2-1.0.csv"
     },
     {
-      "id": "cefrj-vocab-1.6",
-      "formato": "csv",
-      "anio": 2020,
-      "archivo": "fuentes/cefrj-16.csv",
-      "url": "http://www.cefr-j.org/download.html (requiere aceptar licencia)"
+      "id": "cambridge-gv-advanced",
+      "formato": "cambridge-wordlist",
+      "nivel": "C1",
+      "variante": "BrE",
+      "anio": 2015,
+      "archivo": "fuentes/EN__Grammar_Vocabulary_Advanced__Wordlist.pdf",
+      "_nota": "Grammar & Vocabulary for Advanced (Cambridge). Primera fuente inglesa de vocabulario C1 con expresiones multipalabra."
     },
     {
-      "id": "cambridge-b1-preliminary",
-      "formato": "cambridge",
+      "id": "cambridge-gv-first",
+      "formato": "cambridge-wordlist",
+      "nivel": "B2",
       "variante": "BrE",
-      "anio": 2025,
-      "archivo": "fuentes/506887b1preliminaryvocabularylist.pdf",
-      "url": "https://www.cambridgeenglish.org/ (B1 Preliminary vocabulary list)",
-      "_nota": "Unica fuente inglesa que etiqueta phrasal verbs (phr v) y frases (phr)."
+      "anio": 2015,
+      "archivo": "fuentes/EN__Grammar_Vocabulary_First_and_First_for_Schools__Wordlist.pdf",
+      "_nota": "Grammar & Vocabulary for First (Cambridge). Nivel B2."
     }
   ]
 }

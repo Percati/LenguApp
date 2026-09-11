@@ -98,6 +98,33 @@ def lemas_cambridge(texto):
             entradas[lema] = (lema, "B1", pos)
     return {k: (v[0], v[1]) for k, v in entradas.items()}
 
+def lemas_cambridge_wordlist(texto, nivel):
+    """Wordlist de las series Grammar & Vocabulary de Cambridge.
+
+    Formato: varias columnas, agrupado por unidad y por clase de palabra
+    (NOUNS / ADJECTIVES / VERBS), con transcripcion IPA entre barras. Incluye
+    expresiones de varias palabras ("hustle and bustle", "commuter belt"), que
+    es justo lo que faltaba para verificar colocaciones por encima de B2.
+
+    Se parte cada linea por 3+ espacios, se quita la IPA y se descartan las
+    lineas de continuacion (las que solo llevan transcripcion).
+    """
+    entradas = {}
+    for linea in texto.splitlines():
+        for seg in re.split(r"\s{3,}", linea):
+            seg = re.sub(r"/[^/]*/", " ", seg)          # fuera la IPA
+            seg = re.sub(r"\s+", " ", seg).strip(" ,;.")
+            if not seg or len(seg) > 40:
+                continue
+            if seg.isupper():                            # cabecera NOUNS/VERBS
+                continue
+            if not re.fullmatch(r"[a-zA-Z][a-zA-Z'\- ]{1,38}", seg):
+                continue
+            if len(seg) < 3:
+                continue
+            entradas[seg.lower()] = (seg.lower(), nivel)
+    return entradas
+
 def lemas_csv(path, col_lema="headword", col_nivel="CEFR"):
     """CSV de CEFR-J / Octanove. El nivel CEFR-J trae subniveles (A1.1) que
     se colapsan al nivel MCER (A1)."""
@@ -194,6 +221,8 @@ def construir(fuentes):
         if formato == "csv":
             pares = lemas_csv(path, f.get("colLema", "headword"),
                               f.get("colNivel", "CEFR"))
+        elif formato == "cambridge-wordlist":
+            pares = lemas_cambridge_wordlist(leer(path), f["nivel"])
         elif formato == "cambridge":
             pares = lemas_cambridge(leer(path))
         elif formato == "oxford":

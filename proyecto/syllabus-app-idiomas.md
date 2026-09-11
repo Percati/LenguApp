@@ -97,7 +97,7 @@ Tres advertencias que un revisor debe tener presentes:
 
 | Objeto | Qué es | Cuántos |
 |---|---|---|
-| **Skill** | Tema gramatical, funcional o léxico | 47 en inglés, 47 en alemán |
+| **Skill** | Tema gramatical, funcional o léxico | 47 en inglés, 50 en alemán |
 | **Topic** | Tema de conversación | 14, compartidos entre idiomas |
 | **VocabPack** | Vocabulario de un Topic en un idioma y nivel | hasta 140 |
 | **Occurrence** | Una aparición concreta de un Skill en un nivel, con su profundidad | variable |
@@ -266,7 +266,7 @@ Los niveles indicados son aquellos en los que el Skill **se practica activamente
 Lectura: el peso se corre de gramática a fluidez y léxico a medida que sube el nivel, que es exactamente lo que debe pasar. En C2 quedan solo dos ítems gramaticales porque ya no hay gramática nueva que aprender, solo que dominar.
 ---
 
-## 5. Banco de Skills — Alemán (47)
+## 5. Banco de Skills — Alemán (50)
 
 Recordatorio de la sección 1.2: **por encima de B2 no hay gramática nueva.** Profile deutsch describe la gramática solo hasta B2 y asume que en C1/C2 el trabajo es de uso activo, no de adquisición de estructuras. El banco lo refleja: los niveles C llevan registro, precisión, estilística y variación.
 
@@ -289,7 +289,7 @@ Recordatorio de la sección 1.2: **por encima de B2 no hay gramática nueva.** P
 | DE-F13 | Register: du/Sie, formell/informell | B1 B2 C1 C2 | PD | |
 | DE-F14 | Ironie, Untertreibung und Humor | C1 C2 | PD>B2 | Deuda de validación alta |
 
-### 5.2 Gramática / Grammatik (24)
+### 5.2 Gramática / Grammatik (27)
 
 | ID | Skill | Niveles | Ancla | Nota |
 |---|---|---|---|---|
@@ -304,15 +304,18 @@ Recordatorio de la sección 1.2: **por encima de B2 no hay gramática nueva.** P
 | DE-G09 | Konjunktiv II | B1 B2 C1 | PD B1 | |
 | DE-G10 | Passiv und Passiversatzformen | B1 B2 C1 | PD B1/B2 | C1: *lassen sich*, *-bar*, *ist zu + Inf.* |
 | DE-G11 | Relativsätze | B1 B2 C1 | PD B1 | C1: Genitivrelativsätze, *wo-/was-* |
-| DE-G12 | Nominalisierung und Nominalstil | B2 C1 | PD B2 | Puerta de entrada al alemán técnico y administrativo |
+| DE-G12 | Nominalisierung und Nominalstil | B2 C1 C2 | PD B2 / Erkundungen C2 | Puerta de entrada al alemán técnico y administrativo. En C2 es bloque propio |
 | DE-G13 | Infinitivsätze mit *zu* | B1 B2 C1 | PD B1 / Aspekte C1 | C1: presente y pasado |
-| DE-G14 | Erweiterte Partizipialkonstruktionen | B2 C1 | Aspekte B2/C1 | Empieza en B2 (*Partizipien als Adjektive*) |
+| DE-G14 | Erweiterte Partizipialkonstruktionen | B2 C1 C2 | Aspekte B2/C1 · Erkundungen C2 | Empieza en B2 (*Partizipien als Adjektive*); en C2, participios nominalizados |
 | DE-G15 | Konjunktiv I und indirekte Rede | B2 C1 | Aspekte B2 | Aspekte lo introduce en B2, no en C1 |
 | DE-G16 | Genitiv und Genitivpräpositionen | B2 C1 | PD B2 | |
 | DE-G17 | Negation und Fokuspartikeln | B2 | Aspekte B2 | Aspekte lo pone en B2, no en B1+ |
 | DE-G22 | Reflexive Verben | B1 B2 | Aspekte B1+ | **Hueco grave**: el juego de verbos reflexivos alemán no coincide con el español |
 | DE-G23 | n-Deklination und Pluralbildung der Nomen | B1 | Aspekte B1+ | La n-Deklination no tiene equivalente en español |
 | DE-G24 | Zukünftiges ausdrücken (Präsens vs. Futur I) | B1 | Aspekte B1+ | |
+| DE-G25 | Appositionen | C2 | Erkundungen C2 | Refinamiento sintáctico, no estructura nueva |
+| DE-G26 | Valenz: Verben und Nomen mit Ergänzungen | C1 C2 | Erkundungen C1/C2 · Sicher! C1 | Qué complementos exige cada verbo y cada nombre |
+| DE-G27 | Adjektive mit präpositionalem Kasus | C1 | Erkundungen C1 | *stolz auf*, *fähig zu*: paralelo adjetival de DE-G08 |
 | DE-G19 | Vergleichssätze (*als, wie, je … desto*) | B1 B2 | Aspekte B2 | Hueco detectado: no había skill de comparación en alemán |
 | DE-G20 | Das Wort *es* (posicional y correlativo) | B2 | Aspekte B2 | Error frecuente, poco enseñado |
 | DE-G21 | Modalitätsverben (*scheinen, pflegen, drohen*) | C1 | Aspekte C1 | C1 puro |
@@ -327,7 +330,7 @@ Recordatorio de la sección 1.2: **por encima de B2 no hay gramática nueva.** P
 | DE-V03 | Kollokationen | B1 B2 C1 | PD B1+ | |
 | DE-V04 | Funktionsverbgefüge | B2 C1 | Aspekte B2 | Aspekte lo llama *Nomen-Verb-Verbindungen*, en B2 |
 | DE-V05 | Modalpartikeln (*doch, mal, ja, eben, halt, wohl*) | B1 B2 C1 C2 | PD B1 | **El skill de mayor impacto en sonar natural.** Casi no se enseña |
-| DE-V06 | Wortbildung: Präfixe, Suffixe, Komposita | B1 B2 C1 | PD B1 | Multiplica vocabulario sin memorizar listas |
+| DE-V06 | Wortbildung: Präfixe, Suffixe, Komposita | B1 B2 C1 C2 | PD B1 / Erkundungen C2 | Multiplica vocabulario sin memorizar listas. Es la estrategia que el Goethe declara esperar en C1 |
 | DE-V07 | Umgangssprache vs. Standardsprache | B2 C1 C2 | PD>B2 | |
 | DE-V08 | Helvetismen und Deutschschweizer Kontext | B1 B2 C1 C2 | — | Añadido propio, fuera del MCER. Ver nota 5.5 |
 | DE-V09 | Feine Bedeutungsunterschiede und Konnotation | C1 C2 | PD>B2 | |
@@ -340,9 +343,13 @@ Recordatorio de la sección 1.2: **por encima de B2 no hay gramática nueva.** P
 | B1 | 28 | 9 | 14 | 5 |
 | B2 | 31 | 11 | 14 | 6 |
 | C1 | 27 | 12 | 8 | 7 |
-| C2 | 13 | 8 | 0 | 5 |
+| C2 | 18 | 8 | 4 | 6 |
 
-**C2 alemán tiene cero ítems gramaticales.** No es un olvido: es la consecuencia directa de lo que dice Profile deutsch. Si un revisor pide agregar gramática ahí, hay que pedirle la fuente.
+**C2 alemán tiene cuatro ítems gramaticales, todos de refinamiento.** La versión anterior de este documento declaraba cero, apoyada en que Profile deutsch describe gramática solo hasta B2.
+
+El índice de **Erkundungen C2** obligó a corregirlo, y la distinción es fina pero importante: de sus ocho bloques gramaticales, seis son retratamiento de material B2 —Zeitformen, Konjunktiv I y II, Modalverben, Relativsätze, Adjektivdeklination—, lo que confirma que **no hay estructuras nuevas**. Pero hay cuatro que sí son de C2 y no son estructuras nuevas sino **fenómenos de borde de estructuras conocidas**: Appositionen, participios nominalizados, valencia y formación de nombres.
+
+Leer "no hay gramática nueva" como "no hay gramática" fue un error de interpretación. En C2 no se aprenden estructuras: se aprenden los bordes de las que ya se conocen, y eso sí es enseñable y sí tiene nivel.
 
 ### 5.5 Nota sobre DE-V08 (Helvetismen)
 
