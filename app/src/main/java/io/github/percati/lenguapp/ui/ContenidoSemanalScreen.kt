@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.selection.DisableSelection
+import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
@@ -92,8 +94,12 @@ fun ContenidoSemanalScreen(
     }
 }
 
+// AJUSTES-FASE-8.md, B.4: contenido seleccionable y copiable para traducir a
+// mano un pasaje. SelectionContainer envuelve toda la ficha; el boton de
+// copiar el prompt se excluye con DisableSelection para que el gesto de
+// seleccionar texto no le gane al click ni lo deje capturado.
 @Composable
-private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier = Modifier) {
+private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp),
@@ -176,7 +182,7 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
 }
 
 @Composable
-private fun SemanaEspecialContenido(especial: SemanaEspecial, modifier: Modifier = Modifier) {
+private fun SemanaEspecialContenido(especial: SemanaEspecial, modifier: Modifier = Modifier) = SelectionContainer {
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp),
@@ -374,14 +380,19 @@ private fun TarjetaPrompt(prompt: String, titulo: String) {
             Text(textoConMarcado(prompt), style = MaterialTheme.typography.bodyMedium)
             // Es la unica accion de la pantalla: boton de ancho completo,
             // no un boton mas perdido entre el resto -- AJUSTES-FASE-5.md, B4.5.
-            Button(
-                onClick = {
-                    portapapeles.setText(AnnotatedString(prompt))
-                    copiado = true
-                },
-                modifier = Modifier.fillMaxWidth(),
-            ) {
-                Text(if (copiado) "Copiado" else "Copiar al portapapeles")
+            // DisableSelection (AJUSTES-FASE-8.md, B.4): el resto de la ficha
+            // es seleccionable, pero este boton no debe quedar capturado por
+            // el gesto de seleccionar texto.
+            DisableSelection {
+                Button(
+                    onClick = {
+                        portapapeles.setText(AnnotatedString(prompt))
+                        copiado = true
+                    },
+                    modifier = Modifier.fillMaxWidth(),
+                ) {
+                    Text(if (copiado) "Copiado" else "Copiar al portapapeles")
+                }
             }
         }
     }
