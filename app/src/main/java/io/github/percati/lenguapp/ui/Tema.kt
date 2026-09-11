@@ -51,7 +51,10 @@ private val EDITORIAL_CLARO = PaletaTema(
     superficie = Color(0xFFF4F1EA),
     texto = Color(0xFF242E26),
     acento = Color(0xFF3A5F43),
-    secundario = Color(0xFF708090),
+    // #708090 original no cumplia AA como texto (3.59:1 / 3.92:1) -- ver
+    // ContrasteWcagTest.kt. #5C6874 corrige eso: 5.05:1 sobre superficie,
+    // 5.51:1 sobre fondo.
+    secundario = Color(0xFF5C6874),
     onAcento = Color(0xFFFFFFFF),
 )
 
