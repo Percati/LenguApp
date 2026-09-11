@@ -1,5 +1,7 @@
 package io.github.percati.lenguapp.presentacion
 
+import io.github.percati.lenguapp.modelo.ContenidoSemanal
+import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.RedemittelItem
 import io.github.percati.lenguapp.modelo.VocabularioItem
@@ -51,4 +53,27 @@ private fun RedemittelItem.resolverClave(clave: String): TraduccionRedemittel? {
         null -> TraduccionRedemittel.SinEquivalenciaDirecta
         else -> valor.takeIf { it.isNotBlank() }?.let { TraduccionRedemittel.Disponible(it) }
     }
+}
+
+/**
+ * Todos los codigos de variante regional que aparecen en el contenido
+ * embebido (hoy, solo "CH"). Se usa para armar la lista de variantes que el
+ * usuario puede desactivar en Ajustes, sin hardcodear cuales existen.
+ */
+fun variantesConocidas(contenido: Collection<ContenidoSemanal>): Set<String> =
+    contenido.filterIsInstance<Ficha>()
+        .flatMap { ficha -> listOfNotNull(ficha.variante) + ficha.vocabulario.mapNotNull { it.variante } }
+        .toSet()
+
+/**
+ * `null` si la ficha entera pertenece a una variante desactivada -- CLAUDE.md:
+ * "ofrecer un ajuste para desactivar ese contenido". Si no, la misma ficha
+ * sin los items de vocabulario de variantes desactivadas (una ficha puede
+ * traer items sueltos marcados sin ser, ella misma, de esa variante).
+ */
+fun Ficha.filtrarVariantesDesactivadas(desactivadas: Set<String>): Ficha? {
+    if (variante != null && variante in desactivadas) return null
+    if (desactivadas.isEmpty()) return this
+    val vocabularioFiltrado = vocabulario.filterNot { it.variante != null && it.variante in desactivadas }
+    return if (vocabularioFiltrado.size == vocabulario.size) this else copy(vocabulario = vocabularioFiltrado)
 }

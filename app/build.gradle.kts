@@ -66,6 +66,9 @@ dependencies {
     implementation("androidx.compose.material:material-icons-core")
     debugImplementation("androidx.compose.ui:ui-tooling")
 
+    implementation("androidx.glance:glance-appwidget:1.1.1")
+    implementation("androidx.glance:glance-material3:1.1.1")
+
     testImplementation("junit:junit:4.13.2")
     // Para testear la pantalla de Compose sin emulador: Robolectric la
     // renderiza en la JVM. Los tests en src/testDebug/ (ui-test-manifest es

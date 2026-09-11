@@ -1,11 +1,16 @@
 package io.github.percati.lenguapp.presentacion
 
+import io.github.percati.lenguapp.datos.parsearContenido
+import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Prioridad
 import io.github.percati.lenguapp.modelo.RedemittelItem
 import io.github.percati.lenguapp.modelo.VocabularioItem
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNull
+import org.junit.Assert.assertTrue
 import org.junit.Test
+import java.io.File
 
 class PresentacionTest {
 
@@ -85,5 +90,47 @@ class PresentacionTest {
     @Test
     fun `contraste cae a espanol si el idioma base no esta poblado`() {
         assertEquals("El espanol no...", mapOf("es" to "El espanol no...").contrasteParaMostrar(Idioma.DE))
+    }
+
+    // --- variantes regionales: Fase 4, "ofrecer un ajuste para desactivar ese contenido" ---
+
+    private fun fichaDeG01(): Ficha {
+        val carpeta = listOf(File("src/main/assets"), File("app/src/main/assets")).first { it.isDirectory }
+        return parsearContenido(File(carpeta, "contenido/DE-G01-B2-1.json").readText()) as Ficha
+    }
+
+    @Test
+    fun `variantesConocidas encuentra CH en los items de vocabulario, sin estar hardcodeado`() {
+        assertEquals(setOf("CH"), variantesConocidas(listOf(fichaDeG01())))
+    }
+
+    @Test
+    fun `sin variantes desactivadas la ficha vuelve igual`() {
+        val ficha = fichaDeG01()
+        assertEquals(ficha, ficha.filtrarVariantesDesactivadas(emptySet()))
+    }
+
+    @Test
+    fun `desactivar CH saca solo los items de vocabulario marcados CH`() {
+        val ficha = fichaDeG01()
+        val original = ficha.vocabulario.size
+        val filtrada = ficha.filtrarVariantesDesactivadas(setOf("CH"))!!
+        assertEquals(original - 3, filtrada.vocabulario.size)
+        assertTrue(filtrada.vocabulario.none { it.variante == "CH" })
+        // El resto del contenido no se toca.
+        assertEquals(ficha.titulo, filtrada.titulo)
+        assertEquals(ficha.descripcion, filtrada.descripcion)
+    }
+
+    @Test
+    fun `desactivar una variante que la ficha entera tiene la oculta del todo`() {
+        val fichaCH = fichaDeG01().copy(variante = "CH")
+        assertNull(fichaCH.filtrarVariantesDesactivadas(setOf("CH")))
+    }
+
+    @Test
+    fun `desactivar una variante que no aparece no cambia nada`() {
+        val ficha = fichaDeG01()
+        assertEquals(ficha, ficha.filtrarVariantesDesactivadas(setOf("AT")))
     }
 }
