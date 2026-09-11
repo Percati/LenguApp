@@ -217,10 +217,10 @@ class LenguAppAppTest {
         composeTestRule.onNodeWithText("Einstellungen").assertExists()
     }
 
-    // --- AJUSTES-FASE-7.md, bloque 0: solo hacia atras ---
+    // --- AJUSTES-FASE-8.md, bloque B.7: la flecha de avanzar se oculta solo en la semana actual ---
 
     @Test
-    fun `no hay boton de semana siguiente en la interfaz`() {
+    fun `en la semana actual no hay boton de avanzar, solo el de retroceder`() {
         composeTestRule.setContent {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
@@ -229,10 +229,10 @@ class LenguAppAppTest {
                 onGuardarAjustes = {},
             )
         }
-        // El de "semana anterior" sigue existiendo; solo se saco el de
-        // avanzar -- decision de producto, no que se haya roto algo.
+        // Arranca en la semana de hoy: ahi el tope es hoy, no hay adelante
+        // al que ir. El de "semana anterior" siempre existe.
         composeTestRule.onNodeWithContentDescription("< Semana").assertExists()
-        composeTestRule.onNodeWithContentDescription("Semana >").assertDoesNotExist()
+        composeTestRule.onNodeWithContentDescription("> Semana").assertDoesNotExist()
     }
 
     @Test
@@ -255,5 +255,33 @@ class LenguAppAppTest {
 
         val semanaIso = semanaIsoDe(LocalDate.now())
         composeTestRule.onNode(hasText("Semana ${semanaIso.semana} · ${semanaIso.anio} (Hoy)", substring = true)).assertExists()
+    }
+
+    @Test
+    fun `estando en una semana anterior reaparece el boton de avanzar, y avanzar tres veces vuelve exactamente a hoy`() {
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
+                idiomasConContenido = setOf(Idioma.DE),
+                resolver = ::resolverDePrueba,
+                onGuardarAjustes = {},
+            )
+        }
+        val atras = composeTestRule.onNodeWithContentDescription("< Semana")
+        atras.performClick()
+        atras.performClick()
+        atras.performClick()
+
+        composeTestRule.onNodeWithContentDescription("> Semana").assertExists()
+
+        val adelante = composeTestRule.onNodeWithContentDescription("> Semana")
+        adelante.performClick()
+        adelante.performClick()
+        adelante.performClick()
+
+        val semanaIso = semanaIsoDe(LocalDate.now())
+        composeTestRule.onNode(hasText("Semana ${semanaIso.semana} · ${semanaIso.anio} (Hoy)", substring = true)).assertExists()
+        // De vuelta en hoy, el tope: la flecha de avanzar desaparece otra vez.
+        composeTestRule.onNodeWithContentDescription("> Semana").assertDoesNotExist()
     }
 }

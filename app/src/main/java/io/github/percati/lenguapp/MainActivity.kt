@@ -16,6 +16,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -136,6 +137,7 @@ internal fun LenguAppApp(
                         resolver = resolver,
                         onIdiomaActivoElegido = { idiomaActivoElegido = it.name },
                         onSemanaAnterior = { fechaVistaIso = fechaVista.minusWeeks(1).toString() },
+                        onSemanaSiguiente = { fechaVistaIso = fechaVista.plusWeeks(1).toString() },
                         onHoy = { fechaVistaIso = LocalDate.now().toString() },
                         onAjustes = { navController.navigate(DESTINO_AJUSTES) },
                     )
@@ -164,6 +166,7 @@ private fun PantallaPrincipal(
     resolver: (Idioma, Nivel, LocalDate) -> ResultadoSemana,
     onIdiomaActivoElegido: (Idioma) -> Unit,
     onSemanaAnterior: () -> Unit,
+    onSemanaSiguiente: () -> Unit,
     onHoy: () -> Unit,
     onAjustes: () -> Unit,
 ) {
@@ -175,6 +178,7 @@ private fun PantallaPrincipal(
             esHoy = fechaVista == LocalDate.now(),
             idiomaAplicacion = idiomaAplicacion,
             onSemanaAnterior = onSemanaAnterior,
+            onSemanaSiguiente = onSemanaSiguiente,
             onHoy = onHoy,
             onAjustes = onAjustes,
         )
@@ -230,16 +234,12 @@ private fun ManejarDobleAtrasParaSalir(idiomaAplicacion: Idioma) {
  * cambia de posicion cuando el sufijo "(hoy)" aparece o desaparece, ni con
  * otro idioma, ni con la fuente del sistema al 150 %.
  *
- * Bloque 0: sin flecha de "semana siguiente". **Es una decision de
- * producto, no una limitacion tecnica**: ver el futuro invita a
- * adelantarse y hacer varias misiones en paralelo, lo contrario de un
- * sistema semanal. El Spacer del ancho de un IconButton mantiene el texto
- * centrado igual que si la flecha siguiera ahi. resolverContenidoDeLaSemana
- * (semana/ResolutorSemana.kt) sigue recibiendo la fecha como parametro y
- * no usa LocalDate.now() internamente -- sigue cubierta por sus tests,
- * incluidos los tres casos de borde ISO -- asi que reactivar la
- * navegacion hacia adelante en el futuro es agregar de vuelta un boton
- * que llame a `fechaVista.plusWeeks(1)`, no rehacer nada.
+ * AJUSTES-FASE-8.md, bloque B.7: la flecha de "semana siguiente" se oculta
+ * **solo** en la semana en curso, no siempre -- la instruccion original de
+ * la Fase 7 era ambigua, no la decision. El tope es hoy, nunca el futuro:
+ * estando atras se puede avanzar hasta esa semana y ahi la flecha
+ * desaparece. Cuando esta oculta, un Spacer del mismo ancho que el
+ * IconButton mantiene el texto centrado.
  */
 @Composable
 private fun BarraNavegacion(
@@ -247,6 +247,7 @@ private fun BarraNavegacion(
     esHoy: Boolean,
     idiomaAplicacion: Idioma,
     onSemanaAnterior: () -> Unit,
+    onSemanaSiguiente: () -> Unit,
     onHoy: () -> Unit,
     onAjustes: () -> Unit,
 ) {
@@ -270,7 +271,17 @@ private fun BarraNavegacion(
                 textAlign = TextAlign.Center,
                 modifier = Modifier.weight(1f),
             )
-            Spacer(Modifier.size(48.dp))
+            if (esHoy) {
+                Spacer(Modifier.size(48.dp))
+            } else {
+                IconButton(onClick = onSemanaSiguiente) {
+                    Icon(
+                        Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                        contentDescription = "> $textoSemana",
+                        tint = MaterialTheme.colorScheme.primary,
+                    )
+                }
+            }
         }
         Row(
             modifier = Modifier.fillMaxWidth(),
