@@ -134,7 +134,7 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
             ficha.notas.forEach { Vinieta(it) }
         }
 
-        ficha.contraste.contrasteParaMostrar(idiomaBase)?.let { texto ->
+        ficha.contraste.contrasteParaMostrar(ficha.idioma, idiomaBase)?.let { texto ->
             Seccion(etiquetaContraste(ficha.idioma, idiomaBase)) {
                 Text(textoConMarcado(texto), style = MaterialTheme.typography.bodyMedium)
             }

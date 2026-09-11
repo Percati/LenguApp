@@ -23,9 +23,20 @@ private fun Map<String, String>.valorParaIdiomaBase(idiomaBase: Idioma): String?
 fun VocabularioItem.traduccionParaMostrar(idiomaBase: Idioma): String =
     traducciones.valorParaIdiomaBase(idiomaBase) ?: SIN_TRADUCCION
 
-/** `contraste` es opcional y solo "es" esta poblado en 2026; `null` significa que la seccion no se muestra. */
-fun Map<String, String>?.contrasteParaMostrar(idiomaBase: Idioma): String? =
-    this?.valorParaIdiomaBase(idiomaBase)
+/**
+ * `contraste` es opcional y solo "es" esta poblado en 2026. A diferencia de
+ * las glosas, ACA no cae a español (AJUSTES-FASE-8.md, B.6): el titulo de
+ * la seccion anuncia el idioma base ("Contraste con el aleman"), y mostrar
+ * la prosa en español bajo ese titulo afirmaria algo falso -- no es un
+ * texto que "sigue siendo util en otro idioma" como una glosa, es una
+ * observacion especifica de un idioma. `null` (clave ausente, o el idioma
+ * que se aprende coincide con el base -- no hay contraste posible contra
+ * si mismo) significa que la seccion entera se oculta.
+ */
+fun Map<String, String>?.contrasteParaMostrar(idiomaAprendido: Idioma, idiomaBase: Idioma): String? {
+    if (idiomaAprendido == idiomaBase) return null
+    return this?.get(idiomaBase.name.lowercase())?.takeIf { it.isNotBlank() }
+}
 
 /**
  * En Redemittel un valor `null` explicito no es "todavia no traducido": es
