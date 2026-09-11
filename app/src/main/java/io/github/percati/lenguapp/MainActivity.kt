@@ -123,7 +123,7 @@ internal fun LenguAppApp(
         onGuardarAjustes(nuevos)
     }
 
-    TemaLenguApp {
+    TemaLenguApp(familiaTema = ajustes.familiaTema, modoTema = ajustes.modoTema) {
         Surface(modifier = Modifier.fillMaxSize()) {
             NavHost(navController = navController, startDestination = DESTINO_PRINCIPAL) {
                 composable(DESTINO_PRINCIPAL) {
@@ -253,8 +253,15 @@ private fun BarraNavegacion(
     val textoSemana = etiquetaSemana(idiomaAplicacion)
     Column(modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp)) {
         Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+            // AJUSTES-FASE-7.md, bloque 1: el acento se reserva para lo
+            // accionable -- flechas de navegacion incluidas -- asi que se
+            // tinta explicito, no se deja el color de contenido ambiente.
             IconButton(onClick = onSemanaAnterior) {
-                Icon(Icons.AutoMirrored.Filled.KeyboardArrowLeft, contentDescription = "< $textoSemana")
+                Icon(
+                    Icons.AutoMirrored.Filled.KeyboardArrowLeft,
+                    contentDescription = "< $textoSemana",
+                    tint = MaterialTheme.colorScheme.primary,
+                )
             }
             Text(
                 "$textoSemana ${semanaIso.semana} · ${semanaIso.anio}" +

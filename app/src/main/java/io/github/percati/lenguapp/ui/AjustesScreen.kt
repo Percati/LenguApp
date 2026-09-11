@@ -30,7 +30,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import io.github.percati.lenguapp.modelo.Ajustes
+import io.github.percati.lenguapp.modelo.FamiliaTema
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.ModoTema
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.presentacion.avisoGlosasSoloEnEspanol
 
@@ -82,6 +84,16 @@ fun AjustesScreen(
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
+
+        SelectorFamiliaTema(
+            familiaElegida = ajustes.familiaTema,
+            onElegir = { onAjustesCambiados(ajustes.copy(familiaTema = it)) },
+        )
+
+        SelectorModoTema(
+            modoElegido = ajustes.modoTema,
+            onElegir = { onAjustesCambiados(ajustes.copy(modoTema = it)) },
+        )
     }
 }
 
@@ -190,6 +202,59 @@ private fun SelectorIdiomaAplicacion(
                     selected = !idiomaSegunSistema && idioma == idiomaElegido,
                     onClick = { onElegirIdioma(idioma) },
                     label = { Text(idioma.name) },
+                )
+            }
+        }
+    }
+}
+
+private fun nombreVisible(familia: FamiliaTema): String = when (familia) {
+    FamiliaTema.ACADEMIA -> "Academia"
+    FamiliaTema.EDITORIAL -> "Editorial"
+}
+
+private fun nombreVisible(modo: ModoTema): String = when (modo) {
+    ModoTema.CLARO -> "Claro"
+    ModoTema.OSCURO -> "Oscuro"
+    ModoTema.SEGUN_SISTEMA -> "Según el sistema"
+}
+
+/**
+ * Familia de tema y modo son dos ajustes separados, no uno --
+ * AJUSTES-FASE-7.md, bloque 1.
+ */
+@Composable
+private fun SelectorFamiliaTema(familiaElegida: FamiliaTema, onElegir: (FamiliaTema) -> Unit) {
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text("Estilo visual", style = MaterialTheme.typography.titleMedium)
+        Row(
+            modifier = Modifier.horizontalScroll(rememberScrollState()),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            FamiliaTema.entries.forEach { familia ->
+                FilterChip(
+                    selected = familia == familiaElegida,
+                    onClick = { onElegir(familia) },
+                    label = { Text(nombreVisible(familia)) },
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun SelectorModoTema(modoElegido: ModoTema, onElegir: (ModoTema) -> Unit) {
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text("Modo", style = MaterialTheme.typography.titleMedium)
+        Row(
+            modifier = Modifier.horizontalScroll(rememberScrollState()),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            ModoTema.entries.forEach { modo ->
+                FilterChip(
+                    selected = modo == modoElegido,
+                    onClick = { onElegir(modo) },
+                    label = { Text(nombreVisible(modo)) },
                 )
             }
         }

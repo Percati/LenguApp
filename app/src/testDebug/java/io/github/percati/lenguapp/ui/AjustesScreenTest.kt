@@ -7,14 +7,20 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.longClick
+import androidx.compose.ui.test.hasAnyChild
+import androidx.compose.ui.test.hasScrollAction
+import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onLast
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTouchInput
 import io.github.percati.lenguapp.modelo.Ajustes
+import io.github.percati.lenguapp.modelo.FamiliaTema
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.ModoTema
 import io.github.percati.lenguapp.modelo.Nivel
 import org.junit.Assert.assertEquals
 import org.junit.Rule
@@ -123,5 +129,39 @@ class AjustesScreenTest {
         composeTestRule.onNodeWithText(
             "Las traducciones de vocabulario todavía solo existen en español; se van a mostrar en español mientras tanto.",
         ).assertExists()
+    }
+
+    // --- AJUSTES-FASE-7.md, bloque 1: familia de tema y modo son dos ajustes separados ---
+    //
+    // performScrollTo() solo escrolea el ancestro scrollable mas cercano. Los
+    // chips estan en una Row con su propio scroll horizontal, anidada en el
+    // scroll vertical de la pantalla: pedirle a un chip que se escrolee a la
+    // vista solo mueve el scroll horizontal (que ya lo contiene) y nunca
+    // llega al vertical. Por eso el escroleo se le pide a la Row -- ahi el
+    // ancestro scrollable mas cercano es el vertical de la pantalla.
+    private fun filaConChip(texto: String) = composeTestRule.onNode(hasScrollAction() and hasAnyChild(hasText(texto)))
+
+    @Test
+    fun `elegir una familia de tema la escribe en los ajustes, sin tocar el modo`() {
+        val actual = montar(Ajustes(familiaTema = FamiliaTema.ACADEMIA, modoTema = ModoTema.OSCURO))
+
+        filaConChip("Editorial").performScrollTo()
+        composeTestRule.onNodeWithText("Editorial").performClick()
+
+        val ajustes = actual()
+        assertEquals(FamiliaTema.EDITORIAL, ajustes.familiaTema)
+        assertEquals(ModoTema.OSCURO, ajustes.modoTema)
+    }
+
+    @Test
+    fun `elegir un modo de tema lo escribe en los ajustes, sin tocar la familia`() {
+        val actual = montar(Ajustes(familiaTema = FamiliaTema.EDITORIAL, modoTema = ModoTema.SEGUN_SISTEMA))
+
+        filaConChip("Oscuro").performScrollTo()
+        composeTestRule.onNodeWithText("Oscuro").performClick()
+
+        val ajustes = actual()
+        assertEquals(FamiliaTema.EDITORIAL, ajustes.familiaTema)
+        assertEquals(ModoTema.OSCURO, ajustes.modoTema)
     }
 }

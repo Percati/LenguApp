@@ -27,4 +27,17 @@ data class Ajustes(
     val idiomaBase: Idioma = Idioma.ES,
     val idiomaInterfaz: Idioma = Idioma.ES,
     val idiomaSegunSistema: Boolean = false,
+    val familiaTema: FamiliaTema = FamiliaTema.ACADEMIA,
+    val modoTema: ModoTema = ModoTema.SEGUN_SISTEMA,
 )
+
+/** AJUSTES-FASE-7.md, bloque 1: dos ajustes, no uno -- familia y modo se eligen por separado. */
+enum class FamiliaTema { ACADEMIA, EDITORIAL }
+
+/**
+ * `SEGUN_SISTEMA` lee el modo claro/oscuro del dispositivo -- misma clase de
+ * lectura que el idioma del sistema, ya enmendada en CLAUDE.md regla dura
+ * #2 (AJUSTES-FASE-6.md, bloque E): configuracion local, nada sale del
+ * dispositivo.
+ */
+enum class ModoTema { CLARO, OSCURO, SEGUN_SISTEMA }

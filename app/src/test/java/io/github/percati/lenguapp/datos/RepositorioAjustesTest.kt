@@ -3,7 +3,9 @@ package io.github.percati.lenguapp.datos
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
 import io.github.percati.lenguapp.modelo.Ajustes
+import io.github.percati.lenguapp.modelo.FamiliaTema
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.ModoTema
 import io.github.percati.lenguapp.modelo.Nivel
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
@@ -85,6 +87,27 @@ class RepositorioAjustesTest {
         assertNull(prefs.getString("idioma_aprendido", null))
         assertNull(prefs.getString("nivel", null))
         assertEquals(mapOf(Idioma.EN to Nivel.C1), cargarAjustes(contexto).idiomasAprendidos)
+    }
+
+    @Test
+    fun `guardar y cargar preserva familiaTema y modoTema, es preferencia igual que el idioma`() {
+        val contexto = contexto()
+        val ajustes = Ajustes(familiaTema = FamiliaTema.EDITORIAL, modoTema = ModoTema.OSCURO)
+        guardarAjustes(contexto, ajustes)
+        assertEquals(ajustes, cargarAjustes(contexto))
+    }
+
+    @Test
+    fun `migracion- el esquema viejo sin claves de tema cae a Academia y Segun el sistema`() {
+        val contexto = contexto()
+        contexto.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit()
+            .putString("idioma_aprendido", "DE")
+            .apply()
+
+        val ajustes = cargarAjustes(contexto)
+
+        assertEquals(FamiliaTema.ACADEMIA, ajustes.familiaTema)
+        assertEquals(ModoTema.SEGUN_SISTEMA, ajustes.modoTema)
     }
 
     @Test
