@@ -44,6 +44,18 @@ import io.github.percati.lenguapp.semana.RazonSinContenido
 import io.github.percati.lenguapp.semana.ResultadoSemana
 
 /**
+ * AJUSTES-FASE-8.md, B.2: separacion entre secciones (Beispiele, Hinweise,
+ * Kontrast, Typische Fehler...) resuelta con espacio, no con lineas. La
+ * Fase 5 ya habia pedido menos reglas divisorias y mas contraste
+ * tipografico; el resultado quedo demasiado plano. Este valor es bastante
+ * mayor que el espaciado dentro de una seccion (Seccion() usa 8.dp entre su
+ * titulo y el cuerpo, y entre parrafos/vinetas del mismo cuerpo) para que el
+ * corte entre secciones se note sin una regla. Un separador tenue en color
+ * secundario queda como ultimo recurso si esto no alcanza -- no aplicado.
+ */
+private val ESPACIO_ENTRE_SECCIONES = 32.dp
+
+/**
  * Punto de entrada de la pantalla unica: la Fase 4 agrega navegacion y
  * ajustes, pero el "no hay nada para esta celda de la matriz" es el caso
  * normal desde ahora (ver CLAUDE.md) y no puede dejar la pantalla en blanco
@@ -102,7 +114,7 @@ fun ContenidoSemanalScreen(
 private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(20.dp),
+        verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
             ficha.variante?.let { EtiquetaVariante(it) }
@@ -185,7 +197,7 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
 private fun SemanaEspecialContenido(especial: SemanaEspecial, modifier: Modifier = Modifier) = SelectionContainer {
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(20.dp),
+        verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
             Text(especial.titulo, style = MaterialTheme.typography.headlineSmall)
@@ -219,13 +231,15 @@ private fun SemanaEspecialContenido(especial: SemanaEspecial, modifier: Modifier
 
 /**
  * Jerarquia tipografica en vez de lineas divisorias -- AJUSTES-FASE-5.md,
- * B4.3: titleLarge contra bodyMedium/bodyLarge ya distingue titulo de
- * cuerpo sin necesitar una regla horizontal.
+ * B4.3, reforzado en AJUSTES-FASE-8.md, B.2: titleLarge ya distingue titulo
+ * de cuerpo por tamaño, pero por defecto tiene el mismo peso (Normal) que
+ * bodyMedium/bodyLarge. FontWeight.Bold suma el segundo eje de contraste
+ * que pidio B.2, antes de considerar un separador.
  */
 @Composable
 private fun Seccion(titulo: String, contenido: @Composable () -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Text(titulo, style = MaterialTheme.typography.titleLarge)
+        Text(titulo, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
         contenido()
     }
 }

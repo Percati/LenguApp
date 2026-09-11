@@ -6,9 +6,13 @@ import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.unit.dp
 import io.github.percati.lenguapp.datos.parsearContenido
 import io.github.percati.lenguapp.modelo.FamiliaTema
@@ -68,15 +72,23 @@ class TemaSatzbauPantallazoTest(
 
         composeTestRule.setContent {
             TemaLenguApp(familiaTema = familiaTema, modoTema = modoTema) {
-                // MaterialTheme no pinta fondo por si solo: el Surface es lo
-                // que aplica colorScheme.background, igual que en MainActivity.kt.
-                Surface(modifier = Modifier.size(ANCHO_DP.dp, ALTO_DP.dp)) {
+                // Surface() sin `color` pinta con colorScheme.surface, no
+                // con colorScheme.background -- ver AJUSTES-FASE-8.md, B.1.
+                // Este `color` explicito replica MainActivity.kt de verdad
+                // (antes de B.1 este test tenia el mismo error).
+                Surface(modifier = Modifier.size(ANCHO_DP.dp, ALTO_DP.dp), color = MaterialTheme.colorScheme.background) {
                     Box {
                         ContenidoSemanalScreen(contenido, idiomaBase = Idioma.ES)
                     }
                 }
             }
         }
+        composeTestRule.waitForIdle()
+
+        // Expandir el cuadro de referencia: es donde vive el destaque del
+        // verbo, y tambien el caso de prueba de AJUSTES-FASE-8.md, B.1 (las
+        // tarjetas necesitan contraste contra el fondo, no solo existir).
+        composeTestRule.onNode(hasText("Stellung des finiten Verbs", substring = true)).performScrollTo().performClick()
         composeTestRule.waitForIdle()
 
         guardarPantallazo(nombreTema)

@@ -17,6 +17,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
@@ -44,6 +45,7 @@ fun SeccionPlegable(
             Text(
                 text = titulo,
                 style = MaterialTheme.typography.titleLarge,
+                fontWeight = FontWeight.Bold,
                 modifier = Modifier.weight(1f),
             )
             Icon(

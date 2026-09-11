@@ -125,7 +125,13 @@ internal fun LenguAppApp(
     }
 
     TemaLenguApp(familiaTema = ajustes.familiaTema, modoTema = ajustes.modoTema) {
-        Surface(modifier = Modifier.fillMaxSize()) {
+        // AJUSTES-FASE-8.md, B.1: Surface() sin `color` pinta con
+        // colorScheme.surface (el 30% de la regla 60-30-10), no con
+        // colorScheme.background (el 60%) -- por eso las tarjetas del
+        // cuadro de referencia y las insignias, que usan surfaceVariant
+        // (mapeado a la misma superficie), se volvian invisibles contra el
+        // fondo de la pantalla. El fondo de la app tiene que ser `fondo`.
+        Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
             NavHost(navController = navController, startDestination = DESTINO_PRINCIPAL) {
                 composable(DESTINO_PRINCIPAL) {
                     PantallaPrincipal(
