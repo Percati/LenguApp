@@ -57,6 +57,16 @@ Estado a septiembre 2026, semana ISO 37. Ordenados por lo que bloquea, no por an
 | C12 | ~~Transcribir el IELTS 6.5~~ | **CERRADO.** Transcrito a Excel e integrado: 547 lemas, 1.021 multipalabra en la base. Primera vez que el verificador inglés reconoce expresiones idiomáticas | Hecho |
 | C13 | Colocaciones del registro profesional inglés (*sign off on*, *put up with*, *pushback*) | Ninguna de las nueve fuentes las trae. Probado con CEFR-J, Oxford, Cambridge First, Cambridge Advanced e IELTS. Conclusión: **ese registro no está en ninguna lista publicada**. Solo se cerraría con un corpus de inglés profesional | Abierto, probablemente permanente |
 
+## C-quater. Internacionalización
+
+| # | Pendiente | Volumen | Estado |
+|---|---|---|---|
+| C17 | ~~Traducir el chrome de la interfaz~~ | ~30 claves × 6 idiomas | **Tabla resuelta** en `AJUSTES-FASE-9.md`, bloque B. Falta implementarla |
+| C18 | Sacar el material contrastivo de `errores` y `notas` | 6 entradas identificadas, más las que lo asuman sin nombrarlo | Abierto |
+| C19 | Glosas de vocabulario y expresiones en inglés | **622 glosas**. Único idioma base validable además del español | Recomendado como siguiente paso |
+| C20 | Glosas en portugués, italiano y francés | 1.866 glosas. No validables | Diferido |
+| C21 | Audio | **720 textos, 2.156 clips ≈ 52 MB.** Manifiesto generado | Listo para grabar |
+
 ## C-ter. Traducciones y contraste
 
 | # | Pendiente | Volumen | Estado |
