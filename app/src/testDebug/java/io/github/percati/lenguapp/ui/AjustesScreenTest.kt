@@ -100,7 +100,9 @@ class AjustesScreenTest {
     fun `elegir Según el sistema activa idiomaSegunSistema`() {
         val actual = montar(Ajustes(idiomaSegunSistema = false))
 
-        composeTestRule.onNodeWithText("Según el sistema").performClick()
+        // "Según el sistema" aparece dos veces (idioma de la aplicacion y
+        // modo de tema): la primera es el selector de idioma.
+        composeTestRule.onAllNodesWithText("Según el sistema").onFirst().performClick()
 
         assertEquals(true, actual().idiomaSegunSistema)
     }

@@ -13,7 +13,9 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
 import io.github.percati.lenguapp.datos.parsearContenido
+import io.github.percati.lenguapp.modelo.FamiliaTema
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.ModoTema
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -65,7 +67,7 @@ class ContenidoSemanalScreenRenderTest(private val nombreArchivo: String) {
         val contenido = parsearContenido(File(carpetaAssets(), "contenido/$nombreArchivo").readText())
 
         composeTestRule.setContent {
-            TemaLenguApp {
+            TemaLenguApp(familiaTema = FamiliaTema.ACADEMIA, modoTema = ModoTema.CLARO) {
                 CompositionLocalProvider(
                     LocalDensity provides Density(LocalDensity.current.density, fontScale = 1.5f),
                 ) {
