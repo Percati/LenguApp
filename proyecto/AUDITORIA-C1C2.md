@@ -103,6 +103,16 @@ Dos archivos que estaban y ya no: la wordlist 1.6 de CEFR-J y la lista de B1 Pre
 
 ---
 
+## 3bis. IELTS Vocabulary 6.5 — útil, pero no integrable
+
+El PDF es un **escaneo sin capa de texto**, como los otros ocho. Lo leí como imagen para ver qué contiene, y vale la pena: está organizado por unidad y clase de palabra, y trae una **sección «Phrase»** con expresiones de varias palabras — *pressed for time*, *in the blink of an eye*, *in next to no time*, *have time on your hands*, *there aren't enough hours in the day*. **Ninguna de las ocho fuentes actuales trae eso.**
+
+**Por qué no lo integré.** Transcribir cinco páginas de escaneo a mano significa meter unos 600 ítems sin verificar en la base que existe precisamente para verificar. Un error de transcripción silencioso en el verificador es peor que no tener la fuente: haría pasar como C1 algo que no lo es, y nadie se daría cuenta.
+
+**Cómo aprovecharlo.** Subirlo con capa de texto, igual que los otros ocho. Si no aparece versión con texto, la alternativa razonable es transcribir **solo la sección Phrase** — son unas decenas de ítems en vez de 600, revisables de un vistazo, y es la parte que aporta lo que no tenemos.
+
+**Una advertencia sobre su nivel.** La banda 6.5 de IELTS cae exactamente en el límite B2/C1: Cambridge mapea 5.5–6.5 a B2 y 6.5–7 a C1. No se puede asignar limpio a un nivel, así que su etiqueta correcta es la doble `B2/C1`. El constructor ya soporta ese mecanismo. Queda registrado en `fuentes_en.json` con estado `PENDIENTE`.
+
 ## 4. Lo que no se puede concluir todavía
 
 - **Inglés C2**: sin `Objective Proficiency` legible, no hay fuente. El banco mantiene sus 17 skills de C2 sin contraste.

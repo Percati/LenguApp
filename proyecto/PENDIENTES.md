@@ -49,6 +49,13 @@ Estado a septiembre 2026, semana ISO 37. Ordenados por lo que bloquea, no por an
 | D3 | Publicación en F-Droid con cero Anti-Features | Sin permiso INTERNET, sin Play Services, build reproducible, informe de Exodus |
 | D4 | Audio con Piper | **Script escrito** (`tools/generar_audio.py`), con `--dry-run` para estimar antes de generar. Falta que instales Piper y bajes las voces. 90 clips en el piloto, ~2 MB |
 
+## C-bis. Interfaz pendiente
+
+| # | Pendiente | Detalle | Estado |
+|---|---|---|---|
+| C11 | Traducir el *chrome* de la interfaz a los seis idiomas | Barra de navegación, mensajes de "sin contenido", etiquetas de ajustes. Hoy están en un solo idioma. Code lo señaló al cerrar la Fase 6 y **tuvo razón en no asumirlo**: traducir a seis idiomas sin revisor nativo repite el problema que ya tuvimos con el contenido | **Diferido a propósito.** Con un solo usuario no molesta |
+| C12 | Transcribir la sección *Phrase* del IELTS 6.5 | Única fuente de expresiones multipalabra. Requiere versión con capa de texto | Abierto |
+
 ## D-bis. Contenido pendiente por el cambio de variantes
 
 | Qué | Detalle |
