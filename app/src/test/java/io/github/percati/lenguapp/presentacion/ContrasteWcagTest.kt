@@ -39,17 +39,17 @@ class ContrasteWcagTest {
         assertTrue(cumpleAaTexto("#94A3B8", "#1E293B"))
     }
 
-    // --- Hallazgo no pedido explicitamente, pero que aparecio al medir todos los pares: reportado, no corregido en silencio ---
+    // --- Hallazgo del Bloque 1 (el #708090 original no cumplia AA), corregido en el Bloque 2 con #5C6874 ---
 
     @Test
-    fun `Editorial claro- el color Secundario de la paleta NO cumple AA como texto sobre su propia superficie`() {
-        // #708090 es el "Secundario" de la familia Editorial (ver
-        // AJUSTES-FASE-7.md). No es ninguno de los dos pares que se pidio
-        // medir, pero surgio al barrer los seis roles de los cuatro temas:
-        // ver el resumen en el mensaje de revision del Bloque 1.
-        val sobreSuperficie = contrasteWcag("#708090", "#F4F1EA")
-        val sobreFondo = contrasteWcag("#708090", "#FDFBF7")
-        assertTrue("se esperaba que fallara AA (documentado): $sobreSuperficie", sobreSuperficie < CONTRASTE_MINIMO_AA_TEXTO)
-        assertTrue("se esperaba que fallara AA (documentado): $sobreFondo", sobreFondo < CONTRASTE_MINIMO_AA_TEXTO)
+    fun `Editorial claro- el color Secundario corregido, 5C6874, cumple AA como texto sobre su propia superficie y fondo`() {
+        // #708090 (el Secundario original) no cumplia AA -- ver el commit
+        // que documento el hallazgo. #5C6874 lo reemplaza en ui/Tema.kt.
+        val sobreSuperficie = contrasteWcag("#5C6874", "#F4F1EA")
+        val sobreFondo = contrasteWcag("#5C6874", "#FDFBF7")
+        assertTrue("esperaba >= 4.5, fue $sobreSuperficie", sobreSuperficie >= CONTRASTE_MINIMO_AA_TEXTO)
+        assertTrue("esperaba >= 4.5, fue $sobreFondo", sobreFondo >= CONTRASTE_MINIMO_AA_TEXTO)
+        assertEquals(5.05, sobreSuperficie, 0.01)
+        assertEquals(5.51, sobreFondo, 0.01)
     }
 }
