@@ -9,12 +9,13 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowLeft
-import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -136,7 +137,6 @@ internal fun LenguAppApp(
                         onIdiomaActivoElegido = { idiomaActivoElegido = it.name },
                         onSemanaAnterior = { fechaVistaIso = fechaVista.minusWeeks(1).toString() },
                         onHoy = { fechaVistaIso = LocalDate.now().toString() },
-                        onSemanaSiguiente = { fechaVistaIso = fechaVista.plusWeeks(1).toString() },
                         onAjustes = { navController.navigate(DESTINO_AJUSTES) },
                     )
                 }
@@ -165,7 +165,6 @@ private fun PantallaPrincipal(
     onIdiomaActivoElegido: (Idioma) -> Unit,
     onSemanaAnterior: () -> Unit,
     onHoy: () -> Unit,
-    onSemanaSiguiente: () -> Unit,
     onAjustes: () -> Unit,
 ) {
     ManejarDobleAtrasParaSalir(idiomaAplicacion)
@@ -177,7 +176,6 @@ private fun PantallaPrincipal(
             idiomaAplicacion = idiomaAplicacion,
             onSemanaAnterior = onSemanaAnterior,
             onHoy = onHoy,
-            onSemanaSiguiente = onSemanaSiguiente,
             onAjustes = onAjustes,
         )
 
@@ -225,13 +223,23 @@ private fun ManejarDobleAtrasParaSalir(idiomaAplicacion: Idioma) {
 }
 
 /**
- * AJUSTES-FASE-7.md, bloque 2.1: el boton de Ajustes se movio a su propia
- * fila, fuera de la zona del encabezado. La fila de la semana tiene solo
- * tres elementos con las flechas de ancho fijo (iconos, no texto: no varian
- * con el idioma ni con el escalado de fuente) y el texto del medio con
- * `weight(1f)`, asi que ninguno de los dos botones cambia de posicion
- * cuando el sufijo "(hoy)" aparece o desaparece, ni con otro idioma, ni con
- * la fuente del sistema al 150 %.
+ * AJUSTES-FASE-7.md, bloque 2.1: el boton de Ajustes esta en su propia
+ * fila, fuera de la zona del encabezado. La fila de la semana tiene la
+ * flecha de ancho fijo (icono, no texto: no varia con el idioma ni con el
+ * escalado de fuente) y el texto con `weight(1f)`, asi que el boton no
+ * cambia de posicion cuando el sufijo "(hoy)" aparece o desaparece, ni con
+ * otro idioma, ni con la fuente del sistema al 150 %.
+ *
+ * Bloque 0: sin flecha de "semana siguiente". **Es una decision de
+ * producto, no una limitacion tecnica**: ver el futuro invita a
+ * adelantarse y hacer varias misiones en paralelo, lo contrario de un
+ * sistema semanal. El Spacer del ancho de un IconButton mantiene el texto
+ * centrado igual que si la flecha siguiera ahi. resolverContenidoDeLaSemana
+ * (semana/ResolutorSemana.kt) sigue recibiendo la fecha como parametro y
+ * no usa LocalDate.now() internamente -- sigue cubierta por sus tests,
+ * incluidos los tres casos de borde ISO -- asi que reactivar la
+ * navegacion hacia adelante en el futuro es agregar de vuelta un boton
+ * que llame a `fechaVista.plusWeeks(1)`, no rehacer nada.
  */
 @Composable
 private fun BarraNavegacion(
@@ -240,7 +248,6 @@ private fun BarraNavegacion(
     idiomaAplicacion: Idioma,
     onSemanaAnterior: () -> Unit,
     onHoy: () -> Unit,
-    onSemanaSiguiente: () -> Unit,
     onAjustes: () -> Unit,
 ) {
     val textoSemana = etiquetaSemana(idiomaAplicacion)
@@ -256,11 +263,7 @@ private fun BarraNavegacion(
                 textAlign = TextAlign.Center,
                 modifier = Modifier.weight(1f),
             )
-            // Bloque 0 (AJUSTES-FASE-7.md) saca este boton de la interfaz;
-            // por ahora, en el Bloque 2, sigue activo.
-            IconButton(onClick = onSemanaSiguiente) {
-                Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = "$textoSemana >")
-            }
+            Spacer(Modifier.size(48.dp))
         }
         Row(
             modifier = Modifier.fillMaxWidth(),

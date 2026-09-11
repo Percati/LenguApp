@@ -5,6 +5,7 @@ import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onFirst
+import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import io.github.percati.lenguapp.datos.parsearCalendario
@@ -214,5 +215,45 @@ class LenguAppAppTest {
         composeTestRule.onAllNodesWithText("Woche", substring = true).onFirst().assertExists()
         composeTestRule.onAllNodesWithText("Heute", substring = true).onFirst().assertExists()
         composeTestRule.onNodeWithText("Einstellungen").assertExists()
+    }
+
+    // --- AJUSTES-FASE-7.md, bloque 0: solo hacia atras ---
+
+    @Test
+    fun `no hay boton de semana siguiente en la interfaz`() {
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
+                idiomasConContenido = setOf(Idioma.DE),
+                resolver = ::resolverDePrueba,
+                onGuardarAjustes = {},
+            )
+        }
+        // El de "semana anterior" sigue existiendo; solo se saco el de
+        // avanzar -- decision de producto, no que se haya roto algo.
+        composeTestRule.onNodeWithContentDescription("< Semana").assertExists()
+        composeTestRule.onNodeWithContentDescription("Semana >").assertDoesNotExist()
+    }
+
+    @Test
+    fun `Hoy vuelve directo a la semana de hoy desde varias semanas atras, no solo una hacia adelante`() {
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
+                idiomasConContenido = setOf(Idioma.DE),
+                resolver = ::resolverDePrueba,
+                onGuardarAjustes = {},
+            )
+        }
+        val atras = composeTestRule.onNodeWithContentDescription("< Semana")
+        atras.performClick()
+        atras.performClick()
+        atras.performClick()
+        composeTestRule.onNode(hasText("(Hoy)", substring = true)).assertDoesNotExist()
+
+        composeTestRule.onNodeWithText("Hoy").performClick()
+
+        val semanaIso = semanaIsoDe(LocalDate.now())
+        composeTestRule.onNode(hasText("Semana ${semanaIso.semana} · ${semanaIso.anio} (Hoy)", substring = true)).assertExists()
     }
 }
