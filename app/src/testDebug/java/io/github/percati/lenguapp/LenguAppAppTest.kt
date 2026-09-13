@@ -21,6 +21,7 @@ import io.github.percati.lenguapp.semana.resolverContenidoDeLaSemana
 import io.github.percati.lenguapp.semana.semanaIsoDe
 import io.github.percati.lenguapp.ui.mensajeDobleAtrasParaSalir
 import io.github.percati.lenguapp.ui.mensajeSinContenidoSemana
+import io.github.percati.lenguapp.ui.mensajeSinContenidoTitulo
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
@@ -137,6 +138,26 @@ class LenguAppAppTest {
             )
         }
         composeTestRule.onNode(hasText(mensajeSinContenidoSemana(Idioma.ES, 2026), substring = true)).assertExists()
+    }
+
+    // --- AJUSTES-FASE-9.md, bloque B: el mensaje de "sin contenido" tambien se traduce ---
+
+    @Test
+    fun `el mensaje de sin contenido sigue el idioma de la aplicacion, no queda fijo en espanol`() {
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(
+                    idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2),
+                    idiomaBase = Idioma.IT,
+                    idiomaInterfaz = Idioma.IT,
+                ),
+                idiomasConContenido = setOf(Idioma.DE),
+                resolver = { idioma, nivel, _ -> resolverDePrueba(idioma, nivel, LocalDate.of(2026, 2, 16)) }, // semana ISO 8
+                onGuardarAjustes = {},
+            )
+        }
+        composeTestRule.onNode(hasText(mensajeSinContenidoTitulo(Idioma.IT), substring = true)).assertExists()
+        composeTestRule.onNode(hasText(mensajeSinContenidoSemana(Idioma.IT, 2026), substring = true)).assertExists()
     }
 
     // --- AJUSTES-FASE-7.md, bloque 2.4: Ajustes es un destino real, no una bandera ---

@@ -23,9 +23,15 @@ import io.github.percati.lenguapp.MainActivity
 import io.github.percati.lenguapp.datos.cargarAjustes
 import io.github.percati.lenguapp.datos.resolverSemana
 import io.github.percati.lenguapp.modelo.Ficha
+import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.SemanaEspecial
+import io.github.percati.lenguapp.presentacion.idiomaAplicacionEfectivo
 import io.github.percati.lenguapp.semana.RazonSinContenido
 import io.github.percati.lenguapp.semana.ResultadoSemana
+import io.github.percati.lenguapp.ui.mensajeSinCalendario
+import io.github.percati.lenguapp.ui.mensajeSinContenidoNivel
+import io.github.percati.lenguapp.ui.mensajeSinContenidoSemana
+import java.util.Locale
 
 /**
  * Modo revista tambien en el widget: no guarda nada propio, lee los mismos
@@ -45,17 +51,22 @@ class SemanaGlanceWidget : GlanceAppWidget() {
         val resultado = primerIdioma?.let { idioma ->
             resolverSemana(context, idioma, ajustes.idiomasAprendidos.getValue(idioma))
         }
+        // Misma resolucion que MainActivity.kt: "segun el sistema" solo lee
+        // el idioma del dispositivo si el usuario activo esa opcion
+        // (CLAUDE.md, regla dura #2 enmendada).
+        val codigoIdiomaSistema = if (ajustes.idiomaSegunSistema) Locale.getDefault().language else null
+        val idiomaInterfaz = idiomaAplicacionEfectivo(ajustes, codigoIdiomaSistema)
 
         provideContent {
             GlanceTheme {
-                ContenidoWidget(resultado)
+                ContenidoWidget(resultado, idiomaInterfaz)
             }
         }
     }
 }
 
 @Composable
-private fun ContenidoWidget(resultado: ResultadoSemana?) {
+private fun ContenidoWidget(resultado: ResultadoSemana?, idiomaInterfaz: Idioma) {
     val context = LocalContext.current
     Column(
         modifier = GlanceModifier
@@ -79,7 +90,7 @@ private fun ContenidoWidget(resultado: ResultadoSemana?) {
                 }
             }
             is ResultadoSemana.SinContenido -> Text(
-                text = mensajeSinContenido(resultado),
+                text = mensajeSinContenido(resultado, idiomaInterfaz),
                 style = TextStyle(color = GlanceTheme.colors.onBackground),
             )
             null -> Text(
@@ -90,8 +101,9 @@ private fun ContenidoWidget(resultado: ResultadoSemana?) {
     }
 }
 
-private fun mensajeSinContenido(sinContenido: ResultadoSemana.SinContenido): String = when (sinContenido.razon) {
-    RazonSinContenido.ANIO_SIN_CALENDARIO -> "Sin contenido: el año ${sinContenido.semanaIso.anio} todavía no tiene calendario."
-    RazonSinContenido.IDIOMA_O_NIVEL_SIN_CONTENIDO -> "Sin contenido para ${sinContenido.idioma.name}/${sinContenido.nivel.name} todavía."
-    RazonSinContenido.SEMANA_FUERA_DE_LA_EDICION -> "Esta semana no forma parte de la edición actual."
+/** AJUSTES-FASE-9.md, bloque B: mismas plantillas que la pantalla principal (TextosInterfaz.kt), no un texto propio. */
+private fun mensajeSinContenido(sinContenido: ResultadoSemana.SinContenido, idiomaInterfaz: Idioma): String = when (sinContenido.razon) {
+    RazonSinContenido.ANIO_SIN_CALENDARIO -> mensajeSinCalendario(idiomaInterfaz, sinContenido.semanaIso.anio)
+    RazonSinContenido.IDIOMA_O_NIVEL_SIN_CONTENIDO -> mensajeSinContenidoNivel(idiomaInterfaz, sinContenido.idioma, sinContenido.nivel)
+    RazonSinContenido.SEMANA_FUERA_DE_LA_EDICION -> mensajeSinContenidoSemana(idiomaInterfaz, sinContenido.semanaIso.anio)
 }

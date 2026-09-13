@@ -205,7 +205,7 @@ private fun PantallaPrincipal(
             val resultado = remember(fechaVista, idiomaActivo, nivelActivo) {
                 resolver(idiomaActivo, nivelActivo, fechaVista)
             }
-            PantallaSemana(resultado, ajustes.idiomaBase)
+            PantallaSemana(resultado, ajustes.idiomaBase, idiomaAplicacion)
         }
     }
 }

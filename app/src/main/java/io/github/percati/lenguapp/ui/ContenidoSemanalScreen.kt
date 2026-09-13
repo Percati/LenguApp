@@ -62,28 +62,29 @@ private val ESPACIO_ENTRE_SECCIONES = 32.dp
  * ni romper la app.
  */
 @Composable
-fun PantallaSemana(resultado: ResultadoSemana, idiomaBase: Idioma, modifier: Modifier = Modifier) {
+fun PantallaSemana(resultado: ResultadoSemana, idiomaBase: Idioma, idiomaInterfaz: Idioma, modifier: Modifier = Modifier) {
     when (resultado) {
         is ResultadoSemana.Encontrado -> ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier)
-        is ResultadoSemana.SinContenido -> SinContenidoMensaje(resultado, modifier)
+        is ResultadoSemana.SinContenido -> SinContenidoMensaje(resultado, idiomaInterfaz, modifier)
     }
 }
 
+/** AJUSTES-FASE-9.md, bloque B: estos tres mensajes son parte del chrome, traducidos a los seis idiomas de interfaz. */
 @Composable
-private fun SinContenidoMensaje(sinContenido: ResultadoSemana.SinContenido, modifier: Modifier = Modifier) {
+private fun SinContenidoMensaje(sinContenido: ResultadoSemana.SinContenido, idiomaInterfaz: Idioma, modifier: Modifier = Modifier) {
     val mensaje = when (sinContenido.razon) {
         RazonSinContenido.ANIO_SIN_CALENDARIO ->
-            "Todavía no hay calendario para el año ${sinContenido.semanaIso.anio}."
+            mensajeSinCalendario(idiomaInterfaz, sinContenido.semanaIso.anio)
         RazonSinContenido.IDIOMA_O_NIVEL_SIN_CONTENIDO ->
-            "Todavía no hay contenido para ${sinContenido.idioma.name} en nivel ${sinContenido.nivel.name}."
+            mensajeSinContenidoNivel(idiomaInterfaz, sinContenido.idioma, sinContenido.nivel)
         RazonSinContenido.SEMANA_FUERA_DE_LA_EDICION ->
-            "La semana ${sinContenido.semanaIso.semana} de ${sinContenido.semanaIso.anio} no forma parte de la edición actual."
+            mensajeSinContenidoSemana(idiomaInterfaz, sinContenido.semanaIso.anio)
     }
     Column(
         modifier = modifier.padding(24.dp),
         verticalArrangement = Arrangement.spacedBy(8.dp),
     ) {
-        Text("Sin contenido esta semana", style = MaterialTheme.typography.headlineSmall)
+        Text(mensajeSinContenidoTitulo(idiomaInterfaz), style = MaterialTheme.typography.headlineSmall)
         Text(mensaje, style = MaterialTheme.typography.bodyLarge)
     }
 }

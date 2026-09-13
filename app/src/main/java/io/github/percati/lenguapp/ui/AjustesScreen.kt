@@ -28,6 +28,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import io.github.percati.lenguapp.modelo.Ajustes
 import io.github.percati.lenguapp.modelo.FamiliaTema
@@ -57,8 +59,8 @@ fun AjustesScreen(
         verticalArrangement = Arrangement.spacedBy(24.dp),
     ) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            TextButton(onClick = onVolver) { Text("< Volver") }
-            Text("Ajustes", style = MaterialTheme.typography.headlineSmall)
+            TextButton(onClick = onVolver) { Text("< ${etiquetaVolver(idiomaAplicacionEfectivo)}") }
+            Text(etiquetaAjustes(idiomaAplicacionEfectivo), style = MaterialTheme.typography.headlineSmall)
         }
 
         SelectorIdiomasAprendidos(
@@ -69,6 +71,7 @@ fun AjustesScreen(
         )
 
         SelectorIdiomaAplicacion(
+            idiomaInterfaz = idiomaAplicacionEfectivo,
             idiomaSegunSistema = ajustes.idiomaSegunSistema,
             idiomaElegido = ajustes.idiomaInterfaz,
             onElegirIdioma = {
@@ -79,18 +82,20 @@ fun AjustesScreen(
 
         if (avisoGlosasSoloEnEspanol(idiomaAplicacionEfectivo)) {
             Text(
-                "Las traducciones de vocabulario todavía solo existen en español; se van a mostrar en español mientras tanto.",
+                avisoGlosasTexto(idiomaAplicacionEfectivo),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
 
         SelectorFamiliaTema(
+            idiomaInterfaz = idiomaAplicacionEfectivo,
             familiaElegida = ajustes.familiaTema,
             onElegir = { onAjustesCambiados(ajustes.copy(familiaTema = it)) },
         )
 
         SelectorModoTema(
+            idiomaInterfaz = idiomaAplicacionEfectivo,
             modoElegido = ajustes.modoTema,
             onElegir = { onAjustesCambiados(ajustes.copy(modoTema = it)) },
         )
@@ -114,7 +119,7 @@ private fun SelectorIdiomasAprendidos(
     var menuAbiertoPara by remember { mutableStateOf<Idioma?>(null) }
 
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Text("Idioma que aprendés", style = MaterialTheme.typography.titleMedium)
+        Text(etiquetaIdiomasAprendidos(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
         Row(
             modifier = Modifier.horizontalScroll(rememberScrollState()),
             horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -134,6 +139,12 @@ private fun SelectorIdiomasAprendidos(
                                 label = { Text(idioma.name) },
                             )
                             DropdownMenu(expanded = menuAbiertoPara == idioma, onDismissRequest = { menuAbiertoPara = null }) {
+                                Text(
+                                    etiquetaNivel(idiomaInterfaz),
+                                    style = MaterialTheme.typography.labelMedium,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp),
+                                )
                                 Nivel.entries.forEach { nivel ->
                                     DropdownMenuItem(
                                         text = { Text(nivel.name) },
@@ -146,7 +157,12 @@ private fun SelectorIdiomasAprendidos(
                             }
                         }
                         if (nivelActual != null) {
-                            TextButton(onClick = { menuAbiertoPara = idioma }) { Text(nivelActual.name) }
+                            TextButton(
+                                onClick = { menuAbiertoPara = idioma },
+                                modifier = Modifier.semantics {
+                                    contentDescription = "${etiquetaCambiarNivel(idiomaInterfaz)}: ${nivelActual.name}"
+                                },
+                            ) { Text(nivelActual.name) }
                         }
                     }
                 }
@@ -165,7 +181,7 @@ private fun IdiomaNoDisponible(idioma: Idioma, idiomaInterfaz: Idioma, contexto:
         shape = RoundedCornerShape(8.dp),
         modifier = Modifier.combinedClickable(
             onClick = {},
-            onLongClick = { Toast.makeText(contexto, mensajeIdiomaNoDisponible(idiomaInterfaz), Toast.LENGTH_SHORT).show() },
+            onLongClick = { Toast.makeText(contexto, mensajeIdiomaNoDisponible(idiomaInterfaz, idioma), Toast.LENGTH_SHORT).show() },
         ),
     ) {
         Text(idioma.name, modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp))
@@ -181,13 +197,14 @@ private fun IdiomaNoDisponible(idioma: Idioma, idiomaInterfaz: Idioma, contexto:
  */
 @Composable
 private fun SelectorIdiomaAplicacion(
+    idiomaInterfaz: Idioma,
     idiomaSegunSistema: Boolean,
     idiomaElegido: Idioma,
     onElegirIdioma: (Idioma) -> Unit,
     onElegirSistema: () -> Unit,
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Text("Idioma de la aplicación", style = MaterialTheme.typography.titleMedium)
+        Text(etiquetaIdiomaApp(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
         Row(
             modifier = Modifier.horizontalScroll(rememberScrollState()),
             horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -195,7 +212,7 @@ private fun SelectorIdiomaAplicacion(
             FilterChip(
                 selected = idiomaSegunSistema,
                 onClick = onElegirSistema,
-                label = { Text("Según el sistema") },
+                label = { Text(etiquetaSegunSistema(idiomaInterfaz)) },
             )
             Idioma.entries.forEach { idioma ->
                 FilterChip(
@@ -213,20 +230,22 @@ private fun nombreVisible(familia: FamiliaTema): String = when (familia) {
     FamiliaTema.EDITORIAL -> "Editorial"
 }
 
-private fun nombreVisible(modo: ModoTema): String = when (modo) {
-    ModoTema.CLARO -> "Claro"
-    ModoTema.OSCURO -> "Oscuro"
-    ModoTema.SEGUN_SISTEMA -> "Según el sistema"
+private fun nombreVisible(modo: ModoTema, idiomaInterfaz: Idioma): String = when (modo) {
+    ModoTema.CLARO -> etiquetaModoClaro(idiomaInterfaz)
+    ModoTema.OSCURO -> etiquetaModoOscuro(idiomaInterfaz)
+    ModoTema.SEGUN_SISTEMA -> etiquetaSegunSistema(idiomaInterfaz)
 }
 
 /**
  * Familia de tema y modo son dos ajustes separados, no uno --
- * AJUSTES-FASE-7.md, bloque 1.
+ * AJUSTES-FASE-7.md, bloque 1. Los nombres de familia (Academia, Editorial)
+ * no estan en la tabla de AJUSTES-FASE-9.md, bloque B: quedan sin traducir
+ * a proposito, no es un olvido.
  */
 @Composable
-private fun SelectorFamiliaTema(familiaElegida: FamiliaTema, onElegir: (FamiliaTema) -> Unit) {
+private fun SelectorFamiliaTema(idiomaInterfaz: Idioma, familiaElegida: FamiliaTema, onElegir: (FamiliaTema) -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Text("Estilo visual", style = MaterialTheme.typography.titleMedium)
+        Text(etiquetaEstiloVisual(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
         Row(
             modifier = Modifier.horizontalScroll(rememberScrollState()),
             horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -243,9 +262,9 @@ private fun SelectorFamiliaTema(familiaElegida: FamiliaTema, onElegir: (FamiliaT
 }
 
 @Composable
-private fun SelectorModoTema(modoElegido: ModoTema, onElegir: (ModoTema) -> Unit) {
+private fun SelectorModoTema(idiomaInterfaz: Idioma, modoElegido: ModoTema, onElegir: (ModoTema) -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Text("Modo", style = MaterialTheme.typography.titleMedium)
+        Text(etiquetaModo(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
         Row(
             modifier = Modifier.horizontalScroll(rememberScrollState()),
             horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -254,7 +273,7 @@ private fun SelectorModoTema(modoElegido: ModoTema, onElegir: (ModoTema) -> Unit
                 FilterChip(
                     selected = modo == modoElegido,
                     onClick = { onElegir(modo) },
-                    label = { Text(nombreVisible(modo)) },
+                    label = { Text(nombreVisible(modo, idiomaInterfaz)) },
                 )
             }
         }

@@ -162,4 +162,19 @@ class AjustesScreenTest {
         assertEquals(FamiliaTema.EDITORIAL, ajustes.familiaTema)
         assertEquals(ModoTema.OSCURO, ajustes.modoTema)
     }
+
+    // --- AJUSTES-FASE-9.md, bloque B: traduccion completa del chrome ---
+
+    @Test
+    fun `la pantalla entera se renderiza en frances, no solo el idioma probado hasta ahora`() {
+        montar(Ajustes(idiomaInterfaz = Idioma.FR, idiomaBase = Idioma.FR, idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)))
+
+        composeTestRule.onNodeWithText(etiquetaAjustes(Idioma.FR)).assertExists()
+        composeTestRule.onNodeWithText(etiquetaIdiomasAprendidos(Idioma.FR)).assertExists()
+        composeTestRule.onNodeWithText(etiquetaIdiomaApp(Idioma.FR)).assertExists()
+        composeTestRule.onAllNodesWithText(etiquetaSegunSistema(Idioma.FR)).onFirst().assertExists()
+        composeTestRule.onNodeWithText(etiquetaEstiloVisual(Idioma.FR)).assertExists()
+        composeTestRule.onNodeWithText(etiquetaModo(Idioma.FR)).assertExists()
+        composeTestRule.onNodeWithText(avisoGlosasTexto(Idioma.FR)).assertExists()
+    }
 }
