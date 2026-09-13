@@ -119,16 +119,14 @@ class AjustesScreenTest {
 
         composeTestRule.onAllNodesWithText("ES").onFirst().performTouchInput { longClick() }
 
-        assertEquals(mensajeIdiomaNoDisponible(Idioma.EN), ShadowToast.getTextOfLatestToast())
+        assertEquals(mensajeIdiomaNoDisponible(Idioma.EN, Idioma.ES), ShadowToast.getTextOfLatestToast())
     }
 
     @Test
     fun `el aviso de glosas en espanol aparece solo si el idioma de la aplicacion no es espanol`() {
         montar(Ajustes(idiomaInterfaz = Idioma.DE, idiomaBase = Idioma.DE))
 
-        composeTestRule.onNodeWithText(
-            "Las traducciones de vocabulario todavía solo existen en español; se van a mostrar en español mientras tanto.",
-        ).assertExists()
+        composeTestRule.onNodeWithText(avisoGlosasTexto(Idioma.DE)).assertExists()
     }
 
     // --- AJUSTES-FASE-7.md, bloque 1: familia de tema y modo son dos ajustes separados ---

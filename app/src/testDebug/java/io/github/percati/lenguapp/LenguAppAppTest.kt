@@ -20,6 +20,7 @@ import io.github.percati.lenguapp.semana.ResultadoSemana
 import io.github.percati.lenguapp.semana.resolverContenidoDeLaSemana
 import io.github.percati.lenguapp.semana.semanaIsoDe
 import io.github.percati.lenguapp.ui.mensajeDobleAtrasParaSalir
+import io.github.percati.lenguapp.ui.mensajeSinContenidoSemana
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
@@ -135,7 +136,7 @@ class LenguAppAppTest {
                 onGuardarAjustes = {},
             )
         }
-        composeTestRule.onNode(hasText("no forma parte de la edición actual", substring = true)).assertExists()
+        composeTestRule.onNode(hasText(mensajeSinContenidoSemana(Idioma.ES, 2026), substring = true)).assertExists()
     }
 
     // --- AJUSTES-FASE-7.md, bloque 2.4: Ajustes es un destino real, no una bandera ---
