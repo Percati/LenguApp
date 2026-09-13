@@ -99,4 +99,45 @@ class PresentacionTest {
     fun `contraste se oculta si el idioma que se aprende coincide con el idioma base, no hay contraste posible`() {
         assertEquals(null, mapOf("de" to "Das Deutsche...").contrasteParaMostrar(Idioma.DE, Idioma.DE))
     }
+
+    @Test
+    fun `contraste con dos claves (es, en) elige la del idioma base sin importar el orden del mapa`() {
+        val contraste = mapOf("es" to "El espanol no tiene...", "en" to "English has no...")
+        assertEquals("El espanol no tiene...", contraste.contrasteParaMostrar(Idioma.DE, Idioma.ES))
+        assertEquals("English has no...", contraste.contrasteParaMostrar(Idioma.DE, Idioma.EN))
+    }
+
+    // --- erroresContrastivos: se SUMAN a errores, nunca lo reemplazan (mismo criterio que contraste) ---
+
+    @Test
+    fun `sin erroresContrastivos, la lista es solo la universal`() {
+        assertEquals(
+            listOf("universal 1", "universal 2"),
+            erroresParaMostrar(listOf("universal 1", "universal 2"), null, Idioma.DE, Idioma.ES),
+        )
+    }
+
+    @Test
+    fun `con erroresContrastivos para el idioma base, se agregan al final de los universales`() {
+        val universales = listOf("universal 1", "universal 2")
+        val contrastivos = mapOf("en" to listOf("solo para anglohablantes"))
+        assertEquals(
+            listOf("universal 1", "universal 2", "solo para anglohablantes"),
+            erroresParaMostrar(universales, contrastivos, Idioma.DE, Idioma.EN),
+        )
+    }
+
+    @Test
+    fun `erroresContrastivos de otro idioma base NO se mezclan -- mismo criterio que el contraste`() {
+        val universales = listOf("universal 1")
+        val contrastivos = mapOf("en" to listOf("solo para anglohablantes"))
+        assertEquals(universales, erroresParaMostrar(universales, contrastivos, Idioma.DE, Idioma.FR))
+    }
+
+    @Test
+    fun `erroresContrastivos no aporta nada si el idioma que se aprende coincide con el base`() {
+        val universales = listOf("universal 1")
+        val contrastivos = mapOf("de" to listOf("no deberia poder pasar esto"))
+        assertEquals(universales, erroresParaMostrar(universales, contrastivos, Idioma.DE, Idioma.DE))
+    }
 }

@@ -81,9 +81,18 @@ data class Ficha(
     val cuadroReferencia: CuadroReferencia? = null,
     val ejemplos: List<Ejemplo>,
     val notas: List<String>,
-    // Solo "es" esta poblado en 2026; el resto de las lenguas base llegan despues.
+    // Un renglon por lengua base; solo las lenguas con contenido escrito
+    // estan presentes (2026: "es" en todas, "en" en las 14 fichas alemanas).
+    // AJUSTES posteriores a Fase 9: la app muestra la del idioma base y
+    // oculta la seccion entera si falta la clave -- nunca cae a "es" bajo
+    // un titulo que anuncia otro idioma (ver contrasteParaMostrar()).
     val contraste: Map<String, String>? = null,
     val errores: List<String>,
+    // Errores tipicos ADICIONALES segun la lengua base (los de un
+    // anglohablante que aprende aleman no son los de un hispanohablante):
+    // se suman a errores, no lo reemplazan. Ausente si no hay ninguno
+    // escrito para ese par (idioma que se aprende, lengua base).
+    val erroresContrastivos: Map<String, List<String>>? = null,
     val vocabulario: List<VocabularioItem>,
     val redemittel: List<RedemittelItem>,
     val mision: Mision,
@@ -170,6 +179,10 @@ data class SemanaEspecial(
     val id: String,
     val semana: Int,
     val idioma: Idioma,
+    // Agregado cuando ingles paso a tener B2 y C1 en 2026: el id ya lo
+    // llevaba (REVIEW-EN-B2-S40 vs REVIEW-EN-C1-S40) porque cada nivel tiene
+    // su propia semana de repaso/Survival, pero el campo explicito faltaba.
+    val nivel: Nivel,
     val clase: Clase,
     val titulo: String,
     val minutosEstimados: Int? = null,

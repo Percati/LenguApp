@@ -39,6 +39,27 @@ fun Map<String, String>?.contrasteParaMostrar(idiomaAprendido: Idioma, idiomaBas
 }
 
 /**
+ * "errores" es universal; erroresContrastivos son ADICIONALES segun la
+ * lengua base y se suman, nunca lo reemplazan (los errores de un
+ * hispanohablante no son los de un anglohablante). Mismo criterio que
+ * contrasteParaMostrar: sin fallback a "es" -- mostrar los errores tipicos
+ * de otra lengua base bajo una seccion universal seria tan enganoso como
+ * mostrar el contraste en el idioma equivocado. Si el idioma que se
+ * aprende coincide con el base, no hay interferencia de lengua base que
+ * contrastar.
+ */
+fun erroresParaMostrar(
+    errores: List<String>,
+    erroresContrastivos: Map<String, List<String>>?,
+    idiomaAprendido: Idioma,
+    idiomaBase: Idioma,
+): List<String> {
+    if (idiomaAprendido == idiomaBase) return errores
+    val adicionales = erroresContrastivos?.get(idiomaBase.name.lowercase()).orEmpty()
+    return errores + adicionales
+}
+
+/**
  * En Redemittel un valor `null` explicito no es "todavia no traducido": es
  * una afirmacion deliberada de que la expresion no tiene equivalencia directa
  * y se aprende por situacion (CLAUDE.md). Un `String?` no distingue esos dos

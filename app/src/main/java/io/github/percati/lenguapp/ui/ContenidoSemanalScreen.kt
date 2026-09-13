@@ -39,6 +39,7 @@ import io.github.percati.lenguapp.modelo.SemanaEspecial
 import io.github.percati.lenguapp.modelo.VocabularioItem
 import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
 import io.github.percati.lenguapp.presentacion.contrasteParaMostrar
+import io.github.percati.lenguapp.presentacion.erroresParaMostrar
 import io.github.percati.lenguapp.presentacion.traduccionParaMostrar
 import io.github.percati.lenguapp.semana.RazonSinContenido
 import io.github.percati.lenguapp.semana.ResultadoSemana
@@ -160,7 +161,7 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
         }
 
         Seccion(etiquetaSeccion("errores", ficha.idioma, ficha.bilingue)) {
-            ficha.errores.forEach { Vinieta(it) }
+            erroresParaMostrar(ficha.errores, ficha.erroresContrastivos, ficha.idioma, idiomaBase).forEach { Vinieta(it) }
         }
 
         SeccionPlegable(titulo = "${etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)} (${ficha.vocabulario.size})") {

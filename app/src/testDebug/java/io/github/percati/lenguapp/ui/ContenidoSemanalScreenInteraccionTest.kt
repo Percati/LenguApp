@@ -52,6 +52,38 @@ class ContenidoSemanalScreenInteraccionTest {
         return parsearContenido(File(carpeta, "contenido/DE-G01-B2-1.json").readText()) as Ficha
     }
 
+    // --- Ingles como segunda lengua base: contraste (AJUSTES-FASE-8.md, B.6) y erroresContrastivos ---
+
+    @Test
+    fun `con la app en ingles aparece el contraste ingles, no el espanol, y se suman los errores contrastivos`() {
+        val ficha = ficha()
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.EN) }
+
+        composeTestRule.onNode(hasText("Das Englische hat eine fast so feste Wortstellung", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("Das Spanische kennt keine Verbendstellung", substring = true)).assertDoesNotExist()
+
+        // erroresContrastivos.en se agrega a los universales, no los reemplaza:
+        // el universal "Komma vor dass..." sigue estando, junto al adicional
+        // "Das Komma vor dass weglassen...".
+        composeTestRule.onNode(hasText("Die Satzklammer auflösen", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("vergessen: im Deutschen Pflicht", substring = true)).assertExists()
+
+        // Las glosas de vocabulario ahora traen ingles ademas de espanol.
+        val tituloVocabulario = etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)
+        composeTestRule.onNode(hasText(tituloVocabulario, substring = true)).performScrollTo().performClick()
+        composeTestRule.onNode(hasText("the notice period", substring = true)).assertExists()
+    }
+
+    @Test
+    fun `con la app en espanol aparece el contraste espanol, sin los errores contrastivos de ingles`() {
+        val ficha = ficha()
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+
+        composeTestRule.onNode(hasText("Das Spanische kennt keine Verbendstellung", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("Das Englische hat eine fast so feste Wortstellung", substring = true)).assertDoesNotExist()
+        composeTestRule.onNode(hasText("Die Satzklammer auflösen", substring = true)).assertDoesNotExist()
+    }
+
     @Test
     fun `vocabulario y redemittel arrancan plegados y se abren al tocar el titulo`() {
         val ficha = ficha()
