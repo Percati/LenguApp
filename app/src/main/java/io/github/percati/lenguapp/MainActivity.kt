@@ -51,6 +51,7 @@ import io.github.percati.lenguapp.presentacion.idiomaAplicacionEfectivo
 import io.github.percati.lenguapp.semana.ResultadoSemana
 import io.github.percati.lenguapp.semana.SemanaIso
 import io.github.percati.lenguapp.semana.idiomasConContenido
+import io.github.percati.lenguapp.semana.nivelesConContenido
 import io.github.percati.lenguapp.semana.semanaIsoDe
 import io.github.percati.lenguapp.ui.AjustesScreen
 import io.github.percati.lenguapp.ui.PantallaSemana
@@ -77,11 +78,14 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val ajustesIniciales = cargarAjustes(this)
-        val idiomasConContenido = idiomasConContenido(nombresCalendarioDisponibles(this))
+        val nombresCalendario = nombresCalendarioDisponibles(this)
+        val idiomasConContenido = idiomasConContenido(nombresCalendario)
+        val nivelesConContenido = nivelesConContenido(nombresCalendario)
         setContent {
             LenguAppApp(
                 ajustesIniciales = ajustesIniciales,
                 idiomasConContenido = idiomasConContenido,
+                nivelesConContenido = nivelesConContenido,
                 resolver = { idioma, nivel, fecha -> resolverSemana(this, idioma, nivel, fecha) },
                 onGuardarAjustes = { guardarAjustes(this, it) },
             )
@@ -93,6 +97,7 @@ class MainActivity : ComponentActivity() {
 internal fun LenguAppApp(
     ajustesIniciales: Ajustes,
     idiomasConContenido: Set<Idioma>,
+    nivelesConContenido: Map<Idioma, Set<Nivel>>,
     resolver: (Idioma, Nivel, LocalDate) -> ResultadoSemana,
     onGuardarAjustes: (Ajustes) -> Unit,
     // Parametro de prueba: la produccion nunca lo pasa, asi que siempre
@@ -152,6 +157,7 @@ internal fun LenguAppApp(
                     AjustesScreen(
                         ajustes = ajustes,
                         idiomasConContenido = idiomasConContenido,
+                        nivelesConContenido = nivelesConContenido,
                         idiomaAplicacionEfectivo = idiomaAplicacion,
                         onAjustesCambiados = ::actualizarAjustes,
                         onVolver = { navController.popBackStack() },

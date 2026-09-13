@@ -55,7 +55,15 @@ fun clasificarDisponibilidad(disponibles: Set<String>, anioIso: Int, idioma: Idi
 
 enum class DisponibilidadCalendario { PRESENTE, SIN_CALENDARIO_PARA_IDIOMA_O_NIVEL, SIN_CALENDARIO_PARA_EL_ANIO }
 
-private val PATRON_NOMBRE_CALENDARIO = Regex("""^calendario_\d{4}_([a-z]{2})_[A-Z]\d\.json$""")
+private val PATRON_NOMBRE_CALENDARIO = Regex("""^calendario_\d{4}_([a-z]{2})_([A-Z]\d)\.json$""")
+
+private fun paresIdiomaNivel(nombresCalendario: Collection<String>): List<Pair<Idioma, Nivel>> =
+    nombresCalendario.mapNotNull { nombre ->
+        val m = PATRON_NOMBRE_CALENDARIO.matchEntire(nombre) ?: return@mapNotNull null
+        val idioma = runCatching { Idioma.valueOf(m.groupValues[1].uppercase()) }.getOrNull() ?: return@mapNotNull null
+        val nivel = runCatching { Nivel.valueOf(m.groupValues[2]) }.getOrNull() ?: return@mapNotNull null
+        idioma to nivel
+    }
 
 /**
  * Que idiomas tienen contenido, en cualquier anio o nivel. Se deriva de los
@@ -64,10 +72,20 @@ private val PATRON_NOMBRE_CALENDARIO = Regex("""^calendario_\d{4}_([a-z]{2})_[A-
  * nuevo, su calendario aparece solo y esto lo recoge sin tocar codigo.
  */
 fun idiomasConContenido(nombresCalendario: Collection<String>): Set<Idioma> =
-    nombresCalendario
-        .mapNotNull { PATRON_NOMBRE_CALENDARIO.matchEntire(it)?.groupValues?.get(1) }
-        .mapNotNull { codigo -> runCatching { Idioma.valueOf(codigo.uppercase()) }.getOrNull() }
-        .toSet()
+    paresIdiomaNivel(nombresCalendario).map { it.first }.toSet()
+
+/**
+ * Que niveles tiene cada idioma, en cualquier anio. Misma fuente y mismo
+ * motivo que idiomasConContenido() (CLAUDE.md, regla dura #10): con ingles
+ * B2 y C1 conviviendo en 2026, el selector de nivel no puede ofrecer los
+ * cinco niveles fijos sin importar cuales tengan contenido -- eso era
+ * invisible mientras cada idioma tenia un solo nivel, pero deja de serlo en
+ * cuanto un idioma tiene mas de uno.
+ */
+fun nivelesConContenido(nombresCalendario: Collection<String>): Map<Idioma, Set<Nivel>> =
+    paresIdiomaNivel(nombresCalendario)
+        .groupBy({ it.first }, { it.second })
+        .mapValues { (_, niveles) -> niveles.toSet() }
 
 /** Por que no hay contenido esta semana. La Fase 4 se lo dice al usuario segun este motivo. */
 enum class RazonSinContenido {

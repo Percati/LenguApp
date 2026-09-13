@@ -102,6 +102,7 @@ class BarraNavegacionPantallazoTest(private val nombreCaso: String, private val 
                             idiomaInterfaz = idioma,
                         ),
                         idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
+                        nivelesConContenido = mapOf(Idioma.DE to setOf(Nivel.B2), Idioma.EN to setOf(Nivel.C1)),
                         resolver = ::resolverDePrueba,
                         onGuardarAjustes = {},
                         fechaInicial = fechaVistaDePrueba,

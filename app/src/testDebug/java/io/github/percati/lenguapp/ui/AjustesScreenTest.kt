@@ -47,6 +47,10 @@ class AjustesScreenTest {
             AjustesScreen(
                 ajustes = ajustes,
                 idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
+                // B2 y C1 para los dos, aunque en el contenido real DE solo
+                // tenga B2: los tests de este archivo ejercitan el mecanismo
+                // de cambio de nivel en general, no la disponibilidad real.
+                nivelesConContenido = mapOf(Idioma.DE to setOf(Nivel.B2, Nivel.C1), Idioma.EN to setOf(Nivel.B2, Nivel.C1)),
                 idiomaAplicacionEfectivo = ajustes.idiomaInterfaz,
                 onAjustesCambiados = { ajustes = it },
                 onVolver = {},
@@ -176,5 +180,35 @@ class AjustesScreenTest {
         composeTestRule.onNodeWithText(etiquetaEstiloVisual(Idioma.FR)).assertExists()
         composeTestRule.onNodeWithText(etiquetaModo(Idioma.FR)).assertExists()
         composeTestRule.onNodeWithText(avisoGlosasTexto(Idioma.FR)).assertExists()
+    }
+
+    // --- Contenido nuevo (ingles B2, 2026): el menu de nivel solo ofrece lo que hay ---
+
+    @Test
+    fun `el menu de nivel de un idioma solo ofrece los niveles que nivelesConContenido reporta para el`() {
+        lateinit var obtenerActual: () -> Ajustes
+        composeTestRule.setContent {
+            var ajustes by remember { mutableStateOf(Ajustes(idiomasAprendidos = emptyMap())) }
+            obtenerActual = { ajustes }
+            AjustesScreen(
+                ajustes = ajustes,
+                idiomasConContenido = setOf(Idioma.EN),
+                nivelesConContenido = mapOf(Idioma.EN to setOf(Nivel.B2, Nivel.C1)),
+                idiomaAplicacionEfectivo = ajustes.idiomaInterfaz,
+                onAjustesCambiados = { ajustes = it },
+                onVolver = {},
+            )
+        }
+
+        composeTestRule.onAllNodesWithText("EN").onFirst().performClick()
+
+        composeTestRule.onNodeWithText("B2").assertExists()
+        composeTestRule.onNodeWithText("C1").assertExists()
+        composeTestRule.onNodeWithText("A2").assertDoesNotExist()
+        composeTestRule.onNodeWithText("B1").assertDoesNotExist()
+        composeTestRule.onNodeWithText("C2").assertDoesNotExist()
+
+        composeTestRule.onNodeWithText("B2").performClick()
+        assertEquals(mapOf(Idioma.EN to Nivel.B2), obtenerActual().idiomasAprendidos)
     }
 }

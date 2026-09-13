@@ -51,6 +51,11 @@ class LenguAppAppTest {
         File(carpetaAssets(), "contenido").listFiles { f -> f.extension == "json" }!!
             .associate { val c = parsearContenido(it.readText()); c.id to c }
 
+    // Mismos (idioma, nivel) que usan las ajustesIniciales de este archivo:
+    // DE en B2, EN en C1. No hace falta que coincida exacto con
+    // idiomasConContenido de cada test -- una clave de mas no molesta.
+    private val nivelesDePrueba = mapOf(Idioma.DE to setOf(Nivel.B2), Idioma.EN to setOf(Nivel.C1))
+
     private fun resolverDePrueba(idioma: Idioma, nivel: Nivel, fecha: LocalDate): ResultadoSemana {
         val nombreCalendario = "calendario_2026_${idioma.name.lowercase()}_${nivel.name}.json"
         val archivoCalendario = File(carpetaAssets(), "calendario/$nombreCalendario")
@@ -68,6 +73,7 @@ class LenguAppAppTest {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2, Idioma.EN to Nivel.C1)),
                 idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
@@ -92,6 +98,7 @@ class LenguAppAppTest {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
                 idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
@@ -106,6 +113,7 @@ class LenguAppAppTest {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = emptyMap()),
                 idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
@@ -119,6 +127,7 @@ class LenguAppAppTest {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
                 idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
@@ -133,6 +142,7 @@ class LenguAppAppTest {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
                 idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = { idioma, nivel, _ -> resolverDePrueba(idioma, nivel, LocalDate.of(2026, 2, 16)) }, // semana ISO 8
                 onGuardarAjustes = {},
             )
@@ -152,6 +162,7 @@ class LenguAppAppTest {
                     idiomaInterfaz = Idioma.IT,
                 ),
                 idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = { idioma, nivel, _ -> resolverDePrueba(idioma, nivel, LocalDate.of(2026, 2, 16)) }, // semana ISO 8
                 onGuardarAjustes = {},
             )
@@ -168,6 +179,7 @@ class LenguAppAppTest {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
                 idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
@@ -189,6 +201,7 @@ class LenguAppAppTest {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
                 idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
@@ -205,6 +218,7 @@ class LenguAppAppTest {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
                 idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
@@ -227,6 +241,7 @@ class LenguAppAppTest {
                     idiomaInterfaz = Idioma.DE,
                 ),
                 idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
@@ -247,6 +262,7 @@ class LenguAppAppTest {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
                 idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
@@ -263,6 +279,7 @@ class LenguAppAppTest {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
                 idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )
@@ -285,6 +302,7 @@ class LenguAppAppTest {
             LenguAppApp(
                 ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2)),
                 idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 onGuardarAjustes = {},
             )

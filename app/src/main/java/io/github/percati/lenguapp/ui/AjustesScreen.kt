@@ -49,6 +49,7 @@ import io.github.percati.lenguapp.presentacion.avisoGlosasSoloEnEspanol
 fun AjustesScreen(
     ajustes: Ajustes,
     idiomasConContenido: Set<Idioma>,
+    nivelesConContenido: Map<Idioma, Set<Nivel>>,
     idiomaAplicacionEfectivo: Idioma,
     onAjustesCambiados: (Ajustes) -> Unit,
     onVolver: () -> Unit,
@@ -66,6 +67,7 @@ fun AjustesScreen(
         SelectorIdiomasAprendidos(
             idiomasAprendidos = ajustes.idiomasAprendidos,
             idiomasConContenido = idiomasConContenido,
+            nivelesConContenido = nivelesConContenido,
             idiomaInterfaz = idiomaAplicacionEfectivo,
             onCambiar = { onAjustesCambiados(ajustes.copy(idiomasAprendidos = it)) },
         )
@@ -106,12 +108,17 @@ fun AjustesScreen(
  * Tocar un idioma no seleccionado abre el menu de nivel; tocarlo ya
  * seleccionado lo saca (y su pestaña desaparece de la pantalla principal).
  * El boton con el nivel, aparte, deja cambiarlo sin deseleccionar --
- * AJUSTES-FASE-6.md, bloque B.
+ * AJUSTES-FASE-6.md, bloque B. El menu solo ofrece los niveles que
+ * `nivelesConContenido` reporta para ese idioma (CLAUDE.md, regla dura #10):
+ * mientras cada idioma tenia un solo nivel, ofrecer los cinco igual no se
+ * notaba porque elegir cualquier otro caia a "sin contenido"; con ingles B2
+ * y C1 conviviendo hay que distinguir cuales existen de verdad.
  */
 @Composable
 private fun SelectorIdiomasAprendidos(
     idiomasAprendidos: Map<Idioma, Nivel>,
     idiomasConContenido: Set<Idioma>,
+    nivelesConContenido: Map<Idioma, Set<Nivel>>,
     idiomaInterfaz: Idioma,
     onCambiar: (Map<Idioma, Nivel>) -> Unit,
 ) {
@@ -145,7 +152,8 @@ private fun SelectorIdiomasAprendidos(
                                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                                     modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp),
                                 )
-                                Nivel.entries.forEach { nivel ->
+                                val nivelesDisponibles = nivelesConContenido[idioma] ?: emptySet()
+                                Nivel.entries.filter { it in nivelesDisponibles }.forEach { nivel ->
                                     DropdownMenuItem(
                                         text = { Text(nivel.name) },
                                         onClick = {

@@ -175,4 +175,27 @@ class ResolutorSemanaTest {
         val nombres = listOf("calendario_2026_de_B2.json", "calendario_2027_de_C1.json")
         assertEquals(setOf(Idioma.DE), idiomasConContenido(nombres))
     }
+
+    // --- nivelesConContenido: el selector de nivel no puede ofrecer los cinco fijos
+    // (CLAUDE.md, regla dura #10) -- con ingles B2 y C1 conviviendo en 2026, hace falta
+    // distinguir cuales existen de verdad, cosa que idiomasConContenido solo no permite ---
+
+    @Test
+    fun `nivelesConContenido en los assets reales da B2 y C1 para ingles, y solo B2 para aleman`() {
+        val nombres = File(carpetaAssets(), "calendario").list()!!.toList()
+        val niveles = nivelesConContenido(nombres)
+        assertEquals(setOf(Nivel.B2, Nivel.C1), niveles.getValue(Idioma.EN))
+        assertEquals(setOf(Nivel.B2), niveles.getValue(Idioma.DE))
+    }
+
+    @Test
+    fun `nivelesConContenido agrupa varios niveles del mismo idioma`() {
+        val nombres = listOf("calendario_2026_en_B2.json", "calendario_2026_en_C1.json")
+        assertEquals(mapOf(Idioma.EN to setOf(Nivel.B2, Nivel.C1)), nivelesConContenido(nombres))
+    }
+
+    @Test
+    fun `nivelesConContenido sin ningun archivo es un mapa vacio, no un error`() {
+        assertEquals(emptyMap<Idioma, Set<Nivel>>(), nivelesConContenido(emptyList()))
+    }
 }
