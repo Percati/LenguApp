@@ -395,9 +395,9 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 
 **Velocidades:** normal y 80 % (para shadowing)
 
-**358 textos → 1432 clips** (358 × 2 voz/voces × 2 velocidades)
+**564 textos → 2256 clips** (564 × 2 voz/voces × 2 velocidades)
 
-### Frases de ejemplo — 70
+### Frases de ejemplo — 110
 
 | Texto | Ficha |
 |---|---|
@@ -436,11 +436,36 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | *Can I jump in on that?* | `EN-F15-C1-1` |
 | *Let me start that again.* | `EN-F15-C1-1` |
 | *But you were going to say something.* | `EN-F15-C1-1` |
+| *The heating hasn't worked since Monday, so we've been using an electric heater. Could you send someone this week?* | `EN-F16-C1-1` |
+| *I'd like this sorted out by Friday, please.* | `EN-F16-C1-1` |
+| *As a result, we've had to use an electric heater.* | `EN-F16-C1-1` |
+| *I'd appreciate it if you could send someone this week.* | `EN-F16-C1-1` |
+| *I look forward to hearing from you.* | `EN-F16-C1-1` |
 | To a colleague: *This won't scale and we both know it.* | `EN-F17-C1-1` |
 | To a manager: *I've got concerns about how this behaves at volume — worth a conversation before we commit.* | `EN-F17-C1-1` |
 | In a formal report: *Scalability has not been demonstrated at the volumes anticipated, and further assessment is recommended prior to commitment.* | `EN-F17-C1-1` |
 | *Worth a conversation before we commit.* | `EN-F17-C1-1` |
 | *Further assessment is recommended prior to commitment.* | `EN-F17-C1-1` |
+| *I've been with the same bank since 2015, but I changed my account type last year.* | `EN-G03-C1-1` |
+| *Have you ever paid for something in instalments? — Yes, I bought a laptop that way.* | `EN-G03-C1-1` |
+| *I've already transferred the money.* | `EN-G03-C1-1` |
+| *When did you open the account?* | `EN-G03-C1-1` |
+| *I've never had a loan, and I don't want one.* | `EN-G03-C1-1` |
+| *If they had tested it properly, the bug wouldn't have reached users.* | `EN-G07-C1-1` |
+| *We might have noticed earlier if the alerts had been set up.* | `EN-G07-C1-1` |
+| *Had we known about the update, we would have waited.* | `EN-G07-C1-1` |
+| *If I'd backed it up, I wouldn't have lost everything.* | `EN-G07-C1-1` |
+| *In hindsight, we should have checked the settings.* | `EN-G07-C1-1` |
+| *Single-use plastics were banned last year.* | `EN-G11-C1-1` |
+| *The targets have been missed three times.* | `EN-G11-C1-1` |
+| *Most of it can be recycled, but it isn't.* | `EN-G11-C1-1` |
+| *The plant is being closed at the end of the year.* | `EN-G11-C1-1` |
+| *Steps are being taken, according to the report.* | `EN-G11-C1-1` |
+| *She said she had been playing for years.* | `EN-G13-C1-1` |
+| *He asked whether I wanted to join them the next day.* | `EN-G13-C1-1` |
+| *They told us not to bring anything.* | `EN-G13-C1-1` |
+| *She told me it was worth trying.* | `EN-G13-C1-1` |
+| *He admitted that he had given it up.* | `EN-G13-C1-1` |
 | *The study, published last month, contradicts three earlier trials.* | `EN-G15-C1-1` |
 | *Anyone taking that medication should avoid alcohol.* | `EN-G15-C1-1` |
 | *Having been misdiagnosed twice, she stopped trusting the referral system.* | `EN-G15-C1-1` |
@@ -451,6 +476,16 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | *It was the bureaucracy, not the weather, that nearly broke me.* | `EN-G16-C1-1` |
 | *All I wanted was somebody to explain the recycling.* | `EN-G16-C1-1` |
 | *Little did I know how long the paperwork would take.* | `EN-G16-C1-1` |
+| *I wish we lived closer to my parents.* | `EN-G20-C1-1` |
+| *If only I had said something at the time.* | `EN-G20-C1-1` |
+| *I wish he would stop apologising.* | `EN-G20-C1-1` |
+| *It's time we talked about it properly.* | `EN-G20-C1-1` |
+| *I'd rather you didn't mention it.* | `EN-G20-C1-1` |
+| *By the time the story was published, the company had already denied it.* | `EN-G25-C1-1` |
+| *Nobody knew the reporter had been there.* | `EN-G25-C1-1` |
+| *She said she hadn't seen the email.* | `EN-G25-C1-1` |
+| *It wasn't until the next day that we found out.* | `EN-G25-C1-1` |
+| *When I got there, it had already started.* | `EN-G25-C1-1` |
 | *I got into it through a friend and ended up sinking about ten years into it.* | `EN-V03-C1-1` |
 | *I've been meaning to take it back up, but I keep putting it off.* | `EN-V03-C1-1` |
 | *It started as something to wind down with and turned into a second job.* | `EN-V03-C1-1` |
@@ -461,6 +496,11 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | *The employer bears the cost; the employee absorbs the risk.* | `EN-V05-C1-1` |
 | *I'd want to raise a concern before we commit to that.* | `EN-V05-C1-1` |
 | *They conducted the analysis but never reached a conclusion.* | `EN-V05-C1-1` |
+| *I spent three weeks going round in circles with them.* | `EN-V06-C1-1` |
+| *To cut a long story short, they sent me to a different office.* | `EN-V06-C1-1` |
+| *There's a lot of red tape, but we're all in the same boat.* | `EN-V06-C1-1` |
+| *Sooner or later they'll have to answer.* | `EN-V06-C1-1` |
+| *I only did it as a last resort.* | `EN-V06-C1-1` |
 | *There are two things going on here. Let me take those in turn.* | `EN-V07-C1-1` |
 | *Granted, the numbers moved. Then again, they moved from a very low base.* | `EN-V07-C1-1` |
 | *Just as an aside — and this isn't the main point — the timing was odd. Anyway, the upshot is that nobody checked.* | `EN-V07-C1-1` |
@@ -472,7 +512,7 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | *The prices were eye-watering for what arrived.* | `EN-V08-C1-1` |
 | *It's an acquired taste, and I haven't acquired it.* | `EN-V08-C1-1` |
 
-### Vocabulario — 170
+### Vocabulario — 273
 
 | Texto | Ficha |
 |---|---|
@@ -564,7 +604,71 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | tough love | `EN-F15-C1-1` |
 | to grow apart | `EN-F15-C1-1` |
 | a support network | `EN-F15-C1-1` |
+| to move in / move out | `EN-F16-C1-1` |
+| to get something fixed | `EN-F16-C1-1` |
+| rent arrears | `EN-F16-C1-1` |
+| a lease | `EN-F16-C1-1` |
+| bills | `EN-F16-C1-1` |
+| damp | `EN-F16-C1-1` |
+| a neighbour | `EN-F16-C1-1` |
+| furnished / unfurnished | `EN-F16-C1-1` |
+| a leak | `EN-F16-C1-1` |
+| soundproofing | `EN-F16-C1-1` |
 | to scale (intransitive) | `EN-F17-C1-1` |
+| to open / close an account | `EN-G03-C1-1` |
+| to pay in instalments | `EN-G03-C1-1` |
+| a savings account | `EN-G03-C1-1` |
+| to be short of money | `EN-G03-C1-1` |
+| a bank transfer | `EN-G03-C1-1` |
+| an interest rate | `EN-G03-C1-1` |
+| to withdraw / to deposit | `EN-G03-C1-1` |
+| a monthly payment | `EN-G03-C1-1` |
+| to be in debt | `EN-G03-C1-1` |
+| to afford something | `EN-G03-C1-1` |
+| a standing order | `EN-G03-C1-1` |
+| expenses | `EN-G03-C1-1` |
+| to borrow / to lend | `EN-G03-C1-1` |
+| a current account | `EN-G03-C1-1` |
+| to back something up | `EN-G07-C1-1` |
+| a bug | `EN-G07-C1-1` |
+| to update / an update | `EN-G07-C1-1` |
+| to log in / log out | `EN-G07-C1-1` |
+| a data breach | `EN-G07-C1-1` |
+| two-factor authentication | `EN-G07-C1-1` |
+| to download / upload | `EN-G07-C1-1` |
+| cloud storage | `EN-G07-C1-1` |
+| default settings | `EN-G07-C1-1` |
+| user-friendly | `EN-G07-C1-1` |
+| to freeze | `EN-G07-C1-1` |
+| data protection | `EN-G07-C1-1` |
+| artificial intelligence | `EN-G07-C1-1` |
+| to keep track of | `EN-G07-C1-1` |
+| to recycle / recycling | `EN-G11-C1-1` |
+| waste | `EN-G11-C1-1` |
+| to ban something | `EN-G11-C1-1` |
+| climate change | `EN-G11-C1-1` |
+| renewable energy | `EN-G11-C1-1` |
+| a landfill | `EN-G11-C1-1` |
+| to pollute / pollution | `EN-G11-C1-1` |
+| to cut down on | `EN-G11-C1-1` |
+| to be environmentally friendly | `EN-G11-C1-1` |
+| greenhouse gases | `EN-G11-C1-1` |
+| to run out of | `EN-G11-C1-1` |
+| sustainable | `EN-G11-C1-1` |
+| to be into something | `EN-G13-C1-1` |
+| to take up a hobby | `EN-G13-C1-1` |
+| to give something up | `EN-G13-C1-1` |
+| spare time | `EN-G13-C1-1` |
+| to join a club | `EN-G13-C1-1` |
+| to be good at | `EN-G13-C1-1` |
+| to be self-taught | `EN-G13-C1-1` |
+| to practise | `EN-G13-C1-1` |
+| to get better at | `EN-G13-C1-1` |
+| a pastime | `EN-G13-C1-1` |
+| to hang out with | `EN-G13-C1-1` |
+| once in a while | `EN-G13-C1-1` |
+| to be worth trying | `EN-G13-C1-1` |
+| to be hooked on | `EN-G13-C1-1` |
 | an underlying condition | `EN-G15-C1-1` |
 | a side effect vs. an adverse reaction | `EN-G15-C1-1` |
 | to manage a condition | `EN-G15-C1-1` |
@@ -590,11 +694,36 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | to travel light | `EN-G16-C1-1` |
 | to give someone the cold shoulder | `EN-G16-C1-1` |
 | to blend in | `EN-G16-C1-1` |
+| to get on with someone | `EN-G20-C1-1` |
+| to fall out with someone | `EN-G20-C1-1` |
+| to make up | `EN-G20-C1-1` |
+| to keep in touch | `EN-G20-C1-1` |
+| a falling-out | `EN-G20-C1-1` |
+| to take after someone | `EN-G20-C1-1` |
+| to look up to someone | `EN-G20-C1-1` |
+| a row | `EN-G20-C1-1` |
+| a close friend | `EN-G20-C1-1` |
+| to let someone down | `EN-G20-C1-1` |
+| to bring up children | `EN-G20-C1-1` |
+| to get over something | `EN-G20-C1-1` |
+| a headline | `EN-G25-C1-1` |
+| to report on something | `EN-G25-C1-1` |
+| a source | `EN-G25-C1-1` |
+| to deny something | `EN-G25-C1-1` |
+| the media | `EN-G25-C1-1` |
+| coverage | `EN-G25-C1-1` |
+| an eyewitness | `EN-G25-C1-1` |
+| breaking news | `EN-G25-C1-1` |
+| to be accused of | `EN-G25-C1-1` |
+| biased | `EN-G25-C1-1` |
+| an issue | `EN-G25-C1-1` |
+| to go viral | `EN-G25-C1-1` |
+| a press release | `EN-G25-C1-1` |
+| to find out | `EN-G25-C1-1` |
 | to get into something | `EN-V03-C1-1` |
 | to dabble in | `EN-V03-C1-1` |
 | to tinker with | `EN-V03-C1-1` |
 | to unwind | `EN-V03-C1-1` |
-| to be hooked on | `EN-V03-C1-1` |
 | a gateway (hobby) | `EN-V03-C1-1` |
 | a busman's holiday | `EN-V03-C1-1` |
 | to be rusty | `EN-V03-C1-1` |
@@ -618,6 +747,20 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | compound interest | `EN-V05-C1-1` |
 | to write something off | `EN-V05-C1-1` |
 | a rainy day fund | `EN-V05-C1-1` |
+| to fill in a form | `EN-V06-C1-1` |
+| an appointment | `EN-V06-C1-1` |
+| a deadline | `EN-V06-C1-1` |
+| proof of address | `EN-V06-C1-1` |
+| an applicant | `EN-V06-C1-1` |
+| supporting documents | `EN-V06-C1-1` |
+| to apply for something | `EN-V06-C1-1` |
+| an administration fee | `EN-V06-C1-1` |
+| a branch | `EN-V06-C1-1` |
+| to be valid until | `EN-V06-C1-1` |
+| to be put on hold | `EN-V06-C1-1` |
+| customer service | `EN-V06-C1-1` |
+| to be processed | `EN-V06-C1-1` |
+| a reference number | `EN-V06-C1-1` |
 | framing | `EN-V07-C1-1` |
 | to downplay / to overstate | `EN-V07-C1-1` |
 | the fallout from | `EN-V07-C1-1` |
@@ -647,7 +790,7 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | to go off (milk) | `EN-V08-C1-1` |
 | batch cooking | `EN-V08-C1-1` |
 
-### Expresiones — 118
+### Expresiones — 181
 
 | Texto | Ficha |
 |---|---|
@@ -707,6 +850,14 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | What's your take? | `EN-F15-C1-1` |
 | I'll stop there | `EN-F15-C1-1` |
 | It depends what you mean by… | `EN-F15-C1-1` |
+| I'm writing about… | `EN-F16-C1-1` |
+| The problem is that… | `EN-F16-C1-1` |
+| As a result,… | `EN-F16-C1-1` |
+| Could you please… | `EN-F16-C1-1` |
+| I'd appreciate it if you could… | `EN-F16-C1-1` |
+| I was wondering if… | `EN-F16-C1-1` |
+| I'd like this sorted out by… | `EN-F16-C1-1` |
+| I look forward to hearing from you. | `EN-F16-C1-1` |
 | we both know it | `EN-F17-C1-1` |
 | worth a conversation | `EN-F17-C1-1` |
 | I've got concerns about | `EN-F17-C1-1` |
@@ -715,6 +866,38 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | ascertain | `EN-F17-C1-1` |
 | it was found that | `EN-F17-C1-1` |
 | has not been demonstrated | `EN-F17-C1-1` |
+| I've just… | `EN-G03-C1-1` |
+| I haven't … yet | `EN-G03-C1-1` |
+| Have you ever…? | `EN-G03-C1-1` |
+| I've been … since / for | `EN-G03-C1-1` |
+| So far this year… | `EN-G03-C1-1` |
+| When did you…? | `EN-G03-C1-1` |
+| Last year I… | `EN-G03-C1-1` |
+| That was when… | `EN-G03-C1-1` |
+| If we had…, we would have… | `EN-G07-C1-1` |
+| …, it wouldn't have happened. | `EN-G07-C1-1` |
+| We could have… | `EN-G07-C1-1` |
+| It might have been… | `EN-G07-C1-1` |
+| We should have… | `EN-G07-C1-1` |
+| Had we known,… | `EN-G07-C1-1` |
+| Otherwise,… | `EN-G07-C1-1` |
+| In hindsight,… | `EN-G07-C1-1` |
+| It is said that… | `EN-G11-C1-1` |
+| …was introduced in… | `EN-G11-C1-1` |
+| …has been banned | `EN-G11-C1-1` |
+| …can be recycled | `EN-G11-C1-1` |
+| …is being replaced | `EN-G11-C1-1` |
+| …, according to the report | `EN-G11-C1-1` |
+| …was made by… | `EN-G11-C1-1` |
+| Steps are being taken to… | `EN-G11-C1-1` |
+| He said (that)… | `EN-G13-C1-1` |
+| She told me (that)… | `EN-G13-C1-1` |
+| He asked whether… | `EN-G13-C1-1` |
+| She asked where / when… | `EN-G13-C1-1` |
+| They told me to… | `EN-G13-C1-1` |
+| He told me not to… | `EN-G13-C1-1` |
+| She explained that… | `EN-G13-C1-1` |
+| He admitted that… | `EN-G13-C1-1` |
 | published last month | `EN-G15-C1-1` |
 | anyone taking… | `EN-G15-C1-1` |
 | having been… | `EN-G15-C1-1` |
@@ -731,6 +914,22 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | All I wanted was… | `EN-G16-C1-1` |
 | The thing that got me was… | `EN-G16-C1-1` |
 | Little did I know… | `EN-G16-C1-1` |
+| I wish I… | `EN-G20-C1-1` |
+| I wish he would… | `EN-G20-C1-1` |
+| If only I had… | `EN-G20-C1-1` |
+| It's time we… | `EN-G20-C1-1` |
+| I'd rather you didn't. | `EN-G20-C1-1` |
+| He acts as if he knew. | `EN-G20-C1-1` |
+| I could have… | `EN-G20-C1-1` |
+| Looking back,… | `EN-G20-C1-1` |
+| By the time…, it had… | `EN-G25-C1-1` |
+| It turned out that… | `EN-G25-C1-1` |
+| Nobody knew that… | `EN-G25-C1-1` |
+| …had already… | `EN-G25-C1-1` |
+| It wasn't until … that… | `EN-G25-C1-1` |
+| At first… but later… | `EN-G25-C1-1` |
+| She said she had… | `EN-G25-C1-1` |
+| …, which hadn't been reported | `EN-G25-C1-1` |
 | to get into | `EN-V03-C1-1` |
 | to take up / take back up | `EN-V03-C1-1` |
 | to put off | `EN-V03-C1-1` |
@@ -750,6 +949,13 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | take a view | `EN-V05-C1-1` |
 | make a case | `EN-V05-C1-1` |
 | honour a commitment | `EN-V05-C1-1` |
+| to cut a long story short | `EN-V06-C1-1` |
+| to go round in circles | `EN-V06-C1-1` |
+| to be in the same boat | `EN-V06-C1-1` |
+| sooner or later | `EN-V06-C1-1` |
+| to bear in mind | `EN-V06-C1-1` |
+| as a last resort | `EN-V06-C1-1` |
+| to be a nightmare | `EN-V06-C1-1` |
 | Let me take those in turn | `EN-V07-C1-1` |
 | That said | `EN-V07-C1-1` |
 | Mind you | `EN-V07-C1-1` |
@@ -772,7 +978,7 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 
 ---
 
-**Total: 720 textos, 2156 clips.** A unos 25 KB por clip, alrededor de 52 MB.
+**Total: 926 textos, 2980 clips.** A unos 25 KB por clip, alrededor de 72 MB.
 
 ## Cómo generarlos
 
