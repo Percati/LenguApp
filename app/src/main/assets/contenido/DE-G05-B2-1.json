@@ -52,7 +52,8 @@
    "item": "die Beschwerden (Pl.)",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "las molestias"
+    "es": "las molestias",
+    "en": "the symptoms, the complaints"
    },
    "nota": "fast immer Plural"
   },
@@ -60,14 +61,16 @@
    "item": "die Nebenwirkung",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "el efecto secundario"
+    "es": "el efecto secundario",
+    "en": "the side effect"
    }
   },
   {
    "item": "sich schonen",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "cuidarse"
+    "es": "cuidarse",
+    "en": "to take it easy, to go easy on oneself"
    },
    "reccion": "reflexiv"
   },
@@ -75,14 +78,16 @@
    "item": "die Belastungsgrenze",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "el límite de tolerancia"
+    "es": "el límite de tolerancia",
+    "en": "the limit of what one can take"
    }
   },
   {
    "item": "die Überweisung",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la derivación / la transferencia"
+    "es": "la derivación / la transferencia",
+    "en": "the referral / the bank transfer"
    },
    "bajoNivelJustificado": true,
    "nota": "doppelte Bedeutung: Arzt und Bank"
@@ -91,21 +96,24 @@
    "item": "die Vorsorgeuntersuchung",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la revisión preventiva"
+    "es": "la revisión preventiva",
+    "en": "the check-up, the screening"
    }
   },
   {
    "item": "ausgebrannt sein",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "estar quemado"
+    "es": "estar quemado",
+    "en": "to be burnt out"
    }
   },
   {
    "item": "die Krankenkasse",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la caja de seguro médico"
+    "es": "la caja de seguro médico",
+    "en": "the health insurer"
    },
    "bajoNivelJustificado": true,
    "nota": "in CH obligatorisch",
@@ -115,7 +123,8 @@
    "item": "der Selbstbehalt / die Franchise",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la franquicia"
+    "es": "la franquicia",
+    "en": "the excess, the deductible"
    },
    "nota": "**CH**",
    "variante": "CH"
@@ -124,7 +133,8 @@
    "item": "sich krankmelden",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "dar parte de baja"
+    "es": "dar parte de baja",
+    "en": "to call in sick"
    },
    "reccion": "reflexiv"
   },
@@ -132,7 +142,8 @@
    "item": "die Genesung",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la recuperación"
+    "es": "la recuperación",
+    "en": "the recovery"
    },
    "nota": "formell"
   },
@@ -140,7 +151,8 @@
    "item": "achten auf",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "prestar atención a"
+    "es": "prestar atención a",
+    "en": "to pay attention to, to watch"
    },
    "reccion": "+ Akk."
   },
@@ -148,14 +160,16 @@
    "item": "chronisch / akut",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "crónico / agudo"
+    "es": "crónico / agudo",
+    "en": "chronic / acute"
    }
   },
   {
    "item": "das Wohlbefinden",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "el bienestar"
+    "es": "el bienestar",
+    "en": "wellbeing"
    },
    "nota": "besser als *Wellbeing*"
   }
@@ -165,56 +179,64 @@
    "expresion": "Das dürfte…",
    "funcion": "wahrscheinliche Vermutung",
    "traducciones": {
-    "es": "probablemente sea…"
+    "es": "probablemente sea…",
+    "en": "That is probably…"
    }
   },
   {
    "expresion": "Das muss… sein",
    "funcion": "sehr hohe Sicherheit",
    "traducciones": {
-    "es": "tiene que ser…"
+    "es": "tiene que ser…",
+    "en": "That must be…"
    }
   },
   {
    "expresion": "Es könnte sein, dass…",
    "funcion": "Möglichkeit",
    "traducciones": {
-    "es": "podría ser que…"
+    "es": "podría ser que…",
+    "en": "It could be that…"
    }
   },
   {
    "expresion": "Angeblich…",
    "funcion": "Fremdbehauptung",
    "traducciones": {
-    "es": "supuestamente…"
+    "es": "supuestamente…",
+    "en": "Supposedly…"
    }
   },
   {
    "expresion": "Soweit ich weiss…",
    "funcion": "begrenztes Wissen",
    "traducciones": {
-    "es": "por lo que sé…"
+    "es": "por lo que sé…",
+    "en": "As far as I know…"
    }
   },
   {
    "expresion": "Das kann eigentlich nicht…",
    "funcion": "Ausschluss",
    "traducciones": {
-    "es": "en realidad no puede…"
+    "es": "en realidad no puede…",
+    "en": "That can't really…"
    }
   },
   {
    "expresion": "Er wird wohl… haben",
    "funcion": "Vermutung über Vergangenes",
    "traducciones": {
-    "es": "habrá…"
+    "es": "habrá…",
+    "en": "He'll probably have…"
    }
   },
   {
    "expresion": "Vermutlich…",
    "funcion": "neutrale Vermutung",
    "traducciones": {
-    "es": "presumiblemente…"
+    "es": "presumiblemente…",
+    "en": "Presumably…"
    }
   }
  ],
@@ -299,6 +321,13 @@
   "notaPie": "**Vergangenheit:** Modalverb + **Infinitiv Perfekt**: Er muss es vergessen **haben**."
  },
  "contraste": {
-  "es": "Spanisch hat mit *deber de* (Vermutung) gegen *deber* (Pflicht) eine ähnliche Unterscheidung — aber sie wird umgangssprachlich kaum eingehalten. Wer *deber de* nie aktiv benutzt, überträgt die Unterscheidung auch im Deutschen nicht."
+  "es": "Spanisch hat mit *deber de* (Vermutung) gegen *deber* (Pflicht) eine ähnliche Unterscheidung — aber sie wird umgangssprachlich kaum eingehalten. Wer *deber de* nie aktiv benutzt, überträgt die Unterscheidung auch im Deutschen nicht.",
+  "en": "Das Englische kennt den subjektiven Modalgebrauch sehr wohl: *he must be ill*, *he might have forgotten*. Die Bedeutungen decken sich gut. Was fehlt, ist die Unterscheidung von *soll* und *will* für Fremd- und Eigenbehauptung — dafür braucht das Englische Umschreibungen wie *he is said to* und *he claims to*. Und *dürfte* hat gar keine Entsprechung; am nächsten liegt *is likely to*."
+ },
+ "erroresContrastivos": {
+  "en": [
+   "*sollen* als *should* lesen, wenn eine Fremdbehauptung gemeint ist.",
+   "*dürfte* vermeiden und stattdessen immer *wahrscheinlich* sagen."
+  ]
  }
 }
