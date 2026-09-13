@@ -85,7 +85,7 @@ class ResolutorSemanaTest {
             contenidoPorId = cargarContenido(),
         )
         val encontrado = resultado as? ResultadoSemana.Encontrado ?: error("se esperaba Encontrado, fue $resultado")
-        assertEquals("REVIEW-DE-S40", (encontrado.contenido as SemanaEspecial).id)
+        assertEquals("REVIEW-DE-B2-S40", (encontrado.contenido as SemanaEspecial).id)
     }
 
     @Test

@@ -49,19 +49,27 @@ class ContenidoAssetsTest {
         val fichas = contenidos.filterIsInstance<Ficha>()
         val especiales = contenidos.filterIsInstance<SemanaEspecial>()
 
-        // Estado del contenido segun CLAUDE.md: 34 fichas 2026 (37-53),
-        // EN C1 y DE B2, con 4 semanas de repaso y 2 Survival.
-        assertEquals(34, contenidos.size)
-        assertEquals(28, fichas.size)
-        assertEquals(6, especiales.size)
-        assertEquals(4, especiales.count { it.clase == Clase.REVIEW })
-        assertEquals(2, especiales.count { it.clase == Clase.SURVIVAL })
+        // Estado del contenido: 51 fichas 2026 (37-53), EN C1 + EN B2 + DE B2
+        // (17 fichas cada uno de EN B2 y DE B2, es 34 de C1... ver el detalle
+        // real: 42 fichas de skill + 9 semanas especiales, 3 por combinacion
+        // idioma-nivel (2 repaso + 1 Survival). El id de repaso/Survival
+        // lleva el nivel ademas del idioma porque ingles tiene dos niveles
+        // con calendario propio en 2026, y cada uno tiene su propia semana
+        // de repaso y Survival -- no comparten texto.
+        assertEquals(51, contenidos.size)
+        assertEquals(42, fichas.size)
+        assertEquals(9, especiales.size)
+        assertEquals(6, especiales.count { it.clase == Clase.REVIEW })
+        assertEquals(3, especiales.count { it.clase == Clase.SURVIVAL })
     }
 
     @Test
     fun `las semanas especiales conocidas del piloto cargan como SemanaEspecial`() {
-        val ids = listOf("REVIEW-DE-S40", "REVIEW-DE-S48", "REVIEW-EN-S40", "REVIEW-EN-S48",
-            "SURVIVAL-DE-S44", "SURVIVAL-EN-S44")
+        val ids = listOf(
+            "REVIEW-DE-B2-S40", "REVIEW-DE-B2-S48", "SURVIVAL-DE-B2-S44",
+            "REVIEW-EN-B2-S40", "REVIEW-EN-B2-S48", "SURVIVAL-EN-B2-S44",
+            "REVIEW-EN-C1-S40", "REVIEW-EN-C1-S48", "SURVIVAL-EN-C1-S44",
+        )
         for (id in ids) {
             val archivo = File(carpetaContenido(), "$id.json")
             assertTrue("falta $id.json", archivo.isFile)
