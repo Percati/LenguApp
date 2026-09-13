@@ -60,14 +60,18 @@
  "errores": [
   "*ist* statt *wird* im Vorgangspassiv — der direkte Interferenzfehler.",
   "*ist geworden* statt *ist worden*.",
-  "sich lassen mit dem Reflexivpronomen verwechseln: Das lässt **sich** machen, nicht Das lässt mich machen."
+  "sich lassen mit dem Reflexivpronomen verwechseln: Das lässt **sich** machen, nicht Das lässt mich machen.",
+  "*ist* statt *wird* setzen, weil das Englische Vorgang und Zustand nicht trennt.",
+  "Das Passiv überbenutzen, weil es im Englischen häufiger ist.",
+  "*ist geworden* statt *ist worden* schreiben."
  ],
  "vocabulario": [
   {
    "item": "der Zielkonflikt",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "el conflicto de objetivos"
+    "es": "el conflicto de objetivos",
+    "en": "the trade-off"
    },
    "nota": "Entsprechung von *trade-off*"
   },
@@ -75,7 +79,8 @@
    "item": "etwas in Kauf nehmen",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "aceptar como precio"
+    "es": "aceptar como precio",
+    "en": "to accept something as the price"
    },
    "reccion": "Akk.",
    "nota": "Funktionsverbgefüge"
@@ -84,7 +89,8 @@
    "item": "der Verzicht auf",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "la renuncia a"
+    "es": "la renuncia a",
+    "en": "going without, forgoing"
    },
    "reccion": "+ Akk.",
    "nota": "starkes Konzept im DACH-Diskurs",
@@ -94,7 +100,8 @@
    "item": "die Grundlast",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "la carga base"
+    "es": "la carga base",
+    "en": "the base load"
    },
    "nota": "Fachsprache Energietechnik"
   },
@@ -102,7 +109,8 @@
    "item": "der ökologische Fußabdruck",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la huella ecológica"
+    "es": "la huella ecológica",
+    "en": "the ecological footprint"
    },
    "nota": "in CH: *Fussabdruck*",
    "variante": "CH"
@@ -111,7 +119,8 @@
    "item": "die Energiewende",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la transición energética"
+    "es": "la transición energética",
+    "en": "the energy transition"
    },
    "nota": "politischer Begriff"
   },
@@ -119,7 +128,8 @@
    "item": "etwas eindämmen",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "contener, frenar"
+    "es": "contener, frenar",
+    "en": "to curb, to contain"
    },
    "reccion": "Akk."
   },
@@ -127,7 +137,8 @@
    "item": "der Ausstoß / ausstoßen",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la emisión / emitir"
+    "es": "la emisión / emitir",
+    "en": "emissions / to emit"
    },
    "reccion": "Akk.",
    "nota": "häufiger als *Emission*"
@@ -136,21 +147,24 @@
    "item": "die Kreislaufwirtschaft",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la economía circular"
+    "es": "la economía circular",
+    "en": "the circular economy"
    }
   },
   {
    "item": "das Stromnetz",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la red eléctrica"
+    "es": "la red eléctrica",
+    "en": "the electricity grid"
    }
   },
   {
    "item": "nachhaltig",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "sostenible"
+    "es": "sostenible",
+    "en": "sustainable (also: lasting)"
    },
    "nota": "heisst auch „duradero\""
   },
@@ -158,7 +172,8 @@
    "item": "die Mülltrennung",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la separación de residuos"
+    "es": "la separación de residuos",
+    "en": "waste separation"
    },
    "nota": "starke kulturelle Praxis"
   },
@@ -166,7 +181,8 @@
    "item": "die Abhängigkeit von",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la dependencia de"
+    "es": "la dependencia de",
+    "en": "dependence on"
    },
    "reccion": "+ Dat."
   },
@@ -174,7 +190,8 @@
    "item": "schönreden",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "maquillar, endulzar"
+    "es": "maquillar, endulzar",
+    "en": "to talk up, to gloss over"
    },
    "reccion": "Akk."
   }
@@ -184,56 +201,64 @@
    "expresion": "Dabei wird… erzeugt",
    "funcion": "Vorgang beschreiben",
    "traducciones": {
-    "es": "en el proceso se genera…"
+    "es": "en el proceso se genera…",
+    "en": "In the process… is produced"
    }
   },
   {
    "expresion": "Das lässt sich nicht…",
    "funcion": "Unmöglichkeit, elegant",
    "traducciones": {
-    "es": "eso no se puede…"
+    "es": "eso no se puede…",
+    "en": "That can't be…"
    }
   },
   {
    "expresion": "Es ist damit zu rechnen, dass…",
    "funcion": "Prognose, formell",
    "traducciones": {
-    "es": "cabe esperar que…"
+    "es": "cabe esperar que…",
+    "en": "It is to be expected that…"
    }
   },
   {
    "expresion": "Der Verbrauch ist zu senken",
    "funcion": "Vorschrift",
    "traducciones": {
-    "es": "hay que reducir el consumo"
+    "es": "hay que reducir el consumo",
+    "en": "Consumption is to be reduced"
    }
   },
   {
    "expresion": "Das ist kaum messbar",
    "funcion": "kompakte Ersatzform",
    "traducciones": {
-    "es": "eso apenas se puede medir"
+    "es": "eso apenas se puede medir",
+    "en": "That's hardly measurable"
    }
   },
   {
    "expresion": "Dadurch wird…",
    "funcion": "Ursache mit *durch*",
    "traducciones": {
-    "es": "con eso se…"
+    "es": "con eso se…",
+    "en": "As a result…"
    }
   },
   {
    "expresion": "Von der Politik wird…",
    "funcion": "Urheber mit *von*",
    "traducciones": {
-    "es": "por parte de la política se…"
+    "es": "por parte de la política se…",
+    "en": "By policymakers…"
    }
   },
   {
    "expresion": "Es muss abgewogen werden, ob…",
    "funcion": "Abwägung",
    "traducciones": {
-    "es": "hay que sopesar si…"
+    "es": "hay que sopesar si…",
+    "en": "It has to be weighed up whether…"
    }
   }
  ],
@@ -321,6 +346,14 @@
   "notaPie": "**Urheber:** von + Dat. (Person, Institution), durch + Akk. (Mittel, Ursache). **Perfekt Passiv:** ist… **worden**, nicht geworden."
  },
  "contraste": {
-  "es": "Spanisch bevorzugt *se*-Konstruktionen (*se mide*) und das Aktiv, wo das Deutsche das Passiv setzt. Die direkte Übertragung erzeugt entweder zu viel *man* oder ein falsches *ist* statt *wird*."
+  "es": "Spanisch bevorzugt *se*-Konstruktionen (*se mide*) und das Aktiv, wo das Deutsche das Passiv setzt. Die direkte Übertragung erzeugt entweder zu viel *man* oder ein falsches *ist* statt *wird*.",
+  "en": "Das Englische benutzt das Passiv **noch häufiger** als das Deutsche und hat dafür eine einzige Form: *is done*, *was done*, *has been done*. Es fehlt die Unterscheidung Vorgangs- gegen Zustandspassiv — *the plant is closed* deckt beides ab. Genau dort entsteht der Fehler: Englischsprachige setzen *ist* statt *wird*, weil ihre Sprache nicht zwischen beidem trennt. Die deutschen Ersatzformen (*lässt sich*, *-bar*) entsprechen ungefähr *can be done*."
+ },
+ "erroresContrastivos": {
+  "en": [
+   "*ist* statt *wird* setzen, weil das Englische Vorgang und Zustand nicht trennt.",
+   "Das Passiv überbenutzen, weil es im Englischen häufiger ist.",
+   "*ist geworden* statt *ist worden* schreiben."
+  ]
  }
 }

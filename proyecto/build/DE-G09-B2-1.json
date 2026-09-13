@@ -48,14 +48,17 @@
  "errores": [
   "*Würde* überall: *Wenn ich reich sein würde* statt *wäre*.",
   "*Hätte gekonnt* statt *hätte können*.",
-  "Im Vorwurf das Modalverb vergessen: *Das hättest du gesagt* heisst etwas anderes als *Das hättest du sagen sollen*."
+  "Im Vorwurf das Modalverb vergessen: *Das hättest du gesagt* heisst etwas anderes als *Das hättest du sagen sollen*.",
+  "*würde* auch im *wenn*-Satz setzen, parallel zu *would*.",
+  "Die Originalformen (*hätte*, *wäre*, *käme*) gar nicht benutzen, weil es sie im Englischen nicht gibt."
  ],
  "vocabulario": [
   {
    "item": "etwas ansprechen",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "sacar un tema"
+    "es": "sacar un tema",
+    "en": "to raise a subject"
    },
    "reccion": "Akk.",
    "nota": "Schlüsselverb für Konflikte"
@@ -64,7 +67,8 @@
    "item": "Rücksicht nehmen auf",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "tener consideración con"
+    "es": "tener consideración con",
+    "en": "to be considerate of"
    },
    "reccion": "+ Akk.",
    "nota": "starkes Kulturkonzept"
@@ -73,7 +77,8 @@
    "item": "sich auseinanderleben",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "distanciarse con el tiempo"
+    "es": "distanciarse con el tiempo",
+    "en": "to drift apart"
    },
    "reccion": "reflexiv"
   },
@@ -81,7 +86,8 @@
    "item": "das Verhältnis zu",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "la relación con"
+    "es": "la relación con",
+    "en": "the relationship with"
    },
    "reccion": "+ Dat.",
    "nota": "neutraler als *Beziehung*"
@@ -90,7 +96,8 @@
    "item": "jemandem etwas anvertrauen",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "confiar algo a alguien"
+    "es": "confiar algo a alguien",
+    "en": "to confide something to someone"
    },
    "reccion": "Dat. + Akk."
   },
@@ -98,7 +105,8 @@
    "item": "sich streiten über / um",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "discutir sobre / por"
+    "es": "discutir sobre / por",
+    "en": "to argue about / over"
    },
    "reccion": "+ Akk.",
    "nota": "Präposition ändert die Nuance"
@@ -107,7 +115,8 @@
    "item": "die Zuneigung",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "el afecto"
+    "es": "el afecto",
+    "en": "affection"
    },
    "nota": "eher formell"
   },
@@ -115,7 +124,8 @@
    "item": "jemandem aus dem Weg gehen",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "evitar a alguien"
+    "es": "evitar a alguien",
+    "en": "to avoid someone"
    },
    "reccion": "Dat.",
    "nota": "Redewendung"
@@ -124,7 +134,8 @@
    "item": "die Erziehung",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la crianza"
+    "es": "la crianza",
+    "en": "upbringing (not schooling)"
    },
    "bajoNivelJustificado": true,
    "nota": "≠ *Bildung*"
@@ -133,7 +144,8 @@
    "item": "sich vertragen",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "llevarse bien"
+    "es": "llevarse bien",
+    "en": "to get on, to make up"
    },
    "reccion": "reflexiv",
    "nota": "umgangssprachlich, sehr nützlich"
@@ -142,21 +154,24 @@
    "item": "nachtragend sein",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "ser rencoroso"
+    "es": "ser rencoroso",
+    "en": "to hold a grudge"
    }
   },
   {
    "item": "die Aufgabenteilung",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "el reparto de tareas"
+    "es": "el reparto de tareas",
+    "en": "the division of tasks"
    }
   },
   {
    "item": "jemandem den Rücken stärken",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "respaldar a alguien"
+    "es": "respaldar a alguien",
+    "en": "to back someone up"
    },
    "reccion": "Dat.",
    "nota": "Redewendung"
@@ -165,7 +180,8 @@
    "item": "die Verpflichtung gegenüber",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la obligación hacia"
+    "es": "la obligación hacia",
+    "en": "the obligation towards"
    },
    "reccion": "+ Dat."
   }
@@ -175,56 +191,64 @@
    "expresion": "An deiner Stelle würde ich…",
    "funcion": "Ratschlag ohne Belehrung",
    "traducciones": {
-    "es": "yo en tu lugar…"
+    "es": "yo en tu lugar…",
+    "en": "If I were you I'd…"
    }
   },
   {
    "expresion": "Ich hätte gern…",
    "funcion": "höfliche Bitte",
    "traducciones": {
-    "es": "quisiera…"
+    "es": "quisiera…",
+    "en": "I'd like…"
    }
   },
   {
    "expresion": "Es wäre besser, wenn…",
    "funcion": "abgeschwächte Empfehlung",
    "traducciones": {
-    "es": "sería mejor que…"
+    "es": "sería mejor que…",
+    "en": "It would be better if…"
    }
   },
   {
    "expresion": "Das hättest du… sollen",
    "funcion": "irrealer Vorwurf",
    "traducciones": {
-    "es": "deberías haber…"
+    "es": "deberías haber…",
+    "en": "You should have…"
    }
   },
   {
    "expresion": "Ich wünschte, …",
    "funcion": "irrealer Wunsch",
    "traducciones": {
-    "es": "ojalá…"
+    "es": "ojalá…",
+    "en": "I wish…"
    }
   },
   {
    "expresion": "Könntest du…?",
    "funcion": "Bitte",
    "traducciones": {
-    "es": "¿podrías…?"
+    "es": "¿podrías…?",
+    "en": "Could you…?"
    }
   },
   {
    "expresion": "Das könnte daran liegen, dass…",
    "funcion": "vorsichtige Erklärung",
    "traducciones": {
-    "es": "podría deberse a que…"
+    "es": "podría deberse a que…",
+    "en": "That might be because…"
    }
   },
   {
    "expresion": "Wäre es möglich, dass…?",
    "funcion": "vorsichtige Vermutung",
    "traducciones": {
-    "es": "¿sería posible que…?"
+    "es": "¿sería posible que…?",
+    "en": "Would it be possible that…?"
    }
   }
  ],
@@ -306,6 +330,13 @@
   "notaPie": "**Originalformen statt würde:** hätte, wäre, könnte, müsste, sollte, dürfte, wüsste, ginge, käme, gäbe, bräuchte. **Vergangenheit:** nur **eine** Form — hätte/wäre + Partizip. Mit Modalverb: **Doppelinfinitiv** (hätte machen können)."
  },
  "contraste": {
-  "es": "Der spanische *condicional* und der *imperfecto de subjuntivo* teilen sich die Arbeit, die im Deutschen ein einziger Modus leistet. Die spanische Zweiteilung (*si tuviera… haría*) verleitet dazu, im Deutschen *würde* in beiden Satzteilen zu setzen — im *wenn*-Satz ist das stilistisch schlecht."
+  "es": "Der spanische *condicional* und der *imperfecto de subjuntivo* teilen sich die Arbeit, die im Deutschen ein einziger Modus leistet. Die spanische Zweiteilung (*si tuviera… haría*) verleitet dazu, im Deutschen *würde* in beiden Satzteilen zu setzen — im *wenn*-Satz ist das stilistisch schlecht.",
+  "en": "Das Englische bildet den Irrealis mit *would* plus Infinitiv und einer Vergangenheitsform im *if*-Satz: *if I had time, I would come*. Die Struktur ist also parallel, und das ist die Falle: *would* verleitet dazu, im deutschen *wenn*-Satz ebenfalls *würde* zu setzen. Die Originalformen (*hätte*, *wäre*, *könnte*) haben im Englischen keine Entsprechung und werden deshalb systematisch übergangen."
+ },
+ "erroresContrastivos": {
+  "en": [
+   "*würde* auch im *wenn*-Satz setzen, parallel zu *would*.",
+   "Die Originalformen (*hätte*, *wäre*, *käme*) gar nicht benutzen, weil es sie im Englischen nicht gibt."
+  ]
  }
 }

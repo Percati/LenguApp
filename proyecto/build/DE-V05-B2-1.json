@@ -62,14 +62,17 @@
   "*Doch* am Satzanfang ist keine Modalpartikel, sondern Widerspruch auf eine negative Frage.",
   "*denn* ausserhalb echter Fragen: *Ich weiss nicht, wie es denn läuft* ist falsch.",
   "*ja* bei neuer Information: funktioniert nur, wenn der andere es schon weiss.",
-  "*mal* in formellen schriftlichen Texten an Behörden."
+  "*mal* in formellen schriftlichen Texten an Behörden.",
+  "Modalpartikeln ganz weglassen und dadurch schroff klingen.",
+  "*doch* mit *but* gleichsetzen und an den Satzanfang stellen."
  ],
  "vocabulario": [
   {
    "item": "etwas nachvollziehen können",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "entender el razonamiento de algo"
+    "es": "entender el razonamiento de algo",
+    "en": "to be able to see why, to follow the reasoning"
    },
    "reccion": "Akk.",
    "nota": "extrem hochfrequent"
@@ -78,7 +81,8 @@
    "item": "die Absprache / absprechen mit",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "el acuerdo previo"
+    "es": "el acuerdo previo",
+    "en": "the informal arrangement / to agree with"
    },
    "reccion": "+ Dat.",
    "nota": "informelle Vorabklärung"
@@ -87,7 +91,8 @@
    "item": "sich einbringen",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "implicarse, aportar"
+    "es": "implicarse, aportar",
+    "en": "to get involved, to contribute"
    },
    "reccion": "reflexiv",
    "nota": "schwer übersetzbar"
@@ -96,7 +101,8 @@
    "item": "die Rückmeldung",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "la respuesta, el retorno"
+    "es": "la respuesta, el retorno",
+    "en": "the feedback, the reply"
    },
    "nota": "formeller als *Feedback*"
   },
@@ -104,7 +110,8 @@
    "item": "die Einarbeitung / sich einarbeiten in",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "el período de incorporación"
+    "es": "el período de incorporación",
+    "en": "the induction / to get to grips with"
    },
    "reccion": "+ Akk."
   },
@@ -112,7 +119,8 @@
    "item": "sich kümmern um",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "encargarse de"
+    "es": "encargarse de",
+    "en": "to take care of"
    },
    "reccion": "+ Akk."
   },
@@ -120,7 +128,8 @@
    "item": "zuständig sein für",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "ser responsable de"
+    "es": "ser responsable de",
+    "en": "to be responsible for"
    },
    "reccion": "+ Akk."
   },
@@ -128,7 +137,8 @@
    "item": "etwas in Angriff nehmen",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "poner manos a la obra"
+    "es": "poner manos a la obra",
+    "en": "to tackle something"
    },
    "reccion": "Akk.",
    "nota": "Funktionsverbgefüge"
@@ -137,14 +147,16 @@
    "item": "der Termindruck",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la presión de plazos"
+    "es": "la presión de plazos",
+    "en": "deadline pressure"
    }
   },
   {
    "item": "die Überstunden (Pl.)",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "las horas extra"
+    "es": "las horas extra",
+    "en": "overtime"
    },
    "nota": "nur Plural"
   },
@@ -152,7 +164,8 @@
    "item": "der Handlungsspielraum",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "el margen de maniobra"
+    "es": "el margen de maniobra",
+    "en": "room for manoeuvre"
    },
    "nota": "Margen de decisión propio"
   },
@@ -160,7 +173,8 @@
    "item": "das Traktandum (Pl. Traktanden)",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "el punto del orden del día"
+    "es": "el punto del orden del día",
+    "en": "the agenda item (CH)"
    },
    "nota": "**CH**; DE: *Tagesordnungspunkt*",
    "variante": "CH"
@@ -169,7 +183,8 @@
    "item": "jemandem kündigen",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "despedir a alguien"
+    "es": "despedir a alguien",
+    "en": "to give someone notice"
    },
    "reccion": "+ Dat.",
    "nota": "Achtung: wer kündigt wem?"
@@ -178,7 +193,8 @@
    "item": "die Belastung",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la carga"
+    "es": "la carga",
+    "en": "the strain, the burden"
    },
    "nota": "nicht nur körperlich"
   }
@@ -188,56 +204,64 @@
    "expresion": "Sag doch mal, …",
    "funcion": "lädt freundlich zum Sprechen ein",
    "traducciones": {
-    "es": "— (ohne direkte Entsprechung)"
+    "es": "— (ohne direkte Entsprechung)",
+    "en": null
    }
   },
   {
    "expresion": "Schauen wir uns das mal an.",
    "funcion": "schlägt vor, ohne zu drängen",
    "traducciones": {
-    "es": null
+    "es": null,
+    "en": null
    }
   },
   {
    "expresion": "Das ist ja bekannt.",
    "funcion": "markiert etwas als offensichtlich",
    "traducciones": {
-    "es": null
+    "es": null,
+    "en": null
    }
   },
   {
    "expresion": "Wie war das denn…?",
    "funcion": "fragt interessiert nach",
    "traducciones": {
-    "es": "¿y cómo fue…?"
+    "es": "¿y cómo fue…?",
+    "en": "So how was…?"
    }
   },
   {
    "expresion": "Das haben wir doch besprochen.",
    "funcion": "erinnert an gemeinsames Wissen",
    "traducciones": {
-    "es": "pero si ya lo hablamos"
+    "es": "pero si ya lo hablamos",
+    "en": "But we did discuss that."
    }
   },
   {
    "expresion": "Können wir das mal durchgehen?",
    "funcion": "bittet unverbindlich",
    "traducciones": {
-    "es": "¿lo repasamos?"
+    "es": "¿lo repasamos?",
+    "en": "Can we go through it?"
    }
   },
   {
    "expresion": "Das müsste eigentlich klappen.",
    "funcion": "schwächt eine Zusage ab",
    "traducciones": {
-    "es": "en principio debería salir"
+    "es": "en principio debería salir",
+    "en": "That should work, in principle."
    }
   },
   {
    "expresion": "Da bin ich mir nicht so sicher.",
    "funcion": "widerspricht vorsichtig",
    "traducciones": {
-    "es": "no estoy tan seguro"
+    "es": "no estoy tan seguro",
+    "en": "I'm not so sure about that."
    }
   }
  ],
@@ -341,6 +365,13 @@
   "notaPie": "Stellung: nach dem finiten Verb und den Pronomen, vor der neuen Information. Nie am Satzanfang. Reihenfolge bei Kombinationen fest: **doch mal**, nie **mal doch**. Maximal zwei pro Satz."
  },
  "contraste": {
-  "es": "Das Spanische löst dieselben Funktionen über Intonation, Verbmodus und Anhängsel wie *¿no?* oder *dale*. Es gibt daher fast nie eine Wort-zu-Wort-Entsprechung: Modalpartikeln lernt man über die Situation, nicht über die Bedeutung. Wer sie übersetzen will, benutzt sie falsch."
+  "es": "Das Spanische löst dieselben Funktionen über Intonation, Verbmodus und Anhängsel wie *¿no?* oder *dale*. Es gibt daher fast nie eine Wort-zu-Wort-Entsprechung: Modalpartikeln lernt man über die Situation, nicht über die Bedeutung. Wer sie übersetzen will, benutzt sie falsch.",
+  "en": "Das Englische hat keine Modalpartikeln. Dieselben Funktionen übernehmen dort **Frageanhängsel** (*isn't it?*, *right?*), **Adverbien** (*actually*, *just*) und vor allem die Intonation. Englischsprachige unterschätzen daher, wie unhöflich ein partikelloser deutscher Satz klingt — *Komm her* ist grammatisch richtig und sozial schroff. Merkhilfe: *mal* liegt nahe bei *just*, *doch* bei einem betonten *but you know*."
+ },
+ "erroresContrastivos": {
+  "en": [
+   "Modalpartikeln ganz weglassen und dadurch schroff klingen.",
+   "*doch* mit *but* gleichsetzen und an den Satzanfang stellen."
+  ]
  }
 }

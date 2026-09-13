@@ -291,7 +291,8 @@
             "additionalProperties": {
               "type": "string"
             },
-            "minProperties": 1
+            "minProperties": 1,
+            "description": "Glosa por lengua base. NUNCA lleva la lengua que se aprende. Se rellena una clave por columna de idioma presente en la tabla Markdown."
           },
           "bajoNivelJustificado": {
             "type": "boolean",
@@ -429,6 +430,27 @@
     "variante": {
       "type": "string",
       "description": "Variedad regional a la que pertenece esta ficha (CH, AT, AmE, BrE, rioplatense...). Si esta presente, la app DEBE mostrarla etiquetada y permitir desactivarla. Ausente = estandar."
+    },
+    "erroresContrastivos": {
+      "type": "object",
+      "description": "Errores tipicos ADICIONALES segun la lengua base del usuario. Los errores de un anglohablante que aprende aleman no son los de un hispanohablante, asi que esta seccion depende del par (lengua que se aprende, lengua base). El campo 'errores' sigue siendo el universal; este se suma, no lo reemplaza.",
+      "propertyNames": {
+        "enum": [
+          "es",
+          "en",
+          "de",
+          "fr",
+          "it",
+          "pt"
+        ]
+      },
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 10
+        }
+      }
     }
   },
   "allOf": [

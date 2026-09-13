@@ -395,9 +395,9 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 
 **Velocidades:** normal y 80 % (para shadowing)
 
-**564 textos → 2256 clips** (564 × 2 voz/voces × 2 velocidades)
+**712 textos → 2848 clips** (712 × 2 voz/voces × 2 velocidades)
 
-### Frases de ejemplo — 110
+### Frases de ejemplo — 140
 
 | Texto | Ficha |
 |---|---|
@@ -411,16 +411,31 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | *I hear you, but I don't think the second half follows from the first.* | `EN-F02-C1-1` |
 | *I'm going to push back on that.* | `EN-F02-C1-1` |
 | *That's true of small systems, less so of anything safety-critical.* | `EN-F02-C1-1` |
+| *In short, the project is late and it's a staffing problem, not a technical one.* | `EN-F11-B2-1` |
+| *Three things came up. The important one is the third.* | `EN-F11-B2-1` |
+| *That's what the report says. Whether I agree is another matter.* | `EN-F11-B2-1` |
+| *I'm leaving out the details of the budget.* | `EN-F11-B2-1` |
+| *Give me a minute and I'll explain.* | `EN-F11-B2-1` |
 | *The short version is that the course works, but only for people who already have the basics.* | `EN-F11-C1-1` |
 | *I'm skipping the methodology. Ask me if you want it.* | `EN-F11-C1-1` |
 | *Three things came out of it. And the one that actually matters is the third.* | `EN-F11-C1-1` |
 | *The sample was small, so treat it as directional.* | `EN-F11-C1-1` |
 | *That's what they found. What I think about it is another matter.* | `EN-F11-C1-1` |
+| *If you could include delivery, I'd be happy to take two.* | `EN-F12-B2-1` |
+| *What would work for you?* | `EN-F12-B2-1` |
+| *I can't go that high, but I could pay today.* | `EN-F12-B2-1` |
+| *What if we tried it for a month?* | `EN-F12-B2-1` |
+| *That works for me.* | `EN-F12-B2-1` |
 | *If you could be flexible on the date, I'd be able to move on the price.* | `EN-F12-C1-1` |
 | *What would it take for this to work for you?* | `EN-F12-C1-1` |
 | *I can't do the full amount, but I can do it in two payments this month.* | `EN-F12-C1-1` |
 | *Suppose we tried it for three months and reviewed it.* | `EN-F12-C1-1` |
 | *I think we want the same thing here; we just disagree about how.* | `EN-F12-C1-1` |
+| *It's a bit rich for me, but that might just be my taste.* | `EN-F13-B2-1` |
+| *I'd say it needs a little more salt.* | `EN-F13-B2-1` |
+| *It's not really what I expected, to be honest.* | `EN-F13-B2-1` |
+| *A bit heavy, don't you think?* | `EN-F13-B2-1` |
+| *I'm not sure that's right.* | `EN-F13-B2-1` |
 | *That tends to be the case, though the data is thinner than people assume.* | `EN-F13-C1-1` |
 | *There's some evidence to suggest that offsets underperform their stated value.* | `EN-F13-C1-1` |
 | *I'd be careful about generalising from one grid.* | `EN-F13-C1-1` |
@@ -431,41 +446,46 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | *I might be missing context — what's your read on why it slipped?* | `EN-F14-C1-1` |
 | *That's the bit I'd do differently.* | `EN-F14-C1-1` |
 | *What's your read on why it slipped?* | `EN-F14-C1-1` |
+| *Hold on, let me think how to say this.* | `EN-F15-B2-1` |
+| *Sorry, let me say that again — I meant the opposite.* | `EN-F15-B2-1` |
+| *Can I say something?* | `EN-F15-B2-1` |
+| *What's the word… give me a second.* | `EN-F15-B2-1` |
+| *Sorry, could you say that again?* | `EN-F15-B2-1` |
 | *There's a word I'm looking for, bear with me… estranged. That's it.* | `EN-F15-C1-1` |
 | *That came out wrong. What I meant was that I understood why she did it, not that I agreed.* | `EN-F15-C1-1` |
 | *Can I jump in on that?* | `EN-F15-C1-1` |
 | *Let me start that again.* | `EN-F15-C1-1` |
 | *But you were going to say something.* | `EN-F15-C1-1` |
-| *The heating hasn't worked since Monday, so we've been using an electric heater. Could you send someone this week?* | `EN-F16-C1-1` |
-| *I'd like this sorted out by Friday, please.* | `EN-F16-C1-1` |
-| *As a result, we've had to use an electric heater.* | `EN-F16-C1-1` |
-| *I'd appreciate it if you could send someone this week.* | `EN-F16-C1-1` |
-| *I look forward to hearing from you.* | `EN-F16-C1-1` |
+| *The heating hasn't worked since Monday, so we've been using an electric heater. Could you send someone this week?* | `EN-F16-B2-1` |
+| *I'd like this sorted out by Friday, please.* | `EN-F16-B2-1` |
+| *As a result, we've had to use an electric heater.* | `EN-F16-B2-1` |
+| *I'd appreciate it if you could send someone this week.* | `EN-F16-B2-1` |
+| *I look forward to hearing from you.* | `EN-F16-B2-1` |
 | To a colleague: *This won't scale and we both know it.* | `EN-F17-C1-1` |
 | To a manager: *I've got concerns about how this behaves at volume — worth a conversation before we commit.* | `EN-F17-C1-1` |
 | In a formal report: *Scalability has not been demonstrated at the volumes anticipated, and further assessment is recommended prior to commitment.* | `EN-F17-C1-1` |
 | *Worth a conversation before we commit.* | `EN-F17-C1-1` |
 | *Further assessment is recommended prior to commitment.* | `EN-F17-C1-1` |
-| *I've been with the same bank since 2015, but I changed my account type last year.* | `EN-G03-C1-1` |
-| *Have you ever paid for something in instalments? — Yes, I bought a laptop that way.* | `EN-G03-C1-1` |
-| *I've already transferred the money.* | `EN-G03-C1-1` |
-| *When did you open the account?* | `EN-G03-C1-1` |
-| *I've never had a loan, and I don't want one.* | `EN-G03-C1-1` |
-| *If they had tested it properly, the bug wouldn't have reached users.* | `EN-G07-C1-1` |
-| *We might have noticed earlier if the alerts had been set up.* | `EN-G07-C1-1` |
-| *Had we known about the update, we would have waited.* | `EN-G07-C1-1` |
-| *If I'd backed it up, I wouldn't have lost everything.* | `EN-G07-C1-1` |
-| *In hindsight, we should have checked the settings.* | `EN-G07-C1-1` |
-| *Single-use plastics were banned last year.* | `EN-G11-C1-1` |
-| *The targets have been missed three times.* | `EN-G11-C1-1` |
-| *Most of it can be recycled, but it isn't.* | `EN-G11-C1-1` |
-| *The plant is being closed at the end of the year.* | `EN-G11-C1-1` |
-| *Steps are being taken, according to the report.* | `EN-G11-C1-1` |
-| *She said she had been playing for years.* | `EN-G13-C1-1` |
-| *He asked whether I wanted to join them the next day.* | `EN-G13-C1-1` |
-| *They told us not to bring anything.* | `EN-G13-C1-1` |
-| *She told me it was worth trying.* | `EN-G13-C1-1` |
-| *He admitted that he had given it up.* | `EN-G13-C1-1` |
+| *I've been with the same bank since 2015, but I changed my account type last year.* | `EN-G03-B2-1` |
+| *Have you ever paid for something in instalments? — Yes, I bought a laptop that way.* | `EN-G03-B2-1` |
+| *I've already transferred the money.* | `EN-G03-B2-1` |
+| *When did you open the account?* | `EN-G03-B2-1` |
+| *I've never had a loan, and I don't want one.* | `EN-G03-B2-1` |
+| *If they had tested it properly, the bug wouldn't have reached users.* | `EN-G07-B2-1` |
+| *We might have noticed earlier if the alerts had been set up.* | `EN-G07-B2-1` |
+| *Had we known about the update, we would have waited.* | `EN-G07-B2-1` |
+| *If I'd backed it up, I wouldn't have lost everything.* | `EN-G07-B2-1` |
+| *In hindsight, we should have checked the settings.* | `EN-G07-B2-1` |
+| *Single-use plastics were banned last year.* | `EN-G11-B2-1` |
+| *The targets have been missed three times.* | `EN-G11-B2-1` |
+| *Most of it can be recycled, but it isn't.* | `EN-G11-B2-1` |
+| *The plant is being closed at the end of the year.* | `EN-G11-B2-1` |
+| *Steps are being taken, according to the report.* | `EN-G11-B2-1` |
+| *She said she had been playing for years.* | `EN-G13-B2-1` |
+| *He asked whether I wanted to join them the next day.* | `EN-G13-B2-1` |
+| *They told us not to bring anything.* | `EN-G13-B2-1` |
+| *She told me it was worth trying.* | `EN-G13-B2-1` |
+| *He admitted that he had given it up.* | `EN-G13-B2-1` |
 | *The study, published last month, contradicts three earlier trials.* | `EN-G15-C1-1` |
 | *Anyone taking that medication should avoid alcohol.* | `EN-G15-C1-1` |
 | *Having been misdiagnosed twice, she stopped trusting the referral system.* | `EN-G15-C1-1` |
@@ -476,16 +496,21 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | *It was the bureaucracy, not the weather, that nearly broke me.* | `EN-G16-C1-1` |
 | *All I wanted was somebody to explain the recycling.* | `EN-G16-C1-1` |
 | *Little did I know how long the paperwork would take.* | `EN-G16-C1-1` |
-| *I wish we lived closer to my parents.* | `EN-G20-C1-1` |
-| *If only I had said something at the time.* | `EN-G20-C1-1` |
-| *I wish he would stop apologising.* | `EN-G20-C1-1` |
-| *It's time we talked about it properly.* | `EN-G20-C1-1` |
-| *I'd rather you didn't mention it.* | `EN-G20-C1-1` |
-| *By the time the story was published, the company had already denied it.* | `EN-G25-C1-1` |
-| *Nobody knew the reporter had been there.* | `EN-G25-C1-1` |
-| *She said she hadn't seen the email.* | `EN-G25-C1-1` |
-| *It wasn't until the next day that we found out.* | `EN-G25-C1-1` |
-| *When I got there, it had already started.* | `EN-G25-C1-1` |
+| *I wish we lived closer to my parents.* | `EN-G20-B2-1` |
+| *If only I had said something at the time.* | `EN-G20-B2-1` |
+| *I wish he would stop apologising.* | `EN-G20-B2-1` |
+| *It's time we talked about it properly.* | `EN-G20-B2-1` |
+| *I'd rather you didn't mention it.* | `EN-G20-B2-1` |
+| *By the time the story was published, the company had already denied it.* | `EN-G25-B2-1` |
+| *Nobody knew the reporter had been there.* | `EN-G25-B2-1` |
+| *She said she hadn't seen the email.* | `EN-G25-B2-1` |
+| *It wasn't until the next day that we found out.* | `EN-G25-B2-1` |
+| *When I got there, it had already started.* | `EN-G25-B2-1` |
+| *We set off early and checked in without any trouble.* | `EN-V03-B2-1` |
+| *It took me months to get used to it.* | `EN-V03-B2-1` |
+| *The car broke down and we had to sort it out ourselves.* | `EN-V03-B2-1` |
+| *I couldn't put up with the noise any longer.* | `EN-V03-B2-1` |
+| *We ran out of money three days before the end.* | `EN-V03-B2-1` |
 | *I got into it through a friend and ended up sinking about ten years into it.* | `EN-V03-C1-1` |
 | *I've been meaning to take it back up, but I keep putting it off.* | `EN-V03-C1-1` |
 | *It started as something to wind down with and turned into a second job.* | `EN-V03-C1-1` |
@@ -496,11 +521,16 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | *The employer bears the cost; the employee absorbs the risk.* | `EN-V05-C1-1` |
 | *I'd want to raise a concern before we commit to that.* | `EN-V05-C1-1` |
 | *They conducted the analysis but never reached a conclusion.* | `EN-V05-C1-1` |
-| *I spent three weeks going round in circles with them.* | `EN-V06-C1-1` |
-| *To cut a long story short, they sent me to a different office.* | `EN-V06-C1-1` |
-| *There's a lot of red tape, but we're all in the same boat.* | `EN-V06-C1-1` |
-| *Sooner or later they'll have to answer.* | `EN-V06-C1-1` |
-| *I only did it as a last resort.* | `EN-V06-C1-1` |
+| *I spent three weeks going round in circles with them.* | `EN-V06-B2-1` |
+| *To cut a long story short, they sent me to a different office.* | `EN-V06-B2-1` |
+| *There's a lot of red tape, but we're all in the same boat.* | `EN-V06-B2-1` |
+| *Sooner or later they'll have to answer.* | `EN-V06-B2-1` |
+| *I only did it as a last resort.* | `EN-V06-B2-1` |
+| *I started the course late. That said, I caught up within a month.* | `EN-V07-B2-1` |
+| *The classes were online, so I could study after work.* | `EN-V07-B2-1` |
+| *It's a long course. On top of that, it's expensive.* | `EN-V07-B2-1` |
+| *It was hard. I enjoyed it, though.* | `EN-V07-B2-1` |
+| *All in all, it was worth it.* | `EN-V07-B2-1` |
 | *There are two things going on here. Let me take those in turn.* | `EN-V07-C1-1` |
 | *Granted, the numbers moved. Then again, they moved from a very low base.* | `EN-V07-C1-1` |
 | *Just as an aside — and this isn't the main point — the timing was odd. Anyway, the upshot is that nobody checked.* | `EN-V07-C1-1` |
@@ -512,7 +542,7 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | *The prices were eye-watering for what arrived.* | `EN-V08-C1-1` |
 | *It's an acquired taste, and I haven't acquired it.* | `EN-V08-C1-1` |
 
-### Vocabulario — 273
+### Vocabulario — 349
 
 | Texto | Ficha |
 |---|---|
@@ -544,6 +574,19 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | to opt out / opt in | `EN-F02-C1-1` |
 | a single point of failure | `EN-F02-C1-1` |
 | to be over-engineered | `EN-F02-C1-1` |
+| a deadline | `EN-F11-B2-1` |
+| to be in charge of | `EN-F11-B2-1` |
+| a meeting | `EN-F11-B2-1` |
+| to report to someone | `EN-F11-B2-1` |
+| a colleague | `EN-F11-B2-1` |
+| overtime | `EN-F11-B2-1` |
+| a pay rise | `EN-F11-B2-1` |
+| to apply for a job | `EN-F11-B2-1` |
+| a probation period | `EN-F11-B2-1` |
+| to be off sick | `EN-F11-B2-1` |
+| workload | `EN-F11-B2-1` |
+| a permanent contract | `EN-F11-B2-1` |
+| to take on a task | `EN-F11-B2-1` |
 | to get to grips with | `EN-F11-C1-1` |
 | a transferable skill | `EN-F11-C1-1` |
 | to plateau | `EN-F11-C1-1` |
@@ -557,6 +600,20 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | self-directed learning | `EN-F11-C1-1` |
 | to cram | `EN-F11-C1-1` |
 | credentialism | `EN-F11-C1-1` |
+| a refund | `EN-F12-B2-1` |
+| a warranty / a guarantee | `EN-F12-B2-1` |
+| to be on offer | `EN-F12-B2-1` |
+| to haggle | `EN-F12-B2-1` |
+| a rip-off | `EN-F12-B2-1` |
+| to return something | `EN-F12-B2-1` |
+| proof of purchase | `EN-F12-B2-1` |
+| faulty | `EN-F12-B2-1` |
+| next-day delivery | `EN-F12-B2-1` |
+| second-hand | `EN-F12-B2-1` |
+| to be value for money | `EN-F12-B2-1` |
+| an instalment | `EN-F12-B2-1` |
+| to overcharge | `EN-F12-B2-1` |
+| consumer rights | `EN-F12-B2-1` |
 | wear and tear | `EN-F12-C1-1` |
 | a deposit | `EN-F12-C1-1` |
 | to be priced out of | `EN-F12-C1-1` |
@@ -571,6 +628,20 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | a communal area | `EN-F12-C1-1` |
 | to be up to code | `EN-F12-C1-1` |
 | mixed-use development | `EN-F12-C1-1` |
+| a recipe | `EN-F13-B2-1` |
+| to be done / overdone | `EN-F13-B2-1` |
+| a starter / a main course | `EN-F13-B2-1` |
+| to taste like | `EN-F13-B2-1` |
+| seasoning | `EN-F13-B2-1` |
+| a side dish | `EN-F13-B2-1` |
+| to be filling | `EN-F13-B2-1` |
+| bland | `EN-F13-B2-1` |
+| to chop / to slice | `EN-F13-B2-1` |
+| leftovers | `EN-F13-B2-1` |
+| home-made | `EN-F13-B2-1` |
+| well-seasoned | `EN-F13-B2-1` |
+| a serving | `EN-F13-B2-1` |
+| to be off | `EN-F13-B2-1` |
 | a trade-off | `EN-F13-C1-1` |
 | to offset emissions | `EN-F13-C1-1` |
 | net zero | `EN-F13-C1-1` |
@@ -590,6 +661,20 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | burnout | `EN-F14-C1-1` |
 | onboarding | `EN-F14-C1-1` |
 | to touch base | `EN-F14-C1-1` |
+| symptoms | `EN-F15-B2-1` |
+| to make an appointment | `EN-F15-B2-1` |
+| a sick note | `EN-F15-B2-1` |
+| to feel under the weather | `EN-F15-B2-1` |
+| a GP / a family doctor | `EN-F15-B2-1` |
+| a referral | `EN-F15-B2-1` |
+| to be allergic to | `EN-F15-B2-1` |
+| painkillers | `EN-F15-B2-1` |
+| to recover from | `EN-F15-B2-1` |
+| a check-up | `EN-F15-B2-1` |
+| to be off work | `EN-F15-B2-1` |
+| stress-related | `EN-F15-B2-1` |
+| to look after yourself | `EN-F15-B2-1` |
+| health insurance | `EN-F15-B2-1` |
 | to set boundaries | `EN-F15-C1-1` |
 | to drift apart | `EN-F15-C1-1` |
 | to clear the air | `EN-F15-C1-1` |
@@ -604,81 +689,79 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | tough love | `EN-F15-C1-1` |
 | to grow apart | `EN-F15-C1-1` |
 | a support network | `EN-F15-C1-1` |
-| to move in / move out | `EN-F16-C1-1` |
-| to get something fixed | `EN-F16-C1-1` |
-| rent arrears | `EN-F16-C1-1` |
-| a lease | `EN-F16-C1-1` |
-| bills | `EN-F16-C1-1` |
-| damp | `EN-F16-C1-1` |
-| a neighbour | `EN-F16-C1-1` |
-| furnished / unfurnished | `EN-F16-C1-1` |
-| a leak | `EN-F16-C1-1` |
-| soundproofing | `EN-F16-C1-1` |
+| to move in / move out | `EN-F16-B2-1` |
+| to get something fixed | `EN-F16-B2-1` |
+| rent arrears | `EN-F16-B2-1` |
+| a lease | `EN-F16-B2-1` |
+| bills | `EN-F16-B2-1` |
+| damp | `EN-F16-B2-1` |
+| a neighbour | `EN-F16-B2-1` |
+| furnished / unfurnished | `EN-F16-B2-1` |
+| a leak | `EN-F16-B2-1` |
+| soundproofing | `EN-F16-B2-1` |
 | to scale (intransitive) | `EN-F17-C1-1` |
-| to open / close an account | `EN-G03-C1-1` |
-| to pay in instalments | `EN-G03-C1-1` |
-| a savings account | `EN-G03-C1-1` |
-| to be short of money | `EN-G03-C1-1` |
-| a bank transfer | `EN-G03-C1-1` |
-| an interest rate | `EN-G03-C1-1` |
-| to withdraw / to deposit | `EN-G03-C1-1` |
-| a monthly payment | `EN-G03-C1-1` |
-| to be in debt | `EN-G03-C1-1` |
-| to afford something | `EN-G03-C1-1` |
-| a standing order | `EN-G03-C1-1` |
-| expenses | `EN-G03-C1-1` |
-| to borrow / to lend | `EN-G03-C1-1` |
-| a current account | `EN-G03-C1-1` |
-| to back something up | `EN-G07-C1-1` |
-| a bug | `EN-G07-C1-1` |
-| to update / an update | `EN-G07-C1-1` |
-| to log in / log out | `EN-G07-C1-1` |
-| a data breach | `EN-G07-C1-1` |
-| two-factor authentication | `EN-G07-C1-1` |
-| to download / upload | `EN-G07-C1-1` |
-| cloud storage | `EN-G07-C1-1` |
-| default settings | `EN-G07-C1-1` |
-| user-friendly | `EN-G07-C1-1` |
-| to freeze | `EN-G07-C1-1` |
-| data protection | `EN-G07-C1-1` |
-| artificial intelligence | `EN-G07-C1-1` |
-| to keep track of | `EN-G07-C1-1` |
-| to recycle / recycling | `EN-G11-C1-1` |
-| waste | `EN-G11-C1-1` |
-| to ban something | `EN-G11-C1-1` |
-| climate change | `EN-G11-C1-1` |
-| renewable energy | `EN-G11-C1-1` |
-| a landfill | `EN-G11-C1-1` |
-| to pollute / pollution | `EN-G11-C1-1` |
-| to cut down on | `EN-G11-C1-1` |
-| to be environmentally friendly | `EN-G11-C1-1` |
-| greenhouse gases | `EN-G11-C1-1` |
-| to run out of | `EN-G11-C1-1` |
-| sustainable | `EN-G11-C1-1` |
-| to be into something | `EN-G13-C1-1` |
-| to take up a hobby | `EN-G13-C1-1` |
-| to give something up | `EN-G13-C1-1` |
-| spare time | `EN-G13-C1-1` |
-| to join a club | `EN-G13-C1-1` |
-| to be good at | `EN-G13-C1-1` |
-| to be self-taught | `EN-G13-C1-1` |
-| to practise | `EN-G13-C1-1` |
-| to get better at | `EN-G13-C1-1` |
-| a pastime | `EN-G13-C1-1` |
-| to hang out with | `EN-G13-C1-1` |
-| once in a while | `EN-G13-C1-1` |
-| to be worth trying | `EN-G13-C1-1` |
-| to be hooked on | `EN-G13-C1-1` |
+| to open / close an account | `EN-G03-B2-1` |
+| to pay in instalments | `EN-G03-B2-1` |
+| a savings account | `EN-G03-B2-1` |
+| to be short of money | `EN-G03-B2-1` |
+| a bank transfer | `EN-G03-B2-1` |
+| an interest rate | `EN-G03-B2-1` |
+| to withdraw / to deposit | `EN-G03-B2-1` |
+| a monthly payment | `EN-G03-B2-1` |
+| to be in debt | `EN-G03-B2-1` |
+| to afford something | `EN-G03-B2-1` |
+| a standing order | `EN-G03-B2-1` |
+| expenses | `EN-G03-B2-1` |
+| to borrow / to lend | `EN-G03-B2-1` |
+| a current account | `EN-G03-B2-1` |
+| to back something up | `EN-G07-B2-1` |
+| a bug | `EN-G07-B2-1` |
+| to update / an update | `EN-G07-B2-1` |
+| to log in / log out | `EN-G07-B2-1` |
+| a data breach | `EN-G07-B2-1` |
+| two-factor authentication | `EN-G07-B2-1` |
+| to download / upload | `EN-G07-B2-1` |
+| cloud storage | `EN-G07-B2-1` |
+| default settings | `EN-G07-B2-1` |
+| user-friendly | `EN-G07-B2-1` |
+| to freeze | `EN-G07-B2-1` |
+| data protection | `EN-G07-B2-1` |
+| artificial intelligence | `EN-G07-B2-1` |
+| to keep track of | `EN-G07-B2-1` |
+| to recycle / recycling | `EN-G11-B2-1` |
+| waste | `EN-G11-B2-1` |
+| to ban something | `EN-G11-B2-1` |
+| climate change | `EN-G11-B2-1` |
+| renewable energy | `EN-G11-B2-1` |
+| a landfill | `EN-G11-B2-1` |
+| to pollute / pollution | `EN-G11-B2-1` |
+| to cut down on | `EN-G11-B2-1` |
+| to be environmentally friendly | `EN-G11-B2-1` |
+| greenhouse gases | `EN-G11-B2-1` |
+| to run out of | `EN-G11-B2-1` |
+| sustainable | `EN-G11-B2-1` |
+| to be into something | `EN-G13-B2-1` |
+| to take up a hobby | `EN-G13-B2-1` |
+| to give something up | `EN-G13-B2-1` |
+| spare time | `EN-G13-B2-1` |
+| to join a club | `EN-G13-B2-1` |
+| to be good at | `EN-G13-B2-1` |
+| to be self-taught | `EN-G13-B2-1` |
+| to practise | `EN-G13-B2-1` |
+| to get better at | `EN-G13-B2-1` |
+| a pastime | `EN-G13-B2-1` |
+| to hang out with | `EN-G13-B2-1` |
+| once in a while | `EN-G13-B2-1` |
+| to be worth trying | `EN-G13-B2-1` |
+| to be hooked on | `EN-G13-B2-1` |
 | an underlying condition | `EN-G15-C1-1` |
 | a side effect vs. an adverse reaction | `EN-G15-C1-1` |
 | to manage a condition | `EN-G15-C1-1` |
 | to be discharged | `EN-G15-C1-1` |
 | to flare up | `EN-G15-C1-1` |
-| a referral | `EN-G15-C1-1` |
 | to be on the mend | `EN-G15-C1-1` |
 | evidence-based | `EN-G15-C1-1` |
 | preventative care | `EN-G15-C1-1` |
-| a check-up | `EN-G15-C1-1` |
 | watchful waiting | `EN-G15-C1-1` |
 | the done thing | `EN-G16-C1-1` |
 | red tape | `EN-G16-C1-1` |
@@ -694,32 +777,44 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | to travel light | `EN-G16-C1-1` |
 | to give someone the cold shoulder | `EN-G16-C1-1` |
 | to blend in | `EN-G16-C1-1` |
-| to get on with someone | `EN-G20-C1-1` |
-| to fall out with someone | `EN-G20-C1-1` |
-| to make up | `EN-G20-C1-1` |
-| to keep in touch | `EN-G20-C1-1` |
-| a falling-out | `EN-G20-C1-1` |
-| to take after someone | `EN-G20-C1-1` |
-| to look up to someone | `EN-G20-C1-1` |
-| a row | `EN-G20-C1-1` |
-| a close friend | `EN-G20-C1-1` |
-| to let someone down | `EN-G20-C1-1` |
-| to bring up children | `EN-G20-C1-1` |
-| to get over something | `EN-G20-C1-1` |
-| a headline | `EN-G25-C1-1` |
-| to report on something | `EN-G25-C1-1` |
-| a source | `EN-G25-C1-1` |
-| to deny something | `EN-G25-C1-1` |
-| the media | `EN-G25-C1-1` |
-| coverage | `EN-G25-C1-1` |
-| an eyewitness | `EN-G25-C1-1` |
-| breaking news | `EN-G25-C1-1` |
-| to be accused of | `EN-G25-C1-1` |
-| biased | `EN-G25-C1-1` |
-| an issue | `EN-G25-C1-1` |
-| to go viral | `EN-G25-C1-1` |
-| a press release | `EN-G25-C1-1` |
-| to find out | `EN-G25-C1-1` |
+| to get on with someone | `EN-G20-B2-1` |
+| to fall out with someone | `EN-G20-B2-1` |
+| to make up | `EN-G20-B2-1` |
+| to keep in touch | `EN-G20-B2-1` |
+| a falling-out | `EN-G20-B2-1` |
+| to take after someone | `EN-G20-B2-1` |
+| to look up to someone | `EN-G20-B2-1` |
+| a row | `EN-G20-B2-1` |
+| a close friend | `EN-G20-B2-1` |
+| to let someone down | `EN-G20-B2-1` |
+| to bring up children | `EN-G20-B2-1` |
+| to get over something | `EN-G20-B2-1` |
+| a headline | `EN-G25-B2-1` |
+| to report on something | `EN-G25-B2-1` |
+| a source | `EN-G25-B2-1` |
+| to deny something | `EN-G25-B2-1` |
+| the media | `EN-G25-B2-1` |
+| coverage | `EN-G25-B2-1` |
+| an eyewitness | `EN-G25-B2-1` |
+| breaking news | `EN-G25-B2-1` |
+| to be accused of | `EN-G25-B2-1` |
+| biased | `EN-G25-B2-1` |
+| an issue | `EN-G25-B2-1` |
+| to go viral | `EN-G25-B2-1` |
+| a press release | `EN-G25-B2-1` |
+| to find out | `EN-G25-B2-1` |
+| to check in / check out | `EN-V03-B2-1` |
+| to get used to something | `EN-V03-B2-1` |
+| to set off | `EN-V03-B2-1` |
+| to sort something out | `EN-V03-B2-1` |
+| a stopover | `EN-V03-B2-1` |
+| to miss a flight | `EN-V03-B2-1` |
+| accommodation | `EN-V03-B2-1` |
+| a return ticket | `EN-V03-B2-1` |
+| homesick | `EN-V03-B2-1` |
+| to look forward to | `EN-V03-B2-1` |
+| to put up with | `EN-V03-B2-1` |
+| culture shock | `EN-V03-B2-1` |
 | to get into something | `EN-V03-C1-1` |
 | to dabble in | `EN-V03-C1-1` |
 | to tinker with | `EN-V03-C1-1` |
@@ -747,20 +842,32 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | compound interest | `EN-V05-C1-1` |
 | to write something off | `EN-V05-C1-1` |
 | a rainy day fund | `EN-V05-C1-1` |
-| to fill in a form | `EN-V06-C1-1` |
-| an appointment | `EN-V06-C1-1` |
-| a deadline | `EN-V06-C1-1` |
-| proof of address | `EN-V06-C1-1` |
-| an applicant | `EN-V06-C1-1` |
-| supporting documents | `EN-V06-C1-1` |
-| to apply for something | `EN-V06-C1-1` |
-| an administration fee | `EN-V06-C1-1` |
-| a branch | `EN-V06-C1-1` |
-| to be valid until | `EN-V06-C1-1` |
-| to be put on hold | `EN-V06-C1-1` |
-| customer service | `EN-V06-C1-1` |
-| to be processed | `EN-V06-C1-1` |
-| a reference number | `EN-V06-C1-1` |
+| to fill in a form | `EN-V06-B2-1` |
+| an appointment | `EN-V06-B2-1` |
+| proof of address | `EN-V06-B2-1` |
+| an applicant | `EN-V06-B2-1` |
+| supporting documents | `EN-V06-B2-1` |
+| to apply for something | `EN-V06-B2-1` |
+| an administration fee | `EN-V06-B2-1` |
+| a branch | `EN-V06-B2-1` |
+| to be valid until | `EN-V06-B2-1` |
+| to be put on hold | `EN-V06-B2-1` |
+| customer service | `EN-V06-B2-1` |
+| to be processed | `EN-V06-B2-1` |
+| a reference number | `EN-V06-B2-1` |
+| to take a course | `EN-V07-B2-1` |
+| to pass / to fail an exam | `EN-V07-B2-1` |
+| to keep up with | `EN-V07-B2-1` |
+| tuition fees | `EN-V07-B2-1` |
+| coursework | `EN-V07-B2-1` |
+| to hand something in | `EN-V07-B2-1` |
+| a qualification | `EN-V07-B2-1` |
+| to be worth it | `EN-V07-B2-1` |
+| distance learning | `EN-V07-B2-1` |
+| to drop out | `EN-V07-B2-1` |
+| a grade / a mark | `EN-V07-B2-1` |
+| to revise | `EN-V07-B2-1` |
+| lifelong learning | `EN-V07-B2-1` |
 | framing | `EN-V07-C1-1` |
 | to downplay / to overstate | `EN-V07-C1-1` |
 | the fallout from | `EN-V07-C1-1` |
@@ -775,7 +882,6 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | an op-ed | `EN-V07-C1-1` |
 | to gain traction | `EN-V07-C1-1` |
 | to be misconstrued | `EN-V07-C1-1` |
-| bland | `EN-V08-C1-1` |
 | a staple | `EN-V08-C1-1` |
 | use-by vs. best-before | `EN-V08-C1-1` |
 | ultra-processed | `EN-V08-C1-1` |
@@ -790,7 +896,7 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | to go off (milk) | `EN-V08-C1-1` |
 | batch cooking | `EN-V08-C1-1` |
 
-### Expresiones — 181
+### Expresiones — 223
 
 | Texto | Ficha |
 |---|---|
@@ -810,6 +916,14 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | Where we differ is… | `EN-F02-C1-1` |
 | Yes, and the difficulty is… | `EN-F02-C1-1` |
 | That's true of X, less so of Y | `EN-F02-C1-1` |
+| In short,… | `EN-F11-B2-1` |
+| The main thing is… | `EN-F11-B2-1` |
+| Three things came up. | `EN-F11-B2-1` |
+| I'm leaving out… | `EN-F11-B2-1` |
+| To put it simply,… | `EN-F11-B2-1` |
+| That's what happened. | `EN-F11-B2-1` |
+| What I think is… | `EN-F11-B2-1` |
+| Give me a minute and I'll explain. | `EN-F11-B2-1` |
 | The short version is… | `EN-F11-C1-1` |
 | Three things came out of it | `EN-F11-C1-1` |
 | And the one that actually matters… | `EN-F11-C1-1` |
@@ -818,6 +932,14 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | If you only remember one thing… | `EN-F11-C1-1` |
 | That's what they found; what I think is… | `EN-F11-C1-1` |
 | Give me two minutes | `EN-F11-C1-1` |
+| I was hoping for around… | `EN-F12-B2-1` |
+| If you could…, I'd be able to… | `EN-F12-B2-1` |
+| What would work for you? | `EN-F12-B2-1` |
+| What if we tried…? | `EN-F12-B2-1` |
+| I can't do that, but I could… | `EN-F12-B2-1` |
+| Would you be able to…? | `EN-F12-B2-1` |
+| …because otherwise… | `EN-F12-B2-1` |
+| That works for me. | `EN-F12-B2-1` |
 | If you could… I'd be able to… | `EN-F12-C1-1` |
 | What would it take? | `EN-F12-C1-1` |
 | Suppose we tried… | `EN-F12-C1-1` |
@@ -826,6 +948,14 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | We want the same thing here | `EN-F12-C1-1` |
 | Would it help if… | `EN-F12-C1-1` |
 | I was thinking somewhere around… | `EN-F12-C1-1` |
+| It's a bit… | `EN-F13-B2-1` |
+| I'd say… | `EN-F13-B2-1` |
+| It might just be my taste. | `EN-F13-B2-1` |
+| Not really. | `EN-F13-B2-1` |
+| …, don't you think? | `EN-F13-B2-1` |
+| To be honest,… | `EN-F13-B2-1` |
+| They tend to… | `EN-F13-B2-1` |
+| I'm not sure that's right. | `EN-F13-B2-1` |
 | That tends to be… | `EN-F13-C1-1` |
 | There's some evidence that… | `EN-F13-C1-1` |
 | I'd be careful about… | `EN-F13-C1-1` |
@@ -842,6 +972,14 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | Here's what would help next time | `EN-F14-C1-1` |
 | Two things worked, one didn't | `EN-F14-C1-1` |
 | How do you want to handle it? | `EN-F14-C1-1` |
+| Can I say something? | `EN-F15-B2-1` |
+| Sorry, can I just add — | `EN-F15-B2-1` |
+| Hold on, let me think. | `EN-F15-B2-1` |
+| What's the word… | `EN-F15-B2-1` |
+| Let me say that again. | `EN-F15-B2-1` |
+| That's not what I meant. | `EN-F15-B2-1` |
+| Sorry, could you say that again? | `EN-F15-B2-1` |
+| What do you think? | `EN-F15-B2-1` |
 | Can I jump in? | `EN-F15-C1-1` |
 | Sorry, before we move on — | `EN-F15-C1-1` |
 | Bear with me | `EN-F15-C1-1` |
@@ -850,14 +988,14 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | What's your take? | `EN-F15-C1-1` |
 | I'll stop there | `EN-F15-C1-1` |
 | It depends what you mean by… | `EN-F15-C1-1` |
-| I'm writing about… | `EN-F16-C1-1` |
-| The problem is that… | `EN-F16-C1-1` |
-| As a result,… | `EN-F16-C1-1` |
-| Could you please… | `EN-F16-C1-1` |
-| I'd appreciate it if you could… | `EN-F16-C1-1` |
-| I was wondering if… | `EN-F16-C1-1` |
-| I'd like this sorted out by… | `EN-F16-C1-1` |
-| I look forward to hearing from you. | `EN-F16-C1-1` |
+| I'm writing about… | `EN-F16-B2-1` |
+| The problem is that… | `EN-F16-B2-1` |
+| As a result,… | `EN-F16-B2-1` |
+| Could you please… | `EN-F16-B2-1` |
+| I'd appreciate it if you could… | `EN-F16-B2-1` |
+| I was wondering if… | `EN-F16-B2-1` |
+| I'd like this sorted out by… | `EN-F16-B2-1` |
+| I look forward to hearing from you. | `EN-F16-B2-1` |
 | we both know it | `EN-F17-C1-1` |
 | worth a conversation | `EN-F17-C1-1` |
 | I've got concerns about | `EN-F17-C1-1` |
@@ -866,38 +1004,38 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | ascertain | `EN-F17-C1-1` |
 | it was found that | `EN-F17-C1-1` |
 | has not been demonstrated | `EN-F17-C1-1` |
-| I've just… | `EN-G03-C1-1` |
-| I haven't … yet | `EN-G03-C1-1` |
-| Have you ever…? | `EN-G03-C1-1` |
-| I've been … since / for | `EN-G03-C1-1` |
-| So far this year… | `EN-G03-C1-1` |
-| When did you…? | `EN-G03-C1-1` |
-| Last year I… | `EN-G03-C1-1` |
-| That was when… | `EN-G03-C1-1` |
-| If we had…, we would have… | `EN-G07-C1-1` |
-| …, it wouldn't have happened. | `EN-G07-C1-1` |
-| We could have… | `EN-G07-C1-1` |
-| It might have been… | `EN-G07-C1-1` |
-| We should have… | `EN-G07-C1-1` |
-| Had we known,… | `EN-G07-C1-1` |
-| Otherwise,… | `EN-G07-C1-1` |
-| In hindsight,… | `EN-G07-C1-1` |
-| It is said that… | `EN-G11-C1-1` |
-| …was introduced in… | `EN-G11-C1-1` |
-| …has been banned | `EN-G11-C1-1` |
-| …can be recycled | `EN-G11-C1-1` |
-| …is being replaced | `EN-G11-C1-1` |
-| …, according to the report | `EN-G11-C1-1` |
-| …was made by… | `EN-G11-C1-1` |
-| Steps are being taken to… | `EN-G11-C1-1` |
-| He said (that)… | `EN-G13-C1-1` |
-| She told me (that)… | `EN-G13-C1-1` |
-| He asked whether… | `EN-G13-C1-1` |
-| She asked where / when… | `EN-G13-C1-1` |
-| They told me to… | `EN-G13-C1-1` |
-| He told me not to… | `EN-G13-C1-1` |
-| She explained that… | `EN-G13-C1-1` |
-| He admitted that… | `EN-G13-C1-1` |
+| I've just… | `EN-G03-B2-1` |
+| I haven't … yet | `EN-G03-B2-1` |
+| Have you ever…? | `EN-G03-B2-1` |
+| I've been … since / for | `EN-G03-B2-1` |
+| So far this year… | `EN-G03-B2-1` |
+| When did you…? | `EN-G03-B2-1` |
+| Last year I… | `EN-G03-B2-1` |
+| That was when… | `EN-G03-B2-1` |
+| If we had…, we would have… | `EN-G07-B2-1` |
+| …, it wouldn't have happened. | `EN-G07-B2-1` |
+| We could have… | `EN-G07-B2-1` |
+| It might have been… | `EN-G07-B2-1` |
+| We should have… | `EN-G07-B2-1` |
+| Had we known,… | `EN-G07-B2-1` |
+| Otherwise,… | `EN-G07-B2-1` |
+| In hindsight,… | `EN-G07-B2-1` |
+| It is said that… | `EN-G11-B2-1` |
+| …was introduced in… | `EN-G11-B2-1` |
+| …has been banned | `EN-G11-B2-1` |
+| …can be recycled | `EN-G11-B2-1` |
+| …is being replaced | `EN-G11-B2-1` |
+| …, according to the report | `EN-G11-B2-1` |
+| …was made by… | `EN-G11-B2-1` |
+| Steps are being taken to… | `EN-G11-B2-1` |
+| He said (that)… | `EN-G13-B2-1` |
+| She told me (that)… | `EN-G13-B2-1` |
+| He asked whether… | `EN-G13-B2-1` |
+| She asked where / when… | `EN-G13-B2-1` |
+| They told me to… | `EN-G13-B2-1` |
+| He told me not to… | `EN-G13-B2-1` |
+| She explained that… | `EN-G13-B2-1` |
+| He admitted that… | `EN-G13-B2-1` |
 | published last month | `EN-G15-C1-1` |
 | anyone taking… | `EN-G15-C1-1` |
 | having been… | `EN-G15-C1-1` |
@@ -914,28 +1052,30 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | All I wanted was… | `EN-G16-C1-1` |
 | The thing that got me was… | `EN-G16-C1-1` |
 | Little did I know… | `EN-G16-C1-1` |
-| I wish I… | `EN-G20-C1-1` |
-| I wish he would… | `EN-G20-C1-1` |
-| If only I had… | `EN-G20-C1-1` |
-| It's time we… | `EN-G20-C1-1` |
-| I'd rather you didn't. | `EN-G20-C1-1` |
-| He acts as if he knew. | `EN-G20-C1-1` |
-| I could have… | `EN-G20-C1-1` |
-| Looking back,… | `EN-G20-C1-1` |
-| By the time…, it had… | `EN-G25-C1-1` |
-| It turned out that… | `EN-G25-C1-1` |
-| Nobody knew that… | `EN-G25-C1-1` |
-| …had already… | `EN-G25-C1-1` |
-| It wasn't until … that… | `EN-G25-C1-1` |
-| At first… but later… | `EN-G25-C1-1` |
-| She said she had… | `EN-G25-C1-1` |
-| …, which hadn't been reported | `EN-G25-C1-1` |
+| I wish I… | `EN-G20-B2-1` |
+| I wish he would… | `EN-G20-B2-1` |
+| If only I had… | `EN-G20-B2-1` |
+| It's time we… | `EN-G20-B2-1` |
+| I'd rather you didn't. | `EN-G20-B2-1` |
+| He acts as if he knew. | `EN-G20-B2-1` |
+| I could have… | `EN-G20-B2-1` |
+| Looking back,… | `EN-G20-B2-1` |
+| By the time…, it had… | `EN-G25-B2-1` |
+| It turned out that… | `EN-G25-B2-1` |
+| Nobody knew that… | `EN-G25-B2-1` |
+| …had already… | `EN-G25-B2-1` |
+| It wasn't until … that… | `EN-G25-B2-1` |
+| At first… but later… | `EN-G25-B2-1` |
+| She said she had… | `EN-G25-B2-1` |
+| …, which hadn't been reported | `EN-G25-B2-1` |
+| to check in | `EN-V03-B2-1` |
+| to get used to | `EN-V03-B2-1` |
+| to sort out | `EN-V03-B2-1` |
+| to end up -ing | `EN-V03-B2-1` |
 | to get into | `EN-V03-C1-1` |
 | to take up / take back up | `EN-V03-C1-1` |
 | to put off | `EN-V03-C1-1` |
-| to end up -ing | `EN-V03-C1-1` |
 | to wind down | `EN-V03-C1-1` |
-| to put up with | `EN-V03-C1-1` |
 | to come up with | `EN-V03-C1-1` |
 | to look into | `EN-V03-C1-1` |
 | to keep at it | `EN-V03-C1-1` |
@@ -949,13 +1089,21 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 | take a view | `EN-V05-C1-1` |
 | make a case | `EN-V05-C1-1` |
 | honour a commitment | `EN-V05-C1-1` |
-| to cut a long story short | `EN-V06-C1-1` |
-| to go round in circles | `EN-V06-C1-1` |
-| to be in the same boat | `EN-V06-C1-1` |
-| sooner or later | `EN-V06-C1-1` |
-| to bear in mind | `EN-V06-C1-1` |
-| as a last resort | `EN-V06-C1-1` |
-| to be a nightmare | `EN-V06-C1-1` |
+| to cut a long story short | `EN-V06-B2-1` |
+| to go round in circles | `EN-V06-B2-1` |
+| to be in the same boat | `EN-V06-B2-1` |
+| sooner or later | `EN-V06-B2-1` |
+| to bear in mind | `EN-V06-B2-1` |
+| as a last resort | `EN-V06-B2-1` |
+| to be a nightmare | `EN-V06-B2-1` |
+| That said,… | `EN-V07-B2-1` |
+| On top of that,… | `EN-V07-B2-1` |
+| …, though. | `EN-V07-B2-1` |
+| That's why… | `EN-V07-B2-1` |
+| For instance,… | `EN-V07-B2-1` |
+| I mean,… | `EN-V07-B2-1` |
+| All in all,… | `EN-V07-B2-1` |
+| Given that… | `EN-V07-B2-1` |
 | Let me take those in turn | `EN-V07-C1-1` |
 | That said | `EN-V07-C1-1` |
 | Mind you | `EN-V07-C1-1` |
@@ -978,7 +1126,7 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 
 ---
 
-**Total: 926 textos, 2980 clips.** A unos 25 KB por clip, alrededor de 72 MB.
+**Total: 1074 textos, 3572 clips.** A unos 25 KB por clip, alrededor de 87 MB.
 
 ## Cómo generarlos
 

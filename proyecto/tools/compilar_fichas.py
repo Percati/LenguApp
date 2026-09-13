@@ -56,6 +56,27 @@ def trocear(texto):
     partes = re.split(r"\n## (?=(?:Week|Woche) \d)", texto)
     return [p for p in partes[1:]]
 
+RE_LENGUA = re.compile(r"\((es|en|de|fr|it|pt)\)")
+
+
+def bloques_por_lengua(cuerpo, etiqueta):
+    """Devuelve {codigo_de_lengua: texto} para las secciones marcadas con (xx).
+
+    En el Markdown conviven "**Kontrast zum Spanischen (es).**" y
+    "**Kontrast zum Englischen (en).**". El codigo entre parentesis es lo que
+    manda: asi agregar frances es anadir un bloque, sin tocar el compilador ni
+    depender del nombre de la lengua escrito en otro idioma.
+    """
+    out = {}
+    patron = re.compile(r"\*\*(?:" + etiqueta + r")[^*]*?\((\w\w)\)[^*]*\*\*")
+    marcas = [(m.start(), m.end(), m.group(1)) for m in patron.finditer(cuerpo)]
+    sig = re.compile(r"\n\*\*[^*\n]+\*\*")
+    for ini, fin, cod in marcas:
+        m = sig.search(cuerpo, fin)
+        out[cod] = cuerpo[fin:(m.start() if m else len(cuerpo))].strip()
+    return out
+
+
 def secciones(cuerpo, et):
     """Devuelve {clave: bloque de texto} localizando cada etiqueta en negrita."""
     marcas = []
@@ -225,14 +246,6 @@ def semana_especial(semana, clase, cuerpo, idioma, nivel):
     Se emiten con su propia forma (ver schema/semana-especial.schema.json).
     Meterlas en el schema de ficha exigiria hacer opcionales casi todos sus
     campos obligatorios, que es justo lo que el schema debe evitar.
-
-    El id lleva el nivel (no solo el idioma) porque un mismo idioma puede
-    tener mas de un nivel con calendario propio -- ingles paso a tener B2 y
-    C1 en 2026 -- y la semana de repaso/Survival de cada nivel es contenido
-    distinto, no el mismo texto reetiquetado. Sin el nivel en el id, compilar
-    el segundo nivel pisa en silencio el archivo del primero en disco, y
-    aunque no lo pisara, el resolutor (Kotlin, misma convencion de id) no
-    tendria forma de distinguir cual de los dos servir.
     """
     et = ETIQUETAS[idioma]
     s = secciones(cuerpo, et)
@@ -241,7 +254,7 @@ def semana_especial(semana, clase, cuerpo, idioma, nivel):
     return {
         "_tipo": "semana_especial",
         "id": f"{'REVIEW' if 'Review' in clase else 'SURVIVAL'}-{idioma.upper()}-{nivel}-S{semana}",
-        "semana": semana, "idioma": idioma,
+        "semana": semana, "idioma": idioma, "nivel": nivel,
         "clase": "review" if "Review" in clase else "survival",
         "titulo": clase,
         "minutosEstimados": max((int(x) for x in mtime), default=60),
@@ -260,7 +273,8 @@ def compilar(bloque, idioma, nivel):
     if not m:
         esp = re.match(r"(?:Week|Woche) (\d+).*?·\s*(Skill Review Week|Survival Week)", cab)
         if esp:
-            return semana_especial(int(esp.group(1)), esp.group(2), cuerpo, idioma, nivel), None
+            return semana_especial(int(esp.group(1)), esp.group(2), cuerpo,
+                                   idioma, nivel), None
         return None, f"encabezado no reconocido: {cab[:60]}"
     semana, sid, titulo = int(m.group(1)), m.group(2), m.group(3).strip()
 
@@ -326,18 +340,35 @@ def compilar(bloque, idioma, nivel):
     ficha["notas"] = [aplanar_marcado(limpiar(x)) for x in vinetas(s.get("notas", ""))]
     ficha["errores"] = [aplanar_marcado(limpiar(x)) for x in vinetas(s.get("errores", ""))]
 
-    if "contraste" in s:
+    contr = bloques_por_lengua(cuerpo, "Kontrast|Contrast")
+    if contr:
+        ficha["contraste"] = {k: aplanar_marcado(limpiar(v)) for k, v in contr.items()}
+    elif "contraste" in s:
         ficha["contraste"] = {"es": aplanar_marcado(limpiar(s["contraste"]))}
+
+    # Errores adicionales por lengua base: los errores tipicos de un
+    # anglohablante que aprende aleman no son los de un hispanohablante.
+    errc = bloques_por_lengua(cuerpo, "Typische Fehler|Common mistakes")
+    errc = {k: [aplanar_marcado(limpiar(x)) for x in vinetas(v)]
+            for k, v in errc.items()}
+    errc = {k: v for k, v in errc.items() if v}
+    if errc:
+        ficha["erroresContrastivos"] = errc
 
     c, f = tabla(s.get("vocabulario", ""))
     if c:
         col = {n.upper(): i for i, n in enumerate(c)}
+        # Cualquier columna cuya cabecera sea un codigo de idioma es una glosa.
+        # Asi agregar FR o IT no toca el compilador: basta anadir la columna.
+        IDIOMAS = {"ES", "EN", "DE", "FR", "IT", "PT"}
+        cols_glosa = {n.upper(): i for i, n in enumerate(c) if n.upper() in IDIOMAS}
         for fila in f:
             item = fila[0]
             v = {"item": sin_marcado(item),
                  "prioridad": "nucleo" if "\u2605" in item else "ampliacion",
-                 "traducciones": {"es": fila[col["ES"]] if "ES" in col and
-                                  len(fila) > col["ES"] else ""}}
+                 "traducciones": {k.lower(): fila[i].strip()
+                                  for k, i in cols_glosa.items()
+                                  if len(fila) > i and fila[i].strip()}}
             if "\u2020" in item:
                 # Declarado por debajo del nivel a proposito: lo que se ensena
                 # es una distincion, un registro o un doble sentido que si
@@ -355,12 +386,21 @@ def compilar(bloque, idioma, nivel):
 
     c, f = tabla(s.get("redemittel", ""))
     if c and len(c) >= 3:
+        IDIOMAS = {"ES", "EN", "DE", "FR", "IT", "PT"}
+        cols_g = {n.upper(): i for i, n in enumerate(c) if n.upper() in IDIOMAS}
         for fila in f:
-            tr = fila[2].strip() if len(fila) > 2 else ""
+            tr = {}
+            for k, i in cols_g.items():
+                if len(fila) <= i:
+                    continue
+                v = fila[i].strip()
+                # "—" es deliberado: la expresion no tiene equivalencia directa
+                # y se aprende por situacion. Se guarda como null, no se omite.
+                tr[k.lower()] = None if v in ("—", "-", "") else v
             ficha["redemittel"].append({
                 "expresion": sin_marcado(fila[0]),
                 "funcion": aplanar_marcado(limpiar(fila[1])),
-                "traducciones": {"es": None if tr in ("—", "-", "") else tr}})
+                "traducciones": tr})
     else:  # formato en linea: "*X* · *Y* · *Z*"
         for e in re.findall(r"\*([^*]{4,60})\*", s.get("redemittel", "")):
             ficha["redemittel"].append({"expresion": sin_marcado(e),
@@ -417,19 +457,17 @@ def main():
 
     ok = fallos = 0
     for f in a.fichas:
-        # Idioma y nivel salen del nombre de archivo (convencion
-        # IDIOMA-NIVEL-...), no se adivinan del contenido: un idioma puede
-        # tener mas de un nivel con su propio calendario -- ingles paso a
-        # tener B2 y C1 en 2026 -- y antes el nivel se asumia fijo por
-        # idioma, lo que rotulaba mal cualquier segundo nivel del mismo
-        # idioma.
-        mnom = re.match(r"([A-Z]{2})-([A-Z]\d)-", Path(f).name)
-        if not mnom:
-            print(f"  ! {f}: nombre de archivo no sigue IDIOMA-NIVEL-... (ej. EN-B2-2026-S37-S53.md)", file=sys.stderr)
+        texto = Path(f).read_text(encoding="utf-8")
+        # El idioma y el nivel salen del NOMBRE DE ARCHIVO, no del contenido.
+        # Asumir el nivel por idioma ("en es C1") se rompio en cuanto ingles
+        # tuvo dos niveles: las 17 fichas de B2 se compilaron como C1.
+        m = re.match(r"(EN|DE|ES|FR|IT|PT)-([ABC][12])-", Path(f).name, re.I)
+        if not m:
+            print(f"  ! {Path(f).name}: el nombre debe empezar por IDIOMA-NIVEL-, "
+                  f"p.ej. EN-B2-2026-S37-S53.md", file=sys.stderr)
             fallos += 1
             continue
-        idioma, nivel = mnom.group(1).lower(), mnom.group(2)
-        texto = Path(f).read_text(encoding="utf-8")
+        idioma, nivel = m.group(1).lower(), m.group(2).upper()
         for bloque in trocear(texto):
             ficha, err = compilar(bloque, idioma, nivel)
             if err:

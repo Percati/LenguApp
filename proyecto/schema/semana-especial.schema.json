@@ -6,14 +6,15 @@
   "additionalProperties": false,
   "required": [
     "_tipo",
-    "id",
-    "semana",
-    "idioma",
-    "clase",
-    "titulo",
-    "consigna",
     "autochequeo",
-    "promptCorreccion"
+    "clase",
+    "consigna",
+    "id",
+    "idioma",
+    "nivel",
+    "promptCorreccion",
+    "semana",
+    "titulo"
   ],
   "properties": {
     "_tipo": {
@@ -21,7 +22,8 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^(REVIEW|SURVIVAL)-(EN|DE|ES|FR|IT|PT)-(A2|B1|B2|C1|C2)-S\\d{1,2}$"
+      "pattern": "^(REVIEW|SURVIVAL)-(EN|DE|ES|FR|IT|PT)-[ABC][12]-S\\d{1,2}$",
+      "description": "Incluye el NIVEL. Sin el, compilar el segundo nivel de un idioma pisa en silencio el archivo del primero: paso de verdad al agregar ingles B2."
     },
     "semana": {
       "type": "integer",
@@ -77,6 +79,15 @@
     },
     "promptCorreccion": {
       "type": "string"
+    },
+    "nivel": {
+      "enum": [
+        "A2",
+        "B1",
+        "B2",
+        "C1",
+        "C2"
+      ]
     }
   }
 }
