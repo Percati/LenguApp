@@ -1,0 +1,311 @@
+{
+ "id": "EN-G13-B2-1",
+ "skillId": "EN-G13",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T12",
+ "titulo": "Reported Speech",
+ "subtitulo": "Saying what someone else said",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Reporting what someone said means moving three things at once: the tense goes back, the pronouns change, and the time and place words change. Most learners handle the tense and forget the other two, which produces sentences that are grammatically fine and factually confusing.",
+ "ejemplos": [
+  {
+   "texto": "*She said she had been playing for years.*",
+   "audio": true
+  },
+  {
+   "texto": "*He asked whether I wanted to join them the next day.*",
+   "audio": true
+  },
+  {
+   "texto": "*They told us not to bring anything.*",
+   "audio": true
+  },
+  {
+   "texto": "*She told me it was worth trying.*",
+   "audio": true
+  },
+  {
+   "texto": "*He admitted that he had given it up.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Say takes no person: he said that…. Tell needs one: he told **me** that…. Mixing them is the most common error of all.",
+  "The tense does not move back if what was said is still true: *He said he lives in Bern* is fine if he still does.",
+  "*Whether* and *if* both work for yes/no questions. *Whether* is slightly more formal."
+ ],
+ "errores": [
+  "*He told that…* or *He said me that…*",
+  "Keeping the question word order: *She asked where was the club.*",
+  "Forgetting the pronoun shift, so the sentence reports the wrong person.",
+  "Forgetting *not* in negative orders: *He told me to don't come.*"
+ ],
+ "vocabulario": [
+  {
+   "item": "to be into something",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar metido en algo"
+   },
+   "nota": "to like a lot"
+  },
+  {
+   "item": "to take up a hobby",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "empezar una afición"
+   },
+   "nota": "start doing it"
+  },
+  {
+   "item": "to give something up",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "dejar algo"
+   },
+   "nota": "stop doing it"
+  },
+  {
+   "item": "spare time",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "tiempo libre"
+   }
+  },
+  {
+   "item": "to join a club",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "apuntarse a un club"
+   }
+  },
+  {
+   "item": "to be good at",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser bueno en"
+   },
+   "nota": "*at*, not *in*"
+  },
+  {
+   "item": "to be self-taught",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser autodidacta"
+   }
+  },
+  {
+   "item": "to practise",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "practicar"
+   },
+   "nota": "British spelling with *s* for the verb"
+  },
+  {
+   "item": "to get better at",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mejorar en"
+   }
+  },
+  {
+   "item": "a pastime",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un pasatiempo"
+   },
+   "nota": "slightly more formal than *hobby*"
+  },
+  {
+   "item": "to hang out with",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "pasar el rato con"
+   },
+   "nota": "informal"
+  },
+  {
+   "item": "once in a while",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "de vez en cuando"
+   }
+  },
+  {
+   "item": "to be worth trying",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "valer la pena probar"
+   },
+   "nota": "followed by *-ing*"
+  },
+  {
+   "item": "to be hooked on",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar enganchado a"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "He said (that)…",
+   "funcion": "reports a statement, no person",
+   "traducciones": {
+    "es": "dijo que…"
+   }
+  },
+  {
+   "expresion": "She told me (that)…",
+   "funcion": "reports with a person",
+   "traducciones": {
+    "es": "me dijo que…"
+   }
+  },
+  {
+   "expresion": "He asked whether…",
+   "funcion": "reports a yes/no question",
+   "traducciones": {
+    "es": "preguntó si…"
+   }
+  },
+  {
+   "expresion": "She asked where / when…",
+   "funcion": "reports a wh- question",
+   "traducciones": {
+    "es": "preguntó dónde / cuándo…"
+   }
+  },
+  {
+   "expresion": "They told me to…",
+   "funcion": "reports an order",
+   "traducciones": {
+    "es": "me dijeron que…"
+   }
+  },
+  {
+   "expresion": "He told me not to…",
+   "funcion": "negative order",
+   "traducciones": {
+    "es": "me dijo que no…"
+   }
+  },
+  {
+   "expresion": "She explained that…",
+   "funcion": "reports with detail",
+   "traducciones": {
+    "es": "explicó que…"
+   }
+  },
+  {
+   "expresion": "He admitted that…",
+   "funcion": "reports a concession",
+   "traducciones": {
+    "es": "admitió que…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Report a conversation you had about a hobby: what the other person said, what they asked you and what they suggested.",
+  "requisitos": [
+   "at least eight reported sentences",
+   "at least two reported questions",
+   "at least one reported order",
+   "correct use of *say* and *tell* throughout",
+   "All four core vocabulary items."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write five things people said to you today and report each one."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Turn five direct questions into reported ones. Check the word order each time."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds reporting a conversation from this week."
+  }
+ ],
+ "autochequeo": [
+  "Did I use *say* without a person and *tell* with one?",
+  "Did every reported question lose its inversion?",
+  "Did the pronouns move correctly?",
+  "Did the time and place words move?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on reported speech. (1) Check *say* and *tell* in every sentence. (2) Check the tense shift and say where it was correctly not applied. (3) Check the word order of every reported question. (4) Check pronouns, times and places. Do not correct anything else.",
+ "cuadroReferencia": {
+  "titulo": "What moves",
+  "columnas": [
+   "What",
+   "Direct",
+   "Reported"
+  ],
+  "filas": [
+   [
+    "Present simple",
+    "\"I play\"",
+    "he played"
+   ],
+   [
+    "Present continuous",
+    "\"I'm playing\"",
+    "he was playing"
+   ],
+   [
+    "Past simple",
+    "\"I played\"",
+    "he had played"
+   ],
+   [
+    "Present perfect",
+    "\"I've played\"",
+    "he had played"
+   ],
+   [
+    "will",
+    "\"I'll play\"",
+    "he would play"
+   ],
+   [
+    "can",
+    "\"I can play\"",
+    "he could play"
+   ],
+   [
+    "**Pronouns**",
+    "\"**I** like **my** team\"",
+    "he liked **his** team"
+   ],
+   [
+    "**Time**",
+    "today / tomorrow / now",
+    "that day / the next day / then"
+   ],
+   [
+    "**Place**",
+    "here / this",
+    "there / that"
+   ]
+  ],
+  "notaPie": "Questions lose the inversion: \"Do you play?\" → **he asked whether I played**, not he asked did I play. Orders use the infinitive: \"Stop!\" → **he told me to stop**."
+ },
+ "contraste": {
+  "es": "Spanish shifts tenses in reported speech too, so the mechanism is familiar. What is not familiar is the *say* / *tell* split: Spanish uses *decir* for both, and that single difference produces more errors here than the whole tense system."
+ }
+}

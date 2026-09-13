@@ -21,7 +21,7 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^(REVIEW|SURVIVAL)-(EN|DE|ES|FR|IT|PT)-S\\d{1,2}$"
+      "pattern": "^(REVIEW|SURVIVAL)-(EN|DE|ES|FR|IT|PT)-(A2|B1|B2|C1|C2)-S\\d{1,2}$"
     },
     "semana": {
       "type": "integer",

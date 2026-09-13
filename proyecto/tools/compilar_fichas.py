@@ -219,12 +219,20 @@ def sin_marcado(t):
                   "".join(x for x, _, _ in tramos_de(limpiar(t)))).strip()
 
 
-def semana_especial(semana, clase, cuerpo, idioma):
+def semana_especial(semana, clase, cuerpo, idioma, nivel):
     """Las semanas de repaso y Survival no son fichas: no tienen skill ni topic.
 
     Se emiten con su propia forma (ver schema/semana-especial.schema.json).
     Meterlas en el schema de ficha exigiria hacer opcionales casi todos sus
     campos obligatorios, que es justo lo que el schema debe evitar.
+
+    El id lleva el nivel (no solo el idioma) porque un mismo idioma puede
+    tener mas de un nivel con calendario propio -- ingles paso a tener B2 y
+    C1 en 2026 -- y la semana de repaso/Survival de cada nivel es contenido
+    distinto, no el mismo texto reetiquetado. Sin el nivel en el id, compilar
+    el segundo nivel pisa en silencio el archivo del primero en disco, y
+    aunque no lo pisara, el resolutor (Kotlin, misma convencion de id) no
+    tendria forma de distinguir cual de los dos servir.
     """
     et = ETIQUETAS[idioma]
     s = secciones(cuerpo, et)
@@ -232,7 +240,7 @@ def semana_especial(semana, clase, cuerpo, idioma):
     bloque_m = s.get("mision", "")
     return {
         "_tipo": "semana_especial",
-        "id": f"{'REVIEW' if 'Review' in clase else 'SURVIVAL'}-{idioma.upper()}-S{semana}",
+        "id": f"{'REVIEW' if 'Review' in clase else 'SURVIVAL'}-{idioma.upper()}-{nivel}-S{semana}",
         "semana": semana, "idioma": idioma,
         "clase": "review" if "Review" in clase else "survival",
         "titulo": clase,
@@ -244,7 +252,7 @@ def semana_especial(semana, clase, cuerpo, idioma):
         "promptCorreccion": limpiar(re.sub(r"^>\s*", "", s.get("prompt", ""), flags=re.M)),
     }
 
-def compilar(bloque, idioma):
+def compilar(bloque, idioma, nivel):
     et = ETIQUETAS[idioma]
     cab, cuerpo = bloque.split("\n", 1)
 
@@ -252,7 +260,7 @@ def compilar(bloque, idioma):
     if not m:
         esp = re.match(r"(?:Week|Woche) (\d+).*?·\s*(Skill Review Week|Survival Week)", cab)
         if esp:
-            return semana_especial(int(esp.group(1)), esp.group(2), cuerpo, idioma), None
+            return semana_especial(int(esp.group(1)), esp.group(2), cuerpo, idioma, nivel), None
         return None, f"encabezado no reconocido: {cab[:60]}"
     semana, sid, titulo = int(m.group(1)), m.group(2), m.group(3).strip()
 
@@ -274,7 +282,6 @@ def compilar(bloque, idioma):
     ms = re.search(r"(\d+)[\s-]*(?:min|Min)", ev)
     mtime = re.findall(r"(\d+)\s*(?:min|Min)", tt)
 
-    nivel = "C1" if idioma == "en" else "B2"
     s = secciones(cuerpo, et)
     if "descripcion" not in s:
         return None, f"{sid}: falta la descripcion"
@@ -410,10 +417,21 @@ def main():
 
     ok = fallos = 0
     for f in a.fichas:
+        # Idioma y nivel salen del nombre de archivo (convencion
+        # IDIOMA-NIVEL-...), no se adivinan del contenido: un idioma puede
+        # tener mas de un nivel con su propio calendario -- ingles paso a
+        # tener B2 y C1 en 2026 -- y antes el nivel se asumia fijo por
+        # idioma, lo que rotulaba mal cualquier segundo nivel del mismo
+        # idioma.
+        mnom = re.match(r"([A-Z]{2})-([A-Z]\d)-", Path(f).name)
+        if not mnom:
+            print(f"  ! {f}: nombre de archivo no sigue IDIOMA-NIVEL-... (ej. EN-B2-2026-S37-S53.md)", file=sys.stderr)
+            fallos += 1
+            continue
+        idioma, nivel = mnom.group(1).lower(), mnom.group(2)
         texto = Path(f).read_text(encoding="utf-8")
-        idioma = "de" if re.search(r"Deutsch|Woche", texto[:400]) else "en"
         for bloque in trocear(texto):
-            ficha, err = compilar(bloque, idioma)
+            ficha, err = compilar(bloque, idioma, nivel)
             if err:
                 print(f"  ! {err}", file=sys.stderr); fallos += 1; continue
             especial = ficha.get("_tipo") == "semana_especial"

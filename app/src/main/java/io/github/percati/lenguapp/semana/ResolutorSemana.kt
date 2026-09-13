@@ -122,10 +122,16 @@ fun resolverContenidoDeLaSemana(
     }
 }
 
-/** El mismo esquema de id que arma compilar_fichas.py al compilar cada pieza. */
+/**
+ * El mismo esquema de id que arma compilar_fichas.py al compilar cada pieza.
+ * REVIEW y SURVIVAL llevan el nivel ademas del idioma: un mismo idioma puede
+ * tener mas de un nivel con calendario propio (ingles B2 y C1 en 2026), y la
+ * semana de repaso o Survival de cada nivel es contenido distinto, no el
+ * mismo texto para los dos.
+ */
 private fun idDeEntrada(entrada: EntradaCalendario, idioma: Idioma, nivel: Nivel): String =
     when (entrada.tipo) {
         TipoSemana.CONTENT -> "${entrada.skillId}-${nivel.name}-${entrada.order}"
-        TipoSemana.REVIEW -> "REVIEW-${idioma.name}-S${entrada.semana}"
-        TipoSemana.SURVIVAL -> "SURVIVAL-${idioma.name}-S${entrada.semana}"
+        TipoSemana.REVIEW -> "REVIEW-${idioma.name}-${nivel.name}-S${entrada.semana}"
+        TipoSemana.SURVIVAL -> "SURVIVAL-${idioma.name}-${nivel.name}-S${entrada.semana}"
     }
