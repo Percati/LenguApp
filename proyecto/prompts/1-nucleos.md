@@ -15,8 +15,16 @@ Al empezar, siempre:
    comparando contra `data/banco.json`.
 
 Tu trabajo: escribir `contenido/nucleos/{SKILL}-{NIVEL}.json` para las combinaciones
-que falten. Cada núcleo debe validar contra `schema/ficha.schema.json` (usá
-jsonschema en Python para chequear antes de dar nada por cerrado — no a ojo).
+que falten. Un núcleo solo NUNCA valida contra el `schema/ficha.schema.json`
+completo: ese schema exige `id`, `topicId`, `challengeType`, `evidencia`,
+`vocabulario`, `mision` y `microtareas`, que aporta la aparición o el pack al
+componer la ficha final (ver `tools/componer.py`), no el núcleo. Para revisar un
+núcleo antes de darlo por cerrado, extraé de `ficha.schema.json` las reglas de los
+campos que sí le corresponden (`descripcion`, `cuadroReferencia`, `ejemplos`,
+`notas`, `contraste`, `errores`, `redemittel`, `autochequeo`, `promptCorreccion`,
+`bilingue`, `categoria`, `ancla`, `variante`, `titulo`, `skillId`, `nivel`,
+`idioma`) y armá con eso un schema parcial en Python (jsonschema) contra el que
+validar cada núcleo — no a ojo.
 
 Reglas de contenido que NO tenés que reinventar (ya están decididas):
 - A2/B1: campo `bilingue: true`, prosa en el idioma que se aprende Y en español.
