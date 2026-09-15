@@ -15,8 +15,18 @@ Al empezar, siempre:
 
 Tu trabajo: generar `proyecto/contenido/packs/{idioma}-{nivel}-{anio}-{topicId}-{n}.json`
 (vocabulario por tema y aparición) para los calendarios que no tengan packs
-completos. Cada pack: 10-18 ítems, con `prioridad: "nucleo"` o `"variante"` marcada
+completos. Cada pack: 10-18 ítems, con `prioridad: "nucleo"` o `"ampliacion"` marcada
 en cada uno, y `traducciones` a los otros idiomas de app relevantes.
+
+**`prioridad` solo admite `"nucleo"` o `"ampliacion"`** (enum de
+`schema/ficha.schema.json`). Nunca `"variante"`: `variante` es un campo aparte del
+ítem, reservado para regionalismos (p.ej. `"variante": "CH"` en helvetismos). Hasta
+el 15-09-2026 este prompt decía `"variante"` por error y 129 packs 2027 salieron así;
+ya están corregidos.
+
+Validación obligatoria antes de cada commit (enum, tamaño, continuidad y conteo):
+`python3 proyecto/tools/validar_packs.py --anio 2027` — tiene que terminar con
+`Problemas: 0`. Su línea `Números: X/Y packs` es la que se reporta.
 
 Regla crítica de continuidad (la rompí varias veces mientras trabajaba en esto, no
 la repitas): entre packs consecutivos del MISMO tema (n y n+1), mantené 30-80% de

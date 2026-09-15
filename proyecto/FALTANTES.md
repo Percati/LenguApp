@@ -33,13 +33,13 @@ El campo `errores` hoy es una lista plana pensada para hispanohablante. Falta de
 |---|---|---|---|---|
 | DE | A2 | 43 semanas | 0 | faltan 43 |
 | DE | B1 | 43 semanas | 0 | faltan 43 |
-| DE | B2 | 43 semanas | 43 | ✅ completo |
+| DE | B2 | 43 semanas | 43 | ✅ completo (prioridad corregida 15-09) |
 | DE | C1 | 43 semanas | 0 | faltan 43 |
 | DE | C2 | 43 semanas | 0 | faltan 43 |
 | EN | A2 | 43 semanas | 0 | faltan 43 |
 | EN | B1 | 43 semanas | 0 | faltan 43 |
-| EN | B2 | 43 semanas | 43 | ✅ completo |
-| EN | C1 | 43 semanas | 43 | ✅ completo |
+| EN | B2 | 43 semanas | 43 | ✅ completo (prioridad corregida 15-09) |
+| EN | C1 | 43 semanas | 43 | ✅ completo (prioridad corregida 15-09) |
 | EN | C2 | 43 semanas | 0 | faltan 43 |
 
 ## 3. Apariciones (fichas semanales armadas, año 2027)
@@ -64,3 +64,7 @@ Alemán B2, inglés B2 e inglés C1 tienen su año 2026 (semanas 37-53) completo
 ## 5. Traducciones y audio
 
 Ver el Excel maestro más reciente (`traducciones-a-completar.xlsx` y `audio-a-grabar.xlsx`) para el conteo exacto de celdas pendientes — cambian con cada ronda, no tiene sentido fijar un número acá.
+
+## 6. Deuda conocida del piloto 2026 (no bloquea)
+
+`tools/validar_packs.py --anio 2026` marca dos transiciones del piloto fuera del rango 30-80 %, anteriores a esa regla: `de-B2-2026-T01` 1→2 (7 %) y `en-C1-2026-T03` 1→2 (93 %). Se dejan como están salvo decisión explícita.

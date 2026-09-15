@@ -27,3 +27,8 @@ memoria de proyecto de Claude) — son sobre el proceso de construirlo.
 - **Los huecos de cobertura y los errores de nivel son problemas distintos.**
   Los errores de nivel se concentran arriba (C1/C2, donde cada fuente
   improvisa). Los huecos de cobertura aparecen en cualquier nivel.
+- **Un prompt no puede contradecir al schema.** El prompt de packs pedía
+  `prioridad: "variante"` mientras el schema solo acepta `"nucleo"`/`"ampliacion"`,
+  y `variante` ya era otro campo (regionalismos). Salieron 129 packs inválidos que
+  nadie detectó porque la validación del schema recién corre al componer. Corregido
+  el 15-09-2026; desde entonces `tools/validar_packs.py` chequea el enum en origen.

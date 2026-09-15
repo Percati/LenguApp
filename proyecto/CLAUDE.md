@@ -28,6 +28,10 @@ y se compila directo. Ahora hay tres capas independientes que se combinan:
 3. `contenido/ocurrencias/{idioma}-{nivel}-{anio}.json` — qué skill+topic+pack
    corresponde a cada semana del año, más la misión y micro-tareas de esa semana.
 
+En los packs, `prioridad` es `"nucleo"` o `"ampliacion"` — **nunca `"variante"`**,
+que es otro campo del ítem (regionalismo, p.ej. `"CH"`). Validar siempre con
+`python3 proyecto/tools/validar_packs.py --anio AAAA` antes de commitear packs.
+
 `tools/componer.py` combina las tres capas y escribe la ficha final en `build/`,
 validada contra `schema/ficha.schema.json`. **Nunca editar `build/` a mano**: se
 regenera siempre desde la fuente.
