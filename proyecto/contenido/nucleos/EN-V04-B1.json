@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-V04",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Everyday Collocations",
+ "categoria": "vocabulary",
+ "ancla": "CV Vocabulary control",
+ "descripcion": "At B1 you fix the simplest and most common verb-noun collocations: make a decision, have breakfast, take a shower. These verbs aren't freely interchangeable, and each noun in English has its own fixed verb partner to learn alongside it.",
+ "cuadroReferencia": {
+  "titulo": "Simple everyday collocations",
+  "columnas": [
+   "Noun",
+   "Verb"
+  ],
+  "filas": [
+   [
+    "breakfast",
+    "have"
+   ],
+   [
+    "a shower",
+    "take/have"
+   ],
+   [
+    "a decision",
+    "make"
+   ],
+   [
+    "a mistake",
+    "make"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I usually have breakfast at eight.",
+   "audio": true
+  },
+  {
+   "texto": "I need to make a decision soon.",
+   "audio": true
+  },
+  {
+   "texto": "Everyone makes mistakes sometimes."
+  }
+ ],
+ "notas": [
+  "Have is the default verb for meals: have breakfast, have lunch, have dinner.",
+  "Make a decision and make a mistake use make, not do.",
+  "Take a shower and have a shower are both correct; take is more common in American English."
+ ],
+ "contraste": {
+  "es": "El español usa tomar para varias de estas colocaciones (tomar una decisión, tomar una ducha), lo que en inglés se reparte entre make, have y take según la palabra específica."
+ },
+ "errores": [
+  "Using do instead of have for meals.",
+  "Saying do a decision instead of make a decision.",
+  "Using make where have or take would be correct."
+ ],
+ "redemittel": [
+  {
+   "expresion": "to have breakfast/lunch/dinner",
+   "funcion": "meals",
+   "traducciones": {
+    "es": "desayunar/almorzar/cenar"
+   }
+  },
+  {
+   "expresion": "to make a decision",
+   "funcion": "fixed collocation",
+   "traducciones": {
+    "es": "tomar una decisión"
+   }
+  },
+  {
+   "expresion": "to make a mistake",
+   "funcion": "fixed collocation",
+   "traducciones": {
+    "es": "cometer un error"
+   }
+  },
+  {
+   "expresion": "to take/have a shower",
+   "funcion": "fixed collocation",
+   "traducciones": {
+    "es": "ducharse"
+   }
+  },
+  {
+   "expresion": "to have a good time",
+   "funcion": "fixed collocation",
+   "traducciones": {
+    "es": "pasarla bien"
+   }
+  },
+  {
+   "expresion": "to take a break",
+   "funcion": "fixed collocation",
+   "traducciones": {
+    "es": "tomarse un descanso"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is have used for meals, not do?",
+  "Is make used for decisions and mistakes, not do?",
+  "Have I used at least four different collocations?",
+  "Does the text sound natural?",
+  "Does the text sound natural?"
+ ],
+ "promptCorreccion": "Focus only on verb-noun collocations. Check the choice between have, make and take for each fixed expression, especially meals, decisions and mistakes. Do not rewrite the text."
+}

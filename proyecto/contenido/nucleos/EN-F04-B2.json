@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-F04",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Telling a Story / Recounting Experiences",
+ "categoria": "fluency",
+ "ancla": "CV Sustained monologue: describing experience",
+ "descripcion": "At B2 a story is told with correct time sequencing: past simple for the main events, past perfect for whatever happened earlier. The dramaturgy of a C1 story (a hooked opening, a marked turning point) isn't the focus yet — getting the timeline clear is.",
+ "cuadroReferencia": {
+  "titulo": "Time structure of a story",
+  "columnas": [
+   "Time",
+   "Form",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Main events",
+    "past simple",
+    "We left early and missed the bus."
+   ],
+   [
+    "Earlier event",
+    "past perfect",
+    "We'd already missed the train before we even got there."
+   ],
+   [
+    "Background",
+    "past continuous",
+    "It was raining when we arrived."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "We left early, but we'd already missed the connection.",
+   "audio": true
+  },
+  {
+   "texto": "It was raining heavily when we finally got there.",
+   "audio": true
+  },
+  {
+   "texto": "First we waited, then we just decided to walk."
+  }
+ ],
+ "notas": [
+  "The past perfect marks what happened BEFORE the main story timeline — without it, the order of events can be unclear.",
+  "First, then, after that structure the story in time without needing extra tenses.",
+  "The past continuous is useful for background: what was going on when the main event happened."
+ ],
+ "contraste": {
+  "es": "El español tiene el pretérito pluscuamperfecto con la misma lógica, así que el concepto se transfiere fácilmente. La elección entre pretérito y pretérito perfecto en español sigue reglas distintas de las del inglés, que se basa más en si el tiempo está cerrado o no."
+ },
+ "errores": [
+  "Leaving out the past perfect, which makes the order of events unclear.",
+  "Using only the past simple throughout, even for events that happened earlier.",
+  "Using first, then and after that in the wrong order."
+ ],
+ "redemittel": [
+  {
+   "expresion": "First…, then…, after that…",
+   "funcion": "sequencing",
+   "traducciones": {
+    "es": "Primero…, luego…, después…",
+    "de": "Zuerst…, dann…, danach…",
+    "fr": "D’abord…, puis…, ensuite…",
+    "it": "Prima…, poi…, dopo…",
+    "pt": "Primeiro…, depois…, a seguir…"
+   }
+  },
+  {
+   "expresion": "We'd already…, before…",
+   "funcion": "marks an earlier event",
+   "traducciones": {
+    "es": "Ya habíamos…, antes de que…",
+    "de": "Wir hatten schon…, bevor…",
+    "fr": "Nous avions déjà…, avant que…",
+    "it": "Avevamo già…, prima che…",
+    "pt": "Já tínhamos…, antes de…"
+   }
+  },
+  {
+   "expresion": "It was…, when…",
+   "funcion": "sets the background",
+   "traducciones": {
+    "es": "Estaba…, cuando…",
+    "de": "Es war…, als…",
+    "fr": "C’était…, quand…",
+    "it": "Era…, quando…",
+    "pt": "Era…, quando…"
+   }
+  },
+  {
+   "expresion": "In the end,…",
+   "funcion": "closes the story",
+   "traducciones": {
+    "es": "Al final…",
+    "de": "Am Ende…",
+    "fr": "À la fin…",
+    "it": "Alla fine…",
+    "pt": "No fim…"
+   }
+  },
+  {
+   "expresion": "Suddenly,…",
+   "funcion": "unexpected event",
+   "traducciones": {
+    "es": "De repente…",
+    "de": "Plötzlich…",
+    "fr": "Soudain…",
+    "it": "All’improvviso…",
+    "pt": "De repente…"
+   }
+  },
+  {
+   "expresion": "While we were waiting,…",
+   "funcion": "simultaneity",
+   "traducciones": {
+    "es": "Mientras esperábamos…",
+    "de": "Während wir warteten,…",
+    "fr": "Pendant que nous attendions,…",
+    "it": "Mentre aspettavamo,…",
+    "pt": "Enquanto esperávamos,…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the earlier event marked with the past perfect where needed?",
+  "Is the past continuous used for background, not the main events?",
+  "Is the time order of the story clear?",
+  "Is the story more than just a list of events?",
+  "Have I used at least one past perfect correctly?"
+ ],
+ "promptCorreccion": "Focus only on the time sequencing: past simple, past continuous, past perfect. Check whether earlier events are correctly marked. Do not rewrite the text."
+}

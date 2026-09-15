@@ -1,0 +1,51 @@
+{
+ "skillId": "EN-G20", "nivel": "C2", "idioma": "en",
+ "titulo": "Unreal Past: I wish, if only, it's time",
+ "categoria": "grammar",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 the unreal past extends to its least intuitive forms: wish + would for a critique of someone else's ongoing behaviour, and as if / as though with a perfect form for a retrospective unreal comparison. The everyday uses are assumed known.",
+ "cuadroReferencia": {
+  "titulo": "The less intuitive forms",
+  "columnas": ["Form", "Function", "Example"],
+  "filas": [
+   ["wish + would", "irritation at someone else's habit", "I wish he would stop interrupting."],
+   ["as if/though + past perfect", "retrospective unreal comparison", "She spoke as if she had rehearsed it."],
+   ["it's (high) time + past simple", "overdue action, mild reproach", "It's high time we addressed this properly."]
+  ],
+  "notaPie": "Wish + would can never refer to the speaker's own action — I wish I would stop is not standard; use I wish I could stop instead."
+ },
+ "ejemplos": [
+  {"texto": "I wish he would stop interrupting every single meeting.", "audio": true},
+  {"texto": "She spoke as if she had rehearsed every word in advance.", "audio": true},
+  {"texto": "It's high time we addressed this properly, not just talked around it."}
+ ],
+ "notas": [
+  "Wish + would carries an implicit complaint about a repeated, controllable behaviour — it's rarely neutral.",
+  "As if/as though with the past perfect shifts the comparison into the past, distinguishing it from the simple past form used for a present comparison.",
+  "High time intensifies it's time and adds a stronger note of overdue reproach."
+ ],
+ "contraste": {
+  "es": "El español expresa la irritación de wish + would más a través del tono o de ya podría dejar de..., sin una estructura gramatical dedicada. Como el inglés sí tiene una forma exclusiva para esta función, los hispanohablantes de nivel C2 tienden a evitarla y recurrir a un simple wish + could, perdiendo el matiz de queja."
+ },
+ "errores": [
+  "Using wish + would about the speaker's own action.",
+  "Using the simple past instead of the past perfect after as if for a retrospective comparison.",
+  "Treating it's time and it's high time as interchangeable in tone."
+ ],
+ "redemittel": [
+  {"expresion": "I wish he/she would…", "funcion": "irritation, someone else's habit", "traducciones": {"es": "ojalá dejara de…"}},
+  {"expresion": "…as if/as though…had…", "funcion": "retrospective unreal comparison", "traducciones": {"es": "…como si hubiera…"}},
+  {"expresion": "It's high time…", "funcion": "overdue, mild reproach", "traducciones": {"es": "ya es hora de que…"}},
+  {"expresion": "If only he/she would…", "funcion": "stronger version of wish + would", "traducciones": {"es": "si tan solo dejara de…"}},
+  {"expresion": "He acts as if nothing had happened.", "funcion": "fixed retrospective comparison", "traducciones": {"es": "actúa como si nada hubiera pasado"}},
+  {"expresion": "It's about time…", "funcion": "informal equivalent of it's time", "traducciones": {"es": "ya era hora de que…"}}
+ ],
+ "autochequeo": [
+  "Is wish + would used only about someone other than the speaker?",
+  "Is the past perfect used after as if for a retrospective comparison?",
+  "Does high time carry a stronger tone than plain time?",
+  "Does the sentence carry the implicit complaint that wish + would requires?",
+  "Would a native speaker read irritation here, or does it sound neutral by mistake?"
+ ],
+ "promptCorreccion": "Focus only on wish + would, as if/as though with the past perfect, and it's (high) time. Check the subject restriction on wish + would and the tense after as if. Do not rewrite the text."
+}

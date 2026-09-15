@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-G10",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Modals of Deduction",
+ "categoria": "grammar",
+ "ancla": "EGP B1/B2",
+ "descripcion": "At B1 you make a simple deduction with must be and can't be about the present, based on real evidence you can see or infer. The past forms, like must have been, come later once this basic present form is automatic.",
+ "cuadroReferencia": {
+  "titulo": "Simple present deduction",
+  "columnas": [
+   "Certainty",
+   "Form",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Near-certain",
+    "must be",
+    "She must be tired."
+   ],
+   [
+    "Ruled out",
+    "can't be",
+    "That can't be true."
+   ],
+   [
+    "With a reason",
+    "must be…because…",
+    "He must be tired because he worked all night."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She must be really tired after that trip.",
+   "audio": true
+  },
+  {
+   "texto": "That can't be true, it doesn't make sense.",
+   "audio": true
+  },
+  {
+   "texto": "He must be at home, his car is outside."
+  }
+ ],
+ "notas": [
+  "Must be expresses a strong, confident guess based on evidence.",
+  "Can't be is the negative form used to rule something out — not mustn't be.",
+  "These deductions are about the present situation, not the past."
+ ],
+ "contraste": {
+  "es": "El español usa deber de + infinitivo para deducciones similares (debe de estar cansada), lo que se transfiere bien al inglés must be."
+ },
+ "errores": [
+  "Using mustn't be instead of can't be to rule something out.",
+  "Using must for permission instead of deduction.",
+  "Making a deduction without any real evidence."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…must be…",
+   "funcion": "confident deduction",
+   "traducciones": {
+    "es": "Debe de estar/ser…"
+   }
+  },
+  {
+   "expresion": "…can't be…",
+   "funcion": "rules something out",
+   "traducciones": {
+    "es": "No puede ser…"
+   }
+  },
+  {
+   "expresion": "That makes sense.",
+   "funcion": "confirms a deduction",
+   "traducciones": {
+    "es": "Eso tiene sentido."
+   }
+  },
+  {
+   "expresion": "It must be because…",
+   "funcion": "deduction with a reason",
+   "traducciones": {
+    "es": "Debe de ser porque…"
+   }
+  },
+  {
+   "expresion": "I guess…",
+   "funcion": "softer deduction",
+   "traducciones": {
+    "es": "Supongo que…"
+   }
+  },
+  {
+   "expresion": "That would explain it.",
+   "funcion": "confirms with a reason",
+   "traducciones": {
+    "es": "Eso lo explicaría."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is can't be used to rule something out, not mustn't be?",
+  "Is the deduction based on real evidence?",
+  "Have I used both must be and can't be?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on must be and can't be for present deduction. Check that can't be, not mustn't be, is used to rule something out. Do not rewrite the text."
+}

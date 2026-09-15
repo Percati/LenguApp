@@ -1,0 +1,108 @@
+{
+ "skillId": "EN-F04",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Telling a Story / Recounting Experiences",
+ "categoria": "fluency",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you tell a very simple story in the past simple, using first and then as the only structure needed. Story structure with a turning point comes at higher levels, once this basic sequence is solid.",
+ "cuadroReferencia": {
+  "titulo": "A very simple story",
+  "columnas": [
+   "Step",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Beginning",
+    "Last year, I went to Rome."
+   ],
+   [
+    "Order",
+    "First I visited the Colosseum."
+   ],
+   [
+    "Ending",
+    "It was great."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Last year, I went to Rome for the first time.",
+   "audio": true
+  },
+  {
+   "texto": "First I visited the Colosseum, then I had lunch.",
+   "audio": true
+  },
+  {
+   "texto": "It was a really great trip."
+  }
+ ],
+ "notas": [
+  "First and then are enough to show a simple order of events.",
+  "Most verbs go in the past simple.",
+  "A time expression at the start (last year) helps place the story."
+ ],
+ "contraste": {
+  "es": "El español narra en pretérito indefinido de forma muy parecida, y primero/luego se transfieren directamente."
+ },
+ "errores": [
+  "Using the present tense instead of the past simple.",
+  "Telling the story with no order at all."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Last year,…",
+   "funcion": "opening with time",
+   "traducciones": {
+    "es": "El año pasado…"
+   }
+  },
+  {
+   "expresion": "First…",
+   "funcion": "first step",
+   "traducciones": {
+    "es": "Primero…"
+   }
+  },
+  {
+   "expresion": "Then…",
+   "funcion": "next step",
+   "traducciones": {
+    "es": "Luego…"
+   }
+  },
+  {
+   "expresion": "It was great.",
+   "funcion": "evaluation",
+   "traducciones": {
+    "es": "Fue genial."
+   }
+  },
+  {
+   "expresion": "I went to…",
+   "funcion": "past simple, common verb",
+   "traducciones": {
+    "es": "Fui a…"
+   }
+  },
+  {
+   "expresion": "We saw…",
+   "funcion": "past simple, common verb",
+   "traducciones": {
+    "es": "Vimos…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the order of events clear?",
+  "Are the verbs in the past simple?",
+  "Have I closed the story with an evaluation?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on the simple order of events and the past simple tense. Do not rewrite the text. Check whether the response fits the suggestion. Flag anything unclear."
+}

@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-F01",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Meinung äußern und begründen",
+ "categoria": "fluency",
+ "ancla": "PD B2",
+ "descripcion": "Auf B2 geht es darum, eine Meinung klar zu äußern und mit einem konkreten Grund zu stützen — nicht nur ich finde, sondern ich finde, weil. Der nächste Schritt (Vorbehalte, Gegenargumente) kommt erst auf C1; hier zählt vor allem, dass Meinung und Begründung sauber verbunden sind.",
+ "cuadroReferencia": {
+  "titulo": "Meinung und Begründung verbinden",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Meinung",
+    "Ich finde, dass das eine gute Idee ist."
+   ],
+   [
+    "Begründung mit weil",
+    "…, weil es allen mehr Flexibilität gibt."
+   ],
+   [
+    "Beispiel geben",
+    "Zum Beispiel könnte man dann von zu Hause arbeiten."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich finde, dass das eine gute Idee ist, weil es allen mehr Flexibilität gibt.",
+   "audio": true
+  },
+  {
+   "texto": "Meiner Meinung nach sollte man das gründlicher prüfen.",
+   "audio": true
+  },
+  {
+   "texto": "Zum Beispiel könnte man so von zu Hause aus arbeiten."
+  }
+ ],
+ "notas": [
+  "Meiner Meinung nach ist etwas formeller als ich finde und passt gut zu Diskussionen.",
+  "Eine Meinung ohne konkreten Grund wirkt auf B2-Niveau unvollständig — weil sollte fast immer folgen.",
+  "Ein einzelnes Beispiel macht die Begründung greifbarer als eine abstrakte Aussage."
+ ],
+ "contraste": {
+  "es": "Das Spanische äußert Meinungen sehr ähnlich direkt (creo que…), sodass die Grundstruktur leicht zu übertragen ist. Der Unterschied liegt eher im Detail: meiner Meinung nach klingt formeller als sein spanisches Gegenstück und wird auf Deutsch häufiger in Diskussionen benutzt, als Spanischsprachige zunächst erwarten."
+ },
+ "errores": [
+  "Eine Meinung ohne jede Begründung äußern.",
+  "Weil mit Hauptsatzwortstellung verwenden: weil ich finde das gut statt weil ich das gut finde.",
+  "Meiner Meinung nach und ich finde im selben Satz kombinieren, was redundant wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich finde, dass…",
+   "funcion": "Meinung, neutral",
+   "traducciones": {
+    "es": "Me parece que…",
+    "en": "I think that…",
+    "fr": "Je trouve que…",
+    "it": "Penso che…",
+    "pt": "Acho que…"
+   }
+  },
+  {
+   "expresion": "Meiner Meinung nach…",
+   "funcion": "Meinung, etwas formeller",
+   "traducciones": {
+    "es": "En mi opinión…",
+    "en": "In my opinion…",
+    "fr": "À mon avis…",
+    "it": "Secondo me…",
+    "pt": "Na minha opinião…"
+   }
+  },
+  {
+   "expresion": "…, weil…",
+   "funcion": "Grund angeben",
+   "traducciones": {
+    "es": "…, porque…",
+    "en": "…, because…",
+    "fr": "…, parce que…",
+    "it": "…, perché…",
+    "pt": "…, porque…"
+   }
+  },
+  {
+   "expresion": "Zum Beispiel…",
+   "funcion": "Beispiel einführen",
+   "traducciones": {
+    "es": "Por ejemplo…",
+    "en": "For example…",
+    "fr": "Par exemple…",
+    "it": "Per esempio…",
+    "pt": "Por exemplo…"
+   }
+  },
+  {
+   "expresion": "Ich bin der Ansicht, dass…",
+   "funcion": "Meinung, formell",
+   "traducciones": {
+    "es": "Soy de la opinión de que…",
+    "en": "I am of the view that…",
+    "fr": "Je suis d’avis que…",
+    "it": "Ritengo che…",
+    "pt": "Sou da opinião de que…"
+   }
+  },
+  {
+   "expresion": "Aus diesem Grund…",
+   "funcion": "Schlussfolgerung",
+   "traducciones": {
+    "es": "Por esta razón…",
+    "en": "For this reason…",
+    "fr": "Pour cette raison…",
+    "it": "Per questo motivo…",
+    "pt": "Por esta razão…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich meine Meinung klar formuliert?",
+  "Folgt ein konkreter Grund mit weil oder einer ähnlichen Formel?",
+  "Habe ich mindestens ein Beispiel genannt?",
+  "Steht das Verb im weil-Satz am Ende?",
+  "Klingt die Begründung konkret, nicht nur abstrakt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Meinung und Begründung klar verbunden sind. Prüfen Sie die Wortstellung nach weil und ob mindestens ein konkretes Beispiel genannt wird. Schreiben Sie den Text nicht neu."
+}

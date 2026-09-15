@@ -1,0 +1,146 @@
+{
+ "skillId": "EN-V06",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Idioms in Context",
+ "categoria": "vocabulary",
+ "ancla": "CV Vocabulary control",
+ "descripcion": "At C1, idioms of mid frequency are expected in discussion and comment, not the textbook ones nobody actually says. The rule matters as much as the list: one idiom per paragraph, never two in a row, and always checked against register before use.",
+ "cuadroReferencia": {
+  "titulo": "Mid-frequency idioms by register",
+  "columnas": [
+   "Register",
+   "Idiom",
+   "Meaning"
+  ],
+  "filas": [
+   [
+    "Informal",
+    "to be a nightmare",
+    "to be very difficult"
+   ],
+   [
+    "Neutral",
+    "to go round in circles",
+    "to make no progress"
+   ],
+   [
+    "Neutral",
+    "to cut a long story short",
+    "to summarise"
+   ],
+   [
+    "More formal",
+    "to take into account",
+    "to consider"
+   ],
+   [
+    "More formal",
+    "as a last resort",
+    "when nothing else works"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "To cut a long story short, they sent us to a different office entirely.",
+   "audio": true
+  },
+  {
+   "texto": "We spent three weeks going round in circles with no real progress.",
+   "audio": true
+  },
+  {
+   "texto": "As a last resort, we escalated it to management."
+  }
+ ],
+ "notas": [
+  "Idioms are almost never varied in wording; playing with them usually reads as an error rather than wit when a learner does it.",
+  "Check register before using an idiom: to be a nightmare is fine with a colleague and wrong in a formal letter.",
+  "Three idioms in one paragraph sounds like a phrasebook, not a person — one is plenty."
+ ],
+ "contraste": {
+  "es": "Las imágenes de fondo difieren: el español recurre a menudo al cuerpo y a los animales, el inglés a menudo al clima, los barcos y el dinero. Traducir un modismo español literalmente casi nunca funciona — no tener pelos en la lengua no tiene versión inglesa con pelo."
+ },
+ "errores": [
+  "Translating a Spanish idiom word for word into English.",
+  "Using an informal idiom in a formal written context.",
+  "Stacking more than one idiom in the same paragraph."
+ ],
+ "redemittel": [
+  {
+   "expresion": "to cut a long story short",
+   "funcion": "summarises",
+   "traducciones": {
+    "es": "para resumir",
+    "de": "um es kurz zu machen",
+    "fr": "pour faire bref",
+    "it": "per farla breve",
+    "pt": "para resumir"
+   }
+  },
+  {
+   "expresion": "to go round in circles",
+   "funcion": "no progress",
+   "traducciones": {
+    "es": "dar vueltas sin avanzar",
+    "de": "sich im Kreis drehen",
+    "fr": "tourner en rond",
+    "it": "girare in tondo",
+    "pt": "andar às voltas"
+   }
+  },
+  {
+   "expresion": "as a last resort",
+   "funcion": "final option",
+   "traducciones": {
+    "es": "como último recurso",
+    "de": "als letzter Ausweg",
+    "fr": "en dernier recours",
+    "it": "come ultima risorsa",
+    "pt": "como último recurso"
+   }
+  },
+  {
+   "expresion": "to take into account",
+   "funcion": "consider, more formal",
+   "traducciones": {
+    "es": "tener en cuenta",
+    "de": "berücksichtigen",
+    "fr": "prendre en compte",
+    "it": "tenere in considerazione",
+    "pt": "ter em conta"
+   }
+  },
+  {
+   "expresion": "to be a nightmare",
+   "funcion": "very difficult, informal",
+   "traducciones": {
+    "es": "ser un calvario",
+    "de": "ein Albtraum sein",
+    "fr": "être un cauchemar",
+    "it": "essere un incubo",
+    "pt": "ser um pesadelo"
+   }
+  },
+  {
+   "expresion": "sooner or later",
+   "funcion": "eventually",
+   "traducciones": {
+    "es": "tarde o temprano",
+    "de": "früher oder später",
+    "fr": "tôt ou tard",
+    "it": "prima o poi",
+    "pt": "mais cedo ou mais tarde"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is there at most one idiom per paragraph?",
+  "Does each idiom fit the register of the surrounding text?",
+  "Is any idiom a literal translation from Spanish?",
+  "Is the wording of each idiom kept fixed, not varied?",
+  "Would a native speaker actually use this idiom in this context?"
+ ],
+ "promptCorreccion": "Focus only on the idioms used. Check the wording, the register and whether any idiom reads as a literal translation from Spanish. Flag more than one idiom per paragraph. Do not rewrite the text."
+}

@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-G17",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Gerunds and Infinitives",
+ "categoria": "grammar",
+ "ancla": "EGP A1-B1",
+ "descripcion": "At B1 you fix the most common verbs that take a gerund (enjoy, avoid) versus an infinitive (want, decide). The verbs that change meaning depending on which form follows come later, once the basic pattern is automatic.",
+ "cuadroReferencia": {
+  "titulo": "Gerund or infinitive?",
+  "columnas": [
+   "Pattern",
+   "Verbs",
+   "Example"
+  ],
+  "filas": [
+   [
+    "+ gerund",
+    "enjoy, finish, avoid",
+    "I enjoy reading."
+   ],
+   [
+    "+ infinitive",
+    "want, decide, hope",
+    "I want to travel more."
+   ],
+   [
+    "After a preposition",
+    "always gerund",
+    "I'm good at cooking."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I really enjoy reading before bed.",
+   "audio": true
+  },
+  {
+   "texto": "I want to travel more this year.",
+   "audio": true
+  },
+  {
+   "texto": "I decided to study English seriously."
+  }
+ ],
+ "notas": [
+  "Enjoy, finish and avoid are always followed by the gerund (-ing), never the infinitive.",
+  "Want, decide and hope are always followed by the infinitive (to + verb).",
+  "After a preposition, English always uses the gerund: interested in learning."
+ ],
+ "contraste": {
+  "es": "El español usa el infinitivo de forma más general después de casi cualquier verbo, sin la distinción sistemática entre gerundio e infinitivo que exige el inglés."
+ },
+ "errores": [
+  "Using the infinitive after enjoy, finish or avoid.",
+  "Using the gerund after want, decide or hope.",
+  "Using the infinitive after a preposition instead of the gerund."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I enjoy…-ing",
+   "funcion": "gerund after enjoy",
+   "traducciones": {
+    "es": "Disfruto de…"
+   }
+  },
+  {
+   "expresion": "I want to…",
+   "funcion": "infinitive after want",
+   "traducciones": {
+    "es": "Quiero…"
+   }
+  },
+  {
+   "expresion": "I decided to…",
+   "funcion": "infinitive after decide",
+   "traducciones": {
+    "es": "Decidí…"
+   }
+  },
+  {
+   "expresion": "I finished…-ing",
+   "funcion": "gerund after finish",
+   "traducciones": {
+    "es": "Terminé de…"
+   }
+  },
+  {
+   "expresion": "I hope to…",
+   "funcion": "infinitive after hope",
+   "traducciones": {
+    "es": "Espero…"
+   }
+  },
+  {
+   "expresion": "I'm interested in…-ing",
+   "funcion": "gerund after a preposition",
+   "traducciones": {
+    "es": "Me interesa…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the gerund used after enjoy, finish and avoid?",
+  "Is the infinitive used after want, decide and hope?",
+  "Is the gerund used after every preposition?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on gerunds and infinitives. Check each verb against the pattern it requires and check the gerund after every preposition. Do not rewrite the text."
+}

@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-G10",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Modals of Deduction",
+ "categoria": "grammar",
+ "ancla": "EGP B1/B2",
+ "descripcion": "At B2 the modal perfect of deduction (must have, might have, can't have) is learned in single, clear sentences. Building an extended reasoning chain across several sentences (C1) isn't the target yet — getting one deduction right is enough.",
+ "cuadroReferencia": {
+  "titulo": "One deduction at a time",
+  "columnas": [
+   "Certainty",
+   "Form",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Near-certain",
+    "must have + participle",
+    "She must have left already."
+   ],
+   [
+    "Possible",
+    "might/could have + participle",
+    "It might have been a mistake."
+   ],
+   [
+    "Ruled out",
+    "can't have + participle",
+    "He can't have known about it."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She must have left already — the lights are off.",
+   "audio": true
+  },
+  {
+   "texto": "It might have been a scheduling error.",
+   "audio": true
+  },
+  {
+   "texto": "He can't have known about it, or he would have said something."
+  }
+ ],
+ "notas": [
+  "Must have expresses near certainty based on evidence, not a guess out of nowhere.",
+  "Can't have is the negative equivalent of must have, not couldn't have.",
+  "The participle after these modals is always the past participle, regardless of the tense of the situation."
+ ],
+ "contraste": {
+  "es": "El español expresa deducción con deber de + infinitivo (debe de haber salido), lo cual es cercano en lógica al inglés must have. La diferencia principal es que el inglés usa un verbo distinto (can't have) para descartar una posibilidad, mientras que el español suele usar la misma estructura negada."
+ },
+ "errores": [
+  "Using couldn't have instead of can't have to rule something out.",
+  "Using the base form instead of the participle: must have leave instead of must have left.",
+  "Confusing might have and must have when the evidence actually supports a stronger conclusion."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…must have…",
+   "funcion": "near-certain deduction",
+   "traducciones": {
+    "es": "Debe de haber…",
+    "de": "…muss… gehabt haben",
+    "fr": "…a dû avoir…",
+    "it": "…deve aver…",
+    "pt": "…deve ter tido…"
+   }
+  },
+  {
+   "expresion": "…might have…",
+   "funcion": "possible deduction",
+   "traducciones": {
+    "es": "Podría haber…",
+    "de": "…könnte… gehabt haben",
+    "fr": "…pourrait avoir eu…",
+    "it": "…potrebbe aver avuto…",
+    "pt": "…poderia ter tido…"
+   }
+  },
+  {
+   "expresion": "…can't have…",
+   "funcion": "rules out a possibility",
+   "traducciones": {
+    "es": "No puede haber…",
+    "de": "…kann nicht… haben",
+    "fr": "…ne peut pas avoir…",
+    "it": "…non può aver…",
+    "pt": "…não pode ter…"
+   }
+  },
+  {
+   "expresion": "…could have…",
+   "funcion": "possible deduction, alternative",
+   "traducciones": {
+    "es": "Podría haber…",
+    "de": "…könnte… haben",
+    "fr": "…pourrait avoir…",
+    "it": "…potrebbe aver…",
+    "pt": "…poderia ter…"
+   }
+  },
+  {
+   "expresion": "That would explain why…",
+   "funcion": "connects a deduction to evidence",
+   "traducciones": {
+    "es": "Eso explicaría por qué…",
+    "de": "Das würde erklären, warum…",
+    "fr": "Cela expliquerait pourquoi…",
+    "it": "Questo spiegherebbe perché…",
+    "pt": "Isso explicaria porquê…"
+   }
+  },
+  {
+   "expresion": "There's no way she could have…",
+   "funcion": "strong denial, informal",
+   "traducciones": {
+    "es": "No hay forma de que ella haya…",
+    "de": "Sie kann unmöglich… haben.",
+    "fr": "Il est impossible qu’elle ait…",
+    "it": "Non è possibile che lei abbia…",
+    "pt": "Não é possível que ela tenha…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the participle correct after the modal verb?",
+  "Is can't have used to rule something out, not couldn't have?",
+  "Does the chosen modal match the actual level of certainty?",
+  "Have I used at least two different modals of deduction?",
+  "Is the sentence based on real evidence, not a random guess?"
+ ],
+ "promptCorreccion": "Focus only on modals of deduction. Check the participle form after each modal and the choice between must, might, could and can't have based on the actual evidence in the text. Do not rewrite the text."
+}

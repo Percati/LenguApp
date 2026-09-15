@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-G10",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Passiv und Passiversatzformen",
+ "categoria": "grammar",
+ "ancla": "PD B1",
+ "descripcion": "Auf B1 wird das einfache Vorgangspassiv (wird gemacht, wurde gemacht) im Präsens und Präteritum sicher gebildet. Das Zustandspassiv und die Ersatzformen kommen erst später dazu — hier reicht die Grundform, mit oder ohne genannten Urheber.",
+ "cuadroReferencia": {
+  "titulo": "Vorgangspassiv, zwei Zeiten",
+  "columnas": [
+   "Zeit",
+   "Form",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Präsens",
+    "werden + Partizip II",
+    "Das Brot wird jeden Tag frisch gebacken."
+   ],
+   [
+    "Präteritum",
+    "wurde + Partizip II",
+    "Das Haus wurde 1990 gebaut."
+   ],
+   [
+    "Frage",
+    "Wann wird das repariert?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das Brot wird hier jeden Tag frisch gebacken.",
+   "audio": true
+  },
+  {
+   "texto": "Das Haus wurde vor dreissig Jahren gebaut.",
+   "audio": true
+  },
+  {
+   "texto": "Die Fenster werden nächste Woche geputzt."
+  }
+ ],
+ "notas": [
+  "Das Passiv wird gebildet mit werden plus Partizip II, das am Satzende steht.",
+  "Der Urheber wird mit von + Dativ genannt, aber oft ganz weggelassen.",
+  "Nicht jedes Verb bildet ein Passiv: haben, bekommen und kennen zum Beispiel nicht."
+ ],
+ "contraste": {
+  "es": "Das Spanische bevorzugt an dieser Stelle oft die se-Konstruktion (se hace, se construyó) statt eines echten Passivs. Deshalb übertragen Spanischsprachige das deutsche Passiv seltener aktiv und benutzen stattdessen das Aktiv mit man."
+ },
+ "errores": [
+  "Werden vergessen und nur das Partizip II verwenden.",
+  "Das Partizip II nicht ans Satzende stellen.",
+  "Sein statt werden im Vorgangspassiv verwenden."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…wird…gemacht.",
+   "funcion": "Passiv, Präsens",
+   "traducciones": {
+    "es": "…se hace…",
+    "en": "…is made/done…"
+   }
+  },
+  {
+   "expresion": "…wurde…gebaut.",
+   "funcion": "Passiv, Präteritum",
+   "traducciones": {
+    "es": "…se construyó…",
+    "en": "…was built…"
+   }
+  },
+  {
+   "expresion": "…wird von…gemacht.",
+   "funcion": "Passiv mit Urheber",
+   "traducciones": {
+    "es": "…es hecho por…",
+    "en": "…is made by…"
+   }
+  },
+  {
+   "expresion": "Das wird bald erledigt.",
+   "funcion": "Zukunftsbezug, Passiv",
+   "traducciones": {
+    "es": "Eso se resuelve pronto.",
+    "en": "That will be sorted out soon."
+   }
+  },
+  {
+   "expresion": "…wird gerade repariert.",
+   "funcion": "Passiv, im Verlauf",
+   "traducciones": {
+    "es": "…se está reparando.",
+    "en": "…is being repaired."
+   }
+  },
+  {
+   "expresion": "…werden jeden Tag…",
+   "funcion": "Passiv, Gewohnheit",
+   "traducciones": {
+    "es": "…se hacen todos los días…",
+    "en": "…are made every day…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht werden/wurde plus Partizip II?",
+  "Steht das Partizip II am Satzende?",
+  "Habe ich das Passiv in Präsens UND Präteritum benutzt?",
+  "Klingt der Satz natürlich?",
+  "Habe ich mindestens vier Beispiele benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Vorgangspassiv in Präsens und Präteritum. Prüfen Sie die Form mit werden und die Position des Partizips. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-G02",
+ "nivel": "A2",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Konnektoren (*weil, obwohl, trotzdem, deshalb, während*)",
+ "categoria": "grammar",
+ "ancla": "PD A2",
+ "descripcion": "Auf A2 lernt man die zwei nützlichsten Konnektoren zuerst: weil für den Grund und deshalb für die Folge. Die anderen wichtigen Konnektoren wie obwohl, trotzdem und während kommen erst auf B1 systematisch dazu.",
+ "cuadroReferencia": {
+  "titulo": "Weil und deshalb",
+  "columnas": [
+   "Konnektor",
+   "Funktion",
+   "Verbposition"
+  ],
+  "filas": [
+   [
+    "weil",
+    "Grund",
+    "Verb am Ende"
+   ],
+   [
+    "deshalb",
+    "Folge",
+    "Verb-Subjekt-Umstellung"
+   ],
+   [
+    "Beispiel weil",
+    "Ich bin müde, weil ich viel gearbeitet habe."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich bleibe zu Hause, weil ich krank bin.",
+   "audio": true
+  },
+  {
+   "texto": "Es regnet, deshalb bleibe ich zu Hause.",
+   "audio": true
+  },
+  {
+   "texto": "Ich habe keine Zeit, weil ich arbeite."
+  }
+ ],
+ "notas": [
+  "Weil schickt das Verb ans Ende des Satzes.",
+  "Nach deshalb kommt zuerst das Verb, dann das Subjekt.",
+  "Beide Konnektoren sind sehr häufig im Alltag."
+ ],
+ "contraste": {
+  "es": "Das Spanische verändert die Wortstellung nach porque oder por eso nicht. Diese Veränderung ist für Spanischsprachige komplett neu."
+ },
+ "errores": [
+  "Nach weil das Verb nicht ans Ende stellen.",
+  "Nach deshalb keine Verb-Subjekt-Umstellung machen.",
+  "Weil und deshalb verwechseln."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, weil…",
+   "funcion": "Grund",
+   "traducciones": {
+    "es": "…, porque…",
+    "en": "…, because…"
+   }
+  },
+  {
+   "expresion": "…, deshalb…",
+   "funcion": "Folge",
+   "traducciones": {
+    "es": "…, por eso…",
+    "en": "…, that's why…"
+   }
+  },
+  {
+   "expresion": "Ich bin müde, weil…",
+   "funcion": "feste Kombination",
+   "traducciones": {
+    "es": "Estoy cansado porque…",
+    "en": "I'm tired because…"
+   }
+  },
+  {
+   "expresion": "Es ist spät, deshalb…",
+   "funcion": "feste Kombination",
+   "traducciones": {
+    "es": "Es tarde, por eso…",
+    "en": "It's late, that's why…"
+   }
+  },
+  {
+   "expresion": "Warum? — Weil…",
+   "funcion": "Frage und Antwort",
+   "traducciones": {
+    "es": "¿Por qué? — Porque…",
+    "en": "Why? — Because…"
+   }
+  },
+  {
+   "expresion": "…, deshalb kann ich nicht…",
+   "funcion": "Folge, negativ",
+   "traducciones": {
+    "es": "…, por eso no puedo…",
+    "en": "…, that's why I can't…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht nach weil das Verb am Ende?",
+  "Steht nach deshalb Verb vor Subjekt?",
+  "Habe ich beide Konnektoren mindestens einmal benutzt?",
+  "Klingt der Satz natürlich?",
+  "Habe ich mindestens vier Sätze gebildet?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf weil und deshalb. Prüfen Sie die Verbposition in beiden Fällen genau, Satz für Satz. Schreiben Sie den Text nicht neu."
+}

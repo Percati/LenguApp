@@ -1,0 +1,112 @@
+{
+ "skillId": "EN-G15",
+ "nivel": "C2",
+ "idioma": "en",
+ "titulo": "Reduced Relative and Participle Clauses",
+ "categoria": "grammar",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 you handle the rarer reduced forms: a relative clause reduced to a bare noun phrase in apposition, and a participle clause with its own subject (an absolute construction), both markers of dense, highly literate written English.",
+ "cuadroReferencia": {
+  "titulo": "The rarer reductions",
+  "columnas": [
+   "Full form",
+   "Reduced",
+   "Register"
+  ],
+  "filas": [
+   [
+    "Maria, who is our lead researcher, confirmed it.",
+    "Maria, our lead researcher, confirmed it.",
+    "apposition, very common in careful writing"
+   ],
+   [
+    "Once the meeting had ended, we left.",
+    "The meeting having ended, we left.",
+    "absolute construction, formal/literary"
+   ],
+   [
+    "Weather permitting, we will proceed.",
+    "fixed absolute phrase",
+    "formal, common"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Maria, our lead researcher, confirmed the findings personally.",
+   "audio": true
+  },
+  {
+   "texto": "The meeting having ended, the delegates dispersed quickly.",
+   "audio": true
+  },
+  {
+   "texto": "Weather permitting, the launch will proceed as planned."
+  }
+ ],
+ "notas": [
+  "Apposition (Maria, our lead researcher) drops both the relative pronoun and the verb be entirely — it's extremely common in professional writing and shouldn't be mistaken for an error.",
+  "An absolute construction has its own subject, distinct from the main clause's subject — that's what makes it grammatically 'absolute', independent of the rest of the sentence.",
+  "Weather permitting and time allowing are fixed absolute constructions worth learning as set phrases."
+ ],
+ "contraste": {
+  "es": "El español usa la aposición de forma parecida (María, nuestra investigadora principal), así que ese recurso se transfiere con facilidad. La construcción absoluta con sujeto propio, en cambio, es mucho más rara en español y tiende a sonar forzada si se traduce literalmente, por lo que conviene aprenderla como fórmula fija en inglés."
+ },
+ "errores": [
+  "Forgetting the commas around an appositive phrase.",
+  "Building an absolute construction where the two subjects are actually the same, which should instead be a simple participle clause.",
+  "Using an absolute construction outside formal or literary writing, where it reads as stilted."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, our…, …",
+   "funcion": "apposition, professional writing",
+   "traducciones": {
+    "es": "…, nuestro/a…, …"
+   }
+  },
+  {
+   "expresion": "…having…, …",
+   "funcion": "absolute construction",
+   "traducciones": {
+    "es": "habiendo…, …"
+   }
+  },
+  {
+   "expresion": "Weather permitting, …",
+   "funcion": "fixed absolute phrase",
+   "traducciones": {
+    "es": "si el clima lo permite, …"
+   }
+  },
+  {
+   "expresion": "Time allowing, …",
+   "funcion": "fixed absolute phrase",
+   "traducciones": {
+    "es": "si el tiempo lo permite, …"
+   }
+  },
+  {
+   "expresion": "Everything considered, …",
+   "funcion": "absolute, summarising",
+   "traducciones": {
+    "es": "considerándolo todo, …"
+   }
+  },
+  {
+   "expresion": "…, itself…, …",
+   "funcion": "appositive emphasis",
+   "traducciones": {
+    "es": "…, en sí…, …"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Are commas correctly placed around every appositive phrase?",
+  "Does every absolute construction have a subject distinct from the main clause?",
+  "Is the absolute construction reserved for formal or literary contexts?",
+  "Would a highly literate native reader find this natural, not stilted?",
+  "Have I used at least one appositive and one absolute construction?"
+ ],
+ "promptCorreccion": "Focus only on apposition and absolute constructions. Check comma placement and whether each absolute construction genuinely has its own subject. Do not rewrite the text."
+}

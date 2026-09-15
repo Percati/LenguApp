@@ -1,0 +1,47 @@
+{
+ "skillId": "EN-F13", "nivel": "C2", "idioma": "en", "bilingue": false,
+ "titulo": "Hedging and Softening Claims",
+ "categoria": "fluency",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 hedging is deployed with full awareness of its social cost: knowing that stacking hedges past a certain point stops sounding careful and starts sounding evasive, and choosing a single, well-placed hedge over three weak ones because it reads as more confident, not less.",
+ "cuadroReferencia": {
+  "titulo": "One strong hedge beats three weak ones",
+  "columnas": ["Version", "Effect"],
+  "filas": [
+   ["I think it might possibly be a bit off", "reads as evasive, undermines the claim"],
+   ["I suspect this is off", "one hedge, reads as confident and precise"],
+   ["This is off.", "no hedge, used when the writer is actually sure"]
+  ]
+ },
+ "ejemplos": [
+  {"texto": "I suspect this figure is off, and here's why.", "audio": true},
+  {"texto": "This is wrong. I'm sure enough to say so plainly.", "audio": true},
+  {"texto": "I could be wrong about this, but I doubt it."}
+ ],
+ "notas": [
+  "A single, precise hedge (I suspect) reads as more confident than three stacked ones, because it signals the speaker has already done the calibration.",
+  "Choosing not to hedge at all, when genuinely certain, is itself a marked and effective choice at this level.",
+  "I could be wrong about this, but I doubt it is a controlled way to hedge and then immediately withdraw most of the hedge."
+ ],
+ "errores": [
+  "Stacking multiple hedges on a single claim, which reads as evasive rather than careful.",
+  "Hedging a claim the writer is actually certain about, undermining their own authority.",
+  "Using a hedge without any reasoning behind it, so it reads as reflexive rather than calibrated."
+ ],
+ "redemittel": [
+  {"expresion": "I suspect…", "funcion": "single precise hedge", "traducciones": {"es": "Sospecho que…"}},
+  {"expresion": "This is…, and I'm sure enough to say so.", "funcion": "confident, unhedged claim", "traducciones": {"es": "Esto es…, y estoy lo bastante seguro para decirlo."}},
+  {"expresion": "I could be wrong about this, but I doubt it.", "funcion": "hedges then withdraws most of it", "traducciones": {"es": "Podría estar equivocado en esto, pero lo dudo."}},
+  {"expresion": "I'll go out on a limb and say…", "funcion": "flags a deliberately unhedged claim", "traducciones": {"es": "Me voy a arriesgar a decir…"}},
+  {"expresion": "…, and I don't say that lightly.", "funcion": "signals the claim is considered, not casual", "traducciones": {"es": "…, y no lo digo a la ligera."}},
+  {"expresion": "There's no need to hedge this: …", "funcion": "explicitly opts out of hedging", "traducciones": {"es": "No hace falta matizar esto: …"}}
+ ],
+ "autochequeo": [
+  "Is any claim hedged more than once, stacking weakens it?",
+  "Is a claim the writer is actually certain about left unhedged?",
+  "Does each hedge carry a reason, not just reflexive caution?",
+  "Would the writing read as confident overall, not evasive?",
+  "Is there at least one deliberately unhedged claim for contrast?"
+ ],
+ "promptCorreccion": "Focus only on hedging density. Flag any claim with more than one stacked hedge, and flag any certain claim left unnecessarily hedged. Do not rewrite the text."
+}

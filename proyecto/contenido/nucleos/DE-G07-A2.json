@@ -1,0 +1,114 @@
+{
+ "skillId": "DE-G07",
+ "nivel": "A2",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Adjektivdeklination",
+ "categoria": "grammar",
+ "ancla": "PD A2",
+ "descripcion": "Auf A2 lernt man die Adjektivendung nach dem bestimmten Artikel im Nominativ zuerst: der neue Kollege, die neue Kollegin, das neue Büro. Die anderen Fälle kommen erst auf B1 dazu. Diese Grundlage ist wichtig, um im Alltag korrekt über die Vergangenheit zu berichten.",
+ "cuadroReferencia": {
+  "titulo": "Adjektiv nach bestimmtem Artikel, Nominativ",
+  "columnas": [
+   "Genus",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "maskulin",
+    "der neue Kollege"
+   ],
+   [
+    "feminin",
+    "die neue Kollegin"
+   ],
+   [
+    "neutral",
+    "das neue Büro"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Der neue Kollege ist sehr freundlich.",
+   "audio": true
+  },
+  {
+   "texto": "Die neue Kollegin kommt aus Italien.",
+   "audio": true
+  },
+  {
+   "texto": "Das neue Büro ist ziemlich klein."
+  }
+ ],
+ "notas": [
+  "Nach dem bestimmten Artikel im Nominativ endet das Adjektiv auf -e.",
+  "Das Genus des Adjektivs kommt vom Nomen: der Kollege ist maskulin, also der neue Kollege.",
+  "Diese Regel gilt nur für den Nominativ mit bestimmtem Artikel."
+ ],
+ "contraste": {
+  "es": "Das Spanische dekliniert Adjektive nach Genus und Numerus, aber nicht nach Kasus. Diese zusätzliche Ebene ist für Spanischsprachige neu."
+ },
+ "errores": [
+  "Die Endung -e vergessen.",
+  "Das falsche Genus für das Adjektiv wählen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "der neue…",
+   "funcion": "maskulin, Nominativ",
+   "traducciones": {
+    "es": "el nuevo…",
+    "en": "the new…"
+   }
+  },
+  {
+   "expresion": "die neue…",
+   "funcion": "feminin, Nominativ",
+   "traducciones": {
+    "es": "la nueva…",
+    "en": "the new…"
+   }
+  },
+  {
+   "expresion": "das neue…",
+   "funcion": "neutral, Nominativ",
+   "traducciones": {
+    "es": "el/la nuevo/a…",
+    "en": "the new…"
+   }
+  },
+  {
+   "expresion": "der grosse…",
+   "funcion": "maskulin, Nominativ",
+   "traducciones": {
+    "es": "el grande…",
+    "en": "the big…"
+   }
+  },
+  {
+   "expresion": "die kleine…",
+   "funcion": "feminin, Nominativ",
+   "traducciones": {
+    "es": "la pequeña…",
+    "en": "the small…"
+   }
+  },
+  {
+   "expresion": "das alte…",
+   "funcion": "neutral, Nominativ",
+   "traducciones": {
+    "es": "el/la viejo/a…",
+    "en": "the old…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Endet das Adjektiv auf -e?",
+  "Stimmt der Artikel mit dem Genus überein?",
+  "Habe ich alle drei Genera mindestens einmal benutzt?",
+  "Klingt der Satz natürlich?",
+  "Klingt der Satz natürlich?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendung nach dem bestimmten Artikel im Nominativ. Prüfen Sie das Genus jedes Nomens. Schreiben Sie den Text nicht neu."
+}

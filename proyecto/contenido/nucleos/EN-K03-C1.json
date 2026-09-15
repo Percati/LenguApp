@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-K03",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Unreal Past, Modal Perfect and Third Conditional",
+ "categoria": "grammar",
+ "ancla": "EGP B2",
+ "descripcion": "Regret in English draws on three structures that learners usually meet in separate units: the unreal past after wish, the modal perfect (could/should/might have), and the third conditional. In real speech they blend into a single train of thought — I wish I'd known; we could have avoided it; if we'd checked, none of this would have happened — and the blending is the actual skill.",
+ "cuadroReferencia": {
+  "titulo": "The regret cluster",
+  "columnas": [
+   "Structure",
+   "Form",
+   "Function"
+  ],
+  "filas": [
+   [
+    "Unreal past",
+    "wish + past perfect",
+    "regret about the past"
+   ],
+   [
+    "Modal perfect",
+    "could/should/might + have + participle",
+    "missed possibility or duty"
+   ],
+   [
+    "Third conditional",
+    "if + past perfect, would have + participle",
+    "the alternative outcome"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I wish I'd known sooner — we could have avoided the whole mess.",
+   "audio": true
+  },
+  {
+   "texto": "If we'd checked the settings, this wouldn't have happened.",
+   "audio": true
+  },
+  {
+   "texto": "We should have asked; nobody thought to."
+  }
+ ],
+ "notas": [
+  "These three often appear in sequence within the same paragraph: wish sets the regret, modal perfect names the missed action, the third conditional spells out the alternative.",
+  "Would have never appears in the if-clause of a third conditional, even though it's tempting after wish + would.",
+  "Could have and might have differ in confidence: could have is a genuine possibility, might have is more tentative."
+ ],
+ "contraste": {
+  "es": "El español expresa lo mismo con si + pluscuamperfecto de subjuntivo y condicional compuesto, y el arrepentimiento con ojalá + pluscuamperfecto de subjuntivo, así que la lógica es paralela. Lo que no transfiere es el modal perfecto inglés como pieza intermedia: el español no tiene un verbo modal separado y lo resuelve todo dentro del propio condicional, así que los hispanohablantes tienden a saltarse could/should have y pasar directo del wish al tercer condicional."
+ },
+ "errores": [
+  "Using would have inside the if-clause of a third conditional.",
+  "Skipping the modal perfect and jumping straight from wish to the third conditional, losing the missed-action step.",
+  "Confusing could have and might have when the degree of certainty actually matters to the point."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I wish I'd known.",
+   "funcion": "past regret",
+   "traducciones": {
+    "es": "ojalá lo hubiera sabido",
+    "de": "Ich wünschte, ich hätte es gewusst.",
+    "fr": "Si seulement je l’avais su.",
+    "it": "Magari l’avessi saputo.",
+    "pt": "Quem me dera ter sabido."
+   }
+  },
+  {
+   "expresion": "We could have avoided it.",
+   "funcion": "missed possibility",
+   "traducciones": {
+    "es": "podríamos haberlo evitado",
+    "de": "Wir hätten es vermeiden können.",
+    "fr": "Nous aurions pu l’éviter.",
+    "it": "Avremmo potuto evitarlo.",
+    "pt": "Poderíamos tê-lo evitado."
+   }
+  },
+  {
+   "expresion": "We should have asked.",
+   "funcion": "missed obligation, regret",
+   "traducciones": {
+    "es": "deberíamos haber preguntado",
+    "de": "Wir hätten fragen sollen.",
+    "fr": "Nous aurions dû demander.",
+    "it": "Avremmo dovuto chiedere.",
+    "pt": "Deveríamos ter perguntado."
+   }
+  },
+  {
+   "expresion": "If we'd known, we wouldn't have…",
+   "funcion": "full third conditional",
+   "traducciones": {
+    "es": "si lo hubiéramos sabido, no habríamos…",
+    "de": "Wenn wir es gewusst hätten, hätten wir nicht…",
+    "fr": "Si nous l’avions su, nous n’aurions pas…",
+    "it": "Se l’avessimo saputo, non avremmo…",
+    "pt": "Se tivéssemos sabido, não teríamos…"
+   }
+  },
+  {
+   "expresion": "It might have helped if…",
+   "funcion": "tentative alternative",
+   "traducciones": {
+    "es": "podría haber ayudado si…",
+    "de": "Es hätte vielleicht geholfen, wenn…",
+    "fr": "Cela aurait peut-être aidé si…",
+    "it": "Avrebbe potuto aiutare se…",
+    "pt": "Talvez tivesse ajudado se…"
+   }
+  },
+  {
+   "expresion": "In hindsight, we should have…",
+   "funcion": "frames the whole regret",
+   "traducciones": {
+    "es": "en retrospectiva, deberíamos haber…",
+    "de": "Im Nachhinein hätten wir… sollen.",
+    "fr": "Avec le recul, nous aurions dû…",
+    "it": "A posteriori, avremmo dovuto…",
+    "pt": "Em retrospetiva, deveríamos ter…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Does every if-clause use the past perfect, with no would inside it?",
+  "Is the modal perfect present as its own step, not skipped?",
+  "Are could have and might have used with the right degree of certainty?",
+  "Do the three structures appear in a natural sequence, not isolated?",
+  "Are the participles correct throughout?"
+ ],
+ "promptCorreccion": "Focus only on the regret cluster: unreal past, modal perfect, third conditional. Check every if-clause for would have by mistake, and check whether the three structures work together as a sequence. Do not rewrite the text."
+}

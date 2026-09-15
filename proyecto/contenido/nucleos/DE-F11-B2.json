@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-F11",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Gespräch steuern: einwerfen, nachfragen, korrigieren",
+ "categoria": "fluency",
+ "ancla": "PD B2",
+ "descripcion": "Auf B2 lernt man, sich höflich in ein Gespräch einzuschalten, nachzufragen, wenn etwas unklar ist, und sich selbst zu korrigieren, ohne den Gesprächsfluss zu stören. Das ist die Grundausstattung, um ein Gespräch aktiv mitzugestalten statt nur zu antworten.",
+ "cuadroReferencia": {
+  "titulo": "Drei Gesprächswerkzeuge",
+  "columnas": [
+   "Funktion",
+   "Formel"
+  ],
+  "filas": [
+   [
+    "Einwerfen",
+    "Darf ich kurz etwas sagen?"
+   ],
+   [
+    "Nachfragen",
+    "Wie meinst du das genau?"
+   ],
+   [
+    "Sich korrigieren",
+    "Ich meine eigentlich…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Darf ich kurz etwas dazu sagen?",
+   "audio": true
+  },
+  {
+   "texto": "Wie meinst du das genau, kannst du das nochmal erklären?",
+   "audio": true
+  },
+  {
+   "texto": "Ich meine eigentlich das Gegenteil von dem, was ich gerade gesagt habe."
+  }
+ ],
+ "notas": [
+  "Darf ich kurz etwas sagen? ist eine höfliche Art, das Wort zu ergreifen, ohne jemanden zu unterbrechen.",
+  "Wie meinst du das genau? zeigt echtes Interesse und vermeidet Missverständnisse.",
+  "Sich selbst korrigieren mit ich meine eigentlich ist ganz normal und wirkt nicht unsicher."
+ ],
+ "contraste": {
+  "es": "Das Spanische erlaubt mehr Überlappung im Gespräch und weniger explizite Formeln, um das Wort zu ergreifen. Spanischsprachige unterbrechen im Deutschen manchmal direkter, als es dort als höflich gilt, und lassen die einleitende Frage weg."
+ },
+ "errores": [
+  "Ohne jede einleitende Formel unterbrechen.",
+  "Nicht nachfragen, wenn etwas unklar ist, und stattdessen so tun, als hätte man verstanden.",
+  "Eine Korrektur ohne ich meine einfach unkommentiert stehen lassen, was verwirrend wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Darf ich kurz etwas sagen?",
+   "funcion": "Einwerfen",
+   "traducciones": {
+    "es": "¿Puedo decir algo rápido?",
+    "en": "Can I just say something?",
+    "fr": "Excuse-moi, je peux juste dire quelque chose ?",
+    "it": "Scusa, posso dire una cosa velocemente?",
+    "pt": "Desculpa, posso dizer uma coisa rapidamente?"
+   }
+  },
+  {
+   "expresion": "Wie meinst du das genau?",
+   "funcion": "Nachfragen",
+   "traducciones": {
+    "es": "¿Cómo lo decís exactamente?",
+    "en": "What exactly do you mean by that?",
+    "fr": "Qu’est-ce que tu veux dire exactement ?",
+    "it": "Che cosa intendi esattamente?",
+    "pt": "O que queres dizer exatamente?"
+   }
+  },
+  {
+   "expresion": "Ich meine eigentlich…",
+   "funcion": "sich korrigieren",
+   "traducciones": {
+    "es": "En realidad quiero decir…",
+    "en": "What I actually mean is…",
+    "fr": "Ce que je veux dire, en fait, c’est…",
+    "it": "Quello che intendo, in realtà, è…",
+    "pt": "O que quero dizer, na verdade, é…"
+   }
+  },
+  {
+   "expresion": "Entschuldigung, kann ich kurz was einwerfen?",
+   "funcion": "höflich unterbrechen",
+   "traducciones": {
+    "es": "Perdón, ¿puedo interrumpir un segundo?",
+    "en": "Sorry, can I jump in for a second?",
+    "fr": "Excuse-moi, je peux intervenir une seconde ?",
+    "it": "Scusa, posso intervenire un attimo?",
+    "pt": "Desculpa, posso intervir um instante?"
+   }
+  },
+  {
+   "expresion": "Verstehe ich das richtig, dass…?",
+   "funcion": "Verständnis prüfen",
+   "traducciones": {
+    "es": "¿Entiendo bien que…?",
+    "en": "Am I right in thinking that…?",
+    "fr": "Est-ce que je comprends bien que… ?",
+    "it": "Ho capito bene che…?",
+    "pt": "Estou a perceber bem que…?"
+   }
+  },
+  {
+   "expresion": "Was ich sagen wollte, ist…",
+   "funcion": "zurück zum Punkt kommen",
+   "traducciones": {
+    "es": "Lo que quería decir era…",
+    "en": "What I meant to say was…",
+    "fr": "Ce que je voulais dire, c’est…",
+    "it": "Quello che volevo dire è…",
+    "pt": "O que eu queria dizer era…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich eine höfliche Formel benutzt, um das Wort zu ergreifen?",
+  "Habe ich nachgefragt, wenn etwas unklar war?",
+  "Ist eine Selbstkorrektur klar markiert?",
+  "Klingt das Gespräch natürlich, nicht abgehackt?",
+  "Habe ich mindestens zwei verschiedene Formeln benutzt, nicht immer dieselbe?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Gesprächswerkzeuge: einwerfen, nachfragen, korrigieren. Prüfen Sie, ob die Formeln höflich und passend eingesetzt sind. Schreiben Sie den Text nicht neu."
+}

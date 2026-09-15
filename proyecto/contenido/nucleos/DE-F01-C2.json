@@ -1,0 +1,114 @@
+{
+ "skillId": "DE-F01",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Meinung äußern und begründen",
+ "categoria": "fluency",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird eine Meinung so kalibriert, dass sie dem Grad der tatsächlichen Gewissheit exakt entspricht: eine Frage ohne einfache Antwort verlangt eine andere Formulierung als eine, bei der man sich sicher ist. Das Ziel ist nicht mehr, überhaupt eine Meinung zu äussern, sondern die richtige Verbindlichkeit für sie zu finden.",
+ "cuadroReferencia": {
+  "titulo": "Verbindlichkeit kalibrieren",
+  "columnas": [
+   "Grad",
+   "Formel"
+  ],
+  "filas": [
+   [
+    "Sehr sicher",
+    "Ich bin fest davon überzeugt, dass…"
+   ],
+   [
+    "Abwägend",
+    "Wenn ich mich festlegen müsste, würde ich sagen…"
+   ],
+   [
+    "Offen für Gegenargumente",
+    "Ich vertrete diese Position, ohne mich völlig darauf festzulegen."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich bin fest davon überzeugt, dass diese Entscheidung richtig war.",
+   "audio": true
+  },
+  {
+   "texto": "Wenn ich mich festlegen müsste, würde ich sagen, die Ersteren haben recht.",
+   "audio": true
+  },
+  {
+   "texto": "Ich vertrete diese Position, ohne mich völlig darauf festzulegen."
+  }
+ ],
+ "notas": [
+  "Wenn ich mich festlegen müsste signalisiert eine abgewogene, nicht leichtfertige Position bei einer Frage ohne klare Antwort.",
+  "Ohne mich völlig darauf festzulegen ist ein präzises Mittel, um intellektuelle Redlichkeit zu zeigen, ohne die Position selbst zu schwächen.",
+  "Die Wahl der Formel signalisiert dem Zuhörer, wie viel Widerspruch angemessen wäre."
+ ],
+ "contraste": {
+  "es": "Das kultivierte Spanisch erkennt Komplexität ebenfalls an, bevor es eine Meinung äussert. Was hispanophonen C2-Sprechern oft fehlt, ist das präzise deutsche Vokabular, um den GRAD der eigenen Gewissheit zu benennen, statt die Meinung nur allgemein abzuschwächen."
+ },
+ "errores": [
+  "Eine Meinung bei einer echten strittigen Frage mit voller Überzeugung äussern, was naiv statt autoritativ wirkt.",
+  "Die Komplexität anerkennen, aber am Ende keine Position beziehen.",
+  "Die Abschwächung der Verbindlichkeit mit einer inhaltlichen Abschwächung verwechseln."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich bin fest davon überzeugt, dass…",
+   "funcion": "hohe Sicherheit",
+   "traducciones": {
+    "es": "estoy firmemente convencido de que…",
+    "en": "I'm firmly convinced that…"
+   }
+  },
+  {
+   "expresion": "Wenn ich mich festlegen müsste, würde ich sagen…",
+   "funcion": "abwägende Position",
+   "traducciones": {
+    "es": "si tuviera que definirme, diría…",
+    "en": "if pressed, I'd say…"
+   }
+  },
+  {
+   "expresion": "…, ohne mich völlig darauf festzulegen.",
+   "funcion": "offen für Gegenargumente",
+   "traducciones": {
+    "es": "…, sin comprometerme del todo con ello",
+    "en": "…, without fully committing to it"
+   }
+  },
+  {
+   "expresion": "Diese Position vertrete ich mit Vorbehalt.",
+   "funcion": "eingeschränkte Verbindlichkeit",
+   "traducciones": {
+    "es": "sostengo esta postura con reservas",
+    "en": "I hold this position with reservations"
+   }
+  },
+  {
+   "expresion": "Ich liesse mich vom Gegenteil überzeugen.",
+   "funcion": "signalisiert echte Offenheit",
+   "traducciones": {
+    "es": "me dejaría convencer de lo contrario",
+    "en": "I could be persuaded otherwise"
+   }
+  },
+  {
+   "expresion": "Es ist wirklich schwer zu sagen, aber…",
+   "funcion": "erkennt Komplexität an",
+   "traducciones": {
+    "es": "es realmente difícil de decir, pero…",
+    "en": "it's genuinely hard to say, but…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Passt die Verbindlichkeit der Formel zur tatsächlichen Gewissheit?",
+  "Wird die Frage am Ende tatsächlich beantwortet, nicht nur qualifiziert?",
+  "Ist der Unterschied zwischen inhaltlicher und Verbindlichkeitsabschwächung beachtet?",
+  "Würde ein Fachpublikum diesen Grad an Verbindlichkeit als angemessen empfinden?",
+  "Klingt die Meinung wie die eines Fachexperten, nicht wie eine allgemeine Floskel?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Verbindlichkeit der Meinung zur tatsächlichen Gewissheit passt. Schreiben Sie den Text nicht neu."
+}

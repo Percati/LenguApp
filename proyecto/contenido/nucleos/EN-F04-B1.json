@@ -1,0 +1,109 @@
+{
+ "skillId": "EN-F04",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Telling a Story / Recounting Experiences",
+ "categoria": "fluency",
+ "ancla": "CV Sustained monologue: describing experience",
+ "descripcion": "At B1 you tell a simple story in the past simple, with clear time markers like first, then, after that. The dramaturgy of a stronger story (a hook, a turning point) comes later — a clear order of events is enough here.",
+ "cuadroReferencia": {
+  "titulo": "A simple story",
+  "columnas": [
+   "Step",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Beginning",
+    "Last year, I went to Berlin for the first time."
+   ],
+   [
+    "Order",
+    "First we visited a museum, then we went for a walk."
+   ],
+   [
+    "Ending",
+    "In the end, it was a great day."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Last year, I went to Berlin for the first time.",
+   "audio": true
+  },
+  {
+   "texto": "First we visited a museum, then we went for a walk.",
+   "audio": true
+  },
+  {
+   "texto": "In the end, it was a really great day."
+  }
+ ],
+ "notas": [
+  "First, then, after that, in the end structure the story without needing complex tenses.",
+  "Most verbs go in the past simple; the past continuous can be added for background.",
+  "A short time expression at the start (last year, last summer) helps place the story."
+ ],
+ "contraste": {
+  "es": "El español narra historias pasadas en pretérito indefinido de forma muy parecida, y los marcadores temporales (primero, luego) se transfieren directamente."
+ },
+ "errores": [
+  "Telling the story with no time markers at all.",
+  "Mixing up the order of first, then and after that.",
+  "Using the present tense instead of the past simple."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Last year,…",
+   "funcion": "opening with time",
+   "traducciones": {
+    "es": "El año pasado…"
+   }
+  },
+  {
+   "expresion": "First…, then…",
+   "funcion": "sequence",
+   "traducciones": {
+    "es": "Primero…, luego…"
+   }
+  },
+  {
+   "expresion": "After that,…",
+   "funcion": "next step",
+   "traducciones": {
+    "es": "Después…"
+   }
+  },
+  {
+   "expresion": "In the end,…",
+   "funcion": "closing",
+   "traducciones": {
+    "es": "Al final…"
+   }
+  },
+  {
+   "expresion": "It was a great day.",
+   "funcion": "final evaluation",
+   "traducciones": {
+    "es": "Fue un gran día."
+   }
+  },
+  {
+   "expresion": "I really enjoyed it.",
+   "funcion": "positive evaluation",
+   "traducciones": {
+    "es": "Lo disfruté mucho."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the order of events clear?",
+  "Are most verbs in the past simple?",
+  "Have I used a time expression at the start?",
+  "Have I closed the story with an evaluation?",
+  "Does the sentence sound natural, not translated word for word?"
+ ],
+ "promptCorreccion": "Focus only on the time sequence of the story. Check whether the past simple is used correctly and whether the order of events is clear. Do not rewrite the text."
+}

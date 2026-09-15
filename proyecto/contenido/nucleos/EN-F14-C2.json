@@ -1,0 +1,47 @@
+{
+ "skillId": "EN-F14", "nivel": "C2", "idioma": "en", "bilingue": false,
+ "titulo": "Giving Constructive Feedback",
+ "categoria": "fluency",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 feedback separates the observation from its interpretation explicitly, offering the interpretation as a hypothesis the other person can confirm or correct — rather than asserting it as fact — which turns feedback into a conversation instead of a verdict.",
+ "cuadroReferencia": {
+  "titulo": "Observation, hypothesis, check",
+  "columnas": ["Layer", "Example"],
+  "filas": [
+   ["Observation", "The last three drafts came in after the deadline."],
+   ["Hypothesis, offered not asserted", "My guess is the scope keeps growing after we start — but tell me if that's off."],
+   ["Check", "Does that match what's happening on your end?"]
+  ]
+ },
+ "ejemplos": [
+  {"texto": "The last three drafts came in after the deadline. My guess is the scope keeps growing partway through — does that match what's happening?", "audio": true},
+  {"texto": "I noticed you went quiet in that meeting. I don't know why, and I'd rather ask than assume.", "audio": true},
+  {"texto": "That's my read on it, but you're closer to it than I am."}
+ ],
+ "notas": [
+  "Offering the interpretation as a hypothesis (my guess is) rather than a fact keeps the recipient's own account genuinely open, not just performed as open.",
+  "Explicitly checking (does that match?) turns the feedback into a two-way exchange rather than a one-way verdict.",
+  "You're closer to it than I am hands genuine authority back to the recipient about their own situation."
+ ],
+ "errores": [
+  "Stating an interpretation as fact rather than as a checkable hypothesis.",
+  "Asking a checking question rhetorically, without genuine openness to being told the interpretation is wrong.",
+  "Skipping the observation and going straight to interpretation, so there's nothing concrete to check against."
+ ],
+ "redemittel": [
+  {"expresion": "My guess is…, but tell me if that's off.", "funcion": "hypothesis, not assertion", "traducciones": {"es": "Mi impresión es…, pero decime si me equivoco."}},
+  {"expresion": "Does that match what's happening on your end?", "funcion": "genuine check", "traducciones": {"es": "¿Eso coincide con lo que está pasando de tu lado?"}},
+  {"expresion": "I noticed…, and I don't know why.", "funcion": "observation without imposed interpretation", "traducciones": {"es": "Noté…, y no sé por qué."}},
+  {"expresion": "That's my read on it, but you're closer to it than I am.", "funcion": "hands back authority", "traducciones": {"es": "Esa es mi lectura, pero vos estás más cerca del tema que yo."}},
+  {"expresion": "Correct me if I've got this wrong.", "funcion": "invites correction", "traducciones": {"es": "Corregime si me equivoco."}},
+  {"expresion": "What's your take on why that happened?", "funcion": "asks instead of asserting", "traducciones": {"es": "¿Cuál es tu impresión de por qué pasó eso?"}}
+ ],
+ "autochequeo": [
+  "Is the observation stated separately from the interpretation?",
+  "Is the interpretation offered as a checkable hypothesis, not a fact?",
+  "Is the checking question genuinely open, not rhetorical?",
+  "Does the recipient's account remain genuinely possible to differ?",
+  "Is there a concrete observation underlying the feedback?"
+ ],
+ "promptCorreccion": "Focus only on whether the observation and interpretation are kept separate, and whether the interpretation is offered as a genuine hypothesis. Do not rewrite the text."
+}

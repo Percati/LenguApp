@@ -1,0 +1,112 @@
+{
+ "skillId": "EN-G04",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Future Forms: will / going to / present continuous",
+ "categoria": "grammar",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you use going to for plans and will for quick decisions and predictions. The present continuous for fixed arrangements comes more fully at B1. This is the first step towards more precise time reference at higher levels.",
+ "cuadroReferencia": {
+  "titulo": "Two simple futures",
+  "columnas": [
+   "Form",
+   "Use",
+   "Example"
+  ],
+  "filas": [
+   [
+    "going to",
+    "plan",
+    "I'm going to study tonight."
+   ],
+   [
+    "will",
+    "decision now/prediction",
+    "I'll help you. / It will rain."
+   ],
+   [
+    "present continuous",
+    "fixed plan, informal",
+    "I'm meeting her at six."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I'm going to study tonight after dinner.",
+   "audio": true
+  },
+  {
+   "texto": "I'll help you carry that.",
+   "audio": true
+  },
+  {
+   "texto": "I'm meeting her at six tomorrow."
+  }
+ ],
+ "notas": [
+  "Going to is for something already decided or planned.",
+  "Will is for a decision made at the moment of speaking.",
+  "The present continuous can express the future with a time word, for arrangements."
+ ],
+ "contraste": {
+  "es": "El español usa voy a de forma muy parecida a going to, así que la estructura se transfiere directamente."
+ },
+ "errores": [
+  "Using will for something already planned.",
+  "Using going to for a spontaneous decision."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I'm going to…",
+   "funcion": "plan",
+   "traducciones": {
+    "es": "Voy a…"
+   }
+  },
+  {
+   "expresion": "I'll…",
+   "funcion": "spontaneous decision",
+   "traducciones": {
+    "es": "Voy a… (decisión del momento)"
+   }
+  },
+  {
+   "expresion": "I'm…-ing at…",
+   "funcion": "fixed arrangement",
+   "traducciones": {
+    "es": "Tengo… a las…"
+   }
+  },
+  {
+   "expresion": "It's going to…",
+   "funcion": "prediction based on evidence",
+   "traducciones": {
+    "es": "Va a…"
+   }
+  },
+  {
+   "expresion": "What are you going to do?",
+   "funcion": "asking about plans",
+   "traducciones": {
+    "es": "¿Qué vas a hacer?"
+   }
+  },
+  {
+   "expresion": "I probably won't…",
+   "funcion": "negative prediction",
+   "traducciones": {
+    "es": "Probablemente no…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is going to used for a plan?",
+  "Is will used for a spontaneous decision?",
+  "Have I used both forms?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on going to versus will. Check whether each matches how planned the event is. Do not rewrite the text. Flag any confusion between the two. Flag anything unclear."
+}

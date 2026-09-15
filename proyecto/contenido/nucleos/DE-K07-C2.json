@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-K07",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Funktionsverbgefüge + Nominalstil + Passiversatzformen",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 verschmelzen Funktionsverbgefüge, Nominalstil und Passiversatzformen zum charakteristischen Ton des deutschen Verwaltungs- und Rechtstextes: Massnahmen werden in Betracht gezogen, Risiken lassen sich nicht ausschliessen, Verantwortung wird zur Kenntnis genommen. Kein einzelnes Mittel ist neu; ihre gleichzeitige Verdichtung ist es.",
+ "cuadroReferencia": {
+  "titulo": "Drei Mittel, ein Registerton",
+  "columnas": [
+   "Mittel",
+   "Beispiel",
+   "Beitrag zum Ton"
+  ],
+  "filas": [
+   [
+    "Funktionsverbgefüge",
+    "in Betracht ziehen",
+    "formalisiert die Handlung"
+   ],
+   [
+    "Nominalstil",
+    "die Berücksichtigung der Umstände",
+    "verdichtet den Inhalt"
+   ],
+   [
+    "Passiversatzform",
+    "lässt sich nicht ausschliessen",
+    "entpersonalisiert die Aussage"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Eine Anpassung der Massnahme wird derzeit in Betracht gezogen.",
+   "audio": true
+  },
+  {
+   "texto": "Ein Restrisiko lässt sich unter den gegebenen Umständen nicht ausschliessen.",
+   "audio": true
+  },
+  {
+   "texto": "Die Berücksichtigung dieser Umstände wird zur Kenntnis genommen."
+  }
+ ],
+ "notas": [
+  "Diese drei Mittel treten in Verwaltungs- und Rechtstexten fast immer gemeinsam auf, nie isoliert — das ist, was den charakteristischen Ton ausmacht.",
+  "Der Effekt ist bewusste Entpersonalisierung: Niemand entscheidet, zieht in Betracht oder nimmt zur Kenntnis — es geschieht.",
+  "In einem persönlichen Brief oder einer E-Mail an eine bekannte Person wirkt diese Dichte kalt und unpassend distanziert."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat vereinzelt ähnliche Konstruktionen, kombiniert sie aber nicht mit derselben Systematik zu einem eigenen Registerton. Ein hispanophoner C2-Sprecher erkennt den Verwaltungston beim Lesen sofort, produziert ihn aber oft mit einem persönlicheren, verbaleren Unterton, der im deutschen Original fehlt."
+ },
+ "errores": [
+  "Nur eines der drei Mittel verwenden und dadurch den vollen Registerton verfehlen.",
+  "Diese Dichte in einem persönlichen Kontext einsetzen, wo sie kalt und unpassend wirkt.",
+  "Das feste Verb im Funktionsverbgefüge durch ein Synonym ersetzen und dadurch die Festigkeit der Wendung zerstören."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…wird in Betracht gezogen.",
+   "funcion": "Funktionsverbgefüge, formell",
+   "traducciones": {
+    "es": "se está considerando…",
+    "en": "…is being considered."
+   }
+  },
+  {
+   "expresion": "…lässt sich nicht ausschliessen.",
+   "funcion": "Passiversatzform",
+   "traducciones": {
+    "es": "no se puede descartar…",
+    "en": "…cannot be ruled out."
+   }
+  },
+  {
+   "expresion": "die Berücksichtigung der…",
+   "funcion": "Nominalstil",
+   "traducciones": {
+    "es": "la consideración de…",
+    "en": "the consideration of…"
+   }
+  },
+  {
+   "expresion": "…wird zur Kenntnis genommen.",
+   "funcion": "Funktionsverbgefüge, distanziert",
+   "traducciones": {
+    "es": "se toma nota de…",
+    "en": "…is noted."
+   }
+  },
+  {
+   "expresion": "eine Anpassung der…erfolgt…",
+   "funcion": "Nominalstil + Passiv",
+   "traducciones": {
+    "es": "se realiza un ajuste de…",
+    "en": "an adjustment of…takes place…"
+   }
+  },
+  {
+   "expresion": "…bleibt einer weiteren Prüfung vorbehalten.",
+   "funcion": "formelle Verzögerung",
+   "traducciones": {
+    "es": "queda sujeto a un examen posterior",
+    "en": "…remains subject to further review."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Sind alle drei Mittel im Text präsent, nicht nur eines?",
+  "Ist das feste Verb im Funktionsverbgefüge unverändert?",
+  "Passt diese Dichte zum Kontext, oder wirkt sie in einem persönlichen Text unpassend kalt?",
+  "Wirkt der Text wie ein echter Verwaltungs- oder Rechtstext?",
+  "Habe ich mindestens vier verschiedene Wendungen aus diesem Registerton benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Funktionsverbgefüge, Nominalstil und Passiversatzformen gemeinsam den charakteristischen Verwaltungston tragen. Schreiben Sie den Text nicht neu."
+}

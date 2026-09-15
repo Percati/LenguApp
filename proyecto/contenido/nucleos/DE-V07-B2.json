@@ -1,0 +1,136 @@
+{
+ "skillId": "DE-V07",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Umgangssprache vs. Standardsprache",
+ "categoria": "vocabulary",
+ "ancla": "PD>B2",
+ "descripcion": "Auf B2 lernt man, die häufigsten umgangssprachlichen Wörter von ihrer Standardentsprechung zu unterscheiden: Kumpel/Freund, Kohle/Geld, checken/verstehen. Ziel ist, beide Register zu erkennen und im richtigen Kontext zu verwenden.",
+ "cuadroReferencia": {
+  "titulo": "Umgangssprache und Standard",
+  "columnas": [
+   "Umgangssprachlich",
+   "Standard"
+  ],
+  "filas": [
+   [
+    "der Kumpel",
+    "der Freund"
+   ],
+   [
+    "die Kohle",
+    "das Geld"
+   ],
+   [
+    "checken",
+    "verstehen"
+   ],
+   [
+    "abhauen",
+    "weggehen"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Mein Kumpel kommt heute Abend auch vorbei.",
+   "audio": true
+  },
+  {
+   "texto": "Ich hab's endlich gecheckt, wie das funktioniert.",
+   "audio": true
+  },
+  {
+   "texto": "Wir sollten langsam abhauen, es wird spät."
+  }
+ ],
+ "notas": [
+  "Umgangssprachliche Wörter gehören in ein lockeres Gespräch, nicht in eine E-Mail an eine Behörde.",
+  "Checken ist inzwischen so verbreitet, dass es fast neutral wirkt, bleibt aber informeller als verstehen oder prüfen.",
+  "Diese Wörter zu erkennen ist wichtiger als sie selbst zu benutzen — beim Zuhören begegnet man ihnen ständig."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat ein ähnliches System aus umgangssprachlichen und formellen Varianten, allerdings mit anderen konkreten Wörtern. Das Konzept ist also bekannt, aber die deutschen Wörter selbst müssen neu gelernt werden."
+ },
+ "errores": [
+  "Umgangssprachliche Wörter in einem formellen Text verwenden.",
+  "Checken für jede Bedeutung von verstehen einsetzen, auch wo prüfen gemeint ist.",
+  "Ein umgangssprachliches Wort mit falschem Register mischen, z.B. Kumpel in einer Bewerbung."
+ ],
+ "redemittel": [
+  {
+   "expresion": "der Kumpel",
+   "funcion": "informell für Freund",
+   "traducciones": {
+    "es": "el amigo, el compa",
+    "en": "mate, buddy",
+    "fr": "le pote / copain",
+    "it": "l’amico / il compare",
+    "pt": "o amigo / o companheiro"
+   }
+  },
+  {
+   "expresion": "die Kohle",
+   "funcion": "informell für Geld",
+   "traducciones": {
+    "es": "la plata, la guita",
+    "en": "cash, dough",
+    "fr": "le fric / le pognon",
+    "it": "i soldi / la grana",
+    "pt": "a massa / o dinheiro"
+   }
+  },
+  {
+   "expresion": "checken",
+   "funcion": "informell für verstehen",
+   "traducciones": {
+    "es": "captar, entender",
+    "en": "to get it",
+    "fr": "comprendre / piger",
+    "it": "capire / afferrare",
+    "pt": "perceber / sacar"
+   }
+  },
+  {
+   "expresion": "abhauen",
+   "funcion": "informell für weggehen",
+   "traducciones": {
+    "es": "rajarse, irse",
+    "en": "to take off, to head out",
+    "fr": "se tirer / partir",
+    "it": "andarsene / filarsela",
+    "pt": "baz(ar) / ir-se embora"
+   }
+  },
+  {
+   "expresion": "quatschen",
+   "funcion": "informell für reden",
+   "traducciones": {
+    "es": "charlar",
+    "en": "to chat",
+    "fr": "bavarder",
+    "it": "chiacchierare",
+    "pt": "conversar"
+   }
+  },
+  {
+   "expresion": "der Job",
+   "funcion": "informell für die Arbeit/Stelle",
+   "traducciones": {
+    "es": "el laburo",
+    "en": "the job",
+    "fr": "le boulot",
+    "it": "il lavoro",
+    "pt": "o trabalho"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Passt das umgangssprachliche Wort zum Kontext (Gespräch, nicht formeller Text)?",
+  "Kenne ich die Standardentsprechung zu jedem Wort?",
+  "Habe ich das Register nicht innerhalb eines Textes gemischt?",
+  "Habe ich mindestens vier umgangssprachliche Wörter benutzt?",
+  "Würde ein Muttersprachler dieses Wort in diesem Kontext auch so benutzen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Umgangssprache und Standardsprache. Prüfen Sie, ob das Register zum Kontext passt. Schreiben Sie den Text nicht neu."
+}

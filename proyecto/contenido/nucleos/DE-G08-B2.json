@@ -1,0 +1,246 @@
+{
+ "skillId": "DE-G08",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Verben mit festen Präpositionen und Korrelate",
+ "categoria": "grammar",
+ "descripcion": "Viele deutsche Verben verlangen eine feste Präposition mit festem Kasus, und die stimmt fast nie mit dem Spanischen überein: sich freuen **auf** + Akk., nicht für. Das ist Auswendiglernen, unvermeidlich. Der eigentliche B2-Sprung ist aber das **Korrelat**: Folgt nach dem Präpositionalobjekt ein Nebensatz, braucht man ein Pronominaladverb als Platzhalter.",
+ "cuadroReferencia": {
+  "titulo": "Rektion, Korrelat und Frageform",
+  "columnas": [
+   "Verb",
+   "Präposition + Kasus",
+   "Korrelat",
+   "Frage"
+  ],
+  "filas": [
+   [
+    "sich beschäftigen",
+    "mit + Dat.",
+    "damit",
+    "womit"
+   ],
+   [
+    "sich freuen",
+    "auf + Akk. (Zukunft)",
+    "darauf",
+    "worauf"
+   ],
+   [
+    "sich freuen",
+    "über + Akk. (Vergangenes)",
+    "darüber",
+    "worüber"
+   ],
+   [
+    "sich gewöhnen",
+    "an + Akk.",
+    "daran",
+    "woran"
+   ],
+   [
+    "denken",
+    "an + Akk.",
+    "daran",
+    "woran"
+   ],
+   [
+    "warten",
+    "auf + Akk.",
+    "darauf",
+    "worauf"
+   ],
+   [
+    "sich interessieren",
+    "für + Akk.",
+    "dafür",
+    "wofür"
+   ],
+   [
+    "teilnehmen",
+    "an + Dat.",
+    "daran",
+    "woran"
+   ],
+   [
+    "es kommt an",
+    "auf + Akk.",
+    "darauf",
+    "worauf"
+   ],
+   [
+    "sich erinnern",
+    "an + Akk.",
+    "daran",
+    "woran"
+   ],
+   [
+    "abhängen",
+    "von + Dat.",
+    "davon",
+    "wovon"
+   ],
+   [
+    "sich kümmern",
+    "um + Akk.",
+    "darum",
+    "worum"
+   ]
+  ],
+  "notaPie": "Bildung: Konsonant → da- (damit, davon); Vokal → dar- (darauf, daran, darüber). Frageform mit wo(r)-. **Bei Personen kein Korrelat:** Ich freue mich **auf ihn**, nicht darauf."
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich beschäftige mich seit Jahren **mit** Fotografie."
+  },
+  {
+   "texto": "Ich freue mich **darauf**, endlich wieder Zeit dafür zu haben."
+  },
+  {
+   "texto": "Es kommt **darauf** an, wie viel Zeit ich habe."
+  },
+  {
+   "texto": "**Worauf** freust du dich?"
+  },
+  {
+   "texto": "*Ich beschäftige mich seit Jahren mit Fotografie.*",
+   "audio": true
+  },
+  {
+   "texto": "*Ich freue mich darauf, endlich wieder Zeit dafür zu haben.*",
+   "audio": true
+  },
+  {
+   "texto": "*Es kommt darauf an, wie viel Zeit ich habe.*",
+   "audio": true
+  },
+  {
+   "texto": "*Worauf freust du dich am meisten?*",
+   "audio": true
+  },
+  {
+   "texto": "*Daran habe ich mich schnell gewöhnt.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Das Korrelat ist bei manchen Verben Pflicht, bei anderen optional. Im Zweifel setzen — es ist selten falsch.",
+  "Ich denke, dass… und Ich denke **daran**, dass… bedeuten Verschiedenes.",
+  "*sich freuen auf* und *sich freuen über* unterscheiden Zukunft und Vergangenheit. Der Fehler ist unauffällig und häufig."
+ ],
+ "contraste": {
+  "es": "Spanisch hat keine Pronominaladverbien. *Me alegro de que vengas* braucht keinen Platzhalter; das Deutsche schon. Es ist also keine Interferenz, sondern eine Leerstelle: es gibt nichts zu übertragen, deshalb wird es einfach weggelassen.",
+  "en": "Auch das Englische hat feste Präpositionen (*to depend on*, *to consist of*), aber **keine Pronominaladverbien**: *I'm looking forward to it* braucht kein *darauf*. Englischsprachige lassen das Korrelat deshalb weg, genau wie Spanischsprachige — aber aus einem anderen Grund: nicht weil es fehlt, sondern weil im Englischen das schlichte *it* genügt. Die *wo(r)-*Frage hat ebenfalls keine Entsprechung: *what are you waiting for* stellt die Präposition ans Ende."
+ },
+ "errores": [
+  "*Auf was wartest du?* — umgangssprachlich verbreitet, schriftlich falsch. Richtig: *Worauf*.",
+  "Präposition aus dem Spanischen: denken **in** statt denken **an**.",
+  "Korrelat weglassen, wo es Pflicht ist.",
+  "Das Korrelat weglassen, weil im Englischen ein blosses *it* genügt.",
+  "Die Präposition ans Satzende stellen: *Was wartest du auf?*"
+ ],
+ "erroresContrastivos": {
+  "en": [
+   "Das Korrelat weglassen, weil im Englischen ein blosses *it* genügt.",
+   "Die Präposition ans Satzende stellen: *Was wartest du auf?*"
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "Ich bin dazu gekommen, weil…",
+   "funcion": "Anfang erklären",
+   "traducciones": {
+    "es": "llegué a eso porque…",
+    "en": "I got into it because…",
+    "fr": "J’en suis venu à cela parce que…",
+    "it": "Ho iniziato perché…",
+    "pt": "Comecei nisso porque…"
+   }
+  },
+  {
+   "expresion": "Ich freue mich darauf, dass…",
+   "funcion": "Vorfreude mit Nebensatz",
+   "traducciones": {
+    "es": "tengo ganas de que…",
+    "en": "I'm looking forward to…",
+    "fr": "J’ai hâte que…",
+    "it": "Non vedo l’ora che…",
+    "pt": "Estou ansioso por que…"
+   }
+  },
+  {
+   "expresion": "Es kommt darauf an, ob…",
+   "funcion": "Bedingung offenlassen",
+   "traducciones": {
+    "es": "depende de si…",
+    "en": "It depends on whether…",
+    "fr": "Cela dépend de savoir si…",
+    "it": "Dipende dal fatto che…",
+    "pt": "Depende de se…"
+   }
+  },
+  {
+   "expresion": "Ich habe mich daran gewöhnt, …",
+   "funcion": "Gewohnheit",
+   "traducciones": {
+    "es": "me acostumbré a…",
+    "en": "I've got used to…",
+    "fr": "Je me suis habitué à…",
+    "it": "Mi sono abituato a…",
+    "pt": "Habituei-me a…"
+   }
+  },
+  {
+   "expresion": "Worauf ich Lust hätte, wäre…",
+   "funcion": "Wunsch, gehoben",
+   "traducciones": {
+    "es": "lo que me apetecería sería…",
+    "en": "What I'd fancy would be…",
+    "fr": "Ce qui me ferait envie, ce serait…",
+    "it": "Quello che mi piacerebbe sarebbe…",
+    "pt": "O que me apeteceria seria…"
+   }
+  },
+  {
+   "expresion": "Ich interessiere mich vor allem für…",
+   "funcion": "Schwerpunkt",
+   "traducciones": {
+    "es": "me interesa sobre todo…",
+    "en": "I'm mainly interested in…",
+    "fr": "Je m’intéresse surtout à…",
+    "it": "Mi interessa soprattutto…",
+    "pt": "Interesso-me sobretudo por…"
+   }
+  },
+  {
+   "expresion": "Das hängt davon ab, wie…",
+   "funcion": "Abhängigkeit",
+   "traducciones": {
+    "es": "eso depende de cómo…",
+    "en": "That depends on how…",
+    "fr": "Cela dépend de la façon dont…",
+    "it": "Dipende da come…",
+    "pt": "Isso depende de como…"
+   }
+  },
+  {
+   "expresion": "Damit beschäftige ich mich schon lange.",
+   "funcion": "Vorfeld-Korrelat",
+   "traducciones": {
+    "es": "a eso me dedico desde hace mucho",
+    "en": "I've been doing that for a long time.",
+    "fr": "Je m’y consacre depuis longtemps.",
+    "it": "Me ne occupo da molto tempo.",
+    "pt": "Dedico-me a isso há muito tempo."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Stimmt bei jedem Verb Präposition **und** Kasus?",
+  "Habe ich *da-* und *dar-* richtig unterschieden?",
+  "Habe ich bei Personen fälschlich ein Korrelat gesetzt?",
+  "Habe ich *auf was* statt *worauf* geschrieben?",
+  "Alle vier Kernwörter?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Präpositionalverben und Korrelate. (1) Prüfen Sie bei jedem Verb Präposition und Kasus. (2) Markieren Sie jedes fehlende oder überflüssige Korrelat. (3) Prüfen Sie die *wo(r)-*Fragen. (4) Nennen Sie drei passende Verben, die ich nicht benutzt habe. Schreiben Sie den Text nicht neu."
+}

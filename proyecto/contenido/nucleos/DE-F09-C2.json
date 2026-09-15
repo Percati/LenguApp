@@ -1,0 +1,114 @@
+{
+ "skillId": "DE-F09",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Argumentieren und überzeugen",
+ "categoria": "fluency",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird ein Argument gegen die stärkste, nicht die schwächste Version des Gegenarguments aufgebaut — die sogenannte Steelman-Technik. Das unterscheidet ein überzeugendes Fachargument von einer rhetorischen Übung, die nur leicht zu widerlegende Einwände vorwegnimmt.",
+ "cuadroReferencia": {
+  "titulo": "Gegen die stärkste Version argumentieren",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Stärkstes Gegenargument formulieren",
+    "Die überzeugendste Einwendung dagegen lautet, dass…"
+   ],
+   [
+    "Es ernst nehmen",
+    "Dieser Punkt hat durchaus Gewicht."
+   ],
+   [
+    "Trotzdem widerlegen",
+    "Dennoch überwiegen die Vorteile aus folgendem Grund…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die überzeugendste Einwendung dagegen lautet, dass die Kosten kurzfristig steigen würden.",
+   "audio": true
+  },
+  {
+   "texto": "Dieser Punkt hat durchaus Gewicht und sollte nicht kleingeredet werden.",
+   "audio": true
+  },
+  {
+   "texto": "Dennoch überwiegen die langfristigen Vorteile aus folgendem Grund…"
+  }
+ ],
+ "notas": [
+  "Ein schwaches Gegenargument zu widerlegen, wirkt auf ein Fachpublikum unehrlich — die Steelman-Technik ist deshalb Standard in ernsthafter Argumentation.",
+  "Dieser Punkt hat durchaus Gewicht erkennt den Einwand explizit an, bevor er widerlegt wird, was die eigene Position stärker macht.",
+  "Diese Technik funktioniert nur, wenn das Gegenargument wirklich das stärkste verfügbare ist, nicht ein bequemes."
+ ],
+ "contraste": {
+  "es": "Das kultivierte Spanisch kennt dieselbe Technik unter anderem Namen, sodass das Prinzip vertraut ist. Was oft fehlt, ist das genaue deutsche Vokabular, um das Gegenargument als das stärkste zu markieren — die überzeugendste Einwendung — statt es beiläufig zu erwähnen."
+ },
+ "errores": [
+  "Ein schwaches statt des stärksten Gegenarguments widerlegen, was unehrlich wirkt.",
+  "Das Gegenargument nennen, ohne es ernst zu nehmen, bevor man es widerlegt.",
+  "Die eigene Widerlegung ohne konkreten Grund präsentieren, nur als Behauptung."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Die überzeugendste Einwendung dagegen lautet, dass…",
+   "funcion": "stärkstes Gegenargument benennen",
+   "traducciones": {
+    "es": "la objeción más convincente en contra es que…",
+    "en": "the strongest objection to this is that…"
+   }
+  },
+  {
+   "expresion": "Dieser Punkt hat durchaus Gewicht.",
+   "funcion": "Gegenargument ernst nehmen",
+   "traducciones": {
+    "es": "este punto tiene realmente peso",
+    "en": "this point genuinely carries weight"
+   }
+  },
+  {
+   "expresion": "Dennoch überwiegen…aus folgendem Grund…",
+   "funcion": "Widerlegung mit Begründung",
+   "traducciones": {
+    "es": "aun así, prevalecen… por la siguiente razón…",
+    "en": "nevertheless,…outweigh this for the following reason…"
+   }
+  },
+  {
+   "expresion": "Selbst wenn man das zugesteht, …",
+   "funcion": "Zugeständnis vor der Widerlegung",
+   "traducciones": {
+    "es": "incluso si se concede eso, …",
+    "en": "even granting that, …"
+   }
+  },
+  {
+   "expresion": "Das lässt sich nicht einfach vom Tisch wischen.",
+   "funcion": "erkennt den Einwand nachdrücklich an",
+   "traducciones": {
+    "es": "eso no se puede simplemente descartar",
+    "en": "that can't simply be dismissed"
+   }
+  },
+  {
+   "expresion": "Trotz dieses berechtigten Einwands…",
+   "funcion": "Übergang zur Widerlegung",
+   "traducciones": {
+    "es": "a pesar de esta objeción legítima…",
+    "en": "despite this legitimate objection…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist das genannte Gegenargument wirklich das stärkste verfügbare?",
+  "Wird das Gegenargument ernst genommen, bevor es widerlegt wird?",
+  "Hat die eigene Widerlegung einen konkreten Grund, nicht nur eine Behauptung?",
+  "Würde ein Vertreter des Gegenarguments sich fair dargestellt fühlen?",
+  "Würde ein Vertreter der Gegenposition den Einwand als fair dargestellt anerkennen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob gegen das stärkste verfügbare Gegenargument argumentiert wird. Schreiben Sie den Text nicht neu. Prüfen Sie auch den Ton."
+}

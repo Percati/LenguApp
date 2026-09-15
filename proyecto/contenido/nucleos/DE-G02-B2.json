@@ -1,0 +1,259 @@
+{
+ "skillId": "DE-G02",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Konnektoren",
+ "categoria": "grammar",
+ "descripcion": "Das eigentliche Problem bei Konnektoren ist nicht die Bedeutung — *weil* und *denn* heissen dasselbe — sondern die Satzstellung, die jeder von ihnen verlangt. Es gibt vier Gruppen, und wer diese vier Gruppen unterscheidet, macht praktisch keine Stellungsfehler mehr. Diese Woche ist deshalb eine Sortierübung, keine Bedeutungsübung.",
+ "cuadroReferencia": {
+  "titulo": "Konnektoren nach Gruppe und Bedeutung",
+  "columnas": [
+   "Konnektor",
+   "Verbindet",
+   "Bedeutung",
+   "Gruppe / Stellung"
+  ],
+  "filas": [
+   [
+    "weil, da",
+    "Ursache → Folge",
+    "kausal",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "denn",
+    "Ursache → Folge",
+    "kausal",
+    "2 · keine Umstellung"
+   ],
+   [
+    "deshalb, darum, deswegen",
+    "Ursache → Folge",
+    "kausal",
+    "3 · Verb-Subjekt-Umstellung"
+   ],
+   [
+    "obwohl",
+    "erwartete Folge tritt **nicht** ein",
+    "konzessiv",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "trotzdem, dennoch",
+    "dieselbe Idee, andere Blickrichtung",
+    "konzessiv",
+    "3 · Umstellung"
+   ],
+   [
+    "*damit* / *um… zu*",
+    "Handlung → Absicht",
+    "final",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "sodass, folglich",
+    "Handlung → unbeabsichtigtes Ergebnis",
+    "konsekutiv",
+    "1 bzw. 3"
+   ],
+   [
+    "als, wenn, nachdem, bevor, seitdem, sobald",
+    "zwei Zeitpunkte",
+    "temporal",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "indem",
+    "Ziel → Mittel",
+    "modal",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "aber, sondern",
+    "zwei Gegensätze",
+    "adversativ",
+    "2 · keine Umstellung"
+   ],
+   [
+    "während, wohingegen",
+    "zwei Gegensätze",
+    "adversativ",
+    "1 · Verb ans Ende"
+   ],
+   [
+    "allerdings, jedoch",
+    "schwächt den Gegensatz ab",
+    "adversativ",
+    "3 · Umstellung"
+   ],
+   [
+    "zwar… aber",
+    "Zugeständnis + Einwand",
+    "konzessiv",
+    "zweiteilig"
+   ],
+   [
+    "je… desto",
+    "zwei Grössen, die zusammen wachsen",
+    "proportional",
+    "zweiteilig"
+   ]
+  ],
+  "notaPie": "Zu merken: **obwohl** leitet die Einräumung ein, **trotzdem** das unerwartete Ergebnis. Sie sind gespiegelt, nicht austauschbar. — **als** für einmalige Vergangenheit, **wenn** für Wiederholung oder Zukunft."
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich spare, **weil** ich später ein Velo kaufen **möchte**. / Ich spare, **denn** ich **möchte**…"
+  },
+  {
+   "texto": "**Obwohl** die Rendite niedrig ist, lasse ich das Geld dort. / Die Rendite ist niedrig. **Trotzdem lasse ich** das Geld dort."
+  },
+  {
+   "texto": "**Zwar** ist die Rendite höher, **aber** das Risiko ist es auch."
+  },
+  {
+   "texto": "**Je** länger man einzahlt, **desto** mehr bekommt man später."
+  },
+  {
+   "texto": "*Ich spare, weil ich später ein Velo kaufen möchte.*",
+   "audio": true
+  },
+  {
+   "texto": "*Obwohl die Rendite niedrig ist, lasse ich das Geld dort.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Rendite ist niedrig. Trotzdem lasse ich das Geld dort.*",
+   "audio": true
+  },
+  {
+   "texto": "*Zwar ist die Rendite höher, aber das Risiko ist es auch.*",
+   "audio": true
+  },
+  {
+   "texto": "*Je länger man einzahlt, desto mehr bekommt man später.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Denn* und *weil* bedeuten dasselbe und verlangen verschiedene Stellung: der beste Selbsttest, ob die Gruppen sitzen.",
+  "*Allerdings* und *jedoch* wirken abschwächend, nicht widersprechend, und sind schriftsprachlicher als *aber*.",
+  "*Während* ist zweideutig: temporal (*während ich arbeite*) und adversativ (*während andere sparen, gibt er alles aus*)."
+ ],
+ "contraste": {
+  "es": "Für *weil / denn / deshalb* hat das Spanische im Grunde *porque* und *por eso*, ohne Stellungsfolgen. Die Bedeutung ist also gratis; gelernt werden muss ausschliesslich die Gruppe.",
+  "en": "Das Englische kennt die Unterscheidung zwischen *weil* und *denn* nicht: *because* deckt beides ab und verlangt nie eine Umstellung. Die eigentliche Hürde ist deshalb Gruppe 3 — nach *therefore* oder *nevertheless* bleibt im Englischen die Wortstellung unverändert, im Deutschen nicht. Zudem trennt das Englische Kommas anders: vor *that* steht keines, vor *dass* immer."
+ },
+ "errores": [
+  "*Deshalb ich habe…* — Umstellung vergessen.",
+  "*Trotz dass* existiert nicht. Richtig: *obwohl* oder *trotz* + Genitiv.",
+  "*Zwar* ohne folgendes *aber*.",
+  "*obwohl* und *trotzdem* vertauscht.",
+  "Nach *deshalb* oder *trotzdem* nicht umstellen, weil *therefore* und *nevertheless* es auch nicht verlangen.",
+  "*weil* und *denn* für austauschbar halten, da beides *because* ist."
+ ],
+ "erroresContrastivos": {
+  "en": [
+   "Nach *deshalb* oder *trotzdem* nicht umstellen, weil *therefore* und *nevertheless* es auch nicht verlangen.",
+   "*weil* und *denn* für austauschbar halten, da beides *because* ist."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "Das liegt vor allem daran, dass…",
+   "funcion": "begründet mit Gewichtung",
+   "traducciones": {
+    "es": "eso se debe sobre todo a que…",
+    "en": "That's mainly because…",
+    "fr": "Cela tient surtout au fait que…",
+    "it": "Ciò è dovuto soprattutto al fatto che…",
+    "pt": "Isso deve-se sobretudo ao facto de que…"
+   }
+  },
+  {
+   "expresion": "Zwar…, allerdings…",
+   "funcion": "räumt ein und schränkt ein",
+   "traducciones": {
+    "es": "si bien…, ahora bien…",
+    "en": "It's true that…, however…",
+    "fr": "Certes…, toutefois…",
+    "it": "È vero che…, tuttavia…",
+    "pt": "É certo que…, no entanto…"
+   }
+  },
+  {
+   "expresion": "Je…, desto…",
+   "funcion": "koppelt zwei Grössen",
+   "traducciones": {
+    "es": "cuanto…, tanto…",
+    "en": "The more…, the more…",
+    "fr": "Plus…, plus…",
+    "it": "Più…, più…",
+    "pt": "Quanto mais…, mais…"
+   }
+  },
+  {
+   "expresion": "Indem ich…, …",
+   "funcion": "nennt das Mittel",
+   "traducciones": {
+    "es": "mediante… / al hacer…",
+    "en": "By doing…, …",
+    "fr": "En faisant…, …",
+    "it": "Facendo…, …",
+    "pt": "Ao fazer…, …"
+   }
+  },
+  {
+   "expresion": "Sobald…, …",
+   "funcion": "knüpft an eine Bedingung",
+   "traducciones": {
+    "es": "en cuanto…",
+    "en": "As soon as…, …",
+    "fr": "Dès que…, …",
+    "it": "Non appena…, …",
+    "pt": "Assim que…, …"
+   }
+  },
+  {
+   "expresion": "Damit ich… kann, …",
+   "funcion": "nennt die Absicht",
+   "traducciones": {
+    "es": "para que yo pueda…",
+    "en": "So that I can…, …",
+    "fr": "Pour que je puisse…, …",
+    "it": "Affinché io possa…, …",
+    "pt": "Para que eu possa…, …"
+   }
+  },
+  {
+   "expresion": "Deshalb…",
+   "funcion": "zieht die Folge",
+   "traducciones": {
+    "es": "por eso…",
+    "en": "That's why…",
+    "fr": "C’est pourquoi…",
+    "it": "Perciò…",
+    "pt": "Por isso…"
+   }
+  },
+  {
+   "expresion": "Trotzdem…",
+   "funcion": "markiert das unerwartete Ergebnis",
+   "traducciones": {
+    "es": "aun así…",
+    "en": "Even so…",
+    "fr": "Malgré tout…",
+    "it": "Tuttavia / ciononostante…",
+    "pt": "Mesmo assim…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Sind alle vier Gruppen vertreten?",
+  "Habe ich nach jedem Konnektor der Gruppe 3 umgestellt?",
+  "Hat jedes *zwar* sein *aber*?",
+  "Habe ich *obwohl* und *trotzdem* richtig herum benutzt?",
+  "Alle vier Kernwörter?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Konnektoren. (1) Ordnen Sie jeden Konnektor seiner Gruppe zu und prüfen Sie die Stellung. (2) Markieren Sie Wiederholungen. (3) Prüfen Sie *obwohl* gegen *trotzdem*. (4) Nennen Sie drei Konnektoren, die hier gepasst hätten und die ich nicht benutzt habe. Schreiben Sie den Text nicht neu."
+}

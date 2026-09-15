@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-G09",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Konjunktiv II",
+ "categoria": "grammar",
+ "ancla": "PD B1",
+ "descripcion": "Auf B1 wird der Konjunktiv II vor allem für Höflichkeit (ich hätte gern, könntest du) und für einfache irreale Bedingungen (wenn ich Zeit hätte, würde ich kommen) verwendet. Die feineren Funktionen kommen erst später.",
+ "cuadroReferencia": {
+  "titulo": "Höflichkeit und einfache Bedingung",
+  "columnas": [
+   "Funktion",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Höflichkeit",
+    "Könntest du mir helfen?"
+   ],
+   [
+    "Wunsch",
+    "Ich hätte gern einen Kaffee."
+   ],
+   [
+    "Bedingung",
+    "Wenn ich Zeit hätte, würde ich kommen."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Könntest du mir bitte kurz helfen?",
+   "audio": true
+  },
+  {
+   "texto": "Ich hätte gern einen Kaffee, bitte.",
+   "audio": true
+  },
+  {
+   "texto": "Wenn ich mehr Zeit hätte, würde ich öfter Sport machen."
+  }
+ ],
+ "notas": [
+  "Hätte und könnte sind die zwei häufigsten Konjunktiv-II-Formen auf B1.",
+  "Würde + Infinitiv ist die einfachste Form für den Hauptsatz einer Bedingung.",
+  "Im wenn-Satz benutzt man oft die Originalform (hätte), nicht würde haben."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet die Bedingung mit imperfecto de subjuntivo und condicional (si tuviera tiempo, vendría), was strukturell dem Deutschen ähnelt. Der Unterschied ist, dass das Deutsche für hätte und wäre eigene, kurze Formen hat, während das Spanische durchgehend die subjuntivo-Form braucht."
+ },
+ "errores": [
+  "Würde im wenn-Satz verwenden, statt hätte oder wäre zu benutzen.",
+  "Könnte und würde verwechseln.",
+  "Die Höflichkeitsform vergessen und stattdessen den Imperativ benutzen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Könntest du…?",
+   "funcion": "höfliche Bitte",
+   "traducciones": {
+    "es": "¿Podrías…?",
+    "en": "Could you…?"
+   }
+  },
+  {
+   "expresion": "Ich hätte gern…",
+   "funcion": "höflicher Wunsch",
+   "traducciones": {
+    "es": "Quisiera…",
+    "en": "I'd like…"
+   }
+  },
+  {
+   "expresion": "Wenn ich…hätte, würde ich…",
+   "funcion": "einfache Bedingung",
+   "traducciones": {
+    "es": "Si tuviera…, yo…",
+    "en": "If I had…, I would…"
+   }
+  },
+  {
+   "expresion": "Das wäre toll.",
+   "funcion": "Reaktion, höflich",
+   "traducciones": {
+    "es": "Eso sería genial.",
+    "en": "That would be great."
+   }
+  },
+  {
+   "expresion": "Ich würde gern…",
+   "funcion": "Wunsch mit würde",
+   "traducciones": {
+    "es": "Me gustaría…",
+    "en": "I would like to…"
+   }
+  },
+  {
+   "expresion": "Wäre es möglich, dass…?",
+   "funcion": "sehr höfliche Bitte",
+   "traducciones": {
+    "es": "¿Sería posible que…?",
+    "en": "Would it be possible that…?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich für hätte und wäre die Originalform statt würde haben/würde sein benutzt?",
+  "Ist die Bitte höflich formuliert?",
+  "Habe ich mindestens eine vollständige Bedingung gebildet?",
+  "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?",
+  "Habe ich das Vokabular des Themas korrekt eingesetzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Konjunktiv II für Höflichkeit und einfache Bedingungen. Prüfen Sie, ob hätte und wäre statt würde haben/würde sein benutzt werden. Schreiben Sie den Text nicht neu."
+}

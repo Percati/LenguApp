@@ -1,0 +1,114 @@
+{
+ "skillId": "DE-G25",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Appositionen",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Die Apposition — ein Nomen, das ein anderes ohne Verb näher bestimmt — ist eine der kompaktesten Verdichtungsformen des Deutschen: Merkel, die damalige Bundeskanzlerin, äusserte sich dazu. Sie ersetzt einen ganzen Relativsatz mit Kopula und wird in Berichten und Biografien systematisch genutzt.",
+ "cuadroReferencia": {
+  "titulo": "Vom Relativsatz zur Apposition",
+  "columnas": [
+   "Relativsatz",
+   "Apposition"
+  ],
+  "filas": [
+   [
+    "Merkel, die damals Bundeskanzlerin war, äusserte sich.",
+    "Merkel, die damalige Bundeskanzlerin, äusserte sich."
+   ],
+   [
+    "Bern, das die Hauptstadt der Schweiz ist, liegt im Mittelland.",
+    "Bern, die Hauptstadt der Schweiz, liegt im Mittelland."
+   ],
+   [
+    "Der Bericht, der ein internes Dokument war, wurde nie veröffentlicht.",
+    "Der Bericht, ein internes Dokument, wurde nie veröffentlicht."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Merkel, die damalige Bundeskanzlerin, äusserte sich zurückhaltend.",
+   "audio": true
+  },
+  {
+   "texto": "Bern, die Hauptstadt der Schweiz, liegt im Mittelland.",
+   "audio": true
+  },
+  {
+   "texto": "Der Bericht, ein internes Dokument, wurde nie veröffentlicht."
+  }
+ ],
+ "notas": [
+  "Die Apposition steht im gleichen Kasus wie das Bezugswort, das sie näher bestimmt.",
+  "Sie funktioniert nur, wenn die Kopula (ist, war) wegfallen kann, ohne dass Information verloren geht.",
+  "Appositionen sind in Biografien, Nachrichten und Nachschlagewerken extrem häufig, in gesprochener Sprache seltener."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet die Apposition auf sehr ähnliche Weise (Merkel, entonces canciller, se pronunció), sodass sich diese Konstruktion leicht überträgt. Die Schwierigkeit für Hispanophone liegt eher darin, den passenden Kasus zu markieren, wo das Spanische keinen Kasus kennt."
+ },
+ "errores": [
+  "Den falschen Kasus für die Apposition wählen.",
+  "Die Kommas um die Apposition vergessen.",
+  "Eine Apposition bilden, wo die Kopula nicht wegfallen kann, ohne den Sinn zu verändern."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, die damalige…, …",
+   "funcion": "Apposition, zeitlich eingegrenzt",
+   "traducciones": {
+    "es": "…, entonces…, …",
+    "en": "…, then…, …"
+   }
+  },
+  {
+   "expresion": "…, die Hauptstadt…, …",
+   "funcion": "Apposition, geografisch",
+   "traducciones": {
+    "es": "…, la capital de…, …",
+    "en": "…, the capital of…, …"
+   }
+  },
+  {
+   "expresion": "…, ein internes Dokument, …",
+   "funcion": "Apposition, klassifizierend",
+   "traducciones": {
+    "es": "…, un documento interno, …",
+    "en": "…, an internal document, …"
+   }
+  },
+  {
+   "expresion": "…, selbst ein erfahrener…, …",
+   "funcion": "Apposition, verstärkend",
+   "traducciones": {
+    "es": "…, él mismo un experimentado…, …",
+    "en": "…, himself an experienced…, …"
+   }
+  },
+  {
+   "expresion": "…, heute…, …",
+   "funcion": "Apposition mit aktuellem Bezug",
+   "traducciones": {
+    "es": "…, hoy…, …",
+    "en": "…, now…, …"
+   }
+  },
+  {
+   "expresion": "…, Autor mehrerer Bücher, …",
+   "funcion": "Apposition, biografisch",
+   "traducciones": {
+    "es": "…, autor de varios libros, …",
+    "en": "…, author of several books, …"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht die Apposition im gleichen Kasus wie das Bezugswort?",
+  "Stehen Kommas um die Apposition?",
+  "Könnte die Kopula ohne Sinnverlust wegfallen?",
+  "Habe ich mindestens zwei verschiedene Appositionen benutzt?",
+  "Klingt der Text natürlich, wie ein echter Bericht oder eine Biografie?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Appositionen. Prüfen Sie den Kasus und die Kommasetzung. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob die Kopula tatsächlich wegfallen konnte, ohne Information zu verlieren."
+}

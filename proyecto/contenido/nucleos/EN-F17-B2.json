@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-F17",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Register Shifting: Formal vs. Informal",
+ "categoria": "fluency",
+ "ancla": "CV Sociolinguistic appropriateness",
+ "descripcion": "At B2 the goal is to recognise and produce two clear registers — informal (contractions, phrasal verbs) and formal (no contractions, more Latinate vocabulary) — without mixing them in the same message. The finer six-axis control and full rewriting across three registers (C1) isn't the target yet.",
+ "cuadroReferencia": {
+  "titulo": "Two registers, side by side",
+  "columnas": [
+   "Feature",
+   "Informal",
+   "Formal"
+  ],
+  "filas": [
+   [
+    "Contractions",
+    "don't, it's, we're",
+    "do not, it is, we are"
+   ],
+   [
+    "Vocabulary",
+    "find out, put off",
+    "discover, postpone"
+   ],
+   [
+    "Person",
+    "I think…",
+    "It is thought that…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Can't make it tonight, sorry!",
+   "audio": true
+  },
+  {
+   "texto": "I regret that I am unable to attend this evening.",
+   "audio": true
+  },
+  {
+   "texto": "We'll sort it out tomorrow."
+  }
+ ],
+ "notas": [
+  "Contractions are the fastest signal of informal register — removing them alone shifts a sentence towards formal.",
+  "Phrasal verbs (find out, sort out) are informal; their Latinate equivalents (discover, resolve) are formal.",
+  "Mixing registers within the same message — a contraction next to a very formal word — is the most common register error at this level."
+ ],
+ "contraste": {
+  "es": "El español marca la formalidad sobre todo con tú/usted y la conjugación verbal, algo que el inglés no tiene. El inglés reparte toda la carga en el vocabulario y las contracciones, así que los hispanohablantes que ya dominan la cortesía en usted pueden seguir usando un registro mixto en inglés sin darse cuenta."
+ },
+ "errores": [
+  "Mixing a contraction with a very formal word in the same sentence.",
+  "Using a phrasal verb in a formal email where its Latinate equivalent would fit better.",
+  "Assuming formal English is just longer or harder, rather than a different set of choices."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Can't make it — sorry!",
+   "funcion": "informal, casual",
+   "traducciones": {
+    "es": "No puedo ir, ¡perdón!",
+    "de": "Ich schaffe es nicht — sorry!",
+    "fr": "Je ne peux pas venir — désolé(e) !",
+    "it": "Non riesco a venire — scusa!",
+    "pt": "Não consigo ir — desculpa!"
+   }
+  },
+  {
+   "expresion": "I regret that I am unable to…",
+   "funcion": "formal equivalent",
+   "traducciones": {
+    "es": "Lamento no poder…",
+    "de": "Ich bedaure, dass ich nicht… kann.",
+    "fr": "Je regrette de ne pas pouvoir…",
+    "it": "Mi dispiace di non poter…",
+    "pt": "Lamento não poder…"
+   }
+  },
+  {
+   "expresion": "We'll sort it out.",
+   "funcion": "informal, phrasal verb",
+   "traducciones": {
+    "es": "Lo vamos a resolver.",
+    "de": "Wir klären das.",
+    "fr": "On va régler ça.",
+    "it": "Lo risolveremo.",
+    "pt": "Vamos resolver isso."
+   }
+  },
+  {
+   "expresion": "We will resolve this matter.",
+   "funcion": "formal equivalent",
+   "traducciones": {
+    "es": "Resolveremos este asunto.",
+    "de": "Wir werden diese Angelegenheit klären.",
+    "fr": "Nous réglerons cette affaire.",
+    "it": "Risolveremo la questione.",
+    "pt": "Resolveremos esta questão."
+   }
+  },
+  {
+   "expresion": "Let me know if…",
+   "funcion": "informal closing",
+   "traducciones": {
+    "es": "Avisame si…",
+    "de": "Sag mir Bescheid, wenn…",
+    "fr": "Dis-moi si…",
+    "it": "Fammi sapere se…",
+    "pt": "Diz-me se…"
+   }
+  },
+  {
+   "expresion": "Please do not hesitate to contact me.",
+   "funcion": "formal closing",
+   "traducciones": {
+    "es": "No dude en contactarme.",
+    "de": "Bitte zögern Sie nicht, mich zu kontaktieren.",
+    "fr": "N’hésitez pas à me contacter.",
+    "it": "Non esiti a contattarmi.",
+    "pt": "Não hesite em contactar-me."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Are contractions used consistently, either all present or all absent?",
+  "Are phrasal verbs replaced with formal equivalents in the formal version?",
+  "Is the register consistent throughout, without mixing?",
+  "Would the intended reader find the register appropriate?",
+  "Have I written the same content in both registers to compare?"
+ ],
+ "promptCorreccion": "Focus only on register. Check for mixed formal and informal features in the same message, especially contractions next to formal vocabulary. Do not rewrite the text."
+}

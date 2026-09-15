@@ -1,0 +1,146 @@
+{
+ "skillId": "DE-K04",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Konjunktiv I + Relativsatz + Nominalstil",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C1",
+ "descripcion": "Presse- und Protokollsprache kombiniert drei bekannte Mittel zu einem Register: die indirekte Rede mit Konjunktiv I, eingebettet in Relativsätze, formuliert im Nominalstil. Die Maßnahme, die bereits beschlossen sei, werde im kommenden Jahr umgesetzt ist keine schwierige neue Grammatik — es ist die gezielte Kombination von drei Dingen, die man bereits kann.",
+ "cuadroReferencia": {
+  "titulo": "Wie sich die drei Mittel schichten",
+  "columnas": [
+   "Mittel",
+   "Beispiel im Satz",
+   "Funktion im Register"
+  ],
+  "filas": [
+   [
+    "Konjunktiv I",
+    "…, die beschlossen sei",
+    "markiert: fremde Aussage, nicht eigene"
+   ],
+   [
+    "Relativsatz",
+    "die Maßnahme, die…",
+    "bettet die Aussage in den Bericht ein"
+   ],
+   [
+    "Nominalstil",
+    "die Umsetzung der Maßnahme",
+    "hält den Bericht kompakt und distanziert"
+   ]
+  ],
+  "notaPie": "Der Konjunktiv I im Relativsatz zeigt: Der Sprecher berichtet, was jemand anderes gesagt hat — er übernimmt es nicht als eigene Aussage."
+ },
+ "ejemplos": [
+  {
+   "texto": "Die Maßnahme, die bereits beschlossen sei, werde im kommenden Jahr umgesetzt.",
+   "audio": true
+  },
+  {
+   "texto": "Der Sprecher erklärte, die Zahlen, die veröffentlicht worden seien, seien nicht vollständig.",
+   "audio": true
+  },
+  {
+   "texto": "Laut Bericht sei die Entscheidung, die man getroffen habe, nicht mehr rückgängig zu machen."
+  }
+ ],
+ "notas": [
+  "Wo der Konjunktiv I mit dem Indikativ zusammenfällt (meist bei wir/sie), springt man auf den Konjunktiv II: sie hätten entschieden statt sie haben entschieden.",
+  "Diese Kombination ist fast ausschliesslich schriftliches Register: Presse, Protokolle, Behördentexte. Im Gespräch wirkt sie gestelzt.",
+  "Der Relativsatz mit Konjunktiv I distanziert doppelt: einmal durch den Konjunktiv, einmal durch die Einbettung."
+ ],
+ "contraste": {
+  "es": "Das Spanische markiert berichtete Rede fast nie morphologisch, sondern über den Kontext oder según: según la medida ya decidida. Es gibt keine Entsprechung für den Konjunktiv I als eigenständiges Signal — Spanischsprachige übernehmen deshalb oft den Indikativ und verlieren die Distanzierung, die im Deutschen genau dieser Konjunktiv leistet.",
+  "en": "English marks reported speech through backshift of tense, not through a separate mood: the measure, which had already been decided, would be implemented. The logic is different but the function is close, which helps — the main risk for English speakers is forgetting to switch to Konjunktiv II when Konjunktiv I looks identical to the indicative."
+ },
+ "errores": [
+  "Konjunktiv I benutzen, wo er mit dem Indikativ zusammenfällt, ohne auf Konjunktiv II auszuweichen.",
+  "Den Relativsatz weglassen und die berichtete Aussage als eigene Behauptung formulieren.",
+  "Das Register verwechseln und die Konstruktion in einem informellen Gespräch verwenden."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Den Konjunktiv I ganz durch den Indikativ ersetzen, weil das Spanische keine Entsprechung hat, und dadurch die Distanzierung verlieren."
+  ],
+  "en": [
+   "Backshift statt Konjunktiv verwenden: die Vergangenheitsform nachbauen (die Massnahme, die beschlossen wurde) statt den Modus zu wechseln."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "…, die/der/das bereits … sei",
+   "funcion": "berichtete Eigenschaft, distanziert",
+   "traducciones": {
+    "es": "…, que ya sería…",
+    "en": "…, which was said to already be…",
+    "fr": "…, qui serait déjà…",
+    "it": "…, che sarebbe già…",
+    "pt": "…, que já seria…"
+   }
+  },
+  {
+   "expresion": "laut Bericht/Sprecher/Quelle",
+   "funcion": "Quelle nennen, formell",
+   "traducciones": {
+    "es": "según el informe/portavoz/la fuente",
+    "en": "according to the report/spokesperson/source",
+    "fr": "selon le rapport/le porte-parole/la source",
+    "it": "secondo il rapporto/portavoce/la fonte",
+    "pt": "segundo o relatório/porta-voz/a fonte"
+   }
+  },
+  {
+   "expresion": "…, wie es heisst,",
+   "funcion": "unbestimmte Quelle",
+   "traducciones": {
+    "es": "…, según se dice,",
+    "en": "…, as is being said,",
+    "fr": "…, à ce qu’on dit,",
+    "it": "…, a quanto si dice,",
+    "pt": "…, segundo se diz,"
+   }
+  },
+  {
+   "expresion": "…, so die Erklärung,",
+   "funcion": "eingeschobene Quellenangabe",
+   "traducciones": {
+    "es": "…, según la explicación,",
+    "en": "…, according to the statement,",
+    "fr": "…, selon l’explication,",
+    "it": "…, secondo la spiegazione,",
+    "pt": "…, segundo a explicação,"
+   }
+  },
+  {
+   "expresion": "…, heisst es weiter,",
+   "funcion": "Fortsetzung der Quellenangabe",
+   "traducciones": {
+    "es": "…, se añade,",
+    "en": "…, it goes on to say,",
+    "fr": "…, poursuit le texte,",
+    "it": "…, si legge inoltre,",
+    "pt": "…, acrescenta-se,"
+   }
+  },
+  {
+   "expresion": "Wie verlautet, sei…",
+   "funcion": "unbestimmte Quelle, sehr formell",
+   "traducciones": {
+    "es": "Según se ha sabido, sería…",
+    "en": "According to reports, it was said to be…",
+    "fr": "Selon certaines informations, il/elle serait…",
+    "it": "Secondo quanto riferito, sarebbe…",
+    "pt": "Segundo consta, seria…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich auf Konjunktiv II gewechselt, wo Konjunktiv I mit dem Indikativ zusammenfällt?",
+  "Ist die berichtete Aussage klar als fremd markiert, nicht als eigene?",
+  "Passt der Nominalstil zum Register des restlichen Textes?",
+  "Würde diese Konstruktion in einem Gespräch stehen, oder gehört sie nur in einen Bericht?",
+  "Ist zu erkennen, dass es sich um eine fremde und keine eigene Aussage handelt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Konjunktiv I in Relativsätzen im Nominalstil. (1) Prüfen Sie bei jedem Konjunktiv I, ob er sich vom Indikativ unterscheidet; wenn nicht, muss Konjunktiv II stehen. (2) Prüfen Sie, ob die Distanzierung zur fremden Aussage erhalten bleibt. (3) Sagen Sie, ob das Register zum Rest des Textes passt. Schreiben Sie den Text nicht neu."
+}

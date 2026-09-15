@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-V02",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Redewendungen",
+ "categoria": "vocabulary",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 werden seltenere, bildungssprachliche Redewendungen beherrscht, deren Ursprung oft literarisch oder historisch ist: den Rubikon überschreiten, ein Danaergeschenk, auf Sand gebaut sein. Ihre Verwendung signalisiert Bildung, birgt aber das Risiko, gestelzt zu wirken, wenn sie zu häufig eingesetzt werden.",
+ "cuadroReferencia": {
+  "titulo": "Bildungssprachliche Redewendungen",
+  "columnas": [
+   "Redewendung",
+   "Ursprung",
+   "Bedeutung"
+  ],
+  "filas": [
+   [
+    "den Rubikon überschreiten",
+    "historisch, Caesar",
+    "einen unumkehrbaren Schritt tun"
+   ],
+   [
+    "ein Danaergeschenk",
+    "literarisch, Trojanischer Krieg",
+    "ein Geschenk, das eigentlich schadet"
+   ],
+   [
+    "auf Sand gebaut sein",
+    "biblisch",
+    "keine solide Grundlage haben"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Mit dieser Entscheidung hat er den Rubikon endgültig überschritten.",
+   "audio": true
+  },
+  {
+   "texto": "Die Finanzierung erwies sich als Danaergeschenk.",
+   "audio": true
+  },
+  {
+   "texto": "Das ganze Projekt war von Anfang an auf Sand gebaut."
+  }
+ ],
+ "notas": [
+  "Diese Redewendungen setzen ein gebildetes Publikum voraus, das den historischen oder literarischen Bezug kennt.",
+  "Mehr als eine pro längerem Text wirkt schnell wie eine Demonstration von Bildung statt wie natürlicher Sprachgebrauch.",
+  "In gesprochener Alltagssprache sind sie selten; sie gehören in Essays, Kommentare und gehobene Reden."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit cruzar el Rubicón eine wörtliche Entsprechung, was die Übertragung erleichtert. Bei rein deutschen oder biblischen Bezügen wie auf Sand gebaut fehlt jedoch oft die direkte spanische Parallele, sodass diese Wendungen aktiv gelernt werden müssen."
+ },
+ "errores": [
+  "Mehr als eine bildungssprachliche Redewendung pro Absatz verwenden, was gestelzt wirkt.",
+  "Eine Redewendung ohne das nötige gemeinsame Vorwissen des Publikums einsetzen.",
+  "Die Bedeutung einer Redewendung falsch verstehen, weil ihr Ursprung nicht bekannt ist."
+ ],
+ "redemittel": [
+  {
+   "expresion": "den Rubikon überschreiten",
+   "funcion": "unumkehrbarer Schritt",
+   "traducciones": {
+    "es": "cruzar el Rubicón",
+    "en": "to cross the Rubicon"
+   }
+  },
+  {
+   "expresion": "ein Danaergeschenk",
+   "funcion": "scheinbares Geschenk, das schadet",
+   "traducciones": {
+    "es": "un regalo envenenado",
+    "en": "a poisoned chalice"
+   }
+  },
+  {
+   "expresion": "auf Sand gebaut sein",
+   "funcion": "keine solide Grundlage",
+   "traducciones": {
+    "es": "estar construido sobre arena",
+    "en": "to be built on sand"
+   }
+  },
+  {
+   "expresion": "ein Pyrrhussieg",
+   "funcion": "Sieg, der mehr kostet als nützt",
+   "traducciones": {
+    "es": "una victoria pírrica",
+    "en": "a Pyrrhic victory"
+   }
+  },
+  {
+   "expresion": "das Zünglein an der Waage sein",
+   "funcion": "den Ausschlag geben",
+   "traducciones": {
+    "es": "ser el fiel de la balanza",
+    "en": "to be the deciding factor"
+   }
+  },
+  {
+   "expresion": "eine Sisyphusarbeit",
+   "funcion": "endlose, vergebliche Mühe",
+   "traducciones": {
+    "es": "un trabajo de Sísifo",
+    "en": "a Sisyphean task"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist höchstens eine bildungssprachliche Redewendung pro Absatz vorhanden?",
+  "Passt sie zum Bildungsniveau und Kontext des Publikums?",
+  "Ist die Bedeutung korrekt verstanden und angewendet?",
+  "Wirkt der Text gebildet, nicht gestelzt?",
+  "Habe ich mindestens zwei verschiedene bildungssprachliche Redewendungen benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf bildungssprachliche Redewendungen. Prüfen Sie Bedeutung, Häufigkeit und Passung zum Publikum. Schreiben Sie den Text nicht neu."
+}

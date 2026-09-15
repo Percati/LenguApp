@@ -1,0 +1,109 @@
+{
+ "skillId": "EN-F10",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Speculating and Predicting",
+ "categoria": "fluency",
+ "ancla": "EGP A2/B1",
+ "descripcion": "At B1 you speculate with may, might and probably to talk about what might happen. The full speculation chain used at C1 comes later — a simple, graded prediction naming how sure you are is enough here.",
+ "cuadroReferencia": {
+  "titulo": "Simple speculation",
+  "columnas": [
+   "Word",
+   "Certainty"
+  ],
+  "filas": [
+   [
+    "might",
+    "low"
+   ],
+   [
+    "probably",
+    "medium-high"
+   ],
+   [
+    "definitely",
+    "very high"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "It might rain later, so take a jacket.",
+   "audio": true
+  },
+  {
+   "texto": "This will probably take a while.",
+   "audio": true
+  },
+  {
+   "texto": "It's definitely going to be busy tomorrow."
+  }
+ ],
+ "notas": [
+  "Might and may express a real but uncertain possibility.",
+  "Probably usually goes between the subject and the verb: it will probably rain.",
+  "Definitely is used for a very confident prediction."
+ ],
+ "contraste": {
+  "es": "El español expresa predicción con el futuro simple o quizás/probablemente, lo cual se transfiere bien a estas formas inglesas de certeza graduada."
+ },
+ "errores": [
+  "Using will for everything, without varying the certainty.",
+  "Misplacing probably in the sentence.",
+  "Using definitely for something that's actually uncertain."
+ ],
+ "redemittel": [
+  {
+   "expresion": "It might…",
+   "funcion": "low certainty",
+   "traducciones": {
+    "es": "Podría…"
+   }
+  },
+  {
+   "expresion": "It will probably…",
+   "funcion": "medium-high certainty",
+   "traducciones": {
+    "es": "Probablemente…"
+   }
+  },
+  {
+   "expresion": "It's definitely…",
+   "funcion": "very high certainty",
+   "traducciones": {
+    "es": "Definitivamente…"
+   }
+  },
+  {
+   "expresion": "I think it will…",
+   "funcion": "opinion-based prediction",
+   "traducciones": {
+    "es": "Creo que va a…"
+   }
+  },
+  {
+   "expresion": "Maybe it will…",
+   "funcion": "low certainty, alternative",
+   "traducciones": {
+    "es": "Quizás vaya a…"
+   }
+  },
+  {
+   "expresion": "I doubt it will…",
+   "funcion": "low certainty, negative",
+   "traducciones": {
+    "es": "Dudo que vaya a…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I used more than one certainty word, not just will?",
+  "Is probably in the right position?",
+  "Does the certainty level match how sure I really am?",
+  "Does the phrase sound polite and natural?",
+  "Does the phrase sound polite and natural?"
+ ],
+ "promptCorreccion": "Focus only on the words used to express certainty in a prediction. Check the position of probably and whether the level of certainty is accurate. Do not rewrite the text."
+}

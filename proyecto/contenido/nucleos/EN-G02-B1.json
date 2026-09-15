@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-G02",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Past Simple and Past Continuous",
+ "categoria": "grammar",
+ "ancla": "EGP A2",
+ "descripcion": "The past simple tells the main events of a story; the past continuous sets the background or an action interrupted by another. At B1 the goal is to combine both correctly: I was walking home when it started to rain.",
+ "cuadroReferencia": {
+  "titulo": "Past simple vs. past continuous",
+  "columnas": [
+   "Use",
+   "Form",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Main event",
+    "past simple",
+    "I called her yesterday."
+   ],
+   [
+    "Background/interrupted action",
+    "past continuous",
+    "I was cooking when the phone rang."
+   ],
+   [
+    "Two actions at once",
+    "past continuous + past continuous",
+    "While I was cooking, she was setting the table."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I was walking home when it started to rain.",
+   "audio": true
+  },
+  {
+   "texto": "While I was cooking, she was setting the table.",
+   "audio": true
+  },
+  {
+   "texto": "I called her yesterday, but she didn't answer."
+  }
+ ],
+ "notas": [
+  "When usually introduces the interrupting event (past simple); while introduces the background action (past continuous).",
+  "The past continuous is formed with was/were + -ing.",
+  "Not every past story needs the past continuous — use it only for background or interruption."
+ ],
+ "contraste": {
+  "es": "El español usa el pretérito imperfecto para el fondo de una historia (estaba cocinando) y el pretérito indefinido para el evento principal (sonó el teléfono), con una lógica muy parecida a la del inglés. La transferencia es en general directa."
+ },
+ "errores": [
+  "Using the past simple for the background action instead of the past continuous.",
+  "Using when where while would be more natural, or vice versa.",
+  "Forgetting was/were before the -ing form."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I was…-ing when…",
+   "funcion": "background interrupted",
+   "traducciones": {
+    "es": "Estaba… cuando…"
+   }
+  },
+  {
+   "expresion": "While I was…-ing,…",
+   "funcion": "background action",
+   "traducciones": {
+    "es": "Mientras estaba…,…"
+   }
+  },
+  {
+   "expresion": "…happened while…",
+   "funcion": "event during background",
+   "traducciones": {
+    "es": "…pasó mientras…"
+   }
+  },
+  {
+   "expresion": "I called…",
+   "funcion": "main event, past simple",
+   "traducciones": {
+    "es": "Llamé…"
+   }
+  },
+  {
+   "expresion": "It started to…",
+   "funcion": "sudden event",
+   "traducciones": {
+    "es": "Empezó a…"
+   }
+  },
+  {
+   "expresion": "At that moment,…",
+   "funcion": "marks the interruption",
+   "traducciones": {
+    "es": "En ese momento,…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the main event in the past simple?",
+  "Is the background action in the past continuous?",
+  "Is was/were correctly used before -ing?",
+  "Have I used both tenses at least once?",
+  "Does the story sound natural, not translated?"
+ ],
+ "promptCorreccion": "Focus only on past simple versus past continuous. Check whether the main event and the background action use the correct tense. Do not rewrite the text."
+}

@@ -1,0 +1,108 @@
+{
+ "skillId": "EN-F05",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Making and Responding to Suggestions",
+ "categoria": "fluency",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you make a very simple suggestion with let's or shall we, and respond with yes or no. Negotiating and proposing alternatives with more nuance comes at higher levels, once this basic exchange is solid.",
+ "cuadroReferencia": {
+  "titulo": "Simple suggestion",
+  "columnas": [
+   "Formula",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Let's…",
+    "Let's go to the park."
+   ],
+   [
+    "Shall we…?",
+    "Shall we go to the park?"
+   ],
+   [
+    "Response",
+    "Yes, great! / No, thanks."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Let's go to the park this weekend.",
+   "audio": true
+  },
+  {
+   "texto": "Shall we go to the beach instead?",
+   "audio": true
+  },
+  {
+   "texto": "Yes, great idea!"
+  }
+ ],
+ "notas": [
+  "Let's is the easiest way to suggest doing something together.",
+  "Shall we…? phrases the same idea as a question.",
+  "A clear yes or no keeps the conversation moving."
+ ],
+ "contraste": {
+  "es": "El español sugiere con vamos a de forma muy parecida a let's, así que la estructura se transfiere directamente."
+ },
+ "errores": [
+  "Not responding clearly to a suggestion.",
+  "Confusing let's with let."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Let's…",
+   "funcion": "suggestion",
+   "traducciones": {
+    "es": "Vamos a…"
+   }
+  },
+  {
+   "expresion": "Shall we…?",
+   "funcion": "suggestion as a question",
+   "traducciones": {
+    "es": "¿Vamos a…?"
+   }
+  },
+  {
+   "expresion": "Yes, great!",
+   "funcion": "acceptance",
+   "traducciones": {
+    "es": "¡Sí, genial!"
+   }
+  },
+  {
+   "expresion": "No, thanks.",
+   "funcion": "polite refusal",
+   "traducciones": {
+    "es": "No, gracias."
+   }
+  },
+  {
+   "expresion": "Good idea!",
+   "funcion": "acceptance",
+   "traducciones": {
+    "es": "¡Buena idea!"
+   }
+  },
+  {
+   "expresion": "Maybe another time.",
+   "funcion": "polite refusal",
+   "traducciones": {
+    "es": "Quizás otro día."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the suggestion clear?",
+  "Have I responded clearly?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on the suggestion and the response. Check whether both are clear. Do not rewrite the text. Check whether the response fits the suggestion. Flag anything unclear."
+}

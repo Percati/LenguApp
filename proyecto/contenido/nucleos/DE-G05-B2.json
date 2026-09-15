@@ -1,0 +1,196 @@
+{
+ "skillId": "DE-G05",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Subjektive Modalverben",
+ "categoria": "grammar",
+ "descripcion": "Dasselbe Modalverb hat im Deutschen zwei völlig verschiedene Verwendungen. *Er muss zum Arzt* heisst „es ist notwendig\". *Er muss krank sein* heisst „ich bin mir fast sicher\". Die zweite ist der **subjektive** Gebrauch, und sie ersetzt eine ganze Reihe umständlicher Konstruktionen: statt *Ich bin ziemlich sicher, dass er es vergessen hat* sagt man *Er wird es vergessen haben*.",
+ "cuadroReferencia": {
+  "titulo": "Skala der Sicherheit",
+  "columnas": [
+   "Form",
+   "Sicherheit",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "muss",
+    "~95 %",
+    "Das muss eine Nebenwirkung sein."
+   ],
+   [
+    "dürfte",
+    "~75 %",
+    "Das dürfte harmlos sein."
+   ],
+   [
+    "*wird* (Futur als Vermutung)",
+    "~70 %",
+    "Er wird sich krankgemeldet haben."
+   ],
+   [
+    "könnte / mag",
+    "~40 %",
+    "Das könnte am Stress liegen."
+   ],
+   [
+    "kann nicht",
+    "~5 %",
+    "Das kann nicht stimmen."
+   ],
+   [
+    "soll",
+    "Fremdbehauptung",
+    "Das Mittel soll gut verträglich sein."
+   ],
+   [
+    "will",
+    "Eigenbehauptung",
+    "Sie will nie geraucht haben."
+   ]
+  ],
+  "notaPie": "**Vergangenheit:** Modalverb + **Infinitiv Perfekt**: Er muss es vergessen **haben**."
+ },
+ "ejemplos": [
+  {
+   "texto": "*Die Beschwerden müssen mit dem Stress zusammenhängen.*",
+   "audio": true
+  },
+  {
+   "texto": "*Das dürfte eine Nebenwirkung sein.*",
+   "audio": true
+  },
+  {
+   "texto": "*Das neue Medikament soll besser verträglich sein.*",
+   "audio": true
+  },
+  {
+   "texto": "*Sie will nie geraucht haben.*",
+   "audio": true
+  },
+  {
+   "texto": "*Er wird sich krankgemeldet haben.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Dürfte* ist die eleganteste Vermutungsform im Deutschen und wird von Lernenden fast nie benutzt.",
+  "*Soll* und *will* subjektiv sind hochfrequent in Nachrichten und im Klatsch. Sie zu verstehen ist Hörverstehen; sie zu benutzen ist B2+.",
+  "Die Betonung entscheidet oft, ob objektiv oder subjektiv gemeint ist."
+ ],
+ "contraste": {
+  "es": "Spanisch hat mit *deber de* (Vermutung) gegen *deber* (Pflicht) eine ähnliche Unterscheidung — aber sie wird umgangssprachlich kaum eingehalten. Wer *deber de* nie aktiv benutzt, überträgt die Unterscheidung auch im Deutschen nicht.",
+  "en": "Das Englische kennt den subjektiven Modalgebrauch sehr wohl: *he must be ill*, *he might have forgotten*. Die Bedeutungen decken sich gut. Was fehlt, ist die Unterscheidung von *soll* und *will* für Fremd- und Eigenbehauptung — dafür braucht das Englische Umschreibungen wie *he is said to* und *he claims to*. Und *dürfte* hat gar keine Entsprechung; am nächsten liegt *is likely to*."
+ },
+ "errores": [
+  "*Er musste krank sein* statt *Er muss krank gewesen sein*.",
+  "*soll* als Empfehlung missverstehen, wenn eine Fremdbehauptung gemeint ist.",
+  "Den Infinitiv Perfekt vergessen.",
+  "*sollen* als *should* lesen, wenn eine Fremdbehauptung gemeint ist.",
+  "*dürfte* vermeiden und stattdessen immer *wahrscheinlich* sagen."
+ ],
+ "erroresContrastivos": {
+  "en": [
+   "*sollen* als *should* lesen, wenn eine Fremdbehauptung gemeint ist.",
+   "*dürfte* vermeiden und stattdessen immer *wahrscheinlich* sagen."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "Das dürfte…",
+   "funcion": "wahrscheinliche Vermutung",
+   "traducciones": {
+    "es": "probablemente sea…",
+    "en": "That is probably…",
+    "fr": "Cela devrait probablement…",
+    "it": "Probabilmente dovrebbe…",
+    "pt": "Provavelmente deverá…"
+   }
+  },
+  {
+   "expresion": "Das muss… sein",
+   "funcion": "sehr hohe Sicherheit",
+   "traducciones": {
+    "es": "tiene que ser…",
+    "en": "That must be…",
+    "fr": "Cela doit être…",
+    "it": "Deve essere…",
+    "pt": "Tem de ser…"
+   }
+  },
+  {
+   "expresion": "Es könnte sein, dass…",
+   "funcion": "Möglichkeit",
+   "traducciones": {
+    "es": "podría ser que…",
+    "en": "It could be that…",
+    "fr": "Il se pourrait que…",
+    "it": "Potrebbe darsi che…",
+    "pt": "Poderia ser que…"
+   }
+  },
+  {
+   "expresion": "Angeblich…",
+   "funcion": "Fremdbehauptung",
+   "traducciones": {
+    "es": "supuestamente…",
+    "en": "Supposedly…",
+    "fr": "Apparemment / prétendument…",
+    "it": "A quanto pare / presumibilmente…",
+    "pt": "Alegadamente…"
+   }
+  },
+  {
+   "expresion": "Soweit ich weiss…",
+   "funcion": "begrenztes Wissen",
+   "traducciones": {
+    "es": "por lo que sé…",
+    "en": "As far as I know…",
+    "fr": "À ma connaissance…",
+    "it": "Per quanto ne so…",
+    "pt": "Tanto quanto sei…"
+   }
+  },
+  {
+   "expresion": "Das kann eigentlich nicht…",
+   "funcion": "Ausschluss",
+   "traducciones": {
+    "es": "en realidad no puede…",
+    "en": "That can't really…",
+    "fr": "Cela ne peut vraiment pas…",
+    "it": "Questo non può proprio…",
+    "pt": "Isso realmente não pode…"
+   }
+  },
+  {
+   "expresion": "Er wird wohl… haben",
+   "funcion": "Vermutung über Vergangenes",
+   "traducciones": {
+    "es": "habrá…",
+    "en": "He'll probably have…",
+    "fr": "Il aura probablement…",
+    "it": "Probabilmente avrà…",
+    "pt": "Provavelmente terá…"
+   }
+  },
+  {
+   "expresion": "Vermutlich…",
+   "funcion": "neutrale Vermutung",
+   "traducciones": {
+    "es": "presumiblemente…",
+    "en": "Presumably…",
+    "fr": "Vraisemblablement…",
+    "it": "Probabilmente…",
+    "pt": "Presumivelmente…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Sechs verschiedene Sicherheitsgrade — nachzählen.",
+  "Steht bei Vergangenheit der Infinitiv Perfekt?",
+  "Habe ich *dürfte* benutzt?",
+  "Ist irgendwo objektiv gemeint, wo ich subjektiv wollte?",
+  "Alle vier Kernwörter?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den subjektiven Gebrauch der Modalverben. (1) Markieren Sie jedes Modalverb und sagen Sie, ob es objektiv oder subjektiv gemeint ist und welchen Sicherheitsgrad es ausdrückt. (2) Prüfen Sie den Infinitiv Perfekt. (3) Markieren Sie umständliche Konstruktionen, die ein Modalverb ersetzt hätte. (4) Zeigen Sie zwei Stellen, an denen *dürfte* gepasst hätte. Schreiben Sie den Text nicht neu."
+}

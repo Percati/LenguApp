@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-V06",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Wortbildung: Präfixe, Suffixe, Komposita",
+ "categoria": "vocabulary",
+ "ancla": "PD B1",
+ "descripcion": "Auf B1 lernt man die einfachsten Komposita (zwei Nomen zusammensetzen) und das Präfix un- zur Verneinung. Diese Strategie hilft, neue Wörter selbstständig zu verstehen, ohne jedes einzeln auswendig lernen zu müssen.",
+ "cuadroReferencia": {
+  "titulo": "Einfache Wortbildung",
+  "columnas": [
+   "Muster",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Kompositum",
+    "die Haustür (Haus + Tür)"
+   ],
+   [
+    "un- + Adjektiv",
+    "unglücklich (nicht glücklich)"
+   ],
+   [
+    "Kompositum 2",
+    "das Wohnzimmer (Wohnen + Zimmer)"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die Haustür war leider abgeschlossen.",
+   "audio": true
+  },
+  {
+   "texto": "Er sah heute ziemlich unglücklich aus.",
+   "audio": true
+  },
+  {
+   "texto": "Das Wohnzimmer ist sehr gemütlich."
+  }
+ ],
+ "notas": [
+  "Ein Kompositum wird von hinten nach vorne verstanden: die Haustür ist eine Tür (nicht ein Haus).",
+  "Un- vor einem Adjektiv verneint es: glücklich → unglücklich.",
+  "Der Artikel eines Kompositums richtet sich nach dem letzten Wort: die Tür, also die Haustür."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet Komposita seltener und meist mit einer Präposition (la puerta de la casa statt Haustür). Spanischsprachige zerlegen deutsche Komposita deshalb nicht automatisch."
+ },
+ "errores": [
+  "Den Artikel eines Kompositums nach dem ersten statt nach dem letzten Wort wählen.",
+  "Un- vergessen und stattdessen nicht + Adjektiv sagen, wo ein Kompositum-Adjektiv existiert.",
+  "Ein Kompositum in der falschen Reihenfolge bilden."
+ ],
+ "redemittel": [
+  {
+   "expresion": "die Haustür",
+   "funcion": "Kompositum",
+   "traducciones": {
+    "es": "la puerta de casa",
+    "en": "the front door"
+   }
+  },
+  {
+   "expresion": "unglücklich",
+   "funcion": "un- + Adjektiv",
+   "traducciones": {
+    "es": "infeliz",
+    "en": "unhappy"
+   }
+  },
+  {
+   "expresion": "das Wohnzimmer",
+   "funcion": "Kompositum",
+   "traducciones": {
+    "es": "la sala de estar",
+    "en": "the living room"
+   }
+  },
+  {
+   "expresion": "unfreundlich",
+   "funcion": "un- + Adjektiv",
+   "traducciones": {
+    "es": "poco amable",
+    "en": "unfriendly"
+   }
+  },
+  {
+   "expresion": "das Schlafzimmer",
+   "funcion": "Kompositum",
+   "traducciones": {
+    "es": "el dormitorio",
+    "en": "the bedroom"
+   }
+  },
+  {
+   "expresion": "unmöglich",
+   "funcion": "un- + Adjektiv",
+   "traducciones": {
+    "es": "imposible",
+    "en": "impossible"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Stimmt der Artikel des Kompositums mit dem letzten Wort überein?",
+  "Habe ich un- korrekt zur Verneinung benutzt?",
+  "Habe ich mindestens zwei Komposita gebildet?",
+  "Klingt der Text natürlich?",
+  "Habe ich das Vokabular des Themas eingesetzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Komposita und das Präfix un-. Prüfen Sie den Artikel jedes Kompositums und ob un- korrekt zur Verneinung benutzt wird. Schreiben Sie den Text nicht neu."
+}

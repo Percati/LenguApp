@@ -1,0 +1,108 @@
+{
+ "skillId": "EN-F08",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Comparing and Contrasting",
+ "categoria": "fluency",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you compare two things with simple comparative adjectives like bigger and more expensive. Superlatives and weighted, qualified comparisons come at higher levels, once this basic form is automatic.",
+ "cuadroReferencia": {
+  "titulo": "Simple comparison",
+  "columnas": [
+   "Type",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Short adjective",
+    "This is bigger than that."
+   ],
+   [
+    "Long adjective",
+    "This is more expensive."
+   ],
+   [
+    "Similarity",
+    "They're similar."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "This bag is bigger than that one.",
+   "audio": true
+  },
+  {
+   "texto": "This phone is more expensive than mine.",
+   "audio": true
+  },
+  {
+   "texto": "They're quite similar."
+  }
+ ],
+ "notas": [
+  "Short adjectives take -er: bigger, cheaper, faster.",
+  "Long adjectives take more: more expensive, more interesting.",
+  "Than is needed after every comparative."
+ ],
+ "contraste": {
+  "es": "El español compara con más…que, lo cual se transfiere bien al concepto general, aunque la forma -er del inglés para adjetivos cortos no tenga equivalente morfológico."
+ },
+ "errores": [
+  "Forgetting than after a comparative.",
+  "Using more with a short adjective."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…is bigger than…",
+   "funcion": "comparative, short adjective",
+   "traducciones": {
+    "es": "…es más grande que…"
+   }
+  },
+  {
+   "expresion": "…is more expensive than…",
+   "funcion": "comparative, long adjective",
+   "traducciones": {
+    "es": "…es más caro que…"
+   }
+  },
+  {
+   "expresion": "They're similar.",
+   "funcion": "similarity",
+   "traducciones": {
+    "es": "Son parecidos."
+   }
+  },
+  {
+   "expresion": "…is cheaper.",
+   "funcion": "comparative",
+   "traducciones": {
+    "es": "…es más barato."
+   }
+  },
+  {
+   "expresion": "I prefer…",
+   "funcion": "preference",
+   "traducciones": {
+    "es": "Prefiero…"
+   }
+  },
+  {
+   "expresion": "…is smaller than…",
+   "funcion": "comparative",
+   "traducciones": {
+    "es": "…es más chico que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is than used after every comparative?",
+  "Are short adjectives formed with -er?",
+  "Does the comparison sound natural?",
+  "Does the comparison sound natural?",
+  "Does the comparison sound natural?"
+ ],
+ "promptCorreccion": "Focus only on comparatives. Check than and the -er/more forms, and check whether the comparison sounds natural. Do not rewrite the text. Flag anything unclear."
+}

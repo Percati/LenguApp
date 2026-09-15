@@ -1,0 +1,117 @@
+{
+ "skillId": "EN-K03",
+ "nivel": "C2",
+ "idioma": "en",
+ "titulo": "Unreal Past, Modal Perfect and Third Conditional",
+ "categoria": "grammar",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 the regret cluster extends to mixed conditionals, where a past condition produces a present result: if we had invested then, we'd be in a very different position now. This mixing is the natural, sophisticated form of regret about a past decision with ongoing consequences — not an error, as it's sometimes mistaught.",
+ "cuadroReferencia": {
+  "titulo": "Mixed conditionals",
+  "columnas": [
+   "Type",
+   "If-clause",
+   "Main clause",
+   "Meaning"
+  ],
+  "filas": [
+   [
+    "Past → Present",
+    "past perfect",
+    "would + infinitive",
+    "past condition, present result"
+   ],
+   [
+    "Present → Past",
+    "past simple",
+    "would have + participle",
+    "ongoing trait, past result"
+   ],
+   [
+    "Pure third",
+    "past perfect",
+    "would have + participle",
+    "past condition, past result"
+   ]
+  ],
+  "notaPie": "The choice of mixed pattern depends entirely on where the condition sits in time versus where the result sits — not on a fixed rule to memorise."
+ },
+ "ejemplos": [
+  {
+   "texto": "If we had invested then, we'd be in a very different position now.",
+   "audio": true
+  },
+  {
+   "texto": "If she weren't so cautious, she would have taken the offer.",
+   "audio": true
+  },
+  {
+   "texto": "If I hadn't studied medicine, I probably wouldn't be so calm in a crisis."
+  }
+ ],
+ "notas": [
+  "A mixed conditional is not a mistake — it's the correct form whenever the time of the condition and the time of the result genuinely differ.",
+  "The most common mixed pattern is past condition, present result; the reverse is rarer but equally valid.",
+  "Distinguishing this from a simple error requires checking whether the writer actually means two different time frames, or just confused the tenses."
+ ],
+ "contraste": {
+  "es": "El español logra la misma mezcla temporal con relativa naturalidad (si hubiéramos invertido entonces, ahora estaríamos en otra posición), así que el concepto no es nuevo — lo que falta es la confianza para usarlo activamente en inglés en vez de forzarlo a un patrón puro de tercer condicional."
+ },
+ "errores": [
+  "Forcing a mixed situation into a pure third conditional, losing the present-tense result.",
+  "Building a mixed conditional where the time frames don't actually differ, which is then a genuine error, not a valid mix.",
+  "Using would have in the if-clause of any variant."
+ ],
+ "redemittel": [
+  {
+   "expresion": "If we had…, we'd be…now.",
+   "funcion": "past condition, present result",
+   "traducciones": {
+    "es": "si hubiéramos…, ahora estaríamos…"
+   }
+  },
+  {
+   "expresion": "If I weren't so…, I would have…",
+   "funcion": "ongoing trait, past result",
+   "traducciones": {
+    "es": "si no fuera tan…, habría…"
+   }
+  },
+  {
+   "expresion": "Had things gone differently, we'd be…",
+   "funcion": "formal inversion, mixed",
+   "traducciones": {
+    "es": "de haber ido distinto, estaríamos…"
+   }
+  },
+  {
+   "expresion": "If it weren't for…, we wouldn't have…",
+   "funcion": "ongoing factor, past result",
+   "traducciones": {
+    "es": "si no fuera por…, no habríamos…"
+   }
+  },
+  {
+   "expresion": "…, and that's why we're…today.",
+   "funcion": "non-conditional equivalent",
+   "traducciones": {
+    "es": "…, y por eso hoy estamos…"
+   }
+  },
+  {
+   "expresion": "Looking back, if we had…, things would be…",
+   "funcion": "reflective frame, mixed",
+   "traducciones": {
+    "es": "mirando atrás, si hubiéramos…, las cosas serían…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Do the time frames of the condition and the result genuinely differ, justifying a mixed form?",
+  "Is the if-clause free of would/would have where a pure past perfect or past simple is needed?",
+  "Does the mixed conditional read as natural regret, not as a tense error?",
+  "Have I distinguished a genuine mix from an accidental one?",
+  "Would a native speaker read this as sophisticated, not confused?"
+ ],
+ "promptCorreccion": "Focus only on mixed conditionals. Check whether the time frames genuinely differ and whether each half of the sentence is internally correct. Do not rewrite the text."
+}

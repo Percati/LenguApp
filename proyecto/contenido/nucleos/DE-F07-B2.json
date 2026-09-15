@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-F07",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Vermutungen ausdrücken",
+ "categoria": "fluency",
+ "ancla": "Aspekte B2",
+ "descripcion": "Auf B2 drückt man Vermutungen mit den gängigsten Modalverben aus: könnte, müsste, dürfte. Die Argumentationskette aus Beobachtung, Vermutung und eingeräumter Unsicherheit (C1) ist hier noch nicht nötig — eine klar markierte Vermutung reicht.",
+ "cuadroReferencia": {
+  "titulo": "Vermutung mit Modalverben",
+  "columnas": [
+   "Form",
+   "Sicherheit"
+  ],
+  "filas": [
+   [
+    "Das könnte sein.",
+    "niedrig"
+   ],
+   [
+    "Das dürfte stimmen.",
+    "mittel-hoch"
+   ],
+   [
+    "Das müsste eigentlich klappen.",
+    "hoch"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das könnte daran liegen, dass er verschlafen hat.",
+   "audio": true
+  },
+  {
+   "texto": "Das dürfte inzwischen erledigt sein.",
+   "audio": true
+  },
+  {
+   "texto": "Das müsste eigentlich funktionieren, so wie wir es geplant haben."
+  }
+ ],
+ "notas": [
+  "Dürfte drückt eine wahrscheinliche Vermutung aus, wird aber von Lernenden selten aktiv benutzt — es lohnt sich zu üben.",
+  "Müsste in einer Vermutung heisst nicht Pflicht, sondern hohe Erwartung: das müsste klappen bedeutet ich erwarte, dass es klappt.",
+  "Vielleicht ist die einfachste, aber am wenigsten präzise Form — die Modalverben differenzieren den Grad der Sicherheit besser."
+ ],
+ "contraste": {
+  "es": "Das Spanische drückt Vermutung oft mit deber de oder dem Futuro de probabilidad aus (será por eso). Die drei deutschen Abstufungen könnte/dürfte/müsste haben im Spanischen keine so klare Entsprechung, weshalb Spanischsprachige oft nur eine Form (meist könnte) benutzen und die anderen vermeiden."
+ },
+ "errores": [
+  "Nur könnte für jede Vermutung verwenden, unabhängig vom Sicherheitsgrad.",
+  "Dürfte gar nicht benutzen, obwohl es die treffendste Form für eine wahrscheinliche Vermutung wäre.",
+  "Müsste als Pflicht statt als Vermutung missverstehen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das könnte sein.",
+   "funcion": "Vermutung, niedrige Sicherheit",
+   "traducciones": {
+    "es": "Podría ser.",
+    "en": "That could be.",
+    "fr": "C’est possible.",
+    "it": "Potrebbe essere.",
+    "pt": "Pode ser."
+   }
+  },
+  {
+   "expresion": "Das dürfte stimmen.",
+   "funcion": "Vermutung, hohe Wahrscheinlichkeit",
+   "traducciones": {
+    "es": "Seguramente sea así.",
+    "en": "That's probably right.",
+    "fr": "C’est probablement vrai.",
+    "it": "Probabilmente è così.",
+    "pt": "Provavelmente é verdade."
+   }
+  },
+  {
+   "expresion": "Das müsste eigentlich…",
+   "funcion": "hohe Erwartung",
+   "traducciones": {
+    "es": "Se supone que…",
+    "en": "That should…",
+    "fr": "Ça devrait normalement…",
+    "it": "In teoria dovrebbe…",
+    "pt": "Em princípio, deveria…"
+   }
+  },
+  {
+   "expresion": "Vielleicht liegt es daran, dass…",
+   "funcion": "einfache Vermutung",
+   "traducciones": {
+    "es": "Quizás sea porque…",
+    "en": "Maybe it's because…",
+    "fr": "C’est peut-être parce que…",
+    "it": "Forse è perché…",
+    "pt": "Talvez seja porque…"
+   }
+  },
+  {
+   "expresion": "Ich vermute, dass…",
+   "funcion": "Vermutung, explizit",
+   "traducciones": {
+    "es": "Supongo que…",
+    "en": "I suspect that…",
+    "fr": "Je suppose que…",
+    "it": "Suppongo che…",
+    "pt": "Suponho que…"
+   }
+  },
+  {
+   "expresion": "Wahrscheinlich…",
+   "funcion": "Adverb, alternative Form",
+   "traducciones": {
+    "es": "Probablemente…",
+    "en": "Probably…",
+    "fr": "Probablement…",
+    "it": "Probabilmente…",
+    "pt": "Provavelmente…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich mindestens zwei verschiedene Modalverben benutzt (könnte, dürfte, müsste)?",
+  "Passt der gewählte Sicherheitsgrad zur tatsächlichen Situation?",
+  "Habe ich müsste nicht mit einer Pflicht verwechselt?",
+  "Habe ich dürfte mindestens einmal aktiv benutzt?",
+  "Ist die Vermutung klar als Vermutung markiert, nicht als Tatsache?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalverben der Vermutung. Prüfen Sie, ob der Sicherheitsgrad zur Situation passt und ob mehr als eine Form benutzt wird. Schreiben Sie den Text nicht neu."
+}

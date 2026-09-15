@@ -58,20 +58,6 @@ def trocear(texto):
 
 RE_LENGUA = re.compile(r"\((es|en|de|fr|it|pt)\)")
 
-# Cualquier renglon en negrita solo (una etiqueta de seccion, con o sin
-# codigo de lengua). bloques_por_lengua() lo necesita ancho: un sub-bloque
-# "Typische Fehler (en)" termina en la siguiente etiqueta CUALQUIERA
-# (Themenwortschatz, Redemittel...), no en la siguiente con codigo.
-_CUALQUIER_MARCADOR = re.compile(r"\n\*\*[^*\n]+\*\*")
-
-# En cambio, para acotar el bloque de una etiqueta NOMBRADA (secciones()) hay
-# que ser mas estrictos: solo un sub-bloque por lengua base (con codigo entre
-# parentesis) cuenta como limite. El patron ancho tambien encuentra enfasis
-# sueltos dentro de la prosa de una seccion -- p.ej. "**Diese Woche kein
-# neuer Korrekturdurchgang...**" dentro de promptCorreccion -- y cortaria el
-# bloque ahi por error.
-_SIGUIENTE_MARCADOR_CON_LENGUA = re.compile(r"\n\*\*[^*\n]+\(\w\w\)[^*\n]*\*\*")
-
 
 def bloques_por_lengua(cuerpo, etiqueta):
     """Devuelve {codigo_de_lengua: texto} para las secciones marcadas con (xx).
@@ -84,23 +70,15 @@ def bloques_por_lengua(cuerpo, etiqueta):
     out = {}
     patron = re.compile(r"\*\*(?:" + etiqueta + r")[^*]*?\((\w\w)\)[^*]*\*\*")
     marcas = [(m.start(), m.end(), m.group(1)) for m in patron.finditer(cuerpo)]
+    sig = re.compile(r"\n\*\*[^*\n]+\*\*")
     for ini, fin, cod in marcas:
-        m = _CUALQUIER_MARCADOR.search(cuerpo, fin)
+        m = sig.search(cuerpo, fin)
         out[cod] = cuerpo[fin:(m.start() if m else len(cuerpo))].strip()
     return out
 
 
 def secciones(cuerpo, et):
-    """Devuelve {clave: bloque de texto} localizando cada etiqueta en negrita.
-
-    El limite de cada bloque es el que este mas cerca: la siguiente etiqueta
-    conocida (ETIQUETAS) o cualquier otra linea en negrita propia -- esto
-    ultimo cubre los sub-bloques por lengua base ("Typische Fehler (en) —
-    zusatzlich...", que bloques_por_lengua() extrae aparte) para que no
-    queden adentro del bloque de la etiqueta universal. Sin este limite
-    extra, "errores" se comia tambien los renglones de erroresContrastivos:
-    quedaban duplicados en los dos campos.
-    """
+    """Devuelve {clave: bloque de texto} localizando cada etiqueta en negrita."""
     marcas = []
     for clave, etiqueta in et.items():
         m = re.search(r"\*\*" + re.escape(etiqueta) + r"[^*]*\*\*", cuerpo)
@@ -109,10 +87,7 @@ def secciones(cuerpo, et):
     marcas.sort()
     out = {}
     for i, (ini, fin, clave) in enumerate(marcas):
-        limite_nombrado = marcas[i + 1][0] if i + 1 < len(marcas) else len(cuerpo)
-        m_sig = _SIGUIENTE_MARCADOR_CON_LENGUA.search(cuerpo, fin)
-        limite_cualquiera = m_sig.start() if m_sig else len(cuerpo)
-        hasta = min(limite_nombrado, limite_cualquiera)
+        hasta = marcas[i + 1][0] if i + 1 < len(marcas) else len(cuerpo)
         out[clave] = cuerpo[fin:hasta].strip()
         out[clave + "__titulo"] = cuerpo[ini:fin].strip("* ")
     return out

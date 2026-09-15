@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-G14",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Relative Clauses: Defining and Non-defining",
+ "categoria": "grammar",
+ "ancla": "EGP A2",
+ "descripcion": "At B2 the key distinction is between defining relative clauses (essential to identify what's being talked about) and non-defining ones (extra information, set off by commas). Getting the commas right changes the meaning, not just the punctuation.",
+ "cuadroReferencia": {
+  "titulo": "Defining vs. non-defining",
+  "columnas": [
+   "Type",
+   "Commas",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Defining",
+    "no commas",
+    "The man who called is my brother."
+   ],
+   [
+    "Non-defining",
+    "commas, extra info",
+    "My brother, who called earlier, is on his way."
+   ],
+   [
+    "Which vs. that",
+    "that only in defining clauses",
+    "The book that I read / The book, which I loved,"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The man who called earlier is my brother.",
+   "audio": true
+  },
+  {
+   "texto": "My brother, who lives in Berlin, is visiting next week.",
+   "audio": true
+  },
+  {
+   "texto": "The report that we discussed yesterday has been approved."
+  }
+ ],
+ "notas": [
+  "In a non-defining clause, removing it doesn't change who or what is being talked about — it only adds extra detail.",
+  "That cannot be used in a non-defining clause: my brother, that lives in Berlin is not standard English.",
+  "Whose works for both people and things to show possession: the company whose logo we redesigned."
+ ],
+ "contraste": {
+  "es": "El español no distingue tan claramente entre cláusulas especificativas y explicativas con comas, y que se usa para casi todo. Los hispanohablantes tienden a olvidar las comas en las cláusulas explicativas del inglés, cambiando sin querer el significado de la oración."
+ },
+ "errores": [
+  "Missing commas around a non-defining clause, which changes the meaning.",
+  "Using that in a non-defining clause.",
+  "Confusing who and which for people versus things."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…who called…",
+   "funcion": "defining, about a person",
+   "traducciones": {
+    "es": "…que llamó…",
+    "de": "…der/die angerufen hat…",
+    "fr": "…qui a appelé…",
+    "it": "…che ha chiamato…",
+    "pt": "…que ligou…"
+   }
+  },
+  {
+   "expresion": "…, who…, …",
+   "funcion": "non-defining, extra info about a person",
+   "traducciones": {
+    "es": "…, quien…, …",
+    "de": "…, der/die…, …",
+    "fr": "…, qui…, …",
+    "it": "…, che…, …",
+    "pt": "…, que…, …"
+   }
+  },
+  {
+   "expresion": "…that I read",
+   "funcion": "defining, about a thing",
+   "traducciones": {
+    "es": "…que leí",
+    "de": "…das ich gelesen habe",
+    "fr": "…que j’ai lu",
+    "it": "…che ho letto",
+    "pt": "…que li"
+   }
+  },
+  {
+   "expresion": "…, which…, …",
+   "funcion": "non-defining, extra info about a thing",
+   "traducciones": {
+    "es": "…, lo cual…, …",
+    "de": "…, was…, …",
+    "fr": "…, ce qui…, …",
+    "it": "…, il che…, …",
+    "pt": "…, o que…, …"
+   }
+  },
+  {
+   "expresion": "…whose…",
+   "funcion": "possession",
+   "traducciones": {
+    "es": "…cuyo…",
+    "de": "…dessen/deren…",
+    "fr": "…dont…",
+    "it": "…il cui/la cui…",
+    "pt": "…cujo/cuja…"
+   }
+  },
+  {
+   "expresion": "…where…",
+   "funcion": "place",
+   "traducciones": {
+    "es": "…donde…",
+    "de": "…wo…",
+    "fr": "…où…",
+    "it": "…dove…",
+    "pt": "…onde…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Are commas present around every non-defining clause?",
+  "Is that avoided in non-defining clauses?",
+  "Is who used for people and which for things?",
+  "Does removing the clause change the meaning (defining) or just remove detail (non-defining)?",
+  "Have I used both a defining and a non-defining clause?"
+ ],
+ "promptCorreccion": "Focus only on defining and non-defining relative clauses. Check the commas around non-defining clauses and the choice between that and which. Do not rewrite the text at all, just mark the issues."
+}

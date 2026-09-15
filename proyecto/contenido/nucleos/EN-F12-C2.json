@@ -1,0 +1,47 @@
+{
+ "skillId": "EN-F12", "nivel": "C2", "idioma": "en", "bilingue": false,
+ "titulo": "Persuading and Negotiating",
+ "categoria": "fluency",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 negotiation includes naming the other party's real interest before they do, which builds trust precisely because it shows you've understood their position better than a purely tactical move would require — and knowing when to concede something unprompted, before it's asked for, to change the frame of the whole exchange.",
+ "cuadroReferencia": {
+  "titulo": "Naming the interest first",
+  "columnas": ["Move", "Example"],
+  "filas": [
+   ["Name their interest first", "I suspect what actually matters to you here is timing, not price."],
+   ["Unprompted concession", "Before you ask, I can already move on the delivery date."],
+   ["Reframe the exchange", "changes it from a haggle to a joint problem"]
+  ]
+ },
+ "ejemplos": [
+  {"texto": "I suspect what actually matters to you here is timing, not price — is that fair?", "audio": true},
+  {"texto": "Before you even ask, I can move on the delivery date.", "audio": true},
+  {"texto": "Let's treat this as a shared problem rather than two sides pulling in opposite directions."}
+ ],
+ "notas": [
+  "Naming the other side's real interest before they state it, and checking it (is that fair?), demonstrates genuine understanding rather than a tactical guess.",
+  "An unprompted concession, offered before it's requested, changes the frame from adversarial bargaining to joint problem-solving.",
+  "This only works if the named interest is actually accurate — a wrong guess here damages trust more than saying nothing."
+ ],
+ "errores": [
+  "Naming an interest that's actually wrong, which reads as presumptuous rather than perceptive.",
+  "Making an unprompted concession so large it signals weakness rather than good faith.",
+  "Reframing to shared problem-solving rhetorically while still negotiating adversarially underneath."
+ ],
+ "redemittel": [
+  {"expresion": "I suspect what actually matters to you is…", "funcion": "names their real interest", "traducciones": {"es": "Sospecho que lo que realmente te importa es…"}},
+  {"expresion": "Before you ask, I can already…", "funcion": "unprompted concession", "traducciones": {"es": "Antes de que preguntes, ya puedo…"}},
+  {"expresion": "Let's treat this as a shared problem.", "funcion": "reframes the exchange", "traducciones": {"es": "Tratemos esto como un problema compartido."}},
+  {"expresion": "Is that a fair read of where you're coming from?", "funcion": "checks the named interest", "traducciones": {"es": "¿Es una lectura justa de tu posición?"}},
+  {"expresion": "That's not a concession I need you to earn.", "funcion": "signals good faith explicitly", "traducciones": {"es": "No es una concesión que necesites ganarte."}},
+  {"expresion": "What would actually solve this for both of us?", "funcion": "joint problem framing", "traducciones": {"es": "¿Qué resolvería esto para los dos?"}}
+ ],
+ "autochequeo": [
+  "Is the named interest checked, not just asserted?",
+  "Is any unprompted concession proportionate, not a signal of weakness?",
+  "Does the reframing to joint problem-solving hold up in substance, not just rhetoric?",
+  "Would the other party feel genuinely understood, not managed?",
+  "Is the tone collaborative throughout, not adversarial underneath a collaborative surface?"
+ ],
+ "promptCorreccion": "Focus only on whether the other party's interest is named accurately and checked, and whether any concession or reframing is genuine. Do not rewrite the text."
+}

@@ -1,0 +1,135 @@
+{
+ "skillId": "DE-G02",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Konnektoren (*weil, obwohl, trotzdem, deshalb, während*)",
+ "categoria": "grammar",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B1 lernt man die fünf wichtigsten Konnektoren und ihre Wortstellung: weil und obwohl schicken das Verb ans Ende, deshalb verlangt Verb-Subjekt-Umstellung, während zeigt Gegensatz oder Gleichzeitigkeit.",
+ "cuadroReferencia": {
+  "titulo": "Fünf Konnektoren",
+  "columnas": [
+   "Konnektor",
+   "Funktion",
+   "Verbposition"
+  ],
+  "filas": [
+   [
+    "weil",
+    "Grund",
+    "Ende"
+   ],
+   [
+    "obwohl",
+    "Einräumung",
+    "Ende"
+   ],
+   [
+    "trotzdem",
+    "Widerspruch",
+    "Position 2 (Hauptsatz)"
+   ],
+   [
+    "deshalb",
+    "Folge",
+    "Umstellung"
+   ],
+   [
+    "während",
+    "Gegensatz/Gleichzeitigkeit",
+    "Ende"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich bleibe zu Hause, weil ich krank bin.",
+   "audio": true
+  },
+  {
+   "texto": "Obwohl es regnet, gehen wir spazieren.",
+   "audio": true
+  },
+  {
+   "texto": "Ich habe keine Zeit, trotzdem komme ich kurz vorbei."
+  }
+ ],
+ "notas": [
+  "Weil und obwohl sind Nebensatz-Konnektoren: das Verb steht am Ende.",
+  "Trotzdem und deshalb sind keine Nebensatz-Konnektoren; nach deshalb folgt Verb-Subjekt-Umstellung.",
+  "Während kann Gegensatz (ich arbeite, während er schläft) oder reine Gleichzeitigkeit bedeuten."
+ ],
+ "contraste": {
+  "es": "Das Spanische unterscheidet nicht zwischen Nebensatz- und Hauptsatzkonnektoren, weil porque, aunque und por eso die Wortstellung nicht verändern. Diese fehlende Unterscheidung ist der Grund, warum die deutsche Wortstellung nach diesen Konnektoren besonders geübt werden muss."
+ },
+ "errores": [
+  "Nach weil oder obwohl das Verb nicht ans Ende stellen.",
+  "Nach deshalb keine Verb-Subjekt-Umstellung machen.",
+  "Trotzdem wie einen Nebensatz-Konnektor behandeln."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, weil…",
+   "funcion": "Grund",
+   "traducciones": {
+    "es": "…, porque…",
+    "en": "…, because…",
+    "fr": "…, parce que…",
+    "it": "…, perché…",
+    "pt": "…, porque…"
+   }
+  },
+  {
+   "expresion": "Obwohl…, …",
+   "funcion": "Einräumung",
+   "traducciones": {
+    "es": "Aunque…, …",
+    "en": "Although…, …"
+   }
+  },
+  {
+   "expresion": "…, trotzdem…",
+   "funcion": "Widerspruch",
+   "traducciones": {
+    "es": "…, sin embargo…",
+    "en": "…, nevertheless…"
+   }
+  },
+  {
+   "expresion": "…, deshalb…",
+   "funcion": "Folge",
+   "traducciones": {
+    "es": "…, por eso…",
+    "en": "…, that's why…",
+    "fr": "…, c’est pourquoi…",
+    "it": "…, perciò…",
+    "pt": "…, por isso…"
+   }
+  },
+  {
+   "expresion": "…, während…",
+   "funcion": "Gegensatz",
+   "traducciones": {
+    "es": "…, mientras que…",
+    "en": "…, whereas…"
+   }
+  },
+  {
+   "expresion": "…, denn…",
+   "funcion": "Grund, Hauptsatz",
+   "traducciones": {
+    "es": "…, ya que…",
+    "en": "…, for…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht nach weil und obwohl das Verb am Ende?",
+  "Ist nach deshalb die Verb-Subjekt-Umstellung vorhanden?",
+  "Habe ich mindestens drei verschiedene Konnektoren benutzt?",
+  "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?",
+  "Habe ich sowohl Nebensatz- als auch Hauptsatzkonnektoren benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konnektoren und ihre Wortstellung. Prüfen Sie jeden Konnektor auf die richtige Verbposition. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,109 @@
+{
+ "skillId": "EN-F01",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Giving and Asking for Opinions",
+ "categoria": "fluency",
+ "ancla": "CV Informal/Formal discussion",
+ "descripcion": "At B1 you give a simple, clear opinion with I think and support it with because. Asking someone else for their opinion is just as important as giving your own, and keeps a conversation from being one-sided rather than a monologue.",
+ "cuadroReferencia": {
+  "titulo": "Opinion and question",
+  "columnas": [
+   "Function",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Opinion",
+    "I think this is a good idea."
+   ],
+   [
+    "Reason",
+    "…because it's cheaper."
+   ],
+   [
+    "Asking",
+    "What do you think about it?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I think this is a really good idea.",
+   "audio": true
+  },
+  {
+   "texto": "In my opinion, it's too expensive.",
+   "audio": true
+  },
+  {
+   "texto": "What do you think about it?"
+  }
+ ],
+ "notas": [
+  "I think is neutral and works in almost any situation.",
+  "In my opinion is slightly more formal and fits a discussion.",
+  "Asking what do you think? keeps the conversation going, not just one-way."
+ ],
+ "contraste": {
+  "es": "El español expresa opiniones con creo que… de forma casi idéntica, así que la estructura básica se transfiere directamente."
+ },
+ "errores": [
+  "Giving an opinion with no reason at all.",
+  "Never asking the other person their opinion.",
+  "Combining I think and in my opinion in the same sentence."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I think…",
+   "funcion": "opinion, neutral",
+   "traducciones": {
+    "es": "Me parece que…"
+   }
+  },
+  {
+   "expresion": "In my opinion,…",
+   "funcion": "opinion, slightly formal",
+   "traducciones": {
+    "es": "En mi opinión…"
+   }
+  },
+  {
+   "expresion": "…, because…",
+   "funcion": "reason",
+   "traducciones": {
+    "es": "…, porque…"
+   }
+  },
+  {
+   "expresion": "What do you think?",
+   "funcion": "asking for an opinion",
+   "traducciones": {
+    "es": "¿Qué opinás?"
+   }
+  },
+  {
+   "expresion": "I believe that…",
+   "funcion": "opinion, alternative",
+   "traducciones": {
+    "es": "Creo que…"
+   }
+  },
+  {
+   "expresion": "Do you agree?",
+   "funcion": "checking agreement",
+   "traducciones": {
+    "es": "¿Estás de acuerdo?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I given a clear opinion?",
+  "Does a reason follow with because?",
+  "Have I asked the other person's opinion at least once?",
+  "Have I used more than one phrase, not always the same one?",
+  "Have I used more than one opinion phrase, not always I think?"
+ ],
+ "promptCorreccion": "Focus only on whether the opinion and reason are clearly connected, and whether I asked for the other person's opinion too, not only stated my own. Do not rewrite the text."
+}

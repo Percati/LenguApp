@@ -1,0 +1,136 @@
+{
+ "skillId": "DE-G16",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Genitiv und Genitivpräpositionen",
+ "categoria": "grammar",
+ "ancla": "PD B2",
+ "descripcion": "Auf B2 wird der Genitiv nach den häufigsten Präpositionen sicher gebildet: wegen, trotz, während, innerhalb. Die komplexeren Genitivketten mit mehreren Gliedern und formelleren Präpositionen wie aufgrund oder angesichts kommen erst auf C1 dazu — hier zählt vor allem die einfache, korrekte Form.",
+ "cuadroReferencia": {
+  "titulo": "Häufige Genitivpräpositionen",
+  "columnas": [
+   "Präposition",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "wegen",
+    "wegen des schlechten Wetters"
+   ],
+   [
+    "trotz",
+    "trotz der hohen Kosten"
+   ],
+   [
+    "während",
+    "während der Sitzung"
+   ],
+   [
+    "innerhalb",
+    "innerhalb einer Woche"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Wegen des schlechten Wetters ist der Flug verspätet.",
+   "audio": true
+  },
+  {
+   "texto": "Trotz der hohen Kosten haben wir uns dafür entschieden.",
+   "audio": true
+  },
+  {
+   "texto": "Innerhalb einer Woche sollte die Antwort da sein."
+  }
+ ],
+ "notas": [
+  "Wegen wird umgangssprachlich oft mit Dativ verwendet, im geschriebenen Deutsch bleibt der Genitiv Standard.",
+  "Trotz verlangt im Genitiv keine Verneinung — trotz bedeutet bereits obwohl etwas dagegen spricht.",
+  "Innerhalb und außerhalb sind auch räumlich verwendbar, nicht nur zeitlich."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keinen Genitiv als eigenen Kasus; die Entsprechung wird immer mit de gebildet (a pesar de, dentro de). Spanischsprachige müssen deshalb aktiv lernen, dass diese deutschen Präpositionen einen bestimmten Kasus verlangen, statt einfach eine feste Wendung zu übernehmen."
+ },
+ "errores": [
+  "Wegen mit Dativ statt Genitiv im geschriebenen Deutsch verwenden.",
+  "Den Artikel nach der Präposition vergessen: wegen schlechten Wetter statt wegen des schlechten Wetters.",
+  "Trotz mit einer zusätzlichen Verneinung kombinieren, was redundant ist."
+ ],
+ "redemittel": [
+  {
+   "expresion": "wegen…",
+   "funcion": "Ursache, Genitiv",
+   "traducciones": {
+    "es": "debido a…",
+    "en": "because of…",
+    "fr": "à cause de…",
+    "it": "a causa di…",
+    "pt": "por causa de…"
+   }
+  },
+  {
+   "expresion": "trotz…",
+   "funcion": "Konzession, Genitiv",
+   "traducciones": {
+    "es": "a pesar de…",
+    "en": "despite…",
+    "fr": "malgré…",
+    "it": "nonostante…",
+    "pt": "apesar de…"
+   }
+  },
+  {
+   "expresion": "während…",
+   "funcion": "Zeitraum, Genitiv",
+   "traducciones": {
+    "es": "durante…",
+    "en": "during…",
+    "fr": "pendant…",
+    "it": "durante…",
+    "pt": "durante…"
+   }
+  },
+  {
+   "expresion": "innerhalb…",
+   "funcion": "Frist oder Raum, Genitiv",
+   "traducciones": {
+    "es": "dentro de…",
+    "en": "within…",
+    "fr": "dans…",
+    "it": "all’interno di…",
+    "pt": "dentro de…"
+   }
+  },
+  {
+   "expresion": "außerhalb…",
+   "funcion": "Gegenteil von innerhalb",
+   "traducciones": {
+    "es": "fuera de…",
+    "en": "outside of…",
+    "fr": "en dehors de…",
+    "it": "al di fuori di…",
+    "pt": "fora de…"
+   }
+  },
+  {
+   "expresion": "aufgrund…",
+   "funcion": "formelle Ursache, Genitiv",
+   "traducciones": {
+    "es": "en base a…",
+    "en": "on the basis of…",
+    "fr": "sur la base de…",
+    "it": "sulla base di…",
+    "pt": "com base em…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht nach diesen Präpositionen der Genitiv, nicht der Dativ?",
+  "Ist der Artikel korrekt im Genitiv dekliniert?",
+  "Habe ich mindestens vier verschiedene Genitivpräpositionen benutzt?",
+  "Habe ich wegen nicht mit Dativ verwendet?",
+  "Ist der Artikel nach der Präposition nicht vergessen worden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Genitiv nach Präpositionen wie wegen, trotz, während und innerhalb. Prüfen Sie Kasus und Artikeldeklination in jedem Fall. Schreiben Sie den Text nicht neu."
+}

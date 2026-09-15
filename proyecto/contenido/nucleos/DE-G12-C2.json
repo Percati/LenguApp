@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-G12",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Nominalisierung und Nominalstil",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird der Nominalstil als Register-Schalter über einen ganzen Text hinweg gesteuert, nicht nur satzweise gewählt: ein Text kann bewusst mit hohem Nominalanteil beginnen, um Autorität zu etablieren, und sich zum Ende hin verbalisieren, um Nähe herzustellen.",
+ "cuadroReferencia": {
+  "titulo": "Nominalanteil über einen Text hinweg steuern",
+  "columnas": [
+   "Textabschnitt",
+   "Nominalanteil",
+   "Wirkung"
+  ],
+  "filas": [
+   [
+    "Einleitung",
+    "hoch",
+    "etabliert Autorität und Fachlichkeit"
+   ],
+   [
+    "Hauptteil",
+    "gemischt",
+    "trägt die Argumentation"
+   ],
+   [
+    "Schluss",
+    "niedrig, verbaler",
+    "stellt Nähe zum Leser her"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die Durchführung der Untersuchung erfolgte unter kontrollierten Bedingungen.",
+   "audio": true
+  },
+  {
+   "texto": "Wir haben genau hingeschaut und mehrfach nachgeprüft.",
+   "audio": true
+  },
+  {
+   "texto": "Am Ende bleibt eine einfache Frage: Was bedeutet das für uns?"
+  }
+ ],
+ "notas": [
+  "Ein Text, der durchgehend gleich nominal bleibt, wirkt auf C2-Niveau eindimensional — die Fähigkeit, den Anteil zu variieren, ist die eigentliche Kompetenz.",
+  "Der Wechsel zu einem verbaleren, persönlicheren Stil am Ende eines Fachtextes ist eine bewusste rhetorische Geste, kein Stilbruch.",
+  "Diese Steuerung setzt voraus, dass beide Stile fliessend beherrscht werden — sie war schon auf C1 einzeln verfügbar."
+ ],
+ "contraste": {
+  "es": "Das Spanische variiert den Nominalanteil innerhalb eines Textes deutlich weniger systematisch als das anspruchsvolle Deutsche. Hispanophone C2-Sprecher schreiben oft durchgehend im gleichen Register, ohne die rhetorische Wirkung eines bewussten Wechsels zu nutzen."
+ },
+ "errores": [
+  "Einen ganzen Text auf demselben Nominalanteil halten, ohne rhetorische Variation.",
+  "Den Wechsel zum verbaleren Stil so abrupt gestalten, dass er wie ein Bruch statt wie eine Geste wirkt.",
+  "Die Einleitung zu wenig nominal halten, wodurch die beabsichtigte Autorität fehlt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Die Durchführung der…erfolgte…",
+   "funcion": "hoher Nominalanteil, Einleitung",
+   "traducciones": {
+    "es": "la realización de… tuvo lugar…",
+    "en": "the carrying-out of…took place…"
+   }
+  },
+  {
+   "expresion": "Wir haben…und…",
+   "funcion": "verbaler Stil, Nähe",
+   "traducciones": {
+    "es": "hicimos… y…",
+    "en": "we did…and…"
+   }
+  },
+  {
+   "expresion": "Am Ende bleibt die Frage: …",
+   "funcion": "Übergang zu persönlichem Schluss",
+   "traducciones": {
+    "es": "al final queda la pregunta: …",
+    "en": "in the end, the question remains: …"
+   }
+  },
+  {
+   "expresion": "Die Untersuchung ergab, dass…",
+   "funcion": "nominal, Hauptteil",
+   "traducciones": {
+    "es": "la investigación reveló que…",
+    "en": "the investigation found that…"
+   }
+  },
+  {
+   "expresion": "Was heisst das nun konkret?",
+   "funcion": "Übergang, verbalisiert",
+   "traducciones": {
+    "es": "¿qué significa esto en concreto?",
+    "en": "what does that actually mean?"
+   }
+  },
+  {
+   "expresion": "Kurz und einfach gesagt: …",
+   "funcion": "bewusste Verbalisierung am Schluss",
+   "traducciones": {
+    "es": "dicho de forma simple: …",
+    "en": "put simply: …"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Variiert der Nominalanteil bewusst über den Text hinweg?",
+  "Ist die Einleitung nominal genug, um Autorität zu etablieren?",
+  "Wirkt der Wechsel zum Schluss wie eine Geste, nicht wie ein Bruch?",
+  "Würde ein Fachleser die Steuerung als bewusst empfinden?",
+  "Habe ich mindestens drei verschiedene Nominalisierungsformen benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob der Nominalanteil bewusst über den Text hinweg variiert wird und ob der Übergang zum Schluss natürlich wirkt. Schreiben Sie den Text nicht neu."
+}

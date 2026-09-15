@@ -1,0 +1,112 @@
+{
+ "skillId": "EN-K05",
+ "nivel": "C2",
+ "idioma": "en",
+ "titulo": "Phrasal Verbs, Collocation and Register Shift",
+ "categoria": "grammar",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 the register ladder from look into to investigate to conduct an inquiry into extends further: the writer can shift register mid-text on purpose, dropping into the informal end for rhetorical effect within an otherwise formal piece, and knows exactly how far that shift can go before it breaks the whole register.",
+ "cuadroReferencia": {
+  "titulo": "Deliberate register shift",
+  "columnas": [
+   "Move",
+   "Effect",
+   "Risk if overdone"
+  ],
+  "filas": [
+   [
+    "Formal text, one informal phrase",
+    "adds emphasis or dry humour",
+    "reads as a slip, not a choice"
+   ],
+   [
+    "Informal text, one formal phrase",
+    "adds mock seriousness or irony",
+    "reads as pretentious"
+   ],
+   [
+    "Sustained single register",
+    "safest, most professional default",
+    "can read as flat if never varied"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The committee conducted a thorough review — and, frankly, found a mess.",
+   "audio": true
+  },
+  {
+   "texto": "It's a great pub, though I should note it lacks any semblance of a wine list.",
+   "audio": true
+  },
+  {
+   "texto": "The report found nothing; in plainer terms, the whole exercise was wasted."
+  }
+ ],
+ "notas": [
+  "A single deliberate register shift, well placed, reads as control and personality; two or more in the same short text reads as inconsistency.",
+  "The shift works best right after a formal or technical passage, where the contrast is sharpest.",
+  "In plainer terms and frankly are useful, controlled bridges from formal to informal register."
+ ],
+ "contraste": {
+  "es": "El español académico y profesional tolera menos el cambio deliberado de registro dentro de un mismo texto que el inglés contemporáneo, donde un solo giro informal bien colocado se valora como estilo, no como descuido. Los hispanohablantes de C2 tienden a evitar el cambio de registro por completo, perdiendo un recurso retórico que el inglés profesional actual espera de un escritor experto."
+ },
+ "errores": [
+  "Shifting register more than once in a short text, which breaks consistency instead of adding effect.",
+  "Placing the informal shift somewhere it isn't set up by a preceding formal passage.",
+  "Avoiding any register shift at all, which reads as flat in a genre that expects some variation."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, and, frankly, …",
+   "funcion": "controlled shift to informal",
+   "traducciones": {
+    "es": "…, y, francamente, …"
+   }
+  },
+  {
+   "expresion": "In plainer terms, …",
+   "funcion": "bridges formal to informal",
+   "traducciones": {
+    "es": "dicho de forma más simple, …"
+   }
+  },
+  {
+   "expresion": "…, to put it mildly.",
+   "funcion": "ironic informal closer",
+   "traducciones": {
+    "es": "…, por decirlo suavemente."
+   }
+  },
+  {
+   "expresion": "…, though I should note that…",
+   "funcion": "formal aside within informal text",
+   "traducciones": {
+    "es": "…, aunque debo señalar que…"
+   }
+  },
+  {
+   "expresion": "Put simply, …",
+   "funcion": "bridges to plain language",
+   "traducciones": {
+    "es": "dicho simplemente, …"
+   }
+  },
+  {
+   "expresion": "…, which is a polite way of saying…",
+   "funcion": "signals the shift explicitly",
+   "traducciones": {
+    "es": "…, que es una manera educada de decir…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is there at most one deliberate register shift in a short text?",
+  "Is the shift set up by the surrounding register, not jarring?",
+  "Does the shift add effect rather than read as an accident?",
+  "Would an expert reader sense authorial control here?",
+  "Does the text also have a genre-appropriate baseline register, not just the shift?"
+ ],
+ "promptCorreccion": "Focus only on deliberate register shifts. Check that there's at most one, and that it's set up by the surrounding text rather than jarring. Do not rewrite the text."
+}

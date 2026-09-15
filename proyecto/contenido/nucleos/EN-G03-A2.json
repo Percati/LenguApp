@@ -1,0 +1,112 @@
+{
+ "skillId": "EN-G03",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Present Perfect vs. Past Simple",
+ "categoria": "grammar",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you introduce the present perfect for life experience (I've been to Paris) and keep the past simple for finished time (I went there in 2019). The finer rules come at B1. This is the first step towards more precise time reference at higher levels.",
+ "cuadroReferencia": {
+  "titulo": "Experience vs. finished time",
+  "columnas": [
+   "Use",
+   "Tense",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Life experience",
+    "present perfect",
+    "I've been to Paris."
+   ],
+   [
+    "Finished time",
+    "past simple",
+    "I went there in 2019."
+   ],
+   [
+    "Asking when",
+    "past simple",
+    "When did you go?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I've been to Paris twice.",
+   "audio": true
+  },
+  {
+   "texto": "I went there in 2019 with my family.",
+   "audio": true
+  },
+  {
+   "texto": "When did you go?"
+  }
+ ],
+ "notas": [
+  "Have/has + been to is a very common pattern for experience.",
+  "A specific past date or time word (in 2019, last year) needs the past simple.",
+  "When always takes the past simple."
+ ],
+ "contraste": {
+  "es": "En muchas variantes del español latinoamericano se prefiere el pretérito indefinido incluso para experiencias, así que el present perfect inglés puede sentirse poco natural al principio."
+ },
+ "errores": [
+  "Using the present perfect with a specific past date.",
+  "Using the past simple for general life experience."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I've been to…",
+   "funcion": "life experience",
+   "traducciones": {
+    "es": "He estado en…"
+   }
+  },
+  {
+   "expresion": "I went to…in…",
+   "funcion": "finished time",
+   "traducciones": {
+    "es": "Fui a… en…"
+   }
+  },
+  {
+   "expresion": "Have you ever…?",
+   "funcion": "asking about experience",
+   "traducciones": {
+    "es": "¿Alguna vez has…?"
+   }
+  },
+  {
+   "expresion": "When did you…?",
+   "funcion": "asking when",
+   "traducciones": {
+    "es": "¿Cuándo…?"
+   }
+  },
+  {
+   "expresion": "I've never…",
+   "funcion": "negative experience",
+   "traducciones": {
+    "es": "Nunca he…"
+   }
+  },
+  {
+   "expresion": "Last year, I…",
+   "funcion": "finished time opener",
+   "traducciones": {
+    "es": "El año pasado, yo…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the present perfect used for experience, without a specific date?",
+  "Is the past simple used with a specific time?",
+  "Is the past simple used after when?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on present perfect versus past simple. Check whether a specific time word forces the past simple. Do not rewrite the text. Flag any confusion between the two."
+}

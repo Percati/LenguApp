@@ -1,0 +1,137 @@
+{
+ "skillId": "DE-G11",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Relativsätze",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C1",
+ "descripcion": "Auf C1 treten die selteneren Relativkonstruktionen hinzu: der Relativsatz mit vorangestelltem Präpositionalobjekt (in welchem Fall), der weiterführende Relativsatz mit was, und vor allem der Relativsatz mit Genitivpräposition (innerhalb dessen). Der einfache Relativsatz gilt als bekannt.",
+ "cuadroReferencia": {
+  "titulo": "Erweiterte Relativkonstruktionen",
+  "columnas": [
+   "Konstruktion",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Genitivpräposition + dessen/deren",
+    "ein Projekt, innerhalb dessen mehrere Teams arbeiten"
+   ],
+   [
+    "weiterführend mit was",
+    "Er kam zu spät, was niemanden überraschte."
+   ],
+   [
+    "Superlativ + Relativsatz mit was",
+    "Das Beste, was mir passieren konnte"
+   ],
+   [
+    "Präposition + welcher (gehoben)",
+    "der Grund, aus welchem sie sich entschied"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Es handelt sich um ein Projekt, innerhalb dessen mehrere Teams zusammenarbeiten.",
+   "audio": true
+  },
+  {
+   "texto": "Er kam wieder zu spät, was inzwischen niemanden mehr überraschte.",
+   "audio": true
+  },
+  {
+   "texto": "Das war das Beste, was mir in diesem Jahr passieren konnte."
+  }
+ ],
+ "notas": [
+  "Der weiterführende Relativsatz mit was bezieht sich auf den ganzen vorangegangenen Satz, nicht auf ein einzelnes Nomen — das unterscheidet ihn vom normalen Relativsatz mit das.",
+  "Welcher als Relativpronomen ist auf C1 noch seltener als auf B2 und wirkt fast ausschliesslich in juristischen oder sehr formellen Texten natürlich.",
+  "Innerhalb dessen, aufgrund dessen und infolgedessen sind feste Kombinationen mit Genitivpräpositionen, die im Fachtext häufig vorkommen."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat für den weiterführenden Relativsatz mit was keine strukturelle Entsprechung; lo que kommt nahe, wird aber seltener genutzt, um einen ganzen vorherigen Satz zusammenzufassen. Spanischsprachige formulieren stattdessen oft einen neuen Hauptsatz mit esto.",
+  "en": "English has a close parallel with which used non-restrictively to refer to a whole clause (he was late again, which surprised no one), so this specific construction transfers very naturally — the genitive-preposition forms (innerhalb dessen) are the harder part, since English simply repeats the noun instead."
+ },
+ "errores": [
+  "Das statt was für den weiterführenden Relativsatz verwenden.",
+  "Dessen und deren nach der Präposition vergessen und stattdessen den Artikel wiederholen.",
+  "Welcher in einem informellen Kontext verwenden, wo es unnatürlich gestelzt wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, innerhalb dessen…",
+   "funcion": "Genitivpräposition, formell",
+   "traducciones": {
+    "es": "…, dentro del cual…",
+    "en": "…, within which…",
+    "fr": "…, à l’intérieur duquel…",
+    "it": "…, all’interno del quale…",
+    "pt": "…, dentro do qual…"
+   }
+  },
+  {
+   "expresion": "…, was niemanden überraschte.",
+   "funcion": "weiterführender Relativsatz",
+   "traducciones": {
+    "es": "…, lo cual no sorprendió a nadie.",
+    "en": "…, which surprised no one.",
+    "fr": "…, ce qui n’a surpris personne.",
+    "it": "…, cosa che non ha sorpreso nessuno.",
+    "pt": "…, o que não surpreendeu ninguém."
+   }
+  },
+  {
+   "expresion": "Das Beste, was…",
+   "funcion": "Superlativ + was",
+   "traducciones": {
+    "es": "Lo mejor que…",
+    "en": "The best thing that…",
+    "fr": "Le meilleur de ce que…",
+    "it": "La cosa migliore che…",
+    "pt": "O melhor que…"
+   }
+  },
+  {
+   "expresion": "…, aufgrund dessen…",
+   "funcion": "Ursache, formell",
+   "traducciones": {
+    "es": "…, en base a lo cual…",
+    "en": "…, on the basis of which…",
+    "fr": "…, sur la base de quoi…",
+    "it": "…, sulla base del quale…",
+    "pt": "…, com base no qual…"
+   }
+  },
+  {
+   "expresion": "der Grund, aus welchem…",
+   "funcion": "sehr formell, juristisch",
+   "traducciones": {
+    "es": "el motivo por el cual…",
+    "en": "the reason for which…",
+    "fr": "la raison pour laquelle…",
+    "it": "il motivo per cui…",
+    "pt": "o motivo pelo qual…"
+   }
+  },
+  {
+   "expresion": "…, was wiederum bedeutet, dass…",
+   "funcion": "Kettenfolge von Konsequenzen",
+   "traducciones": {
+    "es": "…, lo cual a su vez significa que…",
+    "en": "…, which in turn means that…",
+    "fr": "…, ce qui signifie à son tour que…",
+    "it": "…, il che a sua volta significa che…",
+    "pt": "…, o que, por sua vez, significa que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich was statt das benutzt, wenn sich der Relativsatz auf den ganzen Satz bezieht?",
+  "Steht nach der Genitivpräposition dessen oder deren, nicht der Artikel?",
+  "Ist welcher nur in einem passend formellen Kontext eingesetzt?",
+  "Bezieht sich was auf den ganzen Satz und nicht auf ein einzelnes Nomen?",
+  "Ist das Register des ganzen Textes mit welcher konsistent?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die erweiterten Relativkonstruktionen: weiterführendes was, Genitivpräpositionen, welcher. Prüfen Sie jeden Fall auf die richtige Form. Schreiben Sie den Text nicht neu."
+}

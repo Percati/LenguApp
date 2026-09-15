@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-G19",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Word Order and Adverb Placement",
+ "categoria": "grammar",
+ "ancla": "EGP A1-C2",
+ "descripcion": "At C1 the focus is on adverbs that shift the meaning of the whole sentence depending on their position: only, even, just. Placed differently, the same words emphasise a different part of the sentence entirely — a precision tool, not just a rule to follow.",
+ "cuadroReferencia": {
+  "titulo": "Position changes the meaning",
+  "columnas": [
+   "Position",
+   "Example",
+   "What's emphasised"
+  ],
+  "filas": [
+   [
+    "Before the subject",
+    "Only she noticed the mistake.",
+    "no one else did"
+   ],
+   [
+    "Before the verb",
+    "She only noticed the mistake.",
+    "she didn't fix it, just noticed"
+   ],
+   [
+    "Before the object",
+    "She noticed only the mistake.",
+    "nothing else"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Only the manager was informed about the change.",
+   "audio": true
+  },
+  {
+   "texto": "She had only just started when the call came in.",
+   "audio": true
+  },
+  {
+   "texto": "Even the experts couldn't explain it."
+  }
+ ],
+ "notas": [
+  "Moving only one word changes which part of the sentence is being restricted or emphasised.",
+  "Even goes directly before the element it emphasises, whether that's the subject, the verb or the object.",
+  "In careful writing, these adverbs are placed precisely; in speech, intonation often does some of the work instead."
+ ],
+ "contraste": {
+  "es": "El español logra este mismo efecto de énfasis reordenando la oración o usando solo de forma más flexible, sin que la posición cambie tan sistemáticamente el significado. Los hispanohablantes tienden a poner only al principio de la oración por defecto, perdiendo la posibilidad de enfocar una palabra específica en medio de la frase."
+ },
+ "errores": [
+  "Always placing only at the start of the sentence, regardless of what should actually be emphasised.",
+  "Misplacing even so it modifies the wrong part of the sentence.",
+  "Relying on intonation alone in writing, where position is what actually carries the meaning."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Only X…",
+   "funcion": "restricts the subject",
+   "traducciones": {
+    "es": "Solo X…",
+    "de": "Nur X…",
+    "fr": "Seulement X…",
+    "it": "Solo X…",
+    "pt": "Só X…"
+   }
+  },
+  {
+   "expresion": "…only…",
+   "funcion": "restricts the verb or action",
+   "traducciones": {
+    "es": "…solo…",
+    "de": "…nur…",
+    "fr": "…seulement…",
+    "it": "…solo…",
+    "pt": "…apenas…"
+   }
+  },
+  {
+   "expresion": "…only X.",
+   "funcion": "restricts the object",
+   "traducciones": {
+    "es": "…solo X.",
+    "de": "…nur X.",
+    "fr": "…seulement X.",
+    "it": "…solo X.",
+    "pt": "…apenas X."
+   }
+  },
+  {
+   "expresion": "Even X…",
+   "funcion": "emphasises an extreme case",
+   "traducciones": {
+    "es": "Incluso X…",
+    "de": "Sogar X…",
+    "fr": "Même X…",
+    "it": "Perfino X…",
+    "pt": "Até X…"
+   }
+  },
+  {
+   "expresion": "She had just…",
+   "funcion": "very recent action",
+   "traducciones": {
+    "es": "Ella acababa de…",
+    "de": "Sie hatte gerade…",
+    "fr": "Elle venait de…",
+    "it": "Aveva appena…",
+    "pt": "Ela tinha acabado de…"
+   }
+  },
+  {
+   "expresion": "…, of all people.",
+   "funcion": "emphasises surprise about who",
+   "traducciones": {
+    "es": "…, precisamente.",
+    "de": "…, ausgerechnet.",
+    "fr": "…, de tous les gens.",
+    "it": "…, proprio lui/lei.",
+    "pt": "…, logo essa pessoa."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Does the position of only match what I actually want to restrict?",
+  "Is even placed directly before the element it emphasises?",
+  "Would moving the adverb change the intended meaning?",
+  "Have I used position rather than relying only on intonation in writing?",
+  "Are at least three different positions of these adverbs used deliberately?"
+ ],
+ "promptCorreccion": "Focus only on the position of only, even and just. Check whether each position matches the intended emphasis and flag any sentence where the position seems accidental. Do not rewrite the text."
+}

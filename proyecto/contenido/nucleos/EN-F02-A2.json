@@ -1,0 +1,108 @@
+{
+ "skillId": "EN-F02",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Agreeing and Disagreeing",
+ "categoria": "fluency",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you agree with I agree or disagree with I don't agree, in a simple and clear way. This basic skill is the foundation for more complex discussion at higher levels. Softer, graded disagreement comes at higher levels.",
+ "cuadroReferencia": {
+  "titulo": "Simple agreement",
+  "columnas": [
+   "Function",
+   "Phrase"
+  ],
+  "filas": [
+   [
+    "Agreement",
+    "I agree."
+   ],
+   [
+    "Disagreement",
+    "I don't agree."
+   ],
+   [
+    "Unsure",
+    "Maybe."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Yes, I agree with that.",
+   "audio": true
+  },
+  {
+   "texto": "No, I don't agree.",
+   "audio": true
+  },
+  {
+   "texto": "Maybe, I'm not sure."
+  }
+ ],
+ "notas": [
+  "I agree is the simplest way to show agreement.",
+  "I don't agree is direct but still polite.",
+  "Maybe works well when you're not sure."
+ ],
+ "contraste": {
+  "es": "El español expresa acuerdo y desacuerdo de forma directa y muy similar, así que la estructura se transfiere sin dificultad."
+ },
+ "errores": [
+  "Only saying yes or no without any phrase.",
+  "Not knowing how to say maybe."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I agree.",
+   "funcion": "agreement",
+   "traducciones": {
+    "es": "Estoy de acuerdo."
+   }
+  },
+  {
+   "expresion": "I don't agree.",
+   "funcion": "disagreement",
+   "traducciones": {
+    "es": "No estoy de acuerdo."
+   }
+  },
+  {
+   "expresion": "Maybe.",
+   "funcion": "unsure",
+   "traducciones": {
+    "es": "Tal vez."
+   }
+  },
+  {
+   "expresion": "Me too.",
+   "funcion": "agreement, informal",
+   "traducciones": {
+    "es": "Yo también."
+   }
+  },
+  {
+   "expresion": "I don't know.",
+   "funcion": "no opinion",
+   "traducciones": {
+    "es": "No sé."
+   }
+  },
+  {
+   "expresion": "Exactly!",
+   "funcion": "strong agreement",
+   "traducciones": {
+    "es": "¡Exacto!"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I clearly said whether I agree or not?",
+  "Have I used more than one phrase?",
+  "Does the phrase sound natural?",
+  "Does the phrase sound natural?",
+  "Does the phrase sound natural?"
+ ],
+ "promptCorreccion": "Focus only on agreeing and disagreeing clearly. Do not rewrite the text. Check whether more than one phrase was used, not just the same one repeated. Check the tone stays polite."
+}

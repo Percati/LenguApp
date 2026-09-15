@@ -1,0 +1,112 @@
+{
+ "skillId": "EN-K06",
+ "nivel": "C2",
+ "idioma": "en",
+ "titulo": "Reported Speech, Backshift and Hedged Attribution",
+ "categoria": "grammar",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 the three layers of distance are calibrated to legal and journalistic risk: the choice between allegedly and reportedly can carry defamation implications, and the decision to backshift or not can itself signal whether a claim is still considered true. This is precision as professional responsibility, not just style.",
+ "cuadroReferencia": {
+  "titulo": "Distance as legal and editorial signal",
+  "columnas": [
+   "Choice",
+   "Implication"
+  ],
+  "filas": [
+   [
+    "allegedly",
+    "implies wrongdoing not yet proven — carries legal weight"
+   ],
+   [
+    "reportedly",
+    "distances from a claim without implying guilt"
+   ],
+   [
+    "No backshift (he says he is…)",
+    "the claim is treated as still current and possibly true"
+   ],
+   [
+    "Full backshift (he said he was…)",
+    "distances the claim in time, sometimes implying doubt now"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The company allegedly falsified the safety records.",
+   "audio": true
+  },
+  {
+   "texto": "Officials reportedly discussed the matter last week.",
+   "audio": true
+  },
+  {
+   "texto": "He maintains that he is innocent."
+  }
+ ],
+ "notas": [
+  "Allegedly is the standard word for an accusation not yet proven in court — using it carelessly, or omitting it where wrongdoing is implied, carries real editorial and legal risk.",
+  "Choosing not to backshift (he says he is, not he said he was) signals that the reporter still considers the claim potentially current, not just historical.",
+  "This calibration is what separates careful journalism and legal writing from a merely grammatically correct report."
+ ],
+ "contraste": {
+  "es": "El español usa presuntamente de forma bastante similar a allegedly, así que el concepto legal es familiar. La distinción inglesa entre mantener o cambiar el tiempo verbal como señal editorial deliberada, sin embargo, no tiene un equivalente tan explícito en español, donde el cambio de tiempo es más automático y menos cargado de intención."
+ },
+ "errores": [
+  "Omitting allegedly where an accusation of wrongdoing is being reported as fact.",
+  "Backshifting automatically without considering whether the claim should read as still current.",
+  "Confusing allegedly and reportedly, which carry different legal and editorial weight."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…allegedly…",
+   "funcion": "unproven wrongdoing, legal weight",
+   "traducciones": {
+    "es": "…presuntamente…"
+   }
+  },
+  {
+   "expresion": "…reportedly…",
+   "funcion": "distances without implying guilt",
+   "traducciones": {
+    "es": "…según se informa…"
+   }
+  },
+  {
+   "expresion": "He maintains that he is…",
+   "funcion": "no backshift, claim treated as current",
+   "traducciones": {
+    "es": "sostiene que es…"
+   }
+  },
+  {
+   "expresion": "He claimed he had been…",
+   "funcion": "full backshift, distanced",
+   "traducciones": {
+    "es": "afirmó que había sido…"
+   }
+  },
+  {
+   "expresion": "…, according to unconfirmed reports.",
+   "funcion": "explicit uncertainty of the source",
+   "traducciones": {
+    "es": "…, según informes no confirmados."
+   }
+  },
+  {
+   "expresion": "The allegations remain unproven.",
+   "funcion": "closes with the legal caveat",
+   "traducciones": {
+    "es": "las acusaciones siguen sin probarse."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is allegedly used precisely where wrongdoing is implied but unproven?",
+  "Is the backshift decision deliberate, signalling whether the claim is still current?",
+  "Are allegedly and reportedly correctly distinguished?",
+  "Would this wording survive legal or editorial scrutiny in a professional publication?",
+  "Would an editor or lawyer flag anything here as risky?"
+ ],
+ "promptCorreccion": "Focus only on the legal and editorial precision of hedged attribution. Check allegedly versus reportedly and whether the backshift decision is deliberate. Do not rewrite the text."
+}

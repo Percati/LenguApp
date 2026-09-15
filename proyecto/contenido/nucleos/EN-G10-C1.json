@@ -1,0 +1,141 @@
+{
+ "skillId": "EN-G10",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Modals of Deduction",
+ "categoria": "grammar",
+ "ancla": "EGP B1/B2",
+ "descripcion": "At C1 the modal perfect of deduction (must have, might have, can't have) is expected to appear in extended reasoning, not just single sentences: a chain that builds from strong certainty down to a dismissed possibility. The forms are B1/B2; the skill here is sequencing several of them to reconstruct what probably happened.",
+ "cuadroReferencia": {
+  "titulo": "The certainty ladder in a chain",
+  "columnas": [
+   "Certainty",
+   "Form",
+   "Function in a chain"
+  ],
+  "filas": [
+   [
+    "Near-certain",
+    "must have + participle",
+    "the conclusion the evidence points to"
+   ],
+   [
+    "Possible",
+    "may/might have + participle",
+    "an alternative not ruled out"
+   ],
+   [
+    "Ruled out",
+    "can't have + participle",
+    "eliminates an option"
+   ],
+   [
+    "Should have",
+    "expected but didn't happen",
+    "marks a gap in what was expected"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She must have left early — her desk was already cleared by nine.",
+   "audio": true
+  },
+  {
+   "texto": "It might have been a scheduling error, though it can't have been deliberate given the history.",
+   "audio": true
+  },
+  {
+   "texto": "They should have been notified, but clearly weren't."
+  }
+ ],
+ "notas": [
+  "A strong C1 answer usually moves through the ladder: state the near-certain deduction, note what it doesn't rule out, then eliminate the least likely option.",
+  "Should have here is not advice — it marks something that was expected to happen and didn't, which is a distinct deductive move.",
+  "Stacking two modals in one sentence (it must have possibly been) is not standard English; keep one modal per clause."
+ ],
+ "contraste": {
+  "es": "El español expresa deducción con deber de + infinitivo o con el futuro de probabilidad (será por eso), pero rara vez encadena varias deducciones seguidas construyendo un argumento completo, como hace el inglés con must have / might have / can't have en la misma explicación. Los hispanohablantes tienden a usar solo una deducción aislada donde el inglés espera una cadena."
+ },
+ "errores": [
+  "Stacking two modal verbs in one clause instead of one per clause.",
+  "Using should have as advice when the context calls for the deductive, gap-marking sense.",
+  "Stopping at one modal of deduction where the reasoning calls for a chain that also rules something out."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…must have…",
+   "funcion": "near-certain deduction",
+   "traducciones": {
+    "es": "debe de haber…",
+    "de": "…muss… gehabt haben",
+    "fr": "…a dû avoir…",
+    "it": "…deve aver…",
+    "pt": "…deve ter tido…"
+   }
+  },
+  {
+   "expresion": "It might have been…, though…",
+   "funcion": "possibility, then a limit on it",
+   "traducciones": {
+    "es": "podría haber sido…, aunque…",
+    "de": "Es könnte… gewesen sein, allerdings…",
+    "fr": "Cela aurait pu être…, mais…",
+    "it": "Potrebbe essere stato…, però…",
+    "pt": "Pode ter sido…, embora…"
+   }
+  },
+  {
+   "expresion": "…can't have…",
+   "funcion": "rules out a possibility",
+   "traducciones": {
+    "es": "no puede haber…",
+    "de": "…kann nicht… haben",
+    "fr": "…ne peut pas avoir…",
+    "it": "…non può aver…",
+    "pt": "…não pode ter…"
+   }
+  },
+  {
+   "expresion": "…should have…, but clearly didn't.",
+   "funcion": "marks an expectation gap",
+   "traducciones": {
+    "es": "debería haber…, pero claramente no…",
+    "de": "…hätte… sollen, hat es aber offensichtlich nicht.",
+    "fr": "…aurait dû…, mais ne l’a manifestement pas fait.",
+    "it": "…avrebbe dovuto…, ma chiaramente non l’ha fatto.",
+    "pt": "…deveria ter…, mas claramente não o fez."
+   }
+  },
+  {
+   "expresion": "Given that, it's unlikely that…",
+   "funcion": "narrows the chain further",
+   "traducciones": {
+    "es": "dado eso, es poco probable que…",
+    "de": "Angesichts dessen ist es unwahrscheinlich, dass…",
+    "fr": "Compte tenu de cela, il est peu probable que…",
+    "it": "Detto questo, è improbabile che…",
+    "pt": "Dado isso, é pouco provável que…"
+   }
+  },
+  {
+   "expresion": "The most likely explanation is that…",
+   "funcion": "closes the chain",
+   "traducciones": {
+    "es": "la explicación más probable es que…",
+    "de": "Die wahrscheinlichste Erklärung ist, dass…",
+    "fr": "L’explication la plus probable est que…",
+    "it": "La spiegazione più probabile è che…",
+    "pt": "A explicação mais provável é que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is there a clear chain from near-certain to ruled out, not just one isolated modal?",
+  "Is should have used in its deductive, gap-marking sense where intended?",
+  "Is each clause carrying only one modal verb?",
+  "Does the chain end by narrowing to the most likely explanation?",
+  "Are the participles correct throughout?"
+ ],
+ "promptCorreccion": "Focus only on modals of deduction used as a reasoning chain. Check whether the certainty ladder is used correctly and whether should have is deductive rather than advisory. Do not rewrite the text."
+}

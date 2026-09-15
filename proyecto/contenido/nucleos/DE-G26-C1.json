@@ -1,0 +1,141 @@
+{
+ "skillId": "DE-G26",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Valenz: Verben und Nomen mit Ergänzungen",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C1/C2",
+ "descripcion": "Jedes Verb und viele Nomen verlangen bestimmte Ergänzungen mit einer festen Präposition und einem festen Kasus, die nicht aus der Bedeutung ableitbar sind. Auf C1 wird das systematisch bewusst gemacht: nicht nur einzelne Verben lernen, sondern die Ergänzung als Teil der Bedeutung verstehen.",
+ "cuadroReferencia": {
+  "titulo": "Valenz bei Verb und Nomen",
+  "columnas": [
+   "Wort",
+   "Ergänzung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "sich beziehen auf",
+    "+ Akk.",
+    "Das bezieht sich auf den vorigen Punkt."
+   ],
+   [
+    "die Sorge um",
+    "+ Akk.",
+    "die Sorge um die Zukunft"
+   ],
+   [
+    "angewiesen sein auf",
+    "+ Akk.",
+    "Wir sind auf Unterstützung angewiesen."
+   ],
+   [
+    "der Anspruch auf",
+    "+ Akk.",
+    "der Anspruch auf Entschädigung"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das bezieht sich auf den Punkt, den wir vorhin besprochen haben.",
+   "audio": true
+  },
+  {
+   "texto": "Wir sind bei diesem Projekt stark auf externe Unterstützung angewiesen.",
+   "audio": true
+  },
+  {
+   "texto": "Sie hat Anspruch auf eine angemessene Entschädigung."
+  }
+ ],
+ "notas": [
+  "Die Ergänzung eines Nomens (der Anspruch auf, die Sorge um) folgt oft der Ergänzung des verwandten Verbs, aber nicht immer — jede muss einzeln geprüft werden.",
+  "Angewiesen sein auf ist eine feste Wendung, die weder durch angewiesen sein von noch durch eine andere Präposition ersetzt werden kann.",
+  "Diese Valenzstrukturen sind der Hauptgrund, warum Wörterbücher bei fortgeschrittenen Lernern Rektionsangaben brauchen."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat für viele dieser Verben und Nomen andere feste Präpositionen (depender de statt angewiesen sein auf), sodass keine Eins-zu-eins-Übertragung möglich ist. Jede Valenzstruktur muss deshalb im Deutschen einzeln und unabhängig vom spanischen Äquivalent gelernt werden."
+ },
+ "errores": [
+  "Die Präposition des spanischen Äquivalents ins Deutsche übertragen.",
+  "Den Kasus nach der richtigen Präposition falsch wählen.",
+  "Die Ergänzung eines Nomens anders bilden als die des verwandten Verbs, ohne das zu prüfen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "sich beziehen auf",
+   "funcion": "Verb mit fester Präposition",
+   "traducciones": {
+    "es": "referirse a",
+    "en": "to refer to",
+    "fr": "se référer à",
+    "it": "riferirsi a",
+    "pt": "referir-se a"
+   }
+  },
+  {
+   "expresion": "angewiesen sein auf",
+   "funcion": "feste Wendung",
+   "traducciones": {
+    "es": "depender de",
+    "en": "to be dependent on",
+    "fr": "dépendre de",
+    "it": "dipendere da",
+    "pt": "depender de"
+   }
+  },
+  {
+   "expresion": "der Anspruch auf",
+   "funcion": "Nomen mit fester Präposition",
+   "traducciones": {
+    "es": "el derecho a",
+    "en": "the claim/entitlement to",
+    "fr": "le droit à",
+    "it": "il diritto a",
+    "pt": "o direito a"
+   }
+  },
+  {
+   "expresion": "die Sorge um",
+   "funcion": "Nomen mit fester Präposition",
+   "traducciones": {
+    "es": "la preocupación por",
+    "en": "the concern about",
+    "fr": "l’inquiétude concernant",
+    "it": "la preoccupazione per",
+    "pt": "a preocupação com"
+   }
+  },
+  {
+   "expresion": "verantwortlich sein für",
+   "funcion": "Adjektiv mit fester Präposition",
+   "traducciones": {
+    "es": "ser responsable de",
+    "en": "to be responsible for",
+    "fr": "être responsable de",
+    "it": "essere responsabile di",
+    "pt": "ser responsável por"
+   }
+  },
+  {
+   "expresion": "die Notwendigkeit von/für",
+   "funcion": "Nomen, Präposition je nach Nuance",
+   "traducciones": {
+    "es": "la necesidad de",
+    "en": "the necessity of/for",
+    "fr": "la nécessité de",
+    "it": "la necessità di",
+    "pt": "a necessidade de"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Stimmt die Präposition bei jedem Verb und Nomen?",
+  "Ist der Kasus nach der Präposition korrekt?",
+  "Habe ich mindestens vier verschiedene Valenzstrukturen benutzt?",
+  "Habe ich die Präposition nicht aus dem Spanischen übertragen?",
+  "Habe ich bei Nomen und dem verwandten Verb dieselbe oder eine andere Präposition geprüft?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Valenz von Verben und Nomen: Präposition und Kasus. Prüfen Sie jeden Fall einzeln. Schreiben Sie den Text nicht neu."
+}

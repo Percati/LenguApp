@@ -1,0 +1,108 @@
+{
+ "skillId": "EN-F10",
+ "nivel": "C2",
+ "idioma": "en",
+ "titulo": "Speculating and Predicting",
+ "categoria": "fluency",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 a prediction is built as a scenario tree: naming the most likely path, at least one credible alternative, and the specific signal that would tell you which one is actually happening. This is speculation as structured analysis, not a single graded guess.",
+ "cuadroReferencia": {
+  "titulo": "The scenario tree",
+  "columnas": [
+   "Element",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Most likely path",
+    "The most probable outcome is a gradual decline."
+   ],
+   [
+    "Credible alternative",
+    "Though a sharper correction can't be excluded."
+   ],
+   [
+    "Deciding signal",
+    "The key thing to watch is whether demand holds through the next quarter."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The most probable outcome is a gradual decline, though a sharper correction can't be excluded.",
+   "audio": true
+  },
+  {
+   "texto": "The key thing to watch is whether demand holds through the next quarter.",
+   "audio": true
+  },
+  {
+   "texto": "If that indicator turns, the whole picture changes."
+  }
+ ],
+ "notas": [
+  "Naming a deciding signal turns a prediction into something falsifiable and useful, not just a guess.",
+  "Can't be excluded is a precise, understated way to keep a less likely scenario genuinely on the table.",
+  "This structure is expected in expert commentary — a prediction with no alternative scenario reads as overconfident."
+ ],
+ "contraste": {
+  "es": "El español de análisis experto construye escenarios de forma similar, así que el concepto es transferible. Lo que suele faltar en el repertorio de un hispanohablante de C2 es el vocabulario preciso en inglés para nombrar la señal decisiva —the key thing to watch— en vez de dejar el escenario alternativo sin ningún criterio de verificación."
+ },
+ "errores": [
+  "Naming an alternative scenario without any signal that would distinguish it from the main one.",
+  "Presenting only the most likely path, with no genuine alternative considered.",
+  "Using can't be excluded for something that's actually just as likely as the main scenario, understating it unfairly."
+ ],
+ "redemittel": [
+  {
+   "expresion": "The most probable outcome is…",
+   "funcion": "names the main path",
+   "traducciones": {
+    "es": "el resultado más probable es…"
+   }
+  },
+  {
+   "expresion": "…can't be excluded.",
+   "funcion": "keeps an alternative on the table",
+   "traducciones": {
+    "es": "…no se puede excluir."
+   }
+  },
+  {
+   "expresion": "The key thing to watch is…",
+   "funcion": "names the deciding signal",
+   "traducciones": {
+    "es": "lo clave a observar es…"
+   }
+  },
+  {
+   "expresion": "If that turns, the picture changes.",
+   "funcion": "conditional pivot",
+   "traducciones": {
+    "es": "si eso cambia, el panorama cambia."
+   }
+  },
+  {
+   "expresion": "A less likely but still credible scenario is…",
+   "funcion": "names a real alternative",
+   "traducciones": {
+    "es": "un escenario menos probable pero creíble es…"
+   }
+  },
+  {
+   "expresion": "This will largely hinge on…",
+   "funcion": "names the deciding factor",
+   "traducciones": {
+    "es": "esto dependerá en gran medida de…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is a most-likely path named clearly?",
+  "Is at least one credible alternative included, not just a token mention?",
+  "Is there a specific, checkable signal that would distinguish the scenarios?",
+  "Would an expert in this field find the analysis structured, not just a guess?",
+  "Have I avoided hedging so much that the analysis says nothing useful?"
+ ],
+ "promptCorreccion": "Focus only on the scenario structure: main path, alternative, deciding signal. Check whether the alternative is genuinely credible and the signal genuinely checkable. Do not rewrite the text."
+}

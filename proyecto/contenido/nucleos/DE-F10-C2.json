@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-F10",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Abschwächen und relativieren",
+ "categoria": "fluency",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird die Abschwächungsskala so fein kalibriert, dass ein einzelnes Wort einem Fachpublikum einen präzisen Punkt auf der Sicherheitsskala signalisiert: lässt sich nicht ausschliessen bedeutet etwas anderes als dürfte eher unwahrscheinlich sein, und die Wahl zwischen beiden ist selbst eine fachliche Aussage.",
+ "cuadroReferencia": {
+  "titulo": "Eine feinere Sicherheitsskala",
+  "columnas": [
+   "Formel",
+   "Implizierte Sicherheit"
+  ],
+  "filas": [
+   [
+    "lässt sich nicht ausschliessen",
+    "gering, aber nicht null — wert, erwähnt zu werden"
+   ],
+   [
+    "dürfte eher unwahrscheinlich sein",
+    "gering, aber nicht ausgeschlossen"
+   ],
+   [
+    "es spricht wenig dafür, dass",
+    "sehr gering, deutlich abgelehnt"
+   ]
+  ],
+  "notaPie": "Diese Unterscheidungen sind vor allem für Fachleser relevant; ein allgemeines Publikum registriert den Unterschied oft nicht — genau das macht die Wahl zu einem Signal von Expertise."
+ },
+ "ejemplos": [
+  {
+   "texto": "Ein Störfaktor lässt sich zum jetzigen Zeitpunkt nicht ausschliessen.",
+   "audio": true
+  },
+  {
+   "texto": "Ein saisonaler Effekt dürfte eher unwahrscheinlich sein.",
+   "audio": true
+  },
+  {
+   "texto": "Es spricht wenig dafür, dass der Zusammenhang kausal ist."
+  }
+ ],
+ "notas": [
+  "Lässt sich nicht ausschliessen ist schwächer als ist möglich — es signalisiert, dass etwas nicht ausgeschlossen wurde, ohne es für wahrscheinlich zu halten.",
+  "Dürfte eher unwahrscheinlich sein liegt knapp unter einer klaren Ablehnung und lässt bewusst eine Restmöglichkeit offen.",
+  "Diese Wahl signalisiert Fachkompetenz gerade dadurch, dass ein allgemeines Publikum den feinen Unterschied nicht bemerkt."
+ ],
+ "contraste": {
+  "es": "Das kultivierte Spanisch stützt sich stärker auf den condicional (podría no descartarse), um mehrere dieser Nuancen gleichzeitig abzudecken. Hispanophone C2-Sprecher neigen dazu, diese feine Skala auf zwei oder drei Optionen zu reduzieren und damit das genaue Sicherheitssignal zu verlieren, das ein Fachleser im Deutschen erwartet."
+ },
+ "errores": [
+  "Eine stärkere Abschwächung wählen, als die Evidenz tatsächlich hergibt, oder umgekehrt.",
+  "Lässt sich nicht ausschliessen und ist möglich als austauschbar behandeln, obwohl sie unterschiedliche Sicherheitsgrade implizieren.",
+  "Es spricht wenig dafür so verwenden, als wäre es eine vollständige Ablehnung, was es nicht ist."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…lässt sich nicht ausschliessen.",
+   "funcion": "geringe, nicht-null Wahrscheinlichkeit",
+   "traducciones": {
+    "es": "no se puede descartar…",
+    "en": "…cannot be ruled out"
+   }
+  },
+  {
+   "expresion": "…dürfte eher unwahrscheinlich sein.",
+   "funcion": "gering, nicht ausgeschlossen",
+   "traducciones": {
+    "es": "…sería más bien improbable",
+    "en": "…is rather unlikely to be the case"
+   }
+  },
+  {
+   "expresion": "Es spricht wenig dafür, dass…",
+   "funcion": "deutliche, aber nicht absolute Ablehnung",
+   "traducciones": {
+    "es": "hay pocos indicios de que…",
+    "en": "there's little to suggest that…"
+   }
+  },
+  {
+   "expresion": "Vieles spricht dafür, dass…",
+   "funcion": "hohe, nicht absolute Sicherheit",
+   "traducciones": {
+    "es": "mucho indica que…",
+    "en": "much suggests that…"
+   }
+  },
+  {
+   "expresion": "…, was noch genauerer Prüfung bedarf.",
+   "funcion": "markiert eine offene Frage explizit",
+   "traducciones": {
+    "es": "…, lo cual requiere un análisis más detallado",
+    "en": "…, which warrants closer examination"
+   }
+  },
+  {
+   "expresion": "Dies bleibt eine offene Frage.",
+   "funcion": "echte, unaufgelöste Unsicherheit",
+   "traducciones": {
+    "es": "esto sigue siendo una pregunta abierta",
+    "en": "this remains an open question"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Passt jede Abschwächungsformel zur tatsächlichen Evidenzlage?",
+  "Sind lässt sich nicht ausschliessen und dürfte unwahrscheinlich sein klar unterschieden?",
+  "Gibt es mindestens eine unabgeschwächte Aussage zum Kontrast?",
+  "Würde ein Fachleser den genauen Sicherheitsgrad erkennen?",
+  "Habe ich mindestens vier verschiedene Abstufungen der Skala benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Präzision der Abschwächungsskala. Prüfen Sie, ob jede Formel den tatsächlichen Sicherheitsgrad trifft. Schreiben Sie den Text nicht neu."
+}

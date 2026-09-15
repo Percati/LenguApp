@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-G12",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Impersonal and Advanced Passive",
+ "categoria": "grammar",
+ "ancla": "EGP C1",
+ "descripcion": "Beyond the basic passive, C1 English uses the impersonal it is + reporting verb pattern to attribute a claim without naming a source: it is said, it is believed, it is widely assumed. This is the register of journalism, policy writing and careful academic prose, and it fails when the pattern is used on facts that don't need distancing.",
+ "cuadroReferencia": {
+  "titulo": "The impersonal reporting pattern",
+  "columnas": [
+   "Pattern",
+   "Example",
+   "Function"
+  ],
+  "filas": [
+   [
+    "it is + reporting verb + that",
+    "It is believed that the figures are outdated.",
+    "attributes without a named source"
+   ],
+   [
+    "S + is said/believed/thought + to + infinitive",
+    "The policy is thought to have failed.",
+    "same idea, subject-first"
+   ],
+   [
+    "it is widely + verb + that",
+    "It is widely assumed that…",
+    "signals a common but unverified view"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "It is widely assumed that the figures will be revised downward.",
+   "audio": true
+  },
+  {
+   "texto": "The policy is thought to have failed for reasons unrelated to its design.",
+   "audio": true
+  },
+  {
+   "texto": "It is understood that no final decision has been made."
+  }
+ ],
+ "notas": [
+  "The subject-first version (the policy is thought to have failed) reads slightly more formal and academic than the it-first version.",
+  "Widely, generally and commonly before the reporting verb signal that the view is common, not necessarily correct.",
+  "This pattern is for genuinely unattributed or collective views — using it on a claim you could simply state as fact reads as evasive."
+ ],
+ "contraste": {
+  "es": "El español logra el mismo efecto con se cree que o se dice que, con una sola estructura impersonal en vez de dos formas paralelas (it is + verbo, sujeto + is thought to). Los hispanohablantes suelen usar solo el patrón con it is y no aprenden la variante con sujeto inicial, que es la más frecuente en prensa y en informes en inglés."
+ },
+ "errores": [
+  "Using this pattern on a fact that doesn't need distancing, which reads as evasive.",
+  "Only using the it is + that version and never the subject-first is thought to version.",
+  "Dropping the infinitive after the subject-first pattern: the policy is thought failed instead of is thought to have failed."
+ ],
+ "redemittel": [
+  {
+   "expresion": "It is believed that…",
+   "funcion": "attributes without a source",
+   "traducciones": {
+    "es": "se cree que…",
+    "de": "Es wird angenommen, dass…",
+    "fr": "On pense que…",
+    "it": "Si ritiene che…",
+    "pt": "Acredita-se que…"
+   }
+  },
+  {
+   "expresion": "…is thought to have…",
+   "funcion": "subject-first, more academic",
+   "traducciones": {
+    "es": "se piensa que… ha…",
+    "de": "…soll… gehabt haben",
+    "fr": "…aurait…",
+    "it": "…si pensa che abbia…",
+    "pt": "…pensa-se que terá…"
+   }
+  },
+  {
+   "expresion": "It is widely assumed that…",
+   "funcion": "flags a common but unverified view",
+   "traducciones": {
+    "es": "se asume ampliamente que…",
+    "de": "Es wird weithin angenommen, dass…",
+    "fr": "Il est largement admis que…",
+    "it": "È opinione diffusa che…",
+    "pt": "É amplamente assumido que…"
+   }
+  },
+  {
+   "expresion": "It is understood that…",
+   "funcion": "cautious, slightly official",
+   "traducciones": {
+    "es": "se entiende que…",
+    "de": "Es wird davon ausgegangen, dass…",
+    "fr": "Il est entendu que…",
+    "it": "Si intende che…",
+    "pt": "Entende-se que…"
+   }
+  },
+  {
+   "expresion": "…is said to be…",
+   "funcion": "reported characteristic",
+   "traducciones": {
+    "es": "se dice que es…",
+    "de": "…soll… sein",
+    "fr": "…serait…",
+    "it": "…si dice che sia…",
+    "pt": "…diz-se que é…"
+   }
+  },
+  {
+   "expresion": "It remains to be seen whether…",
+   "funcion": "closes with genuine uncertainty",
+   "traducciones": {
+    "es": "queda por ver si…",
+    "de": "Es bleibt abzuwarten, ob…",
+    "fr": "Reste à voir si…",
+    "it": "Resta da vedere se…",
+    "pt": "Resta saber se…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is this pattern reserved for claims that genuinely need distancing?",
+  "Have I used both the it is + that and the subject-first is thought to forms?",
+  "Is the infinitive present after every subject-first pattern?",
+  "Would a reader sense evasion where a plain statement would have been more honest?",
+  "Is widely/generally/commonly used correctly to signal a common rather than a verified view?"
+ ],
+ "promptCorreccion": "Focus only on impersonal reporting patterns. Check whether they're used on claims that genuinely need distancing, and check the infinitive form after subject-first patterns. Do not rewrite the text."
+}

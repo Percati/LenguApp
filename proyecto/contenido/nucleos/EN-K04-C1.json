@@ -1,0 +1,137 @@
+{
+ "skillId": "EN-K04",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Hedging, Passive and Impersonal Reporting",
+ "categoria": "grammar",
+ "ancla": "CV Propositional precision",
+ "descripcion": "Academic and professional caution in English is built from three habits at once: hedging the certainty of a claim, using the passive to remove the actor, and reporting impersonally so no one person owns the statement. It has been suggested that this may require further review is not one trick but three, fused into a single sentence.",
+ "cuadroReferencia": {
+  "titulo": "The caution stack",
+  "columnas": [
+   "Layer",
+   "Device",
+   "Example fragment"
+  ],
+  "filas": [
+   [
+    "Hedge",
+    "may, might, tends to, arguably",
+    "this may require…"
+   ],
+   [
+    "Passive",
+    "removes the actor",
+    "it has been suggested"
+   ],
+   [
+    "Impersonal frame",
+    "it + passive reporting verb",
+    "it is thought that…"
+   ]
+  ],
+  "notaPie": "Two layers together read as careful. Three in a row, in every sentence, reads as evasive — reserve the full stack for the claims that actually need it."
+ },
+ "ejemplos": [
+  {
+   "texto": "It has been suggested that the results may not generalise beyond this sample.",
+   "audio": true
+  },
+  {
+   "texto": "It is thought that the delay was caused by a data issue, though this hasn't been confirmed.",
+   "audio": true
+  },
+  {
+   "texto": "The findings could arguably be explained by seasonal variation."
+  }
+ ],
+ "notas": [
+  "Stacking all three on a verifiable fact reads as dishonest, not careful — reserve the full combination for claims that are genuinely uncertain.",
+  "It has been suggested distances the writer from a claim without naming who made it, which is useful when the source is unclear or sensitive.",
+  "One flat, unhedged sentence per paragraph keeps the writing from sounding permanently uncertain."
+ ],
+ "contraste": {
+  "es": "El español atenúa sobre todo con el condicional y con creo que, y usa mucho menos la voz pasiva impersonal como recurso académico — el español prefiere el se impersonal (se sugiere que) en vez de encadenar tres capas distintas como el inglés. Los hispanohablantes tienden a atenuar de menos en inglés académico porque en su lengua materna una sola capa ya basta."
+ },
+ "errores": [
+  "Stacking all three layers on a fact that is actually certain, which reads as evasive.",
+  "Using the passive without any hedge, which sounds more confident than the evidence supports.",
+  "Never using the full stack at all, so genuinely uncertain claims sound overstated."
+ ],
+ "redemittel": [
+  {
+   "expresion": "It has been suggested that…",
+   "funcion": "distances from an unnamed source",
+   "traducciones": {
+    "es": "se ha sugerido que…",
+    "de": "Es wurde angedeutet, dass…",
+    "fr": "Il a été suggéré que…",
+    "it": "È stato suggerito che…",
+    "pt": "Foi sugerido que…"
+   }
+  },
+  {
+   "expresion": "It is thought that…",
+   "funcion": "impersonal, moderate certainty",
+   "traducciones": {
+    "es": "se piensa que…",
+    "de": "Es wird vermutet, dass…",
+    "fr": "On pense que…",
+    "it": "Si pensa che…",
+    "pt": "Pensa-se que…"
+   }
+  },
+  {
+   "expresion": "…may well be…",
+   "funcion": "hedge with fairly high probability",
+   "traducciones": {
+    "es": "bien podría ser…",
+    "de": "…könnte durchaus… sein",
+    "fr": "…pourrait bien être…",
+    "it": "…potrebbe benissimo essere…",
+    "pt": "…pode muito bem ser…"
+   }
+  },
+  {
+   "expresion": "This could arguably be explained by…",
+   "funcion": "hedge plus reasoned alternative",
+   "traducciones": {
+    "es": "esto podría explicarse, discutiblemente, por…",
+    "de": "Das ließe sich wohl durch… erklären.",
+    "fr": "Cela pourrait sans doute s’expliquer par…",
+    "it": "Questo potrebbe forse essere spiegato da…",
+    "pt": "Isto poderia, de certa forma, explicar-se por…"
+   }
+  },
+  {
+   "expresion": "…, though this remains unconfirmed.",
+   "funcion": "closes with an explicit limit",
+   "traducciones": {
+    "es": "…, aunque esto sigue sin confirmarse",
+    "de": "…, obwohl dies weiterhin unbestätigt ist.",
+    "fr": "…, bien que cela reste à confirmer.",
+    "it": "…, sebbene ciò resti non confermato.",
+    "pt": "…, embora isto continue por confirmar."
+   }
+  },
+  {
+   "expresion": "There is some evidence to suggest that…",
+   "funcion": "names the type of support without overclaiming",
+   "traducciones": {
+    "es": "hay indicios de que…",
+    "de": "Es gibt einige Hinweise darauf, dass…",
+    "fr": "Certains éléments laissent penser que…",
+    "it": "Ci sono alcuni indizi che suggeriscono che…",
+    "pt": "Há alguns indícios de que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the full three-layer stack reserved for claims that are genuinely uncertain?",
+  "Is there at least one flat, unhedged sentence to show the contrast?",
+  "Does the passive remove an actor that genuinely doesn't need naming?",
+  "Would a reader sense evasion rather than care anywhere in the text?",
+  "Are hedges varied, not the same word repeated every time?"
+ ],
+ "promptCorreccion": "Focus only on the combination of hedging, passive and impersonal reporting. Flag any claim where all three layers are used but the fact is actually certain, and flag any certain claim left completely unhedged. Do not rewrite the text."
+}

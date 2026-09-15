@@ -1,0 +1,141 @@
+{
+ "skillId": "DE-G17",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Negation und Fokuspartikeln",
+ "categoria": "grammar",
+ "ancla": "Aspekte B2",
+ "descripcion": "Auf B2 wird die Wahl zwischen nicht und kein gefestigt sowie die Position von nicht im Satz. Fokuspartikeln wie nur, sogar und auch verschieben die Betonung im Satz und werden hier zum ersten Mal systematisch geübt.",
+ "cuadroReferencia": {
+  "titulo": "Nicht, kein und Fokuspartikeln",
+  "columnas": [
+   "Element",
+   "Regel",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "kein",
+    "verneint ein Nomen mit unbestimmtem Artikel",
+    "Ich habe kein Auto."
+   ],
+   [
+    "nicht",
+    "verneint alles andere",
+    "Ich fahre nicht mit dem Auto."
+   ],
+   [
+    "nur",
+    "engt den Fokus ein",
+    "Nur er hat das bemerkt."
+   ],
+   [
+    "sogar",
+    "verstärkt eine Überraschung",
+    "Sogar sie war überrascht."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich habe leider kein Auto und fahre deshalb nicht so oft weg.",
+   "audio": true
+  },
+  {
+   "texto": "Nur er hat den Fehler überhaupt bemerkt.",
+   "audio": true
+  },
+  {
+   "texto": "Sogar meine Eltern waren von der Idee begeistert."
+  }
+ ],
+ "notas": [
+  "Nicht steht am Satzende, wenn der ganze Satz verneint wird, aber direkt vor dem verneinten Element bei Teilverneinung.",
+  "Kein ersetzt ein/eine, nicht braucht diese Ersetzung nicht.",
+  "Nur und sogar stehen direkt vor dem Wort, auf das sie sich beziehen, nicht am Satzanfang wie im Englischen üblich."
+ ],
+ "contraste": {
+  "es": "Das Spanische verneint mit no vor dem Verb, unabhängig davon, ob ein bestimmter oder unbestimmter Artikel folgt. Die Unterscheidung zwischen nicht und kein existiert im Spanischen nicht, weshalb Spanischsprachige oft durchgehend nicht statt kein verwenden."
+ },
+ "errores": [
+  "Nicht statt kein vor einem unbestimmten Nomen verwenden: ich habe nicht ein Auto statt ich habe kein Auto.",
+  "Nur oder sogar an eine falsche Position im Satz stellen, wodurch der Fokus verschoben wird.",
+  "Nicht am falschen Platz im Satz, wodurch die Bedeutung unklar wird."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich habe kein…",
+   "funcion": "Verneinung eines Nomens",
+   "traducciones": {
+    "es": "No tengo…",
+    "en": "I don't have…",
+    "fr": "Je n’ai pas de…",
+    "it": "Non ho…",
+    "pt": "Não tenho…"
+   }
+  },
+  {
+   "expresion": "Ich … nicht.",
+   "funcion": "Verneinung des ganzen Satzes",
+   "traducciones": {
+    "es": "No…",
+    "en": "I don't…",
+    "fr": "Je ne… pas.",
+    "it": "Non…",
+    "pt": "Eu não…"
+   }
+  },
+  {
+   "expresion": "Nur … hat…",
+   "funcion": "Fokus einengen",
+   "traducciones": {
+    "es": "Solo … ha…",
+    "en": "Only … has…",
+    "fr": "Seul(e) … a…",
+    "it": "Solo … ha…",
+    "pt": "Só … tem…"
+   }
+  },
+  {
+   "expresion": "Sogar … war…",
+   "funcion": "Überraschung verstärken",
+   "traducciones": {
+    "es": "Incluso … estaba…",
+    "en": "Even … was…",
+    "fr": "Même … était…",
+    "it": "Perfino … era…",
+    "pt": "Até … estava…"
+   }
+  },
+  {
+   "expresion": "Auch … hat…",
+   "funcion": "Zusatz hervorheben",
+   "traducciones": {
+    "es": "También … ha…",
+    "en": "…, too, has…",
+    "fr": "… aussi a…",
+    "it": "Anche … ha…",
+    "pt": "Também … tem…"
+   }
+  },
+  {
+   "expresion": "…nicht mehr…",
+   "funcion": "beendete Handlung verneinen",
+   "traducciones": {
+    "es": "…ya no…",
+    "en": "…no longer…",
+    "fr": "…ne… plus…",
+    "it": "…non… più…",
+    "pt": "…já não…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich kein vor einem unbestimmten Nomen benutzt, nicht nicht?",
+  "Steht nicht an der richtigen Stelle für Voll- oder Teilverneinung?",
+  "Stehen nur, sogar und auch direkt vor dem Wort, auf das sie sich beziehen?",
+  "Habe ich mindestens drei verschiedene Fokuspartikeln benutzt?",
+  "Verschiebt sich der Fokus so, wie ich es beabsichtigt habe?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf nicht, kein und die Fokuspartikeln. Prüfen Sie die Position jeder Partikel im Satz. Schreiben Sie den Text nicht neu."
+}

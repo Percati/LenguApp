@@ -1,0 +1,109 @@
+{
+ "skillId": "EN-G13",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Reported Speech",
+ "categoria": "grammar",
+ "ancla": "EGP B1",
+ "descripcion": "At B1 you report what someone said, shifting the tense back one step: I play becomes he played. Pronouns and time words also need to change to match the new point of view of whoever is reporting the original statement.",
+ "cuadroReferencia": {
+  "titulo": "What moves back",
+  "columnas": [
+   "Direct",
+   "Reported"
+  ],
+  "filas": [
+   [
+    "\"I play tennis.\"",
+    "He said he played tennis."
+   ],
+   [
+    "\"I'm working.\"",
+    "She said she was working."
+   ],
+   [
+    "\"I can help.\"",
+    "He said he could help."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She said she was working late that day.",
+   "audio": true
+  },
+  {
+   "texto": "He said he could help us tomorrow.",
+   "audio": true
+  },
+  {
+   "texto": "They said they had already eaten."
+  }
+ ],
+ "notas": [
+  "The present simple becomes the past simple; the present continuous becomes the past continuous.",
+  "Pronouns change according to who is speaking: I becomes he/she, my becomes his/her.",
+  "Say needs no person (he said that…); tell needs one (he told me that…)."
+ ],
+ "contraste": {
+  "es": "El español también cambia los tiempos verbales en el estilo indirecto, así que el mecanismo es familiar. La confusión más frecuente para hispanohablantes es say frente a tell, porque el español usa decir para ambos."
+ },
+ "errores": [
+  "Using tell without a person, or say with one.",
+  "Forgetting to shift the tense back.",
+  "Forgetting to change the pronoun."
+ ],
+ "redemittel": [
+  {
+   "expresion": "He said (that)…",
+   "funcion": "reports, no person",
+   "traducciones": {
+    "es": "Dijo que…"
+   }
+  },
+  {
+   "expresion": "She told me (that)…",
+   "funcion": "reports, with a person",
+   "traducciones": {
+    "es": "Me dijo que…"
+   }
+  },
+  {
+   "expresion": "They said they were…-ing",
+   "funcion": "reported continuous",
+   "traducciones": {
+    "es": "Dijeron que estaban…"
+   }
+  },
+  {
+   "expresion": "He said he could…",
+   "funcion": "reported can",
+   "traducciones": {
+    "es": "Dijo que podía…"
+   }
+  },
+  {
+   "expresion": "She said she would…",
+   "funcion": "reported will",
+   "traducciones": {
+    "es": "Dijo que iba a…"
+   }
+  },
+  {
+   "expresion": "They said they had…",
+   "funcion": "reported present perfect",
+   "traducciones": {
+    "es": "Dijeron que habían…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I used say without a person and tell with one?",
+  "Is the tense shifted back correctly?",
+  "Are the pronouns changed correctly?",
+  "Have I used more than one form of this structure?",
+  "Have I used more than one form of this structure?"
+ ],
+ "promptCorreccion": "Focus only on reported speech. Check the choice between say and tell, and check whether the tense is correctly shifted back one full step. Do not rewrite the text."
+}

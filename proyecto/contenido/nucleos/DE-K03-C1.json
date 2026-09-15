@@ -1,0 +1,154 @@
+{
+ "skillId": "DE-K03",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Nominalisierung + Genitivkette + Präposition mit Genitiv",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Der deutsche Verwaltungs- und Fachstil besteht fast vollständig aus diesem einen Muster: ein nominalisiertes Verb, gefolgt von einem Genitiv, oft eingeleitet durch eine Präposition mit Genitiv. Im Hinblick auf die Umsetzung der Richtlinie ist keine Ansammlung dreier Einzelthemen, sondern eine einzige Konstruktion. Wer sie nicht als Ganzes übt, produziert entweder unlesbare Genitivketten oder vermeidet den Nominalstil ganz.",
+ "cuadroReferencia": {
+  "titulo": "Aufbau des Musters",
+  "columnas": [
+   "Element",
+   "Beispiel",
+   "Funktion"
+  ],
+  "filas": [
+   [
+    "Präposition mit Genitiv",
+    "im Hinblick auf, aufgrund, angesichts, infolge, anlässlich",
+    "leitet den Fachsatz ein"
+   ],
+   [
+    "Nominalisierung",
+    "die Umsetzung, die Feststellung, die Durchführung",
+    "aus dem Verb gebildetes Ereignis"
+   ],
+   [
+    "Genitivkette",
+    "der Umsetzung der Richtlinie",
+    "wer/was betroffen ist"
+   ],
+   [
+    "Grenze",
+    "ab drei Gliedern umschreiben",
+    "sonst unlesbar"
+   ]
+  ],
+  "notaPie": "Faustregel: zwei Genitivglieder sind Stil, drei sind noch akzeptabel, vier sind ein Fehler — dann lieber einen Nebensatz."
+ },
+ "ejemplos": [
+  {
+   "texto": "Im Hinblick auf die Umsetzung der Richtlinie sind weitere Schritte nötig.",
+   "audio": true
+  },
+  {
+   "texto": "Aufgrund der Verzögerung des Projekts wurde die Frist verlängert.",
+   "audio": true
+  },
+  {
+   "texto": "Angesichts der Komplexität des Verfahrens empfiehlt sich eine externe Prüfung."
+  },
+  {
+   "texto": "Infolge der Änderung der Vorschriften muss der Antrag neu gestellt werden."
+  }
+ ],
+ "notas": [
+  "Aufgrund, angesichts, infolge und anlässlich verlangen alle den Genitiv, nicht den Dativ — ein häufiger Fehler auch bei fortgeschrittenen Lernenden.",
+  "Bei mehr als zwei Genitivgliedern wird die Kette fast immer klarer, wenn man sie in einen von-Satz oder einen Relativsatz auflöst.",
+  "Der Nominalstil ist Register, kein Ersatz für jeden Verbalsatz: in der gesprochenen Sprache wirkt er steif."
+ ],
+ "contraste": {
+  "es": "Das Spanische bevorzugt Infinitivkonstruktionen an genau dieser Stelle: con vistas a la aplicación de la directiva verwendet ebenfalls ein Nomen, aber ohne die deutsche Genitivkette dahinter — meist folgt de + Nomen einmal, nicht mehrfach verschachtelt. Spanischsprachige unternominalisieren deshalb im Bericht und bauen die Kette gar nicht erst auf.",
+  "en": "English strongly prefers verbal or gerund constructions here: with a view to implementing the directive keeps a verb form instead of a chain of nouns. English speakers translate the German nominal chain almost word for word and produce something that sounds correct but reads as unnecessarily heavy — the fix is not grammatical but stylistic: break the chain, don't just copy it."
+ },
+ "errores": [
+  "Dativ statt Genitiv nach aufgrund, angesichts, infolge: aufgrund dem Projekt.",
+  "Vier oder mehr Genitivglieder in einer Kette, die dadurch unlesbar wird.",
+  "Die Präposition weglassen und nur die Nominalisierung stehen lassen, wodurch der Bezug verloren geht."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Con-Konstruktionen wörtlich mit mit übersetzen, statt die passende Präposition mit Genitiv zu wählen."
+  ],
+  "en": [
+   "Die Genitivkette komplett vermeiden und stattdessen einen englisch anmutenden Verbalsatz bauen, der im deutschen Fachregister fehl am Platz wirkt."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "im Hinblick auf…",
+   "funcion": "leitet den Bezug ein, formell",
+   "traducciones": {
+    "es": "con vistas a…",
+    "en": "with a view to…",
+    "fr": "en vue de…",
+    "it": "in vista di…",
+    "pt": "com vista a…"
+   }
+  },
+  {
+   "expresion": "aufgrund der/des…",
+   "funcion": "Ursache, formell",
+   "traducciones": {
+    "es": "debido a…",
+    "en": "due to…",
+    "fr": "en raison de…",
+    "it": "a causa di…",
+    "pt": "devido a…"
+   }
+  },
+  {
+   "expresion": "angesichts der/des…",
+   "funcion": "Umstand, der zu berücksichtigen ist",
+   "traducciones": {
+    "es": "dada la…",
+    "en": "given the…",
+    "fr": "compte tenu de…",
+    "it": "alla luce di…",
+    "pt": "tendo em conta…"
+   }
+  },
+  {
+   "expresion": "im Rahmen der/des…",
+   "funcion": "Kontext eingrenzen",
+   "traducciones": {
+    "es": "en el marco de…",
+    "en": "within the framework of…",
+    "fr": "dans le cadre de…",
+    "it": "nell’ambito di…",
+    "pt": "no âmbito de…"
+   }
+  },
+  {
+   "expresion": "anlässlich der/des…",
+   "funcion": "Anlass nennen, formell",
+   "traducciones": {
+    "es": "con motivo de…",
+    "en": "on the occasion of…",
+    "fr": "à l’occasion de…",
+    "it": "in occasione di…",
+    "pt": "por ocasião de…"
+   }
+  },
+  {
+   "expresion": "in Anbetracht der/des…",
+   "funcion": "synonym zu angesichts",
+   "traducciones": {
+    "es": "en vista de…",
+    "en": "in consideration of…",
+    "fr": "compte tenu de…",
+    "it": "in considerazione di…",
+    "pt": "tendo em consideração…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht nach aufgrund/angesichts/infolge der Genitiv, nicht der Dativ?",
+  "Hat die Genitivkette mehr als drei Glieder?",
+  "Ist die Präposition zur Bedeutung passend gewählt?",
+  "Würde ein Relativsatz an dieser Stelle klarer sein?",
+  "Passt der Nominalstil zum Register des Textes?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Präposition mit Genitiv, Nominalisierung und Genitivkette. (1) Prüfen Sie den Kasus nach jeder Präposition. (2) Markieren Sie Genitivketten ab vier Gliedern. (3) Sagen Sie, wo eine Auflösung in einen Relativsatz die Lesbarkeit verbessern würde. Schreiben Sie den Text nicht neu."
+}

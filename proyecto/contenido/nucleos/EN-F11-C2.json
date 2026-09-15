@@ -1,0 +1,110 @@
+{
+ "skillId": "EN-F11",
+ "nivel": "C2",
+ "idioma": "en",
+ "bilingue": false,
+ "titulo": "Summarising Complex Information",
+ "categoria": "fluency",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 a summary is calibrated to what the specific audience already knows, compressing shared background aggressively while expanding exactly the part that's genuinely new to them — the same source material summarised differently for two different audiences.",
+ "cuadroReferencia": {
+  "titulo": "Audience-calibrated summary",
+  "columnas": [
+   "Audience",
+   "What's compressed",
+   "What's expanded"
+  ],
+  "filas": [
+   [
+    "Expert audience",
+    "background, method",
+    "the one surprising finding"
+   ],
+   [
+    "General audience",
+    "technical detail",
+    "why it matters, in plain terms"
+   ],
+   [
+    "Mixed audience",
+    "nothing, briefly note both",
+    "a short bridge naming both readings"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Skipping the methodology, which you'll know already, the one real surprise was the effect size.",
+   "audio": true
+  },
+  {
+   "texto": "In plain terms, this means prices are likely to rise faster than expected.",
+   "audio": true
+  },
+  {
+   "texto": "For those new to this, here's the one thing that actually matters."
+  }
+ ],
+ "notas": [
+  "Naming what you're skipping (skipping the methodology, which you'll know already) signals respect for an expert audience's time.",
+  "The same source can be summarised in two genuinely different ways depending on the audience, not just simplified once for everyone.",
+  "For a general audience, expanding why it matters in plain terms is more valuable than expanding technical detail they didn't ask for."
+ ],
+ "errores": [
+  "Giving the same summary regardless of audience, wasting an expert's time or losing a general reader.",
+  "Compressing the one part that's actually new to this audience.",
+  "Expanding technical detail for an audience that needs the implications instead."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Skipping…, which you'll know already,…",
+   "funcion": "compresses shared background",
+   "traducciones": {
+    "es": "Saltándome…, que ya conocerán,…"
+   }
+  },
+  {
+   "expresion": "The one real surprise was…",
+   "funcion": "isolates the genuinely new part",
+   "traducciones": {
+    "es": "La única sorpresa real fue…"
+   }
+  },
+  {
+   "expresion": "In plain terms, this means…",
+   "funcion": "expands implications for a general audience",
+   "traducciones": {
+    "es": "En términos simples, esto significa…"
+   }
+  },
+  {
+   "expresion": "For those new to this,…",
+   "funcion": "flags a general-audience frame",
+   "traducciones": {
+    "es": "Para quienes son nuevos en esto,…"
+   }
+  },
+  {
+   "expresion": "The part that actually matters here is…",
+   "funcion": "isolates significance",
+   "traducciones": {
+    "es": "La parte que realmente importa acá es…"
+   }
+  },
+  {
+   "expresion": "I'll assume you know…, so let's focus on…",
+   "funcion": "explicit calibration",
+   "traducciones": {
+    "es": "Voy a asumir que conocen…, así que enfoquémonos en…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the summary calibrated to what this specific audience already knows?",
+  "Is shared background compressed, not repeated at length?",
+  "Is the genuinely new or significant part expanded, not buried?",
+  "Would an expert feel their time was respected?",
+  "Would a general reader understand why it matters?"
+ ],
+ "promptCorreccion": "Focus only on whether the summary is calibrated to the intended audience's existing knowledge. Check what's compressed versus expanded. Do not rewrite the text."
+}

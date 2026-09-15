@@ -1,0 +1,119 @@
+{
+ "skillId": "DE-G18",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Temporale Nebensätze (*als, wenn, während, nachdem, seitdem*)",
+ "categoria": "grammar",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B1 wird der Unterschied zwischen als (einmaliges Ereignis in der Vergangenheit) und wenn (wiederholt oder Gegenwart/Zukunft) gefestigt, dazu während, nachdem und seitdem für weitere Zeitverhältnisse. Dieser Unterschied ist einer der klassischen Fehler für Spanischsprachige.",
+ "cuadroReferencia": {
+  "titulo": "Als oder wenn?",
+  "columnas": [
+   "Konnektor",
+   "Verwendung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "als",
+    "einmalig, Vergangenheit",
+    "Als ich ankam, regnete es."
+   ],
+   [
+    "wenn",
+    "wiederholt oder Gegenwart/Zukunft",
+    "Wenn ich Zeit habe, lese ich."
+   ],
+   [
+    "nachdem",
+    "danach, oft mit Plusquamperfekt",
+    "Nachdem ich gegessen hatte, ging ich."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Als ich in Berlin ankam, hat es geregnet.",
+   "audio": true
+  },
+  {
+   "texto": "Wenn ich Zeit habe, lese ich gern ein Buch.",
+   "audio": true
+  },
+  {
+   "texto": "Nachdem ich gegessen hatte, bin ich spazieren gegangen."
+  }
+ ],
+ "notas": [
+  "Als wird nur für ein einmaliges Ereignis in der Vergangenheit benutzt, nie für die Gegenwart oder Wiederholung.",
+  "Wenn passt für Gegenwart, Zukunft und wiederholte Ereignisse in der Vergangenheit.",
+  "Nachdem verlangt oft das Plusquamperfekt, wenn das Ereignis vor dem Hauptsatz liegt."
+ ],
+ "contraste": {
+  "es": "Das Spanische unterscheidet als und wenn nicht mit zwei verschiedenen Wörtern — cuando deckt beides ab. Dieser fehlende Unterschied ist der klassische Fehler von Spanischsprachigen im Deutschen."
+ },
+ "errores": [
+  "Wenn statt als für ein einmaliges vergangenes Ereignis benutzen.",
+  "Als für wiederholte Ereignisse verwenden.",
+  "Nach nachdem das Plusquamperfekt vergessen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Als ich…, …",
+   "funcion": "einmaliges vergangenes Ereignis",
+   "traducciones": {
+    "es": "Cuando yo… (una vez, pasado)",
+    "en": "When I… (once, past)"
+   }
+  },
+  {
+   "expresion": "Wenn ich…, …",
+   "funcion": "wiederholt/Gegenwart/Zukunft",
+   "traducciones": {
+    "es": "Cuando yo… (siempre/futuro)",
+    "en": "When(ever) I…"
+   }
+  },
+  {
+   "expresion": "Während ich…, …",
+   "funcion": "Gleichzeitigkeit",
+   "traducciones": {
+    "es": "Mientras yo…, …",
+    "en": "While I…, …"
+   }
+  },
+  {
+   "expresion": "Nachdem ich…hatte, …",
+   "funcion": "danach, mit Plusquamperfekt",
+   "traducciones": {
+    "es": "Después de que yo hube…, …",
+    "en": "After I had…, …"
+   }
+  },
+  {
+   "expresion": "Seitdem ich…, …",
+   "funcion": "seit einem Zeitpunkt",
+   "traducciones": {
+    "es": "Desde que yo…, …",
+    "en": "Since I…, …"
+   }
+  },
+  {
+   "expresion": "Bevor ich…, …",
+   "funcion": "davor",
+   "traducciones": {
+    "es": "Antes de que yo…, …",
+    "en": "Before I…, …"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich als nur für ein einmaliges vergangenes Ereignis benutzt?",
+  "Habe ich wenn für Wiederholung oder Gegenwart/Zukunft benutzt?",
+  "Steht nach nachdem das Plusquamperfekt, wenn nötig?",
+  "Habe ich mindestens drei verschiedene Konnektoren benutzt?",
+  "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Unterschied zwischen als und wenn sowie die anderen Zeitkonnektoren. Prüfen Sie jeden Fall genau. Schreiben Sie den Text nicht neu."
+}

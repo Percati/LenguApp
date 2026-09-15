@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-F12",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Sich beschweren und reklamieren",
+ "categoria": "fluency",
+ "ancla": "PD B2",
+ "descripcion": "Auf B2 formuliert man eine Beschwerde klar mit Problem und Wunsch, ohne unhöflich zu wirken. Die feinere vierteilige Struktur mit vorweggenommenem Einwand (C1) ist hier noch nicht das Ziel — Problem benennen und eine Lösung fordern reicht.",
+ "cuadroReferencia": {
+  "titulo": "Eine klare Beschwerde",
+  "columnas": [
+   "Teil",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Problem benennen",
+    "Die Heizung funktioniert seit Montag nicht."
+   ],
+   [
+    "Wunsch äußern",
+    "Ich hätte gern, dass das bald repariert wird."
+   ],
+   [
+    "Höflich abschließen",
+    "Ich würde mich über eine schnelle Rückmeldung freuen."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die Heizung funktioniert seit Montag nicht mehr.",
+   "audio": true
+  },
+  {
+   "texto": "Ich hätte gern, dass das möglichst bald repariert wird.",
+   "audio": true
+  },
+  {
+   "texto": "Ich würde mich über eine schnelle Rückmeldung freuen."
+  }
+ ],
+ "notas": [
+  "Ich hätte gern, dass… ist höflicher als Sie müssen das reparieren und passt gut zu einer schriftlichen Beschwerde.",
+  "Das Problem sollte konkret benannt werden (seit Montag), nicht nur allgemein (das funktioniert nicht).",
+  "Ein höflicher Abschluss wie ich würde mich freuen über macht die Beschwerde professioneller."
+ ],
+ "contraste": {
+  "es": "Im Spanischen sind direkte Forderungen sozial akzeptierter als im Deutschen. Spanischsprachige formulieren Beschwerden manchmal direkter, als es im deutschen Kontext erwartet wird, und lassen die höfliche Abschwächung mit hätte gern weg."
+ },
+ "errores": [
+  "Eine Beschwerde ohne konkretes Problem formulieren.",
+  "Direkt fordern (Sie müssen) statt höflich zu formulieren (ich hätte gern).",
+  "Keinen höflichen Abschluss haben, wodurch die Beschwerde schroffer wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…funktioniert seit … nicht mehr.",
+   "funcion": "Problem benennen",
+   "traducciones": {
+    "es": "…no funciona desde…",
+    "en": "…hasn't worked since…",
+    "fr": "…ne fonctionne plus depuis…",
+    "it": "…non funziona più da…",
+    "pt": "…já não funciona desde…"
+   }
+  },
+  {
+   "expresion": "Ich hätte gern, dass…",
+   "funcion": "höflicher Wunsch",
+   "traducciones": {
+    "es": "Me gustaría que…",
+    "en": "I would like it if…",
+    "fr": "J’aimerais que…",
+    "it": "Mi piacerebbe che…",
+    "pt": "Gostaria que…"
+   }
+  },
+  {
+   "expresion": "Ich würde mich über … freuen.",
+   "funcion": "höflicher Abschluss",
+   "traducciones": {
+    "es": "Agradecería…",
+    "en": "I would appreciate…",
+    "fr": "J’apprécierais…",
+    "it": "Apprezzerei…",
+    "pt": "Agradeceria…"
+   }
+  },
+  {
+   "expresion": "Das Problem besteht darin, dass…",
+   "funcion": "Problem formell benennen",
+   "traducciones": {
+    "es": "El problema es que…",
+    "en": "The problem is that…",
+    "fr": "Le problème, c’est que…",
+    "it": "Il problema è che…",
+    "pt": "O problema é que…"
+   }
+  },
+  {
+   "expresion": "Könnten Sie das bitte so schnell wie möglich beheben?",
+   "funcion": "höfliche Forderung",
+   "traducciones": {
+    "es": "¿Podría solucionarlo lo antes posible?",
+    "en": "Could you please fix this as soon as possible?",
+    "fr": "Pourriez-vous régler ce problème le plus rapidement possible ?",
+    "it": "Potrebbe risolvere il problema il prima possibile?",
+    "pt": "Poderia resolver isto o mais rapidamente possível?"
+   }
+  },
+  {
+   "expresion": "Ich bitte um eine baldige Rückmeldung.",
+   "funcion": "formeller Abschluss",
+   "traducciones": {
+    "es": "Solicito una respuesta pronta.",
+    "en": "I look forward to a prompt reply.",
+    "fr": "Je vous prie de me répondre rapidement.",
+    "it": "Chiedo gentilmente una pronta risposta.",
+    "pt": "Agradeço uma resposta breve."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist das Problem konkret benannt?",
+  "Ist der Wunsch höflich formuliert, nicht als direkte Forderung?",
+  "Gibt es einen höflichen Abschluss?",
+  "Klingt die Beschwerde sachlich, nicht wütend?",
+  "Habe ich den Konjunktiv II bei ich hätte gern korrekt verwendet?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Problem, Wunsch und höflichen Abschluss. Prüfen Sie, ob die Beschwerde konkret und höflich formuliert ist. Schreiben Sie den Text nicht neu."
+}

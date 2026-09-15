@@ -1,0 +1,108 @@
+{
+ "skillId": "EN-F01",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Giving and Asking for Opinions",
+ "categoria": "fluency",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you give a very simple opinion with I think or I like and, if possible, a short reason with because. This basic skill is the foundation for more complex discussion at higher levels. Free debate and pre-empting counter-arguments come at higher levels.",
+ "cuadroReferencia": {
+  "titulo": "Simple opinion",
+  "columnas": [
+   "Step",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Opinion",
+    "I think this is good."
+   ],
+   [
+    "Reason",
+    "…because it's cheap."
+   ],
+   [
+    "Alternative",
+    "I like this."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I think this restaurant is very good.",
+   "audio": true
+  },
+  {
+   "texto": "I don't like it, because it's expensive.",
+   "audio": true
+  },
+  {
+   "texto": "I like this a lot."
+  }
+ ],
+ "notas": [
+  "I think is the simplest way to give an opinion.",
+  "Because can add a short reason.",
+  "I like is a useful alternative for preferences."
+ ],
+ "contraste": {
+  "es": "El español expresa opiniones con creo que o me gusta de forma muy similar, así que la estructura se transfiere fácilmente."
+ },
+ "errores": [
+  "Giving an opinion with no reason at all.",
+  "Confusing like and think."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I think this is…",
+   "funcion": "opinion",
+   "traducciones": {
+    "es": "Creo que esto es…"
+   }
+  },
+  {
+   "expresion": "…, because…",
+   "funcion": "reason",
+   "traducciones": {
+    "es": "…, porque…"
+   }
+  },
+  {
+   "expresion": "I like…",
+   "funcion": "preference",
+   "traducciones": {
+    "es": "Me gusta…"
+   }
+  },
+  {
+   "expresion": "I don't like…",
+   "funcion": "dislike",
+   "traducciones": {
+    "es": "No me gusta…"
+   }
+  },
+  {
+   "expresion": "This is good/bad.",
+   "funcion": "simple evaluation",
+   "traducciones": {
+    "es": "Esto es bueno/malo."
+   }
+  },
+  {
+   "expresion": "What do you think?",
+   "funcion": "asking for an opinion",
+   "traducciones": {
+    "es": "¿Qué pensás?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I given an opinion?",
+  "Have I given a reason if possible?",
+  "Have I used more than one phrase?",
+  "Does the phrase sound natural?",
+  "Does the phrase sound natural?"
+ ],
+ "promptCorreccion": "Focus only on whether the opinion is clear and, if possible, has a reason with because. Do not rewrite the text. Check whether more than one phrase was used, not just the same one repeated."
+}

@@ -1,0 +1,137 @@
+{
+ "skillId": "DE-G16",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Genitiv und Genitivpräpositionen",
+ "categoria": "grammar",
+ "ancla": "PD B2",
+ "descripcion": "Auf C1 kommen die formelleren Genitivpräpositionen hinzu (aufgrund, angesichts, infolge, mangels) sowie Genitivketten mit zwei oder drei Gliedern. Das ist die Sprache von Berichten und Verwaltungstexten, in denen der Genitiv gehäuft auftritt.",
+ "cuadroReferencia": {
+  "titulo": "Formelle Genitivpräpositionen",
+  "columnas": [
+   "Präposition",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "aufgrund",
+    "aufgrund der Verzögerung des Projekts"
+   ],
+   [
+    "angesichts",
+    "angesichts der Komplexität der Lage"
+   ],
+   [
+    "infolge",
+    "infolge der Änderung der Vorschriften"
+   ],
+   [
+    "mangels",
+    "mangels ausreichender Beweise"
+   ]
+  ],
+  "notaPie": "Ab drei Genitivgliedern in einer Kette wird der Satz fast immer klarer, wenn man ihn in einen Nebensatz auflöst."
+ },
+ "ejemplos": [
+  {
+   "texto": "Aufgrund der Verzögerung des gesamten Projekts musste der Zeitplan angepasst werden.",
+   "audio": true
+  },
+  {
+   "texto": "Angesichts der Komplexität der Lage wurde eine externe Prüfung empfohlen.",
+   "audio": true
+  },
+  {
+   "texto": "Mangels ausreichender Beweise wurde das Verfahren eingestellt."
+  }
+ ],
+ "notas": [
+  "Mangels ist besonders formell und typisch für juristische und administrative Texte.",
+  "Bei zwei Genitivgliedern hintereinander (der Verzögerung des Projekts) bleibt der Satz noch gut lesbar; ab drei Gliedern wird es schwierig.",
+  "Aufgrund wird in der gesprochenen Sprache oft mit Dativ verwendet, im geschriebenen Standard bleibt der Genitiv Pflicht."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet all diese Bedeutungen mit de-Konstruktionen ohne eigenen Kasus (a causa de, ante la complejidad de). Die Notwendigkeit, hier den Genitiv aktiv zu markieren, ist deshalb für Spanischsprachige eine zusätzliche Fehlerquelle, die im Spanischen nicht existiert."
+ },
+ "errores": [
+  "Aufgrund mit Dativ statt Genitiv im geschriebenen Text verwenden.",
+  "Eine Genitivkette mit vier oder mehr Gliedern bilden, die dadurch unlesbar wird.",
+  "Mangels in einem zu informellen Kontext verwenden, wo es unpassend gestelzt wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "aufgrund…",
+   "funcion": "Ursache, formell",
+   "traducciones": {
+    "es": "debido a…",
+    "en": "due to…",
+    "fr": "en raison de…",
+    "it": "a causa di…",
+    "pt": "devido a…"
+   }
+  },
+  {
+   "expresion": "angesichts…",
+   "funcion": "Umstand, formell",
+   "traducciones": {
+    "es": "dada la…",
+    "en": "given the…",
+    "fr": "compte tenu de…",
+    "it": "alla luce di…",
+    "pt": "tendo em conta…"
+   }
+  },
+  {
+   "expresion": "infolge…",
+   "funcion": "Folge, formell",
+   "traducciones": {
+    "es": "a raíz de…",
+    "en": "as a result of…",
+    "fr": "à la suite de…",
+    "it": "a seguito di…",
+    "pt": "em consequência de…"
+   }
+  },
+  {
+   "expresion": "mangels…",
+   "funcion": "Mangel, sehr formell",
+   "traducciones": {
+    "es": "por falta de…",
+    "en": "for lack of…",
+    "fr": "faute de…",
+    "it": "per mancanza di…",
+    "pt": "por falta de…"
+   }
+  },
+  {
+   "expresion": "anlässlich…",
+   "funcion": "Anlass, formell",
+   "traducciones": {
+    "es": "con motivo de…",
+    "en": "on the occasion of…",
+    "fr": "à l’occasion de…",
+    "it": "in occasione di…",
+    "pt": "por ocasião de…"
+   }
+  },
+  {
+   "expresion": "in Anbetracht…",
+   "funcion": "synonym zu angesichts",
+   "traducciones": {
+    "es": "en vista de…",
+    "en": "in view of…",
+    "fr": "compte tenu de…",
+    "it": "in considerazione di…",
+    "pt": "tendo em consideração…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht nach jeder Präposition der Genitiv?",
+  "Hat eine Genitivkette mehr als drei Glieder?",
+  "Passt mangels zum Register des Textes?",
+  "Habe ich mindestens vier verschiedene Genitivpräpositionen benutzt?",
+  "Wäre eine Auflösung in einen Nebensatz an einer Stelle klarer?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die formellen Genitivpräpositionen aufgrund, angesichts, infolge und mangels sowie die Länge der Genitivketten. Prüfen Sie den Kasus in jedem Fall. Schreiben Sie den Text nicht neu."
+}

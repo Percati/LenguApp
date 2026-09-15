@@ -34,6 +34,9 @@ _utf8_io()
 REVIEW   = {8, 16, 24, 32, 40, 48}
 SURVIVAL = {12, 28, 44}
 SEP_MIN  = 10          # semanas minimas entre apariciones de un mismo skill
+SEP_MAX  = 30          # semanas maximas: mas separacion no es repeticion espaciada
+                       # sino dos clases sueltas. Con 43 semanas y dos
+                       # apariciones, el ideal ronda las 21.
 FUNDACIONAL_MAX = 20   # un skill fundacional no puede debutar despues de aqui
 
 def semanas_iso(anio: int) -> int:
@@ -45,18 +48,77 @@ def rango_fechas(anio, semana):
     dom = date.fromisocalendar(anio, semana, 7)
     return lun, dom
 
-def apariciones(skill):
+def apariciones(skill, n=None):
     """Lista de (skillId, order) segun cuantas veces aparece en el anio."""
-    return [(skill["id"], o + 1) for o in range(skill.get("apariciones", 2))]
+    return [(skill["id"], o + 1) for o in range(n or skill.get("apariciones", 2))]
+
+
+def repartir(skills, libres):
+    """Decide cuantas veces aparece cada skill para llenar exactamente el anio.
+
+    Todos los skills aparecen al menos dos veces: una sola aparicion no es
+    repeticion espaciada, es una clase suelta. Las apariciones sobrantes van
+    primero a los skills fundacionales y despues en orden de declaracion, que
+    es el del banco y por tanto explicable.
+
+    Si hay mas skills que semanas, algunos quedan fuera del anio en vez de
+    aparecer una sola vez: es preferible cubrir menos temas bien que muchos
+    una vez.
+    """
+    n = len(skills)
+    if n == 0:
+        return {}
+    if 2 * n > libres:
+        # No entran todos dos veces, asi que hay que descartar algunos. Cortar
+        # por orden de declaracion es lo peor posible: el banco lista primero
+        # fluidez, luego gramatica y al final lexico, de modo que el corte se
+        # come el lexico entero. Aleman C1 quedaba sin una sola Redewendung.
+        # Se recorta proporcionalmente dentro de cada categoria.
+        cabe = libres // 2
+        por_cat = {}
+        for sk in skills:
+            por_cat.setdefault(sk["id"][3], []).append(sk)   # F, G o V
+        elegidos, resto = [], []
+        for cat, lista in sorted(por_cat.items()):
+            cuota = round(cabe * len(lista) / n)
+            elegidos += lista[:cuota]
+            resto += lista[cuota:]
+        # el redondeo puede dejar hueco o pasarse
+        elegidos = (elegidos + resto)[:cabe]
+        skills = [sk for sk in skills if sk in elegidos]
+        n = len(skills)
+    plan = {s["id"]: 2 for s in skills}
+    sobran = libres - 2 * n
+    prioridad = ([s for s in skills if s.get("fundacional")] +
+                 [s for s in skills if not s.get("fundacional")])
+    i = 0
+    while sobran > 0 and prioridad:
+        sid = prioridad[i % len(prioridad)]["id"]
+        if plan[sid] < 4:                   # tope: mas de cuatro es machaque
+            plan[sid] += 1
+            sobran -= 1
+        i += 1
+        if i > 4 * len(prioridad):
+            break
+    return plan
 
 def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=None):
-    """Greedy aleatorizado con reintentos.
+    """Reparte skills y temas en el anio.
 
-    El backtracking completo es innecesario y explota combinatoriamente: con
-    ~90 tareas y 14 topics hay demasiadas ramas. Un greedy que recorre las
-    semanas en orden y prueba pares (tarea, topic) barajados encuentra
-    solucion en milisegundos; si se atasca, se reintenta con otro barajado.
-    Todo con Random(anio), asi que el resultado sigue siendo reproducible.
+    El algoritmo es constructivo, no un greedy que rellena semana a semana.
+    Aquel fallaba: al llegar a las ultimas semanas solo le quedaban skills cuya
+    ventana de repeticion ya habia vencido, y se quedaba sin solucion.
+
+    La construccion es directa. Si un skill aparece k veces y hay L semanas
+    libres, sus apariciones van cerca de las posiciones L*j/k con un desfase
+    propio. Eso reparte cada skill a lo largo del anio por diseno y hace que
+    los intervalos caigan solos dentro de [SEP_MIN, SEP_MAX], sin buscar.
+
+    Los intervalos NO son uniformes entre skills: cada uno arranca en un
+    desfase distinto, asi que uno puede caer en las semanas 1, 25 y 34 y otro
+    en la 2, 20 y 40. La regularidad seria un efecto no deseado.
+
+    Despues se asignan los temas, que es donde si hace falta buscar.
     """
     total = semanas_iso(anio)
     libres = [w for w in range(desde, total + 1)
@@ -65,61 +127,76 @@ def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=Non
     if not skills:
         print(f"El banco no tiene skills de {idioma} en {nivel}.", file=sys.stderr)
         sys.exit(2)
-    idx = {s["id"]: s for s in skills}
-    tareas_base = [t for s in skills for t in apariciones(s)]
-    rnd = random.Random(anio)
 
-    # Semanas fijadas a mano. Sirven para ediciones curadas (el piloto 2026) y
-    # para anclar un skill fundacional a una fecha concreta. El generador las
-    # respeta y rellena el resto. Sin esto, el calendario escrito a mano y el
-    # calculado divergen, que es exactamente el fallo que este soporte evita.
     fijas = fijas or {}
     fijadas = {int(w): (tuple(v["tarea"]), v["topic"]) for w, v in fijas.items()}
+    rnd = random.Random(anio)
+
+    plan_ap = repartir(skills, len(libres) - len(fijadas))
+    skills = [s for s in skills if s["id"] in plan_ap]
+    idx = {s["id"]: s for s in skills}
 
     for intento in range(intentos):
-        tareas = list(tareas_base)
-        rnd.shuffle(tareas)
-        plan, usados_skill, usados_topic = {}, {}, {}
-        for w, (tarea, topic) in fijadas.items():
-            plan[w] = (tarea, topic)
-            usados_skill.setdefault(tarea[0], []).append(w)
-            usados_topic.setdefault(tarea[0], set()).add(topic)
-        pendientes = [t for t in tareas if t not in [v[0] for v in plan.values()]]
+        orden = list(skills); rnd.shuffle(orden)
+        libres_disp = [w for w in libres if w not in fijadas]
+        L = len(libres_disp)
+        ranura = {}                      # semana -> (skillId, order)
         ok = True
-        for semana in libres:
-            if semana in plan:
-                continue
-            colocada = False
-            tops = list(topics); rnd.shuffle(tops)
-            for tarea in list(pendientes):
-                sid = tarea[0]
-                if any(abs(w - semana) < SEP_MIN for w in usados_skill.get(sid, [])):
-                    continue
-                if idx[sid].get("fundacional") and not usados_skill.get(sid) \
-                   and semana > FUNDACIONAL_MAX:
-                    continue
-                bloq = set(idx[sid].get("topicBlocklist", []))
-                for topic in tops:
-                    if topic in usados_topic.get(sid, set()) or topic in bloq:
+
+        for i, sk in enumerate(orden):
+            k = plan_ap[sk["id"]]
+            base = (i * L // max(len(orden), 1))
+            for j in range(k):
+                objetivo = (base + j * L // k) % L
+                # primera ranura libre a partir del objetivo, dando la vuelta
+                for d in range(L):
+                    pos = (objetivo + d) % L
+                    w = libres_disp[pos]
+                    if w in ranura:
                         continue
-                    if plan.get(semana - 1, (None, None))[1] == topic:
+                    previas = [x for x, (s2, _) in ranura.items() if s2 == sk["id"]]
+                    if any(abs(x - w) < SEP_MIN for x in previas):
                         continue
-                    plan[semana] = (tarea, topic)
-                    usados_skill.setdefault(sid, []).append(semana)
-                    usados_topic.setdefault(sid, set()).add(topic)
-                    pendientes.remove(tarea)
-                    colocada = True
+                    if previas and abs(w - min(previas, key=lambda y: abs(y - w))) > SEP_MAX:
+                        continue
+                    if idx[sk["id"]].get("fundacional") and not previas \
+                       and w > FUNDACIONAL_MAX:
+                        continue
+                    ranura[w] = (sk["id"], j + 1)
                     break
-                if colocada:
-                    break
-            if not colocada:
-                ok = False
+                else:
+                    ok = False; break
+            if not ok:
                 break
-        if ok:
-            break
+        if not ok or len(ranura) != L:
+            continue
+
+        # --- temas: ahora si, busqueda ---
+        plan = dict(fijadas)
+        usados_topic = {}
+        for w, (sid, order) in plan.items() if False else []:
+            pass
+        for w, (tarea, topic) in fijadas.items():
+            usados_topic.setdefault(tarea[0], set()).add(topic)
+        fallo = False
+        for w in sorted(ranura):
+            sid, order = ranura[w]
+            bloq = set(idx[sid].get("topicBlocklist", []))
+            cands = [t for t in topics
+                     if t not in usados_topic.get(sid, set()) and t not in bloq
+                     and plan.get(w - 1, (None, None))[1] != t
+                     and plan.get(w + 1, (None, None))[1] != t]
+            if not cands:
+                fallo = True; break
+            rnd.shuffle(cands)
+            topic = cands[0]
+            plan[w] = ((sid, order), topic)
+            usados_topic.setdefault(sid, set()).add(topic)
+        if fallo:
+            continue
+        break
     else:
-        print("Sin solucion tras {} intentos. Bajar SEP_MIN o ampliar el banco."
-              .format(intentos), file=sys.stderr)
+        print(f"Sin solucion tras {intentos} intentos.", file=sys.stderr)
         sys.exit(2)
 
     filas = []
@@ -134,6 +211,7 @@ def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=Non
             filas.append((w, lun, dom, "content", sid, order, topic))
     return filas
 
+
 def verificar(filas):
     """Comprueba las reglas duras sobre el resultado. Nunca confiar sin esto."""
     errores = []
@@ -147,9 +225,13 @@ def verificar(filas):
             errores.append(f"S{w}: topic {topic} repetido en semanas consecutivas")
         prev = topic
         if sid:
+            anteriores = [w2 for w2, _ in vistos.get(sid, [])]
             for w2, t2 in vistos.get(sid, []):
                 if abs(w2 - w) < SEP_MIN:
                     errores.append(f"S{w}: {sid} a menos de {SEP_MIN} semanas de S{w2}")
+            if anteriores and w - max(anteriores) > SEP_MAX:
+                errores.append(f"S{w}: {sid} a mas de {SEP_MAX} semanas de S{max(anteriores)}")
+            for w2, t2 in vistos.get(sid, []):
                 if t2 == topic:
                     errores.append(f"S{w}: {sid} repite topic {topic} (ya en S{w2})")
             vistos.setdefault(sid, []).append((w, topic))

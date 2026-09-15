@@ -1,0 +1,142 @@
+{
+ "skillId": "DE-F01",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Meinung äußern und begründen",
+ "categoria": "fluency",
+ "ancla": "Erkundungen C1",
+ "descripcion": "Auf C1 reicht eine Meinung mit Begründung nicht mehr: die Meinung muss abgestuft, mit Vorbehalt versehen und gegen ein mögliches Gegenargument abgesichert werden, bevor man sie äußert. Der Unterschied zu B2 ist nicht die Grammatik, sondern die Architektur des Satzes: erst der Vorbehalt, dann die Position.",
+ "cuadroReferencia": {
+  "titulo": "Abstufung einer Meinung",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Vorbehalt setzen",
+    "Ich will nicht pauschal urteilen, aber…"
+   ],
+   [
+    "Position formulieren",
+    "…meines Erachtens überwiegen die Nachteile."
+   ],
+   [
+    "Begründung mit Beleg",
+    "Das zeigt sich zum Beispiel daran, dass…"
+   ],
+   [
+    "Gegenargument vorwegnehmen",
+    "Man könnte einwenden, dass…, dennoch…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich will nicht pauschal urteilen, aber meines Erachtens überwiegen die Nachteile deutlich.",
+   "audio": true
+  },
+  {
+   "texto": "Man könnte einwenden, dass die Kosten zu hoch wären, dennoch halte ich die Investition für gerechtfertigt.",
+   "audio": true
+  },
+  {
+   "texto": "Das zeigt sich exemplarisch an den Zahlen des letzten Jahres."
+  }
+ ],
+ "notas": [
+  "Meines Erachtens ist deutlich formeller als ich finde und passt zu Diskussionen und Essays.",
+  "Ein Vorbehalt am Satzanfang signalisiert Kompetenz, nicht Unsicherheit — das Gegenteil dessen, was Lernende oft annehmen.",
+  "Zwei Vorbehalte hintereinander wirken unentschlossen; einer genügt."
+ ],
+ "contraste": {
+  "es": "Das Spanische äußert Meinungen oft direkter und ohne vorangestellten Vorbehalt (creo que…), was in akademischem Deutsch zu unvermittelt wirkt. Spanischsprachige müssen den Vorbehalt aktiv einbauen, nicht nur die Meinung übersetzen.",
+  "en": "English softens opinions similarly (I don't want to generalise, but…), so the structure transfers well — the main gap is formal vocabulary: meines Erachtens has no single-word English equivalent and gets flattened to in my view, losing some of the formality."
+ },
+ "errores": [
+  "Die Meinung ohne jeden Vorbehalt direkt äußern, was im C1-Register zu schroff wirkt.",
+  "Zwei oder mehr Vorbehalte hintereinanderreihen.",
+  "Ein Gegenargument nur behaupten, ohne es auch nur kurz zu formulieren."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Die Meinung direkt mit creo que-Logik einleiten (ich glaube) und den formelleren Vorbehalt ganz auslassen."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "Ich will nicht pauschal urteilen, aber…",
+   "funcion": "Vorbehalt einleiten",
+   "traducciones": {
+    "es": "No quiero generalizar, pero…",
+    "en": "I don't want to generalise, but…",
+    "fr": "Je ne veux pas généraliser, mais…",
+    "it": "Non voglio generalizzare, ma…",
+    "pt": "Não quero generalizar, mas…"
+   }
+  },
+  {
+   "expresion": "Meines Erachtens…",
+   "funcion": "Position, formell",
+   "traducciones": {
+    "es": "A mi juicio…",
+    "en": "In my view…",
+    "fr": "À mon sens…",
+    "it": "A mio avviso…",
+    "pt": "A meu ver…"
+   }
+  },
+  {
+   "expresion": "Das zeigt sich exemplarisch an…",
+   "funcion": "Beleg einführen",
+   "traducciones": {
+    "es": "Eso se ve claramente en…",
+    "en": "This is clearly shown by…",
+    "fr": "Cela apparaît clairement dans…",
+    "it": "Questo si vede chiaramente in…",
+    "pt": "Isso vê-se claramente em…"
+   }
+  },
+  {
+   "expresion": "Man könnte einwenden, dass…, dennoch…",
+   "funcion": "Gegenargument vorwegnehmen",
+   "traducciones": {
+    "es": "Se podría objetar que…, sin embargo…",
+    "en": "One could object that…, nevertheless…",
+    "fr": "On pourrait objecter que…, néanmoins…",
+    "it": "Si potrebbe obiettare che…, tuttavia…",
+    "pt": "Poder-se-ia objetar que…, ainda assim…"
+   }
+  },
+  {
+   "expresion": "Dafür spricht, dass…",
+   "funcion": "Argument stützen",
+   "traducciones": {
+    "es": "A favor está que…",
+    "en": "In favour of this is that…",
+    "fr": "Un argument en faveur est que…",
+    "it": "A favore depone il fatto che…",
+    "pt": "A favor está o facto de que…"
+   }
+  },
+  {
+   "expresion": "Nicht zuletzt deshalb…",
+   "funcion": "abschliessendes Argument",
+   "traducciones": {
+    "es": "No en menor medida por eso…",
+    "en": "Not least for this reason…",
+    "fr": "Notamment pour cette raison…",
+    "it": "Non da ultimo per questo motivo…",
+    "pt": "Não menos por essa razão…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich genau einen Vorbehalt gesetzt, nicht mehrere?",
+  "Ist die Position klar von der Begründung getrennt?",
+  "Habe ich mindestens ein Gegenargument vorweggenommen?",
+  "Passt das Register zu einer Diskussion oder einem Essay, nicht zu einem Gespräch?",
+  "Steht meines Erachtens statt eines einfachen ich finde?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Architektur der Meinungsäußerung: Vorbehalt, Position, Beleg, Gegenargument. Prüfen Sie, ob alle vier Elemente vorhanden und in der richtigen Reihenfolge sind. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,113 @@
+{
+ "skillId": "DE-V08",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Helvetismen und Deutschschweizer Kontext",
+ "categoria": "vocabulary",
+ "ancla": "—",
+ "variante": "CH",
+ "descripcion": "Auf B1 lernt man die häufigsten Helvetismen des Alltags: Wörter, die in der Schweiz anders heissen als in Deutschland, aber genauso Standardsprache sind. Wichtig ist, dass diese Wörter nicht umgangssprachlich, sondern korrektes Schweizer Hochdeutsch sind.",
+ "cuadroReferencia": {
+  "titulo": "Alltägliche Helvetismen",
+  "columnas": [
+   "Schweiz",
+   "Deutschland"
+  ],
+  "filas": [
+   [
+    "das Velo",
+    "das Fahrrad"
+   ],
+   [
+    "parkieren",
+    "parken"
+   ],
+   [
+    "das Billett",
+    "die Fahrkarte"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich fahre jeden Tag mit dem Velo zur Arbeit.",
+   "audio": true
+  },
+  {
+   "texto": "Wo kann ich hier parkieren?",
+   "audio": true
+  },
+  {
+   "texto": "Ich brauche noch ein Billett für den Zug."
+  }
+ ],
+ "notas": [
+  "Diese Wörter sind in der Schweiz Standard, keine Umgangssprache — sie stehen auch in offiziellen Texten.",
+  "Velo, Billett und Trottoir kommen ursprünglich aus dem Französischen.",
+  "Im Schweizer Hochdeutsch schreibt man kein ß, immer ss."
+ ],
+ "errores": [
+  "Diese Wörter für Mundart statt für Standardsprache halten.",
+  "Ein ß in einem Schweizer Text verwenden.",
+  "Bundesdeutsche Wörter benutzen, wo der Helvetismus erwartet wird, wenn man in der Schweiz spricht."
+ ],
+ "redemittel": [
+  {
+   "expresion": "mit dem Velo",
+   "funcion": "Helvetismus, Verkehrsmittel",
+   "traducciones": {
+    "es": "en bicicleta",
+    "en": "by bike"
+   }
+  },
+  {
+   "expresion": "parkieren",
+   "funcion": "Helvetismus, Verb",
+   "traducciones": {
+    "es": "aparcar",
+    "en": "to park"
+   }
+  },
+  {
+   "expresion": "das Billett",
+   "funcion": "Helvetismus, Fahrkarte",
+   "traducciones": {
+    "es": "el billete",
+    "en": "the ticket"
+   }
+  },
+  {
+   "expresion": "das Trottoir",
+   "funcion": "Helvetismus, Bürgersteig",
+   "traducciones": {
+    "es": "la vereda",
+    "en": "the pavement"
+   }
+  },
+  {
+   "expresion": "der Coiffeur",
+   "funcion": "Helvetismus, Friseur",
+   "traducciones": {
+    "es": "la peluquería",
+    "en": "the hairdresser"
+   }
+  },
+  {
+   "expresion": "Grüezi!",
+   "funcion": "Schweizer Gruss",
+   "traducciones": {
+    "es": "¡Hola! (saludo suizo)",
+    "en": "Hello! (Swiss greeting)"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Kein ß im Text?",
+  "Sind die Helvetismen als Standard, nicht als Mundart eingesetzt?",
+  "Habe ich mindestens drei Helvetismen benutzt?",
+  "Klingt der Text natürlich?",
+  "Habe ich das Thema des Packs berücksichtigt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Helvetismen. Prüfen Sie die ss/ß-Schreibung und ob die Wörter korrekt als Standard eingesetzt sind. Schreiben Sie den Text nicht neu."
+}

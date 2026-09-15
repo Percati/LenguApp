@@ -1,0 +1,148 @@
+{
+ "skillId": "DE-V05",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Modalpartikeln",
+ "categoria": "vocabulary",
+ "ancla": "PD B1 / Aspekte C1",
+ "descripcion": "Modalpartikeln (doch, mal, ja, eben, halt, wohl) sind der grösste einzelne Hebel, um im Deutschen natürlich zu klingen, und werden fast nie systematisch unterrichtet. Auf C1 geht es darum, mehrere im selben Gespräch zu kombinieren und ihre feinen Unterschiede zu treffen, statt nur eine (meist doch) zu benutzen.",
+ "cuadroReferencia": {
+  "titulo": "Sechs Partikeln, sechs Nuancen",
+  "columnas": [
+   "Partikel",
+   "Funktion",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "doch",
+    "Widerspruch/Erinnerung",
+    "Das haben wir doch schon besprochen."
+   ],
+   [
+    "mal",
+    "beiläufige Aufforderung",
+    "Schau mal, was hier steht."
+   ],
+   [
+    "ja",
+    "Selbstverständlichkeit",
+    "Das ist ja klar."
+   ],
+   [
+    "eben/halt",
+    "resignierte Feststellung",
+    "Das ist eben/halt so."
+   ],
+   [
+    "wohl",
+    "vorsichtige Vermutung",
+    "Das wird wohl stimmen."
+   ]
+  ],
+  "notaPie": "Halt ist süddeutsch/österreichisch/schweizerisch, eben norddeutscher — beide bedeuten dasselbe."
+ },
+ "ejemplos": [
+  {
+   "texto": "Das haben wir doch schon letzte Woche besprochen, oder?",
+   "audio": true
+  },
+  {
+   "texto": "Schau doch mal, ob das hier passt.",
+   "audio": true
+  },
+  {
+   "texto": "Das wird wohl an der Verspätung liegen."
+  }
+ ],
+ "notas": [
+  "Ohne Partikel wirkt ein deutscher Satz oft unhöflich oder abrupt schroff — Komm her ist grammatisch korrekt und sozial hart.",
+  "Mehrere Partikeln können sich im selben Satz kombinieren: doch mal, ja wohl.",
+  "Wohl markiert eine vorsichtige, distanzierte Vermutung und ist etwas formeller als könnte sein."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine Entsprechung für Modalpartikeln; ähnliche Funktionen übernehmen dort Betonung, Gestik oder Zusatzwörter wie ¿no? oder bueno. Spanischsprachige lassen Partikeln deshalb systematisch weg und klingen dadurch unbeabsichtigt schroffer, als sie es meinen.",
+  "en": "English has no direct equivalent either; similar work is done by tag questions (isn't it?) and adverbs like actually or just. English speakers underestimate how impolite a German sentence without particles sounds — Come here is fine in English but Komm her is blunt in German."
+ },
+ "errores": [
+  "Partikeln komplett weglassen und dadurch unbeabsichtigt schroff klingen.",
+  "Doch als einzige Partikel für alles benutzen, unabhängig von der eigentlich gemeinten Nuance.",
+  "Halt und eben in einem Kontext mischen, in dem nur eine regionale Variante erwartet wird."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das haben wir doch…",
+   "funcion": "Erinnerung/Widerspruch",
+   "traducciones": {
+    "es": "Pero si ya…",
+    "en": "But we already…",
+    "fr": "Mais nous avons déjà…",
+    "it": "Ma abbiamo già…",
+    "pt": "Mas nós já…"
+   }
+  },
+  {
+   "expresion": "Schau mal, …",
+   "funcion": "beiläufige Aufforderung",
+   "traducciones": {
+    "es": "Mirá, …",
+    "en": "Look, …",
+    "fr": "Regarde, …",
+    "it": "Guarda, …",
+    "pt": "Olha, …"
+   }
+  },
+  {
+   "expresion": "Das ist ja…",
+   "funcion": "Selbstverständlichkeit betonen",
+   "traducciones": {
+    "es": "Eso es obviamente…",
+    "en": "Well, that's…",
+    "fr": "Mais c’est…",
+    "it": "Ma è…",
+    "pt": "Mas isso é…"
+   }
+  },
+  {
+   "expresion": "Das ist eben so.",
+   "funcion": "resignierte Feststellung",
+   "traducciones": {
+    "es": "Así es la cosa.",
+    "en": "That's just how it is.",
+    "fr": "C’est comme ça, voilà.",
+    "it": "È così e basta.",
+    "pt": "É assim mesmo."
+   }
+  },
+  {
+   "expresion": "Das wird wohl…",
+   "funcion": "vorsichtige Vermutung",
+   "traducciones": {
+    "es": "Seguramente sea…",
+    "en": "It's probably…",
+    "fr": "Ce sera probablement…",
+    "it": "Probabilmente sarà…",
+    "pt": "Provavelmente será…"
+   }
+  },
+  {
+   "expresion": "Komm doch mal her.",
+   "funcion": "kombinierte Partikeln, freundlich",
+   "traducciones": {
+    "es": "Vení un poco.",
+    "en": "Come here a sec, would you?",
+    "fr": "Viens un peu ici.",
+    "it": "Vieni un attimo qui.",
+    "pt": "Vem cá um bocadinho."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich mindestens drei verschiedene Partikeln benutzt, nicht nur doch?",
+  "Passt die gewählte Partikel zur beabsichtigten Nuance?",
+  "Klingt ein Satz ohne Partikel unbeabsichtigt schroff?",
+  "Habe ich halt und eben nicht regional inkonsistent gemischt?",
+  "Wirkt das Gespräch insgesamt natürlicher mit den Partikeln?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalpartikeln. Prüfen Sie, ob die gewählte Partikel zur Nuance passt und ob mehr als eine benutzt wird. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,137 @@
+{
+ "skillId": "EN-K02",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Reduced Relatives, Participle Clauses and Nominalisation",
+ "categoria": "grammar",
+ "ancla": "EGP B2",
+ "descripcion": "The density that separates C1 writing from B2 writing comes from three devices working together: dropping the relative pronoun, compressing a clause into a participle, and turning a verb into a noun. Used separately, each one saves a few words. Used together in the same paragraph, they produce the compact, confident register of a strong report.",
+ "cuadroReferencia": {
+  "titulo": "Three ways to compress",
+  "columnas": [
+   "Device",
+   "Full form",
+   "Compressed"
+  ],
+  "filas": [
+   [
+    "Reduced relative",
+    "the report which was published",
+    "the report published"
+   ],
+   [
+    "Participle clause",
+    "because it had been delayed",
+    "having been delayed"
+   ],
+   [
+    "Nominalisation",
+    "because the team decided quickly",
+    "the team's quick decision"
+   ]
+  ],
+  "notaPie": "Combining all three in one sentence is normal in a report; combining them in speech reads as stiff. Match the density to the register."
+ },
+ "ejemplos": [
+  {
+   "texto": "Having been delayed twice, the report published last week drew immediate criticism.",
+   "audio": true
+  },
+  {
+   "texto": "The team's quick decision, taken under pressure, avoided a bigger loss.",
+   "audio": true
+  },
+  {
+   "texto": "Data collected over three years, though incomplete, still points the same way."
+  }
+ ],
+ "notas": [
+  "A reduced relative only works when the missing pronoun would have been the subject; the report I read cannot become the report read by me here.",
+  "Nominalising every verb in a paragraph makes it unreadable; alternate nominal and verbal sentences.",
+  "A dangling participle is the most common failure of this combination: the participle's implied subject must match the main clause's subject."
+ ],
+ "contraste": {
+  "es": "El español tolera mucho mejor un sujeto implícito y ambiguo en construcciones de gerundio (estando en Madrid, me llamaron), mientras que el inglés exige que el sujeto del participio coincida con el de la oración principal. Los hispanohablantes producen participios colgantes precisamente porque en español esa construcción es aceptable."
+ },
+ "errores": [
+  "Producing a dangling participle where the implied subject doesn't match the main clause.",
+  "Reducing a relative clause where the missing pronoun would be the object, which isn't grammatically allowed.",
+  "Nominalising every sentence in a row until the paragraph becomes unreadable."
+ ],
+ "redemittel": [
+  {
+   "expresion": "published last month",
+   "funcion": "reduced passive relative",
+   "traducciones": {
+    "es": "publicado el mes pasado",
+    "de": "letzten Monat veröffentlicht",
+    "fr": "publié le mois dernier",
+    "it": "pubblicato il mese scorso",
+    "pt": "publicado no mês passado"
+   }
+  },
+  {
+   "expresion": "having been…",
+   "funcion": "perfect passive participle",
+   "traducciones": {
+    "es": "habiendo sido…",
+    "de": "nachdem … worden war / nachdem man …",
+    "fr": "ayant été…",
+    "it": "essendo stato…",
+    "pt": "tendo sido…"
+   }
+  },
+  {
+   "expresion": "the team's decision to…",
+   "funcion": "nominalisation of a verb",
+   "traducciones": {
+    "es": "la decisión del equipo de…",
+    "de": "die Entscheidung des Teams,…",
+    "fr": "la décision de l’équipe de…",
+    "it": "la decisione del team di…",
+    "pt": "a decisão da equipa de…"
+   }
+  },
+  {
+   "expresion": "given the circumstances",
+   "funcion": "fixed participial phrase",
+   "traducciones": {
+    "es": "dadas las circunstancias",
+    "de": "angesichts der Umstände",
+    "fr": "compte tenu des circonstances",
+    "it": "date le circostanze",
+    "pt": "dadas as circunstâncias"
+   }
+  },
+  {
+   "expresion": "weighed against…",
+   "funcion": "participial contrast",
+   "traducciones": {
+    "es": "frente a…",
+    "de": "abgewogen gegen…",
+    "fr": "mis en balance avec…",
+    "it": "messo a confronto con…",
+    "pt": "ponderado face a…"
+   }
+  },
+  {
+   "expresion": "the data available",
+   "funcion": "postposed adjective, compact",
+   "traducciones": {
+    "es": "los datos disponibles",
+    "de": "die verfügbaren Daten",
+    "fr": "les données disponibles",
+    "it": "i dati disponibili",
+    "pt": "os dados disponíveis"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the reduced pronoun always the subject, never the object, of its clause?",
+  "Does every participle's implied subject match the main clause's subject?",
+  "Is the paragraph a mix of nominal and verbal sentences, not all one or the other?",
+  "Would the density fit a spoken conversation, or does it belong only in writing?",
+  "Is at least one dangling participle risk checked and fixed?"
+ ],
+ "promptCorreccion": "Focus only on reduced relatives, participle clauses and nominalisation. Flag every dangling participle, check whether reductions are grammatically allowed, and say whether the density fits the register. Do not rewrite the text."
+}

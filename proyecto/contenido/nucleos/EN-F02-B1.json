@@ -1,0 +1,109 @@
+{
+ "skillId": "EN-F02",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Agreeing and Disagreeing",
+ "categoria": "fluency",
+ "ancla": "CV Formal discussion (meetings)",
+ "descripcion": "At B1 you agree or disagree clearly and politely with simple phrases. The finer grading, like softened partial agreement, comes later — here the goal is a clear, polite reaction that still explains why you feel that way.",
+ "cuadroReferencia": {
+  "titulo": "Simple agreement and disagreement",
+  "columnas": [
+   "Function",
+   "Phrase"
+  ],
+  "filas": [
+   [
+    "Agreement",
+    "I agree."
+   ],
+   [
+    "Disagreement",
+    "I don't agree."
+   ],
+   [
+    "Partial",
+    "Yes, but…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I agree with you completely.",
+   "audio": true
+  },
+  {
+   "texto": "I don't really agree with that.",
+   "audio": true
+  },
+  {
+   "texto": "Yes, that's true, but I think there's another side to it."
+  }
+ ],
+ "notas": [
+  "I agree is the simplest and most common way to show agreement.",
+  "I don't agree is direct but still polite when said calmly.",
+  "Yes, but is useful when you agree with part of something but not all of it."
+ ],
+ "contraste": {
+  "es": "El español expresa acuerdo y desacuerdo de forma directa y muy similar (estoy de acuerdo / no estoy de acuerdo), así que la estructura se transfiere sin dificultad."
+ },
+ "errores": [
+  "Disagreeing without any explanation.",
+  "Only saying yes or no without adding an opinion.",
+  "Forgetting the but after yes."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I agree.",
+   "funcion": "agreement",
+   "traducciones": {
+    "es": "Estoy de acuerdo."
+   }
+  },
+  {
+   "expresion": "I don't agree.",
+   "funcion": "disagreement",
+   "traducciones": {
+    "es": "No estoy de acuerdo."
+   }
+  },
+  {
+   "expresion": "Yes, but…",
+   "funcion": "partial agreement",
+   "traducciones": {
+    "es": "Sí, pero…"
+   }
+  },
+  {
+   "expresion": "That's true, but…",
+   "funcion": "acknowledges then adds",
+   "traducciones": {
+    "es": "Eso es cierto, pero…"
+   }
+  },
+  {
+   "expresion": "I see what you mean, but…",
+   "funcion": "polite disagreement",
+   "traducciones": {
+    "es": "Entiendo lo que decís, pero…"
+   }
+  },
+  {
+   "expresion": "Exactly!",
+   "funcion": "strong agreement",
+   "traducciones": {
+    "es": "¡Exacto!"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I clearly said whether I agree or not?",
+  "Have I added a reason or opinion, not just yes/no?",
+  "Does the disagreement sound polite?",
+  "Have I used more than one phrase, not always the same one?",
+  "Have I used more than one phrase, not always the same one?"
+ ],
+ "promptCorreccion": "Focus only on agreeing and disagreeing clearly and politely. Check whether a reason follows the reaction and whether more than one phrase was used. Do not rewrite the text."
+}

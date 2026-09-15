@@ -87,19 +87,6 @@ Las listas fuente van en `tools/fuentes/` y **no se versionan**. `tools/fuentes.
 
 ---
 
-## 5. Estado
+---
 
-**Hecho**: syllabus completo A2–C2 (88 skills, 14 topics), calendario 37–53 y sus reglas, 8 fichas del mes piloto (semanas 37–40, EN y DE), schema, verificador, base de vocabulario alemán (3.243 lemas de 4 fuentes).
-
-**Siguiente**: usar el mes piloto → si el molde aguanta, extender a las semanas 41–53 y al año 2027 completo; en paralelo, empezar la app en Claude Code.
-
-**Deudas abiertas**
-| # | Deuda | Cómo se cierra |
-|---|---|---|
-| 1 | Nadie nativo revisó el banco de inglés | Conseguir revisor, o publicar con nota de "no revisado" |
-| 2 | Asignaciones alemán C1/C2 sin fuente | Comprar Profile deutsch (~50 €) o revisor que lo tenga |
-| 3 | 96 de 140 packs de vocabulario sin escribir | Por nivel, cuando haya quién valide |
-| 4 | Helvetismos sin ancla MCER | Etiquetar como variante y hacerlo desactivable |
-| 5 | Traducciones solo en español | Cuando haya hablantes de FR/IT/PT |
-| 6 | Verificador solo para alemán | Construir el equivalente inglés con Oxford 3000/5000 |
-| 7 | Fichas A2 y B1 (bilingües) sin escribir | Con las listas A1/A2/B1 ya disponibles |
+Para el estado real y actualizado de qué falta, ver `FALTANTES.md` en la raíz del repositorio. Esta sección de decisiones cerradas sigue vigente; la de estado/deudas se retiró por quedar desactualizada.

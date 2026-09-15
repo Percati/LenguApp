@@ -1,0 +1,112 @@
+{
+ "skillId": "EN-G14",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Relative Clauses: Defining and Non-defining",
+ "categoria": "grammar",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you build a very simple defining relative clause with who for people and that for things, to say which person or thing you mean. Non-defining clauses and finer quantifiers like much/many come at higher levels.",
+ "cuadroReferencia": {
+  "titulo": "Simple relative clauses",
+  "columnas": [
+   "Pronoun",
+   "Used for",
+   "Example"
+  ],
+  "filas": [
+   [
+    "who",
+    "people",
+    "The man who called is my neighbour."
+   ],
+   [
+    "that",
+    "things",
+    "The book that I read was good."
+   ],
+   [
+    "Common opener",
+    "both",
+    "The person who/The thing that…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The man who called earlier is my neighbour.",
+   "audio": true
+  },
+  {
+   "texto": "The book that I read was really good.",
+   "audio": true
+  },
+  {
+   "texto": "This is the shop that everyone likes."
+  }
+ ],
+ "notas": [
+  "Who is for people, that is for things and can also work for people informally.",
+  "There's no comma before this kind of relative clause.",
+  "The relative pronoun can sometimes be left out: the book I read."
+ ],
+ "contraste": {
+  "es": "El español usa que para casi todo, sin distinguir personas de cosas, así que hay que prestar atención a usar who con personas en inglés."
+ },
+ "errores": [
+  "Using that for a person instead of who.",
+  "Adding a comma before this kind of clause."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…who…",
+   "funcion": "about a person",
+   "traducciones": {
+    "es": "…que…"
+   }
+  },
+  {
+   "expresion": "…that…",
+   "funcion": "about a thing",
+   "traducciones": {
+    "es": "…que…"
+   }
+  },
+  {
+   "expresion": "The person who…",
+   "funcion": "common opener",
+   "traducciones": {
+    "es": "La persona que…"
+   }
+  },
+  {
+   "expresion": "The thing that…",
+   "funcion": "common opener",
+   "traducciones": {
+    "es": "Lo que…"
+   }
+  },
+  {
+   "expresion": "The place that…",
+   "funcion": "about a place",
+   "traducciones": {
+    "es": "El lugar que…"
+   }
+  },
+  {
+   "expresion": "…I know.",
+   "funcion": "pronoun dropped, informal",
+   "traducciones": {
+    "es": "…que conozco."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is who used for people?",
+  "Is there no comma before the clause?",
+  "Have I used both who and that?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on defining relative clauses. Check the choice between who and that. Do not rewrite the text. Flag anything unclear or unnatural. Flag anything unclear."
+}

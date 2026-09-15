@@ -1,0 +1,51 @@
+{
+ "skillId": "DE-K01", "nivel": "C2", "idioma": "de",
+ "titulo": "Konjunktiv II + Konditionalsatz + Modalverb im Perfekt",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird dieses Muster in einer Kette von Vorwürfen eingesetzt, die sich gegenseitig verstärken, und mit dem Konjunktiv I kombiniert, um einen fremden Vorwurf zu zitieren statt selbst zu urteilen. Das ist der Unterschied zwischen einem einzelnen Satz und einem ganzen Absatz kontrollierter Kritik.",
+ "cuadroReferencia": {
+  "titulo": "Vom Einzelsatz zur Argumentationskette",
+  "columnas": ["Ebene", "Beispiel"],
+  "filas": [
+   ["Einzelner Vorwurf", "Man hätte das wissen müssen."],
+   ["Verkettung", "Hätte man früher reagiert, hätte man auch früher eingreifen können."],
+   ["Zitierter Vorwurf", "Kritiker meinen, man hätte früher reagieren müssen."]
+  ],
+  "notaPie": "Eine Kette aus mehr als zwei Vorwürfen wirkt anklagend statt analytisch — auf C2 zählt, wann man aufhört."
+ },
+ "ejemplos": [
+  {"texto": "Hätte man früher reagiert, hätte man auch früher eingreifen können.", "audio": true},
+  {"texto": "Kritiker meinen, man hätte die Warnzeichen ernster nehmen müssen.", "audio": true},
+  {"texto": "Hätte er nachgefragt, statt zu vermuten, wäre der Fehler vermeidbar gewesen."}
+ ],
+ "notas": [
+  "Eine Verkettung von zwei Vorwürfen (hätte man…, hätte man auch…) ist die anspruchsvollste, aber auch riskanteste Form: sie klingt schnell nach Anklage statt nach Analyse.",
+  "Der zitierte Vorwurf (Kritiker meinen, man hätte…) erlaubt es, eine scharfe Kritik zu formulieren, ohne sie selbst zu vertreten.",
+  "Auf C2 ist die Fähigkeit, die Kette rechtzeitig zu beenden, wichtiger als die Fähigkeit, sie zu bilden."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet dieselbe Verkettung mit mehreren si hubiera-Sätzen hintereinander, aber ohne die zusätzliche Modalverb-Ebene, die das Deutsche zwingend einbaut. Genau diese Ebene ist es, die hispanophonen C2-Sprechern noch entgleitet, wenn der Satz länger wird."
+ },
+ "errores": [
+  "Eine Kette von mehr als zwei Vorwürfen bilden, die anklagend statt analytisch wirkt.",
+  "Den zitierten Vorwurf ohne Konjunktiv I formulieren und ihn dadurch als eigene Meinung erscheinen lassen.",
+  "Die Doppelinfinitiv-Reihenfolge in einer langen Verkettung verlieren."
+ ],
+ "redemittel": [
+  {"expresion": "Hätte man…, hätte man auch…", "funcion": "Verkettung von Vorwürfen", "traducciones": {"es": "de haber…, también se habría podido…", "en": "had one…, one could also have…"}},
+  {"expresion": "Kritiker meinen, man hätte…müssen.", "funcion": "zitierter Vorwurf", "traducciones": {"es": "los críticos opinan que se debería haber…", "en": "critics argue that one should have…"}},
+  {"expresion": "Im Rückblick hätte…können.", "funcion": "distanzierter Rückblick", "traducciones": {"es": "en retrospectiva, se habría podido…", "en": "in retrospect, one could have…"}},
+  {"expresion": "Das hätte sich vermeiden lassen, wenn…", "funcion": "vermeidbare Folge", "traducciones": {"es": "eso se habría podido evitar si…", "en": "that could have been avoided if…"}},
+  {"expresion": "Es wird argumentiert, man hätte…sollen.", "funcion": "distanzierte Kritik, formell", "traducciones": {"es": "se argumenta que se debería haber…", "en": "it is argued that one should have…"}},
+  {"expresion": "Ob man das hätte verhindern können, bleibt offen.", "funcion": "offen gelassener Vorwurf", "traducciones": {"es": "si eso se habría podido evitar, queda abierto", "en": "whether that could have been prevented remains open"}}
+ ],
+ "autochequeo": [
+  "Ist die Kette höchstens zwei Vorwürfe lang?",
+  "Steht beim zitierten Vorwurf der Konjunktiv I?",
+  "Bleibt die Doppelinfinitiv-Reihenfolge auch in langen Sätzen korrekt?",
+  "Wirkt der Absatz analytisch, nicht anklagend?",
+  "Habe ich mindestens eine Form der Distanzierung (Kritiker meinen, im Rückblick) benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verkettung von Konjunktiv II, Konditionalsatz und Modalverb im Perfekt. Prüfen Sie, ob die Kette zu lang wird und ob zitierte Vorwürfe den Konjunktiv I tragen. Schreiben Sie den Text nicht neu."
+}

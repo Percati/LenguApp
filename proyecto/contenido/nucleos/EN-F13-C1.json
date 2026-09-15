@@ -1,0 +1,181 @@
+{
+ "skillId": "EN-F13",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Hedging and Softening Claims",
+ "categoria": "fluency",
+ "descripcion": "Hedging is argumentative precision, not politeness. A hedged claim is harder to attack, easier to revise and more acceptable to an audience that does not share your view. English does this lexically and modally — there is no hedging tense. It lives in adverbs, modals, reporting structures and impersonal constructions.",
+ "cuadroReferencia": {
+  "titulo": "Hedging devices by type",
+  "columnas": [
+   "Type",
+   "Devices",
+   "What it hedges"
+  ],
+  "filas": [
+   [
+    "Modal",
+    "*might*, *may well*, *would*, *could*",
+    "the certainty of the claim"
+   ],
+   [
+    "Frequency / tendency",
+    "*tends to*, *typically*, *broadly*, *in most cases*",
+    "its generality"
+   ],
+   [
+    "Evidential",
+    "*there's some evidence that*, *as far as I can tell*, *on the numbers I've seen*",
+    "your grounds for it"
+   ],
+   [
+    "Impersonal",
+    "*it could be argued that*, *there's a case for*, *one reading is*",
+    "your ownership of it"
+   ],
+   [
+    "Self-limiting",
+    "*I'd be careful about*, *I could be wrong*, *speaking outside my area*",
+    "your authority"
+   ],
+   [
+    "Scope",
+    "*up to a point*, *in principle*, *at least for X*",
+    "its range of application"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*That tends to be the case, though the data is thinner than people assume.*",
+   "audio": true
+  },
+  {
+   "texto": "*There's some evidence to suggest that offsets underperform their stated value.*",
+   "audio": true
+  },
+  {
+   "texto": "*I'd be careful about generalising from one grid.*",
+   "audio": true
+  },
+  {
+   "texto": "*It could be argued that the cost falls on the wrong people.*",
+   "audio": true
+  },
+  {
+   "texto": "*As far as I can tell, nobody has measured this properly.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Would* is the single most productive device: *I'd say*, *I'd argue*, *I'd be careful about*.",
+  "One or two hedges per claim is the ceiling. Stacking destroys credibility.",
+  "Never hedge a verifiable number — it reads as evasive, not careful."
+ ],
+ "contraste": {
+  "es": "Spanish speakers systematically under-hedge in English. *Eso no funciona* translates literally as *that doesn't work*, which lands as blunt; the equivalent English register is *I don't think that's going to work*."
+ },
+ "errores": [
+  "*Eventually* ≠ *eventualmente*. It means \"in the end\", not \"possibly\".",
+  "*Maybe* sentence-initially reads tentative rather than considered. Prefer *perhaps* or *I'd say*.",
+  "Under-hedging, which reads as aggressive rather than confident."
+ ],
+ "redemittel": [
+  {
+   "expresion": "That tends to be…",
+   "funcion": "generalises without committing",
+   "traducciones": {
+    "es": "suele ser…",
+    "de": "Das ist tendenziell…",
+    "fr": "Cela tend à être…",
+    "it": "Tende a essere…",
+    "pt": "Isso tende a ser…"
+   }
+  },
+  {
+   "expresion": "There's some evidence that…",
+   "funcion": "marks the grounds",
+   "traducciones": {
+    "es": "hay indicios de que…",
+    "de": "Es gibt gewisse Hinweise darauf, dass…",
+    "fr": "Il y a des éléments indiquant que…",
+    "it": "Ci sono alcuni elementi che indicano che…",
+    "pt": "Há alguns indícios de que…"
+   }
+  },
+  {
+   "expresion": "I'd be careful about…",
+   "funcion": "limits your own claim",
+   "traducciones": {
+    "es": "yo tendría cuidado con…",
+    "de": "Bei … wäre ich vorsichtig.",
+    "fr": "Je serais prudent avec…",
+    "it": "Starei attento a…",
+    "pt": "Eu teria cuidado com…"
+   }
+  },
+  {
+   "expresion": "It could be argued that…",
+   "funcion": "shifts ownership",
+   "traducciones": {
+    "es": "se podría argumentar que…",
+    "de": "Man könnte argumentieren, dass…",
+    "fr": "On pourrait soutenir que…",
+    "it": "Si potrebbe sostenere che…",
+    "pt": "Poder-se-ia argumentar que…"
+   }
+  },
+  {
+   "expresion": "As far as I can tell…",
+   "funcion": "marks the limits of what you know",
+   "traducciones": {
+    "es": "por lo que puedo ver…",
+    "de": "Soweit ich das beurteilen kann…",
+    "fr": "Pour autant que je puisse en juger…",
+    "it": "Per quanto posso capire…",
+    "pt": "Tanto quanto consigo avaliar…"
+   }
+  },
+  {
+   "expresion": "Up to a point",
+   "funcion": "restricts scope",
+   "traducciones": {
+    "es": "hasta cierto punto",
+    "de": "Bis zu einem gewissen Punkt",
+    "fr": "Jusqu’à un certain point",
+    "it": "Fino a un certo punto",
+    "pt": "Até certo ponto"
+   }
+  },
+  {
+   "expresion": "May well",
+   "funcion": "high probability, not certainty",
+   "traducciones": {
+    "es": "bien puede ser que…",
+    "de": "könnte durchaus",
+    "fr": "pourrait bien",
+    "it": "potrebbe benissimo",
+    "pt": "pode muito bem"
+   }
+  },
+  {
+   "expresion": "On the numbers I've seen",
+   "funcion": "cites your evidence",
+   "traducciones": {
+    "es": "con los datos que vi",
+    "de": "Nach den Zahlen, die ich gesehen habe…",
+    "fr": "D’après les chiffres que j’ai vus…",
+    "it": "In base ai dati che ho visto…",
+    "pt": "Com base nos números que vi…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Six devices from four different types?",
+  "Any sentence with three or more hedges?",
+  "Did I hedge a verifiable number?",
+  "Is there at least one flat factual statement, to show I know the difference?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on hedging. (1) Mark each device and say whether it fits the claim and the register. (2) Mark where I asserted flatly and a C1 professional would have hedged. (3) Mark over-hedging and show the tighter version. (4) Did I hedge any verifiable fact? Do not rewrite the text."
+}

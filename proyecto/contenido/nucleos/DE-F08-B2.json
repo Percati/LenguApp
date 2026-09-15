@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-F08",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Zusammenfassen",
+ "categoria": "fluency",
+ "ancla": "PD B2 (CEFR mediation)",
+ "descripcion": "Auf B2 fasst man einen Text kompakt zusammen, mit dem wichtigsten Punkt am Anfang. Die feinere Struktur mit offenen Fragen und getrennter eigener Einordnung (C1) ist hier noch nicht das Ziel — es reicht, den Kern klar herauszustellen, statt den Text nachzuerzählen.",
+ "cuadroReferencia": {
+  "titulo": "Eine kompakte Zusammenfassung",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Hauptpunkt zuerst",
+    "Es geht vor allem darum, dass…"
+   ],
+   [
+    "Ein bis zwei Stützpunkte",
+    "Ausserdem wird erwähnt, dass…"
+   ],
+   [
+    "Kurzer Abschluss",
+    "Insgesamt zeigt der Text, dass…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Es geht vor allem darum, dass die Stadt mehr Grünflächen plant.",
+   "audio": true
+  },
+  {
+   "texto": "Ausserdem wird erwähnt, dass die Kosten dafür noch unklar sind.",
+   "audio": true
+  },
+  {
+   "texto": "Insgesamt zeigt der Text, dass das Projekt noch am Anfang steht."
+  }
+ ],
+ "notas": [
+  "Der Hauptpunkt sollte am Anfang stehen, nicht am Ende — das ist der wichtigste Unterschied zum Nacherzählen.",
+  "Ein bis zwei Stützpunkte reichen für eine kompakte Zusammenfassung; mehr macht sie zu lang.",
+  "Insgesamt oder zusammenfassend eignen sich gut, um den Abschluss zu markieren."
+ ],
+ "contraste": {
+  "es": "Das Spanische fasst oft näher am Originaltext zusammen und beginnt seltener direkt mit dem Hauptpunkt. Spanischsprachige neigen deshalb dazu, den Text chronologisch nachzuerzählen, statt ihn nach Wichtigkeit zu ordnen."
+ },
+ "errores": [
+  "Den Text chronologisch nacherzählen statt den Hauptpunkt zuerst zu nennen.",
+  "Zu viele Details aus dem Original übernehmen, statt eine echte Zusammenfassung zu schreiben.",
+  "Keinen klaren Abschluss haben, sodass die Zusammenfassung einfach aufhört."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Es geht vor allem darum, dass…",
+   "funcion": "Hauptpunkt",
+   "traducciones": {
+    "es": "Se trata sobre todo de que…",
+    "en": "It's mainly about the fact that…",
+    "fr": "Il s’agit surtout du fait que…",
+    "it": "Si tratta soprattutto del fatto che…",
+    "pt": "Trata-se sobretudo do facto de que…"
+   }
+  },
+  {
+   "expresion": "Ausserdem wird erwähnt, dass…",
+   "funcion": "Stützpunkt",
+   "traducciones": {
+    "es": "Además se menciona que…",
+    "en": "It's also mentioned that…",
+    "fr": "Il est également mentionné que…",
+    "it": "Viene inoltre menzionato che…",
+    "pt": "Também é mencionado que…"
+   }
+  },
+  {
+   "expresion": "Insgesamt zeigt der Text, dass…",
+   "funcion": "Abschluss",
+   "traducciones": {
+    "es": "En general, el texto muestra que…",
+    "en": "Overall, the text shows that…",
+    "fr": "Dans l’ensemble, le texte montre que…",
+    "it": "Nel complesso, il testo mostra che…",
+    "pt": "No geral, o texto mostra que…"
+   }
+  },
+  {
+   "expresion": "Zusammenfassend lässt sich sagen, dass…",
+   "funcion": "Abschluss, formeller",
+   "traducciones": {
+    "es": "En resumen, se puede decir que…",
+    "en": "In summary, it can be said that…",
+    "fr": "En résumé, on peut dire que…",
+    "it": "In sintesi, si può dire che…",
+    "pt": "Em resumo, pode dizer-se que…"
+   }
+  },
+  {
+   "expresion": "Der Text handelt von…",
+   "funcion": "Thema einführen",
+   "traducciones": {
+    "es": "El texto trata sobre…",
+    "en": "The text is about…",
+    "fr": "Le texte parle de…",
+    "it": "Il testo parla di…",
+    "pt": "O texto fala de…"
+   }
+  },
+  {
+   "expresion": "Kurz gesagt,…",
+   "funcion": "kompakter Einstieg",
+   "traducciones": {
+    "es": "En pocas palabras,…",
+    "en": "In short,…",
+    "fr": "En bref,…",
+    "it": "In breve,…",
+    "pt": "Resumindo,…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht der Hauptpunkt am Anfang?",
+  "Sind ein bis zwei Stützpunkte genannt, nicht zu viele Details?",
+  "Gibt es einen klaren Abschluss?",
+  "Ist es eine Zusammenfassung, keine Nacherzählung?",
+  "Ist die Zusammenfassung deutlich kürzer als der Originaltext?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob der Hauptpunkt am Anfang steht und die Zusammenfassung kompakt bleibt. Schreiben Sie den Text nicht neu."
+}

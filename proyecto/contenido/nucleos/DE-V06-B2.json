@@ -1,0 +1,141 @@
+{
+ "skillId": "DE-V06",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Wortbildung: Präfixe, Suffixe, Komposita",
+ "categoria": "vocabulary",
+ "ancla": "PD B1",
+ "descripcion": "Auf B2 lernt man, mit den häufigsten Präfixen und Suffixen selbst neue Wörter zu erschliessen, statt jedes Wort einzeln auswendig zu lernen: un- für das Gegenteil, -heit/-keit für Substantive aus Adjektiven, -bar für Möglichkeit. Das multipliziert den Wortschatz, ohne Listen zu lernen.",
+ "cuadroReferencia": {
+  "titulo": "Häufige Wortbildungsmuster",
+  "columnas": [
+   "Muster",
+   "Bedeutung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "un- + Adjektiv",
+    "Gegenteil",
+    "glücklich → unglücklich"
+   ],
+   [
+    "Adjektiv + -heit/-keit",
+    "Substantiv",
+    "frei → die Freiheit, möglich → die Möglichkeit"
+   ],
+   [
+    "Verb + -bar",
+    "Möglichkeit",
+    "essen → essbar"
+   ],
+   [
+    "Nomen + Nomen",
+    "Kompositum",
+    "das Haus + die Tür → die Haustür"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das Ergebnis war leider völlig unbrauchbar.",
+   "audio": true
+  },
+  {
+   "texto": "Die Möglichkeit, das zu ändern, besteht noch.",
+   "audio": true
+  },
+  {
+   "texto": "Das Wasser ist trinkbar, das habe ich geprüft."
+  }
+ ],
+ "notas": [
+  "Bei Komposita bestimmt das letzte Wort das Genus und die Grundbedeutung: die Haustür ist eine Tür, kein Haus.",
+  "-heit und -keit bilden immer feminine Substantive, ohne Ausnahme.",
+  "-bar an ein Verb angehängt bedeutet fast immer kann + Partizip: essbar heisst kann gegessen werden."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet Wörter oft mit eigenen Wurzeln oder Vorsilben aus dem Lateinischen (posible, comestible), die morphologisch nicht mit den deutschen Mustern übereinstimmen. Spanischsprachige können deshalb die Bedeutung oft erraten, aber nicht die Form selbst korrekt bilden."
+ },
+ "errores": [
+  "Das Genus bei Komposita falsch bestimmen, meist weil das erste statt das letzte Wort gezählt wird.",
+  "Un- mit einem Nomen statt einem Adjektiv kombinieren.",
+  "-bar an ein Verb anhängen, das keine passive Bedeutung zulässt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "un- + Adjektiv",
+   "funcion": "Gegenteil bilden",
+   "traducciones": {
+    "es": "in-/des- + adjetivo",
+    "en": "un-/in- + adjective",
+    "fr": "in-/im-/ir- + adjectif",
+    "it": "in-/im-/ir- + aggettivo",
+    "pt": "in-/im- + adjetivo"
+   }
+  },
+  {
+   "expresion": "-heit/-keit",
+   "funcion": "Substantiv aus Adjektiv",
+   "traducciones": {
+    "es": "-idad/-eza",
+    "en": "-ness/-ity",
+    "fr": "-té/-ité",
+    "it": "-tà/-ità",
+    "pt": "-dade/-idade"
+   }
+  },
+  {
+   "expresion": "-bar",
+   "funcion": "Möglichkeit ausdrücken",
+   "traducciones": {
+    "es": "-ble",
+    "en": "-able",
+    "fr": "-able",
+    "it": "-abile",
+    "pt": "-ável/-ível"
+   }
+  },
+  {
+   "expresion": "Nomen + Nomen",
+   "funcion": "Kompositum bilden",
+   "traducciones": {
+    "es": "sustantivo + de + sustantivo",
+    "en": "noun + noun",
+    "fr": "nom + nom",
+    "it": "nome + nome",
+    "pt": "substantivo + substantivo"
+   }
+  },
+  {
+   "expresion": "-los",
+   "funcion": "ohne etwas",
+   "traducciones": {
+    "es": "sin-",
+    "en": "-less",
+    "fr": "sans-",
+    "it": "senza-",
+    "pt": "sem-"
+   }
+  },
+  {
+   "expresion": "-voll",
+   "funcion": "voll von etwas",
+   "traducciones": {
+    "es": "-oso/lleno de",
+    "en": "-ful",
+    "fr": "-eux/-euse / plein de",
+    "it": "-oso/-osa / pieno di",
+    "pt": "-oso/-osa / cheio de"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Bestimmt das letzte Wort im Kompositum das Genus?",
+  "Ist -heit/-keit korrekt feminin?",
+  "Passt -bar zu einem Verb mit passivischer Möglichkeit?",
+  "Habe ich mindestens drei verschiedene Wortbildungsmuster benutzt?",
+  "Kann ich mindestens ein Wort erklären, das ich noch nie zuvor gesehen habe?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wortbildungsmuster. Prüfen Sie besonders das Genus bei Komposita und die Bildung mit -heit/-keit und -bar. Schreiben Sie den Text nicht neu."
+}

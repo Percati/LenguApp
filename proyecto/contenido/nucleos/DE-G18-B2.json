@@ -1,0 +1,141 @@
+{
+ "skillId": "DE-G18",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Temporale Nebensätze (als, wenn, während, nachdem, seitdem)",
+ "categoria": "grammar",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B2 wird der Unterschied zwischen als (einmalig, Vergangenheit) und wenn (wiederholt oder Gegenwart/Zukunft) gefestigt, ergänzt durch nachdem (mit Zeitenfolge) und seitdem (andauernd). Das ist die Grundlage, um Zeitverhältnisse präzise auszudrücken.",
+ "cuadroReferencia": {
+  "titulo": "Temporale Konnektoren im Überblick",
+  "columnas": [
+   "Konnektor",
+   "Verwendung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "als",
+    "einmaliges Ereignis, Vergangenheit",
+    "Als ich ankam, regnete es."
+   ],
+   [
+    "wenn",
+    "wiederholt oder Gegenwart/Zukunft",
+    "Wenn ich Zeit habe, rufe ich an."
+   ],
+   [
+    "nachdem",
+    "Vorzeitigkeit, oft mit Plusquamperfekt",
+    "Nachdem wir gegessen hatten, gingen wir los."
+   ],
+   [
+    "seitdem",
+    "andauernder Zustand seit einem Zeitpunkt",
+    "Seitdem er umgezogen ist, sehen wir uns seltener."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Als ich ankam, hat es schon geregnet.",
+   "audio": true
+  },
+  {
+   "texto": "Wenn ich Zeit habe, rufe ich dich sofort an.",
+   "audio": true
+  },
+  {
+   "texto": "Nachdem wir gegessen hatten, sind wir spazieren gegangen."
+  }
+ ],
+ "notas": [
+  "Als wird nur für ein einmaliges Ereignis in der Vergangenheit verwendet — für alles andere steht wenn.",
+  "Nachdem verlangt meist unterschiedliche Zeitformen in Haupt- und Nebensatz: Plusquamperfekt im Nebensatz, Perfekt oder Präteritum im Hauptsatz.",
+  "Seitdem drückt aus, dass ein Zustand bis heute andauert."
+ ],
+ "contraste": {
+  "es": "Das Spanische unterscheidet nicht so klar zwischen einmaligem und wiederholtem Ereignis in der Vergangenheit; cuando deckt beide Fälle ab. Spanischsprachige verwechseln deshalb häufig als und wenn, weil ihre Muttersprache diese Unterscheidung nicht erzwingt."
+ },
+ "errores": [
+  "Wenn statt als für ein einmaliges Ereignis in der Vergangenheit verwenden.",
+  "Nach nachdem dieselbe Zeitform in Haupt- und Nebensatz verwenden, ohne die Vorzeitigkeit zu markieren.",
+  "Seitdem und seit verwechseln, wo seit eine reine Präposition ist und seitdem ein Konnektor."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Als ich…, …",
+   "funcion": "einmaliges Ereignis, Vergangenheit",
+   "traducciones": {
+    "es": "Cuando yo…, …",
+    "en": "When I…, …",
+    "fr": "Quand je…, …",
+    "it": "Quando io…, …",
+    "pt": "Quando eu…, …"
+   }
+  },
+  {
+   "expresion": "Wenn ich…, …",
+   "funcion": "wiederholt oder Zukunft",
+   "traducciones": {
+    "es": "Cuando yo…, …",
+    "en": "When(ever) I…, …",
+    "fr": "Quand je…, …",
+    "it": "Quando io…, …",
+    "pt": "Quando eu…, …"
+   }
+  },
+  {
+   "expresion": "Nachdem wir … hatten, …",
+   "funcion": "Vorzeitigkeit",
+   "traducciones": {
+    "es": "Después de que… (hubiéramos)…, …",
+    "en": "After we had…, …",
+    "fr": "Après avoir…, …",
+    "it": "Dopo che avevamo…, …",
+    "pt": "Depois de termos…, …"
+   }
+  },
+  {
+   "expresion": "Seitdem…, …",
+   "funcion": "andauernder Zustand",
+   "traducciones": {
+    "es": "Desde que…, …",
+    "en": "Ever since…, …",
+    "fr": "Depuis que…, …",
+    "it": "Da quando…, …",
+    "pt": "Desde que…, …"
+   }
+  },
+  {
+   "expresion": "Während…, …",
+   "funcion": "Gleichzeitigkeit",
+   "traducciones": {
+    "es": "Mientras…, …",
+    "en": "While…, …",
+    "fr": "Pendant que…, …",
+    "it": "Mentre…, …",
+    "pt": "Enquanto…, …"
+   }
+  },
+  {
+   "expresion": "Bevor…, …",
+   "funcion": "Vorzeitigkeit umgekehrt",
+   "traducciones": {
+    "es": "Antes de que…, …",
+    "en": "Before…, …",
+    "fr": "Avant que…, …",
+    "it": "Prima che…, …",
+    "pt": "Antes de…, …"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich als für ein einmaliges Ereignis in der Vergangenheit benutzt?",
+  "Ist nach nachdem die Vorzeitigkeit korrekt markiert?",
+  "Ist seitdem korrekt von seit unterschieden?",
+  "Habe ich mindestens drei verschiedene temporale Konnektoren benutzt?",
+  "Stimmt die Zeitform in Haupt- und Nebensatz zusammen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die temporalen Konnektoren als, wenn, nachdem und seitdem. Prüfen Sie die Wahl und die Zeitenfolge. Schreiben Sie den Text nicht neu."
+}

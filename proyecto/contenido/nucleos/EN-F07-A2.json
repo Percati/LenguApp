@@ -1,0 +1,108 @@
+{
+ "skillId": "EN-F07",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Survival: Transactions (Shops, Tickets, Appointments)",
+ "categoria": "fluency",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you use the fixed phrases needed for shopping, buying tickets, and making appointments. It's about getting through these everyday transactions, not free production. These are among the most common real-world situations at this level.",
+ "cuadroReferencia": {
+  "titulo": "Transaction phrases",
+  "columnas": [
+   "Situation",
+   "Phrase"
+  ],
+  "filas": [
+   [
+    "Shopping",
+    "How much is this?"
+   ],
+   [
+    "Tickets",
+    "One ticket to London, please."
+   ],
+   [
+    "Appointments",
+    "I'd like to make an appointment."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Excuse me, how much is this jacket?",
+   "audio": true
+  },
+  {
+   "texto": "One ticket to London, please.",
+   "audio": true
+  },
+  {
+   "texto": "I'd like to make an appointment for next week."
+  }
+ ],
+ "notas": [
+  "How much is this? is the single most useful phrase for shopping.",
+  "One ticket to… is a fixed, simple pattern for buying transport tickets.",
+  "I'd like to… is a polite way to start most requests."
+ ],
+ "contraste": {
+  "es": "El español pide precios y tickets de forma muy similar (¿cuánto cuesta?, un billete para…), así que estas fórmulas se transfieren directamente."
+ },
+ "errores": [
+  "Forgetting please in a request.",
+  "Using too direct a phrase instead of I'd like to…"
+ ],
+ "redemittel": [
+  {
+   "expresion": "How much is this?",
+   "funcion": "shopping",
+   "traducciones": {
+    "es": "¿Cuánto cuesta esto?"
+   }
+  },
+  {
+   "expresion": "One ticket to…, please.",
+   "funcion": "buying a ticket",
+   "traducciones": {
+    "es": "Un boleto a…, por favor."
+   }
+  },
+  {
+   "expresion": "I'd like to make an appointment.",
+   "funcion": "appointments",
+   "traducciones": {
+    "es": "Quisiera hacer una cita."
+   }
+  },
+  {
+   "expresion": "Do you have this in a different size?",
+   "funcion": "shopping",
+   "traducciones": {
+    "es": "¿Tiene esto en otro talle?"
+   }
+  },
+  {
+   "expresion": "Can I pay by card?",
+   "funcion": "paying",
+   "traducciones": {
+    "es": "¿Puedo pagar con tarjeta?"
+   }
+  },
+  {
+   "expresion": "What time is the appointment?",
+   "funcion": "appointments",
+   "traducciones": {
+    "es": "¿A qué hora es la cita?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I used please in requests?",
+  "Have I used at least three different transaction phrases?",
+  "Are the phrases polite?",
+  "Does the phrase sound natural?",
+  "Does the phrase sound natural?"
+ ],
+ "promptCorreccion": "Focus only on whether the transaction phrases are clear and polite. Check whether please is used in requests. Do not rewrite the text. Flag anything that sounds too blunt for a shop or office."
+}

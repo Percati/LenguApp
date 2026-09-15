@@ -1,0 +1,133 @@
+{
+ "skillId": "DE-F14",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Ironie, Untertreibung und Humor",
+ "categoria": "fluency",
+ "ancla": "PD>B2",
+ "descripcion": "Deutscher Humor arbeitet oft mit trockener Untertreibung und markierter Ironie, die durch Tonfall oder ein Signalwort erkennbar wird. Dieses Terrain ist riskant für Lernende — diese Karte bleibt deshalb bewusst eng und vorsichtig.",
+ "cuadroReferencia": {
+  "titulo": "Untertreibung erkennen",
+  "columnas": [
+   "Situation",
+   "Untertreibende Aussage",
+   "Eigentliche Bedeutung"
+  ],
+  "filas": [
+   [
+    "Ein Desaster",
+    "Das lief nicht ganz optimal."
+   ],
+   [
+    "Etwas sehr Gutes",
+    "Ganz nett, muss ich sagen."
+   ],
+   [
+    "Eine grosse Verspätung",
+    "Es hat sich ein bisschen verzögert."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das lief, sagen wir mal, nicht ganz optimal.",
+   "audio": true
+  },
+  {
+   "texto": "Ganz nett, muss ich sagen — für den ersten Versuch.",
+   "audio": true
+  },
+  {
+   "texto": "Es hat sich leider ein kleines bisschen verzögert. Drei Stunden."
+  }
+ ],
+ "notas": [
+  "Untertreibung funktioniert über den Ton — schriftlich kann sie leicht als wörtliche Aussage missverstanden werden.",
+  "Ein Nachsatz wie drei Stunden nach einem bisschen macht die Untertreibung explizit und für Lernende sicherer verständlich.",
+  "Dieses Register ist stark kulturell geprägt und funktioniert nicht in jedem Kontext oder mit jedem Publikum."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine so verbreitete Konvention der ironischen Untertreibung als alltägliches Humormittel; Ironie wird eher durch Betonung oder explizite Signale markiert. Spanischsprachige nehmen solche deutschen Aussagen deshalb oft wörtlich, ohne die Umkehrung der Bedeutung zu erkennen."
+ },
+ "errores": [
+  "Eine untertreibende Aussage wörtlich nehmen, statt die ironische Lücke zu erkennen.",
+  "Untertreibung in einem Kontext versuchen, in dem das Gegenüber den kulturellen Bezug nicht teilt, was zu Missverständnissen führt.",
+  "Dieses Register überstrapazieren, bis es aufgesetzt statt authentisch wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das lief nicht ganz optimal.",
+   "funcion": "untertreibt ein Desaster",
+   "traducciones": {
+    "es": "No salió del todo bien.",
+    "en": "That didn't go entirely smoothly.",
+    "fr": "Ça ne s’est pas passé de façon tout à fait optimale.",
+    "it": "Non è andata proprio nel migliore dei modi.",
+    "pt": "Não correu totalmente bem."
+   }
+  },
+  {
+   "expresion": "Ganz nett, muss ich sagen.",
+   "funcion": "untertreibt Lob",
+   "traducciones": {
+    "es": "Bastante lindo, tengo que decir.",
+    "en": "Quite nice, I must say.",
+    "fr": "Plutôt sympa, je dois dire.",
+    "it": "Niente male, devo dire.",
+    "pt": "Bastante agradável, tenho de dizer."
+   }
+  },
+  {
+   "expresion": "Es hat sich ein bisschen verzögert.",
+   "funcion": "untertreibt eine Verspätung",
+   "traducciones": {
+    "es": "Se retrasó un poquito.",
+    "en": "It's been delayed a bit.",
+    "fr": "Ça a pris un peu de retard.",
+    "it": "Si è ritardato un po’.",
+    "pt": "Atrasou-se um pouco."
+   }
+  },
+  {
+   "expresion": "…, sagen wir mal, …",
+   "funcion": "signalisiert die Untertreibung",
+   "traducciones": {
+    "es": "…, digamos, …",
+    "en": "…, let's say, …",
+    "fr": "…, disons, …",
+    "it": "…, diciamo, …",
+    "pt": "…, digamos, …"
+   }
+  },
+  {
+   "expresion": "Na, das war ja großartig.",
+   "funcion": "ironisch, umgekehrte Bedeutung",
+   "traducciones": {
+    "es": "Bueno, eso sí que estuvo genial.",
+    "en": "Well, that was just great.",
+    "fr": "Eh bien, c’était vraiment formidable.",
+    "it": "Beh, è stato proprio fantastico.",
+    "pt": "Bem, isso foi mesmo ótimo."
+   }
+  },
+  {
+   "expresion": "Kann man so machen.",
+   "funcion": "distanzierte, leicht ironische Zustimmung",
+   "traducciones": {
+    "es": "Se puede hacer así, supongo.",
+    "en": "I suppose that's one way to do it.",
+    "fr": "On peut faire comme ça.",
+    "it": "Si può fare così.",
+    "pt": "Pode fazer-se assim."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Würde das Gegenüber den kulturellen Kontext teilen, um die Ironie zu erkennen?",
+  "Ist der Ton oder ein Signalwort klar genug markiert?",
+  "Habe ich vermieden, dieses Register in einem Kontext zu verwenden, wo es als wörtlich missverstanden werden könnte?",
+  "Wirkt die Untertreibung natürlich, nicht aufgesetzt?",
+  "Habe ich es sparsam eingesetzt, nicht in jedem Satz?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Untertreibung im Kontext funktioniert und klar genug markiert ist. Markieren Sie Stellen, an denen sie wörtlich missverstanden werden könnte. Schreiben Sie den Text nicht neu."
+}

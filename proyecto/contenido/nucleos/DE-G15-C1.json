@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-G15",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Konjunktiv I und indirekte Rede",
+ "categoria": "grammar",
+ "ancla": "Aspekte B2",
+ "descripcion": "Auf C1 wird die indirekte Rede im Nominalstil und über mehrere Sätze hinweg konsequent durchgehalten, wie es in Presse- und Protokolltexten üblich ist. Die einmalige Bildung ist bereits bekannt — hier geht es um die durchgängige Anwendung in einem ganzen Absatz.",
+ "cuadroReferencia": {
+  "titulo": "Konjunktiv I über mehrere Sätze",
+  "columnas": [
+   "Element",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Erster Satz",
+    "Der Minister erklärte, die Reform sei notwendig."
+   ],
+   [
+    "Fortsetzung, gleicher Konjunktiv",
+    "Sie werde bereits im nächsten Jahr umgesetzt."
+   ],
+   [
+    "Wechsel bei Zusammenfall",
+    "Die Kritiker hätten jedoch Bedenken geäußert."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Der Minister erklärte, die Reform sei notwendig und werde bereits im nächsten Jahr umgesetzt.",
+   "audio": true
+  },
+  {
+   "texto": "Die Kritiker hätten jedoch erhebliche Bedenken geäußert, hieß es weiter.",
+   "audio": true
+  },
+  {
+   "texto": "Man wisse noch nicht, wie die Finanzierung aussehen solle."
+  }
+ ],
+ "notas": [
+  "In einem längeren berichteten Abschnitt bleibt der Konjunktiv I (oder II bei Zusammenfall) über mehrere Sätze konsistent, nicht nur im ersten.",
+  "Heisst es weiter oder so die Erklärung markieren, dass die Quellenangabe weitergilt, ohne sie jedes Mal zu wiederholen.",
+  "Ein Rückfall in den Indikativ mitten im berichteten Abschnitt lässt den Text wie eine eigene Behauptung wirken."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keinen eigenen Modus für berichtete Rede und markiert die Distanz vor allem einmalig am Satzanfang (según él). Spanischsprachige neigen deshalb dazu, nach dem ersten Satz in den Indikativ zurückzufallen, weil ihre Muttersprache die Distanzierung nicht über mehrere Sätze grammatisch verlangt."
+ },
+ "errores": [
+  "Nach dem ersten Satz in den Indikativ zurückfallen.",
+  "Bei jedem Satz die Quelle erneut nennen, statt heisst es weiter zu verwenden.",
+  "Konjunktiv I verwenden, wo er mit dem Indikativ zusammenfällt, ohne zu Konjunktiv II zu wechseln."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…erklärte, …sei…und…werde…",
+   "funcion": "Konjunktiv I über mehrere Teile",
+   "traducciones": {
+    "es": "…declaró que…era…y…sería…",
+    "en": "…stated that…was…and would be…",
+    "fr": "…a déclaré que…était…et…serait…",
+    "it": "…ha dichiarato che…era…e…sarebbe…",
+    "pt": "…declarou que…era…e…seria…"
+   }
+  },
+  {
+   "expresion": "…, heisst es weiter,",
+   "funcion": "Quelle fortsetzen ohne Wiederholung",
+   "traducciones": {
+    "es": "…, se añade,",
+    "en": "…, it goes on to say,",
+    "fr": "…, poursuit le texte,",
+    "it": "…, si legge inoltre,",
+    "pt": "…, acrescenta-se,"
+   }
+  },
+  {
+   "expresion": "Man wisse noch nicht, …",
+   "funcion": "unpersönliche berichtete Aussage",
+   "traducciones": {
+    "es": "Aún no se sabría…",
+    "en": "It was said that it wasn't yet known…",
+    "fr": "On ne saurait pas encore…",
+    "it": "Non si saprebbe ancora…",
+    "pt": "Ainda não se saberia…"
+   }
+  },
+  {
+   "expresion": "…hätten Bedenken geäußert.",
+   "funcion": "Konjunktiv II bei Zusammenfall",
+   "traducciones": {
+    "es": "…habrían expresado reservas.",
+    "en": "…were said to have raised concerns.",
+    "fr": "…auraient exprimé des réserves.",
+    "it": "…avrebbero espresso delle riserve.",
+    "pt": "…teriam manifestado reservas."
+   }
+  },
+  {
+   "expresion": "So die offizielle Erklärung.",
+   "funcion": "Quelle abschliessend nennen",
+   "traducciones": {
+    "es": "Según la explicación oficial.",
+    "en": "According to the official statement.",
+    "fr": "C’est du moins l’explication officielle.",
+    "it": "Così recita la spiegazione ufficiale.",
+    "pt": "Segundo a explicação oficial."
+   }
+  },
+  {
+   "expresion": "Wie verlautet, …",
+   "funcion": "unbestimmte Quelle, sehr formell",
+   "traducciones": {
+    "es": "Según se ha sabido,…",
+    "en": "According to reports,…",
+    "fr": "Selon certaines informations,…",
+    "it": "Secondo quanto riferito,…",
+    "pt": "Segundo consta,…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Bleibt der Konjunktiv (I oder II) über den ganzen Abschnitt konsistent?",
+  "Ist die Quelle nicht bei jedem Satz wiederholt?",
+  "Ist bei Zusammenfall korrekt zu Konjunktiv II gewechselt?",
+  "Wirkt der Text wie ein Bericht, nicht wie eine eigene Behauptung?",
+  "Habe ich mindestens drei Sätze im berichteten Modus verbunden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz von Konjunktiv I und II über mehrere Sätze in der indirekten Rede. Schreiben Sie den Text nicht neu."
+}

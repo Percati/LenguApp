@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-F08",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Comparing and Contrasting",
+ "categoria": "fluency",
+ "ancla": "CV Sustained monologue: giving information",
+ "descripcion": "At C1, comparison moves past simple comparatives into weighted, qualified contrast: acknowledging that two things are similar in one respect and different in another, without collapsing the nuance into a flat this is better than that.",
+ "cuadroReferencia": {
+  "titulo": "Weighted comparison",
+  "columnas": [
+   "Move",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Similarity with a limit",
+    "They're similar in scope, though not in ambition."
+   ],
+   [
+    "Qualified preference",
+    "On balance, I'd lean towards the first, but only just."
+   ],
+   [
+    "Shared ground first",
+    "Both share the same underlying assumption."
+   ],
+   [
+    "Contrast on one dimension",
+    "Where they really diverge is in execution."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "They're similar in scope, though not in ambition.",
+   "audio": true
+  },
+  {
+   "texto": "On balance, I'd lean towards the first option, but only just.",
+   "audio": true
+  },
+  {
+   "texto": "Where they really diverge is in how each handles failure."
+  }
+ ],
+ "notas": [
+  "Naming shared ground before the contrast makes the comparison feel fair rather than one-sided.",
+  "But only just is a useful qualifier that keeps a preference from sounding absolute.",
+  "Where they really diverge is in… isolates the single dimension that matters most, instead of listing every difference."
+ ],
+ "contraste": {
+  "es": "El español suele comparar de forma más tajante (esto es mejor que aquello) sin matizar tanto el grado de la preferencia. La estructura inglesa on balance…, but only just añade un matiz de duda que en español normalmente se expresa con una frase aparte, no integrada en la misma oración comparativa."
+ },
+ "errores": [
+  "Comparing without naming any shared ground first, which makes the contrast feel one-sided.",
+  "Stating a preference as absolute when the actual difference is marginal.",
+  "Listing every difference instead of isolating the one dimension that matters most."
+ ],
+ "redemittel": [
+  {
+   "expresion": "They're similar in X, though not in Y.",
+   "funcion": "similarity with a limit",
+   "traducciones": {
+    "es": "son parecidos en X, aunque no en Y",
+    "de": "Sie sind sich in X ähnlich, aber nicht in Y.",
+    "fr": "Ils se ressemblent sur X, mais pas sur Y.",
+    "it": "Sono simili in X, ma non in Y.",
+    "pt": "São semelhantes em X, mas não em Y."
+   }
+  },
+  {
+   "expresion": "On balance, I'd lean towards…",
+   "funcion": "qualified preference",
+   "traducciones": {
+    "es": "en general, me inclinaría por…",
+    "de": "Alles in allem würde ich eher zu… tendieren.",
+    "fr": "Tout bien considéré, je pencherais plutôt pour…",
+    "it": "Tutto sommato, propenderei per…",
+    "pt": "No geral, inclinar-me-ia para…"
+   }
+  },
+  {
+   "expresion": "…, but only just.",
+   "funcion": "softens an absolute preference",
+   "traducciones": {
+    "es": "…, pero por muy poco",
+    "de": "…, aber nur knapp.",
+    "fr": "…, mais de justesse.",
+    "it": "…, ma per un soffio.",
+    "pt": "…, mas por muito pouco."
+   }
+  },
+  {
+   "expresion": "Both share the same…",
+   "funcion": "names shared ground",
+   "traducciones": {
+    "es": "ambos comparten el mismo…",
+    "de": "Beide haben dasselbe…",
+    "fr": "Les deux partagent le même…",
+    "it": "Entrambi condividono lo stesso…",
+    "pt": "Ambos partilham o mesmo…"
+   }
+  },
+  {
+   "expresion": "Where they really diverge is in…",
+   "funcion": "isolates the key difference",
+   "traducciones": {
+    "es": "donde realmente difieren es en…",
+    "de": "Wo sie sich wirklich unterscheiden, ist…",
+    "fr": "Là où ils divergent vraiment, c’est…",
+    "it": "Dove divergono davvero è…",
+    "pt": "Onde realmente divergem é em…"
+   }
+  },
+  {
+   "expresion": "It's less a question of X and more one of Y.",
+   "funcion": "reframes the comparison",
+   "traducciones": {
+    "es": "es menos una cuestión de X que de Y",
+    "de": "Es geht weniger um X als vielmehr um Y.",
+    "fr": "C’est moins une question de X que de Y.",
+    "it": "È meno una questione di X e più una di Y.",
+    "pt": "É menos uma questão de X e mais uma de Y."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is shared ground named before the contrast?",
+  "Is any stated preference appropriately qualified rather than absolute?",
+  "Is the comparison focused on the one dimension that matters most?",
+  "Would a listener sense fairness or one-sidedness in the comparison?",
+  "Have I avoided listing every possible difference instead of picking the key one?"
+ ],
+ "promptCorreccion": "Focus only on how the comparison is structured: shared ground, qualified preference, key dimension of difference. Say whether the comparison feels fair or one-sided, and flag any preference stated as absolute when it isn't. Do not rewrite the text."
+}

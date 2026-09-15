@@ -1,0 +1,114 @@
+{
+ "skillId": "DE-F01",
+ "nivel": "A2",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Meinung äußern und begründen",
+ "categoria": "fluency",
+ "ancla": "PD A2",
+ "descripcion": "Auf A2 äußert man eine sehr einfache Meinung mit ich finde und gibt, wenn möglich, einen kurzen Grund mit weil. Diese einfache Form reicht für die meisten Alltagsgespräche auf diesem Niveau. Es geht darum, sich verständlich zu machen, nicht um eine ausgefeilte Argumentation.",
+ "cuadroReferencia": {
+  "titulo": "Einfache Meinung",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Meinung",
+    "Ich finde das gut."
+   ],
+   [
+    "Grund",
+    "…, weil es billig ist."
+   ],
+   [
+    "Alternative",
+    "Ich mag das."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich finde das Restaurant sehr gut.",
+   "audio": true
+  },
+  {
+   "texto": "Ich finde das schlecht, weil es teuer ist.",
+   "audio": true
+  },
+  {
+   "texto": "Ich mag das nicht so gern."
+  }
+ ],
+ "notas": [
+  "Ich finde ist die einfachste Form, eine Meinung zu äußern.",
+  "Weil kann eine kurze Begründung liefern.",
+  "Ich mag ist eine Alternative für Vorlieben."
+ ],
+ "contraste": {
+  "es": "Das Spanische äußert Meinungen mit me parece oder creo que auf sehr ähnliche Weise."
+ },
+ "errores": [
+  "Nach weil das Verb nicht ans Ende stellen.",
+  "Eine Meinung ohne jeden Grund äußern."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich finde das…",
+   "funcion": "Meinung",
+   "traducciones": {
+    "es": "Me parece…",
+    "en": "I think that's…"
+   }
+  },
+  {
+   "expresion": "…, weil…",
+   "funcion": "Grund",
+   "traducciones": {
+    "es": "…, porque…",
+    "en": "…, because…"
+   }
+  },
+  {
+   "expresion": "Ich mag…",
+   "funcion": "Vorliebe",
+   "traducciones": {
+    "es": "Me gusta…",
+    "en": "I like…"
+   }
+  },
+  {
+   "expresion": "Ich mag…nicht.",
+   "funcion": "Abneigung",
+   "traducciones": {
+    "es": "No me gusta…",
+    "en": "I don't like…"
+   }
+  },
+  {
+   "expresion": "Das ist gut/schlecht.",
+   "funcion": "einfache Bewertung",
+   "traducciones": {
+    "es": "Eso es bueno/malo.",
+    "en": "That's good/bad."
+   }
+  },
+  {
+   "expresion": "Ich denke, das ist…",
+   "funcion": "Meinung, Alternative",
+   "traducciones": {
+    "es": "Pienso que es…",
+    "en": "I think it's…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich eine Meinung geäußert?",
+  "Habe ich, wenn möglich, einen Grund mit weil gegeben?",
+  "Steht das Verb nach weil am Ende?",
+  "Klingt der Satz natürlich?",
+  "Klingt der Satz natürlich?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Meinung klar ist und ob weil richtig gebildet wird. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob mehr als eine Formel benutzt wird."
+}

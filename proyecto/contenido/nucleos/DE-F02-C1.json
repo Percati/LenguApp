@@ -1,0 +1,133 @@
+{
+ "skillId": "DE-F02",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Zustimmen und widersprechen",
+ "categoria": "fluency",
+ "ancla": "Erkundungen C1",
+ "descripcion": "C1-Widerspruch unterscheidet zwischen Teilzustimmung, echtem Widerspruch und höflicher Ablehnung — und wählt gezielt zwischen den dreien, statt immer die gleiche Formel zu benutzen. Wer nur ich stimme nicht zu kennt, hat kein Register, sondern eine einzige Lautstärke.",
+ "cuadroReferencia": {
+  "titulo": "Drei Grade des Widerspruchs",
+  "columnas": [
+   "Grad",
+   "Formel"
+  ],
+  "filas": [
+   [
+    "Teilzustimmung",
+    "Da ist sicher etwas dran, allerdings…"
+   ],
+   [
+    "Höflicher Widerspruch",
+    "Ich sehe das etwas anders."
+   ],
+   [
+    "Klarer Widerspruch, sachlich",
+    "Dem würde ich entschieden widersprechen."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Da ist sicher etwas dran, allerdings greift das meiner Meinung nach zu kurz.",
+   "audio": true
+  },
+  {
+   "texto": "Ich sehe das etwas anders: Die Ursache liegt woanders.",
+   "audio": true
+  },
+  {
+   "texto": "Dem würde ich entschieden widersprechen, denn die Datenlage zeigt das Gegenteil."
+  }
+ ],
+ "notas": [
+  "Da ist sicher etwas dran erkennt den Kern eines Arguments an, bevor man es einschränkt — das ist der Unterschied zu B2-Widerspruch, der oft direkt einsteigt.",
+  "Entschieden widersprechen ist sachlich, nicht aggressiv, solange ein Beleg folgt.",
+  "Zu kurz greifen ist eine feste, sehr nützliche Wendung für: das Argument ist nicht falsch, aber unvollständig."
+ ],
+ "contraste": {
+  "es": "Das Spanische erlaubt direkteren Widerspruch, ohne dass es unhöflich wirkt (no estoy de acuerdo). Im Deutschen braucht derselbe Inhalt auf C1 fast immer eine einleitende Anerkennung, sonst wirkt es schroffer als beabsichtigt.",
+  "en": "English softens disagreement in a very similar way (I see it a bit differently), so the structure transfers almost directly — the main gap is that greift zu kurz has no fixed English idiom and gets flattened to a longer paraphrase like doesn't go far enough."
+ },
+ "errores": [
+  "Direkt widersprechen ohne jede Anerkennung des Arguments, was auf C1-Niveau unhöflicher wirkt als beabsichtigt.",
+  "Immer dieselbe Widerspruchsformel benutzen, unabhängig vom Grad des Widerspruchs.",
+  "Widersprechen ohne Beleg, was wie eine reine Behauptung wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Da ist sicher etwas dran, allerdings…",
+   "funcion": "Teilzustimmung",
+   "traducciones": {
+    "es": "Algo de razón hay, sin embargo…",
+    "en": "There's certainly something to that, however…",
+    "fr": "Il y a certainement du vrai là-dedans, cependant…",
+    "it": "C’è sicuramente del vero, tuttavia…",
+    "pt": "Há certamente alguma verdade nisso, no entanto…"
+   }
+  },
+  {
+   "expresion": "Ich sehe das etwas anders.",
+   "funcion": "höflicher Widerspruch",
+   "traducciones": {
+    "es": "Yo lo veo un poco distinto.",
+    "en": "I see it a bit differently.",
+    "fr": "Je vois les choses un peu différemment.",
+    "it": "Io la vedo un po’ diversamente.",
+    "pt": "Eu vejo isso de forma um pouco diferente."
+   }
+  },
+  {
+   "expresion": "Dem würde ich entschieden widersprechen.",
+   "funcion": "klarer Widerspruch, sachlich",
+   "traducciones": {
+    "es": "A eso me opondría rotundamente.",
+    "en": "I would strongly disagree with that.",
+    "fr": "Je m’y opposerais fermement.",
+    "it": "Mi opporrei decisamente.",
+    "pt": "Discordaria veementemente disso."
+   }
+  },
+  {
+   "expresion": "Das greift meiner Meinung nach zu kurz.",
+   "funcion": "Argument als unvollständig markieren",
+   "traducciones": {
+    "es": "Eso, a mi parecer, se queda corto.",
+    "en": "That, in my view, doesn't go far enough.",
+    "fr": "À mon avis, cela ne va pas assez loin.",
+    "it": "A mio avviso, questo è riduttivo.",
+    "pt": "Na minha opinião, isso fica aquém."
+   }
+  },
+  {
+   "expresion": "So einfach ist das nicht.",
+   "funcion": "informeller Widerspruch",
+   "traducciones": {
+    "es": "No es tan simple.",
+    "en": "It's not that simple.",
+    "fr": "Ce n’est pas si simple.",
+    "it": "Non è così semplice.",
+    "pt": "Não é assim tão simples."
+   }
+  },
+  {
+   "expresion": "Insofern stimme ich zu, als…",
+   "funcion": "eingeschränkte Zustimmung, formell",
+   "traducciones": {
+    "es": "Estoy de acuerdo en la medida en que…",
+    "en": "I agree insofar as…",
+    "fr": "Je suis d’accord dans la mesure où…",
+    "it": "Sono d’accordo nella misura in cui…",
+    "pt": "Concordo na medida em que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich den passenden Grad gewählt: Teilzustimmung, höflich oder klar?",
+  "Erkenne ich das Argument zuerst an, bevor ich widerspreche?",
+  "Folgt auf den Widerspruch ein Beleg?",
+  "Wirkt der Widerspruch sachlich, nicht aggressiv?",
+  "Habe ich einen Beleg für meine Position genannt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Grad des Widerspruchs. Prüfen Sie, ob er zur Situation passt und ob eine Anerkennung des Arguments vorausgeht. Schreiben Sie den Text nicht neu."
+}

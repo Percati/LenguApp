@@ -1,0 +1,136 @@
+{
+ "skillId": "DE-F10",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Abschwächen und relativieren",
+ "categoria": "fluency",
+ "ancla": "PD>B2",
+ "descripcion": "Auf C1 wird die Abschwächung präziser dosiert: mehrere Mittel aus verschiedenen Kategorien kombiniert, aber nie so viele, dass die Kernaussage verschwindet. Das Ziel ist eine Aussage, die vorsichtig klingt und trotzdem etwas Konkretes sagt.",
+ "cuadroReferencia": {
+  "titulo": "Abschwächung dosieren",
+  "columnas": [
+   "Kategorie",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Adverb",
+    "tendenziell, weitgehend, im Grunde"
+   ],
+   [
+    "Modalverb",
+    "dürfte, könnte, müsste"
+   ],
+   [
+    "Feste Wendung",
+    "soweit ich das beurteilen kann"
+   ],
+   [
+    "Einschränkung",
+    "zumindest bei X, bis zu einem gewissen Grad"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Tendenziell dürfte sich das positiv auswirken, zumindest kurzfristig.",
+   "audio": true
+  },
+  {
+   "texto": "Soweit ich das beurteilen kann, ist das Risiko überschaubar.",
+   "audio": true
+  },
+  {
+   "texto": "Das gilt bis zu einem gewissen Grad, aber nicht uneingeschränkt."
+  }
+ ],
+ "notas": [
+  "Zwei Abschwächungsmittel pro Aussage sind das Maximum — mehr lässt die Kernaussage verschwinden.",
+  "Eine Einschränkung wie zumindest bei X grenzt die Reichweite der Aussage ein, ohne sie ganz zurückzunehmen.",
+  "Eine gesicherte Tatsache sollte nie abgeschwächt werden — das wirkt ausweichend statt vorsichtig."
+ ],
+ "contraste": {
+  "es": "Das Spanische schwächt vor allem über den Konditional und creo que ab und verteilt die Last weniger auf verschiedene Wortarten als das Deutsche. Wer nur ich glaube benutzt, deckt im Deutschen nur eine von mehreren Kategorien ab und wirkt dadurch weniger differenziert."
+ },
+ "errores": [
+  "Mehr als zwei Abschwächungsmittel in einer Aussage kombinieren.",
+  "Eine gesicherte Zahl oder Tatsache abschwächen.",
+  "Nur eine einzige Abschwächungskategorie durchgehend verwenden."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Tendenziell…",
+   "funcion": "Neigung ohne Regel",
+   "traducciones": {
+    "es": "Tendencialmente…",
+    "en": "On the whole,…",
+    "fr": "Globalement…",
+    "it": "Tendenzialmente…",
+    "pt": "De um modo geral…"
+   }
+  },
+  {
+   "expresion": "Soweit ich das beurteilen kann,…",
+   "funcion": "Grenzen des Wissens",
+   "traducciones": {
+    "es": "Por lo que puedo juzgar,…",
+    "en": "As far as I can judge,…",
+    "fr": "Pour autant que je puisse en juger,…",
+    "it": "Per quanto posso giudicare,…",
+    "pt": "Tanto quanto posso avaliar,…"
+   }
+  },
+  {
+   "expresion": "…, zumindest bei…",
+   "funcion": "Reichweite einschränken",
+   "traducciones": {
+    "es": "…, al menos en…",
+    "en": "…, at least in…",
+    "fr": "…, du moins chez/dans…",
+    "it": "…, almeno per/in…",
+    "pt": "…, pelo menos em…"
+   }
+  },
+  {
+   "expresion": "Das dürfte…",
+   "funcion": "wahrscheinliche Vermutung",
+   "traducciones": {
+    "es": "Probablemente sea…",
+    "en": "That's probably…",
+    "fr": "C’est probablement…",
+    "it": "Probabilmente è…",
+    "pt": "Provavelmente é…"
+   }
+  },
+  {
+   "expresion": "In gewisser Hinsicht…",
+   "funcion": "Teilzustimmung",
+   "traducciones": {
+    "es": "En cierto sentido…",
+    "en": "In a sense…",
+    "fr": "D’une certaine manière…",
+    "it": "In un certo senso…",
+    "pt": "Em certo sentido…"
+   }
+  },
+  {
+   "expresion": "Das gilt nicht uneingeschränkt.",
+   "funcion": "Grenze der Aussage markieren",
+   "traducciones": {
+    "es": "Eso no vale sin excepciones.",
+    "en": "That doesn't hold without exception.",
+    "fr": "Cela n’est pas valable sans réserve.",
+    "it": "Questo non vale senza riserve.",
+    "pt": "Isso não se aplica sem restrições."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Hat eine Aussage höchstens zwei Abschwächungsmittel?",
+  "Habe ich eine gesicherte Tatsache abgeschwächt?",
+  "Sind mindestens zwei verschiedene Kategorien vertreten?",
+  "Ist die Kernaussage nach dem Abschwächen noch erkennbar?",
+  "Klingt die Aussage vorsichtig, ohne ausweichend zu wirken?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Dosierung der Abschwächung. Prüfen Sie, ob die Kernaussage erhalten bleibt und ob eine gesicherte Tatsache versehentlich abgeschwächt wurde. Schreiben Sie den Text nicht neu."
+}

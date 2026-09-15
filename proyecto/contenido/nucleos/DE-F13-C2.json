@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-F13",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Register: du/Sie, formell/informell",
+ "categoria": "fluency",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird das Register über einen ganzen Text hinweg bewusst gesteuert, einschliesslich eines gezielten, einmaligen Bruchs für rhetorischen Effekt: ein einziger informeller Einschub in einem sonst formellen Text signalisiert Nähe oder Ironie, wenn er richtig platziert ist.",
+ "cuadroReferencia": {
+  "titulo": "Der bewusste Registerbruch",
+  "columnas": [
+   "Situation",
+   "Effekt bei einem Bruch",
+   "Risiko bei mehreren"
+  ],
+  "filas": [
+   [
+    "Formeller Bericht, ein informeller Satz",
+    "Nähe oder trockener Humor",
+    "wirkt wie ein Versehen, nicht wie ein Stilmittel"
+   ],
+   [
+    "Informeller Text, ein formeller Satz",
+    "ironische Ernsthaftigkeit",
+    "wirkt gestelzt"
+   ],
+   [
+    "Durchgehend ein Register",
+    "sicherste, professionellste Wahl",
+    "kann flach wirken, wenn nie variiert"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Der Ausschuss prüfte die Vorlage gründlich — und fand, ehrlich gesagt, ein Chaos vor.",
+   "audio": true
+  },
+  {
+   "texto": "Ein toller Laden, auch wenn ich anmerken muss, dass die Weinkarte zu wünschen übrig lässt.",
+   "audio": true
+  },
+  {
+   "texto": "Der Bericht kam zu keinem Ergebnis; einfacher gesagt, die ganze Übung war umsonst."
+  }
+ ],
+ "notas": [
+  "Ein einziger, gut platzierter Registerbruch liest sich als Stimme und Kontrolle; zwei oder mehr im selben kurzen Text als Inkonsistenz.",
+  "Der Bruch funktioniert am besten direkt nach einer formellen oder fachlichen Passage, wo der Kontrast am stärksten wirkt.",
+  "Einfacher gesagt und ehrlich gesagt sind nützliche, kontrollierte Brücken vom formellen zum informellen Register."
+ ],
+ "contraste": {
+  "es": "Das formelle Spanisch toleriert einen bewussten Registerbruch innerhalb desselben Textes deutlich weniger als das zeitgenössische Deutsch, wo ein gut platzierter informeller Einschub als Stilmittel geschätzt wird. Hispanophone C2-Sprecher vermeiden den Registerbruch oft ganz und verlieren damit ein rhetorisches Mittel, das vom deutschen Fachpublikum erwartet wird."
+ },
+ "errores": [
+  "Mehr als einen Registerbruch in einem kurzen Text setzen, was die Konsistenz zerstört statt einen Effekt zu erzielen.",
+  "Den Bruch an einer Stelle platzieren, die nicht durch das umgebende Register vorbereitet ist.",
+  "Jeden Registerbruch vermeiden, was in einem Genre, das gelegentliche Variation erwartet, flach wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, und, ehrlich gesagt, …",
+   "funcion": "kontrollierter Bruch zu informell",
+   "traducciones": {
+    "es": "…, y, francamente, …",
+    "en": "…, and, frankly, …"
+   }
+  },
+  {
+   "expresion": "Einfacher gesagt, …",
+   "funcion": "Brücke von formell zu informell",
+   "traducciones": {
+    "es": "dicho de forma más simple, …",
+    "en": "put more simply, …"
+   }
+  },
+  {
+   "expresion": "…, um es milde auszudrücken.",
+   "funcion": "ironischer informeller Abschluss",
+   "traducciones": {
+    "es": "…, por decirlo suavemente",
+    "en": "…, to put it mildly"
+   }
+  },
+  {
+   "expresion": "…, was höflich ausgedrückt ist.",
+   "funcion": "signalisiert den Bruch explizit",
+   "traducciones": {
+    "es": "…, que es una forma educada de decirlo",
+    "en": "…, which is a polite way of putting it"
+   }
+  },
+  {
+   "expresion": "Kurz gesagt: …",
+   "funcion": "Brücke zu plainerer Sprache",
+   "traducciones": {
+    "es": "en pocas palabras: …",
+    "en": "in short: …"
+   }
+  },
+  {
+   "expresion": "…, wenn ich das offen sagen darf.",
+   "funcion": "formeller Einschub in informellem Text",
+   "traducciones": {
+    "es": "…, si se me permite decirlo abiertamente",
+    "en": "…, if I may say so plainly"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Gibt es höchstens einen deutlichen Registerbruch im Text?",
+  "Ist der Bruch durch das umgebende Register vorbereitet, nicht abrupt?",
+  "Fügt der Bruch einen Effekt hinzu, statt wie ein Versehen zu wirken?",
+  "Würde ein Fachleser hier Stimme und Kontrolle erkennen?",
+  "Hat der Text auch einen erkennbaren Basisregisterton, nicht nur den Bruch?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf bewusste Registerbrüche. Prüfen Sie, ob es höchstens einen gibt und ob er gut vorbereitet ist. Schreiben Sie den Text nicht neu."
+}

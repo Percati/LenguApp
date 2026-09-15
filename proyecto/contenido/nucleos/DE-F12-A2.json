@@ -1,0 +1,114 @@
+{
+ "skillId": "DE-F12",
+ "nivel": "A2",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Sich beschweren und reklamieren",
+ "categoria": "fluency",
+ "ancla": "PD A2",
+ "descripcion": "Auf A2 nennt man ein einfaches Problem und bittet höflich um Hilfe. Die feinere Struktur mit Bitte und Nachfrage kommt erst später. Es reicht, sich verständlich zu machen und höflich um eine Lösung zu bitten.",
+ "cuadroReferencia": {
+  "titulo": "Ein einfaches Problem",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Problem",
+    "Das funktioniert nicht."
+   ],
+   [
+    "Bitte",
+    "Können Sie das reparieren?"
+   ],
+   [
+    "Abschluss",
+    "Danke für Ihre Hilfe."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Entschuldigung, das funktioniert leider nicht.",
+   "audio": true
+  },
+  {
+   "texto": "Können Sie das bitte reparieren?",
+   "audio": true
+  },
+  {
+   "texto": "Das ist kaputt."
+  }
+ ],
+ "notas": [
+  "Entschuldigung ist ein guter Einstieg für eine Beschwerde.",
+  "Können Sie…? ist die einfachste höfliche Bitte.",
+  "Leider zeigt, dass es sich um ein Problem handelt, ohne unhöflich zu klingen."
+ ],
+ "contraste": {
+  "es": "Das Spanische formuliert Beschwerden oft direkter, während das Deutsche schon auf A2 eine gewisse Höflichkeit erwartet."
+ },
+ "errores": [
+  "Das Problem ohne jede Höflichkeitsform nennen.",
+  "Keine Bitte formulieren."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das funktioniert nicht.",
+   "funcion": "Problem nennen",
+   "traducciones": {
+    "es": "Eso no funciona.",
+    "en": "That's not working."
+   }
+  },
+  {
+   "expresion": "Können Sie das reparieren?",
+   "funcion": "höfliche Bitte",
+   "traducciones": {
+    "es": "¿Puede repararlo?",
+    "en": "Can you fix it?"
+   }
+  },
+  {
+   "expresion": "Das ist kaputt.",
+   "funcion": "Problem, informell",
+   "traducciones": {
+    "es": "Está roto.",
+    "en": "It's broken."
+   }
+  },
+  {
+   "expresion": "Entschuldigung, …",
+   "funcion": "höflicher Einstieg",
+   "traducciones": {
+    "es": "Disculpe, …",
+    "en": "Excuse me, …"
+   }
+  },
+  {
+   "expresion": "Das ist leider…",
+   "funcion": "Problem, abgeschwächt",
+   "traducciones": {
+    "es": "Lamentablemente eso…",
+    "en": "Unfortunately that's…"
+   }
+  },
+  {
+   "expresion": "Danke für Ihre Hilfe.",
+   "funcion": "höflicher Abschluss",
+   "traducciones": {
+    "es": "Gracias por su ayuda.",
+    "en": "Thank you for your help."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist das Problem klar genannt?",
+  "Habe ich höflich um Hilfe gebeten?",
+  "Klingt der Text höflich?",
+  "Klingt der Text höflich?",
+  "Klingt der Text höflich?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Problem und die Bitte. Prüfen Sie, ob der Ton höflich bleibt. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob mindestens eine höfliche Formel benutzt wird."
+}

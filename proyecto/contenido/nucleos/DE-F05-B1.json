@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-F05",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Vorschläge machen und aushandeln",
+ "categoria": "fluency",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B1 macht man einfache Vorschläge mit wir könnten oder wollen wir und reagiert klar darauf. Das gezielte Aushandeln kommt erst später — hier zählt, einen Vorschlag verständlich zu formulieren und darauf zu antworten.",
+ "cuadroReferencia": {
+  "titulo": "Vorschlag machen",
+  "columnas": [
+   "Formel",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Wir könnten…",
+    "Wir könnten am Samstag ins Kino gehen."
+   ],
+   [
+    "Wollen wir…?",
+    "Wollen wir zusammen Mittag essen?"
+   ],
+   [
+    "Reaktion",
+    "Ja, gerne! / Nein, lieber nicht."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Wir könnten am Samstag zusammen ins Kino gehen.",
+   "audio": true
+  },
+  {
+   "texto": "Wollen wir heute Abend zusammen essen?",
+   "audio": true
+  },
+  {
+   "texto": "Ja, gerne! Das klingt gut."
+  }
+ ],
+ "notas": [
+  "Wir könnten braucht den Konjunktiv II und klingt höflicher als wir können.",
+  "Wollen wir…? ist eine sehr direkte und häufige Art, einen Vorschlag zu machen.",
+  "Eine klare Reaktion (ja/nein) mit einem kleinen Zusatz ist höflicher als ein einfaches ja oder nein."
+ ],
+ "contraste": {
+  "es": "Das Spanische macht Vorschläge mit podríamos, was strukturell dem deutschen könnten sehr ähnlich ist. Wollen wir…? hat im Spanischen eine direkte Entsprechung mit ¿Vamos a…?, sodass beide Formeln leicht zu übertragen sind."
+ },
+ "errores": [
+  "Können statt könnten im Vorschlag verwenden, was weniger höflich klingt.",
+  "Auf einen Vorschlag nur mit nein antworten, ohne Alternative.",
+  "Wollen wir als Frage falsch bilden."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Wir könnten…",
+   "funcion": "Vorschlag",
+   "traducciones": {
+    "es": "Podríamos…",
+    "en": "We could…"
+   }
+  },
+  {
+   "expresion": "Wollen wir…?",
+   "funcion": "Vorschlag als Frage",
+   "traducciones": {
+    "es": "¿Vamos a…?",
+    "en": "Shall we…?"
+   }
+  },
+  {
+   "expresion": "Ja, gerne!",
+   "funcion": "Zustimmung",
+   "traducciones": {
+    "es": "¡Sí, con gusto!",
+    "en": "Yes, gladly!"
+   }
+  },
+  {
+   "expresion": "Nein, lieber nicht.",
+   "funcion": "Ablehnung, höflich",
+   "traducciones": {
+    "es": "No, mejor no.",
+    "en": "No, better not."
+   }
+  },
+  {
+   "expresion": "Das klingt gut.",
+   "funcion": "Zustimmung",
+   "traducciones": {
+    "es": "Suena bien.",
+    "en": "That sounds good."
+   }
+  },
+  {
+   "expresion": "Wie wäre es mit…?",
+   "funcion": "Vorschlag, alternative Formel",
+   "traducciones": {
+    "es": "¿Qué tal…?",
+    "en": "How about…?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich könnten statt können benutzt?",
+  "Habe ich klar auf einen Vorschlag reagiert?",
+  "Habe ich bei einer Ablehnung eine Alternative angeboten?",
+  "Habe ich mindestens zwei verschiedene Vorschlagsformeln benutzt?",
+  "Klingt der Ton freundlich?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Vorschläge und die Reaktionen darauf. Prüfen Sie den Konjunktiv II nach könnten und ob klar zugestimmt oder abgelehnt wird. Schreiben Sie den Text nicht neu."
+}

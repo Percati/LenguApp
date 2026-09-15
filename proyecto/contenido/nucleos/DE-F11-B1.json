@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-F11",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Gespräch steuern: einwerfen, nachfragen, korrigieren",
+ "categoria": "fluency",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B1 lernt man, in ein Gespräch einzusteigen, nachzufragen, wenn man etwas nicht versteht, und einen eigenen Fehler zu korrigieren. Diese drei einfachen Werkzeuge reichen aus, um an einem Gespräch aktiv teilzunehmen.",
+ "cuadroReferencia": {
+  "titulo": "Drei einfache Werkzeuge",
+  "columnas": [
+   "Funktion",
+   "Formel"
+  ],
+  "filas": [
+   [
+    "Einsteigen",
+    "Darf ich kurz etwas sagen?"
+   ],
+   [
+    "Nachfragen",
+    "Kannst du das noch mal sagen?"
+   ],
+   [
+    "Korrigieren",
+    "Ich meine…, nicht…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Darf ich kurz etwas dazu sagen?",
+   "audio": true
+  },
+  {
+   "texto": "Entschuldigung, kannst du das noch mal sagen?",
+   "audio": true
+  },
+  {
+   "texto": "Ich meine Montag, nicht Dienstag."
+  }
+ ],
+ "notas": [
+  "Darf ich kurz etwas sagen? ist eine höfliche Art, in ein Gespräch einzusteigen.",
+  "Kannst du das wiederholen? ist auf B1 die einfachste Art, um eine Wiederholung zu bitten.",
+  "Ich meine… korrigiert einen eigenen Fehler, ohne dass es peinlich wirken muss."
+ ],
+ "contraste": {
+  "es": "Das Spanische steigt in Gespräche oft mit einem einfachen perdón oder oye ein, was direkter und weniger formell ist als die deutsche Frage darf ich…? Spanischsprachige können deshalb im Deutschen zunächst zu abrupt wirken, wenn sie ihre spanische Gewohnheit übertragen."
+ },
+ "errores": [
+  "Ohne jede Formel einfach ins Gespräch hineinreden.",
+  "Nicht nachfragen, wenn man etwas nicht verstanden hat, und einfach so tun als ob.",
+  "Einen Fehler unkorrigiert stehen lassen, obwohl man ihn bemerkt hat."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Darf ich kurz etwas sagen?",
+   "funcion": "einsteigen",
+   "traducciones": {
+    "es": "¿Puedo decir algo?",
+    "en": "Can I say something?"
+   }
+  },
+  {
+   "expresion": "Kannst du das noch mal sagen?",
+   "funcion": "nachfragen",
+   "traducciones": {
+    "es": "¿Podés repetirlo?",
+    "en": "Can you say that again?"
+   }
+  },
+  {
+   "expresion": "Wie bitte?",
+   "funcion": "nachfragen, informell",
+   "traducciones": {
+    "es": "¿Cómo?",
+    "en": "Sorry, what?"
+   }
+  },
+  {
+   "expresion": "Ich meine…, nicht…",
+   "funcion": "korrigieren",
+   "traducciones": {
+    "es": "Quiero decir…, no…",
+    "en": "I mean…, not…"
+   }
+  },
+  {
+   "expresion": "Entschuldigung, ich habe mich vertan.",
+   "funcion": "Fehler zugeben",
+   "traducciones": {
+    "es": "Perdón, me equivoqué.",
+    "en": "Sorry, I made a mistake."
+   }
+  },
+  {
+   "expresion": "Verstehe ich das richtig, dass…?",
+   "funcion": "Verständnis prüfen",
+   "traducciones": {
+    "es": "¿Entiendo bien que…?",
+    "en": "Am I right in thinking that…?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich eine höfliche Formel zum Einsteigen benutzt?",
+  "Habe ich nachgefragt, wenn ich etwas nicht verstanden habe?",
+  "Habe ich einen eigenen Fehler klar korrigiert?",
+  "Habe ich mindestens zwei der drei Werkzeuge benutzt?",
+  "Klingt der Ton höflich, nicht abrupt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Gesprächssteuerung: Einsteigen, Nachfragen, Korrigieren. Prüfen Sie, ob die Formeln höflich und klar sind. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,109 @@
+{
+ "skillId": "EN-F11",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Summarising Complex Information",
+ "categoria": "fluency",
+ "ancla": "CV Relaying specific information",
+ "descripcion": "At B1 you summarise a short text or conversation in one or two sentences, naming the main idea. The finer structure with omissions and separated opinion (B2/C1) isn't the target yet — a clear, short main point is enough.",
+ "cuadroReferencia": {
+  "titulo": "A short summary",
+  "columnas": [
+   "Step",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Main idea",
+    "The article is about the benefits of remote work."
+   ],
+   [
+    "One detail",
+    "It also mentions some downsides."
+   ],
+   [
+    "Closing",
+    "In short, that's the main point."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The article is mainly about the benefits of remote work.",
+   "audio": true
+  },
+  {
+   "texto": "It also mentions a few downsides, like feeling isolated.",
+   "audio": true
+  },
+  {
+   "texto": "Basically, it says people are happier working from home."
+  }
+ ],
+ "notas": [
+  "The article is about… / It's mainly about… is the easiest way to open a summary.",
+  "One or two sentences are enough for a B1 summary — more starts to become a retelling.",
+  "Basically is a useful, informal way to open a compact summary."
+ ],
+ "contraste": {
+  "es": "El español resume con el texto trata sobre… de forma muy parecida, así que esta estructura básica se transfiere directamente."
+ },
+ "errores": [
+  "Retelling the whole text instead of summarising it.",
+  "Giving too many details instead of just the main idea.",
+  "Not stating a clear main idea at all."
+ ],
+ "redemittel": [
+  {
+   "expresion": "It's mainly about…",
+   "funcion": "main idea",
+   "traducciones": {
+    "es": "Se trata principalmente de…"
+   }
+  },
+  {
+   "expresion": "It's about…",
+   "funcion": "main idea, simple",
+   "traducciones": {
+    "es": "Es sobre…"
+   }
+  },
+  {
+   "expresion": "It also mentions…",
+   "funcion": "one extra detail",
+   "traducciones": {
+    "es": "También menciona…"
+   }
+  },
+  {
+   "expresion": "Basically,…",
+   "funcion": "compact opener",
+   "traducciones": {
+    "es": "Básicamente,…"
+   }
+  },
+  {
+   "expresion": "In short,…",
+   "funcion": "compact closer",
+   "traducciones": {
+    "es": "En resumen,…"
+   }
+  },
+  {
+   "expresion": "The main point is…",
+   "funcion": "highlights the core idea",
+   "traducciones": {
+    "es": "Lo principal es…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the main idea clearly stated?",
+  "Is the summary much shorter than the original?",
+  "Have I given no more than one extra detail?",
+  "Have I used more than one summarising phrase?",
+  "Does it sound like a summary, not a retelling?"
+ ],
+ "promptCorreccion": "Focus only on whether the main idea is clear and the summary stays compact, without retelling the whole original text in detail. Do not rewrite the text."
+}

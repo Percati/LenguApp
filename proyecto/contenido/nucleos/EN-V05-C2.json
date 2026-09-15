@@ -1,0 +1,112 @@
+{
+ "skillId": "EN-V05",
+ "nivel": "C2",
+ "idioma": "en",
+ "titulo": "Professional and Academic Collocations",
+ "categoria": "vocabulary",
+ "ancla": "CV Vocabulary control",
+ "descripcion": "At C2 you use the fixed collocations of professional and academic English: draw a conclusion, pose a challenge, mitigate a risk. These pairings are arbitrary and fixed — a near-synonym of either word usually breaks the collocation.",
+ "cuadroReferencia": {
+  "titulo": "Fixed professional collocations",
+  "columnas": [
+   "Collocation",
+   "Register"
+  ],
+  "filas": [
+   [
+    "to draw a conclusion",
+    "academic, neutral-formal"
+   ],
+   [
+    "to pose a challenge/threat",
+    "professional, formal"
+   ],
+   [
+    "to mitigate a risk",
+    "corporate, technical"
+   ],
+   [
+    "to yield a result",
+    "academic, scientific"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The data allows us to draw a fairly clear conclusion.",
+   "audio": true
+  },
+  {
+   "texto": "This poses a significant challenge for the whole sector.",
+   "audio": true
+  },
+  {
+   "texto": "Several measures were introduced to mitigate the risk."
+  }
+ ],
+ "notas": [
+  "Draw a conclusion cannot become make a conclusion or take a conclusion — the verb is fixed.",
+  "Pose is used almost exclusively with challenge, threat, question and risk in this register.",
+  "Yield in yield a result is a formal, almost literary alternative to produce, common in scientific writing."
+ ],
+ "contraste": {
+  "es": "El español suele usar un solo verbo versátil (plantear un reto, sacar una conclusión sin exigir tanta fijeza combinatoria). El inglés académico y corporativo es mucho más estricto con estas parejas fijas, así que sustituir el verbo por un sinónimo cercano suena a error, no a variación estilística."
+ },
+ "errores": [
+  "Replacing the fixed verb with a near-synonym: making a conclusion instead of drawing one.",
+  "Using pose outside its narrow set of collocating nouns.",
+  "Mixing an academic collocation into a casual conversational register."
+ ],
+ "redemittel": [
+  {
+   "expresion": "to draw a conclusion",
+   "funcion": "fixed, academic",
+   "traducciones": {
+    "es": "sacar una conclusión"
+   }
+  },
+  {
+   "expresion": "to pose a challenge/threat",
+   "funcion": "fixed, formal",
+   "traducciones": {
+    "es": "plantear un reto/una amenaza"
+   }
+  },
+  {
+   "expresion": "to mitigate a risk",
+   "funcion": "fixed, corporate/technical",
+   "traducciones": {
+    "es": "mitigar un riesgo"
+   }
+  },
+  {
+   "expresion": "to yield a result",
+   "funcion": "fixed, scientific",
+   "traducciones": {
+    "es": "arrojar un resultado"
+   }
+  },
+  {
+   "expresion": "to raise a concern",
+   "funcion": "fixed, professional",
+   "traducciones": {
+    "es": "plantear una inquietud"
+   }
+  },
+  {
+   "expresion": "to strike a balance",
+   "funcion": "fixed, general professional",
+   "traducciones": {
+    "es": "encontrar un equilibrio"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is each verb the one fixed by convention, not a near-synonym?",
+  "Is pose used only with its narrow set of collocating nouns?",
+  "Does the register of the whole passage stay professional or academic?",
+  "Have I used at least four different fixed collocations?",
+  "Would this collocation appear in a real academic or corporate document?"
+ ],
+ "promptCorreccion": "Focus only on professional and academic collocations. Flag any verb replaced with a near-synonym that breaks the fixed pairing. Do not rewrite the text."
+}

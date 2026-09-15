@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-G13",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Infinitivsätze mit *zu*",
+ "categoria": "grammar",
+ "ancla": "PD B1",
+ "descripcion": "Auf B1 wird der Infinitivsatz mit zu nach häufigen Verben wie hoffen, versuchen und vorhaben gebildet, ebenso nach es ist + Adjektiv — solange Haupt- und Nebensatz dasselbe Subjekt haben. Bei unterschiedlichem Subjekt bleibt der dass-Satz die richtige Wahl.",
+ "cuadroReferencia": {
+  "titulo": "Wann ein Infinitivsatz möglich ist",
+  "columnas": [
+   "Bedingung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Gleiches Subjekt",
+    "Ich versuche, pünktlich zu sein."
+   ],
+   [
+    "Nach es ist + Adjektiv",
+    "Es ist wichtig, viel zu üben."
+   ],
+   [
+    "Trennbares Verb",
+    "Ich habe vor, umzuziehen."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich versuche immer, pünktlich zu sein.",
+   "audio": true
+  },
+  {
+   "texto": "Es ist wichtig, jeden Tag ein bisschen zu üben.",
+   "audio": true
+  },
+  {
+   "texto": "Ich habe vor, nächstes Jahr umzuziehen."
+  }
+ ],
+ "notas": [
+  "Der Infinitivsatz funktioniert nur, wenn beide Teile dasselbe Subjekt haben.",
+  "Bei trennbaren Verben steht zu zwischen Präfix und Stamm: umzuziehen.",
+  "Nach es ist + Adjektiv (wichtig, schön, einfach) ist der Infinitivsatz die Standardform."
+ ],
+ "contraste": {
+  "es": "Das Spanische verwendet bei gleichem Subjekt ebenfalls den blossen Infinitiv (intento ser puntual), sodass die Grundlogik schon bekannt ist."
+ },
+ "errores": [
+  "Einen dass-Satz bilden, obwohl das Subjekt gleich ist und ein Infinitivsatz möglich wäre.",
+  "Zu bei trennbaren Verben falsch platzieren.",
+  "Den Infinitivsatz bilden, obwohl die Subjekte unterschiedlich sind."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich versuche, … zu…",
+   "funcion": "Infinitivsatz nach versuchen",
+   "traducciones": {
+    "es": "Intento…",
+    "en": "I try to…"
+   }
+  },
+  {
+   "expresion": "Es ist wichtig, … zu…",
+   "funcion": "Infinitivsatz nach Adjektiv",
+   "traducciones": {
+    "es": "Es importante…",
+    "en": "It's important to…"
+   }
+  },
+  {
+   "expresion": "Ich habe vor, zu…",
+   "funcion": "Plan ausdrücken",
+   "traducciones": {
+    "es": "Tengo planeado…",
+    "en": "I'm planning to…"
+   }
+  },
+  {
+   "expresion": "Es macht Spass, … zu…",
+   "funcion": "Infinitivsatz, informell",
+   "traducciones": {
+    "es": "Es divertido…",
+    "en": "It's fun to…"
+   }
+  },
+  {
+   "expresion": "Ich hoffe, … zu…",
+   "funcion": "Infinitivsatz nach hoffen",
+   "traducciones": {
+    "es": "Espero…",
+    "en": "I hope to…"
+   }
+  },
+  {
+   "expresion": "Es ist einfach, … zu…",
+   "funcion": "Infinitivsatz nach Adjektiv",
+   "traducciones": {
+    "es": "Es fácil…",
+    "en": "It's easy to…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Haben Haupt- und Nebensatz dasselbe Subjekt?",
+  "Steht zu bei trennbaren Verben an der richtigen Stelle?",
+  "Habe ich mindestens einen Infinitivsatz nach es ist + Adjektiv gebildet?",
+  "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?",
+  "Habe ich den dass-Satz benutzt, wenn die Subjekte unterschiedlich sind?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Infinitivsätze mit zu. Prüfen Sie, ob das Subjekt in beiden Teilen gleich ist. Schreiben Sie den Text nicht neu."
+}

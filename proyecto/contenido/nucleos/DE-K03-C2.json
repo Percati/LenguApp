@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-K03",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Nominalisierung + Genitivkette + Präposition mit Genitiv",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird die Genitivkette bewusst als Stilmittel gegen den Relativsatz abgewogen: eine lange Kette signalisiert Verwaltungs- oder Fachregister, während ihre Auflösung ein bewusst zugänglicheres Register schafft. Beide Optionen stehen gleichberechtigt zur Verfügung, und die Wahl selbst trägt Bedeutung.",
+ "cuadroReferencia": {
+  "titulo": "Kette oder Auflösung, als bewusste Wahl",
+  "columnas": [
+   "Form",
+   "Signal",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Lange Genitivkette",
+    "distanziert, fachlich",
+    "im Rahmen der Umsetzung der Ziele der Reform"
+   ],
+   [
+    "Teilweise Auflösung",
+    "ausgewogen",
+    "im Rahmen der Reformziele, die umgesetzt werden sollen"
+   ],
+   [
+    "Volle Auflösung",
+    "zugänglich, persönlich",
+    "damit die Ziele der Reform umgesetzt werden können"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Im Rahmen der Umsetzung der Ziele der Reform sind weitere Schritte nötig.",
+   "audio": true
+  },
+  {
+   "texto": "Im Rahmen der Reformziele, die noch umgesetzt werden sollen, ergeben sich neue Fragen.",
+   "audio": true
+  },
+  {
+   "texto": "Damit die Ziele der Reform umgesetzt werden können, braucht es mehr Zeit."
+  }
+ ],
+ "notas": [
+  "Die Wahl zwischen Kette und Auflösung ist auf C2 keine Fehlerfrage mehr, sondern eine Stilentscheidung mit eigener Bedeutung.",
+  "Eine durchgehend aufgelöste Fassung eines Verwaltungstextes wirkt unpassend informell, selbst wenn sie grammatisch tadellos ist.",
+  "Eine durchgehend verkettete Fassung eines an Laien gerichteten Textes verfehlt die Zielgruppe, auch wenn sie stilistisch elegant ist."
+ ],
+ "contraste": {
+  "es": "Das Spanische bietet strukturell nur die aufgelöste Variante an, sodass die deutsche Wahlmöglichkeit selbst neu ist. Ein hispanophoner C2-Sprecher tendiert dazu, immer aufzulösen, und verpasst damit das distanzierte Register, das eine Kette in der richtigen Textsorte signalisiert."
+ },
+ "errores": [
+  "Einen Verwaltungstext durchgehend aufzulösen, wodurch das erwartete Register verloren geht.",
+  "Einen an Laien gerichteten Text durchgehend zu verketten, wodurch die Zielgruppe verfehlt wird.",
+  "Die Wahl zwischen Kette und Auflösung zufällig statt bewusst zu treffen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "im Rahmen der Umsetzung der…",
+   "funcion": "lange Kette, distanziert",
+   "traducciones": {
+    "es": "en el marco de la aplicación de…",
+    "en": "within the framework of the implementation of…"
+   }
+  },
+  {
+   "expresion": "…, die noch umgesetzt werden…",
+   "funcion": "teilweise Auflösung",
+   "traducciones": {
+    "es": "…, que aún deben aplicarse…",
+    "en": "…, which still need to be implemented…"
+   }
+  },
+  {
+   "expresion": "damit…umgesetzt werden können",
+   "funcion": "volle Auflösung, Zweck",
+   "traducciones": {
+    "es": "para que… puedan aplicarse",
+    "en": "so that…can be implemented"
+   }
+  },
+  {
+   "expresion": "angesichts der Komplexität der…",
+   "funcion": "Kette, formell",
+   "traducciones": {
+    "es": "dada la complejidad de…",
+    "en": "given the complexity of…"
+   }
+  },
+  {
+   "expresion": "unter Berücksichtigung dessen, dass…",
+   "funcion": "Auflösung, formell",
+   "traducciones": {
+    "es": "teniendo en cuenta que…",
+    "en": "taking into account that…"
+   }
+  },
+  {
+   "expresion": "vor dem Hintergrund der…",
+   "funcion": "Kette, einleitend",
+   "traducciones": {
+    "es": "en el contexto de…",
+    "en": "against the background of…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist die Wahl zwischen Kette und Auflösung bewusst getroffen, nicht zufällig?",
+  "Passt das gewählte Register zur Zielgruppe des Textes?",
+  "Signalisiert eine lange Kette tatsächlich das beabsichtigte Fachregister?",
+  "Würde eine aufgelöste Fassung an dieser Stelle die Zielgruppe besser erreichen?",
+  "Würde ein Fachleser die Registerentscheidung als angemessen empfinden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen Genitivkette und Auflösung. Prüfen Sie, ob diese Wahl zur Zielgruppe des Textes passt. Schreiben Sie den Text nicht neu."
+}

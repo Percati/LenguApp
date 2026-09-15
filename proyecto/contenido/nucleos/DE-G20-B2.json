@@ -1,0 +1,136 @@
+{
+ "skillId": "DE-G20",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Das Wort *es* (posicional und korrelativ)",
+ "categoria": "grammar",
+ "ancla": "Aspekte B2",
+ "descripcion": "Auf B2 lernt man die drei häufigsten Funktionen von es, die über das einfache Pronomen hinausgehen: das Platzhalter-es im Vorfeld, das obligatorische es bei bestimmten Verben und das korrelative es vor einem dass-Satz. Diese Funktionen von es sind für Lernende unsichtbar, weil sie nichts bedeuten.",
+ "cuadroReferencia": {
+  "titulo": "Drei Funktionen von es",
+  "columnas": [
+   "Funktion",
+   "Beispiel",
+   "Erklärung"
+  ],
+  "filas": [
+   [
+    "Platzhalter im Vorfeld",
+    "Es kommen viele Leute.",
+    "Position 1 muss besetzt sein, wenn das Subjekt woanders steht"
+   ],
+   [
+    "Obligatorisch bei Verben",
+    "Es geht mir gut. Es gibt viele Möglichkeiten.",
+    "feste Wendungen ohne reale Bedeutung von es"
+   ],
+   [
+    "Korrelat vor dass",
+    "Es freut mich, dass du kommst.",
+    "kündigt den dass-Satz an"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Es kommen heute noch viele Leute zur Feier.",
+   "audio": true
+  },
+  {
+   "texto": "Es gibt viele Möglichkeiten, das zu lösen.",
+   "audio": true
+  },
+  {
+   "texto": "Es freut mich sehr, dass du dabei bist."
+  }
+ ],
+ "notas": [
+  "Das Platzhalter-es verschwindet, sobald ein anderes Element auf Position 1 steht: Viele Leute kommen heute — ohne es.",
+  "Es gibt ist eine der häufigsten Wendungen im Deutschen und hat keine wörtliche Entsprechung im Spanischen.",
+  "Das korrelative es vor dass ist bei bestimmten Verben und Adjektiven fast obligatorisch: es ist wichtig, dass…"
+ ],
+ "contraste": {
+  "es": "Das Spanische braucht kein Pronomen an der Subjektstelle, weil die Verbendung das Subjekt schon zeigt (llegan muchas personas). Das deutsche es hat deshalb keine spanische Entsprechung und wirkt für Spanischsprachige wie ein überflüssiges Wort, das sie regelmässig weglassen."
+ },
+ "errores": [
+  "Das Platzhalter-es weglassen: Kommen viele Leute statt Es kommen viele Leute.",
+  "Es gibt mit einem anderen Verb verwechseln oder ganz weglassen.",
+  "Das korrelative es vor dass vergessen: Freut mich, dass… statt Es freut mich, dass…"
+ ],
+ "redemittel": [
+  {
+   "expresion": "Es gibt…",
+   "funcion": "Existenz ausdrücken",
+   "traducciones": {
+    "es": "Hay…",
+    "en": "There is/are…",
+    "fr": "Il y a…",
+    "it": "C’è/Ci sono…",
+    "pt": "Há…"
+   }
+  },
+  {
+   "expresion": "Es geht mir…",
+   "funcion": "Befinden ausdrücken",
+   "traducciones": {
+    "es": "Estoy…",
+    "en": "I'm doing…",
+    "fr": "Je vais…",
+    "it": "Sto…",
+    "pt": "Estou…"
+   }
+  },
+  {
+   "expresion": "Es freut mich, dass…",
+   "funcion": "korrelatives es vor dass",
+   "traducciones": {
+    "es": "Me alegra que…",
+    "en": "I'm glad that…",
+    "fr": "Je suis content(e) que…",
+    "it": "Sono contento/a che…",
+    "pt": "Fico contente por…"
+   }
+  },
+  {
+   "expresion": "Es ist wichtig, dass…",
+   "funcion": "korrelatives es, unpersönlich",
+   "traducciones": {
+    "es": "Es importante que…",
+    "en": "It's important that…",
+    "fr": "Il est important que…",
+    "it": "È importante che…",
+    "pt": "É importante que…"
+   }
+  },
+  {
+   "expresion": "Es kommt darauf an, ob…",
+   "funcion": "feste Wendung mit es",
+   "traducciones": {
+    "es": "Depende de si…",
+    "en": "It depends on whether…",
+    "fr": "Cela dépend de savoir si…",
+    "it": "Dipende dal fatto che…",
+    "pt": "Depende de se…"
+   }
+  },
+  {
+   "expresion": "Es regnet.",
+   "funcion": "unpersönliches es, Wetter",
+   "traducciones": {
+    "es": "Llueve.",
+    "en": "It's raining.",
+    "fr": "Il pleut.",
+    "it": "Piove.",
+    "pt": "Está a chover."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist das Platzhalter-es vorhanden, wenn Position 1 sonst leer wäre?",
+  "Steht es gibt korrekt und nicht durch ein anderes Verb ersetzt?",
+  "Ist das korrelative es vor dass gesetzt, wo es erwartet wird?",
+  "Habe ich mindestens drei verschiedene Funktionen von es benutzt?",
+  "Klingt der Satz mit es natürlicher als ohne?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Funktionen von es. Prüfen Sie, ob das Platzhalter-es und das korrelative es an den richtigen Stellen stehen. Schreiben Sie den Text nicht neu."
+}

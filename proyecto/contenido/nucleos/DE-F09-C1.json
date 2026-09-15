@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-F09",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Argumentieren und überzeugen",
+ "categoria": "fluency",
+ "ancla": "PD B2",
+ "descripcion": "Auf C1 wird ein Argument nicht nur begründet, sondern gegen ein wahrscheinliches Gegenargument abgesichert und gewichtet: das entscheidende Argument tritt hervor, die schwächeren bleiben im Hintergrund. Das unterscheidet ein überzeugendes Argument von einer blossen Aufzählung von Gründen.",
+ "cuadroReferencia": {
+  "titulo": "Ein Argument gewichten",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Hauptargument",
+    "Das entscheidende Argument ist die Kostenersparnis."
+   ],
+   [
+    "Nebenargument",
+    "Hinzu kommt, dass es auch ökologisch sinnvoll wäre."
+   ],
+   [
+    "Gegenargument entkräften",
+    "Man könnte einwenden, dass es aufwendig ist, aber…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das entscheidende Argument ist für mich die langfristige Kostenersparnis.",
+   "audio": true
+  },
+  {
+   "texto": "Hinzu kommt, dass es auch ökologisch durchaus sinnvoll wäre.",
+   "audio": true
+  },
+  {
+   "texto": "Man könnte einwenden, dass es zunächst aufwendig ist, aber das relativiert sich schnell."
+  }
+ ],
+ "notas": [
+  "Ein gewichtetes Argument nennt explizit, welcher Punkt am wichtigsten ist, statt alle gleichrangig aufzulisten.",
+  "Hinzu kommt, dass fügt ein unterstützendes, aber nicht zentrales Argument hinzu.",
+  "Ein vorweggenommenes Gegenargument macht die eigene Position robuster, weil sie schon auf Kritik reagiert hat."
+ ],
+ "contraste": {
+  "es": "Das Spanische argumentiert oft mit mehreren gleichrangigen Gründen, ohne einen davon explizit als entscheidend zu markieren. Spanischsprachige zählen im Deutschen deshalb häufig Argumente auf, ohne sie zu gewichten, was auf C1-Niveau weniger überzeugend wirkt."
+ },
+ "errores": [
+  "Mehrere Argumente ohne Gewichtung gleichrangig aufzählen.",
+  "Kein Gegenargument vorwegnehmen, obwohl eines naheliegt.",
+  "Hinzu kommt, dass für das Hauptargument verwenden, wodurch die Gewichtung verloren geht."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das entscheidende Argument ist…",
+   "funcion": "Hauptargument markieren",
+   "traducciones": {
+    "es": "El argumento decisivo es…",
+    "en": "The decisive argument is…",
+    "fr": "L’argument décisif est…",
+    "it": "L’argomento decisivo è…",
+    "pt": "O argumento decisivo é…"
+   }
+  },
+  {
+   "expresion": "Hinzu kommt, dass…",
+   "funcion": "Nebenargument hinzufügen",
+   "traducciones": {
+    "es": "A eso se suma que…",
+    "en": "On top of that,…",
+    "fr": "À cela s’ajoute que…",
+    "it": "A ciò si aggiunge che…",
+    "pt": "A isso acresce que…"
+   }
+  },
+  {
+   "expresion": "Man könnte einwenden, dass…, aber…",
+   "funcion": "Gegenargument entkräften",
+   "traducciones": {
+    "es": "Se podría objetar que…, pero…",
+    "en": "One could object that…, but…",
+    "fr": "On pourrait objecter que…, mais…",
+    "it": "Si potrebbe obiettare che…, ma…",
+    "pt": "Poder-se-ia objetar que…, mas…"
+   }
+  },
+  {
+   "expresion": "Vor allem aber…",
+   "funcion": "das wichtigste Argument hervorheben",
+   "traducciones": {
+    "es": "Pero sobre todo…",
+    "en": "But above all…",
+    "fr": "Mais surtout…",
+    "it": "Ma soprattutto…",
+    "pt": "Mas sobretudo…"
+   }
+  },
+  {
+   "expresion": "Das relativiert sich, wenn man bedenkt, dass…",
+   "funcion": "Einwand entkräften",
+   "traducciones": {
+    "es": "Eso se relativiza si se piensa que…",
+    "en": "That's less significant when you consider that…",
+    "fr": "Cela se relativise lorsqu’on considère que…",
+    "it": "Questo si ridimensiona se si considera che…",
+    "pt": "Isso relativiza-se quando se considera que…"
+   }
+  },
+  {
+   "expresion": "Letztlich überwiegt…",
+   "funcion": "Abwägung abschliessen",
+   "traducciones": {
+    "es": "Al final, pesa más…",
+    "en": "Ultimately, what outweighs it is…",
+    "fr": "En fin de compte, ce qui l’emporte, c’est…",
+    "it": "In definitiva, prevale…",
+    "pt": "No fim, prevalece…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist ein Argument klar als das wichtigste markiert?",
+  "Ist mindestens ein Gegenargument vorweggenommen und entkräftet?",
+  "Sind Haupt- und Nebenargumente unterscheidbar?",
+  "Klingt die Argumentation gewichtet, nicht wie eine blosse Liste?",
+  "Habe ich mindestens vier verschiedene Redemittel benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Gewichtung der Argumentation. Prüfen Sie, ob ein Hauptargument klar hervortritt und ob ein Gegenargument entkräftet wird. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-G05",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "First Conditional",
+ "categoria": "grammar",
+ "ancla": "EGP A2",
+ "descripcion": "The first conditional talks about a real, possible future situation: if it rains, we'll stay home. At B1 the goal is to get the form right in both parts and use it fluently for real plans and warnings.",
+ "cuadroReferencia": {
+  "titulo": "First conditional",
+  "columnas": [
+   "Part",
+   "Form",
+   "Example"
+  ],
+  "filas": [
+   [
+    "If-clause",
+    "present simple",
+    "If it rains,"
+   ],
+   [
+    "Main clause",
+    "will + infinitive",
+    "…we'll stay home."
+   ],
+   [
+    "Alternative",
+    "can/should instead of will",
+    "If it rains, we can stay home."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "If it rains tomorrow, we'll stay home.",
+   "audio": true
+  },
+  {
+   "texto": "If you don't hurry, you'll miss the bus.",
+   "audio": true
+  },
+  {
+   "texto": "If I have time, I'll call you later."
+  }
+ ],
+ "notas": [
+  "The if-clause uses the present simple, never will, even though it refers to the future.",
+  "The if-clause can come first or second: we'll stay home if it rains works just as well.",
+  "Can, should and must can replace will in the main clause for a different nuance."
+ ],
+ "contraste": {
+  "es": "El español usa si + presente y futuro simple (si llueve, nos quedaremos), lo cual coincide exactamente con la lógica inglesa. El error más común de hispanohablantes es poner will también en la cláusula con if, por analogía con el futuro español."
+ },
+ "errores": [
+  "Using will in the if-clause: if it will rain.",
+  "Mixing the first and second conditional.",
+  "Forgetting the comma when the if-clause comes first."
+ ],
+ "redemittel": [
+  {
+   "expresion": "If…, I'll…",
+   "funcion": "full first conditional",
+   "traducciones": {
+    "es": "Si…, voy a…"
+   }
+  },
+  {
+   "expresion": "…, if…",
+   "funcion": "if-clause second, no comma needed",
+   "traducciones": {
+    "es": "…, si…"
+   }
+  },
+  {
+   "expresion": "If you don't…, you'll…",
+   "funcion": "warning",
+   "traducciones": {
+    "es": "Si no…, vas a…"
+   }
+  },
+  {
+   "expresion": "If I have time,…",
+   "funcion": "common opener",
+   "traducciones": {
+    "es": "Si tengo tiempo,…"
+   }
+  },
+  {
+   "expresion": "…unless…",
+   "funcion": "alternative to if…not",
+   "traducciones": {
+    "es": "…a menos que…"
+   }
+  },
+  {
+   "expresion": "As soon as…, I'll…",
+   "funcion": "time-based alternative",
+   "traducciones": {
+    "es": "En cuanto…, voy a…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the if-clause in the present simple, with no will?",
+  "Does the main clause use will, can or should correctly?",
+  "Is the comma used correctly when the if-clause comes first?",
+  "Have I used at least two conditional sentences?",
+  "Does the sentence sound natural, not translated word for word?"
+ ],
+ "promptCorreccion": "Focus only on the first conditional. Check for will inside the if-clause, check comma placement, and check whether can or should are used correctly as alternatives to will. Do not rewrite the text."
+}

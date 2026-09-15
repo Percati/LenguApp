@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-F07",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Vermutungen ausdrücken",
+ "categoria": "fluency",
+ "ancla": "Aspekte C1",
+ "descripcion": "Auf C2 wird eine Vermutung als vollständige Beweiskette aufgebaut: Beobachtung, Vermutung, mindestens eine Alternative, und das entscheidende Kriterium, das zwischen ihnen unterscheiden würde. Das ist Spekulation als strukturierte Analyse, nicht als einzelner Modalverb-Satz.",
+ "cuadroReferencia": {
+  "titulo": "Die vollständige Beweiskette",
+  "columnas": [
+   "Element",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Beobachtung",
+    "Auffällig ist der plötzliche Rückgang der Zahlen."
+   ],
+   [
+    "Hauptvermutung",
+    "Das dürfte mit der neuen Regelung zusammenhängen."
+   ],
+   [
+    "Alternative",
+    "Es könnte aber auch schlicht saisonal bedingt sein."
+   ],
+   [
+    "Entscheidendes Kriterium",
+    "Entscheidend wäre, ob sich der Trend im nächsten Quartal fortsetzt."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Auffällig ist der plötzliche Rückgang; das dürfte mit der neuen Regelung zusammenhängen.",
+   "audio": true
+  },
+  {
+   "texto": "Es könnte aber auch schlicht saisonal bedingt sein.",
+   "audio": true
+  },
+  {
+   "texto": "Entscheidend wäre, ob sich der Trend im nächsten Quartal fortsetzt."
+  }
+ ],
+ "notas": [
+  "Ein entscheidendes Kriterium zu benennen macht eine Vermutung überprüfbar und damit fachlich ernstzunehmen, statt nur eine Vermutung zu sein.",
+  "Eine Alternative zu nennen, ohne sie zu verwerfen, zeigt intellektuelle Redlichkeit.",
+  "Diese vierteilige Struktur wird in Fachanalysen erwartet; ein einzelner Vermutungssatz wirkt dort unterentwickelt."
+ ],
+ "contraste": {
+  "es": "Das kultivierte Spanisch baut Vermutungen ähnlich strukturiert auf, sodass das Konzept übertragbar ist. Was oft fehlt, ist das genaue deutsche Vokabular, um das entscheidende Kriterium zu benennen — entscheidend wäre — statt die Alternative unkommentiert stehen zu lassen."
+ },
+ "errores": [
+  "Eine Alternative nennen, ohne ein Kriterium zu benennen, das zwischen den beiden unterscheiden würde.",
+  "Nur die Hauptvermutung präsentieren, ohne jede Alternative zu erwägen.",
+  "Das entscheidende Kriterium so vage formulieren, dass es nicht wirklich überprüfbar ist."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Auffällig ist…",
+   "funcion": "Beobachtung einleiten",
+   "traducciones": {
+    "es": "llama la atención…",
+    "en": "what's striking is…"
+   }
+  },
+  {
+   "expresion": "Das dürfte mit…zusammenhängen.",
+   "funcion": "Hauptvermutung",
+   "traducciones": {
+    "es": "eso podría estar relacionado con…",
+    "en": "that's probably connected to…"
+   }
+  },
+  {
+   "expresion": "Es könnte aber auch…sein.",
+   "funcion": "Alternative",
+   "traducciones": {
+    "es": "pero también podría ser…",
+    "en": "but it could also be…"
+   }
+  },
+  {
+   "expresion": "Entscheidend wäre, ob…",
+   "funcion": "Kriterium zur Unterscheidung",
+   "traducciones": {
+    "es": "lo decisivo sería si…",
+    "en": "the key thing would be whether…"
+   }
+  },
+  {
+   "expresion": "Das lässt sich erst sagen, wenn…",
+   "funcion": "verweist auf fehlende Daten",
+   "traducciones": {
+    "es": "eso solo se podrá decir cuando…",
+    "en": "that can only be said once…"
+   }
+  },
+  {
+   "expresion": "Beide Erklärungen sind plausibel, aber…",
+   "funcion": "hält beide Optionen offen",
+   "traducciones": {
+    "es": "ambas explicaciones son plausibles, pero…",
+    "en": "both explanations are plausible, but…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist eine Beobachtung als Ausgangspunkt genannt?",
+  "Ist mindestens eine Alternative zur Hauptvermutung genannt?",
+  "Ist ein konkretes, überprüfbares Kriterium benannt?",
+  "Wirkt die Analyse strukturiert, nicht wie eine blosse Vermutung?",
+  "Würde ein Fachpublikum diese Analyse als seriös empfinden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die vollständige Beweiskette: Beobachtung, Vermutung, Alternative, Kriterium. Schreiben Sie den Text nicht neu."
+}

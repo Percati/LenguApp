@@ -1,0 +1,133 @@
+{
+ "skillId": "DE-F07",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Vermutungen ausdrücken",
+ "categoria": "fluency",
+ "ancla": "Aspekte C1",
+ "descripcion": "Auf C1 werden Vermutungen nicht nur mit einzelnen Modalverben ausgedrückt, sondern in einer Argumentationskette: von der Beobachtung über die Vermutung bis zur eingeräumten Unsicherheit. Das Ziel ist, eine Vermutung so zu präsentieren, dass sie begründet wirkt, ohne als Tatsache behauptet zu werden.",
+ "cuadroReferencia": {
+  "titulo": "Die Kette einer begründeten Vermutung",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Beobachtung",
+    "Auffällig ist, dass die Zahlen seit Monaten sinken."
+   ],
+   [
+    "Vermutung",
+    "Das dürfte mit der neuen Regelung zusammenhängen."
+   ],
+   [
+    "Unsicherheit einräumen",
+    "Sicher lässt sich das aber nicht sagen."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Auffällig ist, dass die Zahlen seit Monaten sinken. Das dürfte mit der neuen Regelung zusammenhängen.",
+   "audio": true
+  },
+  {
+   "texto": "Vieles deutet darauf hin, dass die Ursache anderswo liegt.",
+   "audio": true
+  },
+  {
+   "texto": "Sicher lässt sich das nicht sagen, aber es liegt nahe."
+  }
+ ],
+ "notas": [
+  "Vieles deutet darauf hin, dass… ist eine der nützlichsten C1-Formeln: sie begründet eine Vermutung, ohne einen einzelnen Beleg zu nennen.",
+  "Es liegt nahe, dass… ist etwas sicherer als könnte sein, aber immer noch klar eine Vermutung.",
+  "Die Kette Beobachtung–Vermutung–Unsicherheit funktioniert auch umgekehrt: manchmal ist es überzeugender, mit der Unsicherheit zu beginnen."
+ ],
+ "contraste": {
+  "es": "Das Spanische drückt Vermutung oft mit deber de oder dem Futuro de probabilidad aus (será por eso), was strukturell einfacher ist als die deutsche Kette aus Beobachtung, Vermutung und Einschränkung. Spanischsprachige neigen dazu, direkt zur Vermutung zu springen, ohne die Beobachtung zu benennen, die sie stützt.",
+  "en": "English builds a similar chain (it looks like…, that would suggest…, though it's hard to say for sure), so the logic transfers directly — the main gap is register: German dürfte and es liegt nahe are more formal than their closest English equivalents, so English speakers often under-formalise the vermutung in written German."
+ },
+ "errores": [
+  "Direkt zur Vermutung springen, ohne die Beobachtung zu nennen, die sie stützt.",
+  "Die Vermutung wie eine Tatsache formulieren, ohne jede Einschränkung am Ende.",
+  "Dieselbe Formel (das könnte sein) für jede Vermutung wiederholen, ohne Abstufung."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Auffällig ist, dass…",
+   "funcion": "Beobachtung einleiten",
+   "traducciones": {
+    "es": "Llama la atención que…",
+    "en": "What's striking is that…",
+    "fr": "Ce qui frappe, c’est que…",
+    "it": "Colpisce il fatto che…",
+    "pt": "Chama a atenção o facto de que…"
+   }
+  },
+  {
+   "expresion": "Vieles deutet darauf hin, dass…",
+   "funcion": "begründete Vermutung",
+   "traducciones": {
+    "es": "Todo indica que…",
+    "en": "A lot points to the fact that…",
+    "fr": "Beaucoup d’éléments indiquent que…",
+    "it": "Molti elementi indicano che…",
+    "pt": "Muitos indícios apontam para que…"
+   }
+  },
+  {
+   "expresion": "Es liegt nahe, dass…",
+   "funcion": "plausible Vermutung",
+   "traducciones": {
+    "es": "Es plausible que…",
+    "en": "It seems likely that…",
+    "fr": "Il est probable que…",
+    "it": "È plausibile che…",
+    "pt": "É plausível que…"
+   }
+  },
+  {
+   "expresion": "Sicher lässt sich das nicht sagen, aber…",
+   "funcion": "Unsicherheit einräumen",
+   "traducciones": {
+    "es": "No se puede afirmar con certeza, pero…",
+    "en": "It's hard to say for sure, but…",
+    "fr": "On ne peut pas l’affirmer avec certitude, mais…",
+    "it": "Non si può dirlo con certezza, ma…",
+    "pt": "Não se pode afirmar com certeza, mas…"
+   }
+  },
+  {
+   "expresion": "Das könnte damit zu tun haben, dass…",
+   "funcion": "vorsichtige Ursachenvermutung",
+   "traducciones": {
+    "es": "Podría tener que ver con que…",
+    "en": "That might have to do with the fact that…",
+    "fr": "Cela pourrait être lié au fait que…",
+    "it": "Potrebbe avere a che fare con il fatto che…",
+    "pt": "Isso pode ter a ver com o facto de que…"
+   }
+  },
+  {
+   "expresion": "Naheliegend wäre, dass…",
+   "funcion": "alternative Formulierung",
+   "traducciones": {
+    "es": "Lo lógico sería pensar que…",
+    "en": "The obvious explanation would be that…",
+    "fr": "L’explication la plus évidente serait que…",
+    "it": "La spiegazione più ovvia sarebbe che…",
+    "pt": "A explicação mais óbvia seria que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Nenne ich eine Beobachtung, bevor ich die Vermutung äußere?",
+  "Ist die Vermutung klar als Vermutung markiert, nicht als Tatsache?",
+  "Räume ich am Ende eine Unsicherheit ein?",
+  "Habe ich mehr als eine Formel für Vermutung benutzt?",
+  "Passt der Sicherheitsgrad zur tatsächlichen Beleglage?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Kette Beobachtung–Vermutung–Unsicherheit. Prüfen Sie, ob alle drei Elemente vorhanden sind und ob die Vermutung nicht wie eine Tatsache klingt. Schreiben Sie den Text nicht neu."
+}

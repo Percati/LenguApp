@@ -1,0 +1,146 @@
+{
+ "skillId": "DE-V03",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Kollokationen",
+ "categoria": "vocabulary",
+ "ancla": "Erkundungen C1",
+ "descripcion": "Auf C1 wird die feste Verbindung zwischen Verb und Nomen zum entscheidenden Register-Signal: eine Massnahme wird ergriffen, nicht gemacht; eine Entscheidung wird getroffen, nicht genommen. Diese Kollokationen sind der Unterschied zwischen korrektem und natürlich klingendem Deutsch.",
+ "cuadroReferencia": {
+  "titulo": "Häufige Verb-Nomen-Kollokationen",
+  "columnas": [
+   "Nomen",
+   "Richtiges Verb"
+  ],
+  "filas": [
+   [
+    "eine Massnahme",
+    "ergreifen"
+   ],
+   [
+    "eine Entscheidung",
+    "treffen"
+   ],
+   [
+    "eine Frage",
+    "aufwerfen / stellen"
+   ],
+   [
+    "Verantwortung",
+    "übernehmen"
+   ],
+   [
+    "Rücksicht",
+    "nehmen"
+   ],
+   [
+    "ein Ziel",
+    "verfolgen / erreichen"
+   ]
+  ],
+  "notaPie": "Diese Verben sind nicht austauschbar: eine Entscheidung ergreifen oder eine Massnahme treffen klingen für Muttersprachler sofort falsch, obwohl die Bedeutung klar bleibt."
+ },
+ "ejemplos": [
+  {
+   "texto": "Die Regierung hat mehrere Massnahmen ergriffen, um die Lage zu entschärfen.",
+   "audio": true
+  },
+  {
+   "texto": "Diese Entscheidung wurde nicht leichtfertig getroffen.",
+   "audio": true
+  },
+  {
+   "texto": "Der Bericht wirft mehr Fragen auf, als er beantwortet."
+  }
+ ],
+ "notas": [
+  "Anders als im Deutschen des Alltagsgesprächs gibt es hier kaum Toleranz: eine falsche Kollokation fällt sofort auf, auch wenn die Grammatik stimmt.",
+  "Manche Kollokationen ändern mit der Präposition ihre Bedeutung: Rücksicht nehmen auf ist etwas anderes als Rücksicht üben.",
+  "Adjektiv-Nomen-Kollokationen (eine gravierende Folge, ein triftiger Grund) sind der nächste Schritt nach Verb-Nomen."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat oft ein einziges Verb, wo das Deutsche mehrere Kollokationen unterscheidet: tomar deckt sowohl eine Entscheidung treffen als auch Massnahmen ergreifen ab. Diese eine spanische Entsprechung erklärt, warum Spanischsprachige die deutschen Verben systematisch verwechseln.",
+  "en": "English shows a similar spread (make a decision, take measures, raise a question), so English speakers already have the concept of fixed verb-noun pairs — but the specific pairings rarely match German one-to-one, so each combination still needs to be learned individually rather than mapped from English."
+ },
+ "errores": [
+  "Machen oder nehmen als Standardverb für jede Kollokation einsetzen.",
+  "Eine Entscheidung ergreifen oder eine Massnahme treffen bilden.",
+  "Die richtige Präposition nach der Kollokation vergessen: Rücksicht nehmen ohne auf."
+ ],
+ "redemittel": [
+  {
+   "expresion": "eine Massnahme ergreifen",
+   "funcion": "feste Kollokation",
+   "traducciones": {
+    "es": "tomar una medida",
+    "en": "to take a measure",
+    "fr": "prendre une mesure",
+    "it": "adottare una misura",
+    "pt": "tomar uma medida"
+   }
+  },
+  {
+   "expresion": "eine Entscheidung treffen",
+   "funcion": "feste Kollokation",
+   "traducciones": {
+    "es": "tomar una decisión",
+    "en": "to make a decision",
+    "fr": "prendre une décision",
+    "it": "prendere una decisione",
+    "pt": "tomar uma decisão"
+   }
+  },
+  {
+   "expresion": "eine Frage aufwerfen",
+   "funcion": "eine neue Frage entstehen lassen",
+   "traducciones": {
+    "es": "plantear una pregunta",
+    "en": "to raise a question",
+    "fr": "soulever une question",
+    "it": "sollevare una questione",
+    "pt": "levantar uma questão"
+   }
+  },
+  {
+   "expresion": "Verantwortung übernehmen",
+   "funcion": "feste Kollokation",
+   "traducciones": {
+    "es": "asumir responsabilidad",
+    "en": "to take responsibility",
+    "fr": "assumer la responsabilité",
+    "it": "assumersi la responsabilità",
+    "pt": "assumir a responsabilidade"
+   }
+  },
+  {
+   "expresion": "ein Ziel verfolgen",
+   "funcion": "aktiv anstreben",
+   "traducciones": {
+    "es": "perseguir un objetivo",
+    "en": "to pursue a goal",
+    "fr": "poursuivre un objectif",
+    "it": "perseguire un obiettivo",
+    "pt": "prosseguir um objetivo"
+   }
+  },
+  {
+   "expresion": "eine Rolle spielen",
+   "funcion": "sehr häufig, neutral",
+   "traducciones": {
+    "es": "jugar un papel",
+    "en": "to play a role",
+    "fr": "jouer un rôle",
+    "it": "svolgere un ruolo",
+    "pt": "desempenhar um papel"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich für jedes Nomen das richtige Verb gewählt, nicht machen oder nehmen als Standard?",
+  "Stimmt die Präposition nach der Kollokation?",
+  "Klingt die Verbindung für einen Muttersprachler natürlich?",
+  "Habe ich mindestens sechs verschiedene Kollokationen benutzt?",
+  "Ist eine Adjektiv-Nomen-Kollokation dabei, nicht nur Verb-Nomen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Verb-Nomen-Kollokationen. Markieren Sie jede und geben Sie die korrekte an, wo sie falsch ist. Schreiben Sie den Text nicht neu."
+}

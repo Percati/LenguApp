@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-F04",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Telling a Story / Recounting Experiences",
+ "categoria": "fluency",
+ "ancla": "CV Sustained monologue: describing experience",
+ "descripcion": "At C1 a story is built for tension, not just sequence: an opening that withholds the point, a clearly marked turning point, and a closing line that generalises beyond the single event. The grammar (past tenses) is already known; what changes is the architecture of the telling.",
+ "cuadroReferencia": {
+  "titulo": "Shape of a C1 story",
+  "columnas": [
+   "Part",
+   "Function",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Opening",
+    "creates curiosity, no date first",
+    "I never saw it coming."
+   ],
+   [
+    "Turning point",
+    "explicitly marked",
+    "And then, out of nowhere,…"
+   ],
+   [
+    "Closing",
+    "generalises beyond the event",
+    "It's changed how I see the whole thing since."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I never saw it coming, to be honest.",
+   "audio": true
+  },
+  {
+   "texto": "And then, out of nowhere, the whole plan fell apart.",
+   "audio": true
+  },
+  {
+   "texto": "It's changed how I approach things ever since."
+  }
+ ],
+ "notas": [
+  "Starting with a date or a flat time marker is the single most common way a C1 story loses its listener in the first sentence.",
+  "The turning point needs a verbal signal (and then, out of nowhere, that's when) — without it, the shift gets lost in the flow.",
+  "A strong closing line draws a general lesson, not just a summary of what happened."
+ ],
+ "contraste": {
+  "es": "El español narra con más digresiones y subtramas incrustadas, y el punto de inflexión suele quedar implícito en el orden de los hechos más que marcado con una palabra explícita. Los hispanohablantes tienden a omitir el marcador verbal del giro (and then, out of nowhere), lo que en inglés hace que la historia pierda tensión."
+ },
+ "errores": [
+  "Starting with a date or plain time reference instead of creating curiosity.",
+  "Leaving the turning point unmarked, so it blends into the rest of the narration.",
+  "Ending the story flatly with no generalising closing line."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I never saw it coming.",
+   "funcion": "opening, creates curiosity",
+   "traducciones": {
+    "es": "nunca lo vi venir",
+    "de": "Damit hatte ich überhaupt nicht gerechnet.",
+    "fr": "Je ne l’avais vraiment pas vu venir.",
+    "it": "Non me l’aspettavo proprio.",
+    "pt": "Nunca vi isso chegar."
+   }
+  },
+  {
+   "expresion": "And then, out of nowhere,…",
+   "funcion": "marks the turning point",
+   "traducciones": {
+    "es": "y entonces, de la nada,…",
+    "de": "Und dann, aus dem Nichts,…",
+    "fr": "Et puis, de nulle part,…",
+    "it": "E poi, dal nulla,…",
+    "pt": "E então, do nada,…"
+   }
+  },
+  {
+   "expresion": "That's when it hit me that…",
+   "funcion": "realisation after the fact",
+   "traducciones": {
+    "es": "ahí fue cuando me di cuenta de que…",
+    "de": "Da wurde mir klar, dass…",
+    "fr": "C’est là que j’ai compris que…",
+    "it": "È allora che mi sono reso/a conto che…",
+    "pt": "Foi aí que percebi que…"
+   }
+  },
+  {
+   "expresion": "It's changed how I see things since.",
+   "funcion": "closing, generalises",
+   "traducciones": {
+    "es": "eso cambió cómo veo las cosas desde entonces",
+    "de": "Seitdem sehe ich die Dinge anders.",
+    "fr": "Depuis, cela a changé ma façon de voir les choses.",
+    "it": "Da allora ha cambiato il mio modo di vedere le cose.",
+    "pt": "Desde então, isso mudou a forma como vejo as coisas."
+   }
+  },
+  {
+   "expresion": "Looking back on it now,…",
+   "funcion": "distanced reflection",
+   "traducciones": {
+    "es": "mirando hacia atrás ahora,…",
+    "de": "Wenn ich jetzt darauf zurückblicke,…",
+    "fr": "En y repensant maintenant,…",
+    "it": "Ripensandoci ora,…",
+    "pt": "Olhando para trás agora,…"
+   }
+  },
+  {
+   "expresion": "It's stuck with me ever since.",
+   "funcion": "long-term impact",
+   "traducciones": {
+    "es": "se me quedó grabado desde entonces",
+    "de": "Das ist mir seitdem im Gedächtnis geblieben.",
+    "fr": "Ça m’est resté en tête depuis.",
+    "it": "Mi è rimasto impresso da allora.",
+    "pt": "Isso ficou-me na memória desde então."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Does the story open with something other than a date?",
+  "Is the turning point clearly marked with a verbal signal?",
+  "Does the closing line generalise beyond the single event?",
+  "Are past simple, continuous and perfect correctly distributed?",
+  "Would a listener stay curious through the opening two sentences?"
+ ],
+ "promptCorreccion": "Focus only on the dramaturgy of the story: opening, turning point, closing. Check whether all three are present and clearly signalled. Do not rewrite the text."
+}

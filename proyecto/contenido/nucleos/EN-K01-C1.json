@@ -1,0 +1,137 @@
+{
+ "skillId": "EN-K01",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Inversion, Cleft and Fronting for Emphasis",
+ "categoria": "grammar",
+ "ancla": "EGP C1",
+ "descripcion": "Native-sounding emphasis rarely uses just one device. A skilled writer combines negative inversion, a cleft and fronting in the same passage, choosing whichever fits each sentence rather than repeating one pattern. Learned separately, these three sound like exercises; combined, they sound like argument.",
+ "cuadroReferencia": {
+  "titulo": "Three devices, one purpose",
+  "columnas": [
+   "Device",
+   "Pattern",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Negative inversion",
+    "Not until / Rarely + aux + subject",
+    "Not until the data arrived did anyone question it."
+   ],
+   [
+    "Cleft",
+    "What/It + be + …",
+    "What mattered most was the timing."
+   ],
+   [
+    "Fronting",
+    "object or complement first",
+    "That much, at least, we can agree on."
+   ]
+  ],
+  "notaPie": "Two of these in one paragraph is stylish. Three in one sentence is theatrical — use at most two devices per sentence."
+ },
+ "ejemplos": [
+  {
+   "texto": "Not until the results were reviewed did anyone question the method.",
+   "audio": true
+  },
+  {
+   "texto": "What struck the committee most was how little had changed.",
+   "audio": true
+  },
+  {
+   "texto": "That much, at least, everyone could agree on."
+  }
+ ],
+ "notas": [
+  "Combining a cleft with fronting in the same sentence usually overloads it; pick one per sentence and save the other for a nearby sentence.",
+  "Negative inversion is the most formal of the three and reads oddly in speech unless delivered with real emphasis.",
+  "The safest combination for spoken English is a soft cleft (what struck me was…) followed by fronting in the next sentence."
+ ],
+ "contraste": {
+  "es": "El español mueve el énfasis reordenando libremente las palabras (a mí no me sorprendió), sin necesidad de una estructura gramatical especial. El inglés no puede reordenar así, así que tiene que construir una de estas tres estructuras — de ahí que a los hispanohablantes les resulte más fácil combinarlas mal que no usarlas."
+ },
+ "errores": [
+  "Stacking all three devices in a single sentence, which reads as overwrought rather than emphatic.",
+  "Dropping the auxiliary in negative inversion: Not until the results arrived anyone questioned it.",
+  "Using a cleft where the content doesn't justify the emphasis, so it reads as inflated."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Not until…did…",
+   "funcion": "delays and emphasises the trigger",
+   "traducciones": {
+    "es": "no fue hasta que…",
+    "de": "Erst als…, …",
+    "fr": "Ce n’est que lorsque… que…",
+    "it": "Solo quando…",
+    "pt": "Só quando…"
+   }
+  },
+  {
+   "expresion": "What mattered most was…",
+   "funcion": "foregrounds the key point",
+   "traducciones": {
+    "es": "lo que más importó fue…",
+    "de": "Am wichtigsten war…",
+    "fr": "Ce qui comptait le plus, c’était…",
+    "it": "Quello che contava di più era…",
+    "pt": "O que mais importou foi…"
+   }
+  },
+  {
+   "expresion": "It was X, not Y, that…",
+   "funcion": "isolates the true cause",
+   "traducciones": {
+    "es": "fue X, no Y, lo que…",
+    "de": "Es war X, nicht Y, das…",
+    "fr": "C’est X, et non Y, qui…",
+    "it": "È stato X, non Y, a…",
+    "pt": "Foi X, não Y, que…"
+   }
+  },
+  {
+   "expresion": "That much we can agree on.",
+   "funcion": "fronts a shared conclusion",
+   "traducciones": {
+    "es": "en eso sí podemos coincidir",
+    "de": "Darauf können wir uns zumindest einigen.",
+    "fr": "Là-dessus, au moins, nous pouvons être d’accord.",
+    "it": "Su questo almeno possiamo essere d’accordo.",
+    "pt": "Nisso, pelo menos, podemos concordar."
+   }
+  },
+  {
+   "expresion": "Rarely has…",
+   "funcion": "emphasises rarity, formal",
+   "traducciones": {
+    "es": "en pocas ocasiones ha…",
+    "de": "Selten hat…",
+    "fr": "Rarement a-t-on…",
+    "it": "Raramente…",
+    "pt": "Raramente…"
+   }
+  },
+  {
+   "expresion": "Little did anyone expect that…",
+   "funcion": "fixed ironic inversion",
+   "traducciones": {
+    "es": "poco se esperaba nadie que…",
+    "de": "Kaum jemand hätte erwartet, dass…",
+    "fr": "Personne ne s’attendait vraiment à ce que…",
+    "it": "Nessuno si sarebbe aspettato che…",
+    "pt": "Poucos esperavam que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the auxiliary present in every inversion?",
+  "Does each sentence use at most two of the three devices?",
+  "Does the content justify the emphasis, or does it read as inflated?",
+  "Is at least one device used in a genuinely spoken-sounding way?",
+  "Would plain word order work just as well anywhere I used one of these?"
+ ],
+ "promptCorreccion": "Focus only on inversion, clefts and fronting. Check the auxiliary in every inversion, flag any sentence stacking more than two devices, and say where plain word order would serve better. Do not rewrite the text."
+}

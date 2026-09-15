@@ -1,0 +1,119 @@
+{
+ "skillId": "DE-G23",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "n-Deklination und Pluralbildung der Nomen",
+ "categoria": "grammar",
+ "ancla": "Aspekte B1+",
+ "descripcion": "Eine kleine Gruppe maskuliner Nomen (der Student, der Mensch, der Name) bekommt in allen Kasus außer Nominativ ein -n oder -en. Diese n-Deklination hat keine Entsprechung im Spanischen und muss als eigenes Muster gelernt werden.",
+ "cuadroReferencia": {
+  "titulo": "Die n-Deklination",
+  "columnas": [
+   "Kasus",
+   "der Student",
+   "der Mensch"
+  ],
+  "filas": [
+   [
+    "Nominativ",
+    "der Student",
+    "der Mensch"
+   ],
+   [
+    "Akkusativ",
+    "den Studenten",
+    "den Menschen"
+   ],
+   [
+    "Dativ",
+    "dem Studenten",
+    "dem Menschen"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich habe gestern einen Studenten aus Spanien kennengelernt.",
+   "audio": true
+  },
+  {
+   "texto": "Ich habe mit dem Studenten lange gesprochen.",
+   "audio": true
+  },
+  {
+   "texto": "Jeder Mensch macht mal Fehler."
+  }
+ ],
+ "notas": [
+  "Nur im Nominativ Singular bleibt die Form unverändert; in allen anderen Fällen kommt -n oder -en dazu.",
+  "Typische n-Deklinationsnomen: der Student, der Mensch, der Name, der Kunde, der Kollege, der Herr.",
+  "Der Plural bildet sich unregelmäßig und muss für jedes Nomen einzeln gelernt werden: -e, -er, -(e)n, -s oder ohne Endung."
+ ],
+ "contraste": {
+  "es": "Das Spanische kennt keine Deklination nach Kasus — el estudiante bleibt in jeder Position gleich. Diese Struktur ist für Spanischsprachige völlig neu und wird deshalb häufig vergessen."
+ },
+ "errores": [
+  "Die n-Endung im Akkusativ oder Dativ vergessen.",
+  "Die n-Endung auch im Nominativ hinzufügen, wo sie nicht gehört.",
+  "Den falschen Plural bilden, weil man ihn vom Spanischen ableitet."
+ ],
+ "redemittel": [
+  {
+   "expresion": "einen Studenten",
+   "funcion": "n-Deklination, Akkusativ",
+   "traducciones": {
+    "es": "a un estudiante",
+    "en": "a student"
+   }
+  },
+  {
+   "expresion": "mit dem Kollegen",
+   "funcion": "n-Deklination, Dativ",
+   "traducciones": {
+    "es": "con el colega",
+    "en": "with the colleague"
+   }
+  },
+  {
+   "expresion": "der Name, den Namen",
+   "funcion": "n-Deklination, Beispielpaar",
+   "traducciones": {
+    "es": "el nombre",
+    "en": "the name"
+   }
+  },
+  {
+   "expresion": "die Studenten (Plural)",
+   "funcion": "Pluralbildung",
+   "traducciones": {
+    "es": "los estudiantes",
+    "en": "the students"
+   }
+  },
+  {
+   "expresion": "die Männer (Plural)",
+   "funcion": "unregelmässiger Plural",
+   "traducciones": {
+    "es": "los hombres",
+    "en": "the men"
+   }
+  },
+  {
+   "expresion": "die Autos (Plural)",
+   "funcion": "Plural mit -s",
+   "traducciones": {
+    "es": "los autos",
+    "en": "the cars"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich bei n-Deklinationsnomen im Akkusativ und Dativ die Endung -n/-en hinzugefügt?",
+  "Ist der Nominativ ohne diese Endung geblieben?",
+  "Stimmt der Plural der benutzten Nomen?",
+  "Habe ich mindestens zwei n-Deklinationsnomen benutzt?",
+  "Habe ich mindestens ein Beispiel im Plural verwendet?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die n-Deklination und die Pluralbildung. Prüfen Sie jedes maskuline Nomen auf die richtige Endung im Akkusativ und Dativ. Schreiben Sie den Text nicht neu."
+}

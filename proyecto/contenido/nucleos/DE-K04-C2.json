@@ -1,0 +1,50 @@
+{
+ "skillId": "DE-K04", "nivel": "C2", "idioma": "de",
+ "titulo": "Konjunktiv I + Relativsatz + Nominalstil",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird dieses Muster über einen ganzen Absatz hinweg als journalistisches Werkzeug eingesetzt: mehrere berichtete Aussagen werden verkettet, ohne dass der Konjunktiv I ermüdend wirkt, und die Quelle wird nur einmal genannt, während der Rest des Absatzes implizit in ihrer Perspektive bleibt.",
+ "cuadroReferencia": {
+  "titulo": "Eine Quelle, mehrere berichtete Aussagen",
+  "columnas": ["Element", "Funktion"],
+  "filas": [
+   ["Quelle einmal nennen", "Laut Sprecher X sei die Lage…"],
+   ["Folgeaussagen implizit", "Die Massnahme, die man ergriffen habe, wirke bereits."],
+   ["Rückkehr zum eigenen Standpunkt", "Diese Einschätzung wird von Beobachtern allerdings bezweifelt."]
+  ]
+ },
+ "ejemplos": [
+  {"texto": "Laut dem Sprecher sei die Lage inzwischen stabil; die Massnahme, die man ergriffen habe, wirke bereits.", "audio": true},
+  {"texto": "Die Zahlen, die veröffentlicht worden seien, seien vorläufig, hiess es weiter.", "audio": true},
+  {"texto": "Diese Einschätzung wird von unabhängigen Beobachtern allerdings bezweifelt."}
+ ],
+ "notas": [
+  "Die Quelle muss nur beim ersten Satz explizit genannt werden; der Konjunktiv I trägt die Distanzierung für die folgenden Sätze implizit weiter.",
+  "Der Rückkehrsatz zum eigenen Standpunkt (im Indikativ) markiert klar, wo der Bericht endet und die eigene Einschätzung beginnt.",
+  "Eine zu lange Kette im Konjunktiv I ohne Rückkehrsatz lässt den Leser den Ursprung der Aussage aus den Augen verlieren."
+ ],
+ "contraste": {
+  "es": "Das Spanische markiert eine so lange berichtete Passage nicht morphologisch, sondern muss die Quelle in fast jedem Satz wiederholen (según el portavoz…, según él…). Hispanophone C2-Sprecher unterschätzen deshalb, wie weit der deutsche Konjunktiv I eine einmal genannte Quelle über mehrere Sätze trägt."
+ },
+ "errores": [
+  "Die Quelle in jedem Satz erneut nennen, was im Deutschen redundant wirkt, wo der Konjunktiv I das schon leistet.",
+  "Die Kette so lange fortführen, dass der Leser die ursprüngliche Quelle vergisst.",
+  "Am Ende nicht zum Indikativ zurückkehren, wodurch unklar bleibt, wo der Bericht endet."
+ ],
+ "redemittel": [
+  {"expresion": "Laut…sei…", "funcion": "Quelle einmal nennen", "traducciones": {"es": "según…, sería…", "en": "according to…, it was said to be…"}},
+  {"expresion": "…, die man…habe, …", "funcion": "implizite Fortführung", "traducciones": {"es": "…, que se habría…, …", "en": "…, which was said to have…, …"}},
+  {"expresion": "…, hiess es weiter.", "funcion": "Fortsetzung der Quellenangabe", "traducciones": {"es": "…, se añadió.", "en": "…, it was further stated."}},
+  {"expresion": "Diese Einschätzung wird…bezweifelt.", "funcion": "Rückkehr zum eigenen Standpunkt", "traducciones": {"es": "esta valoración es puesta en duda por…", "en": "this assessment is disputed by…"}},
+  {"expresion": "Wie es aus…verlautete, …", "funcion": "unbestimmte Quelle, formell", "traducciones": {"es": "según se supo desde…, …", "en": "as was reported from…, …"}},
+  {"expresion": "Unabhängig davon lässt sich feststellen, dass…", "funcion": "eigener Standpunkt, distanziert", "traducciones": {"es": "independientemente de eso, se puede constatar que…", "en": "independently of that, it can be noted that…"}}
+ ],
+ "autochequeo": [
+  "Ist die Quelle klar zu Beginn genannt?",
+  "Bleibt der Konjunktiv I über die Folgesätze konsistent?",
+  "Gibt es einen klaren Rückkehrsatz zum eigenen Standpunkt?",
+  "Wird die Quelle nicht unnötig wiederholt?",
+  "Kann der Leser jederzeit erkennen, ob er im Bericht oder in der eigenen Einschätzung ist?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz des Konjunktiv I über mehrere Sätze und den klaren Rückkehrsatz zum eigenen Standpunkt. Schreiben Sie den Text nicht neu."
+}

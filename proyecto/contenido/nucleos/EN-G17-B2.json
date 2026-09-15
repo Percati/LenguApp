@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-G17",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Gerunds and Infinitives",
+ "categoria": "grammar",
+ "ancla": "EGP A1-C2",
+ "descripcion": "Some English verbs take a gerund, some take an infinitive, and a few change meaning depending on which one follows. At B2 the goal is to fix the most common verbs in each group and to know the handful (stop, remember, try) where the choice changes the meaning entirely.",
+ "cuadroReferencia": {
+  "titulo": "Which form follows which verb",
+  "columnas": [
+   "Pattern",
+   "Verbs",
+   "Example"
+  ],
+  "filas": [
+   [
+    "+ gerund",
+    "enjoy, avoid, suggest, finish",
+    "I enjoy reading in the evening."
+   ],
+   [
+    "+ infinitive",
+    "want, decide, hope, agree",
+    "I decided to leave early."
+   ],
+   [
+    "Changes meaning",
+    "stop, remember, try",
+    "I stopped smoking / I stopped to smoke."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I enjoy reading before bed.",
+   "audio": true
+  },
+  {
+   "texto": "We decided to leave a bit earlier than planned.",
+   "audio": true
+  },
+  {
+   "texto": "I stopped checking my phone every five minutes."
+  }
+ ],
+ "notas": [
+  "Stop + gerund means to quit a habit; stop + infinitive means to pause in order to do something else.",
+  "Remember + gerund is about a past memory; remember + infinitive is about not forgetting a future task.",
+  "After a preposition, English always uses the gerund: interested in learning, good at cooking."
+ ],
+ "contraste": {
+  "es": "El español usa el infinitivo de forma mucho más general después de casi cualquier verbo (decidí salir, disfruto leer), sin la distinción entre gerundio e infinitivo que exige el inglés. Por eso los hispanohablantes tienden a usar el infinitivo por defecto y evitan el gerundio incluso donde es obligatorio."
+ },
+ "errores": [
+  "Using the infinitive after a preposition instead of the gerund.",
+  "Confusing stop + gerund and stop + infinitive.",
+  "Defaulting to the infinitive after verbs that require a gerund, like enjoy or avoid."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I enjoy…-ing",
+   "funcion": "gerund after enjoy",
+   "traducciones": {
+    "es": "Disfruto de…",
+    "de": "Ich mache gern…",
+    "fr": "J’aime…",
+    "it": "Mi piace…",
+    "pt": "Gosto de…"
+   }
+  },
+  {
+   "expresion": "I decided to…",
+   "funcion": "infinitive after decide",
+   "traducciones": {
+    "es": "Decidí…",
+    "de": "Ich habe beschlossen,…",
+    "fr": "J’ai décidé de…",
+    "it": "Ho deciso di…",
+    "pt": "Decidi…"
+   }
+  },
+  {
+   "expresion": "I'm interested in…-ing",
+   "funcion": "gerund after a preposition",
+   "traducciones": {
+    "es": "Me interesa…",
+    "de": "Ich interessiere mich für…",
+    "fr": "Je m’intéresse à…",
+    "it": "Mi interessa…",
+    "pt": "Interesso-me por…"
+   }
+  },
+  {
+   "expresion": "I stopped…-ing",
+   "funcion": "quitting a habit",
+   "traducciones": {
+    "es": "Dejé de…",
+    "de": "Ich habe aufgehört zu…",
+    "fr": "J’ai arrêté de…",
+    "it": "Ho smesso di…",
+    "pt": "Deixei de…"
+   }
+  },
+  {
+   "expresion": "I stopped to…",
+   "funcion": "paused in order to",
+   "traducciones": {
+    "es": "Paré para…",
+    "de": "Ich habe angehalten, um…",
+    "fr": "Je me suis arrêté(e) pour…",
+    "it": "Mi sono fermato/a per…",
+    "pt": "Parei para…"
+   }
+  },
+  {
+   "expresion": "I'm good at…-ing",
+   "funcion": "gerund after an adjective + preposition",
+   "traducciones": {
+    "es": "Soy bueno para…",
+    "de": "Ich bin gut darin,…",
+    "fr": "Je suis doué(e) pour…",
+    "it": "Sono bravo/a a…",
+    "pt": "Sou bom/boa a…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the gerund used after every preposition?",
+  "Have I checked stop, remember and try for the intended meaning?",
+  "Does each verb take the correct form (gerund or infinitive)?",
+  "Have I avoided defaulting to the infinitive everywhere?",
+  "Are at least six different verb-plus-form combinations used?"
+ ],
+ "promptCorreccion": "Focus only on gerunds and infinitives. Check every preposition for a following gerund, and check stop, remember and try for their intended meaning. Do not rewrite the text."
+}

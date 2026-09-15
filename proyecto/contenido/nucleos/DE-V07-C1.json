@@ -1,0 +1,136 @@
+{
+ "skillId": "DE-V07",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Umgangssprache vs. Standardsprache",
+ "categoria": "vocabulary",
+ "ancla": "PD>B2",
+ "descripcion": "Auf C1 wird erwartet, bewusst zwischen Umgangssprache und Standardsprache wechseln zu können — nicht aus Versehen ins Umgangssprachliche zu rutschen, sondern es gezielt einzusetzen, wenn der Kontext es erlaubt, und es zu vermeiden, wenn nicht.",
+ "cuadroReferencia": {
+  "titulo": "Dasselbe sagen, zwei Register",
+  "columnas": [
+   "Standardsprache",
+   "Umgangssprache"
+  ],
+  "filas": [
+   [
+    "Das ist kompliziert.",
+    "Das ist echt kompliziert."
+   ],
+   [
+    "Ich verstehe das nicht.",
+    "Ich blick da nicht durch."
+   ],
+   [
+    "Das ärgert mich.",
+    "Das nervt mich total."
+   ],
+   [
+    "Ich weiss es nicht genau.",
+    "Keine Ahnung, ehrlich gesagt."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ehrlich gesagt, ich blick da auch nicht ganz durch.",
+   "audio": true
+  },
+  {
+   "texto": "Das nervt mich echt, muss ich sagen.",
+   "audio": true
+  },
+  {
+   "texto": "Keine Ahnung, ob das überhaupt stimmt."
+  }
+ ],
+ "notas": [
+  "Blick durch, echt und total sind hochfrequent unter jüngeren Muttersprachlern, aber in einem formellen Schreiben fehl am Platz.",
+  "Der Wechsel ins Umgangssprachliche funktioniert am besten, wenn er bewusst und punktuell erfolgt, nicht durchgehend.",
+  "In einer E-Mail an eine Behörde ist Umgangssprache fast immer ein Fehler; im Gespräch mit Freunden ist reine Standardsprache oft unnötig steif."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat ebenfalls einen deutlichen Unterschied zwischen umgangssprachlichem und formellem Register, aber die Marker unterscheiden sich stark. Spanischsprachige übertragen oft ihre eigenen umgangssprachlichen Muster wörtlich und merken nicht, dass ein deutscher umgangssprachlicher Marker in einem anderen Kontext auffällt."
+ },
+ "errores": [
+  "Umgangssprachliche Marker in eine formelle E-Mail übernehmen.",
+  "Ausschliesslich Standardsprache benutzen, auch dort, wo ein lockerer Ton erwartet wird.",
+  "Total und echt in jedem Satz wiederholen, was informell überladen wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich blick da nicht durch.",
+   "funcion": "umgangssprachlich, Verwirrung",
+   "traducciones": {
+    "es": "No entiendo nada.",
+    "en": "I'm lost, honestly.",
+    "fr": "Je n’y comprends rien.",
+    "it": "Non ci capisco niente.",
+    "pt": "Não percebo nada disso."
+   }
+  },
+  {
+   "expresion": "Das nervt total.",
+   "funcion": "umgangssprachlich, Ärger",
+   "traducciones": {
+    "es": "Eso molesta muchísimo.",
+    "en": "That's really annoying.",
+    "fr": "C’est vraiment énervant.",
+    "it": "È davvero fastidioso.",
+    "pt": "Isso irrita imenso."
+   }
+  },
+  {
+   "expresion": "Keine Ahnung, ehrlich gesagt.",
+   "funcion": "umgangssprachlich, Unwissen",
+   "traducciones": {
+    "es": "Ni idea, la verdad.",
+    "en": "No idea, honestly.",
+    "fr": "Aucune idée, franchement.",
+    "it": "Nessuna idea, sinceramente.",
+    "pt": "Não faço ideia, sinceramente."
+   }
+  },
+  {
+   "expresion": "Das ist mir ehrlich gesagt zu kompliziert.",
+   "funcion": "neutral bis informell",
+   "traducciones": {
+    "es": "Se me hace muy complicado, la verdad.",
+    "en": "That's a bit too complicated for me, to be honest.",
+    "fr": "Pour être honnête, c’est trop compliqué pour moi.",
+    "it": "A dire il vero, per me è troppo complicato.",
+    "pt": "Sinceramente, isso é demasiado complicado para mim."
+   }
+  },
+  {
+   "expresion": "Das verstehe ich nicht ganz.",
+   "funcion": "standardsprachlich, dieselbe Funktion",
+   "traducciones": {
+    "es": "No lo entiendo del todo.",
+    "en": "I don't quite understand that.",
+    "fr": "Je ne comprends pas tout à fait.",
+    "it": "Non lo capisco del tutto.",
+    "pt": "Não percebo bem isso."
+   }
+  },
+  {
+   "expresion": "Ich bin mir da nicht sicher.",
+   "funcion": "standardsprachlich, Unwissen",
+   "traducciones": {
+    "es": "No estoy seguro de eso.",
+    "en": "I'm not sure about that.",
+    "fr": "Je n’en suis pas sûr(e).",
+    "it": "Non ne sono sicuro/a.",
+    "pt": "Não tenho a certeza disso."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Passt das Register zum Kontext (E-Mail, Gespräch, Bericht)?",
+  "Habe ich umgangssprachliche Marker bewusst gewählt, nicht aus Versehen?",
+  "Sind echt und total nicht überstrapaziert?",
+  "Könnte ich dieselbe Aussage im jeweils anderen Register wiedergeben?",
+  "Habe ich mindestens drei umgangssprachliche und drei standardsprachliche Formen kontrastiert?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Register: Umgangssprache gegen Standardsprache. Prüfen Sie, ob es zum Kontext passt und ob der Wechsel bewusst erfolgt. Schreiben Sie den Text nicht neu."
+}

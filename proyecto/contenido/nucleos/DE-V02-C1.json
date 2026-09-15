@@ -1,0 +1,147 @@
+{
+ "skillId": "DE-V02",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Redewendungen",
+ "categoria": "vocabulary",
+ "ancla": "Erkundungen C1",
+ "descripcion": "Auf C1 werden Redewendungen mittleren bis gehobenen Registers erwartet, die in Diskussionen und Kommentaren vorkommen — nicht die alltäglichen aus B2, sondern solche, die eine Position würzen, ohne informell zu wirken. Die Regel bleibt: eine pro Absatz, nie zwei hintereinander.",
+ "cuadroReferencia": {
+  "titulo": "C1-Redewendungen nach Funktion",
+  "columnas": [
+   "Funktion",
+   "Redewendung",
+   "Bedeutung"
+  ],
+  "filas": [
+   [
+    "Kritik an Halbherzigkeit",
+    "auf halbem Weg stehen bleiben",
+    "nicht konsequent zu Ende führen"
+   ],
+   [
+    "Zeitdruck",
+    "unter Zugzwang stehen",
+    "gezwungen sein zu handeln"
+   ],
+   [
+    "Klarstellung",
+    "die Dinge beim Namen nennen",
+    "offen und direkt aussprechen"
+   ],
+   [
+    "Vorsicht/Zurückhaltung",
+    "sich nicht aus dem Fenster lehnen",
+    "keine riskante Aussage machen"
+   ],
+   [
+    "Übertreibung ablehnen",
+    "das Kind nicht mit dem Bade ausschütten",
+    "nicht alles wegen eines Fehlers verwerfen"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Mit der Reform ist man auf halbem Weg stehen geblieben.",
+   "audio": true
+  },
+  {
+   "texto": "Man sollte hier die Dinge beim Namen nennen, statt drumherumzureden.",
+   "audio": true
+  },
+  {
+   "texto": "Bei so wenig Datenlage lehne ich mich lieber nicht zu weit aus dem Fenster."
+  }
+ ],
+ "notas": [
+  "Diese Redewendungen passen in Diskussionen, Kommentare und Meinungsbeiträge — im lockeren Gespräch wirken sie eher gesucht.",
+  "Das Kind mit dem Bade ausschütten wird fast immer verneint verwendet: man warnt davor, es zu tun.",
+  "Unter Zugzwang stehen ist neutraler als in der Klemme sitzen und passt besser zu einem formellen Kontext."
+ ],
+ "contraste": {
+  "es": "Die Bildspender unterscheiden sich stark: das Deutsche greift zu Handwerk und Verwaltung, das Spanische oft zu Körper und Tieren. Auf halbem Weg stehen bleiben hat keine wörtliche spanische Entsprechung; quedarse a medias kommt der Bedeutung nahe, ohne dasselbe Bild zu nutzen.",
+  "en": "English has partial equivalents for some of these (not to stick your neck out is close to sich nicht aus dem Fenster lehnen), but the image-source differs enough that direct translation usually fails — English speakers should learn each idiom as a fixed unit, not derive it from the English one."
+ },
+ "errores": [
+  "Eine Redewendung wörtlich aus dem Spanischen oder Englischen übersetzen.",
+  "Mehrere Redewendungen in einem Absatz häufen, was gesucht wirkt.",
+  "Das Kind mit dem Bade ausschütten bejahend statt warnend verwenden."
+ ],
+ "redemittel": [
+  {
+   "expresion": "auf halbem Weg stehen bleiben",
+   "funcion": "Kritik an Halbherzigkeit",
+   "traducciones": {
+    "es": "quedarse a mitad de camino",
+    "en": "to stop halfway",
+    "fr": "s’arrêter à mi-chemin",
+    "it": "fermarsi a metà strada",
+    "pt": "ficar a meio caminho"
+   }
+  },
+  {
+   "expresion": "unter Zugzwang stehen",
+   "funcion": "Zeitdruck, formell",
+   "traducciones": {
+    "es": "estar contra las cuerdas",
+    "en": "to be under pressure to act",
+    "fr": "être sous pression pour agir",
+    "it": "essere sotto pressione per agire",
+    "pt": "estar sob pressão para agir"
+   }
+  },
+  {
+   "expresion": "die Dinge beim Namen nennen",
+   "funcion": "Klarstellung fordern",
+   "traducciones": {
+    "es": "llamar a las cosas por su nombre",
+    "en": "to call a spade a spade",
+    "fr": "appeler un chat un chat",
+    "it": "chiamare le cose con il loro nome",
+    "pt": "chamar as coisas pelos nomes"
+   }
+  },
+  {
+   "expresion": "sich nicht aus dem Fenster lehnen",
+   "funcion": "Vorsicht bei Aussagen",
+   "traducciones": {
+    "es": "no arriesgarse demasiado al opinar",
+    "en": "not to stick one's neck out",
+    "fr": "ne pas trop se mouiller",
+    "it": "non esporsi troppo",
+    "pt": "não se expor demasiado"
+   }
+  },
+  {
+   "expresion": "das Kind nicht mit dem Bade ausschütten",
+   "funcion": "vor Übertreibung warnen",
+   "traducciones": {
+    "es": "no tirar todo por la borda",
+    "en": "not to throw the baby out with the bathwater",
+    "fr": "ne pas jeter le bébé avec l’eau du bain",
+    "it": "non buttare via il bambino con l’acqua sporca",
+    "pt": "não deitar fora o bebé com a água do banho"
+   }
+  },
+  {
+   "expresion": "sich mit fremden Federn schmücken",
+   "funcion": "unverdiente Anerkennung kritisieren",
+   "traducciones": {
+    "es": "apropiarse del mérito ajeno",
+    "en": "to take credit for someone else's work",
+    "fr": "s’attribuer le mérite du travail d’autrui",
+    "it": "farsi bello con i meriti altrui",
+    "pt": "apropriar-se do mérito alheio"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Passt jede Redewendung zum Register des Textes?",
+  "Ist höchstens eine Redewendung pro Absatz vorhanden?",
+  "Klingt eine davon wie eine wörtliche Übersetzung?",
+  "Ist das Kind mit dem Bade ausschütten korrekt verneinend eingesetzt?",
+  "Würde eine deutschsprachige Person diese Redewendung hier tatsächlich benutzen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Redewendungen. Prüfen Sie Register, Häufung und wörtliche Übersetzungen aus dem Spanischen oder Englischen. Schreiben Sie den Text nicht neu."
+}

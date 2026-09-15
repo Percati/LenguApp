@@ -1,0 +1,47 @@
+{
+ "skillId": "EN-F18", "nivel": "C2", "idioma": "en", "bilingue": false,
+ "titulo": "Irony, Understatement and Humour",
+ "categoria": "fluency",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 understatement is used with awareness of exactly how much distance it creates from sincerity, and controlled enough to be dropped instantly when a moment calls for directness instead — the mark of command here is knowing when not to use the device, not just how to produce it.",
+ "cuadroReferencia": {
+  "titulo": "Knowing when to drop the device",
+  "columnas": ["Context", "Register"],
+  "filas": [
+   ["Social, low stakes", "understatement works well"],
+   ["Genuine crisis or grief", "understatement can read as evasive or cold"],
+   ["Switch point", "drop the device the moment sincerity is actually needed"]
+  ]
+ },
+ "ejemplos": [
+  {"texto": "Not the smoothest presentation I've ever given, if I'm honest.", "audio": true},
+  {"texto": "This is serious, and I want to say that plainly, without any of the usual understatement.", "audio": true},
+  {"texto": "I'm not going to make light of this one."}
+ ],
+ "notas": [
+  "Explicitly naming the switch (without any of the usual understatement) signals to the listener that the register has changed on purpose, which prevents the shift from reading as a mood swing.",
+  "A speaker who understates everything, including genuinely serious moments, reads as emotionally unavailable rather than witty.",
+  "This is serious, and I want to say that plainly is itself a marked, deliberate move — stating directness explicitly, rather than assuming it will register on its own."
+ ],
+ "errores": [
+  "Understating a genuinely serious or painful moment, which can read as cold or evasive.",
+  "Switching to directness without any signal, so the shift feels like a change of mood rather than a deliberate register choice.",
+  "Overusing the explicit switch-flagging move until it becomes its own tic."
+ ],
+ "redemittel": [
+  {"expresion": "Not the smoothest…, if I'm honest.", "funcion": "social understatement", "traducciones": {"es": "No fue lo más fluido…, la verdad."}},
+  {"expresion": "…, without any of the usual understatement.", "funcion": "explicitly flags the switch to sincerity", "traducciones": {"es": "…, sin la habitual atenuación."}},
+  {"expresion": "I want to say that plainly.", "funcion": "marks deliberate directness", "traducciones": {"es": "Quiero decir eso claramente."}},
+  {"expresion": "I'm not going to make light of this.", "funcion": "opts out of humour on purpose", "traducciones": {"es": "No voy a tomarme esto a la ligera."}},
+  {"expresion": "This isn't the moment for irony.", "funcion": "names the register shift", "traducciones": {"es": "No es momento para la ironía."}},
+  {"expresion": "In all seriousness,…", "funcion": "classic marker of the switch", "traducciones": {"es": "Hablando en serio,…"}}
+ ],
+ "autochequeo": [
+  "Is understatement avoided in genuinely serious or painful moments?",
+  "Is any switch to directness clearly signalled, not just assumed?",
+  "Would the listener register the shift as deliberate, not a mood change?",
+  "Is the explicit-switch move used sparingly, not as a tic?",
+  "Does the overall tone match the actual stakes of the situation?"
+ ],
+ "promptCorreccion": "Focus only on whether understatement is dropped appropriately for serious moments, and whether any switch to directness is clearly signalled. Do not rewrite the text."
+}

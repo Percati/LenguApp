@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-G03",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Present Perfect vs. Past Simple",
+ "categoria": "grammar",
+ "ancla": "EGP A2/B1",
+ "descripcion": "The present perfect connects the past to now; the past simple describes a finished, closed time. At B1 the clearest rule is: if there's a finished time word (yesterday, last year), use the past simple. If the time is still open (this year, ever, never), use the present perfect.",
+ "cuadroReferencia": {
+  "titulo": "Which tense, and why",
+  "columnas": [
+   "Situation",
+   "Tense",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Finished time",
+    "past simple",
+    "I visited Paris last year."
+   ],
+   [
+    "Open time / experience",
+    "present perfect",
+    "I've visited Paris twice."
+   ],
+   [
+    "Asking when",
+    "always past simple",
+    "When did you visit?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I visited Paris last year with my family.",
+   "audio": true
+  },
+  {
+   "texto": "I've visited Paris twice, but never in winter.",
+   "audio": true
+  },
+  {
+   "texto": "When did you visit Paris?"
+  }
+ ],
+ "notas": [
+  "Yesterday, last year and ago always take the past simple, never the present perfect.",
+  "Ever and never usually go with the present perfect, for life experience.",
+  "When always takes the past simple, even for a recent event."
+ ],
+ "contraste": {
+  "es": "El español usa el pretérito perfecto (he visitado) para tiempo abierto en gran parte de España, pero el pretérito indefinido casi siempre en Latinoamérica, incluso para tiempo abierto. Esto significa que hispanohablantes latinoamericanos tienden a subusar el present perfect en inglés."
+ },
+ "errores": [
+  "Using the present perfect with a finished time word like yesterday.",
+  "Using the past simple after when has already been asked (that's actually correct — the error is using present perfect there instead).",
+  "Forgetting ever/never with the present perfect for experience."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I've never…",
+   "funcion": "life experience",
+   "traducciones": {
+    "es": "Nunca he…"
+   }
+  },
+  {
+   "expresion": "Have you ever…?",
+   "funcion": "asking about experience",
+   "traducciones": {
+    "es": "¿Alguna vez has…?"
+   }
+  },
+  {
+   "expresion": "I…yesterday/last…",
+   "funcion": "finished time, past simple",
+   "traducciones": {
+    "es": "…ayer/el… pasado"
+   }
+  },
+  {
+   "expresion": "When did you…?",
+   "funcion": "asking when, past simple",
+   "traducciones": {
+    "es": "¿Cuándo…?"
+   }
+  },
+  {
+   "expresion": "I've already…",
+   "funcion": "present perfect, recent",
+   "traducciones": {
+    "es": "Ya he…"
+   }
+  },
+  {
+   "expresion": "I haven't…yet.",
+   "funcion": "present perfect, negative",
+   "traducciones": {
+    "es": "Todavía no he…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Does every past simple have a finished time word?",
+  "Does every present perfect have an open time, or ever/never?",
+  "Is the past simple used after every when question?",
+  "Have I used both tenses at least once?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on the choice between present perfect and past simple. Check whether each one matches a finished or an open time reference. Do not rewrite the text."
+}

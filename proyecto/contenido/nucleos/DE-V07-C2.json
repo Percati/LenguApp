@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-V07",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Umgangssprache vs. Standardsprache",
+ "categoria": "vocabulary",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird das gesamte Spektrum von sehr formell bis sehr umgangssprachlich souverän beherrscht, einschliesslich der subtilen Zwischenstufen, und der Übergang zwischen den Ebenen wird als bewusstes Stilmittel eingesetzt, nicht nur als Anpassung an eine Situation.",
+ "cuadroReferencia": {
+  "titulo": "Das ganze Spektrum",
+  "columnas": [
+   "Ebene",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Sehr formell",
+    "Ich vermag diese Einschätzung nicht zu teilen."
+   ],
+   [
+    "Standardsprache",
+    "Ich sehe das anders."
+   ],
+   [
+    "Umgangssprachlich",
+    "Da bin ich echt anderer Meinung."
+   ],
+   [
+    "Sehr umgangssprachlich",
+    "Nee, das seh ich voll anders."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich vermag diese Einschätzung, ehrlich gesagt, nicht zu teilen.",
+   "audio": true
+  },
+  {
+   "texto": "Da bin ich echt anderer Meinung, muss ich sagen.",
+   "audio": true
+  },
+  {
+   "texto": "Nee, das seh ich voll anders."
+  }
+ ],
+ "notas": [
+  "Vermögen als Modalverb (ich vermag…zu) ist extrem formell und in gesprochener Sprache fast nie zu hören.",
+  "Der bewusste Wechsel zwischen den vier Ebenen innerhalb eines Textes ist selbst ein Stilmittel, das Persönlichkeit und Kontrolle zeigt.",
+  "Ganz umgangssprachliche Formen (nee, seh) gehören ausschliesslich in sehr informelle, mündliche Register."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat ein vergleichbares Spektrum, aber die Marker für jede Ebene unterscheiden sich stark von den deutschen. Hispanophone C2-Sprecher übertragen oft ihre eigenen umgangssprachlichen Muster wörtlich, ohne zu merken, dass ein bestimmter deutscher umgangssprachlicher Marker in einem anderen Kontext auffällt oder sogar unpassend wirkt."
+ },
+ "errores": [
+  "Sehr formelle und sehr umgangssprachliche Marker im selben Satz mischen.",
+  "Vermögen als Modalverb in gesprochener Sprache verwenden, wo es gestelzt wirkt.",
+  "Den bewussten Ebenenwechsel so häufig einsetzen, dass er wie Inkonsistenz statt wie Stil wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich vermag…nicht zu teilen.",
+   "funcion": "sehr formell",
+   "traducciones": {
+    "es": "no puedo compartir…",
+    "en": "I am unable to share…"
+   }
+  },
+  {
+   "expresion": "Ich sehe das anders.",
+   "funcion": "Standardsprache",
+   "traducciones": {
+    "es": "yo lo veo distinto",
+    "en": "I see it differently"
+   }
+  },
+  {
+   "expresion": "Da bin ich echt anderer Meinung.",
+   "funcion": "umgangssprachlich",
+   "traducciones": {
+    "es": "ahí de verdad opino distinto",
+    "en": "I really disagree there"
+   }
+  },
+  {
+   "expresion": "Nee, das seh ich voll anders.",
+   "funcion": "sehr umgangssprachlich",
+   "traducciones": {
+    "es": "no, yo lo veo re distinto",
+    "en": "nah, I totally see it differently"
+   }
+  },
+  {
+   "expresion": "Gestatten Sie mir die Bemerkung, dass…",
+   "funcion": "sehr formell, einleitend",
+   "traducciones": {
+    "es": "permítame la observación de que…",
+    "en": "allow me to note that…"
+   }
+  },
+  {
+   "expresion": "Ehrlich, das find ich nicht so gut.",
+   "funcion": "umgangssprachlich, direkt",
+   "traducciones": {
+    "es": "sinceramente, eso no me parece tan bueno",
+    "en": "honestly, I don't think that's great"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Sind sehr formelle und sehr umgangssprachliche Marker nie im selben Satz gemischt?",
+  "Ist vermögen nur in schriftlicher, formeller Sprache eingesetzt?",
+  "Trägt ein bewusster Ebenenwechsel eine erkennbare Funktion?",
+  "Habe ich mindestens drei der vier Ebenen abgedeckt?",
+  "Würde ein Muttersprachler diese Ebenen als authentisch empfinden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Spektrum von formell bis umgangssprachlich. Prüfen Sie, ob Marker unterschiedlicher Ebenen vermischt werden. Schreiben Sie den Text nicht neu."
+}

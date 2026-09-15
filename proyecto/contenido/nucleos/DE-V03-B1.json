@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-V03",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Kollokationen",
+ "categoria": "vocabulary",
+ "ancla": "PD B1+",
+ "descripcion": "Auf B1 lernt man die einfachsten und häufigsten Verb-Nomen-Kollokationen des Alltags: Zeit haben, Angst haben, Hunger haben. Diese Verbindungen sind fest und nicht durch ein anderes Verb ersetzbar, auch wenn die Bedeutung ähnlich wäre.",
+ "cuadroReferencia": {
+  "titulo": "Alltägliche Kollokationen mit haben",
+  "columnas": [
+   "Nomen",
+   "Verb"
+  ],
+  "filas": [
+   [
+    "Zeit",
+    "haben"
+   ],
+   [
+    "Angst",
+    "haben"
+   ],
+   [
+    "Hunger/Durst",
+    "haben"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich habe heute leider keine Zeit.",
+   "audio": true
+  },
+  {
+   "texto": "Ich habe ein bisschen Angst vor Prüfungen.",
+   "audio": true
+  },
+  {
+   "texto": "Ich habe grossen Hunger, lass uns essen gehen."
+  }
+ ],
+ "notas": [
+  "Im Deutschen sagt man Zeit haben, Angst haben, Hunger haben — mit sein wäre das falsch.",
+  "Diese Kollokationen mit haben sind sehr häufig und müssen als feste Einheit gelernt werden.",
+  "Recht haben ist eine weitere sehr nützliche Kollokation mit haben."
+ ],
+ "contraste": {
+  "es": "Das Spanische verwendet hier tener (tener tiempo, tener miedo, tener hambre), was strukturell fast identisch zum deutschen haben ist. Diese Kollokationen übertragen sich deshalb sehr leicht."
+ },
+ "errores": [
+  "Sein statt haben benutzen: ich bin Angst statt ich habe Angst.",
+  "Diese festen Verbindungen mit einem anderen Verb ersetzen.",
+  "Den Artikel bei Hunger und Durst falsch setzen (meist kein Artikel)."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich habe keine Zeit.",
+   "funcion": "feste Kollokation",
+   "traducciones": {
+    "es": "No tengo tiempo.",
+    "en": "I don't have time."
+   }
+  },
+  {
+   "expresion": "Ich habe Angst vor…",
+   "funcion": "feste Kollokation mit Präposition",
+   "traducciones": {
+    "es": "Tengo miedo de…",
+    "en": "I'm afraid of…"
+   }
+  },
+  {
+   "expresion": "Ich habe Hunger.",
+   "funcion": "feste Kollokation",
+   "traducciones": {
+    "es": "Tengo hambre.",
+    "en": "I'm hungry."
+   }
+  },
+  {
+   "expresion": "Du hast recht.",
+   "funcion": "feste Kollokation",
+   "traducciones": {
+    "es": "Tenés razón.",
+    "en": "You're right."
+   }
+  },
+  {
+   "expresion": "Ich habe Lust auf…",
+   "funcion": "feste Kollokation, Wunsch",
+   "traducciones": {
+    "es": "Tengo ganas de…",
+    "en": "I feel like…"
+   }
+  },
+  {
+   "expresion": "Ich habe Durst.",
+   "funcion": "feste Kollokation",
+   "traducciones": {
+    "es": "Tengo sed.",
+    "en": "I'm thirsty."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich haben statt sein in diesen Kollokationen benutzt?",
+  "Habe ich mindestens vier verschiedene Kollokationen mit haben benutzt?",
+  "Klingt der Text natürlich?",
+  "Habe ich den Artikel bei Hunger/Durst richtig gesetzt (meist keiner)?",
+  "Habe ich Recht haben korrekt verwendet?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Kollokationen mit haben. Prüfen Sie, ob haben statt sein verwendet wird. Schreiben Sie den Text nicht neu."
+}

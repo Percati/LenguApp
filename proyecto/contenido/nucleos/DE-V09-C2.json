@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-V09",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Feine Bedeutungsunterschiede und Konnotation",
+ "categoria": "vocabulary",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 werden Konnotationsunterschiede genutzt, um die Sympathie des Lesers gezielt zu lenken, ohne eine explizite Wertung auszusprechen: dieselbe Person als beharrlich oder als stur zu beschreiben, ist ein rhetorisches Mittel, keine stilistische Nebensache.",
+ "cuadroReferencia": {
+  "titulo": "Konnotation als rhetorisches Mittel",
+  "columnas": [
+   "Neutral",
+   "Positiv gefärbt",
+   "Negativ gefärbt"
+  ],
+  "filas": [
+   [
+    "festhalten an",
+    "beharrlich verfolgen",
+    "stur beharren auf"
+   ],
+   [
+    "Kritik üben",
+    "konstruktiv hinterfragen",
+    "nörgeln"
+   ],
+   [
+    "Veränderung",
+    "mutige Reform",
+    "riskantes Experiment"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Er verfolgte sein Ziel beharrlich, trotz erheblichen Widerstands.",
+   "audio": true
+  },
+  {
+   "texto": "Kritiker würden das eher als stures Beharren auf einer überholten Position bezeichnen.",
+   "audio": true
+  },
+  {
+   "texto": "Ob man das als mutige Reform oder riskantes Experiment bezeichnet, hängt vom Standpunkt ab."
+  }
+ ],
+ "notas": [
+  "Die Wahl zwischen beharrlich und stur für dasselbe Verhalten lenkt die Sympathie des Lesers, ohne dass eine explizite Bewertung nötig wäre.",
+  "Bewusst zwei konnotativ gegensätzliche Beschreibungen desselben Sachverhalts nebeneinanderzustellen, ist ein anerkanntes Mittel journalistischer Ausgewogenheit.",
+  "Diese Technik zu erkennen ist wichtig, um selbst nicht unbewusst manipuliert zu werden, wenn man fremde Texte liest."
+ ],
+ "contraste": {
+  "es": "Das kultivierte Spanisch kennt ähnliche Konnotationspaare (perseverante/terco), sodass das Konzept vertraut ist. Die Feinheit, zwei Konnotationen bewusst nebeneinanderzustellen, um Ausgewogenheit zu simulieren oder zu demonstrieren, ist jedoch eine spezifisch journalistische Technik, die aktiv geübt werden muss."
+ },
+ "errores": [
+  "Eine konnotative Wahl treffen, ohne sich der damit gelenkten Sympathie bewusst zu sein.",
+  "In einem Text, der Neutralität beansprucht, durchgehend konnotativ aufgeladene Wörter verwenden.",
+  "Die Gegenüberstellung zweier Konnotationen so unausgewogen gestalten, dass sie keine echte Ausgewogenheit simuliert."
+ ],
+ "redemittel": [
+  {
+   "expresion": "beharrlich verfolgen",
+   "funcion": "positiv gefärbte Ausdauer",
+   "traducciones": {
+    "es": "perseguir con tenacidad",
+    "en": "to pursue persistently"
+   }
+  },
+  {
+   "expresion": "stur beharren auf",
+   "funcion": "negativ gefärbte Ausdauer",
+   "traducciones": {
+    "es": "aferrarse tercamente a",
+    "en": "to stubbornly cling to"
+   }
+  },
+  {
+   "expresion": "Ob man das als…oder als…bezeichnet, hängt vom Standpunkt ab.",
+   "funcion": "explizite Gegenüberstellung",
+   "traducciones": {
+    "es": "que se lo llame… o… depende del punto de vista",
+    "en": "whether one calls it…or…depends on one's viewpoint"
+   }
+  },
+  {
+   "expresion": "konstruktiv hinterfragen",
+   "funcion": "positiv gefärbte Kritik",
+   "traducciones": {
+    "es": "cuestionar de forma constructiva",
+    "en": "to question constructively"
+   }
+  },
+  {
+   "expresion": "…, um es neutral auszudrücken.",
+   "funcion": "signalisiert bewusste Zurückhaltung",
+   "traducciones": {
+    "es": "…, por decirlo de forma neutral",
+    "en": "…, to put it neutrally"
+   }
+  },
+  {
+   "expresion": "je nach Lesart",
+   "funcion": "erkennt Konnotationsabhängigkeit an",
+   "traducciones": {
+    "es": "según la interpretación",
+    "en": "depending on how one reads it"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Bin ich mir der Sympathielenkung jeder konnotativen Wahl bewusst?",
+  "Wirkt ein als neutral beanspruchter Text tatsächlich neutral?",
+  "Ist eine bewusste Gegenüberstellung zweier Konnotationen ausgewogen gestaltet?",
+  "Habe ich mindestens ein Konnotationspaar bewusst eingesetzt?",
+  "Würde ein Muttersprachler die Konnotation genauso lesen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, wie Konnotation die Sympathie des Lesers lenkt. Prüfen Sie, ob ein als neutral beanspruchter Text tatsächlich neutral ist. Schreiben Sie den Text nicht neu."
+}

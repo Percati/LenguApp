@@ -1,0 +1,109 @@
+{
+ "skillId": "EN-F16",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Complaining and Resolving Problems",
+ "categoria": "fluency",
+ "ancla": "CV Goal-oriented co-operation",
+ "descripcion": "At B1 you state a problem clearly and ask politely for it to be fixed. The full three-part structure with dates and escalation used at higher levels comes later — a clear, polite complaint with one specific request is enough here.",
+ "cuadroReferencia": {
+  "titulo": "A simple complaint",
+  "columnas": [
+   "Step",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Problem",
+    "The heating isn't working."
+   ],
+   [
+    "Request",
+    "Could you please fix it?"
+   ],
+   [
+    "Closing",
+    "Thank you for your help."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The heating isn't working, unfortunately.",
+   "audio": true
+  },
+  {
+   "texto": "Could you please fix it as soon as possible?",
+   "audio": true
+  },
+  {
+   "texto": "I'd like a refund, please."
+  }
+ ],
+ "notas": [
+  "Unfortunately signals a problem without sounding aggressive.",
+  "Could you please…? is the most useful polite request at B1.",
+  "I'd like… works well to ask for a specific solution."
+ ],
+ "contraste": {
+  "es": "El español a veces formula quejas más directamente que el inglés, que ya en B1 espera cierta cortesía, normalmente con could you o please."
+ },
+ "errores": [
+  "Stating the problem with no polite request afterwards.",
+  "Sounding too aggressive, without unfortunately or please.",
+  "Not asking for a specific solution."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…isn't working, unfortunately.",
+   "funcion": "stating the problem",
+   "traducciones": {
+    "es": "…no funciona, lamentablemente."
+   }
+  },
+  {
+   "expresion": "Could you please…?",
+   "funcion": "polite request",
+   "traducciones": {
+    "es": "¿Podría usted, por favor…?"
+   }
+  },
+  {
+   "expresion": "I'd like…",
+   "funcion": "specific request",
+   "traducciones": {
+    "es": "Quisiera…"
+   }
+  },
+  {
+   "expresion": "This is the second time this has happened.",
+   "funcion": "repeated problem",
+   "traducciones": {
+    "es": "Es la segunda vez que pasa esto."
+   }
+  },
+  {
+   "expresion": "When can you fix this?",
+   "funcion": "asking for a timeframe",
+   "traducciones": {
+    "es": "¿Cuándo pueden arreglarlo?"
+   }
+  },
+  {
+   "expresion": "Thank you for your help.",
+   "funcion": "polite closing",
+   "traducciones": {
+    "es": "Gracias por su ayuda."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the problem clearly stated?",
+  "Have I made a polite request?",
+  "Does the complaint sound polite, not aggressive?",
+  "Have I asked for a specific solution?",
+  "Have I asked for a specific solution?"
+ ],
+ "promptCorreccion": "Focus only on the problem and the request in the complaint. Check whether the tone stays polite throughout and whether a specific request was made. Do not rewrite the text."
+}

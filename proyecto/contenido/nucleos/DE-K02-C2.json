@@ -1,0 +1,123 @@
+{
+ "skillId": "DE-K02",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Passiv + Partizip I und II als Attribut",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird die Dichte dieser Konstruktion an das Genre angepasst: Gesetzestexte und Verwaltungsvorschriften tolerieren mehrere Partizipialattribute pro Satz, während selbst anspruchsvoller Journalismus einen verbaleren Stil beibehält. Die einzelne Konstruktion war schon auf C1 verfügbar; C2 bedeutet, ihre Dosierung nach Textsorte zu beurteilen.",
+ "cuadroReferencia": {
+  "titulo": "Wie viel Dichte ein Genre trägt",
+  "columnas": [
+   "Genre",
+   "Toleranz",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Gesetzestext",
+    "sehr hoch",
+    "die von der Behörde zu genehmigenden Anträge"
+   ],
+   [
+    "Wissenschaftlicher Bericht",
+    "hoch",
+    "die zu erwartenden, noch nicht quantifizierten Effekte"
+   ],
+   [
+    "Qualitätsjournalismus",
+    "mittel",
+    "die absehbaren, aber schwer zu beziffernden Folgen"
+   ],
+   [
+    "Literarische Erzählung",
+    "niedrig, nur für Effekt",
+    "das kaum zu ertragende Schweigen"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die von der Behörde zu genehmigenden Anträge werden gesammelt bearbeitet.",
+   "audio": true
+  },
+  {
+   "texto": "Die zu erwartenden, noch nicht quantifizierten Effekte bleiben unklar.",
+   "audio": true
+  },
+  {
+   "texto": "Das kaum zu ertragende Schweigen füllte den Raum."
+  }
+ ],
+ "notas": [
+  "Mehrere Partizipialattribute im selben Satz sind in Gesetzestexten normal und in literarischer Prosa fast immer ein Stilbruch.",
+  "Die Beurteilung, wie viel Dichte ein Text verträgt, ist die eigentliche C2-Kompetenz — die einzelne Konstruktion war schon vorher bekannt.",
+  "Ein zu dicht komprimierter Zeitungsartikel liest sich wie ein Verwaltungstext und verliert seine Zielgruppe."
+ ],
+ "contraste": {
+  "es": "Das Spanische toleriert in keinem Genre eine vergleichbare Dichte an Partizipialattributen und weicht durchgehend auf Relativsätze aus. Ein hispanophoner C2-Sprecher unterschätzt deshalb systematisch, wie viel Verdichtung ein deutscher Gesetzestext erwartet, und überschätzt sie in literarischer Prosa."
+ },
+ "errores": [
+  "Einen literarischen Text mit derselben Dichte wie einen Gesetzestext schreiben.",
+  "Einen Gesetzestext unternominalisieren und dadurch unpräzise wirken lassen.",
+  "Die Textsorte nicht vorher bestimmen, bevor die Dichte gewählt wird."
+ ],
+ "redemittel": [
+  {
+   "expresion": "die von…zu genehmigenden…",
+   "funcion": "Partizipialattribut, Recht",
+   "traducciones": {
+    "es": "los… que deben ser aprobados por…",
+    "en": "the…to be approved by…"
+   }
+  },
+  {
+   "expresion": "die zu erwartenden, noch nicht…",
+   "funcion": "gestapeltes Attribut, Wissenschaft",
+   "traducciones": {
+    "es": "los… previsibles, aún no…",
+    "en": "the…expected, not yet…"
+   }
+  },
+  {
+   "expresion": "die absehbaren, aber schwer zu…",
+   "funcion": "gestapeltes Attribut, Journalismus",
+   "traducciones": {
+    "es": "los… previsibles, pero difíciles de…",
+    "en": "the…foreseeable but hard to…"
+   }
+  },
+  {
+   "expresion": "das kaum zu ertragende…",
+   "funcion": "Partizipialattribut, literarisch",
+   "traducciones": {
+    "es": "el… apenas soportable",
+    "en": "the barely bearable…"
+   }
+  },
+  {
+   "expresion": "die im Folgenden zu erläuternden…",
+   "funcion": "Verwaltungssprache, ankündigend",
+   "traducciones": {
+    "es": "los… que se explicarán a continuación",
+    "en": "the…to be explained below"
+   }
+  },
+  {
+   "expresion": "ein kaum zu überschätzender…",
+   "funcion": "verstärkendes Attribut",
+   "traducciones": {
+    "es": "un… difícil de sobreestimar",
+    "en": "a…hard to overestimate"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Passt die Dichte der Attribute zum Genre des Textes?",
+  "Ist in literarischer Prosa die Dichte bewusst niedrig gehalten?",
+  "Trägt ein Gesetzestext genug Attribute, um präzise zu sein?",
+  "Habe ich die Textsorte vor der Wahl der Dichte bestimmt?",
+  "Würde ein Fachleser diese Dichte als normal für das Genre empfinden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Dichte der Partizipialattribute zum Genre des Textes passt. Prüfen Sie, ob ein literarischer Text zu dicht komprimiert ist. Schreiben Sie den Text nicht neu."
+}

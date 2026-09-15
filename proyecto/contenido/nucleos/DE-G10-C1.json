@@ -1,0 +1,137 @@
+{
+ "skillId": "DE-G10",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Passiv und Passiversatzformen",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C1",
+ "descripcion": "Auf C1 treten die selteneren Ersatzformen in den Vordergrund: das bekommen-Passiv, das sich-lassen-Passiv in wissenschaftlichem Kontext und die Kombination mehrerer Ersatzformen im selben Text, um Wiederholung zu vermeiden. Die Grundform des Vorgangspassivs gilt als bekannt.",
+ "cuadroReferencia": {
+  "titulo": "Die selteneren Formen",
+  "columnas": [
+   "Form",
+   "Beispiel",
+   "Besonderheit"
+  ],
+  "filas": [
+   [
+    "bekommen-Passiv",
+    "Sie bekam das Dokument zugeschickt.",
+    "hebt den Empfänger hervor, informeller"
+   ],
+   [
+    "sich lassen + Infinitiv",
+    "Das lässt sich statistisch nicht belegen.",
+    "wissenschaftliches Register"
+   ],
+   [
+    "Zustandspassiv + Modalverb",
+    "Das Problem dürfte gelöst sein.",
+    "Vermutung über einen Zustand"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die Ergebnisse lassen sich nicht eindeutig interpretieren.",
+   "audio": true
+  },
+  {
+   "texto": "Er bekam die Unterlagen erst nach der Frist zugestellt.",
+   "audio": true
+  },
+  {
+   "texto": "Das Problem dürfte inzwischen behoben sein."
+  }
+ ],
+ "notas": [
+  "Das bekommen-Passiv funktioniert nur mit Verben, die einen indirekten Empfänger haben (schicken, geben, zeigen); nicht mit allen transitiven Verben.",
+  "Sich lassen + Infinitiv drückt generelle Möglichkeit aus, nicht eine einzelne Handlung — daher typisch für Aussagen über Daten und Methoden.",
+  "Mehrere Ersatzformen im selben Absatz zu mischen ist auf C1 erwünscht, um monotones wird zu vermeiden."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat kein bekommen-Passiv; die Bedeutung wird meist mit recibir umschrieben (recibió el documento), was strukturell näher am Aktiv liegt. Spanischsprachige nutzen deshalb diese Form kaum aktiv.",
+  "en": "English has a close parallel in the get-passive (she got the documents sent late), so the concept transfers directly — the risk is register: English get-passive is informal, while German bekommen-Passiv is neutral and appears in written reports too."
+ },
+ "errores": [
+  "Das bekommen-Passiv mit Verben ohne indirekten Empfänger bilden.",
+  "Sich lassen + Infinitiv für eine einmalige konkrete Handlung verwenden statt für generelle Möglichkeit.",
+  "Ausschliesslich das Standard-Vorgangspassiv benutzen und dadurch den Text monoton machen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…lässt sich nicht eindeutig…",
+   "funcion": "wissenschaftliche Vorsicht",
+   "traducciones": {
+    "es": "…no se puede… de forma inequívoca",
+    "en": "…cannot be clearly…",
+    "fr": "…ne peut pas être clairement…",
+    "it": "…non può essere chiaramente…",
+    "pt": "…não pode ser claramente…"
+   }
+  },
+  {
+   "expresion": "Er/Sie bekam … zugeschickt/gezeigt/mitgeteilt",
+   "funcion": "Empfänger betonen",
+   "traducciones": {
+    "es": "Le enviaron/mostraron/comunicaron…",
+    "en": "He/She was sent/shown/told…",
+    "fr": "On lui a envoyé/montré/communiqué…",
+    "it": "Gli/Le è stato inviato/mostrato/comunicato…",
+    "pt": "Foi-lhe enviado/mostrado/comunicado…"
+   }
+  },
+  {
+   "expresion": "…gilt als erwiesen.",
+   "funcion": "Zustandspassiv, Forschung",
+   "traducciones": {
+    "es": "…se considera comprobado.",
+    "en": "…is considered proven.",
+    "fr": "…est considéré comme établi.",
+    "it": "…è considerato provato.",
+    "pt": "…é considerado comprovado."
+   }
+  },
+  {
+   "expresion": "…bleibt abzuwarten.",
+   "funcion": "offener Ausgang, formell",
+   "traducciones": {
+    "es": "…queda por ver.",
+    "en": "…remains to be seen.",
+    "fr": "…reste à voir.",
+    "it": "…resta da vedere.",
+    "pt": "…resta por ver."
+   }
+  },
+  {
+   "expresion": "…ist noch zu prüfen, ob…",
+   "funcion": "offene Frage, formell",
+   "traducciones": {
+    "es": "…queda por comprobar si…",
+    "en": "…it is still to be checked whether…",
+    "fr": "…il reste à vérifier si…",
+    "it": "…resta da verificare se…",
+    "pt": "…ainda é necessário verificar se…"
+   }
+  },
+  {
+   "expresion": "Damit ist noch nicht gesagt, dass…",
+   "funcion": "Grenze der Aussage markieren",
+   "traducciones": {
+    "es": "Con eso no está dicho que…",
+    "en": "That doesn't yet mean that…",
+    "fr": "Cela ne signifie pas encore que…",
+    "it": "Questo non significa ancora che…",
+    "pt": "Isso ainda não significa que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Passt das Verb zum bekommen-Passiv (hat es einen Empfänger)?",
+  "Drückt sich lassen generelle Möglichkeit aus, nicht eine einmalige Handlung?",
+  "Sind im Text mehrere Passivformen gemischt, nicht nur eine?",
+  "Ist das Register angemessen für einen Bericht oder eine wissenschaftliche Aussage?",
+  "Vermeide ich eine monotone Wiederholung derselben Passivform?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Passiversatzformen: bekommen-Passiv und sich lassen + Infinitiv. Prüfen Sie, ob jedes Verb zur jeweiligen Form passt, und ob der Text mehrere Formen mischt. Schreiben Sie den Text nicht neu."
+}

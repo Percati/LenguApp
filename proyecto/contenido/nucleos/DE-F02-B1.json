@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-F02",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Zustimmen und widersprechen",
+ "categoria": "fluency",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B1 lernt man die einfachsten Formeln für Zustimmung und Widerspruch: das stimmt und das finde ich nicht. Die höfliche Abstufung kommt erst später — hier zählt vor allem, klar zu sagen, ob man zustimmt oder nicht.",
+ "cuadroReferencia": {
+  "titulo": "Einfache Zustimmung und Widerspruch",
+  "columnas": [
+   "Funktion",
+   "Formel"
+  ],
+  "filas": [
+   [
+    "Zustimmung",
+    "Das stimmt."
+   ],
+   [
+    "Widerspruch",
+    "Das finde ich nicht."
+   ],
+   [
+    "Teilweise",
+    "Ja, aber…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ja, das stimmt genau.",
+   "audio": true
+  },
+  {
+   "texto": "Das finde ich eigentlich nicht.",
+   "audio": true
+  },
+  {
+   "texto": "Ja, das stimmt, aber nicht immer."
+  }
+ ],
+ "notas": [
+  "Das stimmt ist die einfachste und häufigste Zustimmungsformel im Deutschen.",
+  "Das finde ich nicht ist höflicher als das ist falsch.",
+  "Ja, aber lässt sich gut benutzen, um teilweise zuzustimmen."
+ ],
+ "contraste": {
+  "es": "Das Spanische stimmt mit es verdad oder tienes razón zu, was strukturell sehr ähnlich ist. Der direkte Widerspruch no estoy de acuerdo ist im Spanischen etwas akzeptierter als sein deutsches Äquivalent, das oft mit ja, aber abgemildert wird."
+ },
+ "errores": [
+  "Zu direkt widersprechen, ohne die Meinung vorher anzuerkennen.",
+  "Nur ja oder nein antworten, ohne eigene Meinung hinzuzufügen.",
+  "Ja, aber verwenden und das aber vergessen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das stimmt.",
+   "funcion": "Zustimmung",
+   "traducciones": {
+    "es": "Eso es cierto.",
+    "en": "That's true."
+   }
+  },
+  {
+   "expresion": "Das finde ich auch.",
+   "funcion": "Zustimmung, persönlich",
+   "traducciones": {
+    "es": "Eso pienso yo también.",
+    "en": "I think so too."
+   }
+  },
+  {
+   "expresion": "Das finde ich nicht.",
+   "funcion": "Widerspruch, höflich",
+   "traducciones": {
+    "es": "Yo no lo creo.",
+    "en": "I don't think so."
+   }
+  },
+  {
+   "expresion": "Ja, aber…",
+   "funcion": "Teilzustimmung",
+   "traducciones": {
+    "es": "Sí, pero…",
+    "en": "Yes, but…"
+   }
+  },
+  {
+   "expresion": "Genau!",
+   "funcion": "starke Zustimmung, informell",
+   "traducciones": {
+    "es": "¡Exacto!",
+    "en": "Exactly!"
+   }
+  },
+  {
+   "expresion": "Ich sehe das anders.",
+   "funcion": "Widerspruch, neutral",
+   "traducciones": {
+    "es": "Yo lo veo distinto.",
+    "en": "I see it differently."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich klar gesagt, ob ich zustimme oder nicht?",
+  "Habe ich meine Meinung mit einer eigenen Begründung ergänzt?",
+  "Klingt der Widerspruch höflich?",
+  "Habe ich mehr als eine Formel benutzt, nicht immer dieselbe?",
+  "Ist bei Ja, aber das aber klar vorhanden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Zustimmung und Widerspruch. Prüfen Sie, ob die Formel klar und höflich ist. Schreiben Sie den Text nicht neu."
+}

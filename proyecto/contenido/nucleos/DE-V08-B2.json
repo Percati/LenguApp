@@ -1,0 +1,218 @@
+{
+ "skillId": "DE-V08",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Helvetismen und Deutschschweizer Kontext",
+ "categoria": "vocabulary",
+ "descripcion": "Schweizer Standarddeutsch ist kein „falsches Deutsch\", sondern eine eigene Standardvarietät mit eigenem Wortschatz, eigener Rechtschreibung und teilweise eigener Grammatik. Wer in der Deutschschweiz arbeitet, braucht sie — und wer sie ausserhalb benutzt, fällt auf. Drei Ebenen: **Wortschatz**, **Rechtschreibung** und **Verwaltungssprache**.",
+ "cuadroReferencia": {
+  "titulo": "CH gegen DE",
+  "columnas": [
+   "Schweiz",
+   "Deutschland",
+   "Bereich"
+  ],
+  "filas": [
+   [
+    "das Traktandum",
+    "der Tagesordnungspunkt",
+    "Sitzung"
+   ],
+   [
+    "die Pendenz",
+    "der offene Punkt",
+    "Büro"
+   ],
+   [
+    "parkieren",
+    "parken",
+    "Alltag"
+   ],
+   [
+    "das Velo",
+    "das Fahrrad",
+    "Alltag"
+   ],
+   [
+    "das Billett",
+    "die Fahrkarte",
+    "Verkehr"
+   ],
+   [
+    "das Trottoir",
+    "der Bürgersteig",
+    "Verkehr"
+   ],
+   [
+    "der Unterbruch",
+    "die Unterbrechung",
+    "technisch"
+   ],
+   [
+    "allfällig",
+    "eventuell, etwaig",
+    "Verwaltung"
+   ],
+   [
+    "die Vernehmlassung",
+    "die Anhörung",
+    "Politik"
+   ],
+   [
+    "das E-Mail (n.)",
+    "die E-Mail (f.)",
+    "Genus"
+   ],
+   [
+    "Strasse, gross, heissen",
+    "Straße, groß, heißen",
+    "**kein ß in CH**"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*Bitte reichen Sie die Unterlagen bis Freitag ein.*",
+   "audio": true
+  },
+  {
+   "texto": "*Das Traktandum verschieben wir auf die nächste Sitzung.*",
+   "audio": true
+  },
+  {
+   "texto": "*Ich parkiere vor dem Gebäude.*"
+  },
+  {
+   "texto": "*Allfällige Rückfragen bitte an die Projektleitung.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Pendenz bleibt bis nächste Woche offen.*",
+   "audio": true
+  },
+  {
+   "texto": "*Es gab einen kurzen Unterbruch in der Stromversorgung.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Das **ß existiert im Schweizer Standard nicht**. Immer *ss*. Das ist Norm, nicht Nachlässigkeit.",
+  "Viele Helvetismen kommen aus dem Französischen: *Billett, Trottoir, Coiffeur, Velo, Retraite*.",
+  "Das Höflichkeitsregister ist schriftlich formeller als in Deutschland, mündlich oft weniger."
+ ],
+ "contraste": {
+  "es": "Die Lage ist vergleichbar mit dem Rioplatense gegenüber dem peninsularen Spanisch: eine vollwertige Standardvarietät, die in ihrem Raum korrekt und ausserhalb markiert ist. Der Fehler wäre, sie als „Dialekt\" einzuordnen.",
+  "en": "Das Englische kennt dieselbe Lage aus eigener Erfahrung: britisches und amerikanisches Standardenglisch unterscheiden sich in Wortschatz (*lift* / *elevator*) und Rechtschreibung (*colour* / *color*), und beides ist in seinem Raum korrekt. Das Verhältnis Schweizer Hochdeutsch zu bundesdeutschem Standard ist genau parallel. Englischsprachige verstehen das Prinzip also sofort — der Fehler ist eher, Mundart und Standardvarietät zu verwechseln."
+ },
+ "errores": [
+  "Mundart und Standard verwechseln: *gäll*, *lueg*, *scho* gehören **nicht** ins Schriftdeutsch, *Velo* und *parkieren* schon.",
+  "Annehmen, alles Schweizerische sei umgangssprachlich. *Traktandum* ist gehobene Verwaltungssprache.",
+  "Ein ß in einem Schweizer Dokument.",
+  "Mundart und Schweizer Standard verwechseln, wie man auch Cockney und britischen Standard nicht gleichsetzt.",
+  "Annehmen, Helvetismen seien informell — *Traktandum* ist gehobene Verwaltungssprache."
+ ],
+ "erroresContrastivos": {
+  "en": [
+   "Mundart und Schweizer Standard verwechseln, wie man auch Cockney und britischen Standard nicht gleichsetzt.",
+   "Annehmen, Helvetismen seien informell — *Traktandum* ist gehobene Verwaltungssprache."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "Wir haben anlässlich der letzten Sitzung…",
+   "funcion": "Bezug auf ein Treffen",
+   "traducciones": {
+    "es": "con ocasión de la última reunión…",
+    "en": "At the last meeting we…",
+    "fr": "Lors de la dernière séance, nous avons…",
+    "it": "In occasione dell’ultima riunione abbiamo…",
+    "pt": "Na última reunião, nós…"
+   }
+  },
+  {
+   "expresion": "Als Traktandum 3 wurde behandelt…",
+   "funcion": "Protokollformel",
+   "traducciones": {
+    "es": "como punto 3 se trató…",
+    "en": "Agenda item 3 covered…",
+    "fr": "Au point 3 de l’ordre du jour, il a été question de…",
+    "it": "Al punto 3 dell’ordine del giorno si è trattato…",
+    "pt": "No ponto 3 da ordem de trabalhos foi tratado…"
+   }
+  },
+  {
+   "expresion": "Allfällige Rückfragen richten Sie bitte an…",
+   "funcion": "Verwaltungsformel",
+   "traducciones": {
+    "es": "para eventuales consultas, diríjase a…",
+    "en": "Please direct any queries to…",
+    "fr": "Pour toute question éventuelle, veuillez vous adresser à…",
+    "it": "Per eventuali domande, rivolgersi a…",
+    "pt": "Para eventuais questões, contacte…"
+   }
+  },
+  {
+   "expresion": "Die Pendenz bleibt offen",
+   "funcion": "Statusmeldung",
+   "traducciones": {
+    "es": "el asunto queda pendiente",
+    "en": "The item remains outstanding",
+    "fr": "Le point reste en suspens",
+    "it": "La pendenza resta aperta",
+    "pt": "O assunto continua pendente"
+   }
+  },
+  {
+   "expresion": "Zuständig ist…",
+   "funcion": "Verantwortung zuweisen",
+   "traducciones": {
+    "es": "responsable es…",
+    "en": "Responsible: …",
+    "fr": "La personne responsable est…",
+    "it": "Il responsabile è…",
+    "pt": "O responsável é…"
+   }
+  },
+  {
+   "expresion": "Termin: bis spätestens…",
+   "funcion": "Frist setzen",
+   "traducciones": {
+    "es": "plazo: hasta el…",
+    "en": "Deadline: by… at the latest",
+    "fr": "Délai : au plus tard le…",
+    "it": "Termine: entro e non oltre…",
+    "pt": "Prazo: o mais tardar até…"
+   }
+  },
+  {
+   "expresion": "Zur Kenntnis genommen",
+   "funcion": "Protokollformel",
+   "traducciones": {
+    "es": "tomado en conocimiento",
+    "en": "Noted",
+    "fr": "Pris acte",
+    "it": "Preso atto",
+    "pt": "Tomado conhecimento"
+   }
+  },
+  {
+   "expresion": "Beschlossen wurde, dass…",
+   "funcion": "Beschluss festhalten",
+   "traducciones": {
+    "es": "se acordó que…",
+    "en": "It was decided that…",
+    "fr": "Il a été décidé que…",
+    "it": "È stato deciso che…",
+    "pt": "Foi decidido que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Kein einziges ß im Text?",
+  "Ist jeder Helvetismus Standard und nicht Mundart?",
+  "Sind mir bundesdeutsche Formen durchgerutscht?",
+  "Ist das Register für ein Protokoll formell genug?",
+  "Habe ich die drei DE-Sätze wirklich umgestellt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Schweizer Standardvarietät. (1) Markieren Sie jeden Helvetismus und sagen Sie, ob er Standard oder Mundart ist. (2) Prüfen Sie die ss/ß-Schreibung. (3) Markieren Sie bundesdeutsche Formen, die in einem Schweizer Protokoll auffallen würden. (4) Ist das Register für ein Protokoll formell genug? Schreiben Sie den Text nicht neu."
+}

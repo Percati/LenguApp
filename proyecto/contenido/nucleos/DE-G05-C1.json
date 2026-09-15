@@ -1,0 +1,142 @@
+{
+ "skillId": "DE-G05",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Modalverben",
+ "categoria": "grammar",
+ "ancla": "Aspekte C1",
+ "descripcion": "Auf C1 stehen die zwei schwierigsten subjektiven Modalverben im Fokus: sollen für Fremdbehauptungen mit Distanz und wollen für zweifelhafte Eigenbehauptungen. Beide werden in der Presse- und Klatschsprache ständig verwendet und selten aktiv von Lernenden produziert.",
+ "cuadroReferencia": {
+  "titulo": "sollen gegen wollen, subjektiv",
+  "columnas": [
+   "Form",
+   "Bedeutung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "soll",
+    "man sagt, dass (neutral, Quelle unklar)",
+    "Das Mittel soll wirksam sein."
+   ],
+   [
+    "will",
+    "er/sie behauptet selbst (oft zweifelhaft)",
+    "Er will das nicht gewusst haben."
+   ],
+   [
+    "soll + Perfekt Infinitiv",
+    "Fremdbehauptung über Vergangenes",
+    "Sie soll das Dokument unterschrieben haben."
+   ],
+   [
+    "will + Perfekt Infinitiv",
+    "zweifelhafte Eigenbehauptung, Vergangenes",
+    "Er will nichts davon gewusst haben."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das neue Mittel soll deutlich wirksamer sein als das alte.",
+   "audio": true
+  },
+  {
+   "texto": "Er will von der Sache nichts gewusst haben.",
+   "audio": true
+  },
+  {
+   "texto": "Sie soll das Dokument bereits unterschrieben haben, heisst es."
+  }
+ ],
+ "notas": [
+  "Der Unterschied zwischen soll und will ist die Quelle: soll berichtet, was ANDERE sagen; will berichtet, was die Person selbst über SICH behauptet.",
+  "Will subjektiv trägt fast immer einen Unterton des Zweifels — der Sprecher glaubt der Behauptung nicht ganz.",
+  "Beide Formen sind typisch für Presse, Klatsch und Gerichtsberichte, selten im Alltagsgespräch."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine direkte Entsprechung für diese subjektive Verwendung von soll und will; es braucht Umschreibungen wie según se dice oder afirma que, ohne dass ein einzelnes Verb die Distanz trägt. Spanischsprachige lassen diese Modalverben deshalb oft ganz aus und ersetzen sie durch eine explizite Quellenangabe.",
+  "en": "English marks this with reportedly and claims to have, which map fairly well onto soll and will — the challenge for English speakers is remembering that these are modal verbs with normal modal syntax in German, not separate reporting verbs, so word order often goes wrong."
+ },
+ "errores": [
+  "Soll und will subjektiv verwechseln, wenn die Quelle unklar ist.",
+  "Den Perfekt-Infinitiv falsch bilden: soll unterschrieben haben statt soll haben unterschrieben (die Reihenfolge stimmt hier eigentlich, aber Lernende bauen oft ein zusätzliches werden ein).",
+  "Diese Modalverben ganz vermeiden und stattdessen nur angeblich benutzen, was stilistisch monoton wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das soll … sein.",
+   "funcion": "Fremdbehauptung, neutral",
+   "traducciones": {
+    "es": "Dicen que es…",
+    "en": "It's said to be…",
+    "fr": "On dit que c’est…",
+    "it": "Si dice che sia…",
+    "pt": "Diz-se que é…"
+   }
+  },
+  {
+   "expresion": "Er/Sie will … nicht gewusst haben.",
+   "funcion": "zweifelhafte Eigenbehauptung",
+   "traducciones": {
+    "es": "Él/Ella dice no haber sabido…",
+    "en": "He/She claims not to have known…",
+    "fr": "Il/Elle prétend ne pas avoir su…",
+    "it": "Lui/Lei sostiene di non aver saputo…",
+    "pt": "Ele/Ela afirma não ter sabido…"
+   }
+  },
+  {
+   "expresion": "…, heisst es.",
+   "funcion": "unbestimmte Quelle anhängen",
+   "traducciones": {
+    "es": "…, según se dice.",
+    "en": "…, or so it's said.",
+    "fr": "…, dit-on.",
+    "it": "…, si dice.",
+    "pt": "…, segundo se diz."
+   }
+  },
+  {
+   "expresion": "Sie soll … gesagt haben.",
+   "funcion": "Fremdbehauptung über Vergangenes",
+   "traducciones": {
+    "es": "Se dice que ella dijo…",
+    "en": "She is said to have said…",
+    "fr": "On dit qu’elle aurait dit…",
+    "it": "Si dice che abbia detto…",
+    "pt": "Diz-se que ela terá dito…"
+   }
+  },
+  {
+   "expresion": "Angeblich…",
+   "funcion": "Alternative zu soll/will, Adverb",
+   "traducciones": {
+    "es": "Supuestamente…",
+    "en": "Allegedly…",
+    "fr": "Apparemment… / Prétendument…",
+    "it": "A quanto pare… / Presumibilmente…",
+    "pt": "Alegadamente…"
+   }
+  },
+  {
+   "expresion": "Ob das wirklich stimmt, sei dahingestellt.",
+   "funcion": "Zweifel explizit machen",
+   "traducciones": {
+    "es": "Si eso es cierto, es otra cuestión.",
+    "en": "Whether that's actually true remains to be seen.",
+    "fr": "Reste à savoir si c’est vraiment vrai.",
+    "it": "Resta da vedere se sia davvero vero.",
+    "pt": "Resta saber se isso é realmente verdade."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist die Quelle der Behauptung eine andere Person (soll) oder die Person selbst (will)?",
+  "Steht bei Vergangenem der Infinitiv Perfekt korrekt?",
+  "Klingt bei will subjektiv ein Zweifel des Sprechers mit?",
+  "Habe ich nicht ausschliesslich angeblich benutzt?",
+  "Habe ich soll und will nicht verwechselt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf soll und will im subjektiven Gebrauch. Prüfen Sie bei jedem Fall, ob die Quelle korrekt zugeordnet ist und ob der Infinitiv Perfekt richtig gebildet wurde. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,214 @@
+{
+ "skillId": "EN-V07",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Discourse Markers and Linking",
+ "categoria": "vocabulary",
+ "descripcion": "Discourse markers are the difference between speech that is understood and speech that is followed. At C1 the job isn't adding *however* to writing — it's managing a spoken turn of two or three minutes so the listener always knows where they are: what's coming, what's a digression, what's the main point returning. Spoken and written markers are largely different sets, and using written ones in speech is the commonest C1 register error.",
+ "cuadroReferencia": {
+  "titulo": "Markers by function and register",
+  "columnas": [
+   "Function",
+   "Spoken",
+   "Written"
+  ],
+  "filas": [
+   [
+    "Announcing structure",
+    "*There are two things going on here* / *Let me take those in turn*",
+    "This raises two questions"
+   ],
+   [
+    "Adding",
+    "*Also* / *On top of that* / *And another thing*",
+    "*Moreover* / *Furthermore*"
+   ],
+   [
+    "Contrasting",
+    "*That said* / *Then again* / *Mind you*",
+    "*However* / *Nevertheless*"
+   ],
+   [
+    "Conceding",
+    "*Granted* / *Fair enough, but…* / *True up to a point*",
+    "*Admittedly* / *While it is true that…*"
+   ],
+   [
+    "Digressing",
+    "Just as an aside…",
+    "(parenthesis)"
+   ],
+   [
+    "Returning",
+    "Anyway, the point is…",
+    "Returning to…"
+   ],
+   [
+    "Reformulating",
+    "*Or to put it another way* / *What I mean is*",
+    "That is to say"
+   ],
+   [
+    "Concluding",
+    "*So on balance* / *The upshot is*",
+    "*In sum* / *On this evidence*"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*There are two things going on here. Let me take those in turn.*",
+   "audio": true
+  },
+  {
+   "texto": "*Granted, the numbers moved. Then again, they moved from a very low base.*",
+   "audio": true
+  },
+  {
+   "texto": "*Just as an aside — and this isn't the main point — the timing was odd. Anyway, the upshot is that nobody checked.*",
+   "audio": true
+  },
+  {
+   "texto": "*Anyway, the upshot is that nobody checked.*",
+   "audio": true
+  },
+  {
+   "texto": "*Mind you, that's only one outlet.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Actually* marks correction or surprise, not emphasis. *Actually, it was cheaper* implies you expected otherwise.",
+  "*Basically* is a filler; *essentially* is a marker. Not interchangeable.",
+  "*Anyway* is the standard return-from-digression signal in speech. Learners rarely use it; natives use it constantly."
+ ],
+ "contraste": {
+  "es": "Spanish *en realidad* maps onto *actually* only about half the time — often it's just *well*. *De hecho* is *in fact*. Treating them as one-to-one equivalents is where most misuse starts."
+ },
+ "errores": [
+  "*In the other hand* — it's *on the other hand*.",
+  "*Moreover* and *furthermore* in speech: instantly bookish.",
+  "*At the end* meaning *finally* — use *in the end*.",
+  "Stacking: *So, basically, at the end of the day, essentially…*"
+ ],
+ "redemittel": [
+  {
+   "expresion": "Let me take those in turn",
+   "funcion": "announces sequence",
+   "traducciones": {
+    "es": "vamos por partes",
+    "de": "Gehen wir die Punkte der Reihe nach durch.",
+    "fr": "Prenons-les dans l’ordre.",
+    "it": "Prendiamoli uno alla volta.",
+    "pt": "Vamos por partes."
+   }
+  },
+  {
+   "expresion": "That said",
+   "funcion": "mild contrast, keeps the floor",
+   "traducciones": {
+    "es": "dicho eso",
+    "de": "Allerdings / Dabei gilt…",
+    "fr": "Cela dit…",
+    "it": "Detto questo…",
+    "pt": "Dito isso…"
+   }
+  },
+  {
+   "expresion": "Mind you",
+   "funcion": "inserts a caveat mid-turn",
+   "traducciones": {
+    "es": "eso sí",
+    "de": "Wobei / allerdings…",
+    "fr": "Cela dit / remarquez…",
+    "it": "Attenzione però…",
+    "pt": "Isso sim / repare…"
+   }
+  },
+  {
+   "expresion": "Granted",
+   "funcion": "concedes one point only",
+   "traducciones": {
+    "es": "de acuerdo, sí",
+    "de": "Zugegeben, …",
+    "fr": "Certes, …",
+    "it": "D’accordo / ammesso che…",
+    "pt": "Concedo / é verdade…"
+   }
+  },
+  {
+   "expresion": "Just as an aside",
+   "funcion": "flags a digression",
+   "traducciones": {
+    "es": "entre paréntesis",
+    "de": "Nur nebenbei bemerkt…",
+    "fr": "Juste entre parenthèses…",
+    "it": "Solo per inciso…",
+    "pt": "Só como aparte…"
+   }
+  },
+  {
+   "expresion": "Anyway, the point is",
+   "funcion": "returns from a digression",
+   "traducciones": {
+    "es": "en fin, la cuestión es",
+    "de": "Jedenfalls ist der Punkt…",
+    "fr": "Quoi qu’il en soit, le point est…",
+    "it": "Comunque, il punto è…",
+    "pt": "De qualquer forma, a questão é…"
+   }
+  },
+  {
+   "expresion": "Or to put it another way",
+   "funcion": "reformulates",
+   "traducciones": {
+    "es": "o dicho de otro modo",
+    "de": "Oder anders ausgedrückt…",
+    "fr": "Ou, autrement dit…",
+    "it": "O, per dirla in un altro modo…",
+    "pt": "Ou, dito de outra forma…"
+   }
+  },
+  {
+   "expresion": "The upshot is",
+   "funcion": "delivers the conclusion",
+   "traducciones": {
+    "es": "el resultado es",
+    "de": "Das Ergebnis ist…",
+    "fr": "Au final, …",
+    "it": "Il risultato è…",
+    "pt": "O resultado é…"
+   }
+  },
+  {
+   "expresion": "Then again",
+   "funcion": "reverses your own concession",
+   "traducciones": {
+    "es": "aunque bueno",
+    "de": "Andererseits / wiederum…",
+    "fr": "Cela dit / d’un autre côté…",
+    "it": "D’altra parte…",
+    "pt": "Por outro lado…"
+   }
+  },
+  {
+   "expresion": "So on balance",
+   "funcion": "closes with a weighted judgement",
+   "traducciones": {
+    "es": "en definitiva",
+    "de": "Alles in allem…",
+    "fr": "Donc, tout bien considéré…",
+    "it": "Quindi, tutto sommato…",
+    "pt": "No balanço geral…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Eight different markers, or three used repeatedly?",
+  "Any written-only marker in a spoken piece?",
+  "Did I signal my structure in the first two sentences?",
+  "Any stacked markers?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on discourse markers and linking. (1) List every marker I used and say whether it works in spoken register. (2) Flag any written-only markers. (3) Show me where a listener would lose the thread and which marker was missing. (4) Flag any stacking. Do not rewrite the text."
+}

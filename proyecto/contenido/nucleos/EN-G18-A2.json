@@ -1,0 +1,112 @@
+{
+ "skillId": "EN-G18",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Articles and Quantifiers",
+ "categoria": "grammar",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you use a/an and the correctly, plus the simple quantifiers some and any. These small words are used constantly and are often skipped by Spanish speakers. Non-defining clauses and finer quantifiers like much/many come at higher levels.",
+ "cuadroReferencia": {
+  "titulo": "Basic articles and quantifiers",
+  "columnas": [
+   "Word",
+   "Use",
+   "Example"
+  ],
+  "filas": [
+   [
+    "a/an",
+    "one, not specific",
+    "I have a car."
+   ],
+   [
+    "the",
+    "specific, known",
+    "The car is red."
+   ],
+   [
+    "some/any",
+    "quantity",
+    "I have some money. Do you have any?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I have a car and a bike.",
+   "audio": true
+  },
+  {
+   "texto": "The car is parked outside.",
+   "audio": true
+  },
+  {
+   "texto": "Do you have any questions?"
+  }
+ ],
+ "notas": [
+  "The is used when both speaker and listener know which thing is meant.",
+  "Some is used in positive sentences, any in questions and negatives.",
+  "General nouns often need no article at all: I like music."
+ ],
+ "contraste": {
+  "es": "El español usa artículos de forma más generalizada, incluso con sustantivos generales (me gusta la música), lo que el inglés omite (I like music)."
+ },
+ "errores": [
+  "Adding the before a general noun.",
+  "Using any in a positive sentence instead of some."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I have a/an…",
+   "funcion": "one, not specific",
+   "traducciones": {
+    "es": "Tengo un/a…"
+   }
+  },
+  {
+   "expresion": "The…is…",
+   "funcion": "specific, known",
+   "traducciones": {
+    "es": "El/la… es…"
+   }
+  },
+  {
+   "expresion": "I have some…",
+   "funcion": "positive quantity",
+   "traducciones": {
+    "es": "Tengo algo/algunos de…"
+   }
+  },
+  {
+   "expresion": "Do you have any…?",
+   "funcion": "question, quantity",
+   "traducciones": {
+    "es": "¿Tenés algo de…?"
+   }
+  },
+  {
+   "expresion": "I like…",
+   "funcion": "general noun, no article",
+   "traducciones": {
+    "es": "Me gusta el/la…"
+   }
+  },
+  {
+   "expresion": "I don't have any…",
+   "funcion": "negative, quantity",
+   "traducciones": {
+    "es": "No tengo nada de…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I avoided the before general nouns?",
+  "Is some used in positive sentences and any in questions/negatives?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on articles and the choice between some and any. Do not rewrite the text. Flag anything unclear or unnatural. Flag anything unclear. Check every article."
+}

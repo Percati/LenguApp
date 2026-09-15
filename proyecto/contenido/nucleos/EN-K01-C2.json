@@ -1,0 +1,51 @@
+{
+ "skillId": "EN-K01", "nivel": "C2", "idioma": "en",
+ "titulo": "Inversion, Cleft and Fronting for Emphasis",
+ "categoria": "grammar",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 the three emphasis devices — inversion, cleft, fronting — are deployed across a whole argumentative passage, alternating deliberately so no single device dominates the register. The C1 skill was building each correctly; the C2 skill is knowing when restraint matters more than density.",
+ "cuadroReferencia": {
+  "titulo": "Deploying across a passage",
+  "columnas": ["Move", "Function in a longer argument"],
+  "filas": [
+   ["Open with a cleft", "frames the whole paragraph's thesis"],
+   ["Mid-passage fronting", "shifts focus without a heavy structure"],
+   ["Closing inversion", "delivers the final, weighted point"]
+  ],
+  "notaPie": "A passage that opens AND closes with heavy inversion reads as performative. Reserve the heaviest device for one location only."
+ },
+ "ejemplos": [
+  {"texto": "What the data ultimately reveals is not a trend but a reversal.", "audio": true},
+  {"texto": "That much, the committee could agree on; the rest remained contested.", "audio": true},
+  {"texto": "Only in hindsight did the full cost become apparent."}
+ ],
+ "notas": [
+  "Across a full passage, using all three devices in sequence without variation reads as mechanical, even when each is individually correct.",
+  "The strongest placement for a negative inversion is the close of a paragraph, where it lands with full weight.",
+  "A cleft at the opening sets the reader's expectation for the whole argument that follows — misuse there derails more than a single sentence."
+ ],
+ "contraste": {
+  "es": "El español logra el mismo tipo de arquitectura retórica variando el orden de palabras libremente a lo largo de un párrafo, sin depender de una estructura fija en cada punto de énfasis. Un hispanohablante de C2 tiende a repetir el mismo tipo de cleft varias veces por costumbre, en vez de alternar los tres recursos como exige el registro inglés más depurado."
+ },
+ "errores": [
+  "Opening and closing a passage with the same heavy device, which reads as performative rather than controlled.",
+  "Repeating the same type of cleft throughout instead of alternating with fronting and inversion.",
+  "Using negative inversion mid-paragraph where it doesn't carry the argument's final weight."
+ ],
+ "redemittel": [
+  {"expresion": "What ultimately matters is…", "funcion": "opening cleft, sets thesis", "traducciones": {"es": "lo que en definitiva importa es…"}},
+  {"expresion": "That much…could agree on.", "funcion": "mid-passage fronting", "traducciones": {"es": "en eso sí podían coincidir"}},
+  {"expresion": "Only in hindsight did…", "funcion": "closing inversion, weighted", "traducciones": {"es": "solo en retrospectiva…"}},
+  {"expresion": "It is precisely this that…", "funcion": "cleft, sharpens the focus", "traducciones": {"es": "es precisamente esto lo que…"}},
+  {"expresion": "Nowhere is this clearer than in…", "funcion": "inversion, illustrative", "traducciones": {"es": "en ningún lugar es esto más claro que en…"}},
+  {"expresion": "This much can be said with confidence:", "funcion": "fronting, transitional", "traducciones": {"es": "esto sí se puede afirmar con seguridad:"}}
+ ],
+ "autochequeo": [
+  "Are the three devices alternated across the passage, not repeated identically?",
+  "Is the heaviest device (negative inversion) reserved for a single, weighted location?",
+  "Does the opening cleft accurately set up the argument that follows?",
+  "Would a native reader sense control across the whole passage, not just in isolated sentences?",
+  "Is there at least one paragraph without any of these devices, for contrast?"
+ ],
+ "promptCorreccion": "Focus only on how inversion, cleft and fronting are distributed across the whole passage. Flag repetition of the same device and check whether the heaviest one is reserved for a single weighted point. Do not rewrite the text."
+}

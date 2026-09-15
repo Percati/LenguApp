@@ -1,0 +1,215 @@
+{
+ "skillId": "DE-G10",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Passiv und Passiversatzformen",
+ "categoria": "grammar",
+ "descripcion": "Das Passiv ist im Deutschen häufiger als im Spanischen und im technischen wie im politischen Register kaum vermeidbar. Auf B2 geht es aber nicht mehr nur um Vorgangs- und Zustandspassiv, sondern um die **Ersatzformen**, die dasselbe leisten und stilistisch oft besser klingen.",
+ "cuadroReferencia": {
+  "titulo": "Passiv und Ersatzformen",
+  "columnas": [
+   "Form",
+   "Bildung",
+   "Beispiel",
+   "Register"
+  ],
+  "filas": [
+   [
+    "Vorgangspassiv",
+    "*werden* + Partizip II",
+    "Der Strom wird erzeugt.",
+    "neutral"
+   ],
+   [
+    "Zustandspassiv",
+    "*sein* + Partizip II",
+    "Die Anlage ist abgeschaltet.",
+    "neutral"
+   ],
+   [
+    "*sich lassen* + Inf.",
+    "",
+    "Das lässt sich messen.",
+    "gesprochen, elegant"
+   ],
+   [
+    "*-bar* / *-lich*",
+    "Adjektivsuffix",
+    "Das ist messbar.",
+    "kompakt, technisch"
+   ],
+   [
+    "*sein zu* + Inf.",
+    "",
+    "Der Verbrauch ist zu senken.",
+    "formell, Vorschrift"
+   ],
+   [
+    "man",
+    "Aktiv mit *man*",
+    "Man kann das messen.",
+    "umgangssprachlich"
+   ]
+  ],
+  "notaPie": "**Urheber:** von + Dat. (Person, Institution), durch + Akk. (Mittel, Ursache). **Perfekt Passiv:** ist… **worden**, nicht geworden."
+ },
+ "ejemplos": [
+  {
+   "texto": "Der Ausstoß **wird** bis 2030 halbiert."
+  },
+  {
+   "texto": "Die Ziele **sind** noch nicht erreicht."
+  },
+  {
+   "texto": "Der Zielkonflikt **lässt sich** nicht auflösen."
+  },
+  {
+   "texto": "Die Grundlast **ist** nicht beliebig **ersetzbar**."
+  },
+  {
+   "texto": "Die Emissionen **sind** deutlich **zu senken**."
+  },
+  {
+   "texto": "*Der Ausstoß wird bis 2030 halbiert.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Ziele sind noch nicht erreicht.*",
+   "audio": true
+  },
+  {
+   "texto": "*Der Zielkonflikt lässt sich nicht auflösen.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Grundlast ist nicht beliebig ersetzbar.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Emissionen sind deutlich zu senken.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Der Unterschied Vorgang/Zustand entspricht ungefähr *ser*/*estar*. Das ist die beste Eselsbrücke für Spanischsprachige.",
+  "*sein zu + Infinitiv* trägt immer Notwendigkeit oder Möglichkeit, nie Neutralität.",
+  "Manche Verben bilden kein Passiv: *bekommen*, *haben*, *kennen*, *wissen*."
+ ],
+ "contraste": {
+  "es": "Spanisch bevorzugt *se*-Konstruktionen (*se mide*) und das Aktiv, wo das Deutsche das Passiv setzt. Die direkte Übertragung erzeugt entweder zu viel *man* oder ein falsches *ist* statt *wird*.",
+  "en": "Das Englische benutzt das Passiv **noch häufiger** als das Deutsche und hat dafür eine einzige Form: *is done*, *was done*, *has been done*. Es fehlt die Unterscheidung Vorgangs- gegen Zustandspassiv — *the plant is closed* deckt beides ab. Genau dort entsteht der Fehler: Englischsprachige setzen *ist* statt *wird*, weil ihre Sprache nicht zwischen beidem trennt. Die deutschen Ersatzformen (*lässt sich*, *-bar*) entsprechen ungefähr *can be done*."
+ },
+ "errores": [
+  "*ist* statt *wird* im Vorgangspassiv — der direkte Interferenzfehler.",
+  "*ist geworden* statt *ist worden*.",
+  "sich lassen mit dem Reflexivpronomen verwechseln: Das lässt **sich** machen, nicht Das lässt mich machen.",
+  "*ist* statt *wird* setzen, weil das Englische Vorgang und Zustand nicht trennt.",
+  "Das Passiv überbenutzen, weil es im Englischen häufiger ist.",
+  "*ist geworden* statt *ist worden* schreiben."
+ ],
+ "erroresContrastivos": {
+  "en": [
+   "*ist* statt *wird* setzen, weil das Englische Vorgang und Zustand nicht trennt.",
+   "Das Passiv überbenutzen, weil es im Englischen häufiger ist.",
+   "*ist geworden* statt *ist worden* schreiben."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "Dabei wird… erzeugt",
+   "funcion": "Vorgang beschreiben",
+   "traducciones": {
+    "es": "en el proceso se genera…",
+    "en": "In the process… is produced",
+    "fr": "Ce faisant, … est produit",
+    "it": "Nel processo viene prodotto…",
+    "pt": "Nesse processo, é produzido…"
+   }
+  },
+  {
+   "expresion": "Das lässt sich nicht…",
+   "funcion": "Unmöglichkeit, elegant",
+   "traducciones": {
+    "es": "eso no se puede…",
+    "en": "That can't be…",
+    "fr": "Cela ne peut pas être…",
+    "it": "Questo non si può…",
+    "pt": "Isso não se pode…"
+   }
+  },
+  {
+   "expresion": "Es ist damit zu rechnen, dass…",
+   "funcion": "Prognose, formell",
+   "traducciones": {
+    "es": "cabe esperar que…",
+    "en": "It is to be expected that…",
+    "fr": "Il faut s’attendre à ce que…",
+    "it": "C’è da aspettarsi che…",
+    "pt": "É de esperar que…"
+   }
+  },
+  {
+   "expresion": "Der Verbrauch ist zu senken",
+   "funcion": "Vorschrift",
+   "traducciones": {
+    "es": "hay que reducir el consumo",
+    "en": "Consumption is to be reduced",
+    "fr": "La consommation doit être réduite",
+    "it": "Il consumo va ridotto",
+    "pt": "O consumo deve ser reduzido"
+   }
+  },
+  {
+   "expresion": "Das ist kaum messbar",
+   "funcion": "kompakte Ersatzform",
+   "traducciones": {
+    "es": "eso apenas se puede medir",
+    "en": "That's hardly measurable",
+    "fr": "C’est à peine mesurable",
+    "it": "È difficilmente misurabile",
+    "pt": "Isso é praticamente impossível de medir"
+   }
+  },
+  {
+   "expresion": "Dadurch wird…",
+   "funcion": "Ursache mit *durch*",
+   "traducciones": {
+    "es": "con eso se…",
+    "en": "As a result…",
+    "fr": "Ainsi, … est / devient…",
+    "it": "Di conseguenza, … viene…",
+    "pt": "Desse modo, … é / fica…"
+   }
+  },
+  {
+   "expresion": "Von der Politik wird…",
+   "funcion": "Urheber mit *von*",
+   "traducciones": {
+    "es": "por parte de la política se…",
+    "en": "By policymakers…",
+    "fr": "Du côté des pouvoirs publics, …",
+    "it": "Da parte delle autorità…",
+    "pt": "Por parte das autoridades…"
+   }
+  },
+  {
+   "expresion": "Es muss abgewogen werden, ob…",
+   "funcion": "Abwägung",
+   "traducciones": {
+    "es": "hay que sopesar si…",
+    "en": "It has to be weighed up whether…",
+    "fr": "Il faut soupeser la question de savoir si…",
+    "it": "Bisogna valutare se…",
+    "pt": "É preciso ponderar se…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich *wird* und *ist* richtig unterschieden?",
+  "Steht im Perfekt Passiv *worden*?",
+  "Sind mindestens zwei Ersatzformen dabei?",
+  "Habe ich *von* und *durch* richtig verwendet?",
+  "Alle vier Kernwörter?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Passiv und Ersatzformen. (1) Markieren Sie jede Form und benennen Sie den Typ. (2) Prüfen Sie Vorgang gegen Zustand. (3) Markieren Sie jede Stelle, an der eine Ersatzform natürlicher gewesen wäre als das Vorgangspassiv, und zeigen Sie sie. (4) Prüfen Sie *von* gegen *durch*. Schreiben Sie den Text nicht neu."
+}

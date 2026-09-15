@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-F04",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Erfahrungen und Geschichten erzählen",
+ "categoria": "fluency",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B1 erzählt man eine einfache Geschichte im Perfekt, mit klaren Zeitangaben wie zuerst, dann, danach. Das Plusquamperfekt und die dramaturgische Struktur kommen erst später — hier reicht eine klare chronologische Erzählung.",
+ "cuadroReferencia": {
+  "titulo": "Eine einfache Geschichte erzählen",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Anfang",
+    "Letztes Jahr bin ich nach Berlin gefahren."
+   ],
+   [
+    "Reihenfolge",
+    "Zuerst habe ich… Dann habe ich…"
+   ],
+   [
+    "Ende",
+    "Am Ende war es ein toller Tag."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Letztes Jahr bin ich zum ersten Mal nach Berlin gefahren.",
+   "audio": true
+  },
+  {
+   "texto": "Zuerst haben wir das Museum besucht, dann sind wir spazieren gegangen.",
+   "audio": true
+  },
+  {
+   "texto": "Am Ende war es wirklich ein toller Tag."
+  }
+ ],
+ "notas": [
+  "Zuerst, dann, danach, am Ende strukturieren die Geschichte, ohne dass man komplizierte Zeitformen braucht.",
+  "Die meisten Verben stehen im Perfekt; sein und haben eher im Präteritum.",
+  "Eine kurze Zeitangabe am Anfang (letztes Jahr, letzten Sommer) hilft, die Geschichte einzuordnen."
+ ],
+ "contraste": {
+  "es": "Das Spanische erzählt vergangene Geschichten oft im pretérito indefinido, was strukturell dem deutschen Perfekt ähnelt. Die zeitlichen Marker (zuerst, dann) übertragen sich direkt aus dem Spanischen (primero, luego)."
+ },
+ "errores": [
+  "Die Geschichte ohne jede zeitliche Struktur erzählen.",
+  "Durchgehend Präteritum statt Perfekt verwenden.",
+  "Zuerst und dann in der falschen Reihenfolge benutzen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Letztes Jahr…",
+   "funcion": "Einstieg mit Zeitangabe",
+   "traducciones": {
+    "es": "El año pasado…",
+    "en": "Last year…"
+   }
+  },
+  {
+   "expresion": "Zuerst…, dann…",
+   "funcion": "Reihenfolge",
+   "traducciones": {
+    "es": "Primero…, luego…",
+    "en": "First…, then…"
+   }
+  },
+  {
+   "expresion": "Danach…",
+   "funcion": "nächster Schritt",
+   "traducciones": {
+    "es": "Después…",
+    "en": "After that…"
+   }
+  },
+  {
+   "expresion": "Am Ende…",
+   "funcion": "Abschluss",
+   "traducciones": {
+    "es": "Al final…",
+    "en": "In the end…"
+   }
+  },
+  {
+   "expresion": "Es war ein toller Tag.",
+   "funcion": "Bewertung am Ende",
+   "traducciones": {
+    "es": "Fue un día genial.",
+    "en": "It was a great day."
+   }
+  },
+  {
+   "expresion": "Das hat mir sehr gefallen.",
+   "funcion": "positive Bewertung",
+   "traducciones": {
+    "es": "Me gustó mucho.",
+    "en": "I really liked that."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist die Reihenfolge der Ereignisse klar?",
+  "Stehen die meisten Verben im Perfekt?",
+  "Habe ich eine Zeitangabe am Anfang benutzt?",
+  "Habe ich die Geschichte mit einer Bewertung abgeschlossen?",
+  "Klingt die Geschichte wie eine zusammenhängende Erzählung, nicht nur eine Liste?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Zeitstruktur der Geschichte. Prüfen Sie, ob Perfekt und Präteritum richtig verteilt sind. Schreiben Sie den Text nicht neu."
+}

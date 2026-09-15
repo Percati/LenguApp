@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-G25",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Past Perfect and Narrative Time Reference",
+ "categoria": "grammar",
+ "ancla": "EGP B1/B2",
+ "descripcion": "At B1 you introduce the past perfect for the first time: it shows one past event happened before another past event. By the time we arrived, the film had already started — without this structure, the order of events becomes unclear.",
+ "cuadroReferencia": {
+  "titulo": "Past perfect basics",
+  "columnas": [
+   "Point",
+   "Form",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Earlier event",
+    "had + participle",
+    "The film had already started."
+   ],
+   [
+    "Later event",
+    "past simple",
+    "By the time we arrived,"
+   ],
+   [
+    "Optional with before/after",
+    "past simple is enough",
+    "She left before I arrived."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "By the time we arrived, the film had already started.",
+   "audio": true
+  },
+  {
+   "texto": "She had already left when I called.",
+   "audio": true
+  },
+  {
+   "texto": "I realised I had forgotten my keys."
+  }
+ ],
+ "notas": [
+  "The past perfect (had + participle) marks the event that happened first, earlier than the other past event.",
+  "Before and after already show the order, so the past perfect is optional there; with when, it's not.",
+  "This structure is new at B1 and needs a lot of practice before it becomes automatic."
+ ],
+ "contraste": {
+  "es": "El español tiene el pluscuamperfecto con la misma función (había llegado), así que el concepto no es nuevo — la dificultad es acostumbrarse a usarlo activamente en inglés."
+ },
+ "errores": [
+  "Using the past simple for both events, losing the sense of order.",
+  "Using the wrong participle after had.",
+  "Overusing the past perfect where before/after already make the order clear."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…had already…",
+   "funcion": "earlier event",
+   "traducciones": {
+    "es": "…ya había…"
+   }
+  },
+  {
+   "expresion": "By the time…,…had…",
+   "funcion": "full structure",
+   "traducciones": {
+    "es": "Para cuando…, ya había…"
+   }
+  },
+  {
+   "expresion": "When I arrived, …had…",
+   "funcion": "order with when",
+   "traducciones": {
+    "es": "Cuando llegué, ya había…"
+   }
+  },
+  {
+   "expresion": "I realised I had…",
+   "funcion": "realisation about the past",
+   "traducciones": {
+    "es": "Me di cuenta de que había…"
+   }
+  },
+  {
+   "expresion": "…hadn't…yet.",
+   "funcion": "negative, not yet done",
+   "traducciones": {
+    "es": "…todavía no había…"
+   }
+  },
+  {
+   "expresion": "Before I…, I had…",
+   "funcion": "order, optional past perfect",
+   "traducciones": {
+    "es": "Antes de…, había…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Does the past perfect mark the earlier of two past events?",
+  "Is the participle correct after had?",
+  "Have I used at least one past perfect sentence?",
+  "Does the sentence sound clear about which event happened first?",
+  "Does the sentence sound clear about which event happened first?"
+ ],
+ "promptCorreccion": "Focus only on the past perfect and the order of past events. Check whether it correctly marks the earlier event and whether the participle is correct. Do not rewrite the text."
+}

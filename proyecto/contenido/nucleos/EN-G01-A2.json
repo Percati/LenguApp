@@ -1,0 +1,112 @@
+{
+ "skillId": "EN-G01",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Present Simple vs. Present Continuous",
+ "categoria": "grammar",
+ "ancla": "EGP A1/A2",
+ "descripcion": "The present simple describes habits and routines; the present continuous describes what is happening right now, at this moment. At A2 the goal is to choose the right one consistently and to recognise the signal words for each.",
+ "cuadroReferencia": {
+  "titulo": "Habit vs. now",
+  "columnas": [
+   "Use",
+   "Form",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Habit/routine",
+    "present simple",
+    "I work every day."
+   ],
+   [
+    "Happening now",
+    "present continuous",
+    "I'm working right now."
+   ],
+   [
+    "Frequency word",
+    "present simple",
+    "I always work in the morning."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I work every day from nine to five.",
+   "audio": true
+  },
+  {
+   "texto": "I'm working on a project right now.",
+   "audio": true
+  },
+  {
+   "texto": "She always drinks coffee in the morning."
+  }
+ ],
+ "notas": [
+  "The present continuous is formed with am/is/are + -ing.",
+  "Words like always, usually, every day go with the present simple.",
+  "Words like now, right now, at the moment go with the present continuous."
+ ],
+ "contraste": {
+  "es": "El español a veces usa el presente simple para ambas ideas (trabajo, estoy trabajando existen pero se confunden menos), así que hay que prestar atención a marcar la diferencia también en inglés."
+ },
+ "errores": [
+  "Using the present simple for something happening right now.",
+  "Forgetting am/is/are before the -ing form."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I…every day.",
+   "funcion": "habit",
+   "traducciones": {
+    "es": "Yo… todos los días."
+   }
+  },
+  {
+   "expresion": "I'm…-ing right now.",
+   "funcion": "happening now",
+   "traducciones": {
+    "es": "Estoy… ahora mismo."
+   }
+  },
+  {
+   "expresion": "I always…",
+   "funcion": "habit, frequency",
+   "traducciones": {
+    "es": "Siempre…"
+   }
+  },
+  {
+   "expresion": "At the moment, I'm…-ing",
+   "funcion": "happening now",
+   "traducciones": {
+    "es": "En este momento, estoy…"
+   }
+  },
+  {
+   "expresion": "She usually…",
+   "funcion": "habit",
+   "traducciones": {
+    "es": "Ella normalmente…"
+   }
+  },
+  {
+   "expresion": "They're…-ing today.",
+   "funcion": "temporary, now",
+   "traducciones": {
+    "es": "Están… hoy."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the present simple used for habits?",
+  "Is the present continuous used for now?",
+  "Is am/is/are present before every -ing form?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on the choice between present simple and present continuous. Check the form of the continuous carefully. Do not rewrite the text. Flag any mixed-up choice."
+}

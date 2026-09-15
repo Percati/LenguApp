@@ -1,0 +1,106 @@
+{
+ "skillId": "EN-F15",
+ "nivel": "C2",
+ "idioma": "en",
+ "bilingue": false,
+ "titulo": "Managing a Conversation: Turn-Taking, Interrupting, Repair",
+ "categoria": "fluency",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 you manage a conversation's overall shape, not just your own turns: noticing when someone hasn't spoken and drawing them in, redirecting a conversation that's drifted without announcing the redirection, and repairing someone else's stumble without drawing attention to it.",
+ "cuadroReferencia": {
+  "titulo": "Managing the whole conversation",
+  "columnas": [
+   "Move",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Drawing in a quiet person",
+    "What's your read on this?"
+   ],
+   [
+    "Silent redirection",
+    "So, coming back to the original question…"
+   ],
+   [
+    "Repairing someone else's stumble",
+    "picking up their unfinished sentence naturally"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "What's your read on this? You've been quiet.",
+   "audio": true
+  },
+  {
+   "texto": "So, coming back to the original question, where does that leave us?",
+   "audio": true
+  },
+  {
+   "texto": "—I think what you mean is that it needs more time."
+  }
+ ],
+ "notas": [
+  "Drawing in someone who hasn't spoken is a management move, not just politeness — it changes what the conversation as a whole produces.",
+  "Redirecting without announcing it (so, coming back to…) is smoother than explicitly calling out the drift, which can feel like a correction.",
+  "Finishing someone else's stumbled sentence accurately and briefly helps them; doing it repeatedly or inaccurately undermines them."
+ ],
+ "errores": [
+  "Redirecting so abruptly that it reads as a correction rather than a smooth return.",
+  "Finishing someone else's sentences so often that it takes over the conversation.",
+  "Drawing in a quiet person in a way that puts them on the spot rather than genuinely inviting them."
+ ],
+ "redemittel": [
+  {
+   "expresion": "What's your read on this?",
+   "funcion": "draws in a quiet person",
+   "traducciones": {
+    "es": "¿Cuál es tu impresión sobre esto?"
+   }
+  },
+  {
+   "expresion": "So, coming back to…",
+   "funcion": "silent redirection",
+   "traducciones": {
+    "es": "Bueno, volviendo a…"
+   }
+  },
+  {
+   "expresion": "—I think what you mean is…",
+   "funcion": "completes a stumble helpfully",
+   "traducciones": {
+    "es": "—Creo que lo que querés decir es…"
+   }
+  },
+  {
+   "expresion": "We got a bit sidetracked, but…",
+   "funcion": "explicit redirection, softer",
+   "traducciones": {
+    "es": "Nos desviamos un poco, pero…"
+   }
+  },
+  {
+   "expresion": "I don't think we've heard from you yet.",
+   "funcion": "draws in a quiet person, direct",
+   "traducciones": {
+    "es": "Creo que todavía no te escuchamos a vos."
+   }
+  },
+  {
+   "expresion": "Sorry, go on — you were saying?",
+   "funcion": "hands the floor back cleanly",
+   "traducciones": {
+    "es": "Perdón, seguí — ¿qué decías?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Has a quiet participant been drawn in naturally, not put on the spot?",
+  "Is any redirection smooth rather than an explicit correction?",
+  "Is a completed sentence for someone else accurate and brief?",
+  "Does the conversation as a whole feel managed, not just my own turns?",
+  "Have I avoided taking over by finishing sentences too often?"
+ ],
+ "promptCorreccion": "Focus only on managing the conversation as a whole: drawing others in, redirecting smoothly, repairing others' stumbles. Do not rewrite the text. Flag anything that feels abrupt or unnatural."
+}

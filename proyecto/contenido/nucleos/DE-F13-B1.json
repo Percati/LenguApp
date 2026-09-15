@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-F13",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Register: du/Sie, formell/informell",
+ "categoria": "fluency",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B1 wird die Wahl zwischen du und Sie sicher getroffen: Sie bei Fremden und in formellen Situationen, du bei Freunden und Familie. Feinere Register-Unterschiede kommen erst später — hier zählt vor allem, die Grundregel richtig anzuwenden.",
+ "cuadroReferencia": {
+  "titulo": "Du oder Sie?",
+  "columnas": [
+   "Situation",
+   "Anrede"
+  ],
+  "filas": [
+   [
+    "Freunde, Familie",
+    "du"
+   ],
+   [
+    "Fremde, Behörden, Geschäfte",
+    "Sie"
+   ],
+   [
+    "Arbeitskollegen",
+    "je nach Firma unterschiedlich"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Wie geht es dir? (unter Freunden)",
+   "audio": true
+  },
+  {
+   "texto": "Wie geht es Ihnen? (formell)",
+   "audio": true
+  },
+  {
+   "texto": "Können Sie mir bitte helfen?"
+  }
+ ],
+ "notas": [
+  "Sie wird immer großgeschrieben, auch mitten im Satz.",
+  "Im Zweifel ist es höflicher, mit Sie zu beginnen, als zu früh zu duzen.",
+  "In manchen Firmen und in der Deutschschweiz wird schneller geduzt als in Deutschland."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit tú und usted eine sehr ähnliche Unterscheidung, sodass sich die Grundregel leicht überträgt. Der Unterschied liegt darin, dass das Deutsche in bestimmten Kontexten (z. B. am Arbeitsplatz) schneller zum du wechselt, als es im formellen Spanisch üblich wäre."
+ },
+ "errores": [
+  "Eine fremde Person sofort duzen.",
+  "Sie kleinschreiben.",
+  "Zwischen du und Sie im selben Gespräch ohne Grund wechseln."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Wie geht es dir?",
+   "funcion": "informell",
+   "traducciones": {
+    "es": "¿Cómo estás?",
+    "en": "How are you? (informal)"
+   }
+  },
+  {
+   "expresion": "Wie geht es Ihnen?",
+   "funcion": "formell",
+   "traducciones": {
+    "es": "¿Cómo está usted?",
+    "en": "How are you? (formal)"
+   }
+  },
+  {
+   "expresion": "Können Sie mir helfen?",
+   "funcion": "formelle Bitte",
+   "traducciones": {
+    "es": "¿Puede ayudarme?",
+    "en": "Can you help me? (formal)"
+   }
+  },
+  {
+   "expresion": "Kannst du mir helfen?",
+   "funcion": "informelle Bitte",
+   "traducciones": {
+    "es": "¿Podés ayudarme?",
+    "en": "Can you help me? (informal)"
+   }
+  },
+  {
+   "expresion": "Dürfen wir uns duzen?",
+   "funcion": "Duzen vorschlagen",
+   "traducciones": {
+    "es": "¿Nos podemos tutear?",
+    "en": "Shall we use first names?"
+   }
+  },
+  {
+   "expresion": "Sehr geehrte Damen und Herren,",
+   "funcion": "sehr formelle Anrede, schriftlich",
+   "traducciones": {
+    "es": "Estimados señores y señoras,",
+    "en": "Dear Sir or Madam,"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich die richtige Anrede für die Situation gewählt?",
+  "Ist Sie durchgehend großgeschrieben?",
+  "Habe ich nicht ohne Grund zwischen du und Sie gewechselt?",
+  "Passt die Anrede zur beschriebenen Situation?",
+  "Habe ich mindestens ein Beispiel für du UND eines für Sie gegeben?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen du und Sie. Prüfen Sie die Grossschreibung von Sie und die Konsistenz im Text. Schreiben Sie den Text nicht neu."
+}

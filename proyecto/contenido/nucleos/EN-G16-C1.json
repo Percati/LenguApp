@@ -1,0 +1,182 @@
+{
+ "skillId": "EN-G16",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Inversion, Cleft and Emphatic Structures",
+ "categoria": "grammar",
+ "descripcion": "English word order is rigid, so shifting emphasis requires structural moves rather than the free reordering Spanish allows. These structures are the clearest single marker separating C1 writing from B2 writing, and the most reliably absent from advanced learners' output.",
+ "cuadroReferencia": {
+  "titulo": "The four families",
+  "columnas": [
+   "Family",
+   "Pattern",
+   "Example",
+   "Note"
+  ],
+  "filas": [
+   [
+    "Negative inversion",
+    "*Not until / Only after / Rarely / Never / Little* + **aux + subject**",
+    "Not until I'd lived there did I understand.",
+    "auxiliary compulsory"
+   ],
+   [
+    "*Wh-* cleft",
+    "What… is/was…",
+    "What struck me was the silence.",
+    "most natural in speech"
+   ],
+   [
+    "*It-* cleft",
+    "It was X that/who…",
+    "It was the bureaucracy that broke me.",
+    "more written"
+   ],
+   [
+    "Fronting",
+    "object or complement first",
+    "That I'll never forget.",
+    "marked; use sparingly"
+   ],
+   [
+    "*All/The thing* cleft",
+    "*All I wanted was…* / *The thing that got me was…*",
+    "",
+    "informal, very common"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*Not until I'd lived there a year did I understand why nobody complains.*",
+   "audio": true
+  },
+  {
+   "texto": "*What struck me most wasn't the language — it was the silence on trains.*",
+   "audio": true
+  },
+  {
+   "texto": "*It was the bureaucracy, not the weather, that nearly broke me.*",
+   "audio": true
+  },
+  {
+   "texto": "*All I wanted was somebody to explain the recycling.*",
+   "audio": true
+  },
+  {
+   "texto": "*Little did I know how long the paperwork would take.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Negative inversion requires auxiliary inversion: *Not only did I…*, never *Not only I did…*.",
+  "These structures are marked. Two or three in a text is stylish; six is theatrical.",
+  "The *All I wanted was* pattern is the one to start with: informal, frequent, and it teaches the cleft logic without the formal register."
+ ],
+ "contraste": {
+  "es": "Spanish moves emphasis by moving words (*a mí no me gustó*). English cannot, so it builds a structure instead. Every Spanish emphatic word-order shift needs a cleft or an inversion in English, not a word-order change."
+ },
+ "errores": [
+  "*Never I have seen* instead of *Never have I seen*.",
+  "*It was then when…* — should be *It was then that…*.",
+  "Using inversion where plain order carries the same weight, so the emphasis reads as unearned."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Not until… did I…",
+   "funcion": "delays and emphasises the trigger",
+   "traducciones": {
+    "es": "no fue hasta que…",
+    "de": "Erst … habe ich…",
+    "fr": "Ce n’est qu’après… que j’ai…",
+    "it": "Non fu che… che…",
+    "pt": "Só depois de… é que eu…"
+   }
+  },
+  {
+   "expresion": "Only after… did…",
+   "funcion": "same, with a time focus",
+   "traducciones": {
+    "es": "solo después de…",
+    "de": "Erst nachdem …, …",
+    "fr": "Ce n’est qu’après… que…",
+    "it": "Solo dopo…",
+    "pt": "Só depois de…"
+   }
+  },
+  {
+   "expresion": "Rarely have I…",
+   "funcion": "emphasises rarity",
+   "traducciones": {
+    "es": "rara vez he…",
+    "de": "Selten habe ich…",
+    "fr": "Rarement ai-je…",
+    "it": "Raramente ho…",
+    "pt": "Raramente eu…"
+   }
+  },
+  {
+   "expresion": "What struck me was…",
+   "funcion": "foregrounds the reaction",
+   "traducciones": {
+    "es": "lo que me impactó fue…",
+    "de": "Was mir auffiel, war…",
+    "fr": "Ce qui m’a frappé, c’est…",
+    "it": "Ciò che mi ha colpito è stato…",
+    "pt": "O que me chamou a atenção foi…"
+   }
+  },
+  {
+   "expresion": "It was X that…",
+   "funcion": "isolates the cause",
+   "traducciones": {
+    "es": "fue X lo que…",
+    "de": "Es war X, das…",
+    "fr": "C’est X qui…",
+    "it": "È stato X a…",
+    "pt": "Foi X que…"
+   }
+  },
+  {
+   "expresion": "All I wanted was…",
+   "funcion": "reduces to the essential",
+   "traducciones": {
+    "es": "lo único que quería era…",
+    "de": "Alles, was ich wollte, war…",
+    "fr": "Tout ce que je voulais, c’était…",
+    "it": "Tutto ciò che volevo era…",
+    "pt": "Tudo o que eu queria era…"
+   }
+  },
+  {
+   "expresion": "The thing that got me was…",
+   "funcion": "informal cleft",
+   "traducciones": {
+    "es": "lo que me mató fue…",
+    "de": "Was mich wirklich traf, war…",
+    "fr": "Ce qui m’a le plus marqué, c’est…",
+    "it": "La cosa che mi ha colpito è stata…",
+    "pt": "O que me apanhou de surpresa foi…"
+   }
+  },
+  {
+   "expresion": "Little did I know…",
+   "funcion": "fixed ironic inversion",
+   "traducciones": {
+    "es": "poco sabía yo…",
+    "de": "Ich ahnte nicht, dass…",
+    "fr": "J’étais loin de me douter que…",
+    "it": "Non sapevo minimamente che…",
+    "pt": "Mal eu sabia que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the auxiliary present in every inversion?",
+  "Two different cleft types, or the same one twice?",
+  "More than six marked structures?",
+  "Does each one earn its emphasis, or is it decoration?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on inversion, clefts and emphatic structures. (1) Check the auxiliary in every inversion. (2) Say whether each structure earns its emphasis or is decorative. (3) Show where plain word order would be better. (4) Give one alternative structure for my three best sentences. Do not rewrite the text."
+}

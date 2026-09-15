@@ -1,0 +1,110 @@
+{
+ "skillId": "EN-V06",
+ "nivel": "C2",
+ "idioma": "en",
+ "bilingue": false,
+ "titulo": "Idioms in Context",
+ "categoria": "vocabulary",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 idioms are deployed and consciously twisted for effect — modifying a fixed idiom slightly for humour or precision, and recognising when a native speaker's own twist on an idiom is play rather than an error, which is the mark of full idiomatic command.",
+ "cuadroReferencia": {
+  "titulo": "Deliberate idiom play",
+  "columnas": [
+   "Standard idiom",
+   "Deliberate twist",
+   "Effect"
+  ],
+  "filas": [
+   [
+    "to go round in circles",
+    "to go round in ever-smaller circles",
+    "intensifies the futility"
+   ],
+   [
+    "a storm in a teacup",
+    "a hurricane in a teacup",
+    "exaggerates for comic effect"
+   ],
+   [
+    "to cut a long story short",
+    "to cut an already short story shorter",
+    "self-aware, ironic"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "We're not just going round in circles — we're going round in ever-smaller ones.",
+   "audio": true
+  },
+  {
+   "texto": "It was less a storm in a teacup and more a hurricane in one.",
+   "audio": true
+  },
+  {
+   "texto": "To cut an already short story shorter, it didn't work."
+  }
+ ],
+ "notas": [
+  "Twisting a fixed idiom deliberately signals full command of the original — it only works if the standard form is obviously the base being played with.",
+  "This kind of play belongs in informal or witty registers; using it in a formal document undermines the intended effect.",
+  "A twist should still be recognisable as the source idiom — too much distortion just reads as a mistake."
+ ],
+ "errores": [
+  "Twisting an idiom the speaker doesn't actually know the standard form of, which reads as an error rather than play.",
+  "Using idiom play in a register where it undermines credibility.",
+  "Distorting the idiom so far that the source is no longer recognisable."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…in ever-smaller circles.",
+   "funcion": "intensifies a standard idiom",
+   "traducciones": {
+    "es": "…en círculos cada vez más pequeños."
+   }
+  },
+  {
+   "expresion": "a hurricane in a teacup",
+   "funcion": "exaggerated twist for comedy",
+   "traducciones": {
+    "es": "un huracán en una taza de té"
+   }
+  },
+  {
+   "expresion": "to cut an already short story shorter",
+   "funcion": "self-aware twist",
+   "traducciones": {
+    "es": "para acortar una historia ya corta"
+   }
+  },
+  {
+   "expresion": "not to put too fine a point on it,",
+   "funcion": "ironic understatement before bluntness",
+   "traducciones": {
+    "es": "para no andarme con rodeos,"
+   }
+  },
+  {
+   "expresion": "…, if that's not too strong a word.",
+   "funcion": "flags a deliberately strong word choice",
+   "traducciones": {
+    "es": "…, si no es una palabra demasiado fuerte."
+   }
+  },
+  {
+   "expresion": "the understatement of the year",
+   "funcion": "ironic self-commentary on one's own understatement",
+   "traducciones": {
+    "es": "la subestimación del año"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the source idiom being twisted still clearly recognisable?",
+  "Does the register fit deliberate idiom play, not formal writing?",
+  "Would a native reader read this as play, not as an error?",
+  "Is the twist used sparingly, for a specific effect?",
+  "Do I know the standard form of every idiom I'm twisting?"
+ ],
+ "promptCorreccion": "Focus only on deliberate idiom twists. Check whether the source idiom remains recognisable and whether the register fits. Do not rewrite the text. Flag anything that reads as an error rather than deliberate play."
+}

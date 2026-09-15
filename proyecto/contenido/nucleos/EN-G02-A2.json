@@ -1,0 +1,108 @@
+{
+ "skillId": "EN-G02",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Past Simple and Past Continuous",
+ "categoria": "grammar",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you tell past events with the past simple, and introduce the past continuous for a background action interrupted by another: I was walking when it rained. This is the first step towards telling a full story.",
+ "cuadroReferencia": {
+  "titulo": "Past simple and past continuous",
+  "columnas": [
+   "Use",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Main event",
+    "I called her yesterday."
+   ],
+   [
+    "Background, interrupted",
+    "I was walking when it started to rain."
+   ],
+   [
+    "Simple past habit",
+    "I lived there for two years."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I called her yesterday afternoon.",
+   "audio": true
+  },
+  {
+   "texto": "I was walking home when it started to rain.",
+   "audio": true
+  },
+  {
+   "texto": "I lived in Madrid for two years."
+  }
+ ],
+ "notas": [
+  "The past continuous is was/were + -ing.",
+  "When usually introduces the interrupting event, in the past simple.",
+  "Most past stories only need the past simple; the past continuous adds background."
+ ],
+ "contraste": {
+  "es": "El español usa el imperfecto para el fondo y el indefinido para el evento principal, con lógica muy parecida a la del inglés."
+ },
+ "errores": [
+  "Using the past simple for the background action.",
+  "Forgetting was/were before -ing."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I…yesterday.",
+   "funcion": "past simple, main event",
+   "traducciones": {
+    "es": "Yo… ayer."
+   }
+  },
+  {
+   "expresion": "I was…-ing when…",
+   "funcion": "background interrupted",
+   "traducciones": {
+    "es": "Estaba… cuando…"
+   }
+  },
+  {
+   "expresion": "I lived in…for…",
+   "funcion": "past habit/duration",
+   "traducciones": {
+    "es": "Viví en… durante…"
+   }
+  },
+  {
+   "expresion": "It started to…",
+   "funcion": "sudden event",
+   "traducciones": {
+    "es": "Empezó a…"
+   }
+  },
+  {
+   "expresion": "We went to…",
+   "funcion": "past simple, common verb",
+   "traducciones": {
+    "es": "Fuimos a…"
+   }
+  },
+  {
+   "expresion": "At that moment,…",
+   "funcion": "marks the interruption",
+   "traducciones": {
+    "es": "En ese momento…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the main event in the past simple?",
+  "Is was/were correct before -ing?",
+  "Have I used both tenses at least once?",
+  "Does the story sound natural?",
+  "Does the story sound natural?"
+ ],
+ "promptCorreccion": "Focus only on the past simple and the past continuous. Check the form of was/were plus -ing. Do not rewrite the text. Check whether the story sounds like a real sequence of events."
+}

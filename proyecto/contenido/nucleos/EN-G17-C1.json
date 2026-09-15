@@ -1,0 +1,137 @@
+{
+ "skillId": "EN-G17",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Gerunds and Infinitives",
+ "categoria": "grammar",
+ "ancla": "EGP A1-C2",
+ "descripcion": "At C1 the focus shifts to verbs where gerund and infinitive both exist but shift the meaning subtly — regret, go on, mean — and to distinguishing perfect gerunds (having done) from simple ones, which mark that an action happened before the main verb.",
+ "cuadroReferencia": {
+  "titulo": "Subtle meaning shifts",
+  "columnas": [
+   "Verb",
+   "+ Gerund",
+   "+ Infinitive"
+  ],
+  "filas": [
+   [
+    "regret",
+    "regret saying (about the past)",
+    "regret to say (formal announcement)"
+   ],
+   [
+    "go on",
+    "went on complaining (continued)",
+    "went on to explain (did next)"
+   ],
+   [
+    "mean",
+    "means working late (implies)",
+    "meant to call (intended)"
+   ]
+  ],
+  "notaPie": "Having done + past participle marks that the gerund's action happened before the main verb: having finished the report, she left."
+ },
+ "ejemplos": [
+  {
+   "texto": "I regret to say the meeting has been cancelled.",
+   "audio": true
+  },
+  {
+   "texto": "He went on to explain the reasoning behind the decision.",
+   "audio": true
+  },
+  {
+   "texto": "Having finished early, she decided to review it again."
+  }
+ ],
+ "notas": [
+  "Regret + infinitive is used almost exclusively for formal announcements of bad news; regret + gerund is a genuine personal regret.",
+  "Go on + gerund means to continue doing the same thing; go on + infinitive means to move on to something new.",
+  "A perfect gerund (having + participle) is a compact way to show that one action clearly preceded another."
+ ],
+ "contraste": {
+  "es": "El español usa el infinitivo de forma más general y no distingue estas diferencias de significado con la misma sistematicidad. Los hispanohablantes suelen aprender estos verbos como excepciones aisladas, sin ver el patrón de que el gerundio marca continuidad y el infinitivo marca un paso siguiente o distinto."
+ },
+ "errores": [
+  "Using regret + infinitive for a genuine personal regret instead of a formal announcement.",
+  "Confusing went on doing and went on to do.",
+  "Using a simple gerund where a perfect gerund would clarify the sequence of events."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I regret to say that…",
+   "funcion": "formal bad news",
+   "traducciones": {
+    "es": "Lamento informar que…",
+    "de": "Ich bedaure sagen zu müssen, dass…",
+    "fr": "Je regrette de dire que…",
+    "it": "Mi dispiace dover dire che…",
+    "pt": "Lamento dizer que…"
+   }
+  },
+  {
+   "expresion": "I regret…-ing",
+   "funcion": "genuine personal regret",
+   "traducciones": {
+    "es": "Me arrepiento de…",
+    "de": "Ich bereue,…",
+    "fr": "Je regrette d’avoir…",
+    "it": "Mi pento di aver…",
+    "pt": "Arrependo-me de ter…"
+   }
+  },
+  {
+   "expresion": "…went on to…",
+   "funcion": "moved to a new action",
+   "traducciones": {
+    "es": "…pasó a…",
+    "de": "…fuhr fort,…",
+    "fr": "…a ensuite…",
+    "it": "…ha poi…",
+    "pt": "…prosseguiu para…"
+   }
+  },
+  {
+   "expresion": "…went on…-ing",
+   "funcion": "continued the same action",
+   "traducciones": {
+    "es": "…siguió…",
+    "de": "…fuhr fort zu…",
+    "fr": "…a continué à…",
+    "it": "…ha continuato a…",
+    "pt": "…continuou a…"
+   }
+  },
+  {
+   "expresion": "Having…, …",
+   "funcion": "perfect gerund, sequence",
+   "traducciones": {
+    "es": "Habiendo…, …",
+    "de": "Nachdem …, …",
+    "fr": "Ayant…, …",
+    "it": "Avendo…, …",
+    "pt": "Tendo…, …"
+   }
+  },
+  {
+   "expresion": "I meant to…",
+   "funcion": "unfulfilled intention",
+   "traducciones": {
+    "es": "Tenía intención de…",
+    "de": "Ich wollte…",
+    "fr": "J’avais l’intention de…",
+    "it": "Avevo intenzione di…",
+    "pt": "Tinha intenção de…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is regret used correctly for formal announcement versus personal regret?",
+  "Is went on followed by the right form for continuation versus a new step?",
+  "Is a perfect gerund used where the sequence of events needs clarifying?",
+  "Do the subtle meaning shifts match what I actually intend to say?",
+  "Are at least five of these nuanced verbs used correctly?"
+ ],
+ "promptCorreccion": "Focus only on gerunds and infinitives with a meaning shift: regret, go on, mean, and perfect gerunds. Check whether the chosen form matches the intended meaning. Do not rewrite the text."
+}

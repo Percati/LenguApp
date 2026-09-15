@@ -1,0 +1,147 @@
+{
+ "skillId": "DE-V06",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Wortbildung: Präfixe, Suffixe, Komposita",
+ "categoria": "vocabulary",
+ "ancla": "PD B1 / Erkundungen C2",
+ "descripcion": "Wortbildung ist die Strategie, die das Goethe-Institut selbst für C1 erwartet, weil kein Wortschatzinventar über B1 hinaus existiert: statt neue Wörter zu lernen, erschliesst man sie aus bekannten Bausteinen. Auf C1 geht es darum, produktive Präfixe und Suffixe aktiv zu nutzen, nicht nur unbekannte Wörter passiv zu verstehen.",
+ "cuadroReferencia": {
+  "titulo": "Produktive Bausteine",
+  "columnas": [
+   "Baustein",
+   "Bedeutung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "un-",
+    "Verneinung",
+    "unklar, unfreundlich"
+   ],
+   [
+    "-los",
+    "ohne etwas",
+    "hilflos, sinnlos"
+   ],
+   [
+    "-bar",
+    "kann man machen",
+    "machbar, lesbar"
+   ],
+   [
+    "ver-",
+    "Zustandsänderung",
+    "verbessern, verlängern"
+   ],
+   [
+    "Kompositum",
+    "zwei Nomen kombiniert",
+    "die Wohnungssuche, der Zeitdruck"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das Konzept ist noch unausgereift, aber grundsätzlich machbar.",
+   "audio": true
+  },
+  {
+   "texto": "Ohne klare Zielsetzung wird das Projekt ziellos vor sich hin laufen.",
+   "audio": true
+  },
+  {
+   "texto": "Die Wohnungssuche gestaltet sich schwieriger als erwartet."
+  }
+ ],
+ "notas": [
+  "Nicht jedes Verb bildet ein -bar-Adjektiv: machbar und lesbar funktionieren, aber nicht jedes Verb lässt sich so umwandeln.",
+  "Komposita im Deutschen sind fast unbegrenzt produktiv — neue, noch nie gehörte Komposita zu verstehen ist eine eigene Fähigkeit.",
+  "Un- kann auch verstärkend wirken statt zu verneinen: ein Unmenge bedeutet sehr viel, nicht keine Menge."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet Komposita viel seltener und meist mit einer Präposition dazwischen (la búsqueda de vivienda statt Wohnungssuche). Spanischsprachige zerlegen deutsche Komposita deshalb oft nicht selbstständig und übersetzen oder umschreiben stattdessen, statt das Kompositum direkt zu verstehen oder zu bilden.",
+  "en": "English also compounds less freely and often uses two separate words instead (housing search rather than Wohnungssuche). English speakers can usually decode simple German compounds but rarely produce new ones actively, defaulting to a prepositional phrase instead."
+ },
+ "errores": [
+  "Ein -bar-Adjektiv aus einem Verb bilden, das diese Form nicht zulässt.",
+  "Ein Kompositum falsch zusammensetzen, mit vertauschter Reihenfolge der Bestandteile.",
+  "Un- immer als reine Verneinung lesen, auch dort, wo es verstärkend gemeint ist."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, aber machbar.",
+   "funcion": "-bar-Adjektiv, Möglichkeit",
+   "traducciones": {
+    "es": "…, pero factible.",
+    "en": "…, but feasible.",
+    "fr": "…, mais faisable.",
+    "it": "…, ma fattibile.",
+    "pt": "…, mas viável."
+   }
+  },
+  {
+   "expresion": "ohne klare…",
+   "funcion": "un-/los-Bildung",
+   "traducciones": {
+    "es": "sin… claro/a",
+    "en": "without a clear…",
+    "fr": "sans… clair(e)",
+    "it": "senza un/una… chiaro/a",
+    "pt": "sem… claro/a"
+   }
+  },
+  {
+   "expresion": "die Wohnungssuche",
+   "funcion": "Kompositum, Alltag",
+   "traducciones": {
+    "es": "la búsqueda de vivienda",
+    "en": "the housing search",
+    "fr": "la recherche d’un logement",
+    "it": "la ricerca di un alloggio",
+    "pt": "a procura de habitação"
+   }
+  },
+  {
+   "expresion": "der Zeitdruck",
+   "funcion": "Kompositum, Beruf",
+   "traducciones": {
+    "es": "la presión de tiempo",
+    "en": "time pressure",
+    "fr": "la pression du temps",
+    "it": "la pressione del tempo",
+    "pt": "a pressão do tempo"
+   }
+  },
+  {
+   "expresion": "unausgereift",
+   "funcion": "un- + Partizip",
+   "traducciones": {
+    "es": "poco desarrollado",
+    "en": "not yet fully developed",
+    "fr": "pas encore abouti(e)",
+    "it": "non ancora maturo/a",
+    "pt": "ainda pouco desenvolvido/a"
+   }
+  },
+  {
+   "expresion": "verlängern/verbessern/vertiefen",
+   "funcion": "ver- + Adjektiv/Verb",
+   "traducciones": {
+    "es": "prolongar/mejorar/profundizar",
+    "en": "to extend/improve/deepen",
+    "fr": "prolonger/améliorer/approfondir",
+    "it": "prolungare/migliorare/approfondire",
+    "pt": "prolongar/melhorar/aprofundar"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist das -bar-Adjektiv aus einem passenden Verb gebildet?",
+  "Ist das Kompositum in der richtigen Reihenfolge zusammengesetzt?",
+  "Habe ich mindestens drei verschiedene Wortbildungsmuster benutzt?",
+  "Ist un- korrekt als Verneinung oder Verstärkung gelesen?",
+  "Habe ich ein neues, selbst gebildetes Kompositum benutzt, nicht nur bekannte?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wortbildung. Prüfen Sie -bar-Adjektive, Komposita und die Präfixe un- und ver-. Schreiben Sie den Text nicht neu."
+}

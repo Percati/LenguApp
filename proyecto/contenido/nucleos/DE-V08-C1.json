@@ -1,0 +1,139 @@
+{
+ "skillId": "DE-V08",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Helvetismen und Deutschschweizer Kontext",
+ "categoria": "vocabulary",
+ "ancla": "—",
+ "variante": "CH",
+ "descripcion": "Auf C1 geht es nicht mehr nur um einzelne Helvetismen, sondern um den professionellen Kontext: Sitzungsprotokolle, E-Mails an Behörden und formelle Korrespondenz in der Deutschschweiz folgen eigenen Konventionen, die über Wortschatz hinausgehen — etwa eine tendenziell direktere Anrede und eine eigene Verwaltungssprache.",
+ "cuadroReferencia": {
+  "titulo": "Professioneller Kontext CH gegen DE",
+  "columnas": [
+   "Schweiz",
+   "Deutschland",
+   "Kontext"
+  ],
+  "filas": [
+   [
+    "das Traktandum",
+    "der Tagesordnungspunkt",
+    "Sitzung"
+   ],
+   [
+    "die Vernehmlassung",
+    "die Anhörung",
+    "Politik/Verwaltung"
+   ],
+   [
+    "allfällig",
+    "eventuell",
+    "Verwaltungssprache"
+   ],
+   [
+    "kein ß, immer ss",
+    "ß in Standardtexten",
+    "Rechtschreibung"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das Traktandum wird an der nächsten Sitzung erneut behandelt.",
+   "audio": true
+  },
+  {
+   "texto": "Allfällige Einwände sind bis Freitag schriftlich einzureichen.",
+   "audio": true
+  },
+  {
+   "texto": "Die Vernehmlassung zu diesem Gesetzesentwurf läuft noch bis Ende Monat."
+  }
+ ],
+ "notas": [
+  "Vernehmlassung ist ein spezifisch schweizerisches politisches Verfahren ohne direkte Entsprechung in Deutschland — eine öffentliche Konsultation vor der Gesetzgebung.",
+  "Das fehlende ß ist in der Schweiz Norm, nicht Nachlässigkeit, und gilt für alle Textsorten, auch sehr formelle.",
+  "Schweizer Geschäftskorrespondenz ist schriftlich oft etwas formeller im Aufbau, aber direkter im Ton als vergleichbare deutsche Texte."
+ ],
+ "errores": [
+  "Ein ß in einem Schweizer Text verwenden.",
+  "Vernehmlassung mit Anhörung gleichsetzen, ohne den spezifisch schweizerischen politischen Kontext zu kennen.",
+  "Mundart und Standardvarietät verwechseln: Helvetismen wie Traktandum sind Standard, nicht umgangssprachlich."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das Traktandum betreffend…",
+   "funcion": "Sitzungssprache",
+   "traducciones": {
+    "es": "El punto del orden del día relativo a…",
+    "en": "The agenda item concerning…",
+    "fr": "Le point de l’ordre du jour concernant…",
+    "it": "Il punto all’ordine del giorno riguardante…",
+    "pt": "O ponto da ordem de trabalhos relativo a…"
+   }
+  },
+  {
+   "expresion": "Allfällige Rückfragen…",
+   "funcion": "Verwaltungssprache",
+   "traducciones": {
+    "es": "Eventuales consultas…",
+    "en": "Any queries…",
+    "fr": "Toute question éventuelle…",
+    "it": "Eventuali domande…",
+    "pt": "Eventuais questões…"
+   }
+  },
+  {
+   "expresion": "Die Vernehmlassung läuft bis…",
+   "funcion": "politischer Prozess",
+   "traducciones": {
+    "es": "La consulta pública dura hasta…",
+    "en": "The consultation period runs until…",
+    "fr": "La consultation publique court jusqu’au…",
+    "it": "La consultazione pubblica è aperta fino al…",
+    "pt": "A consulta pública decorre até…"
+   }
+  },
+  {
+   "expresion": "Wir bitten um Kenntnisnahme.",
+   "funcion": "formelle Schlussformel",
+   "traducciones": {
+    "es": "Rogamos tomar nota.",
+    "en": "Please take note.",
+    "fr": "Nous vous prions d’en prendre connaissance.",
+    "it": "Si prega di prenderne atto.",
+    "pt": "Solicitamos que tomem conhecimento."
+   }
+  },
+  {
+   "expresion": "Die Pendenzenliste wird laufend aktualisiert.",
+   "funcion": "Projektsprache",
+   "traducciones": {
+    "es": "La lista de pendientes se actualiza continuamente.",
+    "en": "The outstanding-items list is updated continuously.",
+    "fr": "La liste des points en suspens est mise à jour en continu.",
+    "it": "L’elenco delle pendenze viene aggiornato continuamente.",
+    "pt": "A lista de pendências é atualizada continuamente."
+   }
+  },
+  {
+   "expresion": "Zuständig für dieses Dossier ist…",
+   "funcion": "Verantwortung zuweisen",
+   "traducciones": {
+    "es": "Responsable de este expediente es…",
+    "en": "Responsible for this file is…",
+    "fr": "Le dossier est sous la responsabilité de…",
+    "it": "Responsabile di questo dossier è…",
+    "pt": "O responsável por este dossiê é…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Kein ß im gesamten Text?",
+  "Sind die Helvetismen als Standard und nicht als Mundart eingesetzt?",
+  "Passt der professionelle Ton zum Schweizer Kontext?",
+  "Habe ich mindestens vier spezifisch schweizerische Begriffe verwendet?",
+  "Ist der Ton direkt genug für den Schweizer Kontext, ohne unhöflich zu wirken?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Schweizer professionellen Kontext: Wortschatz, Rechtschreibung und Ton. Schreiben Sie den Text nicht neu."
+}

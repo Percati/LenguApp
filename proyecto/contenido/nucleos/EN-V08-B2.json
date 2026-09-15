@@ -1,0 +1,140 @@
+{
+ "skillId": "EN-V08",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Precision: Avoiding Overused Words",
+ "categoria": "vocabulary",
+ "ancla": "CV Propositional precision",
+ "descripcion": "At B2 the goal is to replace the most overused words — very, good, bad, nice, a lot — with one clearer alternative each time. The full ten-word ban used at C1 isn't the target yet; picking a better word for the five most common offenders is enough.",
+ "cuadroReferencia": {
+  "titulo": "Five words to upgrade",
+  "columnas": [
+   "Overused",
+   "Ask instead"
+  ],
+  "filas": [
+   [
+    "very + adjective",
+    "one stronger adjective (very tired → exhausted)"
+   ],
+   [
+    "good / bad",
+    "good how? (reliable, thorough)"
+   ],
+   [
+    "nice",
+    "warm, thoughtful, pleasant"
+   ],
+   [
+    "a lot",
+    "plenty, a fair amount, a number"
+   ],
+   [
+    "thing",
+    "name it specifically"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "It was exhausting, not just tiring.",
+   "audio": true
+  },
+  {
+   "texto": "The service was thorough and professional.",
+   "audio": true
+  },
+  {
+   "texto": "There's a fair amount of work left to do."
+  }
+ ],
+ "notas": [
+  "Very plus an adjective usually means there's a single stronger word available instead.",
+  "Good and bad need a follow-up question: good in what way? — the answer is usually the better word.",
+  "Thing is almost always avoidable and worth replacing with the actual noun."
+ ],
+ "contraste": {
+  "es": "El español se apoya igualmente en muy + adjetivo, así que el hábito se transfiere directamente al inglés. La ventaja es que, como el problema ya existe en español, el hispanohablante puede aplicar la misma corrección en ambos idiomas a la vez."
+ },
+ "errores": [
+  "Overusing very where a single stronger adjective exists.",
+  "Using thing repeatedly instead of naming the object.",
+  "Replacing an overused word with one that's too obscure for the context."
+ ],
+ "redemittel": [
+  {
+   "expresion": "exhausted",
+   "funcion": "replaces very tired",
+   "traducciones": {
+    "es": "agotado",
+    "de": "erschöpft",
+    "fr": "épuisé(e)",
+    "it": "esausto/a",
+    "pt": "exausto/a"
+   }
+  },
+  {
+   "expresion": "thorough",
+   "funcion": "replaces good (careful)",
+   "traducciones": {
+    "es": "minucioso",
+    "de": "gründlich",
+    "fr": "approfondi(e)",
+    "it": "approfondito/a",
+    "pt": "minucioso/a"
+   }
+  },
+  {
+   "expresion": "forgettable",
+   "funcion": "replaces bad, negative without insult",
+   "traducciones": {
+    "es": "olvidable",
+    "de": "vergessenswert",
+    "fr": "oubliable",
+    "it": "dimenticabile",
+    "pt": "esquecível"
+   }
+  },
+  {
+   "expresion": "a fair amount of",
+   "funcion": "replaces a lot",
+   "traducciones": {
+    "es": "una buena cantidad de",
+    "de": "eine ordentliche Menge an",
+    "fr": "une bonne quantité de",
+    "it": "una discreta quantità di",
+    "pt": "uma boa quantidade de"
+   }
+  },
+  {
+   "expresion": "plenty of",
+   "funcion": "replaces a lot, positive",
+   "traducciones": {
+    "es": "de sobra",
+    "de": "jede Menge",
+    "fr": "beaucoup de",
+    "it": "un sacco di",
+    "pt": "muito/a(s)"
+   }
+  },
+  {
+   "expresion": "well-judged",
+   "funcion": "replaces good (balanced)",
+   "traducciones": {
+    "es": "bien medido",
+    "de": "gut abgewogen",
+    "fr": "bien dosé(e)",
+    "it": "ben calibrato/a",
+    "pt": "bem ponderado/a"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I replaced very + adjective with a single stronger word at least twice?",
+  "Have I avoided thing where a specific noun would work?",
+  "Are good and bad replaced with more precise words?",
+  "Is the replacement word appropriate for the register, not too obscure?",
+  "Have I used at least five precise adjectives overall?"
+ ],
+ "promptCorreccion": "Focus only on lexical precision. Flag every very + adjective, every good/bad, and every thing that could be replaced with something more specific. Do not rewrite the text."
+}

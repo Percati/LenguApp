@@ -1,0 +1,108 @@
+{
+ "skillId": "EN-F01",
+ "nivel": "C2",
+ "idioma": "en",
+ "titulo": "Giving and Asking for Opinions",
+ "categoria": "fluency",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 an opinion is embedded in a wider frame: acknowledging the complexity of the question before answering it, and signalling exactly how confidently the opinion is held. The goal is no longer to have an opinion clearly, but to calibrate how much weight to put behind it.",
+ "cuadroReferencia": {
+  "titulo": "Calibrating an opinion",
+  "columnas": [
+   "Move",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Acknowledge complexity",
+    "It's a genuinely difficult question, but if pressed,…"
+   ],
+   [
+    "State with calibrated confidence",
+    "…I'd lean towards thinking that…"
+   ],
+   [
+    "Name the counter-view briefly",
+    "though a strong case exists the other way too."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "It's a genuinely difficult question, but if pressed, I'd lean towards thinking it's the former.",
+   "audio": true
+  },
+  {
+   "texto": "I hold that view fairly loosely, to be honest.",
+   "audio": true
+  },
+  {
+   "texto": "Though a strong case exists the other way too."
+  }
+ ],
+ "notas": [
+  "If pressed signals that the opinion is a considered lean, not a firm conviction — useful when the topic genuinely has no easy answer.",
+  "I hold that view loosely is a precise, C2-level way to flag low personal confidence without hedging the actual content.",
+  "Naming the counter-view briefly, without arguing it, shows intellectual honesty rather than weakness."
+ ],
+ "contraste": {
+  "es": "El español culto también reconoce la complejidad antes de opinar (es un tema difícil, pero…), así que el movimiento retórico es familiar. Lo que suele faltar en el repertorio de un hispanohablante de C2 es el vocabulario preciso para calibrar la CONFIANZA con que sostiene la opinión — I'd lean towards, I hold that loosely — más allá de simplemente suavizarla."
+ },
+ "errores": [
+  "Stating an opinion with full confidence on a genuinely contested question, which reads as naive rather than authoritative.",
+  "Acknowledging complexity but then never actually answering the question.",
+  "Confusing hedging the confidence level with hedging the content itself."
+ ],
+ "redemittel": [
+  {
+   "expresion": "If pressed, I'd say…",
+   "funcion": "considered lean, not certainty",
+   "traducciones": {
+    "es": "si me viera obligado a decir…"
+   }
+  },
+  {
+   "expresion": "I hold that view fairly loosely.",
+   "funcion": "flags low confidence precisely",
+   "traducciones": {
+    "es": "sostengo esa opinión sin mucha firmeza"
+   }
+  },
+  {
+   "expresion": "…, though a strong case exists the other way.",
+   "funcion": "names the counter-view briefly",
+   "traducciones": {
+    "es": "…, aunque hay buenos argumentos en contra"
+   }
+  },
+  {
+   "expresion": "I'd lean towards…",
+   "funcion": "calibrated confidence",
+   "traducciones": {
+    "es": "me inclinaría hacia…"
+   }
+  },
+  {
+   "expresion": "It's genuinely difficult to say, but…",
+   "funcion": "acknowledges complexity",
+   "traducciones": {
+    "es": "es realmente difícil de decir, pero…"
+   }
+  },
+  {
+   "expresion": "I could be persuaded otherwise.",
+   "funcion": "signals genuine openness",
+   "traducciones": {
+    "es": "podrían convencerme de lo contrario"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the level of confidence calibrated to how contested the question actually is?",
+  "Is the counter-view named, even briefly?",
+  "Does the opinion actually get answered, not just qualified into silence?",
+  "Would an expert on this topic find the confidence level appropriate?",
+  "Have I avoided false modesty that just avoids taking any position?"
+ ],
+ "promptCorreccion": "Focus only on how the opinion's confidence is calibrated. Check whether the complexity is acknowledged without avoiding the actual answer. Do not rewrite the text."
+}

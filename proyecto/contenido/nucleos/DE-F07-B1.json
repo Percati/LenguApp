@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-F07",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Vermutungen ausdrücken",
+ "categoria": "fluency",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B1 drückt man eine Vermutung mit vielleicht oder wahrscheinlich aus. Die Modalverben könnte, dürfte und müsste kommen erst auf B2 systematisch dazu — hier reicht ein einfaches Adverb, um Unsicherheit auszudrücken.",
+ "cuadroReferencia": {
+  "titulo": "Eine einfache Vermutung",
+  "columnas": [
+   "Wort",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "vielleicht",
+    "Vielleicht ist er einfach müde."
+   ],
+   [
+    "wahrscheinlich",
+    "Er ist wahrscheinlich noch im Büro."
+   ],
+   [
+    "ich glaube",
+    "Ich glaube, das liegt am Wetter."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Vielleicht ist er einfach nur müde.",
+   "audio": true
+  },
+  {
+   "texto": "Er ist wahrscheinlich noch bei der Arbeit.",
+   "audio": true
+  },
+  {
+   "texto": "Ich glaube, das liegt am schlechten Wetter."
+  }
+ ],
+ "notas": [
+  "Vielleicht steht oft am Satzanfang und ist die einfachste Form der Vermutung.",
+  "Wahrscheinlich drückt eine etwas sicherere Vermutung aus als vielleicht.",
+  "Ich glaube, dass… ist eine gute Alternative, wenn man nicht sicher ist."
+ ],
+ "contraste": {
+  "es": "Das Spanische drückt Vermutung mit quizás oder probablemente aus, was strukturell fast identisch zum Deutschen ist. Diese einfache Form der Vermutung überträgt sich deshalb sehr leicht."
+ },
+ "errores": [
+  "Eine Vermutung wie eine Tatsache formulieren, ohne vielleicht oder wahrscheinlich.",
+  "Vielleicht und wahrscheinlich verwechseln, obwohl sie unterschiedliche Sicherheitsgrade ausdrücken.",
+  "Nur eine Formel für jede Vermutung benutzen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Vielleicht ist…",
+   "funcion": "einfache Vermutung",
+   "traducciones": {
+    "es": "Quizás sea…",
+    "en": "Maybe it's…"
+   }
+  },
+  {
+   "expresion": "Er/Sie ist wahrscheinlich…",
+   "funcion": "sicherere Vermutung",
+   "traducciones": {
+    "es": "Probablemente esté…",
+    "en": "He/She is probably…"
+   }
+  },
+  {
+   "expresion": "Ich glaube, dass…",
+   "funcion": "Vermutung, persönlich",
+   "traducciones": {
+    "es": "Creo que…",
+    "en": "I think that…",
+    "fr": "Je crois que…",
+    "it": "Credo che…",
+    "pt": "Acho que…"
+   }
+  },
+  {
+   "expresion": "Ich denke, das liegt an…",
+   "funcion": "Ursache vermuten",
+   "traducciones": {
+    "es": "Pienso que eso se debe a…",
+    "en": "I think that's because of…"
+   }
+  },
+  {
+   "expresion": "Keine Ahnung, aber vielleicht…",
+   "funcion": "unsichere Vermutung, informell",
+   "traducciones": {
+    "es": "Ni idea, pero quizás…",
+    "en": "No idea, but maybe…"
+   }
+  },
+  {
+   "expresion": "Bestimmt ist…",
+   "funcion": "sehr sichere Vermutung",
+   "traducciones": {
+    "es": "Seguro que es…",
+    "en": "It's definitely…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich vielleicht oder wahrscheinlich benutzt, statt eine Tatsache zu behaupten?",
+  "Passt der Sicherheitsgrad zur Situation?",
+  "Habe ich mehr als eine Formel benutzt?",
+  "Habe ich mindestens zwei verschiedene Vermutungsformeln benutzt?",
+  "Ist die Vermutung als solche erkennbar, nicht als Tatsache formuliert?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Vermutungsformeln. Prüfen Sie, ob die Vermutung klar als solche markiert ist. Schreiben Sie den Text nicht neu."
+}

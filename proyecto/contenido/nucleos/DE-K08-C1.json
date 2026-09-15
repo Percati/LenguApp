@@ -1,0 +1,141 @@
+{
+ "skillId": "DE-K08",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Zweiteilige Konnektoren + Vergleichs- und Konzessivsätze",
+ "categoria": "grammar",
+ "ancla": "Aspekte C1",
+ "descripcion": "Zweiteilige Konnektoren (nicht nur… sondern auch, zwar… allerdings, je… desto) strukturieren ein Argument über mehrere Sätze hinweg. Getrennt gelernt, wirken sie wie einfache Formeln; im selben Argument kombiniert, tragen sie die gesamte Gedankenführung eines anspruchsvollen Textes.",
+ "cuadroReferencia": {
+  "titulo": "Drei Paare, drei Funktionen",
+  "columnas": [
+   "Paar",
+   "Funktion",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "nicht nur…, sondern auch…",
+    "Verstärkung",
+    "Nicht nur die Kosten steigen, sondern auch die Wartezeiten."
+   ],
+   [
+    "zwar…, allerdings…",
+    "Einräumung und Einschränkung",
+    "Zwar ist die Idee gut, allerdings fehlt das Budget."
+   ],
+   [
+    "je…, desto…",
+    "proportionaler Zusammenhang",
+    "Je später wir entscheiden, desto teurer wird es."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Nicht nur die Kosten steigen, sondern auch die Wartezeiten verlängern sich.",
+   "audio": true
+  },
+  {
+   "texto": "Zwar ist die Idee vielversprechend, allerdings fehlt dafür das Budget.",
+   "audio": true
+  },
+  {
+   "texto": "Je später wir uns entscheiden, desto teurer wird die ganze Sache."
+  }
+ ],
+ "notas": [
+  "Nach je steht der Komparativ, im desto-Satz folgt Verb-Subjekt-Umstellung: je später, desto teurer wird es.",
+  "Zwar steht meist direkt nach dem Verb oder am Satzanfang und kündigt zwingend ein allerdings oder aber an.",
+  "Diese drei Paare lassen sich in einem einzigen Argument kombinieren: erst zwar…allerdings, dann je…desto als Konsequenz."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit no solo… sino también und cuanto más… más eine sehr ähnliche Struktur, sodass sich diese Muster leicht übertragen lassen. Schwieriger ist zwar…allerdings, da Spanisch dafür eher zwei separate Sätze mit si bien und sin embargo braucht, statt eines einzigen zweiteiligen Konnektors."
+ },
+ "errores": [
+  "Zwar ohne folgendes allerdings oder aber stehen lassen.",
+  "Nach je den Komparativ vergessen: je spät statt je später.",
+  "Die Verb-Subjekt-Umstellung im desto-Satz auslassen."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Zwei separate Hauptsätze mit si bien-Logik bilden, statt zwar und allerdings im selben Argumentgefüge zu verbinden."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "Nicht nur…, sondern auch…",
+   "funcion": "Verstärkung",
+   "traducciones": {
+    "es": "No solo…, sino también…",
+    "en": "Not only…, but also…",
+    "fr": "Non seulement…, mais aussi…",
+    "it": "Non solo…, ma anche…",
+    "pt": "Não só…, mas também…"
+   }
+  },
+  {
+   "expresion": "Zwar…, allerdings…",
+   "funcion": "Einräumung und Einschränkung",
+   "traducciones": {
+    "es": "Si bien…, sin embargo…",
+    "en": "While…, however…",
+    "fr": "Certes…, toutefois…",
+    "it": "È vero che…, tuttavia…",
+    "pt": "É certo que…, contudo…"
+   }
+  },
+  {
+   "expresion": "Je…, desto…",
+   "funcion": "proportionaler Zusammenhang",
+   "traducciones": {
+    "es": "Cuanto más…, más…",
+    "en": "The more…, the more…",
+    "fr": "Plus…, plus…",
+    "it": "Più…, più…",
+    "pt": "Quanto mais…, mais…"
+   }
+  },
+  {
+   "expresion": "Sowohl…als auch…",
+   "funcion": "beides gilt",
+   "traducciones": {
+    "es": "Tanto… como…",
+    "en": "Both… and…",
+    "fr": "À la fois… et…",
+    "it": "Sia… sia…",
+    "pt": "Tanto… como…"
+   }
+  },
+  {
+   "expresion": "Weder…noch…",
+   "funcion": "beides trifft nicht zu",
+   "traducciones": {
+    "es": "Ni… ni…",
+    "en": "Neither… nor…",
+    "fr": "Ni… ni…",
+    "it": "Né… né…",
+    "pt": "Nem… nem…"
+   }
+  },
+  {
+   "expresion": "Zwar…, aber immerhin…",
+   "funcion": "Einräumung mit positivem Ausklang",
+   "traducciones": {
+    "es": "Si bien…, al menos…",
+    "en": "While…, at least…",
+    "fr": "Certes…, mais au moins…",
+    "it": "È vero che…, ma almeno…",
+    "pt": "É certo que…, mas pelo menos…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Folgt auf zwar ein allerdings oder aber?",
+  "Steht nach je der Komparativ?",
+  "Ist im desto-Satz Verb-Subjekt-Umstellung vorhanden?",
+  "Habe ich mindestens zwei der drei Paare im selben Text kombiniert?",
+  "Trägt die Struktur wirklich das Argument, oder ist sie nur angehängt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die zweiteiligen Konnektoren. Prüfen Sie bei jedem Paar die vollständige Form und die Wortstellung, besonders nach je…desto. Schreiben Sie den Text nicht neu."
+}

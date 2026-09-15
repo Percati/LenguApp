@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-K06",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Erweiterte Partizipialattribute und Relativsätze",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird die Umwandlung in beide Richtungen als bewusstes Stilmittel innerhalb eines einzigen Textes eingesetzt: ein Absatz kann mit dichten Partizipialattributen beginnen und sich zu ausformulierten Relativsätzen öffnen, um den Leser schrittweise von einem fachlichen zu einem zugänglicheren Ton zu führen.",
+ "cuadroReferencia": {
+  "titulo": "Ein Text, zwei Register im Übergang",
+  "columnas": [
+   "Abschnitt",
+   "Form",
+   "Wirkung"
+  ],
+  "filas": [
+   [
+    "Einleitung",
+    "dichte Partizipialattribute",
+    "signalisiert Fachlichkeit"
+   ],
+   [
+    "Übergang",
+    "gemischt",
+    "öffnet den Text schrittweise"
+   ],
+   [
+    "Schluss",
+    "ausformulierte Relativsätze",
+    "lädt zum Weiterlesen ein"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die im Vorjahr beschlossenen, bislang nicht umgesetzten Massnahmen stehen erneut zur Debatte.",
+   "audio": true
+  },
+  {
+   "texto": "Es geht um Massnahmen, die im Vorjahr beschlossen wurden, aber bis heute nicht umgesetzt sind.",
+   "audio": true
+  },
+  {
+   "texto": "Kurz gesagt: Was einmal entschieden wurde, wartet noch auf seine Umsetzung."
+  }
+ ],
+ "notas": [
+  "Ein Text, der konsequent von hoher zu niedrigerer Dichte übergeht, wirkt wie eine bewusste Erklärung, nicht wie ein Stilbruch.",
+  "Der umgekehrte Übergang — von locker zu dicht — signalisiert oft eine Verschärfung des Arguments und wird seltener, aber wirksam eingesetzt.",
+  "Die Fähigkeit, zwischen beiden Formen hin und her zu wechseln, ist selbst der Prüfstein für aktive Beherrschung, nicht nur passives Verstehen."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine vergleichbare Dichteskala, die sich innerhalb eines Textes verändern lässt — die Struktur bleibt strukturell eher konstant. Hispanophone C2-Sprecher nutzen den deutschen Übergang deshalb selten aktiv, obwohl sie ihn beim Lesen mühelos verstehen."
+ },
+ "errores": [
+  "Innerhalb eines Absatzes willkürlich zwischen den Formen wechseln, ohne dass der Wechsel eine Funktion trägt.",
+  "Einen ganzen Text auf maximaler Dichte halten, ohne dem Leser einen Zugang zu öffnen.",
+  "Den Übergang so abrupt gestalten, dass er wie ein Bruch statt wie eine Entwicklung wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "die im…beschlossenen, bislang nicht…",
+   "funcion": "dichtes Partizipialattribut",
+   "traducciones": {
+    "es": "los… decididos en…, aún no…",
+    "en": "the…decided in…, not yet…"
+   }
+  },
+  {
+   "expresion": "…, die…wurden, aber bis heute…",
+   "funcion": "aufgelöster Relativsatz",
+   "traducciones": {
+    "es": "…, que fueron…, pero hasta hoy…",
+    "en": "…, which were…, but to this day…"
+   }
+  },
+  {
+   "expresion": "Kurz gesagt: …",
+   "funcion": "Übergang zu einfacherem Ton",
+   "traducciones": {
+    "es": "en pocas palabras: …",
+    "en": "in short: …"
+   }
+  },
+  {
+   "expresion": "Anders ausgedrückt, …",
+   "funcion": "Übergang, erklärend",
+   "traducciones": {
+    "es": "dicho de otro modo, …",
+    "en": "put differently, …"
+   }
+  },
+  {
+   "expresion": "Um es zuzuspitzen: …",
+   "funcion": "Übergang zu dichterem Ton",
+   "traducciones": {
+    "es": "para resumirlo de forma más aguda: …",
+    "en": "to put it more sharply: …"
+   }
+  },
+  {
+   "expresion": "Das lässt sich so zusammenfassen: …",
+   "funcion": "Übergang, abschliessend",
+   "traducciones": {
+    "es": "esto se puede resumir así: …",
+    "en": "this can be summed up as follows: …"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Trägt der Wechsel zwischen den Formen eine erkennbare Funktion?",
+  "Öffnet sich ein dicht beginnender Text an geeigneter Stelle für den Leser?",
+  "Wirkt der Übergang wie eine Entwicklung, nicht wie ein Bruch?",
+  "Nutze ich beide Richtungen aktiv, nicht nur die für mich einfachere?",
+  "Würde ein Fachleser den Wechsel als kunstvoll, nicht zufällig empfinden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den bewussten Wechsel zwischen dichten Partizipialattributen und aufgelösten Relativsätzen innerhalb desselben Textes. Schreiben Sie den Text nicht neu."
+}

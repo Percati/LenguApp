@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-K05",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Subjektive Modalverben + Modalpartikeln + Abschwächung",
+ "categoria": "grammar",
+ "ancla": "Aspekte C1",
+ "descripcion": "Das gesprochene C1-Deutsch stapelt drei Abschwächungsmittel gleichzeitig: ein subjektives Modalverb, eine Modalpartikel und ein abschwächendes Adverb. Das dürfte ja wohl eher nicht der Fall sein klingt vorsichtig und höflich zugleich — genau die Kombination, die einzeln gelernte Mittel nicht erreichen.",
+ "cuadroReferencia": {
+  "titulo": "Drei Abschwächungsschichten kombiniert",
+  "columnas": [
+   "Schicht",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Subjektives Modalverb",
+    "dürfte"
+   ],
+   [
+    "Modalpartikel",
+    "ja, wohl, eher"
+   ],
+   [
+    "Kombiniert",
+    "Das dürfte ja wohl eher nicht der Fall sein."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das dürfte ja wohl eher nicht der Fall sein, oder?",
+   "audio": true
+  },
+  {
+   "texto": "Das könnte doch eigentlich auch anders gelöst werden.",
+   "audio": true
+  },
+  {
+   "texto": "Das müsste doch mal geklärt werden, findest du nicht?"
+  }
+ ],
+ "notas": [
+  "Diese Kombinationen sind fast ausschliesslich gesprochen und markieren einen sehr vorsichtigen, aber dennoch klaren Standpunkt.",
+  "Zwei bis drei Mittel gleichzeitig sind hier normal — anders als bei der reinen Abschwächung im Text (DE-F10), wo weniger mehr ist.",
+  "Die Partikeln ja, wohl und eher tragen jeweils eine eigene Nuance: ja signalisiert Übereinstimmung, wohl Vorsicht, eher eine Tendenz."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine Entsprechung für diese Häufung von Modalpartikeln und muss die gleiche Nuance über mehrere Wörter oder einen ganzen Nebensatz ausdrücken. Diese Verdichtung in einem einzigen deutschen Satz ist deshalb für Spanischsprachige besonders schwer zu produzieren, auch wenn sie sie im Hörverstehen erkennen."
+ },
+ "errores": [
+  "Nur ein Mittel benutzen, wo die gesprochene Sprache mehrere kombiniert.",
+  "Die Partikeln in falscher Reihenfolge stapeln.",
+  "Diese Kombination schriftlich verwenden, wo sie unpassend informell wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das dürfte ja wohl…",
+   "funcion": "dreifach abgeschwächte Vermutung",
+   "traducciones": {
+    "es": "Eso probablemente no sea…",
+    "en": "That's probably not really…",
+    "fr": "Ça ne devrait quand même probablement pas être…",
+    "it": "Probabilmente non sarà davvero…",
+    "pt": "Isso provavelmente não será propriamente…"
+   }
+  },
+  {
+   "expresion": "Das könnte doch eigentlich…",
+   "funcion": "Vorschlag, abgeschwächt",
+   "traducciones": {
+    "es": "Eso en realidad podría…",
+    "en": "That could actually…",
+    "fr": "En fait, cela pourrait…",
+    "it": "In realtà, potrebbe…",
+    "pt": "Na verdade, isso poderia…"
+   }
+  },
+  {
+   "expresion": "Das müsste doch mal…, findest du nicht?",
+   "funcion": "Vorschlag als Frage getarnt",
+   "traducciones": {
+    "es": "Habría que…, ¿no te parece?",
+    "en": "That should really be…, don't you think?",
+    "fr": "Il faudrait vraiment…, tu ne trouves pas ?",
+    "it": "Bisognerebbe proprio…, non credi?",
+    "pt": "Era mesmo preciso…, não achas?"
+   }
+  },
+  {
+   "expresion": "Das wäre ja wohl kaum…",
+   "funcion": "verneinte Vermutung",
+   "traducciones": {
+    "es": "Eso difícilmente sería…",
+    "en": "That would hardly be…",
+    "fr": "Cela ne serait guère…",
+    "it": "Questo difficilmente sarebbe…",
+    "pt": "Isso dificilmente seria…"
+   }
+  },
+  {
+   "expresion": "Das dürfte eher weniger…",
+   "funcion": "vorsichtige Verneinung",
+   "traducciones": {
+    "es": "Eso más bien no sería tan…",
+    "en": "That's probably less…",
+    "fr": "Ce serait probablement plutôt moins…",
+    "it": "Probabilmente sarebbe piuttosto meno…",
+    "pt": "Isso seria provavelmente menos…"
+   }
+  },
+  {
+   "expresion": "Na ja, das könnte schon sein.",
+   "funcion": "zögerliche Zustimmung",
+   "traducciones": {
+    "es": "Bueno, podría ser.",
+    "en": "Well, that could be.",
+    "fr": "Eh bien, c’est possible.",
+    "it": "Beh, potrebbe essere.",
+    "pt": "Bem, pode ser."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Sind mindestens zwei Abschwächungsschichten kombiniert?",
+  "Passt die Reihenfolge der Partikeln (ja vor wohl vor eher)?",
+  "Ist diese Kombination im gesprochenen Kontext angemessen, nicht in einem formellen Text?",
+  "Klingt der Satz vorsichtig, ohne unentschlossen zu wirken?",
+  "Habe ich mindestens drei verschiedene Kombinationen benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Kombination von subjektiven Modalverben und Modalpartikeln. Prüfen Sie, ob mindestens zwei Schichten kombiniert sind und ob der Kontext gesprochen genug ist. Schreiben Sie den Text nicht neu."
+}

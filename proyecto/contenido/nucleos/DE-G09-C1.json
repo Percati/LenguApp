@@ -1,0 +1,137 @@
+{
+ "skillId": "DE-G09",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Konjunktiv II",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C1",
+ "descripcion": "Auf C1 verschiebt sich der Konjunktiv II von der Höflichkeits- und Grundhypothese hin zu drei anspruchsvolleren Funktionen: der vorsichtigen wissenschaftlichen Distanzierung (das würde bedeuten, dass…), dem irrealen Vergleich (als ob) und der Poteniale-Abwägung in Diskussionen. Die Form ändert sich nicht — die Bandbreite der Verwendung schon.",
+ "cuadroReferencia": {
+  "titulo": "Drei C1-Funktionen des Konjunktiv II",
+  "columnas": [
+   "Funktion",
+   "Beispiel",
+   "Register"
+  ],
+  "filas": [
+   [
+    "Wissenschaftliche Distanzierung",
+    "Das würde bedeuten, dass…",
+    "Vortrag, Diskussion"
+   ],
+   [
+    "Irrealer Vergleich",
+    "Er tut, als ob er nichts wüsste.",
+    "neutral bis gehoben"
+   ],
+   [
+    "Abwägung von Optionen",
+    "Man könnte argumentieren, dass…",
+    "Diskussion, Essay"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das würde bedeuten, dass die gesamte Berechnung überarbeitet werden müsste.",
+   "audio": true
+  },
+  {
+   "texto": "Er redet, als ob er die Lösung schon kennen würde.",
+   "audio": true
+  },
+  {
+   "texto": "Man könnte einwenden, dass die Stichprobe zu klein wäre."
+  }
+ ],
+ "notas": [
+  "Nach als ob steht der Konjunktiv II direkt nach ob; ohne ob rückt das konjugierte Verb an die Position von ob: Er tut, als wüsste er nichts.",
+  "In der wissenschaftlichen Distanzierung wird der Konjunktiv II oft mit Modalverben kombiniert: das müsste eigentlich bedeuten.",
+  "Diese Verwendungen sind fast nie mit würde nötig, weil die Originalformen (wäre, hätte, könnte, müsste) den nötigen Abstand direkt ausdrücken."
+ ],
+ "contraste": {
+  "es": "Das Spanische verwendet für den irrealen Vergleich den subjuntivo (como si supiera), was der deutschen Logik entspricht, aber die deutsche Inversion ohne ob (als wüsste er) hat keine spanische Entsprechung und wird deshalb oft vermieden.",
+  "en": "English marks the unreal comparison with as if plus a past tense, which maps well onto German. The distancing use of the German subjunctive, however, has no separate verb form in English (it would mean uses the same would as ordinary conditionals), so English speakers underuse Konjunktiv II here and default to plain modal verbs instead."
+ },
+ "errores": [
+  "Nach als ob den Indikativ statt des Konjunktiv II verwenden.",
+  "Bei der Inversion ohne ob das Verb nicht verschieben: als er wüsste nichts statt als wüsste er nichts.",
+  "Würde in Distanzierungsformeln überbenutzen, wo eine Originalform eleganter wäre."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das würde bedeuten, dass…",
+   "funcion": "vorsichtige Schlussfolgerung",
+   "traducciones": {
+    "es": "Eso significaría que…",
+    "en": "That would mean that…",
+    "fr": "Cela signifierait que…",
+    "it": "Questo significherebbe che…",
+    "pt": "Isso significaria que…"
+   }
+  },
+  {
+   "expresion": "Man könnte einwenden, dass…",
+   "funcion": "Gegenargument einführen",
+   "traducciones": {
+    "es": "Se podría objetar que…",
+    "en": "One could object that…",
+    "fr": "On pourrait objecter que…",
+    "it": "Si potrebbe obiettare che…",
+    "pt": "Poder-se-ia objetar que…"
+   }
+  },
+  {
+   "expresion": "…, als wäre/wüsste/hätte…",
+   "funcion": "irrealer Vergleich, Inversion",
+   "traducciones": {
+    "es": "…, como si fuera/supiera/tuviera…",
+    "en": "…, as if it were/knew/had…",
+    "fr": "…, comme si c’était/savait/avait…",
+    "it": "…, come se fosse/sapesse/avesse…",
+    "pt": "…, como se fosse/soubesse/tivesse…"
+   }
+  },
+  {
+   "expresion": "Es wäre denkbar, dass…",
+   "funcion": "vorsichtige Möglichkeit",
+   "traducciones": {
+    "es": "Sería concebible que…",
+    "en": "It would be conceivable that…",
+    "fr": "Il serait envisageable que…",
+    "it": "Sarebbe concepibile che…",
+    "pt": "Seria concebível que…"
+   }
+  },
+  {
+   "expresion": "Das würde voraussetzen, dass…",
+   "funcion": "Bedingung benennen",
+   "traducciones": {
+    "es": "Eso presupondría que…",
+    "en": "That would presuppose that…",
+    "fr": "Cela supposerait que…",
+    "it": "Questo presupporrebbe che…",
+    "pt": "Isso pressuporia que…"
+   }
+  },
+  {
+   "expresion": "Wäre es nicht sinnvoller, wenn…?",
+   "funcion": "Vorschlag als Frage",
+   "traducciones": {
+    "es": "¿No sería más sensato si…?",
+    "en": "Wouldn't it make more sense if…?",
+    "fr": "Ne serait-il pas plus judicieux que… ?",
+    "it": "Non sarebbe più sensato se…?",
+    "pt": "Não seria mais sensato se…?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht nach als ob der Konjunktiv II?",
+  "Ist bei der Inversion ohne ob das Verb korrekt verschoben?",
+  "Habe ich unnötiges würde durch eine Originalform ersetzt?",
+  "Passt die gewählte Funktion (Distanzierung, Vergleich, Abwägung) zum Kontext?",
+  "Ist der Satz auch ohne würde eindeutig verständlich?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Konjunktiv II in seinen C1-Funktionen: Distanzierung, irrealer Vergleich, Abwägung. Prüfen Sie besonders die Inversion nach als ohne ob. Schreiben Sie den Text nicht neu."
+}

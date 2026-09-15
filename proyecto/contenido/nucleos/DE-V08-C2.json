@@ -1,0 +1,112 @@
+{
+ "skillId": "DE-V08",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Helvetismen und Deutschschweizer Kontext",
+ "categoria": "vocabulary",
+ "ancla": "—",
+ "variante": "CH",
+ "descripcion": "Auf C2 wird der Schweizer Kontext bis in seine feinsten sprachlichen Nuancen beherrscht: die Fähigkeit, denselben Sachverhalt sowohl in Schweizer Standarddeutsch als auch in bundesdeutschem Standard zu formulieren, und zu wissen, welche Variante in welcher Institution erwartet wird — etwa in einem Brief an eine deutsche Behörde versus eine Schweizer.",
+ "cuadroReferencia": {
+  "titulo": "Dieselbe Aussage, zwei Standards",
+  "columnas": [
+   "Schweizer Standard",
+   "Bundesdeutscher Standard"
+  ],
+  "filas": [
+   [
+    "Das Traktandum wurde vertagt.",
+    "Der Tagesordnungspunkt wurde vertagt."
+   ],
+   [
+    "Die Vernehmlassung läuft bis Ende Monat.",
+    "Die Anhörung läuft bis Ende Monat."
+   ],
+   [
+    "Bitte um Kenntnisnahme.",
+    "Zur Kenntnisnahme."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das Traktandum wurde an der letzten Sitzung vertagt.",
+   "audio": true
+  },
+  {
+   "texto": "Die Vernehmlassung zu diesem Entwurf läuft noch bis Ende Monat.",
+   "audio": true
+  },
+  {
+   "texto": "In einem Schreiben an eine deutsche Behörde würde man stattdessen von einer Anhörung sprechen."
+  }
+ ],
+ "notas": [
+  "Die Fähigkeit, aktiv zwischen beiden Standards zu wechseln, übertrifft das blosse Erkennen von Helvetismen, das schon auf B1 und B2 vermittelt wurde.",
+  "In grenzüberschreitender Korrespondenz mit deutschen Institutionen wird oft der bundesdeutsche Standard erwartet, selbst von in der Schweiz ansässigen Personen.",
+  "Manche Helvetismen (Traktandum, Vernehmlassung) haben keine direkte bundesdeutsche Entsprechung mit demselben rechtlichen Gewicht und müssen umschrieben werden."
+ ],
+ "errores": [
+  "Einen Helvetismus in einem Schreiben an eine deutsche Institution verwenden, wo er nicht verstanden oder als fremd empfunden wird.",
+  "Vernehmlassung mit Anhörung gleichsetzen, ohne den unterschiedlichen rechtlichen Kontext zu erklären, wenn nötig.",
+  "Den falschen Standard für den institutionellen Kontext wählen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das Traktandum betreffend…",
+   "funcion": "Schweizer Standard, Sitzung",
+   "traducciones": {
+    "es": "el punto del orden del día relativo a…",
+    "en": "the agenda item concerning…"
+   }
+  },
+  {
+   "expresion": "Der Tagesordnungspunkt betreffend…",
+   "funcion": "bundesdeutscher Standard, Sitzung",
+   "traducciones": {
+    "es": "el punto del orden del día relativo a…",
+    "en": "the agenda item concerning…"
+   }
+  },
+  {
+   "expresion": "Die Vernehmlassung läuft bis…",
+   "funcion": "Schweizer politischer Prozess",
+   "traducciones": {
+    "es": "la consulta pública dura hasta…",
+    "en": "the consultation period runs until…"
+   }
+  },
+  {
+   "expresion": "Bitte um Kenntnisnahme.",
+   "funcion": "Schweizer formelle Schlussformel",
+   "traducciones": {
+    "es": "rogamos tomar nota",
+    "en": "please take note"
+   }
+  },
+  {
+   "expresion": "Zur Kenntnisnahme.",
+   "funcion": "bundesdeutsche formelle Schlussformel",
+   "traducciones": {
+    "es": "para su conocimiento",
+    "en": "for your information"
+   }
+  },
+  {
+   "expresion": "In Anlehnung an die hiesige Praxis…",
+   "funcion": "verweist auf lokalen Standard, neutral",
+   "traducciones": {
+    "es": "conforme a la práctica local…",
+    "en": "in line with local practice here…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Passt der gewählte Standard zur institutionellen Zielgruppe des Textes?",
+  "Kann ich dieselbe Aussage in beiden Standards formulieren?",
+  "Habe ich einen Helvetismus ohne rechtliche Entsprechung passend umschrieben, wo nötig?",
+  "Würde eine deutsche Institution den Text als angemessen formell empfinden?",
+  "Habe ich mindestens ein Paar in beiden Standards nebeneinander formuliert?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob der gewählte Standard (Schweizer oder bundesdeutsch) zur institutionellen Zielgruppe passt. Schreiben Sie den Text nicht neu."
+}

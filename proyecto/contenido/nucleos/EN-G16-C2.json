@@ -1,0 +1,51 @@
+{
+ "skillId": "EN-G16", "nivel": "C2", "idioma": "en",
+ "titulo": "Inversion, Cleft and Emphatic Structures",
+ "categoria": "grammar",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 you deploy the rarer inversion patterns — Only when, Little did I know, Not only… but also — and combine them with cleft sentences for a sustained argumentative or literary effect across several sentences, not just one.",
+ "cuadroReferencia": {
+  "titulo": "Rarer inversion patterns",
+  "columnas": ["Pattern", "Example", "Effect"],
+  "filas": [
+   ["Only when + inversion", "Only when the results came in did the flaw become clear.", "delays and emphasises the trigger"],
+   ["Little did + subject", "Little did we know what awaited us.", "dramatic irony, retrospective"],
+   ["Not only… but also, inverted", "Not only did she finish early, but she also won.", "compounds two facts with force"]
+  ],
+  "notaPie": "These patterns are markers of a literary or highly rhetorical register — using more than one per paragraph in ordinary prose reads as overwrought."
+ },
+ "ejemplos": [
+  {"texto": "Only when the results came in did the flaw become clear.", "audio": true},
+  {"texto": "Little did we know what awaited us on the other side.", "audio": true},
+  {"texto": "Not only did she finish early, but she also won first prize."}
+ ],
+ "notas": [
+  "Little did + subject is almost always followed by know, expect, or realise, and signals dramatic irony about a past the reader already understands.",
+  "Not only requires do-support in the inverted clause: not only did she finish, not not only she finished.",
+  "These are markers of written, often literary or highly rhetorical register — restraint matters more than range here."
+ ],
+ "contraste": {
+  "es": "El español logra un efecto retórico parecido mediante el orden libre de palabras y partículas enfáticas (fue precisamente entonces cuando...), sin depender de una inversión gramatical obligatoria. Por eso a un hispanohablante avanzado le cuesta recordar que la inversión inglesa es sintácticamente obligatoria, no opcional para dar énfasis."
+ },
+ "errores": [
+  "Omitting do-support after not only in the inverted clause.",
+  "Using more than one of these dramatic patterns per paragraph, which reads as overwrought rather than emphatic.",
+  "Using little did in a context that isn't retrospective irony."
+ ],
+ "redemittel": [
+  {"expresion": "Only when…did…", "funcion": "delayed trigger, dramatic", "traducciones": {"es": "solo cuando…"}},
+  {"expresion": "Little did…know…", "funcion": "dramatic irony, retrospective", "traducciones": {"es": "poco se imaginaba…"}},
+  {"expresion": "Not only…but also…", "funcion": "compounds two facts", "traducciones": {"es": "no solo…sino que además…"}},
+  {"expresion": "Rarely, if ever, has…", "funcion": "extreme rarity, formal", "traducciones": {"es": "raras veces, si acaso, ha…"}},
+  {"expresion": "Never before had…", "funcion": "unprecedented event", "traducciones": {"es": "nunca antes había…"}},
+  {"expresion": "So + adjective + was/were…that…", "funcion": "inverted degree with result", "traducciones": {"es": "tan…que…"}}
+ ],
+ "autochequeo": [
+  "Is do-support present after not only in the inverted clause?",
+  "Is little did followed by know, expect or realise, signalling retrospective irony?",
+  "Is at most one of these dramatic patterns used per paragraph?",
+  "Does the content genuinely justify this level of rhetorical weight?",
+  "Would a native reader sense control rather than strain?"
+ ],
+ "promptCorreccion": "Focus only on the rarer inversion and emphatic structures. Check do-support after not only, and flag any paragraph stacking more than one dramatic pattern. Do not rewrite the text."
+}

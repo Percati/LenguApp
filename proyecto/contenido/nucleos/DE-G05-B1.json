@@ -1,0 +1,124 @@
+{
+ "skillId": "DE-G05",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Modalverben",
+ "categoria": "grammar",
+ "ancla": "PD A2",
+ "descripcion": "Auf B1 werden die sechs Modalverben (können, müssen, wollen, sollen, dürfen, mögen) in ihrer Grundbedeutung sicher benutzt: Fähigkeit, Pflicht, Wunsch, Empfehlung, Erlaubnis. Der subjektive Gebrauch (Vermutung, Fremdbehauptung) kommt erst später dazu.",
+ "cuadroReferencia": {
+  "titulo": "Die sechs Modalverben",
+  "columnas": [
+   "Verb",
+   "Bedeutung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "können",
+    "Fähigkeit/Möglichkeit",
+    "Ich kann gut kochen."
+   ],
+   [
+    "müssen",
+    "Pflicht",
+    "Ich muss morgen früh aufstehen."
+   ],
+   [
+    "dürfen",
+    "Erlaubnis",
+    "Darf ich das Fenster öffnen?"
+   ],
+   [
+    "sollen",
+    "Empfehlung/Auftrag",
+    "Du sollst mehr Wasser trinken."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich kann leider nicht so gut kochen wie meine Mutter.",
+   "audio": true
+  },
+  {
+   "texto": "Ich muss morgen sehr früh aufstehen.",
+   "audio": true
+  },
+  {
+   "texto": "Darf ich kurz das Fenster öffnen?"
+  }
+ ],
+ "notas": [
+  "Das Modalverb steht in Position 2, der Infinitiv am Satzende: ich kann gut Deutsch sprechen.",
+  "Nicht müssen bedeutet keine Pflicht, nicht dürfen bedeutet Verbot — ein wichtiger Bedeutungsunterschied.",
+  "Möchten ist die höfliche Form von wollen: ich möchte einen Kaffee ist höflicher als ich will einen Kaffee."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit poder, tener que, querer und deber ähnliche Modalverben, sodass sich die Grundbedeutungen leicht übertragen lassen. Der wichtigste Unterschied liegt bei nicht müssen: Spanischsprachige übersetzen es oft fälschlich als no deber statt no tener que."
+ },
+ "errores": [
+  "Nicht müssen mit Verbot statt mit keiner Pflicht verwechseln.",
+  "Das Modalverb konjugieren, aber den Infinitiv am Satzende vergessen.",
+  "Wollen statt möchten in einer höflichen Bitte verwenden."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich kann…",
+   "funcion": "Fähigkeit",
+   "traducciones": {
+    "es": "Puedo…",
+    "en": "I can…"
+   }
+  },
+  {
+   "expresion": "Ich muss…",
+   "funcion": "Pflicht",
+   "traducciones": {
+    "es": "Tengo que…",
+    "en": "I have to…"
+   }
+  },
+  {
+   "expresion": "Darf ich…?",
+   "funcion": "Erlaubnis erfragen",
+   "traducciones": {
+    "es": "¿Puedo…?",
+    "en": "May I…?"
+   }
+  },
+  {
+   "expresion": "Ich möchte…",
+   "funcion": "höflicher Wunsch",
+   "traducciones": {
+    "es": "Quisiera…",
+    "en": "I'd like…"
+   }
+  },
+  {
+   "expresion": "Du sollst…",
+   "funcion": "Empfehlung/Auftrag",
+   "traducciones": {
+    "es": "Deberías…",
+    "en": "You should…"
+   }
+  },
+  {
+   "expresion": "Ich muss nicht…",
+   "funcion": "keine Pflicht",
+   "traducciones": {
+    "es": "No tengo que…",
+    "en": "I don't have to…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht der Infinitiv am Satzende?",
+  "Ist nicht müssen richtig als keine Pflicht verwendet, nicht als Verbot?",
+  "Habe ich möchte statt wollen in einer höflichen Bitte benutzt?",
+  "Habe ich mindestens vier verschiedene Modalverben benutzt?",
+  "Klingt die Bitte höflich, nicht zu direkt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalverben in ihrer Grundbedeutung. Prüfen Sie die Satzstellung und den Unterschied zwischen nicht müssen und nicht dürfen. Schreiben Sie den Text nicht neu."
+}

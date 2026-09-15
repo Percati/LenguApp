@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-V07",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Discourse Markers and Linking",
+ "categoria": "vocabulary",
+ "ancla": "EGP A2/B1",
+ "descripcion": "At B1 you connect ideas with simple markers: and, but, so, because. These are the basic building blocks that later grow into the fuller set used at B2 and C1, where register and nuance start to matter.",
+ "cuadroReferencia": {
+  "titulo": "Basic connectors",
+  "columnas": [
+   "Function",
+   "Word"
+  ],
+  "filas": [
+   [
+    "Adding",
+    "and, also"
+   ],
+   [
+    "Contrasting",
+    "but"
+   ],
+   [
+    "Reason",
+    "because"
+   ],
+   [
+    "Result",
+    "so"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I like the city, but it's very noisy.",
+   "audio": true
+  },
+  {
+   "texto": "I was tired, so I went to bed early.",
+   "audio": true
+  },
+  {
+   "texto": "I stayed home because it was raining."
+  }
+ ],
+ "notas": [
+  "So gives the result, because gives the reason — these are opposite and often confused.",
+  "Also can start a sentence, but it's a bit more formal than and.",
+  "Using too many connectors in a row makes a sentence hard to follow."
+ ],
+ "contraste": {
+  "es": "El español conecta ideas de forma parecida con y, pero, porque, así que, así que estos conectores básicos se transfieren directamente."
+ },
+ "errores": [
+  "Confusing so and because.",
+  "Using and repeatedly instead of a more precise connector.",
+  "Stacking too many connectors in one sentence."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…and…",
+   "funcion": "adding",
+   "traducciones": {
+    "es": "…y…"
+   }
+  },
+  {
+   "expresion": "…but…",
+   "funcion": "contrast",
+   "traducciones": {
+    "es": "…pero…"
+   }
+  },
+  {
+   "expresion": "…because…",
+   "funcion": "reason",
+   "traducciones": {
+    "es": "…porque…"
+   }
+  },
+  {
+   "expresion": "…so…",
+   "funcion": "result",
+   "traducciones": {
+    "es": "…así que…"
+   }
+  },
+  {
+   "expresion": "Also,…",
+   "funcion": "adding, sentence start",
+   "traducciones": {
+    "es": "Además,…"
+   }
+  },
+  {
+   "expresion": "That's why…",
+   "funcion": "result, alternative",
+   "traducciones": {
+    "es": "Por eso…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I used so for result and because for reason correctly?",
+  "Have I used at least three different connectors?",
+  "Is any sentence overloaded with too many connectors?",
+  "Does the paragraph flow naturally?",
+  "Does the paragraph flow naturally?"
+ ],
+ "promptCorreccion": "Focus only on basic discourse markers. Check the difference between so and because, and flag any sentence overloaded with too many connectors. Do not rewrite the text."
+}

@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-G01",
+ "nivel": "A2",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Satzbau: Haupt- und Nebensatz, Verbstellung",
+ "categoria": "grammar",
+ "ancla": "PD A2",
+ "descripcion": "Auf A2 lernt man die Grundregel: im Hauptsatz steht das Verb an zweiter Stelle, im Nebensatz mit weil steht es am Ende. Das ist der wichtigste erste Schritt für den deutschen Satzbau und die Grundlage für alle späteren Konnektoren.",
+ "cuadroReferencia": {
+  "titulo": "Verb an Position 2 oder am Ende",
+  "columnas": [
+   "Satztyp",
+   "Verbposition",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Hauptsatz",
+    "Position 2",
+    "Ich wohne in Bern."
+   ],
+   [
+    "Nebensatz mit weil",
+    "am Ende",
+    "…, weil ich hier arbeite."
+   ],
+   [
+    "Frage",
+    "Wohnst du in Bern?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich wohne seit zwei Jahren in Bern.",
+   "audio": true
+  },
+  {
+   "texto": "Ich lerne Deutsch, weil ich hier arbeite.",
+   "audio": true
+  },
+  {
+   "texto": "Heute gehe ich einkaufen."
+  }
+ ],
+ "notas": [
+  "Im Hauptsatz steht das konjugierte Verb immer an zweiter Stelle, auch wenn ein anderes Wort zuerst kommt (heute gehe ich).",
+  "Nach weil steht das Verb am Ende des Satzes.",
+  "Vor weil steht immer ein Komma."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine feste Verbposition und keine Verbletztstellung nach porque. Diese deutsche Regel ist deshalb für Spanischsprachige völlig neu."
+ },
+ "errores": [
+  "Das Verb nicht an zweiter Stelle im Hauptsatz platzieren.",
+  "Nach weil das Verb nicht ans Ende stellen.",
+  "Das Komma vor weil vergessen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich wohne in…",
+   "funcion": "Hauptsatz, Verb Position 2",
+   "traducciones": {
+    "es": "Vivo en…",
+    "en": "I live in…"
+   }
+  },
+  {
+   "expresion": "Heute…ich…",
+   "funcion": "Hauptsatz mit Zeitangabe zuerst",
+   "traducciones": {
+    "es": "Hoy yo…",
+    "en": "Today I…"
+   }
+  },
+  {
+   "expresion": "…, weil…",
+   "funcion": "Grund, Nebensatz",
+   "traducciones": {
+    "es": "…, porque…",
+    "en": "…, because…"
+   }
+  },
+  {
+   "expresion": "Ich lerne Deutsch, weil…",
+   "funcion": "feste Kombination",
+   "traducciones": {
+    "es": "Aprendo alemán porque…",
+    "en": "I'm learning German because…"
+   }
+  },
+  {
+   "expresion": "Ich arbeite in…",
+   "funcion": "Hauptsatz",
+   "traducciones": {
+    "es": "Trabajo en…",
+    "en": "I work in…"
+   }
+  },
+  {
+   "expresion": "Jeden Tag…ich…",
+   "funcion": "Hauptsatz mit Zeitangabe zuerst",
+   "traducciones": {
+    "es": "Todos los días yo…",
+    "en": "Every day I…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht das Verb im Hauptsatz an zweiter Stelle?",
+  "Steht das Verb nach weil am Ende?",
+  "Steht vor weil ein Komma?",
+  "Klingt der Satz natürlich?",
+  "Habe ich mindestens drei Sätze mit unterschiedlicher Struktur gebildet?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verbposition im Hauptsatz und nach weil. Prüfen Sie jeden Satz einzeln. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-F02",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Agreeing and Disagreeing",
+ "categoria": "fluency",
+ "ancla": "CV Formal discussion (meetings)",
+ "descripcion": "At B2 the goal is to disagree politely without attacking the other person's statement directly — the finer grading between partial agreement and clear disagreement (C1) isn't the target yet. Choosing confidently between yes, but and I see it differently is enough.",
+ "cuadroReferencia": {
+  "titulo": "Agreement and disagreement",
+  "columnas": [
+   "Function",
+   "Phrase"
+  ],
+  "filas": [
+   [
+    "Agreement",
+    "I agree with you on that."
+   ],
+   [
+    "Partial agreement",
+    "Yes, but…"
+   ],
+   [
+    "Polite disagreement",
+    "I see it a bit differently."
+   ],
+   [
+    "Clear disagreement",
+    "I don't really agree with that."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I completely agree with you on that.",
+   "audio": true
+  },
+  {
+   "texto": "Yes, that's true, but I think there's still a problem.",
+   "audio": true
+  },
+  {
+   "texto": "I see it a bit differently, to be honest."
+  }
+ ],
+ "notas": [
+  "Yes, but is the most common and useful phrase for agreeing while still adding a limit.",
+  "I see it a bit differently is more polite than I don't agree and works well for a first disagreement.",
+  "Agreeing with emphasis first shows you're listening, even if you plan to disagree afterwards."
+ ],
+ "contraste": {
+  "es": "En español, el desacuerdo directo (no estoy de acuerdo) es socialmente más aceptado que en inglés. Los hispanohablantes tienden a discrepar de forma más directa de lo esperado en inglés y a omitir la fórmula introductoria yes, but."
+ },
+ "errores": [
+  "Disagreeing directly without acknowledging anything first.",
+  "Starting with yes but forgetting the but, leaving the disagreement unclear.",
+  "Using the same phrase every time, regardless of the degree of agreement."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I agree with you on that.",
+   "funcion": "agreement",
+   "traducciones": {
+    "es": "Estoy de acuerdo con eso.",
+    "de": "Da stimme ich dir zu.",
+    "fr": "Là-dessus, je suis d’accord avec toi.",
+    "it": "Su questo sono d’accordo con te.",
+    "pt": "Nisso concordo contigo."
+   }
+  },
+  {
+   "expresion": "Yes, but…",
+   "funcion": "partial agreement",
+   "traducciones": {
+    "es": "Sí, pero…",
+    "de": "Ja, aber…",
+    "fr": "Oui, mais…",
+    "it": "Sì, ma…",
+    "pt": "Sim, mas…"
+   }
+  },
+  {
+   "expresion": "I see it a bit differently.",
+   "funcion": "polite disagreement",
+   "traducciones": {
+    "es": "Yo lo veo un poco distinto.",
+    "de": "Ich sehe das etwas anders.",
+    "fr": "Je vois les choses un peu différemment.",
+    "it": "Io la vedo un po’ diversamente.",
+    "pt": "Eu vejo isso de forma um pouco diferente."
+   }
+  },
+  {
+   "expresion": "I don't really agree with that.",
+   "funcion": "clear disagreement",
+   "traducciones": {
+    "es": "No estoy muy de acuerdo con eso.",
+    "de": "Damit bin ich nicht wirklich einverstanden.",
+    "fr": "Je ne suis pas vraiment d’accord avec ça.",
+    "it": "Non sono molto d’accordo su questo.",
+    "pt": "Não concordo muito com isso."
+   }
+  },
+  {
+   "expresion": "That's a fair point, but…",
+   "funcion": "acknowledges then qualifies",
+   "traducciones": {
+    "es": "Es un buen punto, pero…",
+    "de": "Das ist ein berechtigter Punkt, aber…",
+    "fr": "C’est un argument valable, mais…",
+    "it": "È un’osservazione valida, ma…",
+    "pt": "É um ponto válido, mas…"
+   }
+  },
+  {
+   "expresion": "Exactly, that's how I see it too.",
+   "funcion": "strong agreement",
+   "traducciones": {
+    "es": "Exacto, así lo veo yo también.",
+    "de": "Genau, so sehe ich das auch.",
+    "fr": "Exactement, c’est aussi comme ça que je le vois.",
+    "it": "Esatto, anch’io la vedo così.",
+    "pt": "Exatamente, eu também vejo assim."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I acknowledged the other view before disagreeing?",
+  "Is the but clearly present after yes?",
+  "Does the phrase match the degree of my agreement or disagreement?",
+  "Does the disagreement sound polite, not blunt?",
+  "Have I used at least two different phrases, not always the same one?"
+ ],
+ "promptCorreccion": "Focus only on agreeing and disagreeing. Check whether the right phrase was chosen and whether the disagreement sounds polite. Do not rewrite the text."
+}

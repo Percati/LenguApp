@@ -1,0 +1,136 @@
+{
+ "skillId": "DE-F13",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Register: du/Sie, formell/informell",
+ "categoria": "fluency",
+ "ancla": "PD B2",
+ "descripcion": "Auf B2 wählt man sicher zwischen du und Sie und passt die Wortwahl entsprechend an. Die feineren sechs Achsen des Registers (C1) sind hier noch nicht das Ziel — es reicht, konsequent bei einer Anrede zu bleiben und die passende Grussformel zu wählen.",
+ "cuadroReferencia": {
+  "titulo": "Du oder Sie, konsequent",
+  "columnas": [
+   "Kontext",
+   "Anrede",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "E-Mail an eine Behörde",
+    "Sie",
+    "Sehr geehrte Damen und Herren,"
+   ],
+   [
+    "Nachricht an eine Freundin",
+    "du",
+    "Hey, wie geht's dir?"
+   ],
+   [
+    "E-Mail an eine Kollegin, per du",
+    "du",
+    "Hallo Anna, kannst du mir helfen?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Sehr geehrte Damen und Herren, ich schreibe Ihnen bezüglich…",
+   "audio": true
+  },
+  {
+   "texto": "Hey, wie geht's dir? Hast du kurz Zeit?",
+   "audio": true
+  },
+  {
+   "texto": "Hallo Anna, könntest du mir bitte helfen?"
+  }
+ ],
+ "notas": [
+  "Sie und du dürfen innerhalb eines Textes nicht gemischt werden — das ist der häufigste Registerfehler.",
+  "Sehr geehrte Damen und Herren ist die neutrale Anrede, wenn man den Namen des Empfängers nicht kennt.",
+  "Bei Unsicherheit ist Sie die sicherere Wahl in einer ersten Nachricht an eine unbekannte Person."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit tú und usted eine ähnliche Unterscheidung, sodass das Konzept bekannt ist. Die Regeln, wann man wechselt, sind aber unterschiedlich: im Deutschen bleibt man am Arbeitsplatz oft länger bei Sie, als es im Spanischen für usted üblich wäre."
+ },
+ "errores": [
+  "Du und Sie in derselben E-Mail mischen.",
+  "Sie mit einer informellen Grussformel wie Hey kombinieren.",
+  "Bei einer unbekannten Person direkt du verwenden, ohne dass es angeboten wurde."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Sehr geehrte Damen und Herren,",
+   "funcion": "formelle Anrede, unbekannter Empfänger",
+   "traducciones": {
+    "es": "Estimados señores y señoras,",
+    "en": "Dear Sir or Madam,",
+    "fr": "Madame, Monsieur,",
+    "it": "Gentili Signore e Signori,",
+    "pt": "Exmos. Senhores,"
+   }
+  },
+  {
+   "expresion": "Hallo [Name],",
+   "funcion": "neutrale Anrede, per du",
+   "traducciones": {
+    "es": "Hola [Nombre],",
+    "en": "Hi [Name],",
+    "fr": "Salut [Nom],",
+    "it": "Ciao [Nome],",
+    "pt": "Olá [Nome],"
+   }
+  },
+  {
+   "expresion": "Mit freundlichen Grüßen",
+   "funcion": "formeller Abschluss",
+   "traducciones": {
+    "es": "Atentamente,",
+    "en": "Kind regards,",
+    "fr": "Cordialement,",
+    "it": "Cordiali saluti,",
+    "pt": "Com os melhores cumprimentos,"
+   }
+  },
+  {
+   "expresion": "Liebe Grüße",
+   "funcion": "informeller Abschluss",
+   "traducciones": {
+    "es": "Saludos,",
+    "en": "Best,",
+    "fr": "Bien à toi,",
+    "it": "Un caro saluto,",
+    "pt": "Um abraço,"
+   }
+  },
+  {
+   "expresion": "Ich schreibe Ihnen bezüglich…",
+   "funcion": "formeller Einstieg",
+   "traducciones": {
+    "es": "Le escribo con respecto a…",
+    "en": "I am writing to you regarding…",
+    "fr": "Je vous écris au sujet de…",
+    "it": "Le scrivo in merito a…",
+    "pt": "Escrevo-lhe a respeito de…"
+   }
+  },
+  {
+   "expresion": "Hey, wie geht's?",
+   "funcion": "informeller Einstieg",
+   "traducciones": {
+    "es": "Hola, ¿cómo andás?",
+    "en": "Hey, how's it going?",
+    "fr": "Salut, ça va ?",
+    "it": "Ehi, come va?",
+    "pt": "Olá, como estás?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist die Anrede (du oder Sie) im ganzen Text konsequent?",
+  "Passt die Grussformel zur gewählten Anrede?",
+  "Ist Sie bei einer unbekannten Person die sichere Wahl?",
+  "Klingt die Wortwahl zum gewählten Register passend?",
+  "Habe ich mindestens eine formelle und eine informelle Version verglichen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz von du/Sie und die passende Grussformel. Prüfen Sie, ob Anrede und Wortwahl im ganzen Text zusammenpassen. Schreiben Sie den Text nicht neu."
+}

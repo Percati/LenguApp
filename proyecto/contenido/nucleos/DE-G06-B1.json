@@ -1,0 +1,137 @@
+{
+ "skillId": "DE-G06",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Perfekt vs. Präteritum im Gespräch",
+ "categoria": "grammar",
+ "ancla": "PD A2/B1",
+ "descripcion": "Im gesprochenen Deutsch erzählt man fast immer im Perfekt, während sein und haben meist im Präteritum stehen. Diese Regel ist auf B1 der Kern der Vergangenheit im Alltag und unterscheidet sich deutlich vom geschriebenen Deutsch, wo das Präteritum häufiger vorkommt.",
+ "cuadroReferencia": {
+  "titulo": "Perfekt oder Präteritum?",
+  "columnas": [
+   "Verb",
+   "Im Gespräch üblich",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "die meisten Verben",
+    "Perfekt",
+    "Ich habe das Buch gelesen."
+   ],
+   [
+    "sein",
+    "Präteritum",
+    "Ich war gestern zu Hause."
+   ],
+   [
+    "haben",
+    "Präteritum",
+    "Ich hatte keine Zeit."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich habe gestern das ganze Buch gelesen.",
+   "audio": true
+  },
+  {
+   "texto": "Ich war letztes Jahr in Italien.",
+   "audio": true
+  },
+  {
+   "texto": "Wir hatten leider keine Zeit mehr dafür."
+  }
+ ],
+ "notas": [
+  "Sein und haben stehen im Gespräch fast immer im Präteritum, auch wenn der Rest der Geschichte im Perfekt erzählt wird.",
+  "Das Partizip II steht am Satzende: ich habe das Buch gestern gelesen, nicht ich habe gelesen das Buch gestern.",
+  "Im geschriebenen Deutsch, besonders in Zeitungstexten, ist das Präteritum auch bei anderen Verben häufiger."
+ ],
+ "contraste": {
+  "es": "Das Spanische unterscheidet pretérito perfecto und pretérito indefinido nach Zeitbezug (heute/dieses Jahr gegen abgeschlossene Vergangenheit), während das Deutsche im Gespräch fast immer das Perfekt bevorzugt, unabhängig vom Zeitpunkt. Diese unterschiedliche Logik führt dazu, dass Spanischsprachige im Deutschen manchmal das Präteritum verwenden, wo im Gespräch das Perfekt erwartet wird."
+ },
+ "errores": [
+  "Im Gespräch das Präteritum für normale Verben verwenden, wo das Perfekt erwartet wird.",
+  "Sein und haben im Perfekt bilden, statt das einfachere Präteritum zu benutzen.",
+  "Das Partizip II an der falschen Stelle im Satz platzieren."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich habe … gemacht.",
+   "funcion": "Perfekt, allgemein",
+   "traducciones": {
+    "es": "He hecho…",
+    "en": "I've done…",
+    "fr": "J’ai fait…",
+    "it": "Ho fatto…",
+    "pt": "Fiz…"
+   }
+  },
+  {
+   "expresion": "Ich war…",
+   "funcion": "Präteritum von sein",
+   "traducciones": {
+    "es": "Estuve…",
+    "en": "I was…",
+    "fr": "J’étais…",
+    "it": "Ero…",
+    "pt": "Eu estava…"
+   }
+  },
+  {
+   "expresion": "Ich hatte…",
+   "funcion": "Präteritum von haben",
+   "traducciones": {
+    "es": "Tenía…",
+    "en": "I had…",
+    "fr": "J’avais…",
+    "it": "Avevo…",
+    "pt": "Eu tinha…"
+   }
+  },
+  {
+   "expresion": "Hast du schon…?",
+   "funcion": "Perfekt-Frage",
+   "traducciones": {
+    "es": "¿Ya hiciste…?",
+    "en": "Have you already…?",
+    "fr": "Tu as déjà… ?",
+    "it": "Hai già…?",
+    "pt": "Já…?"
+   }
+  },
+  {
+   "expresion": "Letztes Jahr war ich…",
+   "funcion": "Zeitangabe mit war",
+   "traducciones": {
+    "es": "El año pasado estuve…",
+    "en": "Last year I was…",
+    "fr": "L’année dernière, j’étais…",
+    "it": "L’anno scorso ero…",
+    "pt": "No ano passado eu estava…"
+   }
+  },
+  {
+   "expresion": "Gestern habe ich…",
+   "funcion": "Zeitangabe mit Perfekt",
+   "traducciones": {
+    "es": "Ayer hice…",
+    "en": "Yesterday I…",
+    "fr": "TRADUCCION DE PRUEBA",
+    "it": "Ieri ho…",
+    "pt": "Ontem eu…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Stehen sein und haben im Präteritum, nicht im Perfekt?",
+  "Steht das Partizip II am Ende des Satzes?",
+  "Habe ich für die anderen Verben das Perfekt benutzt?",
+  "Klingt der Satz wie gesprochenes Deutsch?",
+  "Habe ich mindestens ein Verb korrekt im Perfekt UND eines im Präteritum benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Perfekt und Präteritum. Prüfen Sie, ob sein und haben im Präteritum stehen und ob das Partizip II am Satzende steht. Schreiben Sie den Text nicht neu."
+}

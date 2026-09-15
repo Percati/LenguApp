@@ -1,0 +1,114 @@
+{
+ "skillId": "DE-F02",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Zustimmen und widersprechen",
+ "categoria": "fluency",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird der Widerspruch präzise auf einer Ebene verortet: der Prämisse, der Logik oder der Schlussfolgerung. Diese Präzision unterscheidet den fachlichen Widerspruch vom allgemeinen Widerwillen. Diese Präzision ist es, die einen fachlichen Diskurs von einer blossen Meinungsverschiedenheit unterscheidet.",
+ "cuadroReferencia": {
+  "titulo": "Auf welcher Ebene der Widerspruch sitzt",
+  "columnas": [
+   "Ebene",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Prämisse",
+    "Da würde ich schon die Ausgangsannahme infrage stellen."
+   ],
+   [
+    "Logik",
+    "Diese Schlussfolgerung ergibt sich daraus meiner Ansicht nach nicht."
+   ],
+   [
+    "Nur die Schlussfolgerung",
+    "Die Argumentation überzeugt mich, aber nicht, wo sie endet."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Da würde ich schon die Ausgangsannahme infrage stellen, bevor wir weiterdiskutieren.",
+   "audio": true
+  },
+  {
+   "texto": "Diese Schlussfolgerung ergibt sich daraus meiner Ansicht nach nicht zwingend.",
+   "audio": true
+  },
+  {
+   "texto": "Die Argumentation überzeugt mich, aber nicht, wo sie am Ende landet."
+  }
+ ],
+ "notas": [
+  "Die Ebene des Widerspruchs zu benennen zeigt dem Gegenüber genau, worauf eine Antwort sich konzentrieren sollte.",
+  "Ergibt sich daraus nicht zwingend ist präziser als ein pauschales stimmt nicht — es kritisiert die Logik, nicht den Inhalt.",
+  "Ein Teilzugeständnis (die Argumentation überzeugt mich) vor dem eigentlichen Einwand wirkt fachlicher als ein sofortiger Widerspruch."
+ ],
+ "contraste": {
+  "es": "Das kultivierte Spanisch kann ebenfalls präzise widersprechen (no comparto la premisa), sodass die Bewegung übertragbar ist. Was oft fehlt, ist das genaue deutsche Vokabular für jede Ebene — Ausgangsannahme, ergibt sich zwingend — statt eines allgemeinen Widerspruchs."
+ },
+ "errores": [
+  "Pauschal widersprechen, obwohl der eigentliche Einwand nur eine Ebene betrifft.",
+  "Ergibt sich daraus nicht als vage Ablehnung statt als präzisen logischen Einwand verwenden.",
+  "Kein Teilzugeständnis machen, wodurch der Widerspruch total statt gezielt wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Da würde ich schon die Ausgangsannahme infrage stellen.",
+   "funcion": "Widerspruch auf Prämissenebene",
+   "traducciones": {
+    "es": "ahí cuestionaría la premisa de partida",
+    "en": "I'd question the starting premise there"
+   }
+  },
+  {
+   "expresion": "Das ergibt sich daraus nicht zwingend.",
+   "funcion": "Widerspruch auf Logikebene",
+   "traducciones": {
+    "es": "eso no se sigue necesariamente de ahí",
+    "en": "that doesn't necessarily follow from that"
+   }
+  },
+  {
+   "expresion": "Die Argumentation überzeugt mich, aber…",
+   "funcion": "Teilzugeständnis, dann Einwand",
+   "traducciones": {
+    "es": "el razonamiento me convence, pero…",
+    "en": "the reasoning convinces me, but…"
+   }
+  },
+  {
+   "expresion": "Das ist eine andere Frage als…",
+   "funcion": "isoliert den eigentlichen Streitpunkt",
+   "traducciones": {
+    "es": "eso es una cuestión aparte de…",
+    "en": "that's a separate question from…"
+   }
+  },
+  {
+   "expresion": "Wir gehen vielleicht einfach von unterschiedlichen Prämissen aus.",
+   "funcion": "rahmt als Prämissenunterschied",
+   "traducciones": {
+    "es": "quizás partimos de premisas distintas",
+    "en": "we may simply be starting from different premises"
+   }
+  },
+  {
+   "expresion": "Die Schlussfolgerung geht mir zu weit.",
+   "funcion": "Widerspruch auf Schlussfolgerungsebene",
+   "traducciones": {
+    "es": "la conclusión me parece excesiva",
+    "en": "the conclusion overreaches, in my view"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist die Ebene des Widerspruchs (Prämisse, Logik, Schlussfolgerung) klar benannt?",
+  "Gibt es ein präzises Teilzugeständnis vor dem Einwand?",
+  "Wüsste das Gegenüber genau, worauf es antworten sollte?",
+  "Wirkt der Widerspruch fachlich gezielt, nicht pauschal?",
+  "Würde ein Fachpublikum den Einwand als präzise, nicht vage empfinden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Ebene des Widerspruchs präzise benannt wird. Schreiben Sie den Text nicht neu. Prüfen Sie, ob ein Teilzugeständnis vorausgeht."
+}

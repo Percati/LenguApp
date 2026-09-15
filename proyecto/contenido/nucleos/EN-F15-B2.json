@@ -1,0 +1,176 @@
+{
+ "skillId": "EN-F15",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Managing a Conversation",
+ "categoria": "fluency",
+ "descripcion": "Most courses teach you to build sentences. Almost none teach you what to do when you are halfway through one and the word won't come. That gap is why people who know a lot of English still go quiet in conversation. The moves are few and they are learnable by heart.",
+ "cuadroReferencia": {
+  "titulo": "Four moves",
+  "columnas": [
+   "Move",
+   "What it does",
+   "Say"
+  ],
+  "filas": [
+   [
+    "Take the turn",
+    "get in without waiting for silence",
+    "*Can I say something?* / *Sorry, can I just add —*"
+   ],
+   [
+    "Hold the turn",
+    "keep it while you think",
+    "*Hold on, let me think.* / *What's the word… give me a second.*"
+   ],
+   [
+    "Repair",
+    "fix a sentence you've lost",
+    "*Sorry, let me say that again.* / *That's not what I meant.*"
+   ],
+   [
+    "Give the turn",
+    "hand it back on purpose",
+    "*What do you think?* / *Sorry, go on.*"
+   ]
+  ],
+  "notaPie": "*Filled pauses — *well*, *so*, *I mean*, *right* — keep the turn. Silence gives it away.*"
+ },
+ "ejemplos": [
+  {
+   "texto": "*Hold on, let me think how to say this.*",
+   "audio": true
+  },
+  {
+   "texto": "*Sorry, let me say that again — I meant the opposite.*",
+   "audio": true
+  },
+  {
+   "texto": "*What's the word… symptoms. That's it.*"
+  },
+  {
+   "texto": "*Can I say something?*",
+   "audio": true
+  },
+  {
+   "texto": "*What's the word… give me a second.*",
+   "audio": true
+  },
+  {
+   "texto": "*Sorry, could you say that again?*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Saying out loud that you are looking for a word is normal. Native speakers do it constantly.",
+  "Never apologise for your English mid-conversation. It moves the other person's attention onto your level instead of your point. Say *give me a second* instead.",
+  "Asking someone to repeat is a skill, not a failure: *Sorry, could you say that again?*"
+ ],
+ "contraste": {
+  "es": "Spanish conversation allows more overlap and more interruption, and silence is less uncomfortable. English compensates by making the taking of a turn explicit: where Spanish just starts talking, English announces first."
+ },
+ "errores": [
+  "*Sorry, my English is bad.* Never say this.",
+  "Going silent while thinking, which hands the turn to the other person.",
+  "Abandoning a sentence halfway instead of repairing it out loud.",
+  "Waiting for a clear gap that never comes."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Can I say something?",
+   "funcion": "takes the turn",
+   "traducciones": {
+    "es": "¿puedo decir algo?",
+    "de": "Kann ich etwas sagen?",
+    "fr": "Je peux dire quelque chose ?",
+    "it": "Posso dire una cosa?",
+    "pt": "Posso dizer uma coisa?"
+   }
+  },
+  {
+   "expresion": "Sorry, can I just add —",
+   "funcion": "adds without taking over",
+   "traducciones": {
+    "es": "perdón, solo quería agregar…",
+    "de": "Entschuldige, darf ich nur kurz ergänzen —",
+    "fr": "Désolé, je peux juste ajouter —",
+    "it": "Scusa, posso solo aggiungere —",
+    "pt": "Desculpa, posso só acrescentar —"
+   }
+  },
+  {
+   "expresion": "Hold on, let me think.",
+   "funcion": "holds the turn",
+   "traducciones": {
+    "es": "esperá, dejame pensar",
+    "de": "Moment, lass mich nachdenken.",
+    "fr": "Attends, laisse-moi réfléchir.",
+    "it": "Aspetta, fammi pensare.",
+    "pt": "Espera, deixa-me pensar."
+   }
+  },
+  {
+   "expresion": "What's the word…",
+   "funcion": "signals the search",
+   "traducciones": {
+    "es": "¿cómo se dice…?",
+    "de": "Wie heißt das Wort noch mal…",
+    "fr": "Comment dit-on déjà…",
+    "it": "Come si dice…",
+    "pt": "Como é que se diz…"
+   }
+  },
+  {
+   "expresion": "Let me say that again.",
+   "funcion": "repairs",
+   "traducciones": {
+    "es": "lo digo otra vez",
+    "de": "Ich sage das noch einmal.",
+    "fr": "Je vais le redire.",
+    "it": "Lo dico di nuovo.",
+    "pt": "Vou dizer isso outra vez."
+   }
+  },
+  {
+   "expresion": "That's not what I meant.",
+   "funcion": "corrects the impression",
+   "traducciones": {
+    "es": "no quise decir eso",
+    "de": "Das meinte ich nicht.",
+    "fr": "Ce n’est pas ce que je voulais dire.",
+    "it": "Non intendevo questo.",
+    "pt": "Não foi isso que eu quis dizer."
+   }
+  },
+  {
+   "expresion": "Sorry, could you say that again?",
+   "funcion": "asks for repetition",
+   "traducciones": {
+    "es": "¿me lo repetís?",
+    "de": "Entschuldigung, könntest du das wiederholen?",
+    "fr": "Désolé, tu peux répéter ?",
+    "it": "Scusa, potresti ripetere?",
+    "pt": "Desculpa, podes repetir?"
+   }
+  },
+  {
+   "expresion": "What do you think?",
+   "funcion": "hands the turn back",
+   "traducciones": {
+    "es": "¿vos qué pensás?",
+    "de": "Was denkst du?",
+    "fr": "Qu’en penses-tu ?",
+    "it": "Che ne pensi?",
+    "pt": "O que achas?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Did I take the turn with words, or wait for a gap?",
+  "Did I stay silent while thinking?",
+  "Did I repair out loud, or give up on the sentence?",
+  "Did I apologise for my English?",
+  "Did I hand the turn back at least twice?"
+ ],
+ "promptCorreccion": "Focus only on how I manage the conversation. (1) Mark every move: taking, holding, repairing, giving the turn. (2) Flag where I gave up on a sentence instead of repairing it. (3) Flag any apology for my English. (4) Give me three more phrases for buying time. Do not correct anything else."
+}

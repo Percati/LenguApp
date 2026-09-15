@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-F12",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Sich beschweren und reklamieren",
+ "categoria": "fluency",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B1 formuliert man eine einfache Beschwerde: was ist das Problem, und was möchte man dagegen tun. Die feinere Abstufung nach Höflichkeit kommt später — hier reicht eine klare, höfliche Beschwerde mit einer konkreten Bitte am Ende.",
+ "cuadroReferencia": {
+  "titulo": "Eine einfache Beschwerde",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Problem nennen",
+    "Die Heizung funktioniert seit gestern nicht."
+   ],
+   [
+    "Bitte formulieren",
+    "Könnten Sie das bitte reparieren?"
+   ],
+   [
+    "Nachfrage",
+    "Wann können Sie das reparieren?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die Heizung funktioniert seit gestern leider nicht.",
+   "audio": true
+  },
+  {
+   "texto": "Könnten Sie das bitte so schnell wie möglich reparieren?",
+   "audio": true
+  },
+  {
+   "texto": "Ich hätte gern eine Rückerstattung."
+  }
+ ],
+ "notas": [
+  "Leider signalisiert, dass es sich um ein Problem handelt, ohne aggressiv zu klingen.",
+  "Könnten Sie…? ist die höflichste einfache Bitte auf B1.",
+  "Ich hätte gern… eignet sich gut, um eine konkrete Lösung zu fordern."
+ ],
+ "contraste": {
+  "es": "Das Spanische formuliert Beschwerden oft direkter (esto no funciona), während das Deutsche schon auf B1 eine gewisse Höflichkeit erwartet, meist mit könnten Sie oder leider."
+ },
+ "errores": [
+  "Das Problem ohne jede Höflichkeitsform nennen.",
+  "Keine konkrete Bitte formulieren, nur das Problem beschreiben.",
+  "Zu aggressiv klingen, ohne leider oder eine ähnliche Abschwächung."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…funktioniert leider nicht.",
+   "funcion": "Problem nennen",
+   "traducciones": {
+    "es": "…lamentablemente no funciona.",
+    "en": "…unfortunately isn't working."
+   }
+  },
+  {
+   "expresion": "Könnten Sie bitte…?",
+   "funcion": "höfliche Bitte",
+   "traducciones": {
+    "es": "¿Podría usted…?",
+    "en": "Could you please…?"
+   }
+  },
+  {
+   "expresion": "Ich hätte gern…",
+   "funcion": "konkrete Lösung fordern",
+   "traducciones": {
+    "es": "Quisiera…",
+    "en": "I'd like…"
+   }
+  },
+  {
+   "expresion": "Das ist schon das zweite Mal.",
+   "funcion": "wiederholtes Problem",
+   "traducciones": {
+    "es": "Ya es la segunda vez.",
+    "en": "This is already the second time."
+   }
+  },
+  {
+   "expresion": "Wann können Sie das reparieren?",
+   "funcion": "konkrete Frage",
+   "traducciones": {
+    "es": "¿Cuándo pueden arreglarlo?",
+    "en": "When can you fix this?"
+   }
+  },
+  {
+   "expresion": "Vielen Dank für Ihr Verständnis.",
+   "funcion": "höflicher Abschluss",
+   "traducciones": {
+    "es": "Gracias por su comprensión.",
+    "en": "Thank you for your understanding."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist das Problem klar genannt?",
+  "Habe ich eine höfliche Bitte formuliert?",
+  "Klingt die Beschwerde höflich, nicht aggressiv?",
+  "Habe ich eine konkrete Frage oder Forderung gestellt?",
+  "Habe ich mich am Ende höflich bedankt oder verabschiedet?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Problem und Bitte in der Beschwerde. Prüfen Sie, ob der Ton höflich bleibt. Schreiben Sie den Text nicht neu."
+}

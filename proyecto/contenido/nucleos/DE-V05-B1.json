@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-V05",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Modalpartikeln (*doch, mal, ja, eben, halt, wohl*)",
+ "categoria": "vocabulary",
+ "ancla": "PD B1",
+ "descripcion": "Auf B1 werden die zwei nützlichsten Modalpartikeln eingeführt: doch und mal. Ohne sie klingt ein deutscher Satz oft unhöflich schroff, auch wenn er grammatisch korrekt ist — sie sind kein Extra, sondern gehören zum natürlichen Ton dazu.",
+ "cuadroReferencia": {
+  "titulo": "Doch und mal",
+  "columnas": [
+   "Partikel",
+   "Funktion",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "doch",
+    "macht eine Bitte freundlicher",
+    "Komm doch mit!"
+   ],
+   [
+    "mal",
+    "macht eine Aufforderung beiläufig",
+    "Schau mal!"
+   ],
+   [
+    "kombiniert",
+    "Komm doch mal vorbei."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Komm doch heute Abend mit uns essen!",
+   "audio": true
+  },
+  {
+   "texto": "Schau mal, was ich hier gefunden habe.",
+   "audio": true
+  },
+  {
+   "texto": "Setz dich doch mal kurz hin."
+  }
+ ],
+ "notas": [
+  "Ohne doch klingt Komm mit! wie ein Befehl; mit doch klingt es wie eine freundliche Einladung.",
+  "Mal macht eine Aufforderung beiläufiger und weniger streng.",
+  "Doch und mal können im selben Satz kombiniert werden: komm doch mal vorbei."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine direkte Entsprechung für doch oder mal. Ähnliche Wirkung erzielt man im Spanischen eher mit der Intonation oder mit Zusatzwörtern wie venga oder anda."
+ },
+ "errores": [
+  "Doch und mal ganz weglassen und dadurch schroffer klingen als beabsichtigt.",
+  "Doch mit dem Widerspruchssinn (doch, das stimmt) verwechseln.",
+  "Zu viele Partikeln in einem Satz häufen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Komm doch mit!",
+   "funcion": "freundliche Einladung",
+   "traducciones": {
+    "es": "¡Vení con nosotros!",
+    "en": "Come along, why don't you!"
+   }
+  },
+  {
+   "expresion": "Schau mal!",
+   "funcion": "beiläufige Aufforderung",
+   "traducciones": {
+    "es": "¡Mirá!",
+    "en": "Look!"
+   }
+  },
+  {
+   "expresion": "Setz dich doch.",
+   "funcion": "freundliche Aufforderung",
+   "traducciones": {
+    "es": "Sentate, dale.",
+    "en": "Sit down, go on."
+   }
+  },
+  {
+   "expresion": "Frag doch mal nach.",
+   "funcion": "kombinierte Partikeln",
+   "traducciones": {
+    "es": "Preguntá, dale.",
+    "en": "Just go ahead and ask."
+   }
+  },
+  {
+   "expresion": "Warte mal.",
+   "funcion": "beiläufige Bitte",
+   "traducciones": {
+    "es": "Esperá un poco.",
+    "en": "Wait a sec."
+   }
+  },
+  {
+   "expresion": "Komm doch rein!",
+   "funcion": "freundliche Einladung",
+   "traducciones": {
+    "es": "¡Entrá, dale!",
+    "en": "Come on in!"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich doch oder mal in einer Aufforderung benutzt?",
+  "Klingt der Satz freundlicher als ohne Partikel?",
+  "Habe ich nicht zu viele Partikeln in einem Satz gehäuft?",
+  "Klingt der Text natürlich?",
+  "Habe ich das Vokabular des Themas eingesetzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalpartikeln doch und mal. Prüfen Sie, ob sie den Ton freundlicher machen. Schreiben Sie den Text nicht neu."
+}

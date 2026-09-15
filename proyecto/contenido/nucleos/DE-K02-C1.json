@@ -1,0 +1,154 @@
+{
+ "skillId": "DE-K02",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Passiv + Partizip I und II als Attribut",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Das erweiterte Partizipialattribut mit zu (die zu erwartenden Auswirkungen) ist strukturell ein verstecktes Passiv mit Modalbedeutung: es bedeutet, was erwartet werden muss. Wer Passiv und Partizipialattribute getrennt gelernt hat, erkennt diesen Zusammenhang oft nicht und vermeidet die Konstruktion ganz — dabei ist sie der Kern des deutschen Berichts- und Verwaltungsstils.",
+ "cuadroReferencia": {
+  "titulo": "Vom Nebensatz zum Attribut",
+  "columnas": [
+   "Nebensatz",
+   "Attribut",
+   "Bedeutung"
+  ],
+  "filas": [
+   [
+    "die Folgen, die zu erwarten sind",
+    "die zu erwartenden Folgen",
+    "Notwendigkeit/Möglichkeit, passivisch"
+   ],
+   [
+    "das Verfahren, das anzuwenden ist",
+    "das anzuwendende Verfahren",
+    "Vorschrift, passivisch"
+   ],
+   [
+    "die Kosten, die gesenkt werden müssen",
+    "die zu senkenden Kosten",
+    "Pflicht, passivisch"
+   ],
+   [
+    "der Bericht, der veröffentlicht wurde",
+    "der veröffentlichte Bericht",
+    "abgeschlossenes Passiv, Partizip II"
+   ]
+  ],
+  "notaPie": "Zu erwartende = muss erwartet werden. Das zu + Partizip I trägt IMMER eine Modalbedeutung, nie eine reine Beschreibung."
+ },
+ "ejemplos": [
+  {
+   "texto": "Die zu erwartenden Auswirkungen wurden im Bericht nicht erwähnt.",
+   "audio": true
+  },
+  {
+   "texto": "Das anzuwendende Verfahren richtet sich nach der jeweiligen Verordnung.",
+   "audio": true
+  },
+  {
+   "texto": "Die noch zu klärenden Fragen werden in der nächsten Sitzung besprochen."
+  },
+  {
+   "texto": "Der bereits genehmigte Antrag wird in Kürze bearbeitet."
+  }
+ ],
+ "notas": [
+  "Nur transitive Verben mit zu + Partizip I bilden diese Modalbedeutung; intransitive Verben (ankommen, geschehen) können das nicht.",
+  "Partizip II als Attribut (der veröffentlichte Bericht) ist einfaches Zustandspassiv, ohne Modalbedeutung — nicht verwechseln.",
+  "Diese Konstruktion ersetzt oft einen ganzen Relativsatz und ist deshalb ein Mittel zur Verdichtung, nicht nur eine Stilfrage."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine direkte Entsprechung für das Modalpartizip mit zu: die zu erwartenden Folgen muss mit einem ganzen Relativsatz umschrieben werden (las consecuencias que cabe esperar). Spanischsprachige lassen die Konstruktion deshalb meist ganz weg und bauen den Relativsatz aus, was länger und weniger formell klingt.",
+  "en": "English has no equivalent either, but gets close with a gerund or a modal passive: the expected consequences, or more precisely the consequences that are to be expected. English speakers tend to translate literally with a relative clause and miss the compact attributive form, which is the actual C1 marker here."
+ },
+ "errores": [
+  "Zu + Partizip I mit einem intransitiven Verb bilden, wo es grammatisch nicht möglich ist.",
+  "Partizip I ohne zu verwenden und dabei die Modalbedeutung verlieren: die erwartenden Folgen statt die zu erwartenden Folgen.",
+  "Die Konstruktion systematisch vermeiden und stattdessen immer den Relativsatz ausschreiben."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Den Relativsatz komplett ausbauen, weil im Spanischen keine kompakte Form existiert: las consecuencias que hay que esperar wörtlich übertragen."
+  ],
+  "en": [
+   "Die Konstruktion als Gerundium missverstehen und ein reines Partizip I ohne zu bilden, parallel zum englischen expected consequences."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "die zu erwartenden Auswirkungen",
+   "funcion": "feste Wendung, Berichte",
+   "traducciones": {
+    "es": "las consecuencias previsibles",
+    "en": "the expected consequences",
+    "fr": "les conséquences attendues",
+    "it": "le conseguenze previste",
+    "pt": "as consequências previsíveis"
+   }
+  },
+  {
+   "expresion": "das anzuwendende Verfahren",
+   "funcion": "Verwaltungssprache",
+   "traducciones": {
+    "es": "el procedimiento a aplicar",
+    "en": "the procedure to be applied",
+    "fr": "la procédure à appliquer",
+    "it": "la procedura da applicare",
+    "pt": "o procedimento a aplicar"
+   }
+  },
+  {
+   "expresion": "die noch zu klärende Frage",
+   "funcion": "offener Punkt, formell",
+   "traducciones": {
+    "es": "la cuestión pendiente de aclarar",
+    "en": "the question still to be clarified",
+    "fr": "la question qui reste à clarifier",
+    "it": "la questione ancora da chiarire",
+    "pt": "a questão ainda por esclarecer"
+   }
+  },
+  {
+   "expresion": "der bereits genehmigte Antrag",
+   "funcion": "abgeschlossener Zustand",
+   "traducciones": {
+    "es": "la solicitud ya aprobada",
+    "en": "the already approved application",
+    "fr": "la demande déjà approuvée",
+    "it": "la domanda già approvata",
+    "pt": "o pedido já aprovado"
+   }
+  },
+  {
+   "expresion": "die zu berücksichtigenden Faktoren",
+   "funcion": "feste Wendung, Analyse",
+   "traducciones": {
+    "es": "los factores a tener en cuenta",
+    "en": "the factors to be taken into account",
+    "fr": "les facteurs à prendre en compte",
+    "it": "i fattori da tenere in considerazione",
+    "pt": "os fatores a ter em conta"
+   }
+  },
+  {
+   "expresion": "das zu lösende Problem",
+   "funcion": "Aufgabenstellung, formell",
+   "traducciones": {
+    "es": "el problema por resolver",
+    "en": "the problem to be solved",
+    "fr": "le problème à résoudre",
+    "it": "il problema da risolvere",
+    "pt": "o problema a resolver"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist das Verb transitiv, sodass zu + Partizip I überhaupt möglich ist?",
+  "Trägt die Konstruktion eine Modalbedeutung (muss/kann erwartet werden)?",
+  "Habe ich Partizip I und Partizip II richtig unterschieden?",
+  "Könnte ich einen Relativsatz durch diese kompaktere Form ersetzen?",
+  "Klingt der Satz nach Bericht oder Verwaltungstext, wie beabsichtigt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das erweiterte Partizipialattribut mit zu. (1) Prüfen Sie, ob das Verb transitiv ist. (2) Prüfen Sie, ob die Modalbedeutung erhalten bleibt. (3) Zeigen Sie mir zwei Relativsätze, die sich in diese Form umwandeln liessen. Schreiben Sie den Text nicht neu."
+}

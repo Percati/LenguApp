@@ -1,0 +1,124 @@
+{
+ "skillId": "DE-G08",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Verben mit festen Präpositionen + Präpositionaladverbien",
+ "categoria": "grammar",
+ "ancla": "PD B1",
+ "descripcion": "Auf B1 lernt man die häufigsten Verben mit fester Präposition (sich freuen auf, warten auf, denken an) und die Grundform des Pronominaladverbs (da(r)-), um auf eine Sache statt auf eine Person zu verweisen.",
+ "cuadroReferencia": {
+  "titulo": "Feste Präpositionen und ihr Pronominaladverb",
+  "columnas": [
+   "Verb",
+   "Präposition",
+   "Pronominaladverb"
+  ],
+  "filas": [
+   [
+    "sich freuen",
+    "auf + Akk.",
+    "darauf"
+   ],
+   [
+    "warten",
+    "auf + Akk.",
+    "darauf"
+   ],
+   [
+    "denken",
+    "an + Akk.",
+    "daran"
+   ],
+   [
+    "sich interessieren",
+    "für + Akk.",
+    "dafür"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich freue mich schon sehr auf die Ferien.",
+   "audio": true
+  },
+  {
+   "texto": "Ich warte seit einer Stunde auf den Bus.",
+   "audio": true
+  },
+  {
+   "texto": "Ich denke oft an meine Familie."
+  }
+ ],
+ "notas": [
+  "Bei Sachen (nicht Personen) verwendet man das Pronominaladverb da(r)- statt eines Pronomens: ich freue mich darauf, nicht ich freue mich auf es.",
+  "Bei Personen steht die Präposition normal: ich freue mich auf ihn.",
+  "Die Frage dazu bildet man mit wo(r)-: worauf freust du dich?"
+ ],
+ "contraste": {
+  "es": "Das Spanische hat feste Präpositionen (esperar a, pensar en), aber keine Pronominaladverbien. Alegrarse de que necesita keinen Platzhalter, das Deutsche schon — deshalb wird darauf oft vergessen."
+ },
+ "errores": [
+  "Die falsche Präposition zum Verb wählen.",
+  "Statt darauf ein normales Pronomen wie es benutzen.",
+  "Bei Personen fälschlich ein Pronominaladverb verwenden."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich freue mich auf…",
+   "funcion": "Vorfreude",
+   "traducciones": {
+    "es": "Tengo ganas de…",
+    "en": "I'm looking forward to…"
+   }
+  },
+  {
+   "expresion": "Ich warte auf…",
+   "funcion": "Warten",
+   "traducciones": {
+    "es": "Espero a/que…",
+    "en": "I'm waiting for…"
+   }
+  },
+  {
+   "expresion": "Ich denke an…",
+   "funcion": "Denken an etwas/jemanden",
+   "traducciones": {
+    "es": "Pienso en…",
+    "en": "I'm thinking of…"
+   }
+  },
+  {
+   "expresion": "Ich interessiere mich für…",
+   "funcion": "Interesse",
+   "traducciones": {
+    "es": "Me interesa…",
+    "en": "I'm interested in…"
+   }
+  },
+  {
+   "expresion": "Ich freue mich darauf.",
+   "funcion": "Pronominaladverb, Sache",
+   "traducciones": {
+    "es": "Tengo ganas de eso.",
+    "en": "I'm looking forward to it."
+   }
+  },
+  {
+   "expresion": "Worauf freust du dich?",
+   "funcion": "Frage mit wo(r)-",
+   "traducciones": {
+    "es": "¿Qué esperás con ganas?",
+    "en": "What are you looking forward to?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Stimmt die Präposition zum Verb?",
+  "Habe ich bei Sachen das Pronominaladverb benutzt, nicht ein normales Pronomen?",
+  "Habe ich mindestens drei verschiedene Verben mit fester Präposition benutzt?",
+  "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?",
+  "Habe ich das Vokabular des Themas korrekt eingesetzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Verben mit fester Präposition und das Pronominaladverb da(r)-. Prüfen Sie, ob bei Sachen das richtige Pronominaladverb verwendet wird. Schreiben Sie den Text nicht neu."
+}

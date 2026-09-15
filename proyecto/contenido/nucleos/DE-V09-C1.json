@@ -1,0 +1,141 @@
+{
+ "skillId": "DE-V09",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Feine Bedeutungsunterschiede und Konnotation",
+ "categoria": "vocabulary",
+ "ancla": "PD>B2",
+ "descripcion": "Viele scheinbare Synonyme im Deutschen tragen unterschiedliche Konnotationen, die ein Wörterbuch nicht zeigt: schlank gegen dünn, selbstbewusst gegen arrogant, sparsam gegen geizig. Die falsche Wahl verändert, wie wohlwollend eine Beschreibung wirkt, obwohl die wörtliche Bedeutung fast identisch bleibt.",
+ "cuadroReferencia": {
+  "titulo": "Gleiche Bedeutung, andere Konnotation",
+  "columnas": [
+   "Positiv",
+   "Neutral",
+   "Negativ"
+  ],
+  "filas": [
+   [
+    "schlank",
+    "dünn",
+    "mager"
+   ],
+   [
+    "selbstbewusst",
+    "sicher",
+    "arrogant"
+   ],
+   [
+    "sparsam",
+    "vorsichtig mit Geld",
+    "geizig"
+   ],
+   [
+    "neugierig",
+    "interessiert",
+    "aufdringlich"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Sie wirkt selbstbewusst, nicht arrogant — das ist ein feiner Unterschied.",
+   "audio": true
+  },
+  {
+   "texto": "Er ist eher sparsam als geizig, würde ich sagen.",
+   "audio": true
+  },
+  {
+   "texto": "Das ist eher Neugier als Aufdringlichkeit, finde ich."
+  }
+ ],
+ "notas": [
+  "Konnotation hängt oft von der Haltung des Sprechers ab: dasselbe Verhalten kann als selbstbewusst oder arrogant bezeichnet werden, je nachdem, wie wohlwollend die Person eingeschätzt wird.",
+  "Ein neutrales Wort durch ein konnotativ aufgeladenes zu ersetzen, ist eine subtile Art, die Sympathie des Lesers zu lenken, ohne eine Meinung direkt zu äussern.",
+  "Diese Paare lernt man am besten zusammen, im direkten Kontrast, nicht einzeln."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat ähnliche konnotative Paare (ahorrativo/tacaño, seguro/soberbio), sodass das Konzept bereits vertraut ist. Die Schwierigkeit liegt darin, dass die spezifischen Wörter nicht immer auf derselben Achse liegen wie ihre naheliegendste spanische Übersetzung."
+ },
+ "errores": [
+  "Ein negativ konnotiertes Wort wählen, wo ein neutrales oder positives gemeint war.",
+  "Nicht bemerken, dass eine vermeintlich neutrale Übersetzung im Deutschen ein stärkeres Urteil trägt.",
+  "In eine unnatürlich positive Wortwahl überkorrigieren, um jede negative Konnotation zu vermeiden."
+ ],
+ "redemittel": [
+  {
+   "expresion": "selbstbewusst, nicht arrogant",
+   "funcion": "unterscheidet positiv von negativ",
+   "traducciones": {
+    "es": "seguro de sí, no soberbio",
+    "en": "confident, not arrogant",
+    "fr": "sûr(e) de soi, pas arrogant(e)",
+    "it": "sicuro/a di sé, non arrogante",
+    "pt": "confiante, não arrogante"
+   }
+  },
+  {
+   "expresion": "eher sparsam als geizig",
+   "funcion": "reframt eine Eigenschaft positiv",
+   "traducciones": {
+    "es": "más ahorrativo que tacaño",
+    "en": "frugal rather than stingy",
+    "fr": "plutôt économe qu’avare",
+    "it": "più parsimonioso che avaro",
+    "pt": "mais poupado do que avarento"
+   }
+  },
+  {
+   "expresion": "eher neugierig als aufdringlich",
+   "funcion": "reframt eine Eigenschaft positiv",
+   "traducciones": {
+    "es": "más curioso que entrometido",
+    "en": "curious rather than nosy",
+    "fr": "plutôt curieux que indiscret",
+    "it": "più curioso che invadente",
+    "pt": "mais curioso do que intrometido"
+   }
+  },
+  {
+   "expresion": "Das wirkt auf mich…",
+   "funcion": "relativiert eine Konnotationswertung",
+   "traducciones": {
+    "es": "A mí me parece…",
+    "en": "It comes across to me as…",
+    "fr": "Cela me semble…",
+    "it": "A me sembra…",
+    "pt": "Isso parece-me…"
+   }
+  },
+  {
+   "expresion": "…, um es milde auszudrücken.",
+   "funcion": "markiert eine abgeschwächte Negativierung",
+   "traducciones": {
+    "es": "…, por decirlo con delicadeza.",
+    "en": "…, to put it kindly.",
+    "fr": "…, pour le dire gentiment.",
+    "it": "…, per dirla con delicatezza.",
+    "pt": "…, para dizer de forma suave."
+   }
+  },
+  {
+   "expresion": "…, im positiven Sinne.",
+   "funcion": "klärt ein mehrdeutiges Wort",
+   "traducciones": {
+    "es": "…, en el buen sentido.",
+    "en": "…, in a good way.",
+    "fr": "…, au sens positif.",
+    "it": "…, in senso positivo.",
+    "pt": "…, no sentido positivo."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Trägt jedes Wort die tatsächlich beabsichtigte Konnotation?",
+  "Habe ich ein Nah-Synonym auf versteckte negative oder positive Ladung geprüft?",
+  "Würde die beschriebene Person sich fair dargestellt fühlen?",
+  "Habe ich eine Überkorrektur ins unnatürlich Positive vermieden?",
+  "Habe ich mindestens vier Konnotationspaare bewusst kontrastiert?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konnotation. Markieren Sie jedes Wort mit unbeabsichtigter positiver oder negativer Ladung und schlagen Sie die neutrale oder gegenteilige Alternative vor. Schreiben Sie den Text nicht neu."
+}

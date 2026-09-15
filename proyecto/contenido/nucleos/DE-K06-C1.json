@@ -1,0 +1,131 @@
+{
+ "skillId": "DE-K06",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Erweiterte Partizipialattribute und Relativsätze",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C1",
+ "descripcion": "Ein guter C1-Text wechselt bewusst zwischen dem kompakten Partizipialattribut und dem ausführlicheren Relativsatz — nicht weil eines falsch wäre, sondern weil die Wahl die Lesbarkeit und den Stil steuert. Diese Karte übt die Umwandlung in beide Richtungen.",
+ "cuadroReferencia": {
+  "titulo": "Beide Richtungen üben",
+  "columnas": [
+   "Relativsatz",
+   "Partizipialattribut"
+  ],
+  "filas": [
+   [
+    "der Bericht, der letzte Woche veröffentlicht wurde",
+    "der letzte Woche veröffentlichte Bericht"
+   ],
+   [
+    "die Massnahme, die zu Kontroversen geführt hat",
+    "die zu Kontroversen führende Massnahme"
+   ],
+   [
+    "das Verfahren, das angewendet werden muss",
+    "das anzuwendende Verfahren"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Der letzte Woche veröffentlichte Bericht hat für Diskussionen gesorgt.",
+   "audio": true
+  },
+  {
+   "texto": "Die zu Kontroversen führende Massnahme wurde inzwischen überarbeitet.",
+   "audio": true
+  },
+  {
+   "texto": "Ich würde das eher als Relativsatz formulieren: die Massnahme, die zu Kontroversen geführt hat."
+  }
+ ],
+ "notas": [
+  "Ein Text, der ausschliesslich Partizipialattribute verwendet, wirkt gedrängt; einer mit nur Relativsätzen wirkt weniger dicht und professionell.",
+  "Bei mehreren Ergänzungen (letzte Woche, mit grosser Mehrheit) wird das Partizipialattribut schnell unübersichtlich — dann ist der Relativsatz die bessere Wahl.",
+  "Die Fähigkeit, zwischen beiden Formen zu wechseln, ist wichtiger als die Fähigkeit, nur eine zu bilden."
+ ],
+ "contraste": {
+  "es": "Das Spanische bleibt fast ausschliesslich beim Relativsatz und kennt keine vergleichbare Verdichtung zum Partizipialattribut vor dem Nomen. Spanischsprachige haben deshalb Zugriff auf nur eine der beiden deutschen Optionen und müssen die andere aktiv erlernen, nicht nur übersetzen."
+ },
+ "errores": [
+  "Ausschliesslich Partizipialattribute verwenden, auch wenn der Satz dadurch unübersichtlich wird.",
+  "Ein Partizipialattribut mit zu vielen Ergänzungen überladen.",
+  "Nie zwischen den beiden Formen wechseln, obwohl der Text dadurch monoton wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "der letzte Woche veröffentlichte…",
+   "funcion": "Partizipialattribut, kompakt",
+   "traducciones": {
+    "es": "el… publicado la semana pasada",
+    "en": "the… published last week",
+    "fr": "le/la… publié(e) la semaine dernière",
+    "it": "il/la… pubblicato/a la settimana scorsa",
+    "pt": "o/a… publicado/a na semana passada"
+   }
+  },
+  {
+   "expresion": "…, der/die/das … veröffentlicht wurde",
+   "funcion": "Relativsatz, ausführlicher",
+   "traducciones": {
+    "es": "…, que fue publicado…",
+    "en": "…, which was published…",
+    "fr": "…, qui a été publié(e)…",
+    "it": "…, che è stato/a pubblicato/a…",
+    "pt": "…, que foi publicado/a…"
+   }
+  },
+  {
+   "expresion": "die zu Kontroversen führende…",
+   "funcion": "Partizip I als Attribut",
+   "traducciones": {
+    "es": "el/la… que genera controversia",
+    "en": "the… leading to controversy",
+    "fr": "le/la… qui suscite la controverse",
+    "it": "il/la… che suscita controversie",
+    "pt": "o/a… que gera controvérsia"
+   }
+  },
+  {
+   "expresion": "das anzuwendende…",
+   "funcion": "Modalpartizip",
+   "traducciones": {
+    "es": "el… a aplicar",
+    "en": "the… to be applied",
+    "fr": "le/la… à appliquer",
+    "it": "il/la… da applicare",
+    "pt": "o/a… a aplicar"
+   }
+  },
+  {
+   "expresion": "…, was die Lesbarkeit erschwert.",
+   "funcion": "Kommentar zur eigenen Wahl",
+   "traducciones": {
+    "es": "…, lo cual dificulta la lectura.",
+    "en": "…, which makes it harder to read.",
+    "fr": "…, ce qui rend la lecture plus difficile.",
+    "it": "…, il che rende la lettura più difficile.",
+    "pt": "…, o que dificulta a leitura."
+   }
+  },
+  {
+   "expresion": "Kürzer gesagt: …",
+   "funcion": "leitet die kompaktere Version ein",
+   "traducciones": {
+    "es": "Dicho más brevemente: …",
+    "en": "More briefly: …",
+    "fr": "Plus brièvement : …",
+    "it": "Più brevemente: …",
+    "pt": "Mais resumidamente: …"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich mindestens einmal von Relativsatz zu Partizip und einmal umgekehrt umgewandelt?",
+  "Ist ein Partizipialattribut mit zu vielen Ergänzungen überladen?",
+  "Bleibt der Text trotz der Verdichtung lesbar?",
+  "Wechsle ich bewusst zwischen den beiden Formen, nicht zufällig?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Wechsel zwischen Partizipialattributen und Relativsätzen. Prüfen Sie, ob die Wahl in jedem Fall die Lesbarkeit unterstützt. Schreiben Sie den Text nicht neu."
+}

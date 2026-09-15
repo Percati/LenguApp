@@ -1,0 +1,113 @@
+{
+ "skillId": "DE-F02",
+ "nivel": "A2",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Zustimmen und widersprechen",
+ "categoria": "fluency",
+ "ancla": "PD A2",
+ "descripcion": "Auf A2 stimmt man mit das stimmt zu oder widerspricht mit das finde ich nicht. Es geht nur darum, klar ja oder nein zu sagen. Diese einfache Form reicht für die meisten Alltagsgespräche auf diesem Niveau.",
+ "cuadroReferencia": {
+  "titulo": "Ja oder nein",
+  "columnas": [
+   "Funktion",
+   "Formel"
+  ],
+  "filas": [
+   [
+    "Zustimmung",
+    "Das stimmt."
+   ],
+   [
+    "Widerspruch",
+    "Das finde ich nicht."
+   ],
+   [
+    "Unsicher",
+    "Vielleicht."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ja, das stimmt.",
+   "audio": true
+  },
+  {
+   "texto": "Nein, das finde ich nicht.",
+   "audio": true
+  },
+  {
+   "texto": "Das finde ich auch."
+  }
+ ],
+ "notas": [
+  "Das stimmt ist die einfachste Zustimmungsformel.",
+  "Das finde ich nicht ist höflicher als das ist falsch."
+ ],
+ "contraste": {
+  "es": "Das Spanische stimmt mit es verdad zu, was strukturell sehr ähnlich ist."
+ },
+ "errores": [
+  "Nur ja oder nein sagen, ohne eigene Meinung.",
+  "Zu direkt widersprechen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das stimmt.",
+   "funcion": "Zustimmung",
+   "traducciones": {
+    "es": "Eso es cierto.",
+    "en": "That's true."
+   }
+  },
+  {
+   "expresion": "Das finde ich auch.",
+   "funcion": "Zustimmung, persönlich",
+   "traducciones": {
+    "es": "Eso pienso yo también.",
+    "en": "I think so too."
+   }
+  },
+  {
+   "expresion": "Das finde ich nicht.",
+   "funcion": "Widerspruch",
+   "traducciones": {
+    "es": "Yo no lo creo.",
+    "en": "I don't think so."
+   }
+  },
+  {
+   "expresion": "Genau!",
+   "funcion": "starke Zustimmung",
+   "traducciones": {
+    "es": "¡Exacto!",
+    "en": "Exactly!"
+   }
+  },
+  {
+   "expresion": "Vielleicht.",
+   "funcion": "unsicher",
+   "traducciones": {
+    "es": "Tal vez.",
+    "en": "Maybe."
+   }
+  },
+  {
+   "expresion": "Ich weiss nicht.",
+   "funcion": "keine Meinung",
+   "traducciones": {
+    "es": "No sé.",
+    "en": "I don't know."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich klar zugestimmt oder widersprochen?",
+  "Habe ich mehr als eine Formel benutzt?",
+  "Klingt der Satz natürlich?",
+  "Klingt der Satz natürlich?",
+  "Klingt der Satz natürlich?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Zustimmung oder Widerspruch klar ist. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob mehr als eine Formel benutzt wird."
+}

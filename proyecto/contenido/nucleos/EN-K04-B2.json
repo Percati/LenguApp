@@ -1,0 +1,132 @@
+{
+ "skillId": "EN-K04",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Hedging, Passive and Impersonal Reporting",
+ "categoria": "grammar",
+ "ancla": "CV Propositional precision",
+ "descripcion": "At B2 hedging and the passive are learned separately and start to appear together: a hedge softens a claim, the passive removes an unnecessary actor. The full three-layer academic stack with impersonal reporting verbs (C1) isn't the target yet — using one or two of these tools together is enough.",
+ "cuadroReferencia": {
+  "titulo": "Combining a hedge with the passive",
+  "columnas": [
+   "Layer",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Hedge alone",
+    "This may not be accurate."
+   ],
+   [
+    "Passive alone",
+    "The results were published last year."
+   ],
+   [
+    "Both together",
+    "It may not have been reported accurately."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "This may not be entirely accurate.",
+   "audio": true
+  },
+  {
+   "texto": "The results were published without much detail.",
+   "audio": true
+  },
+  {
+   "texto": "It might not have been checked properly."
+  }
+ ],
+ "notas": [
+  "A hedge (may, might, could) softens a claim without changing its basic meaning.",
+  "The passive removes the actor when it isn't important or isn't known — the report was delayed, not someone delayed the report.",
+  "Combining a hedge with the passive is common in careful, professional English but shouldn't be used on every sentence."
+ ],
+ "contraste": {
+  "es": "El español atenúa sobre todo con el condicional y usa menos la pasiva como recurso de distancia (prefiere el se impersonal). Los hispanohablantes tienden a atenuar de menos en inglés formal, porque en su lengua materna una sola capa ya alcanza."
+ },
+ "errores": [
+  "Using the passive without any hedge on a claim that is actually uncertain.",
+  "Overusing hedges on facts that are actually certain.",
+  "Forgetting the participle when combining a modal with the passive: may not checked instead of may not have been checked."
+ ],
+ "redemittel": [
+  {
+   "expresion": "This may not be…",
+   "funcion": "hedge alone",
+   "traducciones": {
+    "es": "Esto podría no ser…",
+    "de": "Das ist vielleicht nicht…",
+    "fr": "Cela n’est peut-être pas…",
+    "it": "Questo potrebbe non essere…",
+    "pt": "Isto pode não ser…"
+   }
+  },
+  {
+   "expresion": "…was published…",
+   "funcion": "passive alone",
+   "traducciones": {
+    "es": "…se publicó…",
+    "de": "…wurde veröffentlicht…",
+    "fr": "…a été publié…",
+    "it": "…è stato pubblicato…",
+    "pt": "…foi publicado…"
+   }
+  },
+  {
+   "expresion": "It might not have been…",
+   "funcion": "hedge plus passive",
+   "traducciones": {
+    "es": "Podría no haber sido…",
+    "de": "Es könnte nicht… gewesen sein.",
+    "fr": "Il se peut que ça n’ait pas été…",
+    "it": "Potrebbe non essere stato…",
+    "pt": "Pode não ter sido…"
+   }
+  },
+  {
+   "expresion": "It's possible that…",
+   "funcion": "alternative hedge",
+   "traducciones": {
+    "es": "Es posible que…",
+    "de": "Es ist möglich, dass…",
+    "fr": "Il est possible que…",
+    "it": "È possibile che…",
+    "pt": "É possível que…"
+   }
+  },
+  {
+   "expresion": "…hasn't been confirmed.",
+   "funcion": "passive, unconfirmed claim",
+   "traducciones": {
+    "es": "…no se ha confirmado.",
+    "de": "…wurde nicht bestätigt.",
+    "fr": "…n’a pas été confirmé.",
+    "it": "…non è stato confermato.",
+    "pt": "…não foi confirmado."
+   }
+  },
+  {
+   "expresion": "As far as we know,…",
+   "funcion": "limits the claim",
+   "traducciones": {
+    "es": "Por lo que sabemos,…",
+    "de": "Soweit wir wissen,…",
+    "fr": "Pour autant que nous sachions,…",
+    "it": "Per quanto ne sappiamo,…",
+    "pt": "Tanto quanto sabemos,…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is at least one hedge used on an uncertain claim?",
+  "Is the passive used where the actor genuinely doesn't matter?",
+  "Is the participle correct when a hedge and the passive are combined?",
+  "Have I avoided hedging a fact that's actually certain?",
+  "Does at least one sentence combine both tools?"
+ ],
+ "promptCorreccion": "Focus only on hedging and the passive, together and separately. Check the participle form when they're combined and whether the hedge fits the actual certainty of the claim. Do not rewrite the text."
+}

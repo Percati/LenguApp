@@ -1,0 +1,124 @@
+{
+ "skillId": "DE-G11",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Relativsätze",
+ "categoria": "grammar",
+ "ancla": "PD B1",
+ "descripcion": "Auf B1 wird der einfache Relativsatz im Nominativ und Akkusativ sicher gebildet. Genitiv, Präpositionen und die selteneren Formen kommen erst später. Wichtig ist vor allem, Genus und Kasus des Relativpronomens richtig zu bestimmen.",
+ "cuadroReferencia": {
+  "titulo": "Relativpronomen Nom./Akk.",
+  "columnas": [
+   "Kasus",
+   "maskulin",
+   "feminin",
+   "neutral/Plural"
+  ],
+  "filas": [
+   [
+    "Nominativ",
+    "der",
+    "die",
+    "das/die"
+   ],
+   [
+    "Akkusativ",
+    "den",
+    "die",
+    "das/die"
+   ],
+   [
+    "Beispiel Akk.",
+    "den Mann, den ich sehe",
+    "die Frau, die ich sehe",
+    "das Kind, das ich sehe"
+   ]
+  ],
+  "notaPie": "Auf B1 reichen Nominativ und Akkusativ. Nur das Maskulinum ändert sich im Akkusativ (der → den)."
+ },
+ "ejemplos": [
+  {
+   "texto": "Der Mann, der dort steht, ist mein Nachbar.",
+   "audio": true
+  },
+  {
+   "texto": "Das Buch, das ich gerade lese, ist sehr interessant.",
+   "audio": true
+  },
+  {
+   "texto": "Die Frau, die ich gestern getroffen habe, arbeitet bei uns."
+  }
+ ],
+ "notas": [
+  "Genus und Numerus des Relativpronomens kommen vom Bezugswort, der Kasus von der Funktion im Relativsatz.",
+  "Vor dem Relativsatz steht immer ein Komma, und das Verb steht am Ende.",
+  "Im Akkusativ ändert sich nur die maskuline Form (den) gegenüber dem Nominativ (der)."
+ ],
+ "contraste": {
+  "es": "Das Spanische benutzt für fast alles que, ohne Kasus zu markieren. Spanischsprachige übertragen deshalb oft den Nominativ, auch wenn der Akkusativ gebraucht wird."
+ },
+ "errores": [
+  "Den Kasus des Relativpronomens vom Bezugswort statt von der Funktion im Relativsatz ableiten.",
+  "Das Komma vor dem Relativsatz vergessen.",
+  "Das Verb nicht ans Ende des Relativsatzes stellen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, der/die/das…",
+   "funcion": "Relativsatz, Nominativ",
+   "traducciones": {
+    "es": "…, que…",
+    "en": "…, who/which…"
+   }
+  },
+  {
+   "expresion": "…, den ich…",
+   "funcion": "Relativsatz, Akkusativ maskulin",
+   "traducciones": {
+    "es": "…, al que…",
+    "en": "…, whom/which I…"
+   }
+  },
+  {
+   "expresion": "Der Mann, der…",
+   "funcion": "Relativsatz über eine Person",
+   "traducciones": {
+    "es": "El hombre que…",
+    "en": "The man who…"
+   }
+  },
+  {
+   "expresion": "Das Buch, das…",
+   "funcion": "Relativsatz über eine Sache",
+   "traducciones": {
+    "es": "El libro que…",
+    "en": "The book which…"
+   }
+  },
+  {
+   "expresion": "…, die ich kenne.",
+   "funcion": "Relativsatz, Akkusativ feminin/Plural",
+   "traducciones": {
+    "es": "…, que conozco.",
+    "en": "…, whom/which I know."
+   }
+  },
+  {
+   "expresion": "Kennst du die Person, die…?",
+   "funcion": "Frage mit Relativsatz",
+   "traducciones": {
+    "es": "¿Conocés a la persona que…?",
+    "en": "Do you know the person who…?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Kommt Genus und Numerus vom Bezugswort?",
+  "Kommt der Kasus von der Funktion im Relativsatz?",
+  "Steht vor dem Relativsatz ein Komma?",
+  "Steht das Verb am Ende des Relativsatzes?",
+  "Klingt der Satz natürlich?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Relativsätze im Nominativ und Akkusativ. Prüfen Sie Genus, Numerus und Kasus bei jedem Relativpronomen. Schreiben Sie den Text nicht neu."
+}

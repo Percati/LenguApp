@@ -1,0 +1,50 @@
+{
+ "skillId": "EN-F17", "nivel": "C2", "idioma": "en", "bilingue": false,
+ "titulo": "Register Shifting: Formal vs. Informal",
+ "categoria": "fluency",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 register is controlled across six independent axes at once — contractions, vocabulary, sentence length, person, hedging and idiom — rather than as a single formal/informal switch, which is what lets a writer produce a genuinely intermediate register instead of an inconsistent mix.",
+ "cuadroReferencia": {
+  "titulo": "Six independent axes",
+  "columnas": ["Axis", "Informal pole", "Formal pole"],
+  "filas": [
+   ["Contractions", "don't, it's", "do not, it is"],
+   ["Vocabulary", "find out, sort out", "discover, resolve"],
+   ["Sentence length", "short, simple", "longer, subordinated"],
+   ["Person", "I think, you should", "it is thought, one should"],
+   ["Hedging", "I guess, maybe", "it may be the case that"],
+   ["Idiom", "phrasal, colloquial", "Latinate, technical"]
+  ]
+ },
+ "ejemplos": [
+  {"texto": "It's worth noting that the figures, while broadly accurate, don't tell the whole story.", "audio": true},
+  {"texto": "I guess what I'm saying is that the evidence doesn't fully support the conclusion.", "audio": true},
+  {"texto": "One might reasonably question whether this holds up under scrutiny."}
+ ],
+ "notas": [
+  "A genuinely intermediate register mixes some axes towards formal and others towards informal on purpose — for example, contractions kept but vocabulary raised — which reads as a controlled voice, not an inconsistency.",
+  "Moving all six axes together produces the two familiar extremes; moving them independently is what a mature, individual style actually sounds like.",
+  "An uncontrolled mix (contraction plus a very formal Latinate verb in the same clause, with no reason) is what a lower-level register error looks like — the difference from a controlled intermediate register is intentionality."
+ ],
+ "errores": [
+  "Moving all six axes formal or informal together, producing a generic rather than individual register.",
+  "Mixing axes with no discernible pattern, which reads as inconsistency rather than a controlled voice.",
+  "Losing track of which axis is actually doing the work in a given sentence."
+ ],
+ "redemittel": [
+  {"expresion": "It's worth noting that…", "funcion": "contraction kept, vocabulary raised", "traducciones": {"es": "Vale la pena señalar que…"}},
+  {"expresion": "I guess what I'm saying is…", "funcion": "informal person/hedge, formal content", "traducciones": {"es": "Supongo que lo que digo es…"}},
+  {"expresion": "One might reasonably question whether…", "funcion": "formal person, careful hedge", "traducciones": {"es": "Cabría razonablemente preguntarse si…"}},
+  {"expresion": "…, though that's just my take.", "funcion": "formal clause, informal closing hedge", "traducciones": {"es": "…, aunque esa es solo mi impresión."}},
+  {"expresion": "To put it plainly,…", "funcion": "signals a deliberate register drop", "traducciones": {"es": "Para decirlo claramente,…"}},
+  {"expresion": "…, if that makes sense.", "funcion": "informal check, in an otherwise formal register", "traducciones": {"es": "…, si eso tiene sentido."}}
+ ],
+ "autochequeo": [
+  "Are the six axes moved independently, not all together?",
+  "Is there a discernible pattern to which axes are formal and which aren't?",
+  "Does the resulting register read as a controlled individual voice?",
+  "Would a careful reader sense intention rather than inconsistency?",
+  "Is at least one axis deliberately mismatched from the others?"
+ ],
+ "promptCorreccion": "Focus only on register control across contractions, vocabulary, sentence length, person, hedging and idiom. Check whether any mismatch reads as intentional or as an error. Do not rewrite the text."
+}

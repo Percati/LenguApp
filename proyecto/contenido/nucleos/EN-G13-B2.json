@@ -1,0 +1,198 @@
+{
+ "skillId": "EN-G13",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Reported Speech",
+ "categoria": "grammar",
+ "descripcion": "Reporting what someone said means moving three things at once: the tense goes back, the pronouns change, and the time and place words change. Most learners handle the tense and forget the other two, which produces sentences that are grammatically fine and factually confusing.",
+ "cuadroReferencia": {
+  "titulo": "What moves",
+  "columnas": [
+   "What",
+   "Direct",
+   "Reported"
+  ],
+  "filas": [
+   [
+    "Present simple",
+    "\"I play\"",
+    "he played"
+   ],
+   [
+    "Present continuous",
+    "\"I'm playing\"",
+    "he was playing"
+   ],
+   [
+    "Past simple",
+    "\"I played\"",
+    "he had played"
+   ],
+   [
+    "Present perfect",
+    "\"I've played\"",
+    "he had played"
+   ],
+   [
+    "will",
+    "\"I'll play\"",
+    "he would play"
+   ],
+   [
+    "can",
+    "\"I can play\"",
+    "he could play"
+   ],
+   [
+    "**Pronouns**",
+    "\"**I** like **my** team\"",
+    "he liked **his** team"
+   ],
+   [
+    "**Time**",
+    "today / tomorrow / now",
+    "that day / the next day / then"
+   ],
+   [
+    "**Place**",
+    "here / this",
+    "there / that"
+   ]
+  ],
+  "notaPie": "Questions lose the inversion: \"Do you play?\" → **he asked whether I played**, not he asked did I play. Orders use the infinitive: \"Stop!\" → **he told me to stop**."
+ },
+ "ejemplos": [
+  {
+   "texto": "*She said she had been playing for years.*",
+   "audio": true
+  },
+  {
+   "texto": "*He asked whether I wanted to join them the next day.*",
+   "audio": true
+  },
+  {
+   "texto": "*They told us not to bring anything.*",
+   "audio": true
+  },
+  {
+   "texto": "*She told me it was worth trying.*",
+   "audio": true
+  },
+  {
+   "texto": "*He admitted that he had given it up.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Say takes no person: he said that…. Tell needs one: he told **me** that…. Mixing them is the most common error of all.",
+  "The tense does not move back if what was said is still true: *He said he lives in Bern* is fine if he still does.",
+  "*Whether* and *if* both work for yes/no questions. *Whether* is slightly more formal."
+ ],
+ "contraste": {
+  "es": "Spanish shifts tenses in reported speech too, so the mechanism is familiar. What is not familiar is the *say* / *tell* split: Spanish uses *decir* for both, and that single difference produces more errors here than the whole tense system."
+ },
+ "errores": [
+  "*He told that…* or *He said me that…*",
+  "Keeping the question word order: *She asked where was the club.*",
+  "Forgetting the pronoun shift, so the sentence reports the wrong person.",
+  "Forgetting *not* in negative orders: *He told me to don't come.*"
+ ],
+ "redemittel": [
+  {
+   "expresion": "He said (that)…",
+   "funcion": "reports a statement, no person",
+   "traducciones": {
+    "es": "dijo que…",
+    "de": "Er sagte, (dass)…",
+    "fr": "Il a dit que…",
+    "it": "Ha detto che…",
+    "pt": "Ele disse que…"
+   }
+  },
+  {
+   "expresion": "She told me (that)…",
+   "funcion": "reports with a person",
+   "traducciones": {
+    "es": "me dijo que…",
+    "de": "Sie sagte mir, (dass)…",
+    "fr": "Elle m’a dit que…",
+    "it": "Mi ha detto che…",
+    "pt": "Ela disse-me que…"
+   }
+  },
+  {
+   "expresion": "He asked whether…",
+   "funcion": "reports a yes/no question",
+   "traducciones": {
+    "es": "preguntó si…",
+    "de": "Er fragte, ob…",
+    "fr": "Il a demandé si…",
+    "it": "Ha chiesto se…",
+    "pt": "Ele perguntou se…"
+   }
+  },
+  {
+   "expresion": "She asked where / when…",
+   "funcion": "reports a wh- question",
+   "traducciones": {
+    "es": "preguntó dónde / cuándo…",
+    "de": "Sie fragte, wo / wann…",
+    "fr": "Elle a demandé où / quand…",
+    "it": "Ha chiesto dove / quando…",
+    "pt": "Ela perguntou onde / quando…"
+   }
+  },
+  {
+   "expresion": "They told me to…",
+   "funcion": "reports an order",
+   "traducciones": {
+    "es": "me dijeron que…",
+    "de": "Sie sagten mir, ich solle…",
+    "fr": "Ils m’ont dit de…",
+    "it": "Mi hanno detto di…",
+    "pt": "Disseram-me para…"
+   }
+  },
+  {
+   "expresion": "He told me not to…",
+   "funcion": "negative order",
+   "traducciones": {
+    "es": "me dijo que no…",
+    "de": "Er sagte mir, ich solle nicht…",
+    "fr": "Il m’a dit de ne pas…",
+    "it": "Mi ha detto di non…",
+    "pt": "Ele disse-me para não…"
+   }
+  },
+  {
+   "expresion": "She explained that…",
+   "funcion": "reports with detail",
+   "traducciones": {
+    "es": "explicó que…",
+    "de": "Sie erklärte, dass…",
+    "fr": "Elle a expliqué que…",
+    "it": "Ha spiegato che…",
+    "pt": "Ela explicou que…"
+   }
+  },
+  {
+   "expresion": "He admitted that…",
+   "funcion": "reports a concession",
+   "traducciones": {
+    "es": "admitió que…",
+    "de": "Er gab zu, dass…",
+    "fr": "Il a admis que…",
+    "it": "Ha ammesso che…",
+    "pt": "Ele admitiu que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Did I use *say* without a person and *tell* with one?",
+  "Did every reported question lose its inversion?",
+  "Did the pronouns move correctly?",
+  "Did the time and place words move?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on reported speech. (1) Check *say* and *tell* in every sentence. (2) Check the tense shift and say where it was correctly not applied. (3) Check the word order of every reported question. (4) Check pronouns, times and places. Do not correct anything else."
+}

@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-G04",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Future Forms: will / going to / present continuous",
+ "categoria": "grammar",
+ "ancla": "EGP A2/B1",
+ "descripcion": "English has three common ways to talk about the future, and at B1 the choice depends on how planned the event is: will for decisions made now, going to for intentions, and the present continuous for fixed arrangements.",
+ "cuadroReferencia": {
+  "titulo": "Three futures",
+  "columnas": [
+   "Form",
+   "Use",
+   "Example"
+  ],
+  "filas": [
+   [
+    "will",
+    "decision made now",
+    "I'll help you with that."
+   ],
+   [
+    "going to",
+    "intention, plan",
+    "I'm going to study tonight."
+   ],
+   [
+    "present continuous",
+    "fixed arrangement",
+    "I'm meeting her at six."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I'll help you carry that, don't worry.",
+   "audio": true
+  },
+  {
+   "texto": "I'm going to study tonight after dinner.",
+   "audio": true
+  },
+  {
+   "texto": "I'm meeting her at six tomorrow."
+  }
+ ],
+ "notas": [
+  "Will is used for a decision made at the moment of speaking, not for a plan already made.",
+  "Going to expresses an intention, whether or not the details are fixed yet.",
+  "The present continuous for the future needs a time expression and works best for arrangements with another person."
+ ],
+ "contraste": {
+  "es": "El español usa voy a + infinitivo de forma muy similar a going to, así que esa forma se transfiere directamente. La diferencia principal está en will, que en español corresponde al futuro simple pero se usa en inglés específicamente para decisiones espontáneas, no para planes."
+ },
+ "errores": [
+  "Using will for a plan that was already decided before speaking.",
+  "Using going to where will fits better, for a spontaneous decision.",
+  "Using the present continuous for the future without a time expression."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I'll…",
+   "funcion": "spontaneous decision",
+   "traducciones": {
+    "es": "Voy a… (decisión del momento)"
+   }
+  },
+  {
+   "expresion": "I'm going to…",
+   "funcion": "intention, plan",
+   "traducciones": {
+    "es": "Voy a…"
+   }
+  },
+  {
+   "expresion": "I'm…-ing at…",
+   "funcion": "fixed arrangement",
+   "traducciones": {
+    "es": "Tengo… a las…"
+   }
+  },
+  {
+   "expresion": "What are you doing this weekend?",
+   "funcion": "asking about plans",
+   "traducciones": {
+    "es": "¿Qué vas a hacer este fin de semana?"
+   }
+  },
+  {
+   "expresion": "I probably won't…",
+   "funcion": "negative prediction",
+   "traducciones": {
+    "es": "Probablemente no…"
+   }
+  },
+  {
+   "expresion": "We're leaving at…",
+   "funcion": "fixed schedule",
+   "traducciones": {
+    "es": "Salimos a las…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is will used for a decision made now, not a prior plan?",
+  "Is going to used for an intention?",
+  "Does the present continuous form have a time expression?",
+  "Have I used at least two of the three forms?",
+  "Does the sentence sound natural, not translated word for word?"
+ ],
+ "promptCorreccion": "Focus only on the choice between will, going to and the present continuous for the future. Check whether each matches how planned the event is. Do not rewrite the text."
+}

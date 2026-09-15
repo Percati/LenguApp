@@ -1,0 +1,212 @@
+{
+ "skillId": "DE-G11",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Relativsätze",
+ "categoria": "grammar",
+ "descripcion": "Der einfache Relativsatz ist B1. Auf B2 kommen drei Dinge dazu, die fast alle Lernenden umgehen: der **Genitivrelativsatz** (dessen, deren), der Relativsatz mit **Präposition** und die Formen **was** und **wo(r)-**. Die zentrale Regel bleibt einfach: **Genus und Numerus** vom Bezugswort, der **Kasus** von der Funktion im Relativsatz.",
+ "cuadroReferencia": {
+  "titulo": "Relativpronomen",
+  "columnas": [
+   "Kasus",
+   "m",
+   "f",
+   "n",
+   "Pl"
+  ],
+  "filas": [
+   [
+    "Nom.",
+    "der",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "Akk.",
+    "den",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "Dat.",
+    "dem",
+    "der",
+    "dem",
+    "**denen**"
+   ],
+   [
+    "Gen.",
+    "**dessen**",
+    "**deren**",
+    "**dessen**",
+    "**deren**"
+   ]
+  ],
+  "notaPie": "Sonderfälle: nach *alles, nichts, etwas, vieles, das* und nach substantivierten Superlativen steht **was**. Präposition + *was* wird **wo(r)-**. Nach *dessen/deren* folgt das Substantiv **ohne Artikel**."
+ },
+ "ejemplos": [
+  {
+   "texto": "Der Kurs, **den** ich gemacht habe, … (Akk.)"
+  },
+  {
+   "texto": "Die Kollegin, **mit der** ich zusammenarbeite, … (Dat. nach mit)"
+  },
+  {
+   "texto": "Der Dozent, **dessen** Buch wir lesen, …"
+  },
+  {
+   "texto": "Die Leute, **denen** ich das verdanke, … (Dat. Pl.)"
+  },
+  {
+   "texto": "Alles, **was** ich gelernt habe, …"
+  },
+  {
+   "texto": "Das Einzige, **worauf** es ankommt, …"
+  },
+  {
+   "texto": "*Der Kurs, den ich gemacht habe, war praxisnäher als erwartet.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Kollegin, mit der ich zusammenarbeite, hat dieselbe Lehre gemacht.*",
+   "audio": true
+  },
+  {
+   "texto": "*Der Dozent, dessen Buch wir lesen, unterrichtet nicht mehr.*",
+   "audio": true
+  },
+  {
+   "texto": "*Alles, was ich dort gelernt habe, brauche ich heute noch.*",
+   "audio": true
+  },
+  {
+   "texto": "*Das Einzige, worauf es ankommt, ist Kontinuität.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*welcher/welche/welches* ist grammatisch möglich, klingt aber veraltet oder amtlich. Im Gespräch vermeiden.",
+  "Relativsätze werden im Deutschen **immer** von Kommas eingeschlossen.",
+  "*deren* für feminin und Plural, *dessen* für maskulin und neutrum. Verwechslung ist der häufigste Genitivfehler."
+ ],
+ "contraste": {
+  "es": "Spanisch hat *que* für fast alles und markiert den Kasus nicht. Die spanische Ökonomie führt dazu, dass Lernende im Deutschen den Kasus vom Bezugswort statt von der Funktion ableiten — der Hauptfehler dieser Woche.",
+  "en": "Das Englische lässt das Relativpronomen oft **ganz weg**: *the course I did*. Im Deutschen ist das nie möglich. Zudem markiert das Englische keinen Kasus (*who* gegen *whom* ist fast verschwunden) und stellt die Präposition ans Ende: *the person I worked with*. Englischsprachige suchen deshalb die deutsche Präposition am falschen Platz und lassen das Pronomen weg, wo es Pflicht ist."
+ },
+ "errores": [
+  "Kasus vom Bezugswort statt von der Funktion übernehmen.",
+  "*dessen das Buch* statt *dessen Buch*.",
+  "*Alles, das…* statt *Alles, was…*",
+  "Komma vergessen.",
+  "Das Relativpronomen weglassen: *Der Kurs ich gemacht habe*.",
+  "Die Präposition ans Ende stellen: *Die Kollegin, die ich mit arbeite*.",
+  "Den Kasus gar nicht markieren, weil *who/whom* im Englischen kaum unterschieden wird."
+ ],
+ "erroresContrastivos": {
+  "en": [
+   "Das Relativpronomen weglassen: *Der Kurs ich gemacht habe*.",
+   "Die Präposition ans Ende stellen: *Die Kollegin, die ich mit arbeite*.",
+   "Den Kasus gar nicht markieren, weil *who/whom* im Englischen kaum unterschieden wird."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "Der Kurs, den ich…",
+   "funcion": "Akkusativrelativsatz",
+   "traducciones": {
+    "es": "el curso que…",
+    "en": "The course (that) I…",
+    "fr": "Le cours que j’ai…",
+    "it": "Il corso che ho…",
+    "pt": "O curso que eu…"
+   }
+  },
+  {
+   "expresion": "Die Person, mit der…",
+   "funcion": "Relativsatz mit Präposition",
+   "traducciones": {
+    "es": "la persona con la que…",
+    "en": "The person (whom) I… with",
+    "fr": "La personne avec qui…",
+    "it": "La persona con cui…",
+    "pt": "A pessoa com quem…"
+   }
+  },
+  {
+   "expresion": "Das, was mir am meisten geholfen hat, …",
+   "funcion": "Fokus mit *was*",
+   "traducciones": {
+    "es": "lo que más me ayudó…",
+    "en": "What helped me most…",
+    "fr": "Ce qui m’a le plus aidé, …",
+    "it": "Ciò che mi ha aiutato di più…",
+    "pt": "O que mais me ajudou…"
+   }
+  },
+  {
+   "expresion": "Alles, was…",
+   "funcion": "nach Indefinitpronomen",
+   "traducciones": {
+    "es": "todo lo que…",
+    "en": "Everything (that)…",
+    "fr": "Tout ce qui…",
+    "it": "Tutto ciò che…",
+    "pt": "Tudo o que…"
+   }
+  },
+  {
+   "expresion": "Das Einzige, worauf…",
+   "funcion": "*wo(r)-*Form",
+   "traducciones": {
+    "es": "lo único a lo que…",
+    "en": "The only thing (that)…",
+    "fr": "La seule chose à laquelle…",
+    "it": "L’unica cosa a cui…",
+    "pt": "A única coisa a que…"
+   }
+  },
+  {
+   "expresion": "Die Zeit, in der…",
+   "funcion": "temporaler Relativsatz",
+   "traducciones": {
+    "es": "la época en la que…",
+    "en": "The time when…",
+    "fr": "La période où…",
+    "it": "Il periodo in cui…",
+    "pt": "O período em que…"
+   }
+  },
+  {
+   "expresion": "jemand, dessen…",
+   "funcion": "Genitivrelativsatz",
+   "traducciones": {
+    "es": "alguien cuyo…",
+    "en": "someone whose…",
+    "fr": "quelqu’un dont…",
+    "it": "qualcuno il cui / la cui…",
+    "pt": "alguém cujo / cuja…"
+   }
+  },
+  {
+   "expresion": "…, weshalb ich mich entschieden habe",
+   "funcion": "weiterführender Relativsatz",
+   "traducciones": {
+    "es": "por lo cual decidí…",
+    "en": "…, which is why I decided",
+    "fr": "…, raison pour laquelle j’ai décidé de…",
+    "it": "…, motivo per cui ho deciso di…",
+    "pt": "…, razão pela qual decidi…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Kommt der Kasus bei jedem Pronomen von der **Funktion** im Relativsatz?",
+  "Fehlt nach *dessen/deren* der Artikel?",
+  "Habe ich *das* geschrieben, wo *was* hingehört?",
+  "Ist jeder Relativsatz von Kommas eingeschlossen?",
+  "Habe ich *welcher* benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Relativsätze. (1) Prüfen Sie bei jedem Pronomen Genus, Numerus und Kasus und sagen Sie, woher jedes kommt. (2) Prüfen Sie die Genitivformen und ob danach der Artikel fehlt. (3) Prüfen Sie *das* gegen *was*. (4) Prüfen Sie die Kommas. Schreiben Sie den Text nicht neu."
+}

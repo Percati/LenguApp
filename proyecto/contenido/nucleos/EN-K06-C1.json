@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-K06",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Reported Speech, Backshift and Hedged Attribution",
+ "categoria": "grammar",
+ "ancla": "Objective Proficiency",
+ "descripcion": "Journalistic and careful professional English often reports what someone said while simultaneously distancing the writer from it: she reportedly claimed she had been unaware combines backshift, a reporting verb chosen for its connotation, and a hedge adverb, all in one clause.",
+ "cuadroReferencia": {
+  "titulo": "Three layers of distance",
+  "columnas": [
+   "Layer",
+   "Device",
+   "Example fragment"
+  ],
+  "filas": [
+   [
+    "Backshift",
+    "tense moves back",
+    "she had been unaware"
+   ],
+   [
+    "Reporting verb choice",
+    "claim signals doubt, state is neutral",
+    "she claimed / she stated"
+   ],
+   [
+    "Hedge adverb",
+    "adds a further layer of distance",
+    "reportedly, allegedly"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She reportedly claimed she had been unaware of the decision.",
+   "audio": true
+  },
+  {
+   "texto": "He allegedly stated that the funds had already been transferred.",
+   "audio": true
+  },
+  {
+   "texto": "Officials reportedly admitted that the figures had been wrong."
+  }
+ ],
+ "notas": [
+  "Claim carries an inbuilt note of doubt; state and say are neutral — choosing between them is itself a form of commentary.",
+  "Reportedly and allegedly both distance the writer from a claim, but allegedly specifically implies possible wrongdoing.",
+  "Overusing all three layers on every sentence makes a text read as needlessly suspicious rather than careful."
+ ],
+ "contraste": {
+  "es": "El español logra un efecto parecido con según se dice o presuntamente, pero rara vez combina tres capas distintas en una sola oración de forma tan sistemática como el inglés periodístico. Los hispanohablantes tienden a usar solo una capa de distancia donde el inglés espera dos o tres."
+ },
+ "errores": [
+  "Choosing claim where a neutral verb like state or say would be more accurate and fair.",
+  "Stacking all three layers on a fact that is actually verified, which reads as unfairly doubtful.",
+  "Getting the backshift wrong when combining it with a reporting verb of doubt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…reportedly…",
+   "funcion": "distances without implying wrongdoing",
+   "traducciones": {
+    "es": "…según se informa…",
+    "de": "…Berichten zufolge…",
+    "fr": "…selon certaines informations…",
+    "it": "…secondo quanto riferito…",
+    "pt": "…segundo consta…"
+   }
+  },
+  {
+   "expresion": "…allegedly…",
+   "funcion": "distances, implies possible wrongdoing",
+   "traducciones": {
+    "es": "…presuntamente…",
+    "de": "…angeblich…",
+    "fr": "…prétendument…",
+    "it": "…presumibilmente…",
+    "pt": "…alegadamente…"
+   }
+  },
+  {
+   "expresion": "…claimed that…",
+   "funcion": "reporting verb with inbuilt doubt",
+   "traducciones": {
+    "es": "…afirmó que… (con reservas)",
+    "de": "…behauptete, dass…",
+    "fr": "…a affirmé que…",
+    "it": "…ha affermato che…",
+    "pt": "…afirmou que…"
+   }
+  },
+  {
+   "expresion": "…stated that…",
+   "funcion": "neutral reporting verb",
+   "traducciones": {
+    "es": "…declaró que…",
+    "de": "…erklärte, dass…",
+    "fr": "…a déclaré que…",
+    "it": "…ha dichiarato che…",
+    "pt": "…declarou que…"
+   }
+  },
+  {
+   "expresion": "…had been…",
+   "funcion": "backshift into the past perfect",
+   "traducciones": {
+    "es": "…había sido…",
+    "de": "…war… gewesen",
+    "fr": "…avait été…",
+    "it": "…era stato/a…",
+    "pt": "…tinha sido…"
+   }
+  },
+  {
+   "expresion": "According to sources,…",
+   "funcion": "attributes without naming the source",
+   "traducciones": {
+    "es": "Según fuentes,…",
+    "de": "Quellen zufolge…",
+    "fr": "Selon des sources,…",
+    "it": "Secondo alcune fonti,…",
+    "pt": "Segundo fontes,…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Does the reporting verb (claim, state, say) match the actual level of certainty?",
+  "Is the backshift correctly applied?",
+  "Is the distancing adverb (reportedly, allegedly) appropriate to the situation?",
+  "Have I avoided stacking all three layers on a verified fact?",
+  "Would a reader sense fairness rather than unwarranted suspicion?"
+ ],
+ "promptCorreccion": "Focus only on reported speech combined with hedged attribution. Check the reporting verb choice, the backshift and whether the distancing feels fair to the source. Do not rewrite the text."
+}

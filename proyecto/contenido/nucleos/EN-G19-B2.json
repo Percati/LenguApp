@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-G19",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Word Order and Adverb Placement",
+ "categoria": "grammar",
+ "ancla": "EGP A1-C2",
+ "descripcion": "English adverbs of frequency and manner have fixed positions that don't match a direct translation from Spanish. At B2 the goal is to place always, never, usually and similar adverbs correctly before the main verb but after be, and to know where manner adverbs go at the end of a clause.",
+ "cuadroReferencia": {
+  "titulo": "Where adverbs go",
+  "columnas": [
+   "Adverb type",
+   "Position",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Frequency",
+    "before the main verb, after be",
+    "She always arrives on time. / She is always on time."
+   ],
+   [
+    "Manner",
+    "usually at the end",
+    "He spoke slowly and clearly."
+   ],
+   [
+    "Degree",
+    "before the adjective",
+    "It's really important."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She always arrives exactly on time.",
+   "audio": true
+  },
+  {
+   "texto": "He explained it slowly and clearly.",
+   "audio": true
+  },
+  {
+   "texto": "It's really important to check this first."
+  }
+ ],
+ "notas": [
+  "With be, the frequency adverb comes after it: she is never late, not she never is late.",
+  "With auxiliary verbs (have, will, can), the adverb goes between the auxiliary and the main verb: she has always liked it.",
+  "Manner adverbs at the start of a sentence are possible for emphasis but sound more literary: slowly, she opened the door."
+ ],
+ "contraste": {
+  "es": "El español coloca los adverbios de frecuencia con más libertad, a menudo al principio o al final de la oración (siempre llega a tiempo). Los hispanohablantes tienden a colocar always y never al principio de la oración inglesa, donde suena marcado o incorrecto."
+ },
+ "errores": [
+  "Placing a frequency adverb at the start or end of the sentence instead of before the main verb.",
+  "Putting the frequency adverb before be instead of after it.",
+  "Placing a manner adverb between the verb and its object: he explained slowly the plan instead of he explained the plan slowly."
+ ],
+ "redemittel": [
+  {
+   "expresion": "She always…",
+   "funcion": "frequency before the main verb",
+   "traducciones": {
+    "es": "Ella siempre…",
+    "de": "Sie… immer.",
+    "fr": "Elle… toujours.",
+    "it": "Lei… sempre.",
+    "pt": "Ela… sempre."
+   }
+  },
+  {
+   "expresion": "She is always…",
+   "funcion": "frequency after be",
+   "traducciones": {
+    "es": "Ella siempre está…",
+    "de": "Sie ist immer…",
+    "fr": "Elle est toujours…",
+    "it": "Lei è sempre…",
+    "pt": "Ela está sempre…"
+   }
+  },
+  {
+   "expresion": "…slowly and clearly.",
+   "funcion": "manner adverbs at the end",
+   "traducciones": {
+    "es": "…lenta y claramente.",
+    "de": "…langsam und deutlich.",
+    "fr": "…lentement et clairement.",
+    "it": "…lentamente e chiaramente.",
+    "pt": "…devagar e claramente."
+   }
+  },
+  {
+   "expresion": "It's really…",
+   "funcion": "degree before an adjective",
+   "traducciones": {
+    "es": "Es realmente…",
+    "de": "Es ist wirklich…",
+    "fr": "C’est vraiment…",
+    "it": "È davvero…",
+    "pt": "É mesmo…"
+   }
+  },
+  {
+   "expresion": "…has always…",
+   "funcion": "frequency with an auxiliary",
+   "traducciones": {
+    "es": "…siempre ha…",
+    "de": "…hat immer…",
+    "fr": "…a toujours…",
+    "it": "…ha sempre…",
+    "pt": "…sempre…"
+   }
+  },
+  {
+   "expresion": "…, unfortunately.",
+   "funcion": "sentence adverb at the end, informal",
+   "traducciones": {
+    "es": "…, por desgracia.",
+    "de": "…, leider.",
+    "fr": "…, malheureusement.",
+    "it": "…, purtroppo.",
+    "pt": "…, infelizmente."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the frequency adverb placed before the main verb, or after be?",
+  "Is the manner adverb at the end, not between the verb and its object?",
+  "Have I avoided putting always or never at the very start of the sentence?",
+  "Does the position sound natural, not translated from Spanish?",
+  "Are at least four different adverb positions used correctly?"
+ ],
+ "promptCorreccion": "Focus only on adverb placement. Check the position of frequency adverbs relative to be and main verbs, and the position of manner adverbs relative to the object. Do not rewrite the text."
+}

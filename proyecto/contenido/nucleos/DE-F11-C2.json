@@ -1,0 +1,114 @@
+{
+ "skillId": "DE-F11",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Gespräch steuern: einwerfen, nachfragen, korrigieren",
+ "categoria": "fluency",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird ein Gespräch nicht nur gesteuert, sondern aktiv moderiert: ein Einwurf lenkt das Gespräch auf einen produktiveren Punkt zurück, eine Nachfrage deckt eine unausgesprochene Prämisse auf, und eine Korrektur wird so platziert, dass sie das Gesicht des Gegenübers wahrt.",
+ "cuadroReferencia": {
+  "titulo": "Moderieren statt nur teilnehmen",
+  "columnas": [
+   "Funktion",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Zurücklenken",
+    "Bevor wir da weitermachen, sollten wir vielleicht zum eigentlichen Punkt zurückkehren."
+   ],
+   [
+    "Prämisse aufdecken",
+    "Das setzt eigentlich voraus, dass…, oder?"
+   ],
+   [
+    "Gesichtswahrende Korrektur",
+    "Ich glaube, da ist uns beiden ein Missverständnis unterlaufen."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Bevor wir da weitermachen, sollten wir vielleicht zum eigentlichen Punkt zurückkehren.",
+   "audio": true
+  },
+  {
+   "texto": "Das setzt eigentlich voraus, dass die Zahlen stimmen, oder?",
+   "audio": true
+  },
+  {
+   "texto": "Ich glaube, da ist uns beiden ein Missverständnis unterlaufen."
+  }
+ ],
+ "notas": [
+  "Uns beiden in einer Korrektur teilt die Verantwortung, selbst wenn der Fehler eindeutig beim Gegenüber liegt — das ist bewusste Gesichtswahrung.",
+  "Das setzt eigentlich voraus, dass deckt eine unausgesprochene Annahme auf, ohne sie direkt anzugreifen.",
+  "Diese Moderationsfunktionen setzen voraus, dass man das Gespräch als Ganzes im Blick behält, nicht nur den eigenen Redebeitrag."
+ ],
+ "contraste": {
+  "es": "Das kultivierte Spanisch moderiert Gespräche ähnlich taktvoll, sodass die Bewegungen übertragbar sind. Was oft fehlt, ist das genaue deutsche Vokabular für die gesichtswahrende Korrektur — uns beiden ist ein Missverständnis unterlaufen — statt einer direkteren Fehlerzuweisung."
+ },
+ "errores": [
+  "Eine Korrektur so formulieren, dass sie das Gegenüber blossstellt, statt das Gesicht zu wahren.",
+  "Eine unausgesprochene Prämisse direkt angreifen, statt sie als Frage aufzudecken.",
+  "Zu oft zurücklenken, wodurch man wie ein Moderator statt wie ein Gesprächsteilnehmer wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Bevor wir da weitermachen, …",
+   "funcion": "zurücklenken",
+   "traducciones": {
+    "es": "antes de seguir por ahí, …",
+    "en": "before we go further with that, …"
+   }
+  },
+  {
+   "expresion": "Das setzt eigentlich voraus, dass…, oder?",
+   "funcion": "Prämisse aufdecken",
+   "traducciones": {
+    "es": "eso en realidad presupone que…, ¿no?",
+    "en": "that actually assumes that…, doesn't it?"
+   }
+  },
+  {
+   "expresion": "Da ist uns beiden ein Missverständnis unterlaufen.",
+   "funcion": "gesichtswahrende Korrektur",
+   "traducciones": {
+    "es": "ahí se nos coló un malentendido a los dos",
+    "en": "we've both got a bit of a misunderstanding here"
+   }
+  },
+  {
+   "expresion": "Um noch mal auf den Kernpunkt zurückzukommen: …",
+   "funcion": "zurücklenken, formeller",
+   "traducciones": {
+    "es": "para volver al punto central: …",
+    "en": "to come back to the core point: …"
+   }
+  },
+  {
+   "expresion": "Vielleicht sollten wir da kurz genauer hinschauen.",
+   "funcion": "Nachfrage, taktvoll",
+   "traducciones": {
+    "es": "quizás deberíamos mirar eso con más detalle",
+    "en": "maybe we should look at that more closely"
+   }
+  },
+  {
+   "expresion": "Ich glaube, wir meinen da eigentlich dasselbe.",
+   "funcion": "Korrektur als scheinbare Übereinstimmung",
+   "traducciones": {
+    "es": "creo que en el fondo queremos decir lo mismo",
+    "en": "I think we're actually saying the same thing"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Wahrt die Korrektur das Gesicht des Gegenübers?",
+  "Wird eine unausgesprochene Prämisse als Frage aufgedeckt, nicht direkt angegriffen?",
+  "Ist das Zurücklenken sparsam eingesetzt, nicht übermässig?",
+  "Wirkt das Gespräch moderiert, nicht dominiert?",
+  "Würde ein Fachpublikum das Gespräch als gut moderiert empfinden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Einwürfe, Nachfragen und Korrekturen taktvoll und gesichtswahrend formuliert sind. Schreiben Sie den Text nicht neu."
+}

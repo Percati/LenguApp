@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-K05",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Phrasal Verbs, Collocation and Register Shift",
+ "categoria": "grammar",
+ "ancla": "CV Sociolinguistic appropriateness",
+ "descripcion": "Choosing between look into, investigate and conduct an inquiry is not really three separate vocabulary choices — it's one skill: reading the register the situation calls for and picking the phrasal verb, its Latinate synonym, or the fixed collocation that fits. Learned as isolated words, these three options compete uselessly; learned as a register ladder, they become one tool.",
+ "cuadroReferencia": {
+  "titulo": "One idea, three registers",
+  "columnas": [
+   "Register",
+   "Form",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Informal",
+    "phrasal verb",
+    "We need to look into this."
+   ],
+   [
+    "Neutral",
+    "Latinate verb",
+    "We need to investigate this."
+   ],
+   [
+    "Formal / institutional",
+    "fixed collocation",
+    "We need to conduct an inquiry into this."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "We should look into it before we decide anything.",
+   "audio": true
+  },
+  {
+   "texto": "The board agreed to investigate the matter further.",
+   "audio": true
+  },
+  {
+   "texto": "The company has launched a formal inquiry into the incident."
+  }
+ ],
+ "notas": [
+  "The three forms are not interchangeable by meaning alone — they signal who is speaking and in what context, which matters as much as the content.",
+  "A formal collocation (conduct an inquiry, launch an investigation) usually pairs a specific verb with a specific noun; these pairings are fixed.",
+  "Switching from a phrasal verb to a formal collocation mid-paragraph, without reason, reads as inconsistent register."
+ ],
+ "contraste": {
+  "es": "El español no tiene el mismo triple sistema de verbo compuesto, verbo latino y colocación fija — suele usar un único verbo (investigar) en casi todos los registros. Los hispanohablantes tienden a usar solo la forma neutral en inglés (investigate) y no explotan ni el extremo informal ni el extremo institucional."
+ },
+ "errores": [
+  "Using only the neutral Latinate verb and never the phrasal or the fixed collocation, missing the full register range.",
+  "Mixing an informal phrasal verb with a very formal fixed collocation in the same sentence.",
+  "Getting the collocation wrong: conduct an investigation rather than make an investigation."
+ ],
+ "redemittel": [
+  {
+   "expresion": "look into",
+   "funcion": "informal register",
+   "traducciones": {
+    "es": "investigar (informal)",
+    "de": "sich etwas ansehen / untersuchen",
+    "fr": "examiner / se pencher sur",
+    "it": "esaminare / indagare",
+    "pt": "investigar / analisar"
+   }
+  },
+  {
+   "expresion": "investigate",
+   "funcion": "neutral register",
+   "traducciones": {
+    "es": "investigar",
+    "de": "untersuchen",
+    "fr": "enquêter / examiner",
+    "it": "indagare / investigare",
+    "pt": "investigar"
+   }
+  },
+  {
+   "expresion": "conduct an inquiry into",
+   "funcion": "formal, institutional",
+   "traducciones": {
+    "es": "llevar a cabo una investigación sobre",
+    "de": "eine Untersuchung zu… durchführen",
+    "fr": "mener une enquête sur…",
+    "it": "condurre un’indagine su…",
+    "pt": "conduzir um inquérito sobre…"
+   }
+  },
+  {
+   "expresion": "launch an investigation",
+   "funcion": "formal, fixed collocation",
+   "traducciones": {
+    "es": "iniciar una investigación",
+    "de": "eine Untersuchung einleiten",
+    "fr": "lancer une enquête",
+    "it": "avviare un’indagine",
+    "pt": "iniciar uma investigação"
+   }
+  },
+  {
+   "expresion": "get to the bottom of",
+   "funcion": "informal, idiomatic",
+   "traducciones": {
+    "es": "llegar al fondo de",
+    "de": "einer Sache auf den Grund gehen",
+    "fr": "aller au fond de",
+    "it": "andare a fondo di",
+    "pt": "ir ao fundo de"
+   }
+  },
+  {
+   "expresion": "carry out a review of",
+   "funcion": "formal, institutional",
+   "traducciones": {
+    "es": "llevar a cabo una revisión de",
+    "de": "eine Überprüfung von… durchführen",
+    "fr": "effectuer un examen de…",
+    "it": "effettuare una revisione di…",
+    "pt": "realizar uma revisão de…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Does the chosen form (phrasal, neutral, formal) match the register of the whole text?",
+  "Is the fixed collocation used with its correct verb, not a substitute?",
+  "Have I avoided switching registers mid-paragraph without reason?",
+  "Have I used at least two of the three registers deliberately, to show contrast?",
+  "Would the intended reader find the register appropriate?"
+ ],
+ "promptCorreccion": "Focus only on the choice between phrasal verbs, neutral verbs and formal collocations. Check register consistency throughout and flag any incorrect fixed collocation. Do not rewrite the text."
+}

@@ -1,0 +1,108 @@
+{
+ "skillId": "EN-F02",
+ "nivel": "C2",
+ "idioma": "en",
+ "titulo": "Agreeing and Disagreeing",
+ "categoria": "fluency",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 disagreement is precise about which part of a claim is contested — the premise, the logic, or the conclusion — rather than a blanket reaction. This precision is what separates expert disagreement from ordinary pushback.",
+ "cuadroReferencia": {
+  "titulo": "Where exactly the disagreement sits",
+  "columnas": [
+   "Level",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Premise",
+    "I'd question the starting assumption there."
+   ],
+   [
+    "Logic",
+    "I don't think that conclusion actually follows."
+   ],
+   [
+    "Conclusion only",
+    "I'll grant the reasoning, but not where it ends up."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I'd question the starting assumption there, before we even get to the argument.",
+   "audio": true
+  },
+  {
+   "texto": "I don't think that conclusion actually follows from the evidence given.",
+   "audio": true
+  },
+  {
+   "texto": "I'll grant the reasoning, but I don't think it ends up where you think it does."
+  }
+ ],
+ "notas": [
+  "Naming the level of disagreement (premise, logic, conclusion) shows the other person exactly where to focus a response, rather than forcing them to guess.",
+  "I'll grant… but… concedes something specific before disagreeing, which is more persuasive than a flat no.",
+  "This precision matters most in genuinely technical or academic disagreement, where a vague no wastes everyone's time."
+ ],
+ "contraste": {
+  "es": "El español culto también puede ser preciso al discrepar (no comparto la premisa, pero sí el razonamiento), así que el movimiento es transferible. Lo que suele faltar es el vocabulario técnico exacto en inglés para nombrar cada nivel — premise, it doesn't follow, grant — en vez de recurrir a un desacuerdo genérico."
+ },
+ "errores": [
+  "Disagreeing globally when the actual objection is only to one specific level.",
+  "Using it doesn't follow as a vague dismissal rather than a precise logical objection.",
+  "Failing to grant anything, which makes the disagreement sound total rather than targeted."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I'd question the premise.",
+   "funcion": "disagreement at the premise level",
+   "traducciones": {
+    "es": "cuestionaría la premisa"
+   }
+  },
+  {
+   "expresion": "That doesn't actually follow.",
+   "funcion": "disagreement at the logic level",
+   "traducciones": {
+    "es": "eso en realidad no se sigue"
+   }
+  },
+  {
+   "expresion": "I'll grant…, but…",
+   "funcion": "targeted concession then objection",
+   "traducciones": {
+    "es": "concedo…, pero…"
+   }
+  },
+  {
+   "expresion": "The reasoning holds, but the conclusion overreaches.",
+   "funcion": "disagreement at the conclusion level",
+   "traducciones": {
+    "es": "el razonamiento se sostiene, pero la conclusión exagera"
+   }
+  },
+  {
+   "expresion": "That's a separate question from…",
+   "funcion": "isolates the actual point of contention",
+   "traducciones": {
+    "es": "eso es una cuestión aparte de…"
+   }
+  },
+  {
+   "expresion": "We may simply be starting from different premises.",
+   "funcion": "reframes as a premise-level disagreement",
+   "traducciones": {
+    "es": "quizás partimos de premisas distintas"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I identified exactly which level (premise, logic, conclusion) I'm disagreeing with?",
+  "Have I granted anything specific before disagreeing?",
+  "Would the other person know precisely where to focus a response?",
+  "Have I avoided a vague, global disagreement where a targeted one would serve better?",
+  "Would an expert in this field find the objection precise, not vague?"
+ ],
+ "promptCorreccion": "Focus only on the precision of the disagreement. Check whether the level of disagreement (premise, logic, conclusion) is named clearly. Do not rewrite the text."
+}

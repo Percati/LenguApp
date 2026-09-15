@@ -1,0 +1,143 @@
+{
+ "skillId": "DE-G12",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Nominalisierung und Nominalstil",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C1",
+ "descripcion": "Auf C1 geht es nicht mehr nur um die Umwandlung von Nebensatz zu Nominalphrase, sondern um den bewussten Wechsel zwischen Nominal- und Verbalstil je nach Textsorte: ein Bericht verlangt Nominalstil, eine E-Mail an eine Kollegin nicht. Wer nur nominalisieren kann, aber nicht weiss wann, hat die Hälfte des Skills.",
+ "cuadroReferencia": {
+  "titulo": "Wann welcher Stil",
+  "columnas": [
+   "Textsorte",
+   "Stil",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Bericht, Protokoll",
+    "nominal",
+    "Nach Abschluss der Prüfung erfolgt die Freigabe."
+   ],
+   [
+    "E-Mail an Kollegen",
+    "verbal",
+    "Sobald wir geprüft haben, geben wir frei."
+   ],
+   [
+    "Wissenschaftlicher Aufsatz",
+    "nominal, mit Fachverben",
+    "Die Untersuchung der Ursachen ergab…"
+   ],
+   [
+    "Mündlicher Vortrag",
+    "gemischt, eher verbal",
+    "Wir haben untersucht, warum…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Nach Abschluss der Prüfung erfolgt die Freigabe der Anlage.",
+   "audio": true
+  },
+  {
+   "texto": "Die Untersuchung der Ursachen ergab keine eindeutigen Befunde.",
+   "audio": true
+  },
+  {
+   "texto": "Sobald wir das geprüft haben, sagen wir Bescheid.",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Derselbe Sachverhalt sollte je nach Textsorte einmal nominal und einmal verbal formuliert werden können — das ist die eigentliche C1-Kompetenz, nicht nur das Nominalisieren an sich.",
+  "Zu viel Nominalstil in einer E-Mail wirkt kalt oder sarkastisch, selbst wenn er grammatisch korrekt ist.",
+  "Fachverben wie ergeben, aufzeigen, belegen passen zum nominalen Wissenschaftsstil und ersetzen ein einfaches zeigen."
+ ],
+ "contraste": {
+  "es": "Das Spanische nominalisiert insgesamt weniger und bevorzugt auch im Bericht oft Infinitivkonstruktionen (tras revisar la instalación). Spanischsprachige unternominalisieren deshalb systematisch im deutschen Bericht und müssen aktiv gegensteuern, nicht nur eine Regel anwenden.",
+  "en": "English professional writing is often less nominal than German at the same formality level, so English speakers frequently undernominalise German reports for the same reason as Spanish speakers, even though the underlying grammar (gerunds, nominalisations) is available in English too."
+ },
+ "errores": [
+  "Nominalstil in einer informellen E-Mail verwenden, wo er unpassend wirkt.",
+  "Verbalstil in einem formellen Bericht beibehalten, wo Nominalstil erwartet wird.",
+  "Denselben Sachverhalt nicht in beide Richtungen umformulieren können, wenn die Textsorte wechselt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Nach Abschluss der…",
+   "funcion": "zeitliche Vorordnung, nominal",
+   "traducciones": {
+    "es": "Tras la conclusión de…",
+    "en": "Following the completion of…",
+    "fr": "Après l’achèvement de…",
+    "it": "Dopo il completamento di…",
+    "pt": "Após a conclusão de…"
+   }
+  },
+  {
+   "expresion": "Die Untersuchung ergab, dass…",
+   "funcion": "Ergebnis, wissenschaftlich",
+   "traducciones": {
+    "es": "La investigación reveló que…",
+    "en": "The investigation found that…",
+    "fr": "L’enquête a révélé que…",
+    "it": "L’indagine ha rilevato che…",
+    "pt": "A investigação revelou que…"
+   }
+  },
+  {
+   "expresion": "Sobald wir … haben, …",
+   "funcion": "verbale Alternative, informell",
+   "traducciones": {
+    "es": "En cuanto hayamos…, …",
+    "en": "As soon as we've…, …",
+    "fr": "Dès que nous aurons…, …",
+    "it": "Non appena avremo…, …",
+    "pt": "Assim que tivermos…, …"
+   }
+  },
+  {
+   "expresion": "Im Rahmen der Untersuchung wurde festgestellt, dass…",
+   "funcion": "formeller Rahmen setzen",
+   "traducciones": {
+    "es": "En el marco de la investigación se constató que…",
+    "en": "As part of the investigation, it was found that…",
+    "fr": "Dans le cadre de l’enquête, il a été constaté que…",
+    "it": "Nell’ambito dell’indagine è stato constatato che…",
+    "pt": "No âmbito da investigação, constatou-se que…"
+   }
+  },
+  {
+   "expresion": "Kurz gesagt, wir haben…",
+   "funcion": "verbaler Einstieg, mündlich",
+   "traducciones": {
+    "es": "En resumen, nosotros…",
+    "en": "In short, we've…",
+    "fr": "En bref, nous avons…",
+    "it": "In breve, abbiamo…",
+    "pt": "Resumindo, nós…"
+   }
+  },
+  {
+   "expresion": "Die Feststellung lautet, dass…",
+   "funcion": "Ergebnis, formell",
+   "traducciones": {
+    "es": "La conclusión es que…",
+    "en": "The finding is that…",
+    "fr": "Le constat est que…",
+    "it": "La constatazione è che…",
+    "pt": "A constatação é que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Passt der Stil (nominal oder verbal) zur Textsorte?",
+  "Könnte ich denselben Inhalt in die jeweils andere Form umschreiben?",
+  "Ist die E-Mail-Version wirklich verbal, nicht versehentlich nominal geblieben?",
+  "Klingen die Fachverben (ergeben, belegen) natürlich im Kontext?",
+  "Wirkt der Bericht nicht zu verbal für sein Register?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen Nominal- und Verbalstil je nach Textsorte. Prüfen Sie, ob der gewählte Stil zur Situation passt, und zeigen Sie mir, wie ein Satz in der jeweils anderen Form aussähe. Schreiben Sie den Text nicht neu."
+}

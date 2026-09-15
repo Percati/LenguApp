@@ -1,0 +1,132 @@
+{
+ "skillId": "EN-F14",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Giving Constructive Feedback",
+ "categoria": "fluency",
+ "ancla": "CV Facilitating collaborative interaction",
+ "descripcion": "At B2 feedback names what happened and what to change, kept separate from a judgement of character. The full four-slot structure with an acknowledged limit (C1) isn't the target yet — describing behaviour and suggesting a change clearly is enough.",
+ "cuadroReferencia": {
+  "titulo": "Feedback: behaviour, not character",
+  "columnas": [
+   "Type",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Character (avoid)",
+    "You're careless."
+   ],
+   [
+    "Behaviour (use)",
+    "The report had a few mistakes in it."
+   ],
+   [
+    "Suggestion",
+    "Maybe double-check the numbers next time."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The report had a few mistakes in the numbers.",
+   "audio": true
+  },
+  {
+   "texto": "Maybe it would help to double-check before sending it.",
+   "audio": true
+  },
+  {
+   "texto": "Can I give you some quick feedback on that?"
+  }
+ ],
+ "notas": [
+  "Asking permission first (can I give you some feedback?) makes the rest much easier to accept.",
+  "Describing behaviour instead of character avoids sounding like a personal attack.",
+  "One suggestion at a time is more useful than a long list of everything that could be improved."
+ ],
+ "contraste": {
+  "es": "En español la retroalimentación suele ser más indirecta o, si es directa, se acerca más a la evaluación de la persona. La estructura inglesa de separar comportamiento de carácter no es automática para hispanohablantes, que tienden a mezclar ambos en la misma frase."
+ },
+ "errores": [
+  "Judging character instead of describing behaviour: you're disorganised instead of the files weren't labelled clearly.",
+  "Giving feedback without asking permission first.",
+  "Giving several pieces of feedback at once instead of focusing on one."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Can I give you some feedback?",
+   "funcion": "asks permission",
+   "traducciones": {
+    "es": "¿Te puedo dar una devolución?",
+    "de": "Kann ich dir etwas Feedback geben?",
+    "fr": "Je peux te faire un retour ?",
+    "it": "Posso darti un feedback?",
+    "pt": "Posso dar-te algum feedback?"
+   }
+  },
+  {
+   "expresion": "The report had…",
+   "funcion": "describes behaviour, not character",
+   "traducciones": {
+    "es": "El informe tenía…",
+    "de": "Der Bericht hatte…",
+    "fr": "Le rapport avait…",
+    "it": "Il rapporto aveva…",
+    "pt": "O relatório tinha…"
+   }
+  },
+  {
+   "expresion": "Maybe it would help to…",
+   "funcion": "suggestion",
+   "traducciones": {
+    "es": "Quizás ayudaría…",
+    "de": "Vielleicht würde es helfen,…",
+    "fr": "Cela aiderait peut-être de…",
+    "it": "Forse aiuterebbe…",
+    "pt": "Talvez ajudasse…"
+   }
+  },
+  {
+   "expresion": "Next time, it might be worth…",
+   "funcion": "forward-looking suggestion",
+   "traducciones": {
+    "es": "La próxima vez, podría valer la pena…",
+    "de": "Beim nächsten Mal könnte es sich lohnen,…",
+    "fr": "La prochaine fois, cela vaudrait peut-être la peine de…",
+    "it": "La prossima volta potrebbe valere la pena…",
+    "pt": "Da próxima vez, talvez valha a pena…"
+   }
+  },
+  {
+   "expresion": "One thing I noticed was…",
+   "funcion": "specific observation",
+   "traducciones": {
+    "es": "Una cosa que noté fue…",
+    "de": "Eine Sache, die mir aufgefallen ist, war…",
+    "fr": "Une chose que j’ai remarquée, c’est…",
+    "it": "Una cosa che ho notato è stata…",
+    "pt": "Uma coisa que notei foi…"
+   }
+  },
+  {
+   "expresion": "Overall it was good, but…",
+   "funcion": "balances praise and feedback",
+   "traducciones": {
+    "es": "En general estuvo bien, pero…",
+    "de": "Insgesamt war es gut, aber…",
+    "fr": "Dans l’ensemble, c’était bien, mais…",
+    "it": "Nel complesso è andata bene, ma…",
+    "pt": "No geral, foi bom, mas…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the feedback about behaviour, not character?",
+  "Was permission asked before giving feedback?",
+  "Is only one main point given, not a long list?",
+  "Is there a clear, specific suggestion for next time?",
+  "Would the other person know exactly what to change?"
+ ],
+ "promptCorreccion": "Focus only on how the feedback is given. Check whether it describes behaviour rather than character, and whether it includes a specific, actionable suggestion. Do not rewrite the text."
+}

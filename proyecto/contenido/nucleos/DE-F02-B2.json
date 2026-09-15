@@ -1,0 +1,136 @@
+{
+ "skillId": "DE-F02",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Zustimmen und widersprechen",
+ "categoria": "fluency",
+ "ancla": "PD B2",
+ "descripcion": "Auf B2 lernt man, höflich zu widersprechen, ohne die Aussage der anderen Person direkt anzugreifen — der Grad-Unterschied zwischen Teilzustimmung und klarem Widerspruch (C1) ist hier noch nicht das Ziel. Es reicht, zwischen ja, aber und ich sehe das anders sicher zu wählen.",
+ "cuadroReferencia": {
+  "titulo": "Zustimmung und Widerspruch",
+  "columnas": [
+   "Funktion",
+   "Formel"
+  ],
+  "filas": [
+   [
+    "Zustimmung",
+    "Da stimme ich dir zu."
+   ],
+   [
+    "Teilweise Zustimmung",
+    "Ja, aber…"
+   ],
+   [
+    "Höflicher Widerspruch",
+    "Ich sehe das etwas anders."
+   ],
+   [
+    "Klarer Widerspruch",
+    "Ich bin da anderer Meinung."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Da stimme ich dir voll und ganz zu.",
+   "audio": true
+  },
+  {
+   "texto": "Ja, das stimmt, aber ich sehe da noch ein Problem.",
+   "audio": true
+  },
+  {
+   "texto": "Ich bin da ehrlich gesagt anderer Meinung."
+  }
+ ],
+ "notas": [
+  "Ja, aber ist die häufigste und nützlichste Formel, um zuzustimmen und trotzdem einzuschränken.",
+  "Ich sehe das etwas anders ist höflicher als ich bin anderer Meinung und passt besser zu einem ersten Widerspruch.",
+  "Zustimmen mit Nachdruck (voll und ganz) lohnt sich, bevor man später widerspricht — es zeigt, dass man zuhört."
+ ],
+ "contraste": {
+  "es": "Im Spanischen ist direkter Widerspruch (no estoy de acuerdo) sozial akzeptierter als im Deutschen. Spanischsprachige widersprechen deshalb oft direkter als im Deutschen erwartet und lassen die einleitende Ja, aber-Formel weg."
+ },
+ "errores": [
+  "Direkt widersprechen, ohne vorher etwas anzuerkennen.",
+  "Ja, aber nur mit ja beginnen und das aber vergessen, wodurch der Widerspruch unklar bleibt.",
+  "Immer dieselbe Formel benutzen, unabhängig davon, ob man ganz oder nur teilweise widerspricht."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Da stimme ich dir zu.",
+   "funcion": "Zustimmung",
+   "traducciones": {
+    "es": "En eso estoy de acuerdo con vos.",
+    "en": "I agree with you there.",
+    "fr": "Là-dessus, je suis d’accord avec toi.",
+    "it": "Su questo sono d’accordo con te.",
+    "pt": "Nisso concordo contigo."
+   }
+  },
+  {
+   "expresion": "Ja, aber…",
+   "funcion": "Teilzustimmung",
+   "traducciones": {
+    "es": "Sí, pero…",
+    "en": "Yes, but…",
+    "fr": "Oui, mais…",
+    "it": "Sì, ma…",
+    "pt": "Sim, mas…"
+   }
+  },
+  {
+   "expresion": "Ich sehe das etwas anders.",
+   "funcion": "höflicher Widerspruch",
+   "traducciones": {
+    "es": "Yo lo veo un poco distinto.",
+    "en": "I see it a bit differently.",
+    "fr": "Je vois les choses un peu différemment.",
+    "it": "Io la vedo un po’ diversamente.",
+    "pt": "Eu vejo isso de forma um pouco diferente."
+   }
+  },
+  {
+   "expresion": "Ich bin da anderer Meinung.",
+   "funcion": "klarer Widerspruch",
+   "traducciones": {
+    "es": "Ahí tengo otra opinión.",
+    "en": "I have a different opinion there.",
+    "fr": "Je ne suis pas du même avis.",
+    "it": "Su questo ho un’opinione diversa.",
+    "pt": "Tenho uma opinião diferente sobre isso."
+   }
+  },
+  {
+   "expresion": "Das kann schon sein, aber…",
+   "funcion": "vorsichtige Teilzustimmung",
+   "traducciones": {
+    "es": "Puede ser, pero…",
+    "en": "That may be, but…",
+    "fr": "C’est possible, mais…",
+    "it": "Può darsi, ma…",
+    "pt": "Pode ser, mas…"
+   }
+  },
+  {
+   "expresion": "Genau, das sehe ich auch so.",
+   "funcion": "starke Zustimmung",
+   "traducciones": {
+    "es": "Exacto, yo también lo veo así.",
+    "en": "Exactly, I see it the same way.",
+    "fr": "Exactement, je le vois aussi comme ça.",
+    "it": "Esatto, anch’io la vedo così.",
+    "pt": "Exatamente, eu também vejo assim."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich vor dem Widerspruch etwas anerkannt?",
+  "Ist bei Ja, aber das aber klar vorhanden?",
+  "Passt die Formel zum Grad meiner Zustimmung oder meines Widerspruchs?",
+  "Klingt der Widerspruch höflich, nicht schroff?",
+  "Habe ich mindestens zwei verschiedene Formeln benutzt, nicht immer dieselbe?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Zustimmung und Widerspruch. Prüfen Sie, ob die passende Formel gewählt wurde und ob der Widerspruch höflich klingt. Schreiben Sie den Text nicht neu."
+}

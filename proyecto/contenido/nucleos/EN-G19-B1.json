@@ -1,0 +1,110 @@
+{
+ "skillId": "EN-G19",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Word Order and Adverb Placement",
+ "categoria": "grammar",
+ "ancla": "EGP A1-B1",
+ "descripcion": "At B1 you place adverbs of frequency, like always, usually and never, correctly: before the main verb but after the verb be. This basic word-order rule prevents one of the most common and noticeable mistakes at this level.",
+ "cuadroReferencia": {
+  "titulo": "Frequency adverb position",
+  "columnas": [
+   "Rule",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Before the main verb",
+    "She always arrives on time."
+   ],
+   [
+    "After be",
+    "She is always on time."
+   ],
+   [
+    "With never",
+    "no extra not needed",
+    "I never go there."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She always arrives exactly on time.",
+   "audio": true
+  },
+  {
+   "texto": "She is always on time for meetings.",
+   "audio": true
+  },
+  {
+   "texto": "I usually have coffee in the morning."
+  }
+ ],
+ "notas": [
+  "With a normal verb, the frequency adverb goes before it: she always arrives.",
+  "With be, the adverb goes after it: she is always.",
+  "Never makes the sentence negative in meaning without needing not: I never go there."
+ ],
+ "contraste": {
+  "es": "El español coloca los adverbios de frecuencia con más libertad, a menudo al principio de la oración (siempre llega a tiempo). Los hispanohablantes tienden a poner always al principio de la oración inglesa, donde suena poco natural."
+ },
+ "errores": [
+  "Placing the frequency adverb at the start of the sentence.",
+  "Putting the adverb before be instead of after it.",
+  "Using not together with never, which is redundant."
+ ],
+ "redemittel": [
+  {
+   "expresion": "She always…",
+   "funcion": "frequency before the verb",
+   "traducciones": {
+    "es": "Ella siempre…"
+   }
+  },
+  {
+   "expresion": "She is always…",
+   "funcion": "frequency after be",
+   "traducciones": {
+    "es": "Ella siempre está…"
+   }
+  },
+  {
+   "expresion": "I usually…",
+   "funcion": "frequency, habit",
+   "traducciones": {
+    "es": "Normalmente yo…"
+   }
+  },
+  {
+   "expresion": "I never…",
+   "funcion": "frequency, negative meaning",
+   "traducciones": {
+    "es": "Nunca…"
+   }
+  },
+  {
+   "expresion": "I sometimes…",
+   "funcion": "frequency, occasional",
+   "traducciones": {
+    "es": "A veces…"
+   }
+  },
+  {
+   "expresion": "…is often…",
+   "funcion": "frequency, with be",
+   "traducciones": {
+    "es": "…suele estar…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the frequency adverb before the main verb?",
+  "Is it after be, not before?",
+  "Have I avoided using not together with never?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on the position of frequency adverbs relative to be and to main verbs. Check whether the sentence sounds natural rather than translated. Do not rewrite the text."
+}

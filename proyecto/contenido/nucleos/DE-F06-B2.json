@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-F06",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Ratschläge geben",
+ "categoria": "fluency",
+ "ancla": "PD B2",
+ "descripcion": "Auf B2 gibt man Ratschläge mit an deiner Stelle würde ich oder du solltest, ohne die C1-Feinheit, sie als reine Option zu präsentieren und die Verantwortung explizit zurückzugeben. Die Grundform des höflichen Rats reicht hier aus: klar formulieren, freundlich im Ton, nicht mehrfach wiederholen.",
+ "cuadroReferencia": {
+  "titulo": "Formen des Ratschlags",
+  "columnas": [
+   "Form",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "An deiner Stelle würde ich…",
+    "An deiner Stelle würde ich mit ihr reden."
+   ],
+   [
+    "Du solltest…",
+    "Du solltest das nicht so lange aufschieben."
+   ],
+   [
+    "Warum … nicht?",
+    "Warum probierst du es nicht einfach mal?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "An deiner Stelle würde ich einfach direkt mit ihr reden.",
+   "audio": true
+  },
+  {
+   "texto": "Du solltest das wirklich nicht so lange vor dir herschieben.",
+   "audio": true
+  },
+  {
+   "texto": "Warum probierst du es nicht einfach mal aus?"
+  }
+ ],
+ "notas": [
+  "An deiner Stelle würde ich ist höflicher als du solltest, weil es den Rat als eigene Perspektive rahmt.",
+  "Warum … nicht? ist eine freundliche Form, einen Rat als Frage zu formulieren statt als direkte Aussage.",
+  "Du solltest ist auf B2 noch akzeptabel, sollte aber nicht in jedem Satz wiederholt werden."
+ ],
+ "contraste": {
+  "es": "Im Spanischen ist deberías ähnlich direkt wie du solltest und sozial gut akzeptiert. Die Formel an deiner Stelle würde ich hat eine enge spanische Entsprechung (yo en tu lugar), sodass sich diese Struktur leicht überträgt."
+ },
+ "errores": [
+  "Du solltest in jedem Satz wiederholen, was belehrend wirkt.",
+  "Den Konjunktiv II nach an deiner Stelle vergessen: an deiner Stelle ich rede statt würde ich reden.",
+  "Einen Rat geben, ohne dass danach gefragt wurde, in einem sensiblen Thema."
+ ],
+ "redemittel": [
+  {
+   "expresion": "An deiner Stelle würde ich…",
+   "funcion": "Rat, höflich",
+   "traducciones": {
+    "es": "Yo en tu lugar…",
+    "en": "If I were you, I'd…",
+    "fr": "À ta place, je…",
+    "it": "Al tuo posto, io…",
+    "pt": "No teu lugar, eu…"
+   }
+  },
+  {
+   "expresion": "Du solltest…",
+   "funcion": "direkter Rat",
+   "traducciones": {
+    "es": "Deberías…",
+    "en": "You should…",
+    "fr": "Tu devrais…",
+    "it": "Dovresti…",
+    "pt": "Devias…"
+   }
+  },
+  {
+   "expresion": "Warum probierst du nicht…?",
+   "funcion": "Rat als Frage",
+   "traducciones": {
+    "es": "¿Por qué no probás…?",
+    "en": "Why don't you try…?",
+    "fr": "Pourquoi tu n’essaies pas… ?",
+    "it": "Perché non provi…?",
+    "pt": "Porque não experimentas…?"
+   }
+  },
+  {
+   "expresion": "Es wäre vielleicht besser, wenn…",
+   "funcion": "abgeschwächter Rat",
+   "traducciones": {
+    "es": "Quizás sería mejor si…",
+    "en": "It might be better if…",
+    "fr": "Ce serait peut-être mieux si…",
+    "it": "Forse sarebbe meglio se…",
+    "pt": "Talvez fosse melhor se…"
+   }
+  },
+  {
+   "expresion": "Ich würde dir raten, zu…",
+   "funcion": "formeller Rat",
+   "traducciones": {
+    "es": "Te aconsejaría que…",
+    "en": "I'd advise you to…",
+    "fr": "Je te conseillerais de…",
+    "it": "Ti consiglierei di…",
+    "pt": "Aconselhar-te-ia a…"
+   }
+  },
+  {
+   "expresion": "Hast du schon mal überlegt, zu…?",
+   "funcion": "Rat als sanfte Frage",
+   "traducciones": {
+    "es": "¿Ya pensaste en…?",
+    "en": "Have you thought about…?",
+    "fr": "Tu as déjà pensé à… ?",
+    "it": "Hai già pensato di…?",
+    "pt": "Já pensaste em…?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht nach an deiner Stelle der Konjunktiv II?",
+  "Habe ich du solltest nicht mehrfach wiederholt?",
+  "Klingt der Rat freundlich, nicht belehrend?",
+  "Passt der Rat zur Situation und wurde er nicht ungefragt gegeben?",
+  "Habe ich mindestens zwei verschiedene Formen benutzt, nicht immer dieselbe?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Form des Ratschlags. Prüfen Sie den Konjunktiv II nach an deiner Stelle und ob der Ton freundlich bleibt. Schreiben Sie den Text nicht neu."
+}

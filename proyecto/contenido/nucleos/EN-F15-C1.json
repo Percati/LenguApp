@@ -1,0 +1,180 @@
+{
+ "skillId": "EN-F15",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Managing a Conversation",
+ "categoria": "fluency",
+ "descripcion": "This is probably the skill that limits spoken English most, and the least taught. Courses train you to produce sentences; they do not train you to get a turn, keep it while you think, hand it over, or recover when you lose the thread mid-sentence. Fluency is not speed — it is the ability to keep the channel open while you think.",
+ "cuadroReferencia": {
+  "titulo": "The five moves",
+  "columnas": [
+   "Move",
+   "Function",
+   "Language"
+  ],
+  "filas": [
+   [
+    "Taking",
+    "get a turn without waiting for silence",
+    "*Can I jump in on that?* / *Sorry, before we move on —*"
+   ],
+   [
+    "Holding",
+    "keep the turn while searching",
+    "*Give me a second, I'm working out how to say this* / *There's a word I'm looking for — bear with me*"
+   ],
+   [
+    "Yielding",
+    "hand it back deliberately",
+    "*But you were going to say something* / *What's your take?*"
+   ],
+   [
+    "Repairing",
+    "fix a broken sentence out loud",
+    "*Let me start that again* / *That came out wrong — what I meant was…*"
+   ],
+   [
+    "Buying time",
+    "fill while thinking",
+    "*That's a good question, actually* / *It depends what you mean by…*"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*Sorry, before we move on — can I go back to what you said about your sister?*"
+  },
+  {
+   "texto": "*There's a word I'm looking for, bear with me… estranged. That's it.*",
+   "audio": true
+  },
+  {
+   "texto": "*That came out wrong. What I meant was that I understood why she did it, not that I agreed.*",
+   "audio": true
+  },
+  {
+   "texto": "*Can I jump in on that?*",
+   "audio": true
+  },
+  {
+   "texto": "*Let me start that again.*",
+   "audio": true
+  },
+  {
+   "texto": "*But you were going to say something.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Announcing that you are searching for a word is a C1 move, not a failure. Native speakers do it constantly.",
+  "Silence costs more in English than in Spanish. Filled pauses (*right*, *so*, *I mean*) keep the turn.",
+  "Explicit repair is far better than trailing off."
+ ],
+ "contraste": {
+  "es": "Spanish conversation tolerates and expects more overlap and interruption than English does — but English compensates by making the *taking* explicit and verbal. Where Spanish simply starts talking, English announces first."
+ },
+ "errores": [
+  "Apologising for your English mid-conversation. It moves the listener's attention onto your level.",
+  "*Sorry, my English is bad* — never say this. Say *bear with me*.",
+  "Abandoning a lost sentence instead of repairing it aloud.",
+  "Waiting for a clean gap that never comes."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Can I jump in?",
+   "funcion": "takes the floor",
+   "traducciones": {
+    "es": "¿puedo meter una?",
+    "de": "Kann ich kurz einhaken?",
+    "fr": "Je peux intervenir ?",
+    "it": "Posso intervenire un attimo?",
+    "pt": "Posso intervir?"
+   }
+  },
+  {
+   "expresion": "Sorry, before we move on —",
+   "funcion": "takes it back to an earlier point",
+   "traducciones": {
+    "es": "perdón, antes de seguir…",
+    "de": "Entschuldige, bevor wir weitermachen —",
+    "fr": "Désolé, avant de passer à la suite —",
+    "it": "Scusa, prima di andare avanti —",
+    "pt": "Desculpa, antes de continuarmos —"
+   }
+  },
+  {
+   "expresion": "Bear with me",
+   "funcion": "holds the turn while searching",
+   "traducciones": {
+    "es": "dame un segundo",
+    "de": "Hab kurz Geduld mit mir.",
+    "fr": "Patiente un instant avec moi.",
+    "it": "Abbi un attimo di pazienza.",
+    "pt": "Tem um pouco de paciência comigo."
+   }
+  },
+  {
+   "expresion": "Let me start that again",
+   "funcion": "explicit repair",
+   "traducciones": {
+    "es": "lo digo de nuevo",
+    "de": "Ich fange noch einmal an.",
+    "fr": "Je recommence.",
+    "it": "Ricomincio.",
+    "pt": "Vou começar outra vez."
+   }
+  },
+  {
+   "expresion": "I've lost my thread",
+   "funcion": "admits the breakdown and keeps going",
+   "traducciones": {
+    "es": "perdí el hilo",
+    "de": "Ich habe den Faden verloren.",
+    "fr": "J’ai perdu le fil.",
+    "it": "Ho perso il filo.",
+    "pt": "Perdi o fio à meada."
+   }
+  },
+  {
+   "expresion": "What's your take?",
+   "funcion": "yields the turn",
+   "traducciones": {
+    "es": "¿vos qué opinás?",
+    "de": "Wie siehst du das?",
+    "fr": "Quel est ton avis ?",
+    "it": "Che ne pensi?",
+    "pt": "Qual é a tua opinião?"
+   }
+  },
+  {
+   "expresion": "I'll stop there",
+   "funcion": "closes your turn cleanly",
+   "traducciones": {
+    "es": "lo dejo ahí",
+    "de": "Ich höre hier auf.",
+    "fr": "Je m’arrête là.",
+    "it": "Mi fermo qui.",
+    "pt": "Fico por aqui."
+   }
+  },
+  {
+   "expresion": "It depends what you mean by…",
+   "funcion": "buys time and clarifies",
+   "traducciones": {
+    "es": "depende de qué entiendas por…",
+    "de": "Es hängt davon ab, was du mit … meinst.",
+    "fr": "Ça dépend de ce que tu entends par…",
+    "it": "Dipende da cosa intendi per…",
+    "pt": "Depende do que queres dizer com…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Did I take the floor verbally, or wait for a gap?",
+  "Did I hold a turn while searching, or go silent?",
+  "Did I repair aloud, or trail off?",
+  "Did I apologise for my English?",
+  "Did I hand the turn back at least twice?"
+ ],
+ "promptCorreccion": "Focus only on conversation management. (1) Mark every taking, holding, yielding and repair move. (2) Flag where I trailed off instead of repairing. (3) Flag any apology for my own English. (4) Give me three natural time-buying phrases at C1 that I did not use. Do not rewrite the text."
+}

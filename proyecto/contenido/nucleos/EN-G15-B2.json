@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-G15",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Reduced Relative and Participle Clauses",
+ "categoria": "grammar",
+ "ancla": "EGP B1+",
+ "descripcion": "At B2 the basic reduction of a relative clause is learned: dropping the pronoun and auxiliary when the clause is passive or continuous, as long as the missing pronoun would be the subject. The C1 refinement of combining this with nominalisation in dense reports isn't the focus here.",
+ "cuadroReferencia": {
+  "titulo": "What reduces to what",
+  "columnas": [
+   "Full clause",
+   "Reduced",
+   "Type"
+  ],
+  "filas": [
+   [
+    "the email which was sent…",
+    "the email sent…",
+    "passive"
+   ],
+   [
+    "anyone who is waiting…",
+    "anyone waiting…",
+    "active"
+   ],
+   [
+    "the book which I read",
+    "cannot be reduced",
+    "pronoun is the object"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The email sent this morning hasn't been answered yet.",
+   "audio": true
+  },
+  {
+   "texto": "Anyone waiting outside should come in now.",
+   "audio": true
+  },
+  {
+   "texto": "The people invited to the meeting already know the agenda."
+  }
+ ],
+ "notas": [
+  "The reduction only works when the missing pronoun would be the subject of its own clause, not the object.",
+  "Passive clauses reduce with the past participle; active continuous clauses reduce with the -ing form.",
+  "This is mostly a written structure; in speech, the full relative clause is usually more natural."
+ ],
+ "contraste": {
+  "es": "El español no reduce las cláusulas relativas de esta manera; que siempre permanece. Los hispanohablantes tienden a mantener la cláusula relativa completa en inglés incluso cuando la reducción sería más natural y compacta."
+ },
+ "errores": [
+  "Trying to reduce a clause where the missing pronoun is the object, which isn't grammatically allowed.",
+  "Using the wrong participle: active -ing where a passive past participle is needed, or vice versa.",
+  "Using this reduced form in casual speech, where it can sound unnecessarily formal."
+ ],
+ "redemittel": [
+  {
+   "expresion": "sent this morning",
+   "funcion": "reduced passive relative",
+   "traducciones": {
+    "es": "enviado esta mañana",
+    "de": "heute Morgen geschickt",
+    "fr": "envoyé ce matin",
+    "it": "inviato stamattina",
+    "pt": "enviado esta manhã"
+   }
+  },
+  {
+   "expresion": "anyone waiting…",
+   "funcion": "reduced active relative",
+   "traducciones": {
+    "es": "cualquiera que esté esperando…",
+    "de": "jemand, der wartet…",
+    "fr": "quiconque attend…",
+    "it": "chiunque stia aspettando…",
+    "pt": "qualquer pessoa que esteja à espera…"
+   }
+  },
+  {
+   "expresion": "the people invited to…",
+   "funcion": "reduced passive relative",
+   "traducciones": {
+    "es": "las personas invitadas a…",
+    "de": "die zu… eingeladenen Personen",
+    "fr": "les personnes invitées à…",
+    "it": "le persone invitate a…",
+    "pt": "as pessoas convidadas a…"
+   }
+  },
+  {
+   "expresion": "the report published…",
+   "funcion": "reduced passive relative",
+   "traducciones": {
+    "es": "el informe publicado…",
+    "de": "der veröffentlichte Bericht…",
+    "fr": "le rapport publié…",
+    "it": "il rapporto pubblicato…",
+    "pt": "o relatório publicado…"
+   }
+  },
+  {
+   "expresion": "those interested in…",
+   "funcion": "reduced relative, common in writing",
+   "traducciones": {
+    "es": "los interesados en…",
+    "de": "diejenigen, die an… interessiert sind",
+    "fr": "ceux qui s’intéressent à…",
+    "it": "coloro che sono interessati a…",
+    "pt": "os interessados em…"
+   }
+  },
+  {
+   "expresion": "the data available",
+   "funcion": "postposed adjective form",
+   "traducciones": {
+    "es": "los datos disponibles",
+    "de": "die verfügbaren Daten",
+    "fr": "les données disponibles",
+    "it": "i dati disponibili",
+    "pt": "os dados disponíveis"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the reduction only used where the missing pronoun would be the subject?",
+  "Is the active/passive participle chosen correctly?",
+  "Does the reduction suit the register of the text (writing, not casual speech)?",
+  "Are at least three reduced clauses used?",
+  "Would a full relative clause sound more natural anywhere I used a reduced one?"
+ ],
+ "promptCorreccion": "Focus only on reduced relative clauses. Check whether each reduction is grammatically allowed and whether the participle form is correct. Do not rewrite the text."
+}

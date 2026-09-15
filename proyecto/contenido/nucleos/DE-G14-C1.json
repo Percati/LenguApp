@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-G14",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Erweiterte Partizipialkonstruktionen",
+ "categoria": "grammar",
+ "ancla": "Aspekte B2/C1",
+ "descripcion": "Auf C1 kommt zum bekannten Partizipialattribut die Modalbedeutung mit zu hinzu: die zu erwartenden Probleme statt die Probleme, die erwartet werden können. Das ist ein Passiv mit eingebauter Modalität, verdichtet in ein einziges Attribut.",
+ "cuadroReferencia": {
+  "titulo": "Vom Nebensatz zum Modalpartizip",
+  "columnas": [
+   "Nebensatz",
+   "Modalpartizip mit zu"
+  ],
+  "filas": [
+   [
+    "die Probleme, die zu erwarten sind",
+    "die zu erwartenden Probleme"
+   ],
+   [
+    "die Frage, die noch zu klären ist",
+    "die noch zu klärende Frage"
+   ],
+   [
+    "das Verfahren, das anzuwenden ist",
+    "das anzuwendende Verfahren"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die zu erwartenden Probleme wurden im Vorfeld nicht ausreichend besprochen.",
+   "audio": true
+  },
+  {
+   "texto": "Die noch zu klärende Frage betrifft die Finanzierung.",
+   "audio": true
+  },
+  {
+   "texto": "Das anzuwendende Verfahren ist in der Richtlinie festgelegt."
+  }
+ ],
+ "notas": [
+  "Zu + Partizip I trägt immer eine Modalbedeutung: muss oder kann + Partizip II Passiv.",
+  "Nur transitive Verben können diese Konstruktion bilden — intransitive Verben wie ankommen erlauben sie nicht.",
+  "Diese Form ersetzt einen ganzen Relativsatz mit Modalverb und verdichtet dadurch den Satz erheblich."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine direkte Entsprechung für diese Modalpartizipien; die Bedeutung muss über einen vollständigen Relativsatz mit deber oder poder ausgedrückt werden (los problemas que cabe esperar). Spanischsprachige umschreiben deshalb meist, statt die kompakte deutsche Form zu bilden."
+ },
+ "errores": [
+  "Zu + Partizip I mit einem intransitiven Verb bilden.",
+  "Die Modalbedeutung vergessen und das Partizip ohne zu wie ein normales Adjektiv behandeln.",
+  "Die Konstruktion konsequent vermeiden und stattdessen immer den vollen Relativsatz ausschreiben."
+ ],
+ "redemittel": [
+  {
+   "expresion": "die zu erwartenden…",
+   "funcion": "was erwartet werden muss",
+   "traducciones": {
+    "es": "los… previsibles",
+    "en": "the… to be expected",
+    "fr": "les… à prévoir",
+    "it": "i… prevedibili",
+    "pt": "os… previsíveis"
+   }
+  },
+  {
+   "expresion": "die noch zu klärende…",
+   "funcion": "was noch geklärt werden muss",
+   "traducciones": {
+    "es": "la… pendiente de aclarar",
+    "en": "the… still to be clarified",
+    "fr": "le/la… qui reste à clarifier",
+    "it": "il/la… ancora da chiarire",
+    "pt": "o/a… ainda por esclarecer"
+   }
+  },
+  {
+   "expresion": "das anzuwendende…",
+   "funcion": "was angewendet werden muss",
+   "traducciones": {
+    "es": "el… a aplicar",
+    "en": "the… to be applied",
+    "fr": "le/la… à appliquer",
+    "it": "il/la… da applicare",
+    "pt": "o/a… a aplicar"
+   }
+  },
+  {
+   "expresion": "die zu berücksichtigenden…",
+   "funcion": "was berücksichtigt werden muss",
+   "traducciones": {
+    "es": "los… a tener en cuenta",
+    "en": "the… to be taken into account",
+    "fr": "les… à prendre en compte",
+    "it": "i… da tenere in considerazione",
+    "pt": "os… a ter em conta"
+   }
+  },
+  {
+   "expresion": "das zu lösende…",
+   "funcion": "was gelöst werden muss",
+   "traducciones": {
+    "es": "el… por resolver",
+    "en": "the… to be solved",
+    "fr": "le/la… à résoudre",
+    "it": "il/la… da risolvere",
+    "pt": "o/a… a resolver"
+   }
+  },
+  {
+   "expresion": "die zu vermeidenden…",
+   "funcion": "was vermieden werden muss",
+   "traducciones": {
+    "es": "los… a evitar",
+    "en": "the… to be avoided",
+    "fr": "les… à éviter",
+    "it": "i… da evitare",
+    "pt": "os… a evitar"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist das Verb transitiv, sodass die Konstruktion möglich ist?",
+  "Trägt das Partizip eine klare Modalbedeutung?",
+  "Habe ich mindestens zwei dieser Konstruktionen gebildet?",
+  "Wäre ein Relativsatz an dieser Stelle weniger elegant gewesen?",
+  "Klingt der Satz nicht überladen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Modalpartizip mit zu. Prüfen Sie, ob das Verb transitiv ist und ob die Modalbedeutung erhalten bleibt. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-G11",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Passive Voice",
+ "categoria": "grammar",
+ "ancla": "EGP B1",
+ "descripcion": "At B1 you build the simple passive (is made, was built) in the present and past. Use it when the doer of an action is unknown, unimportant, or when the focus should be on the thing affected rather than who did it.",
+ "cuadroReferencia": {
+  "titulo": "Simple passive, two tenses",
+  "columnas": [
+   "Tense",
+   "Form",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Present",
+    "is/are + participle",
+    "The bread is baked every morning."
+   ],
+   [
+    "Past",
+    "was/were + participle",
+    "The house was built in 1990."
+   ],
+   [
+    "With a doer",
+    "…is made by…",
+    "The bread is made by the bakery next door."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The bread is baked here every morning.",
+   "audio": true
+  },
+  {
+   "texto": "The house was built almost thirty years ago.",
+   "audio": true
+  },
+  {
+   "texto": "The windows are cleaned every week."
+  }
+ ],
+ "notas": [
+  "The passive is formed with be plus the past participle, which goes at the end.",
+  "The doer can be added with by, but is often left out.",
+  "Only verbs with an object (transitive verbs) can be made passive."
+ ],
+ "contraste": {
+  "es": "El español suele preferir la construcción con se (se hace, se construyó) en lugar de la pasiva verdadera. Los hispanohablantes usan por eso menos la pasiva inglesa de lo esperado y recurren más al activo con you o they."
+ },
+ "errores": [
+  "Forgetting be and using only the past participle.",
+  "Using the wrong participle form.",
+  "Trying to make an intransitive verb passive."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…is made…",
+   "funcion": "passive, present",
+   "traducciones": {
+    "es": "…se hace…"
+   }
+  },
+  {
+   "expresion": "…was built…",
+   "funcion": "passive, past",
+   "traducciones": {
+    "es": "…se construyó…"
+   }
+  },
+  {
+   "expresion": "…is done by…",
+   "funcion": "passive with doer",
+   "traducciones": {
+    "es": "…es hecho por…"
+   }
+  },
+  {
+   "expresion": "…are cleaned every…",
+   "funcion": "passive, habitual",
+   "traducciones": {
+    "es": "…se limpian cada…"
+   }
+  },
+  {
+   "expresion": "It was made in…",
+   "funcion": "passive, origin",
+   "traducciones": {
+    "es": "Se hizo en…"
+   }
+  },
+  {
+   "expresion": "…was found…",
+   "funcion": "passive, past, common verb",
+   "traducciones": {
+    "es": "…se encontró…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Does every passive have be plus a participle?",
+  "Are the participles correct?",
+  "Have I used the passive in both present and past?",
+  "Have I used more than one form of this structure?",
+  "Have I used more than one form of this structure?"
+ ],
+ "promptCorreccion": "Focus only on the simple passive in present and past. Check the form of be plus the participle, and check whether the passive is used only with transitive verbs. Do not rewrite the text."
+}

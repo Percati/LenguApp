@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-F16",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Complaining and Resolving Problems",
+ "categoria": "fluency",
+ "ancla": "CV Goal-oriented co-operation",
+ "descripcion": "At C1 a complaint follows a fixed shape — facts, effect, specific request — and the tone stays on the problem, never the person. The added skill over B2 is escalating firmly without becoming aggressive, and closing with a professional formula that keeps the door open.",
+ "cuadroReferencia": {
+  "titulo": "The three parts, graded by strength",
+  "columnas": [
+   "Part",
+   "Function",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Facts",
+    "no adjectives, just what happened",
+    "The order hasn't arrived, and it's been three weeks."
+   ],
+   [
+    "Effect",
+    "why it matters",
+    "We've had to delay the launch as a result."
+   ],
+   [
+    "Request, with a date",
+    "specific and actionable",
+    "I'd like this resolved by Friday."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The order hasn't arrived, and it's been three weeks now.",
+   "audio": true
+  },
+  {
+   "texto": "As a result, we've had to delay the launch.",
+   "audio": true
+  },
+  {
+   "texto": "I'd appreciate it if this could be resolved by Friday."
+  }
+ ],
+ "notas": [
+  "Naming the effect, not just the fact, is what makes a complaint at C1 different from simply describing a problem.",
+  "A request with a specific date is far more likely to get a response than please sort this out soon.",
+  "Escalating means restating the request more firmly, not raising your voice or attacking the person."
+ ],
+ "contraste": {
+  "es": "El español tolera reclamos algo más directos sin que resulten ofensivos. La versión inglesa de un reclamo firme casi siempre necesita un suavizador (I'd appreciate it if, I'd like) incluso cuando el contenido es exigente, y los hispanohablantes tienden a omitir ese suavizador."
+ },
+ "errores": [
+  "Complaining without stating a specific, actionable request.",
+  "Attacking the person (you never respond) instead of the situation (I haven't had a reply).",
+  "Escalating by becoming more aggressive instead of restating the request more firmly."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, and it's been X weeks now.",
+   "funcion": "states the fact with a timeframe",
+   "traducciones": {
+    "es": "…, y ya pasaron X semanas.",
+    "de": "…, und inzwischen sind X Wochen vergangen.",
+    "fr": "…, et cela fait maintenant X semaines.",
+    "it": "…, e ormai sono passate X settimane.",
+    "pt": "…, e já passaram X semanas."
+   }
+  },
+  {
+   "expresion": "As a result, we've had to…",
+   "funcion": "states the effect",
+   "traducciones": {
+    "es": "Como resultado, tuvimos que…",
+    "de": "Infolgedessen mussten wir…",
+    "fr": "Par conséquent, nous avons dû…",
+    "it": "Di conseguenza, abbiamo dovuto…",
+    "pt": "Como resultado, tivemos de…"
+   }
+  },
+  {
+   "expresion": "I'd appreciate it if this could be resolved by…",
+   "funcion": "specific, polite request",
+   "traducciones": {
+    "es": "Agradecería que esto se resolviera antes del…",
+    "de": "Ich wäre Ihnen dankbar, wenn dies bis… geklärt werden könnte.",
+    "fr": "J’apprécierais que cela puisse être réglé d’ici…",
+    "it": "Le sarei grato/a se la questione potesse essere risolta entro…",
+    "pt": "Agradeceria que isto pudesse ser resolvido até…"
+   }
+  },
+  {
+   "expresion": "I must insist that…",
+   "funcion": "firm escalation, still professional",
+   "traducciones": {
+    "es": "Debo insistir en que…",
+    "de": "Ich muss darauf bestehen, dass…",
+    "fr": "Je dois insister sur le fait que…",
+    "it": "Devo insistere sul fatto che…",
+    "pt": "Tenho de insistir que…"
+   }
+  },
+  {
+   "expresion": "This is the second time I've had to raise this.",
+   "funcion": "signals repeated issue",
+   "traducciones": {
+    "es": "Es la segunda vez que tengo que plantear esto.",
+    "de": "Das ist das zweite Mal, dass ich das ansprechen muss.",
+    "fr": "C’est la deuxième fois que je dois soulever ce point.",
+    "it": "È la seconda volta che devo sollevare la questione.",
+    "pt": "É a segunda vez que tenho de levantar esta questão."
+   }
+  },
+  {
+   "expresion": "I look forward to your reply.",
+   "funcion": "closes, keeps the door open",
+   "traducciones": {
+    "es": "Quedo a la espera de su respuesta.",
+    "de": "Ich freue mich auf Ihre Antwort.",
+    "fr": "Dans l’attente de votre réponse.",
+    "it": "Resto in attesa di una sua risposta.",
+    "pt": "Fico a aguardar a sua resposta."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Are the three parts present: facts, effect, request?",
+  "Is the request specific, with a date?",
+  "Does the complaint stay on the problem, not the person?",
+  "If escalated, is the escalation firm rather than aggressive?",
+  "Does the closing keep the door open for a reply?"
+ ],
+ "promptCorreccion": "Focus only on the structure of the complaint: facts, effect, specific request. Check whether the tone stays on the problem and whether any escalation is firm rather than aggressive. Do not rewrite the text."
+}

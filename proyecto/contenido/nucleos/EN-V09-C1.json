@@ -1,0 +1,141 @@
+{
+ "skillId": "EN-V09",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Connotation and Nuance",
+ "categoria": "vocabulary",
+ "ancla": "CV Vocabulary control",
+ "descripcion": "Many near-synonyms in English carry a positive, neutral or negative connotation that a dictionary definition doesn't show: slim vs. skinny, confident vs. arrogant, frugal vs. stingy. Choosing the wrong one changes how the listener feels about the person or thing being described, even though the literal meaning is close to identical.",
+ "cuadroReferencia": {
+  "titulo": "Same meaning, different connotation",
+  "columnas": [
+   "Positive",
+   "Neutral",
+   "Negative"
+  ],
+  "filas": [
+   [
+    "slim",
+    "thin",
+    "skinny"
+   ],
+   [
+    "confident",
+    "assured",
+    "arrogant"
+   ],
+   [
+    "frugal",
+    "careful with money",
+    "stingy"
+   ],
+   [
+    "curious",
+    "inquisitive",
+    "nosy"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She comes across as confident, not arrogant, which is a hard balance to strike.",
+   "audio": true
+  },
+  {
+   "texto": "He's frugal rather than stingy — there's a real difference.",
+   "audio": true
+  },
+  {
+   "texto": "It's more curiosity than nosiness, in my view."
+  }
+ ],
+ "notas": [
+  "Connotation often depends on who is being described and by whom — the same behaviour can be called confident or arrogant depending on the speaker's attitude.",
+  "Swapping a neutral word for a loaded one is a subtle but powerful way to shift a reader's sympathy without stating an opinion directly.",
+  "These pairs are worth learning together, not in isolation, since the contrast is the whole point."
+ ],
+ "contraste": {
+  "es": "El español tiene pares de connotación similares (ahorrativo/tacaño, seguro/soberbio), así que el concepto ya es familiar. La dificultad está en que las palabras específicas no siempre se traducen en el mismo eje: frugal en inglés es más neutral-positivo que su traducción literal más cercana en español."
+ },
+ "errores": [
+  "Choosing a negatively connotated word when a neutral or positive one was intended.",
+  "Not noticing that a supposedly neutral translation actually carries a stronger judgement in English.",
+  "Overcorrecting into an unnaturally positive word to avoid any negative connotation, which can sound insincere."
+ ],
+ "redemittel": [
+  {
+   "expresion": "confident, not arrogant",
+   "funcion": "distinguishes positive from negative",
+   "traducciones": {
+    "es": "seguro de sí, no soberbio",
+    "de": "selbstbewusst, nicht arrogant",
+    "fr": "sûr(e) de soi, pas arrogant(e)",
+    "it": "sicuro/a di sé, non arrogante",
+    "pt": "confiante, não arrogante"
+   }
+  },
+  {
+   "expresion": "frugal rather than stingy",
+   "funcion": "reframes a trait positively",
+   "traducciones": {
+    "es": "ahorrativo más que tacaño",
+    "de": "eher sparsam als geizig",
+    "fr": "plutôt économe qu’avare",
+    "it": "più parsimonioso che avaro",
+    "pt": "mais poupado do que avarento"
+   }
+  },
+  {
+   "expresion": "curious rather than nosy",
+   "funcion": "reframes a trait positively",
+   "traducciones": {
+    "es": "curioso más que entrometido",
+    "de": "eher neugierig als aufdringlich",
+    "fr": "plutôt curieux que indiscret",
+    "it": "più curioso che invadente",
+    "pt": "mais curioso do que intrometido"
+   }
+  },
+  {
+   "expresion": "It comes across as…",
+   "funcion": "hedges a connotation judgement",
+   "traducciones": {
+    "es": "Da la impresión de…",
+    "de": "Es wirkt…",
+    "fr": "Ça donne l’impression de…",
+    "it": "Dà l’impressione di…",
+    "pt": "Dá a impressão de…"
+   }
+  },
+  {
+   "expresion": "…, in a good way.",
+   "funcion": "clarifies an ambiguous word",
+   "traducciones": {
+    "es": "…, en el buen sentido.",
+    "de": "…, im positiven Sinne.",
+    "fr": "…, dans le bon sens.",
+    "it": "…, in senso positivo.",
+    "pt": "…, no bom sentido."
+   }
+  },
+  {
+   "expresion": "That's putting it kindly.",
+   "funcion": "signals a softened negative",
+   "traducciones": {
+    "es": "Eso es decirlo con delicadeza.",
+    "de": "Das ist noch nett ausgedrückt.",
+    "fr": "C’est le dire gentiment.",
+    "it": "Per dirla con delicatezza.",
+    "pt": "Isso é dizer de forma suave."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Does each word carry the connotation I actually intend?",
+  "Have I checked a near-synonym for hidden negative or positive charge?",
+  "Would the described person feel fairly represented by this word choice?",
+  "Have I avoided overcorrecting into an insincerely positive word?",
+  "Are at least four connotation pairs used deliberately?"
+ ],
+ "promptCorreccion": "Focus only on connotation. Flag any word that carries an unintended positive or negative charge and suggest the neutral or opposite-charge alternative. Do not rewrite the text."
+}

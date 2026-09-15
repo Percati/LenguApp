@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-G24",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Zukünftiges ausdrücken (Präsens vs. Futur I)",
+ "categoria": "grammar",
+ "ancla": "Aspekte B1+",
+ "descripcion": "Im Deutschen drückt man Zukünftiges meistens im Präsens mit einer Zeitangabe aus (ich fahre morgen), nicht mit dem Futur I. Das Futur I wird eher für Vermutungen oder Versprechen benutzt. Diese Verteilung ist anders als im Spanischen.",
+ "cuadroReferencia": {
+  "titulo": "Präsens oder Futur I?",
+  "columnas": [
+   "Form",
+   "Verwendung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Präsens + Zeitangabe",
+    "geplante Zukunft, normal",
+    "Ich fahre morgen nach Berlin."
+   ],
+   [
+    "Futur I (werde + Infinitiv)",
+    "Vermutung oder Versprechen",
+    "Ich werde das sicher schaffen."
+   ],
+   [
+    "Frage zur Zukunft",
+    "Was machst du nächstes Jahr?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich fahre morgen früh nach Berlin.",
+   "audio": true
+  },
+  {
+   "texto": "Ich werde das schon irgendwie schaffen.",
+   "audio": true
+  },
+  {
+   "texto": "Nächstes Jahr mache ich einen Sprachkurs."
+  }
+ ],
+ "notas": [
+  "Für geplante, sichere Zukunft benutzt man im Deutschen meistens das Präsens mit einer Zeitangabe wie morgen oder nächstes Jahr.",
+  "Das Futur I (werde + Infinitiv) wirkt formeller und wird oft für Vermutungen oder feierliche Versprechen benutzt.",
+  "Ohne Zeitangabe kann das Präsens missverständlich sein — deshalb ist die Zeitangabe fast Pflicht."
+ ],
+ "contraste": {
+  "es": "Das Spanische benutzt für die Zukunft meist voy a + Infinitiv oder das futuro simple, während das Deutsche das einfache Präsens bevorzugt. Spanischsprachige benutzen deshalb oft das Futur I, wo im Deutschen das Präsens natürlicher wäre."
+ },
+ "errores": [
+  "Das Futur I für geplante Zukunft benutzen, wo das Präsens natürlicher wäre.",
+  "Das Präsens ohne Zeitangabe benutzen, was zu Verwirrung führen kann.",
+  "Werde falsch konjugieren."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich fahre morgen…",
+   "funcion": "geplante Zukunft, Präsens",
+   "traducciones": {
+    "es": "Mañana viajo…",
+    "en": "Tomorrow I'm going…"
+   }
+  },
+  {
+   "expresion": "Nächstes Jahr mache ich…",
+   "funcion": "geplante Zukunft mit Zeitangabe",
+   "traducciones": {
+    "es": "El año que viene hago…",
+    "en": "Next year I'll do…"
+   }
+  },
+  {
+   "expresion": "Ich werde das schaffen.",
+   "funcion": "Futur I, Versprechen",
+   "traducciones": {
+    "es": "Lo voy a lograr.",
+    "en": "I will manage it."
+   }
+  },
+  {
+   "expresion": "Das wird schon klappen.",
+   "funcion": "Futur I, Vermutung",
+   "traducciones": {
+    "es": "Eso va a salir bien.",
+    "en": "That'll work out."
+   }
+  },
+  {
+   "expresion": "Bald…",
+   "funcion": "nahe Zukunft, Präsens",
+   "traducciones": {
+    "es": "Pronto…",
+    "en": "Soon…"
+   }
+  },
+  {
+   "expresion": "In zwei Wochen…",
+   "funcion": "Zeitangabe für die Zukunft",
+   "traducciones": {
+    "es": "En dos semanas…",
+    "en": "In two weeks…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich für geplante Zukunft das Präsens mit Zeitangabe benutzt?",
+  "Habe ich das Futur I nur für Vermutung oder Versprechen benutzt?",
+  "Ist werde richtig konjugiert?",
+  "Steht bei jeder Präsensform eine klare Zeitangabe?",
+  "Habe ich beide Formen mindestens einmal richtig benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verteilung zwischen Präsens und Futur I für Zukünftiges. Prüfen Sie, ob das Präsens für geplante Ereignisse und das Futur I für Vermutungen benutzt wird. Schreiben Sie den Text nicht neu."
+}

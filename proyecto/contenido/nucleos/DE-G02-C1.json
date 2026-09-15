@@ -1,0 +1,156 @@
+{
+ "skillId": "DE-G02",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Konnektoren (*weil, obwohl, trotzdem, deshalb, während*)",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C1",
+ "descripcion": "Auf C1 geht es nicht mehr um die Grundbedeutung der Konnektoren, sondern um die feinen Register- und Bedeutungsunterschiede zwischen Varianten derselben Funktion: obgleich gegen obwohl, dessen ungeachtet gegen trotzdem, zumal als verstärkte Begründung. Wer nur die B1-Konnektoren kennt, klingt auf C1-Niveau nicht falsch, aber stilistisch flach.",
+ "cuadroReferencia": {
+  "titulo": "Register innerhalb derselben Funktion",
+  "columnas": [
+   "Funktion",
+   "Neutral",
+   "Gehoben/schriftlich"
+  ],
+  "filas": [
+   [
+    "Konzession",
+    "obwohl",
+    "obgleich, ungeachtet dessen, dass"
+   ],
+   [
+    "Widerspruch",
+    "trotzdem",
+    "dessen ungeachtet, nichtsdestotrotz"
+   ],
+   [
+    "Grund",
+    "weil",
+    "zumal, da (am Satzanfang)"
+   ],
+   [
+    "Folge",
+    "deshalb",
+    "infolgedessen, mithin"
+   ],
+   [
+    "Gleichzeitigkeit/Gegensatz",
+    "während",
+    "wohingegen (nur Gegensatz)"
+   ]
+  ],
+  "notaPie": "Zumal verstärkt einen bereits genannten Grund und steht nie an erster Stelle im Satz: …, zumal die Frist schon abgelaufen war."
+ },
+ "ejemplos": [
+  {
+   "texto": "Obgleich die Ergebnisse vorlagen, wurde die Entscheidung verschoben.",
+   "audio": true
+  },
+  {
+   "texto": "Der Antrag wurde abgelehnt, zumal die Unterlagen unvollständig waren.",
+   "audio": true
+  },
+  {
+   "texto": "Die Kosten sind gestiegen; infolgedessen musste das Budget angepasst werden."
+  }
+ ],
+ "notas": [
+  "Da am Satzanfang (kausal) ist schriftlich üblich; im Gespräch klingt es gestelzt und weil dominiert.",
+  "Wohingegen betont den Gegensatz stärker als während und passt nicht für reine Gleichzeitigkeit.",
+  "Nichtsdestotrotz ist umgangssprachlich neutral geworden, dessen ungeachtet bleibt deutlich formeller."
+ ],
+ "contraste": {
+  "es": "Das Spanische unterscheidet Register bei Konnektoren weit weniger stark: aunque deckt sowohl obwohl als auch obgleich ab. Spanischsprachige benutzen deshalb auf C1 oft weiterhin die B1-Konnektoren und verpassen die stilistische Abstufung, die im Deutschen erwartet wird.",
+  "en": "English has a comparable register ladder (although / albeit / notwithstanding), so the concept transfers well — but the mapping is not one-to-one: notwithstanding does not automatically correspond to ungeachtet dessen, and English speakers often reach for a literal cognate that sounds archaic in German."
+ },
+ "errores": [
+  "Zumal an den Satzanfang stellen, wo es nicht stehen kann.",
+  "Nichtsdestotrotz und dessen ungeachtet als völlig austauschbar behandeln.",
+  "Da (kausal) in gesprochener Sprache verwenden, wo weil erwartet wird."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Durchgehend obwohl und weil verwenden und die gehobenen Varianten ganz meiden."
+  ],
+  "en": [
+   "Wörtliche Lehnübersetzungen aus dem Englischen bilden: notwithstanding wird zu ungeachtet ohne den nötigen Genitiv."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "…, zumal…",
+   "funcion": "verstärkter Grund",
+   "traducciones": {
+    "es": "…, sobre todo porque…",
+    "en": "…, especially since…",
+    "fr": "…, d’autant plus que…",
+    "it": "…, soprattutto perché…",
+    "pt": "…, sobretudo porque…"
+   }
+  },
+  {
+   "expresion": "Ungeachtet dessen, dass…",
+   "funcion": "gehobene Konzession",
+   "traducciones": {
+    "es": "Independientemente de que…",
+    "en": "Regardless of the fact that…",
+    "fr": "Indépendamment du fait que…",
+    "it": "Indipendentemente dal fatto che…",
+    "pt": "Independentemente do facto de que…"
+   }
+  },
+  {
+   "expresion": "…; infolgedessen…",
+   "funcion": "formelle Folge",
+   "traducciones": {
+    "es": "…; en consecuencia…",
+    "en": "…; as a result…",
+    "fr": "… ; par conséquent…",
+    "it": "…; di conseguenza…",
+    "pt": "…; por conseguinte…"
+   }
+  },
+  {
+   "expresion": "…, wohingegen…",
+   "funcion": "starker Gegensatz",
+   "traducciones": {
+    "es": "…, mientras que…",
+    "en": "…, whereas…",
+    "fr": "…, tandis que…",
+    "it": "…, mentre…",
+    "pt": "…, ao passo que…"
+   }
+  },
+  {
+   "expresion": "…, sodass…",
+   "funcion": "Folge, neutral bis formell",
+   "traducciones": {
+    "es": "…, de modo que…",
+    "en": "…, so that…",
+    "fr": "…, de sorte que…",
+    "it": "…, cosicché…",
+    "pt": "…, de modo que…"
+   }
+  },
+  {
+   "expresion": "Da…, …",
+   "funcion": "Grund vorangestellt, schriftlich",
+   "traducciones": {
+    "es": "Dado que…, …",
+    "en": "Since…, …",
+    "fr": "Étant donné que…, …",
+    "it": "Dato che…, …",
+    "pt": "Dado que…, …"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Passt das Register des Konnektors zum Rest des Textes?",
+  "Steht zumal nie am Satzanfang?",
+  "Habe ich mindestens eine gehobene Variante statt der B1-Form benutzt?",
+  "Ist wohingegen nur für echten Gegensatz eingesetzt, nicht für reine Gleichzeitigkeit?",
+  "Habe ich mindestens zwei verschiedene Register in einem Text kombiniert?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Register der Konnektoren. (1) Markieren Sie jeden Konnektor und sein Register. (2) Zeigen Sie, wo eine gehobenere Variante besser zum Text passen würde. (3) Prüfen Sie die Position von zumal. Schreiben Sie den Text nicht neu."
+}

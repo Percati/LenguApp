@@ -1,0 +1,109 @@
+{
+ "skillId": "EN-F08",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Comparing and Contrasting",
+ "categoria": "fluency",
+ "ancla": "CV Sustained monologue: giving information",
+ "descripcion": "At B1 you compare two things using comparative and superlative adjectives, plus simple connectors like but. The finer, weighted contrast used at higher levels comes later — clear comparatives and a stated preference are enough here.",
+ "cuadroReferencia": {
+  "titulo": "Comparing two things",
+  "columnas": [
+   "Function",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Comparative",
+    "This one is cheaper than that one."
+   ],
+   [
+    "Superlative",
+    "It's the best option."
+   ],
+   [
+    "Similarity",
+    "They're quite similar."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "This phone is cheaper than that one.",
+   "audio": true
+  },
+  {
+   "texto": "It's the best option, in my opinion.",
+   "audio": true
+  },
+  {
+   "texto": "They're quite similar, but this one is faster."
+  }
+ ],
+ "notas": [
+  "Short adjectives take -er/-est (cheaper, cheapest); longer ones take more/most (more expensive).",
+  "Than is needed after a comparative: cheaper than, not just cheaper.",
+  "The is needed before a superlative: the best, the cheapest."
+ ],
+ "contraste": {
+  "es": "El español compara con más/menos…que, lo cual se transfiere bien al concepto general, aunque la forma inglesa con -er/-est para adjetivos cortos no tiene equivalente morfológico directo en español."
+ },
+ "errores": [
+  "Forgetting than after a comparative.",
+  "Forgetting the before a superlative.",
+  "Using more with a short adjective that should take -er."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…is cheaper than…",
+   "funcion": "comparative",
+   "traducciones": {
+    "es": "…es más barato que…"
+   }
+  },
+  {
+   "expresion": "…is the best…",
+   "funcion": "superlative",
+   "traducciones": {
+    "es": "…es el/la mejor…"
+   }
+  },
+  {
+   "expresion": "They're quite similar.",
+   "funcion": "similarity",
+   "traducciones": {
+    "es": "Son bastante parecidos."
+   }
+  },
+  {
+   "expresion": "…is more expensive than…",
+   "funcion": "comparative, long adjective",
+   "traducciones": {
+    "es": "…es más caro que…"
+   }
+  },
+  {
+   "expresion": "…, but…",
+   "funcion": "simple contrast",
+   "traducciones": {
+    "es": "…, pero…"
+   }
+  },
+  {
+   "expresion": "I'd prefer…",
+   "funcion": "stating a preference",
+   "traducciones": {
+    "es": "Preferiría…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is than used after every comparative?",
+  "Is the used before every superlative?",
+  "Are short and long adjectives formed correctly (-er/-est vs. more/most)?",
+  "Have I stated a clear preference?",
+  "Have I used more than one form?"
+ ],
+ "promptCorreccion": "Focus only on comparatives and superlatives. Check than, the, and whether short or long adjective forms are used correctly throughout the comparison. Do not rewrite the text."
+}

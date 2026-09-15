@@ -1,0 +1,119 @@
+{
+ "skillId": "DE-G26",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Valenz: Verben und Nomen mit Ergänzungen",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Jedes Verb und viele Nomen im Deutschen verlangen eine feste Zahl und Art von Ergänzungen — die Valenz. Auf C2 geht es um die seltenen, oft übersehenen Fälle: Nomen mit eigener Rektion (die Angst vor, der Anspruch auf) und Verben, die je nach Bedeutung unterschiedliche Ergänzungen verlangen.",
+ "cuadroReferencia": {
+  "titulo": "Nomen mit eigener Rektion",
+  "columnas": [
+   "Nomen",
+   "Präposition + Kasus",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "die Angst",
+    "vor + Dativ",
+    "die Angst vor der Prüfung"
+   ],
+   [
+    "der Anspruch",
+    "auf + Akkusativ",
+    "der Anspruch auf Entschädigung"
+   ],
+   [
+    "die Verantwortung",
+    "für + Akkusativ",
+    "die Verantwortung für das Ergebnis"
+   ]
+  ],
+  "notaPie": "Diese Rektion ist so willkürlich wie die der Verben und muss ebenso gelernt werden — sie folgt keiner ableitbaren Regel."
+ },
+ "ejemplos": [
+  {
+   "texto": "Die Angst vor der Prüfung war grösser als erwartet.",
+   "audio": true
+  },
+  {
+   "texto": "Sie hat Anspruch auf eine volle Entschädigung.",
+   "audio": true
+  },
+  {
+   "texto": "Wer trägt die Verantwortung für dieses Ergebnis?"
+  }
+ ],
+ "notas": [
+  "Nomen mit Rektion sind oft von Verben mit derselben Präposition abgeleitet (sich fürchten vor → die Angst vor), aber nicht immer.",
+  "Die Rektion eines Nomens ist so fest wie die eines Verbs und muss ebenso gelernt werden, nicht abgeleitet.",
+  "Ein Verb kann je nach Bedeutung unterschiedliche Ergänzungen verlangen: bestehen aus (Zusammensetzung) gegen bestehen auf (Beharren)."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit el miedo a und el derecho a eine ähnliche, aber nicht identische Struktur, die selten mit der deutschen Präposition übereinstimmt. Hispanophone C2-Sprecher übertragen deshalb oft die spanische Präposition wörtlich und produzieren die Angst von statt die Angst vor."
+ },
+ "errores": [
+  "Die Präposition eines Nomens wörtlich aus dem Spanischen übertragen.",
+  "Die Rektion eines Verbs von seiner Bedeutung unabhängig immer gleich behandeln.",
+  "Den Kasus nach der Präposition eines Nomens falsch wählen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "die Angst vor…",
+   "funcion": "Nomen mit Rektion",
+   "traducciones": {
+    "es": "el miedo a…",
+    "en": "the fear of…"
+   }
+  },
+  {
+   "expresion": "der Anspruch auf…",
+   "funcion": "Nomen mit Rektion",
+   "traducciones": {
+    "es": "el derecho a…",
+    "en": "the entitlement to…"
+   }
+  },
+  {
+   "expresion": "die Verantwortung für…",
+   "funcion": "Nomen mit Rektion",
+   "traducciones": {
+    "es": "la responsabilidad de…",
+    "en": "the responsibility for…"
+   }
+  },
+  {
+   "expresion": "bestehen aus…",
+   "funcion": "Verb, Zusammensetzung",
+   "traducciones": {
+    "es": "consistir en…",
+    "en": "to consist of…"
+   }
+  },
+  {
+   "expresion": "bestehen auf…",
+   "funcion": "Verb, Beharren",
+   "traducciones": {
+    "es": "insistir en…",
+    "en": "to insist on…"
+   }
+  },
+  {
+   "expresion": "die Sorge um…",
+   "funcion": "Nomen mit Rektion",
+   "traducciones": {
+    "es": "la preocupación por…",
+    "en": "the concern about…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Stimmt die Präposition nach jedem Nomen mit eigener Rektion?",
+  "Ist die Bedeutung des Verbs berücksichtigt, wenn es mehrere Rektionen zulässt?",
+  "Ist der Kasus nach jeder Präposition korrekt?",
+  "Habe ich mindestens drei Nomen mit eigener Rektion benutzt?",
+  "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Rektion von Nomen und mehrdeutigen Verben. Prüfen Sie jede Präposition und ihren Kasus einzeln. Schreiben Sie den Text nicht neu."
+}

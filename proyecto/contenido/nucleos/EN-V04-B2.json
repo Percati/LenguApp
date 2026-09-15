@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-V04",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Everyday Collocations",
+ "categoria": "vocabulary",
+ "ancla": "CV Vocabulary control",
+ "descripcion": "At B2 the goal is to fix the most common verb-noun collocations of everyday and simple professional English: make a decision, take a risk, have an effect. These are not interchangeable with do or take at random — each noun has its own fixed partner.",
+ "cuadroReferencia": {
+  "titulo": "Everyday collocations",
+  "columnas": [
+   "Noun",
+   "Verb"
+  ],
+  "filas": [
+   [
+    "a decision",
+    "make"
+   ],
+   [
+    "a risk",
+    "take"
+   ],
+   [
+    "an effect",
+    "have"
+   ],
+   [
+    "an effort",
+    "make"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "We need to make a decision by tomorrow.",
+   "audio": true
+  },
+  {
+   "texto": "It's worth taking the risk, in my opinion.",
+   "audio": true
+  },
+  {
+   "texto": "The change had a big effect on the whole team."
+  }
+ ],
+ "notas": [
+  "These verbs aren't interchangeable: to do a decision or to make a risk both sound wrong to a native speaker.",
+  "Have is the default verb for many abstract nouns: have an effect, have an impact, have a problem.",
+  "Make an effort is one of the most common collocations in everyday spoken English."
+ ],
+ "contraste": {
+  "es": "El español suele usar tomar para varias de estas colocaciones (tomar una decisión, tomar un riesgo), lo que en inglés se reparte entre make y take según la palabra. Esa diferencia explica por qué los hispanohablantes confunden estos verbos con frecuencia."
+ },
+ "errores": [
+  "Using do as a default verb for every collocation.",
+  "Saying make a risk instead of take a risk.",
+  "Saying do an effort instead of make an effort."
+ ],
+ "redemittel": [
+  {
+   "expresion": "to make a decision",
+   "funcion": "fixed collocation",
+   "traducciones": {
+    "es": "tomar una decisión",
+    "de": "eine Entscheidung treffen",
+    "fr": "prendre une décision",
+    "it": "prendere una decisione",
+    "pt": "tomar uma decisão"
+   }
+  },
+  {
+   "expresion": "to take a risk",
+   "funcion": "fixed collocation",
+   "traducciones": {
+    "es": "correr un riesgo",
+    "de": "ein Risiko eingehen",
+    "fr": "prendre un risque",
+    "it": "correre un rischio",
+    "pt": "correr um risco"
+   }
+  },
+  {
+   "expresion": "to have an effect on",
+   "funcion": "fixed collocation",
+   "traducciones": {
+    "es": "tener un efecto sobre",
+    "de": "eine Wirkung auf… haben",
+    "fr": "avoir un effet sur",
+    "it": "avere un effetto su",
+    "pt": "ter um efeito sobre"
+   }
+  },
+  {
+   "expresion": "to make an effort",
+   "funcion": "fixed collocation",
+   "traducciones": {
+    "es": "hacer un esfuerzo",
+    "de": "sich Mühe geben",
+    "fr": "faire un effort",
+    "it": "fare uno sforzo",
+    "pt": "fazer um esforço"
+   }
+  },
+  {
+   "expresion": "to make a mistake",
+   "funcion": "fixed collocation",
+   "traducciones": {
+    "es": "cometer un error",
+    "de": "einen Fehler machen",
+    "fr": "faire une erreur",
+    "it": "commettere un errore",
+    "pt": "cometer um erro"
+   }
+  },
+  {
+   "expresion": "to have a chance",
+   "funcion": "fixed collocation",
+   "traducciones": {
+    "es": "tener una oportunidad",
+    "de": "eine Chance haben",
+    "fr": "avoir une chance",
+    "it": "avere una possibilità",
+    "pt": "ter uma oportunidade"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I chosen the right verb for each noun, not defaulted to do?",
+  "Have I used make and take correctly, not interchangeably?",
+  "Does the combination sound natural to a native speaker?",
+  "Have I used at least four different collocations?",
+  "Have I avoided do as a catch-all verb?"
+ ],
+ "promptCorreccion": "Focus only on verb-noun collocations. Mark each one and give the correct verb where it's wrong, especially confusions between make, do, take and have. Do not rewrite the text."
+}

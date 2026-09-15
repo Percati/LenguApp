@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-G13",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Infinitivsätze mit *zu*",
+ "categoria": "grammar",
+ "ancla": "PD B1",
+ "descripcion": "Auf B2 wird der Infinitivsatz mit zu sicher beherrscht, besonders nach Adjektiven und bestimmten Verben, und die Regel angewendet, dass er nur bei identischem Subjekt funktioniert. Perfekt- und Passiv-Infinitive (C1) kommen erst später dazu.",
+ "cuadroReferencia": {
+  "titulo": "Wann ein Infinitivsatz möglich ist",
+  "columnas": [
+   "Bedingung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Gleiches Subjekt",
+    "Er hofft, die Prüfung zu bestehen."
+   ],
+   [
+    "Nach es ist + Adjektiv",
+    "Es ist wichtig, pünktlich zu sein."
+   ],
+   [
+    "Anderes Subjekt",
+    "Er hofft, dass sie die Prüfung besteht. (kein Infinitiv möglich)"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Er hofft, die Prüfung dieses Mal zu bestehen.",
+   "audio": true
+  },
+  {
+   "texto": "Es ist wichtig, pünktlich zum Termin zu erscheinen.",
+   "audio": true
+  },
+  {
+   "texto": "Sie hat vor, nächstes Jahr umzuziehen."
+  }
+ ],
+ "notas": [
+  "Der Infinitivsatz ist nur möglich, wenn Haupt- und Nebensatz dasselbe Subjekt haben — sonst muss der dass-Satz stehen bleiben.",
+  "Zu steht bei trennbaren Verben zwischen Präfix und Stamm: umzuziehen, nicht zu umziehen.",
+  "Nach es ist + Adjektiv (wichtig, nötig, schön) ist der Infinitivsatz die Standardform."
+ ],
+ "contraste": {
+  "es": "Das Spanische verwendet bei gleichem Subjekt ebenfalls den blossen Infinitiv (espera aprobar el examen), sodass die Grundlogik bereits bekannt ist. Schwierig ist eher die Position von zu bei trennbaren Verben, für die es im Spanischen keine Entsprechung gibt."
+ },
+ "errores": [
+  "Einen dass-Satz mit gleichem Subjekt beibehalten, wo ein Infinitivsatz möglich wäre.",
+  "Zu bei trennbaren Verben falsch platzieren: zu umziehen statt umzuziehen.",
+  "Einen Infinitivsatz bilden, obwohl die Subjekte unterschiedlich sind."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Es ist wichtig, … zu…",
+   "funcion": "Infinitivsatz nach Adjektiv",
+   "traducciones": {
+    "es": "Es importante…",
+    "en": "It's important to…",
+    "fr": "Il est important de…",
+    "it": "È importante…",
+    "pt": "É importante…"
+   }
+  },
+  {
+   "expresion": "Er/Sie hofft, … zu…",
+   "funcion": "Infinitivsatz nach hoffen",
+   "traducciones": {
+    "es": "Espera…",
+    "en": "He/She hopes to…",
+    "fr": "Il/Elle espère…",
+    "it": "Lui/Lei spera di…",
+    "pt": "Ele/Ela espera…"
+   }
+  },
+  {
+   "expresion": "Es macht Spass, … zu…",
+   "funcion": "Infinitivsatz, informell",
+   "traducciones": {
+    "es": "Es divertido…",
+    "en": "It's fun to…",
+    "fr": "C’est amusant de…",
+    "it": "È divertente…",
+    "pt": "É divertido…"
+   }
+  },
+  {
+   "expresion": "Sie hat vor, zu…",
+   "funcion": "Plan ausdrücken",
+   "traducciones": {
+    "es": "Tiene planeado…",
+    "en": "She's planning to…",
+    "fr": "Elle prévoit de…",
+    "it": "Ha intenzione di…",
+    "pt": "Ela tenciona…"
+   }
+  },
+  {
+   "expresion": "Es lohnt sich, … zu…",
+   "funcion": "Empfehlung",
+   "traducciones": {
+    "es": "Vale la pena…",
+    "en": "It's worth…",
+    "fr": "Ça vaut la peine de…",
+    "it": "Vale la pena…",
+    "pt": "Vale a pena…"
+   }
+  },
+  {
+   "expresion": "…, ohne … zu…",
+   "funcion": "negative Begleitumstände",
+   "traducciones": {
+    "es": "…, sin…",
+    "en": "…, without…",
+    "fr": "…, sans…",
+    "it": "…, senza…",
+    "pt": "…, sem…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Haben Haupt- und Nebensatz dasselbe Subjekt, bevor ich einen Infinitivsatz bilde?",
+  "Steht zu bei trennbaren Verben an der richtigen Stelle?",
+  "Habe ich mindestens einen Infinitivsatz nach es ist + Adjektiv gebildet?",
+  "Habe ich bei unterschiedlichem Subjekt den dass-Satz beibehalten?",
+  "Klingt der Infinitivsatz natürlicher als der entsprechende dass-Satz?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Infinitivsätze mit zu. Prüfen Sie, ob das Subjekt in beiden Teilen gleich ist und ob zu bei trennbaren Verben richtig steht. Schreiben Sie den Text nicht neu."
+}

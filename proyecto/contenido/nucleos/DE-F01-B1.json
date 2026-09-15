@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-F01",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Meinung äußern und begründen",
+ "categoria": "fluency",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B1 äußert man eine einfache Meinung mit ich finde oder ich denke und gibt einen kurzen Grund an. Die Begründung mit weil ist der wichtigste Baustein und wird oft vergessen — eine Meinung ohne Grund wirkt auf B1 bereits unvollständig.",
+ "cuadroReferencia": {
+  "titulo": "Meinung mit Grund",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Meinung",
+    "Ich finde, das ist eine gute Idee."
+   ],
+   [
+    "Grund",
+    "…, weil es Zeit spart."
+   ],
+   [
+    "Formeller",
+    "Meiner Meinung nach ist das eine gute Idee."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich finde, das ist eine sehr gute Idee.",
+   "audio": true
+  },
+  {
+   "texto": "Ich denke, das spart uns viel Zeit.",
+   "audio": true
+  },
+  {
+   "texto": "Meiner Meinung nach ist das zu teuer."
+  }
+ ],
+ "notas": [
+  "Ich finde und ich denke sind auf B1 austauschbar und beide neutral.",
+  "Nach weil steht das Verb am Ende: weil es Zeit spart, nicht weil es spart Zeit.",
+  "Meiner Meinung nach ist etwas formeller und passt gut in eine Diskussion."
+ ],
+ "contraste": {
+  "es": "Das Spanische äußert Meinungen mit creo que oder me parece que auf sehr ähnliche Weise, sodass sich diese Grundstruktur leicht überträgt. Der Unterschied liegt in der Wortstellung nach weil, die im Spanischen nicht existiert."
+ },
+ "errores": [
+  "Eine Meinung ohne jeden Grund äußern.",
+  "Nach weil das Verb nicht ans Satzende stellen.",
+  "Ich finde und ich denke im selben Satz kombinieren."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich finde, das ist…",
+   "funcion": "Meinung",
+   "traducciones": {
+    "es": "Me parece que es…",
+    "en": "I think that's…"
+   }
+  },
+  {
+   "expresion": "Ich denke, dass…",
+   "funcion": "Meinung",
+   "traducciones": {
+    "es": "Pienso que…",
+    "en": "I think that…"
+   }
+  },
+  {
+   "expresion": "…, weil…",
+   "funcion": "Grund",
+   "traducciones": {
+    "es": "…, porque…",
+    "en": "…, because…",
+    "fr": "…, parce que…",
+    "it": "…, perché…",
+    "pt": "…, porque…"
+   }
+  },
+  {
+   "expresion": "Meiner Meinung nach…",
+   "funcion": "Meinung, etwas formeller",
+   "traducciones": {
+    "es": "En mi opinión…",
+    "en": "In my opinion…"
+   }
+  },
+  {
+   "expresion": "Ich bin sicher, dass…",
+   "funcion": "starke Meinung",
+   "traducciones": {
+    "es": "Estoy seguro de que…",
+    "en": "I'm sure that…"
+   }
+  },
+  {
+   "expresion": "Das stimmt schon, aber…",
+   "funcion": "einschränkende Meinung",
+   "traducciones": {
+    "es": "Eso es cierto, pero…",
+    "en": "That's true, but…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich eine klare Meinung geäußert?",
+  "Folgt ein Grund mit weil?",
+  "Steht das Verb im weil-Satz am Ende?",
+  "Habe ich mehr als eine Formel für Meinung benutzt?",
+  "Klingt die Begründung konkret, nicht nur abstrakt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Meinung und Grund klar verbunden sind. Prüfen Sie die Wortstellung nach weil. Schreiben Sie den Text nicht neu."
+}

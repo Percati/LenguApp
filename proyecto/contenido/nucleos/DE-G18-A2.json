@@ -1,0 +1,114 @@
+{
+ "skillId": "DE-G18",
+ "nivel": "A2",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Temporale Nebensätze (*als, wenn, während, nachdem, seitdem*)",
+ "categoria": "grammar",
+ "ancla": "PD A2",
+ "descripcion": "Auf A2 lernt man den Unterschied zwischen als (ein einmaliges Ereignis in der Vergangenheit) und wenn (wiederholt oder in der Gegenwart) zum ersten Mal. Diese Grundlage ist wichtig, um im Alltag korrekt über die Vergangenheit zu berichten.",
+ "cuadroReferencia": {
+  "titulo": "Als oder wenn?",
+  "columnas": [
+   "Konnektor",
+   "Verwendung"
+  ],
+  "filas": [
+   [
+    "als",
+    "einmalig, Vergangenheit"
+   ],
+   [
+    "wenn",
+    "wiederholt oder Gegenwart"
+   ],
+   [
+    "Beispiel als",
+    "Als ich acht war, bin ich umgezogen."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Als ich acht Jahre alt war, bin ich nach Bern gezogen.",
+   "audio": true
+  },
+  {
+   "texto": "Wenn ich Zeit habe, lese ich gern.",
+   "audio": true
+  },
+  {
+   "texto": "Als ich klein war, habe ich viel gespielt."
+  }
+ ],
+ "notas": [
+  "Als benutzt man nur für ein einmaliges Ereignis in der Vergangenheit.",
+  "Wenn benutzt man für Wiederholung oder für die Gegenwart und Zukunft.",
+  "Das Verb steht in beiden Fällen am Ende des Nebensatzes."
+ ],
+ "contraste": {
+  "es": "Das Spanische unterscheidet als und wenn nicht — cuando deckt beides ab. Das ist der klassische Fehler von Spanischsprachigen im Deutschen."
+ },
+ "errores": [
+  "Wenn statt als für ein einmaliges vergangenes Ereignis benutzen.",
+  "Als für Wiederholung verwenden."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Als ich…, …",
+   "funcion": "einmaliges vergangenes Ereignis",
+   "traducciones": {
+    "es": "Cuando yo…, (una vez, pasado)",
+    "en": "When I…, (once, past)"
+   }
+  },
+  {
+   "expresion": "Wenn ich…, …",
+   "funcion": "wiederholt/Gegenwart",
+   "traducciones": {
+    "es": "Cuando yo…, (siempre)",
+    "en": "When(ever) I…"
+   }
+  },
+  {
+   "expresion": "Als ich klein war,…",
+   "funcion": "feste Kombination, Kindheit",
+   "traducciones": {
+    "es": "Cuando era chico/a,…",
+    "en": "When I was little,…"
+   }
+  },
+  {
+   "expresion": "Wenn ich Zeit habe,…",
+   "funcion": "feste Kombination",
+   "traducciones": {
+    "es": "Cuando tengo tiempo,…",
+    "en": "When I have time,…"
+   }
+  },
+  {
+   "expresion": "Als wir ankamen,…",
+   "funcion": "einmaliges Ereignis",
+   "traducciones": {
+    "es": "Cuando llegamos,…",
+    "en": "When we arrived,…"
+   }
+  },
+  {
+   "expresion": "Immer wenn ich…, …",
+   "funcion": "Wiederholung betont",
+   "traducciones": {
+    "es": "Siempre que yo…, …",
+    "en": "Whenever I…, …"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich als für ein einmaliges vergangenes Ereignis benutzt?",
+  "Habe ich wenn für Wiederholung oder Gegenwart benutzt?",
+  "Steht das Verb am Ende des Nebensatzes?",
+  "Klingt der Satz natürlich?",
+  "Klingt der Satz natürlich?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Unterschied zwischen als und wenn. Prüfen Sie jeden Fall genau. Schreiben Sie den Text nicht neu. Achten Sie besonders auf die Wortstellung."
+}

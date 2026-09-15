@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-G14",
+ "nivel": "B1",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Relative Clauses: Defining and Non-defining",
+ "categoria": "grammar",
+ "ancla": "EGP A2",
+ "descripcion": "At B1 you build a simple defining relative clause with who, which and that to identify a person or thing being talked about. The non-defining clause with commas, adding extra information, comes later.",
+ "cuadroReferencia": {
+  "titulo": "Simple relative clauses",
+  "columnas": [
+   "Pronoun",
+   "Used for",
+   "Example"
+  ],
+  "filas": [
+   [
+    "who",
+    "people",
+    "The man who called is my neighbour."
+   ],
+   [
+    "which/that",
+    "things",
+    "The book that I read was great."
+   ],
+   [
+    "Dropped pronoun",
+    "(object, optional)",
+    "The book (that) I read was great."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The man who called earlier is my neighbour.",
+   "audio": true
+  },
+  {
+   "texto": "The book that I read last week was really great.",
+   "audio": true
+  },
+  {
+   "texto": "This is the restaurant which everyone recommends."
+  }
+ ],
+ "notas": [
+  "Who is used for people, which for things; that can replace both in a defining clause.",
+  "The relative pronoun can sometimes be dropped when it's the object: the book I read.",
+  "There's no comma before a defining relative clause."
+ ],
+ "contraste": {
+  "es": "El español usa que para casi todo, sin distinguir personas de cosas. Los hispanohablantes tienden a usar which incluso para personas por analogía con que."
+ },
+ "errores": [
+  "Using which for a person instead of who.",
+  "Adding a comma before a defining relative clause.",
+  "Using that after a preposition, which isn't standard."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…who…",
+   "funcion": "defining, about a person",
+   "traducciones": {
+    "es": "…que…"
+   }
+  },
+  {
+   "expresion": "…which…",
+   "funcion": "defining, about a thing",
+   "traducciones": {
+    "es": "…que…"
+   }
+  },
+  {
+   "expresion": "…that…",
+   "funcion": "defining, person or thing",
+   "traducciones": {
+    "es": "…que…"
+   }
+  },
+  {
+   "expresion": "The person who…",
+   "funcion": "common opener",
+   "traducciones": {
+    "es": "La persona que…"
+   }
+  },
+  {
+   "expresion": "The thing that…",
+   "funcion": "common opener",
+   "traducciones": {
+    "es": "Lo que…"
+   }
+  },
+  {
+   "expresion": "…whose…",
+   "funcion": "possession",
+   "traducciones": {
+    "es": "…cuyo/a…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is who used for people and which for things?",
+  "Is there no comma before the defining clause?",
+  "Have I used at least two different relative pronouns?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on defining relative clauses. Check the choice between who, which and that, and check that no comma is used before a defining clause. Do not rewrite the text."
+}

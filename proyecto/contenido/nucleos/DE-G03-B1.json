@@ -1,0 +1,50 @@
+{
+ "skillId": "DE-G03", "nivel": "B1", "idioma": "de", "bilingue": true,
+ "titulo": "Präpositionen: Dativ, Akkusativ, Wechselpräpositionen",
+ "categoria": "grammar",
+ "ancla": "PD A2",
+ "descripcion": "Die neun Wechselpräpositionen (in, an, auf, über, unter, vor, hinter, neben, zwischen) verlangen Akkusativ bei Bewegung und Dativ bei Ort. Diese eine Regel entscheidet auf B1 über den Kasus und ist die Grundlage für viele spätere Strukturen.",
+ "cuadroReferencia": {
+  "titulo": "Wohin? gegen Wo?",
+  "columnas": ["Frage", "Kasus", "Beispiel"],
+  "filas": [
+   ["Wohin? (Bewegung)", "Akkusativ", "Ich gehe in die Küche."],
+   ["Wo? (Ort)", "Dativ", "Ich bin in der Küche."],
+   ["feste Präposition", "immer Dativ oder Akkusativ", "mit dem Auto (immer Dativ)"]
+  ]
+ },
+ "ejemplos": [
+  {"texto": "Ich gehe jetzt in die Küche.", "audio": true},
+  {"texto": "Ich bin schon seit einer Stunde in der Küche.", "audio": true},
+  {"texto": "Das Buch liegt auf dem Tisch."}
+ ],
+ "notas": [
+  "Die Frage wohin? verlangt Akkusativ, die Frage wo? verlangt Dativ — diese Eselsbrücke funktioniert bei allen neun Wechselpräpositionen.",
+  "Mit, nach, bei, von, zu, aus verlangen immer Dativ, unabhängig von Bewegung oder Ort.",
+  "Für, durch, ohne, um, gegen verlangen immer Akkusativ."
+ ],
+ "contraste": {
+  "es": "Das Spanische unterscheidet nicht zwischen Bewegung und Ort mit unterschiedlichem Kasus: en la cocina bedeutet sowohl in der Küche als auch in die Küche. Diese fehlende Unterscheidung ist der Hauptgrund, warum Spanischsprachige den Wechsel zwischen Akkusativ und Dativ hier besonders schwierig finden."
+ },
+ "errores": [
+  "Bei Bewegung den Dativ statt des Akkusativs verwenden: ich gehe in der Küche.",
+  "Bei einem festen Ort den Akkusativ statt des Dativs verwenden.",
+  "Die festen Präpositionen (mit, für, ohne) mit dem falschen Kasus kombinieren."
+ ],
+ "redemittel": [
+  {"expresion": "Ich gehe in die…", "funcion": "Bewegung, Akkusativ", "traducciones": {"es": "Voy a la…", "en": "I'm going into the…"}},
+  {"expresion": "Ich bin in der…", "funcion": "Ort, Dativ", "traducciones": {"es": "Estoy en la…", "en": "I'm in the…"}},
+  {"expresion": "…auf dem Tisch", "funcion": "Ort, Dativ", "traducciones": {"es": "…sobre la mesa", "en": "…on the table"}},
+  {"expresion": "…auf den Tisch", "funcion": "Bewegung, Akkusativ", "traducciones": {"es": "…sobre la mesa (movimiento)", "en": "…onto the table"}},
+  {"expresion": "mit dem…", "funcion": "immer Dativ", "traducciones": {"es": "con el…", "en": "with the…"}},
+  {"expresion": "für den…", "funcion": "immer Akkusativ", "traducciones": {"es": "para el…", "en": "for the…"}}
+ ],
+ "autochequeo": [
+  "Habe ich bei wohin? den Akkusativ verwendet?",
+  "Habe ich bei wo? den Dativ verwendet?",
+  "Stimmt der Kasus bei den festen Präpositionen (mit, für)?",
+  "Habe ich mindestens drei verschiedene Wechselpräpositionen benutzt?",
+  "Kann ich für jeden Satz sagen, ob wohin oder wo gefragt wird?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Präpositionen und ihren Kasus. Prüfen Sie bei jeder Wechselpräposition, ob es sich um Bewegung oder Ort handelt. Schreiben Sie den Text nicht neu."
+}

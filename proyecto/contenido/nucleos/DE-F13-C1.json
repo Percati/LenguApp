@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-F13",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Register: du/Sie, formell/informell",
+ "categoria": "fluency",
+ "ancla": "PD B2",
+ "descripcion": "Auf C1 geht Register über du/Sie hinaus: dieselbe Aussage klingt je nach Wortwahl, Satzbau und Nominalstil unterschiedlich formell, unabhängig von der Anrede. Das Ziel ist, denselben Inhalt bewusst in zwei oder drei Registern formulieren zu können.",
+ "cuadroReferencia": {
+  "titulo": "Derselbe Inhalt, drei Register",
+  "columnas": [
+   "Register",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Informell",
+    "Das klappt bei mir nicht, tut mir leid."
+   ],
+   [
+    "Neutral",
+    "Das lässt sich bei mir leider nicht einrichten."
+   ],
+   [
+    "Formell",
+    "Eine Teilnahme ist meinerseits leider nicht möglich."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das lässt sich bei mir leider nicht einrichten.",
+   "audio": true
+  },
+  {
+   "texto": "Eine Teilnahme ist meinerseits aus terminlichen Gründen leider nicht möglich.",
+   "audio": true
+  },
+  {
+   "texto": "Das klappt bei mir echt nicht, sorry."
+  }
+ ],
+ "notas": [
+  "Register hängt nicht nur von du/Sie ab, sondern auch von Nominalstil, Wortwahl und Satzlänge.",
+  "Meinerseits und aus terminlichen Gründen sind typische Marker für ein sehr formelles Register.",
+  "Denselben Inhalt in mehreren Registern zu formulieren, ist eine eigenständige C1-Kompetenz, kein Nebenprodukt der Anredewahl."
+ ],
+ "contraste": {
+  "es": "Das Spanische markiert Register stark über tú/usted, aber weniger konsequent über Wortwahl und Satzbau wie das Deutsche. Spanischsprachige neigen dazu, die Anrede korrekt anzupassen, aber die restliche Wortwahl im gleichen, mittleren Register zu belassen."
+ },
+ "errores": [
+  "Die Anrede anpassen, aber die restliche Wortwahl im selben Register belassen.",
+  "In einem formellen Text informelle Wörter oder Wendungen verwenden.",
+  "Ein sehr formelles Register in einem lockeren Kontext verwenden, was distanziert wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das lässt sich leider nicht einrichten.",
+   "funcion": "neutrale Absage",
+   "traducciones": {
+    "es": "Lamentablemente no se puede organizar.",
+    "en": "Unfortunately, that can't be arranged.",
+    "fr": "Malheureusement, cela ne peut pas s’organiser.",
+    "it": "Purtroppo non si può organizzare.",
+    "pt": "Infelizmente, isso não pode ser organizado."
+   }
+  },
+  {
+   "expresion": "Eine Teilnahme ist meinerseits nicht möglich.",
+   "funcion": "formelle Absage",
+   "traducciones": {
+    "es": "Mi participación no es posible.",
+    "en": "Participation on my part is not possible.",
+    "fr": "Il ne m’est pas possible de participer.",
+    "it": "Da parte mia non è possibile partecipare.",
+    "pt": "Da minha parte, não me é possível participar."
+   }
+  },
+  {
+   "expresion": "Das klappt bei mir nicht.",
+   "funcion": "informelle Absage",
+   "traducciones": {
+    "es": "A mí no me sale.",
+    "en": "That doesn't work for me.",
+    "fr": "Ça ne marche pas pour moi.",
+    "it": "Per me non funziona.",
+    "pt": "Para mim, isso não funciona."
+   }
+  },
+  {
+   "expresion": "Aus terminlichen Gründen…",
+   "funcion": "formelle Begründung",
+   "traducciones": {
+    "es": "Por razones de agenda…",
+    "en": "Due to scheduling reasons…",
+    "fr": "Pour des raisons d’agenda…",
+    "it": "Per motivi di agenda…",
+    "pt": "Por motivos de agenda…"
+   }
+  },
+  {
+   "expresion": "Ich schaff das leider nicht.",
+   "funcion": "informelle Begründung",
+   "traducciones": {
+    "es": "No llego, la verdad.",
+    "en": "I just can't make it, unfortunately.",
+    "fr": "Malheureusement, je n’y arrive pas.",
+    "it": "Purtroppo non ce la faccio.",
+    "pt": "Infelizmente, não consigo."
+   }
+  },
+  {
+   "expresion": "Wir würden uns freuen, Sie bei anderer Gelegenheit begrüßen zu dürfen.",
+   "funcion": "sehr formeller Abschluss",
+   "traducciones": {
+    "es": "Nos alegraría recibirle en otra ocasión.",
+    "en": "We would be pleased to welcome you on another occasion.",
+    "fr": "Nous serions heureux de vous accueillir à une autre occasion.",
+    "it": "Saremmo lieti di accoglierla in un’altra occasione.",
+    "pt": "Teríamos muito gosto em recebê-lo/a noutra ocasião."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist die Wortwahl konsistent mit der gewählten Anrede?",
+  "Habe ich denselben Inhalt in mindestens zwei Registern formuliert?",
+  "Passt die Satzlänge zum gewählten Register?",
+  "Klingt das formelle Register nicht übertrieben steif für den Kontext?",
+  "Klingt das informelle Register nicht respektlos?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz des Registers über Anrede, Wortwahl und Satzbau hinweg. Prüfen Sie, ob alle drei Ebenen zusammenpassen. Schreiben Sie den Text nicht neu."
+}

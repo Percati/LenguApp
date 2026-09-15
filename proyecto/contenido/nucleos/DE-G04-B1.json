@@ -1,0 +1,119 @@
+{
+ "skillId": "DE-G04",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Trennbare und untrennbare Verben",
+ "categoria": "grammar",
+ "ancla": "PD A2",
+ "descripcion": "Trennbare Verben (aufstehen, anrufen, mitkommen) trennen ihr Präfix im Hauptsatz und schicken es ans Satzende. Untrennbare Verben (verstehen, bekommen, erzählen) bleiben immer zusammen. Diese Unterscheidung ist auf B1 entscheidend für die korrekte Satzstellung.",
+ "cuadroReferencia": {
+  "titulo": "Trennbar oder nicht?",
+  "columnas": [
+   "Typ",
+   "Präfixe",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Trennbar",
+    "auf-, an-, mit-, aus-, ein-",
+    "Ich stehe um sieben auf."
+   ],
+   [
+    "Untrennbar",
+    "be-, ver-, er-, ge-, ent-",
+    "Ich verstehe das nicht."
+   ],
+   [
+    "Perfekt trennbar",
+    "kein ge- in der Mitte",
+    "Ich bin aufgestanden."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich stehe jeden Tag um sieben Uhr auf.",
+   "audio": true
+  },
+  {
+   "texto": "Ich verstehe diese Aufgabe nicht ganz.",
+   "audio": true
+  },
+  {
+   "texto": "Ich bin heute später aufgestanden als sonst."
+  }
+ ],
+ "notas": [
+  "Im Hauptsatz steht das Präfix des trennbaren Verbs immer ganz am Ende: ich rufe dich später an.",
+  "Im Perfekt steht ge- zwischen Präfix und Verbstamm: aufgestanden, nicht gestandenauf.",
+  "Untrennbare Präfixe (be-, ver-, er-, ge-, ent-, zer-) sind nie betont und trennen sich nie."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine Entsprechung für trennbare Verben — es gibt keine Präfixe, die im Satz an eine andere Stelle wandern. Diese Struktur ist für Spanischsprachige komplett neu und wird oft vergessen, weil man im Spanischen das ganze Verb einfach zusammenlässt."
+ },
+ "errores": [
+  "Das Präfix vergessen und es nicht ans Satzende stellen: ich stehe auf um sieben statt ich stehe um sieben auf.",
+  "Bei untrennbaren Verben trotzdem versuchen, das Präfix zu trennen.",
+  "Im Perfekt ge- an der falschen Stelle einfügen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…stehe ich…auf.",
+   "funcion": "trennbares Verb, Hauptsatz",
+   "traducciones": {
+    "es": "…me levanto…",
+    "en": "…I get up…"
+   }
+  },
+  {
+   "expresion": "Ich rufe dich…an.",
+   "funcion": "trennbares Verb",
+   "traducciones": {
+    "es": "Te llamo…",
+    "en": "I'll call you…"
+   }
+  },
+  {
+   "expresion": "Ich verstehe…",
+   "funcion": "untrennbares Verb",
+   "traducciones": {
+    "es": "Entiendo…",
+    "en": "I understand…"
+   }
+  },
+  {
+   "expresion": "Kommst du mit?",
+   "funcion": "trennbares Verb, Frage",
+   "traducciones": {
+    "es": "¿Venís conmigo?",
+    "en": "Are you coming along?"
+   }
+  },
+  {
+   "expresion": "Ich bin…aufgestanden.",
+   "funcion": "trennbares Verb, Perfekt",
+   "traducciones": {
+    "es": "Me levanté…",
+    "en": "I got up…"
+   }
+  },
+  {
+   "expresion": "Ich habe das…bekommen.",
+   "funcion": "untrennbares Verb, Perfekt",
+   "traducciones": {
+    "es": "Recibí eso…",
+    "en": "I received that…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht das Präfix des trennbaren Verbs am Satzende?",
+  "Ist bei untrennbaren Verben das Präfix nicht getrennt?",
+  "Steht ge- an der richtigen Stelle im Perfekt?",
+  "Habe ich mindestens zwei trennbare und ein untrennbares Verb benutzt?",
+  "Klingt der Satz natürlich, nicht wie ein zusammengeschriebenes Verb aus dem Spanischen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf trennbare und untrennbare Verben. Prüfen Sie die Position des Präfixes und die Bildung des Perfekts. Schreiben Sie den Text nicht neu."
+}

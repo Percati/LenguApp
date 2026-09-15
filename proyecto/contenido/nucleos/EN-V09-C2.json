@@ -1,0 +1,47 @@
+{
+ "skillId": "EN-V09", "nivel": "C2", "idioma": "en", "bilingue": false,
+ "titulo": "Connotation and Nuance",
+ "categoria": "vocabulary",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 connotation is manipulated deliberately to shift a reader's sympathy across a whole passage without ever stating an opinion directly — choosing a consistent thread of positively or negatively charged words for one side of an account, which does the persuasive work silently.",
+ "cuadroReferencia": {
+  "titulo": "A consistent connotative thread",
+  "columnas": ["Neutral account", "Sympathetic thread", "Unsympathetic thread"],
+  "filas": [
+   ["spoke at length", "explained patiently", "went on and on"],
+   ["did not respond", "stayed composed", "was evasive"],
+   ["changed the plan", "adapted", "backtracked"]
+  ]
+ },
+ "ejemplos": [
+  {"texto": "She explained patiently, staying composed even as the questions grew sharper.", "audio": true},
+  {"texto": "He went on and on, visibly backtracking whenever the details were pressed.", "audio": true},
+  {"texto": "Neither account is technically inaccurate; the sympathy lies entirely in the word choice."}
+ ],
+ "notas": [
+  "A consistent connotative thread across several sentences shifts sympathy far more powerfully than any single loaded word, precisely because no individual sentence looks biased.",
+  "This is a technique to recognise as a reader as much as to use as a writer — noticing the thread is a form of critical reading, not just style analysis.",
+  "Mixing sympathetic and unsympathetic words for the same person within one passage undoes the effect and reads as simply inconsistent."
+ ],
+ "errores": [
+  "Breaking the connotative thread partway through, mixing sympathetic and unsympathetic words for the same subject.",
+  "Choosing words so heavily loaded that the bias becomes visible rather than silent.",
+  "Failing to notice a consistent thread when reading someone else's account critically."
+ ],
+ "redemittel": [
+  {"expresion": "explained patiently", "funcion": "sympathetic framing", "traducciones": {"es": "explicó con paciencia"}},
+  {"expresion": "went on and on", "funcion": "unsympathetic framing, same event", "traducciones": {"es": "no paraba de hablar"}},
+  {"expresion": "stayed composed", "funcion": "sympathetic framing", "traducciones": {"es": "se mantuvo compuesto"}},
+  {"expresion": "was evasive", "funcion": "unsympathetic framing, same event", "traducciones": {"es": "fue evasivo"}},
+  {"expresion": "adapted", "funcion": "sympathetic framing of a change", "traducciones": {"es": "se adaptó"}},
+  {"expresion": "backtracked", "funcion": "unsympathetic framing of the same change", "traducciones": {"es": "dio marcha atrás"}}
+ ],
+ "autochequeo": [
+  "Is the connotative thread consistent across the whole passage for each subject?",
+  "Is any individual word loaded enough to make the bias visible?",
+  "Would a reader notice manipulation, or only a feeling of sympathy or its absence?",
+  "Have I used the technique for a genuine rhetorical purpose, not by accident?",
+  "Could I identify the same technique if I were reading someone else's account?"
+ ],
+ "promptCorreccion": "Focus only on the connotative thread used to frame a person or event. Check for consistency and flag any word loaded enough to make the bias visible. Do not rewrite the text."
+}

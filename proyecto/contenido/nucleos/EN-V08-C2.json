@@ -1,0 +1,47 @@
+{
+ "skillId": "EN-V08", "nivel": "C2", "idioma": "en", "bilingue": false,
+ "titulo": "Precision: Avoiding Overused Words",
+ "categoria": "vocabulary",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 the discipline extends past single overused words to overused sentence patterns and rhetorical moves — recognising when a favourite structure of your own has become a tic, not just avoiding very and good, and varying structure deliberately across a longer piece.",
+ "cuadroReferencia": {
+  "titulo": "Beyond word-level precision",
+  "columnas": ["Level", "Overused pattern", "Fix"],
+  "filas": [
+   ["Word", "very + adjective", "one precise adjective"],
+   ["Sentence pattern", "the same opener repeated", "vary sentence openings"],
+   ["Rhetorical move", "always conceding before disagreeing", "sometimes disagree directly"]
+  ]
+ },
+ "ejemplos": [
+  {"texto": "The report was thorough, if occasionally repetitive.", "audio": true},
+  {"texto": "No, that's simply not right.", "audio": true},
+  {"texto": "For once, I'll skip the caveat: this is a mistake."}
+ ],
+ "notas": [
+  "A rhetorical tic — always softening before disagreeing, always hedging before a claim — is a higher-order overused pattern that word-level precision alone won't fix.",
+  "Deliberately breaking your own habitual pattern once in a longer piece (for once, I'll skip the caveat) reads as self-aware rather than inconsistent.",
+  "Varying sentence openings across a paragraph is a mechanical discipline worth checking for in any longer piece."
+ ],
+ "errores": [
+  "Fixing word-level overuse while leaving structural or rhetorical tics untouched.",
+  "Repeating the same sentence opener across several consecutive sentences.",
+  "Always applying the same rhetorical softening move regardless of whether it fits the point."
+ ],
+ "redemittel": [
+  {"expresion": "…, if occasionally…", "funcion": "precise, qualified praise", "traducciones": {"es": "…, aunque a veces…"}},
+  {"expresion": "No, that's simply not right.", "funcion": "direct disagreement, no softening", "traducciones": {"es": "No, eso simplemente no es correcto."}},
+  {"expresion": "For once, I'll skip the caveat:", "funcion": "self-aware break from a habitual pattern", "traducciones": {"es": "Por esta vez, me salto la salvedad:"}},
+  {"expresion": "Put simply,…", "funcion": "varies a habitual opener", "traducciones": {"es": "Dicho de forma sencilla,…"}},
+  {"expresion": "This much is unambiguous:", "funcion": "breaks a hedging habit deliberately", "traducciones": {"es": "Esto es inequívoco:"}},
+  {"expresion": "…, and I mean that without qualification.", "funcion": "explicitly signals no hedge", "traducciones": {"es": "…, y lo digo sin matices."}}
+ ],
+ "autochequeo": [
+  "Have I checked for repeated sentence openers across a paragraph?",
+  "Have I noticed and varied my own habitual rhetorical moves at least once?",
+  "Is every very + adjective replaced with a precise word?",
+  "Does at least one sentence deliberately break my usual pattern?",
+  "Would a careful reader notice repetition of structure, not just of words?"
+ ],
+ "promptCorreccion": "Focus only on lexical and structural precision. Check for repeated sentence openers and habitual rhetorical moves, not just overused words. Do not rewrite the text."
+}

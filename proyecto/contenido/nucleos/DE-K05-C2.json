@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-K05",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Subjektive Modalverben + Modalpartikeln + Abschwächung",
+ "categoria": "grammar",
+ "ancla": "Aspekte C1",
+ "descripcion": "Auf C2 wird die Dreifachabschwächung gezielt dosiert: zu viel davon in einem einzigen Satz wirkt ausweichend statt vorsichtig, zu wenig wirkt anmassend in einem Register, das Zurückhaltung erwartet. Die C2-Kompetenz liegt darin, genau zwei der drei Ebenen zu wählen, nicht immer alle drei.",
+ "cuadroReferencia": {
+  "titulo": "Zwei von drei, nicht immer alle",
+  "columnas": [
+   "Kombination",
+   "Wirkung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Modalverb + Partikel",
+    "vorsichtig, gesprächsnah",
+    "Das dürfte wohl stimmen."
+   ],
+   [
+    "Partikel + Abschwächung",
+    "zurückhaltend, aber direkt",
+    "Das ist ja eher fraglich."
+   ],
+   [
+    "Alle drei zusammen",
+    "maximal vorsichtig, selten nötig",
+    "Das dürfte ja wohl eher nicht ganz stimmen."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das dürfte wohl stimmen, auch wenn ich es nicht mit Sicherheit sagen kann.",
+   "audio": true
+  },
+  {
+   "texto": "Das ist ja eher fraglich, wenn man genauer hinschaut.",
+   "audio": true
+  },
+  {
+   "texto": "Das dürfte ja wohl eher nicht ganz stimmen, so wie ich das sehe."
+  }
+ ],
+ "notas": [
+  "Zwei der drei Ebenen reichen für die meisten Situationen; alle drei zusammen sind für Momente reserviert, in denen maximale Zurückhaltung wirklich nötig ist.",
+  "Eine Häufung aller drei Ebenen in mehreren aufeinanderfolgenden Sätzen wirkt ausweichend, nicht höflich.",
+  "Die Wahl, welche zwei Ebenen man kombiniert, hängt vom Ton ab: Modalverb plus Partikel klingt gesprächsnäher, Partikel plus Abschwächung direkter."
+ ],
+ "contraste": {
+  "es": "Das Spanische erreicht eine ähnliche Zurückhaltung meist mit einer einzigen Schicht (podría ser que…), ohne die Möglichkeit, drei unabhängige Abschwächungsebenen zu stapeln. Hispanophone C2-Sprecher setzen deshalb entweder zu wenig Abschwächung ein oder häufen unbeabsichtigt alle drei Ebenen, weil ihnen das Gefühl für die Zwischenstufe fehlt."
+ },
+ "errores": [
+  "Alle drei Ebenen in jedem Satz eines Absatzes verwenden, was ausweichend statt vorsichtig wirkt.",
+  "Keine der drei Ebenen benutzen, wo das Register Zurückhaltung erwartet.",
+  "Die falsche Zweierkombination für den beabsichtigten Ton wählen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das dürfte wohl…",
+   "funcion": "Modalverb + Partikel",
+   "traducciones": {
+    "es": "Eso seguramente…",
+    "en": "That's probably…"
+   }
+  },
+  {
+   "expresion": "Das ist ja eher…",
+   "funcion": "Partikel + Abschwächung",
+   "traducciones": {
+    "es": "Eso es más bien…",
+    "en": "That's rather…"
+   }
+  },
+  {
+   "expresion": "Das dürfte ja wohl eher nicht…",
+   "funcion": "alle drei Ebenen, maximal vorsichtig",
+   "traducciones": {
+    "es": "Eso probablemente no sería del todo…",
+    "en": "That's probably not quite…"
+   }
+  },
+  {
+   "expresion": "Das könnte doch sein, oder?",
+   "funcion": "Modalverb + Partikel, Frage",
+   "traducciones": {
+    "es": "¿No podría ser eso?",
+    "en": "Couldn't that be, though?"
+   }
+  },
+  {
+   "expresion": "Das mag schon sein, aber…",
+   "funcion": "Abschwächung, konzessiv",
+   "traducciones": {
+    "es": "Puede ser, pero…",
+    "en": "That may well be, but…"
+   }
+  },
+  {
+   "expresion": "Ich würde das eher vorsichtig einschätzen.",
+   "funcion": "explizite Zurückhaltung, alternativ",
+   "traducciones": {
+    "es": "Yo lo evaluaría con cautela.",
+    "en": "I'd assess that rather cautiously."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Sind höchstens zwei der drei Ebenen pro Satz kombiniert, ausser wenn maximale Vorsicht wirklich nötig ist?",
+  "Passt die gewählte Kombination zum beabsichtigten Ton?",
+  "Wirkt der Absatz insgesamt vorsichtig, nicht ausweichend?",
+  "Gibt es mindestens einen Satz ohne jede Abschwächung, zum Kontrast?",
+  "Klingt der Absatz kontrolliert, nicht wie eine Aneinanderreihung von Abschwächungen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Dosierung von Modalverb, Partikel und Abschwächung. Prüfen Sie, ob mehr als zwei Ebenen gleichzeitig verwendet werden. Schreiben Sie den Text nicht neu."
+}

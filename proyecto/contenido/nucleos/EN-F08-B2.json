@@ -1,0 +1,132 @@
+{
+ "skillId": "EN-F08",
+ "nivel": "B2",
+ "idioma": "en",
+ "titulo": "Comparing and Contrasting",
+ "categoria": "fluency",
+ "ancla": "CV Sustained monologue: giving information",
+ "descripcion": "At B2 comparisons use clear comparative and superlative forms plus simple connectors like whereas and on the other hand. The weighted, qualified contrast expected at C1 isn't the target yet — a clear, well-connected comparison is enough.",
+ "cuadroReferencia": {
+  "titulo": "Comparing two things",
+  "columnas": [
+   "Function",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Similarity",
+    "Both are quite similar in price."
+   ],
+   [
+    "Difference",
+    "This one is more expensive, whereas that one is cheaper."
+   ],
+   [
+    "Preference",
+    "I'd prefer the first one, to be honest."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Both options are quite similar in price.",
+   "audio": true
+  },
+  {
+   "texto": "This one is faster, whereas that one is more reliable.",
+   "audio": true
+  },
+  {
+   "texto": "On the other hand, the second option takes longer."
+  }
+ ],
+ "notas": [
+  "Whereas is a clean, neutral way to introduce a contrast without sounding too formal or too casual.",
+  "On the other hand works well to start a new sentence that contrasts with the previous one.",
+  "A comparison feels more balanced if you mention at least one similarity before the differences."
+ ],
+ "contraste": {
+  "es": "El español compara de forma directa (esto es mejor que aquello), lo cual se transfiere sin problema a las formas comparativas del inglés. Whereas no tiene un equivalente exacto de una sola palabra en español, así que los hispanohablantes suelen reemplazarlo por mientras que, que es un poco más largo."
+ },
+ "errores": [
+  "Comparing only the differences without mentioning any similarity.",
+  "Using more + adjective with short adjectives that take -er: more fast instead of faster.",
+  "Overusing but instead of trying whereas or on the other hand."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Both are similar in…",
+   "funcion": "names a similarity",
+   "traducciones": {
+    "es": "Ambos son parecidos en…",
+    "de": "Beide sind ähnlich in…",
+    "fr": "Les deux se ressemblent sur…",
+    "it": "Entrambi sono simili per…",
+    "pt": "Ambos são semelhantes em…"
+   }
+  },
+  {
+   "expresion": "…, whereas…",
+   "funcion": "neutral contrast",
+   "traducciones": {
+    "es": "…, mientras que…",
+    "de": "…, wohingegen…",
+    "fr": "…, tandis que…",
+    "it": "…, mentre…",
+    "pt": "…, ao passo que…"
+   }
+  },
+  {
+   "expresion": "On the other hand,…",
+   "funcion": "introduces a contrast",
+   "traducciones": {
+    "es": "Por otro lado,…",
+    "de": "Andererseits…",
+    "fr": "D’un autre côté…",
+    "it": "D’altra parte…",
+    "pt": "Por outro lado…"
+   }
+  },
+  {
+   "expresion": "I'd prefer…, to be honest.",
+   "funcion": "states a preference",
+   "traducciones": {
+    "es": "Preferiría…, la verdad.",
+    "de": "Ehrlich gesagt würde ich lieber…",
+    "fr": "Pour être honnête, je préférerais…",
+    "it": "A dire il vero, preferirei…",
+    "pt": "Sinceramente, preferiria…"
+   }
+  },
+  {
+   "expresion": "Compared to…, this is…",
+   "funcion": "explicit comparison",
+   "traducciones": {
+    "es": "Comparado con…, esto es…",
+    "de": "Im Vergleich zu… ist das…",
+    "fr": "Comparé à…, ceci est…",
+    "it": "Rispetto a…, questo è…",
+    "pt": "Comparado com…, isto é…"
+   }
+  },
+  {
+   "expresion": "The main difference is…",
+   "funcion": "highlights the key point",
+   "traducciones": {
+    "es": "La principal diferencia es…",
+    "de": "Der Hauptunterschied ist…",
+    "fr": "La principale différence est…",
+    "it": "La differenza principale è…",
+    "pt": "A principal diferença é…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I mentioned at least one similarity as well as differences?",
+  "Are the comparative forms correct (faster, more expensive)?",
+  "Have I used whereas or on the other hand at least once?",
+  "Is my preference clearly stated?",
+  "Is the comparison connected with whereas or a similar linking word?"
+ ],
+ "promptCorreccion": "Focus only on how the comparison is made: comparatives, whereas, similarities and differences. Check whether at least one similarity is mentioned before the contrast, and whether the preference is clearly stated. Do not rewrite the text."
+}

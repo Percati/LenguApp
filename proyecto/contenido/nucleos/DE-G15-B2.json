@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-G15",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Konjunktiv I und indirekte Rede",
+ "categoria": "grammar",
+ "ancla": "Aspekte B1+",
+ "descripcion": "Auf B2 wird die indirekte Rede mit Konjunktiv I für die dritte Person eingeführt: er sagte, er sei müde. Die Einbettung in Relativsätze und Nominalstil (C1) kommt später — hier zählt die korrekte Grundform.",
+ "cuadroReferencia": {
+  "titulo": "Direkte und indirekte Rede",
+  "columnas": [
+   "Direkt",
+   "Indirekt mit Konjunktiv I"
+  ],
+  "filas": [
+   [
+    "\"Ich bin müde.\"",
+    "Er sagte, er sei müde."
+   ],
+   [
+    "\"Ich habe keine Zeit.\"",
+    "Sie sagte, sie habe keine Zeit."
+   ],
+   [
+    "\"Wir kommen morgen.\"",
+    "Sie sagten, sie kämen morgen. (Konjunktiv II, da Konjunktiv I = Indikativ)"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Er sagte, er sei mit der Arbeit fertig.",
+   "audio": true
+  },
+  {
+   "texto": "Sie meinte, sie habe das schon erledigt.",
+   "audio": true
+  },
+  {
+   "texto": "Sie sagten, sie kämen etwas später."
+  }
+ ],
+ "notas": [
+  "Wo Konjunktiv I mit dem Indikativ zusammenfällt (meist bei wir/sie), wechselt man zum Konjunktiv II.",
+  "Dass kann nach dem Einleitungsverb stehen oder weggelassen werden: er sagte, dass er müde sei oder er sagte, er sei müde.",
+  "Konjunktiv I wird vor allem schriftlich verwendet; im Gespräch reicht oft der Indikativ mit einem Signalwort wie angeblich."
+ ],
+ "contraste": {
+  "es": "Das Spanische markiert berichtete Rede nicht durch einen eigenen Modus, sondern durch den Kontext oder que + Indikativ/Subjuntivo je nach Verb. Der deutsche Konjunktiv I hat deshalb keine direkte Entsprechung, und Spanischsprachige benutzen oft einfach den Indikativ, wo der Konjunktiv I erwartet wird."
+ },
+ "errores": [
+  "Konjunktiv I benutzen, wo er mit dem Indikativ zusammenfällt, ohne zu Konjunktiv II zu wechseln.",
+  "Den Indikativ in indirekter Rede verwenden, wo Konjunktiv I erwartet wird.",
+  "Die Personalpronomen nicht anpassen: er sagte, ich sei müde statt er sei müde."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Er/Sie sagte, er/sie sei…",
+   "funcion": "indirekte Rede, Konjunktiv I",
+   "traducciones": {
+    "es": "Dijo que era/estaba…",
+    "en": "He/She said he/she was…",
+    "fr": "Il/Elle a dit qu’il/elle était…",
+    "it": "Ha detto che era…",
+    "pt": "Ele/Ela disse que era/estava…"
+   }
+  },
+  {
+   "expresion": "Er/Sie meinte, er/sie habe…",
+   "funcion": "indirekte Rede mit haben",
+   "traducciones": {
+    "es": "Dijo que había/tenía…",
+    "en": "He/She said he/she had…",
+    "fr": "Il/Elle a dit qu’il/elle avait…",
+    "it": "Ha detto che aveva…",
+    "pt": "Ele/Ela disse que tinha…"
+   }
+  },
+  {
+   "expresion": "Sie sagten, sie kämen…",
+   "funcion": "Konjunktiv II bei Zusammenfall",
+   "traducciones": {
+    "es": "Dijeron que vendrían…",
+    "en": "They said they would come…",
+    "fr": "Ils ont dit qu’ils viendraient…",
+    "it": "Hanno detto che sarebbero venuti…",
+    "pt": "Disseram que viriam…"
+   }
+  },
+  {
+   "expresion": "Laut ihm/ihr…",
+   "funcion": "alternative Einleitung",
+   "traducciones": {
+    "es": "Según él/ella…",
+    "en": "According to him/her…",
+    "fr": "Selon lui/elle…",
+    "it": "Secondo lui/lei…",
+    "pt": "Segundo ele/ela…"
+   }
+  },
+  {
+   "expresion": "Angeblich…",
+   "funcion": "Alternative zum Konjunktiv I, informell",
+   "traducciones": {
+    "es": "Supuestamente…",
+    "en": "Allegedly…",
+    "fr": "Apparemment / prétendument…",
+    "it": "A quanto pare / presumibilmente…",
+    "pt": "Alegadamente…"
+   }
+  },
+  {
+   "expresion": "Er fragte, ob…",
+   "funcion": "indirekte Frage",
+   "traducciones": {
+    "es": "Preguntó si…",
+    "en": "He asked whether…",
+    "fr": "Il a demandé si…",
+    "it": "Ha chiesto se…",
+    "pt": "Ele perguntou se…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht Konjunktiv I, wo er sich vom Indikativ unterscheidet?",
+  "Ist bei Zusammenfall auf Konjunktiv II gewechselt?",
+  "Sind die Personalpronomen korrekt angepasst?",
+  "Ist die indirekte Frage korrekt mit ob oder einem Fragewort gebildet?",
+  "Habe ich dass wahlweise weggelassen oder korrekt gesetzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Konjunktiv I in der indirekten Rede. Prüfen Sie, wo auf Konjunktiv II gewechselt werden muss. Schreiben Sie den Text nicht neu."
+}

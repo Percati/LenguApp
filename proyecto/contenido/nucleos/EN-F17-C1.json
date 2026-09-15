@@ -1,0 +1,174 @@
+{
+ "skillId": "EN-F17",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Register Shifting",
+ "categoria": "fluency",
+ "descripcion": "Register is the C1 skill most likely to be invisible to the speaker and obvious to everyone else. Writing to a regulator the way you would write to a colleague is the commonest way advanced speakers misfire. The content is not wrong; the packaging is. Register moves along several axes at once, and the failure is almost always mixing them within one text.",
+ "cuadroReferencia": {
+  "titulo": "The six axes",
+  "columnas": [
+   "Axis",
+   "Informal → Formal"
+  ],
+  "filas": [
+   [
+    "Lexis",
+    "Germanic (*get*, *put*, *let*) → Latinate (*obtain*, *place*, *permit*)"
+   ],
+   [
+    "Structure",
+    "Verbal (*we tested it*) → Nominal (*testing was carried out*)"
+   ],
+   [
+    "Person",
+    "*I / we* → impersonal (*it was found that*)"
+   ],
+   [
+    "Hedging",
+    "sparse → dense"
+   ],
+   [
+    "Contractions",
+    "*don't*, *it's* → *do not*, *it is*"
+   ],
+   [
+    "Phrasal verbs",
+    "*find out* → *ascertain*"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "To a colleague: *This won't scale and we both know it.*",
+   "audio": true
+  },
+  {
+   "texto": "To a manager: *I've got concerns about how this behaves at volume — worth a conversation before we commit.*",
+   "audio": true
+  },
+  {
+   "texto": "In a formal report: *Scalability has not been demonstrated at the volumes anticipated, and further assessment is recommended prior to commitment.*",
+   "audio": true
+  },
+  {
+   "texto": "*Worth a conversation before we commit.*",
+   "audio": true
+  },
+  {
+   "texto": "*Further assessment is recommended prior to commitment.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Formal English is not harder English; it is a different set.",
+  "Over-formalising email reads as cold or sarcastic in most English-speaking workplaces.",
+  "Nominalisation raises formality and lowers readability. Use it deliberately, not by default."
+ ],
+ "contraste": {
+  "es": "Spanish marks formality heavily through address (*tú/usted*) and verb morphology, which English lacks entirely. English carries the whole load lexically and structurally — so a Spanish speaker who gets the politeness right can still get the register badly wrong."
+ },
+ "errores": [
+  "Equating formality with difficulty.",
+  "Register mixing within a paragraph — the commonest real error.",
+  "Latinate vocabulary in a message meant to be warm."
+ ],
+ "redemittel": [
+  {
+   "expresion": "we both know it",
+   "funcion": "low",
+   "traducciones": {
+    "es": "los dos lo sabemos",
+    "de": "wir wissen es beide",
+    "fr": "nous le savons tous les deux",
+    "it": "lo sappiamo entrambi",
+    "pt": "nós dois sabemos"
+   }
+  },
+  {
+   "expresion": "worth a conversation",
+   "funcion": "mid",
+   "traducciones": {
+    "es": "vale una charla",
+    "de": "ein Gespräch wert",
+    "fr": "cela mérite une discussion",
+    "it": "vale la pena parlarne",
+    "pt": "vale a pena conversar"
+   }
+  },
+  {
+   "expresion": "I've got concerns about",
+   "funcion": "mid",
+   "traducciones": {
+    "es": "me preocupa",
+    "de": "ich habe Bedenken wegen",
+    "fr": "j’ai des réserves au sujet de",
+    "it": "ho delle preoccupazioni riguardo a",
+    "pt": "tenho preocupações sobre"
+   }
+  },
+  {
+   "expresion": "further assessment is recommended",
+   "funcion": "high",
+   "traducciones": {
+    "es": "se recomienda un análisis adicional",
+    "de": "eine weitere Bewertung wird empfohlen",
+    "fr": "une évaluation supplémentaire est recommandée",
+    "it": "si raccomanda un’ulteriore valutazione",
+    "pt": "recomenda-se uma avaliação adicional"
+   }
+  },
+  {
+   "expresion": "prior to",
+   "funcion": "high (→ *before*, low)",
+   "traducciones": {
+    "es": "antes de",
+    "de": "vor / im Vorfeld von",
+    "fr": "avant / préalablement à",
+    "it": "prima di",
+    "pt": "antes de"
+   }
+  },
+  {
+   "expresion": "ascertain",
+   "funcion": "high (→ *find out*, low)",
+   "traducciones": {
+    "es": "averiguar",
+    "de": "feststellen / ermitteln",
+    "fr": "déterminer / établir",
+    "it": "accertare",
+    "pt": "averiguar / determinar"
+   }
+  },
+  {
+   "expresion": "it was found that",
+   "funcion": "high (→ *we found*, mid)",
+   "traducciones": {
+    "es": "se constató que",
+    "de": "es wurde festgestellt, dass",
+    "fr": "il a été constaté que",
+    "it": "è stato riscontrato che",
+    "pt": "constatou-se que"
+   }
+  },
+  {
+   "expresion": "has not been demonstrated",
+   "funcion": "high",
+   "traducciones": {
+    "es": "no se ha demostrado",
+    "de": "wurde nicht nachgewiesen",
+    "fr": "n’a pas été démontré",
+    "it": "non è stato dimostrato",
+    "pt": "não foi demonstrado"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is each version internally consistent across all six axes?",
+  "Any contraction in the formal version? Any Latinate chain in the informal one?",
+  "Is the content genuinely identical, or did I change the message?",
+  "Would each version land with its intended reader?",
+  "All four core items across the three?"
+ ],
+ "promptCorreccion": "Focus only on register. (1) Rate each of my three versions and say whether it is consistent throughout. (2) Flag every mixed-register sentence. (3) Say which versions would actually land with their reader and which would not. (4) Show me the single word in each version that most gives away its register. Do not rewrite the text."
+}

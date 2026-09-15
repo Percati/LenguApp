@@ -1,0 +1,137 @@
+{
+ "skillId": "DE-G01",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Satzbau: Haupt- und Nebensatz",
+ "categoria": "grammar",
+ "ancla": "PD A2",
+ "descripcion": "Auf B1 wird der Nebensatz mit Verbletztstellung sicher gebildet: weil, dass, wenn, obwohl schicken das konjugierte Verb ans Ende. Das ist die Grundregel, die auf B2 mit mehr Konnektoren und auf C1 mit komplexeren Kombinationen erweitert wird. Hier zählt vor allem, die Regel automatisch anzuwenden.",
+ "cuadroReferencia": {
+  "titulo": "Verbposition nach Satztyp",
+  "columnas": [
+   "Satztyp",
+   "Verbposition",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Hauptsatz",
+    "Position 2",
+    "Ich lerne Deutsch."
+   ],
+   [
+    "Nebensatz mit weil/dass/wenn",
+    "am Ende",
+    "…, weil ich in Deutschland arbeite."
+   ],
+   [
+    "Zwei Hauptsätze mit deshalb",
+    "Verb-Subjekt-Umstellung",
+    "Ich habe Zeit, deshalb komme ich mit."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich lerne Deutsch, weil ich in der Schweiz arbeite.",
+   "audio": true
+  },
+  {
+   "texto": "Ich weiss, dass das nicht einfach ist.",
+   "audio": true
+  },
+  {
+   "texto": "Wenn ich Zeit habe, gehe ich schwimmen."
+  }
+ ],
+ "notas": [
+  "Nach weil, dass und wenn steht das konjugierte Verb immer am Ende des Nebensatzes.",
+  "Vor dass steht immer ein Komma.",
+  "Deshalb ist kein Nebensatz-Konnektor: danach folgt normale Hauptsatzstellung mit Verb-Subjekt-Umstellung."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine Verbletztstellung: porque, que und si ändern die Wortstellung im Nebensatz nicht. Das ist der grösste strukturelle Unterschied zwischen den beiden Sprachen und braucht viel Übung, weil es keine spanische Struktur gibt, die man einfach übertragen kann."
+ },
+ "errores": [
+  "Das Verb im Nebensatz an zweiter Stelle lassen: weil ich arbeite in der Schweiz.",
+  "Das Komma vor dass vergessen.",
+  "Nach deshalb die Verb-Subjekt-Umstellung vergessen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, weil…",
+   "funcion": "Grund",
+   "traducciones": {
+    "es": "…, porque…",
+    "en": "…, because…",
+    "fr": "…, parce que…",
+    "it": "…, perché…",
+    "pt": "…, porque…"
+   }
+  },
+  {
+   "expresion": "Ich weiss, dass…",
+   "funcion": "Aussage einleiten",
+   "traducciones": {
+    "es": "Sé que…",
+    "en": "I know that…",
+    "fr": "Je sais que…",
+    "it": "So che…",
+    "pt": "Sei que…"
+   }
+  },
+  {
+   "expresion": "Wenn…, dann…",
+   "funcion": "Bedingung",
+   "traducciones": {
+    "es": "Si…, entonces…",
+    "en": "If…, then…",
+    "fr": "Si…, alors…",
+    "it": "Se…, allora…",
+    "pt": "Se…, então…"
+   }
+  },
+  {
+   "expresion": "…, deshalb…",
+   "funcion": "Folge",
+   "traducciones": {
+    "es": "…, por eso…",
+    "en": "…, that's why…",
+    "fr": "…, c’est pourquoi…",
+    "it": "…, perciò…",
+    "pt": "…, por isso…"
+   }
+  },
+  {
+   "expresion": "…, obwohl…",
+   "funcion": "Einräumung",
+   "traducciones": {
+    "es": "…, aunque…",
+    "en": "…, although…",
+    "fr": "…, bien que…",
+    "it": "…, sebbene…",
+    "pt": "…, embora…"
+   }
+  },
+  {
+   "expresion": "Ich glaube, dass…",
+   "funcion": "Meinung einleiten",
+   "traducciones": {
+    "es": "Creo que…",
+    "en": "I believe that…",
+    "fr": "Je crois que…",
+    "it": "Credo che…",
+    "pt": "Acho que…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht das Verb im weil/dass/wenn-Satz am Ende?",
+  "Steht vor dass ein Komma?",
+  "Ist nach deshalb die Verb-Subjekt-Umstellung vorhanden?",
+  "Habe ich mindestens drei verschiedene Nebensatz-Konnektoren benutzt?",
+  "Klingt der Satzbau natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verbposition im Nebensatz. Prüfen Sie bei jedem weil-, dass- und wenn-Satz, ob das Verb am Ende steht. Schreiben Sie den Text nicht neu."
+}

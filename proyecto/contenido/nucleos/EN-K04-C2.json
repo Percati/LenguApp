@@ -1,0 +1,113 @@
+{
+ "skillId": "EN-K04",
+ "nivel": "C2",
+ "idioma": "en",
+ "titulo": "Hedging, Passive and Impersonal Reporting",
+ "categoria": "grammar",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 the caution stack is calibrated so precisely that the choice of a single hedge word signals a specific point on the certainty scale to an expert reader: may suggests genuine doubt, would appear to signals strong but not absolute confidence, cannot be ruled out signals a low but non-zero probability worth flagging.",
+ "cuadroReferencia": {
+  "titulo": "A finer certainty scale",
+  "columnas": [
+   "Hedge",
+   "Implied certainty",
+   "Typical use"
+  ],
+  "filas": [
+   [
+    "cannot be ruled out",
+    "low but non-zero",
+    "flags a risk worth naming, not expecting"
+   ],
+   [
+    "would appear to",
+    "strong but not absolute",
+    "near-conclusion, stops short of stating fact"
+   ],
+   [
+    "it is not inconceivable that",
+    "very low, deliberately understated",
+    "raises a possibility while minimising commitment"
+   ]
+  ],
+  "notaPie": "These distinctions matter most to expert readers in a field; a general reader may not register the difference, which is exactly why the choice signals expertise."
+ },
+ "ejemplos": [
+  {
+   "texto": "A confounding variable cannot be ruled out at this stage.",
+   "audio": true
+  },
+  {
+   "texto": "The results would appear to support the original hypothesis.",
+   "audio": true
+  },
+  {
+   "texto": "It is not inconceivable that the effect is seasonal rather than causal."
+  }
+ ],
+ "notas": [
+  "Cannot be ruled out is weaker than is possible — it flags that something hasn't been excluded, without suggesting it's likely.",
+  "Would appear to sits just below a confident claim; dropping would appear to and stating the fact directly would overclaim.",
+  "It is not inconceivable that is a deliberately understated way to raise a possibility that the writer actually considers worth taking seriously."
+ ],
+ "contraste": {
+  "es": "El español académico atenúa con menos gradaciones léxicas distintas y se apoya más en el condicional (podría no descartarse) para cubrir varios de estos matices a la vez. Un hispanohablante de C2 tiende a colapsar esta escala fina en dos o tres opciones, perdiendo la señal exacta de certeza que un lector experto en inglés espera encontrar."
+ },
+ "errores": [
+  "Using a stronger hedge than the evidence actually supports, or vice versa.",
+  "Treating cannot be ruled out and is possible as interchangeable, when they signal different degrees of expected likelihood.",
+  "Dropping would appear to and overclaiming a near-conclusion as established fact."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…cannot be ruled out.",
+   "funcion": "low but non-zero probability",
+   "traducciones": {
+    "es": "no se puede descartar…"
+   }
+  },
+  {
+   "expresion": "…would appear to…",
+   "funcion": "strong but not absolute",
+   "traducciones": {
+    "es": "parecería que…"
+   }
+  },
+  {
+   "expresion": "It is not inconceivable that…",
+   "funcion": "understated possibility, taken seriously",
+   "traducciones": {
+    "es": "no es inconcebible que…"
+   }
+  },
+  {
+   "expresion": "There is reason to believe that…",
+   "funcion": "moderate, evidence-based",
+   "traducciones": {
+    "es": "hay razones para pensar que…"
+   }
+  },
+  {
+   "expresion": "…, though this warrants further scrutiny.",
+   "funcion": "flags a limit explicitly",
+   "traducciones": {
+    "es": "…, aunque esto merece mayor análisis."
+   }
+  },
+  {
+   "expresion": "…remains an open question.",
+   "funcion": "genuine unresolved uncertainty",
+   "traducciones": {
+    "es": "…sigue siendo una pregunta abierta."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Does each hedge match the actual level of certainty the evidence supports?",
+  "Have I distinguished cannot be ruled out from is possible in intent?",
+  "Does would appear to stop short of overclaiming?",
+  "Would an expert reader in this field read the precise level of confidence I intend?",
+  "Is there at least one flat, unhedged claim to show the contrast?"
+ ],
+ "promptCorreccion": "Focus only on the precision of the hedging scale. Check whether each hedge word matches the intended level of certainty, not just whether a hedge is present. Do not rewrite the text."
+}

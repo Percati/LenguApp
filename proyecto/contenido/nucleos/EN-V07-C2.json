@@ -1,0 +1,47 @@
+{
+ "skillId": "EN-V07", "nivel": "C2", "idioma": "en", "bilingue": false,
+ "titulo": "Discourse Markers and Linking",
+ "categoria": "vocabulary",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 discourse markers are used sparingly enough that their absence becomes part of the style: a writer capable of dense linking can choose bare juxtaposition instead, trusting the logical connection to be self-evident, which reads as more confident than marking every step.",
+ "cuadroReferencia": {
+  "titulo": "Marked versus bare juxtaposition",
+  "columnas": ["Version", "Effect"],
+  "filas": [
+   ["Fully marked", "However, despite this, and as a result, the plan failed."],
+   ["Bare juxtaposition", "The warnings went unheeded. The plan failed."],
+   ["When to choose bare", "when the logical link is genuinely obvious"]
+  ]
+ },
+ "ejemplos": [
+  {"texto": "The warnings went unheeded. The plan failed.", "audio": true},
+  {"texto": "He said nothing. That, in itself, was the answer.", "audio": true},
+  {"texto": "The numbers were revised. Nobody was surprised."}
+ ],
+ "notas": [
+  "Bare juxtaposition works only when the causal or logical link is genuinely obvious to the reader without a marker — forcing it where the link isn't clear creates confusion, not sophistication.",
+  "A writer who can produce dense, fully marked prose and chooses not to reads as more confident than one who never marks anything, because the omission is legible as a choice.",
+  "Mixing marked and bare sentences within a passage, using bare ones for the strongest logical steps, is itself a rhetorical technique."
+ ],
+ "errores": [
+  "Using bare juxtaposition where the logical link genuinely isn't obvious, leaving the reader confused.",
+  "Never marking anything, which reads as underdeveloped rather than confident.",
+  "Marking every single step so densely that the prose loses all rhythm."
+ ],
+ "redemittel": [
+  {"expresion": "…unheeded. …failed.", "funcion": "bare juxtaposition, obvious link", "traducciones": {"es": "…desatendidas. …fracasó."}},
+  {"expresion": "That, in itself, was the answer.", "funcion": "bare conclusion", "traducciones": {"es": "Eso, en sí mismo, fue la respuesta."}},
+  {"expresion": "Nobody was surprised.", "funcion": "bare, implies obviousness", "traducciones": {"es": "Nadie se sorprendió."}},
+  {"expresion": "However,…", "funcion": "explicit marker, when needed", "traducciones": {"es": "Sin embargo,…"}},
+  {"expresion": "As a direct result,…", "funcion": "explicit marker for a genuine causal chain", "traducciones": {"es": "Como resultado directo,…"}},
+  {"expresion": "Which is to say,…", "funcion": "explicit reformulation", "traducciones": {"es": "Es decir,…"}}
+ ],
+ "autochequeo": [
+  "Is bare juxtaposition used only where the link is genuinely obvious?",
+  "Does the passage mix marked and bare sentences deliberately, not randomly?",
+  "Would a reader follow the logic without confusion where markers are dropped?",
+  "Is at least one strong logical step left bare, for effect?",
+  "Does the prose have rhythm, not either constant marking or none at all?"
+ ],
+ "promptCorreccion": "Focus only on the choice between marked linking and bare juxtaposition. Check whether every bare link is genuinely self-evident. Do not rewrite the text."
+}

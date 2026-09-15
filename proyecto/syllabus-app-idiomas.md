@@ -97,7 +97,7 @@ Tres advertencias que un revisor debe tener presentes:
 
 | Objeto | Qué es | Cuántos |
 |---|---|---|
-| **Skill** | Tema gramatical, funcional o léxico | 47 en inglés, 50 en alemán |
+| **Skill** | Tema gramatical, funcional, léxico o combinatorio | 53 en inglés, 58 en alemán |
 | **Topic** | Tema de conversación | 14, compartidos entre idiomas |
 | **VocabPack** | Vocabulario de un Topic en un idioma y nivel | hasta 140 |
 | **Occurrence** | Una aparición concreta de un Skill en un nivel, con su profundidad | variable |
@@ -187,7 +187,7 @@ Reglas del prompt:
 - Ambos idiomas alinean estas semanas. El resto del año corre en tracks independientes.
 ---
 
-## 4. Banco de Skills — Inglés (47)
+## 4. Banco de Skills — Inglés (53)
 
 Los niveles indicados son aquellos en los que el Skill **se practica activamente** en la app, no aquellos en los que se introduce por primera vez en un curso. Un Skill puede seguir apareciendo por encima del nivel en que se adquiere: `Second Conditional` se adquiere en B1 pero se sigue trabajando en B2 porque la fluidez con él tarda años.
 
@@ -239,6 +239,19 @@ Los niveles indicados son aquellos en los que el Skill **se practica activamente
 | EN-G19 | Word order and adverb placement | B1 B2 C1 | EGP A1–C2 | |
 | EN-G20 | Unreal past: *I wish*, *if only*, *it's time* | B2 C2 | EGP B2/C2 | |
 
+### 4.2bis Combinaciones estructurales (6)
+
+Misma categoría `K` y misma lógica: estructuras que coocurren en la lengua real y que producen oraciones Frankenstein cuando se aprenden por separado.
+
+| ID | Combinación | Niveles | Ancla | Nota |
+|---|---|---|---|---|
+| EN-K01 | Inversion + cleft + fronting for emphasis | C1 C2 | EGP C1 | Tres formas de mover el énfasis, usadas juntas y fáciles de sobrecargar |
+| EN-K02 | Reduced relatives + participle clauses + nominalisation | C1 C2 | EGP B2 | La densidad del inglés escrito formal sale de estas tres a la vez |
+| EN-K03 | Unreal past + modal perfect + third conditional | B2 C1 C2 | EGP B2 | El bloque del arrepentimiento: *I wish I'd known — we could have avoided it* |
+| EN-K04 | Hedging + passive + impersonal reporting | B2 C1 C2 | CV Propositional precision | La cautela académica y profesional: *it has been suggested that this may…* |
+| EN-K05 | Phrasal verbs + collocation + register shift | C1 C2 | CV Sociolinguistic appropriateness | Elegir entre *look into*, *investigate* y *conduct an inquiry* según el interlocutor |
+| EN-K06 | Reported speech + backshift + hedged attribution | C1 C2 | Objective Proficiency | *She reportedly claimed she had been unaware*: tres capas de distancia |
+
 ### 4.3 Léxico (9)
 
 | ID | Skill | Niveles | Ancla | Nota |
@@ -266,7 +279,7 @@ Los niveles indicados son aquellos en los que el Skill **se practica activamente
 Lectura: el peso se corre de gramática a fluidez y léxico a medida que sube el nivel, que es exactamente lo que debe pasar. En C2 quedan solo dos ítems gramaticales porque ya no hay gramática nueva que aprender, solo que dominar.
 ---
 
-## 5. Banco de Skills — Alemán (50)
+## 5. Banco de Skills — Alemán (58)
 
 Recordatorio de la sección 1.2: **por encima de B2 no hay gramática nueva.** Profile deutsch describe la gramática solo hasta B2 y asume que en C1/C2 el trabajo es de uso activo, no de adquisición de estructuras. El banco lo refleja: los niveles C llevan registro, precisión, estilística y variación.
 
@@ -320,6 +333,25 @@ Recordatorio de la sección 1.2: **por encima de B2 no hay gramática nueva.** P
 | DE-G20 | Das Wort *es* (posicional y correlativo) | B2 | Aspekte B2 | Error frecuente, poco enseñado |
 | DE-G21 | Modalitätsverben (*scheinen, pflegen, drohen*) | C1 | Aspekte C1 | C1 puro |
 | DE-G18 | Temporale Nebensätze (*als, wenn, während, nachdem, seitdem*) | A2 B1 B2 | PD A2/B1 | *als* vs *wenn*: error clásico |
+
+### 5.2bis Combinaciones estructurales / Strukturbündel (8)
+
+Categoría propia, con la letra `K`. No son estructuras nuevas: son **combinaciones de estructuras ya conocidas que en la lengua real aparecen juntas**.
+
+La razón de que existan es un problema concreto del nivel avanzado. Quien aprende Konjunktiv II en una unidad y Modalverben en otra, y nunca las ve combinadas, produce oraciones correctas por partes y monstruosas como conjunto. *Hätte man das früher wissen können* no se aprende sumando Konjunktiv II y verbos modales: se aprende como bloque.
+
+Encaja con lo que declara Profile deutsch para C1 y C2 —que allí no hay gramática nueva sino uso activo de medios ya disponibles— y da a C2 un contenido gramatical que no consiste en inventar estructuras.
+
+| ID | Combinación | Niveles | Ancla | Nota |
+|---|---|---|---|---|
+| DE-K01 | Konjunktiv II + Konditionalsatz + Modalverb im Perfekt | C1 C2 | Erkundungen C1 | *Hätte man das früher wissen können, wäre…* El reproche irreal con modal es el bloque más frecuente y el que peor se improvisa |
+| DE-K02 | Passiv + Partizip I und II als Attribut | C1 C2 | Erkundungen C2 | *die zu erwartenden Auswirkungen*, *das anzuwendende Verfahren*. El participio modal solo tiene sentido junto al pasivo |
+| DE-K03 | Nominalisierung + Genitivkette + Präposition mit Genitiv | C1 C2 | Erkundungen C2 | *im Hinblick auf die Umsetzung der Richtlinie*. El alemán administrativo entero es este bloque |
+| DE-K04 | Konjunktiv I + Relativsatz + Nominalstil | C1 C2 | Erkundungen C1 | El registro de prensa y actas: *die Maßnahme, die bereits beschlossen sei, werde…* |
+| DE-K05 | Subjektive Modalverben + Modalpartikeln + Abschwächung | C1 C2 | Aspekte C1 | *Das dürfte ja wohl eher nicht…* Tres recursos de atenuación apilados, que es como suena el alemán hablado culto |
+| DE-K06 | Erweiterte Partizipialattribute und Relativsätze | C1 C2 | Erkundungen C1 | Convertir en las dos direcciones. Es la palanca de densidad del alemán escrito |
+| DE-K07 | Funktionsverbgefüge + Nominalstil + Passiversatzformen | C2 | Erkundungen C2 | *Das lässt sich in Betracht ziehen.* El registro técnico y jurídico |
+| DE-K08 | Zweiteilige Konnektoren + Vergleichs- und Konzessivsätze | C1 C2 | Aspekte C1 | *nicht nur… sondern auch*, *je… desto*, *zwar… allerdings* dentro de un mismo argumento |
 
 ### 5.3 Léxico / Wortschatz (9)
 

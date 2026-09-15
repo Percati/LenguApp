@@ -1,0 +1,117 @@
+{
+ "skillId": "EN-K02",
+ "nivel": "C2",
+ "idioma": "en",
+ "titulo": "Reduced Relatives, Participle Clauses and Nominalisation",
+ "categoria": "grammar",
+ "ancla": "EGP C2",
+ "descripcion": "At C2 this compression is calibrated to genre: a legal or scientific register tolerates near-total nominalisation, while even sophisticated journalism keeps a verbal backbone. The C1 skill was producing the compression correctly; C2 is judging how much a given text can bear.",
+ "cuadroReferencia": {
+  "titulo": "How much compression a genre bears",
+  "columnas": [
+   "Genre",
+   "Tolerance for compression",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Legal/regulatory",
+    "very high",
+    "The party having failed to comply, termination follows."
+   ],
+   [
+    "Scientific report",
+    "high",
+    "Samples collected in situ were analysed off-site."
+   ],
+   [
+    "Serious journalism",
+    "moderate",
+    "Having lost the vote, the minister resigned the next day."
+   ],
+   [
+    "Literary narrative",
+    "low, used for effect only",
+    "Exhausted, she said nothing."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The party having failed to comply, termination follows automatically.",
+   "audio": true
+  },
+  {
+   "texto": "Having lost the vote decisively, the minister resigned the following day.",
+   "audio": true
+  },
+  {
+   "texto": "Exhausted, she said nothing for the rest of the journey."
+  }
+ ],
+ "notas": [
+  "An absolute construction (the party having failed…) is essentially confined to legal and highly formal registers; using it in ordinary prose reads as an affectation.",
+  "The same participle clause that sounds efficient in a report can sound cold in narrative, where a fuller clause carries more feeling.",
+  "Judging the ceiling of compression a text can bear is itself the C2 skill — the individual constructions were already available at C1."
+ ],
+ "contraste": {
+  "es": "El español tolera mucha menos compresión nominal en cualquier género, así que un texto legal o científico en español sigue pareciendo más verbal que su equivalente inglés. Un hispanohablante de C2 tiende a subestimar cuánta compresión el inglés espera en un registro legal o técnico, y a sobreestimarla en la narrativa."
+ },
+ "errores": [
+  "Using an absolute construction outside legal or highly formal writing, where it reads as pretentious.",
+  "Under-compressing a legal or scientific text relative to what the genre expects.",
+  "Over-compressing literary narrative, which drains it of feeling."
+ ],
+ "redemittel": [
+  {
+   "expresion": "The party having…, …",
+   "funcion": "absolute construction, legal",
+   "traducciones": {
+    "es": "habiendo la parte…, …"
+   }
+  },
+  {
+   "expresion": "…collected in situ…",
+   "funcion": "reduced relative, scientific",
+   "traducciones": {
+    "es": "…recogidos in situ…"
+   }
+  },
+  {
+   "expresion": "Having lost…, …",
+   "funcion": "participle clause, journalism",
+   "traducciones": {
+    "es": "tras haber perdido…, …"
+   }
+  },
+  {
+   "expresion": "Exhausted, …",
+   "funcion": "bare participle, literary",
+   "traducciones": {
+    "es": "agotada, …"
+   }
+  },
+  {
+   "expresion": "This having been established, …",
+   "funcion": "formal transition",
+   "traducciones": {
+    "es": "una vez establecido esto, …"
+   }
+  },
+  {
+   "expresion": "…, thereby…-ing",
+   "funcion": "result via participle, formal",
+   "traducciones": {
+    "es": "…, con lo cual…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Does the level of compression match the genre's actual tolerance, not just what's grammatically possible?",
+  "Is an absolute construction reserved for legal or very formal contexts?",
+  "Does literary narrative keep enough verbal texture to carry feeling?",
+  "Would an expert reader of this genre find the density normal, not either sparse or overwrought?",
+  "Have I identified the genre before judging the density?"
+ ],
+ "promptCorreccion": "Focus only on whether the level of nominal and participial compression matches the genre. Flag any absolute construction outside legal or very formal writing. Do not rewrite the text."
+}

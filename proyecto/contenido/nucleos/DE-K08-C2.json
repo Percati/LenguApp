@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-K08",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Zweiteilige Konnektoren + Vergleichs- und Konzessivsätze",
+ "categoria": "grammar",
+ "ancla": "Aspekte C1",
+ "descripcion": "Auf C2 tragen die zweiteiligen Konnektoren die gesamte Architektur eines längeren Arguments: zwar…allerdings eröffnet die Konzession, je…desto liefert den kausalen Mechanismus, und nicht nur…sondern auch schliesst mit der Verstärkung. Die Kunst liegt darin, sie über mehrere Sätze hinweg zu verknüpfen, ohne dass die Struktur mechanisch wirkt.",
+ "cuadroReferencia": {
+  "titulo": "Eine Argumentkette aus drei Paaren",
+  "columnas": [
+   "Schritt",
+   "Paar",
+   "Funktion"
+  ],
+  "filas": [
+   [
+    "1. Konzession",
+    "zwar…allerdings",
+    "räumt die Gegenposition ein"
+   ],
+   [
+    "2. Mechanismus",
+    "je…desto",
+    "erklärt den kausalen Zusammenhang"
+   ],
+   [
+    "3. Verstärkung",
+    "nicht nur…sondern auch",
+    "schliesst mit dem stärksten Argument"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Zwar ist die Reform teuer, allerdings zeigt sich: je länger man wartet, desto teurer wird sie.",
+   "audio": true
+  },
+  {
+   "texto": "Nicht nur die Kosten sprechen dafür, sondern auch die langfristige Stabilität.",
+   "audio": true
+  },
+  {
+   "texto": "Je genauer man hinschaut, desto klarer wird das Muster."
+  }
+ ],
+ "notas": [
+  "Die drei Paare in derselben Reihenfolge (Konzession, Mechanismus, Verstärkung) zu verwenden, ist eine bewährte Argumentationsarchitektur, keine Zufallsfolge.",
+  "Zwischen den Paaren braucht es Übergangssätze, sonst wirkt die Kette wie eine Aneinanderreihung von Formeln statt wie ein fliessendes Argument.",
+  "Diese Dichte an zweiteiligen Konnektoren gehört in Essays und Analysen, nicht in gesprochene Sprache."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit no solo…sino también und cuanto más…más die gleichen Grundstrukturen, verkettet sie aber seltener bewusst zu einer mehrsätzigen Architektur. Hispanophone C2-Sprecher benutzen die einzelnen Paare korrekt, verpassen aber oft die Chance, sie als Gesamtstruktur eines Arguments einzusetzen."
+ },
+ "errores": [
+  "Die drei Paare ohne verbindende Übergangssätze aneinanderreihen, sodass die Kette mechanisch wirkt.",
+  "Die Reihenfolge der Argumentationsschritte umkehren, ohne dass es der Logik des Arguments entspricht.",
+  "Diese Dichte in gesprochener Sprache verwenden, wo sie unnatürlich wirkt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Zwar…, allerdings zeigt sich…",
+   "funcion": "Konzession, Übergang zum Mechanismus",
+   "traducciones": {
+    "es": "si bien…, sin embargo se observa que…",
+    "en": "while…, however it turns out that…"
+   }
+  },
+  {
+   "expresion": "Je…, desto…",
+   "funcion": "kausaler Mechanismus",
+   "traducciones": {
+    "es": "cuanto más…, más…",
+    "en": "the more…, the more…"
+   }
+  },
+  {
+   "expresion": "Nicht nur…, sondern auch…",
+   "funcion": "abschliessende Verstärkung",
+   "traducciones": {
+    "es": "no solo…, sino también…",
+    "en": "not only…, but also…"
+   }
+  },
+  {
+   "expresion": "Das führt zu der Frage, ob…",
+   "funcion": "Übergang zwischen Argumentschritten",
+   "traducciones": {
+    "es": "eso lleva a la pregunta de si…",
+    "en": "this raises the question of whether…"
+   }
+  },
+  {
+   "expresion": "Damit hängt zusammen, dass…",
+   "funcion": "Übergang, verbindend",
+   "traducciones": {
+    "es": "con eso se relaciona el hecho de que…",
+    "en": "related to this is the fact that…"
+   }
+  },
+  {
+   "expresion": "Vor diesem Hintergrund…",
+   "funcion": "Übergang zum letzten Argumentschritt",
+   "traducciones": {
+    "es": "ante este trasfondo…",
+    "en": "against this background…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Sind die drei Paare durch Übergangssätze verbunden, nicht aneinandergereiht?",
+  "Folgt die Reihenfolge der Logik des Arguments?",
+  "Passt diese Dichte zum Register des Textes (Essay, nicht Gespräch)?",
+  "Wirkt die Kette wie ein fliessendes Argument, nicht wie eine Formelübung?",
+  "Würde ein Fachleser die Kette als kunstvolles Argument lesen, nicht als Übung?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die drei Konnektorenpaare eine kohärente Argumentationskette bilden, verbunden durch Übergangssätze. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,136 @@
+{
+ "skillId": "EN-F18",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Irony, Understatement and Humour",
+ "categoria": "fluency",
+ "ancla": "CV Sociolinguistic appropriateness",
+ "descripcion": "British and American English use understatement as a form of humour and even complaint: not bad meaning excellent, a bit of a problem meaning a disaster. This is the most culturally loaded skill in the whole bank, and the risk of dated or unnatural examples is real — treat this as a starting map, not a script.",
+ "cuadroReferencia": {
+  "titulo": "Understatement in context",
+  "columnas": [
+   "Said",
+   "Actually means"
+  ],
+  "filas": [
+   [
+    "Not bad at all.",
+    "Excellent."
+   ],
+   [
+    "It's a bit of a mess.",
+    "It's a disaster."
+   ],
+   [
+    "I wasn't overly impressed.",
+    "I thought it was bad."
+   ],
+   [
+    "That could have gone better.",
+    "It went badly."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Well, that could have gone better.",
+   "audio": true
+  },
+  {
+   "texto": "It's a bit of a mess, to put it mildly.",
+   "audio": true
+  },
+  {
+   "texto": "I wasn't overly impressed, if I'm honest."
+  }
+ ],
+ "notas": [
+  "Understatement is delivered flat, without exaggerated tone — that's part of what makes it read as ironic rather than literal.",
+  "This device depends heavily on shared context between speaker and listener; used with the wrong audience, it can simply be taken literally.",
+  "To put it mildly is a useful signal that flags the understatement explicitly, for contexts where the irony might otherwise be missed."
+ ],
+ "contraste": {
+  "es": "El español tiende hacia la hipérbole para el humor y la queja (fue un desastre total) en vez de la subestimación. Los hispanohablantes suelen no captar el understatement como ironía y lo toman literalmente, o lo sobreexplican cuando lo intentan producir."
+ },
+ "errores": [
+  "Missing the ironic intent and reacting to an understatement as if it were literal.",
+  "Overdoing the exaggerated tone when delivering understatement, which cancels the effect.",
+  "Using this device with an audience unfamiliar with the convention, where it may simply confuse."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Not bad at all.",
+   "funcion": "understated high praise",
+   "traducciones": {
+    "es": "Nada mal.",
+    "de": "Gar nicht schlecht.",
+    "fr": "Pas mal du tout.",
+    "it": "Niente male.",
+    "pt": "Nada mal."
+   }
+  },
+  {
+   "expresion": "…, to put it mildly.",
+   "funcion": "flags the understatement explicitly",
+   "traducciones": {
+    "es": "…, por decirlo suavemente.",
+    "de": "…, um es milde auszudrücken.",
+    "fr": "…, pour le dire gentiment.",
+    "it": "…, per dirla con delicatezza.",
+    "pt": "…, para dizer de forma suave."
+   }
+  },
+  {
+   "expresion": "That could have gone better.",
+   "funcion": "understates a bad outcome",
+   "traducciones": {
+    "es": "Podría haber salido mejor.",
+    "de": "Das hätte besser laufen können.",
+    "fr": "Ça aurait pu mieux se passer.",
+    "it": "Poteva andare meglio.",
+    "pt": "Isso podia ter corrido melhor."
+   }
+  },
+  {
+   "expresion": "I wasn't overly impressed.",
+   "funcion": "understated criticism",
+   "traducciones": {
+    "es": "No me impresionó demasiado.",
+    "de": "Ich war nicht besonders beeindruckt.",
+    "fr": "Je n’ai pas été particulièrement impressionné(e).",
+    "it": "Non mi ha colpito particolarmente.",
+    "pt": "Não fiquei particularmente impressionado/a."
+   }
+  },
+  {
+   "expresion": "It's a bit of a…",
+   "funcion": "understates a serious problem",
+   "traducciones": {
+    "es": "Es un poco de…",
+    "de": "Es ist ein bisschen…",
+    "fr": "C’est un peu…",
+    "it": "È un po’…",
+    "pt": "É um pouco…"
+   }
+  },
+  {
+   "expresion": "Could be worse, I suppose.",
+   "funcion": "resigned understatement",
+   "traducciones": {
+    "es": "Podría ser peor, supongo.",
+    "de": "Es könnte schlimmer sein, nehme ich an.",
+    "fr": "Ça pourrait être pire, j’imagine.",
+    "it": "Potrebbe andare peggio, suppongo.",
+    "pt": "Podia ser pior, suponho."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the understatement delivered flatly, without exaggerated tone?",
+  "Would the intended audience actually recognise this as irony?",
+  "Have I avoided overexplaining the joke, which would cancel the effect?",
+  "Is this device appropriate for the relationship with the listener?",
+  "Would a native speaker actually say this in this context?"
+ ],
+ "promptCorreccion": "Focus only on understatement and irony. Check whether the intended effect would land with a native audience and whether it's overdone or underexplained. Do not rewrite the text."
+}

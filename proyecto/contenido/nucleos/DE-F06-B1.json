@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-F06",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Ratschläge geben",
+ "categoria": "fluency",
+ "ancla": "PD A2/B1",
+ "descripcion": "Auf B1 gibt man einen Rat mit du solltest, klar und direkt. Die höflichere Form an deiner Stelle würde ich kann schon eingeführt werden, muss aber nicht perfekt sitzen — das kommt erst auf B2. Wichtig ist vor allem, den Rat verständlich zu formulieren, ohne zu belehrend zu wirken.",
+ "cuadroReferencia": {
+  "titulo": "Einen Rat geben",
+  "columnas": [
+   "Formel",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Du solltest…",
+    "Du solltest mehr Wasser trinken."
+   ],
+   [
+    "An deiner Stelle würde ich…",
+    "An deiner Stelle würde ich früher schlafen gehen."
+   ],
+   [
+    "Warum probierst du nicht…?",
+    "Warum probierst du nicht einfach ein anderes Rezept?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Du solltest wirklich mehr Wasser trinken.",
+   "audio": true
+  },
+  {
+   "texto": "An deiner Stelle würde ich früher schlafen gehen.",
+   "audio": true
+  },
+  {
+   "texto": "Warum probierst du es nicht einfach mal?"
+  }
+ ],
+ "notas": [
+  "Du solltest ist die einfachste und direkteste Form für einen Rat auf B1.",
+  "An deiner Stelle würde ich braucht den Konjunktiv II und klingt höflicher.",
+  "Warum … nicht? ist eine freundliche Alternative, einen Rat als Frage zu formulieren."
+ ],
+ "contraste": {
+  "es": "Das Spanische gibt Räte sehr direkt mit deberías, was strukturell dem deutschen solltest entspricht. An deiner Stelle hat mit yo en tu lugar eine enge Entsprechung."
+ },
+ "errores": [
+  "Sollen statt solltest verwenden, was zu stark klingt.",
+  "Den Konjunktiv II nach an deiner Stelle vergessen.",
+  "Zu viele Ratschläge hintereinander geben."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Du solltest…",
+   "funcion": "direkter Rat",
+   "traducciones": {
+    "es": "Deberías…",
+    "en": "You should…"
+   }
+  },
+  {
+   "expresion": "An deiner Stelle würde ich…",
+   "funcion": "höflicher Rat",
+   "traducciones": {
+    "es": "Yo en tu lugar…",
+    "en": "If I were you, I'd…"
+   }
+  },
+  {
+   "expresion": "Warum probierst du nicht…?",
+   "funcion": "Rat als Frage",
+   "traducciones": {
+    "es": "¿Por qué no probás…?",
+    "en": "Why don't you try…?"
+   }
+  },
+  {
+   "expresion": "Es wäre gut, wenn du…",
+   "funcion": "sanfter Rat",
+   "traducciones": {
+    "es": "Estaría bien que…",
+    "en": "It would be good if you…"
+   }
+  },
+  {
+   "expresion": "Vielleicht solltest du…",
+   "funcion": "abgeschwächter Rat",
+   "traducciones": {
+    "es": "Quizás deberías…",
+    "en": "Maybe you should…"
+   }
+  },
+  {
+   "expresion": "Ich würde dir empfehlen, zu…",
+   "funcion": "formeller Rat",
+   "traducciones": {
+    "es": "Te recomendaría…",
+    "en": "I'd recommend that you…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht nach an deiner Stelle der Konjunktiv II?",
+  "Klingt der Rat freundlich?",
+  "Habe ich nur einen Rat auf einmal gegeben?",
+  "Habe ich du solltest nicht mehrfach wiederholt?",
+  "Habe ich mindestens zwei verschiedene Formeln benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Form des Ratschlags. Prüfen Sie den Konjunktiv II nach an deiner Stelle und ob der Ton freundlich bleibt, nicht belehrend. Schreiben Sie den Text nicht neu."
+}

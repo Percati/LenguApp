@@ -1,0 +1,119 @@
+{
+ "skillId": "DE-G07",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Adjektivdeklination",
+ "categoria": "grammar",
+ "ancla": "PD A2",
+ "descripcion": "Auf B1 wird die Adjektivendung nach den drei Grundtypen (bestimmter Artikel, unbestimmter Artikel, kein Artikel) im Nominativ und Akkusativ sicher gebildet. Dativ und die feineren Ausnahmen kommen erst auf B2 dazu.",
+ "cuadroReferencia": {
+  "titulo": "Adjektivendung nach Artikeltyp",
+  "columnas": [
+   "Artikeltyp",
+   "Beispiel Nom.",
+   "Beispiel Akk."
+  ],
+  "filas": [
+   [
+    "bestimmter Artikel",
+    "der neue Kollege",
+    "den neuen Kollegen"
+   ],
+   [
+    "unbestimmter Artikel",
+    "ein neuer Kollege",
+    "einen neuen Kollegen"
+   ],
+   [
+    "kein Artikel",
+    "neuer Kollege",
+    "neuen Kollegen"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Der neue Kollege ist sehr freundlich.",
+   "audio": true
+  },
+  {
+   "texto": "Ich habe einen neuen Kollegen kennengelernt.",
+   "audio": true
+  },
+  {
+   "texto": "Wir trinken gern frischen Orangensaft."
+  }
+ ],
+ "notas": [
+  "Nach dem bestimmten Artikel endet das Adjektiv meist auf -e oder -en.",
+  "Nach dem unbestimmten Artikel im Nominativ zeigt die Endung das Genus: -er, -e, -es.",
+  "Ohne Artikel trägt das Adjektiv selbst die Artikelendung: guter Kaffee, wie der Artikel der Kaffee."
+ ],
+ "contraste": {
+  "es": "Das Spanische dekliniert Adjektive nur nach Genus und Numerus, nicht nach Kasus und nicht in Abhängigkeit vom Artikeltyp. Diese dreifache Abhängigkeit ist für Spanischsprachige komplett neu, weshalb der Fehler bis weit über B1 hinaus bestehen bleibt."
+ },
+ "errores": [
+  "Die Endung nur nach Genus wählen und den Artikeltyp ignorieren.",
+  "Nach dem unbestimmten Artikel die Endung des bestimmten Artikels verwenden.",
+  "Im Akkusativ die Nominativendung beibehalten."
+ ],
+ "redemittel": [
+  {
+   "expresion": "der neue…",
+   "funcion": "bestimmter Artikel, Nom.",
+   "traducciones": {
+    "es": "el nuevo…",
+    "en": "the new…"
+   }
+  },
+  {
+   "expresion": "ein neuer…",
+   "funcion": "unbestimmter Artikel, Nom. mask.",
+   "traducciones": {
+    "es": "un nuevo…",
+    "en": "a new…"
+   }
+  },
+  {
+   "expresion": "einen neuen…",
+   "funcion": "unbestimmter Artikel, Akk. mask.",
+   "traducciones": {
+    "es": "un nuevo… (acusativo)",
+    "en": "a new… (accusative)"
+   }
+  },
+  {
+   "expresion": "frischer…",
+   "funcion": "kein Artikel, Nom. mask.",
+   "traducciones": {
+    "es": "…fresco",
+    "en": "fresh…"
+   }
+  },
+  {
+   "expresion": "gutes…",
+   "funcion": "kein Artikel, Nom./Akk. neutr.",
+   "traducciones": {
+    "es": "buen…",
+    "en": "good…"
+   }
+  },
+  {
+   "expresion": "die neue…",
+   "funcion": "bestimmter Artikel, Nom./Akk. fem.",
+   "traducciones": {
+    "es": "la nueva…",
+    "en": "the new… (feminine)"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich den Artikeltyp (bestimmt, unbestimmt, keiner) richtig erkannt?",
+  "Stimmt die Endung mit Genus und Kasus überein?",
+  "Habe ich alle drei Artikeltypen mindestens einmal verwendet?",
+  "Bin ich mir bei jedem Genus sicher?",
+  "Habe ich den Fehler vermieden, die Endung nur nach dem Spanischen zu wählen (nur Genus, kein Kasus)?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendungen im Nominativ und Akkusativ. Prüfen Sie bei jedem Adjektiv den Artikeltyp, das Genus und den Kasus. Schreiben Sie den Text nicht neu."
+}

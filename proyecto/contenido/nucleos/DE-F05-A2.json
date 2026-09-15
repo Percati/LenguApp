@@ -1,0 +1,114 @@
+{
+ "skillId": "DE-F05",
+ "nivel": "A2",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Vorschläge machen und aushandeln",
+ "categoria": "fluency",
+ "ancla": "PD A2",
+ "descripcion": "Auf A2 macht man einen sehr einfachen Vorschlag mit wollen wir und reagiert mit ja oder nein. Freiere Struktur und dramaturgische Elemente kommen erst auf höheren Niveaus dazu. Wichtig ist vor allem, sich klar und einfach auszudrücken.",
+ "cuadroReferencia": {
+  "titulo": "Vorschlag und Antwort",
+  "columnas": [
+   "Formel",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Wollen wir…?",
+    "Wollen wir ins Kino gehen?"
+   ],
+   [
+    "Antwort",
+    "Ja, gerne! / Nein, lieber nicht."
+   ],
+   [
+    "Alternative",
+    "Wir könnten auch ins Museum gehen."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Wollen wir am Samstag ins Kino gehen?",
+   "audio": true
+  },
+  {
+   "texto": "Ja, gerne! Das klingt gut.",
+   "audio": true
+  },
+  {
+   "texto": "Nein, lieber nicht, ich habe keine Zeit."
+  }
+ ],
+ "notas": [
+  "Wollen wir…? ist die einfachste Form, einen Vorschlag zu machen.",
+  "Ja, gerne! ist eine freundliche Zustimmung.",
+  "Nein, lieber nicht ist eine höfliche Ablehnung."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit ¿vamos a…? eine direkte Entsprechung zu wollen wir…?"
+ },
+ "errores": [
+  "Auf einen Vorschlag nur mit nein antworten.",
+  "Wollen wir? falsch bilden."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Wollen wir…?",
+   "funcion": "Vorschlag",
+   "traducciones": {
+    "es": "¿Vamos a…?",
+    "en": "Shall we…?"
+   }
+  },
+  {
+   "expresion": "Ja, gerne!",
+   "funcion": "Zustimmung",
+   "traducciones": {
+    "es": "¡Sí, con gusto!",
+    "en": "Yes, gladly!"
+   }
+  },
+  {
+   "expresion": "Nein, lieber nicht.",
+   "funcion": "Ablehnung",
+   "traducciones": {
+    "es": "No, mejor no.",
+    "en": "No, better not."
+   }
+  },
+  {
+   "expresion": "Gute Idee!",
+   "funcion": "Zustimmung, enthusiastisch",
+   "traducciones": {
+    "es": "¡Buena idea!",
+    "en": "Good idea!"
+   }
+  },
+  {
+   "expresion": "Wir könnten…",
+   "funcion": "Vorschlag, Alternative",
+   "traducciones": {
+    "es": "Podríamos…",
+    "en": "We could…"
+   }
+  },
+  {
+   "expresion": "Das klingt gut.",
+   "funcion": "Zustimmung",
+   "traducciones": {
+    "es": "Suena bien.",
+    "en": "That sounds good."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist der Vorschlag klar?",
+  "Habe ich klar geantwortet?",
+  "Klingt der Satz natürlich?",
+  "Klingt der Satz natürlich?",
+  "Klingt der Satz natürlich?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Vorschlag und die Antwort. Prüfen Sie, ob beides klar ist. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob die Formeln zur Situation passen."
+}

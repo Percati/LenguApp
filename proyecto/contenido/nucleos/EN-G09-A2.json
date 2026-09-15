@@ -1,0 +1,112 @@
+{
+ "skillId": "EN-G09",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Modals of Obligation, Permission and Ability",
+ "categoria": "grammar",
+ "ancla": "EGP A2",
+ "descripcion": "At A2 you use have to for obligation, can for ability and permission, and can't for prohibition. These are the three most useful modal meanings at this level. These forms are the building blocks for more nuanced modal use at higher levels.",
+ "cuadroReferencia": {
+  "titulo": "Three modal meanings",
+  "columnas": [
+   "Verb",
+   "Meaning",
+   "Example"
+  ],
+  "filas": [
+   [
+    "have to",
+    "obligation",
+    "I have to work tomorrow."
+   ],
+   [
+    "can",
+    "permission/ability",
+    "Can I open the window?"
+   ],
+   [
+    "can't",
+    "prohibition/inability",
+    "You can't park here."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I have to work early tomorrow.",
+   "audio": true
+  },
+  {
+   "texto": "Can I open the window, please?",
+   "audio": true
+  },
+  {
+   "texto": "You can't park here."
+  }
+ ],
+ "notas": [
+  "Have to changes with the subject: I have to, she has to.",
+  "Can is used for both permission and ability.",
+  "Can't expresses either prohibition or inability, depending on context."
+ ],
+ "contraste": {
+  "es": "El español tiene tener que y poder como equivalentes cercanos, así que la lógica se transfiere fácilmente."
+ },
+ "errores": [
+  "Forgetting has for she/he/it with have to.",
+  "Using must instead of can for permission."
+ ],
+ "redemittel": [
+  {
+   "expresion": "I have to…",
+   "funcion": "obligation",
+   "traducciones": {
+    "es": "Tengo que…"
+   }
+  },
+  {
+   "expresion": "She has to…",
+   "funcion": "obligation, third person",
+   "traducciones": {
+    "es": "Ella tiene que…"
+   }
+  },
+  {
+   "expresion": "Can I…?",
+   "funcion": "permission",
+   "traducciones": {
+    "es": "¿Puedo…?"
+   }
+  },
+  {
+   "expresion": "I can…",
+   "funcion": "ability",
+   "traducciones": {
+    "es": "Puedo…"
+   }
+  },
+  {
+   "expresion": "You can't…",
+   "funcion": "prohibition",
+   "traducciones": {
+    "es": "No podés…"
+   }
+  },
+  {
+   "expresion": "I can't…",
+   "funcion": "inability",
+   "traducciones": {
+    "es": "No puedo…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is has used with she/he/it?",
+  "Is can used for permission and ability correctly?",
+  "Have I used at least three different modals?",
+  "Does the sentence sound natural?",
+  "Does the sentence sound natural?"
+ ],
+ "promptCorreccion": "Focus only on have to, can and can't. Check the form has for third person. Do not rewrite the text. Flag anything unclear. Check whether the sentence sounds natural, not translated from Spanish."
+}

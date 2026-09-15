@@ -1,0 +1,118 @@
+{
+ "skillId": "DE-F08",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Zusammenfassen",
+ "categoria": "fluency",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 wird eine Zusammenfassung auf ein spezifisches Publikum zugeschnitten: geteiltes Vorwissen wird radikal komprimiert, während genau der Teil ausgebaut wird, der für dieses Publikum neu oder relevant ist. Eine gute C2-Zusammenfassung für Fachleute liest sich anders als eine für Laien, selbst bei identischem Ausgangstext.",
+ "cuadroReferencia": {
+  "titulo": "Zusammenfassung nach Publikum",
+  "columnas": [
+   "Publikum",
+   "Was komprimiert wird",
+   "Was ausgebaut wird"
+  ],
+  "filas": [
+   [
+    "Fachpublikum",
+    "Grundlagen, Methodik",
+    "neue Ergebnisse, offene Fragen"
+   ],
+   [
+    "Laienpublikum",
+    "technische Details",
+    "Bedeutung, Konsequenzen"
+   ],
+   [
+    "Entscheidungsträger",
+    "Hintergrund",
+    "Handlungsoptionen"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Für ein Fachpublikum reicht der Hinweis auf die Methodik; entscheidend sind die neuen Ergebnisse.",
+   "audio": true
+  },
+  {
+   "texto": "Für Laien lohnt es sich, weniger auf die Technik und mehr auf die Konsequenzen einzugehen.",
+   "audio": true
+  },
+  {
+   "texto": "Für Entscheidungsträger zählt vor allem, welche Optionen sich daraus ergeben."
+  }
+ ],
+ "notas": [
+  "Dieselbe Zusammenfassung für unterschiedliche Publika zu schreiben, ist die eigentliche C2-Kompetenz — nicht die Fähigkeit, überhaupt zusammenzufassen.",
+  "Geteiltes Vorwissen radikal zu komprimieren bedeutet nicht, es wegzulassen, sondern es in einem Nebensatz anzudeuten.",
+  "Eine Zusammenfassung, die für jedes Publikum gleich aussieht, hat die eigentliche Aufgabe der Mediation verfehlt."
+ ],
+ "contraste": {
+  "es": "Das kultivierte Spanisch passt Zusammenfassungen ebenfalls ans Publikum an, sodass das Konzept vertraut ist. Die deutsche Erwartung, geteiltes Vorwissen so radikal zu komprimieren, ist jedoch oft stärker ausgeprägt, als hispanophone C2-Sprecher es aus ihrer eigenen Schreibtradition gewohnt sind."
+ },
+ "errores": [
+  "Dieselbe Zusammenfassung unverändert für unterschiedliche Publika verwenden.",
+  "Geteiltes Vorwissen ausführlich wiederholen, statt es knapp anzudeuten.",
+  "Für ein Fachpublikum die Methodik ausführen, statt sich auf die neuen Ergebnisse zu konzentrieren."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Für ein Fachpublikum reicht der Hinweis auf…",
+   "funcion": "Komprimierung von Vorwissen",
+   "traducciones": {
+    "es": "para un público experto basta con mencionar…",
+    "en": "for an expert audience, it's enough to note…"
+   }
+  },
+  {
+   "expresion": "Entscheidend sind hier die neuen…",
+   "funcion": "Fokus für Fachpublikum",
+   "traducciones": {
+    "es": "aquí lo decisivo son los nuevos…",
+    "en": "what matters here is the new…"
+   }
+  },
+  {
+   "expresion": "Für Laien lohnt es sich, auf…einzugehen.",
+   "funcion": "Fokus für Laienpublikum",
+   "traducciones": {
+    "es": "para el público general vale la pena abordar…",
+    "en": "for a general audience, it's worth addressing…"
+   }
+  },
+  {
+   "expresion": "Welche Optionen ergeben sich daraus?",
+   "funcion": "Fokus für Entscheidungsträger",
+   "traducciones": {
+    "es": "¿qué opciones se derivan de esto?",
+    "en": "what options does this suggest?"
+   }
+  },
+  {
+   "expresion": "Vereinfacht gesagt, für alle, die…",
+   "funcion": "Anpassung an ein spezifisches Publikum",
+   "traducciones": {
+    "es": "dicho de forma simple, para quienes…",
+    "en": "put simply, for those who…"
+   }
+  },
+  {
+   "expresion": "Ohne auf die Details einzugehen, …",
+   "funcion": "Komprimierung technischer Aspekte",
+   "traducciones": {
+    "es": "sin entrar en los detalles, …",
+    "en": "without going into the details, …"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist das Publikum vor dem Schreiben klar bestimmt?",
+  "Wird geteiltes Vorwissen komprimiert, nicht wiederholt?",
+  "Wird genau der für dieses Publikum relevante Teil ausgebaut?",
+  "Würde diese Zusammenfassung für ein anderes Publikum anders aussehen müssen?",
+  "Habe ich klar angegeben, für welches Publikum ich schreibe?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Zusammenfassung auf ein bestimmtes Publikum zugeschnitten ist. Schreiben Sie den Text nicht neu."
+}

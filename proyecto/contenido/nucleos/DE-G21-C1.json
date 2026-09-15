@@ -1,0 +1,136 @@
+{
+ "skillId": "DE-G21",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Modalitätsverben (scheinen, pflegen, drohen)",
+ "categoria": "grammar",
+ "ancla": "Aspekte C1",
+ "descripcion": "Neben den klassischen Modalverben gibt es im Deutschen eine kleine Gruppe von Vollverben, die selbst eine Modalbedeutung tragen: scheinen (Anschein), pflegen (Gewohnheit), drohen (negative Erwartung). Sie werden wie normale Verben mit zu + Infinitiv konstruiert.",
+ "cuadroReferencia": {
+  "titulo": "Verben mit eingebauter Modalität",
+  "columnas": [
+   "Verb",
+   "Bedeutung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "scheinen",
+    "es hat den Anschein",
+    "Er scheint recht zu haben."
+   ],
+   [
+    "pflegen",
+    "es ist Gewohnheit",
+    "Sie pflegt früh aufzustehen."
+   ],
+   [
+    "drohen",
+    "eine negative Entwicklung ist zu erwarten",
+    "Das Projekt droht zu scheitern."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Er scheint mit dem Ergebnis zufrieden zu sein.",
+   "audio": true
+  },
+  {
+   "texto": "Sie pflegte jeden Morgen eine Stunde zu lesen.",
+   "audio": true
+  },
+  {
+   "texto": "Das ganze Projekt droht an der Finanzierung zu scheitern."
+  }
+ ],
+ "notas": [
+  "Scheinen + zu-Infinitiv drückt eine Vermutung aus, die auf einem äusseren Eindruck beruht — ähnlich wie es sieht so aus, als ob.",
+  "Pflegen bezeichnet eine wiederkehrende Gewohnheit und klingt gehobener als normalerweise oder gewöhnlich.",
+  "Drohen mit einem unbelebten Subjekt (das Projekt droht zu scheitern) ist eine feste, sehr nützliche Konstruktion für negative Prognosen."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit parecer eine enge Entsprechung zu scheinen, aber keine direkten Entsprechungen für pflegen oder das unpersönliche drohen mit Sachsubjekt. Solía + Infinitivo kommt pflegen nahe, wird aber seltener im formellen Register verwendet als das deutsche Äquivalent."
+ },
+ "errores": [
+  "Scheinen mit dass statt mit zu + Infinitiv konstruieren.",
+  "Pflegen mit einer einmaligen statt einer wiederkehrenden Handlung verwenden.",
+  "Drohen nur mit belebten Subjekten verwenden und die unpersönliche Verwendung mit Sachen übersehen."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…scheint … zu sein.",
+   "funcion": "Vermutung aufgrund von Anschein",
+   "traducciones": {
+    "es": "…parece ser…",
+    "en": "…seems to be…",
+    "fr": "…semble être…",
+    "it": "…sembra essere…",
+    "pt": "…parece ser…"
+   }
+  },
+  {
+   "expresion": "…pflegt(e) … zu…",
+   "funcion": "Gewohnheit, gehoben",
+   "traducciones": {
+    "es": "…solía/suele…",
+    "en": "…used to/tends to…",
+    "fr": "…avait/a l’habitude de…",
+    "it": "…era solito/a / tende a…",
+    "pt": "…costumava / costuma…"
+   }
+  },
+  {
+   "expresion": "…droht zu scheitern/zu kollabieren.",
+   "funcion": "negative Prognose",
+   "traducciones": {
+    "es": "…corre el riesgo de fracasar/colapsar.",
+    "en": "…threatens to fail/collapse.",
+    "fr": "…risque d’échouer/de s’effondrer.",
+    "it": "…rischia di fallire/collassare.",
+    "pt": "…corre o risco de falhar/colapsar."
+   }
+  },
+  {
+   "expresion": "Es scheint, als ob…",
+   "funcion": "alternative Konstruktion mit als ob",
+   "traducciones": {
+    "es": "Parece que…",
+    "en": "It seems as if…",
+    "fr": "On dirait que…",
+    "it": "Sembra che…",
+    "pt": "Parece que…"
+   }
+  },
+  {
+   "expresion": "…droht sich zu verschlechtern.",
+   "funcion": "negative Entwicklung, reflexiv",
+   "traducciones": {
+    "es": "…corre el riesgo de empeorar.",
+    "en": "…is threatening to get worse.",
+    "fr": "…risque de se détériorer.",
+    "it": "…rischia di peggiorare.",
+    "pt": "…corre o risco de piorar."
+   }
+  },
+  {
+   "expresion": "Wie es scheint, …",
+   "funcion": "einleitende Vermutung",
+   "traducciones": {
+    "es": "Al parecer, …",
+    "en": "As it seems, …",
+    "fr": "À ce qu’il semble, …",
+    "it": "A quanto pare, …",
+    "pt": "Ao que parece, …"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist scheinen mit zu + Infinitiv konstruiert, nicht mit dass?",
+  "Drückt pflegen eine echte Gewohnheit aus, keine einmalige Handlung?",
+  "Ist drohen auch mit einem unbelebten Subjekt richtig eingesetzt?",
+  "Habe ich alle drei Verben mindestens einmal verwendet?",
+  "Klingt der Satz gehoben, aber nicht gestelzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf scheinen, pflegen und drohen mit zu-Infinitiv. Prüfen Sie die Konstruktion und die Bedeutung in jedem Fall. Schreiben Sie den Text nicht neu."
+}

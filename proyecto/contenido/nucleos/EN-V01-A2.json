@@ -1,0 +1,108 @@
+{
+ "skillId": "EN-V01",
+ "nivel": "A2",
+ "idioma": "en",
+ "bilingue": true,
+ "titulo": "Fixed Chunks for Daily Survival",
+ "categoria": "vocabulary",
+ "ancla": "EGP A1/A2",
+ "descripcion": "At A2 you learn fixed everyday chunks as whole blocks, without analysing the grammar inside them: How's it going?, No problem, See you later. These chunks work immediately in daily life, even before the grammar behind them makes sense.",
+ "cuadroReferencia": {
+  "titulo": "Fixed everyday chunks",
+  "columnas": [
+   "Chunk",
+   "Use"
+  ],
+  "filas": [
+   [
+    "How's it going?",
+    "informal greeting"
+   ],
+   [
+    "No problem.",
+    "reply to thanks or a request"
+   ],
+   [
+    "See you later!",
+    "informal goodbye"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Hi! How's it going today?",
+   "audio": true
+  },
+  {
+   "texto": "No problem, happy to help.",
+   "audio": true
+  },
+  {
+   "texto": "Okay, see you later then!"
+  }
+ ],
+ "notas": [
+  "These chunks are learned as whole units, not analysed word by word.",
+  "How's it going? is informal; a more neutral version is how are you?",
+  "No problem fits both as a reply to thanks and to a request."
+ ],
+ "contraste": {
+  "es": "El español tiene expresiones fijas muy parecidas (¿qué tal?, no hay problema), así que el concepto es familiar aunque las palabras concretas sean nuevas."
+ },
+ "errores": [
+  "Confusing the formal and informal versions.",
+  "Translating a chunk word for word from Spanish instead of using the English one."
+ ],
+ "redemittel": [
+  {
+   "expresion": "How's it going?",
+   "funcion": "informal greeting",
+   "traducciones": {
+    "es": "¿Qué tal?"
+   }
+  },
+  {
+   "expresion": "No problem.",
+   "funcion": "reply to thanks/request",
+   "traducciones": {
+    "es": "No hay problema."
+   }
+  },
+  {
+   "expresion": "See you later!",
+   "funcion": "informal goodbye",
+   "traducciones": {
+    "es": "¡Hasta luego!"
+   }
+  },
+  {
+   "expresion": "Take care!",
+   "funcion": "friendly goodbye",
+   "traducciones": {
+    "es": "¡Cuidate!"
+   }
+  },
+  {
+   "expresion": "No worries.",
+   "funcion": "accepting an apology",
+   "traducciones": {
+    "es": "No pasa nada."
+   }
+  },
+  {
+   "expresion": "Have a good one!",
+   "funcion": "informal goodbye",
+   "traducciones": {
+    "es": "¡Que la pases bien!"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Have I used the chunk in the right situation?",
+  "Have I avoided mixing formal and informal versions?",
+  "Have I used at least three different chunks?",
+  "Does the chunk sound natural here?",
+  "Have I used the chunk for its correct function, not just any greeting?"
+ ],
+ "promptCorreccion": "Focus only on whether the everyday chunks fit the situation. Check formal versus informal and whether the wording is fixed, not translated. Do not rewrite the text."
+}

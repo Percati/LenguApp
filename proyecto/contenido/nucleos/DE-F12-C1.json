@@ -1,0 +1,136 @@
+{
+ "skillId": "DE-F12",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Sich beschweren und reklamieren",
+ "categoria": "fluency",
+ "ancla": "PD B2",
+ "descripcion": "Auf C1 wird eine Beschwerde vierteilig aufgebaut: Sachverhalt, Auswirkung, konkrete Forderung mit Frist, und ein vorweggenommener Einwand. Das macht die Beschwerde schwerer abzuwehren als eine einfache Problembeschreibung.",
+ "cuadroReferencia": {
+  "titulo": "Die vierteilige Beschwerde",
+  "columnas": [
+   "Teil",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Sachverhalt, ohne Wertung",
+    "Die Lieferung ist seit zehn Tagen überfällig."
+   ],
+   [
+    "Auswirkung",
+    "Dadurch konnten wir unseren Zeitplan nicht einhalten."
+   ],
+   [
+    "Forderung mit Frist",
+    "Ich bitte um Klärung bis spätestens Freitag."
+   ],
+   [
+    "Einwand vorwegnehmen",
+    "Mir ist bewusst, dass es zu Verzögerungen kommen kann, doch dieser Zeitraum ist nicht mehr vertretbar."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die Lieferung ist nun seit zehn Tagen überfällig.",
+   "audio": true
+  },
+  {
+   "texto": "Mir ist bewusst, dass es zu Verzögerungen kommen kann, doch dieser Zeitraum ist nicht mehr vertretbar.",
+   "audio": true
+  },
+  {
+   "texto": "Ich bitte um eine verbindliche Klärung bis spätestens Freitag."
+  }
+ ],
+ "notas": [
+  "Der Sachverhalt sollte wertungsfrei formuliert werden — Fakten statt Adjektive überzeugen mehr als Ärger.",
+  "Ein vorweggenommener Einwand zeigt, dass man die Gegenseite verstanden hat, aber trotzdem auf der Forderung besteht.",
+  "Eine konkrete Frist macht die Forderung viel wirksamer als bitte kümmern Sie sich bald darum."
+ ],
+ "contraste": {
+  "es": "Das Spanische formuliert Beschwerden oft mit mehr direkt ausgedrücktem Ärger und weniger mit dieser vierteiligen, sachlichen Struktur. Spanischsprachige lassen im Deutschen häufig den vorweggenommenen Einwand weg und wirken dadurch weniger überzeugend, obwohl der Ton höflich bleibt."
+ },
+ "errores": [
+  "Die Beschwerde ohne konkrete Frist formulieren.",
+  "Wertende Adjektive statt neutraler Fakten verwenden.",
+  "Keinen Einwand vorwegnehmen, obwohl einer naheliegt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…ist seit … überfällig.",
+   "funcion": "Sachverhalt, neutral",
+   "traducciones": {
+    "es": "…lleva … de retraso.",
+    "en": "…has been overdue for…",
+    "fr": "…est en retard depuis…",
+    "it": "…è in ritardo da…",
+    "pt": "…está em atraso há…"
+   }
+  },
+  {
+   "expresion": "Dadurch konnten wir … nicht…",
+   "funcion": "Auswirkung benennen",
+   "traducciones": {
+    "es": "Por eso no pudimos…",
+    "en": "As a result, we weren't able to…",
+    "fr": "De ce fait, nous n’avons pas pu…",
+    "it": "Di conseguenza, non siamo riusciti a…",
+    "pt": "Por isso, não conseguimos…"
+   }
+  },
+  {
+   "expresion": "Ich bitte um Klärung bis spätestens…",
+   "funcion": "Forderung mit Frist",
+   "traducciones": {
+    "es": "Solicito una aclaración antes del…",
+    "en": "I request clarification by…",
+    "fr": "Je vous prie de clarifier ce point au plus tard d’ici…",
+    "it": "Chiedo un chiarimento entro e non oltre…",
+    "pt": "Solicito um esclarecimento, o mais tardar, até…"
+   }
+  },
+  {
+   "expresion": "Mir ist bewusst, dass…, doch…",
+   "funcion": "Einwand vorwegnehmen",
+   "traducciones": {
+    "es": "Soy consciente de que…, pero…",
+    "en": "I'm aware that…, however…",
+    "fr": "Je suis conscient(e) que…, mais…",
+    "it": "Sono consapevole che…, tuttavia…",
+    "pt": "Estou consciente de que…, mas…"
+   }
+  },
+  {
+   "expresion": "Ich sehe mich gezwungen, …",
+   "funcion": "Eskalation ankündigen, formell",
+   "traducciones": {
+    "es": "Me veo obligado a…",
+    "en": "I feel compelled to…",
+    "fr": "Je me vois contraint(e) de…",
+    "it": "Mi vedo costretto/a a…",
+    "pt": "Vejo-me obrigado/a a…"
+   }
+  },
+  {
+   "expresion": "Andernfalls sehe ich mich gezwungen, …",
+   "funcion": "Konsequenz androhen, formell",
+   "traducciones": {
+    "es": "De lo contrario, me veré obligado a…",
+    "en": "Otherwise, I will have no choice but to…",
+    "fr": "Dans le cas contraire, je me verrai contraint(e) de…",
+    "it": "In caso contrario, sarò costretto/a a…",
+    "pt": "Caso contrário, ver-me-ei obrigado/a a…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist der Sachverhalt frei von wertenden Adjektiven?",
+  "Ist die Auswirkung explizit benannt?",
+  "Enthält die Forderung eine konkrete Frist?",
+  "Ist ein Einwand vorweggenommen?",
+  "Bleibt der Ton sachlich, nicht wütend?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die vier Teile der Beschwerde: Sachverhalt, Auswirkung, Forderung mit Frist, vorweggenommener Einwand. Schreiben Sie den Text nicht neu."
+}

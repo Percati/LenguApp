@@ -1,0 +1,136 @@
+{
+ "skillId": "DE-G19",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Vergleichssätze (als, wie, je … desto)",
+ "categoria": "grammar",
+ "ancla": "Aspekte B2",
+ "descripcion": "Auf B2 wird der Unterschied zwischen als (bei Ungleichheit) und wie (bei Gleichheit) gefestigt, sowie die feste Struktur je … desto für proportionale Vergleiche. Diese Struktur hat keine Entsprechung im Spanischen und braucht deshalb gezielte Übung.",
+ "cuadroReferencia": {
+  "titulo": "Vergleichsformen",
+  "columnas": [
+   "Form",
+   "Verwendung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "als",
+    "Ungleichheit, Komparativ",
+    "Er ist größer als ich."
+   ],
+   [
+    "wie",
+    "Gleichheit",
+    "Sie ist so groß wie ich."
+   ],
+   [
+    "je … desto",
+    "proportionaler Vergleich",
+    "Je mehr er übt, desto besser wird er."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Er ist deutlich größer als ich.",
+   "audio": true
+  },
+  {
+   "texto": "Sie ist genauso schnell wie ihr Bruder.",
+   "audio": true
+  },
+  {
+   "texto": "Je mehr man übt, desto sicherer wird man."
+  }
+ ],
+ "notas": [
+  "Nach je steht Komparativ und Verb am Ende; nach desto steht ebenfalls Komparativ, aber mit normaler Wortstellung.",
+  "So … wie drückt Gleichheit aus, als drückt immer einen Unterschied aus.",
+  "Je … desto ist eine feste Struktur — beide Teile brauchen einen Komparativ."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit cuanto más… más… eine ähnliche Struktur wie je… desto, sodass das Konzept übertragbar ist. Die Verbstellung im je-Satz (Verb am Ende) ist aber neu und wird oft vergessen, weil das Spanische keine vergleichbare Endstellung kennt."
+ },
+ "errores": [
+  "Wie statt als bei einem echten Unterschied verwenden.",
+  "Im je-Satz das Verb nicht ans Ende stellen.",
+  "Im desto-Satz keinen Komparativ verwenden."
+ ],
+ "redemittel": [
+  {
+   "expresion": "…größer/kleiner/besser als…",
+   "funcion": "Ungleichheit",
+   "traducciones": {
+    "es": "…más grande/chico/mejor que…",
+    "en": "…bigger/smaller/better than…",
+    "fr": "…plus grand/petit/meilleur que…",
+    "it": "…più grande/piccolo/migliore di…",
+    "pt": "…maior/menor/melhor do que…"
+   }
+  },
+  {
+   "expresion": "…so … wie…",
+   "funcion": "Gleichheit",
+   "traducciones": {
+    "es": "…tan … como…",
+    "en": "…as … as…",
+    "fr": "…aussi … que…",
+    "it": "…così … come…",
+    "pt": "…tão … como…"
+   }
+  },
+  {
+   "expresion": "Je mehr…, desto…",
+   "funcion": "proportionaler Vergleich",
+   "traducciones": {
+    "es": "Cuanto más…, más…",
+    "en": "The more…, the more…",
+    "fr": "Plus…, plus…",
+    "it": "Più…, più…",
+    "pt": "Quanto mais…, mais…"
+   }
+  },
+  {
+   "expresion": "Je früher…, desto besser.",
+   "funcion": "feste Wendung",
+   "traducciones": {
+    "es": "Cuanto antes, mejor.",
+    "en": "The sooner, the better.",
+    "fr": "Le plus tôt sera le mieux.",
+    "it": "Prima è, meglio è.",
+    "pt": "Quanto mais cedo, melhor."
+   }
+  },
+  {
+   "expresion": "genauso … wie…",
+   "funcion": "verstärkte Gleichheit",
+   "traducciones": {
+    "es": "igual de … que…",
+    "en": "just as … as…",
+    "fr": "aussi … que…",
+    "it": "tanto … quanto…",
+    "pt": "tão … como…"
+   }
+  },
+  {
+   "expresion": "im Vergleich zu…",
+   "funcion": "Vergleich einleiten",
+   "traducciones": {
+    "es": "en comparación con…",
+    "en": "compared to…",
+    "fr": "par rapport à…",
+    "it": "rispetto a…",
+    "pt": "em comparação com…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich als bei Ungleichheit und wie bei Gleichheit korrekt unterschieden?",
+  "Steht im je-Satz das Verb am Ende?",
+  "Steht im desto-Satz der Komparativ direkt nach desto?",
+  "Habe ich mindestens eine je-desto-Konstruktion gebildet?",
+  "Klingt der Vergleich natürlich, nicht wörtlich aus dem Spanischen übersetzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf als, wie und je … desto. Prüfen Sie besonders die Verbstellung im je-Satz. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,124 @@
+{
+ "skillId": "DE-G22",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Reflexive Verben",
+ "categoria": "grammar",
+ "ancla": "Aspekte B1+",
+ "descripcion": "Das deutsche Set reflexiver Verben deckt sich nicht mit dem spanischen: sich erinnern an entspricht acordarse de, aber aufstehen ist im Deutschen nicht reflexiv, obwohl levantarse es im Spanischen ist. Auf B1 geht es darum, diese Nichtübereinstimmung bewusst zu üben.",
+ "cuadroReferencia": {
+  "titulo": "Reflexiv oder nicht?",
+  "columnas": [
+   "Deutsch",
+   "Reflexiv?",
+   "Spanisch"
+  ],
+  "filas": [
+   [
+    "sich erinnern an",
+    "ja",
+    "acordarse de"
+   ],
+   [
+    "sich freuen auf",
+    "ja",
+    "alegrarse de"
+   ],
+   [
+    "aufstehen",
+    "nein",
+    "levantarse (reflexiv im Spanischen)"
+   ],
+   [
+    "sich waschen",
+    "ja",
+    "lavarse"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich erinnere mich gut an meine Kindheit.",
+   "audio": true
+  },
+  {
+   "texto": "Ich stehe jeden Tag um sieben auf.",
+   "audio": true
+  },
+  {
+   "texto": "Ich freue mich sehr auf das Wochenende."
+  }
+ ],
+ "notas": [
+  "Manche deutschen Verben sind reflexiv, obwohl ihre spanische Entsprechung es nicht ist, und umgekehrt.",
+  "Das Reflexivpronomen (mich, dich, sich…) steht direkt nach dem konjugierten Verb.",
+  "Reflexive Verben mit fester Präposition (sich freuen auf, sich interessieren für) muss man als Ganzes lernen."
+ ],
+ "contraste": {
+  "es": "Genau das ist der Kern des Problems: aufstehen ist im Deutschen nicht reflexiv, aber levantarse ist es im Spanischen. Diese Nichtübereinstimmung in beide Richtungen macht reflexive Verben zu einer eigenen Fehlerquelle, die man nicht durch Logik, sondern nur durch Auswendiglernen löst."
+ },
+ "errores": [
+  "Ein deutsches Verb reflexiv machen, weil seine spanische Entsprechung reflexiv ist.",
+  "Das Reflexivpronomen bei einem tatsächlich reflexiven Verb vergessen.",
+  "Das Reflexivpronomen an der falschen Stelle im Satz platzieren."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich erinnere mich an…",
+   "funcion": "reflexiv mit Präposition",
+   "traducciones": {
+    "es": "Me acuerdo de…",
+    "en": "I remember…"
+   }
+  },
+  {
+   "expresion": "Ich freue mich auf…",
+   "funcion": "reflexiv, Vorfreude",
+   "traducciones": {
+    "es": "Tengo ganas de…",
+    "en": "I'm looking forward to…"
+   }
+  },
+  {
+   "expresion": "Ich stehe auf.",
+   "funcion": "NICHT reflexiv im Deutschen",
+   "traducciones": {
+    "es": "Me levanto.",
+    "en": "I get up."
+   }
+  },
+  {
+   "expresion": "Ich wasche mich.",
+   "funcion": "reflexiv",
+   "traducciones": {
+    "es": "Me lavo.",
+    "en": "I wash (myself)."
+   }
+  },
+  {
+   "expresion": "Ich interessiere mich für…",
+   "funcion": "reflexiv mit Präposition",
+   "traducciones": {
+    "es": "Me interesa…",
+    "en": "I'm interested in…"
+   }
+  },
+  {
+   "expresion": "Ich beeile mich.",
+   "funcion": "reflexiv, ohne spanisches Äquivalent",
+   "traducciones": {
+    "es": "Me apuro.",
+    "en": "I hurry."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich aufstehen richtig ohne Reflexivpronomen benutzt?",
+  "Steht das Reflexivpronomen direkt nach dem konjugierten Verb?",
+  "Habe ich mindestens vier verschiedene reflexive Verben benutzt?",
+  "Habe ich geprüft, ob ein Verb im Deutschen wirklich reflexiv ist, statt es vom Spanischen abzuleiten?",
+  "Klingt der Satz natürlich?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf reflexive Verben. Prüfen Sie bei jedem Verb, ob es im Deutschen wirklich reflexiv ist, unabhängig vom Spanischen. Schreiben Sie den Text nicht neu."
+}

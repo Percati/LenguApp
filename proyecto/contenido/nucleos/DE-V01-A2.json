@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-V01",
+ "nivel": "A2",
+ "idioma": "de",
+ "bilingue": true,
+ "titulo": "Alltags-Chunks",
+ "categoria": "vocabulary",
+ "ancla": "PD A1/A2",
+ "descripcion": "Auf A2 lernt man feste Wendungen als ganze Blöcke, ohne sie grammatisch zu analysieren: Wie geht's?, Kein Problem, Bis später. Diese Chunks funktionieren im Alltag sofort, auch bevor man die Grammatik dahinter versteht.",
+ "cuadroReferencia": {
+  "titulo": "Feste Alltagswendungen",
+  "columnas": [
+   "Chunk",
+   "Verwendung"
+  ],
+  "filas": [
+   [
+    "Wie geht's?",
+    "Begrüßung, informell"
+   ],
+   [
+    "Kein Problem.",
+    "Antwort auf Dank oder Bitte"
+   ],
+   [
+    "Bis später!",
+    "Verabschiedung, informell"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Hallo! Wie geht's dir heute?",
+   "audio": true
+  },
+  {
+   "texto": "Kein Problem, das mache ich gern.",
+   "audio": true
+  },
+  {
+   "texto": "Okay, bis später dann!"
+  }
+ ],
+ "notas": [
+  "Diese Chunks werden als Ganzes gelernt, ohne jedes Wort einzeln zu analysieren.",
+  "Wie geht's? ist informell; die formelle Version ist wie geht es Ihnen?",
+  "Kein Problem passt sowohl als Antwort auf danke als auch auf eine Bitte."
+ ],
+ "contraste": {
+  "es": "Diese Art von festen Wendungen gibt es auch im Spanischen (¿qué tal?, no hay problema), sodass das Konzept vertraut ist, auch wenn die konkreten deutschen Wörter neu sind."
+ },
+ "errores": [
+  "Die formelle und informelle Version verwechseln.",
+  "Einen Chunk Wort für Wort aus dem Spanischen übersetzen, statt den deutschen Chunk zu benutzen.",
+  "Bis später in einer Situation benutzen, in der man sich gar nicht wiedersieht."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Wie geht's?",
+   "funcion": "Begrüßung, informell",
+   "traducciones": {
+    "es": "¿Qué tal?",
+    "en": "How's it going?"
+   }
+  },
+  {
+   "expresion": "Kein Problem.",
+   "funcion": "Antwort auf Dank/Bitte",
+   "traducciones": {
+    "es": "No hay problema.",
+    "en": "No problem."
+   }
+  },
+  {
+   "expresion": "Bis später!",
+   "funcion": "Verabschiedung, informell",
+   "traducciones": {
+    "es": "¡Hasta luego!",
+    "en": "See you later!"
+   }
+  },
+  {
+   "expresion": "Alles klar!",
+   "funcion": "Zustimmung/Verständnis",
+   "traducciones": {
+    "es": "¡Todo claro!",
+    "en": "All clear!"
+   }
+  },
+  {
+   "expresion": "Macht nichts.",
+   "funcion": "Entschuldigung annehmen",
+   "traducciones": {
+    "es": "No pasa nada.",
+    "en": "It's okay/no worries."
+   }
+  },
+  {
+   "expresion": "Viel Spaß!",
+   "funcion": "guter Wunsch",
+   "traducciones": {
+    "es": "¡Que la pases bien!",
+    "en": "Have fun!"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Habe ich den Chunk in der passenden Situation benutzt?",
+  "Habe ich formell und informell nicht verwechselt?",
+  "Habe ich mindestens drei verschiedene Chunks benutzt?",
+  "Klingt der Chunk natürlich in dieser Situation?",
+  "Habe ich das Thema des Packs berücksichtigt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Alltagswendungen zur Situation passen. Prüfen Sie formell gegen informell. Schreiben Sie den Text nicht neu."
+}

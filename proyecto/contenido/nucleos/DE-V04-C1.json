@@ -1,0 +1,146 @@
+{
+ "skillId": "DE-V04",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Funktionsverbgefüge",
+ "categoria": "vocabulary",
+ "ancla": "Aspekte C1",
+ "descripcion": "Ein Funktionsverbgefüge ersetzt ein einfaches Verb durch Verb plus Nomen: in Betracht ziehen statt erwägen, zur Verfügung stellen statt geben. Sie sind das Kennzeichen des deutschen Bürokratie-, Wirtschafts- und Wissenschaftsstils und klingen, richtig eingesetzt, kompetent und sachlich — falsch dosiert, aufgeblasen.",
+ "cuadroReferencia": {
+  "titulo": "Häufige Funktionsverbgefüge",
+  "columnas": [
+   "Funktionsverbgefüge",
+   "Einfaches Verb"
+  ],
+  "filas": [
+   [
+    "etwas in Betracht ziehen",
+    "erwägen"
+   ],
+   [
+    "etwas zur Verfügung stellen",
+    "geben"
+   ],
+   [
+    "etwas in Angriff nehmen",
+    "beginnen"
+   ],
+   [
+    "etwas zum Ausdruck bringen",
+    "ausdrücken"
+   ],
+   [
+    "Kritik üben an",
+    "kritisieren"
+   ],
+   [
+    "zur Kenntnis nehmen",
+    "wissen/bemerken"
+   ]
+  ],
+  "notaPie": "Funktionsverbgefüge sind fast nie durch ein Synonym austauschbar: in Betracht ziehen kann nicht zu in Erwägung stellen werden, obwohl beide erwägen bedeuten."
+ },
+ "ejemplos": [
+  {
+   "texto": "Wir sollten diese Option ernsthaft in Betracht ziehen.",
+   "audio": true
+  },
+  {
+   "texto": "Die Firma stellt den Mitarbeitenden zusätzliche Ressourcen zur Verfügung.",
+   "audio": true
+  },
+  {
+   "texto": "Der Ausschuss übte deutliche Kritik an dem Vorgehen."
+  }
+ ],
+ "notas": [
+  "Funktionsverbgefüge sind formeller als das einfache Verb und passen zu Berichten, Anträgen und offiziellen Schreiben, nicht zum lockeren Gespräch.",
+  "Jedes Funktionsverbgefüge ist fest: das Verb (ziehen, stellen, nehmen, bringen, üben) ist nicht frei wählbar und muss auswendig gelernt werden.",
+  "Zu viele Funktionsverbgefüge in einem kurzen Text wirken aufgebläht — ein bis zwei pro Absatz sind genug."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat vereinzelt ähnliche Konstruktionen (tomar en consideración), aber insgesamt viel seltener und weniger systematisch. Spanischsprachige greifen deshalb meist zum einfachen Verb und lassen dem deutschen Text die typische bürokratische Textur fehlen.",
+  "en": "English has a comparable but smaller set (take into account, bring to a close), so the concept is familiar, but the specific German combinations rarely match the English ones word for word — each one needs to be learned as a fixed unit rather than translated component by component."
+ },
+ "errores": [
+  "Das feste Verb durch ein Synonym ersetzen: in Erwägung ziehen statt in Betracht ziehen.",
+  "Zu viele Funktionsverbgefüge häufen, wodurch der Text aufgebläht wirkt.",
+  "Ein Funktionsverbgefüge in einem informellen Gespräch verwenden, wo es unpassend förmlich klingt."
+ ],
+ "redemittel": [
+  {
+   "expresion": "etwas in Betracht ziehen",
+   "funcion": "erwägen, formell",
+   "traducciones": {
+    "es": "tener en cuenta / considerar",
+    "en": "to take into consideration",
+    "fr": "prendre quelque chose en considération",
+    "it": "prendere qualcosa in considerazione",
+    "pt": "ter algo em consideração"
+   }
+  },
+  {
+   "expresion": "etwas zur Verfügung stellen",
+   "funcion": "bereitstellen, formell",
+   "traducciones": {
+    "es": "poner a disposición",
+    "en": "to make available",
+    "fr": "mettre quelque chose à disposition",
+    "it": "mettere qualcosa a disposizione",
+    "pt": "disponibilizar algo"
+   }
+  },
+  {
+   "expresion": "etwas in Angriff nehmen",
+   "funcion": "beginnen, tatkräftig",
+   "traducciones": {
+    "es": "abordar algo",
+    "en": "to tackle something",
+    "fr": "s’attaquer à quelque chose",
+    "it": "affrontare qualcosa",
+    "pt": "abordar algo"
+   }
+  },
+  {
+   "expresion": "etwas zum Ausdruck bringen",
+   "funcion": "ausdrücken, formell",
+   "traducciones": {
+    "es": "expresar algo",
+    "en": "to express something",
+    "fr": "exprimer quelque chose",
+    "it": "esprimere qualcosa",
+    "pt": "expressar algo"
+   }
+  },
+  {
+   "expresion": "Kritik üben an",
+   "funcion": "kritisieren, formell",
+   "traducciones": {
+    "es": "criticar",
+    "en": "to criticise",
+    "fr": "critiquer",
+    "it": "criticare",
+    "pt": "criticar"
+   }
+  },
+  {
+   "expresion": "etwas zur Kenntnis nehmen",
+   "funcion": "formell bemerken/akzeptieren",
+   "traducciones": {
+    "es": "tomar nota de algo",
+    "en": "to take note of something",
+    "fr": "prendre connaissance de quelque chose",
+    "it": "prendere atto di qualcosa",
+    "pt": "tomar conhecimento de algo"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist das Verb im Funktionsverbgefüge korrekt, nicht durch ein Synonym ersetzt?",
+  "Sind höchstens zwei Funktionsverbgefüge pro Absatz vorhanden?",
+  "Passt das Register zum Rest des Textes?",
+  "Habe ich mindestens vier verschiedene Funktionsverbgefüge benutzt?",
+  "Klingt der Text kompetent oder eher aufgebläht?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Funktionsverbgefüge. Prüfen Sie, ob das feste Verb korrekt ist und ob die Häufung im Text angemessen bleibt. Schreiben Sie den Text nicht neu."
+}

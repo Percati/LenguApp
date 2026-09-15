@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-F11",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Gespräch steuern: einwerfen, nachfragen, korrigieren",
+ "categoria": "fluency",
+ "ancla": "PD>B2",
+ "descripcion": "Auf C1 steuert man ein Gespräch aktiver: man lenkt es zurück zu einem früheren Punkt, moderiert zwischen zwei Sprechern oder fasst kurz zusammen, um allen wieder auf denselben Stand zu bringen. Das geht über einfaches Einwerfen und Nachfragen hinaus.",
+ "cuadroReferencia": {
+  "titulo": "Aktive Gesprächssteuerung",
+  "columnas": [
+   "Funktion",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Zurücklenken",
+    "Um noch mal auf den ersten Punkt zurückzukommen…"
+   ],
+   [
+    "Zwischen Sprechern moderieren",
+    "Lass sie doch erst mal ausreden."
+   ],
+   [
+    "Zusammenfassen zur Orientierung",
+    "Wenn ich das richtig verstehe, meint ihr beide im Grunde dasselbe."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Um noch mal auf deinen ersten Punkt zurückzukommen: was meintest du genau damit?",
+   "audio": true
+  },
+  {
+   "texto": "Lass sie doch erst mal ausreden, dann kannst du antworten.",
+   "audio": true
+  },
+  {
+   "texto": "Wenn ich das richtig verstehe, meint ihr im Grunde dasselbe, nur anders formuliert."
+  }
+ ],
+ "notas": [
+  "Zurücklenken ist besonders nützlich, wenn ein Gespräch abgeschweift ist und ein wichtiger Punkt unbeantwortet blieb.",
+  "Zwischen Sprechern zu moderieren erfordert, neutral zu bleiben und keine Seite zu bevorzugen.",
+  "Eine kurze Zwischenzusammenfassung hilft allen Beteiligten, wieder auf denselben Stand zu kommen."
+ ],
+ "contraste": {
+  "es": "Das Spanische erlaubt mehr Überlappung und weniger explizite Moderation im Gespräch. Diese aktivere Steuerungsrolle ist im Deutschen formeller markiert und wird von Spanischsprachigen oft unterschätzt, weil sie in ihrer eigenen Sprache seltener explizit übernommen wird."
+ },
+ "errores": [
+  "Ein Gespräch zurücklenken, ohne den ursprünglichen Punkt konkret zu benennen.",
+  "Bei der Moderation zwischen zwei Sprechern eine Seite unbewusst bevorzugen.",
+  "Eine Zusammenfassung geben, die nicht neutral ist, sondern bereits die eigene Meinung einbaut."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Um noch mal auf … zurückzukommen…",
+   "funcion": "zurücklenken",
+   "traducciones": {
+    "es": "Para volver a…",
+    "en": "To go back to…",
+    "fr": "Pour revenir à…",
+    "it": "Per tornare a…",
+    "pt": "Voltando a…"
+   }
+  },
+  {
+   "expresion": "Lass sie/ihn doch erst mal ausreden.",
+   "funcion": "moderieren",
+   "traducciones": {
+    "es": "Dejala/dejalo terminar primero.",
+    "en": "Let her/him finish first.",
+    "fr": "Laisse-la/le finir d’abord.",
+    "it": "Lasciala/lo finire prima.",
+    "pt": "Deixa-a/o acabar primeiro."
+   }
+  },
+  {
+   "expresion": "Wenn ich das richtig verstehe, meint ihr…",
+   "funcion": "Zwischenzusammenfassung",
+   "traducciones": {
+    "es": "Si entiendo bien, ustedes quieren decir…",
+    "en": "If I'm understanding correctly, you both mean…",
+    "fr": "Si je comprends bien, vous voulez dire…",
+    "it": "Se ho capito bene, intendete…",
+    "pt": "Se percebo bem, querem dizer…"
+   }
+  },
+  {
+   "expresion": "Bevor wir weitermachen, kurz zur Klärung:…",
+   "funcion": "Klärung einschieben",
+   "traducciones": {
+    "es": "Antes de seguir, para aclarar:…",
+    "en": "Before we go on, just to clarify:…",
+    "fr": "Avant de continuer, juste pour clarifier :…",
+    "it": "Prima di continuare, solo per chiarire:…",
+    "pt": "Antes de continuarmos, só para esclarecer:…"
+   }
+  },
+  {
+   "expresion": "Ihr scheint beide etwas Ähnliches zu meinen.",
+   "funcion": "vermittelnd zusammenfassen",
+   "traducciones": {
+    "es": "Parece que los dos quieren decir algo parecido.",
+    "en": "You both seem to mean something similar.",
+    "fr": "Vous semblez tous les deux vouloir dire quelque chose de similaire.",
+    "it": "Sembra che entrambi intendiate qualcosa di simile.",
+    "pt": "Parece que os dois querem dizer algo semelhante."
+   }
+  },
+  {
+   "expresion": "Darf ich kurz einhaken?",
+   "funcion": "höflich einwerfen, gehoben",
+   "traducciones": {
+    "es": "¿Puedo intervenir un momento?",
+    "en": "May I jump in for a moment?",
+    "fr": "Puis-je intervenir un instant ?",
+    "it": "Posso intervenire un attimo?",
+    "pt": "Posso intervir um momento?"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist beim Zurücklenken der ursprüngliche Punkt konkret benannt?",
+  "Bleibt die Moderation neutral, ohne eine Seite zu bevorzugen?",
+  "Ist die Zwischenzusammenfassung wirklich neutral formuliert?",
+  "Klingt die Steuerung natürlich, nicht aufgesetzt?",
+  "Habe ich mindestens drei verschiedene Steuerungsfunktionen benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die aktive Gesprächssteuerung: zurücklenken, moderieren, zusammenfassen. Prüfen Sie, ob die Zusammenfassungen neutral bleiben. Schreiben Sie den Text nicht neu."
+}

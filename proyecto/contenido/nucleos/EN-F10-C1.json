@@ -1,0 +1,132 @@
+{
+ "skillId": "EN-F10",
+ "nivel": "C1",
+ "idioma": "en",
+ "titulo": "Speculating and Predicting",
+ "categoria": "fluency",
+ "ancla": "EGP B2/C1",
+ "descripcion": "At C1, speculation is built as a chain: an observation, a graded prediction, and an explicit acknowledgement of what could prove it wrong. A flat prediction with no qualification reads as overconfident; this chain is what makes a forecast sound credible rather than guessed.",
+ "cuadroReferencia": {
+  "titulo": "The speculation chain",
+  "columnas": [
+   "Step",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Observation",
+    "Given how things have gone so far,…"
+   ],
+   [
+    "Graded prediction",
+    "…it's likely to keep drifting in that direction."
+   ],
+   [
+    "Acknowledged uncertainty",
+    "Though a lot could still change that."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Given how things have gone so far, it's likely to keep drifting the same way.",
+   "audio": true
+  },
+  {
+   "texto": "If current trends hold, we could see a real shift within the year.",
+   "audio": true
+  },
+  {
+   "texto": "That said, a lot could still change between now and then."
+  }
+ ],
+ "notas": [
+  "Likely to and bound to differ in strength: bound to reads as near-certain, likely to leaves real room for doubt.",
+  "Starting a prediction with an observation (given how things have gone) grounds it in evidence rather than a guess out of nowhere.",
+  "Closing with an acknowledged limit (a lot could still change) is what keeps a confident prediction from sounding reckless."
+ ],
+ "contraste": {
+  "es": "El español predice con el futuro simple o con ir a + infinitivo de forma más directa, y la construcción condicional (if current trends hold) resulta menos automática. Los hispanohablantes tienden a saltar directo a la predicción sin anclarla primero en una observación explícita."
+ },
+ "errores": [
+  "Jumping straight to a prediction without grounding it in an observation first.",
+  "Confusing likely to and bound to and overstating the confidence of a prediction.",
+  "Never acknowledging what could prove the prediction wrong."
+ ],
+ "redemittel": [
+  {
+   "expresion": "Given how things have gone,…",
+   "funcion": "grounds the prediction",
+   "traducciones": {
+    "es": "dado cómo han ido las cosas,…",
+    "de": "So wie die Dinge gelaufen sind,…",
+    "fr": "Vu la tournure des événements,…",
+    "it": "Visto come sono andate le cose,…",
+    "pt": "Dado como as coisas correram,…"
+   }
+  },
+  {
+   "expresion": "…it's likely to…",
+   "funcion": "graded prediction",
+   "traducciones": {
+    "es": "es probable que…",
+    "de": "…wird wahrscheinlich…",
+    "fr": "…est susceptible de…",
+    "it": "…probabilmente…",
+    "pt": "…é provável que…"
+   }
+  },
+  {
+   "expresion": "If current trends hold,…",
+   "funcion": "conditional framing",
+   "traducciones": {
+    "es": "si las tendencias actuales se mantienen,…",
+    "de": "Wenn sich die aktuellen Trends fortsetzen,…",
+    "fr": "Si les tendances actuelles se maintiennent,…",
+    "it": "Se le tendenze attuali si confermano,…",
+    "pt": "Se as tendências atuais se mantiverem,…"
+   }
+  },
+  {
+   "expresion": "…is bound to…",
+   "funcion": "near-certain prediction",
+   "traducciones": {
+    "es": "seguro que…",
+    "de": "…wird bestimmt…",
+    "fr": "…va forcément…",
+    "it": "…è destinato/a a…",
+    "pt": "…vai certamente…"
+   }
+  },
+  {
+   "expresion": "That said, a lot could change.",
+   "funcion": "acknowledges uncertainty",
+   "traducciones": {
+    "es": "dicho eso, mucho podría cambiar",
+    "de": "Allerdings könnte sich noch viel ändern.",
+    "fr": "Cela dit, beaucoup de choses pourraient encore changer.",
+    "it": "Detto questo, molte cose potrebbero ancora cambiare.",
+    "pt": "Dito isto, muita coisa ainda pode mudar."
+   }
+  },
+  {
+   "expresion": "It wouldn't surprise me if…",
+   "funcion": "softer speculative frame",
+   "traducciones": {
+    "es": "no me sorprendería que…",
+    "de": "Es würde mich nicht überraschen, wenn…",
+    "fr": "Ça ne me surprendrait pas si…",
+    "it": "Non mi sorprenderebbe se…",
+    "pt": "Não me surpreenderia se…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Is the prediction grounded in a stated observation?",
+  "Is the confidence level (likely vs bound to) accurate to the evidence?",
+  "Is there an explicit acknowledgement of what could prove it wrong?",
+  "Does the prediction avoid sounding like a flat guess?",
+  "Would a listener sense confident guessing rather than reasoned speculation?"
+ ],
+ "promptCorreccion": "Focus only on the speculation chain: observation, graded prediction, acknowledged uncertainty. Check whether the prediction is grounded in evidence, whether the confidence level matches it, and whether an explicit limit is stated. Do not rewrite the text."
+}

@@ -1,0 +1,132 @@
+{
+ "skillId": "DE-G14",
+ "nivel": "B2",
+ "idioma": "de",
+ "titulo": "Erweiterte Partizipialkonstruktionen",
+ "categoria": "grammar",
+ "ancla": "Aspekte B2",
+ "descripcion": "Auf B2 lernt man das erweiterte Partizip als Attribut vor dem Nomen zu bilden: der gestern gelieferte Bericht statt der Bericht, der gestern geliefert wurde. Die Modalbedeutung mit zu (C1) kommt erst später — hier zählt die einfache Partizipialkonstruktion.",
+ "cuadroReferencia": {
+  "titulo": "Vom Relativsatz zum Partizip",
+  "columnas": [
+   "Relativsatz",
+   "Partizip als Attribut"
+  ],
+  "filas": [
+   [
+    "der Bericht, der gestern geliefert wurde",
+    "der gestern gelieferte Bericht"
+   ],
+   [
+    "die Frau, die am Fenster sitzt",
+    "die am Fenster sitzende Frau"
+   ],
+   [
+    "das Kind, das laut lacht",
+    "das laut lachende Kind"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Der gestern gelieferte Bericht liegt schon auf dem Tisch.",
+   "audio": true
+  },
+  {
+   "texto": "Die am Fenster sitzende Frau hat mir freundlich zugewinkt.",
+   "audio": true
+  },
+  {
+   "texto": "Das laut lachende Kind fiel allen sofort auf."
+  }
+ ],
+ "notas": [
+  "Partizip II (geliefert) drückt Passiv oder Abgeschlossenheit aus; Partizip I (lachend) drückt Aktiv oder Gleichzeitigkeit aus.",
+  "Die Wortstellung ist streng: alle Ergänzungen (gestern, am Fenster) stehen zwischen dem Artikel und dem Partizip.",
+  "Diese Konstruktion ist vor allem schriftlich üblich; im Gespräch bleibt der Relativsatz oft natürlicher."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine direkte Entsprechung für das erweiterte Partizipialattribut vor dem Nomen; es bleibt fast immer beim Relativsatz (el informe que fue entregado ayer). Spanischsprachige vermeiden diese Konstruktion deshalb oft ganz und bauen stattdessen den Relativsatz aus."
+ },
+ "errores": [
+  "Partizip I und Partizip II verwechseln.",
+  "Die Ergänzungen nicht zwischen Artikel und Partizip stellen.",
+  "Die Konstruktion in einem sehr langen Satz überladen, sodass sie schwer lesbar wird."
+ ],
+ "redemittel": [
+  {
+   "expresion": "der gestern gelieferte…",
+   "funcion": "Partizip II als Attribut",
+   "traducciones": {
+    "es": "el… entregado ayer",
+    "en": "the… delivered yesterday",
+    "fr": "le/la… livré(e) hier",
+    "it": "il/la… consegnato/a ieri",
+    "pt": "o/a… entregue ontem"
+   }
+  },
+  {
+   "expresion": "die am Fenster sitzende…",
+   "funcion": "Partizip I als Attribut",
+   "traducciones": {
+    "es": "la… sentada en la ventana",
+    "en": "the… sitting by the window",
+    "fr": "le/la… assis(e) près de la fenêtre",
+    "it": "il/la… seduto/a alla finestra",
+    "pt": "o/a… sentado/a junto à janela"
+   }
+  },
+  {
+   "expresion": "das laut lachende…",
+   "funcion": "Partizip I als Attribut",
+   "traducciones": {
+    "es": "el/la… que ríe fuerte",
+    "en": "the… laughing loudly",
+    "fr": "le/la… qui rit fort",
+    "it": "il/la… che ride forte",
+    "pt": "o/a… que ri alto"
+   }
+  },
+  {
+   "expresion": "der bereits genehmigte…",
+   "funcion": "Partizip II, abgeschlossen",
+   "traducciones": {
+    "es": "el… ya aprobado",
+    "en": "the… already approved",
+    "fr": "le/la… déjà approuvé(e)",
+    "it": "il/la… già approvato/a",
+    "pt": "o/a… já aprovado/a"
+   }
+  },
+  {
+   "expresion": "die schnell wachsende…",
+   "funcion": "Partizip I, Prozess",
+   "traducciones": {
+    "es": "la… que crece rápido",
+    "en": "the… growing quickly",
+    "fr": "le/la… qui croît rapidement",
+    "it": "il/la… che cresce rapidamente",
+    "pt": "o/a… que cresce rapidamente"
+   }
+  },
+  {
+   "expresion": "der vor kurzem veröffentlichte…",
+   "funcion": "Partizip II mit Zeitangabe",
+   "traducciones": {
+    "es": "el… publicado hace poco",
+    "en": "the… recently published",
+    "fr": "le/la… récemment publié(e)",
+    "it": "il/la… pubblicato/a di recente",
+    "pt": "o/a… publicado/a recentemente"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Ist Partizip I oder Partizip II korrekt gewählt?",
+  "Stehen die Ergänzungen zwischen Artikel und Partizip?",
+  "Ist der Satz noch gut lesbar, nicht überladen?",
+  "Habe ich mindestens zwei verschiedene Partizipialkonstruktionen gebildet?",
+  "Wäre ein Relativsatz an dieser Stelle natürlicher gewesen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die erweiterten Partizipialkonstruktionen. Prüfen Sie Partizip I gegen Partizip II und die Wortstellung der Ergänzungen. Schreiben Sie den Text nicht neu."
+}

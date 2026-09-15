@@ -1,0 +1,115 @@
+{
+ "skillId": "DE-G14",
+ "nivel": "C2",
+ "idioma": "de",
+ "titulo": "Erweiterte Partizipialkonstruktionen",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C2",
+ "descripcion": "Auf C2 werden erweiterte Partizipialkonstruktionen mit mehreren eingebetteten Ergänzungen gebildet: die vom zuständigen Ausschuss nach langer Debatte einstimmig verabschiedete Resolution. Die Herausforderung liegt darin, die Konstruktion trotz mehrerer Einschübe lesbar zu halten.",
+ "cuadroReferencia": {
+  "titulo": "Mehrere Ergänzungen im Partizipialattribut",
+  "columnas": [
+   "Element",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Basis",
+    "die verabschiedete Resolution"
+   ],
+   [
+    "Eine Ergänzung",
+    "die vom Ausschuss verabschiedete Resolution"
+   ],
+   [
+    "Mehrere Ergänzungen",
+    "die vom Ausschuss nach langer Debatte einstimmig verabschiedete Resolution"
+   ]
+  ],
+  "notaPie": "Ab drei eingebetteten Ergänzungen wird die Konstruktion für die meisten Leser schwer verfolgbar — das ist die praktische Obergrenze, nicht eine grammatische."
+ },
+ "ejemplos": [
+  {
+   "texto": "Die vom zuständigen Ausschuss nach langer Debatte einstimmig verabschiedete Resolution tritt sofort in Kraft.",
+   "audio": true
+  },
+  {
+   "texto": "Die trotz erheblicher Bedenken letztlich genehmigte Massnahme wird nun evaluiert.",
+   "audio": true
+  },
+  {
+   "texto": "Das seit Jahren diskutierte, aber nie umgesetzte Vorhaben wird nun geprüft."
+  }
+ ],
+ "notas": [
+  "Jede zusätzliche Ergänzung im Partizipialattribut erhöht die Verarbeitungslast für den Leser deutlich stärker als eine zusätzliche Ergänzung im entsprechenden Relativsatz.",
+  "Ab drei eingebetteten Elementen wird empfohlen, auf einen Relativsatz oder zwei getrennte Sätze auszuweichen, selbst wenn die Konstruktion grammatisch korrekt bliebe.",
+  "Diese Konstruktion ist ein Präzisionsinstrument für Fachtexte, kein Ziel an sich — die Lesbarkeit bleibt das eigentliche Kriterium."
+ ],
+ "contraste": {
+  "es": "Das Spanische kann diese Menge an Information nur über mehrere verschachtelte Relativsätze ausdrücken, niemals über ein einziges Attribut vor dem Nomen. Hispanophone C2-Sprecher unterschätzen deshalb systematisch, wie viele Ergänzungen ein deutsches Partizipialattribut überhaupt tragen kann, bevor es unlesbar wird."
+ },
+ "errores": [
+  "Mehr als drei Ergänzungen in ein einziges Partizipialattribut packen, wodurch der Satz unlesbar wird.",
+  "Die Reihenfolge der Ergänzungen so wählen, dass der Bezug zum Partizip unklar wird.",
+  "Auf einen Relativsatz verzichten, obwohl die Konstruktion die praktische Obergrenze bereits überschritten hat."
+ ],
+ "redemittel": [
+  {
+   "expresion": "die von…nach…verabschiedete…",
+   "funcion": "zwei Ergänzungen",
+   "traducciones": {
+    "es": "el/la…aprobado/a por…tras…",
+    "en": "the…approved by…after…"
+   }
+  },
+  {
+   "expresion": "die trotz…letztlich genehmigte…",
+   "funcion": "Ergänzung mit Konzession",
+   "traducciones": {
+    "es": "el/la…finalmente aprobado/a pese a…",
+    "en": "the…ultimately approved despite…"
+   }
+  },
+  {
+   "expresion": "das seit…diskutierte, aber nie…",
+   "funcion": "zwei koordinierte Partizipien",
+   "traducciones": {
+    "es": "el/la…discutido/a desde…, pero nunca…",
+    "en": "the…discussed since…, but never…"
+   }
+  },
+  {
+   "expresion": "die bereits mehrfach überarbeitete…",
+   "funcion": "Ergänzung mit Wiederholung",
+   "traducciones": {
+    "es": "el/la…ya revisado/a varias veces",
+    "en": "the…already revised several times"
+   }
+  },
+  {
+   "expresion": "…, was die Sache zusätzlich erschwert",
+   "funcion": "Alternative bei Überlastung",
+   "traducciones": {
+    "es": "…, lo cual complica aún más el asunto",
+    "en": "…, which further complicates matters"
+   }
+  },
+  {
+   "expresion": "Kurz gesagt handelt es sich um…",
+   "funcion": "Auflösung bei zu hoher Dichte",
+   "traducciones": {
+    "es": "en pocas palabras, se trata de…",
+    "en": "in short, it concerns…"
+   }
+  }
+ ],
+ "autochequeo": [
+  "Enthält das Partizipialattribut höchstens zwei bis drei eingebettete Ergänzungen?",
+  "Bleibt der Bezug zum Partizip trotz der Ergänzungen klar?",
+  "Wäre ein Relativsatz an dieser Stelle lesbarer?",
+  "Würde ein durchschnittlicher Leser den Satz beim ersten Lesen verstehen?",
+  "Habe ich mindestens eine Konstruktion mit zwei Ergänzungen gebildet?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Anzahl und Klarheit der Ergänzungen in erweiterten Partizipialkonstruktionen. Schreiben Sie den Text nicht neu. Prüfen Sie, ob ein Relativsatz an dieser Stelle lesbarer wäre."
+}

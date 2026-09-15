@@ -1,0 +1,147 @@
+{
+ "skillId": "DE-K01",
+ "nivel": "C1",
+ "idioma": "de",
+ "titulo": "Konjunktiv II + Konditionalsatz + Modalverb im Perfekt",
+ "categoria": "grammar",
+ "ancla": "Erkundungen C1",
+ "descripcion": "Drei bekannte Bausteine — Konjunktiv II, der Konditionalsatz und der Modalverb-Infinitiv der Vergangenheit — verschmelzen hier zu einem einzigen Muster: dem irrealen Vorwurf über etwas, das hätte anders sein können. Wer die drei getrennt gelernt hat, baut oft *hätte gekonnt wissen* oder lässt eines der Teile weg. Das Ziel dieser Karte ist nicht, etwas Neues zu lernen, sondern die drei Teile so oft zu kombinieren, bis die Reihenfolge automatisch sitzt.",
+ "cuadroReferencia": {
+  "titulo": "Die drei Schichten des Musters",
+  "columnas": [
+   "Schicht",
+   "Form",
+   "Funktion"
+  ],
+  "filas": [
+   [
+    "1 · Bedingung",
+    "Wenn + Plusquamperfekt Konjunktiv",
+    "die nicht eingetretene Voraussetzung"
+   ],
+   [
+    "2 · Modalverb",
+    "Infinitiv + Modalverb + haben",
+    "die verpasste Möglichkeit oder Pflicht"
+   ],
+   [
+    "3 · Hauptsatz",
+    "hätte/wäre + Partizip",
+    "die ausbleibende Folge"
+   ]
+  ],
+  "notaPie": "Merke: Bei Modalverb im Perfekt steht IMMER der Infinitiv des Modalverbs am Ende, nie das Partizip — hätte wissen können, nie hätte gewusst können."
+ },
+ "ejemplos": [
+  {
+   "texto": "Wenn wir das Protokoll gelesen hätten, hätten wir den Fehler vermeiden können."
+  },
+  {
+   "texto": "Man hätte das früher wissen müssen.",
+   "audio": true
+  },
+  {
+   "texto": "Sie hätte sich informieren sollen, bevor sie unterschrieben hat.",
+   "audio": true
+  },
+  {
+   "texto": "Hätte er nachgefragt, hätte er die Frist verlängern können."
+  }
+ ],
+ "notas": [
+  "Der Doppelinfinitiv (wissen können, informieren sollen) steht immer ganz am Satzende, nach dem finiten hätte.",
+  "Im Nebensatz mit Doppelinfinitiv rückt hätte vor die beiden Infinitive: …, dass man das hätte wissen können.",
+  "Ohne wenn, mit Inversion, klingt das Muster formeller: Hätte man das gewusst, wäre die Entscheidung anders ausgefallen."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet dieselbe Bedeutung mit si + pluscuamperfecto de subjuntivo und condicional compuesto (si hubiéramos sabido, habríamos podido evitarlo), aber ohne einen dritten Baustein für das Modalverb — poder wird einfach konjugiert. Die deutsche Besonderheit ist also nicht die Bedingung, sondern der zusätzliche Doppelinfinitiv, der im Spanischen keine Entsprechung hat.",
+  "en": "English builds the same meaning with the third conditional plus a modal perfect: if we had read the minutes, we could have avoided the mistake. The logic is identical to German, which is why English speakers usually get the sequence right — but they often forget that German keeps the modal verb as a bare infinitive at the very end, never as a participle."
+ },
+ "errores": [
+  "Das Partizip statt des Infinitivs beim Modalverb: hätte gewusst können statt hätte wissen können.",
+  "Ein Teil des Musters fehlt: nur der Konditionalsatz ohne das Modalverb, wodurch die verpasste Möglichkeit verloren geht.",
+  "Würde im wenn-Satz setzen: wenn wir das gelesen hätten würden statt wenn wir das gelesen hätten."
+ ],
+ "erroresContrastivos": {
+  "en": [
+   "The infinitive-participle order gets reversed under the influence of the simpler English structure: hätte gemusst wissen instead of hätte wissen müssen.",
+   "Would is inserted into the if-clause by analogy with English if I would have known."
+  ]
+ },
+ "redemittel": [
+  {
+   "expresion": "Das hätte man wissen müssen.",
+   "funcion": "irrealer Vorwurf, allgemein",
+   "traducciones": {
+    "es": "Eso se debería haber sabido.",
+    "en": "That should have been known.",
+    "fr": "On aurait dû le savoir.",
+    "it": "Si sarebbe dovuto sapere.",
+    "pt": "Isso deveria ter sido sabido."
+   }
+  },
+  {
+   "expresion": "Hätte ich das gewusst, hätte ich anders entschieden.",
+   "funcion": "vollständiges Muster, formell",
+   "traducciones": {
+    "es": "De haberlo sabido, habría decidido distinto.",
+    "en": "Had I known that, I would have decided differently.",
+    "fr": "Si je l’avais su, j’aurais décidé autrement.",
+    "it": "Se l’avessi saputo, avrei deciso diversamente.",
+    "pt": "Se eu soubesse, teria decidido de outra forma."
+   }
+  },
+  {
+   "expresion": "Das wäre vermeidbar gewesen, wenn…",
+   "funcion": "Rückblick ohne direkten Vorwurf",
+   "traducciones": {
+    "es": "Eso se podría haber evitado si…",
+    "en": "That could have been avoided if…",
+    "fr": "Cela aurait pu être évité si…",
+    "it": "Si sarebbe potuto evitare se…",
+    "pt": "Isso poderia ter sido evitado se…"
+   }
+  },
+  {
+   "expresion": "Man hätte früher reagieren sollen.",
+   "funcion": "Kritik an einer Institution, unpersönlich",
+   "traducciones": {
+    "es": "Se debería haber reaccionado antes.",
+    "en": "Someone should have reacted sooner.",
+    "fr": "Il aurait fallu réagir plus tôt.",
+    "it": "Si sarebbe dovuto reagire prima.",
+    "pt": "Dever-se-ia ter reagido mais cedo."
+   }
+  },
+  {
+   "expresion": "Das wäre nicht passiert, wenn man hätte reagieren können.",
+   "funcion": "komplexere Variante mit Passiv",
+   "traducciones": {
+    "es": "Eso no habría pasado si se hubiera podido reaccionar.",
+    "en": "That wouldn't have happened if it had been possible to react.",
+    "fr": "Cela ne serait pas arrivé si on avait pu réagir.",
+    "it": "Non sarebbe successo se si fosse potuto reagire.",
+    "pt": "Isso não teria acontecido se tivesse sido possível reagir."
+   }
+  },
+  {
+   "expresion": "Im Nachhinein hätte man das anders handhaben müssen.",
+   "funcion": "Rückblick, distanziert",
+   "traducciones": {
+    "es": "En retrospectiva, se debería haber manejado distinto.",
+    "en": "In hindsight, it should have been handled differently.",
+    "fr": "Avec le recul, il aurait fallu gérer cela autrement.",
+    "it": "Col senno di poi, si sarebbe dovuto gestire diversamente.",
+    "pt": "Em retrospetiva, isso deveria ter sido tratado de outra forma."
+   }
+  }
+ ],
+ "autochequeo": [
+  "Steht der Infinitiv des Modalverbs, nicht das Partizip?",
+  "Ist die Reihenfolge Infinitiv + Modalverb (nicht umgekehrt)?",
+  "Habe ich würde im wenn-Satz vermieden?",
+  "Sind alle drei Schichten vorhanden: Bedingung, Modalverb, Folge?",
+  "Klingt der Satz wie ein echter Vorwurf oder wie eine blosse Feststellung?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Muster Konjunktiv II + Konditionalsatz + Modalverb im Perfekt. (1) Prüfen Sie bei jedem Satz die Reihenfolge Infinitiv vor Modalverb. (2) Prüfen Sie, ob alle drei Schichten vorhanden sind. (3) Markieren Sie jedes würde im wenn-Satz. Schreiben Sie den Text nicht neu."
+}
