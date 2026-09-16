@@ -83,7 +83,6 @@
   "es": "Spanish carries disagreement largely in intonation and in *pero*; English carries it lexically. A literal English rendering of a normally forceful Spanish objection lands roughly two levels harsher than intended."
  },
  "errores": [
-  "*I am not agree* — a fossilised Spanish-speaker error worth naming once and killing.",
   "*You are wrong* — grammatically fine, socially expensive, rare in professional English.",
   "Softening until the disagreement disappears. If nobody noticed you disagreed, you didn't.",
   "*No, but…* as an opener. Reverse it: *Yes, and here's the difficulty…*"
@@ -185,5 +184,10 @@
   "Did I open with *but* or *no*?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on how I disagree. (1) Mark each disagreement formula and rate its social temperature from 1 to 5. (2) Tell me whether I attacked the assumption or only the conclusion. (3) Flag anywhere I softened so much the disagreement vanished. (4) Flag anything that would read as rude. Do not rewrite the text."
+ "promptCorreccion": "Focus only on how I disagree. (1) Mark each disagreement formula and rate its social temperature from 1 to 5. (2) Tell me whether I attacked the assumption or only the conclusion. (3) Flag anywhere I softened so much the disagreement vanished. (4) Flag anything that would read as rude. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*I am not agree* — a fossilised Spanish-speaker error worth naming once and killing."
+  ]
+ }
 }

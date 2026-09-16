@@ -59,7 +59,6 @@
   "es": "Genau das ist der Kern des Problems: aufstehen ist im Deutschen nicht reflexiv, aber levantarse ist es im Spanischen. Diese Nichtübereinstimmung in beide Richtungen macht reflexive Verben zu einer eigenen Fehlerquelle, die man nicht durch Logik, sondern nur durch Auswendiglernen löst."
  },
  "errores": [
-  "Ein deutsches Verb reflexiv machen, weil seine spanische Entsprechung reflexiv ist.",
   "Das Reflexivpronomen bei einem tatsächlich reflexiven Verb vergessen.",
   "Das Reflexivpronomen an der falschen Stelle im Satz platzieren."
  ],
@@ -120,5 +119,10 @@
   "Habe ich geprüft, ob ein Verb im Deutschen wirklich reflexiv ist, statt es vom Spanischen abzuleiten?",
   "Klingt der Satz natürlich?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf reflexive Verben. Prüfen Sie bei jedem Verb, ob es im Deutschen wirklich reflexiv ist, unabhängig vom Spanischen. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf reflexive Verben. Prüfen Sie bei jedem Verb, ob es im Deutschen wirklich reflexiv ist, unabhängig vom Spanischen. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Ein deutsches Verb reflexiv machen, weil seine spanische Entsprechung reflexiv ist."
+  ]
+ }
 }

@@ -58,7 +58,6 @@
   "es": "Das spanische reflexive System deckt sich nur teilweise mit dem deutschen: manche Verben sind in beiden Sprachen reflexiv, manche nur im Deutschen, manche nur im Spanischen. Es gibt keine Regel, die die Übereinstimmung vorhersagt — jedes Verb muss einzeln gelernt werden."
  },
  "errores": [
-  "Sich vor aufstehen setzen, weil levantarse im Spanischen reflexiv ist.",
   "Die falsche Präposition nach sich freuen wählen.",
   "Ein reflexives Verb ohne das Reflexivpronomen verwenden."
  ],
@@ -137,5 +136,10 @@
   "Sind die Reflexivpronomen im richtigen Kasus?",
   "Klingt der Satz für einen Muttersprachler natürlich?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die reflexiven Verben und ihre Präpositionen. Prüfen Sie besonders, ob aufstehen fälschlich reflexiv verwendet wurde. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die reflexiven Verben und ihre Präpositionen. Prüfen Sie besonders, ob aufstehen fälschlich reflexiv verwendet wurde. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Sich vor aufstehen setzen, weil levantarse im Spanischen reflexiv ist."
+  ]
+ }
 }

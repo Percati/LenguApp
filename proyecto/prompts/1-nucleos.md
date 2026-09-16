@@ -33,8 +33,14 @@ Reglas de contenido que NO tenés que reinventar (ya están decididas):
 - El campo `contraste` es un diccionario por idioma de app: escribí SOLO la clave
   `"es"`. Las claves `it`, `fr`, `pt`, `en` las agrega la conversación de Contrastes
   — no las toques si ya existen, no inventes contenido para esas claves.
-- El campo `errores` es una lista simple pensada para hispanohablante por ahora. La
-  conversación de Errores Típicos decidirá si conviene separarlo por idioma de app.
+- Errores típicos (decidido por la conversación de Errores Típicos, sept 2026):
+  `errores` es la lista UNIVERSAL (2+): solo errores que comete cualquier
+  aprendiente, sea cual sea su idioma de app. Nunca nombres un idioma concreto ahí
+  ("aus dem Spanischen" no; "aus der Muttersprache" sí). Los errores por
+  interferencia de un L1 concreto van en `erroresContrastivos.<idioma de app>`,
+  que la app SUMA a los universales. Un mismo ítem nunca va en los dos sitios.
+  Escribí `erroresContrastivos.es` si detectás un error típico de hispanohablante;
+  las demás claves las completa la conversación de Errores Típicos.
 - Mínimos de schema a no romper: `redemittel` 6-12, `autochequeo` 5 exacto,
   `ejemplos` 3+, `notas` 2+, `errores` 2+, `descripcion` 200-1600 caracteres,
   `promptCorreccion` 150+ caracteres, `cuadroReferencia.filas` 3+.

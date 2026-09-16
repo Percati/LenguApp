@@ -54,7 +54,6 @@
   "es": "Das Spanische hat mit el miedo a und el derecho a eine ähnliche, aber nicht identische Struktur, die selten mit der deutschen Präposition übereinstimmt. Hispanophone C2-Sprecher übertragen deshalb oft die spanische Präposition wörtlich und produzieren die Angst von statt die Angst vor."
  },
  "errores": [
-  "Die Präposition eines Nomens wörtlich aus dem Spanischen übertragen.",
   "Die Rektion eines Verbs von seiner Bedeutung unabhängig immer gleich behandeln.",
   "Den Kasus nach der Präposition eines Nomens falsch wählen."
  ],
@@ -115,5 +114,10 @@
   "Habe ich mindestens drei Nomen mit eigener Rektion benutzt?",
   "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Rektion von Nomen und mehrdeutigen Verben. Prüfen Sie jede Präposition und ihren Kasus einzeln. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Rektion von Nomen und mehrdeutigen Verben. Prüfen Sie jede Präposition und ihren Kasus einzeln. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Die Präposition eines Nomens wörtlich aus dem Spanischen übertragen."
+  ]
+ }
 }
