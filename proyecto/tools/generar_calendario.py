@@ -31,13 +31,24 @@ def _utf8_io():
 _utf8_io()
 
 
-REVIEW   = {8, 16, 24, 32, 40, 48}
-SURVIVAL = {12, 28, 44}
+REVIEW   = {10, 22, 34, 46}
+# El Survival ya NO consume semanas de dias de semana. El desafio vive en el fin
+# de semana (sabado 00:00 a domingo 23:59, hora local) de CADA semana, y cuatro
+# veces al año ese desafio es el Survival largo en vez del semanal. Por eso
+# SURVIVAL_FINDE no se resta de las semanas disponibles: es una etiqueta sobre
+# el fin de semana de una semana que igual tiene contenido de lunes a viernes.
+# Resultado: 52 - 4 repasos = 48 semanas de contenido, contra las 43 del esquema
+# anterior (6 repasos + 3 semanas Survival enteras).
+def survival_finde(total):
+    """Cuatro por año, al cierre de cada trimestre, desfasadas de los repasos."""
+    return {13, 26, 39, total}
+
 SEP_MIN  = 10          # semanas minimas entre apariciones de un mismo skill
 SEP_MAX  = 30          # semanas maximas: mas separacion no es repeticion espaciada
-                       # sino dos clases sueltas. Con 43 semanas y dos
-                       # apariciones, el ideal ronda las 21.
+                       # sino dos clases sueltas. Con 48 semanas y dos
+                       # apariciones, el ideal ronda las 24.
 FUNDACIONAL_MAX = 20   # un skill fundacional no puede debutar despues de aqui
+TOPE_APARICIONES = 4   # mas de cuatro veces en un año es machaque
 
 def semanas_iso(anio: int) -> int:
     """52 o 53 segun el anio ISO. 2026 tiene 53."""
@@ -48,57 +59,61 @@ def rango_fechas(anio, semana):
     dom = date.fromisocalendar(anio, semana, 7)
     return lun, dom
 
-def apariciones(skill, n=None):
-    """Lista de (skillId, order) segun cuantas veces aparece en el anio."""
-    return [(skill["id"], o + 1) for o in range(n or skill.get("apariciones", 2))]
-
-
-def repartir(skills, libres):
+def repartir(skills, libres, nivel):
     """Decide cuantas veces aparece cada skill para llenar exactamente el anio.
 
-    Todos los skills aparecen al menos dos veces: una sola aparicion no es
-    repeticion espaciada, es una clase suelta. Las apariciones sobrantes van
-    primero a los skills fundacionales y despues en orden de declaracion, que
-    es el del banco y por tanto explicable.
+    Regla vigente: **todo skill del par (idioma, nivel) aparece al menos una
+    vez**, y solo los marcados como nucleo de ESE nivel repiten.
 
-    Si hay mas skills que semanas, algunos quedan fuera del anio en vez de
-    aparecer una sola vez: es preferible cubrir menos temas bien que muchos
-    una vez.
+    Antes la regla era el minimo de dos apariciones para todos, lo que obligaba
+    a descartar skills: con 43 semanas cabian 21, y aleman C1 tiene 41, asi que
+    20 skills no aparecian nunca en el anio. Cubrir el banco entero una vez y
+    machacar solo lo importante cubre mas y explica mejor por que se repite lo
+    que se repite.
+
+    Un skill es nucleo de un nivel si ese nivel figura en su campo `repiteEn`.
+    La importancia depende del nivel, no del skill: un tema puede ser central en
+    B1 y periferico en C1, asi que `fundacional` (booleano por skill) no servia
+    para esto y se mantiene solo para su otro uso, el de no debutar tarde.
+
+    Los slots que sobran despues de dar la segunda aparicion a los nucleo se
+    reparten entre ellos primero y despues entre el resto, con tope de
+    TOPE_APARICIONES. En los niveles bajos, donde hay muchas menos skills que
+    semanas, esto hace que todo el banco aparezca tres o cuatro veces, que es
+    exactamente lo que se quiere en A2.
     """
     n = len(skills)
     if n == 0:
         return {}
-    if 2 * n > libres:
-        # No entran todos dos veces, asi que hay que descartar algunos. Cortar
-        # por orden de declaracion es lo peor posible: el banco lista primero
-        # fluidez, luego gramatica y al final lexico, de modo que el corte se
-        # come el lexico entero. Aleman C1 quedaba sin una sola Redewendung.
-        # Se recorta proporcionalmente dentro de cada categoria.
-        cabe = libres // 2
-        por_cat = {}
-        for sk in skills:
-            por_cat.setdefault(sk["id"][3], []).append(sk)   # F, G o V
-        elegidos, resto = [], []
-        for cat, lista in sorted(por_cat.items()):
-            cuota = round(cabe * len(lista) / n)
-            elegidos += lista[:cuota]
-            resto += lista[cuota:]
-        # el redondeo puede dejar hueco o pasarse
-        elegidos = (elegidos + resto)[:cabe]
-        skills = [sk for sk in skills if sk in elegidos]
-        n = len(skills)
-    plan = {s["id"]: 2 for s in skills}
-    sobran = libres - 2 * n
-    prioridad = ([s for s in skills if s.get("fundacional")] +
-                 [s for s in skills if not s.get("fundacional")])
+    if n > libres:
+        # Ni una vez cada uno. No se puede resolver repartiendo: el banco de ese
+        # par es mas grande que el anio y hay que achicarlo o partirlo en dos
+        # ediciones. Fallar aca es mejor que descartar skills en silencio.
+        raise ValueError(
+            f"{nivel}: {n} skills no entran en {libres} semanas ni una vez cada uno. "
+            f"Achicar el banco de este par o repartirlo en dos anios.")
+
+    plan = {s["id"]: 1 for s in skills}
+    nucleo = [s for s in skills if nivel in s.get("repiteEn", [])]
+    resto  = [s for s in skills if nivel not in s.get("repiteEn", [])]
+
+    sobran = libres - n
+    # primero la segunda aparicion de cada nucleo, que es la razon de marcarlos
+    for s in nucleo:
+        if sobran <= 0:
+            break
+        plan[s["id"]] += 1
+        sobran -= 1
+    # despues, si todavia sobran semanas, se reparten por rondas
+    prioridad = nucleo + resto
     i = 0
     while sobran > 0 and prioridad:
         sid = prioridad[i % len(prioridad)]["id"]
-        if plan[sid] < 4:                   # tope: mas de cuatro es machaque
+        if plan[sid] < TOPE_APARICIONES:
             plan[sid] += 1
             sobran -= 1
         i += 1
-        if i > 4 * len(prioridad):
+        if i > TOPE_APARICIONES * len(prioridad):
             break
     return plan
 
@@ -121,8 +136,8 @@ def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=Non
     Despues se asignan los temas, que es donde si hace falta buscar.
     """
     total = semanas_iso(anio)
-    libres = [w for w in range(desde, total + 1)
-              if w not in REVIEW and w not in SURVIVAL]
+    finde_largo = survival_finde(total)
+    libres = [w for w in range(desde, total + 1) if w not in REVIEW]
     skills = [s for s in banco if s["idioma"] == idioma and nivel in s["niveles"]]
     if not skills:
         print(f"El banco no tiene skills de {idioma} en {nivel}.", file=sys.stderr)
@@ -132,7 +147,7 @@ def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=Non
     fijadas = {int(w): (tuple(v["tarea"]), v["topic"]) for w, v in fijas.items()}
     rnd = random.Random(anio)
 
-    plan_ap = repartir(skills, len(libres) - len(fijadas))
+    plan_ap = repartir(skills, len(libres) - len(fijadas), nivel)
     skills = [s for s in skills if s["id"] in plan_ap]
     idx = {s["id"]: s for s in skills}
 
@@ -171,6 +186,28 @@ def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=Non
         if not ok or len(ranura) != L:
             continue
 
+        # --- order: renumerar por semana ---
+        # La colocacion de arriba calcula la posicion objetivo con "% L", asi que
+        # un skill cuya base cae al final del anio da la vuelta y su segunda
+        # aparicion aterriza ANTES que la primera. El order quedaba sellado como
+        # j+1, el indice del bucle, no la posicion real: aparecia order 2 en la
+        # semana 6 y order 1 en la 33. Como el order es lo que elige el subtitulo
+        # y la profundidad creciente de cada reaparicion, eso corria la escalera
+        # de repeticion espaciada al reves.
+        # Renumerar no mueve ninguna semana, solo reetiqueta, asi que no toca las
+        # separaciones ya validadas. Los skills con una aparicion fijada a mano en
+        # semanas-fijas.json se dejan intactos: ahi el order es una decision del
+        # autor, no un calculo.
+        fijados_sid = {tarea[0] for tarea, _ in fijadas.values()}
+        por_skill = {}
+        for w, (sid, _) in ranura.items():
+            por_skill.setdefault(sid, []).append(w)
+        for sid, semanas in por_skill.items():
+            if sid in fijados_sid:
+                continue
+            for nuevo, w in enumerate(sorted(semanas), start=1):
+                ranura[w] = (sid, nuevo)
+
         # --- temas: ahora si, busqueda ---
         plan = dict(fijadas)
         usados_topic = {}
@@ -202,13 +239,19 @@ def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=Non
     filas = []
     for w in range(desde, total + 1):
         lun, dom = rango_fechas(anio, w)
+        # El desafio del fin de semana: el Survival largo cuatro veces al anio,
+        # el semanal el resto. En una semana de repaso el desafio es el repaso.
         if w in REVIEW:
-            filas.append((w, lun, dom, "review", None, None, None))
-        elif w in SURVIVAL:
-            filas.append((w, lun, dom, "survival", None, None, None))
+            desafio = "repaso"
+        elif w in finde_largo:
+            desafio = "survival"
+        else:
+            desafio = "semanal"
+        if w in REVIEW:
+            filas.append((w, lun, dom, "review", None, None, None, desafio))
         else:
             (sid, order), topic = plan[w]
-            filas.append((w, lun, dom, "content", sid, order, topic))
+            filas.append((w, lun, dom, "content", sid, order, topic, desafio))
     return filas
 
 
@@ -217,7 +260,7 @@ def verificar(filas):
     errores = []
     prev = None
     vistos = {}
-    for w, _, _, tipo, sid, order, topic in filas:
+    for w, _, _, tipo, sid, order, topic, _des in filas:
         if tipo != "content":
             prev = None
             continue
@@ -235,6 +278,21 @@ def verificar(filas):
                 if t2 == topic:
                     errores.append(f"S{w}: {sid} repite topic {topic} (ya en S{w2})")
             vistos.setdefault(sid, []).append((w, topic))
+
+    # El order tiene que crecer con la semana: la aparicion n-esima de un skill
+    # es la n-esima del anio, porque de ahi sale la profundidad creciente. Sin
+    # esta comprobacion el wrap-around del "% L" pasaba desapercibido.
+    ordenes = {}
+    for w, _, _, tipo, sid, order, _, _des in filas:
+        if tipo == "content" and sid:
+            ordenes.setdefault(sid, []).append((w, order))
+    for sid, pares in ordenes.items():
+        pares.sort()
+        secuencia = [o for _, o in pares]
+        if secuencia != sorted(secuencia):
+            errores.append(f"{sid}: order no creciente con la semana ({pares})")
+        if secuencia != list(range(1, len(secuencia) + 1)):
+            errores.append(f"{sid}: orders no consecutivos desde 1 ({secuencia})")
     return errores
 
 def main():
@@ -261,16 +319,17 @@ def main():
 
     if a.formato == "json":
         print(json.dumps([{"semana": w, "inicio": str(l), "fin": str(f),
-                           "tipo": t, "skillId": s, "order": o, "topicId": tp}
-                          for w, l, f, t, s, o, tp in filas],
+                           "tipo": t, "skillId": s, "order": o, "topicId": tp,
+                           "desafioFinde": ds}
+                          for w, l, f, t, s, o, tp, ds in filas],
                          ensure_ascii=False, indent=1))
     else:
         print(f"# Calendario {a.anio} · {a.idioma} · {a.nivel}\n")
-        print("| Semana | Fechas | Tipo | Skill | Ap. | Topic |")
-        print("|---|---|---|---|---|---|")
-        for w, l, f, t, s, o, tp in filas:
+        print("| Semana | Fechas | Tipo | Skill | Ap. | Topic | Finde |")
+        print("|---|---|---|---|---|---|---|")
+        for w, l, f, t, s, o, tp, ds in filas:
             print(f"| {w} | {l:%d %b}–{f:%d %b} | {t} | {s or '—'} "
-                  f"| {o or '—'} | {tp or '—'} |")
+                  f"| {o or '—'} | {tp or '—'} | {ds} |")
     sys.exit(1 if errs else 0)
 
 if __name__ == "__main__":

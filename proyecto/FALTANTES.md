@@ -1,4 +1,4 @@
-# Qué falta, a 15 de septiembre de 2026
+# Qué falta, a 18 de septiembre de 2026
 
 Estado regenerado a partir de los archivos reales del repositorio, no de una foto anterior. Si este archivo y otro documento del proyecto se contradicen, este es el que hay que creer — se actualiza seguido.
 
@@ -12,12 +12,14 @@ Estado regenerado a partir de los archivos reales del repositorio, no de una fot
 | DE | C1 | 41 | 41 | ✅ completo |
 | DE | C2 | 27 | 27 | ✅ completo |
 | EN | A2 | 18 | 18 | ✅ completo |
-| EN | B1 | 29 | 29 | ✅ completo |
-| EN | B2 | 33 | 33 | ✅ completo |
-| EN | C1 | 32 | 32 | ✅ completo |
+| EN | B1 | 30 | 30 | ✅ completo |
+| EN | B2 | 34 | 34 | ✅ completo |
+| EN | C1 | 33 | 33 | ✅ completo |
 | EN | C2 | 26 | 26 | ✅ completo |
 
-**Total núcleos: 290/290.**
+**Total núcleos: 293/293.**
+
+El 18-09-2026 se agregó el skill `EN-G08` (Prepositional verbs and dependent prepositions) en B1, B2 y C1: el banco de inglés solo cubría verb + particle (phrasal verbs, `EN-V02`/`EN-V03`) y verb + noun (`EN-V04`/`EN-V05`), y no tenía nada para los verbos preposicionales. En alemán la combinación ya estaba cubierta por `DE-G08` y `DE-G26`, así que no se tocó.
 
 ### 1.1 — Contraste multiidioma dentro de cada núcleo
 
@@ -29,18 +31,25 @@ El campo `errores` hoy es una lista plana pensada para hispanohablante. Falta de
 
 ## 2. Packs de vocabulario (por tema y aparición, año 2027)
 
+**Cambio del 18-09-2026:** el año pasó de 43 a 48 semanas de contenido (el Survival
+dejó de ocupar semanas enteras y los repasos bajaron de 6 a 4), así que los tres
+pares que figuraban como completos con 43 packs ya no lo están. Además la
+redistribución de temas dejó packs huérfanos: su vocabulario sigue siendo válido,
+solo hay que renumerarlos al `-n` que ahora corresponde. Faltan 377 packs en total
+para 2027 (antes 301).
+
 | Idioma | Nivel | Calendario 2027 | Packs 2027 | Estado |
 |---|---|---|---|---|
-| DE | A2 | 43 semanas | 0 | faltan 43 |
-| DE | B1 | 43 semanas | 0 | faltan 43 |
-| DE | B2 | 43 semanas | 43 | ✅ completo (prioridad corregida 15-09) |
-| DE | C1 | 43 semanas | 0 | faltan 43 |
-| DE | C2 | 43 semanas | 0 | faltan 43 |
-| EN | A2 | 43 semanas | 0 | faltan 43 |
-| EN | B1 | 43 semanas | 0 | faltan 43 |
-| EN | B2 | 43 semanas | 43 | ✅ completo (prioridad corregida 15-09) |
-| EN | C1 | 43 semanas | 43 | ✅ completo (prioridad corregida 15-09) |
-| EN | C2 | 43 semanas | 0 | faltan 43 |
+| DE | A2 | 48 semanas | 0 | faltan 48 |
+| DE | B1 | 48 semanas | 0 | faltan 48 |
+| DE | B2 | 48 semanas | 33 útiles | faltan 15, hay 10 huérfanos renumerables |
+| DE | C1 | 48 semanas | 0 | faltan 48 |
+| DE | C2 | 48 semanas | 0 | faltan 48 |
+| EN | A2 | 48 semanas | 0 | faltan 48 |
+| EN | B1 | 48 semanas | 0 | faltan 48 |
+| EN | B2 | 48 semanas | 35 útiles | faltan 13, hay 8 huérfanos renumerables |
+| EN | C1 | 48 semanas | 35 útiles | faltan 13, hay 8 huérfanos renumerables |
+| EN | C2 | 48 semanas | 0 | faltan 48 |
 
 ## 3. Apariciones (fichas semanales armadas, año 2027)
 
