@@ -1,0 +1,288 @@
+{
+ "id": "EN-F17-C1-1",
+ "skillId": "EN-F17",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T03",
+ "titulo": "Register Shifting",
+ "subtitulo": "The same content, three audiences, three registers",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 150,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Register is the C1 skill most likely to be invisible to the speaker and obvious to everyone else. Writing to a regulator the way you would write to a colleague is the commonest way advanced speakers misfire. The content is not wrong; the packaging is. Register moves along several axes at once, and the failure is almost always mixing them within one text.",
+ "ejemplos": [
+  {
+   "texto": "To a colleague: *This won't scale and we both know it.*",
+   "audio": true
+  },
+  {
+   "texto": "To a manager: *I've got concerns about how this behaves at volume — worth a conversation before we commit.*",
+   "audio": true
+  },
+  {
+   "texto": "In a formal report: *Scalability has not been demonstrated at the volumes anticipated, and further assessment is recommended prior to commitment.*",
+   "audio": true
+  },
+  {
+   "texto": "*Worth a conversation before we commit.*",
+   "audio": true
+  },
+  {
+   "texto": "*Further assessment is recommended prior to commitment.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Formal English is not harder English; it is a different set.",
+  "Over-formalising email reads as cold or sarcastic in most English-speaking workplaces.",
+  "Nominalisation raises formality and lowers readability. Use it deliberately, not by default."
+ ],
+ "errores": [
+  "Equating formality with difficulty.",
+  "Register mixing within a paragraph — the commonest real error.",
+  "Latinate vocabulary in a message meant to be warm."
+ ],
+ "vocabulario": [
+  {
+   "item": "to roll something out",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "desplegar"
+   },
+   "nota": "deploy gradually"
+  },
+  {
+   "item": "guardrails",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "límites de seguridad"
+   },
+   "nota": "very frequent in AI debate"
+  },
+  {
+   "item": "technical debt",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "deuda técnica"
+   },
+   "nota": "now used outside IT"
+  },
+  {
+   "item": "to opt out / opt in",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "excluirse / adherirse"
+   },
+   "nota": "central in privacy talk"
+  },
+  {
+   "item": "a workaround",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "solución provisional"
+   },
+   "nota": "dodges rather than solves"
+  },
+  {
+   "item": "vendor lock-in",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dependencia de proveedor"
+   }
+  },
+  {
+   "item": "to scale (intransitive)",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "escalar"
+   },
+   "bajoNivelJustificado": true,
+   "nota": "*it doesn't scale*"
+  },
+  {
+   "item": "a black box",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "caja negra"
+   }
+  },
+  {
+   "item": "to future-proof",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "preparar para el futuro"
+   }
+  },
+  {
+   "item": "an edge case",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "caso límite"
+   }
+  },
+  {
+   "item": "to deprecate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "marcar como obsoleto"
+   },
+   "nota": "mark obsolete, don't remove"
+  },
+  {
+   "item": "unintended consequences",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "consecuencias no buscadas"
+   }
+  },
+  {
+   "item": "a single point of failure",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "punto único de fallo"
+   }
+  },
+  {
+   "item": "to be over-engineered",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sobredimensionado"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "we both know it",
+   "funcion": "low",
+   "traducciones": {
+    "es": "los dos lo sabemos"
+   }
+  },
+  {
+   "expresion": "worth a conversation",
+   "funcion": "mid",
+   "traducciones": {
+    "es": "vale una charla"
+   }
+  },
+  {
+   "expresion": "I've got concerns about",
+   "funcion": "mid",
+   "traducciones": {
+    "es": "me preocupa"
+   }
+  },
+  {
+   "expresion": "further assessment is recommended",
+   "funcion": "high",
+   "traducciones": {
+    "es": "se recomienda un análisis adicional"
+   }
+  },
+  {
+   "expresion": "prior to",
+   "funcion": "high (→ *before*, low)",
+   "traducciones": {
+    "es": "antes de"
+   }
+  },
+  {
+   "expresion": "ascertain",
+   "funcion": "high (→ *find out*, low)",
+   "traducciones": {
+    "es": "averiguar"
+   }
+  },
+  {
+   "expresion": "it was found that",
+   "funcion": "high (→ *we found*, mid)",
+   "traducciones": {
+    "es": "se constató que"
+   }
+  },
+  {
+   "expresion": "has not been demonstrated",
+   "funcion": "high",
+   "traducciones": {
+    "es": "no se ha demostrado"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Take one technical opinion about AI and write it three times: as a message to a close colleague, as an email to a senior manager you do not know well, and as a paragraph in a formal report. Same content, no register mixing, all four core vocabulary items across the three.",
+  "requisitos": [
+   "Take one technical opinion about AI and write it three times: as a message to a close colleague",
+   "as an email to a senior manager you do not know well",
+   "as a paragraph in a formal report",
+   "Same content",
+   "no register mixing",
+   "all four core vocabulary items across the three."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Take a paragraph you wrote at work and rewrite it two registers up."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Take a formal paragraph and rewrite it as a message to a friend. Notice what you delete."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds explaining the same technical point twice: to an engineer, then to someone with no background."
+  }
+ ],
+ "autochequeo": [
+  "Is each version internally consistent across all six axes?",
+  "Any contraction in the formal version? Any Latinate chain in the informal one?",
+  "Is the content genuinely identical, or did I change the message?",
+  "Would each version land with its intended reader?",
+  "All four core items across the three?"
+ ],
+ "promptCorreccion": "Focus only on register. (1) Rate each of my three versions and say whether it is consistent throughout. (2) Flag every mixed-register sentence. (3) Say which versions would actually land with their reader and which would not. (4) Show me the single word in each version that most gives away its register. Do not rewrite the text.",
+ "cuadroReferencia": {
+  "titulo": "The six axes",
+  "columnas": [
+   "Axis",
+   "Informal → Formal"
+  ],
+  "filas": [
+   [
+    "Lexis",
+    "Germanic (*get*, *put*, *let*) → Latinate (*obtain*, *place*, *permit*)"
+   ],
+   [
+    "Structure",
+    "Verbal (*we tested it*) → Nominal (*testing was carried out*)"
+   ],
+   [
+    "Person",
+    "*I / we* → impersonal (*it was found that*)"
+   ],
+   [
+    "Hedging",
+    "sparse → dense"
+   ],
+   [
+    "Contractions",
+    "*don't*, *it's* → *do not*, *it is*"
+   ],
+   [
+    "Phrasal verbs",
+    "*find out* → *ascertain*"
+   ]
+  ]
+ },
+ "contraste": {
+  "es": "Spanish marks formality heavily through address (*tú/usted*) and verb morphology, which English lacks entirely. English carries the whole load lexically and structurally — so a Spanish speaker who gets the politeness right can still get the register badly wrong."
+ }
+}

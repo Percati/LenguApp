@@ -6,7 +6,7 @@ El brief completo está en `proyecto/PROMPT-CLAUDE-CODE.md`.
 ## Reglas duras
 
 1. **Nunca agregar el permiso `INTERNET` al manifiesto.** Es la prueba verificable de que la app no puede rastrear nada. Si algo parece necesitar red, no se hace.
-2. Los únicos datos que se leen del dispositivo son **la fecha** y, **si el usuario lo elige explícitamente**, el idioma del sistema. Nada sale del dispositivo. (La formulación original decía solo "la fecha"; se enmendó al agregar la opción "Idioma del sistema" — ver `docs/historial/AJUSTES-FASE-6.md`, bloque E. Una regla dura que se incumple en silencio deja de ser una regla.)
+2. Los únicos datos que se leen del dispositivo son **la fecha** y, **si el usuario lo elige explícitamente**, el idioma del sistema. Nada sale del dispositivo. (La formulación original decía solo "la fecha"; se enmendó al agregar la opción "Idioma del sistema" — ver `AJUSTES-FASE-6.md`, bloque E. Una regla dura que se incumple en silencio deja de ser una regla.)
 3. Sin Google Play Services, Firebase, analítica, informes de fallos ni SDK de terceros.
 4. **Sin persistencia de progreso.** Modo revista: manda la fecha. No implementarla aunque parezca una mejora obvia.
 5. Semanas **ISO 8601** con la API nativa (`IsoFields.WEEK_OF_WEEK_BASED_YEAR`). Nunca a mano.
@@ -21,28 +21,9 @@ El brief completo está en `proyecto/PROMPT-CLAUDE-CODE.md`.
 
 ## Estado del contenido
 
-El pipeline de contenido cambió: ya NO se escribe una ficha por semana en Markdown
-y se compila directo. Ahora hay tres capas independientes que se combinan:
+**2026 está completo**: 34 fichas compiladas y validadas en `proyecto/build/` — semanas 37 a 53 en inglés C1 y alemán B2, con sus 4 semanas de repaso y 2 Survival.
 
-1. `contenido/nucleos/{SKILL}-{NIVEL}.json` — el contenido pedagógico fijo del
-   skill (gramática, ejemplos, contraste, errores). No cambia entre apariciones.
-2. `contenido/packs/{idioma}-{nivel}-{anio}-{topicId}-{n}.json` — el vocabulario
-   de una aparición concreta de un tema.
-3. `contenido/ocurrencias/{idioma}-{nivel}-{anio}.json` — qué skill+topic+pack
-   corresponde a cada semana del año, más la misión y micro-tareas de esa semana.
-
-En los packs, `prioridad` es `"nucleo"` o `"ampliacion"` — **nunca `"variante"`**,
-que es otro campo del ítem (regionalismo, p.ej. `"CH"`). Validar siempre con
-`python3 proyecto/tools/validar_packs.py --anio AAAA` antes de commitear packs.
-
-`tools/componer.py` combina las tres capas y escribe la ficha final en `build/`,
-validada contra `schema/ficha.schema.json`. **Nunca editar `build/` a mano**: se
-regenera siempre desde la fuente.
-
-Ver `FALTANTES.md` para el estado real y actualizado de qué combinación de
-idioma/nivel/año tiene cada una de las tres capas completa. Ese archivo se
-actualiza seguido — no asumas que una fecha vieja en otro documento sigue
-vigente.
+2027 no existe todavía. Y ningún otro nivel ni idioma tiene contenido. **"Esta semana / este nivel no tiene contenido" sigue siendo el caso normal para casi toda la matriz**, así que hay que manejarlo con elegancia desde la fase 1.
 
 ## Portabilidad
 

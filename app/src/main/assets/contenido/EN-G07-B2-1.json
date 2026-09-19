@@ -1,0 +1,278 @@
+{
+ "id": "EN-G07-B2-1",
+ "skillId": "EN-G07",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T03",
+ "titulo": "Third Conditional",
+ "subtitulo": "Talking about what didn't happen",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "The third conditional talks about a past that did not happen: *If we had backed it up, we wouldn't have lost it.* Both halves are unreal. The form looks heavy — *had* plus participle on one side, *would have* plus participle on the other — but it is fixed, and once the shape is automatic the meaning is simple. It is the natural language of regret and of blame, which makes it useful well beyond grammar practice.",
+ "ejemplos": [
+  {
+   "texto": "*If they had tested it properly, the bug wouldn't have reached users.*",
+   "audio": true
+  },
+  {
+   "texto": "*We might have noticed earlier if the alerts had been set up.*",
+   "audio": true
+  },
+  {
+   "texto": "*Had we known about the update, we would have waited.*",
+   "audio": true
+  },
+  {
+   "texto": "*If I'd backed it up, I wouldn't have lost everything.*",
+   "audio": true
+  },
+  {
+   "texto": "*In hindsight, we should have checked the settings.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Never *would have* in the *if* clause. *If I would have known* is wrong, though it is common in speech in some varieties.",
+  "Contractions matter for listening: *If I'd known, I'd have said.* Both *'d* are different words — *had* and *would*.",
+  "*Should have* is the close relative: *We should have tested it* is the same regret without the conditional."
+ ],
+ "errores": [
+  "*If I would have known…*",
+  "*If I had known, I would known* — dropping the *have*.",
+  "Mixing the second and third: *If I had studied, I would be a doctor* is actually correct as a mixed conditional, but usually it is written by accident rather than on purpose.",
+  "Wrong participles: *would have went*, *had wrote*."
+ ],
+ "vocabulario": [
+  {
+   "item": "to back something up",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "hacer una copia de seguridad"
+   }
+  },
+  {
+   "item": "a bug",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "un fallo"
+   },
+   "nota": "a fault, not an insect, in this context"
+  },
+  {
+   "item": "to update / an update",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "actualizar / una actualización"
+   }
+  },
+  {
+   "item": "to log in / log out",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "iniciar / cerrar sesión"
+   }
+  },
+  {
+   "item": "a data breach",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una filtración de datos"
+   }
+  },
+  {
+   "item": "two-factor authentication",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "verificación en dos pasos"
+   }
+  },
+  {
+   "item": "to download / upload",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "descargar / subir"
+   }
+  },
+  {
+   "item": "cloud storage",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "almacenamiento en la nube"
+   }
+  },
+  {
+   "item": "default settings",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ajustes por defecto"
+   },
+   "nota": "how it comes out of the box"
+  },
+  {
+   "item": "user-friendly",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "fácil de usar"
+   }
+  },
+  {
+   "item": "to freeze",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "quedarse colgado"
+   },
+   "bajoNivelJustificado": true,
+   "nota": "of a screen; the sense is B2, the word is A2"
+  },
+  {
+   "item": "data protection",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "protección de datos"
+   }
+  },
+  {
+   "item": "artificial intelligence",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "inteligencia artificial"
+   }
+  },
+  {
+   "item": "to keep track of",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "llevar la cuenta de"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "If we had…, we would have…",
+   "funcion": "full third conditional",
+   "traducciones": {
+    "es": "si hubiéramos…, habríamos…"
+   }
+  },
+  {
+   "expresion": "…, it wouldn't have happened.",
+   "funcion": "consequence avoided",
+   "traducciones": {
+    "es": "no habría pasado"
+   }
+  },
+  {
+   "expresion": "We could have…",
+   "funcion": "missed possibility",
+   "traducciones": {
+    "es": "podríamos haber…"
+   }
+  },
+  {
+   "expresion": "It might have been…",
+   "funcion": "uncertain past",
+   "traducciones": {
+    "es": "podría haber sido…"
+   }
+  },
+  {
+   "expresion": "We should have…",
+   "funcion": "regret without a condition",
+   "traducciones": {
+    "es": "deberíamos haber…"
+   }
+  },
+  {
+   "expresion": "Had we known,…",
+   "funcion": "formal inversion",
+   "traducciones": {
+    "es": "de haberlo sabido…"
+   }
+  },
+  {
+   "expresion": "Otherwise,…",
+   "funcion": "implied condition",
+   "traducciones": {
+    "es": "si no…"
+   }
+  },
+  {
+   "expresion": "In hindsight,…",
+   "funcion": "frames the regret",
+   "traducciones": {
+    "es": "en retrospectiva…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Describe something that went wrong with a device, an account or a piece of software, and what would have happened differently.",
+  "requisitos": [
+   "at least five third conditionals; at least one with *could have* or *might have*; at least one inversion with *had*; and zero *would have* inside an *if* clause",
+   "All four core vocabulary items."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write five things that went wrong this year. Turn each into a third conditional."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Take three of them and rewrite with *could have* or *might have*. Notice the change in certainty."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: *What would you have done differently?*"
+  }
+ ],
+ "autochequeo": [
+  "Is every *if* clause a past perfect, with no *would*?",
+  "Does every main clause have *would/could/might* + *have* + participle?",
+  "Are the participles right?",
+  "Did I write one inversion with *had*?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on the third conditional. (1) Check the form of both halves in each one. (2) Flag every *would have* in an *if* clause. (3) Check the participles. (4) Say where *could have* or *might have* would have been more accurate than *would have*. Do not correct anything else.",
+ "cuadroReferencia": {
+  "titulo": "The three conditionals side by side",
+  "columnas": [
+   "Type",
+   "*If* clause",
+   "Main clause",
+   "Meaning"
+  ],
+  "filas": [
+   [
+    "First",
+    "present simple",
+    "*will* + verb",
+    "real future possibility"
+   ],
+   [
+    "Second",
+    "past simple",
+    "*would* + verb",
+    "unreal present or future"
+   ],
+   [
+    "**Third**",
+    "**past perfect**",
+    "**would have + participle**",
+    "**unreal past**"
+   ]
+  ],
+  "notaPie": "If we **update** it, it **will work**. → possible If we **updated** it, it **would work**. → we aren't going to If we **had updated** it, it **would have worked**. → we didn't, and it didn't **Variations worth knowing:** - could have and might have instead of would have, for possibility rather than certainty. - Without if, by inversion: Had we known, we would have acted. Formal, and common in writing. - The if clause can go second, with no comma: We wouldn't have lost it if we had backed it up."
+ },
+ "contraste": {
+  "es": "Spanish has an exact equivalent (*si lo hubiéramos sabido, habríamos esperado*), so the meaning transfers directly. What does not transfer is the *would have* in the *if* clause: Spanish allows *si hubiera* in both halves in some regions, and that habit produces the commonest error here."
+ }
+}
