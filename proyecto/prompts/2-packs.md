@@ -24,6 +24,15 @@ en cada uno, y `traducciones` a los otros idiomas de app relevantes.
 el 15-09-2026 este prompt decía `"variante"` por error y 129 packs 2027 salieron así;
 ya están corregidos.
 
+**Cada idioma se escribe DESDE ese idioma, nunca traduciendo el pack del otro.**
+Un pack de inglés se piensa en inglés y se elige lo que diría un nativo de ese nivel;
+las `traducciones` se escriben después. Traducir ítem por ítem el pack alemán del mismo
+tema produce inglés correcto pero no idiomático (p.ej. `compulsion to consume` en vez de
+`the urge to spend`). En sept-2026 hubo que reescribir 20 packs de EN-B2 y EN-C1 por esto.
+Las palabras sueltas se verifican contra `data/vocab_en.json` / `data/vocab_de.json`
+(nivel y existencia); las expresiones de varias palabras no están en esas listas y son
+juicio de uso. Nota: la lista alemana solo cubre A1-B1, no hay fuente oficial por encima.
+
 Validación obligatoria antes de cada commit (enum, tamaño, continuidad y conteo):
 `python3 proyecto/tools/validar_packs.py --anio 2027` — tiene que terminar con
 `Problemas: 0`. Su línea `Números: X/Y packs` es la que se reporta.

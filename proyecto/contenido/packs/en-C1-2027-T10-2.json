@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T10", "n": 2, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T10",
+ "n": 2,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "ingredient", "prioridad": "nucleo", "traducciones": {"es": "el ingrediente","de": "die Zutat","fr": "l’ingrédient","it": "l’ingrediente","pt": "o ingrediente"}},
-  {"item": "food intolerance", "prioridad": "nucleo", "traducciones": {"es": "la intolerancia alimentaria","de": "die Lebensmittelunverträglichkeit","fr": "l’intolérance alimentaire","it": "l’intolleranza alimentare","pt": "a intolerância alimentar"}},
-  {"item": "local and seasonal", "prioridad": "nucleo", "traducciones": {"es": "local y de temporada","de": "regional und saisonal","fr": "local et de saison","it": "locale e stagionale","pt": "local e sazonal"}},
-  {"item": "to season", "prioridad": "nucleo", "traducciones": {"es": "condimentar","de": "würzen","fr": "assaisonner","it": "condire","pt": "temperar"}},
-  {"item": "culinary art", "prioridad": "ampliacion", "traducciones": {"es": "el arte culinario","de": "die Kochkunst","fr": "l’art culinaire","it": "l’arte culinaria","pt": "a arte culinária"}},
-  {"item": "to follow a recipe", "prioridad": "ampliacion", "traducciones": {"es": "seguir una receta","de": "das Rezept nachkochen","fr": "suivre une recette","it": "seguire una ricetta","pt": "seguir uma receita"}},
-  {"item": "way of preparation", "prioridad": "ampliacion", "traducciones": {"es": "el modo de preparación","de": "die Zubereitungsart","fr": "le mode de préparation","it": "il modo di preparazione","pt": "o modo de preparação"}},
-  {"item": "taste", "prioridad": "ampliacion", "traducciones": {"es": "el sabor","de": "der Geschmack","fr": "le goût","it": "il sapore","pt": "o sabor"}},
-  {"item": "culinary intuition", "prioridad": "ampliacion", "traducciones": {"es": "la intuición al cocinar","de": "die Kochintuition","fr": "l’intuition culinaire","it": "l’intuizione culinaria","pt": "a intuição na cozinha"}},
-  {"item": "organically grown", "prioridad": "ampliacion", "traducciones": {"es": "cultivado orgánicamente","de": "biologisch angebaut","fr": "cultivé biologiquement","it": "coltivato biologicamente","pt": "cultivado organicamente"}},
-  {"item": "nutritional value", "prioridad": "ampliacion", "traducciones": {"es": "el valor nutricional","de": "der Nährwert","fr": "la valeur nutritionnelle","it": "il valore nutrizionale","pt": "o valor nutricional"}},
-  {"item": "cooking habit", "prioridad": "ampliacion", "traducciones": {"es": "el hábito culinario","de": "die Kochgewohnheit","fr": "l’habitude culinaire","it": "l’abitudine culinaria","pt": "o hábito culinário"}}
+  {
+   "item": "a balanced diet",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "una dieta equilibrada",
+    "de": "eine ausgewogene Ernährung",
+    "fr": "une alimentation équilibrée",
+    "it": "una dieta equilibrata",
+    "pt": "uma alimentação equilibrada"
+   }
+  },
+  {
+   "item": "food intolerance",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la intolerancia alimentaria",
+    "de": "die Lebensmittelunverträglichkeit",
+    "fr": "l’intolérance alimentaire",
+    "it": "l’intolleranza alimentare",
+    "pt": "a intolerância alimentar"
+   }
+  },
+  {
+   "item": "ingredient",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el ingrediente",
+    "de": "die Zutat",
+    "fr": "l’ingrédient",
+    "it": "l’ingrediente",
+    "pt": "o ingrediente"
+   }
+  },
+  {
+   "item": "local and seasonal",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "local y de temporada",
+    "de": "regional und saisonal",
+    "fr": "local et de saison",
+    "it": "locale e stagionale",
+    "pt": "local e sazonal"
+   }
+  },
+  {
+   "item": "to be picky about labels",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mirar mucho las etiquetas",
+    "de": "genau auf Etiketten achten",
+    "fr": "être pointilleux sur les étiquettes",
+    "it": "essere attento alle etichette",
+    "pt": "olhar muito os rótulos"
+   }
+  },
+  {
+   "item": "to cut down on sugar",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "reducir el azúcar",
+    "de": "Zucker reduzieren",
+    "fr": "réduire le sucre",
+    "it": "ridurre lo zucchero",
+    "pt": "reduzir o açúcar"
+   }
+  },
+  {
+   "item": "to season",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "condimentar",
+    "de": "würzen",
+    "fr": "assaisonner",
+    "it": "condire",
+    "pt": "temperar"
+   }
+  },
+  {
+   "item": "a portion size",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el tamaño de la porción",
+    "de": "die Portionsgröße",
+    "fr": "la taille des portions",
+    "it": "la dimensione della porzione",
+    "pt": "o tamanho da porção"
+   }
+  },
+  {
+   "item": "culinary art",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el arte culinario",
+    "de": "die Kochkunst",
+    "fr": "l’art culinaire",
+    "it": "l’arte culinaria",
+    "pt": "a arte culinária"
+   }
+  },
+  {
+   "item": "home-cooked",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "casero",
+    "de": "selbst gekocht",
+    "fr": "fait maison",
+    "it": "fatto in casa",
+    "pt": "caseiro"
+   }
+  },
+  {
+   "item": "nutritional value",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el valor nutricional",
+    "de": "der Nährwert",
+    "fr": "la valeur nutritionnelle",
+    "it": "il valore nutrizionale",
+    "pt": "o valor nutricional"
+   }
+  },
+  {
+   "item": "processed food",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la comida procesada",
+    "de": "verarbeitete Lebensmittel",
+    "fr": "les aliments transformés",
+    "it": "il cibo processato",
+    "pt": "a comida processada"
+   }
+  },
+  {
+   "item": "to develop a taste for something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tomarle el gusto a algo",
+    "de": "Geschmack an etwas finden",
+    "fr": "prendre goût à qc",
+    "it": "prendere gusto a qc",
+    "pt": "ganhar gosto por algo"
+   }
+  },
+  {
+   "item": "to go easy on something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "moderarse con algo",
+    "de": "sich mit etwas zurückhalten",
+    "fr": "y aller doucement avec qc",
+    "it": "andarci piano con qc",
+    "pt": "ir com calma em algo"
+   }
+  }
  ]
 }

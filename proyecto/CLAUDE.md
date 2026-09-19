@@ -32,7 +32,8 @@ y se compila directo. Ahora hay tres capas independientes que se combinan:
    corresponde a cada semana del año, más la misión y micro-tareas de esa semana.
 
 En los packs, `prioridad` es `"nucleo"` o `"ampliacion"` — **nunca `"variante"`**,
-que es otro campo del ítem (regionalismo, p.ej. `"CH"`). Validar siempre con
+que es otro campo del ítem (regionalismo, p.ej. `"CH"`). Los packs de cada idioma se redactan desde ese idioma, nunca traduciendo el pack del otro
+idioma del mismo tema (ver `prompts/2-packs.md`). Validar siempre con
 `python3 proyecto/tools/validar_packs.py --anio AAAA` antes de commitear packs.
 
 `tools/componer.py` combina las tres capas y escribe la ficha final en `build/`,

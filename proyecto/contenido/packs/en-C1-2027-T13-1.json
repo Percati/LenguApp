@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T13", "n": 1, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T13",
+ "n": 1,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "to fill in the form", "prioridad": "nucleo", "traducciones": {"es": "rellenar el formulario","de": "das Formular ausfüllen","fr": "remplir le formulaire","it": "compilare il modulo","pt": "preencher o formulário"}},
-  {"item": "the deadline", "prioridad": "nucleo", "traducciones": {"es": "el plazo","de": "die Frist","fr": "le délai","it": "la scadenza","pt": "o prazo"}},
-  {"item": "to be responsible for", "prioridad": "nucleo", "traducciones": {"es": "ser responsable de","de": "zuständig sein für","fr": "être responsable de","it": "essere responsabile di","pt": "ser responsável por"}},
-  {"item": "certificate, proof", "prioridad": "nucleo", "traducciones": {"es": "el certificado, el comprobante","de": "der Nachweis / das Zertifikat","fr": "le certificat / justificatif","it": "il certificato / la prova","pt": "o certificado / comprovativo"}},
-  {"item": "queue", "prioridad": "ampliacion", "traducciones": {"es": "la cola de espera","de": "die Warteschlange","fr": "la file d’attente","it": "la coda","pt": "a fila"}},
-  {"item": "official errand", "prioridad": "ampliacion", "traducciones": {"es": "el trámite administrativo","de": "der Behördengang","fr": "la démarche administrative","it": "la pratica amministrativa","pt": "a diligência administrativa"}},
-  {"item": "registration", "prioridad": "ampliacion", "traducciones": {"es": "el registro","de": "die Anmeldung / Registrierung","fr": "l’inscription","it": "la registrazione","pt": "o registo"}},
-  {"item": "application", "prioridad": "ampliacion", "traducciones": {"es": "la solicitud","de": "der Antrag / die Bewerbung","fr": "la demande / la candidature","it": "la domanda / la candidatura","pt": "o pedido / a candidatura"}},
-  {"item": "fee schedule", "prioridad": "ampliacion", "traducciones": {"es": "el arancel oficial","de": "die Gebührenordnung","fr": "le barème officiel des frais","it": "il tariffario ufficiale","pt": "a tabela oficial de taxas"}},
-  {"item": "customer service", "prioridad": "ampliacion", "traducciones": {"es": "la atención al cliente","de": "Kundendienst","fr": "le service client","it": "il servizio clienti","pt": "o serviço de apoio ao cliente"}},
-  {"item": "to submit the document", "prioridad": "ampliacion", "traducciones": {"es": "presentar el documento","de": "die Vorlage einreichen","fr": "soumettre le document","it": "presentare il documento","pt": "apresentar o documento"}},
-  {"item": "to have renewed", "prioridad": "ampliacion", "traducciones": {"es": "hacer renovar (algo)","de": "verlängern lassen","fr": "faire renouveler","it": "far rinnovare","pt": "fazer renovar"}}
+  {
+   "item": "customer service",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la atención al cliente",
+    "de": "Kundendienst",
+    "fr": "le service client",
+    "it": "il servizio clienti",
+    "pt": "o serviço de apoio ao cliente"
+   }
+  },
+  {
+   "item": "red tape",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la burocracia",
+    "de": "der Behördendschungel",
+    "fr": "la paperasserie",
+    "it": "la burocrazia",
+    "pt": "a burocracia"
+   }
+  },
+  {
+   "item": "to be responsible for",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "ser responsable de",
+    "de": "zuständig sein für",
+    "fr": "être responsable de",
+    "it": "essere responsabile di",
+    "pt": "ser responsável por"
+   }
+  },
+  {
+   "item": "to be sent from pillar to post",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "que te manden de un lado a otro",
+    "de": "von Pontius zu Pilatus geschickt werden",
+    "fr": "être ballotté d'un service à l'autre",
+    "it": "essere rimbalzato da un ufficio all'altro",
+    "pt": "ser mandado de um lado para o outro"
+   }
+  },
+  {
+   "item": "to fill in the form",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "rellenar el formulario",
+    "de": "das Formular ausfüllen",
+    "fr": "remplir le formulaire",
+    "it": "compilare il modulo",
+    "pt": "preencher o formulário"
+   }
+  },
+  {
+   "item": "to get put on hold",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "que te dejen en espera",
+    "de": "in der Warteschleife landen",
+    "fr": "être mis en attente",
+    "it": "essere messo in attesa",
+    "pt": "ficar em espera"
+   }
+  },
+  {
+   "item": "a follow-up call",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una llamada de seguimiento",
+    "de": "der Nachfassanruf",
+    "fr": "un appel de relance",
+    "it": "una telefonata di sollecito",
+    "pt": "um telefonema de seguimento"
+   }
+  },
+  {
+   "item": "a reference number",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el número de referencia",
+    "de": "die Vorgangsnummer",
+    "fr": "le numéro de dossier",
+    "it": "il numero di pratica",
+    "pt": "o número de referência"
+   }
+  },
+  {
+   "item": "appointment scheduling",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la concertación de cita",
+    "de": "die Terminvereinbarung",
+    "fr": "la prise de rendez-vous",
+    "it": "la fissazione dell'appuntamento",
+    "pt": "o agendamento de horário"
+   }
+  },
+  {
+   "item": "delay",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la demora",
+    "de": "die Verzögerung",
+    "fr": "le retard",
+    "it": "il ritardo",
+    "pt": "o atraso"
+   }
+  },
+  {
+   "item": "office hours",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el horario de atención",
+    "de": "die Sprechzeiten / Öffnungszeiten",
+    "fr": "les heures de permanence",
+    "it": "l’orario di ricevimento",
+    "pt": "o horário de atendimento"
+   }
+  },
+  {
+   "item": "proof of address",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el comprobante de domicilio",
+    "de": "der Wohnsitznachweis",
+    "fr": "le justificatif de domicile",
+    "it": "la prova di residenza",
+    "pt": "o comprovativo de morada"
+   }
+  },
+  {
+   "item": "to be eligible for something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tener derecho a algo",
+    "de": "für etwas infrage kommen",
+    "fr": "être éligible à qc",
+    "it": "avere diritto a qc",
+    "pt": "ter direito a algo"
+   }
+  },
+  {
+   "item": "to chase something up",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ir detrás de un trámite",
+    "de": "einer Sache nachgehen",
+    "fr": "relancer une démarche",
+    "it": "sollecitare una pratica",
+    "pt": "insistir num processo"
+   }
+  }
  ]
 }

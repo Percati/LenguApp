@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T01", "n": 1, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T01",
+ "n": 1,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "part-time position", "prioridad": "nucleo", "traducciones": {"es": "el puesto de tiempo parcial","de": "die Teilzeitstelle","fr": "le poste à temps partiel","it": "il posto part-time","pt": "o cargo de meio período"}},
-  {"item": "promotion", "prioridad": "nucleo", "traducciones": {"es": "el ascenso","de": "die Beförderung","fr": "la promotion","it": "la promozione","pt": "a promoção"}},
-  {"item": "to resign / to fire", "prioridad": "nucleo", "traducciones": {"es": "renunciar / despedir","de": "kündigen / entlassen","fr": "démissionner / licencier","it": "dimettersi / licenziare","pt": "demitir-se / demitir"}},
-  {"item": "manager, executive", "prioridad": "nucleo", "traducciones": {"es": "el/la directivo/a","de": "die Führungskraft","fr": "le/la cadre dirigeant(e)","it": "il/la dirigente","pt": "o/a dirigente"}},
-  {"item": "job interview", "prioridad": "ampliacion", "traducciones": {"es": "la entrevista de trabajo","de": "das Vorstellungsgespräch","fr": "l'entretien d'embauche","it": "il colloquio di lavoro","pt": "a entrevista de emprego"}},
-  {"item": "workload", "prioridad": "ampliacion", "traducciones": {"es": "la carga de trabajo","de": "das Arbeitspensum / die Arbeitsbelastung","fr": "la charge de travail","it": "il carico di lavoro","pt": "a carga de trabalho"}},
-  {"item": "workplace atmosphere", "prioridad": "ampliacion", "traducciones": {"es": "el ambiente laboral","de": "das Betriebsklima","fr": "l'ambiance de travail","it": "il clima aziendale","pt": "o clima de trabalho"}},
-  {"item": "career opportunity", "prioridad": "ampliacion", "traducciones": {"es": "la oportunidad de carrera","de": "die Karrierechance","fr": "l'opportunité de carrière","it": "l'opportunità di carriera","pt": "a oportunidade de carreira"}},
-  {"item": "time pressure", "prioridad": "ampliacion", "traducciones": {"es": "la presión de tiempo","de": "der Zeitdruck","fr": "la pression du temps","it": "la pressione del tempo","pt": "a pressão do tempo"}},
-  {"item": "personal responsibility", "prioridad": "ampliacion", "traducciones": {"es": "la responsabilidad propia","de": "die Eigenverantwortung","fr": "la responsabilité individuelle","it": "la responsabilità personale","pt": "a responsabilidade própria"}},
-  {"item": "directive", "prioridad": "ampliacion", "traducciones": {"es": "la instrucción, la directriz","de": "die Richtlinie / Anweisung","fr": "la directive","it": "la direttiva","pt": "a diretiva"}},
-  {"item": "to apply for", "prioridad": "ampliacion", "traducciones": {"es": "postularse a","de": "sich bewerben um","fr": "postuler pour","it": "candidarsi per","pt": "candidatar-se a"}}
+  {
+   "item": "a steep learning curve",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "una curva de aprendizaje pronunciada",
+    "de": "eine steile Lernkurve",
+    "fr": "une courbe d'apprentissage raide",
+    "it": "una curva di apprendimento ripida",
+    "pt": "uma curva de aprendizagem acentuada"
+   }
+  },
+  {
+   "item": "promotion",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el ascenso",
+    "de": "die Beförderung",
+    "fr": "la promotion",
+    "it": "la promozione",
+    "pt": "a promoção"
+   }
+  },
+  {
+   "item": "to be up to speed",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar al día",
+    "de": "auf dem Laufenden sein",
+    "fr": "être à la page",
+    "it": "essere aggiornato",
+    "pt": "estar a par"
+   }
+  },
+  {
+   "item": "to land a job",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "conseguir un trabajo",
+    "de": "einen Job ergattern",
+    "fr": "décrocher un emploi",
+    "it": "trovare un lavoro",
+    "pt": "conseguir um emprego"
+   }
+  },
+  {
+   "item": "to take on a role",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "asumir un rol",
+    "de": "eine Rolle übernehmen",
+    "fr": "endosser un rôle",
+    "it": "assumere un ruolo",
+    "pt": "assumir um papel"
+   }
+  },
+  {
+   "item": "workload",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la carga de trabajo",
+    "de": "die Arbeitsbelastung",
+    "fr": "la charge de travail",
+    "it": "il carico di lavoro",
+    "pt": "a carga de trabalho"
+   }
+  },
+  {
+   "item": "a line manager",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el jefe directo",
+    "de": "der direkte Vorgesetzte",
+    "fr": "le supérieur direct",
+    "it": "il responsabile diretto",
+    "pt": "o chefe direto"
+   }
+  },
+  {
+   "item": "a probation period",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el período de prueba",
+    "de": "die Probezeit",
+    "fr": "la période d'essai",
+    "it": "il periodo di prova",
+    "pt": "o período experimental"
+   }
+  },
+  {
+   "item": "performance review",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la evaluación de desempeño",
+    "de": "das Mitarbeitergespräch",
+    "fr": "l'entretien d'évaluation",
+    "it": "la valutazione della performance",
+    "pt": "a avaliação de desempenho"
+   }
+  },
+  {
+   "item": "to be stretched thin",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar sobreexigido",
+    "de": "überlastet sein",
+    "fr": "être sur tous les fronts",
+    "it": "essere sotto pressione",
+    "pt": "estar sobrecarregado"
+   }
+  },
+  {
+   "item": "to be thrown in at the deep end",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "que te tiren al agua",
+    "de": "ins kalte Wasser geworfen werden",
+    "fr": "être jeté dans le grand bain",
+    "it": "essere buttato nella mischia",
+    "pt": "ser atirado para o fundo"
+   }
+  },
+  {
+   "item": "to go the extra mile",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "hacer un esfuerzo extra",
+    "de": "sich besonders ins Zeug legen",
+    "fr": "faire un effort supplémentaire",
+    "it": "fare quel qualcosa in più",
+    "pt": "fazer um esforço extra"
+   }
+  },
+  {
+   "item": "to hit the ground running",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "arrancar a pleno",
+    "de": "sofort loslegen",
+    "fr": "démarrer sur les chapeaux de roues",
+    "it": "partire subito alla grande",
+    "pt": "começar a todo o vapor"
+   }
+  },
+  {
+   "item": "to shadow a colleague",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "acompañar a un colega para aprender",
+    "de": "einem Kollegen über die Schulter schauen",
+    "fr": "observer un collègue",
+    "it": "affiancare un collega",
+    "pt": "acompanhar um colega"
+   }
+  }
  ]
 }

@@ -32,3 +32,8 @@ memoria de proyecto de Claude) — son sobre el proceso de construirlo.
   y `variante` ya era otro campo (regionalismos). Salieron 129 packs inválidos que
   nadie detectó porque la validación del schema recién corre al componer. Corregido
   el 15-09-2026; desde entonces `tools/validar_packs.py` chequea el enum en origen.
+- **Escribir un pack traduciendo el del otro idioma produce contenido inútil.** 21 packs
+  de inglés (5 en B2, 16 en C1) eran calco ítem por ítem del pack alemán del mismo tema:
+  inglés gramatical pero no idiomático, justo lo contrario del objetivo de producción oral.
+  Se detecta cruzando los `item` de un pack con las `traducciones[de]` del otro: >=60 % de
+  coincidencia es señal de calco. Reescritos en sept-2026; regla documentada en el prompt.

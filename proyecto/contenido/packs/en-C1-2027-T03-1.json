@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T03", "n": 1, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T03",
+ "n": 1,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "artificial intelligence", "prioridad": "nucleo", "traducciones": {"es": "la inteligencia artificial","de": "künstliche Intelligenz","fr": "l’intelligence artificielle","it": "l’intelligenza artificiale","pt": "a inteligência artificial"}},
-  {"item": "data protection", "prioridad": "nucleo", "traducciones": {"es": "la protección de datos","de": "der Datenschutz","fr": "la protection des données","it": "la protezione dei dati","pt": "a proteção de dados"}},
-  {"item": "to upload / download", "prioridad": "nucleo", "traducciones": {"es": "subir / descargar","de": "hochladen / herunterladen","fr": "télécharger (vers le haut/bas)","it": "caricare / scaricare","pt": "fazer upload / download"}},
-  {"item": "algorithm", "prioridad": "nucleo", "traducciones": {"es": "el algoritmo","de": "der Algorithmus","fr": "l’algorithme","it": "l’algoritmo","pt": "o algoritmo"}},
-  {"item": "data breach", "prioridad": "ampliacion", "traducciones": {"es": "la filtración de datos","de": "die Datenpanne","fr": "la fuite de données","it": "la violazione dei dati","pt": "o vazamento de dados"}},
-  {"item": "two-factor authentication", "prioridad": "ampliacion", "traducciones": {"es": "la verificación en dos pasos","de": "Zwei-Faktor-Authentifizierung","fr": "l’authentification à deux facteurs","it": "l’autenticazione a due fattori","pt": "a autenticação de dois fatores"}},
-  {"item": "biased", "prioridad": "ampliacion", "traducciones": {"es": "sesgado","de": "voreingenommen","fr": "partial / biaisé","it": "prevenuto / parziale","pt": "tendencioso / enviesado"}},
-  {"item": "human-like", "prioridad": "ampliacion", "traducciones": {"es": "humanoide","de": "menschenähnlich","fr": "semblable à l’humain","it": "simile a un essere umano","pt": "semelhante ao ser humano"}},
-  {"item": "cloud storage", "prioridad": "ampliacion", "traducciones": {"es": "el almacenamiento en la nube","de": "Cloud-Speicher","fr": "le stockage dans le cloud","it": "l’archiviazione cloud","pt": "o armazenamento na nuvem"}},
-  {"item": "default setting", "prioridad": "ampliacion", "traducciones": {"es": "la configuración por defecto","de": "die Standardeinstellung","fr": "le réglage par défaut","it": "l’impostazione predefinita","pt": "a configuração predefinida"}},
-  {"item": "to call into question", "prioridad": "ampliacion", "traducciones": {"es": "poner en duda","de": "in Frage stellen","fr": "remettre en question","it": "mettere in discussione","pt": "questionar"}},
-  {"item": "retrofit", "prioridad": "ampliacion", "traducciones": {"es": "la actualización posterior","de": "die Nachrüstung","fr": "la mise à niveau / modernisation","it": "l’adeguamento / retrofit","pt": "a modernização / retrofit"}}
+  {
+   "item": "a rabbit hole",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "un pozo sin fondo de contenido",
+    "de": "ein Kaninchenbau",
+    "fr": "un engrenage sans fin",
+    "it": "un buco nero di contenuti",
+    "pt": "um poço sem fundo"
+   }
+  },
+  {
+   "item": "algorithm",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el algoritmo",
+    "de": "der Algorithmus",
+    "fr": "l'algorithme",
+    "it": "l'algoritmo",
+    "pt": "o algoritmo"
+   }
+  },
+  {
+   "item": "data protection",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la protección de datos",
+    "de": "der Datenschutz",
+    "fr": "la protection des données",
+    "it": "la protezione dei dati",
+    "pt": "a proteção de dados"
+   }
+  },
+  {
+   "item": "to be glued to a screen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar pegado a la pantalla",
+    "de": "am Bildschirm kleben",
+    "fr": "être scotché à un écran",
+    "it": "essere incollato allo schermo",
+    "pt": "estar colado ao ecrã"
+   }
+  },
+  {
+   "item": "to be hooked on an app",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar enganchado a una app",
+    "de": "an einer App hängen",
+    "fr": "être accro à une appli",
+    "it": "essere dipendente da un'app",
+    "pt": "estar viciado numa app"
+   }
+  },
+  {
+   "item": "a digital footprint",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la huella digital",
+    "de": "der digitale Fußabdruck",
+    "fr": "l'empreinte numérique",
+    "it": "l'impronta digitale",
+    "pt": "a pegada digital"
+   }
+  },
+  {
+   "item": "biased",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sesgado",
+    "de": "voreingenommen",
+    "fr": "biaisé",
+    "it": "distorto",
+    "pt": "enviesado"
+   }
+  },
+  {
+   "item": "hype",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el entusiasmo exagerado",
+    "de": "der Hype",
+    "fr": "le battage médiatique",
+    "it": "l'hype",
+    "pt": "o entusiasmo exagerado"
+   }
+  },
+  {
+   "item": "screen fatigue",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el cansancio de pantalla",
+    "de": "die Bildschirmmüdigkeit",
+    "fr": "la fatigue des écrans",
+    "it": "l'affaticamento da schermo",
+    "pt": "o cansaço dos ecrãs"
+   }
+  },
+  {
+   "item": "surveillance",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la vigilancia",
+    "de": "die Überwachung",
+    "fr": "la surveillance",
+    "it": "la sorveglianza",
+    "pt": "a vigilância"
+   }
+  },
+  {
+   "item": "to doomscroll",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "consumir malas noticias sin parar",
+    "de": "sich durch schlechte Nachrichten scrollen",
+    "fr": "faire du doomscrolling",
+    "it": "fare doomscrolling",
+    "pt": "fazer doomscrolling"
+   }
+  },
+  {
+   "item": "to fall for a scam",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "caer en una estafa",
+    "de": "auf einen Betrug hereinfallen",
+    "fr": "tomber dans une arnaque",
+    "it": "cadere in una truffa",
+    "pt": "cair num esquema"
+   }
+  },
+  {
+   "item": "to go viral",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "volverse viral",
+    "de": "viral gehen",
+    "fr": "devenir viral",
+    "it": "diventare virale",
+    "pt": "tornar-se viral"
+   }
+  },
+  {
+   "item": "to log off",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "desconectarse",
+    "de": "sich abmelden",
+    "fr": "se déconnecter",
+    "it": "disconnettersi",
+    "pt": "desligar-se"
+   }
+  }
  ]
 }

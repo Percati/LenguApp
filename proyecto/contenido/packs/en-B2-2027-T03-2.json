@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "B2", "topicId": "T03", "n": 2, "anio": 2027,
+ "idioma": "en",
+ "nivel": "B2",
+ "topicId": "T03",
+ "n": 2,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "data protection", "prioridad": "nucleo", "traducciones": {"es": "la protección de datos","de": "Datenschutz","fr": "la protection des données","it": "la protezione dei dati","pt": "a proteção de dados"}},
-  {"item": "algorithm", "prioridad": "nucleo", "traducciones": {"es": "el algoritmo","de": "der Algorithmus","fr": "l’algorithme","it": "l’algoritmo","pt": "o algoritmo"}},
-  {"item": "biased", "prioridad": "nucleo", "traducciones": {"es": "sesgado","de": "voreingenommen / einseitig","fr": "partial / biaisé","it": "fazioso / parziale","pt": "tendencioso"}},
-  {"item": "software update", "prioridad": "nucleo", "traducciones": {"es": "la actualización de software","de": "das Software-Update","fr": "la mise à jour logicielle","it": "l’aggiornamento software","pt": "a atualização de software"}},
-  {"item": "automation", "prioridad": "ampliacion", "traducciones": {"es": "la automatización","de": "die Automatisierung","fr": "l'automatisation","it": "l'automazione","pt": "a automação"}},
-  {"item": "cybercrime", "prioridad": "ampliacion", "traducciones": {"es": "la ciberdelincuencia","de": "die Cyberkriminalität","fr": "la cybercriminalité","it": "il crimine informatico","pt": "o crime cibernético"}},
-  {"item": "surveillance", "prioridad": "ampliacion", "traducciones": {"es": "la vigilancia","de": "die Überwachung","fr": "la surveillance","it": "la sorveglianza","pt": "a vigilância"}},
-  {"item": "digitalisation", "prioridad": "ampliacion", "traducciones": {"es": "la digitalización","de": "die Digitalisierung","fr": "la numérisation","it": "la digitalizzazione","pt": "a digitalização"}},
-  {"item": "processing power", "prioridad": "ampliacion", "traducciones": {"es": "la capacidad de procesamiento","de": "die Rechenleistung","fr": "la puissance de calcul","it": "la potenza di calcolo","pt": "a capacidade de processamento"}},
-  {"item": "artificial shortage", "prioridad": "ampliacion", "traducciones": {"es": "la escasez artificial","de": "die künstliche Verknappung","fr": "la pénurie artificielle","it": "la scarsità artificiale","pt": "a escassez artificial"}},
-  {"item": "data misuse", "prioridad": "ampliacion", "traducciones": {"es": "el abuso de datos","de": "der Missbrauch von Daten","fr": "l'abus de données","it": "l'abuso dei dati","pt": "o abuso de dados"}},
-  {"item": "responsible use", "prioridad": "ampliacion", "traducciones": {"es": "el uso responsable","de": "der verantwortungsvolle Umgang","fr": "l’usage responsable","it": "l’uso responsabile","pt": "o uso responsável"}}
+  {
+   "item": "algorithm",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el algoritmo",
+    "de": "der Algorithmus",
+    "fr": "l’algorithme",
+    "it": "l’algoritmo",
+    "pt": "o algoritmo"
+   }
+  },
+  {
+   "item": "artificial intelligence",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la inteligencia artificial",
+    "de": "künstliche Intelligenz",
+    "fr": "l’intelligence artificielle",
+    "it": "l’intelligenza artificiale",
+    "pt": "a inteligência artificial"
+   }
+  },
+  {
+   "item": "automation",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la automatización",
+    "de": "die Automatisierung",
+    "fr": "l'automatisation",
+    "it": "l'automazione",
+    "pt": "a automação"
+   }
+  },
+  {
+   "item": "data protection",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la protección de datos",
+    "de": "Datenschutz",
+    "fr": "la protection des données",
+    "it": "la protezione dei dati",
+    "pt": "a proteção de dados"
+   }
+  },
+  {
+   "item": "screen time",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el tiempo de pantalla",
+    "de": "die Bildschirmzeit",
+    "fr": "le temps d'écran",
+    "it": "il tempo davanti allo schermo",
+    "pt": "o tempo de ecrã"
+   }
+  },
+  {
+   "item": "to train a model",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "entrenar un modelo",
+    "de": "ein Modell trainieren",
+    "fr": "entraîner un modèle",
+    "it": "addestrare un modello",
+    "pt": "treinar um modelo"
+   }
+  },
+  {
+   "item": "a smart speaker",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un altavoz inteligente",
+    "de": "der smarte Lautsprecher",
+    "fr": "une enceinte connectée",
+    "it": "uno speaker intelligente",
+    "pt": "uma coluna inteligente"
+   }
+  },
+  {
+   "item": "battery life",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la duración de la batería",
+    "de": "die Akkulaufzeit",
+    "fr": "l'autonomie de la batterie",
+    "it": "la durata della batteria",
+    "pt": "a duração da bateria"
+   }
+  },
+  {
+   "item": "biased",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sesgado",
+    "de": "voreingenommen / einseitig",
+    "fr": "partial / biaisé",
+    "it": "fazioso / parziale",
+    "pt": "tendencioso"
+   }
+  },
+  {
+   "item": "data leak",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la filtración de datos",
+    "de": "das Datenleck",
+    "fr": "la fuite de données",
+    "it": "la fuga di dati",
+    "pt": "a fuga de dados"
+   }
+  },
+  {
+   "item": "privacy settings",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la configuración de privacidad",
+    "de": "die Privatsphäre-Einstellungen",
+    "fr": "les paramètres de confidentialité",
+    "it": "le impostazioni sulla privacy",
+    "pt": "as definições de privacidade"
+   }
+  },
+  {
+   "item": "software update",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la actualización de software",
+    "de": "das Software-Update",
+    "fr": "la mise à jour logicielle",
+    "it": "l’aggiornamento software",
+    "pt": "a atualização de software"
+   }
+  },
+  {
+   "item": "to stream",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ver en streaming",
+    "de": "streamen",
+    "fr": "regarder en streaming",
+    "it": "guardare in streaming",
+    "pt": "ver em streaming"
+   }
+  },
+  {
+   "item": "to swipe",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "deslizar",
+    "de": "wischen",
+    "fr": "balayer",
+    "it": "scorrere",
+    "pt": "deslizar"
+   }
+  }
  ]
 }

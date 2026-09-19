@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T04", "n": 1, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T04",
+ "n": 1,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "to stay fit", "prioridad": "nucleo", "traducciones": {"es": "mantenerse en forma","de": "fit bleiben","fr": "rester en forme","it": "mantenersi in forma","pt": "manter-se em forma"}},
-  {"item": "diet, nutrition", "prioridad": "nucleo", "traducciones": {"es": "la alimentación","de": "die Ernährung","fr": "l'alimentation","it": "l'alimentazione","pt": "a alimentação"}},
-  {"item": "to relieve stress", "prioridad": "nucleo", "traducciones": {"es": "aliviar el estrés","de": "Stress abbauen","fr": "soulager le stress","it": "alleviare lo stress","pt": "aliviar o stress"}},
-  {"item": "wellbeing", "prioridad": "nucleo", "traducciones": {"es": "el bienestar","de": "das Wohlbefinden","fr": "le bien-être","it": "il benessere","pt": "o bem-estar"}},
-  {"item": "sleep deprivation", "prioridad": "ampliacion", "traducciones": {"es": "la falta de sueño","de": "der Schlafmangel","fr": "le manque de sommeil","it": "la mancanza di sonno","pt": "a privação de sono"}},
-  {"item": "mindfulness", "prioridad": "ampliacion", "traducciones": {"es": "la atención plena","de": "die Achtsamkeit","fr": "la pleine conscience","it": "la consapevolezza","pt": "a atenção plena"}},
-  {"item": "to work off energy", "prioridad": "ampliacion", "traducciones": {"es": "descargar energía","de": "sich auspowern","fr": "se défouler","it": "sfogarsi","pt": "descarregar energia"}},
-  {"item": "preventive check-up", "prioridad": "ampliacion", "traducciones": {"es": "el chequeo preventivo","de": "die Vorsorgeuntersuchung","fr": "le contrôle préventif","it": "il controllo preventivo","pt": "o check-up preventivo"}},
-  {"item": "immune system", "prioridad": "ampliacion", "traducciones": {"es": "el sistema inmunológico","de": "das Immunsystem","fr": "le système immunitaire","it": "il sistema immunitario","pt": "o sistema imunitário"}},
-  {"item": "work-life balance", "prioridad": "ampliacion", "traducciones": {"es": "el equilibrio vida-trabajo","de": "die Work-Life-Balance","fr": "l'équilibre vie-travail","it": "l'equilibrio vita-lavoro","pt": "o equilíbrio vida-trabalho"}},
-  {"item": "burnout", "prioridad": "ampliacion", "traducciones": {"es": "el agotamiento profesional","de": "Burn-out / Erschöpfung","fr": "l’épuisement professionnel","it": "il burnout","pt": "o burnout / esgotamento"}},
-  {"item": "to recover", "prioridad": "ampliacion", "traducciones": {"es": "recuperarse","de": "sich erholen","fr": "récupérer","it": "riprendersi","pt": "recuperar-se"}}
+  {
+   "item": "to be run down",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar bajo de defensas",
+    "de": "abgeschlagen sein",
+    "fr": "être à plat",
+    "it": "essere giù di corda",
+    "pt": "estar em baixo"
+   }
+  },
+  {
+   "item": "to listen to your body",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "escuchar al cuerpo",
+    "de": "auf seinen Körper hören",
+    "fr": "écouter son corps",
+    "it": "ascoltare il proprio corpo",
+    "pt": "ouvir o corpo"
+   }
+  },
+  {
+   "item": "to recover",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "recuperarse",
+    "de": "sich erholen",
+    "fr": "récupérer",
+    "it": "riprendersi",
+    "pt": "recuperar-se"
+   }
+  },
+  {
+   "item": "to run yourself into the ground",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "agotarse por completo",
+    "de": "sich völlig verausgaben",
+    "fr": "s'épuiser complètement",
+    "it": "sfiancarsi",
+    "pt": "esgotar-se por completo"
+   }
+  },
+  {
+   "item": "to stay fit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mantenerse en forma",
+    "de": "fit bleiben",
+    "fr": "rester en forme",
+    "it": "mantenersi in forma",
+    "pt": "manter-se em forma"
+   }
+  },
+  {
+   "item": "wellbeing",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el bienestar",
+    "de": "das Wohlbefinden",
+    "fr": "le bien-être",
+    "it": "il benessere",
+    "pt": "o bem-estar"
+   }
+  },
+  {
+   "item": "a check-up",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un chequeo",
+    "de": "die Vorsorgeuntersuchung",
+    "fr": "un bilan de santé",
+    "it": "un controllo",
+    "pt": "um check-up"
+   }
+  },
+  {
+   "item": "side effect",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el efecto secundario",
+    "de": "die Nebenwirkung",
+    "fr": "l’effet secondaire",
+    "it": "l’effetto collaterale",
+    "pt": "o efeito secundário"
+   }
+  },
+  {
+   "item": "sleep hygiene",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la higiene del sueño",
+    "de": "die Schlafhygiene",
+    "fr": "l'hygiène du sommeil",
+    "it": "l'igiene del sonno",
+    "pt": "a higiene do sono"
+   }
+  },
+  {
+   "item": "to pace yourself",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dosificar las fuerzas",
+    "de": "sich seine Kräfte einteilen",
+    "fr": "gérer son rythme",
+    "it": "dosare le forze",
+    "pt": "gerir o ritmo"
+   }
+  },
+  {
+   "item": "to pay attention to",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "prestar atención a",
+    "de": "auf etwas achten",
+    "fr": "faire attention à",
+    "it": "prestare attenzione a",
+    "pt": "prestar atenção a"
+   }
+  },
+  {
+   "item": "to put off seeing a doctor",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "postergar ir al médico",
+    "de": "den Arztbesuch aufschieben",
+    "fr": "repousser la visite chez le médecin",
+    "it": "rimandare la visita medica",
+    "pt": "adiar a ida ao médico"
+   }
+  },
+  {
+   "item": "to shake off a cold",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sacarse un resfrío de encima",
+    "de": "eine Erkältung loswerden",
+    "fr": "se débarrasser d'un rhume",
+    "it": "liberarsi di un raffreddore",
+    "pt": "livrar-se de uma constipação"
+   }
+  },
+  {
+   "item": "to take it easy",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tomárselo con calma",
+    "de": "es ruhig angehen lassen",
+    "fr": "y aller doucement",
+    "it": "prendersela con calma",
+    "pt": "levar as coisas com calma"
+   }
+  }
  ]
 }

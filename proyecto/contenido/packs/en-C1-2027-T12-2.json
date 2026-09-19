@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T12", "n": 2, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T12",
+ "n": 2,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "to pursue a hobby", "prioridad": "nucleo", "traducciones": {"es": "dedicarse a una afición","de": "einem Hobby nachgehen","fr": "pratiquer un loisir","it": "dedicarsi a un hobby","pt": "dedicar-se a um hobby"}},
-  {"item": "club, association", "prioridad": "nucleo", "traducciones": {"es": "el club, la asociación","de": "der Verein / Verband","fr": "le club / l’association","it": "il club / l’associazione","pt": "o clube / a associação"}},
-  {"item": "leisure, spare time", "prioridad": "nucleo", "traducciones": {"es": "el tiempo de ocio","de": "die Muße","fr": "les loisirs","it": "il tempo libero","pt": "o lazer"}},
-  {"item": "volunteer work", "prioridad": "nucleo", "traducciones": {"es": "el voluntariado","de": "das Ehrenamt","fr": "le bénévolat","it": "il volontariato","pt": "o trabalho voluntário"}},
-  {"item": "the end of the working day", "prioridad": "ampliacion", "traducciones": {"es": "el fin de la jornada laboral","de": "der Feierabend","fr": "la fin de journée de travail","it": "la fine della giornata lavorativa","pt": "o fim do expediente"}},
-  {"item": "craft project", "prioridad": "ampliacion", "traducciones": {"es": "el proyecto de manualidades","de": "das Bastelprojekt","fr": "le projet de bricolage / loisirs créatifs","it": "il progetto di bricolage / lavoretto creativo","pt": "o projeto de trabalhos manuais"}},
-  {"item": "leisure planning", "prioridad": "ampliacion", "traducciones": {"es": "la organización del tiempo libre","de": "die Freizeitgestaltung","fr": "l'organisation des loisirs","it": "l'organizzazione del tempo libero","pt": "a organização do lazer"}},
-  {"item": "competition", "prioridad": "ampliacion", "traducciones": {"es": "la competencia","de": "der Wettbewerb / die Konkurrenz","fr": "la concurrence / compétition","it": "la concorrenza / competizione","pt": "a concorrência / competição"}},
-  {"item": "to get involved in", "prioridad": "ampliacion", "traducciones": {"es": "comprometerse con","de": "sich engagieren für","fr": "s'investir pour","it": "impegnarsi per","pt": "engajar-se em"}},
-  {"item": "amateur league", "prioridad": "ampliacion", "traducciones": {"es": "la liga amateur","de": "die Amateurliga","fr": "la ligue amateur","it": "la lega amatoriale","pt": "a liga amadora"}},
-  {"item": "passion for collecting", "prioridad": "ampliacion", "traducciones": {"es": "la pasión por coleccionar","de": "die Sammelleidenschaft","fr": "la passion de collectionner","it": "la passione del collezionismo","pt": "a paixão por colecionar"}},
-  {"item": "to express one's creativity", "prioridad": "ampliacion", "traducciones": {"es": "dar rienda suelta a la creatividad","de": "die Kreativität ausleben","fr": "exprimer sa créativité","it": "esprimere la creatività","pt": "expressar a criatividade"}}
+  {
+   "item": "spare time",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el tiempo libre",
+    "de": "die Freizeit",
+    "fr": "le temps libre",
+    "it": "il tempo libero",
+    "pt": "o tempo livre"
+   }
+  },
+  {
+   "item": "to be a regular somewhere",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "ser habitual de un lugar",
+    "de": "Stammgast sein",
+    "fr": "être un habitué",
+    "it": "essere un habitué",
+    "pt": "ser frequentador habitual"
+   }
+  },
+  {
+   "item": "to get the hang of something",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "agarrarle la mano a algo",
+    "de": "den Dreh rauskriegen",
+    "fr": "prendre le coup de main",
+    "it": "prenderci la mano",
+    "pt": "apanhar o jeito"
+   }
+  },
+  {
+   "item": "to join a club",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "apuntarse a un club",
+    "de": "einem Verein beitreten",
+    "fr": "rejoindre un club",
+    "it": "iscriversi a un club",
+    "pt": "inscrever-se num clube"
+   }
+  },
+  {
+   "item": "to make time for something",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "hacerse tiempo para algo",
+    "de": "sich Zeit für etwas nehmen",
+    "fr": "se dégager du temps pour qc",
+    "it": "ritagliarsi tempo per qc",
+    "pt": "arranjar tempo para algo"
+   }
+  },
+  {
+   "item": "to take up a hobby",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "empezar un pasatiempo",
+    "de": "ein Hobby anfangen",
+    "fr": "se mettre à un loisir",
+    "it": "iniziare un hobby",
+    "pt": "começar um passatempo"
+   }
+  },
+  {
+   "item": "to unwind",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "desconectar",
+    "de": "abschalten",
+    "fr": "décompresser",
+    "it": "staccare la spina",
+    "pt": "descontrair"
+   }
+  },
+  {
+   "item": "a like-minded group",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un grupo afín",
+    "de": "eine Gruppe Gleichgesinnter",
+    "fr": "un groupe de gens qui partagent vos goûts",
+    "it": "un gruppo di affini",
+    "pt": "um grupo com os mesmos gostos"
+   }
+  },
+  {
+   "item": "a pastime",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un pasatiempo",
+    "de": "der Zeitvertreib",
+    "fr": "un passe-temps",
+    "it": "un passatempo",
+    "pt": "um passatempo"
+   }
+  },
+  {
+   "item": "a shared interest",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un interés en común",
+    "de": "das gemeinsame Interesse",
+    "fr": "un intérêt commun",
+    "it": "un interesse comune",
+    "pt": "um interesse comum"
+   }
+  },
+  {
+   "item": "to be rusty",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar oxidado",
+    "de": "eingerostet sein",
+    "fr": "être rouillé",
+    "it": "essere arrugginito",
+    "pt": "estar enferrujado"
+   }
+  },
+  {
+   "item": "to drop out of something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "abandonar algo",
+    "de": "etwas abbrechen",
+    "fr": "abandonner qc",
+    "it": "abbandonare qc",
+    "pt": "desistir de algo"
+   }
+  },
+  {
+   "item": "to sign up for a course",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "anotarse a un curso",
+    "de": "sich für einen Kurs anmelden",
+    "fr": "s'inscrire à un cours",
+    "it": "iscriversi a un corso",
+    "pt": "inscrever-se num curso"
+   }
+  },
+  {
+   "item": "word of mouth",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el boca a boca",
+    "de": "die Mundpropaganda",
+    "fr": "le bouche-à-oreille",
+    "it": "il passaparola",
+    "pt": "o boca a boca"
+   }
+  }
  ]
 }

@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T12", "n": 1, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T12",
+ "n": 1,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "leisure activity", "prioridad": "nucleo", "traducciones": {"es": "la actividad de ocio","de": "die Freizeitbeschäftigung","fr": "l'activité de loisir","it": "l'attività del tempo libero","pt": "a atividade de lazer"}},
-  {"item": "to pursue a hobby", "prioridad": "nucleo", "traducciones": {"es": "dedicarse a una afición","de": "einem Hobby nachgehen","fr": "pratiquer un loisir","it": "dedicarsi a un hobby","pt": "dedicar-se a um hobby"}},
-  {"item": "to relax", "prioridad": "nucleo", "traducciones": {"es": "relajarse","de": "sich entspannen","fr": "se détendre","it": "rilassarsi","pt": "relaxar"}},
-  {"item": "club, association", "prioridad": "nucleo", "traducciones": {"es": "el club, la asociación","de": "der Verein / Verband","fr": "le club / l’association","it": "il club / l’associazione","pt": "o clube / a associação"}},
-  {"item": "passion for collecting", "prioridad": "ampliacion", "traducciones": {"es": "la pasión por coleccionar","de": "die Sammelleidenschaft","fr": "la passion de collectionner","it": "la passione del collezionismo","pt": "a paixão por colecionar"}},
-  {"item": "to let off steam", "prioridad": "ampliacion", "traducciones": {"es": "descargar energía","de": "sich austoben","fr": "se défouler","it": "sfogarsi","pt": "descarregar energias"}},
-  {"item": "pastime", "prioridad": "ampliacion", "traducciones": {"es": "el pasatiempo","de": "der Zeitvertreib","fr": "le passe-temps","it": "il passatempo","pt": "o passatempo"}},
-  {"item": "leisure, spare time", "prioridad": "ampliacion", "traducciones": {"es": "el tiempo de ocio","de": "die Muße","fr": "les loisirs","it": "il tempo libero","pt": "o lazer"}},
-  {"item": "volunteer work", "prioridad": "ampliacion", "traducciones": {"es": "el voluntariado","de": "das Ehrenamt","fr": "le bénévolat","it": "il volontariato","pt": "o trabalho voluntário"}},
-  {"item": "club bureaucracy (ironic)", "prioridad": "ampliacion", "traducciones": {"es": "la burocracia de clubes","de": "die Vereinsmeierei","fr": "la bureaucratie associative (ironique)","it": "la burocrazia associativa","pt": "a burocracia associativa"}},
-  {"item": "to immerse oneself in", "prioridad": "ampliacion", "traducciones": {"es": "sumergirse en","de": "in etwas eintauchen","fr": "s’immerger dans","it": "immergersi in","pt": "mergulhar em"}},
-  {"item": "type of sport", "prioridad": "ampliacion", "traducciones": {"es": "el deporte (tipo)","de": "die Sportart","fr": "le type de sport","it": "il tipo di sport","pt": "a modalidade esportiva"}}
+  {
+   "item": "spare time",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el tiempo libre",
+    "de": "die Freizeit",
+    "fr": "le temps libre",
+    "it": "il tempo libero",
+    "pt": "o tempo livre"
+   }
+  },
+  {
+   "item": "to be into something",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar metido en algo",
+    "de": "auf etwas stehen",
+    "fr": "être à fond dans qc",
+    "it": "essere appassionato di qc",
+    "pt": "curtir algo"
+   }
+  },
+  {
+   "item": "to get the hang of something",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "agarrarle la mano a algo",
+    "de": "den Dreh rauskriegen",
+    "fr": "prendre le coup de main",
+    "it": "prenderci la mano",
+    "pt": "apanhar o jeito"
+   }
+  },
+  {
+   "item": "to take up a hobby",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "empezar un pasatiempo",
+    "de": "ein Hobby anfangen",
+    "fr": "se mettre à un loisir",
+    "it": "iniziare un hobby",
+    "pt": "começar um passatempo"
+   }
+  },
+  {
+   "item": "to unwind",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "desconectar",
+    "de": "abschalten",
+    "fr": "décompresser",
+    "it": "staccare la spina",
+    "pt": "descontrair"
+   }
+  },
+  {
+   "item": "a night in",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una noche en casa",
+    "de": "ein Abend zu Hause",
+    "fr": "une soirée à la maison",
+    "it": "una serata in casa",
+    "pt": "uma noite em casa"
+   }
+  },
+  {
+   "item": "a pastime",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un pasatiempo",
+    "de": "der Zeitvertreib",
+    "fr": "un passe-temps",
+    "it": "un passatempo",
+    "pt": "um passatempo"
+   }
+  },
+  {
+   "item": "a weekend getaway",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una escapada de fin de semana",
+    "de": "der Wochenendtrip",
+    "fr": "une escapade de week-end",
+    "it": "una fuga di fine settimana",
+    "pt": "uma escapadinha de fim de semana"
+   }
+  },
+  {
+   "item": "to be rusty",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar oxidado",
+    "de": "eingerostet sein",
+    "fr": "être rouillé",
+    "it": "essere arrugginito",
+    "pt": "estar enferrujado"
+   }
+  },
+  {
+   "item": "to binge-watch a series",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "maratonear una serie",
+    "de": "eine Serie durchsuchen",
+    "fr": "binge-watcher une série",
+    "it": "fare binge-watching",
+    "pt": "ver uma série de seguida"
+   }
+  },
+  {
+   "item": "to dabble in something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "hacer algo por encima",
+    "de": "sich in etwas versuchen",
+    "fr": "toucher un peu à qc",
+    "it": "dilettarsi in qc",
+    "pt": "brincar com algo"
+   }
+  },
+  {
+   "item": "to keep something up",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sostener algo en el tiempo",
+    "de": "etwas beibehalten",
+    "fr": "s'y tenir",
+    "it": "mantenere qc nel tempo",
+    "pt": "manter algo"
+   }
+  },
+  {
+   "item": "to potter about",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "andar haciendo cositas",
+    "de": "herumwerkeln",
+    "fr": "bricoler tranquillement",
+    "it": "gingillarsi",
+    "pt": "andar às voltas com coisas"
+   }
+  },
+  {
+   "item": "to recharge your batteries",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "recargar pilas",
+    "de": "neue Kraft tanken",
+    "fr": "recharger ses batteries",
+    "it": "ricaricare le batterie",
+    "pt": "recarregar baterias"
+   }
+  }
  ]
 }

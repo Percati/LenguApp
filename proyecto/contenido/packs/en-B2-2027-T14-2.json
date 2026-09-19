@@ -6,6 +6,28 @@
  "anio": 2027,
  "vocabulario": [
   {
+   "item": "a bargain",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "una ganga",
+    "de": "das Schnäppchen",
+    "fr": "une bonne affaire",
+    "it": "un affare",
+    "pt": "uma pechincha"
+   }
+  },
+  {
+   "item": "a refund",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "un reembolso",
+    "de": "die Rückerstattung",
+    "fr": "un remboursement",
+    "it": "un rimborso",
+    "pt": "um reembolso"
+   }
+  },
+  {
    "item": "delivery",
    "prioridad": "nucleo",
    "traducciones": {
@@ -28,47 +50,25 @@
    }
   },
   {
-   "item": "purchase decision",
+   "item": "to complain about something",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "la decisión de compra",
-    "de": "die Kaufentscheidung",
-    "fr": "la décision d’achat",
-    "it": "la decisione d’acquisto",
-    "pt": "a decisão de compra"
+    "es": "reclamar por algo",
+    "de": "sich über etwas beschweren",
+    "fr": "se plaindre de qc",
+    "it": "lamentarsi di qc",
+    "pt": "reclamar de algo"
    }
   },
   {
-   "item": "special offer",
+   "item": "to shop around",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "la oferta especial",
-    "de": "das Sonderangebot",
-    "fr": "l’offre spéciale",
-    "it": "l’offerta speciale",
-    "pt": "a oferta especial"
-   }
-  },
-  {
-   "item": "to complain (about a product)",
-   "prioridad": "nucleo",
-   "traducciones": {
-    "es": "reclamar",
-    "de": "reklamieren",
-    "fr": "réclamer",
-    "it": "reclamare",
-    "pt": "reclamar"
-   }
-  },
-  {
-   "item": "to exchange (a product)",
-   "prioridad": "nucleo",
-   "traducciones": {
-    "es": "cambiar (un producto)",
-    "de": "umtauschen",
-    "fr": "échanger (un produit)",
-    "it": "cambiare (un prodotto)",
-    "pt": "trocar (um produto)"
+    "es": "comparar antes de comprar",
+    "de": "sich umsehen",
+    "fr": "comparer les offres",
+    "it": "guardarsi intorno",
+    "pt": "procurar alternativas"
    }
   },
   {
@@ -83,36 +83,36 @@
    }
   },
   {
-   "item": "a receipt",
+   "item": "free returns",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "el recibo",
-    "de": "der Kassenbon",
-    "fr": "le reçu",
-    "it": "lo scontrino",
-    "pt": "o recibo"
+    "es": "devoluciones gratuitas",
+    "de": "kostenlose Rücksendung",
+    "fr": "retours gratuits",
+    "it": "resi gratuiti",
+    "pt": "devoluções gratuitas"
    }
   },
   {
-   "item": "advertising",
+   "item": "out of stock",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la publicidad",
-    "de": "die Werbung",
-    "fr": "la publicité",
-    "it": "la pubblicità",
-    "pt": "a publicidade"
+    "es": "agotado",
+    "de": "ausverkauft",
+    "fr": "en rupture de stock",
+    "it": "esaurito",
+    "pt": "esgotado"
    }
   },
   {
-   "item": "customer review",
+   "item": "second-hand",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "la reseña de cliente",
-    "de": "die Kundenbewertung",
-    "fr": "l’avis client",
-    "it": "la recensione del cliente",
-    "pt": "a avaliação do cliente"
+    "es": "de segunda mano",
+    "de": "gebraucht",
+    "fr": "d'occasion",
+    "it": "di seconda mano",
+    "pt": "em segunda mão"
    }
   },
   {
@@ -127,36 +127,36 @@
    }
   },
   {
-   "item": "to compare prices",
+   "item": "to be ripped off",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "comparar precios",
-    "de": "Preise vergleichen",
-    "fr": "comparer les prix",
-    "it": "confrontare i prezzi",
-    "pt": "comparar preços"
+    "es": "que te estafen",
+    "de": "übers Ohr gehauen werden",
+    "fr": "se faire arnaquer",
+    "it": "essere fregato",
+    "pt": "ser enganado"
    }
   },
   {
-   "item": "to send something back",
+   "item": "to be worth it",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "devolver algo",
-    "de": "etwas zurückschicken",
-    "fr": "renvoyer qc",
-    "it": "rispedire qc",
-    "pt": "devolver algo"
+    "es": "valer la pena",
+    "de": "sich lohnen",
+    "fr": "valoir le coup",
+    "it": "valerne la pena",
+    "pt": "valer a pena"
    }
   },
   {
-   "item": "urge to buy",
+   "item": "to track an order",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "el impulso de comprar",
-    "de": "der Kaufdrang",
-    "fr": "l’envie d’acheter",
-    "it": "l’impulso all’acquisto",
-    "pt": "o impulso de comprar"
+    "es": "seguir un pedido",
+    "de": "eine Bestellung verfolgen",
+    "fr": "suivre une commande",
+    "it": "tracciare un ordine",
+    "pt": "seguir uma encomenda"
    }
   }
  ]

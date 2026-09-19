@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T14", "n": 1, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T14",
+ "n": 1,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "purchase decision", "prioridad": "nucleo", "traducciones": {"es": "la decisión de compra","de": "die Kaufentscheidung","fr": "la décision d’achat","it": "la decisione d’acquisto","pt": "a decisão de compra"}},
-  {"item": "special offer", "prioridad": "nucleo", "traducciones": {"es": "la oferta especial","de": "das Sonderangebot","fr": "l’offre spéciale","it": "l’offerta speciale","pt": "a oferta especial"}},
-  {"item": "to exchange (a product)", "prioridad": "nucleo", "traducciones": {"es": "cambiar (un producto)","de": "umtauschen","fr": "échanger (un produit)","it": "cambiare (un prodotto)","pt": "trocar (um produto)"}},
-  {"item": "warranty", "prioridad": "nucleo", "traducciones": {"es": "la garantía","de": "die Garantie","fr": "la garantie","it": "la garanzia","pt": "a garantia"}},
-  {"item": "purchasing power", "prioridad": "ampliacion", "traducciones": {"es": "el poder adquisitivo","de": "die Kaufkraft","fr": "le pouvoir d'achat","it": "il potere d'acquisto","pt": "o poder de compra"}},
-  {"item": "compulsion to consume", "prioridad": "ampliacion", "traducciones": {"es": "la compulsión al consumo","de": "der Konsumzwang","fr": "la compulsion de consommation","it": "la compulsione all'acquisto","pt": "a compulsão pelo consumo"}},
-  {"item": "packaging", "prioridad": "ampliacion", "traducciones": {"es": "el envase, el embalaje","de": "die Verpackung","fr": "l’emballage","it": "l’imballaggio","pt": "a embalagem"}},
-  {"item": "to buy second-hand", "prioridad": "ampliacion", "traducciones": {"es": "comprar de segunda mano","de": "gebraucht kaufen","fr": "acheter d'occasion","it": "comprare usato","pt": "comprar usado"}},
-  {"item": "customer review", "prioridad": "ampliacion", "traducciones": {"es": "la reseña de cliente","de": "die Kundenbewertung","fr": "l’avis client","it": "la recensione del cliente","pt": "a avaliação do cliente"}},
-  {"item": "overpriced", "prioridad": "ampliacion", "traducciones": {"es": "sobrevalorado, muy caro","de": "überteuert","fr": "surévalué","it": "troppo caro","pt": "com preço abusivo"}},
-  {"item": "return period", "prioridad": "ampliacion", "traducciones": {"es": "el plazo de devolución","de": "die Rückgabefrist","fr": "le délai de retour","it": "il periodo di reso","pt": "o prazo de devolução"}},
-  {"item": "impulse purchase", "prioridad": "ampliacion", "traducciones": {"es": "la compra impulsiva","de": "der Impulskauf","fr": "l’achat impulsif","it": "l’acquisto impulsivo","pt": "a compra por impulso"}}
+  {
+   "item": "purchase decision",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la decisión de compra",
+    "de": "die Kaufentscheidung",
+    "fr": "la décision d’achat",
+    "it": "la decisione d’acquisto",
+    "pt": "a decisão de compra"
+   }
+  },
+  {
+   "item": "special offer",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la oferta especial",
+    "de": "das Sonderangebot",
+    "fr": "l’offre spéciale",
+    "it": "l’offerta speciale",
+    "pt": "a oferta especial"
+   }
+  },
+  {
+   "item": "to be a false economy",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "salir más caro a la larga",
+    "de": "am falschen Ende sparen",
+    "fr": "être une fausse économie",
+    "it": "essere un falso risparmio",
+    "pt": "sair mais caro a prazo"
+   }
+  },
+  {
+   "item": "to shop on impulse",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "comprar por impulso",
+    "de": "impulsiv kaufen",
+    "fr": "acheter sur un coup de tête",
+    "it": "comprare d'impulso",
+    "pt": "comprar por impulso"
+   }
+  },
+  {
+   "item": "to splash out on something",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "darse un gusto caro",
+    "de": "sich etwas gönnen",
+    "fr": "faire une folie pour qc",
+    "it": "spendere una bella cifra per qc",
+    "pt": "dar-se a um luxo"
+   }
+  },
+  {
+   "item": "warranty",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la garantía",
+    "de": "die Garantie",
+    "fr": "la garantie",
+    "it": "la garanzia",
+    "pt": "a garantia"
+   }
+  },
+  {
+   "item": "a loyalty card",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la tarjeta de fidelidad",
+    "de": "die Kundenkarte",
+    "fr": "la carte de fidélité",
+    "it": "la carta fedeltà",
+    "pt": "o cartão de fidelização"
+   }
+  },
+  {
+   "item": "a price tag",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la etiqueta de precio",
+    "de": "das Preisschild",
+    "fr": "l'étiquette de prix",
+    "it": "il cartellino del prezzo",
+    "pt": "a etiqueta de preço"
+   }
+  },
+  {
+   "item": "customer review",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la reseña de cliente",
+    "de": "die Kundenbewertung",
+    "fr": "l’avis client",
+    "it": "la recensione del cliente",
+    "pt": "a avaliação do cliente"
+   }
+  },
+  {
+   "item": "to be spoilt for choice",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tener demasiado donde elegir",
+    "de": "die Qual der Wahl haben",
+    "fr": "avoir l'embarras du choix",
+    "it": "avere l'imbarazzo della scelta",
+    "pt": "ter demasiada escolha"
+   }
+  },
+  {
+   "item": "to haggle",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "regatear",
+    "de": "feilschen",
+    "fr": "marchander",
+    "it": "contrattare",
+    "pt": "regatear"
+   }
+  },
+  {
+   "item": "to hold out for a sale",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "esperar a las rebajas",
+    "de": "auf den Schlussverkauf warten",
+    "fr": "attendre les soldes",
+    "it": "aspettare i saldi",
+    "pt": "esperar pelos saldos"
+   }
+  },
+  {
+   "item": "to return an item",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "devolver un artículo",
+    "de": "einen Artikel zurückgeben",
+    "fr": "retourner un article",
+    "it": "restituire un articolo",
+    "pt": "devolver um artigo"
+   }
+  },
+  {
+   "item": "value for money",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la relación calidad-precio",
+    "de": "das Preis-Leistungs-Verhältnis",
+    "fr": "le rapport qualité-prix",
+    "it": "il rapporto qualità-prezzo",
+    "pt": "a relação qualidade-preço"
+   }
+  }
  ]
 }

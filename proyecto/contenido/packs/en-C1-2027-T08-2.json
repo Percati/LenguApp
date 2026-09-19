@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T08", "n": 2, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T08",
+ "n": 2,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "to get engaged", "prioridad": "nucleo", "traducciones": {"es": "comprometerse","de": "sich verloben","fr": "se fiancer","it": "fidanzarsi","pt": "ficar noivo/a"}},
-  {"item": "the relationship", "prioridad": "nucleo", "traducciones": {"es": "la relación","de": "die Beziehung","fr": "la relation","it": "la relazione","pt": "o relacionamento"}},
-  {"item": "upbringing", "prioridad": "nucleo", "traducciones": {"es": "la crianza","de": "die Erziehung","fr": "l’éducation","it": "l’educazione","pt": "a educação"}},
-  {"item": "togetherness", "prioridad": "nucleo", "traducciones": {"es": "la unión, la cohesión","de": "die Verbundenheit / das Zusammengehörigkeitsgefühl","fr": "la cohésion / le sentiment d’appartenance","it": "la coesione / il senso di appartenenza","pt": "a união / coesão"}},
-  {"item": "disappointment", "prioridad": "ampliacion", "traducciones": {"es": "la decepción","de": "die Enttäuschung","fr": "la déception","it": "la delusione","pt": "a desilusão"}},
-  {"item": "to forgive someone", "prioridad": "ampliacion", "traducciones": {"es": "perdonar a alguien","de": "jemandem verzeihen","fr": "pardonner à quelqu'un","it": "perdonare qualcuno","pt": "perdoar alguém"}},
-  {"item": "consideration (for others)", "prioridad": "ampliacion", "traducciones": {"es": "la consideración","de": "die Rücksichtnahme","fr": "la considération pour autrui","it": "la considerazione per gli altri","pt": "a consideração pelos outros"}},
-  {"item": "custody (of children)", "prioridad": "ampliacion", "traducciones": {"es": "la custodia","de": "das Sorgerecht","fr": "la garde (des enfants)","it": "l'affidamento","pt": "a guarda (dos filhos)"}},
-  {"item": "estrangement", "prioridad": "ampliacion", "traducciones": {"es": "el distanciamiento","de": "die Entfremdung","fr": "l'éloignement affectif","it": "l'estraniamento","pt": "o distanciamento afetivo"}},
-  {"item": "shared values", "prioridad": "ampliacion", "traducciones": {"es": "valores compartidos","de": "gemeinsame Werte","fr": "valeurs communes","it": "valori condivisi","pt": "valores compartilhados"}},
-  {"item": "to share responsibility", "prioridad": "ampliacion", "traducciones": {"es": "compartir la responsabilidad","de": "die Verantwortung teilen","fr": "partager la responsabilité","it": "condividere la responsabilità","pt": "compartilhar a responsabilidade"}},
-  {"item": "the head of the family", "prioridad": "ampliacion", "traducciones": {"es": "el/la cabeza de familia","de": "das Familienoberhaupt","fr": "le chef de famille","it": "il capofamiglia","pt": "o chefe de família"}}
+  {
+   "item": "shared values",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "valores compartidos",
+    "de": "gemeinsame Werte",
+    "fr": "valeurs communes",
+    "it": "valori condivisi",
+    "pt": "valores compartilhados"
+   }
+  },
+  {
+   "item": "to forgive someone",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "perdonar a alguien",
+    "de": "jemandem verzeihen",
+    "fr": "pardonner à quelqu'un",
+    "it": "perdonare qualcuno",
+    "pt": "perdoar alguém"
+   }
+  },
+  {
+   "item": "to see eye to eye",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar de acuerdo",
+    "de": "einer Meinung sein",
+    "fr": "voir les choses de la même façon",
+    "it": "vedere le cose allo stesso modo",
+    "pt": "estar de acordo"
+   }
+  },
+  {
+   "item": "to set boundaries",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "poner límites",
+    "de": "Grenzen setzen",
+    "fr": "poser des limites",
+    "it": "porre dei limiti",
+    "pt": "impor limites"
+   }
+  },
+  {
+   "item": "to walk on eggshells",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "andar con pies de plomo",
+    "de": "auf Eierschalen laufen",
+    "fr": "marcher sur des œufs",
+    "it": "camminare sulle uova",
+    "pt": "pisar em ovos"
+   }
+  },
+  {
+   "item": "a falling-out",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una pelea que distancia",
+    "de": "das Zerwürfnis",
+    "fr": "une brouille",
+    "it": "una rottura",
+    "pt": "um desentendimento"
+   }
+  },
+  {
+   "item": "an unspoken rule",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una regla tácita",
+    "de": "eine ungeschriebene Regel",
+    "fr": "une règle tacite",
+    "it": "una regola non detta",
+    "pt": "uma regra tácita"
+   }
+  },
+  {
+   "item": "closeness",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cercanía, la intimidad",
+    "de": "die Nähe",
+    "fr": "la proximité",
+    "it": "la vicinanza",
+    "pt": "a proximidade"
+   }
+  },
+  {
+   "item": "sense of duty",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el sentido del deber",
+    "de": "das Pflichtbewusstsein",
+    "fr": "le sens du devoir",
+    "it": "il senso del dovere",
+    "pt": "o sentido do dever"
+   }
+  },
+  {
+   "item": "the generation gap",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la brecha generacional",
+    "de": "die Kluft zwischen Generationen",
+    "fr": "le fossé des générations",
+    "it": "il divario generazionale",
+    "pt": "o abismo geracional"
+   }
+  },
+  {
+   "item": "to give someone space",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dar espacio a alguien",
+    "de": "jemandem Freiraum geben",
+    "fr": "laisser de l'espace à qn",
+    "it": "dare spazio a qn",
+    "pt": "dar espaço a alguém"
+   }
+  },
+  {
+   "item": "to put someone first",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "priorizar a alguien",
+    "de": "jemanden an erste Stelle setzen",
+    "fr": "faire passer qn en premier",
+    "it": "mettere qn al primo posto",
+    "pt": "pôr alguém em primeiro"
+   }
+  },
+  {
+   "item": "to smooth things over",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "limar asperezas",
+    "de": "die Wogen glätten",
+    "fr": "arranger les choses",
+    "it": "appianare le cose",
+    "pt": "limar as arestas"
+   }
+  },
+  {
+   "item": "to take care of someone",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "cuidar de alguien",
+    "de": "sich um jemanden kümmern",
+    "fr": "s’occuper de quelqu’un",
+    "it": "prendersi cura di qualcuno",
+    "pt": "cuidar de alguém"
+   }
+  }
  ]
 }

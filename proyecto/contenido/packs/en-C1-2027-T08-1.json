@@ -1,19 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T08", "n": 1, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T08",
+ "n": 1,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "to get engaged", "prioridad": "nucleo", "traducciones": {"es": "comprometerse","de": "sich verloben","fr": "se fiancer","it": "fidanzarsi","pt": "ficar noivo/a"}},
-  {"item": "the relationship", "prioridad": "nucleo", "traducciones": {"es": "la relación","de": "die Beziehung","fr": "la relation","it": "la relazione","pt": "o relacionamento"}},
-  {"item": "to break up", "prioridad": "nucleo", "traducciones": {"es": "cortar, terminar una relación","de": "sich trennen","fr": "se séparer","it": "separarsi","pt": "terminar (namoro)"}},
-  {"item": "upbringing", "prioridad": "nucleo", "nota": "raising children, not schooling", "traducciones": {"es": "la crianza","de": "die Erziehung","fr": "l’éducation","it": "l’educazione","pt": "a educação"}},
-  {"item": "the argument", "prioridad": "ampliacion", "traducciones": {"es": "la discusión","de": "der Streit","fr": "la dispute","it": "il litigio","pt": "a discussão"}},
-  {"item": "to make up (after a fight)", "prioridad": "ampliacion", "traducciones": {"es": "reconciliarse","de": "sich versöhnen","fr": "se réconcilier","it": "fare pace","pt": "reconciliar-se"}},
-  {"item": "relatives", "prioridad": "ampliacion", "traducciones": {"es": "los parientes","de": "die Verwandtschaft","fr": "la parenté","it": "la parentela","pt": "os parentes"}},
-  {"item": "trust", "prioridad": "ampliacion", "traducciones": {"es": "la confianza","de": "das Vertrauen","fr": "la confiance","it": "la fiducia","pt": "a confiança"}},
-  {"item": "jealous", "prioridad": "ampliacion", "traducciones": {"es": "celoso/a","de": "eifersüchtig","fr": "jaloux/jalouse","it": "geloso/a","pt": "ciumento/a"}},
-  {"item": "togetherness", "prioridad": "ampliacion", "traducciones": {"es": "la unión, la cohesión","de": "die Verbundenheit / das Zusammengehörigkeitsgefühl","fr": "la cohésion / le sentiment d’appartenance","it": "la coesione / il senso di appartenenza","pt": "a união / coesão"}},
-  {"item": "care (for someone)", "prioridad": "ampliacion", "traducciones": {"es": "el cuidado","de": "die Pflege / Betreuung","fr": "les soins (à quelqu’un)","it": "la cura (di qualcuno)","pt": "o cuidado (de alguém)"}},
-  {"item": "to support each other", "prioridad": "ampliacion", "traducciones": {"es": "apoyarse mutuamente","de": "einander unterstützen","fr": "se soutenir mutuellement","it": "sostenersi a vicenda","pt": "apoiar-se mutuamente"}},
-  {"item": "to cut off contact", "prioridad": "ampliacion", "traducciones": {"es": "cortar el contacto","de": "den Kontakt abbrechen","fr": "couper les ponts","it": "interrompere i contatti","pt": "cortar o contato"}},
-  {"item": "blended family", "prioridad": "ampliacion", "traducciones": {"es": "la familia ensamblada","de": "die Patchworkfamilie","fr": "la famille recomposée","it": "la famiglia allargata","pt": "a família mosaico"}}
+  {
+   "item": "a close-knit family",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "una familia muy unida",
+    "de": "eine eng verbundene Familie",
+    "fr": "une famille très soudée",
+    "it": "una famiglia molto unita",
+    "pt": "uma família muito unida"
+   }
+  },
+  {
+   "item": "shared values",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "valores compartidos",
+    "de": "gemeinsame Werte",
+    "fr": "valeurs communes",
+    "it": "valori condivisi",
+    "pt": "valores compartilhados"
+   }
+  },
+  {
+   "item": "to be there for someone",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar para alguien",
+    "de": "für jemanden da sein",
+    "fr": "être là pour qn",
+    "it": "esserci per qn",
+    "pt": "estar presente para alguém"
+   }
+  },
+  {
+   "item": "to fall out with someone",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "pelearse con alguien",
+    "de": "sich mit jemandem zerstreiten",
+    "fr": "se brouiller avec qn",
+    "it": "litigare con qn",
+    "pt": "zangar-se com alguém"
+   }
+  },
+  {
+   "item": "to forgive someone",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "perdonar a alguien",
+    "de": "jemandem verzeihen",
+    "fr": "pardonner à quelqu'un",
+    "it": "perdonare qualcuno",
+    "pt": "perdoar alguém"
+   }
+  },
+  {
+   "item": "to grow apart",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "distanciarse con el tiempo",
+    "de": "sich auseinanderleben",
+    "fr": "s'éloigner l'un de l'autre",
+    "it": "allontanarsi",
+    "pt": "afastar-se com o tempo"
+   }
+  },
+  {
+   "item": "closeness",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cercanía, la intimidad",
+    "de": "die Nähe",
+    "fr": "la proximité",
+    "it": "la vicinanza",
+    "pt": "a proximidade"
+   }
+  },
+  {
+   "item": "to bottle things up",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "guardarse las cosas",
+    "de": "alles in sich hineinfressen",
+    "fr": "tout garder pour soi",
+    "it": "tenersi tutto dentro",
+    "pt": "guardar tudo cá dentro"
+   }
+  },
+  {
+   "item": "to clear the air",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "aclarar las cosas",
+    "de": "die Luft reinigen",
+    "fr": "crever l'abcès",
+    "it": "chiarirsi",
+    "pt": "esclarecer as coisas"
+   }
+  },
+  {
+   "item": "to give someone space",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dar espacio a alguien",
+    "de": "jemandem Freiraum geben",
+    "fr": "laisser de l'espace à qn",
+    "it": "dare spazio a qn",
+    "pt": "dar espaço a alguém"
+   }
+  },
+  {
+   "item": "to keep in touch",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mantener el contacto",
+    "de": "in Kontakt bleiben",
+    "fr": "garder le contact",
+    "it": "restare in contatto",
+    "pt": "manter o contacto"
+   }
+  },
+  {
+   "item": "to open up to someone",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "abrirse con alguien",
+    "de": "sich jemandem öffnen",
+    "fr": "s'ouvrir à qn",
+    "it": "aprirsi con qn",
+    "pt": "abrir-se com alguém"
+   }
+  },
+  {
+   "item": "to smooth things over",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "limar asperezas",
+    "de": "die Wogen glätten",
+    "fr": "arranger les choses",
+    "it": "appianare le cose",
+    "pt": "limar as arestas"
+   }
+  },
+  {
+   "item": "to take someone for granted",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "no valorar a alguien",
+    "de": "jemanden für selbstverständlich halten",
+    "fr": "tenir qn pour acquis",
+    "it": "dare qn per scontato",
+    "pt": "não dar valor a alguém"
+   }
+  }
  ]
 }

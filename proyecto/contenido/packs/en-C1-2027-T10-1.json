@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T10", "n": 1, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T10",
+ "n": 1,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "ingredient", "prioridad": "nucleo", "traducciones": {"es": "el ingrediente","de": "die Zutat","fr": "l’ingrédient","it": "l’ingrediente","pt": "o ingrediente"}},
-  {"item": "to brown, sear", "prioridad": "nucleo", "traducciones": {"es": "dorar, sofreír","de": "anbraten","fr": "faire revenir","it": "rosolare","pt": "dourar"}},
-  {"item": "food intolerance", "prioridad": "nucleo", "traducciones": {"es": "la intolerancia alimentaria","de": "die Lebensmittelunverträglichkeit","fr": "l’intolérance alimentaire","it": "l’intolleranza alimentare","pt": "a intolerância alimentar"}},
-  {"item": "hearty, substantial", "prioridad": "nucleo", "traducciones": {"es": "contundente, sustancioso","de": "deftig","fr": "copieux / nourrissant","it": "sostanzioso","pt": "substancial / forte"}},
-  {"item": "best-before date", "prioridad": "ampliacion", "traducciones": {"es": "la fecha de caducidad preferente","de": "das Mindesthaltbarkeitsdatum","fr": "la date de durabilité minimale","it": "la data di scadenza / termine minimo di conservazione","pt": "a data de validade"}},
-  {"item": "local and seasonal", "prioridad": "ampliacion", "traducciones": {"es": "local y de temporada","de": "regional und saisonal","fr": "local et de saison","it": "locale e stagionale","pt": "local e sazonal"}},
-  {"item": "factory farming", "prioridad": "ampliacion", "traducciones": {"es": "la ganadería industrial","de": "die Massentierhaltung","fr": "l’élevage intensif","it": "l’allevamento intensivo","pt": "a pecuária intensiva"}},
-  {"item": "bland", "prioridad": "ampliacion", "traducciones": {"es": "soso, insípido","de": "fade / geschmacklos","fr": "fade","it": "insipido","pt": "insosso"}},
-  {"item": "to season", "prioridad": "ampliacion", "traducciones": {"es": "condimentar","de": "würzen","fr": "assaisonner","it": "condire","pt": "temperar"}},
-  {"item": "portion", "prioridad": "ampliacion", "traducciones": {"es": "la porción","de": "die Portion","fr": "la portion","it": "la porzione","pt": "a porção"}},
-  {"item": "to spoil, go off", "prioridad": "ampliacion", "traducciones": {"es": "estropearse","de": "schlecht werden / verderben","fr": "se gâter","it": "andare a male","pt": "estragar-se"}},
-  {"item": "dessert", "prioridad": "ampliacion", "traducciones": {"es": "el postre","de": "das Dessert","fr": "le dessert","it": "il dessert","pt": "a sobremesa"}}
+  {
+   "item": "a go-to recipe",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "una receta de cabecera",
+    "de": "das Lieblingsrezept",
+    "fr": "une recette de référence",
+    "it": "la ricetta di sempre",
+    "pt": "a receita do costume"
+   }
+  },
+  {
+   "item": "leftovers",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "las sobras",
+    "de": "die Reste",
+    "fr": "les restes",
+    "it": "gli avanzi",
+    "pt": "as sobras"
+   }
+  },
+  {
+   "item": "to be a fussy eater",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "ser quisquilloso con la comida",
+    "de": "ein wählerischer Esser sein",
+    "fr": "être difficile à table",
+    "it": "essere schizzinoso a tavola",
+    "pt": "ser esquisito com a comida"
+   }
+  },
+  {
+   "item": "to have a sweet tooth",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "ser goloso",
+    "de": "eine Naschkatze sein",
+    "fr": "être bec sucré",
+    "it": "essere goloso di dolci",
+    "pt": "ser guloso"
+   }
+  },
+  {
+   "item": "to throw something together",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "improvisar algo rápido",
+    "de": "etwas schnell zaubern",
+    "fr": "préparer qc à la va-vite",
+    "it": "buttare insieme qualcosa",
+    "pt": "improvisar algo rápido"
+   }
+  },
+  {
+   "item": "a hearty meal",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una comida contundente",
+    "de": "eine deftige Mahlzeit",
+    "fr": "un repas copieux",
+    "it": "un pasto sostanzioso",
+    "pt": "uma refeição substancial"
+   }
+  },
+  {
+   "item": "a portion size",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el tamaño de la porción",
+    "de": "die Portionsgröße",
+    "fr": "la taille des portions",
+    "it": "la dimensione della porzione",
+    "pt": "o tamanho da porção"
+   }
+  },
+  {
+   "item": "a takeaway",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la comida para llevar",
+    "de": "das Essen zum Mitnehmen",
+    "fr": "un plat à emporter",
+    "it": "il cibo da asporto",
+    "pt": "a comida para levar"
+   }
+  },
+  {
+   "item": "home-cooked",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "casero",
+    "de": "selbst gekocht",
+    "fr": "fait maison",
+    "it": "fatto in casa",
+    "pt": "caseiro"
+   }
+  },
+  {
+   "item": "ingredient",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el ingrediente",
+    "de": "die Zutat",
+    "fr": "l'ingrédient",
+    "it": "l'ingrediente",
+    "pt": "o ingrediente"
+   }
+  },
+  {
+   "item": "processed food",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la comida procesada",
+    "de": "verarbeitete Lebensmittel",
+    "fr": "les aliments transformés",
+    "it": "il cibo processato",
+    "pt": "a comida processada"
+   }
+  },
+  {
+   "item": "to batch-cook",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "cocinar en tandas",
+    "de": "auf Vorrat kochen",
+    "fr": "cuisiner en grandes quantités",
+    "it": "cucinare in grandi quantità",
+    "pt": "cozinhar em lotes"
+   }
+  },
+  {
+   "item": "to grab a bite",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "comer algo rápido",
+    "de": "schnell etwas essen",
+    "fr": "manger un morceau",
+    "it": "mangiare un boccone",
+    "pt": "comer qualquer coisa"
+   }
+  },
+  {
+   "item": "to season",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "condimentar",
+    "de": "würzen",
+    "fr": "assaisonner",
+    "it": "condire",
+    "pt": "temperar"
+   }
+  }
  ]
 }
