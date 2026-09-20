@@ -46,3 +46,11 @@ memoria de proyecto de Claude) — son sobre el proceso de construirlo.
   ß→ss: la lista viene con ss (`einfliessen`, `grossen`).
 - **DE B2 y DE C2 no tienen lista oficial contra la que verificar** (el Goethe no publica
   Wortliste por encima de B1). Los packs de esos pares van sin verificación externa.
+- **El `nivel` de `vocab_de.json` es el nivel más bajo en que la palabra aparece entre las
+  fuentes cargadas, no una etiqueta CEFR canónica.** `der Arzt` y `die Eltern` figuran
+  como B1 porque solo están en goethe-b1 y dtz: la tajada A2 del repo (787 lemas) es
+  menor que la Wortliste A2 real, así que hay vocabulario A2 genuino que la lista solo
+  tiene en su versión B1. Conclusión práctica: "por encima del nivel" en A2 significa
+  "no está en la fuente A2 cargada", NO "es demasiado difícil". No sirve para descartar
+  ítems de un pack A2 de forma automática; sí sirve en sentido inverso (si algo aparece
+  como C1, conviene mirarlo).
