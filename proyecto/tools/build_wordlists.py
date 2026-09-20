@@ -175,7 +175,83 @@ def lemas_csv(path, col_lema="headword", col_nivel="CEFR"):
                 entradas[k] = (lema, nivel)
     return entradas
 
+# --- listas de vocabulario de manuales (B2/C1/C2) ----------------------
+# Para aleman no existe lista oficial gratuita por encima de B1: el Goethe
+# publica A1, A2 y B1 y nada mas. Por eso vocab_de.json se quedaba en B1
+# mientras que el ingles llegaba a C2. Los manuales C1 (Sicher, Aspekte)
+# si traen un Lernwortschatz por leccion, que es la mejor fuente atestiguada
+# disponible para ese nivel.
+#
+# Estos PDF son escaneos sin capa de texto, asi que hay que pasarles OCR
+# (tesseract -l deu) antes de leerlos; el OCR mete ruido, y de ahi los dos
+# filtros de abajo.
+RE_VERBO_FORMAS = re.compile(
+    r"^\s*(sich\s+)?([a-zäöüß][\wäöüß]{2,30})\s*,\s+\w+,\s+(?:hat|ist)\b")
+SUFIJOS_DE = ("ung", "heit", "keit", "schaft", "nis", "tum", "ling", "ismus",
+              "ion", "ität", "enz", "anz", "eur", "ur", "ie", "ik", "age",
+              "chen", "lein", "ment", "ant", "ent", "ieren", "en", "ig",
+              "lich", "isch", "bar", "sam", "haft", "los", "voll", "ell", "iv",
+              "eln", "ern", "end", "erung", "ität", "ismus")
+CAB_MANUAL = re.compile(
+    r"^(LEKTION|LERNWORTSCHATZ|WORTSCHATZ|LESEN|H[OÖ]REN|SPRECHEN|SCHREIBEN|"
+    r"SEHEN|EINSTIEGSSEITE|Modul|AB\s|Bei den|Nomen mit)", re.I)
+ALEM_PURO = re.compile(r"^[A-Za-zÄÖÜäöüß][A-Za-zÄÖÜäöüß\-]+$")
+
+def lemas_frecuencia(texto):
+    """Diccionario de frecuencia: devuelve SOLO el conjunto de lemas.
+
+    No es una fuente de nivel MCER y no se usa como tal: un diccionario de
+    frecuencia ordena por uso, no por dificultad, y sus primeros miles de
+    entradas son vocabulario A1-B1. Se usa unicamente para validar que un
+    candidato salido del OCR es una palabra alemana real.
+    """
+    pos = (r"(?:verb|adj|adv|prep|conj|pron|num|art|part|interj|der|die|das)")
+    rx = re.compile(rf"(?<![\d.,])(\d{{1,4}})\s+"
+                    rf"([A-ZÄÖÜa-zäöüß][A-Za-zÄÖÜäöüß\-]{{1,30}})"
+                    rf"(?:,\s*[A-Za-zÄÖÜäöüß.]+)?\s+({pos})\b")
+    return {m.group(2) for m in rx.finditer(texto)}
+
+def lemas_manual(texto, nivel, validos=frozenset()):
+    """Lernwortschatz de un manual, ya pasado por OCR.
+
+    Dos filtros contra el ruido del OCR:
+      1. morfologico: el candidato tiene que ser un sustantivo con articulo,
+         o terminar en un sufijo derivativo aleman reconocible. Asi caen los
+         recortes tipo 'Andenk' (por 'Andenken') que el OCR parte a mitad.
+      2. lexico: o bien pasa el filtro 1, o bien aparece en el diccionario de
+         frecuencia, que hace de lista blanca de palabras reales.
+    De las entradas verbales con sus formas ('missraten, missriet, ist
+    missraten') se toma solo el infinitivo: el preterito y el participio no
+    son lemas y ensuciaban la lista.
+    """
+    lemas = set()
+    for linea in texto.splitlines():
+        l = linea.strip()
+        if not l or CAB_MANUAL.match(l):
+            continue
+        m = RE_VERBO_FORMAS.match(l)
+        if m:
+            lemas.add((m.group(1) or "") + m.group(2))
+            continue
+        l = re.sub(r"[,;:()\[\]|«»“”\"]+", " ", l)
+        l = re.sub(r"\b(?:Sg|Pl|Dat|Akk|Gen|hier|z\.?\s?B|S)\b\.?", "", l)
+        for mm in RE_NOMBRE_MANUAL.finditer(l):
+            lemas.add(mm.group(1))
+        for tok in l.split():
+            tok = tok.strip(".-–—*•")
+            if len(tok) < 4 or not ALEM_PURO.match(tok):
+                continue
+            if tok[0].islower() and (tok in validos or tok.endswith(SUFIJOS_DE)):
+                lemas.add(tok)
+    limpio = {w for w in lemas
+              if not w.endswith("-") and not w.startswith("-") and len(w) >= 4
+              and (w in validos or w.endswith(SUFIJOS_DE) or w[0].isupper())}
+    return {clave(l): (l, nivel) for l in limpio}
+
+RE_NOMBRE_MANUAL = re.compile(r"\b(?:der|die|das)\s+([A-ZÄÖÜ][A-Za-zÄÖÜäöüß\-]{2,})")
+
 # --- extraccion de lemas (formato Goethe, dos columnas) ----------------
+
 RE_NOMBRE = re.compile(r"^\s*(der|die|das)\s+([A-ZÄÖÜ][\wÄÖÜäöüß-]{1,30})\b")
 RE_VERBO  = re.compile(r"^\s*(sich\s+)?([a-zäöüß][\wäöüß]{2,30}(?:en|ern|eln))\s*,")
 RE_SIMPLE = re.compile(r"^\s*([a-zäöüß][\wäöüß-]{1,25})\s*$")
@@ -245,7 +321,23 @@ def construir(fuentes):
     fuentes_por_nivel = defaultdict(set)
     lemas_por_fuente = {}
 
+    # Las fuentes de validacion (diccionario de frecuencia) se leen primero:
+    # no aportan lemas ni niveles, solo la lista blanca contra la que se
+    # filtra el ruido del OCR de los manuales.
+    validos = set()
     for f in fuentes:
+        if f.get("formato") == "frecuencia":
+            path = Path(f["archivo"])
+            if path.exists():
+                validos |= lemas_frecuencia(leer(path))
+                print(f"  {f['id']:26s} {'valida':>6}  {len(validos):5d} lemas "
+                      f"(lista blanca, NO aporta nivel)", file=sys.stderr)
+            else:
+                print(f"  ! falta {path} - se omite", file=sys.stderr)
+
+    for f in fuentes:
+        if f.get("formato") == "frecuencia":
+            continue
         path = Path(f["archivo"])
         if not path.exists():
             print(f"  ! falta {path} - se omite", file=sys.stderr)
@@ -257,6 +349,8 @@ def construir(fuentes):
                               f.get("colNivel", "CEFR"))
         elif formato == "xlsx-unidades":
             pares = lemas_xlsx_por_unidad(path, f["nivel"])
+        elif formato == "manual":
+            pares = lemas_manual(leer(path), f["nivel"], validos)
         elif formato == "cambridge-wordlist":
             pares = lemas_cambridge_wordlist(leer(path), f["nivel"])
         elif formato == "cambridge":

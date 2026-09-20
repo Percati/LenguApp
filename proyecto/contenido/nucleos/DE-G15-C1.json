@@ -5,7 +5,7 @@
  "titulo": "Konjunktiv I und indirekte Rede",
  "categoria": "grammar",
  "ancla": "Aspekte B2",
- "descripcion": "Auf C1 wird die indirekte Rede im Nominalstil und über mehrere Sätze hinweg konsequent durchgehalten, wie es in Presse- und Protokolltexten üblich ist. Die einmalige Bildung ist bereits bekannt — hier geht es um die durchgängige Anwendung in einem ganzen Absatz.",
+ "descripcion": "Auf C1 wird die indirekte Rede im Nominalstil und über mehrere Sätze hinweg konsequent durchgehalten, wie es in Presse- und Protokolltexten üblich ist. Die einmalige Bildung ist bereits bekannt — hier geht es um die durchgängige Anwendung in einem ganzen Absatz. Genau hier liegt auch der wissenschaftliche Gebrauch: Wer Forschung referiert, markiert mit dem Konjunktiv I, dass der Befund fremd ist, und wechselt in den Indikativ, sobald er ihn als gesichert übernimmt.",
  "cuadroReferencia": {
   "titulo": "Konjunktiv I über mehrere Sätze",
   "columnas": [
@@ -43,7 +43,8 @@
  "notas": [
   "In einem längeren berichteten Abschnitt bleibt der Konjunktiv I (oder II bei Zusammenfall) über mehrere Sätze konsistent, nicht nur im ersten.",
   "Heisst es weiter oder so die Erklärung markieren, dass die Quellenangabe weitergilt, ohne sie jedes Mal zu wiederholen.",
-  "Ein Rückfall in den Indikativ mitten im berichteten Abschnitt lässt den Text wie eine eigene Behauptung wirken."
+  "Ein Rückfall in den Indikativ mitten im berichteten Abschnitt lässt den Text wie eine eigene Behauptung wirken.",
+  "Beim Zitieren von Forschung trägt der Konjunktiv I die Distanz: *Forschungsergebnissen zufolge sei…* referiert den Befund, *fest steht, dass…* übernimmt ihn. Der Moduswechsel ist die Stellungnahme — man muss sie nicht aussprechen."
  ],
  "contraste": {
   "es": "Das Spanische hat keinen eigenen Modus für berichtete Rede und markiert die Distanz vor allem einmalig am Satzanfang (según él). Spanischsprachige neigen deshalb dazu, nach dem ersten Satz in den Indikativ zurückzufallen, weil ihre Muttersprache die Distanzierung nicht über mehrere Sätze grammatisch verlangt.",
@@ -122,6 +123,39 @@
     "fr": "Selon certaines informations,…",
     "it": "Secondo quanto riferito,…",
     "pt": "Segundo consta,…"
+   }
+  },
+  {
+   "expresion": "Laut neuesten Untersuchungen…",
+   "funcion": "Forschungsstand als Quelle einführen",
+   "traducciones": {
+    "es": "según las últimas investigaciones…",
+    "de": "Laut neuesten Untersuchungen…",
+    "fr": "Selon les dernières recherches…",
+    "it": "Secondo le ultime ricerche…",
+    "pt": "Segundo as últimas investigações…"
+   }
+  },
+  {
+   "expresion": "Forschungsergebnissen zufolge sei…",
+   "funcion": "Quellenangabe mit Konjunktiv I verbinden",
+   "traducciones": {
+    "es": "según los resultados de la investigación, sería…",
+    "de": "Forschungsergebnissen zufolge sei…",
+    "fr": "D'après les résultats de la recherche, …serait…",
+    "it": "Secondo i risultati della ricerca, sarebbe…",
+    "pt": "Segundo os resultados da investigação, seria…"
+   }
+  },
+  {
+   "expresion": "Fest steht inzwischen, dass…",
+   "funcion": "gesicherten Befund vom Berichteten abgrenzen",
+   "traducciones": {
+    "es": "a esta altura es un hecho que…",
+    "de": "Fest steht inzwischen, dass…",
+    "fr": "Il est désormais établi que…",
+    "it": "Ormai è certo che…",
+    "pt": "Entretanto é certo que…"
    }
   }
  ],

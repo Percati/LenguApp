@@ -1,10 +1,18 @@
 {
   "idioma": "de",
   "_nota": "Las listas NO se versionan en el repo. Descargarlas de goethe.de y colocarlas en fuentes/. Agregar aqui cada version nueva o antigua que se consiga: cuantas mas versiones, mas completa la base y mejor la deteccion de niveles disputados.",
+  "_nota_niveles_altos": "El Goethe solo publica lista oficial gratuita hasta B1: por encima de ese nivel no existe equivalente. Por eso B2/C1/C2 se apoyan en el Lernwortschatz de los manuales (formato 'manual'). Esos PDF son escaneos sin capa de texto: antes de construir hay que pasarles OCR con tesseract -l deu (ver _ocr) y guardar el .txt junto al PDF. Sigue faltando B2 y C2 atestiguados; ver FALTANTES.md.",
+  "_ocr": "pdftoppm -r 300 -gray -png entrada.pdf p && for i in p-*.png; do tesseract \"$i\" \"${i%.png}\" -l deu --psm 4; done && cat p-*.txt > salida.txt",
   "fuentes": [
+    {"id": "frecuencia-de", "formato": "frecuencia", "archivo": "fuentes/A_Frequency_Dictionary_of_German.pdf", "_uso": "lista blanca para filtrar el ruido del OCR. NO aporta nivel MCER: un diccionario de frecuencia ordena por uso, no por dificultad."},
+
     {"id": "goethe-a1-fit1", "nivel": "A1", "anio": 2024, "archivo": "fuentes/GoetheZertifikat_A1_Fit1_Wortliste.pdf", "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A1_Fit1_Wortliste.pdf"},
     {"id": "goethe-a2",      "nivel": "A2", "anio": 2016, "archivo": "fuentes/GoetheZertifikat_A2_Wortliste.pdf", "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf"},
     {"id": "goethe-b1",      "nivel": "B1", "anio": 2016, "archivo": "fuentes/Goethe-Zertifikat_B1_Wortliste.pdf", "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf"},
-    {"id": "dtz",            "nivel": "B1", "anio": 2009, "archivo": "fuentes/dtz_wortliste.pdf", "url": "https://www.goethe.de/pro/relaunch/prf/de/dtz_wortliste.pdf"}
+    {"id": "dtz",            "nivel": "B1", "anio": 2009, "archivo": "fuentes/dtz_wortliste.pdf", "url": "https://www.goethe.de/pro/relaunch/prf/de/dtz_wortliste.pdf"},
+
+    {"id": "sicher-c1",  "nivel": "C1", "anio": 2019, "formato": "manual", "archivo": "fuentes/Sicher_C1_Lernwortschatz.txt", "_fuente": "Sicher! C1.1 y C1.2 (Hueber), Lernwortschatz por leccion"},
+    {"id": "aspekte-c1", "nivel": "C1", "anio": 2015, "formato": "manual", "archivo": "fuentes/Aspekte_neu_C1_Wortschatz.txt", "_fuente": "Aspekte neu C1 (Klett), Wortschatz por modulo"},
+    {"id": "erkundungen-c1", "nivel": "C1", "anio": 2021, "formato": "manual", "archivo": "fuentes/Erkundungen_C1_Rueckblick.txt", "_fuente": "Erkundungen C1 (Schubert), Rueckblick: Wortschatz por capitulo"}
   ]
 }
