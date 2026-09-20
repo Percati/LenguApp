@@ -37,3 +37,12 @@ memoria de proyecto de Claude) — son sobre el proceso de construirlo.
   inglés gramatical pero no idiomático, justo lo contrario del objetivo de producción oral.
   Se detecta cruzando los `item` de un pack con las `traducciones[de]` del otro: >=60 % de
   coincidencia es señal de calco. Reescritos en sept-2026; regla documentada en el prompt.
+- **La lista de alemán verifica poco del contenido C1, y eso es esperable.** De los 672
+  ítems de DE C1, solo 84 se verifican directamente: 245 son expresiones de varias
+  palabras (no están en una lista de lemas) y 143 son compuestos cuyo núcleo sí figura
+  (`Arbeitsbelastung` → `Belastung`). La lista sale de Lernwortschätze de manuales, que
+  listan lemas simples, no compuestos ni colocaciones. Sirve para descartar nivel
+  equivocado, no como fuente de la que extraer packs. Al verificar hay que normalizar
+  ß→ss: la lista viene con ss (`einfliessen`, `grossen`).
+- **DE B2 y DE C2 no tienen lista oficial contra la que verificar** (el Goethe no publica
+  Wortliste por encima de B1). Los packs de esos pares van sin verificación externa.
