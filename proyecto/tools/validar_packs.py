@@ -7,6 +7,10 @@ Chequea, para cada pack de contenido/packs/:
   - entre 10 y 18 items;
   - continuidad: entre packs n y n+1 del mismo idioma/nivel/año/tema,
     30-80 % de items compartidos (sobre el tamaño del pack n+1);
+  - calco entre idiomas: >=60 % de coincidencia entre los items de un pack y las
+    traducciones del pack del otro idioma (mismo nivel/tema/n) cuenta como problema
+    de B2 en adelante; en A2/B1 solo se informa, porque el vocabulario núcleo de esos
+    niveles es el mismo en cualquier idioma;
   - con --anio, solo se validan los packs de ese año, y se reporta la cobertura contra data/calendarios/{anio}-{idioma}-{nivel}.json.
 
 Uso:  python3 proyecto/tools/validar_packs.py [--anio 2027]
@@ -64,6 +68,35 @@ def main():
                 print(f"PRIORIDAD  {nombre}: {it.get('item')!r} -> {it.get('prioridad')!r}")
         clave = (d["idioma"], d["nivel"], d["anio"], d["topicId"])
         cadenas[clave][d["n"]] = {it["item"].strip().lower() for it in voc}
+
+    # calco entre idiomas: items de un pack vs traducciones del pack del otro idioma
+    # (mismo nivel, año, tema y n). >=60 % indica que uno se escribió traduciendo al otro.
+    avisos_calco = 0
+    por_clave = {}
+    for ruta in sorted(glob.glob(os.path.join(BASE, "contenido", "packs", "*.json"))):
+        d = cargar(ruta)
+        if args.anio and d["anio"] != args.anio:
+            continue
+        por_clave[(d["idioma"], d["nivel"], d["anio"], d["topicId"], d["n"])] = d
+    for (idi, niv, anio, top, n), d in sorted(por_clave.items()):
+        otro = "de" if idi == "en" else "en"
+        o = por_clave.get((otro, niv, anio, top, n))
+        if not o:
+            continue
+        items = {it["item"].strip().lower() for it in o["vocabulario"]}
+        trad = {it["traducciones"].get(otro, "").strip().lower() for it in d["vocabulario"]}
+        pct = len(items & trad) / len(d["vocabulario"]) * 100
+        if pct >= 60:
+            if niv in ("A2", "B1"):
+                # en niveles bajos el vocabulario núcleo es universal (bank, doctor, cash):
+                # coincidir en conceptos es esperable y no es calco de estructura
+                avisos_calco += 1
+            else:
+                problemas += 1
+                print(f"CALCO  {idi}-{niv}-{anio}-{top}-{n} vs {otro}: {pct:.0f}%")
+
+    if avisos_calco:
+        print(f"Aviso: {avisos_calco} packs A2/B1 comparten >=60 % de conceptos con el otro idioma (esperable en niveles bajos; no bloquea)")
 
     transiciones = 0
     for clave, cadena in sorted(cadenas.items()):

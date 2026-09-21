@@ -54,3 +54,9 @@ memoria de proyecto de Claude) — son sobre el proceso de construirlo.
   "no está en la fuente A2 cargada", NO "es demasiado difícil". No sirve para descartar
   ítems de un pack A2 de forma automática; sí sirve en sentido inverso (si algo aparece
   como C1, conviene mirarlo).
+- **Escribir los dos idiomas de un nivel uno detrás del otro reintroduce el calco.** Al
+  escribir EN-C2 y enseguida DE-C2 sobre los mismos temas, el alemán salió con ~50 % de
+  solapamiento conceptual con el inglés (7 packs sobre 60 %). Se rehízo DE-C2 anclándolo
+  en conceptos propios del mundo germanohablante (Mitbestimmung, Mietspiegel, Kehrwoche,
+  Energiewende, Vereinswesen, Amtsdeutsch...) y quedó en ~1 %. Desde sept-2026 el chequeo
+  de calco está dentro de `tools/validar_packs.py` (bloquea de B2 en adelante; en A2/B1 solo avisa, porque ahí el vocabulario núcleo es universal y coincidir en conceptos es correcto).
