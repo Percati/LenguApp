@@ -46,7 +46,11 @@
   "Ending a suggestion with a soft tag (if that works for you) makes it sound less like an instruction."
  ],
  "contraste": {
-  "es": "El español hace sugerencias de forma similar con podríamos, así que la estructura transfiere bien. El inglés espera could de forma casi automática en las sugerencias, mientras que el español también tolera el indicativo con más naturalidad."
+  "es": "Podríamos corresponds to we could, so suggestions transfer well. Spanish also suggests with the present (¿vamos al cine?), which translates as Do we go to the cinema? instead of Shall we go…? or Let's go….",
+  "de": "Wir könnten corresponds to we could, wollen wir…? to shall we…?, and lass uns to let's. Suggestions therefore transfer almost word for word.",
+  "it": "Potremmo corresponds to we could, and perché non…? to why don't we…?. Suggestions in the present (andiamo al cinema?) should become Shall we go…? or Let's go… rather than Do we go…?",
+  "fr": "On pourrait corresponds to we could, and et si on allait… ? to what if we went…?, even with the same past tense. On va au cinéma ? should become Shall we go…? rather than Do we go…?",
+  "pt": "Podíamos or poderíamos corresponds to we could, and que tal…? to what about…?. Vamos ao cinema? should become Shall we go…? or Let's go… rather than Do we go…?"
  },
  "errores": [
   "Making a suggestion with can instead of could, which sounds more like a statement of fact than a suggestion.",
