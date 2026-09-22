@@ -47,17 +47,19 @@ Antes de que Traducciones pueda trabajar acá, hace falta decidir la forma del c
 
 ## 5. Audio
 
-✅ **Ejemplos con `"audio": true`: 716/716 grabados** (los 296 que faltaban, grabados el 22-09 e importados desde el Excel de seguimiento). `validar_apariciones.py --anio 2027` ya no da avisos de audio.
+✅ **Ejemplos con `"audio": true`: 716/716.** `validar_apariciones.py --anio 2027` no da avisos de audio.
 
-🔴 **Los 296 `.wav` nuevos no están en el repo todavía.** `audio-estado.json` registra 2202 archivos y `app/src/main/assets/audio/` tiene 1906. Hay que copiarlos a `assets/audio/DE/` y `assets/audio/EN/` y commitearlos; `sincronizar_audio_estado.py --dry-run` lista los que falten (tiene que dar 0).
+✅ **Expresiones y vocabulario de A2, B1, B2 y C1: grabados** (22-09). `audio-estado.json` registra 5266 archivos: 2749 EN y 2517 DE, que es lo que hay en los assets de Fer.
 
-🟡 **Peso:** los audios son WAV PCM 16 bit, 22 kHz mono: 139 MB con 1906 archivos, ~160 MB con los nuevos. La decisión tomada es comprimir a 24-32 kbps (del orden de 20 MB en total), pendiente de definir formato y si se renombran las extensiones en el estado.
+🔴 **Falta C2 entero: 1102 textos** (553 alemán, 549 inglés; 303 expresiones y 799 ítems de vocabulario). En el Excel devuelto venían marcados como grabados pero sin nombre de archivo, así que el importador los dejó como pendientes: una marca sin archivo no cuenta.
 
-🟡 **Duplicados por nivel:** 56 textos tienen una segunda grabación de otro nivel (`otrosArchivos`: 47 viejos B2/C1 y 9 nuevos A2/B1). La app reproduce por texto, así que sobran; sin decidir si se borran.
+🔴 **Los `.wav` no están en el repo.** `assets/audio/` tiene 1906 archivos commiteados y el estado registra 5266. Los demás están solo en la copia local de Fer, que prefiere mantenerlos ahí por ahora. Sin ellos, un clon del repo no puede compilar la app completa. `sincronizar_audio_estado.py --dry-run` lista los ausentes.
 
-🟡 **Expresiones y vocabulario sin grabar: 4166 textos únicos** (4807 filas; 641 son el mismo texto en otro nivel y se marcan "no grabar: se graba en A2", para no crear más duplicados por nivel). Excel entregado a Fer el 22-09 para generarlos.
+🟡 **Peso:** WAV PCM 16 bit, 22 kHz mono. La decisión tomada es comprimir a 24-32 kbps antes de publicar; falta definir formato y si cambia la extensión en el estado.
 
-`audio-a-grabar.xlsx` es el **Excel de seguimiento**: se regenera con `exportar_audio_maestro.py --anio 2027` (todo) o `--pendientes-tipos Ejemplo` (solo ejemplos pendientes) y conserva la marca con fecha de cada grabación (campo `marca` de `audio-estado.json`).
+✅ **Duplicados por nivel:** se conservan (decisión de Fer, sept 2026). Son 56 textos con una segunda grabación en otro nivel, campo `otrosArchivos`; ya comprimidos pesan menos de 1 MB. Desde el Excel de seguimiento no se generan nuevos: un texto pendiente en varios niveles se marca "no grabar: se graba en <nivel más bajo>".
+
+`audio-a-grabar.xlsx` es el **Excel de seguimiento**: se regenera con `exportar_audio_maestro.py --anio 2027` y conserva la marca con fecha de cada grabación (campo `marca` de `audio-estado.json`).
 
 ## 6. Traducciones
 

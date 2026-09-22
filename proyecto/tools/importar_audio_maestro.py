@@ -83,6 +83,17 @@ def main():
             estado[k] = entrada
             marcados += 1
 
+    # Una marca sin nombre de archivo no prueba nada: si la entrada quedo sin
+    # archivo (ni propio ni de otro nivel), NO se da por grabada. Evita que una
+    # columna "Grabado" marcada de mas borre el pendiente del radar.
+    vacias = [k for k, v in estado.items()
+              if isinstance(v, dict) and v.get("grabado") and not v.get("archivo")]
+    for k in vacias:
+        estado[k]["grabado"] = False
+        estado[k].pop("marca", None)
+    if vacias:
+        print(f"{len(vacias)} marcadas sin archivo: quedan como NO grabadas")
+
     estado_path.write_text(json.dumps(estado, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{marcados} marcas de 'grabado' guardadas en {a.estado}")
 
