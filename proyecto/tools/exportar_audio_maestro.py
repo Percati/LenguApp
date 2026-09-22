@@ -20,6 +20,11 @@ Uso:
     # solo lo que falta grabar, y solo ejemplos (la tanda de trabajo):
     python3 exportar_audio_maestro.py --solo-pendientes --tipos Ejemplo --salida ../audio-a-grabar.xlsx
 
+Con --anio AAAA se agrega la columna H "Primera semana": la primera semana
+ISO de ese anio en que el texto aparece en la app (por el calendario del
+par). Dentro de cada nivel las filas se ordenan por esa semana, para grabar
+primero lo que se necesita antes.
+
 La columna G "Archivo sugerido" propone el nombre con la convencion de los
 .wav ya grabados: IDIOMA_NIVEL_<primeras 6 palabras>_<origen>.wav, con sufijo
 _02, _03... si choca con un archivo existente. El importador no la lee: solo
@@ -109,15 +114,42 @@ def recolectar(base):
     return datos
 
 
-def hoja_idioma(wb, idioma, por_nivel, estado, ocupados):
+def primeras_semanas(raiz, anio):
+    """{(idioma, nivel, tipo, texto): semana ISO de la primera aparicion}."""
+    sem = {}
+    for p in sorted(raiz.joinpath("contenido/ocurrencias").glob(f"*-{anio}.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        idi, niv = d["idioma"], d["nivel"]
+        cal = json.loads(raiz.joinpath(f"data/calendarios/{anio}-{idi}-{niv}.json")
+                         .read_text(encoding="utf-8"))
+        cal = [c for c in cal if c["tipo"] == "content"]
+        for o, c in zip(d["apariciones"], cal):
+            s = c["semana"]
+            nuc = json.loads(raiz.joinpath(f"contenido/nucleos/{o['skillId']}-{niv}.json")
+                             .read_text(encoding="utf-8"))
+            textos = [("Ejemplo", e["texto"]) for e in nuc.get("ejemplos", []) if e.get("audio")]
+            textos += [("Expresión", r["expresion"]) for r in nuc.get("redemittel", [])]
+            pk = raiz.joinpath(f"contenido/packs/{o['packId']}.json")
+            if pk.exists():
+                pack = json.loads(pk.read_text(encoding="utf-8"))
+                textos += [("Vocabulario", v["item"]) for v in pack.get("vocabulario", [])]
+            for tipo, t in textos:
+                k = (idi, niv, tipo, limpio(t))
+                sem[k] = min(sem.get(k, 99), s)
+    return sem
+
+
+def hoja_idioma(wb, idioma, por_nivel, estado, ocupados, semanas=None):
     ws = wb.create_sheet(NOMBRE[idioma][:31])
     ws.freeze_panes = "A3"
     ws["A1"] = f"Audio a grabar — {NOMBRE[idioma]}"
     ws["A1"].font = Font(bold=True, size=13)
 
     fila = 2
-    for j, t in enumerate(["Nivel", "Tipo", "Texto", "Origen", "Grabado", "Archivo audio",
-                           "Archivo sugerido"], start=1):
+    cols = ["Nivel", "Tipo", "Texto", "Origen", "Grabado", "Archivo audio", "Archivo sugerido"]
+    if semanas is not None:
+        cols.append("Primera semana")
+    for j, t in enumerate(cols, start=1):
         c = ws.cell(row=fila, column=j, value=t)
         c.font = Font(bold=True, color="FFFFFF"); c.fill = CABEZA
     ws.column_dimensions["A"].width = 8
@@ -127,6 +159,9 @@ def hoja_idioma(wb, idioma, por_nivel, estado, ocupados):
     ws.column_dimensions["E"].width = 10
     ws.column_dimensions["F"].width = 45
     ws.column_dimensions["G"].width = 50
+    ws.column_dimensions["H"].width = 15
+    sem = (lambda niv, tipo, t: semanas.get((idioma, niv, tipo, t))) if semanas is not None \
+        else (lambda *x: None)
 
     for niv in ORDEN_NIVEL:
         filas = por_nivel.get(niv, [])
@@ -137,7 +172,8 @@ def hoja_idioma(wb, idioma, por_nivel, estado, ocupados):
         c.font = Font(bold=True); c.fill = NIVEL_FILL
         for j in range(2, 6):
             ws.cell(row=fila, column=j).fill = NIVEL_FILL
-        for tipo, texto, origen in sorted(filas, key=lambda x: (x[0], x[1])):
+        for tipo, texto, origen in sorted(filas, key=lambda x: (sem(niv, x[0], x[1]) or 99,
+                                                                x[0], x[1])):
             fila += 1
             ws.cell(row=fila, column=1, value=niv).border = BORDE
             ws.cell(row=fila, column=2, value=tipo).border = BORDE
@@ -152,6 +188,8 @@ def hoja_idioma(wb, idioma, por_nivel, estado, ocupados):
                 c = ws.cell(row=fila, column=7,
                             value=archivo_sugerido(idioma, niv, texto, origen, ocupados))
                 c.border = BORDE; c.font = Font(color="777777")
+            if semanas is not None:
+                ws.cell(row=fila, column=8, value=sem(niv, tipo, texto)).border = BORDE
     return sum(len(v) for v in por_nivel.values())  # sin contar separadores de nivel
 
 
@@ -165,6 +203,8 @@ def main():
                     help="carpeta de .wav, para que el nombre sugerido no choque")
     ap.add_argument("--solo-pendientes", action="store_true",
                     help="omitir lo ya grabado segun audio-estado.json")
+    ap.add_argument("--anio", type=int,
+                    help="agrega la primera semana de aparicion en ese anio y ordena por ella")
     ap.add_argument("--tipos", nargs="+", choices=["Ejemplo", "Expresión", "Vocabulario"],
                     help="limitar a estos tipos (por defecto, todos)")
     a = ap.parse_args()
@@ -184,6 +224,8 @@ def main():
             for f in [v.get("archivo", "")] + v.get("otrosArchivos", []):
                 if f:
                     ocupados.add(Path(f).stem)
+
+    semanas = primeras_semanas(Path(a.contenido).resolve().parent, a.anio) if a.anio else None
 
     wb = openpyxl.Workbook()
     idx = wb.active; idx.title = "ÍNDICE"
@@ -205,7 +247,7 @@ def main():
     for idi in sorted(datos, key=lambda x: NOMBRE[x]):
         if not any(datos[idi].values()):
             continue
-        n = hoja_idioma(wb, idi, datos[idi], estado, ocupados)
+        n = hoja_idioma(wb, idi, datos[idi], estado, ocupados, semanas)
         idx.cell(row=fila, column=1, value=NOMBRE[idi])
         idx.cell(row=fila, column=2, value=n)
         total += n
