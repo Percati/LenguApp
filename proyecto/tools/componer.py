@@ -54,6 +54,10 @@ def main():
         packs[p.stem] = json.loads(p.read_text(encoding="utf-8"))
 
     n, fallos = 0, 0
+    # id -> archivo de ocurrencias que lo produjo. El id no lleva anio, asi que
+    # dos ediciones del mismo par (idioma, nivel) pueden generar el mismo id y
+    # la segunda pisaria en silencio a la primera en build/ (y en assets/).
+    vistos = {}
     for p in sorted(base.joinpath("ocurrencias").glob("*.json")):
         doc = json.loads(p.read_text(encoding="utf-8"))
         for ocu in doc["apariciones"]:
@@ -73,6 +77,13 @@ def main():
             f["id"] = f'{ocu["skillId"]}-{doc["nivel"]}-{ocu["order"]}'
             f = {k: f[k] for k in ORDEN if k in f}
 
+            if f["id"] in vistos:
+                print(f"  ! id duplicado {f['id']}: {vistos[f['id']]} y {p.name}",
+                      file=sys.stderr)
+                fallos += 1
+                continue
+            vistos[f["id"]] = p.name
+
             if val:
                 errs = list(val.iter_errors(f))
                 if errs:
@@ -85,6 +96,12 @@ def main():
             n += 1
 
     for d in especiales:
+        if d["id"] in vistos:
+            print(f"  ! id duplicado {d['id']}: semana especial y {vistos[d['id']]}",
+                  file=sys.stderr)
+            fallos += 1
+            continue
+        vistos[d["id"]] = "nucleos/"
         out.joinpath(d["id"] + ".json").write_text(
             json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
 
