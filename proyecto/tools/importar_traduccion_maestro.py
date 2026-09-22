@@ -69,6 +69,126 @@ def leer_hoja(ws, idioma_aprendido):
     return out
 
 
+
+
+# --------------------------------------------------------------------------
+# Escritura que conserva el formato del archivo
+# --------------------------------------------------------------------------
+# Varios archivos de contenido estan formateados a mano (varias claves por
+# linea, tablas alineadas). Volcarlos con json.dumps los reescribe enteros y
+# el diff del commit tapa el cambio real. Por eso se reemplaza en el TEXTO
+# solo el tramo de cada valor que cambio, y se comprueba que el JSON
+# resultante sea identico al objeto ya modificado. Si algo no calza, se cae
+# al volcado completo, que siempre es correcto aunque sea feo.
+
+def _fin_string(t, i):
+    i += 1
+    while t[i] != '"':
+        i += 2 if t[i] == "\\" else 1
+    return i + 1
+
+
+def _fin_valor(t, i):
+    if t[i] == '"':
+        return _fin_string(t, i)
+    if t[i] in "{[":
+        hondo = 0
+        while True:
+            if t[i] == '"':
+                i = _fin_string(t, i); continue
+            if t[i] in "{[":
+                hondo += 1
+            elif t[i] in "}]":
+                hondo -= 1
+                if hondo == 0:
+                    return i + 1
+            i += 1
+    j = i
+    while t[j] not in ",}]" and not t[j].isspace():
+        j += 1
+    return j
+
+
+def _saltar(t, i):
+    while t[i].isspace():
+        i += 1
+    return i
+
+
+def _tramo(t, ruta, i=0):
+    """(inicio, fin) del valor que vive en `ruta` dentro del texto JSON."""
+    i = _saltar(t, i)
+    if not ruta:
+        return i, _fin_valor(t, i)
+    paso, resto = ruta[0], ruta[1:]
+    if isinstance(paso, str):
+        assert t[i] == "{"
+        i = _saltar(t, i + 1)
+        while t[i] != "}":
+            fin_clave = _fin_string(t, i)
+            clave = json.loads(t[i:fin_clave])
+            i = _saltar(t, fin_clave)
+            assert t[i] == ":"
+            ini_val = _saltar(t, i + 1)
+            fin_val = _fin_valor(t, ini_val)
+            if clave == paso:
+                return _tramo(t, resto, ini_val)
+            i = _saltar(t, fin_val)
+            if t[i] == ",":
+                i = _saltar(t, i + 1)
+        raise KeyError(paso)
+    assert t[i] == "["
+    i = _saltar(t, i + 1)
+    n = 0
+    while t[i] != "]":
+        fin_val = _fin_valor(t, i)
+        if n == paso:
+            return _tramo(t, resto, i)
+        n += 1
+        i = _saltar(t, fin_val)
+        if t[i] == ",":
+            i = _saltar(t, i + 1)
+    raise IndexError(paso)
+
+
+def _sangria(t, i):
+    """Sangria de la linea donde empieza el valor (no la columna del valor)."""
+    ini = t.rfind("\n", 0, i) + 1
+    linea = t[ini:i]
+    return linea[:len(linea) - len(linea.lstrip())]
+
+
+def _serializar(valor, sangria):
+    """Objeto {idioma: texto} en varias lineas, con la sangria del lugar."""
+    dentro = sangria + " "
+    cuerpo = ",\n".join(dentro + json.dumps(k, ensure_ascii=False) + ": "
+                        + json.dumps(v, ensure_ascii=False) for k, v in valor.items())
+    return "{\n" + cuerpo + "\n" + sangria + "}"
+
+
+def escribir(p, original, destino, cambios):
+    """Escribe `destino` en `p` tocando solo los tramos de `cambios`.
+
+    cambios: lista de (ruta, valor_nuevo), ruta como lista de claves/indices.
+    """
+    texto = original
+    try:
+        tramos = []
+        for ruta, valor in cambios:
+            ini, fin = _tramo(texto, ruta)
+            tramos.append((ini, fin, valor))
+        for ini, fin, valor in sorted(tramos, reverse=True):
+            texto = texto[:ini] + _serializar(valor, _sangria(texto, ini)) + texto[fin:]
+        if json.loads(texto) != destino:
+            raise ValueError("el texto reescrito no coincide con el contenido")
+        p.write_text(texto, encoding="utf-8")
+        return True
+    except Exception as e:
+        print(f"  formato: {p.name} se reescribe entero ({e})", file=sys.stderr)
+        p.write_text(json.dumps(destino, ensure_ascii=False, indent=1), encoding="utf-8")
+        return False
+
+
 # --------------------------------------------------------------------------
 # Prosa bilingue A2/B1
 # --------------------------------------------------------------------------
@@ -97,96 +217,116 @@ def leer_hoja_prosa(ws, idioma_aprendido):
     return out
 
 
-def _traducir(valor, idioma, datos, cuenta):
+def _traducir(valor, idioma, datos):
     """String plano u objeto -> objeto {idioma: texto, ...traducciones}.
 
-    No pisa ninguna clave que ya exista. Devuelve el valor nuevo.
+    Devuelve (valor_nuevo, cuantas_claves_se_agregaron) o (valor, 0) si no
+    hay nada que aplicar. No pisa ninguna clave que ya exista.
     """
     if isinstance(valor, str):
         vals = datos.get(valor)
         if not vals:
-            return valor
+            return valor, 0
         nuevo = {idioma: valor}
-        for cod, v in vals.items():
-            nuevo[cod] = v
-            cuenta[0] += 1
-        return nuevo
+        nuevo.update(vals)
+        return nuevo, len(vals)
     if isinstance(valor, dict):
         original = valor.get(idioma)
         vals = datos.get(original) if original else None
         if not vals:
-            return valor
-        for cod, v in vals.items():
-            if cod not in valor:
-                valor[cod] = v
-                cuenta[0] += 1
-        return valor
-    return valor
+            return valor, 0
+        faltan = {c: v for c, v in vals.items() if c not in valor}
+        valor.update(faltan)
+        return valor, len(faltan)
+    return valor, 0
 
 
-def _prosa_nucleo(d, idioma, datos, cuenta):
-    for clave in ("descripcion", "promptCorreccion"):
+def _aplicar(cont, clave, ruta, idioma, datos, cambios):
+    """Traduce cont[clave] y anota el cambio. Devuelve cuantas claves agrego."""
+    nuevo, n = _traducir(cont[clave], idioma, datos)
+    if n:
+        cont[clave] = nuevo
+        cambios.append((ruta, nuevo))
+    return n
+
+
+def _prosa_nucleo(d, idioma, datos, cambios):
+    n = 0
+    for clave in ("titulo", "descripcion", "promptCorreccion"):
         if clave in d:
-            d[clave] = _traducir(d[clave], idioma, datos, cuenta)
+            n += _aplicar(d, clave, [clave], idioma, datos, cambios)
     c = d.get("cuadroReferencia") or {}
-    if "titulo" in c:
-        c["titulo"] = _traducir(c["titulo"], idioma, datos, cuenta)
-    if "columnas" in c:
-        c["columnas"] = [_traducir(x, idioma, datos, cuenta) for x in c["columnas"]]
-    if "filas" in c:
-        c["filas"] = [[_traducir(x, idioma, datos, cuenta) for x in fila] for fila in c["filas"]]
-    if c.get("notaPie"):
-        c["notaPie"] = _traducir(c["notaPie"], idioma, datos, cuenta)
-    for e in d.get("ejemplos", []):
+    for clave in ("titulo", "notaPie"):
+        if c.get(clave):
+            n += _aplicar(c, clave, ["cuadroReferencia", clave], idioma, datos, cambios)
+    for i in range(len(c.get("columnas", []))):
+        n += _aplicar(c["columnas"], i, ["cuadroReferencia", "columnas", i], idioma, datos, cambios)
+    for i, fila in enumerate(c.get("filas", [])):
+        for j in range(len(fila)):
+            n += _aplicar(fila, j, ["cuadroReferencia", "filas", i, j], idioma, datos, cambios)
+    for i, e in enumerate(d.get("ejemplos", [])):
         if "texto" in e:
-            e["texto"] = _traducir(e["texto"], idioma, datos, cuenta)
+            n += _aplicar(e, "texto", ["ejemplos", i, "texto"], idioma, datos, cambios)
     for clave in ("notas", "errores", "autochequeo"):
         if isinstance(d.get(clave), list):
-            d[clave] = [_traducir(x, idioma, datos, cuenta) for x in d[clave]]
+            for i in range(len(d[clave])):
+                n += _aplicar(d[clave], i, [clave, i], idioma, datos, cambios)
+    for i, r in enumerate(d.get("redemittel", [])):
+        if "funcion" in r:
+            n += _aplicar(r, "funcion", ["redemittel", i, "funcion"], idioma, datos, cambios)
+    return n
 
 
-def _prosa_aparicion(a, idioma, datos, cuenta):
+def _prosa_aparicion(a, ruta_base, idioma, datos, cambios):
+    n = 0
     if "subtitulo" in a:
-        a["subtitulo"] = _traducir(a["subtitulo"], idioma, datos, cuenta)
+        n += _aplicar(a, "subtitulo", ruta_base + ["subtitulo"], idioma, datos, cambios)
     m = a.get("mision") or {}
     if "consigna" in m:
-        m["consigna"] = _traducir(m["consigna"], idioma, datos, cuenta)
-    if "requisitos" in m:
-        m["requisitos"] = [_traducir(x, idioma, datos, cuenta) for x in m["requisitos"]]
-    for mt in a.get("microtareas", []):
+        n += _aplicar(m, "consigna", ruta_base + ["mision", "consigna"], idioma, datos, cambios)
+    for i in range(len(m.get("requisitos", []))):
+        n += _aplicar(m["requisitos"], i, ruta_base + ["mision", "requisitos", i],
+                      idioma, datos, cambios)
+    for i, mt in enumerate(a.get("microtareas", [])):
         if "texto" in mt:
-            mt["texto"] = _traducir(mt["texto"], idioma, datos, cuenta)
+            n += _aplicar(mt, "texto", ruta_base + ["microtareas", i, "texto"],
+                          idioma, datos, cambios)
+    return n
 
 
 def volcar_prosa(base, por_combo):
-    """Escribe la prosa traducida en nucleos y ocurrencias. Devuelve (campos, celdas)."""
-    campos = 0
-    celdas = [0]
+    """Escribe la prosa traducida en nucleos y ocurrencias. Devuelve (archivos, celdas)."""
+    archivos = celdas = 0
     for p in sorted(base.joinpath("nucleos").glob("*.json")):
-        d = json.loads(p.read_text(encoding="utf-8"))
+        original = p.read_text(encoding="utf-8")
+        d = json.loads(original)
         if d.get("_tipo"):
             continue
         datos = por_combo.get((d["idioma"], d["nivel"]))
         if not datos:
             continue
-        antes = celdas[0]
-        _prosa_nucleo(d, d["idioma"], datos, celdas)
-        if celdas[0] != antes:
-            campos += 1
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+        cambios = []
+        n = _prosa_nucleo(d, d["idioma"], datos, cambios)
+        if n:
+            escribir(p, original, d, cambios)
+            archivos += 1
+            celdas += n
 
     for p in sorted(base.joinpath("ocurrencias").glob("*.json")):
-        d = json.loads(p.read_text(encoding="utf-8"))
+        original = p.read_text(encoding="utf-8")
+        d = json.loads(original)
         datos = por_combo.get((d["idioma"], d["nivel"]))
         if not datos:
             continue
-        antes = celdas[0]
-        for a in d["apariciones"]:
-            _prosa_aparicion(a, d["idioma"], datos, celdas)
-        if celdas[0] != antes:
-            campos += 1
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
-    return campos, celdas[0]
+        cambios = []
+        n = 0
+        for i, a in enumerate(d["apariciones"]):
+            n += _prosa_aparicion(a, ["apariciones", i], d["idioma"], datos, cambios)
+        if n:
+            escribir(p, original, d, cambios)
+            archivos += 1
+            celdas += n
+    return archivos, celdas
 
 
 def main():
@@ -217,42 +357,48 @@ def main():
 
     n_red = n_voc = 0
     for p in base.joinpath("nucleos").glob("*.json"):
-        d = json.loads(p.read_text(encoding="utf-8"))
+        original = p.read_text(encoding="utf-8")
+        d = json.loads(original)
         if d.get("_tipo"):
             continue
         idi, niv = d["idioma"], d["nivel"]
         datos = por_idioma.get(idi, {})
-        cambiado = False
-        for r in d.get("redemittel", []):
+        cambios = []
+        for i, r in enumerate(d.get("redemittel", [])):
             k = (niv, "Expresión", limpio(r["expresion"]))
             if k in datos:
-                for cod, val in datos[k].items():
-                    if cod not in r["traducciones"]:
-                        r["traducciones"][cod] = val
-                        cambiado = True; n_red += 1
-        if cambiado:
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+                nuevas = {cod: val for cod, val in datos[k].items()
+                          if cod not in r["traducciones"]}
+                if nuevas:
+                    r["traducciones"].update(nuevas)
+                    cambios.append((["redemittel", i, "traducciones"], r["traducciones"]))
+                    n_red += len(nuevas)
+        if cambios:
+            escribir(p, original, d, cambios)
 
     for p in base.joinpath("packs").glob("*.json"):
-        d = json.loads(p.read_text(encoding="utf-8"))
+        original = p.read_text(encoding="utf-8")
+        d = json.loads(original)
         idi, niv = d["idioma"], d["nivel"]
         datos = por_idioma.get(idi, {})
-        cambiado = False
-        for v in d.get("vocabulario", []):
+        cambios = []
+        for i, v in enumerate(d.get("vocabulario", [])):
             k = (niv, "Vocabulario", limpio(v["item"]))
             if k in datos:
-                for cod, val in datos[k].items():
-                    if cod not in v["traducciones"]:
-                        v["traducciones"][cod] = val
-                        cambiado = True; n_voc += 1
-        if cambiado:
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+                nuevas = {cod: val for cod, val in datos[k].items()
+                          if cod not in v["traducciones"]}
+                if nuevas:
+                    v["traducciones"].update(nuevas)
+                    cambios.append((["vocabulario", i, "traducciones"], v["traducciones"]))
+                    n_voc += len(nuevas)
+        if cambios:
+            escribir(p, original, d, cambios)
 
-    n_campos, n_celdas = volcar_prosa(base, por_combo)
+    n_archivos, n_celdas = volcar_prosa(base, por_combo)
 
     print(f"{n_red} expresiones y {n_voc} items de vocabulario actualizados en el contenido fuente.",
           file=sys.stderr)
-    print(f"Prosa A2/B1: {n_celdas} traducciones escritas en {n_campos} archivos.",
+    print(f"Prosa A2/B1: {n_celdas} traducciones escritas en {n_archivos} archivos.",
           file=sys.stderr)
     print("Volvé a correr exportar_traduccion_maestro.py: esas celdas ya van a salir verdes.",
           file=sys.stderr)

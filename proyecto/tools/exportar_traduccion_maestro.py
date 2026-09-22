@@ -51,6 +51,7 @@ LIMITES = {
     "errores": (10, None),
     "autochequeo": (10, None),
     "ejemplos": (5, None),
+    "titulo": (3, 80),
     "subtitulo": (5, 160),
     "mision.consigna": (30, None),
     "microtareas": (15, None),
@@ -174,6 +175,7 @@ def _valor(v):
 
 def _campos_nucleo(d):
     """(ruta, valor) de cada campo bilingue de un nucleo, en orden de lectura."""
+    yield "titulo", d.get("titulo")
     yield "descripcion", d.get("descripcion")
     c = d.get("cuadroReferencia") or {}
     if "titulo" in c:
@@ -190,6 +192,9 @@ def _campos_nucleo(d):
     for clave in ("notas", "errores", "autochequeo"):
         for i, t in enumerate(d.get(clave, [])):
             yield f"{clave}[{i}]", t
+    for i, r in enumerate(d.get("redemittel", [])):
+        if "funcion" in r:
+            yield f"redemittel[{i}].funcion", r["funcion"]
     yield "promptCorreccion", d.get("promptCorreccion")
 
 
