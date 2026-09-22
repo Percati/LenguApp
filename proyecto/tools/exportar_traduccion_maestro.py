@@ -7,9 +7,21 @@ aprende, agrupado por nivel dentro de cada hoja, formato identico entre
 hojas. La diferencia es que aqui cada fila lleva las columnas de destino que
 todavia faltan, marcadas con el idioma exacto al que hay que traducir.
 
-Cubre vocabulario y expresiones (de nucleos/packs). Deliberadamente NO cubre
-el contraste ni los errores contrastivos: no son traduccion, son analisis
-nuevo por cada par de idiomas, y los escribe el diseñador aparte.
+Cubre dos cosas:
+
+  1. Vocabulario y expresiones (de nucleos/packs), en una hoja por idioma que
+     se aprende.
+  2. Toda la prosa de las fichas bilingues A2/B1 (nucleos y apariciones), en
+     una hoja por combinacion (idioma + nivel). Segun reglas-fichas.md, en A2
+     y B1 la ficha entera se puede mostrar en el idioma de la app, asi que
+     cada campo de prosa necesita su traduccion a los otros cinco idiomas.
+     Los campos son los 13 que el schema declara bilingues (ver $comment,
+     "CAMPOS BILINGUES A2/B1"). La clave del propio idioma de la ficha no se
+     pide: es el texto original y la pone el importador.
+
+Deliberadamente NO cubre el contraste ni los errores contrastivos: no son
+traduccion, son analisis nuevo por cada par de idiomas, y los escribe el
+diseñador aparte.
 
 Uso:
     python3 exportar_traduccion_maestro.py --contenido ../contenido --salida ../traducciones-maestro.xlsx
@@ -26,6 +38,7 @@ IDIOMAS = ["de", "en", "es", "fr", "it", "pt"]
 NOMBRE = {"de": "Alemán", "en": "Inglés", "es": "Español",
           "fr": "Francés", "it": "Italiano", "pt": "Portugués"}
 ORDEN_NIVEL = ["A2", "B1", "B2", "C1", "C2"]
+NIVELES_BILINGUES = ["A2", "B1"]
 
 VERDE  = PatternFill("solid", fgColor="D9EAD3")
 AMBAR  = PatternFill("solid", fgColor="FFF2CC")
@@ -119,18 +132,141 @@ def hoja_idioma(wb, idioma, por_nivel):
     return tot_celdas
 
 
+# --------------------------------------------------------------------------
+# Prosa bilingue A2/B1
+# --------------------------------------------------------------------------
+def _valor(v):
+    """Devuelve (texto_original, traducciones) para un campo bilingue.
+
+    El campo puede ser un string plano (nadie lo tradujo todavia) o el objeto
+    {idioma: texto} que admite el schema. En el objeto, el texto original es
+    la clave del idioma que se aprende.
+    """
+    if isinstance(v, dict):
+        return None, dict(v)
+    return v, {}
+
+
+def _campos_nucleo(d):
+    """(ruta, valor) de cada campo bilingue de un nucleo, en orden de lectura."""
+    yield "descripcion", d.get("descripcion")
+    c = d.get("cuadroReferencia") or {}
+    if "titulo" in c:
+        yield "cuadroReferencia.titulo", c["titulo"]
+    for i, col in enumerate(c.get("columnas", [])):
+        yield f"cuadroReferencia.columnas[{i}]", col
+    for i, fila in enumerate(c.get("filas", [])):
+        for j, celda in enumerate(fila):
+            yield f"cuadroReferencia.filas[{i}][{j}]", celda
+    if c.get("notaPie"):
+        yield "cuadroReferencia.notaPie", c["notaPie"]
+    for i, e in enumerate(d.get("ejemplos", [])):
+        yield f"ejemplos[{i}].texto", e.get("texto")
+    for clave in ("notas", "errores", "autochequeo"):
+        for i, t in enumerate(d.get(clave, [])):
+            yield f"{clave}[{i}]", t
+    yield "promptCorreccion", d.get("promptCorreccion")
+
+
+def _campos_aparicion(a):
+    yield "subtitulo", a.get("subtitulo")
+    m = a.get("mision") or {}
+    if "consigna" in m:
+        yield "mision.consigna", m["consigna"]
+    for i, r in enumerate(m.get("requisitos", [])):
+        yield f"mision.requisitos[{i}]", r
+    for i, mt in enumerate(a.get("microtareas", [])):
+        yield f"microtareas[{i}].texto", mt.get("texto")
+
+
+def recolectar_prosa(base):
+    """{(idioma, nivel): [(origen, ruta, texto, traducciones)]}."""
+    datos = defaultdict(list)
+
+    for p in sorted(base.joinpath("nucleos").glob("*.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        if d.get("_tipo") or d["nivel"] not in NIVELES_BILINGUES:
+            continue
+        origen = f'{d["skillId"]}-{d["nivel"]}'
+        for ruta, v in _campos_nucleo(d):
+            if v is None:
+                continue
+            texto, trads = _valor(v)
+            datos[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads))
+
+    for p in sorted(base.joinpath("ocurrencias").glob("*.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        if d["nivel"] not in NIVELES_BILINGUES:
+            continue
+        for a in d["apariciones"]:
+            origen = f'{d["idioma"]}-{d["nivel"]}-{d["anio"]} · {a["skillId"]} · {a.get("topicId","")} · ap{a.get("order","")}'
+            for ruta, v in _campos_aparicion(a):
+                if v is None:
+                    continue
+                texto, trads = _valor(v)
+                datos[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads))
+    return datos
+
+
+def hoja_prosa(wb, idioma, nivel, filas):
+    bases = [i for i in IDIOMAS if i != idioma]
+    ws = wb.create_sheet(f"Prosa {idioma.upper()} {nivel}"[:31])
+    ws.freeze_panes = "A4"
+    ws["A1"] = f"Prosa bilingüe — {NOMBRE[idioma]} {nivel}"
+    ws["A1"].font = Font(bold=True, size=13)
+    ws["A2"] = ("Verde = ya existe, no tocar. Ámbar = falta traducir. El texto original "
+                f"queda como clave «{idioma}» del campo y lo pone el importador: no hay que copiarlo.")
+    ws["A2"].font = Font(size=9, color="7F6000")
+
+    cab = ["Origen", "Campo", f"{NOMBRE[idioma]} — original"] + [NOMBRE[b] for b in bases]
+    fila = 3
+    for j, t in enumerate(cab, start=1):
+        c = ws.cell(row=fila, column=j, value=t)
+        c.font = Font(bold=True, color="FFFFFF", size=9); c.fill = CABEZA
+        c.alignment = Alignment(wrap_text=True, horizontal="center")
+    for i, a_ in enumerate([26, 24, 46] + [30] * len(bases), start=1):
+        ws.column_dimensions[get_column_letter(i)].width = a_
+
+    tot = 0
+    origen_actual = None
+    for origen, ruta, texto, trads in filas:
+        if origen != origen_actual:
+            origen_actual = origen
+            fila += 1
+            c = ws.cell(row=fila, column=1, value=origen)
+            c.font = Font(bold=True); c.fill = NIVEL_FILL
+            for j in range(2, len(cab) + 1):
+                ws.cell(row=fila, column=j).fill = NIVEL_FILL
+        fila += 1
+        ws.cell(row=fila, column=1, value=origen).border = BORDE
+        ws.cell(row=fila, column=2, value=ruta).border = BORDE
+        c = ws.cell(row=fila, column=3, value=texto if texto is not None else trads.get(idioma, ""))
+        c.fill = GRIS; c.border = BORDE; c.alignment = Alignment(wrap_text=True)
+        for j, b in enumerate(bases, start=4):
+            cel = ws.cell(row=fila, column=j)
+            if b in trads:
+                cel.value = trads[b]; cel.fill = VERDE
+            else:
+                cel.fill = AMBAR; tot += 1
+            cel.border = BORDE; cel.alignment = Alignment(wrap_text=True)
+    return tot
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--contenido", default="../contenido")
     ap.add_argument("--salida", default="../traducciones-maestro.xlsx")
     a = ap.parse_args()
     datos = recolectar(Path(a.contenido))
+    prosa = recolectar_prosa(Path(a.contenido))
 
     wb = openpyxl.Workbook()
     idx = wb.active; idx.title = "ÍNDICE"
     idx["A1"] = "Maestro de traducciones pendientes"
     idx["A1"].font = Font(bold=True, size=14)
-    idx["A2"] = ("Una hoja por idioma que se aprende. Rellenar solo las celdas en ámbar. "
+    idx["A2"] = ("Dos bloques: una hoja por idioma que se aprende con vocabulario y "
+                 "expresiones, y una hoja por combinación (idioma + nivel) con toda la prosa "
+                 "de las fichas bilingües A2/B1. Rellenar solo las celdas en ámbar. "
                  "No incluye contraste ni errores contrastivos: eso no es traducción, es "
                  "análisis nuevo por cada par de idiomas y lo escribe el diseñador aparte.")
     idx["A2"].font = Font(size=9, color="555555")
@@ -147,6 +283,17 @@ def main():
     for idi in sorted(datos, key=lambda x: NOMBRE[x]):
         n = hoja_idioma(wb, idi, datos[idi])
         idx.cell(row=fila, column=1, value=NOMBRE[idi])
+        idx.cell(row=fila, column=2, value=n)
+        total += n
+        fila += 1
+    fila += 1
+    c = idx.cell(row=fila, column=1, value="Prosa bilingüe A2/B1 (núcleos + apariciones)")
+    c.font = Font(bold=True, color="FFFFFF"); c.fill = CABEZA
+    idx.cell(row=fila, column=2).fill = CABEZA
+    fila += 1
+    for (idi, niv) in sorted(prosa, key=lambda x: (NOMBRE[x[0]], ORDEN_NIVEL.index(x[1]))):
+        n = hoja_prosa(wb, idi, niv, prosa[(idi, niv)])
+        idx.cell(row=fila, column=1, value=f"{NOMBRE[idi]} {niv} — {len(prosa[(idi, niv)])} textos")
         idx.cell(row=fila, column=2, value=n)
         total += n
         fila += 1
