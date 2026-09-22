@@ -61,7 +61,7 @@ Antes de que Traducciones pueda trabajar acá, hace falta decidir la forma del c
 
 `validar_apariciones.py --anio 2027` emite 573 avisos de audio para esos 296 textos: cuenta un aviso por semana en que aparece el núcleo, no por texto.
 
-`audio-a-grabar.xlsx` con la lista exacta: `exportar_audio_maestro.py --solo-pendientes --tipos Ejemplo --anio 2027` (la columna «Primera semana» ordena cada nivel por cuándo se necesita el audio). En la conversación de Audio, esperando que Fer lo grabe.
+`audio-a-grabar.xlsx` es el **Excel de seguimiento**: todo lo grabado (con la marca y fecha que puso Fer, guardadas en el campo `marca` de `audio-estado.json`) más los 296 ejemplos pendientes, arriba de cada nivel y ordenados por primera semana de 2027. Se regenera con `exportar_audio_maestro.py --pendientes-tipos Ejemplo --anio 2027` y se reimporta con `importar_audio_maestro.py` sin perder nada (ida y vuelta verificada). 339 filas figuran grabadas porque reusan el audio del mismo texto en otro nivel; la columna G lo indica.
 
 🟡 Fuera de los ejemplos, sin grabar: ~800 expresiones (redemittel) y ~4000 ítems de vocabulario, casi todo A2, B1, C2 y los packs 2027. Sin decidir si se graban.
 

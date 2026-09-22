@@ -17,7 +17,10 @@ nuevo y reemplaza el archivo entero. No hace falta fusionar a mano.
 Uso:
     python3 exportar_audio_maestro.py --contenido ../contenido --salida ../auditoria-audio.xlsx
 
-    # solo lo que falta grabar, y solo ejemplos (la tanda de trabajo):
+    # seguimiento: todo lo grabado + los ejemplos pendientes, por semana 2027:
+    python3 exportar_audio_maestro.py --pendientes-tipos Ejemplo --anio 2027 --salida ../audio-a-grabar.xlsx
+
+    # solo lo que falta grabar, y solo ejemplos:
     python3 exportar_audio_maestro.py --solo-pendientes --tipos Ejemplo --salida ../audio-a-grabar.xlsx
 
 Con --anio AAAA se agrega la columna H "Primera semana": la primera semana
@@ -56,6 +59,25 @@ def estado_de(estado, k):
     return bool(v), ""
 
 
+def celda_de(estado, idioma, niv, k):
+    """(grabado, marca, archivo) para mostrar en una fila de nivel `niv`.
+    marca: lo que Fer escribio en la columna Grabado (p.ej. "Y (14.09.26)"),
+    tal cual, para no perder la fecha; "Y" si el estado es viejo y no la tiene.
+    archivo: si el texto se grabo tambien en este nivel (otrosArchivos), el de
+    este nivel; si no, el principal."""
+    grabado, archivo = estado_de(estado, k)
+    v = estado.get(k)
+    if not grabado:
+        return False, "", archivo
+    marca = v.get("marca") if isinstance(v, dict) else None
+    pref = f"{idioma.upper()}_{niv}_"
+    if isinstance(v, dict) and not archivo.startswith(pref):
+        propio = [f for f in v.get("otrosArchivos", []) if f.startswith(pref)]
+        if propio:
+            archivo = propio[0]
+    return True, marca or "Y", archivo
+
+
 def limpio(t):
     return re.sub(r"\*+", "", str(t)).strip()
 
@@ -78,6 +100,12 @@ def archivo_sugerido(idioma, niv, texto, origen, ocupados):
     return nombre + ".wav"
 
 
+# Todos los origenes de cada texto (un texto repetido en dos skills del mismo
+# nivel aparece una sola vez, con el primero). Sirve para mostrar el origen
+# que coincide con el archivo ya grabado.
+ORIGENES = defaultdict(set)
+
+
 def recolectar(base):
     """Devuelve {idioma: {nivel: [(tipo, texto, origen)]}}."""
     datos = defaultdict(lambda: defaultdict(list))
@@ -92,12 +120,14 @@ def recolectar(base):
             if e.get("audio"):
                 t = limpio(e["texto"])
                 k = (niv, "Ejemplo", t)
+                ORIGENES[(idi,) + k].add(sid)
                 if k not in vistos[idi]:
                     vistos[idi].add(k)
                     datos[idi][niv].append(("Ejemplo", t, sid))
         for r in d.get("redemittel", []):
             t = limpio(r["expresion"])
             k = (niv, "Expresión", t)
+            ORIGENES[(idi,) + k].add(sid)
             if k not in vistos[idi]:
                 vistos[idi].add(k)
                 datos[idi][niv].append(("Expresión", t, sid))
@@ -142,11 +172,13 @@ def primeras_semanas(raiz, anio):
 def hoja_idioma(wb, idioma, por_nivel, estado, ocupados, semanas=None):
     ws = wb.create_sheet(NOMBRE[idioma][:31])
     ws.freeze_panes = "A3"
+    cuenta = {"grabados": 0}
     ws["A1"] = f"Audio a grabar — {NOMBRE[idioma]}"
     ws["A1"].font = Font(bold=True, size=13)
 
     fila = 2
-    cols = ["Nivel", "Tipo", "Texto", "Origen", "Grabado", "Archivo audio", "Archivo sugerido"]
+    cols = ["Nivel", "Tipo", "Texto", "Origen", "Grabado", "Archivo audio",
+            "Archivo sugerido / nota"]
     if semanas is not None:
         cols.append("Primera semana")
     for j, t in enumerate(cols, start=1):
@@ -172,8 +204,10 @@ def hoja_idioma(wb, idioma, por_nivel, estado, ocupados, semanas=None):
         c.font = Font(bold=True); c.fill = NIVEL_FILL
         for j in range(2, 6):
             ws.cell(row=fila, column=j).fill = NIVEL_FILL
-        for tipo, texto, origen in sorted(filas, key=lambda x: (sem(niv, x[0], x[1]) or 99,
-                                                                x[0], x[1])):
+        # pendientes arriba (por semana de necesidad), grabados abajo
+        orden = lambda x: (celda_de(estado, idioma, niv, f"{idioma}|{x[0]}|{x[1]}")[0],
+                           sem(niv, x[0], x[1]) or 99, x[0], x[1])
+        for tipo, texto, origen in sorted(filas, key=orden):
             fila += 1
             ws.cell(row=fila, column=1, value=niv).border = BORDE
             ws.cell(row=fila, column=2, value=tipo).border = BORDE
@@ -181,16 +215,28 @@ def hoja_idioma(wb, idioma, por_nivel, estado, ocupados, semanas=None):
             c.border = BORDE; c.alignment = Alignment(wrap_text=True)
             ws.cell(row=fila, column=4, value=origen).border = BORDE
             k = f"{idioma}|{tipo}|{texto}"
-            grabado, archivo = estado_de(estado, k)
-            ws.cell(row=fila, column=5, value="Y" if grabado else "").border = BORDE
+            grabado, marca, archivo = celda_de(estado, idioma, niv, k)
+            m = re.search(r"_((?:DE|EN)-[A-Z]\d+)(?:_\d+)?\.wav$", archivo or "")
+            if m and m.group(1) in ORIGENES[(idioma, niv, tipo, texto)]:
+                origen = m.group(1)
+                ws.cell(row=fila, column=4, value=origen)
+            if grabado:
+                cuenta["grabados"] += 1
+            ws.cell(row=fila, column=5, value=marca).border = BORDE
             ws.cell(row=fila, column=6, value=archivo).border = BORDE
             if not grabado:
                 c = ws.cell(row=fila, column=7,
                             value=archivo_sugerido(idioma, niv, texto, origen, ocupados))
                 c.border = BORDE; c.font = Font(color="777777")
+            elif archivo and not archivo.startswith(f"{idioma.upper()}_{niv}_"):
+                # el texto no se grabo en este nivel: la app usa el audio de otro
+                c = ws.cell(row=fila, column=7,
+                            value=f"(reusa el audio de {archivo.split('_')[1]})")
+                c.border = BORDE; c.font = Font(color="777777", italic=True)
             if semanas is not None:
                 ws.cell(row=fila, column=8, value=sem(niv, tipo, texto)).border = BORDE
-    return sum(len(v) for v in por_nivel.values())  # sin contar separadores de nivel
+    cuenta["total"] = sum(len(v) for v in por_nivel.values())  # sin separadores de nivel
+    return cuenta
 
 
 def main():
@@ -207,6 +253,10 @@ def main():
                     help="agrega la primera semana de aparicion en ese anio y ordena por ella")
     ap.add_argument("--tipos", nargs="+", choices=["Ejemplo", "Expresión", "Vocabulario"],
                     help="limitar a estos tipos (por defecto, todos)")
+    ap.add_argument("--pendientes-tipos", nargs="+",
+                    choices=["Ejemplo", "Expresión", "Vocabulario"],
+                    help="de lo NO grabado, listar solo estos tipos; lo grabado va siempre. "
+                         "Es el modo seguimiento: todo lo hecho + la tanda en curso")
     a = ap.parse_args()
     datos = recolectar(Path(a.contenido))
     estado_path = Path(a.estado)
@@ -217,7 +267,10 @@ def main():
             datos[idi][niv] = [x for x in datos[idi][niv]
                                if (not a.tipos or x[0] in a.tipos)
                                and not (a.solo_pendientes
-                                        and estado_de(estado, f"{idi}|{x[0]}|{x[1]}")[0])]
+                                        and estado_de(estado, f"{idi}|{x[0]}|{x[1]}")[0])
+                               and not (a.pendientes_tipos
+                                        and x[0] not in a.pendientes_tipos
+                                        and not estado_de(estado, f"{idi}|{x[0]}|{x[1]}")[0])]
     ocupados = {Path(p).stem for p in Path(a.audio).rglob("*.wav")}
     for v in estado.values():
         if isinstance(v, dict):
@@ -232,31 +285,36 @@ def main():
     idx["A1"] = "Maestro de audio a grabar"
     idx["A1"].font = Font(bold=True, size=14)
     idx["A2"] = ("Una hoja por idioma que se aprende (nunca la glosa). Dentro de cada hoja, "
-                 "agrupado por nivel. Columna «Grabado»: marcar con una X al terminar.")
+                 "agrupado por nivel, pendientes arriba. Columna «Grabado»: al terminar, marcar "
+                 "(p.ej. «Y (14.09.26)», se conserva tal cual) y poner el nombre del .wav en "
+                 "«Archivo audio» (la columna «Archivo sugerido» lo propone).")
     idx["A2"].font = Font(size=9, color="555555")
     idx["A2"].alignment = Alignment(wrap_text=True)
     idx.column_dimensions["A"].width = 90
 
-    for j, t in enumerate(["Idioma", "Total textos"], start=1):
+    for j, t in enumerate(["Idioma", "Total textos", "Grabados", "Pendientes"], start=1):
         c = idx.cell(row=4, column=j, value=t)
         c.font = Font(bold=True, color="FFFFFF"); c.fill = CABEZA
-    idx.column_dimensions["B"].width = 14
+    for col in "BCD":
+        idx.column_dimensions[col].width = 14
 
     fila = 5
-    total = 0
+    total = grab = 0
     for idi in sorted(datos, key=lambda x: NOMBRE[x]):
         if not any(datos[idi].values()):
             continue
-        n = hoja_idioma(wb, idi, datos[idi], estado, ocupados, semanas)
+        c = hoja_idioma(wb, idi, datos[idi], estado, ocupados, semanas)
         idx.cell(row=fila, column=1, value=NOMBRE[idi])
-        idx.cell(row=fila, column=2, value=n)
-        total += n
+        for j, v in ((2, c["total"]), (3, c["grabados"]), (4, c["total"] - c["grabados"])):
+            idx.cell(row=fila, column=j, value=v)
+        total += c["total"]; grab += c["grabados"]
         fila += 1
     idx.cell(row=fila, column=1, value="TOTAL").font = Font(bold=True)
-    idx.cell(row=fila, column=2, value=total).font = Font(bold=True)
+    for j, v in ((2, total), (3, grab), (4, total - grab)):
+        idx.cell(row=fila, column=j, value=v).font = Font(bold=True)
 
     wb.save(a.salida)
-    print(f"{total} textos -> {a.salida}")
+    print(f"{total} textos ({grab} grabados, {total - grab} pendientes) -> {a.salida}")
 
 
 if __name__ == "__main__":

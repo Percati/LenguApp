@@ -15,7 +15,7 @@ assets/audio/ sin tener que volver a preguntar.
 Uso:
     python3 importar_audio_maestro.py ../audio-a-grabar.xlsx --estado ../audio-estado.json
 """
-import argparse, json, re
+import argparse, json, re, sys
 from pathlib import Path
 import openpyxl
 
@@ -29,6 +29,7 @@ def limpio(t):
 
 
 def main():
+    sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
     ap.add_argument("excel")
     ap.add_argument("--estado", default="../audio-estado.json")
@@ -64,8 +65,21 @@ def main():
             # migracion silenciosa del formato viejo (booleano) al nuevo (dict)
             entrada = prev if isinstance(prev, dict) else ({"grabado": True} if prev else {})
             entrada["grabado"] = bool(marca and str(marca).strip()) or entrada.get("grabado", False)
+            if marca and str(marca).strip():
+                # se guarda tal cual (p.ej. "Y (14.09.26)"): la fecha es dato de Fer
+                entrada["marca"] = str(marca).strip()
             if archivo and str(archivo).strip():
-                entrada["archivo"] = str(archivo).strip()
+                nuevo = str(archivo).strip()
+                previo = entrada.get("archivo", "")
+                # El estado se indexa sin nivel. Si el archivo es de OTRO nivel que
+                # el principal (el mismo texto grabado en B2 y en C1), va a
+                # otrosArchivos; si es del mismo nivel, es una correccion y reemplaza.
+                if previo and previo != nuevo and previo[:6] != nuevo[:6]:
+                    otros = entrada.setdefault("otrosArchivos", [])
+                    if nuevo not in otros:
+                        otros.append(nuevo)
+                else:
+                    entrada["archivo"] = nuevo
             estado[k] = entrada
             marcados += 1
 
