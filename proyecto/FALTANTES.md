@@ -45,19 +45,15 @@ Mismo problema en las apariciones A2/B1: `subtitulo`, `mision` y `microtareas` t
 
 Antes de que Traducciones pueda trabajar acá, hace falta decidir la forma del campo (¿cada string se vuelve `{de: "...", es: "...", ...}`? ¿archivo paralelo?) — es una decisión de schema, igual que 4.1. Se recomienda resolver ambas en la misma conversación de Code.
 
-## 5. Audio
+## 5. Audio — ✅ contenido completo
 
-✅ **Ejemplos con `"audio": true`: 716/716.** `validar_apariciones.py --anio 2027` no da avisos de audio.
+✅ **7348/7348 filas del Excel grabadas** (6312 textos distintos: 703 ejemplos, 1661 expresiones, 3948 ítems de vocabulario; las demás filas son el mismo texto en otro nivel). `audio-estado.json` registra **6368 archivos: 3298 EN y 3070 DE**, que es lo que hay en los assets de Fer. `validar_apariciones.py --anio 2027` no da avisos de audio. 641 filas del Excel no tienen archivo propio a propósito: son el mismo texto en un nivel superior y reusan el audio del nivel más bajo.
 
-✅ **Expresiones y vocabulario de A2, B1, B2 y C1: grabados** (22-09). `audio-estado.json` registra 5266 archivos: 2749 EN y 2517 DE, que es lo que hay en los assets de Fer.
+🔴 **Los `.wav` no están en el repo.** `assets/audio/` tiene 1906 archivos commiteados y el estado registra 6368: 4462 existen solo en la copia local de Fer. Sin ellos, un clon del repo no compila la app completa y no hay respaldo. `sincronizar_audio_estado.py --dry-run` los lista.
 
-🔴 **Falta C2 entero: 1102 textos** (553 alemán, 549 inglés; 303 expresiones y 799 ítems de vocabulario). En el Excel devuelto venían marcados como grabados pero sin nombre de archivo, así que el importador los dejó como pendientes: una marca sin archivo no cuenta.
+🔴 **Compresión pendiente antes de publicar.** Son WAV PCM 16 bit, 22 kHz mono: unos 465 MB (73 KB de promedio por archivo, 1,7 s de duración media). A 24 kbps quedan en unos 30 MB; a 32 kbps, unos 40 MB. Decisiones abiertas: formato (Opus en `.ogg` u OGG/AAC), bitrate (24 o 32 kbps) y si el nombre guardado en `audio-estado.json` conserva la extensión `.wav` o se guarda sin extensión, que es lo que conviene para no tener que reimportar cada vez que cambie el formato.
 
-🔴 **Los `.wav` no están en el repo.** `assets/audio/` tiene 1906 archivos commiteados y el estado registra 5266. Los demás están solo en la copia local de Fer, que prefiere mantenerlos ahí por ahora. Sin ellos, un clon del repo no puede compilar la app completa. `sincronizar_audio_estado.py --dry-run` lista los ausentes.
-
-🟡 **Peso:** WAV PCM 16 bit, 22 kHz mono. La decisión tomada es comprimir a 24-32 kbps antes de publicar; falta definir formato y si cambia la extensión en el estado.
-
-✅ **Duplicados por nivel:** se conservan (decisión de Fer, sept 2026). Son 56 textos con una segunda grabación en otro nivel, campo `otrosArchivos`; ya comprimidos pesan menos de 1 MB. Desde el Excel de seguimiento no se generan nuevos: un texto pendiente en varios niveles se marca "no grabar: se graba en <nivel más bajo>".
+✅ **Duplicados por nivel:** se conservan (decisión de Fer, sept 2026). 56 textos con una segunda grabación en otro nivel, campo `otrosArchivos`. Desde el Excel de seguimiento no se generan nuevos.
 
 `audio-a-grabar.xlsx` es el **Excel de seguimiento**: se regenera con `exportar_audio_maestro.py --anio 2027` y conserva la marca con fecha de cada grabación (campo `marca` de `audio-estado.json`).
 
