@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """
-generar_audio.py — genera los MP3 de las fichas con Piper, en tiempo de compilacion.
+generar_audio.py — genera el audio de las fichas con Piper, en tiempo de compilacion.
+
+Formato de salida: **Opus, 24 kbps, mono, contenedor .ogg** (decidido sept 2026).
+Opus rinde muy por encima de AAC y MP3 en voz a bitrates bajos, y Android y
+ExoPlayer lo soportan sin librerias extra; el contenedor .ogg anda desde API 21
+(la extension .opus recien desde la 29). Piper escribe WAV, asi que aca el WAV
+es un intermedio temporal que se borra: nunca queda en assets/.
 
 El telefono NUNCA genera ni descarga audio: los archivos se empaquetan en el
 APK. Este script corre en la maquina de quien compila.
@@ -50,7 +56,7 @@ VELOCIDADES = {"normal": 1.0, "lento": 1.25}   # length_scale: mayor = mas lento
 
 def nombre(texto, voz, vel):
     h = hashlib.sha1(f"{texto}|{voz}|{vel}".encode()).hexdigest()[:12]
-    return f"{voz}_{vel}_{h}.mp3"
+    return f"{voz}_{vel}_{h}.ogg"
 
 def frases(ficha):
     """Solo los ejemplos marcados con audio: true."""
@@ -66,6 +72,10 @@ def main():
 
     tiene_piper = shutil.which("piper") is not None
     tiene_ffmpeg = shutil.which("ffmpeg") is not None
+    if not a.dry_run and not tiene_ffmpeg:
+        print("ffmpeg no esta instalado: sin el, el audio quedaria en WAV y el "
+              "formato de la app es Opus/.ogg.", file=sys.stderr)
+        sys.exit(2)
     if not a.dry_run and not tiene_piper:
         print("piper no esta instalado. `pip install piper-tts`, o usar --dry-run.",
               file=sys.stderr)
@@ -102,8 +112,9 @@ def main():
                                    input=texto, text=True, check=True)
                     if tiene_ffmpeg:
                         subprocess.run(["ffmpeg", "-y", "-loglevel", "error",
-                                        "-i", str(wav), "-ac", "1", "-b:a", "48k",
-                                        str(dest)], check=True)
+                                        "-i", str(wav), "-c:a", "libopus",
+                                        "-b:a", "24k", "-ac", "1",
+                                        "-application", "voip", str(dest)], check=True)
                         wav.unlink()
                     hechos += 1
 
@@ -112,9 +123,10 @@ def main():
     total = sum(len(v) for v in indice.values())
     print(f"{total} clips referenciados por {len(indice)} fichas")
     if a.dry_run:
-        print(f"{pendientes} por generar. Peso estimado: ~{pendientes * 25 // 1024} MB")
+        print(f"{pendientes} por generar. Peso estimado: ~{pendientes * 2 // 1024} MB "
+              f"(Opus 24 kbps, unos 2 KB por clip)")
         if not tiene_ffmpeg:
-            print("Nota: sin ffmpeg el audio queda en WAV (unas 10 veces mas pesado).")
+            print("Nota: falta ffmpeg, que es lo que convierte el WAV de Piper a Opus.")
     else:
         print(f"{hechos} generados, {total - pendientes} ya existian")
 

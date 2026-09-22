@@ -47,15 +47,26 @@ Antes de que Traducciones pueda trabajar acá, hace falta decidir la forma del c
 
 ## 5. Audio — ✅ contenido completo
 
-✅ **7348/7348 filas del Excel grabadas** (6312 textos distintos: 703 ejemplos, 1661 expresiones, 3948 ítems de vocabulario; las demás filas son el mismo texto en otro nivel). `audio-estado.json` registra **6368 archivos: 3298 EN y 3070 DE**, que es lo que hay en los assets de Fer. `validar_apariciones.py --anio 2027` no da avisos de audio. 641 filas del Excel no tienen archivo propio a propósito: son el mismo texto en un nivel superior y reusan el audio del nivel más bajo.
+✅ **7348/7348 filas del Excel grabadas** (6312 textos distintos). `audio-estado.json` registra **6368 archivos: 3298 EN y 3070 DE**. `validar_apariciones.py --anio 2027` no da avisos de audio.
 
-🔴 **Los `.wav` no están en el repo.** `assets/audio/` tiene 1906 archivos commiteados y el estado registra 6368: 4462 existen solo en la copia local de Fer. Sin ellos, un clon del repo no compila la app completa y no hay respaldo. `sincronizar_audio_estado.py --dry-run` los lista.
+✅ **Formato final decidido (sept 2026): Opus, 24 kbps, mono, contenedor `.ogg`.** Opus rinde muy por encima de AAC y MP3 en voz a bitrates bajos, y Android y ExoPlayer lo soportan sin librerías extra; `.ogg` porque la extensión `.opus` recién anda desde API 29. Medido sobre los 1906 archivos del repo: **134 MB de WAV → 9,0 MB de Opus** (−93 %). Los 6368 completos quedan en unos 30 MB.
 
-🔴 **Compresión pendiente antes de publicar.** Son WAV PCM 16 bit, 22 kHz mono: unos 465 MB (73 KB de promedio por archivo, 1,7 s de duración media). A 24 kbps quedan en unos 30 MB; a 32 kbps, unos 40 MB. Decisiones abiertas: formato (Opus en `.ogg` u OGG/AAC), bitrate (24 o 32 kbps) y si el nombre guardado en `audio-estado.json` conserva la extensión `.wav` o se guarda sin extensión, que es lo que conviene para no tener que reimportar cada vez que cambie el formato.
+🔴 **La conversión la tiene que correr Fer sobre su carpeta local**, que es la única que tiene los 6368 archivos (el repo solo tiene 1906):
 
-✅ **Duplicados por nivel:** se conservan (decisión de Fer, sept 2026). 56 textos con una segunda grabación en otro nivel, campo `otrosArchivos`. Desde el Excel de seguimiento no se generan nuevos.
+```sh
+python3 proyecto/tools/convertir_audio.py --audio app/src/main/assets/audio \
+    --estado proyecto/audio-estado.json --borrar-wav
+```
 
-`audio-a-grabar.xlsx` es el **Excel de seguimiento**: se regenera con `exportar_audio_maestro.py --anio 2027` y conserva la marca con fecha de cada grabación (campo `marca` de `audio-estado.json`).
+Es idempotente y salta lo ya convertido. Los nombres en `audio-estado.json` ya apuntan a `.ogg` en este parche, así que al correrlo con `--estado` no va a cambiar nada más.
+
+🔴 **Faltan 4462 archivos en el repo.** El estado registra 6368 y `assets/audio/` tiene 1906 commiteados; el resto existe solo en la copia local de Fer. Sin ellos, un clon del repo no compila la app completa y no hay respaldo. `sincronizar_audio_estado.py --dry-run` los lista. Ya comprimidos son ~30 MB en total, así que subirlos al repo dejó de ser un problema de peso.
+
+✅ **Duplicados por nivel:** se conservan (decisión de Fer, sept 2026). 56 textos con una segunda grabación en otro nivel, campo `otrosArchivos`.
+
+🟡 **`tools/generar_audio.py` está desfasado del pipeline real:** nombra los archivos por hash del texto (`voz_velocidad_hash.ogg`), no con la convención `IDIOMA_NIVEL_palabras_origen.ogg` que usan los 6368 archivos reales, y espera fichas compiladas en `build/`. Se actualizó su salida a Opus/`.ogg`, pero hoy no lo usa nadie: hay que decidir si se alinea con la convención o se retira.
+
+`audio-a-grabar.xlsx` es el **Excel de seguimiento**: se regenera con `exportar_audio_maestro.py --anio 2027`.
 
 ## 6. Traducciones
 

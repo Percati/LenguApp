@@ -29,7 +29,7 @@ par). Dentro de cada nivel las filas se ordenan por esa semana, para grabar
 primero lo que se necesita antes.
 
 La columna G "Archivo sugerido" propone el nombre con la convencion de los
-.wav ya grabados: IDIOMA_NIVEL_<primeras 6 palabras>_<origen>.wav, con sufijo
+.wav ya grabados: IDIOMA_NIVEL_<primeras 6 palabras>_<origen>.ogg, con sufijo
 _02, _03... si choca con un archivo existente. El importador no la lee: solo
 cuenta lo que Fer escriba en la columna F.
 """
@@ -97,7 +97,7 @@ def archivo_sugerido(idioma, niv, texto, origen, ocupados):
         i += 1
         nombre = f"{base}_{i:02d}"
     ocupados.add(nombre)
-    return nombre + ".wav"
+    return nombre + ".ogg"
 
 
 # Todos los origenes de cada texto (un texto repetido en dos skills del mismo
@@ -224,7 +224,7 @@ def hoja_idioma(wb, idioma, por_nivel, estado, ocupados, semanas=None):
             ws.cell(row=fila, column=4, value=origen).border = BORDE
             k = f"{idioma}|{tipo}|{texto}"
             grabado, marca, archivo = celda_de(estado, idioma, niv, k)
-            m = re.search(r"_((?:DE|EN)-[A-Z]\d+)(?:_\d+)?\.wav$", archivo or "")
+            m = re.search(r"_((?:DE|EN)-[A-Z]\d+)(?:_\d+)?\.(?:ogg|wav)$", archivo or "")
             if m and m.group(1) in ORIGENES[(idioma, niv, tipo, texto)]:
                 origen = m.group(1)
                 ws.cell(row=fila, column=4, value=origen)
@@ -259,7 +259,7 @@ def main():
     ap.add_argument("--salida", default="../auditoria-audio.xlsx")
     ap.add_argument("--estado", default="../audio-estado.json")
     ap.add_argument("--audio", default="../../app/src/main/assets/audio",
-                    help="carpeta de .wav, para que el nombre sugerido no choque")
+                    help="carpeta de audio, para que el nombre sugerido no choque")
     ap.add_argument("--solo-pendientes", action="store_true",
                     help="omitir lo ya grabado segun audio-estado.json")
     ap.add_argument("--anio", type=int,
@@ -284,7 +284,7 @@ def main():
                                and not (a.pendientes_tipos
                                         and x[0] not in a.pendientes_tipos
                                         and not estado_de(estado, f"{idi}|{x[0]}|{x[1]}")[0])]
-    ocupados = {Path(p).stem for p in Path(a.audio).rglob("*.wav")}
+    ocupados = {p.stem for p in Path(a.audio).rglob("*") if p.suffix in (".ogg", ".wav")}
     for v in estado.values():
         if isinstance(v, dict):
             for f in [v.get("archivo", "")] + v.get("otrosArchivos", []):
@@ -299,7 +299,7 @@ def main():
     idx["A1"].font = Font(bold=True, size=14)
     idx["A2"] = ("Una hoja por idioma que se aprende (nunca la glosa). Dentro de cada hoja, "
                  "agrupado por nivel, pendientes arriba. Columna «Grabado»: al terminar, marcar "
-                 "(p.ej. «Y (14.09.26)», se conserva tal cual) y poner el nombre del .wav en "
+                 "(p.ej. «Y (14.09.26)», se conserva tal cual) y poner el nombre del .ogg en "
                  "«Archivo audio» (la columna «Archivo sugerido» lo propone).")
     idx["A2"].font = Font(size=9, color="555555")
     idx["A2"].alignment = Alignment(wrap_text=True)

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-sincronizar_audio_estado.py — registra en audio-estado.json los .wav que estan
+sincronizar_audio_estado.py — registra en audio-estado.json los audios (.ogg o .wav) que estan
 en assets/audio/ pero que ninguna entrada del estado nombra.
 
-Empareja por la convencion de nombre de los .wav grabados:
-    IDIOMA_NIVEL_<primeras 6 palabras del texto>_<origen>[_NN].wav
+Empareja por la convencion de nombre de los audios grabados:
+    IDIOMA_NIVEL_<primeras 6 palabras del texto>_<origen>[_NN].ogg
 contra los textos del contenido (misma recoleccion que exportar_audio_maestro).
 Si el nombre coincide con el texto completo de un item se prefiere ese; si
 no, el item cuyas primeras palabras coinciden.
@@ -54,7 +54,7 @@ def main():
              for tipo, tx, _ in datos[idi][niv]]
 
     nuevos = sin_par = 0
-    for wav in sorted(Path(a.audio).rglob("*.wav")):
+    for wav in sorted(p for p in Path(a.audio).rglob("*") if p.suffix in (".ogg", ".wav")):
         if wav.stem in registrados:
             continue
         m = PATRON.match(wav.stem)
@@ -87,7 +87,7 @@ def main():
         print(f"  + {wav.name} -> {k} ({destino})")
         nuevos += 1
 
-    en_disco = {w.name for w in Path(a.audio).rglob("*.wav")}
+    en_disco = {w.name for w in Path(a.audio).rglob("*") if w.suffix in (".ogg", ".wav")}
     faltan = sorted(f for v in estado.values() if isinstance(v, dict)
                     for f in [v.get("archivo", "")] + v.get("otrosArchivos", [])
                     if f and f not in en_disco)

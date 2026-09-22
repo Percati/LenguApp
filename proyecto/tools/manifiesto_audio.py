@@ -42,7 +42,7 @@ IDIOMA_NOMBRE = {"en": "Inglés", "de": "Alemán", "es": "Español",
 
 def nombre(texto, voz, vel):
     h = hashlib.sha1(f"{texto}|{voz}|{vel}".encode()).hexdigest()[:12]
-    return f"{voz}_{vel}_{h}.mp3"
+    return f"{voz}_{vel}_{h}.ogg"
 
 
 def textos_de(ficha):
@@ -97,7 +97,7 @@ def main():
          "siempre en la lengua de la ficha.", "",
          "Los nombres de archivo son deterministas (hash del texto, la voz y la "
          "velocidad), así que regenerar solo produce lo que falta y el manifiesto "
-         "se puede cotejar con los MP3 existentes.", ""]
+         "se puede cotejar con los archivos existentes.", ""]
     tot_clips = 0
     for idioma in sorted(por_idioma):
         clases = por_idioma[idioma]
@@ -132,7 +132,7 @@ def main():
           "# voces desde https://huggingface.co/rhasspy/piper-voices",
           "python3 tools/generar_audio.py build/*.json --voces voces --salida app/src/main/assets/audio",
           "```", "",
-          "El script salta los que ya existen, así que se puede correr en tandas."]
+          "Salida: Opus 24 kbps mono en .ogg. El script salta los que ya existen, así que se puede correr en tandas."]
     salida.joinpath("audio-manifiesto.md").write_text("\n".join(L), encoding="utf-8")
     print(f"{len(vistos)} textos, {tot_clips} clips -> audio-manifiesto.md / .json",
           file=sys.stderr)
