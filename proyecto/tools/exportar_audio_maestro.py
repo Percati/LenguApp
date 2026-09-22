@@ -172,7 +172,15 @@ def primeras_semanas(raiz, anio):
 def hoja_idioma(wb, idioma, por_nivel, estado, ocupados, semanas=None):
     ws = wb.create_sheet(NOMBRE[idioma][:31])
     ws.freeze_panes = "A3"
-    cuenta = {"grabados": 0}
+    cuenta = {"grabados": 0, "a_grabar": 0}
+    # Un texto pendiente que aparece en varios niveles se graba UNA vez, en el
+    # nivel mas bajo; los demas niveles lo reusan (igual que la app, que busca
+    # el audio por texto). Asi no se generan duplicados por nivel.
+    nivel_de_grabacion = {}
+    for niv in ORDEN_NIVEL:
+        for tipo, texto, _ in por_nivel.get(niv, []):
+            if not estado_de(estado, f"{idioma}|{tipo}|{texto}")[0]:
+                nivel_de_grabacion.setdefault((tipo, texto), niv)
     ws["A1"] = f"Audio a grabar — {NOMBRE[idioma]}"
     ws["A1"].font = Font(bold=True, size=13)
 
@@ -224,7 +232,12 @@ def hoja_idioma(wb, idioma, por_nivel, estado, ocupados, semanas=None):
                 cuenta["grabados"] += 1
             ws.cell(row=fila, column=5, value=marca).border = BORDE
             ws.cell(row=fila, column=6, value=archivo).border = BORDE
-            if not grabado:
+            if not grabado and nivel_de_grabacion[(tipo, texto)] != niv:
+                c = ws.cell(row=fila, column=7,
+                            value=f"(no grabar: se graba en {nivel_de_grabacion[(tipo, texto)]})")
+                c.border = BORDE; c.font = Font(color="777777", italic=True)
+            elif not grabado:
+                cuenta["a_grabar"] += 1
                 c = ws.cell(row=fila, column=7,
                             value=archivo_sugerido(idioma, niv, texto, origen, ocupados))
                 c.border = BORDE; c.font = Font(color="777777")
@@ -292,29 +305,32 @@ def main():
     idx["A2"].alignment = Alignment(wrap_text=True)
     idx.column_dimensions["A"].width = 90
 
-    for j, t in enumerate(["Idioma", "Total textos", "Grabados", "Pendientes"], start=1):
+    for j, t in enumerate(["Idioma", "Total filas", "Grabados", "Pendientes",
+                                "A grabar (únicos)"], start=1):
         c = idx.cell(row=4, column=j, value=t)
         c.font = Font(bold=True, color="FFFFFF"); c.fill = CABEZA
-    for col in "BCD":
+    for col in "BCDE":
         idx.column_dimensions[col].width = 14
 
     fila = 5
-    total = grab = 0
+    total = grab = agr = 0
     for idi in sorted(datos, key=lambda x: NOMBRE[x]):
         if not any(datos[idi].values()):
             continue
         c = hoja_idioma(wb, idi, datos[idi], estado, ocupados, semanas)
         idx.cell(row=fila, column=1, value=NOMBRE[idi])
-        for j, v in ((2, c["total"]), (3, c["grabados"]), (4, c["total"] - c["grabados"])):
+        for j, v in ((2, c["total"]), (3, c["grabados"]), (4, c["total"] - c["grabados"]),
+                     (5, c["a_grabar"])):
             idx.cell(row=fila, column=j, value=v)
-        total += c["total"]; grab += c["grabados"]
+        total += c["total"]; grab += c["grabados"]; agr += c["a_grabar"]
         fila += 1
     idx.cell(row=fila, column=1, value="TOTAL").font = Font(bold=True)
-    for j, v in ((2, total), (3, grab), (4, total - grab)):
+    for j, v in ((2, total), (3, grab), (4, total - grab), (5, agr)):
         idx.cell(row=fila, column=j, value=v).font = Font(bold=True)
 
     wb.save(a.salida)
-    print(f"{total} textos ({grab} grabados, {total - grab} pendientes) -> {a.salida}")
+    print(f"{total} textos ({grab} grabados, {total - grab} pendientes, "
+          f"{agr} a grabar sin repetir niveles) -> {a.salida}")
 
 
 if __name__ == "__main__":

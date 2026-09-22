@@ -55,9 +55,9 @@ Antes de que Traducciones pueda trabajar acá, hace falta decidir la forma del c
 
 🟡 **Duplicados por nivel:** 56 textos tienen una segunda grabación de otro nivel (`otrosArchivos`: 47 viejos B2/C1 y 9 nuevos A2/B1). La app reproduce por texto, así que sobran; sin decidir si se borran.
 
-🟡 Fuera de los ejemplos, sin grabar: ~800 expresiones (redemittel) y ~4000 ítems de vocabulario, casi todo A2, B1, C2 y los packs 2027. Sin decidir si se graban.
+🟡 **Expresiones y vocabulario sin grabar: 4166 textos únicos** (4807 filas; 641 son el mismo texto en otro nivel y se marcan "no grabar: se graba en A2", para no crear más duplicados por nivel). Excel entregado a Fer el 22-09 para generarlos.
 
-`audio-a-grabar.xlsx` es el **Excel de seguimiento**: se regenera con `exportar_audio_maestro.py --pendientes-tipos Ejemplo --anio 2027` y conserva la marca con fecha de cada grabación (campo `marca` de `audio-estado.json`). Hoy: 2541 filas, 0 pendientes.
+`audio-a-grabar.xlsx` es el **Excel de seguimiento**: se regenera con `exportar_audio_maestro.py --anio 2027` (todo) o `--pendientes-tipos Ejemplo` (solo ejemplos pendientes) y conserva la marca con fecha de cada grabación (campo `marca` de `audio-estado.json`).
 
 ## 6. Traducciones
 
