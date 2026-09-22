@@ -40,6 +40,31 @@ NOMBRE = {"de": "Alemán", "en": "Inglés", "es": "Español",
 ORDEN_NIVEL = ["A2", "B1", "B2", "C1", "C2"]
 NIVELES_BILINGUES = ["A2", "B1"]
 
+# Limites de longitud que el schema exige a cada campo de prosa (min, max).
+# La traduccion tiene que respetarlos igual que el original: si no, la ficha
+# no valida al componer. El caso que mas muerde es descripcion, con 200
+# caracteres de minimo.
+LIMITES = {
+    "descripcion": (200, 1600),
+    "promptCorreccion": (150, None),
+    "notas": (20, None),
+    "errores": (10, None),
+    "autochequeo": (10, None),
+    "ejemplos": (5, None),
+    "subtitulo": (5, 160),
+    "mision.consigna": (30, None),
+    "microtareas": (15, None),
+}
+
+
+def _limite(ruta):
+    raiz = ruta.split("[")[0]
+    lim = LIMITES.get(ruta) or LIMITES.get(raiz)
+    if not lim:
+        return ""
+    mn, mx = lim
+    return f"{mn}–{mx}" if mx else f"min {mn}"
+
 VERDE  = PatternFill("solid", fgColor="D9EAD3")
 AMBAR  = PatternFill("solid", fgColor="FFF2CC")
 GRIS   = PatternFill("solid", fgColor="EFEFEF")
@@ -180,8 +205,14 @@ def _campos_aparicion(a):
 
 
 def recolectar_prosa(base):
-    """{(idioma, nivel): [(origen, ruta, texto, traducciones)]}."""
-    datos = defaultdict(list)
+    """{(idioma, nivel): [(origen, ruta, texto, traducciones, otros_usos)]}.
+
+    Los textos repetidos (microtareas y requisitos casi iguales entre
+    apariciones, celdas de cuadro que se repiten) se agrupan en una sola fila:
+    se traducen una vez y el importador los vuelca en todos los lugares donde
+    aparece ese texto. `otros_usos` lista los demas lugares, solo informativo.
+    """
+    crudo = defaultdict(list)
 
     for p in sorted(base.joinpath("nucleos").glob("*.json")):
         d = json.loads(p.read_text(encoding="utf-8"))
@@ -192,7 +223,7 @@ def recolectar_prosa(base):
             if v is None:
                 continue
             texto, trads = _valor(v)
-            datos[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads))
+            crudo[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads))
 
     for p in sorted(base.joinpath("ocurrencias").glob("*.json")):
         d = json.loads(p.read_text(encoding="utf-8"))
@@ -204,7 +235,21 @@ def recolectar_prosa(base):
                 if v is None:
                     continue
                 texto, trads = _valor(v)
-                datos[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads))
+                crudo[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads))
+
+    datos = {}
+    for clave, filas in crudo.items():
+        agrupado = {}
+        orden = []
+        for origen, ruta, texto, trads in filas:
+            k = texto if texto is not None else trads.get(clave[0])
+            if k not in agrupado:
+                agrupado[k] = [origen, ruta, texto, dict(trads), []]
+                orden.append(k)
+            else:
+                agrupado[k][3].update({c: v for c, v in trads.items() if c not in agrupado[k][3]})
+                agrupado[k][4].append(f"{origen} · {ruta}")
+        datos[clave] = [tuple(agrupado[k]) for k in orden]
     return datos
 
 
@@ -215,21 +260,23 @@ def hoja_prosa(wb, idioma, nivel, filas):
     ws["A1"] = f"Prosa bilingüe — {NOMBRE[idioma]} {nivel}"
     ws["A1"].font = Font(bold=True, size=13)
     ws["A2"] = ("Verde = ya existe, no tocar. Ámbar = falta traducir. El texto original "
-                f"queda como clave «{idioma}» del campo y lo pone el importador: no hay que copiarlo.")
+                f"queda como clave «{idioma}» del campo y lo pone el importador: no hay que copiarlo. "
+                "«Largo» es el límite de caracteres que el schema le exige a cada traducción.")
     ws["A2"].font = Font(size=9, color="7F6000")
 
-    cab = ["Origen", "Campo", f"{NOMBRE[idioma]} — original"] + [NOMBRE[b] for b in bases]
+    cab = (["Origen", "Campo", "Largo", f"{NOMBRE[idioma]} — original"]
+           + [NOMBRE[b] for b in bases] + ["Otros usos del mismo texto"])
     fila = 3
     for j, t in enumerate(cab, start=1):
         c = ws.cell(row=fila, column=j, value=t)
         c.font = Font(bold=True, color="FFFFFF", size=9); c.fill = CABEZA
         c.alignment = Alignment(wrap_text=True, horizontal="center")
-    for i, a_ in enumerate([26, 24, 46] + [30] * len(bases), start=1):
+    for i, a_ in enumerate([26, 24, 9, 46] + [30] * len(bases) + [40], start=1):
         ws.column_dimensions[get_column_letter(i)].width = a_
 
     tot = 0
     origen_actual = None
-    for origen, ruta, texto, trads in filas:
+    for origen, ruta, texto, trads, otros in filas:
         if origen != origen_actual:
             origen_actual = origen
             fila += 1
@@ -240,15 +287,22 @@ def hoja_prosa(wb, idioma, nivel, filas):
         fila += 1
         ws.cell(row=fila, column=1, value=origen).border = BORDE
         ws.cell(row=fila, column=2, value=ruta).border = BORDE
-        c = ws.cell(row=fila, column=3, value=texto if texto is not None else trads.get(idioma, ""))
+        c = ws.cell(row=fila, column=3, value=_limite(ruta))
+        c.border = BORDE; c.font = Font(size=8, color="777777")
+        c.alignment = Alignment(horizontal="center")
+        c = ws.cell(row=fila, column=4, value=texto if texto is not None else trads.get(idioma, ""))
         c.fill = GRIS; c.border = BORDE; c.alignment = Alignment(wrap_text=True)
-        for j, b in enumerate(bases, start=4):
+        for j, b in enumerate(bases, start=5):
             cel = ws.cell(row=fila, column=j)
             if b in trads:
                 cel.value = trads[b]; cel.fill = VERDE
             else:
                 cel.fill = AMBAR; tot += 1
             cel.border = BORDE; cel.alignment = Alignment(wrap_text=True)
+        c = ws.cell(row=fila, column=len(cab),
+                    value=f"+{len(otros)}: " + " | ".join(otros) if otros else "")
+        c.border = BORDE; c.font = Font(size=8, color="777777")
+        c.alignment = Alignment(wrap_text=True)
     return tot
 
 

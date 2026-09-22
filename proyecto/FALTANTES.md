@@ -35,13 +35,18 @@ Estado regenerado a partir de los archivos reales del repositorio (parche de Apa
 Id ahora es `skillId-nivel-anio-order`. Verificado componiendo las tres capas reales: "522 fichas compuestas, 9 semanas especiales, 0 con problemas" (antes: 480+9, 42 con problemas). `DE-G01-B2-2026-1.json` y `DE-G01-B2-2027-1.json` ya son archivos distintos. Tocó `schema/ficha.schema.json`, `tools/componer.py` y `ResolutorSemana.kt`.
 
 ### 4.2 — Estructura de traducción para A2/B1 — ✅ resuelto
-13 campos (`descripcion`, `notas`, `ejemplos[].texto`, `errores`, `autochequeo`, `cuadroReferencia.*`, `promptCorreccion`, `subtitulo`, `mision.*`, `microtareas[].texto`) aceptan ahora `oneOf` string plano u objeto `{idioma: texto}`. No es obligatorio todavía para A2/B1 — los 95 núcleos y 192 apariciones siguen en texto plano, listos para que Traducciones los llene sin que el schema los rompa. **Traducciones ya está trabajando sobre esto.**
+13 campos (`descripcion`, `notas`, `ejemplos[].texto`, `errores`, `autochequeo`, `cuadroReferencia.*`, `promptCorreccion`, `subtitulo`, `mision.*`, `microtareas[].texto`) aceptan ahora `oneOf` string plano u objeto `{idioma: texto}`. No es obligatorio todavía para A2/B1 — los 95 núcleos y 192 apariciones siguen en texto plano, listos para que Traducciones los llene sin que el schema los rompa. **Traducciones ya está trabajando sobre esto:** el maestro de traducciones cubre los 13 campos (4088 textos, 19 241 celdas) y el importador ya los vuelca; falta que Fer traduzca. Dos campos quedaron afuera — ver 4.6.
 
 ### 4.3 — `generarCalendarioAssets` rompe el build (nuevo, hallado por Code, no relacionado a su parche)
 🔴 `data/banco.json` creció a 33-37 skills por nivel; `generar_calendario.py` (herramienta vieja, pensada solo para el piloto) no puede repartirlos en las ~2 semanas libres que deja `semanas-fijas.json`. Bloquea `./gradlew test` y `assembleDebug` en cualquier clon nuevo. Verificado: el fallo es interno a `generar_calendario.py` procesando archivos que nadie tocó en este parche.
 
 ### 4.4 — Assets de la app y tests desactualizados (nuevo)
 🔴 `app/src/main/assets/contenido/` sigue compilado con el esquema de id viejo (sin año) — hace falta correr `componer.py` de nuevo para regenerarlo. Hasta entonces, dos aserciones de `ResolutorSemanaTest.kt` quedan en rojo a propósito (documentado con comentario en el test, no es un bug oculto).
+
+### 4.6 — `titulo` y `redemittel[].funcion` quedaron fuera de los campos bilingües (nuevo, hallado por Traducciones) — para Code
+🔴 El parche 4.2 dejó bilingües 13 campos de prosa, pero no el `titulo` de la ficha ni el `funcion` de cada Redemittel. En A2/B1, con el switch en "idioma de la app", el encabezado de la ficha y la etiqueta de función de cada expresión se seguirían viendo en alemán o inglés, que es justo lo que la ficha bilingüe quiere evitar. Son 95 títulos y unas 600 etiquetas `funcion`.
+
+Traducciones **no toca el schema**: hace falta que Code extienda el mismo `oneOf` (string plano u objeto `{idioma: texto}`) a esos dos campos, con el mismo criterio que 4.2 — sin volverlo obligatorio, para no romper la composición actual. Una vez hecho, el exportador de traducciones los suma solo agregándolos a `_campos_nucleo`, y el importador ya sabe volcarlos.
 
 ### 4.5 — Limpieza menor pendiente
 🟡 El chequeo de colisión de id entre años de `validar_apariciones.py` (punto 6 de su docstring) queda mudo para siempre, porque el id ya nunca colisiona entre ediciones. No bloquea nada; es código muerto que conviene retirar en algún momento.
