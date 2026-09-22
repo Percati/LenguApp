@@ -130,7 +130,7 @@ fun resolverContenidoDeLaSemana(
         is CalendarioCargado.SinCalendarioParaIdiomaONivel -> sinContenido(RazonSinContenido.IDIOMA_O_NIVEL_SIN_CONTENIDO)
         is CalendarioCargado.Encontrado -> {
             val entrada = calendario.entradas.firstOrNull { it.semana == semanaIso.semana }
-            val contenido = entrada?.let { contenidoPorId[idDeEntrada(it, idioma, nivel)] }
+            val contenido = entrada?.let { contenidoPorId[idDeEntrada(it, idioma, nivel, semanaIso.anio)] }
             if (contenido != null) {
                 ResultadoSemana.Encontrado(semanaIso, contenido)
             } else {
@@ -141,15 +141,28 @@ fun resolverContenidoDeLaSemana(
 }
 
 /**
- * El mismo esquema de id que arma compilar_fichas.py al compilar cada pieza.
- * REVIEW y SURVIVAL llevan el nivel ademas del idioma: un mismo idioma puede
- * tener mas de un nivel con calendario propio (ingles B2 y C1 en 2026), y la
- * semana de repaso o Survival de cada nivel es contenido distinto, no el
- * mismo texto para los dos.
+ * El mismo esquema de id que arma componer.py al componer cada pieza.
+ *
+ * CONTENT lleva el anio ademas de skillId/nivel/order: el piloto 2026 y el
+ * contenido 2027 comparten (skillId, nivel, order) -- ambos van de order 1 a
+ * (como maximo) 4 -- asi que sin el anio en el id, resolverSemana() podia
+ * encontrar la pieza del anio equivocado (o, si ambas estaban embebidas,
+ * una pisaba a la otra al indexar por id). `anio` es el anio ISO de la
+ * semana que se esta resolviendo (`semanaIso.anio`), no el anio de
+ * calendario: son el mismo salvo en el borde de diciembre/enero, y ese es
+ * justo el caso que decide cual calendario se cargo (ver
+ * resolverContenidoDeLaSemana/RepositorioSemana.kt).
+ *
+ * REVIEW y SURVIVAL siguen sin anio en el id: son del piloto 2026 bajo el
+ * esquema viejo (regla dura #11) y no se regeneran; llevan el nivel ademas
+ * del idioma porque un mismo idioma puede tener mas de un nivel con
+ * calendario propio (ingles B2 y C1 en 2026), y la semana de repaso o
+ * Survival de cada nivel es contenido distinto, no el mismo texto para los
+ * dos.
  */
-private fun idDeEntrada(entrada: EntradaCalendario, idioma: Idioma, nivel: Nivel): String =
+private fun idDeEntrada(entrada: EntradaCalendario, idioma: Idioma, nivel: Nivel, anio: Int): String =
     when (entrada.tipo) {
-        TipoSemana.CONTENT -> "${entrada.skillId}-${nivel.name}-${entrada.order}"
+        TipoSemana.CONTENT -> "${entrada.skillId}-${nivel.name}-${anio}-${entrada.order}"
         TipoSemana.REVIEW -> "REVIEW-${idioma.name}-${nivel.name}-S${entrada.semana}"
         TipoSemana.SURVIVAL -> "SURVIVAL-${idioma.name}-${nivel.name}-S${entrada.semana}"
     }

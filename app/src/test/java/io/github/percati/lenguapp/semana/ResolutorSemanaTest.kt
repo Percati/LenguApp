@@ -36,6 +36,14 @@ class ResolutorSemanaTest {
     // --- resolverContenidoDeLaSemana contra los assets reales embebidos ---
     // El calendario lo genera generarCalendarioAssets (app/build.gradle.kts)
     // antes de compilar/testear: ver el gradle.build.kts, preBuild.
+    //
+    // El id de ficha ahora lleva el anio (skillId-nivel-anio-order): el
+    // piloto 2026 y 2027 comparten (skillId, nivel, order) y sin el anio el
+    // segundo pisaba al primero al componer. Las dos aserciones de id de
+    // aca abajo ("DE-G01-B2-2026-1", "DE-V08-B2-2026-1") van a fallar hasta
+    // que app/src/main/assets/contenido/ se recomponga con componer.py bajo
+    // el esquema nuevo -- hoy sigue con el id viejo (sin anio), asi que
+    // idDeEntrada() ya no lo encuentra. Esperado, no un bug de este patch.
 
     private fun carpetaAssets(): File {
         val candidatos = listOf(File("src/main/assets"), File("app/src/main/assets"))
@@ -73,7 +81,7 @@ class ResolutorSemanaTest {
         )
         val encontrado = resultado as? ResultadoSemana.Encontrado ?: error("se esperaba Encontrado, fue $resultado")
         assertEquals(SemanaIso(2026, 37), encontrado.semanaIso)
-        assertEquals("DE-G01-B2-1", (encontrado.contenido as Ficha).id)
+        assertEquals("DE-G01-B2-2026-1", (encontrado.contenido as Ficha).id)
     }
 
     @Test
@@ -140,7 +148,7 @@ class ResolutorSemanaTest {
             contenidoPorId = cargarContenido(),
         )
         val encontrado = resultado as? ResultadoSemana.Encontrado ?: error("se esperaba Encontrado, fue $resultado")
-        assertEquals("DE-V08-B2-1", (encontrado.contenido as Ficha).id)
+        assertEquals("DE-V08-B2-2026-1", (encontrado.contenido as Ficha).id)
     }
 
     @Test

@@ -54,9 +54,13 @@ def main():
         packs[p.stem] = json.loads(p.read_text(encoding="utf-8"))
 
     n, fallos = 0, 0
-    # id -> archivo de ocurrencias que lo produjo. El id no lleva anio, asi que
-    # dos ediciones del mismo par (idioma, nivel) pueden generar el mismo id y
-    # la segunda pisaria en silencio a la primera en build/ (y en assets/).
+    # id -> archivo de ocurrencias que lo produjo. El id lleva el anio
+    # (skillId-nivel-anio-order) desde que el piloto 2026 y 2027 empezaron a
+    # compartir (skillId, nivel, order): sin el anio, la segunda edicion
+    # pisaba en silencio a la primera en build/ (y en assets/). El chequeo de
+    # duplicados se queda igual: sigue siendo la red de seguridad si alguna
+    # vez dos ocurrencias del MISMO anio generan el mismo id (bug real de
+    # autoria, no una colision entre ediciones).
     vistos = {}
     for p in sorted(base.joinpath("ocurrencias").glob("*.json")):
         doc = json.loads(p.read_text(encoding="utf-8"))
@@ -74,7 +78,7 @@ def main():
             f.update({k: v for k, v in ocu.items() if k != "packId"})
             f["skillId"] = ocu["skillId"]
             f["vocabulario"] = pack["vocabulario"]
-            f["id"] = f'{ocu["skillId"]}-{doc["nivel"]}-{ocu["order"]}'
+            f["id"] = f'{ocu["skillId"]}-{doc["nivel"]}-{doc["anio"]}-{ocu["order"]}'
             f = {k: f[k] for k in ORDEN if k in f}
 
             if f["id"] in vistos:
