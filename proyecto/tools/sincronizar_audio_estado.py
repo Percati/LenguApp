@@ -17,6 +17,9 @@ es compatible hacia atras.
 
 Si un archivo no se puede emparejar sin ambiguedad, se informa y NO se toca.
 
+Tambien informa el caso inverso: archivos que el estado registra pero que no
+estan en assets/audio/ (grabados y anotados en el Excel, sin subir al repo).
+
 Uso:
     python3 sincronizar_audio_estado.py --estado ../audio-estado.json \\
         --contenido ../contenido --audio ../../app/src/main/assets/audio [--dry-run]
@@ -83,6 +86,16 @@ def main():
             destino = "archivo"
         print(f"  + {wav.name} -> {k} ({destino})")
         nuevos += 1
+
+    en_disco = {w.name for w in Path(a.audio).rglob("*.wav")}
+    faltan = sorted(f for v in estado.values() if isinstance(v, dict)
+                    for f in [v.get("archivo", "")] + v.get("otrosArchivos", [])
+                    if f and f not in en_disco)
+    for f in faltan[:20]:
+        print(f"  - registrado pero ausente en el repo: {f}")
+    if len(faltan) > 20:
+        print(f"  - ... y {len(faltan) - 20} mas")
+    print(f"{len(faltan)} archivos registrados que faltan en {a.audio}")
 
     if not a.dry_run:
         estado_path.write_text(json.dumps(estado, ensure_ascii=False, indent=1), encoding="utf-8")

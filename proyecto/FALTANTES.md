@@ -47,23 +47,17 @@ Antes de que Traducciones pueda trabajar acá, hace falta decidir la forma del c
 
 ## 5. Audio
 
-✅ Los 1906 `.wav` de `app/src/main/assets/audio/` están todos registrados en `audio-estado.json` (0 huérfanos). Los 47 que estaban sin registrar eran **segundas grabaciones por nivel** de textos ya grabados en otro nivel (casi todos B2 de un original C1); quedaron en el campo `otrosArchivos` de su entrada, porque el estado se indexa por texto sin nivel. No son cobertura nueva.
+✅ **Ejemplos con `"audio": true`: 716/716 grabados** (los 296 que faltaban, grabados el 22-09 e importados desde el Excel de seguimiento). `validar_apariciones.py --anio 2027` ya no da avisos de audio.
 
-🔴 **Ejemplos con `"audio": true` sin grabar: 296 textos únicos** (no 343: esa cifra sumaba los 47 huérfanos, que no son ejemplos). Todos pertenecen a núcleos usados en 2027.
+🔴 **Los 296 `.wav` nuevos no están en el repo todavía.** `audio-estado.json` registra 2202 archivos y `app/src/main/assets/audio/` tiene 1906. Hay que copiarlos a `assets/audio/DE/` y `assets/audio/EN/` y commitearlos; `sincronizar_audio_estado.py --dry-run` lista los que falten (tiene que dar 0).
 
-| Par | Grabados |
-|---|---|
-| de-B2, de-C1 | completos |
-| en-B2, en-C1 | faltan 3 cada uno (EN-G08) |
-| de-B1 | 5/64 |
-| en-B1 | 2/61 |
-| de-A2, en-A2, de-C2, en-C2 | 0 (30, 36, 54, 52) |
+🟡 **Peso:** los audios son WAV PCM 16 bit, 22 kHz mono: 139 MB con 1906 archivos, ~160 MB con los nuevos. La decisión tomada es comprimir a 24-32 kbps (del orden de 20 MB en total), pendiente de definir formato y si se renombran las extensiones en el estado.
 
-`validar_apariciones.py --anio 2027` emite 573 avisos de audio para esos 296 textos: cuenta un aviso por semana en que aparece el núcleo, no por texto.
-
-`audio-a-grabar.xlsx` es el **Excel de seguimiento**: todo lo grabado (con la marca y fecha que puso Fer, guardadas en el campo `marca` de `audio-estado.json`) más los 296 ejemplos pendientes, arriba de cada nivel y ordenados por primera semana de 2027. Se regenera con `exportar_audio_maestro.py --pendientes-tipos Ejemplo --anio 2027` y se reimporta con `importar_audio_maestro.py` sin perder nada (ida y vuelta verificada). 339 filas figuran grabadas porque reusan el audio del mismo texto en otro nivel; la columna G lo indica.
+🟡 **Duplicados por nivel:** 56 textos tienen una segunda grabación de otro nivel (`otrosArchivos`: 47 viejos B2/C1 y 9 nuevos A2/B1). La app reproduce por texto, así que sobran; sin decidir si se borran.
 
 🟡 Fuera de los ejemplos, sin grabar: ~800 expresiones (redemittel) y ~4000 ítems de vocabulario, casi todo A2, B1, C2 y los packs 2027. Sin decidir si se graban.
+
+`audio-a-grabar.xlsx` es el **Excel de seguimiento**: se regenera con `exportar_audio_maestro.py --pendientes-tipos Ejemplo --anio 2027` y conserva la marca con fecha de cada grabación (campo `marca` de `audio-estado.json`). Hoy: 2541 filas, 0 pendientes.
 
 ## 6. Traducciones
 
