@@ -16,8 +16,16 @@ nuevo y reemplaza el archivo entero. No hace falta fusionar a mano.
 
 Uso:
     python3 exportar_audio_maestro.py --contenido ../contenido --salida ../auditoria-audio.xlsx
+
+    # solo lo que falta grabar, y solo ejemplos (la tanda de trabajo):
+    python3 exportar_audio_maestro.py --solo-pendientes --tipos Ejemplo --salida ../audio-a-grabar.xlsx
+
+La columna G "Archivo sugerido" propone el nombre con la convencion de los
+.wav ya grabados: IDIOMA_NIVEL_<primeras 6 palabras>_<origen>.wav, con sufijo
+_02, _03... si choca con un archivo existente. El importador no la lee: solo
+cuenta lo que Fer escriba en la columna F.
 """
-import argparse, json, re
+import argparse, json, re, sys, unicodedata
 from pathlib import Path
 from collections import defaultdict
 
@@ -45,6 +53,24 @@ def estado_de(estado, k):
 
 def limpio(t):
     return re.sub(r"\*+", "", str(t)).strip()
+
+
+def slug(t, n=6):
+    t = t.lower()
+    for a, b in (("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss"), ("’", ""), ("'", "")):
+        t = t.replace(a, b)
+    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
+    return "_".join([w for w in re.split(r"[^a-z0-9]+", t) if w][:n])
+
+
+def archivo_sugerido(idioma, niv, texto, origen, ocupados):
+    base = f"{idioma.upper()}_{niv}_{slug(texto)}_{origen}"
+    nombre, i = base, 1
+    while nombre in ocupados:
+        i += 1
+        nombre = f"{base}_{i:02d}"
+    ocupados.add(nombre)
+    return nombre + ".wav"
 
 
 def recolectar(base):
@@ -83,14 +109,15 @@ def recolectar(base):
     return datos
 
 
-def hoja_idioma(wb, idioma, por_nivel, estado):
+def hoja_idioma(wb, idioma, por_nivel, estado, ocupados):
     ws = wb.create_sheet(NOMBRE[idioma][:31])
     ws.freeze_panes = "A3"
     ws["A1"] = f"Audio a grabar — {NOMBRE[idioma]}"
     ws["A1"].font = Font(bold=True, size=13)
 
     fila = 2
-    for j, t in enumerate(["Nivel", "Tipo", "Texto", "Origen", "Grabado", "Archivo audio"], start=1):
+    for j, t in enumerate(["Nivel", "Tipo", "Texto", "Origen", "Grabado", "Archivo audio",
+                           "Archivo sugerido"], start=1):
         c = ws.cell(row=fila, column=j, value=t)
         c.font = Font(bold=True, color="FFFFFF"); c.fill = CABEZA
     ws.column_dimensions["A"].width = 8
@@ -99,6 +126,7 @@ def hoja_idioma(wb, idioma, por_nivel, estado):
     ws.column_dimensions["D"].width = 14
     ws.column_dimensions["E"].width = 10
     ws.column_dimensions["F"].width = 45
+    ws.column_dimensions["G"].width = 50
 
     for niv in ORDEN_NIVEL:
         filas = por_nivel.get(niv, [])
@@ -120,18 +148,42 @@ def hoja_idioma(wb, idioma, por_nivel, estado):
             grabado, archivo = estado_de(estado, k)
             ws.cell(row=fila, column=5, value="Y" if grabado else "").border = BORDE
             ws.cell(row=fila, column=6, value=archivo).border = BORDE
-    return fila - 2  # total de filas de datos
+            if not grabado:
+                c = ws.cell(row=fila, column=7,
+                            value=archivo_sugerido(idioma, niv, texto, origen, ocupados))
+                c.border = BORDE; c.font = Font(color="777777")
+    return sum(len(v) for v in por_nivel.values())  # sin contar separadores de nivel
 
 
 def main():
+    sys.stdout.reconfigure(encoding="utf-8")
     ap = argparse.ArgumentParser()
     ap.add_argument("--contenido", default="../contenido")
     ap.add_argument("--salida", default="../auditoria-audio.xlsx")
     ap.add_argument("--estado", default="../audio-estado.json")
+    ap.add_argument("--audio", default="../../app/src/main/assets/audio",
+                    help="carpeta de .wav, para que el nombre sugerido no choque")
+    ap.add_argument("--solo-pendientes", action="store_true",
+                    help="omitir lo ya grabado segun audio-estado.json")
+    ap.add_argument("--tipos", nargs="+", choices=["Ejemplo", "Expresión", "Vocabulario"],
+                    help="limitar a estos tipos (por defecto, todos)")
     a = ap.parse_args()
     datos = recolectar(Path(a.contenido))
     estado_path = Path(a.estado)
     estado = json.loads(estado_path.read_text(encoding="utf-8")) if estado_path.exists() else {}
+
+    for idi in datos:
+        for niv in list(datos[idi]):
+            datos[idi][niv] = [x for x in datos[idi][niv]
+                               if (not a.tipos or x[0] in a.tipos)
+                               and not (a.solo_pendientes
+                                        and estado_de(estado, f"{idi}|{x[0]}|{x[1]}")[0])]
+    ocupados = {Path(p).stem for p in Path(a.audio).rglob("*.wav")}
+    for v in estado.values():
+        if isinstance(v, dict):
+            for f in [v.get("archivo", "")] + v.get("otrosArchivos", []):
+                if f:
+                    ocupados.add(Path(f).stem)
 
     wb = openpyxl.Workbook()
     idx = wb.active; idx.title = "ÍNDICE"
@@ -151,7 +203,9 @@ def main():
     fila = 5
     total = 0
     for idi in sorted(datos, key=lambda x: NOMBRE[x]):
-        n = hoja_idioma(wb, idi, datos[idi], estado)
+        if not any(datos[idi].values()):
+            continue
+        n = hoja_idioma(wb, idi, datos[idi], estado, ocupados)
         idx.cell(row=fila, column=1, value=NOMBRE[idi])
         idx.cell(row=fila, column=2, value=n)
         total += n

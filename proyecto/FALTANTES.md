@@ -45,24 +45,25 @@ Mismo problema en las apariciones A2/B1: `subtitulo`, `mision` y `microtareas` t
 
 Antes de que Traducciones pueda trabajar acá, hace falta decidir la forma del campo (¿cada string se vuelve `{de: "...", es: "...", ...}`? ¿archivo paralelo?) — es una decisión de schema, igual que 4.1. Se recomienda resolver ambas en la misma conversación de Code.
 
-## 5. Audio — el hueco real es más grande de lo que este archivo decía antes
+## 5. Audio
 
-`audio-estado.json` tiene 1859 entradas registradas — pero eso nunca incluyó buena parte de A2, B1 ni C2, así que "completo contra lo esperado" no significaba "completo de verdad". Detectado por Apariciones al validar contra el contenido real:
+✅ Los 1906 `.wav` de `app/src/main/assets/audio/` están todos registrados en `audio-estado.json` (0 huérfanos). Los 47 que estaban sin registrar eran **segundas grabaciones por nivel** de textos ya grabados en otro nivel (casi todos B2 de un original C1); quedaron en el campo `otrosArchivos` de su entrada, porque el estado se indexa por texto sin nivel. No son cobertura nueva.
 
+🔴 **Ejemplos con `"audio": true` sin grabar: 296 textos únicos** (no 343: esa cifra sumaba los 47 huérfanos, que no son ejemplos). Todos pertenecen a núcleos usados en 2027.
 
-| Combo | Audio grabado |
+| Par | Grabados |
 |---|---|
-| de-C1 | 83/83 ✅ |
-| de-B2 | 116/116 ✅ |
-| en-B2 | 108/111 (faltan 3, EN-G08-B2) |
-| en-C1 | 106/109 (faltan 3, EN-G08-C1) |
+| de-B2, de-C1 | completos |
+| en-B2, en-C1 | faltan 3 cada uno (EN-G08) |
 | de-B1 | 5/64 |
 | en-B1 | 2/61 |
-| de-A2, en-A2, de-C2, en-C2 | 0 grabados |
+| de-A2, en-A2, de-C2, en-C2 | 0 (30, 36, 54, 52) |
 
-**Hueco real total: 343 ejemplos sin registrar, no los ~6 que se creía.**
+`validar_apariciones.py --anio 2027` emite 573 avisos de audio para esos 296 textos: cuenta un aviso por semana en que aparece el núcleo, no por texto.
 
-🟢 **Prompt ya entregado a la conversación de Audio (22-09).** Instrucciones: correr `validar_apariciones.py` para la lista exacta, regenerar el Excel maestro, sincronizar los 47 audios ya presentes en el repo que no estaban registrados, y devolver un parche propio cuando termine.
+`audio-a-grabar.xlsx` con la lista exacta: `exportar_audio_maestro.py --solo-pendientes --tipos Ejemplo`. En la conversación de Audio, esperando que Fer lo grabe.
+
+🟡 Fuera de los ejemplos, sin grabar: ~800 expresiones (redemittel) y ~4000 ítems de vocabulario, casi todo A2, B1, C2 y los packs 2027. Sin decidir si se graban.
 
 ## 6. Traducciones
 
