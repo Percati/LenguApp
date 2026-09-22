@@ -1,62 +1,77 @@
-# Qué falta, a 21 de septiembre de 2026
+# Qué falta, a 22 de septiembre de 2026 (actualización 2)
 
-Estado regenerado a partir de los archivos reales del repositorio, no de una foto anterior. Si este archivo y otro documento del proyecto se contradicen, este es el que hay que creer.
+Estado regenerado a partir de los archivos reales del repositorio (parche de Apariciones ya aplicado y verificado en un clon de prueba, no solo leído). Si este archivo y otro documento del proyecto se contradicen, este es el que hay que creer.
 
-## 1. Núcleos (contenido pedagógico fijo, por skill+nivel)
+## 1. Núcleos — ✅ completo
 
-| Idioma | Nivel | Hechos | Total |
-|---|---|---|---|
-| DE | A2 | 15 | 15 |
-| DE | B1 | 32 | 32 |
-| DE | B2 | 37 | 37 |
-| DE | C1 | 41 | 41 |
-| DE | C2 | 27 | 27 |
-| EN | A2 | 18 | 18 |
-| EN | B1 | 30 | 30 |
-| EN | B2 | 34 | 34 |
-| EN | C1 | 33 | 33 |
-| EN | C2 | 26 | 26 |
+293/293, con `contraste` y `erroresContrastivos` completos (5 claves de idioma de app cada uno) en las 10 combinaciones.
 
-**Total: 293/293 — ✅ completo.**
+## 2. Packs 2027 — ✅ completo
 
-### 1.1 — Contraste multiidioma
+480/480. Validado con `tools/validar_packs.py`: 0 problemas de continuidad. Hueco conocido: 8 packs de `en-C1` siguen calcados del alemán (T02-1/3, T07-1/2, T09-1/3, T13-2/4) — pendiente de reescritura, no bloquea.
 
-✅ Completo: 293/293 núcleos con las 5 claves de app.
+## 3. Apariciones 2027 — ✅ completo, verificado
 
-### 1.2 — Errores contrastivos
+| Combo | Apariciones |
+|---|---|
+| DE A2 | 48/48 |
+| DE B1 | 48/48 |
+| DE B2 | 48/48 |
+| DE C1 | 48/48 |
+| DE C2 | 48/48 |
+| EN A2 | 48/48 |
+| EN B1 | 48/48 |
+| EN B2 | 48/48 |
+| EN C1 | 48/48 |
+| EN C2 | 48/48 |
 
-✅ Completo: 293/293 núcleos con `erroresContrastivos` poblado, mismas 5 claves que `contraste`. Aplicado y verificado.
+**Total: 480/480 — verificado componiendo de verdad, no solo leyendo el reporte.**
 
-## 2. Packs de vocabulario (2027, calendario de 48 semanas)
+`tools/validar_apariciones.py` (nuevo, agregado por esta conversación) da 0 errores en las 10 combinaciones; los avisos restantes son todos de audio faltante, cubierto en la sección 5.
 
-✅ Completo: 480/480 packs. Validado con `tools/validar_packs.py`: 0 problemas de continuidad entre apariciones del mismo tema.
+## 4. Bloqueantes para Code (dos, ambos de esquema, no de contenido)
 
-## 3. Apariciones (fichas semanales armadas, `ocurrencias/`)
+### 4.1 — Id de ficha sin año
+🔴 `componer.py` ahora falla explícitamente (antes pisaba en silencio) ante 42 colisiones de id entre 2026 y 2027: 14 de `de-B2`, 14 de `en-B2` y 14 de `en-C1`. Confirmado corriendo `componer.py` completo: "480 fichas compuestas, 9 semanas especiales, 42 con problemas".
 
-🔴 **0/10 combinaciones — sin empezar.** Es el único bloqueante real para que `tools/componer.py` produzca fichas para Code: núcleos, contraste, errores contrastivos y packs ya están completos para las 10 combinaciones.
+Requiere tocar `schema/ficha.schema.json` (pattern del id), `tools/componer.py` y `ResolutorSemana.kt` de la app.
 
-## 4. Traducciones (campo `traducciones` en redemittel y vocabulario)
+### 4.2 — Falta la estructura de traducción para A2/B1 (hallazgo nuevo, 22-09)
+🔴 Según `reglas-fichas.md`, en A2 y B1 **toda la prosa de la ficha** debe ser bilingüe (idioma que se aprende + idioma de app, para el switch de la interfaz). Pero de los 14 campos de un núcleo, solo `redemittel` (y `vocabulario` en los packs) tienen un diccionario de traducciones (`{es,en,it,fr,pt}`). Verificado en `DE-G01-A2.json`: `descripcion`, `notas`, `ejemplos`, `errores`, `autochequeo`, `cuadroReferencia` y `promptCorreccion` son texto plano, sin ningún campo donde alojar la traducción.
 
-Prácticamente completo. Un solo hueco real, aislado:
+Mismo problema en las apariciones A2/B1: `subtitulo`, `mision` y `microtareas` tampoco tienen estructura de traducción. Apariciones ya escribió ese texto en frases cortas pensando en esto, pero el campo para guardarlo no existe.
 
+**Alcance real: 95 núcleos (A2+B1 de+en) y 192 apariciones (48 semanas × 4 combinaciones A2/B1).**
 
-- 🔴 **`en` en los 672 ítems de vocabulario de `packs/de-C1-2027-*.json` — 0% traducido.** Es una combinación entera (alemán C1 2027), no casos sueltos.
+Antes de que Traducciones pueda trabajar acá, hace falta decidir la forma del campo (¿cada string se vuelve `{de: "...", es: "...", ...}`? ¿archivo paralelo?) — es una decisión de schema, igual que 4.1. Se recomienda resolver ambas en la misma conversación de Code.
 
-- 🟡 8 expresiones sueltas de `redemittel` sin traducción al inglés: 3 en `DE-G15-C1`, 2 en `DE-G15-B2`, 3 en `DE-V05-B2`. Volumen bajo, se puede resolver en el mismo lote que lo anterior.
+## 5. Audio — el hueco real es más grande de lo que este archivo decía antes
 
-- El resto (es/de/it/fr/pt en ambos campos, y `en` en el resto de las combinaciones de alemán) está completo.
-
-## 5. Audio
-
-✅ Los 1859 archivos que `audio-estado.json` espera están todos presentes en el repo (0 faltantes).
+`audio-estado.json` tiene 1859 entradas registradas — pero eso nunca incluyó buena parte de A2, B1 ni C2, así que "completo contra lo esperado" no significaba "completo de verdad". Detectado por Apariciones al validar contra el contenido real:
 
 
-🟡 Hay **47 archivos de audio en el repo que NO están registrados** en `audio-estado.json` — se agregaron directo, sin pasar por el proceso de importación. No es un problema de cobertura (van adelantados, no atrasados), pero conviene correr `importar_audio_maestro.py` con el Excel correspondiente o revisar a mano para que el estado quede sincronizado con la realidad.
+| Combo | Audio grabado |
+|---|---|
+| de-C1 | 83/83 ✅ |
+| de-B2 | 116/116 ✅ |
+| en-B2 | 108/111 (faltan 3, EN-G08-B2) |
+| en-C1 | 106/109 (faltan 3, EN-G08-C1) |
+| de-B1 | 5/64 |
+| en-B1 | 2/61 |
+| de-A2, en-A2, de-C2, en-C2 | 0 grabados |
 
-## 6. Vocabulario atestiguado alemán
+**Hueco real total: 343 ejemplos sin registrar, no los ~6 que se creía.**
 
-🟡 `data/vocab_de.json` cubre A1–B1 y C1, pero **sigue sin B2 y C2**. Sin chat asignado todavía.
+🟢 **Prompt ya entregado a la conversación de Audio (22-09).** Instrucciones: correr `validar_apariciones.py` para la lista exacta, regenerar el Excel maestro, sincronizar los 47 audios ya presentes en el repo que no estaban registrados, y devolver un parche propio cuando termine.
 
-## 7. Piloto 2026 (arquitectura anterior, aún vigente como referencia)
+## 6. Traducciones
 
-Alemán B2, inglés B2 e inglés C1 tienen su año 2026 (semanas 37-53) completo bajo el esquema viejo. No hace falta tocarlo.
+🟡 Packs de `de-C1-2027`: 672 ítems de vocabulario sin la clave `en`, más 8 expresiones sueltas de `redemittel` (`DE-G15-B2`, `DE-G15-C1`, `DE-V05-B2`). El resto (es/de/it/fr/pt en ambos campos, y `en` en el resto de alemán) está completo. No bloquea composición, solo deja esa clave vacía en el JSON final.
+
+## 7. Sin dueño todavía
+
+- **Semanas de repaso 2027** (S10, S22, S34, S46): no existe contenido en ninguna combinación. No es de Apariciones — nadie definió el formato.
+
+## 8. Piloto 2026
+
+Alemán B2, inglés B2 e inglés C1 siguen completos bajo el esquema viejo. No tocar hasta que se resuelva el id con año (sección 4).
