@@ -75,9 +75,33 @@
       "pattern": "^T\\d{2}$"
     },
     "titulo": {
-      "type": "string",
-      "minLength": 3,
-      "maxLength": 80
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 80
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "es",
+              "en",
+              "de",
+              "fr",
+              "it",
+              "pt"
+            ]
+          },
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 80
+          },
+          "minProperties": 1
+        }
+      ],
+      "description": "En A2/B1 (bilingue) puede ser {idioma: texto} en vez de un string plano -- ver $comment, 'campos bilingues A2/B1'."
     },
     "subtitulo": {
       "oneOf": [
@@ -515,8 +539,29 @@
             "type": "string"
           },
           "funcion": {
-            "type": "string",
-            "description": "Que hace, no que significa"
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "propertyNames": {
+                  "enum": [
+                    "es",
+                    "en",
+                    "de",
+                    "fr",
+                    "it",
+                    "pt"
+                  ]
+                },
+                "additionalProperties": {
+                  "type": "string"
+                },
+                "minProperties": 1
+              }
+            ],
+            "description": "Que hace, no que significa. En A2/B1 (bilingue) puede ser {idioma: texto} en vez de un string plano -- ver $comment, 'campos bilingues A2/B1'."
           },
           "traducciones": {
             "type": "object",
@@ -801,5 +846,5 @@
       }
     }
   ],
-  "$comment": "MARCADO EN LINEA. Los campos de prosa y de tabla pueden contener dos marcadores, planos y sin anidar: *cita* para una palabra o expresion citada, y **destaque** para el elemento sobre el que se llama la atencion (por ejemplo la posicion del verbo en la ficha de Satzbau). La app necesita UN solo renderizador que los convierta a texto con estilo. El marcado que envolvia el campo entero ya fue quitado por el compilador: los ejemplos y los Redemittel llegan limpios y la app los estiliza por su rol. -- CAMPOS BILINGUES A2/B1. En A2 y B1 toda la prosa de la ficha se puede mostrar en el idioma que se aprende O en el idioma de la app (switch en la interfaz), asi que necesita un lugar donde alojar la traduccion. Los campos afectados (descripcion, notas, ejemplos[].texto, errores, autochequeo, cuadroReferencia.titulo/columnas/filas/notaPie, promptCorreccion, subtitulo, mision.consigna/requisitos, microtareas[].texto) aceptan `oneOf` un string plano (como hasta ahora, y como siguen siendo en B2/C1/C2, que no son bilingues) o un objeto {idioma: texto} con el MISMO patron que ya usan contraste, erroresContrastivos y vocabulario[].traducciones: propertyNames limitado a los seis idiomas soportados (es, en, de, fr, it, pt) y minProperties 1, para que se pueda ir poblando una clave a la vez en vez de exigir las seis de entrada. El propio idioma de la ficha (p.ej. 'de' en una ficha alemana) va como una clave mas del objeto, no aparte: es el mismo mecanismo, solo que ahora tambien alcanza a la prosa y no unicamente al vocabulario y los Redemittel. La forma `oneOf` es deliberada y no un `if`/`then` que EXIJA el objeto en A2/B1: los 95 nucleos y 192 apariciones de A2/B1 todavia tienen estos campos como string plano (nadie los tradujo todavia), asi que exigir el objeto ahora romperia toda esa composicion. El campo queda listo para que se traduzca de a poco; no se vuelve obligatorio con esta revision del schema."
+  "$comment": "MARCADO EN LINEA. Los campos de prosa y de tabla pueden contener dos marcadores, planos y sin anidar: *cita* para una palabra o expresion citada, y **destaque** para el elemento sobre el que se llama la atencion (por ejemplo la posicion del verbo en la ficha de Satzbau). La app necesita UN solo renderizador que los convierta a texto con estilo. El marcado que envolvia el campo entero ya fue quitado por el compilador: los ejemplos y los Redemittel llegan limpios y la app los estiliza por su rol. -- CAMPOS BILINGUES A2/B1. En A2 y B1 toda la prosa de la ficha se puede mostrar en el idioma que se aprende O en el idioma de la app (switch en la interfaz), asi que necesita un lugar donde alojar la traduccion. Los campos afectados (titulo, descripcion, notas, ejemplos[].texto, errores, autochequeo, cuadroReferencia.titulo/columnas/filas/notaPie, promptCorreccion, subtitulo, mision.consigna/requisitos, microtareas[].texto, redemittel[].funcion) aceptan `oneOf` un string plano (como hasta ahora, y como siguen siendo en B2/C1/C2, que no son bilingues) o un objeto {idioma: texto} con el MISMO patron que ya usan contraste, erroresContrastivos y vocabulario[].traducciones: propertyNames limitado a los seis idiomas soportados (es, en, de, fr, it, pt) y minProperties 1, para que se pueda ir poblando una clave a la vez en vez de exigir las seis de entrada. El propio idioma de la ficha (p.ej. 'de' en una ficha alemana) va como una clave mas del objeto, no aparte: es el mismo mecanismo, solo que ahora tambien alcanza a la prosa y no unicamente al vocabulario y los Redemittel. La forma `oneOf` es deliberada y no un `if`/`then` que EXIJA el objeto en A2/B1: los 95 nucleos y 192 apariciones de A2/B1 todavia tienen estos campos como string plano (nadie los tradujo todavia), asi que exigir el objeto ahora romperia toda esa composicion. El campo queda listo para que se traduzca de a poco; no se vuelve obligatorio con esta revision del schema."
 }
