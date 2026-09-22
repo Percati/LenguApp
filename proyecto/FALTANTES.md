@@ -1,4 +1,4 @@
-# Qué falta, a 22 de septiembre de 2026 (actualización 2)
+# Qué falta, a 22 de septiembre de 2026 (actualización 3)
 
 Estado regenerado a partir de los archivos reales del repositorio (parche de Apariciones ya aplicado y verificado en un clon de prueba, no solo leído). Si este archivo y otro documento del proyecto se contradicen, este es el que hay que creer.
 
@@ -29,21 +29,22 @@ Estado regenerado a partir de los archivos reales del repositorio (parche de Apa
 
 `tools/validar_apariciones.py` (nuevo, agregado por esta conversación) da 0 errores en las 10 combinaciones; los avisos restantes son todos de audio faltante, cubierto en la sección 5.
 
-## 4. Bloqueantes para Code (dos, ambos de esquema, no de contenido)
+## 4. Bloqueantes de esquema para Code — ✅ los dos originales resueltos, dos nuevos abiertos
 
-### 4.1 — Id de ficha sin año
-🔴 `componer.py` ahora falla explícitamente (antes pisaba en silencio) ante 42 colisiones de id entre 2026 y 2027: 14 de `de-B2`, 14 de `en-B2` y 14 de `en-C1`. Confirmado corriendo `componer.py` completo: "480 fichas compuestas, 9 semanas especiales, 42 con problemas".
+### 4.1 — Id de ficha con año — ✅ resuelto y verificado
+Id ahora es `skillId-nivel-anio-order`. Verificado componiendo las tres capas reales: "522 fichas compuestas, 9 semanas especiales, 0 con problemas" (antes: 480+9, 42 con problemas). `DE-G01-B2-2026-1.json` y `DE-G01-B2-2027-1.json` ya son archivos distintos. Tocó `schema/ficha.schema.json`, `tools/componer.py` y `ResolutorSemana.kt`.
 
-Requiere tocar `schema/ficha.schema.json` (pattern del id), `tools/componer.py` y `ResolutorSemana.kt` de la app.
+### 4.2 — Estructura de traducción para A2/B1 — ✅ resuelto
+13 campos (`descripcion`, `notas`, `ejemplos[].texto`, `errores`, `autochequeo`, `cuadroReferencia.*`, `promptCorreccion`, `subtitulo`, `mision.*`, `microtareas[].texto`) aceptan ahora `oneOf` string plano u objeto `{idioma: texto}`. No es obligatorio todavía para A2/B1 — los 95 núcleos y 192 apariciones siguen en texto plano, listos para que Traducciones los llene sin que el schema los rompa. **Traducciones ya está trabajando sobre esto.**
 
-### 4.2 — Falta la estructura de traducción para A2/B1 (hallazgo nuevo, 22-09)
-🔴 Según `reglas-fichas.md`, en A2 y B1 **toda la prosa de la ficha** debe ser bilingüe (idioma que se aprende + idioma de app, para el switch de la interfaz). Pero de los 14 campos de un núcleo, solo `redemittel` (y `vocabulario` en los packs) tienen un diccionario de traducciones (`{es,en,it,fr,pt}`). Verificado en `DE-G01-A2.json`: `descripcion`, `notas`, `ejemplos`, `errores`, `autochequeo`, `cuadroReferencia` y `promptCorreccion` son texto plano, sin ningún campo donde alojar la traducción.
+### 4.3 — `generarCalendarioAssets` rompe el build (nuevo, hallado por Code, no relacionado a su parche)
+🔴 `data/banco.json` creció a 33-37 skills por nivel; `generar_calendario.py` (herramienta vieja, pensada solo para el piloto) no puede repartirlos en las ~2 semanas libres que deja `semanas-fijas.json`. Bloquea `./gradlew test` y `assembleDebug` en cualquier clon nuevo. Verificado: el fallo es interno a `generar_calendario.py` procesando archivos que nadie tocó en este parche.
 
-Mismo problema en las apariciones A2/B1: `subtitulo`, `mision` y `microtareas` tampoco tienen estructura de traducción. Apariciones ya escribió ese texto en frases cortas pensando en esto, pero el campo para guardarlo no existe.
+### 4.4 — Assets de la app y tests desactualizados (nuevo)
+🔴 `app/src/main/assets/contenido/` sigue compilado con el esquema de id viejo (sin año) — hace falta correr `componer.py` de nuevo para regenerarlo. Hasta entonces, dos aserciones de `ResolutorSemanaTest.kt` quedan en rojo a propósito (documentado con comentario en el test, no es un bug oculto).
 
-**Alcance real: 95 núcleos (A2+B1 de+en) y 192 apariciones (48 semanas × 4 combinaciones A2/B1).**
-
-Antes de que Traducciones pueda trabajar acá, hace falta decidir la forma del campo (¿cada string se vuelve `{de: "...", es: "...", ...}`? ¿archivo paralelo?) — es una decisión de schema, igual que 4.1. Se recomienda resolver ambas en la misma conversación de Code.
+### 4.5 — Limpieza menor pendiente
+🟡 El chequeo de colisión de id entre años de `validar_apariciones.py` (punto 6 de su docstring) queda mudo para siempre, porque el id ya nunca colisiona entre ediciones. No bloquea nada; es código muerto que conviene retirar en algún momento.
 
 ## 5. Audio — ✅ contenido completo
 
