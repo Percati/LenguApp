@@ -1,0 +1,401 @@
+{
+ "id": "EN-F15-C1-2026-1",
+ "skillId": "EN-F15",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T08",
+ "titulo": "Managing a Conversation",
+ "subtitulo": "Taking, holding and yielding the floor; repairing without stopping",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 10,
+  "minutosEstimados": 55
+ },
+ "descripcion": "This is probably the skill that limits spoken English most, and the least taught. Courses train you to produce sentences; they do not train you to get a turn, keep it while you think, hand it over, or recover when you lose the thread mid-sentence. Fluency is not speed — it is the ability to keep the channel open while you think.",
+ "cuadroReferencia": {
+  "titulo": "The five moves",
+  "columnas": [
+   "Move",
+   "Function",
+   "Language"
+  ],
+  "filas": [
+   [
+    "Taking",
+    "get a turn without waiting for silence",
+    "*Can I jump in on that?* / *Sorry, before we move on —*"
+   ],
+   [
+    "Holding",
+    "keep the turn while searching",
+    "*Give me a second, I'm working out how to say this* / *There's a word I'm looking for — bear with me*"
+   ],
+   [
+    "Yielding",
+    "hand it back deliberately",
+    "*But you were going to say something* / *What's your take?*"
+   ],
+   [
+    "Repairing",
+    "fix a broken sentence out loud",
+    "*Let me start that again* / *That came out wrong — what I meant was…*"
+   ],
+   [
+    "Buying time",
+    "fill while thinking",
+    "*That's a good question, actually* / *It depends what you mean by…*"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*Sorry, before we move on — can I go back to what you said about your sister?*"
+  },
+  {
+   "texto": "*There's a word I'm looking for, bear with me… estranged. That's it.*",
+   "audio": true
+  },
+  {
+   "texto": "*That came out wrong. What I meant was that I understood why she did it, not that I agreed.*",
+   "audio": true
+  },
+  {
+   "texto": "*Can I jump in on that?*",
+   "audio": true
+  },
+  {
+   "texto": "*Let me start that again.*",
+   "audio": true
+  },
+  {
+   "texto": "*But you were going to say something.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Announcing that you are searching for a word is a C1 move, not a failure. Native speakers do it constantly.",
+  "Silence costs more in English than in Spanish. Filled pauses (*right*, *so*, *I mean*) keep the turn.",
+  "Explicit repair is far better than trailing off."
+ ],
+ "contraste": {
+  "es": "Spanish takes the floor with short signals (perdona, oye), which English expands into a fuller announcement (Sorry, can I just come in here?). The English just does the softening work.",
+  "de": "Darf ich kurz einhaken? corresponds exactly to Can I just come in here?, with kurz doing the work of just. Taking the floor therefore transfers directly.",
+  "it": "Posso intervenire un attimo? corresponds closely to Can I just come in here?, with un attimo doing the work of just.",
+  "fr": "Je peux me permettre d'intervenir ? corresponds to Can I just come in here?, though English adds just where French relies on the verb se permettre.",
+  "pt": "Posso só acrescentar uma coisa? corresponds exactly to Can I just add something?, with só doing the work of just."
+ },
+ "errores": [
+  "Apologising for your English mid-conversation. It moves the listener's attention onto your level.",
+  "*Sorry, my English is bad* — never say this. Say *bear with me*.",
+  "Abandoning a lost sentence instead of repairing it aloud.",
+  "Waiting for a clean gap that never comes."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Volviendo a lo que decías* rendered as *Returning to what you said* instead of *Going back to your point*."
+  ],
+  "de": [
+   "*Um darauf zurückzukommen* rendered as *To come back on that* instead of *To come back to that*."
+  ],
+  "it": [
+   "*Tornando a* rendered as *Turning to*, which changes the topic, instead of *Going back to*."
+  ],
+  "fr": [
+   "*Pour revenir à* rendered as *For returning to* instead of *To come back to*."
+  ],
+  "pt": [
+   "*Voltando a* rendered as *Returning to* instead of *Going back to*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "to set boundaries",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "poner límites",
+    "de": "Grenzen setzen",
+    "fr": "poser des limites",
+    "it": "stabilire dei limiti",
+    "pt": "estabelecer limites"
+   },
+   "nota": "therapeutic register, now normalised"
+  },
+  {
+   "item": "to drift apart",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "distanciarse",
+    "de": "sich auseinanderleben",
+    "fr": "s’éloigner",
+    "it": "allontanarsi",
+    "pt": "afastar-se"
+   },
+   "nota": "without conflict"
+  },
+  {
+   "item": "to clear the air",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "aclarar las cosas",
+    "de": "die Dinge aussprechen / die Luft reinigen",
+    "fr": "mettre les choses à plat",
+    "it": "chiarirsi",
+    "pt": "esclarecer as coisas"
+   }
+  },
+  {
+   "item": "to be there for someone",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar ahí para alguien",
+    "de": "für jemanden da sein",
+    "fr": "être là pour quelqu’un",
+    "it": "esserci per qualcuno",
+    "pt": "estar presente para alguém"
+   },
+   "nota": "hard to translate literally"
+  },
+  {
+   "item": "to fall out with",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "pelearse con",
+    "de": "sich mit jemandem zerstreiten",
+    "fr": "se brouiller avec",
+    "it": "litigare con",
+    "pt": "zangar-se com"
+   }
+  },
+  {
+   "item": "to patch things up",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "reconciliarse",
+    "de": "sich wieder vertragen",
+    "fr": "se réconcilier / arranger les choses",
+    "it": "fare pace",
+    "pt": "fazer as pazes"
+   }
+  },
+  {
+   "item": "to take something the wrong way",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tomarse algo a mal",
+    "de": "etwas falsch auffassen",
+    "fr": "mal prendre quelque chose",
+    "it": "prendere qualcosa nel modo sbagliato",
+    "pt": "levar algo a mal"
+   }
+  },
+  {
+   "item": "a sounding board",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "alguien con quien pensar en voz alta",
+    "de": "jemand, mit dem man Gedanken durchspielen kann",
+    "fr": "une personne à qui soumettre ses idées",
+    "it": "una persona con cui confrontarsi",
+    "pt": "alguém com quem trocar ideias"
+   },
+   "nota": "someone to think aloud with"
+  },
+  {
+   "item": "to walk on eggshells",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "pisar huevos",
+    "de": "wie auf Eiern gehen",
+    "fr": "marcher sur des œufs",
+    "it": "camminare sulle uova",
+    "pt": "andar sobre ovos"
+   }
+  },
+  {
+   "item": "an in-joke",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "chiste privado",
+    "de": "ein Insiderwitz",
+    "fr": "une plaisanterie entre initiés",
+    "it": "una battuta privata",
+    "pt": "uma piada interna"
+   }
+  },
+  {
+   "item": "to bottle something up",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "guardarse algo",
+    "de": "etwas in sich hineinfressen",
+    "fr": "garder quelque chose pour soi",
+    "it": "tenersi tutto dentro",
+    "pt": "guardar algo para si"
+   }
+  },
+  {
+   "item": "tough love",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "cariño exigente",
+    "de": "strenge Fürsorge / harte Liebe",
+    "fr": "l’affection ferme / tough love",
+    "it": "l’amore severo",
+    "pt": "o amor firme"
+   }
+  },
+  {
+   "item": "to grow apart",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "distanciarse con los años",
+    "de": "sich mit den Jahren auseinanderleben",
+    "fr": "s’éloigner avec le temps",
+    "it": "allontanarsi col tempo",
+    "pt": "afastar-se com os anos"
+   },
+   "nota": "≠ *grow up*"
+  },
+  {
+   "item": "a support network",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "red de apoyo",
+    "de": "ein Unterstützungsnetzwerk",
+    "fr": "un réseau de soutien",
+    "it": "una rete di sostegno",
+    "pt": "uma rede de apoio"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Can I jump in?",
+   "funcion": "takes the floor",
+   "traducciones": {
+    "es": "¿puedo meter una?",
+    "de": "Kann ich kurz einhaken?",
+    "fr": "Je peux intervenir ?",
+    "it": "Posso intervenire un attimo?",
+    "pt": "Posso intervir?"
+   }
+  },
+  {
+   "expresion": "Sorry, before we move on —",
+   "funcion": "takes it back to an earlier point",
+   "traducciones": {
+    "es": "perdón, antes de seguir…",
+    "de": "Entschuldige, bevor wir weitermachen —",
+    "fr": "Désolé, avant de passer à la suite —",
+    "it": "Scusa, prima di andare avanti —",
+    "pt": "Desculpa, antes de continuarmos —"
+   }
+  },
+  {
+   "expresion": "Bear with me",
+   "funcion": "holds the turn while searching",
+   "traducciones": {
+    "es": "dame un segundo",
+    "de": "Hab kurz Geduld mit mir.",
+    "fr": "Patiente un instant avec moi.",
+    "it": "Abbi un attimo di pazienza.",
+    "pt": "Tem um pouco de paciência comigo."
+   }
+  },
+  {
+   "expresion": "Let me start that again",
+   "funcion": "explicit repair",
+   "traducciones": {
+    "es": "lo digo de nuevo",
+    "de": "Ich fange noch einmal an.",
+    "fr": "Je recommence.",
+    "it": "Ricomincio.",
+    "pt": "Vou começar outra vez."
+   }
+  },
+  {
+   "expresion": "I've lost my thread",
+   "funcion": "admits the breakdown and keeps going",
+   "traducciones": {
+    "es": "perdí el hilo",
+    "de": "Ich habe den Faden verloren.",
+    "fr": "J’ai perdu le fil.",
+    "it": "Ho perso il filo.",
+    "pt": "Perdi o fio à meada."
+   }
+  },
+  {
+   "expresion": "What's your take?",
+   "funcion": "yields the turn",
+   "traducciones": {
+    "es": "¿vos qué opinás?",
+    "de": "Wie siehst du das?",
+    "fr": "Quel est ton avis ?",
+    "it": "Che ne pensi?",
+    "pt": "Qual é a tua opinião?"
+   }
+  },
+  {
+   "expresion": "I'll stop there",
+   "funcion": "closes your turn cleanly",
+   "traducciones": {
+    "es": "lo dejo ahí",
+    "de": "Ich höre hier auf.",
+    "fr": "Je m’arrête là.",
+    "it": "Mi fermo qui.",
+    "pt": "Fico por aqui."
+   }
+  },
+  {
+   "expresion": "It depends what you mean by…",
+   "funcion": "buys time and clarifies",
+   "traducciones": {
+    "es": "depende de qué entiendas por…",
+    "de": "Es hängt davon ab, was du mit … meinst.",
+    "fr": "Ça dépend de ce que tu entends par…",
+    "it": "Dipende da cosa intendi per…",
+    "pt": "Depende do que queres dizer com…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Have a real conversation of at least ten minutes in English about something personal.",
+  "requisitos": [
+   "take the floor twice",
+   "hold it once while visibly searching for a word",
+   "repair one broken sentence aloud",
+   "yield deliberately twice",
+   "all four core vocabulary items",
+   "Evidence: a recording",
+   "or 400 words reconstructing what you said and what worked."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Learn four floor-taking phrases by heart. Say them aloud until they are automatic."
+  },
+  {
+   "dia": "mie",
+   "minutos": 2,
+   "texto": "In any conversation, buy time once instead of rushing."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds; interrupt yourself once on purpose, then repair."
+  }
+ ],
+ "autochequeo": [
+  "Did I take the floor verbally, or wait for a gap?",
+  "Did I hold a turn while searching, or go silent?",
+  "Did I repair aloud, or trail off?",
+  "Did I apologise for my English?",
+  "Did I hand the turn back at least twice?"
+ ],
+ "promptCorreccion": "Focus only on conversation management. (1) Mark every taking, holding, yielding and repair move. (2) Flag where I trailed off instead of repairing. (3) Flag any apology for my own English. (4) Give me three natural time-buying phrases at C1 that I did not use. Do not rewrite the text."
+}

@@ -1,0 +1,402 @@
+{
+ "id": "EN-G15-C1-2026-1",
+ "skillId": "EN-G15",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T04",
+ "titulo": "Reduced Relative and Participle Clauses",
+ "subtitulo": "Compressing written English without losing clarity",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "This is a structural difference between B2 and C1 written English. *The patients who were given the drug* becomes *the patients given the drug*. The information is identical; the density is not. The rule is narrow and learnable: drop the relative pronoun and the auxiliary when the clause is passive or continuous, and only when the pronoun is the **subject**.",
+ "cuadroReferencia": {
+  "titulo": "What reduces to what",
+  "columnas": [
+   "Full clause",
+   "Reduced",
+   "Type"
+  ],
+  "filas": [
+   [
+    "the study which was published…",
+    "the study published…",
+    "past participle (passive)"
+   ],
+   [
+    "anyone who is taking…",
+    "anyone taking…",
+    "present participle (active)"
+   ],
+   [
+    "because it had been delayed…",
+    "having been delayed…",
+    "perfect passive"
+   ],
+   [
+    "after she had finished…",
+    "having finished…",
+    "perfect active"
+   ],
+   [
+    "the data which is available",
+    "the data available",
+    "adjective postposition"
+   ],
+   [
+    "the book which I read",
+    "✗ cannot reduce",
+    "pronoun is the object"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*The study, published last month, contradicts three earlier trials.*",
+   "audio": true
+  },
+  {
+   "texto": "*Anyone taking that medication should avoid alcohol.*",
+   "audio": true
+  },
+  {
+   "texto": "*Having been misdiagnosed twice, she stopped trusting the referral system.*",
+   "audio": true
+  },
+  {
+   "texto": "*Weighed against the side effects, the benefit looks smaller.*",
+   "audio": true
+  },
+  {
+   "texto": "*The data available doesn't support that conclusion.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Present participle = active; past participle = passive. Getting this backwards is the classic error.",
+  "Dangling participles are common and real: the participle's subject must be the main clause's subject.",
+  "These are written structures. In conversation they sound stiff."
+ ],
+ "contraste": {
+  "es": "Spanish has gerund and participle clauses too, but tolerates a dangling subject far more readily (estando en Madrid, me robaron). English does not: the same construction reads as an error.",
+  "de": "German compresses relative clauses into participles placed before the noun (die mit dem Medikament behandelten Patienten), while English places them after it (the patients given the drug). German speakers therefore know the compression but have to move the whole participle phrase behind the noun.",
+  "it": "Reduced relatives are easy, because Italian uses exactly the same postnominal participle (i pazienti trattati con il farmaco – the patients treated with the drug). The risk lies in participle and gerund clauses: colloquial Italian tolerates a different subject (essendo a Madrid, mi hanno derubato), while English treats this as an error.",
+  "fr": "Reduced relatives are easy, since French uses the same postnominal participle (les patients traités avec le médicament). French school grammar also insists that the gérondif shares the subject of the main clause, so French speakers already know the rule that prevents dangling participles in English.",
+  "pt": "Reduced relatives are easy, since Portuguese uses the same postnominal participle (os doentes tratados com o fármaco). Gerund clauses with a different subject are common, especially in Brazilian Portuguese, so dangling participles are the main risk."
+ },
+ "errores": [
+  "*Walking into the room, the lights were off* — the lights were not walking.",
+  "Reducing where the pronoun is the object: *the book read*.",
+  "Overusing it in speech."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Copying the Spanish gerund of posteriority: *He resigned in May, being replaced in June* instead of *and was replaced in June*."
+  ],
+  "de": [
+   "Placing the participle and its complements before the noun: *the in 2019 built plant* instead of *the plant built in 2019*."
+  ],
+  "it": [
+   "Copying the Italian absolute participle: *Finished the work, we left* from *finito il lavoro* instead of *Having finished the work, we left*."
+  ],
+  "fr": [
+   "Copying *une fois le travail terminé*: *Once the work finished, we left* instead of *Once the work was finished*."
+  ],
+  "pt": [
+   "Copying the gerund of posteriority: *The company closed in 2020, leaving the market in 2021* for two separate events instead of *and left the market in 2021*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "an underlying condition",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "patología de base",
+    "de": "eine Grunderkrankung",
+    "fr": "une pathologie sous-jacente",
+    "it": "una patologia di base",
+    "pt": "uma condição subjacente"
+   }
+  },
+  {
+   "item": "a side effect vs. an adverse reaction",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "efecto secundario / reacción adversa",
+    "de": "eine Nebenwirkung vs. eine unerwünschte Reaktion",
+    "fr": "un effet secondaire vs. une réaction indésirable",
+    "it": "un effetto collaterale vs. una reazione avversa",
+    "pt": "um efeito secundário vs. uma reação adversa"
+   },
+   "nota": "the second is serious and reportable"
+  },
+  {
+   "item": "to manage a condition",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "manejar una patología",
+    "de": "eine Erkrankung behandeln / managen",
+    "fr": "prendre en charge une affection",
+    "it": "gestire una patologia",
+    "pt": "gerir uma condição"
+   },
+   "nota": "live with, not cure"
+  },
+  {
+   "item": "to be discharged",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "recibir el alta",
+    "de": "entlassen werden / aus dem Krankenhaus entlassen werden",
+    "fr": "sortir de l’hôpital / recevoir son congé",
+    "it": "essere dimesso",
+    "pt": "ter alta"
+   },
+   "nota": "not *released*"
+  },
+  {
+   "item": "to be run down",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "con las defensas bajas",
+    "de": "erschöpft / angeschlagen sein",
+    "fr": "être épuisé / à plat",
+    "it": "essere debilitato / esausto",
+    "pt": "estar em baixo / debilitado"
+   }
+  },
+  {
+   "item": "to flare up",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "brotar",
+    "de": "aufflammen / wieder ausbrechen",
+    "fr": "faire une poussée",
+    "it": "riacutizzarsi",
+    "pt": "agravar-se / ter uma crise"
+   },
+   "nota": "chronic conditions"
+  },
+  {
+   "item": "a referral",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "derivación médica",
+    "de": "eine Überweisung",
+    "fr": "une orientation médicale",
+    "it": "un’impegnativa / rinvio medico",
+    "pt": "um encaminhamento"
+   }
+  },
+  {
+   "item": "to be on the mend",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "recuperándose",
+    "de": "auf dem Weg der Besserung sein",
+    "fr": "être en voie de guérison",
+    "it": "essere in via di guarigione",
+    "pt": "estar a recuperar"
+   }
+  },
+  {
+   "item": "evidence-based",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "basado en la evidencia",
+    "de": "evidenzbasiert",
+    "fr": "fondé sur les preuves",
+    "it": "basato sulle evidenze",
+    "pt": "baseado em evidências"
+   }
+  },
+  {
+   "item": "preventative care",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "atención preventiva",
+    "de": "präventive Versorgung",
+    "fr": "les soins préventifs",
+    "it": "le cure preventive",
+    "pt": "os cuidados preventivos"
+   },
+   "nota": "*preventive* also correct"
+  },
+  {
+   "item": "burnout",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "desgaste",
+    "de": "Burn-out / Erschöpfung",
+    "fr": "l’épuisement professionnel",
+    "it": "il burnout",
+    "pt": "o burnout / esgotamento"
+   }
+  },
+  {
+   "item": "coping mechanism",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mecanismo de afrontamiento",
+    "de": "Bewältigungsmechanismus",
+    "fr": "un mécanisme d’adaptation",
+    "it": "un meccanismo di coping",
+    "pt": "um mecanismo de coping"
+   }
+  },
+  {
+   "item": "a check-up",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "revisión",
+    "de": "eine Kontrolluntersuchung",
+    "fr": "un bilan / contrôle",
+    "it": "un controllo",
+    "pt": "um check-up / exame de rotina"
+   },
+   "nota": "partial false friend"
+  },
+  {
+   "item": "watchful waiting",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "observación sin intervenir",
+    "de": "beobachtendes Abwarten",
+    "fr": "la surveillance active / attente vigilante",
+    "it": "l’attesa vigile",
+    "pt": "a vigilância expectante"
+   },
+   "nota": "observing without intervening"
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "published last month",
+   "funcion": "reduced passive relative",
+   "traducciones": {
+    "es": "publicado el mes pasado",
+    "de": "letzten Monat veröffentlicht",
+    "fr": "publié le mois dernier",
+    "it": "pubblicato il mese scorso",
+    "pt": "publicado no mês passado"
+   }
+  },
+  {
+   "expresion": "anyone taking…",
+   "funcion": "reduced active relative",
+   "traducciones": {
+    "es": "quien tome…",
+    "de": "alle, die … einnehmen",
+    "fr": "toute personne prenant…",
+    "it": "chiunque assuma…",
+    "pt": "qualquer pessoa que tome…"
+   }
+  },
+  {
+   "expresion": "having been…",
+   "funcion": "perfect passive participle",
+   "traducciones": {
+    "es": "habiendo sido…",
+    "de": "nachdem … worden war / nachdem man …",
+    "fr": "ayant été…",
+    "it": "essendo stato…",
+    "pt": "tendo sido…"
+   }
+  },
+  {
+   "expresion": "given the circumstances",
+   "funcion": "fixed participial",
+   "traducciones": {
+    "es": "dadas las circunstancias",
+    "de": "angesichts der Umstände",
+    "fr": "compte tenu des circonstances",
+    "it": "date le circostanze",
+    "pt": "dadas as circunstâncias"
+   }
+  },
+  {
+   "expresion": "weighed against…",
+   "funcion": "participial contrast",
+   "traducciones": {
+    "es": "frente a…",
+    "de": "abgewogen gegen…",
+    "fr": "mis en balance avec…",
+    "it": "messo a confronto con…",
+    "pt": "ponderado face a…"
+   }
+  },
+  {
+   "expresion": "the data available",
+   "funcion": "postposed adjective",
+   "traducciones": {
+    "es": "los datos disponibles",
+    "de": "die verfügbaren Daten",
+    "fr": "les données disponibles",
+    "it": "i dati disponibili",
+    "pt": "os dados disponíveis"
+   }
+  },
+  {
+   "expresion": "followed by…",
+   "funcion": "sequencing participial",
+   "traducciones": {
+    "es": "seguido de…",
+    "de": "gefolgt von…",
+    "fr": "suivi de…",
+    "it": "seguito da…",
+    "pt": "seguido de…"
+   }
+  },
+  {
+   "expresion": "based on…",
+   "funcion": "very frequent, often dangles",
+   "traducciones": {
+    "es": "basado en…",
+    "de": "basierend auf…",
+    "fr": "sur la base de…",
+    "it": "basato su…",
+    "pt": "com base em…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write about a health topic — a study, a system, a personal experience.",
+  "requisitos": [
+   "six reduced or participle clauses",
+   "two passive and two active",
+   "one *having + past participle*",
+   "zero dangling participles",
+   "all four core vocabulary items."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 10,
+   "texto": "Take six full relative clauses from anything you wrote and reduce each. Which cannot be reduced, and why?"
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Write three sentences with *having + past participle*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Write 100 words, reduce every clause that can be reduced, then read it aloud. Still readable?"
+  }
+ ],
+ "autochequeo": [
+  "Active or passive participle — the right one in each case?",
+  "Is the participle's subject the same as the main clause's?",
+  "Did I reduce any object-pronoun clause illegally?",
+  "Is the text still readable, or just dense?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on reduced relative and participle clauses. (1) Check active vs passive in each. (2) Flag every dangling participle and show the fix. (3) Flag reductions that are not grammatically allowed. (4) Say whether the density is helping or hurting readability. Do not rewrite the text."
+}

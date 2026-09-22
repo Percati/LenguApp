@@ -1,0 +1,437 @@
+{
+ "id": "DE-G11-B2-2026-1",
+ "skillId": "DE-G11",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T09",
+ "titulo": "Relativsätze",
+ "subtitulo": "Kasus des Relativpronomens, und die Formen, die man vermeidet",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Der einfache Relativsatz ist B1. Auf B2 kommen drei Dinge dazu, die fast alle Lernenden umgehen: der **Genitivrelativsatz** (dessen, deren), der Relativsatz mit **Präposition** und die Formen **was** und **wo(r)-**. Die zentrale Regel bleibt einfach: **Genus und Numerus** vom Bezugswort, der **Kasus** von der Funktion im Relativsatz.",
+ "cuadroReferencia": {
+  "titulo": "Relativpronomen",
+  "columnas": [
+   "Kasus",
+   "m",
+   "f",
+   "n",
+   "Pl"
+  ],
+  "filas": [
+   [
+    "Nom.",
+    "der",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "Akk.",
+    "den",
+    "die",
+    "das",
+    "die"
+   ],
+   [
+    "Dat.",
+    "dem",
+    "der",
+    "dem",
+    "**denen**"
+   ],
+   [
+    "Gen.",
+    "**dessen**",
+    "**deren**",
+    "**dessen**",
+    "**deren**"
+   ]
+  ],
+  "notaPie": "Sonderfälle: nach *alles, nichts, etwas, vieles, das* und nach substantivierten Superlativen steht **was**. Präposition + *was* wird **wo(r)-**. Nach *dessen/deren* folgt das Substantiv **ohne Artikel**."
+ },
+ "ejemplos": [
+  {
+   "texto": "Der Kurs, **den** ich gemacht habe, … (Akk.)"
+  },
+  {
+   "texto": "Die Kollegin, **mit der** ich zusammenarbeite, … (Dat. nach mit)"
+  },
+  {
+   "texto": "Der Dozent, **dessen** Buch wir lesen, …"
+  },
+  {
+   "texto": "Die Leute, **denen** ich das verdanke, … (Dat. Pl.)"
+  },
+  {
+   "texto": "Alles, **was** ich gelernt habe, …"
+  },
+  {
+   "texto": "Das Einzige, **worauf** es ankommt, …"
+  },
+  {
+   "texto": "*Der Kurs, den ich gemacht habe, war praxisnäher als erwartet.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Kollegin, mit der ich zusammenarbeite, hat dieselbe Lehre gemacht.*",
+   "audio": true
+  },
+  {
+   "texto": "*Der Dozent, dessen Buch wir lesen, unterrichtet nicht mehr.*",
+   "audio": true
+  },
+  {
+   "texto": "*Alles, was ich dort gelernt habe, brauche ich heute noch.*",
+   "audio": true
+  },
+  {
+   "texto": "*Das Einzige, worauf es ankommt, ist Kontinuität.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*welcher/welche/welches* ist grammatisch möglich, klingt aber veraltet oder amtlich. Im Gespräch vermeiden.",
+  "Relativsätze werden im Deutschen **immer** von Kommas eingeschlossen.",
+  "*deren* für feminin und Plural, *dessen* für maskulin und neutrum. Verwechslung ist der häufigste Genitivfehler."
+ ],
+ "contraste": {
+  "es": "Spanisch hat *que* für fast alles und markiert den Kasus nicht. Die spanische Ökonomie führt dazu, dass Lernende im Deutschen den Kasus vom Bezugswort statt von der Funktion ableiten — der Hauptfehler dieser Woche.",
+  "en": "Das Englische lässt das Relativpronomen oft **ganz weg**: *the course I did*. Im Deutschen ist das nie möglich. Zudem markiert das Englische keinen Kasus (*who* gegen *whom* ist fast verschwunden) und stellt die Präposition ans Ende: *the person I worked with*. Englischsprachige suchen deshalb die deutsche Präposition am falschen Platz und lassen das Pronomen weg, wo es Pflicht ist.",
+  "it": "Das Italienische hat mit *cui* nach Präpositionen (*la collega con cui lavoro*) und *il cui* für den Genitiv (*il collega il cui figlio*) genau die Stellen, die auf B2 neu sind; die Struktur *Präposition + Relativpronomen* ist also vertraut. Den Kasus markiert das Italienische dabei aber nicht, sodass die Frage nach der Funktion im Relativsatz neu bleibt.",
+  "fr": "Das Französische unterscheidet *qui* (Subjekt) und *que* (Objekt) – die Relativpronomen richten sich also schon nach der Funktion im Relativsatz, genau das Prinzip der deutschen Kasuswahl. *Dont* entspricht dem Genitiv (*dessen/deren*), und nach Präpositionen stimmt *lequel/laquelle* im Genus mit dem Bezugswort überein, wie *mit dem/mit der*.",
+  "pt": "Das Portugiesische benutzt fast überall *que* und markiert keinen Kasus; nach Präpositionen zeigt *o qual/a qual* immerhin das Genus (*a colega com a qual trabalho*). Beim Genitivrelativsatz ist Vorsicht nötig: *cujo* richtet sich nach dem folgenden Nomen (*cuja casa*), *dessen* und *deren* dagegen nach dem Bezugswort."
+ },
+ "errores": [
+  "Kasus vom Bezugswort statt von der Funktion übernehmen.",
+  "*dessen das Buch* statt *dessen Buch*.",
+  "*Alles, das…* statt *Alles, was…*",
+  "Komma vergessen."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Ein unveränderliches Relativpronomen wie *que* benutzen und Genus und Kasus ignorieren: *das Buch, der ich lese*."
+  ],
+  "en": [
+   "Das Relativpronomen weglassen: *Der Kurs ich gemacht habe*.",
+   "Die Präposition ans Ende stellen: *Die Kollegin, die ich mit arbeite*.",
+   "Den Kasus gar nicht markieren, weil *who/whom* im Englischen kaum unterschieden wird."
+  ],
+  "it": [
+   "Ein unveränderliches Relativpronomen wie *che* benutzen und Genus und Kasus ignorieren: *der Mann, die ich kenne*.",
+   "Nach einer Präposition den Kasus vergessen, weil *cui* unveränderlich ist: *das Thema, von das ich spreche*."
+  ],
+  "fr": [
+   "Ein unveränderliches *que* nachbilden und Genus und Kasus ignorieren: *der Kollege, die ich treffe*.",
+   "*dont* direkt mit *dessen* gleichsetzen, auch wo eine Präposition nötig ist: *das Projekt, dessen ich spreche* statt *von dem*."
+  ],
+  "pt": [
+   "Ein unveränderliches Relativpronomen wie *que* benutzen und Genus und Kasus ignorieren: *die Stadt, der ich besucht habe*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "sich etwas aneignen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "adquirir por cuenta propia",
+    "en": "to acquire something (on one's own)",
+    "fr": "acquérir quelque chose par soi-même",
+    "it": "acquisire qualcosa autonomamente",
+    "pt": "adquirir algo por conta própria"
+   },
+   "reccion": "Akk.",
+   "nota": "eigenständiger Erwerb"
+  },
+  {
+   "item": "etwas verinnerlichen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "interiorizar",
+    "en": "to internalise",
+    "fr": "intérioriser quelque chose",
+    "it": "interiorizzare qualcosa",
+    "pt": "interiorizar algo"
+   },
+   "reccion": "Akk.",
+   "nota": "präzise, selten gelehrt"
+  },
+  {
+   "item": "der Nachholbedarf",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el déficit por recuperar",
+    "en": "catching-up to do",
+    "fr": "le retard à rattraper / besoin de rattrapage",
+    "it": "il bisogno di recuperare",
+    "pt": "a necessidade de recuperar"
+   },
+   "nota": "sehr deutsches Konzept"
+  },
+  {
+   "item": "berufsbegleitend",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "compatible con el trabajo",
+    "en": "part-time alongside work",
+    "fr": "en cours d’emploi / compatible avec le travail",
+    "it": "parallelamente al lavoro",
+    "pt": "em paralelo com o trabalho"
+   }
+  },
+  {
+   "item": "die Lehre",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la formación dual",
+    "en": "the apprenticeship (dual system)",
+    "fr": "l’apprentissage professionnel",
+    "it": "l’apprendistato",
+    "pt": "a aprendizagem profissional"
+   },
+   "bajoNivelJustificado": true,
+   "nota": "**CH/DE** duale Ausbildung",
+   "variante": "CH"
+  },
+  {
+   "item": "der Studienabschluss",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el título universitario",
+    "en": "the degree",
+    "fr": "le diplôme universitaire",
+    "it": "il titolo di studio universitario",
+    "pt": "o diploma universitário"
+   }
+  },
+  {
+   "item": "etwas vertiefen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "profundizar en algo",
+    "en": "to deepen, to go further into",
+    "fr": "approfondir quelque chose",
+    "it": "approfondire qualcosa",
+    "pt": "aprofundar algo"
+   },
+   "reccion": "Akk."
+  },
+  {
+   "item": "die Auffassungsgabe",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la capacidad de comprensión",
+    "en": "the ability to grasp things",
+    "fr": "la capacité de compréhension",
+    "it": "la capacità di comprensione",
+    "pt": "a capacidade de compreensão"
+   },
+   "nota": "gehoben"
+  },
+  {
+   "item": "auf dem Laufenden bleiben",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mantenerse al día",
+    "en": "to keep up to date",
+    "fr": "rester à jour",
+    "it": "restare aggiornato",
+    "pt": "manter-se atualizado"
+   }
+  },
+  {
+   "item": "eine Prüfung ablegen / bestehen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "presentarse a / aprobar",
+    "en": "to sit / to pass an exam",
+    "fr": "passer / réussir un examen",
+    "it": "sostenere / superare un esame",
+    "pt": "fazer / passar num exame"
+   },
+   "reccion": "Akk.",
+   "nota": "die richtigen Verben"
+  },
+  {
+   "item": "durch eine Prüfung fallen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "suspender",
+    "en": "to fail an exam",
+    "fr": "échouer à un examen",
+    "it": "bocciare a un esame",
+    "pt": "reprovar num exame"
+   }
+  },
+  {
+   "item": "das Fachwissen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el conocimiento especializado",
+    "en": "specialist knowledge",
+    "fr": "les connaissances spécialisées",
+    "it": "le conoscenze specialistiche",
+    "pt": "os conhecimentos especializados"
+   }
+  },
+  {
+   "item": "die Nachdiplomausbildung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la formación de posgrado",
+    "en": "postgraduate training (CH)",
+    "fr": "la formation postgrade",
+    "it": "la formazione post-laurea",
+    "pt": "a formação pós-graduada"
+   },
+   "nota": "**CH**",
+   "variante": "CH"
+  },
+  {
+   "item": "die Durchlässigkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la permeabilidad del sistema",
+    "en": "permeability (between educational tracks)",
+    "fr": "la perméabilité entre filières",
+    "it": "la permeabilità tra percorsi formativi",
+    "pt": "a permeabilidade entre percursos educativos"
+   },
+   "nota": "echte Bildungsdebatte in CH",
+   "variante": "CH"
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Der Kurs, den ich…",
+   "funcion": "Akkusativrelativsatz",
+   "traducciones": {
+    "es": "el curso que…",
+    "en": "The course (that) I…",
+    "fr": "Le cours que j’ai…",
+    "it": "Il corso che ho…",
+    "pt": "O curso que eu…"
+   }
+  },
+  {
+   "expresion": "Die Person, mit der…",
+   "funcion": "Relativsatz mit Präposition",
+   "traducciones": {
+    "es": "la persona con la que…",
+    "en": "The person (whom) I… with",
+    "fr": "La personne avec qui…",
+    "it": "La persona con cui…",
+    "pt": "A pessoa com quem…"
+   }
+  },
+  {
+   "expresion": "Das, was mir am meisten geholfen hat, …",
+   "funcion": "Fokus mit *was*",
+   "traducciones": {
+    "es": "lo que más me ayudó…",
+    "en": "What helped me most…",
+    "fr": "Ce qui m’a le plus aidé, …",
+    "it": "Ciò che mi ha aiutato di più…",
+    "pt": "O que mais me ajudou…"
+   }
+  },
+  {
+   "expresion": "Alles, was…",
+   "funcion": "nach Indefinitpronomen",
+   "traducciones": {
+    "es": "todo lo que…",
+    "en": "Everything (that)…",
+    "fr": "Tout ce qui…",
+    "it": "Tutto ciò che…",
+    "pt": "Tudo o que…"
+   }
+  },
+  {
+   "expresion": "Das Einzige, worauf…",
+   "funcion": "*wo(r)-*Form",
+   "traducciones": {
+    "es": "lo único a lo que…",
+    "en": "The only thing (that)…",
+    "fr": "La seule chose à laquelle…",
+    "it": "L’unica cosa a cui…",
+    "pt": "A única coisa a que…"
+   }
+  },
+  {
+   "expresion": "Die Zeit, in der…",
+   "funcion": "temporaler Relativsatz",
+   "traducciones": {
+    "es": "la época en la que…",
+    "en": "The time when…",
+    "fr": "La période où…",
+    "it": "Il periodo in cui…",
+    "pt": "O período em que…"
+   }
+  },
+  {
+   "expresion": "jemand, dessen…",
+   "funcion": "Genitivrelativsatz",
+   "traducciones": {
+    "es": "alguien cuyo…",
+    "en": "someone whose…",
+    "fr": "quelqu’un dont…",
+    "it": "qualcuno il cui / la cui…",
+    "pt": "alguém cujo / cuja…"
+   }
+  },
+  {
+   "expresion": "…, weshalb ich mich entschieden habe",
+   "funcion": "weiterführender Relativsatz",
+   "traducciones": {
+    "es": "por lo cual decidí…",
+    "en": "…, which is why I decided",
+    "fr": "…, raison pour laquelle j’ai décidé de…",
+    "it": "…, motivo per cui ho deciso di…",
+    "pt": "…, razão pela qual decidi…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Beschreiben Sie Ihren Bildungsweg und was Sie heute anders machen würden.",
+  "requisitos": [
+   "mindestens zehn Relativsätze",
+   "zwei im Genitiv",
+   "drei mit Präposition",
+   "einer mit *was*",
+   "einer mit *wo(r)-*",
+   "Kein *welcher*",
+   "Alle vier Kernwörter."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 10,
+   "texto": "Fünf Relativsätze schreiben und zu jedem angeben, woher Genus und woher Kasus kommen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei Genitivrelativsätze über Personen aus dem Berufsleben."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Welche Weiterbildung würden Sie empfehlen? Mindestens fünf Relativsätze."
+  }
+ ],
+ "autochequeo": [
+  "Kommt der Kasus bei jedem Pronomen von der **Funktion** im Relativsatz?",
+  "Fehlt nach *dessen/deren* der Artikel?",
+  "Habe ich *das* geschrieben, wo *was* hingehört?",
+  "Ist jeder Relativsatz von Kommas eingeschlossen?",
+  "Habe ich *welcher* benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Relativsätze. (1) Prüfen Sie bei jedem Pronomen Genus, Numerus und Kasus und sagen Sie, woher jedes kommt. (2) Prüfen Sie die Genitivformen und ob danach der Artikel fehlt. (3) Prüfen Sie *das* gegen *was*. (4) Prüfen Sie die Kommas. Schreiben Sie den Text nicht neu."
+}

@@ -97,58 +97,51 @@ dependencies {
 // futuro arranca en otra semana, esto lo sigue sin tocar Gradle.
 val generarCalendarioAssets by tasks.registering {
     group = "build"
-    description = "Genera assets/calendario/*.json con generar_calendario.py."
+    description = "Copia a assets/calendario/ los calendarios congelados de data/calendarios/."
 
-    val script = File(rootDir, "proyecto/tools/generar_calendario.py")
-    val banco = File(rootDir, "proyecto/data/banco.json")
+    // Los combos a embeber salen de semanas-fijas.json, igual que antes: es
+    // la lista de que (anio, idioma, nivel) del piloto 2026 tiene contenido
+    // fijado a mano. Lo que cambio es el origen del calendario en si.
+    //
+    // Antes esta tarea invocaba generar_calendario.py contra el banco.json
+    // vivo en cada build. Eso dejo de funcionar cuando banco.json crecio a
+    // 33-37 skills por nivel para cubrir los 10 pares de 2027: el algoritmo
+    // de generar_calendario.py toma TODOS los skills del (idioma, nivel), no
+    // solo los que le faltan a las semanas fijas, y ya no entran en las
+    // pocas semanas libres que deja semanas-fijas.json. Ademas REVIEW esta
+    // hardcodeado en generar_calendario.py con el patron nuevo de 2027
+    // ({10,22,34,46}), que no es el patron real del piloto (S40/S44/S48) --
+    // aunque el cupo de skills no hubiera reventado, las semanas especiales
+    // habrian salido mal.
+    //
+    // El piloto 2026 esta congelado (CLAUDE.md, regla dura #11: "no se
+    // regenera"), asi que recalcularlo en cada build contra un banco.json
+    // que sigue creciendo por otras razones (2027) nunca fue correcto. El
+    // calendario real ya esta precalculado y verificado en
+    // data/calendarios/2026-{idioma}-{nivel}.json (mismo formato que ya usan
+    // los 10 pares de 2027 en data/calendarios/2027-*.json): 14 semanas de
+    // semanas-fijas.json + las 3 especiales de contenido/nucleos
+    // (REVIEW-*-S40, SURVIVAL-*-S44, REVIEW-*-S48). Esta tarea ahora solo
+    // copia ese archivo ya congelado; no ejecuta ningun script de Python.
+    val calendarios = File(rootDir, "proyecto/data/calendarios")
     val fijas = File(rootDir, "proyecto/data/semanas-fijas.json")
     val salida = File(projectDir, "src/main/assets/calendario")
 
-    inputs.file(script)
-    inputs.file(banco)
+    inputs.dir(calendarios)
     inputs.file(fijas)
     outputs.dir(salida)
 
     doLast {
-        // Escrito a un archivo y no pasado con "-c": los argumentos de linea
-        // de comando con comillas embebidas se corrompen al invocar procesos
-        // en Windows.
-        val extractorCombos = File(temporaryDir, "extraer_combos.py").apply {
-            writeText(
-                """
-                import json, sys
-                d = json.load(open(sys.argv[1], encoding="utf-8"))
-                for clave, semanas in d.items():
-                    print(f"{clave}|{min(int(w) for w in semanas.keys())}")
-                """.trimIndent(),
-            )
-        }
-
-        val listado = ByteArrayOutputStream()
-        exec {
-            commandLine("python3", extractorCombos.absolutePath, fijas.absolutePath)
-            standardOutput = listado
-        }
-        val combos = listado.toString(Charsets.UTF_8).lines().map { it.trim() }.filter { it.isNotEmpty() }
+        val combos = groovy.json.JsonSlurper().parse(fijas) as Map<*, *>
 
         salida.deleteRecursively()
         salida.mkdirs()
 
-        for (combo in combos) {
-            val (clave, desde) = combo.split("|")
-            val (anio, idioma, nivel) = clave.split("-")
-            File(salida, "calendario_${anio}_${idioma}_${nivel}.json").outputStream().use { destino ->
-                exec {
-                    commandLine(
-                        "python3", script.absolutePath,
-                        "--anio", anio, "--desde", desde,
-                        "--idioma", idioma, "--nivel", nivel,
-                        "--banco", banco.absolutePath, "--fijas", fijas.absolutePath,
-                        "--formato", "json",
-                    )
-                    standardOutput = destino
-                }
-            }
+        for (clave in combos.keys) {
+            val (anio, idioma, nivel) = (clave as String).split("-")
+            val origen = File(calendarios, "$clave.json")
+            check(origen.isFile) { "Falta el calendario congelado $origen para el combo $clave de semanas-fijas.json." }
+            origen.copyTo(File(salida, "calendario_${anio}_${idioma}_${nivel}.json"))
         }
     }
 }

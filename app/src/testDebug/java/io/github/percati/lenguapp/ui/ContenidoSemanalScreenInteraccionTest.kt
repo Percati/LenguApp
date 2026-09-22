@@ -49,7 +49,7 @@ class ContenidoSemanalScreenInteraccionTest {
     private fun ficha(): Ficha {
         val carpeta = listOf(File("src/main/assets"), File("app/src/main/assets"))
             .first { it.isDirectory }
-        return parsearContenido(File(carpeta, "contenido/DE-G01-B2-1.json").readText()) as Ficha
+        return parsearContenido(File(carpeta, "contenido/DE-G01-B2-2026-1.json").readText()) as Ficha
     }
 
     // --- Ingles como segunda lengua base: contraste (AJUSTES-FASE-8.md, B.6) y erroresContrastivos ---
@@ -81,7 +81,14 @@ class ContenidoSemanalScreenInteraccionTest {
 
         composeTestRule.onNode(hasText("Das Spanische kennt keine Verbendstellung", substring = true)).assertExists()
         composeTestRule.onNode(hasText("Das Englische hat eine fast so feste Wortstellung", substring = true)).assertDoesNotExist()
-        composeTestRule.onNode(hasText("Die Satzklammer auflösen", substring = true)).assertDoesNotExist()
+
+        // "Die Satzklammer auflösen" es un error universal (ficha.errores, no
+        // erroresContrastivos): erroresParaMostrar() siempre lo incluye, sin
+        // importar idiomaBase (ver Presentacion.kt) -- por eso tambien
+        // aparece aca. Lo que este test tiene que verificar es que el
+        // adicional erroresContrastivos.en (que solo se suma cuando
+        // idiomaBase es ingles) no aparezca con la app en espanol.
+        composeTestRule.onNode(hasText("weglassen, weil es vor", substring = true)).assertDoesNotExist()
     }
 
     @Test
@@ -191,7 +198,7 @@ class ContenidoSemanalScreenInteraccionTest {
     @GraphicsMode(GraphicsMode.Mode.NATIVE)
     fun `pantallazo del vocabulario expandido, para inspeccion visual`() {
         val carpeta = listOf(File("src/main/assets"), File("app/src/main/assets")).first { it.isDirectory }
-        val ficha = parsearContenido(File(carpeta, "contenido/DE-G05-B2-1.json").readText()) as Ficha
+        val ficha = parsearContenido(File(carpeta, "contenido/DE-G05-B2-2026-1.json").readText()) as Ficha
         composeTestRule.setContent {
             Box(Modifier.size(360.dp, 800.dp)) {
                 ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES)

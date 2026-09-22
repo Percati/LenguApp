@@ -1,0 +1,444 @@
+{
+ "id": "DE-G01-B2-2026-1",
+ "skillId": "DE-G01",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T07",
+ "titulo": "Satzbau: Haupt- und Nebensatz",
+ "subtitulo": "Verbstellung unter Zeitdruck",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Die Verbstellung ist der Fehler, der Lernende am längsten begleitet — nicht weil die Regel schwierig wäre, sondern weil sie unter Zeitdruck zusammenbricht: Man plant den Satz in der Muttersprache und spricht ihn deutsch aus. Diese Woche geht es deshalb nicht um die Regel, sondern um die Automatisierung: Verb an zweiter Stelle im Hauptsatz, Verb am Ende im Nebensatz, und die Umstellung, wenn etwas anderes im Vorfeld steht.",
+ "cuadroReferencia": {
+  "titulo": "Stellung des finiten Verbs",
+  "columnas": [
+   "Satztyp",
+   "Auslöser",
+   "Stellung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Hauptsatz",
+    "Subjekt im Vorfeld",
+    "Position 2",
+    "Wir **suchen** eine Wohnung."
+   ],
+   [
+    "Hauptsatz",
+    "anderes im Vorfeld",
+    "Position 2, Subjekt danach",
+    "Seit Januar **suchen wir**…"
+   ],
+   [
+    "Hauptsatz",
+    "deshalb, trotzdem, dann, danach, ausserdem",
+    "Verb-Subjekt-Umstellung",
+    "Deshalb **haben wir** gekündigt."
+   ],
+   [
+    "Nebensatz",
+    "weil, dass, obwohl, wenn, als, damit, sobald",
+    "Verb ans Ende",
+    "…, weil wir umziehen **müssen**."
+   ],
+   [
+    "Nebensatz vorangestellt",
+    "derselbe Auslöser",
+    "Verb-Komma-Verb",
+    "Weil wir umziehen **müssen**, **kündigen** wir."
+   ],
+   [
+    "Nebensatz + Modalverb / Perfekt",
+    "",
+    "finites Verb ganz ans Ende",
+    "…, dass er es **hat machen müssen**."
+   ],
+   [
+    "Nebensatz + trennbares Verb",
+    "",
+    "bleibt zusammen",
+    "…, weil wir **umziehen**."
+   ],
+   [
+    "Frage / Imperativ",
+    "",
+    "Position 1",
+    "**Melden** Sie den Mangel."
+   ]
+  ],
+  "notaPie": "Merke: **und, aber, denn, sondern, oder** lösen gar keine Umstellung aus. Sie stehen auf „Position 0\"."
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich glaube, dass die Wohnung zu teuer **ist**."
+  },
+  {
+   "texto": "Weil die Nebenkosten so hoch **sind**, **suchen** wir etwas anderes."
+  },
+  {
+   "texto": "Ich habe der Verwaltung gesagt, dass der Mangel schon vor einem Monat gemeldet worden **ist**."
+  },
+  {
+   "texto": "Deshalb **haben wir** die Besichtigung abgesagt."
+  },
+  {
+   "texto": "*Ich glaube, dass die Wohnung zu teuer ist.*",
+   "audio": true
+  },
+  {
+   "texto": "*Weil die Nebenkosten so hoch sind, suchen wir etwas anderes.*",
+   "audio": true
+  },
+  {
+   "texto": "*Deshalb haben wir die Besichtigung abgesagt.*",
+   "audio": true
+  },
+  {
+   "texto": "*Ich habe der Verwaltung gesagt, dass der Mangel schon vor einem Monat gemeldet worden ist.*",
+   "audio": true
+  },
+  {
+   "texto": "*Sobald der Mietvertrag unterschrieben ist, ziehen wir um.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "**Verb-Verb-Kontakt:** Steht der Nebensatz vorne, treffen zwei Verben aufeinander, getrennt nur durch ein Komma. Das fühlt sich falsch an und ist richtig.",
+  "Im Nebensatz mit Modalverb steht am Ende das **konjugierte** Verb, nicht das Partizip.",
+  "Trennbare Verben werden im Nebensatz wieder zusammengeschrieben."
+ ],
+ "contraste": {
+  "es": "Das Spanische kennt keine Verbendstellung: Es gibt hier nichts zu übertragen, nur etwas Neues zu automatisieren. Deshalb hilft Erklären wenig und Wiederholen viel — und deshalb überlebt der Fehler bis C1, obwohl die Regel in einer Minute erklärt ist.",
+  "en": "Das Englische hat eine fast so feste Wortstellung wie das Deutsche, aber **ohne Verbendstellung**: *because we have to move* behält die Reihenfolge des Hauptsatzes. Englischsprachige übertragen also nicht eine falsche Struktur, sondern gar keine — und lassen das Verb an zweiter Stelle stehen. Zusätzlich fehlt im Englischen die Satzklammer: *I have the documents submitted* ist keine Umstellung, sondern ein anderer Satz.",
+  "it": "Auch das Italienische kennt keine Verbendstellung, der Nebensatz behält die Reihenfolge des Hauptsatzes (*perché dobbiamo traslocare*). Einen kleinen Vorteil haben Italienischsprachige bei der Inversion: Da das Subjekt im Italienischen oft hinter dem Verb steht (*domani arriva Marco*), fällt *Morgen kommt Marco* leicht. Satzklammer und Verbendstellung bleiben dagegen reine Automatisierung.",
+  "fr": "Das Französische hat eine feste Wortstellung Subjekt–Verb–Objekt, auch im Nebensatz (*parce que nous devons déménager*), und kennt Inversion fast nur in Fragen. Französischsprachige müssen deshalb doppelt umlernen: das Verb am Ende des Nebensatzes und das Verb vor dem Subjekt, sobald etwas anderes das Vorfeld besetzt (*Morgen fahre ich*, nicht *Morgen ich fahre*).",
+  "pt": "Das Portugiesische kennt keine Verbendstellung. Eine kleine Brücke gibt es im europäischen Portugiesisch: Im Nebensatz wandert das Pronomen vor das Verb (*eu vi-o*, aber *porque o vi*). Portugiesischsprachige kennen also eine Stellungsänderung zwischen Haupt- und Nebensatz – im Deutschen ist sie nur viel grösser und betrifft das Verb selbst."
+ },
+ "errores": [
+  "*Ich denke, dass die Wohnung ist zu teuer.* — der häufigste Fehler überhaupt.",
+  "Komma vor *dass*, *weil*, *obwohl* vergessen: im Deutschen Pflicht, in vielen anderen Sprachen nicht.",
+  "*Deshalb wir haben…* statt *Deshalb haben wir…*",
+  "*Weil* mit Hauptsatzstellung: umgangssprachlich verbreitet, schriftlich falsch.",
+  "Die Satzklammer auflösen: *Ich habe eingereicht die Unterlagen*."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Das Subjektpronomen weglassen, weil das Spanische es erlaubt: *…, weil ist zu teuer*."
+  ],
+  "en": [
+   "Das Verb im Nebensatz an zweiter Stelle lassen, wie im Englischen: *…, weil wir müssen umziehen*.",
+   "Das Komma vor *dass* weglassen, weil es vor *that* keines gibt."
+  ],
+  "it": [
+   "Das Subjektpronomen weglassen, weil das Italienische es erlaubt: *…, weil ist zu teuer*."
+  ],
+  "fr": [
+   "Nach einem vorangestellten Nebensatz Subjekt vor Verb setzen wie in *Quand j'ai le temps, je viens*: *Wenn ich Zeit habe, ich komme*."
+  ],
+  "pt": [
+   "Das Subjektpronomen weglassen, weil das Portugiesische es erlaubt: *…, obwohl ist spät*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "die Kündigungsfrist",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el plazo de preaviso",
+    "en": "the notice period",
+    "fr": "le délai de préavis",
+    "it": "il periodo di preavviso",
+    "pt": "o prazo de pré-aviso"
+   }
+  },
+  {
+   "item": "einen Mangel melden",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "comunicar un desperfecto",
+    "en": "to report a fault",
+    "fr": "signaler un défaut / une panne",
+    "it": "segnalare un difetto / guasto",
+    "pt": "comunicar um defeito / avaria"
+   },
+   "reccion": "Akk."
+  },
+  {
+   "item": "die Nebenkosten (Pl.)",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gastos aparte",
+    "en": "service charges, utilities",
+    "fr": "les charges",
+    "it": "le spese accessorie / utenze",
+    "pt": "os encargos / despesas adicionais"
+   },
+   "nota": "nur Plural; klassischer Streitpunkt"
+  },
+  {
+   "item": "der Eigenbedarf",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la necesidad propia",
+    "en": "landlord's own use (legal grounds for eviction)",
+    "fr": "le besoin personnel du propriétaire",
+    "it": "la necessità abitativa del proprietario",
+    "pt": "a necessidade de uso próprio do senhorio"
+   },
+   "nota": "gesetzlicher Kündigungsgrund"
+  },
+  {
+   "item": "die Kaution",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la fianza",
+    "en": "the deposit",
+    "fr": "la caution / le dépôt de garantie",
+    "it": "la cauzione",
+    "pt": "a caução"
+   }
+  },
+  {
+   "item": "der Mietvertrag",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el contrato de alquiler",
+    "en": "the tenancy agreement",
+    "fr": "le contrat de location / bail",
+    "it": "il contratto di locazione",
+    "pt": "o contrato de arrendamento"
+   }
+  },
+  {
+   "item": "die Besichtigung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la visita a la vivienda",
+    "en": "the viewing",
+    "fr": "la visite du logement",
+    "it": "la visita dell’alloggio",
+    "pt": "a visita ao imóvel"
+   },
+   "nota": "nicht *Besuch*"
+  },
+  {
+   "item": "die Hausordnung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las normas de la comunidad",
+    "en": "the house rules",
+    "fr": "le règlement intérieur de l’immeuble",
+    "it": "il regolamento condominiale",
+    "pt": "o regulamento do prédio"
+   },
+   "nota": "in CH wird sie ernst genommen",
+   "variante": "CH"
+  },
+  {
+   "item": "die Wohnungsnot",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la escasez de vivienda",
+    "en": "the housing shortage",
+    "fr": "la pénurie de logements",
+    "it": "la carenza di alloggi",
+    "pt": "a escassez de habitação"
+   }
+  },
+  {
+   "item": "die Verdrängung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el desplazamiento",
+    "en": "displacement (of residents)",
+    "fr": "l’éviction / le déplacement des habitants",
+    "it": "lo spostamento / l’espulsione dei residenti",
+    "pt": "a deslocação / expulsão de moradores"
+   },
+   "nota": "Begriff der Gentrifizierungsdebatte"
+  },
+  {
+   "item": "instand halten",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mantener en estado",
+    "en": "to maintain, to keep in repair",
+    "fr": "entretenir / maintenir en bon état",
+    "it": "mantenere in buono stato",
+    "pt": "manter em bom estado"
+   },
+   "reccion": "Akk."
+  },
+  {
+   "item": "die Genossenschaft",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cooperativa",
+    "en": "the housing cooperative",
+    "fr": "la coopérative d’habitation",
+    "it": "la cooperativa edilizia",
+    "pt": "a cooperativa habitacional"
+   },
+   "nota": "**CH** sehr verbreitet",
+   "variante": "CH"
+  },
+  {
+   "item": "die Anbindung an",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la conexión con",
+    "en": "the transport links to",
+    "fr": "la desserte / les liaisons avec",
+    "it": "i collegamenti con",
+    "pt": "as ligações de transporte a"
+   },
+   "reccion": "+ Akk.",
+   "nota": "Verkehr"
+  },
+  {
+   "item": "die Zwischennutzung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el uso temporal",
+    "en": "temporary use (of a vacant building)",
+    "fr": "l’utilisation temporaire",
+    "it": "l’uso temporaneo",
+    "pt": "a utilização temporária"
+   },
+   "nota": "**CH**",
+   "variante": "CH"
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich glaube, dass…",
+   "funcion": "leitet eine Einschätzung ein",
+   "traducciones": {
+    "es": "creo que…",
+    "en": "I think that…",
+    "fr": "Je crois que…",
+    "it": "Credo che…",
+    "pt": "Acho que…"
+   }
+  },
+  {
+   "expresion": "Das liegt daran, dass…",
+   "funcion": "begründet",
+   "traducciones": {
+    "es": "eso se debe a que…",
+    "en": "That's because…",
+    "fr": "Cela tient au fait que…",
+    "it": "Ciò è dovuto al fatto che…",
+    "pt": "Isso deve-se ao facto de que…"
+   }
+  },
+  {
+   "expresion": "Nachdem wir… hatten, …",
+   "funcion": "ordnet zeitlich vor",
+   "traducciones": {
+    "es": "después de que…",
+    "en": "After we had…, …",
+    "fr": "Après que nous avions…, …",
+    "it": "Dopo che avevamo…, …",
+    "pt": "Depois de termos…, …"
+   }
+  },
+  {
+   "expresion": "Obwohl…, …",
+   "funcion": "räumt ein",
+   "traducciones": {
+    "es": "aunque…",
+    "en": "Although…, …",
+    "fr": "Bien que…, …",
+    "it": "Sebbene…, …",
+    "pt": "Embora…, …"
+   }
+  },
+  {
+   "expresion": "Deshalb…",
+   "funcion": "zieht die Folge",
+   "traducciones": {
+    "es": "por eso…",
+    "en": "That's why…",
+    "fr": "C’est pourquoi…",
+    "it": "Perciò…",
+    "pt": "Por isso…"
+   }
+  },
+  {
+   "expresion": "Seitdem wir hier wohnen, …",
+   "funcion": "markiert den Beginn",
+   "traducciones": {
+    "es": "desde que vivimos aquí…",
+    "en": "Since we've been living here, …",
+    "fr": "Depuis que nous habitons ici, …",
+    "it": "Da quando viviamo qui, …",
+    "pt": "Desde que moramos aqui, …"
+   }
+  },
+  {
+   "expresion": "Sobald…, …",
+   "funcion": "knüpft an eine Bedingung",
+   "traducciones": {
+    "es": "en cuanto…",
+    "en": "As soon as…, …",
+    "fr": "Dès que…, …",
+    "it": "Non appena…, …",
+    "pt": "Assim que…, …"
+   }
+  },
+  {
+   "expresion": "Es kann sein, dass…",
+   "funcion": "schwächt ab",
+   "traducciones": {
+    "es": "puede ser que…",
+    "en": "It may be that…",
+    "fr": "Il se peut que…",
+    "it": "Può darsi che…",
+    "pt": "Pode ser que…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Beschreiben Sie ein Problem mit Ihrer Wohnung und was Sie unternommen haben.",
+  "requisitos": [
+   "mindestens acht Nebensätze",
+   "davon drei vorangestellt",
+   "zwei mit Modalverb",
+   "ein trennbares Verb im Nebensatz",
+   "Alle vier Kernwörter."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Hauptsätze schreiben und jeden in einen *dass*-Satz umwandeln."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei Sätze, die mit *Weil…* beginnen. Verb-Verb-Kontakt prüfen."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden aufnehmen: Warum haben Sie Ihre letzte Wohnung verlassen? Mindestens vier Nebensätze."
+  }
+ ],
+ "autochequeo": [
+  "Steht in **jedem** Nebensatz das finite Verb am Ende?",
+  "Steht nach *deshalb/trotzdem* das Verb vor dem Subjekt?",
+  "Habe ich vor jedem *dass/weil/obwohl* ein Komma?",
+  "Sind trennbare Verben im Nebensatz zusammengeschrieben?",
+  "Alle vier Kernwörter — nachzählen."
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verbstellung. (1) Markieren Sie jeden Nebensatz und prüfen Sie die Endstellung. (2) Prüfen Sie die Umstellung nach vorangestelltem Nebensatz und nach *deshalb/trotzdem*. (3) Prüfen Sie die Kommasetzung. (4) Nennen Sie das Muster, das ich am häufigsten falsch mache. Schreiben Sie den Text nicht neu."
+}

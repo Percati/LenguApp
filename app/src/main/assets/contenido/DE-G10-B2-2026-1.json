@@ -1,0 +1,435 @@
+{
+ "id": "DE-G10-B2-2026-1",
+ "skillId": "DE-G10",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T06",
+ "titulo": "Passiv und Passiversatzformen",
+ "subtitulo": "Fünf Wege, dasselbe zu sagen, mit fünf Registern",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 60
+ },
+ "descripcion": "Das Passiv ist im Deutschen sehr häufig und im technischen wie im politischen Register kaum vermeidbar. Auf B2 geht es aber nicht mehr nur um Vorgangs- und Zustandspassiv, sondern um die **Ersatzformen**, die dasselbe leisten und stilistisch oft besser klingen.",
+ "cuadroReferencia": {
+  "titulo": "Passiv und Ersatzformen",
+  "columnas": [
+   "Form",
+   "Bildung",
+   "Beispiel",
+   "Register"
+  ],
+  "filas": [
+   [
+    "Vorgangspassiv",
+    "*werden* + Partizip II",
+    "Der Strom wird erzeugt.",
+    "neutral"
+   ],
+   [
+    "Zustandspassiv",
+    "*sein* + Partizip II",
+    "Die Anlage ist abgeschaltet.",
+    "neutral"
+   ],
+   [
+    "*sich lassen* + Inf.",
+    "",
+    "Das lässt sich messen.",
+    "gesprochen, elegant"
+   ],
+   [
+    "*-bar* / *-lich*",
+    "Adjektivsuffix",
+    "Das ist messbar.",
+    "kompakt, technisch"
+   ],
+   [
+    "*sein zu* + Inf.",
+    "",
+    "Der Verbrauch ist zu senken.",
+    "formell, Vorschrift"
+   ],
+   [
+    "man",
+    "Aktiv mit *man*",
+    "Man kann das messen.",
+    "umgangssprachlich"
+   ]
+  ],
+  "notaPie": "**Urheber:** von + Dat. (Person, Institution), durch + Akk. (Mittel, Ursache). **Perfekt Passiv:** ist… **worden**, nicht geworden."
+ },
+ "ejemplos": [
+  {
+   "texto": "Der Ausstoß **wird** bis 2030 halbiert."
+  },
+  {
+   "texto": "Die Ziele **sind** noch nicht erreicht."
+  },
+  {
+   "texto": "Der Zielkonflikt **lässt sich** nicht auflösen."
+  },
+  {
+   "texto": "Die Grundlast **ist** nicht beliebig **ersetzbar**."
+  },
+  {
+   "texto": "Die Emissionen **sind** deutlich **zu senken**."
+  },
+  {
+   "texto": "*Der Ausstoß wird bis 2030 halbiert.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Ziele sind noch nicht erreicht.*",
+   "audio": true
+  },
+  {
+   "texto": "*Der Zielkonflikt lässt sich nicht auflösen.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Grundlast ist nicht beliebig ersetzbar.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Emissionen sind deutlich zu senken.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Der Unterschied Vorgang/Zustand entspricht ungefähr *ser*/*estar*. Das ist die beste Eselsbrücke für Spanischsprachige.",
+  "*sein zu + Infinitiv* trägt immer Notwendigkeit oder Möglichkeit, nie Neutralität.",
+  "Manche Verben bilden kein Passiv: *bekommen*, *haben*, *kennen*, *wissen*."
+ ],
+ "contraste": {
+  "es": "Spanisch bevorzugt *se*-Konstruktionen (*se mide*) und das Aktiv, wo das Deutsche das Passiv setzt. Die direkte Übertragung erzeugt entweder zu viel *man* oder ein falsches *ist* statt *wird*.",
+  "en": "Das Englische benutzt das Passiv **noch häufiger** als das Deutsche und hat dafür eine einzige Form: *is done*, *was done*, *has been done*. Es fehlt die Unterscheidung Vorgangs- gegen Zustandspassiv — *the plant is closed* deckt beides ab. Genau dort entsteht der Fehler: Englischsprachige setzen *ist* statt *wird*, weil ihre Sprache nicht zwischen beidem trennt. Die deutschen Ersatzformen (*lässt sich*, *-bar*) entsprechen ungefähr *can be done*.",
+  "it": "Das Italienische unterscheidet Vorgang und Zustand selbst: *la porta viene chiusa* (Vorgang) gegen *la porta è chiusa* (Zustand) entspricht genau *wird* gegen *ist*. Italienischsprachige haben hier also einen echten Vorteil. Die Ersatzformen finden ebenfalls Vorbilder: *-bile* für *-bar*, das *si* passivante für *man* bzw. *lässt sich*.",
+  "fr": "Das französische Passiv mit *être* unterscheidet Vorgang und Zustand nicht: *la porte est fermée* kann beides bedeuten. Französischsprachige setzen deshalb oft *ist* statt *wird*. Dazu kommt, dass *on* im Französischen extrem häufig ist und direkt zu *man* führt; das Pronominalpassiv (*ça se mange*) ist dagegen eine gute Brücke zu *lässt sich*.",
+  "pt": "Das Portugiesische unterscheidet mit *ser* und *estar* selbst zwischen Vorgang und Zustand: *a loja é fechada às 18h* gegen *a loja está fechada* entspricht *wird* gegen *ist*. Dieser Vorteil lässt sich bewusst nutzen. Das Passiv mit *se* (*vendem-se casas*) führt dagegen eher zu *man* als zum deutschen Passiv."
+ },
+ "errores": [
+  "*ist geworden* statt *ist worden*.",
+  "sich lassen mit dem Reflexivpronomen verwechseln: Das lässt **sich** machen, nicht Das lässt mich machen."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*fue construido* als *war gebaut* übertragen statt *wurde gebaut*."
+  ],
+  "en": [
+   "*ist* statt *wird* setzen, weil das Englische Vorgang und Zustand nicht trennt.",
+   "Das Passiv überbenutzen, weil es im Englischen häufiger ist."
+  ],
+  "it": [
+   "*sein* statt *werden* nehmen, weil *essere* + Partizip im Italienischen auch Vorgang sein kann: *Das Haus ist 1990 gebaut* statt *wurde*."
+  ],
+  "fr": [
+   "*sein* statt *werden* nehmen, weil *être* + Partizip beides abdeckt: *Die Tür ist jeden Abend geschlossen* statt *wird*."
+  ],
+  "pt": [
+   "*foi construído* als *war gebaut* übertragen statt *wurde gebaut*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der Zielkonflikt",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el conflicto de objetivos",
+    "en": "the trade-off",
+    "fr": "le conflit d’objectifs / compromis",
+    "it": "il conflitto di obiettivi / compromesso",
+    "pt": "o conflito de objetivos / compromisso"
+   },
+   "nota": "Entsprechung von *trade-off*"
+  },
+  {
+   "item": "etwas in Kauf nehmen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "aceptar como precio",
+    "en": "to accept something as the price",
+    "fr": "accepter quelque chose comme prix à payer",
+    "it": "accettare qualcosa come prezzo da pagare",
+    "pt": "aceitar algo como preço a pagar"
+   },
+   "reccion": "Akk.",
+   "nota": "Funktionsverbgefüge"
+  },
+  {
+   "item": "der Verzicht auf",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la renuncia a",
+    "en": "going without, forgoing",
+    "fr": "le renoncement à",
+    "it": "la rinuncia a",
+    "pt": "a renúncia a"
+   },
+   "reccion": "+ Akk.",
+   "nota": "starkes Konzept im DACH-Diskurs",
+   "variante": "CH"
+  },
+  {
+   "item": "die Grundlast",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la carga base",
+    "en": "the base load",
+    "fr": "la charge de base",
+    "it": "il carico di base",
+    "pt": "a carga de base"
+   },
+   "nota": "Fachsprache Energietechnik"
+  },
+  {
+   "item": "der ökologische Fußabdruck",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la huella ecológica",
+    "en": "the ecological footprint",
+    "fr": "l’empreinte écologique",
+    "it": "l’impronta ecologica",
+    "pt": "a pegada ecológica"
+   },
+   "nota": "in CH: *Fussabdruck*",
+   "variante": "CH"
+  },
+  {
+   "item": "die Energiewende",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la transición energética",
+    "en": "the energy transition",
+    "fr": "la transition énergétique",
+    "it": "la transizione energetica",
+    "pt": "a transição energética"
+   },
+   "nota": "politischer Begriff"
+  },
+  {
+   "item": "etwas eindämmen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "contener, frenar",
+    "en": "to curb, to contain",
+    "fr": "endiguer / freiner quelque chose",
+    "it": "contenere / frenare qualcosa",
+    "pt": "conter / travar algo"
+   },
+   "reccion": "Akk."
+  },
+  {
+   "item": "der Ausstoß / ausstoßen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la emisión / emitir",
+    "en": "emissions / to emit",
+    "fr": "les émissions / émettre",
+    "it": "le emissioni / emettere",
+    "pt": "as emissões / emitir"
+   },
+   "reccion": "Akk.",
+   "nota": "häufiger als *Emission*"
+  },
+  {
+   "item": "die Kreislaufwirtschaft",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la economía circular",
+    "en": "the circular economy",
+    "fr": "l’économie circulaire",
+    "it": "l’economia circolare",
+    "pt": "a economia circular"
+   }
+  },
+  {
+   "item": "das Stromnetz",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la red eléctrica",
+    "en": "the electricity grid",
+    "fr": "le réseau électrique",
+    "it": "la rete elettrica",
+    "pt": "a rede elétrica"
+   }
+  },
+  {
+   "item": "nachhaltig",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sostenible",
+    "en": "sustainable (also: lasting)",
+    "fr": "durable",
+    "it": "sostenibile",
+    "pt": "sustentável"
+   },
+   "nota": "heisst auch „duradero\""
+  },
+  {
+   "item": "die Mülltrennung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la separación de residuos",
+    "en": "waste separation",
+    "fr": "le tri des déchets",
+    "it": "la raccolta differenziata",
+    "pt": "a separação de resíduos"
+   },
+   "nota": "starke kulturelle Praxis"
+  },
+  {
+   "item": "die Abhängigkeit von",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la dependencia de",
+    "en": "dependence on",
+    "fr": "la dépendance à / de",
+    "it": "la dipendenza da",
+    "pt": "a dependência de"
+   },
+   "reccion": "+ Dat."
+  },
+  {
+   "item": "schönreden",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "maquillar, endulzar",
+    "en": "to talk up, to gloss over",
+    "fr": "enjoliver / minimiser les problèmes",
+    "it": "edulcorare / abbellire",
+    "pt": "embelezar / dourar a pílula"
+   },
+   "reccion": "Akk."
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Dabei wird… erzeugt",
+   "funcion": "Vorgang beschreiben",
+   "traducciones": {
+    "es": "en el proceso se genera…",
+    "en": "In the process… is produced",
+    "fr": "Ce faisant, … est produit",
+    "it": "Nel processo viene prodotto…",
+    "pt": "Nesse processo, é produzido…"
+   }
+  },
+  {
+   "expresion": "Das lässt sich nicht…",
+   "funcion": "Unmöglichkeit, elegant",
+   "traducciones": {
+    "es": "eso no se puede…",
+    "en": "That can't be…",
+    "fr": "Cela ne peut pas être…",
+    "it": "Questo non si può…",
+    "pt": "Isso não se pode…"
+   }
+  },
+  {
+   "expresion": "Es ist damit zu rechnen, dass…",
+   "funcion": "Prognose, formell",
+   "traducciones": {
+    "es": "cabe esperar que…",
+    "en": "It is to be expected that…",
+    "fr": "Il faut s’attendre à ce que…",
+    "it": "C’è da aspettarsi che…",
+    "pt": "É de esperar que…"
+   }
+  },
+  {
+   "expresion": "Der Verbrauch ist zu senken",
+   "funcion": "Vorschrift",
+   "traducciones": {
+    "es": "hay que reducir el consumo",
+    "en": "Consumption is to be reduced",
+    "fr": "La consommation doit être réduite",
+    "it": "Il consumo va ridotto",
+    "pt": "O consumo deve ser reduzido"
+   }
+  },
+  {
+   "expresion": "Das ist kaum messbar",
+   "funcion": "kompakte Ersatzform",
+   "traducciones": {
+    "es": "eso apenas se puede medir",
+    "en": "That's hardly measurable",
+    "fr": "C’est à peine mesurable",
+    "it": "È difficilmente misurabile",
+    "pt": "Isso é praticamente impossível de medir"
+   }
+  },
+  {
+   "expresion": "Dadurch wird…",
+   "funcion": "Ursache mit *durch*",
+   "traducciones": {
+    "es": "con eso se…",
+    "en": "As a result…",
+    "fr": "Ainsi, … est / devient…",
+    "it": "Di conseguenza, … viene…",
+    "pt": "Desse modo, … é / fica…"
+   }
+  },
+  {
+   "expresion": "Von der Politik wird…",
+   "funcion": "Urheber mit *von*",
+   "traducciones": {
+    "es": "por parte de la política se…",
+    "en": "By policymakers…",
+    "fr": "Du côté des pouvoirs publics, …",
+    "it": "Da parte delle autorità…",
+    "pt": "Por parte das autoridades…"
+   }
+  },
+  {
+   "expresion": "Es muss abgewogen werden, ob…",
+   "funcion": "Abwägung",
+   "traducciones": {
+    "es": "hay que sopesar si…",
+    "en": "It has to be weighed up whether…",
+    "fr": "Il faut soupeser la question de savoir si…",
+    "it": "Bisogna valutare se…",
+    "pt": "É preciso ponderar se…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Erklären Sie einen echten Zielkonflikt der Energiewende.",
+  "requisitos": [
+   "mindestens vier verschiedene Formen aus dem Kasten",
+   "zweimal *sich lassen*",
+   "einmal *sein zu + Infinitiv*",
+   "ein Urheber mit *durch*",
+   "Alle vier Kernwörter."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Aktivsätze aus Ihrem Beruf ins Vorgangspassiv umwandeln."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Dieselben fünf mit *sich lassen* oder *-bar* schreiben."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Wie funktioniert ein Umspannwerk? Mindestens sechs Passivformen."
+  }
+ ],
+ "autochequeo": [
+  "Habe ich *wird* und *ist* richtig unterschieden?",
+  "Steht im Perfekt Passiv *worden*?",
+  "Sind mindestens zwei Ersatzformen dabei?",
+  "Habe ich *von* und *durch* richtig verwendet?",
+  "Alle vier Kernwörter?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Passiv und Ersatzformen. (1) Markieren Sie jede Form und benennen Sie den Typ. (2) Prüfen Sie Vorgang gegen Zustand. (3) Markieren Sie jede Stelle, an der eine Ersatzform natürlicher gewesen wäre als das Vorgangspassiv, und zeigen Sie sie. (4) Prüfen Sie *von* gegen *durch*. Schreiben Sie den Text nicht neu."
+}

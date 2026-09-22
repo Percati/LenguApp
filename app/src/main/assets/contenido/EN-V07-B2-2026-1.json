@@ -1,0 +1,413 @@
+{
+ "id": "EN-V07-B2-2026-1",
+ "skillId": "EN-V07",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "vocabulary",
+ "topicId": "T09",
+ "titulo": "Discourse Markers and Linking",
+ "subtitulo": "Joining ideas so the listener can follow",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 50
+ },
+ "descripcion": "At B2 the sentences are usually correct but they sit next to each other without a visible connection. Discourse markers are the words that show the reader how one idea relates to the next: adding, contrasting, giving a reason, drawing a conclusion. Learning ten and using them well is worth more than knowing fifty.",
+ "cuadroReferencia": {
+  "titulo": "Markers by function",
+  "columnas": [
+   "Function",
+   "Common in speech",
+   "Common in writing"
+  ],
+  "filas": [
+   [
+    "Adding",
+    "*also*, *on top of that*, *what's more*",
+    "*moreover*, *in addition*"
+   ],
+   [
+    "Contrasting",
+    "*but*, *though*, *that said*",
+    "*however*, *nevertheless*"
+   ],
+   [
+    "Giving a reason",
+    "*because*, *since*",
+    "*as*, *given that*"
+   ],
+   [
+    "Giving a result",
+    "*so*, *that's why*",
+    "*therefore*, *consequently*"
+   ],
+   [
+    "Giving an example",
+    "*like*, *for instance*",
+    "*for example*, *such as*"
+   ],
+   [
+    "Conceding",
+    "*OK, but…*, *fair enough*",
+    "*although*, *admittedly*"
+   ],
+   [
+    "Reformulating",
+    "*I mean*, *in other words*",
+    "that is to say"
+   ],
+   [
+    "Concluding",
+    "*so in the end*, *all in all*",
+    "*in conclusion*, *overall*"
+   ]
+  ],
+  "notaPie": "The left column is not \"worse\" English: it is the right register for speaking. Using the right column out loud sounds like reading an essay."
+ },
+ "ejemplos": [
+  {
+   "texto": "*I started the course late. That said, I caught up within a month.*",
+   "audio": true
+  },
+  {
+   "texto": "*The classes were online, so I could study after work.*",
+   "audio": true
+  },
+  {
+   "texto": "*It's a long course. On top of that, it's expensive.*",
+   "audio": true
+  },
+  {
+   "texto": "*It was hard. I enjoyed it, though.*",
+   "audio": true
+  },
+  {
+   "texto": "*All in all, it was worth it.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Though* at the end of a sentence is very common in speech: *It was hard. I enjoyed it, though.*",
+  "*So* and *because* answer opposite questions. *Because* gives the reason, *so* gives the result. Learners often swap them.",
+  "One marker per sentence is enough. Two in a row cancel each other out."
+ ],
+ "contraste": {
+  "es": "Spanish formal writing often builds long sentences with several linked clauses, while English prefers shorter sentences joined with markers (however, as a result). Translating a Spanish paragraph sentence by sentence can produce one very long English sentence.",
+  "de": "German formal writing often packs several subordinate clauses into one sentence, while English prefers shorter sentences joined with markers. The German word also is a false friend: it means so, not also.",
+  "it": "Italian formal writing often uses long, complex sentences, while English prefers shorter ones joined with markers (however, so). Quindi corresponds well to so.",
+  "fr": "French formal writing often uses long sentences, while English prefers shorter ones joined with markers. Donc corresponds well to so, and cependant to however.",
+  "pt": "Portuguese formal writing often uses long sentences, while English prefers shorter ones joined with markers. Portanto corresponds well to so, and no entanto to however."
+ },
+ "errores": [
+  "*In the other hand* — it is *on the other hand*.",
+  "*Also* at the start of a spoken sentence sounds abrupt; *and also* or *on top of that* is more natural.",
+  "*Although* and *but* together: *Although it was hard, but I finished.* Only one is needed.",
+  "*For example* followed by a whole clause with no example in it."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*en cambio* rendered as *in change* instead of *on the other hand* or *whereas*."
+  ],
+  "de": [
+   "*zwar … aber* rendered with *indeed* in every concession: *It is indeed expensive, but good* instead of *It may be expensive, but it's good*."
+  ],
+  "it": [
+   "*invece* rendered as *instead* for a contrast: *I like tea, instead he likes coffee* instead of *whereas he likes coffee*."
+  ],
+  "fr": [
+   "*en revanche* rendered as *in revenge* instead of *on the other hand*."
+  ],
+  "pt": [
+   "*em compensação* rendered as *in compensation* instead of *on the other hand*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "to take a course",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "hacer un curso",
+    "de": "einen Kurs belegen",
+    "fr": "suivre un cours",
+    "it": "frequentare un corso",
+    "pt": "frequentar um curso"
+   },
+   "nota": "not *make* or *do*"
+  },
+  {
+   "item": "to pass / to fail an exam",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "aprobar / suspender",
+    "de": "eine Prüfung bestehen / durchfallen",
+    "fr": "réussir / échouer à un examen",
+    "it": "superare / bocciare un esame",
+    "pt": "passar / reprovar num exame"
+   },
+   "nota": "*to pass* is not *to happen*"
+  },
+  {
+   "item": "a deadline",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "una fecha límite",
+    "de": "eine Frist",
+    "fr": "une date limite",
+    "it": "una scadenza",
+    "pt": "um prazo"
+   }
+  },
+  {
+   "item": "to keep up with",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "seguir el ritmo de",
+    "de": "mit etwas Schritt halten",
+    "fr": "suivre le rythme de",
+    "it": "stare al passo con",
+    "pt": "acompanhar o ritmo de"
+   }
+  },
+  {
+   "item": "tuition fees",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "matrícula",
+    "de": "Studiengebühren",
+    "fr": "les frais de scolarité",
+    "it": "le tasse universitarie",
+    "pt": "as propinas"
+   },
+   "nota": "what you pay to study"
+  },
+  {
+   "item": "coursework",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "trabajos del curso",
+    "de": "Kursarbeiten / Studienleistungen",
+    "fr": "les travaux de cours",
+    "it": "i lavori del corso",
+    "pt": "os trabalhos do curso"
+   },
+   "nota": "uncountable"
+  },
+  {
+   "item": "to hand something in",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "entregar algo",
+    "de": "etwas abgeben",
+    "fr": "rendre quelque chose",
+    "it": "consegnare qualcosa",
+    "pt": "entregar algo"
+   }
+  },
+  {
+   "item": "a qualification",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una titulación",
+    "de": "eine Qualifikation / ein Abschluss",
+    "fr": "une qualification / un diplôme",
+    "it": "una qualifica",
+    "pt": "uma qualificação"
+   }
+  },
+  {
+   "item": "to be worth it",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "valer la pena",
+    "de": "sich lohnen",
+    "fr": "valoir la peine",
+    "it": "valere la pena",
+    "pt": "valer a pena"
+   }
+  },
+  {
+   "item": "distance learning",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "educación a distancia",
+    "de": "Fernunterricht",
+    "fr": "l’enseignement à distance",
+    "it": "la didattica a distanza",
+    "pt": "o ensino à distância"
+   }
+  },
+  {
+   "item": "to drop out",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "abandonar los estudios",
+    "de": "abbrechen / das Studium abbrechen",
+    "fr": "abandonner ses études",
+    "it": "abbandonare gli studi",
+    "pt": "abandonar os estudos"
+   }
+  },
+  {
+   "item": "a grade / a mark",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una nota",
+    "de": "eine Note",
+    "fr": "une note",
+    "it": "un voto",
+    "pt": "uma nota"
+   },
+   "nota": "US *grade*, UK *mark*"
+  },
+  {
+   "item": "to revise",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "repasar",
+    "de": "lernen / wiederholen",
+    "fr": "réviser",
+    "it": "ripassare",
+    "pt": "rever / estudar"
+   },
+   "bajoNivelJustificado": true,
+   "nota": "**false friend**: to study for an exam, not *to review*"
+  },
+  {
+   "item": "lifelong learning",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "aprendizaje permanente",
+    "de": "lebenslanges Lernen",
+    "fr": "l’apprentissage tout au long de la vie",
+    "it": "l’apprendimento permanente",
+    "pt": "a aprendizagem ao longo da vida"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "That said,…",
+   "funcion": "soft contrast",
+   "traducciones": {
+    "es": "dicho eso…",
+    "de": "Allerdings / Dabei gilt…",
+    "fr": "Cela dit, …",
+    "it": "Detto questo, …",
+    "pt": "Dito isso, …"
+   }
+  },
+  {
+   "expresion": "On top of that,…",
+   "funcion": "adds weight",
+   "traducciones": {
+    "es": "y encima…",
+    "de": "Außerdem, …",
+    "fr": "En plus de cela, …",
+    "it": "Inoltre, …",
+    "pt": "Além disso, …"
+   }
+  },
+  {
+   "expresion": "…, though.",
+   "funcion": "contrast at the end, spoken",
+   "traducciones": {
+    "es": "…eso sí",
+    "de": "…, allerdings.",
+    "fr": "…, cependant.",
+    "it": "…, però.",
+    "pt": "…, no entanto."
+   }
+  },
+  {
+   "expresion": "That's why…",
+   "funcion": "result",
+   "traducciones": {
+    "es": "por eso…",
+    "de": "Deshalb…",
+    "fr": "C’est pourquoi…",
+    "it": "Ecco perché…",
+    "pt": "Por isso…"
+   }
+  },
+  {
+   "expresion": "For instance,…",
+   "funcion": "example",
+   "traducciones": {
+    "es": "por ejemplo…",
+    "de": "Zum Beispiel, …",
+    "fr": "Par exemple, …",
+    "it": "Per esempio, …",
+    "pt": "Por exemplo, …"
+   }
+  },
+  {
+   "expresion": "I mean,…",
+   "funcion": "reformulates",
+   "traducciones": {
+    "es": "o sea…",
+    "de": "Ich meine, …",
+    "fr": "Je veux dire, …",
+    "it": "Voglio dire, …",
+    "pt": "Quero dizer, …"
+   }
+  },
+  {
+   "expresion": "All in all,…",
+   "funcion": "conclusion",
+   "traducciones": {
+    "es": "en resumidas cuentas…",
+    "de": "Alles in allem, …",
+    "fr": "Dans l’ensemble, …",
+    "it": "Tutto sommato, …",
+    "pt": "No geral, …"
+   }
+  },
+  {
+   "expresion": "Given that…",
+   "funcion": "reason, slightly formal",
+   "traducciones": {
+    "es": "dado que…",
+    "de": "Angesichts der Tatsache, dass…",
+    "fr": "Étant donné que…",
+    "it": "Dato che…",
+    "pt": "Dado que…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Explain a course or training you did, why you chose it and whether it was worth it.",
+  "requisitos": [
+   "at least eight different markers",
+   "from at least five functions",
+   "no marker used twice",
+   "All four core vocabulary items."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write four pairs of sentences with no marker. Then join each pair."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Take a paragraph you wrote and replace every *and* with a more precise marker."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds about something you learned recently. Use *that said* once."
+  }
+ ],
+ "autochequeo": [
+  "Eight different markers, or three repeated?",
+  "Any written-only marker in a spoken piece?",
+  "Did I use *although* and *but* in the same sentence?",
+  "Does every *for example* actually introduce an example?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on discourse markers and linking. (1) Mark each one and say if it fits the meaning and the register. (2) Show me two places where a marker was missing and the reader has to guess the connection. (3) Flag repeated markers. Do not correct anything else."
+}

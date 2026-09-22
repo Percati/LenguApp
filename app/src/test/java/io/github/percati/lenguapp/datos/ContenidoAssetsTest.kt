@@ -80,9 +80,9 @@ class ContenidoAssetsTest {
 
     @Test
     fun `una ficha de la semana piloto carga como Ficha con sus campos`() {
-        val archivo = File(carpetaContenido(), "DE-G01-B2-1.json")
+        val archivo = File(carpetaContenido(), "DE-G01-B2-2026-1.json")
         val ficha = parsearContenido(archivo.readText()) as Ficha
-        assertEquals("DE-G01-B2-1", ficha.id)
+        assertEquals("DE-G01-B2-2026-1", ficha.id)
         assertEquals("T07", ficha.topicId)
         assertTrue(ficha.vocabulario.isNotEmpty())
         // die Hausordnung declara variante "CH": la app debe poder verla.
@@ -91,7 +91,7 @@ class ContenidoAssetsTest {
 
     @Test
     fun `falla a proposito si se borra un campo obligatorio de una ficha`() {
-        val original = File(carpetaContenido(), "DE-G01-B2-1.json").readText()
+        val original = File(carpetaContenido(), "DE-G01-B2-2026-1.json").readText()
         val objeto = Json.parseToJsonElement(original).jsonObject
         val mutilado = JsonObject(objeto.filterKeys { it != "descripcion" })
 

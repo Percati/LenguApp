@@ -1,0 +1,397 @@
+{
+ "id": "EN-F17-C1-2026-1",
+ "skillId": "EN-F17",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T03",
+ "titulo": "Register Shifting",
+ "subtitulo": "The same content, three audiences, three registers",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 150,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Register is the C1 skill most likely to be invisible to the speaker and obvious to everyone else. Writing to a regulator the way you would write to a colleague is the commonest way advanced speakers misfire. The content is not wrong; the packaging is. Register moves along several axes at once, and the failure is almost always mixing them within one text.",
+ "cuadroReferencia": {
+  "titulo": "The six axes",
+  "columnas": [
+   "Axis",
+   "Informal → Formal"
+  ],
+  "filas": [
+   [
+    "Lexis",
+    "Germanic (*get*, *put*, *let*) → Latinate (*obtain*, *place*, *permit*)"
+   ],
+   [
+    "Structure",
+    "Verbal (*we tested it*) → Nominal (*testing was carried out*)"
+   ],
+   [
+    "Person",
+    "*I / we* → impersonal (*it was found that*)"
+   ],
+   [
+    "Hedging",
+    "sparse → dense"
+   ],
+   [
+    "Contractions",
+    "*don't*, *it's* → *do not*, *it is*"
+   ],
+   [
+    "Phrasal verbs",
+    "*find out* → *ascertain*"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "To a colleague: *This won't scale and we both know it.*",
+   "audio": true
+  },
+  {
+   "texto": "To a manager: *I've got concerns about how this behaves at volume — worth a conversation before we commit.*",
+   "audio": true
+  },
+  {
+   "texto": "In a formal report: *Scalability has not been demonstrated at the volumes anticipated, and further assessment is recommended prior to commitment.*",
+   "audio": true
+  },
+  {
+   "texto": "*Worth a conversation before we commit.*",
+   "audio": true
+  },
+  {
+   "texto": "*Further assessment is recommended prior to commitment.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Formal English is not harder English; it is a different set.",
+  "Over-formalising email reads as cold or sarcastic in most English-speaking workplaces.",
+  "Nominalisation raises formality and lowers readability. Use it deliberately, not by default."
+ ],
+ "contraste": {
+  "es": "Spanish marks formality heavily through address (*tú/usted*) and verb morphology, which English lacks entirely. English carries the whole load lexically and structurally — so a Spanish speaker who gets the politeness right can still get the register badly wrong.",
+  "de": "German marks politeness with Sie, which English lacks, so a German speaker who gets the politeness right can still get the register wrong. English carries register through vocabulary, contractions and structure.",
+  "it": "Italian marks politeness with Lei, which English lacks, so an Italian speaker who gets the politeness right can still get the register wrong. English carries register through vocabulary, contractions and structure.",
+  "fr": "French marks politeness with vous, which English lacks, so a French speaker who gets the politeness right can still get the register wrong. English carries register through vocabulary, contractions and structure.",
+  "pt": "Portuguese marks politeness with você or o senhor, which English lacks, so a Portuguese speaker who gets the politeness right can still get the register wrong. English carries register through vocabulary, contractions and structure."
+ },
+ "errores": [
+  "Equating formality with difficulty.",
+  "Register mixing within a paragraph — the commonest real error.",
+  "Latinate vocabulary in a message meant to be warm."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Un abrazo* rendered as *A hug* to close a work email instead of *Best* or *Kind regards*."
+  ],
+  "de": [
+   "*Mit freundlichen Grüssen* rendered as *With friendly greetings* instead of *Kind regards*."
+  ],
+  "it": [
+   "*Un abbraccio* rendered as *A hug* to close a work email instead of *Best* or *Kind regards*."
+  ],
+  "fr": [
+   "*Bises* rendered as *Kisses* to close a work email instead of *Best* or *Kind regards*."
+  ],
+  "pt": [
+   "*Beijinhos* rendered as *Kisses* to close a work email instead of *Best* or *Kind regards*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "to roll something out",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "desplegar",
+    "de": "etwas ausrollen / einführen",
+    "fr": "déployer quelque chose",
+    "it": "distribuire / introdurre qualcosa",
+    "pt": "implementar / lançar algo"
+   },
+   "nota": "deploy gradually"
+  },
+  {
+   "item": "guardrails",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "límites de seguridad",
+    "de": "Leitplanken / Schutzmechanismen",
+    "fr": "des garde-fous",
+    "it": "barriere di sicurezza / limiti",
+    "pt": "salvaguardas / limites de segurança"
+   },
+   "nota": "very frequent in AI debate"
+  },
+  {
+   "item": "technical debt",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "deuda técnica",
+    "de": "technische Schulden",
+    "fr": "la dette technique",
+    "it": "il debito tecnico",
+    "pt": "a dívida técnica"
+   },
+   "nota": "now used outside IT"
+  },
+  {
+   "item": "to opt out / opt in",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "excluirse / adherirse",
+    "de": "sich abmelden / anmelden",
+    "fr": "se désinscrire / s’inscrire",
+    "it": "rinunciare / aderire",
+    "pt": "excluir-se / aderir"
+   },
+   "nota": "central in privacy talk"
+  },
+  {
+   "item": "a workaround",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "solución provisional",
+    "de": "eine Umgehungslösung",
+    "fr": "une solution de contournement",
+    "it": "una soluzione alternativa",
+    "pt": "uma solução de recurso"
+   },
+   "nota": "dodges rather than solves"
+  },
+  {
+   "item": "vendor lock-in",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dependencia de proveedor",
+    "de": "Anbieterbindung",
+    "fr": "la dépendance à un fournisseur",
+    "it": "il vincolo al fornitore",
+    "pt": "a dependência de fornecedor"
+   }
+  },
+  {
+   "item": "to scale (intransitive)",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "escalar",
+    "de": "skalieren / mitwachsen",
+    "fr": "passer à l’échelle",
+    "it": "scalare",
+    "pt": "escalar"
+   },
+   "bajoNivelJustificado": true,
+   "nota": "*it doesn't scale*"
+  },
+  {
+   "item": "a black box",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "caja negra",
+    "de": "eine Blackbox",
+    "fr": "une boîte noire",
+    "it": "una scatola nera",
+    "pt": "uma caixa-preta"
+   }
+  },
+  {
+   "item": "to future-proof",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "preparar para el futuro",
+    "de": "zukunftssicher machen",
+    "fr": "pérenniser / préparer pour l’avenir",
+    "it": "rendere a prova di futuro",
+    "pt": "preparar para o futuro"
+   }
+  },
+  {
+   "item": "an edge case",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "caso límite",
+    "de": "ein Grenzfall",
+    "fr": "un cas limite",
+    "it": "un caso limite",
+    "pt": "um caso-limite"
+   }
+  },
+  {
+   "item": "to deprecate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "marcar como obsoleto",
+    "de": "als veraltet kennzeichnen / ausmustern",
+    "fr": "déprécier / rendre obsolète",
+    "it": "deprecare / dichiarare obsoleto",
+    "pt": "descontinuar / marcar como obsoleto"
+   },
+   "nota": "mark obsolete, don't remove"
+  },
+  {
+   "item": "unintended consequences",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "consecuencias no buscadas",
+    "de": "unbeabsichtigte Folgen",
+    "fr": "des conséquences imprévues",
+    "it": "conseguenze indesiderate",
+    "pt": "consequências não intencionais"
+   }
+  },
+  {
+   "item": "a single point of failure",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "punto único de fallo",
+    "de": "eine einzelne Fehlerquelle mit Gesamtausfallrisiko",
+    "fr": "un point de défaillance unique",
+    "it": "un singolo punto di guasto",
+    "pt": "um ponto único de falha"
+   }
+  },
+  {
+   "item": "to be over-engineered",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sobredimensionado",
+    "de": "überdimensioniert / überkonstruiert sein",
+    "fr": "être surconçu",
+    "it": "essere sovra-ingegnerizzato",
+    "pt": "ser excessivamente complexo"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "we both know it",
+   "funcion": "low",
+   "traducciones": {
+    "es": "los dos lo sabemos",
+    "de": "wir wissen es beide",
+    "fr": "nous le savons tous les deux",
+    "it": "lo sappiamo entrambi",
+    "pt": "nós dois sabemos"
+   }
+  },
+  {
+   "expresion": "worth a conversation",
+   "funcion": "mid",
+   "traducciones": {
+    "es": "vale una charla",
+    "de": "ein Gespräch wert",
+    "fr": "cela mérite une discussion",
+    "it": "vale la pena parlarne",
+    "pt": "vale a pena conversar"
+   }
+  },
+  {
+   "expresion": "I've got concerns about",
+   "funcion": "mid",
+   "traducciones": {
+    "es": "me preocupa",
+    "de": "ich habe Bedenken wegen",
+    "fr": "j’ai des réserves au sujet de",
+    "it": "ho delle preoccupazioni riguardo a",
+    "pt": "tenho preocupações sobre"
+   }
+  },
+  {
+   "expresion": "further assessment is recommended",
+   "funcion": "high",
+   "traducciones": {
+    "es": "se recomienda un análisis adicional",
+    "de": "eine weitere Bewertung wird empfohlen",
+    "fr": "une évaluation supplémentaire est recommandée",
+    "it": "si raccomanda un’ulteriore valutazione",
+    "pt": "recomenda-se uma avaliação adicional"
+   }
+  },
+  {
+   "expresion": "prior to",
+   "funcion": "high (→ *before*, low)",
+   "traducciones": {
+    "es": "antes de",
+    "de": "vor / im Vorfeld von",
+    "fr": "avant / préalablement à",
+    "it": "prima di",
+    "pt": "antes de"
+   }
+  },
+  {
+   "expresion": "ascertain",
+   "funcion": "high (→ *find out*, low)",
+   "traducciones": {
+    "es": "averiguar",
+    "de": "feststellen / ermitteln",
+    "fr": "déterminer / établir",
+    "it": "accertare",
+    "pt": "averiguar / determinar"
+   }
+  },
+  {
+   "expresion": "it was found that",
+   "funcion": "high (→ *we found*, mid)",
+   "traducciones": {
+    "es": "se constató que",
+    "de": "es wurde festgestellt, dass",
+    "fr": "il a été constaté que",
+    "it": "è stato riscontrato che",
+    "pt": "constatou-se que"
+   }
+  },
+  {
+   "expresion": "has not been demonstrated",
+   "funcion": "high",
+   "traducciones": {
+    "es": "no se ha demostrado",
+    "de": "wurde nicht nachgewiesen",
+    "fr": "n’a pas été démontré",
+    "it": "non è stato dimostrato",
+    "pt": "não foi demonstrado"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Take one technical opinion about AI and write it three times: as a message to a close colleague, as an email to a senior manager you do not know well, and as a paragraph in a formal report. Same content, no register mixing, all four core vocabulary items across the three.",
+  "requisitos": [
+   "Take one technical opinion about AI and write it three times: as a message to a close colleague",
+   "as an email to a senior manager you do not know well",
+   "as a paragraph in a formal report",
+   "Same content",
+   "no register mixing",
+   "all four core vocabulary items across the three."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Take a paragraph you wrote at work and rewrite it two registers up."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Take a formal paragraph and rewrite it as a message to a friend. Notice what you delete."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds explaining the same technical point twice: to an engineer, then to someone with no background."
+  }
+ ],
+ "autochequeo": [
+  "Is each version internally consistent across all six axes?",
+  "Any contraction in the formal version? Any Latinate chain in the informal one?",
+  "Is the content genuinely identical, or did I change the message?",
+  "Would each version land with its intended reader?",
+  "All four core items across the three?"
+ ],
+ "promptCorreccion": "Focus only on register. (1) Rate each of my three versions and say whether it is consistent throughout. (2) Flag every mixed-register sentence. (3) Say which versions would actually land with their reader and which would not. (4) Show me the single word in each version that most gives away its register. Do not rewrite the text."
+}

@@ -1,0 +1,407 @@
+{
+ "id": "EN-G03-B2-2026-1",
+ "skillId": "EN-G03",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T02",
+ "titulo": "Present Perfect vs. Past Simple",
+ "subtitulo": "The tense choice that Spanish speakers get wrong for years",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 50
+ },
+ "descripcion": "The rule is short: past simple for finished time, present perfect for time that still includes now. The difficulty is not the rule but the habit. Spanish uses the compound past far more freely, so *I have bought a house last year* feels natural and is wrong. This week the aim is to make the choice consciously, every time, until it stops needing thought.",
+ "cuadroReferencia": {
+  "titulo": "Which tense, and why",
+  "columnas": [
+   "Situation",
+   "Tense",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Finished time stated",
+    "past simple",
+    "I opened the account **in March**."
+   ],
+   [
+    "Finished time understood",
+    "past simple",
+    "*I called the bank.* (this morning, over)"
+   ],
+   [
+    "Time still open",
+    "present perfect",
+    "I've saved a lot **this year**."
+   ],
+   [
+    "Life experience, no time given",
+    "present perfect",
+    "I've never had a loan."
+   ],
+   [
+    "Past action, present result",
+    "present perfect",
+    "*I've lost my card.* (I still don't have it)"
+   ],
+   [
+    "Started in the past, still true",
+    "present perfect (+ *for* / *since*)",
+    "I've banked with them **for** ten years."
+   ],
+   [
+    "Asking when",
+    "**always** past simple",
+    "When **did** you open it?"
+   ]
+  ],
+  "notaPie": "With **yesterday**, **last week**, **in 2019** and **ago**, only the past simple is possible. With **just**, **already**, **yet** and **so far**, normally the present perfect."
+ },
+ "ejemplos": [
+  {
+   "texto": "*I've been with the same bank since 2015, but I changed my account type last year.*",
+   "audio": true
+  },
+  {
+   "texto": "*Have you ever paid for something in instalments? — Yes, I bought a laptop that way.*",
+   "audio": true
+  },
+  {
+   "texto": "*I've already transferred the money.*",
+   "audio": true
+  },
+  {
+   "texto": "*When did you open the account?*",
+   "audio": true
+  },
+  {
+   "texto": "*I've never had a loan, and I don't want one.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "**When** always takes the past simple, even about very recent events. *When have you arrived* is one of the most recognisable learner errors.",
+  "*For* and *since* with the present perfect mean the situation continues. *I lived there for ten years* means you left.",
+  "British English uses the present perfect more than American English. Both are correct; be consistent."
+ ],
+ "contraste": {
+  "es": "Spanish uses he comprado for finished past time in much of Spain, and the simple past almost always in Latin America. Neither maps onto English: the English rule is about whether the time period is finished, not about how recent the event was.",
+  "de": "German uses the Perfekt as the normal spoken past for finished events, which produces I have bought it yesterday. In the other direction, German uses the present with seit for situations that are still going on (Ich wohne seit 2020 hier), which produces I live here since 2020 instead of I have lived here since 2020.",
+  "it": "In northern and standard spoken Italian, the passato prossimo is used for finished events (ieri ho comprato una macchina), which produces I have bought a car yesterday. Italian also uses the present with da for ongoing situations (vivo qui da due anni), which leads to I live here since two years.",
+  "fr": "The passé composé is the normal spoken past in French (hier j'ai acheté une voiture), which produces I have bought a car yesterday. French also uses depuis + present for ongoing situations (j'habite ici depuis deux ans), which leads to I live here since two years instead of I have lived here for two years.",
+  "pt": "Portuguese uses the simple past for finished events (comprei um carro ontem), which matches the English past simple well. The Portuguese pretérito perfeito composto (tenho feito) means something repeated up to now and corresponds more closely to the present perfect continuous (I have been doing); ongoing situations with há (moro aqui há dois anos) lead to I live here for two years."
+ },
+ "errores": [
+  "*I have bought it last year* — finished time needs the past simple.",
+  "*When have you started?* — *when* always takes the past simple.",
+  "*I am here since Monday* — English needs *I have been here since Monday*.",
+  "Using the present perfect for a narrative sequence. Stories go in the past simple."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Carrying over the peninsular *esta mañana he visto*: *I have seen him this morning* when the morning is already over."
+  ],
+  "de": [
+   "*seit* for a duration: *I have lived here since three years* instead of *for three years*."
+  ],
+  "it": [
+   "*È da tanto che non lo vedo* rendered as *It's a long time that I don't see him* instead of *I haven't seen him for a long time*."
+  ],
+  "fr": [
+   "*Ça fait deux ans que j'habite ici* rendered as *It makes two years that I live here* instead of *I've lived here for two years*."
+  ],
+  "pt": [
+   "Using the past simple for life experience, as with *nunca fui*: *I never went to Japan* instead of *I've never been to Japan*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "to open / close an account",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "abrir / cerrar una cuenta",
+    "de": "ein Konto eröffnen / schließen",
+    "fr": "ouvrir / fermer un compte",
+    "it": "aprire / chiudere un conto",
+    "pt": "abrir / fechar uma conta"
+   },
+   "nota": "not *make*"
+  },
+  {
+   "item": "to pay in instalments",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "pagar en cuotas",
+    "de": "in Raten zahlen",
+    "fr": "payer en plusieurs fois",
+    "it": "pagare a rate",
+    "pt": "pagar em prestações"
+   }
+  },
+  {
+   "item": "a savings account",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "una cuenta de ahorro",
+    "de": "ein Sparkonto",
+    "fr": "un compte d’épargne",
+    "it": "un conto di risparmio",
+    "pt": "uma conta-poupança"
+   }
+  },
+  {
+   "item": "to be short of money",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "andar corto de dinero",
+    "de": "knapp bei Kasse sein",
+    "fr": "être à court d’argent",
+    "it": "essere a corto di soldi",
+    "pt": "andar com pouco dinheiro"
+   }
+  },
+  {
+   "item": "a bank transfer",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una transferencia",
+    "de": "eine Überweisung",
+    "fr": "un virement bancaire",
+    "it": "un bonifico bancario",
+    "pt": "uma transferência bancária"
+   }
+  },
+  {
+   "item": "an interest rate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un tipo de interés",
+    "de": "ein Zinssatz",
+    "fr": "un taux d’intérêt",
+    "it": "un tasso d’interesse",
+    "pt": "uma taxa de juro"
+   }
+  },
+  {
+   "item": "to withdraw / to deposit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "retirar / ingresar",
+    "de": "abheben / einzahlen",
+    "fr": "retirer / déposer",
+    "it": "prelevare / versare",
+    "pt": "levantar / depositar"
+   },
+   "nota": "formal register, used on machines"
+  },
+  {
+   "item": "a monthly payment",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una cuota mensual",
+    "de": "eine monatliche Rate / Zahlung",
+    "fr": "une mensualité",
+    "it": "una rata mensile",
+    "pt": "uma prestação mensal"
+   }
+  },
+  {
+   "item": "to be in debt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar endeudado",
+    "de": "verschuldet sein",
+    "fr": "être endetté",
+    "it": "essere indebitato",
+    "pt": "estar endividado"
+   }
+  },
+  {
+   "item": "to afford something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "permitirse algo",
+    "de": "sich etwas leisten können",
+    "fr": "pouvoir se permettre quelque chose",
+    "it": "potersi permettere qualcosa",
+    "pt": "poder permitir-se algo"
+   },
+   "nota": "needs *can* or *could*"
+  },
+  {
+   "item": "a standing order",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una domiciliación",
+    "de": "ein Dauerauftrag",
+    "fr": "un virement permanent",
+    "it": "un ordine permanente",
+    "pt": "uma ordem permanente"
+   },
+   "nota": "recurring payment"
+  },
+  {
+   "item": "expenses",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "gastos",
+    "de": "Ausgaben",
+    "fr": "les dépenses",
+    "it": "le spese",
+    "pt": "as despesas"
+   },
+   "nota": "usually plural"
+  },
+  {
+   "item": "to borrow / to lend",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "pedir prestado / prestar",
+    "de": "sich etwas leihen / verleihen",
+    "fr": "emprunter / prêter",
+    "it": "prendere in prestito / prestare",
+    "pt": "pedir emprestado / emprestar"
+   },
+   "nota": "**the classic confusion**: you *borrow from*, you *lend to*"
+  },
+  {
+   "item": "a current account",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una cuenta corriente",
+    "de": "ein Girokonto",
+    "fr": "un compte courant",
+    "it": "un conto corrente",
+    "pt": "uma conta à ordem"
+   },
+   "nota": "British; US *checking account*"
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "I've just…",
+   "funcion": "very recent, result now",
+   "traducciones": {
+    "es": "acabo de…",
+    "de": "Ich habe gerade…",
+    "fr": "Je viens de…",
+    "it": "Ho appena…",
+    "pt": "Acabei de…"
+   }
+  },
+  {
+   "expresion": "I haven't … yet",
+   "funcion": "expected but not done",
+   "traducciones": {
+    "es": "todavía no he…",
+    "de": "Ich habe … noch nicht",
+    "fr": "Je n’ai pas encore…",
+    "it": "Non ho ancora…",
+    "pt": "Ainda não…"
+   }
+  },
+  {
+   "expresion": "Have you ever…?",
+   "funcion": "life experience",
+   "traducciones": {
+    "es": "¿alguna vez…?",
+    "de": "Hast du schon einmal…?",
+    "fr": "As-tu déjà… ?",
+    "it": "Hai mai…?",
+    "pt": "Já alguma vez…?"
+   }
+  },
+  {
+   "expresion": "I've been … since / for",
+   "funcion": "still going on",
+   "traducciones": {
+    "es": "llevo… desde / hace",
+    "de": "Ich … seit / seit …",
+    "fr": "Je … depuis…",
+    "it": "… da / da quanto tempo…",
+    "pt": "… há / desde…"
+   }
+  },
+  {
+   "expresion": "So far this year…",
+   "funcion": "open time period",
+   "traducciones": {
+    "es": "en lo que va del año…",
+    "de": "Bisher in diesem Jahr…",
+    "fr": "Depuis le début de l’année…",
+    "it": "Finora quest’anno…",
+    "pt": "Até agora este ano…"
+   }
+  },
+  {
+   "expresion": "When did you…?",
+   "funcion": "asks for finished time",
+   "traducciones": {
+    "es": "¿cuándo…?",
+    "de": "Wann hast du…?",
+    "fr": "Quand as-tu… ?",
+    "it": "Quando hai…?",
+    "pt": "Quando…?"
+   }
+  },
+  {
+   "expresion": "Last year I…",
+   "funcion": "closed time period",
+   "traducciones": {
+    "es": "el año pasado…",
+    "de": "Letztes Jahr habe ich…",
+    "fr": "L’année dernière, j’ai…",
+    "it": "L’anno scorso ho…",
+    "pt": "No ano passado, eu…"
+   }
+  },
+  {
+   "expresion": "That was when…",
+   "funcion": "anchors a past point",
+   "traducciones": {
+    "es": "ahí fue cuando…",
+    "de": "Da war es, als…",
+    "fr": "C’est à ce moment-là que…",
+    "it": "È stato allora che…",
+    "pt": "Foi nessa altura que…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Describe how your relationship with money has changed over the years, and one specific decision you made.",
+  "requisitos": [
+   "at least six present perfects and six past simples",
+   "each one correct for its reason; at least two *since* or *for*; one *when* question",
+   "All four core vocabulary items."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write five sentences about your week — some finished, some still open. Choose the tense out loud before writing."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Take three of your sentences and add a time expression that forces the other tense. Rewrite them."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: *What has changed about how you spend money?*"
+  }
+ ],
+ "autochequeo": [
+  "Does every past simple have a finished time, stated or understood?",
+  "Does every present perfect have an open time, a result, or no time at all?",
+  "Did I use the past simple after every *when*?",
+  "Any *since* or *for* with a past simple by mistake?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on the choice between present perfect and past simple. (1) Mark each one and say whether it is right, and why. (2) For each wrong one, say which rule it breaks. (3) Check the tense after *when*. (4) Check *since* and *for*. Do not correct anything else."
+}

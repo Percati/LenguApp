@@ -75,6 +75,11 @@ class LenguAppAppTest {
                 idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
                 nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
+                // Semana 37 de 2026 fijada a mano: el test verifica contenido
+                // concreto (EN-F01/DE-G01), asi que no puede depender de
+                // LocalDate.now() -- eso rompe cada vez que "hoy" avanza mas
+                // alla de esa semana especifica del piloto.
+                fechaInicial = LocalDate.of(2026, 9, 7),
                 onGuardarAjustes = {},
             )
         }
@@ -100,6 +105,7 @@ class LenguAppAppTest {
                 idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
                 nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
+                fechaInicial = LocalDate.of(2026, 9, 7), // semana 37: la ficha que se verifica es DE-G01 (Satzbau)
                 onGuardarAjustes = {},
             )
         }
@@ -181,6 +187,7 @@ class LenguAppAppTest {
                 idiomasConContenido = setOf(Idioma.DE),
                 nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
+                fechaInicial = LocalDate.of(2026, 9, 7), // semana 37: la ficha que se verifica es DE-G01 (Satzbau)
                 onGuardarAjustes = {},
             )
         }

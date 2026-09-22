@@ -1,0 +1,409 @@
+{
+ "id": "EN-F02-C1-2026-1",
+ "skillId": "EN-F02",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T03",
+ "titulo": "Diplomatically Disagreeing",
+ "subtitulo": "Attacking the assumption, not the person",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 60
+ },
+ "descripcion": "English separates the strength of a disagreement from its social temperature more sharply than Spanish does. You can reject an idea completely and still sound collaborative, and the mechanism is almost entirely formulaic — which means it is learnable in a week. The core move: attack the idea, never the person, and always leave the other position somewhere to stand.",
+ "cuadroReferencia": {
+  "titulo": "Disagreement by temperature",
+  "columnas": [
+   "#",
+   "Formula",
+   "What it targets",
+   "Use when"
+  ],
+  "filas": [
+   [
+    "1",
+    "Help me understand how that would work in practice.",
+    "the mechanism",
+    "you suspect it collapses and want them to find it"
+   ],
+   [
+    "2",
+    "I see it differently, and here's why.",
+    "the conclusion",
+    "default professional register"
+   ],
+   [
+    "3",
+    "I'd challenge the assumption underneath that.",
+    "the premise",
+    "the logic is fine, the starting point isn't"
+   ],
+   [
+    "4",
+    "I hear you, but I don't think that follows.",
+    "the inference",
+    "premise granted, conclusion refused"
+   ],
+   [
+    "5",
+    "I'm going to push back on that.",
+    "the whole claim",
+    "direct but still not hostile; very standard"
+   ],
+   [
+    "6",
+    "I think that's straightforwardly wrong.",
+    "the whole claim",
+    "reserve for when you mean it"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*I'd challenge the assumption underneath that rather than the conclusion — you're assuming the failure mode is technical.*",
+   "audio": true
+  },
+  {
+   "texto": "*Help me understand how that would work with a 200-millisecond budget.*",
+   "audio": true
+  },
+  {
+   "texto": "*I hear you, but I don't think the second half follows from the first.*",
+   "audio": true
+  },
+  {
+   "texto": "*I'm going to push back on that.*",
+   "audio": true
+  },
+  {
+   "texto": "*That's true of small systems, less so of anything safety-critical.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*I'm afraid I disagree* is textbook English and sounds slightly antique in speech. Fine in writing.",
+  "Attacking the *assumption* rather than the *conclusion* is the highest-value C1 move: it lets the other person retreat without losing face.",
+  "*With respect* is a warning sign in British English — it almost always precedes a demolition. Use knowingly or not at all."
+ ],
+ "contraste": {
+  "es": "Spanish softens disagreement with formulas like no sé si estoy del todo de acuerdo, which corresponds well to I'm not sure I entirely agree. A literal no estoy de acuerdo (I don't agree) sounds blunter in English professional contexts than it usually does in Spanish.",
+  "de": "Das sehe ich etwas anders corresponds exactly to I see it slightly differently, a very useful diplomatic formula. The literal I am of another opinion sounds stiff; I'm not sure I agree is the natural English choice.",
+  "it": "Non sono del tutto d'accordo corresponds well to I don't entirely agree, and la vedo un po' diversamente to I see it slightly differently. Diplomatic disagreement therefore transfers directly.",
+  "fr": "Je ne suis pas tout à fait d'accord corresponds well to I don't entirely agree, and je vois les choses un peu différemment to I see it slightly differently. Diplomatic disagreement therefore transfers directly.",
+  "pt": "Não concordo inteiramente corresponds well to I don't entirely agree, and vejo isso de outra forma to I see it differently. Diplomatic disagreement therefore transfers directly."
+ },
+ "errores": [
+  "*You are wrong* — grammatically fine, socially expensive, rare in professional English.",
+  "Softening until the disagreement disappears. If nobody noticed you disagreed, you didn't.",
+  "*No, but…* as an opener. Reverse it: *Yes, and here's the difficulty…*"
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*I am not agree* — a fossilised Spanish-speaker error worth naming once and killing."
+  ],
+  "de": [
+   "Carrying over German directness: *That's not correct* or *I disagree* with no cushioning, which is neutral in German meetings but sounds combative in English."
+  ],
+  "it": [
+   "*Guarda, …* as an opener rendered as *Look, …*, which sounds confrontational in English, instead of *I see it a bit differently*."
+  ],
+  "fr": [
+   "*Écoute, …* as an opener rendered as *Listen, …*, which sounds confrontational in English, instead of *I see it a bit differently*."
+  ],
+  "pt": [
+   "*Olha, …* as an opener rendered as *Look, …*, which sounds confrontational in English, instead of *I see it a bit differently*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "unintended consequences",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "consecuencias no buscadas",
+    "de": "unbeabsichtigte Folgen",
+    "fr": "des conséquences imprévues",
+    "it": "conseguenze indesiderate",
+    "pt": "consequências não intencionais"
+   },
+   "nota": "the phrase that carries most AI arguments"
+  },
+  {
+   "item": "an edge case",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "caso límite",
+    "de": "ein Grenzfall",
+    "fr": "un cas limite",
+    "it": "un caso limite",
+    "pt": "um caso-limite"
+   }
+  },
+  {
+   "item": "guardrails",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "límites de seguridad",
+    "de": "Leitplanken / Schutzmechanismen",
+    "fr": "des garde-fous",
+    "it": "barriere di sicurezza / limiti",
+    "pt": "salvaguardas / limites de segurança"
+   },
+   "nota": "very frequent in AI debate"
+  },
+  {
+   "item": "it doesn't scale",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "no escala",
+    "de": "es lässt sich nicht skalieren",
+    "fr": "cela ne passe pas à l’échelle",
+    "it": "non è scalabile",
+    "pt": "não é escalável"
+   },
+   "nota": "intransitive, no object"
+  },
+  {
+   "item": "to roll something out",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "desplegar",
+    "de": "etwas ausrollen / einführen",
+    "fr": "déployer quelque chose",
+    "it": "distribuire / introdurre qualcosa",
+    "pt": "implementar / lançar algo"
+   },
+   "nota": "deploy gradually"
+  },
+  {
+   "item": "a workaround",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "solución provisional",
+    "de": "eine Umgehungslösung",
+    "fr": "une solution de contournement",
+    "it": "una soluzione alternativa",
+    "pt": "uma solução de recurso"
+   },
+   "nota": "dodges the problem, doesn't solve it"
+  },
+  {
+   "item": "vendor lock-in",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dependencia de proveedor",
+    "de": "Anbieterbindung",
+    "fr": "la dépendance à un fournisseur",
+    "it": "il vincolo al fornitore",
+    "pt": "a dependência de fornecedor"
+   }
+  },
+  {
+   "item": "technical debt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "deuda técnica",
+    "de": "technische Schulden",
+    "fr": "la dette technique",
+    "it": "il debito tecnico",
+    "pt": "a dívida técnica"
+   },
+   "nota": "now used outside IT"
+  },
+  {
+   "item": "a black box",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "caja negra",
+    "de": "eine Blackbox",
+    "fr": "une boîte noire",
+    "it": "una scatola nera",
+    "pt": "uma caixa-preta"
+   }
+  },
+  {
+   "item": "to future-proof",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "preparar para el futuro",
+    "de": "zukunftssicher machen",
+    "fr": "pérenniser / préparer pour l’avenir",
+    "it": "rendere a prova di futuro",
+    "pt": "preparar para o futuro"
+   }
+  },
+  {
+   "item": "to deprecate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "marcar como obsoleto",
+    "de": "als veraltet kennzeichnen / ausmustern",
+    "fr": "déprécier / rendre obsolète",
+    "it": "deprecare / dichiarare obsoleto",
+    "pt": "descontinuar / marcar como obsoleto"
+   },
+   "nota": "mark obsolete, don't remove yet"
+  },
+  {
+   "item": "to opt out / opt in",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "excluirse / adherirse",
+    "de": "sich abmelden / anmelden",
+    "fr": "se désinscrire / s’inscrire",
+    "it": "rinunciare / aderire",
+    "pt": "excluir-se / aderir"
+   },
+   "nota": "central in privacy talk"
+  },
+  {
+   "item": "a single point of failure",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "punto único de fallo",
+    "de": "eine einzelne Fehlerquelle mit Gesamtausfallrisiko",
+    "fr": "un point de défaillance unique",
+    "it": "un singolo punto di guasto",
+    "pt": "um ponto único de falha"
+   }
+  },
+  {
+   "item": "to be over-engineered",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sobredimensionado",
+    "de": "überdimensioniert / überkonstruiert sein",
+    "fr": "être surconçu",
+    "it": "essere sovra-ingegnerizzato",
+    "pt": "ser excessivamente complexo"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "I see it differently",
+   "funcion": "opens disagreement neutrally",
+   "traducciones": {
+    "es": "yo lo veo distinto",
+    "de": "Ich sehe das anders.",
+    "fr": "Je le vois différemment.",
+    "it": "La vedo diversamente.",
+    "pt": "Eu vejo isso de outra forma."
+   }
+  },
+  {
+   "expresion": "I'd challenge the assumption",
+   "funcion": "targets the premise",
+   "traducciones": {
+    "es": "yo cuestionaría el supuesto",
+    "de": "Ich würde die Annahme infrage stellen.",
+    "fr": "Je remettrais l’hypothèse en question.",
+    "it": "Metterei in discussione l’assunto.",
+    "pt": "Eu questionaria esse pressuposto."
+   }
+  },
+  {
+   "expresion": "Help me understand how…",
+   "funcion": "disagreement disguised as a question",
+   "traducciones": {
+    "es": "ayudame a entender cómo…",
+    "de": "Hilf mir zu verstehen, wie…",
+    "fr": "Aide-moi à comprendre comment…",
+    "it": "Aiutami a capire come…",
+    "pt": "Ajuda-me a perceber como…"
+   }
+  },
+  {
+   "expresion": "I don't think that follows",
+   "funcion": "refuses the inference",
+   "traducciones": {
+    "es": "no creo que se siga",
+    "de": "Ich glaube nicht, dass das daraus folgt.",
+    "fr": "Je ne pense pas que cela en découle.",
+    "it": "Non credo che ne consegua.",
+    "pt": "Não acho que isso se siga daí."
+   }
+  },
+  {
+   "expresion": "I'm going to push back on that",
+   "funcion": "direct, not hostile",
+   "traducciones": {
+    "es": "te lo voy a discutir",
+    "de": "Da widerspreche ich.",
+    "fr": "Je vais contester ce point.",
+    "it": "Su questo devo dissentire.",
+    "pt": "Vou discordar disso."
+   }
+  },
+  {
+   "expresion": "Where we differ is…",
+   "funcion": "locates the disagreement",
+   "traducciones": {
+    "es": "donde diferimos es…",
+    "de": "Der Unterschied zwischen uns liegt bei…",
+    "fr": "Là où nous divergeons, c’est…",
+    "it": "Dove differiamo è…",
+    "pt": "Onde divergimos é…"
+   }
+  },
+  {
+   "expresion": "Yes, and the difficulty is…",
+   "funcion": "replaces *no, but*",
+   "traducciones": {
+    "es": "sí, y la dificultad es…",
+    "de": "Ja, und die Schwierigkeit ist…",
+    "fr": "Oui, et la difficulté, c’est…",
+    "it": "Sì, e la difficoltà è…",
+    "pt": "Sim, e a dificuldade é…"
+   }
+  },
+  {
+   "expresion": "That's true of X, less so of Y",
+   "funcion": "limits the claim's scope",
+   "traducciones": {
+    "es": "eso vale para X, menos para Y",
+    "de": "Das gilt für X, weniger für Y.",
+    "fr": "C’est vrai pour X, moins pour Y.",
+    "it": "Questo vale per X, meno per Y.",
+    "pt": "Isso é verdade para X, menos para Y."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Disagree with a confident claim about AI made by someone senior to you.",
+  "requisitos": [
+   "challenge one assumption explicitly",
+   "use four different formulas from the reference box",
+   "never open a sentence with *but* or *no*",
+   "all four core vocabulary items."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Take a claim you disagree with and write the assumption underneath it in one sentence."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Rewrite three blunt disagreements as questions."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds disagreeing with: *AI will make junior engineers unnecessary.*"
+  }
+ ],
+ "autochequeo": [
+  "Did I attack an assumption, or only the conclusion?",
+  "Would a reader know I disagreed, or did I soften it away?",
+  "Any sentence that would read as rude to a British or American colleague?",
+  "Did I open with *but* or *no*?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on how I disagree. (1) Mark each disagreement formula and rate its social temperature from 1 to 5. (2) Tell me whether I attacked the assumption or only the conclusion. (3) Flag anywhere I softened so much the disagreement vanished. (4) Flag anything that would read as rude. Do not rewrite the text."
+}

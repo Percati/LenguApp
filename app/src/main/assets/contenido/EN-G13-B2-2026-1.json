@@ -1,0 +1,420 @@
+{
+ "id": "EN-G13-B2-2026-1",
+ "skillId": "EN-G13",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T12",
+ "titulo": "Reported Speech",
+ "subtitulo": "Saying what someone else said",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Reporting what someone said means moving three things at once: the tense goes back, the pronouns change, and the time and place words change. Most learners handle the tense and forget the other two, which produces sentences that are grammatically fine and factually confusing.",
+ "cuadroReferencia": {
+  "titulo": "What moves",
+  "columnas": [
+   "What",
+   "Direct",
+   "Reported"
+  ],
+  "filas": [
+   [
+    "Present simple",
+    "\"I play\"",
+    "he played"
+   ],
+   [
+    "Present continuous",
+    "\"I'm playing\"",
+    "he was playing"
+   ],
+   [
+    "Past simple",
+    "\"I played\"",
+    "he had played"
+   ],
+   [
+    "Present perfect",
+    "\"I've played\"",
+    "he had played"
+   ],
+   [
+    "will",
+    "\"I'll play\"",
+    "he would play"
+   ],
+   [
+    "can",
+    "\"I can play\"",
+    "he could play"
+   ],
+   [
+    "**Pronouns**",
+    "\"**I** like **my** team\"",
+    "he liked **his** team"
+   ],
+   [
+    "**Time**",
+    "today / tomorrow / now",
+    "that day / the next day / then"
+   ],
+   [
+    "**Place**",
+    "here / this",
+    "there / that"
+   ]
+  ],
+  "notaPie": "Questions lose the inversion: \"Do you play?\" → **he asked whether I played**, not he asked did I play. Orders use the infinitive: \"Stop!\" → **he told me to stop**."
+ },
+ "ejemplos": [
+  {
+   "texto": "*She said she had been playing for years.*",
+   "audio": true
+  },
+  {
+   "texto": "*He asked whether I wanted to join them the next day.*",
+   "audio": true
+  },
+  {
+   "texto": "*They told us not to bring anything.*",
+   "audio": true
+  },
+  {
+   "texto": "*She told me it was worth trying.*",
+   "audio": true
+  },
+  {
+   "texto": "*He admitted that he had given it up.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Say takes no person: he said that…. Tell needs one: he told **me** that…. Mixing them is the most common error of all.",
+  "The tense does not move back if what was said is still true: *He said he lives in Bern* is fine if he still does.",
+  "*Whether* and *if* both work for yes/no questions. *Whether* is slightly more formal."
+ ],
+ "contraste": {
+  "es": "Spanish shifts tenses in reported speech too, so the mechanism is familiar. What is not familiar is the say / tell split: Spanish uses decir for both, and that single difference produces more errors here than the whole tense system.",
+  "de": "German sagen covers both say and tell (Er hat mir gesagt…), which leads to he said me. In addition, German marks reported speech with the Konjunktiv I and does not backshift, so German speakers often keep the original tense: She said she is tired.",
+  "it": "Italian dire covers both say and tell (mi ha detto che…), which leads to he said me. Backshift is familiar, because Italian also shifts tenses in reported speech (ha detto che era stanco).",
+  "fr": "French dire covers both say and tell (il m'a dit que…), which leads to he said me. Backshift is familiar from the French concordance des temps (il a dit qu'il était fatigué), so the tense changes transfer well.",
+  "pt": "Portuguese dizer covers both say and tell (disse-me que…), which leads to he said me; contar is used for telling a story, which covers only part of tell. Backshift is familiar, since Portuguese also shifts tenses in reported speech."
+ },
+ "errores": [
+  "*He told that…* or *He said me that…*",
+  "Keeping the question word order: *She asked where was the club.*",
+  "Forgetting the pronoun shift, so the sentence reports the wrong person.",
+  "Forgetting *not* in negative orders: *He told me to don't come.*"
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Copying the subjunctive after *decir que* (*me dijo que viniera*): *He said that I come* instead of *He told me to come*."
+  ],
+  "de": [
+   "Separating *whether* with a comma, as German does before *ob*: *She asked, whether I was coming*."
+  ],
+  "it": [
+   "*mi ha detto di venire* rendered as *He said me to come* instead of *He told me to come*."
+  ],
+  "fr": [
+   "*demander* rendered as *demand*: *He demanded me to come* instead of *He asked me to come*."
+  ],
+  "pt": [
+   "*disse para eu vir* rendered as *He said for me to come* instead of *He told me to come*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "to be into something",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar metido en algo",
+    "de": "sich für etwas begeistern / auf etwas stehen",
+    "fr": "être passionné par quelque chose",
+    "it": "essere appassionato di qualcosa",
+    "pt": "estar interessado em algo"
+   },
+   "nota": "to like a lot"
+  },
+  {
+   "item": "to take up a hobby",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "empezar una afición",
+    "de": "ein Hobby anfangen",
+    "fr": "se mettre à un loisir",
+    "it": "iniziare un hobby",
+    "pt": "começar um passatempo"
+   },
+   "nota": "start doing it"
+  },
+  {
+   "item": "to give something up",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "dejar algo",
+    "de": "etwas aufgeben",
+    "fr": "abandonner quelque chose",
+    "it": "rinunciare a qualcosa",
+    "pt": "deixar algo"
+   },
+   "nota": "stop doing it"
+  },
+  {
+   "item": "spare time",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "tiempo libre",
+    "de": "Freizeit",
+    "fr": "le temps libre",
+    "it": "il tempo libero",
+    "pt": "o tempo livre"
+   }
+  },
+  {
+   "item": "to join a club",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "apuntarse a un club",
+    "de": "einem Verein beitreten",
+    "fr": "rejoindre un club",
+    "it": "iscriversi a un club",
+    "pt": "entrar para um clube"
+   }
+  },
+  {
+   "item": "to be good at",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser bueno en",
+    "de": "gut in etwas sein",
+    "fr": "être doué pour",
+    "it": "essere bravo in",
+    "pt": "ser bom em"
+   },
+   "nota": "*at*, not *in*"
+  },
+  {
+   "item": "to be self-taught",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser autodidacta",
+    "de": "Autodidakt sein",
+    "fr": "être autodidacte",
+    "it": "essere autodidatta",
+    "pt": "ser autodidata"
+   }
+  },
+  {
+   "item": "to practise",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "practicar",
+    "de": "üben",
+    "fr": "s’entraîner / pratiquer",
+    "it": "esercitarsi",
+    "pt": "praticar"
+   },
+   "nota": "British spelling with *s* for the verb"
+  },
+  {
+   "item": "to get better at",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mejorar en",
+    "de": "besser in etwas werden",
+    "fr": "s’améliorer en",
+    "it": "migliorare in",
+    "pt": "melhorar em"
+   }
+  },
+  {
+   "item": "a pastime",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un pasatiempo",
+    "de": "ein Zeitvertreib",
+    "fr": "un passe-temps",
+    "it": "un passatempo",
+    "pt": "um passatempo"
+   },
+   "nota": "slightly more formal than *hobby*"
+  },
+  {
+   "item": "to hang out with",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "pasar el rato con",
+    "de": "mit … abhängen / Zeit verbringen",
+    "fr": "traîner avec",
+    "it": "passare il tempo con",
+    "pt": "passar tempo com"
+   },
+   "nota": "informal"
+  },
+  {
+   "item": "once in a while",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "de vez en cuando",
+    "de": "ab und zu",
+    "fr": "de temps en temps",
+    "it": "ogni tanto",
+    "pt": "de vez em quando"
+   }
+  },
+  {
+   "item": "to be worth trying",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "valer la pena probar",
+    "de": "einen Versuch wert sein",
+    "fr": "valoir la peine d’essayer",
+    "it": "valere la pena di provare",
+    "pt": "valer a pena experimentar"
+   },
+   "nota": "followed by *-ing*"
+  },
+  {
+   "item": "to be hooked on",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar enganchado a",
+    "de": "von etwas begeistert / süchtig sein",
+    "fr": "être accro à",
+    "it": "essere appassionato / dipendente da",
+    "pt": "estar viciado em"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "He said (that)…",
+   "funcion": "reports a statement, no person",
+   "traducciones": {
+    "es": "dijo que…",
+    "de": "Er sagte, (dass)…",
+    "fr": "Il a dit que…",
+    "it": "Ha detto che…",
+    "pt": "Ele disse que…"
+   }
+  },
+  {
+   "expresion": "She told me (that)…",
+   "funcion": "reports with a person",
+   "traducciones": {
+    "es": "me dijo que…",
+    "de": "Sie sagte mir, (dass)…",
+    "fr": "Elle m’a dit que…",
+    "it": "Mi ha detto che…",
+    "pt": "Ela disse-me que…"
+   }
+  },
+  {
+   "expresion": "He asked whether…",
+   "funcion": "reports a yes/no question",
+   "traducciones": {
+    "es": "preguntó si…",
+    "de": "Er fragte, ob…",
+    "fr": "Il a demandé si…",
+    "it": "Ha chiesto se…",
+    "pt": "Ele perguntou se…"
+   }
+  },
+  {
+   "expresion": "She asked where / when…",
+   "funcion": "reports a wh- question",
+   "traducciones": {
+    "es": "preguntó dónde / cuándo…",
+    "de": "Sie fragte, wo / wann…",
+    "fr": "Elle a demandé où / quand…",
+    "it": "Ha chiesto dove / quando…",
+    "pt": "Ela perguntou onde / quando…"
+   }
+  },
+  {
+   "expresion": "They told me to…",
+   "funcion": "reports an order",
+   "traducciones": {
+    "es": "me dijeron que…",
+    "de": "Sie sagten mir, ich solle…",
+    "fr": "Ils m’ont dit de…",
+    "it": "Mi hanno detto di…",
+    "pt": "Disseram-me para…"
+   }
+  },
+  {
+   "expresion": "He told me not to…",
+   "funcion": "negative order",
+   "traducciones": {
+    "es": "me dijo que no…",
+    "de": "Er sagte mir, ich solle nicht…",
+    "fr": "Il m’a dit de ne pas…",
+    "it": "Mi ha detto di non…",
+    "pt": "Ele disse-me para não…"
+   }
+  },
+  {
+   "expresion": "She explained that…",
+   "funcion": "reports with detail",
+   "traducciones": {
+    "es": "explicó que…",
+    "de": "Sie erklärte, dass…",
+    "fr": "Elle a expliqué que…",
+    "it": "Ha spiegato che…",
+    "pt": "Ela explicou que…"
+   }
+  },
+  {
+   "expresion": "He admitted that…",
+   "funcion": "reports a concession",
+   "traducciones": {
+    "es": "admitió que…",
+    "de": "Er gab zu, dass…",
+    "fr": "Il a admis que…",
+    "it": "Ha ammesso che…",
+    "pt": "Ele admitiu que…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Report a conversation you had about a hobby: what the other person said, what they asked you and what they suggested.",
+  "requisitos": [
+   "at least eight reported sentences",
+   "at least two reported questions",
+   "at least one reported order",
+   "correct use of *say* and *tell* throughout",
+   "All four core vocabulary items."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write five things people said to you today and report each one."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Turn five direct questions into reported ones. Check the word order each time."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds reporting a conversation from this week."
+  }
+ ],
+ "autochequeo": [
+  "Did I use *say* without a person and *tell* with one?",
+  "Did every reported question lose its inversion?",
+  "Did the pronouns move correctly?",
+  "Did the time and place words move?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on reported speech. (1) Check *say* and *tell* in every sentence. (2) Check the tense shift and say where it was correctly not applied. (3) Check the word order of every reported question. (4) Check pronouns, times and places. Do not correct anything else."
+}

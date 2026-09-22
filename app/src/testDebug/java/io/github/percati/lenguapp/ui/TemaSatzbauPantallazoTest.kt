@@ -32,7 +32,7 @@ import java.io.FileOutputStream
  * test no hace una asercion automatica de pixeles (el destaque es
  * FontWeight.Bold sobre el mismo color de texto, no un cambio de color, asi
  * que no hay un pixel-diff simple que lo capture): guarda un PNG de
- * DE-G01-B2-1 (Satzbau) en cada uno de los cuatro temas para revision visual
+ * DE-G01-B2-2026-1 (Satzbau) en cada uno de los cuatro temas para revision visual
  * en build/pantallazos-fase7-bloque1/, igual que el criterio de aceptacion
  * de la Fase 3 en ContenidoSemanalScreenRenderTest.
  */
@@ -68,7 +68,7 @@ class TemaSatzbauPantallazoTest(
 
     @Test
     fun `Satzbau con su cuadro de referencia se renderiza en el tema`() {
-        val contenido = parsearContenido(File(carpetaAssets(), "contenido/DE-G01-B2-1.json").readText())
+        val contenido = parsearContenido(File(carpetaAssets(), "contenido/DE-G01-B2-2026-1.json").readText())
 
         composeTestRule.setContent {
             TemaLenguApp(familiaTema = familiaTema, modoTema = modoTema) {

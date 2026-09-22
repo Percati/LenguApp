@@ -1,0 +1,419 @@
+{
+ "id": "EN-G20-B2-2026-1",
+ "skillId": "EN-G20",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T08",
+ "titulo": "Unreal Past: *I wish*, *if only*, *it's time*",
+ "subtitulo": "Past tense that isn't about the past",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "After *I wish*, *if only* and *it's time*, English uses a past tense to talk about the present. *I wish I knew* is about now, not about yesterday. It looks like a mistake and it is the rule. This is the structure of regret, frustration and wanting things to be different — which makes it one of the most emotionally useful things at B2.",
+ "cuadroReferencia": {
+  "titulo": "Which tense after which expression",
+  "columnas": [
+   "Expression",
+   "Tense",
+   "Means",
+   "Example"
+  ],
+  "filas": [
+   [
+    "*I wish* + past simple",
+    "past form",
+    "present regret",
+    "I wish I **had** more time."
+   ],
+   [
+    "*I wish* + past perfect",
+    "past perfect",
+    "past regret",
+    "I wish I **had called** her."
+   ],
+   [
+    "*I wish* + *would*",
+    "*would* + verb",
+    "annoyance at someone else",
+    "I wish he **would listen**."
+   ],
+   [
+    "*If only* + past / past perfect",
+    "same as *wish*",
+    "stronger version",
+    "If only I **had known**."
+   ],
+   [
+    "*It's time* + past simple",
+    "past form",
+    "it should already have happened",
+    "It's time we **talked**."
+   ],
+   [
+    "*I'd rather* + past simple",
+    "past form",
+    "preference about someone else",
+    "I'd rather you **didn't**."
+   ],
+   [
+    "*as if / as though* + past",
+    "past form",
+    "unreal comparison",
+    "He talks as if he **knew** everything."
+   ]
+  ],
+  "notaPie": "**Were, not was,** in careful English: I wish I **were** there. Was is very common in speech and accepted, but were is the safe choice in writing."
+ },
+ "ejemplos": [
+  {
+   "texto": "*I wish we lived closer to my parents.*",
+   "audio": true
+  },
+  {
+   "texto": "*If only I had said something at the time.*",
+   "audio": true
+  },
+  {
+   "texto": "*I wish he would stop apologising.*",
+   "audio": true
+  },
+  {
+   "texto": "*It's time we talked about it properly.*",
+   "audio": true
+  },
+  {
+   "texto": "*I'd rather you didn't mention it.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*I wish* + *would* cannot be about yourself. *I wish I would stop* is wrong; you control that, so it is *I wish I could stop*.",
+  "*It's time* with an infinitive is different and simpler: *It's time to go* is neutral. *It's time we went* carries a mild reproach.",
+  "*I'd rather* takes a bare infinitive for yourself (*I'd rather go*) and a past tense for someone else (*I'd rather you went*)."
+ ],
+ "contraste": {
+  "es": "Spanish uses the subjunctive here — ojalá tuviera más tiempo — and the subjunctive is a distinct verb form. English has no separate subjunctive left, so it borrows the past tense. The logic is the same: an unreal form for an unreal situation.",
+  "de": "German uses the Konjunktiv II (Ich wünschte, ich hätte mehr Zeit), and hätte maps neatly onto the English past had. The traps are I wish I would have… and it's time with the present tense, copied from German es wird Zeit, dass wir gehen (it's time we went).",
+  "it": "Italian uses the congiuntivo imperfetto (magari avessi più tempo), which maps well onto the English past (I wish I had more time). After è ora che, colloquial Italian often uses the present (è ora che andiamo), which leads to it's time we go instead of it's time we went.",
+  "fr": "French si seulement + imparfait (si seulement j'avais plus de temps) maps exactly onto if only I had. For wish, French uses j'aimerais or je voudrais, which leads to I would like to have more time instead of I wish I had; after il est temps que French uses the subjunctive present, which can produce it's time we go.",
+  "pt": "Portuguese expresses the wish with quem me dera (European) or tomara que (Brazilian) plus the subjunctive, which maps well onto I wish I had. After já é hora, Portuguese often uses a personal infinitive (já é hora de irmos), which corresponds well to it's time for us to go."
+ },
+ "errores": [
+  "*I wish I have more time* — the present tense breaks the structure.",
+  "*I wish he will listen* — after *wish*, *would*, never *will*.",
+  "*I wish I would stop smoking* — use *could* for yourself.",
+  "*It's time we talk* — needs the past form, *talked*."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*ojalá* + present subjunctive rendered with *wish*: *I wish you have a good trip* instead of *I hope you have a good trip*."
+  ],
+  "de": [
+   "*Ich wünsche mir, dass er kommt* rendered as *I wish he comes* instead of *I hope he comes* or *I wish he would come*."
+  ],
+  "it": [
+   "*spero che* confused with *wish*: *I wish you are well* instead of *I hope you are well*."
+  ],
+  "fr": [
+   "*je souhaite que tu viennes* rendered as *I wish you come* instead of *I hope you come* or *I'd like you to come*."
+  ],
+  "pt": [
+   "*tomara que* rendered with *wish*: *I wish you have fun* instead of *I hope you have fun*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "to get on with someone",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "llevarse bien con",
+    "de": "sich mit jemandem gut verstehen",
+    "fr": "bien s’entendre avec quelqu’un",
+    "it": "andare d’accordo con qualcuno",
+    "pt": "dar-se bem com alguém"
+   },
+   "nota": "British; US *get along with*"
+  },
+  {
+   "item": "to fall out with someone",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "pelearse con",
+    "de": "sich mit jemandem zerstreiten",
+    "fr": "se brouiller avec quelqu’un",
+    "it": "litigare con qualcuno",
+    "pt": "zangar-se com alguém"
+   },
+   "nota": "to quarrel"
+  },
+  {
+   "item": "to make up",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "reconciliarse",
+    "de": "sich versöhnen",
+    "fr": "se réconcilier",
+    "it": "fare pace",
+    "pt": "fazer as pazes"
+   },
+   "nota": "after an argument"
+  },
+  {
+   "item": "to keep in touch",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mantener el contacto",
+    "de": "in Kontakt bleiben",
+    "fr": "garder le contact",
+    "it": "restare in contatto",
+    "pt": "manter o contacto"
+   }
+  },
+  {
+   "item": "a falling-out",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un distanciamiento",
+    "de": "ein Zerwürfnis",
+    "fr": "une brouille",
+    "it": "un litigio / allontanamento",
+    "pt": "um desentendimento"
+   },
+   "nota": "a quarrel that lasts"
+  },
+  {
+   "item": "to take after someone",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "parecerse a alguien",
+    "de": "jemandem ähnlich sein / nach jemandem kommen",
+    "fr": "tenir de quelqu’un",
+    "it": "assomigliare a qualcuno",
+    "pt": "sair a alguém"
+   },
+   "nota": "resemble a family member"
+  },
+  {
+   "item": "to look up to someone",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "admirar a alguien",
+    "de": "zu jemandem aufschauen",
+    "fr": "admirer quelqu’un",
+    "it": "ammirare qualcuno",
+    "pt": "admirar alguém"
+   },
+   "nota": "admire"
+  },
+  {
+   "item": "a row",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una bronca",
+    "de": "ein Streit",
+    "fr": "une dispute",
+    "it": "un litigio",
+    "pt": "uma discussão"
+   },
+   "bajoNivelJustificado": true,
+   "nota": "British, a loud quarrel; rhymes with *cow*, not with *go*"
+  },
+  {
+   "item": "to grow apart",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "distanciarse",
+    "de": "sich mit den Jahren auseinanderleben",
+    "fr": "s’éloigner avec le temps",
+    "it": "allontanarsi col tempo",
+    "pt": "afastar-se com os anos"
+   }
+  },
+  {
+   "item": "a close friend",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un amigo íntimo",
+    "de": "ein enger Freund / eine enge Freundin",
+    "fr": "un ami proche / une amie proche",
+    "it": "un amico intimo",
+    "pt": "um amigo próximo"
+   }
+  },
+  {
+   "item": "to let someone down",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "defraudar a alguien",
+    "de": "jemanden enttäuschen",
+    "fr": "décevoir quelqu’un",
+    "it": "deludere qualcuno",
+    "pt": "desiludir alguém"
+   },
+   "nota": "disappoint"
+  },
+  {
+   "item": "to be there for someone",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar ahí para alguien",
+    "de": "für jemanden da sein",
+    "fr": "être là pour quelqu’un",
+    "it": "esserci per qualcuno",
+    "pt": "estar presente para alguém"
+   },
+   "nota": "hard to translate literally"
+  },
+  {
+   "item": "to bring up children",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "criar hijos",
+    "de": "Kinder großziehen",
+    "fr": "élever des enfants",
+    "it": "crescere dei figli",
+    "pt": "criar filhos"
+   },
+   "nota": "raise"
+  },
+  {
+   "item": "to get over something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "superar algo",
+    "de": "über etwas hinwegkommen",
+    "fr": "se remettre de quelque chose",
+    "it": "superare qualcosa",
+    "pt": "superar algo"
+   },
+   "nota": "recover from"
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "I wish I…",
+   "funcion": "present regret about yourself",
+   "traducciones": {
+    "es": "ojalá yo…",
+    "de": "Ich wünschte, ich…",
+    "fr": "Si seulement je…",
+    "it": "Magari io…",
+    "pt": "Quem me dera…"
+   }
+  },
+  {
+   "expresion": "I wish he would…",
+   "funcion": "annoyance at someone else",
+   "traducciones": {
+    "es": "ojalá él…",
+    "de": "Ich wünschte, er würde…",
+    "fr": "Si seulement il voulait…",
+    "it": "Magari lui…",
+    "pt": "Quem me dera que ele…"
+   }
+  },
+  {
+   "expresion": "If only I had…",
+   "funcion": "past regret, stronger",
+   "traducciones": {
+    "es": "si al menos hubiera…",
+    "de": "Wenn ich nur … hätte…",
+    "fr": "Si seulement j’avais…",
+    "it": "Se solo avessi…",
+    "pt": "Se ao menos eu tivesse…"
+   }
+  },
+  {
+   "expresion": "It's time we…",
+   "funcion": "mild reproach",
+   "traducciones": {
+    "es": "ya va siendo hora de que…",
+    "de": "Es ist Zeit, dass wir…",
+    "fr": "Il est temps que nous…",
+    "it": "È ora che noi…",
+    "pt": "Está na hora de nós…"
+   }
+  },
+  {
+   "expresion": "I'd rather you didn't.",
+   "funcion": "preference about someone else",
+   "traducciones": {
+    "es": "preferiría que no",
+    "de": "Mir wäre lieber, du würdest nicht.",
+    "fr": "Je préférerais que tu ne le fasses pas.",
+    "it": "Preferirei che tu non lo facessi.",
+    "pt": "Preferia que não fizesses isso."
+   }
+  },
+  {
+   "expresion": "He acts as if he knew.",
+   "funcion": "unreal comparison",
+   "traducciones": {
+    "es": "actúa como si supiera",
+    "de": "Er tut so, als wüsste er es.",
+    "fr": "Il agit comme s’il savait.",
+    "it": "Si comporta come se sapesse.",
+    "pt": "Ele age como se soubesse."
+   }
+  },
+  {
+   "expresion": "I could have…",
+   "funcion": "missed possibility",
+   "traducciones": {
+    "es": "podría haber…",
+    "de": "Ich hätte … können.",
+    "fr": "J’aurais pu…",
+    "it": "Avrei potuto…",
+    "pt": "Eu poderia ter…"
+   }
+  },
+  {
+   "expresion": "Looking back,…",
+   "funcion": "frames the regret",
+   "traducciones": {
+    "es": "mirando hacia atrás…",
+    "de": "Rückblickend, …",
+    "fr": "Avec le recul, …",
+    "it": "Ripensandoci, …",
+    "pt": "Olhando para trás, …"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write about a relationship you wish were different: with a relative, a friend, someone you lost touch with.",
+  "requisitos": [
+   "at least three *I wish* with the past simple; two with the past perfect; one *I wish … would* about someone else; one *if only*; one *it's time*",
+   "All four core vocabulary items."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write five things you'd like to be different right now. Start each with *I wish*."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Turn three of them into past regrets with the past perfect."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: *What do you wish you had done differently?*"
+  }
+ ],
+ "autochequeo": [
+  "Is the verb after every *I wish* in a past form?",
+  "Did I use *would* about myself by mistake?",
+  "Does *it's time* take a past tense?",
+  "Did I use *were* rather than *was* in writing?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on the unreal past: *wish*, *if only*, *it's time*, *I'd rather*, *as if*. (1) Check the tense after each one. (2) Flag any *would* used about the speaker. (3) Flag *was* where careful English wants *were*. (4) Say where a past perfect would have been more accurate than a past simple. Do not correct anything else."
+}

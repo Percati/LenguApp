@@ -1,0 +1,407 @@
+{
+ "id": "EN-G25-B2-2026-1",
+ "skillId": "EN-G25",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T11",
+ "titulo": "Past Perfect and Narrative Time",
+ "subtitulo": "Saying which past thing happened first",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "The past perfect has one job: to show that one past event happened before another past event. *When I arrived, he left* and *When I arrived, he had left* describe two different situations. Without it, a story told out of order becomes impossible to follow. It is a B1 structure that stays difficult through B2 because it is easy to avoid.",
+ "cuadroReferencia": {
+  "titulo": "Past perfect at a glance",
+  "columnas": [
+   "Point",
+   "Form",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Form",
+    "*had* + past participle, all persons",
+    "*had gone*, *had been*, *had seen*"
+   ],
+   [
+    "Core use",
+    "earlier of two past events",
+    "The police arrived after the crowd **had left**."
+   ],
+   [
+    "With *when*",
+    "order matters",
+    "When I got there, it **had** already **started**."
+   ],
+   [
+    "With *by the time*",
+    "almost always past perfect",
+    "By the time we knew, it **had spread**."
+   ],
+   [
+    "Reported speech",
+    "past simple becomes past perfect",
+    "\"I saw it\" → He said he **had seen** it."
+   ],
+   [
+    "Third conditional",
+    "in the *if* clause",
+    "If they **had checked**, this wouldn't have happened."
+   ],
+   [
+    "**Not needed** when",
+    "*before* or *after* already show the order",
+    "He left before I arrived."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*By the time the story was published, the company had already denied it.*",
+   "audio": true
+  },
+  {
+   "texto": "*Nobody knew the reporter had been there.*",
+   "audio": true
+  },
+  {
+   "texto": "*She said she hadn't seen the email.*",
+   "audio": true
+  },
+  {
+   "texto": "*It wasn't until the next day that we found out.*",
+   "audio": true
+  },
+  {
+   "texto": "*When I got there, it had already started.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Before* and *after* already make the order clear, so the past perfect is optional there. With *when*, it changes the meaning, so it is not optional.",
+  "Contractions are normal and worth practising out loud: *I'd*, *he'd*, *they'd* — and *'d* is also *would*, so context decides.",
+  "English uses the past perfect more than Spanish uses the pluperfect. When in doubt about order, use it."
+ ],
+ "contraste": {
+  "es": "Spanish has the same structure (había llegado) but uses it less and often relies on context instead. Since the mechanism already exists in Spanish, this is a habit problem, not a comprehension problem.",
+  "de": "German has the Plusquamperfekt (war angekommen, hatte gegessen), but spoken German often replaces it with the Perfekt or Präteritum. German speakers therefore understand the English past perfect easily but under-use it in speech and in narrative.",
+  "it": "Italian uses the trapassato prossimo (ero già partito quando è arrivata) quite systematically, so the English past perfect transfers well. The main difference is that Italian also uses it in some contexts where English prefers the simple past, especially in informal narrative.",
+  "fr": "French uses the plus-que-parfait (j'étais déjà parti quand elle est arrivée) systematically, so the English past perfect transfers well. French speakers understand the sequence of events easily and mainly need to practise the English forms in fluent speech.",
+  "pt": "Portuguese uses the compound pluperfect (tinha chegado) naturally in speech, and tinha + participle maps directly onto had + participle. The past perfect therefore transfers very well; the simple pluperfect (chegara) is literary and has no bearing on English."
+ },
+ "errores": [
+  "Using it for a simple sequence with no reason: *I had got up and I had had breakfast.* One past simple after another is enough.",
+  "*When I arrived he left* when you meant he was already gone.",
+  "Wrong participle: *had went*, *had ate*.",
+  "Forgetting it in reported speech."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*¡Ya te lo había dicho!* rendered as *I had told you!* instead of *I told you!*"
+  ],
+  "de": [
+   "Using the present perfect for the earlier past, as with the Perfekt: *When I arrived, he has already left* instead of *he had already left*."
+  ],
+  "it": [
+   "*Te l'avevo detto!* rendered as *I had told you!* instead of *I told you!*"
+  ],
+  "fr": [
+   "*Je te l'avais dit !* rendered as *I had told you!* instead of *I told you!*"
+  ],
+  "pt": [
+   "*Eu tinha-te dito!* rendered as *I had told you!* instead of *I told you!*"
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a headline",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "un titular",
+    "de": "eine Schlagzeile",
+    "fr": "un titre",
+    "it": "un titolo",
+    "pt": "uma manchete"
+   }
+  },
+  {
+   "item": "to report on something",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "informar sobre algo",
+    "de": "über etwas berichten",
+    "fr": "faire un reportage sur / parler de",
+    "it": "riferire su qualcosa",
+    "pt": "noticiar / informar sobre algo"
+   }
+  },
+  {
+   "item": "a source",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "una fuente",
+    "de": "eine Quelle",
+    "fr": "une source",
+    "it": "una fonte",
+    "pt": "uma fonte"
+   }
+  },
+  {
+   "item": "to deny something",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "desmentir algo",
+    "de": "etwas dementieren",
+    "fr": "démentir quelque chose",
+    "it": "smentire qualcosa",
+    "pt": "desmentir algo"
+   }
+  },
+  {
+   "item": "the media",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "los medios",
+    "de": "die Medien",
+    "fr": "les médias",
+    "it": "i media",
+    "pt": "os meios de comunicação"
+   },
+   "nota": "plural in form, often singular in use"
+  },
+  {
+   "item": "coverage",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "cobertura",
+    "de": "Berichterstattung",
+    "fr": "la couverture médiatique",
+    "it": "la copertura mediatica",
+    "pt": "a cobertura mediática"
+   },
+   "nota": "uncountable"
+  },
+  {
+   "item": "an eyewitness",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un testigo presencial",
+    "de": "ein Augenzeuge / eine Augenzeugin",
+    "fr": "un témoin oculaire",
+    "it": "un testimone oculare",
+    "pt": "uma testemunha ocular"
+   }
+  },
+  {
+   "item": "breaking news",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "noticia de última hora",
+    "de": "Eilmeldung",
+    "fr": "une information de dernière minute",
+    "it": "una notizia dell’ultima ora",
+    "pt": "uma notícia de última hora"
+   },
+   "nota": "no article"
+  },
+  {
+   "item": "to be accused of",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser acusado de",
+    "de": "beschuldigt werden, …",
+    "fr": "être accusé de",
+    "it": "essere accusato di",
+    "pt": "ser acusado de"
+   },
+   "nota": "*of*, not *for*"
+  },
+  {
+   "item": "biased",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sesgado",
+    "de": "voreingenommen / einseitig",
+    "fr": "partial / biaisé",
+    "it": "fazioso / parziale",
+    "pt": "tendencioso"
+   }
+  },
+  {
+   "item": "an issue",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un tema, un asunto",
+    "de": "ein Thema / Problem",
+    "fr": "une question / un sujet",
+    "it": "una questione / un tema",
+    "pt": "uma questão / um assunto"
+   },
+   "bajoNivelJustificado": true,
+   "nota": "**false friend**: a topic, not an exit"
+  },
+  {
+   "item": "to go viral",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "hacerse viral",
+    "de": "viral gehen",
+    "fr": "devenir viral",
+    "it": "diventare virale",
+    "pt": "tornar-se viral"
+   }
+  },
+  {
+   "item": "a press release",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un comunicado de prensa",
+    "de": "eine Pressemitteilung",
+    "fr": "un communiqué de presse",
+    "it": "un comunicato stampa",
+    "pt": "um comunicado de imprensa"
+   }
+  },
+  {
+   "item": "to find out",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "enterarse de",
+    "de": "herausfinden / erfahren",
+    "fr": "découvrir / apprendre",
+    "it": "scoprire / venire a sapere",
+    "pt": "descobrir / ficar a saber"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "By the time…, it had…",
+   "funcion": "strong past-perfect trigger",
+   "traducciones": {
+    "es": "para cuando…, ya había…",
+    "de": "Als …, hatte … bereits…",
+    "fr": "Au moment où…, … avait déjà…",
+    "it": "Quando…, … aveva già…",
+    "pt": "Quando…, … já tinha…"
+   }
+  },
+  {
+   "expresion": "It turned out that…",
+   "funcion": "reveals later knowledge",
+   "traducciones": {
+    "es": "resultó que…",
+    "de": "Es stellte sich heraus, dass…",
+    "fr": "Il s’est avéré que…",
+    "it": "Si è scoperto che…",
+    "pt": "Verificou-se que…"
+   }
+  },
+  {
+   "expresion": "Nobody knew that…",
+   "funcion": "ignorance at the time",
+   "traducciones": {
+    "es": "nadie sabía que…",
+    "de": "Niemand wusste, dass…",
+    "fr": "Personne ne savait que…",
+    "it": "Nessuno sapeva che…",
+    "pt": "Ninguém sabia que…"
+   }
+  },
+  {
+   "expresion": "…had already…",
+   "funcion": "emphasises earlier completion",
+   "traducciones": {
+    "es": "ya había…",
+    "de": "…hatte bereits…",
+    "fr": "… avait déjà…",
+    "it": "… aveva già…",
+    "pt": "… já tinha…"
+   }
+  },
+  {
+   "expresion": "It wasn't until … that…",
+   "funcion": "delays the key fact",
+   "traducciones": {
+    "es": "no fue hasta… que…",
+    "de": "Erst … …",
+    "fr": "Ce n’est qu’à … que…",
+    "it": "Non fu che … che…",
+    "pt": "Só … é que…"
+   }
+  },
+  {
+   "expresion": "At first… but later…",
+   "funcion": "two moments",
+   "traducciones": {
+    "es": "al principio… pero después…",
+    "de": "Zuerst… aber später…",
+    "fr": "Au début… mais plus tard…",
+    "it": "All’inizio… ma poi…",
+    "pt": "No início… mas depois…"
+   }
+  },
+  {
+   "expresion": "She said she had…",
+   "funcion": "reported speech",
+   "traducciones": {
+    "es": "dijo que había…",
+    "de": "Sie sagte, sie habe…",
+    "fr": "Elle a dit qu’elle avait…",
+    "it": "Ha detto che aveva…",
+    "pt": "Ela disse que tinha…"
+   }
+  },
+  {
+   "expresion": "…, which hadn't been reported",
+   "funcion": "adds unknown background",
+   "traducciones": {
+    "es": "que no se había informado",
+    "de": "…, worüber nicht berichtet worden war",
+    "fr": "…, ce qui n’avait pas été rapporté",
+    "it": "…, che non era stato riportato",
+    "pt": "…, o que não tinha sido noticiado"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Tell a news story you followed, but **not in order**: start at the end or the middle, and use the past perfect to fill in what happened earlier.",
+  "requisitos": [
+   "at least six past perfects",
+   "at least two with *by the time* or *already*",
+   "at least one in reported speech",
+   "at least two places where you deliberately used a plain past simple instead",
+   "All four core vocabulary items."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write three pairs of past events. Join each pair twice: once with *before*, once with *when* plus the past perfect. Compare the meaning."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Take five *I said…* sentences and turn them into reported speech."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds telling a story that starts at the end."
+  }
+ ],
+ "autochequeo": [
+  "Does every past perfect mark something that really happened earlier?",
+  "Did I use it where a plain past simple would do?",
+  "Are the participles right?",
+  "Did I use it in the reported speech?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on the past perfect and the order of past events. (1) Mark each past perfect and say whether it is needed. (2) Mark every place where the order is unclear and a past perfect would have fixed it. (3) Check the participles. Do not correct anything else."
+}

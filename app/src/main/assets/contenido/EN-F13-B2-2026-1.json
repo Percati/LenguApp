@@ -1,0 +1,405 @@
+{
+ "id": "EN-F13-B2-2026-1",
+ "skillId": "EN-F13",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "fluency",
+ "topicId": "T10",
+ "titulo": "Hedging and Softening",
+ "subtitulo": "Saying it carefully without losing the point",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 50
+ },
+ "descripcion": "English speakers soften opinions far more than Spanish speakers do. *That's wrong* is grammatically perfect and lands as rude; *I'm not sure that's right* says the same thing and keeps the conversation going. This is not politeness for its own sake: a softened claim is easier to defend, because you have not committed to more than you can support.",
+ "cuadroReferencia": {
+  "titulo": "Softeners by type",
+  "columnas": [
+   "Type",
+   "Words",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Modal",
+    "*might*, *may*, *could*, *would*",
+    "That **might** be true."
+   ],
+   [
+    "Frequency",
+    "*tend to*, *usually*, *generally*",
+    "They **tend to** overcook it."
+   ],
+   [
+    "Opinion frame",
+    "*I think*, *I'd say*, *it seems to me*",
+    "I'd say it's too salty."
+   ],
+   [
+    "Quantity",
+    "*a bit*, *slightly*, *a little*",
+    "It's **a bit** dry."
+   ],
+   [
+    "Negative softener",
+    "*not really*, *not exactly*",
+    "It's **not really** my thing."
+   ],
+   [
+    "Question form",
+    "*don't you think?*, *would you say…?*",
+    "A bit heavy, don't you think?"
+   ]
+  ],
+  "notaPie": "One or two per opinion. Three or more and it stops sounding careful and starts sounding evasive."
+ },
+ "ejemplos": [
+  {
+   "texto": "*It's a bit rich for me, but that might just be my taste.*",
+   "audio": true
+  },
+  {
+   "texto": "*I'd say it needs a little more salt.*",
+   "audio": true
+  },
+  {
+   "texto": "*It's not really what I expected, to be honest.*",
+   "audio": true
+  },
+  {
+   "texto": "*A bit heavy, don't you think?*",
+   "audio": true
+  },
+  {
+   "texto": "*I'm not sure that's right.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*A bit* before a negative adjective is the single most useful softener in spoken English: *a bit dry*, *a bit late*, *a bit expensive*.",
+  "*To be honest* and *to be fair* soften rather than emphasise, which surprises learners.",
+  "Never soften a fact. *The restaurant might close at eleven* when you know it does sounds evasive rather than careful."
+ ],
+ "contraste": {
+  "es": "A plain Spanish opinion (eso es un error) translated literally (that's a mistake) often sounds harsher in English than intended. Adding a softener (I think that might be a mistake) brings it to the intended level.",
+  "de": "German softens with particles (das ist wohl nicht ganz richtig), which disappear in translation and leave that's wrong. English needs a lexical softener: I'm not sure that's quite right.",
+  "it": "A plain Italian statement (è sbagliato) becomes that's wrong, which sounds harsh in English. A softener (I'm not sure that's quite right) brings it to the intended level.",
+  "fr": "C'est faux becomes that's false or that's wrong, which sounds harsh in English. A softener (I'm not sure that's quite right) brings it to the intended level.",
+  "pt": "Isso está errado becomes that's wrong, which sounds harsh in English. A softener (I'm not sure that's quite right) brings it to the intended level."
+ },
+ "errores": [
+  "Saying nothing at all instead of disagreeing, which is the opposite over-correction.",
+  "Stacking: *I think maybe it could possibly be a bit…*",
+  "Softening a fact or a number.",
+  "*I'm not agree* — the fossilised error worth naming once."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Igual no viene* rendered as *Equal he doesn't come* instead of *He might not come*."
+  ],
+  "de": [
+   "*eigentlich* rendered as *actually* in every sentence, which sounds like a constant correction."
+  ],
+  "it": [
+   "*Diciamo* carried over as *Let's say* in every sentence until it becomes a tic."
+  ],
+  "fr": [
+   "*Disons que* carried over as *Let's say that* in every sentence until it becomes a tic."
+  ],
+  "pt": [
+   "*Mais ou menos* carried over as *More or less* for every hedge."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a recipe",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "una receta",
+    "de": "ein Rezept",
+    "fr": "une recette",
+    "it": "una ricetta",
+    "pt": "uma receita"
+   },
+   "nota": "**false friend**: not a prescription"
+  },
+  {
+   "item": "to be done / overdone",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar hecho / pasado",
+    "de": "gar / zu gar sein",
+    "fr": "être cuit / trop cuit",
+    "it": "essere cotto / troppo cotto",
+    "pt": "estar cozinhado / demasiado cozinhado"
+   },
+   "nota": "of cooking"
+  },
+  {
+   "item": "a starter / a main course",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "entrante / plato principal",
+    "de": "eine Vorspeise / ein Hauptgericht",
+    "fr": "une entrée / un plat principal",
+    "it": "un antipasto / un piatto principale",
+    "pt": "uma entrada / um prato principal"
+   },
+   "nota": "British menu order"
+  },
+  {
+   "item": "to taste like",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "saber a",
+    "de": "nach … schmecken",
+    "fr": "avoir le goût de",
+    "it": "sapere di",
+    "pt": "saber a"
+   },
+   "nota": "*like*, not *as*"
+  },
+  {
+   "item": "seasoning",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "condimento",
+    "de": "die Würzung / Gewürze",
+    "fr": "l’assaisonnement",
+    "it": "il condimento",
+    "pt": "o tempero"
+   },
+   "nota": "uncountable"
+  },
+  {
+   "item": "a side dish",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una guarnición",
+    "de": "eine Beilage",
+    "fr": "un accompagnement",
+    "it": "un contorno",
+    "pt": "um acompanhamento"
+   }
+  },
+  {
+   "item": "to be filling",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "que llena",
+    "de": "sättigend sein",
+    "fr": "être rassasiant",
+    "it": "essere saziante",
+    "pt": "ser saciante"
+   },
+   "nota": "makes you full"
+  },
+  {
+   "item": "bland",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "soso",
+    "de": "fade / geschmacklos",
+    "fr": "fade",
+    "it": "insipido",
+    "pt": "insosso"
+   },
+   "nota": "very common, rarely taught"
+  },
+  {
+   "item": "to chop / to slice",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "picar / cortar en rodajas",
+    "de": "hacken / in Scheiben schneiden",
+    "fr": "hacher / couper en tranches",
+    "it": "tritare / affettare",
+    "pt": "picar / cortar em rodelas"
+   }
+  },
+  {
+   "item": "leftovers",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sobras",
+    "de": "Reste / Essensreste",
+    "fr": "les restes",
+    "it": "gli avanzi",
+    "pt": "as sobras"
+   },
+   "nota": "always plural"
+  },
+  {
+   "item": "home-made",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "casero",
+    "de": "hausgemacht",
+    "fr": "fait maison",
+    "it": "fatto in casa",
+    "pt": "caseiro"
+   }
+  },
+  {
+   "item": "well-seasoned",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "bien condimentado",
+    "de": "gut gewürzt",
+    "fr": "bien assaisonné",
+    "it": "ben condito",
+    "pt": "bem temperado"
+   }
+  },
+  {
+   "item": "a serving",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una ración",
+    "de": "eine Portion",
+    "fr": "une portion",
+    "it": "una porzione",
+    "pt": "uma porção"
+   },
+   "nota": "one portion"
+  },
+  {
+   "item": "to be off",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar en mal estado",
+    "de": "verdorben sein",
+    "fr": "être avarié / ne plus être bon",
+    "it": "essere andato a male",
+    "pt": "estar estragado"
+   },
+   "nota": "spoiled, of food"
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "It's a bit…",
+   "funcion": "softens a criticism",
+   "traducciones": {
+    "es": "está un poco…",
+    "de": "Es ist ein bisschen…",
+    "fr": "C’est un peu…",
+    "it": "È un po’…",
+    "pt": "É um pouco…"
+   }
+  },
+  {
+   "expresion": "I'd say…",
+   "funcion": "frames an opinion",
+   "traducciones": {
+    "es": "yo diría…",
+    "de": "Ich würde sagen…",
+    "fr": "Je dirais…",
+    "it": "Direi…",
+    "pt": "Eu diria…"
+   }
+  },
+  {
+   "expresion": "It might just be my taste.",
+   "funcion": "limits the claim",
+   "traducciones": {
+    "es": "igual es cosa mía",
+    "de": "Vielleicht liegt es nur an meinem Geschmack.",
+    "fr": "C’est peut-être juste une question de goût.",
+    "it": "Forse è solo una questione di gusti.",
+    "pt": "Talvez seja apenas uma questão de gosto."
+   }
+  },
+  {
+   "expresion": "Not really.",
+   "funcion": "soft disagreement",
+   "traducciones": {
+    "es": "no mucho",
+    "de": "Nicht wirklich.",
+    "fr": "Pas vraiment.",
+    "it": "Non proprio.",
+    "pt": "Não muito / não propriamente."
+   }
+  },
+  {
+   "expresion": "…, don't you think?",
+   "funcion": "invites agreement",
+   "traducciones": {
+    "es": "¿no te parece?",
+    "de": "…, findest du nicht?",
+    "fr": "…, tu ne trouves pas ?",
+    "it": "…, non trovi?",
+    "pt": "…, não achas?"
+   }
+  },
+  {
+   "expresion": "To be honest,…",
+   "funcion": "softens, not emphasises",
+   "traducciones": {
+    "es": "la verdad…",
+    "de": "Ehrlich gesagt, …",
+    "fr": "Pour être honnête, …",
+    "it": "A dire il vero, …",
+    "pt": "Para ser sincero, …"
+   }
+  },
+  {
+   "expresion": "They tend to…",
+   "funcion": "generalises carefully",
+   "traducciones": {
+    "es": "suelen…",
+    "de": "Sie neigen dazu, …",
+    "fr": "Ils ont tendance à…",
+    "it": "Tendono a…",
+    "pt": "Tendem a…"
+   }
+  },
+  {
+   "expresion": "I'm not sure that's right.",
+   "funcion": "disagrees politely",
+   "traducciones": {
+    "es": "no estoy seguro de que sea así",
+    "de": "Ich bin mir nicht sicher, ob das stimmt.",
+    "fr": "Je ne suis pas sûr que ce soit juste.",
+    "it": "Non sono sicuro che sia corretto.",
+    "pt": "Não tenho a certeza de que isso esteja certo."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Review a meal, a restaurant or a dish someone cooked for you — and find something to criticise without being rude.",
+  "requisitos": [
+   "at least six softeners from at least four types; no opinion with three or more stacked; and at least one flat factual statement",
+   "to show you know the difference",
+   "All four core vocabulary items."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write five blunt opinions. Soften each one."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Take one criticism and write it three ways: soft, normal, firm. Which would you actually say?"
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds describing a meal you didn't enjoy, without being rude once."
+  }
+ ],
+ "autochequeo": [
+  "Six softeners from four types?",
+  "Any opinion with three or more stacked?",
+  "Did I soften a fact by mistake?",
+  "Would a British listener find any sentence blunt?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on hedging and softening. (1) Mark each softener and say whether it fits. (2) Mark every flat opinion that an English speaker would have softened. (3) Flag any stacking. (4) Flag any fact I softened by mistake. Do not correct anything else."
+}

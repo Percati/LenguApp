@@ -1,0 +1,410 @@
+{
+ "id": "DE-G07-B2-2026-1",
+ "skillId": "DE-G07",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T10",
+ "titulo": "Adjektivdeklination",
+ "subtitulo": "Die drei Deklinationstypen automatisieren",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 60
+ },
+ "descripcion": "Die Adjektivendung ist der Fehler, der bis C1 überlebt, weil er das Verständnis nie stört: Niemand versteht *ein gutes Wein* schlechter als *ein guter Wein*. Genau deshalb korrigiert ihn auch niemand, und genau deshalb bleibt er. Das System hat **eine** Leitfrage: Zeigt der Artikel schon Kasus und Genus an?",
+ "cuadroReferencia": {
+  "titulo": "Die drei Deklinationstypen",
+  "columnas": [
+   "Artikeltyp",
+   "Endung",
+   "Nom. Sg. m / f / n",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "**Schwach** (*der, die, das, dieser, jener, jeder, alle, beide*)",
+    "-e / -en",
+    "der frisch**e**, die frisch**e**, das frisch**e**",
+    "mit dem gut**en** Öl"
+   ],
+   [
+    "**Gemischt** (*ein, kein, mein, dein…*)",
+    "Mischform",
+    "ein frisch**er**, eine frisch**e**, ein frisch**es**",
+    "ein frisch**er** Fisch"
+   ],
+   [
+    "**Stark** (kein Artikel)",
+    "Artikelendung",
+    "frisch**er**, frisch**e**, frisch**es**",
+    "mit gut**em** Öl"
+   ]
+  ],
+  "notaPie": "Faustregeln: nach *einige, mehrere, viele, wenige* (Pl.) → **stark**. Nach *alle, beide, sämtliche* → **schwach**. Im **Dativ Plural** endet fast alles auf *-en*. Zwei aufeinanderfolgende Adjektive bekommen **dieselbe** Endung."
+ },
+ "ejemplos": [
+  {
+   "texto": "Der **frische** Fisch — ein **frischer** Fisch — **frischer** Fisch"
+  },
+  {
+   "texto": "Ich mag **deftiges** Essen. (Akk. n., artikellos)"
+  },
+  {
+   "texto": "Wir haben **regionale und saisonale** Zutaten verwendet. (Akk. Pl.)"
+  },
+  {
+   "texto": "ein Glas **kaltes** Wasser (nicht kaltem)"
+  },
+  {
+   "texto": "*Der frische Fisch kommt direkt vom Markt.*",
+   "audio": true
+  },
+  {
+   "texto": "*Mit gutem Öl schmeckt es deutlich besser.*",
+   "audio": true
+  },
+  {
+   "texto": "*Ich mag deftiges Essen, besonders im Winter.*",
+   "audio": true
+  },
+  {
+   "texto": "*Wir haben nur regionale und saisonale Zutaten verwendet.*",
+   "audio": true
+  },
+  {
+   "texto": "*Ein Glas kaltes Wasser dazu, und fertig.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Bei Unsicherheit im Dativ Plural: *-en* ist fast immer richtig.",
+  "Wenn das Genus falsch ist, ist die Endung automatisch falsch — der Fehler liegt dann nicht bei der Deklination, sondern beim Nomen.",
+  "*alle* verlangt schwach, obwohl es wie ein Mengenwort aussieht. Das ist die häufigste Ausnahme."
+ ],
+ "contraste": {
+  "es": "Spanisch dekliniert Adjektive nur nach Genus und Numerus, nie nach Kasus und nie in Abhängigkeit vom Artikel. Es gibt also keine Struktur zum Übertragen: reines Neuland. Daher die lange Fossilierung.",
+  "en": "Das Englische dekliniert Adjektive **überhaupt nicht**: *the fresh fish*, *a fresh fish*, *fresh fish*. Es gibt also weder Genus noch Kasus noch Artikelabhängigkeit zu übertragen. Für Englischsprachige ist die Adjektivdeklination deshalb schwerer als für Spanischsprachige, die immerhin Genus und Numerus kennen — hier ist wirklich alles neu.",
+  "it": "Das Italienische markiert am Adjektiv Genus und Numerus, und zwar gut hörbar (*-o, -a, -i, -e*). Italienischsprachige hören Endungen also, ordnen sie aber reflexartig dem Genus zu – dass die deutsche Endung vom Artikel und vom Kasus abhängt, ist dagegen völlig neu.",
+  "fr": "Das Französische markiert am Adjektiv Genus und Numerus, aber vieles davon nur in der Schrift (*bleu/bleue/bleus* klingen gleich). Französischsprachige haben deshalb ein schwaches Ohr für Endungen, und genau über das Hören werden die deutschen Adjektivendungen meist gefestigt – hier lohnt sich lautes Üben besonders.",
+  "pt": "Das Portugiesische markiert am Adjektiv nur Genus und Numerus, im europäischen Portugiesisch sind unbetonte Endungen zudem oft kaum hörbar. Die deutschen Endungen, die von Artikel und Kasus abhängen, sind also Neuland und müssen über viel Hören und lautes Sprechen gefestigt werden."
+ },
+ "errores": [
+  "Artikellose Mengenangaben falsch: *eine Tasse heissem Tee* statt *heisser Tee*.",
+  "Nach *alle* stark statt schwach dekliniert.",
+  "Genusfehler, die als Deklinationsfehler erscheinen.",
+  "Die Endung nur nach dem Genus wählen und den Kasus vergessen."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Das Genus aus dem Spanischen übernehmen und falsch deklinieren: *der blaue Meer* nach *el mar*."
+  ],
+  "en": [
+   "Das Adjektiv unverändert lassen, wie im Englischen: *mit gut Öl*.",
+   "Nach dem unbestimmten Artikel die Endung weglassen: *ein gut Kollege*."
+  ],
+  "it": [
+   "Das Genus aus dem Italienischen übernehmen und dann konsequent falsch deklinieren: *der schöne Meer* nach *il mare*."
+  ],
+  "fr": [
+   "Das Genus aus dem Französischen übernehmen und falsch deklinieren: *der warme Sonne* nach *le soleil*."
+  ],
+  "pt": [
+   "Das Genus aus dem Portugiesischen übernehmen und falsch deklinieren: *der frische Milch* nach *o leite*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "abschmecken",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "rectificar de sal",
+    "en": "to season to taste",
+    "fr": "assaisonner à son goût",
+    "it": "aggiustare di sale / condire a piacere",
+    "pt": "temperar a gosto"
+   },
+   "reccion": "Akk.",
+   "nota": "ohne genaue Entsprechung"
+  },
+  {
+   "item": "deftig",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "contundente",
+    "en": "hearty, substantial",
+    "fr": "copieux / nourrissant",
+    "it": "sostanzioso",
+    "pt": "substancial / forte"
+   },
+   "nota": "häufig, selten gelehrt"
+  },
+  {
+   "item": "die Unverträglichkeit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la intolerancia",
+    "en": "the intolerance",
+    "fr": "l’intolérance",
+    "it": "l’intolleranza",
+    "pt": "a intolerância"
+   }
+  },
+  {
+   "item": "der Verzehr",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el consumo alimentario",
+    "en": "consumption (of food, formal)",
+    "fr": "la consommation (alimentaire)",
+    "it": "il consumo (alimentare)",
+    "pt": "o consumo (alimentar)"
+   },
+   "nota": "formell/administrativ"
+  },
+  {
+   "item": "die Zutat (-en)",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el ingrediente",
+    "en": "the ingredient",
+    "fr": "l’ingrédient",
+    "it": "l’ingrediente",
+    "pt": "o ingrediente"
+   }
+  },
+  {
+   "item": "etwas anbraten",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sofreír",
+    "en": "to brown, to sear",
+    "fr": "faire revenir / saisir",
+    "it": "rosolare",
+    "pt": "alourar / selar"
+   },
+   "reccion": "Akk."
+  },
+  {
+   "item": "anschwitzen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "pochar",
+    "en": "to sweat (vegetables)",
+    "fr": "faire suer (des légumes)",
+    "it": "stufare / far appassire",
+    "pt": "refogar ligeiramente"
+   },
+   "reccion": "Akk.",
+   "nota": "milder als anbraten"
+  },
+  {
+   "item": "die Haltbarkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la conservación",
+    "en": "the shelf life",
+    "fr": "la durée de conservation",
+    "it": "la conservabilità",
+    "pt": "o prazo de conservação"
+   }
+  },
+  {
+   "item": "das Mindesthaltbarkeitsdatum",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la fecha de consumo preferente",
+    "en": "the best-before date",
+    "fr": "la date de durabilité minimale",
+    "it": "la data di scadenza minima / termine minimo di conservazione",
+    "pt": "a data de durabilidade mínima"
+   }
+  },
+  {
+   "item": "verderben",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "echarse a perder",
+    "en": "to spoil, to go off",
+    "fr": "se gâter",
+    "it": "andare a male",
+    "pt": "estragar-se"
+   }
+  },
+  {
+   "item": "das Znüni / das Zvieri",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el tentempié",
+    "en": "the mid-morning / mid-afternoon snack",
+    "fr": "le casse-croûte de la matinée / de l’après-midi",
+    "it": "lo spuntino di metà mattina / pomeriggio",
+    "pt": "o lanche da manhã / da tarde"
+   },
+   "nota": "**CH**",
+   "variante": "CH"
+  },
+  {
+   "item": "regional und saisonal",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "de proximidad y de temporada",
+    "en": "local and seasonal",
+    "fr": "local et de saison",
+    "it": "locale e stagionale",
+    "pt": "local e sazonal"
+   },
+   "nota": "festes Paar"
+  },
+  {
+   "item": "die Massentierhaltung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la ganadería intensiva",
+    "en": "factory farming",
+    "fr": "l’élevage intensif",
+    "it": "l’allevamento intensivo",
+    "pt": "a pecuária intensiva"
+   },
+   "nota": "ethische Debatte"
+  },
+  {
+   "item": "fade",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "soso",
+    "en": "bland",
+    "fr": "fade",
+    "it": "insipido",
+    "pt": "insosso"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Man nimmt…",
+   "funcion": "unpersönliche Anleitung",
+   "traducciones": {
+    "es": "se toma…",
+    "en": "You take…",
+    "fr": "On prend…",
+    "it": "Si prende…",
+    "pt": "Pega-se…"
+   }
+  },
+  {
+   "expresion": "Zuerst wird… angebraten",
+   "funcion": "Reihenfolge im Passiv",
+   "traducciones": {
+    "es": "primero se sofríe…",
+    "en": "First you brown…",
+    "fr": "D’abord, on fait revenir…",
+    "it": "Per prima cosa si rosola…",
+    "pt": "Primeiro, aloura-se…"
+   }
+  },
+  {
+   "expresion": "Dazu passt…",
+   "funcion": "Empfehlung",
+   "traducciones": {
+    "es": "va bien con…",
+    "en": "It goes well with…",
+    "fr": "… accompagne bien cela",
+    "it": "Ci sta bene…",
+    "pt": "Combina bem com…"
+   }
+  },
+  {
+   "expresion": "Das schmeckt eher…",
+   "funcion": "abgeschwächte Bewertung",
+   "traducciones": {
+    "es": "sabe más bien…",
+    "en": "It tastes more…",
+    "fr": "Cela a plutôt un goût…",
+    "it": "Ha un sapore piuttosto…",
+    "pt": "Tem um sabor mais…"
+   }
+  },
+  {
+   "expresion": "Ich würde… hinzufügen",
+   "funcion": "Vorschlag",
+   "traducciones": {
+    "es": "yo añadiría…",
+    "en": "I'd add…",
+    "fr": "J’ajouterais…",
+    "it": "Aggiungerei…",
+    "pt": "Eu acrescentaria…"
+   }
+  },
+  {
+   "expresion": "Bei uns isst man…",
+   "funcion": "Herkunftsbezug",
+   "traducciones": {
+    "es": "en mi país se come…",
+    "en": "Where I'm from we eat…",
+    "fr": "Chez nous, on mange…",
+    "it": "Da noi si mangia…",
+    "pt": "Na nossa região come-se…"
+   }
+  },
+  {
+   "expresion": "Zum Schluss abschmecken",
+   "funcion": "Abschluss",
+   "traducciones": {
+    "es": "al final, rectificar",
+    "en": "Season to taste at the end",
+    "fr": "Pour finir, assaisonner à son goût",
+    "it": "Alla fine, aggiustare di sapore",
+    "pt": "No fim, temperar a gosto"
+   }
+  },
+  {
+   "expresion": "Das ist typisch für…",
+   "funcion": "Zuordnung",
+   "traducciones": {
+    "es": "es típico de…",
+    "en": "That's typical of…",
+    "fr": "C’est typique de…",
+    "it": "È tipico di…",
+    "pt": "É típico de…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Beschreiben Sie ein Gericht aus Ihrem Heimatland Schritt für Schritt.",
+  "requisitos": [
+   "mindestens fünfzehn deklinierte Adjektive",
+   "alle drei Deklinationstypen vertreten",
+   "drei im Dativ",
+   "zwei artikellose Mengenangaben",
+   "Alle vier Kernwörter."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 10,
+   "texto": "Zehn Zutaten je dreimal schreiben: mit bestimmtem Artikel, mit unbestimmtem, ohne."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Fünf Dativsätze mit Adjektiv."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Was haben Sie gestern gegessen? Mindestens acht Adjektive."
+  }
+ ],
+ "autochequeo": [
+  "Sind alle drei Deklinationstypen vertreten?",
+  "Endet im Dativ Plural alles auf *-en*?",
+  "Haben zwei aufeinanderfolgende Adjektive dieselbe Endung?",
+  "Sind die Mengenangaben stark dekliniert?",
+  "Bin ich mir bei jedem Genus sicher?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendungen. (1) Markieren Sie jede Endung mit Kasus, Genus, Numerus und Deklinationstyp. (2) Wo der Fehler vom Genus kommt und nicht von der Deklination, sagen Sie es. (3) Prüfen Sie die Mengenangaben. (4) Nennen Sie das Muster, das ich am häufigsten falsch mache. Schreiben Sie den Text nicht neu."
+}

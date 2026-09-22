@@ -1,0 +1,403 @@
+{
+ "id": "EN-F13-C1-2026-1",
+ "skillId": "EN-F13",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T06",
+ "titulo": "Hedging and Softening Claims",
+ "subtitulo": "Turning flat assertions into defensible ones",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 60
+ },
+ "descripcion": "Hedging is argumentative precision, not politeness. A hedged claim is harder to attack, easier to revise and more acceptable to an audience that does not share your view. English does this lexically and modally — there is no hedging tense. It lives in adverbs, modals, reporting structures and impersonal constructions.",
+ "cuadroReferencia": {
+  "titulo": "Hedging devices by type",
+  "columnas": [
+   "Type",
+   "Devices",
+   "What it hedges"
+  ],
+  "filas": [
+   [
+    "Modal",
+    "*might*, *may well*, *would*, *could*",
+    "the certainty of the claim"
+   ],
+   [
+    "Frequency / tendency",
+    "*tends to*, *typically*, *broadly*, *in most cases*",
+    "its generality"
+   ],
+   [
+    "Evidential",
+    "*there's some evidence that*, *as far as I can tell*, *on the numbers I've seen*",
+    "your grounds for it"
+   ],
+   [
+    "Impersonal",
+    "*it could be argued that*, *there's a case for*, *one reading is*",
+    "your ownership of it"
+   ],
+   [
+    "Self-limiting",
+    "*I'd be careful about*, *I could be wrong*, *speaking outside my area*",
+    "your authority"
+   ],
+   [
+    "Scope",
+    "*up to a point*, *in principle*, *at least for X*",
+    "its range of application"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*That tends to be the case, though the data is thinner than people assume.*",
+   "audio": true
+  },
+  {
+   "texto": "*There's some evidence to suggest that offsets underperform their stated value.*",
+   "audio": true
+  },
+  {
+   "texto": "*I'd be careful about generalising from one grid.*",
+   "audio": true
+  },
+  {
+   "texto": "*It could be argued that the cost falls on the wrong people.*",
+   "audio": true
+  },
+  {
+   "texto": "*As far as I can tell, nobody has measured this properly.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Would* is the single most productive device: *I'd say*, *I'd argue*, *I'd be careful about*.",
+  "One or two hedges per claim is the ceiling. Stacking destroys credibility.",
+  "Never hedge a verifiable number — it reads as evasive, not careful."
+ ],
+ "contraste": {
+  "es": "Spanish often states a limit plainly (eso no funciona), and the literal that doesn't work sounds blunt in English. The equivalent English register is I don't think that's going to work.",
+  "de": "German softens a plain statement with particles (das funktioniert so wohl nicht), but the particles disappear in translation and that doesn't work remains. English needs a lexical hedge instead: I don't think that's going to work.",
+  "it": "Non credo che funzioni corresponds exactly to I don't think it'll work, with the negation in the same place. The hedge therefore transfers directly.",
+  "fr": "Je ne pense pas que ça marche corresponds exactly to I don't think it'll work, with the negation in the same place. The hedge therefore transfers directly.",
+  "pt": "Portuguese often says acho que isso não vai funcionar, with the negation in the second clause. English prefers it in the first: I don't think that's going to work."
+ },
+ "errores": [
+  "*Eventually* means 'in the end', not 'possibly', despite its look-alikes in other European languages.",
+  "*Maybe* sentence-initially reads tentative rather than considered. Prefer *perhaps* or *I'd say*.",
+  "Under-hedging, which reads as aggressive rather than confident."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Parece ser que* rendered as *It seems to be that* instead of *It seems that*."
+  ],
+  "de": [
+   "*Es scheint so, als ob* rendered as *It seems so as if* instead of *It looks as if*."
+  ],
+  "it": [
+   "*A quanto pare* rendered as *At how much it seems* instead of *Apparently*."
+  ],
+  "fr": [
+   "*À ce qu'il paraît* rendered as *At what it appears* instead of *Apparently*."
+  ],
+  "pt": [
+   "*Pelos vistos* rendered as *By the seen* instead of *Apparently*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a trade-off",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "contrapartida",
+    "de": "ein Zielkonflikt / Kompromiss",
+    "fr": "un compromis / arbitrage",
+    "it": "un compromesso",
+    "pt": "um compromisso / trade-off"
+   },
+   "nota": "central to honest climate talk"
+  },
+  {
+   "item": "to offset emissions",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "compensar emisiones",
+    "de": "Emissionen kompensieren",
+    "fr": "compenser les émissions",
+    "it": "compensare le emissioni",
+    "pt": "compensar emissões"
+   },
+   "nota": "technical and contested"
+  },
+  {
+   "item": "net zero",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "cero neto",
+    "de": "Netto-Null",
+    "fr": "le zéro net",
+    "it": "zero netto",
+    "pt": "zero líquido"
+   },
+   "nota": "≠ *zero emissions*"
+  },
+  {
+   "item": "a tipping point",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "punto de inflexión",
+    "de": "ein Kipppunkt",
+    "fr": "un point de bascule",
+    "it": "un punto di non ritorno / svolta",
+    "pt": "um ponto de rutura"
+   }
+  },
+  {
+   "item": "a carbon footprint",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "huella de carbono",
+    "de": "ein CO₂-Fußabdruck",
+    "fr": "une empreinte carbone",
+    "it": "un’impronta di carbonio",
+    "pt": "uma pegada de carbono"
+   },
+   "bajoNivelJustificado": true
+  },
+  {
+   "item": "greenwashing",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ecopostureo",
+    "de": "Greenwashing",
+    "fr": "le greenwashing / écoblanchiment",
+    "it": "il greenwashing",
+    "pt": "o greenwashing"
+   }
+  },
+  {
+   "item": "to phase out / phase in",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "eliminar / introducir gradualmente",
+    "de": "schrittweise abschaffen / einführen",
+    "fr": "supprimer progressivement / introduire progressivement",
+    "it": "eliminare gradualmente / introdurre gradualmente",
+    "pt": "eliminar gradualmente / introduzir gradualmente"
+   }
+  },
+  {
+   "item": "single-use",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "de un solo uso",
+    "de": "Einweg-",
+    "fr": "à usage unique",
+    "it": "monouso",
+    "pt": "de uso único"
+   }
+  },
+  {
+   "item": "renewables",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "renovables",
+    "de": "erneuerbare Energien",
+    "fr": "les énergies renouvelables",
+    "it": "le energie rinnovabili",
+    "pt": "as energias renováveis"
+   },
+   "nota": "used without *energy*"
+  },
+  {
+   "item": "the grid",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la red eléctrica",
+    "de": "das Stromnetz",
+    "fr": "le réseau électrique",
+    "it": "la rete elettrica",
+    "pt": "a rede elétrica"
+   },
+   "nota": "the electricity network"
+  },
+  {
+   "item": "baseload",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "carga base",
+    "de": "Grundlast",
+    "fr": "la charge de base",
+    "it": "il carico di base",
+    "pt": "a carga de base"
+   },
+   "nota": "engineering register"
+  },
+  {
+   "item": "to curb emissions",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "frenar emisiones",
+    "de": "Emissionen eindämmen",
+    "fr": "réduire / freiner les émissions",
+    "it": "frenare le emissioni",
+    "pt": "reduzir / travar emissões"
+   },
+   "nota": "journalistic"
+  },
+  {
+   "item": "stranded assets",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "activos varados",
+    "de": "gestrandete Vermögenswerte",
+    "fr": "les actifs échoués",
+    "it": "gli attivi incagliati",
+    "pt": "os ativos encalhados"
+   }
+  },
+  {
+   "item": "virtue signalling",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "postureo moral",
+    "de": "moralische Selbstdarstellung",
+    "fr": "la signalisation vertueuse",
+    "it": "l’ostentazione morale",
+    "pt": "a sinalização de virtude"
+   },
+   "nota": "loaded — use knowingly"
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "That tends to be…",
+   "funcion": "generalises without committing",
+   "traducciones": {
+    "es": "suele ser…",
+    "de": "Das ist tendenziell…",
+    "fr": "Cela tend à être…",
+    "it": "Tende a essere…",
+    "pt": "Isso tende a ser…"
+   }
+  },
+  {
+   "expresion": "There's some evidence that…",
+   "funcion": "marks the grounds",
+   "traducciones": {
+    "es": "hay indicios de que…",
+    "de": "Es gibt gewisse Hinweise darauf, dass…",
+    "fr": "Il y a des éléments indiquant que…",
+    "it": "Ci sono alcuni elementi che indicano che…",
+    "pt": "Há alguns indícios de que…"
+   }
+  },
+  {
+   "expresion": "I'd be careful about…",
+   "funcion": "limits your own claim",
+   "traducciones": {
+    "es": "yo tendría cuidado con…",
+    "de": "Bei … wäre ich vorsichtig.",
+    "fr": "Je serais prudent avec…",
+    "it": "Starei attento a…",
+    "pt": "Eu teria cuidado com…"
+   }
+  },
+  {
+   "expresion": "It could be argued that…",
+   "funcion": "shifts ownership",
+   "traducciones": {
+    "es": "se podría argumentar que…",
+    "de": "Man könnte argumentieren, dass…",
+    "fr": "On pourrait soutenir que…",
+    "it": "Si potrebbe sostenere che…",
+    "pt": "Poder-se-ia argumentar que…"
+   }
+  },
+  {
+   "expresion": "As far as I can tell…",
+   "funcion": "marks the limits of what you know",
+   "traducciones": {
+    "es": "por lo que puedo ver…",
+    "de": "Soweit ich das beurteilen kann…",
+    "fr": "Pour autant que je puisse en juger…",
+    "it": "Per quanto posso capire…",
+    "pt": "Tanto quanto consigo avaliar…"
+   }
+  },
+  {
+   "expresion": "Up to a point",
+   "funcion": "restricts scope",
+   "traducciones": {
+    "es": "hasta cierto punto",
+    "de": "Bis zu einem gewissen Punkt",
+    "fr": "Jusqu’à un certain point",
+    "it": "Fino a un certo punto",
+    "pt": "Até certo ponto"
+   }
+  },
+  {
+   "expresion": "May well",
+   "funcion": "high probability, not certainty",
+   "traducciones": {
+    "es": "bien puede ser que…",
+    "de": "könnte durchaus",
+    "fr": "pourrait bien",
+    "it": "potrebbe benissimo",
+    "pt": "pode muito bem"
+   }
+  },
+  {
+   "expresion": "On the numbers I've seen",
+   "funcion": "cites your evidence",
+   "traducciones": {
+    "es": "con los datos que vi",
+    "de": "Nach den Zahlen, die ich gesehen habe…",
+    "fr": "D’après les chiffres que j’ai vus…",
+    "it": "In base ai dati che ho visto…",
+    "pt": "Com base nos números que vi…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Argue a position on carbon offsetting.",
+  "requisitos": [
+   "six distinct devices from at least four types",
+   "no sentence with more than two",
+   "at least one deliberately unhedged factual statement",
+   "all four core vocabulary items."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write one strong opinion twice, flat and hedged. Which would you say in a meeting?"
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Reply to an online comment you disagree with, hedging exactly once."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds on offsets. Count hedges: under three is stiff, over eight is evasive."
+  }
+ ],
+ "autochequeo": [
+  "Six devices from four different types?",
+  "Any sentence with three or more hedges?",
+  "Did I hedge a verifiable number?",
+  "Is there at least one flat factual statement, to show I know the difference?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on hedging. (1) Mark each device and say whether it fits the claim and the register. (2) Mark where I asserted flatly and a C1 professional would have hedged. (3) Mark over-hedging and show the tighter version. (4) Did I hedge any verifiable fact? Do not rewrite the text."
+}

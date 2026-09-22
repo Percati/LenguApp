@@ -1,0 +1,436 @@
+{
+ "id": "EN-V07-C1-2026-1",
+ "skillId": "EN-V07",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "vocabulary",
+ "topicId": "T11",
+ "titulo": "Discourse Markers and Linking",
+ "subtitulo": "Signposting a long spoken turn",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Discourse markers are the difference between speech that is understood and speech that is followed. At C1 the job isn't adding *however* to writing — it's managing a spoken turn of two or three minutes so the listener always knows where they are: what's coming, what's a digression, what's the main point returning. Spoken and written markers are largely different sets, and using written ones in speech is the commonest C1 register error.",
+ "cuadroReferencia": {
+  "titulo": "Markers by function and register",
+  "columnas": [
+   "Function",
+   "Spoken",
+   "Written"
+  ],
+  "filas": [
+   [
+    "Announcing structure",
+    "*There are two things going on here* / *Let me take those in turn*",
+    "This raises two questions"
+   ],
+   [
+    "Adding",
+    "*Also* / *On top of that* / *And another thing*",
+    "*Moreover* / *Furthermore*"
+   ],
+   [
+    "Contrasting",
+    "*That said* / *Then again* / *Mind you*",
+    "*However* / *Nevertheless*"
+   ],
+   [
+    "Conceding",
+    "*Granted* / *Fair enough, but…* / *True up to a point*",
+    "*Admittedly* / *While it is true that…*"
+   ],
+   [
+    "Digressing",
+    "Just as an aside…",
+    "(parenthesis)"
+   ],
+   [
+    "Returning",
+    "Anyway, the point is…",
+    "Returning to…"
+   ],
+   [
+    "Reformulating",
+    "*Or to put it another way* / *What I mean is*",
+    "That is to say"
+   ],
+   [
+    "Concluding",
+    "*So on balance* / *The upshot is*",
+    "*In sum* / *On this evidence*"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*There are two things going on here. Let me take those in turn.*",
+   "audio": true
+  },
+  {
+   "texto": "*Granted, the numbers moved. Then again, they moved from a very low base.*",
+   "audio": true
+  },
+  {
+   "texto": "*Just as an aside — and this isn't the main point — the timing was odd. Anyway, the upshot is that nobody checked.*",
+   "audio": true
+  },
+  {
+   "texto": "*Anyway, the upshot is that nobody checked.*",
+   "audio": true
+  },
+  {
+   "texto": "*Mind you, that's only one outlet.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Actually* marks correction or surprise, not emphasis. *Actually, it was cheaper* implies you expected otherwise.",
+  "*Basically* is a filler; *essentially* is a marker. Not interchangeable.",
+  "*Anyway* is the standard return-from-digression signal in speech. Learners rarely use it; natives use it constantly."
+ ],
+ "contraste": {
+  "es": "Spanish *en realidad* maps onto *actually* only about half the time — often it's just *well*. *De hecho* is *in fact*. Treating them as one-to-one equivalents is where most misuse starts.",
+  "de": "Eigentlich maps onto actually only part of the time, and German speakers tend to overuse actually. Also is a false friend (it means so), while übrigens corresponds well to by the way.",
+  "it": "In realtà often corresponds to actually, but infatti is a false friend: it means indeed, not in fact. Treating these as one-to-one equivalents is where most misuse starts.",
+  "fr": "En fait corresponds well to actually, but en effet is a false friend: it means indeed, not in effect. Treating these as one-to-one equivalents is where most misuse starts.",
+  "pt": "Na verdade corresponds well to actually, and de facto to indeed or in fact; aliás is a false friend meaning besides or actually. Treating these as one-to-one equivalents is where most misuse starts."
+ },
+ "errores": [
+  "*In the other hand* — it's *on the other hand*.",
+  "*Moreover* and *furthermore* in speech: instantly bookish.",
+  "*At the end* meaning *finally* — use *in the end*.",
+  "Stacking: *So, basically, at the end of the day, essentially…*"
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*en definitiva* rendered as *definitively* instead of *in short* or *ultimately*."
+  ],
+  "de": [
+   "*schliesslich* rendered as *finally* in the sense 'after all': *Finally, he is the boss* instead of *After all, he is the boss*."
+  ],
+  "it": [
+   "*in definitiva* rendered as *definitively* instead of *in short* or *ultimately*."
+  ],
+  "fr": [
+   "*en définitive* rendered as *definitively* instead of *in short* or *ultimately*."
+  ],
+  "pt": [
+   "*aliás* rendered as *alias* instead of *in fact* or *by the way*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "framing",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "encuadre",
+    "de": "Framing / Rahmung",
+    "fr": "le cadrage",
+    "it": "l’inquadramento",
+    "pt": "o enquadramento"
+   },
+   "nota": "how a story is angled; central at C1"
+  },
+  {
+   "item": "to downplay / to overstate",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "minimizar / exagerar",
+    "de": "herunterspielen / übertreiben",
+    "fr": "minimiser / exagérer",
+    "it": "minimizzare / esagerare",
+    "pt": "minimizar / exagerar"
+   },
+   "nota": "learn as a pair"
+  },
+  {
+   "item": "the fallout from",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "las consecuencias de",
+    "de": "die Folgen von",
+    "fr": "les retombées de",
+    "it": "le conseguenze di",
+    "pt": "as consequências de"
+   },
+   "nota": "not literal, not radioactive"
+  },
+  {
+   "item": "a false equivalence",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "falsa equivalencia",
+    "de": "eine falsche Gleichsetzung",
+    "fr": "une fausse équivalence",
+    "it": "una falsa equivalenza",
+    "pt": "uma falsa equivalência"
+   },
+   "nota": "naming the fallacy is the skill"
+  },
+  {
+   "item": "to break a story",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dar la primicia",
+    "de": "eine Nachricht als Erster bringen / eine Story aufdecken",
+    "fr": "sortir une information en exclusivité",
+    "it": "dare una notizia in esclusiva",
+    "pt": "dar uma notícia em primeira mão"
+   },
+   "nota": "publish first"
+  },
+  {
+   "item": "a talking point",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "argumento de campaña",
+    "de": "ein Talking Point / Kernargument",
+    "fr": "un élément de langage",
+    "it": "un argomento chiave",
+    "pt": "um ponto de discussão / argumento-chave"
+   },
+   "nota": "repeated argument of a side"
+  },
+  {
+   "item": "an outlet",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "medio",
+    "de": "ein Medium / Nachrichtenkanal",
+    "fr": "un média",
+    "it": "una testata / mezzo d’informazione",
+    "pt": "um órgão de comunicação"
+   },
+   "nota": "not *media* singular"
+  },
+  {
+   "item": "unsubstantiated",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sin fundamento",
+    "de": "unbelegt",
+    "fr": "non étayé",
+    "it": "non comprovato",
+    "pt": "não fundamentado"
+   }
+  },
+  {
+   "item": "to backtrack on",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "desdecirse de",
+    "de": "von etwas zurückrudern",
+    "fr": "revenir sur",
+    "it": "fare marcia indietro su",
+    "pt": "recuar em"
+   }
+  },
+  {
+   "item": "a U-turn",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "giro de 180 grados",
+    "de": "eine Kehrtwende",
+    "fr": "un revirement",
+    "it": "un’inversione di rotta",
+    "pt": "uma reviravolta"
+   },
+   "nota": "very journalistic"
+  },
+  {
+   "item": "to come under fire",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser objeto de críticas",
+    "de": "in die Kritik geraten",
+    "fr": "faire l’objet de critiques",
+    "it": "finire sotto accusa",
+    "pt": "ser alvo de críticas"
+   }
+  },
+  {
+   "item": "an op-ed",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "columna de opinión",
+    "de": "ein Meinungsbeitrag",
+    "fr": "une tribune / chronique d’opinion",
+    "it": "un editoriale / articolo d’opinione",
+    "pt": "um artigo de opinião"
+   }
+  },
+  {
+   "item": "to gain traction",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ganar terreno",
+    "de": "an Zugkraft gewinnen",
+    "fr": "gagner du terrain",
+    "it": "prendere piede",
+    "pt": "ganhar força"
+   }
+  },
+  {
+   "item": "to be misconstrued",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser malinterpretado",
+    "de": "missverstanden werden",
+    "fr": "être mal interprété",
+    "it": "essere frainteso",
+    "pt": "ser mal interpretado"
+   },
+   "nota": "formal register"
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Let me take those in turn",
+   "funcion": "announces sequence",
+   "traducciones": {
+    "es": "vamos por partes",
+    "de": "Gehen wir die Punkte der Reihe nach durch.",
+    "fr": "Prenons-les dans l’ordre.",
+    "it": "Prendiamoli uno alla volta.",
+    "pt": "Vamos por partes."
+   }
+  },
+  {
+   "expresion": "That said",
+   "funcion": "mild contrast, keeps the floor",
+   "traducciones": {
+    "es": "dicho eso",
+    "de": "Allerdings / Dabei gilt…",
+    "fr": "Cela dit…",
+    "it": "Detto questo…",
+    "pt": "Dito isso…"
+   }
+  },
+  {
+   "expresion": "Mind you",
+   "funcion": "inserts a caveat mid-turn",
+   "traducciones": {
+    "es": "eso sí",
+    "de": "Wobei / allerdings…",
+    "fr": "Cela dit / remarquez…",
+    "it": "Attenzione però…",
+    "pt": "Isso sim / repare…"
+   }
+  },
+  {
+   "expresion": "Granted",
+   "funcion": "concedes one point only",
+   "traducciones": {
+    "es": "de acuerdo, sí",
+    "de": "Zugegeben, …",
+    "fr": "Certes, …",
+    "it": "D’accordo / ammesso che…",
+    "pt": "Concedo / é verdade…"
+   }
+  },
+  {
+   "expresion": "Just as an aside",
+   "funcion": "flags a digression",
+   "traducciones": {
+    "es": "entre paréntesis",
+    "de": "Nur nebenbei bemerkt…",
+    "fr": "Juste entre parenthèses…",
+    "it": "Solo per inciso…",
+    "pt": "Só como aparte…"
+   }
+  },
+  {
+   "expresion": "Anyway, the point is",
+   "funcion": "returns from a digression",
+   "traducciones": {
+    "es": "en fin, la cuestión es",
+    "de": "Jedenfalls ist der Punkt…",
+    "fr": "Quoi qu’il en soit, le point est…",
+    "it": "Comunque, il punto è…",
+    "pt": "De qualquer forma, a questão é…"
+   }
+  },
+  {
+   "expresion": "Or to put it another way",
+   "funcion": "reformulates",
+   "traducciones": {
+    "es": "o dicho de otro modo",
+    "de": "Oder anders ausgedrückt…",
+    "fr": "Ou, autrement dit…",
+    "it": "O, per dirla in un altro modo…",
+    "pt": "Ou, dito de outra forma…"
+   }
+  },
+  {
+   "expresion": "The upshot is",
+   "funcion": "delivers the conclusion",
+   "traducciones": {
+    "es": "el resultado es",
+    "de": "Das Ergebnis ist…",
+    "fr": "Au final, …",
+    "it": "Il risultato è…",
+    "pt": "O resultado é…"
+   }
+  },
+  {
+   "expresion": "Then again",
+   "funcion": "reverses your own concession",
+   "traducciones": {
+    "es": "aunque bueno",
+    "de": "Andererseits / wiederum…",
+    "fr": "Cela dit / d’un autre côté…",
+    "it": "D’altra parte…",
+    "pt": "Por outro lado…"
+   }
+  },
+  {
+   "expresion": "So on balance",
+   "funcion": "closes with a weighted judgement",
+   "traducciones": {
+    "es": "en definitiva",
+    "de": "Alles in allem…",
+    "fr": "Donc, tout bien considéré…",
+    "it": "Quindi, tutto sommato…",
+    "pt": "No balanço geral…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Compare and evaluate how two different outlets covered the same story this week.",
+  "requisitos": [
+   "eight distinct markers from at least four functions",
+   "no marker repeated more than twice",
+   "all four core vocabulary items",
+   "Do not name the story in the mission — pick one from this week."
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 10,
+   "texto": "Listen to five minutes of an English podcast and write down every marker you hear. Collect only, don't analyse."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Explain something from your job in four sentences, each opening with a different marker."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds on a news story. Digress once on purpose and return using *anyway*."
+  }
+ ],
+ "autochequeo": [
+  "Eight different markers, or three used repeatedly?",
+  "Any written-only marker in a spoken piece?",
+  "Did I signal my structure in the first two sentences?",
+  "Any stacked markers?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on discourse markers and linking. (1) List every marker I used and say whether it works in spoken register. (2) Flag any written-only markers. (3) Show me where a listener would lose the thread and which marker was missing. (4) Flag any stacking. Do not rewrite the text."
+}

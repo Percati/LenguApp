@@ -12,15 +12,12 @@ Lo que componer.py NO mira y este si:
      MIN_VOCAB items de prioridad "nucleo" aparecen citados en el texto.
   5. Entre apariciones del mismo skill: subtitulos distintos y consignas que
      no sean casi identicas (ratio de difflib).
-  6. Colision de id compuesto entre anios: componer.py arma el id como
-     skillId-nivel-order, sin anio, asi que dos ediciones del mismo par se pisan
-     en build/ y en assets/. Se reporta, no se corrige aca.
-  7. Audio: todo ejemplo con "audio": true de los nucleos usados figura como
+  6. Audio: todo ejemplo con "audio": true de los nucleos usados figura como
      grabado en audio-estado.json.
 
 Uso:
     python3 tools/validar_apariciones.py --anio 2027 [--idioma de --nivel C1]
-Sale con 1 si hay errores (1-5). 6 y 7 son avisos.
+Sale con 1 si hay errores (1-5). 6 es aviso.
 """
 import argparse, collections, difflib, json, re, sys
 from pathlib import Path
@@ -64,11 +61,6 @@ def main():
 
     audio = leer(R / "audio-estado.json")
     errores, avisos = [], []
-    ids_por_anio = collections.defaultdict(set)
-    for p in (R / "contenido/ocurrencias").glob("*.json"):
-        d = leer(p)
-        for o in d["apariciones"]:
-            ids_por_anio[f'{o["skillId"]}-{d["nivel"]}-{o["order"]}'].add(d["anio"])
 
     for p in sorted((R / "contenido/ocurrencias").glob(f"*-{a.anio}.json")):
         d = leer(p)
@@ -114,9 +106,6 @@ def main():
                     k = f"{idi}|Ejemplo|{e['texto'].replace('*', '')}"
                     if not audio.get(k, {}).get("grabado"):
                         avisos.append(f"{w}: audio sin grabar: {e['texto'][:50]}")
-            fid = f'{o["skillId"]}-{niv}-{o["order"]}'
-            if len(ids_por_anio[fid]) > 1:
-                avisos.append(f"{w}: id {fid} tambien existe en {sorted(ids_por_anio[fid])}")
         for sk, lst in por_skill.items():
             for (s1, o1), (s2, o2) in [(x, y) for i, x in enumerate(lst) for y in lst[i + 1:]]:
                 if o1["subtitulo"] == o2["subtitulo"]:
