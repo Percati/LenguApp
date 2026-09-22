@@ -137,5 +137,22 @@
   "Does the text sound natural?",
   "Does the text sound natural?"
  ],
- "promptCorreccion": "Focus only on verb-noun collocations. Check the choice between have, make and take for each fixed expression, especially meals, decisions and mistakes. Do not rewrite the text."
+ "promptCorreccion": "Focus only on verb-noun collocations. Check the choice between have, make and take for each fixed expression, especially meals, decisions and mistakes. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*tomar un café* rendered as *take a coffee* instead of *have a coffee*."
+  ],
+  "de": [
+   "*Hausaufgaben machen* rendered as *make homework* instead of *do homework*."
+  ],
+  "it": [
+   "*prendere un caffè* rendered as *take a coffee* instead of *have a coffee*."
+  ],
+  "fr": [
+   "*prendre un café* rendered as *take a coffee* instead of *have a coffee*."
+  ],
+  "pt": [
+   "*tomar um café* rendered as *take a coffee* instead of *have a coffee*."
+  ]
+ }
 }

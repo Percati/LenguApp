@@ -137,5 +137,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on gerunds and infinitives. Check each verb against the pattern it requires and check the gerund after every preposition. Do not rewrite the text."
+ "promptCorreccion": "Focus only on gerunds and infinitives. Check each verb against the pattern it requires and check the gerund after every preposition. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*me gusta nadar* rendered with a bare infinitive: *I like swim* instead of *I like swimming*."
+  ],
+  "de": [
+   "*gern* rendered as *gladly*: *I swim gladly* instead of *I like swimming*."
+  ],
+  "it": [
+   "*mi piace nuotare* rendered with a bare infinitive: *I like swim* instead of *I like swimming*."
+  ],
+  "fr": [
+   "*j'aime nager* rendered with a bare infinitive: *I like swim* instead of *I like swimming*."
+  ],
+  "pt": [
+   "*gosto de nadar* rendered with the preposition: *I like of swimming* instead of *I like swimming*."
+  ]
+ }
 }

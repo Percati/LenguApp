@@ -133,5 +133,22 @@
   "Würde ein Muttersprachler die Bildung sofort verstehen, auch ohne sie zu kennen?",
   "Habe ich mindestens zwei eigene, kreative Komposita gebildet?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf spontan gebildete, produktive Komposita. Prüfen Sie, ob die Bestandteile erkennbar bleiben. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf spontan gebildete, produktive Komposita. Prüfen Sie, ob die Bestandteile erkennbar bleiben. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Aus der spanischen *de*-Umschreibung nicht herauskommen: *das Gesetz über den Schutz der Daten* statt *das Datenschutzgesetz*."
+  ],
+  "it": [
+   "Aus der italienischen *di*-Umschreibung nicht herauskommen: *das Gesetz über den Schutz der Daten* statt *das Datenschutzgesetz*."
+  ],
+  "fr": [
+   "Aus der französischen *de*-Umschreibung nicht herauskommen: *das Gesetz über den Schutz der Daten* statt *das Datenschutzgesetz*."
+  ],
+  "pt": [
+   "Aus der portugiesischen *de*-Umschreibung nicht herauskommen: *das Gesetz über den Schutz der Daten* statt *das Datenschutzgesetz*."
+  ],
+  "en": [
+   "Englische Nomenketten getrennt übernehmen: *Daten Schutz Gesetz* nach *data protection act* statt *Datenschutzgesetz*."
+  ]
+ }
 }

@@ -136,5 +136,22 @@
   "Klingt die Wortwahl zum gewählten Register passend?",
   "Habe ich mindestens eine formelle und eine informelle Version verglichen?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz von du/Sie und die passende Grussformel. Prüfen Sie, ob Anrede und Wortwahl im ganzen Text zusammenpassen. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz von du/Sie und die passende Grussformel. Prüfen Sie, ob Anrede und Wortwahl im ganzen Text zusammenpassen. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Un saludo* als *Ein Gruss* übertragen statt *Freundliche Grüsse*."
+  ],
+  "it": [
+   "*Gentile Signora* als *Freundliche Frau* übertragen statt *Sehr geehrte Frau*."
+  ],
+  "fr": [
+   "*Madame, Monsieur* als *Frau, Herr* übertragen statt *Sehr geehrte Damen und Herren*."
+  ],
+  "pt": [
+   "*Caro Senhor* als *Teurer Herr* übertragen statt *Sehr geehrter Herr*."
+  ],
+  "en": [
+   "*Dear* als *Liebe* oder *Lieber* in einer formellen E-Mail übertragen statt *Sehr geehrte* oder *Sehr geehrter*."
+  ]
+ }
 }

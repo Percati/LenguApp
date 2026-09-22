@@ -137,5 +137,22 @@
   "Do the subtle meaning shifts match what I actually intend to say?",
   "Are at least five of these nuanced verbs used correctly?"
  ],
- "promptCorreccion": "Focus only on gerunds and infinitives with a meaning shift: regret, go on, mean, and perfect gerunds. Check whether the chosen form matches the intended meaning. Do not rewrite the text."
+ "promptCorreccion": "Focus only on gerunds and infinitives with a meaning shift: regret, go on, mean, and perfect gerunds. Check whether the chosen form matches the intended meaning. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*acordarse de haber hecho* rendered as *remember to have done* instead of *remember doing*."
+  ],
+  "de": [
+   "*es gewohnt sein, … zu* rendered with an infinitive: *I am used to work late* instead of *I am used to working late*."
+  ],
+  "it": [
+   "*ricordarsi di aver fatto* rendered as *remember to have done* instead of *remember doing*."
+  ],
+  "fr": [
+   "*avoir l'habitude de* rendered with an infinitive: *I am used to work late* instead of *I am used to working late*."
+  ],
+  "pt": [
+   "*lembrar-se de ter feito* rendered as *remember to have done* instead of *remember doing*."
+  ]
+ }
 }

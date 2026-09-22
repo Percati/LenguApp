@@ -132,5 +132,22 @@
   "Does the reason sound concrete rather than abstract?",
   "Have I avoided combining two opinion phrases in the same sentence?"
  ],
- "promptCorreccion": "Focus only on whether the opinion and the reason are clearly connected. Check whether at least one concrete example is given. Do not rewrite the text."
+ "promptCorreccion": "Focus only on whether the opinion and the reason are clearly connected. Check whether at least one concrete example is given. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Lo que pasa es que* rendered as *What happens is that* instead of *The thing is*."
+  ],
+  "de": [
+   "*Ich bin der Meinung, dass* rendered as *I am of the meaning that* instead of *I'm of the opinion that*."
+  ],
+  "it": [
+   "*Il discorso è che* rendered as *The discourse is that* instead of *The point is*."
+  ],
+  "fr": [
+   "*Le truc, c'est que* rendered as *The thing, it's that* instead of *The thing is*."
+  ],
+  "pt": [
+   "*O que acontece é que* rendered as *What happens is that* instead of *The thing is*."
+  ]
+ }
 }

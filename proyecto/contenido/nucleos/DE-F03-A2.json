@@ -133,5 +133,22 @@
   "Klingt der Text natürlich?",
   "Habe ich das Vokabular des Themas eingesetzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Formeln zur Alltagssituation passen und ob der Ton durchgehend höflich bleibt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Formeln zur Alltagssituation passen und ob der Ton durchgehend höflich bleibt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*¿Me pone un café?* als *Stellen Sie mir einen Kaffee?* übertragen statt *Ich hätte gern einen Kaffee*."
+  ],
+  "it": [
+   "*Mi dà un caffè?* als *Geben Sie mir einen Kaffee?* übertragen, was im Deutschen schroff klingt, statt *Ich hätte gern einen Kaffee*."
+  ],
+  "fr": [
+   "*Je vais prendre un café* als *Ich gehe einen Kaffee nehmen* übertragen statt *Ich nehme einen Kaffee*."
+  ],
+  "pt": [
+   "*Queria um café* als *Ich wollte einen Kaffee* übertragen statt *Ich hätte gern einen Kaffee*."
+  ],
+  "en": [
+   "*Can I have a coffee?* mit englischer Wortfolge übertragen: *Kann ich haben einen Kaffee?* statt *Kann ich einen Kaffee haben?*"
+  ]
+ }
 }

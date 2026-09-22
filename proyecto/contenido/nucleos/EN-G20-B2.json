@@ -196,5 +196,22 @@
   "Did I use *were* rather than *was* in writing?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on the unreal past: *wish*, *if only*, *it's time*, *I'd rather*, *as if*. (1) Check the tense after each one. (2) Flag any *would* used about the speaker. (3) Flag *was* where careful English wants *were*. (4) Say where a past perfect would have been more accurate than a past simple. Do not correct anything else."
+ "promptCorreccion": "Focus only on the unreal past: *wish*, *if only*, *it's time*, *I'd rather*, *as if*. (1) Check the tense after each one. (2) Flag any *would* used about the speaker. (3) Flag *was* where careful English wants *were*. (4) Say where a past perfect would have been more accurate than a past simple. Do not correct anything else.",
+ "erroresContrastivos": {
+  "es": [
+   "*ojalá* + present subjunctive rendered with *wish*: *I wish you have a good trip* instead of *I hope you have a good trip*."
+  ],
+  "de": [
+   "*Ich wünsche mir, dass er kommt* rendered as *I wish he comes* instead of *I hope he comes* or *I wish he would come*."
+  ],
+  "it": [
+   "*spero che* confused with *wish*: *I wish you are well* instead of *I hope you are well*."
+  ],
+  "fr": [
+   "*je souhaite que tu viennes* rendered as *I wish you come* instead of *I hope you come* or *I'd like you to come*."
+  ],
+  "pt": [
+   "*tomara que* rendered with *wish*: *I wish you have fun* instead of *I hope you have fun*."
+  ]
+ }
 }

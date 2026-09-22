@@ -136,5 +136,22 @@
   "Is the story more than just a list of events?",
   "Have I used at least one past perfect correctly?"
  ],
- "promptCorreccion": "Focus only on the time sequencing: past simple, past continuous, past perfect. Check whether earlier events are correctly marked. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the time sequencing: past simple, past continuous, past perfect. Check whether earlier events are correctly marked. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Resulta que* rendered as *It results that* instead of *It turned out that*."
+  ],
+  "de": [
+   "*Auf einmal* rendered as *At once*, which means 'immediately', instead of *Suddenly* or *All of a sudden*."
+  ],
+  "it": [
+   "*Succede che* rendered as *It happens that* instead of *It turned out that*."
+  ],
+  "fr": [
+   "*Du coup* carried over as *so* in every sentence until it becomes a tic."
+  ],
+  "pt": [
+   "*Acontece que* rendered as *It happens that* instead of *It turned out that*."
+  ]
+ }
 }

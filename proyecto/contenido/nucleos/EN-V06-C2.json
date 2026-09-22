@@ -137,5 +137,22 @@
   "Is the twist used sparingly, for a specific effect?",
   "Do I know the standard form of every idiom I'm twisting?"
  ],
- "promptCorreccion": "Focus only on deliberate idiom twists. Check whether the source idiom remains recognisable and whether the register fits. Do not rewrite the text. Flag anything that reads as an error rather than deliberate play."
+ "promptCorreccion": "Focus only on deliberate idiom twists. Check whether the source idiom remains recognisable and whether the register fits. Do not rewrite the text. Flag anything that reads as an error rather than deliberate play.",
+ "erroresContrastivos": {
+  "es": [
+   "*No hay mal que por bien no venga* rendered as *There's no bad that doesn't come for good* instead of *Every cloud has a silver lining*."
+  ],
+  "de": [
+   "*Jetzt haben wir den Salat* rendered as *Now we have the salad* instead of *Now we're in a mess*."
+  ],
+  "it": [
+   "*Non tutto il male vien per nuocere* rendered as *Not all evil comes to harm* instead of *Every cloud has a silver lining*."
+  ],
+  "fr": [
+   "*À quelque chose malheur est bon* rendered as *To something misfortune is good* instead of *Every cloud has a silver lining*."
+  ],
+  "pt": [
+   "*Há males que vêm por bem* rendered as *There are evils that come for good* instead of *Every cloud has a silver lining*."
+  ]
+ }
 }

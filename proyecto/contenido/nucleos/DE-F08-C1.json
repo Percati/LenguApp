@@ -136,5 +136,22 @@
   "Ist meine eigene Einordnung klar vom Referat getrennt?",
   "Ist der Nominalstil an den passenden Stellen eingesetzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Struktur der Zusammenfassung: Kerngedanke, Stützpunkte, offene Fragen, eigene Einordnung. Prüfen Sie, ob alle vier Teile vorhanden und klar getrennt sind. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Struktur der Zusammenfassung: Kerngedanke, Stützpunkte, offene Fragen, eigene Einordnung. Prüfen Sie, ob alle vier Teile vorhanden und klar getrennt sind. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Cabe destacar que* als *Es passt hervorzuheben* übertragen statt *Hervorzuheben ist, dass*."
+  ],
+  "en": [
+   "*It is worth noting* als *Es ist wert zu notieren* übertragen statt *Bemerkenswert ist*."
+  ],
+  "it": [
+   "*Da notare che* als *Zu notieren, dass* übertragen statt *Bemerkenswert ist, dass*."
+  ],
+  "fr": [
+   "*Il convient de souligner* als *Es passt zu unterstreichen* übertragen statt *Hervorzuheben ist*."
+  ],
+  "pt": [
+   "*Cabe salientar que* als *Es passt hervorzuheben* übertragen statt *Hervorzuheben ist, dass*."
+  ]
+ }
 }

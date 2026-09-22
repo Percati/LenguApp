@@ -136,5 +136,22 @@
   "Habe ich mindestens vier umgangssprachliche Wörter benutzt?",
   "Würde ein Muttersprachler dieses Wort in diesem Kontext auch so benutzen?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Umgangssprache und Standardsprache. Prüfen Sie, ob das Register zum Kontext passt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Umgangssprache und Standardsprache. Prüfen Sie, ob das Register zum Kontext passt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Das spanische Duzen im Beruf übertragen und Vorgesetzte oder Kunden ungefragt duzen."
+  ],
+  "it": [
+   "Den italienischen Gebrauch von *Dottore* übertragen und jeden Akademiker mit *Herr Doktor* anreden."
+  ],
+  "fr": [
+   "Das umgangssprachliche *on* als *man* übertragen, wo *wir* gemeint ist: *Man geht ins Kino* statt *Wir gehen ins Kino*."
+  ],
+  "pt": [
+   "*a gente* als *die Leute* übertragen, wo *wir* gemeint ist: *Die Leute gehen morgen* statt *Wir gehen morgen*."
+  ],
+  "en": [
+   "Weil *you* keinen Unterschied macht, in E-Mails an Vorgesetzte oder Behörden duzen."
+  ]
+ }
 }

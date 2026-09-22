@@ -136,5 +136,22 @@
   "Würde ein Fachleser die Steuerung als bewusst empfinden?",
   "Habe ich mindestens drei verschiedene Nominalisierungsformen benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob der Nominalanteil bewusst über den Text hinweg variiert wird und ob der Übergang zum Schluss natürlich wirkt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob der Nominalanteil bewusst über den Text hinweg variiert wird und ob der Übergang zum Schluss natürlich wirkt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Den spanischen Gerundialstil (*considerando…*, *teniendo en cuenta…*) nachbilden: *Berücksichtigend die Lage, …* statt *Angesichts der Lage …*."
+  ],
+  "it": [
+   "Die italienische Verwaltungsperiode übertragen und Nominalblöcke durch lange Nebensatzketten verbinden, statt sie klar zu gliedern."
+  ],
+  "fr": [
+   "Das französische Ideal der Wortvariation übertragen und Fachbegriffe durch Synonyme ersetzen, was im deutschen Nominalstil den Bezug verunklart."
+  ],
+  "pt": [
+   "Den portugiesischen Gerundialstil nachbilden: *Analysierend die Daten, …* statt *Bei der Analyse der Daten …*."
+  ],
+  "en": [
+   "Den englischen *plain style* auch dort beibehalten, wo die Textsorte Nominalstil erwartet, etwa in Gutachten und Verordnungen."
+  ]
+ }
 }

@@ -136,5 +136,22 @@
   "Wirkt der Text gebildet, nicht gestelzt?",
   "Habe ich mindestens zwei verschiedene bildungssprachliche Redewendungen benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf bildungssprachliche Redewendungen. Prüfen Sie Bedeutung, Häufigkeit und Passung zum Publikum. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf bildungssprachliche Redewendungen. Prüfen Sie Bedeutung, Häufigkeit und Passung zum Publikum. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*estar entre la espada y la pared* als *zwischen Schwert und Wand* übertragen statt *zwischen Baum und Borke*."
+  ],
+  "it": [
+   "*Acqua in bocca!* als *Wasser im Mund!* übertragen statt *Kein Wort darüber!*"
+  ],
+  "fr": [
+   "*faire la grasse matinée* als *den fetten Morgen machen* übertragen statt *ausschlafen*."
+  ],
+  "pt": [
+   "*estar com a pulga atrás da orelha* als *einen Floh hinter dem Ohr haben* übertragen, obwohl *jemandem einen Floh ins Ohr setzen* etwas ganz anderes bedeutet; gemeint ist *misstrauisch sein*."
+  ],
+  "en": [
+   "*between a rock and a hard place* als *zwischen einem Felsen und einem harten Ort* übertragen statt *zwischen Baum und Borke*."
+  ]
+ }
 }

@@ -136,5 +136,22 @@
   "Könnte ich dieselbe Aussage im jeweils anderen Register wiedergeben?",
   "Habe ich mindestens drei umgangssprachliche und drei standardsprachliche Formen kontrastiert?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Register: Umgangssprache gegen Standardsprache. Prüfen Sie, ob es zum Kontext passt und ob der Wechsel bewusst erfolgt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Register: Umgangssprache gegen Standardsprache. Prüfen Sie, ob es zum Kontext passt und ob der Wechsel bewusst erfolgt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Un abrazo* als *Eine Umarmung* als E-Mail-Schluss übertragen statt *Liebe Grüsse*."
+  ],
+  "it": [
+   "*Un abbraccio* als *Eine Umarmung* als E-Mail-Schluss übertragen statt *Liebe Grüsse*."
+  ],
+  "fr": [
+   "*Bises* als *Küsse* als E-Mail-Schluss übertragen statt *Liebe Grüsse*."
+  ],
+  "pt": [
+   "*Beijinhos* als *Küsschen* als E-Mail-Schluss übertragen statt *Liebe Grüsse*."
+  ],
+  "en": [
+   "*Cheers* als *Prost* als E-Mail-Schluss übertragen statt *Gruss* oder *Viele Grüsse*."
+  ]
+ }
 }

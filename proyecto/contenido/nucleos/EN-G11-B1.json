@@ -137,5 +137,22 @@
   "Have I used more than one form of this structure?",
   "Have I used more than one form of this structure?"
  ],
- "promptCorreccion": "Focus only on the simple passive in present and past. Check the form of be plus the participle, and check whether the passive is used only with transitive verbs. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the simple passive in present and past. Check the form of be plus the participle, and check whether the passive is used only with transitive verbs. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*nací* rendered as an active verb: *I born in 1990* instead of *I was born in 1990*."
+  ],
+  "de": [
+   "*ich bin geboren* rendered in the present: *I am born in 1990* instead of *I was born in 1990*."
+  ],
+  "it": [
+   "*sono nato* rendered in the present: *I am born in 1990* instead of *I was born in 1990*."
+  ],
+  "fr": [
+   "*je suis né* rendered in the present: *I am born in 1990* instead of *I was born in 1990*."
+  ],
+  "pt": [
+   "*nasci* rendered as an active verb: *I born in 1990* instead of *I was born in 1990*."
+  ]
+ }
 }

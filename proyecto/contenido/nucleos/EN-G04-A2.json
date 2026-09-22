@@ -136,5 +136,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on going to versus will. Check whether each matches how planned the event is. Do not rewrite the text. Flag any confusion between the two. Flag anything unclear."
+ "promptCorreccion": "Focus only on going to versus will. Check whether each matches how planned the event is. Do not rewrite the text. Flag any confusion between the two. Flag anything unclear.",
+ "erroresContrastivos": {
+  "es": [
+   "*te llamo mañana* rendered in the present: *I call you tomorrow* instead of *I'll call you tomorrow*."
+  ],
+  "de": [
+   "Inverting after a time word, as German V2 does: *Tomorrow go I to Bern* instead of *Tomorrow I'm going to Bern*."
+  ],
+  "it": [
+   "*ti chiamo domani* rendered in the present: *I call you tomorrow* instead of *I'll call you tomorrow*."
+  ],
+  "fr": [
+   "*je t'appelle demain* rendered in the present: *I call you tomorrow* instead of *I'll call you tomorrow*."
+  ],
+  "pt": [
+   "*ligo-te amanhã* rendered in the present: *I call you tomorrow* instead of *I'll call you tomorrow*."
+  ]
+ }
 }

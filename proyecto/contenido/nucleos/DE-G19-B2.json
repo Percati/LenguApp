@@ -136,5 +136,22 @@
   "Habe ich mindestens eine je-desto-Konstruktion gebildet?",
   "Klingt der Vergleich natürlich, nicht wörtlich aus dem Spanischen übersetzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf als, wie und je … desto. Prüfen Sie besonders die Verbstellung im je-Satz. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf als, wie und je … desto. Prüfen Sie besonders die Verbstellung im je-Satz. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*que* immer mit *wie* übersetzen, auch beim Komparativ: *grösser wie ich* nach *más alto que yo*."
+  ],
+  "it": [
+   "*di* als Vergleichswort übernehmen: *grösser von mir* nach *più alto di me* statt *grösser als ich*."
+  ],
+  "fr": [
+   "*que* immer mit *wie* übersetzen, auch beim Komparativ: *grösser wie ich* nach *plus grand que moi*."
+  ],
+  "pt": [
+   "*do que* mit *wie* übersetzen, auch beim Komparativ: *besser wie gestern* nach *melhor do que ontem*."
+  ],
+  "en": [
+   "*je … desto* nach *the … the* bilden: *Je mehr, je besser* statt *desto besser*."
+  ]
+ }
 }

@@ -133,5 +133,23 @@
   "Klingt der Chunk natürlich in dieser Situation?",
   "Habe ich das Thema des Packs berücksichtigt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Alltagswendungen zur Situation passen. Prüfen Sie formell gegen informell. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Alltagswendungen zur Situation passen. Prüfen Sie formell gegen informell. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*con permiso* als *mit Erlaubnis* übertragen statt *Entschuldigung*."
+  ],
+  "it": [
+   "*Permesso?* beim Eintreten als *Erlaubnis?* übertragen statt *Darf ich reinkommen?*"
+  ],
+  "fr": [
+   "*Enchanté* als *Verzaubert* übertragen statt *Freut mich*."
+  ],
+  "pt": [
+   "*Muito prazer* als *Viel Vergnügen* übertragen, das *Viel Spass* bedeutet, statt *Freut mich*."
+  ],
+  "en": [
+   "*You're welcome* als *Du bist willkommen* übertragen statt *Gern geschehen*.",
+   "*How are you?* als reine Grussformel übertragen und Fremde mit *Wie geht's?* begrüssen, die dann eine echte Antwort geben."
+  ]
+ }
 }

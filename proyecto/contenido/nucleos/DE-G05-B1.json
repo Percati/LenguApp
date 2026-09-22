@@ -142,5 +142,23 @@
   "Habe ich mindestens vier verschiedene Modalverben benutzt?",
   "Klingt die Bitte höflich, nicht zu direkt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalverben in ihrer Grundbedeutung. Prüfen Sie die Satzstellung und den Unterschied zwischen nicht müssen und nicht dürfen. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalverben in ihrer Grundbedeutung. Prüfen Sie die Satzstellung und den Unterschied zwischen nicht müssen und nicht dürfen. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*poder* für Fähigkeit und Erlaubnis gleich übersetzen: *Kann ich hier rauchen?* statt *Darf ich hier rauchen?*"
+  ],
+  "it": [
+   "*potere* für Fähigkeit und Erlaubnis gleich übersetzen: *Kann ich hier parken?* statt *Darf ich hier parken?*"
+  ],
+  "fr": [
+   "*pouvoir* für Fähigkeit und Erlaubnis gleich übersetzen: *Kann ich reinkommen?* statt *Darf ich reinkommen?*"
+  ],
+  "pt": [
+   "*poder* für Fähigkeit und Erlaubnis gleich übersetzen: *Kann ich hier sitzen?* statt *Darf ich hier sitzen?*"
+  ],
+  "en": [
+   "*must not* als *muss nicht* übertragen, obwohl ein Verbot gemeint ist: richtig ist *darf nicht*.",
+   "*will* als Futur verstehen: *Ich will morgen kommen* für *I will come tomorrow* statt *Ich komme morgen*."
+  ]
+ }
 }

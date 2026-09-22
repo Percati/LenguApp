@@ -147,5 +147,22 @@
   "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?",
   "Habe ich sowohl Nebensatz- als auch Hauptsatzkonnektoren benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konnektoren und ihre Wortstellung. Prüfen Sie jeden Konnektor auf die richtige Verbposition. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konnektoren und ihre Wortstellung. Prüfen Sie jeden Konnektor auf die richtige Verbposition. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*así que* als *also* übertragen und ohne Umstellung: *Also ich bleibe zu Hause* statt *Also bleibe ich zu Hause*."
+  ],
+  "it": [
+   "*perché* heisst *warum* und *weil*: *warum* als Konnektor benutzen: *Ich bleibe zu Hause, warum ich krank bin*."
+  ],
+  "fr": [
+   "*alors* als *also* übertragen und ohne Umstellung: *Also ich bleibe zu Hause* statt *Also bleibe ich zu Hause*."
+  ],
+  "pt": [
+   "*porque* klingt wie *por que* (*warum*): *warum* als Konnektor benutzen: *Ich bleibe zu Hause, warum ich krank bin*."
+  ],
+  "en": [
+   "*also* als *auch* verstehen: *Also kommt er* für *He also comes* statt *Er kommt auch*."
+  ]
+ }
 }

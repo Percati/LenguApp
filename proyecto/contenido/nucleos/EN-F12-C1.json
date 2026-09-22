@@ -187,5 +187,22 @@
   "Did I give a reason for each ask?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on persuasion and negotiation. (1) Check each conditional offer for unilateral concession. (2) Say whose interest I framed around. (3) Flag any concession without a counter-ask. (4) Rewrite my opening so it anchors higher without sounding unreasonable. Do not rewrite the rest."
+ "promptCorreccion": "Focus only on persuasion and negotiation. (1) Check each conditional offer for unilateral concession. (2) Say whose interest I framed around. (3) Flag any concession without a counter-ask. (4) Rewrite my opening so it anchors higher without sounding unreasonable. Do not rewrite the rest.",
+ "erroresContrastivos": {
+  "es": [
+   "*Estaríamos dispuestos a* rendered as *We would be disposed to* instead of *We'd be willing to*."
+  ],
+  "de": [
+   "*Wir kommen Ihnen entgegen* rendered as *We come towards you* instead of *We can meet you halfway*."
+  ],
+  "it": [
+   "*Siamo disposti a* rendered as *We are disposed to* instead of *We're willing to*."
+  ],
+  "fr": [
+   "*Nous sommes disposés à* rendered as *We are disposed to* instead of *We're willing to*."
+  ],
+  "pt": [
+   "*Estamos dispostos a* rendered as *We are disposed to* instead of *We're willing to*."
+  ]
+ }
 }

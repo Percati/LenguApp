@@ -133,5 +133,22 @@
   "Passt die Anrede zur beschriebenen Situation?",
   "Habe ich mindestens ein Beispiel für du UND eines für Sie gegeben?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen du und Sie. Prüfen Sie die Grossschreibung von Sie und die Konsistenz im Text. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen du und Sie. Prüfen Sie die Grossschreibung von Sie und die Konsistenz im Text. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Señor* mit dem Vornamen übertragen: *Herr Juan* statt *Herr Müller*."
+  ],
+  "it": [
+   "Das höfliche *Lei* als *sie* (3. Person Singular) übertragen: *Kann sie mir helfen?* statt *Können Sie mir helfen?*"
+  ],
+  "fr": [
+   "*vous* mit *ihr* und *Sie* verwechseln, weil es für beides steht: *Habt ihr einen Moment, Herr Meier?*"
+  ],
+  "pt": [
+   "*o senhor* in der dritten Person übertragen: *Will der Herr einen Kaffee?* statt *Möchten Sie einen Kaffee?*"
+  ],
+  "en": [
+   "Weil *you* keinen Unterschied macht, fremde Erwachsene sofort duzen."
+  ]
+ }
 }

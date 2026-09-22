@@ -66,7 +66,7 @@
   "pt": "Das Portugiesische kennt diese Kategorie: pôr à disposição (zur Verfügung stellen), levar em consideração (in Betracht ziehen) und levar a cabo (durchführen). Portugiesischsprachige erkennen den Stil deshalb; Fehler entstehen beim Verb, etwa in Betracht nehmen nach dem Muster von levar."
  },
  "errores": [
-  "Das feste Verb durch ein Synonym ersetzen: in Erwägung ziehen statt in Betracht ziehen.",
+  "Das feste Verb durch ein Synonym ersetzen: *zur Verfügung setzen* statt *zur Verfügung stellen*.",
   "Zu viele Funktionsverbgefüge häufen, wodurch der Text aufgebläht wirkt.",
   "Ein Funktionsverbgefüge in einem informellen Gespräch verwenden, wo es unpassend förmlich klingt."
  ],
@@ -145,5 +145,22 @@
   "Habe ich mindestens vier verschiedene Funktionsverbgefüge benutzt?",
   "Klingt der Text kompetent oder eher aufgebläht?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Funktionsverbgefüge. Prüfen Sie, ob das feste Verb korrekt ist und ob die Häufung im Text angemessen bleibt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Funktionsverbgefüge. Prüfen Sie, ob das feste Verb korrekt ist und ob die Häufung im Text angemessen bleibt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*tener en cuenta* als *in Rechnung haben* übertragen statt *berücksichtigen* oder *in Betracht ziehen*."
+  ],
+  "en": [
+   "*to take into account* als *in Rechnung nehmen* übertragen statt *berücksichtigen*."
+  ],
+  "it": [
+   "*prendere in considerazione* als *in Betracht nehmen* übertragen statt *in Betracht ziehen*."
+  ],
+  "fr": [
+   "*prendre en considération* als *in Betracht nehmen* übertragen statt *in Betracht ziehen*."
+  ],
+  "pt": [
+   "*levar em conta* als *in Rechnung bringen* übertragen statt *berücksichtigen*."
+  ]
+ }
 }

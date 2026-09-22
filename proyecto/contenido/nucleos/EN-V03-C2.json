@@ -136,5 +136,22 @@
   "Have I used at least four different three-part verbs?",
   "Would a native speaker recognise this as natural, idiomatic English?"
  ],
- "promptCorreccion": "Focus only on advanced three-part phrasal verbs. Check that they remain unsplit and that the figurative meaning is used correctly. Do not rewrite the text."
+ "promptCorreccion": "Focus only on advanced three-part phrasal verbs. Check that they remain unsplit and that the figurative meaning is used correctly. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*soportar* rendered as *support* instead of *put up with*."
+  ],
+  "de": [
+   "*nicht ausstehen können* rendered as *can't stand out* instead of *can't stand* or *can't put up with*."
+  ],
+  "it": [
+   "*sopportare* rendered as *support* instead of *put up with*."
+  ],
+  "fr": [
+   "*supporter* rendered as *support* instead of *put up with*."
+  ],
+  "pt": [
+   "*suportar* rendered as *support* instead of *put up with*."
+  ]
+ }
 }

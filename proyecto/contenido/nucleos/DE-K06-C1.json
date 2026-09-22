@@ -132,5 +132,22 @@
   "Wechsle ich bewusst zwischen den beiden Formen, nicht zufällig?",
   "Habe ich bei jedem Partizipialattribut korrekt zwischen Partizip I (aktiv) und Partizip II (passiv) unterschieden?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Wechsel zwischen Partizipialattributen und Relativsätzen. Prüfen Sie, ob die Wahl in jedem Fall die Lesbarkeit unterstützt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Wechsel zwischen Partizipialattributen und Relativsätzen. Prüfen Sie, ob die Wahl in jedem Fall die Lesbarkeit unterstützt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Das Partizip nach dem Nomen stellen wie in *el informe redactado por el equipo*: *der Bericht verfasst vom Team* statt *der vom Team verfasste Bericht*."
+  ],
+  "it": [
+   "Das Partizip nach dem Nomen stellen wie in *i costi aumentati nell'ultimo anno*: *die Kosten gestiegen im letzten Jahr* statt *die im letzten Jahr gestiegenen Kosten*."
+  ],
+  "fr": [
+   "Das Partizip nach dem Nomen stellen wie in *le rapport rédigé par l'équipe*: *der Bericht verfasst vom Team* statt *der vom Team verfasste Bericht*."
+  ],
+  "pt": [
+   "Das Partizip nach dem Nomen stellen wie in *o relatório redigido pela equipa*: *der Bericht verfasst vom Team* statt *der vom Team verfasste Bericht*."
+  ],
+  "en": [
+   "Das Partizip nach dem Nomen stellen wie in *the costs incurred last year*: *die Kosten entstanden letztes Jahr* statt *die letztes Jahr entstandenen Kosten*."
+  ]
+ }
 }

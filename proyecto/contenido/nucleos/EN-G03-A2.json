@@ -136,5 +136,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on present perfect versus past simple. Check whether a specific time word forces the past simple. Do not rewrite the text. Flag any confusion between the two."
+ "promptCorreccion": "Focus only on present perfect versus past simple. Check whether a specific time word forces the past simple. Do not rewrite the text. Flag any confusion between the two.",
+ "erroresContrastivos": {
+  "es": [
+   "Carrying over the peninsular *he estado en Londres el año pasado*: *I have been in London last year* instead of *I was in London last year*."
+  ],
+  "de": [
+   "*Ich habe ihn gestern gesehen* rendered in the present perfect: *I have seen him yesterday* instead of *I saw him yesterday*."
+  ],
+  "it": [
+   "*sono stato a Londra l'anno scorso* rendered as *I have been in London last year* instead of *I was in London last year*."
+  ],
+  "fr": [
+   "*je suis allé à Londres* rendered with *be*: *I am gone to London last year* instead of *I went to London last year*."
+  ],
+  "pt": [
+   "*Já foste a Londres?* rendered as *Did you already go to London?* instead of *Have you ever been to London?*"
+  ]
+ }
 }

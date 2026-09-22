@@ -137,5 +137,22 @@
   "Does the sentence sound natural, not translated word for word?",
   "Does the sentence sound natural, not translated word for word?"
  ],
- "promptCorreccion": "Focus only on articles and quantifiers. Check general nouns without articles and the choice between some, any, much and many. Do not rewrite the text."
+ "promptCorreccion": "Focus only on articles and quantifiers. Check general nouns without articles and the choice between some, any, much and many. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*la gente es* rendered in the singular: *People is friendly* instead of *People are friendly*."
+  ],
+  "de": [
+   "*die meisten Leute* rendered with the article: *the most people* instead of *most people*."
+  ],
+  "it": [
+   "*informazioni* rendered as a countable plural: *informations* instead of *information*."
+  ],
+  "fr": [
+   "*des conseils* rendered as a countable plural: *advices* instead of *advice*."
+  ],
+  "pt": [
+   "*as notícias* rendered with a plural verb: *The news are good* instead of *The news is good*."
+  ]
+ }
 }

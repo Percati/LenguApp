@@ -180,5 +180,22 @@
   "Did I apologise for my English?",
   "Did I hand the turn back at least twice?"
  ],
- "promptCorreccion": "Focus only on conversation management. (1) Mark every taking, holding, yielding and repair move. (2) Flag where I trailed off instead of repairing. (3) Flag any apology for my own English. (4) Give me three natural time-buying phrases at C1 that I did not use. Do not rewrite the text."
+ "promptCorreccion": "Focus only on conversation management. (1) Mark every taking, holding, yielding and repair move. (2) Flag where I trailed off instead of repairing. (3) Flag any apology for my own English. (4) Give me three natural time-buying phrases at C1 that I did not use. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Volviendo a lo que decías* rendered as *Returning to what you said* instead of *Going back to your point*."
+  ],
+  "de": [
+   "*Um darauf zurückzukommen* rendered as *To come back on that* instead of *To come back to that*."
+  ],
+  "it": [
+   "*Tornando a* rendered as *Turning to*, which changes the topic, instead of *Going back to*."
+  ],
+  "fr": [
+   "*Pour revenir à* rendered as *For returning to* instead of *To come back to*."
+  ],
+  "pt": [
+   "*Voltando a* rendered as *Returning to* instead of *Going back to*."
+  ]
+ }
 }

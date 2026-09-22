@@ -136,5 +136,22 @@
   "Have I avoided stacking all three layers on a verified fact?",
   "Would a reader sense fairness rather than unwarranted suspicion?"
  ],
- "promptCorreccion": "Focus only on reported speech combined with hedged attribution. Check the reporting verb choice, the backshift and whether the distancing feels fair to the source. Do not rewrite the text."
+ "promptCorreccion": "Focus only on reported speech combined with hedged attribution. Check the reporting verb choice, the backshift and whether the distancing feels fair to the source. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Copying the reportive conditional (*según el informe, los costes habrían subido*): *costs would have risen* instead of *costs have reportedly risen*."
+  ],
+  "de": [
+   "Keeping the present after a past reporting verb, as with Konjunktiv I (*er sagte, er sei krank*): *He said he is ill* where the backshift is expected."
+  ],
+  "it": [
+   "Copying the reportive conditional (*secondo il rapporto, i costi sarebbero aumentati*): *costs would have risen* instead of *costs have reportedly risen*."
+  ],
+  "fr": [
+   "Copying the reportive conditional (*selon le rapport, les coûts auraient augmenté*): *costs would have risen* instead of *costs have reportedly risen*."
+  ],
+  "pt": [
+   "Copying the reportive conditional (*segundo o relatório, os custos teriam subido*): *costs would have risen* instead of *costs have reportedly risen*."
+  ]
+ }
 }

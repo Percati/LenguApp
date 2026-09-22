@@ -136,5 +136,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on the first conditional. Check for will inside the if-clause and check the comma. Do not rewrite the text. Flag anything unclear. Check whether the sentence sounds natural, not translated from Spanish."
+ "promptCorreccion": "Focus only on the first conditional. Check for will inside the if-clause and check the comma. Do not rewrite the text. Flag anything unclear. Check whether the sentence sounds natural, not translated from Spanish.",
+ "erroresContrastivos": {
+  "es": [
+   "*si tengo tiempo, te llamo* rendered in the present: *If I have time, I call you* instead of *I'll call you*."
+  ],
+  "de": [
+   "*wenn* rendered as *when* for a condition: *When I have time, I'll call you* when it is not certain you will have time."
+  ],
+  "it": [
+   "*se ho tempo, ti chiamo* rendered in the present: *If I have time, I call you* instead of *I'll call you*."
+  ],
+  "fr": [
+   "*si j'ai le temps, je t'appelle* rendered in the present: *If I have time, I call you* instead of *I'll call you*."
+  ],
+  "pt": [
+   "*se tiver tempo, ligo-te* rendered in the present: *If I have time, I call you* instead of *I'll call you*."
+  ]
+ }
 }

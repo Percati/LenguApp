@@ -132,5 +132,22 @@
   "Habe ich mindestens zwei verschiedene Partizipialkonstruktionen gebildet?",
   "Wäre ein Relativsatz an dieser Stelle natürlicher gewesen?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die erweiterten Partizipialkonstruktionen. Prüfen Sie Partizip I gegen Partizip II und die Wortstellung der Ergänzungen. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die erweiterten Partizipialkonstruktionen. Prüfen Sie Partizip I gegen Partizip II und die Wortstellung der Ergänzungen. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Die Ergänzungen nach dem Partizip stellen wie in *el informe redactado por el equipo*: *der Bericht geschrieben vom Team*."
+  ],
+  "it": [
+   "Die Ergänzungen nach dem Partizip stellen wie in *il treno arrivato in ritardo*: *der Zug angekommen mit Verspätung*."
+  ],
+  "fr": [
+   "Die Ergänzungen nach dem Partizip stellen wie in *le rapport rédigé par l'équipe*: *der Bericht geschrieben vom Team*."
+  ],
+  "pt": [
+   "Die Ergänzungen nach dem Partizip stellen wie in *o projeto aprovado ontem*: *das Projekt genehmigt gestern*."
+  ],
+  "en": [
+   "Das Partizip nachstellen wie in *the report written by the team*: *der Bericht geschrieben vom Team*."
+  ]
+ }
 }

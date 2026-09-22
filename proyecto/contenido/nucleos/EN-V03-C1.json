@@ -188,5 +188,22 @@
   "Did any Latinate verb slip through?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on phrasal verbs. (1) List each one and check the particle and the separation. (2) Flag every Latinate verb where a phrasal one would sound more natural, and give it. (3) Flag any register mismatch. (4) Check pronoun placement. Do not rewrite the text."
+ "promptCorreccion": "Focus only on phrasal verbs. (1) List each one and check the particle and the separation. (2) Flag every Latinate verb where a phrasal one would sound more natural, and give it. (3) Flag any register mismatch. (4) Check pronoun placement. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*sacar adelante* rendered as *take forward* instead of *pull through* or *see through*."
+  ],
+  "de": [
+   "*durchziehen* rendered as *pull through*, which means 'survive', instead of *see through* or *push through*."
+  ],
+  "it": [
+   "*portare avanti* rendered as *bring forward*, which means 'move earlier', instead of *carry on with* or *press ahead with*."
+  ],
+  "fr": [
+   "*mener à bien* rendered as *lead to well* instead of *see through* or *carry out*."
+  ],
+  "pt": [
+   "*levar adiante* rendered as *carry ahead* instead of *carry on with* or *press ahead with*."
+  ]
+ }
 }

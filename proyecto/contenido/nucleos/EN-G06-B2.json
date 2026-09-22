@@ -136,5 +136,22 @@
   "Is the situation genuinely unreal, not a real future possibility?",
   "Have I avoided mixing the first and second conditional in the same sentence?"
  ],
- "promptCorreccion": "Focus only on the second conditional. Check for would inside the if-clause, check were versus was, and check whether would, could or might is used correctly in the main clause. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the second conditional. Check for would inside the if-clause, check were versus was, and check whether would, could or might is used correctly in the main clause. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Copying the colloquial imperfect (*si tuviera tiempo, iba*): *If I had time, I went* instead of *I would go*."
+  ],
+  "de": [
+   "*wenn* rendered as *when* for a hypothesis: *When I had more time, I would travel* instead of *If I had more time*."
+  ],
+  "it": [
+   "*se fossi in te* rendered as *If I were in you* instead of *If I were you*."
+  ],
+  "fr": [
+   "*au cas où* + conditional rendered as *In case he would come* instead of *In case he comes*."
+  ],
+  "pt": [
+   "Copying the colloquial imperfect (*se tivesse tempo, ia*): *If I had time, I went* instead of *I would go*."
+  ]
+ }
 }

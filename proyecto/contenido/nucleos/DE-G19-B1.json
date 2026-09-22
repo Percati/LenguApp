@@ -137,5 +137,22 @@
   "Habe ich mindestens zwei verschiedene Vergleichsformen benutzt?",
   "Klingt der Satz natürlich?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Vergleichssätze mit als, wie und je…desto. Prüfen Sie jeden Vergleich auf die richtige Form. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Vergleichssätze mit als, wie und je…desto. Prüfen Sie jeden Vergleich auf die richtige Form. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Den Komparativ mit *mehr* bilden wie *más rápido*: *mehr schnell* statt *schneller*."
+  ],
+  "it": [
+   "Den Komparativ mit *mehr* bilden wie *più veloce*: *mehr schnell* statt *schneller*."
+  ],
+  "fr": [
+   "Den Komparativ mit *mehr* bilden wie *plus rapide*: *mehr schnell* statt *schneller*."
+  ],
+  "pt": [
+   "Den Komparativ mit *mehr* bilden wie *mais rápido*: *mehr schnell* statt *schneller*."
+  ],
+  "en": [
+   "Den Komparativ bei langen Adjektiven mit *mehr* bilden wie *more interesting*: *mehr interessant* statt *interessanter*."
+  ]
+ }
 }

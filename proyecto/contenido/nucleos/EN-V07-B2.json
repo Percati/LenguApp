@@ -193,5 +193,22 @@
   "Does every *for example* actually introduce an example?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on discourse markers and linking. (1) Mark each one and say if it fits the meaning and the register. (2) Show me two places where a marker was missing and the reader has to guess the connection. (3) Flag repeated markers. Do not correct anything else."
+ "promptCorreccion": "Focus only on discourse markers and linking. (1) Mark each one and say if it fits the meaning and the register. (2) Show me two places where a marker was missing and the reader has to guess the connection. (3) Flag repeated markers. Do not correct anything else.",
+ "erroresContrastivos": {
+  "es": [
+   "*en cambio* rendered as *in change* instead of *on the other hand* or *whereas*."
+  ],
+  "de": [
+   "*zwar … aber* rendered with *indeed* in every concession: *It is indeed expensive, but good* instead of *It may be expensive, but it's good*."
+  ],
+  "it": [
+   "*invece* rendered as *instead* for a contrast: *I like tea, instead he likes coffee* instead of *whereas he likes coffee*."
+  ],
+  "fr": [
+   "*en revanche* rendered as *in revenge* instead of *on the other hand*."
+  ],
+  "pt": [
+   "*em compensação* rendered as *in compensation* instead of *on the other hand*."
+  ]
+ }
 }

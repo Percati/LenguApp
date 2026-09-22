@@ -137,5 +137,22 @@
   "Habe ich mindestens drei verschiedene Konnektoren benutzt?",
   "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Unterschied zwischen als und wenn sowie die anderen Zeitkonnektoren. Prüfen Sie jeden Fall genau. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Unterschied zwischen als und wenn sowie die anderen Zeitkonnektoren. Prüfen Sie jeden Fall genau. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*cuándo* und *cuando* gleich übersetzen: *Wenn kommst du?* statt *Wann kommst du?*"
+  ],
+  "it": [
+   "*quando* ist Fragewort und Konnektor: *Wenn kommst du?* statt *Wann kommst du?*"
+  ],
+  "fr": [
+   "*quand* ist Fragewort und Konnektor: *Wenn kommst du?* statt *Wann kommst du?*"
+  ],
+  "pt": [
+   "*quando* ist Fragewort und Konnektor: *Wenn kommst du?* statt *Wann kommst du?*"
+  ],
+  "en": [
+   "*when* als Konnektor mit *wann* übersetzen: *Wann ich Zeit habe, komme ich* statt *Wenn ich Zeit habe*."
+  ]
+ }
 }

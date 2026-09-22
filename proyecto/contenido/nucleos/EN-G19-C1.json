@@ -136,5 +136,22 @@
   "Have I used position rather than relying only on intonation in writing?",
   "Are at least three different positions of these adverbs used deliberately?"
  ],
- "promptCorreccion": "Focus only on the position of only, even and just. Check whether each position matches the intended emphasis and flag any sentence where the position seems accidental. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the position of only, even and just. Check whether each position matches the intended emphasis and flag any sentence where the position seems accidental. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Fronting *especially* as with *sobre todo*: *Especially I like jazz* instead of *I especially like jazz*."
+  ],
+  "de": [
+   "Placing a time adverb between the auxiliary and the participle: *I have yesterday finished the report* instead of *I finished the report yesterday*."
+  ],
+  "it": [
+   "Fronting *especially* as with *soprattutto*: *Especially I like jazz* instead of *I especially like jazz*."
+  ],
+  "fr": [
+   "Fronting *especially* as with *surtout*: *Especially I like jazz* instead of *I especially like jazz*."
+  ],
+  "pt": [
+   "Fronting *especially* as with *sobretudo*: *Especially I like jazz* instead of *I especially like jazz*."
+  ]
+ }
 }

@@ -136,5 +136,22 @@
   "Ist ein Einwand vorweggenommen?",
   "Bleibt der Ton sachlich, nicht wütend?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die vier Teile der Beschwerde: Sachverhalt, Auswirkung, Forderung mit Frist, vorweggenommener Einwand. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die vier Teile der Beschwerde: Sachverhalt, Auswirkung, Forderung mit Frist, vorweggenommener Einwand. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Quedo a la espera de su respuesta* als *Ich bleibe in Erwartung Ihrer Antwort* übertragen statt *Ich erwarte Ihre Antwort bis…*."
+  ],
+  "it": [
+   "*Resto in attesa di un Suo riscontro* als *Ich bleibe in Erwartung* übertragen statt *Ich erwarte Ihre Antwort bis…*."
+  ],
+  "fr": [
+   "*sans quoi* als *ohne was* übertragen statt *andernfalls*."
+  ],
+  "pt": [
+   "*Fico a aguardar* als *Ich bleibe wartend* übertragen statt *Ich erwarte Ihre Antwort bis…*."
+  ],
+  "en": [
+   "*I look forward to hearing from you* als *Ich schaue vorwärts, von Ihnen zu hören* übertragen statt *Ich freue mich auf Ihre Antwort*."
+  ]
+ }
 }

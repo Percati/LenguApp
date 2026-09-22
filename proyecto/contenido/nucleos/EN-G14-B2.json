@@ -136,5 +136,22 @@
   "Does removing the clause change the meaning (defining) or just remove detail (non-defining)?",
   "Have I used both a defining and a non-defining clause?"
  ],
- "promptCorreccion": "Focus only on defining and non-defining relative clauses. Check the commas around non-defining clauses and the choice between that and which. Do not rewrite the text at all, just mark the issues."
+ "promptCorreccion": "Focus only on defining and non-defining relative clauses. Check the commas around non-defining clauses and the choice between that and which. Do not rewrite the text at all, just mark the issues.",
+ "erroresContrastivos": {
+  "es": [
+   "*lo que* rendered as *what* in a sentential relative: *He came late, what annoyed me* instead of *which annoyed me*."
+  ],
+  "de": [
+   "*alles, was* rendered as *everything what* instead of *everything that*."
+  ],
+  "it": [
+   "*il che* rendered as *what*: *He came late, what annoyed me* instead of *which annoyed me*."
+  ],
+  "fr": [
+   "*qui* rendered as *who* for things, since it covers both: *the car who broke down* instead of *which* or *that*."
+  ],
+  "pt": [
+   "*que* rendered as *which* for people: *the doctor which saw me* instead of *who*."
+  ]
+ }
 }

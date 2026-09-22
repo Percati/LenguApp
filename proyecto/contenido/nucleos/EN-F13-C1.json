@@ -80,7 +80,7 @@
   "pt": "Portuguese often says acho que isso não vai funcionar, with the negation in the second clause. English prefers it in the first: I don't think that's going to work."
  },
  "errores": [
-  "*Eventually* ≠ *eventualmente*. It means \"in the end\", not \"possibly\".",
+  "*Eventually* means 'in the end', not 'possibly', despite its look-alikes in other European languages.",
   "*Maybe* sentence-initially reads tentative rather than considered. Prefer *perhaps* or *I'd say*.",
   "Under-hedging, which reads as aggressive rather than confident."
  ],
@@ -181,5 +181,22 @@
   "Is there at least one flat factual statement, to show I know the difference?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on hedging. (1) Mark each device and say whether it fits the claim and the register. (2) Mark where I asserted flatly and a C1 professional would have hedged. (3) Mark over-hedging and show the tighter version. (4) Did I hedge any verifiable fact? Do not rewrite the text."
+ "promptCorreccion": "Focus only on hedging. (1) Mark each device and say whether it fits the claim and the register. (2) Mark where I asserted flatly and a C1 professional would have hedged. (3) Mark over-hedging and show the tighter version. (4) Did I hedge any verifiable fact? Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Parece ser que* rendered as *It seems to be that* instead of *It seems that*."
+  ],
+  "de": [
+   "*Es scheint so, als ob* rendered as *It seems so as if* instead of *It looks as if*."
+  ],
+  "it": [
+   "*A quanto pare* rendered as *At how much it seems* instead of *Apparently*."
+  ],
+  "fr": [
+   "*À ce qu'il paraît* rendered as *At what it appears* instead of *Apparently*."
+  ],
+  "pt": [
+   "*Pelos vistos* rendered as *By the seen* instead of *Apparently*."
+  ]
+ }
 }

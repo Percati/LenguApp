@@ -181,5 +181,22 @@
   "Is the text still readable, or just dense?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on reduced relative and participle clauses. (1) Check active vs passive in each. (2) Flag every dangling participle and show the fix. (3) Flag reductions that are not grammatically allowed. (4) Say whether the density is helping or hurting readability. Do not rewrite the text."
+ "promptCorreccion": "Focus only on reduced relative and participle clauses. (1) Check active vs passive in each. (2) Flag every dangling participle and show the fix. (3) Flag reductions that are not grammatically allowed. (4) Say whether the density is helping or hurting readability. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Copying the Spanish gerund of posteriority: *He resigned in May, being replaced in June* instead of *and was replaced in June*."
+  ],
+  "de": [
+   "Placing the participle and its complements before the noun: *the in 2019 built plant* instead of *the plant built in 2019*."
+  ],
+  "it": [
+   "Copying the Italian absolute participle: *Finished the work, we left* from *finito il lavoro* instead of *Having finished the work, we left*."
+  ],
+  "fr": [
+   "Copying *une fois le travail terminé*: *Once the work finished, we left* instead of *Once the work was finished*."
+  ],
+  "pt": [
+   "Copying the gerund of posteriority: *The company closed in 2020, leaving the market in 2021* for two separate events instead of *and left the market in 2021*."
+  ]
+ }
 }

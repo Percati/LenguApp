@@ -136,5 +136,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on articles and the choice between some and any. Do not rewrite the text. Flag anything unclear or unnatural. Flag anything unclear. Check every article."
+ "promptCorreccion": "Focus only on articles and the choice between some and any. Do not rewrite the text. Flag anything unclear or unnatural. Flag anything unclear. Check every article.",
+ "erroresContrastivos": {
+  "es": [
+   "*soy profesor* rendered without an article: *I am teacher* instead of *I am a teacher*."
+  ],
+  "de": [
+   "*ein anderer* written as two words: *an other day* instead of *another day*."
+  ],
+  "it": [
+   "*un altro* written as two words: *an other day* instead of *another day*."
+  ],
+  "fr": [
+   "*un autre* written as two words: *an other day* instead of *another day*."
+  ],
+  "pt": [
+   "*sou professor* rendered without an article: *I am teacher* instead of *I am a teacher*."
+  ]
+ }
 }

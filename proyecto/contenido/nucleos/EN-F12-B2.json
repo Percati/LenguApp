@@ -182,5 +182,22 @@
   "Did every request come with a reason?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on persuading and negotiating. (1) Check each conditional offer: does it concede anything unilaterally? (2) Did I frame around their interest or mine? (3) Flag any concession without something asked in return. (4) Rewrite my opening so it leaves more room. Do not correct anything else."
+ "promptCorreccion": "Focus only on persuading and negotiating. (1) Check each conditional offer: does it concede anything unilaterally? (2) Did I frame around their interest or mine? (3) Flag any concession without something asked in return. (4) Rewrite my opening so it leaves more room. Do not correct anything else.",
+ "erroresContrastivos": {
+  "es": [
+   "*Te propongo un trato* rendered as *I propose you a deal* instead of *Here's a deal* or *I'll make you an offer*."
+  ],
+  "de": [
+   "*Das geht nicht* rendered as *That doesn't go* instead of *That won't work*."
+  ],
+  "it": [
+   "*Facciamo così* rendered as *Let's make so* instead of *Here's what we'll do*."
+  ],
+  "fr": [
+   "*Je vous propose* rendered as *I propose you* instead of *I suggest* or *I'd like to offer*."
+  ],
+  "pt": [
+   "*Proponho-lhe* rendered as *I propose you* instead of *I suggest* or *I'd like to offer*."
+  ]
+ }
 }

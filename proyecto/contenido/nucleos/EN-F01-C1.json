@@ -187,5 +187,22 @@
   "Is my distinction a real distinction, or two words for the same thing?",
   "All four core items — count them."
  ],
- "promptCorreccion": "Focus only on how I express opinions. (1) Mark each framing device and say if it fits the register. (2) Point out any circular reasoning. (3) Is my distinction real or just two words for the same thing? (4) Rewrite my three weakest sentences. Do not rewrite the whole text — I want to see my own errors."
+ "promptCorreccion": "Focus only on how I express opinions. (1) Mark each framing device and say if it fits the register. (2) Point out any circular reasoning. (3) Is my distinction real or just two words for the same thing? (4) Rewrite my three weakest sentences. Do not rewrite the whole text — I want to see my own errors.",
+ "erroresContrastivos": {
+  "es": [
+   "*Sinceramente* as an opener rendered as *Sincerely,* instead of *Honestly* or *Frankly*."
+  ],
+  "de": [
+   "*Ehrlich gesagt* rendered as *Honestly said* instead of *To be honest*."
+  ],
+  "it": [
+   "*Sinceramente* as an opener rendered as *Sincerely,* instead of *Honestly* or *Frankly*."
+  ],
+  "fr": [
+   "*Je trouve que* rendered as *I find that* in every judgement instead of *I think* or *My sense is*."
+  ],
+  "pt": [
+   "*Sinceramente* as an opener rendered as *Sincerely,* instead of *Honestly* or *Frankly*."
+  ]
+ }
 }

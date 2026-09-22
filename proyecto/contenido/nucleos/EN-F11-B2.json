@@ -177,5 +177,22 @@
   "Is my opinion clearly separate from the facts?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on how I summarise. (1) Is the main point in the first two sentences? (2) Did I retell in order instead of summarising? (3) Are facts and opinion clearly separate? (4) Say what a listener would still not understand. Do not correct anything else."
+ "promptCorreccion": "Focus only on how I summarise. (1) Is the main point in the first two sentences? (2) Did I retell in order instead of summarising? (3) Are facts and opinion clearly separate? (4) Say what a listener would still not understand. Do not correct anything else.",
+ "erroresContrastivos": {
+  "es": [
+   "*El texto trata de* rendered as *The text treats of* instead of *The text is about* or *deals with*."
+  ],
+  "de": [
+   "*Der Text handelt von* rendered as *The text acts of* instead of *The text is about* or *deals with*."
+  ],
+  "it": [
+   "*Il testo tratta di* rendered as *The text treats of* instead of *The text is about* or *deals with*."
+  ],
+  "fr": [
+   "*Le texte traite de* rendered as *The text treats of* instead of *The text is about* or *deals with*."
+  ],
+  "pt": [
+   "*O texto trata de* rendered as *The text treats of* instead of *The text is about* or *deals with*."
+  ]
+ }
 }

@@ -136,5 +136,22 @@
   "Wirkt die Analyse strukturiert, nicht wie eine blosse Vermutung?",
   "Würde ein Fachpublikum diese Analyse als seriös empfinden?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die vollständige Beweiskette: Beobachtung, Vermutung, Alternative, Kriterium. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die vollständige Beweiskette: Beobachtung, Vermutung, Alternative, Kriterium. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Cabe la posibilidad de que* als *Es passt die Möglichkeit* übertragen statt *Es besteht die Möglichkeit*."
+  ],
+  "it": [
+   "*Resta da vedere* als *Es bleibt zu sehen* übertragen statt *Es bleibt abzuwarten*."
+  ],
+  "fr": [
+   "*Reste à savoir si* als *Bleibt zu wissen, ob* übertragen statt *Es bleibt abzuwarten, ob*."
+  ],
+  "pt": [
+   "*Resta saber se* als *Es bleibt zu wissen, ob* übertragen statt *Es bleibt abzuwarten, ob*."
+  ],
+  "en": [
+   "*It remains to be seen* als *Es bleibt, gesehen zu werden* übertragen statt *Es bleibt abzuwarten*."
+  ]
+ }
 }

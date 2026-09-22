@@ -174,5 +174,22 @@
   "Would each version land with its intended reader?",
   "All four core items across the three?"
  ],
- "promptCorreccion": "Focus only on register. (1) Rate each of my three versions and say whether it is consistent throughout. (2) Flag every mixed-register sentence. (3) Say which versions would actually land with their reader and which would not. (4) Show me the single word in each version that most gives away its register. Do not rewrite the text."
+ "promptCorreccion": "Focus only on register. (1) Rate each of my three versions and say whether it is consistent throughout. (2) Flag every mixed-register sentence. (3) Say which versions would actually land with their reader and which would not. (4) Show me the single word in each version that most gives away its register. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Un abrazo* rendered as *A hug* to close a work email instead of *Best* or *Kind regards*."
+  ],
+  "de": [
+   "*Mit freundlichen Grüssen* rendered as *With friendly greetings* instead of *Kind regards*."
+  ],
+  "it": [
+   "*Un abbraccio* rendered as *A hug* to close a work email instead of *Best* or *Kind regards*."
+  ],
+  "fr": [
+   "*Bises* rendered as *Kisses* to close a work email instead of *Best* or *Kind regards*."
+  ],
+  "pt": [
+   "*Beijinhos* rendered as *Kisses* to close a work email instead of *Best* or *Kind regards*."
+  ]
+ }
 }

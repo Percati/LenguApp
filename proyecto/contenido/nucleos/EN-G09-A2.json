@@ -136,5 +136,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on have to, can and can't. Check the form has for third person. Do not rewrite the text. Flag anything unclear. Check whether the sentence sounds natural, not translated from Spanish."
+ "promptCorreccion": "Focus only on have to, can and can't. Check the form has for third person. Do not rewrite the text. Flag anything unclear. Check whether the sentence sounds natural, not translated from Spanish.",
+ "erroresContrastivos": {
+  "es": [
+   "*tengo que ir* rendered as *I have that go* instead of *I have to go*."
+  ],
+  "de": [
+   "Using *must* for the past, since *musste* looks like it: *Yesterday I must work* instead of *Yesterday I had to work*."
+  ],
+  "it": [
+   "*so guidare* rendered with *know*: *I know drive* instead of *I can drive*."
+  ],
+  "fr": [
+   "*je sais conduire* rendered with *know*: *I know drive* instead of *I can drive*."
+  ],
+  "pt": [
+   "*tenho que ir* rendered as *I have that go* instead of *I have to go*."
+  ]
+ }
 }

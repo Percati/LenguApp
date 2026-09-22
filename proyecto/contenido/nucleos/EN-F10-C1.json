@@ -132,5 +132,22 @@
   "Does the prediction avoid sounding like a flat guess?",
   "Would a listener sense confident guessing rather than reasoned speculation?"
  ],
- "promptCorreccion": "Focus only on the speculation chain: observation, graded prediction, acknowledged uncertainty. Check whether the prediction is grounded in evidence, whether the confidence level matches it, and whether an explicit limit is stated. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the speculation chain: observation, graded prediction, acknowledged uncertainty. Check whether the prediction is grounded in evidence, whether the confidence level matches it, and whether an explicit limit is stated. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Todo apunta a que* rendered as *Everything points to that* instead of *All the signs are that*."
+  ],
+  "de": [
+   "*Es ist davon auszugehen, dass* rendered as *It is to go out from that* instead of *It's safe to assume that*."
+  ],
+  "it": [
+   "*Tutto lascia pensare che* rendered as *Everything lets think that* instead of *All the signs are that*."
+  ],
+  "fr": [
+   "*Tout porte à croire que* rendered as *Everything carries to believe that* instead of *All the signs are that*."
+  ],
+  "pt": [
+   "*Ao que tudo indica* rendered as *To what everything indicates* instead of *By all indications*."
+  ]
+ }
 }

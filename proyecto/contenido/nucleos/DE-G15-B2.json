@@ -154,5 +154,22 @@
   "Ist die indirekte Frage korrekt mit ob oder einem Fragewort gebildet?",
   "Habe ich dass wahlweise weggelassen oder korrekt gesetzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Konjunktiv I in der indirekten Rede. Prüfen Sie, wo auf Konjunktiv II gewechselt werden muss. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Konjunktiv I in der indirekten Rede. Prüfen Sie, wo auf Konjunktiv II gewechselt werden muss. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Die spanische Zeitenfolge übernehmen und in die Vergangenheit verschieben: *Sie sagte, sie war müde* statt *sie sei müde*."
+  ],
+  "it": [
+   "Den italienischen *congiuntivo* der indirekten Rede auf Konjunktiv II statt Konjunktiv I übertragen, auch wo Konjunktiv I eindeutig ist: *er sagte, er hätte keine Zeit*."
+  ],
+  "fr": [
+   "Die französische Zeitenfolge übernehmen und in die Vergangenheit verschieben: *Sie sagte, sie war müde* statt *sie sei müde*."
+  ],
+  "pt": [
+   "Die portugiesische Zeitenfolge übernehmen und in die Vergangenheit verschieben: *Er sagte, er hatte keine Zeit* statt *er habe*."
+  ],
+  "en": [
+   "Die englische Zeitenverschiebung (*backshift*) übertragen: *Er sagte, er war krank* statt *er sei krank*."
+  ]
+ }
 }

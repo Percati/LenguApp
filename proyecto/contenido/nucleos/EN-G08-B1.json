@@ -195,5 +195,22 @@
   "With *arrive*, did I use *at* for points and *in* for towns and countries?",
   "Did I leave *discuss*, *enter* and *phone* without a preposition?"
  ],
- "promptCorreccion": "Focus only on verbs followed by a preposition. (1) Mark every verb + preposition pair in my text and say whether the preposition is the correct one in English. (2) Flag any place where I copied the Spanish preposition. (3) Flag any verb where I added a preposition English does not use, or omitted one it requires. Do not rewrite the whole text — list my errors so I can correct them myself."
+ "promptCorreccion": "Focus only on verbs followed by a preposition. (1) Mark every verb + preposition pair in my text and say whether the preposition is the correct one in English. (2) Flag any place where I copied the Spanish preposition. (3) Flag any verb where I added a preposition English does not use, or omitted one it requires. Do not rewrite the whole text — list my errors so I can correct them myself.",
+ "erroresContrastivos": {
+  "es": [
+   "*pensar en* rendered as *think in* instead of *think of* or *think about*."
+  ],
+  "de": [
+   "*Angst haben vor* rendered as *afraid before* instead of *afraid of*."
+  ],
+  "it": [
+   "*telefonare a* rendered as *phone to* instead of *phone* with a direct object."
+  ],
+  "fr": [
+   "*téléphoner à* rendered as *phone to* instead of *phone* with a direct object."
+  ],
+  "pt": [
+   "*gostar de* rendered as *like of* instead of *like* with a direct object."
+  ]
+ }
 }

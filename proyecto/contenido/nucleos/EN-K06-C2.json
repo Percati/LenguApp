@@ -136,5 +136,22 @@
   "Would this wording survive legal or editorial scrutiny in a professional publication?",
   "Would an editor or lawyer flag anything here as risky?"
  ],
- "promptCorreccion": "Focus only on the legal and editorial precision of hedged attribution. Check allegedly versus reportedly and whether the backshift decision is deliberate. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the legal and editorial precision of hedged attribution. Check allegedly versus reportedly and whether the backshift decision is deliberate. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*presuntamente* rendered as *presumably* instead of *allegedly*."
+  ],
+  "de": [
+   "*mutmasslich* rendered as *presumably* in a report of wrongdoing, instead of *alleged* or *suspected*."
+  ],
+  "it": [
+   "*il presunto colpevole* rendered as *the presumed culprit* instead of *the alleged culprit*."
+  ],
+  "fr": [
+   "*l'auteur présumé* rendered as *the presumed perpetrator* instead of *the alleged perpetrator*."
+  ],
+  "pt": [
+   "*o presumível autor* rendered as *the presumable perpetrator* instead of *the alleged perpetrator*."
+  ]
+ }
 }

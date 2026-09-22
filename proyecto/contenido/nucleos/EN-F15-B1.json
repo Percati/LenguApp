@@ -133,5 +133,22 @@
   "Does the phrase sound polite and natural?",
   "Does the phrase sound polite and natural?"
  ],
- "promptCorreccion": "Focus only on turn-taking, buying time and asking for repetition. Check whether these tools are used politely and naturally within the conversation. Do not rewrite the text."
+ "promptCorreccion": "Focus only on turn-taking, buying time and asking for repetition. Check whether these tools are used politely and naturally within the conversation. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*¿Cómo?* rendered as *How?* instead of *Sorry?* or *Pardon?*"
+  ],
+  "de": [
+   "*Wie bitte?* rendered as *How please?* instead of *Sorry?* or *Pardon?*"
+  ],
+  "it": [
+   "*Come?* rendered as *How?* instead of *Sorry?* or *Pardon?*"
+  ],
+  "fr": [
+   "*Comment ?* rendered as *How?* instead of *Sorry?* or *Pardon?*"
+  ],
+  "pt": [
+   "*Como?* rendered as *How?* instead of *Sorry?* or *Pardon?*"
+  ]
+ }
 }

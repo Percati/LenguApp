@@ -137,5 +137,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on defining relative clauses. Check the choice between who, which and that, and check that no comma is used before a defining clause. Do not rewrite the text."
+ "promptCorreccion": "Focus only on defining relative clauses. Check the choice between who, which and that, and check that no comma is used before a defining clause. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*que* rendered as *which* for people: *the man which lives here* instead of *who*."
+  ],
+  "de": [
+   "*wo* rendered as *where* for time: *the day where we met* instead of *the day when* or *the day we met*."
+  ],
+  "it": [
+   "*che* rendered as *which* for people: *the teacher which helped me* instead of *who*."
+  ],
+  "fr": [
+   "*dont* rendered as *whose*: *the film whose I told you* instead of *the film I told you about*."
+  ],
+  "pt": [
+   "*que* rendered as *which* for people: *the doctor which saw me* instead of *who*."
+  ]
+ }
 }

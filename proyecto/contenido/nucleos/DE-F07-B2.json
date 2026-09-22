@@ -132,5 +132,22 @@
   "Habe ich dürfte mindestens einmal aktiv benutzt?",
   "Ist die Vermutung klar als Vermutung markiert, nicht als Tatsache?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalverben der Vermutung. Prüfen Sie, ob der Sicherheitsgrad zur Situation passt und ob mehr als eine Form benutzt wird. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalverben der Vermutung. Prüfen Sie, ob der Sicherheitsgrad zur Situation passt und ob mehr als eine Form benutzt wird. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Debe de estar en casa* als *Er soll zu Hause sein* übertragen, was eine Fremdbehauptung ausdrückt, statt *Er dürfte zu Hause sein*."
+  ],
+  "it": [
+   "*Dovrebbe essere a casa* als *Er soll zu Hause sein* übertragen, was eine Fremdbehauptung ausdrückt, statt *Er dürfte zu Hause sein*."
+  ],
+  "fr": [
+   "*Il doit être chez lui* als *Er soll zu Hause sein* übertragen, was eine Fremdbehauptung ausdrückt, statt *Er muss* oder *dürfte zu Hause sein*."
+  ],
+  "pt": [
+   "*Deve estar em casa* als *Er soll zu Hause sein* übertragen, was eine Fremdbehauptung ausdrückt, statt *Er dürfte zu Hause sein*."
+  ],
+  "en": [
+   "*He should be home* als *Er soll zu Hause sein* übertragen, was eine Fremdbehauptung ausdrückt, statt *Er dürfte zu Hause sein*."
+  ]
+ }
 }

@@ -136,5 +136,22 @@
   "Are the participles correct throughout?",
   "Are at least two of the three structures used in the same passage?"
  ],
- "promptCorreccion": "Focus only on wish, modal perfect and the third conditional. Check for would inside the if-clause and the choice between should and could have. Do not rewrite the text."
+ "promptCorreccion": "Focus only on wish, modal perfect and the third conditional. Check for would inside the if-clause and the choice between should and could have. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*tendría que haber ido* rendered as *I would have to have gone* instead of *I should have gone*."
+  ],
+  "de": [
+   "*wenn … nur* rendered with *when*: *When I had only known* instead of *If only I had known*."
+  ],
+  "it": [
+   "*sarei dovuto venire* rendered as *I would have had to come*, which changes the meaning, instead of *I should have come*."
+  ],
+  "fr": [
+   "*j'aurais dû venir* rendered as *I would have had to come*, which changes the meaning, instead of *I should have come*."
+  ],
+  "pt": [
+   "*devia ter vindo* rendered as *I had to come*, which states a fact, instead of *I should have come*."
+  ]
+ }
 }

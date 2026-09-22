@@ -133,5 +133,22 @@
   "Habe ich mehr als eine Formel benutzt, nicht immer dieselbe?",
   "Ist bei Ja, aber das aber klar vorhanden?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Zustimmung und Widerspruch. Prüfen Sie, ob die Formel klar und höflich ist. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Zustimmung und Widerspruch. Prüfen Sie, ob die Formel klar und höflich ist. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Auf eine verneinte Frage mit *Ja* widersprechen wie mit *sí*: *Kommst du nicht? – Ja!* statt *Doch!*"
+  ],
+  "it": [
+   "Auf eine verneinte Frage mit *Ja* widersprechen wie mit *sì*: *Kommst du nicht? – Ja!* statt *Doch!*"
+  ],
+  "fr": [
+   "*Ça dépend* als *Das hängt ab* übertragen statt *Das kommt darauf an*."
+  ],
+  "pt": [
+   "*Depende* als *Das hängt ab* übertragen statt *Das kommt darauf an*."
+  ],
+  "en": [
+   "Auf eine verneinte Frage mit *Ja* widersprechen wie mit *yes*: *Kommst du nicht? – Ja!* statt *Doch!*"
+  ]
+ }
 }

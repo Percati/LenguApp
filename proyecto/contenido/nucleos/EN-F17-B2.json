@@ -136,5 +136,22 @@
   "Would the intended reader find the register appropriate?",
   "Have I written the same content in both registers to compare?"
  ],
- "promptCorreccion": "Focus only on register. Check for mixed formal and informal features in the same message, especially contractions next to formal vocabulary. Do not rewrite the text."
+ "promptCorreccion": "Focus only on register. Check for mixed formal and informal features in the same message, especially contractions next to formal vocabulary. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Estimado señor* rendered as *Esteemed Sir* instead of *Dear Mr …*."
+  ],
+  "de": [
+   "*Sehr geehrte Damen und Herren* rendered as *Very honoured ladies and gentlemen* instead of *Dear Sir or Madam*."
+  ],
+  "it": [
+   "*Gentile Signor Rossi* rendered as *Gentle Mr Rossi* instead of *Dear Mr Rossi*."
+  ],
+  "fr": [
+   "The long closing *Veuillez agréer…* carried over instead of a simple *Yours sincerely* or *Kind regards*."
+  ],
+  "pt": [
+   "*Exmo. Senhor* rendered as *Excellent Sir* instead of *Dear Sir*."
+  ]
+ }
 }

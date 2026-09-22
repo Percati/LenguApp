@@ -185,5 +185,22 @@
   "Did compression turn any tentative finding into a flat fact?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on summarising. (1) Is the conclusion in the first two sentences? (2) Did I retell chronologically instead of summarising? (3) Did compression turn a tentative claim into a fact? (4) Where would someone with no background get lost? Do not rewrite the text."
+ "promptCorreccion": "Focus only on summarising. (1) Is the conclusion in the first two sentences? (2) Did I retell chronologically instead of summarising? (3) Did compression turn a tentative claim into a fact? (4) Where would someone with no background get lost? Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Cabe destacar que* rendered as *It fits to highlight that* instead of *It is worth noting that*."
+  ],
+  "de": [
+   "*Hervorzuheben ist* rendered as *To highlight is* instead of *It is worth highlighting that*."
+  ],
+  "it": [
+   "*Va detto che* rendered as *It goes said that* instead of *It should be said that*."
+  ],
+  "fr": [
+   "*Il convient de noter* rendered as *It convenes to note* instead of *It is worth noting*."
+  ],
+  "pt": [
+   "*Importa referir* rendered as *It imports to refer* instead of *It is worth mentioning*."
+  ]
+ }
 }

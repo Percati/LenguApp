@@ -133,5 +133,22 @@
   "Have I used more than one summarising phrase?",
   "Does it sound like a summary, not a retelling?"
  ],
- "promptCorreccion": "Focus only on whether the main idea is clear and the summary stays compact, without retelling the whole original text in detail. Do not rewrite the text."
+ "promptCorreccion": "Focus only on whether the main idea is clear and the summary stays compact, without retelling the whole original text in detail. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*En resumen* rendered as *In resume* instead of *In short* or *To sum up*."
+  ],
+  "de": [
+   "*Kurz gesagt* rendered as *Short said* instead of *In short*."
+  ],
+  "it": [
+   "*In sintesi* rendered as *In synthesis* instead of *In short* or *To sum up*."
+  ],
+  "fr": [
+   "*En résumé* rendered as *In resume* instead of *In short* or *To sum up*."
+  ],
+  "pt": [
+   "*Em resumo* rendered as *In resume* instead of *In short* or *To sum up*."
+  ]
+ }
 }

@@ -1,23 +1,49 @@
 {
- "skillId": "EN-G20", "nivel": "C2", "idioma": "en",
+ "skillId": "EN-G20",
+ "nivel": "C2",
+ "idioma": "en",
  "titulo": "Unreal Past: I wish, if only, it's time",
  "categoria": "grammar",
  "ancla": "EGP C2",
  "descripcion": "At C2 the unreal past extends to its least intuitive forms: wish + would for a critique of someone else's ongoing behaviour, and as if / as though with a perfect form for a retrospective unreal comparison. The everyday uses are assumed known.",
  "cuadroReferencia": {
   "titulo": "The less intuitive forms",
-  "columnas": ["Form", "Function", "Example"],
+  "columnas": [
+   "Form",
+   "Function",
+   "Example"
+  ],
   "filas": [
-   ["wish + would", "irritation at someone else's habit", "I wish he would stop interrupting."],
-   ["as if/though + past perfect", "retrospective unreal comparison", "She spoke as if she had rehearsed it."],
-   ["it's (high) time + past simple", "overdue action, mild reproach", "It's high time we addressed this properly."]
+   [
+    "wish + would",
+    "irritation at someone else's habit",
+    "I wish he would stop interrupting."
+   ],
+   [
+    "as if/though + past perfect",
+    "retrospective unreal comparison",
+    "She spoke as if she had rehearsed it."
+   ],
+   [
+    "it's (high) time + past simple",
+    "overdue action, mild reproach",
+    "It's high time we addressed this properly."
+   ]
   ],
   "notaPie": "Wish + would can never refer to the speaker's own action — I wish I would stop is not standard; use I wish I could stop instead."
  },
  "ejemplos": [
-  {"texto": "I wish he would stop interrupting every single meeting.", "audio": true},
-  {"texto": "She spoke as if she had rehearsed every word in advance.", "audio": true},
-  {"texto": "It's high time we addressed this properly, not just talked around it."}
+  {
+   "texto": "I wish he would stop interrupting every single meeting.",
+   "audio": true
+  },
+  {
+   "texto": "She spoke as if she had rehearsed every word in advance.",
+   "audio": true
+  },
+  {
+   "texto": "It's high time we addressed this properly, not just talked around it."
+  }
  ],
  "notas": [
   "Wish + would carries an implicit complaint about a repeated, controllable behaviour — it's rarely neutral.",
@@ -37,12 +63,72 @@
   "Treating it's time and it's high time as interchangeable in tone."
  ],
  "redemittel": [
-  {"expresion": "I wish he/she would…", "funcion": "irritation, someone else's habit", "traducciones": {"es": "ojalá dejara de…","de": "Ich wünschte, er/sie würde…","fr": "J’aimerais qu’il/elle…","it": "Vorrei che lui/lei…","pt": "Gostaria que ele/ela…"}},
-  {"expresion": "…as if/as though…had…", "funcion": "retrospective unreal comparison", "traducciones": {"es": "…como si hubiera…","de": "…als ob… gehabt hätte","fr": "…comme si… avait…","it": "…come se… avesse…","pt": "…como se tivesse…"}},
-  {"expresion": "It's high time…", "funcion": "overdue, mild reproach", "traducciones": {"es": "ya es hora de que…","de": "Es ist höchste Zeit, dass…","fr": "Il est grand temps de…","it": "È proprio ora di…","pt": "Já é mais do que tempo de…"}},
-  {"expresion": "If only he/she would…", "funcion": "stronger version of wish + would", "traducciones": {"es": "si tan solo dejara de…","de": "Wenn er/sie doch nur… würde","fr": "Si seulement il/elle…","it": "Se solo lui/lei…","pt": "Se ao menos ele/ela…"}},
-  {"expresion": "He acts as if nothing had happened.", "funcion": "fixed retrospective comparison", "traducciones": {"es": "actúa como si nada hubiera pasado","de": "Er tut so, als wäre nichts passiert.","fr": "Il agit comme si rien ne s’était passé.","it": "Si comporta come se non fosse successo nulla.","pt": "Ele age como se nada tivesse acontecido."}},
-  {"expresion": "It's about time…", "funcion": "informal equivalent of it's time", "traducciones": {"es": "ya era hora de que…","de": "Es wird langsam Zeit, dass…","fr": "Il serait temps de…","it": "Sarebbe ora di…","pt": "Já era tempo de…"}}
+  {
+   "expresion": "I wish he/she would…",
+   "funcion": "irritation, someone else's habit",
+   "traducciones": {
+    "es": "ojalá dejara de…",
+    "de": "Ich wünschte, er/sie würde…",
+    "fr": "J’aimerais qu’il/elle…",
+    "it": "Vorrei che lui/lei…",
+    "pt": "Gostaria que ele/ela…"
+   }
+  },
+  {
+   "expresion": "…as if/as though…had…",
+   "funcion": "retrospective unreal comparison",
+   "traducciones": {
+    "es": "…como si hubiera…",
+    "de": "…als ob… gehabt hätte",
+    "fr": "…comme si… avait…",
+    "it": "…come se… avesse…",
+    "pt": "…como se tivesse…"
+   }
+  },
+  {
+   "expresion": "It's high time…",
+   "funcion": "overdue, mild reproach",
+   "traducciones": {
+    "es": "ya es hora de que…",
+    "de": "Es ist höchste Zeit, dass…",
+    "fr": "Il est grand temps de…",
+    "it": "È proprio ora di…",
+    "pt": "Já é mais do que tempo de…"
+   }
+  },
+  {
+   "expresion": "If only he/she would…",
+   "funcion": "stronger version of wish + would",
+   "traducciones": {
+    "es": "si tan solo dejara de…",
+    "de": "Wenn er/sie doch nur… würde",
+    "fr": "Si seulement il/elle…",
+    "it": "Se solo lui/lei…",
+    "pt": "Se ao menos ele/ela…"
+   }
+  },
+  {
+   "expresion": "He acts as if nothing had happened.",
+   "funcion": "fixed retrospective comparison",
+   "traducciones": {
+    "es": "actúa como si nada hubiera pasado",
+    "de": "Er tut so, als wäre nichts passiert.",
+    "fr": "Il agit comme si rien ne s’était passé.",
+    "it": "Si comporta come se non fosse successo nulla.",
+    "pt": "Ele age como se nada tivesse acontecido."
+   }
+  },
+  {
+   "expresion": "It's about time…",
+   "funcion": "informal equivalent of it's time",
+   "traducciones": {
+    "es": "ya era hora de que…",
+    "de": "Es wird langsam Zeit, dass…",
+    "fr": "Il serait temps de…",
+    "it": "Sarebbe ora di…",
+    "pt": "Já era tempo de…"
+   }
+  }
  ],
  "autochequeo": [
   "Is wish + would used only about someone other than the speaker?",
@@ -51,5 +137,22 @@
   "Does the sentence carry the implicit complaint that wish + would requires?",
   "Would a native speaker read irritation here, or does it sound neutral by mistake?"
  ],
- "promptCorreccion": "Focus only on wish + would, as if/as though with the past perfect, and it's (high) time. Check the subject restriction on wish + would and the tense after as if. Do not rewrite the text."
+ "promptCorreccion": "Focus only on wish + would, as if/as though with the past perfect, and it's (high) time. Check the subject restriction on wish + would and the tense after as if. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*¡Ya era hora!* rendered as *It was already time!* instead of *About time!*"
+  ],
+  "de": [
+   "*Es wird Zeit, dass* rendered as *It becomes time that* instead of *It's time*."
+  ],
+  "it": [
+   "*sarebbe ora che* rendered as *It would be time that* instead of *It's (high) time*."
+  ],
+  "fr": [
+   "*il serait temps que* rendered as *It would be time that* instead of *It's (high) time*."
+  ],
+  "pt": [
+   "*já era hora* rendered as *It was already time* instead of *About time*."
+  ]
+ }
 }

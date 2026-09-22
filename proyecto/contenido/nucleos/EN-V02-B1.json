@@ -133,5 +133,22 @@
   "Does the text sound natural?",
   "Does the text sound natural?"
  ],
- "promptCorreccion": "Focus only on everyday phrasal verbs. Check the preposition used in each one and suggest a phrasal verb wherever a formal one-word verb was used instead. Do not rewrite the text."
+ "promptCorreccion": "Focus only on everyday phrasal verbs. Check the preposition used in each one and suggest a phrasal verb wherever a formal one-word verb was used instead. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*recoger a alguien* rendered as *recollect someone* instead of *pick someone up*."
+  ],
+  "de": [
+   "*abnehmen* rendered as *take off*: *I took off five kilos* instead of *I lost five kilos*."
+  ],
+  "it": [
+   "*andare a prendere* rendered as *go to take someone* instead of *pick someone up*."
+  ],
+  "fr": [
+   "*aller chercher quelqu'un* rendered as *go search someone* instead of *pick someone up*."
+  ],
+  "pt": [
+   "*ir buscar alguém* rendered as *go search someone* instead of *pick someone up*."
+  ]
+ }
 }

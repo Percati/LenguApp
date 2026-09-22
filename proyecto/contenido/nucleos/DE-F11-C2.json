@@ -132,5 +132,22 @@
   "Wirkt das Gespräch moderiert, nicht dominiert?",
   "Würde ein Fachpublikum das Gespräch als gut moderiert empfinden?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Einwürfe, Nachfragen und Korrekturen taktvoll und gesichtswahrend formuliert sind. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Einwürfe, Nachfragen und Korrekturen taktvoll und gesichtswahrend formuliert sind. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*¿No será que…?* als *Wird es nicht sein, dass…?* übertragen statt *Kann es sein, dass…?*"
+  ],
+  "it": [
+   "*Non sarà che…?* als *Wird es nicht sein, dass…?* übertragen statt *Kann es sein, dass…?*"
+  ],
+  "fr": [
+   "*Ne serait-ce pas que…?* als *Wäre es nicht, dass…?* übertragen statt *Kann es sein, dass…?*"
+  ],
+  "pt": [
+   "*Não será que…?* als *Wird es nicht sein, dass…?* übertragen statt *Kann es sein, dass…?*"
+  ],
+  "en": [
+   "*Isn't it the case that…?* als *Ist es nicht der Fall, dass…?* übertragen statt *Ist es nicht so, dass…?*"
+  ]
+ }
 }

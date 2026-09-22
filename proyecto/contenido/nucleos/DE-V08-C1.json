@@ -142,5 +142,22 @@
   "Habe ich mindestens vier spezifisch schweizerische Begriffe verwendet?",
   "Ist der Ton direkt genug für den Schweizer Kontext, ohne unhöflich zu wirken?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Schweizer professionellen Kontext: Wortschatz, Rechtschreibung und Ton. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Schweizer professionellen Kontext: Wortschatz, Rechtschreibung und Ton. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*consulta* als *Konsultation* übertragen statt *Vernehmlassung*."
+  ],
+  "it": [
+   "*consultazione* als *Konsultation* übertragen statt *Vernehmlassung*."
+  ],
+  "fr": [
+   "*procédure de consultation* als *Konsultationsverfahren* übertragen statt *Vernehmlassungsverfahren*."
+  ],
+  "pt": [
+   "*consulta pública* als *öffentliche Konsultation* übertragen statt *Vernehmlassung*."
+  ],
+  "en": [
+   "*consultation* als *Konsultation* übertragen statt *Vernehmlassung*."
+  ]
+ }
 }

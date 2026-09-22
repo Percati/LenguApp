@@ -136,5 +136,22 @@
   "Would an expert reader sense authorial control here?",
   "Does the text also have a genre-appropriate baseline register, not just the shift?"
  ],
- "promptCorreccion": "Focus only on deliberate register shifts. Check that there's at most one, and that it's set up by the surrounding text rather than jarring. Do not rewrite the text."
+ "promptCorreccion": "Focus only on deliberate register shifts. Check that there's at most one, and that it's set up by the surrounding text rather than jarring. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Defaulting to the Latinate cognate (*commence*, *terminate*, *obtain*) because it matches Spanish, which makes neutral prose sound stiff."
+  ],
+  "de": [
+   "Calquing German separable verbs as phrasal verbs: *make on the light* from *das Licht anmachen* instead of *turn on the light*."
+  ],
+  "it": [
+   "Defaulting to the Latinate cognate (*commence*, *terminate*, *obtain*) because it matches Italian, which makes neutral prose sound stiff."
+  ],
+  "fr": [
+   "Defaulting to the Latinate cognate (*commence*, *terminate*, *obtain*) because it matches French, which makes neutral prose sound stiff."
+  ],
+  "pt": [
+   "Defaulting to the Latinate cognate (*commence*, *terminate*, *obtain*) because it matches Portuguese, which makes neutral prose sound stiff."
+  ]
+ }
 }

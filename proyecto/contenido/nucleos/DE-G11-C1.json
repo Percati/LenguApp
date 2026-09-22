@@ -136,5 +136,22 @@
   "Bezieht sich was auf den ganzen Satz und nicht auf ein einzelnes Nomen?",
   "Ist das Register des ganzen Textes mit welcher konsistent?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die erweiterten Relativkonstruktionen: weiterführendes was, Genitivpräpositionen, welcher. Prüfen Sie jeden Fall auf die richtige Form. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die erweiterten Relativkonstruktionen: weiterführendes was, Genitivpräpositionen, welcher. Prüfen Sie jeden Fall auf die richtige Form. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*lo que* als *das* übertragen: *Er kam zu spät, das mich ärgerte* statt *was mich ärgerte*."
+  ],
+  "en": [
+   "*which* als weiterführendes Relativum mit *welches* übertragen: *Er kam zu spät, welches mich ärgerte* statt *was*."
+  ],
+  "it": [
+   "*il che* als *das* übertragen: *Er kam zu spät, das mich ärgerte* statt *was mich ärgerte*."
+  ],
+  "fr": [
+   "*ce qui* als *das, was* doppelt übertragen: *Er kam zu spät, das, was mich ärgerte* statt *was mich ärgerte*."
+  ],
+  "pt": [
+   "*onde* für jeden Ortsbezug mit *wo* übertragen, auch im formellen Text: *die Firma, wo ich arbeite* statt *in der*."
+  ]
+ }
 }

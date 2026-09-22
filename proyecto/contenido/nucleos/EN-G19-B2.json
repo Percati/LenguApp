@@ -136,5 +136,22 @@
   "Does the position sound natural, not translated from Spanish?",
   "Are at least four different adverb positions used correctly?"
  ],
- "promptCorreccion": "Focus only on adverb placement. Check the position of frequency adverbs relative to be and main verbs, and the position of manner adverbs relative to the object. Do not rewrite the text."
+ "promptCorreccion": "Focus only on adverb placement. Check the position of frequency adverbs relative to be and main verbs, and the position of manner adverbs relative to the object. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*ya no* rendered as *already not*: *I already don't live there* instead of *I no longer live there*."
+  ],
+  "de": [
+   "Keeping the German order time–manner–place: *I travel today by train to Bern* instead of *I'm travelling to Bern by train today*."
+  ],
+  "it": [
+   "*non … più* rendered as *not … more*: *I don't live there more* instead of *I don't live there any more*."
+  ],
+  "fr": [
+   "*ne … plus* rendered as *not … more*: *I don't smoke more* instead of *I don't smoke any more*."
+  ],
+  "pt": [
+   "*já não* rendered as *already not*: *I already don't work there* instead of *I no longer work there*."
+  ]
+ }
 }

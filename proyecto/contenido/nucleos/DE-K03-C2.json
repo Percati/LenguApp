@@ -136,5 +136,22 @@
   "Würde eine aufgelöste Fassung an dieser Stelle die Zielgruppe besser erreichen?",
   "Würde ein Fachleser die Registerentscheidung als angemessen empfinden?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen Genitivkette und Auflösung. Prüfen Sie, ob diese Wahl zur Zielgruppe des Textes passt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen Genitivkette und Auflösung. Prüfen Sie, ob diese Wahl zur Zielgruppe des Textes passt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*en el marco de* als *im Rahmen von dem* übertragen statt *im Rahmen des*."
+  ],
+  "it": [
+   "*ai sensi di* als *im Sinne von dem* übertragen statt *im Sinne des*."
+  ],
+  "fr": [
+   "*dans le cadre de* als *im Rahmen von dem* übertragen statt *im Rahmen des*."
+  ],
+  "pt": [
+   "*no âmbito de* als *im Bereich von dem* übertragen statt *im Rahmen des*."
+  ],
+  "en": [
+   "*within the scope of* als *innerhalb des Umfangs von* übertragen statt *im Rahmen des*."
+  ]
+ }
 }

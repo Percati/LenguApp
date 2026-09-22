@@ -136,5 +136,22 @@
   "Are at least three reduced clauses used?",
   "Would a full relative clause sound more natural anywhere I used a reduced one?"
  ],
- "promptCorreccion": "Focus only on reduced relative clauses. Check whether each reduction is grammatically allowed and whether the participle form is correct. Do not rewrite the text."
+ "promptCorreccion": "Focus only on reduced relative clauses. Check whether each reduction is grammatically allowed and whether the participle form is correct. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Using *-ing* after the noun for a single finished action: *the letter arriving yesterday* instead of *the letter that arrived yesterday*."
+  ],
+  "de": [
+   "Placing the participle phrase before the noun: *the in Zurich living people* instead of *the people living in Zurich*."
+  ],
+  "it": [
+   "*proveniente da* rendered as *provenient from*: *the train provenient from Milan* instead of *coming from Milan*."
+  ],
+  "fr": [
+   "*en provenance de* rendered as *in provenance of*: *the train in provenance of Lyon* instead of *coming from Lyon*."
+  ],
+  "pt": [
+   "*proveniente de* rendered as *provenient from*: *the train provenient from Porto* instead of *coming from Porto*."
+  ]
+ }
 }

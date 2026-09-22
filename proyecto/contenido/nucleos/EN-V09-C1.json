@@ -141,5 +141,22 @@
   "Have I avoided overcorrecting into an insincerely positive word?",
   "Are at least four connotation pairs used deliberately?"
  ],
- "promptCorreccion": "Focus only on connotation. Flag any word that carries an unintended positive or negative charge and suggest the neutral or opposite-charge alternative. Do not rewrite the text."
+ "promptCorreccion": "Focus only on connotation. Flag any word that carries an unintended positive or negative charge and suggest the neutral or opposite-charge alternative. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*ignorar* rendered as *ignore*, which sounds rude, when you mean *not know*: *I ignore the answer* instead of *I don't know the answer*."
+  ],
+  "de": [
+   "*sympathisch* rendered as *sympathetic*, which means 'compassionate', instead of *likeable* or *nice*."
+  ],
+  "it": [
+   "*ignorare* rendered as *ignore*, which sounds rude, when you mean *not know*: *I ignore the answer* instead of *I don't know the answer*."
+  ],
+  "fr": [
+   "*ignorer* rendered as *ignore*, which sounds rude, when you mean *not know*: *I ignore the answer* instead of *I don't know the answer*."
+  ],
+  "pt": [
+   "*ignorar* rendered as *ignore*, which sounds rude, when you mean *not know*: *I ignore the answer* instead of *I don't know the answer*."
+  ]
+ }
 }

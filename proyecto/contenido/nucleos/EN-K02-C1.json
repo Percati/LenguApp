@@ -137,5 +137,22 @@
   "Would the density fit a spoken conversation, or does it belong only in writing?",
   "Is at least one dangling participle risk checked and fixed?"
  ],
- "promptCorreccion": "Focus only on reduced relatives, participle clauses and nominalisation. Flag every dangling participle, check whether reductions are grammatically allowed, and say whether the density fits the register. Do not rewrite the text."
+ "promptCorreccion": "Focus only on reduced relatives, participle clauses and nominalisation. Flag every dangling participle, check whether reductions are grammatically allowed, and say whether the density fits the register. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*realización* rendered as *realisation*: *the realisation of the study* instead of *carrying out the study*."
+  ],
+  "de": [
+   "Building *of*-chains from German genitive chains: *the checking of the calculation of the loads* instead of *checking the load calculation*."
+  ],
+  "it": [
+   "*effettuare* rendered as *effectuate*: *to effectuate a check* instead of *to carry out a check*."
+  ],
+  "fr": [
+   "*réalisation* rendered as *realisation*: *the realisation of the project* instead of *completing the project*."
+  ],
+  "pt": [
+   "*realização* rendered as *realisation*: *the realisation of the study* instead of *carrying out the study*."
+  ]
+ }
 }

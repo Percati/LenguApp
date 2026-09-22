@@ -137,5 +137,22 @@
   "Have I used at least two of the three forms?",
   "Does the sentence sound natural, not translated word for word?"
  ],
- "promptCorreccion": "Focus only on the choice between will, going to and the present continuous for the future. Check whether each matches how planned the event is. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the choice between will, going to and the present continuous for the future. Check whether each matches how planned the event is. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*te llamo luego* rendered in the present: *I call you later* instead of *I'll call you later*."
+  ],
+  "de": [
+   "*ich will nicht* rendered as *I will not*, which states a future, instead of *I don't want to*."
+  ],
+  "it": [
+   "*ti chiamo dopo* rendered in the present: *I call you later* instead of *I'll call you later*."
+  ],
+  "fr": [
+   "*je t'appelle plus tard* rendered in the present: *I call you later* instead of *I'll call you later*."
+  ],
+  "pt": [
+   "*ligo-te mais tarde* rendered in the present: *I call you later* instead of *I'll call you later*."
+  ]
+ }
 }

@@ -133,5 +133,22 @@
   "Does the sentence sound natural, not translated word for word?",
   "Does the sentence sound natural, not translated word for word?"
  ],
- "promptCorreccion": "Focus only on suggestions and responses. Check whether could is used correctly and whether the response is clear, either accepting or proposing something else. Do not rewrite the text."
+ "promptCorreccion": "Focus only on suggestions and responses. Check whether could is used correctly and whether the response is clear, either accepting or proposing something else. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*¿Te apetece…?* rendered as *Does it appetise you…?* instead of *Do you fancy…?* or *Do you feel like…?*"
+  ],
+  "de": [
+   "*Hast du Lust…?* rendered as *Do you have lust…?* instead of *Do you feel like…?*"
+  ],
+  "it": [
+   "*Ti va di…?* rendered as *Does it go to you…?* instead of *Do you feel like…?*"
+  ],
+  "fr": [
+   "*Ça te dit de…?* rendered as *Does it say to you…?* instead of *Do you feel like…?*"
+  ],
+  "pt": [
+   "*Apetece-te…?* rendered as *Does it appetise you…?* instead of *Do you fancy…?*"
+  ]
+ }
 }

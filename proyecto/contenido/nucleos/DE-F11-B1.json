@@ -133,5 +133,22 @@
   "Habe ich mindestens zwei der drei Werkzeuge benutzt?",
   "Klingt der Ton höflich, nicht abrupt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Gesprächssteuerung: Einsteigen, Nachfragen, Korrigieren. Prüfen Sie, ob die Formeln höflich und klar sind. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Gesprächssteuerung: Einsteigen, Nachfragen, Korrigieren. Prüfen Sie, ob die Formeln höflich und klar sind. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*¿Cómo?* als blosses *Wie?* übertragen, was unhöflich wirkt, statt *Wie bitte?*"
+  ],
+  "it": [
+   "*Come?* als blosses *Wie?* übertragen, was unhöflich wirkt, statt *Wie bitte?*"
+  ],
+  "fr": [
+   "*Comment ?* als blosses *Wie?* übertragen, was unhöflich wirkt, statt *Wie bitte?*"
+  ],
+  "pt": [
+   "*Como?* als blosses *Wie?* übertragen, was unhöflich wirkt, statt *Wie bitte?*"
+  ],
+  "en": [
+   "*What?* als *Was?* übertragen, was unhöflich wirkt, statt *Wie bitte?*"
+  ]
+ }
 }

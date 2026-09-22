@@ -136,5 +136,22 @@
   "Nutze ich beide Richtungen aktiv, nicht nur die für mich einfachere?",
   "Würde ein Fachleser den Wechsel als kunstvoll, nicht zufällig empfinden?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den bewussten Wechsel zwischen dichten Partizipialattributen und aufgelösten Relativsätzen innerhalb desselben Textes. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den bewussten Wechsel zwischen dichten Partizipialattributen und aufgelösten Relativsätzen innerhalb desselben Textes. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Jeden Gedanken als Relativsatz mit *que* ausformulieren, weil das Spanische kein vorangestelltes erweitertes Attribut kennt, auch wo ein kurzes Attribut natürlicher wäre."
+  ],
+  "it": [
+   "Jeden Gedanken als Relativsatz mit *che* ausformulieren, weil das Italienische kein vorangestelltes erweitertes Attribut kennt, auch wo ein kurzes Attribut natürlicher wäre."
+  ],
+  "fr": [
+   "Jeden Gedanken als Relativsatz mit *qui/que* ausformulieren, weil das Französische kein vorangestelltes erweitertes Attribut kennt, auch wo ein kurzes Attribut natürlicher wäre."
+  ],
+  "pt": [
+   "Jeden Gedanken als Relativsatz mit *que* ausformulieren, weil das Portugiesische kein vorangestelltes erweitertes Attribut kennt, auch wo ein kurzes Attribut natürlicher wäre."
+  ],
+  "en": [
+   "Nur kurze englische Vorfeld-Attribute (*the recently renovated building*) nachbilden und längere Attribute nie wagen, obwohl der Text sie verlangt."
+  ]
+ }
 }

@@ -132,5 +132,22 @@
   "Would an expert on this topic find the confidence level appropriate?",
   "Have I avoided false modesty that just avoids taking any position?"
  ],
- "promptCorreccion": "Focus only on how the opinion's confidence is calibrated. Check whether the complexity is acknowledged without avoiding the actual answer. Do not rewrite the text."
+ "promptCorreccion": "Focus only on how the opinion's confidence is calibrated. Check whether the complexity is acknowledged without avoiding the actual answer. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Hasta cierto punto* rendered as *Until a certain point* instead of *To some extent*."
+  ],
+  "de": [
+   "*gewissermassen* rendered as *in a certain measure* instead of *to some extent*."
+  ],
+  "it": [
+   "*Fino a un certo punto* rendered as *Until a certain point* instead of *To some extent*."
+  ],
+  "fr": [
+   "*Dans une certaine mesure* rendered as *In a certain measure* instead of *To some extent*."
+  ],
+  "pt": [
+   "*Até certo ponto* rendered as *Until a certain point* instead of *To some extent*."
+  ]
+ }
 }

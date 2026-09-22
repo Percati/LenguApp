@@ -1,22 +1,45 @@
 {
- "skillId": "EN-F18", "nivel": "C2", "idioma": "en", "bilingue": false,
+ "skillId": "EN-F18",
+ "nivel": "C2",
+ "idioma": "en",
+ "bilingue": false,
  "titulo": "Irony, Understatement and Humour",
  "categoria": "fluency",
  "ancla": "EGP C2",
  "descripcion": "At C2 understatement is used with awareness of exactly how much distance it creates from sincerity, and controlled enough to be dropped instantly when a moment calls for directness instead — the mark of command here is knowing when not to use the device, not just how to produce it.",
  "cuadroReferencia": {
   "titulo": "Knowing when to drop the device",
-  "columnas": ["Context", "Register"],
+  "columnas": [
+   "Context",
+   "Register"
+  ],
   "filas": [
-   ["Social, low stakes", "understatement works well"],
-   ["Genuine crisis or grief", "understatement can read as evasive or cold"],
-   ["Switch point", "drop the device the moment sincerity is actually needed"]
+   [
+    "Social, low stakes",
+    "understatement works well"
+   ],
+   [
+    "Genuine crisis or grief",
+    "understatement can read as evasive or cold"
+   ],
+   [
+    "Switch point",
+    "drop the device the moment sincerity is actually needed"
+   ]
   ]
  },
  "ejemplos": [
-  {"texto": "Not the smoothest presentation I've ever given, if I'm honest.", "audio": true},
-  {"texto": "This is serious, and I want to say that plainly, without any of the usual understatement.", "audio": true},
-  {"texto": "I'm not going to make light of this one."}
+  {
+   "texto": "Not the smoothest presentation I've ever given, if I'm honest.",
+   "audio": true
+  },
+  {
+   "texto": "This is serious, and I want to say that plainly, without any of the usual understatement.",
+   "audio": true
+  },
+  {
+   "texto": "I'm not going to make light of this one."
+  }
  ],
  "notas": [
   "Explicitly naming the switch (without any of the usual understatement) signals to the listener that the register has changed on purpose, which prevents the shift from reading as a mood swing.",
@@ -36,12 +59,72 @@
   "Overusing the explicit switch-flagging move until it becomes its own tic."
  ],
  "redemittel": [
-  {"expresion": "Not the smoothest…, if I'm honest.", "funcion": "social understatement", "traducciones": {"es": "No fue lo más fluido…, la verdad.","de": "Nicht gerade die reibungsloseste…, wenn ich ehrlich bin.","fr": "Pas vraiment le/la plus fluide…, pour être honnête.","it": "Non proprio il/la più fluido/a…, se devo essere sincero/a.","pt": "Não foi propriamente o/a mais fluido/a…, para ser sincero/a."}},
-  {"expresion": "…, without any of the usual understatement.", "funcion": "explicitly flags the switch to sincerity", "traducciones": {"es": "…, sin la habitual atenuación.","de": "…, ohne die übliche Untertreibung.","fr": "…, sans l’atténuation habituelle.","it": "…, senza la consueta attenuazione.","pt": "…, sem a habitual atenuação."}},
-  {"expresion": "I want to say that plainly.", "funcion": "marks deliberate directness", "traducciones": {"es": "Quiero decir eso claramente.","de": "Ich möchte das ganz klar sagen.","fr": "Je veux le dire clairement.","it": "Voglio dirlo chiaramente.","pt": "Quero dizê-lo claramente."}},
-  {"expresion": "I'm not going to make light of this.", "funcion": "opts out of humour on purpose", "traducciones": {"es": "No voy a tomarme esto a la ligera.","de": "Ich werde das nicht verharmlosen.","fr": "Je ne vais pas minimiser cela.","it": "Non intendo minimizzare la cosa.","pt": "Não vou desvalorizar isto."}},
-  {"expresion": "This isn't the moment for irony.", "funcion": "names the register shift", "traducciones": {"es": "No es momento para la ironía.","de": "Das ist nicht der Moment für Ironie.","fr": "Ce n’est pas le moment pour l’ironie.","it": "Non è il momento per l’ironia.","pt": "Este não é o momento para ironia."}},
-  {"expresion": "In all seriousness,…", "funcion": "classic marker of the switch", "traducciones": {"es": "Hablando en serio,…","de": "Ganz im Ernst,…","fr": "Très sérieusement,…","it": "Parlando seriamente,…","pt": "Falando a sério,…"}}
+  {
+   "expresion": "Not the smoothest…, if I'm honest.",
+   "funcion": "social understatement",
+   "traducciones": {
+    "es": "No fue lo más fluido…, la verdad.",
+    "de": "Nicht gerade die reibungsloseste…, wenn ich ehrlich bin.",
+    "fr": "Pas vraiment le/la plus fluide…, pour être honnête.",
+    "it": "Non proprio il/la più fluido/a…, se devo essere sincero/a.",
+    "pt": "Não foi propriamente o/a mais fluido/a…, para ser sincero/a."
+   }
+  },
+  {
+   "expresion": "…, without any of the usual understatement.",
+   "funcion": "explicitly flags the switch to sincerity",
+   "traducciones": {
+    "es": "…, sin la habitual atenuación.",
+    "de": "…, ohne die übliche Untertreibung.",
+    "fr": "…, sans l’atténuation habituelle.",
+    "it": "…, senza la consueta attenuazione.",
+    "pt": "…, sem a habitual atenuação."
+   }
+  },
+  {
+   "expresion": "I want to say that plainly.",
+   "funcion": "marks deliberate directness",
+   "traducciones": {
+    "es": "Quiero decir eso claramente.",
+    "de": "Ich möchte das ganz klar sagen.",
+    "fr": "Je veux le dire clairement.",
+    "it": "Voglio dirlo chiaramente.",
+    "pt": "Quero dizê-lo claramente."
+   }
+  },
+  {
+   "expresion": "I'm not going to make light of this.",
+   "funcion": "opts out of humour on purpose",
+   "traducciones": {
+    "es": "No voy a tomarme esto a la ligera.",
+    "de": "Ich werde das nicht verharmlosen.",
+    "fr": "Je ne vais pas minimiser cela.",
+    "it": "Non intendo minimizzare la cosa.",
+    "pt": "Não vou desvalorizar isto."
+   }
+  },
+  {
+   "expresion": "This isn't the moment for irony.",
+   "funcion": "names the register shift",
+   "traducciones": {
+    "es": "No es momento para la ironía.",
+    "de": "Das ist nicht der Moment für Ironie.",
+    "fr": "Ce n’est pas le moment pour l’ironie.",
+    "it": "Non è il momento per l’ironia.",
+    "pt": "Este não é o momento para ironia."
+   }
+  },
+  {
+   "expresion": "In all seriousness,…",
+   "funcion": "classic marker of the switch",
+   "traducciones": {
+    "es": "Hablando en serio,…",
+    "de": "Ganz im Ernst,…",
+    "fr": "Très sérieusement,…",
+    "it": "Parlando seriamente,…",
+    "pt": "Falando a sério,…"
+   }
+  }
  ],
  "autochequeo": [
   "Is understatement avoided in genuinely serious or painful moments?",
@@ -50,5 +133,22 @@
   "Is the explicit-switch move used sparingly, not as a tic?",
   "Does the overall tone match the actual stakes of the situation?"
  ],
- "promptCorreccion": "Focus only on whether understatement is dropped appropriately for serious moments, and whether any switch to directness is clearly signalled. Do not rewrite the text."
+ "promptCorreccion": "Focus only on whether understatement is dropped appropriately for serious moments, and whether any switch to directness is clearly signalled. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*¡Lo que faltaba!* rendered as *What was missing!* instead of *That's all we needed!*"
+  ],
+  "de": [
+   "*Das hat gerade noch gefehlt* rendered as *That has just still been missing* instead of *That's all we needed*."
+  ],
+  "it": [
+   "*Ci mancava solo questa* rendered as *Only this was missing* instead of *That's all we needed*."
+  ],
+  "fr": [
+   "*Il ne manquait plus que ça* rendered as *Only that was missing* instead of *That's all we needed*."
+  ],
+  "pt": [
+   "*Só faltava isso* rendered as *Only that was missing* instead of *That's all we needed*."
+  ]
+ }
 }

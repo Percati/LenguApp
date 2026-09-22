@@ -136,5 +136,22 @@
   "Würde ein Muttersprachler diese Kombination tatsächlich so benutzen?",
   "Habe ich mindestens zwei verschiedene Dreierkombinationen benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Kombinationen mehrerer Modalpartikeln. Prüfen Sie die Reihenfolge und den emotionalen Feinton. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Kombinationen mehrerer Modalpartikeln. Prüfen Sie die Reihenfolge und den emotionalen Feinton. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*¡Pero si te lo dije!* als *Aber wenn ich es dir gesagt habe!* übertragen statt *Ich hab's dir doch gesagt!*"
+  ],
+  "it": [
+   "*Ma se te l'ho detto!* als *Aber wenn ich es dir gesagt habe!* übertragen statt *Ich hab's dir doch gesagt!*"
+  ],
+  "fr": [
+   "*Mais je te l'ai dit !* als *Aber ich habe es dir gesagt!* übertragen statt *Ich hab's dir doch gesagt!*"
+  ],
+  "pt": [
+   "*Mas eu disse-te!* als *Aber ich habe es dir gesagt!* übertragen statt *Ich hab's dir doch gesagt!*"
+  ],
+  "en": [
+   "Das betonte *did* nachbilden: *Ich tat es dir sagen!* nach *I did tell you!* statt *Ich hab's dir doch gesagt!*"
+  ]
+ }
 }

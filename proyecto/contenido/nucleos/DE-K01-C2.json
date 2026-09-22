@@ -1,23 +1,45 @@
 {
- "skillId": "DE-K01", "nivel": "C2", "idioma": "de",
+ "skillId": "DE-K01",
+ "nivel": "C2",
+ "idioma": "de",
  "titulo": "Konjunktiv II + Konditionalsatz + Modalverb im Perfekt",
  "categoria": "grammar",
  "ancla": "Erkundungen C2",
  "descripcion": "Auf C2 wird dieses Muster in einer Kette von Vorwürfen eingesetzt, die sich gegenseitig verstärken, und mit dem Konjunktiv I kombiniert, um einen fremden Vorwurf zu zitieren statt selbst zu urteilen. Das ist der Unterschied zwischen einem einzelnen Satz und einem ganzen Absatz kontrollierter Kritik.",
  "cuadroReferencia": {
   "titulo": "Vom Einzelsatz zur Argumentationskette",
-  "columnas": ["Ebene", "Beispiel"],
+  "columnas": [
+   "Ebene",
+   "Beispiel"
+  ],
   "filas": [
-   ["Einzelner Vorwurf", "Man hätte das wissen müssen."],
-   ["Verkettung", "Hätte man früher reagiert, hätte man auch früher eingreifen können."],
-   ["Zitierter Vorwurf", "Kritiker meinen, man hätte früher reagieren müssen."]
+   [
+    "Einzelner Vorwurf",
+    "Man hätte das wissen müssen."
+   ],
+   [
+    "Verkettung",
+    "Hätte man früher reagiert, hätte man auch früher eingreifen können."
+   ],
+   [
+    "Zitierter Vorwurf",
+    "Kritiker meinen, man hätte früher reagieren müssen."
+   ]
   ],
   "notaPie": "Eine Kette aus mehr als zwei Vorwürfen wirkt anklagend statt analytisch — auf C2 zählt, wann man aufhört."
  },
  "ejemplos": [
-  {"texto": "Hätte man früher reagiert, hätte man auch früher eingreifen können.", "audio": true},
-  {"texto": "Kritiker meinen, man hätte die Warnzeichen ernster nehmen müssen.", "audio": true},
-  {"texto": "Hätte er nachgefragt, statt zu vermuten, wäre der Fehler vermeidbar gewesen."}
+  {
+   "texto": "Hätte man früher reagiert, hätte man auch früher eingreifen können.",
+   "audio": true
+  },
+  {
+   "texto": "Kritiker meinen, man hätte die Warnzeichen ernster nehmen müssen.",
+   "audio": true
+  },
+  {
+   "texto": "Hätte er nachgefragt, statt zu vermuten, wäre der Fehler vermeidbar gewesen."
+  }
  ],
  "notas": [
   "Eine Verkettung von zwei Vorwürfen (hätte man…, hätte man auch…) ist die anspruchsvollste, aber auch riskanteste Form: sie klingt schnell nach Anklage statt nach Analyse.",
@@ -37,12 +59,72 @@
   "Die Doppelinfinitiv-Reihenfolge in einer langen Verkettung verlieren."
  ],
  "redemittel": [
-  {"expresion": "Hätte man…, hätte man auch…", "funcion": "Verkettung von Vorwürfen", "traducciones": {"es": "de haber…, también se habría podido…", "en": "had one…, one could also have…", "fr": "Si l’on avait…, on aurait aussi pu…", "it": "Se si fosse…, si sarebbe anche potuto…", "pt": "Se se tivesse…, também se poderia ter…"}},
-  {"expresion": "Kritiker meinen, man hätte…müssen.", "funcion": "zitierter Vorwurf", "traducciones": {"es": "los críticos opinan que se debería haber…", "en": "critics argue that one should have…", "fr": "Les critiques estiment qu’on aurait dû…", "it": "I critici sostengono che si sarebbe dovuto…", "pt": "Os críticos defendem que se deveria ter…"}},
-  {"expresion": "Im Rückblick hätte…können.", "funcion": "distanzierter Rückblick", "traducciones": {"es": "en retrospectiva, se habría podido…", "en": "in retrospect, one could have…", "fr": "Avec le recul, on aurait pu…", "it": "Col senno di poi, si sarebbe potuto…", "pt": "Em retrospetiva, poder-se-ia ter…"}},
-  {"expresion": "Das hätte sich vermeiden lassen, wenn…", "funcion": "vermeidbare Folge", "traducciones": {"es": "eso se habría podido evitar si…", "en": "that could have been avoided if…", "fr": "Cela aurait pu être évité si…", "it": "Si sarebbe potuto evitare se…", "pt": "Isso poderia ter sido evitado se…"}},
-  {"expresion": "Es wird argumentiert, man hätte…sollen.", "funcion": "distanzierte Kritik, formell", "traducciones": {"es": "se argumenta que se debería haber…", "en": "it is argued that one should have…", "fr": "Il est avancé qu’on aurait dû…", "it": "Si sostiene che si sarebbe dovuto…", "pt": "Argumenta-se que se deveria ter…"}},
-  {"expresion": "Ob man das hätte verhindern können, bleibt offen.", "funcion": "offen gelassener Vorwurf", "traducciones": {"es": "si eso se habría podido evitar, queda abierto", "en": "whether that could have been prevented remains open", "fr": "La question de savoir si cela aurait pu être évité reste ouverte.", "it": "Resta aperta la questione se ciò si sarebbe potuto evitare.", "pt": "Permanece em aberto se isso poderia ter sido evitado."}}
+  {
+   "expresion": "Hätte man…, hätte man auch…",
+   "funcion": "Verkettung von Vorwürfen",
+   "traducciones": {
+    "es": "de haber…, también se habría podido…",
+    "en": "had one…, one could also have…",
+    "fr": "Si l’on avait…, on aurait aussi pu…",
+    "it": "Se si fosse…, si sarebbe anche potuto…",
+    "pt": "Se se tivesse…, também se poderia ter…"
+   }
+  },
+  {
+   "expresion": "Kritiker meinen, man hätte…müssen.",
+   "funcion": "zitierter Vorwurf",
+   "traducciones": {
+    "es": "los críticos opinan que se debería haber…",
+    "en": "critics argue that one should have…",
+    "fr": "Les critiques estiment qu’on aurait dû…",
+    "it": "I critici sostengono che si sarebbe dovuto…",
+    "pt": "Os críticos defendem que se deveria ter…"
+   }
+  },
+  {
+   "expresion": "Im Rückblick hätte…können.",
+   "funcion": "distanzierter Rückblick",
+   "traducciones": {
+    "es": "en retrospectiva, se habría podido…",
+    "en": "in retrospect, one could have…",
+    "fr": "Avec le recul, on aurait pu…",
+    "it": "Col senno di poi, si sarebbe potuto…",
+    "pt": "Em retrospetiva, poder-se-ia ter…"
+   }
+  },
+  {
+   "expresion": "Das hätte sich vermeiden lassen, wenn…",
+   "funcion": "vermeidbare Folge",
+   "traducciones": {
+    "es": "eso se habría podido evitar si…",
+    "en": "that could have been avoided if…",
+    "fr": "Cela aurait pu être évité si…",
+    "it": "Si sarebbe potuto evitare se…",
+    "pt": "Isso poderia ter sido evitado se…"
+   }
+  },
+  {
+   "expresion": "Es wird argumentiert, man hätte…sollen.",
+   "funcion": "distanzierte Kritik, formell",
+   "traducciones": {
+    "es": "se argumenta que se debería haber…",
+    "en": "it is argued that one should have…",
+    "fr": "Il est avancé qu’on aurait dû…",
+    "it": "Si sostiene che si sarebbe dovuto…",
+    "pt": "Argumenta-se que se deveria ter…"
+   }
+  },
+  {
+   "expresion": "Ob man das hätte verhindern können, bleibt offen.",
+   "funcion": "offen gelassener Vorwurf",
+   "traducciones": {
+    "es": "si eso se habría podido evitar, queda abierto",
+    "en": "whether that could have been prevented remains open",
+    "fr": "La question de savoir si cela aurait pu être évité reste ouverte.",
+    "it": "Resta aperta la questione se ciò si sarebbe potuto evitare.",
+    "pt": "Permanece em aberto se isso poderia ter sido evitado."
+   }
+  }
  ],
  "autochequeo": [
   "Ist die Kette höchstens zwei Vorwürfe lang?",
@@ -51,5 +133,22 @@
   "Wirkt der Absatz analytisch, nicht anklagend?",
   "Habe ich mindestens eine Form der Distanzierung (Kritiker meinen, im Rückblick) benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verkettung von Konjunktiv II, Konditionalsatz und Modalverb im Perfekt. Prüfen Sie, ob die Kette zu lang wird und ob zitierte Vorwürfe den Konjunktiv I tragen. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verkettung von Konjunktiv II, Konditionalsatz und Modalverb im Perfekt. Prüfen Sie, ob die Kette zu lang wird und ob zitierte Vorwürfe den Konjunktiv I tragen. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*debería haberlo hecho* als *Er sollte es gemacht haben* übertragen, was eine Vermutung ausdrückt, statt des Vorwurfs *Er hätte es machen sollen*."
+  ],
+  "it": [
+   "Die Wortfolge von *avrebbe dovuto farlo* übernehmen: *Er hätte gesollt es tun* statt *Er hätte es tun sollen*."
+  ],
+  "fr": [
+   "Die Wortfolge von *il aurait dû le faire* übernehmen: *Er hätte gesollt es tun* statt *Er hätte es tun sollen*."
+  ],
+  "pt": [
+   "*deveria tê-lo feito* als *Er sollte es gemacht haben* übertragen, was eine Vermutung ausdrückt, statt des Vorwurfs *Er hätte es machen sollen*."
+  ],
+  "en": [
+   "*should have done* als *Er sollte es getan haben* übertragen, was eine Vermutung ausdrückt, statt des Vorwurfs *Er hätte es tun sollen*."
+  ]
+ }
 }

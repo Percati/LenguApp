@@ -132,5 +132,22 @@
   "Ist es eine Zusammenfassung, keine Nacherzählung?",
   "Ist die Zusammenfassung deutlich kürzer als der Originaltext?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob der Hauptpunkt am Anfang steht und die Zusammenfassung kompakt bleibt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob der Hauptpunkt am Anfang steht und die Zusammenfassung kompakt bleibt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*El texto habla de* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "it": [
+   "*Il testo parla di* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "fr": [
+   "*Le texte parle de* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "pt": [
+   "*O texto fala de* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "en": [
+   "*The text is about* als *Der Text ist über* übertragen statt *Der Text handelt von*."
+  ]
+ }
 }

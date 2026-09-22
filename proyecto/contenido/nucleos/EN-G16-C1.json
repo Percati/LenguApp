@@ -82,7 +82,6 @@
  },
  "errores": [
   "*Never I have seen* instead of *Never have I seen*.",
-  "*It was then when…* — should be *It was then that…*.",
   "Using inversion where plain order carries the same weight, so the emphasis reads as unearned."
  ],
  "redemittel": [
@@ -182,5 +181,22 @@
   "Does each one earn its emphasis, or is it decoration?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on inversion, clefts and emphatic structures. (1) Check the auxiliary in every inversion. (2) Say whether each structure earns its emphasis or is decorative. (3) Show where plain word order would be better. (4) Give one alternative structure for my three best sentences. Do not rewrite the text."
+ "promptCorreccion": "Focus only on inversion, clefts and emphatic structures. (1) Check the auxiliary in every inversion. (2) Say whether each structure earns its emphasis or is decorative. (3) Show where plain word order would be better. (4) Give one alternative structure for my three best sentences. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*fue entonces cuando* rendered as *It was then when…* instead of *It was then that…*."
+  ],
+  "de": [
+   "Inverting after any fronted adverb, as German V2 requires: *Then have I realised* instead of *Then I realised*."
+  ],
+  "it": [
+   "Dropping the dummy subject in a cleft, as in *è Maria che ha deciso*: *Is Maria who decided* instead of *It was Maria who decided*."
+  ],
+  "fr": [
+   "Using *it is … that* for every emphasis because *c'est … que* is the default French focus device, producing clefts where stress alone would do."
+  ],
+  "pt": [
+   "Dropping the dummy subject in a cleft, as in *é a Maria que decidiu*: *Is Maria who decided* instead of *It was Maria who decided*."
+  ]
+ }
 }

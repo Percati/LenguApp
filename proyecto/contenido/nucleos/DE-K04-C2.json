@@ -1,22 +1,44 @@
 {
- "skillId": "DE-K04", "nivel": "C2", "idioma": "de",
+ "skillId": "DE-K04",
+ "nivel": "C2",
+ "idioma": "de",
  "titulo": "Konjunktiv I + Relativsatz + Nominalstil",
  "categoria": "grammar",
  "ancla": "Erkundungen C2",
  "descripcion": "Auf C2 wird dieses Muster über einen ganzen Absatz hinweg als journalistisches Werkzeug eingesetzt: mehrere berichtete Aussagen werden verkettet, ohne dass der Konjunktiv I ermüdend wirkt, und die Quelle wird nur einmal genannt, während der Rest des Absatzes implizit in ihrer Perspektive bleibt.",
  "cuadroReferencia": {
   "titulo": "Eine Quelle, mehrere berichtete Aussagen",
-  "columnas": ["Element", "Funktion"],
+  "columnas": [
+   "Element",
+   "Funktion"
+  ],
   "filas": [
-   ["Quelle einmal nennen", "Laut Sprecher X sei die Lage…"],
-   ["Folgeaussagen implizit", "Die Massnahme, die man ergriffen habe, wirke bereits."],
-   ["Rückkehr zum eigenen Standpunkt", "Diese Einschätzung wird von Beobachtern allerdings bezweifelt."]
+   [
+    "Quelle einmal nennen",
+    "Laut Sprecher X sei die Lage…"
+   ],
+   [
+    "Folgeaussagen implizit",
+    "Die Massnahme, die man ergriffen habe, wirke bereits."
+   ],
+   [
+    "Rückkehr zum eigenen Standpunkt",
+    "Diese Einschätzung wird von Beobachtern allerdings bezweifelt."
+   ]
   ]
  },
  "ejemplos": [
-  {"texto": "Laut dem Sprecher sei die Lage inzwischen stabil; die Massnahme, die man ergriffen habe, wirke bereits.", "audio": true},
-  {"texto": "Die Zahlen, die veröffentlicht worden seien, seien vorläufig, hiess es weiter.", "audio": true},
-  {"texto": "Diese Einschätzung wird von unabhängigen Beobachtern allerdings bezweifelt."}
+  {
+   "texto": "Laut dem Sprecher sei die Lage inzwischen stabil; die Massnahme, die man ergriffen habe, wirke bereits.",
+   "audio": true
+  },
+  {
+   "texto": "Die Zahlen, die veröffentlicht worden seien, seien vorläufig, hiess es weiter.",
+   "audio": true
+  },
+  {
+   "texto": "Diese Einschätzung wird von unabhängigen Beobachtern allerdings bezweifelt."
+  }
  ],
  "notas": [
   "Die Quelle muss nur beim ersten Satz explizit genannt werden; der Konjunktiv I trägt die Distanzierung für die folgenden Sätze implizit weiter.",
@@ -36,12 +58,72 @@
   "Am Ende nicht zum Indikativ zurückkehren, wodurch unklar bleibt, wo der Bericht endet."
  ],
  "redemittel": [
-  {"expresion": "Laut…sei…", "funcion": "Quelle einmal nennen", "traducciones": {"es": "según…, sería…", "en": "according to…, it was said to be…", "fr": "Selon…, il serait…", "it": "Secondo…, sarebbe…", "pt": "Segundo…, seria…"}},
-  {"expresion": "…, die man…habe, …", "funcion": "implizite Fortführung", "traducciones": {"es": "…, que se habría…, …", "en": "…, which was said to have…, …", "fr": "…, qui aurait…, …", "it": "…, che avrebbe…, …", "pt": "…, que teria…, …"}},
-  {"expresion": "…, hiess es weiter.", "funcion": "Fortsetzung der Quellenangabe", "traducciones": {"es": "…, se añadió.", "en": "…, it was further stated.", "fr": "…, a-t-on ajouté.", "it": "…, è stato aggiunto.", "pt": "…, acrescentou-se."}},
-  {"expresion": "Diese Einschätzung wird…bezweifelt.", "funcion": "Rückkehr zum eigenen Standpunkt", "traducciones": {"es": "esta valoración es puesta en duda por…", "en": "this assessment is disputed by…", "fr": "Cette évaluation est contestée par…", "it": "Questa valutazione è contestata da…", "pt": "Esta avaliação é contestada por…"}},
-  {"expresion": "Wie es aus…verlautete, …", "funcion": "unbestimmte Quelle, formell", "traducciones": {"es": "según se supo desde…, …", "en": "as was reported from…, …", "fr": "Comme il a été rapporté depuis…, …", "it": "Come è stato riferito da…, …", "pt": "Segundo foi divulgado por…, …"}},
-  {"expresion": "Unabhängig davon lässt sich feststellen, dass…", "funcion": "eigener Standpunkt, distanziert", "traducciones": {"es": "independientemente de eso, se puede constatar que…", "en": "independently of that, it can be noted that…", "fr": "Indépendamment de cela, on peut constater que…", "it": "Indipendentemente da ciò, si può osservare che…", "pt": "Independentemente disso, pode constatar-se que…"}}
+  {
+   "expresion": "Laut…sei…",
+   "funcion": "Quelle einmal nennen",
+   "traducciones": {
+    "es": "según…, sería…",
+    "en": "according to…, it was said to be…",
+    "fr": "Selon…, il serait…",
+    "it": "Secondo…, sarebbe…",
+    "pt": "Segundo…, seria…"
+   }
+  },
+  {
+   "expresion": "…, die man…habe, …",
+   "funcion": "implizite Fortführung",
+   "traducciones": {
+    "es": "…, que se habría…, …",
+    "en": "…, which was said to have…, …",
+    "fr": "…, qui aurait…, …",
+    "it": "…, che avrebbe…, …",
+    "pt": "…, que teria…, …"
+   }
+  },
+  {
+   "expresion": "…, hiess es weiter.",
+   "funcion": "Fortsetzung der Quellenangabe",
+   "traducciones": {
+    "es": "…, se añadió.",
+    "en": "…, it was further stated.",
+    "fr": "…, a-t-on ajouté.",
+    "it": "…, è stato aggiunto.",
+    "pt": "…, acrescentou-se."
+   }
+  },
+  {
+   "expresion": "Diese Einschätzung wird…bezweifelt.",
+   "funcion": "Rückkehr zum eigenen Standpunkt",
+   "traducciones": {
+    "es": "esta valoración es puesta en duda por…",
+    "en": "this assessment is disputed by…",
+    "fr": "Cette évaluation est contestée par…",
+    "it": "Questa valutazione è contestata da…",
+    "pt": "Esta avaliação é contestada por…"
+   }
+  },
+  {
+   "expresion": "Wie es aus…verlautete, …",
+   "funcion": "unbestimmte Quelle, formell",
+   "traducciones": {
+    "es": "según se supo desde…, …",
+    "en": "as was reported from…, …",
+    "fr": "Comme il a été rapporté depuis…, …",
+    "it": "Come è stato riferito da…, …",
+    "pt": "Segundo foi divulgado por…, …"
+   }
+  },
+  {
+   "expresion": "Unabhängig davon lässt sich feststellen, dass…",
+   "funcion": "eigener Standpunkt, distanziert",
+   "traducciones": {
+    "es": "independientemente de eso, se puede constatar que…",
+    "en": "independently of that, it can be noted that…",
+    "fr": "Indépendamment de cela, on peut constater que…",
+    "it": "Indipendentemente da ciò, si può osservare che…",
+    "pt": "Independentemente disso, pode constatar-se que…"
+   }
+  }
  ],
  "autochequeo": [
   "Ist die Quelle klar zu Beginn genannt?",
@@ -50,5 +132,22 @@
   "Wird die Quelle nicht unnötig wiederholt?",
   "Kann der Leser jederzeit erkennen, ob er im Bericht oder in der eigenen Einschätzung ist?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz des Konjunktiv I über mehrere Sätze und den klaren Rückkehrsatz zum eigenen Standpunkt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz des Konjunktiv I über mehrere Sätze und den klaren Rückkehrsatz zum eigenen Standpunkt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Die spanische Zeitenfolge (*dijo que había…*) mit dem Plusquamperfekt Indikativ nachbilden: *er hatte gewusst* statt *er habe gewusst*."
+  ],
+  "it": [
+   "Die italienische Zeitenfolge (*disse che aveva…*) mit dem Plusquamperfekt Indikativ nachbilden: *er hatte gewusst* statt *er habe gewusst*."
+  ],
+  "fr": [
+   "Die französische Zeitenfolge (*il a dit qu'il avait…*) mit dem Plusquamperfekt Indikativ nachbilden: *er hatte gewusst* statt *er habe gewusst*."
+  ],
+  "pt": [
+   "Die portugiesische Zeitenfolge (*disse que tinha…*) mit dem Plusquamperfekt Indikativ nachbilden: *er hatte gewusst* statt *er habe gewusst*."
+  ],
+  "en": [
+   "Den englischen *backshift* über viele Sätze fortführen: *er hatte gewusst* statt *er habe gewusst*."
+  ]
+ }
 }

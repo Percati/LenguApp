@@ -141,5 +141,22 @@
   "Have I distinguished a genuine mix from an accidental one?",
   "Would a native speaker read this as sophisticated, not confused?"
  ],
- "promptCorreccion": "Focus only on mixed conditionals. Check whether the time frames genuinely differ and whether each half of the sentence is internally correct. Do not rewrite the text."
+ "promptCorreccion": "Focus only on mixed conditionals. Check whether the time frames genuinely differ and whether each half of the sentence is internally correct. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*De no ser por ti* rendered as *Of not being for you* instead of *But for you* or *Were it not for you*."
+  ],
+  "de": [
+   "*wäre* rendered as *were* in the main clause of a mixed conditional: *Had I studied, I were a doctor now* instead of *I would be a doctor now*."
+  ],
+  "it": [
+   "Collapsing the mixed conditional into the simpler pattern: *If I studied more, I would be a doctor now* where *If I had studied* (*se avessi studiato*) is meant."
+  ],
+  "fr": [
+   "Collapsing the mixed conditional into the simpler pattern: *If I studied more, I would be a doctor now* where *If I had studied* (*si j'avais étudié*) is meant."
+  ],
+  "pt": [
+   "Collapsing the mixed conditional into the simpler pattern: *If I studied more, I would be a doctor now* where *If I had studied* (*se tivesse estudado*) is meant."
+  ]
+ }
 }

@@ -133,5 +133,22 @@
   "Würde ein Fachleser den genauen Sicherheitsgrad erkennen?",
   "Habe ich mindestens vier verschiedene Abstufungen der Skala benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Präzision der Abschwächungsskala. Prüfen Sie, ob jede Formel den tatsächlichen Sicherheitsgrad trifft. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Präzision der Abschwächungsskala. Prüfen Sie, ob jede Formel den tatsächlichen Sicherheitsgrad trifft. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*No se descarta* als *Es wird nicht verworfen* übertragen statt *Es ist nicht auszuschliessen*."
+  ],
+  "it": [
+   "*Non si esclude* als *Es schliesst sich nicht aus* übertragen statt *Es ist nicht auszuschliessen*."
+  ],
+  "fr": [
+   "*Il semblerait que* als *Es würde scheinen* übertragen statt *Anscheinend* oder *Es scheint*."
+  ],
+  "pt": [
+   "*Não é de excluir* als *Es ist nicht von auszuschliessen* übertragen statt *Es ist nicht auszuschliessen*."
+  ],
+  "en": [
+   "*It would appear that* als *Es würde erscheinen, dass* übertragen statt *Es scheint* oder *Anscheinend*."
+  ]
+ }
 }

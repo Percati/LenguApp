@@ -136,5 +136,23 @@
   "Steht bei jeder Präsensform eine klare Zeitangabe?",
   "Habe ich beide Formen mindestens einmal richtig benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verteilung zwischen Präsens und Futur I für Zukünftiges. Prüfen Sie, ob das Präsens für geplante Ereignisse und das Futur I für Vermutungen benutzt wird. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verteilung zwischen Präsens und Futur I für Zukünftiges. Prüfen Sie, ob das Präsens für geplante Ereignisse und das Futur I für Vermutungen benutzt wird. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*ir a* + Infinitiv übertragen: *Ich gehe zu arbeiten morgen* für *voy a trabajar* statt *Ich arbeite morgen*."
+  ],
+  "it": [
+   "*stare per* als *stehen für* übertragen: *Ich stehe für abzufahren* statt *Ich fahre gleich ab*."
+  ],
+  "fr": [
+   "*aller* + Infinitiv übertragen: *Ich gehe essen* für *je vais manger* (Zukunft), obwohl es auf Deutsch eine Bewegung bedeutet."
+  ],
+  "pt": [
+   "*ir* + Infinitiv übertragen: *Ich gehe arbeiten morgen* für *vou trabalhar* statt *Ich arbeite morgen*."
+  ],
+  "en": [
+   "*going to* als *Ich gehe zu* übertragen: *Ich gehe zu kaufen* statt *Ich kaufe*.",
+   "*will* mit *wollen* übersetzen: *Es will regnen* statt *Es wird regnen*."
+  ]
+ }
 }

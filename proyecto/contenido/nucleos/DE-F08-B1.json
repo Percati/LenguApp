@@ -133,5 +133,22 @@
   "Habe ich mindestens zwei verschiedene Formeln benutzt?",
   "Klingt die Zusammenfassung wie eine echte Zusammenfassung, nicht wie eine Nacherzählung?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Hauptidee klar genannt wird und ob die Zusammenfassung kompakt bleibt, ohne den Text nachzuerzählen. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Hauptidee klar genannt wird und ob die Zusammenfassung kompakt bleibt, ohne den Text nachzuerzählen. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*En resumen* als *In Resümee* übertragen statt *Zusammengefasst* oder *Kurz gesagt*."
+  ],
+  "it": [
+   "*In sintesi* als *In Synthese* übertragen statt *Zusammengefasst* oder *Kurz gesagt*."
+  ],
+  "fr": [
+   "*En résumé* als *In Resümee* übertragen statt *Zusammengefasst* oder *Kurz gesagt*."
+  ],
+  "pt": [
+   "*Em resumo* als *In Resümee* übertragen statt *Zusammengefasst* oder *Kurz gesagt*."
+  ],
+  "en": [
+   "*To sum up* als *Um aufzusummieren* übertragen statt *Zusammenfassend*."
+  ]
+ }
 }

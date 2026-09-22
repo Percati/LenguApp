@@ -133,5 +133,22 @@
   "Have I used more than one form of this structure?",
   "Have I used more than one form of this structure?"
  ],
- "promptCorreccion": "Focus only on reported speech. Check the choice between say and tell, and check whether the tense is correctly shifted back one full step. Do not rewrite the text."
+ "promptCorreccion": "Focus only on reported speech. Check the choice between say and tell, and check whether the tense is correctly shifted back one full step. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*contar* rendered as *count*: *He counted me that he was leaving* instead of *He told me*."
+  ],
+  "de": [
+   "*fragen nach* rendered as *ask after*: *He asked after the price* instead of *He asked about the price*."
+  ],
+  "it": [
+   "Keeping the present after a past reporting verb, as colloquial *ha detto che è stanco* allows: *He said he is tired* where the backshift is expected."
+  ],
+  "fr": [
+   "Keeping the future after a past question, from *il m'a demandé si je viendrai*: *She asked if I will come* instead of *if I would come*."
+  ],
+  "pt": [
+   "*contar* rendered as *count*: *She counted me the news* instead of *She told me the news*."
+  ]
+ }
 }

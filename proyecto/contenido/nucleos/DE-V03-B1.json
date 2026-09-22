@@ -54,7 +54,6 @@
   "en": "Das Englische benutzt hier oft be, wo das Deutsche haben verlangt: I'm hungry – ich habe Hunger (oder ich bin hungrig), I'm afraid – ich habe Angst, you're right – du hast recht. Ich bin Angst oder du bist recht sind typische Fehler."
  },
  "errores": [
-  "Sein statt haben benutzen: ich bin Angst statt ich habe Angst.",
   "Diese festen Verbindungen mit einem anderen Verb ersetzen.",
   "Den Artikel bei Hunger und Durst falsch setzen (meist kein Artikel)."
  ],
@@ -133,5 +132,23 @@
   "Habe ich den Artikel bei Hunger/Durst richtig gesetzt (meist keiner)?",
   "Habe ich Recht haben korrekt verwendet?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Kollokationen mit haben. Prüfen Sie, ob haben statt sein verwendet wird. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Kollokationen mit haben. Prüfen Sie, ob haben statt sein verwendet wird. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*tengo frío* als *Ich habe kalt* übertragen statt *Mir ist kalt* (in der Schweiz mundartlich üblich, standardsprachlich falsch)."
+  ],
+  "it": [
+   "*ho freddo* als *Ich habe kalt* übertragen statt *Mir ist kalt* (in der Schweiz mundartlich üblich, standardsprachlich falsch)."
+  ],
+  "fr": [
+   "*j'ai froid* als *Ich habe kalt* übertragen statt *Mir ist kalt* (in der Schweiz mundartlich üblich, standardsprachlich falsch)."
+  ],
+  "pt": [
+   "*tenho frio* als *Ich habe kalt* übertragen statt *Mir ist kalt* (in der Schweiz mundartlich üblich, standardsprachlich falsch)."
+  ],
+  "en": [
+   "*sein* statt *haben* nach *I am afraid* / *I am hungry*: *Ich bin Angst*, *Ich bin Hunger* statt *Ich habe Angst*, *Ich habe Hunger*.",
+   "*I am cold* als *Ich bin kalt* übertragen, was einen gefühlskalten Menschen beschreibt, statt *Mir ist kalt*."
+  ]
+ }
 }

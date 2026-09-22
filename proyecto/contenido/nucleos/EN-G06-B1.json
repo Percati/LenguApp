@@ -137,5 +137,22 @@
   "Have I used at least two full second-conditional sentences?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on the second conditional. Check for would inside the if-clause, check were versus was, and check whether the situation is genuinely unreal. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the second conditional. Check for would inside the if-clause, check were versus was, and check whether the situation is genuinely unreal. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*me gustaría que vinieras* rendered as *I would like that you come* instead of *I would like you to come*."
+  ],
+  "de": [
+   "*ich möchte, dass du kommst* rendered as *I want that you come* instead of *I want you to come*."
+  ],
+  "it": [
+   "*vorrei che venissi* rendered as *I would like that you come* instead of *I would like you to come*."
+  ],
+  "fr": [
+   "*j'aimerais que tu viennes* rendered as *I would like that you come* instead of *I would like you to come*."
+  ],
+  "pt": [
+   "*gostaria que viesses* rendered as *I would like that you come* instead of *I would like you to come*."
+  ]
+ }
 }

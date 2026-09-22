@@ -137,5 +137,22 @@
   "Bin ich mir bei jedem Genus sicher?",
   "Habe ich den Fehler vermieden, die Endung nur nach dem Spanischen zu wählen (nur Genus, kein Kasus)?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendungen im Nominativ und Akkusativ. Prüfen Sie bei jedem Adjektiv den Artikeltyp, das Genus und den Kasus. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendungen im Nominativ und Akkusativ. Prüfen Sie bei jedem Adjektiv den Artikeltyp, das Genus und den Kasus. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Das Genus aus dem Spanischen übernehmen: *der neue Auto* nach *el coche* statt *das neue Auto*."
+  ],
+  "it": [
+   "Das Genus aus dem Italienischen übernehmen: *der kalte Milch* nach *il latte* statt *die kalte Milch*."
+  ],
+  "fr": [
+   "Das Genus aus dem Französischen übernehmen: *der kalte Milch* nach *le lait* statt *die kalte Milch*."
+  ],
+  "pt": [
+   "Das Genus aus dem Portugiesischen übernehmen: *der neue Auto* nach *o carro* statt *das neue Auto*."
+  ],
+  "en": [
+   "Die Endung ganz weglassen, weil englische Adjektive unverändert bleiben: *ein neu Auto*."
+  ]
+ }
 }

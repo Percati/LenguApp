@@ -133,5 +133,22 @@
   "Does the advice sound friendly?",
   "Have I used more than one form?"
  ],
- "promptCorreccion": "Focus only on how the advice is given. Check the conditional form after if I were you and whether the overall tone stays friendly rather than preachy. Do not rewrite the text."
+ "promptCorreccion": "Focus only on how the advice is given. Check the conditional form after if I were you and whether the overall tone stays friendly rather than preachy. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Tienes que probarlo* rendered as *You have to try it* for mild advice, which sounds like an obligation, instead of *You should try it*."
+  ],
+  "de": [
+   "*Du musst unbedingt* rendered as *You must unconditionally* instead of *You really must* or *You've got to*."
+  ],
+  "it": [
+   "*Devi provarlo* rendered as *You must try it* for mild advice, which sounds like an obligation, instead of *You should try it*."
+  ],
+  "fr": [
+   "*Il faut que tu* rendered as *It needs that you* instead of *You should* or *You need to*."
+  ],
+  "pt": [
+   "*Tens de experimentar* rendered as *You have to try it* for mild advice, which sounds like an obligation, instead of *You should try it*."
+  ]
+ }
 }

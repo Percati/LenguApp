@@ -137,5 +137,22 @@
   "Have I used both tenses at least once?",
   "Does the story sound natural, not translated?"
  ],
- "promptCorreccion": "Focus only on past simple versus past continuous. Check whether the main event and the background action use the correct tense. Do not rewrite the text."
+ "promptCorreccion": "Focus only on past simple versus past continuous. Check whether the main event and the background action use the correct tense. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Mapping the imperfect onto the past simple: *It rained when I left* from *llovía cuando salí* instead of *It was raining*."
+  ],
+  "de": [
+   "Leaving out the progressive because German has none: *I read when he called* instead of *I was reading*."
+  ],
+  "it": [
+   "Mapping the imperfect onto the past simple: *It rained when I left* from *pioveva quando sono uscito* instead of *It was raining*."
+  ],
+  "fr": [
+   "Mapping the imperfect onto the past simple: *It rained when I left* from *il pleuvait quand je suis sorti* instead of *It was raining*."
+  ],
+  "pt": [
+   "Mapping the imperfect onto the past simple: *It rained when I left* from *chovia quando saí* instead of *It was raining*."
+  ]
+ }
 }

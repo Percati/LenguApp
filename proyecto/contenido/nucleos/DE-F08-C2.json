@@ -136,5 +136,22 @@
   "Würde diese Zusammenfassung für ein anderes Publikum anders aussehen müssen?",
   "Habe ich klar angegeben, für welches Publikum ich schreibe?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Zusammenfassung auf ein bestimmtes Publikum zugeschnitten ist. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Zusammenfassung auf ein bestimmtes Publikum zugeschnitten ist. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Como es sabido* als *Wie es bekannt ist* übertragen statt *Bekanntlich*."
+  ],
+  "it": [
+   "*Com'è noto* als *Wie es bekannt ist* übertragen statt *Bekanntlich*."
+  ],
+  "fr": [
+   "*Comme on le sait* als *Wie man es weiss* übertragen statt *Bekanntlich*."
+  ],
+  "pt": [
+   "*Como é sabido* als *Wie es bekannt ist* übertragen statt *Bekanntlich*."
+  ],
+  "en": [
+   "*As is well known* als *Wie gut bekannt ist* übertragen statt *Bekanntlich*."
+  ]
+ }
 }

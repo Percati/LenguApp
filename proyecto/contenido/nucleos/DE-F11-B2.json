@@ -132,5 +132,22 @@
   "Klingt das Gespräch natürlich, nicht abgehackt?",
   "Habe ich mindestens zwei verschiedene Formeln benutzt, nicht immer dieselbe?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Gesprächswerkzeuge: einwerfen, nachfragen, korrigieren. Prüfen Sie, ob die Formeln höflich und passend eingesetzt sind. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Gesprächswerkzeuge: einwerfen, nachfragen, korrigieren. Prüfen Sie, ob die Formeln höflich und passend eingesetzt sind. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*O sea* als *Oder* zur Selbstkorrektur übertragen statt *Ich meine* oder *Also*."
+  ],
+  "it": [
+   "*Cioè* als *Das heisst* in jede Selbstkorrektur übertragen statt *Ich meine* oder *Also*."
+  ],
+  "fr": [
+   "*Enfin* als *Endlich* zur Selbstkorrektur übertragen statt *Also* oder *Ich meine*."
+  ],
+  "pt": [
+   "*Ou seja* als *Oder* zur Selbstkorrektur übertragen statt *Ich meine* oder *Also*."
+  ],
+  "en": [
+   "*Sorry to interrupt* als *Sorry zu unterbrechen* übertragen statt *Entschuldigung, wenn ich unterbreche*."
+  ]
+ }
 }

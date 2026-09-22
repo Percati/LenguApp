@@ -137,5 +137,22 @@
   "Klingt der Satz wie gesprochenes Deutsch?",
   "Habe ich mindestens ein Verb korrekt im Perfekt UND eines im Präteritum benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Perfekt und Präteritum. Prüfen Sie, ob sein und haben im Präteritum stehen und ob das Partizip II am Satzende steht. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Perfekt und Präteritum. Prüfen Sie, ob sein und haben im Präteritum stehen und ob das Partizip II am Satzende steht. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Weil das Spanische nur *haber* kennt, auch bei Bewegung *haben* nehmen: *Ich habe gegangen* statt *Ich bin gegangen*."
+  ],
+  "it": [
+   "Das Hilfsverb aus dem Italienischen übernehmen: *Ich habe gelaufen* nach *ho corso* statt *Ich bin gelaufen*."
+  ],
+  "fr": [
+   "Das Hilfsverb aus dem Französischen übernehmen: *Ich habe gelaufen* nach *j'ai couru* statt *Ich bin gelaufen*."
+  ],
+  "pt": [
+   "Weil das Portugiesische nur *ter* kennt, auch bei Bewegung *haben* nehmen: *Ich habe gefahren* statt *Ich bin gefahren*."
+  ],
+  "en": [
+   "Weil das Englische nur *have* kennt, auch bei Bewegung *haben* nehmen: *Ich habe gegangen* statt *Ich bin gegangen*."
+  ]
+ }
 }

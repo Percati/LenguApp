@@ -136,5 +136,22 @@
   "Have I used at least four different fixed collocations?",
   "Would this collocation appear in a real academic or corporate document?"
  ],
- "promptCorreccion": "Focus only on professional and academic collocations. Flag any verb replaced with a near-synonym that breaks the fixed pairing. Do not rewrite the text."
+ "promptCorreccion": "Focus only on professional and academic collocations. Flag any verb replaced with a near-synonym that breaks the fixed pairing. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*sacar conclusiones* rendered as *take out conclusions* instead of *draw conclusions*."
+  ],
+  "de": [
+   "*Schlussfolgerungen ziehen* rendered as *pull conclusions* instead of *draw conclusions*."
+  ],
+  "it": [
+   "*fare fronte a* rendered as *make front to* instead of *face* or *address*."
+  ],
+  "fr": [
+   "*émettre une hypothèse* rendered as *emit a hypothesis* instead of *put forward a hypothesis*."
+  ],
+  "pt": [
+   "*tirar conclusões* rendered as *take conclusions* instead of *draw conclusions*."
+  ]
+ }
 }

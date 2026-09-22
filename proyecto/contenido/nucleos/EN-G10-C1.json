@@ -141,5 +141,22 @@
   "Does the chain end by narrowing to the most likely explanation?",
   "Are the participles correct throughout?"
  ],
- "promptCorreccion": "Focus only on modals of deduction used as a reasoning chain. Check whether the certainty ladder is used correctly and whether should have is deductive rather than advisory. Do not rewrite the text."
+ "promptCorreccion": "Focus only on modals of deduction used as a reasoning chain. Check whether the certainty ladder is used correctly and whether should have is deductive rather than advisory. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Carrying over the ambiguity of *debería haber llegado* and using *should have arrived* where the deduction *must have arrived* is meant."
+  ],
+  "de": [
+   "*must not have* for 'not necessarily', as in *muss es nicht gesehen haben*, where English reads it as a confident negative: *He can't have seen it*."
+  ],
+  "it": [
+   "Carrying over the ambiguity of *dovrebbe essere arrivato* and using *should have arrived* where the deduction *must have arrived* is meant."
+  ],
+  "fr": [
+   "Carrying over the ambiguity of *il devrait être arrivé* and using *should have arrived* where the deduction *must have arrived* is meant."
+  ],
+  "pt": [
+   "Carrying over the ambiguity of *deveria ter chegado* and using *should have arrived* where the deduction *must have arrived* is meant."
+  ]
+ }
 }

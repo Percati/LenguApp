@@ -136,5 +136,22 @@
   "Have I used at least two different modals of deduction?",
   "Is the sentence based on real evidence, not a random guess?"
  ],
- "promptCorreccion": "Focus only on modals of deduction. Check the participle form after each modal and the choice between must, might, could and can't have based on the actual evidence in the text. Do not rewrite the text."
+ "promptCorreccion": "Focus only on modals of deduction. Check the participle form after each modal and the choice between must, might, could and can't have based on the actual evidence in the text. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*puede que* rendered with *can* for possibility: *He can be at home* instead of *He may be* or *might be at home*."
+  ],
+  "de": [
+   "Using *had to* for a past deduction, from *musste*: *He had to be tired* instead of *He must have been tired*."
+  ],
+  "it": [
+   "*può darsi che* rendered with *can* for possibility: *He can be at home* instead of *He may be* or *might be at home*."
+  ],
+  "fr": [
+   "*il se peut que* rendered with *can* for possibility: *He can be at home* instead of *He may be* or *might be at home*."
+  ],
+  "pt": [
+   "*pode ser que* rendered with *can* for possibility: *He can be at home* instead of *He may be* or *might be at home*."
+  ]
+ }
 }

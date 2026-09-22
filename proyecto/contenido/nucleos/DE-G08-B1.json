@@ -142,5 +142,23 @@
   "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?",
   "Habe ich das Vokabular des Themas korrekt eingesetzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Verben mit fester Präposition und das Pronominaladverb da(r)-. Prüfen Sie, ob bei Sachen das richtige Pronominaladverb verwendet wird. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Verben mit fester Präposition und das Pronominaladverb da(r)-. Prüfen Sie, ob bei Sachen das richtige Pronominaladverb verwendet wird. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*soñar con* als *träumen mit* übertragen statt *träumen von*.",
+   "*esperar* ohne Präposition übertragen: *Ich warte den Bus* statt *auf den Bus*."
+  ],
+  "it": [
+   "*aspettare* ohne Präposition übertragen: *Ich warte den Bus* statt *auf den Bus*."
+  ],
+  "fr": [
+   "*s'occuper de* als *sich kümmern von* übertragen statt *sich kümmern um*."
+  ],
+  "pt": [
+   "*sonhar com* als *träumen mit* übertragen statt *träumen von*."
+  ],
+  "en": [
+   "*to wait for* als *warten für* übertragen statt *warten auf*."
+  ]
+ }
 }

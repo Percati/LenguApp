@@ -132,5 +132,22 @@
   "Steht das Verb im weil-Satz am Ende?",
   "Klingt die Begründung konkret, nicht nur abstrakt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Meinung und Begründung klar verbunden sind. Prüfen Sie die Wortstellung nach weil und ob mindestens ein konkretes Beispiel genannt wird. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Meinung und Begründung klar verbunden sind. Prüfen Sie die Wortstellung nach weil und ob mindestens ein konkretes Beispiel genannt wird. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Desde mi punto de vista* als *Von meinem Sichtpunkt* übertragen statt *Aus meiner Sicht*."
+  ],
+  "it": [
+   "*Per quanto mi riguarda* als *Für was mich betrifft* übertragen statt *Was mich betrifft*."
+  ],
+  "fr": [
+   "*En ce qui me concerne* als *In dem, was mich betrifft* übertragen statt *Was mich betrifft*."
+  ],
+  "pt": [
+   "*No que me diz respeito* als *In dem, was mich betrifft* übertragen statt *Was mich betrifft*."
+  ],
+  "en": [
+   "*As far as I'm concerned* als *So weit ich betroffen bin* übertragen statt *Was mich betrifft*."
+  ]
+ }
 }

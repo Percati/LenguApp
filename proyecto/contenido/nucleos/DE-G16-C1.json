@@ -137,5 +137,22 @@
   "Habe ich mindestens vier verschiedene Genitivpräpositionen benutzt?",
   "Wäre eine Auflösung in einen Nebensatz an einer Stelle klarer?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die formellen Genitivpräpositionen aufgrund, angesichts, infolge und mangels sowie die Länge der Genitivketten. Prüfen Sie den Kasus in jedem Fall. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die formellen Genitivpräpositionen aufgrund, angesichts, infolge und mangels sowie die Länge der Genitivketten. Prüfen Sie den Kasus in jedem Fall. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*a pesar de* als *trotz von* übertragen: *trotz von dem Regen* statt *trotz des Regens*."
+  ],
+  "it": [
+   "*a causa di* als *wegen von* übertragen: *wegen von dem Streik* statt *wegen des Streiks*."
+  ],
+  "fr": [
+   "*en raison de* immer als *aufgrund von* übertragen, auch mit Artikel: *aufgrund von dem Streik* statt *aufgrund des Streiks*."
+  ],
+  "pt": [
+   "*por causa de* als *wegen von* übertragen: *wegen von dem Streik* statt *wegen des Streiks*."
+  ],
+  "en": [
+   "*because of* als *wegen von* übertragen: *wegen von dem Streik* statt *wegen des Streiks*."
+  ]
+ }
 }

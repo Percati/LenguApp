@@ -141,5 +141,22 @@
   "Habe ich eine Überkorrektur ins unnatürlich Positive vermieden?",
   "Habe ich mindestens vier Konnotationspaare bewusst kontrastiert?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konnotation. Markieren Sie jedes Wort mit unbeabsichtigter positiver oder negativer Ladung und schlagen Sie die neutrale oder gegenteilige Alternative vor. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konnotation. Markieren Sie jedes Wort mit unbeabsichtigter positiver oder negativer Ladung und schlagen Sie die neutrale oder gegenteilige Alternative vor. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*propaganda* im Sinn von Werbung als *Propaganda* übertragen, was im Deutschen politische Manipulation bedeutet, statt *Werbung*."
+  ],
+  "it": [
+   "*collaboratore* als *Kollaborateur* übertragen, was im Deutschen historisch belastet ist, statt *Mitarbeiter*."
+  ],
+  "fr": [
+   "*collaborateur* als *Kollaborateur* übertragen, was im Deutschen historisch belastet ist, statt *Mitarbeiter*."
+  ],
+  "pt": [
+   "*propaganda* im Sinn von Werbung als *Propaganda* übertragen, was im Deutschen politische Manipulation bedeutet, statt *Werbung*."
+  ],
+  "en": [
+   "*aggressive* im positiven Geschäftssinn übertragen: *eine aggressive Strategie* klingt im Deutschen feindselig, gemeint ist *eine offensive* oder *ehrgeizige Strategie*."
+  ]
+ }
 }

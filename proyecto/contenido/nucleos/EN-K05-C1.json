@@ -136,5 +136,22 @@
   "Have I used at least two of the three registers deliberately, to show contrast?",
   "Would the intended reader find the register appropriate?"
  ],
- "promptCorreccion": "Focus only on the choice between phrasal verbs, neutral verbs and formal collocations. Check register consistency throughout and flag any incorrect fixed collocation. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the choice between phrasal verbs, neutral verbs and formal collocations. Check register consistency throughout and flag any incorrect fixed collocation. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*realizar una investigación* rendered as *realise an investigation* instead of *conduct an investigation*."
+  ],
+  "de": [
+   "*ein Foto machen* rendered as *make a photo* instead of *take a photo*."
+  ],
+  "it": [
+   "*fare una domanda* rendered as *make a question* instead of *ask a question*."
+  ],
+  "fr": [
+   "*passer un examen* rendered as *pass an exam* when *take* or *sit an exam* is meant."
+  ],
+  "pt": [
+   "*fazer uma pergunta* rendered as *make a question* instead of *ask a question*."
+  ]
+ }
 }

@@ -1,22 +1,49 @@
 {
- "skillId": "DE-G03", "nivel": "B1", "idioma": "de", "bilingue": true,
+ "skillId": "DE-G03",
+ "nivel": "B1",
+ "idioma": "de",
+ "bilingue": true,
  "titulo": "Präpositionen: Dativ, Akkusativ, Wechselpräpositionen",
  "categoria": "grammar",
  "ancla": "PD A2",
  "descripcion": "Die neun Wechselpräpositionen (in, an, auf, über, unter, vor, hinter, neben, zwischen) verlangen Akkusativ bei Bewegung und Dativ bei Ort. Diese eine Regel entscheidet auf B1 über den Kasus und ist die Grundlage für viele spätere Strukturen.",
  "cuadroReferencia": {
   "titulo": "Wohin? gegen Wo?",
-  "columnas": ["Frage", "Kasus", "Beispiel"],
+  "columnas": [
+   "Frage",
+   "Kasus",
+   "Beispiel"
+  ],
   "filas": [
-   ["Wohin? (Bewegung)", "Akkusativ", "Ich gehe in die Küche."],
-   ["Wo? (Ort)", "Dativ", "Ich bin in der Küche."],
-   ["feste Präposition", "immer Dativ oder Akkusativ", "mit dem Auto (immer Dativ)"]
+   [
+    "Wohin? (Bewegung)",
+    "Akkusativ",
+    "Ich gehe in die Küche."
+   ],
+   [
+    "Wo? (Ort)",
+    "Dativ",
+    "Ich bin in der Küche."
+   ],
+   [
+    "feste Präposition",
+    "immer Dativ oder Akkusativ",
+    "mit dem Auto (immer Dativ)"
+   ]
   ]
  },
  "ejemplos": [
-  {"texto": "Ich gehe jetzt in die Küche.", "audio": true},
-  {"texto": "Ich bin schon seit einer Stunde in der Küche.", "audio": true},
-  {"texto": "Das Buch liegt auf dem Tisch."}
+  {
+   "texto": "Ich gehe jetzt in die Küche.",
+   "audio": true
+  },
+  {
+   "texto": "Ich bin schon seit einer Stunde in der Küche.",
+   "audio": true
+  },
+  {
+   "texto": "Das Buch liegt auf dem Tisch."
+  }
  ],
  "notas": [
   "Die Frage wohin? verlangt Akkusativ, die Frage wo? verlangt Dativ — diese Eselsbrücke funktioniert bei allen neun Wechselpräpositionen.",
@@ -36,12 +63,72 @@
   "Die festen Präpositionen (mit, für, ohne) mit dem falschen Kasus kombinieren."
  ],
  "redemittel": [
-  {"expresion": "Ich gehe in die…", "funcion": "Bewegung, Akkusativ", "traducciones": {"es": "Voy a la…", "en": "I'm going into the…", "fr": "Je vais dans le/la…", "it": "Vado nel/nella…", "pt": "Vou para o/a…"}},
-  {"expresion": "Ich bin in der…", "funcion": "Ort, Dativ", "traducciones": {"es": "Estoy en la…", "en": "I'm in the…", "fr": "Je suis dans le/la…", "it": "Sono nel/nella…", "pt": "Estou no/na…"}},
-  {"expresion": "…auf dem Tisch", "funcion": "Ort, Dativ", "traducciones": {"es": "…sobre la mesa", "en": "…on the table", "fr": "…sur la table", "it": "…sul tavolo", "pt": "…sobre a mesa"}},
-  {"expresion": "…auf den Tisch", "funcion": "Bewegung, Akkusativ", "traducciones": {"es": "…sobre la mesa (movimiento)", "en": "…onto the table", "fr": "…sur la table (mouvement)", "it": "…sul tavolo (movimento)", "pt": "…para cima da mesa"}},
-  {"expresion": "mit dem…", "funcion": "immer Dativ", "traducciones": {"es": "con el…", "en": "with the…", "fr": "avec le/la…", "it": "con il/la…", "pt": "com o/a…"}},
-  {"expresion": "für den…", "funcion": "immer Akkusativ", "traducciones": {"es": "para el…", "en": "for the…", "fr": "pour le…", "it": "per il…", "pt": "para o…"}}
+  {
+   "expresion": "Ich gehe in die…",
+   "funcion": "Bewegung, Akkusativ",
+   "traducciones": {
+    "es": "Voy a la…",
+    "en": "I'm going into the…",
+    "fr": "Je vais dans le/la…",
+    "it": "Vado nel/nella…",
+    "pt": "Vou para o/a…"
+   }
+  },
+  {
+   "expresion": "Ich bin in der…",
+   "funcion": "Ort, Dativ",
+   "traducciones": {
+    "es": "Estoy en la…",
+    "en": "I'm in the…",
+    "fr": "Je suis dans le/la…",
+    "it": "Sono nel/nella…",
+    "pt": "Estou no/na…"
+   }
+  },
+  {
+   "expresion": "…auf dem Tisch",
+   "funcion": "Ort, Dativ",
+   "traducciones": {
+    "es": "…sobre la mesa",
+    "en": "…on the table",
+    "fr": "…sur la table",
+    "it": "…sul tavolo",
+    "pt": "…sobre a mesa"
+   }
+  },
+  {
+   "expresion": "…auf den Tisch",
+   "funcion": "Bewegung, Akkusativ",
+   "traducciones": {
+    "es": "…sobre la mesa (movimiento)",
+    "en": "…onto the table",
+    "fr": "…sur la table (mouvement)",
+    "it": "…sul tavolo (movimento)",
+    "pt": "…para cima da mesa"
+   }
+  },
+  {
+   "expresion": "mit dem…",
+   "funcion": "immer Dativ",
+   "traducciones": {
+    "es": "con el…",
+    "en": "with the…",
+    "fr": "avec le/la…",
+    "it": "con il/la…",
+    "pt": "com o/a…"
+   }
+  },
+  {
+   "expresion": "für den…",
+   "funcion": "immer Akkusativ",
+   "traducciones": {
+    "es": "para el…",
+    "en": "for the…",
+    "fr": "pour le…",
+    "it": "per il…",
+    "pt": "para o…"
+   }
+  }
  ],
  "autochequeo": [
   "Habe ich bei wohin? den Akkusativ verwendet?",
@@ -50,5 +137,22 @@
   "Habe ich mindestens drei verschiedene Wechselpräpositionen benutzt?",
   "Kann ich für jeden Satz sagen, ob wohin oder wo gefragt wird?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Präpositionen und ihren Kasus. Prüfen Sie bei jeder Wechselpräposition, ob es sich um Bewegung oder Ort handelt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Präpositionen und ihren Kasus. Prüfen Sie bei jeder Wechselpräposition, ob es sich um Bewegung oder Ort handelt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*en* immer mit *in* übersetzen: *Das Buch liegt in dem Tisch* statt *auf dem Tisch*."
+  ],
+  "it": [
+   "*da* (zu einer Person) als *von* übertragen: *Ich gehe von dem Arzt* statt *zum Arzt*."
+  ],
+  "fr": [
+   "*à Paris* für Ort und Richtung gleich übertragen: *Ich fahre in Paris* statt *nach Paris*."
+  ],
+  "pt": [
+   "*em* immer mit *in* übersetzen: *Das Buch liegt in dem Tisch* statt *auf dem Tisch*."
+  ],
+  "en": [
+   "*to* immer mit *zu* übersetzen: *Ich fahre zu Deutschland* statt *nach Deutschland*."
+  ]
+ }
 }

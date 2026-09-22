@@ -133,5 +133,22 @@
   "Habe ich mehr als eine Formel für Meinung benutzt?",
   "Klingt die Begründung konkret, nicht nur abstrakt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Meinung und Grund klar verbunden sind. Prüfen Sie die Wortstellung nach weil. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Meinung und Grund klar verbunden sind. Prüfen Sie die Wortstellung nach weil. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Para mí* als *Für mich* in jedem Satz wiederholen statt *Ich finde* oder *Meiner Meinung nach* abzuwechseln."
+  ],
+  "it": [
+   "*Secondo me* als *Nach mir* übertragen statt *Meiner Meinung nach*."
+  ],
+  "fr": [
+   "*À mon avis* als *Auf meine Meinung* übertragen statt *Meiner Meinung nach*."
+  ],
+  "pt": [
+   "*Na minha opinião* als *In meiner Meinung* übertragen statt *Meiner Meinung nach*."
+  ],
+  "en": [
+   "*I mean* als *Ich meine* zum Füllwort in jedem Satz machen."
+  ]
+ }
 }

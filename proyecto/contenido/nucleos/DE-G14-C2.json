@@ -133,5 +133,22 @@
   "Würde ein durchschnittlicher Leser den Satz beim ersten Lesen verstehen?",
   "Habe ich mindestens eine Konstruktion mit zwei Ergänzungen gebildet?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Anzahl und Klarheit der Ergänzungen in erweiterten Partizipialkonstruktionen. Schreiben Sie den Text nicht neu. Prüfen Sie, ob ein Relativsatz an dieser Stelle lesbarer wäre."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Anzahl und Klarheit der Ergänzungen in erweiterten Partizipialkonstruktionen. Schreiben Sie den Text nicht neu. Prüfen Sie, ob ein Relativsatz an dieser Stelle lesbarer wäre.",
+ "erroresContrastivos": {
+  "es": [
+   "Das Attribut wie im Spanischen nachstellen und die Reihenfolge übernehmen: *die Anlage, gebaut 1990 und modernisiert 2015,* statt *die 1990 gebaute und 2015 modernisierte Anlage*."
+  ],
+  "it": [
+   "Das Attribut wie im Italienischen nachstellen und die Reihenfolge übernehmen: *die Anlage, gebaut 1990,* statt *die 1990 gebaute Anlage*."
+  ],
+  "fr": [
+   "Das Attribut wie im Französischen nachstellen und die Reihenfolge übernehmen: *die Anlage, gebaut 1990,* statt *die 1990 gebaute Anlage*."
+  ],
+  "pt": [
+   "Das Attribut wie im Portugiesischen nachstellen und die Reihenfolge übernehmen: *die Anlage, gebaut 1990,* statt *die 1990 gebaute Anlage*."
+  ],
+  "en": [
+   "Das Attribut nachstellen und die Präposition übernehmen wie in *built in 1990*: *die Anlage, gebaut in 1990,* statt *die 1990 gebaute Anlage*."
+  ]
+ }
 }

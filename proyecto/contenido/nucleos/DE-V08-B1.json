@@ -134,5 +134,22 @@
   "Klingt der Text natürlich?",
   "Habe ich das Thema des Packs berücksichtigt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Helvetismen. Prüfen Sie die ss/ß-Schreibung und ob die Wörter korrekt als Standard eingesetzt sind. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Helvetismen. Prüfen Sie die ss/ß-Schreibung und ob die Wörter korrekt als Standard eingesetzt sind. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Das Genus von *la bici* übertragen: *die Velo* statt *das Velo*."
+  ],
+  "it": [
+   "Das Genus von *la bici* übertragen: *die Velo* statt *das Velo*."
+  ],
+  "fr": [
+   "Französische Lehnwörter französisch schreiben: *Billet*, *Bureau* statt *Billett*, *Büro*."
+  ],
+  "pt": [
+   "Das Genus von *a bicicleta* übertragen: *die Velo* statt *das Velo*."
+  ],
+  "en": [
+   "*Billett* mit *bill* (Rechnung) verwechseln, obwohl es *Fahrkarte* oder *Eintrittskarte* bedeutet."
+  ]
+ }
 }

@@ -1,25 +1,64 @@
 {
- "skillId": "EN-F17", "nivel": "C2", "idioma": "en", "bilingue": false,
+ "skillId": "EN-F17",
+ "nivel": "C2",
+ "idioma": "en",
+ "bilingue": false,
  "titulo": "Register Shifting: Formal vs. Informal",
  "categoria": "fluency",
  "ancla": "EGP C2",
  "descripcion": "At C2 register is controlled across six independent axes at once — contractions, vocabulary, sentence length, person, hedging and idiom — rather than as a single formal/informal switch, which is what lets a writer produce a genuinely intermediate register instead of an inconsistent mix.",
  "cuadroReferencia": {
   "titulo": "Six independent axes",
-  "columnas": ["Axis", "Informal pole", "Formal pole"],
+  "columnas": [
+   "Axis",
+   "Informal pole",
+   "Formal pole"
+  ],
   "filas": [
-   ["Contractions", "don't, it's", "do not, it is"],
-   ["Vocabulary", "find out, sort out", "discover, resolve"],
-   ["Sentence length", "short, simple", "longer, subordinated"],
-   ["Person", "I think, you should", "it is thought, one should"],
-   ["Hedging", "I guess, maybe", "it may be the case that"],
-   ["Idiom", "phrasal, colloquial", "Latinate, technical"]
+   [
+    "Contractions",
+    "don't, it's",
+    "do not, it is"
+   ],
+   [
+    "Vocabulary",
+    "find out, sort out",
+    "discover, resolve"
+   ],
+   [
+    "Sentence length",
+    "short, simple",
+    "longer, subordinated"
+   ],
+   [
+    "Person",
+    "I think, you should",
+    "it is thought, one should"
+   ],
+   [
+    "Hedging",
+    "I guess, maybe",
+    "it may be the case that"
+   ],
+   [
+    "Idiom",
+    "phrasal, colloquial",
+    "Latinate, technical"
+   ]
   ]
  },
  "ejemplos": [
-  {"texto": "It's worth noting that the figures, while broadly accurate, don't tell the whole story.", "audio": true},
-  {"texto": "I guess what I'm saying is that the evidence doesn't fully support the conclusion.", "audio": true},
-  {"texto": "One might reasonably question whether this holds up under scrutiny."}
+  {
+   "texto": "It's worth noting that the figures, while broadly accurate, don't tell the whole story.",
+   "audio": true
+  },
+  {
+   "texto": "I guess what I'm saying is that the evidence doesn't fully support the conclusion.",
+   "audio": true
+  },
+  {
+   "texto": "One might reasonably question whether this holds up under scrutiny."
+  }
  ],
  "notas": [
   "A genuinely intermediate register mixes some axes towards formal and others towards informal on purpose — for example, contractions kept but vocabulary raised — which reads as a controlled voice, not an inconsistency.",
@@ -39,12 +78,72 @@
   "Losing track of which axis is actually doing the work in a given sentence."
  ],
  "redemittel": [
-  {"expresion": "It's worth noting that…", "funcion": "contraction kept, vocabulary raised", "traducciones": {"es": "Vale la pena señalar que…","de": "Es ist erwähnenswert, dass…","fr": "Il convient de noter que…","it": "Vale la pena notare che…","pt": "Vale a pena assinalar que…"}},
-  {"expresion": "I guess what I'm saying is…", "funcion": "informal person/hedge, formal content", "traducciones": {"es": "Supongo que lo que digo es…","de": "Ich glaube, worauf ich hinauswill, ist…","fr": "Je suppose que ce que j’essaie de dire, c’est…","it": "Credo che quello che sto cercando di dire sia…","pt": "Acho que o que estou a tentar dizer é…"}},
-  {"expresion": "One might reasonably question whether…", "funcion": "formal person, careful hedge", "traducciones": {"es": "Cabría razonablemente preguntarse si…","de": "Man könnte mit Recht fragen, ob…","fr": "On pourrait raisonnablement se demander si…","it": "Ci si potrebbe ragionevolmente chiedere se…","pt": "Poder-se-ia razoavelmente questionar se…"}},
-  {"expresion": "…, though that's just my take.", "funcion": "formal clause, informal closing hedge", "traducciones": {"es": "…, aunque esa es solo mi impresión.","de": "…, wobei das nur meine Einschätzung ist.","fr": "…, même si ce n’est que mon avis.","it": "…, anche se questa è solo la mia opinione.","pt": "…, embora seja apenas a minha leitura."}},
-  {"expresion": "To put it plainly,…", "funcion": "signals a deliberate register drop", "traducciones": {"es": "Para decirlo claramente,…","de": "Um es klar zu sagen,…","fr": "Pour le dire clairement,…","it": "Per dirla chiaramente,…","pt": "Para o dizer claramente,…"}},
-  {"expresion": "…, if that makes sense.", "funcion": "informal check, in an otherwise formal register", "traducciones": {"es": "…, si eso tiene sentido.","de": "…, falls das verständlich ist.","fr": "…, si cela a du sens.","it": "…, se ha senso.","pt": "…, se isso fizer sentido."}}
+  {
+   "expresion": "It's worth noting that…",
+   "funcion": "contraction kept, vocabulary raised",
+   "traducciones": {
+    "es": "Vale la pena señalar que…",
+    "de": "Es ist erwähnenswert, dass…",
+    "fr": "Il convient de noter que…",
+    "it": "Vale la pena notare che…",
+    "pt": "Vale a pena assinalar que…"
+   }
+  },
+  {
+   "expresion": "I guess what I'm saying is…",
+   "funcion": "informal person/hedge, formal content",
+   "traducciones": {
+    "es": "Supongo que lo que digo es…",
+    "de": "Ich glaube, worauf ich hinauswill, ist…",
+    "fr": "Je suppose que ce que j’essaie de dire, c’est…",
+    "it": "Credo che quello che sto cercando di dire sia…",
+    "pt": "Acho que o que estou a tentar dizer é…"
+   }
+  },
+  {
+   "expresion": "One might reasonably question whether…",
+   "funcion": "formal person, careful hedge",
+   "traducciones": {
+    "es": "Cabría razonablemente preguntarse si…",
+    "de": "Man könnte mit Recht fragen, ob…",
+    "fr": "On pourrait raisonnablement se demander si…",
+    "it": "Ci si potrebbe ragionevolmente chiedere se…",
+    "pt": "Poder-se-ia razoavelmente questionar se…"
+   }
+  },
+  {
+   "expresion": "…, though that's just my take.",
+   "funcion": "formal clause, informal closing hedge",
+   "traducciones": {
+    "es": "…, aunque esa es solo mi impresión.",
+    "de": "…, wobei das nur meine Einschätzung ist.",
+    "fr": "…, même si ce n’est que mon avis.",
+    "it": "…, anche se questa è solo la mia opinione.",
+    "pt": "…, embora seja apenas a minha leitura."
+   }
+  },
+  {
+   "expresion": "To put it plainly,…",
+   "funcion": "signals a deliberate register drop",
+   "traducciones": {
+    "es": "Para decirlo claramente,…",
+    "de": "Um es klar zu sagen,…",
+    "fr": "Pour le dire clairement,…",
+    "it": "Per dirla chiaramente,…",
+    "pt": "Para o dizer claramente,…"
+   }
+  },
+  {
+   "expresion": "…, if that makes sense.",
+   "funcion": "informal check, in an otherwise formal register",
+   "traducciones": {
+    "es": "…, si eso tiene sentido.",
+    "de": "…, falls das verständlich ist.",
+    "fr": "…, si cela a du sens.",
+    "it": "…, se ha senso.",
+    "pt": "…, se isso fizer sentido."
+   }
+  }
  ],
  "autochequeo": [
   "Are the six axes moved independently, not all together?",
@@ -53,5 +152,22 @@
   "Would a careful reader sense intention rather than inconsistency?",
   "Is at least one axis deliberately mismatched from the others?"
  ],
- "promptCorreccion": "Focus only on register control across contractions, vocabulary, sentence length, person, hedging and idiom. Check whether any mismatch reads as intentional or as an error. Do not rewrite the text."
+ "promptCorreccion": "Focus only on register control across contractions, vocabulary, sentence length, person, hedging and idiom. Check whether any mismatch reads as intentional or as an error. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Treating long subordinate chains as the main marker of formality, as in Spanish, where English formality lives mainly in word choice."
+  ],
+  "de": [
+   "Equating formality with German passive and nominal style: *The implementation of the measure will be effected* instead of *We will implement the measure*."
+  ],
+  "it": [
+   "Treating long subordinate chains as the main marker of formality, as in Italian, where English formality lives mainly in word choice."
+  ],
+  "fr": [
+   "Treating long subordinate chains as the main marker of formality, as in French, where English formality lives mainly in word choice."
+  ],
+  "pt": [
+   "Treating long subordinate chains as the main marker of formality, as in Portuguese, where English formality lives mainly in word choice."
+  ]
+ }
 }

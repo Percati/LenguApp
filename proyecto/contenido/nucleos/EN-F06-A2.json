@@ -132,5 +132,22 @@
   "Does the phrase sound natural?",
   "Does the phrase sound natural?"
  ],
- "promptCorreccion": "Focus only on whether the survival phrases are clear and polite. Check that emergency sentences stay short and direct. Do not rewrite the text. Flag anything that sounds too complex for an emergency."
+ "promptCorreccion": "Focus only on whether the survival phrases are clear and polite. Check that emergency sentences stay short and direct. Do not rewrite the text. Flag anything that sounds too complex for an emergency.",
+ "erroresContrastivos": {
+  "es": [
+   "*Todo recto* rendered as *All straight* instead of *Straight on* or *Straight ahead*."
+  ],
+  "de": [
+   "*Geradeaus* rendered as *Straight out* instead of *Straight on* or *Straight ahead*."
+  ],
+  "it": [
+   "*Sempre dritto* rendered as *Always straight* instead of *Straight on* or *Straight ahead*."
+  ],
+  "fr": [
+   "*Tout droit* rendered as *All right*, which means 'OK', instead of *Straight on*."
+  ],
+  "pt": [
+   "*Sempre em frente* rendered as *Always in front* instead of *Straight on* or *Straight ahead*."
+  ]
+ }
 }

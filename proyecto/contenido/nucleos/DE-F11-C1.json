@@ -132,5 +132,22 @@
   "Klingt die Steuerung natürlich, nicht aufgesetzt?",
   "Habe ich mindestens drei verschiedene Steuerungsfunktionen benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die aktive Gesprächssteuerung: zurücklenken, moderieren, zusammenfassen. Prüfen Sie, ob die Zusammenfassungen neutral bleiben. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die aktive Gesprächssteuerung: zurücklenken, moderieren, zusammenfassen. Prüfen Sie, ob die Zusammenfassungen neutral bleiben. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Volviendo a lo que decías* als *Zurückkehrend zu dem, was du sagtest* übertragen statt *Um auf deinen Punkt zurückzukommen*."
+  ],
+  "it": [
+   "*Tornando a quello che dicevi* als *Zurückkehrend zu dem, was du sagtest* übertragen statt *Um auf deinen Punkt zurückzukommen*."
+  ],
+  "fr": [
+   "*Pour revenir à…* als *Um zurückzukehren zu…* übertragen statt *Um auf … zurückzukommen*."
+  ],
+  "pt": [
+   "*Voltando ao assunto* als *Zurückkehrend zum Thema* übertragen statt *Um auf das Thema zurückzukommen*."
+  ],
+  "en": [
+   "*Going back to…* als *Zurückgehend zu…* übertragen statt *Um auf … zurückzukommen*."
+  ]
+ }
 }

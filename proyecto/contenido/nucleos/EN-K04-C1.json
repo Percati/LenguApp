@@ -137,5 +137,22 @@
   "Would a reader sense evasion rather than care anywhere in the text?",
   "Are hedges varied, not the same word repeated every time?"
  ],
- "promptCorreccion": "Focus only on the combination of hedging, passive and impersonal reporting. Flag any claim where all three layers are used but the fact is actually certain, and flag any certain claim left completely unhedged. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the combination of hedging, passive and impersonal reporting. Flag any claim where all three layers are used but the fact is actually certain, and flag any certain claim left completely unhedged. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*parece ser que* rendered as *It seems to be that* instead of *It seems that*."
+  ],
+  "de": [
+   "*eventuell* rendered as *eventually* in a hedge: *This could eventually cause delays* for 'possibly', where *eventually* means 'in the end'."
+  ],
+  "it": [
+   "*si ritiene che* rendered as *It is retained that* instead of *It is believed that*."
+  ],
+  "fr": [
+   "*on estime que* rendered as *One estimates that* instead of *It is estimated that*."
+  ],
+  "pt": [
+   "*estima-se que* rendered as *It estimates that* instead of *It is estimated that*."
+  ]
+ }
 }

@@ -72,7 +72,7 @@
  "errores": [
   "*If I would have known…*",
   "*If I had known, I would known* — dropping the *have*.",
-  "Mixing the second and third: *If I had studied, I would be a doctor* is actually correct as a mixed conditional, but usually it is written by accident rather than on purpose.",
+  "Mixing tenses from two conditionals by accident: *If I had known, I will tell you*.",
   "Wrong participles: *would have went*, *had wrote*."
  ],
  "redemittel": [
@@ -172,5 +172,22 @@
   "Did I write one inversion with *had*?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on the third conditional. (1) Check the form of both halves in each one. (2) Flag every *would have* in an *if* clause. (3) Check the participles. (4) Say where *could have* or *might have* would have been more accurate than *would have*. Do not correct anything else."
+ "promptCorreccion": "Focus only on the third conditional. (1) Check the form of both halves in each one. (2) Flag every *would have* in an *if* clause. (3) Check the participles. (4) Say where *could have* or *might have* would have been more accurate than *would have*. Do not correct anything else.",
+ "erroresContrastivos": {
+  "es": [
+   "Using the *hubiera* form in both clauses: *If I had known, I had told you* instead of *I would have told you*."
+  ],
+  "de": [
+   "Using *hätte* in both clauses: *If I had known, I had told you* instead of *I would have told you*."
+  ],
+  "it": [
+   "Copying the colloquial *Se lo sapevo, te lo dicevo*: *If I knew, I told you* instead of *If I had known, I would have told you*."
+  ],
+  "fr": [
+   "Copying the colloquial *Si j'aurais su*: *If I would have known* instead of *If I had known*."
+  ],
+  "pt": [
+   "Copying the colloquial *Se soubesse, tinha dito*: *If I knew, I had told you* instead of *If I had known, I would have told you*."
+  ]
+ }
 }

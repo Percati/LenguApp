@@ -141,5 +141,23 @@
   "Habe ich mindestens drei verschiedene Fokuspartikeln benutzt?",
   "Verschiebt sich der Fokus so, wie ich es beabsichtigt habe?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf nicht, kein und die Fokuspartikeln. Prüfen Sie die Position jeder Partikel im Satz. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf nicht, kein und die Fokuspartikeln. Prüfen Sie die Position jeder Partikel im Satz. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Die doppelte Verneinung übernehmen: *Ich habe nicht nichts gekauft* nach *no he comprado nada*."
+  ],
+  "it": [
+   "Die doppelte Verneinung übernehmen: *Ich habe nicht nichts gesagt* nach *non ho detto niente*."
+  ],
+  "fr": [
+   "*ne … que* mit Verneinung übertragen: *Ich habe nicht nur zwei Euro* (= mehr als zwei) statt *Ich habe nur zwei Euro*."
+  ],
+  "pt": [
+   "Die doppelte Verneinung übernehmen: *Ich sehe nicht niemanden* nach *não vejo ninguém*."
+  ],
+  "en": [
+   "*nicht ein* statt *kein* nach dem Muster *not a*: *Das ist nicht ein Problem*.",
+   "*auch nicht* als *nicht auch* nach *not … either* bilden."
+  ]
+ }
 }

@@ -133,5 +133,22 @@
   "Have I closed the story with an evaluation?",
   "Does the sentence sound natural, not translated word for word?"
  ],
- "promptCorreccion": "Focus only on the time sequence of the story. Check whether the past simple is used correctly and whether the order of events is clear. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the time sequence of the story. Check whether the past simple is used correctly and whether the order of events is clear. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Después* rendered as a bare *After*: *After, we went home* instead of *Afterwards* or *After that*."
+  ],
+  "de": [
+   "Narrating in the present perfect, as with the Perfekt: *Yesterday I have gone to the cinema* instead of *Yesterday I went*."
+  ],
+  "it": [
+   "*Dopo* rendered as a bare *After*: *After, we went home* instead of *Afterwards* or *After that*."
+  ],
+  "fr": [
+   "*Après* rendered as a bare *After*: *After, we went home* instead of *Afterwards* or *After that*."
+  ],
+  "pt": [
+   "*Depois* rendered as a bare *After*: *After, we went home* instead of *Afterwards* or *After that*."
+  ]
+ }
 }

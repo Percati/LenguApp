@@ -141,5 +141,22 @@
   "Sind Perfekt, Präteritum und Plusquamperfekt korrekt verteilt?",
   "Ist die Erzählung mehr als eine reine Aufzählung von Ereignissen?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Dramaturgie: Einstieg, Wendepunkt, Fazit. Prüfen Sie, ob alle drei vorhanden und sprachlich markiert sind. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Dramaturgie: Einstieg, Wendepunkt, Fazit. Prüfen Sie, ob alle drei vorhanden und sprachlich markiert sind. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Total, que…* als *Total, dass…* übertragen statt *Kurz und gut* oder *Jedenfalls*."
+  ],
+  "en": [
+   "*Long story short* als *Lange Geschichte kurz* übertragen statt *Kurz und gut*."
+  ],
+  "it": [
+   "*Insomma* als *Insgesamt* übertragen statt *Kurz und gut* oder *Jedenfalls*."
+  ],
+  "fr": [
+   "*Toujours est-il que* als *Immer ist es, dass* übertragen statt *Jedenfalls*."
+  ],
+  "pt": [
+   "*Enfim* als *Endlich* übertragen statt *Na ja* oder *Jedenfalls*."
+  ]
+ }
 }

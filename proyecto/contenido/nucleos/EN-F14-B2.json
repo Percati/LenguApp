@@ -132,5 +132,22 @@
   "Is there a clear, specific suggestion for next time?",
   "Would the other person know exactly what to change?"
  ],
- "promptCorreccion": "Focus only on how the feedback is given. Check whether it describes behaviour rather than character, and whether it includes a specific, actionable suggestion. Do not rewrite the text."
+ "promptCorreccion": "Focus only on how the feedback is given. Check whether it describes behaviour rather than character, and whether it includes a specific, actionable suggestion. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Te voy a decir una cosa* rendered as *I'm going to tell you a thing* instead of *Can I give you some feedback?*"
+  ],
+  "de": [
+   "Carrying over German directness: *This is wrong* with no cushioning, which is neutral in German but sounds harsh in English."
+  ],
+  "it": [
+   "*Ti dico una cosa* rendered as *I tell you a thing* instead of *Can I give you some feedback?*"
+  ],
+  "fr": [
+   "*Il faudrait que tu* rendered as *It would need that you* instead of *It might help to*."
+  ],
+  "pt": [
+   "*Tens de melhorar* rendered as *You have to improve* instead of *There's room to improve*."
+  ]
+ }
 }

@@ -136,5 +136,22 @@
   "If escalated, is the escalation firm rather than aggressive?",
   "Does the closing keep the door open for a reply?"
  ],
- "promptCorreccion": "Focus only on the structure of the complaint: facts, effect, specific request. Check whether the tone stays on the problem and whether any escalation is firm rather than aggressive. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the structure of the complaint: facts, effect, specific request. Check whether the tone stays on the problem and whether any escalation is firm rather than aggressive. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Quedo a la espera de su respuesta* rendered as *I remain at the wait of your answer* instead of *I look forward to your reply by…*."
+  ],
+  "de": [
+   "*bis* rendered as *until* for a deadline: *Please reply until Friday* instead of *by Friday*."
+  ],
+  "it": [
+   "*Resto in attesa di un Suo riscontro* rendered as *I remain in wait* instead of *I look forward to your reply by…*."
+  ],
+  "fr": [
+   "*Je reste dans l'attente de votre réponse* rendered as *I remain in the waiting* instead of *I look forward to your reply by…*."
+  ],
+  "pt": [
+   "*Fico a aguardar a sua resposta* rendered as *I stay waiting* instead of *I look forward to your reply by…*."
+  ]
+ }
 }

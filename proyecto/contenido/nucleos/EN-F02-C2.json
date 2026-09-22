@@ -132,5 +132,22 @@
   "Have I avoided a vague, global disagreement where a targeted one would serve better?",
   "Would an expert in this field find the objection precise, not vague?"
  ],
- "promptCorreccion": "Focus only on the precision of the disagreement. Check whether the level of disagreement (premise, logic, conclusion) is named clearly. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the precision of the disagreement. Check whether the level of disagreement (premise, logic, conclusion) is named clearly. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Eso no quita que* rendered as *That doesn't remove that* instead of *That doesn't change the fact that*."
+  ],
+  "de": [
+   "*Das ändert nichts daran, dass* rendered as *That changes nothing on it that* instead of *That doesn't change the fact that*."
+  ],
+  "it": [
+   "*Resta il fatto che* rendered as *It remains the fact that* instead of *The fact remains that*."
+  ],
+  "fr": [
+   "*Il n'empêche que* rendered as *It doesn't prevent that* instead of *Even so* or *Still*."
+  ],
+  "pt": [
+   "*Isso não tira que* rendered as *That doesn't take that* instead of *That doesn't change the fact that*."
+  ]
+ }
 }

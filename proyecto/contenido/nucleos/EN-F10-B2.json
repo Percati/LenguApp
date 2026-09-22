@@ -132,5 +132,22 @@
   "Have I used bound to only when genuinely confident?",
   "Are might and could used interchangeably where appropriate?"
  ],
- "promptCorreccion": "Focus only on the modal verbs used for prediction. Check the position of probably and whether the certainty level fits the context. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the modal verbs used for prediction. Check the position of probably and whether the certainty level fits the context. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Seguro que viene* rendered as *Sure that he comes* instead of *He's bound to come*."
+  ],
+  "de": [
+   "*Er kommt bestimmt* rendered as *He comes certainly* instead of *He's bound to come*."
+  ],
+  "it": [
+   "*Di sicuro* rendered as *Of sure* instead of *Definitely* or *He's bound to*."
+  ],
+  "fr": [
+   "*C'est sûr qu'il viendra* rendered as *It's sure that he will come* instead of *He's sure to come*."
+  ],
+  "pt": [
+   "*De certeza* rendered as *Of certainty* instead of *Definitely*."
+  ]
+ }
 }

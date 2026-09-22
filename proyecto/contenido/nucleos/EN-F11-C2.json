@@ -137,5 +137,22 @@
   "Would an expert feel their time was respected?",
   "Would a general reader understand why it matters?"
  ],
- "promptCorreccion": "Focus only on whether the summary is calibrated to the intended audience's existing knowledge. Check what's compressed versus expanded. Do not rewrite the text."
+ "promptCorreccion": "Focus only on whether the summary is calibrated to the intended audience's existing knowledge. Check what's compressed versus expanded. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*A grandes rasgos* rendered as *At big traits* instead of *Broadly speaking*."
+  ],
+  "de": [
+   "*Im Grossen und Ganzen* rendered as *In the big and whole* instead of *By and large*."
+  ],
+  "it": [
+   "*A grandi linee* rendered as *At big lines* instead of *Broadly speaking*."
+  ],
+  "fr": [
+   "*Dans les grandes lignes* rendered as *In the big lines* instead of *Broadly speaking*."
+  ],
+  "pt": [
+   "*Em linhas gerais* rendered as *In general lines* instead of *Broadly speaking*."
+  ]
+ }
 }

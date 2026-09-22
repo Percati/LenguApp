@@ -132,5 +132,22 @@
   "Does the phrase sound natural?",
   "Does the phrase sound natural?"
  ],
- "promptCorreccion": "Focus only on whether the opinion is clear and, if possible, has a reason with because. Do not rewrite the text. Check whether more than one phrase was used, not just the same one repeated."
+ "promptCorreccion": "Focus only on whether the opinion is clear and, if possible, has a reason with because. Do not rewrite the text. Check whether more than one phrase was used, not just the same one repeated.",
+ "erroresContrastivos": {
+  "es": [
+   "*Creo que sí* rendered as *I believe that yes* instead of *I think so*."
+  ],
+  "de": [
+   "*Ich finde es gut* rendered as *I find it good* instead of *I think it's good*."
+  ],
+  "it": [
+   "*Penso di sì* rendered as *I think of yes* instead of *I think so*."
+  ],
+  "fr": [
+   "*Je pense que oui* rendered as *I think that yes* instead of *I think so*."
+  ],
+  "pt": [
+   "*Acho que sim* rendered as *I find that yes* instead of *I think so*."
+  ]
+ }
 }

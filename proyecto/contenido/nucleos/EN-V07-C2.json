@@ -1,22 +1,45 @@
 {
- "skillId": "EN-V07", "nivel": "C2", "idioma": "en", "bilingue": false,
+ "skillId": "EN-V07",
+ "nivel": "C2",
+ "idioma": "en",
+ "bilingue": false,
  "titulo": "Discourse Markers and Linking",
  "categoria": "vocabulary",
  "ancla": "EGP C2",
  "descripcion": "At C2 discourse markers are used sparingly enough that their absence becomes part of the style: a writer capable of dense linking can choose bare juxtaposition instead, trusting the logical connection to be self-evident, which reads as more confident than marking every step.",
  "cuadroReferencia": {
   "titulo": "Marked versus bare juxtaposition",
-  "columnas": ["Version", "Effect"],
+  "columnas": [
+   "Version",
+   "Effect"
+  ],
   "filas": [
-   ["Fully marked", "However, despite this, and as a result, the plan failed."],
-   ["Bare juxtaposition", "The warnings went unheeded. The plan failed."],
-   ["When to choose bare", "when the logical link is genuinely obvious"]
+   [
+    "Fully marked",
+    "However, despite this, and as a result, the plan failed."
+   ],
+   [
+    "Bare juxtaposition",
+    "The warnings went unheeded. The plan failed."
+   ],
+   [
+    "When to choose bare",
+    "when the logical link is genuinely obvious"
+   ]
   ]
  },
  "ejemplos": [
-  {"texto": "The warnings went unheeded. The plan failed.", "audio": true},
-  {"texto": "He said nothing. That, in itself, was the answer.", "audio": true},
-  {"texto": "The numbers were revised. Nobody was surprised."}
+  {
+   "texto": "The warnings went unheeded. The plan failed.",
+   "audio": true
+  },
+  {
+   "texto": "He said nothing. That, in itself, was the answer.",
+   "audio": true
+  },
+  {
+   "texto": "The numbers were revised. Nobody was surprised."
+  }
  ],
  "notas": [
   "Bare juxtaposition works only when the causal or logical link is genuinely obvious to the reader without a marker — forcing it where the link isn't clear creates confusion, not sophistication.",
@@ -36,12 +59,72 @@
   "Marking every single step so densely that the prose loses all rhythm."
  ],
  "redemittel": [
-  {"expresion": "…unheeded. …failed.", "funcion": "bare juxtaposition, obvious link", "traducciones": {"es": "…desatendidas. …fracasó.","de": "…blieben unbeachtet. … scheiterte.","fr": "…sont restées sans réponse. … a échoué.","it": "…sono rimaste inascoltate. … è fallito.","pt": "…foram ignoradas. … falhou."}},
-  {"expresion": "That, in itself, was the answer.", "funcion": "bare conclusion", "traducciones": {"es": "Eso, en sí mismo, fue la respuesta.","de": "Das war an sich schon die Antwort.","fr": "C’était, en soi, la réponse.","it": "Quella, di per sé, era la risposta.","pt": "Isso, por si só, era a resposta."}},
-  {"expresion": "Nobody was surprised.", "funcion": "bare, implies obviousness", "traducciones": {"es": "Nadie se sorprendió.","de": "Niemand war überrascht.","fr": "Personne n’a été surpris.","it": "Nessuno è rimasto sorpreso.","pt": "Ninguém ficou surpreendido."}},
-  {"expresion": "However,…", "funcion": "explicit marker, when needed", "traducciones": {"es": "Sin embargo,…","de": "Allerdings…","fr": "Cependant,…","it": "Tuttavia,…","pt": "No entanto,…"}},
-  {"expresion": "As a direct result,…", "funcion": "explicit marker for a genuine causal chain", "traducciones": {"es": "Como resultado directo,…","de": "Als direkte Folge…","fr": "En conséquence directe,…","it": "Come conseguenza diretta,…","pt": "Como resultado direto,…"}},
-  {"expresion": "Which is to say,…", "funcion": "explicit reformulation", "traducciones": {"es": "Es decir,…","de": "Das heißt,…","fr": "Autrement dit,…","it": "Vale a dire,…","pt": "Ou seja,…"}}
+  {
+   "expresion": "…unheeded. …failed.",
+   "funcion": "bare juxtaposition, obvious link",
+   "traducciones": {
+    "es": "…desatendidas. …fracasó.",
+    "de": "…blieben unbeachtet. … scheiterte.",
+    "fr": "…sont restées sans réponse. … a échoué.",
+    "it": "…sono rimaste inascoltate. … è fallito.",
+    "pt": "…foram ignoradas. … falhou."
+   }
+  },
+  {
+   "expresion": "That, in itself, was the answer.",
+   "funcion": "bare conclusion",
+   "traducciones": {
+    "es": "Eso, en sí mismo, fue la respuesta.",
+    "de": "Das war an sich schon die Antwort.",
+    "fr": "C’était, en soi, la réponse.",
+    "it": "Quella, di per sé, era la risposta.",
+    "pt": "Isso, por si só, era a resposta."
+   }
+  },
+  {
+   "expresion": "Nobody was surprised.",
+   "funcion": "bare, implies obviousness",
+   "traducciones": {
+    "es": "Nadie se sorprendió.",
+    "de": "Niemand war überrascht.",
+    "fr": "Personne n’a été surpris.",
+    "it": "Nessuno è rimasto sorpreso.",
+    "pt": "Ninguém ficou surpreendido."
+   }
+  },
+  {
+   "expresion": "However,…",
+   "funcion": "explicit marker, when needed",
+   "traducciones": {
+    "es": "Sin embargo,…",
+    "de": "Allerdings…",
+    "fr": "Cependant,…",
+    "it": "Tuttavia,…",
+    "pt": "No entanto,…"
+   }
+  },
+  {
+   "expresion": "As a direct result,…",
+   "funcion": "explicit marker for a genuine causal chain",
+   "traducciones": {
+    "es": "Como resultado directo,…",
+    "de": "Als direkte Folge…",
+    "fr": "En conséquence directe,…",
+    "it": "Come conseguenza diretta,…",
+    "pt": "Como resultado direto,…"
+   }
+  },
+  {
+   "expresion": "Which is to say,…",
+   "funcion": "explicit reformulation",
+   "traducciones": {
+    "es": "Es decir,…",
+    "de": "Das heißt,…",
+    "fr": "Autrement dit,…",
+    "it": "Vale a dire,…",
+    "pt": "Ou seja,…"
+   }
+  }
  ],
  "autochequeo": [
   "Is bare juxtaposition used only where the link is genuinely obvious?",
@@ -50,5 +133,22 @@
   "Is at least one strong logical step left bare, for effect?",
   "Does the prose have rhythm, not either constant marking or none at all?"
  ],
- "promptCorreccion": "Focus only on the choice between marked linking and bare juxtaposition. Check whether every bare link is genuinely self-evident. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the choice between marked linking and bare juxtaposition. Check whether every bare link is genuinely self-evident. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*es decir* rendered as *it is to say* instead of *that is* or *in other words*."
+  ],
+  "de": [
+   "*das heisst* rendered as *that is called* instead of *that is* or *in other words*."
+  ],
+  "it": [
+   "*vale a dire* rendered as *it's worth saying* instead of *that is to say*."
+  ],
+  "fr": [
+   "*c'est-à-dire* rendered as *it is to say* instead of *that is* or *in other words*."
+  ],
+  "pt": [
+   "*quer dizer* rendered as *it wants to say* instead of *I mean* or *that is*."
+  ]
+ }
 }

@@ -197,5 +197,23 @@
   "In questions and relative clauses, did I strand the preposition instead of fronting it?",
   "Did I use *result in* for effects and *result from* for causes, in the right direction?"
  ],
- "promptCorreccion": "Focus only on verbs followed by a preposition. (1) Check that every verb after a preposition is a gerund, paying attention to *look forward to*, *object to* and *be used to*. (2) Flag any prepositional verb I wrongly split as if it were a phrasal verb. (3) Tell me where I fronted a preposition and it sounds too formal for the context. (4) Check the direction of *result in* and *result from*. Do not rewrite the text — point out the errors so I can fix them."
+ "promptCorreccion": "Focus only on verbs followed by a preposition. (1) Check that every verb after a preposition is a gerund, paying attention to *look forward to*, *object to* and *be used to*. (2) Flag any prepositional verb I wrongly split as if it were a phrasal verb. (3) Tell me where I fronted a preposition and it sounds too formal for the context. (4) Check the direction of *result in* and *result from*. Do not rewrite the text — point out the errors so I can fix them.",
+ "erroresContrastivos": {
+  "es": [
+   "*soñar con* rendered as *dream with* instead of *dream of*.",
+   "*enamorarse de* rendered as *fall in love of* instead of *fall in love with*."
+  ],
+  "de": [
+   "*sich freuen auf* rendered as *look forward on* instead of *look forward to*."
+  ],
+  "it": [
+   "*pensare a* rendered as *think to* instead of *think of* or *think about*."
+  ],
+  "fr": [
+   "*penser à* rendered as *think to* instead of *think of* or *think about*."
+  ],
+  "pt": [
+   "*sonhar com* rendered as *dream with* instead of *dream of*."
+  ]
+ }
 }

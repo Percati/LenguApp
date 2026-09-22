@@ -133,5 +133,22 @@
   "Have I described a place with atmosphere, not just facts?",
   "Are the adjectives specific, not just good or nice?"
  ],
- "promptCorreccion": "Focus only on descriptions of people, places and routines. Check the tense for routines and whether both appearance and character are covered. Do not rewrite the text."
+ "promptCorreccion": "Focus only on descriptions of people, places and routines. Check the tense for routines and whether both appearance and character are covered. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Es muy educado* rendered as *He is very educated* instead of *He is very polite*."
+  ],
+  "de": [
+   "*Er ist sensibel* rendered as *He is sensible* instead of *He is sensitive*."
+  ],
+  "it": [
+   "*È molto simpatico* rendered as *He is very sympathetic* instead of *He is really nice*."
+  ],
+  "fr": [
+   "*Il est sensible* rendered as *He is sensible* instead of *He is sensitive*."
+  ],
+  "pt": [
+   "*É muito simpático* rendered as *He is very sympathetic* instead of *He is really nice*."
+  ]
+ }
 }

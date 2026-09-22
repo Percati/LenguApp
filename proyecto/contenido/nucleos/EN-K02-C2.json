@@ -141,5 +141,22 @@
   "Would an expert reader of this genre find the density normal, not either sparse or overwrought?",
   "Have I identified the genre before judging the density?"
  ],
- "promptCorreccion": "Focus only on whether the level of nominal and participial compression matches the genre. Flag any absolute construction outside legal or very formal writing. Do not rewrite the text."
+ "promptCorreccion": "Focus only on whether the level of nominal and participial compression matches the genre. Flag any absolute construction outside legal or very formal writing. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*a efectos de* rendered as *to effects of* instead of *for the purposes of*."
+  ],
+  "de": [
+   "*seitens* rendered as *on the side of* instead of *on the part of* or simply *by*."
+  ],
+  "it": [
+   "*ai fini di* rendered as *to the ends of* instead of *for the purposes of*."
+  ],
+  "fr": [
+   "*aux fins de* rendered as *to the ends of* instead of *for the purposes of*."
+  ],
+  "pt": [
+   "*para efeitos de* rendered as *for effects of* instead of *for the purposes of*."
+  ]
+ }
 }

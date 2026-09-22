@@ -136,5 +136,22 @@
   "Klingt der Satz natürlich?",
   "Habe ich mindestens vier Sätze gebildet?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf weil und deshalb. Prüfen Sie die Verbposition in beiden Fällen genau, Satz für Satz. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf weil und deshalb. Prüfen Sie die Verbposition in beiden Fällen genau, Satz für Satz. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*por eso* als *für das* übertragen statt *deshalb*."
+  ],
+  "it": [
+   "*per questo* als *für das* übertragen statt *deshalb*."
+  ],
+  "fr": [
+   "*c'est pourquoi* als *das ist warum* übertragen statt *deshalb*."
+  ],
+  "pt": [
+   "*por isso* als *für das* übertragen statt *deshalb*."
+  ],
+  "en": [
+   "*that's why* als *das ist warum* übertragen statt *deshalb*."
+  ]
+ }
 }

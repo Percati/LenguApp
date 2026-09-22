@@ -132,5 +132,22 @@
   "Was the advice given appropriately, without being asked in a sensitive context?",
   "Was the advice given in a way the other person could easily accept?"
  ],
- "promptCorreccion": "Focus only on the form of the advice. Check the conditional after if I were you, whether you should is overused, and whether the tone stays friendly rather than preachy throughout. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the form of the advice. Check the conditional after if I were you, whether you should is overused, and whether the tone stays friendly rather than preachy throughout. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Yo que tú* rendered as *I that you* instead of *If I were you*."
+  ],
+  "de": [
+   "*An deiner Stelle* rendered as *At your place* instead of *If I were you* or *In your position*."
+  ],
+  "it": [
+   "*Se fossi in te* rendered as *If I were in you* instead of *If I were you*."
+  ],
+  "fr": [
+   "*À ta place* rendered as *At your place* instead of *If I were you* or *In your position*."
+  ],
+  "pt": [
+   "*Era melhor* rendered as *It was better* instead of *You'd better*."
+  ]
+ }
 }

@@ -188,5 +188,22 @@
   "Any *since* or *for* with a past simple by mistake?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on the choice between present perfect and past simple. (1) Mark each one and say whether it is right, and why. (2) For each wrong one, say which rule it breaks. (3) Check the tense after *when*. (4) Check *since* and *for*. Do not correct anything else."
+ "promptCorreccion": "Focus only on the choice between present perfect and past simple. (1) Mark each one and say whether it is right, and why. (2) For each wrong one, say which rule it breaks. (3) Check the tense after *when*. (4) Check *since* and *for*. Do not correct anything else.",
+ "erroresContrastivos": {
+  "es": [
+   "Carrying over the peninsular *esta mañana he visto*: *I have seen him this morning* when the morning is already over."
+  ],
+  "de": [
+   "*seit* for a duration: *I have lived here since three years* instead of *for three years*."
+  ],
+  "it": [
+   "*È da tanto che non lo vedo* rendered as *It's a long time that I don't see him* instead of *I haven't seen him for a long time*."
+  ],
+  "fr": [
+   "*Ça fait deux ans que j'habite ici* rendered as *It makes two years that I live here* instead of *I've lived here for two years*."
+  ],
+  "pt": [
+   "Using the past simple for life experience, as with *nunca fui*: *I never went to Japan* instead of *I've never been to Japan*."
+  ]
+ }
 }

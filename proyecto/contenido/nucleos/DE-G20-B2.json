@@ -136,5 +136,23 @@
   "Habe ich mindestens drei verschiedene Funktionen von es benutzt?",
   "Klingt der Satz mit es natürlicher als ohne?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Funktionen von es. Prüfen Sie, ob das Platzhalter-es und das korrelative es an den richtigen Stellen stehen. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Funktionen von es. Prüfen Sie, ob das Platzhalter-es und das korrelative es an den richtigen Stellen stehen. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Das Subjekt-*es* bei Wetterverben weglassen, weil *llueve* kein Pronomen hat: *Heute regnet*."
+  ],
+  "it": [
+   "Das Subjekt-*es* bei Wetterverben weglassen, weil *piove* kein Pronomen hat: *Heute regnet*."
+  ],
+  "fr": [
+   "*il y a* als *es hat* übersetzen statt *es gibt* (in der Schweiz umgangssprachlich üblich, schriftlich aber *es gibt*)."
+  ],
+  "pt": [
+   "Das Subjekt-*es* bei Wetter- und Zeitangaben weglassen: *Ist schon spät* nach *já é tarde*."
+  ],
+  "en": [
+   "*es gibt* nach *there are* in den Plural setzen: *Es geben viele Probleme*.",
+   "*it* immer als *es* übertragen, auch vor Nomen: *Es ist der Chef, der entscheidet* überbenutzen."
+  ]
+ }
 }

@@ -59,7 +59,7 @@
  },
  "errores": [
   "Using the present perfect with a finished time word like yesterday.",
-  "Using the past simple after when has already been asked (that's actually correct — the error is using present perfect there instead).",
+  "Using the present perfect after *when*: *When have you arrived?* instead of *When did you arrive?*",
   "Forgetting ever/never with the present perfect for experience."
  ],
  "redemittel": [
@@ -137,5 +137,22 @@
   "Have I used both tenses at least once?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on the choice between present perfect and past simple. Check whether each one matches a finished or an open time reference. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the choice between present perfect and past simple. Check whether each one matches a finished or an open time reference. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*hace dos años que vivo aquí* rendered as *I live here since two years* instead of *I've lived here for two years*."
+  ],
+  "de": [
+   "*schon mal* rendered as *already* in experience questions: *Have you already been to Rome?* instead of *Have you ever been to Rome?*"
+  ],
+  "it": [
+   "*sono qui da due anni* rendered as *I am here since two years* instead of *I've been here for two years*."
+  ],
+  "fr": [
+   "*j'habite ici depuis deux ans* rendered as *I live here since two years* instead of *I've lived here for two years*."
+  ],
+  "pt": [
+   "*moro aqui há dois anos* rendered with *ago*: *I live here two years ago* instead of *I've lived here for two years*."
+  ]
+ }
 }

@@ -187,5 +187,22 @@
   "Did I use it in the reported speech?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on the past perfect and the order of past events. (1) Mark each past perfect and say whether it is needed. (2) Mark every place where the order is unclear and a past perfect would have fixed it. (3) Check the participles. Do not correct anything else."
+ "promptCorreccion": "Focus only on the past perfect and the order of past events. (1) Mark each past perfect and say whether it is needed. (2) Mark every place where the order is unclear and a past perfect would have fixed it. (3) Check the participles. Do not correct anything else.",
+ "erroresContrastivos": {
+  "es": [
+   "*¡Ya te lo había dicho!* rendered as *I had told you!* instead of *I told you!*"
+  ],
+  "de": [
+   "Using the present perfect for the earlier past, as with the Perfekt: *When I arrived, he has already left* instead of *he had already left*."
+  ],
+  "it": [
+   "*Te l'avevo detto!* rendered as *I had told you!* instead of *I told you!*"
+  ],
+  "fr": [
+   "*Je te l'avais dit !* rendered as *I had told you!* instead of *I told you!*"
+  ],
+  "pt": [
+   "*Eu tinha-te dito!* rendered as *I had told you!* instead of *I told you!*"
+  ]
+ }
 }

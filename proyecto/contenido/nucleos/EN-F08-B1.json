@@ -133,5 +133,22 @@
   "Have I stated a clear preference?",
   "Have I used more than one form?"
  ],
- "promptCorreccion": "Focus only on comparatives and superlatives. Check than, the, and whether short or long adjective forms are used correctly throughout the comparison. Do not rewrite the text."
+ "promptCorreccion": "Focus only on comparatives and superlatives. Check than, the, and whether short or long adjective forms are used correctly throughout the comparison. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*el más alto de la clase* rendered with *of*: *the tallest of the class* instead of *the tallest in the class*."
+  ],
+  "de": [
+   "*so groß wie* rendered as *so tall like* instead of *as tall as*."
+  ],
+  "it": [
+   "*il più alto della classe* rendered with *of*: *the tallest of the class* instead of *the tallest in the class*."
+  ],
+  "fr": [
+   "*le plus grand de la classe* rendered with *of*: *the tallest of the class* instead of *the tallest in the class*."
+  ],
+  "pt": [
+   "*o mais alto da turma* rendered with *of*: *the tallest of the class* instead of *the tallest in the class*."
+  ]
+ }
 }

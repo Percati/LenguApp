@@ -141,5 +141,22 @@
   "Habe ich die Textsorte vor der Wahl der Dichte bestimmt?",
   "Würde ein Fachleser diese Dichte als normal für das Genre empfinden?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Dichte der Partizipialattribute zum Genre des Textes passt. Prüfen Sie, ob ein literarischer Text zu dicht komprimiert ist. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Dichte der Partizipialattribute zum Genre des Textes passt. Prüfen Sie, ob ein literarischer Text zu dicht komprimiert ist. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Den spanischen Rechtsstil mit Relativsätzen (*el cual*, *la cual*) übertragen, wo der deutsche Gesetzestext Partizipialattribute erwartet."
+  ],
+  "it": [
+   "Den italienischen Rechtsstil mit Relativsätzen (*il quale*, *la quale*) übertragen, wo der deutsche Gesetzestext Partizipialattribute erwartet."
+  ],
+  "fr": [
+   "Den französischen Rechtsstil mit Relativsätzen (*lequel*, *laquelle*) übertragen, wo der deutsche Gesetzestext Partizipialattribute erwartet."
+  ],
+  "pt": [
+   "Den portugiesischen Rechtsstil mit Relativsätzen (*o qual*, *a qual*) übertragen, wo der deutsche Gesetzestext Partizipialattribute erwartet."
+  ],
+  "en": [
+   "Das juristische *shall* als *soll* übertragen, wo der deutsche Gesetzestext den Indikativ oder *ist zu* verwendet: *Der Antrag soll gestellt werden* statt *Der Antrag ist zu stellen*."
+  ]
+ }
 }

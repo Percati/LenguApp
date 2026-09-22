@@ -177,5 +177,22 @@
   "Did I ask permission and hand the turn back?",
   "Any *always* or *never*?"
  ],
- "promptCorreccion": "Focus only on the feedback. (1) Mark each point as behaviour or character. (2) Is the impact stated or only implied? (3) Would the person know exactly what to change? (4) Flag where I softened it into invisibility. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the feedback. (1) Mark each point as behaviour or character. (2) Is the impact stated or only implied? (3) Would the person know exactly what to change? (4) Flag where I softened it into invisibility. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*No es por criticar, pero* rendered as *It's not for criticising, but* instead of *I don't mean to criticise, but*."
+  ],
+  "de": [
+   "*Das passt schon* rendered as *That fits already*, which sounds odd and too faint, instead of *That works* or *That's fine*."
+  ],
+  "it": [
+   "*Non per criticare, ma* rendered as *Not for criticising, but* instead of *I don't mean to criticise, but*."
+  ],
+  "fr": [
+   "*Sans vouloir te vexer* rendered as *Without wanting to vex you* instead of *No offence, but*."
+  ],
+  "pt": [
+   "*Não é por nada, mas* rendered as *It's not for nothing, but* instead of *No offence, but*."
+  ]
+ }
 }

@@ -137,5 +137,22 @@
   "Is at least one device used in a genuinely spoken-sounding way?",
   "Would plain word order work just as well anywhere I used one of these?"
  ],
- "promptCorreccion": "Focus only on inversion, clefts and fronting. Check the auxiliary in every inversion, flag any sentence stacking more than two devices, and say where plain word order would serve better. Do not rewrite the text."
+ "promptCorreccion": "Focus only on inversion, clefts and fronting. Check the auxiliary in every inversion, flag any sentence stacking more than two devices, and say where plain word order would serve better. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Lo que quiero es que vengas* rendered as *What I want is that you come* instead of *What I want is for you to come*."
+  ],
+  "de": [
+   "Fronting the object and inverting as in German V2: *This book have I never read* instead of *This book I have never read*."
+  ],
+  "it": [
+   "*Quello che voglio è che tu venga* rendered as *What I want is that you come* instead of *What I want is for you to come*."
+  ],
+  "fr": [
+   "Keeping the resumptive *c'est*: *What I want, it is that you come* instead of *What I want is for you to come*."
+  ],
+  "pt": [
+   "*O que eu quero é que venhas* rendered as *What I want is that you come* instead of *What I want is for you to come*."
+  ]
+ }
 }

@@ -133,5 +133,22 @@
   "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?",
   "Habe ich das Vokabular des Themas korrekt eingesetzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Konjunktiv II für Höflichkeit und einfache Bedingungen. Prüfen Sie, ob hätte und wäre statt würde haben/würde sein benutzt werden. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Konjunktiv II für Höflichkeit und einfache Bedingungen. Prüfen Sie, ob hätte und wäre statt würde haben/würde sein benutzt werden. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Das höfliche *quería* als *ich wollte* übertragen: *Ich wollte einen Kaffee* statt *Ich hätte gern einen Kaffee*."
+  ],
+  "it": [
+   "Das höfliche *volevo* als *ich wollte* übertragen: *Ich wollte einen Kaffee* statt *Ich hätte gern einen Kaffee*."
+  ],
+  "fr": [
+   "*je voudrais* als *ich würde wollen* übertragen statt *ich möchte* oder *ich hätte gern*."
+  ],
+  "pt": [
+   "Das höfliche *queria* als *ich wollte* übertragen: *Ich wollte einen Kaffee* statt *Ich hätte gern einen Kaffee*."
+  ],
+  "en": [
+   "*I would like* als *Ich würde mögen* übertragen statt *Ich möchte*."
+  ]
+ }
 }

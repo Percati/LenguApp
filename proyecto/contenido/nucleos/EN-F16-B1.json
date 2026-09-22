@@ -133,5 +133,22 @@
   "Have I asked for a specific solution?",
   "Have I asked for a specific solution?"
  ],
- "promptCorreccion": "Focus only on the problem and the request in the complaint. Check whether the tone stays polite throughout and whether a specific request was made. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the problem and the request in the complaint. Check whether the tone stays polite throughout and whether a specific request was made. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*reclamar* rendered as *reclaim* instead of *complain* or *claim a refund*."
+  ],
+  "de": [
+   "*Ich möchte mich beschweren* rendered as *I would like to complain myself* instead of *I would like to complain*."
+  ],
+  "it": [
+   "*reclamare* rendered as *reclaim* instead of *complain*."
+  ],
+  "fr": [
+   "*réclamer* rendered as *reclaim* instead of *complain* or *ask for*."
+  ],
+  "pt": [
+   "*reclamar* rendered as *reclaim* instead of *complain*."
+  ]
+ }
 }

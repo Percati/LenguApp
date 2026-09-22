@@ -132,5 +132,22 @@
   "Klingt die Beschwerde sachlich, nicht wütend?",
   "Habe ich den Konjunktiv II bei ich hätte gern korrekt verwendet?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Problem, Wunsch und höflichen Abschluss. Prüfen Sie, ob die Beschwerde konkret und höflich formuliert ist. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Problem, Wunsch und höflichen Abschluss. Prüfen Sie, ob die Beschwerde konkret und höflich formuliert ist. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Le agradecería que* als *Ich würde Ihnen danken, dass* übertragen statt *Ich wäre Ihnen dankbar, wenn*."
+  ],
+  "it": [
+   "*Gradirei* als *Ich würde schätzen* übertragen statt *Ich wäre Ihnen dankbar, wenn*."
+  ],
+  "fr": [
+   "*Je vous prie de* als *Ich bete Sie* übertragen statt *Ich bitte Sie*."
+  ],
+  "pt": [
+   "*Agradecia que* als *Ich dankte, dass* übertragen statt *Ich wäre Ihnen dankbar, wenn*."
+  ],
+  "en": [
+   "*I would appreciate it if* als *Ich würde es appreciieren* übertragen statt *Ich wäre Ihnen dankbar, wenn*."
+  ]
+ }
 }

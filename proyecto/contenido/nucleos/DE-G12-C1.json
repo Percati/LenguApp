@@ -142,5 +142,22 @@
   "Klingen die Fachverben (ergeben, belegen) natürlich im Kontext?",
   "Wirkt der Bericht nicht zu verbal für sein Register?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen Nominal- und Verbalstil je nach Textsorte. Prüfen Sie, ob der gewählte Stil zur Situation passt, und zeigen Sie mir, wie ein Satz in der jeweils anderen Form aussähe. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen Nominal- und Verbalstil je nach Textsorte. Prüfen Sie, ob der gewählte Stil zur Situation passt, und zeigen Sie mir, wie ein Satz in der jeweils anderen Form aussähe. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*realizar un análisis* als *eine Analyse realisieren* übertragen statt *durchführen*."
+  ],
+  "en": [
+   "*to carry out* als *ausführen* übertragen: *eine Studie ausführen* statt *durchführen*."
+  ],
+  "it": [
+   "Den italienischen Verwaltungsstil mit langen Nominalketten auch in persönliche E-Mails übertragen."
+  ],
+  "fr": [
+   "Nominalketten mit *de* nachbauen: *die Durchführung von der Analyse von den Daten* statt Genitiv."
+  ],
+  "pt": [
+   "*fazer uma análise* als *eine Analyse machen* übertragen, auch im Bericht, statt *durchführen* oder *vornehmen*."
+  ]
+ }
 }

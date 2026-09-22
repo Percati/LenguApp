@@ -137,5 +137,22 @@
   "Habe ich mindestens drei verschiedene Nebensatz-Konnektoren benutzt?",
   "Klingt der Satzbau natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verbposition im Nebensatz. Prüfen Sie bei jedem weil-, dass- und wenn-Satz, ob das Verb am Ende steht. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verbposition im Nebensatz. Prüfen Sie bei jedem weil-, dass- und wenn-Satz, ob das Verb am Ende steht. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Das Subjektpronomen weglassen: *…, weil arbeite in der Schweiz*."
+  ],
+  "it": [
+   "Das Subjektpronomen weglassen: *…, weil habe keine Zeit*."
+  ],
+  "fr": [
+   "Nach einer Zeitangabe am Satzanfang Subjekt vor Verb wie in *Aujourd'hui, je travaille*: *Heute ich arbeite*."
+  ],
+  "pt": [
+   "Das Subjektpronomen weglassen: *…, dass ist wichtig*."
+  ],
+  "en": [
+   "Nach einer Zeitangabe am Satzanfang Subjekt vor Verb wie in *Today I work*: *Heute ich arbeite*."
+  ]
+ }
 }

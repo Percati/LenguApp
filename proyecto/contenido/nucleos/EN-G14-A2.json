@@ -136,5 +136,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on defining relative clauses. Check the choice between who and that. Do not rewrite the text. Flag anything unclear or unnatural. Flag anything unclear."
+ "promptCorreccion": "Focus only on defining relative clauses. Check the choice between who and that. Do not rewrite the text. Flag anything unclear or unnatural. Flag anything unclear.",
+ "erroresContrastivos": {
+  "es": [
+   "*que* rendered as *which* for people: *the girl which sits there* instead of *who*."
+  ],
+  "de": [
+   "*was* rendered as *what*: *the thing what I want* instead of *the thing that I want*."
+  ],
+  "it": [
+   "*che* rendered as *which* for people: *the girl which sits there* instead of *who*."
+  ],
+  "fr": [
+   "*qui* rendered as *who* for things: *the bus who goes to the station* instead of *which* or *that*."
+  ],
+  "pt": [
+   "*que* rendered as *which* for people: *the girl which sits there* instead of *who*."
+  ]
+ }
 }

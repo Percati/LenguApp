@@ -132,5 +132,22 @@
   "Does the advice sound like a peer talking, not a lecture?",
   "Is the register appropriate for an adult-to-adult conversation?"
  ],
- "promptCorreccion": "Focus only on how the advice is graded and how responsibility is handed back at the end. Check whether it's framed as an option or experience rather than a direct instruction, and whether more than one piece of advice is stacked without pause. Do not rewrite the text."
+ "promptCorreccion": "Focus only on how the advice is graded and how responsibility is handed back at the end. Check whether it's framed as an option or experience rather than a direct instruction, and whether more than one piece of advice is stacked without pause. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Tú verás* rendered as *You'll see* instead of *It's your call*."
+  ],
+  "de": [
+   "*Das musst du selbst wissen* rendered as *You must know that yourself* instead of *It's your call* or *Only you can decide*."
+  ],
+  "it": [
+   "*Vedi tu* rendered as *See you* instead of *It's your call*."
+  ],
+  "fr": [
+   "*C'est toi qui vois* rendered as *It's you who sees* instead of *It's your call*."
+  ],
+  "pt": [
+   "*Tu é que sabes* rendered as *You are the one who knows* instead of *It's your call*."
+  ]
+ }
 }

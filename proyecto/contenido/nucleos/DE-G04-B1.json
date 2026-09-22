@@ -137,5 +137,22 @@
   "Habe ich mindestens zwei trennbare und ein untrennbares Verb benutzt?",
   "Klingt der Satz natürlich, nicht wie ein zusammengeschriebenes Verb aus dem Spanischen?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf trennbare und untrennbare Verben. Prüfen Sie die Position des Präfixes und die Bildung des Perfekts. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf trennbare und untrennbare Verben. Prüfen Sie die Position des Präfixes und die Bildung des Perfekts. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*llamarle* als *ihm anrufen* übertragen statt *ihn anrufen*."
+  ],
+  "it": [
+   "*telefonare a qualcuno* als *ihm anrufen* übertragen statt *ihn anrufen*."
+  ],
+  "fr": [
+   "*téléphoner à quelqu'un* als *ihm anrufen* übertragen statt *ihn anrufen*."
+  ],
+  "pt": [
+   "*telefonar a alguém* als *ihm anrufen* übertragen statt *ihn anrufen*."
+  ],
+  "en": [
+   "Die Wortfolge von *to get up* übertragen: *zu aufstehen* statt *aufzustehen*."
+  ]
+ }
 }

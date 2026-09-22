@@ -133,5 +133,22 @@
   "Does the conversation as a whole feel managed, not just my own turns?",
   "Have I avoided taking over by finishing sentences too often?"
  ],
- "promptCorreccion": "Focus only on managing the conversation as a whole: drawing others in, redirecting smoothly, repairing others' stumbles. Do not rewrite the text. Flag anything that feels abrupt or unnatural."
+ "promptCorreccion": "Focus only on managing the conversation as a whole: drawing others in, redirecting smoothly, repairing others' stumbles. Do not rewrite the text. Flag anything that feels abrupt or unnatural.",
+ "erroresContrastivos": {
+  "es": [
+   "*A ver* as a turn-taking opener rendered as *To see…* instead of *Let's see…* or *Right…*."
+  ],
+  "de": [
+   "*Moment mal* rendered as *Moment once* instead of *Hang on a second*."
+  ],
+  "it": [
+   "*Allora* as a turn-taking opener rendered as *Then…* instead of *So…* or *Right…*."
+  ],
+  "fr": [
+   "*Attends* rendered as a bare *Wait*, which sounds abrupt, instead of *Hang on a second*."
+  ],
+  "pt": [
+   "*Espera aí* rendered as *Wait there* instead of *Hang on a second*."
+  ]
+ }
 }

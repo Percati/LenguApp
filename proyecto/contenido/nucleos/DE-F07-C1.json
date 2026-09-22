@@ -132,5 +132,22 @@
   "Habe ich mehr als eine Formel für Vermutung benutzt?",
   "Passt der Sicherheitsgrad zur tatsächlichen Beleglage?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Kette Beobachtung–Vermutung–Unsicherheit. Prüfen Sie, ob alle drei Elemente vorhanden sind und ob die Vermutung nicht wie eine Tatsache klingt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Kette Beobachtung–Vermutung–Unsicherheit. Prüfen Sie, ob alle drei Elemente vorhanden sind und ob die Vermutung nicht wie eine Tatsache klingt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Todo apunta a que* als *Alles zeigt darauf, dass* übertragen statt *Alles deutet darauf hin, dass*."
+  ],
+  "en": [
+   "*Everything points to* als *Alles zeigt zu* übertragen statt *Alles deutet darauf hin*."
+  ],
+  "it": [
+   "*Tutto fa pensare che* als *Alles macht denken, dass* übertragen statt *Alles spricht dafür, dass*."
+  ],
+  "fr": [
+   "*Tout porte à croire que* als *Alles trägt zu glauben* übertragen statt *Alles spricht dafür, dass*."
+  ],
+  "pt": [
+   "*Tudo indica que* als *Alles indiziert, dass* übertragen statt *Alles deutet darauf hin, dass*."
+  ]
+ }
 }

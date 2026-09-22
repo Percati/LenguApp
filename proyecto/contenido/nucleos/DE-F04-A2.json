@@ -132,5 +132,22 @@
   "Klingt der Satz natürlich?",
   "Klingt der Satz natürlich?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die einfache Zeitstruktur der Geschichte. Prüfen Sie das Perfekt. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob die Formeln zur Situation passen."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die einfache Zeitstruktur der Geschichte. Prüfen Sie das Perfekt. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob die Formeln zur Situation passen.",
+ "erroresContrastivos": {
+  "es": [
+   "Nach *luego* ohne Umstellung weitererzählen: *Dann wir sind gegangen* statt *Dann sind wir gegangen*."
+  ],
+  "it": [
+   "Nach *poi* ohne Umstellung weitererzählen: *Dann wir sind gegangen* statt *Dann sind wir gegangen*."
+  ],
+  "fr": [
+   "Nach *puis* ohne Umstellung weitererzählen: *Dann wir sind gegangen* statt *Dann sind wir gegangen*."
+  ],
+  "pt": [
+   "Nach *depois* ohne Umstellung weitererzählen: *Dann wir sind gegangen* statt *Dann sind wir gegangen*."
+  ],
+  "en": [
+   "Nach *then* ohne Umstellung weitererzählen: *Dann wir gingen* statt *Dann sind wir gegangen*."
+  ]
+ }
 }

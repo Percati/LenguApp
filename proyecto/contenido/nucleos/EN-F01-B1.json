@@ -133,5 +133,22 @@
   "Have I used more than one phrase, not always the same one?",
   "Have I used more than one opinion phrase, not always I think?"
  ],
- "promptCorreccion": "Focus only on whether the opinion and reason are clearly connected, and whether I asked for the other person's opinion too, not only stated my own. Do not rewrite the text."
+ "promptCorreccion": "Focus only on whether the opinion and reason are clearly connected, and whether I asked for the other person's opinion too, not only stated my own. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Opino que* rendered as *I opine that* instead of *I think* or *In my view*."
+  ],
+  "de": [
+   "*meiner Meinung nach* rendered as *after my opinion* instead of *in my opinion*."
+  ],
+  "it": [
+   "*a mio parere* rendered as *at my opinion* instead of *in my opinion*."
+  ],
+  "fr": [
+   "*à mon avis* rendered as *at my advice* instead of *in my opinion*."
+  ],
+  "pt": [
+   "*acho que* rendered as *I find that* for every opinion instead of *I think*."
+  ]
+ }
 }

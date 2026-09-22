@@ -132,5 +132,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on the basic phrasal verbs. Check that both words are present in each one. Do not rewrite the text. Flag anything unclear. Flag any word-for-word translation from Spanish."
+ "promptCorreccion": "Focus only on the basic phrasal verbs. Check that both words are present in each one. Do not rewrite the text. Flag anything unclear. Flag any word-for-word translation from Spanish.",
+ "erroresContrastivos": {
+  "es": [
+   "*apagar la luz* rendered as *put off the light* instead of *turn off the light*."
+  ],
+  "de": [
+   "*aufstehen* rendered as *stand up* for getting out of bed: *I stand up at seven* instead of *I get up at seven*."
+  ],
+  "it": [
+   "*cercare* rendered as *search*: *I'm searching my keys* instead of *I'm looking for my keys*."
+  ],
+  "fr": [
+   "*chercher* rendered as *search*: *I'm searching my keys* instead of *I'm looking for my keys*."
+  ],
+  "pt": [
+   "*procurar* rendered as *procure*: *I'm procuring my keys* instead of *I'm looking for my keys*."
+  ]
+ }
 }

@@ -135,5 +135,22 @@
   "Klingt der Satz natürlich?",
   "Klingt der Satz natürlich?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Präpositionen und ihren Kasus. Prüfen Sie bei jedem Satz, ob es sich um Bewegung oder Ort handelt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Präpositionen und ihren Kasus. Prüfen Sie bei jedem Satz, ob es sich um Bewegung oder Ort handelt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*a casa* und *en casa* verwechseln: *Ich gehe zu Hause* statt *nach Hause*."
+  ],
+  "it": [
+   "*a casa* für Ort und Richtung gleich übertragen: *Ich gehe zu Hause* statt *nach Hause*."
+  ],
+  "fr": [
+   "*à la maison* für Ort und Richtung gleich übertragen: *Ich gehe zu Hause* statt *nach Hause*."
+  ],
+  "pt": [
+   "*em casa* als *in Haus* übertragen statt *zu Hause*."
+  ],
+  "en": [
+   "*to go home* ohne Präposition übertragen: *Ich gehe Hause* statt *nach Hause*."
+  ]
+ }
 }

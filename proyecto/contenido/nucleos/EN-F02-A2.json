@@ -132,5 +132,22 @@
   "Does the phrase sound natural?",
   "Does the phrase sound natural?"
  ],
- "promptCorreccion": "Focus only on agreeing and disagreeing clearly. Do not rewrite the text. Check whether more than one phrase was used, not just the same one repeated. Check the tone stays polite."
+ "promptCorreccion": "Focus only on agreeing and disagreeing clearly. Do not rewrite the text. Check whether more than one phrase was used, not just the same one repeated. Check the tone stays polite.",
+ "erroresContrastivos": {
+  "es": [
+   "*Tienes razón* rendered as *You have reason* instead of *You're right*."
+  ],
+  "de": [
+   "*Du hast recht* rendered as *You have right* instead of *You're right*."
+  ],
+  "it": [
+   "*Hai ragione* rendered as *You have reason* instead of *You're right*."
+  ],
+  "fr": [
+   "*Tu as raison* rendered as *You have reason* instead of *You're right*."
+  ],
+  "pt": [
+   "*Tens razão* rendered as *You have reason* instead of *You're right*."
+  ]
+ }
 }

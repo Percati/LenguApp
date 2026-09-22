@@ -137,5 +137,22 @@
   "Would an expert reader in this field read the precise level of confidence I intend?",
   "Is there at least one flat, unhedged claim to show the contrast?"
  ],
- "promptCorreccion": "Focus only on the precision of the hedging scale. Check whether each hedge word matches the intended level of certainty, not just whether a hedge is present. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the precision of the hedging scale. Check whether each hedge word matches the intended level of certainty, not just whether a hedge is present. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*no se puede descartar* rendered as *cannot be discarded* instead of *cannot be ruled out*."
+  ],
+  "de": [
+   "*nicht auszuschliessen* rendered as *not to exclude* instead of *cannot be ruled out*."
+  ],
+  "it": [
+   "*non si può escludere* rendered as *cannot be excluded*, which reads as non-native, instead of *cannot be ruled out*."
+  ],
+  "fr": [
+   "*on ne peut exclure* rendered as *one cannot exclude* instead of *it cannot be ruled out*."
+  ],
+  "pt": [
+   "*não se pode descartar* rendered as *cannot be discarded* instead of *cannot be ruled out*."
+  ]
+ }
 }

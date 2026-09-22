@@ -183,5 +183,22 @@
   "Would a British listener find any sentence blunt?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on hedging and softening. (1) Mark each softener and say whether it fits. (2) Mark every flat opinion that an English speaker would have softened. (3) Flag any stacking. (4) Flag any fact I softened by mistake. Do not correct anything else."
+ "promptCorreccion": "Focus only on hedging and softening. (1) Mark each softener and say whether it fits. (2) Mark every flat opinion that an English speaker would have softened. (3) Flag any stacking. (4) Flag any fact I softened by mistake. Do not correct anything else.",
+ "erroresContrastivos": {
+  "es": [
+   "*Igual no viene* rendered as *Equal he doesn't come* instead of *He might not come*."
+  ],
+  "de": [
+   "*eigentlich* rendered as *actually* in every sentence, which sounds like a constant correction."
+  ],
+  "it": [
+   "*Diciamo* carried over as *Let's say* in every sentence until it becomes a tic."
+  ],
+  "fr": [
+   "*Disons que* carried over as *Let's say that* in every sentence until it becomes a tic."
+  ],
+  "pt": [
+   "*Mais ou menos* carried over as *More or less* for every hedge."
+  ]
+ }
 }

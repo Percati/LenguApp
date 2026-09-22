@@ -146,5 +146,22 @@
   "Ist un- korrekt als Verneinung oder Verstärkung gelesen?",
   "Habe ich ein neues, selbst gebildetes Kompositum benutzt, nicht nur bekannte?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wortbildung. Prüfen Sie -bar-Adjektive, Komposita und die Präfixe un- und ver-. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wortbildung. Prüfen Sie -bar-Adjektive, Komposita und die Präfixe un- und ver-. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Das spanische *-ble* als *-bel* übertragen: *realisabel* statt *realisierbar*."
+  ],
+  "en": [
+   "Das englische *-ful* als *-voll* übertragen: *nutzvoll* nach *useful* statt *nützlich*."
+  ],
+  "it": [
+   "Das italienische *-bile* als *-bel* übertragen: *realisabel* statt *realisierbar*."
+  ],
+  "fr": [
+   "Das französische *-able* als *-abel* übertragen: *realisabel* statt *realisierbar*."
+  ],
+  "pt": [
+   "Das portugiesische *-vel* als *-bel* übertragen: *realisabel* statt *realisierbar*."
+  ]
+ }
 }

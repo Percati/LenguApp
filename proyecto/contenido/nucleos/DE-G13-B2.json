@@ -132,5 +132,23 @@
   "Habe ich bei unterschiedlichem Subjekt den dass-Satz beibehalten?",
   "Klingt der Infinitivsatz natürlicher als der entsprechende dass-Satz?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Infinitivsätze mit zu. Prüfen Sie, ob das Subjekt in beiden Teilen gleich ist und ob zu bei trennbaren Verben richtig steht. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Infinitivsätze mit zu. Prüfen Sie, ob das Subjekt in beiden Teilen gleich ist und ob zu bei trennbaren Verben richtig steht. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*para* immer mit *für* übersetzen: *Ich spare für ein Auto zu kaufen* statt *um … zu*."
+  ],
+  "it": [
+   "*di* vor dem Infinitiv als *von* übernehmen: *Ich versuche von pünktlich zu sein* nach *cerco di*."
+  ],
+  "fr": [
+   "*de* vor dem Infinitiv als *von* übernehmen: *Ich habe beschlossen, von zu kündigen* nach *j'ai décidé de*."
+  ],
+  "pt": [
+   "Den persönlichen Infinitiv nachbilden und ein Subjekt in den *zu*-Satz setzen: *Es ist wichtig, wir zu kommen*."
+  ],
+  "en": [
+   "*um … zu* weglassen, wo *to* einen Zweck ausdrückt: *Ich lerne Deutsch, zu arbeiten*.",
+   "Das *-ing*-Muster übertragen: *Ich habe aufgehört rauchend* statt *zu rauchen*."
+  ]
+ }
 }

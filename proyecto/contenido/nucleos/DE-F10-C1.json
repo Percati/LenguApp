@@ -136,5 +136,22 @@
   "Ist die Kernaussage nach dem Abschwächen noch erkennbar?",
   "Klingt die Aussage vorsichtig, ohne ausweichend zu wirken?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Dosierung der Abschwächung. Prüfen Sie, ob die Kernaussage erhalten bleibt und ob eine gesicherte Tatsache versehentlich abgeschwächt wurde. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Dosierung der Abschwächung. Prüfen Sie, ob die Kernaussage erhalten bleibt und ob eine gesicherte Tatsache versehentlich abgeschwächt wurde. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Hasta donde yo sé* als *Bis wo ich weiss* übertragen statt *Soweit ich weiss*."
+  ],
+  "it": [
+   "*Per quanto ne so* als *Für wie viel ich weiss* übertragen statt *Soweit ich weiss*."
+  ],
+  "fr": [
+   "*Pour autant que je sache* als *Für soviel ich weiss* übertragen statt *Soweit ich weiss*."
+  ],
+  "pt": [
+   "*Que eu saiba* als *Was ich weiss* übertragen statt *Soweit ich weiss*."
+  ],
+  "en": [
+   "*To my knowledge* als *Zu meinem Wissen* übertragen statt *Meines Wissens*."
+  ]
+ }
 }

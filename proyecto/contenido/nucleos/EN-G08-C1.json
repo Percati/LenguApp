@@ -215,5 +215,23 @@
   "Did I front a preposition only once or twice for effect, rather than in every relative clause?",
   "For each nominalisation, did I verify the noun's preposition instead of reusing the verb's?"
  ],
- "promptCorreccion": "Focus only on dependent prepositions and what they do to my meaning. (1) For each verb taking more than one preposition, tell me whether the one I chose matches the claim the sentence appears to be making. (2) Check the causal direction of every *result in* and *result from*. (3) Comment on my fronted versus stranded prepositions as a register choice, and say where the register is inconsistent. (4) Check the preposition of any nominalisation. Do not rewrite the text — identify the choices so I can judge them myself."
+ "promptCorreccion": "Focus only on dependent prepositions and what they do to my meaning. (1) For each verb taking more than one preposition, tell me whether the one I chose matches the claim the sentence appears to be making. (2) Check the causal direction of every *result in* and *result from*. (3) Comment on my fronted versus stranded prepositions as a register choice, and say where the register is inconsistent. (4) Check the preposition of any nominalisation. Do not rewrite the text — identify the choices so I can judge them myself.",
+ "erroresContrastivos": {
+  "es": [
+   "*depend of* from *depender de* instead of *depend on*."
+  ],
+  "de": [
+   "*consist out of* from *bestehen aus* instead of *consist of*.",
+   "*wait on* from *warten auf* instead of *wait for*."
+  ],
+  "it": [
+   "*depend from* from *dipendere da* instead of *depend on*."
+  ],
+  "fr": [
+   "*participate to* from *participer à* instead of *participate in*."
+  ],
+  "pt": [
+   "*married with* from *casado com* instead of *married to*."
+  ]
+ }
 }

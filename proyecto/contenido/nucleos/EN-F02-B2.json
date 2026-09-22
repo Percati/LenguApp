@@ -136,5 +136,22 @@
   "Does the disagreement sound polite, not blunt?",
   "Have I used at least two different phrases, not always the same one?"
  ],
- "promptCorreccion": "Focus only on agreeing and disagreeing. Check whether the right phrase was chosen and whether the disagreement sounds polite. Do not rewrite the text."
+ "promptCorreccion": "Focus only on agreeing and disagreeing. Check whether the right phrase was chosen and whether the disagreement sounds polite. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Ni de broma* rendered as *Not even as a joke* instead of *No way*."
+  ],
+  "de": [
+   "*Das sehe ich anders* rendered as *I see that different* instead of *I see it differently*."
+  ],
+  "it": [
+   "*Neanche per sogno* rendered as *Not even in a dream* instead of *No way*."
+  ],
+  "fr": [
+   "*Tu rigoles ?* rendered as *You laugh?* instead of *You're kidding*."
+  ],
+  "pt": [
+   "*Nem pensar* rendered as *Not even think* instead of *No way*."
+  ]
+ }
 }

@@ -136,5 +136,22 @@
   "Gibt es mindestens einen Satz ohne jede Abschwächung, zum Kontrast?",
   "Klingt der Absatz kontrolliert, nicht wie eine Aneinanderreihung von Abschwächungen?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Dosierung von Modalverb, Partikel und Abschwächung. Prüfen Sie, ob mehr als zwei Ebenen gleichzeitig verwendet werden. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Dosierung von Modalverb, Partikel und Abschwächung. Prüfen Sie, ob mehr als zwei Ebenen gleichzeitig verwendet werden. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*un poco* als einzige Abschwächung übertragen: *ein bisschen problematisch* überall statt *nicht ganz unproblematisch* oder *durchaus heikel*."
+  ],
+  "it": [
+   "*un po'* als einzige Abschwächung übertragen: *ein bisschen problematisch* überall statt *nicht ganz unproblematisch* oder *durchaus heikel*."
+  ],
+  "fr": [
+   "*pas évident* als *nicht evident* übertragen, obwohl *nicht einfach* gemeint ist."
+  ],
+  "pt": [
+   "Diminutive (*probleminha*) als Abschwächung übertragen: *ein Problemchen* im beruflichen Kontext statt *eine kleine Schwierigkeit*."
+  ],
+  "en": [
+   "Das englische *understatement* wörtlich übertragen: *ein bisschen ein Problem* statt *nicht ganz unproblematisch*."
+  ]
+ }
 }

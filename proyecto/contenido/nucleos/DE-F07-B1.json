@@ -133,5 +133,22 @@
   "Habe ich mindestens zwei verschiedene Vermutungsformeln benutzt?",
   "Ist die Vermutung als solche erkennbar, nicht als Tatsache formuliert?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Vermutungsformeln. Prüfen Sie, ob die Vermutung klar als solche markiert ist. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Vermutungsformeln. Prüfen Sie, ob die Vermutung klar als solche markiert ist. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*A lo mejor* als *Zum Besten* übertragen statt *Vielleicht*."
+  ],
+  "it": [
+   "*Può darsi* als *Es kann sich geben* übertragen statt *Kann sein*."
+  ],
+  "fr": [
+   "*Ça se peut* als *Das kann sich* übertragen statt *Kann sein*."
+  ],
+  "pt": [
+   "*Se calhar* als *Wenn es passt* übertragen statt *Vielleicht*."
+  ],
+  "en": [
+   "*I guess* als *Ich rate* übertragen statt *Ich schätze* oder *Wahrscheinlich*."
+  ]
+ }
 }

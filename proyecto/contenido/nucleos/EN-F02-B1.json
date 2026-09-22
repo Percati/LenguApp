@@ -133,5 +133,22 @@
   "Have I used more than one phrase, not always the same one?",
   "Have I used more than one phrase, not always the same one?"
  ],
- "promptCorreccion": "Focus only on agreeing and disagreeing clearly and politely. Check whether a reason follows the reaction and whether more than one phrase was used. Do not rewrite the text."
+ "promptCorreccion": "Focus only on agreeing and disagreeing clearly and politely. Check whether a reason follows the reaction and whether more than one phrase was used. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*¡Claro!* rendered as *Clear!* instead of *Sure!* or *Of course!*"
+  ],
+  "de": [
+   "*Klar!* rendered as *Clear!* instead of *Sure!* or *Of course!*"
+  ],
+  "it": [
+   "*Certo!* rendered as *Certain!* instead of *Sure!* or *Of course!*"
+  ],
+  "fr": [
+   "*C'est ça* rendered as *It's that* instead of *That's right*."
+  ],
+  "pt": [
+   "*Pois é* rendered as *Well, it is* instead of *Exactly* or *I know, right*."
+  ]
+ }
 }

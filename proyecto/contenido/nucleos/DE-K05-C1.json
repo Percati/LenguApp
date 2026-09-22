@@ -132,5 +132,22 @@
   "Klingt der Satz vorsichtig, ohne unentschlossen zu wirken?",
   "Habe ich mindestens drei verschiedene Kombinationen benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Kombination von subjektiven Modalverben und Modalpartikeln. Prüfen Sie, ob mindestens zwei Schichten kombiniert sind und ob der Kontext gesprochen genug ist. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Kombination von subjektiven Modalverben und Modalpartikeln. Prüfen Sie, ob mindestens zwei Schichten kombiniert sind und ob der Kontext gesprochen genug ist. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*¿será que…?* als *wird es sein, dass* übertragen: *Wird es sein, dass er krank ist?* statt *Ob er wohl krank ist?*"
+  ],
+  "it": [
+   "Abschwächung nur über *direi che* lösen: *Ich würde sagen, dass er krank ist* statt *Er dürfte wohl krank sein*."
+  ],
+  "fr": [
+   "Abschwächung nur über *je dirais que* lösen: *Ich würde sagen, dass er krank ist* statt *Er dürfte wohl krank sein*."
+  ],
+  "pt": [
+   "*será que* als *wird es sein, dass* übertragen: *Wird es sein, dass er krank ist?* statt *Ob er wohl krank ist?*"
+  ],
+  "en": [
+   "*I guess* und *kind of* nachbilden: *Ich rate, er ist krank* statt *Er ist wohl krank*."
+  ]
+ }
 }

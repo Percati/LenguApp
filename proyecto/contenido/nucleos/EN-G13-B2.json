@@ -198,5 +198,22 @@
   "Did the time and place words move?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on reported speech. (1) Check *say* and *tell* in every sentence. (2) Check the tense shift and say where it was correctly not applied. (3) Check the word order of every reported question. (4) Check pronouns, times and places. Do not correct anything else."
+ "promptCorreccion": "Focus only on reported speech. (1) Check *say* and *tell* in every sentence. (2) Check the tense shift and say where it was correctly not applied. (3) Check the word order of every reported question. (4) Check pronouns, times and places. Do not correct anything else.",
+ "erroresContrastivos": {
+  "es": [
+   "Copying the subjunctive after *decir que* (*me dijo que viniera*): *He said that I come* instead of *He told me to come*."
+  ],
+  "de": [
+   "Separating *whether* with a comma, as German does before *ob*: *She asked, whether I was coming*."
+  ],
+  "it": [
+   "*mi ha detto di venire* rendered as *He said me to come* instead of *He told me to come*."
+  ],
+  "fr": [
+   "*demander* rendered as *demand*: *He demanded me to come* instead of *He asked me to come*."
+  ],
+  "pt": [
+   "*disse para eu vir* rendered as *He said for me to come* instead of *He told me to come*."
+  ]
+ }
 }

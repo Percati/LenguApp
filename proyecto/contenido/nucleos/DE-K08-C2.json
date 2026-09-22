@@ -136,5 +136,22 @@
   "Wirkt die Kette wie ein fliessendes Argument, nicht wie eine Formelübung?",
   "Würde ein Fachleser die Kette als kunstvolles Argument lesen, nicht als Übung?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die drei Konnektorenpaare eine kohärente Argumentationskette bilden, verbunden durch Übergangssätze. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die drei Konnektorenpaare eine kohärente Argumentationskette bilden, verbunden durch Übergangssätze. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*por un lado … por otro* als *auf einer Seite … auf der anderen Seite* übertragen statt *einerseits … andererseits*."
+  ],
+  "it": [
+   "*da un lato … dall'altro* als *von einer Seite … von der anderen* übertragen statt *einerseits … andererseits*."
+  ],
+  "fr": [
+   "*d'un côté … de l'autre* als *von einer Seite … von der anderen* übertragen statt *einerseits … andererseits*."
+  ],
+  "pt": [
+   "*por um lado … por outro* als *für eine Seite … für die andere* übertragen statt *einerseits … andererseits*."
+  ],
+  "en": [
+   "*on the one hand … on the other hand* als *auf der einen Hand … auf der anderen Hand* übertragen statt *einerseits … andererseits*."
+  ]
+ }
 }

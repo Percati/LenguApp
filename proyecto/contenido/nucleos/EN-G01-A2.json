@@ -136,5 +136,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on the choice between present simple and present continuous. Check the form of the continuous carefully. Do not rewrite the text. Flag any mixed-up choice."
+ "promptCorreccion": "Focus only on the choice between present simple and present continuous. Check the form of the continuous carefully. Do not rewrite the text. Flag any mixed-up choice.",
+ "erroresContrastivos": {
+  "es": [
+   "*¿Qué haces?* rendered in the present simple: *What do you do?* when you mean *What are you doing?*"
+  ],
+  "de": [
+   "*Was machst du?* rendered with *make*: *What do you make?* instead of *What are you doing?*"
+  ],
+  "it": [
+   "*Cosa fai?* rendered in the present simple: *What do you do?* when you mean *What are you doing?*"
+  ],
+  "fr": [
+   "*Qu'est-ce que tu fais ?* rendered in the present simple: *What do you do?* when you mean *What are you doing?*"
+  ],
+  "pt": [
+   "*O que fazes?* rendered in the present simple: *What do you do?* when you mean *What are you doing?*"
+  ]
+ }
 }

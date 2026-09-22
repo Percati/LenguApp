@@ -166,5 +166,22 @@
   "Wirkt der Text wie ein Bericht, nicht wie eine eigene Behauptung?",
   "Habe ich mindestens drei Sätze im berichteten Modus verbunden?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz von Konjunktiv I und II über mehrere Sätze in der indirekten Rede. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz von Konjunktiv I und II über mehrere Sätze in der indirekten Rede. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Nach der spanischen Zeitenfolge (*dijo que estaba*) ab dem zweiten Satz ins Präteritum wechseln: *er war* statt *er sei*."
+  ],
+  "it": [
+   "Den Konditional der Distanz (*sarebbe*) auch dort mit *wäre* übertragen, wo Konjunktiv I *sei* eindeutig ist."
+  ],
+  "fr": [
+   "Den Konditional der Distanz übertragen: *Der Minister wäre zurückgetreten* nach *aurait démissionné* statt *sei zurückgetreten*."
+  ],
+  "pt": [
+   "Den Konditional der Distanz (*teria renunciado*) übertragen: *Der Minister hätte gekündigt* statt *habe gekündigt*."
+  ],
+  "en": [
+   "*reportedly* oder *allegedly* nachahmen und *angeblich* in jeden Satz setzen, statt mit Konjunktiv I zu distanzieren."
+  ]
+ }
 }

@@ -133,5 +133,22 @@
   "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?",
   "Habe ich den dass-Satz benutzt, wenn die Subjekte unterschiedlich sind?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Infinitivsätze mit zu. Prüfen Sie, ob das Subjekt in beiden Teilen gleich ist. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Infinitivsätze mit zu. Prüfen Sie, ob das Subjekt in beiden Teilen gleich ist. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*para* + Infinitiv als *für* übertragen: *Ich lerne Deutsch für arbeiten* statt *um zu arbeiten*."
+  ],
+  "it": [
+   "*per* + Infinitiv als *für* übertragen: *Ich spare für kaufen ein Auto* statt *um ein Auto zu kaufen*."
+  ],
+  "fr": [
+   "*pour* + Infinitiv als *für* übertragen: *Ich lerne Deutsch für arbeiten* statt *um zu arbeiten*."
+  ],
+  "pt": [
+   "*para* + Infinitiv als *für* übertragen: *Ich spare für kaufen ein Auto* statt *um ein Auto zu kaufen*."
+  ],
+  "en": [
+   "*um* weglassen, weil *to* allein den Zweck ausdrückt: *Ich lerne Deutsch, zu arbeiten* statt *um zu arbeiten*."
+  ]
+ }
 }

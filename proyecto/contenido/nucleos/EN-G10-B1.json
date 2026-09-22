@@ -137,5 +137,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on must be and can't be for present deduction. Check that can't be, not mustn't be, is used to rule something out. Do not rewrite the text."
+ "promptCorreccion": "Focus only on must be and can't be for present deduction. Check that can't be, not mustn't be, is used to rule something out. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*deber de* rendered with *to*: *He must to be tired* instead of *He must be tired*."
+  ],
+  "de": [
+   "*wohl* rendered as *well*: *He will well be tired* instead of *He must be tired* or *He's probably tired*."
+  ],
+  "it": [
+   "*può essere* rendered with *can*: *It can be him* instead of *It might be him*."
+  ],
+  "fr": [
+   "*ça peut être* rendered with *can*: *It can be him* instead of *It might be him*."
+  ],
+  "pt": [
+   "*pode ser* rendered with *can*: *It can be him* instead of *It might be him*."
+  ]
+ }
 }

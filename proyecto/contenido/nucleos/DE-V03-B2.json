@@ -136,5 +136,22 @@
   "Habe ich mindestens vier verschiedene Kollokationen benutzt?",
   "Habe ich machen oder nehmen nicht als Standardverb überbenutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verb-Nomen-Kollokationen. Markieren Sie jede und geben Sie die korrekte Form an, wo sie falsch ist. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verb-Nomen-Kollokationen. Markieren Sie jede und geben Sie die korrekte Form an, wo sie falsch ist. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*prestar atención* als *Aufmerksamkeit leihen* übertragen statt *Aufmerksamkeit schenken*."
+  ],
+  "it": [
+   "*fare attenzione* als *Aufmerksamkeit machen* übertragen statt *aufpassen*."
+  ],
+  "fr": [
+   "*faire attention* als *Aufmerksamkeit machen* übertragen statt *aufpassen*."
+  ],
+  "pt": [
+   "*prestar atenção* als *Aufmerksamkeit leihen* übertragen statt *Aufmerksamkeit schenken*."
+  ],
+  "en": [
+   "*to pay attention* als *Aufmerksamkeit bezahlen* übertragen statt *Aufmerksamkeit schenken*."
+  ]
+ }
 }

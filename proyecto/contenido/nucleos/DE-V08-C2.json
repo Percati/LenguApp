@@ -133,5 +133,22 @@
   "Würde eine deutsche Institution den Text als angemessen formell empfinden?",
   "Habe ich mindestens ein Paar in beiden Standards nebeneinander formuliert?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob der gewählte Standard (Schweizer oder bundesdeutsch) zur institutionellen Zielgruppe passt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob der gewählte Standard (Schweizer oder bundesdeutsch) zur institutionellen Zielgruppe passt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*ministerio* als *Ministerium* für Schweizer Bundesbehörden übertragen statt *Departement*."
+  ],
+  "it": [
+   "*ministero* als *Ministerium* für Schweizer Bundesbehörden übertragen statt *Departement*."
+  ],
+  "fr": [
+   "*ministère* als *Ministerium* für Schweizer Bundesbehörden übertragen statt *Departement*."
+  ],
+  "pt": [
+   "*ministério* als *Ministerium* für Schweizer Bundesbehörden übertragen statt *Departement*."
+  ],
+  "en": [
+   "*ministry* als *Ministerium* für Schweizer Bundesbehörden übertragen statt *Departement*."
+  ]
+ }
 }

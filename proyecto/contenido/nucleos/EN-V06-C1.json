@@ -146,5 +146,22 @@
   "Is the wording of each idiom kept fixed, not varied?",
   "Would a native speaker actually use this idiom in this context?"
  ],
- "promptCorreccion": "Focus only on the idioms used. Check the wording, the register and whether any idiom reads as a literal translation from Spanish. Flag more than one idiom per paragraph. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the idioms used. Check the wording, the register and whether any idiom reads as a literal translation from Spanish. Flag more than one idiom per paragraph. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*meter la pata* rendered as *put the paw in* instead of *put your foot in it*."
+  ],
+  "de": [
+   "*Tomaten auf den Augen haben* rendered as *have tomatoes on your eyes* instead of *be blind to something*."
+  ],
+  "it": [
+   "*avere le mani bucate* rendered as *have holed hands* instead of *spend money like water*."
+  ],
+  "fr": [
+   "*avoir le cafard* rendered as *have the cockroach* instead of *feel down*."
+  ],
+  "pt": [
+   "*estar com a pulga atrás da orelha* rendered as *have a flea behind the ear* instead of *smell a rat*."
+  ]
+ }
 }

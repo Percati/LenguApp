@@ -136,5 +136,22 @@
   "Habe ich mindestens drei verschiedene Funktionsverbgefüge benutzt?",
   "Klingt der Satz natürlich, nicht aufgebläht?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Funktionsverbgefüge. Prüfen Sie, ob das feste Verb und die Präposition korrekt sind. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Funktionsverbgefüge. Prüfen Sie, ob das feste Verb und die Präposition korrekt sind. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*llevar a cabo* als *zu Ende tragen* übertragen statt *durchführen*."
+  ],
+  "it": [
+   "*mettere in atto* als *in Akt setzen* übertragen statt *in die Tat umsetzen*."
+  ],
+  "fr": [
+   "*mettre en doute* als *in Zweifel stellen* übertragen statt *in Zweifel ziehen*."
+  ],
+  "pt": [
+   "*pôr em prática* als *in Praxis setzen* übertragen statt *in die Praxis umsetzen*."
+  ],
+  "en": [
+   "*to call into question* als *in Frage rufen* übertragen statt *in Frage stellen*."
+  ]
+ }
 }

@@ -132,5 +132,22 @@
   "Klingt der Satz natürlich?",
   "Klingt der Satz natürlich?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendung nach dem bestimmten Artikel im Nominativ. Prüfen Sie das Genus jedes Nomens. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendung nach dem bestimmten Artikel im Nominativ. Prüfen Sie das Genus jedes Nomens. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Das Genus aus dem Spanischen übernehmen: *der grosse Problem* nach *el problema* statt *das grosse Problem*."
+  ],
+  "it": [
+   "Das Genus aus dem Italienischen übernehmen: *der grosse Problem* nach *il problema* statt *das grosse Problem*."
+  ],
+  "fr": [
+   "Das Genus aus dem Französischen übernehmen: *der grosse Problem* nach *le problème* statt *das grosse Problem*."
+  ],
+  "pt": [
+   "Das Genus aus dem Portugiesischen übernehmen: *der grosse Problem* nach *o problema* statt *das grosse Problem*."
+  ],
+  "en": [
+   "Die Endung weglassen, weil englische Adjektive unverändert bleiben: *ein gross Haus* statt *ein grosses Haus*."
+  ]
+ }
 }

@@ -133,5 +133,22 @@
   "Habe ich die Geschichte mit einer Bewertung abgeschlossen?",
   "Klingt die Geschichte wie eine zusammenhängende Erzählung, nicht nur eine Liste?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Zeitstruktur der Geschichte. Prüfen Sie, ob Perfekt und Präteritum richtig verteilt sind. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Zeitstruktur der Geschichte. Prüfen Sie, ob Perfekt und Präteritum richtig verteilt sind. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Estaba lloviendo* als *Es war regnend* übertragen statt *Es regnete*."
+  ],
+  "it": [
+   "*Stava piovendo* als *Es war regnend* übertragen statt *Es regnete*."
+  ],
+  "fr": [
+   "*J'étais en train de manger* als *Ich war im Zug zu essen* übertragen statt *Ich war gerade beim Essen*."
+  ],
+  "pt": [
+   "*Estava a comer* als *Ich war zu essen* übertragen statt *Ich war gerade beim Essen*."
+  ],
+  "en": [
+   "*I was reading* als *Ich war lesend* übertragen statt *Ich las gerade*."
+  ]
+ }
 }

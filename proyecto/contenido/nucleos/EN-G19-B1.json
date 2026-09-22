@@ -134,5 +134,22 @@
   "Does the sentence sound natural?",
   "Does the sentence sound natural?"
  ],
- "promptCorreccion": "Focus only on the position of frequency adverbs relative to be and to main verbs. Check whether the sentence sounds natural rather than translated. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the position of frequency adverbs relative to be and to main verbs. Check whether the sentence sounds natural rather than translated. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*hablo bien inglés* rendered word for word: *I speak well English* instead of *I speak English well*."
+  ],
+  "de": [
+   "Placing the adverb right after the verb, as German V2 does: *I drink often coffee* instead of *I often drink coffee*."
+  ],
+  "it": [
+   "*parlo bene inglese* rendered word for word: *I speak well English* instead of *I speak English well*."
+  ],
+  "fr": [
+   "*je parle bien anglais* rendered word for word: *I speak well English* instead of *I speak English well*."
+  ],
+  "pt": [
+   "*falo bem inglês* rendered word for word: *I speak well English* instead of *I speak English well*."
+  ]
+ }
 }

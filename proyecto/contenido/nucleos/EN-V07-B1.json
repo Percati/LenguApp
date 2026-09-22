@@ -137,5 +137,22 @@
   "Does the paragraph flow naturally?",
   "Does the paragraph flow naturally?"
  ],
- "promptCorreccion": "Focus only on basic discourse markers. Check the difference between so and because, and flag any sentence overloaded with too many connectors. Do not rewrite the text."
+ "promptCorreccion": "Focus only on basic discourse markers. Check the difference between so and because, and flag any sentence overloaded with too many connectors. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*entonces* rendered as *then* for a consequence: *I was tired, then I left* instead of *so I left*."
+  ],
+  "de": [
+   "*also* rendered as *also* for a consequence: *I was tired, also I left* instead of *so I left*."
+  ],
+  "it": [
+   "*allora* rendered as *then* for a consequence: *I was tired, then I left* instead of *so I left*."
+  ],
+  "fr": [
+   "*alors* rendered as *then* for a consequence: *I was tired, then I left* instead of *so I left*."
+  ],
+  "pt": [
+   "*então* rendered as *then* for a consequence: *I was tired, then I left* instead of *so I left*."
+  ]
+ }
 }

@@ -137,5 +137,22 @@
   "Does the sentence sound natural, not translated word for word?",
   "Does the sentence sound natural, not translated word for word?"
  ],
- "promptCorreccion": "Focus only on modals of obligation, permission and ability. Check the difference between don't have to and mustn't, and check the form have to versus has to. Do not rewrite the text."
+ "promptCorreccion": "Focus only on modals of obligation, permission and ability. Check the difference between don't have to and mustn't, and check the form have to versus has to. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*sé nadar* rendered with *know*: *I know swim* instead of *I can swim*."
+  ],
+  "de": [
+   "*muss nicht* rendered as *mustn't*, which means forbidden, instead of *don't have to*."
+  ],
+  "it": [
+   "*so nuotare* rendered with *know*: *I know swim* instead of *I can swim*."
+  ],
+  "fr": [
+   "*je sais nager* rendered with *know*: *I know swim* instead of *I can swim*."
+  ],
+  "pt": [
+   "*sei nadar* rendered with *know*: *I know swim* instead of *I can swim*."
+  ]
+ }
 }

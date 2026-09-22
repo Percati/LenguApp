@@ -136,5 +136,22 @@
   "Klingt der Text natürlich?",
   "Habe ich das Vokabular des Themas eingesetzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalpartikeln doch und mal. Prüfen Sie, ob sie den Ton freundlicher machen. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalpartikeln doch und mal. Prüfen Sie, ob sie den Ton freundlicher machen. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Das spanische *¿no?* als *nein?* ans Satzende hängen: *Das ist gut, nein?* statt *…, oder?* oder *…, gell?*"
+  ],
+  "it": [
+   "Das italienische *no?* als *nein?* ans Satzende hängen: *Das ist gut, nein?* statt *…, oder?* oder *…, gell?*"
+  ],
+  "fr": [
+   "*quand même* als *trotzdem* übersetzen, wo *doch* passt: *Das ist trotzdem schön* statt *Das ist doch schön*."
+  ],
+  "pt": [
+   "Das portugiesische *não?* als *nein?* ans Satzende hängen: *Das ist gut, nein?* statt *…, oder?* oder *…, gell?*"
+  ],
+  "en": [
+   "Englische *tag questions* nachbilden: *Das ist gut, ist es nicht?* statt *Das ist doch gut* oder *…, oder?*"
+  ]
+ }
 }

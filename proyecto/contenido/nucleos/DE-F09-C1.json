@@ -132,5 +132,22 @@
   "Klingt die Argumentation gewichtet, nicht wie eine blosse Liste?",
   "Habe ich mindestens vier verschiedene Redemittel benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Gewichtung der Argumentation. Prüfen Sie, ob ein Hauptargument klar hervortritt und ob ein Gegenargument entkräftet wird. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Gewichtung der Argumentation. Prüfen Sie, ob ein Hauptargument klar hervortritt und ob ein Gegenargument entkräftet wird. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Sobre todo* als *Über alles* übertragen statt *Vor allem*."
+  ],
+  "it": [
+   "*Soprattutto* als *Über alles* übertragen statt *Vor allem*."
+  ],
+  "fr": [
+   "*Surtout* als *Über alles* übertragen statt *Vor allem*."
+  ],
+  "pt": [
+   "*Sobretudo* als *Über alles* übertragen statt *Vor allem*."
+  ],
+  "en": [
+   "*Above all* als *Über alles* übertragen statt *Vor allem*."
+  ]
+ }
 }

@@ -136,5 +136,22 @@
   "Would a highly literate native reader find this natural, not stilted?",
   "Have I used at least one appositive and one absolute construction?"
  ],
- "promptCorreccion": "Focus only on apposition and absolute constructions. Check comma placement and whether each absolute construction genuinely has its own subject. Do not rewrite the text."
+ "promptCorreccion": "Focus only on apposition and absolute constructions. Check comma placement and whether each absolute construction genuinely has its own subject. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Dicho esto* rendered as *Said this, …* instead of *That said, …*."
+  ],
+  "de": [
+   "*vorausgesetzt, dass* rendered as *presupposed that* instead of *provided that*."
+  ],
+  "it": [
+   "*Detto questo* rendered as *Said this, …* instead of *That said, …*."
+  ],
+  "fr": [
+   "*étant donné que* rendered as *being given that* instead of *given that*."
+  ],
+  "pt": [
+   "*Dito isto* rendered as *Said this, …* instead of *That said, …*."
+  ]
+ }
 }

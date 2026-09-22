@@ -145,5 +145,22 @@
   "Habe ich mindestens sechs verschiedene Kollokationen benutzt?",
   "Ist eine Adjektiv-Nomen-Kollokation dabei, nicht nur Verb-Nomen?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Verb-Nomen-Kollokationen. Markieren Sie jede und geben Sie die korrekte an, wo sie falsch ist. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Verb-Nomen-Kollokationen. Markieren Sie jede und geben Sie die korrekte an, wo sie falsch ist. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*dar un paseo* als *einen Spaziergang geben* übertragen statt *einen Spaziergang machen*."
+  ],
+  "en": [
+   "*to take an exam* als *eine Prüfung nehmen* übertragen statt *eine Prüfung ablegen*."
+  ],
+  "it": [
+   "*dare un esame* als *eine Prüfung geben* übertragen statt *eine Prüfung ablegen*."
+  ],
+  "fr": [
+   "*passer un examen* als *eine Prüfung passieren* übertragen statt *eine Prüfung ablegen*."
+  ],
+  "pt": [
+   "*dar um passeio* als *einen Spaziergang geben* übertragen statt *einen Spaziergang machen*."
+  ]
+ }
 }

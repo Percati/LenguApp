@@ -136,5 +136,22 @@
   "Klingt der Satz natürlich?",
   "Klingt der Satz natürlich?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf können, müssen und möchten. Prüfen Sie die Satzstellung und ob der Infinitiv am Ende steht. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf können, müssen und möchten. Prüfen Sie die Satzstellung und ob der Infinitiv am Ende steht. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*hay que* als *es gibt zu* übertragen: *Es gibt zu warten* statt *Man muss warten*."
+  ],
+  "it": [
+   "*potere* für Erlaubnis übertragen: *Kann ich rein?* statt *Darf ich rein?*"
+  ],
+  "fr": [
+   "*il faut* als *es muss* übertragen: *Es muss gehen* statt *Man muss gehen*."
+  ],
+  "pt": [
+   "*poder* für Erlaubnis übertragen: *Kann ich rein?* statt *Darf ich rein?*"
+  ],
+  "en": [
+   "*have to* als *haben zu* übertragen: *Ich habe zu gehen* statt *Ich muss gehen*."
+  ]
+ }
 }

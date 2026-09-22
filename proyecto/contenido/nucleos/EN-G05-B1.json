@@ -137,5 +137,22 @@
   "Have I used at least two conditional sentences?",
   "Does the sentence sound natural, not translated word for word?"
  ],
- "promptCorreccion": "Focus only on the first conditional. Check for will inside the if-clause, check comma placement, and check whether can or should are used correctly as alternatives to will. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the first conditional. Check for will inside the if-clause, check comma placement, and check whether can or should are used correctly as alternatives to will. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Rendering the future meaning of *cuando llegue* with *will*: *When I will arrive, I'll call you* instead of *When I arrive*."
+  ],
+  "de": [
+   "*wenn* rendered as *when* for a real condition: *When it rains tomorrow, we'll stay in* instead of *If it rains tomorrow*."
+  ],
+  "it": [
+   "Copying the future after *quando* (*quando arriverò*): *When I will arrive, I'll call you* instead of *When I arrive*."
+  ],
+  "fr": [
+   "Copying the future after *quand* (*quand j'arriverai*): *When I will arrive, I'll call you* instead of *When I arrive*."
+  ],
+  "pt": [
+   "Rendering the future subjunctive *quando eu chegar* with *will*: *When I will arrive, I'll call you* instead of *When I arrive*."
+  ]
+ }
 }

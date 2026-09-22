@@ -132,5 +132,23 @@
   "Does the chunk sound natural here?",
   "Have I used the chunk for its correct function, not just any greeting?"
  ],
- "promptCorreccion": "Focus only on whether the everyday chunks fit the situation. Check formal versus informal and whether the wording is fixed, not translated. Do not rewrite the text."
+ "promptCorreccion": "Focus only on whether the everyday chunks fit the situation. Check formal versus informal and whether the wording is fixed, not translated. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*¡Buen provecho!* rendered as *Good profit!* instead of *Enjoy your meal!*"
+  ],
+  "de": [
+   "*Mahlzeit!* rendered as *Mealtime!* instead of *Enjoy your lunch!* or a simple *Hi*.",
+   "*Gern geschehen* rendered as *Gladly happened* instead of *You're welcome*."
+  ],
+  "it": [
+   "*Prego* rendered as *I pray* instead of *You're welcome* or *Go ahead*."
+  ],
+  "fr": [
+   "*De rien* rendered as *Of nothing* instead of *You're welcome*."
+  ],
+  "pt": [
+   "*Com licença* rendered as *With licence* instead of *Excuse me*."
+  ]
+ }
 }

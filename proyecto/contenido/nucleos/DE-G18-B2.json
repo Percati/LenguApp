@@ -141,5 +141,22 @@
   "Habe ich mindestens drei verschiedene temporale Konnektoren benutzt?",
   "Stimmt die Zeitform in Haupt- und Nebensatz zusammen?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die temporalen Konnektoren als, wenn, nachdem und seitdem. Prüfen Sie die Wahl und die Zeitenfolge. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die temporalen Konnektoren als, wenn, nachdem und seitdem. Prüfen Sie die Wahl und die Zeitenfolge. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*cuando* immer mit *wenn* übersetzen, auch für ein einmaliges Ereignis in der Vergangenheit statt *als*."
+  ],
+  "it": [
+   "*quando* immer mit *wenn* übersetzen, auch für ein einmaliges Ereignis in der Vergangenheit statt *als*."
+  ],
+  "fr": [
+   "*quand* immer mit *wenn* übersetzen, auch für ein einmaliges Ereignis in der Vergangenheit statt *als*."
+  ],
+  "pt": [
+   "*quando* immer mit *wenn* übersetzen, auch für ein einmaliges Ereignis in der Vergangenheit statt *als*."
+  ],
+  "en": [
+   "*wann* statt *wenn* als Konnektor, weil beides *when* ist: *Wann ich nach Hause komme, koche ich*."
+  ]
+ }
 }

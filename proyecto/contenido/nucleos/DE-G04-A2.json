@@ -132,5 +132,22 @@
   "Klingt der Satz natürlich?",
   "Klingt der Satz natürlich?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf trennbare Verben. Prüfen Sie die Position des Präfixes im Satz, Satz für Satz. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf trennbare Verben. Prüfen Sie die Position des Präfixes im Satz, Satz für Satz. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*ver la tele* als *Fernseher sehen* übertragen statt *fernsehen*."
+  ],
+  "it": [
+   "*guardare la tv* als *den Fernseher schauen* übertragen statt *fernsehen*."
+  ],
+  "fr": [
+   "*regarder la télé* als *den Fernseher schauen* übertragen statt *fernsehen*."
+  ],
+  "pt": [
+   "*ver televisão* als *Fernseher sehen* übertragen statt *fernsehen*."
+  ],
+  "en": [
+   "Die Partikel direkt nach dem Verb lassen wie in *I get up at seven*: *Ich stehe auf um sieben* statt *Ich stehe um sieben auf*."
+  ]
+ }
 }

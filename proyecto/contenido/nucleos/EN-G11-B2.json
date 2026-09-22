@@ -183,5 +183,23 @@
   "Is there a reason for each passive, or did I use it by default?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on the passive voice. (1) Mark each passive and check the form of *be* and the participle. (2) For each one, say whether the passive is justified or the active would be better. (3) Flag any passive of an intransitive verb. Do not correct anything else."
+ "promptCorreccion": "Focus only on the passive voice. (1) Mark each passive and check the form of *be* and the participle. (2) For each one, say whether the passive is justified or the active would be better. (3) Flag any passive of an intransitive verb. Do not correct anything else.",
+ "erroresContrastivos": {
+  "es": [
+   "*se habla inglés* rendered as *Here speaks English* instead of *English is spoken here*."
+  ],
+  "de": [
+   "*werden* rendered as *become*: *The house became built in 1990* instead of *was built*.",
+   "*von* rendered as *from*: *written from Goethe* instead of *by Goethe*."
+  ],
+  "it": [
+   "Dropping the subject of the impersonal *si*: *In Italy eats pasta at lunch* instead of *In Italy people eat pasta* or *pasta is eaten*."
+  ],
+  "fr": [
+   "*on* rendered as *one* everywhere: *One speaks English here* instead of *English is spoken here*."
+  ],
+  "pt": [
+   "*vendem-se casas* rendered as *Sell houses* instead of *Houses for sale* or *Houses are sold here*."
+  ]
+ }
 }

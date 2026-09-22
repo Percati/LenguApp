@@ -137,5 +137,22 @@
   "Does the sentence sound clear about which event happened first?",
   "Does the sentence sound clear about which event happened first?"
  ],
- "promptCorreccion": "Focus only on the past perfect and the order of past events. Check whether it correctly marks the earlier event and whether the participle is correct. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the past perfect and the order of past events. Check whether it correctly marks the earlier event and whether the participle is correct. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*antes de que llegara* rendered as *before that he arrived* instead of *before he arrived*."
+  ],
+  "de": [
+   "Using the past simple with *already* where the order matters: *The film already started when we arrived* instead of *had already started*."
+  ],
+  "it": [
+   "*prima che arrivasse* rendered as *before that he arrived* instead of *before he arrived*."
+  ],
+  "fr": [
+   "*avant qu'il arrive* rendered as *before that he arrived* instead of *before he arrived*."
+  ],
+  "pt": [
+   "*antes que chegasse* rendered as *before that he arrived* instead of *before he arrived*."
+  ]
+ }
 }

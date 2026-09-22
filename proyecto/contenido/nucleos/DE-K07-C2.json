@@ -136,5 +136,23 @@
   "Wirkt der Text wie ein echter Verwaltungs- oder Rechtstext?",
   "Habe ich mindestens vier verschiedene Wendungen aus diesem Registerton benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Funktionsverbgefüge, Nominalstil und Passiversatzformen gemeinsam den charakteristischen Verwaltungston tragen. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Funktionsverbgefüge, Nominalstil und Passiversatzformen gemeinsam den charakteristischen Verwaltungston tragen. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*tomar una decisión* als *eine Entscheidung nehmen* übertragen statt *treffen*.",
+   "*poner en marcha* als *in Marsch setzen* übertragen statt *in Gang setzen*."
+  ],
+  "it": [
+   "*prendere una decisione* als *eine Entscheidung nehmen* übertragen statt *treffen*."
+  ],
+  "fr": [
+   "*prendre une décision* als *eine Entscheidung nehmen* übertragen statt *treffen*."
+  ],
+  "pt": [
+   "*tomar uma decisão* als *eine Entscheidung nehmen* übertragen statt *treffen*."
+  ],
+  "en": [
+   "*to make a decision* als *eine Entscheidung machen* übertragen statt *treffen*."
+  ]
+ }
 }

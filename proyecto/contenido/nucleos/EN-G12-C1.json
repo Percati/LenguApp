@@ -136,5 +136,23 @@
   "Would a reader sense evasion where a plain statement would have been more honest?",
   "Is widely/generally/commonly used correctly to signal a common rather than a verified view?"
  ],
- "promptCorreccion": "Focus only on impersonal reporting patterns. Check whether they're used on claims that genuinely need distancing, and check the infinitive form after subject-first patterns. Do not rewrite the text."
+ "promptCorreccion": "Focus only on impersonal reporting patterns. Check whether they're used on claims that genuinely need distancing, and check the infinitive form after subject-first patterns. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*se dice que* rendered as *It says that* instead of *It is said that*."
+  ],
+  "de": [
+   "Hearsay *soll* rendered as *shall*: *He shall have resigned* instead of *He is said to have resigned*.",
+   "*man sagt* rendered as *One says that* instead of *It is said that*."
+  ],
+  "it": [
+   "*si dice che* rendered as *It says that* instead of *It is said that*."
+  ],
+  "fr": [
+   "*on dit que* rendered as *One says that* instead of *It is said that*."
+  ],
+  "pt": [
+   "*diz-se que* rendered as *It says that* instead of *It is said that*."
+  ]
+ }
 }

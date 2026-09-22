@@ -210,5 +210,22 @@
   "Did *delicious* become the new *very good*?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on lexical precision. (1) Flag every banned word that got through. (2) Flag every vague adjective and give two precise alternatives. (3) Flag anything precise but too obscure for the register. (4) Say which three sentences are strongest and why. Do not rewrite the text."
+ "promptCorreccion": "Focus only on lexical precision. (1) Flag every banned word that got through. (2) Flag every vague adjective and give two precise alternatives. (3) Flag anything precise but too obscure for the register. (4) Say which three sentences are strongest and why. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*importante* rendered as *important* for size: *an important amount* instead of *a considerable* or *large amount*."
+  ],
+  "de": [
+   "*spannend* rendered as *exciting* for every interesting topic, which overstates it: *an exciting report* instead of *an interesting report*."
+  ],
+  "it": [
+   "*importante* rendered as *important* for size: *an important sum* instead of *a considerable* or *large sum*."
+  ],
+  "fr": [
+   "*important* for size carried over: *an important sum* instead of *a considerable* or *large sum*."
+  ],
+  "pt": [
+   "*importante* rendered as *important* for size: *an important amount* instead of *a considerable* or *large amount*."
+  ]
+ }
 }

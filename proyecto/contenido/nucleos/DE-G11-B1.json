@@ -142,5 +142,22 @@
   "Steht das Verb am Ende des Relativsatzes?",
   "Klingt der Satz natürlich?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Relativsätze im Nominativ und Akkusativ. Prüfen Sie Genus, Numerus und Kasus bei jedem Relativpronomen. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Relativsätze im Nominativ und Akkusativ. Prüfen Sie Genus, Numerus und Kasus bei jedem Relativpronomen. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Ein unveränderliches Relativpronomen wie *que* benutzen: *die Frau, das ich kenne* statt *die ich kenne*."
+  ],
+  "it": [
+   "Ein unveränderliches Relativpronomen wie *che* benutzen: *der Mann, die ich kenne* statt *den ich kenne*."
+  ],
+  "fr": [
+   "*qui/que* nur nach Subjekt und Objekt unterscheiden und das Genus vergessen: *der Mann, die ich sehe* statt *den ich sehe*."
+  ],
+  "pt": [
+   "Ein unveränderliches Relativpronomen wie *que* benutzen: *das Buch, der ich lese* statt *das ich lese*."
+  ],
+  "en": [
+   "Das Relativpronomen weglassen wie in *the film I saw*: *der Film ich gesehen habe* statt *der Film, den ich gesehen habe*."
+  ]
+ }
 }

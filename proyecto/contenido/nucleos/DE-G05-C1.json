@@ -63,7 +63,7 @@
  },
  "errores": [
   "Soll und will subjektiv verwechseln, wenn die Quelle unklar ist.",
-  "Den Perfekt-Infinitiv falsch bilden: soll unterschrieben haben statt soll haben unterschrieben (die Reihenfolge stimmt hier eigentlich, aber Lernende bauen oft ein zusätzliches werden ein).",
+  "Den Perfekt-Infinitiv falsch ordnen: *soll haben unterschrieben* statt *soll unterschrieben haben*.",
   "Diese Modalverben ganz vermeiden und stattdessen nur angeblich benutzen, was stilistisch monoton wirkt."
  ],
  "redemittel": [
@@ -141,5 +141,22 @@
   "Habe ich nicht ausschliesslich angeblich benutzt?",
   "Habe ich soll und will nicht verwechselt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf soll und will im subjektiven Gebrauch. Prüfen Sie bei jedem Fall, ob die Quelle korrekt zugeordnet ist und ob der Infinitiv Perfekt richtig gebildet wurde. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf soll und will im subjektiven Gebrauch. Prüfen Sie bei jedem Fall, ob die Quelle korrekt zugeordnet ist und ob der Infinitiv Perfekt richtig gebildet wurde. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Den Konditional der Presse (*habría firmado*) mit Konjunktiv II übertragen: *Er hätte unterschrieben* statt *Er soll unterschrieben haben*."
+  ],
+  "en": [
+   "*He is said to have signed* wörtlich übertragen: *Er wird gesagt, unterschrieben zu haben* statt *Er soll unterschrieben haben*."
+  ],
+  "it": [
+   "Das Imperfekt von *dovere* übertragen: *Er sollte unterschrieben haben* für *doveva aver firmato*, obwohl die Fremdbehauptung *Er soll unterschrieben haben* gemeint ist."
+  ],
+  "fr": [
+   "Den Konditional der Presse (*il aurait signé*) mit Konjunktiv II übertragen: *Er hätte unterschrieben* statt *Er soll unterschrieben haben*."
+  ],
+  "pt": [
+   "Den Konditional der Presse (*teria assinado*) mit Konjunktiv II übertragen: *Er hätte unterschrieben* statt *Er soll unterschrieben haben*."
+  ]
+ }
 }

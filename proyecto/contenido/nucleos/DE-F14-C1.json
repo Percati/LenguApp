@@ -133,5 +133,22 @@
   "Wirkt die Untertreibung natürlich, nicht aufgesetzt?",
   "Habe ich es sparsam eingesetzt, nicht in jedem Satz?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Untertreibung im Kontext funktioniert und klar genug markiert ist. Markieren Sie Stellen, an denen sie wörtlich missverstanden werden könnte. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Untertreibung im Kontext funktioniert und klar genug markiert ist. Markieren Sie Stellen, an denen sie wörtlich missverstanden werden könnte. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Ironisches *¡Qué bien!* als *Wie gut!* übertragen statt *Na toll!*"
+  ],
+  "it": [
+   "Ironisches *Complimenti!* als *Komplimente!* übertragen statt *Na bravo!*"
+  ],
+  "fr": [
+   "*Ce n'est pas terrible* als *Das ist nicht schrecklich* übertragen, obwohl *Das ist nicht so toll* gemeint ist."
+  ],
+  "pt": [
+   "Ironisches *Que maravilha!* als *Was für ein Wunder!* übertragen statt *Na super!*"
+  ],
+  "en": [
+   "Ironisches *Brilliant!* als *Brillant!* übertragen statt *Na toll!*"
+  ]
+ }
 }

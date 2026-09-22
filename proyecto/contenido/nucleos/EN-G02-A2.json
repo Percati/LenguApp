@@ -132,5 +132,22 @@
   "Does the story sound natural?",
   "Does the story sound natural?"
  ],
- "promptCorreccion": "Focus only on the past simple and the past continuous. Check the form of was/were plus -ing. Do not rewrite the text. Check whether the story sounds like a real sequence of events."
+ "promptCorreccion": "Focus only on the past simple and the past continuous. Check the form of was/were plus -ing. Do not rewrite the text. Check whether the story sounds like a real sequence of events.",
+ "erroresContrastivos": {
+  "es": [
+   "Mapping the imperfect onto the past simple: *When I arrived, he slept* from *él dormía* instead of *he was sleeping*."
+  ],
+  "de": [
+   "Using the present perfect for the background action, from the Perfekt: *I have read when he called* instead of *I was reading*."
+  ],
+  "it": [
+   "Mapping the imperfect onto the past simple: *When I arrived, he slept* from *lui dormiva* instead of *he was sleeping*."
+  ],
+  "fr": [
+   "Mapping the imperfect onto the past simple: *When I arrived, he slept* from *il dormait* instead of *he was sleeping*."
+  ],
+  "pt": [
+   "Mapping the imperfect onto the past simple: *When I arrived, he slept* from *ele dormia* instead of *he was sleeping*."
+  ]
+ }
 }

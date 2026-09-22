@@ -136,5 +136,22 @@
   "Is this device appropriate for the relationship with the listener?",
   "Would a native speaker actually say this in this context?"
  ],
- "promptCorreccion": "Focus only on understatement and irony. Check whether the intended effect would land with a native audience and whether it's overdone or underexplained. Do not rewrite the text."
+ "promptCorreccion": "Focus only on understatement and irony. Check whether the intended effect would land with a native audience and whether it's overdone or underexplained. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Ironic *¡Qué bien!* rendered as *How good!* instead of *Great, just great*."
+  ],
+  "de": [
+   "Ironic *Na toll!* rendered as *Well great!* instead of *Oh, brilliant*."
+  ],
+  "it": [
+   "Ironic *Complimenti!* rendered as *Compliments!* instead of *Well done, genius*."
+  ],
+  "fr": [
+   "*Ce n'est pas terrible* rendered as *It's not terrible*, which reverses the meaning, instead of *It's not great*."
+  ],
+  "pt": [
+   "Ironic *Que maravilha!* rendered as *What a marvel!* instead of *Oh, wonderful*."
+  ]
+ }
 }

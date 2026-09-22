@@ -214,5 +214,22 @@
   "Any stacked markers?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on discourse markers and linking. (1) List every marker I used and say whether it works in spoken register. (2) Flag any written-only markers. (3) Show me where a listener would lose the thread and which marker was missing. (4) Flag any stacking. Do not rewrite the text."
+ "promptCorreccion": "Focus only on discourse markers and linking. (1) List every marker I used and say whether it works in spoken register. (2) Flag any written-only markers. (3) Show me where a listener would lose the thread and which marker was missing. (4) Flag any stacking. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*en definitiva* rendered as *definitively* instead of *in short* or *ultimately*."
+  ],
+  "de": [
+   "*schliesslich* rendered as *finally* in the sense 'after all': *Finally, he is the boss* instead of *After all, he is the boss*."
+  ],
+  "it": [
+   "*in definitiva* rendered as *definitively* instead of *in short* or *ultimately*."
+  ],
+  "fr": [
+   "*en définitive* rendered as *definitively* instead of *in short* or *ultimately*."
+  ],
+  "pt": [
+   "*aliás* rendered as *alias* instead of *in fact* or *by the way*."
+  ]
+ }
 }

@@ -136,5 +136,22 @@
   "Ist das Register angemessen für einen Bericht oder eine wissenschaftliche Aussage?",
   "Vermeide ich eine monotone Wiederholung derselben Passivform?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Passiversatzformen: bekommen-Passiv und sich lassen + Infinitiv. Prüfen Sie, ob jedes Verb zur jeweiligen Form passt, und ob der Text mehrere Formen mischt. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Passiversatzformen: bekommen-Passiv und sich lassen + Infinitiv. Prüfen Sie, ob jedes Verb zur jeweiligen Form passt, und ob der Text mehrere Formen mischt. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*se venden pisos* als *verkaufen sich Wohnungen* übertragen statt *werden Wohnungen verkauft*."
+  ],
+  "en": [
+   "Das *get*-Passiv mit *bekommen* übertragen: *Er bekam entlassen* nach *he got fired* statt *Er wurde entlassen*."
+  ],
+  "it": [
+   "Das *si passivante* als *sich* übertragen: *Hier spricht sich Deutsch* nach *qui si parla tedesco* statt *Hier wird Deutsch gesprochen*."
+  ],
+  "fr": [
+   "Das Passiv mit *se* übertragen: *Der Wein trinkt sich kalt* nach *ce vin se boit frais* statt *wird kalt getrunken*."
+  ],
+  "pt": [
+   "*vende-se* als *verkauft sich* übertragen: *Hier verkauft sich Wohnungen* statt *Hier werden Wohnungen verkauft*."
+  ]
+ }
 }

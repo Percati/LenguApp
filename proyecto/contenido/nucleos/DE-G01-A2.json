@@ -136,5 +136,22 @@
   "Klingt der Satz natürlich?",
   "Habe ich mindestens drei Sätze mit unterschiedlicher Struktur gebildet?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verbposition im Hauptsatz und nach weil. Prüfen Sie jeden Satz einzeln. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verbposition im Hauptsatz und nach weil. Prüfen Sie jeden Satz einzeln. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Das Subjektpronomen weglassen: *Wohne in Zürich* statt *Ich wohne in Zürich*."
+  ],
+  "it": [
+   "Das Subjektpronomen weglassen: *Wohne in Zürich* statt *Ich wohne in Zürich*."
+  ],
+  "fr": [
+   "*est-ce que* als *ist es, dass* übertragen: *Ist es, dass du kommst?* statt *Kommst du?*"
+  ],
+  "pt": [
+   "Das Subjektpronomen weglassen: *Wohne in Zürich* statt *Ich wohne in Zürich*."
+  ],
+  "en": [
+   "*do* in Fragen übertragen: *Tust du hier wohnen?* statt *Wohnst du hier?*"
+  ]
+ }
 }

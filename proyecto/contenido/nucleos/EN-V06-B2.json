@@ -212,5 +212,22 @@
   "Did I change the wording of any fixed expression?",
   "All four core items?"
  ],
- "promptCorreccion": "Focus only on the idioms. (1) Mark each one and check the wording and the register. (2) Flag any that sound like a literal translation from Spanish. (3) Flag any paragraph with more than one. (4) Give me three idioms an English speaker would have used here. Do not correct anything else."
+ "promptCorreccion": "Focus only on the idioms. (1) Mark each one and check the wording and the register. (2) Flag any that sound like a literal translation from Spanish. (3) Flag any paragraph with more than one. (4) Give me three idioms an English speaker would have used here. Do not correct anything else.",
+ "erroresContrastivos": {
+  "es": [
+   "*ser pan comido* rendered as *be eaten bread* instead of *be a piece of cake*."
+  ],
+  "de": [
+   "*Das ist nicht mein Bier* rendered as *That's not my beer* instead of *That's not my problem*."
+  ],
+  "it": [
+   "*In bocca al lupo* rendered as *In the mouth of the wolf* instead of *Good luck* or *Break a leg*."
+  ],
+  "fr": [
+   "*poser un lapin* rendered as *put a rabbit* instead of *stand someone up*."
+  ],
+  "pt": [
+   "*pagar o pato* rendered as *pay the duck* instead of *take the rap* or *carry the can*."
+  ]
+ }
 }

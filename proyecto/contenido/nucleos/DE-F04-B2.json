@@ -136,5 +136,22 @@
   "Ist die Geschichte mehr als eine reine Aufzählung von Ereignissen?",
   "Habe ich mindestens ein Plusquamperfekt korrekt verwendet?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Zeitenfolge: Perfekt, Präteritum, Plusquamperfekt. Prüfen Sie, ob die Vorzeitigkeit korrekt markiert ist. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Zeitenfolge: Perfekt, Präteritum, Plusquamperfekt. Prüfen Sie, ob die Vorzeitigkeit korrekt markiert ist. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*Resulta que* als *Es resultiert, dass* übertragen statt *Es stellte sich heraus, dass*."
+  ],
+  "it": [
+   "*A un certo punto* als *An einem gewissen Punkt* übertragen statt *Irgendwann* oder *Plötzlich*."
+  ],
+  "fr": [
+   "*Du coup* als *also* in jeden Satz übertragen, bis es wie ein Tick wirkt."
+  ],
+  "pt": [
+   "*Acontece que* als *Es passiert, dass* übertragen statt *Es stellte sich heraus, dass*."
+  ],
+  "en": [
+   "*It turned out* als *Es drehte sich heraus* übertragen statt *Es stellte sich heraus*."
+  ]
+ }
 }

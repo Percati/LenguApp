@@ -136,5 +136,22 @@
   "Are past simple, continuous and perfect correctly distributed?",
   "Would a listener stay curious through the opening two sentences?"
  ],
- "promptCorreccion": "Focus only on the dramaturgy of the story: opening, turning point, closing. Check whether all three are present and clearly signalled. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the dramaturgy of the story: opening, turning point, closing. Check whether all three are present and clearly signalled. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*Total, que…* rendered as *Total, that…* instead of *Anyway* or *Long story short*."
+  ],
+  "de": [
+   "*Kurz und gut* rendered as *Short and good* instead of *Long story short*."
+  ],
+  "it": [
+   "*Insomma* rendered as *In summary* in a story instead of *Anyway*."
+  ],
+  "fr": [
+   "*Bref* rendered as *Brief* instead of *Anyway* or *Long story short*."
+  ],
+  "pt": [
+   "*Enfim* rendered as *Finally* instead of *Anyway*."
+  ]
+ }
 }

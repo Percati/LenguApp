@@ -132,5 +132,22 @@
   "Klingt der Text höflich?",
   "Klingt der Text höflich?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Problem und die Bitte. Prüfen Sie, ob der Ton höflich bleibt. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob mindestens eine höfliche Formel benutzt wird."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Problem und die Bitte. Prüfen Sie, ob der Ton höflich bleibt. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob mindestens eine höfliche Formel benutzt wird.",
+ "erroresContrastivos": {
+  "es": [
+   "*Oiga* als *Hören Sie!* zur Anrede übertragen, was im Deutschen barsch klingt, statt *Entschuldigung*."
+  ],
+  "it": [
+   "*Senta* als *Hören Sie!* zur Anrede übertragen, was im Deutschen barsch klingt, statt *Entschuldigung*."
+  ],
+  "fr": [
+   "*S'il vous plaît* zum Rufen als *Bitte!* übertragen statt *Entschuldigung*."
+  ],
+  "pt": [
+   "*Olhe* als *Schauen Sie!* zur Anrede übertragen statt *Entschuldigung*."
+  ],
+  "en": [
+   "*Excuse me* als *Entschuldigen Sie mich* übertragen statt *Entschuldigung*."
+  ]
+ }
 }

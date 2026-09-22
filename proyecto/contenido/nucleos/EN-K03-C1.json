@@ -136,5 +136,22 @@
   "Do the three structures appear in a natural sequence, not isolated?",
   "Are the participles correct throughout?"
  ],
- "promptCorreccion": "Focus only on the regret cluster: unreal past, modal perfect, third conditional. Check every if-clause for would have by mistake, and check whether the three structures work together as a sequence. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the regret cluster: unreal past, modal perfect, third conditional. Check every if-clause for would have by mistake, and check whether the three structures work together as a sequence. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*de haberlo sabido* rendered as *Of having known* instead of *Had I known* or *If I had known*."
+  ],
+  "de": [
+   "*hätte kommen sollen* rendered as *would have should come* instead of *should have come*."
+  ],
+  "it": [
+   "*magari* read as *maybe*: *Maybe I had known!* instead of *If only I had known!*"
+  ],
+  "fr": [
+   "*à ta place* rendered as *At your place, I would have…* instead of *If I were you* or *In your position*."
+  ],
+  "pt": [
+   "*oxalá* rendered as *hopefully*: *Hopefully I had known!* instead of *If only I had known!*"
+  ]
+ }
 }

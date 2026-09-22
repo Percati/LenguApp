@@ -1,23 +1,45 @@
 {
- "skillId": "EN-K01", "nivel": "C2", "idioma": "en",
+ "skillId": "EN-K01",
+ "nivel": "C2",
+ "idioma": "en",
  "titulo": "Inversion, Cleft and Fronting for Emphasis",
  "categoria": "grammar",
  "ancla": "EGP C2",
  "descripcion": "At C2 the three emphasis devices — inversion, cleft, fronting — are deployed across a whole argumentative passage, alternating deliberately so no single device dominates the register. The C1 skill was building each correctly; the C2 skill is knowing when restraint matters more than density.",
  "cuadroReferencia": {
   "titulo": "Deploying across a passage",
-  "columnas": ["Move", "Function in a longer argument"],
+  "columnas": [
+   "Move",
+   "Function in a longer argument"
+  ],
   "filas": [
-   ["Open with a cleft", "frames the whole paragraph's thesis"],
-   ["Mid-passage fronting", "shifts focus without a heavy structure"],
-   ["Closing inversion", "delivers the final, weighted point"]
+   [
+    "Open with a cleft",
+    "frames the whole paragraph's thesis"
+   ],
+   [
+    "Mid-passage fronting",
+    "shifts focus without a heavy structure"
+   ],
+   [
+    "Closing inversion",
+    "delivers the final, weighted point"
+   ]
   ],
   "notaPie": "A passage that opens AND closes with heavy inversion reads as performative. Reserve the heaviest device for one location only."
  },
  "ejemplos": [
-  {"texto": "What the data ultimately reveals is not a trend but a reversal.", "audio": true},
-  {"texto": "That much, the committee could agree on; the rest remained contested.", "audio": true},
-  {"texto": "Only in hindsight did the full cost become apparent."}
+  {
+   "texto": "What the data ultimately reveals is not a trend but a reversal.",
+   "audio": true
+  },
+  {
+   "texto": "That much, the committee could agree on; the rest remained contested.",
+   "audio": true
+  },
+  {
+   "texto": "Only in hindsight did the full cost become apparent."
+  }
  ],
  "notas": [
   "Across a full passage, using all three devices in sequence without variation reads as mechanical, even when each is individually correct.",
@@ -37,12 +59,72 @@
   "Using negative inversion mid-paragraph where it doesn't carry the argument's final weight."
  ],
  "redemittel": [
-  {"expresion": "What ultimately matters is…", "funcion": "opening cleft, sets thesis", "traducciones": {"es": "lo que en definitiva importa es…","de": "Was letztlich zählt, ist…","fr": "Ce qui compte en fin de compte, c’est…","it": "Ciò che conta in ultima analisi è…","pt": "O que realmente importa, no fim, é…"}},
-  {"expresion": "That much…could agree on.", "funcion": "mid-passage fronting", "traducciones": {"es": "en eso sí podían coincidir","de": "Darüber konnten… sich zumindest einigen.","fr": "Là-dessus, … pouvaient au moins s’accorder.","it": "Su questo… potevano almeno essere d’accordo.","pt": "Nisso… podiam pelo menos concordar."}},
-  {"expresion": "Only in hindsight did…", "funcion": "closing inversion, weighted", "traducciones": {"es": "solo en retrospectiva…","de": "Erst im Nachhinein…","fr": "Ce n’est qu’avec le recul que…","it": "Solo col senno di poi…","pt": "Só em retrospetiva…"}},
-  {"expresion": "It is precisely this that…", "funcion": "cleft, sharpens the focus", "traducciones": {"es": "es precisamente esto lo que…","de": "Genau das ist es, was…","fr": "C’est précisément cela qui…","it": "È proprio questo che…","pt": "É precisamente isto que…"}},
-  {"expresion": "Nowhere is this clearer than in…", "funcion": "inversion, illustrative", "traducciones": {"es": "en ningún lugar es esto más claro que en…","de": "Nirgendwo wird das deutlicher als in…","fr": "Cela n’est nulle part plus clair que dans…","it": "Da nessuna parte questo è più evidente che in…","pt": "Em nenhum lugar isto é mais claro do que em…"}},
-  {"expresion": "This much can be said with confidence:", "funcion": "fronting, transitional", "traducciones": {"es": "esto sí se puede afirmar con seguridad:","de": "So viel lässt sich mit Sicherheit sagen:","fr": "On peut affirmer ceci avec certitude :","it": "Questo si può dire con certezza:","pt": "Isto pode afirmar-se com segurança:"}}
+  {
+   "expresion": "What ultimately matters is…",
+   "funcion": "opening cleft, sets thesis",
+   "traducciones": {
+    "es": "lo que en definitiva importa es…",
+    "de": "Was letztlich zählt, ist…",
+    "fr": "Ce qui compte en fin de compte, c’est…",
+    "it": "Ciò che conta in ultima analisi è…",
+    "pt": "O que realmente importa, no fim, é…"
+   }
+  },
+  {
+   "expresion": "That much…could agree on.",
+   "funcion": "mid-passage fronting",
+   "traducciones": {
+    "es": "en eso sí podían coincidir",
+    "de": "Darüber konnten… sich zumindest einigen.",
+    "fr": "Là-dessus, … pouvaient au moins s’accorder.",
+    "it": "Su questo… potevano almeno essere d’accordo.",
+    "pt": "Nisso… podiam pelo menos concordar."
+   }
+  },
+  {
+   "expresion": "Only in hindsight did…",
+   "funcion": "closing inversion, weighted",
+   "traducciones": {
+    "es": "solo en retrospectiva…",
+    "de": "Erst im Nachhinein…",
+    "fr": "Ce n’est qu’avec le recul que…",
+    "it": "Solo col senno di poi…",
+    "pt": "Só em retrospetiva…"
+   }
+  },
+  {
+   "expresion": "It is precisely this that…",
+   "funcion": "cleft, sharpens the focus",
+   "traducciones": {
+    "es": "es precisamente esto lo que…",
+    "de": "Genau das ist es, was…",
+    "fr": "C’est précisément cela qui…",
+    "it": "È proprio questo che…",
+    "pt": "É precisamente isto que…"
+   }
+  },
+  {
+   "expresion": "Nowhere is this clearer than in…",
+   "funcion": "inversion, illustrative",
+   "traducciones": {
+    "es": "en ningún lugar es esto más claro que en…",
+    "de": "Nirgendwo wird das deutlicher als in…",
+    "fr": "Cela n’est nulle part plus clair que dans…",
+    "it": "Da nessuna parte questo è più evidente che in…",
+    "pt": "Em nenhum lugar isto é mais claro do que em…"
+   }
+  },
+  {
+   "expresion": "This much can be said with confidence:",
+   "funcion": "fronting, transitional",
+   "traducciones": {
+    "es": "esto sí se puede afirmar con seguridad:",
+    "de": "So viel lässt sich mit Sicherheit sagen:",
+    "fr": "On peut affirmer ceci avec certitude :",
+    "it": "Questo si può dire con certezza:",
+    "pt": "Isto pode afirmar-se com segurança:"
+   }
+  }
  ],
  "autochequeo": [
   "Are the three devices alternated across the passage, not repeated identically?",
@@ -51,5 +133,22 @@
   "Would a native reader sense control across the whole passage, not just in isolated sentences?",
   "Is there at least one paragraph without any of these devices, for contrast?"
  ],
- "promptCorreccion": "Focus only on how inversion, cleft and fronting are distributed across the whole passage. Flag repetition of the same device and check whether the heaviest one is reserved for a single weighted point. Do not rewrite the text."
+ "promptCorreccion": "Focus only on how inversion, cleft and fronting are distributed across the whole passage. Flag repetition of the same device and check whether the heaviest one is reserved for a single weighted point. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "Keeping the resumptive clitic of Spanish topicalisation (*este libro lo he leído*): *This book I have read it* instead of *This book I have read*."
+  ],
+  "de": [
+   "*gerade* rendered as *straight*: *Straight that is the point* instead of *That is precisely the point*."
+  ],
+  "it": [
+   "Keeping the resumptive clitic of Italian topicalisation (*questo libro l'ho letto*): *This book I have read it* instead of *This book I have read*."
+  ],
+  "fr": [
+   "Keeping the resumptive pronoun of French dislocation (*ce livre, je l'ai lu*): *This book, I have read it* instead of *This book I have read*."
+  ],
+  "pt": [
+   "Keeping the resumptive clitic of Portuguese topicalisation (*este livro, li-o*): *This book, I read it* instead of *This book I read*."
+  ]
+ }
 }

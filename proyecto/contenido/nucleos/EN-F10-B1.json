@@ -133,5 +133,22 @@
   "Does the phrase sound polite and natural?",
   "Does the phrase sound polite and natural?"
  ],
- "promptCorreccion": "Focus only on the words used to express certainty in a prediction. Check the position of probably and whether the level of certainty is accurate. Do not rewrite the text."
+ "promptCorreccion": "Focus only on the words used to express certainty in a prediction. Check the position of probably and whether the level of certainty is accurate. Do not rewrite the text.",
+ "erroresContrastivos": {
+  "es": [
+   "*A lo mejor* rendered as *At the best* instead of *Maybe* or *Perhaps*."
+  ],
+  "de": [
+   "*Es kann sein, dass er kommt* rendered as *It can be that he comes* instead of *He might come*."
+  ],
+  "it": [
+   "*Può darsi che venga* rendered as *It can be that he comes* instead of *He might come*."
+  ],
+  "fr": [
+   "*Il se peut qu'il vienne* rendered as *It can be that he comes* instead of *He might come*."
+  ],
+  "pt": [
+   "*Se calhar* rendered as *If it happens* instead of *Maybe* or *Perhaps*."
+  ]
+ }
 }

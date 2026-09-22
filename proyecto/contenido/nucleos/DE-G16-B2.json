@@ -136,5 +136,23 @@
   "Habe ich wegen nicht mit Dativ verwendet?",
   "Ist der Artikel nach der Präposition nicht vergessen worden?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Genitiv nach Präpositionen wie wegen, trotz, während und innerhalb. Prüfen Sie Kasus und Artikeldeklination in jedem Fall. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Genitiv nach Präpositionen wie wegen, trotz, während und innerhalb. Prüfen Sie Kasus und Artikeldeklination in jedem Fall. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Den Genitiv mit *von* ersetzen, auch im Schriftlichen, nach *de*: *das Ende von dem Projekt* im Bericht."
+  ],
+  "it": [
+   "Den Genitiv mit *von* ersetzen, auch im Schriftlichen, nach *di*: *das Auto von meinem Chef* im Bericht."
+  ],
+  "fr": [
+   "Den Genitiv mit *von* ersetzen, auch im Schriftlichen, nach *de*: *das Büro von dem Direktor* im Bericht."
+  ],
+  "pt": [
+   "Den Genitiv mit *von* ersetzen, auch im Schriftlichen, nach *de*: *das Ende von dem Projekt* im Bericht."
+  ],
+  "en": [
+   "Das sächsische Genitiv-*s* mit Apostroph schreiben: *Peter's Auto* statt *Peters Auto*.",
+   "Das Genitiv-*s* auf alle Nomen übertragen: *des Firmas* statt *der Firma*."
+  ]
+ }
 }

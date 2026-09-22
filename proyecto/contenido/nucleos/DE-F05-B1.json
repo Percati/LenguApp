@@ -133,5 +133,22 @@
   "Habe ich mindestens zwei verschiedene Vorschlagsformeln benutzt?",
   "Klingt der Ton freundlich?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Vorschläge und die Reaktionen darauf. Prüfen Sie den Konjunktiv II nach könnten und ob klar zugestimmt oder abgelehnt wird. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Vorschläge und die Reaktionen darauf. Prüfen Sie den Konjunktiv II nach könnten und ob klar zugestimmt oder abgelehnt wird. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*¿Qué tal si…?* als *Was so, wenn…?* übertragen statt *Wie wäre es, wenn…?*"
+  ],
+  "it": [
+   "*Che ne dici di…?* als *Was sagst du von…?* übertragen statt *Was hältst du von…?*"
+  ],
+  "fr": [
+   "*Qu'est-ce que tu dirais de…?* als *Was würdest du sagen von…?* übertragen statt *Was hältst du von…?*"
+  ],
+  "pt": [
+   "*Que tal…?* als *Was so…?* übertragen statt *Wie wäre es mit…?*"
+  ],
+  "en": [
+   "*What about…?* als *Was über…?* übertragen statt *Wie wäre es mit…?*"
+  ]
+ }
 }

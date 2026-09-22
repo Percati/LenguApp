@@ -133,5 +133,22 @@
   "Klingt der Text natürlich?",
   "Habe ich das Vokabular des Themas eingesetzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Komposita und das Präfix un-. Prüfen Sie den Artikel jedes Kompositums und ob un- korrekt zur Verneinung benutzt wird. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Komposita und das Präfix un-. Prüfen Sie den Artikel jedes Kompositums und ob un- korrekt zur Verneinung benutzt wird. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "Die Reihenfolge von *mesa de cocina* übernehmen: *Tischküche* statt *Küchentisch*."
+  ],
+  "it": [
+   "Die Reihenfolge von *tavolo da cucina* übernehmen: *Tischküche* statt *Küchentisch*."
+  ],
+  "fr": [
+   "Die Reihenfolge von *table de cuisine* übernehmen: *Tischküche* statt *Küchentisch*."
+  ],
+  "pt": [
+   "Die Reihenfolge von *mesa de cozinha* übernehmen: *Tischküche* statt *Küchentisch*."
+  ],
+  "en": [
+   "Komposita getrennt schreiben wie im Englischen: *Küchen Tisch* statt *Küchentisch*."
+  ]
+ }
 }

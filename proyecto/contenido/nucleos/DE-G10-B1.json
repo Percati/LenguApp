@@ -136,5 +136,22 @@
   "Klingt der Satz natürlich?",
   "Habe ich mindestens vier Beispiele benutzt?"
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Vorgangspassiv in Präsens und Präteritum. Prüfen Sie die Form mit werden und die Position des Partizips. Schreiben Sie den Text nicht neu."
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Vorgangspassiv in Präsens und Präteritum. Prüfen Sie die Form mit werden und die Position des Partizips. Schreiben Sie den Text nicht neu.",
+ "erroresContrastivos": {
+  "es": [
+   "*por* als *für* übertragen: *geschrieben für Cervantes* statt *geschrieben von Cervantes*."
+  ],
+  "it": [
+   "Das Passiv mit *venire* als *kommen* übertragen: *Das Paket kommt geschickt* statt *Das Paket wird geschickt*."
+  ],
+  "fr": [
+   "*par* als *durch* übertragen, auch bei Personen: *geschrieben durch Victor Hugo* statt *von Victor Hugo*."
+  ],
+  "pt": [
+   "Das unpersönliche *se* als *sich* übertragen: *Hier spricht sich Portugiesisch* statt *Hier wird Portugiesisch gesprochen*."
+  ],
+  "en": [
+   "*by* als *bei* übertragen: *geschrieben bei Goethe* statt *von Goethe*."
+  ]
+ }
 }
