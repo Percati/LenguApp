@@ -29,29 +29,17 @@ Estado regenerado a partir de los archivos reales del repositorio (parche de Apa
 
 `tools/validar_apariciones.py` (nuevo, agregado por esta conversación) da 0 errores en las 10 combinaciones; los avisos restantes son todos de audio faltante, cubierto en la sección 5.
 
-## 4. Bloqueantes de esquema para Code — ✅ los dos originales resueltos, dos nuevos abiertos
+## 4. Esquema — ✅ todo resuelto
 
-### 4.1 — Id de ficha con año — ✅ resuelto y verificado
-Id ahora es `skillId-nivel-anio-order`. Verificado componiendo las tres capas reales: "522 fichas compuestas, 9 semanas especiales, 0 con problemas" (antes: 480+9, 42 con problemas). `DE-G01-B2-2026-1.json` y `DE-G01-B2-2027-1.json` ya son archivos distintos. Tocó `schema/ficha.schema.json`, `tools/componer.py` y `ResolutorSemana.kt`.
+Id con año, estructura bilingüe de los 13 campos de prosa, `titulo` y
+`redemittel[].funcion` (commits `b64da7f`, `238fdf1`, `e1a1d4f`): todos
+cerrados. Verificado componiendo las tres capas reales: "522 fichas
+compuestas, 9 semanas especiales, 0 con problemas".
 
-### 4.2 — Estructura de traducción para A2/B1 — ✅ resuelto
-13 campos (`descripcion`, `notas`, `ejemplos[].texto`, `errores`, `autochequeo`, `cuadroReferencia.*`, `promptCorreccion`, `subtitulo`, `mision.*`, `microtareas[].texto`) aceptan ahora `oneOf` string plano u objeto `{idioma: texto}`. No es obligatorio todavía para A2/B1 — los 95 núcleos y 192 apariciones siguen en texto plano, listos para que Traducciones los llene sin que el schema los rompa. **Traducciones ya está trabajando sobre esto:** el maestro de traducciones cubre los 13 campos (4088 textos, 19 241 celdas) y el importador ya los vuelca; falta que Fer traduzca. Dos campos quedaron afuera — ver 4.6.
+`validar_apariciones.py` ya no tiene el chequeo muerto de colisión entre
+años — lo retiró Code de paso.
 
-### 4.3 — `generarCalendarioAssets` rompe el build (nuevo, hallado por Code, no relacionado a su parche)
-🔴 `data/banco.json` creció a 33-37 skills por nivel; `generar_calendario.py` (herramienta vieja, pensada solo para el piloto) no puede repartirlos en las ~2 semanas libres que deja `semanas-fijas.json`. Bloquea `./gradlew test` y `assembleDebug` en cualquier clon nuevo. Verificado: el fallo es interno a `generar_calendario.py` procesando archivos que nadie tocó en este parche.
-
-### 4.4 — Assets de la app y tests desactualizados (nuevo)
-🔴 `app/src/main/assets/contenido/` sigue compilado con el esquema de id viejo (sin año) — hace falta correr `componer.py` de nuevo para regenerarlo. Hasta entonces, dos aserciones de `ResolutorSemanaTest.kt` quedan en rojo a propósito (documentado con comentario en el test, no es un bug oculto).
-
-### 4.6 — `titulo` y `redemittel[].funcion` quedaron fuera de los campos bilingües (nuevo, hallado por Traducciones) — para Code
-🔴 El parche 4.2 dejó bilingües 13 campos de prosa, pero no el `titulo` de la ficha ni el `funcion` de cada Redemittel. En A2/B1, con el switch en "idioma de la app", el encabezado de la ficha y la etiqueta de función de cada expresión se seguirían viendo en alemán o inglés, que es justo lo que la ficha bilingüe quiere evitar. Son 95 títulos y unas 600 etiquetas `funcion`.
-
-Traducciones **no toca el schema**: hace falta que Code extienda el mismo `oneOf` (string plano u objeto `{idioma: texto}`) a esos dos campos, con el mismo criterio que 4.2 — sin volverlo obligatorio, para no romper la composición actual. Una vez hecho, el exportador de traducciones los suma solo agregándolos a `_campos_nucleo`, y el importador ya sabe volcarlos.
-
-### 4.5 — Limpieza menor pendiente
-🟡 El chequeo de colisión de id entre años de `validar_apariciones.py` (punto 6 de su docstring) queda mudo para siempre, porque el id ya nunca colisiona entre ediciones. No bloquea nada; es código muerto que conviene retirar en algún momento.
-
-## 5. Audio — ✅ contenido completo
+## 5. Audio — 🟡 grabado y convertido, falta subir 4462 al repo
 
 ✅ **7348/7348 filas del Excel grabadas** (6312 textos distintos). `audio-estado.json` registra **6368 archivos: 3298 EN y 3070 DE**. `validar_apariciones.py --anio 2027` no da avisos de audio.
 
@@ -74,14 +62,31 @@ Es idempotente y salta lo ya convertido. Los nombres en `audio-estado.json` ya a
 
 `audio-a-grabar.xlsx` es el **Excel de seguimiento**: se regenera con `exportar_audio_maestro.py --anio 2027`.
 
-## 6. Traducciones
+## 6. Traducciones — 🟡 en curso, la hace Fer a mano
 
-🟡 Packs de `de-C1-2027`: 672 ítems de vocabulario sin la clave `en`, más 8 expresiones sueltas de `redemittel` (`DE-G15-B2`, `DE-G15-C1`, `DE-V05-B2`). El resto (es/de/it/fr/pt en ambos campos, y `en` en el resto de alemán) está completo. No bloquea composición, solo deja esa clave vacía en el JSON final.
+**21 595 celdas pendientes** (13 campos de prosa de 95 núcleos + 192
+apariciones, ya con `titulo` y `funcion` incluidos; el hueco viejo de
+`de-C1` ya se corrigió). Excel entregado, ETA 1-2 días. El importador ya
+está listo y probado de punta a punta (round-trip: 522/9/0 sin problemas).
 
-## 7. Sin dueño todavía
+## 7. Vocabulario atestiguado alemán — falta B2 y C2 (requiere que Fer consiga material)
+
+`vocab_de.json` cubre A1/A2/B1/C1 (9987 apariciones). `vocab_en.json` ya
+cubre los 6 niveles (A1-C2, 946 solo en C2). A alemán le faltan B2 y C2
+enteros — no hay lista oficial gratuita del Goethe por encima de B1, así
+que hace falta el Lernwortschatz de un manual (ej. Sicher B2, Aspekte B2,
+Erkundungen C1/C2), en PDF, pasado por OCR (`tesseract -l deu`, comando en
+`tools/fuentes.json` bajo `_ocr`) y agregado a `tools/fuentes/`.
+
+**Esto no lo puede resolver ninguna conversación sola — las listas fuente
+tienen copyright y Fer tiene que conseguirlas y colocarlas él mismo.** Una
+vez ahí, correr `build_wordlists.py --config tools/fuentes.json --out
+data/vocab_de.json` es mecánico.
+
+## 8. Sin dueño todavía
 
 - **Semanas de repaso 2027** (S10, S22, S34, S46): no existe contenido en ninguna combinación. No es de Apariciones — nadie definió el formato.
 
-## 8. Piloto 2026
+## 9. Piloto 2026
 
 Alemán B2, inglés B2 e inglés C1 siguen completos bajo el esquema viejo. No tocar hasta que se resuelva el id con año (sección 4).
