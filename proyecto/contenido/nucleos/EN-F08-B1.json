@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Comparing and Contrasting",
+ "titulo": {
+  "en": "Comparing and Contrasting",
+  "de": "Vergleichen und Gegenüberstellen",
+  "es": "Comparar y contrastar",
+  "fr": "Comparer et mettre en contraste",
+  "it": "Confrontare e mettere a contrasto",
+  "pt": "Comparar e contrastar"
+ },
  "categoria": "fluency",
  "ancla": "CV Sustained monologue: giving information",
- "descripcion": "At B1 you compare two things using comparative and superlative adjectives, plus simple connectors like but. The finer, weighted contrast used at higher levels comes later — clear comparatives and a stated preference are enough here.",
+ "descripcion": {
+  "en": "At B1 you compare two things using comparative and superlative adjectives, plus simple connectors like but. The finer, weighted contrast used at higher levels comes later — clear comparatives and a stated preference are enough here.",
+  "de": "Auf B1 vergleichst du zwei Dinge mit Komparativ- und Superlativformen sowie einfachen Konnektoren wie but. Die feineren, gewichteten Gegenüberstellungen höherer Niveaus kommen später — hier reichen klare Vergleiche und eine geäußerte Präferenz.",
+  "es": "En B1 comparas dos cosas usando comparativos y superlativos, además de conectores sencillos como but. Los contrastes más matizados y ponderados de niveles superiores llegan después; aquí bastan comparaciones claras y una preferencia explícita.",
+  "fr": "Au niveau B1, tu compares deux choses avec des comparatifs et des superlatifs, ainsi qu’avec des connecteurs simples comme but. Les contrastes plus fins et pondérés des niveaux supérieurs viennent plus tard : ici, des comparaisons claires et une préférence exprimée suffisent.",
+  "it": "A livello B1 confronti due cose usando comparativi e superlativi, più connettivi semplici come but. I contrasti più fini e ponderati dei livelli superiori arrivano più avanti: qui bastano confronti chiari e una preferenza espressa.",
+  "pt": "No nível B1, você compara duas coisas usando comparativos e superlativos, além de conectores simples como but. Contrastes mais sutis e ponderados vêm nos níveis mais altos; aqui bastam comparações claras e uma preferência expressa."
+ },
  "cuadroReferencia": {
-  "titulo": "Comparing two things",
+  "titulo": {
+   "en": "Comparing two things",
+   "de": "Zwei Dinge vergleichen",
+   "es": "Comparar dos cosas",
+   "fr": "Comparer deux choses",
+   "it": "Confrontare due cose",
+   "pt": "Comparar duas coisas"
+  },
   "columnas": [
-   "Function",
-   "Example"
+   {
+    "en": "Function",
+    "de": "Funktion",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Comparative",
-    "This one is cheaper than that one."
+    {
+     "en": "Comparative",
+     "de": "Komparativ",
+     "es": "Comparativo",
+     "fr": "Comparatif",
+     "it": "Comparativo",
+     "pt": "Comparativo"
+    },
+    {
+     "en": "This one is cheaper than that one.",
+     "de": "Dieses ist günstiger als jenes.",
+     "es": "Este es más barato que aquel.",
+     "fr": "Celui-ci est moins cher que celui-là.",
+     "it": "Questo è più economico di quello.",
+     "pt": "Este é mais barato do que aquele."
+    }
    ],
    [
-    "Superlative",
-    "It's the best option."
+    {
+     "en": "Superlative",
+     "de": "Superlativ",
+     "es": "Superlativo",
+     "fr": "Superlatif",
+     "it": "Superlativo",
+     "pt": "Superlativo"
+    },
+    {
+     "en": "It's the best option.",
+     "de": "Es ist die beste Option.",
+     "es": "Es la mejor opción.",
+     "fr": "C’est la meilleure option.",
+     "it": "È l’opzione migliore.",
+     "pt": "É a melhor opção."
+    }
    ],
    [
-    "Similarity",
-    "They're quite similar."
+    {
+     "en": "Similarity",
+     "de": "Ähnlichkeit",
+     "es": "Similitud",
+     "fr": "Similarité",
+     "it": "Somiglianza",
+     "pt": "Semelhança"
+    },
+    {
+     "en": "They're quite similar.",
+     "de": "Sie sind ziemlich ähnlich.",
+     "es": "Son bastante parecidos.",
+     "fr": "Ils sont assez semblables.",
+     "it": "Sono abbastanza simili.",
+     "pt": "Eles são bastante parecidos."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "This phone is cheaper than that one.",
+   "texto": {
+    "en": "This phone is cheaper than that one.",
+    "de": "Dieses Handy ist günstiger als jenes.",
+    "es": "Este teléfono es más barato que aquel.",
+    "fr": "Ce téléphone est moins cher que celui-là.",
+    "it": "Questo telefono è più economico di quello.",
+    "pt": "Este celular é mais barato do que aquele."
+   },
    "audio": true
   },
   {
-   "texto": "It's the best option, in my opinion.",
+   "texto": {
+    "en": "It's the best option, in my opinion.",
+    "de": "Meiner Meinung nach ist es die beste Option.",
+    "es": "En mi opinión, es la mejor opción.",
+    "fr": "À mon avis, c’est la meilleure option.",
+    "it": "Secondo me, è l’opzione migliore.",
+    "pt": "Na minha opinião, é a melhor opção."
+   },
    "audio": true
   },
   {
-   "texto": "They're quite similar, but this one is faster."
+   "texto": {
+    "en": "They're quite similar, but this one is faster.",
+    "de": "Sie sind ziemlich ähnlich, aber dieses hier ist schneller.",
+    "es": "Son bastante parecidos, pero este es más rápido.",
+    "fr": "Ils sont assez semblables, mais celui-ci est plus rapide.",
+    "it": "Sono abbastanza simili, ma questo è più veloce.",
+    "pt": "Eles são bem parecidos, mas este é mais rápido."
+   }
   }
  ],
  "notas": [
-  "Short adjectives take -er/-est (cheaper, cheapest); longer ones take more/most (more expensive).",
-  "Than is needed after a comparative: cheaper than, not just cheaper.",
-  "The is needed before a superlative: the best, the cheapest."
+  {
+   "en": "Short adjectives take -er/-est (cheaper, cheapest); longer ones take more/most (more expensive).",
+   "de": "Kurze Adjektive nehmen -er/-est (cheaper, cheapest); längere Adjektive more/most (more expensive).",
+   "es": "Los adjetivos cortos toman -er/-est (cheaper, cheapest); los más largos usan more/most (more expensive).",
+   "fr": "Les adjectifs courts prennent -er/-est (cheaper, cheapest) ; les plus longs prennent more/most (more expensive).",
+   "it": "Gli aggettivi corti prendono -er/-est (cheaper, cheapest); quelli più lunghi usano more/most (more expensive).",
+   "pt": "Adjetivos curtos recebem -er/-est (cheaper, cheapest); os mais longos usam more/most (more expensive)."
+  },
+  {
+   "en": "Than is needed after a comparative: cheaper than, not just cheaper.",
+   "de": "Nach einem Komparativ braucht man than: cheaper than, nicht nur cheaper.",
+   "es": "Than es necesario después de un comparativo: cheaper than, no solo cheaper.",
+   "fr": "Than est nécessaire après un comparatif : cheaper than, pas seulement cheaper.",
+   "it": "Than è necessario dopo un comparativo: cheaper than, non solo cheaper.",
+   "pt": "Than é necessário depois de um comparativo: cheaper than, não apenas cheaper."
+  },
+  {
+   "en": "The is needed before a superlative: the best, the cheapest.",
+   "de": "Vor einem Superlativ braucht man the: the best, the cheapest.",
+   "es": "The es necesario antes de un superlativo: the best, the cheapest.",
+   "fr": "The est nécessaire avant un superlatif : the best, the cheapest.",
+   "it": "The è necessario prima di un superlativo: the best, the cheapest.",
+   "pt": "The é necessário antes de um superlativo: the best, the cheapest."
+  }
  ],
  "contraste": {
   "es": "Spanish compares with más… que, while English uses -er and -est for short adjectives (bigger, the biggest). The typical errors are more big and more bigger.",
@@ -54,14 +173,42 @@
   "pt": "Portuguese compares with mais (mais alto), which leads to more tall instead of taller. English uses -er and -est for short adjectives and more only for longer ones."
  },
  "errores": [
-  "Forgetting than after a comparative.",
-  "Forgetting the before a superlative.",
-  "Using more with a short adjective that should take -er."
+  {
+   "en": "Forgetting than after a comparative.",
+   "de": "Than nach einem Komparativ vergessen.",
+   "es": "Olvidar than después de un comparativo.",
+   "fr": "Oublier than après un comparatif.",
+   "it": "Dimenticare than dopo un comparativo.",
+   "pt": "Esquecer than depois de um comparativo."
+  },
+  {
+   "en": "Forgetting the before a superlative.",
+   "de": "The vor einem Superlativ vergessen.",
+   "es": "Olvidar the antes de un superlativo.",
+   "fr": "Oublier the avant un superlatif.",
+   "it": "Dimenticare the prima di un superlativo.",
+   "pt": "Esquecer the antes de um superlativo."
+  },
+  {
+   "en": "Using more with a short adjective that should take -er.",
+   "de": "More mit einem kurzen Adjektiv verwenden, das -er nehmen sollte.",
+   "es": "Usar more con un adjetivo corto que debería llevar -er.",
+   "fr": "Utiliser more avec un adjectif court qui devrait prendre -er.",
+   "it": "Usare more con un aggettivo corto che dovrebbe prendere -er.",
+   "pt": "Usar more com um adjetivo curto que deveria receber -er."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…is cheaper than…",
-   "funcion": "comparative",
+   "funcion": {
+    "en": "comparative",
+    "de": "Komparativ",
+    "es": "comparativo",
+    "fr": "comparatif",
+    "it": "comparativo",
+    "pt": "comparativo"
+   },
    "traducciones": {
     "es": "…es más barato que…",
     "de": "…ist billiger als…",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "…is the best…",
-   "funcion": "superlative",
+   "funcion": {
+    "en": "superlative",
+    "de": "Superlativ",
+    "es": "superlativo",
+    "fr": "superlatif",
+    "it": "superlativo",
+    "pt": "superlativo"
+   },
    "traducciones": {
     "es": "…es el/la mejor…",
     "de": "…ist der/die/das beste…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "They're quite similar.",
-   "funcion": "similarity",
+   "funcion": {
+    "en": "similarity",
+    "de": "Ähnlichkeit",
+    "es": "similitud",
+    "fr": "similarité",
+    "it": "somiglianza",
+    "pt": "semelhança"
+   },
    "traducciones": {
     "es": "Son bastante parecidos.",
     "de": "Sie sind ziemlich ähnlich.",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "…is more expensive than…",
-   "funcion": "comparative, long adjective",
+   "funcion": {
+    "en": "comparative, long adjective",
+    "de": "Komparativ, langes Adjektiv",
+    "es": "comparativo, adjetivo largo",
+    "fr": "comparatif, adjectif long",
+    "it": "comparativo, aggettivo lungo",
+    "pt": "comparativo, adjetivo longo"
+   },
    "traducciones": {
     "es": "…es más caro que…",
     "de": "…ist teurer als…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "…, but…",
-   "funcion": "simple contrast",
+   "funcion": {
+    "en": "simple contrast",
+    "de": "einfacher Kontrast",
+    "es": "contraste sencillo",
+    "fr": "contraste simple",
+    "it": "contrasto semplice",
+    "pt": "contraste simples"
+   },
    "traducciones": {
     "es": "…, pero…",
     "de": "…, aber…",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "I'd prefer…",
-   "funcion": "stating a preference",
+   "funcion": {
+    "en": "stating a preference",
+    "de": "eine Präferenz äußern",
+    "es": "expresar una preferencia",
+    "fr": "exprimer une préférence",
+    "it": "esprimere una preferenza",
+    "pt": "expressar uma preferência"
+   },
    "traducciones": {
     "es": "Preferiría…",
     "de": "Ich würde lieber…",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Is than used after every comparative?",
-  "Is the used before every superlative?",
-  "Are short and long adjectives formed correctly (-er/-est vs. more/most)?",
-  "Have I stated a clear preference?",
-  "Have I used more than one form?"
+  {
+   "en": "Is than used after every comparative?",
+   "de": "Wird than nach jedem Komparativ verwendet?",
+   "es": "¿Se usa than después de cada comparativo?",
+   "fr": "Than est-il utilisé après chaque comparatif ?",
+   "it": "Si usa than dopo ogni comparativo?",
+   "pt": "Than é usado depois de todo comparativo?"
+  },
+  {
+   "en": "Is the used before every superlative?",
+   "de": "Wird the vor jedem Superlativ verwendet?",
+   "es": "¿Se usa the antes de cada superlativo?",
+   "fr": "The est-il utilisé avant chaque superlatif ?",
+   "it": "Si usa the prima di ogni superlativo?",
+   "pt": "The é usado antes de todo superlativo?"
+  },
+  {
+   "en": "Are short and long adjectives formed correctly (-er/-est vs. more/most)?",
+   "de": "Sind kurze und lange Adjektive korrekt gebildet (-er/-est vs. more/most)?",
+   "es": "¿Los adjetivos cortos y largos están formados correctamente (-er/-est vs. more/most)?",
+   "fr": "Les adjectifs courts et longs sont-ils formés correctement (-er/-est vs. more/most) ?",
+   "it": "Gli aggettivi corti e lunghi sono formati correttamente (-er/-est vs. more/most)?",
+   "pt": "Adjetivos curtos e longos estão formados corretamente (-er/-est vs. more/most)?"
+  },
+  {
+   "en": "Have I stated a clear preference?",
+   "de": "Habe ich eine klare Präferenz genannt?",
+   "es": "¿He expresado una preferencia clara?",
+   "fr": "Ai-je exprimé une préférence claire ?",
+   "it": "Ho espresso una preferenza chiara?",
+   "pt": "Expressei uma preferência clara?"
+  },
+  {
+   "en": "Have I used more than one form?",
+   "de": "Habe ich mehr als eine Form verwendet?",
+   "es": "¿He usado más de una forma?",
+   "fr": "Ai-je utilisé plus d’une forme ?",
+   "it": "Ho usato più di una forma?",
+   "pt": "Usei mais de uma forma?"
+  }
  ],
- "promptCorreccion": "Focus only on comparatives and superlatives. Check than, the, and whether short or long adjective forms are used correctly throughout the comparison. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on comparatives and superlatives. Check than, the, and whether short or long adjective forms are used correctly throughout the comparison. Do not rewrite the text.",
+  "de": "Achte nur auf Komparative und Superlative. Prüfe than, the und ob kurze und lange Adjektivformen im ganzen Vergleich richtig verwendet werden. Formuliere den Text nicht neu.",
+  "es": "Concéntrate solo en comparativos y superlativos. Comprueba than, the y si las formas de los adjetivos cortos y largos se usan correctamente en toda la comparación. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur les comparatifs et les superlatifs. Vérifie than, the et si les formes des adjectifs courts et longs sont utilisées correctement tout au long de la comparaison. Ne réécris pas le texte.",
+  "it": "Concentrati solo su comparativi e superlativi. Controlla than, the e se le forme degli aggettivi corti e lunghi sono usate correttamente in tutto il confronto. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas em comparativos e superlativos. Verifique than, the e se as formas de adjetivos curtos e longos estão sendo usadas corretamente ao longo da comparação. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*el más alto de la clase* rendered with *of*: *the tallest of the class* instead of *the tallest in the class*."

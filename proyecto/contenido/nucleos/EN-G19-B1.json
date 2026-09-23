@@ -3,49 +3,175 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Word Order and Adverb Placement",
+ "titulo": {
+  "en": "Word Order and Adverb Placement",
+  "de": "Wortstellung und Position von Adverbien",
+  "es": "Orden de palabras y posición de los adverbios",
+  "fr": "Ordre des mots et place des adverbes",
+  "it": "Ordine delle parole e posizione degli avverbi",
+  "pt": "Ordem das palavras e posição dos advérbios"
+ },
  "categoria": "grammar",
  "ancla": "EGP A1-B1",
- "descripcion": "At B1 you place adverbs of frequency, like always, usually and never, correctly: before the main verb but after the verb be. This basic word-order rule prevents one of the most common and noticeable mistakes at this level.",
+ "descripcion": {
+  "en": "At B1 you place adverbs of frequency, like always, usually and never, correctly: before the main verb but after the verb be. This basic word-order rule prevents one of the most common and noticeable mistakes at this level.",
+  "de": "Auf B1-Niveau platzierst du Häufigkeitsadverbien wie always, usually und never korrekt: vor dem Vollverb, aber nach dem Verb be. Diese grundlegende Wortstellungsregel verhindert einen der häufigsten und auffälligsten Fehler auf diesem Niveau.",
+  "es": "En B1 colocas correctamente los adverbios de frecuencia como always, usually y never: antes del verbo principal, pero después del verbo be. Esta regla básica de orden de palabras evita uno de los errores más frecuentes y evidentes de este nivel.",
+  "fr": "Au niveau B1, tu places correctement les adverbes de fréquence comme always, usually et never : avant le verbe principal, mais après le verbe be. Cette règle de base sur l'ordre des mots évite l'une des erreurs les plus fréquentes et les plus visibles à ce niveau.",
+  "it": "Al livello B1 posizioni correttamente gli avverbi di frequenza come always, usually e never: prima del verbo principale, ma dopo il verbo be. Questa regola di base sull'ordine delle parole evita uno degli errori più comuni e visibili a questo livello.",
+  "pt": "No nível B1, você posiciona corretamente advérbios de frequência como always, usually e never: antes do verbo principal, mas depois do verbo be. Essa regra básica de ordem das palavras evita um dos erros mais comuns e perceptíveis nesse nível."
+ },
  "cuadroReferencia": {
-  "titulo": "Frequency adverb position",
+  "titulo": {
+   "en": "Frequency adverb position",
+   "de": "Position von Häufigkeitsadverbien",
+   "es": "Posición de los adverbios de frecuencia",
+   "fr": "Place des adverbes de fréquence",
+   "it": "Posizione degli avverbi di frequenza",
+   "pt": "Posição dos advérbios de frequência"
+  },
   "columnas": [
-   "Rule",
-   "Example"
+   {
+    "en": "Rule",
+    "de": "Regel",
+    "es": "Regla",
+    "fr": "Règle",
+    "it": "Regola",
+    "pt": "Regra"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Before the main verb",
-    "She always arrives on time."
+    {
+     "en": "Before the main verb",
+     "de": "Vor dem Vollverb",
+     "es": "Antes del verbo principal",
+     "fr": "Avant le verbe principal",
+     "it": "Prima del verbo principale",
+     "pt": "Antes do verbo principal"
+    },
+    {
+     "en": "She always arrives on time.",
+     "de": "Sie kommt immer pünktlich.",
+     "es": "Siempre llega puntual.",
+     "fr": "Elle arrive toujours à l'heure.",
+     "it": "Arriva sempre puntuale.",
+     "pt": "Ela sempre chega na hora."
+    }
    ],
    [
-    "After be",
-    "She is always on time."
+    {
+     "en": "After be",
+     "de": "Nach be",
+     "es": "Después de be",
+     "fr": "Après be",
+     "it": "Dopo be",
+     "pt": "Depois de be"
+    },
+    {
+     "en": "She is always on time.",
+     "de": "Sie ist immer pünktlich.",
+     "es": "Siempre es puntual.",
+     "fr": "Elle est toujours à l'heure.",
+     "it": "È sempre puntuale.",
+     "pt": "Ela está sempre no horário."
+    }
    ],
    [
-    "With never",
-    "no extra not needed",
-    "I never go there."
+    {
+     "en": "With never",
+     "de": "Mit never",
+     "es": "Con never",
+     "fr": "Avec never",
+     "it": "Con never",
+     "pt": "Com never"
+    },
+    {
+     "en": "no extra not needed",
+     "de": "kein zusätzliches not nötig",
+     "es": "no hace falta añadir not",
+     "fr": "pas besoin d'ajouter not",
+     "it": "non serve aggiungere not",
+     "pt": "não é preciso acrescentar not"
+    },
+    {
+     "en": "I never go there.",
+     "de": "Ich gehe nie dorthin.",
+     "es": "Nunca voy allí.",
+     "fr": "Je n'y vais jamais.",
+     "it": "Non ci vado mai.",
+     "pt": "Eu nunca vou lá."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "She always arrives exactly on time.",
+   "texto": {
+    "en": "She always arrives exactly on time.",
+    "de": "Sie kommt immer genau pünktlich.",
+    "es": "Siempre llega exactamente a tiempo.",
+    "fr": "Elle arrive toujours exactement à l'heure.",
+    "it": "Arriva sempre esattamente in orario.",
+    "pt": "Ela sempre chega exatamente na hora."
+   },
    "audio": true
   },
   {
-   "texto": "She is always on time for meetings.",
+   "texto": {
+    "en": "She is always on time for meetings.",
+    "de": "Sie ist bei Besprechungen immer pünktlich.",
+    "es": "Siempre llega puntual a las reuniones.",
+    "fr": "Elle est toujours à l'heure aux réunions.",
+    "it": "È sempre puntuale alle riunioni.",
+    "pt": "Ela está sempre no horário para as reuniões."
+   },
    "audio": true
   },
   {
-   "texto": "I usually have coffee in the morning."
+   "texto": {
+    "en": "I usually have coffee in the morning.",
+    "de": "Morgens trinke ich normalerweise Kaffee.",
+    "es": "Normalmente tomo café por la mañana.",
+    "fr": "Je prends généralement un café le matin.",
+    "it": "Di solito bevo caffè al mattino.",
+    "pt": "Geralmente tomo café de manhã."
+   }
   }
  ],
  "notas": [
-  "With a normal verb, the frequency adverb goes before it: she always arrives.",
-  "With be, the adverb goes after it: she is always.",
-  "Never makes the sentence negative in meaning without needing not: I never go there."
+  {
+   "en": "With a normal verb, the frequency adverb goes before it: she always arrives.",
+   "de": "Bei einem normalen Verb steht das Häufigkeitsadverb davor: she always arrives.",
+   "es": "Con un verbo normal, el adverbio de frecuencia va antes: she always arrives.",
+   "fr": "Avec un verbe ordinaire, l'adverbe de fréquence se place avant : she always arrives.",
+   "it": "Con un verbo normale, l'avverbio di frequenza va prima: she always arrives.",
+   "pt": "Com um verbo comum, o advérbio de frequência vem antes: she always arrives."
+  },
+  {
+   "en": "With be, the adverb goes after it: she is always.",
+   "de": "Bei be steht das Adverb danach: she is always.",
+   "es": "Con be, el adverbio va después: she is always.",
+   "fr": "Avec be, l'adverbe se place après : she is always.",
+   "it": "Con be, l'avverbio va dopo: she is always.",
+   "pt": "Com be, o advérbio vem depois: she is always."
+  },
+  {
+   "en": "Never makes the sentence negative in meaning without needing not: I never go there.",
+   "de": "Never macht den Satz schon inhaltlich negativ, daher ist kein not nötig: I never go there.",
+   "es": "Never ya da sentido negativo a la oración, por lo que no hace falta not: I never go there.",
+   "fr": "Never donne déjà un sens négatif à la phrase, sans avoir besoin de not : I never go there.",
+   "it": "Never rende già negativa la frase, quindi non serve not: I never go there.",
+   "pt": "Never já dá sentido negativo à frase, por isso não é necessário usar not: I never go there."
+  }
  ],
  "contraste": {
   "es": "Spanish places frequency adverbs more freely, often at the start of the sentence (siempre llega a tiempo). Spanish speakers tend to put always at the start of the English sentence, where it sounds unnatural.",
@@ -55,14 +181,42 @@
   "pt": "Brazilian Portuguese places sempre before the verb (ele sempre chega na hora), which matches English (He always arrives on time). European Portuguese places it after the verb (chega sempre a horas), which leads to He arrives always on time."
  },
  "errores": [
-  "Placing the frequency adverb at the start of the sentence.",
-  "Putting the adverb before be instead of after it.",
-  "Using not together with never, which is redundant."
+  {
+   "en": "Placing the frequency adverb at the start of the sentence.",
+   "de": "Das Häufigkeitsadverb an den Satzanfang stellen.",
+   "es": "Colocar el adverbio de frecuencia al principio de la oración.",
+   "fr": "Placer l'adverbe de fréquence au début de la phrase.",
+   "it": "Mettere l'avverbio di frequenza all'inizio della frase.",
+   "pt": "Colocar o advérbio de frequência no início da frase."
+  },
+  {
+   "en": "Putting the adverb before be instead of after it.",
+   "de": "Das Adverb vor be statt danach setzen.",
+   "es": "Poner el adverbio antes de be en lugar de después.",
+   "fr": "Placer l'adverbe avant be au lieu de le mettre après.",
+   "it": "Mettere l'avverbio prima di be invece che dopo.",
+   "pt": "Colocar o advérbio antes de be em vez de depois."
+  },
+  {
+   "en": "Using not together with never, which is redundant.",
+   "de": "Not zusammen mit never verwenden, obwohl das überflüssig ist.",
+   "es": "Usar not junto con never, lo cual es redundante.",
+   "fr": "Utiliser not avec never, ce qui est redondant.",
+   "it": "Usare not insieme a never, che è ridondante.",
+   "pt": "Usar not junto com never, o que é redundante."
+  }
  ],
  "redemittel": [
   {
    "expresion": "She always…",
-   "funcion": "frequency before the verb",
+   "funcion": {
+    "en": "frequency before the verb",
+    "de": "Häufigkeit vor dem Verb",
+    "es": "frecuencia antes del verbo",
+    "fr": "fréquence avant le verbe",
+    "it": "frequenza prima del verbo",
+    "pt": "frequência antes do verbo"
+   },
    "traducciones": {
     "es": "Ella siempre…",
     "de": "Sie… immer.",
@@ -73,7 +227,14 @@
   },
   {
    "expresion": "She is always…",
-   "funcion": "frequency after be",
+   "funcion": {
+    "en": "frequency after be",
+    "de": "Häufigkeit nach be",
+    "es": "frecuencia después de be",
+    "fr": "fréquence après be",
+    "it": "frequenza dopo be",
+    "pt": "frequência depois de be"
+   },
    "traducciones": {
     "es": "Ella siempre está…",
     "de": "Sie ist immer…",
@@ -84,7 +245,14 @@
   },
   {
    "expresion": "I usually…",
-   "funcion": "frequency, habit",
+   "funcion": {
+    "en": "frequency, habit",
+    "de": "Häufigkeit, Gewohnheit",
+    "es": "frecuencia, hábito",
+    "fr": "fréquence, habitude",
+    "it": "frequenza, abitudine",
+    "pt": "frequência, hábito"
+   },
    "traducciones": {
     "es": "Normalmente yo…",
     "de": "Normalerweise… ich…",
@@ -95,7 +263,14 @@
   },
   {
    "expresion": "I never…",
-   "funcion": "frequency, negative meaning",
+   "funcion": {
+    "en": "frequency, negative meaning",
+    "de": "Häufigkeit, negative Bedeutung",
+    "es": "frecuencia, sentido negativo",
+    "fr": "fréquence, sens négatif",
+    "it": "frequenza, significato negativo",
+    "pt": "frequência, sentido negativo"
+   },
    "traducciones": {
     "es": "Nunca…",
     "de": "Ich… nie.",
@@ -106,7 +281,14 @@
   },
   {
    "expresion": "I sometimes…",
-   "funcion": "frequency, occasional",
+   "funcion": {
+    "en": "frequency, occasional",
+    "de": "Häufigkeit, gelegentlich",
+    "es": "frecuencia, ocasional",
+    "fr": "fréquence, occasionnel",
+    "it": "frequenza, occasionale",
+    "pt": "frequência, ocasional"
+   },
    "traducciones": {
     "es": "A veces…",
     "de": "Manchmal… ich…",
@@ -117,7 +299,14 @@
   },
   {
    "expresion": "…is often…",
-   "funcion": "frequency, with be",
+   "funcion": {
+    "en": "frequency, with be",
+    "de": "Häufigkeit, mit be",
+    "es": "frecuencia, con be",
+    "fr": "fréquence, avec be",
+    "it": "frequenza, con be",
+    "pt": "frequência, com be"
+   },
    "traducciones": {
     "es": "…suele estar…",
     "de": "…ist oft…",
@@ -128,13 +317,55 @@
   }
  ],
  "autochequeo": [
-  "Is the frequency adverb before the main verb?",
-  "Is it after be, not before?",
-  "Have I avoided using not together with never?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?"
+  {
+   "en": "Is the frequency adverb before the main verb?",
+   "de": "Steht das Häufigkeitsadverb vor dem Vollverb?",
+   "es": "¿El adverbio de frecuencia va antes del verbo principal?",
+   "fr": "L'adverbe de fréquence est-il placé avant le verbe principal ?",
+   "it": "L'avverbio di frequenza viene prima del verbo principale?",
+   "pt": "O advérbio de frequência vem antes do verbo principal?"
+  },
+  {
+   "en": "Is it after be, not before?",
+   "de": "Steht es nach be und nicht davor?",
+   "es": "¿Va después de be y no antes?",
+   "fr": "Est-il placé après be et non avant ?",
+   "it": "Viene dopo be e non prima?",
+   "pt": "Ele vem depois de be, e não antes?"
+  },
+  {
+   "en": "Have I avoided using not together with never?",
+   "de": "Habe ich not zusammen mit never vermieden?",
+   "es": "¿He evitado usar not junto con never?",
+   "fr": "Ai-je évité d'utiliser not avec never ?",
+   "it": "Ho evitato di usare not insieme a never?",
+   "pt": "Evitei usar not junto com never?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on the position of frequency adverbs relative to be and to main verbs. Check whether the sentence sounds natural rather than translated. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on the position of frequency adverbs relative to be and to main verbs. Check whether the sentence sounds natural rather than translated. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf die Position von Häufigkeitsadverbien im Verhältnis zu be und Vollverben. Prüfe, ob der Satz natürlich klingt und nicht wie eine Übersetzung. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en la posición de los adverbios de frecuencia respecto de be y de los verbos principales. Comprueba si la oración suena natural y no traducida. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur la place des adverbes de fréquence par rapport à be et aux verbes principaux. Vérifie si la phrase paraît naturelle et non traduite. Ne réécris pas le texte.",
+  "it": "Concentrati solo sulla posizione degli avverbi di frequenza rispetto a be e ai verbi principali. Controlla se la frase suona naturale e non tradotta. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas na posição dos advérbios de frequência em relação a be e aos verbos principais. Verifique se a frase soa natural, e não traduzida. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*hablo bien inglés* rendered word for word: *I speak well English* instead of *I speak English well*."

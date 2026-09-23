@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "First Conditional",
+ "titulo": {
+  "en": "First Conditional",
+  "de": "First Conditional",
+  "es": "Primer condicional",
+  "fr": "Premier conditionnel",
+  "it": "First conditional",
+  "pt": "First conditional"
+ },
  "categoria": "grammar",
  "ancla": "EGP A2",
- "descripcion": "The first conditional talks about a real, possible future situation: if it rains, we'll stay home. At B1 the goal is to get the form right in both parts and use it fluently for real plans and warnings.",
+ "descripcion": {
+  "en": "The first conditional talks about a real, possible future situation: if it rains, we'll stay home. At B1 the goal is to get the form right in both parts and use it fluently for real plans and warnings.",
+  "de": "Der first conditional beschreibt eine reale, mögliche Situation in der Zukunft: if it rains, we'll stay home. Auf B1-Niveau geht es darum, die Form in beiden Satzteilen richtig zu bilden und sie flüssig für reale Pläne und Warnungen zu verwenden.",
+  "es": "El first conditional habla de una situación futura real y posible: if it rains, we'll stay home. En B1, el objetivo es formar correctamente ambas partes y usarlo con fluidez para planes y advertencias reales.",
+  "fr": "Le first conditional parle d'une situation future réelle et possible : if it rains, we'll stay home. Au niveau B1, l'objectif est de construire correctement les deux parties et de l'utiliser avec aisance pour des projets et avertissements réels.",
+  "it": "Il first conditional parla di una situazione futura reale e possibile: if it rains, we'll stay home. Al livello B1, l'obiettivo è costruire correttamente entrambe le parti e usarlo con scioltezza per piani e avvertimenti reali.",
+  "pt": "O first conditional fala de uma situação futura real e possível: if it rains, we'll stay home. No nível B1, o objetivo é formar corretamente as duas partes e usá-lo com naturalidade para planos e avisos reais."
+ },
  "cuadroReferencia": {
-  "titulo": "First conditional",
+  "titulo": {
+   "en": "First conditional",
+   "de": "First Conditional",
+   "es": "Primer condicional",
+   "fr": "Premier conditionnel",
+   "it": "First conditional",
+   "pt": "First conditional"
+  },
   "columnas": [
-   "Part",
-   "Form",
-   "Example"
+   {
+    "en": "Part",
+    "de": "Teil",
+    "es": "Parte",
+    "fr": "Partie",
+    "it": "Parte",
+    "pt": "Parte"
+   },
+   {
+    "en": "Form",
+    "de": "Form",
+    "es": "Forma",
+    "fr": "Forme",
+    "it": "Forma",
+    "pt": "Forma"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "If-clause",
-    "present simple",
-    "If it rains,"
+    {
+     "en": "If-clause",
+     "de": "If-Satz",
+     "es": "Oración con if",
+     "fr": "Proposition en if",
+     "it": "Proposizione con if",
+     "pt": "Oração com if"
+    },
+    {
+     "en": "present simple",
+     "de": "Simple Present",
+     "es": "presente simple",
+     "fr": "présent simple",
+     "it": "present simple",
+     "pt": "simple present"
+    },
+    {
+     "en": "If it rains,",
+     "de": "Wenn es regnet,",
+     "es": "Si llueve,",
+     "fr": "S’il pleut,",
+     "it": "Se piove,",
+     "pt": "Se chover,"
+    }
    ],
    [
-    "Main clause",
-    "will + infinitive",
-    "…we'll stay home."
+    {
+     "en": "Main clause",
+     "de": "Hauptsatz",
+     "es": "Oración principal",
+     "fr": "Proposition principale",
+     "it": "Frase principale",
+     "pt": "Oração principal"
+    },
+    {
+     "en": "will + infinitive",
+     "de": "will + Infinitiv",
+     "es": "will + infinitivo",
+     "fr": "will + infinitif",
+     "it": "will + infinito",
+     "pt": "will + infinitivo"
+    },
+    {
+     "en": "…we'll stay home.",
+     "de": "…bleiben wir zu Hause.",
+     "es": "…nos quedaremos en casa.",
+     "fr": "…nous resterons à la maison.",
+     "it": "…resteremo a casa.",
+     "pt": "…vamos ficar em casa."
+    }
    ],
    [
-    "Alternative",
-    "can/should instead of will",
-    "If it rains, we can stay home."
+    {
+     "en": "Alternative",
+     "de": "Alternative",
+     "es": "Alternativa",
+     "fr": "Alternative",
+     "it": "Alternativa",
+     "pt": "Alternativa"
+    },
+    {
+     "en": "can/should instead of will",
+     "de": "can/should statt will",
+     "es": "can/should en lugar de will",
+     "fr": "can/should à la place de will",
+     "it": "can/should al posto di will",
+     "pt": "can/should em vez de will"
+    },
+    {
+     "en": "If it rains, we can stay home.",
+     "de": "Wenn es regnet, können wir zu Hause bleiben.",
+     "es": "Si llueve, podemos quedarnos en casa.",
+     "fr": "S'il pleut, nous pouvons rester à la maison.",
+     "it": "Se piove, possiamo restare a casa.",
+     "pt": "Se chover, podemos ficar em casa."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "If it rains tomorrow, we'll stay home.",
+   "texto": {
+    "en": "If it rains tomorrow, we'll stay home.",
+    "de": "Wenn es morgen regnet, bleiben wir zu Hause.",
+    "es": "Si mañana llueve, nos quedaremos en casa.",
+    "fr": "S'il pleut demain, nous resterons à la maison.",
+    "it": "Se domani piove, resteremo a casa.",
+    "pt": "Se chover amanhã, vamos ficar em casa."
+   },
    "audio": true
   },
   {
-   "texto": "If you don't hurry, you'll miss the bus.",
+   "texto": {
+    "en": "If you don't hurry, you'll miss the bus.",
+    "de": "Wenn du dich nicht beeilst, verpasst du den Bus.",
+    "es": "Si no te apuras, perderás el autobús.",
+    "fr": "Si tu ne te dépêches pas, tu rateras le bus.",
+    "it": "Se non ti sbrighi, perderai l’autobus.",
+    "pt": "Se você não se apressar, vai perder o ônibus."
+   },
    "audio": true
   },
   {
-   "texto": "If I have time, I'll call you later."
+   "texto": {
+    "en": "If I have time, I'll call you later.",
+    "de": "Wenn ich Zeit habe, rufe ich dich später an.",
+    "es": "Si tengo tiempo, te llamaré más tarde.",
+    "fr": "Si j'ai le temps, je t'appellerai plus tard.",
+    "it": "Se ho tempo, ti chiamerò più tardi.",
+    "pt": "Se eu tiver tempo, ligo para você mais tarde."
+   }
   }
  ],
  "notas": [
-  "The if-clause uses the present simple, never will, even though it refers to the future.",
-  "The if-clause can come first or second: we'll stay home if it rains works just as well.",
-  "Can, should and must can replace will in the main clause for a different nuance."
+  {
+   "en": "The if-clause uses the present simple, never will, even though it refers to the future.",
+   "de": "Im if-Satz steht das present simple, niemals will, obwohl er sich auf die Zukunft bezieht.",
+   "es": "En la oración con if se usa present simple, nunca will, aunque se refiera al futuro.",
+   "fr": "Dans la proposition en if, on utilise le present simple, jamais will, même si elle renvoie au futur.",
+   "it": "Nella proposizione con if si usa il present simple, mai will, anche se si riferisce al futuro.",
+   "pt": "Na oração com if, usa-se o present simple, nunca will, embora ela se refira ao futuro."
+  },
+  {
+   "en": "The if-clause can come first or second: we'll stay home if it rains works just as well.",
+   "de": "Der if-Satz kann am Anfang oder am Ende stehen: we'll stay home if it rains ist genauso richtig.",
+   "es": "La oración con if puede ir al principio o al final: we'll stay home if it rains funciona igual de bien.",
+   "fr": "La proposition en if peut venir en premier ou en second : we'll stay home if it rains fonctionne tout aussi bien.",
+   "it": "La proposizione con if può venire prima o dopo: we'll stay home if it rains va altrettanto bene.",
+   "pt": "A oração com if pode vir primeiro ou depois: we'll stay home if it rains funciona igualmente bem."
+  },
+  {
+   "en": "Can, should and must can replace will in the main clause for a different nuance.",
+   "de": "Can, should und must können will im Hauptsatz ersetzen und dadurch eine andere Nuance ausdrücken.",
+   "es": "Can, should y must pueden sustituir a will en la oración principal para aportar un matiz diferente.",
+   "fr": "Can, should et must peuvent remplacer will dans la proposition principale pour exprimer une nuance différente.",
+   "it": "Can, should e must possono sostituire will nella proposizione principale per esprimere una sfumatura diversa.",
+   "pt": "Can, should e must podem substituir will na oração principal para expressar uma nuance diferente."
+  }
  ],
  "contraste": {
   "es": "Spanish uses si + present and the simple future (si llueve, nos quedaremos), which matches the English logic exactly. The most common error is still putting will in the if-clause, by analogy with the future in the main clause.",
@@ -58,14 +205,42 @@
   "pt": "Portuguese uses the future subjunctive after se (se chover, ficamos em casa). Because this form looks like a future, Portuguese speakers sometimes translate it with will (if it will rain); English uses the present in the if-clause."
  },
  "errores": [
-  "Using will in the if-clause: if it will rain.",
-  "Mixing the first and second conditional.",
-  "Forgetting the comma when the if-clause comes first."
+  {
+   "en": "Using will in the if-clause: if it will rain.",
+   "de": "Will im if-Satz verwenden: if it will rain.",
+   "es": "Usar will en la oración con if: if it will rain.",
+   "fr": "Utiliser will dans la proposition en if : if it will rain.",
+   "it": "Usare will nella proposizione con if: if it will rain.",
+   "pt": "Usar will na oração com if: if it will rain."
+  },
+  {
+   "en": "Mixing the first and second conditional.",
+   "de": "First conditional und second conditional vermischen.",
+   "es": "Mezclar el first conditional y el second conditional.",
+   "fr": "Mélanger le first conditional et le second conditional.",
+   "it": "Mescolare first conditional e second conditional.",
+   "pt": "Misturar first conditional e second conditional."
+  },
+  {
+   "en": "Forgetting the comma when the if-clause comes first.",
+   "de": "Das Komma vergessen, wenn der if-Satz zuerst steht.",
+   "es": "Olvidar la coma cuando la oración con if va primero.",
+   "fr": "Oublier la virgule lorsque la proposition en if vient en premier.",
+   "it": "Dimenticare la virgola quando la proposizione con if viene prima.",
+   "pt": "Esquecer a vírgula quando a oração com if vem primeiro."
+  }
  ],
  "redemittel": [
   {
    "expresion": "If…, I'll…",
-   "funcion": "full first conditional",
+   "funcion": {
+    "en": "full first conditional",
+    "de": "vollständiges First Conditional",
+    "es": "primer condicional completo",
+    "fr": "premier conditionnel complet",
+    "it": "first conditional completo",
+    "pt": "first conditional completo"
+   },
    "traducciones": {
     "es": "Si…, voy a…",
     "de": "Wenn…, werde ich…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "…, if…",
-   "funcion": "if-clause second, no comma needed",
+   "funcion": {
+    "en": "if-clause second, no comma needed",
+    "de": "if-Satz an zweiter Stelle, kein Komma nötig",
+    "es": "oración con if en segundo lugar, sin coma",
+    "fr": "proposition en if en second, pas de virgule",
+    "it": "proposizione con if al secondo posto, niente virgola",
+    "pt": "oração com if em segundo lugar, sem vírgula"
+   },
    "traducciones": {
     "es": "…, si…",
     "de": "…, wenn…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "If you don't…, you'll…",
-   "funcion": "warning",
+   "funcion": {
+    "en": "warning",
+    "de": "Warnung",
+    "es": "advertencia",
+    "fr": "avertissement",
+    "it": "avvertimento",
+    "pt": "aviso"
+   },
    "traducciones": {
     "es": "Si no…, vas a…",
     "de": "Wenn du nicht…, wirst du…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "If I have time,…",
-   "funcion": "common opener",
+   "funcion": {
+    "en": "common opener",
+    "de": "häufiger Einstieg",
+    "es": "inicio frecuente",
+    "fr": "début fréquent",
+    "it": "apertura comune",
+    "pt": "início comum"
+   },
    "traducciones": {
     "es": "Si tengo tiempo,…",
     "de": "Wenn ich Zeit habe,…",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "…unless…",
-   "funcion": "alternative to if…not",
+   "funcion": {
+    "en": "alternative to if…not",
+    "de": "Alternative zu if…not",
+    "es": "alternativa a if…not",
+    "fr": "alternative à if…not",
+    "it": "alternativa a if…not",
+    "pt": "alternativa a if…not"
+   },
    "traducciones": {
     "es": "…a menos que…",
     "de": "…es sei denn…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "As soon as…, I'll…",
-   "funcion": "time-based alternative",
+   "funcion": {
+    "en": "time-based alternative",
+    "de": "zeitliche Alternative",
+    "es": "alternativa temporal",
+    "fr": "alternative temporelle",
+    "it": "alternativa temporale",
+    "pt": "alternativa temporal"
+   },
    "traducciones": {
     "es": "En cuanto…, voy a…",
     "de": "Sobald…, werde ich…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Is the if-clause in the present simple, with no will?",
-  "Does the main clause use will, can or should correctly?",
-  "Is the comma used correctly when the if-clause comes first?",
-  "Have I used at least two conditional sentences?",
-  "Does the sentence sound natural, not translated word for word?"
+  {
+   "en": "Is the if-clause in the present simple, with no will?",
+   "de": "Steht der if-Satz im present simple und ohne will?",
+   "es": "¿La oración con if está en present simple y sin will?",
+   "fr": "La proposition en if est-elle au present simple, sans will ?",
+   "it": "La proposizione con if è al present simple, senza will?",
+   "pt": "A oração com if está no present simple, sem will?"
+  },
+  {
+   "en": "Does the main clause use will, can or should correctly?",
+   "de": "Verwendet der Hauptsatz will, can oder should korrekt?",
+   "es": "¿La oración principal usa correctamente will, can o should?",
+   "fr": "La proposition principale utilise-t-elle correctement will, can ou should ?",
+   "it": "La proposizione principale usa correttamente will, can o should?",
+   "pt": "A oração principal usa corretamente will, can ou should?"
+  },
+  {
+   "en": "Is the comma used correctly when the if-clause comes first?",
+   "de": "Ist das Komma richtig gesetzt, wenn der if-Satz am Anfang steht?",
+   "es": "¿La coma está bien usada cuando la oración con if va primero?",
+   "fr": "La virgule est-elle correctement utilisée lorsque la proposition en if vient en premier ?",
+   "it": "La virgola è usata correttamente quando la proposizione con if viene prima?",
+   "pt": "A vírgula está usada corretamente quando a oração com if vem primeiro?"
+  },
+  {
+   "en": "Have I used at least two conditional sentences?",
+   "de": "Habe ich mindestens zwei Konditionalsätze verwendet?",
+   "es": "¿He usado al menos dos oraciones condicionales?",
+   "fr": "Ai-je utilisé au moins deux phrases conditionnelles ?",
+   "it": "Ho usato almeno due frasi condizionali?",
+   "pt": "Usei pelo menos duas frases condicionais?"
+  },
+  {
+   "en": "Does the sentence sound natural, not translated word for word?",
+   "de": "Klingt der Satz natürlich und nicht Wort für Wort übersetzt?",
+   "es": "¿La oración suena natural y no traducida palabra por palabra?",
+   "fr": "La phrase semble-t-elle naturelle et non traduite mot à mot ?",
+   "it": "La frase suona naturale e non tradotta parola per parola?",
+   "pt": "A frase soa natural e não traduzida palavra por palavra?"
+  }
  ],
- "promptCorreccion": "Focus only on the first conditional. Check for will inside the if-clause, check comma placement, and check whether can or should are used correctly as alternatives to will. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on the first conditional. Check for will inside the if-clause, check comma placement, and check whether can or should are used correctly as alternatives to will. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf den first conditional. Prüfe, ob will im if-Satz vorkommt, ob die Kommas richtig gesetzt sind und ob can oder should korrekt als Alternativen zu will verwendet werden. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en el first conditional. Comprueba si aparece will en la oración con if, si la coma está bien colocada y si can o should se usan correctamente como alternativas a will. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur le first conditional. Vérifie s'il y a will dans la proposition en if, si la virgule est bien placée et si can ou should sont correctement utilisés comme alternatives à will. Ne réécris pas le texte.",
+  "it": "Concentrati solo sul first conditional. Controlla se compare will nella proposizione con if, se la virgola è usata correttamente e se can o should sono usati bene come alternative a will. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas no first conditional. Verifique se há will na oração com if, se a vírgula está corretamente posicionada e se can ou should são usados corretamente como alternativas a will. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Rendering the future meaning of *cuando llegue* with *will*: *When I will arrive, I'll call you* instead of *When I arrive*."

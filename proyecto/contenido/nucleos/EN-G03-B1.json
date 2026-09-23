@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Present Perfect vs. Past Simple",
+ "titulo": {
+  "en": "Present Perfect vs. Past Simple",
+  "de": "Present Perfect vs. Simple Past",
+  "es": "Present perfect vs. pasado simple",
+  "fr": "Present perfect vs. prétérit",
+  "it": "Present perfect vs. past simple",
+  "pt": "Present perfect vs. simple past"
+ },
  "categoria": "grammar",
  "ancla": "EGP A2/B1",
- "descripcion": "The present perfect connects the past to now; the past simple describes a finished, closed time. At B1 the clearest rule is: if there's a finished time word (yesterday, last year), use the past simple. If the time is still open (this year, ever, never), use the present perfect.",
+ "descripcion": {
+  "en": "The present perfect connects the past to now; the past simple describes a finished, closed time. At B1 the clearest rule is: if there's a finished time word (yesterday, last year), use the past simple. If the time is still open (this year, ever, never), use the present perfect.",
+  "de": "Das present perfect verbindet die Vergangenheit mit der Gegenwart; das past simple beschreibt einen abgeschlossenen Zeitraum. Auf B1-Niveau gilt als einfachste Regel: Gibt es eine abgeschlossene Zeitangabe (yesterday, last year), verwende das past simple. Ist der Zeitraum noch offen (this year, ever, never), verwende das present perfect.",
+  "es": "El present perfect conecta el pasado con el presente; el past simple describe un período terminado y cerrado. En B1, la regla más clara es: si hay una expresión de tiempo terminada (yesterday, last year), usa past simple. Si el período sigue abierto (this year, ever, never), usa present perfect.",
+  "fr": "Le present perfect relie le passé au présent ; le past simple décrit une période terminée. Au niveau B1, la règle la plus claire est la suivante : s'il y a un repère temporel terminé (yesterday, last year), utilise le past simple. Si la période est encore ouverte (this year, ever, never), utilise le present perfect.",
+  "it": "Il present perfect collega il passato al presente; il past simple descrive un periodo concluso. Al livello B1, la regola più chiara è: se c'è un'espressione temporale conclusa (yesterday, last year), usa il past simple. Se il periodo è ancora aperto (this year, ever, never), usa il present perfect.",
+  "pt": "O present perfect liga o passado ao presente; o past simple descreve um período encerrado. No nível B1, a regra mais clara é: se houver uma expressão de tempo concluída (yesterday, last year), use o past simple. Se o período ainda estiver aberto (this year, ever, never), use o present perfect."
+ },
  "cuadroReferencia": {
-  "titulo": "Which tense, and why",
+  "titulo": {
+   "en": "Which tense, and why",
+   "de": "Welche Zeitform – und warum?",
+   "es": "Qué tiempo verbal y por qué",
+   "fr": "Quel temps, et pourquoi ?",
+   "it": "Quale tempo verbale, e perché",
+   "pt": "Qual tempo verbal e por quê"
+  },
   "columnas": [
-   "Situation",
-   "Tense",
-   "Example"
+   {
+    "en": "Situation",
+    "de": "Situation",
+    "es": "Situación",
+    "fr": "Situation",
+    "it": "Situazione",
+    "pt": "Situação"
+   },
+   {
+    "en": "Tense",
+    "de": "Zeit",
+    "es": "Tiempo verbal",
+    "fr": "Temps",
+    "it": "Tempo",
+    "pt": "Tempo verbal"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Finished time",
-    "past simple",
-    "I visited Paris last year."
+    {
+     "en": "Finished time",
+     "de": "Abgeschlossener Zeitpunkt",
+     "es": "Tiempo terminado",
+     "fr": "Moment passé terminé",
+     "it": "Tempo concluso",
+     "pt": "Tempo concluído"
+    },
+    {
+     "en": "past simple",
+     "de": "Simple Past",
+     "es": "pasado simple",
+     "fr": "prétérit",
+     "it": "past simple",
+     "pt": "simple past"
+    },
+    {
+     "en": "I visited Paris last year.",
+     "de": "Ich war letztes Jahr in Paris.",
+     "es": "Visité París el año pasado.",
+     "fr": "J'ai visité Paris l'année dernière.",
+     "it": "Ho visitato Parigi l'anno scorso.",
+     "pt": "Visitei Paris no ano passado."
+    }
    ],
    [
-    "Open time / experience",
-    "present perfect",
-    "I've visited Paris twice."
+    {
+     "en": "Open time / experience",
+     "de": "offener Zeitraum / Erfahrung",
+     "es": "período abierto / experiencia",
+     "fr": "période ouverte / expérience",
+     "it": "periodo aperto / esperienza",
+     "pt": "período aberto / experiência"
+    },
+    {
+     "en": "present perfect",
+     "de": "Present Perfect",
+     "es": "present perfect",
+     "fr": "present perfect",
+     "it": "present perfect",
+     "pt": "present perfect"
+    },
+    {
+     "en": "I've visited Paris twice.",
+     "de": "Ich war zweimal in Paris.",
+     "es": "He visitado París dos veces.",
+     "fr": "J'ai visité Paris deux fois.",
+     "it": "Ho visitato Parigi due volte.",
+     "pt": "Já visitei Paris duas vezes."
+    }
    ],
    [
-    "Asking when",
-    "always past simple",
-    "When did you visit?"
+    {
+     "en": "Asking when",
+     "de": "Nach dem Zeitpunkt fragen",
+     "es": "Preguntar cuándo",
+     "fr": "Demander quand",
+     "it": "Chiedere quando",
+     "pt": "Perguntar quando"
+    },
+    {
+     "en": "always past simple",
+     "de": "immer past simple",
+     "es": "siempre past simple",
+     "fr": "toujours past simple",
+     "it": "sempre past simple",
+     "pt": "sempre past simple"
+    },
+    {
+     "en": "When did you visit?",
+     "de": "Wann warst du dort?",
+     "es": "¿Cuándo fuiste?",
+     "fr": "Quand y es-tu allé(e) ?",
+     "it": "Quando ci sei stato/a?",
+     "pt": "Quando você foi?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I visited Paris last year with my family.",
+   "texto": {
+    "en": "I visited Paris last year with my family.",
+    "de": "Ich war letztes Jahr mit meiner Familie in Paris.",
+    "es": "Visité París el año pasado con mi familia.",
+    "fr": "J'ai visité Paris l'année dernière avec ma famille.",
+    "it": "Ho visitato Parigi l'anno scorso con la mia famiglia.",
+    "pt": "Visitei Paris no ano passado com minha família."
+   },
    "audio": true
   },
   {
-   "texto": "I've visited Paris twice, but never in winter.",
+   "texto": {
+    "en": "I've visited Paris twice, but never in winter.",
+    "de": "Ich war zweimal in Paris, aber noch nie im Winter.",
+    "es": "He visitado París dos veces, pero nunca en invierno.",
+    "fr": "J'ai visité Paris deux fois, mais jamais en hiver.",
+    "it": "Ho visitato Parigi due volte, ma mai in inverno.",
+    "pt": "Já visitei Paris duas vezes, mas nunca no inverno."
+   },
    "audio": true
   },
   {
-   "texto": "When did you visit Paris?"
+   "texto": {
+    "en": "When did you visit Paris?",
+    "de": "Wann warst du in Paris?",
+    "es": "¿Cuándo visitaste París?",
+    "fr": "Quand as-tu visité Paris ?",
+    "it": "Quando hai visitato Parigi?",
+    "pt": "Quando você visitou Paris?"
+   }
   }
  ],
  "notas": [
-  "Yesterday, last year and ago always take the past simple, never the present perfect.",
-  "Ever and never usually go with the present perfect, for life experience.",
-  "When always takes the past simple, even for a recent event."
+  {
+   "en": "Yesterday, last year and ago always take the past simple, never the present perfect.",
+   "de": "Yesterday, last year und ago stehen immer mit dem past simple, nie mit dem present perfect.",
+   "es": "Yesterday, last year y ago siempre van con past simple, nunca con present perfect.",
+   "fr": "Yesterday, last year et ago s'emploient toujours avec le past simple, jamais avec le present perfect.",
+   "it": "Yesterday, last year e ago richiedono sempre il past simple, mai il present perfect.",
+   "pt": "Yesterday, last year e ago sempre usam o past simple, nunca o present perfect."
+  },
+  {
+   "en": "Ever and never usually go with the present perfect, for life experience.",
+   "de": "Ever und never stehen für Lebenserfahrungen normalerweise mit dem present perfect.",
+   "es": "Ever y never suelen usarse con present perfect para hablar de experiencias de vida.",
+   "fr": "Ever et never s'emploient généralement avec le present perfect pour parler d'expériences de vie.",
+   "it": "Ever e never si usano di solito con il present perfect per parlare di esperienze di vita.",
+   "pt": "Ever e never geralmente são usados com o present perfect para falar de experiências de vida."
+  },
+  {
+   "en": "When always takes the past simple, even for a recent event.",
+   "de": "Nach when steht immer das past simple, auch bei einem erst kürzlich geschehenen Ereignis.",
+   "es": "Después de when se usa siempre past simple, incluso para un hecho reciente.",
+   "fr": "Après when, on utilise toujours le past simple, même pour un événement récent.",
+   "it": "Dopo when si usa sempre il past simple, anche per un evento recente.",
+   "pt": "Depois de when, usa-se sempre o past simple, mesmo para um evento recente."
+  }
  ],
  "contraste": {
   "es": "Spanish uses the pretérito perfecto (he visitado) for open time in much of Spain, but the indefinido almost always in Latin America, even for open time. Latin American Spanish speakers therefore tend to under-use the present perfect in English.",
@@ -58,14 +205,42 @@
   "pt": "Portuguese uses the simple past for finished events (vi o Marco ontem), which matches the English past simple well. The compound form tenho visto means something repeated up to now and is not the present perfect, and há + present (moro aqui há dois anos) leads to I live here for two years."
  },
  "errores": [
-  "Using the present perfect with a finished time word like yesterday.",
-  "Using the present perfect after *when*: *When have you arrived?* instead of *When did you arrive?*",
-  "Forgetting ever/never with the present perfect for experience."
+  {
+   "en": "Using the present perfect with a finished time word like yesterday.",
+   "de": "Das present perfect mit einer abgeschlossenen Zeitangabe wie yesterday verwenden.",
+   "es": "Usar present perfect con una expresión de tiempo terminada como yesterday.",
+   "fr": "Utiliser le present perfect avec un repère temporel terminé comme yesterday.",
+   "it": "Usare il present perfect con un'espressione temporale conclusa come yesterday.",
+   "pt": "Usar o present perfect com uma expressão de tempo concluída como yesterday."
+  },
+  {
+   "en": "Using the present perfect after *when*: *When have you arrived?* instead of *When did you arrive?*",
+   "de": "Nach *when* das present perfect verwenden: *When have you arrived?* statt *When did you arrive?*.",
+   "es": "Usar present perfect después de *when*: *When have you arrived?* en lugar de *When did you arrive?*.",
+   "fr": "Utiliser le present perfect après *when* : *When have you arrived?* au lieu de *When did you arrive?*.",
+   "it": "Usare il present perfect dopo *when*: *When have you arrived?* invece di *When did you arrive?*.",
+   "pt": "Usar o present perfect depois de *when*: *When have you arrived?* em vez de *When did you arrive?*."
+  },
+  {
+   "en": "Forgetting ever/never with the present perfect for experience.",
+   "de": "Bei Erfahrungen ever/never mit dem present perfect vergessen.",
+   "es": "Olvidar ever/never con present perfect al hablar de experiencias.",
+   "fr": "Oublier ever/never avec le present perfect pour parler d'expériences.",
+   "it": "Dimenticare ever/never con il present perfect per parlare di esperienze.",
+   "pt": "Esquecer ever/never com o present perfect ao falar de experiências."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I've never…",
-   "funcion": "life experience",
+   "funcion": {
+    "en": "life experience",
+    "de": "Lebenserfahrung",
+    "es": "experiencia de vida",
+    "fr": "expérience de vie",
+    "it": "esperienza di vita",
+    "pt": "experiência de vida"
+   },
    "traducciones": {
     "es": "Nunca he…",
     "de": "Ich habe noch nie…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "Have you ever…?",
-   "funcion": "asking about experience",
+   "funcion": {
+    "en": "asking about experience",
+    "de": "nach Erfahrungen fragen",
+    "es": "preguntar por experiencias",
+    "fr": "demander des expériences",
+    "it": "chiedere delle esperienze",
+    "pt": "perguntar sobre experiências"
+   },
    "traducciones": {
     "es": "¿Alguna vez has…?",
     "de": "Hast du schon einmal…?",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "I…yesterday/last…",
-   "funcion": "finished time, past simple",
+   "funcion": {
+    "en": "finished time, past simple",
+    "de": "abgeschlossener Zeitraum, past simple",
+    "es": "tiempo terminado, past simple",
+    "fr": "temps terminé, past simple",
+    "it": "tempo concluso, past simple",
+    "pt": "tempo concluído, past simple"
+   },
    "traducciones": {
     "es": "…ayer/el… pasado",
     "de": "Ich… gestern/letzte(n)…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "When did you…?",
-   "funcion": "asking when, past simple",
+   "funcion": {
+    "en": "asking when, past simple",
+    "de": "nach dem Zeitpunkt fragen, past simple",
+    "es": "preguntar cuándo, past simple",
+    "fr": "demander quand, past simple",
+    "it": "chiedere quando, past simple",
+    "pt": "perguntar quando, past simple"
+   },
    "traducciones": {
     "es": "¿Cuándo…?",
     "de": "Wann hast du…?",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "I've already…",
-   "funcion": "present perfect, recent",
+   "funcion": {
+    "en": "present perfect, recent",
+    "de": "present perfect, kürzlich",
+    "es": "present perfect, reciente",
+    "fr": "present perfect, récent",
+    "it": "present perfect, recente",
+    "pt": "present perfect, recente"
+   },
    "traducciones": {
     "es": "Ya he…",
     "de": "Ich habe schon…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "I haven't…yet.",
-   "funcion": "present perfect, negative",
+   "funcion": {
+    "en": "present perfect, negative",
+    "de": "present perfect, negativ",
+    "es": "present perfect, negativo",
+    "fr": "present perfect, négatif",
+    "it": "present perfect, negativo",
+    "pt": "present perfect, negativo"
+   },
    "traducciones": {
     "es": "Todavía no he…",
     "de": "Ich habe noch nicht…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Does every past simple have a finished time word?",
-  "Does every present perfect have an open time, or ever/never?",
-  "Is the past simple used after every when question?",
-  "Have I used both tenses at least once?",
-  "Does the sentence sound natural?"
+  {
+   "en": "Does every past simple have a finished time word?",
+   "de": "Hat jedes past simple eine abgeschlossene Zeitangabe?",
+   "es": "¿Cada past simple tiene una referencia temporal terminada?",
+   "fr": "Chaque past simple a-t-il un repère temporel terminé ?",
+   "it": "Ogni past simple ha un riferimento temporale concluso?",
+   "pt": "Cada past simple tem uma referência temporal concluída?"
+  },
+  {
+   "en": "Does every present perfect have an open time, or ever/never?",
+   "de": "Bezieht sich jedes present perfect auf einen offenen Zeitraum oder auf ever/never?",
+   "es": "¿Cada present perfect se refiere a un período abierto o incluye ever/never?",
+   "fr": "Chaque present perfect se rapporte-t-il à une période ouverte ou à ever/never ?",
+   "it": "Ogni present perfect si riferisce a un periodo aperto o include ever/never?",
+   "pt": "Cada present perfect se refere a um período aberto ou usa ever/never?"
+  },
+  {
+   "en": "Is the past simple used after every when question?",
+   "de": "Steht nach jeder Frage mit when das past simple?",
+   "es": "¿Se usa past simple después de cada pregunta con when?",
+   "fr": "Le past simple est-il utilisé dans chaque question avec when ?",
+   "it": "Il past simple è usato in ogni domanda con when?",
+   "pt": "O past simple é usado em toda pergunta com when?"
+  },
+  {
+   "en": "Have I used both tenses at least once?",
+   "de": "Habe ich beide Zeitformen mindestens einmal verwendet?",
+   "es": "¿He usado ambos tiempos al menos una vez?",
+   "fr": "Ai-je utilisé les deux temps au moins une fois ?",
+   "it": "Ho usato entrambi i tempi almeno una volta?",
+   "pt": "Usei os dois tempos pelo menos uma vez?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on the choice between present perfect and past simple. Check whether each one matches a finished or an open time reference. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on the choice between present perfect and past simple. Check whether each one matches a finished or an open time reference. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf die Wahl zwischen present perfect und past simple. Prüfe, ob beide jeweils zu einer abgeschlossenen oder noch offenen Zeitangabe passen. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en la elección entre present perfect y past simple. Comprueba si cada uno corresponde a una referencia temporal terminada o abierta. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur le choix entre present perfect et past simple. Vérifie si chacun correspond à un repère temporel terminé ou encore ouvert. Ne réécris pas le texte.",
+  "it": "Concentrati solo sulla scelta tra present perfect e past simple. Controlla se ciascuno corrisponde a un riferimento temporale concluso o ancora aperto. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas na escolha entre present perfect e past simple. Verifique se cada um corresponde a uma referência temporal concluída ou ainda aberta. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*hace dos años que vivo aquí* rendered as *I live here since two years* instead of *I've lived here for two years*."

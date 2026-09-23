@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Describing People, Places and Routines",
+ "titulo": {
+  "en": "Describing People, Places and Routines",
+  "de": "Personen, Orte und Routinen beschreiben",
+  "es": "Describir personas, lugares y rutinas",
+  "fr": "Décrire des personnes, des lieux et des habitudes",
+  "it": "Descrivere persone, luoghi e routine",
+  "pt": "Descrever pessoas, lugares e rotinas"
+ },
  "categoria": "fluency",
  "ancla": "EGP A2",
- "descripcion": "At A2 you describe a person's appearance, a place, or a daily routine with simple present-tense sentences and basic adjectives. Character description and richer detail come later, once these basics are automatic.",
+ "descripcion": {
+  "en": "At A2 you describe a person's appearance, a place, or a daily routine with simple present-tense sentences and basic adjectives. Character description and richer detail come later, once these basics are automatic.",
+  "de": "Auf A2 beschreibst du das Aussehen einer Person, einen Ort oder eine tägliche Routine mit einfachen Sätzen im Präsens und grundlegenden Adjektiven. Charakterbeschreibungen und reichere Details kommen später, wenn diese Grundlagen automatisch sitzen.",
+  "es": "En A2 describes el aspecto de una persona, un lugar o una rutina diaria con oraciones sencillas en presente y adjetivos básicos. La descripción del carácter y los detalles más ricos llegan después, cuando estas bases ya salen de forma automática.",
+  "fr": "Au niveau A2, tu décris l’apparence d’une personne, un lieu ou une routine quotidienne avec des phrases simples au présent et des adjectifs de base. La description du caractère et les détails plus riches viennent plus tard, une fois ces bases automatisées.",
+  "it": "A livello A2 descrivi l’aspetto di una persona, un luogo o una routine quotidiana con frasi semplici al presente e aggettivi di base. La descrizione del carattere e dettagli più ricchi vengono più avanti, quando queste basi sono automatiche.",
+  "pt": "No nível A2, você descreve a aparência de uma pessoa, um lugar ou uma rotina diária com frases simples no presente e adjetivos básicos. A descrição da personalidade e detalhes mais ricos vêm depois, quando essas bases já estiverem automáticas."
+ },
  "cuadroReferencia": {
-  "titulo": "Simple descriptions",
+  "titulo": {
+   "en": "Simple descriptions",
+   "de": "Einfache Beschreibungen",
+   "es": "Descripciones sencillas",
+   "fr": "Descriptions simples",
+   "it": "Descrizioni semplici",
+   "pt": "Descrições simples"
+  },
   "columnas": [
-   "What",
-   "Example"
+   {
+    "en": "What",
+    "de": "Was",
+    "es": "Qué",
+    "fr": "Quoi",
+    "it": "Cosa",
+    "pt": "O quê"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Person",
-    "She's tall and friendly."
+    {
+     "en": "Person",
+     "de": "Person",
+     "es": "Persona",
+     "fr": "Personne",
+     "it": "Persona",
+     "pt": "Pessoa"
+    },
+    {
+     "en": "She's tall and friendly.",
+     "de": "Sie ist groß und freundlich.",
+     "es": "Es alta y simpática.",
+     "fr": "Elle est grande et sympathique.",
+     "it": "È alta e simpatica.",
+     "pt": "Ela é alta e simpática."
+    }
    ],
    [
-    "Place",
-    "It's a small town."
+    {
+     "en": "Place",
+     "de": "Ort",
+     "es": "Lugar",
+     "fr": "Lieu",
+     "it": "Luogo",
+     "pt": "Lugar"
+    },
+    {
+     "en": "It's a small town.",
+     "de": "Es ist eine kleine Stadt.",
+     "es": "Es una ciudad pequeña.",
+     "fr": "C’est une petite ville.",
+     "it": "È una piccola città.",
+     "pt": "É uma cidade pequena."
+    }
    ],
    [
-    "Routine",
-    "I get up at seven."
+    {
+     "en": "Routine",
+     "de": "Routine",
+     "es": "Rutina",
+     "fr": "Routine",
+     "it": "Routine",
+     "pt": "Rotina"
+    },
+    {
+     "en": "I get up at seven.",
+     "de": "Ich stehe um sieben auf.",
+     "es": "Me levanto a las siete.",
+     "fr": "Je me lève à sept heures.",
+     "it": "Mi alzo alle sette.",
+     "pt": "Eu me levanto às sete."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "She's tall, with brown hair.",
+   "texto": {
+    "en": "She's tall, with brown hair.",
+    "de": "Sie ist groß und hat braune Haare.",
+    "es": "Es alta y tiene el pelo castaño.",
+    "fr": "Elle est grande, avec les cheveux bruns.",
+    "it": "È alta, con i capelli castani.",
+    "pt": "Ela é alta e tem cabelo castanho."
+   },
    "audio": true
   },
   {
-   "texto": "It's a small, quiet town.",
+   "texto": {
+    "en": "It's a small, quiet town.",
+    "de": "Es ist eine kleine, ruhige Stadt.",
+    "es": "Es una ciudad pequeña y tranquila.",
+    "fr": "C’est une petite ville tranquille.",
+    "it": "È una cittadina piccola e tranquilla.",
+    "pt": "É uma cidade pequena e tranquila."
+   },
    "audio": true
   },
   {
-   "texto": "I usually get up at seven and have breakfast."
+   "texto": {
+    "en": "I usually get up at seven and have breakfast.",
+    "de": "Normalerweise stehe ich um sieben Uhr auf und frühstücke.",
+    "es": "Normalmente me levanto a las siete y desayuno.",
+    "fr": "D’habitude, je me lève à sept heures et je prends mon petit-déjeuner.",
+    "it": "Di solito mi alzo alle sette e faccio colazione.",
+    "pt": "Normalmente eu me levanto às sete e tomo café da manhã."
+   }
   }
  ],
  "notas": [
-  "For routines, the present simple is used with words like usually and always.",
-  "Simple adjectives (tall, small, quiet) are enough at this level.",
-  "Be is used for appearance: she's tall, not she has tall."
+  {
+   "en": "For routines, the present simple is used with words like usually and always.",
+   "de": "Für Routinen verwendet man das Simple Present mit Wörtern wie usually und always.",
+   "es": "Para las rutinas se usa el presente simple con palabras como usually y always.",
+   "fr": "Pour les routines, on utilise le présent simple avec des mots comme usually et always.",
+   "it": "Per le routine si usa il present simple con parole come usually e always.",
+   "pt": "Para rotinas, usa-se o simple present com palavras como usually e always."
+  },
+  {
+   "en": "Simple adjectives (tall, small, quiet) are enough at this level.",
+   "de": "Einfache Adjektive (tall, small, quiet) reichen auf diesem Niveau aus.",
+   "es": "Adjetivos sencillos (tall, small, quiet) son suficientes en este nivel.",
+   "fr": "Des adjectifs simples (tall, small, quiet) suffisent à ce niveau.",
+   "it": "Aggettivi semplici (tall, small, quiet) sono sufficienti a questo livello.",
+   "pt": "Adjetivos simples (tall, small, quiet) são suficientes neste nível."
+  },
+  {
+   "en": "Be is used for appearance: she's tall, not she has tall.",
+   "de": "Für das Aussehen verwendet man be: she's tall, nicht she has tall.",
+   "es": "Para el aspecto se usa be: she's tall, no she has tall.",
+   "fr": "Pour l’apparence, on utilise be : she's tall, et non she has tall.",
+   "it": "Per l’aspetto si usa be: she's tall, non she has tall.",
+   "pt": "Para aparência, usa-se be: she's tall, e não she has tall."
+  }
  ],
  "contraste": {
   "es": "Tengo 25 años is often calqued as I have 25 years; English uses be: I'm 25. Ser and estar both become be.",
@@ -54,13 +173,34 @@
   "pt": "Tenho 25 anos is often calqued as I have 25 years; English uses be: I'm 25."
  },
  "errores": [
-  "Using has instead of is for appearance.",
-  "Using the present continuous instead of the present simple for routines."
+  {
+   "en": "Using has instead of is for appearance.",
+   "de": "Has statt is für das Aussehen verwenden.",
+   "es": "Usar has en vez de is para describir el aspecto.",
+   "fr": "Utiliser has au lieu de is pour l’apparence.",
+   "it": "Usare has invece di is per l’aspetto.",
+   "pt": "Usar has em vez de is para aparência."
+  },
+  {
+   "en": "Using the present continuous instead of the present simple for routines.",
+   "de": "Für Routinen das Present Continuous statt des Simple Present verwenden.",
+   "es": "Usar el presente continuo en vez del presente simple para rutinas.",
+   "fr": "Utiliser le présent continu au lieu du présent simple pour les routines.",
+   "it": "Usare il present continuous invece del present simple per le routine.",
+   "pt": "Usar o present continuous em vez do simple present para rotinas."
+  }
  ],
  "redemittel": [
   {
    "expresion": "She's/He's…",
-   "funcion": "appearance",
+   "funcion": {
+    "en": "appearance",
+    "de": "Aussehen",
+    "es": "apariencia",
+    "fr": "apparence",
+    "it": "aspetto",
+    "pt": "aparência"
+   },
    "traducciones": {
     "es": "Es…",
     "de": "Sie/Er ist…",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "It's a…place.",
-   "funcion": "describing a place",
+   "funcion": {
+    "en": "describing a place",
+    "de": "einen Ort beschreiben",
+    "es": "describir un lugar",
+    "fr": "décrire un lieu",
+    "it": "descrivere un luogo",
+    "pt": "descrever um lugar"
+   },
    "traducciones": {
     "es": "Es un lugar…",
     "de": "Es ist ein… Ort.",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "I usually…",
-   "funcion": "routine",
+   "funcion": {
+    "en": "routine",
+    "de": "Routine",
+    "es": "rutina",
+    "fr": "routine",
+    "it": "routine",
+    "pt": "rotina"
+   },
    "traducciones": {
     "es": "Normalmente…",
     "de": "Normalerweise… ich…",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "I get up at…",
-   "funcion": "routine, common opener",
+   "funcion": {
+    "en": "routine, common opener",
+    "de": "Routine, häufiger Einstieg",
+    "es": "rutina, inicio frecuente",
+    "fr": "routine, début fréquent",
+    "it": "routine, apertura comune",
+    "pt": "rotina, início comum"
+   },
    "traducciones": {
     "es": "Me levanto a las…",
     "de": "Ich stehe um… auf.",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "She has…hair.",
-   "funcion": "hair colour",
+   "funcion": {
+    "en": "hair colour",
+    "de": "Haarfarbe",
+    "es": "color de pelo",
+    "fr": "couleur des cheveux",
+    "it": "colore dei capelli",
+    "pt": "cor do cabelo"
+   },
    "traducciones": {
     "es": "Tiene el pelo…",
     "de": "Sie hat… Haare.",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "It's very…",
-   "funcion": "place, atmosphere",
+   "funcion": {
+    "en": "place, atmosphere",
+    "de": "Ort, Atmosphäre",
+    "es": "lugar, ambiente",
+    "fr": "lieu, ambiance",
+    "it": "luogo, atmosfera",
+    "pt": "lugar, ambiente"
+   },
    "traducciones": {
     "es": "Es muy…",
     "de": "Es ist sehr…",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Is be used for appearance?",
-  "Is the present simple used for routines?",
-  "Have I described both a person and a place or routine?",
-  "Are the adjectives specific enough?",
-  "Are the adjectives specific enough?"
+  {
+   "en": "Is be used for appearance?",
+   "de": "Wird be für das Aussehen verwendet?",
+   "es": "¿Se usa be para describir el aspecto?",
+   "fr": "Be est-il utilisé pour l’apparence ?",
+   "it": "Si usa be per l’aspetto?",
+   "pt": "Be é usado para aparência?"
+  },
+  {
+   "en": "Is the present simple used for routines?",
+   "de": "Wird das Simple Present für Routinen verwendet?",
+   "es": "¿Se usa el presente simple para las rutinas?",
+   "fr": "Le présent simple est-il utilisé pour les routines ?",
+   "it": "Si usa il present simple per le routine?",
+   "pt": "O simple present é usado para rotinas?"
+  },
+  {
+   "en": "Have I described both a person and a place or routine?",
+   "de": "Habe ich sowohl eine Person als auch einen Ort oder eine Routine beschrieben?",
+   "es": "¿He descrito tanto a una persona como un lugar o una rutina?",
+   "fr": "Ai-je décrit à la fois une personne et un lieu ou une routine ?",
+   "it": "Ho descritto sia una persona sia un luogo o una routine?",
+   "pt": "Eu descrevi tanto uma pessoa quanto um lugar ou uma rotina?"
+  },
+  {
+   "en": "Are the adjectives specific enough?",
+   "de": "Sind die Adjektive konkret genug?",
+   "es": "¿Los adjetivos son suficientemente específicos?",
+   "fr": "Les adjectifs sont-ils assez précis ?",
+   "it": "Gli aggettivi sono abbastanza specifici?",
+   "pt": "Os adjetivos são específicos o suficiente?"
+  },
+  {
+   "en": "Are the adjectives specific enough?",
+   "de": "Sind die Adjektive konkret genug?",
+   "es": "¿Los adjetivos son suficientemente específicos?",
+   "fr": "Les adjectifs sont-ils assez précis ?",
+   "it": "Gli aggettivi sono abbastanza specifici?",
+   "pt": "Os adjetivos são específicos o suficiente?"
+  }
  ],
- "promptCorreccion": "Focus only on descriptions of people, places and routines. Check be versus have for appearance. Do not rewrite the text. Check the tense used for routines.",
+ "promptCorreccion": {
+  "en": "Focus only on descriptions of people, places and routines. Check be versus have for appearance. Do not rewrite the text. Check the tense used for routines.",
+  "de": "Achte nur auf Beschreibungen von Personen, Orten und Routinen. Prüfe be gegenüber have beim Aussehen. Formuliere den Text nicht neu. Prüfe die Zeitform bei Routinen.",
+  "es": "Concéntrate solo en las descripciones de personas, lugares y rutinas. Comprueba be frente a have para el aspecto. No reescribas el texto. Comprueba el tiempo verbal usado para las rutinas.",
+  "fr": "Concentre-toi uniquement sur les descriptions de personnes, de lieux et de routines. Vérifie be par rapport à have pour l’apparence. Ne réécris pas le texte. Vérifie le temps verbal utilisé pour les routines.",
+  "it": "Concentrati solo sulle descrizioni di persone, luoghi e routine. Controlla be rispetto a have per l’aspetto. Non riscrivere il testo. Controlla il tempo verbale usato per le routine.",
+  "pt": "Concentre-se apenas nas descrições de pessoas, lugares e rotinas. Verifique be em comparação com have para aparência. Não reescreva o texto. Confira o tempo verbal usado nas rotinas."
+ },
  "erroresContrastivos": {
   "es": [
    "*Tiene el pelo largo* rendered as *She has the hair long* instead of *She has long hair*."

@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Survival: Directions, Help, Emergencies",
+ "titulo": {
+  "en": "Survival: Directions, Help, Emergencies",
+  "de": "Überleben: Wegbeschreibungen, Hilfe, Notfälle",
+  "es": "Supervivencia: indicaciones, ayuda y emergencias",
+  "fr": "Survie : itinéraires, aide et urgences",
+  "it": "Sopravvivenza: indicazioni, aiuto, emergenze",
+  "pt": "Sobrevivência: direções, ajuda e emergências"
+ },
  "categoria": "fluency",
  "ancla": "EGP A2",
- "descripcion": "At A2 you ask for and understand simple directions, ask for help, and know the basic phrases for an emergency. These fixed formulas let you survive real situations before free production of language is possible.",
+ "descripcion": {
+  "en": "At A2 you ask for and understand simple directions, ask for help, and know the basic phrases for an emergency. These fixed formulas let you survive real situations before free production of language is possible.",
+  "de": "Auf A2 fragst du nach einfachen Wegbeschreibungen und verstehst sie, bittest um Hilfe und kennst die grundlegenden Wendungen für einen Notfall. Mit diesen festen Formeln kommst du in echten Situationen zurecht, noch bevor freie Sprachproduktion möglich ist.",
+  "es": "En A2 pides y entiendes indicaciones sencillas, pides ayuda y conoces las expresiones básicas para una emergencia. Estas fórmulas fijas te permiten desenvolverte en situaciones reales antes de poder producir lenguaje libremente.",
+  "fr": "Au niveau A2, tu demandes et comprends des itinéraires simples, tu demandes de l’aide et tu connais les expressions de base pour une urgence. Ces formules fixes permettent de se débrouiller dans des situations réelles avant de pouvoir produire librement la langue.",
+  "it": "A livello A2 chiedi e capisci indicazioni semplici, chiedi aiuto e conosci le frasi di base per un’emergenza. Queste formule fisse permettono di cavarsela in situazioni reali prima di riuscire a produrre la lingua liberamente.",
+  "pt": "No nível A2, você pede e entende direções simples, pede ajuda e conhece as frases básicas para uma emergência. Essas fórmulas prontas ajudam a lidar com situações reais antes de conseguir produzir a língua livremente."
+ },
  "cuadroReferencia": {
-  "titulo": "Survival phrases",
+  "titulo": {
+   "en": "Survival phrases",
+   "de": "Wichtige Überlebenssätze",
+   "es": "Frases de supervivencia",
+   "fr": "Phrases de survie",
+   "it": "Frasi di sopravvivenza",
+   "pt": "Frases de sobrevivência"
+  },
   "columnas": [
-   "Situation",
-   "Phrase"
+   {
+    "en": "Situation",
+    "de": "Situation",
+    "es": "Situación",
+    "fr": "Situation",
+    "it": "Situazione",
+    "pt": "Situação"
+   },
+   {
+    "en": "Phrase",
+    "de": "Formel",
+    "es": "Fórmula",
+    "fr": "Formule",
+    "it": "Formula",
+    "pt": "Fórmula"
+   }
   ],
   "filas": [
    [
-    "Directions",
-    "Excuse me, where is the station?"
+    {
+     "en": "Directions",
+     "de": "Wegbeschreibung",
+     "es": "Indicaciones",
+     "fr": "Itinéraire",
+     "it": "Indicazioni",
+     "pt": "Direções"
+    },
+    {
+     "en": "Excuse me, where is the station?",
+     "de": "Entschuldigung, wo ist der Bahnhof?",
+     "es": "Disculpe, ¿dónde está la estación?",
+     "fr": "Excusez-moi, où est la gare ?",
+     "it": "Mi scusi, dov’è la stazione?",
+     "pt": "Com licença, onde fica a estação?"
+    }
    ],
    [
-    "Help",
-    "Can you help me, please?"
+    {
+     "en": "Help",
+     "de": "Hilfe",
+     "es": "Ayuda",
+     "fr": "Aide",
+     "it": "Aiuto",
+     "pt": "Ajuda"
+    },
+    {
+     "en": "Can you help me, please?",
+     "de": "Können Sie mir bitte helfen?",
+     "es": "¿Puede ayudarme, por favor?",
+     "fr": "Pouvez-vous m’aider, s’il vous plaît ?",
+     "it": "Può aiutarmi, per favore?",
+     "pt": "Pode me ajudar, por favor?"
+    }
    ],
    [
-    "Emergency",
-    "Call an ambulance, please!"
+    {
+     "en": "Emergency",
+     "de": "Notfall",
+     "es": "Emergencia",
+     "fr": "Urgence",
+     "it": "Emergenza",
+     "pt": "Emergência"
+    },
+    {
+     "en": "Call an ambulance, please!",
+     "de": "Rufen Sie bitte einen Krankenwagen!",
+     "es": "¡Llame a una ambulancia, por favor!",
+     "fr": "Appelez une ambulance, s’il vous plaît !",
+     "it": "Chiami un’ambulanza, per favore!",
+     "pt": "Chame uma ambulância, por favor!"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Excuse me, where is the nearest station?",
+   "texto": {
+    "en": "Excuse me, where is the nearest station?",
+    "de": "Entschuldigung, wo ist der nächste Bahnhof?",
+    "es": "Disculpe, ¿dónde está la estación más cercana?",
+    "fr": "Excusez-moi, où est la gare la plus proche ?",
+    "it": "Mi scusi, dov’è la stazione più vicina?",
+    "pt": "Com licença, onde fica a estação mais próxima?"
+   },
    "audio": true
   },
   {
-   "texto": "Can you help me, please? I'm lost.",
+   "texto": {
+    "en": "Can you help me, please? I'm lost.",
+    "de": "Können Sie mir bitte helfen? Ich habe mich verlaufen.",
+    "es": "¿Puede ayudarme, por favor? Estoy perdido/a.",
+    "fr": "Pouvez-vous m’aider, s’il vous plaît ? Je suis perdu(e).",
+    "it": "Può aiutarmi, per favore? Mi sono perso/a.",
+    "pt": "Pode me ajudar, por favor? Estou perdido/a."
+   },
    "audio": true
   },
   {
-   "texto": "Please call an ambulance, it's an emergency!"
+   "texto": {
+    "en": "Please call an ambulance, it's an emergency!",
+    "de": "Bitte rufen Sie einen Krankenwagen, es ist ein Notfall!",
+    "es": "Por favor, llame a una ambulancia, ¡es una emergencia!",
+    "fr": "Appelez une ambulance, s’il vous plaît, c’est une urgence !",
+    "it": "Per favore, chiami un’ambulanza, è un’emergenza!",
+    "pt": "Por favor, chame uma ambulância, é uma emergência!"
+   }
   }
  ],
  "notas": [
-  "Excuse me is the standard way to start a question to a stranger.",
-  "Turn left/right and straight ahead are the most useful direction words.",
-  "In an emergency, short, clear sentences are more important than grammar."
+  {
+   "en": "Excuse me is the standard way to start a question to a stranger.",
+   "de": "Excuse me ist die übliche Art, eine Frage an eine unbekannte Person zu beginnen.",
+   "es": "Excuse me es la forma habitual de empezar una pregunta a una persona desconocida.",
+   "fr": "Excuse me est la manière habituelle de commencer une question adressée à un inconnu.",
+   "it": "Excuse me è il modo standard per iniziare una domanda rivolta a uno sconosciuto.",
+   "pt": "Excuse me é a forma padrão de começar uma pergunta a uma pessoa desconhecida."
+  },
+  {
+   "en": "Turn left/right and straight ahead are the most useful direction words.",
+   "de": "Turn left/right und straight ahead sind die nützlichsten Wörter für Wegbeschreibungen.",
+   "es": "Turn left/right y straight ahead son las expresiones más útiles para dar indicaciones.",
+   "fr": "Turn left/right et straight ahead sont les expressions les plus utiles pour indiquer un chemin.",
+   "it": "Turn left/right e straight ahead sono le espressioni più utili per dare indicazioni.",
+   "pt": "Turn left/right e straight ahead são as expressões mais úteis para dar direções."
+  },
+  {
+   "en": "In an emergency, short, clear sentences are more important than grammar.",
+   "de": "In einem Notfall sind kurze, klare Sätze wichtiger als perfekte Grammatik.",
+   "es": "En una emergencia, las frases cortas y claras son más importantes que la gramática.",
+   "fr": "En cas d’urgence, des phrases courtes et claires sont plus importantes que la grammaire.",
+   "it": "In un’emergenza, frasi brevi e chiare sono più importanti della grammatica.",
+   "pt": "Em uma emergência, frases curtas e claras são mais importantes do que a gramática."
+  }
  ],
  "contraste": {
   "es": "Disculpe, ¿dónde está…? corresponds to Excuse me, where is…?, so asking for directions transfers directly. Todo recto becomes straight on.",
@@ -54,13 +173,34 @@
   "pt": "Desculpe, onde fica…? corresponds to Excuse me, where is…?. Sempre em frente means straight on, not always in front."
  },
  "errores": [
-  "Forgetting excuse me before asking a stranger for help.",
-  "Using overly complex sentences in an emergency instead of short, clear ones."
+  {
+   "en": "Forgetting excuse me before asking a stranger for help.",
+   "de": "Excuse me vergessen, bevor man eine fremde Person um Hilfe bittet.",
+   "es": "Olvidar excuse me antes de pedir ayuda a una persona desconocida.",
+   "fr": "Oublier excuse me avant de demander de l’aide à un inconnu.",
+   "it": "Dimenticare excuse me prima di chiedere aiuto a uno sconosciuto.",
+   "pt": "Esquecer excuse me antes de pedir ajuda a uma pessoa desconhecida."
+  },
+  {
+   "en": "Using overly complex sentences in an emergency instead of short, clear ones.",
+   "de": "In einem Notfall zu komplizierte Sätze statt kurzer, klarer Sätze verwenden.",
+   "es": "Usar frases demasiado complejas en una emergencia en vez de frases cortas y claras.",
+   "fr": "Utiliser des phrases trop complexes en cas d’urgence au lieu de phrases courtes et claires.",
+   "it": "Usare frasi troppo complesse in un’emergenza invece di frasi brevi e chiare.",
+   "pt": "Usar frases complexas demais em uma emergência em vez de frases curtas e claras."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Excuse me, where is…?",
-   "funcion": "asking for directions",
+   "funcion": {
+    "en": "asking for directions",
+    "de": "nach dem Weg fragen",
+    "es": "pedir indicaciones",
+    "fr": "demander son chemin",
+    "it": "chiedere indicazioni",
+    "pt": "pedir direções"
+   },
    "traducciones": {
     "es": "Disculpe, ¿dónde está…?",
     "de": "Entschuldigung, wo ist…?",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "Can you help me, please?",
-   "funcion": "asking for help",
+   "funcion": {
+    "en": "asking for help",
+    "de": "um Hilfe bitten",
+    "es": "pedir ayuda",
+    "fr": "demander de l'aide",
+    "it": "chiedere aiuto",
+    "pt": "pedir ajuda"
+   },
    "traducciones": {
     "es": "¿Puede ayudarme, por favor?",
     "de": "Können Sie mir bitte helfen?",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "Call an ambulance!",
-   "funcion": "emergency",
+   "funcion": {
+    "en": "emergency",
+    "de": "Notfall",
+    "es": "emergencia",
+    "fr": "urgence",
+    "it": "emergenza",
+    "pt": "emergência"
+   },
    "traducciones": {
     "es": "¡Llame a una ambulancia!",
     "de": "Rufen Sie einen Krankenwagen!",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "Turn left/right.",
-   "funcion": "giving directions",
+   "funcion": {
+    "en": "giving directions",
+    "de": "den Weg beschreiben",
+    "es": "dar indicaciones",
+    "fr": "indiquer le chemin",
+    "it": "dare indicazioni",
+    "pt": "dar direções"
+   },
    "traducciones": {
     "es": "Doble a la izquierda/derecha.",
     "de": "Biegen Sie links/rechts ab.",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "It's straight ahead.",
-   "funcion": "giving directions",
+   "funcion": {
+    "en": "giving directions",
+    "de": "den Weg beschreiben",
+    "es": "dar indicaciones",
+    "fr": "indiquer le chemin",
+    "it": "dare indicazioni",
+    "pt": "dar direções"
+   },
    "traducciones": {
     "es": "Está derecho.",
     "de": "Es ist geradeaus.",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "I'm lost.",
-   "funcion": "asking for help",
+   "funcion": {
+    "en": "asking for help",
+    "de": "um Hilfe bitten",
+    "es": "pedir ayuda",
+    "fr": "demander de l'aide",
+    "it": "chiedere aiuto",
+    "pt": "pedir ajuda"
+   },
    "traducciones": {
     "es": "Estoy perdido/a.",
     "de": "Ich habe mich verirrt.",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Have I used excuse me before asking a stranger?",
-  "Are my sentences short and clear?",
-  "Have I used at least three different survival phrases?",
-  "Does the phrase sound natural?",
-  "Does the phrase sound natural?"
+  {
+   "en": "Have I used excuse me before asking a stranger?",
+   "de": "Habe ich excuse me verwendet, bevor ich eine fremde Person angesprochen habe?",
+   "es": "¿He usado excuse me antes de preguntarle algo a una persona desconocida?",
+   "fr": "Ai-je utilisé excuse me avant de m’adresser à un inconnu ?",
+   "it": "Ho usato excuse me prima di rivolgermi a uno sconosciuto?",
+   "pt": "Usei excuse me antes de abordar uma pessoa desconhecida?"
+  },
+  {
+   "en": "Are my sentences short and clear?",
+   "de": "Sind meine Sätze kurz und klar?",
+   "es": "¿Mis frases son cortas y claras?",
+   "fr": "Mes phrases sont-elles courtes et claires ?",
+   "it": "Le mie frasi sono brevi e chiare?",
+   "pt": "Minhas frases são curtas e claras?"
+  },
+  {
+   "en": "Have I used at least three different survival phrases?",
+   "de": "Habe ich mindestens drei verschiedene Überlebenssätze verwendet?",
+   "es": "¿He usado al menos tres frases de supervivencia diferentes?",
+   "fr": "Ai-je utilisé au moins trois phrases de survie différentes ?",
+   "it": "Ho usato almeno tre frasi di sopravvivenza diverse?",
+   "pt": "Usei pelo menos três frases de sobrevivência diferentes?"
+  },
+  {
+   "en": "Does the phrase sound natural?",
+   "de": "Klingt die Formulierung natürlich?",
+   "es": "¿Suena natural la expresión?",
+   "fr": "La formulation semble-t-elle naturelle ?",
+   "it": "La frase suona naturale?",
+   "pt": "A expressão soa natural?"
+  },
+  {
+   "en": "Does the phrase sound natural?",
+   "de": "Klingt die Formulierung natürlich?",
+   "es": "¿Suena natural la expresión?",
+   "fr": "La formulation semble-t-elle naturelle ?",
+   "it": "La frase suona naturale?",
+   "pt": "A expressão soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on whether the survival phrases are clear and polite. Check that emergency sentences stay short and direct. Do not rewrite the text. Flag anything that sounds too complex for an emergency.",
+ "promptCorreccion": {
+  "en": "Focus only on whether the survival phrases are clear and polite. Check that emergency sentences stay short and direct. Do not rewrite the text. Flag anything that sounds too complex for an emergency.",
+  "de": "Achte nur darauf, ob die Überlebenssätze klar und höflich sind. Prüfe, dass Sätze für Notfälle kurz und direkt bleiben. Formuliere den Text nicht neu. Markiere alles, was für einen Notfall zu kompliziert klingt.",
+  "es": "Concéntrate solo en si las frases de supervivencia son claras y corteses. Comprueba que las frases de emergencia sean cortas y directas. No reescribas el texto. Señala cualquier cosa que suene demasiado compleja para una emergencia.",
+  "fr": "Concentre-toi uniquement sur la clarté et la politesse des phrases de survie. Vérifie que les phrases d’urgence restent courtes et directes. Ne réécris pas le texte. Signale tout ce qui semble trop complexe pour une urgence.",
+  "it": "Concentrati solo sul fatto che le frasi di sopravvivenza siano chiare ed educate. Controlla che le frasi per le emergenze restino brevi e dirette. Non riscrivere il testo. Segnala tutto ciò che suona troppo complesso per un’emergenza.",
+  "pt": "Concentre-se apenas em saber se as frases de sobrevivência estão claras e educadas. Verifique se as frases de emergência continuam curtas e diretas. Não reescreva o texto. Sinalize qualquer coisa que pareça complexa demais para uma emergência."
+ },
  "erroresContrastivos": {
   "es": [
    "*Todo recto* rendered as *All straight* instead of *Straight on* or *Straight ahead*."

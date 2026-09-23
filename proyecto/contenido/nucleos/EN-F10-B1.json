@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Speculating and Predicting",
+ "titulo": {
+  "en": "Speculating and Predicting",
+  "de": "Vermutungen und Vorhersagen",
+  "es": "Especular y predecir",
+  "fr": "Émettre des hypothèses et faire des prédictions",
+  "it": "Fare ipotesi e previsioni",
+  "pt": "Especular e fazer previsões"
+ },
  "categoria": "fluency",
  "ancla": "EGP A2/B1",
- "descripcion": "At B1 you speculate with may, might and probably to talk about what might happen. The full speculation chain used at C1 comes later — a simple, graded prediction naming how sure you are is enough here.",
+ "descripcion": {
+  "en": "At B1 you speculate with may, might and probably to talk about what might happen. The full speculation chain used at C1 comes later — a simple, graded prediction naming how sure you are is enough here.",
+  "de": "Auf B1 spekulierst du mit may, might und probably darüber, was passieren könnte. Die vollständige Spekulationskette auf C1 kommt später — hier reicht eine einfache, abgestufte Vorhersage, die zeigt, wie sicher du bist.",
+  "es": "En B1 especulas con may, might y probably sobre lo que podría ocurrir. La cadena completa de especulación de C1 llega después; aquí basta con una predicción sencilla y graduada que indique cuán seguro estás.",
+  "fr": "Au niveau B1, tu spécules avec may, might et probably sur ce qui pourrait arriver. La chaîne complète de spéculation du niveau C1 vient plus tard : ici, une prédiction simple et graduée qui indique ton degré de certitude suffit.",
+  "it": "A livello B1 fai ipotesi con may, might e probably su ciò che potrebbe accadere. La catena completa di speculazione del C1 arriva più avanti: qui basta una previsione semplice e graduata che indichi quanto sei sicuro.",
+  "pt": "No nível B1, você especula com may, might e probably sobre o que pode acontecer. A cadeia completa de especulação do C1 vem depois; aqui basta uma previsão simples e graduada que mostre seu grau de certeza."
+ },
  "cuadroReferencia": {
-  "titulo": "Simple speculation",
+  "titulo": {
+   "en": "Simple speculation",
+   "de": "Einfache Spekulation",
+   "es": "Especulación sencilla",
+   "fr": "Spéculation simple",
+   "it": "Speculazione semplice",
+   "pt": "Especulação simples"
+  },
   "columnas": [
-   "Word",
-   "Certainty"
+   {
+    "en": "Word",
+    "de": "Wort",
+    "es": "Palabra",
+    "fr": "Mot",
+    "it": "Parola",
+    "pt": "Palavra"
+   },
+   {
+    "en": "Certainty",
+    "de": "Sicherheit",
+    "es": "Certeza",
+    "fr": "Certitude",
+    "it": "Certezza",
+    "pt": "Certeza"
+   }
   ],
   "filas": [
    [
-    "might",
-    "low"
+    {
+     "en": "might",
+     "de": "might",
+     "es": "might",
+     "fr": "might",
+     "it": "might",
+     "pt": "might"
+    },
+    {
+     "en": "low",
+     "de": "gering",
+     "es": "baja",
+     "fr": "faible",
+     "it": "bassa",
+     "pt": "baixa"
+    }
    ],
    [
-    "probably",
-    "medium-high"
+    {
+     "en": "probably",
+     "de": "wahrscheinlich",
+     "es": "probablemente",
+     "fr": "probablement",
+     "it": "probabilmente",
+     "pt": "provavelmente"
+    },
+    {
+     "en": "medium-high",
+     "de": "mittel bis hoch",
+     "es": "media-alta",
+     "fr": "moyenne à élevée",
+     "it": "medio-alta",
+     "pt": "média-alta"
+    }
    ],
    [
-    "definitely",
-    "very high"
+    {
+     "en": "definitely",
+     "de": "definitely",
+     "es": "definitely",
+     "fr": "definitely",
+     "it": "definitely",
+     "pt": "definitely"
+    },
+    {
+     "en": "very high",
+     "de": "sehr hoch",
+     "es": "muy alta",
+     "fr": "très élevée",
+     "it": "molto alta",
+     "pt": "muito alta"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "It might rain later, so take a jacket.",
+   "texto": {
+    "en": "It might rain later, so take a jacket.",
+    "de": "Später könnte es regnen, also nimm eine Jacke mit.",
+    "es": "Puede que llueva más tarde, así que lleva una chaqueta.",
+    "fr": "Il pourrait pleuvoir plus tard, alors prends une veste.",
+    "it": "Potrebbe piovere più tardi, quindi porta una giacca.",
+    "pt": "Pode chover mais tarde, então leve uma jaqueta."
+   },
    "audio": true
   },
   {
-   "texto": "This will probably take a while.",
+   "texto": {
+    "en": "This will probably take a while.",
+    "de": "Das wird wahrscheinlich eine Weile dauern.",
+    "es": "Probablemente esto tardará un rato.",
+    "fr": "Cela prendra probablement un certain temps.",
+    "it": "Probabilmente ci vorrà un po’.",
+    "pt": "Isso provavelmente vai levar um tempo."
+   },
    "audio": true
   },
   {
-   "texto": "It's definitely going to be busy tomorrow."
+   "texto": {
+    "en": "It's definitely going to be busy tomorrow.",
+    "de": "Morgen wird es auf jeden Fall voll sein.",
+    "es": "Mañana seguro que estará lleno.",
+    "fr": "Demain, ce sera certainement très fréquenté.",
+    "it": "Domani sarà sicuramente affollato.",
+    "pt": "Amanhã com certeza vai estar cheio."
+   }
   }
  ],
  "notas": [
-  "Might and may express a real but uncertain possibility.",
-  "Probably usually goes between the subject and the verb: it will probably rain.",
-  "Definitely is used for a very confident prediction."
+  {
+   "en": "Might and may express a real but uncertain possibility.",
+   "de": "Might und may drücken eine echte, aber unsichere Möglichkeit aus.",
+   "es": "Might y may expresan una posibilidad real, pero incierta.",
+   "fr": "Might et may expriment une possibilité réelle mais incertaine.",
+   "it": "Might e may esprimono una possibilità reale ma incerta.",
+   "pt": "Might e may expressam uma possibilidade real, mas incerta."
+  },
+  {
+   "en": "Probably usually goes between the subject and the verb: it will probably rain.",
+   "de": "Probably steht gewöhnlich zwischen Subjekt und Verb: it will probably rain.",
+   "es": "Probably suele ir entre el sujeto y el verbo: it will probably rain.",
+   "fr": "Probably se place généralement entre le sujet et le verbe : it will probably rain.",
+   "it": "Probably va di solito tra il soggetto e il verbo: it will probably rain.",
+   "pt": "Probably normalmente fica entre o sujeito e o verbo: it will probably rain."
+  },
+  {
+   "en": "Definitely is used for a very confident prediction.",
+   "de": "Definitely verwendet man für eine Vorhersage, bei der man sehr sicher ist.",
+   "es": "Definitely se usa para una predicción de la que se está muy seguro.",
+   "fr": "Definitely s’utilise pour une prédiction dont on est très sûr.",
+   "it": "Definitely si usa per una previsione di cui si è molto sicuri.",
+   "pt": "Definitely é usado para uma previsão da qual se tem muita certeza."
+  }
  ],
  "contraste": {
   "es": "Quizás and probablemente correspond to maybe and probably, and the Spanish future to will, so graded certainty transfers well.",
@@ -54,14 +173,42 @@
   "pt": "Talvez takes the subjunctive (talvez chova), which can lead to maybe it rains instead of maybe it'll rain. Provavelmente corresponds to probably."
  },
  "errores": [
-  "Using will for everything, without varying the certainty.",
-  "Misplacing probably in the sentence.",
-  "Using definitely for something that's actually uncertain."
+  {
+   "en": "Using will for everything, without varying the certainty.",
+   "de": "Will für alles verwenden, ohne den Grad der Sicherheit zu variieren.",
+   "es": "Usar will para todo, sin variar el grado de certeza.",
+   "fr": "Utiliser will pour tout, sans varier le degré de certitude.",
+   "it": "Usare will per tutto, senza variare il grado di certezza.",
+   "pt": "Usar will para tudo, sem variar o grau de certeza."
+  },
+  {
+   "en": "Misplacing probably in the sentence.",
+   "de": "Probably an die falsche Stelle im Satz setzen.",
+   "es": "Colocar probably en una posición incorrecta en la oración.",
+   "fr": "Placer probably au mauvais endroit dans la phrase.",
+   "it": "Mettere probably nella posizione sbagliata nella frase.",
+   "pt": "Colocar probably no lugar errado da frase."
+  },
+  {
+   "en": "Using definitely for something that's actually uncertain.",
+   "de": "Definitely für etwas verwenden, das eigentlich unsicher ist.",
+   "es": "Usar definitely para algo que en realidad es incierto.",
+   "fr": "Utiliser definitely pour quelque chose qui est en réalité incertain.",
+   "it": "Usare definitely per qualcosa che in realtà è incerto.",
+   "pt": "Usar definitely para algo que na verdade é incerto."
+  }
  ],
  "redemittel": [
   {
    "expresion": "It might…",
-   "funcion": "low certainty",
+   "funcion": {
+    "en": "low certainty",
+    "de": "geringe Sicherheit",
+    "es": "certeza baja",
+    "fr": "faible certitude",
+    "it": "bassa certezza",
+    "pt": "baixa certeza"
+   },
    "traducciones": {
     "es": "Podría…",
     "de": "Es könnte…",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "It will probably…",
-   "funcion": "medium-high certainty",
+   "funcion": {
+    "en": "medium-high certainty",
+    "de": "mittlere bis hohe Sicherheit",
+    "es": "certeza media-alta",
+    "fr": "certitude moyenne à élevée",
+    "it": "certezza medio-alta",
+    "pt": "certeza média-alta"
+   },
    "traducciones": {
     "es": "Probablemente…",
     "de": "Es wird wahrscheinlich…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "It's definitely…",
-   "funcion": "very high certainty",
+   "funcion": {
+    "en": "very high certainty",
+    "de": "sehr hohe Sicherheit",
+    "es": "certeza muy alta",
+    "fr": "degré de certitude très élevé",
+    "it": "certezza molto alta",
+    "pt": "certeza muito alta"
+   },
    "traducciones": {
     "es": "Definitivamente…",
     "de": "Bestimmt ist…",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "I think it will…",
-   "funcion": "opinion-based prediction",
+   "funcion": {
+    "en": "opinion-based prediction",
+    "de": "meinungsbasierte Vorhersage",
+    "es": "predicción basada en una opinión",
+    "fr": "prédiction fondée sur une opinion",
+    "it": "previsione basata su un'opinione",
+    "pt": "previsão baseada em opinião"
+   },
    "traducciones": {
     "es": "Creo que va a…",
     "de": "Ich denke, es wird…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Maybe it will…",
-   "funcion": "low certainty, alternative",
+   "funcion": {
+    "en": "low certainty, alternative",
+    "de": "geringe Sicherheit, Alternative",
+    "es": "baja certeza, alternativa",
+    "fr": "faible degré de certitude, alternative",
+    "it": "bassa certezza, alternativa",
+    "pt": "baixa certeza, alternativa"
+   },
    "traducciones": {
     "es": "Quizás vaya a…",
     "de": "Vielleicht wird es…",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "I doubt it will…",
-   "funcion": "low certainty, negative",
+   "funcion": {
+    "en": "low certainty, negative",
+    "de": "geringe Sicherheit, negativ",
+    "es": "baja certeza, negativo",
+    "fr": "faible degré de certitude, négatif",
+    "it": "bassa certezza, negativo",
+    "pt": "baixa certeza, negativo"
+   },
    "traducciones": {
     "es": "Dudo que vaya a…",
     "de": "Ich bezweifle, dass…",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Have I used more than one certainty word, not just will?",
-  "Is probably in the right position?",
-  "Does the certainty level match how sure I really am?",
-  "Does the phrase sound polite and natural?",
-  "Does the phrase sound polite and natural?"
+  {
+   "en": "Have I used more than one certainty word, not just will?",
+   "de": "Habe ich mehr als ein Wort für Sicherheit verwendet und nicht nur will?",
+   "es": "¿He usado más de una palabra para expresar certeza y no solo will?",
+   "fr": "Ai-je utilisé plus d’un mot de certitude et pas seulement will ?",
+   "it": "Ho usato più di una parola per esprimere certezza e non solo will?",
+   "pt": "Usei mais de uma palavra para expressar certeza, e não apenas will?"
+  },
+  {
+   "en": "Is probably in the right position?",
+   "de": "Steht probably an der richtigen Stelle?",
+   "es": "¿Probably está en la posición correcta?",
+   "fr": "Probably est-il à la bonne place ?",
+   "it": "Probably è nella posizione giusta?",
+   "pt": "Probably está na posição certa?"
+  },
+  {
+   "en": "Does the certainty level match how sure I really am?",
+   "de": "Passt der Grad der Sicherheit dazu, wie sicher ich wirklich bin?",
+   "es": "¿El grado de certeza coincide con lo seguro que realmente estoy?",
+   "fr": "Le degré de certitude correspond-il à mon niveau réel de confiance ?",
+   "it": "Il grado di certezza corrisponde a quanto sono davvero sicuro?",
+   "pt": "O grau de certeza corresponde ao quanto eu realmente estou seguro?"
+  },
+  {
+   "en": "Does the phrase sound polite and natural?",
+   "de": "Klingt die Wendung höflich und natürlich?",
+   "es": "¿La expresión suena cortés y natural?",
+   "fr": "La formulation semble-t-elle polie et naturelle ?",
+   "it": "L’espressione suona educata e naturale?",
+   "pt": "A expressão soa educada e natural?"
+  },
+  {
+   "en": "Does the phrase sound polite and natural?",
+   "de": "Klingt die Wendung höflich und natürlich?",
+   "es": "¿La expresión suena cortés y natural?",
+   "fr": "La formulation semble-t-elle polie et naturelle ?",
+   "it": "L’espressione suona educata e naturale?",
+   "pt": "A expressão soa educada e natural?"
+  }
  ],
- "promptCorreccion": "Focus only on the words used to express certainty in a prediction. Check the position of probably and whether the level of certainty is accurate. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on the words used to express certainty in a prediction. Check the position of probably and whether the level of certainty is accurate. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf die Wörter, mit denen die Sicherheit einer Vorhersage ausgedrückt wird. Prüfe die Position von probably und ob der Grad der Sicherheit passend ist. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en las palabras usadas para expresar el grado de certeza de una predicción. Comprueba la posición de probably y si el nivel de certeza es adecuado. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur les mots utilisés pour exprimer le degré de certitude d'une prédiction. Vérifie la position de probably et si le degré de certitude est approprié. Ne réécris pas le texte.",
+  "it": "Concentrati solo sulle parole usate per esprimere il grado di certezza di una previsione. Controlla la posizione di probably e se il livello di certezza è appropriato. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas nas palavras usadas para expressar o grau de certeza de uma previsão. Verifique a posição de probably e se o nível de certeza está adequado. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*A lo mejor* rendered as *At the best* instead of *Maybe* or *Perhaps*."

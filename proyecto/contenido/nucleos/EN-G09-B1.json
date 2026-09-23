@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Modals of Obligation, Permission and Ability",
+ "titulo": {
+  "en": "Modals of Obligation, Permission and Ability",
+  "de": "Modalverben für Pflicht, Erlaubnis und Fähigkeit",
+  "es": "Modales de obligación, permiso y capacidad",
+  "fr": "Modaux d’obligation, de permission et de capacité",
+  "it": "Modali di obbligo, permesso e capacità",
+  "pt": "Modais de obrigação, permissão e capacidade"
+ },
  "categoria": "grammar",
  "ancla": "EGP A2/B1",
- "descripcion": "At B1 you use must/have to for obligation, can for permission and ability, and don't have to for a lack of obligation. The subjective uses of these same modals, for making deductions about the present, are introduced separately and later.",
+ "descripcion": {
+  "en": "At B1 you use must/have to for obligation, can for permission and ability, and don't have to for a lack of obligation. The subjective uses of these same modals, for making deductions about the present, are introduced separately and later.",
+  "de": "Auf B1-Niveau verwendest du must/have to für Verpflichtungen, can für Erlaubnis und Fähigkeit und don't have to für fehlende Verpflichtung. Die subjektiven Verwendungen derselben Modalverben, um Schlussfolgerungen über die Gegenwart zu ziehen, werden separat und später eingeführt.",
+  "es": "En B1 usas must/have to para obligación, can para permiso y capacidad y don't have to para ausencia de obligación. Los usos subjetivos de estos mismos modales para hacer deducciones sobre el presente se introducen por separado y más adelante.",
+  "fr": "Au niveau B1, tu utilises must/have to pour l'obligation, can pour la permission et la capacité, et don't have to pour l'absence d'obligation. Les emplois subjectifs de ces mêmes modaux pour faire des déductions sur le présent sont introduits séparément et plus tard.",
+  "it": "Al livello B1 usi must/have to per l'obbligo, can per il permesso e la capacità e don't have to per l'assenza di obbligo. Gli usi soggettivi degli stessi modali per fare deduzioni sul presente vengono introdotti separatamente e più avanti.",
+  "pt": "No nível B1, você usa must/have to para obrigação, can para permissão e capacidade e don't have to para ausência de obrigação. Os usos subjetivos desses mesmos modais para fazer deduções sobre o presente são apresentados separadamente e mais adiante."
+ },
  "cuadroReferencia": {
-  "titulo": "Six modal meanings",
+  "titulo": {
+   "en": "Six modal meanings",
+   "de": "Sechs Bedeutungen von Modalverben",
+   "es": "Seis significados de los modales",
+   "fr": "Six sens des modaux",
+   "it": "Sei significati dei modali",
+   "pt": "Seis significados dos modais"
+  },
   "columnas": [
-   "Verb",
-   "Meaning",
-   "Example"
+   {
+    "en": "Verb",
+    "de": "Verb",
+    "es": "Verbo",
+    "fr": "Verbe",
+    "it": "Verbo",
+    "pt": "Verbo"
+   },
+   {
+    "en": "Meaning",
+    "de": "Bedeutung",
+    "es": "Significado",
+    "fr": "Signification",
+    "it": "Significato",
+    "pt": "Significado"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "must/have to",
-    "obligation",
-    "I have to work tomorrow."
+    {
+     "en": "must/have to",
+     "de": "must/have to",
+     "es": "must/have to",
+     "fr": "must/have to",
+     "it": "must/have to",
+     "pt": "must/have to"
+    },
+    {
+     "en": "obligation",
+     "de": "Pflicht",
+     "es": "obligación",
+     "fr": "obligation",
+     "it": "obbligo",
+     "pt": "obrigação"
+    },
+    {
+     "en": "I have to work tomorrow.",
+     "de": "Ich muss morgen arbeiten.",
+     "es": "Tengo que trabajar mañana.",
+     "fr": "Je dois travailler demain.",
+     "it": "Devo lavorare domani.",
+     "pt": "Tenho que trabalhar amanhã."
+    }
    ],
    [
-    "can",
-    "permission/ability",
-    "Can I open the window?"
+    {
+     "en": "can",
+     "de": "can",
+     "es": "can",
+     "fr": "can",
+     "it": "can",
+     "pt": "can"
+    },
+    {
+     "en": "permission/ability",
+     "de": "Erlaubnis/Fähigkeit",
+     "es": "permiso/capacidad",
+     "fr": "permission/capacité",
+     "it": "permesso/capacità",
+     "pt": "permissão/capacidade"
+    },
+    {
+     "en": "Can I open the window?",
+     "de": "Darf ich das Fenster öffnen?",
+     "es": "¿Puedo abrir la ventana?",
+     "fr": "Puis-je ouvrir la fenêtre ?",
+     "it": "Posso aprire la finestra?",
+     "pt": "Posso abrir a janela?"
+    }
    ],
    [
-    "don't have to",
-    "no obligation",
-    "You don't have to come."
+    {
+     "en": "don't have to",
+     "de": "don't have to",
+     "es": "don't have to",
+     "fr": "don't have to",
+     "it": "don't have to",
+     "pt": "don't have to"
+    },
+    {
+     "en": "no obligation",
+     "de": "keine Pflicht",
+     "es": "ausencia de obligación",
+     "fr": "absence d’obligation",
+     "it": "assenza di obbligo",
+     "pt": "ausência de obrigação"
+    },
+    {
+     "en": "You don't have to come.",
+     "de": "Du musst nicht kommen.",
+     "es": "No tienes que venir.",
+     "fr": "Tu n'es pas obligé(e) de venir.",
+     "it": "Non devi venire per forza.",
+     "pt": "Você não precisa vir."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I have to work early tomorrow.",
+   "texto": {
+    "en": "I have to work early tomorrow.",
+    "de": "Ich muss morgen früh arbeiten.",
+    "es": "Tengo que trabajar temprano mañana.",
+    "fr": "Je dois travailler tôt demain.",
+    "it": "Devo lavorare presto domani.",
+    "pt": "Tenho que trabalhar cedo amanhã."
+   },
    "audio": true
   },
   {
-   "texto": "Can I open the window, please?",
+   "texto": {
+    "en": "Can I open the window, please?",
+    "de": "Darf ich bitte das Fenster öffnen?",
+    "es": "¿Puedo abrir la ventana, por favor?",
+    "fr": "Puis-je ouvrir la fenêtre, s’il vous plaît ?",
+    "it": "Posso aprire la finestra, per favore?",
+    "pt": "Posso abrir a janela, por favor?"
+   },
    "audio": true
   },
   {
-   "texto": "You don't have to come if you're busy."
+   "texto": {
+    "en": "You don't have to come if you're busy.",
+    "de": "Du musst nicht kommen, wenn du beschäftigt bist.",
+    "es": "No tienes que venir si estás ocupado.",
+    "fr": "Tu n'es pas obligé(e) de venir si tu es occupé(e).",
+    "it": "Non devi venire se sei impegnato/a.",
+    "pt": "Você não precisa vir se estiver ocupado."
+   }
   }
  ],
  "notas": [
-  "Must and have to both express obligation, but have to is more common in everyday speech.",
-  "Don't have to means no obligation, not forbidden — that's a common point of confusion.",
-  "Mustn't means it's forbidden, which is different from don't have to."
+  {
+   "en": "Must and have to both express obligation, but have to is more common in everyday speech.",
+   "de": "Must und have to drücken beide eine Verpflichtung aus, aber have to ist in der Alltagssprache häufiger.",
+   "es": "Must y have to expresan obligación, pero have to es más frecuente en el habla cotidiana.",
+   "fr": "Must et have to expriment tous deux une obligation, mais have to est plus fréquent dans la langue courante.",
+   "it": "Must e have to esprimono entrambi un obbligo, ma have to è più comune nel parlato quotidiano.",
+   "pt": "Must e have to expressam obrigação, mas have to é mais comum na fala do dia a dia."
+  },
+  {
+   "en": "Don't have to means no obligation, not forbidden — that's a common point of confusion.",
+   "de": "Don't have to bedeutet, dass keine Verpflichtung besteht, nicht dass etwas verboten ist – das wird oft verwechselt.",
+   "es": "Don't have to significa que no hay obligación, no que esté prohibido; es una confusión frecuente.",
+   "fr": "Don't have to signifie qu'il n'y a pas d'obligation, pas que c'est interdit : c'est une confusion fréquente.",
+   "it": "Don't have to significa assenza di obbligo, non divieto: è un errore comune.",
+   "pt": "Don't have to significa que não há obrigação, e não que algo seja proibido — essa é uma confusão comum."
+  },
+  {
+   "en": "Mustn't means it's forbidden, which is different from don't have to.",
+   "de": "Mustn't bedeutet, dass etwas verboten ist, und unterscheidet sich damit von don't have to.",
+   "es": "Mustn't significa que algo está prohibido, lo cual es distinto de don't have to.",
+   "fr": "Mustn't signifie que c'est interdit, ce qui est différent de don't have to.",
+   "it": "Mustn't significa che qualcosa è vietato, ed è diverso da don't have to.",
+   "pt": "Mustn't significa que algo é proibido, o que é diferente de don't have to."
+  }
  ],
  "contraste": {
   "es": "Spanish has tener que and poder as very close equivalents, so the logic transfers easily. The typical point of confusion is no tener que against no poder, which corresponds to don't have to against mustn't.",
@@ -58,14 +205,42 @@
   "pt": "Portuguese não tens de or não precisas de corresponds well to don't have to, so that distinction transfers. The trap is dever: não deves means you mustn't or you shouldn't, and Portuguese speakers may use must where English prefers should."
  },
  "errores": [
-  "Confusing don't have to (no obligation) with mustn't (forbidden).",
-  "Using must for permission instead of can.",
-  "Forgetting to before have in have to."
+  {
+   "en": "Confusing don't have to (no obligation) with mustn't (forbidden).",
+   "de": "Don't have to (keine Verpflichtung) mit mustn't (verboten) verwechseln.",
+   "es": "Confundir don't have to (sin obligación) con mustn't (prohibido).",
+   "fr": "Confondre don't have to (absence d'obligation) et mustn't (interdit).",
+   "it": "Confondere don't have to (nessun obbligo) con mustn't (vietato).",
+   "pt": "Confundir don't have to (sem obrigação) com mustn't (proibido)."
+  },
+  {
+   "en": "Using must for permission instead of can.",
+   "de": "Must für Erlaubnis statt can verwenden.",
+   "es": "Usar must para permiso en lugar de can.",
+   "fr": "Utiliser must pour la permission au lieu de can.",
+   "it": "Usare must per il permesso invece di can.",
+   "pt": "Usar must para permissão em vez de can."
+  },
+  {
+   "en": "Forgetting to before have in have to.",
+   "de": "To in have to vergessen.",
+   "es": "Olvidar to en have to.",
+   "fr": "Oublier to dans have to.",
+   "it": "Dimenticare to in have to.",
+   "pt": "Esquecer to em have to."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I have to…",
-   "funcion": "obligation",
+   "funcion": {
+    "en": "obligation",
+    "de": "Pflicht",
+    "es": "obligación",
+    "fr": "obligation",
+    "it": "obbligo",
+    "pt": "obrigação"
+   },
    "traducciones": {
     "es": "Tengo que…",
     "de": "Ich muss…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "Can I…?",
-   "funcion": "permission",
+   "funcion": {
+    "en": "permission",
+    "de": "Erlaubnis",
+    "es": "permiso",
+    "fr": "permission",
+    "it": "permesso",
+    "pt": "permissão"
+   },
    "traducciones": {
     "es": "¿Puedo…?",
     "de": "Kann ich…?",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "I can…",
-   "funcion": "ability",
+   "funcion": {
+    "en": "ability",
+    "de": "Fähigkeit",
+    "es": "capacidad",
+    "fr": "capacité",
+    "it": "capacità",
+    "pt": "capacidade"
+   },
    "traducciones": {
     "es": "Puedo…",
     "de": "Ich kann…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "You don't have to…",
-   "funcion": "no obligation",
+   "funcion": {
+    "en": "no obligation",
+    "de": "keine Pflicht",
+    "es": "ausencia de obligación",
+    "fr": "absence d’obligation",
+    "it": "assenza di obbligo",
+    "pt": "ausência de obrigação"
+   },
    "traducciones": {
     "es": "No tenés que…",
     "de": "Du musst nicht…",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "You mustn't…",
-   "funcion": "forbidden",
+   "funcion": {
+    "en": "forbidden",
+    "de": "verboten",
+    "es": "prohibido",
+    "fr": "interdit",
+    "it": "vietato",
+    "pt": "proibido"
+   },
    "traducciones": {
     "es": "No debés…",
     "de": "Du darfst nicht…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "I must…",
-   "funcion": "obligation, stronger/formal",
+   "funcion": {
+    "en": "obligation, stronger/formal",
+    "de": "Verpflichtung, stärker/formeller",
+    "es": "obligación, más fuerte/formal",
+    "fr": "obligation, plus forte/formelle",
+    "it": "obbligo, più forte/formale",
+    "pt": "obrigação, mais forte/formal"
+   },
    "traducciones": {
     "es": "Debo…",
     "de": "Ich muss…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Have I distinguished don't have to from mustn't?",
-  "Is can used for permission and ability correctly?",
-  "Have I used at least three different modals?",
-  "Does the sentence sound natural, not translated word for word?",
-  "Does the sentence sound natural, not translated word for word?"
+  {
+   "en": "Have I distinguished don't have to from mustn't?",
+   "de": "Habe ich don't have to und mustn't klar unterschieden?",
+   "es": "¿He distinguido don't have to de mustn't?",
+   "fr": "Ai-je bien distingué don't have to de mustn't ?",
+   "it": "Ho distinto don't have to da mustn't?",
+   "pt": "Distingui don't have to de mustn't?"
+  },
+  {
+   "en": "Is can used for permission and ability correctly?",
+   "de": "Wird can richtig für Erlaubnis und Fähigkeit verwendet?",
+   "es": "¿Se usa can correctamente para permiso y capacidad?",
+   "fr": "Can est-il utilisé correctement pour la permission et la capacité ?",
+   "it": "Can è usato correttamente per permesso e capacità?",
+   "pt": "Can é usado corretamente para permissão e capacidade?"
+  },
+  {
+   "en": "Have I used at least three different modals?",
+   "de": "Habe ich mindestens drei verschiedene Modalformen verwendet?",
+   "es": "¿He usado al menos tres modales diferentes?",
+   "fr": "Ai-je utilisé au moins trois modaux différents ?",
+   "it": "Ho usato almeno tre modali diversi?",
+   "pt": "Usei pelo menos três modais diferentes?"
+  },
+  {
+   "en": "Does the sentence sound natural, not translated word for word?",
+   "de": "Klingt der Satz natürlich und nicht Wort für Wort übersetzt?",
+   "es": "¿La oración suena natural y no traducida palabra por palabra?",
+   "fr": "La phrase semble-t-elle naturelle et non traduite mot à mot ?",
+   "it": "La frase suona naturale e non tradotta parola per parola?",
+   "pt": "A frase soa natural e não traduzida palavra por palavra?"
+  },
+  {
+   "en": "Does the sentence sound natural, not translated word for word?",
+   "de": "Klingt der Satz natürlich und nicht Wort für Wort übersetzt?",
+   "es": "¿La oración suena natural y no traducida palabra por palabra?",
+   "fr": "La phrase semble-t-elle naturelle et non traduite mot à mot ?",
+   "it": "La frase suona naturale e non tradotta parola per parola?",
+   "pt": "A frase soa natural e não traduzida palavra por palavra?"
+  }
  ],
- "promptCorreccion": "Focus only on modals of obligation, permission and ability. Check the difference between don't have to and mustn't, and check the form have to versus has to. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on modals of obligation, permission and ability. Check the difference between don't have to and mustn't, and check the form have to versus has to. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf Modalverben für Verpflichtung, Erlaubnis und Fähigkeit. Prüfe den Unterschied zwischen don't have to und mustn't sowie die Form have to gegenüber has to. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en los modales de obligación, permiso y capacidad. Comprueba la diferencia entre don't have to y mustn't, y la forma have to frente a has to. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur les modaux d'obligation, de permission et de capacité. Vérifie la différence entre don't have to et mustn't, ainsi que la forme have to par rapport à has to. Ne réécris pas le texte.",
+  "it": "Concentrati solo sui modali di obbligo, permesso e capacità. Controlla la differenza tra don't have to e mustn't e la forma have to rispetto a has to. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas nos modais de obrigação, permissão e capacidade. Verifique a diferença entre don't have to e mustn't e a forma have to em comparação com has to. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*sé nadar* rendered with *know*: *I know swim* instead of *I can swim*."

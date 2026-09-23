@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Giving and Asking for Opinions",
+ "titulo": {
+  "en": "Giving and Asking for Opinions",
+  "de": "Meinungen äußern und erfragen",
+  "es": "Dar y pedir opiniones",
+  "fr": "Donner et demander son avis",
+  "it": "Esprimere e chiedere opinioni",
+  "pt": "Dar e pedir opiniões"
+ },
  "categoria": "fluency",
  "ancla": "EGP A2",
- "descripcion": "At A2 you give a very simple opinion with I think or I like and, if possible, a short reason with because. This basic skill is the foundation for more complex discussion at higher levels. Free debate and pre-empting counter-arguments come at higher levels.",
+ "descripcion": {
+  "en": "At A2 you give a very simple opinion with I think or I like and, if possible, a short reason with because. This basic skill is the foundation for more complex discussion at higher levels. Free debate and pre-empting counter-arguments come at higher levels.",
+  "de": "Auf A2 gibst du eine sehr einfache Meinung mit I think oder I like und, wenn möglich, einen kurzen Grund mit because. Diese Grundfertigkeit ist die Basis für komplexere Diskussionen auf höheren Niveaus. Freie Debatten und das Vorwegnehmen von Gegenargumenten kommen erst später.",
+  "es": "En A2 das una opinión muy sencilla con I think o I like y, si es posible, una razón breve con because. Esta habilidad básica es la base para debates más complejos en niveles superiores. El debate libre y la anticipación de contraargumentos llegan más adelante.",
+  "fr": "Au niveau A2, tu donnes un avis très simple avec I think ou I like et, si possible, une courte raison avec because. Cette compétence de base sert de fondement à des discussions plus complexes aux niveaux supérieurs. Le débat libre et l’anticipation des contre-arguments viennent plus tard.",
+  "it": "A livello A2 esprimi un’opinione molto semplice con I think o I like e, se possibile, dai una breve motivazione con because. Questa abilità di base è il fondamento per discussioni più complesse ai livelli superiori. Il dibattito libero e l’anticipazione delle controargomentazioni arrivano più avanti.",
+  "pt": "No nível A2, você dá uma opinião bem simples com I think ou I like e, se possível, uma razão curta com because. Essa habilidade básica é a base para discussões mais complexas nos níveis mais altos. Debates livres e antecipação de contra-argumentos vêm mais adiante."
+ },
  "cuadroReferencia": {
-  "titulo": "Simple opinion",
+  "titulo": {
+   "en": "Simple opinion",
+   "de": "Einfache Meinung",
+   "es": "Opinión sencilla",
+   "fr": "Opinion simple",
+   "it": "Opinione semplice",
+   "pt": "Opinião simples"
+  },
   "columnas": [
-   "Step",
-   "Example"
+   {
+    "en": "Step",
+    "de": "Schritt",
+    "es": "Paso",
+    "fr": "Étape",
+    "it": "Passaggio",
+    "pt": "Etapa"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Opinion",
-    "I think this is good."
+    {
+     "en": "Opinion",
+     "de": "Meinung",
+     "es": "Opinión",
+     "fr": "Opinion",
+     "it": "Opinione",
+     "pt": "Opinião"
+    },
+    {
+     "en": "I think this is good.",
+     "de": "Ich finde, das ist gut.",
+     "es": "Creo que esto está bien.",
+     "fr": "Je pense que c’est bien.",
+     "it": "Penso che vada bene.",
+     "pt": "Acho que isso é bom."
+    }
    ],
    [
-    "Reason",
-    "…because it's cheap."
+    {
+     "en": "Reason",
+     "de": "Grund",
+     "es": "Razón",
+     "fr": "Raison",
+     "it": "Motivo",
+     "pt": "Motivo"
+    },
+    {
+     "en": "…because it's cheap.",
+     "de": "…weil es günstig ist.",
+     "es": "…porque es barato.",
+     "fr": "…parce que ce n’est pas cher.",
+     "it": "…perché costa poco.",
+     "pt": "…porque é barato."
+    }
    ],
    [
-    "Alternative",
-    "I like this."
+    {
+     "en": "Alternative",
+     "de": "Alternative",
+     "es": "Alternativa",
+     "fr": "Alternative",
+     "it": "Alternativa",
+     "pt": "Alternativa"
+    },
+    {
+     "en": "I like this.",
+     "de": "Das gefällt mir.",
+     "es": "Me gusta esto.",
+     "fr": "J’aime ça.",
+     "it": "Mi piace.",
+     "pt": "Eu gosto disso."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I think this restaurant is very good.",
+   "texto": {
+    "en": "I think this restaurant is very good.",
+    "de": "Ich finde dieses Restaurant sehr gut.",
+    "es": "Creo que este restaurante es muy bueno.",
+    "fr": "Je trouve ce restaurant très bon.",
+    "it": "Penso che questo ristorante sia molto buono.",
+    "pt": "Acho este restaurante muito bom."
+   },
    "audio": true
   },
   {
-   "texto": "I don't like it, because it's expensive.",
+   "texto": {
+    "en": "I don't like it, because it's expensive.",
+    "de": "Das gefällt mir nicht, weil es teuer ist.",
+    "es": "No me gusta porque es caro.",
+    "fr": "Je n’aime pas, parce que c’est cher.",
+    "it": "Non mi piace perché è costoso.",
+    "pt": "Não gosto porque é caro."
+   },
    "audio": true
   },
   {
-   "texto": "I like this a lot."
+   "texto": {
+    "en": "I like this a lot.",
+    "de": "Das gefällt mir sehr.",
+    "es": "Me gusta mucho esto.",
+    "fr": "J’aime beaucoup ça.",
+    "it": "Mi piace molto.",
+    "pt": "Eu gosto muito disso."
+   }
   }
  ],
  "notas": [
-  "I think is the simplest way to give an opinion.",
-  "Because can add a short reason.",
-  "I like is a useful alternative for preferences."
+  {
+   "en": "I think is the simplest way to give an opinion.",
+   "de": "I think ist die einfachste Art, eine Meinung zu äußern.",
+   "es": "I think es la forma más sencilla de dar una opinión.",
+   "fr": "I think est la façon la plus simple de donner son avis.",
+   "it": "I think è il modo più semplice per esprimere un’opinione.",
+   "pt": "I think é a forma mais simples de dar uma opinião."
+  },
+  {
+   "en": "Because can add a short reason.",
+   "de": "Mit because kann man einen kurzen Grund hinzufügen.",
+   "es": "Because permite añadir una razón breve.",
+   "fr": "Because permet d’ajouter une raison courte.",
+   "it": "Because permette di aggiungere una breve motivazione.",
+   "pt": "Because pode acrescentar uma razão curta."
+  },
+  {
+   "en": "I like is a useful alternative for preferences.",
+   "de": "I like ist eine nützliche Alternative, um Vorlieben auszudrücken.",
+   "es": "I like es una alternativa útil para expresar preferencias.",
+   "fr": "I like est une alternative utile pour exprimer ses préférences.",
+   "it": "I like è un’alternativa utile per esprimere preferenze.",
+   "pt": "I like é uma alternativa útil para expressar preferências."
+  }
  ],
  "contraste": {
   "es": "Creo que corresponds to I think, and me gusta la música to I like music; the article disappears in English, so I like the music is a typical error.",
@@ -54,13 +173,34 @@
   "pt": "Gosto de… is often calqued as I like of…; English has no preposition: I like music. Acho que corresponds to I think."
  },
  "errores": [
-  "Giving an opinion with no reason at all.",
-  "Confusing like and think."
+  {
+   "en": "Giving an opinion with no reason at all.",
+   "de": "Eine Meinung ganz ohne Begründung äußern.",
+   "es": "Dar una opinión sin ninguna razón.",
+   "fr": "Donner un avis sans aucune raison.",
+   "it": "Esprimere un’opinione senza alcuna motivazione.",
+   "pt": "Dar uma opinião sem nenhuma justificativa."
+  },
+  {
+   "en": "Confusing like and think.",
+   "de": "Like und think verwechseln.",
+   "es": "Confundir like y think.",
+   "fr": "Confondre like et think.",
+   "it": "Confondere like e think.",
+   "pt": "Confundir like e think."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I think this is…",
-   "funcion": "opinion",
+   "funcion": {
+    "en": "opinion",
+    "de": "Meinung",
+    "es": "opinión",
+    "fr": "opinion",
+    "it": "opinione",
+    "pt": "opinião"
+   },
    "traducciones": {
     "es": "Creo que esto es…",
     "de": "Ich glaube, das ist…",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "…, because…",
-   "funcion": "reason",
+   "funcion": {
+    "en": "reason",
+    "de": "Grund",
+    "es": "razón",
+    "fr": "raison",
+    "it": "motivazione",
+    "pt": "razão"
+   },
    "traducciones": {
     "es": "…, porque…",
     "de": "…, weil…",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "I like…",
-   "funcion": "preference",
+   "funcion": {
+    "en": "preference",
+    "de": "Vorliebe",
+    "es": "preferencia",
+    "fr": "préférence",
+    "it": "preferenza",
+    "pt": "preferência"
+   },
    "traducciones": {
     "es": "Me gusta…",
     "de": "Ich mag…",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "I don't like…",
-   "funcion": "dislike",
+   "funcion": {
+    "en": "dislike",
+    "de": "Abneigung",
+    "es": "desagrado",
+    "fr": "aversion",
+    "it": "antipatia",
+    "pt": "desagrado"
+   },
    "traducciones": {
     "es": "No me gusta…",
     "de": "Ich mag…nicht.",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "This is good/bad.",
-   "funcion": "simple evaluation",
+   "funcion": {
+    "en": "simple evaluation",
+    "de": "einfache Bewertung",
+    "es": "valoración sencilla",
+    "fr": "évaluation simple",
+    "it": "valutazione semplice",
+    "pt": "avaliação simples"
+   },
    "traducciones": {
     "es": "Esto es bueno/malo.",
     "de": "Das ist gut/schlecht.",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "What do you think?",
-   "funcion": "asking for an opinion",
+   "funcion": {
+    "en": "asking for an opinion",
+    "de": "nach einer Meinung fragen",
+    "es": "pedir una opinión",
+    "fr": "demander un avis",
+    "it": "chiedere un’opinione",
+    "pt": "pedir uma opinião"
+   },
    "traducciones": {
     "es": "¿Qué pensás?",
     "de": "Was denkst du?",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Have I given an opinion?",
-  "Have I given a reason if possible?",
-  "Have I used more than one phrase?",
-  "Does the phrase sound natural?",
-  "Does the phrase sound natural?"
+  {
+   "en": "Have I given an opinion?",
+   "de": "Habe ich eine Meinung geäußert?",
+   "es": "¿He dado una opinión?",
+   "fr": "Ai-je donné mon avis ?",
+   "it": "Ho espresso un’opinione?",
+   "pt": "Eu dei uma opinião?"
+  },
+  {
+   "en": "Have I given a reason if possible?",
+   "de": "Habe ich, wenn möglich, einen Grund genannt?",
+   "es": "¿He dado una razón, si era posible?",
+   "fr": "Ai-je donné une raison, si possible ?",
+   "it": "Ho dato una motivazione, se possibile?",
+   "pt": "Eu dei uma razão, se possível?"
+  },
+  {
+   "en": "Have I used more than one phrase?",
+   "de": "Habe ich mehr als eine Wendung verwendet?",
+   "es": "¿He usado más de una expresión?",
+   "fr": "Ai-je utilisé plus d’une expression ?",
+   "it": "Ho usato più di un’espressione?",
+   "pt": "Usei mais de uma expressão?"
+  },
+  {
+   "en": "Does the phrase sound natural?",
+   "de": "Klingt die Formulierung natürlich?",
+   "es": "¿Suena natural la expresión?",
+   "fr": "La formulation semble-t-elle naturelle ?",
+   "it": "La frase suona naturale?",
+   "pt": "A expressão soa natural?"
+  },
+  {
+   "en": "Does the phrase sound natural?",
+   "de": "Klingt die Formulierung natürlich?",
+   "es": "¿Suena natural la expresión?",
+   "fr": "La formulation semble-t-elle naturelle ?",
+   "it": "La frase suona naturale?",
+   "pt": "A expressão soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on whether the opinion is clear and, if possible, has a reason with because. Do not rewrite the text. Check whether more than one phrase was used, not just the same one repeated.",
+ "promptCorreccion": {
+  "en": "Focus only on whether the opinion is clear and, if possible, has a reason with because. Do not rewrite the text. Check whether more than one phrase was used, not just the same one repeated.",
+  "de": "Achte nur darauf, ob die Meinung klar ist und, wenn möglich, mit because begründet wird. Formuliere den Text nicht neu. Prüfe, ob mehr als eine Wendung verwendet wurde und nicht nur dieselbe wiederholt.",
+  "es": "Concéntrate solo en si la opinión es clara y, si es posible, tiene una razón con because. No reescribas el texto. Comprueba si se usó más de una expresión y no solo la misma repetida.",
+  "fr": "Concentre-toi uniquement sur la clarté de l’avis et, si possible, sur la présence d’une raison avec because. Ne réécris pas le texte. Vérifie si plus d’une expression a été utilisée, et pas seulement la même répétée.",
+  "it": "Concentrati solo sul fatto che l’opinione sia chiara e, se possibile, motivata con because. Non riscrivere il testo. Controlla se è stata usata più di un’espressione e non sempre la stessa.",
+  "pt": "Concentre-se apenas em saber se a opinião está clara e, se possível, se há uma razão com because. Não reescreva o texto. Verifique se foi usada mais de uma expressão, e não apenas a mesma repetida."
+ },
  "erroresContrastivos": {
   "es": [
    "*Creo que sí* rendered as *I believe that yes* instead of *I think so*."

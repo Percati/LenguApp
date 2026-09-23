@@ -3,52 +3,185 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Discourse Markers and Linking",
+ "titulo": {
+  "en": "Discourse Markers and Linking",
+  "de": "Diskursmarker und Verknüpfungen",
+  "es": "Marcadores discursivos y conectores",
+  "fr": "Marqueurs discursifs et liens logiques",
+  "it": "Marcatori discorsivi e collegamenti",
+  "pt": "Marcadores discursivos e conectores"
+ },
  "categoria": "vocabulary",
  "ancla": "EGP A2/B1",
- "descripcion": "At B1 you connect ideas with simple markers: and, but, so, because. These are the basic building blocks that later grow into the fuller set used at B2 and C1, where register and nuance start to matter.",
+ "descripcion": {
+  "en": "At B1 you connect ideas with simple markers: and, but, so, because. These are the basic building blocks that later grow into the fuller set used at B2 and C1, where register and nuance start to matter.",
+  "de": "Auf B1-Niveau verknüpfst du Ideen mit einfachen Konnektoren: and, but, so, because. Sie sind die grundlegenden Bausteine, aus denen später auf B2- und C1-Niveau ein breiteres Repertoire entsteht, bei dem Register und Nuancen wichtiger werden.",
+  "es": "En B1 conectas ideas con marcadores sencillos: and, but, so, because. Son los elementos básicos que más adelante se amplían en B2 y C1, cuando el registro y los matices empiezan a tener mayor importancia.",
+  "fr": "Au niveau B1, tu relies les idées avec des connecteurs simples : and, but, so, because. Ce sont les éléments de base qui s'élargiront ensuite aux niveaux B2 et C1, où le registre et les nuances commencent à compter.",
+  "it": "Al livello B1 colleghi le idee con connettori semplici: and, but, so, because. Sono gli elementi di base che ai livelli B2 e C1 si amplieranno in un repertorio più ricco, dove registro e sfumature iniziano a contare.",
+  "pt": "No nível B1, você conecta ideias com marcadores simples: and, but, so, because. Eles são os elementos básicos que depois se ampliam nos níveis B2 e C1, quando registro e nuance passam a ter mais importância."
+ },
  "cuadroReferencia": {
-  "titulo": "Basic connectors",
+  "titulo": {
+   "en": "Basic connectors",
+   "de": "Grundlegende Konnektoren",
+   "es": "Conectores básicos",
+   "fr": "Connecteurs de base",
+   "it": "Connettori di base",
+   "pt": "Conectores básicos"
+  },
   "columnas": [
-   "Function",
-   "Word"
+   {
+    "en": "Function",
+    "de": "Funktion",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "en": "Word",
+    "de": "Wort",
+    "es": "Palabra",
+    "fr": "Mot",
+    "it": "Parola",
+    "pt": "Palavra"
+   }
   ],
   "filas": [
    [
-    "Adding",
-    "and, also"
+    {
+     "en": "Adding",
+     "de": "Ergänzung",
+     "es": "Adición",
+     "fr": "Ajout",
+     "it": "Aggiunta",
+     "pt": "Adição"
+    },
+    {
+     "en": "and, also",
+     "de": "and, also",
+     "es": "and, also",
+     "fr": "and, also",
+     "it": "and, also",
+     "pt": "and, also"
+    }
    ],
    [
-    "Contrasting",
-    "but"
+    {
+     "en": "Contrasting",
+     "de": "Gegensatz",
+     "es": "Contraste",
+     "fr": "Opposition",
+     "it": "Contrasto",
+     "pt": "Contraste"
+    },
+    {
+     "en": "but",
+     "de": "but",
+     "es": "but",
+     "fr": "but",
+     "it": "but",
+     "pt": "but"
+    }
    ],
    [
-    "Reason",
-    "because"
+    {
+     "en": "Reason",
+     "de": "Grund",
+     "es": "Razón",
+     "fr": "Raison",
+     "it": "Motivo",
+     "pt": "Motivo"
+    },
+    {
+     "en": "because",
+     "de": "because",
+     "es": "because",
+     "fr": "because",
+     "it": "because",
+     "pt": "because"
+    }
    ],
    [
-    "Result",
-    "so"
+    {
+     "en": "Result",
+     "de": "Folge",
+     "es": "Resultado",
+     "fr": "Résultat",
+     "it": "Risultato",
+     "pt": "Resultado"
+    },
+    {
+     "en": "so",
+     "de": "so",
+     "es": "so",
+     "fr": "so",
+     "it": "so",
+     "pt": "so"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I like the city, but it's very noisy.",
+   "texto": {
+    "en": "I like the city, but it's very noisy.",
+    "de": "Ich mag die Stadt, aber sie ist sehr laut.",
+    "es": "Me gusta la ciudad, pero es muy ruidosa.",
+    "fr": "J'aime la ville, mais elle est très bruyante.",
+    "it": "Mi piace la città, ma è molto rumorosa.",
+    "pt": "Gosto da cidade, mas ela é muito barulhenta."
+   },
    "audio": true
   },
   {
-   "texto": "I was tired, so I went to bed early.",
+   "texto": {
+    "en": "I was tired, so I went to bed early.",
+    "de": "Ich war müde, deshalb ging ich früh ins Bett.",
+    "es": "Estaba cansado, así que me fui a dormir temprano.",
+    "fr": "J'étais fatigué, alors je me suis couché tôt.",
+    "it": "Ero stanco, quindi sono andato a letto presto.",
+    "pt": "Eu estava cansado, então fui dormir cedo."
+   },
    "audio": true
   },
   {
-   "texto": "I stayed home because it was raining."
+   "texto": {
+    "en": "I stayed home because it was raining.",
+    "de": "Ich blieb zu Hause, weil es regnete.",
+    "es": "Me quedé en casa porque estaba lloviendo.",
+    "fr": "Je suis resté chez moi parce qu'il pleuvait.",
+    "it": "Sono rimasto a casa perché pioveva.",
+    "pt": "Fiquei em casa porque estava chovendo."
+   }
   }
  ],
  "notas": [
-  "So gives the result, because gives the reason — these are opposite and often confused.",
-  "Also can start a sentence, but it's a bit more formal than and.",
-  "Using too many connectors in a row makes a sentence hard to follow."
+  {
+   "en": "So gives the result, because gives the reason — these are opposite and often confused.",
+   "de": "So gibt das Ergebnis an, because den Grund – sie drücken also Gegensätzliches aus und werden oft verwechselt.",
+   "es": "So introduce el resultado y because la razón; cumplen funciones opuestas y suelen confundirse.",
+   "fr": "So indique le résultat, because la raison : ils ont donc des fonctions opposées et sont souvent confondus.",
+   "it": "So indica il risultato, because la causa: hanno quindi funzioni opposte e vengono spesso confusi.",
+   "pt": "So indica o resultado, because indica a razão — eles têm funções opostas e são frequentemente confundidos."
+  },
+  {
+   "en": "Also can start a sentence, but it's a bit more formal than and.",
+   "de": "Also kann einen Satz einleiten, ist aber etwas formeller als and.",
+   "es": "Also puede comenzar una oración, pero es un poco más formal que and.",
+   "fr": "Also peut commencer une phrase, mais il est un peu plus formel que and.",
+   "it": "Also può iniziare una frase, ma è un po' più formale di and.",
+   "pt": "Also pode iniciar uma frase, mas é um pouco mais formal que and."
+  },
+  {
+   "en": "Using too many connectors in a row makes a sentence hard to follow.",
+   "de": "Zu viele Konnektoren hintereinander machen einen Satz schwer verständlich.",
+   "es": "Usar demasiados conectores seguidos hace que una oración sea difícil de seguir.",
+   "fr": "Trop de connecteurs à la suite rendent une phrase difficile à suivre.",
+   "it": "Troppi connettori di seguito rendono una frase difficile da seguire.",
+   "pt": "Muitos conectores em sequência tornam a frase difícil de acompanhar."
+  }
  ],
  "contraste": {
   "es": "Y, pero, porque and así que correspond directly to and, but, because and so, so the basic connectors transfer directly.",
@@ -58,14 +191,42 @@
   "pt": "E, mas, porque and então correspond directly to and, but, because and so, so the basic connectors transfer directly."
  },
  "errores": [
-  "Confusing so and because.",
-  "Using and repeatedly instead of a more precise connector.",
-  "Stacking too many connectors in one sentence."
+  {
+   "en": "Confusing so and because.",
+   "de": "So und because verwechseln.",
+   "es": "Confundir so y because.",
+   "fr": "Confondre so et because.",
+   "it": "Confondere so e because.",
+   "pt": "Confundir so e because."
+  },
+  {
+   "en": "Using and repeatedly instead of a more precise connector.",
+   "de": "And wiederholt verwenden statt eines präziseren Konnektors.",
+   "es": "Usar and repetidamente en lugar de un conector más preciso.",
+   "fr": "Répéter and au lieu d'utiliser un connecteur plus précis.",
+   "it": "Usare and ripetutamente invece di un connettore più preciso.",
+   "pt": "Usar and repetidamente em vez de um conector mais preciso."
+  },
+  {
+   "en": "Stacking too many connectors in one sentence.",
+   "de": "Zu viele Konnektoren in einem Satz anhäufen.",
+   "es": "Acumular demasiados conectores en una sola oración.",
+   "fr": "Accumuler trop de connecteurs dans une seule phrase.",
+   "it": "Accumulare troppi connettori in una sola frase.",
+   "pt": "Acumular conectores demais em uma única frase."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…and…",
-   "funcion": "adding",
+   "funcion": {
+    "en": "adding",
+    "de": "Ergänzung",
+    "es": "adición",
+    "fr": "ajout",
+    "it": "aggiunta",
+    "pt": "adição"
+   },
    "traducciones": {
     "es": "…y…",
     "de": "…und…",
@@ -76,7 +237,14 @@
   },
   {
    "expresion": "…but…",
-   "funcion": "contrast",
+   "funcion": {
+    "en": "contrast",
+    "de": "Gegensatz",
+    "es": "contraste",
+    "fr": "contraste",
+    "it": "contrasto",
+    "pt": "contraste"
+   },
    "traducciones": {
     "es": "…pero…",
     "de": "…aber…",
@@ -87,7 +255,14 @@
   },
   {
    "expresion": "…because…",
-   "funcion": "reason",
+   "funcion": {
+    "en": "reason",
+    "de": "Grund",
+    "es": "razón",
+    "fr": "raison",
+    "it": "motivazione",
+    "pt": "razão"
+   },
    "traducciones": {
     "es": "…porque…",
     "de": "…weil…",
@@ -98,7 +273,14 @@
   },
   {
    "expresion": "…so…",
-   "funcion": "result",
+   "funcion": {
+    "en": "result",
+    "de": "Ergebnis",
+    "es": "resultado",
+    "fr": "résultat",
+    "it": "risultato",
+    "pt": "resultado"
+   },
    "traducciones": {
     "es": "…así que…",
     "de": "…also…",
@@ -109,7 +291,14 @@
   },
   {
    "expresion": "Also,…",
-   "funcion": "adding, sentence start",
+   "funcion": {
+    "en": "adding, sentence start",
+    "de": "Ergänzung, am Satzanfang",
+    "es": "adición, al inicio de la oración",
+    "fr": "ajout, en début de phrase",
+    "it": "aggiunta, a inizio frase",
+    "pt": "adição, no início da frase"
+   },
    "traducciones": {
     "es": "Además,…",
     "de": "Außerdem…",
@@ -120,7 +309,14 @@
   },
   {
    "expresion": "That's why…",
-   "funcion": "result, alternative",
+   "funcion": {
+    "en": "result, alternative",
+    "de": "Ergebnis, Alternative",
+    "es": "resultado, alternativa",
+    "fr": "résultat, alternative",
+    "it": "risultato, alternativa",
+    "pt": "resultado, alternativa"
+   },
    "traducciones": {
     "es": "Por eso…",
     "de": "Deshalb…",
@@ -131,13 +327,55 @@
   }
  ],
  "autochequeo": [
-  "Have I used so for result and because for reason correctly?",
-  "Have I used at least three different connectors?",
-  "Is any sentence overloaded with too many connectors?",
-  "Does the paragraph flow naturally?",
-  "Does the paragraph flow naturally?"
+  {
+   "en": "Have I used so for result and because for reason correctly?",
+   "de": "Habe ich so korrekt für das Ergebnis und because für den Grund verwendet?",
+   "es": "¿He usado correctamente so para el resultado y because para la razón?",
+   "fr": "Ai-je correctement utilisé so pour le résultat et because pour la raison ?",
+   "it": "Ho usato correttamente so per il risultato e because per la causa?",
+   "pt": "Usei so corretamente para o resultado e because para a razão?"
+  },
+  {
+   "en": "Have I used at least three different connectors?",
+   "de": "Habe ich mindestens drei verschiedene Konnektoren benutzt?",
+   "es": "¿Usé al menos tres conectores diferentes?",
+   "fr": "Ai-je utilisé au moins trois connecteurs différents ?",
+   "it": "Ho usato almeno tre connettivi diversi?",
+   "pt": "Usei pelo menos três conectores diferentes?"
+  },
+  {
+   "en": "Is any sentence overloaded with too many connectors?",
+   "de": "Ist ein Satz mit zu vielen Konnektoren überladen?",
+   "es": "¿Hay alguna oración sobrecargada de conectores?",
+   "fr": "Une phrase est-elle surchargée de connecteurs ?",
+   "it": "C'è qualche frase sovraccarica di connettori?",
+   "pt": "Alguma frase está sobrecarregada de conectores?"
+  },
+  {
+   "en": "Does the paragraph flow naturally?",
+   "de": "Fließt der Absatz natürlich?",
+   "es": "¿El párrafo fluye de forma natural?",
+   "fr": "Le paragraphe s'enchaîne-t-il naturellement ?",
+   "it": "Il paragrafo scorre in modo naturale?",
+   "pt": "O parágrafo flui naturalmente?"
+  },
+  {
+   "en": "Does the paragraph flow naturally?",
+   "de": "Fließt der Absatz natürlich?",
+   "es": "¿El párrafo fluye de forma natural?",
+   "fr": "Le paragraphe s'enchaîne-t-il naturellement ?",
+   "it": "Il paragrafo scorre in modo naturale?",
+   "pt": "O parágrafo flui naturalmente?"
+  }
  ],
- "promptCorreccion": "Focus only on basic discourse markers. Check the difference between so and because, and flag any sentence overloaded with too many connectors. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on basic discourse markers. Check the difference between so and because, and flag any sentence overloaded with too many connectors. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf grundlegende Diskursmarker. Prüfe den Unterschied zwischen so und because und markiere jeden Satz, der mit zu vielen Konnektoren überladen ist. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en los marcadores discursivos básicos. Comprueba la diferencia entre so y because y señala cualquier oración sobrecargada de conectores. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur les marqueurs discursifs de base. Vérifie la différence entre so et because et signale toute phrase surchargée de connecteurs. Ne réécris pas le texte.",
+  "it": "Concentrati solo sui marcatori discorsivi di base. Controlla la differenza tra so e because e segnala qualsiasi frase sovraccarica di connettori. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas nos marcadores discursivos básicos. Verifique a diferença entre so e because e sinalize qualquer frase sobrecarregada de conectores. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*entonces* rendered as *then* for a consequence: *I was tired, then I left* instead of *so I left*."

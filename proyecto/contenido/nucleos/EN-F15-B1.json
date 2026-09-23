@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Managing a Conversation: Turn-Taking, Interrupting, Repair",
+ "titulo": {
+  "en": "Managing a Conversation: Turn-Taking, Interrupting, Repair",
+  "de": "Ein Gespräch steuern: Sprecherwechsel, Unterbrechen und Nachfragen",
+  "es": "Gestionar una conversación: turnos, interrupciones y aclaraciones",
+  "fr": "Gérer une conversation : tours de parole, interruptions et reformulation",
+  "it": "Gestire una conversazione: turni di parola, interruzioni e chiarimenti",
+  "pt": "Gerenciar uma conversa: turnos de fala, interrupções e esclarecimentos"
+ },
  "categoria": "fluency",
  "ancla": "EGP B1",
- "descripcion": "At B1 you learn the simplest tools to take part in a conversation: asking to speak, buying time when you're thinking, and asking someone to repeat. These basic moves are enough to stay an active participant, not just a listener.",
+ "descripcion": {
+  "en": "At B1 you learn the simplest tools to take part in a conversation: asking to speak, buying time when you're thinking, and asking someone to repeat. These basic moves are enough to stay an active participant, not just a listener.",
+  "de": "Auf B1-Niveau lernst du die einfachsten Mittel, um dich an einem Gespräch zu beteiligen: um das Wort bitten, beim Nachdenken Zeit gewinnen und um Wiederholung bitten. Diese grundlegenden Strategien reichen aus, um aktiv am Gespräch teilzunehmen und nicht nur zuzuhören.",
+  "es": "En B1 aprendes las herramientas más sencillas para participar en una conversación: pedir la palabra, ganar tiempo mientras piensas y pedir que repitan algo. Estos recursos básicos bastan para participar activamente y no limitarse a escuchar.",
+  "fr": "Au niveau B1, tu apprends les moyens les plus simples de participer à une conversation : demander la parole, gagner du temps pour réfléchir et demander à quelqu'un de répéter. Ces outils de base suffisent pour participer activement au lieu de rester simple auditeur.",
+  "it": "Al livello B1 impari gli strumenti più semplici per partecipare a una conversazione: chiedere la parola, prendere tempo per pensare e chiedere di ripetere. Questi strumenti di base bastano per partecipare attivamente e non limitarsi ad ascoltare.",
+  "pt": "No nível B1, você aprende as formas mais simples de participar de uma conversa: pedir a palavra, ganhar tempo enquanto pensa e pedir que alguém repita. Esses recursos básicos bastam para participar ativamente, e não apenas ouvir."
+ },
  "cuadroReferencia": {
-  "titulo": "Three simple tools",
+  "titulo": {
+   "en": "Three simple tools",
+   "de": "Drei einfache Werkzeuge",
+   "es": "Tres herramientas sencillas",
+   "fr": "Trois outils simples",
+   "it": "Tre strumenti semplici",
+   "pt": "Três ferramentas simples"
+  },
   "columnas": [
-   "Function",
-   "Phrase"
+   {
+    "en": "Function",
+    "de": "Funktion",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "en": "Phrase",
+    "de": "Formel",
+    "es": "Fórmula",
+    "fr": "Formule",
+    "it": "Formula",
+    "pt": "Fórmula"
+   }
   ],
   "filas": [
    [
-    "Taking a turn",
-    "Can I say something?"
+    {
+     "en": "Taking a turn",
+     "de": "das Wort ergreifen",
+     "es": "tomar la palabra",
+     "fr": "prendre la parole",
+     "it": "prendere la parola",
+     "pt": "tomar a palavra"
+    },
+    {
+     "en": "Can I say something?",
+     "de": "Kann ich etwas sagen?",
+     "es": "¿Puedo decir algo?",
+     "fr": "Je peux dire quelque chose ?",
+     "it": "Posso dire una cosa?",
+     "pt": "Posso dizer uma coisa?"
+    }
    ],
    [
-    "Buying time",
-    "Let me think for a second."
+    {
+     "en": "Buying time",
+     "de": "Zeit zum Nachdenken gewinnen",
+     "es": "ganar tiempo",
+     "fr": "gagner du temps",
+     "it": "prendere tempo",
+     "pt": "ganhar tempo"
+    },
+    {
+     "en": "Let me think for a second.",
+     "de": "Lass mich kurz überlegen.",
+     "es": "Déjame pensar un segundo.",
+     "fr": "Laisse-moi réfléchir une seconde.",
+     "it": "Fammi pensare un attimo.",
+     "pt": "Deixa eu pensar um instante."
+    }
    ],
    [
-    "Asking for repetition",
-    "Sorry, could you repeat that?"
+    {
+     "en": "Asking for repetition",
+     "de": "um Wiederholung bitten",
+     "es": "pedir que repitan",
+     "fr": "demander de répéter",
+     "it": "chiedere di ripetere",
+     "pt": "pedir para repetir"
+    },
+    {
+     "en": "Sorry, could you repeat that?",
+     "de": "Entschuldigung, könntest du das wiederholen?",
+     "es": "Perdón, ¿podrías repetirlo?",
+     "fr": "Pardon, tu pourrais répéter ?",
+     "it": "Scusa, potresti ripetere?",
+     "pt": "Desculpe, poderia repetir?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Can I say something quickly?",
+   "texto": {
+    "en": "Can I say something quickly?",
+    "de": "Kann ich kurz etwas sagen?",
+    "es": "¿Puedo decir algo rápidamente?",
+    "fr": "Je peux dire quelque chose rapidement ?",
+    "it": "Posso dire una cosa velocemente?",
+    "pt": "Posso dizer uma coisa rapidinho?"
+   },
    "audio": true
   },
   {
-   "texto": "Let me think for a second.",
+   "texto": {
+    "en": "Let me think for a second.",
+    "de": "Lass mich kurz überlegen.",
+    "es": "Déjame pensar un segundo.",
+    "fr": "Laisse-moi réfléchir une seconde.",
+    "it": "Fammi pensare un attimo.",
+    "pt": "Deixa eu pensar um instante."
+   },
    "audio": true
   },
   {
-   "texto": "Sorry, could you repeat that, please?"
+   "texto": {
+    "en": "Sorry, could you repeat that, please?",
+    "de": "Entschuldigung, könntest du das bitte wiederholen?",
+    "es": "Perdón, ¿podrías repetirlo, por favor?",
+    "fr": "Pardon, tu pourrais répéter, s'il te plaît ?",
+    "it": "Scusa, potresti ripeterlo, per favore?",
+    "pt": "Desculpe, poderia repetir, por favor?"
+   }
   }
  ],
  "notas": [
-  "Can I say something? is a polite way to enter a conversation.",
-  "Let me think for a second buys time without going silent.",
-  "Asking for repetition is completely normal and not a sign of weakness."
+  {
+   "en": "Can I say something? is a polite way to enter a conversation.",
+   "de": "Can I say something? ist eine höfliche Art, sich in ein Gespräch einzuschalten.",
+   "es": "Can I say something? es una forma cortés de intervenir en una conversación.",
+   "fr": "Can I say something? est une manière polie de prendre la parole dans une conversation.",
+   "it": "Can I say something? è un modo cortese per inserirsi in una conversazione.",
+   "pt": "Can I say something? é uma forma educada de entrar em uma conversa."
+  },
+  {
+   "en": "Let me think for a second buys time without going silent.",
+   "de": "Let me think for a second verschafft dir Zeit zum Nachdenken, ohne dass du schweigst.",
+   "es": "Let me think for a second te permite ganar tiempo para pensar sin quedarte en silencio.",
+   "fr": "Let me think for a second permet de gagner du temps pour réfléchir sans rester silencieux.",
+   "it": "Let me think for a second permette di prendere tempo per pensare senza restare in silenzio.",
+   "pt": "Let me think for a second permite ganhar tempo para pensar sem ficar em silêncio."
+  },
+  {
+   "en": "Asking for repetition is completely normal and not a sign of weakness.",
+   "de": "Um Wiederholung zu bitten ist völlig normal und kein Zeichen von Schwäche.",
+   "es": "Pedir que repitan algo es completamente normal y no es señal de debilidad.",
+   "fr": "Demander de répéter est tout à fait normal et n'est pas un signe de faiblesse.",
+   "it": "Chiedere di ripetere è del tutto normale e non è un segno di debolezza.",
+   "pt": "Pedir para repetir é totalmente normal e não é sinal de fraqueza."
+  }
  ],
  "contraste": {
   "es": "Spanish enters a conversation with short signals (perdón, oye), while English usually adds a phrase such as Can I say something?. Oye in particular sounds abrupt if translated as Hey.",
@@ -54,14 +173,42 @@
   "pt": "Desculpa, posso dizer uma coisa? corresponds exactly to Sorry, can I say something?, so the formula transfers directly."
  },
  "errores": [
-  "Never asking for repetition and just pretending to understand.",
-  "Going silent instead of buying time with a phrase.",
-  "Interrupting without any polite phrase first."
+  {
+   "en": "Never asking for repetition and just pretending to understand.",
+   "de": "Nie um Wiederholung bitten und einfach so tun, als hätte man verstanden.",
+   "es": "No pedir nunca que repitan y fingir que se ha entendido.",
+   "fr": "Ne jamais demander de répéter et faire semblant d'avoir compris.",
+   "it": "Non chiedere mai di ripetere e fingere di aver capito.",
+   "pt": "Nunca pedir para repetir e simplesmente fingir que entendeu."
+  },
+  {
+   "en": "Going silent instead of buying time with a phrase.",
+   "de": "Schweigen, statt mit einer Formulierung Zeit zu gewinnen.",
+   "es": "Quedarse en silencio en vez de usar una expresión para ganar tiempo.",
+   "fr": "Rester silencieux au lieu d'utiliser une formule pour gagner du temps.",
+   "it": "Restare in silenzio invece di usare un'espressione per prendere tempo.",
+   "pt": "Ficar em silêncio em vez de usar uma expressão para ganhar tempo."
+  },
+  {
+   "en": "Interrupting without any polite phrase first.",
+   "de": "Unterbrechen, ohne vorher eine höfliche Formulierung zu verwenden.",
+   "es": "Interrumpir sin usar antes ninguna expresión cortés.",
+   "fr": "Interrompre sans utiliser d'abord une formule polie.",
+   "it": "Interrompere senza usare prima una formula cortese.",
+   "pt": "Interromper sem usar antes uma expressão educada."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Can I say something?",
-   "funcion": "taking a turn",
+   "funcion": {
+    "en": "taking a turn",
+    "de": "das Wort ergreifen",
+    "es": "tomar la palabra",
+    "fr": "prendre la parole",
+    "it": "prendere la parola",
+    "pt": "tomar a palavra"
+   },
    "traducciones": {
     "es": "¿Puedo decir algo?",
     "de": "Kann ich etwas sagen?",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Let me think for a second.",
-   "funcion": "buying time",
+   "funcion": {
+    "en": "buying time",
+    "de": "Zeit gewinnen",
+    "es": "ganar tiempo",
+    "fr": "gagner du temps",
+    "it": "prendere tempo",
+    "pt": "ganhar tempo"
+   },
    "traducciones": {
     "es": "Dejame pensar un segundo.",
     "de": "Lass mich kurz überlegen.",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Sorry, could you repeat that?",
-   "funcion": "asking for repetition",
+   "funcion": {
+    "en": "asking for repetition",
+    "de": "um Wiederholung bitten",
+    "es": "pedir que repitan",
+    "fr": "demander de répéter",
+    "it": "chiedere di ripetere",
+    "pt": "pedir para repetir"
+   },
    "traducciones": {
     "es": "¿Podés repetir eso?",
     "de": "Entschuldigung, könntest du das wiederholen?",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Sorry to interrupt, but…",
-   "funcion": "polite interruption",
+   "funcion": {
+    "en": "polite interruption",
+    "de": "höflich unterbrechen",
+    "es": "interrupción cortés",
+    "fr": "interruption polie",
+    "it": "interruzione cortese",
+    "pt": "interrupção educada"
+   },
    "traducciones": {
     "es": "Perdón que interrumpa, pero…",
     "de": "Entschuldige die Unterbrechung, aber…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "What do you mean?",
-   "funcion": "asking for clarification",
+   "funcion": {
+    "en": "asking for clarification",
+    "de": "um Klärung bitten",
+    "es": "pedir aclaraciones",
+    "fr": "demander des précisions",
+    "it": "chiedere chiarimenti",
+    "pt": "pedir esclarecimentos"
+   },
    "traducciones": {
     "es": "¿A qué te referís?",
     "de": "Was meinst du?",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Sorry, what?",
-   "funcion": "asking for repetition, informal",
+   "funcion": {
+    "en": "asking for repetition, informal",
+    "de": "informell um Wiederholung bitten",
+    "es": "pedir que repitan, informal",
+    "fr": "demander de répéter, informel",
+    "it": "chiedere di ripetere, informale",
+    "pt": "pedir para repetir, informal"
+   },
    "traducciones": {
     "es": "Perdón, ¿qué?",
     "de": "Wie bitte?",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Have I used a phrase to take a turn?",
-  "Have I bought time instead of going silent?",
-  "Have I asked for repetition at least once?",
-  "Does the phrase sound polite and natural?",
-  "Does the phrase sound polite and natural?"
+  {
+   "en": "Have I used a phrase to take a turn?",
+   "de": "Habe ich eine Formulierung verwendet, um das Wort zu ergreifen?",
+   "es": "¿He usado una expresión para tomar la palabra?",
+   "fr": "Ai-je utilisé une formule pour prendre la parole ?",
+   "it": "Ho usato un'espressione per prendere la parola?",
+   "pt": "Usei uma expressão para tomar a palavra?"
+  },
+  {
+   "en": "Have I bought time instead of going silent?",
+   "de": "Habe ich Zeit gewonnen, statt einfach zu schweigen?",
+   "es": "¿He ganado tiempo en vez de quedarme en silencio?",
+   "fr": "Ai-je gagné du temps au lieu de rester silencieux ?",
+   "it": "Ho preso tempo invece di restare in silenzio?",
+   "pt": "Ganhei tempo em vez de ficar em silêncio?"
+  },
+  {
+   "en": "Have I asked for repetition at least once?",
+   "de": "Habe ich mindestens einmal um Wiederholung gebeten?",
+   "es": "¿He pedido que repitan al menos una vez?",
+   "fr": "Ai-je demandé de répéter au moins une fois ?",
+   "it": "Ho chiesto di ripetere almeno una volta?",
+   "pt": "Pedi para repetir pelo menos uma vez?"
+  },
+  {
+   "en": "Does the phrase sound polite and natural?",
+   "de": "Klingt die Wendung höflich und natürlich?",
+   "es": "¿La expresión suena cortés y natural?",
+   "fr": "La formulation semble-t-elle polie et naturelle ?",
+   "it": "L’espressione suona educata e naturale?",
+   "pt": "A expressão soa educada e natural?"
+  },
+  {
+   "en": "Does the phrase sound polite and natural?",
+   "de": "Klingt die Wendung höflich und natürlich?",
+   "es": "¿La expresión suena cortés y natural?",
+   "fr": "La formulation semble-t-elle polie et naturelle ?",
+   "it": "L’espressione suona educata e naturale?",
+   "pt": "A expressão soa educada e natural?"
+  }
  ],
- "promptCorreccion": "Focus only on turn-taking, buying time and asking for repetition. Check whether these tools are used politely and naturally within the conversation. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on turn-taking, buying time and asking for repetition. Check whether these tools are used politely and naturally within the conversation. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf den Sprecherwechsel, das Gewinnen von Zeit und das Bitten um Wiederholung. Prüfe, ob diese Mittel im Gespräch höflich und natürlich verwendet werden. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en los turnos de palabra, en ganar tiempo y en pedir que repitan. Comprueba si estos recursos se usan de forma cortés y natural dentro de la conversación. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur les tours de parole, le fait de gagner du temps et les demandes de répétition. Vérifie si ces outils sont utilisés de façon polie et naturelle dans la conversation. Ne réécris pas le texte.",
+  "it": "Concentrati solo sui turni di parola, sul prendere tempo e sul chiedere di ripetere. Controlla se questi strumenti sono usati in modo cortese e naturale nella conversazione. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas nos turnos de fala, em ganhar tempo e em pedir para repetir. Verifique se esses recursos são usados de forma educada e natural na conversa. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*¿Cómo?* rendered as *How?* instead of *Sorry?* or *Pardon?*"

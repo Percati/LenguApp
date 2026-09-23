@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Relative Clauses: Defining and Non-defining",
+ "titulo": {
+  "en": "Relative Clauses: Defining and Non-defining",
+  "de": "Relativsätze: bestimmend und nicht bestimmend",
+  "es": "Oraciones de relativo: especificativas y explicativas",
+  "fr": "Propositions relatives : déterminatives et explicatives",
+  "it": "Proposizioni relative: restrittive e non restrittive",
+  "pt": "Orações relativas: restritivas e explicativas"
+ },
  "categoria": "grammar",
  "ancla": "EGP A2",
- "descripcion": "At B1 you build a simple defining relative clause with who, which and that to identify a person or thing being talked about. The non-defining clause with commas, adding extra information, comes later.",
+ "descripcion": {
+  "en": "At B1 you build a simple defining relative clause with who, which and that to identify a person or thing being talked about. The non-defining clause with commas, adding extra information, comes later.",
+  "de": "Auf B1-Niveau bildest du einen einfachen bestimmenden Relativsatz mit who, which und that, um eine Person oder Sache genauer zu identifizieren. Der nicht bestimmende Relativsatz mit Kommas, der Zusatzinformationen liefert, kommt später.",
+  "es": "En B1 construyes una oración de relativo especificativa sencilla con who, which y that para identificar a la persona o cosa de la que se habla. La relativa explicativa con comas, que añade información extra, se estudia más adelante.",
+  "fr": "Au niveau B1, tu construis une proposition relative déterminative simple avec who, which et that pour identifier une personne ou une chose. La relative non déterminative, avec des virgules et des informations supplémentaires, vient plus tard.",
+  "it": "Al livello B1 costruisci una semplice proposizione relativa restrittiva con who, which e that per identificare la persona o la cosa di cui si parla. La relativa non restrittiva, con le virgole e informazioni aggiuntive, verrà più avanti.",
+  "pt": "No nível B1, você forma uma oração relativa restritiva simples com who, which e that para identificar a pessoa ou coisa de que se está falando. A oração relativa não restritiva, com vírgulas e informações adicionais, vem mais adiante."
+ },
  "cuadroReferencia": {
-  "titulo": "Simple relative clauses",
+  "titulo": {
+   "en": "Simple relative clauses",
+   "de": "Einfache Relativsätze",
+   "es": "Oraciones de relativo sencillas",
+   "fr": "Propositions relatives simples",
+   "it": "Proposizioni relative semplici",
+   "pt": "Orações relativas simples"
+  },
   "columnas": [
-   "Pronoun",
-   "Used for",
-   "Example"
+   {
+    "en": "Pronoun",
+    "de": "Pronomen",
+    "es": "Pronombre",
+    "fr": "Pronom",
+    "it": "Pronome",
+    "pt": "Pronome"
+   },
+   {
+    "en": "Used for",
+    "de": "Verwendet für",
+    "es": "Se usa para",
+    "fr": "Utilisé pour",
+    "it": "Usato per",
+    "pt": "Usado para"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "who",
-    "people",
-    "The man who called is my neighbour."
+    {
+     "en": "who",
+     "de": "who",
+     "es": "who",
+     "fr": "who",
+     "it": "who",
+     "pt": "who"
+    },
+    {
+     "en": "people",
+     "de": "Personen",
+     "es": "personas",
+     "fr": "personnes",
+     "it": "persone",
+     "pt": "pessoas"
+    },
+    {
+     "en": "The man who called is my neighbour.",
+     "de": "Der Mann, der angerufen hat, ist mein Nachbar.",
+     "es": "El hombre que llamó es mi vecino.",
+     "fr": "L’homme qui a appelé est mon voisin.",
+     "it": "L’uomo che ha chiamato è il mio vicino.",
+     "pt": "O homem que ligou é meu vizinho."
+    }
    ],
    [
-    "which/that",
-    "things",
-    "The book that I read was great."
+    {
+     "en": "which/that",
+     "de": "which/that",
+     "es": "which/that",
+     "fr": "which/that",
+     "it": "which/that",
+     "pt": "which/that"
+    },
+    {
+     "en": "things",
+     "de": "Dinge",
+     "es": "cosas",
+     "fr": "choses",
+     "it": "cose",
+     "pt": "coisas"
+    },
+    {
+     "en": "The book that I read was great.",
+     "de": "Das Buch, das ich gelesen habe, war großartig.",
+     "es": "El libro que leí era excelente.",
+     "fr": "Le livre que j'ai lu était excellent.",
+     "it": "Il libro che ho letto era fantastico.",
+     "pt": "O livro que li era ótimo."
+    }
    ],
    [
-    "Dropped pronoun",
-    "(object, optional)",
-    "The book (that) I read was great."
+    {
+     "en": "Dropped pronoun",
+     "de": "weggelassenes Relativpronomen",
+     "es": "pronombre relativo omitido",
+     "fr": "pronom relatif omis",
+     "it": "pronome relativo omesso",
+     "pt": "pronome relativo omitido"
+    },
+    {
+     "en": "(object, optional)",
+     "de": "(Objekt, optional)",
+     "es": "(objeto, opcional)",
+     "fr": "(complément d'objet, facultatif)",
+     "it": "(oggetto, facoltativo)",
+     "pt": "(objeto, opcional)"
+    },
+    {
+     "en": "The book (that) I read was great.",
+     "de": "Das Buch, das ich gelesen habe, war großartig.",
+     "es": "El libro (que) leí era excelente.",
+     "fr": "Le livre (que) j'ai lu était excellent.",
+     "it": "Il libro (che) ho letto era fantastico.",
+     "pt": "O livro (que) li era ótimo."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "The man who called earlier is my neighbour.",
+   "texto": {
+    "en": "The man who called earlier is my neighbour.",
+    "de": "Der Mann, der vorhin angerufen hat, ist mein Nachbar.",
+    "es": "El hombre que llamó antes es mi vecino.",
+    "fr": "L’homme qui a appelé tout à l’heure est mon voisin.",
+    "it": "L’uomo che ha chiamato prima è il mio vicino.",
+    "pt": "O homem que ligou mais cedo é meu vizinho."
+   },
    "audio": true
   },
   {
-   "texto": "The book that I read last week was really great.",
+   "texto": {
+    "en": "The book that I read last week was really great.",
+    "de": "Das Buch, das ich letzte Woche gelesen habe, war wirklich großartig.",
+    "es": "El libro que leí la semana pasada era realmente excelente.",
+    "fr": "Le livre que j'ai lu la semaine dernière était vraiment excellent.",
+    "it": "Il libro che ho letto la settimana scorsa era davvero fantastico.",
+    "pt": "O livro que li na semana passada era muito bom."
+   },
    "audio": true
   },
   {
-   "texto": "This is the restaurant which everyone recommends."
+   "texto": {
+    "en": "This is the restaurant which everyone recommends.",
+    "de": "Das ist das Restaurant, das alle empfehlen.",
+    "es": "Este es el restaurante que todos recomiendan.",
+    "fr": "C'est le restaurant que tout le monde recommande.",
+    "it": "Questo è il ristorante che tutti consigliano.",
+    "pt": "Este é o restaurante que todo mundo recomenda."
+   }
   }
  ],
  "notas": [
-  "Who is used for people, which for things; that can replace both in a defining clause.",
-  "The relative pronoun can sometimes be dropped when it's the object: the book I read.",
-  "There's no comma before a defining relative clause."
+  {
+   "en": "Who is used for people, which for things; that can replace both in a defining clause.",
+   "de": "Who wird für Personen verwendet, which für Dinge; that kann in einem bestimmenden Relativsatz beide ersetzen.",
+   "es": "Who se usa para personas y which para cosas; that puede sustituir a ambos en una relativa especificativa.",
+   "fr": "Who s'utilise pour les personnes, which pour les choses ; that peut remplacer les deux dans une relative déterminative.",
+   "it": "Who si usa per le persone, which per le cose; that può sostituire entrambi in una relativa restrittiva.",
+   "pt": "Who é usado para pessoas e which para coisas; that pode substituir ambos em uma oração relativa restritiva."
+  },
+  {
+   "en": "The relative pronoun can sometimes be dropped when it's the object: the book I read.",
+   "de": "Das Relativpronomen kann manchmal weggelassen werden, wenn es das Objekt ist: the book I read.",
+   "es": "El pronombre relativo puede omitirse a veces cuando funciona como objeto: the book I read.",
+   "fr": "Le pronom relatif peut parfois être omis lorsqu'il est complément d'objet : the book I read.",
+   "it": "Il pronome relativo può talvolta essere omesso quando è l'oggetto: the book I read.",
+   "pt": "O pronome relativo às vezes pode ser omitido quando é objeto: the book I read."
+  },
+  {
+   "en": "There's no comma before a defining relative clause.",
+   "de": "Vor einem bestimmenden Relativsatz steht kein Komma.",
+   "es": "No se usa coma antes de una relativa especificativa.",
+   "fr": "Il n'y a pas de virgule avant une relative déterminative.",
+   "it": "Non si mette la virgola prima di una relativa restrittiva.",
+   "pt": "Não se usa vírgula antes de uma oração relativa restritiva."
+  }
  ],
  "contraste": {
   "es": "Spanish uses que for almost everything, without distinguishing people from things. Spanish speakers tend to use which even for people, by analogy with que.",
@@ -58,14 +205,42 @@
   "pt": "Portuguese que refers to people and things alike, which leads to which for people. Tudo o que often becomes all what instead of everything that or all that."
  },
  "errores": [
-  "Using which for a person instead of who.",
-  "Adding a comma before a defining relative clause.",
-  "Using that after a preposition, which isn't standard."
+  {
+   "en": "Using which for a person instead of who.",
+   "de": "Which für eine Person statt who verwenden.",
+   "es": "Usar which para una persona en lugar de who.",
+   "fr": "Utiliser which pour une personne au lieu de who.",
+   "it": "Usare which per una persona invece di who.",
+   "pt": "Usar which para uma pessoa em vez de who."
+  },
+  {
+   "en": "Adding a comma before a defining relative clause.",
+   "de": "Vor einem bestimmenden Relativsatz ein Komma setzen.",
+   "es": "Añadir una coma antes de una relativa especificativa.",
+   "fr": "Ajouter une virgule avant une relative déterminative.",
+   "it": "Aggiungere una virgola prima di una relativa restrittiva.",
+   "pt": "Colocar uma vírgula antes de uma oração relativa restritiva."
+  },
+  {
+   "en": "Using that after a preposition, which isn't standard.",
+   "de": "That nach einer Präposition verwenden, was nicht dem Standard entspricht.",
+   "es": "Usar that después de una preposición, lo cual no es estándar.",
+   "fr": "Utiliser that après une préposition, ce qui n'est pas standard.",
+   "it": "Usare that dopo una preposizione, cosa non standard.",
+   "pt": "Usar that depois de uma preposição, o que não é padrão."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…who…",
-   "funcion": "defining, about a person",
+   "funcion": {
+    "en": "defining, about a person",
+    "de": "bestimmend, für eine Person",
+    "es": "especificativa, sobre una persona",
+    "fr": "déterminative, à propos d'une personne",
+    "it": "restrittiva, riferita a una persona",
+    "pt": "restritiva, sobre uma pessoa"
+   },
    "traducciones": {
     "es": "…que…",
     "de": "…der/die…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "…which…",
-   "funcion": "defining, about a thing",
+   "funcion": {
+    "en": "defining, about a thing",
+    "de": "bestimmend, für eine Sache",
+    "es": "especificativa, sobre una cosa",
+    "fr": "déterminative, à propos d'une chose",
+    "it": "restrittiva, riferita a una cosa",
+    "pt": "restritiva, sobre uma coisa"
+   },
    "traducciones": {
     "es": "…que…",
     "de": "…der/die/das…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "…that…",
-   "funcion": "defining, person or thing",
+   "funcion": {
+    "en": "defining, person or thing",
+    "de": "bestimmend, Person oder Sache",
+    "es": "especificativa, persona o cosa",
+    "fr": "déterminative, personne ou chose",
+    "it": "restrittiva, persona o cosa",
+    "pt": "restritiva, pessoa ou coisa"
+   },
    "traducciones": {
     "es": "…que…",
     "de": "…dass…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "The person who…",
-   "funcion": "common opener",
+   "funcion": {
+    "en": "common opener",
+    "de": "häufiger Einstieg",
+    "es": "inicio frecuente",
+    "fr": "début fréquent",
+    "it": "apertura comune",
+    "pt": "início comum"
+   },
    "traducciones": {
     "es": "La persona que…",
     "de": "Die Person, die…",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "The thing that…",
-   "funcion": "common opener",
+   "funcion": {
+    "en": "common opener",
+    "de": "häufiger Einstieg",
+    "es": "inicio frecuente",
+    "fr": "début fréquent",
+    "it": "apertura comune",
+    "pt": "início comum"
+   },
    "traducciones": {
     "es": "Lo que…",
     "de": "Das, was…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "…whose…",
-   "funcion": "possession",
+   "funcion": {
+    "en": "possession",
+    "de": "Besitz",
+    "es": "posesión",
+    "fr": "possession",
+    "it": "possesso",
+    "pt": "posse"
+   },
    "traducciones": {
     "es": "…cuyo/a…",
     "de": "…dessen/deren…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Is who used for people and which for things?",
-  "Is there no comma before the defining clause?",
-  "Have I used at least two different relative pronouns?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?"
+  {
+   "en": "Is who used for people and which for things?",
+   "de": "Wird who für Personen und which für Dinge verwendet?",
+   "es": "¿Se usa who para personas y which para cosas?",
+   "fr": "Who est-il utilisé pour les personnes et which pour les choses ?",
+   "it": "Si usa who per le persone e which per le cose?",
+   "pt": "Who é usado para pessoas e which para coisas?"
+  },
+  {
+   "en": "Is there no comma before the defining clause?",
+   "de": "Steht vor dem bestimmenden Relativsatz kein Komma?",
+   "es": "¿Se ha evitado la coma antes de la relativa especificativa?",
+   "fr": "N'y a-t-il pas de virgule avant la relative déterminative ?",
+   "it": "Non c'è una virgola prima della relativa restrittiva?",
+   "pt": "Não há vírgula antes da oração relativa restritiva?"
+  },
+  {
+   "en": "Have I used at least two different relative pronouns?",
+   "de": "Habe ich mindestens zwei verschiedene Relativpronomen verwendet?",
+   "es": "¿He usado al menos dos pronombres relativos distintos?",
+   "fr": "Ai-je utilisé au moins deux pronoms relatifs différents ?",
+   "it": "Ho usato almeno due pronomi relativi diversi?",
+   "pt": "Usei pelo menos dois pronomes relativos diferentes?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on defining relative clauses. Check the choice between who, which and that, and check that no comma is used before a defining clause. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on defining relative clauses. Check the choice between who, which and that, and check that no comma is used before a defining clause. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf bestimmende Relativsätze. Prüfe die Wahl zwischen who, which und that und ob vor einem bestimmenden Relativsatz kein Komma verwendet wird. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en las relativas especificativas. Comprueba la elección entre who, which y that, y que no se use coma antes de una relativa especificativa. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur les relatives déterminatives. Vérifie le choix entre who, which et that, ainsi que l'absence de virgule avant une relative déterminative. Ne réécris pas le texte.",
+  "it": "Concentrati solo sulle relative restrittive. Controlla la scelta tra who, which e that e che non venga usata la virgola prima di una relativa restrittiva. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas nas orações relativas restritivas. Verifique a escolha entre who, which e that e se não há vírgula antes de uma oração relativa restritiva. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*que* rendered as *which* for people: *the man which lives here* instead of *who*."

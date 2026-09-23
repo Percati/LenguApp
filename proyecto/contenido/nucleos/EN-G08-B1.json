@@ -3,86 +3,366 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Prepositional Verbs and Dependent Prepositions",
+ "titulo": {
+  "en": "Prepositional Verbs and Dependent Prepositions",
+  "de": "Verben mit Präpositionen und feste Präpositionen",
+  "es": "Verbos con preposición y preposiciones regidas",
+  "fr": "Verbes à préposition et prépositions imposées",
+  "it": "Verbi con preposizione e preposizioni rette",
+  "pt": "Verbos com preposição e preposições regidas"
+ },
  "categoria": "grammar",
  "ancla": "EGP B1",
- "descripcion": "Some English verbs are always followed by one particular preposition, and that preposition is not chosen by logic — it is part of the verb. *Depend* is always followed by *on*, *listen* by *to*, *wait* by *for*. These cannot be worked out from Spanish, because Spanish picked a different preposition for many of the same verbs: *depender de*, not *de* → *of*. At B1 the goal is to learn the highest-frequency pairs as single units — *depend on*, *arrive at* — instead of treating the preposition as a free choice made at the moment of speaking.",
+ "descripcion": {
+  "en": "Some English verbs are always followed by one particular preposition, and that preposition is not chosen by logic — it is part of the verb. *Depend* is always followed by *on*, *listen* by *to*, *wait* by *for*. These cannot be worked out from Spanish, because Spanish picked a different preposition for many of the same verbs: *depender de*, not *de* → *of*. At B1 the goal is to learn the highest-frequency pairs as single units — *depend on*, *arrive at* — instead of treating the preposition as a free choice made at the moment of speaking.",
+  "de": "Einige englische Verben stehen immer mit einer bestimmten Präposition; diese Präposition lässt sich nicht logisch wählen – sie gehört zum Verb. *Depend* steht immer mit *on*, *listen* mit *to*, *wait* mit *for*. Man kann sie nicht aus dem Spanischen ableiten, denn dort stehen bei vielen entsprechenden Verben andere Präpositionen: *depender de* bedeutet nicht, dass im Englischen *of* verwendet wird. Auf B1-Niveau geht es darum, die häufigsten Verbindungen als feste Einheiten zu lernen – *depend on*, *arrive at* – statt die Präposition beim Sprechen frei zu wählen.",
+  "es": "Algunos verbos en inglés siempre van seguidos de una preposición concreta, y esa preposición no se elige por lógica: forma parte del verbo. *Depend* siempre va con *on*, *listen* con *to* y *wait* con *for*. No se pueden deducir del español, porque en muchos casos el español usa otra preposición: *depender de* no significa *de* → *of*. En B1, el objetivo es aprender las combinaciones más frecuentes como unidades completas —*depend on*, *arrive at*— en lugar de elegir la preposición libremente al hablar.",
+  "fr": "Certains verbes anglais sont toujours suivis d'une préposition précise, et cette préposition ne se choisit pas par logique : elle fait partie du verbe. *Depend* va toujours avec *on*, *listen* avec *to* et *wait* avec *for*. On ne peut pas les déduire de l'espagnol, car celui-ci utilise souvent une autre préposition pour les mêmes verbes : *depender de* ne donne pas *de* → *of*. Au niveau B1, l'objectif est d'apprendre les associations les plus fréquentes comme des unités — *depend on*, *arrive at* — plutôt que de choisir librement la préposition au moment de parler.",
+  "it": "Alcuni verbi inglesi sono sempre seguiti da una preposizione specifica, che non si sceglie in base alla logica: fa parte del verbo. *Depend* va sempre con *on*, *listen* con *to*, *wait* con *for*. Non si possono ricavare dallo spagnolo, perché lo spagnolo usa una preposizione diversa con molti degli stessi verbi: *depender de* non significa *de* → *of*. Al livello B1, l'obiettivo è imparare le combinazioni più frequenti come unità uniche — *depend on*, *arrive at* — invece di scegliere liberamente la preposizione mentre si parla.",
+  "pt": "Alguns verbos em inglês são sempre seguidos de uma preposição específica, e essa preposição não é escolhida pela lógica — ela faz parte do verbo. *Depend* sempre vem com *on*, *listen* com *to* e *wait* com *for*. Não dá para deduzi-las do espanhol, porque o espanhol usa preposições diferentes com muitos desses verbos: *depender de* não significa *de* → *of*. No nível B1, o objetivo é aprender as combinações mais frequentes como unidades — *depend on*, *arrive at* — em vez de escolher a preposição livremente na hora de falar."
+ },
  "cuadroReferencia": {
-  "titulo": "High-frequency verb + preposition pairs",
+  "titulo": {
+   "en": "High-frequency verb + preposition pairs",
+   "de": "Häufige Verb-Präposition-Verbindungen",
+   "es": "Combinaciones frecuentes de verbo + preposición",
+   "fr": "Combinaisons fréquentes verbe + préposition",
+   "it": "Combinazioni frequenti verbo + preposizione",
+   "pt": "Combinações frequentes de verbo + preposição"
+  },
   "columnas": [
-   "Verb",
-   "Preposition",
-   "Example"
+   {
+    "en": "Verb",
+    "de": "Verb",
+    "es": "Verbo",
+    "fr": "Verbe",
+    "it": "Verbo",
+    "pt": "Verbo"
+   },
+   {
+    "en": "Preposition",
+    "de": "Präposition",
+    "es": "Preposición",
+    "fr": "Préposition",
+    "it": "Preposizione",
+    "pt": "Preposição"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "depend",
-    "on",
-    "It depends on the weather."
+    {
+     "en": "depend",
+     "de": "depend",
+     "es": "depend",
+     "fr": "depend",
+     "it": "depend",
+     "pt": "depend"
+    },
+    {
+     "en": "on",
+     "de": "on",
+     "es": "on",
+     "fr": "on",
+     "it": "on",
+     "pt": "on"
+    },
+    {
+     "en": "It depends on the weather.",
+     "de": "Es hängt vom Wetter ab.",
+     "es": "Depende del tiempo.",
+     "fr": "Cela dépend du temps.",
+     "it": "Dipende dal tempo.",
+     "pt": "Depende do tempo."
+    }
    ],
    [
-    "listen",
-    "to",
-    "I listen to music every morning."
+    {
+     "en": "listen",
+     "de": "listen",
+     "es": "listen",
+     "fr": "listen",
+     "it": "listen",
+     "pt": "listen"
+    },
+    {
+     "en": "to",
+     "de": "to",
+     "es": "to",
+     "fr": "to",
+     "it": "to",
+     "pt": "to"
+    },
+    {
+     "en": "I listen to music every morning.",
+     "de": "Ich höre jeden Morgen Musik.",
+     "es": "Escucho música todas las mañanas.",
+     "fr": "J'écoute de la musique tous les matins.",
+     "it": "Ascolto musica ogni mattina.",
+     "pt": "Eu ouço música todas as manhãs."
+    }
    ],
    [
-    "wait",
-    "for",
-    "We waited for the bus."
+    {
+     "en": "wait",
+     "de": "wait",
+     "es": "wait",
+     "fr": "wait",
+     "it": "wait",
+     "pt": "wait"
+    },
+    {
+     "en": "for",
+     "de": "for",
+     "es": "for",
+     "fr": "for",
+     "it": "for",
+     "pt": "for"
+    },
+    {
+     "en": "We waited for the bus.",
+     "de": "Wir haben auf den Bus gewartet.",
+     "es": "Esperamos el autobús.",
+     "fr": "Nous avons attendu le bus.",
+     "it": "Abbiamo aspettato l'autobus.",
+     "pt": "Esperamos o ônibus."
+    }
    ],
    [
-    "belong",
-    "to",
-    "This bag belongs to me."
+    {
+     "en": "belong",
+     "de": "belong",
+     "es": "belong",
+     "fr": "belong",
+     "it": "belong",
+     "pt": "belong"
+    },
+    {
+     "en": "to",
+     "de": "to",
+     "es": "to",
+     "fr": "to",
+     "it": "to",
+     "pt": "to"
+    },
+    {
+     "en": "This bag belongs to me.",
+     "de": "Diese Tasche gehört mir.",
+     "es": "Esta bolsa me pertenece.",
+     "fr": "Ce sac m'appartient.",
+     "it": "Questa borsa è mia.",
+     "pt": "Esta bolsa é minha."
+    }
    ],
    [
-    "ask",
-    "for",
-    "She asked for help."
+    {
+     "en": "ask",
+     "de": "ask",
+     "es": "ask",
+     "fr": "ask",
+     "it": "ask",
+     "pt": "ask"
+    },
+    {
+     "en": "for",
+     "de": "for",
+     "es": "for",
+     "fr": "for",
+     "it": "for",
+     "pt": "for"
+    },
+    {
+     "en": "She asked for help.",
+     "de": "Sie bat um Hilfe.",
+     "es": "Pidió ayuda.",
+     "fr": "Elle a demandé de l'aide.",
+     "it": "Ha chiesto aiuto.",
+     "pt": "Ela pediu ajuda."
+    }
    ],
    [
-    "worry",
-    "about",
-    "Don't worry about it."
+    {
+     "en": "worry",
+     "de": "worry",
+     "es": "worry",
+     "fr": "worry",
+     "it": "worry",
+     "pt": "worry"
+    },
+    {
+     "en": "about",
+     "de": "about",
+     "es": "about",
+     "fr": "about",
+     "it": "about",
+     "pt": "about"
+    },
+    {
+     "en": "Don't worry about it.",
+     "de": "Mach dir darüber keine Sorgen.",
+     "es": "No te preocupes por eso.",
+     "fr": "Ne t'inquiète pas pour ça.",
+     "it": "Non preoccuparti.",
+     "pt": "Não se preocupe com isso."
+    }
    ],
    [
-    "agree",
-    "with",
-    "I agree with you."
+    {
+     "en": "agree",
+     "de": "agree",
+     "es": "agree",
+     "fr": "agree",
+     "it": "agree",
+     "pt": "agree"
+    },
+    {
+     "en": "with",
+     "de": "with",
+     "es": "with",
+     "fr": "with",
+     "it": "with",
+     "pt": "with"
+    },
+    {
+     "en": "I agree with you.",
+     "de": "Ich stimme dir zu.",
+     "es": "Estoy de acuerdo contigo.",
+     "fr": "Je suis d'accord avec toi.",
+     "it": "Sono d'accordo con te.",
+     "pt": "Concordo com você."
+    }
    ],
    [
-    "arrive",
-    "at / in",
-    "We arrived at the station. / We arrived in Berlin."
+    {
+     "en": "arrive",
+     "de": "arrive",
+     "es": "arrive",
+     "fr": "arrive",
+     "it": "arrive",
+     "pt": "arrive"
+    },
+    {
+     "en": "at / in",
+     "de": "at / in",
+     "es": "at / in",
+     "fr": "at / in",
+     "it": "at / in",
+     "pt": "at / in"
+    },
+    {
+     "en": "We arrived at the station. / We arrived in Berlin.",
+     "de": "Wir kamen am Bahnhof an. / Wir kamen in Berlin an.",
+     "es": "Llegamos a la estación. / Llegamos a Berlín.",
+     "fr": "Nous sommes arrivés à la gare. / Nous sommes arrivés à Berlin.",
+     "it": "Siamo arrivati alla stazione. / Siamo arrivati a Berlino.",
+     "pt": "Chegamos à estação. / Chegamos a Berlim."
+    }
    ]
   ],
-  "notaPie": "Some very common verbs take no preposition at all: *discuss*, *enter*, *phone*."
+  "notaPie": {
+   "en": "Some very common verbs take no preposition at all: *discuss*, *enter*, *phone*.",
+   "de": "Einige sehr häufige Verben stehen ganz ohne Präposition: *discuss*, *enter*, *phone*.",
+   "es": "Algunos verbos muy frecuentes no llevan ninguna preposición: *discuss*, *enter*, *phone*.",
+   "fr": "Certains verbes très fréquents ne prennent aucune préposition : *discuss*, *enter*, *phone*.",
+   "it": "Alcuni verbi molto comuni non richiedono alcuna preposizione: *discuss*, *enter*, *phone*.",
+   "pt": "Alguns verbos muito comuns não levam preposição: *discuss*, *enter*, *phone*."
+  }
  },
  "ejemplos": [
   {
-   "texto": "It depends on how much time we have.",
+   "texto": {
+    "en": "It depends on how much time we have.",
+    "de": "Es hängt davon ab, wie viel Zeit wir haben.",
+    "es": "Depende de cuánto tiempo tengamos.",
+    "fr": "Cela dépend du temps que nous avons.",
+    "it": "Dipende da quanto tempo abbiamo.",
+    "pt": "Depende de quanto tempo temos."
+   },
    "audio": true
   },
   {
-   "texto": "I've been waiting for you for twenty minutes.",
+   "texto": {
+    "en": "I've been waiting for you for twenty minutes.",
+    "de": "Ich warte seit zwanzig Minuten auf dich.",
+    "es": "Llevo veinte minutos esperándote.",
+    "fr": "Je t'attends depuis vingt minutes.",
+    "it": "Ti aspetto da venti minuti.",
+    "pt": "Estou esperando você há vinte minutos."
+   },
    "audio": true
   },
   {
-   "texto": "She asked for help, but nobody was listening to her.",
+   "texto": {
+    "en": "She asked for help, but nobody was listening to her.",
+    "de": "Sie bat um Hilfe, aber niemand hörte ihr zu.",
+    "es": "Pidió ayuda, pero nadie la estaba escuchando.",
+    "fr": "Elle a demandé de l'aide, mais personne ne l'écoutait.",
+    "it": "Ha chiesto aiuto, ma nessuno la stava ascoltando.",
+    "pt": "Ela pediu ajuda, mas ninguém estava ouvindo."
+   },
    "audio": true
   },
   {
-   "texto": "We arrived at the airport at six and arrived in Madrid at nine."
+   "texto": {
+    "en": "We arrived at the airport at six and arrived in Madrid at nine.",
+    "de": "Wir kamen um sechs am Flughafen an und um neun in Madrid.",
+    "es": "Llegamos al aeropuerto a las seis y a Madrid a las nueve.",
+    "fr": "Nous sommes arrivés à l'aéroport à six heures et à Madrid à neuf heures.",
+    "it": "Siamo arrivati all'aeroporto alle sei e a Madrid alle nove.",
+    "pt": "Chegamos ao aeroporto às seis e a Madri às nove."
+   }
   },
   {
-   "texto": "Don't worry about the cost — it belongs to the company."
+   "texto": {
+    "en": "Don't worry about the cost — it belongs to the company.",
+    "de": "Mach dir wegen der Kosten keine Sorgen – sie gehen auf die Firma.",
+    "es": "No te preocupes por el costo: corre por cuenta de la empresa.",
+    "fr": "Ne t'inquiète pas pour le coût : c'est à la charge de l'entreprise.",
+    "it": "Non preoccuparti del costo: è a carico dell'azienda.",
+    "pt": "Não se preocupe com o custo — ele fica por conta da empresa."
+   }
   }
  ],
  "notas": [
-  "The preposition is part of the verb, so learn them as one item: not *depend* plus a preposition, but *depend on*.",
-  "Spanish uses a different preposition for several of these verbs, so translating the preposition directly is the single biggest source of error here.",
-  "*Arrive* takes *at* for a point like a station or an airport, and *in* for a town or a country.",
-  "A few frequent verbs take no preposition in English even though Spanish adds one: *discuss the plan*, *enter the room*, *phone your sister*."
+  {
+   "en": "The preposition is part of the verb, so learn them as one item: not *depend* plus a preposition, but *depend on*.",
+   "de": "Die Präposition gehört zum Verb, deshalb solltest du beides als eine Einheit lernen: nicht *depend* plus Präposition, sondern *depend on*.",
+   "es": "La preposición forma parte del verbo, así que aprende ambos como una sola unidad: no *depend* más una preposición, sino *depend on*.",
+   "fr": "La préposition fait partie du verbe ; apprends donc l'ensemble comme une unité : pas *depend* plus une préposition, mais *depend on*.",
+   "it": "La preposizione fa parte del verbo, quindi imparali come un'unica unità: non *depend* più una preposizione, ma *depend on*.",
+   "pt": "A preposição faz parte do verbo, então aprenda os dois como uma unidade: não *depend* mais uma preposição, mas *depend on*."
+  },
+  {
+   "en": "Spanish uses a different preposition for several of these verbs, so translating the preposition directly is the single biggest source of error here.",
+   "de": "Im Spanischen stehen bei mehreren dieser Verben andere Präpositionen; die Präposition direkt zu übersetzen ist daher hier die häufigste Fehlerquelle.",
+   "es": "En español varios de estos verbos usan una preposición diferente, por lo que traducir la preposición directamente es la principal fuente de errores.",
+   "fr": "En espagnol, plusieurs de ces verbes utilisent une préposition différente ; traduire directement la préposition est donc la principale source d'erreurs ici.",
+   "it": "In spagnolo molti di questi verbi usano una preposizione diversa, quindi tradurre direttamente la preposizione è la principale fonte di errore.",
+   "pt": "Em espanhol, vários desses verbos usam uma preposição diferente; por isso, traduzir a preposição diretamente é a maior fonte de erro aqui."
+  },
+  {
+   "en": "*Arrive* takes *at* for a point like a station or an airport, and *in* for a town or a country.",
+   "de": "*Arrive* steht bei einem Punkt wie Bahnhof oder Flughafen mit *at* und bei einer Stadt oder einem Land mit *in*.",
+   "es": "*Arrive* lleva *at* para un punto como una estación o un aeropuerto, e *in* para una ciudad o un país.",
+   "fr": "*Arrive* s'emploie avec *at* pour un point comme une gare ou un aéroport, et avec *in* pour une ville ou un pays.",
+   "it": "*Arrive* prende *at* per un punto come una stazione o un aeroporto e *in* per una città o un paese.",
+   "pt": "*Arrive* usa *at* para um ponto como uma estação ou aeroporto e *in* para uma cidade ou país."
+  },
+  {
+   "en": "A few frequent verbs take no preposition in English even though Spanish adds one: *discuss the plan*, *enter the room*, *phone your sister*.",
+   "de": "Einige häufige Verben stehen im Englischen ohne Präposition, obwohl im Spanischen eine verwendet wird: *discuss the plan*, *enter the room*, *phone your sister*.",
+   "es": "Algunos verbos frecuentes no llevan preposición en inglés aunque en español sí: *discuss the plan*, *enter the room*, *phone your sister*.",
+   "fr": "Quelques verbes fréquents ne prennent pas de préposition en anglais alors que l'espagnol en ajoute une : *discuss the plan*, *enter the room*, *phone your sister*.",
+   "it": "Alcuni verbi frequenti non richiedono preposizione in inglese anche se lo spagnolo ne usa una: *discuss the plan*, *enter the room*, *phone your sister*.",
+   "pt": "Alguns verbos frequentes não levam preposição em inglês, embora o espanhol use uma: *discuss the plan*, *enter the room*, *phone your sister*."
+  }
  ],
  "contraste": {
   "es": "Spanish has a dependent preposition for most of these verbs too, so the concept itself is familiar – the problem is that the choice rarely matches. Depender de becomes depend on, esperar a becomes wait for, pensar en becomes think about. Because the pattern exists in both languages, Spanish speakers transfer it confidently and get the preposition wrong rather than omitting it.",
@@ -92,16 +372,58 @@
   "pt": "Portuguese esperar has no preposition, which leads to I'm waiting you. Other prepositions are transferred directly: pensar em becomes think in, depender de becomes depend of."
  },
  "errores": [
-  "*It depends of the weather* — the preposition is *on*, not *of*.",
-  "*Listen the music* — *listen* always needs *to* before its object.",
-  "*We arrived to Berlin* — *arrive* never takes *to*.",
-  "*Discuss about the plan* — *discuss* takes no preposition at all.",
-  "*Wait me* — *wait* needs *for* before a person or thing."
+  {
+   "en": "*It depends of the weather* — the preposition is *on*, not *of*.",
+   "de": "*It depends of the weather* – die richtige Präposition ist *on*, nicht *of*.",
+   "es": "*It depends of the weather*: la preposición correcta es *on*, no *of*.",
+   "fr": "*It depends of the weather* : la bonne préposition est *on*, pas *of*.",
+   "it": "*It depends of the weather*: la preposizione corretta è *on*, non *of*.",
+   "pt": "*It depends of the weather* — a preposição correta é *on*, não *of*."
+  },
+  {
+   "en": "*Listen the music* — *listen* always needs *to* before its object.",
+   "de": "*Listen the music* – *listen* braucht vor seinem Objekt immer *to*.",
+   "es": "*Listen the music*: *listen* siempre necesita *to* antes de su objeto.",
+   "fr": "*Listen the music* : *listen* a toujours besoin de *to* avant son complément.",
+   "it": "*Listen the music*: *listen* richiede sempre *to* prima del complemento.",
+   "pt": "*Listen the music* — *listen* sempre precisa de *to* antes do objeto."
+  },
+  {
+   "en": "*We arrived to Berlin* — *arrive* never takes *to*.",
+   "de": "*We arrived to Berlin* – *arrive* steht nie mit *to*.",
+   "es": "*We arrived to Berlin*: *arrive* nunca lleva *to*.",
+   "fr": "*We arrived to Berlin* : *arrive* ne se construit jamais avec *to*.",
+   "it": "*We arrived to Berlin*: *arrive* non prende mai *to*.",
+   "pt": "*We arrived to Berlin* — *arrive* nunca usa *to*."
+  },
+  {
+   "en": "*Discuss about the plan* — *discuss* takes no preposition at all.",
+   "de": "*Discuss about the plan* – *discuss* steht ganz ohne Präposition.",
+   "es": "*Discuss about the plan*: *discuss* no lleva ninguna preposición.",
+   "fr": "*Discuss about the plan* : *discuss* ne prend aucune préposition.",
+   "it": "*Discuss about the plan*: *discuss* non richiede alcuna preposizione.",
+   "pt": "*Discuss about the plan* — *discuss* não leva preposição."
+  },
+  {
+   "en": "*Wait me* — *wait* needs *for* before a person or thing.",
+   "de": "*Wait me* – *wait* braucht vor einer Person oder Sache *for*.",
+   "es": "*Wait me*: *wait* necesita *for* antes de una persona o cosa.",
+   "fr": "*Wait me* : *wait* a besoin de *for* devant une personne ou une chose.",
+   "it": "*Wait me*: *wait* richiede *for* davanti a una persona o cosa.",
+   "pt": "*Wait me* — *wait* precisa de *for* antes de uma pessoa ou coisa."
+  }
  ],
  "redemittel": [
   {
    "expresion": "It depends on…",
-   "funcion": "introduces a condition",
+   "funcion": {
+    "en": "introduces a condition",
+    "de": "führt eine Bedingung ein",
+    "es": "introduce una condición",
+    "fr": "introduit une condition",
+    "it": "introduce una condizione",
+    "pt": "introduz uma condição"
+   },
    "traducciones": {
     "es": "depende de…",
     "de": "Es hängt von… ab.",
@@ -112,7 +434,14 @@
   },
   {
    "expresion": "I'm waiting for…",
-   "funcion": "says what you are waiting for",
+   "funcion": {
+    "en": "says what you are waiting for",
+    "de": "sagt, worauf man wartet",
+    "es": "indica qué se está esperando",
+    "fr": "indique ce que l'on attend",
+    "it": "indica che cosa si sta aspettando",
+    "pt": "indica o que se está esperando"
+   },
    "traducciones": {
     "es": "estoy esperando…",
     "de": "Ich warte auf…",
@@ -123,7 +452,14 @@
   },
   {
    "expresion": "I agree with you",
-   "funcion": "agrees with a person",
+   "funcion": {
+    "en": "agrees with a person",
+    "de": "stimmt einer Person zu",
+    "es": "expresa acuerdo con una persona",
+    "fr": "exprime l'accord avec une personne",
+    "it": "esprime accordo con una persona",
+    "pt": "expressa concordância com uma pessoa"
+   },
    "traducciones": {
     "es": "estoy de acuerdo con vos",
     "de": "Ich stimme dir zu.",
@@ -134,7 +470,14 @@
   },
   {
    "expresion": "Don't worry about…",
-   "funcion": "reassures",
+   "funcion": {
+    "en": "reassures",
+    "de": "beruhigt",
+    "es": "tranquiliza",
+    "fr": "rassure",
+    "it": "rassicura",
+    "pt": "tranquiliza"
+   },
    "traducciones": {
     "es": "no te preocupes por…",
     "de": "Mach dir wegen… keine Sorgen.",
@@ -145,7 +488,14 @@
   },
   {
    "expresion": "Can I ask for…?",
-   "funcion": "requests something",
+   "funcion": {
+    "en": "requests something",
+    "de": "bittet um etwas",
+    "es": "pide algo",
+    "fr": "demande quelque chose",
+    "it": "richiede qualcosa",
+    "pt": "pede algo"
+   },
    "traducciones": {
     "es": "¿puedo pedir…?",
     "de": "Kann ich um… bitten?",
@@ -156,7 +506,14 @@
   },
   {
    "expresion": "This belongs to…",
-   "funcion": "states ownership",
+   "funcion": {
+    "en": "states ownership",
+    "de": "drückt Besitz aus",
+    "es": "expresa posesión",
+    "fr": "exprime l'appartenance",
+    "it": "indica il possesso",
+    "pt": "indica posse"
+   },
    "traducciones": {
     "es": "esto es de… / pertenece a…",
     "de": "Das gehört…",
@@ -167,7 +524,14 @@
   },
   {
    "expresion": "I'm thinking about…",
-   "funcion": "says what is on your mind",
+   "funcion": {
+    "en": "says what is on your mind",
+    "de": "sagt, worüber man sich Gedanken macht",
+    "es": "indica qué preocupa",
+    "fr": "indique ce qui préoccupe",
+    "it": "indica ciò a cui si sta pensando",
+    "pt": "indica o que está preocupando"
+   },
    "traducciones": {
     "es": "estoy pensando en…",
     "de": "Ich denke über… nach.",
@@ -178,7 +542,14 @@
   },
   {
    "expresion": "We arrived at…",
-   "funcion": "says where you got to",
+   "funcion": {
+    "en": "says where you got to",
+    "de": "sagt, wo man angekommen ist",
+    "es": "indica adónde se llegó",
+    "fr": "indique où l'on est arrivé",
+    "it": "indica dove si è arrivati",
+    "pt": "indica onde se chegou"
+   },
    "traducciones": {
     "es": "llegamos a…",
     "de": "Wir kamen bei… an.",
@@ -189,13 +560,55 @@
   }
  ],
  "autochequeo": [
-  "Did I check the preposition of each verb instead of translating it from Spanish?",
-  "Did I write *depends on* and never *depends of*?",
-  "Does every *listen* in my text have *to* after it?",
-  "With *arrive*, did I use *at* for points and *in* for towns and countries?",
-  "Did I leave *discuss*, *enter* and *phone* without a preposition?"
+  {
+   "en": "Did I check the preposition of each verb instead of translating it from Spanish?",
+   "de": "Habe ich die Präposition jedes Verbs überprüft, statt sie aus dem Spanischen zu übersetzen?",
+   "es": "¿He comprobado la preposición de cada verbo en lugar de traducirla del español?",
+   "fr": "Ai-je vérifié la préposition de chaque verbe au lieu de la traduire depuis l'espagnol ?",
+   "it": "Ho controllato la preposizione di ogni verbo invece di tradurla dallo spagnolo?",
+   "pt": "Verifiquei a preposição de cada verbo em vez de traduzi-la do espanhol?"
+  },
+  {
+   "en": "Did I write *depends on* and never *depends of*?",
+   "de": "Habe ich *depends on* und nie *depends of* geschrieben?",
+   "es": "¿He escrito *depends on* y nunca *depends of*?",
+   "fr": "Ai-je écrit *depends on* et jamais *depends of* ?",
+   "it": "Ho scritto *depends on* e mai *depends of*?",
+   "pt": "Escrevi *depends on* e nunca *depends of*?"
+  },
+  {
+   "en": "Does every *listen* in my text have *to* after it?",
+   "de": "Steht nach jedem *listen* in meinem Text *to*?",
+   "es": "¿Cada *listen* de mi texto lleva *to* después?",
+   "fr": "Chaque *listen* de mon texte est-il suivi de *to* ?",
+   "it": "Ogni *listen* nel mio testo è seguito da *to*?",
+   "pt": "Todo *listen* no meu texto tem *to* depois?"
+  },
+  {
+   "en": "With *arrive*, did I use *at* for points and *in* for towns and countries?",
+   "de": "Habe ich bei *arrive* *at* für einzelne Orte und *in* für Städte und Länder verwendet?",
+   "es": "Con *arrive*, ¿he usado *at* para puntos concretos e *in* para ciudades y países?",
+   "fr": "Avec *arrive*, ai-je utilisé *at* pour des points précis et *in* pour les villes et les pays ?",
+   "it": "Con *arrive*, ho usato *at* per punti specifici e *in* per città e paesi?",
+   "pt": "Com *arrive*, usei *at* para pontos específicos e *in* para cidades e países?"
+  },
+  {
+   "en": "Did I leave *discuss*, *enter* and *phone* without a preposition?",
+   "de": "Habe ich *discuss*, *enter* und *phone* ohne Präposition verwendet?",
+   "es": "¿He dejado *discuss*, *enter* y *phone* sin preposición?",
+   "fr": "Ai-je utilisé *discuss*, *enter* et *phone* sans préposition ?",
+   "it": "Ho usato *discuss*, *enter* e *phone* senza preposizione?",
+   "pt": "Usei *discuss*, *enter* e *phone* sem preposição?"
+  }
  ],
- "promptCorreccion": "Focus only on verbs followed by a preposition. (1) Mark every verb + preposition pair in my text and say whether the preposition is the correct one in English. (2) Flag any place where I copied the Spanish preposition. (3) Flag any verb where I added a preposition English does not use, or omitted one it requires. Do not rewrite the whole text — list my errors so I can correct them myself.",
+ "promptCorreccion": {
+  "en": "Focus only on verbs followed by a preposition. (1) Mark every verb + preposition pair in my text and say whether the preposition is the correct one in English. (2) Flag any place where I copied the Spanish preposition. (3) Flag any verb where I added a preposition English does not use, or omitted one it requires. Do not rewrite the whole text — list my errors so I can correct them myself.",
+  "de": "Konzentriere dich nur auf Verben mit Präpositionen. (1) Markiere jede Verb-Präposition-Verbindung in meinem Text und sage, ob die Präposition im Englischen richtig ist. (2) Markiere jede Stelle, an der ich die spanische Präposition übernommen habe. (3) Markiere jedes Verb, bei dem ich eine Präposition hinzugefügt habe, die im Englischen nicht verwendet wird, oder eine erforderliche Präposition weggelassen habe. Schreibe nicht den ganzen Text um – liste meine Fehler auf, damit ich sie selbst korrigieren kann.",
+  "es": "Concéntrate únicamente en los verbos seguidos de preposición. (1) Marca cada combinación verbo + preposición de mi texto e indica si la preposición es correcta en inglés. (2) Señala cada lugar donde haya copiado la preposición del español. (3) Señala cualquier verbo al que haya añadido una preposición que el inglés no usa o al que le falte una necesaria. No reescribas todo el texto: enumera mis errores para que pueda corregirlos yo mismo.",
+  "fr": "Concentre-toi uniquement sur les verbes suivis d'une préposition. (1) Repère chaque combinaison verbe + préposition dans mon texte et indique si la préposition est correcte en anglais. (2) Signale chaque endroit où j'ai repris la préposition espagnole. (3) Signale tout verbe auquel j'ai ajouté une préposition que l'anglais n'utilise pas ou pour lequel j'ai omis une préposition nécessaire. Ne réécris pas tout le texte : liste mes erreurs pour que je puisse les corriger moi-même.",
+  "it": "Concentrati solo sui verbi seguiti da preposizione. (1) Segna ogni combinazione verbo + preposizione nel mio testo e indica se la preposizione è corretta in inglese. (2) Segnala ogni punto in cui ho copiato la preposizione dallo spagnolo. (3) Segnala ogni verbo a cui ho aggiunto una preposizione che l'inglese non usa o da cui ho omesso una preposizione necessaria. Non riscrivere tutto il testo: elenca i miei errori così posso correggerli da solo.",
+  "pt": "Concentre-se apenas nos verbos seguidos de preposição. (1) Marque cada combinação verbo + preposição no meu texto e diga se a preposição está correta em inglês. (2) Sinalize cada ponto em que copiei a preposição do espanhol. (3) Sinalize qualquer verbo em que eu tenha acrescentado uma preposição que o inglês não usa ou omitido uma preposição necessária. Não reescreva o texto inteiro — liste meus erros para que eu mesmo possa corrigi-los."
+ },
  "erroresContrastivos": {
   "es": [
    "*pensar en* rendered as *think in* instead of *think of* or *think about*."

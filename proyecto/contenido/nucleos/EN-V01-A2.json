@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Fixed Chunks for Daily Survival",
+ "titulo": {
+  "en": "Fixed Chunks for Daily Survival",
+  "de": "Feste Wendungen für den Alltag",
+  "es": "Expresiones fijas para desenvolverse a diario",
+  "fr": "Expressions fixes pour la vie quotidienne",
+  "it": "Espressioni fisse per la vita quotidiana",
+  "pt": "Expressões fixas para o dia a dia"
+ },
  "categoria": "vocabulary",
  "ancla": "EGP A1/A2",
- "descripcion": "At A2 you learn fixed everyday chunks as whole blocks, without analysing the grammar inside them: How's it going?, No problem, See you later. These chunks work immediately in daily life, even before the grammar behind them makes sense.",
+ "descripcion": {
+  "en": "At A2 you learn fixed everyday chunks as whole blocks, without analysing the grammar inside them: How's it going?, No problem, See you later. These chunks work immediately in daily life, even before the grammar behind them makes sense.",
+  "de": "Auf A2 lernst du feste Alltagswendungen als ganze Blöcke, ohne die Grammatik darin zu analysieren: How's it going?, No problem, See you later. Diese Wendungen funktionieren sofort im Alltag, noch bevor die Grammatik dahinter verständlich wird.",
+  "es": "En A2 aprendes expresiones cotidianas fijas como bloques completos, sin analizar la gramática que contienen: How's it going?, No problem, See you later. Estas expresiones funcionan de inmediato en la vida diaria, incluso antes de entender la gramática que hay detrás.",
+  "fr": "Au niveau A2, tu apprends des expressions quotidiennes fixes comme des blocs entiers, sans analyser la grammaire qu’elles contiennent : How's it going?, No problem, See you later. Ces expressions fonctionnent immédiatement dans la vie quotidienne, avant même de comprendre la grammaire qui les sous-tend.",
+  "it": "A livello A2 impari espressioni quotidiane fisse come blocchi interi, senza analizzare la grammatica al loro interno: How's it going?, No problem, See you later. Queste espressioni funzionano subito nella vita quotidiana, anche prima di capire la grammatica che c’è dietro.",
+  "pt": "No nível A2, você aprende expressões fixas do dia a dia como blocos inteiros, sem analisar a gramática dentro delas: How's it going?, No problem, See you later. Essas expressões funcionam imediatamente no cotidiano, mesmo antes de a gramática por trás delas fazer sentido."
+ },
  "cuadroReferencia": {
-  "titulo": "Fixed everyday chunks",
+  "titulo": {
+   "en": "Fixed everyday chunks",
+   "de": "Feste Alltagswendungen",
+   "es": "Expresiones cotidianas fijas",
+   "fr": "Expressions quotidiennes fixes",
+   "it": "Espressioni quotidiane fisse",
+   "pt": "Expressões fixas do dia a dia"
+  },
   "columnas": [
-   "Chunk",
-   "Use"
+   {
+    "en": "Chunk",
+    "de": "Chunk",
+    "es": "Chunk",
+    "fr": "Chunk",
+    "it": "Chunk",
+    "pt": "Chunk"
+   },
+   {
+    "en": "Use",
+    "de": "Verwendung",
+    "es": "Uso",
+    "fr": "Emploi",
+    "it": "Uso",
+    "pt": "Uso"
+   }
   ],
   "filas": [
    [
-    "How's it going?",
-    "informal greeting"
+    {
+     "en": "How's it going?",
+     "de": "Wie läuft's?",
+     "es": "¿Cómo va?",
+     "fr": "Ça va ? / Comment ça va ?",
+     "it": "Come va?",
+     "pt": "Como vai? / Tudo bem?"
+    },
+    {
+     "en": "informal greeting",
+     "de": "informelle Begrüßung",
+     "es": "saludo informal",
+     "fr": "salutation informelle",
+     "it": "saluto informale",
+     "pt": "cumprimento informal"
+    }
    ],
    [
-    "No problem.",
-    "reply to thanks or a request"
+    {
+     "en": "No problem.",
+     "de": "Kein Problem.",
+     "es": "No hay problema.",
+     "fr": "Pas de problème.",
+     "it": "Nessun problema.",
+     "pt": "Sem problema."
+    },
+    {
+     "en": "reply to thanks or a request",
+     "de": "Antwort auf Dank oder eine Bitte",
+     "es": "respuesta a un agradecimiento o una petición",
+     "fr": "réponse à un remerciement ou à une demande",
+     "it": "risposta a un ringraziamento o a una richiesta",
+     "pt": "resposta a um agradecimento ou pedido"
+    }
    ],
    [
-    "See you later!",
-    "informal goodbye"
+    {
+     "en": "See you later!",
+     "de": "Bis später!",
+     "es": "¡Hasta luego!",
+     "fr": "À plus tard !",
+     "it": "A dopo!",
+     "pt": "Até mais!"
+    },
+    {
+     "en": "informal goodbye",
+     "de": "informelle Verabschiedung",
+     "es": "despedida informal",
+     "fr": "au revoir informel",
+     "it": "saluto informale",
+     "pt": "despedida informal"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Hi! How's it going today?",
+   "texto": {
+    "en": "Hi! How's it going today?",
+    "de": "Hallo! Wie läuft's heute?",
+    "es": "¡Hola! ¿Cómo va hoy?",
+    "fr": "Salut ! Comment ça va aujourd’hui ?",
+    "it": "Ciao! Come va oggi?",
+    "pt": "Oi! Como vai hoje?"
+   },
    "audio": true
   },
   {
-   "texto": "No problem, happy to help.",
+   "texto": {
+    "en": "No problem, happy to help.",
+    "de": "Kein Problem, ich helfe gern.",
+    "es": "No hay problema, con gusto.",
+    "fr": "Pas de problème, avec plaisir.",
+    "it": "Nessun problema, volentieri.",
+    "pt": "Sem problema, fico feliz em ajudar."
+   },
    "audio": true
   },
   {
-   "texto": "Okay, see you later then!"
+   "texto": {
+    "en": "Okay, see you later then!",
+    "de": "Okay, bis später dann!",
+    "es": "Bueno, ¡hasta luego entonces!",
+    "fr": "D'accord, à plus tard alors !",
+    "it": "Va bene, a dopo allora!",
+    "pt": "Tá bom, até mais então!"
+   }
   }
  ],
  "notas": [
-  "These chunks are learned as whole units, not analysed word by word.",
-  "How's it going? is informal; a more neutral version is how are you?",
-  "No problem fits both as a reply to thanks and to a request."
+  {
+   "en": "These chunks are learned as whole units, not analysed word by word.",
+   "de": "Diese Wendungen werden als ganze Einheiten gelernt und nicht Wort für Wort analysiert.",
+   "es": "Estas expresiones se aprenden como unidades completas, no se analizan palabra por palabra.",
+   "fr": "Ces expressions s’apprennent comme des unités entières, pas mot à mot.",
+   "it": "Queste espressioni si imparano come unità intere, non si analizzano parola per parola.",
+   "pt": "Essas expressões são aprendidas como unidades inteiras, não analisadas palavra por palavra."
+  },
+  {
+   "en": "How's it going? is informal; a more neutral version is how are you?",
+   "de": "How's it going? ist informell; eine neutralere Variante ist how are you?",
+   "es": "How's it going? es informal; una versión más neutra es how are you?",
+   "fr": "How's it going? est informel ; une version plus neutre est how are you?",
+   "it": "How's it going? è informale; una versione più neutra è how are you?",
+   "pt": "How's it going? é informal; uma versão mais neutra é how are you?"
+  },
+  {
+   "en": "No problem fits both as a reply to thanks and to a request.",
+   "de": "No problem passt sowohl als Antwort auf Dank als auch auf eine Bitte.",
+   "es": "No problem sirve tanto para responder a un agradecimiento como a una petición.",
+   "fr": "No problem convient aussi bien comme réponse à un remerciement qu’à une demande.",
+   "it": "No problem va bene sia come risposta a un ringraziamento sia a una richiesta.",
+   "pt": "No problem funciona tanto como resposta a um agradecimento quanto a um pedido."
+  }
  ],
  "contraste": {
   "es": "¿Qué tal? corresponds to How are you? or How's it going?, and no hay problema to no problem, so many chunks transfer directly.",
@@ -54,13 +173,34 @@
   "pt": "Tudo bem? corresponds to How are you? or Everything OK?, and de nada to you're welcome, so many chunks transfer directly."
  },
  "errores": [
-  "Confusing the formal and informal versions.",
-  "Translating a chunk word for word from your own language instead of using the English one."
+  {
+   "en": "Confusing the formal and informal versions.",
+   "de": "Die formelle und informelle Version verwechseln.",
+   "es": "Confundir la versión formal y la informal.",
+   "fr": "Confondre la version formelle et la version informelle.",
+   "it": "Confondere la versione formale e quella informale.",
+   "pt": "Confundir a versão formal com a informal."
+  },
+  {
+   "en": "Translating a chunk word for word from your own language instead of using the English one.",
+   "de": "Eine feste Wendung Wort für Wort aus der eigenen Sprache übersetzen, statt die englische zu verwenden.",
+   "es": "Traducir una expresión fija palabra por palabra desde tu idioma en vez de usar la inglesa.",
+   "fr": "Traduire une expression fixe mot à mot depuis sa propre langue au lieu d’utiliser l’expression anglaise.",
+   "it": "Tradurre un’espressione fissa parola per parola dalla propria lingua invece di usare quella inglese.",
+   "pt": "Traduzir uma expressão fixa palavra por palavra da própria língua em vez de usar a expressão em inglês."
+  }
  ],
  "redemittel": [
   {
    "expresion": "How's it going?",
-   "funcion": "informal greeting",
+   "funcion": {
+    "en": "informal greeting",
+    "de": "informelle Begrüßung",
+    "es": "saludo informal",
+    "fr": "salutation informelle",
+    "it": "saluto informale",
+    "pt": "cumprimento informal"
+   },
    "traducciones": {
     "es": "¿Qué tal?",
     "de": "Wie geht's?",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "No problem.",
-   "funcion": "reply to thanks/request",
+   "funcion": {
+    "en": "reply to thanks/request",
+    "de": "Antwort auf Dank/Bitte",
+    "es": "respuesta a agradecimiento/petición",
+    "fr": "réponse à un remerciement/une demande",
+    "it": "risposta a ringraziamento/richiesta",
+    "pt": "resposta a agradecimento/pedido"
+   },
    "traducciones": {
     "es": "No hay problema.",
     "de": "Kein Problem.",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "See you later!",
-   "funcion": "informal goodbye",
+   "funcion": {
+    "en": "informal goodbye",
+    "de": "informelle Verabschiedung",
+    "es": "despedida informal",
+    "fr": "au revoir informel",
+    "it": "saluto informale",
+    "pt": "despedida informal"
+   },
    "traducciones": {
     "es": "¡Hasta luego!",
     "de": "Bis später!",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "Take care!",
-   "funcion": "friendly goodbye",
+   "funcion": {
+    "en": "friendly goodbye",
+    "de": "freundliche Verabschiedung",
+    "es": "despedida amistosa",
+    "fr": "au revoir amical",
+    "it": "saluto amichevole",
+    "pt": "despedida amigável"
+   },
    "traducciones": {
     "es": "¡Cuidate!",
     "de": "Pass auf dich auf!",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "No worries.",
-   "funcion": "accepting an apology",
+   "funcion": {
+    "en": "accepting an apology",
+    "de": "Entschuldigung annehmen",
+    "es": "aceptar una disculpa",
+    "fr": "accepter des excuses",
+    "it": "accettare delle scuse",
+    "pt": "aceitar um pedido de desculpas"
+   },
    "traducciones": {
     "es": "No pasa nada.",
     "de": "Kein Problem.",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "Have a good one!",
-   "funcion": "informal goodbye",
+   "funcion": {
+    "en": "informal goodbye",
+    "de": "informelle Verabschiedung",
+    "es": "despedida informal",
+    "fr": "au revoir informel",
+    "it": "saluto informale",
+    "pt": "despedida informal"
+   },
    "traducciones": {
     "es": "¡Que la pases bien!",
     "de": "Mach’s gut!",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Have I used the chunk in the right situation?",
-  "Have I avoided mixing formal and informal versions?",
-  "Have I used at least three different chunks?",
-  "Does the chunk sound natural here?",
-  "Have I used the chunk for its correct function, not just any greeting?"
+  {
+   "en": "Have I used the chunk in the right situation?",
+   "de": "Habe ich den Chunk in der passenden Situation benutzt?",
+   "es": "¿Usé el chunk en la situación adecuada?",
+   "fr": "Ai-je utilisé le chunk dans la bonne situation ?",
+   "it": "Ho usato il chunk nella situazione giusta?",
+   "pt": "Usei o chunk na situação adequada?"
+  },
+  {
+   "en": "Have I avoided mixing formal and informal versions?",
+   "de": "Habe ich vermieden, formelle und informelle Varianten zu mischen?",
+   "es": "¿He evitado mezclar versiones formales e informales?",
+   "fr": "Ai-je évité de mélanger les versions formelles et informelles ?",
+   "it": "Ho evitato di mescolare versioni formali e informali?",
+   "pt": "Evitei misturar versões formais e informais?"
+  },
+  {
+   "en": "Have I used at least three different chunks?",
+   "de": "Habe ich mindestens drei verschiedene Chunks benutzt?",
+   "es": "¿Usé al menos tres chunks diferentes?",
+   "fr": "Ai-je utilisé au moins trois chunks différents ?",
+   "it": "Ho usato almeno tre chunk diversi?",
+   "pt": "Usei pelo menos três chunks diferentes?"
+  },
+  {
+   "en": "Does the chunk sound natural here?",
+   "de": "Klingt die Wendung hier natürlich?",
+   "es": "¿La expresión suena natural aquí?",
+   "fr": "L’expression semble-t-elle naturelle ici ?",
+   "it": "L’espressione suona naturale qui?",
+   "pt": "A expressão soa natural aqui?"
+  },
+  {
+   "en": "Have I used the chunk for its correct function, not just any greeting?",
+   "de": "Habe ich die Wendung für ihre richtige Funktion verwendet und nicht einfach irgendeine Begrüßung?",
+   "es": "¿He usado la expresión para su función correcta y no simplemente como cualquier saludo?",
+   "fr": "Ai-je utilisé l’expression pour sa fonction correcte, et pas simplement comme n’importe quelle salutation ?",
+   "it": "Ho usato l’espressione per la sua funzione corretta e non semplicemente come un saluto qualsiasi?",
+   "pt": "Usei a expressão para a função correta, e não apenas como qualquer cumprimento?"
+  }
  ],
- "promptCorreccion": "Focus only on whether the everyday chunks fit the situation. Check formal versus informal and whether the wording is fixed, not translated. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on whether the everyday chunks fit the situation. Check formal versus informal and whether the wording is fixed, not translated. Do not rewrite the text.",
+  "de": "Achte nur darauf, ob die Alltagswendungen zur Situation passen. Prüfe formell gegenüber informell und ob die Formulierung fest ist und nicht übersetzt wurde. Formuliere den Text nicht neu.",
+  "es": "Concéntrate solo en si las expresiones cotidianas encajan con la situación. Comprueba lo formal frente a lo informal y si la formulación es fija, no traducida. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur l’adéquation des expressions quotidiennes à la situation. Vérifie le registre formel ou informel et si la formulation est bien fixe, pas traduite. Ne réécris pas le texte.",
+  "it": "Concentrati solo sul fatto che le espressioni quotidiane siano adatte alla situazione. Controlla formale rispetto a informale e se la formulazione è fissa, non tradotta. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas em saber se as expressões do dia a dia combinam com a situação. Verifique formal versus informal e se a formulação é fixa, não traduzida. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*¡Buen provecho!* rendered as *Good profit!* instead of *Enjoy your meal!*"

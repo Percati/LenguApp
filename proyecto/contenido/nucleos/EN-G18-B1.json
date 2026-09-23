@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Articles and Quantifiers",
+ "titulo": {
+  "en": "Articles and Quantifiers",
+  "de": "Artikel und Quantoren",
+  "es": "Artículos y cuantificadores",
+  "fr": "Articles et quantifieurs",
+  "it": "Articoli e quantificatori",
+  "pt": "Artigos e quantificadores"
+ },
  "categoria": "grammar",
  "ancla": "EGP A1-B1",
- "descripcion": "At B1 you use a/an, the and no article correctly, plus common quantifiers like some, any, much and many. These small words are used constantly and often skipped by Spanish speakers, whose language uses articles differently.",
+ "descripcion": {
+  "en": "At B1 you use a/an, the and no article correctly, plus common quantifiers like some, any, much and many. These small words are used constantly and often skipped by Spanish speakers, whose language uses articles differently.",
+  "de": "Auf B1-Niveau verwendest du a/an, the und den Nullartikel korrekt sowie häufige Mengenangaben wie some, any, much und many. Diese kleinen Wörter kommen ständig vor und werden von Spanischsprechenden oft weggelassen, weil das Spanische Artikel anders verwendet.",
+  "es": "En B1 usas correctamente a/an, the y la ausencia de artículo, además de cuantificadores frecuentes como some, any, much y many. Estas palabras pequeñas se usan constantemente y los hispanohablantes suelen omitirlas porque el español emplea los artículos de otra manera.",
+  "fr": "Au niveau B1, tu utilises correctement a/an, the et l'absence d'article, ainsi que des quantifieurs courants comme some, any, much et many. Ces petits mots sont omniprésents et les hispanophones les omettent souvent, car l'espagnol utilise les articles différemment.",
+  "it": "Al livello B1 usi correttamente a/an, the e l'assenza di articolo, oltre a quantificatori comuni come some, any, much e many. Queste piccole parole sono usate continuamente e gli ispanofoni spesso le omettono perché lo spagnolo usa gli articoli in modo diverso.",
+  "pt": "No nível B1, você usa corretamente a/an, the e a ausência de artigo, além de quantificadores comuns como some, any, much e many. Essas palavrinhas são usadas o tempo todo e falantes de espanhol costumam omiti-las porque o espanhol usa os artigos de forma diferente."
+ },
  "cuadroReferencia": {
-  "titulo": "Articles and quantifiers",
+  "titulo": {
+   "en": "Articles and quantifiers",
+   "de": "Artikel und Mengenangaben",
+   "es": "Artículos y cuantificadores",
+   "fr": "Articles et quantifieurs",
+   "it": "Articoli e quantificatori",
+   "pt": "Artigos e quantificadores"
+  },
   "columnas": [
-   "Word",
-   "Use",
-   "Example"
+   {
+    "en": "Word",
+    "de": "Wort",
+    "es": "Palabra",
+    "fr": "Mot",
+    "it": "Parola",
+    "pt": "Palavra"
+   },
+   {
+    "en": "Use",
+    "de": "Verwendung",
+    "es": "Uso",
+    "fr": "Emploi",
+    "it": "Uso",
+    "pt": "Uso"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "a/an",
-    "one, not specific",
-    "I saw a dog."
+    {
+     "en": "a/an",
+     "de": "a/an",
+     "es": "a/an",
+     "fr": "a/an",
+     "it": "a/an",
+     "pt": "a/an"
+    },
+    {
+     "en": "one, not specific",
+     "de": "eins, nicht bestimmt",
+     "es": "uno, no específico",
+     "fr": "un, non spécifique",
+     "it": "uno, non specifico",
+     "pt": "um, não específico"
+    },
+    {
+     "en": "I saw a dog.",
+     "de": "Ich sah einen Hund.",
+     "es": "Vi un perro.",
+     "fr": "J'ai vu un chien.",
+     "it": "Ho visto un cane.",
+     "pt": "Eu vi um cachorro."
+    }
    ],
    [
-    "the",
-    "specific, known",
-    "The dog next door barks a lot."
+    {
+     "en": "the",
+     "de": "the",
+     "es": "the",
+     "fr": "the",
+     "it": "the",
+     "pt": "the"
+    },
+    {
+     "en": "specific, known",
+     "de": "bestimmt, bekannt",
+     "es": "específico, conocido",
+     "fr": "spécifique, connu",
+     "it": "specifico, noto",
+     "pt": "específico, conhecido"
+    },
+    {
+     "en": "The dog next door barks a lot.",
+     "de": "Der Hund von nebenan bellt viel.",
+     "es": "El perro de al lado ladra mucho.",
+     "fr": "Le chien d'à côté aboie beaucoup.",
+     "it": "Il cane dei vicini abbaia molto.",
+     "pt": "O cachorro do vizinho late muito."
+    }
    ],
    [
-    "some/any",
-    "quantity, unspecified",
-    "I have some time. Do you have any questions?"
+    {
+     "en": "some/any",
+     "de": "some/any",
+     "es": "some/any",
+     "fr": "some/any",
+     "it": "some/any",
+     "pt": "some/any"
+    },
+    {
+     "en": "quantity, unspecified",
+     "de": "Menge, nicht näher bestimmt",
+     "es": "cantidad, no especificada",
+     "fr": "quantité, non précisée",
+     "it": "quantità, non specificata",
+     "pt": "quantidade, não especificada"
+    },
+    {
+     "en": "I have some time. Do you have any questions?",
+     "de": "Ich habe etwas Zeit. Hast du Fragen?",
+     "es": "Tengo algo de tiempo. ¿Tienes alguna pregunta?",
+     "fr": "J'ai un peu de temps. Tu as des questions ?",
+     "it": "Ho un po' di tempo. Hai qualche domanda?",
+     "pt": "Tenho um pouco de tempo. Você tem alguma pergunta?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I saw a dog in the park this morning.",
+   "texto": {
+    "en": "I saw a dog in the park this morning.",
+    "de": "Heute Morgen habe ich im Park einen Hund gesehen.",
+    "es": "Vi un perro en el parque esta mañana.",
+    "fr": "J'ai vu un chien dans le parc ce matin.",
+    "it": "Ho visto un cane al parco stamattina.",
+    "pt": "Vi um cachorro no parque hoje de manhã."
+   },
    "audio": true
   },
   {
-   "texto": "The dog next door barks a lot at night.",
+   "texto": {
+    "en": "The dog next door barks a lot at night.",
+    "de": "Der Hund von nebenan bellt nachts viel.",
+    "es": "El perro de al lado ladra mucho por la noche.",
+    "fr": "Le chien d'à côté aboie beaucoup la nuit.",
+    "it": "Il cane dei vicini abbaia molto di notte.",
+    "pt": "O cachorro do vizinho late muito à noite."
+   },
    "audio": true
   },
   {
-   "texto": "Do you have any questions about this?"
+   "texto": {
+    "en": "Do you have any questions about this?",
+    "de": "Hast du dazu Fragen?",
+    "es": "¿Tienes alguna pregunta sobre esto?",
+    "fr": "Tu as des questions à ce sujet ?",
+    "it": "Hai qualche domanda a riguardo?",
+    "pt": "Você tem alguma pergunta sobre isso?"
+   }
   }
  ],
  "notas": [
-  "The is used when both speaker and listener know which thing is meant.",
-  "Some is used in positive sentences, any in questions and negatives.",
-  "Much goes with uncountable nouns, many with countable plural nouns."
+  {
+   "en": "The is used when both speaker and listener know which thing is meant.",
+   "de": "The wird verwendet, wenn Sprecher und Zuhörer beide wissen, welche Sache gemeint ist.",
+   "es": "The se usa cuando tanto quien habla como quien escucha saben de qué cosa se trata.",
+   "fr": "The s’utilise lorsque le locuteur et l’interlocuteur savent tous les deux de quelle chose il s’agit.",
+   "it": "The si usa quando sia chi parla sia chi ascolta sanno a quale cosa ci si riferisce.",
+   "pt": "The é usado quando tanto quem fala quanto quem ouve sabem de qual coisa se trata."
+  },
+  {
+   "en": "Some is used in positive sentences, any in questions and negatives.",
+   "de": "Some wird in bejahenden Sätzen verwendet, any in Fragen und Verneinungen.",
+   "es": "Some se usa en oraciones afirmativas y any en preguntas y negativas.",
+   "fr": "Some s’utilise dans les phrases affirmatives, any dans les questions et les négations.",
+   "it": "Some si usa nelle frasi affermative, any nelle domande e nelle negative.",
+   "pt": "Some é usado em frases afirmativas e any em perguntas e negativas."
+  },
+  {
+   "en": "Much goes with uncountable nouns, many with countable plural nouns.",
+   "de": "Much steht bei nicht zählbaren Substantiven, many bei zählbaren Substantiven im Plural.",
+   "es": "Much se usa con sustantivos incontables y many con sustantivos contables en plural.",
+   "fr": "Much s'emploie avec les noms indénombrables, many avec les noms dénombrables au pluriel.",
+   "it": "Much si usa con i nomi non numerabili, many con i nomi numerabili al plurale.",
+   "pt": "Much é usado com substantivos incontáveis, many com substantivos contáveis no plural."
+  }
  ],
  "contraste": {
   "es": "Spanish uses articles more widely, even with abstract nouns and general plurals (me gusta la música). English leaves out the article in these cases (I like music), which is a constant source of error for Spanish speakers.",
@@ -58,14 +205,42 @@
   "pt": "Portuguese uses the definite article with general nouns (gosto da música), which leads to I like the music, and leaves it out before jobs (sou professor – I am a teacher). In European Portuguese the article also goes with possessives (o meu carro), which can lead to the my car."
  },
  "errores": [
-  "Adding the before a general or abstract noun where English uses no article.",
-  "Using any in a positive statement instead of some.",
-  "Confusing much and many."
+  {
+   "en": "Adding the before a general or abstract noun where English uses no article.",
+   "de": "The vor einem allgemeinen oder abstrakten Substantiv hinzufügen, obwohl im Englischen kein Artikel steht.",
+   "es": "Añadir the delante de un sustantivo general o abstracto cuando en inglés no se usa artículo.",
+   "fr": "Ajouter the devant un nom général ou abstrait alors que l'anglais n'emploie pas d'article.",
+   "it": "Aggiungere the davanti a un nome generale o astratto quando in inglese non si usa l'articolo.",
+   "pt": "Adicionar the antes de um substantivo geral ou abstrato quando o inglês não usa artigo."
+  },
+  {
+   "en": "Using any in a positive statement instead of some.",
+   "de": "Any in einem bejahenden Satz statt some verwenden.",
+   "es": "Usar any en una oración afirmativa en lugar de some.",
+   "fr": "Utiliser any dans une phrase affirmative au lieu de some.",
+   "it": "Usare any in una frase affermativa invece di some.",
+   "pt": "Usar any em uma frase afirmativa em vez de some."
+  },
+  {
+   "en": "Confusing much and many.",
+   "de": "Much und many verwechseln.",
+   "es": "Confundir much y many.",
+   "fr": "Confondre much et many.",
+   "it": "Confondere much e many.",
+   "pt": "Confundir much e many."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I like…",
-   "funcion": "general noun, no article",
+   "funcion": {
+    "en": "general noun, no article",
+    "de": "allgemeines Substantiv, kein Artikel",
+    "es": "sustantivo general, sin artículo",
+    "fr": "nom général, sans article",
+    "it": "nome generico, senza articolo",
+    "pt": "substantivo genérico, sem artigo"
+   },
    "traducciones": {
     "es": "Me gusta el/la…",
     "de": "Ich mag…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "The…next to…",
-   "funcion": "specific, known",
+   "funcion": {
+    "en": "specific, known",
+    "de": "bestimmt, bekannt",
+    "es": "específico, conocido",
+    "fr": "spécifique, connu",
+    "it": "specifico, noto",
+    "pt": "específico, conhecido"
+   },
    "traducciones": {
     "es": "El/la… al lado de…",
     "de": "Der/Die/Das… neben…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "I have some…",
-   "funcion": "positive quantity",
+   "funcion": {
+    "en": "positive quantity",
+    "de": "bejahte Menge",
+    "es": "cantidad afirmativa",
+    "fr": "quantité affirmative",
+    "it": "quantità affermativa",
+    "pt": "quantidade afirmativa"
+   },
    "traducciones": {
     "es": "Tengo algo/algunos de…",
     "de": "Ich habe etwas/einige…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "Do you have any…?",
-   "funcion": "question, quantity",
+   "funcion": {
+    "en": "question, quantity",
+    "de": "Frage, Menge",
+    "es": "pregunta, cantidad",
+    "fr": "question, quantité",
+    "it": "domanda, quantità",
+    "pt": "pergunta, quantidade"
+   },
    "traducciones": {
     "es": "¿Tenés algo/alguno de…?",
     "de": "Hast du etwas/einige…?",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "There isn't much…",
-   "funcion": "uncountable, negative",
+   "funcion": {
+    "en": "uncountable, negative",
+    "de": "nicht zählbar, negativ",
+    "es": "incontable, negativo",
+    "fr": "indénombrable, négatif",
+    "it": "non numerabile, negativo",
+    "pt": "incontável, negativo"
+   },
    "traducciones": {
     "es": "No hay mucho/a…",
     "de": "Es gibt nicht viel…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "There aren't many…",
-   "funcion": "countable plural, negative",
+   "funcion": {
+    "en": "countable plural, negative",
+    "de": "zählbarer Plural, negativ",
+    "es": "plural contable, negativo",
+    "fr": "pluriel dénombrable, négatif",
+    "it": "plurale numerabile, negativo",
+    "pt": "plural contável, negativo"
+   },
    "traducciones": {
     "es": "No hay muchos/as…",
     "de": "Es gibt nicht viele…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Have I avoided the before general or abstract nouns?",
-  "Is some used in positive sentences and any in questions/negatives?",
-  "Are much and many used with the right kind of noun?",
-  "Does the sentence sound natural, not translated word for word?",
-  "Does the sentence sound natural, not translated word for word?"
+  {
+   "en": "Have I avoided the before general or abstract nouns?",
+   "de": "Habe ich the vor allgemeinen oder abstrakten Substantiven vermieden?",
+   "es": "¿He evitado the delante de sustantivos generales o abstractos?",
+   "fr": "Ai-je évité the devant les noms généraux ou abstraits ?",
+   "it": "Ho evitato the davanti a nomi generali o astratti?",
+   "pt": "Evitei the antes de substantivos gerais ou abstratos?"
+  },
+  {
+   "en": "Is some used in positive sentences and any in questions/negatives?",
+   "de": "Wird some in bejahenden Sätzen und any in Fragen/Verneinungen verwendet?",
+   "es": "¿Se usa some en oraciones afirmativas y any en preguntas/negativas?",
+   "fr": "Some est-il utilisé dans les phrases affirmatives et any dans les questions/négations ?",
+   "it": "Si usa some nelle frasi affermative e any nelle domande/negative?",
+   "pt": "Some é usado em frases afirmativas e any em perguntas/negativas?"
+  },
+  {
+   "en": "Are much and many used with the right kind of noun?",
+   "de": "Werden much und many mit der richtigen Art von Substantiv verwendet?",
+   "es": "¿Se usan much y many con el tipo de sustantivo correcto?",
+   "fr": "Much et many sont-ils employés avec le bon type de nom ?",
+   "it": "Much e many sono usati con il tipo di nome corretto?",
+   "pt": "Much e many são usados com o tipo correto de substantivo?"
+  },
+  {
+   "en": "Does the sentence sound natural, not translated word for word?",
+   "de": "Klingt der Satz natürlich und nicht Wort für Wort übersetzt?",
+   "es": "¿La oración suena natural y no traducida palabra por palabra?",
+   "fr": "La phrase semble-t-elle naturelle et non traduite mot à mot ?",
+   "it": "La frase suona naturale e non tradotta parola per parola?",
+   "pt": "A frase soa natural e não traduzida palavra por palavra?"
+  },
+  {
+   "en": "Does the sentence sound natural, not translated word for word?",
+   "de": "Klingt der Satz natürlich und nicht Wort für Wort übersetzt?",
+   "es": "¿La oración suena natural y no traducida palabra por palabra?",
+   "fr": "La phrase semble-t-elle naturelle et non traduite mot à mot ?",
+   "it": "La frase suona naturale e non tradotta parola per parola?",
+   "pt": "A frase soa natural e não traduzida palavra por palavra?"
+  }
  ],
- "promptCorreccion": "Focus only on articles and quantifiers. Check general nouns without articles and the choice between some, any, much and many. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on articles and quantifiers. Check general nouns without articles and the choice between some, any, much and many. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf Artikel und Mengenangaben. Prüfe allgemeine Substantive ohne Artikel und die Wahl zwischen some, any, much und many. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en artículos y cuantificadores. Comprueba los sustantivos generales sin artículo y la elección entre some, any, much y many. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur les articles et les quantifieurs. Vérifie les noms généraux sans article et le choix entre some, any, much et many. Ne réécris pas le texte.",
+  "it": "Concentrati solo su articoli e quantificatori. Controlla i nomi generali senza articolo e la scelta tra some, any, much e many. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas em artigos e quantificadores. Verifique os substantivos gerais sem artigo e a escolha entre some, any, much e many. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*la gente es* rendered in the singular: *People is friendly* instead of *People are friendly*."

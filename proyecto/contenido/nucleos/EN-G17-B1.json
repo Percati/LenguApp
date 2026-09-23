@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Gerunds and Infinitives",
+ "titulo": {
+  "en": "Gerunds and Infinitives",
+  "de": "Gerundium und Infinitiv",
+  "es": "Gerundio e infinitivo",
+  "fr": "Gérondif et infinitif",
+  "it": "Gerundio e infinito",
+  "pt": "Gerúndio e infinitivo"
+ },
  "categoria": "grammar",
  "ancla": "EGP A1-B1",
- "descripcion": "At B1 you fix the most common verbs that take a gerund (enjoy, avoid) versus an infinitive (want, decide). The verbs that change meaning depending on which form follows come later, once the basic pattern is automatic.",
+ "descripcion": {
+  "en": "At B1 you fix the most common verbs that take a gerund (enjoy, avoid) versus an infinitive (want, decide). The verbs that change meaning depending on which form follows come later, once the basic pattern is automatic.",
+  "de": "Auf B1-Niveau festigst du die häufigsten Verben, auf die ein Gerundium folgt (enjoy, avoid), im Gegensatz zu Verben mit Infinitiv (want, decide). Verben, deren Bedeutung sich je nach folgender Form ändert, kommen später, wenn dieses Grundmuster sicher sitzt.",
+  "es": "En B1 afianzas los verbos más frecuentes que llevan gerundio (enjoy, avoid) frente a los que llevan infinitivo (want, decide). Los verbos que cambian de significado según la forma que los sigue se estudian más adelante, cuando el patrón básico ya es automático.",
+  "fr": "Au niveau B1, tu consolides les verbes les plus courants suivis d'un gérondif (enjoy, avoid) par opposition à ceux suivis d'un infinitif (want, decide). Les verbes dont le sens change selon la forme qui suit viendront plus tard, une fois le schéma de base automatisé.",
+  "it": "Al livello B1 consolidi i verbi più comuni seguiti dal gerundio (enjoy, avoid) rispetto a quelli seguiti dall'infinito (want, decide). I verbi che cambiano significato a seconda della forma che segue verranno più avanti, quando lo schema di base sarà automatico.",
+  "pt": "No nível B1, você fixa os verbos mais comuns seguidos de gerúndio (enjoy, avoid) em contraste com os que são seguidos de infinitivo (want, decide). Os verbos que mudam de significado conforme a forma seguinte vêm mais adiante, quando o padrão básico já estiver automático."
+ },
  "cuadroReferencia": {
-  "titulo": "Gerund or infinitive?",
+  "titulo": {
+   "en": "Gerund or infinitive?",
+   "de": "Gerundium oder Infinitiv?",
+   "es": "¿Gerundio o infinitivo?",
+   "fr": "Gérondif ou infinitif ?",
+   "it": "Gerundio o infinito?",
+   "pt": "Gerúndio ou infinitivo?"
+  },
   "columnas": [
-   "Pattern",
-   "Verbs",
-   "Example"
+   {
+    "en": "Pattern",
+    "de": "Muster",
+    "es": "Patrón",
+    "fr": "Modèle",
+    "it": "Schema",
+    "pt": "Padrão"
+   },
+   {
+    "en": "Verbs",
+    "de": "Verben",
+    "es": "Verbos",
+    "fr": "Verbes",
+    "it": "Verbi",
+    "pt": "Verbos"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "+ gerund",
-    "enjoy, finish, avoid",
-    "I enjoy reading."
+    {
+     "en": "+ gerund",
+     "de": "+ Gerundium",
+     "es": "+ gerundio",
+     "fr": "+ gérondif",
+     "it": "+ gerundio",
+     "pt": "+ gerúndio"
+    },
+    {
+     "en": "enjoy, finish, avoid",
+     "de": "enjoy, finish, avoid",
+     "es": "enjoy, finish, avoid",
+     "fr": "enjoy, finish, avoid",
+     "it": "enjoy, finish, avoid",
+     "pt": "enjoy, finish, avoid"
+    },
+    {
+     "en": "I enjoy reading.",
+     "de": "Ich lese gern.",
+     "es": "Me gusta leer.",
+     "fr": "J'aime lire.",
+     "it": "Mi piace leggere.",
+     "pt": "Eu gosto de ler."
+    }
    ],
    [
-    "+ infinitive",
-    "want, decide, hope",
-    "I want to travel more."
+    {
+     "en": "+ infinitive",
+     "de": "+ Infinitiv",
+     "es": "+ infinitivo",
+     "fr": "+ infinitif",
+     "it": "+ infinito",
+     "pt": "+ infinitivo"
+    },
+    {
+     "en": "want, decide, hope",
+     "de": "want, decide, hope",
+     "es": "want, decide, hope",
+     "fr": "want, decide, hope",
+     "it": "want, decide, hope",
+     "pt": "want, decide, hope"
+    },
+    {
+     "en": "I want to travel more.",
+     "de": "Ich möchte mehr reisen.",
+     "es": "Quiero viajar más.",
+     "fr": "Je veux voyager davantage.",
+     "it": "Voglio viaggiare di più.",
+     "pt": "Quero viajar mais."
+    }
    ],
    [
-    "After a preposition",
-    "always gerund",
-    "I'm good at cooking."
+    {
+     "en": "After a preposition",
+     "de": "Nach einer Präposition",
+     "es": "Después de una preposición",
+     "fr": "Après une préposition",
+     "it": "Dopo una preposizione",
+     "pt": "Depois de uma preposição"
+    },
+    {
+     "en": "always gerund",
+     "de": "immer Gerundium",
+     "es": "siempre gerundio",
+     "fr": "toujours le gérondif",
+     "it": "sempre gerundio",
+     "pt": "sempre gerúndio"
+    },
+    {
+     "en": "I'm good at cooking.",
+     "de": "Ich kann gut kochen.",
+     "es": "Se me da bien cocinar.",
+     "fr": "Je suis doué(e) en cuisine.",
+     "it": "Sono bravo/a a cucinare.",
+     "pt": "Eu cozinho bem."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I really enjoy reading before bed.",
+   "texto": {
+    "en": "I really enjoy reading before bed.",
+    "de": "Ich lese vor dem Schlafengehen wirklich gern.",
+    "es": "Me gusta mucho leer antes de dormir.",
+    "fr": "J'aime beaucoup lire avant de dormir.",
+    "it": "Mi piace molto leggere prima di andare a letto.",
+    "pt": "Eu gosto muito de ler antes de dormir."
+   },
    "audio": true
   },
   {
-   "texto": "I want to travel more this year.",
+   "texto": {
+    "en": "I want to travel more this year.",
+    "de": "Ich möchte dieses Jahr mehr reisen.",
+    "es": "Quiero viajar más este año.",
+    "fr": "Je veux voyager davantage cette année.",
+    "it": "Voglio viaggiare di più quest'anno.",
+    "pt": "Quero viajar mais este ano."
+   },
    "audio": true
   },
   {
-   "texto": "I decided to study English seriously."
+   "texto": {
+    "en": "I decided to study English seriously.",
+    "de": "Ich habe beschlossen, ernsthaft Englisch zu lernen.",
+    "es": "Decidí estudiar inglés en serio.",
+    "fr": "J'ai décidé d'étudier sérieusement l'anglais.",
+    "it": "Ho deciso di studiare seriamente l'inglese.",
+    "pt": "Decidi estudar inglês a sério."
+   }
   }
  ],
  "notas": [
-  "Enjoy, finish and avoid are always followed by the gerund (-ing), never the infinitive.",
-  "Want, decide and hope are always followed by the infinitive (to + verb).",
-  "After a preposition, English always uses the gerund: interested in learning."
+  {
+   "en": "Enjoy, finish and avoid are always followed by the gerund (-ing), never the infinitive.",
+   "de": "Auf enjoy, finish und avoid folgt immer das Gerundium (-ing), nie der Infinitiv.",
+   "es": "Enjoy, finish y avoid siempre van seguidos de gerundio (-ing), nunca de infinitivo.",
+   "fr": "Enjoy, finish et avoid sont toujours suivis du gérondif (-ing), jamais de l'infinitif.",
+   "it": "Enjoy, finish e avoid sono sempre seguiti dal gerundio (-ing), mai dall'infinito.",
+   "pt": "Enjoy, finish e avoid são sempre seguidos de gerúndio (-ing), nunca de infinitivo."
+  },
+  {
+   "en": "Want, decide and hope are always followed by the infinitive (to + verb).",
+   "de": "Auf want, decide und hope folgt immer der Infinitiv (to + Verb).",
+   "es": "Want, decide y hope siempre van seguidos de infinitivo (to + verbo).",
+   "fr": "Want, decide et hope sont toujours suivis de l'infinitif (to + verbe).",
+   "it": "Want, decide e hope sono sempre seguiti dall'infinito (to + verbo).",
+   "pt": "Want, decide e hope são sempre seguidos de infinitivo (to + verbo)."
+  },
+  {
+   "en": "After a preposition, English always uses the gerund: interested in learning.",
+   "de": "Nach einer Präposition verwendet das Englische immer das Gerundium: interested in learning.",
+   "es": "Después de una preposición, el inglés siempre usa gerundio: interested in learning.",
+   "fr": "Après une préposition, l'anglais utilise toujours le gérondif : interested in learning.",
+   "it": "Dopo una preposizione, l'inglese usa sempre il gerundio: interested in learning.",
+   "pt": "Depois de uma preposição, o inglês sempre usa o gerúndio: interested in learning."
+  }
  ],
  "contraste": {
   "es": "Spanish uses the infinitive more generally after almost any verb, without the systematic gerund–infinitive distinction English requires.",
@@ -58,14 +205,42 @@
   "pt": "Portuguese uses the infinitive after verbs and prepositions (antes de sair), and the Portuguese gerúndio is never used as a noun. This leads to before to leave and to Swim is good for you instead of Swimming is good for you."
  },
  "errores": [
-  "Using the infinitive after enjoy, finish or avoid.",
-  "Using the gerund after want, decide or hope.",
-  "Using the infinitive after a preposition instead of the gerund."
+  {
+   "en": "Using the infinitive after enjoy, finish or avoid.",
+   "de": "Nach enjoy, finish oder avoid den Infinitiv verwenden.",
+   "es": "Usar infinitivo después de enjoy, finish o avoid.",
+   "fr": "Utiliser l'infinitif après enjoy, finish ou avoid.",
+   "it": "Usare l'infinito dopo enjoy, finish o avoid.",
+   "pt": "Usar infinitivo depois de enjoy, finish ou avoid."
+  },
+  {
+   "en": "Using the gerund after want, decide or hope.",
+   "de": "Nach want, decide oder hope das Gerundium verwenden.",
+   "es": "Usar gerundio después de want, decide o hope.",
+   "fr": "Utiliser le gérondif après want, decide ou hope.",
+   "it": "Usare il gerundio dopo want, decide o hope.",
+   "pt": "Usar gerúndio depois de want, decide ou hope."
+  },
+  {
+   "en": "Using the infinitive after a preposition instead of the gerund.",
+   "de": "Nach einer Präposition den Infinitiv statt des Gerundiums verwenden.",
+   "es": "Usar infinitivo después de una preposición en lugar de gerundio.",
+   "fr": "Utiliser l'infinitif après une préposition au lieu du gérondif.",
+   "it": "Usare l'infinito dopo una preposizione invece del gerundio.",
+   "pt": "Usar infinitivo depois de uma preposição em vez de gerúndio."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I enjoy…-ing",
-   "funcion": "gerund after enjoy",
+   "funcion": {
+    "en": "gerund after enjoy",
+    "de": "Gerundium nach enjoy",
+    "es": "gerundio después de enjoy",
+    "fr": "gérondif après enjoy",
+    "it": "gerundio dopo enjoy",
+    "pt": "gerúndio depois de enjoy"
+   },
    "traducciones": {
     "es": "Disfruto de…",
     "de": "Ich mache gern…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "I want to…",
-   "funcion": "infinitive after want",
+   "funcion": {
+    "en": "infinitive after want",
+    "de": "Infinitiv nach want",
+    "es": "infinitivo después de want",
+    "fr": "infinitif après want",
+    "it": "infinito dopo want",
+    "pt": "infinitivo depois de want"
+   },
    "traducciones": {
     "es": "Quiero…",
     "de": "Ich möchte…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "I decided to…",
-   "funcion": "infinitive after decide",
+   "funcion": {
+    "en": "infinitive after decide",
+    "de": "Infinitiv nach decide",
+    "es": "infinitivo después de decide",
+    "fr": "infinitif après decide",
+    "it": "infinito dopo decide",
+    "pt": "infinitivo depois de decide"
+   },
    "traducciones": {
     "es": "Decidí…",
     "de": "Ich habe beschlossen,…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "I finished…-ing",
-   "funcion": "gerund after finish",
+   "funcion": {
+    "en": "gerund after finish",
+    "de": "Gerundium nach finish",
+    "es": "gerundio después de finish",
+    "fr": "gérondif après finish",
+    "it": "gerundio dopo finish",
+    "pt": "gerúndio depois de finish"
+   },
    "traducciones": {
     "es": "Terminé de…",
     "de": "Ich bin mit… fertig.",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "I hope to…",
-   "funcion": "infinitive after hope",
+   "funcion": {
+    "en": "infinitive after hope",
+    "de": "Infinitiv nach hope",
+    "es": "infinitivo después de hope",
+    "fr": "infinitif après hope",
+    "it": "infinito dopo hope",
+    "pt": "infinitivo depois de hope"
+   },
    "traducciones": {
     "es": "Espero…",
     "de": "Ich hoffe, … zu…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "I'm interested in…-ing",
-   "funcion": "gerund after a preposition",
+   "funcion": {
+    "en": "gerund after a preposition",
+    "de": "Gerundium nach einer Präposition",
+    "es": "gerundio después de una preposición",
+    "fr": "gérondif après une préposition",
+    "it": "gerundio dopo una preposizione",
+    "pt": "gerúndio depois de uma preposição"
+   },
    "traducciones": {
     "es": "Me interesa…",
     "de": "Ich interessiere mich für…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Is the gerund used after enjoy, finish and avoid?",
-  "Is the infinitive used after want, decide and hope?",
-  "Is the gerund used after every preposition?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?"
+  {
+   "en": "Is the gerund used after enjoy, finish and avoid?",
+   "de": "Steht nach enjoy, finish und avoid das Gerundium?",
+   "es": "¿Se usa gerundio después de enjoy, finish y avoid?",
+   "fr": "Le gérondif est-il utilisé après enjoy, finish et avoid ?",
+   "it": "Si usa il gerundio dopo enjoy, finish e avoid?",
+   "pt": "O gerúndio é usado depois de enjoy, finish e avoid?"
+  },
+  {
+   "en": "Is the infinitive used after want, decide and hope?",
+   "de": "Steht nach want, decide und hope der Infinitiv?",
+   "es": "¿Se usa infinitivo después de want, decide y hope?",
+   "fr": "L'infinitif est-il utilisé après want, decide et hope ?",
+   "it": "Si usa l'infinito dopo want, decide e hope?",
+   "pt": "O infinitivo é usado depois de want, decide e hope?"
+  },
+  {
+   "en": "Is the gerund used after every preposition?",
+   "de": "Steht nach jeder Präposition das Gerundium?",
+   "es": "¿Se usa gerundio después de cada preposición?",
+   "fr": "Le gérondif est-il utilisé après chaque préposition ?",
+   "it": "Si usa il gerundio dopo ogni preposizione?",
+   "pt": "O gerúndio é usado depois de toda preposição?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on gerunds and infinitives. Check each verb against the pattern it requires and check the gerund after every preposition. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on gerunds and infinitives. Check each verb against the pattern it requires and check the gerund after every preposition. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf Gerundium und Infinitiv. Prüfe bei jedem Verb, welches Muster es verlangt, und kontrolliere das Gerundium nach jeder Präposition. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en gerundios e infinitivos. Comprueba qué patrón exige cada verbo y revisa el uso del gerundio después de cada preposición. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur le gérondif et l'infinitif. Vérifie pour chaque verbe le schéma qu'il exige et contrôle l'emploi du gérondif après chaque préposition. Ne réécris pas le texte.",
+  "it": "Concentrati solo su gerundio e infinito. Controlla quale schema richiede ogni verbo e verifica l'uso del gerundio dopo ogni preposizione. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas em gerúndio e infinitivo. Verifique qual padrão cada verbo exige e confira o uso do gerúndio depois de cada preposição. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*me gusta nadar* rendered with a bare infinitive: *I like swim* instead of *I like swimming*."

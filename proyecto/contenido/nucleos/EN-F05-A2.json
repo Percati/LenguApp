@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Making and Responding to Suggestions",
+ "titulo": {
+  "en": "Making and Responding to Suggestions",
+  "de": "Vorschläge machen und darauf reagieren",
+  "es": "Hacer sugerencias y responder a ellas",
+  "fr": "Faire des suggestions et y répondre",
+  "it": "Fare proposte e rispondere",
+  "pt": "Fazer sugestões e responder a elas"
+ },
  "categoria": "fluency",
  "ancla": "EGP A2",
- "descripcion": "At A2 you make a very simple suggestion with let's or shall we, and respond with yes or no. Negotiating and proposing alternatives with more nuance comes at higher levels, once this basic exchange is solid.",
+ "descripcion": {
+  "en": "At A2 you make a very simple suggestion with let's or shall we, and respond with yes or no. Negotiating and proposing alternatives with more nuance comes at higher levels, once this basic exchange is solid.",
+  "de": "Auf A2 machst du einen sehr einfachen Vorschlag mit let's oder shall we und antwortest mit yes oder no. Verhandeln und differenziertere Alternativen vorschlagen kommt auf höheren Niveaus, wenn dieser grundlegende Austausch sicher sitzt.",
+  "es": "En A2 haces una sugerencia muy sencilla con let's o shall we y respondes con yes o no. Negociar y proponer alternativas con más matices llega en niveles superiores, una vez que este intercambio básico está bien asentado.",
+  "fr": "Au niveau A2, tu fais une suggestion très simple avec let's ou shall we et tu réponds par yes ou no. Négocier et proposer des alternatives plus nuancées vient aux niveaux supérieurs, une fois cet échange de base bien maîtrisé.",
+  "it": "A livello A2 fai una proposta molto semplice con let's o shall we e rispondi con yes o no. Negoziare e proporre alternative con più sfumature arriva ai livelli superiori, una volta consolidato questo scambio di base.",
+  "pt": "No nível A2, você faz uma sugestão bem simples com let's ou shall we e responde com yes ou no. Negociar e propor alternativas com mais nuances vem nos níveis mais altos, quando essa troca básica já estiver bem consolidada."
+ },
  "cuadroReferencia": {
-  "titulo": "Simple suggestion",
+  "titulo": {
+   "en": "Simple suggestion",
+   "de": "Einfacher Vorschlag",
+   "es": "Sugerencia sencilla",
+   "fr": "Suggestion simple",
+   "it": "Proposta semplice",
+   "pt": "Sugestão simples"
+  },
   "columnas": [
-   "Formula",
-   "Example"
+   {
+    "en": "Formula",
+    "de": "Formel",
+    "es": "Fórmula",
+    "fr": "Formule",
+    "it": "Formula",
+    "pt": "Fórmula"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Let's…",
-    "Let's go to the park."
+    {
+     "en": "Let's…",
+     "de": "Lass uns …",
+     "es": "Vamos a…",
+     "fr": "On… / Allons…",
+     "it": "Facciamo…",
+     "pt": "Vamos…"
+    },
+    {
+     "en": "Let's go to the park.",
+     "de": "Lass uns in den Park gehen.",
+     "es": "Vamos al parque.",
+     "fr": "Allons au parc.",
+     "it": "Andiamo al parco.",
+     "pt": "Vamos ao parque."
+    }
    ],
    [
-    "Shall we…?",
-    "Shall we go to the park?"
+    {
+     "en": "Shall we…?",
+     "de": "Sollen wir …?",
+     "es": "¿Vamos a…?",
+     "fr": "On… ? / Et si on… ?",
+     "it": "Andiamo…?",
+     "pt": "Vamos…?"
+    },
+    {
+     "en": "Shall we go to the park?",
+     "de": "Sollen wir in den Park gehen?",
+     "es": "¿Vamos al parque?",
+     "fr": "On va au parc ?",
+     "it": "Andiamo al parco?",
+     "pt": "Vamos ao parque?"
+    }
    ],
    [
-    "Response",
-    "Yes, great! / No, thanks."
+    {
+     "en": "Response",
+     "de": "Antwort",
+     "es": "Respuesta",
+     "fr": "Réponse",
+     "it": "Risposta",
+     "pt": "Resposta"
+    },
+    {
+     "en": "Yes, great! / No, thanks.",
+     "de": "Ja, super! / Nein, danke.",
+     "es": "¡Sí, genial! / No, gracias.",
+     "fr": "Oui, super ! / Non, merci.",
+     "it": "Sì, ottimo! / No, grazie.",
+     "pt": "Sim, ótimo! / Não, obrigado/a."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Let's go to the park this weekend.",
+   "texto": {
+    "en": "Let's go to the park this weekend.",
+    "de": "Lass uns dieses Wochenende in den Park gehen.",
+    "es": "Vamos al parque este fin de semana.",
+    "fr": "Allons au parc ce week-end.",
+    "it": "Andiamo al parco questo fine settimana.",
+    "pt": "Vamos ao parque neste fim de semana."
+   },
    "audio": true
   },
   {
-   "texto": "Shall we go to the beach instead?",
+   "texto": {
+    "en": "Shall we go to the beach instead?",
+    "de": "Sollen wir stattdessen an den Strand gehen?",
+    "es": "¿Vamos mejor a la playa?",
+    "fr": "Et si on allait plutôt à la plage ?",
+    "it": "Andiamo invece in spiaggia?",
+    "pt": "Vamos à praia em vez disso?"
+   },
    "audio": true
   },
   {
-   "texto": "Yes, great idea!"
+   "texto": {
+    "en": "Yes, great idea!",
+    "de": "Ja, tolle Idee!",
+    "es": "¡Sí, gran idea!",
+    "fr": "Oui, excellente idée !",
+    "it": "Sì, ottima idea!",
+    "pt": "Sim, ótima ideia!"
+   }
   }
  ],
  "notas": [
-  "Let's is the easiest way to suggest doing something together.",
-  "Shall we…? phrases the same idea as a question.",
-  "A clear yes or no keeps the conversation moving."
+  {
+   "en": "Let's is the easiest way to suggest doing something together.",
+   "de": "Let's ist die einfachste Art, etwas gemeinsam vorzuschlagen.",
+   "es": "Let's es la forma más fácil de sugerir hacer algo juntos.",
+   "fr": "Let's est la façon la plus simple de proposer de faire quelque chose ensemble.",
+   "it": "Let's è il modo più semplice per proporre di fare qualcosa insieme.",
+   "pt": "Let's é a forma mais fácil de sugerir fazer algo juntos."
+  },
+  {
+   "en": "Shall we…? phrases the same idea as a question.",
+   "de": "Shall we…? formuliert dieselbe Idee als Frage.",
+   "es": "Shall we…? expresa la misma idea en forma de pregunta.",
+   "fr": "Shall we…? exprime la même idée sous forme de question.",
+   "it": "Shall we…? esprime la stessa idea sotto forma di domanda.",
+   "pt": "Shall we…? expressa a mesma ideia em forma de pergunta."
+  },
+  {
+   "en": "A clear yes or no keeps the conversation moving.",
+   "de": "Ein klares yes oder no hält das Gespräch in Gang.",
+   "es": "Un yes o no claro hace que la conversación siga avanzando.",
+   "fr": "Un yes ou no clair permet à la conversation de continuer.",
+   "it": "Un yes o no chiaro fa andare avanti la conversazione.",
+   "pt": "Um yes ou no claro mantém a conversa fluindo."
+  }
  ],
  "contraste": {
   "es": "Vamos a… corresponds to let's…, so simple suggestions transfer directly.",
@@ -54,13 +173,34 @@
   "pt": "Vamos… corresponds to let's…, so simple suggestions transfer directly."
  },
  "errores": [
-  "Not responding clearly to a suggestion.",
-  "Confusing let's with let."
+  {
+   "en": "Not responding clearly to a suggestion.",
+   "de": "Nicht klar auf einen Vorschlag antworten.",
+   "es": "No responder con claridad a una sugerencia.",
+   "fr": "Ne pas répondre clairement à une suggestion.",
+   "it": "Non rispondere chiaramente a una proposta.",
+   "pt": "Não responder claramente a uma sugestão."
+  },
+  {
+   "en": "Confusing let's with let.",
+   "de": "Let's und let verwechseln.",
+   "es": "Confundir let's con let.",
+   "fr": "Confondre let's et let.",
+   "it": "Confondere let's con let.",
+   "pt": "Confundir let's com let."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Let's…",
-   "funcion": "suggestion",
+   "funcion": {
+    "en": "suggestion",
+    "de": "Vorschlag",
+    "es": "propuesta",
+    "fr": "proposition",
+    "it": "proposta",
+    "pt": "sugestão"
+   },
    "traducciones": {
     "es": "Vamos a…",
     "de": "Lass uns…",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "Shall we…?",
-   "funcion": "suggestion as a question",
+   "funcion": {
+    "en": "suggestion as a question",
+    "de": "Vorschlag als Frage",
+    "es": "propuesta en forma de pregunta",
+    "fr": "proposition sous forme de question",
+    "it": "proposta come domanda",
+    "pt": "sugestão em forma de pergunta"
+   },
    "traducciones": {
     "es": "¿Vamos a…?",
     "de": "Wollen wir…?",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "Yes, great!",
-   "funcion": "acceptance",
+   "funcion": {
+    "en": "acceptance",
+    "de": "Annahme",
+    "es": "aceptación",
+    "fr": "acceptation",
+    "it": "accettazione",
+    "pt": "aceitação"
+   },
    "traducciones": {
     "es": "¡Sí, genial!",
     "de": "Ja, super!",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "No, thanks.",
-   "funcion": "polite refusal",
+   "funcion": {
+    "en": "polite refusal",
+    "de": "Ablehnung, höflich",
+    "es": "rechazo cortés",
+    "fr": "refus poli",
+    "it": "rifiuto cortese",
+    "pt": "recusa educada"
+   },
    "traducciones": {
     "es": "No, gracias.",
     "de": "Nein, danke.",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "Good idea!",
-   "funcion": "acceptance",
+   "funcion": {
+    "en": "acceptance",
+    "de": "Annahme",
+    "es": "aceptación",
+    "fr": "acceptation",
+    "it": "accettazione",
+    "pt": "aceitação"
+   },
    "traducciones": {
     "es": "¡Buena idea!",
     "de": "Gute Idee!",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "Maybe another time.",
-   "funcion": "polite refusal",
+   "funcion": {
+    "en": "polite refusal",
+    "de": "Ablehnung, höflich",
+    "es": "rechazo cortés",
+    "fr": "refus poli",
+    "it": "rifiuto cortese",
+    "pt": "recusa educada"
+   },
    "traducciones": {
     "es": "Quizás otro día.",
     "de": "Vielleicht ein anderes Mal.",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Is the suggestion clear?",
-  "Have I responded clearly?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?"
+  {
+   "en": "Is the suggestion clear?",
+   "de": "Ist der Vorschlag klar?",
+   "es": "¿La propuesta está clara?",
+   "fr": "La proposition est-elle claire ?",
+   "it": "La proposta è chiara?",
+   "pt": "A sugestão está clara?"
+  },
+  {
+   "en": "Have I responded clearly?",
+   "de": "Habe ich klar geantwortet?",
+   "es": "¿He respondido con claridad?",
+   "fr": "Ai-je répondu clairement ?",
+   "it": "Ho risposto chiaramente?",
+   "pt": "Respondi com clareza?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on the suggestion and the response. Check whether both are clear. Do not rewrite the text. Check whether the response fits the suggestion. Flag anything unclear.",
+ "promptCorreccion": {
+  "en": "Focus only on the suggestion and the response. Check whether both are clear. Do not rewrite the text. Check whether the response fits the suggestion. Flag anything unclear.",
+  "de": "Achte nur auf den Vorschlag und die Antwort. Prüfe, ob beides klar ist. Formuliere den Text nicht neu. Prüfe, ob die Antwort zum Vorschlag passt. Markiere alles, was unklar ist.",
+  "es": "Concéntrate solo en la sugerencia y la respuesta. Comprueba si ambas están claras. No reescribas el texto. Comprueba si la respuesta encaja con la sugerencia. Señala cualquier cosa que no esté clara.",
+  "fr": "Concentre-toi uniquement sur la suggestion et la réponse. Vérifie si les deux sont claires. Ne réécris pas le texte. Vérifie si la réponse correspond à la suggestion. Signale tout ce qui n’est pas clair.",
+  "it": "Concentrati solo sulla proposta e sulla risposta. Controlla se entrambe sono chiare. Non riscrivere il testo. Verifica se la risposta è coerente con la proposta. Segnala tutto ciò che non è chiaro.",
+  "pt": "Concentre-se apenas na sugestão e na resposta. Verifique se ambas estão claras. Não reescreva o texto. Confira se a resposta combina com a sugestão. Sinalize qualquer coisa que não esteja clara."
+ },
  "erroresContrastivos": {
   "es": [
    "*¿Vamos?* rendered as *We go?* instead of *Shall we go?* or *Let's go*."

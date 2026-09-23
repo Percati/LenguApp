@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Modals of Deduction",
+ "titulo": {
+  "en": "Modals of Deduction",
+  "de": "Modalverben für Schlussfolgerungen",
+  "es": "Modales de deducción",
+  "fr": "Modaux de déduction",
+  "it": "Modali di deduzione",
+  "pt": "Modais de dedução"
+ },
  "categoria": "grammar",
  "ancla": "EGP B1/B2",
- "descripcion": "At B1 you make a simple deduction with must be and can't be about the present, based on real evidence you can see or infer. The past forms, like must have been, come later once this basic present form is automatic.",
+ "descripcion": {
+  "en": "At B1 you make a simple deduction with must be and can't be about the present, based on real evidence you can see or infer. The past forms, like must have been, come later once this basic present form is automatic.",
+  "de": "Auf B1-Niveau ziehst du mit must be und can't be einfache Schlussfolgerungen über die Gegenwart, die auf konkreten Hinweisen beruhen, die du sehen oder erschließen kannst. Vergangenheitsformen wie must have been kommen später, wenn diese grundlegende Gegenwartsform sicher beherrscht wird.",
+  "es": "En B1 haces deducciones sencillas sobre el presente con must be y can't be, basándote en pruebas reales que puedes ver o inferir. Las formas de pasado, como must have been, se estudian más adelante, cuando esta estructura básica de presente ya está automatizada.",
+  "fr": "Au niveau B1, tu fais des déductions simples sur le présent avec must be et can't be, à partir d'indices réels que tu peux voir ou déduire. Les formes au passé, comme must have been, viendront plus tard, une fois cette forme de base au présent automatisée.",
+  "it": "Al livello B1 fai semplici deduzioni sul presente con must be e can't be, basandoti su prove reali che puoi vedere o dedurre. Le forme al passato, come must have been, verranno più avanti, quando questa forma di base al presente sarà automatica.",
+  "pt": "No nível B1, você faz deduções simples sobre o presente com must be e can't be, com base em evidências reais que pode ver ou inferir. As formas de passado, como must have been, vêm mais adiante, quando essa forma básica no presente já estiver automática."
+ },
  "cuadroReferencia": {
-  "titulo": "Simple present deduction",
+  "titulo": {
+   "en": "Simple present deduction",
+   "de": "Einfache Schlussfolgerung über die Gegenwart",
+   "es": "Deducción simple sobre el presente",
+   "fr": "Déduction simple au présent",
+   "it": "Deduzione semplice sul presente",
+   "pt": "Dedução simples sobre o presente"
+  },
   "columnas": [
-   "Certainty",
-   "Form",
-   "Example"
+   {
+    "en": "Certainty",
+    "de": "Sicherheit",
+    "es": "Certeza",
+    "fr": "Certitude",
+    "it": "Certezza",
+    "pt": "Certeza"
+   },
+   {
+    "en": "Form",
+    "de": "Form",
+    "es": "Forma",
+    "fr": "Forme",
+    "it": "Forma",
+    "pt": "Forma"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Near-certain",
-    "must be",
-    "She must be tired."
+    {
+     "en": "Near-certain",
+     "de": "nahezu sicher",
+     "es": "casi seguro",
+     "fr": "quasi certain",
+     "it": "quasi certo",
+     "pt": "quase certo"
+    },
+    {
+     "en": "must be",
+     "de": "must be",
+     "es": "must be",
+     "fr": "must be",
+     "it": "must be",
+     "pt": "must be"
+    },
+    {
+     "en": "She must be tired.",
+     "de": "Sie muss müde sein.",
+     "es": "Debe de estar cansada.",
+     "fr": "Elle doit être fatiguée.",
+     "it": "Deve essere stanca.",
+     "pt": "Ela deve estar cansada."
+    }
    ],
    [
-    "Ruled out",
-    "can't be",
-    "That can't be true."
+    {
+     "en": "Ruled out",
+     "de": "ausgeschlossen",
+     "es": "descartado",
+     "fr": "exclu",
+     "it": "escluso",
+     "pt": "descartado"
+    },
+    {
+     "en": "can't be",
+     "de": "can't be",
+     "es": "can't be",
+     "fr": "can't be",
+     "it": "can't be",
+     "pt": "can't be"
+    },
+    {
+     "en": "That can't be true.",
+     "de": "Das kann nicht stimmen.",
+     "es": "Eso no puede ser verdad.",
+     "fr": "Ça ne peut pas être vrai.",
+     "it": "Non può essere vero.",
+     "pt": "Isso não pode ser verdade."
+    }
    ],
    [
-    "With a reason",
-    "must be…because…",
-    "He must be tired because he worked all night."
+    {
+     "en": "With a reason",
+     "de": "mit Begründung",
+     "es": "con una razón",
+     "fr": "avec une raison",
+     "it": "con una motivazione",
+     "pt": "com uma justificativa"
+    },
+    {
+     "en": "must be…because…",
+     "de": "must be…because…",
+     "es": "must be…because…",
+     "fr": "must be…because…",
+     "it": "must be…because…",
+     "pt": "must be…because…"
+    },
+    {
+     "en": "He must be tired because he worked all night.",
+     "de": "Er muss müde sein, weil er die ganze Nacht gearbeitet hat.",
+     "es": "Debe de estar cansado porque trabajó toda la noche.",
+     "fr": "Il doit être fatigué parce qu'il a travaillé toute la nuit.",
+     "it": "Deve essere stanco perché ha lavorato tutta la notte.",
+     "pt": "Ele deve estar cansado porque trabalhou a noite toda."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "She must be really tired after that trip.",
+   "texto": {
+    "en": "She must be really tired after that trip.",
+    "de": "Nach dieser Reise muss sie wirklich müde sein.",
+    "es": "Debe de estar muy cansada después de ese viaje.",
+    "fr": "Elle doit être vraiment fatiguée après ce voyage.",
+    "it": "Deve essere davvero stanca dopo quel viaggio.",
+    "pt": "Ela deve estar muito cansada depois dessa viagem."
+   },
    "audio": true
   },
   {
-   "texto": "That can't be true, it doesn't make sense.",
+   "texto": {
+    "en": "That can't be true, it doesn't make sense.",
+    "de": "Das kann nicht stimmen, das ergibt keinen Sinn.",
+    "es": "Eso no puede ser verdad, no tiene sentido.",
+    "fr": "Ça ne peut pas être vrai, ça n'a aucun sens.",
+    "it": "Non può essere vero, non ha senso.",
+    "pt": "Isso não pode ser verdade, não faz sentido."
+   },
    "audio": true
   },
   {
-   "texto": "He must be at home, his car is outside."
+   "texto": {
+    "en": "He must be at home, his car is outside.",
+    "de": "Er muss zu Hause sein, sein Auto steht draußen.",
+    "es": "Debe de estar en casa, su auto está afuera.",
+    "fr": "Il doit être chez lui, sa voiture est dehors.",
+    "it": "Deve essere a casa, la sua auto è fuori.",
+    "pt": "Ele deve estar em casa, o carro dele está lá fora."
+   }
   }
  ],
  "notas": [
-  "Must be expresses a strong, confident guess based on evidence.",
-  "Can't be is the negative form used to rule something out — not mustn't be.",
-  "These deductions are about the present situation, not the past."
+  {
+   "en": "Must be expresses a strong, confident guess based on evidence.",
+   "de": "Must be drückt eine sehr sichere Vermutung aus, die auf Hinweisen beruht.",
+   "es": "Must be expresa una suposición muy segura basada en evidencias.",
+   "fr": "Must be exprime une supposition très sûre fondée sur des indices.",
+   "it": "Must be esprime un'ipotesi molto sicura basata su indizi.",
+   "pt": "Must be expressa uma suposição muito segura baseada em evidências."
+  },
+  {
+   "en": "Can't be is the negative form used to rule something out — not mustn't be.",
+   "de": "Can't be ist die negative Form, mit der etwas ausgeschlossen wird – nicht mustn't be.",
+   "es": "Can't be es la forma negativa que se usa para descartar algo, no mustn't be.",
+   "fr": "Can't be est la forme négative utilisée pour exclure quelque chose, pas mustn't be.",
+   "it": "Can't be è la forma negativa usata per escludere qualcosa, non mustn't be.",
+   "pt": "Can't be é a forma negativa usada para descartar algo — não mustn't be."
+  },
+  {
+   "en": "These deductions are about the present situation, not the past.",
+   "de": "Diese Schlussfolgerungen beziehen sich auf die aktuelle Situation, nicht auf die Vergangenheit.",
+   "es": "Estas deducciones se refieren a la situación presente, no al pasado.",
+   "fr": "Ces déductions concernent la situation présente, pas le passé.",
+   "it": "Queste deduzioni riguardano la situazione presente, non il passato.",
+   "pt": "Essas deduções se referem à situação presente, não ao passado."
+  }
  ],
  "contraste": {
   "es": "Spanish uses deber de + infinitive for similar deductions (debe de estar cansada), which transfers well to English must be.",
@@ -58,14 +205,42 @@
   "pt": "Portuguese has the same structure: deve estar cansada (she must be tired) and não pode estar cansada (she can't be tired). Portuguese speakers therefore handle present-time deduction with very little interference."
  },
  "errores": [
-  "Using mustn't be instead of can't be to rule something out.",
-  "Using must for permission instead of deduction.",
-  "Making a deduction without any real evidence."
+  {
+   "en": "Using mustn't be instead of can't be to rule something out.",
+   "de": "Mustn't be statt can't be verwenden, um etwas auszuschließen.",
+   "es": "Usar mustn't be en lugar de can't be para descartar algo.",
+   "fr": "Utiliser mustn't be au lieu de can't be pour exclure quelque chose.",
+   "it": "Usare mustn't be invece di can't be per escludere qualcosa.",
+   "pt": "Usar mustn't be em vez de can't be para descartar algo."
+  },
+  {
+   "en": "Using must for permission instead of deduction.",
+   "de": "Must für Erlaubnis statt für eine Schlussfolgerung verwenden.",
+   "es": "Usar must para permiso en lugar de una deducción.",
+   "fr": "Utiliser must pour la permission au lieu d'une déduction.",
+   "it": "Usare must per il permesso invece che per una deduzione.",
+   "pt": "Usar must para permissão em vez de dedução."
+  },
+  {
+   "en": "Making a deduction without any real evidence.",
+   "de": "Eine Schlussfolgerung ohne konkrete Hinweise ziehen.",
+   "es": "Hacer una deducción sin ninguna evidencia real.",
+   "fr": "Faire une déduction sans aucun indice réel.",
+   "it": "Fare una deduzione senza prove reali.",
+   "pt": "Fazer uma dedução sem nenhuma evidência real."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…must be…",
-   "funcion": "confident deduction",
+   "funcion": {
+    "en": "confident deduction",
+    "de": "sichere Schlussfolgerung",
+    "es": "deducción segura",
+    "fr": "déduction certaine",
+    "it": "deduzione sicura",
+    "pt": "dedução segura"
+   },
    "traducciones": {
     "es": "Debe de estar/ser…",
     "de": "…muss… sein",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "…can't be…",
-   "funcion": "rules something out",
+   "funcion": {
+    "en": "rules something out",
+    "de": "schließt etwas aus",
+    "es": "descarta algo",
+    "fr": "exclut quelque chose",
+    "it": "esclude qualcosa",
+    "pt": "descarta algo"
+   },
    "traducciones": {
     "es": "No puede ser…",
     "de": "…kann nicht… sein",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "That makes sense.",
-   "funcion": "confirms a deduction",
+   "funcion": {
+    "en": "confirms a deduction",
+    "de": "bestätigt eine Schlussfolgerung",
+    "es": "confirma una deducción",
+    "fr": "confirme une déduction",
+    "it": "conferma una deduzione",
+    "pt": "confirma uma dedução"
+   },
    "traducciones": {
     "es": "Eso tiene sentido.",
     "de": "Das ergibt Sinn.",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "It must be because…",
-   "funcion": "deduction with a reason",
+   "funcion": {
+    "en": "deduction with a reason",
+    "de": "Schlussfolgerung mit Begründung",
+    "es": "deducción con una razón",
+    "fr": "déduction avec justification",
+    "it": "deduzione con una motivazione",
+    "pt": "dedução com justificativa"
+   },
    "traducciones": {
     "es": "Debe de ser porque…",
     "de": "Es muss daran liegen, dass…",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "I guess…",
-   "funcion": "softer deduction",
+   "funcion": {
+    "en": "softer deduction",
+    "de": "vorsichtigere Schlussfolgerung",
+    "es": "deducción más prudente",
+    "fr": "déduction plus prudente",
+    "it": "deduzione più cauta",
+    "pt": "dedução mais cautelosa"
+   },
    "traducciones": {
     "es": "Supongo que…",
     "de": "Ich schätze,…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "That would explain it.",
-   "funcion": "confirms with a reason",
+   "funcion": {
+    "en": "confirms with a reason",
+    "de": "bestätigt mit Begründung",
+    "es": "confirma con una razón",
+    "fr": "confirme avec une justification",
+    "it": "conferma con una motivazione",
+    "pt": "confirma com uma justificativa"
+   },
    "traducciones": {
     "es": "Eso lo explicaría.",
     "de": "Das würde es erklären.",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Is can't be used to rule something out, not mustn't be?",
-  "Is the deduction based on real evidence?",
-  "Have I used both must be and can't be?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?"
+  {
+   "en": "Is can't be used to rule something out, not mustn't be?",
+   "de": "Wird can't be verwendet, um etwas auszuschließen, und nicht mustn't be?",
+   "es": "¿Se usa can't be para descartar algo, y no mustn't be?",
+   "fr": "Can't be est-il utilisé pour exclure quelque chose, et non mustn't be ?",
+   "it": "Si usa can't be per escludere qualcosa, e non mustn't be?",
+   "pt": "Can't be é usado para descartar algo, e não mustn't be?"
+  },
+  {
+   "en": "Is the deduction based on real evidence?",
+   "de": "Beruht die Schlussfolgerung auf konkreten Hinweisen?",
+   "es": "¿La deducción se basa en evidencias reales?",
+   "fr": "La déduction repose-t-elle sur des indices réels ?",
+   "it": "La deduzione si basa su prove reali?",
+   "pt": "A dedução se baseia em evidências reais?"
+  },
+  {
+   "en": "Have I used both must be and can't be?",
+   "de": "Habe ich sowohl must be als auch can't be verwendet?",
+   "es": "¿He usado tanto must be como can't be?",
+   "fr": "Ai-je utilisé à la fois must be et can't be ?",
+   "it": "Ho usato sia must be sia can't be?",
+   "pt": "Usei tanto must be quanto can't be?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on must be and can't be for present deduction. Check that can't be, not mustn't be, is used to rule something out. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on must be and can't be for present deduction. Check that can't be, not mustn't be, is used to rule something out. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf must be und can't be für Schlussfolgerungen über die Gegenwart. Prüfe, ob zum Ausschließen can't be und nicht mustn't be verwendet wird. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en must be y can't be para deducciones sobre el presente. Comprueba que se use can't be, y no mustn't be, para descartar algo. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur must be et can't be pour les déductions au présent. Vérifie que can't be, et non mustn't be, est utilisé pour exclure quelque chose. Ne réécris pas le texte.",
+  "it": "Concentrati solo su must be e can't be per le deduzioni sul presente. Controlla che per escludere qualcosa si usi can't be, non mustn't be. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas em must be e can't be para deduções sobre o presente. Verifique se can't be, e não mustn't be, é usado para descartar algo. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*deber de* rendered with *to*: *He must to be tired* instead of *He must be tired*."

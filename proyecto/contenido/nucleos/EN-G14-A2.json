@@ -3,52 +3,199 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Relative Clauses: Defining and Non-defining",
+ "titulo": {
+  "en": "Relative Clauses: Defining and Non-defining",
+  "de": "Relativsätze: bestimmend und nicht bestimmend",
+  "es": "Oraciones de relativo: especificativas y explicativas",
+  "fr": "Propositions relatives : déterminatives et explicatives",
+  "it": "Proposizioni relative: restrittive e non restrittive",
+  "pt": "Orações relativas: restritivas e explicativas"
+ },
  "categoria": "grammar",
  "ancla": "EGP A2",
- "descripcion": "At A2 you build a very simple defining relative clause with who for people and that for things, to say which person or thing you mean. Non-defining clauses and finer quantifiers like much/many come at higher levels.",
+ "descripcion": {
+  "en": "At A2 you build a very simple defining relative clause with who for people and that for things, to say which person or thing you mean. Non-defining clauses and finer quantifiers like much/many come at higher levels.",
+  "de": "Auf A2 bildest du einen sehr einfachen bestimmenden Relativsatz mit who für Personen und that für Dinge, um zu sagen, welche Person oder Sache gemeint ist. Nicht bestimmende Relativsätze und feinere Quantoren wie much/many kommen auf höheren Niveaus.",
+  "es": "En A2 construyes una oración de relativo especificativa muy sencilla con who para personas y that para cosas, para indicar de qué persona o cosa hablas. Las relativas explicativas y cuantificadores más finos como much/many llegan en niveles superiores.",
+  "fr": "Au niveau A2, tu construis une relative déterminative très simple avec who pour les personnes et that pour les choses, afin de préciser de quelle personne ou chose tu parles. Les relatives explicatives et des quantifieurs plus fins comme much/many viennent aux niveaux supérieurs.",
+  "it": "A livello A2 costruisci una proposizione relativa restrittiva molto semplice con who per le persone e that per le cose, per specificare quale persona o cosa intendi. Le relative non restrittive e quantificatori più fini come much/many arrivano ai livelli superiori.",
+  "pt": "No nível A2, você constrói uma oração relativa restritiva bem simples com who para pessoas e that para coisas, para indicar de qual pessoa ou coisa está falando. As relativas explicativas e quantificadores mais detalhados como much/many vêm nos níveis mais altos."
+ },
  "cuadroReferencia": {
-  "titulo": "Simple relative clauses",
+  "titulo": {
+   "en": "Simple relative clauses",
+   "de": "Einfache Relativsätze",
+   "es": "Oraciones de relativo sencillas",
+   "fr": "Propositions relatives simples",
+   "it": "Proposizioni relative semplici",
+   "pt": "Orações relativas simples"
+  },
   "columnas": [
-   "Pronoun",
-   "Used for",
-   "Example"
+   {
+    "en": "Pronoun",
+    "de": "Pronomen",
+    "es": "Pronombre",
+    "fr": "Pronom",
+    "it": "Pronome",
+    "pt": "Pronome"
+   },
+   {
+    "en": "Used for",
+    "de": "Verwendet für",
+    "es": "Se usa para",
+    "fr": "Utilisé pour",
+    "it": "Usato per",
+    "pt": "Usado para"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "who",
-    "people",
-    "The man who called is my neighbour."
+    {
+     "en": "who",
+     "de": "who",
+     "es": "who",
+     "fr": "who",
+     "it": "who",
+     "pt": "who"
+    },
+    {
+     "en": "people",
+     "de": "Personen",
+     "es": "personas",
+     "fr": "personnes",
+     "it": "persone",
+     "pt": "pessoas"
+    },
+    {
+     "en": "The man who called is my neighbour.",
+     "de": "Der Mann, der angerufen hat, ist mein Nachbar.",
+     "es": "El hombre que llamó es mi vecino.",
+     "fr": "L’homme qui a appelé est mon voisin.",
+     "it": "L’uomo che ha chiamato è il mio vicino.",
+     "pt": "O homem que ligou é meu vizinho."
+    }
    ],
    [
-    "that",
-    "things",
-    "The book that I read was good."
+    {
+     "en": "that",
+     "de": "that",
+     "es": "that",
+     "fr": "that",
+     "it": "that",
+     "pt": "that"
+    },
+    {
+     "en": "things",
+     "de": "Dinge",
+     "es": "cosas",
+     "fr": "choses",
+     "it": "cose",
+     "pt": "coisas"
+    },
+    {
+     "en": "The book that I read was good.",
+     "de": "Das Buch, das ich gelesen habe, war gut.",
+     "es": "El libro que leí estaba bueno.",
+     "fr": "Le livre que j’ai lu était bien.",
+     "it": "Il libro che ho letto era bello.",
+     "pt": "O livro que li era bom."
+    }
    ],
    [
-    "Common opener",
-    "both",
-    "The person who/The thing that…"
+    {
+     "en": "Common opener",
+     "de": "Häufiger Einstieg",
+     "es": "Inicio frecuente",
+     "fr": "Début fréquent",
+     "it": "Apertura comune",
+     "pt": "Início comum"
+    },
+    {
+     "en": "both",
+     "de": "beides",
+     "es": "ambos",
+     "fr": "les deux",
+     "it": "entrambi",
+     "pt": "ambos"
+    },
+    {
+     "en": "The person who/The thing that…",
+     "de": "Die Person, die … / Das Ding, das …",
+     "es": "La persona que… / La cosa que…",
+     "fr": "La personne qui… / La chose que…",
+     "it": "La persona che… / La cosa che…",
+     "pt": "A pessoa que… / A coisa que…"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "The man who called earlier is my neighbour.",
+   "texto": {
+    "en": "The man who called earlier is my neighbour.",
+    "de": "Der Mann, der vorhin angerufen hat, ist mein Nachbar.",
+    "es": "El hombre que llamó antes es mi vecino.",
+    "fr": "L’homme qui a appelé tout à l’heure est mon voisin.",
+    "it": "L’uomo che ha chiamato prima è il mio vicino.",
+    "pt": "O homem que ligou mais cedo é meu vizinho."
+   },
    "audio": true
   },
   {
-   "texto": "The book that I read was really good.",
+   "texto": {
+    "en": "The book that I read was really good.",
+    "de": "Das Buch, das ich gelesen habe, war wirklich gut.",
+    "es": "El libro que leí estaba muy bueno.",
+    "fr": "Le livre que j’ai lu était vraiment bien.",
+    "it": "Il libro che ho letto era davvero bello.",
+    "pt": "O livro que li era muito bom."
+   },
    "audio": true
   },
   {
-   "texto": "This is the shop that everyone likes."
+   "texto": {
+    "en": "This is the shop that everyone likes.",
+    "de": "Das ist der Laden, den alle mögen.",
+    "es": "Esta es la tienda que le gusta a todo el mundo.",
+    "fr": "C’est le magasin que tout le monde aime.",
+    "it": "Questo è il negozio che piace a tutti.",
+    "pt": "Esta é a loja de que todo mundo gosta."
+   }
   }
  ],
  "notas": [
-  "Who is for people, that is for things and can also work for people informally.",
-  "There's no comma before this kind of relative clause.",
-  "The relative pronoun can sometimes be left out: the book I read."
+  {
+   "en": "Who is for people, that is for things and can also work for people informally.",
+   "de": "Who verwendet man für Personen; that für Dinge, und informell kann that auch für Personen stehen.",
+   "es": "Who se usa para personas; that, para cosas, y de manera informal that también puede usarse para personas.",
+   "fr": "Who s’utilise pour les personnes ; that pour les choses, et de manière informelle that peut aussi s’utiliser pour les personnes.",
+   "it": "Who si usa per le persone; that per le cose, e informalmente that può essere usato anche per le persone.",
+   "pt": "Who é usado para pessoas; that, para coisas, e informalmente that também pode ser usado para pessoas."
+  },
+  {
+   "en": "There's no comma before this kind of relative clause.",
+   "de": "Vor dieser Art von Relativsatz steht kein Komma.",
+   "es": "No se pone coma antes de este tipo de oración de relativo.",
+   "fr": "Il n’y a pas de virgule avant ce type de proposition relative.",
+   "it": "Non si mette la virgola prima di questo tipo di proposizione relativa.",
+   "pt": "Não se usa vírgula antes desse tipo de oração relativa."
+  },
+  {
+   "en": "The relative pronoun can sometimes be left out: the book I read.",
+   "de": "Das Relativpronomen kann manchmal weggelassen werden: the book I read.",
+   "es": "A veces se puede omitir el pronombre relativo: the book I read.",
+   "fr": "Le pronom relatif peut parfois être omis : the book I read.",
+   "it": "Il pronome relativo a volte può essere omesso: the book I read.",
+   "pt": "O pronome relativo às vezes pode ser omitido: the book I read."
+  }
  ],
  "contraste": {
   "es": "Spanish uses que for almost everything, without distinguishing people from things, so Spanish speakers need to remember to use who for people in English.",
@@ -58,13 +205,34 @@
   "pt": "Portuguese que is used for people and things. English uses who for people and that or which for things, so Portuguese speakers need to check: is it a person or a thing?"
  },
  "errores": [
-  "Using that for a person instead of who.",
-  "Adding a comma before this kind of clause."
+  {
+   "en": "Using that for a person instead of who.",
+   "de": "That für eine Person statt who verwenden.",
+   "es": "Usar that para una persona en vez de who.",
+   "fr": "Utiliser that pour une personne au lieu de who.",
+   "it": "Usare that per una persona invece di who.",
+   "pt": "Usar that para uma pessoa em vez de who."
+  },
+  {
+   "en": "Adding a comma before this kind of clause.",
+   "de": "Vor dieser Art von Relativsatz ein Komma setzen.",
+   "es": "Añadir una coma antes de este tipo de oración.",
+   "fr": "Ajouter une virgule avant ce type de proposition.",
+   "it": "Aggiungere una virgola prima di questo tipo di proposizione.",
+   "pt": "Adicionar uma vírgula antes desse tipo de oração."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…who…",
-   "funcion": "about a person",
+   "funcion": {
+    "en": "about a person",
+    "de": "über eine Person",
+    "es": "sobre una persona",
+    "fr": "à propos d’une personne",
+    "it": "su una persona",
+    "pt": "sobre uma pessoa"
+   },
    "traducciones": {
     "es": "…que…",
     "de": "…der/die…",
@@ -75,7 +243,14 @@
   },
   {
    "expresion": "…that…",
-   "funcion": "about a thing",
+   "funcion": {
+    "en": "about a thing",
+    "de": "über eine Sache",
+    "es": "sobre una cosa",
+    "fr": "à propos d’une chose",
+    "it": "su una cosa",
+    "pt": "sobre uma coisa"
+   },
    "traducciones": {
     "es": "…que…",
     "de": "…dass…",
@@ -86,7 +261,14 @@
   },
   {
    "expresion": "The person who…",
-   "funcion": "common opener",
+   "funcion": {
+    "en": "common opener",
+    "de": "häufiger Einstieg",
+    "es": "inicio frecuente",
+    "fr": "début fréquent",
+    "it": "apertura comune",
+    "pt": "início comum"
+   },
    "traducciones": {
     "es": "La persona que…",
     "de": "Die Person, die…",
@@ -97,7 +279,14 @@
   },
   {
    "expresion": "The thing that…",
-   "funcion": "common opener",
+   "funcion": {
+    "en": "common opener",
+    "de": "häufiger Einstieg",
+    "es": "inicio frecuente",
+    "fr": "début fréquent",
+    "it": "apertura comune",
+    "pt": "início comum"
+   },
    "traducciones": {
     "es": "Lo que…",
     "de": "Das, was…",
@@ -108,7 +297,14 @@
   },
   {
    "expresion": "The place that…",
-   "funcion": "about a place",
+   "funcion": {
+    "en": "about a place",
+    "de": "über einen Ort",
+    "es": "sobre un lugar",
+    "fr": "à propos d’un lieu",
+    "it": "su un luogo",
+    "pt": "sobre um lugar"
+   },
    "traducciones": {
     "es": "El lugar que…",
     "de": "Der Ort, der…",
@@ -119,7 +315,14 @@
   },
   {
    "expresion": "…I know.",
-   "funcion": "pronoun dropped, informal",
+   "funcion": {
+    "en": "pronoun dropped, informal",
+    "de": "Pronomen weggelassen, informell",
+    "es": "pronombre omitido, informal",
+    "fr": "pronom omis, informel",
+    "it": "pronome omesso, informale",
+    "pt": "pronome omitido, informal"
+   },
    "traducciones": {
     "es": "…que conozco.",
     "de": "…die/den/das ich kenne.",
@@ -130,13 +333,55 @@
   }
  ],
  "autochequeo": [
-  "Is who used for people?",
-  "Is there no comma before the clause?",
-  "Have I used both who and that?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?"
+  {
+   "en": "Is who used for people?",
+   "de": "Wird who für Personen verwendet?",
+   "es": "¿Se usa who para personas?",
+   "fr": "Who est-il utilisé pour les personnes ?",
+   "it": "Si usa who per le persone?",
+   "pt": "Who é usado para pessoas?"
+  },
+  {
+   "en": "Is there no comma before the clause?",
+   "de": "Steht kein Komma vor dem Relativsatz?",
+   "es": "¿No hay coma antes de la oración?",
+   "fr": "N’y a-t-il pas de virgule avant la proposition ?",
+   "it": "Non c’è una virgola prima della proposizione?",
+   "pt": "Não há vírgula antes da oração?"
+  },
+  {
+   "en": "Have I used both who and that?",
+   "de": "Habe ich sowohl who als auch that verwendet?",
+   "es": "¿He usado tanto who como that?",
+   "fr": "Ai-je utilisé à la fois who et that ?",
+   "it": "Ho usato sia who sia that?",
+   "pt": "Usei tanto who quanto that?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on defining relative clauses. Check the choice between who and that. Do not rewrite the text. Flag anything unclear or unnatural. Flag anything unclear.",
+ "promptCorreccion": {
+  "en": "Focus only on defining relative clauses. Check the choice between who and that. Do not rewrite the text. Flag anything unclear or unnatural. Flag anything unclear.",
+  "de": "Achte nur auf bestimmende Relativsätze. Prüfe die Wahl zwischen who und that. Formuliere den Text nicht neu. Markiere alles, was unklar oder unnatürlich ist. Markiere alles, was unklar ist.",
+  "es": "Concéntrate solo en las oraciones de relativo especificativas. Comprueba la elección entre who y that. No reescribas el texto. Señala cualquier cosa que no esté clara o suene poco natural. Señala cualquier cosa que no esté clara.",
+  "fr": "Concentre-toi uniquement sur les relatives déterminatives. Vérifie le choix entre who et that. Ne réécris pas le texte. Signale tout ce qui n’est pas clair ou naturel. Signale tout ce qui n’est pas clair.",
+  "it": "Concentrati solo sulle relative restrittive. Controlla la scelta tra who e that. Non riscrivere il testo. Segnala tutto ciò che non è chiaro o naturale. Segnala tutto ciò che non è chiaro.",
+  "pt": "Concentre-se apenas nas orações relativas restritivas. Verifique a escolha entre who e that. Não reescreva o texto. Sinalize qualquer coisa que não esteja clara ou natural. Sinalize qualquer coisa que não esteja clara."
+ },
  "erroresContrastivos": {
   "es": [
    "*que* rendered as *which* for people: *the girl which sits there* instead of *who*."

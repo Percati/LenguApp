@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Passive Voice",
+ "titulo": {
+  "en": "Passive Voice",
+  "de": "Passiv",
+  "es": "Voz pasiva",
+  "fr": "Voix passive",
+  "it": "Forma passiva",
+  "pt": "Voz passiva"
+ },
  "categoria": "grammar",
  "ancla": "EGP B1",
- "descripcion": "At B1 you build the simple passive (is made, was built) in the present and past. Use it when the doer of an action is unknown, unimportant, or when the focus should be on the thing affected rather than who did it.",
+ "descripcion": {
+  "en": "At B1 you build the simple passive (is made, was built) in the present and past. Use it when the doer of an action is unknown, unimportant, or when the focus should be on the thing affected rather than who did it.",
+  "de": "Auf B1-Niveau bildest du das einfache Passiv (is made, was built) im Präsens und in der Vergangenheit. Verwende es, wenn der Handelnde unbekannt oder unwichtig ist oder wenn der Fokus auf der betroffenen Sache statt auf der Person liegen soll, die die Handlung ausführt.",
+  "es": "En B1 formas la pasiva simple (is made, was built) en presente y pasado. Úsala cuando quien realiza la acción es desconocido o poco importante, o cuando el foco debe estar en aquello que recibe la acción y no en quién la realiza.",
+  "fr": "Au niveau B1, tu construis le passif simple (is made, was built) au présent et au passé. Utilise-le lorsque l'auteur de l'action est inconnu ou peu important, ou lorsque l'accent doit être mis sur ce qui subit l'action plutôt que sur celui qui la réalise.",
+  "it": "Al livello B1 costruisci il passivo semplice (is made, was built) al presente e al passato. Usalo quando chi compie l'azione è sconosciuto o poco importante, o quando l'attenzione deve essere sull'elemento che subisce l'azione invece che su chi la compie.",
+  "pt": "No nível B1, você forma a voz passiva simples (is made, was built) no presente e no passado. Use-a quando quem pratica a ação é desconhecido ou pouco importante, ou quando o foco deve estar naquilo que sofre a ação, e não em quem a realiza."
+ },
  "cuadroReferencia": {
-  "titulo": "Simple passive, two tenses",
+  "titulo": {
+   "en": "Simple passive, two tenses",
+   "de": "Einfaches Passiv, zwei Zeitformen",
+   "es": "Pasiva simple, dos tiempos",
+   "fr": "Passif simple, deux temps",
+   "it": "Passivo semplice, due tempi",
+   "pt": "Passiva simples, dois tempos"
+  },
   "columnas": [
-   "Tense",
-   "Form",
-   "Example"
+   {
+    "en": "Tense",
+    "de": "Zeit",
+    "es": "Tiempo verbal",
+    "fr": "Temps",
+    "it": "Tempo",
+    "pt": "Tempo verbal"
+   },
+   {
+    "en": "Form",
+    "de": "Form",
+    "es": "Forma",
+    "fr": "Forme",
+    "it": "Forma",
+    "pt": "Forma"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Present",
-    "is/are + participle",
-    "The bread is baked every morning."
+    {
+     "en": "Present",
+     "de": "Präsens",
+     "es": "Presente",
+     "fr": "Présent",
+     "it": "Presente",
+     "pt": "Presente"
+    },
+    {
+     "en": "is/are + participle",
+     "de": "is/are + Partizip",
+     "es": "is/are + participio",
+     "fr": "is/are + participe passé",
+     "it": "is/are + participio",
+     "pt": "is/are + particípio"
+    },
+    {
+     "en": "The bread is baked every morning.",
+     "de": "Das Brot wird jeden Morgen gebacken.",
+     "es": "El pan se hornea todas las mañanas.",
+     "fr": "Le pain est cuit chaque matin.",
+     "it": "Il pane viene sfornato ogni mattina.",
+     "pt": "O pão é assado todas as manhãs."
+    }
    ],
    [
-    "Past",
-    "was/were + participle",
-    "The house was built in 1990."
+    {
+     "en": "Past",
+     "de": "Vergangenheit",
+     "es": "Pasado",
+     "fr": "Passé",
+     "it": "Passato",
+     "pt": "Passado"
+    },
+    {
+     "en": "was/were + participle",
+     "de": "was/were + Partizip",
+     "es": "was/were + participio",
+     "fr": "was/were + participe passé",
+     "it": "was/were + participio",
+     "pt": "was/were + particípio"
+    },
+    {
+     "en": "The house was built in 1990.",
+     "de": "Das Haus wurde 1990 gebaut.",
+     "es": "La casa fue construida en 1990.",
+     "fr": "La maison a été construite en 1990.",
+     "it": "La casa è stata costruita nel 1990.",
+     "pt": "A casa foi construída em 1990."
+    }
    ],
    [
-    "With a doer",
-    "…is made by…",
-    "The bread is made by the bakery next door."
+    {
+     "en": "With a doer",
+     "de": "mit Handelndem",
+     "es": "con agente",
+     "fr": "avec l'agent",
+     "it": "con agente",
+     "pt": "com agente"
+    },
+    {
+     "en": "…is made by…",
+     "de": "…is made by…",
+     "es": "…is made by…",
+     "fr": "…is made by…",
+     "it": "…is made by…",
+     "pt": "…is made by…"
+    },
+    {
+     "en": "The bread is made by the bakery next door.",
+     "de": "Das Brot wird von der Bäckerei nebenan hergestellt.",
+     "es": "El pan lo hace la panadería de al lado.",
+     "fr": "Le pain est fabriqué par la boulangerie d'à côté.",
+     "it": "Il pane viene prodotto dal panificio accanto.",
+     "pt": "O pão é feito pela padaria ao lado."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "The bread is baked here every morning.",
+   "texto": {
+    "en": "The bread is baked here every morning.",
+    "de": "Das Brot wird hier jeden Morgen gebacken.",
+    "es": "El pan se hornea aquí todas las mañanas.",
+    "fr": "Le pain est cuit ici chaque matin.",
+    "it": "Il pane viene sfornato qui ogni mattina.",
+    "pt": "O pão é assado aqui todas as manhãs."
+   },
    "audio": true
   },
   {
-   "texto": "The house was built almost thirty years ago.",
+   "texto": {
+    "en": "The house was built almost thirty years ago.",
+    "de": "Das Haus wurde vor fast dreißig Jahren gebaut.",
+    "es": "La casa fue construida hace casi treinta años.",
+    "fr": "La maison a été construite il y a presque trente ans.",
+    "it": "La casa è stata costruita quasi trent'anni fa.",
+    "pt": "A casa foi construída há quase trinta anos."
+   },
    "audio": true
   },
   {
-   "texto": "The windows are cleaned every week."
+   "texto": {
+    "en": "The windows are cleaned every week.",
+    "de": "Die Fenster werden jede Woche gereinigt.",
+    "es": "Las ventanas se limpian todas las semanas.",
+    "fr": "Les fenêtres sont nettoyées chaque semaine.",
+    "it": "Le finestre vengono pulite ogni settimana.",
+    "pt": "As janelas são limpas toda semana."
+   }
   }
  ],
  "notas": [
-  "The passive is formed with be plus the past participle, which goes at the end.",
-  "The doer can be added with by, but is often left out.",
-  "Only verbs with an object (transitive verbs) can be made passive."
+  {
+   "en": "The passive is formed with be plus the past participle, which goes at the end.",
+   "de": "Das Passiv wird mit be plus past participle gebildet; das Partizip steht am Ende.",
+   "es": "La pasiva se forma con be más past participle, que va al final.",
+   "fr": "Le passif se forme avec be plus le past participle, placé à la fin.",
+   "it": "Il passivo si forma con be più il past participle, che va alla fine.",
+   "pt": "A passiva é formada com be mais o past participle, que fica no final."
+  },
+  {
+   "en": "The doer can be added with by, but is often left out.",
+   "de": "Der Handelnde kann mit by ergänzt werden, wird aber oft weggelassen.",
+   "es": "El agente puede añadirse con by, pero a menudo se omite.",
+   "fr": "L'auteur de l'action peut être ajouté avec by, mais il est souvent omis.",
+   "it": "L'agente può essere aggiunto con by, ma spesso viene omesso.",
+   "pt": "O agente pode ser acrescentado com by, mas muitas vezes é omitido."
+  },
+  {
+   "en": "Only verbs with an object (transitive verbs) can be made passive.",
+   "de": "Nur Verben mit einem Objekt (transitive Verben) können ins Passiv gesetzt werden.",
+   "es": "Solo los verbos con objeto (verbos transitivos) pueden ponerse en pasiva.",
+   "fr": "Seuls les verbes ayant un complément d'objet (verbes transitifs) peuvent être mis au passif.",
+   "it": "Solo i verbi con un oggetto (verbi transitivi) possono essere messi al passivo.",
+   "pt": "Somente verbos com objeto (verbos transitivos) podem ser usados na voz passiva."
+  }
  ],
  "contraste": {
   "es": "Spanish usually prefers the se-construction (se hace, se construyó) to the true passive. Spanish speakers therefore use the English passive less than expected and fall back on the active with you or they.",
@@ -58,14 +205,42 @@
   "pt": "Portuguese often uses the se-passive (fala-se inglês) or, in Brazil, a gente, where English uses the passive. The ser-passive (a casa foi construída) is a good bridge to the English form."
  },
  "errores": [
-  "Forgetting be and using only the past participle.",
-  "Using the wrong participle form.",
-  "Trying to make an intransitive verb passive."
+  {
+   "en": "Forgetting be and using only the past participle.",
+   "de": "Be vergessen und nur das past participle verwenden.",
+   "es": "Olvidar be y usar solo el past participle.",
+   "fr": "Oublier be et utiliser seulement le past participle.",
+   "it": "Dimenticare be e usare solo il past participle.",
+   "pt": "Esquecer be e usar apenas o past participle."
+  },
+  {
+   "en": "Using the wrong participle form.",
+   "de": "Die falsche Partizipform verwenden.",
+   "es": "Usar la forma incorrecta del participio.",
+   "fr": "Utiliser la mauvaise forme du participe.",
+   "it": "Usare la forma sbagliata del participio.",
+   "pt": "Usar a forma errada do particípio."
+  },
+  {
+   "en": "Trying to make an intransitive verb passive.",
+   "de": "Versuchen, ein intransitives Verb ins Passiv zu setzen.",
+   "es": "Intentar poner un verbo intransitivo en pasiva.",
+   "fr": "Essayer de mettre un verbe intransitif au passif.",
+   "it": "Cercare di mettere un verbo intransitivo al passivo.",
+   "pt": "Tentar colocar um verbo intransitivo na voz passiva."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…is made…",
-   "funcion": "passive, present",
+   "funcion": {
+    "en": "passive, present",
+    "de": "Passiv, Präsens",
+    "es": "pasiva, presente",
+    "fr": "passif, présent",
+    "it": "passivo, presente",
+    "pt": "passiva, presente"
+   },
    "traducciones": {
     "es": "…se hace…",
     "de": "…wird gemacht…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "…was built…",
-   "funcion": "passive, past",
+   "funcion": {
+    "en": "passive, past",
+    "de": "Passiv, Vergangenheit",
+    "es": "pasiva, pasado",
+    "fr": "passif, passé",
+    "it": "passivo, passato",
+    "pt": "passiva, passado"
+   },
    "traducciones": {
     "es": "…se construyó…",
     "de": "…wurde…gebaut.",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "…is done by…",
-   "funcion": "passive with doer",
+   "funcion": {
+    "en": "passive with doer",
+    "de": "Passiv mit Handelndem",
+    "es": "pasiva con agente",
+    "fr": "passif avec agent",
+    "it": "passivo con agente",
+    "pt": "passiva com agente"
+   },
    "traducciones": {
     "es": "…es hecho por…",
     "de": "…wird von… gemacht",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "…are cleaned every…",
-   "funcion": "passive, habitual",
+   "funcion": {
+    "en": "passive, habitual",
+    "de": "Passiv, gewohnheitsmäßig",
+    "es": "pasiva, habitual",
+    "fr": "passif, habitude",
+    "it": "passivo, abituale",
+    "pt": "passiva, habitual"
+   },
    "traducciones": {
     "es": "…se limpian cada…",
     "de": "…werden jeden… gereinigt",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "It was made in…",
-   "funcion": "passive, origin",
+   "funcion": {
+    "en": "passive, origin",
+    "de": "Passiv, Herkunft",
+    "es": "pasiva, origen",
+    "fr": "passif, origine",
+    "it": "passivo, origine",
+    "pt": "passiva, origem"
+   },
    "traducciones": {
     "es": "Se hizo en…",
     "de": "Es wurde in… hergestellt.",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "…was found…",
-   "funcion": "passive, past, common verb",
+   "funcion": {
+    "en": "passive, past, common verb",
+    "de": "Passiv, Vergangenheit, häufiges Verb",
+    "es": "pasiva, pasado, verbo frecuente",
+    "fr": "passif, passé, verbe fréquent",
+    "it": "passivo, passato, verbo comune",
+    "pt": "passiva, passado, verbo comum"
+   },
    "traducciones": {
     "es": "…se encontró…",
     "de": "…wurde gefunden…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Does every passive have be plus a participle?",
-  "Are the participles correct?",
-  "Have I used the passive in both present and past?",
-  "Have I used more than one form of this structure?",
-  "Have I used more than one form of this structure?"
+  {
+   "en": "Does every passive have be plus a participle?",
+   "de": "Hat jedes Passiv be plus ein Partizip?",
+   "es": "¿Cada pasiva tiene be más un participio?",
+   "fr": "Chaque passif contient-il be plus un participe ?",
+   "it": "Ogni passivo ha be più un participio?",
+   "pt": "Toda passiva tem be mais um particípio?"
+  },
+  {
+   "en": "Are the participles correct?",
+   "de": "Sind die Partizipien korrekt?",
+   "es": "¿Los participios son correctos?",
+   "fr": "Les participes sont-ils corrects ?",
+   "it": "I participi sono corretti?",
+   "pt": "Os particípios estão corretos?"
+  },
+  {
+   "en": "Have I used the passive in both present and past?",
+   "de": "Habe ich das Passiv sowohl im Präsens als auch in der Vergangenheit verwendet?",
+   "es": "¿He usado la pasiva tanto en presente como en pasado?",
+   "fr": "Ai-je utilisé le passif au présent et au passé ?",
+   "it": "Ho usato il passivo sia al presente sia al passato?",
+   "pt": "Usei a passiva tanto no presente quanto no passado?"
+  },
+  {
+   "en": "Have I used more than one form of this structure?",
+   "de": "Habe ich mehr als eine Form dieser Struktur verwendet?",
+   "es": "¿He usado más de una forma de esta estructura?",
+   "fr": "Ai-je utilisé plus d'une forme de cette structure ?",
+   "it": "Ho usato più di una forma di questa struttura?",
+   "pt": "Usei mais de uma forma dessa estrutura?"
+  },
+  {
+   "en": "Have I used more than one form of this structure?",
+   "de": "Habe ich mehr als eine Form dieser Struktur verwendet?",
+   "es": "¿He usado más de una forma de esta estructura?",
+   "fr": "Ai-je utilisé plus d'une forme de cette structure ?",
+   "it": "Ho usato più di una forma di questa struttura?",
+   "pt": "Usei mais de uma forma dessa estrutura?"
+  }
  ],
- "promptCorreccion": "Focus only on the simple passive in present and past. Check the form of be plus the participle, and check whether the passive is used only with transitive verbs. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on the simple passive in present and past. Check the form of be plus the participle, and check whether the passive is used only with transitive verbs. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf das einfache Passiv im Präsens und in der Vergangenheit. Prüfe die Form be plus Partizip und ob das Passiv nur bei transitiven Verben verwendet wird. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en la pasiva simple en presente y pasado. Comprueba la forma be más participio y si la pasiva se usa solo con verbos transitivos. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur le passif simple au présent et au passé. Vérifie la forme be plus participe et si le passif est utilisé uniquement avec des verbes transitifs. Ne réécris pas le texte.",
+  "it": "Concentrati solo sul passivo semplice al presente e al passato. Controlla la forma be più participio e se il passivo viene usato solo con verbi transitivi. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas na passiva simples no presente e no passado. Verifique a forma be mais particípio e se a passiva é usada apenas com verbos transitivos. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*nací* rendered as an active verb: *I born in 1990* instead of *I was born in 1990*."

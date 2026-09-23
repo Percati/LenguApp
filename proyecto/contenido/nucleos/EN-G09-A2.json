@@ -3,52 +3,199 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Modals of Obligation, Permission and Ability",
+ "titulo": {
+  "en": "Modals of Obligation, Permission and Ability",
+  "de": "Modalverben für Pflicht, Erlaubnis und Fähigkeit",
+  "es": "Modales de obligación, permiso y capacidad",
+  "fr": "Modaux d’obligation, de permission et de capacité",
+  "it": "Modali di obbligo, permesso e capacità",
+  "pt": "Modais de obrigação, permissão e capacidade"
+ },
  "categoria": "grammar",
  "ancla": "EGP A2",
- "descripcion": "At A2 you use have to for obligation, can for ability and permission, and can't for prohibition. These are the three most useful modal meanings at this level. These forms are the building blocks for more nuanced modal use at higher levels.",
+ "descripcion": {
+  "en": "At A2 you use have to for obligation, can for ability and permission, and can't for prohibition. These are the three most useful modal meanings at this level. These forms are the building blocks for more nuanced modal use at higher levels.",
+  "de": "Auf A2 verwendest du have to für Pflicht, can für Fähigkeit und Erlaubnis und can't für Verbote. Das sind die drei nützlichsten modalen Bedeutungen auf diesem Niveau. Diese Formen sind die Grundlage für differenziertere Modalverwendungen auf höheren Niveaus.",
+  "es": "En A2 usas have to para obligación, can para capacidad y permiso, y can't para prohibición. Son los tres significados modales más útiles en este nivel. Estas formas son la base para un uso modal más matizado en niveles superiores.",
+  "fr": "Au niveau A2, tu utilises have to pour l’obligation, can pour la capacité et la permission, et can't pour l’interdiction. Ce sont les trois sens modaux les plus utiles à ce niveau. Ces formes servent de base à des emplois modaux plus nuancés aux niveaux supérieurs.",
+  "it": "A livello A2 usi have to per l’obbligo, can per capacità e permesso e can't per il divieto. Sono i tre significati modali più utili a questo livello. Queste forme sono la base per usi modali più sfumati ai livelli superiori.",
+  "pt": "No nível A2, você usa have to para obrigação, can para capacidade e permissão e can't para proibição. Esses são os três sentidos modais mais úteis neste nível. Essas formas são a base para usos modais mais sutis nos níveis mais altos."
+ },
  "cuadroReferencia": {
-  "titulo": "Three modal meanings",
+  "titulo": {
+   "en": "Three modal meanings",
+   "de": "Drei modale Bedeutungen",
+   "es": "Tres significados modales",
+   "fr": "Trois sens modaux",
+   "it": "Tre significati modali",
+   "pt": "Três sentidos modais"
+  },
   "columnas": [
-   "Verb",
-   "Meaning",
-   "Example"
+   {
+    "en": "Verb",
+    "de": "Verb",
+    "es": "Verbo",
+    "fr": "Verbe",
+    "it": "Verbo",
+    "pt": "Verbo"
+   },
+   {
+    "en": "Meaning",
+    "de": "Bedeutung",
+    "es": "Significado",
+    "fr": "Signification",
+    "it": "Significato",
+    "pt": "Significado"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "have to",
-    "obligation",
-    "I have to work tomorrow."
+    {
+     "en": "have to",
+     "de": "have to",
+     "es": "have to",
+     "fr": "have to",
+     "it": "have to",
+     "pt": "have to"
+    },
+    {
+     "en": "obligation",
+     "de": "Pflicht",
+     "es": "obligación",
+     "fr": "obligation",
+     "it": "obbligo",
+     "pt": "obrigação"
+    },
+    {
+     "en": "I have to work tomorrow.",
+     "de": "Ich muss morgen arbeiten.",
+     "es": "Tengo que trabajar mañana.",
+     "fr": "Je dois travailler demain.",
+     "it": "Devo lavorare domani.",
+     "pt": "Tenho que trabalhar amanhã."
+    }
    ],
    [
-    "can",
-    "permission/ability",
-    "Can I open the window?"
+    {
+     "en": "can",
+     "de": "can",
+     "es": "can",
+     "fr": "can",
+     "it": "can",
+     "pt": "can"
+    },
+    {
+     "en": "permission/ability",
+     "de": "Erlaubnis/Fähigkeit",
+     "es": "permiso/capacidad",
+     "fr": "permission/capacité",
+     "it": "permesso/capacità",
+     "pt": "permissão/capacidade"
+    },
+    {
+     "en": "Can I open the window?",
+     "de": "Darf ich das Fenster öffnen?",
+     "es": "¿Puedo abrir la ventana?",
+     "fr": "Puis-je ouvrir la fenêtre ?",
+     "it": "Posso aprire la finestra?",
+     "pt": "Posso abrir a janela?"
+    }
    ],
    [
-    "can't",
-    "prohibition/inability",
-    "You can't park here."
+    {
+     "en": "can't",
+     "de": "can't",
+     "es": "can't",
+     "fr": "can't",
+     "it": "can't",
+     "pt": "can't"
+    },
+    {
+     "en": "prohibition/inability",
+     "de": "Verbot/Unfähigkeit",
+     "es": "prohibición/incapacidad",
+     "fr": "interdiction/incapacité",
+     "it": "divieto/incapacità",
+     "pt": "proibição/incapacidade"
+    },
+    {
+     "en": "You can't park here.",
+     "de": "Du darfst hier nicht parken.",
+     "es": "No puedes aparcar aquí.",
+     "fr": "Tu ne peux pas te garer ici.",
+     "it": "Non puoi parcheggiare qui.",
+     "pt": "Você não pode estacionar aqui."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I have to work early tomorrow.",
+   "texto": {
+    "en": "I have to work early tomorrow.",
+    "de": "Ich muss morgen früh arbeiten.",
+    "es": "Tengo que trabajar temprano mañana.",
+    "fr": "Je dois travailler tôt demain.",
+    "it": "Devo lavorare presto domani.",
+    "pt": "Tenho que trabalhar cedo amanhã."
+   },
    "audio": true
   },
   {
-   "texto": "Can I open the window, please?",
+   "texto": {
+    "en": "Can I open the window, please?",
+    "de": "Darf ich bitte das Fenster öffnen?",
+    "es": "¿Puedo abrir la ventana, por favor?",
+    "fr": "Puis-je ouvrir la fenêtre, s’il vous plaît ?",
+    "it": "Posso aprire la finestra, per favore?",
+    "pt": "Posso abrir a janela, por favor?"
+   },
    "audio": true
   },
   {
-   "texto": "You can't park here."
+   "texto": {
+    "en": "You can't park here.",
+    "de": "Du darfst hier nicht parken.",
+    "es": "No puedes aparcar aquí.",
+    "fr": "Tu ne peux pas te garer ici.",
+    "it": "Non puoi parcheggiare qui.",
+    "pt": "Você não pode estacionar aqui."
+   }
   }
  ],
  "notas": [
-  "Have to changes with the subject: I have to, she has to.",
-  "Can is used for both permission and ability.",
-  "Can't expresses either prohibition or inability, depending on context."
+  {
+   "en": "Have to changes with the subject: I have to, she has to.",
+   "de": "Have to verändert sich mit dem Subjekt: I have to, she has to.",
+   "es": "Have to cambia con el sujeto: I have to, she has to.",
+   "fr": "Have to change selon le sujet : I have to, she has to.",
+   "it": "Have to cambia con il soggetto: I have to, she has to.",
+   "pt": "Have to muda de acordo com o sujeito: I have to, she has to."
+  },
+  {
+   "en": "Can is used for both permission and ability.",
+   "de": "Can wird sowohl für Erlaubnis als auch für Fähigkeit verwendet.",
+   "es": "Can se usa tanto para permiso como para capacidad.",
+   "fr": "Can s’utilise à la fois pour la permission et la capacité.",
+   "it": "Can si usa sia per il permesso sia per la capacità.",
+   "pt": "Can é usado tanto para permissão quanto para capacidade."
+  },
+  {
+   "en": "Can't expresses either prohibition or inability, depending on context.",
+   "de": "Can't drückt je nach Kontext entweder Verbot oder Unfähigkeit aus.",
+   "es": "Can't expresa prohibición o incapacidad, según el contexto.",
+   "fr": "Can't exprime soit l’interdiction, soit l’incapacité, selon le contexte.",
+   "it": "Can't esprime divieto o incapacità, a seconda del contesto.",
+   "pt": "Can't expressa proibição ou incapacidade, dependendo do contexto."
+  }
  ],
  "contraste": {
   "es": "Spanish has tener que and poder as close equivalents, so the logic transfers easily.",
@@ -58,13 +205,34 @@
   "pt": "Ter de or ter que corresponds exactly to have to, and poder to can (aqui não se pode fumar – you can't smoke here). The three A2 modals therefore transfer very well."
  },
  "errores": [
-  "Forgetting has for she/he/it with have to.",
-  "Using must instead of can for permission."
+  {
+   "en": "Forgetting has for she/he/it with have to.",
+   "de": "Bei she/he/it mit have to das has vergessen.",
+   "es": "Olvidar has con she/he/it al usar have to.",
+   "fr": "Oublier has avec she/he/it dans have to.",
+   "it": "Dimenticare has con she/he/it usando have to.",
+   "pt": "Esquecer has com she/he/it ao usar have to."
+  },
+  {
+   "en": "Using must instead of can for permission.",
+   "de": "Must statt can für Erlaubnis verwenden.",
+   "es": "Usar must en vez de can para permiso.",
+   "fr": "Utiliser must au lieu de can pour la permission.",
+   "it": "Usare must invece di can per il permesso.",
+   "pt": "Usar must em vez de can para permissão."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I have to…",
-   "funcion": "obligation",
+   "funcion": {
+    "en": "obligation",
+    "de": "Pflicht",
+    "es": "obligación",
+    "fr": "obligation",
+    "it": "obbligo",
+    "pt": "obrigação"
+   },
    "traducciones": {
     "es": "Tengo que…",
     "de": "Ich muss…",
@@ -75,7 +243,14 @@
   },
   {
    "expresion": "She has to…",
-   "funcion": "obligation, third person",
+   "funcion": {
+    "en": "obligation, third person",
+    "de": "Pflicht, dritte Person",
+    "es": "obligación, tercera persona",
+    "fr": "obligation, troisième personne",
+    "it": "obbligo, terza persona",
+    "pt": "obrigação, terceira pessoa"
+   },
    "traducciones": {
     "es": "Ella tiene que…",
     "de": "Sie muss…",
@@ -86,7 +261,14 @@
   },
   {
    "expresion": "Can I…?",
-   "funcion": "permission",
+   "funcion": {
+    "en": "permission",
+    "de": "Erlaubnis",
+    "es": "permiso",
+    "fr": "permission",
+    "it": "permesso",
+    "pt": "permissão"
+   },
    "traducciones": {
     "es": "¿Puedo…?",
     "de": "Kann ich…?",
@@ -97,7 +279,14 @@
   },
   {
    "expresion": "I can…",
-   "funcion": "ability",
+   "funcion": {
+    "en": "ability",
+    "de": "Fähigkeit",
+    "es": "capacidad",
+    "fr": "capacité",
+    "it": "capacità",
+    "pt": "capacidade"
+   },
    "traducciones": {
     "es": "Puedo…",
     "de": "Ich kann…",
@@ -108,7 +297,14 @@
   },
   {
    "expresion": "You can't…",
-   "funcion": "prohibition",
+   "funcion": {
+    "en": "prohibition",
+    "de": "Verbot",
+    "es": "prohibición",
+    "fr": "interdiction",
+    "it": "divieto",
+    "pt": "proibição"
+   },
    "traducciones": {
     "es": "No podés…",
     "de": "Du kannst nicht…",
@@ -119,7 +315,14 @@
   },
   {
    "expresion": "I can't…",
-   "funcion": "inability",
+   "funcion": {
+    "en": "inability",
+    "de": "Unfähigkeit",
+    "es": "incapacidad",
+    "fr": "incapacité",
+    "it": "incapacità",
+    "pt": "incapacidade"
+   },
    "traducciones": {
     "es": "No puedo…",
     "de": "Ich kann nicht…",
@@ -130,13 +333,55 @@
   }
  ],
  "autochequeo": [
-  "Is has used with she/he/it?",
-  "Is can used for permission and ability correctly?",
-  "Have I used at least three different modals?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?"
+  {
+   "en": "Is has used with she/he/it?",
+   "de": "Wird has mit she/he/it verwendet?",
+   "es": "¿Se usa has con she/he/it?",
+   "fr": "Has est-il utilisé avec she/he/it ?",
+   "it": "Si usa has con she/he/it?",
+   "pt": "Has é usado com she/he/it?"
+  },
+  {
+   "en": "Is can used for permission and ability correctly?",
+   "de": "Wird can richtig für Erlaubnis und Fähigkeit verwendet?",
+   "es": "¿Se usa can correctamente para permiso y capacidad?",
+   "fr": "Can est-il utilisé correctement pour la permission et la capacité ?",
+   "it": "Can è usato correttamente per permesso e capacità?",
+   "pt": "Can é usado corretamente para permissão e capacidade?"
+  },
+  {
+   "en": "Have I used at least three different modals?",
+   "de": "Habe ich mindestens drei verschiedene Modalformen verwendet?",
+   "es": "¿He usado al menos tres modales diferentes?",
+   "fr": "Ai-je utilisé au moins trois modaux différents ?",
+   "it": "Ho usato almeno tre modali diversi?",
+   "pt": "Usei pelo menos três modais diferentes?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on have to, can and can't. Check the form has for third person. Do not rewrite the text. Flag anything unclear. Check whether the sentence sounds natural, not translated from Spanish.",
+ "promptCorreccion": {
+  "en": "Focus only on have to, can and can't. Check the form has for third person. Do not rewrite the text. Flag anything unclear. Check whether the sentence sounds natural, not translated from Spanish.",
+  "de": "Achte nur auf have to, can und can't. Prüfe die Form has in der dritten Person. Formuliere den Text nicht neu. Markiere alles, was unklar ist. Prüfe, ob der Satz natürlich klingt und nicht aus dem Spanischen übersetzt wirkt.",
+  "es": "Concéntrate solo en have to, can y can't. Comprueba la forma has en tercera persona. No reescribas el texto. Señala cualquier cosa que no esté clara. Comprueba si la oración suena natural y no traducida del español.",
+  "fr": "Concentre-toi uniquement sur have to, can et can't. Vérifie la forme has à la troisième personne. Ne réécris pas le texte. Signale tout ce qui n’est pas clair. Vérifie si la phrase semble naturelle et non traduite de l’espagnol.",
+  "it": "Concentrati solo su have to, can e can't. Controlla la forma has alla terza persona. Non riscrivere il testo. Segnala tutto ciò che non è chiaro. Verifica se la frase suona naturale e non tradotta dallo spagnolo.",
+  "pt": "Concentre-se apenas em have to, can e can't. Verifique a forma has na terceira pessoa. Não reescreva o texto. Sinalize qualquer coisa que não esteja clara. Verifique se a frase soa natural e não traduzida do espanhol."
+ },
  "erroresContrastivos": {
   "es": [
    "*tengo que ir* rendered as *I have that go* instead of *I have to go*."

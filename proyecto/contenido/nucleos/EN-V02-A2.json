@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Everyday Phrasal Verbs",
+ "titulo": {
+  "en": "Everyday Phrasal Verbs",
+  "de": "Alltägliche Phrasal Verbs",
+  "es": "Phrasal verbs cotidianos",
+  "fr": "Phrasal verbs du quotidien",
+  "it": "Phrasal verbs di uso quotidiano",
+  "pt": "Phrasal verbs do dia a dia"
+ },
  "categoria": "vocabulary",
  "ancla": "EGP A2",
- "descripcion": "At A2 you learn the most basic everyday phrasal verbs: get up, sit down, come in. These are used constantly in daily instructions and conversation. More varied phrasal verbs, with their prepositions, come at higher levels.",
+ "descripcion": {
+  "en": "At A2 you learn the most basic everyday phrasal verbs: get up, sit down, come in. These are used constantly in daily instructions and conversation. More varied phrasal verbs, with their prepositions, come at higher levels.",
+  "de": "Auf A2 lernst du die grundlegendsten alltäglichen Phrasal Verbs: get up, sit down, come in. Sie werden ständig in alltäglichen Anweisungen und Gesprächen verwendet. Vielfältigere Phrasal Verbs mit ihren Präpositionen kommen auf höheren Niveaus.",
+  "es": "En A2 aprendes los phrasal verbs cotidianos más básicos: get up, sit down, come in. Se usan constantemente en instrucciones y conversaciones diarias. Los phrasal verbs más variados, con sus preposiciones, llegan en niveles superiores.",
+  "fr": "Au niveau A2, tu apprends les phrasal verbs quotidiens les plus élémentaires : get up, sit down, come in. Ils sont constamment utilisés dans les consignes et les conversations de tous les jours. Des phrasal verbs plus variés, avec leurs prépositions, viennent aux niveaux supérieurs.",
+  "it": "A livello A2 impari i phrasal verbs quotidiani più basilari: get up, sit down, come in. Si usano continuamente nelle istruzioni e nelle conversazioni di tutti i giorni. Phrasal verbs più vari, con le loro preposizioni, arrivano ai livelli superiori.",
+  "pt": "No nível A2, você aprende os phrasal verbs mais básicos do dia a dia: get up, sit down, come in. Eles são usados o tempo todo em instruções e conversas cotidianas. Phrasal verbs mais variados, com suas preposições, vêm nos níveis mais altos."
+ },
  "cuadroReferencia": {
-  "titulo": "Basic phrasal verbs",
+  "titulo": {
+   "en": "Basic phrasal verbs",
+   "de": "Grundlegende Phrasal Verbs",
+   "es": "Phrasal verbs básicos",
+   "fr": "Phrasal verbs de base",
+   "it": "Phrasal verbs di base",
+   "pt": "Phrasal verbs básicos"
+  },
   "columnas": [
-   "Phrasal verb",
-   "Meaning"
+   {
+    "en": "Phrasal verb",
+    "de": "Phrasal Verb",
+    "es": "Phrasal verb",
+    "fr": "Phrasal verb",
+    "it": "Phrasal verb",
+    "pt": "Phrasal verb"
+   },
+   {
+    "en": "Meaning",
+    "de": "Bedeutung",
+    "es": "Significado",
+    "fr": "Signification",
+    "it": "Significato",
+    "pt": "Significado"
+   }
   ],
   "filas": [
    [
-    "get up",
-    "rise from bed"
+    {
+     "en": "get up",
+     "de": "aufstehen",
+     "es": "levantarse",
+     "fr": "se lever",
+     "it": "alzarsi",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "rise from bed",
+     "de": "aus dem Bett aufstehen",
+     "es": "levantarse de la cama",
+     "fr": "se lever du lit",
+     "it": "alzarsi dal letto",
+     "pt": "levantar-se da cama"
+    }
    ],
    [
-    "sit down",
-    "take a seat"
+    {
+     "en": "sit down",
+     "de": "sich setzen",
+     "es": "sentarse",
+     "fr": "s’asseoir",
+     "it": "sedersi",
+     "pt": "sentar-se"
+    },
+    {
+     "en": "take a seat",
+     "de": "Platz nehmen",
+     "es": "tomar asiento",
+     "fr": "s’asseoir",
+     "it": "prendere posto",
+     "pt": "sentar-se"
+    }
    ],
    [
-    "come in",
-    "enter"
+    {
+     "en": "come in",
+     "de": "hereinkommen",
+     "es": "entrar",
+     "fr": "entrer",
+     "it": "entrare",
+     "pt": "entrar"
+    },
+    {
+     "en": "enter",
+     "de": "eintreten",
+     "es": "entrar",
+     "fr": "entrer",
+     "it": "entrare",
+     "pt": "entrar"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I get up at seven every morning.",
+   "texto": {
+    "en": "I get up at seven every morning.",
+    "de": "Ich stehe jeden Morgen um sieben Uhr auf.",
+    "es": "Me levanto a las siete todas las mañanas.",
+    "fr": "Je me lève à sept heures tous les matins.",
+    "it": "Mi alzo alle sette ogni mattina.",
+    "pt": "Eu me levanto às sete todas as manhãs."
+   },
    "audio": true
   },
   {
-   "texto": "Please sit down.",
+   "texto": {
+    "en": "Please sit down.",
+    "de": "Bitte setzen Sie sich.",
+    "es": "Por favor, siéntese.",
+    "fr": "Asseyez-vous, s’il vous plaît.",
+    "it": "Si accomodi, per favore.",
+    "pt": "Por favor, sente-se."
+   },
    "audio": true
   },
   {
-   "texto": "Come in, please!"
+   "texto": {
+    "en": "Come in, please!",
+    "de": "Kommen Sie bitte herein!",
+    "es": "¡Pase, por favor!",
+    "fr": "Entrez, s’il vous plaît !",
+    "it": "Entri, per favore!",
+    "pt": "Entre, por favor!"
+   }
   }
  ],
  "notas": [
-  "These phrasal verbs are extremely common in everyday instructions.",
-  "Get up, sit down and come in cannot be split in these simple forms.",
-  "They're used constantly at home, school and work."
+  {
+   "en": "These phrasal verbs are extremely common in everyday instructions.",
+   "de": "Diese Phrasal Verbs sind in alltäglichen Anweisungen äußerst häufig.",
+   "es": "Estos phrasal verbs son extremadamente frecuentes en instrucciones cotidianas.",
+   "fr": "Ces phrasal verbs sont extrêmement courants dans les consignes quotidiennes.",
+   "it": "Questi phrasal verbs sono estremamente comuni nelle istruzioni quotidiane.",
+   "pt": "Esses phrasal verbs são extremamente comuns em instruções do dia a dia."
+  },
+  {
+   "en": "Get up, sit down and come in cannot be split in these simple forms.",
+   "de": "Get up, sit down und come in können in diesen einfachen Formen nicht getrennt werden.",
+   "es": "Get up, sit down y come in no se pueden separar en estas formas sencillas.",
+   "fr": "Get up, sit down et come in ne peuvent pas être séparés dans ces formes simples.",
+   "it": "Get up, sit down e come in non possono essere separati in queste forme semplici.",
+   "pt": "Get up, sit down e come in não podem ser separados nessas formas simples."
+  },
+  {
+   "en": "They're used constantly at home, school and work.",
+   "de": "Sie werden ständig zu Hause, in der Schule und bei der Arbeit verwendet.",
+   "es": "Se usan constantemente en casa, en la escuela y en el trabajo.",
+   "fr": "Ils sont constamment utilisés à la maison, à l’école et au travail.",
+   "it": "Si usano continuamente a casa, a scuola e al lavoro.",
+   "pt": "Eles são usados o tempo todo em casa, na escola e no trabalho."
+  }
  ],
  "contraste": {
   "es": "Spanish has no phrasal verbs, so combinations like get up or turn on have to be learned as new blocks.",
@@ -54,13 +173,34 @@
   "pt": "Portuguese has no phrasal verbs, so combinations like get up or turn on have to be learned as new blocks."
  },
  "errores": [
-  "Forgetting the second word of the phrasal verb.",
-  "Translating word for word from a verb in your own language."
+  {
+   "en": "Forgetting the second word of the phrasal verb.",
+   "de": "Das zweite Wort des Phrasal Verbs vergessen.",
+   "es": "Olvidar la segunda palabra del phrasal verb.",
+   "fr": "Oublier le deuxième mot du phrasal verb.",
+   "it": "Dimenticare la seconda parola del phrasal verb.",
+   "pt": "Esquecer a segunda palavra do phrasal verb."
+  },
+  {
+   "en": "Translating word for word from a verb in your own language.",
+   "de": "Wort für Wort aus einem Verb der eigenen Sprache übersetzen.",
+   "es": "Traducir palabra por palabra a partir de un verbo de tu propio idioma.",
+   "fr": "Traduire mot à mot à partir d’un verbe de sa propre langue.",
+   "it": "Tradurre parola per parola da un verbo della propria lingua.",
+   "pt": "Traduzir palavra por palavra a partir de um verbo da própria língua."
+  }
  ],
  "redemittel": [
   {
    "expresion": "to get up",
-   "funcion": "rise from bed",
+   "funcion": {
+    "en": "rise from bed",
+    "de": "aus dem Bett aufstehen",
+    "es": "levantarse de la cama",
+    "fr": "se lever du lit",
+    "it": "alzarsi dal letto",
+    "pt": "levantar-se da cama"
+   },
    "traducciones": {
     "es": "levantarse",
     "de": "aufstehen",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "to sit down",
-   "funcion": "take a seat",
+   "funcion": {
+    "en": "take a seat",
+    "de": "Platz nehmen",
+    "es": "tomar asiento",
+    "fr": "s’asseoir",
+    "it": "prendere posto",
+    "pt": "sentar-se"
+   },
    "traducciones": {
     "es": "sentarse",
     "de": "sich hinsetzen",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "to come in",
-   "funcion": "enter",
+   "funcion": {
+    "en": "enter",
+    "de": "eintreten",
+    "es": "entrar",
+    "fr": "entrer",
+    "it": "entrare",
+    "pt": "entrar"
+   },
    "traducciones": {
     "es": "entrar",
     "de": "reinkommen",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "to stand up",
-   "funcion": "rise to standing",
+   "funcion": {
+    "en": "rise to standing",
+    "de": "aufstehen",
+    "es": "ponerse de pie",
+    "fr": "se mettre debout",
+    "it": "alzarsi in piedi",
+    "pt": "levantar-se"
+   },
    "traducciones": {
     "es": "pararse",
     "de": "aufstehen",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "to go out",
-   "funcion": "leave, socialise",
+   "funcion": {
+    "en": "leave, socialise",
+    "de": "weggehen, sich verabreden",
+    "es": "salir, socializar",
+    "fr": "sortir, voir des gens",
+    "it": "uscire, socializzare",
+    "pt": "sair, socializar"
+   },
    "traducciones": {
     "es": "salir",
     "de": "ausgehen",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "to wake up",
-   "funcion": "stop sleeping",
+   "funcion": {
+    "en": "stop sleeping",
+    "de": "aufwachen",
+    "es": "dejar de dormir",
+    "fr": "se réveiller",
+    "it": "svegliarsi",
+    "pt": "acordar"
+   },
    "traducciones": {
     "es": "despertarse",
     "de": "aufwachen",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Have I used at least three phrasal verbs?",
-  "Is the second word of each phrasal verb present?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?"
+  {
+   "en": "Have I used at least three phrasal verbs?",
+   "de": "Habe ich mindestens drei Phrasal Verbs verwendet?",
+   "es": "¿He usado al menos tres phrasal verbs?",
+   "fr": "Ai-je utilisé au moins trois phrasal verbs ?",
+   "it": "Ho usato almeno tre phrasal verbs?",
+   "pt": "Usei pelo menos três phrasal verbs?"
+  },
+  {
+   "en": "Is the second word of each phrasal verb present?",
+   "de": "Ist das zweite Wort jedes Phrasal Verbs vorhanden?",
+   "es": "¿Está presente la segunda palabra de cada phrasal verb?",
+   "fr": "Le deuxième mot de chaque phrasal verb est-il présent ?",
+   "it": "È presente la seconda parola di ogni phrasal verb?",
+   "pt": "A segunda palavra de cada phrasal verb está presente?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on the basic phrasal verbs. Check that both words are present in each one. Do not rewrite the text. Flag anything unclear. Flag any word-for-word translation from Spanish.",
+ "promptCorreccion": {
+  "en": "Focus only on the basic phrasal verbs. Check that both words are present in each one. Do not rewrite the text. Flag anything unclear. Flag any word-for-word translation from Spanish.",
+  "de": "Achte nur auf die grundlegenden Phrasal Verbs. Prüfe, ob bei jedem beide Wörter vorhanden sind. Formuliere den Text nicht neu. Markiere alles, was unklar ist. Markiere jede wörtliche Übersetzung aus dem Spanischen.",
+  "es": "Concéntrate solo en los phrasal verbs básicos. Comprueba que estén presentes las dos palabras de cada uno. No reescribas el texto. Señala cualquier cosa que no esté clara. Señala cualquier traducción palabra por palabra del español.",
+  "fr": "Concentre-toi uniquement sur les phrasal verbs de base. Vérifie que les deux mots de chacun sont présents. Ne réécris pas le texte. Signale tout ce qui n’est pas clair. Signale toute traduction mot à mot depuis l’espagnol.",
+  "it": "Concentrati solo sui phrasal verbs di base. Controlla che siano presenti entrambe le parole di ciascuno. Non riscrivere il testo. Segnala tutto ciò che non è chiaro. Segnala qualsiasi traduzione parola per parola dallo spagnolo.",
+  "pt": "Concentre-se apenas nos phrasal verbs básicos. Verifique se as duas palavras de cada um estão presentes. Não reescreva o texto. Sinalize qualquer coisa que não esteja clara. Sinalize qualquer tradução palavra por palavra do espanhol."
+ },
  "erroresContrastivos": {
   "es": [
    "*apagar la luz* rendered as *put off the light* instead of *turn off the light*."

@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Comparing and Contrasting",
+ "titulo": {
+  "en": "Comparing and Contrasting",
+  "de": "Vergleichen und Gegenüberstellen",
+  "es": "Comparar y contrastar",
+  "fr": "Comparer et mettre en contraste",
+  "it": "Confrontare e mettere a contrasto",
+  "pt": "Comparar e contrastar"
+ },
  "categoria": "fluency",
  "ancla": "EGP A2",
- "descripcion": "At A2 you compare two things with simple comparative adjectives like bigger and more expensive. Superlatives and weighted, qualified comparisons come at higher levels, once this basic form is automatic.",
+ "descripcion": {
+  "en": "At A2 you compare two things with simple comparative adjectives like bigger and more expensive. Superlatives and weighted, qualified comparisons come at higher levels, once this basic form is automatic.",
+  "de": "Auf A2 vergleichst du zwei Dinge mit einfachen Komparativformen wie bigger und more expensive. Superlative und differenzierte, eingeschränkte Vergleiche kommen auf höheren Niveaus, wenn diese Grundform automatisch sitzt.",
+  "es": "En A2 comparas dos cosas con adjetivos comparativos sencillos como bigger y more expensive. Los superlativos y las comparaciones matizadas y condicionadas llegan en niveles superiores, cuando esta forma básica ya es automática.",
+  "fr": "Au niveau A2, tu compares deux choses avec des adjectifs comparatifs simples comme bigger et more expensive. Les superlatifs et les comparaisons plus nuancées et qualifiées viennent aux niveaux supérieurs, une fois cette forme de base automatisée.",
+  "it": "A livello A2 confronti due cose con semplici aggettivi comparativi come bigger e more expensive. I superlativi e i confronti più sfumati e qualificati arrivano ai livelli superiori, quando questa forma di base è automatica.",
+  "pt": "No nível A2, você compara duas coisas com adjetivos comparativos simples como bigger e more expensive. Os superlativos e comparações mais ponderadas e qualificadas vêm nos níveis mais altos, quando essa forma básica já estiver automática."
+ },
  "cuadroReferencia": {
-  "titulo": "Simple comparison",
+  "titulo": {
+   "en": "Simple comparison",
+   "de": "Einfacher Vergleich",
+   "es": "Comparación sencilla",
+   "fr": "Comparaison simple",
+   "it": "Confronto semplice",
+   "pt": "Comparação simples"
+  },
   "columnas": [
-   "Type",
-   "Example"
+   {
+    "en": "Type",
+    "de": "Typ",
+    "es": "Tipo",
+    "fr": "Type",
+    "it": "Tipo",
+    "pt": "Tipo"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Short adjective",
-    "This is bigger than that."
+    {
+     "en": "Short adjective",
+     "de": "Kurzes Adjektiv",
+     "es": "Adjetivo corto",
+     "fr": "Adjectif court",
+     "it": "Aggettivo corto",
+     "pt": "Adjetivo curto"
+    },
+    {
+     "en": "This is bigger than that.",
+     "de": "Das hier ist größer als das dort.",
+     "es": "Esto es más grande que aquello.",
+     "fr": "Ceci est plus grand que cela.",
+     "it": "Questo è più grande di quello.",
+     "pt": "Isto é maior do que aquilo."
+    }
    ],
    [
-    "Long adjective",
-    "This is more expensive."
+    {
+     "en": "Long adjective",
+     "de": "Langes Adjektiv",
+     "es": "Adjetivo largo",
+     "fr": "Adjectif long",
+     "it": "Aggettivo lungo",
+     "pt": "Adjetivo longo"
+    },
+    {
+     "en": "This is more expensive.",
+     "de": "Das hier ist teurer.",
+     "es": "Esto es más caro.",
+     "fr": "Ceci est plus cher.",
+     "it": "Questo è più costoso.",
+     "pt": "Isto é mais caro."
+    }
    ],
    [
-    "Similarity",
-    "They're similar."
+    {
+     "en": "Similarity",
+     "de": "Ähnlichkeit",
+     "es": "Similitud",
+     "fr": "Similarité",
+     "it": "Somiglianza",
+     "pt": "Semelhança"
+    },
+    {
+     "en": "They're similar.",
+     "de": "Sie sind ähnlich.",
+     "es": "Son parecidos.",
+     "fr": "Ils sont semblables.",
+     "it": "Sono simili.",
+     "pt": "Eles são parecidos."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "This bag is bigger than that one.",
+   "texto": {
+    "en": "This bag is bigger than that one.",
+    "de": "Diese Tasche ist größer als jene.",
+    "es": "Esta bolsa es más grande que esa.",
+    "fr": "Ce sac est plus grand que celui-là.",
+    "it": "Questa borsa è più grande di quella.",
+    "pt": "Esta bolsa é maior do que aquela."
+   },
    "audio": true
   },
   {
-   "texto": "This phone is more expensive than mine.",
+   "texto": {
+    "en": "This phone is more expensive than mine.",
+    "de": "Dieses Handy ist teurer als meins.",
+    "es": "Este teléfono es más caro que el mío.",
+    "fr": "Ce téléphone est plus cher que le mien.",
+    "it": "Questo telefono è più costoso del mio.",
+    "pt": "Este celular é mais caro do que o meu."
+   },
    "audio": true
   },
   {
-   "texto": "They're quite similar."
+   "texto": {
+    "en": "They're quite similar.",
+    "de": "Sie sind ziemlich ähnlich.",
+    "es": "Son bastante parecidos.",
+    "fr": "Ils sont assez semblables.",
+    "it": "Sono abbastanza simili.",
+    "pt": "Eles são bastante parecidos."
+   }
   }
  ],
  "notas": [
-  "Short adjectives take -er: bigger, cheaper, faster.",
-  "Long adjectives take more: more expensive, more interesting.",
-  "Than is needed after every comparative."
+  {
+   "en": "Short adjectives take -er: bigger, cheaper, faster.",
+   "de": "Kurze Adjektive bekommen -er: bigger, cheaper, faster.",
+   "es": "Los adjetivos cortos toman -er: bigger, cheaper, faster.",
+   "fr": "Les adjectifs courts prennent -er : bigger, cheaper, faster.",
+   "it": "Gli aggettivi corti prendono -er: bigger, cheaper, faster.",
+   "pt": "Adjetivos curtos recebem -er: bigger, cheaper, faster."
+  },
+  {
+   "en": "Long adjectives take more: more expensive, more interesting.",
+   "de": "Lange Adjektive verwenden more: more expensive, more interesting.",
+   "es": "Los adjetivos largos usan more: more expensive, more interesting.",
+   "fr": "Les adjectifs longs prennent more : more expensive, more interesting.",
+   "it": "Gli aggettivi lunghi usano more: more expensive, more interesting.",
+   "pt": "Adjetivos longos usam more: more expensive, more interesting."
+  },
+  {
+   "en": "Than is needed after every comparative.",
+   "de": "Nach jedem Komparativ braucht man than.",
+   "es": "Than es necesario después de cada comparativo.",
+   "fr": "Than est nécessaire après chaque comparatif.",
+   "it": "Than è necessario dopo ogni comparativo.",
+   "pt": "Than é necessário depois de todo comparativo."
+  }
  ],
  "contraste": {
   "es": "Más grande que is often calqued as more big than; English adds -er to short adjectives: bigger than.",
@@ -54,13 +173,34 @@
   "pt": "Mais alto que is often calqued as more tall than; English adds -er to short adjectives: taller than."
  },
  "errores": [
-  "Forgetting than after a comparative.",
-  "Using more with a short adjective."
+  {
+   "en": "Forgetting than after a comparative.",
+   "de": "Than nach einem Komparativ vergessen.",
+   "es": "Olvidar than después de un comparativo.",
+   "fr": "Oublier than après un comparatif.",
+   "it": "Dimenticare than dopo un comparativo.",
+   "pt": "Esquecer than depois de um comparativo."
+  },
+  {
+   "en": "Using more with a short adjective.",
+   "de": "More mit einem kurzen Adjektiv verwenden.",
+   "es": "Usar more con un adjetivo corto.",
+   "fr": "Utiliser more avec un adjectif court.",
+   "it": "Usare more con un aggettivo corto.",
+   "pt": "Usar more com um adjetivo curto."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…is bigger than…",
-   "funcion": "comparative, short adjective",
+   "funcion": {
+    "en": "comparative, short adjective",
+    "de": "Komparativ, kurzes Adjektiv",
+    "es": "comparativo, adjetivo corto",
+    "fr": "comparatif, adjectif court",
+    "it": "comparativo, aggettivo corto",
+    "pt": "comparativo, adjetivo curto"
+   },
    "traducciones": {
     "es": "…es más grande que…",
     "de": "…ist größer als…",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "…is more expensive than…",
-   "funcion": "comparative, long adjective",
+   "funcion": {
+    "en": "comparative, long adjective",
+    "de": "Komparativ, langes Adjektiv",
+    "es": "comparativo, adjetivo largo",
+    "fr": "comparatif, adjectif long",
+    "it": "comparativo, aggettivo lungo",
+    "pt": "comparativo, adjetivo longo"
+   },
    "traducciones": {
     "es": "…es más caro que…",
     "de": "…ist teurer als…",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "They're similar.",
-   "funcion": "similarity",
+   "funcion": {
+    "en": "similarity",
+    "de": "Ähnlichkeit",
+    "es": "similitud",
+    "fr": "similarité",
+    "it": "somiglianza",
+    "pt": "semelhança"
+   },
    "traducciones": {
     "es": "Son parecidos.",
     "de": "Sie sind ähnlich.",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "…is cheaper.",
-   "funcion": "comparative",
+   "funcion": {
+    "en": "comparative",
+    "de": "Komparativ",
+    "es": "comparativo",
+    "fr": "comparatif",
+    "it": "comparativo",
+    "pt": "comparativo"
+   },
    "traducciones": {
     "es": "…es más barato.",
     "de": "…ist billiger.",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "I prefer…",
-   "funcion": "preference",
+   "funcion": {
+    "en": "preference",
+    "de": "Vorliebe",
+    "es": "preferencia",
+    "fr": "préférence",
+    "it": "preferenza",
+    "pt": "preferência"
+   },
    "traducciones": {
     "es": "Prefiero…",
     "de": "Ich bevorzuge…",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "…is smaller than…",
-   "funcion": "comparative",
+   "funcion": {
+    "en": "comparative",
+    "de": "Komparativ",
+    "es": "comparativo",
+    "fr": "comparatif",
+    "it": "comparativo",
+    "pt": "comparativo"
+   },
    "traducciones": {
     "es": "…es más chico que…",
     "de": "…ist kleiner als…",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Is than used after every comparative?",
-  "Are short adjectives formed with -er?",
-  "Does the comparison sound natural?",
-  "Does the comparison sound natural?",
-  "Does the comparison sound natural?"
+  {
+   "en": "Is than used after every comparative?",
+   "de": "Wird than nach jedem Komparativ verwendet?",
+   "es": "¿Se usa than después de cada comparativo?",
+   "fr": "Than est-il utilisé après chaque comparatif ?",
+   "it": "Si usa than dopo ogni comparativo?",
+   "pt": "Than é usado depois de todo comparativo?"
+  },
+  {
+   "en": "Are short adjectives formed with -er?",
+   "de": "Werden kurze Adjektive mit -er gebildet?",
+   "es": "¿Los adjetivos cortos se forman con -er?",
+   "fr": "Les adjectifs courts sont-ils formés avec -er ?",
+   "it": "Gli aggettivi corti si formano con -er?",
+   "pt": "Adjetivos curtos são formados com -er?"
+  },
+  {
+   "en": "Does the comparison sound natural?",
+   "de": "Klingt der Vergleich natürlich?",
+   "es": "¿La comparación suena natural?",
+   "fr": "La comparaison semble-t-elle naturelle ?",
+   "it": "Il confronto suona naturale?",
+   "pt": "A comparação soa natural?"
+  },
+  {
+   "en": "Does the comparison sound natural?",
+   "de": "Klingt der Vergleich natürlich?",
+   "es": "¿La comparación suena natural?",
+   "fr": "La comparaison semble-t-elle naturelle ?",
+   "it": "Il confronto suona naturale?",
+   "pt": "A comparação soa natural?"
+  },
+  {
+   "en": "Does the comparison sound natural?",
+   "de": "Klingt der Vergleich natürlich?",
+   "es": "¿La comparación suena natural?",
+   "fr": "La comparaison semble-t-elle naturelle ?",
+   "it": "Il confronto suona naturale?",
+   "pt": "A comparação soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on comparatives. Check than and the -er/more forms, and check whether the comparison sounds natural. Do not rewrite the text. Flag anything unclear.",
+ "promptCorreccion": {
+  "en": "Focus only on comparatives. Check than and the -er/more forms, and check whether the comparison sounds natural. Do not rewrite the text. Flag anything unclear.",
+  "de": "Achte nur auf Komparative. Prüfe than sowie die Formen mit -er/more und ob der Vergleich natürlich klingt. Formuliere den Text nicht neu. Markiere alles, was unklar ist.",
+  "es": "Concéntrate solo en los comparativos. Comprueba than y las formas con -er/more, y si la comparación suena natural. No reescribas el texto. Señala cualquier cosa que no esté clara.",
+  "fr": "Concentre-toi uniquement sur les comparatifs. Vérifie than et les formes en -er/more, ainsi que le naturel de la comparaison. Ne réécris pas le texte. Signale tout ce qui n’est pas clair.",
+  "it": "Concentrati solo sui comparativi. Controlla than e le forme con -er/more, e se il confronto suona naturale. Non riscrivere il testo. Segnala tutto ciò che non è chiaro.",
+  "pt": "Concentre-se apenas nos comparativos. Verifique than e as formas com -er/more, além de conferir se a comparação soa natural. Não reescreva o texto. Sinalize qualquer coisa que não esteja clara."
+ },
  "erroresContrastivos": {
   "es": [
    "*más grande que* rendered as *more big that* instead of *bigger than*."

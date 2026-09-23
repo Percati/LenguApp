@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Giving and Asking for Opinions",
+ "titulo": {
+  "en": "Giving and Asking for Opinions",
+  "de": "Meinungen äußern und erfragen",
+  "es": "Dar y pedir opiniones",
+  "fr": "Donner et demander son avis",
+  "it": "Esprimere e chiedere opinioni",
+  "pt": "Dar e pedir opiniões"
+ },
  "categoria": "fluency",
  "ancla": "CV Informal/Formal discussion",
- "descripcion": "At B1 you give a simple, clear opinion with I think and support it with because. Asking someone else for their opinion is just as important as giving your own, and keeps a conversation from being one-sided rather than a monologue.",
+ "descripcion": {
+  "en": "At B1 you give a simple, clear opinion with I think and support it with because. Asking someone else for their opinion is just as important as giving your own, and keeps a conversation from being one-sided rather than a monologue.",
+  "de": "Auf B1 äußerst du mit I think eine einfache, klare Meinung und begründest sie mit because. Genauso wichtig wie die eigene Meinung ist es, die andere Person nach ihrer Meinung zu fragen; so bleibt das Gespräch wechselseitig statt zu einem Monolog zu werden.",
+  "es": "En B1 das una opinión sencilla y clara con I think y la apoyas con because. Pedirle a la otra persona su opinión es tan importante como dar la propia, y evita que la conversación sea unilateral o se convierta en un monólogo.",
+  "fr": "Au niveau B1, tu donnes un avis simple et clair avec I think et tu le justifies avec because. Demander son avis à l’autre personne est tout aussi important que donner le tien, et cela évite que la conversation soit à sens unique ou ressemble à un monologue.",
+  "it": "A livello B1 esprimi un’opinione semplice e chiara con I think e la sostieni con because. Chiedere l’opinione dell’altra persona è importante quanto esprimere la propria e impedisce alla conversazione di diventare un monologo a senso unico.",
+  "pt": "No nível B1, você dá uma opinião simples e clara com I think e a justifica com because. Pedir a opinião da outra pessoa é tão importante quanto dar a sua e evita que a conversa fique unilateral, como um monólogo."
+ },
  "cuadroReferencia": {
-  "titulo": "Opinion and question",
+  "titulo": {
+   "en": "Opinion and question",
+   "de": "Meinung und Frage",
+   "es": "Opinión y pregunta",
+   "fr": "Avis et question",
+   "it": "Opinione e domanda",
+   "pt": "Opinião e pergunta"
+  },
   "columnas": [
-   "Function",
-   "Example"
+   {
+    "en": "Function",
+    "de": "Funktion",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Opinion",
-    "I think this is a good idea."
+    {
+     "en": "Opinion",
+     "de": "Meinung",
+     "es": "Opinión",
+     "fr": "Opinion",
+     "it": "Opinione",
+     "pt": "Opinião"
+    },
+    {
+     "en": "I think this is a good idea.",
+     "de": "Ich finde, das ist eine gute Idee.",
+     "es": "Creo que es una buena idea.",
+     "fr": "Je pense que c’est une bonne idée.",
+     "it": "Penso che sia una buona idea.",
+     "pt": "Acho que essa é uma boa ideia."
+    }
    ],
    [
-    "Reason",
-    "…because it's cheaper."
+    {
+     "en": "Reason",
+     "de": "Grund",
+     "es": "Razón",
+     "fr": "Raison",
+     "it": "Motivo",
+     "pt": "Motivo"
+    },
+    {
+     "en": "…because it's cheaper.",
+     "de": "…weil es günstiger ist.",
+     "es": "…porque es más barato.",
+     "fr": "…parce que c’est moins cher.",
+     "it": "…perché costa meno.",
+     "pt": "…porque é mais barato."
+    }
    ],
    [
-    "Asking",
-    "What do you think about it?"
+    {
+     "en": "Asking",
+     "de": "Nachfragen",
+     "es": "Preguntar",
+     "fr": "Demander",
+     "it": "Chiedere",
+     "pt": "Perguntar"
+    },
+    {
+     "en": "What do you think about it?",
+     "de": "Was hältst du davon?",
+     "es": "¿Qué opinas de eso?",
+     "fr": "Qu’en penses-tu ?",
+     "it": "Cosa ne pensi?",
+     "pt": "O que você acha disso?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I think this is a really good idea.",
+   "texto": {
+    "en": "I think this is a really good idea.",
+    "de": "Ich finde, das ist eine wirklich gute Idee.",
+    "es": "Creo que es una muy buena idea.",
+    "fr": "Je pense que c’est vraiment une bonne idée.",
+    "it": "Penso che sia davvero una buona idea.",
+    "pt": "Acho que essa é uma ideia muito boa."
+   },
    "audio": true
   },
   {
-   "texto": "In my opinion, it's too expensive.",
+   "texto": {
+    "en": "In my opinion, it's too expensive.",
+    "de": "Meiner Meinung nach ist es zu teuer.",
+    "es": "En mi opinión, es demasiado caro.",
+    "fr": "À mon avis, c’est trop cher.",
+    "it": "Secondo me, è troppo costoso.",
+    "pt": "Na minha opinião, é caro demais."
+   },
    "audio": true
   },
   {
-   "texto": "What do you think about it?"
+   "texto": {
+    "en": "What do you think about it?",
+    "de": "Was hältst du davon?",
+    "es": "¿Qué opinas de eso?",
+    "fr": "Qu’en penses-tu ?",
+    "it": "Cosa ne pensi?",
+    "pt": "O que você acha disso?"
+   }
   }
  ],
  "notas": [
-  "I think is neutral and works in almost any situation.",
-  "In my opinion is slightly more formal and fits a discussion.",
-  "Asking what do you think? keeps the conversation going, not just one-way."
+  {
+   "en": "I think is neutral and works in almost any situation.",
+   "de": "I think ist neutral und passt in fast jede Situation.",
+   "es": "I think es neutral y funciona en casi cualquier situación.",
+   "fr": "I think est neutre et convient à presque toutes les situations.",
+   "it": "I think è neutro e funziona in quasi ogni situazione.",
+   "pt": "I think é neutro e funciona em quase qualquer situação."
+  },
+  {
+   "en": "In my opinion is slightly more formal and fits a discussion.",
+   "de": "In my opinion ist etwas formeller und passt gut zu einer Diskussion.",
+   "es": "In my opinion es un poco más formal y encaja bien en una discusión.",
+   "fr": "In my opinion est légèrement plus formel et convient bien à une discussion.",
+   "it": "In my opinion è leggermente più formale e si adatta bene a una discussione.",
+   "pt": "In my opinion é um pouco mais formal e combina bem com uma discussão."
+  },
+  {
+   "en": "Asking what do you think? keeps the conversation going, not just one-way.",
+   "de": "Mit what do you think? nachzufragen hält das Gespräch in Gang, statt es einseitig zu machen.",
+   "es": "Preguntar what do you think? mantiene la conversación en marcha, en vez de dejarla en una sola dirección.",
+   "fr": "Demander what do you think? permet de poursuivre la conversation au lieu de la rendre à sens unique.",
+   "it": "Chiedere what do you think? mantiene viva la conversazione invece di renderla a senso unico.",
+   "pt": "Perguntar what do you think? mantém a conversa fluindo, em vez de deixá-la unilateral."
+  }
  ],
  "contraste": {
   "es": "Creo que corresponds to I think and en mi opinión to in my opinion, so the basic structure transfers directly. Me parece que is closer to I think than to it appears that.",
@@ -54,14 +173,42 @@
   "pt": "Acho que is often calqued as I find that, because achar also means to find. The natural equivalent is I think."
  },
  "errores": [
-  "Giving an opinion with no reason at all.",
-  "Never asking the other person their opinion.",
-  "Combining I think and in my opinion in the same sentence."
+  {
+   "en": "Giving an opinion with no reason at all.",
+   "de": "Eine Meinung ganz ohne Begründung äußern.",
+   "es": "Dar una opinión sin ninguna razón.",
+   "fr": "Donner un avis sans aucune raison.",
+   "it": "Esprimere un’opinione senza alcuna motivazione.",
+   "pt": "Dar uma opinião sem nenhuma justificativa."
+  },
+  {
+   "en": "Never asking the other person their opinion.",
+   "de": "Die andere Person nie nach ihrer Meinung fragen.",
+   "es": "No preguntarle nunca a la otra persona su opinión.",
+   "fr": "Ne jamais demander son avis à l’autre personne.",
+   "it": "Non chiedere mai l’opinione dell’altra persona.",
+   "pt": "Nunca perguntar a opinião da outra pessoa."
+  },
+  {
+   "en": "Combining I think and in my opinion in the same sentence.",
+   "de": "I think und in my opinion im selben Satz kombinieren.",
+   "es": "Combinar I think e in my opinion en la misma oración.",
+   "fr": "Combiner I think et in my opinion dans la même phrase.",
+   "it": "Combinare I think e in my opinion nella stessa frase.",
+   "pt": "Combinar I think e in my opinion na mesma frase."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I think…",
-   "funcion": "opinion, neutral",
+   "funcion": {
+    "en": "opinion, neutral",
+    "de": "Meinung, neutral",
+    "es": "opinión, neutra",
+    "fr": "avis, neutre",
+    "it": "opinione, neutra",
+    "pt": "opinião, neutra"
+   },
    "traducciones": {
     "es": "Me parece que…",
     "de": "Ich denke…",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "In my opinion,…",
-   "funcion": "opinion, slightly formal",
+   "funcion": {
+    "en": "opinion, slightly formal",
+    "de": "Meinung, etwas formeller",
+    "es": "opinión, algo formal",
+    "fr": "avis, légèrement formel",
+    "it": "opinione, leggermente formale",
+    "pt": "opinião, um pouco mais formal"
+   },
    "traducciones": {
     "es": "En mi opinión…",
     "de": "Meiner Meinung nach…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "…, because…",
-   "funcion": "reason",
+   "funcion": {
+    "en": "reason",
+    "de": "Grund",
+    "es": "razón",
+    "fr": "raison",
+    "it": "motivazione",
+    "pt": "razão"
+   },
    "traducciones": {
     "es": "…, porque…",
     "de": "…, weil…",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "What do you think?",
-   "funcion": "asking for an opinion",
+   "funcion": {
+    "en": "asking for an opinion",
+    "de": "nach einer Meinung fragen",
+    "es": "pedir una opinión",
+    "fr": "demander un avis",
+    "it": "chiedere un’opinione",
+    "pt": "pedir uma opinião"
+   },
    "traducciones": {
     "es": "¿Qué opinás?",
     "de": "Was denkst du?",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "I believe that…",
-   "funcion": "opinion, alternative",
+   "funcion": {
+    "en": "opinion, alternative",
+    "de": "Meinung, Alternative",
+    "es": "opinión, alternativa",
+    "fr": "opinion, alternative",
+    "it": "opinione, alternativa",
+    "pt": "opinião, alternativa"
+   },
    "traducciones": {
     "es": "Creo que…",
     "de": "Ich glaube, dass…",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Do you agree?",
-   "funcion": "checking agreement",
+   "funcion": {
+    "en": "checking agreement",
+    "de": "Zustimmung prüfen",
+    "es": "comprobar acuerdo",
+    "fr": "vérifier l’accord",
+    "it": "verificare l’accordo",
+    "pt": "verificar concordância"
+   },
    "traducciones": {
     "es": "¿Estás de acuerdo?",
     "de": "Stimmst du zu?",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Have I given a clear opinion?",
-  "Does a reason follow with because?",
-  "Have I asked the other person's opinion at least once?",
-  "Have I used more than one phrase, not always the same one?",
-  "Have I used more than one opinion phrase, not always I think?"
+  {
+   "en": "Have I given a clear opinion?",
+   "de": "Habe ich eine klare Meinung geäußert?",
+   "es": "¿He dado una opinión clara?",
+   "fr": "Ai-je donné un avis clair ?",
+   "it": "Ho espresso un’opinione chiara?",
+   "pt": "Dei uma opinião clara?"
+  },
+  {
+   "en": "Does a reason follow with because?",
+   "de": "Folgt mit because eine Begründung?",
+   "es": "¿Sigue una razón con because?",
+   "fr": "Une raison suit-elle avec because ?",
+   "it": "Segue una motivazione con because?",
+   "pt": "Há uma justificativa com because?"
+  },
+  {
+   "en": "Have I asked the other person's opinion at least once?",
+   "de": "Habe ich die andere Person mindestens einmal nach ihrer Meinung gefragt?",
+   "es": "¿He preguntado al menos una vez la opinión de la otra persona?",
+   "fr": "Ai-je demandé l’avis de l’autre personne au moins une fois ?",
+   "it": "Ho chiesto almeno una volta l’opinione dell’altra persona?",
+   "pt": "Perguntei pelo menos uma vez a opinião da outra pessoa?"
+  },
+  {
+   "en": "Have I used more than one phrase, not always the same one?",
+   "de": "Habe ich mehr als eine Wendung verwendet und nicht immer dieselbe?",
+   "es": "¿He usado más de una expresión y no siempre la misma?",
+   "fr": "Ai-je utilisé plus d’une expression et pas toujours la même ?",
+   "it": "Ho usato più di un’espressione e non sempre la stessa?",
+   "pt": "Usei mais de uma expressão, e não sempre a mesma?"
+  },
+  {
+   "en": "Have I used more than one opinion phrase, not always I think?",
+   "de": "Habe ich mehr als eine Meinungsformel verwendet und nicht immer nur I think?",
+   "es": "¿He usado más de una expresión de opinión y no siempre I think?",
+   "fr": "Ai-je utilisé plus d’une expression d’opinion et pas toujours I think ?",
+   "it": "Ho usato più di un’espressione di opinione e non sempre I think?",
+   "pt": "Usei mais de uma expressão de opinião, e não sempre I think?"
+  }
  ],
- "promptCorreccion": "Focus only on whether the opinion and reason are clearly connected, and whether I asked for the other person's opinion too, not only stated my own. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on whether the opinion and reason are clearly connected, and whether I asked for the other person's opinion too, not only stated my own. Do not rewrite the text.",
+  "de": "Achte nur darauf, ob Meinung und Begründung klar miteinander verbunden sind und ob du auch nach der Meinung der anderen Person gefragt hast, statt nur deine eigene zu nennen. Formuliere den Text nicht neu.",
+  "es": "Concéntrate solo en si la opinión y la razón están claramente conectadas y en si también has pedido la opinión de la otra persona, en vez de limitarte a dar la tuya. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur le lien clair entre l’avis et la raison, et sur le fait de demander aussi l’avis de l’autre personne au lieu de seulement donner le tien. Ne réécris pas le texte.",
+  "it": "Concentrati solo sul fatto che opinione e motivazione siano chiaramente collegate e che tu abbia chiesto anche l’opinione dell’altra persona, non solo espresso la tua. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas em saber se a opinião e a justificativa estão claramente ligadas e se você também pediu a opinião da outra pessoa, em vez de apenas dizer a sua. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*Opino que* rendered as *I opine that* instead of *I think* or *In my view*."

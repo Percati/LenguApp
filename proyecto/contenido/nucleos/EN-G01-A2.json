@@ -3,52 +3,199 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Present Simple vs. Present Continuous",
+ "titulo": {
+  "en": "Present Simple vs. Present Continuous",
+  "de": "Simple Present vs. Present Continuous",
+  "es": "Presente simple vs. presente continuo",
+  "fr": "Present simple vs. present continu",
+  "it": "Present simple vs. present continuous",
+  "pt": "Simple present vs. present continuous"
+ },
  "categoria": "grammar",
  "ancla": "EGP A1/A2",
- "descripcion": "The present simple describes habits and routines; the present continuous describes what is happening right now, at this moment. At A2 the goal is to choose the right one consistently and to recognise the signal words for each.",
+ "descripcion": {
+  "en": "The present simple describes habits and routines; the present continuous describes what is happening right now, at this moment. At A2 the goal is to choose the right one consistently and to recognise the signal words for each.",
+  "de": "Das Simple Present beschreibt Gewohnheiten und Routinen; das Present Continuous beschreibt, was gerade in diesem Moment passiert. Auf A2 geht es darum, konsequent die richtige Form zu wählen und die Signalwörter für beide zu erkennen.",
+  "es": "El presente simple describe hábitos y rutinas; el presente continuo describe lo que está ocurriendo ahora mismo, en este momento. En A2 el objetivo es elegir correctamente uno u otro de forma consistente y reconocer las palabras señal de cada uno.",
+  "fr": "Le présent simple décrit les habitudes et les routines ; le présent continu décrit ce qui se passe en ce moment. Au niveau A2, l’objectif est de choisir systématiquement la bonne forme et de reconnaître les mots indicateurs de chacune.",
+  "it": "Il present simple descrive abitudini e routine; il present continuous descrive ciò che sta succedendo proprio ora, in questo momento. A livello A2 l’obiettivo è scegliere con costanza la forma giusta e riconoscere le parole segnale di ciascuna.",
+  "pt": "O simple present descreve hábitos e rotinas; o present continuous descreve o que está acontecendo agora, neste momento. No nível A2, o objetivo é escolher a forma certa de maneira consistente e reconhecer as palavras-sinal de cada uma."
+ },
  "cuadroReferencia": {
-  "titulo": "Habit vs. now",
+  "titulo": {
+   "en": "Habit vs. now",
+   "de": "Gewohnheit vs. jetzt",
+   "es": "Hábito vs. ahora",
+   "fr": "Habitude vs. maintenant",
+   "it": "Abitudine vs. adesso",
+   "pt": "Hábito vs. agora"
+  },
   "columnas": [
-   "Use",
-   "Form",
-   "Example"
+   {
+    "en": "Use",
+    "de": "Verwendung",
+    "es": "Uso",
+    "fr": "Emploi",
+    "it": "Uso",
+    "pt": "Uso"
+   },
+   {
+    "en": "Form",
+    "de": "Form",
+    "es": "Forma",
+    "fr": "Forme",
+    "it": "Forma",
+    "pt": "Forma"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Habit/routine",
-    "present simple",
-    "I work every day."
+    {
+     "en": "Habit/routine",
+     "de": "Gewohnheit/Routine",
+     "es": "Hábito/rutina",
+     "fr": "Habitude/routine",
+     "it": "Abitudine/routine",
+     "pt": "Hábito/rotina"
+    },
+    {
+     "en": "present simple",
+     "de": "Simple Present",
+     "es": "presente simple",
+     "fr": "présent simple",
+     "it": "present simple",
+     "pt": "simple present"
+    },
+    {
+     "en": "I work every day.",
+     "de": "Ich arbeite jeden Tag.",
+     "es": "Trabajo todos los días.",
+     "fr": "Je travaille tous les jours.",
+     "it": "Lavoro ogni giorno.",
+     "pt": "Eu trabalho todos os dias."
+    }
    ],
    [
-    "Happening now",
-    "present continuous",
-    "I'm working right now."
+    {
+     "en": "Happening now",
+     "de": "Passiert gerade",
+     "es": "Ocurre ahora",
+     "fr": "En train de se passer",
+     "it": "Sta succedendo adesso",
+     "pt": "Acontecendo agora"
+    },
+    {
+     "en": "present continuous",
+     "de": "Present Continuous",
+     "es": "presente continuo",
+     "fr": "présent continu",
+     "it": "present continuous",
+     "pt": "present continuous"
+    },
+    {
+     "en": "I'm working right now.",
+     "de": "Ich arbeite gerade.",
+     "es": "Estoy trabajando ahora mismo.",
+     "fr": "Je travaille en ce moment.",
+     "it": "Sto lavorando proprio adesso.",
+     "pt": "Estou trabalhando agora."
+    }
    ],
    [
-    "Frequency word",
-    "present simple",
-    "I always work in the morning."
+    {
+     "en": "Frequency word",
+     "de": "Häufigkeitsangabe",
+     "es": "Palabra de frecuencia",
+     "fr": "Adverbe de fréquence",
+     "it": "Avverbio di frequenza",
+     "pt": "Palavra de frequência"
+    },
+    {
+     "en": "present simple",
+     "de": "Simple Present",
+     "es": "presente simple",
+     "fr": "présent simple",
+     "it": "present simple",
+     "pt": "simple present"
+    },
+    {
+     "en": "I always work in the morning.",
+     "de": "Ich arbeite morgens immer.",
+     "es": "Siempre trabajo por la mañana.",
+     "fr": "Je travaille toujours le matin.",
+     "it": "Lavoro sempre al mattino.",
+     "pt": "Eu sempre trabalho de manhã."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I work every day from nine to five.",
+   "texto": {
+    "en": "I work every day from nine to five.",
+    "de": "Ich arbeite jeden Tag von neun bis fünf.",
+    "es": "Trabajo todos los días de nueve a cinco.",
+    "fr": "Je travaille tous les jours de neuf heures à cinq heures.",
+    "it": "Lavoro ogni giorno dalle nove alle cinque.",
+    "pt": "Eu trabalho todos os dias das nove às cinco."
+   },
    "audio": true
   },
   {
-   "texto": "I'm working on a project right now.",
+   "texto": {
+    "en": "I'm working on a project right now.",
+    "de": "Ich arbeite gerade an einem Projekt.",
+    "es": "Estoy trabajando en un proyecto ahora mismo.",
+    "fr": "Je travaille sur un projet en ce moment.",
+    "it": "Sto lavorando a un progetto proprio adesso.",
+    "pt": "Estou trabalhando em um projeto agora."
+   },
    "audio": true
   },
   {
-   "texto": "She always drinks coffee in the morning."
+   "texto": {
+    "en": "She always drinks coffee in the morning.",
+    "de": "Sie trinkt morgens immer Kaffee.",
+    "es": "Ella siempre toma café por la mañana.",
+    "fr": "Elle boit toujours du café le matin.",
+    "it": "Lei beve sempre caffè al mattino.",
+    "pt": "Ela sempre toma café de manhã."
+   }
   }
  ],
  "notas": [
-  "The present continuous is formed with am/is/are + -ing.",
-  "Words like always, usually, every day go with the present simple.",
-  "Words like now, right now, at the moment go with the present continuous."
+  {
+   "en": "The present continuous is formed with am/is/are + -ing.",
+   "de": "Das Present Continuous wird mit am/is/are + -ing gebildet.",
+   "es": "El presente continuo se forma con am/is/are + -ing.",
+   "fr": "Le présent continu se forme avec am/is/are + -ing.",
+   "it": "Il present continuous si forma con am/is/are + -ing.",
+   "pt": "O present continuous é formado com am/is/are + -ing."
+  },
+  {
+   "en": "Words like always, usually, every day go with the present simple.",
+   "de": "Wörter wie always, usually und every day stehen mit dem Simple Present.",
+   "es": "Palabras como always, usually y every day van con el presente simple.",
+   "fr": "Des mots comme always, usually et every day s’emploient avec le présent simple.",
+   "it": "Parole come always, usually ed every day si usano con il present simple.",
+   "pt": "Palavras como always, usually e every day são usadas com o simple present."
+  },
+  {
+   "en": "Words like now, right now, at the moment go with the present continuous.",
+   "de": "Wörter wie now, right now und at the moment stehen mit dem Present Continuous.",
+   "es": "Palabras como now, right now y at the moment van con el presente continuo.",
+   "fr": "Des mots comme now, right now et at the moment s’emploient avec le présent continu.",
+   "it": "Parole come now, right now e at the moment si usano con il present continuous.",
+   "pt": "Palavras como now, right now e at the moment são usadas com o present continuous."
+  }
  ],
  "contraste": {
   "es": "Spanish has both forms (trabajo, estoy trabajando), but uses the simple present more often for things happening now. Spanish speakers therefore need to pay attention to marking the difference in English, where the continuous is required for right now.",
@@ -58,13 +205,34 @@
   "pt": "Portuguese uses a continuous form very often (estou a trabalhar in Portugal, estou trabalhando in Brazil), so the present continuous is familiar. Brazilian Portuguese also uses it with verbs like gostar (estou gostando), which leads to I'm liking it, where English uses I like it."
  },
  "errores": [
-  "Using the present simple for something happening right now.",
-  "Forgetting am/is/are before the -ing form."
+  {
+   "en": "Using the present simple for something happening right now.",
+   "de": "Das Simple Present für etwas verwenden, das gerade passiert.",
+   "es": "Usar el presente simple para algo que está ocurriendo ahora mismo.",
+   "fr": "Utiliser le présent simple pour quelque chose qui se passe en ce moment.",
+   "it": "Usare il present simple per qualcosa che sta succedendo proprio adesso.",
+   "pt": "Usar o simple present para algo que está acontecendo agora."
+  },
+  {
+   "en": "Forgetting am/is/are before the -ing form.",
+   "de": "Am/is/are vor der -ing-Form vergessen.",
+   "es": "Olvidar am/is/are antes de la forma en -ing.",
+   "fr": "Oublier am/is/are avant la forme en -ing.",
+   "it": "Dimenticare am/is/are prima della forma in -ing.",
+   "pt": "Esquecer am/is/are antes da forma em -ing."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I…every day.",
-   "funcion": "habit",
+   "funcion": {
+    "en": "habit",
+    "de": "Gewohnheit",
+    "es": "hábito",
+    "fr": "habitude",
+    "it": "abitudine",
+    "pt": "hábito"
+   },
    "traducciones": {
     "es": "Yo… todos los días.",
     "de": "Ich… jeden Tag.",
@@ -75,7 +243,14 @@
   },
   {
    "expresion": "I'm…-ing right now.",
-   "funcion": "happening now",
+   "funcion": {
+    "en": "happening now",
+    "de": "passiert gerade",
+    "es": "ocurre ahora",
+    "fr": "se passe maintenant",
+    "it": "sta succedendo adesso",
+    "pt": "acontecendo agora"
+   },
    "traducciones": {
     "es": "Estoy… ahora mismo.",
     "de": "Ich bin gerade am…",
@@ -86,7 +261,14 @@
   },
   {
    "expresion": "I always…",
-   "funcion": "habit, frequency",
+   "funcion": {
+    "en": "habit, frequency",
+    "de": "Gewohnheit, Häufigkeit",
+    "es": "hábito, frecuencia",
+    "fr": "habitude, fréquence",
+    "it": "abitudine, frequenza",
+    "pt": "hábito, frequência"
+   },
    "traducciones": {
     "es": "Siempre…",
     "de": "Ich… immer.",
@@ -97,7 +279,14 @@
   },
   {
    "expresion": "At the moment, I'm…-ing",
-   "funcion": "happening now",
+   "funcion": {
+    "en": "happening now",
+    "de": "passiert gerade",
+    "es": "ocurre ahora",
+    "fr": "se passe maintenant",
+    "it": "sta succedendo adesso",
+    "pt": "acontecendo agora"
+   },
    "traducciones": {
     "es": "En este momento, estoy…",
     "de": "Im Moment bin ich gerade am…",
@@ -108,7 +297,14 @@
   },
   {
    "expresion": "She usually…",
-   "funcion": "habit",
+   "funcion": {
+    "en": "habit",
+    "de": "Gewohnheit",
+    "es": "hábito",
+    "fr": "habitude",
+    "it": "abitudine",
+    "pt": "hábito"
+   },
    "traducciones": {
     "es": "Ella normalmente…",
     "de": "Sie… normalerweise.",
@@ -119,7 +315,14 @@
   },
   {
    "expresion": "They're…-ing today.",
-   "funcion": "temporary, now",
+   "funcion": {
+    "en": "temporary, now",
+    "de": "vorübergehend, jetzt",
+    "es": "temporal, ahora",
+    "fr": "temporaire, maintenant",
+    "it": "temporaneo, adesso",
+    "pt": "temporário, agora"
+   },
    "traducciones": {
     "es": "Están… hoy.",
     "de": "Sie… heute.",
@@ -130,13 +333,55 @@
   }
  ],
  "autochequeo": [
-  "Is the present simple used for habits?",
-  "Is the present continuous used for now?",
-  "Is am/is/are present before every -ing form?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?"
+  {
+   "en": "Is the present simple used for habits?",
+   "de": "Wird das Simple Present für Gewohnheiten verwendet?",
+   "es": "¿Se usa el presente simple para hábitos?",
+   "fr": "Le présent simple est-il utilisé pour les habitudes ?",
+   "it": "Si usa il present simple per le abitudini?",
+   "pt": "O simple present é usado para hábitos?"
+  },
+  {
+   "en": "Is the present continuous used for now?",
+   "de": "Wird das Present Continuous für das verwendet, was gerade passiert?",
+   "es": "¿Se usa el presente continuo para lo que ocurre ahora?",
+   "fr": "Le présent continu est-il utilisé pour ce qui se passe maintenant ?",
+   "it": "Si usa il present continuous per ciò che succede adesso?",
+   "pt": "O present continuous é usado para o que está acontecendo agora?"
+  },
+  {
+   "en": "Is am/is/are present before every -ing form?",
+   "de": "Steht am/is/are vor jeder -ing-Form?",
+   "es": "¿Está am/is/are antes de cada forma en -ing?",
+   "fr": "Am/is/are est-il présent avant chaque forme en -ing ?",
+   "it": "C’è am/is/are prima di ogni forma in -ing?",
+   "pt": "Am/is/are aparece antes de toda forma em -ing?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on the choice between present simple and present continuous. Check the form of the continuous carefully. Do not rewrite the text. Flag any mixed-up choice.",
+ "promptCorreccion": {
+  "en": "Focus only on the choice between present simple and present continuous. Check the form of the continuous carefully. Do not rewrite the text. Flag any mixed-up choice.",
+  "de": "Achte nur auf die Wahl zwischen Simple Present und Present Continuous. Prüfe die Form des Continuous sorgfältig. Formuliere den Text nicht neu. Markiere jede Verwechslung.",
+  "es": "Concéntrate solo en la elección entre presente simple y presente continuo. Comprueba cuidadosamente la forma del continuo. No reescribas el texto. Señala cualquier elección equivocada.",
+  "fr": "Concentre-toi uniquement sur le choix entre présent simple et présent continu. Vérifie soigneusement la forme du continu. Ne réécris pas le texte. Signale tout choix confondu.",
+  "it": "Concentrati solo sulla scelta tra present simple e present continuous. Controlla attentamente la forma del continuous. Non riscrivere il testo. Segnala qualsiasi scelta confusa.",
+  "pt": "Concentre-se apenas na escolha entre simple present e present continuous. Verifique com cuidado a forma do continuous. Não reescreva o texto. Sinalize qualquer escolha trocada."
+ },
  "erroresContrastivos": {
   "es": [
    "*¿Qué haces?* rendered in the present simple: *What do you do?* when you mean *What are you doing?*"

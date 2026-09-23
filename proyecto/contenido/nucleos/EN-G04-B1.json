@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Future Forms: will / going to / present continuous",
+ "titulo": {
+  "en": "Future Forms: will / going to / present continuous",
+  "de": "Zukunftsformen: will / going to / Present Continuous",
+  "es": "Formas de futuro: will / going to / presente continuo",
+  "fr": "Formes du futur : will / going to / présent continu",
+  "it": "Forme del futuro: will / going to / present continuous",
+  "pt": "Formas de futuro: will / going to / present continuous"
+ },
  "categoria": "grammar",
  "ancla": "EGP A2/B1",
- "descripcion": "English has three common ways to talk about the future, and at B1 the choice depends on how planned the event is: will for decisions made now, going to for intentions, and the present continuous for fixed arrangements.",
+ "descripcion": {
+  "en": "English has three common ways to talk about the future, and at B1 the choice depends on how planned the event is: will for decisions made now, going to for intentions, and the present continuous for fixed arrangements.",
+  "de": "Im Englischen gibt es drei gängige Möglichkeiten, über die Zukunft zu sprechen. Auf B1-Niveau hängt die Wahl davon ab, wie stark ein Ereignis geplant ist: will für Entscheidungen, die gerade getroffen werden, going to für Absichten und das present continuous für fest vereinbarte Pläne.",
+  "es": "En inglés hay tres formas habituales de hablar del futuro y, en B1, la elección depende de cuánto esté planificado el evento: will para decisiones tomadas en el momento, going to para intenciones y present continuous para planes ya acordados.",
+  "fr": "En anglais, il existe trois façons courantes de parler du futur. Au niveau B1, le choix dépend du degré de planification : will pour une décision prise sur le moment, going to pour une intention et le present continuous pour un arrangement fixé.",
+  "it": "In inglese ci sono tre modi comuni per parlare del futuro e, al livello B1, la scelta dipende da quanto l'evento è pianificato: will per decisioni prese sul momento, going to per intenzioni e present continuous per accordi già fissati.",
+  "pt": "Em inglês, há três formas comuns de falar sobre o futuro e, no nível B1, a escolha depende de quanto o evento está planejado: will para decisões tomadas na hora, going to para intenções e present continuous para compromissos já combinados."
+ },
  "cuadroReferencia": {
-  "titulo": "Three futures",
+  "titulo": {
+   "en": "Three futures",
+   "de": "Drei Zukunftsformen",
+   "es": "Tres formas de futuro",
+   "fr": "Trois façons d'exprimer le futur",
+   "it": "Tre forme di futuro",
+   "pt": "Três formas de futuro"
+  },
   "columnas": [
-   "Form",
-   "Use",
-   "Example"
+   {
+    "en": "Form",
+    "de": "Form",
+    "es": "Forma",
+    "fr": "Forme",
+    "it": "Forma",
+    "pt": "Forma"
+   },
+   {
+    "en": "Use",
+    "de": "Verwendung",
+    "es": "Uso",
+    "fr": "Emploi",
+    "it": "Uso",
+    "pt": "Uso"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "will",
-    "decision made now",
-    "I'll help you with that."
+    {
+     "en": "will",
+     "de": "will",
+     "es": "will",
+     "fr": "will",
+     "it": "will",
+     "pt": "will"
+    },
+    {
+     "en": "decision made now",
+     "de": "Entscheidung, die gerade getroffen wird",
+     "es": "decisión tomada en el momento",
+     "fr": "décision prise sur le moment",
+     "it": "decisione presa sul momento",
+     "pt": "decisão tomada na hora"
+    },
+    {
+     "en": "I'll help you with that.",
+     "de": "Ich helfe dir dabei.",
+     "es": "Te ayudaré con eso.",
+     "fr": "Je vais t'aider avec ça.",
+     "it": "Ti aiuterò con quello.",
+     "pt": "Eu vou ajudar você com isso."
+    }
    ],
    [
-    "going to",
-    "intention, plan",
-    "I'm going to study tonight."
+    {
+     "en": "going to",
+     "de": "going to",
+     "es": "going to",
+     "fr": "going to",
+     "it": "going to",
+     "pt": "going to"
+    },
+    {
+     "en": "intention, plan",
+     "de": "Absicht, Plan",
+     "es": "intención, plan",
+     "fr": "intention, projet",
+     "it": "intenzione, piano",
+     "pt": "intenção, plano"
+    },
+    {
+     "en": "I'm going to study tonight.",
+     "de": "Ich werde heute Abend lernen.",
+     "es": "Voy a estudiar esta noche.",
+     "fr": "Je vais étudier ce soir.",
+     "it": "Studierò stasera / Ho intenzione di studiare stasera.",
+     "pt": "Vou estudar hoje à noite."
+    }
    ],
    [
-    "present continuous",
-    "fixed arrangement",
-    "I'm meeting her at six."
+    {
+     "en": "present continuous",
+     "de": "Present Continuous",
+     "es": "presente continuo",
+     "fr": "présent continu",
+     "it": "present continuous",
+     "pt": "present continuous"
+    },
+    {
+     "en": "fixed arrangement",
+     "de": "feste Verabredung",
+     "es": "plan fijo",
+     "fr": "arrangement fixé",
+     "it": "accordo fissato",
+     "pt": "compromisso marcado"
+    },
+    {
+     "en": "I'm meeting her at six.",
+     "de": "Ich treffe sie um sechs.",
+     "es": "Quedo con ella a las seis.",
+     "fr": "Je la retrouve à six heures.",
+     "it": "La incontro alle sei.",
+     "pt": "Vou encontrar com ela às seis."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I'll help you carry that, don't worry.",
+   "texto": {
+    "en": "I'll help you carry that, don't worry.",
+    "de": "Ich helfe dir, das zu tragen, keine Sorge.",
+    "es": "Te ayudaré a llevar eso, no te preocupes.",
+    "fr": "Je vais t'aider à porter ça, ne t'inquiète pas.",
+    "it": "Ti aiuto io a portarlo, non preoccuparti.",
+    "pt": "Eu ajudo você a carregar isso, não se preocupe."
+   },
    "audio": true
   },
   {
-   "texto": "I'm going to study tonight after dinner.",
+   "texto": {
+    "en": "I'm going to study tonight after dinner.",
+    "de": "Ich werde heute Abend nach dem Abendessen lernen.",
+    "es": "Voy a estudiar esta noche después de cenar.",
+    "fr": "Je vais étudier ce soir après le dîner.",
+    "it": "Ho intenzione di studiare stasera dopo cena.",
+    "pt": "Vou estudar hoje à noite depois do jantar."
+   },
    "audio": true
   },
   {
-   "texto": "I'm meeting her at six tomorrow."
+   "texto": {
+    "en": "I'm meeting her at six tomorrow.",
+    "de": "Ich treffe sie morgen um sechs.",
+    "es": "Quedo con ella mañana a las seis.",
+    "fr": "Je la retrouve demain à six heures.",
+    "it": "La incontro domani alle sei.",
+    "pt": "Vou encontrar com ela amanhã às seis."
+   }
   }
  ],
  "notas": [
-  "Will is used for a decision made at the moment of speaking, not for a plan already made.",
-  "Going to expresses an intention, whether or not the details are fixed yet.",
-  "The present continuous for the future needs a time expression and works best for arrangements with another person."
+  {
+   "en": "Will is used for a decision made at the moment of speaking, not for a plan already made.",
+   "de": "Will wird für eine Entscheidung verwendet, die im Moment des Sprechens getroffen wird, nicht für einen bereits vorher gefassten Plan.",
+   "es": "Will se usa para una decisión tomada en el momento de hablar, no para un plan ya decidido de antemano.",
+   "fr": "Will s'utilise pour une décision prise au moment où l'on parle, pas pour un projet déjà décidé auparavant.",
+   "it": "Will si usa per una decisione presa nel momento in cui si parla, non per un piano già deciso in precedenza.",
+   "pt": "Will é usado para uma decisão tomada no momento da fala, e não para um plano já decidido antes."
+  },
+  {
+   "en": "Going to expresses an intention, whether or not the details are fixed yet.",
+   "de": "Going to drückt eine Absicht aus, unabhängig davon, ob die Einzelheiten schon feststehen.",
+   "es": "Going to expresa una intención, estén o no definidos todavía los detalles.",
+   "fr": "Going to exprime une intention, que les détails soient déjà fixés ou non.",
+   "it": "Going to esprime un'intenzione, indipendentemente dal fatto che i dettagli siano già definiti.",
+   "pt": "Going to expressa uma intenção, independentemente de os detalhes já estarem definidos ou não."
+  },
+  {
+   "en": "The present continuous for the future needs a time expression and works best for arrangements with another person.",
+   "de": "Das present continuous für die Zukunft braucht eine Zeitangabe und eignet sich besonders für Vereinbarungen mit einer anderen Person.",
+   "es": "El present continuous con sentido de futuro necesita una expresión de tiempo y funciona especialmente bien para planes acordados con otra persona.",
+   "fr": "Le present continuous employé pour le futur nécessite un repère temporel et convient surtout aux arrangements avec une autre personne.",
+   "it": "Il present continuous con valore futuro richiede un'espressione di tempo ed è particolarmente adatto ad accordi con un'altra persona.",
+   "pt": "O present continuous com sentido de futuro precisa de uma expressão de tempo e funciona melhor para compromissos combinados com outra pessoa."
+  }
  ],
  "contraste": {
   "es": "Spanish uses voy a + infinitive very much like going to, so that form transfers directly. The main difference lies in will, which corresponds to the Spanish simple future but is used in English specifically for spontaneous decisions, not for plans.",
@@ -58,14 +205,42 @@
   "pt": "Portuguese uses vou + infinitive (vou viajar amanhã) very much like going to, so that form transfers directly. The Portuguese simple future is rare in speech, so Portuguese speakers tend to under-use will for spontaneous decisions and promises."
  },
  "errores": [
-  "Using will for a plan that was already decided before speaking.",
-  "Using going to where will fits better, for a spontaneous decision.",
-  "Using the present continuous for the future without a time expression."
+  {
+   "en": "Using will for a plan that was already decided before speaking.",
+   "de": "Will für einen Plan verwenden, der schon vor dem Sprechen beschlossen wurde.",
+   "es": "Usar will para un plan que ya estaba decidido antes de hablar.",
+   "fr": "Utiliser will pour un projet déjà décidé avant de parler.",
+   "it": "Usare will per un piano già deciso prima di parlare.",
+   "pt": "Usar will para um plano que já havia sido decidido antes da fala."
+  },
+  {
+   "en": "Using going to where will fits better, for a spontaneous decision.",
+   "de": "Going to verwenden, obwohl will bei einer spontanen Entscheidung besser passt.",
+   "es": "Usar going to cuando will encaja mejor para una decisión espontánea.",
+   "fr": "Utiliser going to alors que will convient mieux à une décision spontanée.",
+   "it": "Usare going to quando will è più adatto a una decisione spontanea.",
+   "pt": "Usar going to quando will seria mais adequado para uma decisão espontânea."
+  },
+  {
+   "en": "Using the present continuous for the future without a time expression.",
+   "de": "Das present continuous für die Zukunft ohne Zeitangabe verwenden.",
+   "es": "Usar present continuous para el futuro sin una expresión de tiempo.",
+   "fr": "Utiliser le present continuous pour le futur sans repère temporel.",
+   "it": "Usare il present continuous per il futuro senza un'espressione di tempo.",
+   "pt": "Usar o present continuous para o futuro sem uma expressão de tempo."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I'll…",
-   "funcion": "spontaneous decision",
+   "funcion": {
+    "en": "spontaneous decision",
+    "de": "spontane Entscheidung",
+    "es": "decisión espontánea",
+    "fr": "décision spontanée",
+    "it": "decisione spontanea",
+    "pt": "decisão espontânea"
+   },
    "traducciones": {
     "es": "Voy a… (decisión del momento)",
     "de": "Ich werde…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "I'm going to…",
-   "funcion": "intention, plan",
+   "funcion": {
+    "en": "intention, plan",
+    "de": "Absicht, Plan",
+    "es": "intención, plan",
+    "fr": "intention, projet",
+    "it": "intenzione, piano",
+    "pt": "intenção, plano"
+   },
    "traducciones": {
     "es": "Voy a…",
     "de": "Ich werde… / Ich habe vor, … zu…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "I'm…-ing at…",
-   "funcion": "fixed arrangement",
+   "funcion": {
+    "en": "fixed arrangement",
+    "de": "feste Verabredung",
+    "es": "plan fijo",
+    "fr": "arrangement fixé",
+    "it": "accordo fissato",
+    "pt": "compromisso marcado"
+   },
    "traducciones": {
     "es": "Tengo… a las…",
     "de": "Ich… um…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "What are you doing this weekend?",
-   "funcion": "asking about plans",
+   "funcion": {
+    "en": "asking about plans",
+    "de": "nach Plänen fragen",
+    "es": "preguntar por planes",
+    "fr": "demander les projets",
+    "it": "chiedere dei piani",
+    "pt": "perguntar sobre planos"
+   },
    "traducciones": {
     "es": "¿Qué vas a hacer este fin de semana?",
     "de": "Was machst du dieses Wochenende?",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "I probably won't…",
-   "funcion": "negative prediction",
+   "funcion": {
+    "en": "negative prediction",
+    "de": "negative Vorhersage",
+    "es": "predicción negativa",
+    "fr": "prédiction négative",
+    "it": "previsione negativa",
+    "pt": "previsão negativa"
+   },
    "traducciones": {
     "es": "Probablemente no…",
     "de": "Ich werde wahrscheinlich nicht…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "We're leaving at…",
-   "funcion": "fixed schedule",
+   "funcion": {
+    "en": "fixed schedule",
+    "de": "fester Termin / feste Vereinbarung",
+    "es": "horario fijo",
+    "fr": "horaire fixé",
+    "it": "appuntamento fissato",
+    "pt": "horário/compromisso fixo"
+   },
    "traducciones": {
     "es": "Salimos a las…",
     "de": "Wir fahren um… ab.",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Is will used for a decision made now, not a prior plan?",
-  "Is going to used for an intention?",
-  "Does the present continuous form have a time expression?",
-  "Have I used at least two of the three forms?",
-  "Does the sentence sound natural, not translated word for word?"
+  {
+   "en": "Is will used for a decision made now, not a prior plan?",
+   "de": "Wird will für eine Entscheidung verwendet, die gerade getroffen wird, und nicht für einen vorherigen Plan?",
+   "es": "¿Se usa will para una decisión tomada en el momento y no para un plan previo?",
+   "fr": "Will est-il utilisé pour une décision prise sur le moment et non pour un projet antérieur ?",
+   "it": "Will è usato per una decisione presa sul momento e non per un piano precedente?",
+   "pt": "Will é usado para uma decisão tomada na hora, e não para um plano anterior?"
+  },
+  {
+   "en": "Is going to used for an intention?",
+   "de": "Wird going to für eine Absicht verwendet?",
+   "es": "¿Se usa going to para una intención?",
+   "fr": "Going to est-il utilisé pour une intention ?",
+   "it": "Going to è usato per esprimere un'intenzione?",
+   "pt": "Going to é usado para expressar uma intenção?"
+  },
+  {
+   "en": "Does the present continuous form have a time expression?",
+   "de": "Hat die Form im present continuous eine Zeitangabe?",
+   "es": "¿La forma en present continuous incluye una expresión de tiempo?",
+   "fr": "La forme au present continuous comporte-t-elle un repère temporel ?",
+   "it": "La forma al present continuous contiene un'espressione di tempo?",
+   "pt": "A forma no present continuous tem uma expressão de tempo?"
+  },
+  {
+   "en": "Have I used at least two of the three forms?",
+   "de": "Habe ich mindestens zwei der drei Formen verwendet?",
+   "es": "¿He usado al menos dos de las tres formas?",
+   "fr": "Ai-je utilisé au moins deux des trois formes ?",
+   "it": "Ho usato almeno due delle tre forme?",
+   "pt": "Usei pelo menos duas das três formas?"
+  },
+  {
+   "en": "Does the sentence sound natural, not translated word for word?",
+   "de": "Klingt der Satz natürlich und nicht Wort für Wort übersetzt?",
+   "es": "¿La oración suena natural y no traducida palabra por palabra?",
+   "fr": "La phrase semble-t-elle naturelle et non traduite mot à mot ?",
+   "it": "La frase suona naturale e non tradotta parola per parola?",
+   "pt": "A frase soa natural e não traduzida palavra por palavra?"
+  }
  ],
- "promptCorreccion": "Focus only on the choice between will, going to and the present continuous for the future. Check whether each matches how planned the event is. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on the choice between will, going to and the present continuous for the future. Check whether each matches how planned the event is. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf die Wahl zwischen will, going to und dem present continuous für die Zukunft. Prüfe, ob jede Form dazu passt, wie stark das Ereignis geplant ist. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en la elección entre will, going to y present continuous para hablar del futuro. Comprueba si cada forma corresponde al grado de planificación del evento. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur le choix entre will, going to et le present continuous pour parler du futur. Vérifie si chaque forme correspond au degré de planification de l'événement. Ne réécris pas le texte.",
+  "it": "Concentrati solo sulla scelta tra will, going to e present continuous per parlare del futuro. Controlla se ogni forma corrisponde al grado di pianificazione dell'evento. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas na escolha entre will, going to e present continuous para falar do futuro. Verifique se cada forma corresponde ao grau de planejamento do evento. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*te llamo luego* rendered in the present: *I call you later* instead of *I'll call you later*."

@@ -3,52 +3,185 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Everyday Collocations",
+ "titulo": {
+  "en": "Everyday Collocations",
+  "de": "Alltägliche Kollokationen",
+  "es": "Colocaciones cotidianas",
+  "fr": "Collocations du quotidien",
+  "it": "Collocazioni quotidiane",
+  "pt": "Colocações do dia a dia"
+ },
  "categoria": "vocabulary",
  "ancla": "CV Vocabulary control",
- "descripcion": "At B1 you fix the simplest and most common verb-noun collocations: make a decision, have breakfast, take a shower. These verbs aren't freely interchangeable, and each noun in English has its own fixed verb partner to learn alongside it.",
+ "descripcion": {
+  "en": "At B1 you fix the simplest and most common verb-noun collocations: make a decision, have breakfast, take a shower. These verbs aren't freely interchangeable, and each noun in English has its own fixed verb partner to learn alongside it.",
+  "de": "Auf B1-Niveau festigst du die einfachsten und häufigsten Verb-Substantiv-Kollokationen: make a decision, have breakfast, take a shower. Diese Verben sind nicht frei austauschbar; jedes Substantiv hat im Englischen einen festen Verbpartner, den du zusammen mit ihm lernen solltest.",
+  "es": "En B1 afianzas las colocaciones verbo-sustantivo más sencillas y frecuentes: make a decision, have breakfast, take a shower. Estos verbos no son intercambiables libremente; cada sustantivo en inglés tiene un verbo fijo que conviene aprender junto con él.",
+  "fr": "Au niveau B1, tu consolides les collocations verbe-nom les plus simples et les plus fréquentes : make a decision, have breakfast, take a shower. Ces verbes ne sont pas librement interchangeables ; chaque nom anglais a son verbe associé qu'il faut apprendre avec lui.",
+  "it": "Al livello B1 consolidi le collocazioni verbo-sostantivo più semplici e comuni: make a decision, have breakfast, take a shower. Questi verbi non sono liberamente intercambiabili; ogni sostantivo inglese ha il proprio verbo fisso da imparare insieme.",
+  "pt": "No nível B1, você fixa as colocações verbo-substantivo mais simples e comuns: make a decision, have breakfast, take a shower. Esses verbos não são livremente intercambiáveis; cada substantivo em inglês tem seu verbo parceiro fixo, que deve ser aprendido junto."
+ },
  "cuadroReferencia": {
-  "titulo": "Simple everyday collocations",
+  "titulo": {
+   "en": "Simple everyday collocations",
+   "de": "Einfache alltägliche Kollokationen",
+   "es": "Colocaciones cotidianas simples",
+   "fr": "Collocations simples du quotidien",
+   "it": "Collocazioni quotidiane semplici",
+   "pt": "Colocações simples do dia a dia"
+  },
   "columnas": [
-   "Noun",
-   "Verb"
+   {
+    "en": "Noun",
+    "de": "Nomen",
+    "es": "Sustantivo",
+    "fr": "Nom",
+    "it": "Sostantivo",
+    "pt": "Substantivo"
+   },
+   {
+    "en": "Verb",
+    "de": "Verb",
+    "es": "Verbo",
+    "fr": "Verbe",
+    "it": "Verbo",
+    "pt": "Verbo"
+   }
   ],
   "filas": [
    [
-    "breakfast",
-    "have"
+    {
+     "en": "breakfast",
+     "de": "Frühstück",
+     "es": "desayuno",
+     "fr": "petit-déjeuner",
+     "it": "colazione",
+     "pt": "café da manhã"
+    },
+    {
+     "en": "have",
+     "de": "have",
+     "es": "have",
+     "fr": "have",
+     "it": "have",
+     "pt": "have"
+    }
    ],
    [
-    "a shower",
-    "take/have"
+    {
+     "en": "a shower",
+     "de": "duschen / eine Dusche",
+     "es": "una ducha",
+     "fr": "une douche",
+     "it": "una doccia",
+     "pt": "um banho"
+    },
+    {
+     "en": "take/have",
+     "de": "take/have",
+     "es": "take/have",
+     "fr": "take/have",
+     "it": "take/have",
+     "pt": "take/have"
+    }
    ],
    [
-    "a decision",
-    "make"
+    {
+     "en": "a decision",
+     "de": "eine Entscheidung",
+     "es": "una decisión",
+     "fr": "une décision",
+     "it": "una decisione",
+     "pt": "uma decisão"
+    },
+    {
+     "en": "make",
+     "de": "make",
+     "es": "make",
+     "fr": "make",
+     "it": "make",
+     "pt": "make"
+    }
    ],
    [
-    "a mistake",
-    "make"
+    {
+     "en": "a mistake",
+     "de": "ein Fehler",
+     "es": "un error",
+     "fr": "une erreur",
+     "it": "un errore",
+     "pt": "um erro"
+    },
+    {
+     "en": "make",
+     "de": "make",
+     "es": "make",
+     "fr": "make",
+     "it": "make",
+     "pt": "make"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I usually have breakfast at eight.",
+   "texto": {
+    "en": "I usually have breakfast at eight.",
+    "de": "Normalerweise frühstücke ich um acht.",
+    "es": "Normalmente desayuno a las ocho.",
+    "fr": "Je prends généralement mon petit-déjeuner à huit heures.",
+    "it": "Di solito faccio colazione alle otto.",
+    "pt": "Normalmente tomo café da manhã às oito."
+   },
    "audio": true
   },
   {
-   "texto": "I need to make a decision soon.",
+   "texto": {
+    "en": "I need to make a decision soon.",
+    "de": "Ich muss bald eine Entscheidung treffen.",
+    "es": "Necesito tomar una decisión pronto.",
+    "fr": "Je dois bientôt prendre une décision.",
+    "it": "Devo prendere una decisione presto.",
+    "pt": "Preciso tomar uma decisão em breve."
+   },
    "audio": true
   },
   {
-   "texto": "Everyone makes mistakes sometimes."
+   "texto": {
+    "en": "Everyone makes mistakes sometimes.",
+    "de": "Jeder Mensch macht mal Fehler.",
+    "es": "Todo el mundo se equivoca alguna vez.",
+    "fr": "Tout le monde fait des erreurs de temps en temps.",
+    "it": "Tutti sbagliano ogni tanto.",
+    "pt": "Todo mundo comete erros às vezes."
+   }
   }
  ],
  "notas": [
-  "Have is the default verb for meals: have breakfast, have lunch, have dinner.",
-  "Make a decision and make a mistake use make, not do.",
-  "Take a shower and have a shower are both correct; take is more common in American English."
+  {
+   "en": "Have is the default verb for meals: have breakfast, have lunch, have dinner.",
+   "de": "Have ist das Standardverb bei Mahlzeiten: have breakfast, have lunch, have dinner.",
+   "es": "Have es el verbo habitual para las comidas: have breakfast, have lunch, have dinner.",
+   "fr": "Have est le verbe de base pour les repas : have breakfast, have lunch, have dinner.",
+   "it": "Have è il verbo standard per i pasti: have breakfast, have lunch, have dinner.",
+   "pt": "Have é o verbo padrão para refeições: have breakfast, have lunch, have dinner."
+  },
+  {
+   "en": "Make a decision and make a mistake use make, not do.",
+   "de": "Make a decision und make a mistake verwenden make, nicht do.",
+   "es": "Make a decision y make a mistake llevan make, no do.",
+   "fr": "Make a decision et make a mistake utilisent make, pas do.",
+   "it": "Make a decision e make a mistake usano make, non do.",
+   "pt": "Make a decision e make a mistake usam make, não do."
+  },
+  {
+   "en": "Take a shower and have a shower are both correct; take is more common in American English.",
+   "de": "Take a shower und have a shower sind beide korrekt; take ist im amerikanischen Englisch häufiger.",
+   "es": "Take a shower y have a shower son correctos; take es más frecuente en inglés estadounidense.",
+   "fr": "Take a shower et have a shower sont tous deux corrects ; take est plus fréquent en anglais américain.",
+   "it": "Take a shower e have a shower sono entrambi corretti; take è più comune nell'inglese americano.",
+   "pt": "Take a shower e have a shower estão ambos corretos; take é mais comum no inglês americano."
+  }
  ],
  "contraste": {
   "es": "Tomar covers several collocations (tomar una decisión, tomar una ducha), which English splits: make a decision, have or take a shower.",
@@ -58,14 +191,42 @@
   "pt": "Tomar banho corresponds to take a shower, but tomar o pequeno-almoço leads to take breakfast, where English uses have."
  },
  "errores": [
-  "Using do instead of have for meals.",
-  "Saying do a decision instead of make a decision.",
-  "Using make where have or take would be correct."
+  {
+   "en": "Using do instead of have for meals.",
+   "de": "Bei Mahlzeiten do statt have verwenden.",
+   "es": "Usar do en lugar de have para las comidas.",
+   "fr": "Utiliser do au lieu de have pour les repas.",
+   "it": "Usare do invece di have per i pasti.",
+   "pt": "Usar do em vez de have para refeições."
+  },
+  {
+   "en": "Saying do a decision instead of make a decision.",
+   "de": "Do a decision statt make a decision sagen.",
+   "es": "Decir do a decision en lugar de make a decision.",
+   "fr": "Dire do a decision au lieu de make a decision.",
+   "it": "Dire do a decision invece di make a decision.",
+   "pt": "Dizer do a decision em vez de make a decision."
+  },
+  {
+   "en": "Using make where have or take would be correct.",
+   "de": "Make verwenden, wo have oder take richtig wäre.",
+   "es": "Usar make donde lo correcto sería have o take.",
+   "fr": "Utiliser make là où have ou take serait correct.",
+   "it": "Usare make dove sarebbero corretti have o take.",
+   "pt": "Usar make onde have ou take seria o correto."
+  }
  ],
  "redemittel": [
   {
    "expresion": "to have breakfast/lunch/dinner",
-   "funcion": "meals",
+   "funcion": {
+    "en": "meals",
+    "de": "Mahlzeiten",
+    "es": "comidas",
+    "fr": "repas",
+    "it": "pasti",
+    "pt": "refeições"
+   },
    "traducciones": {
     "es": "desayunar/almorzar/cenar",
     "de": "frühstücken / zu Mittag essen / zu Abend essen",
@@ -76,7 +237,14 @@
   },
   {
    "expresion": "to make a decision",
-   "funcion": "fixed collocation",
+   "funcion": {
+    "en": "fixed collocation",
+    "de": "feste Kollokation",
+    "es": "colocación fija",
+    "fr": "collocation figée",
+    "it": "collocazione fissa",
+    "pt": "colocação fixa"
+   },
    "traducciones": {
     "es": "tomar una decisión",
     "de": "eine Entscheidung treffen",
@@ -87,7 +255,14 @@
   },
   {
    "expresion": "to make a mistake",
-   "funcion": "fixed collocation",
+   "funcion": {
+    "en": "fixed collocation",
+    "de": "feste Kollokation",
+    "es": "colocación fija",
+    "fr": "collocation figée",
+    "it": "collocazione fissa",
+    "pt": "colocação fixa"
+   },
    "traducciones": {
     "es": "cometer un error",
     "de": "einen Fehler machen",
@@ -98,7 +273,14 @@
   },
   {
    "expresion": "to take/have a shower",
-   "funcion": "fixed collocation",
+   "funcion": {
+    "en": "fixed collocation",
+    "de": "feste Kollokation",
+    "es": "colocación fija",
+    "fr": "collocation figée",
+    "it": "collocazione fissa",
+    "pt": "colocação fixa"
+   },
    "traducciones": {
     "es": "ducharse",
     "de": "duschen",
@@ -109,7 +291,14 @@
   },
   {
    "expresion": "to have a good time",
-   "funcion": "fixed collocation",
+   "funcion": {
+    "en": "fixed collocation",
+    "de": "feste Kollokation",
+    "es": "colocación fija",
+    "fr": "collocation figée",
+    "it": "collocazione fissa",
+    "pt": "colocação fixa"
+   },
    "traducciones": {
     "es": "pasarla bien",
     "de": "Spaß haben / sich amüsieren",
@@ -120,7 +309,14 @@
   },
   {
    "expresion": "to take a break",
-   "funcion": "fixed collocation",
+   "funcion": {
+    "en": "fixed collocation",
+    "de": "feste Kollokation",
+    "es": "colocación fija",
+    "fr": "collocation figée",
+    "it": "collocazione fissa",
+    "pt": "colocação fixa"
+   },
    "traducciones": {
     "es": "tomarse un descanso",
     "de": "eine Pause machen",
@@ -131,13 +327,55 @@
   }
  ],
  "autochequeo": [
-  "Is have used for meals, not do?",
-  "Is make used for decisions and mistakes, not do?",
-  "Have I used at least four different collocations?",
-  "Does the text sound natural?",
-  "Does the text sound natural?"
+  {
+   "en": "Is have used for meals, not do?",
+   "de": "Wird bei Mahlzeiten have und nicht do verwendet?",
+   "es": "¿Se usa have para las comidas y no do?",
+   "fr": "Have est-il utilisé pour les repas, et non do ?",
+   "it": "Si usa have per i pasti e non do?",
+   "pt": "Have é usado para refeições, e não do?"
+  },
+  {
+   "en": "Is make used for decisions and mistakes, not do?",
+   "de": "Wird make bei Entscheidungen und Fehlern verwendet und nicht do?",
+   "es": "¿Se usa make para decisiones y errores y no do?",
+   "fr": "Make est-il utilisé pour les décisions et les erreurs, et non do ?",
+   "it": "Si usa make per decisioni ed errori e non do?",
+   "pt": "Make é usado para decisões e erros, e não do?"
+  },
+  {
+   "en": "Have I used at least four different collocations?",
+   "de": "Habe ich mindestens vier verschiedene Kollokationen verwendet?",
+   "es": "¿He usado al menos cuatro colocaciones diferentes?",
+   "fr": "Ai-je utilisé au moins quatre collocations différentes ?",
+   "it": "Ho usato almeno quattro collocazioni diverse?",
+   "pt": "Usei pelo menos quatro colocações diferentes?"
+  },
+  {
+   "en": "Does the text sound natural?",
+   "de": "Klingt der Text natürlich?",
+   "es": "¿El texto suena natural?",
+   "fr": "Le texte sonne-t-il naturellement ?",
+   "it": "Il testo suona naturale?",
+   "pt": "O texto soa natural?"
+  },
+  {
+   "en": "Does the text sound natural?",
+   "de": "Klingt der Text natürlich?",
+   "es": "¿El texto suena natural?",
+   "fr": "Le texte sonne-t-il naturellement ?",
+   "it": "Il testo suona naturale?",
+   "pt": "O texto soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on verb-noun collocations. Check the choice between have, make and take for each fixed expression, especially meals, decisions and mistakes. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on verb-noun collocations. Check the choice between have, make and take for each fixed expression, especially meals, decisions and mistakes. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf Verb-Substantiv-Kollokationen. Prüfe bei jeder festen Wendung die Wahl zwischen have, make und take, besonders bei Mahlzeiten, Entscheidungen und Fehlern. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en las colocaciones verbo-sustantivo. Comprueba la elección entre have, make y take en cada expresión fija, especialmente con comidas, decisiones y errores. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur les collocations verbe-nom. Vérifie le choix entre have, make et take dans chaque expression figée, notamment pour les repas, les décisions et les erreurs. Ne réécris pas le texte.",
+  "it": "Concentrati solo sulle collocazioni verbo-sostantivo. Controlla la scelta tra have, make e take in ogni espressione fissa, soprattutto con pasti, decisioni ed errori. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas nas colocações verbo-substantivo. Verifique a escolha entre have, make e take em cada expressão fixa, especialmente com refeições, decisões e erros. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*tomar un café* rendered as *take a coffee* instead of *have a coffee*."

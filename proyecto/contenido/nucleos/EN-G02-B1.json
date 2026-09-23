@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Past Simple and Past Continuous",
+ "titulo": {
+  "en": "Past Simple and Past Continuous",
+  "de": "Simple Past und Past Continuous",
+  "es": "Pasado simple y pasado continuo",
+  "fr": "Prétérit et prétérit continu",
+  "it": "Past simple e past continuous",
+  "pt": "Simple past e past continuous"
+ },
  "categoria": "grammar",
  "ancla": "EGP A2",
- "descripcion": "The past simple tells the main events of a story; the past continuous sets the background or an action interrupted by another. At B1 the goal is to combine both correctly: I was walking home when it started to rain.",
+ "descripcion": {
+  "en": "The past simple tells the main events of a story; the past continuous sets the background or an action interrupted by another. At B1 the goal is to combine both correctly: I was walking home when it started to rain.",
+  "de": "Das simple past erzählt die Hauptereignisse einer Geschichte; das past continuous beschreibt den Hintergrund oder eine Handlung, die von einer anderen unterbrochen wird. Auf B1-Niveau geht es darum, beide Zeiten korrekt zu kombinieren: I was walking home when it started to rain.",
+  "es": "El past simple narra los acontecimientos principales de una historia; el past continuous describe el trasfondo o una acción interrumpida por otra. En B1, el objetivo es combinar correctamente ambos tiempos: I was walking home when it started to rain.",
+  "fr": "Le past simple raconte les événements principaux d'un récit ; le past continuous décrit l'arrière-plan ou une action interrompue par une autre. Au niveau B1, l'objectif est de combiner correctement les deux : I was walking home when it started to rain.",
+  "it": "Il past simple racconta gli eventi principali di una storia; il past continuous descrive lo sfondo o un'azione interrotta da un'altra. Al livello B1, l'obiettivo è combinarli correttamente: I was walking home when it started to rain.",
+  "pt": "O past simple conta os principais acontecimentos de uma história; o past continuous descreve o contexto ou uma ação interrompida por outra. No nível B1, o objetivo é combinar os dois corretamente: I was walking home when it started to rain."
+ },
  "cuadroReferencia": {
-  "titulo": "Past simple vs. past continuous",
+  "titulo": {
+   "en": "Past simple vs. past continuous",
+   "de": "Simple past vs. past continuous",
+   "es": "Past simple vs. past continuous",
+   "fr": "Past simple vs past continuous",
+   "it": "Past simple vs. past continuous",
+   "pt": "Past simple vs. past continuous"
+  },
   "columnas": [
-   "Use",
-   "Form",
-   "Example"
+   {
+    "en": "Use",
+    "de": "Verwendung",
+    "es": "Uso",
+    "fr": "Emploi",
+    "it": "Uso",
+    "pt": "Uso"
+   },
+   {
+    "en": "Form",
+    "de": "Form",
+    "es": "Forma",
+    "fr": "Forme",
+    "it": "Forma",
+    "pt": "Forma"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Main event",
-    "past simple",
-    "I called her yesterday."
+    {
+     "en": "Main event",
+     "de": "Hauptereignis",
+     "es": "Acontecimiento principal",
+     "fr": "Événement principal",
+     "it": "Evento principale",
+     "pt": "Evento principal"
+    },
+    {
+     "en": "past simple",
+     "de": "Simple Past",
+     "es": "pasado simple",
+     "fr": "prétérit",
+     "it": "past simple",
+     "pt": "simple past"
+    },
+    {
+     "en": "I called her yesterday.",
+     "de": "Ich habe sie gestern angerufen.",
+     "es": "La llamé ayer.",
+     "fr": "Je l’ai appelée hier.",
+     "it": "L’ho chiamata ieri.",
+     "pt": "Liguei para ela ontem."
+    }
    ],
    [
-    "Background/interrupted action",
-    "past continuous",
-    "I was cooking when the phone rang."
+    {
+     "en": "Background/interrupted action",
+     "de": "Hintergrundhandlung / unterbrochene Handlung",
+     "es": "acción de fondo/interrumpida",
+     "fr": "action d'arrière-plan / interrompue",
+     "it": "azione di sfondo/interrotta",
+     "pt": "ação de fundo/interrompida"
+    },
+    {
+     "en": "past continuous",
+     "de": "past continuous",
+     "es": "past continuous",
+     "fr": "past continuous",
+     "it": "past continuous",
+     "pt": "past continuous"
+    },
+    {
+     "en": "I was cooking when the phone rang.",
+     "de": "Ich kochte gerade, als das Telefon klingelte.",
+     "es": "Estaba cocinando cuando sonó el teléfono.",
+     "fr": "Je cuisinais quand le téléphone a sonné.",
+     "it": "Stavo cucinando quando è squillato il telefono.",
+     "pt": "Eu estava cozinhando quando o telefone tocou."
+    }
    ],
    [
-    "Two actions at once",
-    "past continuous + past continuous",
-    "While I was cooking, she was setting the table."
+    {
+     "en": "Two actions at once",
+     "de": "Zwei gleichzeitige Handlungen",
+     "es": "dos acciones simultáneas",
+     "fr": "deux actions simultanées",
+     "it": "due azioni contemporanee",
+     "pt": "duas ações ao mesmo tempo"
+    },
+    {
+     "en": "past continuous + past continuous",
+     "de": "past continuous + past continuous",
+     "es": "past continuous + past continuous",
+     "fr": "past continuous + past continuous",
+     "it": "past continuous + past continuous",
+     "pt": "past continuous + past continuous"
+    },
+    {
+     "en": "While I was cooking, she was setting the table.",
+     "de": "Während ich kochte, deckte sie den Tisch.",
+     "es": "Mientras yo cocinaba, ella ponía la mesa.",
+     "fr": "Pendant que je cuisinais, elle mettait la table.",
+     "it": "Mentre cucinavo, lei apparecchiava la tavola.",
+     "pt": "Enquanto eu cozinhava, ela punha a mesa."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I was walking home when it started to rain.",
+   "texto": {
+    "en": "I was walking home when it started to rain.",
+    "de": "Ich war auf dem Heimweg, als es anfing zu regnen.",
+    "es": "Iba caminando a casa cuando empezó a llover.",
+    "fr": "Je rentrais chez moi à pied quand il s’est mis à pleuvoir.",
+    "it": "Stavo tornando a casa a piedi quando ha iniziato a piovere.",
+    "pt": "Eu estava voltando para casa a pé quando começou a chover."
+   },
    "audio": true
   },
   {
-   "texto": "While I was cooking, she was setting the table.",
+   "texto": {
+    "en": "While I was cooking, she was setting the table.",
+    "de": "Während ich kochte, deckte sie den Tisch.",
+    "es": "Mientras yo cocinaba, ella ponía la mesa.",
+    "fr": "Pendant que je cuisinais, elle mettait la table.",
+    "it": "Mentre cucinavo, lei apparecchiava la tavola.",
+    "pt": "Enquanto eu cozinhava, ela punha a mesa."
+   },
    "audio": true
   },
   {
-   "texto": "I called her yesterday, but she didn't answer."
+   "texto": {
+    "en": "I called her yesterday, but she didn't answer.",
+    "de": "Ich habe sie gestern angerufen, aber sie hat nicht geantwortet.",
+    "es": "La llamé ayer, pero no respondió.",
+    "fr": "Je l'ai appelée hier, mais elle n'a pas répondu.",
+    "it": "L'ho chiamata ieri, ma non ha risposto.",
+    "pt": "Liguei para ela ontem, mas ela não atendeu."
+   }
   }
  ],
  "notas": [
-  "When usually introduces the interrupting event (past simple); while introduces the background action (past continuous).",
-  "The past continuous is formed with was/were + -ing.",
-  "Not every past story needs the past continuous — use it only for background or interruption."
+  {
+   "en": "When usually introduces the interrupting event (past simple); while introduces the background action (past continuous).",
+   "de": "When leitet normalerweise das unterbrechende Ereignis ein (past simple); while leitet die Hintergrundhandlung ein (past continuous).",
+   "es": "When suele introducir el acontecimiento que interrumpe (past simple); while introduce la acción de fondo (past continuous).",
+   "fr": "When introduit généralement l'événement qui interrompt (past simple) ; while introduit l'action d'arrière-plan (past continuous).",
+   "it": "When introduce di solito l'evento che interrompe (past simple); while introduce l'azione di sfondo (past continuous).",
+   "pt": "When geralmente introduz o evento que interrompe (past simple); while introduz a ação de fundo (past continuous)."
+  },
+  {
+   "en": "The past continuous is formed with was/were + -ing.",
+   "de": "Das past continuous wird mit was/were + -ing gebildet.",
+   "es": "El past continuous se forma con was/were + -ing.",
+   "fr": "Le past continuous se forme avec was/were + -ing.",
+   "it": "Il past continuous si forma con was/were + -ing.",
+   "pt": "O past continuous é formado com was/were + -ing."
+  },
+  {
+   "en": "Not every past story needs the past continuous — use it only for background or interruption.",
+   "de": "Nicht jede Geschichte in der Vergangenheit braucht das past continuous – verwende es nur für Hintergrundhandlungen oder Unterbrechungen.",
+   "es": "No toda historia en pasado necesita el past continuous: úsalo solo para acciones de fondo o interrupciones.",
+   "fr": "Tous les récits au passé n'ont pas besoin du past continuous : utilise-le seulement pour l'arrière-plan ou une interruption.",
+   "it": "Non ogni racconto al passato richiede il past continuous: usalo solo per azioni di sfondo o interruzioni.",
+   "pt": "Nem toda história no passado precisa do past continuous — use-o apenas para ações de fundo ou interrupções."
+  }
  ],
  "contraste": {
   "es": "Spanish uses the imperfecto for the background of a story (estaba cocinando) and the indefinido for the main event (sonó el teléfono), with a logic very close to English. The transfer is generally direct.",
@@ -58,14 +205,42 @@
   "pt": "Portuguese has a very close equivalent: estava a cozinhar (European) or estava cozinhando (Brazilian) for the background, and the simple past for the main event. The imperfeito for habits (ia a pé para a escola) leads to I was going on foot where English uses I used to go."
  },
  "errores": [
-  "Using the past simple for the background action instead of the past continuous.",
-  "Using when where while would be more natural, or vice versa.",
-  "Forgetting was/were before the -ing form."
+  {
+   "en": "Using the past simple for the background action instead of the past continuous.",
+   "de": "Das past simple für die Hintergrundhandlung verwenden statt des past continuous.",
+   "es": "Usar el past simple para la acción de fondo en lugar del past continuous.",
+   "fr": "Utiliser le past simple pour l'action d'arrière-plan au lieu du past continuous.",
+   "it": "Usare il past simple per l'azione di sfondo invece del past continuous.",
+   "pt": "Usar o past simple para a ação de fundo em vez do past continuous."
+  },
+  {
+   "en": "Using when where while would be more natural, or vice versa.",
+   "de": "When verwenden, obwohl while natürlicher wäre, oder umgekehrt.",
+   "es": "Usar when donde while sería más natural, o viceversa.",
+   "fr": "Utiliser when là où while serait plus naturel, ou inversement.",
+   "it": "Usare when dove while sarebbe più naturale, o viceversa.",
+   "pt": "Usar when onde while seria mais natural, ou vice-versa."
+  },
+  {
+   "en": "Forgetting was/were before the -ing form.",
+   "de": "Was/were vor der -ing-Form vergessen.",
+   "es": "Olvidar was/were antes de la forma en -ing.",
+   "fr": "Oublier was/were avant la forme en -ing.",
+   "it": "Dimenticare was/were prima della forma in -ing.",
+   "pt": "Esquecer was/were antes da forma em -ing."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I was…-ing when…",
-   "funcion": "background interrupted",
+   "funcion": {
+    "en": "background interrupted",
+    "de": "unterbrochene Hintergrundhandlung",
+    "es": "acción de fondo interrumpida",
+    "fr": "action d’arrière-plan interrompue",
+    "it": "azione di sfondo interrotta",
+    "pt": "ação de fundo interrompida"
+   },
    "traducciones": {
     "es": "Estaba… cuando…",
     "de": "Ich war gerade am…, als…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "While I was…-ing,…",
-   "funcion": "background action",
+   "funcion": {
+    "en": "background action",
+    "de": "Hintergrundhandlung",
+    "es": "acción de fondo",
+    "fr": "action d'arrière-plan",
+    "it": "azione di sfondo",
+    "pt": "ação de fundo"
+   },
    "traducciones": {
     "es": "Mientras estaba…,…",
     "de": "Während ich gerade…,…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "…happened while…",
-   "funcion": "event during background",
+   "funcion": {
+    "en": "event during background",
+    "de": "Ereignis während der Hintergrundhandlung",
+    "es": "acontecimiento durante la acción de fondo",
+    "fr": "événement pendant l'action d'arrière-plan",
+    "it": "evento durante l'azione di sfondo",
+    "pt": "evento durante a ação de fundo"
+   },
    "traducciones": {
     "es": "…pasó mientras…",
     "de": "…passierte, während…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "I called…",
-   "funcion": "main event, past simple",
+   "funcion": {
+    "en": "main event, past simple",
+    "de": "Hauptereignis, past simple",
+    "es": "acontecimiento principal, past simple",
+    "fr": "événement principal, past simple",
+    "it": "evento principale, past simple",
+    "pt": "evento principal, past simple"
+   },
    "traducciones": {
     "es": "Llamé…",
     "de": "Ich rief… an.",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "It started to…",
-   "funcion": "sudden event",
+   "funcion": {
+    "en": "sudden event",
+    "de": "plötzliches Ereignis",
+    "es": "acontecimiento repentino",
+    "fr": "événement soudain",
+    "it": "evento improvviso",
+    "pt": "evento repentino"
+   },
    "traducciones": {
     "es": "Empezó a…",
     "de": "Es fing an zu…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "At that moment,…",
-   "funcion": "marks the interruption",
+   "funcion": {
+    "en": "marks the interruption",
+    "de": "markiert die Unterbrechung",
+    "es": "marca la interrupción",
+    "fr": "marque l’interruption",
+    "it": "segna l’interruzione",
+    "pt": "marca a interrupção"
+   },
    "traducciones": {
     "es": "En ese momento,…",
     "de": "In diesem Moment…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Is the main event in the past simple?",
-  "Is the background action in the past continuous?",
-  "Is was/were correctly used before -ing?",
-  "Have I used both tenses at least once?",
-  "Does the story sound natural, not translated?"
+  {
+   "en": "Is the main event in the past simple?",
+   "de": "Steht das Hauptereignis im Simple Past?",
+   "es": "¿El acontecimiento principal está en pasado simple?",
+   "fr": "L’événement principal est-il au prétérit ?",
+   "it": "L’evento principale è al past simple?",
+   "pt": "O evento principal está no simple past?"
+  },
+  {
+   "en": "Is the background action in the past continuous?",
+   "de": "Steht die Hintergrundhandlung im past continuous?",
+   "es": "¿La acción de fondo está en past continuous?",
+   "fr": "L'action d'arrière-plan est-elle au past continuous ?",
+   "it": "L'azione di sfondo è al past continuous?",
+   "pt": "A ação de fundo está no past continuous?"
+  },
+  {
+   "en": "Is was/were correctly used before -ing?",
+   "de": "Wird was/were korrekt vor -ing verwendet?",
+   "es": "¿Se usa correctamente was/were antes de -ing?",
+   "fr": "Was/were est-il correctement utilisé avant -ing ?",
+   "it": "Was/were è usato correttamente prima di -ing?",
+   "pt": "Was/were é usado corretamente antes de -ing?"
+  },
+  {
+   "en": "Have I used both tenses at least once?",
+   "de": "Habe ich beide Zeitformen mindestens einmal verwendet?",
+   "es": "¿He usado ambos tiempos al menos una vez?",
+   "fr": "Ai-je utilisé les deux temps au moins une fois ?",
+   "it": "Ho usato entrambi i tempi almeno una volta?",
+   "pt": "Usei os dois tempos pelo menos uma vez?"
+  },
+  {
+   "en": "Does the story sound natural, not translated?",
+   "de": "Klingt die Geschichte natürlich und nicht übersetzt?",
+   "es": "¿La historia suena natural y no traducida?",
+   "fr": "Le récit paraît-il naturel et non traduit ?",
+   "it": "La storia suona naturale e non tradotta?",
+   "pt": "A história soa natural, e não traduzida?"
+  }
  ],
- "promptCorreccion": "Focus only on past simple versus past continuous. Check whether the main event and the background action use the correct tense. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on past simple versus past continuous. Check whether the main event and the background action use the correct tense. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf past simple und past continuous. Prüfe, ob das Hauptereignis und die Hintergrundhandlung in der richtigen Zeitform stehen. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en past simple y past continuous. Comprueba si el acontecimiento principal y la acción de fondo usan el tiempo correcto. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur le past simple et le past continuous. Vérifie si l'événement principal et l'action d'arrière-plan utilisent le bon temps. Ne réécris pas le texte.",
+  "it": "Concentrati solo sul past simple e sul past continuous. Controlla se l'evento principale e l'azione di sfondo usano il tempo corretto. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas no past simple e no past continuous. Verifique se o evento principal e a ação de fundo usam o tempo verbal correto. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Mapping the imperfect onto the past simple: *It rained when I left* from *llovía cuando salí* instead of *It was raining*."

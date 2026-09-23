@@ -3,52 +3,199 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Present Perfect vs. Past Simple",
+ "titulo": {
+  "en": "Present Perfect vs. Past Simple",
+  "de": "Present Perfect vs. Simple Past",
+  "es": "Present perfect vs. pasado simple",
+  "fr": "Present perfect vs. prétérit",
+  "it": "Present perfect vs. past simple",
+  "pt": "Present perfect vs. simple past"
+ },
  "categoria": "grammar",
  "ancla": "EGP A2",
- "descripcion": "At A2 you introduce the present perfect for life experience (I've been to Paris) and keep the past simple for finished time (I went there in 2019). The finer rules come at B1. This is the first step towards more precise time reference at higher levels.",
+ "descripcion": {
+  "en": "At A2 you introduce the present perfect for life experience (I've been to Paris) and keep the past simple for finished time (I went there in 2019). The finer rules come at B1. This is the first step towards more precise time reference at higher levels.",
+  "de": "Auf A2 führst du das Present Perfect für Lebenserfahrungen ein (I've been to Paris) und behältst das Simple Past für abgeschlossene Zeitpunkte (I went there in 2019). Die feineren Regeln kommen auf B1. Das ist der erste Schritt zu präziseren Zeitbezügen auf höheren Niveaus.",
+  "es": "En A2 introduces el present perfect para experiencias de vida (I've been to Paris) y mantienes el pasado simple para momentos terminados (I went there in 2019). Las reglas más finas llegan en B1. Es el primer paso hacia referencias temporales más precisas en niveles superiores.",
+  "fr": "Au niveau A2, tu introduis le present perfect pour les expériences de vie (I've been to Paris) et tu gardes le prétérit pour un moment passé terminé (I went there in 2019). Les règles plus fines viennent au niveau B1. C’est la première étape vers des repères temporels plus précis aux niveaux supérieurs.",
+  "it": "A livello A2 introduci il present perfect per le esperienze di vita (I've been to Paris) e mantieni il past simple per tempi passati conclusi (I went there in 2019). Le regole più fini arrivano al B1. È il primo passo verso riferimenti temporali più precisi ai livelli superiori.",
+  "pt": "No nível A2, você introduz o present perfect para experiências de vida (I've been to Paris) e mantém o simple past para tempos passados concluídos (I went there in 2019). As regras mais detalhadas vêm no B1. Esse é o primeiro passo para referências de tempo mais precisas nos níveis mais altos."
+ },
  "cuadroReferencia": {
-  "titulo": "Experience vs. finished time",
+  "titulo": {
+   "en": "Experience vs. finished time",
+   "de": "Erfahrung vs. abgeschlossene Zeit",
+   "es": "Experiencia vs. tiempo terminado",
+   "fr": "Expérience vs. moment passé terminé",
+   "it": "Esperienza vs. tempo concluso",
+   "pt": "Experiência vs. tempo concluído"
+  },
   "columnas": [
-   "Use",
-   "Tense",
-   "Example"
+   {
+    "en": "Use",
+    "de": "Verwendung",
+    "es": "Uso",
+    "fr": "Emploi",
+    "it": "Uso",
+    "pt": "Uso"
+   },
+   {
+    "en": "Tense",
+    "de": "Zeit",
+    "es": "Tiempo verbal",
+    "fr": "Temps",
+    "it": "Tempo",
+    "pt": "Tempo verbal"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Life experience",
-    "present perfect",
-    "I've been to Paris."
+    {
+     "en": "Life experience",
+     "de": "Lebenserfahrung",
+     "es": "Experiencia de vida",
+     "fr": "Expérience de vie",
+     "it": "Esperienza di vita",
+     "pt": "Experiência de vida"
+    },
+    {
+     "en": "present perfect",
+     "de": "Present Perfect",
+     "es": "present perfect",
+     "fr": "present perfect",
+     "it": "present perfect",
+     "pt": "present perfect"
+    },
+    {
+     "en": "I've been to Paris.",
+     "de": "Ich war schon in Paris.",
+     "es": "He estado en París.",
+     "fr": "Je suis déjà allé(e) à Paris.",
+     "it": "Sono stato/a a Parigi.",
+     "pt": "Já estive em Paris."
+    }
    ],
    [
-    "Finished time",
-    "past simple",
-    "I went there in 2019."
+    {
+     "en": "Finished time",
+     "de": "Abgeschlossener Zeitpunkt",
+     "es": "Tiempo terminado",
+     "fr": "Moment passé terminé",
+     "it": "Tempo concluso",
+     "pt": "Tempo concluído"
+    },
+    {
+     "en": "past simple",
+     "de": "Simple Past",
+     "es": "pasado simple",
+     "fr": "prétérit",
+     "it": "past simple",
+     "pt": "simple past"
+    },
+    {
+     "en": "I went there in 2019.",
+     "de": "Ich war 2019 dort.",
+     "es": "Fui allí en 2019.",
+     "fr": "J’y suis allé(e) en 2019.",
+     "it": "Ci sono andato/a nel 2019.",
+     "pt": "Fui lá em 2019."
+    }
    ],
    [
-    "Asking when",
-    "past simple",
-    "When did you go?"
+    {
+     "en": "Asking when",
+     "de": "Nach dem Zeitpunkt fragen",
+     "es": "Preguntar cuándo",
+     "fr": "Demander quand",
+     "it": "Chiedere quando",
+     "pt": "Perguntar quando"
+    },
+    {
+     "en": "past simple",
+     "de": "Simple Past",
+     "es": "pasado simple",
+     "fr": "prétérit",
+     "it": "past simple",
+     "pt": "simple past"
+    },
+    {
+     "en": "When did you go?",
+     "de": "Wann bist du hingegangen?",
+     "es": "¿Cuándo fuiste?",
+     "fr": "Quand y es-tu allé(e) ?",
+     "it": "Quando ci sei andato/a?",
+     "pt": "Quando você foi?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I've been to Paris twice.",
+   "texto": {
+    "en": "I've been to Paris twice.",
+    "de": "Ich war schon zweimal in Paris.",
+    "es": "He estado dos veces en París.",
+    "fr": "Je suis déjà allé(e) deux fois à Paris.",
+    "it": "Sono stato/a a Parigi due volte.",
+    "pt": "Já estive em Paris duas vezes."
+   },
    "audio": true
   },
   {
-   "texto": "I went there in 2019 with my family.",
+   "texto": {
+    "en": "I went there in 2019 with my family.",
+    "de": "Ich war 2019 mit meiner Familie dort.",
+    "es": "Fui allí en 2019 con mi familia.",
+    "fr": "J’y suis allé(e) en 2019 avec ma famille.",
+    "it": "Ci sono andato/a nel 2019 con la mia famiglia.",
+    "pt": "Fui lá em 2019 com minha família."
+   },
    "audio": true
   },
   {
-   "texto": "When did you go?"
+   "texto": {
+    "en": "When did you go?",
+    "de": "Wann bist du hingegangen?",
+    "es": "¿Cuándo fuiste?",
+    "fr": "Quand y es-tu allé(e) ?",
+    "it": "Quando ci sei andato/a?",
+    "pt": "Quando você foi?"
+   }
   }
  ],
  "notas": [
-  "Have/has + been to is a very common pattern for experience.",
-  "A specific past date or time word (in 2019, last year) needs the past simple.",
-  "When always takes the past simple."
+  {
+   "en": "Have/has + been to is a very common pattern for experience.",
+   "de": "Have/has + been to ist ein sehr häufiges Muster für Erfahrungen.",
+   "es": "Have/has + been to es una estructura muy frecuente para hablar de experiencias.",
+   "fr": "Have/has + been to est une structure très courante pour parler d’expérience.",
+   "it": "Have/has + been to è una struttura molto comune per parlare di esperienze.",
+   "pt": "Have/has + been to é uma estrutura muito comum para falar de experiências."
+  },
+  {
+   "en": "A specific past date or time word (in 2019, last year) needs the past simple.",
+   "de": "Ein konkretes Datum oder eine Zeitangabe in der Vergangenheit (in 2019, last year) verlangt das Simple Past.",
+   "es": "Una fecha o expresión de tiempo concreta en el pasado (in 2019, last year) requiere el pasado simple.",
+   "fr": "Une date ou une expression de temps précise dans le passé (in 2019, last year) exige le prétérit.",
+   "it": "Una data o espressione di tempo specifica nel passato (in 2019, last year) richiede il past simple.",
+   "pt": "Uma data ou expressão de tempo específica no passado (in 2019, last year) exige o simple past."
+  },
+  {
+   "en": "When always takes the past simple.",
+   "de": "Nach when verwendet man immer das Simple Past.",
+   "es": "Después de when se usa siempre el pasado simple.",
+   "fr": "Après when, on utilise toujours le prétérit.",
+   "it": "Dopo when si usa sempre il past simple.",
+   "pt": "Depois de when, usa-se sempre o simple past."
+  }
  ],
  "contraste": {
   "es": "Many varieties of Latin American Spanish prefer the indefinido even for experiences, so the English present perfect can feel unnatural at first.",
@@ -58,13 +205,34 @@
   "pt": "For life experience Portuguese uses the simple past with já (já estive em Paris), which leads to I already was in Paris. English uses the present perfect here: I've been to Paris."
  },
  "errores": [
-  "Using the present perfect with a specific past date.",
-  "Using the past simple for general life experience."
+  {
+   "en": "Using the present perfect with a specific past date.",
+   "de": "Das Present Perfect mit einem konkreten Datum in der Vergangenheit verwenden.",
+   "es": "Usar el present perfect con una fecha concreta del pasado.",
+   "fr": "Utiliser le present perfect avec une date précise dans le passé.",
+   "it": "Usare il present perfect con una data specifica nel passato.",
+   "pt": "Usar o present perfect com uma data específica no passado."
+  },
+  {
+   "en": "Using the past simple for general life experience.",
+   "de": "Das Simple Past für allgemeine Lebenserfahrungen verwenden.",
+   "es": "Usar el pasado simple para experiencias generales de vida.",
+   "fr": "Utiliser le prétérit pour une expérience de vie générale.",
+   "it": "Usare il past simple per esperienze generali di vita.",
+   "pt": "Usar o simple past para experiências gerais de vida."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I've been to…",
-   "funcion": "life experience",
+   "funcion": {
+    "en": "life experience",
+    "de": "Lebenserfahrung",
+    "es": "experiencia de vida",
+    "fr": "expérience de vie",
+    "it": "esperienza di vita",
+    "pt": "experiência de vida"
+   },
    "traducciones": {
     "es": "He estado en…",
     "de": "Ich war schon in…",
@@ -75,7 +243,14 @@
   },
   {
    "expresion": "I went to…in…",
-   "funcion": "finished time",
+   "funcion": {
+    "en": "finished time",
+    "de": "abgeschlossener Zeitpunkt",
+    "es": "tiempo terminado",
+    "fr": "moment passé terminé",
+    "it": "tempo concluso",
+    "pt": "tempo concluído"
+   },
    "traducciones": {
     "es": "Fui a… en…",
     "de": "Ich war im… in…",
@@ -86,7 +261,14 @@
   },
   {
    "expresion": "Have you ever…?",
-   "funcion": "asking about experience",
+   "funcion": {
+    "en": "asking about experience",
+    "de": "nach Erfahrungen fragen",
+    "es": "preguntar por experiencias",
+    "fr": "demander des expériences",
+    "it": "chiedere delle esperienze",
+    "pt": "perguntar sobre experiências"
+   },
    "traducciones": {
     "es": "¿Alguna vez has…?",
     "de": "Hast du schon einmal…?",
@@ -97,7 +279,14 @@
   },
   {
    "expresion": "When did you…?",
-   "funcion": "asking when",
+   "funcion": {
+    "en": "asking when",
+    "de": "fragen, wann",
+    "es": "preguntar cuándo",
+    "fr": "demander quand",
+    "it": "chiedere quando",
+    "pt": "perguntar quando"
+   },
    "traducciones": {
     "es": "¿Cuándo…?",
     "de": "Wann hast du…?",
@@ -108,7 +297,14 @@
   },
   {
    "expresion": "I've never…",
-   "funcion": "negative experience",
+   "funcion": {
+    "en": "negative experience",
+    "de": "negative Erfahrung",
+    "es": "experiencia negativa",
+    "fr": "expérience négative",
+    "it": "esperienza negativa",
+    "pt": "experiência negativa"
+   },
    "traducciones": {
     "es": "Nunca he…",
     "de": "Ich habe noch nie…",
@@ -119,7 +315,14 @@
   },
   {
    "expresion": "Last year, I…",
-   "funcion": "finished time opener",
+   "funcion": {
+    "en": "finished time opener",
+    "de": "Einstieg mit abgeschlossener Zeit",
+    "es": "inicio con tiempo terminado",
+    "fr": "début avec un moment passé terminé",
+    "it": "apertura con tempo concluso",
+    "pt": "início com tempo concluído"
+   },
    "traducciones": {
     "es": "El año pasado, yo…",
     "de": "Letztes Jahr habe ich…",
@@ -130,13 +333,55 @@
   }
  ],
  "autochequeo": [
-  "Is the present perfect used for experience, without a specific date?",
-  "Is the past simple used with a specific time?",
-  "Is the past simple used after when?",
-  "Does the sentence sound natural?",
-  "Does the sentence sound natural?"
+  {
+   "en": "Is the present perfect used for experience, without a specific date?",
+   "de": "Wird das Present Perfect für Erfahrungen ohne konkretes Datum verwendet?",
+   "es": "¿Se usa el present perfect para experiencias sin una fecha concreta?",
+   "fr": "Le present perfect est-il utilisé pour une expérience sans date précise ?",
+   "it": "Si usa il present perfect per esperienze senza una data specifica?",
+   "pt": "O present perfect é usado para experiências sem uma data específica?"
+  },
+  {
+   "en": "Is the past simple used with a specific time?",
+   "de": "Wird das Simple Past mit einer konkreten Zeitangabe verwendet?",
+   "es": "¿Se usa el pasado simple con un momento concreto?",
+   "fr": "Le prétérit est-il utilisé avec un moment précis ?",
+   "it": "Si usa il past simple con un tempo specifico?",
+   "pt": "O simple past é usado com um tempo específico?"
+  },
+  {
+   "en": "Is the past simple used after when?",
+   "de": "Wird nach when das Simple Past verwendet?",
+   "es": "¿Se usa el pasado simple después de when?",
+   "fr": "Le prétérit est-il utilisé après when ?",
+   "it": "Si usa il past simple dopo when?",
+   "pt": "O simple past é usado depois de when?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "en": "Does the sentence sound natural?",
+   "de": "Klingt der Satz natürlich?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on present perfect versus past simple. Check whether a specific time word forces the past simple. Do not rewrite the text. Flag any confusion between the two.",
+ "promptCorreccion": {
+  "en": "Focus only on present perfect versus past simple. Check whether a specific time word forces the past simple. Do not rewrite the text. Flag any confusion between the two.",
+  "de": "Achte nur auf Present Perfect gegenüber Simple Past. Prüfe, ob eine konkrete Zeitangabe das Simple Past verlangt. Formuliere den Text nicht neu. Markiere jede Verwechslung der beiden.",
+  "es": "Concéntrate solo en el present perfect frente al pasado simple. Comprueba si una expresión de tiempo concreta obliga a usar el pasado simple. No reescribas el texto. Señala cualquier confusión entre ambos.",
+  "fr": "Concentre-toi uniquement sur le present perfect par rapport au prétérit. Vérifie si une expression de temps précise impose le prétérit. Ne réécris pas le texte. Signale toute confusion entre les deux.",
+  "it": "Concentrati solo sul present perfect rispetto al past simple. Controlla se un’espressione di tempo specifica richiede il past simple. Non riscrivere il testo. Segnala qualsiasi confusione tra i due.",
+  "pt": "Concentre-se apenas no present perfect em comparação com o simple past. Verifique se uma expressão de tempo específica exige o simple past. Não reescreva o texto. Sinalize qualquer confusão entre os dois."
+ },
  "erroresContrastivos": {
   "es": [
    "Carrying over the peninsular *he estado en Londres el año pasado*: *I have been in London last year* instead of *I was in London last year*."

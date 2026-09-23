@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Giving Advice",
+ "titulo": {
+  "en": "Giving Advice",
+  "de": "Ratschläge geben",
+  "es": "Dar consejos",
+  "fr": "Donner des conseils",
+  "it": "Dare consigli",
+  "pt": "Dar conselhos"
+ },
  "categoria": "fluency",
  "ancla": "CV Goal-oriented co-operation",
- "descripcion": "At B1 you give advice clearly with should. The softer forms, like if I were you, can be introduced but don't need to be perfect yet — the priority is a clear, friendly piece of advice that doesn't sound like an order.",
+ "descripcion": {
+  "en": "At B1 you give advice clearly with should. The softer forms, like if I were you, can be introduced but don't need to be perfect yet — the priority is a clear, friendly piece of advice that doesn't sound like an order.",
+  "de": "Auf B1 gibst du mit should klar Ratschläge. Weichere Formen wie if I were you können eingeführt werden, müssen aber noch nicht perfekt sitzen — wichtig ist ein klarer, freundlicher Rat, der nicht wie ein Befehl klingt.",
+  "es": "En B1 das consejos con claridad usando should. Se pueden introducir formas más suaves, como if I were you, pero todavía no tienen que ser perfectas; la prioridad es un consejo claro y amable que no suene como una orden.",
+  "fr": "Au niveau B1, tu donnes clairement des conseils avec should. Des formes plus douces, comme if I were you, peuvent être introduites sans devoir être encore parfaites : la priorité est un conseil clair et amical qui ne ressemble pas à un ordre.",
+  "it": "A livello B1 dai consigli chiari con should. Forme più morbide, come if I were you, possono essere introdotte senza dover essere ancora perfette: la priorità è un consiglio chiaro e amichevole che non sembri un ordine.",
+  "pt": "No nível B1, você dá conselhos claros com should. Formas mais suaves, como if I were you, podem ser introduzidas sem precisarem estar perfeitas ainda; a prioridade é um conselho claro e amigável que não soe como uma ordem."
+ },
  "cuadroReferencia": {
-  "titulo": "Giving advice",
+  "titulo": {
+   "en": "Giving advice",
+   "de": "Ratschläge geben",
+   "es": "Dar consejos",
+   "fr": "Donner des conseils",
+   "it": "Dare consigli",
+   "pt": "Dar conselhos"
+  },
   "columnas": [
-   "Form",
-   "Example"
+   {
+    "en": "Form",
+    "de": "Form",
+    "es": "Forma",
+    "fr": "Forme",
+    "it": "Forma",
+    "pt": "Forma"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "You should…",
-    "You should get some rest."
+    {
+     "en": "You should…",
+     "de": "Du solltest…",
+     "es": "Deberías…",
+     "fr": "Tu devrais…",
+     "it": "Dovresti…",
+     "pt": "Devias…"
+    },
+    {
+     "en": "You should get some rest.",
+     "de": "Du solltest dich etwas ausruhen.",
+     "es": "Deberías descansar un poco.",
+     "fr": "Tu devrais te reposer un peu.",
+     "it": "Dovresti riposarti un po’.",
+     "pt": "Você deveria descansar um pouco."
+    }
    ],
    [
-    "If I were you, I'd…",
-    "If I were you, I'd talk to her."
+    {
+     "en": "If I were you, I'd…",
+     "de": "An deiner Stelle würde ich…",
+     "es": "Yo en tu lugar…",
+     "fr": "À ta place, je…",
+     "it": "Al tuo posto, io…",
+     "pt": "No teu lugar, eu…"
+    },
+    {
+     "en": "If I were you, I'd talk to her.",
+     "de": "An deiner Stelle würde ich mit ihr reden.",
+     "es": "Si yo fuera tú, hablaría con ella.",
+     "fr": "À ta place, je lui parlerais.",
+     "it": "Se fossi in te, parlerei con lei.",
+     "pt": "Se eu fosse você, falaria com ela."
+    }
    ],
    [
-    "Why don't you…?",
-    "Why don't you try it?"
+    {
+     "en": "Why don't you…?",
+     "de": "Warum … nicht?",
+     "es": "¿Por qué no…?",
+     "fr": "Pourquoi ne pas… ?",
+     "it": "Perché non…?",
+     "pt": "Por que não…?"
+    },
+    {
+     "en": "Why don't you try it?",
+     "de": "Warum probierst du es nicht?",
+     "es": "¿Por qué no lo pruebas?",
+     "fr": "Pourquoi ne pas essayer ?",
+     "it": "Perché non provi?",
+     "pt": "Por que você não tenta?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "You should really get some rest.",
+   "texto": {
+    "en": "You should really get some rest.",
+    "de": "Du solltest dich wirklich etwas ausruhen.",
+    "es": "Deberías descansar un poco de verdad.",
+    "fr": "Tu devrais vraiment te reposer un peu.",
+    "it": "Dovresti davvero riposarti un po’.",
+    "pt": "Você realmente deveria descansar um pouco."
+   },
    "audio": true
   },
   {
-   "texto": "If I were you, I'd talk to her directly.",
+   "texto": {
+    "en": "If I were you, I'd talk to her directly.",
+    "de": "An deiner Stelle würde ich direkt mit ihr reden.",
+    "es": "Si yo fuera tú, hablaría con ella directamente.",
+    "fr": "À ta place, je lui parlerais directement.",
+    "it": "Se fossi in te, parlerei direttamente con lei.",
+    "pt": "Se eu fosse você, falaria diretamente com ela."
+   },
    "audio": true
   },
   {
-   "texto": "Why don't you just try it?"
+   "texto": {
+    "en": "Why don't you just try it?",
+    "de": "Warum probierst du es nicht einfach?",
+    "es": "¿Por qué no lo pruebas?",
+    "fr": "Pourquoi ne pas simplement essayer ?",
+    "it": "Perché non provi semplicemente?",
+    "pt": "Por que você não tenta simplesmente?"
+   }
   }
  ],
  "notas": [
-  "You should is the most direct and common way to give advice at B1.",
-  "If I were you, I'd is more polite and uses a fixed conditional form.",
-  "Why don't you…? phrases advice as a friendly question."
+  {
+   "en": "You should is the most direct and common way to give advice at B1.",
+   "de": "You should ist auf B1 die direkteste und häufigste Art, einen Rat zu geben.",
+   "es": "You should es la forma más directa y frecuente de dar un consejo en B1.",
+   "fr": "You should est la façon la plus directe et la plus courante de donner un conseil au niveau B1.",
+   "it": "You should è il modo più diretto e comune di dare un consiglio al B1.",
+   "pt": "You should é a forma mais direta e comum de dar um conselho no B1."
+  },
+  {
+   "en": "If I were you, I'd is more polite and uses a fixed conditional form.",
+   "de": "If I were you, I'd ist höflicher und verwendet eine feste Konditionalform.",
+   "es": "If I were you, I'd es más cortés y usa una forma condicional fija.",
+   "fr": "If I were you, I'd est plus poli et utilise une forme conditionnelle fixe.",
+   "it": "If I were you, I'd è più cortese e usa una forma condizionale fissa.",
+   "pt": "If I were you, I'd é mais educado e usa uma forma condicional fixa."
+  },
+  {
+   "en": "Why don't you…? phrases advice as a friendly question.",
+   "de": "Why don't you…? formuliert einen Rat als freundliche Frage.",
+   "es": "Why don't you…? formula el consejo como una pregunta amable.",
+   "fr": "Why don't you…? formule le conseil comme une question amicale.",
+   "it": "Why don't you…? formula il consiglio come una domanda amichevole.",
+   "pt": "Why don't you…? formula o conselho como uma pergunta amigável."
+  }
  ],
  "contraste": {
   "es": "Deberías corresponds to you should, so giving advice transfers easily.",
@@ -54,14 +173,42 @@
   "pt": "Devias or deverias corresponds to you should, so giving advice transfers easily."
  },
  "errores": [
-  "Repeating you should too many times in a row.",
-  "Forgetting the conditional form after if I were you.",
-  "Giving advice too bluntly, without any softening."
+  {
+   "en": "Repeating you should too many times in a row.",
+   "de": "You should zu oft hintereinander wiederholen.",
+   "es": "Repetir you should demasiadas veces seguidas.",
+   "fr": "Répéter you should trop de fois de suite.",
+   "it": "Ripetere you should troppe volte di seguito.",
+   "pt": "Repetir you should vezes demais seguidas."
+  },
+  {
+   "en": "Forgetting the conditional form after if I were you.",
+   "de": "Die Konditionalform nach if I were you vergessen.",
+   "es": "Olvidar la forma condicional después de if I were you.",
+   "fr": "Oublier la forme conditionnelle après if I were you.",
+   "it": "Dimenticare la forma condizionale dopo if I were you.",
+   "pt": "Esquecer a forma condicional depois de if I were you."
+  },
+  {
+   "en": "Giving advice too bluntly, without any softening.",
+   "de": "Zu direkt Ratschläge geben, ohne sie abzumildern.",
+   "es": "Dar consejos de forma demasiado brusca, sin suavizarlos.",
+   "fr": "Donner des conseils de façon trop directe, sans les atténuer.",
+   "it": "Dare consigli in modo troppo brusco, senza attenuarli.",
+   "pt": "Dar conselhos de forma direta demais, sem suavizá-los."
+  }
  ],
  "redemittel": [
   {
    "expresion": "You should…",
-   "funcion": "direct advice",
+   "funcion": {
+    "en": "direct advice",
+    "de": "direkter Rat",
+    "es": "consejo directo",
+    "fr": "conseil direct",
+    "it": "consiglio diretto",
+    "pt": "conselho direto"
+   },
    "traducciones": {
     "es": "Deberías…",
     "de": "Du solltest…",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "If I were you, I'd…",
-   "funcion": "polite advice",
+   "funcion": {
+    "en": "polite advice",
+    "de": "höflicher Rat",
+    "es": "consejo cortés",
+    "fr": "conseil poli",
+    "it": "consiglio cortese",
+    "pt": "conselho educado"
+   },
    "traducciones": {
     "es": "Yo en tu lugar…",
     "de": "An deiner Stelle würde ich…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Why don't you…?",
-   "funcion": "advice as a question",
+   "funcion": {
+    "en": "advice as a question",
+    "de": "Rat als Frage",
+    "es": "consejo en forma de pregunta",
+    "fr": "conseil sous forme de question",
+    "it": "consiglio come domanda",
+    "pt": "conselho em forma de pergunta"
+   },
    "traducciones": {
     "es": "¿Por qué no…?",
     "de": "Warum… nicht?",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Maybe you should…",
-   "funcion": "softened advice",
+   "funcion": {
+    "en": "softened advice",
+    "de": "abgeschwächter Rat",
+    "es": "consejo atenuado",
+    "fr": "conseil atténué",
+    "it": "consiglio attenuato",
+    "pt": "conselho atenuado"
+   },
    "traducciones": {
     "es": "Quizás deberías…",
     "de": "Vielleicht solltest du…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "You could try…",
-   "funcion": "advice as an option",
+   "funcion": {
+    "en": "advice as an option",
+    "de": "Rat als Option",
+    "es": "consejo como opción",
+    "fr": "conseil comme option",
+    "it": "consiglio come opzione",
+    "pt": "conselho como opção"
+   },
    "traducciones": {
     "es": "Podrías probar…",
     "de": "Du könntest versuchen…",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "It might help to…",
-   "funcion": "gentle suggestion",
+   "funcion": {
+    "en": "gentle suggestion",
+    "de": "sanfter Vorschlag",
+    "es": "sugerencia suave",
+    "fr": "suggestion douce",
+    "it": "suggerimento delicato",
+    "pt": "sugestão suave"
+   },
    "traducciones": {
     "es": "Podría ayudar…",
     "de": "Es könnte helfen, …",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Is the advice clear?",
-  "Is the conditional correct after if I were you?",
-  "Have I avoided repeating you should too much?",
-  "Does the advice sound friendly?",
-  "Have I used more than one form?"
+  {
+   "en": "Is the advice clear?",
+   "de": "Ist der Rat klar?",
+   "es": "¿El consejo está claro?",
+   "fr": "Le conseil est-il clair ?",
+   "it": "Il consiglio è chiaro?",
+   "pt": "O conselho está claro?"
+  },
+  {
+   "en": "Is the conditional correct after if I were you?",
+   "de": "Ist der Konditional nach if I were you korrekt?",
+   "es": "¿El condicional es correcto después de if I were you?",
+   "fr": "Le conditionnel est-il correct après if I were you ?",
+   "it": "Il condizionale dopo if I were you è corretto?",
+   "pt": "O condicional está correto depois de if I were you?"
+  },
+  {
+   "en": "Have I avoided repeating you should too much?",
+   "de": "Habe ich vermieden, you should zu oft zu wiederholen?",
+   "es": "¿He evitado repetir you should demasiado?",
+   "fr": "Ai-je évité de répéter you should trop souvent ?",
+   "it": "Ho evitato di ripetere you should troppo?",
+   "pt": "Evitei repetir you should demais?"
+  },
+  {
+   "en": "Does the advice sound friendly?",
+   "de": "Klingt der Rat freundlich?",
+   "es": "¿El consejo suena amable?",
+   "fr": "Le conseil semble-t-il amical ?",
+   "it": "Il consiglio suona amichevole?",
+   "pt": "O conselho soa amigável?"
+  },
+  {
+   "en": "Have I used more than one form?",
+   "de": "Habe ich mehr als eine Form verwendet?",
+   "es": "¿He usado más de una forma?",
+   "fr": "Ai-je utilisé plus d’une forme ?",
+   "it": "Ho usato più di una forma?",
+   "pt": "Usei mais de uma forma?"
+  }
  ],
- "promptCorreccion": "Focus only on how the advice is given. Check the conditional form after if I were you and whether the overall tone stays friendly rather than preachy. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on how the advice is given. Check the conditional form after if I were you and whether the overall tone stays friendly rather than preachy. Do not rewrite the text.",
+  "de": "Achte nur darauf, wie der Rat gegeben wird. Prüfe die Konditionalform nach if I were you und ob der Ton insgesamt freundlich bleibt statt belehrend. Formuliere den Text nicht neu.",
+  "es": "Concéntrate solo en cómo se da el consejo. Comprueba la forma condicional después de if I were you y si el tono general sigue siendo amable en lugar de sermoneador. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur la manière dont le conseil est donné. Vérifie la forme conditionnelle après if I were you et si le ton reste globalement amical plutôt que moralisateur. Ne réécris pas le texte.",
+  "it": "Concentrati solo su come viene dato il consiglio. Controlla la forma condizionale dopo if I were you e se il tono complessivo resta amichevole invece che predicatorio. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas em como o conselho é dado. Verifique a forma condicional depois de if I were you e se o tom geral continua amigável, em vez de parecer sermão. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*Tienes que probarlo* rendered as *You have to try it* for mild advice, which sounds like an obligation, instead of *You should try it*."

@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Survival: Transactions (Shops, Tickets, Appointments)",
+ "titulo": {
+  "en": "Survival: Transactions (Shops, Tickets, Appointments)",
+  "de": "Überleben: Einkaufen, Fahrkarten und Termine",
+  "es": "Supervivencia: compras, billetes y citas",
+  "fr": "Survie : achats, billets et rendez-vous",
+  "it": "Sopravvivenza: acquisti, biglietti e appuntamenti",
+  "pt": "Sobrevivência: compras, passagens e compromissos"
+ },
  "categoria": "fluency",
  "ancla": "EGP A2",
- "descripcion": "At A2 you use the fixed phrases needed for shopping, buying tickets, and making appointments. It's about getting through these everyday transactions, not free production. These are among the most common real-world situations at this level.",
+ "descripcion": {
+  "en": "At A2 you use the fixed phrases needed for shopping, buying tickets, and making appointments. It's about getting through these everyday transactions, not free production. These are among the most common real-world situations at this level.",
+  "de": "Auf A2 verwendest du feste Wendungen fürs Einkaufen, den Kauf von Fahrkarten und das Vereinbaren von Terminen. Es geht darum, diese alltäglichen Situationen zu bewältigen, nicht um freie Sprachproduktion. Sie gehören zu den häufigsten realen Situationen auf diesem Niveau.",
+  "es": "En A2 usas expresiones fijas para comprar, adquirir billetes y concertar citas. Se trata de desenvolverte en estas situaciones cotidianas, no de producir el idioma libremente. Son algunas de las situaciones reales más frecuentes en este nivel.",
+  "fr": "Au niveau A2, tu utilises des expressions fixes pour faire des achats, acheter des billets et prendre des rendez-vous. Il s’agit de gérer ces situations quotidiennes, pas de produire librement la langue. Ce sont parmi les situations réelles les plus fréquentes à ce niveau.",
+  "it": "A livello A2 usi espressioni fisse per fare acquisti, comprare biglietti e fissare appuntamenti. L’obiettivo è cavarsela in queste situazioni quotidiane, non produrre liberamente la lingua. Sono tra le situazioni reali più comuni a questo livello.",
+  "pt": "No nível A2, você usa frases prontas para fazer compras, comprar passagens e marcar compromissos. O objetivo é lidar com essas situações do dia a dia, não produzir a língua livremente. Essas estão entre as situações reais mais comuns neste nível."
+ },
  "cuadroReferencia": {
-  "titulo": "Transaction phrases",
+  "titulo": {
+   "en": "Transaction phrases",
+   "de": "Wendungen für Transaktionen",
+   "es": "Expresiones para transacciones",
+   "fr": "Phrases pour les transactions",
+   "it": "Frasi per le transazioni",
+   "pt": "Frases para transações"
+  },
   "columnas": [
-   "Situation",
-   "Phrase"
+   {
+    "en": "Situation",
+    "de": "Situation",
+    "es": "Situación",
+    "fr": "Situation",
+    "it": "Situazione",
+    "pt": "Situação"
+   },
+   {
+    "en": "Phrase",
+    "de": "Formel",
+    "es": "Fórmula",
+    "fr": "Formule",
+    "it": "Formula",
+    "pt": "Fórmula"
+   }
   ],
   "filas": [
    [
-    "Shopping",
-    "How much is this?"
+    {
+     "en": "Shopping",
+     "de": "Einkauf",
+     "es": "Compra",
+     "fr": "Achats",
+     "it": "Acquisti",
+     "pt": "Compras"
+    },
+    {
+     "en": "How much is this?",
+     "de": "Wie viel kostet das?",
+     "es": "¿Cuánto cuesta esto?",
+     "fr": "Combien ça coûte ?",
+     "it": "Quanto costa questo?",
+     "pt": "Quanto custa isso?"
+    }
    ],
    [
-    "Tickets",
-    "One ticket to London, please."
+    {
+     "en": "Tickets",
+     "de": "Fahrkarten",
+     "es": "Billetes",
+     "fr": "Billets",
+     "it": "Biglietti",
+     "pt": "Passagens"
+    },
+    {
+     "en": "One ticket to London, please.",
+     "de": "Eine Fahrkarte nach London, bitte.",
+     "es": "Un billete a Londres, por favor.",
+     "fr": "Un billet pour Londres, s’il vous plaît.",
+     "it": "Un biglietto per Londra, per favore.",
+     "pt": "Uma passagem para Londres, por favor."
+    }
    ],
    [
-    "Appointments",
-    "I'd like to make an appointment."
+    {
+     "en": "Appointments",
+     "de": "Termine",
+     "es": "Citas",
+     "fr": "Rendez-vous",
+     "it": "Appuntamenti",
+     "pt": "Compromissos"
+    },
+    {
+     "en": "I'd like to make an appointment.",
+     "de": "Ich möchte einen Termin vereinbaren.",
+     "es": "Quisiera concertar una cita.",
+     "fr": "Je voudrais prendre rendez-vous.",
+     "it": "Vorrei fissare un appuntamento.",
+     "pt": "Gostaria de marcar um horário."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Excuse me, how much is this jacket?",
+   "texto": {
+    "en": "Excuse me, how much is this jacket?",
+    "de": "Entschuldigung, wie viel kostet diese Jacke?",
+    "es": "Disculpe, ¿cuánto cuesta esta chaqueta?",
+    "fr": "Excusez-moi, combien coûte cette veste ?",
+    "it": "Mi scusi, quanto costa questa giacca?",
+    "pt": "Com licença, quanto custa esta jaqueta?"
+   },
    "audio": true
   },
   {
-   "texto": "One ticket to London, please.",
+   "texto": {
+    "en": "One ticket to London, please.",
+    "de": "Eine Fahrkarte nach London, bitte.",
+    "es": "Un billete a Londres, por favor.",
+    "fr": "Un billet pour Londres, s’il vous plaît.",
+    "it": "Un biglietto per Londra, per favore.",
+    "pt": "Uma passagem para Londres, por favor."
+   },
    "audio": true
   },
   {
-   "texto": "I'd like to make an appointment for next week."
+   "texto": {
+    "en": "I'd like to make an appointment for next week.",
+    "de": "Ich möchte gern einen Termin für nächste Woche vereinbaren.",
+    "es": "Quisiera concertar una cita para la semana que viene.",
+    "fr": "Je voudrais prendre rendez-vous pour la semaine prochaine.",
+    "it": "Vorrei fissare un appuntamento per la prossima settimana.",
+    "pt": "Gostaria de marcar um horário para a próxima semana."
+   }
   }
  ],
  "notas": [
-  "How much is this? is the single most useful phrase for shopping.",
-  "One ticket to… is a fixed, simple pattern for buying transport tickets.",
-  "I'd like to… is a polite way to start most requests."
+  {
+   "en": "How much is this? is the single most useful phrase for shopping.",
+   "de": "How much is this? ist die nützlichste einzelne Wendung beim Einkaufen.",
+   "es": "How much is this? es la frase más útil para ir de compras.",
+   "fr": "How much is this? est la phrase la plus utile pour faire des achats.",
+   "it": "How much is this? è la frase più utile in assoluto per fare acquisti.",
+   "pt": "How much is this? é a frase mais útil para fazer compras."
+  },
+  {
+   "en": "One ticket to… is a fixed, simple pattern for buying transport tickets.",
+   "de": "One ticket to… ist ein festes, einfaches Muster zum Kauf von Fahrkarten.",
+   "es": "One ticket to… es una estructura fija y sencilla para comprar billetes de transporte.",
+   "fr": "One ticket to… est une formule fixe et simple pour acheter des billets de transport.",
+   "it": "One ticket to… è una formula fissa e semplice per comprare biglietti di trasporto.",
+   "pt": "One ticket to… é um padrão fixo e simples para comprar passagens."
+  },
+  {
+   "en": "I'd like to… is a polite way to start most requests.",
+   "de": "I'd like to… ist eine höfliche Art, die meisten Bitten zu beginnen.",
+   "es": "I'd like to… es una forma cortés de empezar la mayoría de las solicitudes.",
+   "fr": "I'd like to… est une manière polie de commencer la plupart des demandes.",
+   "it": "I'd like to… è un modo cortese per iniziare la maggior parte delle richieste.",
+   "pt": "I'd like to… é uma forma educada de começar a maioria dos pedidos."
+  }
  ],
  "contraste": {
   "es": "¿Cuánto cuesta? corresponds to How much is it?, and un billete para… to a ticket to…, not for.",
@@ -54,13 +173,34 @@
   "pt": "In European Portuguese queria… is the polite form, but the calque I wanted… is not polite in English; say I'd like…. Um bilhete para… becomes a ticket to…."
  },
  "errores": [
-  "Forgetting please in a request.",
-  "Using too direct a phrase instead of I'd like to…"
+  {
+   "en": "Forgetting please in a request.",
+   "de": "Please bei einer Bitte vergessen.",
+   "es": "Olvidar please en una petición.",
+   "fr": "Oublier please dans une demande.",
+   "it": "Dimenticare please in una richiesta.",
+   "pt": "Esquecer please em um pedido."
+  },
+  {
+   "en": "Using too direct a phrase instead of I'd like to…",
+   "de": "Eine zu direkte Formulierung statt I'd like to… verwenden.",
+   "es": "Usar una frase demasiado directa en vez de I'd like to…",
+   "fr": "Utiliser une formulation trop directe au lieu de I'd like to…",
+   "it": "Usare una formula troppo diretta invece di I'd like to…",
+   "pt": "Usar uma frase direta demais em vez de I'd like to…"
+  }
  ],
  "redemittel": [
   {
    "expresion": "How much is this?",
-   "funcion": "shopping",
+   "funcion": {
+    "en": "shopping",
+    "de": "Einkaufen",
+    "es": "compras",
+    "fr": "achats",
+    "it": "acquisti",
+    "pt": "compras"
+   },
    "traducciones": {
     "es": "¿Cuánto cuesta esto?",
     "de": "Wie viel kostet das?",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "One ticket to…, please.",
-   "funcion": "buying a ticket",
+   "funcion": {
+    "en": "buying a ticket",
+    "de": "eine Fahrkarte kaufen",
+    "es": "comprar un billete",
+    "fr": "acheter un billet",
+    "it": "comprare un biglietto",
+    "pt": "comprar uma passagem"
+   },
    "traducciones": {
     "es": "Un boleto a…, por favor.",
     "de": "Eine Fahrkarte nach…, bitte.",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "I'd like to make an appointment.",
-   "funcion": "appointments",
+   "funcion": {
+    "en": "appointments",
+    "de": "Termine vereinbaren",
+    "es": "citas",
+    "fr": "rendez-vous",
+    "it": "appuntamenti",
+    "pt": "compromissos"
+   },
    "traducciones": {
     "es": "Quisiera hacer una cita.",
     "de": "Ich möchte einen Termin vereinbaren.",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "Do you have this in a different size?",
-   "funcion": "shopping",
+   "funcion": {
+    "en": "shopping",
+    "de": "Einkaufen",
+    "es": "compras",
+    "fr": "achats",
+    "it": "acquisti",
+    "pt": "compras"
+   },
    "traducciones": {
     "es": "¿Tiene esto en otro talle?",
     "de": "Haben Sie das in einer anderen Größe?",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "Can I pay by card?",
-   "funcion": "paying",
+   "funcion": {
+    "en": "paying",
+    "de": "bezahlen",
+    "es": "pagar",
+    "fr": "payer",
+    "it": "pagare",
+    "pt": "pagar"
+   },
    "traducciones": {
     "es": "¿Puedo pagar con tarjeta?",
     "de": "Kann ich mit Karte zahlen?",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "What time is the appointment?",
-   "funcion": "appointments",
+   "funcion": {
+    "en": "appointments",
+    "de": "Termine vereinbaren",
+    "es": "citas",
+    "fr": "rendez-vous",
+    "it": "appuntamenti",
+    "pt": "compromissos"
+   },
    "traducciones": {
     "es": "¿A qué hora es la cita?",
     "de": "Um wie viel Uhr ist der Termin?",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Have I used please in requests?",
-  "Have I used at least three different transaction phrases?",
-  "Are the phrases polite?",
-  "Does the phrase sound natural?",
-  "Does the phrase sound natural?"
+  {
+   "en": "Have I used please in requests?",
+   "de": "Habe ich please in Bitten verwendet?",
+   "es": "¿He usado please en las peticiones?",
+   "fr": "Ai-je utilisé please dans les demandes ?",
+   "it": "Ho usato please nelle richieste?",
+   "pt": "Usei please nos pedidos?"
+  },
+  {
+   "en": "Have I used at least three different transaction phrases?",
+   "de": "Habe ich mindestens drei verschiedene Wendungen für Transaktionen verwendet?",
+   "es": "¿He usado al menos tres expresiones diferentes para transacciones?",
+   "fr": "Ai-je utilisé au moins trois expressions différentes pour les transactions ?",
+   "it": "Ho usato almeno tre espressioni diverse per le transazioni?",
+   "pt": "Usei pelo menos três frases diferentes para transações?"
+  },
+  {
+   "en": "Are the phrases polite?",
+   "de": "Sind die Wendungen höflich?",
+   "es": "¿Las expresiones son corteses?",
+   "fr": "Les expressions sont-elles polies ?",
+   "it": "Le espressioni sono educate?",
+   "pt": "As frases são educadas?"
+  },
+  {
+   "en": "Does the phrase sound natural?",
+   "de": "Klingt die Formulierung natürlich?",
+   "es": "¿Suena natural la expresión?",
+   "fr": "La formulation semble-t-elle naturelle ?",
+   "it": "La frase suona naturale?",
+   "pt": "A expressão soa natural?"
+  },
+  {
+   "en": "Does the phrase sound natural?",
+   "de": "Klingt die Formulierung natürlich?",
+   "es": "¿Suena natural la expresión?",
+   "fr": "La formulation semble-t-elle naturelle ?",
+   "it": "La frase suona naturale?",
+   "pt": "A expressão soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on whether the transaction phrases are clear and polite. Check whether please is used in requests. Do not rewrite the text. Flag anything that sounds too blunt for a shop or office.",
+ "promptCorreccion": {
+  "en": "Focus only on whether the transaction phrases are clear and polite. Check whether please is used in requests. Do not rewrite the text. Flag anything that sounds too blunt for a shop or office.",
+  "de": "Achte nur darauf, ob die Wendungen für Transaktionen klar und höflich sind. Prüfe, ob please in Bitten verwendet wird. Formuliere den Text nicht neu. Markiere alles, was in einem Geschäft oder Büro zu schroff klingt.",
+  "es": "Concéntrate solo en si las expresiones para transacciones son claras y corteses. Comprueba si se usa please en las peticiones. No reescribas el texto. Señala cualquier cosa que suene demasiado brusca para una tienda u oficina.",
+  "fr": "Concentre-toi uniquement sur la clarté et la politesse des phrases de transaction. Vérifie si please est utilisé dans les demandes. Ne réécris pas le texte. Signale tout ce qui semble trop brusque dans un magasin ou un bureau.",
+  "it": "Concentrati solo sul fatto che le frasi per le transazioni siano chiare ed educate. Controlla se please viene usato nelle richieste. Non riscrivere il testo. Segnala tutto ciò che suona troppo brusco per un negozio o un ufficio.",
+  "pt": "Concentre-se apenas em saber se as frases para transações estão claras e educadas. Verifique se please é usado nos pedidos. Não reescreva o texto. Sinalize qualquer coisa que soe direta demais para uma loja ou escritório."
+ },
  "erroresContrastivos": {
   "es": [
    "*¿Me pone un café?* rendered as *Put me a coffee?* instead of *Could I have a coffee, please?*"

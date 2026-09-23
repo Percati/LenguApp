@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Telling a Story / Recounting Experiences",
+ "titulo": {
+  "en": "Telling a Story / Recounting Experiences",
+  "de": "Eine Geschichte erzählen / Erlebnisse schildern",
+  "es": "Contar una historia / Relatar experiencias",
+  "fr": "Raconter une histoire / Relater des expériences",
+  "it": "Raccontare una storia / Raccontare esperienze",
+  "pt": "Contar uma história / Relatar experiências"
+ },
  "categoria": "fluency",
  "ancla": "CV Sustained monologue: describing experience",
- "descripcion": "At B1 you tell a simple story in the past simple, with clear time markers like first, then, after that. The dramaturgy of a stronger story (a hook, a turning point) comes later — a clear order of events is enough here.",
+ "descripcion": {
+  "en": "At B1 you tell a simple story in the past simple, with clear time markers like first, then, after that. The dramaturgy of a stronger story (a hook, a turning point) comes later — a clear order of events is enough here.",
+  "de": "Auf B1 erzählst du eine einfache Geschichte im Simple Past mit klaren Zeitmarkern wie first, then und after that. Die Dramaturgie einer stärkeren Geschichte (Einstieg, Wendepunkt) kommt später — hier reicht eine klare Reihenfolge der Ereignisse.",
+  "es": "En B1 cuentas una historia sencilla en pasado simple con marcadores temporales claros como first, then y after that. La dramaturgia de una historia más elaborada (un gancho, un punto de giro) llega después; aquí basta con un orden claro de los acontecimientos.",
+  "fr": "Au niveau B1, tu racontes une histoire simple au prétérit avec des marqueurs temporels clairs comme first, then et after that. La dramaturgie d’une histoire plus forte (une accroche, un tournant) vient plus tard : ici, un ordre clair des événements suffit.",
+  "it": "A livello B1 racconti una storia semplice al past simple con indicatori temporali chiari come first, then e after that. La costruzione narrativa di una storia più forte (un gancio, un punto di svolta) viene più avanti: qui basta un ordine chiaro degli eventi.",
+  "pt": "No nível B1, você conta uma história simples no simple past com marcadores de tempo claros como first, then e after that. A estrutura dramática de uma história mais forte (um gancho, um ponto de virada) vem depois; aqui basta uma ordem clara dos acontecimentos."
+ },
  "cuadroReferencia": {
-  "titulo": "A simple story",
+  "titulo": {
+   "en": "A simple story",
+   "de": "Eine einfache Geschichte",
+   "es": "Una historia sencilla",
+   "fr": "Une histoire simple",
+   "it": "Una storia semplice",
+   "pt": "Uma história simples"
+  },
   "columnas": [
-   "Step",
-   "Example"
+   {
+    "en": "Step",
+    "de": "Schritt",
+    "es": "Paso",
+    "fr": "Étape",
+    "it": "Passaggio",
+    "pt": "Etapa"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Beginning",
-    "Last year, I went to Berlin for the first time."
+    {
+     "en": "Beginning",
+     "de": "Anfang",
+     "es": "Inicio",
+     "fr": "Début",
+     "it": "Inizio",
+     "pt": "Início"
+    },
+    {
+     "en": "Last year, I went to Berlin for the first time.",
+     "de": "Letztes Jahr war ich zum ersten Mal in Berlin.",
+     "es": "El año pasado fui a Berlín por primera vez.",
+     "fr": "L’année dernière, je suis allé(e) à Berlin pour la première fois.",
+     "it": "L’anno scorso sono andato/a a Berlino per la prima volta.",
+     "pt": "No ano passado, fui a Berlim pela primeira vez."
+    }
    ],
    [
-    "Order",
-    "First we visited a museum, then we went for a walk."
+    {
+     "en": "Order",
+     "de": "Reihenfolge",
+     "es": "Orden",
+     "fr": "Ordre",
+     "it": "Ordine",
+     "pt": "Ordem"
+    },
+    {
+     "en": "First we visited a museum, then we went for a walk.",
+     "de": "Zuerst besuchten wir ein Museum, dann gingen wir spazieren.",
+     "es": "Primero visitamos un museo y luego fuimos a caminar.",
+     "fr": "D’abord, nous avons visité un musée, puis nous sommes allés nous promener.",
+     "it": "Prima abbiamo visitato un museo, poi siamo andati a fare una passeggiata.",
+     "pt": "Primeiro visitamos um museu, depois fomos passear."
+    }
    ],
    [
-    "Ending",
-    "In the end, it was a great day."
+    {
+     "en": "Ending",
+     "de": "Ende",
+     "es": "Final",
+     "fr": "Fin",
+     "it": "Fine",
+     "pt": "Final"
+    },
+    {
+     "en": "In the end, it was a great day.",
+     "de": "Am Ende war es ein toller Tag.",
+     "es": "Al final, fue un día estupendo.",
+     "fr": "Au final, c'était une excellente journée.",
+     "it": "Alla fine, è stata una giornata fantastica.",
+     "pt": "No final, foi um dia ótimo."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Last year, I went to Berlin for the first time.",
+   "texto": {
+    "en": "Last year, I went to Berlin for the first time.",
+    "de": "Letztes Jahr war ich zum ersten Mal in Berlin.",
+    "es": "El año pasado fui a Berlín por primera vez.",
+    "fr": "L’année dernière, je suis allé(e) à Berlin pour la première fois.",
+    "it": "L’anno scorso sono andato/a a Berlino per la prima volta.",
+    "pt": "No ano passado, fui a Berlim pela primeira vez."
+   },
    "audio": true
   },
   {
-   "texto": "First we visited a museum, then we went for a walk.",
+   "texto": {
+    "en": "First we visited a museum, then we went for a walk.",
+    "de": "Zuerst besuchten wir ein Museum, dann gingen wir spazieren.",
+    "es": "Primero visitamos un museo y luego fuimos a caminar.",
+    "fr": "D’abord, nous avons visité un musée, puis nous sommes allés nous promener.",
+    "it": "Prima abbiamo visitato un museo, poi siamo andati a fare una passeggiata.",
+    "pt": "Primeiro visitamos um museu, depois fomos passear."
+   },
    "audio": true
   },
   {
-   "texto": "In the end, it was a really great day."
+   "texto": {
+    "en": "In the end, it was a really great day.",
+    "de": "Am Ende war es ein wirklich toller Tag.",
+    "es": "Al final, fue un día realmente genial.",
+    "fr": "À la fin, c’était vraiment une super journée.",
+    "it": "Alla fine, è stata davvero una bellissima giornata.",
+    "pt": "No fim, foi um dia muito legal."
+   }
   }
  ],
  "notas": [
-  "First, then, after that, in the end structure the story without needing complex tenses.",
-  "Most verbs go in the past simple; the past continuous can be added for background.",
-  "A short time expression at the start (last year, last summer) helps place the story."
+  {
+   "en": "First, then, after that, in the end structure the story without needing complex tenses.",
+   "de": "First, then, after that und in the end strukturieren die Geschichte, ohne dass komplexe Zeitformen nötig sind.",
+   "es": "First, then, after that e in the end estructuran la historia sin necesidad de tiempos verbales complejos.",
+   "fr": "First, then, after that et in the end structurent l’histoire sans nécessiter de temps complexes.",
+   "it": "First, then, after that e in the end strutturano la storia senza bisogno di tempi verbali complessi.",
+   "pt": "First, then, after that e in the end estruturam a história sem precisar de tempos verbais complexos."
+  },
+  {
+   "en": "Most verbs go in the past simple; the past continuous can be added for background.",
+   "de": "Die meisten Verben stehen im Simple Past; das Past Continuous kann für Hintergrundinformationen ergänzt werden.",
+   "es": "La mayoría de los verbos van en pasado simple; el pasado continuo puede añadirse para dar contexto de fondo.",
+   "fr": "La plupart des verbes sont au prétérit ; le prétérit continu peut être ajouté pour l’arrière-plan.",
+   "it": "La maggior parte dei verbi va al past simple; il past continuous può essere aggiunto per dare lo sfondo.",
+   "pt": "A maioria dos verbos fica no simple past; o past continuous pode ser acrescentado para dar contexto."
+  },
+  {
+   "en": "A short time expression at the start (last year, last summer) helps place the story.",
+   "de": "Eine kurze Zeitangabe am Anfang (last year, last summer) hilft, die Geschichte zeitlich einzuordnen.",
+   "es": "Una expresión temporal breve al principio (last year, last summer) ayuda a situar la historia.",
+   "fr": "Une courte expression de temps au début (last year, last summer) aide à situer l’histoire.",
+   "it": "Una breve espressione di tempo all’inizio (last year, last summer) aiuta a collocare la storia.",
+   "pt": "Uma expressão de tempo curta no início (last year, last summer) ajuda a situar a história."
+  }
  ],
  "contraste": {
   "es": "Primero, luego and después correspond to first, then and after that, and the indefinido maps onto the English past simple, so storytelling transfers well.",
@@ -54,14 +173,42 @@
   "pt": "Primeiro, depois and a seguir correspond to first, then and after that, and the Portuguese simple past (vi, fui) maps onto the English past simple. Storytelling therefore transfers well."
  },
  "errores": [
-  "Telling the story with no time markers at all.",
-  "Mixing up the order of first, then and after that.",
-  "Using the present tense instead of the past simple."
+  {
+   "en": "Telling the story with no time markers at all.",
+   "de": "Die Geschichte ganz ohne Zeitmarker erzählen.",
+   "es": "Contar la historia sin ningún marcador temporal.",
+   "fr": "Raconter l’histoire sans aucun marqueur temporel.",
+   "it": "Raccontare la storia senza alcun indicatore temporale.",
+   "pt": "Contar a história sem nenhum marcador de tempo."
+  },
+  {
+   "en": "Mixing up the order of first, then and after that.",
+   "de": "Die Reihenfolge von first, then und after that verwechseln.",
+   "es": "Confundir el orden de first, then y after that.",
+   "fr": "Mélanger l’ordre de first, then et after that.",
+   "it": "Confondere l’ordine di first, then e after that.",
+   "pt": "Confundir a ordem de first, then e after that."
+  },
+  {
+   "en": "Using the present tense instead of the past simple.",
+   "de": "Das Präsens statt des Simple Past verwenden.",
+   "es": "Usar el presente en vez del pasado simple.",
+   "fr": "Utiliser le présent au lieu du prétérit.",
+   "it": "Usare il presente invece del past simple.",
+   "pt": "Usar o presente em vez do simple past."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Last year,…",
-   "funcion": "opening with time",
+   "funcion": {
+    "en": "opening with time",
+    "de": "Einstieg mit einer Zeitangabe",
+    "es": "inicio con una expresión de tiempo",
+    "fr": "début avec une expression de temps",
+    "it": "apertura con un’espressione di tempo",
+    "pt": "início com uma expressão de tempo"
+   },
    "traducciones": {
     "es": "El año pasado…",
     "de": "Letztes Jahr…",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "First…, then…",
-   "funcion": "sequence",
+   "funcion": {
+    "en": "sequence",
+    "de": "Abfolge",
+    "es": "secuencia",
+    "fr": "séquence",
+    "it": "sequenza",
+    "pt": "sequência"
+   },
    "traducciones": {
     "es": "Primero…, luego…",
     "de": "Zuerst…, dann…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "After that,…",
-   "funcion": "next step",
+   "funcion": {
+    "en": "next step",
+    "de": "nächster Schritt",
+    "es": "paso siguiente",
+    "fr": "étape suivante",
+    "it": "passaggio successivo",
+    "pt": "próximo passo"
+   },
    "traducciones": {
     "es": "Después…",
     "de": "Danach…",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "In the end,…",
-   "funcion": "closing",
+   "funcion": {
+    "en": "closing",
+    "de": "Abschluss",
+    "es": "cierre",
+    "fr": "conclusion",
+    "it": "chiusura",
+    "pt": "encerramento"
+   },
    "traducciones": {
     "es": "Al final…",
     "de": "Am Ende…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "It was a great day.",
-   "funcion": "final evaluation",
+   "funcion": {
+    "en": "final evaluation",
+    "de": "abschließende Bewertung",
+    "es": "valoración final",
+    "fr": "évaluation finale",
+    "it": "valutazione finale",
+    "pt": "avaliação final"
+   },
    "traducciones": {
     "es": "Fue un gran día.",
     "de": "Es war ein toller Tag.",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "I really enjoyed it.",
-   "funcion": "positive evaluation",
+   "funcion": {
+    "en": "positive evaluation",
+    "de": "positive Bewertung",
+    "es": "valoración positiva",
+    "fr": "évaluation positive",
+    "it": "valutazione positiva",
+    "pt": "avaliação positiva"
+   },
    "traducciones": {
     "es": "Lo disfruté mucho.",
     "de": "Das hat mir wirklich gefallen.",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Is the order of events clear?",
-  "Are most verbs in the past simple?",
-  "Have I used a time expression at the start?",
-  "Have I closed the story with an evaluation?",
-  "Does the sentence sound natural, not translated word for word?"
+  {
+   "en": "Is the order of events clear?",
+   "de": "Ist die Reihenfolge der Ereignisse klar?",
+   "es": "¿Está claro el orden de los acontecimientos?",
+   "fr": "L’ordre des événements est-il clair ?",
+   "it": "L’ordine degli eventi è chiaro?",
+   "pt": "A ordem dos acontecimentos está clara?"
+  },
+  {
+   "en": "Are most verbs in the past simple?",
+   "de": "Stehen die meisten Verben im Simple Past?",
+   "es": "¿La mayoría de los verbos están en pasado simple?",
+   "fr": "La plupart des verbes sont-ils au prétérit ?",
+   "it": "La maggior parte dei verbi è al past simple?",
+   "pt": "A maioria dos verbos está no simple past?"
+  },
+  {
+   "en": "Have I used a time expression at the start?",
+   "de": "Habe ich am Anfang eine Zeitangabe verwendet?",
+   "es": "¿He usado una expresión de tiempo al principio?",
+   "fr": "Ai-je utilisé une expression de temps au début ?",
+   "it": "Ho usato un’espressione di tempo all’inizio?",
+   "pt": "Usei uma expressão de tempo no início?"
+  },
+  {
+   "en": "Have I closed the story with an evaluation?",
+   "de": "Habe ich die Geschichte mit einer Bewertung abgeschlossen?",
+   "es": "¿He cerrado la historia con una valoración?",
+   "fr": "Ai-je terminé l’histoire par une appréciation ?",
+   "it": "Ho concluso la storia con una valutazione?",
+   "pt": "Eu terminei a história com uma avaliação?"
+  },
+  {
+   "en": "Does the sentence sound natural, not translated word for word?",
+   "de": "Klingt der Satz natürlich und nicht Wort für Wort übersetzt?",
+   "es": "¿La oración suena natural y no traducida palabra por palabra?",
+   "fr": "La phrase semble-t-elle naturelle et non traduite mot à mot ?",
+   "it": "La frase suona naturale e non tradotta parola per parola?",
+   "pt": "A frase soa natural e não traduzida palavra por palavra?"
+  }
  ],
- "promptCorreccion": "Focus only on the time sequence of the story. Check whether the past simple is used correctly and whether the order of events is clear. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on the time sequence of the story. Check whether the past simple is used correctly and whether the order of events is clear. Do not rewrite the text.",
+  "de": "Achte nur auf die zeitliche Abfolge der Geschichte. Prüfe, ob das Simple Past richtig verwendet wird und ob die Reihenfolge der Ereignisse klar ist. Formuliere den Text nicht neu.",
+  "es": "Concéntrate solo en la secuencia temporal de la historia. Comprueba si el pasado simple se usa correctamente y si el orden de los acontecimientos está claro. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur la chronologie de l’histoire. Vérifie si le prétérit est utilisé correctement et si l’ordre des événements est clair. Ne réécris pas le texte.",
+  "it": "Concentrati solo sulla sequenza temporale della storia. Controlla se il past simple è usato correttamente e se l’ordine degli eventi è chiaro. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas na sequência temporal da história. Verifique se o simple past é usado corretamente e se a ordem dos acontecimentos está clara. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*Después* rendered as a bare *After*: *After, we went home* instead of *Afterwards* or *After that*."

@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Past Perfect and Narrative Time Reference",
+ "titulo": {
+  "en": "Past Perfect and Narrative Time Reference",
+  "de": "Past Perfect und zeitliche Abfolge in Erzählungen",
+  "es": "Past perfect y referencia temporal en narraciones",
+  "fr": "Past perfect et repérage temporel dans un récit",
+  "it": "Past perfect e riferimento temporale nella narrazione",
+  "pt": "Past perfect e referência temporal na narrativa"
+ },
  "categoria": "grammar",
  "ancla": "EGP B1/B2",
- "descripcion": "At B1 you introduce the past perfect for the first time: it shows one past event happened before another past event. By the time we arrived, the film had already started — without this structure, the order of events becomes unclear.",
+ "descripcion": {
+  "en": "At B1 you introduce the past perfect for the first time: it shows one past event happened before another past event. By the time we arrived, the film had already started — without this structure, the order of events becomes unclear.",
+  "de": "Auf B1-Niveau lernst du erstmals das past perfect: Es zeigt, dass ein Ereignis in der Vergangenheit vor einem anderen vergangenen Ereignis stattgefunden hat. By the time we arrived, the film had already started – ohne diese Struktur kann die Reihenfolge der Ereignisse unklar werden.",
+  "es": "En B1 introduces por primera vez el past perfect: indica que un hecho pasado ocurrió antes que otro hecho pasado. By the time we arrived, the film had already started; sin esta estructura, el orden de los acontecimientos puede quedar poco claro.",
+  "fr": "Au niveau B1, tu découvres le past perfect : il indique qu'un événement passé s'est produit avant un autre événement passé. By the time we arrived, the film had already started — sans cette structure, l'ordre des événements peut devenir ambigu.",
+  "it": "Al livello B1 introduci per la prima volta il past perfect: indica che un evento passato è avvenuto prima di un altro evento passato. By the time we arrived, the film had already started — senza questa struttura, l'ordine degli eventi può risultare poco chiaro.",
+  "pt": "No nível B1, você aprende o past perfect pela primeira vez: ele mostra que um evento passado aconteceu antes de outro evento passado. By the time we arrived, the film had already started — sem essa estrutura, a ordem dos acontecimentos pode ficar pouco clara."
+ },
  "cuadroReferencia": {
-  "titulo": "Past perfect basics",
+  "titulo": {
+   "en": "Past perfect basics",
+   "de": "Grundlagen des past perfect",
+   "es": "Conceptos básicos del past perfect",
+   "fr": "Bases du past perfect",
+   "it": "Basi del past perfect",
+   "pt": "Noções básicas do past perfect"
+  },
   "columnas": [
-   "Point",
-   "Form",
-   "Example"
+   {
+    "en": "Point",
+    "de": "Punkt",
+    "es": "Punto",
+    "fr": "Point",
+    "it": "Punto",
+    "pt": "Ponto"
+   },
+   {
+    "en": "Form",
+    "de": "Form",
+    "es": "Forma",
+    "fr": "Forme",
+    "it": "Forma",
+    "pt": "Forma"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Earlier event",
-    "had + participle",
-    "The film had already started."
+    {
+     "en": "Earlier event",
+     "de": "früheres Ereignis",
+     "es": "hecho anterior",
+     "fr": "événement antérieur",
+     "it": "evento precedente",
+     "pt": "evento anterior"
+    },
+    {
+     "en": "had + participle",
+     "de": "had + Partizip",
+     "es": "had + participio",
+     "fr": "had + participe passé",
+     "it": "had + participio",
+     "pt": "had + particípio"
+    },
+    {
+     "en": "The film had already started.",
+     "de": "Der Film hatte bereits angefangen.",
+     "es": "La película ya había empezado.",
+     "fr": "Le film avait déjà commencé.",
+     "it": "Il film era già iniziato.",
+     "pt": "O filme já tinha começado."
+    }
    ],
    [
-    "Later event",
-    "past simple",
-    "By the time we arrived,"
+    {
+     "en": "Later event",
+     "de": "späteres Ereignis",
+     "es": "hecho posterior",
+     "fr": "événement ultérieur",
+     "it": "evento successivo",
+     "pt": "evento posterior"
+    },
+    {
+     "en": "past simple",
+     "de": "Simple Past",
+     "es": "pasado simple",
+     "fr": "prétérit",
+     "it": "past simple",
+     "pt": "simple past"
+    },
+    {
+     "en": "By the time we arrived,",
+     "de": "Als wir ankamen,",
+     "es": "Cuando llegamos,",
+     "fr": "Quand nous sommes arrivés,",
+     "it": "Quando siamo arrivati,",
+     "pt": "Quando chegamos,"
+    }
    ],
    [
-    "Optional with before/after",
-    "past simple is enough",
-    "She left before I arrived."
+    {
+     "en": "Optional with before/after",
+     "de": "optional mit before/after",
+     "es": "opcional con before/after",
+     "fr": "facultatif avec before/after",
+     "it": "facoltativo con before/after",
+     "pt": "opcional com before/after"
+    },
+    {
+     "en": "past simple is enough",
+     "de": "past simple reicht aus",
+     "es": "past simple es suficiente",
+     "fr": "le past simple suffit",
+     "it": "basta il past simple",
+     "pt": "o past simple é suficiente"
+    },
+    {
+     "en": "She left before I arrived.",
+     "de": "Sie ging, bevor ich ankam.",
+     "es": "Se fue antes de que yo llegara.",
+     "fr": "Elle est partie avant que j'arrive.",
+     "it": "È andata via prima che arrivassi.",
+     "pt": "Ela saiu antes de eu chegar."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "By the time we arrived, the film had already started.",
+   "texto": {
+    "en": "By the time we arrived, the film had already started.",
+    "de": "Als wir ankamen, hatte der Film bereits angefangen.",
+    "es": "Cuando llegamos, la película ya había empezado.",
+    "fr": "Quand nous sommes arrivés, le film avait déjà commencé.",
+    "it": "Quando siamo arrivati, il film era già iniziato.",
+    "pt": "Quando chegamos, o filme já tinha começado."
+   },
    "audio": true
   },
   {
-   "texto": "She had already left when I called.",
+   "texto": {
+    "en": "She had already left when I called.",
+    "de": "Sie war bereits gegangen, als ich anrief.",
+    "es": "Ya se había ido cuando llamé.",
+    "fr": "Elle était déjà partie quand j'ai appelé.",
+    "it": "Era già andata via quando ho chiamato.",
+    "pt": "Ela já tinha saído quando liguei."
+   },
    "audio": true
   },
   {
-   "texto": "I realised I had forgotten my keys."
+   "texto": {
+    "en": "I realised I had forgotten my keys.",
+    "de": "Mir wurde klar, dass ich meine Schlüssel vergessen hatte.",
+    "es": "Me di cuenta de que había olvidado mis llaves.",
+    "fr": "Je me suis rendu compte que j'avais oublié mes clés.",
+    "it": "Mi sono reso/a conto di aver dimenticato le chiavi.",
+    "pt": "Percebi que tinha esquecido minhas chaves."
+   }
   }
  ],
  "notas": [
-  "The past perfect (had + participle) marks the event that happened first, earlier than the other past event.",
-  "Before and after already show the order, so the past perfect is optional there; with when, it's not.",
-  "This structure is new at B1 and needs a lot of practice before it becomes automatic."
+  {
+   "en": "The past perfect (had + participle) marks the event that happened first, earlier than the other past event.",
+   "de": "Das past perfect (had + Partizip) kennzeichnet das Ereignis, das zuerst stattgefunden hat, also vor dem anderen vergangenen Ereignis.",
+   "es": "El past perfect (had + participio) marca el hecho que ocurrió primero, antes del otro hecho pasado.",
+   "fr": "Le past perfect (had + participe passé) marque l'événement qui s'est produit en premier, avant l'autre événement passé.",
+   "it": "Il past perfect (had + participio) indica l'evento avvenuto per primo, prima dell'altro evento passato.",
+   "pt": "O past perfect (had + particípio) marca o evento que aconteceu primeiro, antes do outro evento passado."
+  },
+  {
+   "en": "Before and after already show the order, so the past perfect is optional there; with when, it's not.",
+   "de": "Before und after zeigen die Reihenfolge bereits an, daher ist das past perfect dort optional; bei when ist es das nicht.",
+   "es": "Before y after ya indican el orden, por eso con ellos el past perfect es opcional; con when no lo es.",
+   "fr": "Before et after indiquent déjà l'ordre, donc le past perfect y est facultatif ; avec when, il ne l'est pas.",
+   "it": "Before e after indicano già l'ordine, quindi con essi il past perfect è facoltativo; con when non lo è.",
+   "pt": "Before e after já mostram a ordem, por isso o past perfect é opcional nesses casos; com when, não."
+  },
+  {
+   "en": "This structure is new at B1 and needs a lot of practice before it becomes automatic.",
+   "de": "Diese Struktur ist auf B1-Niveau neu und braucht viel Übung, bevor sie automatisch verwendet wird.",
+   "es": "Esta estructura es nueva en B1 y necesita mucha práctica antes de volverse automática.",
+   "fr": "Cette structure est nouvelle au niveau B1 et demande beaucoup de pratique avant de devenir automatique.",
+   "it": "Questa struttura è nuova al livello B1 e richiede molta pratica prima di diventare automatica.",
+   "pt": "Essa estrutura é nova no nível B1 e exige muita prática antes de se tornar automática."
+  }
  ],
  "contraste": {
   "es": "Spanish has the pluscuamperfecto with the same function (había llegado), so the concept is not new – the difficulty is getting used to using it actively in English.",
@@ -58,14 +205,42 @@
   "pt": "Portuguese uses tinha + participle (já tinha saído) naturally in speech, which maps directly onto had + participle. The past perfect therefore transfers very well for Portuguese speakers."
  },
  "errores": [
-  "Using the past simple for both events, losing the sense of order.",
-  "Using the wrong participle after had.",
-  "Overusing the past perfect where before/after already make the order clear."
+  {
+   "en": "Using the past simple for both events, losing the sense of order.",
+   "de": "Für beide Ereignisse das past simple verwenden und dadurch die zeitliche Reihenfolge unklar machen.",
+   "es": "Usar past simple para ambos hechos y perder así el sentido del orden temporal.",
+   "fr": "Utiliser le past simple pour les deux événements et perdre ainsi l'ordre temporel.",
+   "it": "Usare il past simple per entrambi gli eventi, perdendo il senso dell'ordine temporale.",
+   "pt": "Usar o past simple para os dois eventos e perder assim a noção de ordem temporal."
+  },
+  {
+   "en": "Using the wrong participle after had.",
+   "de": "Nach had das falsche Partizip verwenden.",
+   "es": "Usar el participio incorrecto después de had.",
+   "fr": "Utiliser le mauvais participe après had.",
+   "it": "Usare il participio sbagliato dopo had.",
+   "pt": "Usar o particípio errado depois de had."
+  },
+  {
+   "en": "Overusing the past perfect where before/after already make the order clear.",
+   "de": "Das past perfect unnötig verwenden, obwohl before/after die Reihenfolge bereits deutlich machen.",
+   "es": "Usar demasiado el past perfect cuando before/after ya dejan claro el orden.",
+   "fr": "Surutiliser le past perfect alors que before/after indiquent déjà clairement l'ordre.",
+   "it": "Usare troppo il past perfect quando before/after rendono già chiaro l'ordine.",
+   "pt": "Usar o past perfect em excesso quando before/after já deixam clara a ordem."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…had already…",
-   "funcion": "earlier event",
+   "funcion": {
+    "en": "earlier event",
+    "de": "früheres Ereignis",
+    "es": "hecho anterior",
+    "fr": "événement antérieur",
+    "it": "evento precedente",
+    "pt": "evento anterior"
+   },
    "traducciones": {
     "es": "…ya había…",
     "de": "…hatte bereits…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "By the time…,…had…",
-   "funcion": "full structure",
+   "funcion": {
+    "en": "full structure",
+    "de": "vollständige Struktur",
+    "es": "estructura completa",
+    "fr": "structure complète",
+    "it": "struttura completa",
+    "pt": "estrutura completa"
+   },
    "traducciones": {
     "es": "Para cuando…, ya había…",
     "de": "Als…,… hatte…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "When I arrived, …had…",
-   "funcion": "order with when",
+   "funcion": {
+    "en": "order with when",
+    "de": "Reihenfolge mit when",
+    "es": "orden con when",
+    "fr": "ordre avec when",
+    "it": "ordine con when",
+    "pt": "ordem com when"
+   },
    "traducciones": {
     "es": "Cuando llegué, ya había…",
     "de": "Als ich ankam, hatte… schon…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "I realised I had…",
-   "funcion": "realisation about the past",
+   "funcion": {
+    "en": "realisation about the past",
+    "de": "Erkenntnis über die Vergangenheit",
+    "es": "comprensión sobre el pasado",
+    "fr": "prise de conscience sur le passé",
+    "it": "realizzazione riguardo al passato",
+    "pt": "percepção sobre o passado"
+   },
    "traducciones": {
     "es": "Me di cuenta de que había…",
     "de": "Mir wurde klar, dass ich… hatte.",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "…hadn't…yet.",
-   "funcion": "negative, not yet done",
+   "funcion": {
+    "en": "negative, not yet done",
+    "de": "negativ, noch nicht erledigt",
+    "es": "negativo, aún no realizado",
+    "fr": "négatif, pas encore fait",
+    "it": "negativo, non ancora fatto",
+    "pt": "negativo, ainda não feito"
+   },
    "traducciones": {
     "es": "…todavía no había…",
     "de": "…hatte noch nicht…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "Before I…, I had…",
-   "funcion": "order, optional past perfect",
+   "funcion": {
+    "en": "order, optional past perfect",
+    "de": "Reihenfolge, past perfect optional",
+    "es": "orden, past perfect opcional",
+    "fr": "ordre, past perfect facultatif",
+    "it": "ordine, past perfect facoltativo",
+    "pt": "ordem, past perfect opcional"
+   },
    "traducciones": {
     "es": "Antes de…, había…",
     "de": "Bevor ich…, hatte ich…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Does the past perfect mark the earlier of two past events?",
-  "Is the participle correct after had?",
-  "Have I used at least one past perfect sentence?",
-  "Does the sentence sound clear about which event happened first?",
-  "Does the sentence sound clear about which event happened first?"
+  {
+   "en": "Does the past perfect mark the earlier of two past events?",
+   "de": "Kennzeichnet das past perfect das frühere von zwei Ereignissen in der Vergangenheit?",
+   "es": "¿El past perfect marca el primero de dos hechos pasados?",
+   "fr": "Le past perfect marque-t-il le plus ancien de deux événements passés ?",
+   "it": "Il past perfect indica il primo dei due eventi passati?",
+   "pt": "O past perfect marca o evento anterior entre dois eventos passados?"
+  },
+  {
+   "en": "Is the participle correct after had?",
+   "de": "Ist das Partizip nach had korrekt?",
+   "es": "¿El participio después de had es correcto?",
+   "fr": "Le participe après had est-il correct ?",
+   "it": "Il participio dopo had è corretto?",
+   "pt": "O particípio depois de had está correto?"
+  },
+  {
+   "en": "Have I used at least one past perfect sentence?",
+   "de": "Habe ich mindestens einen Satz im past perfect verwendet?",
+   "es": "¿He usado al menos una oración en past perfect?",
+   "fr": "Ai-je utilisé au moins une phrase au past perfect ?",
+   "it": "Ho usato almeno una frase al past perfect?",
+   "pt": "Usei pelo menos uma frase no past perfect?"
+  },
+  {
+   "en": "Does the sentence sound clear about which event happened first?",
+   "de": "Ist im Satz klar, welches Ereignis zuerst passiert ist?",
+   "es": "¿La oración deja claro qué hecho ocurrió primero?",
+   "fr": "La phrase indique-t-elle clairement quel événement s'est produit en premier ?",
+   "it": "La frase rende chiaro quale evento è avvenuto per primo?",
+   "pt": "A frase deixa claro qual evento aconteceu primeiro?"
+  },
+  {
+   "en": "Does the sentence sound clear about which event happened first?",
+   "de": "Ist im Satz klar, welches Ereignis zuerst passiert ist?",
+   "es": "¿La oración deja claro qué hecho ocurrió primero?",
+   "fr": "La phrase indique-t-elle clairement quel événement s'est produit en premier ?",
+   "it": "La frase rende chiaro quale evento è avvenuto per primo?",
+   "pt": "A frase deixa claro qual evento aconteceu primeiro?"
+  }
  ],
- "promptCorreccion": "Focus only on the past perfect and the order of past events. Check whether it correctly marks the earlier event and whether the participle is correct. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on the past perfect and the order of past events. Check whether it correctly marks the earlier event and whether the participle is correct. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf das past perfect und die Reihenfolge vergangener Ereignisse. Prüfe, ob es korrekt das frühere Ereignis kennzeichnet und ob das Partizip richtig ist. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en el past perfect y el orden de los acontecimientos pasados. Comprueba si marca correctamente el hecho anterior y si el participio es correcto. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur le past perfect et l'ordre des événements passés. Vérifie s'il marque correctement l'événement antérieur et si le participe est correct. Ne réécris pas le texte.",
+  "it": "Concentrati solo sul past perfect e sull'ordine degli eventi passati. Controlla se indica correttamente l'evento precedente e se il participio è corretto. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas no past perfect e na ordem dos eventos passados. Verifique se ele marca corretamente o evento anterior e se o particípio está correto. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*antes de que llegara* rendered as *before that he arrived* instead of *before he arrived*."

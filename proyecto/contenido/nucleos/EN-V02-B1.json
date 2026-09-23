@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Everyday Phrasal Verbs",
+ "titulo": {
+  "en": "Everyday Phrasal Verbs",
+  "de": "Alltägliche Phrasal Verbs",
+  "es": "Phrasal verbs cotidianos",
+  "fr": "Phrasal verbs du quotidien",
+  "it": "Phrasal verbs di uso quotidiano",
+  "pt": "Phrasal verbs do dia a dia"
+ },
  "categoria": "vocabulary",
  "ancla": "EGP A2/B1",
- "descripcion": "At B1 you learn the most common everyday phrasal verbs: get up, look for, find out. These are used constantly in spoken English, and avoiding them in favour of more formal one-word verbs makes ordinary speech sound stiff and unnatural.",
+ "descripcion": {
+  "en": "At B1 you learn the most common everyday phrasal verbs: get up, look for, find out. These are used constantly in spoken English, and avoiding them in favour of more formal one-word verbs makes ordinary speech sound stiff and unnatural.",
+  "de": "Auf B1-Niveau lernst du die häufigsten alltäglichen phrasal verbs: get up, look for, find out. Sie werden im gesprochenen Englisch ständig verwendet; wer sie zugunsten formeller Einwortverben vermeidet, klingt im Alltag steif und unnatürlich.",
+  "es": "En B1 aprendes los phrasal verbs cotidianos más frecuentes: get up, look for, find out. Se usan constantemente en el inglés hablado, y evitarlos en favor de verbos formales de una sola palabra hace que el habla cotidiana suene rígida y poco natural.",
+  "fr": "Au niveau B1, tu apprends les phrasal verbs les plus courants du quotidien : get up, look for, find out. Ils sont constamment utilisés à l'oral, et les éviter au profit de verbes formels en un seul mot rend la langue courante raide et peu naturelle.",
+  "it": "Al livello B1 impari i phrasal verbs quotidiani più comuni: get up, look for, find out. Sono usati continuamente nell'inglese parlato e evitarli a favore di verbi formali composti da una sola parola rende il parlato quotidiano rigido e poco naturale.",
+  "pt": "No nível B1, você aprende os phrasal verbs mais comuns do dia a dia: get up, look for, find out. Eles são usados o tempo todo no inglês falado, e evitá-los em favor de verbos formais de uma única palavra faz a fala cotidiana soar rígida e pouco natural."
+ },
  "cuadroReferencia": {
-  "titulo": "Common phrasal verbs",
+  "titulo": {
+   "en": "Common phrasal verbs",
+   "de": "Häufige phrasal verbs",
+   "es": "Phrasal verbs frecuentes",
+   "fr": "Phrasal verbs courants",
+   "it": "Phrasal verbs comuni",
+   "pt": "Phrasal verbs comuns"
+  },
   "columnas": [
-   "Phrasal verb",
-   "Meaning"
+   {
+    "en": "Phrasal verb",
+    "de": "Phrasal Verb",
+    "es": "Phrasal verb",
+    "fr": "Phrasal verb",
+    "it": "Phrasal verb",
+    "pt": "Phrasal verb"
+   },
+   {
+    "en": "Meaning",
+    "de": "Bedeutung",
+    "es": "Significado",
+    "fr": "Signification",
+    "it": "Significato",
+    "pt": "Significado"
+   }
   ],
   "filas": [
    [
-    "get up",
-    "to rise from bed"
+    {
+     "en": "get up",
+     "de": "aufstehen",
+     "es": "levantarse",
+     "fr": "se lever",
+     "it": "alzarsi",
+     "pt": "levantar-se"
+    },
+    {
+     "en": "to rise from bed",
+     "de": "aus dem Bett aufstehen",
+     "es": "levantarse de la cama",
+     "fr": "se lever du lit",
+     "it": "alzarsi dal letto",
+     "pt": "levantar da cama"
+    }
    ],
    [
-    "look for",
-    "to search for"
+    {
+     "en": "look for",
+     "de": "look for",
+     "es": "look for",
+     "fr": "look for",
+     "it": "look for",
+     "pt": "look for"
+    },
+    {
+     "en": "to search for",
+     "de": "suchen nach",
+     "es": "buscar",
+     "fr": "chercher",
+     "it": "cercare",
+     "pt": "procurar"
+    }
    ],
    [
-    "find out",
-    "to discover"
+    {
+     "en": "find out",
+     "de": "find out",
+     "es": "find out",
+     "fr": "find out",
+     "it": "find out",
+     "pt": "find out"
+    },
+    {
+     "en": "to discover",
+     "de": "herausfinden",
+     "es": "descubrir",
+     "fr": "découvrir",
+     "it": "scoprire",
+     "pt": "descobrir"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "I usually get up at seven in the morning.",
+   "texto": {
+    "en": "I usually get up at seven in the morning.",
+    "de": "Normalerweise stehe ich morgens um sieben auf.",
+    "es": "Normalmente me levanto a las siete de la mañana.",
+    "fr": "Je me lève généralement à sept heures du matin.",
+    "it": "Di solito mi alzo alle sette del mattino.",
+    "pt": "Normalmente eu levanto às sete da manhã."
+   },
    "audio": true
   },
   {
-   "texto": "I'm looking for a new apartment.",
+   "texto": {
+    "en": "I'm looking for a new apartment.",
+    "de": "Ich suche eine neue Wohnung.",
+    "es": "Estoy buscando un departamento nuevo.",
+    "fr": "Je cherche un nouvel appartement.",
+    "it": "Sto cercando un nuovo appartamento.",
+    "pt": "Estou procurando um apartamento novo."
+   },
    "audio": true
   },
   {
-   "texto": "I found out yesterday that the shop is closed."
+   "texto": {
+    "en": "I found out yesterday that the shop is closed.",
+    "de": "Ich habe gestern herausgefunden, dass das Geschäft geschlossen ist.",
+    "es": "Ayer me enteré de que la tienda está cerrada.",
+    "fr": "J'ai appris hier que le magasin est fermé.",
+    "it": "Ieri ho scoperto che il negozio è chiuso.",
+    "pt": "Ontem descobri que a loja está fechada."
+   }
   }
  ],
  "notas": [
-  "Get up, look for and find out are among the most frequent phrasal verbs in everyday English.",
-  "Look for takes an object directly: I'm looking for my keys.",
-  "Find out can be followed by a whole clause: I found out that she moved."
+  {
+   "en": "Get up, look for and find out are among the most frequent phrasal verbs in everyday English.",
+   "de": "Get up, look for und find out gehören zu den häufigsten phrasal verbs im Alltagsenglisch.",
+   "es": "Get up, look for y find out están entre los phrasal verbs más frecuentes del inglés cotidiano.",
+   "fr": "Get up, look for et find out comptent parmi les phrasal verbs les plus fréquents de l'anglais courant.",
+   "it": "Get up, look for e find out sono tra i phrasal verbs più frequenti dell'inglese quotidiano.",
+   "pt": "Get up, look for e find out estão entre os phrasal verbs mais frequentes do inglês cotidiano."
+  },
+  {
+   "en": "Look for takes an object directly: I'm looking for my keys.",
+   "de": "Look for nimmt direkt ein Objekt: I'm looking for my keys.",
+   "es": "Look for lleva el objeto directamente: I'm looking for my keys.",
+   "fr": "Look for prend directement un complément : I'm looking for my keys.",
+   "it": "Look for prende direttamente un oggetto: I'm looking for my keys.",
+   "pt": "Look for recebe o objeto diretamente: I'm looking for my keys."
+  },
+  {
+   "en": "Find out can be followed by a whole clause: I found out that she moved.",
+   "de": "Auf find out kann ein ganzer Nebensatz folgen: I found out that she moved.",
+   "es": "Find out puede ir seguido de una oración completa: I found out that she moved.",
+   "fr": "Find out peut être suivi d'une proposition complète : I found out that she moved.",
+   "it": "Find out può essere seguito da un'intera proposizione: I found out that she moved.",
+   "pt": "Find out pode ser seguido de uma oração inteira: I found out that she moved."
+  }
  ],
  "contraste": {
   "es": "Spanish has no phrasal verbs, so the first word that comes to mind is often a Latin-based verb (discover instead of find out). These verbs exist in English but sound more formal.",
@@ -54,14 +173,42 @@
   "pt": "Portuguese has no phrasal verbs, so the first word that comes to mind is often a Latin-based verb (descobrir – discover instead of find out), which sounds more formal in English."
  },
  "errores": [
-  "Using a formal one-word verb (discover) instead of the everyday phrasal verb (find out).",
-  "Forgetting the preposition in look for.",
-  "Splitting a phrasal verb that shouldn't be split."
+  {
+   "en": "Using a formal one-word verb (discover) instead of the everyday phrasal verb (find out).",
+   "de": "Ein formelles Einwortverb (discover) statt des alltäglichen phrasal verb (find out) verwenden.",
+   "es": "Usar un verbo formal de una sola palabra (discover) en lugar del phrasal verb cotidiano (find out).",
+   "fr": "Utiliser un verbe formel en un seul mot (discover) au lieu du phrasal verb courant (find out).",
+   "it": "Usare un verbo formale di una sola parola (discover) invece del phrasal verb quotidiano (find out).",
+   "pt": "Usar um verbo formal de uma única palavra (discover) em vez do phrasal verb cotidiano (find out)."
+  },
+  {
+   "en": "Forgetting the preposition in look for.",
+   "de": "Die Präposition in look for vergessen.",
+   "es": "Olvidar la preposición de look for.",
+   "fr": "Oublier la préposition dans look for.",
+   "it": "Dimenticare la preposizione in look for.",
+   "pt": "Esquecer a preposição em look for."
+  },
+  {
+   "en": "Splitting a phrasal verb that shouldn't be split.",
+   "de": "Ein phrasal verb trennen, das nicht getrennt werden darf.",
+   "es": "Separar un phrasal verb que no puede separarse.",
+   "fr": "Séparer un phrasal verb qui ne peut pas l'être.",
+   "it": "Separare un phrasal verb che non può essere separato.",
+   "pt": "Separar um phrasal verb que não pode ser separado."
+  }
  ],
  "redemittel": [
   {
    "expresion": "to get up",
-   "funcion": "rise from bed",
+   "funcion": {
+    "en": "rise from bed",
+    "de": "aus dem Bett aufstehen",
+    "es": "levantarse de la cama",
+    "fr": "se lever du lit",
+    "it": "alzarsi dal letto",
+    "pt": "levantar-se da cama"
+   },
    "traducciones": {
     "es": "levantarse",
     "de": "aufstehen",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "to look for",
-   "funcion": "search for",
+   "funcion": {
+    "en": "search for",
+    "de": "suchen nach",
+    "es": "buscar",
+    "fr": "chercher",
+    "it": "cercare",
+    "pt": "procurar"
+   },
    "traducciones": {
     "es": "buscar",
     "de": "suchen",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "to find out",
-   "funcion": "discover",
+   "funcion": {
+    "en": "discover",
+    "de": "herausfinden",
+    "es": "descubrir",
+    "fr": "découvrir",
+    "it": "scoprire",
+    "pt": "descobrir"
+   },
    "traducciones": {
     "es": "enterarse de",
     "de": "herausfinden / erfahren",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "to wake up",
-   "funcion": "stop sleeping",
+   "funcion": {
+    "en": "stop sleeping",
+    "de": "aufwachen",
+    "es": "dejar de dormir",
+    "fr": "se réveiller",
+    "it": "svegliarsi",
+    "pt": "acordar"
+   },
    "traducciones": {
     "es": "despertarse",
     "de": "aufwachen",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "to pick up",
-   "funcion": "collect",
+   "funcion": {
+    "en": "collect",
+    "de": "abholen",
+    "es": "recoger",
+    "fr": "récupérer",
+    "it": "andare a prendere",
+    "pt": "buscar"
+   },
    "traducciones": {
     "es": "recoger",
     "de": "abholen",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "to turn on/off",
-   "funcion": "switch on/off",
+   "funcion": {
+    "en": "switch on/off",
+    "de": "ein-/ausschalten",
+    "es": "encender/apagar",
+    "fr": "allumer/éteindre",
+    "it": "accendere/spegnere",
+    "pt": "ligar/desligar"
+   },
    "traducciones": {
     "es": "prender/apagar",
     "de": "ein-/ausschalten",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Have I used at least four different phrasal verbs?",
-  "Is the preposition correct for each one?",
-  "Have I avoided a formal one-word verb where a phrasal verb fits better?",
-  "Does the text sound natural?",
-  "Does the text sound natural?"
+  {
+   "en": "Have I used at least four different phrasal verbs?",
+   "de": "Habe ich mindestens vier verschiedene phrasal verbs verwendet?",
+   "es": "¿He usado al menos cuatro phrasal verbs diferentes?",
+   "fr": "Ai-je utilisé au moins quatre phrasal verbs différents ?",
+   "it": "Ho usato almeno quattro phrasal verbs diversi?",
+   "pt": "Usei pelo menos quatro phrasal verbs diferentes?"
+  },
+  {
+   "en": "Is the preposition correct for each one?",
+   "de": "Ist bei jedem die Präposition korrekt?",
+   "es": "¿La preposición es correcta en cada uno?",
+   "fr": "La préposition est-elle correcte pour chacun ?",
+   "it": "La preposizione è corretta per ciascuno?",
+   "pt": "A preposição está correta em cada um?"
+  },
+  {
+   "en": "Have I avoided a formal one-word verb where a phrasal verb fits better?",
+   "de": "Habe ich ein formelles Einwortverb vermieden, wenn ein phrasal verb natürlicher wäre?",
+   "es": "¿He evitado un verbo formal de una sola palabra cuando encajaba mejor un phrasal verb?",
+   "fr": "Ai-je évité un verbe formel en un seul mot lorsqu'un phrasal verb convenait mieux ?",
+   "it": "Ho evitato un verbo formale di una sola parola quando un phrasal verb sarebbe stato più naturale?",
+   "pt": "Evitei um verbo formal de uma única palavra quando um phrasal verb seria mais natural?"
+  },
+  {
+   "en": "Does the text sound natural?",
+   "de": "Klingt der Text natürlich?",
+   "es": "¿El texto suena natural?",
+   "fr": "Le texte sonne-t-il naturellement ?",
+   "it": "Il testo suona naturale?",
+   "pt": "O texto soa natural?"
+  },
+  {
+   "en": "Does the text sound natural?",
+   "de": "Klingt der Text natürlich?",
+   "es": "¿El texto suena natural?",
+   "fr": "Le texte sonne-t-il naturellement ?",
+   "it": "Il testo suona naturale?",
+   "pt": "O texto soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on everyday phrasal verbs. Check the preposition used in each one and suggest a phrasal verb wherever a formal one-word verb was used instead. Do not rewrite the text.",
+ "promptCorreccion": {
+  "en": "Focus only on everyday phrasal verbs. Check the preposition used in each one and suggest a phrasal verb wherever a formal one-word verb was used instead. Do not rewrite the text.",
+  "de": "Konzentriere dich nur auf alltägliche phrasal verbs. Prüfe die Präposition bei jedem und schlage ein phrasal verb vor, wo stattdessen ein formelles Einwortverb verwendet wurde. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en phrasal verbs cotidianos. Comprueba la preposición de cada uno y sugiere un phrasal verb cuando se haya usado en su lugar un verbo formal de una sola palabra. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur les phrasal verbs du quotidien. Vérifie la préposition de chacun et propose un phrasal verb lorsqu'un verbe formel en un seul mot a été utilisé à la place. Ne réécris pas le texte.",
+  "it": "Concentrati solo sui phrasal verbs quotidiani. Controlla la preposizione usata in ciascuno e suggerisci un phrasal verb quando al suo posto è stato usato un verbo formale di una sola parola. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas nos phrasal verbs do dia a dia. Verifique a preposição usada em cada um e sugira um phrasal verb sempre que tiver sido usado um verbo formal de uma única palavra. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*recoger a alguien* rendered as *recollect someone* instead of *pick someone up*."

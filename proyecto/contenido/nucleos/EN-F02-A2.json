@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "en",
  "bilingue": true,
- "titulo": "Agreeing and Disagreeing",
+ "titulo": {
+  "en": "Agreeing and Disagreeing",
+  "de": "Zustimmen und widersprechen",
+  "es": "Estar de acuerdo y en desacuerdo",
+  "fr": "Être d’accord et ne pas être d’accord",
+  "it": "Essere d’accordo e in disaccordo",
+  "pt": "Concordar e discordar"
+ },
  "categoria": "fluency",
  "ancla": "EGP A2",
- "descripcion": "At A2 you agree with I agree or disagree with I don't agree, in a simple and clear way. This basic skill is the foundation for more complex discussion at higher levels. Softer, graded disagreement comes at higher levels.",
+ "descripcion": {
+  "en": "At A2 you agree with I agree or disagree with I don't agree, in a simple and clear way. This basic skill is the foundation for more complex discussion at higher levels. Softer, graded disagreement comes at higher levels.",
+  "de": "Auf A2 stimmst du mit I agree zu oder widersprichst mit I don't agree, einfach und klar. Diese Grundfertigkeit ist die Basis für komplexere Diskussionen auf höheren Niveaus. Sanfteres, abgestuftes Widersprechen kommt erst später.",
+  "es": "En A2 expresas acuerdo con I agree o desacuerdo con I don't agree, de forma sencilla y clara. Esta habilidad básica es la base para discusiones más complejas en niveles superiores. El desacuerdo más matizado y suave llega más adelante.",
+  "fr": "Au niveau A2, tu exprimes ton accord avec I agree ou ton désaccord avec I don't agree, de façon simple et claire. Cette compétence de base sert de fondement à des discussions plus complexes aux niveaux supérieurs. Les désaccords plus nuancés et atténués viennent plus tard.",
+  "it": "A livello A2 esprimi accordo con I agree o disaccordo con I don't agree, in modo semplice e chiaro. Questa abilità di base è il fondamento per discussioni più complesse ai livelli superiori. I modi più sfumati e attenuati di dissentire arrivano più avanti.",
+  "pt": "No nível A2, você concorda com I agree ou discorda com I don't agree, de forma simples e clara. Essa habilidade básica é a base para discussões mais complexas nos níveis mais altos. Formas mais suaves e graduais de discordar vêm depois."
+ },
  "cuadroReferencia": {
-  "titulo": "Simple agreement",
+  "titulo": {
+   "en": "Simple agreement",
+   "de": "Einfache Zustimmung",
+   "es": "Acuerdo sencillo",
+   "fr": "Accord simple",
+   "it": "Accordo semplice",
+   "pt": "Concordância simples"
+  },
   "columnas": [
-   "Function",
-   "Phrase"
+   {
+    "en": "Function",
+    "de": "Funktion",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "en": "Phrase",
+    "de": "Formel",
+    "es": "Fórmula",
+    "fr": "Formule",
+    "it": "Formula",
+    "pt": "Fórmula"
+   }
   ],
   "filas": [
    [
-    "Agreement",
-    "I agree."
+    {
+     "en": "Agreement",
+     "de": "Zustimmung",
+     "es": "Acuerdo",
+     "fr": "Accord",
+     "it": "Accordo",
+     "pt": "Concordância"
+    },
+    {
+     "en": "I agree.",
+     "de": "Ich stimme zu.",
+     "es": "Estoy de acuerdo.",
+     "fr": "Je suis d’accord.",
+     "it": "Sono d’accordo.",
+     "pt": "Eu concordo."
+    }
    ],
    [
-    "Disagreement",
-    "I don't agree."
+    {
+     "en": "Disagreement",
+     "de": "Widerspruch",
+     "es": "Desacuerdo",
+     "fr": "Désaccord",
+     "it": "Disaccordo",
+     "pt": "Discordância"
+    },
+    {
+     "en": "I don't agree.",
+     "de": "Ich stimme nicht zu.",
+     "es": "No estoy de acuerdo.",
+     "fr": "Je ne suis pas d’accord.",
+     "it": "Non sono d’accordo.",
+     "pt": "Eu não concordo."
+    }
    ],
    [
-    "Unsure",
-    "Maybe."
+    {
+     "en": "Unsure",
+     "de": "Unsicher",
+     "es": "Inseguro/a",
+     "fr": "Incertain",
+     "it": "Incerto",
+     "pt": "Em dúvida"
+    },
+    {
+     "en": "Maybe.",
+     "de": "Vielleicht.",
+     "es": "Quizás.",
+     "fr": "Peut-être.",
+     "it": "Forse.",
+     "pt": "Talvez."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Yes, I agree with that.",
+   "texto": {
+    "en": "Yes, I agree with that.",
+    "de": "Ja, da stimme ich zu.",
+    "es": "Sí, estoy de acuerdo con eso.",
+    "fr": "Oui, je suis d’accord avec ça.",
+    "it": "Sì, sono d’accordo.",
+    "pt": "Sim, concordo com isso."
+   },
    "audio": true
   },
   {
-   "texto": "No, I don't agree.",
+   "texto": {
+    "en": "No, I don't agree.",
+    "de": "Nein, ich stimme nicht zu.",
+    "es": "No, no estoy de acuerdo.",
+    "fr": "Non, je ne suis pas d’accord.",
+    "it": "No, non sono d’accordo.",
+    "pt": "Não, eu não concordo."
+   },
    "audio": true
   },
   {
-   "texto": "Maybe, I'm not sure."
+   "texto": {
+    "en": "Maybe, I'm not sure.",
+    "de": "Vielleicht, ich bin mir nicht sicher.",
+    "es": "Quizás, no estoy seguro/a.",
+    "fr": "Peut-être, je ne suis pas sûr(e).",
+    "it": "Forse, non ne sono sicuro/a.",
+    "pt": "Talvez, não tenho certeza."
+   }
   }
  ],
  "notas": [
-  "I agree is the simplest way to show agreement.",
-  "I don't agree is direct but still polite.",
-  "Maybe works well when you're not sure."
+  {
+   "en": "I agree is the simplest way to show agreement.",
+   "de": "I agree ist die einfachste Art, Zustimmung zu zeigen.",
+   "es": "I agree es la forma más sencilla de mostrar acuerdo.",
+   "fr": "I agree est la façon la plus simple d’exprimer son accord.",
+   "it": "I agree è il modo più semplice per esprimere accordo.",
+   "pt": "I agree é a forma mais simples de mostrar concordância."
+  },
+  {
+   "en": "I don't agree is direct but still polite.",
+   "de": "I don't agree ist direkt, aber trotzdem höflich.",
+   "es": "I don't agree es directo, pero sigue siendo cortés.",
+   "fr": "I don't agree est direct, mais reste poli.",
+   "it": "I don't agree è diretto, ma comunque educato.",
+   "pt": "I don't agree é direto, mas continua sendo educado."
+  },
+  {
+   "en": "Maybe works well when you're not sure.",
+   "de": "Maybe passt gut, wenn du dir nicht sicher bist.",
+   "es": "Maybe funciona bien cuando no estás seguro/a.",
+   "fr": "Maybe convient bien quand tu n’es pas sûr(e).",
+   "it": "Maybe va bene quando non sei sicuro/a.",
+   "pt": "Maybe funciona bem quando você não tem certeza."
+  }
  ],
  "contraste": {
   "es": "Estoy de acuerdo is often calqued as I am agree; agree is a verb in English: I agree.",
@@ -54,13 +173,34 @@
   "pt": "Concordo corresponds exactly to I agree, so the form transfers directly."
  },
  "errores": [
-  "Only saying yes or no without any phrase.",
-  "Not knowing how to say maybe."
+  {
+   "en": "Only saying yes or no without any phrase.",
+   "de": "Nur yes oder no sagen, ohne eine richtige Wendung zu verwenden.",
+   "es": "Decir solo yes o no sin ninguna expresión.",
+   "fr": "Dire seulement yes ou no sans utiliser d’expression.",
+   "it": "Dire solo yes o no senza usare un’espressione.",
+   "pt": "Dizer apenas yes ou no sem usar nenhuma expressão."
+  },
+  {
+   "en": "Not knowing how to say maybe.",
+   "de": "Nicht wissen, wie man maybe sagt.",
+   "es": "No saber cómo decir maybe.",
+   "fr": "Ne pas savoir comment dire maybe.",
+   "it": "Non sapere come dire maybe.",
+   "pt": "Não saber como dizer maybe."
+  }
  ],
  "redemittel": [
   {
    "expresion": "I agree.",
-   "funcion": "agreement",
+   "funcion": {
+    "en": "agreement",
+    "de": "Zustimmung",
+    "es": "acuerdo",
+    "fr": "accord",
+    "it": "accordo",
+    "pt": "concordância"
+   },
    "traducciones": {
     "es": "Estoy de acuerdo.",
     "de": "Ich stimme zu.",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "I don't agree.",
-   "funcion": "disagreement",
+   "funcion": {
+    "en": "disagreement",
+    "de": "Widerspruch",
+    "es": "desacuerdo",
+    "fr": "désaccord",
+    "it": "disaccordo",
+    "pt": "discordância"
+   },
    "traducciones": {
     "es": "No estoy de acuerdo.",
     "de": "Ich stimme nicht zu.",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "Maybe.",
-   "funcion": "unsure",
+   "funcion": {
+    "en": "unsure",
+    "de": "unsicher",
+    "es": "inseguro/a",
+    "fr": "incertain",
+    "it": "incerto",
+    "pt": "em dúvida"
+   },
    "traducciones": {
     "es": "Tal vez.",
     "de": "Vielleicht.",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "Me too.",
-   "funcion": "agreement, informal",
+   "funcion": {
+    "en": "agreement, informal",
+    "de": "Zustimmung, informell",
+    "es": "acuerdo, informal",
+    "fr": "accord, informel",
+    "it": "accordo, informale",
+    "pt": "concordância, informal"
+   },
    "traducciones": {
     "es": "Yo también.",
     "de": "Ich auch.",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "I don't know.",
-   "funcion": "no opinion",
+   "funcion": {
+    "en": "no opinion",
+    "de": "keine Meinung",
+    "es": "sin opinión",
+    "fr": "pas d'opinion",
+    "it": "nessuna opinione",
+    "pt": "sem opinião"
+   },
    "traducciones": {
     "es": "No sé.",
     "de": "Ich weiss nicht.",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "Exactly!",
-   "funcion": "strong agreement",
+   "funcion": {
+    "en": "strong agreement",
+    "de": "starke Zustimmung",
+    "es": "acuerdo firme",
+    "fr": "accord marqué",
+    "it": "forte accordo",
+    "pt": "forte concordância"
+   },
    "traducciones": {
     "es": "¡Exacto!",
     "de": "Genau!",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Have I clearly said whether I agree or not?",
-  "Have I used more than one phrase?",
-  "Does the phrase sound natural?",
-  "Does the phrase sound natural?",
-  "Does the phrase sound natural?"
+  {
+   "en": "Have I clearly said whether I agree or not?",
+   "de": "Habe ich klar gesagt, ob ich zustimme oder nicht?",
+   "es": "¿Dije con claridad si estoy de acuerdo o no?",
+   "fr": "Ai-je clairement dit si je suis d'accord ou non ?",
+   "it": "Ho detto chiaramente se sono d'accordo o no?",
+   "pt": "Disse claramente se concordo ou não?"
+  },
+  {
+   "en": "Have I used more than one phrase?",
+   "de": "Habe ich mehr als eine Wendung verwendet?",
+   "es": "¿He usado más de una expresión?",
+   "fr": "Ai-je utilisé plus d’une expression ?",
+   "it": "Ho usato più di un’espressione?",
+   "pt": "Usei mais de uma expressão?"
+  },
+  {
+   "en": "Does the phrase sound natural?",
+   "de": "Klingt die Formulierung natürlich?",
+   "es": "¿Suena natural la expresión?",
+   "fr": "La formulation semble-t-elle naturelle ?",
+   "it": "La frase suona naturale?",
+   "pt": "A expressão soa natural?"
+  },
+  {
+   "en": "Does the phrase sound natural?",
+   "de": "Klingt die Formulierung natürlich?",
+   "es": "¿Suena natural la expresión?",
+   "fr": "La formulation semble-t-elle naturelle ?",
+   "it": "La frase suona naturale?",
+   "pt": "A expressão soa natural?"
+  },
+  {
+   "en": "Does the phrase sound natural?",
+   "de": "Klingt die Formulierung natürlich?",
+   "es": "¿Suena natural la expresión?",
+   "fr": "La formulation semble-t-elle naturelle ?",
+   "it": "La frase suona naturale?",
+   "pt": "A expressão soa natural?"
+  }
  ],
- "promptCorreccion": "Focus only on agreeing and disagreeing clearly. Do not rewrite the text. Check whether more than one phrase was used, not just the same one repeated. Check the tone stays polite.",
+ "promptCorreccion": {
+  "en": "Focus only on agreeing and disagreeing clearly. Do not rewrite the text. Check whether more than one phrase was used, not just the same one repeated. Check the tone stays polite.",
+  "de": "Achte nur darauf, dass Zustimmung und Widerspruch klar ausgedrückt werden. Formuliere den Text nicht neu. Prüfe, ob mehr als eine Wendung verwendet wurde und nicht nur dieselbe wiederholt. Achte darauf, dass der Ton höflich bleibt.",
+  "es": "Concéntrate solo en expresar el acuerdo y el desacuerdo con claridad. No reescribas el texto. Comprueba si se usó más de una expresión y no solo la misma repetida. Verifica que el tono siga siendo cortés.",
+  "fr": "Concentre-toi uniquement sur l’expression claire de l’accord et du désaccord. Ne réécris pas le texte. Vérifie si plus d’une expression a été utilisée, et pas seulement la même répétée. Vérifie que le ton reste poli.",
+  "it": "Concentrati solo sull’esprimere chiaramente accordo e disaccordo. Non riscrivere il testo. Controlla se è stata usata più di un’espressione e non sempre la stessa. Assicurati che il tono resti educato.",
+  "pt": "Concentre-se apenas em expressar concordância e discordância com clareza. Não reescreva o texto. Verifique se foi usada mais de uma expressão, e não apenas a mesma repetida. Confira se o tom continua educado."
+ },
  "erroresContrastivos": {
   "es": [
    "*Tienes razón* rendered as *You have reason* instead of *You're right*."
