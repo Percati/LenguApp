@@ -159,7 +159,12 @@ def _sangria(t, i):
 
 
 def _serializar(valor, sangria):
-    """Objeto {idioma: texto} en varias lineas, con la sangria del lugar."""
+    """Objeto {idioma: texto} en varias lineas, con la sangria del lugar.
+
+    Un valor que no es objeto (un string plano, p. ej.) se serializa tal cual.
+    """
+    if not isinstance(valor, dict):
+        return json.dumps(valor, ensure_ascii=False)
     dentro = sangria + " "
     cuerpo = ",\n".join(dentro + json.dumps(k, ensure_ascii=False) + ": "
                         + json.dumps(v, ensure_ascii=False) for k, v in valor.items())
