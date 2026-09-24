@@ -8,7 +8,7 @@ Estado regenerado a partir de los archivos reales del repositorio (parche de Apa
 
 ## 2. Packs 2027 — ✅ completo
 
-480/480. Validado con `tools/validar_packs.py`: 0 problemas de continuidad. Hueco conocido: 8 packs de `en-C1` siguen calcados del alemán (T02-1/3, T07-1/2, T09-1/3, T13-2/4) — pendiente de reescritura, no bloquea.
+480/480. Validado con `tools/validar_packs.py`: 0 problemas de continuidad. Hueco conocido: 8 packs de `en-C1` siguen calcados del alemán (T02-1/3, T07-1/2, T09-1/3, T13-2/4). Causa confirmada: se escribieron en el commit inicial del repo, antes de que existiera el flujo de conversaciones separadas — se tradujo el glosario alemán en vez de escribir vocabulario inglés idiomático, en los cuatro temas con conceptos suizos específicos (pensiones, vivienda, Lehre, burocracia). No es una limitación de material disponible en inglés — pendiente de reescritura por Packs, no bloquea.
 
 ## 3. Apariciones 2027 — ✅ completo, verificado
 
@@ -84,35 +84,19 @@ etc.) no es visible para Code — si una regla de ahí es relevante para una
 tarea de Code, hay que copiarla en texto plano dentro del prompt, no asumir
 que la va a leer sola.
 
-## 5. Audio — 🟡 grabado y convertido, falta subir 4462 al repo
+## 5. Audio — ✅ completo
 
-✅ **7348/7348 filas del Excel grabadas** (6312 textos distintos). `audio-estado.json` registra **6368 archivos: 3298 EN y 3070 DE**. `validar_apariciones.py --anio 2027` no da avisos de audio.
+6368 archivos `.ogg` en el repo, cubren los 6312 registrados en
+`audio-estado.json`. `tools/generar_audio.py` se retiró del repo (Fer genera
+todo localmente con Piper); las referencias a él en `CLAUDE.md` (raíz y
+proyecto/), `PROMPT-CLAUDE-CODE.md` y `manifiesto_audio.py` se actualizaron
+para no apuntar a un archivo que ya no existe.
 
-✅ **Formato final decidido (sept 2026): Opus, 24 kbps, mono, contenedor `.ogg`.** Opus rinde muy por encima de AAC y MP3 en voz a bitrates bajos, y Android y ExoPlayer lo soportan sin librerías extra; `.ogg` porque la extensión `.opus` recién anda desde API 29. Medido sobre los 1906 archivos del repo: **134 MB de WAV → 9,0 MB de Opus** (−93 %). Los 6368 completos quedan en unos 30 MB.
+## 6. Traducciones — ✅ cerrado por ahora
 
-🔴 **La conversión la tiene que correr Fer sobre su carpeta local**, que es la única que tiene los 6368 archivos (el repo solo tiene 1906):
-
-```sh
-python3 proyecto/tools/convertir_audio.py --audio app/src/main/assets/audio \
-    --estado proyecto/audio-estado.json --borrar-wav
-```
-
-Es idempotente y salta lo ya convertido. Los nombres en `audio-estado.json` ya apuntan a `.ogg` en este parche, así que al correrlo con `--estado` no va a cambiar nada más.
-
-🔴 **Faltan 4462 archivos en el repo.** El estado registra 6368 y `assets/audio/` tiene 1906 commiteados; el resto existe solo en la copia local de Fer. Sin ellos, un clon del repo no compila la app completa y no hay respaldo. `sincronizar_audio_estado.py --dry-run` los lista. Ya comprimidos son ~30 MB en total, así que subirlos al repo dejó de ser un problema de peso.
-
-✅ **Duplicados por nivel:** se conservan (decisión de Fer, sept 2026). 56 textos con una segunda grabación en otro nivel, campo `otrosArchivos`.
-
-🟡 **`tools/generar_audio.py` está desfasado del pipeline real:** nombra los archivos por hash del texto (`voz_velocidad_hash.ogg`), no con la convención `IDIOMA_NIVEL_palabras_origen.ogg` que usan los 6368 archivos reales, y espera fichas compiladas en `build/`. Se actualizó su salida a Opus/`.ogg`, pero hoy no lo usa nadie: hay que decidir si se alinea con la convención o se retira.
-
-`audio-a-grabar.xlsx` es el **Excel de seguimiento**: se regenera con `exportar_audio_maestro.py --anio 2027`.
-
-## 6. Traducciones — 🟡 en curso, la hace Fer a mano
-
-**21 595 celdas pendientes** (13 campos de prosa de 95 núcleos + 192
-apariciones, ya con `titulo` y `funcion` incluidos; el hueco viejo de
-`de-C1` ya se corrigió). Excel entregado, ETA 1-2 días. El importador ya
-está listo y probado de punta a punta (round-trip: 522/9/0 sin problemas).
+Verificado de nuevo componiendo las tres capas reales: "522 fichas
+compuestas, 9 semanas especiales, 0 con problemas". El vaivén de parches de
+longitudes (alargar → revertir) no dejó ninguna celda corta.
 
 ## 7. Vocabulario atestiguado alemán — B2 resuelto, falta C2
 
@@ -136,7 +120,7 @@ de alemán C2 quedan sin verificación externa.
 
 ## 8. Sin dueño todavía
 
-- **Semanas de repaso 2027** (S10, S22, S34, S46): no existe contenido en ninguna combinación. No es de Apariciones — nadie definió el formato.
+- **Semanas de repaso 2027** (S10, S22, S34, S46): no existe contenido en ninguna combinación. Hay un precedente real en el piloto (`REVIEW-EN-C1-S48.json`: semana especial autocontenida, sin núcleo ni pack, que cita skills de semanas anteriores por número). Se propusieron tres templates (síntesis única para C1/C2, tres entregas cortas para B2, autodiagnóstico + producción corta para A2/B1) — falta que Fer confirme cuál usar antes de que Apariciones las escriba.
 
 ## 9. Piloto 2026
 

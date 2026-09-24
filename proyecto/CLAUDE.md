@@ -60,8 +60,10 @@ python3 proyecto/tools/generar_calendario.py --anio 2026 --desde 37 \
     --fijas proyecto/data/semanas-fijas.json --formato json
 
 python3 proyecto/tools/check_level.py proyecto/fichas/*.md --vocab proyecto/data/vocab_de.json
-python3 proyecto/tools/generar_audio.py app/src/main/assets/contenido/*.json --dry-run
 ```
+
+El audio no se genera desde un script del repo: Fer lo genera localmente con
+Piper y lo sube directo a `assets/audio/` (Opus 24 kbps mono, `.ogg`).
 
 `assembleDebug` debe fallar si el JSON de `assets/` no valida contra el schema.
 

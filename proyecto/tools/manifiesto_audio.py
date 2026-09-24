@@ -5,7 +5,7 @@ manifiesto_audio.py — lista todos los textos que necesitan audio.
 Produce dos salidas:
 
   audio-manifiesto.md    legible, para revisar antes de generar
-  audio-manifiesto.json  entrada de generar_audio.py
+  audio-manifiesto.json  lista de textos que necesitan audio (Fer los genera localmente con Piper)
 
 Cada texto lleva su idioma explicito y el nombre de archivo determinista que
 le va a corresponder, de modo que el manifiesto y los MP3 se puedan cotejar.
@@ -127,12 +127,9 @@ def main():
     L += ["---", "",
           f"**Total: {len(vistos)} textos, {tot_clips} clips.** "
           f"A unos 25 KB por clip, alrededor de {tot_clips*25//1024} MB.", "",
-          "## Cómo generarlos", "",
-          "```sh", "pip install piper-tts",
-          "# voces desde https://huggingface.co/rhasspy/piper-voices",
-          "python3 tools/generar_audio.py build/*.json --voces voces --salida app/src/main/assets/audio",
-          "```", "",
-          "Salida: Opus 24 kbps mono en .ogg. El script salta los que ya existen, así que se puede correr en tandas."]
+          "## Cómo se generan", "",
+          "Fer los genera localmente con Piper (no hay script en el repo para esto) "
+          "y los sube directo a assets/audio/, en Opus 24 kbps mono (.ogg)."]
     salida.joinpath("audio-manifiesto.md").write_text("\n".join(L), encoding="utf-8")
     print(f"{len(vistos)} textos, {tot_clips} clips -> audio-manifiesto.md / .json",
           file=sys.stderr)

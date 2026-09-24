@@ -59,8 +59,10 @@ Ya existe y funciona. La app consume la salida; no hay que reescribirlo.
 ```
 fichas/*.md  --compilar_fichas.py-->  build/*.json  --> assets/contenido/
 banco.json + semanas-fijas.json  --generar_calendario.py-->  calendario_<año>_<idioma>_<nivel>.json
-build/*.json  --generar_audio.py-->  assets/audio/*.mp3 + indice.json
 ```
+
+El audio (Opus 24 kbps mono, `.ogg`) lo genera Fer localmente con Piper, fuera
+del repo, y lo sube directo a `assets/audio/`.
 
 Tareas Gradle a crear: que `assembleDebug` falle si el JSON de `assets/` no valida contra el schema. Es más barato fallar en el build que en el teléfono.
 
