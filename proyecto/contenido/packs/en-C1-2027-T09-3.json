@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T09", "n": 3, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T09",
+ "n": 3,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "to further one's education", "prioridad": "nucleo", "traducciones": {"es": "seguir formándose","de": "sich fortbilden","fr": "se perfectionner","it": "aggiornarsi","pt": "aperfeiçoar-se"}},
-  {"item": "final exam", "prioridad": "nucleo", "traducciones": {"es": "el examen final","de": "die Abschlussprüfung","fr": "l’examen final","it": "l’esame finale","pt": "o exame final"}},
-  {"item": "retraining", "prioridad": "nucleo", "traducciones": {"es": "la reconversión profesional","de": "die Umschulung","fr": "la reconversion","it": "la riqualificazione","pt": "a requalificação"}},
-  {"item": "recognition of qualifications", "prioridad": "nucleo", "traducciones": {"es": "el reconocimiento de títulos","de": "die Anerkennung von Qualifikationen","fr": "la reconnaissance des qualifications","it": "il riconoscimento dei titoli","pt": "o reconhecimento de qualificações"}},
-  {"item": "training course", "prioridad": "ampliacion", "traducciones": {"es": "el curso de capacitación","de": "der Weiterbildungskurs","fr": "le cours de formation","it": "il corso di formazione","pt": "o curso de formação"}},
-  {"item": "lifelong learning", "prioridad": "ampliacion", "traducciones": {"es": "el aprendizaje permanente","de": "lebenslanges Lernen","fr": "l’apprentissage tout au long de la vie","it": "l’apprendimento permanente","pt": "a aprendizagem ao longo da vida"}},
-  {"item": "to keep up motivation", "prioridad": "ampliacion", "traducciones": {"es": "mantener la motivación","de": "die Motivation aufrechterhalten","fr": "maintenir sa motivation","it": "mantenere la motivazione","pt": "manter a motivação"}},
-  {"item": "the common thread", "prioridad": "ampliacion", "traducciones": {"es": "el hilo conductor","de": "der rote Faden","fr": "le fil conducteur","it": "il filo conduttore","pt": "o fio condutor"}},
-  {"item": "postgraduate training", "prioridad": "ampliacion", "traducciones": {"es": "la formación de posgrado","de": "die Weiterbildung auf Postgraduiertenebene","fr": "la formation postgrade","it": "la formazione post-laurea","pt": "a formação de pós-graduação"}},
-  {"item": "to stay on top of it", "prioridad": "ampliacion", "traducciones": {"es": "no perder el ritmo","de": "den Überblick behalten","fr": "garder le contrôle / rester à jour","it": "tenere tutto sotto controllo","pt": "manter tudo sob controlo"}},
-  {"item": "grade average", "prioridad": "ampliacion", "traducciones": {"es": "el promedio de notas","de": "der Notendurchschnitt","fr": "la moyenne des notes","it": "la media dei voti","pt": "a média das notas"}},
-  {"item": "ability to grasp things", "prioridad": "ampliacion", "traducciones": {"es": "la capacidad de comprensión","de": "die Auffassungsgabe","fr": "la capacité de compréhension","it": "la capacità di comprensione","pt": "a capacidade de compreensão"}}
+  {
+   "item": "a refresher course",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el curso de actualización",
+    "de": "der Auffrischungskurs",
+    "fr": "le cours de remise à niveau",
+    "it": "il corso di aggiornamento",
+    "pt": "o curso de atualização"
+   }
+  },
+  {
+   "item": "continuing professional development",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el desarrollo profesional continuo",
+    "de": "die berufliche Weiterbildung",
+    "fr": "le développement professionnel continu",
+    "it": "l'aggiornamento professionale",
+    "pt": "o desenvolvimento profissional contínuo"
+   }
+  },
+  {
+   "item": "to top up your qualifications",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "completar tu titulación",
+    "de": "seine Qualifikation aufstocken",
+    "fr": "compléter ses qualifications",
+    "it": "integrare le proprie qualifiche",
+    "pt": "completar as qualificações"
+   }
+  },
+  {
+   "item": "a qualification gap",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la brecha de titulación",
+    "de": "die Qualifikationslücke",
+    "fr": "le déficit de qualification",
+    "it": "il divario di qualifiche",
+    "pt": "a lacuna de qualificações"
+   }
+  },
+  {
+   "item": "an evening class",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la clase nocturna",
+    "de": "der Abendkurs",
+    "fr": "le cours du soir",
+    "it": "il corso serale",
+    "pt": "a aula noturna"
+   }
+  },
+  {
+   "item": "certificate of competence",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el certificado de competencia",
+    "de": "der Kompetenznachweis",
+    "fr": "l'attestation de compétences",
+    "it": "l'attestato di competenza",
+    "pt": "o certificado de competência"
+   }
+  },
+  {
+   "item": "distance learning",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la enseñanza a distancia",
+    "de": "das Fernstudium",
+    "fr": "l'enseignement à distance",
+    "it": "la formazione a distanza",
+    "pt": "o ensino à distância"
+   }
+  },
+  {
+   "item": "final exam",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el examen final",
+    "de": "die Abschlussprüfung",
+    "fr": "l’examen final",
+    "it": "l’esame finale",
+    "pt": "o exame final"
+   }
+  },
+  {
+   "item": "practical relevance",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la aplicación práctica",
+    "de": "der Praxisbezug",
+    "fr": "le lien avec la pratique",
+    "it": "l'applicazione pratica",
+    "pt": "a aplicação prática"
+   }
+  },
+  {
+   "item": "recognition of qualifications",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el reconocimiento de títulos",
+    "de": "die Anerkennung von Qualifikationen",
+    "fr": "la reconnaissance des qualifications",
+    "it": "il riconoscimento dei titoli",
+    "pt": "o reconhecimento de qualificações"
+   }
+  },
+  {
+   "item": "retraining",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la reconversión profesional",
+    "de": "die Umschulung",
+    "fr": "la reconversion",
+    "it": "la riqualificazione",
+    "pt": "a requalificação"
+   }
+  },
+  {
+   "item": "to be self-taught",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser autodidacta",
+    "de": "Autodidakt sein",
+    "fr": "être autodidacte",
+    "it": "essere autodidatta",
+    "pt": "ser autodidata"
+   }
+  },
+  {
+   "item": "to further one's education",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "seguir formándose",
+    "de": "sich fortbilden",
+    "fr": "se perfectionner",
+    "it": "aggiornarsi",
+    "pt": "aperfeiçoar-se"
+   }
+  },
+  {
+   "item": "to keep your skills current",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mantener tus competencias al día",
+    "de": "seine Fähigkeiten aktuell halten",
+    "fr": "garder ses compétences à jour",
+    "it": "mantenere aggiornate le competenze",
+    "pt": "manter as competências atualizadas"
+   }
+  }
  ]
 }

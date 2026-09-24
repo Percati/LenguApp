@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T07", "n": 1, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T07",
+ "n": 1,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "housing search", "prioridad": "nucleo", "traducciones": {"es": "la búsqueda de vivienda","de": "die Wohnungssuche","fr": "la recherche de logement","it": "la ricerca di casa","pt": "a procura de habitação"}},
-  {"item": "the landlord", "prioridad": "nucleo", "traducciones": {"es": "el arrendador","de": "der Vermieter","fr": "le propriétaire","it": "il locatore","pt": "o locador"}},
-  {"item": "housing shortage", "prioridad": "nucleo", "traducciones": {"es": "la escasez de vivienda","de": "die Wohnungsnot","fr": "la pénurie de logements","it": "la carenza di alloggi","pt": "a escassez de habitação"}},
-  {"item": "displacement (of residents)", "prioridad": "nucleo", "traducciones": {"es": "el desplazamiento de residentes","de": "die Verdrängung","fr": "l’éviction / le déplacement des habitants","it": "lo spostamento / l’espulsione dei residenti","pt": "a deslocação / expulsão de moradores"}},
-  {"item": "rent increase", "prioridad": "ampliacion", "traducciones": {"es": "el aumento del alquiler","de": "die Mieterhöhung","fr": "l’augmentation du loyer","it": "l’aumento dell’affitto","pt": "o aumento da renda"}},
-  {"item": "temporary use (of a vacant building)", "prioridad": "ampliacion", "traducciones": {"es": "el uso temporal","de": "die Zwischennutzung","fr": "l’utilisation temporaire","it": "l’uso temporaneo","pt": "a utilização temporária"}},
-  {"item": "urban infill", "prioridad": "ampliacion", "traducciones": {"es": "la densificación urbana","de": "die Nachverdichtung","fr": "la densification urbaine","it": "la densificazione urbana","pt": "o adensamento urbano"}},
-  {"item": "vacancy", "prioridad": "ampliacion", "traducciones": {"es": "la vivienda vacía","de": "der Leerstand / die freie Wohnung","fr": "le logement vacant","it": "l’alloggio vuoto","pt": "a habitação vaga"}},
-  {"item": "gentrification", "prioridad": "ampliacion", "traducciones": {"es": "la gentrificación","de": "Gentrifizierung","fr": "la gentrification","it": "la gentrificazione","pt": "a gentrificação"}},
-  {"item": "tenant protection", "prioridad": "ampliacion", "traducciones": {"es": "la protección al inquilino","de": "der Mieterschutz","fr": "la protection des locataires","it": "la tutela degli inquilini","pt": "a proteção do inquilino"}},
-  {"item": "neighbourhood", "prioridad": "ampliacion", "traducciones": {"es": "el barrio","de": "das Viertel / die Nachbarschaft","fr": "le quartier","it": "il quartiere","pt": "o bairro"}},
-  {"item": "building fabric", "prioridad": "ampliacion", "traducciones": {"es": "la estructura del edificio","de": "die Bausubstanz","fr": "la structure du bâtiment","it": "la struttura dell’edificio","pt": "a estrutura do edifício"}}
+  {
+   "item": "a letting agent",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el agente de alquileres",
+    "de": "der Vermietungsmakler",
+    "fr": "l'agent immobilier de location",
+    "it": "l'agente immobiliare per affitti",
+    "pt": "o agente de arrendamento"
+   }
+  },
+  {
+   "item": "a rental deposit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la fianza del alquiler",
+    "de": "die Mietkaution",
+    "fr": "le dépôt de garantie",
+    "it": "la caparra",
+    "pt": "o depósito de caução"
+   }
+  },
+  {
+   "item": "a tenancy agreement",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el contrato de arrendamiento",
+    "de": "der Mietvertrag",
+    "fr": "le bail",
+    "it": "il contratto di locazione",
+    "pt": "o contrato de arrendamento"
+   }
+  },
+  {
+   "item": "a viewing",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la visita al inmueble",
+    "de": "die Wohnungsbesichtigung",
+    "fr": "la visite du logement",
+    "it": "la visita all'immobile",
+    "pt": "a visita ao imóvel"
+   }
+  },
+  {
+   "item": "the housing market",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el mercado inmobiliario",
+    "de": "der Immobilienmarkt",
+    "fr": "le marché du logement",
+    "it": "il mercato immobiliare",
+    "pt": "o mercado da habitação"
+   }
+  },
+  {
+   "item": "to be priced out",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "quedar fuera por los precios",
+    "de": "sich die Preise nicht mehr leisten können",
+    "fr": "être exclu par les prix",
+    "it": "essere escluso dai prezzi",
+    "pt": "ser excluído pelos preços"
+   }
+  },
+  {
+   "item": "utility costs",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gastos comunes",
+    "de": "die Nebenkosten",
+    "fr": "les charges",
+    "it": "le spese condominiali",
+    "pt": "as despesas de condomínio"
+   }
+  },
+  {
+   "item": "a bidding war",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la puja al alza",
+    "de": "das Bieterrennen",
+    "fr": "la surenchère",
+    "it": "la guerra di offerte",
+    "pt": "a guerra de licitações"
+   }
+  },
+  {
+   "item": "a first-time buyer",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el comprador de primera vivienda",
+    "de": "der Ersterwerber",
+    "fr": "le primo-accédant",
+    "it": "chi compra la prima casa",
+    "pt": "o comprador de primeira habitação"
+   }
+  },
+  {
+   "item": "a housing association",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la entidad gestora de vivienda social",
+    "de": "die Wohnungsbaugesellschaft",
+    "fr": "le bailleur social",
+    "it": "l'ente per l'edilizia sociale",
+    "pt": "a associação de habitação"
+   }
+  },
+  {
+   "item": "social housing",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la vivienda social",
+    "de": "der soziale Wohnungsbau",
+    "fr": "le logement social",
+    "it": "l'edilizia sociale",
+    "pt": "a habitação social"
+   }
+  },
+  {
+   "item": "the landlord",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el arrendador",
+    "de": "der Vermieter",
+    "fr": "le propriétaire",
+    "it": "il locatore",
+    "pt": "o locador"
+   }
+  },
+  {
+   "item": "to give notice",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "avisar de que te vas",
+    "de": "kündigen",
+    "fr": "donner son préavis",
+    "it": "dare disdetta",
+    "pt": "dar aviso prévio"
+   }
+  },
+  {
+   "item": "to rent privately",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "alquilar en el mercado libre",
+    "de": "privat mieten",
+    "fr": "louer dans le privé",
+    "it": "affittare sul mercato privato",
+    "pt": "arrendar no mercado privado"
+   }
+  }
  ]
 }

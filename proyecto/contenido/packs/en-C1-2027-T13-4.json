@@ -6,14 +6,14 @@
  "anio": 2027,
  "vocabulario": [
   {
-   "item": "office hours",
+   "item": "a means test",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "el horario de atención",
-    "de": "die Sprechzeiten / Öffnungszeiten",
-    "fr": "les heures de permanence",
-    "it": "l’orario di ricevimento",
-    "pt": "o horário de atendimento"
+    "es": "la comprobación de recursos",
+    "de": "die Bedürftigkeitsprüfung",
+    "fr": "l'examen des ressources",
+    "it": "la verifica dei redditi",
+    "pt": "a verificação de rendimentos"
    }
   },
   {
@@ -28,6 +28,17 @@
    }
   },
   {
+   "item": "office hours",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el horario de atención",
+    "de": "die Sprechzeiten / Öffnungszeiten",
+    "fr": "les heures de permanence",
+    "it": "l’orario di ricevimento",
+    "pt": "o horário de atendimento"
+   }
+  },
+  {
    "item": "to file an objection",
    "prioridad": "nucleo",
    "traducciones": {
@@ -39,19 +50,52 @@
    }
   },
   {
-   "item": "delay",
+   "item": "to register with the council",
    "prioridad": "nucleo",
    "traducciones": {
-    "es": "la demora",
-    "de": "die Verzögerung",
-    "fr": "le retard",
-    "it": "il ritardo",
-    "pt": "o atraso"
+    "es": "darse de alta en el ayuntamiento",
+    "de": "sich bei der Gemeinde anmelden",
+    "fr": "s'inscrire auprès de la commune",
+    "it": "registrarsi presso il comune",
+    "pt": "registar-se na câmara"
+   }
+  },
+  {
+   "item": "to renew a permit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "renovar un permiso",
+    "de": "eine Genehmigung verlängern",
+    "fr": "renouveler un permis",
+    "it": "rinnovare un permesso",
+    "pt": "renovar uma autorização"
+   }
+  },
+  {
+   "item": "a freedom of information request",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la solicitud de acceso a la información",
+    "de": "der Antrag auf Informationsfreiheit",
+    "fr": "la demande d'accès à l'information",
+    "it": "la richiesta di accesso agli atti",
+    "pt": "o pedido de acesso à informação"
+   }
+  },
+  {
+   "item": "a statutory deadline",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el plazo legal",
+    "de": "die gesetzliche Frist",
+    "fr": "le délai légal",
+    "it": "il termine di legge",
+    "pt": "o prazo legal"
    }
   },
   {
    "item": "administrative fee",
-   "prioridad": "nucleo",
+   "prioridad": "ampliacion",
    "traducciones": {
     "es": "la tasa administrativa",
     "de": "die Verwaltungsgebühr",
@@ -61,8 +105,19 @@
    }
   },
   {
+   "item": "an ombudsman",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el defensor del pueblo",
+    "de": "der Ombudsmann",
+    "fr": "le médiateur",
+    "it": "il difensore civico",
+    "pt": "o provedor de justiça"
+   }
+  },
+  {
    "item": "civil servant",
-   "prioridad": "nucleo",
+   "prioridad": "ampliacion",
    "traducciones": {
     "es": "el funcionario público",
     "de": "der Beamte / die Beamtin",
@@ -72,69 +127,36 @@
    }
   },
   {
-   "item": "burden of proof",
-   "prioridad": "nucleo",
-   "traducciones": {
-    "es": "la obligación de comprobar",
-    "de": "die Beweislast",
-    "fr": "la charge de la preuve",
-    "it": "l’onere della prova",
-    "pt": "o ónus da prova"
-   }
-  },
-  {
-   "item": "bureaucracy",
-   "prioridad": "nucleo",
-   "traducciones": {
-    "es": "la burocracia",
-    "de": "die Bürokratie",
-    "fr": "la bureaucratie",
-    "it": "la burocrazia",
-    "pt": "a burocracia"
-   }
-  },
-  {
-   "item": "official errand",
+   "item": "supporting documents",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "el trámite administrativo",
-    "de": "der Behördengang",
-    "fr": "la démarche administrative",
-    "it": "la pratica amministrativa",
-    "pt": "a diligência administrativa"
+    "es": "la documentación acreditativa",
+    "de": "die Nachweisunterlagen",
+    "fr": "les pièces justificatives",
+    "it": "la documentazione a supporto",
+    "pt": "os documentos comprovativos"
    }
   },
   {
-   "item": "registration",
+   "item": "to appeal a decision",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "el registro",
-    "de": "die Anmeldung / Registrierung",
-    "fr": "l’inscription",
-    "it": "la registrazione",
-    "pt": "o registo"
+    "es": "recurrir una decisión",
+    "de": "gegen eine Entscheidung Einspruch erheben",
+    "fr": "faire appel d'une décision",
+    "it": "impugnare una decisione",
+    "pt": "recorrer de uma decisão"
    }
   },
   {
-   "item": "to have renewed",
+   "item": "to submit the document",
    "prioridad": "ampliacion",
    "traducciones": {
-    "es": "hacer renovar (algo)",
-    "de": "verlängern lassen",
-    "fr": "faire renouveler",
-    "it": "far rinnovare",
-    "pt": "fazer renovar"
-   }
-  },
-  {
-   "item": "public consultation",
-   "prioridad": "ampliacion",
-   "traducciones": {
-    "es": "la consulta pública",
-    "de": "die öffentliche Konsultation",
-    "fr": "la consultation publique",
-    "it": "la consultazione pubblica",
-    "pt": "a consulta pública"
+    "es": "presentar el documento",
+    "de": "die Vorlage einreichen",
+    "fr": "soumettre le document",
+    "it": "presentare il documento",
+    "pt": "apresentar o documento"
    }
   }
  ]

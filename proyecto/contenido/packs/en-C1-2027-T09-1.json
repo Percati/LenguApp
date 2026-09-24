@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T09", "n": 1, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T09",
+ "n": 1,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "continuing education", "prioridad": "nucleo", "traducciones": {"es": "la formación continua","de": "die Weiterbildung","fr": "la formation continue","it": "la formazione continua","pt": "a formação continuada"}},
-  {"item": "training course", "prioridad": "nucleo", "traducciones": {"es": "el curso de capacitación","de": "der Weiterbildungskurs","fr": "le cours de formation","it": "il corso di formazione","pt": "o curso de formação"}},
-  {"item": "career path", "prioridad": "nucleo", "traducciones": {"es": "la trayectoria profesional","de": "der Karriereweg","fr": "le parcours professionnel","it": "il percorso professionale","pt": "o percurso profissional"}},
-  {"item": "lifelong learning", "prioridad": "nucleo", "traducciones": {"es": "el aprendizaje permanente","de": "lebenslanges Lernen","fr": "l’apprentissage tout au long de la vie","it": "l’apprendimento permanente","pt": "a aprendizagem ao longo da vida"}},
-  {"item": "exam anxiety", "prioridad": "ampliacion", "traducciones": {"es": "el miedo a los exámenes","de": "die Prüfungsangst","fr": "le trac des examens","it": "l'ansia da esame","pt": "o medo de exames"}},
-  {"item": "to fail an exam", "prioridad": "ampliacion", "traducciones": {"es": "suspender un examen","de": "durch eine Prüfung fallen","fr": "échouer à un examen","it": "essere bocciato/a a un esame","pt": "reprovar num exame"}},
-  {"item": "specialist knowledge", "prioridad": "ampliacion", "traducciones": {"es": "el conocimiento especializado","de": "das Fachwissen","fr": "les connaissances spécialisées","it": "le conoscenze specialistiche","pt": "os conhecimentos especializados"}},
-  {"item": "to delve into", "prioridad": "ampliacion", "traducciones": {"es": "profundizar en","de": "sich vertiefen in","fr": "approfondir","it": "approfondire","pt": "aprofundar-se em"}},
-  {"item": "permeability (between tracks)", "prioridad": "ampliacion", "traducciones": {"es": "la permeabilidad (entre niveles)","de": "die Durchlässigkeit (zwischen Bildungswegen)","fr": "la perméabilité (entre filières)","it": "la permeabilità (tra percorsi)","pt": "a permeabilidade (entre vias)"}},
-  {"item": "grade average", "prioridad": "ampliacion", "traducciones": {"es": "el promedio de notas","de": "der Notendurchschnitt","fr": "la moyenne des notes","it": "la media dei voti","pt": "a média das notas"}},
-  {"item": "ability to grasp things", "prioridad": "ampliacion", "traducciones": {"es": "la capacidad de comprensión","de": "die Auffassungsgabe","fr": "la capacité de compréhension","it": "la capacità di comprensione","pt": "a capacidade de compreensão"}},
-  {"item": "to keep up to date", "prioridad": "ampliacion", "traducciones": {"es": "mantenerse al día","de": "auf dem Laufenden bleiben","fr": "rester à jour","it": "restare aggiornato","pt": "manter-se atualizado"}}
+  {
+   "item": "an apprenticeship",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el contrato de aprendizaje",
+    "de": "die Lehre",
+    "fr": "l'apprentissage",
+    "it": "l'apprendistato",
+    "pt": "o contrato de aprendizagem"
+   }
+  },
+  {
+   "item": "career path",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la trayectoria profesional",
+    "de": "der Karriereweg",
+    "fr": "le parcours professionnel",
+    "it": "il percorso professionale",
+    "pt": "o percurso profissional"
+   }
+  },
+  {
+   "item": "continuing education",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la formación continua",
+    "de": "die Weiterbildung",
+    "fr": "la formation continue",
+    "it": "la formazione continua",
+    "pt": "a formação continuada"
+   }
+  },
+  {
+   "item": "exam anxiety",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el miedo a los exámenes",
+    "de": "die Prüfungsangst",
+    "fr": "le trac des examens",
+    "it": "l'ansia da esame",
+    "pt": "o medo de exames"
+   }
+  },
+  {
+   "item": "on-the-job training",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la formación en el puesto",
+    "de": "die Einarbeitung am Arbeitsplatz",
+    "fr": "la formation en poste",
+    "it": "la formazione sul lavoro",
+    "pt": "a formação em contexto de trabalho"
+   }
+  },
+  {
+   "item": "to keep up to date",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mantenerse al día",
+    "de": "auf dem Laufenden bleiben",
+    "fr": "rester à jour",
+    "it": "restare aggiornato",
+    "pt": "manter-se atualizado"
+   }
+  },
+  {
+   "item": "to sit an exam",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "presentarse a un examen",
+    "de": "eine Prüfung ablegen",
+    "fr": "passer un examen",
+    "it": "sostenere un esame",
+    "pt": "prestar um exame"
+   }
+  },
+  {
+   "item": "a mature student",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el estudiante adulto",
+    "de": "der Studierende über dem üblichen Alter",
+    "fr": "l'étudiant adulte",
+    "it": "lo studente adulto",
+    "pt": "o estudante adulto"
+   }
+  },
+  {
+   "item": "a transferable skill",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la competencia transferible",
+    "de": "die übertragbare Kompetenz",
+    "fr": "la compétence transférable",
+    "it": "la competenza trasferibile",
+    "pt": "a competência transferível"
+   }
+  },
+  {
+   "item": "an entry requirement",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el requisito de acceso",
+    "de": "die Zulassungsvoraussetzung",
+    "fr": "la condition d'admission",
+    "it": "il requisito di accesso",
+    "pt": "o requisito de acesso"
+   }
+  },
+  {
+   "item": "coursework",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "los trabajos de curso",
+    "de": "die Kursarbeiten",
+    "fr": "les travaux notés",
+    "it": "i lavori del corso",
+    "pt": "os trabalhos do curso"
+   }
+  },
+  {
+   "item": "scholarship",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la beca",
+    "de": "das Stipendium",
+    "fr": "la bourse d’études",
+    "it": "la borsa di studio",
+    "pt": "a bolsa de estudo"
+   }
+  },
+  {
+   "item": "study group",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el grupo de estudio",
+    "de": "die Lerngruppe",
+    "fr": "le groupe d’étude",
+    "it": "il gruppo di studio",
+    "pt": "o grupo de estudo"
+   }
+  },
+  {
+   "item": "to cram for an exam",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "empollar para un examen",
+    "de": "für eine Prüfung pauken",
+    "fr": "bachoter",
+    "it": "studiare all'ultimo momento",
+    "pt": "marrar para um exame"
+   }
+  }
  ]
 }

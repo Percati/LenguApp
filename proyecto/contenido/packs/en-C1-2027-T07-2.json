@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T07", "n": 2, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T07",
+ "n": 2,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "housing search", "prioridad": "nucleo", "traducciones": {"es": "la búsqueda de vivienda","de": "die Wohnungssuche","fr": "la recherche de logement","it": "la ricerca di casa","pt": "a procura de habitação"}},
-  {"item": "housing shortage", "prioridad": "nucleo", "traducciones": {"es": "la escasez de vivienda","de": "die Wohnungsnot","fr": "la pénurie de logements","it": "la carenza di alloggi","pt": "a escassez de habitação"}},
-  {"item": "gentrification", "prioridad": "nucleo", "traducciones": {"es": "la gentrificación","de": "Gentrifizierung","fr": "la gentrification","it": "la gentrificazione","pt": "a gentrificação"}},
-  {"item": "neighbourhood", "prioridad": "nucleo", "traducciones": {"es": "el barrio","de": "das Viertel / die Nachbarschaft","fr": "le quartier","it": "il quartiere","pt": "o bairro"}},
-  {"item": "utility costs", "prioridad": "ampliacion", "traducciones": {"es": "los gastos comunes","de": "die Nebenkosten","fr": "les charges","it": "le spese condominiali","pt": "as despesas de condomínio"}},
-  {"item": "to move house", "prioridad": "ampliacion", "traducciones": {"es": "mudarse","de": "umziehen","fr": "déménager","it": "traslocare","pt": "mudar-se"}},
-  {"item": "the deposit", "prioridad": "ampliacion", "traducciones": {"es": "el depósito de garantía","de": "die Kaution","fr": "la caution / le dépôt de garantie","it": "la cauzione","pt": "a caução"}},
-  {"item": "housing cooperative", "prioridad": "ampliacion", "traducciones": {"es": "la cooperativa de vivienda","de": "die Wohnbaugenossenschaft","fr": "la coopérative d’habitation","it": "la cooperativa edilizia","pt": "a cooperativa habitacional"}},
-  {"item": "condominium", "prioridad": "ampliacion", "traducciones": {"es": "el piso en propiedad","de": "die Eigentumswohnung","fr": "l'appartement en copropriété","it": "l'appartamento di proprietà","pt": "o apartamento próprio"}},
-  {"item": "poorly soundproofed", "prioridad": "ampliacion", "traducciones": {"es": "con paredes finas","de": "hellhörig","fr": "mal insonorisé","it": "poco insonorizzato","pt": "mal isolado acusticamente"}},
-  {"item": "to maintain (a building)", "prioridad": "ampliacion", "traducciones": {"es": "mantener en buen estado","de": "instand halten (ein Gebäude)","fr": "entretenir (un bâtiment)","it": "mantenere (un edificio)","pt": "manter (um edifício)"}},
-  {"item": "transport links", "prioridad": "ampliacion", "traducciones": {"es": "la conexión de transporte","de": "die Anbindung","fr": "la desserte","it": "il collegamento","pt": "a conexão de transporte"}}
+  {
+   "item": "a letting agent",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el agente de alquileres",
+    "de": "der Vermietungsmakler",
+    "fr": "l'agent immobilier de location",
+    "it": "l'agente immobiliare per affitti",
+    "pt": "o agente de arrendamento"
+   }
+  },
+  {
+   "item": "a rental deposit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la fianza del alquiler",
+    "de": "die Mietkaution",
+    "fr": "le dépôt de garantie",
+    "it": "la caparra",
+    "pt": "o depósito de caução"
+   }
+  },
+  {
+   "item": "a tenancy agreement",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el contrato de arrendamiento",
+    "de": "der Mietvertrag",
+    "fr": "le bail",
+    "it": "il contratto di locazione",
+    "pt": "o contrato de arrendamento"
+   }
+  },
+  {
+   "item": "to move house",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mudarse",
+    "de": "umziehen",
+    "fr": "déménager",
+    "it": "traslocare",
+    "pt": "mudar-se"
+   }
+  },
+  {
+   "item": "transport links",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la conexión de transporte",
+    "de": "die Anbindung",
+    "fr": "la desserte",
+    "it": "il collegamento",
+    "pt": "a conexão de transporte"
+   }
+  },
+  {
+   "item": "utility costs",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gastos comunes",
+    "de": "die Nebenkosten",
+    "fr": "les charges",
+    "it": "le spese condominiali",
+    "pt": "as despesas de condomínio"
+   }
+  },
+  {
+   "item": "a rent review",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la revisión del alquiler",
+    "de": "die Mietanpassung",
+    "fr": "la révision du loyer",
+    "it": "la revisione del canone",
+    "pt": "a revisão da renda"
+   }
+  },
+  {
+   "item": "an inventory report",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el inventario del estado del piso",
+    "de": "das Übergabeprotokoll",
+    "fr": "l'état des lieux",
+    "it": "il verbale di consegna",
+    "pt": "o auto de entrega"
+   }
+  },
+  {
+   "item": "damp and mould",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la humedad y el moho",
+    "de": "Feuchtigkeit und Schimmel",
+    "fr": "l'humidité et les moisissures",
+    "it": "umidità e muffa",
+    "pt": "a humidade e o bolor"
+   }
+  },
+  {
+   "item": "in need of renovation",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "necesitado de renovación",
+    "de": "renovierungsbedürftig",
+    "fr": "à rénover",
+    "it": "da ristrutturare",
+    "pt": "a precisar de renovação"
+   }
+  },
+  {
+   "item": "living space",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la superficie habitable",
+    "de": "der Wohnraum",
+    "fr": "l’espace habitable",
+    "it": "lo spazio abitativo",
+    "pt": "o espaço habitável"
+   }
+  },
+  {
+   "item": "the landlord",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el arrendador",
+    "de": "der Vermieter",
+    "fr": "le propriétaire",
+    "it": "il locatore",
+    "pt": "o locador"
+   }
+  },
+  {
+   "item": "to give notice",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "avisar de que te vas",
+    "de": "kündigen",
+    "fr": "donner son préavis",
+    "it": "dare disdetta",
+    "pt": "dar aviso prévio"
+   }
+  },
+  {
+   "item": "wear and tear",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el desgaste por uso",
+    "de": "die normale Abnutzung",
+    "fr": "l'usure normale",
+    "it": "l'usura normale",
+    "pt": "o desgaste normal"
+   }
+  }
  ]
 }

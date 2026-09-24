@@ -1,17 +1,163 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T02", "n": 3, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T02",
+ "n": 3,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "bank transfer", "prioridad": "nucleo", "traducciones": {"es": "la transferencia bancaria","de": "die Banküberweisung","fr": "le virement bancaire","it": "il bonifico bancario","pt": "a transferência bancária"}},
-  {"item": "interest rate", "prioridad": "nucleo", "traducciones": {"es": "la tasa de interés","de": "der Zinssatz","fr": "le taux d’intérêt","it": "il tasso d’interesse","pt": "a taxa de juro"}},
-  {"item": "standing order", "prioridad": "nucleo", "traducciones": {"es": "la domiciliación bancaria","de": "der Dauerauftrag","fr": "le virement permanent","it": "l’ordine permanente","pt": "a ordem permanente"}},
-  {"item": "fees", "prioridad": "nucleo", "traducciones": {"es": "las comisiones","de": "die Gebühren","fr": "les frais / commissions","it": "le commissioni","pt": "as comissões"}},
-  {"item": "to go into debt", "prioridad": "ampliacion", "traducciones": {"es": "endeudarse","de": "sich verschulden","fr": "s’endetter","it": "indebitarsi","pt": "endividar-se"}},
-  {"item": "pension institution", "prioridad": "ampliacion", "traducciones": {"es": "la institución de previsión","de": "die Vorsorgeeinrichtung","fr": "l’institution de prévoyance","it": "l’istituto previdenziale","pt": "a instituição de previdência"}},
-  {"item": "the pillar (of a pension system)", "prioridad": "ampliacion", "traducciones": {"es": "el pilar (del sistema de pensiones)","de": "die Säule (eines Rentensystems)","fr": "le pilier (d’un système de retraite)","it": "il pilastro (di un sistema pensionistico)","pt": "o pilar (de um sistema de pensões)"}},
-  {"item": "tax return", "prioridad": "ampliacion", "traducciones": {"es": "la declaración de impuestos","de": "die Steuererklärung","fr": "la déclaration fiscale","it": "la dichiarazione dei redditi","pt": "a declaração de impostos"}},
-  {"item": "inflation", "prioridad": "ampliacion", "traducciones": {"es": "la inflación","de": "die Inflation","fr": "l'inflation","it": "l'inflazione","pt": "a inflação"}},
-  {"item": "creditworthiness", "prioridad": "ampliacion", "traducciones": {"es": "la solvencia crediticia","de": "die Bonität","fr": "la solvabilité","it": "l’affidabilità creditizia","pt": "a solvabilidade"}},
-  {"item": "to have expenses under control", "prioridad": "ampliacion", "traducciones": {"es": "tener los gastos bajo control","de": "die Ausgaben im Griff haben","fr": "maîtriser ses dépenses","it": "tenere sotto controllo le spese","pt": "ter os gastos sob controle"}},
-  {"item": "purchasing power", "prioridad": "ampliacion", "traducciones": {"es": "el poder adquisitivo","de": "die Kaufkraft","fr": "le pouvoir d'achat","it": "il potere d'acquisto","pt": "o poder de compra"}}
+  {
+   "item": "a workplace pension",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el plan de pensiones de empresa",
+    "de": "die betriebliche Altersversorgung",
+    "fr": "la retraite d'entreprise",
+    "it": "la pensione aziendale",
+    "pt": "o plano de pensões da empresa"
+   }
+  },
+  {
+   "item": "the state pension",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la pensión pública",
+    "de": "die gesetzliche Rente",
+    "fr": "la retraite de base",
+    "it": "la pensione pubblica",
+    "pt": "a pensão do Estado"
+   }
+  },
+  {
+   "item": "to pay into a pension",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "aportar a un plan de pensiones",
+    "de": "in die Rentenkasse einzahlen",
+    "fr": "cotiser pour la retraite",
+    "it": "versare contributi pensionistici",
+    "pt": "contribuir para a pensão"
+   }
+  },
+  {
+   "item": "a shortfall",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el déficit",
+    "de": "die Deckungslücke",
+    "fr": "le déficit",
+    "it": "il disavanzo",
+    "pt": "o défice"
+   }
+  },
+  {
+   "item": "bank transfer",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la transferencia bancaria",
+    "de": "die Banküberweisung",
+    "fr": "le virement bancaire",
+    "it": "il bonifico bancario",
+    "pt": "a transferência bancária"
+   }
+  },
+  {
+   "item": "creditworthiness",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la solvencia crediticia",
+    "de": "die Bonität",
+    "fr": "la solvabilité",
+    "it": "l’affidabilità creditizia",
+    "pt": "a solvabilidade"
+   }
+  },
+  {
+   "item": "employer contributions",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las aportaciones del empleador",
+    "de": "die Arbeitgeberbeiträge",
+    "fr": "les cotisations patronales",
+    "it": "i contributi del datore di lavoro",
+    "pt": "as contribuições da entidade patronal"
+   }
+  },
+  {
+   "item": "fees",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las comisiones",
+    "de": "die Gebühren",
+    "fr": "les frais / commissions",
+    "it": "le commissioni",
+    "pt": "as comissões"
+   }
+  },
+  {
+   "item": "interest rate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la tasa de interés",
+    "de": "der Zinssatz",
+    "fr": "le taux d’intérêt",
+    "it": "il tasso d’interesse",
+    "pt": "a taxa de juro"
+   }
+  },
+  {
+   "item": "standing order",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la domiciliación bancaria",
+    "de": "der Dauerauftrag",
+    "fr": "le virement permanent",
+    "it": "l’ordine permanente",
+    "pt": "a ordem permanente"
+   }
+  },
+  {
+   "item": "to draw your pension",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "empezar a cobrar la pensión",
+    "de": "die Rente beziehen",
+    "fr": "percevoir sa retraite",
+    "it": "riscuotere la pensione",
+    "pt": "começar a receber a pensão"
+   }
+  },
+  {
+   "item": "to make ends meet",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "llegar a fin de mes",
+    "de": "über die Runden kommen",
+    "fr": "joindre les deux bouts",
+    "it": "arrivare a fine mese",
+    "pt": "chegar ao fim do mês"
+   }
+  },
+  {
+   "item": "to opt out of a scheme",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "darse de baja de un plan",
+    "de": "aus einem Vorsorgeplan austreten",
+    "fr": "se retirer d'un dispositif",
+    "it": "uscire da un piano",
+    "pt": "sair de um plano"
+   }
+  },
+  {
+   "item": "to retire early",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "jubilarse anticipadamente",
+    "de": "früher in Rente gehen",
+    "fr": "partir en retraite anticipée",
+    "it": "andare in pensione anticipata",
+    "pt": "reformar-se antecipadamente"
+   }
+  }
  ]
 }
