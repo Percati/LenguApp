@@ -114,9 +114,31 @@ que conviene tener presentes:
   (*gestanden*, *hergerissen*) y palabras muy básicas. Cuando se reconstruya con
   la lista blanca presente, el recuento B2 va a bajar y quedar más limpio.
 
-Falta **C2**, y ahí no hay salida conocida: ningún instituto publica lista por
-encima de B2 y tampoco hay manual C2 con Lernwortschatz conseguido. Los packs
-de alemán C2 quedan sin verificación externa.
+Falta **C2**. En sept-2026 se probó con *Deutsch üben: Wortschatz & Grammatik C2*
+(Hueber) y **no sirve como fuente de lemas**: es un cuaderno de ejercicios en prosa,
+no un Lernwortschatz. Medido sobre el PDF completo (129 páginas, con capa de texto,
+sin OCR necesario):
+
+- 2215 lemas extraídos, de los cuales 1162 serían nuevos, pero dominados por ruido:
+  formas flexionadas (*örtlichen*, *heutigen*, *lernten*), fragmentos de palabras
+  cortadas por guion (*nitionen* por Definitionen, *schenleben* por Menschenleben) y
+  metalenguaje del propio libro (*Satzteile*, *Berufsbezeichnungen*, *pejorativ*).
+- Sobre los 48 packs de alemán C2 solo cubriría **3 ítems** (*kleinlich*,
+  *Meisterschaft*, *Zugehörigkeit*). El aporte real es nulo frente al daño de marcar
+  1162 lemas como C2 cuando muchos son A1-B1 (*Sonne*, *Wahl*, *ruhig*).
+
+Por eso **no se cargó**: `vocab_de.json` sigue sin nivel C2 y los packs de alemán C2
+quedan sin verificación externa.
+
+Qué serviría, en orden de preferencia: (1) el **glosario o Lernwortschatz de un manual
+C2** con listas por capítulo (Erkundungen C2 tiene Rückblick; Mittelpunkt neu C2 y
+Sicher! C2 tienen listas de vocabulario); (2) el **diccionario de frecuencia**
+(`fuentes/A_Frequency_Dictionary_of_German.pdf`), que como lista blanca filtraría el
+ruido y volvería aprovechable incluso una fuente en prosa como la ya probada.
+
+*Cosmos C2 – Redemittel* (escaneado, 17 páginas) tampoco es fuente de lemas: son
+fórmulas de discurso, el mismo caso que los Redemittel de B2 y C1. Queda como
+material para el tipo de contenido de Redemittel, todavía sin definir.
 
 ## 8. Sin dueño todavía
 
