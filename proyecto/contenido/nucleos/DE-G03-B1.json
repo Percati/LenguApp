@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Präpositionen: Dativ, Akkusativ, Wechselpräpositionen",
+ "titulo": {
+  "de": "Präpositionen: Dativ, Akkusativ, Wechselpräpositionen",
+  "en": "Prepositions: dative, accusative, two-way prepositions",
+  "es": "Preposiciones: dativo, acusativo y preposiciones de doble caso",
+  "fr": "Prépositions : datif, accusatif et prépositions mixtes",
+  "it": "Preposizioni: dativo, accusativo e preposizioni a doppio caso",
+  "pt": "Preposições: dativo, acusativo e preposições de dois casos"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Die neun Wechselpräpositionen (in, an, auf, über, unter, vor, hinter, neben, zwischen) verlangen Akkusativ bei Bewegung und Dativ bei Ort. Diese eine Regel entscheidet auf B1 über den Kasus und ist die Grundlage für viele spätere Strukturen.",
+ "descripcion": {
+  "de": "Die neun Wechselpräpositionen (in, an, auf, über, unter, vor, hinter, neben, zwischen) verlangen Akkusativ bei Bewegung und Dativ bei Ort. Diese eine Regel entscheidet auf B1 über den Kasus und ist die Grundlage für viele spätere Strukturen.",
+  "en": "The nine two-way prepositions (in, an, auf, über, unter, vor, hinter, neben, zwischen) take the accusative for movement and the dative for location. At B1, this single rule determines the case and forms the basis for many later structures.",
+  "es": "Las nueve preposiciones de doble caso («in, an, auf, über, unter, vor, hinter, neben, zwischen») rigen acusativo con movimiento y dativo con ubicación. En B1, esta única regla determina el caso y sirve de base para muchas estructuras posteriores.",
+  "fr": "Les neuf prépositions mixtes (« in, an, auf, über, unter, vor, hinter, neben, zwischen ») régissent l’accusatif pour un déplacement et le datif pour une localisation. Au niveau B1, cette règle unique détermine le cas et sert de base à de nombreuses structures ultérieures.",
+  "it": "Le nove preposizioni a doppio caso («in, an, auf, über, unter, vor, hinter, neben, zwischen») reggono l’accusativo con movimento e il dativo con posizione. Al B1 questa singola regola determina il caso ed è la base di molte strutture successive.",
+  "pt": "As nove preposições de caso duplo («in, an, auf, über, unter, vor, hinter, neben, zwischen») exigem acusativo quando há movimento e dativo quando indicam localização. No nível B1, essa única regra determina o caso e serve de base para muitas estruturas posteriores."
+ },
  "cuadroReferencia": {
-  "titulo": "Wohin? gegen Wo?",
+  "titulo": {
+   "de": "Wohin? gegen Wo?",
+   "en": "Wohin? versus Wo?",
+   "es": "«Wohin?» frente a «Wo?»",
+   "fr": "« Wohin ? » ou « Wo ? »",
+   "it": "«Wohin?» rispetto a «Wo?»",
+   "pt": "«Wohin?» versus «Wo?»"
+  },
   "columnas": [
-   "Frage",
-   "Kasus",
-   "Beispiel"
+   {
+    "de": "Frage",
+    "en": "Question",
+    "es": "Pregunta",
+    "fr": "Question",
+    "it": "Domanda",
+    "pt": "Pergunta"
+   },
+   {
+    "de": "Kasus",
+    "en": "Case",
+    "es": "Caso",
+    "fr": "Cas",
+    "it": "Caso",
+    "pt": "Caso"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Wohin? (Bewegung)",
-    "Akkusativ",
-    "Ich gehe in die Küche."
+    {
+     "de": "Wohin? (Bewegung)",
+     "en": "Wohin? (movement)",
+     "es": "«Wohin?» (movimiento)",
+     "fr": "« Wohin ? » (déplacement)",
+     "it": "«Wohin?» (movimento)",
+     "pt": "«Wohin?» (movimento)"
+    },
+    {
+     "de": "Akkusativ",
+     "en": "Accusative",
+     "es": "Acusativo",
+     "fr": "Accusatif",
+     "it": "Accusativo",
+     "pt": "Acusativo"
+    },
+    {
+     "de": "Ich gehe in die Küche.",
+     "en": "I’m going into the kitchen.",
+     "es": "Voy a la cocina.",
+     "fr": "Je vais dans la cuisine.",
+     "it": "Vado in cucina.",
+     "pt": "Vou para a cozinha."
+    }
    ],
    [
-    "Wo? (Ort)",
-    "Dativ",
-    "Ich bin in der Küche."
+    {
+     "de": "Wo? (Ort)",
+     "en": "Wo? (location)",
+     "es": "«Wo?» (ubicación)",
+     "fr": "« Wo ? » (localisation)",
+     "it": "«Wo?» (posizione)",
+     "pt": "«Wo?» (localização)"
+    },
+    {
+     "de": "Dativ",
+     "en": "Dative",
+     "es": "Dativo",
+     "fr": "Datif",
+     "it": "Dativo",
+     "pt": "Dativo"
+    },
+    {
+     "de": "Ich bin in der Küche.",
+     "en": "I’m in the kitchen.",
+     "es": "Estoy en la cocina.",
+     "fr": "Je suis dans la cuisine.",
+     "it": "Sono in cucina.",
+     "pt": "Estou na cozinha."
+    }
    ],
    [
-    "feste Präposition",
-    "immer Dativ oder Akkusativ",
-    "mit dem Auto (immer Dativ)"
+    {
+     "de": "feste Präposition",
+     "en": "fixed preposition",
+     "es": "preposición fija",
+     "fr": "préposition à cas fixe",
+     "it": "preposizione a caso fisso",
+     "pt": "preposição de caso fixo"
+    },
+    {
+     "de": "immer Dativ oder Akkusativ",
+     "en": "always dative or accusative",
+     "es": "siempre dativo o acusativo",
+     "fr": "toujours datif ou accusatif",
+     "it": "sempre dativo o accusativo",
+     "pt": "sempre dativo ou acusativo"
+    },
+    {
+     "de": "mit dem Auto (immer Dativ)",
+     "en": "mit dem Auto (always dative)",
+     "es": "«mit dem Auto» (siempre dativo)",
+     "fr": "« mit dem Auto » (toujours au datif)",
+     "it": "«mit dem Auto» (sempre dativo)",
+     "pt": "«mit dem Auto» (sempre no dativo)"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich gehe jetzt in die Küche.",
+   "texto": {
+    "de": "Ich gehe jetzt in die Küche.",
+    "en": "I’m going into the kitchen now.",
+    "es": "Ahora voy a la cocina.",
+    "fr": "Je vais maintenant dans la cuisine.",
+    "it": "Adesso vado in cucina.",
+    "pt": "Agora vou para a cozinha."
+   },
    "audio": true
   },
   {
-   "texto": "Ich bin schon seit einer Stunde in der Küche.",
+   "texto": {
+    "de": "Ich bin schon seit einer Stunde in der Küche.",
+    "en": "I’ve already been in the kitchen for an hour.",
+    "es": "Ya llevo una hora en la cocina.",
+    "fr": "Je suis déjà dans la cuisine depuis une heure.",
+    "it": "Sono già in cucina da un’ora.",
+    "pt": "Já estou na cozinha há uma hora."
+   },
    "audio": true
   },
   {
-   "texto": "Das Buch liegt auf dem Tisch."
+   "texto": {
+    "de": "Das Buch liegt auf dem Tisch.",
+    "en": "The book is lying on the table.",
+    "es": "El libro está sobre la mesa.",
+    "fr": "Le livre est sur la table.",
+    "it": "Il libro è sul tavolo.",
+    "pt": "O livro está sobre a mesa."
+   }
   }
  ],
  "notas": [
-  "Die Frage wohin? verlangt Akkusativ, die Frage wo? verlangt Dativ — diese Eselsbrücke funktioniert bei allen neun Wechselpräpositionen.",
-  "Mit, nach, bei, von, zu, aus verlangen immer Dativ, unabhängig von Bewegung oder Ort.",
-  "Für, durch, ohne, um, gegen verlangen immer Akkusativ."
+  {
+   "de": "Die Frage wohin? verlangt Akkusativ, die Frage wo? verlangt Dativ — diese Eselsbrücke funktioniert bei allen neun Wechselpräpositionen.",
+   "en": "The question wohin? requires the accusative, while wo? requires the dative — this mnemonic works with all nine two-way prepositions.",
+   "es": "La pregunta «wohin?» exige acusativo y «wo?» exige dativo; esta regla mnemotécnica funciona con las nueve preposiciones de doble caso.",
+   "fr": "La question « wohin ? » exige l’accusatif, tandis que « wo ? » exige le datif ; ce moyen mnémotechnique fonctionne avec les neuf prépositions mixtes.",
+   "it": "La domanda «wohin?» richiede l’accusativo, mentre «wo?» richiede il dativo: questo trucco mnemonico funziona con tutte e nove le preposizioni a doppio caso.",
+   "pt": "A pergunta «wohin?» exige o acusativo, enquanto «wo?» exige o dativo — esse recurso mnemônico funciona com todas as nove preposições de caso duplo."
+  },
+  {
+   "de": "Mit, nach, bei, von, zu, aus verlangen immer Dativ, unabhängig von Bewegung oder Ort.",
+   "en": "Mit, nach, bei, von, zu and aus always take the dative, regardless of movement or location.",
+   "es": "«Mit, nach, bei, von, zu, aus» siempre rigen dativo, independientemente de si hay movimiento o ubicación.",
+   "fr": "« Mit, nach, bei, von, zu, aus » régissent toujours le datif, qu’il s’agisse d’un déplacement ou d’une localisation.",
+   "it": "«Mit, nach, bei, von, zu, aus» reggono sempre il dativo, indipendentemente dal movimento o dalla posizione.",
+   "pt": "«Mit, nach, bei, von, zu, aus» exigem sempre o dativo, independentemente de movimento ou localização."
+  },
+  {
+   "de": "Für, durch, ohne, um, gegen verlangen immer Akkusativ.",
+   "en": "Für, durch, ohne, um and gegen always take the accusative.",
+   "es": "«Für, durch, ohne, um, gegen» siempre rigen acusativo.",
+   "fr": "« Für, durch, ohne, um, gegen » régissent toujours l’accusatif.",
+   "it": "«Für, durch, ohne, um, gegen» reggono sempre l’accusativo.",
+   "pt": "«Für, durch, ohne, um, gegen» exigem sempre o acusativo."
+  }
  ],
  "contraste": {
   "es": "Das Spanische unterscheidet nicht zwischen Bewegung und Ort mit unterschiedlichem Kasus: en la cocina bedeutet sowohl in der Küche als auch in die Küche. Diese fehlende Unterscheidung ist der Hauptgrund, warum Spanischsprachige den Wechsel zwischen Akkusativ und Dativ hier besonders schwierig finden.",
@@ -58,14 +205,42 @@
   "en": "Das Englische hat mit in/into und on/onto eine Brücke: Wo into oder onto passt, steht im Deutschen der Akkusativ (in die Küche, auf den Tisch). Neu ist, dass dieselbe Präposition beides kann und nur der Kasus den Unterschied zeigt."
  },
  "errores": [
-  "Bei Bewegung den Dativ statt des Akkusativs verwenden: ich gehe in der Küche.",
-  "Bei einem festen Ort den Akkusativ statt des Dativs verwenden.",
-  "Die festen Präpositionen (mit, für, ohne) mit dem falschen Kasus kombinieren."
+  {
+   "de": "Bei Bewegung den Dativ statt des Akkusativs verwenden: ich gehe in der Küche.",
+   "en": "Using the dative instead of the accusative for movement: ich gehe in der Küche.",
+   "es": "Usar dativo en lugar de acusativo con movimiento: «ich gehe in der Küche».",
+   "fr": "Employer le datif au lieu de l’accusatif pour un déplacement : « ich gehe in der Küche ».",
+   "it": "Usare il dativo invece dell’accusativo con movimento: «ich gehe in der Küche».",
+   "pt": "Usar o dativo em vez do acusativo quando há movimento: «ich gehe in der Küche»."
+  },
+  {
+   "de": "Bei einem festen Ort den Akkusativ statt des Dativs verwenden.",
+   "en": "Using the accusative instead of the dative for a fixed location.",
+   "es": "Usar acusativo en lugar de dativo para un lugar fijo.",
+   "fr": "Employer l'accusatif au lieu du datif pour un lieu fixe.",
+   "it": "Usare l'accusativo invece del dativo per un luogo fisso.",
+   "pt": "Usar o acusativo em vez do dativo para um local fixo."
+  },
+  {
+   "de": "Die festen Präpositionen (mit, für, ohne) mit dem falschen Kasus kombinieren.",
+   "en": "Combining fixed-case prepositions (mit, für, ohne) with the wrong case.",
+   "es": "Combinar preposiciones de caso fijo («mit, für, ohne») con el caso incorrecto.",
+   "fr": "Associer les prépositions à cas fixe (« mit, für, ohne ») au mauvais cas.",
+   "it": "Abbinare le preposizioni a caso fisso («mit, für, ohne») al caso sbagliato.",
+   "pt": "Combinar preposições de caso fixo («mit, für, ohne») com o caso errado."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich gehe in die…",
-   "funcion": "Bewegung, Akkusativ",
+   "funcion": {
+    "de": "Bewegung, Akkusativ",
+    "en": "movement, accusative",
+    "es": "movimiento, acusativo",
+    "fr": "mouvement, accusatif",
+    "it": "movimento, accusativo",
+    "pt": "movimento, acusativo"
+   },
    "traducciones": {
     "es": "Voy a la…",
     "en": "I'm going into the…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "Ich bin in der…",
-   "funcion": "Ort, Dativ",
+   "funcion": {
+    "de": "Ort, Dativ",
+    "en": "location, dative",
+    "es": "lugar, dativo",
+    "fr": "lieu, datif",
+    "it": "luogo, dativo",
+    "pt": "local, dativo"
+   },
    "traducciones": {
     "es": "Estoy en la…",
     "en": "I'm in the…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "…auf dem Tisch",
-   "funcion": "Ort, Dativ",
+   "funcion": {
+    "de": "Ort, Dativ",
+    "en": "location, dative",
+    "es": "lugar, dativo",
+    "fr": "lieu, datif",
+    "it": "luogo, dativo",
+    "pt": "local, dativo"
+   },
    "traducciones": {
     "es": "…sobre la mesa",
     "en": "…on the table",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "…auf den Tisch",
-   "funcion": "Bewegung, Akkusativ",
+   "funcion": {
+    "de": "Bewegung, Akkusativ",
+    "en": "movement, accusative",
+    "es": "movimiento, acusativo",
+    "fr": "mouvement, accusatif",
+    "it": "movimento, accusativo",
+    "pt": "movimento, acusativo"
+   },
    "traducciones": {
     "es": "…sobre la mesa (movimiento)",
     "en": "…onto the table",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "mit dem…",
-   "funcion": "immer Dativ",
+   "funcion": {
+    "de": "immer Dativ",
+    "en": "always dative",
+    "es": "siempre dativo",
+    "fr": "toujours datif",
+    "it": "sempre dativo",
+    "pt": "sempre dativo"
+   },
    "traducciones": {
     "es": "con el…",
     "en": "with the…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "für den…",
-   "funcion": "immer Akkusativ",
+   "funcion": {
+    "de": "immer Akkusativ",
+    "en": "always accusative",
+    "es": "siempre acusativo",
+    "fr": "toujours accusatif",
+    "it": "sempre accusativo",
+    "pt": "sempre acusativo"
+   },
    "traducciones": {
     "es": "para el…",
     "en": "for the…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich bei wohin? den Akkusativ verwendet?",
-  "Habe ich bei wo? den Dativ verwendet?",
-  "Stimmt der Kasus bei den festen Präpositionen (mit, für)?",
-  "Habe ich mindestens drei verschiedene Wechselpräpositionen benutzt?",
-  "Kann ich für jeden Satz sagen, ob wohin oder wo gefragt wird?"
+  {
+   "de": "Habe ich bei wohin? den Akkusativ verwendet?",
+   "en": "Have I used the accusative with wohin?",
+   "es": "¿Usé acusativo con «wohin?»?",
+   "fr": "Ai-je utilisé l'accusatif avec « wohin ? » ?",
+   "it": "Ho usato l'accusativo con «wohin?»?",
+   "pt": "Usei o acusativo com «wohin?»?"
+  },
+  {
+   "de": "Habe ich bei wo? den Dativ verwendet?",
+   "en": "Have I used the dative with wo?",
+   "es": "¿Usé dativo con «wo?»?",
+   "fr": "Ai-je utilisé le datif avec « wo ? » ?",
+   "it": "Ho usato il dativo con «wo?»?",
+   "pt": "Usei o dativo com «wo?»?"
+  },
+  {
+   "de": "Stimmt der Kasus bei den festen Präpositionen (mit, für)?",
+   "en": "Is the case correct with fixed-case prepositions (mit, für)?",
+   "es": "¿Es correcto el caso con las preposiciones de caso fijo («mit, für»)?",
+   "fr": "Le cas est-il correct avec les prépositions à cas fixe (« mit, für ») ?",
+   "it": "Il caso è corretto con le preposizioni a caso fisso («mit, für»)?",
+   "pt": "O caso está correto com as preposições de caso fixo («mit, für»)?"
+  },
+  {
+   "de": "Habe ich mindestens drei verschiedene Wechselpräpositionen benutzt?",
+   "en": "Have I used at least three different two-way prepositions?",
+   "es": "¿Usé al menos tres preposiciones de doble caso diferentes?",
+   "fr": "Ai-je utilisé au moins trois prépositions mixtes différentes ?",
+   "it": "Ho usato almeno tre preposizioni a doppio caso diverse?",
+   "pt": "Usei pelo menos três preposições de caso duplo diferentes?"
+  },
+  {
+   "de": "Kann ich für jeden Satz sagen, ob wohin oder wo gefragt wird?",
+   "en": "Can I say for each sentence whether the question is wohin or wo?",
+   "es": "¿Puedo decir para cada oración si corresponde preguntar «wohin?» o «wo?»?",
+   "fr": "Puis-je dire pour chaque phrase s’il faut poser la question « wohin ? » ou « wo ? » ?",
+   "it": "Per ogni frase, so dire se la domanda è «wohin?» o «wo?»?",
+   "pt": "Consigo dizer, para cada frase, se a pergunta é «wohin?» ou «wo?»?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Präpositionen und ihren Kasus. Prüfen Sie bei jeder Wechselpräposition, ob es sich um Bewegung oder Ort handelt. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Präpositionen und ihren Kasus. Prüfen Sie bei jeder Wechselpräposition, ob es sich um Bewegung oder Ort handelt. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on the prepositions and the cases they govern. For every two-way preposition, check whether it expresses movement or location. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en las preposiciones y en los casos que rigen. En cada preposición de doble caso, compruebe si expresa movimiento o ubicación. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les prépositions et les cas qu’elles régissent. Pour chaque préposition mixte, vérifiez s’il s’agit d’un déplacement ou d’une localisation. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulle preposizioni e sui casi che reggono. Per ogni preposizione a doppio caso, controlli se esprime movimento o posizione. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nas preposições e nos casos que elas exigem. Para cada preposição de caso duplo, verifique se ela expressa movimento ou localização. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*en* immer mit *in* übersetzen: *Das Buch liegt in dem Tisch* statt *auf dem Tisch*."

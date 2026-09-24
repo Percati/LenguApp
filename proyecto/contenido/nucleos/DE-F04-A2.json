@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Erfahrungen und Geschichten erzählen",
+ "titulo": {
+  "de": "Erfahrungen und Geschichten erzählen",
+  "en": "Talking about experiences and telling stories",
+  "es": "Hablar de experiencias y contar historias",
+  "fr": "Raconter des expériences et des histoires",
+  "it": "Raccontare esperienze e storie",
+  "pt": "Contar experiências e histórias"
+ },
  "categoria": "fluency",
  "ancla": "PD A2",
- "descripcion": "Auf A2 erzählt man eine sehr einfache Geschichte im Perfekt, mit zuerst und dann als einziger Struktur. Freiere Struktur und dramaturgische Elemente kommen erst auf höheren Niveaus dazu. Wichtig ist vor allem, sich klar und einfach auszudrücken.",
+ "descripcion": {
+  "de": "Auf A2 erzählt man eine sehr einfache Geschichte im Perfekt, mit zuerst und dann als einziger Struktur. Freiere Struktur und dramaturgische Elemente kommen erst auf höheren Niveaus dazu. Wichtig ist vor allem, sich klar und einfach auszudrücken.",
+  "en": "At A2, you tell a very simple story in the perfect tense, using zuerst and dann as the only structure. Freer organization and dramatic elements are added only at higher levels. The main thing is to express yourself clearly and simply.",
+  "es": "En A2 se cuenta una historia muy sencilla en Perfekt, usando «zuerst» y «dann» como única estructura. Una organización más libre y elementos narrativos aparecen recién en niveles superiores. Lo importante es expresarse con claridad y sencillez.",
+  "fr": "Au niveau A2, on raconte une histoire très simple au Perfekt, en utilisant uniquement « zuerst » et « dann » pour la structurer. Une organisation plus libre et des éléments narratifs n'apparaissent qu'aux niveaux supérieurs. L'essentiel est de s'exprimer clairement et simplement.",
+  "it": "A livello A2 si racconta una storia molto semplice al Perfekt, usando «zuerst» e «dann» come unica struttura. Un'organizzazione più libera e gli elementi narrativi arrivano solo ai livelli superiori. L'importante è esprimersi in modo chiaro e semplice.",
+  "pt": "No nível A2, conta-se uma história bem simples no Perfekt, usando «zuerst» e «dann» como única estrutura. Uma organização mais livre e elementos narrativos aparecem apenas nos níveis superiores. O mais importante é se expressar de forma clara e simples."
+ },
  "cuadroReferencia": {
-  "titulo": "Eine sehr einfache Geschichte",
+  "titulo": {
+   "de": "Eine sehr einfache Geschichte",
+   "en": "A very simple story",
+   "es": "Una historia muy sencilla",
+   "fr": "Une histoire très simple",
+   "it": "Una storia molto semplice",
+   "pt": "Uma história bem simples"
+  },
   "columnas": [
-   "Schritt",
-   "Beispiel"
+   {
+    "de": "Schritt",
+    "en": "Step",
+    "es": "Paso",
+    "fr": "Étape",
+    "it": "Passaggio",
+    "pt": "Etapa"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Anfang",
-    "Letztes Jahr bin ich nach Rom gefahren."
+    {
+     "de": "Anfang",
+     "en": "Beginning",
+     "es": "Inicio",
+     "fr": "Début",
+     "it": "Inizio",
+     "pt": "Início"
+    },
+    {
+     "de": "Letztes Jahr bin ich nach Rom gefahren.",
+     "en": "Last year I went to Rome.",
+     "es": "El año pasado fui a Roma.",
+     "fr": "L'année dernière, je suis allé(e) à Rome.",
+     "it": "L'anno scorso sono andato/a a Roma.",
+     "pt": "No ano passado, fui a Roma."
+    }
    ],
    [
-    "Reihenfolge",
-    "Zuerst habe ich das Kolosseum besucht."
+    {
+     "de": "Reihenfolge",
+     "en": "Sequence",
+     "es": "Secuencia",
+     "fr": "Ordre",
+     "it": "Sequenza",
+     "pt": "Sequência"
+    },
+    {
+     "de": "Zuerst habe ich das Kolosseum besucht.",
+     "en": "First I visited the Colosseum.",
+     "es": "Primero visité el Coliseo.",
+     "fr": "D'abord, j'ai visité le Colisée.",
+     "it": "Per prima cosa ho visitato il Colosseo.",
+     "pt": "Primeiro, visitei o Coliseu."
+    }
    ],
    [
-    "Ende",
-    "Es war toll."
+    {
+     "de": "Ende",
+     "en": "Ending",
+     "es": "Final",
+     "fr": "Fin",
+     "it": "Fine",
+     "pt": "Final"
+    },
+    {
+     "de": "Es war toll.",
+     "en": "It was great.",
+     "es": "Estuvo genial.",
+     "fr": "C'était super.",
+     "it": "È stato fantastico.",
+     "pt": "Foi ótimo."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Letztes Jahr bin ich zum ersten Mal nach Rom gefahren.",
+   "texto": {
+    "de": "Letztes Jahr bin ich zum ersten Mal nach Rom gefahren.",
+    "en": "Last year I went to Rome for the first time.",
+    "es": "El año pasado fui a Roma por primera vez.",
+    "fr": "L'année dernière, je suis allé(e) à Rome pour la première fois.",
+    "it": "L'anno scorso sono andato/a a Roma per la prima volta.",
+    "pt": "No ano passado, fui a Roma pela primeira vez."
+   },
    "audio": true
   },
   {
-   "texto": "Zuerst habe ich das Kolosseum besucht.",
+   "texto": {
+    "de": "Zuerst habe ich das Kolosseum besucht.",
+    "en": "First I visited the Colosseum.",
+    "es": "Primero visité el Coliseo.",
+    "fr": "D'abord, j'ai visité le Colisée.",
+    "it": "Per prima cosa ho visitato il Colosseo.",
+    "pt": "Primeiro, visitei o Coliseu."
+   },
    "audio": true
   },
   {
-   "texto": "Dann bin ich essen gegangen."
+   "texto": {
+    "de": "Dann bin ich essen gegangen.",
+    "en": "Then I went out to eat.",
+    "es": "Después fui a comer.",
+    "fr": "Ensuite, je suis allé(e) manger.",
+    "it": "Poi sono andato/a a mangiare.",
+    "pt": "Depois, fui comer."
+   }
   }
  ],
  "notas": [
-  "Zuerst und dann reichen, um eine einfache Reihenfolge zu zeigen.",
-  "Die meisten Verben stehen im Perfekt.",
-  "Eine Zeitangabe am Anfang (letztes Jahr) hilft, die Geschichte einzuordnen."
+  {
+   "de": "Zuerst und dann reichen, um eine einfache Reihenfolge zu zeigen.",
+   "en": "Zuerst and dann are enough to show a simple sequence.",
+   "es": "«Zuerst» y «dann» alcanzan para mostrar una secuencia sencilla.",
+   "fr": "« Zuerst » et « dann » suffisent pour montrer une succession simple.",
+   "it": "«Zuerst» e «dann» bastano per indicare una sequenza semplice.",
+   "pt": "«Zuerst» e «dann» são suficientes para mostrar uma sequência simples."
+  },
+  {
+   "de": "Die meisten Verben stehen im Perfekt.",
+   "en": "Most verbs are in the perfect tense.",
+   "es": "La mayoría de los verbos están en Perfekt.",
+   "fr": "La plupart des verbes sont au Perfekt.",
+   "it": "La maggior parte dei verbi è al Perfekt.",
+   "pt": "A maioria dos verbos está no Perfekt."
+  },
+  {
+   "de": "Eine Zeitangabe am Anfang (letztes Jahr) hilft, die Geschichte einzuordnen.",
+   "en": "A time expression at the beginning (last year) helps place the story in time.",
+   "es": "Una indicación temporal al comienzo («el año pasado») ayuda a situar la historia.",
+   "fr": "Une indication temporelle au début (« l'année dernière ») aide à situer l'histoire.",
+   "it": "Un'indicazione di tempo all'inizio («l'anno scorso») aiuta a collocare la storia.",
+   "pt": "Uma indicação de tempo no início («no ano passado») ajuda a situar a história."
+  }
  ],
  "contraste": {
   "es": "Das Spanische erzählt meist im pretérito indefinido, einer einfachen Vergangenheitsform, was eher zum Präteritum führt. Im deutschen Gespräch steht aber das Perfekt: ich bin gegangen, ich habe gegessen.",
@@ -54,13 +173,34 @@
   "en": "Englischsprachige erzählen im simple past (I went, I ate), was zum Präteritum führt. Im deutschen Gespräch steht aber das Perfekt: ich bin gegangen, ich habe gegessen."
  },
  "errores": [
-  "Zuerst und dann in der falschen Reihenfolge benutzen.",
-  "Kein Perfekt verwenden."
+  {
+   "de": "Zuerst und dann in der falschen Reihenfolge benutzen.",
+   "en": "Using zuerst and dann in the wrong order.",
+   "es": "Usar «zuerst» y «dann» en el orden equivocado.",
+   "fr": "Utiliser « zuerst » et « dann » dans le mauvais ordre.",
+   "it": "Usare «zuerst» e «dann» nell'ordine sbagliato.",
+   "pt": "Usar «zuerst» e «dann» na ordem errada."
+  },
+  {
+   "de": "Kein Perfekt verwenden.",
+   "en": "Not using the perfect tense.",
+   "es": "No usar Perfekt.",
+   "fr": "Ne pas utiliser le Perfekt.",
+   "it": "Non usare il Perfekt.",
+   "pt": "Não usar o Perfekt."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Letztes Jahr…",
-   "funcion": "Einstieg mit Zeitangabe",
+   "funcion": {
+    "de": "Einstieg mit Zeitangabe",
+    "en": "opening with a time expression",
+    "es": "inicio con indicación temporal",
+    "fr": "début avec une indication temporelle",
+    "it": "inizio con indicazione di tempo",
+    "pt": "início com indicação de tempo"
+   },
    "traducciones": {
     "es": "El año pasado…",
     "en": "Last year…",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "Zuerst…",
-   "funcion": "erster Schritt",
+   "funcion": {
+    "de": "erster Schritt",
+    "en": "first step",
+    "es": "primer paso",
+    "fr": "première étape",
+    "it": "primo passaggio",
+    "pt": "primeiro passo"
+   },
    "traducciones": {
     "es": "Primero…",
     "en": "First…",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "Dann…",
-   "funcion": "nächster Schritt",
+   "funcion": {
+    "de": "nächster Schritt",
+    "en": "next step",
+    "es": "paso siguiente",
+    "fr": "étape suivante",
+    "it": "passaggio successivo",
+    "pt": "próximo passo"
+   },
    "traducciones": {
     "es": "Luego…",
     "en": "Then…",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "Es war toll.",
-   "funcion": "Bewertung",
+   "funcion": {
+    "de": "Bewertung",
+    "en": "evaluation",
+    "es": "valoración",
+    "fr": "évaluation",
+    "it": "valutazione",
+    "pt": "avaliação"
+   },
    "traducciones": {
     "es": "Fue genial.",
     "en": "It was great.",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "Ich habe…gesehen.",
-   "funcion": "Perfekt, sehen",
+   "funcion": {
+    "de": "Perfekt, sehen",
+    "en": "perfect tense, sehen",
+    "es": "Perfekt, «sehen»",
+    "fr": "Perfekt, « sehen »",
+    "it": "Perfekt, «sehen»",
+    "pt": "Perfekt, «sehen»"
+   },
    "traducciones": {
     "es": "Vi…",
     "en": "I saw…",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "Wir sind…gefahren.",
-   "funcion": "Perfekt, fahren",
+   "funcion": {
+    "de": "Perfekt, fahren",
+    "en": "perfect tense, fahren",
+    "es": "Perfekt, «fahren»",
+    "fr": "Perfekt, « fahren »",
+    "it": "Perfekt, «fahren»",
+    "pt": "Perfekt, «fahren»"
+   },
    "traducciones": {
     "es": "Viajamos a…",
     "en": "We travelled to…",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Ist die Reihenfolge klar?",
-  "Stehen die Verben im Perfekt?",
-  "Habe ich eine Zeitangabe am Anfang benutzt?",
-  "Klingt der Satz natürlich?",
-  "Klingt der Satz natürlich?"
+  {
+   "de": "Ist die Reihenfolge klar?",
+   "en": "Is the sequence clear?",
+   "es": "¿La secuencia está clara?",
+   "fr": "L'ordre est-il clair ?",
+   "it": "La sequenza è chiara?",
+   "pt": "A sequência está clara?"
+  },
+  {
+   "de": "Stehen die Verben im Perfekt?",
+   "en": "Are the verbs in the perfect tense?",
+   "es": "¿Los verbos están en Perfekt?",
+   "fr": "Les verbes sont-ils au Perfekt ?",
+   "it": "I verbi sono al Perfekt?",
+   "pt": "Os verbos estão no Perfekt?"
+  },
+  {
+   "de": "Habe ich eine Zeitangabe am Anfang benutzt?",
+   "en": "Have I used a time expression at the beginning?",
+   "es": "¿Usé una indicación temporal al comienzo?",
+   "fr": "Ai-je utilisé une indication temporelle au début ?",
+   "it": "Ho usato un'indicazione di tempo all'inizio?",
+   "pt": "Usei uma indicação de tempo no início?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die einfache Zeitstruktur der Geschichte. Prüfen Sie das Perfekt. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob die Formeln zur Situation passen.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die einfache Zeitstruktur der Geschichte. Prüfen Sie das Perfekt. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob die Formeln zur Situation passen.",
+  "en": "Focus exclusively on the story's simple time structure. Check the perfect tense. Do not rewrite the text. Also check whether the expressions fit the situation.",
+  "es": "Concéntrese exclusivamente en la estructura temporal sencilla de la historia. Revise el Perfekt. No reescriba el texto. Compruebe también si las fórmulas se adecuan a la situación.",
+  "fr": "Concentrez-vous exclusivement sur la structure temporelle simple de l'histoire. Vérifiez le Perfekt. Ne réécrivez pas le texte. Vérifiez également si les formules conviennent à la situation.",
+  "it": "Si concentri esclusivamente sulla semplice struttura temporale della storia. Controlli il Perfekt. Non riscriva il testo. Verifichi anche se le formule sono adatte alla situazione.",
+  "pt": "Concentre-se exclusivamente na estrutura temporal simples da história. Verifique o Perfekt. Não reescreva o texto. Verifique também se as fórmulas combinam com a situação."
+ },
  "erroresContrastivos": {
   "es": [
    "Nach *luego* ohne Umstellung weitererzählen: *Dann wir sind gegangen* statt *Dann sind wir gegangen*."

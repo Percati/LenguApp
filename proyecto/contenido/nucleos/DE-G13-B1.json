@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Infinitivsätze mit *zu*",
+ "titulo": {
+  "de": "Infinitivsätze mit *zu*",
+  "en": "Infinitive clauses with *zu*",
+  "es": "Oraciones de infinitivo con *zu*",
+  "fr": "Propositions infinitives avec *zu*",
+  "it": "Frasi infinitive con *zu*",
+  "pt": "Orações de infinitivo com *zu*"
+ },
  "categoria": "grammar",
  "ancla": "PD B1",
- "descripcion": "Auf B1 wird der Infinitivsatz mit zu nach häufigen Verben wie hoffen, versuchen und vorhaben gebildet, ebenso nach es ist + Adjektiv — solange Haupt- und Nebensatz dasselbe Subjekt haben. Bei unterschiedlichem Subjekt bleibt der dass-Satz die richtige Wahl.",
+ "descripcion": {
+  "de": "Auf B1 wird der Infinitivsatz mit zu nach häufigen Verben wie hoffen, versuchen und vorhaben gebildet, ebenso nach es ist + Adjektiv — solange Haupt- und Nebensatz dasselbe Subjekt haben. Bei unterschiedlichem Subjekt bleibt der dass-Satz die richtige Wahl.",
+  "en": "At B1, infinitive clauses with zu are formed after common verbs such as hoffen, versuchen and vorhaben, as well as after es ist + adjective — as long as the main and subordinate parts have the same subject. If the subjects are different, a dass-clause remains the right choice.",
+  "es": "En B1 se forman oraciones de infinitivo con «zu» después de verbos frecuentes como «hoffen», «versuchen» y «vorhaben», y también después de «es ist + adjetivo», siempre que ambas partes tengan el mismo sujeto. Si los sujetos son distintos, la opción correcta sigue siendo una oración con «dass».",
+  "fr": "Au niveau B1, on forme des propositions infinitives avec « zu » après des verbes fréquents comme « hoffen », « versuchen » et « vorhaben », ainsi qu’après « es ist + adjectif », tant que les deux parties ont le même sujet. Si les sujets sont différents, la proposition avec « dass » reste le bon choix.",
+  "it": "A livello B1 si formano frasi infinitive con «zu» dopo verbi comuni come «hoffen», «versuchen» e «vorhaben», e anche dopo «es ist + aggettivo», purché le due parti abbiano lo stesso soggetto. Se i soggetti sono diversi, la frase con «dass» resta la scelta corretta.",
+  "pt": "No nível B1, formam-se orações de infinitivo com «zu» depois de verbos frequentes como «hoffen», «versuchen» e «vorhaben», e também depois de «es ist + adjetivo», desde que as duas partes tenham o mesmo sujeito. Se os sujeitos forem diferentes, a oração com «dass» continua sendo a escolha correta."
+ },
  "cuadroReferencia": {
-  "titulo": "Wann ein Infinitivsatz möglich ist",
+  "titulo": {
+   "de": "Wann ein Infinitivsatz möglich ist",
+   "en": "When an infinitive clause is possible",
+   "es": "Cuándo es posible una oración de infinitivo",
+   "fr": "Quand une proposition infinitive est possible",
+   "it": "Quando è possibile una frase infinitiva",
+   "pt": "Quando uma oração de infinitivo é possível"
+  },
   "columnas": [
-   "Bedingung",
-   "Beispiel"
+   {
+    "de": "Bedingung",
+    "en": "condition",
+    "es": "condición",
+    "fr": "condition",
+    "it": "condizione",
+    "pt": "condição"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Gleiches Subjekt",
-    "Ich versuche, pünktlich zu sein."
+    {
+     "de": "Gleiches Subjekt",
+     "en": "Same subject",
+     "es": "Mismo sujeto",
+     "fr": "Même sujet",
+     "it": "Stesso soggetto",
+     "pt": "Mesmo sujeito"
+    },
+    {
+     "de": "Ich versuche, pünktlich zu sein.",
+     "en": "I’m trying to be on time.",
+     "es": "Intento ser puntual.",
+     "fr": "J’essaie d’être à l’heure.",
+     "it": "Cerco di essere puntuale.",
+     "pt": "Estou tentando ser pontual."
+    }
    ],
    [
-    "Nach es ist + Adjektiv",
-    "Es ist wichtig, viel zu üben."
+    {
+     "de": "Nach es ist + Adjektiv",
+     "en": "After es ist + adjective",
+     "es": "Después de «es ist + adjetivo»",
+     "fr": "Après « es ist + adjectif »",
+     "it": "Dopo «es ist + aggettivo»",
+     "pt": "Depois de «es ist + adjetivo»"
+    },
+    {
+     "de": "Es ist wichtig, viel zu üben.",
+     "en": "It’s important to practise a lot.",
+     "es": "Es importante practicar mucho.",
+     "fr": "Il est important de beaucoup s’entraîner.",
+     "it": "È importante esercitarsi molto.",
+     "pt": "É importante praticar bastante."
+    }
    ],
    [
-    "Trennbares Verb",
-    "Ich habe vor, umzuziehen."
+    {
+     "de": "Trennbares Verb",
+     "en": "Separable verb",
+     "es": "Verbo separable",
+     "fr": "Verbe séparable",
+     "it": "Verbo separabile",
+     "pt": "Verbo separável"
+    },
+    {
+     "de": "Ich habe vor, umzuziehen.",
+     "en": "I’m planning to move.",
+     "es": "Tengo pensado mudarme.",
+     "fr": "J’ai l’intention de déménager.",
+     "it": "Ho intenzione di trasferirmi.",
+     "pt": "Pretendo me mudar."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich versuche immer, pünktlich zu sein.",
+   "texto": {
+    "de": "Ich versuche immer, pünktlich zu sein.",
+    "en": "I always try to be on time.",
+    "es": "Siempre intento ser puntual.",
+    "fr": "J’essaie toujours d’être à l’heure.",
+    "it": "Cerco sempre di essere puntuale.",
+    "pt": "Sempre tento ser pontual."
+   },
    "audio": true
   },
   {
-   "texto": "Es ist wichtig, jeden Tag ein bisschen zu üben.",
+   "texto": {
+    "de": "Es ist wichtig, jeden Tag ein bisschen zu üben.",
+    "en": "It’s important to practise a little every day.",
+    "es": "Es importante practicar un poco todos los días.",
+    "fr": "Il est important de s’exercer un peu tous les jours.",
+    "it": "È importante esercitarsi un po’ ogni giorno.",
+    "pt": "É importante praticar um pouco todos os dias."
+   },
    "audio": true
   },
   {
-   "texto": "Ich habe vor, nächstes Jahr umzuziehen."
+   "texto": {
+    "de": "Ich habe vor, nächstes Jahr umzuziehen.",
+    "en": "I’m planning to move next year.",
+    "es": "Tengo pensado mudarme el año que viene.",
+    "fr": "J’ai l’intention de déménager l’année prochaine.",
+    "it": "Ho intenzione di trasferirmi l’anno prossimo.",
+    "pt": "Pretendo me mudar no ano que vem."
+   }
   }
  ],
  "notas": [
-  "Der Infinitivsatz funktioniert nur, wenn beide Teile dasselbe Subjekt haben.",
-  "Bei trennbaren Verben steht zu zwischen Präfix und Stamm: umzuziehen.",
-  "Nach es ist + Adjektiv (wichtig, schön, einfach) ist der Infinitivsatz die Standardform."
+  {
+   "de": "Der Infinitivsatz funktioniert nur, wenn beide Teile dasselbe Subjekt haben.",
+   "en": "The infinitive clause only works when both parts have the same subject.",
+   "es": "La oración de infinitivo solo funciona cuando ambas partes tienen el mismo sujeto.",
+   "fr": "La proposition infinitive ne fonctionne que lorsque les deux parties ont le même sujet.",
+   "it": "La frase infinitiva funziona solo quando le due parti hanno lo stesso soggetto.",
+   "pt": "A oração de infinitivo só funciona quando as duas partes têm o mesmo sujeito."
+  },
+  {
+   "de": "Bei trennbaren Verben steht zu zwischen Präfix und Stamm: umzuziehen.",
+   "en": "With separable verbs, zu goes between the prefix and the stem: umzuziehen.",
+   "es": "Con verbos separables, «zu» va entre el prefijo y la raíz: «umzuziehen».",
+   "fr": "Avec les verbes séparables, « zu » se place entre le préfixe et le radical : « umzuziehen ».",
+   "it": "Con i verbi separabili, «zu» va tra il prefisso e la radice: «umzuziehen».",
+   "pt": "Com verbos separáveis, «zu» fica entre o prefixo e o radical: «umzuziehen»."
+  },
+  {
+   "de": "Nach es ist + Adjektiv (wichtig, schön, einfach) ist der Infinitivsatz die Standardform.",
+   "en": "After es ist + adjective (wichtig, schön, einfach), the infinitive clause is the standard form.",
+   "es": "Después de «es ist + adjetivo» («wichtig, schön, einfach»), la oración de infinitivo es la forma habitual.",
+   "fr": "Après « es ist + adjectif » (« wichtig, schön, einfach »), la proposition infinitive est la forme standard.",
+   "it": "Dopo «es ist + aggettivo» («wichtig, schön, einfach»), la frase infinitiva è la forma standard.",
+   "pt": "Depois de «es ist + adjetivo» («wichtig, schön, einfach»), a oração de infinitivo é a forma padrão."
+  }
  ],
  "contraste": {
   "es": "Das Spanische verwendet bei gleichem Subjekt ebenfalls den blossen Infinitiv (intento ser puntual), sodass die Grundlogik schon bekannt ist.",
@@ -54,14 +173,42 @@
   "en": "To entspricht zu sehr gut (I hope to come, it's easy to understand). Vorsicht bei Sätzen mit zwei Personen: I want you to come heisst nicht ich will dich zu kommen, sondern ich will, dass du kommst."
  },
  "errores": [
-  "Einen dass-Satz bilden, obwohl das Subjekt gleich ist und ein Infinitivsatz möglich wäre.",
-  "Zu bei trennbaren Verben falsch platzieren.",
-  "Den Infinitivsatz bilden, obwohl die Subjekte unterschiedlich sind."
+  {
+   "de": "Einen dass-Satz bilden, obwohl das Subjekt gleich ist und ein Infinitivsatz möglich wäre.",
+   "en": "Using a dass-clause even though the subject is the same and an infinitive clause would be possible.",
+   "es": "Formar una oración con «dass» aunque el sujeto sea el mismo y sea posible usar una oración de infinitivo.",
+   "fr": "Former une proposition avec « dass » alors que le sujet est le même et qu’une proposition infinitive serait possible.",
+   "it": "Formare una frase con «dass» anche se il soggetto è lo stesso e sarebbe possibile usare una frase infinitiva.",
+   "pt": "Formar uma oração com «dass» mesmo quando o sujeito é o mesmo e seria possível usar uma oração de infinitivo."
+  },
+  {
+   "de": "Zu bei trennbaren Verben falsch platzieren.",
+   "en": "Putting zu in the wrong place with separable verbs.",
+   "es": "Colocar «zu» en el lugar incorrecto con verbos separables.",
+   "fr": "Placer « zu » au mauvais endroit avec les verbes séparables.",
+   "it": "Mettere «zu» nel posto sbagliato con i verbi separabili.",
+   "pt": "Colocar «zu» no lugar errado com verbos separáveis."
+  },
+  {
+   "de": "Den Infinitivsatz bilden, obwohl die Subjekte unterschiedlich sind.",
+   "en": "Using an infinitive clause even though the subjects are different.",
+   "es": "Formar una oración de infinitivo aunque los sujetos sean distintos.",
+   "fr": "Former une proposition infinitive alors que les sujets sont différents.",
+   "it": "Formare una frase infinitiva anche se i soggetti sono diversi.",
+   "pt": "Formar uma oração de infinitivo mesmo quando os sujeitos são diferentes."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich versuche, … zu…",
-   "funcion": "Infinitivsatz nach versuchen",
+   "funcion": {
+    "de": "Infinitivsatz nach versuchen",
+    "en": "infinitive clause after versuchen",
+    "es": "oración de infinitivo después de «versuchen»",
+    "fr": "proposition infinitive après « versuchen »",
+    "it": "frase infinitiva dopo «versuchen»",
+    "pt": "oração de infinitivo depois de «versuchen»"
+   },
    "traducciones": {
     "es": "Intento…",
     "en": "I try to…",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Es ist wichtig, … zu…",
-   "funcion": "Infinitivsatz nach Adjektiv",
+   "funcion": {
+    "de": "Infinitivsatz nach Adjektiv",
+    "en": "infinitive clause after an adjective",
+    "es": "oración de infinitivo después de un adjetivo",
+    "fr": "proposition infinitive après un adjectif",
+    "it": "frase infinitiva dopo un aggettivo",
+    "pt": "oração de infinitivo depois de um adjetivo"
+   },
    "traducciones": {
     "es": "Es importante…",
     "en": "It's important to…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Ich habe vor, zu…",
-   "funcion": "Plan ausdrücken",
+   "funcion": {
+    "de": "Plan ausdrücken",
+    "en": "expressing a plan",
+    "es": "expresar un plan",
+    "fr": "exprimer un projet",
+    "it": "esprimere un piano",
+    "pt": "expressar um plano"
+   },
    "traducciones": {
     "es": "Tengo planeado…",
     "en": "I'm planning to…",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Es macht Spass, … zu…",
-   "funcion": "Infinitivsatz, informell",
+   "funcion": {
+    "de": "Infinitivsatz, informell",
+    "en": "infinitive clause, informal",
+    "es": "oración de infinitivo, informal",
+    "fr": "proposition infinitive, informelle",
+    "it": "frase infinitiva, informale",
+    "pt": "oração de infinitivo, informal"
+   },
    "traducciones": {
     "es": "Es divertido…",
     "en": "It's fun to…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Ich hoffe, … zu…",
-   "funcion": "Infinitivsatz nach hoffen",
+   "funcion": {
+    "de": "Infinitivsatz nach hoffen",
+    "en": "infinitive clause after hoffen",
+    "es": "oración de infinitivo después de «hoffen»",
+    "fr": "proposition infinitive après « hoffen »",
+    "it": "frase infinitiva dopo «hoffen»",
+    "pt": "oração de infinitivo depois de «hoffen»"
+   },
    "traducciones": {
     "es": "Espero…",
     "en": "I hope to…",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Es ist einfach, … zu…",
-   "funcion": "Infinitivsatz nach Adjektiv",
+   "funcion": {
+    "de": "Infinitivsatz nach Adjektiv",
+    "en": "infinitive clause after an adjective",
+    "es": "oración de infinitivo después de un adjetivo",
+    "fr": "proposition infinitive après un adjectif",
+    "it": "frase infinitiva dopo un aggettivo",
+    "pt": "oração de infinitivo depois de um adjetivo"
+   },
    "traducciones": {
     "es": "Es fácil…",
     "en": "It's easy to…",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Haben Haupt- und Nebensatz dasselbe Subjekt?",
-  "Steht zu bei trennbaren Verben an der richtigen Stelle?",
-  "Habe ich mindestens einen Infinitivsatz nach es ist + Adjektiv gebildet?",
-  "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?",
-  "Habe ich den dass-Satz benutzt, wenn die Subjekte unterschiedlich sind?"
+  {
+   "de": "Haben Haupt- und Nebensatz dasselbe Subjekt?",
+   "en": "Do the main and subordinate parts have the same subject?",
+   "es": "¿La parte principal y la subordinada tienen el mismo sujeto?",
+   "fr": "La partie principale et la subordonnée ont-elles le même sujet ?",
+   "it": "La parte principale e quella subordinata hanno lo stesso soggetto?",
+   "pt": "A parte principal e a subordinada têm o mesmo sujeito?"
+  },
+  {
+   "de": "Steht zu bei trennbaren Verben an der richtigen Stelle?",
+   "en": "Is zu in the right place with separable verbs?",
+   "es": "¿«Zu» está en la posición correcta con verbos separables?",
+   "fr": "« Zu » est-il à la bonne place avec les verbes séparables ?",
+   "it": "«Zu» è nella posizione corretta con i verbi separabili?",
+   "pt": "«Zu» está na posição correta com verbos separáveis?"
+  },
+  {
+   "de": "Habe ich mindestens einen Infinitivsatz nach es ist + Adjektiv gebildet?",
+   "en": "Have I formed at least one infinitive clause after es ist + adjective?",
+   "es": "¿Formé al menos una oración de infinitivo después de «es ist + adjetivo»?",
+   "fr": "Ai-je formé au moins une proposition infinitive après « es ist + adjectif » ?",
+   "it": "Ho formato almeno una frase infinitiva dopo «es ist + aggettivo»?",
+   "pt": "Formei pelo menos uma oração de infinitivo depois de «es ist + adjetivo»?"
+  },
+  {
+   "de": "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?",
+   "en": "Does the sentence sound natural rather than like a literal translation?",
+   "es": "¿La oración suena natural y no como una traducción literal?",
+   "fr": "La phrase semble-t-elle naturelle, et non comme une traduction littérale ?",
+   "it": "La frase suona naturale, e non come una traduzione letterale?",
+   "pt": "A frase soa natural, e não como uma tradução literal?"
+  },
+  {
+   "de": "Habe ich den dass-Satz benutzt, wenn die Subjekte unterschiedlich sind?",
+   "en": "Have I used a dass-clause when the subjects are different?",
+   "es": "¿Usé una oración con «dass» cuando los sujetos son distintos?",
+   "fr": "Ai-je utilisé une proposition avec « dass » lorsque les sujets sont différents ?",
+   "it": "Ho usato una frase con «dass» quando i soggetti sono diversi?",
+   "pt": "Usei uma oração com «dass» quando os sujeitos são diferentes?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Infinitivsätze mit zu. Prüfen Sie, ob das Subjekt in beiden Teilen gleich ist. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Infinitivsätze mit zu. Prüfen Sie, ob das Subjekt in beiden Teilen gleich ist. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on infinitive clauses with zu. Check whether the subject is the same in both parts. Do not rewrite the text yourself.",
+  "es": "Concentre su atención exclusivamente en las oraciones de infinitivo con «zu». Compruebe si el sujeto es el mismo en ambas partes. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les propositions infinitives avec « zu ». Vérifiez si le sujet est le même dans les deux parties. Ne réécrivez pas le texte.",
+  "it": "Concentri la sua attenzione esclusivamente sulle frasi infinitive con «zu». Controlli se il soggetto è lo stesso in entrambe le parti. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nas orações de infinitivo com «zu». Verifique com atenção se o sujeito é o mesmo nas duas partes. Não reescreva você mesmo o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*para* + Infinitiv als *für* übertragen: *Ich lerne Deutsch für arbeiten* statt *um zu arbeiten*."

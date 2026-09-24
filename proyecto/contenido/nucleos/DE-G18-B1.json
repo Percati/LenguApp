@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Temporale Nebensätze (*als, wenn, während, nachdem, seitdem*)",
+ "titulo": {
+  "de": "Temporale Nebensätze (*als, wenn, während, nachdem, seitdem*)",
+  "en": "Temporal subordinate clauses (*als, wenn, während, nachdem, seitdem*)",
+  "es": "Oraciones subordinadas temporales (*als, wenn, während, nachdem, seitdem*)",
+  "fr": "Propositions subordonnées temporelles (*als, wenn, während, nachdem, seitdem*)",
+  "it": "Proposizioni subordinate temporali (*als, wenn, während, nachdem, seitdem*)",
+  "pt": "Orações subordinadas temporais (*als, wenn, während, nachdem, seitdem*)"
+ },
  "categoria": "grammar",
  "ancla": "PD A2/B1",
- "descripcion": "Auf B1 wird der Unterschied zwischen als (einmaliges Ereignis in der Vergangenheit) und wenn (wiederholt oder Gegenwart/Zukunft) gefestigt, dazu während, nachdem und seitdem für weitere Zeitverhältnisse. Dieser Unterschied ist einer der klassischen Fehler für Spanischsprachige.",
+ "descripcion": {
+  "de": "Auf B1 wird der Unterschied zwischen als (einmaliges Ereignis in der Vergangenheit) und wenn (wiederholt oder Gegenwart/Zukunft) gefestigt, dazu während, nachdem und seitdem für weitere Zeitverhältnisse. Dieser Unterschied ist einer der klassischen Fehler für Spanischsprachige.",
+  "en": "At B1, the distinction between als (a one-time event in the past) and wenn (repeated events or present/future situations) is reinforced, along with während, nachdem and seitdem for other time relationships. This distinction is one of the classic difficulties for Spanish speakers.",
+  "es": "En B1 se afianza la diferencia entre «als» (un hecho único en el pasado) y «wenn» (situaciones repetidas o de presente/futuro), además de «während», «nachdem» y «seitdem» para otras relaciones temporales. Esta diferencia es uno de los errores clásicos de los hispanohablantes.",
+  "fr": "Au niveau B1, on consolide la différence entre « als » (événement unique dans le passé) et « wenn » (événement répété ou situation au présent/futur), ainsi que « während », « nachdem » et « seitdem » pour d’autres relations temporelles. Cette distinction est une difficulté classique pour les hispanophones.",
+  "it": "A livello B1 si consolida la differenza tra «als» (evento unico nel passato) e «wenn» (eventi ripetuti o situazioni al presente/futuro), insieme a «während», «nachdem» e «seitdem» per altri rapporti temporali. Questa distinzione è uno degli errori classici per gli ispanofoni.",
+  "pt": "No nível B1, consolida-se a diferença entre «als» (evento único no passado) e «wenn» (eventos repetidos ou situações no presente/futuro), além de «während», «nachdem» e «seitdem» para outras relações temporais. Essa distinção é um erro clássico entre falantes de espanhol."
+ },
  "cuadroReferencia": {
-  "titulo": "Als oder wenn?",
+  "titulo": {
+   "de": "Als oder wenn?",
+   "en": "Als or wenn?",
+   "es": "¿«Als» o «wenn»?",
+   "fr": "« Als » ou « wenn » ?",
+   "it": "«Als» o «wenn»?",
+   "pt": "«Als» ou «wenn»?"
+  },
   "columnas": [
-   "Konnektor",
-   "Verwendung",
-   "Beispiel"
+   {
+    "de": "Konnektor",
+    "en": "Connector",
+    "es": "Conector",
+    "fr": "Connecteur",
+    "it": "Connettore",
+    "pt": "Conector"
+   },
+   {
+    "de": "Verwendung",
+    "en": "Use",
+    "es": "Uso",
+    "fr": "Emploi",
+    "it": "Uso",
+    "pt": "Uso"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "als",
-    "einmalig, Vergangenheit",
-    "Als ich ankam, regnete es."
+    {
+     "de": "als",
+     "en": "als",
+     "es": "als",
+     "fr": "als",
+     "it": "als",
+     "pt": "als"
+    },
+    {
+     "de": "einmalig, Vergangenheit",
+     "en": "one-time, past",
+     "es": "una vez, pasado",
+     "fr": "unique, passé",
+     "it": "una volta, passato",
+     "pt": "uma vez, passado"
+    },
+    {
+     "de": "Als ich ankam, regnete es.",
+     "en": "When I arrived, it was raining.",
+     "es": "Cuando llegué, llovía.",
+     "fr": "Quand je suis arrivé(e), il pleuvait.",
+     "it": "Quando sono arrivato/a, pioveva.",
+     "pt": "Quando cheguei, estava chovendo."
+    }
    ],
    [
-    "wenn",
-    "wiederholt oder Gegenwart/Zukunft",
-    "Wenn ich Zeit habe, lese ich."
+    {
+     "de": "wenn",
+     "en": "wenn",
+     "es": "wenn",
+     "fr": "wenn",
+     "it": "wenn",
+     "pt": "wenn"
+    },
+    {
+     "de": "wiederholt oder Gegenwart/Zukunft",
+     "en": "repeated or present/future",
+     "es": "repetido o presente/futuro",
+     "fr": "répété ou présent/futur",
+     "it": "ripetuto o presente/futuro",
+     "pt": "repetido ou presente/futuro"
+    },
+    {
+     "de": "Wenn ich Zeit habe, lese ich.",
+     "en": "When I have time, I read.",
+     "es": "Cuando tengo tiempo, leo.",
+     "fr": "Quand j’ai le temps, je lis.",
+     "it": "Quando ho tempo, leggo.",
+     "pt": "Quando tenho tempo, leio."
+    }
    ],
    [
-    "nachdem",
-    "danach, oft mit Plusquamperfekt",
-    "Nachdem ich gegessen hatte, ging ich."
+    {
+     "de": "nachdem",
+     "en": "nachdem",
+     "es": "«nachdem»",
+     "fr": "« nachdem »",
+     "it": "«nachdem»",
+     "pt": "«nachdem»"
+    },
+    {
+     "de": "danach, oft mit Plusquamperfekt",
+     "en": "afterwards, often with the pluperfect",
+     "es": "después, a menudo con Plusquamperfekt",
+     "fr": "ensuite, souvent avec le plus-que-parfait",
+     "it": "dopo, spesso con il trapassato prossimo",
+     "pt": "depois, muitas vezes com o Plusquamperfekt"
+    },
+    {
+     "de": "Nachdem ich gegessen hatte, ging ich.",
+     "en": "After I had eaten, I left.",
+     "es": "Después de haber comido, me fui.",
+     "fr": "Après avoir mangé, je suis parti(e).",
+     "it": "Dopo aver mangiato, me ne sono andato/a.",
+     "pt": "Depois de ter comido, fui embora."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Als ich in Berlin ankam, hat es geregnet.",
+   "texto": {
+    "de": "Als ich in Berlin ankam, hat es geregnet.",
+    "en": "When I arrived in Berlin, it was raining.",
+    "es": "Cuando llegué a Berlín, estaba lloviendo.",
+    "fr": "Quand je suis arrivé(e) à Berlin, il pleuvait.",
+    "it": "Quando sono arrivato/a a Berlino, pioveva.",
+    "pt": "Quando cheguei a Berlim, estava chovendo."
+   },
    "audio": true
   },
   {
-   "texto": "Wenn ich Zeit habe, lese ich gern ein Buch.",
+   "texto": {
+    "de": "Wenn ich Zeit habe, lese ich gern ein Buch.",
+    "en": "When I have time, I like to read a book.",
+    "es": "Cuando tengo tiempo, me gusta leer un libro.",
+    "fr": "Quand j’ai le temps, j’aime lire un livre.",
+    "it": "Quando ho tempo, mi piace leggere un libro.",
+    "pt": "Quando tenho tempo, gosto de ler um livro."
+   },
    "audio": true
   },
   {
-   "texto": "Nachdem ich gegessen hatte, bin ich spazieren gegangen."
+   "texto": {
+    "de": "Nachdem ich gegessen hatte, bin ich spazieren gegangen.",
+    "en": "After I had eaten, I went for a walk.",
+    "es": "Después de haber comido, salí a caminar.",
+    "fr": "Après avoir mangé, je suis allé(e) me promener.",
+    "it": "Dopo aver mangiato, sono andato/a a fare una passeggiata.",
+    "pt": "Depois de ter comido, fui dar uma caminhada."
+   }
   }
  ],
  "notas": [
-  "Als wird nur für ein einmaliges Ereignis in der Vergangenheit benutzt, nie für die Gegenwart oder Wiederholung.",
-  "Wenn passt für Gegenwart, Zukunft und wiederholte Ereignisse in der Vergangenheit.",
-  "Nachdem verlangt oft das Plusquamperfekt, wenn das Ereignis vor dem Hauptsatz liegt."
+  {
+   "de": "Als wird nur für ein einmaliges Ereignis in der Vergangenheit benutzt, nie für die Gegenwart oder Wiederholung.",
+   "en": "Als is used only for a one-time event in the past, never for the present or repeated events.",
+   "es": "«Als» se usa solo para un hecho único en el pasado, nunca para el presente ni para situaciones repetidas.",
+   "fr": "« Als » s’utilise uniquement pour un événement unique dans le passé, jamais pour le présent ni pour des événements répétés.",
+   "it": "«Als» si usa solo per un evento unico nel passato, mai per il presente o per eventi ripetuti.",
+   "pt": "«Als» é usado apenas para um evento único no passado, nunca para o presente nem para eventos repetidos."
+  },
+  {
+   "de": "Wenn passt für Gegenwart, Zukunft und wiederholte Ereignisse in der Vergangenheit.",
+   "en": "Wenn is used for the present, future and repeated events in the past.",
+   "es": "«Wenn» sirve para el presente, el futuro y hechos repetidos en el pasado.",
+   "fr": "« Wenn » convient au présent, au futur et aux événements répétés dans le passé.",
+   "it": "«Wenn» si usa per il presente, il futuro e gli eventi ripetuti nel passato.",
+   "pt": "«Wenn» é usado para o presente, o futuro e eventos repetidos no passado."
+  },
+  {
+   "de": "Nachdem verlangt oft das Plusquamperfekt, wenn das Ereignis vor dem Hauptsatz liegt.",
+   "en": "Nachdem often requires the pluperfect when the event happens before the main-clause event.",
+   "es": "«Nachdem» suele exigir Plusquamperfekt cuando el hecho ocurre antes que el de la oración principal.",
+   "fr": "« Nachdem » exige souvent le plus-que-parfait lorsque l’événement précède celui de la proposition principale.",
+   "it": "«Nachdem» richiede spesso il trapassato prossimo quando l’evento precede quello della frase principale.",
+   "pt": "«Nachdem» costuma exigir o Plusquamperfekt quando o evento acontece antes do da oração principal."
+  }
  ],
  "contraste": {
   "es": "Das Spanische unterscheidet als und wenn nicht mit zwei verschiedenen Wörtern — cuando deckt beides ab. Dieser fehlende Unterschied ist der klassische Fehler von Spanischsprachigen im Deutschen.",
@@ -58,14 +205,42 @@
   "en": "When heisst als, wenn oder wann, deshalb ist die Verwechslung von wann und wenn typisch. Die anderen passen gut: while – während, after – nachdem, since – seitdem. Vorsicht: since kann auch weil bedeuten, seitdem nie."
  },
  "errores": [
-  "Wenn statt als für ein einmaliges vergangenes Ereignis benutzen.",
-  "Als für wiederholte Ereignisse verwenden.",
-  "Nach nachdem das Plusquamperfekt vergessen."
+  {
+   "de": "Wenn statt als für ein einmaliges vergangenes Ereignis benutzen.",
+   "en": "Using wenn instead of als for a one-time event in the past.",
+   "es": "Usar «wenn» en lugar de «als» para un hecho único en el pasado.",
+   "fr": "Utiliser « wenn » au lieu de « als » pour un événement unique dans le passé.",
+   "it": "Usare «wenn» invece di «als» per un evento unico nel passato.",
+   "pt": "Usar «wenn» em vez de «als» para um acontecimento único no passado."
+  },
+  {
+   "de": "Als für wiederholte Ereignisse verwenden.",
+   "en": "Using als for repeated events.",
+   "es": "Usar «als» para hechos repetidos.",
+   "fr": "Employer « als » pour des événements répétés.",
+   "it": "Usare «als» per eventi ripetuti.",
+   "pt": "Usar «als» para eventos repetidos."
+  },
+  {
+   "de": "Nach nachdem das Plusquamperfekt vergessen.",
+   "en": "Forgetting the pluperfect after nachdem.",
+   "es": "Olvidar el Plusquamperfekt después de «nachdem».",
+   "fr": "Oublier le plus-que-parfait après « nachdem ».",
+   "it": "Dimenticare il trapassato prossimo dopo «nachdem».",
+   "pt": "Esquecer o Plusquamperfekt depois de «nachdem»."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Als ich…, …",
-   "funcion": "einmaliges vergangenes Ereignis",
+   "funcion": {
+    "de": "einmaliges vergangenes Ereignis",
+    "en": "one-time event in the past",
+    "es": "hecho único en el pasado",
+    "fr": "événement unique dans le passé",
+    "it": "evento unico nel passato",
+    "pt": "acontecimento único no passado"
+   },
    "traducciones": {
     "es": "Cuando yo… (una vez, pasado)",
     "en": "When I… (once, past)",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "Wenn ich…, …",
-   "funcion": "wiederholt/Gegenwart/Zukunft",
+   "funcion": {
+    "de": "wiederholt/Gegenwart/Zukunft",
+    "en": "repeated/present/future",
+    "es": "repetido/presente/futuro",
+    "fr": "répété/présent/futur",
+    "it": "ripetuto/presente/futuro",
+    "pt": "repetido/presente/futuro"
+   },
    "traducciones": {
     "es": "Cuando yo… (siempre/futuro)",
     "en": "When(ever) I…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "Während ich…, …",
-   "funcion": "Gleichzeitigkeit",
+   "funcion": {
+    "de": "Gleichzeitigkeit",
+    "en": "simultaneity",
+    "es": "simultaneidad",
+    "fr": "simultanéité",
+    "it": "simultaneità",
+    "pt": "simultaneidade"
+   },
    "traducciones": {
     "es": "Mientras yo…, …",
     "en": "While I…, …",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "Nachdem ich…hatte, …",
-   "funcion": "danach, mit Plusquamperfekt",
+   "funcion": {
+    "de": "danach, mit Plusquamperfekt",
+    "en": "afterwards, with the pluperfect",
+    "es": "después, con Plusquamperfekt",
+    "fr": "ensuite, avec le plus-que-parfait",
+    "it": "dopo, con il trapassato prossimo",
+    "pt": "depois, com o Plusquamperfekt"
+   },
    "traducciones": {
     "es": "Después de que yo hube…, …",
     "en": "After I had…, …",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "Seitdem ich…, …",
-   "funcion": "seit einem Zeitpunkt",
+   "funcion": {
+    "de": "seit einem Zeitpunkt",
+    "en": "since a point in time",
+    "es": "desde un momento determinado",
+    "fr": "depuis un moment donné",
+    "it": "da un certo momento",
+    "pt": "desde um determinado momento"
+   },
    "traducciones": {
     "es": "Desde que yo…, …",
     "en": "Since I…, …",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "Bevor ich…, …",
-   "funcion": "davor",
+   "funcion": {
+    "de": "davor",
+    "en": "before that",
+    "es": "antes",
+    "fr": "avant cela",
+    "it": "prima",
+    "pt": "antes disso"
+   },
    "traducciones": {
     "es": "Antes de que yo…, …",
     "en": "Before I…, …",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich als nur für ein einmaliges vergangenes Ereignis benutzt?",
-  "Habe ich wenn für Wiederholung oder Gegenwart/Zukunft benutzt?",
-  "Steht nach nachdem das Plusquamperfekt, wenn nötig?",
-  "Habe ich mindestens drei verschiedene Konnektoren benutzt?",
-  "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?"
+  {
+   "de": "Habe ich als nur für ein einmaliges vergangenes Ereignis benutzt?",
+   "en": "Have I used als only for a one-time past event?",
+   "es": "¿Usé «als» solo para un hecho único en el pasado?",
+   "fr": "Ai-je utilisé « als » uniquement pour un événement unique dans le passé ?",
+   "it": "Ho usato «als» solo per un evento unico nel passato?",
+   "pt": "Usei «als» apenas para um evento único no passado?"
+  },
+  {
+   "de": "Habe ich wenn für Wiederholung oder Gegenwart/Zukunft benutzt?",
+   "en": "Have I used wenn for repeated events or present/future situations?",
+   "es": "¿Usé «wenn» para repeticiones o situaciones de presente/futuro?",
+   "fr": "Ai-je utilisé « wenn » pour des événements répétés ou des situations au présent/futur ?",
+   "it": "Ho usato «wenn» per eventi ripetuti o situazioni al presente/futuro?",
+   "pt": "Usei «wenn» para repetições ou situações no presente/futuro?"
+  },
+  {
+   "de": "Steht nach nachdem das Plusquamperfekt, wenn nötig?",
+   "en": "Is the pluperfect used after nachdem where necessary?",
+   "es": "¿Se usa Plusquamperfekt después de «nachdem» cuando es necesario?",
+   "fr": "Le plus-que-parfait est-il utilisé après « nachdem » lorsque c’est nécessaire ?",
+   "it": "Dopo «nachdem» viene usato il trapassato prossimo quando necessario?",
+   "pt": "O Plusquamperfekt é usado depois de «nachdem» quando necessário?"
+  },
+  {
+   "de": "Habe ich mindestens drei verschiedene Konnektoren benutzt?",
+   "en": "Have I used at least three different connectors?",
+   "es": "¿Usé al menos tres conectores diferentes?",
+   "fr": "Ai-je utilisé au moins trois connecteurs différents ?",
+   "it": "Ho usato almeno tre connettivi diversi?",
+   "pt": "Usei pelo menos três conectores diferentes?"
+  },
+  {
+   "de": "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?",
+   "en": "Does the sentence sound natural rather than like a literal translation?",
+   "es": "¿La oración suena natural y no como una traducción literal?",
+   "fr": "La phrase semble-t-elle naturelle, et non comme une traduction littérale ?",
+   "it": "La frase suona naturale, e non come una traduzione letterale?",
+   "pt": "A frase soa natural, e não como uma tradução literal?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Unterschied zwischen als und wenn sowie die anderen Zeitkonnektoren. Prüfen Sie jeden Fall genau. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf den Unterschied zwischen als und wenn sowie die anderen Zeitkonnektoren. Prüfen Sie jeden Fall genau. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on the difference between als and wenn and on the other time connectors. Check each case carefully. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en la diferencia entre «als» y «wenn» y en los demás conectores temporales. Revise cada caso con atención. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur la différence entre « als » et « wenn » ainsi que sur les autres connecteurs temporels. Vérifiez chaque cas avec soin. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulla differenza tra «als» e «wenn» e sugli altri connettivi temporali. Controlli attentamente ogni caso. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente na diferença entre «als» e «wenn» e nos demais conectores temporais. Verifique cada caso com atenção. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*cuándo* und *cuando* gleich übersetzen: *Wenn kommst du?* statt *Wann kommst du?*"

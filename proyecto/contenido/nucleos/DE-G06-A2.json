@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Perfekt vs. Präteritum im Gespräch",
+ "titulo": {
+  "de": "Perfekt vs. Präteritum im Gespräch",
+  "en": "Perfect tense vs. simple past in conversation",
+  "es": "Perfekt vs. Präteritum en la conversación",
+  "fr": "Perfekt ou Präteritum à l'oral",
+  "it": "Perfekt vs. Präteritum nella conversazione",
+  "pt": "Perfekt vs. Präteritum na conversa"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Auf A2 lernt man, dass man im Gespräch fast immer das Perfekt benutzt, um über die Vergangenheit zu sprechen, ausser bei sein und haben, wo das Präteritum üblich ist. Es ist der erste Schritt, um im Alltag über die Vergangenheit und Wünsche sprechen zu können.",
+ "descripcion": {
+  "de": "Auf A2 lernt man, dass man im Gespräch fast immer das Perfekt benutzt, um über die Vergangenheit zu sprechen, ausser bei sein und haben, wo das Präteritum üblich ist. Es ist der erste Schritt, um im Alltag über die Vergangenheit und Wünsche sprechen zu können.",
+  "en": "At A2, you learn that in conversation German almost always uses the Perfekt to talk about the past, except with sein and haben, where the Präteritum is common. This is an important first step for talking naturally about past events in everyday life.",
+  "es": "En A2 se aprende que, al hablar, en alemán casi siempre se usa Perfekt para referirse al pasado, salvo con «sein» y «haben», donde es habitual el Präteritum. Es un primer paso importante para hablar con naturalidad de hechos pasados en la vida cotidiana.",
+  "fr": "Au niveau A2, on apprend qu'à l'oral, l'allemand utilise presque toujours le Perfekt pour parler du passé, sauf avec « sein » et « haben », pour lesquels le Präteritum est courant. C'est une première étape importante pour parler naturellement d'événements passés au quotidien.",
+  "it": "A livello A2 si impara che, nel parlato, il tedesco usa quasi sempre il Perfekt per parlare del passato, tranne con «sein» e «haben», con cui è comune il Präteritum. È un primo passo importante per parlare in modo naturale di eventi passati nella vita quotidiana.",
+  "pt": "No nível A2, aprende-se que, na fala, o alemão quase sempre usa o Perfekt para falar do passado, exceto com «sein» e «haben», em que o Präteritum é comum. É um primeiro passo importante para falar com naturalidade sobre acontecimentos passados no dia a dia."
+ },
  "cuadroReferencia": {
-  "titulo": "Perfekt oder Präteritum?",
+  "titulo": {
+   "de": "Perfekt oder Präteritum?",
+   "en": "Perfekt or Präteritum?",
+   "es": "¿Perfekt o Präteritum?",
+   "fr": "Perfekt ou Präteritum ?",
+   "it": "Perfekt o Präteritum?",
+   "pt": "Perfekt ou Präteritum?"
+  },
   "columnas": [
-   "Verb",
-   "Im Gespräch"
+   {
+    "de": "Verb",
+    "en": "Verb",
+    "es": "Verbo",
+    "fr": "Verbe",
+    "it": "Verbo",
+    "pt": "Verbo"
+   },
+   {
+    "de": "Im Gespräch",
+    "en": "In conversation",
+    "es": "En la conversación",
+    "fr": "À l'oral",
+    "it": "Nel parlato",
+    "pt": "Na conversa"
+   }
   ],
   "filas": [
    [
-    "die meisten Verben",
-    "Perfekt"
+    {
+     "de": "die meisten Verben",
+     "en": "most verbs",
+     "es": "la mayoría de los verbos",
+     "fr": "la plupart des verbes",
+     "it": "la maggior parte dei verbi",
+     "pt": "a maioria dos verbos"
+    },
+    {
+     "de": "Perfekt",
+     "en": "Perfekt",
+     "es": "Perfekt",
+     "fr": "Perfekt",
+     "it": "Perfekt",
+     "pt": "Perfekt"
+    }
    ],
    [
-    "sein",
-    "Präteritum (war)"
+    {
+     "de": "sein",
+     "en": "sein",
+     "es": "sein",
+     "fr": "sein",
+     "it": "sein",
+     "pt": "sein"
+    },
+    {
+     "de": "Präteritum (war)",
+     "en": "Präteritum (war)",
+     "es": "Präteritum («war»)",
+     "fr": "Präteritum (« war »)",
+     "it": "Präteritum («war»)",
+     "pt": "Präteritum («war»)"
+    }
    ],
    [
-    "haben",
-    "Präteritum (hatte)"
+    {
+     "de": "haben",
+     "en": "haben",
+     "es": "haben",
+     "fr": "haben",
+     "it": "haben",
+     "pt": "haben"
+    },
+    {
+     "de": "Präteritum (hatte)",
+     "en": "Präteritum (hatte)",
+     "es": "Präteritum («hatte»)",
+     "fr": "Präteritum (« hatte »)",
+     "it": "Präteritum («hatte»)",
+     "pt": "Präteritum («hatte»)"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich habe gestern ein Buch gelesen.",
+   "texto": {
+    "de": "Ich habe gestern ein Buch gelesen.",
+    "en": "Yesterday I read a book.",
+    "es": "Ayer leí un libro.",
+    "fr": "Hier, j'ai lu un livre.",
+    "it": "Ieri ho letto un libro.",
+    "pt": "Ontem li um livro."
+   },
    "audio": true
   },
   {
-   "texto": "Ich war letztes Jahr in Spanien.",
+   "texto": {
+    "de": "Ich war letztes Jahr in Spanien.",
+    "en": "Last year I was in Spain.",
+    "es": "El año pasado estuve en España.",
+    "fr": "L'année dernière, j'étais en Espagne.",
+    "it": "L'anno scorso ero in Spagna.",
+    "pt": "No ano passado, estive na Espanha."
+   },
    "audio": true
   },
   {
-   "texto": "Ich hatte keine Zeit."
+   "texto": {
+    "de": "Ich hatte keine Zeit.",
+    "en": "I didn't have time.",
+    "es": "No tenía tiempo.",
+    "fr": "Je n'avais pas le temps.",
+    "it": "Non avevo tempo.",
+    "pt": "Eu não tinha tempo."
+   }
   }
  ],
  "notas": [
-  "Für die meisten Verben benutzt man im Gespräch das Perfekt.",
-  "Sein und haben stehen fast immer im Präteritum: war, hatte.",
-  "Das Partizip II steht am Ende des Satzes."
+  {
+   "de": "Für die meisten Verben benutzt man im Gespräch das Perfekt.",
+   "en": "For most verbs, the Perfekt is used in conversation.",
+   "es": "Para la mayoría de los verbos, en la conversación se usa Perfekt.",
+   "fr": "Pour la plupart des verbes, on utilise le Perfekt à l'oral.",
+   "it": "Per la maggior parte dei verbi, nel parlato si usa il Perfekt.",
+   "pt": "Para a maioria dos verbos, usa-se o Perfekt na conversa."
+  },
+  {
+   "de": "Sein und haben stehen fast immer im Präteritum: war, hatte.",
+   "en": "Sein and haben are almost always in the Präteritum: war, hatte.",
+   "es": "«Sein» y «haben» casi siempre se usan en Präteritum: «war», «hatte».",
+   "fr": "« Sein » et « haben » sont presque toujours au Präteritum : « war », « hatte ».",
+   "it": "«Sein» e «haben» sono quasi sempre al Präteritum: «war», «hatte».",
+   "pt": "«Sein» e «haben» quase sempre aparecem no Präteritum: «war», «hatte»."
+  },
+  {
+   "de": "Das Partizip II steht am Ende des Satzes.",
+   "en": "The past participle is at the end of the sentence.",
+   "es": "El participio II va al final de la oración.",
+   "fr": "Le participe passé se place à la fin de la phrase.",
+   "it": "Il participio passato va alla fine della frase.",
+   "pt": "O particípio II vai para o final da frase."
+  }
  ],
  "contraste": {
   "es": "Das Spanische unterscheidet pretérito perfecto und pretérito indefinido nach dem Zeitbezug, während das Deutsche im Gespräch fast immer das Perfekt bevorzugt.",
@@ -54,13 +173,34 @@
   "en": "Im Englischen erzählt man mit dem simple past (I went, I ate), deshalb liegt das Präteritum nahe. Im deutschen Gespräch benutzt man aber das Perfekt: ich bin gegangen, ich habe gegessen."
  },
  "errores": [
-  "Sein und haben im Perfekt bilden, statt das Präteritum zu benutzen.",
-  "Das Partizip II an der falschen Stelle im Satz platzieren."
+  {
+   "de": "Sein und haben im Perfekt bilden, statt das Präteritum zu benutzen.",
+   "en": "Using Perfekt with sein and haben instead of the Präteritum.",
+   "es": "Usar Perfekt con «sein» y «haben» en lugar de Präteritum.",
+   "fr": "Utiliser le Perfekt avec « sein » et « haben » au lieu du Präteritum.",
+   "it": "Usare il Perfekt con «sein» e «haben» invece del Präteritum.",
+   "pt": "Usar o Perfekt com «sein» e «haben» em vez do Präteritum."
+  },
+  {
+   "de": "Das Partizip II an der falschen Stelle im Satz platzieren.",
+   "en": "Putting the past participle in the wrong position in the sentence.",
+   "es": "Colocar el participio II en una posición incorrecta de la oración.",
+   "fr": "Placer le participe passé au mauvais endroit dans la phrase.",
+   "it": "Mettere il participio passato nella posizione sbagliata nella frase.",
+   "pt": "Colocar o particípio II na posição errada da frase."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich habe…gemacht.",
-   "funcion": "Perfekt, allgemein",
+   "funcion": {
+    "de": "Perfekt, allgemein",
+    "en": "Perfekt, general",
+    "es": "Perfekt, general",
+    "fr": "Perfekt, général",
+    "it": "Perfekt, generale",
+    "pt": "Perfekt, geral"
+   },
    "traducciones": {
     "es": "Hice…",
     "en": "I did…",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "Ich war…",
-   "funcion": "Präteritum von sein",
+   "funcion": {
+    "de": "Präteritum von sein",
+    "en": "Präteritum of sein",
+    "es": "Präteritum de «sein»",
+    "fr": "Präteritum de « sein »",
+    "it": "Präteritum di «sein»",
+    "pt": "Präteritum de «sein»"
+   },
    "traducciones": {
     "es": "Estuve…",
     "en": "I was…",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "Ich hatte…",
-   "funcion": "Präteritum von haben",
+   "funcion": {
+    "de": "Präteritum von haben",
+    "en": "Präteritum of haben",
+    "es": "Präteritum de «haben»",
+    "fr": "Präteritum de « haben »",
+    "it": "Präteritum di «haben»",
+    "pt": "Präteritum de «haben»"
+   },
    "traducciones": {
     "es": "Tenía…",
     "en": "I had…",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "Gestern habe ich…",
-   "funcion": "Zeitangabe mit Perfekt",
+   "funcion": {
+    "de": "Zeitangabe mit Perfekt",
+    "en": "time expression with Perfekt",
+    "es": "indicación temporal con Perfekt",
+    "fr": "indication temporelle avec Perfekt",
+    "it": "indicazione di tempo con Perfekt",
+    "pt": "indicação de tempo com Perfekt"
+   },
    "traducciones": {
     "es": "Ayer hice…",
     "en": "Yesterday I…",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "Letztes Jahr war ich…",
-   "funcion": "Zeitangabe mit war",
+   "funcion": {
+    "de": "Zeitangabe mit war",
+    "en": "time expression with war",
+    "es": "indicación temporal con «war»",
+    "fr": "indication temporelle avec « war »",
+    "it": "indicazione di tempo con «war»",
+    "pt": "indicação de tempo com «war»"
+   },
    "traducciones": {
     "es": "El año pasado estuve…",
     "en": "Last year I was…",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "Ich habe…gesehen.",
-   "funcion": "Perfekt, sehen",
+   "funcion": {
+    "de": "Perfekt, sehen",
+    "en": "perfect tense, sehen",
+    "es": "Perfekt, «sehen»",
+    "fr": "Perfekt, « sehen »",
+    "it": "Perfekt, «sehen»",
+    "pt": "Perfekt, «sehen»"
+   },
    "traducciones": {
     "es": "Vi…",
     "en": "I saw…",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Stehen sein und haben im Präteritum?",
-  "Steht das Partizip II am Satzende?",
-  "Habe ich für andere Verben das Perfekt benutzt?",
-  "Klingt der Satz natürlich?",
-  "Klingt der Satz natürlich?"
+  {
+   "de": "Stehen sein und haben im Präteritum?",
+   "en": "Are sein and haben in the Präteritum?",
+   "es": "¿«Sein» y «haben» están en Präteritum?",
+   "fr": "« Sein » et « haben » sont-ils au Präteritum ?",
+   "it": "«Sein» e «haben» sono al Präteritum?",
+   "pt": "«Sein» e «haben» estão no Präteritum?"
+  },
+  {
+   "de": "Steht das Partizip II am Satzende?",
+   "en": "Is the past participle at the end of the sentence?",
+   "es": "¿El participio II está al final de la oración?",
+   "fr": "Le participe passé est-il à la fin de la phrase ?",
+   "it": "Il participio passato è alla fine della frase?",
+   "pt": "O particípio II está no final da frase?"
+  },
+  {
+   "de": "Habe ich für andere Verben das Perfekt benutzt?",
+   "en": "Have I used the Perfekt for other verbs?",
+   "es": "¿Usé Perfekt con los demás verbos?",
+   "fr": "Ai-je utilisé le Perfekt pour les autres verbes ?",
+   "it": "Ho usato il Perfekt per gli altri verbi?",
+   "pt": "Usei o Perfekt com os outros verbos?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Perfekt und Präteritum. Prüfen Sie sein und haben besonders genau sowie die Position des Partizips. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf Perfekt und Präteritum. Prüfen Sie sein und haben besonders genau sowie die Position des Partizips. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on Perfekt and Präteritum. Check sein and haben particularly carefully, as well as the position of the participle. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en Perfekt y Präteritum. Revise con especial atención «sein» y «haben», así como la posición del participio. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur le Perfekt et le Präteritum. Vérifiez particulièrement « sein » et « haben », ainsi que la position du participe. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente su Perfekt e Präteritum. Controlli con particolare attenzione «sein» e «haben», oltre alla posizione del participio. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente em Perfekt e Präteritum. Verifique com atenção especial «sein» e «haben», além da posição do particípio. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*fui* heisst *ich ging* und *ich war*: *Ich war ins Kino* statt *Ich bin ins Kino gegangen*."

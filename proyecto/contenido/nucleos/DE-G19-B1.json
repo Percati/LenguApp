@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Vergleichssätze (*als, wie, je … desto*)",
+ "titulo": {
+  "de": "Vergleichssätze (*als, wie, je … desto*)",
+  "en": "Comparative clauses (*als, wie, je … desto*)",
+  "es": "Oraciones comparativas (*als, wie, je … desto*)",
+  "fr": "Propositions comparatives (*als, wie, je … desto*)",
+  "it": "Frasi comparative (*als, wie, je … desto*)",
+  "pt": "Orações comparativas (*als, wie, je … desto*)"
+ },
  "categoria": "grammar",
  "ancla": "Aspekte B2 (Vorstufe für B1)",
- "descripcion": "Auf B1 vergleicht man mit als (bei Unterschied) und wie (bei Gleichheit) sowie mit dem einfachen Komparativ. Die komplexere je-desto-Struktur wird hier nur als Grundform eingeführt, ohne die feineren Varianten aus höheren Niveaus.",
+ "descripcion": {
+  "de": "Auf B1 vergleicht man mit als (bei Unterschied) und wie (bei Gleichheit) sowie mit dem einfachen Komparativ. Die komplexere je-desto-Struktur wird hier nur als Grundform eingeführt, ohne die feineren Varianten aus höheren Niveaus.",
+  "en": "At B1, comparisons are made with als (for differences) and wie (for equality), as well as with the basic comparative. The more complex je-desto structure is introduced here only in its basic form, without the finer variants from higher levels.",
+  "es": "En B1 se compara con «als» (cuando hay diferencia) y «wie» (cuando hay igualdad), además de usar el comparativo básico. La estructura más compleja «je … desto» se introduce aquí solo en su forma básica, sin las variantes más finas de niveles superiores.",
+  "fr": "Au niveau B1, on compare avec « als » (pour une différence) et « wie » (pour une égalité), ainsi qu’avec le comparatif simple. La structure plus complexe « je … desto » n’est introduite ici que dans sa forme de base, sans les variantes plus fines des niveaux supérieurs.",
+  "it": "A livello B1 si fanno paragoni con «als» (per la differenza) e «wie» (per l’uguaglianza), oltre che con il comparativo semplice. La struttura più complessa «je … desto» viene introdotta qui solo nella forma di base, senza le varianti più sottili dei livelli superiori.",
+  "pt": "No nível B1, as comparações são feitas com «als» (para diferenças) e «wie» (para igualdade), além do comparativo básico. A estrutura mais complexa «je … desto» é introduzida aqui apenas em sua forma básica, sem as variações mais refinadas dos níveis superiores."
+ },
  "cuadroReferencia": {
-  "titulo": "Als oder wie?",
+  "titulo": {
+   "de": "Als oder wie?",
+   "en": "Als or wie?",
+   "es": "¿«Als» o «wie»?",
+   "fr": "« Als » ou « wie » ?",
+   "it": "«Als» o «wie»?",
+   "pt": "«Als» ou «wie»?"
+  },
   "columnas": [
-   "Vergleich",
-   "Wort",
-   "Beispiel"
+   {
+    "de": "Vergleich",
+    "en": "Comparison",
+    "es": "Comparación",
+    "fr": "Comparaison",
+    "it": "Confronto",
+    "pt": "Comparação"
+   },
+   {
+    "de": "Wort",
+    "en": "Word",
+    "es": "Palabra",
+    "fr": "Mot",
+    "it": "Parola",
+    "pt": "Palavra"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Unterschied",
-    "als",
-    "Sie ist grösser als ich."
+    {
+     "de": "Unterschied",
+     "en": "Difference",
+     "es": "Diferencia",
+     "fr": "Différence",
+     "it": "Differenza",
+     "pt": "Diferença"
+    },
+    {
+     "de": "als",
+     "en": "als",
+     "es": "als",
+     "fr": "als",
+     "it": "als",
+     "pt": "als"
+    },
+    {
+     "de": "Sie ist grösser als ich.",
+     "en": "She is taller than me.",
+     "es": "Ella es más alta que yo.",
+     "fr": "Elle est plus grande que moi.",
+     "it": "Lei è più alta di me.",
+     "pt": "Ela é mais alta do que eu."
+    }
    ],
    [
-    "Gleichheit",
-    "wie",
-    "Er ist so gross wie sein Vater."
+    {
+     "de": "Gleichheit",
+     "en": "Equality",
+     "es": "Igualdad",
+     "fr": "Égalité",
+     "it": "Uguaglianza",
+     "pt": "Igualdade"
+    },
+    {
+     "de": "wie",
+     "en": "wie",
+     "es": "«wie»",
+     "fr": "« wie »",
+     "it": "«wie»",
+     "pt": "«wie»"
+    },
+    {
+     "de": "Er ist so gross wie sein Vater.",
+     "en": "He is as tall as his father.",
+     "es": "Es tan alto como su padre.",
+     "fr": "Il est aussi grand que son père.",
+     "it": "È alto quanto suo padre.",
+     "pt": "Ele é tão alto quanto o pai."
+    }
    ],
    [
-    "Proportional",
-    "je…, desto…",
-    "Je mehr, desto besser."
+    {
+     "de": "Proportional",
+     "en": "Proportional",
+     "es": "Proporcional",
+     "fr": "Proportionnel",
+     "it": "Proporzionale",
+     "pt": "Proporcional"
+    },
+    {
+     "de": "je…, desto…",
+     "en": "je…, desto…",
+     "es": "«je…, desto…»",
+     "fr": "« je…, desto… »",
+     "it": "«je…, desto…»",
+     "pt": "«je…, desto…»"
+    },
+    {
+     "de": "Je mehr, desto besser.",
+     "en": "The more, the better.",
+     "es": "Cuanto más, mejor.",
+     "fr": "Plus il y en a, mieux c’est.",
+     "it": "Più ce n’è, meglio è.",
+     "pt": "Quanto mais, melhor."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Sie ist grösser als ich, aber jünger.",
+   "texto": {
+    "de": "Sie ist grösser als ich, aber jünger.",
+    "en": "She is taller than me, but younger.",
+    "es": "Ella es más alta que yo, pero más joven.",
+    "fr": "Elle est plus grande que moi, mais plus jeune.",
+    "it": "Lei è più alta di me, ma più giovane.",
+    "pt": "Ela é mais alta do que eu, mas é mais jovem."
+   },
    "audio": true
   },
   {
-   "texto": "Er ist genauso gross wie sein Vater.",
+   "texto": {
+    "de": "Er ist genauso gross wie sein Vater.",
+    "en": "He is exactly as tall as his father.",
+    "es": "Es exactamente tan alto como su padre.",
+    "fr": "Il est exactement aussi grand que son père.",
+    "it": "È esattamente alto quanto suo padre.",
+    "pt": "Ele é exatamente tão alto quanto o pai."
+   },
    "audio": true
   },
   {
-   "texto": "Je mehr ich übe, desto besser spreche ich Deutsch."
+   "texto": {
+    "de": "Je mehr ich übe, desto besser spreche ich Deutsch.",
+    "en": "The more I practise, the better I speak German.",
+    "es": "Cuanto más practico, mejor hablo alemán.",
+    "fr": "Plus je m’exerce, mieux je parle allemand.",
+    "it": "Più mi esercito, meglio parlo tedesco.",
+    "pt": "Quanto mais pratico, melhor falo alemão."
+   }
   }
  ],
  "notas": [
-  "Nach dem Komparativ (grösser, kleiner, schneller) steht immer als, nie wie.",
-  "So + Adjektiv + wie drückt Gleichheit aus: so alt wie, so schnell wie.",
-  "Nach je steht der Komparativ, im desto-Satz folgt Verb-Subjekt-Umstellung."
+  {
+   "de": "Nach dem Komparativ (grösser, kleiner, schneller) steht immer als, nie wie.",
+   "en": "After the comparative (grösser, kleiner, schneller), German always uses als, never wie.",
+   "es": "Después del comparativo («grösser, kleiner, schneller») siempre se usa «als», nunca «wie».",
+   "fr": "Après le comparatif (« grösser, kleiner, schneller »), on utilise toujours « als », jamais « wie ».",
+   "it": "Dopo il comparativo («grösser, kleiner, schneller») si usa sempre «als», mai «wie».",
+   "pt": "Depois do comparativo («grösser, kleiner, schneller»), usa-se sempre «als», nunca «wie»."
+  },
+  {
+   "de": "So + Adjektiv + wie drückt Gleichheit aus: so alt wie, so schnell wie.",
+   "en": "So + adjective + wie expresses equality: so alt wie, so schnell wie.",
+   "es": "«So + adjetivo + wie» expresa igualdad: «so alt wie», «so schnell wie».",
+   "fr": "« So + adjectif + wie » exprime l’égalité : « so alt wie », « so schnell wie ».",
+   "it": "«So + aggettivo + wie» esprime uguaglianza: «so alt wie», «so schnell wie».",
+   "pt": "«So + adjetivo + wie» expressa igualdade: «so alt wie», «so schnell wie»."
+  },
+  {
+   "de": "Nach je steht der Komparativ, im desto-Satz folgt Verb-Subjekt-Umstellung.",
+   "en": "Je is followed by the comparative; in the desto-clause, verb–subject inversion follows.",
+   "es": "Después de «je» va el comparativo; en la oración con «desto» se produce inversión verbo-sujeto.",
+   "fr": "Après « je » vient le comparatif ; dans la proposition avec « desto », on a une inversion verbe-sujet.",
+   "it": "Dopo «je» viene il comparativo; nella frase con «desto» segue l’inversione verbo-soggetto.",
+   "pt": "Depois de «je» vem o comparativo; na oração com «desto», ocorre inversão verbo-sujeito."
+  }
  ],
  "contraste": {
   "es": "Das Spanische unterscheidet ebenfalls zwischen más…que (Unterschied) und tan…como (Gleichheit), sodass sich die Logik von als und wie leicht überträgt. Je…desto hat mit cuanto más…más eine sehr ähnliche Struktur.",
@@ -58,14 +205,42 @@
   "en": "Than und as passen sehr gut zu als und wie (taller than – grösser als, as tall as – so gross wie). Verwirrend ist nur, dass als auch as heissen kann (als Kind – as a child)."
  },
  "errores": [
-  "Wie statt als nach dem Komparativ verwenden.",
-  "Als statt wie bei Gleichheit verwenden.",
-  "Nach je den Komparativ vergessen."
+  {
+   "de": "Wie statt als nach dem Komparativ verwenden.",
+   "en": "Using wie instead of als after the comparative.",
+   "es": "Usar «wie» en lugar de «als» después del comparativo.",
+   "fr": "Employer « wie » au lieu de « als » après le comparatif.",
+   "it": "Usare «wie» invece di «als» dopo il comparativo.",
+   "pt": "Usar «wie» em vez de «als» depois do comparativo."
+  },
+  {
+   "de": "Als statt wie bei Gleichheit verwenden.",
+   "en": "Using als instead of wie for equality.",
+   "es": "Usar «als» en lugar de «wie» cuando hay igualdad.",
+   "fr": "Employer « als » au lieu de « wie » pour exprimer l’égalité.",
+   "it": "Usare «als» invece di «wie» per l’uguaglianza.",
+   "pt": "Usar «als» em vez de «wie» para igualdade."
+  },
+  {
+   "de": "Nach je den Komparativ vergessen.",
+   "en": "Forgetting the comparative after je.",
+   "es": "Olvidar el comparativo después de «je».",
+   "fr": "Oublier le comparatif après « je ».",
+   "it": "Dimenticare il comparativo dopo «je».",
+   "pt": "Esquecer o comparativo depois de «je»."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…grösser als…",
-   "funcion": "Komparativ, Unterschied",
+   "funcion": {
+    "de": "Komparativ, Unterschied",
+    "en": "comparative, difference",
+    "es": "comparativo, diferencia",
+    "fr": "comparatif, différence",
+    "it": "comparativo, differenza",
+    "pt": "comparativo, diferença"
+   },
    "traducciones": {
     "es": "…más grande que…",
     "en": "…bigger than…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "…so…wie…",
-   "funcion": "Gleichheit",
+   "funcion": {
+    "de": "Gleichheit",
+    "en": "Equality",
+    "es": "Igualdad",
+    "fr": "Égalité",
+    "it": "Uguaglianza",
+    "pt": "Igualdade"
+   },
    "traducciones": {
     "es": "…tan…como…",
     "en": "…as…as…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "Je mehr…, desto…",
-   "funcion": "proportionaler Zusammenhang",
+   "funcion": {
+    "de": "proportionaler Zusammenhang",
+    "en": "proportional relationship",
+    "es": "relación proporcional",
+    "fr": "relation proportionnelle",
+    "it": "rapporto proporzionale",
+    "pt": "relação proporcional"
+   },
    "traducciones": {
     "es": "Cuanto más…, más…",
     "en": "The more…, the more…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "…besser als…",
-   "funcion": "Komparativ",
+   "funcion": {
+    "de": "Komparativ",
+    "en": "comparative",
+    "es": "comparativo",
+    "fr": "comparatif",
+    "it": "comparativo",
+    "pt": "comparativo"
+   },
    "traducciones": {
     "es": "…mejor que…",
     "en": "…better than…",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "genauso…wie…",
-   "funcion": "Gleichheit, verstärkt",
+   "funcion": {
+    "de": "Gleichheit, verstärkt",
+    "en": "equality, emphatic",
+    "es": "igualdad, reforzada",
+    "fr": "égalité, renforcée",
+    "it": "uguaglianza, rafforzata",
+    "pt": "igualdade, reforçada"
+   },
    "traducciones": {
     "es": "igual de…que…",
     "en": "just as…as…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "Je später, desto teurer.",
-   "funcion": "feste proportionale Wendung",
+   "funcion": {
+    "de": "feste proportionale Wendung",
+    "en": "fixed proportional expression",
+    "es": "expresión proporcional fija",
+    "fr": "tournure proportionnelle figée",
+    "it": "espressione proporzionale fissa",
+    "pt": "expressão proporcional fixa"
+   },
    "traducciones": {
     "es": "Cuanto más tarde, más caro.",
     "en": "The later, the more expensive.",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Steht nach dem Komparativ als?",
-  "Steht bei Gleichheit wie?",
-  "Steht nach je der Komparativ?",
-  "Habe ich mindestens zwei verschiedene Vergleichsformen benutzt?",
-  "Klingt der Satz natürlich?"
+  {
+   "de": "Steht nach dem Komparativ als?",
+   "en": "Is als used after the comparative?",
+   "es": "¿Se usa «als» después del comparativo?",
+   "fr": "« Als » est-il utilisé après le comparatif ?",
+   "it": "Dopo il comparativo c’è «als»?",
+   "pt": "«Als» é usado depois do comparativo?"
+  },
+  {
+   "de": "Steht bei Gleichheit wie?",
+   "en": "Is wie used for equality?",
+   "es": "¿Se usa «wie» cuando hay igualdad?",
+   "fr": "« Wie » est-il utilisé pour l’égalité ?",
+   "it": "Per l’uguaglianza c’è «wie»?",
+   "pt": "«Wie» é usado para igualdade?"
+  },
+  {
+   "de": "Steht nach je der Komparativ?",
+   "en": "Is the comparative used after je?",
+   "es": "¿Después de «je» aparece el comparativo?",
+   "fr": "Le comparatif est-il utilisé après « je » ?",
+   "it": "Dopo «je» c’è il comparativo?",
+   "pt": "O comparativo é usado depois de «je»?"
+  },
+  {
+   "de": "Habe ich mindestens zwei verschiedene Vergleichsformen benutzt?",
+   "en": "Have I used at least two different comparison patterns?",
+   "es": "¿Usé al menos dos formas distintas de comparación?",
+   "fr": "Ai-je utilisé au moins deux formes de comparaison différentes ?",
+   "it": "Ho usato almeno due forme di confronto diverse?",
+   "pt": "Usei pelo menos duas formas diferentes de comparação?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Vergleichssätze mit als, wie und je…desto. Prüfen Sie jeden Vergleich auf die richtige Form. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Vergleichssätze mit als, wie und je…desto. Prüfen Sie jeden Vergleich auf die richtige Form. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on comparative clauses with als, wie and je…desto. Check each comparison for the correct form. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en las oraciones comparativas con «als», «wie» y «je…desto». Revise que cada comparación tenga la forma correcta. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les propositions comparatives avec « als », « wie » et « je…desto ». Vérifiez que chaque comparaison est correctement formée. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulle frasi comparative con «als», «wie» e «je…desto». Controlli che ogni confronto abbia la forma corretta. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nas orações comparativas com «als», «wie» e «je…desto». Verifique se cada comparação está na forma correta. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Den Komparativ mit *mehr* bilden wie *más rápido*: *mehr schnell* statt *schneller*."

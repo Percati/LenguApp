@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Zusammenfassen",
+ "titulo": {
+  "de": "Zusammenfassen",
+  "en": "Summarizing",
+  "es": "Resumir",
+  "fr": "Résumer",
+  "it": "Riassumere",
+  "pt": "Resumir"
+ },
  "categoria": "fluency",
  "ancla": "PD A2/B1",
- "descripcion": "Auf B1 fasst man einen kurzen Text zusammen, indem man das Wichtigste in ein bis zwei Sätzen wiedergibt. Es geht darum, nicht jedes Detail zu wiederholen, sondern nur den Kern zu nennen — eine gute Zusammenfassung ist deutlich kürzer als der Originaltext und lässt Nebensächliches weg.",
+ "descripcion": {
+  "de": "Auf B1 fasst man einen kurzen Text zusammen, indem man das Wichtigste in ein bis zwei Sätzen wiedergibt. Es geht darum, nicht jedes Detail zu wiederholen, sondern nur den Kern zu nennen — eine gute Zusammenfassung ist deutlich kürzer als der Originaltext und lässt Nebensächliches weg.",
+  "en": "At B1, you summarize a short text by giving the most important information in one or two sentences. The aim is not to repeat every detail but to state the core message — a good summary is clearly shorter than the original text and leaves out secondary information.",
+  "es": "En B1 se resume un texto breve reproduciendo lo más importante en una o dos oraciones. El objetivo no es repetir cada detalle, sino expresar la idea central; un buen resumen es claramente más corto que el texto original y omite lo secundario.",
+  "fr": "Au niveau B1, on résume un texte court en restituant l'essentiel en une ou deux phrases. Il ne s'agit pas de répéter chaque détail, mais de donner l'idée centrale ; un bon résumé est nettement plus court que le texte original et laisse de côté les éléments secondaires.",
+  "it": "A livello B1 si riassume un testo breve riportando le informazioni più importanti in una o due frasi. L'obiettivo non è ripetere ogni dettaglio, ma esprimere il nucleo del testo; un buon riassunto è chiaramente più breve dell'originale e tralascia gli aspetti secondari.",
+  "pt": "No B1, resume-se um texto curto apresentando o mais importante em uma ou duas frases. O objetivo não é repetir cada detalhe, mas transmitir a ideia central; um bom resumo é claramente mais curto do que o texto original e deixa de lado informações secundárias."
+ },
  "cuadroReferencia": {
-  "titulo": "Kurz zusammenfassen",
+  "titulo": {
+   "de": "Kurz zusammenfassen",
+   "en": "A short summary",
+   "es": "Un resumen breve",
+   "fr": "Un résumé bref",
+   "it": "Un riassunto breve",
+   "pt": "Um resumo curto"
+  },
   "columnas": [
-   "Schritt",
-   "Beispiel"
+   {
+    "de": "Schritt",
+    "en": "Step",
+    "es": "Paso",
+    "fr": "Étape",
+    "it": "Passaggio",
+    "pt": "Etapa"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Hauptidee",
-    "Der Text handelt von…"
+    {
+     "de": "Hauptidee",
+     "en": "Main idea",
+     "es": "Idea principal",
+     "fr": "Idée principale",
+     "it": "Idea principale",
+     "pt": "Ideia principal"
+    },
+    {
+     "de": "Der Text handelt von…",
+     "en": "The text is about…",
+     "es": "El texto trata sobre…",
+     "fr": "Le texte parle de…",
+     "it": "Il testo parla di…",
+     "pt": "O texto fala de…"
+    }
    ],
    [
-    "Ein Detail",
-    "Ausserdem wird gesagt, dass…"
+    {
+     "de": "Ein Detail",
+     "en": "One detail",
+     "es": "Un detalle",
+     "fr": "Un détail",
+     "it": "Un dettaglio",
+     "pt": "Um detalhe"
+    },
+    {
+     "de": "Ausserdem wird gesagt, dass…",
+     "en": "It's also said that…",
+     "es": "Además se dice que…",
+     "fr": "On dit aussi que…",
+     "it": "Si dice anche che…",
+     "pt": "Diz-se também que…"
+    }
    ],
    [
-    "Abschluss",
-    "Kurz gesagt, es geht um…"
+    {
+     "de": "Abschluss",
+     "en": "Closing",
+     "es": "Cierre",
+     "fr": "Conclusion",
+     "it": "Chiusura",
+     "pt": "Encerramento"
+    },
+    {
+     "de": "Kurz gesagt, es geht um…",
+     "en": "In short, it's about…",
+     "es": "En resumen, se trata de…",
+     "fr": "En bref, il s'agit de…",
+     "it": "In breve, si tratta di…",
+     "pt": "Resumindo, trata-se de…"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Der Text handelt von den Vorteilen des Homeoffice.",
+   "texto": {
+    "de": "Der Text handelt von den Vorteilen des Homeoffice.",
+    "en": "The text is about the advantages of working from home.",
+    "es": "El texto trata sobre las ventajas del teletrabajo.",
+    "fr": "Le texte porte sur les avantages du télétravail.",
+    "it": "Il testo parla dei vantaggi del lavoro da casa.",
+    "pt": "O texto trata das vantagens do trabalho em casa."
+   },
    "audio": true
   },
   {
-   "texto": "Ausserdem wird gesagt, dass viele Leute produktiver arbeiten.",
+   "texto": {
+    "de": "Ausserdem wird gesagt, dass viele Leute produktiver arbeiten.",
+    "en": "It also says that many people work more productively.",
+    "es": "Además, se dice que muchas personas trabajan de forma más productiva.",
+    "fr": "Il est également dit que beaucoup de personnes travaillent de manière plus productive.",
+    "it": "Inoltre, si dice che molte persone lavorano in modo più produttivo.",
+    "pt": "Também se diz que muitas pessoas trabalham de forma mais produtiva."
+   },
    "audio": true
   },
   {
-   "texto": "Kurz gesagt, es geht um die Zukunft der Arbeit."
+   "texto": {
+    "de": "Kurz gesagt, es geht um die Zukunft der Arbeit.",
+    "en": "In short, it's about the future of work.",
+    "es": "En resumen, se trata del futuro del trabajo.",
+    "fr": "En bref, il s'agit de l'avenir du travail.",
+    "it": "In breve, si tratta del futuro del lavoro.",
+    "pt": "Resumindo, trata-se do futuro do trabalho."
+   }
   }
  ],
  "notas": [
-  "Der Text handelt von… ist die einfachste Formel, um ein Thema einzuführen.",
-  "Auf B1 reichen ein bis zwei Sätze für eine Zusammenfassung — mehr ist meist zu viel.",
-  "Kurz gesagt eignet sich gut, um die Zusammenfassung einzuleiten oder abzuschliessen."
+  {
+   "de": "Der Text handelt von… ist die einfachste Formel, um ein Thema einzuführen.",
+   "en": "Der Text handelt von… is the simplest way to introduce a topic.",
+   "es": "«Der Text handelt von…» es la fórmula más sencilla para introducir un tema.",
+   "fr": "« Der Text handelt von… » est la formule la plus simple pour introduire un thème.",
+   "it": "«Der Text handelt von…» è la formula più semplice per introdurre un argomento.",
+   "pt": "«Der Text handelt von…» é a forma mais simples de introduzir um tema."
+  },
+  {
+   "de": "Auf B1 reichen ein bis zwei Sätze für eine Zusammenfassung — mehr ist meist zu viel.",
+   "en": "At B1, one or two sentences are enough for a summary — more is usually too much.",
+   "es": "En B1, una o dos oraciones son suficientes para un resumen; más suele ser demasiado.",
+   "fr": "Au niveau B1, une ou deux phrases suffisent pour un résumé ; davantage est généralement excessif.",
+   "it": "A livello B1, una o due frasi bastano per un riassunto; di più di solito è troppo.",
+   "pt": "No B1, uma ou duas frases são suficientes para um resumo; mais do que isso costuma ser demais."
+  },
+  {
+   "de": "Kurz gesagt eignet sich gut, um die Zusammenfassung einzuleiten oder abzuschliessen.",
+   "en": "Kurz gesagt is a good expression for introducing or ending a summary.",
+   "es": "«Kurz gesagt» sirve bien para introducir o cerrar un resumen.",
+   "fr": "« Kurz gesagt » convient bien pour introduire ou conclure un résumé.",
+   "it": "«Kurz gesagt» è adatto per introdurre o concludere un riassunto.",
+   "pt": "«Kurz gesagt» funciona bem para introduzir ou concluir um resumo."
+  }
  ],
  "contraste": {
   "es": "Das Spanische fasst mit el texto trata de… auf sehr ähnliche Weise zusammen, sodass sich diese Grundstruktur direkt übertragen lässt.",
@@ -54,14 +173,42 @@
   "en": "The text is about… wird oft zu Der Text ist über… übertragen; richtig ist Der Text handelt von… oder Im Text geht es um…."
  },
  "errores": [
-  "Den ganzen Text nacherzählen, statt ihn zusammenzufassen.",
-  "Zu viele Details nennen, statt nur das Wichtigste.",
-  "Keine klare Hauptidee nennen."
+  {
+   "de": "Den ganzen Text nacherzählen, statt ihn zusammenzufassen.",
+   "en": "Retelling the whole text instead of summarizing it.",
+   "es": "Volver a contar todo el texto en vez de resumirlo.",
+   "fr": "Raconter tout le texte au lieu de le résumer.",
+   "it": "Raccontare tutto il testo invece di riassumerlo.",
+   "pt": "Recontar o texto inteiro em vez de resumi-lo."
+  },
+  {
+   "de": "Zu viele Details nennen, statt nur das Wichtigste.",
+   "en": "Including too many details instead of just the most important points.",
+   "es": "Incluir demasiados detalles en vez de limitarse a lo más importante.",
+   "fr": "Donner trop de détails au lieu de se limiter à l'essentiel.",
+   "it": "Inserire troppi dettagli invece di limitarsi agli aspetti più importanti.",
+   "pt": "Incluir detalhes demais em vez de apenas os pontos mais importantes."
+  },
+  {
+   "de": "Keine klare Hauptidee nennen.",
+   "en": "Not stating a clear main idea.",
+   "es": "No mencionar una idea principal clara.",
+   "fr": "Ne pas énoncer clairement l'idée principale.",
+   "it": "Non indicare chiaramente l'idea principale.",
+   "pt": "Não apresentar uma ideia principal clara."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Der Text handelt von…",
-   "funcion": "Thema einführen",
+   "funcion": {
+    "de": "Thema einführen",
+    "en": "introducing the topic",
+    "es": "introducir el tema",
+    "fr": "introduire le thème",
+    "it": "introdurre l'argomento",
+    "pt": "introduzir o tema"
+   },
    "traducciones": {
     "es": "El texto trata sobre…",
     "en": "The text is about…",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Es geht um…",
-   "funcion": "Thema, informell",
+   "funcion": {
+    "de": "Thema, informell",
+    "en": "topic, informal",
+    "es": "tema, informal",
+    "fr": "thème, informel",
+    "it": "argomento, informale",
+    "pt": "tema, informal"
+   },
    "traducciones": {
     "es": "Se trata de…",
     "en": "It's about…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Ausserdem wird gesagt, dass…",
-   "funcion": "ein Detail hinzufügen",
+   "funcion": {
+    "de": "ein Detail hinzufügen",
+    "en": "adding one detail",
+    "es": "añadir un detalle",
+    "fr": "ajouter un détail",
+    "it": "aggiungere un dettaglio",
+    "pt": "acrescentar um detalhe"
+   },
    "traducciones": {
     "es": "Además se dice que…",
     "en": "It's also said that…",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Kurz gesagt,…",
-   "funcion": "kompakter Einstieg oder Abschluss",
+   "funcion": {
+    "de": "kompakter Einstieg oder Abschluss",
+    "en": "concise opening or closing",
+    "es": "inicio o cierre conciso",
+    "fr": "introduction ou conclusion concise",
+    "it": "apertura o chiusura concisa",
+    "pt": "abertura ou fechamento conciso"
+   },
    "traducciones": {
     "es": "En pocas palabras,…",
     "en": "In short,…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Zusammenfassend…",
-   "funcion": "Abschluss",
+   "funcion": {
+    "de": "Abschluss",
+    "en": "Closing",
+    "es": "Cierre",
+    "fr": "Conclusion",
+    "it": "Chiusura",
+    "pt": "Encerramento"
+   },
    "traducciones": {
     "es": "En resumen…",
     "en": "To sum up…",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Das Wichtigste ist, dass…",
-   "funcion": "Hauptidee betonen",
+   "funcion": {
+    "de": "Hauptidee betonen",
+    "en": "emphasizing the main idea",
+    "es": "destacar la idea principal",
+    "fr": "mettre en valeur l'idée principale",
+    "it": "sottolineare l'idea principale",
+    "pt": "destacar a ideia principal"
+   },
    "traducciones": {
     "es": "Lo más importante es que…",
     "en": "The most important thing is that…",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Ist die Hauptidee klar genannt?",
-  "Ist die Zusammenfassung deutlich kürzer als der Originaltext?",
-  "Habe ich nur ein bis zwei zusätzliche Details genannt, nicht mehr?",
-  "Habe ich mindestens zwei verschiedene Formeln benutzt?",
-  "Klingt die Zusammenfassung wie eine echte Zusammenfassung, nicht wie eine Nacherzählung?"
+  {
+   "de": "Ist die Hauptidee klar genannt?",
+   "en": "Is the main idea clearly stated?",
+   "es": "¿La idea principal está expresada con claridad?",
+   "fr": "L'idée principale est-elle clairement indiquée ?",
+   "it": "L'idea principale è espressa chiaramente?",
+   "pt": "A ideia principal está claramente apresentada?"
+  },
+  {
+   "de": "Ist die Zusammenfassung deutlich kürzer als der Originaltext?",
+   "en": "Is the summary clearly shorter than the original text?",
+   "es": "¿El resumen es claramente más corto que el texto original?",
+   "fr": "Le résumé est-il nettement plus court que le texte original ?",
+   "it": "Il riassunto è chiaramente più breve del testo originale?",
+   "pt": "O resumo é claramente mais curto do que o texto original?"
+  },
+  {
+   "de": "Habe ich nur ein bis zwei zusätzliche Details genannt, nicht mehr?",
+   "en": "Have I included only one or two extra details, no more?",
+   "es": "¿Incluí solo uno o dos detalles adicionales, no más?",
+   "fr": "Ai-je ajouté seulement un ou deux détails, pas davantage ?",
+   "it": "Ho aggiunto solo uno o due dettagli, non di più?",
+   "pt": "Incluí apenas um ou dois detalhes adicionais, não mais?"
+  },
+  {
+   "de": "Habe ich mindestens zwei verschiedene Formeln benutzt?",
+   "en": "Have I used at least two different expressions?",
+   "es": "¿Usé al menos dos fórmulas diferentes?",
+   "fr": "Ai-je utilisé au moins deux formules différentes ?",
+   "it": "Ho usato almeno due formule diverse?",
+   "pt": "Usei pelo menos duas fórmulas diferentes?"
+  },
+  {
+   "de": "Klingt die Zusammenfassung wie eine echte Zusammenfassung, nicht wie eine Nacherzählung?",
+   "en": "Does the summary sound like a real summary rather than a retelling?",
+   "es": "¿El resumen suena como un verdadero resumen y no como una narración del texto?",
+   "fr": "Le résumé ressemble-t-il à un véritable résumé, et non à un récit détaillé ?",
+   "it": "Il riassunto sembra un vero riassunto e non una rielaborazione dettagliata?",
+   "pt": "O resumo soa como um resumo de verdade, e não como uma recontagem?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Hauptidee klar genannt wird und ob die Zusammenfassung kompakt bleibt, ohne den Text nachzuerzählen. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich darauf, ob die Hauptidee klar genannt wird und ob die Zusammenfassung kompakt bleibt, ohne den Text nachzuerzählen. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on whether the main idea is clearly stated and whether the summary remains concise without retelling the whole text. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en si la idea principal está claramente expresada y si el resumen se mantiene conciso sin volver a contar todo el texto. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur la clarté de l'idée principale et sur le caractère concis du résumé, sans raconter à nouveau tout le texte. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sul fatto che l'idea principale sia espressa chiaramente e che il riassunto resti conciso senza raccontare di nuovo tutto il testo. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente em verificar se a ideia principal está clara e se o resumo permanece conciso, sem recontar todo o texto. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*En resumen* als *In Resümee* übertragen statt *Zusammengefasst* oder *Kurz gesagt*."

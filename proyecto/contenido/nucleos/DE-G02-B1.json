@@ -3,62 +3,251 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Konnektoren (*weil, obwohl, trotzdem, deshalb, während*)",
+ "titulo": {
+  "de": "Konnektoren (*weil, obwohl, trotzdem, deshalb, während*)",
+  "en": "Connectors (*weil, obwohl, trotzdem, deshalb, während*)",
+  "es": "Conectores (*weil, obwohl, trotzdem, deshalb, während*)",
+  "fr": "Connecteurs (*weil, obwohl, trotzdem, deshalb, während*)",
+  "it": "Connettori (*weil, obwohl, trotzdem, deshalb, während*)",
+  "pt": "Conectores (*weil, obwohl, trotzdem, deshalb, während*)"
+ },
  "categoria": "grammar",
  "ancla": "PD A2/B1",
- "descripcion": "Auf B1 lernt man die fünf wichtigsten Konnektoren und ihre Wortstellung: weil und obwohl schicken das Verb ans Ende, deshalb verlangt Verb-Subjekt-Umstellung, während zeigt Gegensatz oder Gleichzeitigkeit.",
+ "descripcion": {
+  "de": "Auf B1 lernt man die fünf wichtigsten Konnektoren und ihre Wortstellung: weil und obwohl schicken das Verb ans Ende, deshalb verlangt Verb-Subjekt-Umstellung, während zeigt Gegensatz oder Gleichzeitigkeit.",
+  "en": "At B1, you learn the five most important connectors and their word order: weil and obwohl send the verb to the end, deshalb requires verb–subject inversion, while während can express contrast or simultaneity.",
+  "es": "En B1 se aprenden los cinco conectores más importantes y su orden de palabras: «weil» y «obwohl» llevan el verbo al final, «deshalb» exige inversión verbo-sujeto y «während» expresa contraste o simultaneidad.",
+  "fr": "Au niveau B1, on apprend les cinq connecteurs les plus importants et l’ordre des mots qu’ils imposent : « weil » et « obwohl » placent le verbe à la fin, « deshalb » exige une inversion verbe-sujet, tandis que « während » exprime le contraste ou la simultanéité.",
+  "it": "A livello B1 si imparano i cinque connettivi più importanti e l’ordine delle parole che richiedono: «weil» e «obwohl» mandano il verbo alla fine, «deshalb» richiede l’inversione verbo-soggetto, mentre «während» esprime contrasto o simultaneità.",
+  "pt": "No nível B1, aprendem-se os cinco conectores mais importantes e a ordem das palavras que eles exigem: «weil» e «obwohl» levam o verbo para o final, «deshalb» exige inversão verbo-sujeito, enquanto «während» expressa contraste ou simultaneidade."
+ },
  "cuadroReferencia": {
-  "titulo": "Fünf Konnektoren",
+  "titulo": {
+   "de": "Fünf Konnektoren",
+   "en": "Five connectors",
+   "es": "Cinco conectores",
+   "fr": "Cinq connecteurs",
+   "it": "Cinque connettivi",
+   "pt": "Cinco conectores"
+  },
   "columnas": [
-   "Konnektor",
-   "Funktion",
-   "Verbposition"
+   {
+    "de": "Konnektor",
+    "en": "Connector",
+    "es": "Conector",
+    "fr": "Connecteur",
+    "it": "Connettore",
+    "pt": "Conector"
+   },
+   {
+    "de": "Funktion",
+    "en": "Function",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "de": "Verbposition",
+    "en": "Verb position",
+    "es": "Posición del verbo",
+    "fr": "Position du verbe",
+    "it": "Posizione del verbo",
+    "pt": "Posição do verbo"
+   }
   ],
   "filas": [
    [
-    "weil",
-    "Grund",
-    "Ende"
+    {
+     "de": "weil",
+     "en": "weil",
+     "es": "weil",
+     "fr": "weil",
+     "it": "weil",
+     "pt": "weil"
+    },
+    {
+     "de": "Grund",
+     "en": "Reason",
+     "es": "Razón",
+     "fr": "Raison",
+     "it": "Motivo",
+     "pt": "Motivo"
+    },
+    {
+     "de": "Ende",
+     "en": "Ending",
+     "es": "Final",
+     "fr": "Fin",
+     "it": "Fine",
+     "pt": "Final"
+    }
    ],
    [
-    "obwohl",
-    "Einräumung",
-    "Ende"
+    {
+     "de": "obwohl",
+     "en": "obwohl",
+     "es": "«obwohl»",
+     "fr": "« obwohl »",
+     "it": "«obwohl»",
+     "pt": "«obwohl»"
+    },
+    {
+     "de": "Einräumung",
+     "en": "concession",
+     "es": "concesión",
+     "fr": "concession",
+     "it": "concessione",
+     "pt": "concessão"
+    },
+    {
+     "de": "Ende",
+     "en": "Ending",
+     "es": "Final",
+     "fr": "Fin",
+     "it": "Fine",
+     "pt": "Final"
+    }
    ],
    [
-    "trotzdem",
-    "Widerspruch",
-    "Position 2 (Hauptsatz)"
+    {
+     "de": "trotzdem",
+     "en": "trotzdem",
+     "es": "«trotzdem»",
+     "fr": "« trotzdem »",
+     "it": "«trotzdem»",
+     "pt": "«trotzdem»"
+    },
+    {
+     "de": "Widerspruch",
+     "en": "Disagreement",
+     "es": "Desacuerdo",
+     "fr": "Désaccord",
+     "it": "Disaccordo",
+     "pt": "Discordância"
+    },
+    {
+     "de": "Position 2 (Hauptsatz)",
+     "en": "position 2 (main clause)",
+     "es": "posición 2 (oración principal)",
+     "fr": "position 2 (proposition principale)",
+     "it": "posizione 2 (frase principale)",
+     "pt": "posição 2 (oração principal)"
+    }
    ],
    [
-    "deshalb",
-    "Folge",
-    "Umstellung"
+    {
+     "de": "deshalb",
+     "en": "deshalb",
+     "es": "deshalb",
+     "fr": "deshalb",
+     "it": "deshalb",
+     "pt": "deshalb"
+    },
+    {
+     "de": "Folge",
+     "en": "consequence",
+     "es": "consecuencia",
+     "fr": "conséquence",
+     "it": "conseguenza",
+     "pt": "consequência"
+    },
+    {
+     "de": "Umstellung",
+     "en": "inversion",
+     "es": "inversión",
+     "fr": "inversion",
+     "it": "inversione",
+     "pt": "inversão"
+    }
    ],
    [
-    "während",
-    "Gegensatz/Gleichzeitigkeit",
-    "Ende"
+    {
+     "de": "während",
+     "en": "während",
+     "es": "«während»",
+     "fr": "« während »",
+     "it": "«während»",
+     "pt": "«während»"
+    },
+    {
+     "de": "Gegensatz/Gleichzeitigkeit",
+     "en": "contrast/simultaneity",
+     "es": "contraste/simultaneidad",
+     "fr": "contraste/simultanéité",
+     "it": "contrasto/simultaneità",
+     "pt": "contraste/simultaneidade"
+    },
+    {
+     "de": "Ende",
+     "en": "Ending",
+     "es": "Final",
+     "fr": "Fin",
+     "it": "Fine",
+     "pt": "Final"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich bleibe zu Hause, weil ich krank bin.",
+   "texto": {
+    "de": "Ich bleibe zu Hause, weil ich krank bin.",
+    "en": "I'm staying at home because I'm ill.",
+    "es": "Me quedo en casa porque estoy enfermo/a.",
+    "fr": "Je reste à la maison parce que je suis malade.",
+    "it": "Resto a casa perché sono malato/a.",
+    "pt": "Vou ficar em casa porque estou doente."
+   },
    "audio": true
   },
   {
-   "texto": "Obwohl es regnet, gehen wir spazieren.",
+   "texto": {
+    "de": "Obwohl es regnet, gehen wir spazieren.",
+    "en": "Although it’s raining, we’re going for a walk.",
+    "es": "Aunque llueve, vamos a dar un paseo.",
+    "fr": "Bien qu’il pleuve, nous allons nous promener.",
+    "it": "Anche se piove, andiamo a fare una passeggiata.",
+    "pt": "Embora esteja chovendo, vamos dar uma caminhada."
+   },
    "audio": true
   },
   {
-   "texto": "Ich habe keine Zeit, trotzdem komme ich kurz vorbei."
+   "texto": {
+    "de": "Ich habe keine Zeit, trotzdem komme ich kurz vorbei.",
+    "en": "I don’t have time, but I’ll still stop by briefly.",
+    "es": "No tengo tiempo, pero aun así pasaré un momento.",
+    "fr": "Je n’ai pas le temps, mais je passerai quand même rapidement.",
+    "it": "Non ho tempo, ma passerò comunque un attimo.",
+    "pt": "Não tenho tempo, mas mesmo assim vou passar aí rapidinho."
+   }
   }
  ],
  "notas": [
-  "Weil und obwohl sind Nebensatz-Konnektoren: das Verb steht am Ende.",
-  "Trotzdem und deshalb sind keine Nebensatz-Konnektoren; nach deshalb folgt Verb-Subjekt-Umstellung.",
-  "Während kann Gegensatz (ich arbeite, während er schläft) oder reine Gleichzeitigkeit bedeuten."
+  {
+   "de": "Weil und obwohl sind Nebensatz-Konnektoren: das Verb steht am Ende.",
+   "en": "Weil and obwohl are subordinate-clause connectors: the verb goes at the end.",
+   "es": "«Weil» y «obwohl» son conectores de subordinada: el verbo va al final.",
+   "fr": "« Weil » et « obwohl » sont des connecteurs de subordination : le verbe se place à la fin.",
+   "it": "«Weil» e «obwohl» sono connettivi subordinanti: il verbo va alla fine.",
+   "pt": "«Weil» e «obwohl» são conectores de oração subordinada: o verbo vai para o final."
+  },
+  {
+   "de": "Trotzdem und deshalb sind keine Nebensatz-Konnektoren; nach deshalb folgt Verb-Subjekt-Umstellung.",
+   "en": "Trotzdem and deshalb are not subordinate-clause connectors; deshalb is followed by verb–subject inversion.",
+   "es": "«Trotzdem» y «deshalb» no son conectores de subordinada; después de «deshalb» hay inversión verbo-sujeto.",
+   "fr": "« Trotzdem » et « deshalb » ne sont pas des connecteurs de subordination ; après « deshalb », il y a inversion verbe-sujet.",
+   "it": "«Trotzdem» e «deshalb» non sono connettivi subordinanti; dopo «deshalb» si ha l’inversione verbo-soggetto.",
+   "pt": "«Trotzdem» e «deshalb» não são conectores de oração subordinada; depois de «deshalb» ocorre inversão verbo-sujeito."
+  },
+  {
+   "de": "Während kann Gegensatz (ich arbeite, während er schläft) oder reine Gleichzeitigkeit bedeuten.",
+   "en": "Während can express contrast (ich arbeite, während er schläft) or simple simultaneity.",
+   "es": "«Während» puede expresar contraste («ich arbeite, während er schläft») o simple simultaneidad.",
+   "fr": "« Während » peut exprimer un contraste (« ich arbeite, während er schläft ») ou une simple simultanéité.",
+   "it": "«Während» può esprimere contrasto («ich arbeite, während er schläft») oppure semplice simultaneità.",
+   "pt": "«Während» pode expressar contraste («ich arbeite, während er schläft») ou simples simultaneidade."
+  }
  ],
  "contraste": {
   "es": "Das Spanische unterscheidet nicht zwischen Nebensatz- und Hauptsatzkonnektoren, weil porque, aunque und por eso die Wortstellung nicht verändern. Diese fehlende Unterscheidung ist der Grund, warum die deutsche Wortstellung nach diesen Konnektoren besonders geübt werden muss.",
@@ -68,14 +257,42 @@
   "en": "Die Bedeutungen passen gut (because, although, still, so), und while deckt wie während Gleichzeitigkeit und Gegensatz ab. Neu ist nur die Wortstellung, besonders nach deshalb und trotzdem, wo das Englische keine Umstellung kennt."
  },
  "errores": [
-  "Nach weil oder obwohl das Verb nicht ans Ende stellen.",
-  "Nach deshalb keine Verb-Subjekt-Umstellung machen.",
-  "Trotzdem wie einen Nebensatz-Konnektor behandeln."
+  {
+   "de": "Nach weil oder obwohl das Verb nicht ans Ende stellen.",
+   "en": "Not putting the verb at the end after weil or obwohl.",
+   "es": "No colocar el verbo al final después de «weil» u «obwohl».",
+   "fr": "Ne pas placer le verbe à la fin après « weil » ou « obwohl ».",
+   "it": "Non mettere il verbo alla fine dopo «weil» o «obwohl».",
+   "pt": "Não colocar o verbo no final depois de «weil» ou «obwohl»."
+  },
+  {
+   "de": "Nach deshalb keine Verb-Subjekt-Umstellung machen.",
+   "en": "Not using verb-subject inversion after deshalb.",
+   "es": "No hacer la inversión verbo-sujeto después de «deshalb».",
+   "fr": "Ne pas faire l'inversion verbe-sujet après « deshalb ».",
+   "it": "Non fare l'inversione verbo-soggetto dopo «deshalb».",
+   "pt": "Não fazer a inversão verbo-sujeito depois de «deshalb»."
+  },
+  {
+   "de": "Trotzdem wie einen Nebensatz-Konnektor behandeln.",
+   "en": "Treating trotzdem like a subordinate-clause connector.",
+   "es": "Tratar «trotzdem» como si fuera un conector de subordinada.",
+   "fr": "Traiter « trotzdem » comme un connecteur de subordination.",
+   "it": "Trattare «trotzdem» come un connettivo subordinante.",
+   "pt": "Tratar «trotzdem» como se fosse um conector de oração subordinada."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…, weil…",
-   "funcion": "Grund",
+   "funcion": {
+    "de": "Grund",
+    "en": "Reason",
+    "es": "Razón",
+    "fr": "Raison",
+    "it": "Motivo",
+    "pt": "Motivo"
+   },
    "traducciones": {
     "es": "…, porque…",
     "en": "…, because…",
@@ -86,7 +303,14 @@
   },
   {
    "expresion": "Obwohl…, …",
-   "funcion": "Einräumung",
+   "funcion": {
+    "de": "Einräumung",
+    "en": "concession",
+    "es": "concesión",
+    "fr": "concession",
+    "it": "concessione",
+    "pt": "concessão"
+   },
    "traducciones": {
     "es": "Aunque…, …",
     "en": "Although…, …",
@@ -97,7 +321,14 @@
   },
   {
    "expresion": "…, trotzdem…",
-   "funcion": "Widerspruch",
+   "funcion": {
+    "de": "Widerspruch",
+    "en": "Disagreement",
+    "es": "Desacuerdo",
+    "fr": "Désaccord",
+    "it": "Disaccordo",
+    "pt": "Discordância"
+   },
    "traducciones": {
     "es": "…, sin embargo…",
     "en": "…, nevertheless…",
@@ -108,7 +339,14 @@
   },
   {
    "expresion": "…, deshalb…",
-   "funcion": "Folge",
+   "funcion": {
+    "de": "Folge",
+    "en": "consequence",
+    "es": "consecuencia",
+    "fr": "conséquence",
+    "it": "conseguenza",
+    "pt": "consequência"
+   },
    "traducciones": {
     "es": "…, por eso…",
     "en": "…, that's why…",
@@ -119,7 +357,14 @@
   },
   {
    "expresion": "…, während…",
-   "funcion": "Gegensatz",
+   "funcion": {
+    "de": "Gegensatz",
+    "en": "contrast",
+    "es": "contraste",
+    "fr": "contraste",
+    "it": "contrasto",
+    "pt": "contraste"
+   },
    "traducciones": {
     "es": "…, mientras que…",
     "en": "…, whereas…",
@@ -130,7 +375,14 @@
   },
   {
    "expresion": "…, denn…",
-   "funcion": "Grund, Hauptsatz",
+   "funcion": {
+    "de": "Grund, Hauptsatz",
+    "en": "reason, main clause",
+    "es": "razón, oración principal",
+    "fr": "cause, proposition principale",
+    "it": "motivo, frase principale",
+    "pt": "motivo, oração principal"
+   },
    "traducciones": {
     "es": "…, ya que…",
     "en": "…, for…",
@@ -141,13 +393,55 @@
   }
  ],
  "autochequeo": [
-  "Steht nach weil und obwohl das Verb am Ende?",
-  "Ist nach deshalb die Verb-Subjekt-Umstellung vorhanden?",
-  "Habe ich mindestens drei verschiedene Konnektoren benutzt?",
-  "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?",
-  "Habe ich sowohl Nebensatz- als auch Hauptsatzkonnektoren benutzt?"
+  {
+   "de": "Steht nach weil und obwohl das Verb am Ende?",
+   "en": "Is the verb at the end after weil and obwohl?",
+   "es": "¿El verbo está al final después de «weil» y «obwohl»?",
+   "fr": "Le verbe est-il à la fin après « weil » et « obwohl » ?",
+   "it": "Il verbo è alla fine dopo «weil» e «obwohl»?",
+   "pt": "O verbo está no final depois de «weil» e «obwohl»?"
+  },
+  {
+   "de": "Ist nach deshalb die Verb-Subjekt-Umstellung vorhanden?",
+   "en": "Is there verb–subject inversion after deshalb?",
+   "es": "¿Hay inversión verbo-sujeto después de «deshalb»?",
+   "fr": "Y a-t-il inversion verbe-sujet après « deshalb » ?",
+   "it": "C’è inversione verbo-soggetto dopo «deshalb»?",
+   "pt": "Há inversão verbo-sujeito depois de «deshalb»?"
+  },
+  {
+   "de": "Habe ich mindestens drei verschiedene Konnektoren benutzt?",
+   "en": "Have I used at least three different connectors?",
+   "es": "¿Usé al menos tres conectores diferentes?",
+   "fr": "Ai-je utilisé au moins trois connecteurs différents ?",
+   "it": "Ho usato almeno tre connettivi diversi?",
+   "pt": "Usei pelo menos três conectores diferentes?"
+  },
+  {
+   "de": "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung?",
+   "en": "Does the sentence sound natural rather than like a literal translation?",
+   "es": "¿La oración suena natural y no como una traducción literal?",
+   "fr": "La phrase semble-t-elle naturelle, et non comme une traduction littérale ?",
+   "it": "La frase suona naturale, e non come una traduzione letterale?",
+   "pt": "A frase soa natural, e não como uma tradução literal?"
+  },
+  {
+   "de": "Habe ich sowohl Nebensatz- als auch Hauptsatzkonnektoren benutzt?",
+   "en": "Have I used both subordinate-clause and main-clause connectors?",
+   "es": "¿Usé tanto conectores de subordinada como de oración principal?",
+   "fr": "Ai-je utilisé à la fois des connecteurs de subordination et de proposition principale ?",
+   "it": "Ho usato sia connettivi subordinanti sia connettivi della frase principale?",
+   "pt": "Usei tanto conectores de oração subordinada quanto de oração principal?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konnektoren und ihre Wortstellung. Prüfen Sie jeden Konnektor auf die richtige Verbposition. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Konnektoren und ihre Wortstellung. Prüfen Sie jeden Konnektor auf die richtige Verbposition. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on the connectors and their word order. Check each connector for the correct verb position. Do not rewrite the text yourself.",
+  "es": "Concéntrese exclusivamente en los conectores y en el orden de palabras que exigen. Revise en cada conector si la posición del verbo es correcta. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les connecteurs et l’ordre des mots qu’ils imposent. Vérifiez pour chaque connecteur que la position du verbe est correcte. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sui connettivi e sull’ordine delle parole che richiedono. Controlli per ogni connettivo che la posizione del verbo sia corretta. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nos conectores e na ordem das palavras que eles exigem. Verifique em cada conector se a posição do verbo está correta. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*así que* als *also* übertragen und ohne Umstellung: *Also ich bleibe zu Hause* statt *Also bleibe ich zu Hause*."

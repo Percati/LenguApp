@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Kollokationen",
+ "titulo": {
+  "de": "Kollokationen",
+  "en": "Collocations",
+  "es": "Colocaciones",
+  "fr": "Collocations",
+  "it": "Collocazioni",
+  "pt": "Colocações"
+ },
  "categoria": "vocabulary",
  "ancla": "PD B1+",
- "descripcion": "Auf B1 lernt man die einfachsten und häufigsten Verb-Nomen-Kollokationen des Alltags: Zeit haben, Angst haben, Hunger haben. Diese Verbindungen sind fest und nicht durch ein anderes Verb ersetzbar, auch wenn die Bedeutung ähnlich wäre.",
+ "descripcion": {
+  "de": "Auf B1 lernt man die einfachsten und häufigsten Verb-Nomen-Kollokationen des Alltags: Zeit haben, Angst haben, Hunger haben. Diese Verbindungen sind fest und nicht durch ein anderes Verb ersetzbar, auch wenn die Bedeutung ähnlich wäre.",
+  "en": "At B1, you learn the simplest and most common everyday verb–noun collocations: Zeit haben, Angst haben, Hunger haben. These combinations are fixed and cannot simply be replaced by another verb, even if the meaning seems similar.",
+  "es": "En B1 se aprenden las colocaciones verbo-sustantivo más sencillas y frecuentes de la vida cotidiana: «Zeit haben, Angst haben, Hunger haben». Estas combinaciones son fijas y no pueden sustituirse simplemente por otro verbo, aunque el significado parezca similar.",
+  "fr": "Au niveau B1, on apprend les collocations verbe-nom les plus simples et les plus fréquentes du quotidien : « Zeit haben, Angst haben, Hunger haben ». Ces associations sont fixes et ne peuvent pas simplement être remplacées par un autre verbe, même si le sens paraît similaire.",
+  "it": "A livello B1 si imparano le collocazioni verbo-sostantivo più semplici e comuni della vita quotidiana: «Zeit haben, Angst haben, Hunger haben». Queste combinazioni sono fisse e non si possono sostituire semplicemente con un altro verbo, anche se il significato sembra simile.",
+  "pt": "No nível B1, aprendem-se as colocações verbo-substantivo mais simples e frequentes do dia a dia: «Zeit haben, Angst haben, Hunger haben». Essas combinações são fixas e não podem simplesmente ser substituídas por outro verbo, mesmo que o significado pareça semelhante."
+ },
  "cuadroReferencia": {
-  "titulo": "Alltägliche Kollokationen mit haben",
+  "titulo": {
+   "de": "Alltägliche Kollokationen mit haben",
+   "en": "Everyday collocations with haben",
+   "es": "Colocaciones cotidianas con «haben»",
+   "fr": "Collocations courantes avec « haben »",
+   "it": "Collocazioni quotidiane con «haben»",
+   "pt": "Colocações do dia a dia com «haben»"
+  },
   "columnas": [
-   "Nomen",
-   "Verb"
+   {
+    "de": "Nomen",
+    "en": "Noun",
+    "es": "Sustantivo",
+    "fr": "Nom",
+    "it": "Sostantivo",
+    "pt": "Substantivo"
+   },
+   {
+    "de": "Verb",
+    "en": "Verb",
+    "es": "Verbo",
+    "fr": "Verbe",
+    "it": "Verbo",
+    "pt": "Verbo"
+   }
   ],
   "filas": [
    [
-    "Zeit",
-    "haben"
+    {
+     "de": "Zeit",
+     "en": "Tense",
+     "es": "Tiempo verbal",
+     "fr": "Temps",
+     "it": "Tempo",
+     "pt": "Tempo verbal"
+    },
+    {
+     "de": "haben",
+     "en": "haben",
+     "es": "haben",
+     "fr": "haben",
+     "it": "haben",
+     "pt": "haben"
+    }
    ],
    [
-    "Angst",
-    "haben"
+    {
+     "de": "Angst",
+     "en": "fear",
+     "es": "miedo",
+     "fr": "peur",
+     "it": "paura",
+     "pt": "medo"
+    },
+    {
+     "de": "haben",
+     "en": "haben",
+     "es": "haben",
+     "fr": "haben",
+     "it": "haben",
+     "pt": "haben"
+    }
    ],
    [
-    "Hunger/Durst",
-    "haben"
+    {
+     "de": "Hunger/Durst",
+     "en": "hunger/thirst",
+     "es": "hambre/sed",
+     "fr": "faim/soif",
+     "it": "fame/sete",
+     "pt": "fome/sede"
+    },
+    {
+     "de": "haben",
+     "en": "haben",
+     "es": "haben",
+     "fr": "haben",
+     "it": "haben",
+     "pt": "haben"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich habe heute leider keine Zeit.",
+   "texto": {
+    "de": "Ich habe heute leider keine Zeit.",
+    "en": "Unfortunately, I don’t have time today.",
+    "es": "Lamentablemente, hoy no tengo tiempo.",
+    "fr": "Malheureusement, je n’ai pas le temps aujourd’hui.",
+    "it": "Purtroppo oggi non ho tempo.",
+    "pt": "Infelizmente, hoje não tenho tempo."
+   },
    "audio": true
   },
   {
-   "texto": "Ich habe ein bisschen Angst vor Prüfungen.",
+   "texto": {
+    "de": "Ich habe ein bisschen Angst vor Prüfungen.",
+    "en": "I’m a little afraid of exams.",
+    "es": "Tengo un poco de miedo a los exámenes.",
+    "fr": "J’ai un peu peur des examens.",
+    "it": "Ho un po’ paura degli esami.",
+    "pt": "Tenho um pouco de medo de provas."
+   },
    "audio": true
   },
   {
-   "texto": "Ich habe grossen Hunger, lass uns essen gehen."
+   "texto": {
+    "de": "Ich habe grossen Hunger, lass uns essen gehen.",
+    "en": "I’m very hungry; let’s go eat.",
+    "es": "Tengo mucha hambre; vamos a comer.",
+    "fr": "J’ai très faim, allons manger.",
+    "it": "Ho molta fame, andiamo a mangiare.",
+    "pt": "Estou com muita fome; vamos comer."
+   }
   }
  ],
  "notas": [
-  "Im Deutschen sagt man Zeit haben, Angst haben, Hunger haben — mit sein wäre das falsch.",
-  "Diese Kollokationen mit haben sind sehr häufig und müssen als feste Einheit gelernt werden.",
-  "Recht haben ist eine weitere sehr nützliche Kollokation mit haben."
+  {
+   "de": "Im Deutschen sagt man Zeit haben, Angst haben, Hunger haben — mit sein wäre das falsch.",
+   "en": "In German, you say Zeit haben, Angst haben, Hunger haben — using sein would be wrong.",
+   "es": "En alemán se dice «Zeit haben, Angst haben, Hunger haben»; usar «sein» sería incorrecto.",
+   "fr": "En allemand, on dit « Zeit haben, Angst haben, Hunger haben » ; employer « sein » serait incorrect.",
+   "it": "In tedesco si dice «Zeit haben, Angst haben, Hunger haben»; usare «sein» sarebbe sbagliato.",
+   "pt": "Em alemão, diz-se «Zeit haben, Angst haben, Hunger haben»; usar «sein» estaria errado."
+  },
+  {
+   "de": "Diese Kollokationen mit haben sind sehr häufig und müssen als feste Einheit gelernt werden.",
+   "en": "These collocations with haben are very common and must be learned as fixed units.",
+   "es": "Estas colocaciones con «haben» son muy frecuentes y deben aprenderse como unidades fijas.",
+   "fr": "Ces collocations avec « haben » sont très fréquentes et doivent être apprises comme des unités fixes.",
+   "it": "Queste collocazioni con «haben» sono molto comuni e vanno imparate come unità fisse.",
+   "pt": "Essas colocações com «haben» são muito frequentes e devem ser aprendidas como unidades fixas."
+  },
+  {
+   "de": "Recht haben ist eine weitere sehr nützliche Kollokation mit haben.",
+   "en": "Recht haben is another very useful collocation with haben.",
+   "es": "«Recht haben» es otra colocación muy útil con «haben».",
+   "fr": "« Recht haben » est une autre collocation très utile avec « haben ».",
+   "it": "«Recht haben» è un’altra collocazione molto utile con «haben».",
+   "pt": "«Recht haben» é outra colocação muito útil com «haben»."
+  }
  ],
  "contraste": {
   "es": "Das Spanische verwendet hier tener (tener tiempo, tener miedo, tener hambre), was strukturell fast identisch zum deutschen haben ist. Diese Kollokationen übertragen sich deshalb sehr leicht.",
@@ -54,13 +173,34 @@
   "en": "Das Englische benutzt hier oft be, wo das Deutsche haben verlangt: I'm hungry – ich habe Hunger (oder ich bin hungrig), I'm afraid – ich habe Angst, you're right – du hast recht. Ich bin Angst oder du bist recht sind typische Fehler."
  },
  "errores": [
-  "Diese festen Verbindungen mit einem anderen Verb ersetzen.",
-  "Den Artikel bei Hunger und Durst falsch setzen (meist kein Artikel)."
+  {
+   "de": "Diese festen Verbindungen mit einem anderen Verb ersetzen.",
+   "en": "Replacing these fixed combinations with another verb.",
+   "es": "Sustituir estas combinaciones fijas por otro verbo.",
+   "fr": "Remplacer ces associations fixes par un autre verbe.",
+   "it": "Sostituire queste combinazioni fisse con un altro verbo.",
+   "pt": "Substituir essas combinações fixas por outro verbo."
+  },
+  {
+   "de": "Den Artikel bei Hunger und Durst falsch setzen (meist kein Artikel).",
+   "en": "Using the wrong article with Hunger and Durst (usually no article).",
+   "es": "Usar mal el artículo con «Hunger» y «Durst» (normalmente sin artículo).",
+   "fr": "Employer le mauvais article avec « Hunger » et « Durst » (généralement sans article).",
+   "it": "Usare l’articolo sbagliato con «Hunger» e «Durst» (di solito senza articolo).",
+   "pt": "Usar o artigo errado com «Hunger» e «Durst» (normalmente sem artigo)."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich habe keine Zeit.",
-   "funcion": "feste Kollokation",
+   "funcion": {
+    "de": "feste Kollokation",
+    "en": "fixed collocation",
+    "es": "colocación fija",
+    "fr": "collocation figée",
+    "it": "collocazione fissa",
+    "pt": "colocação fixa"
+   },
    "traducciones": {
     "es": "No tengo tiempo.",
     "en": "I don't have time.",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "Ich habe Angst vor…",
-   "funcion": "feste Kollokation mit Präposition",
+   "funcion": {
+    "de": "feste Kollokation mit Präposition",
+    "en": "fixed collocation with preposition",
+    "es": "colocación fija con preposición",
+    "fr": "collocation figée avec préposition",
+    "it": "collocazione fissa con preposizione",
+    "pt": "colocação fixa com preposição"
+   },
    "traducciones": {
     "es": "Tengo miedo de…",
     "en": "I'm afraid of…",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "Ich habe Hunger.",
-   "funcion": "feste Kollokation",
+   "funcion": {
+    "de": "feste Kollokation",
+    "en": "fixed collocation",
+    "es": "colocación fija",
+    "fr": "collocation figée",
+    "it": "collocazione fissa",
+    "pt": "colocação fixa"
+   },
    "traducciones": {
     "es": "Tengo hambre.",
     "en": "I'm hungry.",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "Du hast recht.",
-   "funcion": "feste Kollokation",
+   "funcion": {
+    "de": "feste Kollokation",
+    "en": "fixed collocation",
+    "es": "colocación fija",
+    "fr": "collocation figée",
+    "it": "collocazione fissa",
+    "pt": "colocação fixa"
+   },
    "traducciones": {
     "es": "Tenés razón.",
     "en": "You're right.",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "Ich habe Lust auf…",
-   "funcion": "feste Kollokation, Wunsch",
+   "funcion": {
+    "de": "feste Kollokation, Wunsch",
+    "en": "fixed collocation, wish",
+    "es": "colocación fija, deseo",
+    "fr": "collocation figée, souhait",
+    "it": "collocazione fissa, desiderio",
+    "pt": "colocação fixa, desejo"
+   },
    "traducciones": {
     "es": "Tengo ganas de…",
     "en": "I feel like…",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "Ich habe Durst.",
-   "funcion": "feste Kollokation",
+   "funcion": {
+    "de": "feste Kollokation",
+    "en": "fixed collocation",
+    "es": "colocación fija",
+    "fr": "collocation figée",
+    "it": "collocazione fissa",
+    "pt": "colocação fixa"
+   },
    "traducciones": {
     "es": "Tengo sed.",
     "en": "I'm thirsty.",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich haben statt sein in diesen Kollokationen benutzt?",
-  "Habe ich mindestens vier verschiedene Kollokationen mit haben benutzt?",
-  "Klingt der Text natürlich?",
-  "Habe ich den Artikel bei Hunger/Durst richtig gesetzt (meist keiner)?",
-  "Habe ich Recht haben korrekt verwendet?"
+  {
+   "de": "Habe ich haben statt sein in diesen Kollokationen benutzt?",
+   "en": "Have I used haben rather than sein in these collocations?",
+   "es": "¿Usé «haben» en lugar de «sein» en estas colocaciones?",
+   "fr": "Ai-je utilisé « haben » plutôt que « sein » dans ces collocations ?",
+   "it": "Ho usato «haben» invece di «sein» in queste collocazioni?",
+   "pt": "Usei «haben» em vez de «sein» nessas colocações?"
+  },
+  {
+   "de": "Habe ich mindestens vier verschiedene Kollokationen mit haben benutzt?",
+   "en": "Have I used at least four different collocations with haben?",
+   "es": "¿Usé al menos cuatro colocaciones diferentes con «haben»?",
+   "fr": "Ai-je utilisé au moins quatre collocations différentes avec « haben » ?",
+   "it": "Ho usato almeno quattro collocazioni diverse con «haben»?",
+   "pt": "Usei pelo menos quatro colocações diferentes com «haben»?"
+  },
+  {
+   "de": "Klingt der Text natürlich?",
+   "en": "Does the text sound natural?",
+   "es": "¿El texto suena natural?",
+   "fr": "Le texte sonne-t-il naturellement ?",
+   "it": "Il testo suona naturale?",
+   "pt": "O texto soa natural?"
+  },
+  {
+   "de": "Habe ich den Artikel bei Hunger/Durst richtig gesetzt (meist keiner)?",
+   "en": "Have I used the article correctly with Hunger/Durst (usually none)?",
+   "es": "¿Usé correctamente el artículo con «Hunger/Durst» (normalmente ninguno)?",
+   "fr": "Ai-je correctement utilisé l’article avec « Hunger/Durst » (généralement aucun) ?",
+   "it": "Ho usato correttamente l’articolo con «Hunger/Durst» (di solito nessuno)?",
+   "pt": "Usei corretamente o artigo com «Hunger/Durst» (normalmente nenhum)?"
+  },
+  {
+   "de": "Habe ich Recht haben korrekt verwendet?",
+   "en": "Have I used Recht haben correctly?",
+   "es": "¿Usé correctamente «Recht haben»?",
+   "fr": "Ai-je correctement utilisé « Recht haben » ?",
+   "it": "Ho usato correttamente «Recht haben»?",
+   "pt": "Usei «Recht haben» corretamente?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Kollokationen mit haben. Prüfen Sie, ob haben statt sein verwendet wird. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Kollokationen mit haben. Prüfen Sie, ob haben statt sein verwendet wird. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on collocations with haben. Check carefully whether haben is used instead of sein. Do not rewrite the text yourself. Point out anything that is unclear.",
+  "es": "Concentre su atención exclusivamente en las colocaciones con «haben». Compruebe si se usa «haben» en lugar de «sein». No reescriba usted mismo el texto.",
+  "fr": "Concentrez votre attention exclusivement sur les collocations avec « haben ». Vérifiez que « haben » est utilisé au lieu de « sein ». Ne réécrivez pas le texte.",
+  "it": "Concentri la sua attenzione esclusivamente sulle collocazioni con «haben». Controlli se viene usato «haben» invece di «sein». Non riscriva lei stesso il testo.",
+  "pt": "Concentre-se exclusivamente nas colocações com «haben». Verifique com atenção se «haben» é usado em vez de «sein». Não reescreva você mesmo o texto. Sinalize tudo o que não estiver claro."
+ },
  "erroresContrastivos": {
   "es": [
    "*tengo frío* als *Ich habe kalt* übertragen statt *Mir ist kalt* (in der Schweiz mundartlich üblich, standardsprachlich falsch)."

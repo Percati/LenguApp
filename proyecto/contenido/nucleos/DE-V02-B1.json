@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Redewendungen",
+ "titulo": {
+  "de": "Redewendungen",
+  "en": "Idioms",
+  "es": "Expresiones idiomáticas",
+  "fr": "Expressions idiomatiques",
+  "it": "Espressioni idiomatiche",
+  "pt": "Expressões idiomáticas"
+ },
  "categoria": "vocabulary",
  "ancla": "PD B1+",
- "descripcion": "Auf B1 lernt man einige einfache, sehr häufige Redewendungen des Alltags. Es geht nicht darum, viele zu kennen, sondern wenige richtig und im passenden Moment zu benutzen — ohne sie wörtlich aus der eigenen Muttersprache zu übersetzen.",
+ "descripcion": {
+  "de": "Auf B1 lernt man einige einfache, sehr häufige Redewendungen des Alltags. Es geht nicht darum, viele zu kennen, sondern wenige richtig und im passenden Moment zu benutzen — ohne sie wörtlich aus der eigenen Muttersprache zu übersetzen.",
+  "en": "At B1, you learn a few simple, very common everyday idioms. The aim is not to know many, but to use a few correctly and at the right moment — without translating them literally from your native language.",
+  "es": "En B1 se aprenden algunas expresiones idiomáticas sencillas y muy frecuentes de la vida cotidiana. No se trata de conocer muchas, sino de usar unas pocas correctamente y en el momento adecuado, sin traducirlas literalmente de la lengua materna.",
+  "fr": "Au niveau B1, on apprend quelques expressions idiomatiques simples et très fréquentes de la vie quotidienne. Le but n’est pas d’en connaître beaucoup, mais d’en utiliser quelques-unes correctement et au bon moment, sans les traduire littéralement depuis sa langue maternelle.",
+  "it": "A livello B1 si imparano alcune espressioni idiomatiche semplici e molto comuni nella vita quotidiana. L’obiettivo non è conoscerne molte, ma usarne poche correttamente e al momento giusto, senza tradurle alla lettera dalla propria lingua madre.",
+  "pt": "No nível B1, aprendem-se algumas expressões idiomáticas simples e muito frequentes do dia a dia. O objetivo não é conhecer muitas, mas usar algumas corretamente e no momento adequado, sem traduzi-las literalmente da língua materna."
+ },
  "cuadroReferencia": {
-  "titulo": "Einfache, häufige Redewendungen",
+  "titulo": {
+   "de": "Einfache, häufige Redewendungen",
+   "en": "Simple, common idioms",
+   "es": "Expresiones idiomáticas sencillas y frecuentes",
+   "fr": "Expressions idiomatiques simples et fréquentes",
+   "it": "Espressioni idiomatiche semplici e comuni",
+   "pt": "Expressões idiomáticas simples e frequentes"
+  },
   "columnas": [
-   "Redewendung",
-   "Bedeutung"
+   {
+    "de": "Redewendung",
+    "en": "Idiom",
+    "es": "Expresión idiomática",
+    "fr": "Expression idiomatique",
+    "it": "Espressione idiomatica",
+    "pt": "Expressão idiomática"
+   },
+   {
+    "de": "Bedeutung",
+    "en": "Meaning",
+    "es": "Significado",
+    "fr": "Signification",
+    "it": "Significato",
+    "pt": "Significado"
+   }
   ],
   "filas": [
    [
-    "Kein Problem!",
-    "das ist in Ordnung"
+    {
+     "de": "Kein Problem!",
+     "en": "No problem!",
+     "es": "¡No hay problema!",
+     "fr": "Pas de problème !",
+     "it": "Nessun problema!",
+     "pt": "Sem problema!"
+    },
+    {
+     "de": "das ist in Ordnung",
+     "en": "that’s fine",
+     "es": "está bien",
+     "fr": "c’est bon / d’accord",
+     "it": "va bene",
+     "pt": "está tudo bem"
+    }
    ],
    [
-    "Das ist mir egal.",
-    "das interessiert mich nicht"
+    {
+     "de": "Das ist mir egal.",
+     "en": "I don't mind.",
+     "es": "Me da igual.",
+     "fr": "Ça m’est égal.",
+     "it": "Per me è uguale.",
+     "pt": "Para mim tanto faz."
+    },
+    {
+     "de": "das interessiert mich nicht",
+     "en": "I don’t care about that",
+     "es": "eso no me interesa",
+     "fr": "cela ne m’intéresse pas",
+     "it": "non mi interessa",
+     "pt": "isso não me interessa"
+    }
    ],
    [
-    "Alles klar?",
-    "verstehst du?"
+    {
+     "de": "Alles klar?",
+     "en": "All clear?",
+     "es": "¿Todo claro?",
+     "fr": "Tout est clair ?",
+     "it": "Tutto chiaro?",
+     "pt": "Tudo claro?"
+    },
+    {
+     "de": "verstehst du?",
+     "en": "do you understand?",
+     "es": "¿entiendes?",
+     "fr": "tu comprends ?",
+     "it": "hai capito?",
+     "pt": "você entendeu?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Kein Problem, das machen wir schon!",
+   "texto": {
+    "de": "Kein Problem, das machen wir schon!",
+    "en": "No problem, we’ll manage!",
+    "es": "¡No hay problema, ya lo resolveremos!",
+    "fr": "Pas de problème, on va s’en sortir !",
+    "it": "Nessun problema, ce la faremo!",
+    "pt": "Sem problema, a gente dá um jeito!"
+   },
    "audio": true
   },
   {
-   "texto": "Ehrlich gesagt, das ist mir ziemlich egal.",
+   "texto": {
+    "de": "Ehrlich gesagt, das ist mir ziemlich egal.",
+    "en": "Honestly, I really don’t care.",
+    "es": "Sinceramente, me da bastante igual.",
+    "fr": "Honnêtement, ça m’est assez égal.",
+    "it": "A dire il vero, mi è abbastanza indifferente.",
+    "pt": "Sinceramente, eu não ligo muito para isso."
+   },
    "audio": true
   },
   {
-   "texto": "Alles klar? Hast du alles verstanden?"
+   "texto": {
+    "de": "Alles klar? Hast du alles verstanden?",
+    "en": "All clear? Did you understand everything?",
+    "es": "¿Todo claro? ¿Entendiste todo?",
+    "fr": "Tout est clair ? Tu as tout compris ?",
+    "it": "Tutto chiaro? Hai capito tutto?",
+    "pt": "Tudo certo? Você entendeu tudo?"
+   }
   }
  ],
  "notas": [
-  "Kein Problem! ist eine sehr häufige, informelle Antwort auf eine Bitte.",
-  "Das ist mir egal drückt Desinteresse aus, aber nicht unbedingt unhöflich.",
-  "Alles klar? kann eine echte Frage sein oder einfach eine Floskel am Ende eines Satzes."
+  {
+   "de": "Kein Problem! ist eine sehr häufige, informelle Antwort auf eine Bitte.",
+   "en": "Kein Problem! is a very common informal response to a request.",
+   "es": "«Kein Problem!» es una respuesta informal muy frecuente a una petición.",
+   "fr": "« Kein Problem ! » est une réponse informelle très courante à une demande.",
+   "it": "«Kein Problem!» è una risposta informale molto comune a una richiesta.",
+   "pt": "«Kein Problem!» é uma resposta informal muito comum a um pedido."
+  },
+  {
+   "de": "Das ist mir egal drückt Desinteresse aus, aber nicht unbedingt unhöflich.",
+   "en": "Das ist mir egal expresses lack of interest, but is not necessarily impolite.",
+   "es": "«Das ist mir egal» expresa desinterés, aunque no es necesariamente descortés.",
+   "fr": "« Das ist mir egal » exprime le désintérêt, sans être nécessairement impoli.",
+   "it": "«Das ist mir egal» esprime disinteresse, ma non è necessariamente scortese.",
+   "pt": "«Das ist mir egal» expressa desinteresse, mas não é necessariamente indelicado."
+  },
+  {
+   "de": "Alles klar? kann eine echte Frage sein oder einfach eine Floskel am Ende eines Satzes.",
+   "en": "Alles klar? can be a genuine question or simply a formula at the end of a sentence.",
+   "es": "«Alles klar?» puede ser una pregunta real o simplemente una fórmula al final de una frase.",
+   "fr": "« Alles klar ? » peut être une vraie question ou simplement une formule en fin de phrase.",
+   "it": "«Alles klar?» può essere una vera domanda o semplicemente una formula alla fine di una frase.",
+   "pt": "«Alles klar?» pode ser uma pergunta de verdade ou apenas uma expressão ao final de uma frase."
+  }
  ],
  "contraste": {
   "es": "Diese einfachen Redewendungen haben oft eine direkte spanische Entsprechung (no hay problema, me da igual), sodass sie sich leicht übertragen lassen.",
@@ -54,14 +173,42 @@
   "en": "No problem entspricht kein Problem. I don't care wird oft zu ich kümmere mich nicht übertragen; richtig ist das ist mir egal, mit einer Dativ-Struktur, die das Englische nicht kennt."
  },
  "errores": [
-  "Eine Redewendung wörtlich aus der Muttersprache übersetzen.",
-  "Das ist mir egal in einem Kontext benutzen, wo es unhöflich wirkt.",
-  "Redewendungen mit dem falschen Register mischen."
+  {
+   "de": "Eine Redewendung wörtlich aus der Muttersprache übersetzen.",
+   "en": "Translating an idiom literally from your native language.",
+   "es": "Traducir una expresión idiomática literalmente de la lengua materna.",
+   "fr": "Traduire littéralement une expression idiomatique depuis sa langue maternelle.",
+   "it": "Tradurre alla lettera un’espressione idiomatica dalla propria lingua madre.",
+   "pt": "Traduzir uma expressão idiomática literalmente da língua materna."
+  },
+  {
+   "de": "Das ist mir egal in einem Kontext benutzen, wo es unhöflich wirkt.",
+   "en": "Using Das ist mir egal in a context where it sounds rude.",
+   "es": "Usar «Das ist mir egal» en un contexto en el que resulta descortés.",
+   "fr": "Employer « Das ist mir egal » dans un contexte où cela paraît impoli.",
+   "it": "Usare «Das ist mir egal» in un contesto in cui suona scortese.",
+   "pt": "Usar «Das ist mir egal» em um contexto em que soa indelicado."
+  },
+  {
+   "de": "Redewendungen mit dem falschen Register mischen.",
+   "en": "Mixing idioms from the wrong register.",
+   "es": "Mezclar expresiones idiomáticas de registros distintos.",
+   "fr": "Mélanger des expressions idiomatiques de registres inadaptés.",
+   "it": "Mescolare espressioni idiomatiche di registri sbagliati.",
+   "pt": "Misturar expressões idiomáticas de registros inadequados."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Kein Problem!",
-   "funcion": "Zustimmung, informell",
+   "funcion": {
+    "de": "Zustimmung, informell",
+    "en": "agreement, informal",
+    "es": "acuerdo, informal",
+    "fr": "accord, informel",
+    "it": "accordo, informale",
+    "pt": "concordância, informal"
+   },
    "traducciones": {
     "es": "¡No hay problema!",
     "en": "No problem!",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Das ist mir egal.",
-   "funcion": "Desinteresse",
+   "funcion": {
+    "de": "Desinteresse",
+    "en": "lack of interest",
+    "es": "desinterés",
+    "fr": "désintérêt",
+    "it": "disinteresse",
+    "pt": "desinteresse"
+   },
    "traducciones": {
     "es": "Me da igual.",
     "en": "I don't mind.",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Alles klar?",
-   "funcion": "Verständnis prüfen",
+   "funcion": {
+    "de": "Verständnis prüfen",
+    "en": "checking understanding",
+    "es": "comprobar comprensión",
+    "fr": "vérifier la compréhension",
+    "it": "verificare la comprensione",
+    "pt": "verificar a compreensão"
+   },
    "traducciones": {
     "es": "¿Todo claro?",
     "en": "All clear?",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Mach dir keine Sorgen.",
-   "funcion": "Beruhigung",
+   "funcion": {
+    "de": "Beruhigung",
+    "en": "reassurance",
+    "es": "tranquilizar",
+    "fr": "rassurer",
+    "it": "rassicurazione",
+    "pt": "tranquilizar"
+   },
    "traducciones": {
     "es": "No te preocupes.",
     "en": "Don't worry.",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Es tut mir leid.",
-   "funcion": "Entschuldigung",
+   "funcion": {
+    "de": "Entschuldigung",
+    "en": "apology",
+    "es": "disculpa",
+    "fr": "excuse",
+    "it": "scusa",
+    "pt": "pedido de desculpas"
+   },
    "traducciones": {
     "es": "Lo siento.",
     "en": "I'm sorry.",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Viel Glück!",
-   "funcion": "guter Wunsch",
+   "funcion": {
+    "de": "guter Wunsch",
+    "en": "good wish",
+    "es": "buen deseo",
+    "fr": "souhait positif",
+    "it": "augurio",
+    "pt": "bom desejo"
+   },
    "traducciones": {
     "es": "¡Buena suerte!",
     "en": "Good luck!",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Passt die Redewendung zum Kontext?",
-  "Habe ich mindestens drei verschiedene Redewendungen benutzt?",
-  "Klingt keine davon wie eine wörtliche Übersetzung?",
-  "Klingt der Text natürlich?",
-  "Habe ich das Register beachtet?"
+  {
+   "de": "Passt die Redewendung zum Kontext?",
+   "en": "Does the idiom fit the context?",
+   "es": "¿La expresión idiomática encaja en el contexto?",
+   "fr": "L’expression idiomatique convient-elle au contexte ?",
+   "it": "L’espressione idiomatica è adatta al contesto?",
+   "pt": "A expressão idiomática combina com o contexto?"
+  },
+  {
+   "de": "Habe ich mindestens drei verschiedene Redewendungen benutzt?",
+   "en": "Have I used at least three different idioms?",
+   "es": "¿Usé al menos tres expresiones idiomáticas diferentes?",
+   "fr": "Ai-je utilisé au moins trois expressions idiomatiques différentes ?",
+   "it": "Ho usato almeno tre espressioni idiomatiche diverse?",
+   "pt": "Usei pelo menos três expressões idiomáticas diferentes?"
+  },
+  {
+   "de": "Klingt keine davon wie eine wörtliche Übersetzung?",
+   "en": "Does none of them sound like a literal translation?",
+   "es": "¿Ninguna suena como una traducción literal?",
+   "fr": "Aucune ne ressemble-t-elle à une traduction littérale ?",
+   "it": "Nessuna suona come una traduzione letterale?",
+   "pt": "Nenhuma delas soa como uma tradução literal?"
+  },
+  {
+   "de": "Klingt der Text natürlich?",
+   "en": "Does the text sound natural?",
+   "es": "¿El texto suena natural?",
+   "fr": "Le texte sonne-t-il naturellement ?",
+   "it": "Il testo suona naturale?",
+   "pt": "O texto soa natural?"
+  },
+  {
+   "de": "Habe ich das Register beachtet?",
+   "en": "Have I respected the register?",
+   "es": "¿Tuve en cuenta el registro?",
+   "fr": "Ai-je respecté le registre ?",
+   "it": "Ho rispettato il registro?",
+   "pt": "Respeitei o registro?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Redewendungen. Prüfen Sie, ob sie zum Kontext passen und ob eine davon wie eine wörtliche Übersetzung aus dem Spanischen klingt. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Redewendungen. Prüfen Sie, ob sie zum Kontext passen und ob eine davon wie eine wörtliche Übersetzung aus dem Spanischen klingt. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on the idioms. Check whether they fit the context and whether any of them sounds like a literal translation from Spanish. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en las expresiones idiomáticas. Revise si encajan en el contexto y si alguna suena como una traducción literal del español. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les expressions idiomatiques. Vérifiez qu’elles conviennent au contexte et qu’aucune ne ressemble à une traduction littérale de l’espagnol. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulle espressioni idiomatiche. Controlli se sono adatte al contesto e se qualcuna suona come una traduzione letterale dallo spagnolo. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nas expressões idiomáticas. Verifique se elas se encaixam no contexto e se alguma soa como uma tradução literal do espanhol. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*tomar el pelo* als *die Haare nehmen* übertragen statt *jemanden auf den Arm nehmen*."

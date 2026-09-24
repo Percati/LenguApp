@@ -3,57 +3,239 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Relativsätze",
+ "titulo": {
+  "de": "Relativsätze",
+  "en": "Relative clauses",
+  "es": "Oraciones de relativo",
+  "fr": "Propositions relatives",
+  "it": "Frasi relative",
+  "pt": "Orações relativas"
+ },
  "categoria": "grammar",
  "ancla": "PD B1",
- "descripcion": "Auf B1 wird der einfache Relativsatz im Nominativ und Akkusativ sicher gebildet. Genitiv, Präpositionen und die selteneren Formen kommen erst später. Wichtig ist vor allem, Genus und Kasus des Relativpronomens richtig zu bestimmen.",
+ "descripcion": {
+  "de": "Auf B1 wird der einfache Relativsatz im Nominativ und Akkusativ sicher gebildet. Genitiv, Präpositionen und die selteneren Formen kommen erst später. Wichtig ist vor allem, Genus und Kasus des Relativpronomens richtig zu bestimmen.",
+  "en": "At B1, simple relative clauses in the nominative and accusative are formed reliably. The genitive, prepositions and less common forms come later. The main point is to determine the gender and case of the relative pronoun correctly.",
+  "es": "En B1 se forman con seguridad las oraciones de relativo sencillas en nominativo y acusativo. El genitivo, las preposiciones y las formas menos frecuentes aparecen más adelante. Lo más importante es determinar correctamente el género y el caso del pronombre relativo.",
+  "fr": "Au niveau B1, on maîtrise les propositions relatives simples au nominatif et à l’accusatif. Le génitif, les prépositions et les formes moins fréquentes viennent plus tard. L’essentiel est de déterminer correctement le genre et le cas du pronom relatif.",
+  "it": "A livello B1 si formano con sicurezza le frasi relative semplici al nominativo e all’accusativo. Il genitivo, le preposizioni e le forme meno comuni vengono più avanti. La cosa più importante è determinare correttamente genere e caso del pronome relativo.",
+  "pt": "No nível B1, formam-se com segurança as orações relativas simples no nominativo e no acusativo. O genitivo, as preposições e as formas menos frequentes aparecem depois. O mais importante é determinar corretamente o gênero e o caso do pronome relativo."
+ },
  "cuadroReferencia": {
-  "titulo": "Relativpronomen Nom./Akk.",
+  "titulo": {
+   "de": "Relativpronomen Nom./Akk.",
+   "en": "Relative pronouns: nom./acc.",
+   "es": "Pronombres relativos: nom./acus.",
+   "fr": "Pronoms relatifs : nom./acc.",
+   "it": "Pronomi relativi: nom./acc.",
+   "pt": "Pronomes relativos: nom./acus."
+  },
   "columnas": [
-   "Kasus",
-   "maskulin",
-   "feminin",
-   "neutral/Plural"
+   {
+    "de": "Kasus",
+    "en": "Case",
+    "es": "Caso",
+    "fr": "Cas",
+    "it": "Caso",
+    "pt": "Caso"
+   },
+   {
+    "de": "maskulin",
+    "en": "masculine",
+    "es": "masculino",
+    "fr": "masculin",
+    "it": "maschile",
+    "pt": "masculino"
+   },
+   {
+    "de": "feminin",
+    "en": "feminine",
+    "es": "femenino",
+    "fr": "féminin",
+    "it": "femminile",
+    "pt": "feminino"
+   },
+   {
+    "de": "neutral/Plural",
+    "en": "neuter/plural",
+    "es": "neutro/plural",
+    "fr": "neutre/pluriel",
+    "it": "neutro/plurale",
+    "pt": "neutro/plural"
+   }
   ],
   "filas": [
    [
-    "Nominativ",
-    "der",
-    "die",
-    "das/die"
+    {
+     "de": "Nominativ",
+     "en": "Nominative",
+     "es": "Nominativo",
+     "fr": "Nominatif",
+     "it": "Nominativo",
+     "pt": "Nominativo"
+    },
+    {
+     "de": "der",
+     "en": "der",
+     "es": "«der»",
+     "fr": "« der »",
+     "it": "«der»",
+     "pt": "«der»"
+    },
+    {
+     "de": "die",
+     "en": "die",
+     "es": "«die»",
+     "fr": "« die »",
+     "it": "«die»",
+     "pt": "«die»"
+    },
+    {
+     "de": "das/die",
+     "en": "das/die",
+     "es": "«das/die»",
+     "fr": "« das/die »",
+     "it": "«das/die»",
+     "pt": "«das/die»"
+    }
    ],
    [
-    "Akkusativ",
-    "den",
-    "die",
-    "das/die"
+    {
+     "de": "Akkusativ",
+     "en": "Accusative",
+     "es": "Acusativo",
+     "fr": "Accusatif",
+     "it": "Accusativo",
+     "pt": "Acusativo"
+    },
+    {
+     "de": "den",
+     "en": "den",
+     "es": "«den»",
+     "fr": "« den »",
+     "it": "«den»",
+     "pt": "«den»"
+    },
+    {
+     "de": "die",
+     "en": "die",
+     "es": "«die»",
+     "fr": "« die »",
+     "it": "«die»",
+     "pt": "«die»"
+    },
+    {
+     "de": "das/die",
+     "en": "das/die",
+     "es": "«das/die»",
+     "fr": "« das/die »",
+     "it": "«das/die»",
+     "pt": "«das/die»"
+    }
    ],
    [
-    "Beispiel Akk.",
-    "den Mann, den ich sehe",
-    "die Frau, die ich sehe",
-    "das Kind, das ich sehe"
+    {
+     "de": "Beispiel Akk.",
+     "en": "Acc. example",
+     "es": "Ejemplo en acus.",
+     "fr": "Exemple à l’acc.",
+     "it": "Esempio all’acc.",
+     "pt": "Exemplo no acus."
+    },
+    {
+     "de": "den Mann, den ich sehe",
+     "en": "the man I see",
+     "es": "el hombre al que veo",
+     "fr": "l’homme que je vois",
+     "it": "l’uomo che vedo",
+     "pt": "o homem que eu vejo"
+    },
+    {
+     "de": "die Frau, die ich sehe",
+     "en": "the woman I see",
+     "es": "la mujer a la que veo",
+     "fr": "la femme que je vois",
+     "it": "la donna che vedo",
+     "pt": "a mulher que eu vejo"
+    },
+    {
+     "de": "das Kind, das ich sehe",
+     "en": "the child I see",
+     "es": "el niño al que veo",
+     "fr": "l’enfant que je vois",
+     "it": "il bambino che vedo",
+     "pt": "a criança que eu vejo"
+    }
    ]
   ],
-  "notaPie": "Auf B1 reichen Nominativ und Akkusativ. Nur das Maskulinum ändert sich im Akkusativ (der → den)."
+  "notaPie": {
+   "de": "Auf B1 reichen Nominativ und Akkusativ. Nur das Maskulinum ändert sich im Akkusativ (der → den).",
+   "en": "At B1, the nominative and accusative are enough. Only the masculine form changes in the accusative (der → den).",
+   "es": "En B1 bastan el nominativo y el acusativo. Solo el masculino cambia en acusativo («der» → «den»).",
+   "fr": "Au niveau B1, le nominatif et l’accusatif suffisent. Seul le masculin change à l’accusatif (« der » → « den »).",
+   "it": "Al B1 bastano nominativo e accusativo. Solo il maschile cambia all’accusativo («der» → «den»).",
+   "pt": "No nível B1, nominativo e acusativo são suficientes. Apenas o masculino muda no acusativo («der» → «den»)."
+  }
  },
  "ejemplos": [
   {
-   "texto": "Der Mann, der dort steht, ist mein Nachbar.",
+   "texto": {
+    "de": "Der Mann, der dort steht, ist mein Nachbar.",
+    "en": "The man standing over there is my neighbor.",
+    "es": "El hombre que está allí es mi vecino.",
+    "fr": "L’homme qui se tient là-bas est mon voisin.",
+    "it": "L’uomo che è lì è il mio vicino.",
+    "pt": "O homem que está ali é meu vizinho."
+   },
    "audio": true
   },
   {
-   "texto": "Das Buch, das ich gerade lese, ist sehr interessant.",
+   "texto": {
+    "de": "Das Buch, das ich gerade lese, ist sehr interessant.",
+    "en": "The book I’m reading right now is very interesting.",
+    "es": "El libro que estoy leyendo ahora es muy interesante.",
+    "fr": "Le livre que je lis en ce moment est très intéressant.",
+    "it": "Il libro che sto leggendo in questo momento è molto interessante.",
+    "pt": "O livro que estou lendo agora é muito interessante."
+   },
    "audio": true
   },
   {
-   "texto": "Die Frau, die ich gestern getroffen habe, arbeitet bei uns."
+   "texto": {
+    "de": "Die Frau, die ich gestern getroffen habe, arbeitet bei uns.",
+    "en": "The woman I met yesterday works with us.",
+    "es": "La mujer que conocí ayer trabaja con nosotros.",
+    "fr": "La femme que j’ai rencontrée hier travaille chez nous.",
+    "it": "La donna che ho incontrato ieri lavora con noi.",
+    "pt": "A mulher que conheci ontem trabalha conosco."
+   }
   }
  ],
  "notas": [
-  "Genus und Numerus des Relativpronomens kommen vom Bezugswort, der Kasus von der Funktion im Relativsatz.",
-  "Vor dem Relativsatz steht immer ein Komma, und das Verb steht am Ende.",
-  "Im Akkusativ ändert sich nur die maskuline Form (den) gegenüber dem Nominativ (der)."
+  {
+   "de": "Genus und Numerus des Relativpronomens kommen vom Bezugswort, der Kasus von der Funktion im Relativsatz.",
+   "en": "The gender and number of the relative pronoun come from the antecedent; its case comes from its function in the relative clause.",
+   "es": "El género y el número del pronombre relativo dependen del antecedente; el caso depende de su función en la oración de relativo.",
+   "fr": "Le genre et le nombre du pronom relatif dépendent de l’antécédent ; son cas dépend de sa fonction dans la proposition relative.",
+   "it": "Il genere e il numero del pronome relativo dipendono dall’antecedente; il caso dipende dalla sua funzione nella frase relativa.",
+   "pt": "O gênero e o número do pronome relativo vêm do antecedente; o caso depende da função dele na oração relativa."
+  },
+  {
+   "de": "Vor dem Relativsatz steht immer ein Komma, und das Verb steht am Ende.",
+   "en": "There is always a comma before the relative clause, and the verb goes at the end.",
+   "es": "Siempre hay una coma antes de la oración de relativo y el verbo va al final.",
+   "fr": "Il y a toujours une virgule avant la proposition relative et le verbe se place à la fin.",
+   "it": "Prima della frase relativa va sempre una virgola e il verbo va alla fine.",
+   "pt": "Sempre há uma vírgula antes da oração relativa, e o verbo vai para o final."
+  },
+  {
+   "de": "Im Akkusativ ändert sich nur die maskuline Form (den) gegenüber dem Nominativ (der).",
+   "en": "In the accusative, only the masculine form changes (den) compared with the nominative (der).",
+   "es": "En acusativo, solo cambia la forma masculina («den») con respecto al nominativo («der»).",
+   "fr": "À l’accusatif, seule la forme masculine change (« den ») par rapport au nominatif (« der »).",
+   "it": "All’accusativo cambia solo la forma maschile («den») rispetto al nominativo («der»).",
+   "pt": "No acusativo, apenas a forma masculina muda («den») em relação ao nominativo («der»)."
+  }
  ],
  "contraste": {
   "es": "Das Spanische benutzt für fast alles que, ohne Kasus zu markieren. Spanischsprachige übertragen deshalb oft den Nominativ, auch wenn der Akkusativ gebraucht wird.",
@@ -63,14 +245,42 @@
   "en": "Im Englischen kann das Relativpronomen oft wegfallen (the man I know), im Deutschen nie: der Mann, den ich kenne. Auch den Unterschied zwischen who und whom macht kaum jemand, deshalb ist der Akkusativ den neu."
  },
  "errores": [
-  "Den Kasus des Relativpronomens vom Bezugswort statt von der Funktion im Relativsatz ableiten.",
-  "Das Komma vor dem Relativsatz vergessen.",
-  "Das Verb nicht ans Ende des Relativsatzes stellen."
+  {
+   "de": "Den Kasus des Relativpronomens vom Bezugswort statt von der Funktion im Relativsatz ableiten.",
+   "en": "Deriving the case of the relative pronoun from the antecedent instead of from its function in the relative clause.",
+   "es": "Determinar el caso del pronombre relativo a partir del antecedente en vez de su función en la oración de relativo.",
+   "fr": "Déduire le cas du pronom relatif de l’antécédent au lieu de sa fonction dans la proposition relative.",
+   "it": "Determinare il caso del pronome relativo dall’antecedente invece che dalla sua funzione nella frase relativa.",
+   "pt": "Determinar o caso do pronome relativo pelo antecedente, e não pela função dele na oração relativa."
+  },
+  {
+   "de": "Das Komma vor dem Relativsatz vergessen.",
+   "en": "Forgetting the comma before the relative clause.",
+   "es": "Olvidar la coma antes de la oración de relativo.",
+   "fr": "Oublier la virgule avant la proposition relative.",
+   "it": "Dimenticare la virgola prima della frase relativa.",
+   "pt": "Esquecer a vírgula antes da oração relativa."
+  },
+  {
+   "de": "Das Verb nicht ans Ende des Relativsatzes stellen.",
+   "en": "Not putting the verb at the end of the relative clause.",
+   "es": "No colocar el verbo al final de la oración de relativo.",
+   "fr": "Ne pas placer le verbe à la fin de la proposition relative.",
+   "it": "Non mettere il verbo alla fine della frase relativa.",
+   "pt": "Não colocar o verbo no final da oração relativa."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…, der/die/das…",
-   "funcion": "Relativsatz, Nominativ",
+   "funcion": {
+    "de": "Relativsatz, Nominativ",
+    "en": "relative clause, nominative",
+    "es": "oración de relativo, nominativo",
+    "fr": "proposition relative, nominatif",
+    "it": "frase relativa, nominativo",
+    "pt": "oração relativa, nominativo"
+   },
    "traducciones": {
     "es": "…, que…",
     "en": "…, who/which…",
@@ -81,7 +291,14 @@
   },
   {
    "expresion": "…, den ich…",
-   "funcion": "Relativsatz, Akkusativ maskulin",
+   "funcion": {
+    "de": "Relativsatz, Akkusativ maskulin",
+    "en": "relative clause, masculine accusative",
+    "es": "oración de relativo, acusativo masculino",
+    "fr": "proposition relative, accusatif masculin",
+    "it": "frase relativa, accusativo maschile",
+    "pt": "oração relativa, acusativo masculino"
+   },
    "traducciones": {
     "es": "…, al que…",
     "en": "…, whom/which I…",
@@ -92,7 +309,14 @@
   },
   {
    "expresion": "Der Mann, der…",
-   "funcion": "Relativsatz über eine Person",
+   "funcion": {
+    "de": "Relativsatz über eine Person",
+    "en": "relative clause about a person",
+    "es": "oración de relativo sobre una persona",
+    "fr": "proposition relative sur une personne",
+    "it": "frase relativa su una persona",
+    "pt": "oração relativa sobre uma pessoa"
+   },
    "traducciones": {
     "es": "El hombre que…",
     "en": "The man who…",
@@ -103,7 +327,14 @@
   },
   {
    "expresion": "Das Buch, das…",
-   "funcion": "Relativsatz über eine Sache",
+   "funcion": {
+    "de": "Relativsatz über eine Sache",
+    "en": "relative clause about a thing",
+    "es": "oración de relativo sobre una cosa",
+    "fr": "proposition relative sur une chose",
+    "it": "frase relativa su una cosa",
+    "pt": "oração relativa sobre uma coisa"
+   },
    "traducciones": {
     "es": "El libro que…",
     "en": "The book which…",
@@ -114,7 +345,14 @@
   },
   {
    "expresion": "…, die ich kenne.",
-   "funcion": "Relativsatz, Akkusativ feminin/Plural",
+   "funcion": {
+    "de": "Relativsatz, Akkusativ feminin/Plural",
+    "en": "relative clause, feminine/plural accusative",
+    "es": "oración de relativo, acusativo femenino/plural",
+    "fr": "proposition relative, accusatif féminin/pluriel",
+    "it": "frase relativa, accusativo femminile/plurale",
+    "pt": "oração relativa, acusativo feminino/plural"
+   },
    "traducciones": {
     "es": "…, que conozco.",
     "en": "…, whom/which I know.",
@@ -125,7 +363,14 @@
   },
   {
    "expresion": "Kennst du die Person, die…?",
-   "funcion": "Frage mit Relativsatz",
+   "funcion": {
+    "de": "Frage mit Relativsatz",
+    "en": "question with a relative clause",
+    "es": "pregunta con oración de relativo",
+    "fr": "question avec proposition relative",
+    "it": "domanda con frase relativa",
+    "pt": "pergunta com oração relativa"
+   },
    "traducciones": {
     "es": "¿Conocés a la persona que…?",
     "en": "Do you know the person who…?",
@@ -136,13 +381,55 @@
   }
  ],
  "autochequeo": [
-  "Kommt Genus und Numerus vom Bezugswort?",
-  "Kommt der Kasus von der Funktion im Relativsatz?",
-  "Steht vor dem Relativsatz ein Komma?",
-  "Steht das Verb am Ende des Relativsatzes?",
-  "Klingt der Satz natürlich?"
+  {
+   "de": "Kommt Genus und Numerus vom Bezugswort?",
+   "en": "Do gender and number come from the antecedent?",
+   "es": "¿El género y el número dependen del antecedente?",
+   "fr": "Le genre et le nombre viennent-ils de l’antécédent ?",
+   "it": "Genere e numero dipendono dall’antecedente?",
+   "pt": "O gênero e o número vêm do antecedente?"
+  },
+  {
+   "de": "Kommt der Kasus von der Funktion im Relativsatz?",
+   "en": "Does the case come from the function in the relative clause?",
+   "es": "¿El caso depende de la función en la oración de relativo?",
+   "fr": "Le cas dépend-il de la fonction dans la proposition relative ?",
+   "it": "Il caso dipende dalla funzione nella frase relativa?",
+   "pt": "O caso depende da função na oração relativa?"
+  },
+  {
+   "de": "Steht vor dem Relativsatz ein Komma?",
+   "en": "Is there a comma before the relative clause?",
+   "es": "¿Hay una coma antes de la oración de relativo?",
+   "fr": "Y a-t-il une virgule avant la proposition relative ?",
+   "it": "C’è una virgola prima della frase relativa?",
+   "pt": "Há uma vírgula antes da oração relativa?"
+  },
+  {
+   "de": "Steht das Verb am Ende des Relativsatzes?",
+   "en": "Is the verb at the end of the relative clause?",
+   "es": "¿El verbo está al final de la oración de relativo?",
+   "fr": "Le verbe est-il à la fin de la proposition relative ?",
+   "it": "Il verbo è alla fine della frase relativa?",
+   "pt": "O verbo está no final da oração relativa?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Relativsätze im Nominativ und Akkusativ. Prüfen Sie Genus, Numerus und Kasus bei jedem Relativpronomen. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Relativsätze im Nominativ und Akkusativ. Prüfen Sie Genus, Numerus und Kasus bei jedem Relativpronomen. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on relative clauses in the nominative and accusative. Check gender, number and case for each relative pronoun. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en las oraciones de relativo en nominativo y acusativo. Revise el género, el número y el caso de cada pronombre relativo. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les propositions relatives au nominatif et à l’accusatif. Vérifiez le genre, le nombre et le cas de chaque pronom relatif. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulle frasi relative al nominativo e all’accusativo. Controlli genere, numero e caso di ogni pronome relativo. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nas orações relativas no nominativo e no acusativo. Verifique o gênero, o número e o caso de cada pronome relativo. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Ein unveränderliches Relativpronomen wie *que* benutzen: *die Frau, das ich kenne* statt *die ich kenne*."

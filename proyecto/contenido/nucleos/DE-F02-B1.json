@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Zustimmen und widersprechen",
+ "titulo": {
+  "de": "Zustimmen und widersprechen",
+  "en": "Agreeing and disagreeing",
+  "es": "Estar de acuerdo y discrepar",
+  "fr": "Être d'accord et ne pas être d'accord",
+  "it": "Essere d'accordo e dissentire",
+  "pt": "Concordar e discordar"
+ },
  "categoria": "fluency",
  "ancla": "PD A2/B1",
- "descripcion": "Auf B1 lernt man die einfachsten Formeln für Zustimmung und Widerspruch: das stimmt und das finde ich nicht. Die höfliche Abstufung kommt erst später — hier zählt vor allem, klar zu sagen, ob man zustimmt oder nicht.",
+ "descripcion": {
+  "de": "Auf B1 lernt man die einfachsten Formeln für Zustimmung und Widerspruch: das stimmt und das finde ich nicht. Die höfliche Abstufung kommt erst später — hier zählt vor allem, klar zu sagen, ob man zustimmt oder nicht.",
+  "en": "At B1, you learn the simplest expressions for agreement and disagreement: das stimmt and das finde ich nicht. More nuanced levels of politeness come later — here, the main thing is to say clearly whether you agree or not.",
+  "es": "En B1 se aprenden las fórmulas más sencillas para estar de acuerdo y discrepar: «das stimmt» y «das finde ich nicht». Los matices de cortesía llegan más adelante; aquí lo importante es decir con claridad si se está de acuerdo o no.",
+  "fr": "Au niveau B1, on apprend les formules les plus simples pour exprimer l'accord et le désaccord : « das stimmt » et « das finde ich nicht ». Les nuances de politesse viennent plus tard ; ici, l'essentiel est de dire clairement si l'on est d'accord ou non.",
+  "it": "A livello B1 si imparano le formule più semplici per esprimere accordo e disaccordo: «das stimmt» e «das finde ich nicht». Le sfumature di cortesia arrivano più avanti; qui conta soprattutto dire chiaramente se si è d'accordo o meno.",
+  "pt": "No B1, aprendem-se as fórmulas mais simples para concordar e discordar: «das stimmt» e «das finde ich nicht». Os graus mais sutis de cortesia vêm depois; aqui, o mais importante é dizer com clareza se você concorda ou não."
+ },
  "cuadroReferencia": {
-  "titulo": "Einfache Zustimmung und Widerspruch",
+  "titulo": {
+   "de": "Einfache Zustimmung und Widerspruch",
+   "en": "Simple agreement and disagreement",
+   "es": "Acuerdo y desacuerdo sencillos",
+   "fr": "Accord et désaccord simples",
+   "it": "Accordo e disaccordo semplici",
+   "pt": "Concordância e discordância simples"
+  },
   "columnas": [
-   "Funktion",
-   "Formel"
+   {
+    "de": "Funktion",
+    "en": "Function",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "de": "Formel",
+    "en": "Phrase",
+    "es": "Fórmula",
+    "fr": "Formule",
+    "it": "Formula",
+    "pt": "Fórmula"
+   }
   ],
   "filas": [
    [
-    "Zustimmung",
-    "Das stimmt."
+    {
+     "de": "Zustimmung",
+     "en": "Agreement",
+     "es": "Acuerdo",
+     "fr": "Accord",
+     "it": "Accordo",
+     "pt": "Concordância"
+    },
+    {
+     "de": "Das stimmt.",
+     "en": "That's true.",
+     "es": "Eso es cierto.",
+     "fr": "C’est vrai.",
+     "it": "È vero.",
+     "pt": "É verdade."
+    }
    ],
    [
-    "Widerspruch",
-    "Das finde ich nicht."
+    {
+     "de": "Widerspruch",
+     "en": "Disagreement",
+     "es": "Desacuerdo",
+     "fr": "Désaccord",
+     "it": "Disaccordo",
+     "pt": "Discordância"
+    },
+    {
+     "de": "Das finde ich nicht.",
+     "en": "I don't think so.",
+     "es": "Yo no lo creo.",
+     "fr": "Je ne pense pas.",
+     "it": "Non credo.",
+     "pt": "Acho que não."
+    }
    ],
    [
-    "Teilweise",
-    "Ja, aber…"
+    {
+     "de": "Teilweise",
+     "en": "Partial agreement",
+     "es": "Acuerdo parcial",
+     "fr": "Accord partiel",
+     "it": "Accordo parziale",
+     "pt": "Concordância parcial"
+    },
+    {
+     "de": "Ja, aber…",
+     "en": "Yes, but…",
+     "es": "Sí, pero…",
+     "fr": "Oui, mais…",
+     "it": "Sì, ma…",
+     "pt": "Sim, mas…"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ja, das stimmt genau.",
+   "texto": {
+    "de": "Ja, das stimmt genau.",
+    "en": "Yes, that's exactly right.",
+    "es": "Sí, eso es exactamente así.",
+    "fr": "Oui, c'est exactement ça.",
+    "it": "Sì, è proprio così.",
+    "pt": "Sim, é exatamente isso."
+   },
    "audio": true
   },
   {
-   "texto": "Das finde ich eigentlich nicht.",
+   "texto": {
+    "de": "Das finde ich eigentlich nicht.",
+    "en": "Actually, I don't think so.",
+    "es": "En realidad, no me parece.",
+    "fr": "En fait, je ne suis pas de cet avis.",
+    "it": "In realtà, non la penso così.",
+    "pt": "Na verdade, eu não acho."
+   },
    "audio": true
   },
   {
-   "texto": "Ja, das stimmt, aber nicht immer."
+   "texto": {
+    "de": "Ja, das stimmt, aber nicht immer.",
+    "en": "Yes, that's true, but not always.",
+    "es": "Sí, es cierto, pero no siempre.",
+    "fr": "Oui, c'est vrai, mais pas toujours.",
+    "it": "Sì, è vero, ma non sempre.",
+    "pt": "Sim, isso é verdade, mas nem sempre."
+   }
   }
  ],
  "notas": [
-  "Das stimmt ist die einfachste und häufigste Zustimmungsformel im Deutschen.",
-  "Das finde ich nicht ist höflicher als das ist falsch.",
-  "Ja, aber lässt sich gut benutzen, um teilweise zuzustimmen."
+  {
+   "de": "Das stimmt ist die einfachste und häufigste Zustimmungsformel im Deutschen.",
+   "en": "Das stimmt is the simplest and most common way to agree in German.",
+   "es": "«Das stimmt» es la fórmula más sencilla y frecuente para expresar acuerdo en alemán.",
+   "fr": "« Das stimmt » est la formule d'accord la plus simple et la plus courante en allemand.",
+   "it": "«Das stimmt» è la formula più semplice e comune per esprimere accordo in tedesco.",
+   "pt": "«Das stimmt» é a forma mais simples e comum de concordar em alemão."
+  },
+  {
+   "de": "Das finde ich nicht ist höflicher als das ist falsch.",
+   "en": "Das finde ich nicht is more polite than das ist falsch.",
+   "es": "«Das finde ich nicht» es más cortés que «das ist falsch».",
+   "fr": "« Das finde ich nicht » est plus poli que « das ist falsch ».",
+   "it": "«Das finde ich nicht» è più cortese di «das ist falsch».",
+   "pt": "«Das finde ich nicht» é mais educado do que «das ist falsch»."
+  },
+  {
+   "de": "Ja, aber lässt sich gut benutzen, um teilweise zuzustimmen.",
+   "en": "Ja, aber works well for partial agreement.",
+   "es": "«Ja, aber» sirve muy bien para expresar acuerdo parcial.",
+   "fr": "« Ja, aber » convient bien pour exprimer un accord partiel.",
+   "it": "«Ja, aber» funziona bene per esprimere un accordo parziale.",
+   "pt": "«Ja, aber» funciona bem para expressar concordância parcial."
+  }
  ],
  "contraste": {
   "es": "Das Spanische stimmt mit es verdad oder tienes razón zu, was strukturell sehr ähnlich ist (tener razón – recht haben). Für den Widerspruch entspricht no estoy de acuerdo genau ich bin nicht einverstanden, und sí, pero entspricht der deutschen Einleitung ja, aber.",
@@ -54,14 +173,42 @@
   "en": "You're right wird oft wörtlich zu du bist recht; richtig ist du hast recht. I agree with you ist im Deutschen ich stimme dir zu, mit Dativ und ohne Präposition."
  },
  "errores": [
-  "Zu direkt widersprechen, ohne die Meinung vorher anzuerkennen.",
-  "Nur ja oder nein antworten, ohne eigene Meinung hinzuzufügen.",
-  "Ja, aber verwenden und das aber vergessen."
+  {
+   "de": "Zu direkt widersprechen, ohne die Meinung vorher anzuerkennen.",
+   "en": "Disagreeing too directly without first acknowledging the other person's opinion.",
+   "es": "Discrepar de forma demasiado directa sin reconocer antes la opinión de la otra persona.",
+   "fr": "Exprimer son désaccord trop directement sans d'abord reconnaître l'avis de l'autre personne.",
+   "it": "Dissentire in modo troppo diretto senza prima riconoscere l'opinione dell'altra persona.",
+   "pt": "Discordar de forma direta demais sem antes reconhecer a opinião da outra pessoa."
+  },
+  {
+   "de": "Nur ja oder nein antworten, ohne eigene Meinung hinzuzufügen.",
+   "en": "Answering only yes or no without adding your own opinion.",
+   "es": "Responder solo sí o no sin añadir la propia opinión.",
+   "fr": "Répondre uniquement oui ou non sans ajouter son propre avis.",
+   "it": "Rispondere solo sì o no senza aggiungere la propria opinione.",
+   "pt": "Responder apenas sim ou não sem acrescentar a própria opinião."
+  },
+  {
+   "de": "Ja, aber verwenden und das aber vergessen.",
+   "en": "Using Ja, aber but forgetting the aber.",
+   "es": "Usar «Ja, aber» y olvidarse del «aber».",
+   "fr": "Utiliser « Ja, aber » mais oublier le « aber ».",
+   "it": "Usare «Ja, aber» ma dimenticare «aber».",
+   "pt": "Usar «Ja, aber» e esquecer o «aber»."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Das stimmt.",
-   "funcion": "Zustimmung",
+   "funcion": {
+    "de": "Zustimmung",
+    "en": "Agreement",
+    "es": "Acuerdo",
+    "fr": "Accord",
+    "it": "Accordo",
+    "pt": "Concordância"
+   },
    "traducciones": {
     "es": "Eso es cierto.",
     "en": "That's true.",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Das finde ich auch.",
-   "funcion": "Zustimmung, persönlich",
+   "funcion": {
+    "de": "Zustimmung, persönlich",
+    "en": "agreement, personal",
+    "es": "acuerdo, personal",
+    "fr": "accord, personnel",
+    "it": "accordo, personale",
+    "pt": "concordância, pessoal"
+   },
    "traducciones": {
     "es": "Eso pienso yo también.",
     "en": "I think so too.",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Das finde ich nicht.",
-   "funcion": "Widerspruch, höflich",
+   "funcion": {
+    "de": "Widerspruch, höflich",
+    "en": "polite disagreement",
+    "es": "desacuerdo cortés",
+    "fr": "désaccord poli",
+    "it": "disaccordo cortese",
+    "pt": "discordância educada"
+   },
    "traducciones": {
     "es": "Yo no lo creo.",
     "en": "I don't think so.",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Ja, aber…",
-   "funcion": "Teilzustimmung",
+   "funcion": {
+    "de": "Teilzustimmung",
+    "en": "partial agreement",
+    "es": "acuerdo parcial",
+    "fr": "accord partiel",
+    "it": "accordo parziale",
+    "pt": "concordância parcial"
+   },
    "traducciones": {
     "es": "Sí, pero…",
     "en": "Yes, but…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Genau!",
-   "funcion": "starke Zustimmung, informell",
+   "funcion": {
+    "de": "starke Zustimmung, informell",
+    "en": "strong agreement, informal",
+    "es": "acuerdo firme, informal",
+    "fr": "accord fort, informel",
+    "it": "forte accordo, informale",
+    "pt": "forte concordância, informal"
+   },
    "traducciones": {
     "es": "¡Exacto!",
     "en": "Exactly!",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Ich sehe das anders.",
-   "funcion": "Widerspruch, neutral",
+   "funcion": {
+    "de": "Widerspruch, neutral",
+    "en": "neutral disagreement",
+    "es": "desacuerdo neutro",
+    "fr": "désaccord neutre",
+    "it": "disaccordo neutro",
+    "pt": "discordância neutra"
+   },
    "traducciones": {
     "es": "Yo lo veo distinto.",
     "en": "I see it differently.",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich klar gesagt, ob ich zustimme oder nicht?",
-  "Habe ich meine Meinung mit einer eigenen Begründung ergänzt?",
-  "Klingt der Widerspruch höflich?",
-  "Habe ich mehr als eine Formel benutzt, nicht immer dieselbe?",
-  "Ist bei Ja, aber das aber klar vorhanden?"
+  {
+   "de": "Habe ich klar gesagt, ob ich zustimme oder nicht?",
+   "en": "Have I clearly said whether I agree or not?",
+   "es": "¿Dije con claridad si estoy de acuerdo o no?",
+   "fr": "Ai-je clairement dit si je suis d'accord ou non ?",
+   "it": "Ho detto chiaramente se sono d'accordo o no?",
+   "pt": "Disse claramente se concordo ou não?"
+  },
+  {
+   "de": "Habe ich meine Meinung mit einer eigenen Begründung ergänzt?",
+   "en": "Have I added my own reason to my opinion?",
+   "es": "¿Añadí una justificación propia a mi opinión?",
+   "fr": "Ai-je ajouté ma propre justification à mon opinion ?",
+   "it": "Ho aggiunto una mia motivazione all'opinione?",
+   "pt": "Acrescentei uma justificativa própria à minha opinião?"
+  },
+  {
+   "de": "Klingt der Widerspruch höflich?",
+   "en": "Does the disagreement sound polite?",
+   "es": "¿El desacuerdo suena cortés?",
+   "fr": "Le désaccord semble-t-il poli ?",
+   "it": "Il disaccordo suona cortese?",
+   "pt": "A discordância soa educada?"
+  },
+  {
+   "de": "Habe ich mehr als eine Formel benutzt, nicht immer dieselbe?",
+   "en": "Have I used more than one expression rather than always the same one?",
+   "es": "¿Usé más de una fórmula y no siempre la misma?",
+   "fr": "Ai-je utilisé plus d'une formule au lieu de toujours employer la même ?",
+   "it": "Ho usato più di una formula invece di ripetere sempre la stessa?",
+   "pt": "Usei mais de uma fórmula em vez de repetir sempre a mesma?"
+  },
+  {
+   "de": "Ist bei Ja, aber das aber klar vorhanden?",
+   "en": "With Ja, aber, is the aber clearly present?",
+   "es": "Con «Ja, aber», ¿aparece claramente el «aber»?",
+   "fr": "Avec « Ja, aber », le « aber » est-il bien présent ?",
+   "it": "Con «Ja, aber», è presente chiaramente «aber»?",
+   "pt": "Com «Ja, aber», o «aber» aparece claramente?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Zustimmung und Widerspruch. Prüfen Sie, ob die Formel klar und höflich ist. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf Zustimmung und Widerspruch. Prüfen Sie, ob die Formel klar und höflich ist. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on agreement and disagreement. Check carefully whether the expression is clear and polite. Do not rewrite the text yourself.",
+  "es": "Concentre su atención exclusivamente en el acuerdo y el desacuerdo. Compruebe con atención si la fórmula es clara y cortés. No reescriba usted mismo el texto.",
+  "fr": "Concentrez votre attention exclusivement sur l'accord et le désaccord. Vérifiez si la formule est claire et polie. Ne réécrivez pas le texte vous-même.",
+  "it": "Concentri la sua attenzione esclusivamente su accordo e disaccordo. Verifichi con attenzione che la formula sia chiara e cortese. Non riscriva lei stesso il testo.",
+  "pt": "Concentre sua atenção exclusivamente em concordância e discordância. Verifique com atenção se a fórmula está clara e educada. Não reescreva você mesmo o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Auf eine verneinte Frage mit *Ja* widersprechen wie mit *sí*: *Kommst du nicht? – Ja!* statt *Doch!*"

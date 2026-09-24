@@ -3,47 +3,159 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Zustimmen und widersprechen",
+ "titulo": {
+  "de": "Zustimmen und widersprechen",
+  "en": "Agreeing and disagreeing",
+  "es": "Estar de acuerdo y discrepar",
+  "fr": "Être d'accord et ne pas être d'accord",
+  "it": "Essere d'accordo e dissentire",
+  "pt": "Concordar e discordar"
+ },
  "categoria": "fluency",
  "ancla": "PD A2",
- "descripcion": "Auf A2 stimmt man mit das stimmt zu oder widerspricht mit das finde ich nicht. Es geht nur darum, klar ja oder nein zu sagen. Diese einfache Form reicht für die meisten Alltagsgespräche auf diesem Niveau.",
+ "descripcion": {
+  "de": "Auf A2 stimmt man mit das stimmt zu oder widerspricht mit das finde ich nicht. Es geht nur darum, klar ja oder nein zu sagen. Diese einfache Form reicht für die meisten Alltagsgespräche auf diesem Niveau.",
+  "en": "At A2, you agree with das stimmt or you disagree with das finde ich nicht. The goal is simply to say yes or no clearly, without any further nuance. This simple form is enough for most everyday conversations at this level.",
+  "es": "En A2 se expresa acuerdo con «das stimmt» o desacuerdo con «das finde ich nicht». Se trata simplemente de decir sí o no con claridad. Esta forma sencilla alcanza para la mayoría de las conversaciones cotidianas de este nivel.",
+  "fr": "Au niveau A2, on exprime son accord avec « das stimmt » ou son désaccord avec « das finde ich nicht ». Il s'agit simplement de dire clairement oui ou non. Cette forme simple suffit pour la plupart des conversations quotidiennes à ce niveau.",
+  "it": "A livello A2 si esprime accordo con «das stimmt» o disaccordo con «das finde ich nicht». Si tratta semplicemente di dire sì o no in modo chiaro. Questa forma semplice basta per la maggior parte delle conversazioni quotidiane a questo livello.",
+  "pt": "No nível A2, concorda-se com «das stimmt» ou discorda-se com «das finde ich nicht». A ideia é simplesmente dizer sim ou não com clareza. Essa forma simples é suficiente para a maioria das conversas do dia a dia nesse nível."
+ },
  "cuadroReferencia": {
-  "titulo": "Ja oder nein",
+  "titulo": {
+   "de": "Ja oder nein",
+   "en": "Yes or no",
+   "es": "Sí o no",
+   "fr": "Oui ou non",
+   "it": "Sì o no",
+   "pt": "Sim ou não"
+  },
   "columnas": [
-   "Funktion",
-   "Formel"
+   {
+    "de": "Funktion",
+    "en": "Function",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "de": "Formel",
+    "en": "Phrase",
+    "es": "Fórmula",
+    "fr": "Formule",
+    "it": "Formula",
+    "pt": "Fórmula"
+   }
   ],
   "filas": [
    [
-    "Zustimmung",
-    "Das stimmt."
+    {
+     "de": "Zustimmung",
+     "en": "Agreement",
+     "es": "Acuerdo",
+     "fr": "Accord",
+     "it": "Accordo",
+     "pt": "Concordância"
+    },
+    {
+     "de": "Das stimmt.",
+     "en": "That's right.",
+     "es": "Eso es cierto.",
+     "fr": "C'est vrai.",
+     "it": "È vero.",
+     "pt": "Isso mesmo."
+    }
    ],
    [
-    "Widerspruch",
-    "Das finde ich nicht."
+    {
+     "de": "Widerspruch",
+     "en": "Disagreement",
+     "es": "Desacuerdo",
+     "fr": "Désaccord",
+     "it": "Disaccordo",
+     "pt": "Discordância"
+    },
+    {
+     "de": "Das finde ich nicht.",
+     "en": "I don't think so.",
+     "es": "No me parece.",
+     "fr": "Je ne trouve pas.",
+     "it": "Non la penso così.",
+     "pt": "Eu não acho."
+    }
    ],
    [
-    "Unsicher",
-    "Vielleicht."
+    {
+     "de": "Unsicher",
+     "en": "Unsure",
+     "es": "Inseguro/a",
+     "fr": "Incertain",
+     "it": "Incerto",
+     "pt": "Em dúvida"
+    },
+    {
+     "de": "Vielleicht.",
+     "en": "Maybe.",
+     "es": "Quizás.",
+     "fr": "Peut-être.",
+     "it": "Forse.",
+     "pt": "Talvez."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ja, das stimmt.",
+   "texto": {
+    "de": "Ja, das stimmt.",
+    "en": "Yes, that's right.",
+    "es": "Sí, es cierto.",
+    "fr": "Oui, c'est vrai.",
+    "it": "Sì, è vero.",
+    "pt": "Sim, isso mesmo."
+   },
    "audio": true
   },
   {
-   "texto": "Nein, das finde ich nicht.",
+   "texto": {
+    "de": "Nein, das finde ich nicht.",
+    "en": "No, I don't think so.",
+    "es": "No, no me parece.",
+    "fr": "Non, je ne trouve pas.",
+    "it": "No, non la penso così.",
+    "pt": "Não, eu não acho."
+   },
    "audio": true
   },
   {
-   "texto": "Das finde ich auch."
+   "texto": {
+    "de": "Das finde ich auch.",
+    "en": "I think so too.",
+    "es": "A mí también me parece.",
+    "fr": "Moi aussi, je trouve.",
+    "it": "Anch'io la penso così.",
+    "pt": "Eu também acho."
+   }
   }
  ],
  "notas": [
-  "Das stimmt ist die einfachste Zustimmungsformel.",
-  "Das finde ich nicht ist höflicher als das ist falsch."
+  {
+   "de": "Das stimmt ist die einfachste Zustimmungsformel.",
+   "en": "Das stimmt is the simplest way to agree.",
+   "es": "«Das stimmt» es la forma más sencilla de expresar acuerdo.",
+   "fr": "« Das stimmt » est la façon la plus simple d'exprimer son accord.",
+   "it": "«Das stimmt» è il modo più semplice per esprimere accordo.",
+   "pt": "«Das stimmt» é a forma mais simples de concordar."
+  },
+  {
+   "de": "Das finde ich nicht ist höflicher als das ist falsch.",
+   "en": "Das finde ich nicht is more polite than das ist falsch.",
+   "es": "«Das finde ich nicht» es más cortés que «das ist falsch».",
+   "fr": "« Das finde ich nicht » est plus poli que « das ist falsch ».",
+   "it": "«Das finde ich nicht» è più cortese di «das ist falsch».",
+   "pt": "«Das finde ich nicht» é mais educado do que «das ist falsch»."
+  }
  ],
  "contraste": {
   "es": "Das Spanische stimmt mit es verdad zu, was strukturell sehr ähnlich ist.",
@@ -53,13 +165,34 @@
   "en": "You're right wird oft zu du bist recht übertragen; richtig ist du hast recht. I agree entspricht ich bin einverstanden oder ich stimme zu."
  },
  "errores": [
-  "Nur ja oder nein sagen, ohne eigene Meinung.",
-  "Zu direkt widersprechen."
+  {
+   "de": "Nur ja oder nein sagen, ohne eigene Meinung.",
+   "en": "Only saying yes or no without adding your own opinion.",
+   "es": "Decir solo sí o no, sin añadir la propia opinión.",
+   "fr": "Se contenter de dire oui ou non sans donner son propre avis.",
+   "it": "Dire soltanto sì o no senza aggiungere la propria opinione.",
+   "pt": "Dizer apenas sim ou não, sem acrescentar a própria opinião."
+  },
+  {
+   "de": "Zu direkt widersprechen.",
+   "en": "Disagreeing too directly.",
+   "es": "Discrepar de forma demasiado directa.",
+   "fr": "Exprimer son désaccord trop directement.",
+   "it": "Dissentire in modo troppo diretto.",
+   "pt": "Discordar de forma direta demais."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Das stimmt.",
-   "funcion": "Zustimmung",
+   "funcion": {
+    "de": "Zustimmung",
+    "en": "Agreement",
+    "es": "Acuerdo",
+    "fr": "Accord",
+    "it": "Accordo",
+    "pt": "Concordância"
+   },
    "traducciones": {
     "es": "Eso es cierto.",
     "en": "That's true.",
@@ -70,7 +203,14 @@
   },
   {
    "expresion": "Das finde ich auch.",
-   "funcion": "Zustimmung, persönlich",
+   "funcion": {
+    "de": "Zustimmung, persönlich",
+    "en": "agreement, personal",
+    "es": "acuerdo, personal",
+    "fr": "accord, personnel",
+    "it": "accordo, personale",
+    "pt": "concordância, pessoal"
+   },
    "traducciones": {
     "es": "Eso pienso yo también.",
     "en": "I think so too.",
@@ -81,7 +221,14 @@
   },
   {
    "expresion": "Das finde ich nicht.",
-   "funcion": "Widerspruch",
+   "funcion": {
+    "de": "Widerspruch",
+    "en": "Disagreement",
+    "es": "Desacuerdo",
+    "fr": "Désaccord",
+    "it": "Disaccordo",
+    "pt": "Discordância"
+   },
    "traducciones": {
     "es": "Yo no lo creo.",
     "en": "I don't think so.",
@@ -92,7 +239,14 @@
   },
   {
    "expresion": "Genau!",
-   "funcion": "starke Zustimmung",
+   "funcion": {
+    "de": "starke Zustimmung",
+    "en": "strong agreement",
+    "es": "acuerdo firme",
+    "fr": "accord marqué",
+    "it": "forte accordo",
+    "pt": "forte concordância"
+   },
    "traducciones": {
     "es": "¡Exacto!",
     "en": "Exactly!",
@@ -103,7 +257,14 @@
   },
   {
    "expresion": "Vielleicht.",
-   "funcion": "unsicher",
+   "funcion": {
+    "de": "unsicher",
+    "en": "unsure",
+    "es": "inseguro/a",
+    "fr": "incertain",
+    "it": "incerto",
+    "pt": "em dúvida"
+   },
    "traducciones": {
     "es": "Tal vez.",
     "en": "Maybe.",
@@ -114,7 +275,14 @@
   },
   {
    "expresion": "Ich weiss nicht.",
-   "funcion": "keine Meinung",
+   "funcion": {
+    "de": "keine Meinung",
+    "en": "no opinion",
+    "es": "sin opinión",
+    "fr": "pas d'opinion",
+    "it": "nessuna opinione",
+    "pt": "sem opinião"
+   },
    "traducciones": {
     "es": "No sé.",
     "en": "I don't know.",
@@ -125,13 +293,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich klar zugestimmt oder widersprochen?",
-  "Habe ich mehr als eine Formel benutzt?",
-  "Klingt der Satz natürlich?",
-  "Klingt der Satz natürlich?",
-  "Klingt der Satz natürlich?"
+  {
+   "de": "Habe ich klar zugestimmt oder widersprochen?",
+   "en": "Have I clearly agreed or disagreed?",
+   "es": "¿Expresé claramente acuerdo o desacuerdo?",
+   "fr": "Ai-je clairement exprimé mon accord ou mon désaccord ?",
+   "it": "Ho espresso chiaramente accordo o disaccordo?",
+   "pt": "Expressei claramente concordância ou discordância?"
+  },
+  {
+   "de": "Habe ich mehr als eine Formel benutzt?",
+   "en": "Have I used more than one expression?",
+   "es": "¿Usé más de una fórmula?",
+   "fr": "Ai-je utilisé plus d'une formule ?",
+   "it": "Ho usato più di una formula?",
+   "pt": "Usei mais de uma fórmula?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Zustimmung oder Widerspruch klar ist. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob mehr als eine Formel benutzt wird.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich darauf, ob Zustimmung oder Widerspruch klar ist. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob mehr als eine Formel benutzt wird.",
+  "en": "Focus your attention exclusively on whether the agreement or disagreement is clear. Do not rewrite the text. Also check whether more than one expression is used.",
+  "es": "Concentre su atención exclusivamente en si el acuerdo o desacuerdo está claro. No reescriba el texto. Compruebe también si se utiliza más de una fórmula.",
+  "fr": "Concentrez-vous exclusivement sur la clarté de l'accord ou du désaccord. Ne réécrivez pas le texte. Vérifiez également si plus d'une formule est utilisée.",
+  "it": "Concentri la sua attenzione esclusivamente sulla chiarezza dell'accordo o del disaccordo. Non riscriva il testo. Verifichi anche se viene usata più di una formula.",
+  "pt": "Concentre-se exclusivamente em verificar se a concordância ou a discordância está clara. Não reescreva o texto. Verifique também se foi usada mais de uma fórmula."
+ },
  "erroresContrastivos": {
   "es": [
    "*Tienes razón* als *Du hast Grund* übertragen statt *Du hast recht*."

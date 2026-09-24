@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Trennbare und untrennbare Verben",
+ "titulo": {
+  "de": "Trennbare und untrennbare Verben",
+  "en": "Separable and inseparable verbs",
+  "es": "Verbos separables e inseparables",
+  "fr": "Verbes séparables et inséparables",
+  "it": "Verbi separabili e inseparabili",
+  "pt": "Verbos separáveis e inseparáveis"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Auf A2 lernt man die häufigsten trennbaren Verben des Alltags wie aufstehen, anrufen und einkaufen, und dass ihr Präfix im Hauptsatz immer ans Satzende wandert, egal wie kurz der Satz sonst ist. Diese Verben gehören zu den häufigsten im gesprochenen Deutsch.",
+ "descripcion": {
+  "de": "Auf A2 lernt man die häufigsten trennbaren Verben des Alltags wie aufstehen, anrufen und einkaufen, und dass ihr Präfix im Hauptsatz immer ans Satzende wandert, egal wie kurz der Satz sonst ist. Diese Verben gehören zu den häufigsten im gesprochenen Deutsch.",
+  "en": "At A2, you learn the most common everyday separable verbs such as aufstehen, anrufen and einkaufen, and that their prefix always moves to the end of the main clause, no matter how short the sentence is. These verbs are among the most common in spoken German.",
+  "es": "En A2 se aprenden los verbos separables más frecuentes de la vida cotidiana, como «aufstehen», «anrufen» y «einkaufen», y que su prefijo siempre se desplaza al final de la oración principal, por breve que sea la frase. Estos verbos están entre los más usados del alemán hablado.",
+  "fr": "Au niveau A2, on apprend les verbes séparables les plus fréquents de la vie quotidienne, comme « aufstehen », « anrufen » et « einkaufen », ainsi que le fait que leur préfixe se place toujours à la fin de la proposition principale, même si la phrase est très courte. Ces verbes font partie des plus courants à l'oral.",
+  "it": "A livello A2 si imparano i verbi separabili più comuni nella vita quotidiana, come «aufstehen», «anrufen» e «einkaufen», e il fatto che il loro prefisso va sempre alla fine della frase principale, anche quando la frase è molto breve. Questi verbi sono tra i più frequenti nel tedesco parlato.",
+  "pt": "No nível A2, aprendem-se os verbos separáveis mais comuns do dia a dia, como «aufstehen», «anrufen» e «einkaufen», e que o prefixo deles sempre vai para o final da oração principal, por mais curta que seja a frase. Esses verbos estão entre os mais frequentes no alemão falado."
+ },
  "cuadroReferencia": {
-  "titulo": "Trennbares Verb im Satz",
+  "titulo": {
+   "de": "Trennbares Verb im Satz",
+   "en": "A separable verb in a sentence",
+   "es": "Verbo separable en una oración",
+   "fr": "Verbe séparable dans une phrase",
+   "it": "Verbo separabile nella frase",
+   "pt": "Verbo separável na frase"
+  },
   "columnas": [
-   "Infinitiv",
-   "Im Satz"
+   {
+    "de": "Infinitiv",
+    "en": "Infinitive",
+    "es": "Infinitivo",
+    "fr": "Infinitif",
+    "it": "Infinito",
+    "pt": "Infinitivo"
+   },
+   {
+    "de": "Im Satz",
+    "en": "In the sentence",
+    "es": "En la oración",
+    "fr": "Dans la phrase",
+    "it": "Nella frase",
+    "pt": "Na frase"
+   }
   ],
   "filas": [
    [
-    "aufstehen",
-    "Ich stehe um sieben auf."
+    {
+     "de": "aufstehen",
+     "en": "to get up",
+     "es": "levantarse",
+     "fr": "se lever",
+     "it": "alzarsi",
+     "pt": "levantar-se"
+    },
+    {
+     "de": "Ich stehe um sieben auf.",
+     "en": "I get up at seven.",
+     "es": "Me levanto a las siete.",
+     "fr": "Je me lève à sept heures.",
+     "it": "Mi alzo alle sette.",
+     "pt": "Eu me levanto às sete."
+    }
    ],
    [
-    "anrufen",
-    "Ich rufe dich später an."
+    {
+     "de": "anrufen",
+     "en": "to call",
+     "es": "llamar por teléfono",
+     "fr": "appeler",
+     "it": "telefonare",
+     "pt": "ligar"
+    },
+    {
+     "de": "Ich rufe dich später an.",
+     "en": "I'll call you later.",
+     "es": "Te llamo más tarde.",
+     "fr": "Je t'appelle plus tard.",
+     "it": "Ti chiamo più tardi.",
+     "pt": "Eu te ligo mais tarde."
+    }
    ],
    [
-    "einkaufen",
-    "Wir kaufen morgen ein."
+    {
+     "de": "einkaufen",
+     "en": "to shop",
+     "es": "hacer compras",
+     "fr": "faire les courses",
+     "it": "fare la spesa",
+     "pt": "fazer compras"
+    },
+    {
+     "de": "Wir kaufen morgen ein.",
+     "en": "We're going shopping tomorrow.",
+     "es": "Mañana hacemos las compras.",
+     "fr": "Nous faisons les courses demain.",
+     "it": "Domani facciamo la spesa.",
+     "pt": "Amanhã vamos fazer compras."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich stehe jeden Tag um sieben Uhr auf.",
+   "texto": {
+    "de": "Ich stehe jeden Tag um sieben Uhr auf.",
+    "en": "I get up at seven every day.",
+    "es": "Me levanto todos los días a las siete.",
+    "fr": "Je me lève tous les jours à sept heures.",
+    "it": "Mi alzo ogni giorno alle sette.",
+    "pt": "Eu me levanto todos os dias às sete."
+   },
    "audio": true
   },
   {
-   "texto": "Ich rufe dich heute Abend an.",
+   "texto": {
+    "de": "Ich rufe dich heute Abend an.",
+    "en": "I'll call you this evening.",
+    "es": "Te llamo esta noche.",
+    "fr": "Je t'appelle ce soir.",
+    "it": "Ti chiamo stasera.",
+    "pt": "Eu te ligo hoje à noite."
+   },
    "audio": true
   },
   {
-   "texto": "Wir kaufen morgen ein."
+   "texto": {
+    "de": "Wir kaufen morgen ein.",
+    "en": "We're going shopping tomorrow.",
+    "es": "Mañana hacemos las compras.",
+    "fr": "Nous faisons les courses demain.",
+    "it": "Domani facciamo la spesa.",
+    "pt": "Amanhã vamos fazer compras."
+   }
   }
  ],
  "notas": [
-  "Das Präfix (auf-, an-, ein-) steht im Hauptsatz immer ganz am Ende.",
-  "Der Infinitiv bleibt zusammen: aufstehen, anrufen, einkaufen.",
-  "Diese Verben sind sehr häufig im Alltag."
+  {
+   "de": "Das Präfix (auf-, an-, ein-) steht im Hauptsatz immer ganz am Ende.",
+   "en": "The prefix (auf-, an-, ein-) always comes right at the end of the main clause.",
+   "es": "El prefijo («auf-», «an-», «ein-») siempre va al final de la oración principal.",
+   "fr": "Le préfixe (« auf- », « an- », « ein- ») se place toujours tout à la fin de la proposition principale.",
+   "it": "Il prefisso («auf-», «an-», «ein-») va sempre alla fine della frase principale.",
+   "pt": "O prefixo («auf-», «an-», «ein-») sempre vai para o final da oração principal."
+  },
+  {
+   "de": "Der Infinitiv bleibt zusammen: aufstehen, anrufen, einkaufen.",
+   "en": "The infinitive stays together: aufstehen, anrufen, einkaufen.",
+   "es": "El infinitivo se mantiene unido: «aufstehen», «anrufen», «einkaufen».",
+   "fr": "L'infinitif reste en un seul mot : « aufstehen », « anrufen », « einkaufen ».",
+   "it": "L'infinito resta unito: «aufstehen», «anrufen», «einkaufen».",
+   "pt": "O infinitivo permanece junto: «aufstehen», «anrufen», «einkaufen»."
+  },
+  {
+   "de": "Diese Verben sind sehr häufig im Alltag.",
+   "en": "These verbs are very common in everyday language.",
+   "es": "Estos verbos son muy frecuentes en el uso cotidiano.",
+   "fr": "Ces verbes sont très fréquents dans la vie quotidienne.",
+   "it": "Questi verbi sono molto comuni nel linguaggio quotidiano.",
+   "pt": "Esses verbos são muito comuns no dia a dia."
+  }
  ],
  "contraste": {
   "es": "Das Spanische hat keine trennbaren Verben — es gibt keine Präfixe, die im Satz wandern. Diese Struktur ist für Spanischsprachige komplett neu.",
@@ -54,13 +173,34 @@
   "en": "Das Englische hat phrasal verbs (get up, call back), die wie trennbare Verben funktionieren. Neu ist nur, dass das deutsche Präfix ganz ans Satzende geht: Ich rufe dich morgen an."
  },
  "errores": [
-  "Das Präfix vergessen und nicht ans Satzende stellen.",
-  "Das trennbare Verb wie ein normales Verb behandeln."
+  {
+   "de": "Das Präfix vergessen und nicht ans Satzende stellen.",
+   "en": "Forgetting the prefix and not placing it at the end of the sentence.",
+   "es": "Olvidar el prefijo y no colocarlo al final de la oración.",
+   "fr": "Oublier le préfixe et ne pas le placer à la fin de la phrase.",
+   "it": "Dimenticare il prefisso e non metterlo alla fine della frase.",
+   "pt": "Esquecer o prefixo e não colocá-lo no final da frase."
+  },
+  {
+   "de": "Das trennbare Verb wie ein normales Verb behandeln.",
+   "en": "Treating a separable verb like a regular verb.",
+   "es": "Tratar un verbo separable como si fuera un verbo normal.",
+   "fr": "Traiter un verbe séparable comme un verbe ordinaire.",
+   "it": "Trattare un verbo separabile come un verbo normale.",
+   "pt": "Tratar um verbo separável como um verbo normal."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich stehe…auf.",
-   "funcion": "aufstehen im Satz",
+   "funcion": {
+    "de": "aufstehen im Satz",
+    "en": "aufstehen in a sentence",
+    "es": "«aufstehen» en una oración",
+    "fr": "« aufstehen » dans une phrase",
+    "it": "«aufstehen» nella frase",
+    "pt": "«aufstehen» na frase"
+   },
    "traducciones": {
     "es": "Me levanto…",
     "en": "I get up…",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "Ich rufe…an.",
-   "funcion": "anrufen im Satz",
+   "funcion": {
+    "de": "anrufen im Satz",
+    "en": "anrufen in a sentence",
+    "es": "«anrufen» en una oración",
+    "fr": "« anrufen » dans une phrase",
+    "it": "«anrufen» nella frase",
+    "pt": "«anrufen» na frase"
+   },
    "traducciones": {
     "es": "Llamo a…",
     "en": "I call…",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "Ich kaufe…ein.",
-   "funcion": "einkaufen im Satz",
+   "funcion": {
+    "de": "einkaufen im Satz",
+    "en": "einkaufen in a sentence",
+    "es": "«einkaufen» en una oración",
+    "fr": "« einkaufen » dans une phrase",
+    "it": "«einkaufen» nella frase",
+    "pt": "«einkaufen» na frase"
+   },
    "traducciones": {
     "es": "Compro…",
     "en": "I shop for…",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "Kommst du mit?",
-   "funcion": "mitkommen, Frage",
+   "funcion": {
+    "de": "mitkommen, Frage",
+    "en": "mitkommen, question",
+    "es": "«mitkommen», pregunta",
+    "fr": "« mitkommen », question",
+    "it": "«mitkommen», domanda",
+    "pt": "«mitkommen», pergunta"
+   },
    "traducciones": {
     "es": "¿Venís conmigo?",
     "en": "Are you coming along?",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "Ich mache das Licht an.",
-   "funcion": "anmachen im Satz",
+   "funcion": {
+    "de": "anmachen im Satz",
+    "en": "anmachen in a sentence",
+    "es": "«anmachen» en una oración",
+    "fr": "« anmachen » dans une phrase",
+    "it": "«anmachen» nella frase",
+    "pt": "«anmachen» na frase"
+   },
    "traducciones": {
     "es": "Prendo la luz.",
     "en": "I turn on the light.",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "Ich räume auf.",
-   "funcion": "aufräumen im Satz",
+   "funcion": {
+    "de": "aufräumen im Satz",
+    "en": "aufräumen in a sentence",
+    "es": "«aufräumen» en una oración",
+    "fr": "« aufräumen » dans une phrase",
+    "it": "«aufräumen» nella frase",
+    "pt": "«aufräumen» na frase"
+   },
    "traducciones": {
     "es": "Ordeno.",
     "en": "I tidy up.",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Steht das Präfix am Satzende?",
-  "Ist der Infinitiv korrekt (aufstehen, nicht auf stehen)?",
-  "Habe ich mindestens drei trennbare Verben benutzt?",
-  "Klingt der Satz natürlich?",
-  "Klingt der Satz natürlich?"
+  {
+   "de": "Steht das Präfix am Satzende?",
+   "en": "Is the prefix at the end of the sentence?",
+   "es": "¿El prefijo está al final de la oración?",
+   "fr": "Le préfixe est-il à la fin de la phrase ?",
+   "it": "Il prefisso è alla fine della frase?",
+   "pt": "O prefixo está no final da frase?"
+  },
+  {
+   "de": "Ist der Infinitiv korrekt (aufstehen, nicht auf stehen)?",
+   "en": "Is the infinitive correct (aufstehen, not auf stehen)?",
+   "es": "¿El infinitivo está bien escrito («aufstehen», no «auf stehen»)?",
+   "fr": "L'infinitif est-il correct (« aufstehen », et non « auf stehen ») ?",
+   "it": "L'infinito è corretto («aufstehen», non «auf stehen»)?",
+   "pt": "O infinitivo está correto («aufstehen», e não «auf stehen»)?"
+  },
+  {
+   "de": "Habe ich mindestens drei trennbare Verben benutzt?",
+   "en": "Have I used at least three separable verbs?",
+   "es": "¿Usé al menos tres verbos separables?",
+   "fr": "Ai-je utilisé au moins trois verbes séparables ?",
+   "it": "Ho usato almeno tre verbi separabili?",
+   "pt": "Usei pelo menos três verbos separáveis?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf trennbare Verben. Prüfen Sie die Position des Präfixes im Satz, Satz für Satz. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf trennbare Verben. Prüfen Sie die Position des Präfixes im Satz, Satz für Satz. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on separable verbs. Check carefully the position of the prefix in each sentence. Do not rewrite the text yourself. Point out anything that is unclear.",
+  "es": "Concentre su atención exclusivamente en los verbos separables. Revise la posición del prefijo en cada oración. No reescriba usted mismo el texto. Señale cualquier cosa que no esté clara.",
+  "fr": "Concentrez votre attention exclusivement sur les verbes séparables. Vérifiez la position du préfixe dans chaque phrase. Ne réécrivez pas le texte vous-même.",
+  "it": "Concentri la sua attenzione esclusivamente sui verbi separabili. Controlli con attenzione la posizione del prefisso in ogni frase. Non riscriva lei stesso il testo.",
+  "pt": "Concentre-se exclusivamente nos verbos separáveis. Verifique com atenção a posição do prefixo em cada frase. Não reescreva você mesmo o texto. Sinalize tudo o que não estiver claro."
+ },
  "erroresContrastivos": {
   "es": [
    "*ver la tele* als *Fernseher sehen* übertragen statt *fernsehen*."

@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Erfahrungen und Geschichten erzählen",
+ "titulo": {
+  "de": "Erfahrungen und Geschichten erzählen",
+  "en": "Talking about experiences and telling stories",
+  "es": "Hablar de experiencias y contar historias",
+  "fr": "Raconter des expériences et des histoires",
+  "it": "Raccontare esperienze e storie",
+  "pt": "Contar experiências e histórias"
+ },
  "categoria": "fluency",
  "ancla": "PD A2/B1",
- "descripcion": "Auf B1 erzählt man eine einfache Geschichte im Perfekt, mit klaren Zeitangaben wie zuerst, dann, danach. Das Plusquamperfekt und die dramaturgische Struktur kommen erst später — hier reicht eine klare chronologische Erzählung.",
+ "descripcion": {
+  "de": "Auf B1 erzählt man eine einfache Geschichte im Perfekt, mit klaren Zeitangaben wie zuerst, dann, danach. Das Plusquamperfekt und die dramaturgische Struktur kommen erst später — hier reicht eine klare chronologische Erzählung.",
+  "en": "At B1, you tell a simple story in the Perfekt with clear time markers such as zuerst, dann and danach. The Plusquamperfekt and a more dramatic narrative structure come later — here, a clear chronological account is enough.",
+  "es": "En B1 se cuenta una historia sencilla en Perfekt, con marcadores temporales claros como «zuerst», «dann» y «danach». El Plusquamperfekt y una estructura narrativa más elaborada llegan más adelante; aquí alcanza con una narración cronológica clara.",
+  "fr": "Au niveau B1, on raconte une histoire simple au Perfekt, avec des repères temporels clairs comme « zuerst », « dann » et « danach ». Le Plusquamperfekt et une structure narrative plus élaborée viennent plus tard ; ici, une narration chronologique claire suffit.",
+  "it": "A livello B1 si racconta una storia semplice al Perfekt, con chiari indicatori temporali come «zuerst», «dann» e «danach». Il Plusquamperfekt e una struttura narrativa più elaborata arrivano più avanti; qui basta un racconto cronologico chiaro.",
+  "pt": "No B1, conta-se uma história simples no Perfekt, com marcadores temporais claros como «zuerst», «dann» e «danach». O Plusquamperfekt e uma estrutura narrativa mais elaborada vêm depois; aqui, basta uma narrativa cronológica clara."
+ },
  "cuadroReferencia": {
-  "titulo": "Eine einfache Geschichte erzählen",
+  "titulo": {
+   "de": "Eine einfache Geschichte erzählen",
+   "en": "Telling a simple story",
+   "es": "Contar una historia sencilla",
+   "fr": "Raconter une histoire simple",
+   "it": "Raccontare una storia semplice",
+   "pt": "Contar uma história simples"
+  },
   "columnas": [
-   "Schritt",
-   "Beispiel"
+   {
+    "de": "Schritt",
+    "en": "Step",
+    "es": "Paso",
+    "fr": "Étape",
+    "it": "Passaggio",
+    "pt": "Etapa"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Anfang",
-    "Letztes Jahr bin ich nach Berlin gefahren."
+    {
+     "de": "Anfang",
+     "en": "Beginning",
+     "es": "Inicio",
+     "fr": "Début",
+     "it": "Inizio",
+     "pt": "Início"
+    },
+    {
+     "de": "Letztes Jahr bin ich nach Berlin gefahren.",
+     "en": "Last year I went to Berlin.",
+     "es": "El año pasado fui a Berlín.",
+     "fr": "L'année dernière, je suis allé(e) à Berlin.",
+     "it": "L'anno scorso sono andato/a a Berlino.",
+     "pt": "No ano passado, fui a Berlim."
+    }
    ],
    [
-    "Reihenfolge",
-    "Zuerst habe ich… Dann habe ich…"
+    {
+     "de": "Reihenfolge",
+     "en": "Sequence",
+     "es": "Secuencia",
+     "fr": "Ordre",
+     "it": "Sequenza",
+     "pt": "Sequência"
+    },
+    {
+     "de": "Zuerst habe ich… Dann habe ich…",
+     "en": "First I… Then I…",
+     "es": "Primero… Después…",
+     "fr": "D'abord… Ensuite…",
+     "it": "Prima… Poi…",
+     "pt": "Primeiro… Depois…"
+    }
    ],
    [
-    "Ende",
-    "Am Ende war es ein toller Tag."
+    {
+     "de": "Ende",
+     "en": "Ending",
+     "es": "Final",
+     "fr": "Fin",
+     "it": "Fine",
+     "pt": "Final"
+    },
+    {
+     "de": "Am Ende war es ein toller Tag.",
+     "en": "In the end, it was a great day.",
+     "es": "Al final, fue un día estupendo.",
+     "fr": "Au final, c'était une excellente journée.",
+     "it": "Alla fine, è stata una giornata fantastica.",
+     "pt": "No final, foi um dia ótimo."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Letztes Jahr bin ich zum ersten Mal nach Berlin gefahren.",
+   "texto": {
+    "de": "Letztes Jahr bin ich zum ersten Mal nach Berlin gefahren.",
+    "en": "Last year I went to Berlin for the first time.",
+    "es": "El año pasado fui a Berlín por primera vez.",
+    "fr": "L'année dernière, je suis allé(e) à Berlin pour la première fois.",
+    "it": "L'anno scorso sono andato/a a Berlino per la prima volta.",
+    "pt": "No ano passado, fui a Berlim pela primeira vez."
+   },
    "audio": true
   },
   {
-   "texto": "Zuerst haben wir das Museum besucht, dann sind wir spazieren gegangen.",
+   "texto": {
+    "de": "Zuerst haben wir das Museum besucht, dann sind wir spazieren gegangen.",
+    "en": "First we visited the museum, then we went for a walk.",
+    "es": "Primero visitamos el museo y después salimos a caminar.",
+    "fr": "D'abord, nous avons visité le musée, puis nous sommes allés nous promener.",
+    "it": "Prima abbiamo visitato il museo, poi siamo andati a fare una passeggiata.",
+    "pt": "Primeiro visitamos o museu, depois fomos passear."
+   },
    "audio": true
   },
   {
-   "texto": "Am Ende war es wirklich ein toller Tag."
+   "texto": {
+    "de": "Am Ende war es wirklich ein toller Tag.",
+    "en": "In the end, it really was a great day.",
+    "es": "Al final, realmente fue un día estupendo.",
+    "fr": "Au final, c'était vraiment une excellente journée.",
+    "it": "Alla fine, è stata davvero una giornata fantastica.",
+    "pt": "No final, foi realmente um dia ótimo."
+   }
   }
  ],
  "notas": [
-  "Zuerst, dann, danach, am Ende strukturieren die Geschichte, ohne dass man komplizierte Zeitformen braucht.",
-  "Die meisten Verben stehen im Perfekt; sein und haben eher im Präteritum.",
-  "Eine kurze Zeitangabe am Anfang (letztes Jahr, letzten Sommer) hilft, die Geschichte einzuordnen."
+  {
+   "de": "Zuerst, dann, danach, am Ende strukturieren die Geschichte, ohne dass man komplizierte Zeitformen braucht.",
+   "en": "Zuerst, dann, danach and am Ende structure the story without requiring complicated tenses.",
+   "es": "«Zuerst», «dann», «danach» y «am Ende» estructuran la historia sin necesidad de tiempos verbales complicados.",
+   "fr": "« Zuerst », « dann », « danach » et « am Ende » structurent l'histoire sans nécessiter de temps complexes.",
+   "it": "«Zuerst», «dann», «danach» e «am Ende» strutturano la storia senza bisogno di tempi verbali complessi.",
+   "pt": "«Zuerst», «dann», «danach» e «am Ende» estruturam a história sem exigir tempos verbais complicados."
+  },
+  {
+   "de": "Die meisten Verben stehen im Perfekt; sein und haben eher im Präteritum.",
+   "en": "Most verbs are in the Perfekt; sein and haben are more often in the Präteritum.",
+   "es": "La mayoría de los verbos van en Perfekt; «sein» y «haben» suelen ir en Präteritum.",
+   "fr": "La plupart des verbes sont au Perfekt ; « sein » et « haben » sont plutôt au Präteritum.",
+   "it": "La maggior parte dei verbi è al Perfekt; «sein» e «haben» sono più spesso al Präteritum.",
+   "pt": "A maioria dos verbos fica no Perfekt; «sein» e «haben» aparecem mais frequentemente no Präteritum."
+  },
+  {
+   "de": "Eine kurze Zeitangabe am Anfang (letztes Jahr, letzten Sommer) hilft, die Geschichte einzuordnen.",
+   "en": "A short time expression at the beginning (last year, last summer) helps place the story in time.",
+   "es": "Una breve indicación temporal al inicio («el año pasado», «el verano pasado») ayuda a situar la historia.",
+   "fr": "Une brève indication temporelle au début (« l'année dernière », « l'été dernier ») aide à situer l'histoire.",
+   "it": "Una breve indicazione di tempo all'inizio («l'anno scorso», «l'estate scorsa») aiuta a collocare la storia.",
+   "pt": "Uma breve indicação de tempo no início («no ano passado», «no verão passado») ajuda a situar a história."
+  }
  ],
  "contraste": {
   "es": "Das Spanische erzählt vergangene Geschichten oft im pretérito indefinido, einer einfachen Vergangenheitsform, die eher zum deutschen Präteritum führt; im deutschen Gespräch steht aber meist das Perfekt. Die zeitlichen Marker übertragen sich direkt (primero – zuerst, luego – dann), verlangen im Deutschen aber die Umstellung von Verb und Subjekt (dann bin ich gegangen).",
@@ -54,14 +173,42 @@
   "en": "Die Zeitmarker passen genau (first – zuerst, then – dann, after that – danach). Zwei Unterschiede: Englischsprachige erzählen im simple past, was zum Präteritum führt, und nach dann steht im Deutschen das Verb vor dem Subjekt (dann bin ich gegangen, nicht dann ich ging)."
  },
  "errores": [
-  "Die Geschichte ohne jede zeitliche Struktur erzählen.",
-  "Durchgehend Präteritum statt Perfekt verwenden.",
-  "Zuerst und dann in der falschen Reihenfolge benutzen."
+  {
+   "de": "Die Geschichte ohne jede zeitliche Struktur erzählen.",
+   "en": "Telling the story without any time structure.",
+   "es": "Contar la historia sin ninguna estructura temporal.",
+   "fr": "Raconter l'histoire sans aucune structure temporelle.",
+   "it": "Raccontare la storia senza alcuna struttura temporale.",
+   "pt": "Contar a história sem nenhuma estrutura temporal."
+  },
+  {
+   "de": "Durchgehend Präteritum statt Perfekt verwenden.",
+   "en": "Using the Präteritum throughout instead of the Perfekt.",
+   "es": "Usar Präteritum todo el tiempo en lugar de Perfekt.",
+   "fr": "Utiliser le Präteritum tout au long du récit au lieu du Perfekt.",
+   "it": "Usare sempre il Präteritum invece del Perfekt.",
+   "pt": "Usar o Präteritum o tempo todo em vez do Perfekt."
+  },
+  {
+   "de": "Zuerst und dann in der falschen Reihenfolge benutzen.",
+   "en": "Using zuerst and dann in the wrong order.",
+   "es": "Usar «zuerst» y «dann» en el orden equivocado.",
+   "fr": "Utiliser « zuerst » et « dann » dans le mauvais ordre.",
+   "it": "Usare «zuerst» e «dann» nell'ordine sbagliato.",
+   "pt": "Usar «zuerst» e «dann» na ordem errada."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Letztes Jahr…",
-   "funcion": "Einstieg mit Zeitangabe",
+   "funcion": {
+    "de": "Einstieg mit Zeitangabe",
+    "en": "opening with a time expression",
+    "es": "inicio con indicación temporal",
+    "fr": "début avec une indication temporelle",
+    "it": "inizio con indicazione di tempo",
+    "pt": "início com indicação de tempo"
+   },
    "traducciones": {
     "es": "El año pasado…",
     "en": "Last year…",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Zuerst…, dann…",
-   "funcion": "Reihenfolge",
+   "funcion": {
+    "de": "Reihenfolge",
+    "en": "Sequence",
+    "es": "Secuencia",
+    "fr": "Ordre",
+    "it": "Sequenza",
+    "pt": "Sequência"
+   },
    "traducciones": {
     "es": "Primero…, luego…",
     "en": "First…, then…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Danach…",
-   "funcion": "nächster Schritt",
+   "funcion": {
+    "de": "nächster Schritt",
+    "en": "next step",
+    "es": "paso siguiente",
+    "fr": "étape suivante",
+    "it": "passaggio successivo",
+    "pt": "próximo passo"
+   },
    "traducciones": {
     "es": "Después…",
     "en": "After that…",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Am Ende…",
-   "funcion": "Abschluss",
+   "funcion": {
+    "de": "Abschluss",
+    "en": "Closing",
+    "es": "Cierre",
+    "fr": "Conclusion",
+    "it": "Chiusura",
+    "pt": "Encerramento"
+   },
    "traducciones": {
     "es": "Al final…",
     "en": "In the end…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Es war ein toller Tag.",
-   "funcion": "Bewertung am Ende",
+   "funcion": {
+    "de": "Bewertung am Ende",
+    "en": "evaluation at the end",
+    "es": "valoración al final",
+    "fr": "évaluation à la fin",
+    "it": "valutazione alla fine",
+    "pt": "avaliação no final"
+   },
    "traducciones": {
     "es": "Fue un día genial.",
     "en": "It was a great day.",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Das hat mir sehr gefallen.",
-   "funcion": "positive Bewertung",
+   "funcion": {
+    "de": "positive Bewertung",
+    "en": "positive evaluation",
+    "es": "valoración positiva",
+    "fr": "évaluation positive",
+    "it": "valutazione positiva",
+    "pt": "avaliação positiva"
+   },
    "traducciones": {
     "es": "Me gustó mucho.",
     "en": "I really liked that.",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Ist die Reihenfolge der Ereignisse klar?",
-  "Stehen die meisten Verben im Perfekt?",
-  "Habe ich eine Zeitangabe am Anfang benutzt?",
-  "Habe ich die Geschichte mit einer Bewertung abgeschlossen?",
-  "Klingt die Geschichte wie eine zusammenhängende Erzählung, nicht nur eine Liste?"
+  {
+   "de": "Ist die Reihenfolge der Ereignisse klar?",
+   "en": "Is the sequence of events clear?",
+   "es": "¿La secuencia de los hechos está clara?",
+   "fr": "L'ordre des événements est-il clair ?",
+   "it": "La sequenza degli eventi è chiara?",
+   "pt": "A sequência dos acontecimentos está clara?"
+  },
+  {
+   "de": "Stehen die meisten Verben im Perfekt?",
+   "en": "Are most verbs in the Perfekt?",
+   "es": "¿La mayoría de los verbos están en Perfekt?",
+   "fr": "La plupart des verbes sont-ils au Perfekt ?",
+   "it": "La maggior parte dei verbi è al Perfekt?",
+   "pt": "A maioria dos verbos está no Perfekt?"
+  },
+  {
+   "de": "Habe ich eine Zeitangabe am Anfang benutzt?",
+   "en": "Have I used a time expression at the beginning?",
+   "es": "¿Usé una indicación temporal al comienzo?",
+   "fr": "Ai-je utilisé une indication temporelle au début ?",
+   "it": "Ho usato un'indicazione di tempo all'inizio?",
+   "pt": "Usei uma indicação de tempo no início?"
+  },
+  {
+   "de": "Habe ich die Geschichte mit einer Bewertung abgeschlossen?",
+   "en": "Have I ended the story with an evaluation?",
+   "es": "¿Cerré la historia con una valoración?",
+   "fr": "Ai-je terminé l'histoire par une appréciation ?",
+   "it": "Ho concluso la storia con una valutazione?",
+   "pt": "Terminei a história com uma avaliação?"
+  },
+  {
+   "de": "Klingt die Geschichte wie eine zusammenhängende Erzählung, nicht nur eine Liste?",
+   "en": "Does the story sound like a coherent narrative rather than just a list?",
+   "es": "¿La historia suena como una narración coherente y no como una simple lista?",
+   "fr": "L'histoire ressemble-t-elle à un récit cohérent, et non à une simple liste ?",
+   "it": "La storia suona come un racconto coerente e non come un semplice elenco?",
+   "pt": "A história soa como uma narrativa coerente, e não apenas como uma lista?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Zeitstruktur der Geschichte. Prüfen Sie, ob Perfekt und Präteritum richtig verteilt sind. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Zeitstruktur der Geschichte. Prüfen Sie, ob Perfekt und Präteritum richtig verteilt sind. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on the story's time structure. Check whether Perfekt and Präteritum are distributed correctly. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en la estructura temporal de la historia. Compruebe si Perfekt y Präteritum están bien distribuidos. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur la structure temporelle de l'histoire. Vérifiez si le Perfekt et le Präteritum sont correctement répartis. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulla struttura temporale della storia. Verifichi che Perfekt e Präteritum siano distribuiti correttamente. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente na estrutura temporal da história. Verifique se Perfekt e Präteritum estão distribuídos corretamente. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*Estaba lloviendo* als *Es war regnend* übertragen statt *Es regnete*."

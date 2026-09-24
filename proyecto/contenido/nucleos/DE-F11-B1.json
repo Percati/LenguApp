@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Gespräch steuern: einwerfen, nachfragen, korrigieren",
+ "titulo": {
+  "de": "Gespräch steuern: einwerfen, nachfragen, korrigieren",
+  "en": "Managing a conversation: joining in, asking questions, correcting yourself",
+  "es": "Conducir una conversación: intervenir, pedir aclaración, corregirse",
+  "fr": "Gérer une conversation : intervenir, demander des précisions, se corriger",
+  "it": "Gestire una conversazione: intervenire, chiedere chiarimenti, correggersi",
+  "pt": "Conduzir uma conversa: entrar, pedir esclarecimentos, corrigir-se"
+ },
  "categoria": "fluency",
  "ancla": "PD A2/B1",
- "descripcion": "Auf B1 lernt man, in ein Gespräch einzusteigen, nachzufragen, wenn man etwas nicht versteht, und einen eigenen Fehler zu korrigieren. Diese drei einfachen Werkzeuge reichen aus, um an einem Gespräch aktiv teilzunehmen.",
+ "descripcion": {
+  "de": "Auf B1 lernt man, in ein Gespräch einzusteigen, nachzufragen, wenn man etwas nicht versteht, und einen eigenen Fehler zu korrigieren. Diese drei einfachen Werkzeuge reichen aus, um an einem Gespräch aktiv teilzunehmen.",
+  "en": "At B1, you learn to join a conversation, ask for clarification when you do not understand something, and correct your own mistake. These three simple tools are enough to take an active part in a conversation.",
+  "es": "En B1 se aprende a intervenir en una conversación, pedir aclaraciones cuando algo no se entiende y corregir un error propio. Estas tres herramientas sencillas bastan para participar activamente en una conversación.",
+  "fr": "Au niveau B1, on apprend à intervenir dans une conversation, à demander des précisions lorsqu'on ne comprend pas quelque chose et à corriger sa propre erreur. Ces trois outils simples suffisent pour participer activement à une conversation.",
+  "it": "A livello B1 si impara a intervenire in una conversazione, a chiedere chiarimenti quando non si capisce qualcosa e a correggere un proprio errore. Questi tre semplici strumenti bastano per partecipare attivamente a una conversazione.",
+  "pt": "No B1, aprende-se a entrar em uma conversa, pedir esclarecimentos quando algo não é entendido e corrigir o próprio erro. Essas três ferramentas simples são suficientes para participar ativamente de uma conversa."
+ },
  "cuadroReferencia": {
-  "titulo": "Drei einfache Werkzeuge",
+  "titulo": {
+   "de": "Drei einfache Werkzeuge",
+   "en": "Three simple tools",
+   "es": "Tres herramientas sencillas",
+   "fr": "Trois outils simples",
+   "it": "Tre strumenti semplici",
+   "pt": "Três ferramentas simples"
+  },
   "columnas": [
-   "Funktion",
-   "Formel"
+   {
+    "de": "Funktion",
+    "en": "Function",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "de": "Formel",
+    "en": "Phrase",
+    "es": "Fórmula",
+    "fr": "Formule",
+    "it": "Formula",
+    "pt": "Fórmula"
+   }
   ],
   "filas": [
    [
-    "Einsteigen",
-    "Darf ich kurz etwas sagen?"
+    {
+     "de": "Einsteigen",
+     "en": "Joining in",
+     "es": "Intervenir",
+     "fr": "Intervenir",
+     "it": "Intervenire",
+     "pt": "Entrar na conversa"
+    },
+    {
+     "de": "Darf ich kurz etwas sagen?",
+     "en": "Can I just say something?",
+     "es": "¿Puedo decir algo rápido?",
+     "fr": "Excuse-moi, je peux juste dire quelque chose ?",
+     "it": "Scusa, posso dire una cosa velocemente?",
+     "pt": "Desculpa, posso dizer uma coisa rapidamente?"
+    }
    ],
    [
-    "Nachfragen",
-    "Kannst du das noch mal sagen?"
+    {
+     "de": "Nachfragen",
+     "en": "Asking for clarification",
+     "es": "Pedir aclaración",
+     "fr": "Demander des précisions",
+     "it": "Chiedere chiarimenti",
+     "pt": "Pedir esclarecimentos"
+    },
+    {
+     "de": "Kannst du das noch mal sagen?",
+     "en": "Can you say that again?",
+     "es": "¿Podés repetirlo?",
+     "fr": "Tu peux répéter ?",
+     "it": "Puoi ripeterlo?",
+     "pt": "Podes repetir?"
+    }
    ],
    [
-    "Korrigieren",
-    "Ich meine…, nicht…"
+    {
+     "de": "Korrigieren",
+     "en": "Correcting yourself",
+     "es": "Corregirse",
+     "fr": "Se corriger",
+     "it": "Correggersi",
+     "pt": "Corrigir-se"
+    },
+    {
+     "de": "Ich meine…, nicht…",
+     "en": "I mean…, not…",
+     "es": "Quiero decir…, no…",
+     "fr": "Je veux dire…, pas…",
+     "it": "Intendo…, non…",
+     "pt": "Quero dizer…, não…"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Darf ich kurz etwas dazu sagen?",
+   "texto": {
+    "de": "Darf ich kurz etwas dazu sagen?",
+    "en": "May I say something briefly about that?",
+    "es": "¿Puedo comentar algo brevemente al respecto?",
+    "fr": "Puis-je dire quelque chose rapidement à ce sujet ?",
+    "it": "Posso dire brevemente qualcosa a riguardo?",
+    "pt": "Posso dizer algo rapidamente sobre isso?"
+   },
    "audio": true
   },
   {
-   "texto": "Entschuldigung, kannst du das noch mal sagen?",
+   "texto": {
+    "de": "Entschuldigung, kannst du das noch mal sagen?",
+    "en": "Sorry, can you say that again?",
+    "es": "Perdón, ¿podés repetirlo?",
+    "fr": "Pardon, tu peux répéter ?",
+    "it": "Scusa, puoi ripeterlo?",
+    "pt": "Desculpe, pode repetir?"
+   },
    "audio": true
   },
   {
-   "texto": "Ich meine Montag, nicht Dienstag."
+   "texto": {
+    "de": "Ich meine Montag, nicht Dienstag.",
+    "en": "I mean Monday, not Tuesday.",
+    "es": "Quiero decir el lunes, no el martes.",
+    "fr": "Je veux dire lundi, pas mardi.",
+    "it": "Intendo lunedì, non martedì.",
+    "pt": "Quero dizer segunda-feira, não terça-feira."
+   }
   }
  ],
  "notas": [
-  "Darf ich kurz etwas sagen? ist eine höfliche Art, in ein Gespräch einzusteigen.",
-  "Kannst du das wiederholen? ist auf B1 die einfachste Art, um eine Wiederholung zu bitten.",
-  "Ich meine… korrigiert einen eigenen Fehler, ohne dass es peinlich wirken muss."
+  {
+   "de": "Darf ich kurz etwas sagen? ist eine höfliche Art, in ein Gespräch einzusteigen.",
+   "en": "Darf ich kurz etwas sagen? is a polite way to join a conversation.",
+   "es": "«Darf ich kurz etwas sagen?» es una forma cortés de intervenir en una conversación.",
+   "fr": "« Darf ich kurz etwas sagen ? » est une manière polie d'intervenir dans une conversation.",
+   "it": "«Darf ich kurz etwas sagen?» è un modo cortese per intervenire in una conversazione.",
+   "pt": "«Darf ich kurz etwas sagen?» é uma forma educada de entrar em uma conversa."
+  },
+  {
+   "de": "Kannst du das wiederholen? ist auf B1 die einfachste Art, um eine Wiederholung zu bitten.",
+   "en": "Kannst du das wiederholen? is the simplest way at B1 to ask someone to repeat something.",
+   "es": "«Kannst du das wiederholen?» es la forma más sencilla en B1 de pedir que repitan algo.",
+   "fr": "« Kannst du das wiederholen ? » est la façon la plus simple au niveau B1 de demander de répéter.",
+   "it": "«Kannst du das wiederholen?» è il modo più semplice al B1 per chiedere di ripetere.",
+   "pt": "«Kannst du das wiederholen?» é a forma mais simples no B1 de pedir que alguém repita."
+  },
+  {
+   "de": "Ich meine… korrigiert einen eigenen Fehler, ohne dass es peinlich wirken muss.",
+   "en": "Ich meine… corrects your own mistake without making it awkward.",
+   "es": "«Ich meine…» permite corregir un error propio sin que resulte incómodo.",
+   "fr": "« Ich meine… » permet de corriger sa propre erreur sans créer de gêne.",
+   "it": "«Ich meine…» permette di correggere un proprio errore senza creare imbarazzo.",
+   "pt": "«Ich meine…» permite corrigir o próprio erro sem deixar a situação constrangedora."
+  }
  ],
  "contraste": {
   "es": "Das Spanische steigt mit perdón oder oye ein; perdón entspricht Entschuldigung, oye eher sag mal und ist informell. Neu sind die kleinen Wörter kurz und mal, die die deutsche Frage höflich machen (Darf ich kurz etwas sagen?).",
@@ -54,14 +173,42 @@
   "en": "Sorry, can I just say something? entspricht Entschuldigung, darf ich kurz etwas sagen? – das englische just entspricht dabei kurz oder mal. Can you repeat that? braucht im Deutschen das Objekt: Können Sie das wiederholen?"
  },
  "errores": [
-  "Ohne jede Formel einfach ins Gespräch hineinreden.",
-  "Nicht nachfragen, wenn man etwas nicht verstanden hat, und einfach so tun als ob.",
-  "Einen Fehler unkorrigiert stehen lassen, obwohl man ihn bemerkt hat."
+  {
+   "de": "Ohne jede Formel einfach ins Gespräch hineinreden.",
+   "en": "Simply talking over others without any expression to join the conversation.",
+   "es": "Interrumpir y hablar sin ninguna fórmula para intervenir.",
+   "fr": "Prendre la parole sans aucune formule pour intervenir dans la conversation.",
+   "it": "Intervenire e parlare senza alcuna formula per entrare nella conversazione.",
+   "pt": "Simplesmente falar por cima dos outros sem nenhuma fórmula para entrar na conversa."
+  },
+  {
+   "de": "Nicht nachfragen, wenn man etwas nicht verstanden hat, und einfach so tun als ob.",
+   "en": "Not asking when you have not understood something and simply pretending you did.",
+   "es": "No preguntar cuando no se entendió algo y fingir que sí.",
+   "fr": "Ne pas demander lorsqu'on n'a pas compris et faire simplement semblant.",
+   "it": "Non chiedere quando non si è capito qualcosa e far finta di aver capito.",
+   "pt": "Não perguntar quando não entendeu algo e simplesmente fingir que entendeu."
+  },
+  {
+   "de": "Einen Fehler unkorrigiert stehen lassen, obwohl man ihn bemerkt hat.",
+   "en": "Leaving a mistake uncorrected even though you noticed it.",
+   "es": "Dejar un error sin corregir aunque se lo haya notado.",
+   "fr": "Laisser une erreur sans la corriger alors qu'on l'a remarquée.",
+   "it": "Lasciare un errore senza correggerlo anche se lo si è notato.",
+   "pt": "Deixar um erro sem corrigir mesmo tendo percebido."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Darf ich kurz etwas sagen?",
-   "funcion": "einsteigen",
+   "funcion": {
+    "de": "einsteigen",
+    "en": "joining in",
+    "es": "intervenir",
+    "fr": "intervenir",
+    "it": "intervenire",
+    "pt": "entrar na conversa"
+   },
    "traducciones": {
     "es": "¿Puedo decir algo?",
     "en": "Can I say something?",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Kannst du das noch mal sagen?",
-   "funcion": "nachfragen",
+   "funcion": {
+    "de": "nachfragen",
+    "en": "to follow up with a question",
+    "es": "volver a preguntar",
+    "fr": "redemander",
+    "it": "richiedere",
+    "pt": "voltar a perguntar"
+   },
    "traducciones": {
     "es": "¿Podés repetirlo?",
     "en": "Can you say that again?",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Wie bitte?",
-   "funcion": "nachfragen, informell",
+   "funcion": {
+    "de": "nachfragen, informell",
+    "en": "asking for clarification, informal",
+    "es": "pedir aclaración, informal",
+    "fr": "demander des précisions, informel",
+    "it": "chiedere chiarimenti, informale",
+    "pt": "pedir esclarecimentos, informal"
+   },
    "traducciones": {
     "es": "¿Cómo?",
     "en": "Sorry, what?",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Ich meine…, nicht…",
-   "funcion": "korrigieren",
+   "funcion": {
+    "de": "korrigieren",
+    "en": "correcting yourself",
+    "es": "corregirse",
+    "fr": "se corriger",
+    "it": "correggersi",
+    "pt": "corrigir-se"
+   },
    "traducciones": {
     "es": "Quiero decir…, no…",
     "en": "I mean…, not…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Entschuldigung, ich habe mich vertan.",
-   "funcion": "Fehler zugeben",
+   "funcion": {
+    "de": "Fehler zugeben",
+    "en": "admitting a mistake",
+    "es": "admitir un error",
+    "fr": "admettre une erreur",
+    "it": "ammettere un errore",
+    "pt": "admitir um erro"
+   },
    "traducciones": {
     "es": "Perdón, me equivoqué.",
     "en": "Sorry, I made a mistake.",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Verstehe ich das richtig, dass…?",
-   "funcion": "Verständnis prüfen",
+   "funcion": {
+    "de": "Verständnis prüfen",
+    "en": "checking understanding",
+    "es": "comprobar comprensión",
+    "fr": "vérifier la compréhension",
+    "it": "verificare la comprensione",
+    "pt": "verificar a compreensão"
+   },
    "traducciones": {
     "es": "¿Entiendo bien que…?",
     "en": "Am I right in thinking that…?",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich eine höfliche Formel zum Einsteigen benutzt?",
-  "Habe ich nachgefragt, wenn ich etwas nicht verstanden habe?",
-  "Habe ich einen eigenen Fehler klar korrigiert?",
-  "Habe ich mindestens zwei der drei Werkzeuge benutzt?",
-  "Klingt der Ton höflich, nicht abrupt?"
+  {
+   "de": "Habe ich eine höfliche Formel zum Einsteigen benutzt?",
+   "en": "Have I used a polite expression to join the conversation?",
+   "es": "¿Usé una fórmula cortés para intervenir?",
+   "fr": "Ai-je utilisé une formule polie pour intervenir ?",
+   "it": "Ho usato una formula cortese per intervenire?",
+   "pt": "Usei uma fórmula educada para entrar na conversa?"
+  },
+  {
+   "de": "Habe ich nachgefragt, wenn ich etwas nicht verstanden habe?",
+   "en": "Have I asked for clarification when I didn't understand something?",
+   "es": "¿Pedí aclaración cuando no entendí algo?",
+   "fr": "Ai-je demandé des précisions lorsque je n'ai pas compris quelque chose ?",
+   "it": "Ho chiesto chiarimenti quando non ho capito qualcosa?",
+   "pt": "Pedi esclarecimentos quando não entendi algo?"
+  },
+  {
+   "de": "Habe ich einen eigenen Fehler klar korrigiert?",
+   "en": "Have I clearly corrected my own mistake?",
+   "es": "¿Corregí con claridad un error propio?",
+   "fr": "Ai-je clairement corrigé ma propre erreur ?",
+   "it": "Ho corretto chiaramente un mio errore?",
+   "pt": "Corrigi claramente um erro meu?"
+  },
+  {
+   "de": "Habe ich mindestens zwei der drei Werkzeuge benutzt?",
+   "en": "Have I used at least two of the three tools?",
+   "es": "¿Usé al menos dos de las tres herramientas?",
+   "fr": "Ai-je utilisé au moins deux des trois outils ?",
+   "it": "Ho usato almeno due dei tre strumenti?",
+   "pt": "Usei pelo menos duas das três ferramentas?"
+  },
+  {
+   "de": "Klingt der Ton höflich, nicht abrupt?",
+   "en": "Does the tone sound polite rather than abrupt?",
+   "es": "¿El tono suena cortés y no brusco?",
+   "fr": "Le ton semble-t-il poli plutôt que brusque ?",
+   "it": "Il tono suona cortese e non brusco?",
+   "pt": "O tom soa educado, e não brusco?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Gesprächssteuerung: Einsteigen, Nachfragen, Korrigieren. Prüfen Sie, ob die Formeln höflich und klar sind. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Gesprächssteuerung: Einsteigen, Nachfragen, Korrigieren. Prüfen Sie, ob die Formeln höflich und klar sind. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on conversation management: joining in, asking for clarification, and correcting yourself. Check whether the expressions are polite and clear. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en la gestión de la conversación: intervenir, pedir aclaraciones y corregirse. Compruebe si las fórmulas son claras y corteses. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur la gestion de la conversation : intervenir, demander des précisions et se corriger. Vérifiez si les formules sont polies et claires. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulla gestione della conversazione: intervenire, chiedere chiarimenti e correggersi. Verifichi che le formule siano cortesi e chiare. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente na condução da conversa: entrar, pedir esclarecimentos e corrigir-se. Verifique se as fórmulas são claras e educadas. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*¿Cómo?* als blosses *Wie?* übertragen, was unhöflich wirkt, statt *Wie bitte?*"

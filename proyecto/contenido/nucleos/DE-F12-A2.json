@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Sich beschweren und reklamieren",
+ "titulo": {
+  "de": "Sich beschweren und reklamieren",
+  "en": "Complaining and making a complaint",
+  "es": "Quejarse y hacer una reclamación",
+  "fr": "Se plaindre et faire une réclamation",
+  "it": "Lamentarsi e fare un reclamo",
+  "pt": "Reclamar e fazer uma queixa"
+ },
  "categoria": "fluency",
  "ancla": "PD A2",
- "descripcion": "Auf A2 nennt man ein einfaches Problem und bittet höflich um Hilfe. Die feinere Struktur mit Bitte und Nachfrage kommt erst später. Es reicht, sich verständlich zu machen und höflich um eine Lösung zu bitten.",
+ "descripcion": {
+  "de": "Auf A2 nennt man ein einfaches Problem und bittet höflich um Hilfe. Die feinere Struktur mit Bitte und Nachfrage kommt erst später. Es reicht, sich verständlich zu machen und höflich um eine Lösung zu bitten.",
+  "en": "At A2, you state a simple problem and politely ask for help. A more refined structure with a request and follow-up question comes later. It is enough to make yourself understood and politely ask for a solution.",
+  "es": "En A2 se menciona un problema sencillo y se pide ayuda con cortesía. Una estructura más elaborada, con pedido y pregunta de seguimiento, aparece más adelante. Basta con hacerse entender y pedir una solución de forma educada.",
+  "fr": "Au niveau A2, on expose un problème simple et on demande poliment de l'aide. Une structure plus élaborée avec demande et relance vient plus tard. Il suffit de se faire comprendre et de demander poliment une solution.",
+  "it": "A livello A2 si espone un problema semplice e si chiede aiuto con cortesia. Una struttura più articolata, con richiesta e domanda di approfondimento, viene più avanti. Basta farsi capire e chiedere una soluzione in modo educato.",
+  "pt": "No nível A2, apresenta-se um problema simples e pede-se ajuda com educação. Uma estrutura mais elaborada, com pedido e pergunta de acompanhamento, vem depois. Basta se fazer entender e pedir uma solução de forma educada."
+ },
  "cuadroReferencia": {
-  "titulo": "Ein einfaches Problem",
+  "titulo": {
+   "de": "Ein einfaches Problem",
+   "en": "A simple problem",
+   "es": "Un problema sencillo",
+   "fr": "Un problème simple",
+   "it": "Un problema semplice",
+   "pt": "Um problema simples"
+  },
   "columnas": [
-   "Schritt",
-   "Beispiel"
+   {
+    "de": "Schritt",
+    "en": "Step",
+    "es": "Paso",
+    "fr": "Étape",
+    "it": "Passaggio",
+    "pt": "Etapa"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Problem",
-    "Das funktioniert nicht."
+    {
+     "de": "Problem",
+     "en": "Problem",
+     "es": "Problema",
+     "fr": "Problème",
+     "it": "Problema",
+     "pt": "Problema"
+    },
+    {
+     "de": "Das funktioniert nicht.",
+     "en": "It doesn't work.",
+     "es": "No funciona.",
+     "fr": "Ça ne fonctionne pas.",
+     "it": "Non funziona.",
+     "pt": "Não funciona."
+    }
    ],
    [
-    "Bitte",
-    "Können Sie das reparieren?"
+    {
+     "de": "Bitte",
+     "en": "Request",
+     "es": "Pedido",
+     "fr": "Demande",
+     "it": "Richiesta",
+     "pt": "Pedido"
+    },
+    {
+     "de": "Können Sie das reparieren?",
+     "en": "Can you repair it?",
+     "es": "¿Puede repararlo?",
+     "fr": "Pouvez-vous le réparer ?",
+     "it": "Può ripararlo?",
+     "pt": "Pode consertar isso?"
+    }
    ],
    [
-    "Abschluss",
-    "Danke für Ihre Hilfe."
+    {
+     "de": "Abschluss",
+     "en": "Closing",
+     "es": "Cierre",
+     "fr": "Conclusion",
+     "it": "Chiusura",
+     "pt": "Encerramento"
+    },
+    {
+     "de": "Danke für Ihre Hilfe.",
+     "en": "Thank you for your help.",
+     "es": "Gracias por su ayuda.",
+     "fr": "Merci pour votre aide.",
+     "it": "Grazie per il suo aiuto.",
+     "pt": "Obrigado/a pela ajuda."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Entschuldigung, das funktioniert leider nicht.",
+   "texto": {
+    "de": "Entschuldigung, das funktioniert leider nicht.",
+    "en": "Excuse me, unfortunately this isn't working.",
+    "es": "Disculpe, lamentablemente esto no funciona.",
+    "fr": "Excusez-moi, malheureusement ça ne fonctionne pas.",
+    "it": "Mi scusi, purtroppo questo non funziona.",
+    "pt": "Com licença, infelizmente isto não está funcionando."
+   },
    "audio": true
   },
   {
-   "texto": "Können Sie das bitte reparieren?",
+   "texto": {
+    "de": "Können Sie das bitte reparieren?",
+    "en": "Could you please repair it?",
+    "es": "¿Podría repararlo, por favor?",
+    "fr": "Pourriez-vous le réparer, s'il vous plaît ?",
+    "it": "Potrebbe ripararlo, per favore?",
+    "pt": "Poderia consertar isso, por favor?"
+   },
    "audio": true
   },
   {
-   "texto": "Das ist kaputt."
+   "texto": {
+    "de": "Das ist kaputt.",
+    "en": "It's broken.",
+    "es": "Está roto.",
+    "fr": "C'est cassé.",
+    "it": "È rotto.",
+    "pt": "Está quebrado."
+   }
   }
  ],
  "notas": [
-  "Entschuldigung ist ein guter Einstieg für eine Beschwerde.",
-  "Können Sie…? ist die einfachste höfliche Bitte.",
-  "Leider zeigt, dass es sich um ein Problem handelt, ohne unhöflich zu klingen."
+  {
+   "de": "Entschuldigung ist ein guter Einstieg für eine Beschwerde.",
+   "en": "Entschuldigung is a good way to begin a complaint.",
+   "es": "«Entschuldigung» es una buena forma de iniciar una queja.",
+   "fr": "« Entschuldigung » est une bonne façon de commencer une réclamation.",
+   "it": "«Entschuldigung» è un buon modo per iniziare un reclamo.",
+   "pt": "«Entschuldigung» é uma boa forma de iniciar uma reclamação."
+  },
+  {
+   "de": "Können Sie…? ist die einfachste höfliche Bitte.",
+   "en": "Können Sie…? is the simplest polite request.",
+   "es": "«Können Sie…?» es la petición cortés más sencilla.",
+   "fr": "« Können Sie… ? » est la demande polie la plus simple.",
+   "it": "«Können Sie…?» è la richiesta cortese più semplice.",
+   "pt": "«Können Sie…?» é o pedido educado mais simples."
+  },
+  {
+   "de": "Leider zeigt, dass es sich um ein Problem handelt, ohne unhöflich zu klingen.",
+   "en": "Leider shows that there is a problem without sounding impolite.",
+   "es": "«Leider» indica que hay un problema sin sonar descortés.",
+   "fr": "« Leider » signale qu'il y a un problème sans paraître impoli.",
+   "it": "«Leider» segnala che c'è un problema senza risultare scortese.",
+   "pt": "«Leider» mostra que há um problema sem soar mal-educado."
+  }
  ],
  "contraste": {
   "es": "Die Grundformeln passen gut: disculpe, … no funciona – Entschuldigung, … funktioniert nicht; por desgracia – leider. Die höfliche Beschwerde überträgt sich also direkt.",
@@ -54,13 +173,34 @@
   "en": "Excuse me, … doesn't work entspricht Entschuldigung, … funktioniert nicht, und unfortunately entspricht leider. Die höfliche Beschwerde überträgt sich direkt."
  },
  "errores": [
-  "Das Problem ohne jede Höflichkeitsform nennen.",
-  "Keine Bitte formulieren."
+  {
+   "de": "Das Problem ohne jede Höflichkeitsform nennen.",
+   "en": "Stating the problem without any polite expression.",
+   "es": "Mencionar el problema sin ninguna fórmula de cortesía.",
+   "fr": "Exposer le problème sans aucune formule de politesse.",
+   "it": "Esporre il problema senza alcuna formula di cortesia.",
+   "pt": "Apresentar o problema sem nenhuma fórmula de cortesia."
+  },
+  {
+   "de": "Keine Bitte formulieren.",
+   "en": "Not making a request.",
+   "es": "No formular ningún pedido.",
+   "fr": "Ne formuler aucune demande.",
+   "it": "Non formulare alcuna richiesta.",
+   "pt": "Não fazer nenhum pedido."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Das funktioniert nicht.",
-   "funcion": "Problem nennen",
+   "funcion": {
+    "de": "Problem nennen",
+    "en": "stating the problem",
+    "es": "mencionar el problema",
+    "fr": "exposer le problème",
+    "it": "esporre il problema",
+    "pt": "apresentar o problema"
+   },
    "traducciones": {
     "es": "Eso no funciona.",
     "en": "That's not working.",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "Können Sie das reparieren?",
-   "funcion": "höfliche Bitte",
+   "funcion": {
+    "de": "höfliche Bitte",
+    "en": "polite request",
+    "es": "pedido cortés",
+    "fr": "demande polie",
+    "it": "richiesta cortese",
+    "pt": "pedido educado"
+   },
    "traducciones": {
     "es": "¿Puede repararlo?",
     "en": "Can you fix it?",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "Das ist kaputt.",
-   "funcion": "Problem, informell",
+   "funcion": {
+    "de": "Problem, informell",
+    "en": "problem, informal",
+    "es": "problema, informal",
+    "fr": "problème, informel",
+    "it": "problema, informale",
+    "pt": "problema, informal"
+   },
    "traducciones": {
     "es": "Está roto.",
     "en": "It's broken.",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "Entschuldigung, …",
-   "funcion": "höflicher Einstieg",
+   "funcion": {
+    "de": "höflicher Einstieg",
+    "en": "polite opening",
+    "es": "inicio cortés",
+    "fr": "entrée en matière polie",
+    "it": "apertura cortese",
+    "pt": "abertura educada"
+   },
    "traducciones": {
     "es": "Disculpe, …",
     "en": "Excuse me, …",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "Das ist leider…",
-   "funcion": "Problem, abgeschwächt",
+   "funcion": {
+    "de": "Problem, abgeschwächt",
+    "en": "softened problem statement",
+    "es": "problema, formulado con suavidad",
+    "fr": "problème, formulé de manière atténuée",
+    "it": "problema, formulato in modo attenuato",
+    "pt": "problema, formulado de maneira mais suave"
+   },
    "traducciones": {
     "es": "Lamentablemente eso…",
     "en": "Unfortunately that's…",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "Danke für Ihre Hilfe.",
-   "funcion": "höflicher Abschluss",
+   "funcion": {
+    "de": "höflicher Abschluss",
+    "en": "polite closing",
+    "es": "cierre cortés",
+    "fr": "conclusion polie",
+    "it": "chiusura cortese",
+    "pt": "encerramento educado"
+   },
    "traducciones": {
     "es": "Gracias por su ayuda.",
     "en": "Thank you for your help.",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Ist das Problem klar genannt?",
-  "Habe ich höflich um Hilfe gebeten?",
-  "Klingt der Text höflich?",
-  "Klingt der Text höflich?",
-  "Klingt der Text höflich?"
+  {
+   "de": "Ist das Problem klar genannt?",
+   "en": "Is the problem stated clearly?",
+   "es": "¿El problema está expresado con claridad?",
+   "fr": "Le problème est-il clairement exposé ?",
+   "it": "Il problema è espresso chiaramente?",
+   "pt": "O problema está exposto com clareza?"
+  },
+  {
+   "de": "Habe ich höflich um Hilfe gebeten?",
+   "en": "Have I politely asked for help?",
+   "es": "¿Pedí ayuda con cortesía?",
+   "fr": "Ai-je demandé de l'aide poliment ?",
+   "it": "Ho chiesto aiuto con cortesia?",
+   "pt": "Pedi ajuda com educação?"
+  },
+  {
+   "de": "Klingt der Text höflich?",
+   "en": "Does the text sound polite?",
+   "es": "¿El texto suena cortés?",
+   "fr": "Le texte semble-t-il poli ?",
+   "it": "Il testo suona cortese?",
+   "pt": "O texto soa educado?"
+  },
+  {
+   "de": "Klingt der Text höflich?",
+   "en": "Does the text sound polite?",
+   "es": "¿El texto suena cortés?",
+   "fr": "Le texte semble-t-il poli ?",
+   "it": "Il testo suona cortese?",
+   "pt": "O texto soa educado?"
+  },
+  {
+   "de": "Klingt der Text höflich?",
+   "en": "Does the text sound polite?",
+   "es": "¿El texto suena cortés?",
+   "fr": "Le texte semble-t-il poli ?",
+   "it": "Il testo suona cortese?",
+   "pt": "O texto soa educado?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Problem und die Bitte. Prüfen Sie, ob der Ton höflich bleibt. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob mindestens eine höfliche Formel benutzt wird.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf das Problem und die Bitte. Prüfen Sie, ob der Ton höflich bleibt. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob mindestens eine höfliche Formel benutzt wird.",
+  "en": "Focus exclusively on the problem and the request. Check that the tone remains polite. Do not rewrite the text. Also check whether at least one polite expression is used.",
+  "es": "Concéntrese exclusivamente en el problema y el pedido. Compruebe que el tono se mantenga cortés. No reescriba el texto. Compruebe también si se utiliza al menos una fórmula de cortesía.",
+  "fr": "Concentrez-vous exclusivement sur le problème et la demande. Vérifiez que le ton reste poli. Ne réécrivez pas le texte. Vérifiez également si au moins une formule de politesse est utilisée.",
+  "it": "Si concentri esclusivamente sul problema e sulla richiesta. Verifichi che il tono resti cortese. Non riscriva il testo. Controlli anche se viene usata almeno una formula di cortesia.",
+  "pt": "Concentre-se exclusivamente no problema e no pedido. Verifique se o tom permanece educado. Não reescreva o texto. Verifique também se foi usada pelo menos uma fórmula de cortesia."
+ },
  "erroresContrastivos": {
   "es": [
    "*Oiga* als *Hören Sie!* zur Anrede übertragen, was im Deutschen barsch klingt, statt *Entschuldigung*."

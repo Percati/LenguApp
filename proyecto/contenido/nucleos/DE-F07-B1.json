@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Vermutungen ausdrücken",
+ "titulo": {
+  "de": "Vermutungen ausdrücken",
+  "en": "Expressing assumptions",
+  "es": "Expresar suposiciones",
+  "fr": "Exprimer des suppositions",
+  "it": "Esprimere supposizioni",
+  "pt": "Expressar suposições"
+ },
  "categoria": "fluency",
  "ancla": "PD A2/B1",
- "descripcion": "Auf B1 drückt man eine Vermutung mit vielleicht oder wahrscheinlich aus. Die Modalverben könnte, dürfte und müsste kommen erst auf B2 systematisch dazu — hier reicht ein einfaches Adverb, um Unsicherheit auszudrücken.",
+ "descripcion": {
+  "de": "Auf B1 drückt man eine Vermutung mit vielleicht oder wahrscheinlich aus. Die Modalverben könnte, dürfte und müsste kommen erst auf B2 systematisch dazu — hier reicht ein einfaches Adverb, um Unsicherheit auszudrücken.",
+  "en": "At B1, you express an assumption with vielleicht or wahrscheinlich. Modal verbs such as könnte, dürfte and müsste are introduced systematically only at B2 — here, a simple adverb is enough to show uncertainty.",
+  "es": "En B1 se expresa una suposición con «vielleicht» o «wahrscheinlich». Los verbos modales «könnte», «dürfte» y «müsste» se trabajan sistemáticamente recién en B2; aquí basta un adverbio sencillo para expresar incertidumbre.",
+  "fr": "Au niveau B1, on exprime une supposition avec « vielleicht » ou « wahrscheinlich ». Les verbes modaux « könnte », « dürfte » et « müsste » ne sont abordés systématiquement qu'au B2 ; ici, un simple adverbe suffit à exprimer l'incertitude.",
+  "it": "A livello B1 si esprime una supposizione con «vielleicht» o «wahrscheinlich». I verbi modali «könnte», «dürfte» e «müsste» vengono affrontati sistematicamente solo al B2; qui basta un semplice avverbio per esprimere incertezza.",
+  "pt": "No B1, expressa-se uma suposição com «vielleicht» ou «wahrscheinlich». Os verbos modais «könnte», «dürfte» e «müsste» só são trabalhados sistematicamente no B2; aqui, um advérbio simples é suficiente para expressar incerteza."
+ },
  "cuadroReferencia": {
-  "titulo": "Eine einfache Vermutung",
+  "titulo": {
+   "de": "Eine einfache Vermutung",
+   "en": "A simple assumption",
+   "es": "Una suposición sencilla",
+   "fr": "Une supposition simple",
+   "it": "Una supposizione semplice",
+   "pt": "Uma suposição simples"
+  },
   "columnas": [
-   "Wort",
-   "Beispiel"
+   {
+    "de": "Wort",
+    "en": "Word",
+    "es": "Palabra",
+    "fr": "Mot",
+    "it": "Parola",
+    "pt": "Palavra"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "vielleicht",
-    "Vielleicht ist er einfach müde."
+    {
+     "de": "vielleicht",
+     "en": "perhaps",
+     "es": "quizás",
+     "fr": "peut-être",
+     "it": "forse",
+     "pt": "talvez"
+    },
+    {
+     "de": "Vielleicht ist er einfach müde.",
+     "en": "Maybe he's just tired.",
+     "es": "Quizás simplemente está cansado.",
+     "fr": "Peut-être qu'il est simplement fatigué.",
+     "it": "Forse è semplicemente stanco.",
+     "pt": "Talvez ele esteja só cansado."
+    }
    ],
    [
-    "wahrscheinlich",
-    "Er ist wahrscheinlich noch im Büro."
+    {
+     "de": "wahrscheinlich",
+     "en": "probably",
+     "es": "probablemente",
+     "fr": "probablement",
+     "it": "probabilmente",
+     "pt": "provavelmente"
+    },
+    {
+     "de": "Er ist wahrscheinlich noch im Büro.",
+     "en": "He's probably still at the office.",
+     "es": "Probablemente todavía está en la oficina.",
+     "fr": "Il est probablement encore au bureau.",
+     "it": "Probabilmente è ancora in ufficio.",
+     "pt": "Ele provavelmente ainda está no escritório."
+    }
    ],
    [
-    "ich glaube",
-    "Ich glaube, das liegt am Wetter."
+    {
+     "de": "ich glaube",
+     "en": "I think",
+     "es": "creo que",
+     "fr": "je pense",
+     "it": "credo",
+     "pt": "acho que"
+    },
+    {
+     "de": "Ich glaube, das liegt am Wetter.",
+     "en": "I think it's because of the weather.",
+     "es": "Creo que se debe al clima.",
+     "fr": "Je pense que c'est à cause du temps.",
+     "it": "Credo che dipenda dal tempo.",
+     "pt": "Acho que é por causa do tempo."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Vielleicht ist er einfach nur müde.",
+   "texto": {
+    "de": "Vielleicht ist er einfach nur müde.",
+    "en": "Maybe he's just tired.",
+    "es": "Quizás simplemente está cansado.",
+    "fr": "Peut-être qu'il est simplement fatigué.",
+    "it": "Forse è semplicemente stanco.",
+    "pt": "Talvez ele esteja só cansado."
+   },
    "audio": true
   },
   {
-   "texto": "Er ist wahrscheinlich noch bei der Arbeit.",
+   "texto": {
+    "de": "Er ist wahrscheinlich noch bei der Arbeit.",
+    "en": "He's probably still at work.",
+    "es": "Probablemente todavía está en el trabajo.",
+    "fr": "Il est probablement encore au travail.",
+    "it": "Probabilmente è ancora al lavoro.",
+    "pt": "Ele provavelmente ainda está no trabalho."
+   },
    "audio": true
   },
   {
-   "texto": "Ich glaube, das liegt am schlechten Wetter."
+   "texto": {
+    "de": "Ich glaube, das liegt am schlechten Wetter.",
+    "en": "I think it's because of the bad weather.",
+    "es": "Creo que se debe al mal tiempo.",
+    "fr": "Je pense que c'est à cause du mauvais temps.",
+    "it": "Credo che dipenda dal brutto tempo.",
+    "pt": "Acho que é por causa do mau tempo."
+   }
   }
  ],
  "notas": [
-  "Vielleicht steht oft am Satzanfang und ist die einfachste Form der Vermutung.",
-  "Wahrscheinlich drückt eine etwas sicherere Vermutung aus als vielleicht.",
-  "Ich glaube, dass… ist eine gute Alternative, wenn man nicht sicher ist."
+  {
+   "de": "Vielleicht steht oft am Satzanfang und ist die einfachste Form der Vermutung.",
+   "en": "Vielleicht often comes at the beginning of the sentence and is the simplest way to express an assumption.",
+   "es": "«Vielleicht» suele aparecer al comienzo de la oración y es la forma más sencilla de expresar una suposición.",
+   "fr": "« Vielleicht » se place souvent au début de la phrase et constitue la manière la plus simple d'exprimer une supposition.",
+   "it": "«Vielleicht» si trova spesso all'inizio della frase ed è il modo più semplice per esprimere una supposizione.",
+   "pt": "«Vielleicht» costuma vir no início da frase e é a forma mais simples de expressar uma suposição."
+  },
+  {
+   "de": "Wahrscheinlich drückt eine etwas sicherere Vermutung aus als vielleicht.",
+   "en": "Wahrscheinlich expresses a somewhat more certain assumption than vielleicht.",
+   "es": "«Wahrscheinlich» expresa una suposición algo más segura que «vielleicht».",
+   "fr": "« Wahrscheinlich » exprime une supposition un peu plus certaine que « vielleicht ».",
+   "it": "«Wahrscheinlich» esprime una supposizione un po' più sicura di «vielleicht».",
+   "pt": "«Wahrscheinlich» expressa uma suposição um pouco mais certa do que «vielleicht»."
+  },
+  {
+   "de": "Ich glaube, dass… ist eine gute Alternative, wenn man nicht sicher ist.",
+   "en": "Ich glaube, dass… is a good alternative when you are not sure.",
+   "es": "«Ich glaube, dass…» es una buena alternativa cuando no se está seguro.",
+   "fr": "« Ich glaube, dass… » est une bonne alternative lorsqu'on n'est pas sûr.",
+   "it": "«Ich glaube, dass…» è una buona alternativa quando non si è sicuri.",
+   "pt": "«Ich glaube, dass…» é uma boa alternativa quando você não tem certeza."
+  }
  ],
  "contraste": {
   "es": "Das Spanische drückt Vermutung mit quizás oder probablemente aus, was strukturell fast identisch zum Deutschen ist. Diese einfache Form der Vermutung überträgt sich deshalb sehr leicht.",
@@ -54,14 +173,42 @@
   "en": "Maybe, perhaps und probably entsprechen vielleicht und wahrscheinlich direkt, und I guess passt gut zu ich vermute. Die einfache Vermutung überträgt sich deshalb sehr leicht."
  },
  "errores": [
-  "Eine Vermutung wie eine Tatsache formulieren, ohne vielleicht oder wahrscheinlich.",
-  "Vielleicht und wahrscheinlich verwechseln, obwohl sie unterschiedliche Sicherheitsgrade ausdrücken.",
-  "Nur eine Formel für jede Vermutung benutzen."
+  {
+   "de": "Eine Vermutung wie eine Tatsache formulieren, ohne vielleicht oder wahrscheinlich.",
+   "en": "Stating an assumption as a fact without vielleicht or wahrscheinlich.",
+   "es": "Formular una suposición como si fuera un hecho, sin «vielleicht» ni «wahrscheinlich».",
+   "fr": "Formuler une supposition comme un fait, sans « vielleicht » ni « wahrscheinlich ».",
+   "it": "Formulare una supposizione come un fatto, senza «vielleicht» o «wahrscheinlich».",
+   "pt": "Apresentar uma suposição como fato, sem «vielleicht» ou «wahrscheinlich»."
+  },
+  {
+   "de": "Vielleicht und wahrscheinlich verwechseln, obwohl sie unterschiedliche Sicherheitsgrade ausdrücken.",
+   "en": "Confusing vielleicht and wahrscheinlich even though they express different levels of certainty.",
+   "es": "Confundir «vielleicht» y «wahrscheinlich» aunque expresan distintos grados de certeza.",
+   "fr": "Confondre « vielleicht » et « wahrscheinlich » alors qu'ils expriment des degrés de certitude différents.",
+   "it": "Confondere «vielleicht» e «wahrscheinlich» anche se esprimono gradi di certezza diversi.",
+   "pt": "Confundir «vielleicht» e «wahrscheinlich», embora expressem graus de certeza diferentes."
+  },
+  {
+   "de": "Nur eine Formel für jede Vermutung benutzen.",
+   "en": "Using only one expression for every assumption.",
+   "es": "Usar una sola fórmula para todas las suposiciones.",
+   "fr": "Utiliser une seule formule pour toutes les suppositions.",
+   "it": "Usare una sola formula per ogni supposizione.",
+   "pt": "Usar apenas uma fórmula para todas as suposições."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Vielleicht ist…",
-   "funcion": "einfache Vermutung",
+   "funcion": {
+    "de": "einfache Vermutung",
+    "en": "simple assumption",
+    "es": "suposición sencilla",
+    "fr": "supposition simple",
+    "it": "supposizione semplice",
+    "pt": "suposição simples"
+   },
    "traducciones": {
     "es": "Quizás sea…",
     "en": "Maybe it's…",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Er/Sie ist wahrscheinlich…",
-   "funcion": "sicherere Vermutung",
+   "funcion": {
+    "de": "sicherere Vermutung",
+    "en": "more certain assumption",
+    "es": "suposición más segura",
+    "fr": "supposition plus certaine",
+    "it": "supposizione più sicura",
+    "pt": "suposição mais certa"
+   },
    "traducciones": {
     "es": "Probablemente esté…",
     "en": "He/She is probably…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Ich glaube, dass…",
-   "funcion": "Vermutung, persönlich",
+   "funcion": {
+    "de": "Vermutung, persönlich",
+    "en": "assumption, personal",
+    "es": "suposición, personal",
+    "fr": "supposition, personnelle",
+    "it": "supposizione, personale",
+    "pt": "suposição, pessoal"
+   },
    "traducciones": {
     "es": "Creo que…",
     "en": "I think that…",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Ich denke, das liegt an…",
-   "funcion": "Ursache vermuten",
+   "funcion": {
+    "de": "Ursache vermuten",
+    "en": "assuming a cause",
+    "es": "suponer una causa",
+    "fr": "supposer une cause",
+    "it": "ipotizzare una causa",
+    "pt": "supor uma causa"
+   },
    "traducciones": {
     "es": "Pienso que eso se debe a…",
     "en": "I think that's because of…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Keine Ahnung, aber vielleicht…",
-   "funcion": "unsichere Vermutung, informell",
+   "funcion": {
+    "de": "unsichere Vermutung, informell",
+    "en": "uncertain assumption, informal",
+    "es": "suposición insegura, informal",
+    "fr": "supposition incertaine, informelle",
+    "it": "supposizione incerta, informale",
+    "pt": "suposição incerta, informal"
+   },
    "traducciones": {
     "es": "Ni idea, pero quizás…",
     "en": "No idea, but maybe…",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Bestimmt ist…",
-   "funcion": "sehr sichere Vermutung",
+   "funcion": {
+    "de": "sehr sichere Vermutung",
+    "en": "very certain assumption",
+    "es": "suposición muy segura",
+    "fr": "supposition très certaine",
+    "it": "supposizione molto sicura",
+    "pt": "suposição muito certa"
+   },
    "traducciones": {
     "es": "Seguro que es…",
     "en": "It's definitely…",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich vielleicht oder wahrscheinlich benutzt, statt eine Tatsache zu behaupten?",
-  "Passt der Sicherheitsgrad zur Situation?",
-  "Habe ich mehr als eine Formel benutzt?",
-  "Habe ich mindestens zwei verschiedene Vermutungsformeln benutzt?",
-  "Ist die Vermutung als solche erkennbar, nicht als Tatsache formuliert?"
+  {
+   "de": "Habe ich vielleicht oder wahrscheinlich benutzt, statt eine Tatsache zu behaupten?",
+   "en": "Have I used vielleicht or wahrscheinlich rather than stating something as a fact?",
+   "es": "¿Usé «vielleicht» o «wahrscheinlich» en vez de afirmar algo como un hecho?",
+   "fr": "Ai-je utilisé « vielleicht » ou « wahrscheinlich » au lieu d'affirmer quelque chose comme un fait ?",
+   "it": "Ho usato «vielleicht» o «wahrscheinlich» invece di affermare qualcosa come un fatto?",
+   "pt": "Usei «vielleicht» ou «wahrscheinlich» em vez de afirmar algo como fato?"
+  },
+  {
+   "de": "Passt der Sicherheitsgrad zur Situation?",
+   "en": "Does the level of certainty fit the situation?",
+   "es": "¿El grado de certeza se adecua a la situación?",
+   "fr": "Le degré de certitude correspond-il à la situation ?",
+   "it": "Il grado di certezza è adatto alla situazione?",
+   "pt": "O grau de certeza combina com a situação?"
+  },
+  {
+   "de": "Habe ich mehr als eine Formel benutzt?",
+   "en": "Have I used more than one expression?",
+   "es": "¿Usé más de una fórmula?",
+   "fr": "Ai-je utilisé plus d'une formule ?",
+   "it": "Ho usato più di una formula?",
+   "pt": "Usei mais de uma fórmula?"
+  },
+  {
+   "de": "Habe ich mindestens zwei verschiedene Vermutungsformeln benutzt?",
+   "en": "Have I used at least two different expressions for assumptions?",
+   "es": "¿Usé al menos dos fórmulas diferentes para expresar suposiciones?",
+   "fr": "Ai-je utilisé au moins deux formules différentes pour exprimer des suppositions ?",
+   "it": "Ho usato almeno due formule diverse per esprimere supposizioni?",
+   "pt": "Usei pelo menos duas fórmulas diferentes para expressar suposições?"
+  },
+  {
+   "de": "Ist die Vermutung als solche erkennbar, nicht als Tatsache formuliert?",
+   "en": "Is it clearly recognizable as an assumption rather than a fact?",
+   "es": "¿Se reconoce claramente como una suposición y no como un hecho?",
+   "fr": "Est-ce clairement présenté comme une supposition, et non comme un fait ?",
+   "it": "È chiaramente riconoscibile come supposizione e non come fatto?",
+   "pt": "Está claramente marcado como suposição, e não como fato?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Vermutungsformeln. Prüfen Sie, ob die Vermutung klar als solche markiert ist. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Vermutungsformeln. Prüfen Sie, ob die Vermutung klar als solche markiert ist. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on the expressions used for assumptions. Check whether the assumption is clearly marked as such. Do not rewrite the text.",
+  "es": "Concentre su atención exclusivamente en las fórmulas de suposición. Compruebe si la suposición está claramente marcada como tal. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les formules de supposition. Vérifiez si la supposition est clairement présentée comme telle. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulle formule per esprimere supposizioni. Verifichi che la supposizione sia chiaramente marcata come tale. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nas fórmulas de suposição. Verifique com atenção se a suposição está claramente marcada como tal. Não reescreva você mesmo o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*A lo mejor* als *Zum Besten* übertragen statt *Vielleicht*."

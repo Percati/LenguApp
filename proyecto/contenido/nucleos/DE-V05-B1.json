@@ -3,51 +3,191 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Modalpartikeln (*doch, mal, ja, eben, halt, wohl*)",
+ "titulo": {
+  "de": "Modalpartikeln (*doch, mal, ja, eben, halt, wohl*)",
+  "en": "Modal particles (*doch, mal, ja, eben, halt, wohl*)",
+  "es": "Partículas modales (*doch, mal, ja, eben, halt, wohl*)",
+  "fr": "Particules modales (*doch, mal, ja, eben, halt, wohl*)",
+  "it": "Particelle modali (*doch, mal, ja, eben, halt, wohl*)",
+  "pt": "Partículas modais (*doch, mal, ja, eben, halt, wohl*)"
+ },
  "categoria": "vocabulary",
  "ancla": "PD B1",
- "descripcion": "Auf B1 werden die zwei nützlichsten Modalpartikeln eingeführt: doch und mal. Ohne sie klingt ein deutscher Satz oft unhöflich schroff, auch wenn er grammatisch korrekt ist — sie sind kein Extra, sondern gehören zum natürlichen Ton dazu.",
+ "descripcion": {
+  "de": "Auf B1 werden die zwei nützlichsten Modalpartikeln eingeführt: doch und mal. Ohne sie klingt ein deutscher Satz oft unhöflich schroff, auch wenn er grammatisch korrekt ist — sie sind kein Extra, sondern gehören zum natürlichen Ton dazu.",
+  "en": "At B1, the two most useful modal particles are introduced: doch and mal. Without them, a German sentence can sound brusquely impolite even when it is grammatically correct — they are not an optional extra, but part of a natural tone.",
+  "es": "En B1 se introducen las dos partículas modales más útiles: «doch» y «mal». Sin ellas, una frase alemana puede sonar demasiado brusca aunque sea gramaticalmente correcta; no son un añadido opcional, sino parte del tono natural.",
+  "fr": "Au niveau B1, on introduit les deux particules modales les plus utiles : « doch » et « mal ». Sans elles, une phrase allemande peut paraître sèchement impolie même si elle est grammaticalement correcte ; ce ne sont pas de simples ajouts, elles font partie du ton naturel.",
+  "it": "A livello B1 vengono introdotte le due particelle modali più utili: «doch» e «mal». Senza di esse una frase tedesca può suonare bruscamente scortese anche se è grammaticalmente corretta: non sono un’aggiunta facoltativa, ma fanno parte del tono naturale.",
+  "pt": "No nível B1, são introduzidas as duas partículas modais mais úteis: «doch» e «mal». Sem elas, uma frase em alemão pode soar ríspida mesmo estando gramaticalmente correta — elas não são um extra, mas fazem parte do tom natural."
+ },
  "cuadroReferencia": {
-  "titulo": "Doch und mal",
+  "titulo": {
+   "de": "Doch und mal",
+   "en": "Doch and mal",
+   "es": "«Doch» y «mal»",
+   "fr": "« Doch » et « mal »",
+   "it": "«Doch» e «mal»",
+   "pt": "«Doch» e «mal»"
+  },
   "columnas": [
-   "Partikel",
-   "Funktion",
-   "Beispiel"
+   {
+    "de": "Partikel",
+    "en": "Particle",
+    "es": "Partícula",
+    "fr": "Particule",
+    "it": "Particella",
+    "pt": "Partícula"
+   },
+   {
+    "de": "Funktion",
+    "en": "Function",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "doch",
-    "macht eine Bitte freundlicher",
-    "Komm doch mit!"
+    {
+     "de": "doch",
+     "en": "doch",
+     "es": "«doch»",
+     "fr": "« doch »",
+     "it": "«doch»",
+     "pt": "«doch»"
+    },
+    {
+     "de": "macht eine Bitte freundlicher",
+     "en": "makes a request friendlier",
+     "es": "hace que una petición suene más amable",
+     "fr": "rend une demande plus aimable",
+     "it": "rende una richiesta più gentile",
+     "pt": "deixa um pedido mais gentil"
+    },
+    {
+     "de": "Komm doch mit!",
+     "en": "Come along, why don't you!",
+     "es": "¡Vení con nosotros!",
+     "fr": "Viens donc avec nous !",
+     "it": "Dai, vieni con noi!",
+     "pt": "Vem connosco!"
+    }
    ],
    [
-    "mal",
-    "macht eine Aufforderung beiläufig",
-    "Schau mal!"
+    {
+     "de": "mal",
+     "en": "mal",
+     "es": "«mal»",
+     "fr": "« mal »",
+     "it": "«mal»",
+     "pt": "«mal»"
+    },
+    {
+     "de": "macht eine Aufforderung beiläufig",
+     "en": "makes an instruction more casual",
+     "es": "hace que una indicación suene más informal",
+     "fr": "rend une invitation ou consigne plus légère",
+     "it": "rende un invito più informale",
+     "pt": "deixa uma solicitação mais casual"
+    },
+    {
+     "de": "Schau mal!",
+     "en": "Look!",
+     "es": "¡Mirá!",
+     "fr": "Regarde !",
+     "it": "Guarda!",
+     "pt": "Olha!"
+    }
    ],
    [
-    "kombiniert",
-    "Komm doch mal vorbei."
+    {
+     "de": "kombiniert",
+     "en": "combined",
+     "es": "combinadas",
+     "fr": "combinées",
+     "it": "combinate",
+     "pt": "combinadas"
+    },
+    {
+     "de": "Komm doch mal vorbei.",
+     "en": "Come by sometime.",
+     "es": "Pásate un día.",
+     "fr": "Passe donc un de ces jours.",
+     "it": "Passa un giorno.",
+     "pt": "Passa aqui qualquer dia."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Komm doch heute Abend mit uns essen!",
+   "texto": {
+    "de": "Komm doch heute Abend mit uns essen!",
+    "en": "Come have dinner with us tonight!",
+    "es": "¡Ven a cenar con nosotros esta noche!",
+    "fr": "Viens donc dîner avec nous ce soir !",
+    "it": "Vieni a cena con noi stasera!",
+    "pt": "Vem jantar com a gente hoje à noite!"
+   },
    "audio": true
   },
   {
-   "texto": "Schau mal, was ich hier gefunden habe.",
+   "texto": {
+    "de": "Schau mal, was ich hier gefunden habe.",
+    "en": "Look what I found here.",
+    "es": "Mira lo que encontré aquí.",
+    "fr": "Regarde ce que j’ai trouvé ici.",
+    "it": "Guarda cosa ho trovato qui.",
+    "pt": "Olha o que eu encontrei aqui."
+   },
    "audio": true
   },
   {
-   "texto": "Setz dich doch mal kurz hin."
+   "texto": {
+    "de": "Setz dich doch mal kurz hin.",
+    "en": "Why don’t you sit down for a moment?",
+    "es": "Sentate un momento, dale.",
+    "fr": "Assieds-toi donc un instant.",
+    "it": "Siediti un attimo.",
+    "pt": "Senta um pouquinho."
+   }
   }
  ],
  "notas": [
-  "Ohne doch klingt Komm mit! wie ein Befehl; mit doch klingt es wie eine freundliche Einladung.",
-  "Mal macht eine Aufforderung beiläufiger und weniger streng.",
-  "Doch und mal können im selben Satz kombiniert werden: komm doch mal vorbei."
+  {
+   "de": "Ohne doch klingt Komm mit! wie ein Befehl; mit doch klingt es wie eine freundliche Einladung.",
+   "en": "Without doch, Komm mit! sounds like an order; with doch, it sounds like a friendly invitation.",
+   "es": "Sin «doch», «Komm mit!» suena como una orden; con «doch», suena como una invitación amistosa.",
+   "fr": "Sans « doch », « Komm mit ! » ressemble à un ordre ; avec « doch », cela ressemble à une invitation amicale.",
+   "it": "Senza «doch», «Komm mit!» suona come un ordine; con «doch», suona come un invito amichevole.",
+   "pt": "Sem «doch», «Komm mit!» soa como uma ordem; com «doch», soa como um convite amigável."
+  },
+  {
+   "de": "Mal macht eine Aufforderung beiläufiger und weniger streng.",
+   "en": "Mal makes an instruction or request sound more casual and less strict.",
+   "es": "«Mal» hace que una indicación o petición suene más casual y menos estricta.",
+   "fr": "« Mal » rend une demande ou une consigne plus légère et moins stricte.",
+   "it": "«Mal» rende una richiesta o un invito più informale e meno rigido.",
+   "pt": "«Mal» deixa uma solicitação mais casual e menos rígida."
+  },
+  {
+   "de": "Doch und mal können im selben Satz kombiniert werden: komm doch mal vorbei.",
+   "en": "Doch and mal can be combined in the same sentence: komm doch mal vorbei.",
+   "es": "«Doch» y «mal» pueden combinarse en la misma oración: «komm doch mal vorbei».",
+   "fr": "« Doch » et « mal » peuvent être combinés dans la même phrase : « komm doch mal vorbei ».",
+   "it": "«Doch» e «mal» possono essere combinati nella stessa frase: «komm doch mal vorbei».",
+   "pt": "«Doch» e «mal» podem ser combinados na mesma frase: «komm doch mal vorbei»."
+  }
  ],
  "contraste": {
   "es": "Das Spanische hat keine direkte Entsprechung für doch oder mal. Ähnliche Wirkung erzielt man im Spanischen eher mit der Intonation oder mit Zusatzwörtern wie venga oder anda.",
@@ -57,14 +197,42 @@
   "en": "Das Englische hat zwei gute Brücken: just entspricht oft mal (can you just help me? – kannst du mir mal helfen?), und das betonte do entspricht oft doch (do come in – komm doch rein)."
  },
  "errores": [
-  "Doch und mal ganz weglassen und dadurch schroffer klingen als beabsichtigt.",
-  "Doch mit dem Widerspruchssinn (doch, das stimmt) verwechseln.",
-  "Zu viele Partikeln in einem Satz häufen."
+  {
+   "de": "Doch und mal ganz weglassen und dadurch schroffer klingen als beabsichtigt.",
+   "en": "Leaving out doch and mal entirely and therefore sounding harsher than intended.",
+   "es": "Omitir por completo «doch» y «mal» y sonar por eso más brusco de lo deseado.",
+   "fr": "Omettre complètement « doch » et « mal » et paraître ainsi plus brusque que prévu.",
+   "it": "Omettere del tutto «doch» e «mal» e risultare quindi più bruschi del previsto.",
+   "pt": "Omitir completamente «doch» e «mal» e, com isso, soar mais ríspido do que o pretendido."
+  },
+  {
+   "de": "Doch mit dem Widerspruchssinn (doch, das stimmt) verwechseln.",
+   "en": "Confusing doch as a modal particle with its contradiction meaning (doch, das stimmt).",
+   "es": "Confundir «doch» como partícula modal con su sentido de contradicción («doch, das stimmt»).",
+   "fr": "Confondre « doch » comme particule modale avec son sens de contradiction (« doch, das stimmt »).",
+   "it": "Confondere «doch» come particella modale con il suo valore di contraddizione («doch, das stimmt»).",
+   "pt": "Confundir «doch» como partícula modal com seu sentido de contraposição («doch, das stimmt»)."
+  },
+  {
+   "de": "Zu viele Partikeln in einem Satz häufen.",
+   "en": "Piling up too many particles in one sentence.",
+   "es": "Acumular demasiadas partículas en una sola oración.",
+   "fr": "Accumuler trop de particules dans une seule phrase.",
+   "it": "Accumular troppe particelle in una sola frase.",
+   "pt": "Acumular partículas demais em uma única frase."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Komm doch mit!",
-   "funcion": "freundliche Einladung",
+   "funcion": {
+    "de": "freundliche Einladung",
+    "en": "friendly invitation",
+    "es": "invitación amistosa",
+    "fr": "invitation amicale",
+    "it": "invito amichevole",
+    "pt": "convite amigável"
+   },
    "traducciones": {
     "es": "¡Vení con nosotros!",
     "en": "Come along, why don't you!",
@@ -75,7 +243,14 @@
   },
   {
    "expresion": "Schau mal!",
-   "funcion": "beiläufige Aufforderung",
+   "funcion": {
+    "de": "beiläufige Aufforderung",
+    "en": "casual request/instruction",
+    "es": "petición o indicación casual",
+    "fr": "demande/consigne informelle",
+    "it": "richiesta/indicazione informale",
+    "pt": "pedido/solicitação casual"
+   },
    "traducciones": {
     "es": "¡Mirá!",
     "en": "Look!",
@@ -86,7 +261,14 @@
   },
   {
    "expresion": "Setz dich doch.",
-   "funcion": "freundliche Aufforderung",
+   "funcion": {
+    "de": "freundliche Aufforderung",
+    "en": "friendly request",
+    "es": "petición amable",
+    "fr": "demande amicale",
+    "it": "richiesta gentile",
+    "pt": "pedido gentil"
+   },
    "traducciones": {
     "es": "Sentate, dale.",
     "en": "Sit down, go on.",
@@ -97,7 +279,14 @@
   },
   {
    "expresion": "Frag doch mal nach.",
-   "funcion": "kombinierte Partikeln",
+   "funcion": {
+    "de": "kombinierte Partikeln",
+    "en": "combined particles",
+    "es": "partículas combinadas",
+    "fr": "particules combinées",
+    "it": "particelle combinate",
+    "pt": "partículas combinadas"
+   },
    "traducciones": {
     "es": "Preguntá, dale.",
     "en": "Just go ahead and ask.",
@@ -108,7 +297,14 @@
   },
   {
    "expresion": "Warte mal.",
-   "funcion": "beiläufige Bitte",
+   "funcion": {
+    "de": "beiläufige Bitte",
+    "en": "casual request",
+    "es": "petición informal",
+    "fr": "demande légère",
+    "it": "richiesta informale",
+    "pt": "pedido casual"
+   },
    "traducciones": {
     "es": "Esperá un poco.",
     "en": "Wait a sec.",
@@ -119,7 +315,14 @@
   },
   {
    "expresion": "Komm doch rein!",
-   "funcion": "freundliche Einladung",
+   "funcion": {
+    "de": "freundliche Einladung",
+    "en": "friendly invitation",
+    "es": "invitación amistosa",
+    "fr": "invitation amicale",
+    "it": "invito amichevole",
+    "pt": "convite amigável"
+   },
    "traducciones": {
     "es": "¡Entrá, dale!",
     "en": "Come on in!",
@@ -130,13 +333,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich doch oder mal in einer Aufforderung benutzt?",
-  "Klingt der Satz freundlicher als ohne Partikel?",
-  "Habe ich nicht zu viele Partikeln in einem Satz gehäuft?",
-  "Klingt der Text natürlich?",
-  "Habe ich das Vokabular des Themas eingesetzt?"
+  {
+   "de": "Habe ich doch oder mal in einer Aufforderung benutzt?",
+   "en": "Have I used doch or mal in a request or instruction?",
+   "es": "¿Usé «doch» o «mal» en una petición o indicación?",
+   "fr": "Ai-je utilisé « doch » ou « mal » dans une demande ou une consigne ?",
+   "it": "Ho usato «doch» o «mal» in una richiesta o indicazione?",
+   "pt": "Usei «doch» ou «mal» em um pedido ou solicitação?"
+  },
+  {
+   "de": "Klingt der Satz freundlicher als ohne Partikel?",
+   "en": "Does the sentence sound friendlier than without the particle?",
+   "es": "¿La oración suena más amable que sin la partícula?",
+   "fr": "La phrase paraît-elle plus aimable qu’elle ne le serait sans la particule ?",
+   "it": "La frase suona più gentile che senza la particella?",
+   "pt": "A frase soa mais gentil do que sem a partícula?"
+  },
+  {
+   "de": "Habe ich nicht zu viele Partikeln in einem Satz gehäuft?",
+   "en": "Have I avoided piling up too many particles in one sentence?",
+   "es": "¿Evité acumular demasiadas partículas en una sola oración?",
+   "fr": "Ai-je évité d’accumuler trop de particules dans une seule phrase ?",
+   "it": "Ho evitato di accumulare troppe particelle in una sola frase?",
+   "pt": "Evitei acumular partículas demais em uma única frase?"
+  },
+  {
+   "de": "Klingt der Text natürlich?",
+   "en": "Does the text sound natural?",
+   "es": "¿El texto suena natural?",
+   "fr": "Le texte sonne-t-il naturellement ?",
+   "it": "Il testo suona naturale?",
+   "pt": "O texto soa natural?"
+  },
+  {
+   "de": "Habe ich das Vokabular des Themas eingesetzt?",
+   "en": "Have I used vocabulary related to the topic?",
+   "es": "¿Usé vocabulario del tema?",
+   "fr": "Ai-je utilisé le vocabulaire du thème ?",
+   "it": "Ho usato il vocabolario dell'argomento?",
+   "pt": "Usei o vocabulário do tema?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalpartikeln doch und mal. Prüfen Sie, ob sie den Ton freundlicher machen. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Modalpartikeln doch und mal. Prüfen Sie, ob sie den Ton freundlicher machen. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on the modal particles doch and mal. Check carefully whether they make the tone friendlier. Do not rewrite the text yourself.",
+  "es": "Concentre su atención exclusivamente en las partículas modales «doch» y «mal». Compruebe si hacen que el tono suene más amable. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les particules modales « doch » et « mal ». Vérifiez si elles rendent le ton plus aimable. Ne réécrivez pas le texte.",
+  "it": "Concentri la sua attenzione esclusivamente sulle particelle modali «doch» e «mal». Controlli se rendono il tono più gentile. Non riscriva lei stesso il testo.",
+  "pt": "Concentre-se exclusivamente nas partículas modais «doch» e «mal». Verifique com atenção se elas deixam o tom mais gentil. Não reescreva você mesmo o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Das spanische *¿no?* als *nein?* ans Satzende hängen: *Das ist gut, nein?* statt *…, oder?* oder *…, gell?*"

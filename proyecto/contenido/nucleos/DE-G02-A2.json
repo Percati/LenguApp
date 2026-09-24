@@ -3,51 +3,191 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Konnektoren (*weil, obwohl, trotzdem, deshalb, während*)",
+ "titulo": {
+  "de": "Konnektoren (*weil, obwohl, trotzdem, deshalb, während*)",
+  "en": "Connectors (*weil, obwohl, trotzdem, deshalb, während*)",
+  "es": "Conectores (*weil, obwohl, trotzdem, deshalb, während*)",
+  "fr": "Connecteurs (*weil, obwohl, trotzdem, deshalb, während*)",
+  "it": "Connettori (*weil, obwohl, trotzdem, deshalb, während*)",
+  "pt": "Conectores (*weil, obwohl, trotzdem, deshalb, während*)"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Auf A2 lernt man die zwei nützlichsten Konnektoren zuerst: weil für den Grund und deshalb für die Folge. Die anderen wichtigen Konnektoren wie obwohl, trotzdem und während kommen erst auf B1 systematisch dazu.",
+ "descripcion": {
+  "de": "Auf A2 lernt man die zwei nützlichsten Konnektoren zuerst: weil für den Grund und deshalb für die Folge. Die anderen wichtigen Konnektoren wie obwohl, trotzdem und während kommen erst auf B1 systematisch dazu.",
+  "en": "At A2, you first learn the two most useful connectors: weil for the reason and deshalb for the consequence. Other important connectors such as obwohl, trotzdem and während are introduced systematically only at B1.",
+  "es": "En A2 se aprenden primero los dos conectores más útiles: «weil» para la causa y «deshalb» para la consecuencia. Otros conectores importantes como «obwohl», «trotzdem» y «während» se trabajan sistemáticamente recién en B1.",
+  "fr": "Au niveau A2, on apprend d'abord les deux connecteurs les plus utiles : « weil » pour la cause et « deshalb » pour la conséquence. Les autres connecteurs importants, comme « obwohl », « trotzdem » et « während », ne sont abordés systématiquement qu'au niveau B1.",
+  "it": "A livello A2 si imparano innanzitutto i due connettori più utili: «weil» per la causa e «deshalb» per la conseguenza. Gli altri connettori importanti, come «obwohl», «trotzdem» e «während», vengono affrontati sistematicamente solo al B1.",
+  "pt": "No nível A2, aprendem-se primeiro os dois conectores mais úteis: «weil» para a causa e «deshalb» para a consequência. Outros conectores importantes, como «obwohl», «trotzdem» e «während», só são trabalhados sistematicamente no B1."
+ },
  "cuadroReferencia": {
-  "titulo": "Weil und deshalb",
+  "titulo": {
+   "de": "Weil und deshalb",
+   "en": "Weil and deshalb",
+   "es": "«Weil» y «deshalb»",
+   "fr": "« Weil » et « deshalb »",
+   "it": "«Weil» e «deshalb»",
+   "pt": "«Weil» e «deshalb»"
+  },
   "columnas": [
-   "Konnektor",
-   "Funktion",
-   "Verbposition"
+   {
+    "de": "Konnektor",
+    "en": "Connector",
+    "es": "Conector",
+    "fr": "Connecteur",
+    "it": "Connettore",
+    "pt": "Conector"
+   },
+   {
+    "de": "Funktion",
+    "en": "Function",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "de": "Verbposition",
+    "en": "Verb position",
+    "es": "Posición del verbo",
+    "fr": "Position du verbe",
+    "it": "Posizione del verbo",
+    "pt": "Posição do verbo"
+   }
   ],
   "filas": [
    [
-    "weil",
-    "Grund",
-    "Verb am Ende"
+    {
+     "de": "weil",
+     "en": "weil",
+     "es": "weil",
+     "fr": "weil",
+     "it": "weil",
+     "pt": "weil"
+    },
+    {
+     "de": "Grund",
+     "en": "Reason",
+     "es": "Razón",
+     "fr": "Raison",
+     "it": "Motivo",
+     "pt": "Motivo"
+    },
+    {
+     "de": "Verb am Ende",
+     "en": "verb at the end",
+     "es": "verbo al final",
+     "fr": "verbe à la fin",
+     "it": "verbo alla fine",
+     "pt": "verbo no final"
+    }
    ],
    [
-    "deshalb",
-    "Folge",
-    "Verb-Subjekt-Umstellung"
+    {
+     "de": "deshalb",
+     "en": "deshalb",
+     "es": "deshalb",
+     "fr": "deshalb",
+     "it": "deshalb",
+     "pt": "deshalb"
+    },
+    {
+     "de": "Folge",
+     "en": "consequence",
+     "es": "consecuencia",
+     "fr": "conséquence",
+     "it": "conseguenza",
+     "pt": "consequência"
+    },
+    {
+     "de": "Verb-Subjekt-Umstellung",
+     "en": "verb-subject inversion",
+     "es": "inversión verbo-sujeto",
+     "fr": "inversion verbe-sujet",
+     "it": "inversione verbo-soggetto",
+     "pt": "inversão verbo-sujeito"
+    }
    ],
    [
-    "Beispiel weil",
-    "Ich bin müde, weil ich viel gearbeitet habe."
+    {
+     "de": "Beispiel weil",
+     "en": "Example with weil",
+     "es": "Ejemplo con «weil»",
+     "fr": "Exemple avec « weil »",
+     "it": "Esempio con «weil»",
+     "pt": "Exemplo com «weil»"
+    },
+    {
+     "de": "Ich bin müde, weil ich viel gearbeitet habe.",
+     "en": "I'm tired because I've worked a lot.",
+     "es": "Estoy cansado/a porque trabajé mucho.",
+     "fr": "Je suis fatigué(e) parce que j'ai beaucoup travaillé.",
+     "it": "Sono stanco/a perché ho lavorato molto.",
+     "pt": "Estou cansado/a porque trabalhei muito."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich bleibe zu Hause, weil ich krank bin.",
+   "texto": {
+    "de": "Ich bleibe zu Hause, weil ich krank bin.",
+    "en": "I'm staying at home because I'm ill.",
+    "es": "Me quedo en casa porque estoy enfermo/a.",
+    "fr": "Je reste à la maison parce que je suis malade.",
+    "it": "Resto a casa perché sono malato/a.",
+    "pt": "Vou ficar em casa porque estou doente."
+   },
    "audio": true
   },
   {
-   "texto": "Es regnet, deshalb bleibe ich zu Hause.",
+   "texto": {
+    "de": "Es regnet, deshalb bleibe ich zu Hause.",
+    "en": "It's raining, so I'm staying at home.",
+    "es": "Llueve, por eso me quedo en casa.",
+    "fr": "Il pleut, donc je reste à la maison.",
+    "it": "Piove, quindi resto a casa.",
+    "pt": "Está chovendo, por isso vou ficar em casa."
+   },
    "audio": true
   },
   {
-   "texto": "Ich habe keine Zeit, weil ich arbeite."
+   "texto": {
+    "de": "Ich habe keine Zeit, weil ich arbeite.",
+    "en": "I don't have time because I'm working.",
+    "es": "No tengo tiempo porque estoy trabajando.",
+    "fr": "Je n'ai pas le temps parce que je travaille.",
+    "it": "Non ho tempo perché lavoro.",
+    "pt": "Não tenho tempo porque estou trabalhando."
+   }
   }
  ],
  "notas": [
-  "Weil schickt das Verb ans Ende des Satzes.",
-  "Nach deshalb kommt zuerst das Verb, dann das Subjekt.",
-  "Beide Konnektoren sind sehr häufig im Alltag."
+  {
+   "de": "Weil schickt das Verb ans Ende des Satzes.",
+   "en": "Weil sends the verb to the end of the sentence.",
+   "es": "«Weil» lleva el verbo al final de la oración.",
+   "fr": "« Weil » place le verbe à la fin de la phrase.",
+   "it": "«Weil» manda il verbo alla fine della frase.",
+   "pt": "«Weil» leva o verbo para o final da frase."
+  },
+  {
+   "de": "Nach deshalb kommt zuerst das Verb, dann das Subjekt.",
+   "en": "After deshalb, the verb comes first and the subject follows.",
+   "es": "Después de «deshalb» viene primero el verbo y luego el sujeto.",
+   "fr": "Après « deshalb », le verbe vient d'abord, puis le sujet.",
+   "it": "Dopo «deshalb» viene prima il verbo e poi il soggetto.",
+   "pt": "Depois de «deshalb», vem primeiro o verbo e depois o sujeito."
+  },
+  {
+   "de": "Beide Konnektoren sind sehr häufig im Alltag.",
+   "en": "Both connectors are very common in everyday language.",
+   "es": "Ambos conectores son muy frecuentes en la vida cotidiana.",
+   "fr": "Les deux connecteurs sont très courants dans la langue de tous les jours.",
+   "it": "Entrambi i connettori sono molto comuni nel linguaggio quotidiano.",
+   "pt": "Os dois conectores são muito comuns no dia a dia."
+  }
  ],
  "contraste": {
   "es": "Das Spanische verändert die Wortstellung nach porque oder por eso nicht. Diese Veränderung ist für Spanischsprachige komplett neu.",
@@ -57,14 +197,42 @@
   "en": "Because und that's why bedeuten dasselbe wie weil und deshalb, ändern aber die Wortstellung nicht. Die Bedeutung ist also leicht, neu ist die Stellung des Verbs."
  },
  "errores": [
-  "Nach weil das Verb nicht ans Ende stellen.",
-  "Nach deshalb keine Verb-Subjekt-Umstellung machen.",
-  "Weil und deshalb verwechseln."
+  {
+   "de": "Nach weil das Verb nicht ans Ende stellen.",
+   "en": "Not putting the verb at the end after weil.",
+   "es": "No colocar el verbo al final después de «weil».",
+   "fr": "Ne pas mettre le verbe à la fin après « weil ».",
+   "it": "Non mettere il verbo alla fine dopo «weil».",
+   "pt": "Não colocar o verbo no final depois de «weil»."
+  },
+  {
+   "de": "Nach deshalb keine Verb-Subjekt-Umstellung machen.",
+   "en": "Not using verb-subject inversion after deshalb.",
+   "es": "No hacer la inversión verbo-sujeto después de «deshalb».",
+   "fr": "Ne pas faire l'inversion verbe-sujet après « deshalb ».",
+   "it": "Non fare l'inversione verbo-soggetto dopo «deshalb».",
+   "pt": "Não fazer a inversão verbo-sujeito depois de «deshalb»."
+  },
+  {
+   "de": "Weil und deshalb verwechseln.",
+   "en": "Confusing weil and deshalb.",
+   "es": "Confundir «weil» y «deshalb».",
+   "fr": "Confondre « weil » et « deshalb ».",
+   "it": "Confondere «weil» e «deshalb».",
+   "pt": "Confundir «weil» e «deshalb»."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…, weil…",
-   "funcion": "Grund",
+   "funcion": {
+    "de": "Grund",
+    "en": "Reason",
+    "es": "Razón",
+    "fr": "Raison",
+    "it": "Motivo",
+    "pt": "Motivo"
+   },
    "traducciones": {
     "es": "…, porque…",
     "en": "…, because…",
@@ -75,7 +243,14 @@
   },
   {
    "expresion": "…, deshalb…",
-   "funcion": "Folge",
+   "funcion": {
+    "de": "Folge",
+    "en": "consequence",
+    "es": "consecuencia",
+    "fr": "conséquence",
+    "it": "conseguenza",
+    "pt": "consequência"
+   },
    "traducciones": {
     "es": "…, por eso…",
     "en": "…, that's why…",
@@ -86,7 +261,14 @@
   },
   {
    "expresion": "Ich bin müde, weil…",
-   "funcion": "feste Kombination",
+   "funcion": {
+    "de": "feste Kombination",
+    "en": "fixed combination",
+    "es": "combinación fija",
+    "fr": "combinaison fixe",
+    "it": "combinazione fissa",
+    "pt": "combinação fixa"
+   },
    "traducciones": {
     "es": "Estoy cansado porque…",
     "en": "I'm tired because…",
@@ -97,7 +279,14 @@
   },
   {
    "expresion": "Es ist spät, deshalb…",
-   "funcion": "feste Kombination",
+   "funcion": {
+    "de": "feste Kombination",
+    "en": "fixed combination",
+    "es": "combinación fija",
+    "fr": "combinaison fixe",
+    "it": "combinazione fissa",
+    "pt": "combinação fixa"
+   },
    "traducciones": {
     "es": "Es tarde, por eso…",
     "en": "It's late, that's why…",
@@ -108,7 +297,14 @@
   },
   {
    "expresion": "Warum? — Weil…",
-   "funcion": "Frage und Antwort",
+   "funcion": {
+    "de": "Frage und Antwort",
+    "en": "question and answer",
+    "es": "pregunta y respuesta",
+    "fr": "question et réponse",
+    "it": "domanda e risposta",
+    "pt": "pergunta e resposta"
+   },
    "traducciones": {
     "es": "¿Por qué? — Porque…",
     "en": "Why? — Because…",
@@ -119,7 +315,14 @@
   },
   {
    "expresion": "…, deshalb kann ich nicht…",
-   "funcion": "Folge, negativ",
+   "funcion": {
+    "de": "Folge, negativ",
+    "en": "consequence, negative",
+    "es": "consecuencia, negativa",
+    "fr": "conséquence, négative",
+    "it": "conseguenza, negativa",
+    "pt": "consequência, negativa"
+   },
    "traducciones": {
     "es": "…, por eso no puedo…",
     "en": "…, that's why I can't…",
@@ -130,13 +333,55 @@
   }
  ],
  "autochequeo": [
-  "Steht nach weil das Verb am Ende?",
-  "Steht nach deshalb Verb vor Subjekt?",
-  "Habe ich beide Konnektoren mindestens einmal benutzt?",
-  "Klingt der Satz natürlich?",
-  "Habe ich mindestens vier Sätze gebildet?"
+  {
+   "de": "Steht nach weil das Verb am Ende?",
+   "en": "Is the verb at the end after weil?",
+   "es": "¿El verbo está al final después de «weil»?",
+   "fr": "Le verbe est-il à la fin après « weil » ?",
+   "it": "Il verbo è alla fine dopo «weil»?",
+   "pt": "O verbo está no final depois de «weil»?"
+  },
+  {
+   "de": "Steht nach deshalb Verb vor Subjekt?",
+   "en": "After deshalb, does the verb come before the subject?",
+   "es": "¿Después de «deshalb» el verbo va antes del sujeto?",
+   "fr": "Après « deshalb », le verbe vient-il avant le sujet ?",
+   "it": "Dopo «deshalb», il verbo viene prima del soggetto?",
+   "pt": "Depois de «deshalb», o verbo vem antes do sujeito?"
+  },
+  {
+   "de": "Habe ich beide Konnektoren mindestens einmal benutzt?",
+   "en": "Have I used both connectors at least once?",
+   "es": "¿Usé ambos conectores al menos una vez?",
+   "fr": "Ai-je utilisé les deux connecteurs au moins une fois ?",
+   "it": "Ho usato entrambi i connettori almeno una volta?",
+   "pt": "Usei os dois conectores pelo menos uma vez?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Habe ich mindestens vier Sätze gebildet?",
+   "en": "Have I formed at least four sentences?",
+   "es": "¿Formé al menos cuatro oraciones?",
+   "fr": "Ai-je formé au moins quatre phrases ?",
+   "it": "Ho formato almeno quattro frasi?",
+   "pt": "Formei pelo menos quatro frases?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf weil und deshalb. Prüfen Sie die Verbposition in beiden Fällen genau, Satz für Satz. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf weil und deshalb. Prüfen Sie die Verbposition in beiden Fällen genau, Satz für Satz. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on weil and deshalb. Check the verb position in both cases carefully, sentence by sentence. Do not rewrite the text yourself.",
+  "es": "Concéntrese exclusivamente en «weil» y «deshalb». Revise con atención la posición del verbo en ambos casos, oración por oración. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur « weil » et « deshalb ». Vérifiez attentivement la position du verbe dans les deux cas, phrase par phrase. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente su «weil» e «deshalb». Controlli attentamente la posizione del verbo in entrambi i casi, frase per frase. Non riscriva il testo.",
+  "pt": "Concentre sua atenção exclusivamente em «weil» e «deshalb». Verifique com atenção a posição do verbo nos dois casos, frase por frase. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*por eso* als *für das* übertragen statt *deshalb*."

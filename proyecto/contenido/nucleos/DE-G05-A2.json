@@ -3,52 +3,199 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Modalverben",
+ "titulo": {
+  "de": "Modalverben",
+  "en": "Modal verbs",
+  "es": "Verbos modales",
+  "fr": "Verbes modaux",
+  "it": "Verbi modali",
+  "pt": "Verbos modais"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Auf A2 lernt man die drei wichtigsten Modalverben zuerst: können für Fähigkeit, müssen für Pflicht, möchten für einen höflichen Wunsch. Es ist der erste Schritt, um im Alltag über die Vergangenheit und Wünsche sprechen zu können.",
+ "descripcion": {
+  "de": "Auf A2 lernt man die drei wichtigsten Modalverben zuerst: können für Fähigkeit, müssen für Pflicht, möchten für einen höflichen Wunsch. Es ist der erste Schritt, um im Alltag über die Vergangenheit und Wünsche sprechen zu können.",
+  "en": "At A2, you first learn the three most important modal verbs: können for ability, müssen for obligation, and möchten for a polite wish. This is the first step toward being able to talk about abilities, obligations and wishes in everyday life.",
+  "es": "En A2 se aprenden primero los tres verbos modales más importantes: «können» para capacidad, «müssen» para obligación y «möchten» para expresar un deseo de forma cortés. Es el primer paso para hablar de capacidades, obligaciones y deseos en situaciones cotidianas.",
+  "fr": "Au niveau A2, on apprend d'abord les trois verbes modaux les plus importants : « können » pour la capacité, « müssen » pour l'obligation et « möchten » pour exprimer poliment un souhait. C'est la première étape pour parler de capacités, d'obligations et de souhaits au quotidien.",
+  "it": "A livello A2 si imparano innanzitutto i tre verbi modali più importanti: «können» per la capacità, «müssen» per l'obbligo e «möchten» per esprimere un desiderio in modo cortese. È il primo passo per parlare di capacità, obblighi e desideri nella vita quotidiana.",
+  "pt": "No nível A2, aprendem-se primeiro os três verbos modais mais importantes: «können» para capacidade, «müssen» para obrigação e «möchten» para expressar um desejo de forma educada. É o primeiro passo para falar de capacidades, obrigações e desejos no dia a dia."
+ },
  "cuadroReferencia": {
-  "titulo": "Drei Modalverben",
+  "titulo": {
+   "de": "Drei Modalverben",
+   "en": "Three modal verbs",
+   "es": "Tres verbos modales",
+   "fr": "Trois verbes modaux",
+   "it": "Tre verbi modali",
+   "pt": "Três verbos modais"
+  },
   "columnas": [
-   "Verb",
-   "Bedeutung",
-   "Beispiel"
+   {
+    "de": "Verb",
+    "en": "Verb",
+    "es": "Verbo",
+    "fr": "Verbe",
+    "it": "Verbo",
+    "pt": "Verbo"
+   },
+   {
+    "de": "Bedeutung",
+    "en": "Meaning",
+    "es": "Significado",
+    "fr": "Signification",
+    "it": "Significato",
+    "pt": "Significado"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "können",
-    "Fähigkeit",
-    "Ich kann Deutsch sprechen."
+    {
+     "de": "können",
+     "en": "können",
+     "es": "können",
+     "fr": "können",
+     "it": "können",
+     "pt": "können"
+    },
+    {
+     "de": "Fähigkeit",
+     "en": "ability",
+     "es": "capacidad",
+     "fr": "capacité",
+     "it": "capacità",
+     "pt": "capacidade"
+    },
+    {
+     "de": "Ich kann Deutsch sprechen.",
+     "en": "I can speak German.",
+     "es": "Sé hablar alemán.",
+     "fr": "Je sais parler allemand.",
+     "it": "So parlare tedesco.",
+     "pt": "Eu sei falar alemão."
+    }
    ],
    [
-    "müssen",
-    "Pflicht",
-    "Ich muss arbeiten."
+    {
+     "de": "müssen",
+     "en": "müssen",
+     "es": "müssen",
+     "fr": "müssen",
+     "it": "müssen",
+     "pt": "müssen"
+    },
+    {
+     "de": "Pflicht",
+     "en": "obligation",
+     "es": "obligación",
+     "fr": "obligation",
+     "it": "obbligo",
+     "pt": "obrigação"
+    },
+    {
+     "de": "Ich muss arbeiten.",
+     "en": "I have to work.",
+     "es": "Tengo que trabajar.",
+     "fr": "Je dois travailler.",
+     "it": "Devo lavorare.",
+     "pt": "Tenho que trabalhar."
+    }
    ],
    [
-    "möchten",
-    "höflicher Wunsch",
-    "Ich möchte einen Kaffee."
+    {
+     "de": "möchten",
+     "en": "möchten",
+     "es": "möchten",
+     "fr": "möchten",
+     "it": "möchten",
+     "pt": "möchten"
+    },
+    {
+     "de": "höflicher Wunsch",
+     "en": "polite request",
+     "es": "pedido cortés",
+     "fr": "demande polie",
+     "it": "richiesta cortese",
+     "pt": "pedido educado"
+    },
+    {
+     "de": "Ich möchte einen Kaffee.",
+     "en": "I'd like a coffee.",
+     "es": "Quisiera un café.",
+     "fr": "Je voudrais un café.",
+     "it": "Vorrei un caffè.",
+     "pt": "Eu gostaria de um café."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich kann schon ein bisschen Deutsch sprechen.",
+   "texto": {
+    "de": "Ich kann schon ein bisschen Deutsch sprechen.",
+    "en": "I can already speak a little German.",
+    "es": "Ya sé hablar un poco de alemán.",
+    "fr": "Je sais déjà parler un peu allemand.",
+    "it": "So già parlare un po' di tedesco.",
+    "pt": "Eu já sei falar um pouco de alemão."
+   },
    "audio": true
   },
   {
-   "texto": "Ich muss heute leider arbeiten.",
+   "texto": {
+    "de": "Ich muss heute leider arbeiten.",
+    "en": "Unfortunately, I have to work today.",
+    "es": "Lamentablemente, hoy tengo que trabajar.",
+    "fr": "Malheureusement, je dois travailler aujourd'hui.",
+    "it": "Purtroppo oggi devo lavorare.",
+    "pt": "Infelizmente, hoje tenho que trabalhar."
+   },
    "audio": true
   },
   {
-   "texto": "Ich möchte gern einen Kaffee, bitte."
+   "texto": {
+    "de": "Ich möchte gern einen Kaffee, bitte.",
+    "en": "I'd like a coffee, please.",
+    "es": "Quisiera un café, por favor.",
+    "fr": "Je voudrais un café, s'il vous plaît.",
+    "it": "Vorrei un caffè, per favore.",
+    "pt": "Eu gostaria de um café, por favor."
+   }
   }
  ],
  "notas": [
-  "Das Modalverb steht an Position 2, der Infinitiv am Satzende.",
-  "Möchten ist höflicher als wollen.",
-  "Diese drei Modalverben reichen für die meisten Alltagssituationen."
+  {
+   "de": "Das Modalverb steht an Position 2, der Infinitiv am Satzende.",
+   "en": "The modal verb is in position 2; the infinitive is at the end of the sentence.",
+   "es": "El verbo modal ocupa la posición 2 y el infinitivo va al final de la oración.",
+   "fr": "Le verbe modal est en deuxième position ; l'infinitif se place à la fin de la phrase.",
+   "it": "Il verbo modale è in seconda posizione; l'infinito va alla fine della frase.",
+   "pt": "O verbo modal fica na segunda posição; o infinitivo vai para o final da frase."
+  },
+  {
+   "de": "Möchten ist höflicher als wollen.",
+   "en": "Möchten is more polite than wollen.",
+   "es": "«Möchten» es más cortés que «wollen».",
+   "fr": "« Möchten » est plus poli que « wollen ».",
+   "it": "«Möchten» è più cortese di «wollen».",
+   "pt": "«Möchten» é mais educado do que «wollen»."
+  },
+  {
+   "de": "Diese drei Modalverben reichen für die meisten Alltagssituationen.",
+   "en": "These three modal verbs are enough for most everyday situations.",
+   "es": "Estos tres verbos modales alcanzan para la mayoría de las situaciones cotidianas.",
+   "fr": "Ces trois verbes modaux suffisent dans la plupart des situations quotidiennes.",
+   "it": "Questi tre verbi modali bastano per la maggior parte delle situazioni quotidiane.",
+   "pt": "Esses três verbos modais são suficientes para a maioria das situações do dia a dia."
+  }
  ],
  "contraste": {
   "es": "Das Spanische hat mit poder, tener que und querer ähnliche Verben, sodass sich die Bedeutungen leicht übertragen lassen.",
@@ -58,13 +205,34 @@
   "en": "Die Bedeutungen passen gut: can – können, have to – müssen, would like – möchte. Achtung: must not heisst nicht nicht müssen, sondern nicht dürfen."
  },
  "errores": [
-  "Den Infinitiv am Satzende vergessen.",
-  "Wollen statt möchten in einer höflichen Bitte benutzen."
+  {
+   "de": "Den Infinitiv am Satzende vergessen.",
+   "en": "Forgetting the infinitive at the end of the sentence.",
+   "es": "Olvidar el infinitivo al final de la oración.",
+   "fr": "Oublier l'infinitif à la fin de la phrase.",
+   "it": "Dimenticare l'infinito alla fine della frase.",
+   "pt": "Esquecer o infinitivo no final da frase."
+  },
+  {
+   "de": "Wollen statt möchten in einer höflichen Bitte benutzen.",
+   "en": "Using wollen instead of möchten in a polite request.",
+   "es": "Usar «wollen» en lugar de «möchten» en un pedido cortés.",
+   "fr": "Utiliser « wollen » au lieu de « möchten » dans une demande polie.",
+   "it": "Usare «wollen» invece di «möchten» in una richiesta cortese.",
+   "pt": "Usar «wollen» em vez de «möchten» em um pedido educado."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich kann…",
-   "funcion": "Fähigkeit",
+   "funcion": {
+    "de": "Fähigkeit",
+    "en": "ability",
+    "es": "capacidad",
+    "fr": "capacité",
+    "it": "capacità",
+    "pt": "capacidade"
+   },
    "traducciones": {
     "es": "Puedo…",
     "en": "I can…",
@@ -75,7 +243,14 @@
   },
   {
    "expresion": "Ich muss…",
-   "funcion": "Pflicht",
+   "funcion": {
+    "de": "Pflicht",
+    "en": "obligation",
+    "es": "obligación",
+    "fr": "obligation",
+    "it": "obbligo",
+    "pt": "obrigação"
+   },
    "traducciones": {
     "es": "Tengo que…",
     "en": "I have to…",
@@ -86,7 +261,14 @@
   },
   {
    "expresion": "Ich möchte…",
-   "funcion": "höflicher Wunsch",
+   "funcion": {
+    "de": "höflicher Wunsch",
+    "en": "polite request",
+    "es": "pedido cortés",
+    "fr": "demande polie",
+    "it": "richiesta cortese",
+    "pt": "pedido educado"
+   },
    "traducciones": {
     "es": "Quisiera…",
     "en": "I'd like…",
@@ -97,7 +279,14 @@
   },
   {
    "expresion": "Kannst du…?",
-   "funcion": "Bitte",
+   "funcion": {
+    "de": "Bitte",
+    "en": "Request",
+    "es": "Pedido",
+    "fr": "Demande",
+    "it": "Richiesta",
+    "pt": "Pedido"
+   },
    "traducciones": {
     "es": "¿Podés…?",
     "en": "Can you…?",
@@ -108,7 +297,14 @@
   },
   {
    "expresion": "Ich muss leider…",
-   "funcion": "Pflicht, mit Bedauern",
+   "funcion": {
+    "de": "Pflicht, mit Bedauern",
+    "en": "obligation, with regret",
+    "es": "obligación, con pesar",
+    "fr": "obligation, avec regret",
+    "it": "obbligo, con dispiacere",
+    "pt": "obrigação, com pesar"
+   },
    "traducciones": {
     "es": "Lamentablemente tengo que…",
     "en": "Unfortunately I have to…",
@@ -119,7 +315,14 @@
   },
   {
    "expresion": "Möchtest du…?",
-   "funcion": "höfliche Frage",
+   "funcion": {
+    "de": "höfliche Frage",
+    "en": "polite question",
+    "es": "pregunta cortés",
+    "fr": "question polie",
+    "it": "domanda cortese",
+    "pt": "pergunta educada"
+   },
    "traducciones": {
     "es": "¿Querés…?",
     "en": "Would you like…?",
@@ -130,13 +333,55 @@
   }
  ],
  "autochequeo": [
-  "Steht der Infinitiv am Satzende?",
-  "Habe ich möchte statt wollen in einer Bitte benutzt?",
-  "Habe ich alle drei Modalverben mindestens einmal benutzt?",
-  "Klingt der Satz natürlich?",
-  "Klingt der Satz natürlich?"
+  {
+   "de": "Steht der Infinitiv am Satzende?",
+   "en": "Is the infinitive at the end of the sentence?",
+   "es": "¿El infinitivo está al final de la oración?",
+   "fr": "L'infinitif est-il à la fin de la phrase ?",
+   "it": "L'infinito è alla fine della frase?",
+   "pt": "O infinitivo está no final da frase?"
+  },
+  {
+   "de": "Habe ich möchte statt wollen in einer Bitte benutzt?",
+   "en": "Have I used möchten instead of wollen in a request?",
+   "es": "¿Usé «möchten» en lugar de «wollen» en un pedido?",
+   "fr": "Ai-je utilisé « möchten » au lieu de « wollen » dans une demande ?",
+   "it": "Ho usato «möchten» invece di «wollen» in una richiesta?",
+   "pt": "Usei «möchten» em vez de «wollen» em um pedido?"
+  },
+  {
+   "de": "Habe ich alle drei Modalverben mindestens einmal benutzt?",
+   "en": "Have I used all three modal verbs at least once?",
+   "es": "¿Usé los tres verbos modales al menos una vez?",
+   "fr": "Ai-je utilisé les trois verbes modaux au moins une fois ?",
+   "it": "Ho usato tutti e tre i verbi modali almeno una volta?",
+   "pt": "Usei os três verbos modais pelo menos uma vez?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf können, müssen und möchten. Prüfen Sie die Satzstellung und ob der Infinitiv am Ende steht. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf können, müssen und möchten. Prüfen Sie die Satzstellung und ob der Infinitiv am Ende steht. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on können, müssen and möchten. Check the word order and whether the infinitive is at the end. Do not rewrite the text.",
+  "es": "Concentre su atención exclusivamente en «können», «müssen» y «möchten». Revise el orden de palabras y si el infinitivo está al final. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur « können », « müssen » et « möchten ». Vérifiez l'ordre des mots et si l'infinitif est à la fin. Ne réécrivez pas le texte.",
+  "it": "Concentri la sua attenzione esclusivamente su «können», «müssen» e «möchten». Controlli l'ordine delle parole e che l'infinito sia alla fine. Non riscriva il testo.",
+  "pt": "Concentre sua atenção exclusivamente em «können», «müssen» e «möchten». Verifique a ordem das palavras e se o infinitivo está no final. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*hay que* als *es gibt zu* übertragen: *Es gibt zu warten* statt *Man muss warten*."

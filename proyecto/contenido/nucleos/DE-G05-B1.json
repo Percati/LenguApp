@@ -3,57 +3,225 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Modalverben",
+ "titulo": {
+  "de": "Modalverben",
+  "en": "Modal verbs",
+  "es": "Verbos modales",
+  "fr": "Verbes modaux",
+  "it": "Verbi modali",
+  "pt": "Verbos modais"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Auf B1 werden die sechs Modalverben (können, müssen, wollen, sollen, dürfen, mögen) in ihrer Grundbedeutung sicher benutzt: Fähigkeit, Pflicht, Wunsch, Empfehlung, Erlaubnis. Der subjektive Gebrauch (Vermutung, Fremdbehauptung) kommt erst später dazu.",
+ "descripcion": {
+  "de": "Auf B1 werden die sechs Modalverben (können, müssen, wollen, sollen, dürfen, mögen) in ihrer Grundbedeutung sicher benutzt: Fähigkeit, Pflicht, Wunsch, Empfehlung, Erlaubnis. Der subjektive Gebrauch (Vermutung, Fremdbehauptung) kommt erst später dazu.",
+  "en": "At B1, the six modal verbs (können, müssen, wollen, sollen, dürfen, mögen) are used confidently in their basic meanings: ability, obligation, wish, recommendation and permission. Subjective uses (assumption, reported claim) are introduced only later.",
+  "es": "En B1 se usan con seguridad los seis verbos modales («können, müssen, wollen, sollen, dürfen, mögen») en sus significados básicos: capacidad, obligación, deseo, recomendación y permiso. Los usos subjetivos (suposición, afirmación ajena) aparecen más adelante.",
+  "fr": "Au niveau B1, on maîtrise les six verbes modaux (« können, müssen, wollen, sollen, dürfen, mögen ») dans leurs sens de base : capacité, obligation, souhait, recommandation et permission. L’emploi subjectif (supposition, affirmation rapportée) n’est abordé que plus tard.",
+  "it": "A livello B1 si usano con sicurezza i sei verbi modali («können, müssen, wollen, sollen, dürfen, mögen») nei loro significati di base: capacità, obbligo, desiderio, consiglio e permesso. L’uso soggettivo (supposizione, affermazione riferita) viene introdotto solo più avanti.",
+  "pt": "No nível B1, usam-se com segurança os seis verbos modais («können, müssen, wollen, sollen, dürfen, mögen») em seus significados básicos: capacidade, obrigação, desejo, recomendação e permissão. O uso subjetivo (suposição, afirmação de terceiros) só aparece mais adiante."
+ },
  "cuadroReferencia": {
-  "titulo": "Die sechs Modalverben",
+  "titulo": {
+   "de": "Die sechs Modalverben",
+   "en": "The six modal verbs",
+   "es": "Los seis verbos modales",
+   "fr": "Les six verbes modaux",
+   "it": "I sei verbi modali",
+   "pt": "Os seis verbos modais"
+  },
   "columnas": [
-   "Verb",
-   "Bedeutung",
-   "Beispiel"
+   {
+    "de": "Verb",
+    "en": "Verb",
+    "es": "Verbo",
+    "fr": "Verbe",
+    "it": "Verbo",
+    "pt": "Verbo"
+   },
+   {
+    "de": "Bedeutung",
+    "en": "Meaning",
+    "es": "Significado",
+    "fr": "Signification",
+    "it": "Significato",
+    "pt": "Significado"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "können",
-    "Fähigkeit/Möglichkeit",
-    "Ich kann gut kochen."
+    {
+     "de": "können",
+     "en": "können",
+     "es": "können",
+     "fr": "können",
+     "it": "können",
+     "pt": "können"
+    },
+    {
+     "de": "Fähigkeit/Möglichkeit",
+     "en": "ability/possibility",
+     "es": "capacidad/posibilidad",
+     "fr": "capacité/possibilité",
+     "it": "capacità/possibilità",
+     "pt": "capacidade/possibilidade"
+    },
+    {
+     "de": "Ich kann gut kochen.",
+     "en": "I can cook well.",
+     "es": "Sé cocinar bien.",
+     "fr": "Je sais bien cuisiner.",
+     "it": "So cucinare bene.",
+     "pt": "Sei cozinhar bem."
+    }
    ],
    [
-    "müssen",
-    "Pflicht",
-    "Ich muss morgen früh aufstehen."
+    {
+     "de": "müssen",
+     "en": "müssen",
+     "es": "müssen",
+     "fr": "müssen",
+     "it": "müssen",
+     "pt": "müssen"
+    },
+    {
+     "de": "Pflicht",
+     "en": "obligation",
+     "es": "obligación",
+     "fr": "obligation",
+     "it": "obbligo",
+     "pt": "obrigação"
+    },
+    {
+     "de": "Ich muss morgen früh aufstehen.",
+     "en": "I have to get up early tomorrow.",
+     "es": "Mañana tengo que levantarme temprano.",
+     "fr": "Je dois me lever tôt demain.",
+     "it": "Domani devo alzarmi presto.",
+     "pt": "Amanhã preciso acordar cedo."
+    }
    ],
    [
-    "dürfen",
-    "Erlaubnis",
-    "Darf ich das Fenster öffnen?"
+    {
+     "de": "dürfen",
+     "en": "dürfen",
+     "es": "«dürfen»",
+     "fr": "« dürfen »",
+     "it": "«dürfen»",
+     "pt": "«dürfen»"
+    },
+    {
+     "de": "Erlaubnis",
+     "en": "permission",
+     "es": "permiso",
+     "fr": "permission",
+     "it": "permesso",
+     "pt": "permissão"
+    },
+    {
+     "de": "Darf ich das Fenster öffnen?",
+     "en": "May I open the window?",
+     "es": "¿Puedo abrir la ventana?",
+     "fr": "Puis-je ouvrir la fenêtre ?",
+     "it": "Posso aprire la finestra?",
+     "pt": "Posso abrir a janela?"
+    }
    ],
    [
-    "sollen",
-    "Empfehlung/Auftrag",
-    "Du sollst mehr Wasser trinken."
+    {
+     "de": "sollen",
+     "en": "sollen",
+     "es": "«sollen»",
+     "fr": "« sollen »",
+     "it": "«sollen»",
+     "pt": "«sollen»"
+    },
+    {
+     "de": "Empfehlung/Auftrag",
+     "en": "recommendation/instruction",
+     "es": "recomendación/indicación",
+     "fr": "recommandation/instruction",
+     "it": "consiglio/incarico",
+     "pt": "recomendação/instrução"
+    },
+    {
+     "de": "Du sollst mehr Wasser trinken.",
+     "en": "You should drink more water.",
+     "es": "Deberías beber más agua.",
+     "fr": "Tu devrais boire davantage d’eau.",
+     "it": "Dovresti bere più acqua.",
+     "pt": "Você deveria beber mais água."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich kann leider nicht so gut kochen wie meine Mutter.",
+   "texto": {
+    "de": "Ich kann leider nicht so gut kochen wie meine Mutter.",
+    "en": "Unfortunately, I can’t cook as well as my mother.",
+    "es": "Lamentablemente, no sé cocinar tan bien como mi madre.",
+    "fr": "Malheureusement, je ne sais pas cuisiner aussi bien que ma mère.",
+    "it": "Purtroppo non so cucinare bene come mia madre.",
+    "pt": "Infelizmente, não sei cozinhar tão bem quanto minha mãe."
+   },
    "audio": true
   },
   {
-   "texto": "Ich muss morgen sehr früh aufstehen.",
+   "texto": {
+    "de": "Ich muss morgen sehr früh aufstehen.",
+    "en": "I have to get up very early tomorrow.",
+    "es": "Mañana tengo que levantarme muy temprano.",
+    "fr": "Je dois me lever très tôt demain.",
+    "it": "Domani devo alzarmi molto presto.",
+    "pt": "Amanhã preciso acordar bem cedo."
+   },
    "audio": true
   },
   {
-   "texto": "Darf ich kurz das Fenster öffnen?"
+   "texto": {
+    "de": "Darf ich kurz das Fenster öffnen?",
+    "en": "May I open the window for a moment?",
+    "es": "¿Puedo abrir un momento la ventana?",
+    "fr": "Puis-je ouvrir la fenêtre un instant ?",
+    "it": "Posso aprire un attimo la finestra?",
+    "pt": "Posso abrir a janela um instante?"
+   }
   }
  ],
  "notas": [
-  "Das Modalverb steht in Position 2, der Infinitiv am Satzende: ich kann gut Deutsch sprechen.",
-  "Nicht müssen bedeutet keine Pflicht, nicht dürfen bedeutet Verbot — ein wichtiger Bedeutungsunterschied.",
-  "Möchten ist die höfliche Form von wollen: ich möchte einen Kaffee ist höflicher als ich will einen Kaffee."
+  {
+   "de": "Das Modalverb steht in Position 2, der Infinitiv am Satzende: ich kann gut Deutsch sprechen.",
+   "en": "The modal verb goes in position 2 and the infinitive at the end of the sentence: ich kann gut Deutsch sprechen.",
+   "es": "El verbo modal va en la posición 2 y el infinitivo al final de la oración: «ich kann gut Deutsch sprechen».",
+   "fr": "Le verbe modal occupe la position 2 et l’infinitif se place à la fin de la phrase : « ich kann gut Deutsch sprechen ».",
+   "it": "Il verbo modale va in posizione 2 e l’infinito alla fine della frase: «ich kann gut Deutsch sprechen».",
+   "pt": "O verbo modal fica na posição 2 e o infinitivo no final da frase: «ich kann gut Deutsch sprechen»."
+  },
+  {
+   "de": "Nicht müssen bedeutet keine Pflicht, nicht dürfen bedeutet Verbot — ein wichtiger Bedeutungsunterschied.",
+   "en": "Nicht müssen means there is no obligation; nicht dürfen means prohibition — an important difference in meaning.",
+   "es": "«Nicht müssen» significa que no hay obligación; «nicht dürfen» significa prohibición: una diferencia importante de significado.",
+   "fr": "« Nicht müssen » signifie absence d’obligation ; « nicht dürfen » signifie interdiction : une différence de sens importante.",
+   "it": "«Nicht müssen» significa che non c’è obbligo; «nicht dürfen» significa divieto: una differenza di significato importante.",
+   "pt": "«Nicht müssen» significa que não há obrigação; «nicht dürfen» significa proibição — uma diferença importante de sentido."
+  },
+  {
+   "de": "Möchten ist die höfliche Form von wollen: ich möchte einen Kaffee ist höflicher als ich will einen Kaffee.",
+   "en": "Möchten is the polite form of wollen: ich möchte einen Kaffee is more polite than ich will einen Kaffee.",
+   "es": "«Möchten» es la forma cortés de «wollen»: «ich möchte einen Kaffee» es más educado que «ich will einen Kaffee».",
+   "fr": "« Möchten » est la forme polie de « wollen » : « ich möchte einen Kaffee » est plus poli que « ich will einen Kaffee ».",
+   "it": "«Möchten» è la forma cortese di «wollen»: «ich möchte einen Kaffee» è più gentile di «ich will einen Kaffee».",
+   "pt": "«Möchten» é a forma cortês de «wollen»: «ich möchte einen Kaffee» é mais educado que «ich will einen Kaffee»."
+  }
  ],
  "contraste": {
   "es": "Das Spanische hat mit poder, tener que, querer und deber ähnliche Modalverben, sodass sich die Grundbedeutungen leicht übertragen lassen. Der wichtigste Unterschied liegt bei nicht müssen: Spanischsprachige übersetzen es oft fälschlich als no deber statt no tener que.",
@@ -63,14 +231,42 @@
   "en": "Die Grundbedeutungen passen gut, aber zwei Formen sind falsche Freunde: must not heisst nicht dürfen (nicht müssen ist don't have to), und will heisst werden (Zukunft), nicht wollen. Ich will kommen bedeutet I want to come."
  },
  "errores": [
-  "Nicht müssen mit Verbot statt mit keiner Pflicht verwechseln.",
-  "Das Modalverb konjugieren, aber den Infinitiv am Satzende vergessen.",
-  "Wollen statt möchten in einer höflichen Bitte verwenden."
+  {
+   "de": "Nicht müssen mit Verbot statt mit keiner Pflicht verwechseln.",
+   "en": "Confusing nicht müssen with prohibition instead of no obligation.",
+   "es": "Confundir «nicht müssen» con una prohibición en lugar de entenderlo como ausencia de obligación.",
+   "fr": "Confondre « nicht müssen » avec une interdiction au lieu d’une absence d’obligation.",
+   "it": "Confondere «nicht müssen» con un divieto invece che con assenza di obbligo.",
+   "pt": "Confundir «nicht müssen» com proibição em vez de ausência de obrigação."
+  },
+  {
+   "de": "Das Modalverb konjugieren, aber den Infinitiv am Satzende vergessen.",
+   "en": "Conjugating the modal verb but forgetting the infinitive at the end of the sentence.",
+   "es": "Conjugar el verbo modal pero olvidar el infinitivo al final de la oración.",
+   "fr": "Conjuguer le verbe modal mais oublier l’infinitif à la fin de la phrase.",
+   "it": "Coniugare il verbo modale ma dimenticare l’infinito alla fine della frase.",
+   "pt": "Conjugar o verbo modal, mas esquecer o infinitivo no final da frase."
+  },
+  {
+   "de": "Wollen statt möchten in einer höflichen Bitte verwenden.",
+   "en": "Using wollen instead of möchten in a polite request.",
+   "es": "Usar «wollen» en lugar de «möchten» en una petición cortés.",
+   "fr": "Employer « wollen » au lieu de « möchten » dans une demande polie.",
+   "it": "Usare «wollen» invece di «möchten» in una richiesta cortese.",
+   "pt": "Usar «wollen» em vez de «möchten» em um pedido educado."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich kann…",
-   "funcion": "Fähigkeit",
+   "funcion": {
+    "de": "Fähigkeit",
+    "en": "ability",
+    "es": "capacidad",
+    "fr": "capacité",
+    "it": "capacità",
+    "pt": "capacidade"
+   },
    "traducciones": {
     "es": "Puedo…",
     "en": "I can…",
@@ -81,7 +277,14 @@
   },
   {
    "expresion": "Ich muss…",
-   "funcion": "Pflicht",
+   "funcion": {
+    "de": "Pflicht",
+    "en": "obligation",
+    "es": "obligación",
+    "fr": "obligation",
+    "it": "obbligo",
+    "pt": "obrigação"
+   },
    "traducciones": {
     "es": "Tengo que…",
     "en": "I have to…",
@@ -92,7 +295,14 @@
   },
   {
    "expresion": "Darf ich…?",
-   "funcion": "Erlaubnis erfragen",
+   "funcion": {
+    "de": "Erlaubnis erfragen",
+    "en": "asking permission",
+    "es": "pedir permiso",
+    "fr": "demander la permission",
+    "it": "chiedere il permesso",
+    "pt": "pedir permissão"
+   },
    "traducciones": {
     "es": "¿Puedo…?",
     "en": "May I…?",
@@ -103,7 +313,14 @@
   },
   {
    "expresion": "Ich möchte…",
-   "funcion": "höflicher Wunsch",
+   "funcion": {
+    "de": "höflicher Wunsch",
+    "en": "polite request",
+    "es": "pedido cortés",
+    "fr": "demande polie",
+    "it": "richiesta cortese",
+    "pt": "pedido educado"
+   },
    "traducciones": {
     "es": "Quisiera…",
     "en": "I'd like…",
@@ -114,7 +331,14 @@
   },
   {
    "expresion": "Du sollst…",
-   "funcion": "Empfehlung/Auftrag",
+   "funcion": {
+    "de": "Empfehlung/Auftrag",
+    "en": "recommendation/instruction",
+    "es": "recomendación/indicación",
+    "fr": "recommandation/instruction",
+    "it": "consiglio/incarico",
+    "pt": "recomendação/instrução"
+   },
    "traducciones": {
     "es": "Deberías…",
     "en": "You should…",
@@ -125,7 +349,14 @@
   },
   {
    "expresion": "Ich muss nicht…",
-   "funcion": "keine Pflicht",
+   "funcion": {
+    "de": "keine Pflicht",
+    "en": "no obligation",
+    "es": "ausencia de obligación",
+    "fr": "absence d’obligation",
+    "it": "assenza di obbligo",
+    "pt": "ausência de obrigação"
+   },
    "traducciones": {
     "es": "No tengo que…",
     "en": "I don't have to…",
@@ -136,13 +367,55 @@
   }
  ],
  "autochequeo": [
-  "Steht der Infinitiv am Satzende?",
-  "Ist nicht müssen richtig als keine Pflicht verwendet, nicht als Verbot?",
-  "Habe ich möchte statt wollen in einer höflichen Bitte benutzt?",
-  "Habe ich mindestens vier verschiedene Modalverben benutzt?",
-  "Klingt die Bitte höflich, nicht zu direkt?"
+  {
+   "de": "Steht der Infinitiv am Satzende?",
+   "en": "Is the infinitive at the end of the sentence?",
+   "es": "¿El infinitivo está al final de la oración?",
+   "fr": "L'infinitif est-il à la fin de la phrase ?",
+   "it": "L'infinito è alla fine della frase?",
+   "pt": "O infinitivo está no final da frase?"
+  },
+  {
+   "de": "Ist nicht müssen richtig als keine Pflicht verwendet, nicht als Verbot?",
+   "en": "Have I used nicht müssen correctly to mean no obligation, not prohibition?",
+   "es": "¿Usé correctamente «nicht müssen» para indicar ausencia de obligación y no prohibición?",
+   "fr": "Ai-je correctement employé « nicht müssen » pour exprimer l’absence d’obligation et non l’interdiction ?",
+   "it": "Ho usato correttamente «nicht müssen» per indicare assenza di obbligo e non divieto?",
+   "pt": "Usei «nicht müssen» corretamente para indicar ausência de obrigação, e não proibição?"
+  },
+  {
+   "de": "Habe ich möchte statt wollen in einer höflichen Bitte benutzt?",
+   "en": "Have I used möchte instead of wollen in a polite request?",
+   "es": "¿Usé «möchte» en lugar de «wollen» en una petición cortés?",
+   "fr": "Ai-je utilisé « möchte » au lieu de « wollen » dans une demande polie ?",
+   "it": "Ho usato «möchte» invece di «wollen» in una richiesta cortese?",
+   "pt": "Usei «möchte» em vez de «wollen» em um pedido educado?"
+  },
+  {
+   "de": "Habe ich mindestens vier verschiedene Modalverben benutzt?",
+   "en": "Have I used at least four different modal verbs?",
+   "es": "¿Usé al menos cuatro verbos modales diferentes?",
+   "fr": "Ai-je utilisé au moins quatre verbes modaux différents ?",
+   "it": "Ho usato almeno quattro verbi modali diversi?",
+   "pt": "Usei pelo menos quatro verbos modais diferentes?"
+  },
+  {
+   "de": "Klingt die Bitte höflich, nicht zu direkt?",
+   "en": "Does the request sound polite rather than too direct?",
+   "es": "¿La petición suena cortés y no demasiado directa?",
+   "fr": "La demande semble-t-elle polie, et non trop directe ?",
+   "it": "La richiesta suona cortese e non troppo diretta?",
+   "pt": "O pedido soa educado, e não direto demais?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalverben in ihrer Grundbedeutung. Prüfen Sie die Satzstellung und den Unterschied zwischen nicht müssen und nicht dürfen. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Modalverben in ihrer Grundbedeutung. Prüfen Sie die Satzstellung und den Unterschied zwischen nicht müssen und nicht dürfen. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on the basic meanings of the modal verbs. Check the sentence structure and the difference between nicht müssen and nicht dürfen. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en los significados básicos de los verbos modales. Revise la estructura de la oración y la diferencia entre «nicht müssen» y «nicht dürfen». No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les sens de base des verbes modaux. Vérifiez la structure de la phrase et la différence entre « nicht müssen » et « nicht dürfen ». Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sui significati di base dei verbi modali. Controlli la struttura della frase e la differenza tra «nicht müssen» e «nicht dürfen». Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nos significados básicos dos verbos modais. Verifique a estrutura da frase e a diferença entre «nicht müssen» e «nicht dürfen». Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*poder* für Fähigkeit und Erlaubnis gleich übersetzen: *Kann ich hier rauchen?* statt *Darf ich hier rauchen?*"

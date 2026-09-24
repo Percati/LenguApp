@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Alltag bewältigen: Einkauf, Termine, Behörden",
+ "titulo": {
+  "de": "Alltag bewältigen: Einkauf, Termine, Behörden",
+  "en": "Handling everyday situations: shopping, appointments and public offices",
+  "es": "Manejar situaciones cotidianas: compras, turnos y trámites",
+  "fr": "Gérer les situations du quotidien : achats, rendez-vous et administrations",
+  "it": "Gestire situazioni quotidiane: acquisti, appuntamenti e uffici pubblici",
+  "pt": "Lidar com situações do dia a dia: compras, compromissos e repartições públicas"
+ },
  "categoria": "fluency",
  "ancla": "PD A2",
- "descripcion": "Auf A2 lernt man die festen Fragen und Antworten, die man beim Einkaufen, bei Terminen und bei Behörden braucht. Es geht darum, sich in diesen Alltagssituationen zurechtzufinden, nicht um freie Produktion.",
+ "descripcion": {
+  "de": "Auf A2 lernt man die festen Fragen und Antworten, die man beim Einkaufen, bei Terminen und bei Behörden braucht. Es geht darum, sich in diesen Alltagssituationen zurechtzufinden, nicht um freie Produktion.",
+  "en": "At A2, you learn the set questions and answers you need when shopping, making appointments and dealing with public offices. The aim is to manage these everyday situations, not to produce language freely.",
+  "es": "En A2 se aprenden las preguntas y respuestas fijas que se necesitan al comprar, pedir turnos y hacer trámites. El objetivo es desenvolverse en estas situaciones cotidianas, no producir lenguaje libremente.",
+  "fr": "Au niveau A2, on apprend les questions et réponses toutes faites dont on a besoin pour faire des achats, prendre des rendez-vous et effectuer des démarches administratives. L'objectif est de se débrouiller dans ces situations quotidiennes, pas de produire librement.",
+  "it": "A livello A2 si imparano le domande e le risposte fisse necessarie per fare acquisti, prendere appuntamenti e sbrigare pratiche negli uffici pubblici. L'obiettivo è cavarsela in queste situazioni quotidiane, non produrre liberamente.",
+  "pt": "No nível A2, aprendem-se as perguntas e respostas fixas necessárias para fazer compras, marcar compromissos e resolver questões em repartições públicas. O objetivo é se virar nessas situações do dia a dia, não produzir livremente."
+ },
  "cuadroReferencia": {
-  "titulo": "Drei Alltagssituationen",
+  "titulo": {
+   "de": "Drei Alltagssituationen",
+   "en": "Three everyday situations",
+   "es": "Tres situaciones cotidianas",
+   "fr": "Trois situations du quotidien",
+   "it": "Tre situazioni quotidiane",
+   "pt": "Três situações do dia a dia"
+  },
   "columnas": [
-   "Situation",
-   "Formel"
+   {
+    "de": "Situation",
+    "en": "Situation",
+    "es": "Situación",
+    "fr": "Situation",
+    "it": "Situazione",
+    "pt": "Situação"
+   },
+   {
+    "de": "Formel",
+    "en": "Phrase",
+    "es": "Fórmula",
+    "fr": "Formule",
+    "it": "Formula",
+    "pt": "Fórmula"
+   }
   ],
   "filas": [
    [
-    "Einkauf",
-    "Wie viel kostet das?"
+    {
+     "de": "Einkauf",
+     "en": "Shopping",
+     "es": "Compra",
+     "fr": "Achats",
+     "it": "Acquisti",
+     "pt": "Compras"
+    },
+    {
+     "de": "Wie viel kostet das?",
+     "en": "How much does that cost?",
+     "es": "¿Cuánto cuesta eso?",
+     "fr": "Combien ça coûte ?",
+     "it": "Quanto costa?",
+     "pt": "Quanto custa isso?"
+    }
    ],
    [
-    "Termin",
-    "Ich hätte gern einen Termin."
+    {
+     "de": "Termin",
+     "en": "Appointment",
+     "es": "Turno",
+     "fr": "Rendez-vous",
+     "it": "Appuntamento",
+     "pt": "Compromisso"
+    },
+    {
+     "de": "Ich hätte gern einen Termin.",
+     "en": "I'd like an appointment.",
+     "es": "Quisiera pedir un turno.",
+     "fr": "Je voudrais prendre rendez-vous.",
+     "it": "Vorrei fissare un appuntamento.",
+     "pt": "Gostaria de marcar um horário."
+    }
    ],
    [
-    "Behörde",
-    "Wo finde ich das Formular?"
+    {
+     "de": "Behörde",
+     "en": "Public office",
+     "es": "Organismo público",
+     "fr": "Administration",
+     "it": "Ufficio pubblico",
+     "pt": "Repartição pública"
+    },
+    {
+     "de": "Wo finde ich das Formular?",
+     "en": "Where can I find the form?",
+     "es": "¿Dónde encuentro el formulario?",
+     "fr": "Où puis-je trouver le formulaire ?",
+     "it": "Dove trovo il modulo?",
+     "pt": "Onde encontro o formulário?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Entschuldigung, wie viel kostet das hier?",
+   "texto": {
+    "de": "Entschuldigung, wie viel kostet das hier?",
+    "en": "Excuse me, how much does this cost?",
+    "es": "Disculpe, ¿cuánto cuesta esto?",
+    "fr": "Excusez-moi, combien ça coûte ?",
+    "it": "Mi scusi, quanto costa questo?",
+    "pt": "Com licença, quanto custa isto?"
+   },
    "audio": true
   },
   {
-   "texto": "Ich hätte gern einen Termin für nächste Woche.",
+   "texto": {
+    "de": "Ich hätte gern einen Termin für nächste Woche.",
+    "en": "I'd like an appointment for next week.",
+    "es": "Quisiera un turno para la semana que viene.",
+    "fr": "Je voudrais un rendez-vous pour la semaine prochaine.",
+    "it": "Vorrei un appuntamento per la prossima settimana.",
+    "pt": "Gostaria de marcar um horário para a próxima semana."
+   },
    "audio": true
   },
   {
-   "texto": "Entschuldigung, wo finde ich das Anmeldeformular?"
+   "texto": {
+    "de": "Entschuldigung, wo finde ich das Anmeldeformular?",
+    "en": "Excuse me, where can I find the registration form?",
+    "es": "Disculpe, ¿dónde encuentro el formulario de inscripción?",
+    "fr": "Excusez-moi, où puis-je trouver le formulaire d'inscription ?",
+    "it": "Mi scusi, dove trovo il modulo di iscrizione?",
+    "pt": "Com licença, onde encontro o formulário de inscrição?"
+   }
   }
  ],
  "notas": [
-  "Entschuldigung eignet sich gut, um ein Gespräch höflich zu beginnen.",
-  "Ich hätte gern ist eine feste, höfliche Formel für Wünsche und Termine.",
-  "Bei Behörden ist es hilfreich, direkt nach dem Formular oder der zuständigen Person zu fragen."
+  {
+   "de": "Entschuldigung eignet sich gut, um ein Gespräch höflich zu beginnen.",
+   "en": "Entschuldigung is a good way to start a conversation politely.",
+   "es": "«Entschuldigung» es una buena forma de iniciar una conversación con cortesía.",
+   "fr": "« Entschuldigung » convient bien pour commencer une conversation poliment.",
+   "it": "«Entschuldigung» è un buon modo per iniziare una conversazione con cortesia.",
+   "pt": "«Entschuldigung» é uma boa forma de iniciar uma conversa com educação."
+  },
+  {
+   "de": "Ich hätte gern ist eine feste, höfliche Formel für Wünsche und Termine.",
+   "en": "Ich hätte gern is a fixed, polite expression for requests and appointments.",
+   "es": "«Ich hätte gern» es una fórmula fija y cortés para expresar deseos y pedir turnos.",
+   "fr": "« Ich hätte gern » est une formule fixe et polie pour exprimer un souhait ou prendre rendez-vous.",
+   "it": "«Ich hätte gern» è una formula fissa e cortese per esprimere desideri e fissare appuntamenti.",
+   "pt": "«Ich hätte gern» é uma fórmula fixa e educada para expressar pedidos e marcar horários."
+  },
+  {
+   "de": "Bei Behörden ist es hilfreich, direkt nach dem Formular oder der zuständigen Person zu fragen.",
+   "en": "At public offices, it is helpful to ask directly for the form or the person responsible.",
+   "es": "En organismos públicos resulta útil preguntar directamente por el formulario o por la persona responsable.",
+   "fr": "Dans les administrations, il est utile de demander directement le formulaire ou la personne compétente.",
+   "it": "Negli uffici pubblici è utile chiedere direttamente il modulo o la persona responsabile.",
+   "pt": "Em repartições públicas, é útil perguntar diretamente pelo formulário ou pela pessoa responsável."
+  }
  ],
  "contraste": {
   "es": "Das Spanische benutzt in diesen Situationen ähnliche feste Formeln (¿cuánto cuesta?, quisiera una cita), sodass sich die Grundstruktur leicht überträgt.",
@@ -54,14 +173,42 @@
   "en": "Die Formeln passen gut: how much is it? – was kostet das?, I'd like to make an appointment – ich möchte einen Termin vereinbaren. Can I have…? klingt als kann ich… haben? weniger höflich als ich hätte gern…."
  },
  "errores": [
-  "Ohne Entschuldigung direkt eine Frage stellen, was unhöflich wirken kann.",
-  "Ich hätte gern falsch bilden.",
-  "Zu direkt fragen, ohne jede Höflichkeitsform."
+  {
+   "de": "Ohne Entschuldigung direkt eine Frage stellen, was unhöflich wirken kann.",
+   "en": "Asking a question directly without saying Entschuldigung, which can sound impolite.",
+   "es": "Hacer una pregunta directamente sin decir «Entschuldigung», lo que puede sonar descortés.",
+   "fr": "Poser directement une question sans dire « Entschuldigung », ce qui peut paraître impoli.",
+   "it": "Fare una domanda direttamente senza dire «Entschuldigung», cosa che può sembrare scortese.",
+   "pt": "Fazer uma pergunta diretamente sem dizer «Entschuldigung», o que pode soar mal-educado."
+  },
+  {
+   "de": "Ich hätte gern falsch bilden.",
+   "en": "Forming Ich hätte gern incorrectly.",
+   "es": "Formar mal «Ich hätte gern».",
+   "fr": "Mal former « Ich hätte gern ».",
+   "it": "Formare «Ich hätte gern» in modo errato.",
+   "pt": "Formar «Ich hätte gern» de maneira incorreta."
+  },
+  {
+   "de": "Zu direkt fragen, ohne jede Höflichkeitsform.",
+   "en": "Asking too directly without any polite expression.",
+   "es": "Preguntar de forma demasiado directa, sin ninguna fórmula de cortesía.",
+   "fr": "Poser une question trop directement, sans aucune formule de politesse.",
+   "it": "Chiedere in modo troppo diretto, senza alcuna formula di cortesia.",
+   "pt": "Perguntar de forma direta demais, sem nenhuma fórmula de cortesia."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Wie viel kostet das?",
-   "funcion": "Einkauf, Preis erfragen",
+   "funcion": {
+    "de": "Einkauf, Preis erfragen",
+    "en": "shopping, asking the price",
+    "es": "compras, preguntar el precio",
+    "fr": "achats, demander le prix",
+    "it": "acquisti, chiedere il prezzo",
+    "pt": "compras, perguntar o preço"
+   },
    "traducciones": {
     "es": "¿Cuánto cuesta eso?",
     "en": "How much does that cost?",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Ich hätte gern…",
-   "funcion": "höflicher Wunsch",
+   "funcion": {
+    "de": "höflicher Wunsch",
+    "en": "polite request",
+    "es": "pedido cortés",
+    "fr": "demande polie",
+    "it": "richiesta cortese",
+    "pt": "pedido educado"
+   },
    "traducciones": {
     "es": "Quisiera…",
     "en": "I'd like…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Wo finde ich…?",
-   "funcion": "nach etwas fragen",
+   "funcion": {
+    "de": "nach etwas fragen",
+    "en": "asking for something",
+    "es": "preguntar por algo",
+    "fr": "demander quelque chose",
+    "it": "chiedere qualcosa",
+    "pt": "perguntar por algo"
+   },
    "traducciones": {
     "es": "¿Dónde encuentro…?",
     "en": "Where can I find…?",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Haben Sie…?",
-   "funcion": "im Geschäft fragen",
+   "funcion": {
+    "de": "im Geschäft fragen",
+    "en": "asking in a shop",
+    "es": "preguntar en una tienda",
+    "fr": "demander dans un magasin",
+    "it": "chiedere in un negozio",
+    "pt": "perguntar em uma loja"
+   },
    "traducciones": {
     "es": "¿Tiene usted…?",
     "en": "Do you have…?",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Ich brauche einen Termin für…",
-   "funcion": "Termin vereinbaren",
+   "funcion": {
+    "de": "Termin vereinbaren",
+    "en": "making an appointment",
+    "es": "pedir un turno",
+    "fr": "prendre rendez-vous",
+    "it": "fissare un appuntamento",
+    "pt": "marcar um horário"
+   },
    "traducciones": {
     "es": "Necesito una cita para…",
     "en": "I need an appointment for…",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Können Sie mir helfen?",
-   "funcion": "um Hilfe bitten",
+   "funcion": {
+    "de": "um Hilfe bitten",
+    "en": "asking for help",
+    "es": "pedir ayuda",
+    "fr": "demander de l'aide",
+    "it": "chiedere aiuto",
+    "pt": "pedir ajuda"
+   },
    "traducciones": {
     "es": "¿Puede ayudarme?",
     "en": "Can you help me?",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich das Gespräch höflich begonnen?",
-  "Habe ich die passende Formel für die Situation benutzt?",
-  "Habe ich mindestens drei verschiedene Formeln benutzt?",
-  "Klingt der Text natürlich?",
-  "Habe ich das Vokabular des Themas eingesetzt?"
+  {
+   "de": "Habe ich das Gespräch höflich begonnen?",
+   "en": "Have I started the conversation politely?",
+   "es": "¿Inicié la conversación con cortesía?",
+   "fr": "Ai-je commencé la conversation poliment ?",
+   "it": "Ho iniziato la conversazione con cortesia?",
+   "pt": "Comecei a conversa com educação?"
+  },
+  {
+   "de": "Habe ich die passende Formel für die Situation benutzt?",
+   "en": "Have I used the right expression for the situation?",
+   "es": "¿Usé la fórmula adecuada para la situación?",
+   "fr": "Ai-je utilisé la formule adaptée à la situation ?",
+   "it": "Ho usato la formula adatta alla situazione?",
+   "pt": "Usei a fórmula adequada à situação?"
+  },
+  {
+   "de": "Habe ich mindestens drei verschiedene Formeln benutzt?",
+   "en": "Have I used at least three different expressions?",
+   "es": "¿Usé al menos tres fórmulas diferentes?",
+   "fr": "Ai-je utilisé au moins trois formules différentes ?",
+   "it": "Ho usato almeno tre formule diverse?",
+   "pt": "Usei pelo menos três fórmulas diferentes?"
+  },
+  {
+   "de": "Klingt der Text natürlich?",
+   "en": "Does the text sound natural?",
+   "es": "¿El texto suena natural?",
+   "fr": "Le texte sonne-t-il naturellement ?",
+   "it": "Il testo suona naturale?",
+   "pt": "O texto soa natural?"
+  },
+  {
+   "de": "Habe ich das Vokabular des Themas eingesetzt?",
+   "en": "Have I used vocabulary related to the topic?",
+   "es": "¿Usé vocabulario del tema?",
+   "fr": "Ai-je utilisé le vocabulaire du thème ?",
+   "it": "Ho usato il vocabolario dell'argomento?",
+   "pt": "Usei o vocabulário do tema?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Formeln zur Alltagssituation passen und ob der Ton durchgehend höflich bleibt. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich darauf, ob die Formeln zur Alltagssituation passen und ob der Ton durchgehend höflich bleibt. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on whether the expressions fit the everyday situation and whether the tone remains polite throughout. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en si las fórmulas son adecuadas para la situación cotidiana y si el tono se mantiene cortés en todo momento. No reescriba el texto.",
+  "fr": "Concentrez votre attention exclusivement sur l'adéquation des formules à la situation quotidienne et sur le maintien d'un ton poli. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sul fatto che le formule siano adatte alla situazione quotidiana e che il tono resti sempre cortese. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente em verificar se as fórmulas combinam com a situação do dia a dia e se o tom permanece educado do início ao fim. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*¿Me pone un café?* als *Stellen Sie mir einen Kaffee?* übertragen statt *Ich hätte gern einen Kaffee*."

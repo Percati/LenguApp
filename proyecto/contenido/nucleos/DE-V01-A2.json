@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Alltags-Chunks",
+ "titulo": {
+  "de": "Alltags-Chunks",
+  "en": "Everyday chunks",
+  "es": "Expresiones fijas cotidianas",
+  "fr": "Chunks du quotidien",
+  "it": "Espressioni fisse quotidiane",
+  "pt": "Expressões fixas do dia a dia"
+ },
  "categoria": "vocabulary",
  "ancla": "PD A1/A2",
- "descripcion": "Auf A2 lernt man feste Wendungen als ganze Blöcke, ohne sie grammatisch zu analysieren: Wie geht's?, Kein Problem, Bis später. Diese Chunks funktionieren im Alltag sofort, auch bevor man die Grammatik dahinter versteht.",
+ "descripcion": {
+  "de": "Auf A2 lernt man feste Wendungen als ganze Blöcke, ohne sie grammatisch zu analysieren: Wie geht's?, Kein Problem, Bis später. Diese Chunks funktionieren im Alltag sofort, auch bevor man die Grammatik dahinter versteht.",
+  "en": "At A2, you learn fixed expressions as whole chunks without analyzing them grammatically: Wie geht's?, Kein Problem, Bis später. These chunks work immediately in everyday life, even before you understand the grammar behind them.",
+  "es": "En A2 se aprenden expresiones fijas como bloques completos, sin analizarlas gramaticalmente: «Wie geht's?», «Kein Problem», «Bis später». Estos chunks funcionan de inmediato en situaciones cotidianas, incluso antes de comprender la gramática que hay detrás.",
+  "fr": "Au niveau A2, on apprend des expressions figées comme des blocs entiers, sans les analyser grammaticalement : « Wie geht's ? », « Kein Problem », « Bis später ». Ces chunks sont immédiatement utiles dans la vie quotidienne, même avant de comprendre la grammaire qui les sous-tend.",
+  "it": "A livello A2 si imparano espressioni fisse come blocchi interi, senza analizzarle grammaticalmente: «Wie geht's?», «Kein Problem», «Bis später». Questi chunk funzionano subito nella vita quotidiana, anche prima di capire la grammatica che c'è dietro.",
+  "pt": "No nível A2, aprendem-se expressões fixas como blocos inteiros, sem analisá-las gramaticalmente: «Wie geht's?», «Kein Problem», «Bis später». Esses chunks funcionam imediatamente no dia a dia, mesmo antes de entender a gramática por trás deles."
+ },
  "cuadroReferencia": {
-  "titulo": "Feste Alltagswendungen",
+  "titulo": {
+   "de": "Feste Alltagswendungen",
+   "en": "Fixed everyday expressions",
+   "es": "Expresiones fijas cotidianas",
+   "fr": "Expressions figées du quotidien",
+   "it": "Espressioni fisse quotidiane",
+   "pt": "Expressões fixas do dia a dia"
+  },
   "columnas": [
-   "Chunk",
-   "Verwendung"
+   {
+    "de": "Chunk",
+    "en": "Chunk",
+    "es": "Chunk",
+    "fr": "Chunk",
+    "it": "Chunk",
+    "pt": "Chunk"
+   },
+   {
+    "de": "Verwendung",
+    "en": "Use",
+    "es": "Uso",
+    "fr": "Emploi",
+    "it": "Uso",
+    "pt": "Uso"
+   }
   ],
   "filas": [
    [
-    "Wie geht's?",
-    "Begrüßung, informell"
+    {
+     "de": "Wie geht's?",
+     "en": "How are you?",
+     "es": "¿Cómo estás?",
+     "fr": "Ça va ?",
+     "it": "Come va?",
+     "pt": "Como você está?"
+    },
+    {
+     "de": "Begrüßung, informell",
+     "en": "greeting, informal",
+     "es": "saludo, informal",
+     "fr": "salutation, informelle",
+     "it": "saluto, informale",
+     "pt": "saudação, informal"
+    }
    ],
    [
-    "Kein Problem.",
-    "Antwort auf Dank oder Bitte"
+    {
+     "de": "Kein Problem.",
+     "en": "No problem.",
+     "es": "No hay problema.",
+     "fr": "Pas de problème.",
+     "it": "Nessun problema.",
+     "pt": "Sem problema."
+    },
+    {
+     "de": "Antwort auf Dank oder Bitte",
+     "en": "response to thanks or a request",
+     "es": "respuesta a agradecimiento o pedido",
+     "fr": "réponse à un remerciement ou à une demande",
+     "it": "risposta a un ringraziamento o a una richiesta",
+     "pt": "resposta a agradecimento ou pedido"
+    }
    ],
    [
-    "Bis später!",
-    "Verabschiedung, informell"
+    {
+     "de": "Bis später!",
+     "en": "See you later!",
+     "es": "¡Hasta luego!",
+     "fr": "À plus tard !",
+     "it": "A dopo!",
+     "pt": "Até mais!"
+    },
+    {
+     "de": "Verabschiedung, informell",
+     "en": "saying goodbye, informal",
+     "es": "despedida, informal",
+     "fr": "formule d'au revoir, informelle",
+     "it": "saluto, informale",
+     "pt": "despedida, informal"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Hallo! Wie geht's dir heute?",
+   "texto": {
+    "de": "Hallo! Wie geht's dir heute?",
+    "en": "Hi! How are you today?",
+    "es": "¡Hola! ¿Cómo estás hoy?",
+    "fr": "Salut ! Comment vas-tu aujourd'hui ?",
+    "it": "Ciao! Come stai oggi?",
+    "pt": "Oi! Como você está hoje?"
+   },
    "audio": true
   },
   {
-   "texto": "Kein Problem, das mache ich gern.",
+   "texto": {
+    "de": "Kein Problem, das mache ich gern.",
+    "en": "No problem, I'm happy to do it.",
+    "es": "No hay problema, lo hago con gusto.",
+    "fr": "Pas de problème, je le fais volontiers.",
+    "it": "Nessun problema, lo faccio volentieri.",
+    "pt": "Sem problema, faço isso com prazer."
+   },
    "audio": true
   },
   {
-   "texto": "Okay, bis später dann!"
+   "texto": {
+    "de": "Okay, bis später dann!",
+    "en": "Okay, see you later then!",
+    "es": "Bueno, ¡hasta luego entonces!",
+    "fr": "D'accord, à plus tard alors !",
+    "it": "Va bene, a dopo allora!",
+    "pt": "Tá bom, até mais então!"
+   }
   }
  ],
  "notas": [
-  "Diese Chunks werden als Ganzes gelernt, ohne jedes Wort einzeln zu analysieren.",
-  "Wie geht's? ist informell; die formelle Version ist wie geht es Ihnen?",
-  "Kein Problem passt sowohl als Antwort auf danke als auch auf eine Bitte."
+  {
+   "de": "Diese Chunks werden als Ganzes gelernt, ohne jedes Wort einzeln zu analysieren.",
+   "en": "These chunks are learned as whole units, without analyzing each word separately.",
+   "es": "Estos chunks se aprenden como bloques completos, sin analizar cada palabra por separado.",
+   "fr": "Ces chunks s'apprennent comme des blocs entiers, sans analyser chaque mot séparément.",
+   "it": "Questi chunk si imparano come blocchi interi, senza analizzare ogni parola separatamente.",
+   "pt": "Esses chunks são aprendidos como blocos inteiros, sem analisar cada palavra separadamente."
+  },
+  {
+   "de": "Wie geht's? ist informell; die formelle Version ist wie geht es Ihnen?",
+   "en": "Wie geht's? is informal; the formal version is wie geht es Ihnen?",
+   "es": "«Wie geht's?» es informal; la versión formal es «wie geht es Ihnen?».",
+   "fr": "« Wie geht's ? » est informel ; la version formelle est « wie geht es Ihnen ? ».",
+   "it": "«Wie geht's?» è informale; la versione formale è «wie geht es Ihnen?».",
+   "pt": "«Wie geht's?» é informal; a versão formal é «wie geht es Ihnen?»."
+  },
+  {
+   "de": "Kein Problem passt sowohl als Antwort auf danke als auch auf eine Bitte.",
+   "en": "Kein Problem works both as a response to thanks and to a request.",
+   "es": "«Kein Problem» sirve tanto como respuesta a un agradecimiento como a un pedido.",
+   "fr": "« Kein Problem » convient aussi bien en réponse à un remerciement qu'à une demande.",
+   "it": "«Kein Problem» va bene sia come risposta a un ringraziamento sia a una richiesta.",
+   "pt": "«Kein Problem» serve tanto como resposta a um agradecimento quanto a um pedido."
+  }
  ],
  "contraste": {
   "es": "Diese Art von festen Wendungen gibt es auch im Spanischen (¿qué tal?, no hay problema), sodass das Konzept vertraut ist, auch wenn die konkreten deutschen Wörter neu sind.",
@@ -54,14 +173,42 @@
   "en": "How are you? wird oft zu wie bist du? übertragen; richtig ist wie geht's? oder wie geht es Ihnen?. See you later entspricht bis später, no problem kein Problem."
  },
  "errores": [
-  "Die formelle und informelle Version verwechseln.",
-  "Einen Chunk Wort für Wort aus der Muttersprache übersetzen, statt den deutschen Chunk zu benutzen.",
-  "Bis später in einer Situation benutzen, in der man sich gar nicht wiedersieht."
+  {
+   "de": "Die formelle und informelle Version verwechseln.",
+   "en": "Confusing the formal and informal versions.",
+   "es": "Confundir la versión formal y la informal.",
+   "fr": "Confondre la version formelle et la version informelle.",
+   "it": "Confondere la versione formale e quella informale.",
+   "pt": "Confundir a versão formal com a informal."
+  },
+  {
+   "de": "Einen Chunk Wort für Wort aus der Muttersprache übersetzen, statt den deutschen Chunk zu benutzen.",
+   "en": "Translating a chunk word for word from your native language instead of using the German chunk.",
+   "es": "Traducir un chunk palabra por palabra desde la lengua materna en vez de usar la expresión alemana.",
+   "fr": "Traduire un chunk mot à mot depuis sa langue maternelle au lieu d'utiliser l'expression allemande.",
+   "it": "Tradurre un chunk parola per parola dalla propria lingua madre invece di usare l'espressione tedesca.",
+   "pt": "Traduzir um chunk palavra por palavra da língua materna em vez de usar a expressão alemã."
+  },
+  {
+   "de": "Bis später in einer Situation benutzen, in der man sich gar nicht wiedersieht.",
+   "en": "Using Bis später in a situation where you won't see each other again later.",
+   "es": "Usar «Bis später» en una situación en la que no se volverán a ver más tarde.",
+   "fr": "Utiliser « Bis später » dans une situation où l'on ne se reverra pas plus tard.",
+   "it": "Usare «Bis später» in una situazione in cui non ci si rivedrà più tardi.",
+   "pt": "Usar «Bis später» em uma situação em que vocês não vão se ver mais tarde."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Wie geht's?",
-   "funcion": "Begrüßung, informell",
+   "funcion": {
+    "de": "Begrüßung, informell",
+    "en": "greeting, informal",
+    "es": "saludo, informal",
+    "fr": "salutation, informelle",
+    "it": "saluto, informale",
+    "pt": "saudação, informal"
+   },
    "traducciones": {
     "es": "¿Qué tal?",
     "en": "How's it going?",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Kein Problem.",
-   "funcion": "Antwort auf Dank/Bitte",
+   "funcion": {
+    "de": "Antwort auf Dank/Bitte",
+    "en": "response to thanks/request",
+    "es": "respuesta a agradecimiento/pedido",
+    "fr": "réponse à un remerciement/une demande",
+    "it": "risposta a ringraziamento/richiesta",
+    "pt": "resposta a agradecimento/pedido"
+   },
    "traducciones": {
     "es": "No hay problema.",
     "en": "No problem.",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Bis später!",
-   "funcion": "Verabschiedung, informell",
+   "funcion": {
+    "de": "Verabschiedung, informell",
+    "en": "saying goodbye, informal",
+    "es": "despedida, informal",
+    "fr": "formule d'au revoir, informelle",
+    "it": "saluto, informale",
+    "pt": "despedida, informal"
+   },
    "traducciones": {
     "es": "¡Hasta luego!",
     "en": "See you later!",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Alles klar!",
-   "funcion": "Zustimmung/Verständnis",
+   "funcion": {
+    "de": "Zustimmung/Verständnis",
+    "en": "agreement/understanding",
+    "es": "acuerdo/comprensión",
+    "fr": "accord/compréhension",
+    "it": "accordo/comprensione",
+    "pt": "concordância/compreensão"
+   },
    "traducciones": {
     "es": "¡Todo claro!",
     "en": "All clear!",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Macht nichts.",
-   "funcion": "Entschuldigung annehmen",
+   "funcion": {
+    "de": "Entschuldigung annehmen",
+    "en": "accepting an apology",
+    "es": "aceptar una disculpa",
+    "fr": "accepter des excuses",
+    "it": "accettare delle scuse",
+    "pt": "aceitar um pedido de desculpas"
+   },
    "traducciones": {
     "es": "No pasa nada.",
     "en": "It's okay/no worries.",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Viel Spaß!",
-   "funcion": "guter Wunsch",
+   "funcion": {
+    "de": "guter Wunsch",
+    "en": "good wish",
+    "es": "buen deseo",
+    "fr": "souhait positif",
+    "it": "augurio",
+    "pt": "bom desejo"
+   },
    "traducciones": {
     "es": "¡Que la pases bien!",
     "en": "Have fun!",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich den Chunk in der passenden Situation benutzt?",
-  "Habe ich formell und informell nicht verwechselt?",
-  "Habe ich mindestens drei verschiedene Chunks benutzt?",
-  "Klingt der Chunk natürlich in dieser Situation?",
-  "Habe ich das Thema des Packs berücksichtigt?"
+  {
+   "de": "Habe ich den Chunk in der passenden Situation benutzt?",
+   "en": "Have I used the chunk in the right situation?",
+   "es": "¿Usé el chunk en la situación adecuada?",
+   "fr": "Ai-je utilisé le chunk dans la bonne situation ?",
+   "it": "Ho usato il chunk nella situazione giusta?",
+   "pt": "Usei o chunk na situação adequada?"
+  },
+  {
+   "de": "Habe ich formell und informell nicht verwechselt?",
+   "en": "Have I kept formal and informal language separate?",
+   "es": "¿Evité confundir el registro formal con el informal?",
+   "fr": "Ai-je évité de confondre registre formel et informel ?",
+   "it": "Ho evitato di confondere registro formale e informale?",
+   "pt": "Evitei confundir linguagem formal e informal?"
+  },
+  {
+   "de": "Habe ich mindestens drei verschiedene Chunks benutzt?",
+   "en": "Have I used at least three different chunks?",
+   "es": "¿Usé al menos tres chunks diferentes?",
+   "fr": "Ai-je utilisé au moins trois chunks différents ?",
+   "it": "Ho usato almeno tre chunk diversi?",
+   "pt": "Usei pelo menos três chunks diferentes?"
+  },
+  {
+   "de": "Klingt der Chunk natürlich in dieser Situation?",
+   "en": "Does the chunk sound natural in this situation?",
+   "es": "¿El chunk suena natural en esta situación?",
+   "fr": "Le chunk sonne-t-il naturel dans cette situation ?",
+   "it": "Il chunk suona naturale in questa situazione?",
+   "pt": "O chunk soa natural nesta situação?"
+  },
+  {
+   "de": "Habe ich das Thema des Packs berücksichtigt?",
+   "en": "Have I taken the pack's topic into account?",
+   "es": "¿Tuve en cuenta el tema del pack?",
+   "fr": "Ai-je tenu compte du thème du pack ?",
+   "it": "Ho tenuto conto del tema del pack?",
+   "pt": "Levei em conta o tema do pack?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Alltagswendungen zur Situation passen. Prüfen Sie formell gegen informell. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich darauf, ob die Alltagswendungen zur Situation passen. Prüfen Sie formell gegen informell. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on whether the everyday expressions fit the situation. Check formal versus informal usage. Do not rewrite the text yourself.",
+  "es": "Concéntrese exclusivamente en si las expresiones cotidianas se adecuan a la situación. Revise el uso formal frente al informal. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur l'adéquation des expressions quotidiennes à la situation. Vérifiez l'emploi formel ou informel. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sul fatto che le espressioni quotidiane siano adatte alla situazione. Controlli l'uso formale rispetto a quello informale. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente em verificar se as expressões do dia a dia combinam com a situação. Verifique o uso formal e informal. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*con permiso* als *mit Erlaubnis* übertragen statt *Entschuldigung*."

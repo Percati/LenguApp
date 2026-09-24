@@ -3,51 +3,191 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Zukünftiges ausdrücken (Präsens vs. Futur I)",
+ "titulo": {
+  "de": "Zukünftiges ausdrücken (Präsens vs. Futur I)",
+  "en": "Expressing the future (present tense vs. Futur I)",
+  "es": "Expresar el futuro (presente vs. Futur I)",
+  "fr": "Exprimer le futur (présent vs. Futur I)",
+  "it": "Esprimere il futuro (presente vs. Futur I)",
+  "pt": "Expressar o futuro (presente vs. Futur I)"
+ },
  "categoria": "grammar",
  "ancla": "Aspekte B1+",
- "descripcion": "Im Deutschen drückt man Zukünftiges meistens im Präsens mit einer Zeitangabe aus (ich fahre morgen), nicht mit dem Futur I. Das Futur I wird eher für Vermutungen oder Versprechen benutzt. Diese Verteilung ist in vielen anderen Sprachen anders geregelt.",
+ "descripcion": {
+  "de": "Im Deutschen drückt man Zukünftiges meistens im Präsens mit einer Zeitangabe aus (ich fahre morgen), nicht mit dem Futur I. Das Futur I wird eher für Vermutungen oder Versprechen benutzt. Diese Verteilung ist in vielen anderen Sprachen anders geregelt.",
+  "en": "In German, future events are usually expressed with the present tense plus a time expression (ich fahre morgen), not with Futur I. Futur I is used more for assumptions or promises. Many other languages distribute these forms differently.",
+  "es": "En alemán, el futuro suele expresarse con presente y una indicación temporal («ich fahre morgen»), no con Futur I. Futur I se usa más bien para suposiciones o promesas. En muchas otras lenguas, esta distribución funciona de otra manera.",
+  "fr": "En allemand, on exprime généralement l’avenir avec le présent accompagné d’une indication temporelle (« ich fahre morgen »), et non avec le Futur I. Le Futur I sert plutôt aux suppositions ou aux promesses. Dans de nombreuses autres langues, cette répartition est différente.",
+  "it": "In tedesco il futuro si esprime di solito con il presente accompagnato da un’indicazione temporale («ich fahre morgen»), non con il Futur I. Il Futur I si usa piuttosto per supposizioni o promesse. In molte altre lingue questa distribuzione funziona diversamente.",
+  "pt": "Em alemão, o futuro costuma ser expresso com o presente e uma indicação de tempo («ich fahre morgen»), e não com o Futur I. O Futur I é usado mais para suposições ou promessas. Em muitas outras línguas, essa distribuição funciona de outra forma."
+ },
  "cuadroReferencia": {
-  "titulo": "Präsens oder Futur I?",
+  "titulo": {
+   "de": "Präsens oder Futur I?",
+   "en": "Present tense or Futur I?",
+   "es": "¿Presente o Futur I?",
+   "fr": "Présent ou Futur I ?",
+   "it": "Presente o Futur I?",
+   "pt": "Presente ou Futur I?"
+  },
   "columnas": [
-   "Form",
-   "Verwendung",
-   "Beispiel"
+   {
+    "de": "Form",
+    "en": "Form",
+    "es": "Forma",
+    "fr": "Forme",
+    "it": "Forma",
+    "pt": "Forma"
+   },
+   {
+    "de": "Verwendung",
+    "en": "Use",
+    "es": "Uso",
+    "fr": "Emploi",
+    "it": "Uso",
+    "pt": "Uso"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Präsens + Zeitangabe",
-    "geplante Zukunft, normal",
-    "Ich fahre morgen nach Berlin."
+    {
+     "de": "Präsens + Zeitangabe",
+     "en": "present tense + time expression",
+     "es": "presente + indicación temporal",
+     "fr": "présent + indication temporelle",
+     "it": "presente + indicazione temporale",
+     "pt": "presente + indicação de tempo"
+    },
+    {
+     "de": "geplante Zukunft, normal",
+     "en": "planned future, normal",
+     "es": "futuro planificado, forma habitual",
+     "fr": "avenir planifié, forme normale",
+     "it": "futuro pianificato, forma normale",
+     "pt": "futuro planejado, forma normal"
+    },
+    {
+     "de": "Ich fahre morgen nach Berlin.",
+     "en": "I’m going to Berlin tomorrow.",
+     "es": "Mañana voy a Berlín.",
+     "fr": "Je vais à Berlin demain.",
+     "it": "Domani vado a Berlino.",
+     "pt": "Amanhã vou para Berlim."
+    }
    ],
    [
-    "Futur I (werde + Infinitiv)",
-    "Vermutung oder Versprechen",
-    "Ich werde das sicher schaffen."
+    {
+     "de": "Futur I (werde + Infinitiv)",
+     "en": "Futur I (werden + infinitive)",
+     "es": "Futur I («werden» + infinitivo)",
+     "fr": "Futur I (« werden » + infinitif)",
+     "it": "Futur I («werden» + infinito)",
+     "pt": "Futur I («werden» + infinitivo)"
+    },
+    {
+     "de": "Vermutung oder Versprechen",
+     "en": "assumption or promise",
+     "es": "suposición o promesa",
+     "fr": "supposition ou promesse",
+     "it": "supposizione o promessa",
+     "pt": "suposição ou promessa"
+    },
+    {
+     "de": "Ich werde das sicher schaffen.",
+     "en": "I’m sure I’ll manage it.",
+     "es": "Seguro que lo voy a lograr.",
+     "fr": "Je vais sûrement y arriver.",
+     "it": "Sono sicuro/a che ce la farò.",
+     "pt": "Tenho certeza de que vou conseguir."
+    }
    ],
    [
-    "Frage zur Zukunft",
-    "Was machst du nächstes Jahr?"
+    {
+     "de": "Frage zur Zukunft",
+     "en": "question about the future",
+     "es": "pregunta sobre el futuro",
+     "fr": "question sur l’avenir",
+     "it": "domanda sul futuro",
+     "pt": "pergunta sobre o futuro"
+    },
+    {
+     "de": "Was machst du nächstes Jahr?",
+     "en": "What are you doing next year?",
+     "es": "¿Qué vas a hacer el año que viene?",
+     "fr": "Qu’est-ce que tu fais l’année prochaine ?",
+     "it": "Che cosa fai l’anno prossimo?",
+     "pt": "O que você vai fazer no ano que vem?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich fahre morgen früh nach Berlin.",
+   "texto": {
+    "de": "Ich fahre morgen früh nach Berlin.",
+    "en": "I’m going to Berlin early tomorrow morning.",
+    "es": "Mañana temprano voy a Berlín.",
+    "fr": "Je vais à Berlin tôt demain matin.",
+    "it": "Domani mattina presto vado a Berlino.",
+    "pt": "Amanhã cedo vou para Berlim."
+   },
    "audio": true
   },
   {
-   "texto": "Ich werde das schon irgendwie schaffen.",
+   "texto": {
+    "de": "Ich werde das schon irgendwie schaffen.",
+    "en": "I’ll manage somehow.",
+    "es": "De alguna manera lo voy a lograr.",
+    "fr": "Je vais bien finir par y arriver.",
+    "it": "In qualche modo ce la farò.",
+    "pt": "De algum jeito vou conseguir."
+   },
    "audio": true
   },
   {
-   "texto": "Nächstes Jahr mache ich einen Sprachkurs."
+   "texto": {
+    "de": "Nächstes Jahr mache ich einen Sprachkurs.",
+    "en": "Next year I’m taking a language course.",
+    "es": "El año que viene voy a hacer un curso de idiomas.",
+    "fr": "L’année prochaine, je suis un cours de langue.",
+    "it": "L’anno prossimo farò un corso di lingua.",
+    "pt": "No ano que vem, vou fazer um curso de idiomas."
+   }
   }
  ],
  "notas": [
-  "Für geplante, sichere Zukunft benutzt man im Deutschen meistens das Präsens mit einer Zeitangabe wie morgen oder nächstes Jahr.",
-  "Das Futur I (werde + Infinitiv) wirkt formeller und wird oft für Vermutungen oder feierliche Versprechen benutzt.",
-  "Ohne Zeitangabe kann das Präsens missverständlich sein — deshalb ist die Zeitangabe fast Pflicht."
+  {
+   "de": "Für geplante, sichere Zukunft benutzt man im Deutschen meistens das Präsens mit einer Zeitangabe wie morgen oder nächstes Jahr.",
+   "en": "For a planned, certain future, German usually uses the present tense with a time expression such as morgen or nächstes Jahr.",
+   "es": "Para un futuro planificado y seguro, en alemán se suele usar el presente con una indicación temporal como «morgen» o «nächstes Jahr».",
+   "fr": "Pour un avenir planifié et certain, l’allemand utilise généralement le présent avec une indication temporelle comme « morgen » ou « nächstes Jahr ».",
+   "it": "Per un futuro pianificato e certo, in tedesco si usa di solito il presente con un’indicazione temporale come «morgen» o «nächstes Jahr».",
+   "pt": "Para um futuro planejado e certo, em alemão costuma-se usar o presente com uma indicação de tempo como «morgen» ou «nächstes Jahr»."
+  },
+  {
+   "de": "Das Futur I (werde + Infinitiv) wirkt formeller und wird oft für Vermutungen oder feierliche Versprechen benutzt.",
+   "en": "Futur I (werden + infinitive) sounds more formal and is often used for assumptions or solemn promises.",
+   "es": "Futur I («werden» + infinitivo) suena más formal y suele usarse para suposiciones o promesas solemnes.",
+   "fr": "Le Futur I (« werden » + infinitif) paraît plus formel et s’emploie souvent pour des suppositions ou des promesses solennelles.",
+   "it": "Il Futur I («werden» + infinito) suona più formale e viene spesso usato per supposizioni o promesse solenni.",
+   "pt": "O Futur I («werden» + infinitivo) soa mais formal e é usado com frequência para suposições ou promessas solenes."
+  },
+  {
+   "de": "Ohne Zeitangabe kann das Präsens missverständlich sein — deshalb ist die Zeitangabe fast Pflicht.",
+   "en": "Without a time expression, the present tense can be ambiguous — so a time expression is almost essential.",
+   "es": "Sin una indicación temporal, el presente puede resultar ambiguo; por eso, la referencia temporal es casi imprescindible.",
+   "fr": "Sans indication temporelle, le présent peut être ambigu ; l’indication de temps est donc presque indispensable.",
+   "it": "Senza un’indicazione temporale, il presente può risultare ambiguo; per questo l’indicazione di tempo è quasi indispensabile.",
+   "pt": "Sem uma indicação de tempo, o presente pode ficar ambíguo — por isso, a referência temporal é quase indispensável."
+  }
  ],
  "contraste": {
   "es": "Das Spanische benutzt für die Zukunft meist voy a + Infinitiv oder das futuro simple, während das Deutsche das einfache Präsens bevorzugt. Spanischsprachige benutzen deshalb oft das Futur I, wo im Deutschen das Präsens natürlicher wäre.",
@@ -57,14 +197,42 @@
   "en": "Im Englischen braucht man für die Zukunft meist will oder going to, im Deutschen reicht das Präsens: Ich fahre morgen. Vorsicht: ich will heisst nicht I will, sondern I want."
  },
  "errores": [
-  "Das Futur I für geplante Zukunft benutzen, wo das Präsens natürlicher wäre.",
-  "Das Präsens ohne Zeitangabe benutzen, was zu Verwirrung führen kann.",
-  "Werde falsch konjugieren."
+  {
+   "de": "Das Futur I für geplante Zukunft benutzen, wo das Präsens natürlicher wäre.",
+   "en": "Using Futur I for a planned future where the present tense would sound more natural.",
+   "es": "Usar Futur I para un futuro planificado cuando el presente sonaría más natural.",
+   "fr": "Employer le Futur I pour un avenir planifié alors que le présent serait plus naturel.",
+   "it": "Usare il Futur I per un futuro pianificato quando il presente sarebbe più naturale.",
+   "pt": "Usar o Futur I para um futuro planejado quando o presente soaria mais natural."
+  },
+  {
+   "de": "Das Präsens ohne Zeitangabe benutzen, was zu Verwirrung führen kann.",
+   "en": "Using the present tense without a time expression, which can cause confusion.",
+   "es": "Usar el presente sin una indicación temporal, lo que puede generar confusión.",
+   "fr": "Employer le présent sans indication temporelle, ce qui peut prêter à confusion.",
+   "it": "Usare il presente senza un’indicazione temporale, cosa che può creare confusione.",
+   "pt": "Usar o presente sem uma indicação de tempo, o que pode causar confusão."
+  },
+  {
+   "de": "Werde falsch konjugieren.",
+   "en": "Conjugating werde incorrectly.",
+   "es": "Conjugar «werde» de forma incorrecta.",
+   "fr": "Mal conjuguer « werde ».",
+   "it": "Coniugare «werde» in modo errato.",
+   "pt": "Conjugar «werde» incorretamente."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich fahre morgen…",
-   "funcion": "geplante Zukunft, Präsens",
+   "funcion": {
+    "de": "geplante Zukunft, Präsens",
+    "en": "planned future, present tense",
+    "es": "futuro planificado, presente",
+    "fr": "avenir planifié, présent",
+    "it": "futuro pianificato, presente",
+    "pt": "futuro planejado, presente"
+   },
    "traducciones": {
     "es": "Mañana viajo…",
     "en": "Tomorrow I'm going…",
@@ -75,7 +243,14 @@
   },
   {
    "expresion": "Nächstes Jahr mache ich…",
-   "funcion": "geplante Zukunft mit Zeitangabe",
+   "funcion": {
+    "de": "geplante Zukunft mit Zeitangabe",
+    "en": "planned future with time expression",
+    "es": "futuro planificado con indicación temporal",
+    "fr": "avenir planifié avec indication temporelle",
+    "it": "futuro pianificato con indicazione temporale",
+    "pt": "futuro planejado com indicação de tempo"
+   },
    "traducciones": {
     "es": "El año que viene hago…",
     "en": "Next year I'll do…",
@@ -86,7 +261,14 @@
   },
   {
    "expresion": "Ich werde das schaffen.",
-   "funcion": "Futur I, Versprechen",
+   "funcion": {
+    "de": "Futur I, Versprechen",
+    "en": "Futur I, promise",
+    "es": "Futur I, promesa",
+    "fr": "Futur I, promesse",
+    "it": "Futur I, promessa",
+    "pt": "Futur I, promessa"
+   },
    "traducciones": {
     "es": "Lo voy a lograr.",
     "en": "I will manage it.",
@@ -97,7 +279,14 @@
   },
   {
    "expresion": "Das wird schon klappen.",
-   "funcion": "Futur I, Vermutung",
+   "funcion": {
+    "de": "Futur I, Vermutung",
+    "en": "Futur I, assumption",
+    "es": "Futur I, suposición",
+    "fr": "Futur I, supposition",
+    "it": "Futur I, supposizione",
+    "pt": "Futur I, suposição"
+   },
    "traducciones": {
     "es": "Eso va a salir bien.",
     "en": "That'll work out.",
@@ -108,7 +297,14 @@
   },
   {
    "expresion": "Bald…",
-   "funcion": "nahe Zukunft, Präsens",
+   "funcion": {
+    "de": "nahe Zukunft, Präsens",
+    "en": "near future, present tense",
+    "es": "futuro cercano, presente",
+    "fr": "avenir proche, présent",
+    "it": "futuro prossimo, presente",
+    "pt": "futuro próximo, presente"
+   },
    "traducciones": {
     "es": "Pronto…",
     "en": "Soon…",
@@ -119,7 +315,14 @@
   },
   {
    "expresion": "In zwei Wochen…",
-   "funcion": "Zeitangabe für die Zukunft",
+   "funcion": {
+    "de": "Zeitangabe für die Zukunft",
+    "en": "future time expression",
+    "es": "indicación temporal de futuro",
+    "fr": "indication temporelle du futur",
+    "it": "indicazione temporale futura",
+    "pt": "indicação de tempo para o futuro"
+   },
    "traducciones": {
     "es": "En dos semanas…",
     "en": "In two weeks…",
@@ -130,13 +333,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich für geplante Zukunft das Präsens mit Zeitangabe benutzt?",
-  "Habe ich das Futur I nur für Vermutung oder Versprechen benutzt?",
-  "Ist werde richtig konjugiert?",
-  "Steht bei jeder Präsensform eine klare Zeitangabe?",
-  "Habe ich beide Formen mindestens einmal richtig benutzt?"
+  {
+   "de": "Habe ich für geplante Zukunft das Präsens mit Zeitangabe benutzt?",
+   "en": "Have I used the present tense with a time expression for planned future events?",
+   "es": "¿Usé el presente con una indicación temporal para el futuro planificado?",
+   "fr": "Ai-je utilisé le présent avec une indication temporelle pour un avenir planifié ?",
+   "it": "Ho usato il presente con un’indicazione temporale per il futuro pianificato?",
+   "pt": "Usei o presente com uma indicação de tempo para o futuro planejado?"
+  },
+  {
+   "de": "Habe ich das Futur I nur für Vermutung oder Versprechen benutzt?",
+   "en": "Have I used Futur I only for assumptions or promises?",
+   "es": "¿Usé Futur I solo para suposiciones o promesas?",
+   "fr": "Ai-je utilisé le Futur I uniquement pour des suppositions ou des promesses ?",
+   "it": "Ho usato il Futur I solo per supposizioni o promesse?",
+   "pt": "Usei o Futur I apenas para suposições ou promessas?"
+  },
+  {
+   "de": "Ist werde richtig konjugiert?",
+   "en": "Is werde conjugated correctly?",
+   "es": "¿«Werde» está bien conjugado?",
+   "fr": "« Werde » est-il correctement conjugué ?",
+   "it": "«Werde» è coniugato correttamente?",
+   "pt": "«Werde» está conjugado corretamente?"
+  },
+  {
+   "de": "Steht bei jeder Präsensform eine klare Zeitangabe?",
+   "en": "Does every present-tense form have a clear time expression?",
+   "es": "¿Cada forma en presente tiene una indicación temporal clara?",
+   "fr": "Chaque forme au présent comporte-t-elle une indication temporelle claire ?",
+   "it": "Ogni forma al presente ha un’indicazione temporale chiara?",
+   "pt": "Toda forma no presente tem uma indicação de tempo clara?"
+  },
+  {
+   "de": "Habe ich beide Formen mindestens einmal richtig benutzt?",
+   "en": "Have I used both forms correctly at least once?",
+   "es": "¿Usé correctamente ambas formas al menos una vez?",
+   "fr": "Ai-je utilisé correctement les deux formes au moins une fois ?",
+   "it": "Ho usato correttamente entrambe le forme almeno una volta?",
+   "pt": "Usei corretamente as duas formas pelo menos uma vez?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verteilung zwischen Präsens und Futur I für Zukünftiges. Prüfen Sie, ob das Präsens für geplante Ereignisse und das Futur I für Vermutungen benutzt wird. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Verteilung zwischen Präsens und Futur I für Zukünftiges. Prüfen Sie, ob das Präsens für geplante Ereignisse und das Futur I für Vermutungen benutzt wird. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on the choice between present tense and Futur I for future events. Check whether the present is used for planned events and Futur I for assumptions. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en la elección entre presente y Futur I para hablar del futuro. Compruebe si el presente se usa para hechos planificados y Futur I para suposiciones. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur le choix entre le présent et le Futur I pour parler de l’avenir. Vérifiez que le présent est utilisé pour les événements planifiés et le Futur I pour les suppositions. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulla scelta tra presente e Futur I per il futuro. Controlli se il presente viene usato per eventi pianificati e il Futur I per supposizioni. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente na escolha entre presente e Futur I para falar do futuro. Verifique se o presente é usado para eventos planejados e o Futur I para suposições. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*ir a* + Infinitiv übertragen: *Ich gehe zu arbeiten morgen* für *voy a trabajar* statt *Ich arbeite morgen*."

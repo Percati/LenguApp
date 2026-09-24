@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Register: du/Sie, formell/informell",
+ "titulo": {
+  "de": "Register: du/Sie, formell/informell",
+  "en": "Register: du/Sie, formal/informal",
+  "es": "Registro: du/Sie, formal/informal",
+  "fr": "Registre : du/Sie, formel/informel",
+  "it": "Registro: du/Sie, formale/informale",
+  "pt": "Registro: du/Sie, formal/informal"
+ },
  "categoria": "fluency",
  "ancla": "PD A2/B1",
- "descripcion": "Auf B1 wird die Wahl zwischen du und Sie sicher getroffen: Sie bei Fremden und in formellen Situationen, du bei Freunden und Familie. Feinere Register-Unterschiede kommen erst später — hier zählt vor allem, die Grundregel richtig anzuwenden.",
+ "descripcion": {
+  "de": "Auf B1 wird die Wahl zwischen du und Sie sicher getroffen: Sie bei Fremden und in formellen Situationen, du bei Freunden und Familie. Feinere Register-Unterschiede kommen erst später — hier zählt vor allem, die Grundregel richtig anzuwenden.",
+  "en": "At B1, the choice between du and Sie should be reliable: Sie with strangers and in formal situations, du with friends and family. Finer differences in register come later — here, the key is to apply the basic rule correctly.",
+  "es": "En B1 se elige con seguridad entre «du» y «Sie»: «Sie» con desconocidos y en situaciones formales, «du» con amigos y familiares. Los matices más finos de registro llegan después; aquí lo importante es aplicar correctamente la regla básica.",
+  "fr": "Au niveau B1, le choix entre « du » et « Sie » doit être sûr : « Sie » avec les inconnus et dans les situations formelles, « du » avec les amis et la famille. Les nuances de registre viennent plus tard ; ici, l'essentiel est d'appliquer correctement la règle de base.",
+  "it": "A livello B1 la scelta tra «du» e «Sie» deve essere sicura: «Sie» con gli sconosciuti e nelle situazioni formali, «du» con amici e familiari. Le sfumature di registro arrivano più avanti; qui conta applicare correttamente la regola di base.",
+  "pt": "No B1, a escolha entre «du» e «Sie» deve estar consolidada: «Sie» com desconhecidos e em situações formais, «du» com amigos e família. Diferenças mais sutis de registro vêm depois; aqui, o importante é aplicar corretamente a regra básica."
+ },
  "cuadroReferencia": {
-  "titulo": "Du oder Sie?",
+  "titulo": {
+   "de": "Du oder Sie?",
+   "en": "Du or Sie?",
+   "es": "¿«Du» o «Sie»?",
+   "fr": "« Du » ou « Sie » ?",
+   "it": "«Du» o «Sie»?",
+   "pt": "«Du» ou «Sie»?"
+  },
   "columnas": [
-   "Situation",
-   "Anrede"
+   {
+    "de": "Situation",
+    "en": "Situation",
+    "es": "Situación",
+    "fr": "Situation",
+    "it": "Situazione",
+    "pt": "Situação"
+   },
+   {
+    "de": "Anrede",
+    "en": "Form of address",
+    "es": "Tratamiento",
+    "fr": "Forme d'adresse",
+    "it": "Forma di trattamento",
+    "pt": "Forma de tratamento"
+   }
   ],
   "filas": [
    [
-    "Freunde, Familie",
-    "du"
+    {
+     "de": "Freunde, Familie",
+     "en": "Friends, family",
+     "es": "Amigos, familia",
+     "fr": "Amis, famille",
+     "it": "Amici, famiglia",
+     "pt": "Amigos, família"
+    },
+    {
+     "de": "du",
+     "en": "du",
+     "es": "du",
+     "fr": "du",
+     "it": "du",
+     "pt": "du"
+    }
    ],
    [
-    "Fremde, Behörden, Geschäfte",
-    "Sie"
+    {
+     "de": "Fremde, Behörden, Geschäfte",
+     "en": "Strangers, public offices, shops",
+     "es": "Desconocidos, organismos públicos, comercios",
+     "fr": "Inconnus, administrations, commerces",
+     "it": "Sconosciuti, uffici pubblici, negozi",
+     "pt": "Desconhecidos, repartições públicas, lojas"
+    },
+    {
+     "de": "Sie",
+     "en": "Sie",
+     "es": "Sie",
+     "fr": "Sie",
+     "it": "Sie",
+     "pt": "Sie"
+    }
    ],
    [
-    "Arbeitskollegen",
-    "je nach Firma unterschiedlich"
+    {
+     "de": "Arbeitskollegen",
+     "en": "Work colleagues",
+     "es": "Compañeros de trabajo",
+     "fr": "Collègues de travail",
+     "it": "Colleghi di lavoro",
+     "pt": "Colegas de trabalho"
+    },
+    {
+     "de": "je nach Firma unterschiedlich",
+     "en": "varies depending on the company",
+     "es": "varía según la empresa",
+     "fr": "cela dépend de l'entreprise",
+     "it": "dipende dall'azienda",
+     "pt": "varia conforme a empresa"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Wie geht es dir? (unter Freunden)",
+   "texto": {
+    "de": "Wie geht es dir? (unter Freunden)",
+    "en": "How are you? (among friends)",
+    "es": "¿Cómo estás? (entre amigos)",
+    "fr": "Comment vas-tu ? (entre amis)",
+    "it": "Come stai? (tra amici)",
+    "pt": "Como você está? (entre amigos)"
+   },
    "audio": true
   },
   {
-   "texto": "Wie geht es Ihnen? (formell)",
+   "texto": {
+    "de": "Wie geht es Ihnen? (formell)",
+    "en": "How are you? (formal)",
+    "es": "¿Cómo está? (formal)",
+    "fr": "Comment allez-vous ? (formel)",
+    "it": "Come sta? (formale)",
+    "pt": "Como o senhor/a senhora está? (formal)"
+   },
    "audio": true
   },
   {
-   "texto": "Können Sie mir bitte helfen?"
+   "texto": {
+    "de": "Können Sie mir bitte helfen?",
+    "en": "Could you please help me?",
+    "es": "¿Podría ayudarme, por favor?",
+    "fr": "Pourriez-vous m'aider, s'il vous plaît ?",
+    "it": "Può aiutarmi, per favore?",
+    "pt": "Pode me ajudar, por favor?"
+   }
   }
  ],
  "notas": [
-  "Sie wird immer großgeschrieben, auch mitten im Satz.",
-  "Im Zweifel ist es höflicher, mit Sie zu beginnen, als zu früh zu duzen.",
-  "In manchen Firmen und in der Deutschschweiz wird schneller geduzt als in Deutschland."
+  {
+   "de": "Sie wird immer großgeschrieben, auch mitten im Satz.",
+   "en": "Sie is always capitalized, even in the middle of a sentence.",
+   "es": "«Sie» siempre se escribe con mayúscula, incluso en medio de una oración.",
+   "fr": "« Sie » s'écrit toujours avec une majuscule, même au milieu d'une phrase.",
+   "it": "«Sie» si scrive sempre con la maiuscola, anche a metà frase.",
+   "pt": "«Sie» sempre é escrito com maiúscula, mesmo no meio da frase."
+  },
+  {
+   "de": "Im Zweifel ist es höflicher, mit Sie zu beginnen, als zu früh zu duzen.",
+   "en": "When in doubt, it is more polite to start with Sie than to use du too soon.",
+   "es": "En caso de duda, es más cortés empezar con «Sie» que tutear demasiado pronto.",
+   "fr": "En cas de doute, il est plus poli de commencer avec « Sie » que de passer trop vite à « du ».",
+   "it": "In caso di dubbio, è più cortese iniziare con «Sie» che usare «du» troppo presto.",
+   "pt": "Na dúvida, é mais educado começar com «Sie» do que usar «du» cedo demais."
+  },
+  {
+   "de": "In manchen Firmen und in der Deutschschweiz wird schneller geduzt als in Deutschland.",
+   "en": "In some companies and in German-speaking Switzerland, people switch to du more quickly than in Germany.",
+   "es": "En algunas empresas y en la Suiza alemana se pasa a «du» más rápido que en Alemania.",
+   "fr": "Dans certaines entreprises et en Suisse alémanique, on passe plus vite au « du » qu'en Allemagne.",
+   "it": "In alcune aziende e nella Svizzera tedesca si passa più rapidamente al «du» che in Germania.",
+   "pt": "Em algumas empresas e na Suíça de língua alemã, passa-se para o «du» mais rapidamente do que na Alemanha."
+  }
  ],
  "contraste": {
   "es": "Das Spanische hat mit tú und usted eine sehr ähnliche Unterscheidung, sodass sich die Grundregel leicht überträgt. Da der Gebrauch im Spanischen je nach Land stark schwankt, lohnt sich die deutsche Faustregel für den Arbeitsplatz: Sie gegenüber Unbekannten und Kunden, du unter Kolleginnen und Kollegen, mit denen man täglich zusammenarbeitet.",
@@ -54,14 +173,42 @@
   "en": "Das Englische hat nur you, die Unterscheidung zwischen du und Sie ist also ganz neu. Im Zweifel ist Sie richtig, gross geschrieben und mit der Pluralform des Verbs (Sie sind), ebenso das Possessivpronomen Ihr."
  },
  "errores": [
-  "Eine fremde Person sofort duzen.",
-  "Sie kleinschreiben.",
-  "Zwischen du und Sie im selben Gespräch ohne Grund wechseln."
+  {
+   "de": "Eine fremde Person sofort duzen.",
+   "en": "Using du immediately with a stranger.",
+   "es": "Tutear inmediatamente a una persona desconocida.",
+   "fr": "Tutoyer immédiatement une personne inconnue.",
+   "it": "Dare subito del «du» a una persona sconosciuta.",
+   "pt": "Usar «du» imediatamente com uma pessoa desconhecida."
+  },
+  {
+   "de": "Sie kleinschreiben.",
+   "en": "Writing Sie with a lowercase s.",
+   "es": "Escribir «Sie» con minúscula.",
+   "fr": "Écrire « Sie » avec une minuscule.",
+   "it": "Scrivere «Sie» con la minuscola.",
+   "pt": "Escrever «Sie» com letra minúscula."
+  },
+  {
+   "de": "Zwischen du und Sie im selben Gespräch ohne Grund wechseln.",
+   "en": "Switching between du and Sie in the same conversation without a reason.",
+   "es": "Cambiar entre «du» y «Sie» en la misma conversación sin motivo.",
+   "fr": "Passer de « du » à « Sie » dans la même conversation sans raison.",
+   "it": "Passare da «du» a «Sie» nella stessa conversazione senza motivo.",
+   "pt": "Alternar entre «du» e «Sie» na mesma conversa sem motivo."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Wie geht es dir?",
-   "funcion": "informell",
+   "funcion": {
+    "de": "informell",
+    "en": "informal",
+    "es": "informal",
+    "fr": "informel",
+    "it": "informale",
+    "pt": "informal"
+   },
    "traducciones": {
     "es": "¿Cómo estás?",
     "en": "How are you? (informal)",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Wie geht es Ihnen?",
-   "funcion": "formell",
+   "funcion": {
+    "de": "formell",
+    "en": "formal",
+    "es": "formal",
+    "fr": "formel",
+    "it": "formale",
+    "pt": "formal"
+   },
    "traducciones": {
     "es": "¿Cómo está usted?",
     "en": "How are you? (formal)",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Können Sie mir helfen?",
-   "funcion": "formelle Bitte",
+   "funcion": {
+    "de": "formelle Bitte",
+    "en": "formal request",
+    "es": "petición formal",
+    "fr": "demande formelle",
+    "it": "richiesta formale",
+    "pt": "pedido formal"
+   },
    "traducciones": {
     "es": "¿Puede ayudarme?",
     "en": "Can you help me? (formal)",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Kannst du mir helfen?",
-   "funcion": "informelle Bitte",
+   "funcion": {
+    "de": "informelle Bitte",
+    "en": "informal request",
+    "es": "petición informal",
+    "fr": "demande informelle",
+    "it": "richiesta informale",
+    "pt": "pedido informal"
+   },
    "traducciones": {
     "es": "¿Podés ayudarme?",
     "en": "Can you help me? (informal)",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Dürfen wir uns duzen?",
-   "funcion": "Duzen vorschlagen",
+   "funcion": {
+    "de": "Duzen vorschlagen",
+    "en": "suggest using du",
+    "es": "proponer tutearse",
+    "fr": "proposer de se tutoyer",
+    "it": "proporre di darsi del tu",
+    "pt": "sugerir usar «du»"
+   },
    "traducciones": {
     "es": "¿Nos podemos tutear?",
     "en": "Shall we use first names?",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Sehr geehrte Damen und Herren,",
-   "funcion": "sehr formelle Anrede, schriftlich",
+   "funcion": {
+    "de": "sehr formelle Anrede, schriftlich",
+    "en": "very formal form of address, in writing",
+    "es": "tratamiento muy formal, por escrito",
+    "fr": "formule d’adresse très formelle, à l’écrit",
+    "it": "forma di appellativo molto formale, per iscritto",
+    "pt": "forma de tratamento muito formal, por escrito"
+   },
    "traducciones": {
     "es": "Estimados señores y señoras,",
     "en": "Dear Sir or Madam,",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich die richtige Anrede für die Situation gewählt?",
-  "Ist Sie durchgehend großgeschrieben?",
-  "Habe ich nicht ohne Grund zwischen du und Sie gewechselt?",
-  "Passt die Anrede zur beschriebenen Situation?",
-  "Habe ich mindestens ein Beispiel für du UND eines für Sie gegeben?"
+  {
+   "de": "Habe ich die richtige Anrede für die Situation gewählt?",
+   "en": "Have I chosen the right form of address for the situation?",
+   "es": "¿Elegí el tratamiento adecuado para la situación?",
+   "fr": "Ai-je choisi la bonne forme d'adresse pour la situation ?",
+   "it": "Ho scelto la forma di trattamento adatta alla situazione?",
+   "pt": "Escolhi a forma de tratamento adequada à situação?"
+  },
+  {
+   "de": "Ist Sie durchgehend großgeschrieben?",
+   "en": "Is Sie consistently capitalized?",
+   "es": "¿«Sie» está escrito con mayúscula en todo momento?",
+   "fr": "« Sie » est-il toujours écrit avec une majuscule ?",
+   "it": "«Sie» è scritto sempre con la maiuscola?",
+   "pt": "«Sie» está sempre escrito com maiúscula?"
+  },
+  {
+   "de": "Habe ich nicht ohne Grund zwischen du und Sie gewechselt?",
+   "en": "Have I avoided switching between du and Sie without a reason?",
+   "es": "¿Evité cambiar entre «du» y «Sie» sin motivo?",
+   "fr": "Ai-je évité de passer de « du » à « Sie » sans raison ?",
+   "it": "Ho evitato di passare da «du» a «Sie» senza motivo?",
+   "pt": "Evitei alternar entre «du» e «Sie» sem motivo?"
+  },
+  {
+   "de": "Passt die Anrede zur beschriebenen Situation?",
+   "en": "Does the form of address fit the situation described?",
+   "es": "¿El tratamiento se adecua a la situación descrita?",
+   "fr": "La forme d'adresse correspond-elle à la situation décrite ?",
+   "it": "La forma di trattamento è adatta alla situazione descritta?",
+   "pt": "A forma de tratamento combina com a situação descrita?"
+  },
+  {
+   "de": "Habe ich mindestens ein Beispiel für du UND eines für Sie gegeben?",
+   "en": "Have I given at least one example with du AND one with Sie?",
+   "es": "¿Di al menos un ejemplo con «du» Y uno con «Sie» ?",
+   "fr": "Ai-je donné au moins un exemple avec « du » ET un avec « Sie » ?",
+   "it": "Ho dato almeno un esempio con «du» E uno con «Sie»?",
+   "pt": "Dei pelo menos um exemplo com «du» E um com «Sie»?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen du und Sie. Prüfen Sie die Grossschreibung von Sie und die Konsistenz im Text. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen du und Sie. Prüfen Sie die Grossschreibung von Sie und die Konsistenz im Text. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on the choice between du and Sie. Check the capitalization of Sie and consistency throughout the text. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en la elección entre «du» y «Sie». Revise que «Sie» esté escrito con mayúscula y que el uso sea coherente en todo el texto. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur le choix entre « du » et « Sie ». Vérifiez la majuscule de « Sie » et la cohérence dans l’ensemble du texte. Ne réécrivez pas le texte.",
+  "it": "Concentri la sua attenzione esclusivamente sulla scelta tra «du» e «Sie». Controlli la maiuscola di «Sie» e la coerenza in tutto il testo. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente na escolha entre «du» e «Sie». Verifique o uso da inicial maiúscula em «Sie» e a consistência ao longo do texto. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*Señor* mit dem Vornamen übertragen: *Herr Juan* statt *Herr Müller*."

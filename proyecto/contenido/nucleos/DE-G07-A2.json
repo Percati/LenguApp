@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Adjektivdeklination",
+ "titulo": {
+  "de": "Adjektivdeklination",
+  "en": "Adjective declension",
+  "es": "Declinación de adjetivos",
+  "fr": "Déclinaison de l'adjectif",
+  "it": "Declinazione degli aggettivi",
+  "pt": "Declinação dos adjetivos"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Auf A2 lernt man die Adjektivendung nach dem bestimmten Artikel im Nominativ zuerst: der neue Kollege, die neue Kollegin, das neue Büro. Die anderen Fälle kommen erst auf B1 dazu. Diese Grundlage ist wichtig, um im Alltag korrekt über die Vergangenheit zu berichten.",
+ "descripcion": {
+  "de": "Auf A2 lernt man die Adjektivendung nach dem bestimmten Artikel im Nominativ zuerst: der neue Kollege, die neue Kollegin, das neue Büro. Die anderen Fälle kommen erst auf B1 dazu. Diese Grundlage ist wichtig, um im Alltag korrekt über die Vergangenheit zu berichten.",
+  "en": "At A2, you first learn the adjective ending after the definite article in the nominative: der neue Kollege, die neue Kollegin, das neue Büro. The other cases are introduced only at B1. This foundation is important for describing people and things correctly in everyday German.",
+  "es": "En A2 se aprende primero la terminación del adjetivo después del artículo determinado en nominativo: «der neue Kollege», «die neue Kollegin», «das neue Büro». Los demás casos se incorporan recién en B1. Esta base es importante para describir correctamente personas y cosas en el alemán cotidiano.",
+  "fr": "Au niveau A2, on apprend d'abord la terminaison de l'adjectif après l'article défini au nominatif : « der neue Kollege », « die neue Kollegin », « das neue Büro ». Les autres cas ne sont abordés qu'au niveau B1. Cette base est importante pour décrire correctement les personnes et les choses en allemand courant.",
+  "it": "A livello A2 si impara innanzitutto la desinenza dell'aggettivo dopo l'articolo determinativo al nominativo: «der neue Kollege», «die neue Kollegin», «das neue Büro». Gli altri casi vengono introdotti solo al B1. Questa base è importante per descrivere correttamente persone e cose nel tedesco quotidiano.",
+  "pt": "No nível A2, aprende-se primeiro a terminação do adjetivo depois do artigo definido no nominativo: «der neue Kollege», «die neue Kollegin», «das neue Büro». Os outros casos só são introduzidos no B1. Essa base é importante para descrever corretamente pessoas e coisas no alemão do dia a dia."
+ },
  "cuadroReferencia": {
-  "titulo": "Adjektiv nach bestimmtem Artikel, Nominativ",
+  "titulo": {
+   "de": "Adjektiv nach bestimmtem Artikel, Nominativ",
+   "en": "Adjective after a definite article, nominative",
+   "es": "Adjetivo después de artículo determinado, nominativo",
+   "fr": "Adjectif après un article défini, nominatif",
+   "it": "Aggettivo dopo l'articolo determinativo, nominativo",
+   "pt": "Adjetivo depois de artigo definido, nominativo"
+  },
   "columnas": [
-   "Genus",
-   "Beispiel"
+   {
+    "de": "Genus",
+    "en": "Gender",
+    "es": "Género",
+    "fr": "Genre",
+    "it": "Genere",
+    "pt": "Gênero"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "maskulin",
-    "der neue Kollege"
+    {
+     "de": "maskulin",
+     "en": "masculine",
+     "es": "masculino",
+     "fr": "masculin",
+     "it": "maschile",
+     "pt": "masculino"
+    },
+    {
+     "de": "der neue Kollege",
+     "en": "the new male colleague",
+     "es": "el nuevo compañero",
+     "fr": "le nouveau collègue",
+     "it": "il nuovo collega",
+     "pt": "o novo colega"
+    }
    ],
    [
-    "feminin",
-    "die neue Kollegin"
+    {
+     "de": "feminin",
+     "en": "feminine",
+     "es": "femenino",
+     "fr": "féminin",
+     "it": "femminile",
+     "pt": "feminino"
+    },
+    {
+     "de": "die neue Kollegin",
+     "en": "the new female colleague",
+     "es": "la nueva compañera",
+     "fr": "la nouvelle collègue",
+     "it": "la nuova collega",
+     "pt": "a nova colega"
+    }
    ],
    [
-    "neutral",
-    "das neue Büro"
+    {
+     "de": "neutral",
+     "en": "neuter",
+     "es": "neutro",
+     "fr": "neutre",
+     "it": "neutro",
+     "pt": "neutro"
+    },
+    {
+     "de": "das neue Büro",
+     "en": "the new office",
+     "es": "la nueva oficina",
+     "fr": "le nouveau bureau",
+     "it": "il nuovo ufficio",
+     "pt": "o novo escritório"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Der neue Kollege ist sehr freundlich.",
+   "texto": {
+    "de": "Der neue Kollege ist sehr freundlich.",
+    "en": "The new colleague is very friendly.",
+    "es": "El nuevo compañero es muy amable.",
+    "fr": "Le nouveau collègue est très sympathique.",
+    "it": "Il nuovo collega è molto gentile.",
+    "pt": "O novo colega é muito simpático."
+   },
    "audio": true
   },
   {
-   "texto": "Die neue Kollegin kommt aus Italien.",
+   "texto": {
+    "de": "Die neue Kollegin kommt aus Italien.",
+    "en": "The new colleague is from Italy.",
+    "es": "La nueva compañera viene de Italia.",
+    "fr": "La nouvelle collègue vient d'Italie.",
+    "it": "La nuova collega viene dall'Italia.",
+    "pt": "A nova colega vem da Itália."
+   },
    "audio": true
   },
   {
-   "texto": "Das neue Büro ist ziemlich klein."
+   "texto": {
+    "de": "Das neue Büro ist ziemlich klein.",
+    "en": "The new office is quite small.",
+    "es": "La nueva oficina es bastante pequeña.",
+    "fr": "Le nouveau bureau est assez petit.",
+    "it": "Il nuovo ufficio è piuttosto piccolo.",
+    "pt": "O novo escritório é bem pequeno."
+   }
   }
  ],
  "notas": [
-  "Nach dem bestimmten Artikel im Nominativ endet das Adjektiv auf -e.",
-  "Das Genus des Adjektivs kommt vom Nomen: der Kollege ist maskulin, also der neue Kollege.",
-  "Diese Regel gilt nur für den Nominativ mit bestimmtem Artikel."
+  {
+   "de": "Nach dem bestimmten Artikel im Nominativ endet das Adjektiv auf -e.",
+   "en": "After the definite article in the nominative, the adjective ends in -e.",
+   "es": "Después del artículo determinado en nominativo, el adjetivo termina en «-e».",
+   "fr": "Après l'article défini au nominatif, l'adjectif se termine par « -e ».",
+   "it": "Dopo l'articolo determinativo al nominativo, l'aggettivo termina in «-e».",
+   "pt": "Depois do artigo definido no nominativo, o adjetivo termina em «-e»."
+  },
+  {
+   "de": "Das Genus des Adjektivs kommt vom Nomen: der Kollege ist maskulin, also der neue Kollege.",
+   "en": "The adjective follows the noun's gender: Kollege is masculine, so der neue Kollege.",
+   "es": "El género del adjetivo depende del sustantivo: «der Kollege» es masculino, por eso «der neue Kollege».",
+   "fr": "Le genre de l'adjectif suit celui du nom : « der Kollege » est masculin, donc « der neue Kollege ».",
+   "it": "Il genere dell'aggettivo segue quello del sostantivo: «der Kollege» è maschile, quindi «der neue Kollege».",
+   "pt": "O gênero do adjetivo acompanha o substantivo: «der Kollege» é masculino, portanto «der neue Kollege»."
+  },
+  {
+   "de": "Diese Regel gilt nur für den Nominativ mit bestimmtem Artikel.",
+   "en": "This rule applies only to the nominative with a definite article.",
+   "es": "Esta regla se aplica solo al nominativo con artículo determinado.",
+   "fr": "Cette règle ne s'applique qu'au nominatif avec article défini.",
+   "it": "Questa regola vale solo per il nominativo con articolo determinativo.",
+   "pt": "Essa regra vale apenas para o nominativo com artigo definido."
+  }
  ],
  "contraste": {
   "es": "Das Spanische dekliniert Adjektive nach Genus und Numerus, aber nicht nach Kasus. Diese zusätzliche Ebene ist für Spanischsprachige neu.",
@@ -54,13 +173,34 @@
   "en": "Im Englischen steht das Adjektiv wie im Deutschen vor dem Nomen, bekommt aber nie eine Endung (the new car). Die Stellung ist also leicht, die Endung ist neu: das neue Auto."
  },
  "errores": [
-  "Die Endung -e vergessen.",
-  "Das falsche Genus für das Adjektiv wählen."
+  {
+   "de": "Die Endung -e vergessen.",
+   "en": "Forgetting the ending -e.",
+   "es": "Olvidar la terminación «-e».",
+   "fr": "Oublier la terminaison « -e ».",
+   "it": "Dimenticare la desinenza «-e».",
+   "pt": "Esquecer a terminação «-e»."
+  },
+  {
+   "de": "Das falsche Genus für das Adjektiv wählen.",
+   "en": "Choosing the wrong gender for the adjective.",
+   "es": "Elegir el género equivocado para el adjetivo.",
+   "fr": "Choisir le mauvais genre pour l'adjectif.",
+   "it": "Scegliere il genere sbagliato per l'aggettivo.",
+   "pt": "Escolher o gênero errado para o adjetivo."
+  }
  ],
  "redemittel": [
   {
    "expresion": "der neue…",
-   "funcion": "maskulin, Nominativ",
+   "funcion": {
+    "de": "maskulin, Nominativ",
+    "en": "masculine, nominative",
+    "es": "masculino, nominativo",
+    "fr": "masculin, nominatif",
+    "it": "maschile, nominativo",
+    "pt": "masculino, nominativo"
+   },
    "traducciones": {
     "es": "el nuevo…",
     "en": "the new…",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "die neue…",
-   "funcion": "feminin, Nominativ",
+   "funcion": {
+    "de": "feminin, Nominativ",
+    "en": "feminine, nominative",
+    "es": "femenino, nominativo",
+    "fr": "féminin, nominatif",
+    "it": "femminile, nominativo",
+    "pt": "feminino, nominativo"
+   },
    "traducciones": {
     "es": "la nueva…",
     "en": "the new…",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "das neue…",
-   "funcion": "neutral, Nominativ",
+   "funcion": {
+    "de": "neutral, Nominativ",
+    "en": "neuter, nominative",
+    "es": "neutro, nominativo",
+    "fr": "neutre, nominatif",
+    "it": "neutro, nominativo",
+    "pt": "neutro, nominativo"
+   },
    "traducciones": {
     "es": "el/la nuevo/a…",
     "en": "the new…",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "der grosse…",
-   "funcion": "maskulin, Nominativ",
+   "funcion": {
+    "de": "maskulin, Nominativ",
+    "en": "masculine, nominative",
+    "es": "masculino, nominativo",
+    "fr": "masculin, nominatif",
+    "it": "maschile, nominativo",
+    "pt": "masculino, nominativo"
+   },
    "traducciones": {
     "es": "el grande…",
     "en": "the big…",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "die kleine…",
-   "funcion": "feminin, Nominativ",
+   "funcion": {
+    "de": "feminin, Nominativ",
+    "en": "feminine, nominative",
+    "es": "femenino, nominativo",
+    "fr": "féminin, nominatif",
+    "it": "femminile, nominativo",
+    "pt": "feminino, nominativo"
+   },
    "traducciones": {
     "es": "la pequeña…",
     "en": "the small…",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "das alte…",
-   "funcion": "neutral, Nominativ",
+   "funcion": {
+    "de": "neutral, Nominativ",
+    "en": "neuter, nominative",
+    "es": "neutro, nominativo",
+    "fr": "neutre, nominatif",
+    "it": "neutro, nominativo",
+    "pt": "neutro, nominativo"
+   },
    "traducciones": {
     "es": "el/la viejo/a…",
     "en": "the old…",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Endet das Adjektiv auf -e?",
-  "Stimmt der Artikel mit dem Genus überein?",
-  "Habe ich alle drei Genera mindestens einmal benutzt?",
-  "Klingt der Satz natürlich?",
-  "Klingt der Satz natürlich?"
+  {
+   "de": "Endet das Adjektiv auf -e?",
+   "en": "Does the adjective end in -e?",
+   "es": "¿El adjetivo termina en «-e»?",
+   "fr": "L'adjectif se termine-t-il par « -e » ?",
+   "it": "L'aggettivo termina in «-e»?",
+   "pt": "O adjetivo termina em «-e»?"
+  },
+  {
+   "de": "Stimmt der Artikel mit dem Genus überein?",
+   "en": "Does the article agree with the gender?",
+   "es": "¿El artículo coincide con el género?",
+   "fr": "L'article correspond-il au genre ?",
+   "it": "L'articolo concorda con il genere?",
+   "pt": "O artigo corresponde ao gênero?"
+  },
+  {
+   "de": "Habe ich alle drei Genera mindestens einmal benutzt?",
+   "en": "Have I used all three genders at least once?",
+   "es": "¿Usé los tres géneros al menos una vez?",
+   "fr": "Ai-je utilisé les trois genres au moins une fois ?",
+   "it": "Ho usato tutti e tre i generi almeno una volta?",
+   "pt": "Usei os três gêneros pelo menos uma vez?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendung nach dem bestimmten Artikel im Nominativ. Prüfen Sie das Genus jedes Nomens. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendung nach dem bestimmten Artikel im Nominativ. Prüfen Sie das Genus jedes Nomens. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on the adjective ending after a definite article in the nominative. Check the gender of each noun. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en la terminación del adjetivo después del artículo determinado en nominativo. Revise el género de cada sustantivo. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur la terminaison de l'adjectif après l'article défini au nominatif. Vérifiez le genre de chaque nom. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulla desinenza dell'aggettivo dopo l'articolo determinativo al nominativo. Controlli il genere di ogni sostantivo. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente na terminação do adjetivo depois do artigo definido no nominativo. Verifique o gênero de cada substantivo. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Das Genus aus dem Spanischen übernehmen: *der grosse Problem* nach *el problema* statt *das grosse Problem*."

@@ -3,57 +3,225 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Reflexive Verben",
+ "titulo": {
+  "de": "Reflexive Verben",
+  "en": "Reflexive verbs",
+  "es": "Verbos reflexivos",
+  "fr": "Verbes pronominaux",
+  "it": "Verbi riflessivi",
+  "pt": "Verbos reflexivos"
+ },
  "categoria": "grammar",
  "ancla": "Aspekte B1+",
- "descripcion": "Welche Verben im Deutschen reflexiv sind, deckt sich oft nicht mit der Muttersprache: manche Verben sind im Deutschen reflexiv, obwohl ihre Entsprechung in vielen anderen Sprachen es nicht ist, und umgekehrt — aufstehen zum Beispiel ist im Deutschen nicht reflexiv. Auf B1 geht es darum, diese Nichtübereinstimmung bewusst zu üben.",
+ "descripcion": {
+  "de": "Welche Verben im Deutschen reflexiv sind, deckt sich oft nicht mit der Muttersprache: manche Verben sind im Deutschen reflexiv, obwohl ihre Entsprechung in vielen anderen Sprachen es nicht ist, und umgekehrt — aufstehen zum Beispiel ist im Deutschen nicht reflexiv. Auf B1 geht es darum, diese Nichtübereinstimmung bewusst zu üben.",
+  "en": "Which verbs are reflexive in German often does not match the learner’s native language: some German verbs are reflexive even though their equivalents in many other languages are not, and vice versa — aufstehen, for example, is not reflexive in German. At B1, the aim is to practise this mismatch consciously.",
+  "es": "Qué verbos son reflexivos en alemán a menudo no coincide con la lengua materna: algunos verbos son reflexivos en alemán aunque sus equivalentes en muchas otras lenguas no lo sean, y viceversa; «aufstehen», por ejemplo, no es reflexivo en alemán. En B1, se trata de practicar conscientemente estas diferencias.",
+  "fr": "Les verbes pronominaux en allemand ne correspondent souvent pas à ceux de la langue maternelle : certains verbes sont pronominaux en allemand alors que leurs équivalents ne le sont pas dans de nombreuses autres langues, et inversement ; « aufstehen », par exemple, n’est pas pronominal en allemand. Au niveau B1, l’objectif est de travailler consciemment ces différences.",
+  "it": "Quali verbi siano riflessivi in tedesco spesso non coincide con la lingua madre: alcuni verbi sono riflessivi in tedesco anche se i loro equivalenti in molte altre lingue non lo sono, e viceversa; «aufstehen», per esempio, non è riflessivo in tedesco. Al B1 l’obiettivo è esercitarsi consapevolmente su queste differenze.",
+  "pt": "Quais verbos são reflexivos em alemão muitas vezes não coincide com a língua materna: alguns verbos são reflexivos em alemão embora seus equivalentes em muitas outras línguas não sejam, e vice-versa — «aufstehen», por exemplo, não é reflexivo em alemão. No nível B1, o objetivo é praticar conscientemente essas diferenças."
+ },
  "cuadroReferencia": {
-  "titulo": "Reflexiv oder nicht?",
+  "titulo": {
+   "de": "Reflexiv oder nicht?",
+   "en": "Reflexive or not?",
+   "es": "¿Reflexivo o no?",
+   "fr": "Pronominal ou non ?",
+   "it": "Riflessivo o no?",
+   "pt": "Reflexivo ou não?"
+  },
   "columnas": [
-   "Deutsch",
-   "Reflexiv?",
-   "Spanisch"
+   {
+    "de": "Deutsch",
+    "en": "German",
+    "es": "Alemán",
+    "fr": "Allemand",
+    "it": "Tedesco",
+    "pt": "Alemão"
+   },
+   {
+    "de": "Reflexiv?",
+    "en": "Reflexive?",
+    "es": "¿Reflexivo?",
+    "fr": "Pronominal ?",
+    "it": "Riflessivo?",
+    "pt": "Reflexivo?"
+   },
+   {
+    "de": "Spanisch",
+    "en": "Spanish",
+    "es": "Español",
+    "fr": "Espagnol",
+    "it": "Spagnolo",
+    "pt": "Espanhol"
+   }
   ],
   "filas": [
    [
-    "sich erinnern an",
-    "ja",
-    "acordarse de"
+    {
+     "de": "sich erinnern an",
+     "en": "to remember",
+     "es": "acordarse de",
+     "fr": "se souvenir de",
+     "it": "ricordarsi di",
+     "pt": "lembrar-se de"
+    },
+    {
+     "de": "ja",
+     "en": "yes",
+     "es": "sí",
+     "fr": "oui",
+     "it": "sì",
+     "pt": "sim"
+    },
+    {
+     "de": "acordarse de",
+     "en": "acordarse de",
+     "es": "«acordarse de»",
+     "fr": "« acordarse de »",
+     "it": "«acordarse de»",
+     "pt": "«acordarse de»"
+    }
    ],
    [
-    "sich freuen auf",
-    "ja",
-    "alegrarse de"
+    {
+     "de": "sich freuen auf",
+     "en": "to look forward to",
+     "es": "tener ganas de",
+     "fr": "avoir hâte de",
+     "it": "non vedere l’ora di",
+     "pt": "estar ansioso por / ter vontade de"
+    },
+    {
+     "de": "ja",
+     "en": "yes",
+     "es": "sí",
+     "fr": "oui",
+     "it": "sì",
+     "pt": "sim"
+    },
+    {
+     "de": "alegrarse de",
+     "en": "alegrarse de",
+     "es": "«alegrarse de»",
+     "fr": "« alegrarse de »",
+     "it": "«alegrarse de»",
+     "pt": "«alegrarse de»"
+    }
    ],
    [
-    "aufstehen",
-    "nein",
-    "levantarse (reflexiv im Spanischen)"
+    {
+     "de": "aufstehen",
+     "en": "to get up",
+     "es": "levantarse",
+     "fr": "se lever",
+     "it": "alzarsi",
+     "pt": "levantar-se"
+    },
+    {
+     "de": "nein",
+     "en": "no",
+     "es": "no",
+     "fr": "non",
+     "it": "no",
+     "pt": "não"
+    },
+    {
+     "de": "levantarse (reflexiv im Spanischen)",
+     "en": "levantarse (reflexive in Spanish)",
+     "es": "«levantarse» (reflexivo en español)",
+     "fr": "« levantarse » (pronominal en espagnol)",
+     "it": "«levantarse» (riflessivo in spagnolo)",
+     "pt": "«levantarse» (reflexivo em espanhol)"
+    }
    ],
    [
-    "sich waschen",
-    "ja",
-    "lavarse"
+    {
+     "de": "sich waschen",
+     "en": "sich waschen",
+     "es": "«sich waschen»",
+     "fr": "« sich waschen »",
+     "it": "«sich waschen»",
+     "pt": "«sich waschen»"
+    },
+    {
+     "de": "ja",
+     "en": "yes",
+     "es": "sí",
+     "fr": "oui",
+     "it": "sì",
+     "pt": "sim"
+    },
+    {
+     "de": "lavarse",
+     "en": "lavarse",
+     "es": "«lavarse»",
+     "fr": "« lavarse »",
+     "it": "«lavarse»",
+     "pt": "«lavarse»"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich erinnere mich gut an meine Kindheit.",
+   "texto": {
+    "de": "Ich erinnere mich gut an meine Kindheit.",
+    "en": "I remember my childhood well.",
+    "es": "Recuerdo bien mi infancia.",
+    "fr": "Je me souviens bien de mon enfance.",
+    "it": "Ricordo bene la mia infanzia.",
+    "pt": "Lembro bem da minha infância."
+   },
    "audio": true
   },
   {
-   "texto": "Ich stehe jeden Tag um sieben auf.",
+   "texto": {
+    "de": "Ich stehe jeden Tag um sieben auf.",
+    "en": "I get up at seven every day.",
+    "es": "Me levanto todos los días a las siete.",
+    "fr": "Je me lève tous les jours à sept heures.",
+    "it": "Mi alzo ogni giorno alle sette.",
+    "pt": "Eu me levanto todos os dias às sete."
+   },
    "audio": true
   },
   {
-   "texto": "Ich freue mich sehr auf das Wochenende."
+   "texto": {
+    "de": "Ich freue mich sehr auf das Wochenende.",
+    "en": "I’m really looking forward to the weekend.",
+    "es": "Tengo muchas ganas de que llegue el fin de semana.",
+    "fr": "J’attends vraiment le week-end avec impatience.",
+    "it": "Non vedo davvero l’ora che arrivi il fine settimana.",
+    "pt": "Estou com muita vontade de que chegue o fim de semana."
+   }
   }
  ],
  "notas": [
-  "Manche deutschen Verben sind reflexiv, obwohl ihre spanische Entsprechung es nicht ist, und umgekehrt.",
-  "Das Reflexivpronomen (mich, dich, sich…) steht direkt nach dem konjugierten Verb.",
-  "Reflexive Verben mit fester Präposition (sich freuen auf, sich interessieren für) muss man als Ganzes lernen."
+  {
+   "de": "Manche deutschen Verben sind reflexiv, obwohl ihre spanische Entsprechung es nicht ist, und umgekehrt.",
+   "en": "Some German verbs are reflexive even though their Spanish equivalents are not, and vice versa.",
+   "es": "Algunos verbos alemanes son reflexivos aunque sus equivalentes en español no lo sean, y viceversa.",
+   "fr": "Certains verbes allemands sont pronominaux alors que leurs équivalents espagnols ne le sont pas, et inversement.",
+   "it": "Alcuni verbi tedeschi sono riflessivi anche se i loro equivalenti spagnoli non lo sono, e viceversa.",
+   "pt": "Alguns verbos alemães são reflexivos embora seus equivalentes em espanhol não sejam, e vice-versa."
+  },
+  {
+   "de": "Das Reflexivpronomen (mich, dich, sich…) steht direkt nach dem konjugierten Verb.",
+   "en": "The reflexive pronoun (mich, dich, sich…) comes directly after the conjugated verb.",
+   "es": "El pronombre reflexivo («mich, dich, sich…») va directamente después del verbo conjugado.",
+   "fr": "Le pronom réfléchi (« mich, dich, sich… ») se place directement après le verbe conjugué.",
+   "it": "Il pronome riflessivo («mich, dich, sich…») va subito dopo il verbo coniugato.",
+   "pt": "O pronome reflexivo («mich, dich, sich…») vem logo depois do verbo conjugado."
+  },
+  {
+   "de": "Reflexive Verben mit fester Präposition (sich freuen auf, sich interessieren für) muss man als Ganzes lernen.",
+   "en": "Reflexive verbs with fixed prepositions (sich freuen auf, sich interessieren für) must be learned as complete units.",
+   "es": "Los verbos reflexivos con preposición fija («sich freuen auf», «sich interessieren für») deben aprenderse como unidades completas.",
+   "fr": "Les verbes pronominaux à préposition fixe (« sich freuen auf », « sich interessieren für ») doivent être appris comme des unités complètes.",
+   "it": "I verbi riflessivi con preposizione fissa («sich freuen auf», «sich interessieren für») vanno imparati come unità complete.",
+   "pt": "Os verbos reflexivos com preposição fixa («sich freuen auf», «sich interessieren für») devem ser aprendidos como unidades completas."
+  }
  ],
  "contraste": {
   "es": "Genau das ist der Kern des Problems: aufstehen ist im Deutschen nicht reflexiv, aber levantarse ist es im Spanischen. Diese Nichtübereinstimmung in beide Richtungen macht reflexive Verben zu einer eigenen Fehlerquelle, die man nicht durch Logik, sondern nur durch Auswendiglernen löst.",
@@ -63,13 +231,34 @@
   "en": "Das Englische hat nur sehr wenige reflexive Verben (enjoy yourself). Die meisten deutschen Reflexivverben sind im Englischen einfache Verben (sich erinnern – remember, sich freuen – be glad), deshalb fehlt sich oft."
  },
  "errores": [
-  "Das Reflexivpronomen bei einem tatsächlich reflexiven Verb vergessen.",
-  "Das Reflexivpronomen an der falschen Stelle im Satz platzieren."
+  {
+   "de": "Das Reflexivpronomen bei einem tatsächlich reflexiven Verb vergessen.",
+   "en": "Forgetting the reflexive pronoun with a genuinely reflexive verb.",
+   "es": "Olvidar el pronombre reflexivo con un verbo que realmente es reflexivo.",
+   "fr": "Oublier le pronom réfléchi avec un verbe réellement pronominal.",
+   "it": "Dimenticare il pronome riflessivo con un verbo che è effettivamente riflessivo.",
+   "pt": "Esquecer o pronome reflexivo com um verbo realmente reflexivo."
+  },
+  {
+   "de": "Das Reflexivpronomen an der falschen Stelle im Satz platzieren.",
+   "en": "Putting the reflexive pronoun in the wrong place in the sentence.",
+   "es": "Colocar el pronombre reflexivo en el lugar incorrecto de la oración.",
+   "fr": "Placer le pronom réfléchi au mauvais endroit dans la phrase.",
+   "it": "Mettere il pronome riflessivo nel posto sbagliato della frase.",
+   "pt": "Colocar o pronome reflexivo no lugar errado da frase."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich erinnere mich an…",
-   "funcion": "reflexiv mit Präposition",
+   "funcion": {
+    "de": "reflexiv mit Präposition",
+    "en": "reflexive with preposition",
+    "es": "reflexivo con preposición",
+    "fr": "pronominal avec préposition",
+    "it": "riflessivo con preposizione",
+    "pt": "reflexivo com preposição"
+   },
    "traducciones": {
     "es": "Me acuerdo de…",
     "en": "I remember…",
@@ -80,7 +269,14 @@
   },
   {
    "expresion": "Ich freue mich auf…",
-   "funcion": "reflexiv, Vorfreude",
+   "funcion": {
+    "de": "reflexiv, Vorfreude",
+    "en": "reflexive, looking forward to something",
+    "es": "reflexivo, expectativa positiva",
+    "fr": "pronominal, attente avec impatience",
+    "it": "riflessivo, attesa impaziente",
+    "pt": "reflexivo, expectativa positiva"
+   },
    "traducciones": {
     "es": "Tengo ganas de…",
     "en": "I'm looking forward to…",
@@ -91,7 +287,14 @@
   },
   {
    "expresion": "Ich stehe auf.",
-   "funcion": "NICHT reflexiv im Deutschen",
+   "funcion": {
+    "de": "NICHT reflexiv im Deutschen",
+    "en": "NOT reflexive in German",
+    "es": "NO reflexivo en alemán",
+    "fr": "NON pronominal en allemand",
+    "it": "NON riflessivo in tedesco",
+    "pt": "NÃO reflexivo em alemão"
+   },
    "traducciones": {
     "es": "Me levanto.",
     "en": "I get up.",
@@ -102,7 +305,14 @@
   },
   {
    "expresion": "Ich wasche mich.",
-   "funcion": "reflexiv",
+   "funcion": {
+    "de": "reflexiv",
+    "en": "reflexive",
+    "es": "reflexivo",
+    "fr": "pronominal",
+    "it": "riflessivo",
+    "pt": "reflexivo"
+   },
    "traducciones": {
     "es": "Me lavo.",
     "en": "I wash (myself).",
@@ -113,7 +323,14 @@
   },
   {
    "expresion": "Ich interessiere mich für…",
-   "funcion": "reflexiv mit Präposition",
+   "funcion": {
+    "de": "reflexiv mit Präposition",
+    "en": "reflexive with preposition",
+    "es": "reflexivo con preposición",
+    "fr": "pronominal avec préposition",
+    "it": "riflessivo con preposizione",
+    "pt": "reflexivo com preposição"
+   },
    "traducciones": {
     "es": "Me interesa…",
     "en": "I'm interested in…",
@@ -124,7 +341,14 @@
   },
   {
    "expresion": "Ich beeile mich.",
-   "funcion": "reflexiv, ohne spanisches Äquivalent",
+   "funcion": {
+    "de": "reflexiv, ohne spanisches Äquivalent",
+    "en": "reflexive, no Spanish equivalent",
+    "es": "reflexivo, sin equivalente en español",
+    "fr": "pronominal, sans équivalent espagnol",
+    "it": "riflessivo, senza equivalente spagnolo",
+    "pt": "reflexivo, sem equivalente em espanhol"
+   },
    "traducciones": {
     "es": "Me apuro.",
     "en": "I hurry.",
@@ -135,13 +359,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich aufstehen richtig ohne Reflexivpronomen benutzt?",
-  "Steht das Reflexivpronomen direkt nach dem konjugierten Verb?",
-  "Habe ich mindestens vier verschiedene reflexive Verben benutzt?",
-  "Habe ich geprüft, ob ein Verb im Deutschen wirklich reflexiv ist, statt es vom Spanischen abzuleiten?",
-  "Klingt der Satz natürlich?"
+  {
+   "de": "Habe ich aufstehen richtig ohne Reflexivpronomen benutzt?",
+   "en": "Have I used aufstehen correctly without a reflexive pronoun?",
+   "es": "¿Usé «aufstehen» correctamente sin pronombre reflexivo?",
+   "fr": "Ai-je correctement utilisé « aufstehen » sans pronom réfléchi ?",
+   "it": "Ho usato correttamente «aufstehen» senza pronome riflessivo?",
+   "pt": "Usei «aufstehen» corretamente sem pronome reflexivo?"
+  },
+  {
+   "de": "Steht das Reflexivpronomen direkt nach dem konjugierten Verb?",
+   "en": "Is the reflexive pronoun directly after the conjugated verb?",
+   "es": "¿El pronombre reflexivo está directamente después del verbo conjugado?",
+   "fr": "Le pronom réfléchi se trouve-t-il directement après le verbe conjugué ?",
+   "it": "Il pronome riflessivo è subito dopo il verbo coniugato?",
+   "pt": "O pronome reflexivo está logo depois do verbo conjugado?"
+  },
+  {
+   "de": "Habe ich mindestens vier verschiedene reflexive Verben benutzt?",
+   "en": "Have I used at least four different reflexive verbs?",
+   "es": "¿Usé al menos cuatro verbos reflexivos diferentes?",
+   "fr": "Ai-je utilisé au moins quatre verbes pronominaux différents ?",
+   "it": "Ho usato almeno quattro verbi riflessivi diversi?",
+   "pt": "Usei pelo menos quatro verbos reflexivos diferentes?"
+  },
+  {
+   "de": "Habe ich geprüft, ob ein Verb im Deutschen wirklich reflexiv ist, statt es vom Spanischen abzuleiten?",
+   "en": "Have I checked whether each verb is really reflexive in German rather than assuming it from Spanish?",
+   "es": "¿Comprobé si cada verbo es realmente reflexivo en alemán en lugar de deducirlo del español?",
+   "fr": "Ai-je vérifié si chaque verbe est réellement pronominal en allemand au lieu de le déduire de l’espagnol ?",
+   "it": "Ho verificato se ogni verbo è davvero riflessivo in tedesco invece di dedurlo dallo spagnolo?",
+   "pt": "Verifiquei se cada verbo é realmente reflexivo em alemão em vez de deduzi-lo do espanhol?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf reflexive Verben. Prüfen Sie bei jedem Verb, ob es im Deutschen wirklich reflexiv ist, unabhängig vom Spanischen. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf reflexive Verben. Prüfen Sie bei jedem Verb, ob es im Deutschen wirklich reflexiv ist, unabhängig vom Spanischen. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on reflexive verbs. For every verb, check whether it is really reflexive in German, regardless of Spanish. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en los verbos reflexivos. Compruebe en cada verbo si realmente es reflexivo en alemán, independientemente del español. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les verbes pronominaux. Vérifiez pour chaque verbe s’il est réellement pronominal en allemand, indépendamment de l’espagnol. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sui verbi riflessivi. Controlli per ogni verbo se è davvero riflessivo in tedesco, indipendentemente dallo spagnolo. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nos verbos reflexivos. Verifique em cada verbo se ele é realmente reflexivo em alemão, independentemente do espanhol. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Ein deutsches Verb reflexiv machen, weil seine spanische Entsprechung reflexiv ist."

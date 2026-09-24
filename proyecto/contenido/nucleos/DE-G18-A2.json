@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Temporale Nebensätze (*als, wenn, während, nachdem, seitdem*)",
+ "titulo": {
+  "de": "Temporale Nebensätze (*als, wenn, während, nachdem, seitdem*)",
+  "en": "Temporal subordinate clauses (*als, wenn, während, nachdem, seitdem*)",
+  "es": "Oraciones subordinadas temporales (*als, wenn, während, nachdem, seitdem*)",
+  "fr": "Propositions subordonnées temporelles (*als, wenn, während, nachdem, seitdem*)",
+  "it": "Proposizioni subordinate temporali (*als, wenn, während, nachdem, seitdem*)",
+  "pt": "Orações subordinadas temporais (*als, wenn, während, nachdem, seitdem*)"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Auf A2 lernt man den Unterschied zwischen als (ein einmaliges Ereignis in der Vergangenheit) und wenn (wiederholt oder in der Gegenwart) zum ersten Mal. Diese Grundlage ist wichtig, um im Alltag korrekt über die Vergangenheit zu berichten.",
+ "descripcion": {
+  "de": "Auf A2 lernt man den Unterschied zwischen als (ein einmaliges Ereignis in der Vergangenheit) und wenn (wiederholt oder in der Gegenwart) zum ersten Mal. Diese Grundlage ist wichtig, um im Alltag korrekt über die Vergangenheit zu berichten.",
+  "en": "At A2, you are introduced to the difference between als (a one-time event in the past) and wenn (repeated events or the present). This foundation is important for talking correctly about past events in everyday German.",
+  "es": "En A2 se introduce por primera vez la diferencia entre «als» (un hecho único en el pasado) y «wenn» (hechos repetidos o el presente). Esta base es importante para hablar correctamente del pasado en situaciones cotidianas.",
+  "fr": "Au niveau A2, on découvre pour la première fois la différence entre « als » (un événement unique dans le passé) et « wenn » (événements répétés ou présent). Cette base est importante pour parler correctement du passé en allemand courant.",
+  "it": "A livello A2 si introduce per la prima volta la differenza tra «als» (un evento unico nel passato) e «wenn» (eventi ripetuti o presente). Questa base è importante per parlare correttamente del passato nel tedesco quotidiano.",
+  "pt": "No nível A2, introduz-se pela primeira vez a diferença entre «als» (um acontecimento único no passado) e «wenn» (acontecimentos repetidos ou presente). Essa base é importante para falar corretamente do passado no alemão do dia a dia."
+ },
  "cuadroReferencia": {
-  "titulo": "Als oder wenn?",
+  "titulo": {
+   "de": "Als oder wenn?",
+   "en": "Als or wenn?",
+   "es": "¿«Als» o «wenn»?",
+   "fr": "« Als » ou « wenn » ?",
+   "it": "«Als» o «wenn»?",
+   "pt": "«Als» ou «wenn»?"
+  },
   "columnas": [
-   "Konnektor",
-   "Verwendung"
+   {
+    "de": "Konnektor",
+    "en": "Connector",
+    "es": "Conector",
+    "fr": "Connecteur",
+    "it": "Connettore",
+    "pt": "Conector"
+   },
+   {
+    "de": "Verwendung",
+    "en": "Use",
+    "es": "Uso",
+    "fr": "Emploi",
+    "it": "Uso",
+    "pt": "Uso"
+   }
   ],
   "filas": [
    [
-    "als",
-    "einmalig, Vergangenheit"
+    {
+     "de": "als",
+     "en": "als",
+     "es": "als",
+     "fr": "als",
+     "it": "als",
+     "pt": "als"
+    },
+    {
+     "de": "einmalig, Vergangenheit",
+     "en": "one-time, past",
+     "es": "una vez, pasado",
+     "fr": "unique, passé",
+     "it": "una volta, passato",
+     "pt": "uma vez, passado"
+    }
    ],
    [
-    "wenn",
-    "wiederholt oder Gegenwart"
+    {
+     "de": "wenn",
+     "en": "wenn",
+     "es": "wenn",
+     "fr": "wenn",
+     "it": "wenn",
+     "pt": "wenn"
+    },
+    {
+     "de": "wiederholt oder Gegenwart",
+     "en": "repeated or present",
+     "es": "repetido o presente",
+     "fr": "répété ou présent",
+     "it": "ripetuto o presente",
+     "pt": "repetido ou presente"
+    }
    ],
    [
-    "Beispiel als",
-    "Als ich acht war, bin ich umgezogen."
+    {
+     "de": "Beispiel als",
+     "en": "Example with als",
+     "es": "Ejemplo con «als»",
+     "fr": "Exemple avec « als »",
+     "it": "Esempio con «als»",
+     "pt": "Exemplo com «als»"
+    },
+    {
+     "de": "Als ich acht war, bin ich umgezogen.",
+     "en": "When I was eight, I moved.",
+     "es": "Cuando tenía ocho años, me mudé.",
+     "fr": "Quand j'avais huit ans, j'ai déménagé.",
+     "it": "Quando avevo otto anni, mi sono trasferito/a.",
+     "pt": "Quando eu tinha oito anos, me mudei."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Als ich acht Jahre alt war, bin ich nach Bern gezogen.",
+   "texto": {
+    "de": "Als ich acht Jahre alt war, bin ich nach Bern gezogen.",
+    "en": "When I was eight years old, I moved to Bern.",
+    "es": "Cuando tenía ocho años, me mudé a Berna.",
+    "fr": "Quand j'avais huit ans, j'ai déménagé à Berne.",
+    "it": "Quando avevo otto anni, mi sono trasferito/a a Berna.",
+    "pt": "Quando eu tinha oito anos, me mudei para Berna."
+   },
    "audio": true
   },
   {
-   "texto": "Wenn ich Zeit habe, lese ich gern.",
+   "texto": {
+    "de": "Wenn ich Zeit habe, lese ich gern.",
+    "en": "When I have time, I like to read.",
+    "es": "Cuando tengo tiempo, me gusta leer.",
+    "fr": "Quand j'ai le temps, j'aime lire.",
+    "it": "Quando ho tempo, mi piace leggere.",
+    "pt": "Quando tenho tempo, gosto de ler."
+   },
    "audio": true
   },
   {
-   "texto": "Als ich klein war, habe ich viel gespielt."
+   "texto": {
+    "de": "Als ich klein war, habe ich viel gespielt.",
+    "en": "When I was little, I played a lot.",
+    "es": "Cuando era chico/a, jugaba mucho.",
+    "fr": "Quand j'étais petit(e), je jouais beaucoup.",
+    "it": "Quando ero piccolo/a, giocavo molto.",
+    "pt": "Quando eu era pequeno/a, brincava muito."
+   }
   }
  ],
  "notas": [
-  "Als benutzt man nur für ein einmaliges Ereignis in der Vergangenheit.",
-  "Wenn benutzt man für Wiederholung oder für die Gegenwart und Zukunft.",
-  "Das Verb steht in beiden Fällen am Ende des Nebensatzes."
+  {
+   "de": "Als benutzt man nur für ein einmaliges Ereignis in der Vergangenheit.",
+   "en": "Als is used only for a one-time event in the past.",
+   "es": "«Als» se usa solo para un hecho único en el pasado.",
+   "fr": "« Als » s'utilise uniquement pour un événement unique dans le passé.",
+   "it": "«Als» si usa solo per un evento unico nel passato.",
+   "pt": "«Als» é usado apenas para um acontecimento único no passado."
+  },
+  {
+   "de": "Wenn benutzt man für Wiederholung oder für die Gegenwart und Zukunft.",
+   "en": "Wenn is used for repetition or for the present and future.",
+   "es": "«Wenn» se usa para repetición o para el presente y el futuro.",
+   "fr": "« Wenn » s'utilise pour la répétition ou pour le présent et le futur.",
+   "it": "«Wenn» si usa per la ripetizione oppure per il presente e il futuro.",
+   "pt": "«Wenn» é usado para repetição ou para o presente e o futuro."
+  },
+  {
+   "de": "Das Verb steht in beiden Fällen am Ende des Nebensatzes.",
+   "en": "In both cases, the verb is at the end of the subordinate clause.",
+   "es": "En ambos casos, el verbo va al final de la oración subordinada.",
+   "fr": "Dans les deux cas, le verbe se place à la fin de la subordonnée.",
+   "it": "In entrambi i casi, il verbo va alla fine della subordinata.",
+   "pt": "Nos dois casos, o verbo vai para o final da oração subordinada."
+  }
  ],
  "contraste": {
   "es": "Das Spanische unterscheidet als und wenn nicht — cuando deckt beides ab. Das ist der klassische Fehler von Spanischsprachigen im Deutschen.",
@@ -54,13 +173,34 @@
   "en": "When heisst im Deutschen als, wenn oder wann. Ein Tipp: Bei einer Frage heisst es wann, bei einem einmaligen Ereignis in der Vergangenheit als."
  },
  "errores": [
-  "Wenn statt als für ein einmaliges vergangenes Ereignis benutzen.",
-  "Als für Wiederholung verwenden."
+  {
+   "de": "Wenn statt als für ein einmaliges vergangenes Ereignis benutzen.",
+   "en": "Using wenn instead of als for a one-time event in the past.",
+   "es": "Usar «wenn» en lugar de «als» para un hecho único en el pasado.",
+   "fr": "Utiliser « wenn » au lieu de « als » pour un événement unique dans le passé.",
+   "it": "Usare «wenn» invece di «als» per un evento unico nel passato.",
+   "pt": "Usar «wenn» em vez de «als» para um acontecimento único no passado."
+  },
+  {
+   "de": "Als für Wiederholung verwenden.",
+   "en": "Using als for repeated events.",
+   "es": "Usar «als» para hechos repetidos.",
+   "fr": "Utiliser « als » pour des événements répétés.",
+   "it": "Usare «als» per eventi ripetuti.",
+   "pt": "Usar «als» para acontecimentos repetidos."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Als ich…, …",
-   "funcion": "einmaliges vergangenes Ereignis",
+   "funcion": {
+    "de": "einmaliges vergangenes Ereignis",
+    "en": "one-time event in the past",
+    "es": "hecho único en el pasado",
+    "fr": "événement unique dans le passé",
+    "it": "evento unico nel passato",
+    "pt": "acontecimento único no passado"
+   },
    "traducciones": {
     "es": "Cuando yo…, (una vez, pasado)",
     "en": "When I…, (once, past)",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "Wenn ich…, …",
-   "funcion": "wiederholt/Gegenwart",
+   "funcion": {
+    "de": "wiederholt/Gegenwart",
+    "en": "repeated/present",
+    "es": "repetido/presente",
+    "fr": "répété/présent",
+    "it": "ripetuto/presente",
+    "pt": "repetido/presente"
+   },
    "traducciones": {
     "es": "Cuando yo…, (siempre)",
     "en": "When(ever) I…",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "Als ich klein war,…",
-   "funcion": "feste Kombination, Kindheit",
+   "funcion": {
+    "de": "feste Kombination, Kindheit",
+    "en": "fixed expression, childhood",
+    "es": "expresión fija, infancia",
+    "fr": "expression figée, enfance",
+    "it": "espressione fissa, infanzia",
+    "pt": "expressão fixa, infância"
+   },
    "traducciones": {
     "es": "Cuando era chico/a,…",
     "en": "When I was little,…",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "Wenn ich Zeit habe,…",
-   "funcion": "feste Kombination",
+   "funcion": {
+    "de": "feste Kombination",
+    "en": "fixed combination",
+    "es": "combinación fija",
+    "fr": "combinaison fixe",
+    "it": "combinazione fissa",
+    "pt": "combinação fixa"
+   },
    "traducciones": {
     "es": "Cuando tengo tiempo,…",
     "en": "When I have time,…",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "Als wir ankamen,…",
-   "funcion": "einmaliges Ereignis",
+   "funcion": {
+    "de": "einmaliges Ereignis",
+    "en": "one-time event",
+    "es": "hecho único",
+    "fr": "événement unique",
+    "it": "evento unico",
+    "pt": "acontecimento único"
+   },
    "traducciones": {
     "es": "Cuando llegamos,…",
     "en": "When we arrived,…",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "Immer wenn ich…, …",
-   "funcion": "Wiederholung betont",
+   "funcion": {
+    "de": "Wiederholung betont",
+    "en": "emphasized repetition",
+    "es": "repetición enfatizada",
+    "fr": "répétition mise en relief",
+    "it": "ripetizione enfatizzata",
+    "pt": "repetição enfatizada"
+   },
    "traducciones": {
     "es": "Siempre que yo…, …",
     "en": "Whenever I…, …",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich als für ein einmaliges vergangenes Ereignis benutzt?",
-  "Habe ich wenn für Wiederholung oder Gegenwart benutzt?",
-  "Steht das Verb am Ende des Nebensatzes?",
-  "Klingt der Satz natürlich?",
-  "Klingt der Satz natürlich?"
+  {
+   "de": "Habe ich als für ein einmaliges vergangenes Ereignis benutzt?",
+   "en": "Have I used als for a one-time event in the past?",
+   "es": "¿Usé «als» para un hecho único en el pasado?",
+   "fr": "Ai-je utilisé « als » pour un événement unique dans le passé ?",
+   "it": "Ho usato «als» per un evento unico nel passato?",
+   "pt": "Usei «als» para um acontecimento único no passado?"
+  },
+  {
+   "de": "Habe ich wenn für Wiederholung oder Gegenwart benutzt?",
+   "en": "Have I used wenn for repetition or the present?",
+   "es": "¿Usé «wenn» para repetición o presente?",
+   "fr": "Ai-je utilisé « wenn » pour la répétition ou le présent ?",
+   "it": "Ho usato «wenn» per la ripetizione o il presente?",
+   "pt": "Usei «wenn» para repetição ou presente?"
+  },
+  {
+   "de": "Steht das Verb am Ende des Nebensatzes?",
+   "en": "Is the verb at the end of the subordinate clause?",
+   "es": "¿El verbo está al final de la oración subordinada?",
+   "fr": "Le verbe est-il à la fin de la subordonnée ?",
+   "it": "Il verbo è alla fine della subordinata?",
+   "pt": "O verbo está no final da oração subordinada?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Unterschied zwischen als und wenn. Prüfen Sie jeden Fall genau. Schreiben Sie den Text nicht neu. Achten Sie besonders auf die Wortstellung.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf den Unterschied zwischen als und wenn. Prüfen Sie jeden Fall genau. Schreiben Sie den Text nicht neu. Achten Sie besonders auf die Wortstellung.",
+  "en": "Focus your attention exclusively on the difference between als and wenn. Check each case carefully. Do not rewrite the text. Pay particular attention to word order.",
+  "es": "Concéntrese exclusivamente en la diferencia entre «als» y «wenn». Revise cada caso con atención. No reescriba el texto. Preste especial atención al orden de las palabras.",
+  "fr": "Concentrez-vous exclusivement sur la différence entre « als » et « wenn ». Vérifiez chaque cas attentivement. Ne réécrivez pas le texte. Faites particulièrement attention à l'ordre des mots.",
+  "it": "Si concentri esclusivamente sulla differenza tra «als» e «wenn». Controlli attentamente ogni caso. Non riscriva il testo. Presti particolare attenzione all'ordine delle parole.",
+  "pt": "Concentre-se exclusivamente na diferença entre «als» e «wenn». Verifique cada caso com atenção. Não reescreva o texto. Preste atenção especial à ordem das palavras."
+ },
  "erroresContrastivos": {
   "es": [
    "*cuándo* und *cuando* gleich übersetzen: *Wenn beginnt der Kurs?* statt *Wann beginnt der Kurs?*"

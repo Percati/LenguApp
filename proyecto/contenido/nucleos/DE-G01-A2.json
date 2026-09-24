@@ -3,51 +3,191 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Satzbau: Haupt- und Nebensatz, Verbstellung",
+ "titulo": {
+  "de": "Satzbau: Haupt- und Nebensatz, Verbstellung",
+  "en": "Sentence structure: main and subordinate clauses, verb position",
+  "es": "Estructura de la oración: principal y subordinada, posición del verbo",
+  "fr": "Structure de la phrase : principale et subordonnée, position du verbe",
+  "it": "Struttura della frase: principale e subordinata, posizione del verbo",
+  "pt": "Estrutura da frase: oração principal e subordinada, posição do verbo"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Auf A2 lernt man die Grundregel: im Hauptsatz steht das Verb an zweiter Stelle, im Nebensatz mit weil steht es am Ende. Das ist der wichtigste erste Schritt für den deutschen Satzbau und die Grundlage für alle späteren Konnektoren.",
+ "descripcion": {
+  "de": "Auf A2 lernt man die Grundregel: im Hauptsatz steht das Verb an zweiter Stelle, im Nebensatz mit weil steht es am Ende. Das ist der wichtigste erste Schritt für den deutschen Satzbau und die Grundlage für alle späteren Konnektoren.",
+  "en": "At A2, you learn the basic rule: in a main clause the verb is in second position; in a subordinate clause with weil, it goes at the end. This is the most important first step in German word order and the basis for all later connectors.",
+  "es": "En A2 se aprende la regla básica: en la oración principal el verbo ocupa la segunda posición; en una subordinada con «weil», va al final. Este es el primer paso fundamental para el orden de palabras en alemán y la base de todos los conectores posteriores.",
+  "fr": "Au niveau A2, on apprend la règle de base : dans une proposition principale, le verbe est en deuxième position ; dans une subordonnée avec « weil », il va à la fin. C'est la première étape essentielle pour l'ordre des mots en allemand et la base de tous les connecteurs ultérieurs.",
+  "it": "A livello A2 si impara la regola di base: nella frase principale il verbo è in seconda posizione; in una subordinata con «weil» va alla fine. È il primo passo fondamentale per l'ordine delle parole in tedesco e la base di tutti i connettori successivi.",
+  "pt": "No nível A2, aprende-se a regra básica: na oração principal, o verbo fica na segunda posição; numa subordinada com «weil», vai para o final. Esse é o primeiro passo mais importante para a ordem das palavras em alemão e a base para todos os conectores posteriores."
+ },
  "cuadroReferencia": {
-  "titulo": "Verb an Position 2 oder am Ende",
+  "titulo": {
+   "de": "Verb an Position 2 oder am Ende",
+   "en": "Verb in position 2 or at the end",
+   "es": "Verbo en posición 2 o al final",
+   "fr": "Verbe en position 2 ou à la fin",
+   "it": "Verbo in posizione 2 o alla fine",
+   "pt": "Verbo na posição 2 ou no final"
+  },
   "columnas": [
-   "Satztyp",
-   "Verbposition",
-   "Beispiel"
+   {
+    "de": "Satztyp",
+    "en": "Clause type",
+    "es": "Tipo de oración",
+    "fr": "Type de proposition",
+    "it": "Tipo di frase",
+    "pt": "Tipo de oração"
+   },
+   {
+    "de": "Verbposition",
+    "en": "Verb position",
+    "es": "Posición del verbo",
+    "fr": "Position du verbe",
+    "it": "Posizione del verbo",
+    "pt": "Posição do verbo"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Hauptsatz",
-    "Position 2",
-    "Ich wohne in Bern."
+    {
+     "de": "Hauptsatz",
+     "en": "Main clause",
+     "es": "Oración principal",
+     "fr": "Proposition principale",
+     "it": "Frase principale",
+     "pt": "Oração principal"
+    },
+    {
+     "de": "Position 2",
+     "en": "Position 2",
+     "es": "Posición 2",
+     "fr": "Position 2",
+     "it": "Posizione 2",
+     "pt": "Posição 2"
+    },
+    {
+     "de": "Ich wohne in Bern.",
+     "en": "I live in Bern.",
+     "es": "Vivo en Berna.",
+     "fr": "J'habite à Berne.",
+     "it": "Vivo a Berna.",
+     "pt": "Moro em Berna."
+    }
    ],
    [
-    "Nebensatz mit weil",
-    "am Ende",
-    "…, weil ich hier arbeite."
+    {
+     "de": "Nebensatz mit weil",
+     "en": "Subordinate clause with weil",
+     "es": "Oración subordinada con «weil»",
+     "fr": "Subordonnée avec « weil »",
+     "it": "Frase subordinata con «weil»",
+     "pt": "Oração subordinada com «weil»"
+    },
+    {
+     "de": "am Ende",
+     "en": "at the end",
+     "es": "al final",
+     "fr": "à la fin",
+     "it": "alla fine",
+     "pt": "no final"
+    },
+    {
+     "de": "…, weil ich hier arbeite.",
+     "en": "…, because I work here.",
+     "es": "…, porque trabajo aquí.",
+     "fr": "…, parce que je travaille ici.",
+     "it": "…, perché lavoro qui.",
+     "pt": "…, porque trabalho aqui."
+    }
    ],
    [
-    "Frage",
-    "Wohnst du in Bern?"
+    {
+     "de": "Frage",
+     "en": "Question",
+     "es": "Pregunta",
+     "fr": "Question",
+     "it": "Domanda",
+     "pt": "Pergunta"
+    },
+    {
+     "de": "Wohnst du in Bern?",
+     "en": "Do you live in Bern?",
+     "es": "¿Vivís en Berna?",
+     "fr": "Tu habites à Berne ?",
+     "it": "Vivi a Berna?",
+     "pt": "Você mora em Berna?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich wohne seit zwei Jahren in Bern.",
+   "texto": {
+    "de": "Ich wohne seit zwei Jahren in Bern.",
+    "en": "I've lived in Bern for two years.",
+    "es": "Vivo en Berna desde hace dos años.",
+    "fr": "J'habite à Berne depuis deux ans.",
+    "it": "Vivo a Berna da due anni.",
+    "pt": "Moro em Berna há dois anos."
+   },
    "audio": true
   },
   {
-   "texto": "Ich lerne Deutsch, weil ich hier arbeite.",
+   "texto": {
+    "de": "Ich lerne Deutsch, weil ich hier arbeite.",
+    "en": "I'm learning German because I work here.",
+    "es": "Aprendo alemán porque trabajo aquí.",
+    "fr": "J'apprends l'allemand parce que je travaille ici.",
+    "it": "Studio tedesco perché lavoro qui.",
+    "pt": "Estou aprendendo alemão porque trabalho aqui."
+   },
    "audio": true
   },
   {
-   "texto": "Heute gehe ich einkaufen."
+   "texto": {
+    "de": "Heute gehe ich einkaufen.",
+    "en": "Today I'm going shopping.",
+    "es": "Hoy voy de compras.",
+    "fr": "Aujourd'hui, je vais faire des courses.",
+    "it": "Oggi vado a fare la spesa.",
+    "pt": "Hoje vou fazer compras."
+   }
   }
  ],
  "notas": [
-  "Im Hauptsatz steht das konjugierte Verb immer an zweiter Stelle, auch wenn ein anderes Wort zuerst kommt (heute gehe ich).",
-  "Nach weil steht das Verb am Ende des Satzes.",
-  "Vor weil steht immer ein Komma."
+  {
+   "de": "Im Hauptsatz steht das konjugierte Verb immer an zweiter Stelle, auch wenn ein anderes Wort zuerst kommt (heute gehe ich).",
+   "en": "In a main clause, the conjugated verb is always in second position, even when another element comes first (heute gehe ich).",
+   "es": "En una oración principal, el verbo conjugado siempre ocupa la segunda posición, incluso cuando otro elemento aparece primero («heute gehe ich»).",
+   "fr": "Dans une proposition principale, le verbe conjugué est toujours en deuxième position, même si un autre élément vient d'abord (« heute gehe ich »).",
+   "it": "Nella frase principale, il verbo coniugato è sempre in seconda posizione, anche quando un altro elemento viene prima («heute gehe ich»).",
+   "pt": "Na oração principal, o verbo conjugado fica sempre na segunda posição, mesmo quando outro elemento vem primeiro («heute gehe ich»)."
+  },
+  {
+   "de": "Nach weil steht das Verb am Ende des Satzes.",
+   "en": "After weil, the verb goes at the end of the sentence.",
+   "es": "Después de «weil», el verbo va al final de la oración.",
+   "fr": "Après « weil », le verbe va à la fin de la phrase.",
+   "it": "Dopo «weil», il verbo va alla fine della frase.",
+   "pt": "Depois de «weil», o verbo vai para o final da frase."
+  },
+  {
+   "de": "Vor weil steht immer ein Komma.",
+   "en": "There is always a comma before weil.",
+   "es": "Siempre hay una coma antes de «weil».",
+   "fr": "Il y a toujours une virgule avant « weil ».",
+   "it": "Prima di «weil» c'è sempre una virgola.",
+   "pt": "Há sempre uma vírgula antes de «weil»."
+  }
  ],
  "contraste": {
   "es": "Das Spanische hat keine feste Verbposition und keine Verbletztstellung nach porque. Diese deutsche Regel ist deshalb für Spanischsprachige völlig neu.",
@@ -57,14 +197,42 @@
   "en": "Im Englischen steht das Verb nach because in der Mitte (because I have time), Englischsprachige lassen es deshalb oft dort. Neu ist auch das Verb vor dem Subjekt: Heute arbeite ich, nicht heute ich arbeite."
  },
  "errores": [
-  "Das Verb nicht an zweiter Stelle im Hauptsatz platzieren.",
-  "Nach weil das Verb nicht ans Ende stellen.",
-  "Das Komma vor weil vergessen."
+  {
+   "de": "Das Verb nicht an zweiter Stelle im Hauptsatz platzieren.",
+   "en": "Not placing the verb in second position in the main clause.",
+   "es": "No colocar el verbo en segunda posición en la oración principal.",
+   "fr": "Ne pas placer le verbe en deuxième position dans la proposition principale.",
+   "it": "Non mettere il verbo in seconda posizione nella frase principale.",
+   "pt": "Não colocar o verbo na segunda posição na oração principal."
+  },
+  {
+   "de": "Nach weil das Verb nicht ans Ende stellen.",
+   "en": "Not putting the verb at the end after weil.",
+   "es": "No colocar el verbo al final después de «weil».",
+   "fr": "Ne pas mettre le verbe à la fin après « weil ».",
+   "it": "Non mettere il verbo alla fine dopo «weil».",
+   "pt": "Não colocar o verbo no final depois de «weil»."
+  },
+  {
+   "de": "Das Komma vor weil vergessen.",
+   "en": "Forgetting the comma before weil.",
+   "es": "Olvidar la coma antes de «weil».",
+   "fr": "Oublier la virgule avant « weil ».",
+   "it": "Dimenticare la virgola prima di «weil».",
+   "pt": "Esquecer a vírgula antes de «weil»."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich wohne in…",
-   "funcion": "Hauptsatz, Verb Position 2",
+   "funcion": {
+    "de": "Hauptsatz, Verb Position 2",
+    "en": "main clause, verb in position 2",
+    "es": "oración principal, verbo en posición 2",
+    "fr": "proposition principale, verbe en position 2",
+    "it": "frase principale, verbo in posizione 2",
+    "pt": "oração principal, verbo na posição 2"
+   },
    "traducciones": {
     "es": "Vivo en…",
     "en": "I live in…",
@@ -75,7 +243,14 @@
   },
   {
    "expresion": "Heute…ich…",
-   "funcion": "Hauptsatz mit Zeitangabe zuerst",
+   "funcion": {
+    "de": "Hauptsatz mit Zeitangabe zuerst",
+    "en": "main clause with time expression first",
+    "es": "oración principal con indicación temporal al inicio",
+    "fr": "proposition principale avec indication temporelle en premier",
+    "it": "frase principale con indicazione di tempo all'inizio",
+    "pt": "oração principal com indicação de tempo no início"
+   },
    "traducciones": {
     "es": "Hoy yo…",
     "en": "Today I…",
@@ -86,7 +261,14 @@
   },
   {
    "expresion": "…, weil…",
-   "funcion": "Grund, Nebensatz",
+   "funcion": {
+    "de": "Grund, Nebensatz",
+    "en": "reason, subordinate clause",
+    "es": "razón, oración subordinada",
+    "fr": "cause, subordonnée",
+    "it": "motivo, frase subordinata",
+    "pt": "motivo, oração subordinada"
+   },
    "traducciones": {
     "es": "…, porque…",
     "en": "…, because…",
@@ -97,7 +279,14 @@
   },
   {
    "expresion": "Ich lerne Deutsch, weil…",
-   "funcion": "feste Kombination",
+   "funcion": {
+    "de": "feste Kombination",
+    "en": "fixed combination",
+    "es": "combinación fija",
+    "fr": "combinaison fixe",
+    "it": "combinazione fissa",
+    "pt": "combinação fixa"
+   },
    "traducciones": {
     "es": "Aprendo alemán porque…",
     "en": "I'm learning German because…",
@@ -108,7 +297,14 @@
   },
   {
    "expresion": "Ich arbeite in…",
-   "funcion": "Hauptsatz",
+   "funcion": {
+    "de": "Hauptsatz",
+    "en": "Main clause",
+    "es": "Oración principal",
+    "fr": "Proposition principale",
+    "it": "Frase principale",
+    "pt": "Oração principal"
+   },
    "traducciones": {
     "es": "Trabajo en…",
     "en": "I work in…",
@@ -119,7 +315,14 @@
   },
   {
    "expresion": "Jeden Tag…ich…",
-   "funcion": "Hauptsatz mit Zeitangabe zuerst",
+   "funcion": {
+    "de": "Hauptsatz mit Zeitangabe zuerst",
+    "en": "main clause with time expression first",
+    "es": "oración principal con indicación temporal al inicio",
+    "fr": "proposition principale avec indication temporelle en premier",
+    "it": "frase principale con indicazione di tempo all'inizio",
+    "pt": "oração principal com indicação de tempo no início"
+   },
    "traducciones": {
     "es": "Todos los días yo…",
     "en": "Every day I…",
@@ -130,13 +333,55 @@
   }
  ],
  "autochequeo": [
-  "Steht das Verb im Hauptsatz an zweiter Stelle?",
-  "Steht das Verb nach weil am Ende?",
-  "Steht vor weil ein Komma?",
-  "Klingt der Satz natürlich?",
-  "Habe ich mindestens drei Sätze mit unterschiedlicher Struktur gebildet?"
+  {
+   "de": "Steht das Verb im Hauptsatz an zweiter Stelle?",
+   "en": "Is the verb in second position in the main clause?",
+   "es": "¿El verbo está en segunda posición en la oración principal?",
+   "fr": "Le verbe est-il en deuxième position dans la proposition principale ?",
+   "it": "Il verbo è in seconda posizione nella frase principale?",
+   "pt": "O verbo está na segunda posição na oração principal?"
+  },
+  {
+   "de": "Steht das Verb nach weil am Ende?",
+   "en": "Is the verb at the end after weil?",
+   "es": "¿El verbo está al final después de «weil»?",
+   "fr": "Le verbe est-il à la fin après « weil » ?",
+   "it": "Il verbo è alla fine dopo «weil»?",
+   "pt": "O verbo está no final depois de «weil»?"
+  },
+  {
+   "de": "Steht vor weil ein Komma?",
+   "en": "Is there a comma before weil?",
+   "es": "¿Hay una coma antes de «weil»?",
+   "fr": "Y a-t-il une virgule avant « weil » ?",
+   "it": "C'è una virgola prima di «weil»?",
+   "pt": "Há uma vírgula antes de «weil»?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Habe ich mindestens drei Sätze mit unterschiedlicher Struktur gebildet?",
+   "en": "Have I formed at least three sentences with different structures?",
+   "es": "¿Formé al menos tres oraciones con estructuras diferentes?",
+   "fr": "Ai-je formé au moins trois phrases avec des structures différentes ?",
+   "it": "Ho formato almeno tre frasi con strutture diverse?",
+   "pt": "Formei pelo menos três frases com estruturas diferentes?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verbposition im Hauptsatz und nach weil. Prüfen Sie jeden Satz einzeln. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Verbposition im Hauptsatz und nach weil. Prüfen Sie jeden Satz einzeln. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on the position of the verb in the main clause and after weil. Check each sentence individually. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en la posición del verbo en la oración principal y después de «weil». Revise cada oración por separado. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur la position du verbe dans la proposition principale et après « weil ». Vérifiez chaque phrase séparément. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulla posizione del verbo nella frase principale e dopo «weil». Controlli ogni frase singolarmente. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente na posição do verbo na oração principal e depois de «weil». Verifique cada frase individualmente. Não reescreva você mesmo o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Das Subjektpronomen weglassen: *Wohne in Zürich* statt *Ich wohne in Zürich*."

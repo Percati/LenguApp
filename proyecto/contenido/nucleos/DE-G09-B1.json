@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Konjunktiv II",
+ "titulo": {
+  "de": "Konjunktiv II",
+  "en": "Konjunktiv II",
+  "es": "Konjunktiv II",
+  "fr": "Konjunktiv II",
+  "it": "Konjunktiv II",
+  "pt": "Konjunktiv II"
+ },
  "categoria": "grammar",
  "ancla": "PD B1",
- "descripcion": "Auf B1 wird der Konjunktiv II vor allem für Höflichkeit (ich hätte gern, könntest du) und für einfache irreale Bedingungen (wenn ich Zeit hätte, würde ich kommen) verwendet. Die feineren Funktionen kommen erst später.",
+ "descripcion": {
+  "de": "Auf B1 wird der Konjunktiv II vor allem für Höflichkeit (ich hätte gern, könntest du) und für einfache irreale Bedingungen (wenn ich Zeit hätte, würde ich kommen) verwendet. Die feineren Funktionen kommen erst später.",
+  "en": "At B1, the Konjunktiv II is used mainly for politeness (ich hätte gern, könntest du) and for simple unreal conditions (wenn ich Zeit hätte, würde ich kommen). Its finer functions only come at the later levels.",
+  "es": "En B1, el Konjunktiv II se usa sobre todo para expresar cortesía («ich hätte gern», «könntest du») y condiciones irreales sencillas («wenn ich Zeit hätte, würde ich kommen»). Los usos más matizados aparecen más adelante.",
+  "fr": "Au niveau B1, le Konjunktiv II s’emploie surtout pour la politesse (« ich hätte gern », « könntest du ») et pour des conditions irréelles simples (« wenn ich Zeit hätte, würde ich kommen »). Les emplois plus subtils viennent plus tard.",
+  "it": "A livello B1 il Konjunktiv II si usa soprattutto per la cortesia («ich hätte gern», «könntest du») e per semplici condizioni irreali («wenn ich Zeit hätte, würde ich kommen»). Le funzioni più sottili vengono affrontate più avanti.",
+  "pt": "No nível B1, o Konjunktiv II é usado principalmente para cortesia («ich hätte gern», «könntest du») e para condições irreais simples («wenn ich Zeit hätte, würde ich kommen»). Os usos mais sutis vêm depois."
+ },
  "cuadroReferencia": {
-  "titulo": "Höflichkeit und einfache Bedingung",
+  "titulo": {
+   "de": "Höflichkeit und einfache Bedingung",
+   "en": "Politeness and a simple condition",
+   "es": "Cortesía y condición sencilla",
+   "fr": "Politesse et condition simple",
+   "it": "Cortesia e condizione semplice",
+   "pt": "Cortesia e condição simples"
+  },
   "columnas": [
-   "Funktion",
-   "Beispiel"
+   {
+    "de": "Funktion",
+    "en": "Function",
+    "es": "Función",
+    "fr": "Fonction",
+    "it": "Funzione",
+    "pt": "Função"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Höflichkeit",
-    "Könntest du mir helfen?"
+    {
+     "de": "Höflichkeit",
+     "en": "Politeness",
+     "es": "Cortesía",
+     "fr": "Politesse",
+     "it": "Cortesia",
+     "pt": "Cortesia"
+    },
+    {
+     "de": "Könntest du mir helfen?",
+     "en": "Could you help me?",
+     "es": "¿Podrías ayudarme?",
+     "fr": "Pourrais-tu m’aider ?",
+     "it": "Potresti aiutarmi?",
+     "pt": "Você poderia me ajudar?"
+    }
    ],
    [
-    "Wunsch",
-    "Ich hätte gern einen Kaffee."
+    {
+     "de": "Wunsch",
+     "en": "Wish",
+     "es": "Deseo",
+     "fr": "Souhait",
+     "it": "Desiderio",
+     "pt": "Desejo"
+    },
+    {
+     "de": "Ich hätte gern einen Kaffee.",
+     "en": "I’d like a coffee.",
+     "es": "Quisiera un café.",
+     "fr": "Je voudrais un café.",
+     "it": "Vorrei un caffè.",
+     "pt": "Eu gostaria de um café."
+    }
    ],
    [
-    "Bedingung",
-    "Wenn ich Zeit hätte, würde ich kommen."
+    {
+     "de": "Bedingung",
+     "en": "condition",
+     "es": "condición",
+     "fr": "condition",
+     "it": "condizione",
+     "pt": "condição"
+    },
+    {
+     "de": "Wenn ich Zeit hätte, würde ich kommen.",
+     "en": "If I had time, I would come.",
+     "es": "Si tuviera tiempo, iría.",
+     "fr": "Si j’avais le temps, je viendrais.",
+     "it": "Se avessi tempo, verrei.",
+     "pt": "Se eu tivesse tempo, eu iria."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Könntest du mir bitte kurz helfen?",
+   "texto": {
+    "de": "Könntest du mir bitte kurz helfen?",
+    "en": "Could you please help me for a moment?",
+    "es": "¿Podrías ayudarme un momento, por favor?",
+    "fr": "Pourrais-tu m’aider un instant, s’il te plaît ?",
+    "it": "Potresti aiutarmi un attimo, per favore?",
+    "pt": "Você poderia me ajudar um instante, por favor?"
+   },
    "audio": true
   },
   {
-   "texto": "Ich hätte gern einen Kaffee, bitte.",
+   "texto": {
+    "de": "Ich hätte gern einen Kaffee, bitte.",
+    "en": "I’d like a coffee, please.",
+    "es": "Quisiera un café, por favor.",
+    "fr": "Je voudrais un café, s’il vous plaît.",
+    "it": "Vorrei un caffè, per favore.",
+    "pt": "Eu gostaria de um café, por favor."
+   },
    "audio": true
   },
   {
-   "texto": "Wenn ich mehr Zeit hätte, würde ich öfter Sport machen."
+   "texto": {
+    "de": "Wenn ich mehr Zeit hätte, würde ich öfter Sport machen.",
+    "en": "If I had more time, I would exercise more often.",
+    "es": "Si tuviera más tiempo, haría ejercicio con más frecuencia.",
+    "fr": "Si j’avais plus de temps, je ferais du sport plus souvent.",
+    "it": "Se avessi più tempo, farei sport più spesso.",
+    "pt": "Se eu tivesse mais tempo, faria exercícios com mais frequência."
+   }
   }
  ],
  "notas": [
-  "Hätte und könnte sind die zwei häufigsten Konjunktiv-II-Formen auf B1.",
-  "Würde + Infinitiv ist die einfachste Form für den Hauptsatz einer Bedingung.",
-  "Im wenn-Satz benutzt man oft die Originalform (hätte), nicht würde haben."
+  {
+   "de": "Hätte und könnte sind die zwei häufigsten Konjunktiv-II-Formen auf B1.",
+   "en": "Hätte and könnte are the two most common Konjunktiv II forms at B1.",
+   "es": "«Hätte» y «könnte» son las dos formas de Konjunktiv II más frecuentes en B1.",
+   "fr": "« Hätte » et « könnte » sont les deux formes de Konjunktiv II les plus fréquentes au niveau B1.",
+   "it": "«Hätte» e «könnte» sono le due forme di Konjunktiv II più frequenti al B1.",
+   "pt": "«Hätte» e «könnte» são as duas formas de Konjunktiv II mais comuns no B1."
+  },
+  {
+   "de": "Würde + Infinitiv ist die einfachste Form für den Hauptsatz einer Bedingung.",
+   "en": "Würde + infinitive is the simplest form for the main clause of a conditional sentence.",
+   "es": "«Würde» + infinitivo es la forma más sencilla para la oración principal de una condición.",
+   "fr": "« Würde » + infinitif est la forme la plus simple pour la proposition principale d’une condition.",
+   "it": "«Würde» + infinito è la forma più semplice per la principale di un periodo ipotetico.",
+   "pt": "«Würde» + infinitivo é a forma mais simples para a oração principal de uma condição."
+  },
+  {
+   "de": "Im wenn-Satz benutzt man oft die Originalform (hätte), nicht würde haben.",
+   "en": "In a wenn-clause, the original form (hätte) is often used, not würde haben.",
+   "es": "En una oración con «wenn» se suele usar la forma propia («hätte»), no «würde haben».",
+   "fr": "Dans une proposition avec « wenn », on utilise souvent la forme propre (« hätte »), et non « würde haben ».",
+   "it": "Nella frase con «wenn» si usa spesso la forma propria («hätte»), non «würde haben».",
+   "pt": "Na oração com «wenn», costuma-se usar a forma própria («hätte»), e não «würde haben»."
+  }
  ],
  "contraste": {
   "es": "Das Spanische bildet die Bedingung mit imperfecto de subjuntivo und condicional (si tuviera tiempo, vendría), was strukturell dem Deutschen ähnelt. Der Unterschied ist, dass das Deutsche für hätte und wäre eigene, kurze Formen hat, während das Spanische durchgehend die subjuntivo-Form braucht.",
@@ -54,14 +173,42 @@
   "en": "Englischsprachige benutzen gern würde + Infinitiv für alles und vermeiden hätte und wäre, weil es im Englischen keine eigenen Formen gibt. Im if-Satz steht das past (if I had time), was zu wenn ich Zeit hatte verleitet; richtig ist hätte."
  },
  "errores": [
-  "Würde im wenn-Satz verwenden, statt hätte oder wäre zu benutzen.",
-  "Könnte und würde verwechseln.",
-  "Die Höflichkeitsform vergessen und stattdessen den Imperativ benutzen."
+  {
+   "de": "Würde im wenn-Satz verwenden, statt hätte oder wäre zu benutzen.",
+   "en": "Using würde in the wenn-clause instead of hätte or wäre.",
+   "es": "Usar «würde» en la oración con «wenn» en lugar de «hätte» o «wäre».",
+   "fr": "Employer « würde » dans la proposition avec « wenn » au lieu de « hätte » ou « wäre ».",
+   "it": "Usare «würde» nella frase con «wenn» invece di «hätte» o «wäre».",
+   "pt": "Usar «würde» na oração com «wenn» em vez de «hätte» ou «wäre»."
+  },
+  {
+   "de": "Könnte und würde verwechseln.",
+   "en": "Confusing könnte and würde.",
+   "es": "Confundir «könnte» y «würde».",
+   "fr": "Confondre « könnte » et « würde ».",
+   "it": "Confondere «könnte» e «würde».",
+   "pt": "Confundir «könnte» e «würde»."
+  },
+  {
+   "de": "Die Höflichkeitsform vergessen und stattdessen den Imperativ benutzen.",
+   "en": "Forgetting the polite form and using the imperative instead.",
+   "es": "Olvidar la forma cortés y usar el imperativo en su lugar.",
+   "fr": "Oublier la forme polie et employer l’impératif à la place.",
+   "it": "Dimenticare la forma cortese e usare invece l’imperativo.",
+   "pt": "Esquecer a forma cortês e usar o imperativo no lugar."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Könntest du…?",
-   "funcion": "höfliche Bitte",
+   "funcion": {
+    "de": "höfliche Bitte",
+    "en": "polite request",
+    "es": "pedido cortés",
+    "fr": "demande polie",
+    "it": "richiesta cortese",
+    "pt": "pedido educado"
+   },
    "traducciones": {
     "es": "¿Podrías…?",
     "en": "Could you…?",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Ich hätte gern…",
-   "funcion": "höflicher Wunsch",
+   "funcion": {
+    "de": "höflicher Wunsch",
+    "en": "polite request",
+    "es": "pedido cortés",
+    "fr": "demande polie",
+    "it": "richiesta cortese",
+    "pt": "pedido educado"
+   },
    "traducciones": {
     "es": "Quisiera…",
     "en": "I'd like…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Wenn ich…hätte, würde ich…",
-   "funcion": "einfache Bedingung",
+   "funcion": {
+    "de": "einfache Bedingung",
+    "en": "simple condition",
+    "es": "condición sencilla",
+    "fr": "condition simple",
+    "it": "condizione semplice",
+    "pt": "condição simples"
+   },
    "traducciones": {
     "es": "Si tuviera…, yo…",
     "en": "If I had…, I would…",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Das wäre toll.",
-   "funcion": "Reaktion, höflich",
+   "funcion": {
+    "de": "Reaktion, höflich",
+    "en": "polite response",
+    "es": "respuesta cortés",
+    "fr": "réaction polie",
+    "it": "risposta cortese",
+    "pt": "resposta educada"
+   },
    "traducciones": {
     "es": "Eso sería genial.",
     "en": "That would be great.",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Ich würde gern…",
-   "funcion": "Wunsch mit würde",
+   "funcion": {
+    "de": "Wunsch mit würde",
+    "en": "wish with würde",
+    "es": "deseo con «würde»",
+    "fr": "souhait avec « würde »",
+    "it": "desiderio con «würde»",
+    "pt": "desejo com «würde»"
+   },
    "traducciones": {
     "es": "Me gustaría…",
     "en": "I would like to…",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Wäre es möglich, dass…?",
-   "funcion": "sehr höfliche Bitte",
+   "funcion": {
+    "de": "sehr höfliche Bitte",
+    "en": "very polite request",
+    "es": "petición muy cortés",
+    "fr": "demande très polie",
+    "it": "richiesta molto cortese",
+    "pt": "pedido muito educado"
+   },
    "traducciones": {
     "es": "¿Sería posible que…?",
     "en": "Would it be possible that…?",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich für hätte und wäre die Originalform statt würde haben/würde sein benutzt?",
-  "Ist die Bitte höflich formuliert?",
-  "Habe ich mindestens eine vollständige Bedingung gebildet?",
-  "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?",
-  "Habe ich das Vokabular des Themas korrekt eingesetzt?"
+  {
+   "de": "Habe ich für hätte und wäre die Originalform statt würde haben/würde sein benutzt?",
+   "en": "Have I used the original forms hätte and wäre instead of würde haben/würde sein?",
+   "es": "¿Usé las formas propias «hätte» y «wäre» en lugar de «würde haben/würde sein»?",
+   "fr": "Ai-je utilisé les formes propres « hätte » et « wäre » au lieu de « würde haben/würde sein » ?",
+   "it": "Ho usato le forme proprie «hätte» e «wäre» invece di «würde haben/würde sein»?",
+   "pt": "Usei as formas próprias «hätte» e «wäre» em vez de «würde haben/würde sein»?"
+  },
+  {
+   "de": "Ist die Bitte höflich formuliert?",
+   "en": "Is the request phrased politely?",
+   "es": "¿La petición está formulada con cortesía?",
+   "fr": "La demande est-elle formulée poliment ?",
+   "it": "La richiesta è formulata in modo cortese?",
+   "pt": "O pedido está formulado de maneira educada?"
+  },
+  {
+   "de": "Habe ich mindestens eine vollständige Bedingung gebildet?",
+   "en": "Have I formed at least one complete conditional sentence?",
+   "es": "¿Formé al menos una condición completa?",
+   "fr": "Ai-je formé au moins une phrase conditionnelle complète ?",
+   "it": "Ho formato almeno un periodo ipotetico completo?",
+   "pt": "Formei pelo menos uma frase condicional completa?"
+  },
+  {
+   "de": "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?",
+   "en": "Does the sentence sound natural rather than like a literal translation from Spanish?",
+   "es": "¿La oración suena natural y no como una traducción literal del español?",
+   "fr": "La phrase semble-t-elle naturelle, et non comme une traduction littérale de l’espagnol ?",
+   "it": "La frase suona naturale, e non come una traduzione letterale dallo spagnolo?",
+   "pt": "A frase soa natural, e não como uma tradução literal do espanhol?"
+  },
+  {
+   "de": "Habe ich das Vokabular des Themas korrekt eingesetzt?",
+   "en": "Have I used the topic vocabulary correctly?",
+   "es": "¿Usé correctamente el vocabulario del tema?",
+   "fr": "Ai-je correctement utilisé le vocabulaire du thème ?",
+   "it": "Ho usato correttamente il vocabolario dell’argomento?",
+   "pt": "Usei corretamente o vocabulário do tema?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Konjunktiv II für Höflichkeit und einfache Bedingungen. Prüfen Sie, ob hätte und wäre statt würde haben/würde sein benutzt werden. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf den Konjunktiv II für Höflichkeit und einfache Bedingungen. Prüfen Sie, ob hätte und wäre statt würde haben/würde sein benutzt werden. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on the Konjunktiv II for politeness and simple conditions. Check whether hätte and wäre are used instead of würde haben/würde sein. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en el Konjunktiv II para expresar cortesía y condiciones sencillas. Compruebe si se usan «hätte» y «wäre» en lugar de «würde haben/würde sein». No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur le Konjunktiv II pour la politesse et les conditions simples. Vérifiez que « hätte » et « wäre » sont utilisés au lieu de « würde haben/würde sein ». Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sul Konjunktiv II per cortesia e condizioni semplici. Controlli se vengono usati «hätte» e «wäre» invece di «würde haben/würde sein». Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente no Konjunktiv II para cortesia e condições simples. Verifique se «hätte» e «wäre» são usados em vez de «würde haben/würde sein». Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Das höfliche *quería* als *ich wollte* übertragen: *Ich wollte einen Kaffee* statt *Ich hätte gern einen Kaffee*."

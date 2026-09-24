@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Wortbildung: Präfixe, Suffixe, Komposita",
+ "titulo": {
+  "de": "Wortbildung: Präfixe, Suffixe, Komposita",
+  "en": "Word formation: prefixes, suffixes, compounds",
+  "es": "Formación de palabras: prefijos, sufijos y compuestos",
+  "fr": "Formation des mots : préfixes, suffixes, composés",
+  "it": "Formazione delle parole: prefissi, suffissi e composti",
+  "pt": "Formação de palavras: prefixos, sufixos e compostos"
+ },
  "categoria": "vocabulary",
  "ancla": "PD B1",
- "descripcion": "Auf B1 lernt man die einfachsten Komposita (zwei Nomen zusammensetzen) und das Präfix un- zur Verneinung. Diese Strategie hilft, neue Wörter selbstständig zu verstehen, ohne jedes einzeln auswendig lernen zu müssen.",
+ "descripcion": {
+  "de": "Auf B1 lernt man die einfachsten Komposita (zwei Nomen zusammensetzen) und das Präfix un- zur Verneinung. Diese Strategie hilft, neue Wörter selbstständig zu verstehen, ohne jedes einzeln auswendig lernen zu müssen.",
+  "en": "At B1, you learn the simplest compounds (combining two nouns) and the prefix un- for negation. This strategy helps you understand new words independently without having to memorize each one separately.",
+  "es": "En B1 se aprenden los compuestos más sencillos (unir dos sustantivos) y el prefijo «un-» para negar. Esta estrategia ayuda a comprender palabras nuevas de manera autónoma sin tener que memorizar cada una por separado.",
+  "fr": "Au niveau B1, on apprend les composés les plus simples (assembler deux noms) et le préfixe « un- » pour la négation. Cette stratégie aide à comprendre de nouveaux mots de manière autonome sans devoir les mémoriser un par un.",
+  "it": "A livello B1 si imparano i composti più semplici (unire due sostantivi) e il prefisso «un-» per la negazione. Questa strategia aiuta a capire parole nuove in autonomia senza doverle memorizzare una per una.",
+  "pt": "No nível B1, aprendem-se os compostos mais simples (juntar dois substantivos) e o prefixo «un-» para negação. Essa estratégia ajuda a compreender palavras novas de forma autônoma, sem precisar memorizar cada uma separadamente."
+ },
  "cuadroReferencia": {
-  "titulo": "Einfache Wortbildung",
+  "titulo": {
+   "de": "Einfache Wortbildung",
+   "en": "Simple word formation",
+   "es": "Formación de palabras sencilla",
+   "fr": "Formation simple des mots",
+   "it": "Formazione semplice delle parole",
+   "pt": "Formação simples de palavras"
+  },
   "columnas": [
-   "Muster",
-   "Beispiel"
+   {
+    "de": "Muster",
+    "en": "Pattern",
+    "es": "Patrón",
+    "fr": "Modèle",
+    "it": "Schema",
+    "pt": "Padrão"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Kompositum",
-    "die Haustür (Haus + Tür)"
+    {
+     "de": "Kompositum",
+     "en": "Compound",
+     "es": "Compuesto",
+     "fr": "Mot composé",
+     "it": "Composto",
+     "pt": "Composto"
+    },
+    {
+     "de": "die Haustür (Haus + Tür)",
+     "en": "die Haustür (Haus + Tür)",
+     "es": "«die Haustür» («Haus» + «Tür»)",
+     "fr": "« die Haustür » (« Haus » + « Tür »)",
+     "it": "«die Haustür» («Haus» + «Tür»)",
+     "pt": "«die Haustür» («Haus» + «Tür»)"
+    }
    ],
    [
-    "un- + Adjektiv",
-    "unglücklich (nicht glücklich)"
+    {
+     "de": "un- + Adjektiv",
+     "en": "un-/in- + adjective",
+     "es": "in-/des- + adjetivo",
+     "fr": "in-/im-/ir- + adjectif",
+     "it": "in-/im-/ir- + aggettivo",
+     "pt": "in-/im- + adjetivo"
+    },
+    {
+     "de": "unglücklich (nicht glücklich)",
+     "en": "unglücklich (not happy)",
+     "es": "«unglücklich» (no feliz)",
+     "fr": "« unglücklich » (pas heureux)",
+     "it": "«unglücklich» (non felice)",
+     "pt": "«unglücklich» (não feliz)"
+    }
    ],
    [
-    "Kompositum 2",
-    "das Wohnzimmer (Wohnen + Zimmer)"
+    {
+     "de": "Kompositum 2",
+     "en": "Compound 2",
+     "es": "Compuesto 2",
+     "fr": "Mot composé 2",
+     "it": "Composto 2",
+     "pt": "Composto 2"
+    },
+    {
+     "de": "das Wohnzimmer (Wohnen + Zimmer)",
+     "en": "das Wohnzimmer (Wohnen + Zimmer)",
+     "es": "«das Wohnzimmer» («Wohnen» + «Zimmer»)",
+     "fr": "« das Wohnzimmer » (« Wohnen » + « Zimmer »)",
+     "it": "«das Wohnzimmer» («Wohnen» + «Zimmer»)",
+     "pt": "«das Wohnzimmer» («Wohnen» + «Zimmer»)"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Die Haustür war leider abgeschlossen.",
+   "texto": {
+    "de": "Die Haustür war leider abgeschlossen.",
+    "en": "Unfortunately, the front door was locked.",
+    "es": "Lamentablemente, la puerta de entrada estaba cerrada con llave.",
+    "fr": "Malheureusement, la porte d’entrée était verrouillée.",
+    "it": "Purtroppo la porta d’ingresso era chiusa a chiave.",
+    "pt": "Infelizmente, a porta de entrada estava trancada."
+   },
    "audio": true
   },
   {
-   "texto": "Er sah heute ziemlich unglücklich aus.",
+   "texto": {
+    "de": "Er sah heute ziemlich unglücklich aus.",
+    "en": "He looked rather unhappy today.",
+    "es": "Hoy parecía bastante infeliz.",
+    "fr": "Il avait l’air assez malheureux aujourd’hui.",
+    "it": "Oggi sembrava piuttosto infelice.",
+    "pt": "Hoje ele parecia bastante infeliz."
+   },
    "audio": true
   },
   {
-   "texto": "Das Wohnzimmer ist sehr gemütlich."
+   "texto": {
+    "de": "Das Wohnzimmer ist sehr gemütlich.",
+    "en": "The living room is very cozy.",
+    "es": "La sala de estar es muy acogedora.",
+    "fr": "Le salon est très chaleureux.",
+    "it": "Il soggiorno è molto accogliente.",
+    "pt": "A sala de estar é muito aconchegante."
+   }
   }
  ],
  "notas": [
-  "Ein Kompositum wird von hinten nach vorne verstanden: die Haustür ist eine Tür (nicht ein Haus).",
-  "Un- vor einem Adjektiv verneint es: glücklich → unglücklich.",
-  "Der Artikel eines Kompositums richtet sich nach dem letzten Wort: die Tür, also die Haustür."
+  {
+   "de": "Ein Kompositum wird von hinten nach vorne verstanden: die Haustür ist eine Tür (nicht ein Haus).",
+   "en": "A compound is understood from right to left: die Haustür is a Tür (door), not a Haus (house).",
+   "es": "Un compuesto se interpreta de derecha a izquierda: «die Haustür» es una «Tür» (puerta), no un «Haus» (casa).",
+   "fr": "Un mot composé se comprend de droite à gauche : « die Haustür » est une « Tür » (porte), pas un « Haus » (maison).",
+   "it": "Un composto si interpreta da destra a sinistra: «die Haustür» è una «Tür» (porta), non una «Haus» (casa).",
+   "pt": "Um composto é entendido da direita para a esquerda: «die Haustür» é uma «Tür» (porta), e não uma «Haus» (casa)."
+  },
+  {
+   "de": "Un- vor einem Adjektiv verneint es: glücklich → unglücklich.",
+   "en": "Un- before an adjective negates it: glücklich → unglücklich.",
+   "es": "«Un-» delante de un adjetivo lo niega: «glücklich» → «unglücklich».",
+   "fr": "« Un- » devant un adjectif le nie : « glücklich » → « unglücklich ».",
+   "it": "«Un-» davanti a un aggettivo lo nega: «glücklich» → «unglücklich».",
+   "pt": "«Un-» antes de um adjetivo o nega: «glücklich» → «unglücklich»."
+  },
+  {
+   "de": "Der Artikel eines Kompositums richtet sich nach dem letzten Wort: die Tür, also die Haustür.",
+   "en": "The article of a compound is determined by the final word: die Tür, therefore die Haustür.",
+   "es": "El artículo de un compuesto lo determina la última palabra: «die Tür», por lo tanto «die Haustür».",
+   "fr": "L’article d’un mot composé est déterminé par le dernier mot : « die Tür », donc « die Haustür ».",
+   "it": "L’articolo di un composto dipende dall’ultima parola: «die Tür», quindi «die Haustür».",
+   "pt": "O artigo de um composto é determinado pela última palavra: «die Tür», portanto «die Haustür»."
+  }
  ],
  "contraste": {
   "es": "Das Spanische bildet Komposita seltener und meist mit einer Präposition (la puerta de la casa statt Haustür). Spanischsprachige zerlegen deutsche Komposita deshalb nicht automatisch.",
@@ -54,14 +173,42 @@
   "en": "Das Englische bildet Komposita genauso mit dem wichtigen Teil am Ende (front door – Haustür), schreibt sie aber meist getrennt. Die deutsche Regel ist Englischsprachigen also vertraut; neu ist nur die Zusammenschreibung."
  },
  "errores": [
-  "Den Artikel eines Kompositums nach dem ersten statt nach dem letzten Wort wählen.",
-  "Un- vergessen und stattdessen nicht + Adjektiv sagen, wo ein Kompositum-Adjektiv existiert.",
-  "Ein Kompositum in der falschen Reihenfolge bilden."
+  {
+   "de": "Den Artikel eines Kompositums nach dem ersten statt nach dem letzten Wort wählen.",
+   "en": "Choosing the article of a compound based on the first word instead of the last.",
+   "es": "Elegir el artículo de un compuesto según la primera palabra en vez de la última.",
+   "fr": "Choisir l’article d’un mot composé d’après le premier mot au lieu du dernier.",
+   "it": "Scegliere l’articolo di un composto in base alla prima parola invece che all’ultima.",
+   "pt": "Escolher o artigo de um composto com base na primeira palavra, e não na última."
+  },
+  {
+   "de": "Un- vergessen und stattdessen nicht + Adjektiv sagen, wo ein Kompositum-Adjektiv existiert.",
+   "en": "Forgetting un- and saying nicht + adjective instead where an adjective with un- exists.",
+   "es": "Olvidar «un-» y decir «nicht + adjetivo» cuando existe un adjetivo con «un-».",
+   "fr": "Oublier « un- » et dire « nicht + adjectif » alors qu’un adjectif en « un- » existe.",
+   "it": "Dimenticare «un-» e usare «nicht + aggettivo» quando esiste un aggettivo con «un-».",
+   "pt": "Esquecer «un-» e usar «nicht + adjetivo» quando existe um adjetivo com «un-»."
+  },
+  {
+   "de": "Ein Kompositum in der falschen Reihenfolge bilden.",
+   "en": "Building a compound in the wrong order.",
+   "es": "Formar un compuesto en el orden incorrecto.",
+   "fr": "Former un mot composé dans le mauvais ordre.",
+   "it": "Formare un composto nell’ordine sbagliato.",
+   "pt": "Formar um composto na ordem errada."
+  }
  ],
  "redemittel": [
   {
    "expresion": "die Haustür",
-   "funcion": "Kompositum",
+   "funcion": {
+    "de": "Kompositum",
+    "en": "Compound",
+    "es": "Compuesto",
+    "fr": "Mot composé",
+    "it": "Composto",
+    "pt": "Composto"
+   },
    "traducciones": {
     "es": "la puerta de casa",
     "en": "the front door",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "unglücklich",
-   "funcion": "un- + Adjektiv",
+   "funcion": {
+    "de": "un- + Adjektiv",
+    "en": "un-/in- + adjective",
+    "es": "in-/des- + adjetivo",
+    "fr": "in-/im-/ir- + adjectif",
+    "it": "in-/im-/ir- + aggettivo",
+    "pt": "in-/im- + adjetivo"
+   },
    "traducciones": {
     "es": "infeliz",
     "en": "unhappy",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "das Wohnzimmer",
-   "funcion": "Kompositum",
+   "funcion": {
+    "de": "Kompositum",
+    "en": "Compound",
+    "es": "Compuesto",
+    "fr": "Mot composé",
+    "it": "Composto",
+    "pt": "Composto"
+   },
    "traducciones": {
     "es": "la sala de estar",
     "en": "the living room",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "unfreundlich",
-   "funcion": "un- + Adjektiv",
+   "funcion": {
+    "de": "un- + Adjektiv",
+    "en": "un-/in- + adjective",
+    "es": "in-/des- + adjetivo",
+    "fr": "in-/im-/ir- + adjectif",
+    "it": "in-/im-/ir- + aggettivo",
+    "pt": "in-/im- + adjetivo"
+   },
    "traducciones": {
     "es": "poco amable",
     "en": "unfriendly",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "das Schlafzimmer",
-   "funcion": "Kompositum",
+   "funcion": {
+    "de": "Kompositum",
+    "en": "Compound",
+    "es": "Compuesto",
+    "fr": "Mot composé",
+    "it": "Composto",
+    "pt": "Composto"
+   },
    "traducciones": {
     "es": "el dormitorio",
     "en": "the bedroom",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "unmöglich",
-   "funcion": "un- + Adjektiv",
+   "funcion": {
+    "de": "un- + Adjektiv",
+    "en": "un-/in- + adjective",
+    "es": "in-/des- + adjetivo",
+    "fr": "in-/im-/ir- + adjectif",
+    "it": "in-/im-/ir- + aggettivo",
+    "pt": "in-/im- + adjetivo"
+   },
    "traducciones": {
     "es": "imposible",
     "en": "impossible",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Stimmt der Artikel des Kompositums mit dem letzten Wort überein?",
-  "Habe ich un- korrekt zur Verneinung benutzt?",
-  "Habe ich mindestens zwei Komposita gebildet?",
-  "Klingt der Text natürlich?",
-  "Habe ich das Vokabular des Themas eingesetzt?"
+  {
+   "de": "Stimmt der Artikel des Kompositums mit dem letzten Wort überein?",
+   "en": "Does the article of the compound agree with the final word?",
+   "es": "¿El artículo del compuesto coincide con la última palabra?",
+   "fr": "L’article du mot composé correspond-il au dernier mot ?",
+   "it": "L’articolo del composto corrisponde all’ultima parola?",
+   "pt": "O artigo do composto corresponde à última palavra?"
+  },
+  {
+   "de": "Habe ich un- korrekt zur Verneinung benutzt?",
+   "en": "Have I used un- correctly for negation?",
+   "es": "¿Usé correctamente «un-» para negar?",
+   "fr": "Ai-je correctement utilisé « un- » pour la négation ?",
+   "it": "Ho usato correttamente «un-» per la negazione?",
+   "pt": "Usei «un-» corretamente para negação?"
+  },
+  {
+   "de": "Habe ich mindestens zwei Komposita gebildet?",
+   "en": "Have I formed at least two compounds?",
+   "es": "¿Formé al menos dos compuestos?",
+   "fr": "Ai-je formé au moins deux mots composés ?",
+   "it": "Ho formato almeno due composti?",
+   "pt": "Formei pelo menos dois compostos?"
+  },
+  {
+   "de": "Klingt der Text natürlich?",
+   "en": "Does the text sound natural?",
+   "es": "¿El texto suena natural?",
+   "fr": "Le texte sonne-t-il naturellement ?",
+   "it": "Il testo suona naturale?",
+   "pt": "O texto soa natural?"
+  },
+  {
+   "de": "Habe ich das Vokabular des Themas eingesetzt?",
+   "en": "Have I used vocabulary related to the topic?",
+   "es": "¿Usé vocabulario del tema?",
+   "fr": "Ai-je utilisé le vocabulaire du thème ?",
+   "it": "Ho usato il vocabolario dell'argomento?",
+   "pt": "Usei o vocabulário do tema?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Komposita und das Präfix un-. Prüfen Sie den Artikel jedes Kompositums und ob un- korrekt zur Verneinung benutzt wird. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf Komposita und das Präfix un-. Prüfen Sie den Artikel jedes Kompositums und ob un- korrekt zur Verneinung benutzt wird. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on compounds and the prefix un-. Check the article of each compound and whether un- is used correctly for negation. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en los compuestos y el prefijo «un-». Revise el artículo de cada compuesto y si «un-» se usa correctamente para negar. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les mots composés et le préfixe « un- ». Vérifiez l’article de chaque composé et l’emploi correct de « un- » pour la négation. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sui composti e sul prefisso «un-». Controlli l’articolo di ogni composto e se «un-» viene usato correttamente per la negazione. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nos compostos e no prefixo «un-». Verifique o artigo de cada composto e se «un-» é usado corretamente para negação. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Die Reihenfolge von *mesa de cocina* übernehmen: *Tischküche* statt *Küchentisch*."

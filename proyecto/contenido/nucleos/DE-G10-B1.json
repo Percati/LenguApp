@@ -3,51 +3,191 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Passiv und Passiversatzformen",
+ "titulo": {
+  "de": "Passiv und Passiversatzformen",
+  "en": "Passive voice and passive alternatives",
+  "es": "Voz pasiva y formas alternativas",
+  "fr": "Voix passive et formes de remplacement",
+  "it": "Forma passiva e alternative",
+  "pt": "Voz passiva e formas alternativas"
+ },
  "categoria": "grammar",
  "ancla": "PD B1",
- "descripcion": "Auf B1 wird das einfache Vorgangspassiv (wird gemacht, wurde gemacht) im Präsens und Präteritum sicher gebildet. Das Zustandspassiv und die Ersatzformen kommen erst später dazu — hier reicht die Grundform, mit oder ohne genannten Urheber.",
+ "descripcion": {
+  "de": "Auf B1 wird das einfache Vorgangspassiv (wird gemacht, wurde gemacht) im Präsens und Präteritum sicher gebildet. Das Zustandspassiv und die Ersatzformen kommen erst später dazu — hier reicht die Grundform, mit oder ohne genannten Urheber.",
+  "en": "At B1, the basic process passive (wird gemacht, wurde gemacht) is formed confidently in the present and simple past. The state passive and alternative constructions come later — here the basic form is enough, with or without the agent being named.",
+  "es": "En B1 se forma con seguridad la pasiva de proceso básica («wird gemacht, wurde gemacht») en presente y Präteritum. La pasiva de estado y las formas alternativas aparecen más adelante; aquí basta la forma básica, con o sin mencionar al agente.",
+  "fr": "Au niveau B1, on maîtrise le passif d’action simple (« wird gemacht, wurde gemacht ») au présent et au prétérit. Le passif d’état et les formes de remplacement viennent plus tard ; ici, la forme de base suffit, avec ou sans mention de l’agent.",
+  "it": "A livello B1 si forma con sicurezza il passivo d’azione semplice («wird gemacht, wurde gemacht») al presente e al Präteritum. Il passivo di stato e le forme alternative vengono affrontati più avanti; qui basta la forma di base, con o senza agente espresso.",
+  "pt": "No nível B1, forma-se com segurança a passiva de processo básica («wird gemacht, wurde gemacht») no presente e no Präteritum. A passiva de estado e as formas alternativas aparecem mais adiante; aqui basta a forma básica, com ou sem menção ao agente."
+ },
  "cuadroReferencia": {
-  "titulo": "Vorgangspassiv, zwei Zeiten",
+  "titulo": {
+   "de": "Vorgangspassiv, zwei Zeiten",
+   "en": "Process passive, two tenses",
+   "es": "Pasiva de proceso, dos tiempos",
+   "fr": "Passif d’action, deux temps",
+   "it": "Passivo d’azione, due tempi",
+   "pt": "Passiva de processo, dois tempos"
+  },
   "columnas": [
-   "Zeit",
-   "Form",
-   "Beispiel"
+   {
+    "de": "Zeit",
+    "en": "Tense",
+    "es": "Tiempo verbal",
+    "fr": "Temps",
+    "it": "Tempo",
+    "pt": "Tempo verbal"
+   },
+   {
+    "de": "Form",
+    "en": "Form",
+    "es": "Forma",
+    "fr": "Forme",
+    "it": "Forma",
+    "pt": "Forma"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Präsens",
-    "werden + Partizip II",
-    "Das Brot wird jeden Tag frisch gebacken."
+    {
+     "de": "Präsens",
+     "en": "Present",
+     "es": "Presente",
+     "fr": "Présent",
+     "it": "Presente",
+     "pt": "Presente"
+    },
+    {
+     "de": "werden + Partizip II",
+     "en": "werden + past participle",
+     "es": "«werden» + participio II",
+     "fr": "« werden » + participe passé",
+     "it": "«werden» + participio II",
+     "pt": "«werden» + particípio II"
+    },
+    {
+     "de": "Das Brot wird jeden Tag frisch gebacken.",
+     "en": "The bread is baked fresh every day.",
+     "es": "El pan se hornea fresco todos los días.",
+     "fr": "Le pain est cuit frais tous les jours.",
+     "it": "Il pane viene sfornato fresco ogni giorno.",
+     "pt": "O pão é assado fresco todos os dias."
+    }
    ],
    [
-    "Präteritum",
-    "wurde + Partizip II",
-    "Das Haus wurde 1990 gebaut."
+    {
+     "de": "Präteritum",
+     "en": "simple past",
+     "es": "Präteritum",
+     "fr": "prétérit",
+     "it": "Präteritum",
+     "pt": "Präteritum"
+    },
+    {
+     "de": "wurde + Partizip II",
+     "en": "wurde + past participle",
+     "es": "«wurde» + participio II",
+     "fr": "« wurde » + participe passé",
+     "it": "«wurde» + participio II",
+     "pt": "«wurde» + particípio II"
+    },
+    {
+     "de": "Das Haus wurde 1990 gebaut.",
+     "en": "The house was built in 1990.",
+     "es": "La casa fue construida en 1990.",
+     "fr": "La maison a été construite en 1990.",
+     "it": "La casa è stata costruita nel 1990.",
+     "pt": "A casa foi construída em 1990."
+    }
    ],
    [
-    "Frage",
-    "Wann wird das repariert?"
+    {
+     "de": "Frage",
+     "en": "Question",
+     "es": "Pregunta",
+     "fr": "Question",
+     "it": "Domanda",
+     "pt": "Pergunta"
+    },
+    {
+     "de": "Wann wird das repariert?",
+     "en": "When will that be repaired?",
+     "es": "¿Cuándo se reparará eso?",
+     "fr": "Quand cela sera-t-il réparé ?",
+     "it": "Quando verrà riparato?",
+     "pt": "Quando isso será consertado?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Das Brot wird hier jeden Tag frisch gebacken.",
+   "texto": {
+    "de": "Das Brot wird hier jeden Tag frisch gebacken.",
+    "en": "The bread is baked fresh here every day.",
+    "es": "Aquí se hornea pan fresco todos los días.",
+    "fr": "Ici, le pain est cuit frais tous les jours.",
+    "it": "Qui il pane viene sfornato fresco ogni giorno.",
+    "pt": "Aqui o pão é assado fresco todos os dias."
+   },
    "audio": true
   },
   {
-   "texto": "Das Haus wurde vor dreissig Jahren gebaut.",
+   "texto": {
+    "de": "Das Haus wurde vor dreissig Jahren gebaut.",
+    "en": "The house was built thirty years ago.",
+    "es": "La casa fue construida hace treinta años.",
+    "fr": "La maison a été construite il y a trente ans.",
+    "it": "La casa è stata costruita trent’anni fa.",
+    "pt": "A casa foi construída há trinta anos."
+   },
    "audio": true
   },
   {
-   "texto": "Die Fenster werden nächste Woche geputzt."
+   "texto": {
+    "de": "Die Fenster werden nächste Woche geputzt.",
+    "en": "The windows will be cleaned next week.",
+    "es": "Las ventanas se limpiarán la semana que viene.",
+    "fr": "Les fenêtres seront nettoyées la semaine prochaine.",
+    "it": "Le finestre verranno pulite la prossima settimana.",
+    "pt": "As janelas serão limpas na próxima semana."
+   }
   }
  ],
  "notas": [
-  "Das Passiv wird gebildet mit werden plus Partizip II, das am Satzende steht.",
-  "Der Urheber wird mit von + Dativ genannt, aber oft ganz weggelassen.",
-  "Nicht jedes Verb bildet ein Passiv: haben, bekommen und kennen zum Beispiel nicht."
+  {
+   "de": "Das Passiv wird gebildet mit werden plus Partizip II, das am Satzende steht.",
+   "en": "The passive is formed with werden plus the past participle, which goes at the end of the sentence.",
+   "es": "La pasiva se forma con «werden» más el participio II, que va al final de la oración.",
+   "fr": "Le passif se forme avec « werden » plus le participe passé, placé à la fin de la phrase.",
+   "it": "Il passivo si forma con «werden» più il participio II, che va alla fine della frase.",
+   "pt": "A passiva é formada com «werden» mais o particípio II, que vai para o final da frase."
+  },
+  {
+   "de": "Der Urheber wird mit von + Dativ genannt, aber oft ganz weggelassen.",
+   "en": "The agent is introduced with von + dative, but is often omitted entirely.",
+   "es": "El agente se introduce con «von» + dativo, aunque a menudo se omite por completo.",
+   "fr": "L’agent est introduit avec « von » + datif, mais il est souvent entièrement omis.",
+   "it": "L’agente viene introdotto con «von» + dativo, ma spesso viene omesso del tutto.",
+   "pt": "O agente é introduzido com «von» + dativo, mas muitas vezes é totalmente omitido."
+  },
+  {
+   "de": "Nicht jedes Verb bildet ein Passiv: haben, bekommen und kennen zum Beispiel nicht.",
+   "en": "Not every verb can form a passive: haben, bekommen and kennen, for example, cannot.",
+   "es": "No todos los verbos admiten pasiva: por ejemplo, «haben», «bekommen» y «kennen» no.",
+   "fr": "Tous les verbes ne peuvent pas former un passif : « haben », « bekommen » et « kennen », par exemple, ne le peuvent pas.",
+   "it": "Non tutti i verbi possono formare il passivo: «haben», «bekommen» e «kennen», per esempio, no.",
+   "pt": "Nem todo verbo pode formar a passiva: «haben», «bekommen» e «kennen», por exemplo, não podem."
+  }
  ],
  "contraste": {
   "es": "Das Spanische bevorzugt an dieser Stelle oft die se-Konstruktion (se hace, se construyó) statt eines echten Passivs. Deshalb übertragen Spanischsprachige das deutsche Passiv seltener aktiv und benutzen stattdessen das Aktiv mit man.",
@@ -57,14 +197,42 @@
   "en": "Das englische Passiv mit be zeigt nicht, ob es um einen Vorgang oder einen Zustand geht (the door is closed). Deshalb setzen Englischsprachige oft ist statt wird. Das Passiv selbst ist aber vertraut und wird gern benutzt."
  },
  "errores": [
-  "Werden vergessen und nur das Partizip II verwenden.",
-  "Das Partizip II nicht ans Satzende stellen.",
-  "Sein statt werden im Vorgangspassiv verwenden."
+  {
+   "de": "Werden vergessen und nur das Partizip II verwenden.",
+   "en": "Forgetting werden and using only the past participle.",
+   "es": "Olvidar «werden» y usar solo el participio II.",
+   "fr": "Oublier « werden » et utiliser seulement le participe passé.",
+   "it": "Dimenticare «werden» e usare solo il participio II.",
+   "pt": "Esquecer «werden» e usar apenas o particípio II."
+  },
+  {
+   "de": "Das Partizip II nicht ans Satzende stellen.",
+   "en": "Not putting the past participle at the end of the sentence.",
+   "es": "No colocar el participio II al final de la oración.",
+   "fr": "Ne pas placer le participe passé à la fin de la phrase.",
+   "it": "Non mettere il participio II alla fine della frase.",
+   "pt": "Não colocar o particípio II no final da frase."
+  },
+  {
+   "de": "Sein statt werden im Vorgangspassiv verwenden.",
+   "en": "Using sein instead of werden in the process passive.",
+   "es": "Usar «sein» en lugar de «werden» en la pasiva de proceso.",
+   "fr": "Employer « sein » au lieu de « werden » dans le passif d’action.",
+   "it": "Usare «sein» invece di «werden» nel passivo d’azione.",
+   "pt": "Usar «sein» em vez de «werden» na passiva de processo."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…wird…gemacht.",
-   "funcion": "Passiv, Präsens",
+   "funcion": {
+    "de": "Passiv, Präsens",
+    "en": "passive, present",
+    "es": "pasiva, presente",
+    "fr": "passif, présent",
+    "it": "passivo, presente",
+    "pt": "passiva, presente"
+   },
    "traducciones": {
     "es": "…se hace…",
     "en": "…is made/done…",
@@ -75,7 +243,14 @@
   },
   {
    "expresion": "…wurde…gebaut.",
-   "funcion": "Passiv, Präteritum",
+   "funcion": {
+    "de": "Passiv, Präteritum",
+    "en": "passive, simple past",
+    "es": "pasiva, Präteritum",
+    "fr": "passif, prétérit",
+    "it": "passivo, Präteritum",
+    "pt": "passiva, Präteritum"
+   },
    "traducciones": {
     "es": "…se construyó…",
     "en": "…was built…",
@@ -86,7 +261,14 @@
   },
   {
    "expresion": "…wird von…gemacht.",
-   "funcion": "Passiv mit Urheber",
+   "funcion": {
+    "de": "Passiv mit Urheber",
+    "en": "passive with agent",
+    "es": "pasiva con agente",
+    "fr": "passif avec agent",
+    "it": "passivo con agente",
+    "pt": "passiva com agente"
+   },
    "traducciones": {
     "es": "…es hecho por…",
     "en": "…is made by…",
@@ -97,7 +279,14 @@
   },
   {
    "expresion": "Das wird bald erledigt.",
-   "funcion": "Zukunftsbezug, Passiv",
+   "funcion": {
+    "de": "Zukunftsbezug, Passiv",
+    "en": "future reference, passive",
+    "es": "referencia al futuro, pasiva",
+    "fr": "référence au futur, passif",
+    "it": "riferimento al futuro, passivo",
+    "pt": "referência ao futuro, passiva"
+   },
    "traducciones": {
     "es": "Eso se resuelve pronto.",
     "en": "That will be sorted out soon.",
@@ -108,7 +297,14 @@
   },
   {
    "expresion": "…wird gerade repariert.",
-   "funcion": "Passiv, im Verlauf",
+   "funcion": {
+    "de": "Passiv, im Verlauf",
+    "en": "passive, in progress",
+    "es": "pasiva, en curso",
+    "fr": "passif, en cours",
+    "it": "passivo, in corso",
+    "pt": "passiva, em andamento"
+   },
    "traducciones": {
     "es": "…se está reparando.",
     "en": "…is being repaired.",
@@ -119,7 +315,14 @@
   },
   {
    "expresion": "…werden jeden Tag…",
-   "funcion": "Passiv, Gewohnheit",
+   "funcion": {
+    "de": "Passiv, Gewohnheit",
+    "en": "passive, habitual action",
+    "es": "pasiva, hábito",
+    "fr": "passif, habitude",
+    "it": "passivo, abitudine",
+    "pt": "passiva, hábito"
+   },
    "traducciones": {
     "es": "…se hacen todos los días…",
     "en": "…are made every day…",
@@ -130,13 +333,55 @@
   }
  ],
  "autochequeo": [
-  "Steht werden/wurde plus Partizip II?",
-  "Steht das Partizip II am Satzende?",
-  "Habe ich das Passiv in Präsens UND Präteritum benutzt?",
-  "Klingt der Satz natürlich?",
-  "Habe ich mindestens vier Beispiele benutzt?"
+  {
+   "de": "Steht werden/wurde plus Partizip II?",
+   "en": "Is there werden/wurde plus a past participle?",
+   "es": "¿Aparece «werden/wurde» más un participio II?",
+   "fr": "Y a-t-il « werden/wurde » plus un participe passé ?",
+   "it": "C’è «werden/wurde» più un participio II?",
+   "pt": "Há «werden/wurde» mais um particípio II?"
+  },
+  {
+   "de": "Steht das Partizip II am Satzende?",
+   "en": "Is the past participle at the end of the sentence?",
+   "es": "¿El participio II está al final de la oración?",
+   "fr": "Le participe passé est-il à la fin de la phrase ?",
+   "it": "Il participio passato è alla fine della frase?",
+   "pt": "O particípio II está no final da frase?"
+  },
+  {
+   "de": "Habe ich das Passiv in Präsens UND Präteritum benutzt?",
+   "en": "Have I used the passive in BOTH the present and the simple past?",
+   "es": "¿Usé la pasiva tanto en presente COMO en Präteritum?",
+   "fr": "Ai-je utilisé le passif AU présent ET au prétérit ?",
+   "it": "Ho usato il passivo SIA al presente SIA al Präteritum?",
+   "pt": "Usei a passiva TANTO no presente QUANTO no Präteritum?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Habe ich mindestens vier Beispiele benutzt?",
+   "en": "Have I used at least four examples?",
+   "es": "¿Usé al menos cuatro ejemplos?",
+   "fr": "Ai-je utilisé au moins quatre exemples ?",
+   "it": "Ho usato almeno quattro esempi?",
+   "pt": "Usei pelo menos quatro exemplos?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Vorgangspassiv in Präsens und Präteritum. Prüfen Sie die Form mit werden und die Position des Partizips. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf das Vorgangspassiv in Präsens und Präteritum. Prüfen Sie die Form mit werden und die Position des Partizips. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on the process passive in the present and simple past. Check the form with werden and the position of the participle. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en la pasiva de proceso en presente y Präteritum. Revise la forma con «werden» y la posición del participio. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur le passif d’action au présent et au prétérit. Vérifiez la forme avec « werden » et la position du participe. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sul passivo d’azione al presente e al Präteritum. Controlli la forma con «werden» e la posizione del participio. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente na passiva de processo no presente e no Präteritum. Verifique a forma com «werden» e a posição do particípio. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*por* als *für* übertragen: *geschrieben für Cervantes* statt *geschrieben von Cervantes*."

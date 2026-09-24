@@ -3,49 +3,168 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Helvetismen und Deutschschweizer Kontext",
+ "titulo": {
+  "de": "Helvetismen und Deutschschweizer Kontext",
+  "en": "Swiss Germanisms and the Swiss context",
+  "es": "Helvetismos y contexto suizo-alemán",
+  "fr": "Helvétismes et contexte suisse alémanique",
+  "it": "Elvetismi e contesto svizzero-tedesco",
+  "pt": "Helvetismos e contexto suíço-alemão"
+ },
  "categoria": "vocabulary",
  "ancla": "—",
  "variante": "CH",
- "descripcion": "Auf B1 lernt man die häufigsten Helvetismen des Alltags: Wörter, die in der Schweiz anders heissen als in Deutschland, aber genauso Standardsprache sind. Wichtig ist, dass diese Wörter nicht umgangssprachlich, sondern korrektes Schweizer Hochdeutsch sind.",
+ "descripcion": {
+  "de": "Auf B1 lernt man die häufigsten Helvetismen des Alltags: Wörter, die in der Schweiz anders heissen als in Deutschland, aber genauso Standardsprache sind. Wichtig ist, dass diese Wörter nicht umgangssprachlich, sondern korrektes Schweizer Hochdeutsch sind.",
+  "en": "At B1, you learn the most common everyday Helvetisms: words that are different in Switzerland from Germany but are equally part of the standard language. It is important to understand that these words are not colloquial; they are correct Swiss Standard German.",
+  "es": "En B1 se aprenden los helvetismos cotidianos más frecuentes: palabras que en Suiza se dicen de forma distinta que en Alemania, pero que forman parte igualmente de la lengua estándar. Es importante entender que no son expresiones coloquiales, sino alemán estándar suizo correcto.",
+  "fr": "Au niveau B1, on apprend les helvétismes les plus courants du quotidien : des mots qui diffèrent en Suisse et en Allemagne mais appartiennent tout autant à la langue standard. Il est important de comprendre qu’ils ne sont pas familiers, mais relèvent du suisse standard correct.",
+  "it": "A livello B1 si imparano gli elvetismi più comuni della vita quotidiana: parole che in Svizzera sono diverse rispetto alla Germania, ma fanno comunque parte della lingua standard. È importante capire che non sono colloquiali, bensì corretto tedesco standard svizzero.",
+  "pt": "No nível B1, aprendem-se os helvetismos mais comuns do dia a dia: palavras que na Suíça são diferentes das usadas na Alemanha, mas que também fazem parte da língua padrão. É importante entender que essas palavras não são coloquiais, mas sim alemão-padrão suíço correto."
+ },
  "cuadroReferencia": {
-  "titulo": "Alltägliche Helvetismen",
+  "titulo": {
+   "de": "Alltägliche Helvetismen",
+   "en": "Everyday Helvetisms",
+   "es": "Helvetismos cotidianos",
+   "fr": "Helvétismes du quotidien",
+   "it": "Elvetismi quotidiani",
+   "pt": "Helvetismos do dia a dia"
+  },
   "columnas": [
-   "Schweiz",
-   "Deutschland"
+   {
+    "de": "Schweiz",
+    "en": "Switzerland",
+    "es": "Suiza",
+    "fr": "Suisse",
+    "it": "Svizzera",
+    "pt": "Suíça"
+   },
+   {
+    "de": "Deutschland",
+    "en": "Germany",
+    "es": "Alemania",
+    "fr": "Allemagne",
+    "it": "Germania",
+    "pt": "Alemanha"
+   }
   ],
   "filas": [
    [
-    "das Velo",
-    "das Fahrrad"
+    {
+     "de": "das Velo",
+     "en": "the bicycle (CH)",
+     "es": "la bicicleta",
+     "fr": "le vélo",
+     "it": "la bicicletta",
+     "pt": "a bicicleta"
+    },
+    {
+     "de": "das Fahrrad",
+     "en": "bicycle",
+     "es": "la bicicleta",
+     "fr": "le vélo",
+     "it": "la bicicletta",
+     "pt": "a bicicleta"
+    }
    ],
    [
-    "parkieren",
-    "parken"
+    {
+     "de": "parkieren",
+     "en": "to park (CH)",
+     "es": "aparcar",
+     "fr": "se garer",
+     "it": "parcheggiare",
+     "pt": "estacionar"
+    },
+    {
+     "de": "parken",
+     "en": "to park",
+     "es": "estacionar",
+     "fr": "se garer",
+     "it": "parcheggiare",
+     "pt": "estacionar"
+    }
    ],
    [
-    "das Billett",
-    "die Fahrkarte"
+    {
+     "de": "das Billett",
+     "en": "the ticket",
+     "es": "el billete",
+     "fr": "le billet",
+     "it": "il biglietto",
+     "pt": "o bilhete"
+    },
+    {
+     "de": "die Fahrkarte",
+     "en": "ticket",
+     "es": "el billete",
+     "fr": "le billet",
+     "it": "il biglietto",
+     "pt": "o bilhete"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich fahre jeden Tag mit dem Velo zur Arbeit.",
+   "texto": {
+    "de": "Ich fahre jeden Tag mit dem Velo zur Arbeit.",
+    "en": "I ride my bike to work every day.",
+    "es": "Voy al trabajo en bicicleta todos los días.",
+    "fr": "Je vais au travail à vélo tous les jours.",
+    "it": "Vado al lavoro in bicicletta ogni giorno.",
+    "pt": "Vou trabalhar de bicicleta todos os dias."
+   },
    "audio": true
   },
   {
-   "texto": "Wo kann ich hier parkieren?",
+   "texto": {
+    "de": "Wo kann ich hier parkieren?",
+    "en": "Where can I park here?",
+    "es": "¿Dónde puedo estacionar aquí?",
+    "fr": "Où puis-je me garer ici ?",
+    "it": "Dove posso parcheggiare qui?",
+    "pt": "Onde posso estacionar aqui?"
+   },
    "audio": true
   },
   {
-   "texto": "Ich brauche noch ein Billett für den Zug."
+   "texto": {
+    "de": "Ich brauche noch ein Billett für den Zug.",
+    "en": "I still need a ticket for the train.",
+    "es": "Todavía necesito un billete para el tren.",
+    "fr": "Il me faut encore un billet pour le train.",
+    "it": "Mi serve ancora un biglietto per il treno.",
+    "pt": "Ainda preciso de uma passagem para o trem."
+   }
   }
  ],
  "notas": [
-  "Diese Wörter sind in der Schweiz Standard, keine Umgangssprache — sie stehen auch in offiziellen Texten.",
-  "Velo, Billett und Trottoir kommen ursprünglich aus dem Französischen.",
-  "Im Schweizer Hochdeutsch schreibt man kein ß, immer ss."
+  {
+   "de": "Diese Wörter sind in der Schweiz Standard, keine Umgangssprache — sie stehen auch in offiziellen Texten.",
+   "en": "These words are standard in Switzerland, not colloquial — they also appear in official texts.",
+   "es": "Estas palabras son estándar en Suiza, no coloquiales; también aparecen en textos oficiales.",
+   "fr": "Ces mots relèvent de la langue standard en Suisse, pas du registre familier ; ils apparaissent également dans des textes officiels.",
+   "it": "Queste parole sono standard in Svizzera, non colloquiali; compaiono anche nei testi ufficiali.",
+   "pt": "Essas palavras fazem parte do padrão na Suíça, não são coloquiais — também aparecem em textos oficiais."
+  },
+  {
+   "de": "Velo, Billett und Trottoir kommen ursprünglich aus dem Französischen.",
+   "en": "Velo, Billett and Trottoir originally come from French.",
+   "es": "«Velo», «Billett» y «Trottoir» proceden originalmente del francés.",
+   "fr": "« Velo », « Billett » et « Trottoir » viennent à l’origine du français.",
+   "it": "«Velo», «Billett» e «Trottoir» derivano originariamente dal francese.",
+   "pt": "«Velo», «Billett» e «Trottoir» vêm originalmente do francês."
+  },
+  {
+   "de": "Im Schweizer Hochdeutsch schreibt man kein ß, immer ss.",
+   "en": "Swiss Standard German does not use ß; it always uses ss.",
+   "es": "En el alemán estándar suizo no se escribe «ß», siempre se usa «ss».",
+   "fr": "En suisse standard, on n’écrit pas « ß » ; on utilise toujours « ss ».",
+   "it": "Nel tedesco standard svizzero non si usa «ß»: si scrive sempre «ss».",
+   "pt": "No alemão-padrão suíço não se usa «ß»; usa-se sempre «ss»."
+  }
  ],
  "contraste": {
   "es": "Das Spanische kennt selbst innerhalb Lateinamerikas viele Wörter, die von Land zu Land wechseln (computadora/ordenador, plata/dinero), ohne dass eine Variante als falsch gilt. Genau in diesem Sinn sind Schweizer Wörter wie Velo oder Znüni kein Slang, sondern eigenständiges Standarddeutsch.",
@@ -55,14 +174,42 @@
   "en": "Das Englische kennt dasselbe Prinzip zwischen Grossbritannien und den USA (lift – elevator, biscuit – cookie), ohne dass eine Variante falsch ist. Genau so sind Velo oder Znüni normales Schweizer Hochdeutsch."
  },
  "errores": [
-  "Diese Wörter für Mundart statt für Standardsprache halten.",
-  "Ein ß in einem Schweizer Text verwenden.",
-  "Bundesdeutsche Wörter benutzen, wo der Helvetismus erwartet wird, wenn man in der Schweiz spricht."
+  {
+   "de": "Diese Wörter für Mundart statt für Standardsprache halten.",
+   "en": "Mistaking these words for dialect rather than standard language.",
+   "es": "Considerar estas palabras dialectales en vez de parte de la lengua estándar.",
+   "fr": "Prendre ces mots pour du dialecte au lieu de la langue standard.",
+   "it": "Considerare queste parole dialettali invece che standard.",
+   "pt": "Considerar essas palavras como dialeto em vez de língua padrão."
+  },
+  {
+   "de": "Ein ß in einem Schweizer Text verwenden.",
+   "en": "Using ß in a Swiss text.",
+   "es": "Usar «ß» en un texto suizo.",
+   "fr": "Employer « ß » dans un texte suisse.",
+   "it": "Usare «ß» in un testo svizzero.",
+   "pt": "Usar «ß» em um texto suíço."
+  },
+  {
+   "de": "Bundesdeutsche Wörter benutzen, wo der Helvetismus erwartet wird, wenn man in der Schweiz spricht.",
+   "en": "Using Germany-specific words where a Helvetism is expected when speaking in Switzerland.",
+   "es": "Usar palabras propias de Alemania cuando en Suiza se espera un helvetismo.",
+   "fr": "Employer des mots propres à l’Allemagne là où un helvétisme est attendu en Suisse.",
+   "it": "Usare parole proprie della Germania dove, parlando in Svizzera, ci si aspetta un elvetismo.",
+   "pt": "Usar palavras próprias da Alemanha quando, na Suíça, se espera um helvetismo."
+  }
  ],
  "redemittel": [
   {
    "expresion": "mit dem Velo",
-   "funcion": "Helvetismus, Verkehrsmittel",
+   "funcion": {
+    "de": "Helvetismus, Verkehrsmittel",
+    "en": "Helvetism, means of transport",
+    "es": "helvetismo, medio de transporte",
+    "fr": "helvétisme, moyen de transport",
+    "it": "elvetismo, mezzo di trasporto",
+    "pt": "helvetismo, meio de transporte"
+   },
    "traducciones": {
     "es": "en bicicleta",
     "en": "by bike",
@@ -73,7 +220,14 @@
   },
   {
    "expresion": "parkieren",
-   "funcion": "Helvetismus, Verb",
+   "funcion": {
+    "de": "Helvetismus, Verb",
+    "en": "Helvetism, verb",
+    "es": "helvetismo, verbo",
+    "fr": "helvétisme, verbe",
+    "it": "elvetismo, verbo",
+    "pt": "helvetismo, verbo"
+   },
    "traducciones": {
     "es": "aparcar",
     "en": "to park",
@@ -84,7 +238,14 @@
   },
   {
    "expresion": "das Billett",
-   "funcion": "Helvetismus, Fahrkarte",
+   "funcion": {
+    "de": "Helvetismus, Fahrkarte",
+    "en": "Helvetism, ticket",
+    "es": "helvetismo, billete",
+    "fr": "helvétisme, billet",
+    "it": "elvetismo, biglietto",
+    "pt": "helvetismo, passagem"
+   },
    "traducciones": {
     "es": "el billete",
     "en": "the ticket",
@@ -95,7 +256,14 @@
   },
   {
    "expresion": "das Trottoir",
-   "funcion": "Helvetismus, Bürgersteig",
+   "funcion": {
+    "de": "Helvetismus, Bürgersteig",
+    "en": "Helvetism, sidewalk",
+    "es": "helvetismo, acera",
+    "fr": "helvétisme, trottoir",
+    "it": "elvetismo, marciapiede",
+    "pt": "helvetismo, calçada"
+   },
    "traducciones": {
     "es": "la vereda",
     "en": "the pavement",
@@ -106,7 +274,14 @@
   },
   {
    "expresion": "der Coiffeur",
-   "funcion": "Helvetismus, Friseur",
+   "funcion": {
+    "de": "Helvetismus, Friseur",
+    "en": "Helvetism, hairdresser",
+    "es": "helvetismo, peluquería",
+    "fr": "helvétisme, coiffeur",
+    "it": "elvetismo, parrucchiere",
+    "pt": "helvetismo, cabeleireiro"
+   },
    "traducciones": {
     "es": "la peluquería",
     "en": "the hairdresser",
@@ -117,7 +292,14 @@
   },
   {
    "expresion": "Grüezi!",
-   "funcion": "Schweizer Gruss",
+   "funcion": {
+    "de": "Schweizer Gruss",
+    "en": "Swiss greeting",
+    "es": "saludo suizo",
+    "fr": "salutation suisse",
+    "it": "saluto svizzero",
+    "pt": "saudação suíça"
+   },
    "traducciones": {
     "es": "¡Hola! (saludo suizo)",
     "en": "Hello! (Swiss greeting)",
@@ -128,13 +310,55 @@
   }
  ],
  "autochequeo": [
-  "Kein ß im Text?",
-  "Sind die Helvetismen als Standard, nicht als Mundart eingesetzt?",
-  "Habe ich mindestens drei Helvetismen benutzt?",
-  "Klingt der Text natürlich?",
-  "Habe ich das Thema des Packs berücksichtigt?"
+  {
+   "de": "Kein ß im Text?",
+   "en": "No ß in the text?",
+   "es": "¿No hay ningún «ß» en el texto?",
+   "fr": "Pas de « ß » dans le texte ?",
+   "it": "Nessun «ß» nel testo?",
+   "pt": "Nenhum «ß» no texto?"
+  },
+  {
+   "de": "Sind die Helvetismen als Standard, nicht als Mundart eingesetzt?",
+   "en": "Are the Helvetisms used as standard language rather than dialect?",
+   "es": "¿Los helvetismos se usan como lengua estándar y no como dialecto?",
+   "fr": "Les helvétismes sont-ils employés comme langue standard et non comme dialecte ?",
+   "it": "Gli elvetismi sono usati come lingua standard e non come dialetto?",
+   "pt": "Os helvetismos são usados como língua padrão, e não como dialeto?"
+  },
+  {
+   "de": "Habe ich mindestens drei Helvetismen benutzt?",
+   "en": "Have I used at least three Helvetisms?",
+   "es": "¿Usé al menos tres helvetismos?",
+   "fr": "Ai-je utilisé au moins trois helvétismes ?",
+   "it": "Ho usato almeno tre elvetismi?",
+   "pt": "Usei pelo menos três helvetismos?"
+  },
+  {
+   "de": "Klingt der Text natürlich?",
+   "en": "Does the text sound natural?",
+   "es": "¿El texto suena natural?",
+   "fr": "Le texte sonne-t-il naturellement ?",
+   "it": "Il testo suona naturale?",
+   "pt": "O texto soa natural?"
+  },
+  {
+   "de": "Habe ich das Thema des Packs berücksichtigt?",
+   "en": "Have I taken the pack's topic into account?",
+   "es": "¿Tuve en cuenta el tema del pack?",
+   "fr": "Ai-je tenu compte du thème du pack ?",
+   "it": "Ho tenuto conto del tema del pack?",
+   "pt": "Levei em conta o tema do pack?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Helvetismen. Prüfen Sie die ss/ß-Schreibung und ob die Wörter korrekt als Standard eingesetzt sind. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Helvetismen. Prüfen Sie die ss/ß-Schreibung und ob die Wörter korrekt als Standard eingesetzt sind. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on the Helvetisms. Check the ss/ß spelling and whether the words are correctly used as standard language. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en los helvetismos. Revise la escritura «ss/ß» y si las palabras se usan correctamente como lengua estándar. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les helvétismes. Vérifiez l’orthographe « ss/ß » et que les mots sont correctement employés comme langue standard. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sugli elvetismi. Controlli la grafia «ss/ß» e che le parole siano usate correttamente come lingua standard. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nos helvetismos. Verifique a grafia «ss/ß» e se as palavras são usadas corretamente como língua padrão. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Das Genus von *la bici* übertragen: *die Velo* statt *das Velo*."

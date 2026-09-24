@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "n-Deklination und Pluralbildung der Nomen",
+ "titulo": {
+  "de": "n-Deklination und Pluralbildung der Nomen",
+  "en": "n-declension and noun plural formation",
+  "es": "Declinación en «n» y formación del plural de los sustantivos",
+  "fr": "Déclinaison en n et formation du pluriel des noms",
+  "it": "Declinazione in n e formazione del plurale dei sostantivi",
+  "pt": "Declinação em n e formação do plural dos substantivos"
+ },
  "categoria": "grammar",
  "ancla": "Aspekte B1+",
- "descripcion": "Eine kleine Gruppe maskuliner Nomen (der Student, der Mensch, der Name) bekommt in allen Kasus außer Nominativ ein -n oder -en. Diese n-Deklination hat in vielen anderen Sprachen keine Entsprechung und muss als eigenes Muster gelernt werden.",
+ "descripcion": {
+  "de": "Eine kleine Gruppe maskuliner Nomen (der Student, der Mensch, der Name) bekommt in allen Kasus außer Nominativ ein -n oder -en. Diese n-Deklination hat in vielen anderen Sprachen keine Entsprechung und muss als eigenes Muster gelernt werden.",
+  "en": "A small group of masculine nouns (der Student, der Mensch, der Name) take -n or -en in every case except the nominative. This n-declension has no equivalent in many other languages and must be learned as a separate pattern.",
+  "es": "Un pequeño grupo de sustantivos masculinos («der Student, der Mensch, der Name») añade «-n» o «-en» en todos los casos excepto el nominativo. Esta declinación en n no tiene equivalente en muchas otras lenguas y debe aprenderse como un patrón propio.",
+  "fr": "Un petit groupe de noms masculins (« der Student, der Mensch, der Name ») prend « -n » ou « -en » à tous les cas sauf au nominatif. Cette déclinaison en n n’a pas d’équivalent dans de nombreuses autres langues et doit être apprise comme un modèle à part.",
+  "it": "Un piccolo gruppo di sostantivi maschili («der Student, der Mensch, der Name») prende «-n» o «-en» in tutti i casi tranne il nominativo. Questa declinazione in n non ha equivalente in molte altre lingue e va imparata come schema a sé.",
+  "pt": "Um pequeno grupo de substantivos masculinos («der Student, der Mensch, der Name») recebe «-n» ou «-en» em todos os casos, exceto no nominativo. Essa declinação em n não tem equivalente em muitas outras línguas e deve ser aprendida como um padrão próprio."
+ },
  "cuadroReferencia": {
-  "titulo": "Die n-Deklination",
+  "titulo": {
+   "de": "Die n-Deklination",
+   "en": "The n-declension",
+   "es": "La declinación en n",
+   "fr": "La déclinaison en n",
+   "it": "La declinazione in n",
+   "pt": "A declinação em n"
+  },
   "columnas": [
-   "Kasus",
-   "der Student",
-   "der Mensch"
+   {
+    "de": "Kasus",
+    "en": "Case",
+    "es": "Caso",
+    "fr": "Cas",
+    "it": "Caso",
+    "pt": "Caso"
+   },
+   {
+    "de": "der Student",
+    "en": "der Student",
+    "es": "«der Student»",
+    "fr": "« der Student »",
+    "it": "«der Student»",
+    "pt": "«der Student»"
+   },
+   {
+    "de": "der Mensch",
+    "en": "der Mensch",
+    "es": "«der Mensch»",
+    "fr": "« der Mensch »",
+    "it": "«der Mensch»",
+    "pt": "«der Mensch»"
+   }
   ],
   "filas": [
    [
-    "Nominativ",
-    "der Student",
-    "der Mensch"
+    {
+     "de": "Nominativ",
+     "en": "Nominative",
+     "es": "Nominativo",
+     "fr": "Nominatif",
+     "it": "Nominativo",
+     "pt": "Nominativo"
+    },
+    {
+     "de": "der Student",
+     "en": "der Student",
+     "es": "«der Student»",
+     "fr": "« der Student »",
+     "it": "«der Student»",
+     "pt": "«der Student»"
+    },
+    {
+     "de": "der Mensch",
+     "en": "der Mensch",
+     "es": "«der Mensch»",
+     "fr": "« der Mensch »",
+     "it": "«der Mensch»",
+     "pt": "«der Mensch»"
+    }
    ],
    [
-    "Akkusativ",
-    "den Studenten",
-    "den Menschen"
+    {
+     "de": "Akkusativ",
+     "en": "Accusative",
+     "es": "Acusativo",
+     "fr": "Accusatif",
+     "it": "Accusativo",
+     "pt": "Acusativo"
+    },
+    {
+     "de": "den Studenten",
+     "en": "den Studenten",
+     "es": "«den Studenten»",
+     "fr": "« den Studenten »",
+     "it": "«den Studenten»",
+     "pt": "«den Studenten»"
+    },
+    {
+     "de": "den Menschen",
+     "en": "den Menschen",
+     "es": "«den Menschen»",
+     "fr": "« den Menschen »",
+     "it": "«den Menschen»",
+     "pt": "«den Menschen»"
+    }
    ],
    [
-    "Dativ",
-    "dem Studenten",
-    "dem Menschen"
+    {
+     "de": "Dativ",
+     "en": "Dative",
+     "es": "Dativo",
+     "fr": "Datif",
+     "it": "Dativo",
+     "pt": "Dativo"
+    },
+    {
+     "de": "dem Studenten",
+     "en": "dem Studenten",
+     "es": "«dem Studenten»",
+     "fr": "« dem Studenten »",
+     "it": "«dem Studenten»",
+     "pt": "«dem Studenten»"
+    },
+    {
+     "de": "dem Menschen",
+     "en": "dem Menschen",
+     "es": "«dem Menschen»",
+     "fr": "« dem Menschen »",
+     "it": "«dem Menschen»",
+     "pt": "«dem Menschen»"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich habe gestern einen Studenten aus Spanien kennengelernt.",
+   "texto": {
+    "de": "Ich habe gestern einen Studenten aus Spanien kennengelernt.",
+    "en": "Yesterday I met a student from Spain.",
+    "es": "Ayer conocí a un estudiante de España.",
+    "fr": "Hier, j’ai rencontré un étudiant espagnol.",
+    "it": "Ieri ho conosciuto uno studente spagnolo.",
+    "pt": "Ontem conheci um estudante da Espanha."
+   },
    "audio": true
   },
   {
-   "texto": "Ich habe mit dem Studenten lange gesprochen.",
+   "texto": {
+    "de": "Ich habe mit dem Studenten lange gesprochen.",
+    "en": "I spoke with the student for a long time.",
+    "es": "Hablé largo rato con el estudiante.",
+    "fr": "J’ai longtemps parlé avec l’étudiant.",
+    "it": "Ho parlato a lungo con lo studente.",
+    "pt": "Conversei bastante tempo com o estudante."
+   },
    "audio": true
   },
   {
-   "texto": "Jeder Mensch macht mal Fehler."
+   "texto": {
+    "de": "Jeder Mensch macht mal Fehler.",
+    "en": "Everyone makes mistakes sometimes.",
+    "es": "Todo el mundo se equivoca alguna vez.",
+    "fr": "Tout le monde fait des erreurs de temps en temps.",
+    "it": "Tutti sbagliano ogni tanto.",
+    "pt": "Todo mundo comete erros às vezes."
+   }
   }
  ],
  "notas": [
-  "Nur im Nominativ Singular bleibt die Form unverändert; in allen anderen Fällen kommt -n oder -en dazu.",
-  "Typische n-Deklinationsnomen: der Student, der Mensch, der Name, der Kunde, der Kollege, der Herr.",
-  "Der Plural bildet sich unregelmäßig und muss für jedes Nomen einzeln gelernt werden: -e, -er, -(e)n, -s oder ohne Endung."
+  {
+   "de": "Nur im Nominativ Singular bleibt die Form unverändert; in allen anderen Fällen kommt -n oder -en dazu.",
+   "en": "Only in the singular nominative does the form remain unchanged; in all other cases, -n or -en is added.",
+   "es": "Solo en nominativo singular la forma permanece sin cambios; en todos los demás casos se añade «-n» o «-en».",
+   "fr": "Ce n’est qu’au nominatif singulier que la forme reste inchangée ; dans tous les autres cas, on ajoute « -n » ou « -en ».",
+   "it": "Solo al nominativo singolare la forma resta invariata; in tutti gli altri casi si aggiunge «-n» o «-en».",
+   "pt": "Apenas no nominativo singular a forma permanece inalterada; em todos os outros casos, acrescenta-se «-n» ou «-en»."
+  },
+  {
+   "de": "Typische n-Deklinationsnomen: der Student, der Mensch, der Name, der Kunde, der Kollege, der Herr.",
+   "en": "Typical n-declension nouns: der Student, der Mensch, der Name, der Kunde, der Kollege, der Herr.",
+   "es": "Sustantivos típicos de la declinación en n: «der Student, der Mensch, der Name, der Kunde, der Kollege, der Herr».",
+   "fr": "Noms typiques de la déclinaison en n : « der Student, der Mensch, der Name, der Kunde, der Kollege, der Herr ».",
+   "it": "Sostantivi tipici della declinazione in n: «der Student, der Mensch, der Name, der Kunde, der Kollege, der Herr».",
+   "pt": "Substantivos típicos da declinação em n: «der Student, der Mensch, der Name, der Kunde, der Kollege, der Herr»."
+  },
+  {
+   "de": "Der Plural bildet sich unregelmäßig und muss für jedes Nomen einzeln gelernt werden: -e, -er, -(e)n, -s oder ohne Endung.",
+   "en": "Plural formation is irregular and must be learned separately for each noun: -e, -er, -(e)n, -s or no ending.",
+   "es": "La formación del plural es irregular y debe aprenderse por separado para cada sustantivo: «-e, -er, -(e)n, -s» o sin terminación.",
+   "fr": "La formation du pluriel est irrégulière et doit être apprise séparément pour chaque nom : « -e, -er, -(e)n, -s » ou sans terminaison.",
+   "it": "La formazione del plurale è irregolare e va imparata separatamente per ogni sostantivo: «-e, -er, -(e)n, -s» oppure senza desinenza.",
+   "pt": "A formação do plural é irregular e deve ser aprendida separadamente para cada substantivo: «-e, -er, -(e)n, -s» ou sem terminação."
+  }
  ],
  "contraste": {
   "es": "Das Spanische kennt keine Deklination nach Kasus — el estudiante bleibt in jeder Position gleich. Diese Struktur ist für Spanischsprachige völlig neu und wird deshalb häufig vergessen.",
@@ -58,13 +205,34 @@
   "en": "Das Englische hat keine Kasusendungen am Nomen, die n-Deklination ist also neu. Beim Plural gibt es verwandte Muster: man – men wie Mann – Männer, child – children wie Kind – Kinder. Das englische -s ist im Deutschen dagegen selten."
  },
  "errores": [
-  "Die n-Endung im Akkusativ oder Dativ vergessen.",
-  "Die n-Endung auch im Nominativ hinzufügen, wo sie nicht gehört."
+  {
+   "de": "Die n-Endung im Akkusativ oder Dativ vergessen.",
+   "en": "Forgetting the n-ending in the accusative or dative.",
+   "es": "Olvidar la terminación en n en acusativo o dativo.",
+   "fr": "Oublier la terminaison en n à l’accusatif ou au datif.",
+   "it": "Dimenticare la desinenza in n all’accusativo o al dativo.",
+   "pt": "Esquecer a terminação em n no acusativo ou no dativo."
+  },
+  {
+   "de": "Die n-Endung auch im Nominativ hinzufügen, wo sie nicht gehört.",
+   "en": "Adding the n-ending in the nominative too, where it does not belong.",
+   "es": "Añadir también la terminación en n en nominativo, donde no corresponde.",
+   "fr": "Ajouter également la terminaison en n au nominatif, où elle n’a pas sa place.",
+   "it": "Aggiungere la desinenza in n anche al nominativo, dove non va.",
+   "pt": "Acrescentar a terminação em n também no nominativo, onde ela não deve aparecer."
+  }
  ],
  "redemittel": [
   {
    "expresion": "einen Studenten",
-   "funcion": "n-Deklination, Akkusativ",
+   "funcion": {
+    "de": "n-Deklination, Akkusativ",
+    "en": "n-declension, accusative",
+    "es": "declinación en n, acusativo",
+    "fr": "déclinaison en n, accusatif",
+    "it": "declinazione in n, accusativo",
+    "pt": "declinação em n, acusativo"
+   },
    "traducciones": {
     "es": "a un estudiante",
     "en": "a student",
@@ -75,7 +243,14 @@
   },
   {
    "expresion": "mit dem Kollegen",
-   "funcion": "n-Deklination, Dativ",
+   "funcion": {
+    "de": "n-Deklination, Dativ",
+    "en": "n-declension, dative",
+    "es": "declinación en n, dativo",
+    "fr": "déclinaison en n, datif",
+    "it": "declinazione in n, dativo",
+    "pt": "declinação em n, dativo"
+   },
    "traducciones": {
     "es": "con el colega",
     "en": "with the colleague",
@@ -86,7 +261,14 @@
   },
   {
    "expresion": "der Name, den Namen",
-   "funcion": "n-Deklination, Beispielpaar",
+   "funcion": {
+    "de": "n-Deklination, Beispielpaar",
+    "en": "n-declension, example pair",
+    "es": "declinación en n, par de ejemplos",
+    "fr": "déclinaison en n, paire d’exemples",
+    "it": "declinazione in n, coppia di esempi",
+    "pt": "declinação em n, par de exemplos"
+   },
    "traducciones": {
     "es": "el nombre",
     "en": "the name",
@@ -97,7 +279,14 @@
   },
   {
    "expresion": "die Studenten (Plural)",
-   "funcion": "Pluralbildung",
+   "funcion": {
+    "de": "Pluralbildung",
+    "en": "plural formation",
+    "es": "formación del plural",
+    "fr": "formation du pluriel",
+    "it": "formazione del plurale",
+    "pt": "formação do plural"
+   },
    "traducciones": {
     "es": "los estudiantes",
     "en": "the students",
@@ -108,7 +297,14 @@
   },
   {
    "expresion": "die Männer (Plural)",
-   "funcion": "unregelmässiger Plural",
+   "funcion": {
+    "de": "unregelmässiger Plural",
+    "en": "irregular plural",
+    "es": "plural irregular",
+    "fr": "pluriel irrégulier",
+    "it": "plurale irregolare",
+    "pt": "plural irregular"
+   },
    "traducciones": {
     "es": "los hombres",
     "en": "the men",
@@ -119,7 +315,14 @@
   },
   {
    "expresion": "die Autos (Plural)",
-   "funcion": "Plural mit -s",
+   "funcion": {
+    "de": "Plural mit -s",
+    "en": "plural with -s",
+    "es": "plural con «-s»",
+    "fr": "pluriel en « -s »",
+    "it": "plurale in «-s»",
+    "pt": "plural com «-s»"
+   },
    "traducciones": {
     "es": "los autos",
     "en": "the cars",
@@ -130,13 +333,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich bei n-Deklinationsnomen im Akkusativ und Dativ die Endung -n/-en hinzugefügt?",
-  "Ist der Nominativ ohne diese Endung geblieben?",
-  "Stimmt der Plural der benutzten Nomen?",
-  "Habe ich mindestens zwei n-Deklinationsnomen benutzt?",
-  "Habe ich mindestens ein Beispiel im Plural verwendet?"
+  {
+   "de": "Habe ich bei n-Deklinationsnomen im Akkusativ und Dativ die Endung -n/-en hinzugefügt?",
+   "en": "With n-declension nouns, have I added -n/-en in the accusative and dative?",
+   "es": "¿En los sustantivos de declinación en n añadí «-n/-en» en acusativo y dativo?",
+   "fr": "Avec les noms de la déclinaison en n, ai-je ajouté « -n/-en » à l’accusatif et au datif ?",
+   "it": "Con i sostantivi della declinazione in n, ho aggiunto «-n/-en» all’accusativo e al dativo?",
+   "pt": "Nos substantivos da declinação em n, acrescentei «-n/-en» no acusativo e no dativo?"
+  },
+  {
+   "de": "Ist der Nominativ ohne diese Endung geblieben?",
+   "en": "Has the nominative remained without this ending?",
+   "es": "¿El nominativo quedó sin esta terminación?",
+   "fr": "Le nominatif est-il resté sans cette terminaison ?",
+   "it": "Il nominativo è rimasto senza questa desinenza?",
+   "pt": "O nominativo ficou sem essa terminação?"
+  },
+  {
+   "de": "Stimmt der Plural der benutzten Nomen?",
+   "en": "Is the plural of the nouns used correct?",
+   "es": "¿Es correcto el plural de los sustantivos utilizados?",
+   "fr": "Le pluriel des noms utilisés est-il correct ?",
+   "it": "Il plurale dei sostantivi usati è corretto?",
+   "pt": "O plural dos substantivos usados está correto?"
+  },
+  {
+   "de": "Habe ich mindestens zwei n-Deklinationsnomen benutzt?",
+   "en": "Have I used at least two n-declension nouns?",
+   "es": "¿Usé al menos dos sustantivos de declinación en n?",
+   "fr": "Ai-je utilisé au moins deux noms de la déclinaison en n ?",
+   "it": "Ho usato almeno due sostantivi della declinazione in n?",
+   "pt": "Usei pelo menos dois substantivos da declinação em n?"
+  },
+  {
+   "de": "Habe ich mindestens ein Beispiel im Plural verwendet?",
+   "en": "Have I used at least one example in the plural?",
+   "es": "¿Usé al menos un ejemplo en plural?",
+   "fr": "Ai-je utilisé au moins un exemple au pluriel ?",
+   "it": "Ho usato almeno un esempio al plurale?",
+   "pt": "Usei pelo menos um exemplo no plural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die n-Deklination und die Pluralbildung. Prüfen Sie jedes maskuline Nomen auf die richtige Endung im Akkusativ und Dativ. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die n-Deklination und die Pluralbildung. Prüfen Sie jedes maskuline Nomen auf die richtige Endung im Akkusativ und Dativ. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on n-declension and plural formation. Check every masculine noun for the correct ending in the accusative and dative. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en la declinación en n y la formación del plural. Revise en cada sustantivo masculino la terminación correcta en acusativo y dativo. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur la déclinaison en n et la formation du pluriel. Vérifiez pour chaque nom masculin la terminaison correcte à l’accusatif et au datif. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulla declinazione in n e sulla formazione del plurale. Controlli per ogni sostantivo maschile la desinenza corretta all’accusativo e al dativo. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente na declinação em n e na formação do plural. Verifique em cada substantivo masculino a terminação correta no acusativo e no dativo. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Den falschen Plural bilden, weil man ihn vom Spanischen ableitet."

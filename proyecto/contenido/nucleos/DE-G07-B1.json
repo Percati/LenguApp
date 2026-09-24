@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Adjektivdeklination",
+ "titulo": {
+  "de": "Adjektivdeklination",
+  "en": "Adjective declension",
+  "es": "Declinación de adjetivos",
+  "fr": "Déclinaison de l'adjectif",
+  "it": "Declinazione degli aggettivi",
+  "pt": "Declinação dos adjetivos"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Auf B1 wird die Adjektivendung nach den drei Grundtypen (bestimmter Artikel, unbestimmter Artikel, kein Artikel) im Nominativ und Akkusativ sicher gebildet. Dativ und die feineren Ausnahmen kommen erst auf B2 dazu.",
+ "descripcion": {
+  "de": "Auf B1 wird die Adjektivendung nach den drei Grundtypen (bestimmter Artikel, unbestimmter Artikel, kein Artikel) im Nominativ und Akkusativ sicher gebildet. Dativ und die feineren Ausnahmen kommen erst auf B2 dazu.",
+  "en": "At B1, adjective endings are used confidently according to the three basic patterns (definite article, indefinite article, no article) in the nominative and accusative. The dative and finer exceptions are introduced only at B2.",
+  "es": "En B1 se forman con seguridad las terminaciones de los adjetivos según los tres patrones básicos (artículo determinado, artículo indeterminado y sin artículo) en nominativo y acusativo. El dativo y las excepciones más finas se incorporan recién en B2.",
+  "fr": "Au niveau B1, on maîtrise les terminaisons des adjectifs selon les trois schémas de base (article défini, article indéfini, absence d’article) au nominatif et à l’accusatif. Le datif et les exceptions plus fines ne sont abordés qu’au niveau B2.",
+  "it": "A livello B1 si usano con sicurezza le desinenze degli aggettivi secondo i tre schemi di base (articolo determinativo, articolo indeterminativo, nessun articolo) al nominativo e all’accusativo. Il dativo e le eccezioni più sottili vengono introdotti solo al B2.",
+  "pt": "No nível B1, usam-se com segurança as terminações dos adjetivos segundo os três padrões básicos (artigo definido, artigo indefinido, sem artigo) no nominativo e no acusativo. O dativo e as exceções mais específicas só aparecem no B2."
+ },
  "cuadroReferencia": {
-  "titulo": "Adjektivendung nach Artikeltyp",
+  "titulo": {
+   "de": "Adjektivendung nach Artikeltyp",
+   "en": "Adjective ending by article type",
+   "es": "Terminación del adjetivo según el tipo de artículo",
+   "fr": "Terminaison de l’adjectif selon le type d’article",
+   "it": "Desinenza dell’aggettivo in base al tipo di articolo",
+   "pt": "Terminação do adjetivo conforme o tipo de artigo"
+  },
   "columnas": [
-   "Artikeltyp",
-   "Beispiel Nom.",
-   "Beispiel Akk."
+   {
+    "de": "Artikeltyp",
+    "en": "Article type",
+    "es": "Tipo de artículo",
+    "fr": "Type d’article",
+    "it": "Tipo di articolo",
+    "pt": "Tipo de artigo"
+   },
+   {
+    "de": "Beispiel Nom.",
+    "en": "Nom. example",
+    "es": "Ejemplo en nom.",
+    "fr": "Exemple au nom.",
+    "it": "Esempio al nom.",
+    "pt": "Exemplo no nom."
+   },
+   {
+    "de": "Beispiel Akk.",
+    "en": "Acc. example",
+    "es": "Ejemplo en acus.",
+    "fr": "Exemple à l’acc.",
+    "it": "Esempio all’acc.",
+    "pt": "Exemplo no acus."
+   }
   ],
   "filas": [
    [
-    "bestimmter Artikel",
-    "der neue Kollege",
-    "den neuen Kollegen"
+    {
+     "de": "bestimmter Artikel",
+     "en": "definite article",
+     "es": "artículo determinado",
+     "fr": "article défini",
+     "it": "articolo determinativo",
+     "pt": "artigo definido"
+    },
+    {
+     "de": "der neue Kollege",
+     "en": "the new male colleague",
+     "es": "el nuevo compañero",
+     "fr": "le nouveau collègue",
+     "it": "il nuovo collega",
+     "pt": "o novo colega"
+    },
+    {
+     "de": "den neuen Kollegen",
+     "en": "den neuen Kollegen",
+     "es": "«den neuen Kollegen»",
+     "fr": "« den neuen Kollegen »",
+     "it": "«den neuen Kollegen»",
+     "pt": "«den neuen Kollegen»"
+    }
    ],
    [
-    "unbestimmter Artikel",
-    "ein neuer Kollege",
-    "einen neuen Kollegen"
+    {
+     "de": "unbestimmter Artikel",
+     "en": "indefinite article",
+     "es": "artículo indeterminado",
+     "fr": "article indéfini",
+     "it": "articolo indeterminativo",
+     "pt": "artigo indefinido"
+    },
+    {
+     "de": "ein neuer Kollege",
+     "en": "ein neuer Kollege",
+     "es": "«ein neuer Kollege»",
+     "fr": "« ein neuer Kollege »",
+     "it": "«ein neuer Kollege»",
+     "pt": "«ein neuer Kollege»"
+    },
+    {
+     "de": "einen neuen Kollegen",
+     "en": "einen neuen Kollegen",
+     "es": "«einen neuen Kollegen»",
+     "fr": "« einen neuen Kollegen »",
+     "it": "«einen neuen Kollegen»",
+     "pt": "«einen neuen Kollegen»"
+    }
    ],
    [
-    "kein Artikel",
-    "neuer Kollege",
-    "neuen Kollegen"
+    {
+     "de": "kein Artikel",
+     "en": "no article",
+     "es": "sin artículo",
+     "fr": "sans article",
+     "it": "senza articolo",
+     "pt": "sem artigo"
+    },
+    {
+     "de": "neuer Kollege",
+     "en": "neuer Kollege",
+     "es": "«neuer Kollege»",
+     "fr": "« neuer Kollege »",
+     "it": "«neuer Kollege»",
+     "pt": "«neuer Kollege»"
+    },
+    {
+     "de": "neuen Kollegen",
+     "en": "neuen Kollegen",
+     "es": "«neuen Kollegen»",
+     "fr": "« neuen Kollegen »",
+     "it": "«neuen Kollegen»",
+     "pt": "«neuen Kollegen»"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Der neue Kollege ist sehr freundlich.",
+   "texto": {
+    "de": "Der neue Kollege ist sehr freundlich.",
+    "en": "The new colleague is very friendly.",
+    "es": "El nuevo compañero es muy amable.",
+    "fr": "Le nouveau collègue est très sympathique.",
+    "it": "Il nuovo collega è molto gentile.",
+    "pt": "O novo colega é muito simpático."
+   },
    "audio": true
   },
   {
-   "texto": "Ich habe einen neuen Kollegen kennengelernt.",
+   "texto": {
+    "de": "Ich habe einen neuen Kollegen kennengelernt.",
+    "en": "I met a new colleague.",
+    "es": "Conocí a un nuevo colega.",
+    "fr": "J’ai rencontré un nouveau collègue.",
+    "it": "Ho conosciuto un nuovo collega.",
+    "pt": "Conheci um novo colega."
+   },
    "audio": true
   },
   {
-   "texto": "Wir trinken gern frischen Orangensaft."
+   "texto": {
+    "de": "Wir trinken gern frischen Orangensaft.",
+    "en": "We like drinking fresh orange juice.",
+    "es": "Nos gusta tomar jugo de naranja fresco.",
+    "fr": "Nous aimons boire du jus d’orange frais.",
+    "it": "Ci piace bere succo d’arancia fresco.",
+    "pt": "Gostamos de tomar suco de laranja fresco."
+   }
   }
  ],
  "notas": [
-  "Nach dem bestimmten Artikel endet das Adjektiv meist auf -e oder -en.",
-  "Nach dem unbestimmten Artikel im Nominativ zeigt die Endung das Genus: -er, -e, -es.",
-  "Ohne Artikel trägt das Adjektiv selbst die Artikelendung: guter Kaffee, wie der Artikel der Kaffee."
+  {
+   "de": "Nach dem bestimmten Artikel endet das Adjektiv meist auf -e oder -en.",
+   "en": "After the definite article, the adjective usually ends in -e or -en.",
+   "es": "Después del artículo determinado, el adjetivo suele terminar en «-e» o «-en».",
+   "fr": "Après l’article défini, l’adjectif se termine généralement par « -e » ou « -en ».",
+   "it": "Dopo l’articolo determinativo, l’aggettivo termina di solito in «-e» o «-en».",
+   "pt": "Depois do artigo definido, o adjetivo geralmente termina em «-e» ou «-en»."
+  },
+  {
+   "de": "Nach dem unbestimmten Artikel im Nominativ zeigt die Endung das Genus: -er, -e, -es.",
+   "en": "After the indefinite article in the nominative, the ending shows the gender: -er, -e, -es.",
+   "es": "Después del artículo indeterminado en nominativo, la terminación indica el género: «-er, -e, -es».",
+   "fr": "Après l’article indéfini au nominatif, la terminaison indique le genre : « -er, -e, -es ».",
+   "it": "Dopo l’articolo indeterminativo al nominativo, la desinenza indica il genere: «-er, -e, -es».",
+   "pt": "Depois do artigo indefinido no nominativo, a terminação indica o gênero: «-er, -e, -es»."
+  },
+  {
+   "de": "Ohne Artikel trägt das Adjektiv selbst die Artikelendung: guter Kaffee, wie der Artikel der Kaffee.",
+   "en": "Without an article, the adjective itself carries the article ending: guter Kaffee, like the article der in der Kaffee.",
+   "es": "Sin artículo, el propio adjetivo lleva la terminación del artículo: «guter Kaffee», como el artículo «der» en «der Kaffee».",
+   "fr": "Sans article, l’adjectif porte lui-même la terminaison de l’article : « guter Kaffee », comme l’article « der » dans « der Kaffee ».",
+   "it": "Senza articolo, è l’aggettivo stesso a portare la desinenza dell’articolo: «guter Kaffee», come l’articolo «der» in «der Kaffee».",
+   "pt": "Sem artigo, o próprio adjetivo recebe a terminação do artigo: «guter Kaffee», como o artigo «der» em «der Kaffee»."
+  }
  ],
  "contraste": {
   "es": "Das Spanische dekliniert Adjektive nur nach Genus und Numerus, nicht nach Kasus und nicht in Abhängigkeit vom Artikeltyp. Diese dreifache Abhängigkeit ist für Spanischsprachige komplett neu, weshalb der Fehler bis weit über B1 hinaus bestehen bleibt.",
@@ -58,14 +205,42 @@
   "en": "Englische Adjektive haben nie eine Endung, Englischsprachige lassen deshalb das Adjektiv oft unverändert (ein gut Wein). Die drei Artikeltypen sind ganz neu; eine Leitfrage hilft: Zeigt der Artikel schon das Geschlecht? Wenn nicht, zeigt es das Adjektiv (ein guter Wein)."
  },
  "errores": [
-  "Die Endung nur nach Genus wählen und den Artikeltyp ignorieren.",
-  "Nach dem unbestimmten Artikel die Endung des bestimmten Artikels verwenden.",
-  "Im Akkusativ die Nominativendung beibehalten."
+  {
+   "de": "Die Endung nur nach Genus wählen und den Artikeltyp ignorieren.",
+   "en": "Choosing the ending only by gender and ignoring the type of article.",
+   "es": "Elegir la terminación solo según el género e ignorar el tipo de artículo.",
+   "fr": "Choisir la terminaison uniquement selon le genre et ignorer le type d’article.",
+   "it": "Scegliere la desinenza solo in base al genere e ignorare il tipo di articolo.",
+   "pt": "Escolher a terminação apenas pelo gênero e ignorar o tipo de artigo."
+  },
+  {
+   "de": "Nach dem unbestimmten Artikel die Endung des bestimmten Artikels verwenden.",
+   "en": "Using the definite-article ending after an indefinite article.",
+   "es": "Usar la terminación del artículo determinado después de un artículo indeterminado.",
+   "fr": "Utiliser la terminaison de l’article défini après un article indéfini.",
+   "it": "Usare la desinenza dell’articolo determinativo dopo un articolo indeterminativo.",
+   "pt": "Usar a terminação do artigo definido depois de um artigo indefinido."
+  },
+  {
+   "de": "Im Akkusativ die Nominativendung beibehalten.",
+   "en": "Keeping the nominative ending in the accusative.",
+   "es": "Mantener la terminación de nominativo en acusativo.",
+   "fr": "Conserver la terminaison du nominatif à l’accusatif.",
+   "it": "Mantenere la desinenza del nominativo all’accusativo.",
+   "pt": "Manter a terminação do nominativo no acusativo."
+  }
  ],
  "redemittel": [
   {
    "expresion": "der neue…",
-   "funcion": "bestimmter Artikel, Nom.",
+   "funcion": {
+    "de": "bestimmter Artikel, Nom.",
+    "en": "definite article, nom.",
+    "es": "artículo determinado, nom.",
+    "fr": "article défini, nom.",
+    "it": "articolo determinativo, nom.",
+    "pt": "artigo definido, nom."
+   },
    "traducciones": {
     "es": "el nuevo…",
     "en": "the new…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "ein neuer…",
-   "funcion": "unbestimmter Artikel, Nom. mask.",
+   "funcion": {
+    "de": "unbestimmter Artikel, Nom. mask.",
+    "en": "indefinite article, nom. masc.",
+    "es": "artículo indeterminado, nom. masc.",
+    "fr": "article indéfini, nom. masc.",
+    "it": "articolo indeterminativo, nom. masc.",
+    "pt": "artigo indefinido, nom. masc."
+   },
    "traducciones": {
     "es": "un nuevo…",
     "en": "a new…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "einen neuen…",
-   "funcion": "unbestimmter Artikel, Akk. mask.",
+   "funcion": {
+    "de": "unbestimmter Artikel, Akk. mask.",
+    "en": "indefinite article, acc. masc.",
+    "es": "artículo indeterminado, acus. masc.",
+    "fr": "article indéfini, acc. masc.",
+    "it": "articolo indeterminativo, acc. masc.",
+    "pt": "artigo indefinido, acus. masc."
+   },
    "traducciones": {
     "es": "un nuevo… (acusativo)",
     "en": "a new… (accusative)",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "frischer…",
-   "funcion": "kein Artikel, Nom. mask.",
+   "funcion": {
+    "de": "kein Artikel, Nom. mask.",
+    "en": "no article, nom. masc.",
+    "es": "sin artículo, nom. masc.",
+    "fr": "sans article, nom. masc.",
+    "it": "senza articolo, nom. masc.",
+    "pt": "sem artigo, nom. masc."
+   },
    "traducciones": {
     "es": "…fresco",
     "en": "fresh…",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "gutes…",
-   "funcion": "kein Artikel, Nom./Akk. neutr.",
+   "funcion": {
+    "de": "kein Artikel, Nom./Akk. neutr.",
+    "en": "no article, nom./acc. neut.",
+    "es": "sin artículo, nom./acus. neutro",
+    "fr": "sans article, nom./acc. neutre",
+    "it": "senza articolo, nom./acc. neutro",
+    "pt": "sem artigo, nom./acus. neutro"
+   },
    "traducciones": {
     "es": "buen…",
     "en": "good…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "die neue…",
-   "funcion": "bestimmter Artikel, Nom./Akk. fem.",
+   "funcion": {
+    "de": "bestimmter Artikel, Nom./Akk. fem.",
+    "en": "definite article, nom./acc. fem.",
+    "es": "artículo determinado, nom./acus. fem.",
+    "fr": "article défini, nom./acc. fém.",
+    "it": "articolo determinativo, nom./acc. fem.",
+    "pt": "artigo definido, nom./acus. fem."
+   },
    "traducciones": {
     "es": "la nueva…",
     "en": "the new… (feminine)",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich den Artikeltyp (bestimmt, unbestimmt, keiner) richtig erkannt?",
-  "Stimmt die Endung mit Genus und Kasus überein?",
-  "Habe ich alle drei Artikeltypen mindestens einmal verwendet?",
-  "Bin ich mir bei jedem Genus sicher?",
-  "Habe ich den Fehler vermieden, die Endung nur nach dem Spanischen zu wählen (nur Genus, kein Kasus)?"
+  {
+   "de": "Habe ich den Artikeltyp (bestimmt, unbestimmt, keiner) richtig erkannt?",
+   "en": "Have I correctly identified the article type (definite, indefinite, none)?",
+   "es": "¿Identifiqué correctamente el tipo de artículo (determinado, indeterminado, ninguno)?",
+   "fr": "Ai-je correctement identifié le type d’article (défini, indéfini, aucun) ?",
+   "it": "Ho identificato correttamente il tipo di articolo (determinativo, indeterminativo, nessuno)?",
+   "pt": "Identifiquei corretamente o tipo de artigo (definido, indefinido, nenhum)?"
+  },
+  {
+   "de": "Stimmt die Endung mit Genus und Kasus überein?",
+   "en": "Does the ending agree with gender and case?",
+   "es": "¿La terminación concuerda con el género y el caso?",
+   "fr": "La terminaison correspond-elle au genre et au cas ?",
+   "it": "La desinenza concorda con il genere e il caso?",
+   "pt": "A terminação corresponde ao gênero e ao caso?"
+  },
+  {
+   "de": "Habe ich alle drei Artikeltypen mindestens einmal verwendet?",
+   "en": "Have I used all three article types at least once?",
+   "es": "¿Usé los tres tipos de artículo al menos una vez?",
+   "fr": "Ai-je utilisé les trois types d’article au moins une fois ?",
+   "it": "Ho usato tutti e tre i tipi di articolo almeno una volta?",
+   "pt": "Usei os três tipos de artigo pelo menos uma vez?"
+  },
+  {
+   "de": "Bin ich mir bei jedem Genus sicher?",
+   "en": "Am I sure about the gender in each case?",
+   "es": "¿Estoy seguro/a del género en cada caso?",
+   "fr": "Suis-je sûr(e) du genre dans chaque cas ?",
+   "it": "Sono sicuro/a del genere in ogni caso?",
+   "pt": "Tenho certeza do gênero em cada caso?"
+  },
+  {
+   "de": "Habe ich den Fehler vermieden, die Endung nur nach dem Spanischen zu wählen (nur Genus, kein Kasus)?",
+   "en": "Have I avoided the mistake of choosing the ending only as in Spanish (gender only, no case)?",
+   "es": "¿Evité el error de elegir la terminación solo como en español (solo género, sin caso)?",
+   "fr": "Ai-je évité l’erreur de choisir la terminaison uniquement comme en espagnol (seulement le genre, sans tenir compte du cas) ?",
+   "it": "Ho evitato l’errore di scegliere la desinenza solo come in spagnolo (solo genere, senza caso)?",
+   "pt": "Evitei o erro de escolher a terminação apenas como em espanhol (só gênero, sem levar o caso em conta)?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendungen im Nominativ und Akkusativ. Prüfen Sie bei jedem Adjektiv den Artikeltyp, das Genus und den Kasus. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendungen im Nominativ und Akkusativ. Prüfen Sie bei jedem Adjektiv den Artikeltyp, das Genus und den Kasus. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on adjective endings in the nominative and accusative. For each adjective, check the article type, gender and case. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en las terminaciones de los adjetivos en nominativo y acusativo. Para cada adjetivo, revise el tipo de artículo, el género y el caso. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les terminaisons des adjectifs au nominatif et à l’accusatif. Pour chaque adjectif, vérifiez le type d’article, le genre et le cas. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulle desinenze degli aggettivi al nominativo e all’accusativo. Per ogni aggettivo, controlli il tipo di articolo, il genere e il caso. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nas terminações dos adjetivos no nominativo e no acusativo. Para cada adjetivo, verifique o tipo de artigo, o gênero e o caso. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Das Genus aus dem Spanischen übernehmen: *der neue Auto* nach *el coche* statt *das neue Auto*."

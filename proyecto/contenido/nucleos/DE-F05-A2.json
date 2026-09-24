@@ -3,48 +3,167 @@
  "nivel": "A2",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Vorschläge machen und aushandeln",
+ "titulo": {
+  "de": "Vorschläge machen und aushandeln",
+  "en": "Making and negotiating suggestions",
+  "es": "Hacer y negociar propuestas",
+  "fr": "Faire et négocier des propositions",
+  "it": "Fare e negoziare proposte",
+  "pt": "Fazer e negociar sugestões"
+ },
  "categoria": "fluency",
  "ancla": "PD A2",
- "descripcion": "Auf A2 macht man einen sehr einfachen Vorschlag mit wollen wir und reagiert mit ja oder nein. Freiere Struktur und dramaturgische Elemente kommen erst auf höheren Niveaus dazu. Wichtig ist vor allem, sich klar und einfach auszudrücken.",
+ "descripcion": {
+  "de": "Auf A2 macht man einen sehr einfachen Vorschlag mit wollen wir und reagiert mit ja oder nein. Freiere Struktur und dramaturgische Elemente kommen erst auf höheren Niveaus dazu. Wichtig ist vor allem, sich klar und einfach auszudrücken.",
+  "en": "At A2, you make a very simple suggestion with wollen wir and respond with yes or no. Freer organization and dramatic elements are added only at higher levels. The main thing is to express yourself clearly and simply.",
+  "es": "En A2 se hace una propuesta muy sencilla con «wollen wir» y se responde con sí o no. Una organización más libre y elementos narrativos aparecen recién en niveles superiores. Lo importante es expresarse con claridad y sencillez.",
+  "fr": "Au niveau A2, on fait une proposition très simple avec « wollen wir » et on répond par oui ou non. Une organisation plus libre et des éléments narratifs n'apparaissent qu'aux niveaux supérieurs. L'essentiel est de s'exprimer clairement et simplement.",
+  "it": "A livello A2 si fa una proposta molto semplice con «wollen wir» e si risponde sì o no. Un'organizzazione più libera e gli elementi narrativi arrivano solo ai livelli superiori. L'importante è esprimersi in modo chiaro e semplice.",
+  "pt": "No nível A2, faz-se uma sugestão bem simples com «wollen wir» e responde-se com sim ou não. Uma organização mais livre e elementos narrativos aparecem apenas nos níveis superiores. O mais importante é se expressar de forma clara e simples."
+ },
  "cuadroReferencia": {
-  "titulo": "Vorschlag und Antwort",
+  "titulo": {
+   "de": "Vorschlag und Antwort",
+   "en": "Suggestion and response",
+   "es": "Propuesta y respuesta",
+   "fr": "Proposition et réponse",
+   "it": "Proposta e risposta",
+   "pt": "Sugestão e resposta"
+  },
   "columnas": [
-   "Formel",
-   "Beispiel"
+   {
+    "de": "Formel",
+    "en": "Phrase",
+    "es": "Fórmula",
+    "fr": "Formule",
+    "it": "Formula",
+    "pt": "Fórmula"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Wollen wir…?",
-    "Wollen wir ins Kino gehen?"
+    {
+     "de": "Wollen wir…?",
+     "en": "Shall we…?",
+     "es": "¿Querés que…? / ¿Vamos a…?",
+     "fr": "On… ? / Et si on… ?",
+     "it": "Vogliamo…?",
+     "pt": "Vamos…?"
+    },
+    {
+     "de": "Wollen wir ins Kino gehen?",
+     "en": "Shall we go to the cinema?",
+     "es": "¿Vamos al cine?",
+     "fr": "On va au cinéma ?",
+     "it": "Andiamo al cinema?",
+     "pt": "Vamos ao cinema?"
+    }
    ],
    [
-    "Antwort",
-    "Ja, gerne! / Nein, lieber nicht."
+    {
+     "de": "Antwort",
+     "en": "Response",
+     "es": "Respuesta",
+     "fr": "Réponse",
+     "it": "Risposta",
+     "pt": "Resposta"
+    },
+    {
+     "de": "Ja, gerne! / Nein, lieber nicht.",
+     "en": "Yes, gladly! / No, I'd rather not.",
+     "es": "¡Sí, encantado/a! / No, mejor no.",
+     "fr": "Oui, volontiers ! / Non, je préfère pas.",
+     "it": "Sì, volentieri! / No, preferirei di no.",
+     "pt": "Sim, com prazer! / Não, melhor não."
+    }
    ],
    [
-    "Alternative",
-    "Wir könnten auch ins Museum gehen."
+    {
+     "de": "Alternative",
+     "en": "Alternative",
+     "es": "Alternativa",
+     "fr": "Alternative",
+     "it": "Alternativa",
+     "pt": "Alternativa"
+    },
+    {
+     "de": "Wir könnten auch ins Museum gehen.",
+     "en": "We could also go to the museum.",
+     "es": "También podríamos ir al museo.",
+     "fr": "On pourrait aussi aller au musée.",
+     "it": "Potremmo anche andare al museo.",
+     "pt": "Também poderíamos ir ao museu."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Wollen wir am Samstag ins Kino gehen?",
+   "texto": {
+    "de": "Wollen wir am Samstag ins Kino gehen?",
+    "en": "Shall we go to the cinema on Saturday?",
+    "es": "¿Vamos al cine el sábado?",
+    "fr": "On va au cinéma samedi ?",
+    "it": "Andiamo al cinema sabato?",
+    "pt": "Vamos ao cinema no sábado?"
+   },
    "audio": true
   },
   {
-   "texto": "Ja, gerne! Das klingt gut.",
+   "texto": {
+    "de": "Ja, gerne! Das klingt gut.",
+    "en": "Yes, gladly! That sounds good.",
+    "es": "¡Sí, encantado/a! Suena bien.",
+    "fr": "Oui, volontiers ! Ça a l'air bien.",
+    "it": "Sì, volentieri! Sembra una buona idea.",
+    "pt": "Sim, com prazer! Parece uma boa ideia."
+   },
    "audio": true
   },
   {
-   "texto": "Nein, lieber nicht, ich habe keine Zeit."
+   "texto": {
+    "de": "Nein, lieber nicht, ich habe keine Zeit.",
+    "en": "No, I'd rather not, I don't have time.",
+    "es": "No, mejor no, no tengo tiempo.",
+    "fr": "Non, je préfère pas, je n'ai pas le temps.",
+    "it": "No, preferirei di no, non ho tempo.",
+    "pt": "Não, melhor não, não tenho tempo."
+   }
   }
  ],
  "notas": [
-  "Wollen wir…? ist die einfachste Form, einen Vorschlag zu machen.",
-  "Ja, gerne! ist eine freundliche Zustimmung.",
-  "Nein, lieber nicht ist eine höfliche Ablehnung."
+  {
+   "de": "Wollen wir…? ist die einfachste Form, einen Vorschlag zu machen.",
+   "en": "Wollen wir…? is the simplest way to make a suggestion.",
+   "es": "«Wollen wir…?» es la forma más sencilla de hacer una propuesta.",
+   "fr": "« Wollen wir… ? » est la façon la plus simple de faire une proposition.",
+   "it": "«Wollen wir…?» è il modo più semplice per fare una proposta.",
+   "pt": "«Wollen wir…?» é a forma mais simples de fazer uma sugestão."
+  },
+  {
+   "de": "Ja, gerne! ist eine freundliche Zustimmung.",
+   "en": "Ja, gerne! is a friendly way to agree.",
+   "es": "«Ja, gerne!» es una forma amable de aceptar.",
+   "fr": "« Ja, gerne ! » est une façon amicale d'accepter.",
+   "it": "«Ja, gerne!» è un modo cordiale per accettare.",
+   "pt": "«Ja, gerne!» é uma forma simpática de aceitar."
+  },
+  {
+   "de": "Nein, lieber nicht ist eine höfliche Ablehnung.",
+   "en": "Nein, lieber nicht is a polite way to decline.",
+   "es": "«Nein, lieber nicht» es una forma cortés de rechazar.",
+   "fr": "« Nein, lieber nicht » est une manière polie de refuser.",
+   "it": "«Nein, lieber nicht» è un modo cortese per rifiutare.",
+   "pt": "«Nein, lieber nicht» é uma forma educada de recusar."
+  }
  ],
  "contraste": {
   "es": "Das Spanische hat mit ¿vamos a…? eine direkte Entsprechung zu wollen wir…?",
@@ -54,13 +173,34 @@
   "en": "Shall we…? entspricht genau wollen wir…?, und let's entspricht lass uns. Vorschläge übertragen sich deshalb direkt."
  },
  "errores": [
-  "Auf einen Vorschlag nur mit nein antworten.",
-  "Wollen wir? falsch bilden."
+  {
+   "de": "Auf einen Vorschlag nur mit nein antworten.",
+   "en": "Answering a suggestion with only nein.",
+   "es": "Responder a una propuesta solo con «nein».",
+   "fr": "Répondre à une proposition uniquement par « nein ».",
+   "it": "Rispondere a una proposta solo con «nein».",
+   "pt": "Responder a uma sugestão apenas com «nein»."
+  },
+  {
+   "de": "Wollen wir? falsch bilden.",
+   "en": "Forming Wollen wir…? incorrectly.",
+   "es": "Formar mal «Wollen wir…?».",
+   "fr": "Mal former « Wollen wir… ? ».",
+   "it": "Formare «Wollen wir…?» in modo errato.",
+   "pt": "Formar «Wollen wir…?» de maneira incorreta."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Wollen wir…?",
-   "funcion": "Vorschlag",
+   "funcion": {
+    "de": "Vorschlag",
+    "en": "suggestion",
+    "es": "propuesta",
+    "fr": "proposition",
+    "it": "proposta",
+    "pt": "sugestão"
+   },
    "traducciones": {
     "es": "¿Vamos a…?",
     "en": "Shall we…?",
@@ -71,7 +211,14 @@
   },
   {
    "expresion": "Ja, gerne!",
-   "funcion": "Zustimmung",
+   "funcion": {
+    "de": "Zustimmung",
+    "en": "Agreement",
+    "es": "Acuerdo",
+    "fr": "Accord",
+    "it": "Accordo",
+    "pt": "Concordância"
+   },
    "traducciones": {
     "es": "¡Sí, con gusto!",
     "en": "Yes, gladly!",
@@ -82,7 +229,14 @@
   },
   {
    "expresion": "Nein, lieber nicht.",
-   "funcion": "Ablehnung",
+   "funcion": {
+    "de": "Ablehnung",
+    "en": "declining",
+    "es": "rechazo",
+    "fr": "refus",
+    "it": "rifiuto",
+    "pt": "recusa"
+   },
    "traducciones": {
     "es": "No, mejor no.",
     "en": "No, better not.",
@@ -93,7 +247,14 @@
   },
   {
    "expresion": "Gute Idee!",
-   "funcion": "Zustimmung, enthusiastisch",
+   "funcion": {
+    "de": "Zustimmung, enthusiastisch",
+    "en": "enthusiastic agreement",
+    "es": "aceptación entusiasta",
+    "fr": "accord enthousiaste",
+    "it": "accordo entusiasta",
+    "pt": "aceitação entusiasmada"
+   },
    "traducciones": {
     "es": "¡Buena idea!",
     "en": "Good idea!",
@@ -104,7 +265,14 @@
   },
   {
    "expresion": "Wir könnten…",
-   "funcion": "Vorschlag, Alternative",
+   "funcion": {
+    "de": "Vorschlag, Alternative",
+    "en": "suggestion, alternative",
+    "es": "propuesta, alternativa",
+    "fr": "proposition, alternative",
+    "it": "proposta, alternativa",
+    "pt": "sugestão, alternativa"
+   },
    "traducciones": {
     "es": "Podríamos…",
     "en": "We could…",
@@ -115,7 +283,14 @@
   },
   {
    "expresion": "Das klingt gut.",
-   "funcion": "Zustimmung",
+   "funcion": {
+    "de": "Zustimmung",
+    "en": "Agreement",
+    "es": "Acuerdo",
+    "fr": "Accord",
+    "it": "Accordo",
+    "pt": "Concordância"
+   },
    "traducciones": {
     "es": "Suena bien.",
     "en": "That sounds good.",
@@ -126,13 +301,55 @@
   }
  ],
  "autochequeo": [
-  "Ist der Vorschlag klar?",
-  "Habe ich klar geantwortet?",
-  "Klingt der Satz natürlich?",
-  "Klingt der Satz natürlich?",
-  "Klingt der Satz natürlich?"
+  {
+   "de": "Ist der Vorschlag klar?",
+   "en": "Is the suggestion clear?",
+   "es": "¿La propuesta está clara?",
+   "fr": "La proposition est-elle claire ?",
+   "it": "La proposta è chiara?",
+   "pt": "A sugestão está clara?"
+  },
+  {
+   "de": "Habe ich klar geantwortet?",
+   "en": "Have I answered clearly?",
+   "es": "¿Respondí con claridad?",
+   "fr": "Ai-je répondu clairement ?",
+   "it": "Ho risposto in modo chiaro?",
+   "pt": "Respondi com clareza?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Vorschlag und die Antwort. Prüfen Sie, ob beides klar ist. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob die Formeln zur Situation passen.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf den Vorschlag und die Antwort. Prüfen Sie, ob beides klar ist. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob die Formeln zur Situation passen.",
+  "en": "Focus exclusively on the suggestion and the response. Check whether both are clear. Do not rewrite the text. Also check whether the expressions fit the situation.",
+  "es": "Concéntrese exclusivamente en la propuesta y la respuesta. Compruebe si ambas están claras. No reescriba el texto. Compruebe también si las fórmulas se adecuan a la situación.",
+  "fr": "Concentrez-vous exclusivement sur la proposition et la réponse. Vérifiez si les deux sont claires. Ne réécrivez pas le texte. Vérifiez également si les formules conviennent à la situation.",
+  "it": "Si concentri esclusivamente sulla proposta e sulla risposta. Verifichi che entrambe siano chiare. Non riscriva il testo. Controlli anche se le formule sono adatte alla situazione.",
+  "pt": "Concentre-se exclusivamente na sugestão e na resposta. Verifique se ambas estão claras. Não reescreva o texto. Verifique também se as fórmulas combinam com a situação."
+ },
  "erroresContrastivos": {
   "es": [
    "*¿Te apetece?* als *Hast du Appetit?* übertragen statt *Hast du Lust?*"

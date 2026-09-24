@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Satzbau: Haupt- und Nebensatz",
+ "titulo": {
+  "de": "Satzbau: Haupt- und Nebensatz",
+  "en": "Sentence structure: main and subordinate clauses",
+  "es": "Estructura de la oración: principal y subordinada",
+  "fr": "Structure de la phrase : proposition principale et subordonnée",
+  "it": "Struttura della frase: principale e subordinata",
+  "pt": "Estrutura da frase: oração principal e subordinada"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Auf B1 wird der Nebensatz mit Verbletztstellung sicher gebildet: weil, dass, wenn, obwohl schicken das konjugierte Verb ans Ende. Das ist die Grundregel, die auf B2 mit mehr Konnektoren und auf C1 mit komplexeren Kombinationen erweitert wird. Hier zählt vor allem, die Regel automatisch anzuwenden.",
+ "descripcion": {
+  "de": "Auf B1 wird der Nebensatz mit Verbletztstellung sicher gebildet: weil, dass, wenn, obwohl schicken das konjugierte Verb ans Ende. Das ist die Grundregel, die auf B2 mit mehr Konnektoren und auf C1 mit komplexeren Kombinationen erweitert wird. Hier zählt vor allem, die Regel automatisch anzuwenden.",
+  "en": "At B1, subordinate clauses with the verb in final position should be formed reliably: weil, dass, wenn and obwohl send the conjugated verb to the end. This is the basic rule that is expanded at B2 with more connectors and at C1 with more complex combinations. Here, the main goal is to apply the rule automatically.",
+  "es": "En B1 hay que formar con seguridad las oraciones subordinadas con el verbo al final: «weil», «dass», «wenn» y «obwohl» llevan el verbo conjugado al final. Esta es la regla básica, que en B2 se amplía con más conectores y en C1 con combinaciones más complejas. Aquí lo principal es aplicar la regla de forma automática.",
+  "fr": "Au niveau B1, il faut maîtriser les subordonnées avec le verbe en position finale : « weil », « dass », « wenn » et « obwohl » placent le verbe conjugué à la fin. C’est la règle de base, élargie au niveau B2 avec davantage de connecteurs et au niveau C1 avec des combinaisons plus complexes. Ici, l’essentiel est d’appliquer la règle automatiquement.",
+  "it": "A livello B1 bisogna formare con sicurezza le subordinate con il verbo in fondo: «weil», «dass», «wenn» e «obwohl» mandano il verbo coniugato alla fine. È la regola di base, che al B2 si amplia con più connettivi e al C1 con combinazioni più complesse. Qui conta soprattutto applicarla automaticamente.",
+  "pt": "No nível B1, é preciso formar com segurança as orações subordinadas com o verbo no final: «weil», «dass», «wenn» e «obwohl» levam o verbo conjugado para o fim. Essa é a regra básica, ampliada no B2 com mais conectores e no C1 com combinações mais complexas. Aqui, o principal é aplicar a regra automaticamente."
+ },
  "cuadroReferencia": {
-  "titulo": "Verbposition nach Satztyp",
+  "titulo": {
+   "de": "Verbposition nach Satztyp",
+   "en": "Verb position by sentence type",
+   "es": "Posición del verbo según el tipo de oración",
+   "fr": "Position du verbe selon le type de phrase",
+   "it": "Posizione del verbo per tipo di frase",
+   "pt": "Posição do verbo conforme o tipo de oração"
+  },
   "columnas": [
-   "Satztyp",
-   "Verbposition",
-   "Beispiel"
+   {
+    "de": "Satztyp",
+    "en": "Clause type",
+    "es": "Tipo de oración",
+    "fr": "Type de proposition",
+    "it": "Tipo di frase",
+    "pt": "Tipo de oração"
+   },
+   {
+    "de": "Verbposition",
+    "en": "Verb position",
+    "es": "Posición del verbo",
+    "fr": "Position du verbe",
+    "it": "Posizione del verbo",
+    "pt": "Posição do verbo"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Hauptsatz",
-    "Position 2",
-    "Ich lerne Deutsch."
+    {
+     "de": "Hauptsatz",
+     "en": "Main clause",
+     "es": "Oración principal",
+     "fr": "Proposition principale",
+     "it": "Frase principale",
+     "pt": "Oração principal"
+    },
+    {
+     "de": "Position 2",
+     "en": "Position 2",
+     "es": "Posición 2",
+     "fr": "Position 2",
+     "it": "Posizione 2",
+     "pt": "Posição 2"
+    },
+    {
+     "de": "Ich lerne Deutsch.",
+     "en": "I’m learning German.",
+     "es": "Estoy aprendiendo alemán.",
+     "fr": "J’apprends l’allemand.",
+     "it": "Sto imparando il tedesco.",
+     "pt": "Estou aprendendo alemão."
+    }
    ],
    [
-    "Nebensatz mit weil/dass/wenn",
-    "am Ende",
-    "…, weil ich in Deutschland arbeite."
+    {
+     "de": "Nebensatz mit weil/dass/wenn",
+     "en": "subordinate clause with weil/dass/wenn",
+     "es": "subordinada con «weil/dass/wenn»",
+     "fr": "subordonnée avec « weil/dass/wenn »",
+     "it": "subordinata con «weil/dass/wenn»",
+     "pt": "oração subordinada com «weil/dass/wenn»"
+    },
+    {
+     "de": "am Ende",
+     "en": "at the end",
+     "es": "al final",
+     "fr": "à la fin",
+     "it": "alla fine",
+     "pt": "no final"
+    },
+    {
+     "de": "…, weil ich in Deutschland arbeite.",
+     "en": "…, because I work in Germany.",
+     "es": "…, porque trabajo en Alemania.",
+     "fr": "…, parce que je travaille en Allemagne.",
+     "it": "…, perché lavoro in Germania.",
+     "pt": "…, porque trabalho na Alemanha."
+    }
    ],
    [
-    "Zwei Hauptsätze mit deshalb",
-    "Verb-Subjekt-Umstellung",
-    "Ich habe Zeit, deshalb komme ich mit."
+    {
+     "de": "Zwei Hauptsätze mit deshalb",
+     "en": "two main clauses with deshalb",
+     "es": "dos oraciones principales con «deshalb»",
+     "fr": "deux propositions principales avec « deshalb »",
+     "it": "due proposizioni principali con «deshalb»",
+     "pt": "duas orações principais com «deshalb»"
+    },
+    {
+     "de": "Verb-Subjekt-Umstellung",
+     "en": "verb-subject inversion",
+     "es": "inversión verbo-sujeto",
+     "fr": "inversion verbe-sujet",
+     "it": "inversione verbo-soggetto",
+     "pt": "inversão verbo-sujeito"
+    },
+    {
+     "de": "Ich habe Zeit, deshalb komme ich mit.",
+     "en": "I have time, so I’ll come along.",
+     "es": "Tengo tiempo, por eso voy con ustedes.",
+     "fr": "J’ai le temps, donc je viens avec vous.",
+     "it": "Ho tempo, quindi vengo anch’io.",
+     "pt": "Tenho tempo, por isso vou junto."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich lerne Deutsch, weil ich in der Schweiz arbeite.",
+   "texto": {
+    "de": "Ich lerne Deutsch, weil ich in der Schweiz arbeite.",
+    "en": "I’m learning German because I work in Switzerland.",
+    "es": "Aprendo alemán porque trabajo en Suiza.",
+    "fr": "J’apprends l’allemand parce que je travaille en Suisse.",
+    "it": "Studio tedesco perché lavoro in Svizzera.",
+    "pt": "Estou aprendendo alemão porque trabalho na Suíça."
+   },
    "audio": true
   },
   {
-   "texto": "Ich weiss, dass das nicht einfach ist.",
+   "texto": {
+    "de": "Ich weiss, dass das nicht einfach ist.",
+    "en": "I know that it isn’t easy.",
+    "es": "Sé que no es fácil.",
+    "fr": "Je sais que ce n’est pas facile.",
+    "it": "So che non è facile.",
+    "pt": "Sei que não é fácil."
+   },
    "audio": true
   },
   {
-   "texto": "Wenn ich Zeit habe, gehe ich schwimmen."
+   "texto": {
+    "de": "Wenn ich Zeit habe, gehe ich schwimmen.",
+    "en": "When I have time, I go swimming.",
+    "es": "Cuando tengo tiempo, voy a nadar.",
+    "fr": "Quand j’ai le temps, je vais nager.",
+    "it": "Quando ho tempo, vado a nuotare.",
+    "pt": "Quando tenho tempo, vou nadar."
+   }
   }
  ],
  "notas": [
-  "Nach weil, dass und wenn steht das konjugierte Verb immer am Ende des Nebensatzes.",
-  "Vor dass steht immer ein Komma.",
-  "Deshalb ist kein Nebensatz-Konnektor: danach folgt normale Hauptsatzstellung mit Verb-Subjekt-Umstellung."
+  {
+   "de": "Nach weil, dass und wenn steht das konjugierte Verb immer am Ende des Nebensatzes.",
+   "en": "After weil, dass and wenn, the conjugated verb always goes at the end of the subordinate clause.",
+   "es": "Después de «weil», «dass» y «wenn», el verbo conjugado siempre va al final de la subordinada.",
+   "fr": "Après « weil », « dass » et « wenn », le verbe conjugué se place toujours à la fin de la subordonnée.",
+   "it": "Dopo «weil», «dass» e «wenn», il verbo coniugato va sempre alla fine della subordinata.",
+   "pt": "Depois de «weil», «dass» e «wenn», o verbo conjugado vai sempre para o final da oração subordinada."
+  },
+  {
+   "de": "Vor dass steht immer ein Komma.",
+   "en": "There is always a comma before dass.",
+   "es": "Siempre hay una coma antes de «dass».",
+   "fr": "Il y a toujours une virgule avant « dass ».",
+   "it": "Prima di «dass» va sempre una virgola.",
+   "pt": "Sempre há uma vírgula antes de «dass»."
+  },
+  {
+   "de": "Deshalb ist kein Nebensatz-Konnektor: danach folgt normale Hauptsatzstellung mit Verb-Subjekt-Umstellung.",
+   "en": "Deshalb is not a subordinate-clause connector: it is followed by normal main-clause word order with verb–subject inversion.",
+   "es": "«Deshalb» no es un conector de subordinada: después se mantiene el orden de una oración principal, con inversión verbo-sujeto.",
+   "fr": "« Deshalb » n’est pas un connecteur de subordonnée : il est suivi de l’ordre normal de la proposition principale, avec inversion verbe-sujet.",
+   "it": "«Deshalb» non è un connettivo subordinante: è seguito dal normale ordine della principale, con inversione verbo-soggetto.",
+   "pt": "«Deshalb» não é um conector de oração subordinada: depois dele vem a ordem normal da oração principal, com inversão verbo-sujeito."
+  }
  ],
  "contraste": {
   "es": "Das Spanische hat keine Verbletztstellung: porque, que und si ändern die Wortstellung im Nebensatz nicht. Das ist der grösste strukturelle Unterschied zwischen den beiden Sprachen und braucht viel Übung, weil es keine spanische Struktur gibt, die man einfach übertragen kann.",
@@ -58,14 +205,42 @@
   "en": "Im Englischen bleibt die Wortstellung nach because, that und if gleich. Dazu kann that im Englischen wegfallen; das geht auch im Deutschen, aber dann bleibt das Verb auf Position 2 (Ich glaube, er kommt), mit dass geht es ans Ende. Vor dass steht immer ein Komma."
  },
  "errores": [
-  "Das Verb im Nebensatz an zweiter Stelle lassen: weil ich arbeite in der Schweiz.",
-  "Das Komma vor dass vergessen.",
-  "Nach deshalb die Verb-Subjekt-Umstellung vergessen."
+  {
+   "de": "Das Verb im Nebensatz an zweiter Stelle lassen: weil ich arbeite in der Schweiz.",
+   "en": "Leaving the verb in second position in a subordinate clause: weil ich arbeite in der Schweiz.",
+   "es": "Dejar el verbo en segunda posición en una subordinada: «weil ich arbeite in der Schweiz».",
+   "fr": "Laisser le verbe en deuxième position dans une subordonnée : « weil ich arbeite in der Schweiz ».",
+   "it": "Lasciare il verbo in seconda posizione nella subordinata: «weil ich arbeite in der Schweiz».",
+   "pt": "Deixar o verbo na segunda posição em uma oração subordinada: «weil ich arbeite in der Schweiz»."
+  },
+  {
+   "de": "Das Komma vor dass vergessen.",
+   "en": "Forgetting the comma before dass.",
+   "es": "Olvidar la coma antes de «dass».",
+   "fr": "Oublier la virgule avant « dass ».",
+   "it": "Dimenticare la virgola prima di «dass».",
+   "pt": "Esquecer a vírgula antes de «dass»."
+  },
+  {
+   "de": "Nach deshalb die Verb-Subjekt-Umstellung vergessen.",
+   "en": "Forgetting verb–subject inversion after deshalb.",
+   "es": "Olvidar la inversión verbo-sujeto después de «deshalb».",
+   "fr": "Oublier l’inversion verbe-sujet après « deshalb ».",
+   "it": "Dimenticare l’inversione verbo-soggetto dopo «deshalb».",
+   "pt": "Esquecer a inversão verbo-sujeito depois de «deshalb»."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…, weil…",
-   "funcion": "Grund",
+   "funcion": {
+    "de": "Grund",
+    "en": "Reason",
+    "es": "Razón",
+    "fr": "Raison",
+    "it": "Motivo",
+    "pt": "Motivo"
+   },
    "traducciones": {
     "es": "…, porque…",
     "en": "…, because…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "Ich weiss, dass…",
-   "funcion": "Aussage einleiten",
+   "funcion": {
+    "de": "Aussage einleiten",
+    "en": "introducing a statement",
+    "es": "introducir una afirmación",
+    "fr": "introduire une affirmation",
+    "it": "introdurre un’affermazione",
+    "pt": "introduzir uma afirmação"
+   },
    "traducciones": {
     "es": "Sé que…",
     "en": "I know that…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "Wenn…, dann…",
-   "funcion": "Bedingung",
+   "funcion": {
+    "de": "Bedingung",
+    "en": "condition",
+    "es": "condición",
+    "fr": "condition",
+    "it": "condizione",
+    "pt": "condição"
+   },
    "traducciones": {
     "es": "Si…, entonces…",
     "en": "If…, then…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "…, deshalb…",
-   "funcion": "Folge",
+   "funcion": {
+    "de": "Folge",
+    "en": "consequence",
+    "es": "consecuencia",
+    "fr": "conséquence",
+    "it": "conseguenza",
+    "pt": "consequência"
+   },
    "traducciones": {
     "es": "…, por eso…",
     "en": "…, that's why…",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "…, obwohl…",
-   "funcion": "Einräumung",
+   "funcion": {
+    "de": "Einräumung",
+    "en": "concession",
+    "es": "concesión",
+    "fr": "concession",
+    "it": "concessione",
+    "pt": "concessão"
+   },
    "traducciones": {
     "es": "…, aunque…",
     "en": "…, although…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "Ich glaube, dass…",
-   "funcion": "Meinung einleiten",
+   "funcion": {
+    "de": "Meinung einleiten",
+    "en": "introducing an opinion",
+    "es": "introducir una opinión",
+    "fr": "introduire une opinion",
+    "it": "introdurre un’opinione",
+    "pt": "introduzir uma opinião"
+   },
    "traducciones": {
     "es": "Creo que…",
     "en": "I believe that…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Steht das Verb im weil/dass/wenn-Satz am Ende?",
-  "Steht vor dass ein Komma?",
-  "Ist nach deshalb die Verb-Subjekt-Umstellung vorhanden?",
-  "Habe ich mindestens drei verschiedene Nebensatz-Konnektoren benutzt?",
-  "Klingt der Satzbau natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?"
+  {
+   "de": "Steht das Verb im weil/dass/wenn-Satz am Ende?",
+   "en": "Is the verb at the end in clauses with weil/dass/wenn?",
+   "es": "¿El verbo está al final en las oraciones con «weil/dass/wenn»?",
+   "fr": "Le verbe est-il à la fin dans les propositions avec « weil/dass/wenn » ?",
+   "it": "Il verbo è alla fine nelle frasi con «weil/dass/wenn»?",
+   "pt": "O verbo está no final nas orações com «weil/dass/wenn»?"
+  },
+  {
+   "de": "Steht vor dass ein Komma?",
+   "en": "Is there a comma before dass?",
+   "es": "¿Hay una coma antes de «dass»?",
+   "fr": "Y a-t-il une virgule avant « dass » ?",
+   "it": "C’è una virgola prima di «dass»?",
+   "pt": "Há uma vírgula antes de «dass»?"
+  },
+  {
+   "de": "Ist nach deshalb die Verb-Subjekt-Umstellung vorhanden?",
+   "en": "Is there verb–subject inversion after deshalb?",
+   "es": "¿Hay inversión verbo-sujeto después de «deshalb»?",
+   "fr": "Y a-t-il inversion verbe-sujet après « deshalb » ?",
+   "it": "C’è inversione verbo-soggetto dopo «deshalb»?",
+   "pt": "Há inversão verbo-sujeito depois de «deshalb»?"
+  },
+  {
+   "de": "Habe ich mindestens drei verschiedene Nebensatz-Konnektoren benutzt?",
+   "en": "Have I used at least three different subordinate-clause connectors?",
+   "es": "¿Usé al menos tres conectores de subordinada diferentes?",
+   "fr": "Ai-je utilisé au moins trois connecteurs de subordination différents ?",
+   "it": "Ho usato almeno tre connettivi subordinanti diversi?",
+   "pt": "Usei pelo menos três conectores diferentes de oração subordinada?"
+  },
+  {
+   "de": "Klingt der Satzbau natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?",
+   "en": "Does the sentence structure sound natural rather than like a literal translation from Spanish?",
+   "es": "¿La estructura de la oración suena natural y no como una traducción literal del español?",
+   "fr": "La structure de la phrase semble-t-elle naturelle, et non comme une traduction littérale de l’espagnol ?",
+   "it": "La struttura della frase suona naturale, e non come una traduzione letterale dallo spagnolo?",
+   "pt": "A estrutura da frase soa natural, e não como uma tradução literal do espanhol?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Verbposition im Nebensatz. Prüfen Sie bei jedem weil-, dass- und wenn-Satz, ob das Verb am Ende steht. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Verbposition im Nebensatz. Prüfen Sie bei jedem weil-, dass- und wenn-Satz, ob das Verb am Ende steht. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on verb position in subordinate clauses. For every clause with weil, dass and wenn, check whether the verb is at the end. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en la posición del verbo en las oraciones subordinadas. En cada oración con «weil», «dass» y «wenn», compruebe si el verbo está al final. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur la position du verbe dans les subordonnées. Pour chaque proposition avec « weil », « dass » et « wenn », vérifiez si le verbe est à la fin. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulla posizione del verbo nelle subordinate. Per ogni frase con «weil», «dass» e «wenn», controlli se il verbo è alla fine. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente na posição do verbo nas orações subordinadas. Em cada oração com «weil», «dass» e «wenn», verifique se o verbo está no final. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "Das Subjektpronomen weglassen: *…, weil arbeite in der Schweiz*."

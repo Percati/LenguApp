@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Sich beschweren und reklamieren",
+ "titulo": {
+  "de": "Sich beschweren und reklamieren",
+  "en": "Complaining and making a complaint",
+  "es": "Quejarse y hacer una reclamación",
+  "fr": "Se plaindre et faire une réclamation",
+  "it": "Lamentarsi e fare un reclamo",
+  "pt": "Reclamar e fazer uma queixa"
+ },
  "categoria": "fluency",
  "ancla": "PD A2/B1",
- "descripcion": "Auf B1 formuliert man eine einfache Beschwerde: was ist das Problem, und was möchte man dagegen tun. Die feinere Abstufung nach Höflichkeit kommt später — hier reicht eine klare, höfliche Beschwerde mit einer konkreten Bitte am Ende.",
+ "descripcion": {
+  "de": "Auf B1 formuliert man eine einfache Beschwerde: was ist das Problem, und was möchte man dagegen tun. Die feinere Abstufung nach Höflichkeit kommt später — hier reicht eine klare, höfliche Beschwerde mit einer konkreten Bitte am Ende.",
+  "en": "At B1, you make a simple complaint: what is the problem, and what would you like to be done about it? Finer differences in politeness come later — here, a clear, polite complaint with a specific request at the end is enough.",
+  "es": "En B1 se formula una queja sencilla: cuál es el problema y qué se desea que se haga al respecto. Los matices más finos de cortesía llegan después; aquí basta una queja clara y educada con un pedido concreto al final.",
+  "fr": "Au niveau B1, on formule une réclamation simple : quel est le problème et que souhaite-t-on qu'on fasse pour le résoudre ? Les nuances de politesse viennent plus tard ; ici, une réclamation claire et polie avec une demande concrète à la fin suffit.",
+  "it": "A livello B1 si formula un reclamo semplice: qual è il problema e che cosa si vorrebbe fare per risolverlo. Le sfumature di cortesia arrivano più avanti; qui basta un reclamo chiaro e cortese con una richiesta concreta alla fine.",
+  "pt": "No B1, faz-se uma reclamação simples: qual é o problema e o que se deseja que seja feito a respeito. Nuances mais finas de cortesia vêm depois; aqui, basta uma reclamação clara e educada com um pedido concreto no final."
+ },
  "cuadroReferencia": {
-  "titulo": "Eine einfache Beschwerde",
+  "titulo": {
+   "de": "Eine einfache Beschwerde",
+   "en": "A simple complaint",
+   "es": "Una queja sencilla",
+   "fr": "Une réclamation simple",
+   "it": "Un reclamo semplice",
+   "pt": "Uma reclamação simples"
+  },
   "columnas": [
-   "Schritt",
-   "Beispiel"
+   {
+    "de": "Schritt",
+    "en": "Step",
+    "es": "Paso",
+    "fr": "Étape",
+    "it": "Passaggio",
+    "pt": "Etapa"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Problem nennen",
-    "Die Heizung funktioniert seit gestern nicht."
+    {
+     "de": "Problem nennen",
+     "en": "stating the problem",
+     "es": "mencionar el problema",
+     "fr": "exposer le problème",
+     "it": "esporre il problema",
+     "pt": "apresentar o problema"
+    },
+    {
+     "de": "Die Heizung funktioniert seit gestern nicht.",
+     "en": "The heating hasn't worked since yesterday.",
+     "es": "La calefacción no funciona desde ayer.",
+     "fr": "Le chauffage ne fonctionne plus depuis hier.",
+     "it": "Il riscaldamento non funziona da ieri.",
+     "pt": "O aquecimento não funciona desde ontem."
+    }
    ],
    [
-    "Bitte formulieren",
-    "Könnten Sie das bitte reparieren?"
+    {
+     "de": "Bitte formulieren",
+     "en": "Making a request",
+     "es": "Formular un pedido",
+     "fr": "Formuler une demande",
+     "it": "Formulare una richiesta",
+     "pt": "Fazer um pedido"
+    },
+    {
+     "de": "Könnten Sie das bitte reparieren?",
+     "en": "Could you please repair it?",
+     "es": "¿Podría repararlo, por favor?",
+     "fr": "Pourriez-vous le réparer, s'il vous plaît ?",
+     "it": "Potrebbe ripararlo, per favore?",
+     "pt": "Poderia consertar isso, por favor?"
+    }
    ],
    [
-    "Nachfrage",
-    "Wann können Sie das reparieren?"
+    {
+     "de": "Nachfrage",
+     "en": "Follow-up question",
+     "es": "Pregunta de seguimiento",
+     "fr": "Relance",
+     "it": "Domanda di approfondimento",
+     "pt": "Pergunta de acompanhamento"
+    },
+    {
+     "de": "Wann können Sie das reparieren?",
+     "en": "When can you fix this?",
+     "es": "¿Cuándo pueden arreglarlo?",
+     "fr": "Quand pouvez-vous réparer cela ?",
+     "it": "Quando può ripararlo?",
+     "pt": "Quando pode reparar isto?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Die Heizung funktioniert seit gestern leider nicht.",
+   "texto": {
+    "de": "Die Heizung funktioniert seit gestern leider nicht.",
+    "en": "Unfortunately, the heating hasn't worked since yesterday.",
+    "es": "Lamentablemente, la calefacción no funciona desde ayer.",
+    "fr": "Malheureusement, le chauffage ne fonctionne plus depuis hier.",
+    "it": "Purtroppo il riscaldamento non funziona da ieri.",
+    "pt": "Infelizmente, o aquecimento não funciona desde ontem."
+   },
    "audio": true
   },
   {
-   "texto": "Könnten Sie das bitte so schnell wie möglich reparieren?",
+   "texto": {
+    "de": "Könnten Sie das bitte so schnell wie möglich reparieren?",
+    "en": "Could you please repair it as soon as possible?",
+    "es": "¿Podría repararlo lo antes posible, por favor?",
+    "fr": "Pourriez-vous le réparer le plus rapidement possible, s'il vous plaît ?",
+    "it": "Potrebbe ripararlo il prima possibile, per favore?",
+    "pt": "Poderia consertar isso o mais rápido possível, por favor?"
+   },
    "audio": true
   },
   {
-   "texto": "Ich hätte gern eine Rückerstattung."
+   "texto": {
+    "de": "Ich hätte gern eine Rückerstattung.",
+    "en": "I'd like a refund.",
+    "es": "Quisiera un reembolso.",
+    "fr": "Je voudrais un remboursement.",
+    "it": "Vorrei un rimborso.",
+    "pt": "Gostaria de receber um reembolso."
+   }
   }
  ],
  "notas": [
-  "Leider signalisiert, dass es sich um ein Problem handelt, ohne aggressiv zu klingen.",
-  "Könnten Sie…? ist die höflichste einfache Bitte auf B1.",
-  "Ich hätte gern… eignet sich gut, um eine konkrete Lösung zu fordern."
+  {
+   "de": "Leider signalisiert, dass es sich um ein Problem handelt, ohne aggressiv zu klingen.",
+   "en": "Leider signals that there is a problem without sounding aggressive.",
+   "es": "«Leider» indica que existe un problema sin sonar agresivo.",
+   "fr": "« Leider » signale qu'il y a un problème sans paraître agressif.",
+   "it": "«Leider» segnala che c'è un problema senza risultare aggressivo.",
+   "pt": "«Leider» indica que há um problema sem soar agressivo."
+  },
+  {
+   "de": "Könnten Sie…? ist die höflichste einfache Bitte auf B1.",
+   "en": "Könnten Sie…? is the most polite simple request at B1.",
+   "es": "«Könnten Sie…?» es la petición sencilla más cortés en B1.",
+   "fr": "« Könnten Sie… ? » est la demande simple la plus polie au niveau B1.",
+   "it": "«Könnten Sie…?» è la richiesta semplice più cortese al B1.",
+   "pt": "«Könnten Sie…?» é o pedido simples mais educado no B1."
+  },
+  {
+   "de": "Ich hätte gern… eignet sich gut, um eine konkrete Lösung zu fordern.",
+   "en": "Ich hätte gern… works well when asking for a specific solution.",
+   "es": "«Ich hätte gern…» resulta útil para pedir una solución concreta.",
+   "fr": "« Ich hätte gern… » convient bien pour demander une solution concrète.",
+   "it": "«Ich hätte gern…» funziona bene per chiedere una soluzione concreta.",
+   "pt": "«Ich hätte gern…» funciona bem para pedir uma solução concreta."
+  }
  ],
  "contraste": {
   "es": "Por desgracia entspricht leider und ¿podría…? entspricht könnten Sie…?, die höfliche Beschwerde überträgt sich also direkt. Zu beachten sind trennbare Verben: cambiar – umtauschen (ich möchte es umtauschen).",
@@ -54,14 +173,42 @@
   "en": "Unfortunately entspricht leider und could you…? entspricht könnten Sie…?, die höfliche Beschwerde überträgt sich also direkt. Zu beachten sind trennbare Verben: exchange – umtauschen, return – zurückgeben."
  },
  "errores": [
-  "Das Problem ohne jede Höflichkeitsform nennen.",
-  "Keine konkrete Bitte formulieren, nur das Problem beschreiben.",
-  "Zu aggressiv klingen, ohne leider oder eine ähnliche Abschwächung."
+  {
+   "de": "Das Problem ohne jede Höflichkeitsform nennen.",
+   "en": "Stating the problem without any polite expression.",
+   "es": "Mencionar el problema sin ninguna fórmula de cortesía.",
+   "fr": "Exposer le problème sans aucune formule de politesse.",
+   "it": "Esporre il problema senza alcuna formula di cortesia.",
+   "pt": "Apresentar o problema sem nenhuma fórmula de cortesia."
+  },
+  {
+   "de": "Keine konkrete Bitte formulieren, nur das Problem beschreiben.",
+   "en": "Not making a specific request and only describing the problem.",
+   "es": "No formular un pedido concreto y limitarse a describir el problema.",
+   "fr": "Ne pas formuler de demande concrète et se contenter de décrire le problème.",
+   "it": "Non formulare una richiesta concreta e limitarsi a descrivere il problema.",
+   "pt": "Não fazer um pedido concreto e apenas descrever o problema."
+  },
+  {
+   "de": "Zu aggressiv klingen, ohne leider oder eine ähnliche Abschwächung.",
+   "en": "Sounding too aggressive without leider or a similar softener.",
+   "es": "Sonar demasiado agresivo sin «leider» u otra atenuación similar.",
+   "fr": "Paraître trop agressif sans « leider » ou une autre formule d'atténuation.",
+   "it": "Suonare troppo aggressivi senza «leider» o un'attenuazione simile.",
+   "pt": "Soar agressivo demais sem «leider» ou outra forma semelhante de suavizar."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…funktioniert leider nicht.",
-   "funcion": "Problem nennen",
+   "funcion": {
+    "de": "Problem nennen",
+    "en": "stating the problem",
+    "es": "mencionar el problema",
+    "fr": "exposer le problème",
+    "it": "esporre il problema",
+    "pt": "apresentar o problema"
+   },
    "traducciones": {
     "es": "…lamentablemente no funciona.",
     "en": "…unfortunately isn't working.",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Könnten Sie bitte…?",
-   "funcion": "höfliche Bitte",
+   "funcion": {
+    "de": "höfliche Bitte",
+    "en": "polite request",
+    "es": "pedido cortés",
+    "fr": "demande polie",
+    "it": "richiesta cortese",
+    "pt": "pedido educado"
+   },
    "traducciones": {
     "es": "¿Podría usted…?",
     "en": "Could you please…?",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Ich hätte gern…",
-   "funcion": "konkrete Lösung fordern",
+   "funcion": {
+    "de": "konkrete Lösung fordern",
+    "en": "requesting a specific solution",
+    "es": "pedir una solución concreta",
+    "fr": "demander une solution concrète",
+    "it": "chiedere una soluzione concreta",
+    "pt": "pedir uma solução concreta"
+   },
    "traducciones": {
     "es": "Quisiera…",
     "en": "I'd like…",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Das ist schon das zweite Mal.",
-   "funcion": "wiederholtes Problem",
+   "funcion": {
+    "de": "wiederholtes Problem",
+    "en": "recurring problem",
+    "es": "problema repetido",
+    "fr": "problème récurrent",
+    "it": "problema ricorrente",
+    "pt": "problema recorrente"
+   },
    "traducciones": {
     "es": "Ya es la segunda vez.",
     "en": "This is already the second time.",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Wann können Sie das reparieren?",
-   "funcion": "konkrete Frage",
+   "funcion": {
+    "de": "konkrete Frage",
+    "en": "specific question",
+    "es": "pregunta concreta",
+    "fr": "question précise",
+    "it": "domanda concreta",
+    "pt": "pergunta concreta"
+   },
    "traducciones": {
     "es": "¿Cuándo pueden arreglarlo?",
     "en": "When can you fix this?",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Vielen Dank für Ihr Verständnis.",
-   "funcion": "höflicher Abschluss",
+   "funcion": {
+    "de": "höflicher Abschluss",
+    "en": "polite closing",
+    "es": "cierre cortés",
+    "fr": "conclusion polie",
+    "it": "chiusura cortese",
+    "pt": "encerramento educado"
+   },
    "traducciones": {
     "es": "Gracias por su comprensión.",
     "en": "Thank you for your understanding.",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Ist das Problem klar genannt?",
-  "Habe ich eine höfliche Bitte formuliert?",
-  "Klingt die Beschwerde höflich, nicht aggressiv?",
-  "Habe ich eine konkrete Frage oder Forderung gestellt?",
-  "Habe ich mich am Ende höflich bedankt oder verabschiedet?"
+  {
+   "de": "Ist das Problem klar genannt?",
+   "en": "Is the problem stated clearly?",
+   "es": "¿El problema está expresado con claridad?",
+   "fr": "Le problème est-il clairement exposé ?",
+   "it": "Il problema è espresso chiaramente?",
+   "pt": "O problema está exposto com clareza?"
+  },
+  {
+   "de": "Habe ich eine höfliche Bitte formuliert?",
+   "en": "Have I made a polite request?",
+   "es": "¿Formulé un pedido cortés?",
+   "fr": "Ai-je formulé une demande polie ?",
+   "it": "Ho formulato una richiesta cortese?",
+   "pt": "Fiz um pedido educado?"
+  },
+  {
+   "de": "Klingt die Beschwerde höflich, nicht aggressiv?",
+   "en": "Does the complaint sound polite rather than aggressive?",
+   "es": "¿La queja suena cortés y no agresiva?",
+   "fr": "La réclamation semble-t-elle polie plutôt qu'agressive ?",
+   "it": "Il reclamo suona cortese e non aggressivo?",
+   "pt": "A reclamação soa educada, e não agressiva?"
+  },
+  {
+   "de": "Habe ich eine konkrete Frage oder Forderung gestellt?",
+   "en": "Have I asked a specific question or made a specific request?",
+   "es": "¿Hice una pregunta o pedido concreto?",
+   "fr": "Ai-je posé une question concrète ou formulé une demande précise ?",
+   "it": "Ho fatto una domanda o una richiesta concreta?",
+   "pt": "Fiz uma pergunta ou um pedido concreto?"
+  },
+  {
+   "de": "Habe ich mich am Ende höflich bedankt oder verabschiedet?",
+   "en": "Have I thanked or said goodbye politely at the end?",
+   "es": "¿Agradecí o me despedí cortésmente al final?",
+   "fr": "Ai-je remercié ou pris congé poliment à la fin ?",
+   "it": "Ho ringraziato o salutato con cortesia alla fine?",
+   "pt": "Agradeci ou me despedi educadamente no final?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Problem und Bitte in der Beschwerde. Prüfen Sie, ob der Ton höflich bleibt. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf Problem und Bitte in der Beschwerde. Prüfen Sie, ob der Ton höflich bleibt. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on the problem and request in the complaint. Check whether the tone remains polite. Do not rewrite the text yourself.",
+  "es": "Concentre su atención exclusivamente en el problema y el pedido de la queja. Compruebe que el tono se mantenga cortés. No reescriba usted mismo el texto.",
+  "fr": "Concentrez votre attention exclusivement sur le problème et la demande dans la réclamation. Vérifiez que le ton reste poli. Ne réécrivez pas le texte.",
+  "it": "Concentri la sua attenzione esclusivamente sul problema e sulla richiesta nel reclamo. Verifichi che il tono resti cortese. Non riscriva lei stesso il testo.",
+  "pt": "Concentre-se exclusivamente no problema e no pedido da reclamação. Verifique com atenção se o tom continua educado. Não reescreva você mesmo o texto. Sinalize tudo o que não estiver claro."
+ },
  "erroresContrastivos": {
   "es": [
    "*devolver el dinero* als *das Geld zurückkehren* übertragen statt *das Geld zurückgeben* oder *erstatten*."

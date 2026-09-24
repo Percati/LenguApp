@@ -3,57 +3,225 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Verben mit festen Präpositionen + Präpositionaladverbien",
+ "titulo": {
+  "de": "Verben mit festen Präpositionen + Präpositionaladverbien",
+  "en": "Verbs with fixed prepositions + pronominal adverbs",
+  "es": "Verbos con preposición fija + adverbios pronominales",
+  "fr": "Verbes à préposition fixe + adverbes pronominaux",
+  "it": "Verbi con preposizione fissa + avverbi pronominali",
+  "pt": "Verbos com preposição fixa + advérbios pronominais"
+ },
  "categoria": "grammar",
  "ancla": "PD B1",
- "descripcion": "Auf B1 lernt man die häufigsten Verben mit fester Präposition (sich freuen auf, warten auf, denken an) und die Grundform des Pronominaladverbs (da(r)-), um auf eine Sache statt auf eine Person zu verweisen.",
+ "descripcion": {
+  "de": "Auf B1 lernt man die häufigsten Verben mit fester Präposition (sich freuen auf, warten auf, denken an) und die Grundform des Pronominaladverbs (da(r)-), um auf eine Sache statt auf eine Person zu verweisen.",
+  "en": "At B1, you learn the most common verbs with a fixed preposition (sich freuen auf, warten auf, denken an) and the basic form of the pronominal adverb (da(r)-), which is used to refer to a thing rather than to a person.",
+  "es": "En B1 se aprenden los verbos más frecuentes con preposición fija («sich freuen auf, warten auf, denken an») y la forma básica del adverbio pronominal («da(r)-») para referirse a una cosa en lugar de a una persona.",
+  "fr": "Au niveau B1, on apprend les verbes les plus fréquents à préposition fixe (« sich freuen auf, warten auf, denken an ») et la forme de base de l’adverbe pronominal (« da(r)- ») pour renvoyer à une chose plutôt qu’à une personne.",
+  "it": "A livello B1 si imparano i verbi più comuni con preposizione fissa («sich freuen auf, warten auf, denken an») e la forma base dell’avverbio pronominale («da(r)-») per riferirsi a una cosa invece che a una persona.",
+  "pt": "No nível B1, aprendem-se os verbos mais comuns com preposição fixa («sich freuen auf, warten auf, denken an») e a forma básica do advérbio pronominal («da(r)-») para se referir a uma coisa, e não a uma pessoa."
+ },
  "cuadroReferencia": {
-  "titulo": "Feste Präpositionen und ihr Pronominaladverb",
+  "titulo": {
+   "de": "Feste Präpositionen und ihr Pronominaladverb",
+   "en": "Fixed prepositions and their pronominal adverbs",
+   "es": "Preposiciones fijas y sus adverbios pronominales",
+   "fr": "Prépositions fixes et leurs adverbes pronominaux",
+   "it": "Preposizioni fisse e relativi avverbi pronominali",
+   "pt": "Preposições fixas e seus advérbios pronominais"
+  },
   "columnas": [
-   "Verb",
-   "Präposition",
-   "Pronominaladverb"
+   {
+    "de": "Verb",
+    "en": "Verb",
+    "es": "Verbo",
+    "fr": "Verbe",
+    "it": "Verbo",
+    "pt": "Verbo"
+   },
+   {
+    "de": "Präposition",
+    "en": "Preposition",
+    "es": "Preposición",
+    "fr": "Préposition",
+    "it": "Preposizione",
+    "pt": "Preposição"
+   },
+   {
+    "de": "Pronominaladverb",
+    "en": "Pronominal adverb",
+    "es": "Adverbio pronominal",
+    "fr": "Adverbe pronominal",
+    "it": "Avverbio pronominale",
+    "pt": "Advérbio pronominal"
+   }
   ],
   "filas": [
    [
-    "sich freuen",
-    "auf + Akk.",
-    "darauf"
+    {
+     "de": "sich freuen",
+     "en": "to be glad",
+     "es": "alegrarse",
+     "fr": "se réjouir",
+     "it": "essere contento",
+     "pt": "ficar contente"
+    },
+    {
+     "de": "auf + Akk.",
+     "en": "auf + acc.",
+     "es": "«auf» + acus.",
+     "fr": "« auf » + acc.",
+     "it": "«auf» + acc.",
+     "pt": "«auf» + acus."
+    },
+    {
+     "de": "darauf",
+     "en": "darauf",
+     "es": "«darauf»",
+     "fr": "« darauf »",
+     "it": "«darauf»",
+     "pt": "«darauf»"
+    }
    ],
    [
-    "warten",
-    "auf + Akk.",
-    "darauf"
+    {
+     "de": "warten",
+     "en": "to wait",
+     "es": "esperar",
+     "fr": "attendre",
+     "it": "aspettare",
+     "pt": "esperar"
+    },
+    {
+     "de": "auf + Akk.",
+     "en": "auf + acc.",
+     "es": "«auf» + acus.",
+     "fr": "« auf » + acc.",
+     "it": "«auf» + acc.",
+     "pt": "«auf» + acus."
+    },
+    {
+     "de": "darauf",
+     "en": "darauf",
+     "es": "«darauf»",
+     "fr": "« darauf »",
+     "it": "«darauf»",
+     "pt": "«darauf»"
+    }
    ],
    [
-    "denken",
-    "an + Akk.",
-    "daran"
+    {
+     "de": "denken",
+     "en": "denken",
+     "es": "«denken»",
+     "fr": "« denken »",
+     "it": "«denken»",
+     "pt": "«denken»"
+    },
+    {
+     "de": "an + Akk.",
+     "en": "an + acc.",
+     "es": "«an» + acus.",
+     "fr": "« an » + acc.",
+     "it": "«an» + acc.",
+     "pt": "«an» + acus."
+    },
+    {
+     "de": "daran",
+     "en": "daran",
+     "es": "«daran»",
+     "fr": "« daran »",
+     "it": "«daran»",
+     "pt": "«daran»"
+    }
    ],
    [
-    "sich interessieren",
-    "für + Akk.",
-    "dafür"
+    {
+     "de": "sich interessieren",
+     "en": "sich interessieren",
+     "es": "«sich interessieren»",
+     "fr": "« sich interessieren »",
+     "it": "«sich interessieren»",
+     "pt": "«sich interessieren»"
+    },
+    {
+     "de": "für + Akk.",
+     "en": "für + acc.",
+     "es": "«für» + acus.",
+     "fr": "« für » + acc.",
+     "it": "«für» + acc.",
+     "pt": "«für» + acus."
+    },
+    {
+     "de": "dafür",
+     "en": "dafür",
+     "es": "«dafür»",
+     "fr": "« dafür »",
+     "it": "«dafür»",
+     "pt": "«dafür»"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich freue mich schon sehr auf die Ferien.",
+   "texto": {
+    "de": "Ich freue mich schon sehr auf die Ferien.",
+    "en": "I’m already really looking forward to the holidays.",
+    "es": "Ya tengo muchas ganas de que lleguen las vacaciones.",
+    "fr": "J’attends déjà les vacances avec beaucoup d’impatience.",
+    "it": "Non vedo già l’ora che arrivino le vacanze.",
+    "pt": "Já estou com muita vontade de que cheguem as férias."
+   },
    "audio": true
   },
   {
-   "texto": "Ich warte seit einer Stunde auf den Bus.",
+   "texto": {
+    "de": "Ich warte seit einer Stunde auf den Bus.",
+    "en": "I’ve been waiting for the bus for an hour.",
+    "es": "Llevo una hora esperando el autobús.",
+    "fr": "J’attends le bus depuis une heure.",
+    "it": "Aspetto l’autobus da un’ora.",
+    "pt": "Estou esperando o ônibus há uma hora."
+   },
    "audio": true
   },
   {
-   "texto": "Ich denke oft an meine Familie."
+   "texto": {
+    "de": "Ich denke oft an meine Familie.",
+    "en": "I often think about my family.",
+    "es": "Pienso a menudo en mi familia.",
+    "fr": "Je pense souvent à ma famille.",
+    "it": "Penso spesso alla mia famiglia.",
+    "pt": "Penso muito na minha família."
+   }
   }
  ],
  "notas": [
-  "Bei Sachen (nicht Personen) verwendet man das Pronominaladverb da(r)- statt eines Pronomens: ich freue mich darauf, nicht ich freue mich auf es.",
-  "Bei Personen steht die Präposition normal: ich freue mich auf ihn.",
-  "Die Frage dazu bildet man mit wo(r)-: worauf freust du dich?"
+  {
+   "de": "Bei Sachen (nicht Personen) verwendet man das Pronominaladverb da(r)- statt eines Pronomens: ich freue mich darauf, nicht ich freue mich auf es.",
+   "en": "For things (not people), German uses the pronominal adverb da(r)- instead of a pronoun: ich freue mich darauf, not ich freue mich auf es.",
+   "es": "Para cosas (no personas), se usa el adverbio pronominal «da(r)-» en lugar de un pronombre: «ich freue mich darauf», no «ich freue mich auf es».",
+   "fr": "Pour les choses (et non les personnes), on utilise l’adverbe pronominal « da(r)- » au lieu d’un pronom : « ich freue mich darauf », et non « ich freue mich auf es ».",
+   "it": "Per le cose (non le persone) si usa l’avverbio pronominale «da(r)-» invece di un pronome: «ich freue mich darauf», non «ich freue mich auf es».",
+   "pt": "Para coisas (não pessoas), usa-se o advérbio pronominal «da(r)-» em vez de um pronome: «ich freue mich darauf», e não «ich freue mich auf es»."
+  },
+  {
+   "de": "Bei Personen steht die Präposition normal: ich freue mich auf ihn.",
+   "en": "With people, the preposition is used normally: ich freue mich auf ihn.",
+   "es": "Con personas, la preposición se usa de manera normal: «ich freue mich auf ihn».",
+   "fr": "Avec les personnes, la préposition s’emploie normalement : « ich freue mich auf ihn ».",
+   "it": "Con le persone, la preposizione si usa normalmente: «ich freue mich auf ihn».",
+   "pt": "Com pessoas, a preposição é usada normalmente: «ich freue mich auf ihn»."
+  },
+  {
+   "de": "Die Frage dazu bildet man mit wo(r)-: worauf freust du dich?",
+   "en": "The corresponding question is formed with wo(r)-: worauf freust du dich?",
+   "es": "La pregunta correspondiente se forma con «wo(r)-»: «worauf freust du dich?»",
+   "fr": "La question correspondante se forme avec « wo(r)- » : « worauf freust du dich ? »",
+   "it": "La domanda corrispondente si forma con «wo(r)-»: «worauf freust du dich?»",
+   "pt": "A pergunta correspondente é formada com «wo(r)-»: «worauf freust du dich?»"
+  }
  ],
  "contraste": {
   "es": "Das Spanische hat feste Präpositionen (esperar a, pensar en), aber keine Pronominaladverbien. Alegrarse de que necesita keinen Platzhalter, das Deutsche schon — deshalb wird darauf oft vergessen.",
@@ -63,14 +231,42 @@
   "en": "Im Englischen sagt man about it oder on it, im Deutschen wird daraus ein Wort: darüber, darauf. Englischsprachige sagen deshalb oft auf es. Die Präpositionen selbst passen selten (wait for – warten auf, think of – denken an), deshalb muss man sie mit dem Verb zusammen lernen."
  },
  "errores": [
-  "Die falsche Präposition zum Verb wählen.",
-  "Statt darauf ein normales Pronomen wie es benutzen.",
-  "Bei Personen fälschlich ein Pronominaladverb verwenden."
+  {
+   "de": "Die falsche Präposition zum Verb wählen.",
+   "en": "Choosing the wrong preposition for the verb.",
+   "es": "Elegir la preposición incorrecta para el verbo.",
+   "fr": "Choisir la mauvaise préposition pour le verbe.",
+   "it": "Scegliere la preposizione sbagliata per il verbo.",
+   "pt": "Escolher a preposição errada para o verbo."
+  },
+  {
+   "de": "Statt darauf ein normales Pronomen wie es benutzen.",
+   "en": "Using an ordinary pronoun such as es instead of darauf.",
+   "es": "Usar un pronombre normal como «es» en lugar de «darauf».",
+   "fr": "Employer un pronom ordinaire comme « es » au lieu de « darauf ».",
+   "it": "Usare un pronome normale come «es» invece di «darauf».",
+   "pt": "Usar um pronome comum como «es» em vez de «darauf»."
+  },
+  {
+   "de": "Bei Personen fälschlich ein Pronominaladverb verwenden.",
+   "en": "Incorrectly using a pronominal adverb for a person.",
+   "es": "Usar incorrectamente un adverbio pronominal para una persona.",
+   "fr": "Utiliser à tort un adverbe pronominal pour une personne.",
+   "it": "Usare erroneamente un avverbio pronominale per una persona.",
+   "pt": "Usar incorretamente um advérbio pronominal para uma pessoa."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich freue mich auf…",
-   "funcion": "Vorfreude",
+   "funcion": {
+    "de": "Vorfreude",
+    "en": "looking forward to something",
+    "es": "expectativa positiva",
+    "fr": "attente avec impatience",
+    "it": "attesa impaziente",
+    "pt": "expectativa positiva"
+   },
    "traducciones": {
     "es": "Tengo ganas de…",
     "en": "I'm looking forward to…",
@@ -81,7 +277,14 @@
   },
   {
    "expresion": "Ich warte auf…",
-   "funcion": "Warten",
+   "funcion": {
+    "de": "Warten",
+    "en": "waiting",
+    "es": "esperar",
+    "fr": "attente",
+    "it": "attesa",
+    "pt": "espera"
+   },
    "traducciones": {
     "es": "Espero a/que…",
     "en": "I'm waiting for…",
@@ -92,7 +295,14 @@
   },
   {
    "expresion": "Ich denke an…",
-   "funcion": "Denken an etwas/jemanden",
+   "funcion": {
+    "de": "Denken an etwas/jemanden",
+    "en": "thinking about something/someone",
+    "es": "pensar en algo/alguien",
+    "fr": "penser à quelque chose/quelqu’un",
+    "it": "pensare a qualcosa/qualcuno",
+    "pt": "pensar em algo/alguém"
+   },
    "traducciones": {
     "es": "Pienso en…",
     "en": "I'm thinking of…",
@@ -103,7 +313,14 @@
   },
   {
    "expresion": "Ich interessiere mich für…",
-   "funcion": "Interesse",
+   "funcion": {
+    "de": "Interesse",
+    "en": "interest",
+    "es": "interés",
+    "fr": "intérêt",
+    "it": "interesse",
+    "pt": "interesse"
+   },
    "traducciones": {
     "es": "Me interesa…",
     "en": "I'm interested in…",
@@ -114,7 +331,14 @@
   },
   {
    "expresion": "Ich freue mich darauf.",
-   "funcion": "Pronominaladverb, Sache",
+   "funcion": {
+    "de": "Pronominaladverb, Sache",
+    "en": "pronominal adverb, thing",
+    "es": "adverbio pronominal, cosa",
+    "fr": "adverbe pronominal, chose",
+    "it": "avverbio pronominale, cosa",
+    "pt": "advérbio pronominal, coisa"
+   },
    "traducciones": {
     "es": "Tengo ganas de eso.",
     "en": "I'm looking forward to it.",
@@ -125,7 +349,14 @@
   },
   {
    "expresion": "Worauf freust du dich?",
-   "funcion": "Frage mit wo(r)-",
+   "funcion": {
+    "de": "Frage mit wo(r)-",
+    "en": "question with wo(r)-",
+    "es": "pregunta con «wo(r)-»",
+    "fr": "question avec « wo(r)- »",
+    "it": "domanda con «wo(r)-»",
+    "pt": "pergunta com «wo(r)-»"
+   },
    "traducciones": {
     "es": "¿Qué esperás con ganas?",
     "en": "What are you looking forward to?",
@@ -136,13 +367,55 @@
   }
  ],
  "autochequeo": [
-  "Stimmt die Präposition zum Verb?",
-  "Habe ich bei Sachen das Pronominaladverb benutzt, nicht ein normales Pronomen?",
-  "Habe ich mindestens drei verschiedene Verben mit fester Präposition benutzt?",
-  "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?",
-  "Habe ich das Vokabular des Themas korrekt eingesetzt?"
+  {
+   "de": "Stimmt die Präposition zum Verb?",
+   "en": "Is the preposition correct for the verb?",
+   "es": "¿La preposición es la correcta para el verbo?",
+   "fr": "La préposition convient-elle au verbe ?",
+   "it": "La preposizione è quella corretta per il verbo?",
+   "pt": "A preposição está correta para o verbo?"
+  },
+  {
+   "de": "Habe ich bei Sachen das Pronominaladverb benutzt, nicht ein normales Pronomen?",
+   "en": "For things, have I used the pronominal adverb rather than an ordinary pronoun?",
+   "es": "¿Para cosas usé el adverbio pronominal y no un pronombre normal?",
+   "fr": "Pour les choses, ai-je utilisé l’adverbe pronominal plutôt qu’un pronom ordinaire ?",
+   "it": "Per le cose, ho usato l’avverbio pronominale e non un pronome normale?",
+   "pt": "Para coisas, usei o advérbio pronominal, e não um pronome comum?"
+  },
+  {
+   "de": "Habe ich mindestens drei verschiedene Verben mit fester Präposition benutzt?",
+   "en": "Have I used at least three different verbs with fixed prepositions?",
+   "es": "¿Usé al menos tres verbos diferentes con preposición fija?",
+   "fr": "Ai-je utilisé au moins trois verbes différents à préposition fixe ?",
+   "it": "Ho usato almeno tre verbi diversi con preposizione fissa?",
+   "pt": "Usei pelo menos três verbos diferentes com preposição fixa?"
+  },
+  {
+   "de": "Klingt der Satz natürlich, nicht wie eine wörtliche Übersetzung aus dem Spanischen?",
+   "en": "Does the sentence sound natural rather than like a literal translation from Spanish?",
+   "es": "¿La oración suena natural y no como una traducción literal del español?",
+   "fr": "La phrase semble-t-elle naturelle, et non comme une traduction littérale de l’espagnol ?",
+   "it": "La frase suona naturale, e non come una traduzione letterale dallo spagnolo?",
+   "pt": "A frase soa natural, e não como uma tradução literal do espanhol?"
+  },
+  {
+   "de": "Habe ich das Vokabular des Themas korrekt eingesetzt?",
+   "en": "Have I used the topic vocabulary correctly?",
+   "es": "¿Usé correctamente el vocabulario del tema?",
+   "fr": "Ai-je correctement utilisé le vocabulaire du thème ?",
+   "it": "Ho usato correttamente il vocabolario dell’argomento?",
+   "pt": "Usei corretamente o vocabulário do tema?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Verben mit fester Präposition und das Pronominaladverb da(r)-. Prüfen Sie, ob bei Sachen das richtige Pronominaladverb verwendet wird. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf Verben mit fester Präposition und das Pronominaladverb da(r)-. Prüfen Sie, ob bei Sachen das richtige Pronominaladverb verwendet wird. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on verbs with fixed prepositions and the pronominal adverb da(r)-. Check whether the correct pronominal adverb is used for things. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en los verbos con preposición fija y en el adverbio pronominal «da(r)-». Compruebe si para las cosas se usa el adverbio pronominal correcto. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les verbes à préposition fixe et l’adverbe pronominal « da(r)- ». Vérifiez que le bon adverbe pronominal est utilisé pour les choses. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sui verbi con preposizione fissa e sull’avverbio pronominale «da(r)-». Controlli che per le cose venga usato l’avverbio pronominale corretto. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nos verbos com preposição fixa e no advérbio pronominal «da(r)-». Verifique se, para coisas, é usado o advérbio pronominal correto. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*soñar con* als *träumen mit* übertragen statt *träumen von*.",

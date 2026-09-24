@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Ratschläge geben",
+ "titulo": {
+  "de": "Ratschläge geben",
+  "en": "Giving advice",
+  "es": "Dar consejos",
+  "fr": "Donner des conseils",
+  "it": "Dare consigli",
+  "pt": "Dar conselhos"
+ },
  "categoria": "fluency",
  "ancla": "PD A2/B1",
- "descripcion": "Auf B1 gibt man einen Rat mit du solltest, klar und direkt. Die höflichere Form an deiner Stelle würde ich kann schon eingeführt werden, muss aber nicht perfekt sitzen — das kommt erst auf B2. Wichtig ist vor allem, den Rat verständlich zu formulieren, ohne zu belehrend zu wirken.",
+ "descripcion": {
+  "de": "Auf B1 gibt man einen Rat mit du solltest, klar und direkt. Die höflichere Form an deiner Stelle würde ich kann schon eingeführt werden, muss aber nicht perfekt sitzen — das kommt erst auf B2. Wichtig ist vor allem, den Rat verständlich zu formulieren, ohne zu belehrend zu wirken.",
+  "en": "At B1, you give advice clearly and directly with du solltest. The more polite an deiner Stelle würde ich can already be introduced, but it does not have to be perfect yet — that comes at B2. The main thing is to make the advice understandable without sounding preachy.",
+  "es": "En B1 se da un consejo con «du solltest», de forma clara y directa. Ya puede introducirse la fórmula más cortés «an deiner Stelle würde ich», aunque todavía no es necesario dominarla perfectamente; eso llega en B2. Lo importante es formular el consejo con claridad sin sonar aleccionador.",
+  "fr": "Au niveau B1, on donne un conseil clairement et directement avec « du solltest ». La formule plus polie « an deiner Stelle würde ich » peut déjà être introduite, sans devoir être parfaitement maîtrisée ; cela viendra au B2. L'essentiel est de formuler le conseil clairement sans paraître moralisateur.",
+  "it": "A livello B1 si dà un consiglio in modo chiaro e diretto con «du solltest». Si può già introdurre la formula più cortese «an deiner Stelle würde ich», senza doverla ancora padroneggiare alla perfezione; questo arriverà al B2. L'importante è formulare il consiglio in modo comprensibile senza sembrare predicatori.",
+  "pt": "No B1, dá-se um conselho de forma clara e direta com «du solltest». A forma mais educada «an deiner Stelle würde ich» já pode ser introduzida, mas ainda não precisa estar perfeita — isso vem no B2. O principal é formular o conselho de maneira compreensível sem soar moralista."
+ },
  "cuadroReferencia": {
-  "titulo": "Einen Rat geben",
+  "titulo": {
+   "de": "Einen Rat geben",
+   "en": "Giving advice",
+   "es": "Dar un consejo",
+   "fr": "Donner un conseil",
+   "it": "Dare un consiglio",
+   "pt": "Dar um conselho"
+  },
   "columnas": [
-   "Formel",
-   "Beispiel"
+   {
+    "de": "Formel",
+    "en": "Phrase",
+    "es": "Fórmula",
+    "fr": "Formule",
+    "it": "Formula",
+    "pt": "Fórmula"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Du solltest…",
-    "Du solltest mehr Wasser trinken."
+    {
+     "de": "Du solltest…",
+     "en": "You should…",
+     "es": "Deberías…",
+     "fr": "Tu devrais…",
+     "it": "Dovresti…",
+     "pt": "Devias…"
+    },
+    {
+     "de": "Du solltest mehr Wasser trinken.",
+     "en": "You should drink more water.",
+     "es": "Deberías beber más agua.",
+     "fr": "Tu devrais boire plus d'eau.",
+     "it": "Dovresti bere più acqua.",
+     "pt": "Você deveria beber mais água."
+    }
    ],
    [
-    "An deiner Stelle würde ich…",
-    "An deiner Stelle würde ich früher schlafen gehen."
+    {
+     "de": "An deiner Stelle würde ich…",
+     "en": "If I were you, I'd…",
+     "es": "Yo en tu lugar…",
+     "fr": "À ta place, je…",
+     "it": "Al tuo posto, io…",
+     "pt": "No teu lugar, eu…"
+    },
+    {
+     "de": "An deiner Stelle würde ich früher schlafen gehen.",
+     "en": "If I were you, I'd go to bed earlier.",
+     "es": "En tu lugar, me iría a dormir más temprano.",
+     "fr": "À ta place, j'irais me coucher plus tôt.",
+     "it": "Al posto tuo, andrei a dormire prima.",
+     "pt": "No seu lugar, eu iria dormir mais cedo."
+    }
    ],
    [
-    "Warum probierst du nicht…?",
-    "Warum probierst du nicht einfach ein anderes Rezept?"
+    {
+     "de": "Warum probierst du nicht…?",
+     "en": "Why don't you try…?",
+     "es": "¿Por qué no probás…?",
+     "fr": "Pourquoi tu n’essaies pas… ?",
+     "it": "Perché non provi…?",
+     "pt": "Porque não experimentas…?"
+    },
+    {
+     "de": "Warum probierst du nicht einfach ein anderes Rezept?",
+     "en": "Why don't you just try another recipe?",
+     "es": "¿Por qué no probás otra receta?",
+     "fr": "Pourquoi n'essaies-tu pas simplement une autre recette ?",
+     "it": "Perché non provi semplicemente un'altra ricetta?",
+     "pt": "Por que você não tenta simplesmente outra receita?"
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Du solltest wirklich mehr Wasser trinken.",
+   "texto": {
+    "de": "Du solltest wirklich mehr Wasser trinken.",
+    "en": "You really should drink more water.",
+    "es": "Realmente deberías beber más agua.",
+    "fr": "Tu devrais vraiment boire plus d'eau.",
+    "it": "Dovresti davvero bere più acqua.",
+    "pt": "Você realmente deveria beber mais água."
+   },
    "audio": true
   },
   {
-   "texto": "An deiner Stelle würde ich früher schlafen gehen.",
+   "texto": {
+    "de": "An deiner Stelle würde ich früher schlafen gehen.",
+    "en": "If I were you, I'd go to bed earlier.",
+    "es": "En tu lugar, me iría a dormir más temprano.",
+    "fr": "À ta place, j'irais me coucher plus tôt.",
+    "it": "Al posto tuo, andrei a dormire prima.",
+    "pt": "No seu lugar, eu iria dormir mais cedo."
+   },
    "audio": true
   },
   {
-   "texto": "Warum probierst du es nicht einfach mal?"
+   "texto": {
+    "de": "Warum probierst du es nicht einfach mal?",
+    "en": "Why don't you just give it a try?",
+    "es": "¿Por qué no lo probás?",
+    "fr": "Pourquoi n'essaies-tu pas, tout simplement ?",
+    "it": "Perché non provi semplicemente?",
+    "pt": "Por que você não tenta?"
+   }
   }
  ],
  "notas": [
-  "Du solltest ist die einfachste und direkteste Form für einen Rat auf B1.",
-  "An deiner Stelle würde ich braucht den Konjunktiv II und klingt höflicher.",
-  "Warum … nicht? ist eine freundliche Alternative, einen Rat als Frage zu formulieren."
+  {
+   "de": "Du solltest ist die einfachste und direkteste Form für einen Rat auf B1.",
+   "en": "Du solltest is the simplest and most direct way to give advice at B1.",
+   "es": "«Du solltest» es la forma más sencilla y directa de dar un consejo en B1.",
+   "fr": "« Du solltest » est la manière la plus simple et la plus directe de donner un conseil au niveau B1.",
+   "it": "«Du solltest» è il modo più semplice e diretto per dare un consiglio al B1.",
+   "pt": "«Du solltest» é a forma mais simples e direta de dar um conselho no B1."
+  },
+  {
+   "de": "An deiner Stelle würde ich braucht den Konjunktiv II und klingt höflicher.",
+   "en": "An deiner Stelle würde ich requires the Konjunktiv II and sounds more polite.",
+   "es": "«An deiner Stelle würde ich» requiere Konjunktiv II y suena más cortés.",
+   "fr": "« An deiner Stelle würde ich » demande le Konjunktiv II et paraît plus poli.",
+   "it": "«An deiner Stelle würde ich» richiede il Konjunktiv II e suona più cortese.",
+   "pt": "«An deiner Stelle würde ich» exige o Konjunktiv II e soa mais educado."
+  },
+  {
+   "de": "Warum … nicht? ist eine freundliche Alternative, einen Rat als Frage zu formulieren.",
+   "en": "Warum … nicht? is a friendly alternative for phrasing advice as a question.",
+   "es": "«Warum … nicht?» es una alternativa amable para formular un consejo como pregunta.",
+   "fr": "« Warum … nicht ? » est une alternative amicale pour formuler un conseil sous forme de question.",
+   "it": "«Warum … nicht?» è un'alternativa amichevole per formulare un consiglio come domanda.",
+   "pt": "«Warum … nicht?» é uma alternativa amigável para formular um conselho como pergunta."
+  }
  ],
  "contraste": {
   "es": "Das Spanische gibt Räte sehr direkt mit deberías, was strukturell dem deutschen solltest entspricht. An deiner Stelle hat mit yo en tu lugar eine enge Entsprechung.",
@@ -54,14 +173,42 @@
   "en": "You should entspricht du solltest. Bei I advise you to… ist Vorsicht nötig: raten verlangt den Dativ (ich rate dir), was im Englischen nicht sichtbar ist."
  },
  "errores": [
-  "Sollen statt solltest verwenden, was zu stark klingt.",
-  "Den Konjunktiv II nach an deiner Stelle vergessen.",
-  "Zu viele Ratschläge hintereinander geben."
+  {
+   "de": "Sollen statt solltest verwenden, was zu stark klingt.",
+   "en": "Using sollen instead of solltest, which sounds too strong.",
+   "es": "Usar «sollen» en lugar de «solltest», lo que suena demasiado fuerte.",
+   "fr": "Utiliser « sollen » au lieu de « solltest », ce qui paraît trop fort.",
+   "it": "Usare «sollen» invece di «solltest», risultando troppo forte.",
+   "pt": "Usar «sollen» em vez de «solltest», o que soa forte demais."
+  },
+  {
+   "de": "Den Konjunktiv II nach an deiner Stelle vergessen.",
+   "en": "Forgetting the Konjunktiv II after an deiner Stelle.",
+   "es": "Olvidar el Konjunktiv II después de «an deiner Stelle».",
+   "fr": "Oublier le Konjunktiv II après « an deiner Stelle ».",
+   "it": "Dimenticare il Konjunktiv II dopo «an deiner Stelle».",
+   "pt": "Esquecer o Konjunktiv II depois de «an deiner Stelle»."
+  },
+  {
+   "de": "Zu viele Ratschläge hintereinander geben.",
+   "en": "Giving too many pieces of advice one after another.",
+   "es": "Dar demasiados consejos seguidos.",
+   "fr": "Donner trop de conseils à la suite.",
+   "it": "Dare troppi consigli uno dopo l'altro.",
+   "pt": "Dar conselhos demais um atrás do outro."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Du solltest…",
-   "funcion": "direkter Rat",
+   "funcion": {
+    "de": "direkter Rat",
+    "en": "direct advice",
+    "es": "consejo directo",
+    "fr": "conseil direct",
+    "it": "consiglio diretto",
+    "pt": "conselho direto"
+   },
    "traducciones": {
     "es": "Deberías…",
     "en": "You should…",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "An deiner Stelle würde ich…",
-   "funcion": "höflicher Rat",
+   "funcion": {
+    "de": "höflicher Rat",
+    "en": "polite advice",
+    "es": "consejo cortés",
+    "fr": "conseil poli",
+    "it": "consiglio cortese",
+    "pt": "conselho educado"
+   },
    "traducciones": {
     "es": "Yo en tu lugar…",
     "en": "If I were you, I'd…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "Warum probierst du nicht…?",
-   "funcion": "Rat als Frage",
+   "funcion": {
+    "de": "Rat als Frage",
+    "en": "advice as a question",
+    "es": "consejo en forma de pregunta",
+    "fr": "conseil sous forme de question",
+    "it": "consiglio come domanda",
+    "pt": "conselho em forma de pergunta"
+   },
    "traducciones": {
     "es": "¿Por qué no probás…?",
     "en": "Why don't you try…?",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Es wäre gut, wenn du…",
-   "funcion": "sanfter Rat",
+   "funcion": {
+    "de": "sanfter Rat",
+    "en": "gentle advice",
+    "es": "consejo suave",
+    "fr": "conseil doux",
+    "it": "consiglio delicato",
+    "pt": "conselho suave"
+   },
    "traducciones": {
     "es": "Estaría bien que…",
     "en": "It would be good if you…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Vielleicht solltest du…",
-   "funcion": "abgeschwächter Rat",
+   "funcion": {
+    "de": "abgeschwächter Rat",
+    "en": "softened advice",
+    "es": "consejo atenuado",
+    "fr": "conseil atténué",
+    "it": "consiglio attenuato",
+    "pt": "conselho atenuado"
+   },
    "traducciones": {
     "es": "Quizás deberías…",
     "en": "Maybe you should…",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Ich würde dir empfehlen, zu…",
-   "funcion": "formeller Rat",
+   "funcion": {
+    "de": "formeller Rat",
+    "en": "formal advice",
+    "es": "consejo formal",
+    "fr": "conseil formel",
+    "it": "consiglio formale",
+    "pt": "conselho formal"
+   },
    "traducciones": {
     "es": "Te recomendaría…",
     "en": "I'd recommend that you…",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Steht nach an deiner Stelle der Konjunktiv II?",
-  "Klingt der Rat freundlich?",
-  "Habe ich nur einen Rat auf einmal gegeben?",
-  "Habe ich du solltest nicht mehrfach wiederholt?",
-  "Habe ich mindestens zwei verschiedene Formeln benutzt?"
+  {
+   "de": "Steht nach an deiner Stelle der Konjunktiv II?",
+   "en": "Is the Konjunktiv II used after an deiner Stelle?",
+   "es": "¿Después de «an deiner Stelle» se usa Konjunktiv II?",
+   "fr": "Le Konjunktiv II est-il utilisé après « an deiner Stelle » ?",
+   "it": "Dopo «an deiner Stelle» si usa il Konjunktiv II?",
+   "pt": "Depois de «an deiner Stelle», foi usado o Konjunktiv II?"
+  },
+  {
+   "de": "Klingt der Rat freundlich?",
+   "en": "Does the advice sound friendly?",
+   "es": "¿El consejo suena amable?",
+   "fr": "Le conseil semble-t-il amical ?",
+   "it": "Il consiglio suona amichevole?",
+   "pt": "O conselho soa amigável?"
+  },
+  {
+   "de": "Habe ich nur einen Rat auf einmal gegeben?",
+   "en": "Have I given only one piece of advice at a time?",
+   "es": "¿Di solo un consejo por vez?",
+   "fr": "Ai-je donné un seul conseil à la fois ?",
+   "it": "Ho dato un solo consiglio alla volta?",
+   "pt": "Dei apenas um conselho de cada vez?"
+  },
+  {
+   "de": "Habe ich du solltest nicht mehrfach wiederholt?",
+   "en": "Have I avoided repeating du solltest several times?",
+   "es": "¿Evité repetir «du solltest» varias veces?",
+   "fr": "Ai-je évité de répéter « du solltest » plusieurs fois ?",
+   "it": "Ho evitato di ripetere «du solltest» più volte?",
+   "pt": "Evitei repetir «du solltest» várias vezes?"
+  },
+  {
+   "de": "Habe ich mindestens zwei verschiedene Formeln benutzt?",
+   "en": "Have I used at least two different expressions?",
+   "es": "¿Usé al menos dos fórmulas diferentes?",
+   "fr": "Ai-je utilisé au moins deux formules différentes ?",
+   "it": "Ho usato almeno due formule diverse?",
+   "pt": "Usei pelo menos duas fórmulas diferentes?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Form des Ratschlags. Prüfen Sie den Konjunktiv II nach an deiner Stelle und ob der Ton freundlich bleibt, nicht belehrend. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf die Form des Ratschlags. Prüfen Sie den Konjunktiv II nach an deiner Stelle und ob der Ton freundlich bleibt, nicht belehrend. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on the form of the advice. Check the Konjunktiv II after an deiner Stelle and whether the tone remains friendly rather than preachy. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en la forma del consejo. Revise el Konjunktiv II después de «an deiner Stelle» y si el tono se mantiene amable, sin sonar aleccionador. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur la forme du conseil. Vérifiez le Konjunktiv II après « an deiner Stelle » et si le ton reste amical, sans être moralisateur. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sulla forma del consiglio. Controlli il Konjunktiv II dopo «an deiner Stelle» e che il tono rimanga amichevole, non predicatorio. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente na forma do conselho. Verifique o Konjunktiv II depois de «an deiner Stelle» e se o tom continua amigável, sem soar moralista. Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*Tienes que probarlo* als *Du musst* übertragen, was im Deutschen wie eine Pflicht klingt, statt *Du solltest*."

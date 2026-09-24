@@ -3,52 +3,199 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Trennbare und untrennbare Verben",
+ "titulo": {
+  "de": "Trennbare und untrennbare Verben",
+  "en": "Separable and inseparable verbs",
+  "es": "Verbos separables e inseparables",
+  "fr": "Verbes séparables et inséparables",
+  "it": "Verbi separabili e inseparabili",
+  "pt": "Verbos separáveis e inseparáveis"
+ },
  "categoria": "grammar",
  "ancla": "PD A2",
- "descripcion": "Trennbare Verben (aufstehen, anrufen, mitkommen) trennen ihr Präfix im Hauptsatz und schicken es ans Satzende. Untrennbare Verben (verstehen, bekommen, erzählen) bleiben immer zusammen. Diese Unterscheidung ist auf B1 entscheidend für die korrekte Satzstellung.",
+ "descripcion": {
+  "de": "Trennbare Verben (aufstehen, anrufen, mitkommen) trennen ihr Präfix im Hauptsatz und schicken es ans Satzende. Untrennbare Verben (verstehen, bekommen, erzählen) bleiben immer zusammen. Diese Unterscheidung ist auf B1 entscheidend für die korrekte Satzstellung.",
+  "en": "Separable verbs (aufstehen, anrufen, mitkommen) separate their prefix in a main clause and send it to the end of the sentence. Inseparable verbs (verstehen, bekommen, erzählen) always stay together. At B1, this distinction is essential for correct word order.",
+  "es": "Los verbos separables («aufstehen, anrufen, mitkommen») separan su prefijo en la oración principal y lo colocan al final. Los verbos inseparables («verstehen, bekommen, erzählen») siempre permanecen unidos. En B1, esta distinción es fundamental para el orden correcto de la oración.",
+  "fr": "Les verbes à particule séparable (« aufstehen, anrufen, mitkommen ») séparent leur préfixe dans la proposition principale et le placent à la fin de la phrase. Les verbes inséparables (« verstehen, bekommen, erzählen ») restent toujours soudés. Au niveau B1, cette distinction est essentielle pour l’ordre correct des mots.",
+  "it": "I verbi separabili («aufstehen, anrufen, mitkommen») separano il prefisso nella frase principale e lo mandano alla fine. I verbi inseparabili («verstehen, bekommen, erzählen») restano sempre uniti. Al B1 questa distinzione è fondamentale per il corretto ordine delle parole.",
+  "pt": "Os verbos separáveis («aufstehen, anrufen, mitkommen») separam o prefixo na oração principal e o colocam no final da frase. Os verbos inseparáveis («verstehen, bekommen, erzählen») permanecem sempre juntos. No nível B1, essa distinção é essencial para a ordem correta das palavras."
+ },
  "cuadroReferencia": {
-  "titulo": "Trennbar oder nicht?",
+  "titulo": {
+   "de": "Trennbar oder nicht?",
+   "en": "Separable or not?",
+   "es": "¿Separable o no?",
+   "fr": "Séparable ou non ?",
+   "it": "Separabile o no?",
+   "pt": "Separável ou não?"
+  },
   "columnas": [
-   "Typ",
-   "Präfixe",
-   "Beispiel"
+   {
+    "de": "Typ",
+    "en": "Type",
+    "es": "Tipo",
+    "fr": "Type",
+    "it": "Tipo",
+    "pt": "Tipo"
+   },
+   {
+    "de": "Präfixe",
+    "en": "Prefixes",
+    "es": "Prefijos",
+    "fr": "Préfixes",
+    "it": "Prefissi",
+    "pt": "Prefixos"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Trennbar",
-    "auf-, an-, mit-, aus-, ein-",
-    "Ich stehe um sieben auf."
+    {
+     "de": "Trennbar",
+     "en": "Separable",
+     "es": "Separable",
+     "fr": "Séparable",
+     "it": "Separabile",
+     "pt": "Separável"
+    },
+    {
+     "de": "auf-, an-, mit-, aus-, ein-",
+     "en": "auf-, an-, mit-, aus-, ein-",
+     "es": "auf-, an-, mit-, aus-, ein-",
+     "fr": "auf-, an-, mit-, aus-, ein-",
+     "it": "auf-, an-, mit-, aus-, ein-",
+     "pt": "auf-, an-, mit-, aus-, ein-"
+    },
+    {
+     "de": "Ich stehe um sieben auf.",
+     "en": "I get up at seven.",
+     "es": "Me levanto a las siete.",
+     "fr": "Je me lève à sept heures.",
+     "it": "Mi alzo alle sette.",
+     "pt": "Eu me levanto às sete."
+    }
    ],
    [
-    "Untrennbar",
-    "be-, ver-, er-, ge-, ent-",
-    "Ich verstehe das nicht."
+    {
+     "de": "Untrennbar",
+     "en": "Inseparable",
+     "es": "Inseparable",
+     "fr": "Inséparable",
+     "it": "Inseparabile",
+     "pt": "Inseparável"
+    },
+    {
+     "de": "be-, ver-, er-, ge-, ent-",
+     "en": "be-, ver-, er-, ge-, ent-",
+     "es": "be-, ver-, er-, ge-, ent-",
+     "fr": "be-, ver-, er-, ge-, ent-",
+     "it": "be-, ver-, er-, ge-, ent-",
+     "pt": "be-, ver-, er-, ge-, ent-"
+    },
+    {
+     "de": "Ich verstehe das nicht.",
+     "en": "I don’t understand that.",
+     "es": "No entiendo eso.",
+     "fr": "Je ne comprends pas ça.",
+     "it": "Non lo capisco.",
+     "pt": "Não entendo isso."
+    }
    ],
    [
-    "Perfekt trennbar",
-    "kein ge- in der Mitte",
-    "Ich bin aufgestanden."
+    {
+     "de": "Perfekt trennbar",
+     "en": "separable perfect tense",
+     "es": "Perfekt de verbos separables",
+     "fr": "parfait des verbes séparables",
+     "it": "Perfekt dei verbi separabili",
+     "pt": "Perfekt de verbos separáveis"
+    },
+    {
+     "de": "kein ge- in der Mitte",
+     "en": "no ge- in the middle",
+     "es": "sin «ge-» en el medio",
+     "fr": "pas de « ge- » au milieu",
+     "it": "senza «ge-» in mezzo",
+     "pt": "sem «ge-» no meio"
+    },
+    {
+     "de": "Ich bin aufgestanden.",
+     "en": "I got up.",
+     "es": "Me levanté.",
+     "fr": "Je me suis levé(e).",
+     "it": "Mi sono alzato/a.",
+     "pt": "Eu me levantei."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich stehe jeden Tag um sieben Uhr auf.",
+   "texto": {
+    "de": "Ich stehe jeden Tag um sieben Uhr auf.",
+    "en": "I get up at seven every day.",
+    "es": "Me levanto todos los días a las siete.",
+    "fr": "Je me lève tous les jours à sept heures.",
+    "it": "Mi alzo ogni giorno alle sette.",
+    "pt": "Eu me levanto todos os dias às sete."
+   },
    "audio": true
   },
   {
-   "texto": "Ich verstehe diese Aufgabe nicht ganz.",
+   "texto": {
+    "de": "Ich verstehe diese Aufgabe nicht ganz.",
+    "en": "I don’t quite understand this exercise.",
+    "es": "No termino de entender esta tarea.",
+    "fr": "Je ne comprends pas tout à fait cet exercice.",
+    "it": "Non capisco del tutto questo esercizio.",
+    "pt": "Não entendo muito bem este exercício."
+   },
    "audio": true
   },
   {
-   "texto": "Ich bin heute später aufgestanden als sonst."
+   "texto": {
+    "de": "Ich bin heute später aufgestanden als sonst.",
+    "en": "I got up later than usual today.",
+    "es": "Hoy me levanté más tarde de lo habitual.",
+    "fr": "Aujourd’hui, je me suis levé(e) plus tard que d’habitude.",
+    "it": "Oggi mi sono alzato/a più tardi del solito.",
+    "pt": "Hoje me levantei mais tarde do que de costume."
+   }
   }
  ],
  "notas": [
-  "Im Hauptsatz steht das Präfix des trennbaren Verbs immer ganz am Ende: ich rufe dich später an.",
-  "Im Perfekt steht ge- zwischen Präfix und Verbstamm: aufgestanden, nicht gestandenauf.",
-  "Untrennbare Präfixe (be-, ver-, er-, ge-, ent-, zer-) sind nie betont und trennen sich nie."
+  {
+   "de": "Im Hauptsatz steht das Präfix des trennbaren Verbs immer ganz am Ende: ich rufe dich später an.",
+   "en": "In a main clause, the prefix of a separable verb always goes right at the end: ich rufe dich später an.",
+   "es": "En una oración principal, el prefijo de un verbo separable siempre va al final: «ich rufe dich später an».",
+   "fr": "Dans une proposition principale, le préfixe d’un verbe séparable se place toujours tout à la fin : « ich rufe dich später an ».",
+   "it": "Nella frase principale, il prefisso di un verbo separabile va sempre in fondo: «ich rufe dich später an».",
+   "pt": "Em uma oração principal, o prefixo de um verbo separável vai sempre para o final: «ich rufe dich später an»."
+  },
+  {
+   "de": "Im Perfekt steht ge- zwischen Präfix und Verbstamm: aufgestanden, nicht gestandenauf.",
+   "en": "In the perfect tense, ge- comes between the prefix and the verb stem: aufgestanden, not gestandenauf.",
+   "es": "En Perfekt, «ge-» va entre el prefijo y la raíz verbal: «aufgestanden», no «gestandenauf».",
+   "fr": "Au parfait, « ge- » se place entre le préfixe et le radical du verbe : « aufgestanden », et non « gestandenauf ».",
+   "it": "Nel Perfekt, «ge-» va tra il prefisso e la radice del verbo: «aufgestanden», non «gestandenauf».",
+   "pt": "No Perfekt, «ge-» fica entre o prefixo e o radical do verbo: «aufgestanden», e não «gestandenauf»."
+  },
+  {
+   "de": "Untrennbare Präfixe (be-, ver-, er-, ge-, ent-, zer-) sind nie betont und trennen sich nie.",
+   "en": "Inseparable prefixes (be-, ver-, er-, ge-, ent-, zer-) are never stressed and never separate.",
+   "es": "Los prefijos inseparables («be-, ver-, er-, ge-, ent-, zer-») nunca llevan el acento y nunca se separan.",
+   "fr": "Les préfixes inséparables (« be-, ver-, er-, ge-, ent-, zer- ») ne sont jamais accentués et ne se séparent jamais.",
+   "it": "I prefissi inseparabili («be-, ver-, er-, ge-, ent-, zer-») non sono mai accentati e non si separano mai.",
+   "pt": "Os prefixos inseparáveis («be-, ver-, er-, ge-, ent-, zer-») nunca recebem a tonicidade e nunca se separam."
+  }
  ],
  "contraste": {
   "es": "Das Spanische hat keine Entsprechung für trennbare Verben — es gibt keine Präfixe, die im Satz an eine andere Stelle wandern. Diese Struktur ist für Spanischsprachige komplett neu und wird oft vergessen, weil man im Spanischen das ganze Verb einfach zusammenlässt.",
@@ -58,14 +205,42 @@
   "en": "Englische phrasal verbs werden ebenfalls getrennt (call her back), die Idee ist also bekannt. Hilfreich für die untrennbaren Verben: Viele haben englische Verwandte, die ebenfalls fest sind (verstehen – understand, vergessen – forget)."
  },
  "errores": [
-  "Das Präfix vergessen und es nicht ans Satzende stellen: ich stehe auf um sieben statt ich stehe um sieben auf.",
-  "Bei untrennbaren Verben trotzdem versuchen, das Präfix zu trennen.",
-  "Im Perfekt ge- an der falschen Stelle einfügen."
+  {
+   "de": "Das Präfix vergessen und es nicht ans Satzende stellen: ich stehe auf um sieben statt ich stehe um sieben auf.",
+   "en": "Forgetting the prefix and not putting it at the end of the sentence: ich stehe auf um sieben instead of ich stehe um sieben auf.",
+   "es": "Olvidar el prefijo y no colocarlo al final de la oración: «ich stehe auf um sieben» en lugar de «ich stehe um sieben auf».",
+   "fr": "Oublier le préfixe et ne pas le placer à la fin de la phrase : « ich stehe auf um sieben » au lieu de « ich stehe um sieben auf ».",
+   "it": "Dimenticare il prefisso e non metterlo alla fine della frase: «ich stehe auf um sieben» invece di «ich stehe um sieben auf».",
+   "pt": "Esquecer o prefixo e não colocá-lo no final da frase: «ich stehe auf um sieben» em vez de «ich stehe um sieben auf»."
+  },
+  {
+   "de": "Bei untrennbaren Verben trotzdem versuchen, das Präfix zu trennen.",
+   "en": "Trying to separate the prefix even with inseparable verbs.",
+   "es": "Intentar separar el prefijo incluso con verbos inseparables.",
+   "fr": "Essayer de séparer le préfixe même avec des verbes inséparables.",
+   "it": "Cercare di separare il prefisso anche con i verbi inseparabili.",
+   "pt": "Tentar separar o prefixo mesmo nos verbos inseparáveis."
+  },
+  {
+   "de": "Im Perfekt ge- an der falschen Stelle einfügen.",
+   "en": "Putting ge- in the wrong place in the perfect tense.",
+   "es": "Colocar «ge-» en el lugar incorrecto en Perfekt.",
+   "fr": "Placer « ge- » au mauvais endroit au parfait.",
+   "it": "Inserire «ge-» nel posto sbagliato nel Perfekt.",
+   "pt": "Colocar «ge-» no lugar errado no Perfekt."
+  }
  ],
  "redemittel": [
   {
    "expresion": "…stehe ich…auf.",
-   "funcion": "trennbares Verb, Hauptsatz",
+   "funcion": {
+    "de": "trennbares Verb, Hauptsatz",
+    "en": "separable verb, main clause",
+    "es": "verbo separable, oración principal",
+    "fr": "verbe séparable, proposition principale",
+    "it": "verbo separabile, frase principale",
+    "pt": "verbo separável, oração principal"
+   },
    "traducciones": {
     "es": "…me levanto…",
     "en": "…I get up…",
@@ -76,7 +251,14 @@
   },
   {
    "expresion": "Ich rufe dich…an.",
-   "funcion": "trennbares Verb",
+   "funcion": {
+    "de": "trennbares Verb",
+    "en": "separable verb",
+    "es": "verbo separable",
+    "fr": "verbe séparable",
+    "it": "verbo separabile",
+    "pt": "verbo separável"
+   },
    "traducciones": {
     "es": "Te llamo…",
     "en": "I'll call you…",
@@ -87,7 +269,14 @@
   },
   {
    "expresion": "Ich verstehe…",
-   "funcion": "untrennbares Verb",
+   "funcion": {
+    "de": "untrennbares Verb",
+    "en": "inseparable verb",
+    "es": "verbo inseparable",
+    "fr": "verbe inséparable",
+    "it": "verbo inseparabile",
+    "pt": "verbo inseparável"
+   },
    "traducciones": {
     "es": "Entiendo…",
     "en": "I understand…",
@@ -98,7 +287,14 @@
   },
   {
    "expresion": "Kommst du mit?",
-   "funcion": "trennbares Verb, Frage",
+   "funcion": {
+    "de": "trennbares Verb, Frage",
+    "en": "separable verb, question",
+    "es": "verbo separable, pregunta",
+    "fr": "verbe séparable, question",
+    "it": "verbo separabile, domanda",
+    "pt": "verbo separável, pergunta"
+   },
    "traducciones": {
     "es": "¿Venís conmigo?",
     "en": "Are you coming along?",
@@ -109,7 +305,14 @@
   },
   {
    "expresion": "Ich bin…aufgestanden.",
-   "funcion": "trennbares Verb, Perfekt",
+   "funcion": {
+    "de": "trennbares Verb, Perfekt",
+    "en": "separable verb, perfect tense",
+    "es": "verbo separable, Perfekt",
+    "fr": "verbe séparable, parfait",
+    "it": "verbo separabile, Perfekt",
+    "pt": "verbo separável, Perfekt"
+   },
    "traducciones": {
     "es": "Me levanté…",
     "en": "I got up…",
@@ -120,7 +323,14 @@
   },
   {
    "expresion": "Ich habe das…bekommen.",
-   "funcion": "untrennbares Verb, Perfekt",
+   "funcion": {
+    "de": "untrennbares Verb, Perfekt",
+    "en": "inseparable verb, perfect tense",
+    "es": "verbo inseparable, Perfekt",
+    "fr": "verbe inséparable, parfait",
+    "it": "verbo inseparabile, Perfekt",
+    "pt": "verbo inseparável, Perfekt"
+   },
    "traducciones": {
     "es": "Recibí eso…",
     "en": "I received that…",
@@ -131,13 +341,55 @@
   }
  ],
  "autochequeo": [
-  "Steht das Präfix des trennbaren Verbs am Satzende?",
-  "Ist bei untrennbaren Verben das Präfix nicht getrennt?",
-  "Steht ge- an der richtigen Stelle im Perfekt?",
-  "Habe ich mindestens zwei trennbare und ein untrennbares Verb benutzt?",
-  "Klingt der Satz natürlich, nicht wie ein zusammengeschriebenes Verb aus dem Spanischen?"
+  {
+   "de": "Steht das Präfix des trennbaren Verbs am Satzende?",
+   "en": "Is the prefix of the separable verb at the end of the sentence?",
+   "es": "¿El prefijo del verbo separable está al final de la oración?",
+   "fr": "Le préfixe du verbe séparable est-il à la fin de la phrase ?",
+   "it": "Il prefisso del verbo separabile è alla fine della frase?",
+   "pt": "O prefixo do verbo separável está no final da frase?"
+  },
+  {
+   "de": "Ist bei untrennbaren Verben das Präfix nicht getrennt?",
+   "en": "With inseparable verbs, has the prefix remained attached?",
+   "es": "¿En los verbos inseparables, el prefijo permaneció unido?",
+   "fr": "Avec les verbes inséparables, le préfixe est-il resté attaché ?",
+   "it": "Nei verbi inseparabili, il prefisso è rimasto unito?",
+   "pt": "Nos verbos inseparáveis, o prefixo permaneceu unido?"
+  },
+  {
+   "de": "Steht ge- an der richtigen Stelle im Perfekt?",
+   "en": "Is ge- in the right place in the perfect tense?",
+   "es": "¿«Ge-» está en la posición correcta en Perfekt?",
+   "fr": "« Ge- » est-il à la bonne place au parfait ?",
+   "it": "«Ge-» è nella posizione corretta nel Perfekt?",
+   "pt": "«Ge-» está na posição correta no Perfekt?"
+  },
+  {
+   "de": "Habe ich mindestens zwei trennbare und ein untrennbares Verb benutzt?",
+   "en": "Have I used at least two separable verbs and one inseparable verb?",
+   "es": "¿Usé al menos dos verbos separables y uno inseparable?",
+   "fr": "Ai-je utilisé au moins deux verbes séparables et un verbe inséparable ?",
+   "it": "Ho usato almeno due verbi separabili e uno inseparabile?",
+   "pt": "Usei pelo menos dois verbos separáveis e um inseparável?"
+  },
+  {
+   "de": "Klingt der Satz natürlich, nicht wie ein zusammengeschriebenes Verb aus dem Spanischen?",
+   "en": "Does the sentence sound natural rather than like a German verb kept together as in Spanish?",
+   "es": "¿La oración suena natural y no como un verbo alemán escrito todo junto por influencia del español?",
+   "fr": "La phrase semble-t-elle naturelle, et non comme si le verbe allemand était resté soudé sous l’influence de l’espagnol ?",
+   "it": "La frase suona naturale, e non come un verbo tedesco lasciato tutto unito per influenza dello spagnolo?",
+   "pt": "A frase soa natural, e não como um verbo alemão mantido todo junto por influência do espanhol?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf trennbare und untrennbare Verben. Prüfen Sie die Position des Präfixes und die Bildung des Perfekts. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich auf trennbare und untrennbare Verben. Prüfen Sie die Position des Präfixes und die Bildung des Perfekts. Schreiben Sie den Text nicht neu.",
+  "en": "Focus exclusively on separable and inseparable verbs. Check the position of the prefix and the formation of the perfect tense. Do not rewrite the text.",
+  "es": "Concentre su atención exclusivamente en los verbos separables e inseparables. Revise la posición del prefijo y la formación del Perfekt. No reescriba el texto.",
+  "fr": "Concentrez-vous exclusivement sur les verbes séparables et inséparables. Vérifiez la position du préfixe et la formation du parfait. Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sui verbi separabili e inseparabili. Controlli la posizione del prefisso e la formazione del Perfekt. Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente nos verbos separáveis e inseparáveis. Verifique a posição do prefixo e a formação do Perfekt. Não reescreva você mesmo o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*llamarle* als *ihm anrufen* übertragen statt *ihn anrufen*."

@@ -3,48 +3,167 @@
  "nivel": "B1",
  "idioma": "de",
  "bilingue": true,
- "titulo": "Meinung äußern und begründen",
+ "titulo": {
+  "de": "Meinung äußern und begründen",
+  "en": "Expressing and justifying an opinion",
+  "es": "Expresar y justificar una opinión",
+  "fr": "Exprimer et justifier une opinion",
+  "it": "Esprimere e motivare un'opinione",
+  "pt": "Expressar e justificar uma opinião"
+ },
  "categoria": "fluency",
  "ancla": "PD A2/B1",
- "descripcion": "Auf B1 äußert man eine einfache Meinung mit ich finde oder ich denke und gibt einen kurzen Grund an. Die Begründung mit weil ist der wichtigste Baustein und wird oft vergessen — eine Meinung ohne Grund wirkt auf B1 bereits unvollständig.",
+ "descripcion": {
+  "de": "Auf B1 äußert man eine einfache Meinung mit ich finde oder ich denke und gibt einen kurzen Grund an. Die Begründung mit weil ist der wichtigste Baustein und wird oft vergessen — eine Meinung ohne Grund wirkt auf B1 bereits unvollständig.",
+  "en": "At B1, you express a simple opinion with ich finde or ich denke and give a short reason. Using weil to justify the opinion is the most important building block and is often forgotten — at B1, an opinion without a reason already feels incomplete.",
+  "es": "En B1 se expresa una opinión sencilla con «ich finde» o «ich denke» y se añade una razón breve. La justificación con «weil» es el elemento más importante y a menudo se olvida: en B1, una opinión sin motivo ya resulta incompleta.",
+  "fr": "Au niveau B1, on exprime une opinion simple avec « ich finde » ou « ich denke » et on donne une brève raison. La justification avec « weil » est l’élément essentiel et on l’oublie souvent : au niveau B1, une opinion sans raison paraît déjà incomplète.",
+  "it": "A livello B1 si esprime un’opinione semplice con «ich finde» o «ich denke» e si aggiunge una breve motivazione. La giustificazione con «weil» è l’elemento più importante e spesso viene dimenticata: a livello B1, un’opinione senza motivo risulta già incompleta.",
+  "pt": "No nível B1, expressa-se uma opinião simples com «ich finde» ou «ich denke» e acrescenta-se um motivo curto. A justificativa com «weil» é o elemento mais importante e muitas vezes é esquecida — no B1, uma opinião sem motivo já parece incompleta."
+ },
  "cuadroReferencia": {
-  "titulo": "Meinung mit Grund",
+  "titulo": {
+   "de": "Meinung mit Grund",
+   "en": "Opinion with a reason",
+   "es": "Opinión con justificación",
+   "fr": "Opinion avec justification",
+   "it": "Opinione con motivazione",
+   "pt": "Opinião com justificativa"
+  },
   "columnas": [
-   "Schritt",
-   "Beispiel"
+   {
+    "de": "Schritt",
+    "en": "Step",
+    "es": "Paso",
+    "fr": "Étape",
+    "it": "Passaggio",
+    "pt": "Etapa"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
   ],
   "filas": [
    [
-    "Meinung",
-    "Ich finde, das ist eine gute Idee."
+    {
+     "de": "Meinung",
+     "en": "Opinion",
+     "es": "Opinión",
+     "fr": "Opinion",
+     "it": "Opinione",
+     "pt": "Opinião"
+    },
+    {
+     "de": "Ich finde, das ist eine gute Idee.",
+     "en": "I think that’s a good idea.",
+     "es": "Me parece una buena idea.",
+     "fr": "Je trouve que c’est une bonne idée.",
+     "it": "Penso che sia una buona idea.",
+     "pt": "Acho que é uma boa ideia."
+    }
    ],
    [
-    "Grund",
-    "…, weil es Zeit spart."
+    {
+     "de": "Grund",
+     "en": "Reason",
+     "es": "Razón",
+     "fr": "Raison",
+     "it": "Motivo",
+     "pt": "Motivo"
+    },
+    {
+     "de": "…, weil es Zeit spart.",
+     "en": "…, because it saves time.",
+     "es": "…, porque ahorra tiempo.",
+     "fr": "…, parce que cela fait gagner du temps.",
+     "it": "…, perché fa risparmiare tempo.",
+     "pt": "…, porque economiza tempo."
+    }
    ],
    [
-    "Formeller",
-    "Meiner Meinung nach ist das eine gute Idee."
+    {
+     "de": "Formeller",
+     "en": "More formal",
+     "es": "Más formal",
+     "fr": "Plus formel",
+     "it": "Più formale",
+     "pt": "Mais formal"
+    },
+    {
+     "de": "Meiner Meinung nach ist das eine gute Idee.",
+     "en": "In my opinion, that’s a good idea.",
+     "es": "En mi opinión, es una buena idea.",
+     "fr": "À mon avis, c’est une bonne idée.",
+     "it": "Secondo me, è una buona idea.",
+     "pt": "Na minha opinião, é uma boa ideia."
+    }
    ]
   ]
  },
  "ejemplos": [
   {
-   "texto": "Ich finde, das ist eine sehr gute Idee.",
+   "texto": {
+    "de": "Ich finde, das ist eine sehr gute Idee.",
+    "en": "I think that's a very good idea.",
+    "es": "Me parece una muy buena idea.",
+    "fr": "Je trouve que c'est une très bonne idée.",
+    "it": "Penso che sia un'ottima idea.",
+    "pt": "Acho que é uma ideia muito boa."
+   },
    "audio": true
   },
   {
-   "texto": "Ich denke, das spart uns viel Zeit.",
+   "texto": {
+    "de": "Ich denke, das spart uns viel Zeit.",
+    "en": "I think that will save us a lot of time.",
+    "es": "Creo que eso nos ahorra mucho tiempo.",
+    "fr": "Je pense que cela nous fera gagner beaucoup de temps.",
+    "it": "Penso che ci farà risparmiare molto tempo.",
+    "pt": "Acho que isso vai nos poupar muito tempo."
+   },
    "audio": true
   },
   {
-   "texto": "Meiner Meinung nach ist das zu teuer."
+   "texto": {
+    "de": "Meiner Meinung nach ist das zu teuer.",
+    "en": "In my opinion, that's too expensive.",
+    "es": "En mi opinión, eso es demasiado caro.",
+    "fr": "À mon avis, c'est trop cher.",
+    "it": "Secondo me, è troppo caro.",
+    "pt": "Na minha opinião, isso é caro demais."
+   }
   }
  ],
  "notas": [
-  "Ich finde und ich denke sind auf B1 austauschbar und beide neutral.",
-  "Nach weil steht das Verb am Ende: weil es Zeit spart, nicht weil es spart Zeit.",
-  "Meiner Meinung nach ist etwas formeller und passt gut in eine Diskussion."
+  {
+   "de": "Ich finde und ich denke sind auf B1 austauschbar und beide neutral.",
+   "en": "At B1, ich finde and ich denke are interchangeable and both are neutral.",
+   "es": "En B1, «ich finde» e «ich denke» son intercambiables y ambos son neutros.",
+   "fr": "Au niveau B1, « ich finde » et « ich denke » sont interchangeables et tous deux neutres.",
+   "it": "A livello B1, «ich finde» e «ich denke» sono intercambiabili ed entrambi neutri.",
+   "pt": "No B1, «ich finde» e «ich denke» são intercambiáveis e ambos são neutros."
+  },
+  {
+   "de": "Nach weil steht das Verb am Ende: weil es Zeit spart, nicht weil es spart Zeit.",
+   "en": "After weil, the verb goes at the end: weil es Zeit spart, not weil es spart Zeit.",
+   "es": "Después de «weil», el verbo va al final: «weil es Zeit spart», no «weil es spart Zeit».",
+   "fr": "Après « weil », le verbe va à la fin : « weil es Zeit spart », et non « weil es spart Zeit ».",
+   "it": "Dopo «weil», il verbo va alla fine: «weil es Zeit spart», non «weil es spart Zeit».",
+   "pt": "Depois de «weil», o verbo vai para o final: «weil es Zeit spart», e não «weil es spart Zeit»."
+  },
+  {
+   "de": "Meiner Meinung nach ist etwas formeller und passt gut in eine Diskussion.",
+   "en": "Meiner Meinung nach is slightly more formal and works well in a discussion.",
+   "es": "«Meiner Meinung nach» es algo más formal y encaja bien en una discusión.",
+   "fr": "« Meiner Meinung nach » est un peu plus formel et convient bien à une discussion.",
+   "it": "«Meiner Meinung nach» è leggermente più formale e si adatta bene a una discussione.",
+   "pt": "«Meiner Meinung nach» é um pouco mais formal e funciona bem em uma discussão."
+  }
  ],
  "contraste": {
   "es": "Das Spanische äußert Meinungen mit creo que oder me parece que auf sehr ähnliche Weise, sodass sich diese Grundstruktur leicht überträgt. Der Unterschied liegt in der Wortstellung nach weil, die im Spanischen nicht existiert.",
@@ -54,14 +173,42 @@
   "en": "Das englische in my opinion wird oft zu in meiner Meinung übertragen; richtig ist meiner Meinung nach. Ausserdem deckt I think ich finde, ich glaube und ich denke ab, und nach because ändert sich die Wortstellung nicht, nach weil schon."
  },
  "errores": [
-  "Eine Meinung ohne jeden Grund äußern.",
-  "Nach weil das Verb nicht ans Satzende stellen.",
-  "Ich finde und ich denke im selben Satz kombinieren."
+  {
+   "de": "Eine Meinung ohne jeden Grund äußern.",
+   "en": "Expressing an opinion without giving any reason.",
+   "es": "Expresar una opinión sin dar ningún motivo.",
+   "fr": "Exprimer une opinion sans donner aucune raison.",
+   "it": "Esprimere un'opinione senza dare alcun motivo.",
+   "pt": "Expressar uma opinião sem dar nenhum motivo."
+  },
+  {
+   "de": "Nach weil das Verb nicht ans Satzende stellen.",
+   "en": "Not putting the verb at the end after weil.",
+   "es": "No colocar el verbo al final después de «weil».",
+   "fr": "Ne pas mettre le verbe à la fin après « weil ».",
+   "it": "Non mettere il verbo alla fine dopo «weil».",
+   "pt": "Não colocar o verbo no final depois de «weil»."
+  },
+  {
+   "de": "Ich finde und ich denke im selben Satz kombinieren.",
+   "en": "Combining ich finde and ich denke in the same sentence.",
+   "es": "Combinar «ich finde» e «ich denke» en la misma oración.",
+   "fr": "Combiner « ich finde » et « ich denke » dans la même phrase.",
+   "it": "Combinare «ich finde» e «ich denke» nella stessa frase.",
+   "pt": "Combinar «ich finde» e «ich denke» na mesma frase."
+  }
  ],
  "redemittel": [
   {
    "expresion": "Ich finde, das ist…",
-   "funcion": "Meinung",
+   "funcion": {
+    "de": "Meinung",
+    "en": "Opinion",
+    "es": "Opinión",
+    "fr": "Opinion",
+    "it": "Opinione",
+    "pt": "Opinião"
+   },
    "traducciones": {
     "es": "Me parece que es…",
     "en": "I think that's…",
@@ -72,7 +219,14 @@
   },
   {
    "expresion": "Ich denke, dass…",
-   "funcion": "Meinung",
+   "funcion": {
+    "de": "Meinung",
+    "en": "Opinion",
+    "es": "Opinión",
+    "fr": "Opinion",
+    "it": "Opinione",
+    "pt": "Opinião"
+   },
    "traducciones": {
     "es": "Pienso que…",
     "en": "I think that…",
@@ -83,7 +237,14 @@
   },
   {
    "expresion": "…, weil…",
-   "funcion": "Grund",
+   "funcion": {
+    "de": "Grund",
+    "en": "Reason",
+    "es": "Razón",
+    "fr": "Raison",
+    "it": "Motivo",
+    "pt": "Motivo"
+   },
    "traducciones": {
     "es": "…, porque…",
     "en": "…, because…",
@@ -94,7 +255,14 @@
   },
   {
    "expresion": "Meiner Meinung nach…",
-   "funcion": "Meinung, etwas formeller",
+   "funcion": {
+    "de": "Meinung, etwas formeller",
+    "en": "opinion, slightly more formal",
+    "es": "opinión, algo más formal",
+    "fr": "opinion, légèrement plus formelle",
+    "it": "opinione, leggermente più formale",
+    "pt": "opinião, um pouco mais formal"
+   },
    "traducciones": {
     "es": "En mi opinión…",
     "en": "In my opinion…",
@@ -105,7 +273,14 @@
   },
   {
    "expresion": "Ich bin sicher, dass…",
-   "funcion": "starke Meinung",
+   "funcion": {
+    "de": "starke Meinung",
+    "en": "strong opinion",
+    "es": "opinión firme",
+    "fr": "opinion forte",
+    "it": "opinione forte",
+    "pt": "opinião forte"
+   },
    "traducciones": {
     "es": "Estoy seguro de que…",
     "en": "I'm sure that…",
@@ -116,7 +291,14 @@
   },
   {
    "expresion": "Das stimmt schon, aber…",
-   "funcion": "einschränkende Meinung",
+   "funcion": {
+    "de": "einschränkende Meinung",
+    "en": "qualified opinion",
+    "es": "opinión matizada",
+    "fr": "opinion nuancée",
+    "it": "opinione con riserva",
+    "pt": "opinião com ressalva"
+   },
    "traducciones": {
     "es": "Eso es cierto, pero…",
     "en": "That's true, but…",
@@ -127,13 +309,55 @@
   }
  ],
  "autochequeo": [
-  "Habe ich eine klare Meinung geäußert?",
-  "Folgt ein Grund mit weil?",
-  "Steht das Verb im weil-Satz am Ende?",
-  "Habe ich mehr als eine Formel für Meinung benutzt?",
-  "Klingt die Begründung konkret, nicht nur abstrakt?"
+  {
+   "de": "Habe ich eine klare Meinung geäußert?",
+   "en": "Have I expressed a clear opinion?",
+   "es": "¿Expresé una opinión clara?",
+   "fr": "Ai-je exprimé une opinion claire ?",
+   "it": "Ho espresso un'opinione chiara?",
+   "pt": "Expressei uma opinião clara?"
+  },
+  {
+   "de": "Folgt ein Grund mit weil?",
+   "en": "Is there a reason with weil?",
+   "es": "¿Le sigue una razón con «weil»?",
+   "fr": "Y a-t-il une raison introduite par « weil » ?",
+   "it": "Segue una motivazione con «weil»?",
+   "pt": "Há um motivo com «weil»?"
+  },
+  {
+   "de": "Steht das Verb im weil-Satz am Ende?",
+   "en": "Is the verb at the end in the weil clause?",
+   "es": "¿El verbo está al final en la oración con «weil»?",
+   "fr": "Le verbe est-il à la fin dans la proposition avec « weil » ?",
+   "it": "Il verbo è alla fine nella frase con «weil»?",
+   "pt": "O verbo está no final na oração com «weil»?"
+  },
+  {
+   "de": "Habe ich mehr als eine Formel für Meinung benutzt?",
+   "en": "Have I used more than one expression to give an opinion?",
+   "es": "¿Usé más de una fórmula para expresar una opinión?",
+   "fr": "Ai-je utilisé plus d'une formule pour exprimer une opinion ?",
+   "it": "Ho usato più di una formula per esprimere un'opinione?",
+   "pt": "Usei mais de uma fórmula para expressar uma opinião?"
+  },
+  {
+   "de": "Klingt die Begründung konkret, nicht nur abstrakt?",
+   "en": "Is the reason specific rather than merely abstract?",
+   "es": "¿La justificación es concreta y no solo abstracta?",
+   "fr": "La justification est-elle concrète, et pas seulement abstraite ?",
+   "it": "La motivazione è concreta e non solo astratta?",
+   "pt": "A justificativa é concreta, e não apenas abstrata?"
+  }
  ],
- "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Meinung und Grund klar verbunden sind. Prüfen Sie die Wortstellung nach weil. Schreiben Sie den Text nicht neu.",
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich darauf, ob Meinung und Grund klar verbunden sind. Prüfen Sie die Wortstellung nach weil. Schreiben Sie den Text nicht neu.",
+  "en": "Focus your attention exclusively on whether the opinion and the reason are clearly connected. Check the word order after weil. Do not rewrite the text.",
+  "es": "Concéntrese exclusivamente en si la opinión y la razón están claramente conectadas. Revise el orden de palabras después de «weil». No reescriba el texto.",
+  "fr": "Concentrez votre attention exclusivement sur le lien clair entre l'opinion et la raison. Vérifiez l'ordre des mots après « weil ». Ne réécrivez pas le texte.",
+  "it": "Si concentri esclusivamente sul fatto che opinione e motivo siano collegati chiaramente. Controlli l'ordine delle parole dopo «weil». Non riscriva il testo.",
+  "pt": "Concentre-se exclusivamente em verificar se a opinião e o motivo estão claramente ligados. Verifique a ordem das palavras depois de «weil». Não reescreva o texto."
+ },
  "erroresContrastivos": {
   "es": [
    "*Para mí* als *Für mich* in jedem Satz wiederholen statt *Ich finde* oder *Meiner Meinung nach* abzuwechseln."
