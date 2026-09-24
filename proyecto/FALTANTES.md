@@ -63,6 +63,19 @@ siendo `String`. Cuando A2/B1 se embeba con campos `{idioma: texto}`, hay que
 extender `ContenidoSemanal.kt` y el renderizador para resolver el idioma.
 Hoy no rompe nada porque el contenido embebido es solo el piloto 2026 (B2/C1).
 
+### 4.8 — 🔴 Modelos Kotlin no leen `{idioma: texto}` (bloqueante real para embeber A2/B1)
+`Ficha.subtitulo` y el resto de los 13 campos bilingües siguen tipados como
+`String` en Kotlin. Hoy no rompe nada porque solo el piloto 2026 (sin
+traducir) está embebido en la app. Pero es un bloqueante real: antes de
+meter cualquier ficha A2/B1 traducida en `app/src/main/assets/contenido/`,
+alguien tiene que extender los modelos para que sepan resolver el objeto
+por idioma. Asignado a Code, sin empezar.
+
+**Nota de proceso:** la memoria de proyecto de Claude (`reglas-fichas.md`,
+etc.) no es visible para Code — si una regla de ahí es relevante para una
+tarea de Code, hay que copiarla en texto plano dentro del prompt, no asumir
+que la va a leer sola.
+
 ## 5. Audio — 🟡 grabado y convertido, falta subir 4462 al repo
 
 ✅ **7348/7348 filas del Excel grabadas** (6312 textos distintos). `audio-estado.json` registra **6368 archivos: 3298 EN y 3070 DE**. `validar_apariciones.py --anio 2027` no da avisos de audio.
