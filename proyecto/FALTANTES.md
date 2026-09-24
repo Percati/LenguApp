@@ -69,19 +69,25 @@ apariciones, ya con `titulo` y `funcion` incluidos; el hueco viejo de
 `de-C1` ya se corrigió). Excel entregado, ETA 1-2 días. El importador ya
 está listo y probado de punta a punta (round-trip: 522/9/0 sin problemas).
 
-## 7. Vocabulario atestiguado alemán — falta B2 y C2 (requiere que Fer consiga material)
+## 7. Vocabulario atestiguado alemán — B2 resuelto, falta C2
 
-`vocab_de.json` cubre A1/A2/B1/C1 (9987 apariciones). `vocab_en.json` ya
-cubre los 6 niveles (A1-C2, 946 solo en C2). A alemán le faltan B2 y C2
-enteros — no hay lista oficial gratuita del Goethe por encima de B1, así
-que hace falta el Lernwortschatz de un manual (ej. Sicher B2, Aspekte B2,
-Erkundungen C1/C2), en PDF, pasado por OCR (`tesseract -l deu`, comando en
-`tools/fuentes.json` bajo `_ocr`) y agregado a `tools/fuentes/`.
+`vocab_de.json` cubre A1/A2/B1/**B2**/C1: 7607 lemas. B2 entró en sept-2026 a
+partir de seis manuales pasados por OCR (Sicher! B2.1 y B2.2, Aspekte neu B2,
+Erkundungen B2, Einfach besser! 500, Deutsch intensiv B2). Dos consecuencias
+que conviene tener presentes:
 
-**Esto no lo puede resolver ninguna conversación sola — las listas fuente
-tienen copyright y Fer tiene que conseguirlas y colocarlas él mismo.** Una
-vez ahí, correr `build_wordlists.py --config tools/fuentes.json --out
-data/vocab_de.json` es mecánico.
+- 426 lemas que figuraban como C1 pasaron a B2, porque el nivel de enseñanza
+  es el más bajo atestiguado y ahora aparecen también en manuales B2. C1 baja
+  de 1716 a 1290 lemas; no se perdió nada, solo se reetiquetó.
+- La construcción de B2 se hizo **sin el diccionario de frecuencia** como lista
+  blanca (`fuentes/A_Frequency_Dictionary_of_German.pdf` no estaba disponible),
+  así que hay ruido de OCR entre los 4085 lemas B2 extraídos: formas flexionadas
+  (*gestanden*, *hergerissen*) y palabras muy básicas. Cuando se reconstruya con
+  la lista blanca presente, el recuento B2 va a bajar y quedar más limpio.
+
+Falta **C2**, y ahí no hay salida conocida: ningún instituto publica lista por
+encima de B2 y tampoco hay manual C2 con Lernwortschatz conseguido. Los packs
+de alemán C2 quedan sin verificación externa.
 
 ## 8. Sin dueño todavía
 
