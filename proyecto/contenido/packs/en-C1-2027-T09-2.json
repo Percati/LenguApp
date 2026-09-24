@@ -1,17 +1,141 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T09", "n": 2, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T09",
+ "n": 2,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "continuing education", "prioridad": "nucleo", "traducciones": {"es": "la formación continua","de": "die Weiterbildung","fr": "la formation continue","it": "la formazione continua","pt": "a formação continuada"}},
-  {"item": "career path", "prioridad": "nucleo", "traducciones": {"es": "la trayectoria profesional","de": "der Karriereweg","fr": "le parcours professionnel","it": "il percorso professionale","pt": "o percurso profissional"}},
-  {"item": "exam anxiety", "prioridad": "nucleo", "traducciones": {"es": "el miedo a los exámenes","de": "die Prüfungsangst","fr": "le trac des examens","it": "l'ansia da esame","pt": "o medo de exames"}},
-  {"item": "to keep up to date", "prioridad": "nucleo", "traducciones": {"es": "mantenerse al día","de": "auf dem Laufenden bleiben","fr": "rester à jour","it": "restare aggiornato","pt": "manter-se atualizado"}},
-  {"item": "to further one's education", "prioridad": "ampliacion", "traducciones": {"es": "seguir formándose","de": "sich fortbilden","fr": "se perfectionner","it": "aggiornarsi","pt": "aperfeiçoar-se"}},
-  {"item": "final exam", "prioridad": "ampliacion", "traducciones": {"es": "el examen final","de": "die Abschlussprüfung","fr": "l’examen final","it": "l’esame finale","pt": "o exame final"}},
-  {"item": "retraining", "prioridad": "ampliacion", "traducciones": {"es": "la reconversión profesional","de": "die Umschulung","fr": "la reconversion","it": "la riqualificazione","pt": "a requalificação"}},
-  {"item": "certificate of competence", "prioridad": "ampliacion", "traducciones": {"es": "el certificado de competencia","de": "der Kompetenznachweis","fr": "l'attestation de compétences","it": "l'attestato di competenza","pt": "o certificado de competência"}},
-  {"item": "study group", "prioridad": "ampliacion", "traducciones": {"es": "el grupo de estudio","de": "die Lerngruppe","fr": "le groupe d’étude","it": "il gruppo di studio","pt": "o grupo de estudo"}},
-  {"item": "practical relevance", "prioridad": "ampliacion", "traducciones": {"es": "la aplicación práctica","de": "der Praxisbezug","fr": "le lien avec la pratique","it": "l'applicazione pratica","pt": "a aplicação prática"}},
-  {"item": "scholarship", "prioridad": "ampliacion", "traducciones": {"es": "la beca","de": "das Stipendium","fr": "la bourse d’études","it": "la borsa di studio","pt": "a bolsa de estudo"}},
-  {"item": "recognition of qualifications", "prioridad": "ampliacion", "traducciones": {"es": "el reconocimiento de títulos","de": "die Anerkennung von Qualifikationen","fr": "la reconnaissance des qualifications","it": "il riconoscimento dei titoli","pt": "o reconhecimento de qualificações"}}
+  {
+   "item": "career path",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la trayectoria profesional",
+    "de": "der Karriereweg",
+    "fr": "le parcours professionnel",
+    "it": "il percorso professionale",
+    "pt": "o percurso profissional"
+   }
+  },
+  {
+   "item": "continuing education",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la formación continua",
+    "de": "die Weiterbildung",
+    "fr": "la formation continue",
+    "it": "la formazione continua",
+    "pt": "a formação continuada"
+   }
+  },
+  {
+   "item": "exam anxiety",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el miedo a los exámenes",
+    "de": "die Prüfungsangst",
+    "fr": "le trac des examens",
+    "it": "l'ansia da esame",
+    "pt": "o medo de exames"
+   }
+  },
+  {
+   "item": "to keep up to date",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mantenerse al día",
+    "de": "auf dem Laufenden bleiben",
+    "fr": "rester à jour",
+    "it": "restare aggiornato",
+    "pt": "manter-se atualizado"
+   }
+  },
+  {
+   "item": "a professional certificate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el certificado profesional",
+    "de": "der Fachausweis",
+    "fr": "le certificat professionnel",
+    "it": "l'attestato professionale",
+    "pt": "o certificado profissional"
+   }
+  },
+  {
+   "item": "final exam",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el examen final",
+    "de": "die Abschlussprüfung",
+    "fr": "l’examen final",
+    "it": "l’esame finale",
+    "pt": "o exame final"
+   }
+  },
+  {
+   "item": "practical relevance",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la aplicación práctica",
+    "de": "der Praxisbezug",
+    "fr": "le lien avec la pratique",
+    "it": "l'applicazione pratica",
+    "pt": "a aplicação prática"
+   }
+  },
+  {
+   "item": "recognition of qualifications",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el reconocimiento de títulos",
+    "de": "die Anerkennung von Qualifikationen",
+    "fr": "la reconnaissance des qualifications",
+    "it": "il riconoscimento dei titoli",
+    "pt": "o reconhecimento de qualificações"
+   }
+  },
+  {
+   "item": "retraining",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la reconversión profesional",
+    "de": "die Umschulung",
+    "fr": "la reconversion",
+    "it": "la riqualificazione",
+    "pt": "a requalificação"
+   }
+  },
+  {
+   "item": "scholarship",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la beca",
+    "de": "das Stipendium",
+    "fr": "la bourse d’études",
+    "it": "la borsa di studio",
+    "pt": "a bolsa de estudo"
+   }
+  },
+  {
+   "item": "study group",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el grupo de estudio",
+    "de": "die Lerngruppe",
+    "fr": "le groupe d’étude",
+    "it": "il gruppo di studio",
+    "pt": "o grupo de estudo"
+   }
+  },
+  {
+   "item": "to further one's education",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "seguir formándose",
+    "de": "sich fortbilden",
+    "fr": "se perfectionner",
+    "it": "aggiornarsi",
+    "pt": "aperfeiçoar-se"
+   }
+  }
  ]
 }
