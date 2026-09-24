@@ -63,7 +63,15 @@ siendo `String`. Cuando A2/B1 se embeba con campos `{idioma: texto}`, hay que
 extender `ContenidoSemanal.kt` y el renderizador para resolver el idioma.
 Hoy no rompe nada porque el contenido embebido es solo el piloto 2026 (B2/C1).
 
-### 4.8 — 🔴 Modelos Kotlin no leen `{idioma: texto}` (bloqueante real para embeber A2/B1)
+### 4.8 — ✅ Modelos Kotlin leen `{idioma: texto}` (resuelto por Code)
+Los 13 campos bilingües son ahora `TextoBilingue` (string plano u objeto por
+idioma, `ContenidoSemanal.kt`). Se resuelve con `resolver(idiomaBase,
+idiomaAprendido)`: idioma base del usuario, si falta o está vacío el idioma que
+se aprende, y si tampoco cualquier otro; nunca lanza. Pantalla y widget ya lo
+usan; hay tests unitarios y de render. Ya se puede embeber A2/B1 traducido.
+(Texto original del bloqueante:)
+
+**Antes: 🔴 Modelos Kotlin no leen `{idioma: texto}` (bloqueante real para embeber A2/B1)**
 `Ficha.subtitulo` y el resto de los 13 campos bilingües siguen tipados como
 `String` en Kotlin. Hoy no rompe nada porque solo el piloto 2026 (sin
 traducir) está embebido en la app. Pero es un bloqueante real: antes de

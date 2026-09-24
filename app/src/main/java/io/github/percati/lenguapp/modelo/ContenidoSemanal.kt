@@ -1,7 +1,16 @@
 package io.github.percati.lenguapp.modelo
 
 import kotlinx.serialization.SerialName
+import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.SerializationException
+import kotlinx.serialization.descriptors.SerialDescriptor
+import kotlinx.serialization.encoding.Decoder
+import kotlinx.serialization.encoding.Encoder
+import kotlinx.serialization.json.JsonDecoder
+import kotlinx.serialization.json.JsonEncoder
+import kotlinx.serialization.json.JsonObject
+import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.JsonContentPolymorphicSerializer
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.jsonObject
@@ -61,6 +70,60 @@ enum class Dia { @SerialName("lun") LUN, @SerialName("mie") MIE, @SerialName("vi
 @Serializable
 enum class Clase { @SerialName("review") REVIEW, @SerialName("survival") SURVIVAL }
 
+/**
+ * Texto de prosa que el schema deja como string plano O como objeto
+ * {idioma: texto} (A2/B1 bilingues, proyecto/schema/ficha.schema.json, "campos
+ * bilingues A2/B1"). El string plano (B2/C1/C2 y el piloto 2026) se resuelve
+ * siempre igual; el objeto se resuelve con [resolver].
+ */
+@Serializable(with = TextoBilingueSerializer::class)
+data class TextoBilingue(
+    val plano: String? = null,
+    val porIdioma: Map<String, String> = emptyMap(),
+) {
+    companion object {
+        fun de(texto: String) = TextoBilingue(plano = texto)
+    }
+}
+
+/**
+ * Texto en el idioma de la app; si falta esa clave (o esta vacia) cae al
+ * idioma que se aprende, y si tampoco esta, a cualquier otro que haya -- nunca
+ * lanza. Un string plano se devuelve tal cual, sin mirar los idiomas.
+ */
+fun TextoBilingue.resolver(idiomaApp: Idioma, idiomaAprendido: Idioma): String {
+    plano?.let { return it }
+    fun de(idioma: Idioma) = porIdioma[idioma.name.lowercase()]?.takeIf { it.isNotBlank() }
+    return de(idiomaApp) ?: de(idiomaAprendido) ?: porIdioma.values.firstOrNull { it.isNotBlank() } ?: ""
+}
+
+internal object TextoBilingueSerializer : KSerializer<TextoBilingue> {
+    override val descriptor: SerialDescriptor = JsonElement.serializer().descriptor
+
+    override fun deserialize(decoder: Decoder): TextoBilingue {
+        val elemento = (decoder as? JsonDecoder ?: throw SerializationException("TextoBilingue solo se lee desde JSON")).decodeJsonElement()
+        return when (elemento) {
+            is JsonPrimitive ->
+                if (elemento.isString) TextoBilingue(plano = elemento.content)
+                else throw SerializationException("se esperaba un string o un objeto {idioma: texto}, no $elemento")
+            is JsonObject -> TextoBilingue(
+                porIdioma = elemento.mapValues { (clave, valor) ->
+                    (valor as? JsonPrimitive)?.takeIf { it.isString }?.content
+                        ?: throw SerializationException("el valor de '$clave' debe ser un string, no $valor")
+                },
+            )
+            else -> throw SerializationException("se esperaba un string o un objeto {idioma: texto}, no $elemento")
+        }
+    }
+
+    override fun serialize(encoder: Encoder, value: TextoBilingue) {
+        val salida = encoder as? JsonEncoder ?: throw SerializationException("TextoBilingue solo se escribe a JSON")
+        salida.encodeJsonElement(
+            value.plano?.let { JsonPrimitive(it) } ?: JsonObject(value.porIdioma.mapValues { JsonPrimitive(it.value) }),
+        )
+    }
+}
+
 /** Una aparicion de un Skill en un nivel concreto, con su Topic. proyecto/schema/ficha.schema.json */
 @Serializable
 data class Ficha(
@@ -71,23 +134,23 @@ data class Ficha(
     val nivel: Nivel,
     val categoria: Categoria,
     val topicId: String,
-    val titulo: String,
-    val subtitulo: String,
+    val titulo: TextoBilingue,
+    val subtitulo: TextoBilingue,
     val ancla: String? = null,
     val challengeType: ChallengeType,
     val bilingue: Boolean = false,
     val evidencia: Evidencia,
-    val descripcion: String,
+    val descripcion: TextoBilingue,
     val cuadroReferencia: CuadroReferencia? = null,
     val ejemplos: List<Ejemplo>,
-    val notas: List<String>,
+    val notas: List<TextoBilingue>,
     // Un renglon por lengua base; solo las lenguas con contenido escrito
     // estan presentes (2026: "es" en todas, "en" en las 14 fichas alemanas).
     // AJUSTES posteriores a Fase 9: la app muestra la del idioma base y
     // oculta la seccion entera si falta la clave -- nunca cae a "es" bajo
     // un titulo que anuncia otro idioma (ver contrasteParaMostrar()).
     val contraste: Map<String, String>? = null,
-    val errores: List<String>,
+    val errores: List<TextoBilingue>,
     // Errores tipicos ADICIONALES segun la lengua base (los de un
     // anglohablante que aprende aleman no son los de un hispanohablante):
     // se suman a errores, no lo reemplazan. Ausente si no hay ninguno
@@ -97,8 +160,8 @@ data class Ficha(
     val redemittel: List<RedemittelItem>,
     val mision: Mision,
     val microtareas: List<Microtarea>,
-    val autochequeo: List<String>,
-    val promptCorreccion: String,
+    val autochequeo: List<TextoBilingue>,
+    val promptCorreccion: TextoBilingue,
     // Solo dato para el generador de calendario; no se muestra en la ficha.
     val skillsRelacionados: List<String>? = null,
     val topicBlocklist: List<String>? = null,
@@ -115,16 +178,16 @@ data class Evidencia(
 
 @Serializable
 data class CuadroReferencia(
-    val titulo: String,
-    val columnas: List<String>,
-    val filas: List<List<String>>,
-    val notaPie: String? = null,
+    val titulo: TextoBilingue,
+    val columnas: List<TextoBilingue>,
+    val filas: List<List<TextoBilingue>>,
+    val notaPie: TextoBilingue? = null,
 )
 
 @Serializable
 data class Ejemplo(
     val grupo: String? = null,
-    val texto: String,
+    val texto: TextoBilingue,
     val audio: Boolean = false,
 )
 
@@ -151,21 +214,21 @@ data class VocabularioItem(
 @Serializable
 data class RedemittelItem(
     val expresion: String,
-    val funcion: String,
+    val funcion: TextoBilingue,
     // null = sin equivalencia directa; se aprende por situacion, no es un error.
     val traducciones: Map<String, String?>,
 )
 
 @Serializable
 data class Mision(
-    val consigna: String,
-    val requisitos: List<String>,
+    val consigna: TextoBilingue,
+    val requisitos: List<TextoBilingue>,
 )
 
 @Serializable
 data class Microtarea(
     val dia: Dia,
-    val texto: String,
+    val texto: TextoBilingue,
     val minutos: Int,
 )
 

@@ -25,6 +25,7 @@ import io.github.percati.lenguapp.datos.resolverSemana
 import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.SemanaEspecial
+import io.github.percati.lenguapp.modelo.resolver
 import io.github.percati.lenguapp.presentacion.idiomaAplicacionEfectivo
 import io.github.percati.lenguapp.semana.RazonSinContenido
 import io.github.percati.lenguapp.semana.ResultadoSemana
@@ -60,14 +61,14 @@ class SemanaGlanceWidget : GlanceAppWidget() {
 
         provideContent {
             GlanceTheme {
-                ContenidoWidget(resultado, idiomaInterfaz)
+                ContenidoWidget(resultado, idiomaInterfaz, ajustes.idiomaBase)
             }
         }
     }
 }
 
 @Composable
-private fun ContenidoWidget(resultado: ResultadoSemana?, idiomaInterfaz: Idioma) {
+private fun ContenidoWidget(resultado: ResultadoSemana?, idiomaInterfaz: Idioma, idiomaBase: Idioma) {
     val context = LocalContext.current
     Column(
         modifier = GlanceModifier
@@ -79,7 +80,8 @@ private fun ContenidoWidget(resultado: ResultadoSemana?, idiomaInterfaz: Idioma)
         when (resultado) {
             is ResultadoSemana.Encontrado -> {
                 val (titulo, subtitulo) = when (val contenido = resultado.contenido) {
-                    is Ficha -> contenido.titulo to contenido.subtitulo
+                    is Ficha -> contenido.titulo.resolver(idiomaBase, contenido.idioma) to
+                        contenido.subtitulo.resolver(idiomaBase, contenido.idioma)
                     is SemanaEspecial -> contenido.titulo to null
                 }
                 Text(

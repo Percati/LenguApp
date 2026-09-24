@@ -36,6 +36,8 @@ import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Prioridad
 import io.github.percati.lenguapp.modelo.RedemittelItem
 import io.github.percati.lenguapp.modelo.SemanaEspecial
+import io.github.percati.lenguapp.modelo.TextoBilingue
+import io.github.percati.lenguapp.modelo.resolver
 import io.github.percati.lenguapp.modelo.VocabularioItem
 import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
 import io.github.percati.lenguapp.presentacion.contrasteParaMostrar
@@ -114,15 +116,17 @@ fun ContenidoSemanalScreen(
 // seleccionar texto no le gane al click ni lo deje capturado.
 @Composable
 private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
+    // Campos bilingues (A2/B1): idioma de la app, y el que se aprende si falta esa clave.
+    val t: (TextoBilingue) -> String = { it.resolver(idiomaBase, ficha.idioma) }
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
             ficha.variante?.let { EtiquetaVariante(it) }
-            Text(ficha.titulo, style = MaterialTheme.typography.headlineSmall)
+            Text(t(ficha.titulo), style = MaterialTheme.typography.headlineSmall)
             Text(
-                textoConMarcado(ficha.subtitulo),
+                textoConMarcado(t(ficha.subtitulo)),
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
@@ -137,21 +141,21 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
             }
         }
 
-        Text(textoConMarcado(ficha.descripcion), style = MaterialTheme.typography.bodyLarge)
+        Text(textoConMarcado(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge)
 
         ficha.cuadroReferencia?.let { cuadro ->
             val tituloPropio = etiquetaSeccion("cuadroReferencia", ficha.idioma, ficha.bilingue)
-            SeccionPlegable(titulo = cuadro.titulo.ifBlank { tituloPropio }) {
-                CuadroReferenciaTabla(cuadro)
+            SeccionPlegable(titulo = t(cuadro.titulo).ifBlank { tituloPropio }) {
+                CuadroReferenciaTabla(cuadro, t)
             }
         }
 
         Seccion(etiquetaSeccion("ejemplos", ficha.idioma, ficha.bilingue)) {
-            ficha.ejemplos.forEach { Vinieta(it.texto) }
+            ficha.ejemplos.forEach { Vinieta(t(it.texto)) }
         }
 
         Seccion(etiquetaSeccion("notas", ficha.idioma, ficha.bilingue)) {
-            ficha.notas.forEach { Vinieta(it) }
+            ficha.notas.forEach { Vinieta(t(it)) }
         }
 
         ficha.contraste.contrasteParaMostrar(ficha.idioma, idiomaBase)?.let { texto ->
@@ -161,7 +165,7 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
         }
 
         Seccion(etiquetaSeccion("errores", ficha.idioma, ficha.bilingue)) {
-            erroresParaMostrar(ficha.errores, ficha.erroresContrastivos, ficha.idioma, idiomaBase).forEach { Vinieta(it) }
+            erroresParaMostrar(ficha.errores.map(t), ficha.erroresContrastivos, ficha.idioma, idiomaBase).forEach { Vinieta(it) }
         }
 
         SeccionPlegable(titulo = "${etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)} (${ficha.vocabulario.size})") {
@@ -172,26 +176,26 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
 
         SeccionPlegable(titulo = "${etiquetaSeccion("redemittel", ficha.idioma, ficha.bilingue)} (${ficha.redemittel.size})") {
             Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
-                ficha.redemittel.forEach { RedemittelFila(it, idiomaBase) }
+                ficha.redemittel.forEach { RedemittelFila(it, idiomaBase, ficha.idioma) }
             }
         }
 
         Seccion(etiquetaSeccion("mision", ficha.idioma, ficha.bilingue)) {
-            Text(textoConMarcado(ficha.mision.consigna), style = MaterialTheme.typography.bodyLarge)
-            ficha.mision.requisitos.forEach { Vinieta(it) }
+            Text(textoConMarcado(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
+            ficha.mision.requisitos.forEach { Vinieta(t(it)) }
         }
 
         Seccion(etiquetaSeccion("microtareas", ficha.idioma, ficha.bilingue)) {
             ficha.microtareas.forEach {
-                Vinieta("${etiquetaDia(it.dia, ficha.idioma)} (${it.minutos} min) — ${it.texto}")
+                Vinieta("${etiquetaDia(it.dia, ficha.idioma)} (${it.minutos} min) — ${t(it.texto)}")
             }
         }
 
         Seccion(etiquetaSeccion("autochequeo", ficha.idioma, ficha.bilingue)) {
-            ficha.autochequeo.forEach { Vinieta(it) }
+            ficha.autochequeo.forEach { Vinieta(t(it)) }
         }
 
-        TarjetaPrompt(ficha.promptCorreccion, etiquetaSeccion("promptCorreccion", ficha.idioma, ficha.bilingue))
+        TarjetaPrompt(t(ficha.promptCorreccion), etiquetaSeccion("promptCorreccion", ficha.idioma, ficha.bilingue))
     }
 }
 
@@ -323,11 +327,11 @@ private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma) {
 }
 
 @Composable
-private fun RedemittelFila(item: RedemittelItem, idiomaBase: Idioma) {
+private fun RedemittelFila(item: RedemittelItem, idiomaBase: Idioma, idiomaAprendido: Idioma) {
     Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
         Text(item.expresion, style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Medium)
         Text(
-            textoConMarcado(item.funcion),
+            textoConMarcado(item.funcion.resolver(idiomaBase, idiomaAprendido)),
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
@@ -347,7 +351,7 @@ private fun RedemittelFila(item: RedemittelItem, idiomaBase: Idioma) {
  * en vez de truncarlo.
  */
 @Composable
-private fun CuadroReferenciaTabla(cuadro: CuadroReferencia) {
+private fun CuadroReferenciaTabla(cuadro: CuadroReferencia, t: (TextoBilingue) -> String) {
     Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
         cuadro.filas.forEach { fila ->
             Surface(
@@ -355,9 +359,10 @@ private fun CuadroReferenciaTabla(cuadro: CuadroReferencia) {
                 color = MaterialTheme.colorScheme.surfaceVariant,
             ) {
                 Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                    fila.forEachIndexed { i, celda ->
+                    fila.forEachIndexed { i, celdaBilingue ->
+                        val celda = t(celdaBilingue)
                         if (celda.isNotBlank()) {
-                            val etiqueta = cuadro.columnas.getOrNull(i)
+                            val etiqueta = cuadro.columnas.getOrNull(i)?.let(t)
                             Text(
                                 textoConMarcado(if (etiqueta != null) "$etiqueta: $celda" else celda),
                                 style = MaterialTheme.typography.bodyMedium,
@@ -367,7 +372,7 @@ private fun CuadroReferenciaTabla(cuadro: CuadroReferencia) {
                 }
             }
         }
-        cuadro.notaPie?.takeIf { it.isNotBlank() }?.let {
+        cuadro.notaPie?.let(t)?.takeIf { it.isNotBlank() }?.let {
             Text(
                 textoConMarcado(it),
                 style = MaterialTheme.typography.bodySmall,

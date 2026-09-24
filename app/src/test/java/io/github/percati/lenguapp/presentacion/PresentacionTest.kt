@@ -3,6 +3,7 @@ package io.github.percati.lenguapp.presentacion
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Prioridad
 import io.github.percati.lenguapp.modelo.RedemittelItem
+import io.github.percati.lenguapp.modelo.TextoBilingue
 import io.github.percati.lenguapp.modelo.VocabularioItem
 import org.junit.Assert.assertEquals
 import org.junit.Test
@@ -13,7 +14,7 @@ class PresentacionTest {
         VocabularioItem(item = "x", prioridad = Prioridad.NUCLEO, traducciones = traducciones)
 
     private fun redemittel(traducciones: Map<String, String?>) =
-        RedemittelItem(expresion = "x", funcion = "y", traducciones = traducciones)
+        RedemittelItem(expresion = "x", funcion = TextoBilingue.de("y"), traducciones = traducciones)
 
     // --- VocabularioItem: nunca clave cruda ni "null" ---
 

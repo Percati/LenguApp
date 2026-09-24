@@ -19,6 +19,8 @@ import androidx.test.core.app.ApplicationProvider
 import io.github.percati.lenguapp.datos.parsearContenido
 import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.TextoBilingue
+import io.github.percati.lenguapp.modelo.resolver
 import org.junit.Assert.assertEquals
 import org.junit.Rule
 import org.junit.Test
@@ -98,13 +100,13 @@ class ContenidoSemanalScreenInteraccionTest {
     fun `el marcado con asteriscos se interpreta en subtitulo, consigna, requisitos y microtareas`() {
         val base = ficha()
         val ficha = base.copy(
-            subtitulo = "Palabra clave ${'*'}zuverlassig${'*'} en el subtitulo",
+            subtitulo = TextoBilingue.de("Palabra clave ${'*'}zuverlassig${'*'} en el subtitulo"),
             mision = base.mision.copy(
-                consigna = "Consigna con ${'*'}Wortstellung${'*'} sin traducir",
-                requisitos = listOf("Requisito con ${'*'}Nebensatz${'*'} marcado"),
+                consigna = TextoBilingue.de("Consigna con ${'*'}Wortstellung${'*'} sin traducir"),
+                requisitos = listOf(TextoBilingue.de("Requisito con ${'*'}Nebensatz${'*'} marcado")),
             ),
             microtareas = base.microtareas.mapIndexed { i, m ->
-                if (i == 0) m.copy(texto = "Microtarea con ${'*'}Satzklammer${'*'} marcada") else m
+                if (i == 0) m.copy(texto = TextoBilingue.de("Microtarea con ${'*'}Satzklammer${'*'} marcada")) else m
             },
         )
         composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
@@ -114,6 +116,21 @@ class ContenidoSemanalScreenInteraccionTest {
         composeTestRule.onNode(hasText("Requisito con Nebensatz marcado", substring = true)).assertExists()
         composeTestRule.onNode(hasText("Microtarea con Satzklammer marcada", substring = true)).assertExists()
         composeTestRule.onNode(hasText("${'*'}", substring = true)).assertDoesNotExist()
+    }
+
+    // Campos bilingues A2/B1: el objeto {idioma: texto} se muestra en el idioma de
+    // la app, y cae al idioma que se aprende si falta esa clave.
+    @Test
+    fun `un campo bilingue se muestra en el idioma de la app y cae al que se aprende si falta`() {
+        val base = ficha()
+        val ficha = base.copy(
+            titulo = TextoBilingue(porIdioma = mapOf("de" to "Titel DE", "es" to "Titulo ES")),
+            subtitulo = TextoBilingue(porIdioma = mapOf("de" to "Untertitel DE")),
+        )
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+        composeTestRule.onNode(hasText("Titulo ES")).assertExists()
+        composeTestRule.onNode(hasText("Titel DE")).assertDoesNotExist()
+        composeTestRule.onNode(hasText("Untertitel DE")).assertExists()
     }
 
     @Test
@@ -147,11 +164,11 @@ class ContenidoSemanalScreenInteraccionTest {
         // aparece en la descripcion siempre visible. El texto renderizado no
         // trae los asteriscos del marcado en linea (Fase 5, bloque A): hay
         // que buscar el texto ya limpio, no el crudo del JSON.
-        val celdaUnicaDeLaTabla = textoConMarcado(cuadro.filas.first().last()).text
+        val celdaUnicaDeLaTabla = textoConMarcado(cuadro.filas.first().last().resolver(Idioma.ES, ficha.idioma)).text
         composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
 
         composeTestRule.onNode(hasText(celdaUnicaDeLaTabla, substring = true)).assertDoesNotExist()
-        composeTestRule.onNodeWithText(cuadro.titulo).performScrollTo().performClick()
+        composeTestRule.onNodeWithText(cuadro.titulo.resolver(Idioma.ES, ficha.idioma)).performScrollTo().performClick()
         composeTestRule.onNode(hasText(celdaUnicaDeLaTabla, substring = true)).assertExists()
     }
 
@@ -166,7 +183,7 @@ class ContenidoSemanalScreenInteraccionTest {
         val portapapeles = ApplicationProvider.getApplicationContext<Context>()
             .getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         val copiado = portapapeles.primaryClip?.getItemAt(0)?.text?.toString()
-        assertEquals(ficha.promptCorreccion, copiado)
+        assertEquals(ficha.promptCorreccion.resolver(Idioma.ES, ficha.idioma), copiado)
     }
 
     @Test
@@ -193,7 +210,7 @@ class ContenidoSemanalScreenInteraccionTest {
                 ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES)
             }
         }
-        composeTestRule.onNodeWithText(ficha.cuadroReferencia!!.titulo).performScrollTo().performClick()
+        composeTestRule.onNodeWithText(ficha.cuadroReferencia!!.titulo.resolver(Idioma.ES, ficha.idioma)).performScrollTo().performClick()
         composeTestRule.waitForIdle()
 
         val activity = composeTestRule.activity
