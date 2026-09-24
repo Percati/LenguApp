@@ -91,6 +91,31 @@ class ContenidoSemanalScreenInteraccionTest {
         composeTestRule.onNode(hasText("weglassen, weil es vor", substring = true)).assertDoesNotExist()
     }
 
+    // Marcado en linea en los campos que la convencion de "palabra objetivo sin
+    // traducir" usa: subtitulo, consigna, requisitos y microtareas. Ninguno
+    // debe mostrar los asteriscos literales.
+    @Test
+    fun `el marcado con asteriscos se interpreta en subtitulo, consigna, requisitos y microtareas`() {
+        val base = ficha()
+        val ficha = base.copy(
+            subtitulo = "Palabra clave ${'*'}zuverlassig${'*'} en el subtitulo",
+            mision = base.mision.copy(
+                consigna = "Consigna con ${'*'}Wortstellung${'*'} sin traducir",
+                requisitos = listOf("Requisito con ${'*'}Nebensatz${'*'} marcado"),
+            ),
+            microtareas = base.microtareas.mapIndexed { i, m ->
+                if (i == 0) m.copy(texto = "Microtarea con ${'*'}Satzklammer${'*'} marcada") else m
+            },
+        )
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+
+        composeTestRule.onNode(hasText("Palabra clave zuverlassig en el subtitulo")).assertExists()
+        composeTestRule.onNode(hasText("Consigna con Wortstellung sin traducir")).assertExists()
+        composeTestRule.onNode(hasText("Requisito con Nebensatz marcado", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("Microtarea con Satzklammer marcada", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("${'*'}", substring = true)).assertDoesNotExist()
+    }
+
     @Test
     fun `vocabulario y redemittel arrancan plegados y se abren al tocar el titulo`() {
         val ficha = ficha()

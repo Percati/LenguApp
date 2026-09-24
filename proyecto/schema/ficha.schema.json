@@ -95,7 +95,6 @@
           },
           "additionalProperties": {
             "type": "string",
-            "minLength": 3,
             "maxLength": 80
           },
           "minProperties": 1
@@ -124,7 +123,6 @@
           },
           "additionalProperties": {
             "type": "string",
-            "minLength": 5,
             "maxLength": 160
           },
           "minProperties": 1
@@ -197,7 +195,6 @@
           },
           "additionalProperties": {
             "type": "string",
-            "minLength": 200,
             "maxLength": 1600
           },
           "minProperties": 1
@@ -359,8 +356,7 @@
                   ]
                 },
                 "additionalProperties": {
-                  "type": "string",
-                  "minLength": 5
+                  "type": "string"
                 },
                 "minProperties": 1
               }
@@ -398,8 +394,7 @@
               ]
             },
             "additionalProperties": {
-              "type": "string",
-              "minLength": 20
+              "type": "string"
             },
             "minProperties": 1
           }
@@ -447,8 +442,7 @@
               ]
             },
             "additionalProperties": {
-              "type": "string",
-              "minLength": 10
+              "type": "string"
             },
             "minProperties": 1
           }
@@ -614,8 +608,7 @@
                 ]
               },
               "additionalProperties": {
-                "type": "string",
-                "minLength": 30
+                "type": "string"
               },
               "minProperties": 1
             }
@@ -692,8 +685,7 @@
                   ]
                 },
                 "additionalProperties": {
-                  "type": "string",
-                  "minLength": 15
+                  "type": "string"
                 },
                 "minProperties": 1
               }
@@ -730,8 +722,7 @@
               ]
             },
             "additionalProperties": {
-              "type": "string",
-              "minLength": 10
+              "type": "string"
             },
             "minProperties": 1
           }
@@ -758,8 +749,7 @@
             ]
           },
           "additionalProperties": {
-            "type": "string",
-            "minLength": 150
+            "type": "string"
           },
           "minProperties": 1
         }
@@ -844,7 +834,323 @@
           "cuadroReferencia"
         ]
       }
+    },
+    {
+      "if": {
+        "properties": {
+          "idioma": {
+            "const": "de"
+          }
+        },
+        "required": [
+          "idioma"
+        ]
+      },
+      "then": {
+        "properties": {
+          "titulo": {
+            "if": {
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "de": {
+                  "minLength": 3
+                }
+              }
+            }
+          },
+          "subtitulo": {
+            "if": {
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "de": {
+                  "minLength": 5
+                }
+              }
+            }
+          },
+          "descripcion": {
+            "if": {
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "de": {
+                  "minLength": 200
+                }
+              }
+            }
+          },
+          "ejemplos": {
+            "items": {
+              "properties": {
+                "texto": {
+                  "if": {
+                    "type": "object"
+                  },
+                  "then": {
+                    "properties": {
+                      "de": {
+                        "minLength": 5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "notas": {
+            "items": {
+              "if": {
+                "type": "object"
+              },
+              "then": {
+                "properties": {
+                  "de": {
+                    "minLength": 20
+                  }
+                }
+              }
+            }
+          },
+          "errores": {
+            "items": {
+              "if": {
+                "type": "object"
+              },
+              "then": {
+                "properties": {
+                  "de": {
+                    "minLength": 10
+                  }
+                }
+              }
+            }
+          },
+          "mision": {
+            "properties": {
+              "consigna": {
+                "if": {
+                  "type": "object"
+                },
+                "then": {
+                  "properties": {
+                    "de": {
+                      "minLength": 30
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "microtareas": {
+            "items": {
+              "properties": {
+                "texto": {
+                  "if": {
+                    "type": "object"
+                  },
+                  "then": {
+                    "properties": {
+                      "de": {
+                        "minLength": 15
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "autochequeo": {
+            "items": {
+              "if": {
+                "type": "object"
+              },
+              "then": {
+                "properties": {
+                  "de": {
+                    "minLength": 10
+                  }
+                }
+              }
+            }
+          },
+          "promptCorreccion": {
+            "if": {
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "de": {
+                  "minLength": 150
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "idioma": {
+            "const": "en"
+          }
+        },
+        "required": [
+          "idioma"
+        ]
+      },
+      "then": {
+        "properties": {
+          "titulo": {
+            "if": {
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "en": {
+                  "minLength": 3
+                }
+              }
+            }
+          },
+          "subtitulo": {
+            "if": {
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "en": {
+                  "minLength": 5
+                }
+              }
+            }
+          },
+          "descripcion": {
+            "if": {
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "en": {
+                  "minLength": 200
+                }
+              }
+            }
+          },
+          "ejemplos": {
+            "items": {
+              "properties": {
+                "texto": {
+                  "if": {
+                    "type": "object"
+                  },
+                  "then": {
+                    "properties": {
+                      "en": {
+                        "minLength": 5
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "notas": {
+            "items": {
+              "if": {
+                "type": "object"
+              },
+              "then": {
+                "properties": {
+                  "en": {
+                    "minLength": 20
+                  }
+                }
+              }
+            }
+          },
+          "errores": {
+            "items": {
+              "if": {
+                "type": "object"
+              },
+              "then": {
+                "properties": {
+                  "en": {
+                    "minLength": 10
+                  }
+                }
+              }
+            }
+          },
+          "mision": {
+            "properties": {
+              "consigna": {
+                "if": {
+                  "type": "object"
+                },
+                "then": {
+                  "properties": {
+                    "en": {
+                      "minLength": 30
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "microtareas": {
+            "items": {
+              "properties": {
+                "texto": {
+                  "if": {
+                    "type": "object"
+                  },
+                  "then": {
+                    "properties": {
+                      "en": {
+                        "minLength": 15
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "autochequeo": {
+            "items": {
+              "if": {
+                "type": "object"
+              },
+              "then": {
+                "properties": {
+                  "en": {
+                    "minLength": 10
+                  }
+                }
+              }
+            }
+          },
+          "promptCorreccion": {
+            "if": {
+              "type": "object"
+            },
+            "then": {
+              "properties": {
+                "en": {
+                  "minLength": 150
+                }
+              }
+            }
+          }
+        }
+      }
     }
   ],
-  "$comment": "MARCADO EN LINEA. Los campos de prosa y de tabla pueden contener dos marcadores, planos y sin anidar: *cita* para una palabra o expresion citada, y **destaque** para el elemento sobre el que se llama la atencion (por ejemplo la posicion del verbo en la ficha de Satzbau). La app necesita UN solo renderizador que los convierta a texto con estilo. El marcado que envolvia el campo entero ya fue quitado por el compilador: los ejemplos y los Redemittel llegan limpios y la app los estiliza por su rol. -- CAMPOS BILINGUES A2/B1. En A2 y B1 toda la prosa de la ficha se puede mostrar en el idioma que se aprende O en el idioma de la app (switch en la interfaz), asi que necesita un lugar donde alojar la traduccion. Los campos afectados (titulo, descripcion, notas, ejemplos[].texto, errores, autochequeo, cuadroReferencia.titulo/columnas/filas/notaPie, promptCorreccion, subtitulo, mision.consigna/requisitos, microtareas[].texto, redemittel[].funcion) aceptan `oneOf` un string plano (como hasta ahora, y como siguen siendo en B2/C1/C2, que no son bilingues) o un objeto {idioma: texto} con el MISMO patron que ya usan contraste, erroresContrastivos y vocabulario[].traducciones: propertyNames limitado a los seis idiomas soportados (es, en, de, fr, it, pt) y minProperties 1, para que se pueda ir poblando una clave a la vez en vez de exigir las seis de entrada. El propio idioma de la ficha (p.ej. 'de' en una ficha alemana) va como una clave mas del objeto, no aparte: es el mismo mecanismo, solo que ahora tambien alcanza a la prosa y no unicamente al vocabulario y los Redemittel. La forma `oneOf` es deliberada y no un `if`/`then` que EXIJA el objeto en A2/B1: los 95 nucleos y 192 apariciones de A2/B1 todavia tienen estos campos como string plano (nadie los tradujo todavia), asi que exigir el objeto ahora romperia toda esa composicion. El campo queda listo para que se traduzca de a poco; no se vuelve obligatorio con esta revision del schema."
+  "$comment": "MARCADO EN LINEA. Los campos de prosa y de tabla pueden contener dos marcadores, planos y sin anidar: *cita* para una palabra o expresion citada, y **destaque** para el elemento sobre el que se llama la atencion (por ejemplo la posicion del verbo en la ficha de Satzbau). La app necesita UN solo renderizador que los convierta a texto con estilo. El marcado que envolvia el campo entero ya fue quitado por el compilador: los ejemplos y los Redemittel llegan limpios y la app los estiliza por su rol. -- CAMPOS BILINGUES A2/B1. En A2 y B1 toda la prosa de la ficha se puede mostrar en el idioma que se aprende O en el idioma de la app (switch en la interfaz), asi que necesita un lugar donde alojar la traduccion. Los campos afectados (titulo, descripcion, notas, ejemplos[].texto, errores, autochequeo, cuadroReferencia.titulo/columnas/filas/notaPie, promptCorreccion, subtitulo, mision.consigna/requisitos, microtareas[].texto, redemittel[].funcion) aceptan `oneOf` un string plano (como hasta ahora, y como siguen siendo en B2/C1/C2, que no son bilingues) o un objeto {idioma: texto} con el MISMO patron que ya usan contraste, erroresContrastivos y vocabulario[].traducciones: propertyNames limitado a los seis idiomas soportados (es, en, de, fr, it, pt) y minProperties 1, para que se pueda ir poblando una clave a la vez en vez de exigir las seis de entrada. El propio idioma de la ficha (p.ej. 'de' en una ficha alemana) va como una clave mas del objeto, no aparte: es el mismo mecanismo, solo que ahora tambien alcanza a la prosa y no unicamente al vocabulario y los Redemittel. La forma `oneOf` es deliberada y no un `if`/`then` que EXIJA el objeto en A2/B1: los 95 nucleos y 192 apariciones de A2/B1 todavia tienen estos campos como string plano (nadie los tradujo todavia), asi que exigir el objeto ahora romperia toda esa composicion. El campo queda listo para que se traduzca de a poco; no se vuelve obligatorio con esta revision del schema. -- MINLENGTH EN LOS CAMPOS BILINGUES. El minLength de cada campo se penso para la prosa original (aleman/ingles); espanol, ingles y demas idiomas de app comprimen frente al original, asi que exigirlo a TODAS las claves del objeto {idioma: texto} rechazaba traducciones correctas. Ahora la rama objeto de cada campo solo lleva maxLength (limite de diseno visual, igual para todas las claves), y el minLength rige unicamente sobre la clave del idioma que se aprende (la que ya existia como string plano), mediante dos condicionales en allOf (idioma = de exige minLength en la clave 'de'; idioma = en, en la clave 'en'). Las demas claves no tienen minimo. -- DONDE LA APP INTERPRETA EL MARCADO. El renderizador aplica *cita* y **destaque** en descripcion, ejemplos, notas, errores, autochequeo, cuadroReferencia, promptCorreccion, subtitulo, mision.consigna, mision.requisitos, microtareas[].texto y redemittel[].funcion. NO en titulo. Convencion de traduccion: la palabra objetivo de la consigna queda sin traducir y entre asteriscos."
 }

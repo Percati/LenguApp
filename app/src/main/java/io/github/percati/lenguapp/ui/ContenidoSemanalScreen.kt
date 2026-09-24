@@ -122,7 +122,7 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
             ficha.variante?.let { EtiquetaVariante(it) }
             Text(ficha.titulo, style = MaterialTheme.typography.headlineSmall)
             Text(
-                ficha.subtitulo,
+                textoConMarcado(ficha.subtitulo),
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )

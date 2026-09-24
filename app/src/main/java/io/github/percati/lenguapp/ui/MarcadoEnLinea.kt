@@ -20,6 +20,12 @@ import androidx.compose.ui.text.withStyle
  */
 private val PATRON_MARCADO = Regex("""\*\*([^*]+)\*\*|\*([^*]+)\*""")
 
+/**
+ * El mismo texto sin los marcadores, para superficies que no admiten texto con
+ * estilo (el widget de Glance): sin esto los asteriscos se verian literales.
+ */
+fun textoSinMarcado(texto: String): String = textoConMarcado(texto).text
+
 fun textoConMarcado(texto: String): AnnotatedString = buildAnnotatedString {
     var indice = 0
     for (coincidencia in PATRON_MARCADO.findAll(texto)) {

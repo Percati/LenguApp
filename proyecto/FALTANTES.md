@@ -39,6 +39,30 @@ compuestas, 9 semanas especiales, 0 con problemas".
 `validar_apariciones.py` ya no tiene el chequeo muerto de colisión entre
 años — lo retiró Code de paso.
 
+### 4.7 — `minLength` de los campos bilingües y marcado con asteriscos (Code, sept 2026)
+
+✅ **`minLength`:** en los campos bilingües la rama objeto `{idioma: texto}` ya no
+lleva `minLength` (solo `maxLength`, igual para todas las claves). El mínimo rige
+únicamente sobre la clave del idioma que se aprende (`de` en fichas alemanas,
+`en` en fichas inglesas), vía dos condicionales en `allOf`. Una traducción corta
+al es/en/fr/it/pt ya no rompe la ficha.
+
+🔴 **Para Traducciones:** hay que **revertir a su redacción original las 66 celdas
+que se alargaron como parche temporal en el commit `29875fa`** — el schema ya no
+las necesita alargadas. `maxLength` sigue aplicando a todas las claves.
+
+✅ **Marcado `*cita*` / `**destaque**`:** el renderizador ya lo interpretaba en
+`mision.consigna`, `mision.requisitos` y `microtareas[].texto`. Le faltaba
+`subtitulo`: corregido (ahora se ve en cursiva/negrita, no como asteriscos
+literales; en el widget se quita el marcado porque Glance no admite texto con
+estilo). Por eso **no hace falta sacar** los 5 subtítulos ingleses con asteriscos.
+`titulo` de la ficha NO interpreta marcado (no se pidió): no usar asteriscos ahí.
+
+🟡 **Aviso para la app:** los modelos Kotlin (`Ficha.subtitulo`, etc.) siguen
+siendo `String`. Cuando A2/B1 se embeba con campos `{idioma: texto}`, hay que
+extender `ContenidoSemanal.kt` y el renderizador para resolver el idioma.
+Hoy no rompe nada porque el contenido embebido es solo el piloto 2026 (B2/C1).
+
 ## 5. Audio — 🟡 grabado y convertido, falta subir 4462 al repo
 
 ✅ **7348/7348 filas del Excel grabadas** (6312 textos distintos). `audio-estado.json` registra **6368 archivos: 3298 EN y 3070 DE**. `validar_apariciones.py --anio 2027` no da avisos de audio.

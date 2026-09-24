@@ -31,6 +31,7 @@ import io.github.percati.lenguapp.semana.ResultadoSemana
 import io.github.percati.lenguapp.ui.mensajeSinCalendario
 import io.github.percati.lenguapp.ui.mensajeSinContenidoNivel
 import io.github.percati.lenguapp.ui.mensajeSinContenidoSemana
+import io.github.percati.lenguapp.ui.textoSinMarcado
 import java.util.Locale
 
 /**
@@ -86,7 +87,7 @@ private fun ContenidoWidget(resultado: ResultadoSemana?, idiomaInterfaz: Idioma)
                     style = TextStyle(fontWeight = FontWeight.Bold, color = GlanceTheme.colors.onBackground),
                 )
                 if (!subtitulo.isNullOrBlank()) {
-                    Text(text = subtitulo, style = TextStyle(color = GlanceTheme.colors.onBackground))
+                    Text(text = textoSinMarcado(subtitulo), style = TextStyle(color = GlanceTheme.colors.onBackground))
                 }
             }
             is ResultadoSemana.SinContenido -> Text(

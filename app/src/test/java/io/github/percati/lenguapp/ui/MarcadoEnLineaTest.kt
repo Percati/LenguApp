@@ -55,4 +55,9 @@ class MarcadoEnLineaTest {
     fun `texto vacio no rompe nada`() {
         assertEquals(AnnotatedString(""), textoConMarcado(""))
     }
+
+    @Test
+    fun `textoSinMarcado quita los marcadores para superficies sin estilo (widget)`() {
+        assertEquals("Say the word and no more", textoSinMarcado("Say *the word* and **no** more"))
+    }
 }
