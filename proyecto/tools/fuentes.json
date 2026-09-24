@@ -1,7 +1,7 @@
 {
   "idioma": "de",
   "_nota": "Las listas NO se versionan en el repo. Descargarlas de goethe.de y colocarlas en fuentes/. Agregar aqui cada version nueva o antigua que se consiga: cuantas mas versiones, mas completa la base y mejor la deteccion de niveles disputados.",
-  "_nota_niveles_altos": "El Goethe solo publica lista oficial gratuita hasta B1: por encima de ese nivel no existe equivalente. Por eso B2/C1/C2 se apoyan en el Lernwortschatz de los manuales (formato 'manual'). Esos PDF son escaneos sin capa de texto: antes de construir hay que pasarles OCR con tesseract -l deu (ver _ocr) y guardar el .txt junto al PDF. Sigue faltando B2 y C2 atestiguados; ver FALTANTES.md.",
+  "_nota_niveles_altos": "El Goethe solo publica lista oficial gratuita hasta B1: por encima de ese nivel no existe equivalente. Por eso B2/C1/C2 se apoyan en el Lernwortschatz de los manuales (formato 'manual'). Esos PDF son escaneos sin capa de texto: antes de construir hay que pasarles OCR con tesseract -l deu (ver _ocr) y guardar el .txt junto al PDF. B2 se apoya en seis manuales (Sicher! B2.1/B2.2, Aspekte neu B2, Erkundungen B2, Einfach besser! 500, Deutsch intensiv B2), pasados por OCR en sept-2026: los .txt viajan en fuentes-ocr/ (raiz del repo) y se copian a fuentes/ antes de construir, igual que se hizo con C1. Sigue faltando C2 atestiguado; ver FALTANTES.md.",
   "_ocr": "pdftoppm -r 300 -gray -png entrada.pdf p && for i in p-*.png; do tesseract \"$i\" \"${i%.png}\" -l deu --psm 4; done && cat p-*.txt > salida.txt",
   "fuentes": [
     {"id": "frecuencia-de", "formato": "frecuencia", "archivo": "fuentes/A_Frequency_Dictionary_of_German.pdf", "_uso": "lista blanca para filtrar el ruido del OCR. NO aporta nivel MCER: un diccionario de frecuencia ordena por uso, no por dificultad."},
@@ -10,6 +10,13 @@
     {"id": "goethe-a2",      "nivel": "A2", "anio": 2016, "archivo": "fuentes/GoetheZertifikat_A2_Wortliste.pdf", "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_A2_Wortliste.pdf"},
     {"id": "goethe-b1",      "nivel": "B1", "anio": 2016, "archivo": "fuentes/Goethe-Zertifikat_B1_Wortliste.pdf", "url": "https://www.goethe.de/pro/relaunch/prf/de/Goethe-Zertifikat_B1_Wortliste.pdf"},
     {"id": "dtz",            "nivel": "B1", "anio": 2009, "archivo": "fuentes/dtz_wortliste.pdf", "url": "https://www.goethe.de/pro/relaunch/prf/de/dtz_wortliste.pdf"},
+
+    {"id": "sicher-b2",     "nivel": "B2", "anio": 2019, "formato": "manual", "archivo": "fuentes/Sicher_B2_1_Wortschatz.txt", "_fuente": "Sicher! B2.1 (Hueber), Lernwortschatz por leccion"},
+    {"id": "sicher-b2-2",   "nivel": "B2", "anio": 2019, "formato": "manual", "archivo": "fuentes/Sicher_B2_2_Wortschatz.txt", "_fuente": "Sicher! B2.2 (Hueber), Lernwortschatz por leccion"},
+    {"id": "aspekte-b2",    "nivel": "B2", "anio": 2015, "formato": "manual", "archivo": "fuentes/Aspekte_neu_B2_Wortschatz.txt", "_fuente": "Aspekte neu B2 (Klett), Wortschatz por modulo"},
+    {"id": "erkundungen-b2", "nivel": "B2", "anio": 2021, "formato": "manual", "archivo": "fuentes/Erkundungen_B2_Rueckblick.txt", "_fuente": "Erkundungen B2 (Schubert), Rueckblick: Wortschatz por capitulo"},
+    {"id": "einfach-besser-b2", "nivel": "B2", "anio": 2018, "formato": "manual", "archivo": "fuentes/Einfach_besser_B2_Wortschatz.txt", "_fuente": "Einfach besser! 500 Wortschatzuebungen B2 (Hueber), Wortschatz por capitulo"},
+    {"id": "deutsch-intensiv-b2", "nivel": "B2", "anio": 2019, "formato": "manual", "archivo": "fuentes/Deutsch_Intensiv_B2_Wortschatz.txt", "_fuente": "Deutsch intensiv Wortschatz B2 (Klett)"},
 
     {"id": "sicher-c1",  "nivel": "C1", "anio": 2019, "formato": "manual", "archivo": "fuentes/Sicher_C1_Lernwortschatz.txt", "_fuente": "Sicher! C1.1 y C1.2 (Hueber), Lernwortschatz por leccion"},
     {"id": "aspekte-c1", "nivel": "C1", "anio": 2015, "formato": "manual", "archivo": "fuentes/Aspekte_neu_C1_Wortschatz.txt", "_fuente": "Aspekte neu C1 (Klett), Wortschatz por modulo"},
