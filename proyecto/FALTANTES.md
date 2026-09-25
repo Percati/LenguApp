@@ -175,6 +175,25 @@ segura: escribir Redemittel C2 nuevos desde cero, usando el manual solo como
 referencia de registro/nivel, nunca transcribiendo. Los 9 núcleos `fluency` de
 alemán C2 están todos en el mínimo (6); hay margen de 6 más por núcleo. Sin dueño.
 
+## 7.5 Ortografía suiza (ss vs ß) — ✅ cerrado, dos excepciones documentadas
+
+Regla (`contenido/nucleos/DE-V08-B1.json`): en alemán suizo se escribe
+siempre `ss`, nunca `ß`. Se corrigió en tres tandas (núcleos por
+Apariciones, packs/ocurrencias por Packs, semanas de repaso por
+Apariciones) — 522/49/0 sin cambio de número en cada paso, cero `ß` fuera
+de las dos excepciones siguientes:
+
+- **`DE-V08-B1/B2/C1`** (43 instancias): la letra es el contenido
+  pedagógico del núcleo (enseña la propia regla), no un error.
+- **`contenido/nucleos/EN-*.json`, clave `de` de `contraste`/`erroresContrastivos`**
+  (58 instancias): ahí el alemán es el idioma de interfaz para un usuario
+  germanohablante (Alemania/Austria/Suiza indistintamente), no el alemán
+  suizo que se enseña — corresponde ortografía estándar (`ß`), y unificarla
+  a `ss` sería el error, no la corrección.
+
+No queda ninguna instancia fuera de estas dos categorías. No reabrir salvo
+que aparezca un caso genuinamente distinto a los dos de arriba.
+
 ## 8. Sin dueño todavía
 
 - **Semanas especiales sin soporte multiidioma:** el schema de `semana_especial` usa strings planos, no `{idioma: texto}`. Las 8 semanas de repaso de A2/B1 (2 niveles × 4 semanas) quedan solo en el idioma que se aprende, rodeadas de fichas ya traducidas a los 5 idiomas de app. Es ajuste de schema (Code) + traducción del contenido (Traducciones). Sin dueño todavía.
