@@ -1,17 +1,141 @@
 {
- "idioma": "en", "nivel": "C1", "topicId": "T06", "n": 1, "anio": 2027,
+ "idioma": "en",
+ "nivel": "C1",
+ "topicId": "T06",
+ "n": 1,
+ "anio": 2027,
  "vocabulario": [
-  {"item": "carbon footprint", "prioridad": "nucleo", "traducciones": {"es": "la huella de carbono","de": "der CO₂-Fußabdruck","fr": "l’empreinte carbone","it": "l’impronta di carbonio","pt": "a pegada de carbono"}},
-  {"item": "climate change", "prioridad": "nucleo", "traducciones": {"es": "el cambio climático","de": "Klimawandel","fr": "le changement climatique","it": "il cambiamento climatico","pt": "as alterações climáticas"}},
-  {"item": "greenhouse gases", "prioridad": "nucleo", "traducciones": {"es": "los gases de efecto invernadero","de": "Treibhausgase","fr": "les gaz à effet de serre","it": "i gas serra","pt": "os gases com efeito de estufa"}},
-  {"item": "biodiversity", "prioridad": "nucleo", "traducciones": {"es": "la biodiversidad","de": "die Biodiversität","fr": "la biodiversité","it": "la biodiversità","pt": "a biodiversidade"}},
-  {"item": "drought", "prioridad": "ampliacion", "traducciones": {"es": "la sequía","de": "die Dürre","fr": "la sécheresse","it": "la siccità","pt": "a seca"}},
-  {"item": "sea level rise", "prioridad": "ampliacion", "traducciones": {"es": "el aumento del nivel del mar","de": "der Meeresspiegelanstieg","fr": "la montée du niveau de la mer","it": "l'innalzamento del livello del mare","pt": "a elevação do nível do mar"}},
-  {"item": "extinction rate", "prioridad": "ampliacion", "traducciones": {"es": "la tasa de extinción","de": "die Aussterberate","fr": "le taux d’extinction","it": "il tasso di estinzione","pt": "a taxa de extinção"}},
-  {"item": "tipping point", "prioridad": "ampliacion", "traducciones": {"es": "el punto de inflexión","de": "der Kipppunkt","fr": "le point de bascule","it": "il punto di non ritorno / svolta","pt": "o ponto de viragem"}},
-  {"item": "emissions trading", "prioridad": "ampliacion", "traducciones": {"es": "el comercio de emisiones","de": "der Emissionshandel","fr": "le marché du carbone","it": "il mercato delle emissioni","pt": "o comércio de emissões"}},
-  {"item": "climate displacement", "prioridad": "ampliacion", "traducciones": {"es": "el desplazamiento climático","de": "die Klimaflucht","fr": "la migration climatique","it": "la migrazione climatica","pt": "o deslocamento climático"}},
-  {"item": "species extinction", "prioridad": "ampliacion", "traducciones": {"es": "la extinción de especies","de": "das Artensterben","fr": "l'extinction des espèces","it": "l'estinzione delle specie","pt": "a extinção de espécies"}},
-  {"item": "to become apparent", "prioridad": "ampliacion", "traducciones": {"es": "hacerse evidente","de": "sich abzeichnen","fr": "se dessiner","it": "delinearsi","pt": "tornar-se evidente"}}
+  {
+   "item": "carbon footprint",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la huella de carbono",
+    "de": "der CO₂-Fussabdruck",
+    "fr": "l’empreinte carbone",
+    "it": "l’impronta di carbonio",
+    "pt": "a pegada de carbono"
+   }
+  },
+  {
+   "item": "climate change",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el cambio climático",
+    "de": "Klimawandel",
+    "fr": "le changement climatique",
+    "it": "il cambiamento climatico",
+    "pt": "as alterações climáticas"
+   }
+  },
+  {
+   "item": "greenhouse gases",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gases de efecto invernadero",
+    "de": "Treibhausgase",
+    "fr": "les gaz à effet de serre",
+    "it": "i gas serra",
+    "pt": "os gases com efeito de estufa"
+   }
+  },
+  {
+   "item": "biodiversity",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la biodiversidad",
+    "de": "die Biodiversität",
+    "fr": "la biodiversité",
+    "it": "la biodiversità",
+    "pt": "a biodiversidade"
+   }
+  },
+  {
+   "item": "drought",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la sequía",
+    "de": "die Dürre",
+    "fr": "la sécheresse",
+    "it": "la siccità",
+    "pt": "a seca"
+   }
+  },
+  {
+   "item": "sea level rise",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el aumento del nivel del mar",
+    "de": "der Meeresspiegelanstieg",
+    "fr": "la montée du niveau de la mer",
+    "it": "l'innalzamento del livello del mare",
+    "pt": "a elevação do nível do mar"
+   }
+  },
+  {
+   "item": "extinction rate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la tasa de extinción",
+    "de": "die Aussterberate",
+    "fr": "le taux d’extinction",
+    "it": "il tasso di estinzione",
+    "pt": "a taxa de extinção"
+   }
+  },
+  {
+   "item": "tipping point",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el punto de inflexión",
+    "de": "der Kipppunkt",
+    "fr": "le point de bascule",
+    "it": "il punto di non ritorno / svolta",
+    "pt": "o ponto de viragem"
+   }
+  },
+  {
+   "item": "emissions trading",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el comercio de emisiones",
+    "de": "der Emissionshandel",
+    "fr": "le marché du carbone",
+    "it": "il mercato delle emissioni",
+    "pt": "o comércio de emissões"
+   }
+  },
+  {
+   "item": "climate displacement",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el desplazamiento climático",
+    "de": "die Klimaflucht",
+    "fr": "la migration climatique",
+    "it": "la migrazione climatica",
+    "pt": "o deslocamento climático"
+   }
+  },
+  {
+   "item": "species extinction",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la extinción de especies",
+    "de": "das Artensterben",
+    "fr": "l'extinction des espèces",
+    "it": "l'estinzione delle specie",
+    "pt": "a extinção de espécies"
+   }
+  },
+  {
+   "item": "to become apparent",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "hacerse evidente",
+    "de": "sich abzeichnen",
+    "fr": "se dessiner",
+    "it": "delinearsi",
+    "pt": "tornar-se evidente"
+   }
+  }
  ]
 }
