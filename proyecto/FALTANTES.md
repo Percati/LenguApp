@@ -109,32 +109,40 @@ que conviene tener presentes:
   es el más bajo atestiguado y ahora aparecen también en manuales B2. C1 baja
   de 1716 a 1290 lemas; no se perdió nada, solo se reetiquetó.
 - La construcción de B2 se hizo **sin el diccionario de frecuencia** como lista
-  blanca (`fuentes/A_Frequency_Dictionary_of_German.pdf` no estaba disponible),
-  así que hay ruido de OCR entre los 4085 lemas B2 extraídos: formas flexionadas
-  (*gestanden*, *hergerissen*) y palabras muy básicas. Cuando se reconstruya con
-  la lista blanca presente, el recuento B2 va a bajar y quedar más limpio.
+  blanca. En sept-2026 Fer consiguió el diccionario (Jones/Tschirner, *A Frequency
+  Dictionary of German*, 315 págs., con capa de texto) y se midió su efecto: **no
+  filtra ruido, lo amplía**. El pipeline acepta un candidato si pasa el filtro
+  morfológico **o** figura en el diccionario, así que la lista blanca suma palabras
+  reales que el filtro descartaba, pero no quita las formas flexionadas que ya
+  entraban. Con el diccionario, B2 pasa de 4085 a 4383 lemas: 298 altas, 0 bajas.
+  De esas altas, 68 no están hoy en `vocab_de.json` en ningún nivel y son en su
+  mayoría A1-B1 (*drei*, *fünf*, *dich*, *nachts*): cargarlas por la vía de la fusión
+  parcial las etiquetaría como B2.
 
-Falta **C2**. En sept-2026 se probó con *Deutsch üben: Wortschatz & Grammatik C2*
-(Hueber) y **no sirve como fuente de lemas**: es un cuaderno de ejercicios en prosa,
-no un Lernwortschatz. Medido sobre el PDF completo (129 páginas, con capa de texto,
-sin OCR necesario):
+**Última pieza que falta: las fuentes de A1 a C1 en `fuentes/`.** Son los PDF del
+Goethe (A1 Fit1, A2, B1), el DTZ y los tres .txt de C1. Sin ellas no se puede correr
+`build_wordlists.py` completo: el script omite en silencio la fuente que falta y
+reescribe `vocab_de.json` entero, así que B2 se ha ido integrando por fusión parcial.
+Con esas fuentes más el diccionario ya disponible, una sola reconstrucción deja la
+lista coherente y reetiqueta correctamente las 68 altas de arriba.
 
-- 2215 lemas extraídos, de los cuales 1162 serían nuevos, pero dominados por ruido:
-  formas flexionadas (*örtlichen*, *heutigen*, *lernten*), fragmentos de palabras
-  cortadas por guion (*nitionen* por Definitionen, *schenleben* por Menschenleben) y
-  metalenguaje del propio libro (*Satzteile*, *Berufsbezeichnungen*, *pejorativ*).
-- Sobre los 48 packs de alemán C2 solo cubriría **3 ítems** (*kleinlich*,
-  *Meisterschaft*, *Zugehörigkeit*). El aporte real es nulo frente al daño de marcar
-  1162 lemas como C2 cuando muchos son A1-B1 (*Sonne*, *Wahl*, *ruhig*).
+Falta **C2** como nivel atestiguado. En sept-2026 se probó *Deutsch üben: Wortschatz
+& Grammatik C2* (Hueber, 129 págs., con capa de texto, sin OCR necesario) y **no
+sirve como fuente de lemas**: es un cuaderno de ejercicios en prosa, no un
+Lernwortschatz. Medido dos veces, sin y con el diccionario como lista blanca:
+
+- 2215 lemas sin lista blanca, 2508 con ella; de esos, 1243 serían nuevos, dominados
+  por ruido: adjetivos declinados (*gehobenen*, *psychischen*, *einzigen*), fragmentos
+  de palabras cortadas por guion (*nitionen* por Definitionen, *schenleben* por
+  Menschenleben) y metalenguaje del propio libro (*Satzteile*, *Modalwörter*).
+- Sobre los 48 packs de alemán C2 cubre **3 ítems** en ambas mediciones
+  (*kleinlich*, *Meisterschaft*, *Zugehörigkeit*). El aporte no compensa marcar como
+  C2 más de mil lemas que en su mayoría no lo son.
 
 Por eso **no se cargó**: `vocab_de.json` sigue sin nivel C2 y los packs de alemán C2
-quedan sin verificación externa.
-
-Qué serviría, en orden de preferencia: (1) el **glosario o Lernwortschatz de un manual
-C2** con listas por capítulo (Erkundungen C2 tiene Rückblick; Mittelpunkt neu C2 y
-Sicher! C2 tienen listas de vocabulario); (2) el **diccionario de frecuencia**
-(`fuentes/A_Frequency_Dictionary_of_German.pdf`), que como lista blanca filtraría el
-ruido y volvería aprovechable incluso una fuente en prosa como la ya probada.
+quedan sin verificación externa. Lo que serviría es el **glosario o Lernwortschatz de
+un manual C2** con listas por capítulo (Erkundungen C2 tiene Rückblick; Mittelpunkt
+neu C2 y Sicher! C2 traen listas de vocabulario).
 
 *Cosmos C2 – Redemittel* (escaneado, 17 páginas) tampoco es fuente de lemas: son
 fórmulas de discurso, el mismo caso que los Redemittel de B2 y C1. Queda como
