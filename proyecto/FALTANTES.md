@@ -172,7 +172,8 @@ material para el tipo de contenido de Redemittel, todavía sin definir.
 
 ## 8. Sin dueño todavía
 
-- **Semanas de repaso 2027** (S10, S22, S34, S46): no existe contenido en ninguna combinación. Hay un precedente real en el piloto (`REVIEW-EN-C1-S48.json`: semana especial autocontenida, sin núcleo ni pack, que cita skills de semanas anteriores por número). Se propusieron tres templates (síntesis única para C1/C2, tres entregas cortas para B2, autodiagnóstico + producción corta para A2/B1) — falta que Fer confirme cuál usar antes de que Apariciones las escriba.
+- **Semanas de repaso 2027** (S10, S22, S34, S46): no existe contenido en ninguna combinación. Hay un precedente real en el piloto (`REVIEW-EN-C1-S48.json`). **Los tres templates ya están confirmados por Fer** (síntesis para C1/C2, tres entregas cortas para B2, autodiagnóstico + producción corta para A2/B1), con un ajuste fijado en los tres: la escritura es preparación opcional, nunca la entrega en sí — la entrega real siempre es oral (grabación), para que la escritura funcione como andamiaje del vocabulario antes de hablar y no como sustituto de hablar. Falta que Apariciones las escriba; nadie asignado todavía.
+- **Redemittel de fuentes C2** (*Cosmos C2*, escaneado): hay material de fórmulas de discurso disponible, pero el tipo de contenido "Redemittel a partir de fuente externa" (distinto de los redemittel que ya vienen dentro de cada núcleo) sigue sin definir cómo se integra. Sin dueño.
 
 ## 9. Piloto 2026
 
