@@ -1,0 +1,32 @@
+{
+ "_tipo": "semana_especial",
+ "id": "REVIEW-DE-C2-S46",
+ "semana": 46,
+ "idioma": "de",
+ "nivel": "C2",
+ "clase": "review",
+ "titulo": "Skill Review Week",
+ "minutosEstimados": 70,
+ "consigna": "Eine einzige gesprochene Produktion von mindestens zwölf Minuten: Halten Sie eine Rede zu einem gesellschaftlichen Streitthema, in der Ironie, präzise Abschwächung und eine getragene Argumentation zusammenkommen — und in der Sie an einer Stelle die Ironie bewusst fallen lassen. Mit Publikum oder als Selbstaufnahme.",
+ "requisitos": [
+  "Trockene Ironie, an einer Stelle bewusst fallen gelassen (Woche 38)",
+  "Zweiteilige Konnektoren als Architektur des Arguments (Woche 41)",
+  "Eine Vermutung als Beweiskette mit Entscheidungskriterium (Woche 42)",
+  "Zwei Dreifachabschwächungen, dosiert (Woche 40)",
+  "Konnotativ gefärbte Wortwahl, ohne offene Wertung (Woche 39)",
+  "Ein Gespräch oder eine Zwischenfrage moderieren (Woche 45)"
+ ],
+ "microtareas": [
+  "*Mo (10 Min.).* Alle Korrekturen des Jahres durchgehen und die notieren, die von Woche 2 bis Woche 45 nie verschwunden ist.",
+  "*Mi (5 Min.).* Drei Sätze bauen, die Konnotation, zweiteiligen Konnektor und Abschwächung zusammen tragen.",
+  "*Fr (10 Min.).* Zwölf Minuten aufnehmen. Danach prüfen: Ist die Jahreskorrektur noch da?"
+ ],
+ "autochequeo": [
+  "Sind alle sechs Fähigkeiten vorhanden?",
+  "War die Stelle ohne Ironie als Ernst erkennbar?",
+  "Haben die Konnektoren das Argument getragen oder nur verbunden?",
+  "Blieb die Wortwahl gefärbt, aber ohne offene Wertung?",
+  "Ist die Korrektur, die das ganze Jahr geblieben ist, noch da?"
+ ],
+ "promptCorreccion": "Das ist eine Wiederholung von sechs Fähigkeiten gleichzeitig: Ironie und ihr bewusster Abbruch, zweiteilige Konnektoren, Vermutung als Beweiskette, dosierte Abschwächung, Konnotation und Gesprächsmoderation. (1) Sag zu jeder, ob sie vorhanden und gelungen ist. (2) Sag mir, welche sich über das Jahr am wenigsten gefestigt hat. (3) Gib mir einen Satz, der drei davon trägt. Korrigiere nichts außerhalb dieser sechs Bereiche. ---"
+}

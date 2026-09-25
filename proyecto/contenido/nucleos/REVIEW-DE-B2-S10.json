@@ -1,0 +1,31 @@
+{
+ "_tipo": "semana_especial",
+ "id": "REVIEW-DE-B2-S10",
+ "semana": 10,
+ "idioma": "de",
+ "nivel": "B2",
+ "clase": "review",
+ "titulo": "Skill Review Week",
+ "minutosEstimados": 50,
+ "consigna": "Drei getrennte Aufnahmen, eine pro Tag, jede zwei bis drei Minuten. Jede isoliert zwei Fähigkeiten der letzten acht Wochen. Vorher stichwortartig planen ist erlaubt; abgelesene Texte gelten nicht.",
+ "requisitos": [
+  "Aufnahme 1: höflich widersprechen (Woche 4) + einwerfen und nachfragen (Woche 5)",
+  "Aufnahme 2: Gegenargument zuerst nennen und entkräften (Woche 7) + Konnektoren aus allen vier Gruppen (Woche 6)",
+  "Aufnahme 3: eine fachliche Einschätzung abschwächen (Woche 9) + zwei Partizipialattribute (Woche 8)",
+  "Keine Aufnahme länger als drei Minuten",
+  "Jede Aufnahme zu einem anderen Thema"
+ ],
+ "microtareas": [
+  "*Mo (10 Min.).* Aufnahme 1: Widersprechen Sie einer Behauptung über KI und fragen Sie zweimal nach, bevor Sie antworten.",
+  "*Mi (10 Min.).* Aufnahme 2: Argumentieren Sie für eine Entscheidung und nennen Sie das Gegenargument zuerst.",
+  "*Fr (10 Min.).* Aufnahme 3: Geben Sie eine Einschätzung mit vier Abschwächungsmitteln und zwei Partizipialattributen ab."
+ ],
+ "autochequeo": [
+  "Sind alle sechs Fähigkeiten vorgekommen, jede in ihrer Aufnahme?",
+  "Habe ich gesprochen oder abgelesen?",
+  "Blieb die Verbstellung stabil, als ich schneller wurde?",
+  "Hat eine Aufnahme die andere inhaltlich wiederholt?",
+  "Welche der drei war die schwächste, und warum?"
+ ],
+ "promptCorreccion": "Das sind drei getrennte kurze Produktionen. Für jede: (1) Sind die zwei zugewiesenen Fähigkeiten vorhanden und gelungen? (2) Welche der drei Aufnahmen ist die schwächste und warum? (3) Gib mir zu der schwächsten einen Satz, der beide Fähigkeiten gleichzeitig trägt. Korrigiere nichts außerhalb dieser sechs Punkte. ---"
+}

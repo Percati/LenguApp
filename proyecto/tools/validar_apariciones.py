@@ -92,8 +92,14 @@ def main():
                 errores.append(f"{w}: pack de {pack.get('topicId')} en semana de {o['topicId']}")
             if o.get("challengeType") != CHALLENGE[niv]:
                 errores.append(f"{w}: challengeType {o.get('challengeType')}")
-            texto = " ".join([o["mision"]["consigna"], *o["mision"]["requisitos"],
-                              *(m["texto"] for m in o["microtareas"])]).lower()
+            # Los campos bilingues son {idioma: texto} desde la fase de
+            # traducciones; el vocabulario del pack se busca en la version del
+            # idioma que se aprende, que es la unica que lo cita sin traducir.
+            def txt(v):
+                return v[idi] if isinstance(v, dict) else v
+            texto = " ".join([txt(o["mision"]["consigna"]),
+                              *(txt(r) for r in o["mision"]["requisitos"]),
+                              *(txt(m["texto"]) for m in o["microtareas"])]).lower()
             usados = [v["item"] for v in pack["vocabulario"] if v["prioridad"] == "nucleo"
                       and any(x in texto for x in variantes(v["item"]))]
             if len(usados) < MIN_VOCAB:
@@ -103,15 +109,22 @@ def main():
             for e in nuc["ejemplos"]:
                 if e.get("audio"):
                     # audio-estado guarda el texto sin marcado en linea
-                    k = f"{idi}|Ejemplo|{e['texto'].replace('*', '')}"
+                    t = e["texto"]
+                    t = t[idi] if isinstance(t, dict) else t
+                    k = f"{idi}|Ejemplo|{t.replace('*', '')}"
                     if not audio.get(k, {}).get("grabado"):
                         avisos.append(f"{w}: audio sin grabar: {e['texto'][:50]}")
         for sk, lst in por_skill.items():
             for (s1, o1), (s2, o2) in [(x, y) for i, x in enumerate(lst) for y in lst[i + 1:]]:
-                if o1["subtitulo"] == o2["subtitulo"]:
+                sub1, sub2 = o1["subtitulo"], o2["subtitulo"]
+                if isinstance(sub1, dict):
+                    sub1, sub2 = sub1.get(idi), sub2.get(idi)
+                if sub1 == sub2:
                     errores.append(f"{tag} {sk}: mismo subtitulo en S{s1} y S{s2}")
-                r = difflib.SequenceMatcher(None, o1["mision"]["consigna"],
-                                            o2["mision"]["consigna"]).ratio()
+                c1, c2 = o1["mision"]["consigna"], o2["mision"]["consigna"]
+                if isinstance(c1, dict):
+                    c1, c2 = c1.get(idi, ""), c2.get(idi, "")
+                r = difflib.SequenceMatcher(None, c1, c2).ratio()
                 if r > SIMILITUD_MAX:
                     errores.append(f"{tag} {sk}: consignas S{s1}/S{s2} casi iguales ({r:.2f})")
 

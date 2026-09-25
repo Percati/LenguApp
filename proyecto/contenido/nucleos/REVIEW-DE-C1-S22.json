@@ -1,0 +1,32 @@
+{
+ "_tipo": "semana_especial",
+ "id": "REVIEW-DE-C1-S22",
+ "semana": 22,
+ "idioma": "de",
+ "nivel": "C1",
+ "clase": "review",
+ "titulo": "Skill Review Week",
+ "minutosEstimados": 60,
+ "consigna": "Eine einzige gesprochene Produktion von mindestens zehn Minuten: Halten Sie einen Standpunkt zu einer öffentlichen Debatte durch — mit Argument, Gegenargument, einer Erzählung als Beleg und einer trockenen Bemerkung. Mit einer Person oder als Selbstaufnahme. Notizen sind Vorbereitung, kein Skript.",
+ "requisitos": [
+  "Das entscheidende Argument hervorheben und gewichten (Woche 19)",
+  "Ein Argument, das über zweiteilige Konnektoren läuft (Woche 17)",
+  "Eine Erzählung mit markiertem Wendepunkt (Woche 15)",
+  "Zwei Konnektoren mit feinem Register-Unterschied, nicht die B1-Varianten (Woche 20)",
+  "Eine Redewendung, gut platziert (Woche 18)",
+  "Eine Untertreibung, die als Kritik erkennbar ist (Woche 14)"
+ ],
+ "microtareas": [
+  "*Mo (10 Min.).* Korrekturen der Wochen 14 bis 21 durchlesen und die häufigste notieren.",
+  "*Mi (5 Min.).* Drei Sätze bauen, die Gewichtung, zweiteiligen Konnektor und Redewendung zusammen tragen.",
+  "*Fr (10 Min.).* Zehn Minuten aufnehmen. Danach prüfen: Wo ist die Struktur zuerst gekippt?"
+ ],
+ "autochequeo": [
+  "Sind alle sechs Fähigkeiten vorhanden, oder dominiert eine?",
+  "War das entscheidende Argument als solches erkennbar?",
+  "Haben die zweiteiligen Konnektoren das Argument getragen oder nur dekoriert?",
+  "War die Untertreibung verständlich oder nur unklar?",
+  "Ist die Korrektur von Montag wieder aufgetreten?"
+ ],
+ "promptCorreccion": "Das ist eine Wiederholung von sechs Fähigkeiten gleichzeitig: gewichtetes Argumentieren, zweiteilige Konnektoren, Erzählstruktur, Register bei Konnektoren, Redewendungen und Untertreibung. (1) Sag zu jeder, ob sie vorhanden und gelungen ist. (2) Sag mir, welche zusammengebrochen ist. (3) Gib mir einen Satz, der drei davon trägt. Korrigiere nichts außerhalb dieser sechs Bereiche. ---"
+}
