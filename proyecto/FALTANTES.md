@@ -139,10 +139,32 @@ Lernwortschatz. Medido dos veces, sin y con el diccionario como lista blanca:
   (*kleinlich*, *Meisterschaft*, *Zugehörigkeit*). El aporte no compensa marcar como
   C2 más de mil lemas que en su mayoría no lo son.
 
-Por eso **no se cargó**: `vocab_de.json` sigue sin nivel C2 y los packs de alemán C2
-quedan sin verificación externa. Lo que serviría es el **glosario o Lernwortschatz de
-un manual C2** con listas por capítulo (Erkundungen C2 tiene Rückblick; Mittelpunkt
-neu C2 y Sicher! C2 traen listas de vocabulario).
+Por eso **no se cargó**: `vocab_de.json` sigue sin nivel C2. En sept-2026 se probaron
+además tres listas web (MindDory 554 lemas, ScoreUp 107, germanfluent 5475) y se
+descartaron las tres: germanfluent etiqueta como C2 bandas de frecuencia, no
+dificultad (*Aschenbecher*, *Klassenzimmer*, *Vanille* figuran como C2), y las otras
+dos, juntas, atestiguan **un solo ítem** de los 48 packs (*Ritual*).
+
+**Solución adoptada: verificación por banda de frecuencia** (`tools/verificar_frecuencia.py`).
+En niveles altos, en vez de preguntar si una palabra está en una lista de nivel —que para
+compuestos y colocaciones nunca va a estar— se pregunta si es lo bastante infrecuente
+como para pertenecer a ese nivel, usando el rango del diccionario de frecuencia
+(Jones/Tschirner, 5000 lemas). El PDF no se versiona; la herramienta lo lee de
+`fuentes/` en cada corrida y solo usa el rango, en memoria.
+
+Resultado de la primera corrida:
+
+| Pack | Demasiado común (top 1000) | 1001-2500 | 2501-5000 | Fuera del top 5000 |
+|---|---|---|---|---|
+| DE B2 | 8 | 18 | 45 | 400 |
+| DE C1 | 5 | 7 | 41 | 374 |
+| DE C2 | 3 | 10 | 21 | 484 |
+
+El perfil es el esperado: cuanto más alto el nivel, más contenido fuera del top 5000.
+Las alertas de C2 son *das Miteinander* (rango 716) y *die Bildung* (850, en dos packs).
+Limitación conocida: el rango es por forma, no por acepción, así que una nominalización
+de nivel alto hereda la frecuencia del adverbio o del sustantivo básico homógrafo
+(*miteinander*); las alertas se revisan a mano, no se aplican en automático.
 
 *Cosmos C2 – Redemittel* (escaneado, 17 páginas) tampoco es fuente de lemas: son
 fórmulas de discurso, el mismo caso que los Redemittel de B2 y C1. Queda como
