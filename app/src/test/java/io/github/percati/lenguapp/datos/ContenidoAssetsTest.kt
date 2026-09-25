@@ -66,9 +66,9 @@ class ContenidoAssetsTest {
     @Test
     fun `las semanas especiales conocidas del piloto cargan como SemanaEspecial`() {
         val ids = listOf(
-            "REVIEW-DE-B2-S40", "REVIEW-DE-B2-S48", "SURVIVAL-DE-B2-S44",
-            "REVIEW-EN-B2-S40", "REVIEW-EN-B2-S48", "SURVIVAL-EN-B2-S44",
-            "REVIEW-EN-C1-S40", "REVIEW-EN-C1-S48", "SURVIVAL-EN-C1-S44",
+            "REVIEW-DE-B2-2026-S40", "REVIEW-DE-B2-2026-S48", "SURVIVAL-DE-B2-2026-S44",
+            "REVIEW-EN-B2-2026-S40", "REVIEW-EN-B2-2026-S48", "SURVIVAL-EN-B2-2026-S44",
+            "REVIEW-EN-C1-2026-S40", "REVIEW-EN-C1-2026-S48", "SURVIVAL-EN-C1-2026-S44",
         )
         for (id in ids) {
             val archivo = File(carpetaContenido(), "$id.json")

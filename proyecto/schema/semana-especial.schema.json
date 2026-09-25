@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Semana especial (Review / Survival)",
-  "description": "Las semanas de integracion no tienen skill ni topic, asi que no encajan en ficha.schema.json. Forzarlas ahi exigiria hacer opcionales casi todos los campos obligatorios y el schema perderia su funcion.",
+  "description": "Las semanas de integracion no tienen skill ni topic, asi que no encajan en ficha.schema.json. Forzarlas ahi exigiria hacer opcionales casi todos los campos obligatorios y el schema perderia su funcion. En A2/B1 (bilingue) los seis campos de texto (titulo, consigna, requisitos[], microtareas[], autochequeo[], promptCorreccion) pueden ser {idioma: texto} en vez de un string plano, con el mismo patron oneOf que ficha.schema.json (ver su $comment, 'campos bilingues A2/B1'): propertyNames limitado a es/en/de/fr/it/pt y minProperties 1. No es obligatorio: B2/C1/C2 siguen monolingues y las semanas A2/B1 actuales siguen siendo string plano.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -22,8 +22,8 @@
     },
     "id": {
       "type": "string",
-      "pattern": "^(REVIEW|SURVIVAL)-(EN|DE|ES|FR|IT|PT)-[ABC][12]-S\\d{1,2}$",
-      "description": "Incluye el NIVEL. Sin el, compilar el segundo nivel de un idioma pisa en silencio el archivo del primero: paso de verdad al agregar ingles B2."
+      "pattern": "^(REVIEW|SURVIVAL)-(EN|DE|ES|FR|IT|PT)-[ABC][12]-\\d{4}-S\\d{1,2}$",
+      "description": "Incluye el NIVEL y el ANIO. Sin el nivel, compilar el segundo nivel de un idioma pisa en silencio el archivo del primero (paso de verdad al agregar ingles B2). Sin el anio, el piloto 2026 (S40/S44/S48) y 2027 (S10/S22/S34/S46) solo no chocan porque usan semanas distintas: no es una garantia. Mismo criterio que el id de ficha (skillId-nivel-anio-order). Ej: REVIEW-DE-B2-2027-S10."
     },
     "semana": {
       "type": "integer",
@@ -47,7 +47,28 @@
       ]
     },
     "titulo": {
-      "type": "string"
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "es",
+              "en",
+              "de",
+              "fr",
+              "it",
+              "pt"
+            ]
+          },
+          "additionalProperties": {
+            "type": "string"
+          },
+          "minProperties": 1
+        }
+      ]
     },
     "minutosEstimados": {
       "type": "integer",
@@ -55,18 +76,81 @@
       "maximum": 240
     },
     "consigna": {
-      "type": "string"
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "es",
+              "en",
+              "de",
+              "fr",
+              "it",
+              "pt"
+            ]
+          },
+          "additionalProperties": {
+            "type": "string"
+          },
+          "minProperties": 1
+        }
+      ]
     },
     "requisitos": {
       "type": "array",
       "items": {
-        "type": "string"
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "propertyNames": {
+              "enum": [
+                "es",
+                "en",
+                "de",
+                "fr",
+                "it",
+                "pt"
+              ]
+            },
+            "additionalProperties": {
+              "type": "string"
+            },
+            "minProperties": 1
+          }
+        ]
       }
     },
     "microtareas": {
       "type": "array",
       "items": {
-        "type": "string"
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "propertyNames": {
+              "enum": [
+                "es",
+                "en",
+                "de",
+                "fr",
+                "it",
+                "pt"
+              ]
+            },
+            "additionalProperties": {
+              "type": "string"
+            },
+            "minProperties": 1
+          }
+        ]
       }
     },
     "autochequeo": {
@@ -74,11 +158,53 @@
       "minItems": 1,
       "maxItems": 5,
       "items": {
-        "type": "string"
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "object",
+            "propertyNames": {
+              "enum": [
+                "es",
+                "en",
+                "de",
+                "fr",
+                "it",
+                "pt"
+              ]
+            },
+            "additionalProperties": {
+              "type": "string"
+            },
+            "minProperties": 1
+          }
+        ]
       }
     },
     "promptCorreccion": {
-      "type": "string"
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "es",
+              "en",
+              "de",
+              "fr",
+              "it",
+              "pt"
+            ]
+          },
+          "additionalProperties": {
+            "type": "string"
+          },
+          "minProperties": 1
+        }
+      ]
     },
     "nivel": {
       "enum": [

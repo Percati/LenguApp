@@ -196,7 +196,7 @@ que aparezca un caso genuinamente distinto a los dos de arriba.
 
 ## 8. Sin dueño todavía
 
-- **Semanas especiales sin soporte multiidioma:** el schema de `semana_especial` usa strings planos, no `{idioma: texto}`. Las 8 semanas de repaso de A2/B1 (2 niveles × 4 semanas) quedan solo en el idioma que se aprende, rodeadas de fichas ya traducidas a los 5 idiomas de app. Es ajuste de schema (Code) + traducción del contenido (Traducciones). Sin dueño todavía.
+- **Semanas especiales sin soporte multiidioma:** ✅ el lado de Code ya está resuelto. `semana-especial.schema.json` acepta `oneOf` string plano u objeto `{idioma: texto}` en sus 6 campos de texto (no obligatorio; B2/C1/C2 siguen monolingües), y los modelos Kotlin (`SemanaEspecial`) y la pantalla ya los resuelven. **Falta solo la traducción del contenido de las semanas de repaso A2/B1 (Traducciones).** Además el id de las semanas especiales ahora lleva año: `REVIEW-DE-B2-2027-S10`, `SURVIVAL-EN-B2-2026-S44` (los 49 archivos de `contenido/nucleos/` se renombraron y `componer.py` ahora los valida contra su schema). Verificado: 522 fichas, 49 semanas especiales, 0 problemas.
 
 ## 9. Piloto 2026
 

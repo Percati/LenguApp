@@ -1,0 +1,32 @@
+{
+ "_tipo": "semana_especial",
+ "id": "REVIEW-DE-C1-2027-S34",
+ "semana": 34,
+ "idioma": "de",
+ "nivel": "C1",
+ "clase": "review",
+ "titulo": "Skill Review Week",
+ "minutosEstimados": 60,
+ "consigna": "Eine einzige gesprochene Produktion von mindestens zehn Minuten: Schildern Sie einen Fall, in dem etwas schiefgelaufen ist — was berichtet wurde, was Sie selbst einordnen, was man hätte anders machen müssen und was Sie jetzt fordern. Mit einer Person oder als Selbstaufnahme. Vorbereitung schriftlich, Entgegnung mündlich.",
+ "requisitos": [
+  "Eine vierteilige Beschwerde: Sachverhalt, Auswirkung, Forderung, Einwand (Woche 27)",
+  "Indirekte Rede mit Konjunktiv I über mehrere Sätze (Woche 33)",
+  "Ein irrealer Vorwurf mit doppeltem Infinitiv (Woche 28)",
+  "Einordnen statt nacherzählen beim Zusammenfassen (Woche 30)",
+  "Drei Modalpartikeln, wo es mündlich passt (Woche 29)",
+  "Eine Dreifachabschwächung, die trotzdem etwas sagt (Woche 32)"
+ ],
+ "microtareas": [
+  "*Mo (10 Min.).* Korrekturen der Wochen 26 bis 33 durchsehen; die häufigste Korrektur notieren.",
+  "*Mi (5 Min.).* Drei Sätze bauen, die Konjunktiv I, irrealen Vorwurf und Abschwächung zusammen tragen.",
+  "*Fr (10 Min.).* Zehn Minuten aufnehmen, dann die letzte Minute anhören: Hält die Präzision bis zum Schluss?"
+ ],
+ "autochequeo": [
+  "Sind alle sechs Fähigkeiten vorhanden?",
+  "Blieb der Konjunktiv I durchgehend, oder bin ich in den Indikativ gefallen?",
+  "War die Forderung nach all der Abschwächung noch klar?",
+  "Klangen die Modalpartikeln natürlich oder gestreut?",
+  "Ist die Korrektur von Montag wieder aufgetreten?"
+ ],
+ "promptCorreccion": "Das ist eine Wiederholung von sechs Fähigkeiten gleichzeitig: vierteilige Beschwerde, indirekte Rede, irrealer Vorwurf, Einordnen beim Zusammenfassen, Modalpartikeln und dosierte Abschwächung. (1) Sag zu jeder, ob sie vorhanden und gelungen ist. (2) Sag mir, welche zusammengebrochen ist. (3) Gib mir einen Satz, der drei davon trägt. Korrigiere nichts ausserhalb dieser sechs Bereiche. ---"
+}

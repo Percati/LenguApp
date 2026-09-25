@@ -101,6 +101,33 @@ class TextoBilingueTest {
     private fun lista(e: JsonElement, f: (JsonElement) -> JsonElement) = JsonArray(e.jsonArray.map(f))
 
     @Test
+    fun `una semana especial acepta sus seis campos como string plano u objeto por idioma`() {
+        val carpeta = listOf(File("src/main/assets"), File("app/src/main/assets")).first { it.isDirectory }
+        val base = jsonContenido.parseToJsonElement(File(carpeta, "contenido/REVIEW-DE-B2-2026-S40.json").readText()).jsonObject
+
+        val plano = parsearContenido(base.toString()) as SemanaEspecial
+        assertEquals(plano.titulo.plano, plano.titulo.resolver(Idioma.ES, plano.idioma))
+
+        val m = base.toMutableMap()
+        m["titulo"] = bilingue(base.getValue("titulo"))
+        m["consigna"] = bilingue(base.getValue("consigna"))
+        m["promptCorreccion"] = bilingue(base.getValue("promptCorreccion"))
+        m["requisitos"] = lista(base.getValue("requisitos")) { bilingue(it) }
+        m["microtareas"] = lista(base.getValue("microtareas")) { bilingue(it) }
+        m["autochequeo"] = lista(base.getValue("autochequeo")) { bilingue(it) }
+        val e = parsearContenido(JsonObject(m).toString()) as SemanaEspecial
+
+        assertTrue(e.titulo.resolver(Idioma.ES, Idioma.DE).startsWith("ES: "))
+        assertTrue(e.consigna.resolver(Idioma.ES, Idioma.DE).startsWith("ES: "))
+        assertTrue(e.promptCorreccion.resolver(Idioma.ES, Idioma.DE).startsWith("ES: "))
+        assertTrue(e.requisitos!!.all { it.resolver(Idioma.ES, Idioma.DE).startsWith("ES: ") })
+        assertTrue(e.microtareas!!.all { it.resolver(Idioma.ES, Idioma.DE).startsWith("ES: ") })
+        assertTrue(e.autochequeo.all { it.resolver(Idioma.ES, Idioma.DE).startsWith("ES: ") })
+        // Sin clave "fr" cae al aleman.
+        assertEquals(plano.titulo.plano, e.titulo.resolver(Idioma.FR, Idioma.DE))
+    }
+
+    @Test
     fun `una ficha con campos string plano (piloto 2026) sigue funcionando igual`() {
         val ficha = parsearContenido(jsonPiloto().toString()) as Ficha
         assertEquals("Satzbau: Haupt- und Nebensatz", ficha.titulo.resolver(Idioma.ES, ficha.idioma))

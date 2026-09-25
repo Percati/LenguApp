@@ -189,7 +189,7 @@ class ContenidoSemanalScreenInteraccionTest {
     @Test
     fun `una semana especial sin prompt de correccion no muestra el boton de copiar`() {
         val carpeta = listOf(File("src/main/assets"), File("app/src/main/assets")).first { it.isDirectory }
-        val survival = parsearContenido(File(carpeta, "contenido/SURVIVAL-EN-B2-S44.json").readText())
+        val survival = parsearContenido(File(carpeta, "contenido/SURVIVAL-EN-B2-2026-S44.json").readText())
         composeTestRule.setContent { ContenidoSemanalScreen(survival, idiomaBase = Idioma.ES) }
 
         composeTestRule.onNode(hasText("Copiar al portapapeles", substring = true)).assertDoesNotExist()

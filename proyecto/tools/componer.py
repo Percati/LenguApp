@@ -36,11 +36,16 @@ def main():
     base, out = Path(a.contenido), Path(a.salida)
     out.mkdir(parents=True, exist_ok=True)
 
-    val = None
+    val = val_esp = None
     if a.schema:
         import jsonschema
         val = jsonschema.Draft202012Validator(
             json.loads(Path(a.schema).read_text(encoding="utf-8")))
+        # Las semanas especiales tienen su propio schema, junto al de ficha.
+        esp = Path(a.schema).with_name("semana-especial.schema.json")
+        if esp.exists():
+            val_esp = jsonschema.Draft202012Validator(
+                json.loads(esp.read_text(encoding="utf-8")))
 
     nucleos, packs = {}, {}
     especiales = []
@@ -100,6 +105,13 @@ def main():
             n += 1
 
     for d in especiales:
+        if val_esp:
+            errs = list(val_esp.iter_errors(d))
+            if errs:
+                print(f"  ! {d.get('id')}: {list(errs[0].path)} {errs[0].message[:70]}",
+                      file=sys.stderr)
+                fallos += 1
+                continue
         if d["id"] in vistos:
             print(f"  ! id duplicado {d['id']}: semana especial y {vistos[d['id']]}",
                   file=sys.stderr)

@@ -153,8 +153,9 @@ fun resolverContenidoDeLaSemana(
  * justo el caso que decide cual calendario se cargo (ver
  * resolverContenidoDeLaSemana/RepositorioSemana.kt).
  *
- * REVIEW y SURVIVAL siguen sin anio en el id: son del piloto 2026 bajo el
- * esquema viejo (regla dura #11) y no se regeneran; llevan el nivel ademas
+ * REVIEW y SURVIVAL llevan tambien el anio (REVIEW-DE-B2-2026-S40): el
+ * piloto 2026 (S40/S44/S48) y 2027 (S10/S22/S34/S46) solo no chocaban porque
+ * usan semanas distintas, y eso no es una garantia. Llevan el nivel ademas
  * del idioma porque un mismo idioma puede tener mas de un nivel con
  * calendario propio (ingles B2 y C1 en 2026), y la semana de repaso o
  * Survival de cada nivel es contenido distinto, no el mismo texto para los
@@ -163,6 +164,6 @@ fun resolverContenidoDeLaSemana(
 private fun idDeEntrada(entrada: EntradaCalendario, idioma: Idioma, nivel: Nivel, anio: Int): String =
     when (entrada.tipo) {
         TipoSemana.CONTENT -> "${entrada.skillId}-${nivel.name}-${anio}-${entrada.order}"
-        TipoSemana.REVIEW -> "REVIEW-${idioma.name}-${nivel.name}-S${entrada.semana}"
-        TipoSemana.SURVIVAL -> "SURVIVAL-${idioma.name}-${nivel.name}-S${entrada.semana}"
+        TipoSemana.REVIEW -> "REVIEW-${idioma.name}-${nivel.name}-${anio}-S${entrada.semana}"
+        TipoSemana.SURVIVAL -> "SURVIVAL-${idioma.name}-${nivel.name}-${anio}-S${entrada.semana}"
     }

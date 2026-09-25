@@ -247,12 +247,12 @@ data class SemanaEspecial(
     // su propia semana de repaso/Survival, pero el campo explicito faltaba.
     val nivel: Nivel,
     val clase: Clase,
-    val titulo: String,
+    val titulo: TextoBilingue,
     val minutosEstimados: Int? = null,
-    val consigna: String,
-    val requisitos: List<String>? = null,
+    val consigna: TextoBilingue,
+    val requisitos: List<TextoBilingue>? = null,
     // Aca son texto libre, a diferencia de Ficha.microtareas que son objetos.
-    val microtareas: List<String>? = null,
-    val autochequeo: List<String>,
-    val promptCorreccion: String,
+    val microtareas: List<TextoBilingue>? = null,
+    val autochequeo: List<TextoBilingue>,
+    val promptCorreccion: TextoBilingue,
 ) : ContenidoSemanal

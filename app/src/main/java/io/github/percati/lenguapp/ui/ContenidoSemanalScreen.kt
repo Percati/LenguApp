@@ -106,7 +106,7 @@ fun ContenidoSemanalScreen(
 ) {
     when (contenido) {
         is Ficha -> FichaContenido(contenido, idiomaBase, modifier)
-        is SemanaEspecial -> SemanaEspecialContenido(contenido, modifier)
+        is SemanaEspecial -> SemanaEspecialContenido(contenido, idiomaBase, modifier)
     }
 }
 
@@ -200,13 +200,15 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier 
 }
 
 @Composable
-private fun SemanaEspecialContenido(especial: SemanaEspecial, modifier: Modifier = Modifier) = SelectionContainer {
+private fun SemanaEspecialContenido(especial: SemanaEspecial, idiomaBase: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
+    // Campos bilingues (A2/B1): idioma base del usuario, y el que se aprende si falta esa clave.
+    val t: (TextoBilingue) -> String = { it.resolver(idiomaBase, especial.idioma) }
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            Text(especial.titulo, style = MaterialTheme.typography.headlineSmall)
+            Text(t(especial.titulo), style = MaterialTheme.typography.headlineSmall)
             val minutos = especial.minutosEstimados?.let { " · $it min" } ?: ""
             Text(
                 "${etiquetaClase(especial.clase)} · semana ${especial.semana}$minutos",
@@ -215,21 +217,21 @@ private fun SemanaEspecialContenido(especial: SemanaEspecial, modifier: Modifier
             )
         }
 
-        Text(textoConMarcado(especial.consigna), style = MaterialTheme.typography.bodyLarge)
+        Text(textoConMarcado(t(especial.consigna)), style = MaterialTheme.typography.bodyLarge)
 
         especial.requisitos?.takeIf { it.isNotEmpty() }?.let { requisitos ->
-            Seccion(etiquetaSeccion("requisitos", especial.idioma, bilingue = false)) { requisitos.forEach { Vinieta(it) } }
+            Seccion(etiquetaSeccion("requisitos", especial.idioma, bilingue = false)) { requisitos.forEach { Vinieta(t(it)) } }
         }
 
         especial.microtareas?.takeIf { it.isNotEmpty() }?.let { tareas ->
-            Seccion(etiquetaSeccion("microtareas", especial.idioma, bilingue = false)) { tareas.forEach { Vinieta(it) } }
+            Seccion(etiquetaSeccion("microtareas", especial.idioma, bilingue = false)) { tareas.forEach { Vinieta(t(it)) } }
         }
 
         Seccion(etiquetaSeccion("autochequeo", especial.idioma, bilingue = false)) {
-            especial.autochequeo.forEach { Vinieta(it) }
+            especial.autochequeo.forEach { Vinieta(t(it)) }
         }
 
-        especial.promptCorreccion.takeIf { it.isNotBlank() }?.let {
+        t(especial.promptCorreccion).takeIf { it.isNotBlank() }?.let {
             TarjetaPrompt(it, etiquetaSeccion("promptCorreccion", especial.idioma, bilingue = false))
         }
     }

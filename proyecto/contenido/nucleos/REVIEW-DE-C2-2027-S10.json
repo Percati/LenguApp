@@ -1,0 +1,32 @@
+{
+ "_tipo": "semana_especial",
+ "id": "REVIEW-DE-C2-2027-S10",
+ "semana": 10,
+ "idioma": "de",
+ "nivel": "C2",
+ "clase": "review",
+ "titulo": "Skill Review Week",
+ "minutosEstimados": 70,
+ "consigna": "Eine einzige gesprochene Produktion von mindestens zwölf Minuten: Nehmen Sie mündlich Stellung zu einer Verwaltungs- oder Rechtsentscheidung, die Sie für falsch halten — mit zitierten fremden Vorwürfen, einer eigenen Vorwurfskette und einer präzise dosierten Einschätzung. Mit einer Person oder als Selbstaufnahme. Notizen sind Vorbereitung; bewertet wird das Gesprochene.",
+ "requisitos": [
+  "Widerspruch auf der richtigen Ebene verorten: Prämisse, Logik oder Schluss (Woche 9)",
+  "Eine Kette irrealer Vorwürfe, einer davon zitiert im Konjunktiv I (Woche 3)",
+  "Berichtete Aussagen über einen ganzen Abschnitt (Woche 7)",
+  "Vier Abschwächungen, jede an einer anderen Stelle der Skala (Woche 4)",
+  "Zwei bildungssprachliche Redewendungen, nie zwei hintereinander (Woche 6)",
+  "Eine eigene Wortbildung, aus dem Kontext verständlich (Woche 8)"
+ ],
+ "microtareas": [
+  "*Mo (10 Min.).* Korrekturen der Wochen 2 bis 9 durchsehen und die notieren, die am häufigsten auftaucht.",
+  "*Mi (5 Min.).* Drei Sätze bauen, die Vorwurfskette, Konjunktiv I und kalibrierte Abschwächung zusammen tragen.",
+  "*Fr (10 Min.).* Zwölf Minuten aufnehmen. Danach nur eine Minute aus der Mitte anhören: Hält die Präzision auch dort?"
+ ],
+ "autochequeo": [
+  "Sind alle sechs Fähigkeiten vorhanden, oder hat eine die anderen verdrängt?",
+  "War der Widerspruch wirklich auf einer Ebene verortet?",
+  "Klangen vier Abschwächungen vorsichtig oder ausweichend?",
+  "Hat die Neubildung ohne Erklärung funktioniert?",
+  "Habe ich gesprochen oder einen Text vorgetragen?"
+ ],
+ "promptCorreccion": "Das ist eine Wiederholung von sechs Fähigkeiten gleichzeitig: Widerspruch verorten, Vorwurfsketten, berichtete Rede, kalibrierte Abschwächung, bildungssprachliche Redewendungen und produktive Wortbildung. (1) Sag zu jeder, ob sie vorhanden und gelungen ist. (2) Sag mir, welche zusammengebrochen ist. (3) Gib mir einen Satz, der drei davon gleichzeitig trägt. Korrigiere nichts ausserhalb dieser sechs Bereiche. ---"
+}

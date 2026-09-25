@@ -82,7 +82,7 @@ private fun ContenidoWidget(resultado: ResultadoSemana?, idiomaInterfaz: Idioma,
                 val (titulo, subtitulo) = when (val contenido = resultado.contenido) {
                     is Ficha -> contenido.titulo.resolver(idiomaBase, contenido.idioma) to
                         contenido.subtitulo.resolver(idiomaBase, contenido.idioma)
-                    is SemanaEspecial -> contenido.titulo to null
+                    is SemanaEspecial -> contenido.titulo.resolver(idiomaBase, contenido.idioma) to null
                 }
                 Text(
                     text = titulo,
