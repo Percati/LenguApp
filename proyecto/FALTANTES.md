@@ -25,10 +25,9 @@ Estado regenerado a partir de los archivos reales del repositorio (parche de Apa
 | EN C1 | 48/48 |
 | EN C2 | 48/48 |
 
-**Total: 480/480 — verificado componiendo de verdad, no solo leyendo el reporte.**
+**Total: 480/480 fichas regulares + 40 semanas de repaso (S10/22/34/46 × 10 combos), verificado componiendo: 522 fichas + 49 semanas especiales, 0 problemas.**
 
 `tools/validar_apariciones.py` (nuevo, agregado por esta conversación) da 0 errores en las 10 combinaciones; los avisos restantes son todos de audio faltante, cubierto en la sección 5.
-
 ## 4. Esquema — ✅ todo resuelto
 
 Id con año, estructura bilingüe de los 13 campos de prosa, `titulo` y
@@ -167,13 +166,18 @@ de nivel alto hereda la frecuencia del adverbio o del sustantivo básico homógr
 (*miteinander*); las alertas se revisan a mano, no se aplican en automático.
 
 *Cosmos C2 – Redemittel* (escaneado, 17 páginas) tampoco es fuente de lemas: son
-fórmulas de discurso, el mismo caso que los Redemittel de B2 y C1. Queda como
-material para el tipo de contenido de Redemittel, todavía sin definir.
+fórmulas de discurso. **Decisión (sept-2026): no se transcribe.** El campo `redemittel`
+ya existe en cada núcleo (1862 expresiones en los 293 núcleos) — esto no es un tipo
+de contenido nuevo. Copiar una selección curada de una sección entera de un manual
+con derechos a un repo CC BY-SA es un riesgo real, distinto al de las wordlists
+(que solo se usan como lista blanca de verificación, sin copiar contenido). La ruta
+segura: escribir Redemittel C2 nuevos desde cero, usando el manual solo como
+referencia de registro/nivel, nunca transcribiendo. Los 9 núcleos `fluency` de
+alemán C2 están todos en el mínimo (6); hay margen de 6 más por núcleo. Sin dueño.
 
 ## 8. Sin dueño todavía
 
-- **Semanas de repaso 2027** (S10, S22, S34, S46): no existe contenido en ninguna combinación. Hay un precedente real en el piloto (`REVIEW-EN-C1-S48.json`). **Los tres templates ya están confirmados por Fer** (síntesis para C1/C2, tres entregas cortas para B2, autodiagnóstico + producción corta para A2/B1), con un ajuste fijado en los tres: la escritura es preparación opcional, nunca la entrega en sí — la entrega real siempre es oral (grabación), para que la escritura funcione como andamiaje del vocabulario antes de hablar y no como sustituto de hablar. Falta que Apariciones las escriba; nadie asignado todavía.
-- **Redemittel de fuentes C2** (*Cosmos C2*, escaneado): hay material de fórmulas de discurso disponible, pero el tipo de contenido "Redemittel a partir de fuente externa" (distinto de los redemittel que ya vienen dentro de cada núcleo) sigue sin definir cómo se integra. Sin dueño.
+- **Semanas especiales sin soporte multiidioma:** el schema de `semana_especial` usa strings planos, no `{idioma: texto}`. Las 8 semanas de repaso de A2/B1 (2 niveles × 4 semanas) quedan solo en el idioma que se aprende, rodeadas de fichas ya traducidas a los 5 idiomas de app. Es ajuste de schema (Code) + traducción del contenido (Traducciones). Sin dueño todavía.
 
 ## 9. Piloto 2026
 
