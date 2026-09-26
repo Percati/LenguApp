@@ -12,7 +12,8 @@ Cubre dos cosas:
   1. Vocabulario y expresiones (de nucleos/packs), en una hoja por idioma que
      se aprende.
   2. Toda la prosa de las fichas bilingues A2/B1 (nucleos y apariciones), en
-     una hoja por combinacion (idioma + nivel). Segun reglas-fichas.md, en A2
+     una hoja por combinacion (idioma + nivel), y la de las semanas de repaso
+     A2/B1 (contenido/nucleos/REVIEW-*), en una hoja "Repaso" por combinacion. Segun reglas-fichas.md, en A2
      y B1 la ficha entera se puede mostrar en el idioma de la app, asi que
      cada campo de prosa necesita su traduccion a los otros cinco idiomas.
      Los campos son los 13 que el schema declara bilingues (ver $comment,
@@ -198,6 +199,16 @@ def _campos_nucleo(d):
     yield "promptCorreccion", d.get("promptCorreccion")
 
 
+def _campos_semana(d):
+    """(ruta, valor) de cada campo de texto de una semana especial."""
+    yield "titulo", d.get("titulo")
+    yield "consigna", d.get("consigna")
+    for clave in ("requisitos", "microtareas", "autochequeo"):
+        for i, t in enumerate(d.get(clave, [])):
+            yield f"{clave}[{i}]", t
+    yield "promptCorreccion", d.get("promptCorreccion")
+
+
 def _campos_aparicion(a):
     yield "subtitulo", a.get("subtitulo")
     m = a.get("mision") or {}
@@ -242,6 +253,27 @@ def recolectar_prosa(base):
                 texto, trads = _valor(v)
                 crudo[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads))
 
+    return _agrupar(crudo)
+
+
+def recolectar_repaso(base):
+    """Igual que recolectar_prosa, pero para las semanas especiales A2/B1."""
+    crudo = defaultdict(list)
+    for p in sorted(base.joinpath("nucleos").glob("*.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        if d.get("_tipo") != "semana_especial" or d.get("nivel") not in NIVELES_BILINGUES:
+            continue
+        origen = d["id"]
+        for ruta, v in _campos_semana(d):
+            if v is None:
+                continue
+            texto, trads = _valor(v)
+            crudo[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads))
+    return _agrupar(crudo)
+
+
+def _agrupar(crudo):
+    """Junta en una fila los textos repetidos dentro de la misma combinacion."""
     datos = {}
     for clave, filas in crudo.items():
         agrupado = {}
@@ -258,15 +290,18 @@ def recolectar_prosa(base):
     return datos
 
 
-def hoja_prosa(wb, idioma, nivel, filas):
+def hoja_prosa(wb, idioma, nivel, filas, prefijo="Prosa", rotulo="Prosa bilingüe",
+               limites=True, nota_extra=""):
     bases = [i for i in IDIOMAS if i != idioma]
-    ws = wb.create_sheet(f"Prosa {idioma.upper()} {nivel}"[:31])
+    ws = wb.create_sheet(f"{prefijo} {idioma.upper()} {nivel}"[:31])
     ws.freeze_panes = "A4"
-    ws["A1"] = f"Prosa bilingüe — {NOMBRE[idioma]} {nivel}"
+    ws["A1"] = f"{rotulo} — {NOMBRE[idioma]} {nivel}"
     ws["A1"].font = Font(bold=True, size=13)
     ws["A2"] = ("Verde = ya existe, no tocar. Ámbar = falta traducir. El texto original "
                 f"queda como clave «{idioma}» del campo y lo pone el importador: no hay que copiarlo. "
-                "«Largo» es el límite de caracteres que el schema le exige a cada traducción.")
+                + ("«Largo» es el límite de caracteres que el schema le exige a cada traducción. "
+                   if limites else "")
+                + nota_extra)
     ws["A2"].font = Font(size=9, color="7F6000")
 
     cab = (["Origen", "Campo", "Largo", f"{NOMBRE[idioma]} — original"]
@@ -292,7 +327,7 @@ def hoja_prosa(wb, idioma, nivel, filas):
         fila += 1
         ws.cell(row=fila, column=1, value=origen).border = BORDE
         ws.cell(row=fila, column=2, value=ruta).border = BORDE
-        c = ws.cell(row=fila, column=3, value=_limite(ruta))
+        c = ws.cell(row=fila, column=3, value=_limite(ruta) if limites else "")
         c.border = BORDE; c.font = Font(size=8, color="777777")
         c.alignment = Alignment(horizontal="center")
         c = ws.cell(row=fila, column=4, value=texto if texto is not None else trads.get(idioma, ""))
@@ -318,6 +353,7 @@ def main():
     a = ap.parse_args()
     datos = recolectar(Path(a.contenido))
     prosa = recolectar_prosa(Path(a.contenido))
+    repaso = recolectar_repaso(Path(a.contenido))
 
     wb = openpyxl.Workbook()
     idx = wb.active; idx.title = "ÍNDICE"
@@ -353,6 +389,21 @@ def main():
     for (idi, niv) in sorted(prosa, key=lambda x: (NOMBRE[x[0]], ORDEN_NIVEL.index(x[1]))):
         n = hoja_prosa(wb, idi, niv, prosa[(idi, niv)])
         idx.cell(row=fila, column=1, value=f"{NOMBRE[idi]} {niv} — {len(prosa[(idi, niv)])} textos")
+        idx.cell(row=fila, column=2, value=n)
+        total += n
+        fila += 1
+    fila += 1
+    c = idx.cell(row=fila, column=1, value="Semanas de repaso A2/B1")
+    c.font = Font(bold=True, color="FFFFFF"); c.fill = CABEZA
+    idx.cell(row=fila, column=2).fill = CABEZA
+    fila += 1
+    for (idi, niv) in sorted(repaso, key=lambda x: (NOMBRE[x[0]], ORDEN_NIVEL.index(x[1]))):
+        n = hoja_prosa(wb, idi, niv, repaso[(idi, niv)], prefijo="Repaso",
+                       rotulo="Semanas de repaso", limites=False,
+                       nota_extra="Estos campos no tienen límite de longitud. La palabra objetivo "
+                                  "(vocabulario, conector, estructura) queda en el idioma que se "
+                                  "aprende; el día, los minutos y el número de semana sí se traducen.")
+        idx.cell(row=fila, column=1, value=f"{NOMBRE[idi]} {niv} — {len(repaso[(idi, niv)])} textos")
         idx.cell(row=fila, column=2, value=n)
         total += n
         fila += 1

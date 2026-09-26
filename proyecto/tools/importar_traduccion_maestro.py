@@ -15,6 +15,8 @@ si Fer reordena o filtra el Excel, sigue encontrando cada fila.
 Cubre los dos bloques del maestro:
 
   - Hojas por idioma que se aprende: vocabulario y expresiones.
+  - Hojas "Repaso XX NN": los seis campos de texto de las semanas especiales
+    A2/B1 (contenido/nucleos/REVIEW-*), con el mismo criterio.
   - Hojas "Prosa XX NN": la prosa bilingue de A2/B1. Ahi el campo pasa de
     string plano al objeto {idioma: texto} que admite el schema, con el texto
     original guardado bajo la clave del idioma que se aprende. Como el
@@ -299,6 +301,38 @@ def _prosa_aparicion(a, ruta_base, idioma, datos, cambios):
     return n
 
 
+def _prosa_semana(d, idioma, datos, cambios):
+    n = 0
+    for clave in ("titulo", "consigna", "promptCorreccion"):
+        if clave in d:
+            n += _aplicar(d, clave, [clave], idioma, datos, cambios)
+    for clave in ("requisitos", "microtareas", "autochequeo"):
+        if isinstance(d.get(clave), list):
+            for i in range(len(d[clave])):
+                n += _aplicar(d[clave], i, [clave, i], idioma, datos, cambios)
+    return n
+
+
+def volcar_repaso(base, por_combo):
+    """Escribe las traducciones en las semanas especiales. Devuelve (archivos, celdas)."""
+    archivos = celdas = 0
+    for p in sorted(base.joinpath("nucleos").glob("*.json")):
+        original = p.read_text(encoding="utf-8")
+        d = json.loads(original)
+        if d.get("_tipo") != "semana_especial":
+            continue
+        datos = por_combo.get((d["idioma"], d.get("nivel")))
+        if not datos:
+            continue
+        cambios = []
+        n = _prosa_semana(d, d["idioma"], datos, cambios)
+        if n:
+            escribir(p, original, d, cambios)
+            archivos += 1
+            celdas += n
+    return archivos, celdas
+
+
 def volcar_prosa(base, por_combo):
     """Escribe la prosa traducida en nucleos y ocurrencias. Devuelve (archivos, celdas)."""
     archivos = celdas = 0
@@ -344,16 +378,18 @@ def main():
 
     por_idioma = {}
     por_combo = {}
+    por_repaso = {}
     for hoja in wb.sheetnames:
         if hoja.upper().startswith("ÍNDICE") or hoja.upper().startswith("INDICE"):
             continue
-        if hoja.startswith("Prosa "):
+        if hoja.startswith("Prosa ") or hoja.startswith("Repaso "):
             partes = hoja.split()
             if len(partes) != 3:
                 print(f"Hoja de prosa con nombre inesperado, se saltea: {hoja}", file=sys.stderr)
                 continue
             idi, niv = partes[1].lower(), partes[2]
-            por_combo[(idi, niv)] = leer_hoja_prosa(wb[hoja], idi)
+            destino = por_repaso if hoja.startswith("Repaso ") else por_combo
+            destino[(idi, niv)] = leer_hoja_prosa(wb[hoja], idi)
             continue
         idi = COD.get(hoja)
         if not idi:
@@ -400,10 +436,13 @@ def main():
             escribir(p, original, d, cambios)
 
     n_archivos, n_celdas = volcar_prosa(base, por_combo)
+    n_sem, n_celdas_sem = volcar_repaso(base, por_repaso)
 
     print(f"{n_red} expresiones y {n_voc} items de vocabulario actualizados en el contenido fuente.",
           file=sys.stderr)
     print(f"Prosa A2/B1: {n_celdas} traducciones escritas en {n_archivos} archivos.",
+          file=sys.stderr)
+    print(f"Semanas de repaso A2/B1: {n_celdas_sem} traducciones escritas en {n_sem} archivos.",
           file=sys.stderr)
     print("Volvé a correr exportar_traduccion_maestro.py: esas celdas ya van a salir verdes.",
           file=sys.stderr)
