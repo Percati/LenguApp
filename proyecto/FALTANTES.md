@@ -91,11 +91,36 @@ todo localmente con Piper); las referencias a él en `CLAUDE.md` (raíz y
 proyecto/), `PROMPT-CLAUDE-CODE.md` y `manifiesto_audio.py` se actualizaron
 para no apuntar a un archivo que ya no existe.
 
-## 6. Traducciones — ✅ cerrado por ahora
+## 6. Traducciones — ✅ cerrado, con una armonización diferida
 
-Verificado de nuevo componiendo las tres capas reales: "522 fichas
-compuestas, 9 semanas especiales, 0 con problemas". El vaivén de parches de
-longitudes (alargar → revertir) no dejó ninguna celda corta.
+No queda contenido pendiente de traducir: prosa A2/B1 (95 núcleos y 192
+apariciones), vocabulario y expresiones, y las 16 semanas de repaso A2/B1
+(4 semanas × DE A2, DE B1, EN A2, EN B1). Verificado componiendo las tres
+capas reales: "522 fichas compuestas, 49 semanas especiales, 0 con
+problemas", con el exportador en cero. El vaivén de parches de longitudes
+(alargar → revertir) no dejó ninguna celda corta.
+
+### 6.1 — Armonizar el trato al lector: tuteo en todo el material (diferido)
+
+El trato al lector quedó disparejo entre lotes. En el lote de prosa alemana
+el español y el italiano usan usted ("Hable", "Si concentri"); en las
+semanas de repaso usan tú ("habla", "parla"). El francés mantiene *vous* en
+los dos y el alemán *Sie*. Cada idioma es coherente dentro de su lote, pero
+no entre lotes, y con el switch de idioma siempre visible la diferencia se
+puede ver comparando la misma consigna en dos idiomas.
+
+**Decisión: unificar en tuteo**, tanto en el idioma que se aprende como en
+las traducciones. Alcanza al contenido ya generado de alemán e inglés.
+
+**Cuándo: al sumar el primer idioma nuevo que se aprende** (español,
+italiano, francés o portugués). Ahí hay que fijar el registro del contenido
+nuevo de todos modos, y conviene hacer los dos pases juntos en vez de tocar
+dos veces contenido ya validado. No es un bloqueante para el piloto.
+
+Alcance del pase, para dimensionarlo cuando llegue el momento: los campos de
+texto de núcleos, apariciones y semanas especiales de A2/B1 en los seis
+idiomas. El contenido B2/C1/C2 es monolingüe y entra solo por el lado del
+idioma que se aprende.
 
 ## 7. Vocabulario atestiguado alemán — B2 resuelto, falta C2
 
