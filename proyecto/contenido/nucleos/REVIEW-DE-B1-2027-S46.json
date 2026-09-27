@@ -5,25 +5,123 @@
  "idioma": "de",
  "nivel": "B1",
  "clase": "review",
- "titulo": "Wiederholungswoche",
+ "titulo": {
+  "de": "Wiederholungswoche",
+  "en": "Review Week",
+  "es": "Semana de repaso",
+  "fr": "Semaine de révision",
+  "it": "Settimana di ripasso",
+  "pt": "Semana de revisão"
+ },
  "minutosEstimados": 40,
- "consigna": "Freitag, gesprochen: Sprechen Sie zwei Minuten darüber, was sich in Ihrem Alltag im nächsten Jahr ändern soll und warum. Vorher notieren erlaubt, ablesen nicht.",
+ "consigna": {
+  "de": "Freitag, gesprochen: Sprechen Sie zwei Minuten darüber, was sich in Ihrem Alltag im nächsten Jahr ändern soll und warum. Vorher notieren erlaubt, ablesen nicht.",
+  "en": "Friday, speaking: talk for two minutes about what should change in your everyday life next year and why. You may make notes first, but do not read them out.",
+  "es": "Viernes, oral: habla durante dos minutos sobre lo que debería cambiar en tu vida cotidiana el próximo año y por qué. Puedes anotar antes, pero no leer.",
+  "fr": "Vendredi, à l'oral : parlez pendant deux minutes de ce qui devrait changer dans votre quotidien l'année prochaine et pourquoi. Vous pouvez prendre des notes avant, mais ne les lisez pas.",
+  "it": "Venerdì, orale: parla per due minuti di ciò che dovrebbe cambiare nella tua vita quotidiana il prossimo anno e perché. Puoi prendere appunti prima, ma non leggere.",
+  "pt": "Sexta-feira, oral: fale durante dois minutos sobre o que deveria mudar no seu dia a dia no próximo ano e por quê. Você pode anotar antes, mas não leia."
+ },
  "requisitos": [
-  "Eine Meinung mit Begründung (Woche 40)",
-  "Zwei Zukunftsformen, Präsens oder Futur I (Woche 42)",
-  "Ein Vergleich mit *als* oder *je … desto* (Woche 44)"
+  {
+   "de": "Eine Meinung mit Begründung (Woche 40)",
+   "en": "An opinion with a justification (week 40)",
+   "es": "Una opinión con justificación (semana 40)",
+   "fr": "Une opinion avec justification (semaine 40)",
+   "it": "Un'opinione con motivazione (settimana 40)",
+   "pt": "Uma opinião com justificativa (semana 40)"
+  },
+  {
+   "de": "Zwei Zukunftsformen, Präsens oder Futur I (Woche 42)",
+   "en": "Two ways of expressing the future: present tense or Futur I (week 42)",
+   "es": "Dos formas de expresar el futuro: presente o Futur I (semana 42)",
+   "fr": "Deux façons d'exprimer le futur : présent ou Futur I (semaine 42)",
+   "it": "Due modi di esprimere il futuro: presente o Futur I (settimana 42)",
+   "pt": "Duas formas de expressar o futuro: presente ou Futur I (semana 42)"
+  },
+  {
+   "de": "Ein Vergleich mit *als* oder *je … desto* (Woche 44)",
+   "en": "One comparison with *als* or *je … desto* (week 44)",
+   "es": "Una comparación con *als* o *je … desto* (semana 44)",
+   "fr": "Une comparaison avec *als* ou *je … desto* (semaine 44)",
+   "it": "Un confronto con *als* o *je … desto* (settimana 44)",
+   "pt": "Uma comparação com *als* ou *je … desto* (semana 44)"
+  }
  ],
  "microtareas": [
-  "*Mo (10 Min.).* Alle Korrekturen des Jahres kurz durchgehen. Welcher Fehler ist von Woche 2 bis Woche 45 geblieben?",
-  "*Mi (5 Min.).* Vier Sätze schreiben, in denen dieser Fehler bewusst vermieden wird.",
-  "*Fr (5 Min.).* Zwei Minuten aufnehmen und anhören: Ist er weg?"
+  {
+   "de": "*Mo (10 Min.).* Alle Korrekturen des Jahres kurz durchgehen. Welcher Fehler ist von Woche 2 bis Woche 45 geblieben?",
+   "en": "*Mon (10 min).* Quickly go through all the corrections from the year. Which mistake has stayed from week 2 to week 45?",
+   "es": "*Lun (10 min).* Revisa rápidamente todas las correcciones del año. ¿Qué error se mantuvo desde la semana 2 hasta la 45?",
+   "fr": "*Lun. (10 min).* Parcourez rapidement toutes les corrections de l'année. Quelle erreur est restée de la semaine 2 à la semaine 45 ?",
+   "it": "*Lun (10 min).* Rivedi rapidamente tutte le correzioni dell'anno. Quale errore è rimasto dalla settimana 2 alla 45?",
+   "pt": "*Seg (10 min).* Revise rapidamente todas as correções do ano. Qual erro permaneceu da semana 2 até a 45?"
+  },
+  {
+   "de": "*Mi (5 Min.).* Vier Sätze schreiben, in denen dieser Fehler bewusst vermieden wird.",
+   "en": "*Wed (5 min).* Write four sentences that deliberately avoid this mistake.",
+   "es": "*Mié (5 min).* Escribe cuatro oraciones evitando conscientemente ese error.",
+   "fr": "*Mer. (5 min).* Écrivez quatre phrases en évitant volontairement cette erreur.",
+   "it": "*Mer (5 min).* Scrivi quattro frasi evitando consapevolmente questo errore.",
+   "pt": "*Qua (5 min).* Escreva quatro frases evitando conscientemente esse erro."
+  },
+  {
+   "de": "*Fr (5 Min.).* Zwei Minuten aufnehmen und anhören: Ist er weg?",
+   "en": "*Fri (5 min).* Record two minutes and listen: is it gone?",
+   "es": "*Vie (5 min).* Graba dos minutos y escucha: ¿desapareció?",
+   "fr": "*Ven. (5 min).* Enregistrez deux minutes et écoutez : l'erreur a-t-elle disparu ?",
+   "it": "*Ven (5 min).* Registra due minuti e ascolta: è sparito?",
+   "pt": "*Sex (5 min).* Grave dois minutos e ouça: ele desapareceu?"
+  }
  ],
  "autochequeo": [
-  "Habe ich begründet, nicht nur behauptet?",
-  "War die Zukunftsform passend gewählt?",
-  "Stimmte der Vergleich: *als* oder *wie*?",
-  "Ist der Fehler des Jahres noch da?",
-  "Habe ich zwei Minuten ohne Stopp gesprochen?"
+  {
+   "de": "Habe ich begründet, nicht nur behauptet?",
+   "en": "Did I justify my opinion instead of just making a claim?",
+   "es": "¿Justifiqué mi opinión en lugar de limitarme a afirmarla?",
+   "fr": "Ai-je justifié mon opinion au lieu de simplement l'affirmer ?",
+   "it": "Ho motivato la mia opinione invece di limitarmi ad affermarla?",
+   "pt": "Eu justifiquei minha opinião em vez de apenas afirmá-la?"
+  },
+  {
+   "de": "War die Zukunftsform passend gewählt?",
+   "en": "Was the future form chosen appropriately?",
+   "es": "¿Elegí de forma adecuada la forma de futuro?",
+   "fr": "La forme du futur a-t-elle été choisie de manière appropriée ?",
+   "it": "La forma del futuro è stata scelta in modo appropriato?",
+   "pt": "A forma de futuro foi escolhida de maneira adequada?"
+  },
+  {
+   "de": "Stimmte der Vergleich: *als* oder *wie*?",
+   "en": "Was the comparison correct: *als* or *wie*?",
+   "es": "¿Fue correcta la comparación: *als* o *wie*?",
+   "fr": "La comparaison était-elle correcte : *als* ou *wie* ?",
+   "it": "Il confronto era corretto: *als* o *wie*?",
+   "pt": "A comparação estava correta: *als* ou *wie*?"
+  },
+  {
+   "de": "Ist der Fehler des Jahres noch da?",
+   "en": "Is the mistake from this year still there?",
+   "es": "¿Sigue apareciendo el error de este año?",
+   "fr": "L'erreur de cette année est-elle toujours là ?",
+   "it": "L'errore di quest'anno c'è ancora?",
+   "pt": "O erro deste ano ainda está presente?"
+  },
+  {
+   "de": "Habe ich zwei Minuten ohne Stopp gesprochen?",
+   "en": "Did I speak for two minutes without stopping?",
+   "es": "¿Hablé durante dos minutos sin parar?",
+   "fr": "Ai-je parlé pendant deux minutes sans m'arrêter ?",
+   "it": "Ho parlato per due minuti senza fermarmi?",
+   "pt": "Eu falei durante dois minutos sem parar?"
+  }
  ],
- "promptCorreccion": "Das ist eine Wiederholung von drei Punkten auf B1-Niveau: Meinung mit Begründung, Zukünftiges ausdrücken, Vergleichssätze. (1) Sag zu jedem, ob er vorkommt und ob er gelungen ist. (2) Nenne den Fehler, der sich über das Jahr gehalten hat. (3) Gib mir einen Satz mit zwei der drei Punkte. Korrigiere nichts anderes. ---"
+ "promptCorreccion": {
+  "de": "Das ist eine Wiederholung von drei Punkten auf B1-Niveau: Meinung mit Begründung, Zukünftiges ausdrücken, Vergleichssätze. (1) Sag zu jedem, ob er vorkommt und ob er gelungen ist. (2) Nenne den Fehler, der sich über das Jahr gehalten hat. (3) Gib mir einen Satz mit zwei der drei Punkte. Korrigiere nichts anderes. ---",
+  "en": "This is a review of three points at B1 level: opinion with justification, expressing the future, and comparison clauses. (1) For each one, tell me whether it appears and whether it works well. (2) Name the mistake that has persisted throughout the year. (3) Give me one sentence with two of the three points. Correct nothing else. ---",
+  "es": "Este es un repaso de tres puntos de nivel B1: opinión con justificación, expresar el futuro y oraciones comparativas. (1) Para cada uno, dime si aparece y si está bien logrado. (2) Indica el error que se mantuvo durante el año. (3) Dame una oración con dos de los tres puntos. No corrijas nada más. ---",
+  "fr": "C'est une révision de trois points de niveau B1 : opinion avec justification, expression du futur et propositions comparatives. (1) Pour chacun, dis-moi s'il apparaît et s'il est bien réussi. (2) Indique l'erreur qui a persisté tout au long de l'année. (3) Donne-moi une phrase avec deux des trois points. Ne corrige rien d'autre. ---",
+  "it": "Questo è un ripasso di tre punti di livello B1: opinione con motivazione, esprimere il futuro e frasi comparative. (1) Per ciascuno, dimmi se compare e se è ben riuscito. (2) Indica l'errore che si è mantenuto durante l'anno. (3) Dammi una frase con due dei tre punti. Non correggere altro. ---",
+  "pt": "Esta é uma revisão de três pontos do nível B1: opinião com justificativa, expressão do futuro e orações comparativas. (1) Para cada um, diga se aparece e se está bem feito. (2) Diga qual erro persistiu ao longo do ano. (3) Dê uma frase com dois dos três pontos. Não corrija mais nada. ---"
+ }
 }

@@ -5,25 +5,123 @@
  "idioma": "en",
  "nivel": "B1",
  "clase": "review",
- "titulo": "Review Week",
+ "titulo": {
+  "en": "Review Week",
+  "de": "Wiederholungswoche",
+  "es": "Semana de repaso",
+  "fr": "Semaine de révision",
+  "it": "Settimana di ripasso",
+  "pt": "Semana de revisão"
+ },
  "minutosEstimados": 40,
- "consigna": "Friday, spoken: talk for two minutes about a decision you have to make soon — the options and what you think. Notes first, then speak freely.",
+ "consigna": {
+  "en": "Friday, spoken: talk for two minutes about a decision you have to make soon — the options and what you think. Notes first, then speak freely.",
+  "de": "Freitag, gesprochen: Sprechen Sie zwei Minuten lang über eine Entscheidung, die Sie bald treffen müssen — die Möglichkeiten und was Sie darüber denken. Zuerst Notizen, dann frei sprechen.",
+  "es": "Viernes, oral: habla durante dos minutos sobre una decisión que tengas que tomar pronto: las opciones y qué opinas. Primero anota ideas y después habla libremente.",
+  "fr": "Vendredi, à l'oral : parlez pendant deux minutes d'une décision que vous devez bientôt prendre : les options et ce que vous en pensez. Prenez d'abord des notes, puis parlez librement.",
+  "it": "Venerdì, orale: parla per due minuti di una decisione che devi prendere presto: le opzioni e cosa ne pensi. Prima prendi appunti, poi parla liberamente.",
+  "pt": "Sexta-feira, oral: fale durante dois minutos sobre uma decisão que você precisa tomar em breve: as opções e o que você pensa. Primeiro faça anotações e depois fale livremente."
+ },
  "requisitos": [
-  "An opinion with a reason (week 21)",
-  "Two future forms, chosen for how planned they are (week 17)",
-  "One deduction with *must be* or *can't be* (week 19)"
+  {
+   "en": "An opinion with a reason (week 21)",
+   "de": "Eine Meinung mit Begründung (Woche 21)",
+   "es": "Una opinión con una razón (semana 21)",
+   "fr": "Une opinion avec une justification (semaine 21)",
+   "it": "Un'opinione con una motivazione (settimana 21)",
+   "pt": "Uma opinião com uma justificativa (semana 21)"
+  },
+  {
+   "en": "Two future forms, chosen for how planned they are (week 17)",
+   "de": "Zwei Zukunftsformen, gewählt danach, wie stark etwas geplant ist (Woche 17)",
+   "es": "Dos formas de futuro, elegidas según el grado de planificación (semana 17)",
+   "fr": "Deux formes du futur, choisies selon le degré de planification (semaine 17)",
+   "it": "Due forme del futuro, scelte in base a quanto è pianificata l'azione (settimana 17)",
+   "pt": "Duas formas de futuro, escolhidas de acordo com o grau de planejamento (semana 17)"
+  },
+  {
+   "en": "One deduction with *must be* or *can't be* (week 19)",
+   "de": "Eine Schlussfolgerung mit *must be* oder *can't be* (Woche 19)",
+   "es": "Una deducción con *must be* o *can't be* (semana 19)",
+   "fr": "Une déduction avec *must be* ou *can't be* (semaine 19)",
+   "it": "Una deduzione con *must be* o *can't be* (settimana 19)",
+   "pt": "Uma dedução com *must be* ou *can't be* (semana 19)"
+  }
  ],
  "microtareas": [
-  "*Mon (10 min).* Go through the corrections from weeks 14 to 21. Which mistake repeats? Write it down with an example.",
-  "*Wed (5 min).* Write four sentences that avoid it.",
-  "*Fri (5 min).* Record two minutes and listen once."
+  {
+   "en": "*Mon (10 min).* Go through the corrections from weeks 14 to 21. Which mistake repeats? Write it down with an example.",
+   "de": "*Mo (10 Min.).* Gehen Sie die Korrekturen aus den Wochen 14 bis 21 durch. Welcher Fehler wiederholt sich? Schreiben Sie ihn mit einem Beispiel auf.",
+   "es": "*Lun (10 min).* Revisa las correcciones de las semanas 14 a 21. ¿Qué error se repite? Anótalo con un ejemplo.",
+   "fr": "*Lun. (10 min).* Passez en revue les corrections des semaines 14 à 21. Quelle erreur se répète ? Notez-la avec un exemple.",
+   "it": "*Lun (10 min).* Rivedi le correzioni delle settimane dalla 14 alla 21. Quale errore si ripete? Annotalo con un esempio.",
+   "pt": "*Seg (10 min).* Revise as correções das semanas 14 a 21. Qual erro se repete? Anote-o com um exemplo."
+  },
+  {
+   "en": "*Wed (5 min).* Write four sentences that avoid it.",
+   "de": "*Mi (5 Min.).* Schreiben Sie vier Sätze, die diesen Fehler vermeiden.",
+   "es": "*Mié (5 min).* Escribe cuatro oraciones que eviten ese error.",
+   "fr": "*Mer. (5 min).* Écrivez quatre phrases qui évitent cette erreur.",
+   "it": "*Mer (5 min).* Scrivi quattro frasi che evitino questo errore.",
+   "pt": "*Qua (5 min).* Escreva quatro frases que evitem esse erro."
+  },
+  {
+   "en": "*Fri (5 min).* Record two minutes and listen once.",
+   "de": "*Fr (5 Min.).* Nehmen Sie zwei Minuten auf und hören Sie einmal zu.",
+   "es": "*Vie (5 min).* Graba dos minutos y escucha una vez.",
+   "fr": "*Ven. (5 min).* Enregistrez deux minutes et écoutez une fois.",
+   "it": "*Ven (5 min).* Registra due minuti e ascolta una volta.",
+   "pt": "*Sex (5 min).* Grave dois minutos e ouça uma vez."
+  }
  ],
  "autochequeo": [
-  "Was my reason more than a repetition of my opinion?",
-  "Did I pick the right future form each time?",
-  "Was the deduction based on evidence?",
-  "Did Monday's mistake happen again?",
-  "Did I keep going for two minutes?"
+  {
+   "en": "Was my reason more than a repetition of my opinion?",
+   "de": "War meine Begründung mehr als eine Wiederholung meiner Meinung?",
+   "es": "¿Fue mi razón algo más que una repetición de mi opinión?",
+   "fr": "Ma justification allait-elle au-delà d'une répétition de mon opinion ?",
+   "it": "La mia motivazione era più di una ripetizione della mia opinione?",
+   "pt": "Minha justificativa foi mais do que uma repetição da minha opinião?"
+  },
+  {
+   "en": "Did I pick the right future form each time?",
+   "de": "Habe ich jedes Mal die passende Zukunftsform gewählt?",
+   "es": "¿Elegí la forma de futuro adecuada cada vez?",
+   "fr": "Ai-je choisi la bonne forme du futur à chaque fois ?",
+   "it": "Ho scelto ogni volta la forma del futuro più adatta?",
+   "pt": "Eu escolhi a forma de futuro adequada em cada caso?"
+  },
+  {
+   "en": "Was the deduction based on evidence?",
+   "de": "War die Schlussfolgerung auf Belegen aufgebaut?",
+   "es": "¿Se basó la deducción en evidencias?",
+   "fr": "La déduction était-elle fondée sur des indices ?",
+   "it": "La deduzione era basata su indizi?",
+   "pt": "A dedução foi baseada em evidências?"
+  },
+  {
+   "en": "Did Monday's mistake happen again?",
+   "de": "Ist der Fehler vom Montag wieder passiert?",
+   "es": "¿Volvió a ocurrir el error del lunes?",
+   "fr": "L'erreur de lundi s'est-elle reproduite ?",
+   "it": "L'errore di lunedì si è ripetuto?",
+   "pt": "O erro de segunda-feira aconteceu de novo?"
+  },
+  {
+   "en": "Did I keep going for two minutes?",
+   "de": "Habe ich zwei Minuten lang durchgehalten?",
+   "es": "¿Logré seguir hablando durante dos minutos?",
+   "fr": "Ai-je réussi à continuer pendant deux minutes ?",
+   "it": "Sono riuscito/a a continuare per due minuti?",
+   "pt": "Eu consegui continuar por dois minutos?"
+  }
  ],
- "promptCorreccion": "This is a review of three skills at B1 level: opinion with a reason, future forms, and modals of deduction. (1) For each, say whether it is present and whether it is done well. (2) Tell me which was weakest. (3) Give me one sentence carrying two of them. Correct nothing else. ---"
+ "promptCorreccion": {
+  "en": "This is a review of three skills at B1 level: opinion with a reason, future forms, and modals of deduction. (1) For each, say whether it is present and whether it is done well. (2) Tell me which was weakest. (3) Give me one sentence carrying two of them. Correct nothing else. ---",
+  "de": "Das ist eine Wiederholung von drei Fertigkeiten auf B1-Niveau: Meinung mit Begründung, Zukunftsformen und modals of deduction. (1) Sagen Sie zu jedem Punkt, ob er vorkommt und ob er gut gelingt. (2) Sagen Sie mir, welcher am schwächsten war. (3) Geben Sie mir einen Satz, der zwei davon enthält. Korrigieren Sie nichts anderes. ---",
+  "es": "Este es un repaso de tres habilidades de nivel B1: opinión con una razón, formas de futuro y modals of deduction. (1) Para cada una, dime si aparece y si está bien lograda. (2) Dime cuál fue la más débil. (3) Dame una oración que combine dos de ellas. No corrijas nada más. ---",
+  "fr": "C'est une révision de trois compétences de niveau B1 : opinion avec justification, formes du futur et modals of deduction. (1) Pour chacune, dis-moi si elle est présente et si elle est bien réalisée. (2) Dis-moi laquelle était la plus faible. (3) Donne-moi une phrase qui en combine deux. Ne corrige rien d'autre. ---",
+  "it": "Questo è un ripasso di tre competenze di livello B1: opinione con motivazione, forme del futuro e modals of deduction. (1) Per ciascuna, dimmi se è presente e se è ben realizzata. (2) Dimmi quale è stata la più debole. (3) Dammi una frase che ne combini due. Non correggere altro. ---",
+  "pt": "Esta é uma revisão de três habilidades do nível B1: opinião com justificativa, formas de futuro e modals of deduction. (1) Para cada uma, diga se aparece e se está bem feita. (2) Diga qual foi a mais fraca. (3) Dê uma frase que combine duas delas. Não corrija mais nada. ---"
+ }
 }

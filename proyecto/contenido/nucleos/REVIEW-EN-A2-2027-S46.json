@@ -5,24 +5,115 @@
  "idioma": "en",
  "nivel": "A2",
  "clase": "review",
- "titulo": "Review Week",
+ "titulo": {
+  "en": "Review Week",
+  "de": "Wiederholungswoche",
+  "es": "Semana de repaso",
+  "fr": "Semaine de révision",
+  "it": "Settimana di ripasso",
+  "pt": "Semana de revisão"
+ },
  "minutosEstimados": 30,
- "consigna": "Friday, spoken: talk for 90 seconds about a day out or a trip — what happened and what you thought about it. Note two or three ideas first, then speak.",
+ "consigna": {
+  "en": "Friday, spoken: talk for 90 seconds about a day out or a trip — what happened and what you thought about it. Note two or three ideas first, then speak.",
+  "de": "Freitag, gesprochen: Sprechen Sie 90 Sekunden lang über einen Ausflug oder eine Reise — was passiert ist und was Sie davon gehalten haben. Notieren Sie zuerst zwei oder drei Ideen und sprechen Sie dann.",
+  "es": "Viernes, oral: habla durante 90 segundos sobre una salida o un viaje: qué pasó y qué te pareció. Anota dos o tres ideas primero y luego habla.",
+  "fr": "Vendredi, à l'oral : parlez pendant 90 secondes d'une sortie ou d'un voyage : ce qui s'est passé et ce que vous en avez pensé. Notez d'abord deux ou trois idées, puis parlez.",
+  "it": "Venerdì, orale: parla per 90 secondi di una gita o di un viaggio: cosa è successo e cosa ne hai pensato. Prima annota due o tre idee, poi parla.",
+  "pt": "Sexta-feira, oral: fale durante 90 segundos sobre um passeio ou uma viagem: o que aconteceu e o que você achou. Primeiro anote duas ou três ideias e depois fale."
+ },
  "requisitos": [
-  "A story with *first* and *then* in the past (week 40)",
-  "Two sentences with *have to* or *can* (week 39)",
-  "One opinion with a reason (week 44)"
+  {
+   "en": "A story with *first* and *then* in the past (week 40)",
+   "de": "Eine Geschichte in der Vergangenheit mit *first* und *then* (Woche 40)",
+   "es": "Una historia en pasado con *first* y *then* (semana 40)",
+   "fr": "Une histoire au passé avec *first* et *then* (semaine 40)",
+   "it": "Una storia al passato con *first* e *then* (settimana 40)",
+   "pt": "Uma história no passado com *first* e *then* (semana 40)"
+  },
+  {
+   "en": "Two sentences with *have to* or *can* (week 39)",
+   "de": "Zwei Sätze mit *have to* oder *can* (Woche 39)",
+   "es": "Dos oraciones con *have to* o *can* (semana 39)",
+   "fr": "Deux phrases avec *have to* ou *can* (semaine 39)",
+   "it": "Due frasi con *have to* o *can* (settimana 39)",
+   "pt": "Duas frases com *have to* ou *can* (semana 39)"
+  },
+  {
+   "en": "One opinion with a reason (week 44)",
+   "de": "Eine Meinung mit Begründung (Woche 44)",
+   "es": "Una opinión con una razón (semana 44)",
+   "fr": "Une opinion avec une justification (semaine 44)",
+   "it": "Un'opinione con una motivazione (settimana 44)",
+   "pt": "Uma opinião com uma justificativa (semana 44)"
+  }
  ],
  "microtareas": [
-  "*Mon (10 min).* Look through all your corrections from weeks 38 to 45. Which mistake stayed all year? Write it down.",
-  "*Wed (5 min).* Write three sentences about that mistake — this time correct.",
-  "*Fri (5 min).* Record 90 seconds. Then listen: is the mistake gone?"
+  {
+   "en": "*Mon (10 min).* Look through all your corrections from weeks 38 to 45. Which mistake stayed all year? Write it down.",
+   "de": "*Mo (10 Min.).* Sehen Sie alle Ihre Korrekturen aus den Wochen 38 bis 45 durch. Welcher Fehler ist das ganze Jahr geblieben? Schreiben Sie ihn auf.",
+   "es": "*Lun (10 min).* Revisa todas tus correcciones de las semanas 38 a 45. ¿Qué error se mantuvo durante todo el año? Anótalo.",
+   "fr": "*Lun. (10 min).* Parcourez toutes vos corrections des semaines 38 à 45. Quelle erreur est restée toute l'année ? Notez-la.",
+   "it": "*Lun (10 min).* Rivedi tutte le correzioni delle settimane dalla 38 alla 45. Quale errore è rimasto per tutto l'anno? Annotalo.",
+   "pt": "*Seg (10 min).* Revise todas as suas correções das semanas 38 a 45. Qual erro continuou ao longo do ano? Anote-o."
+  },
+  {
+   "en": "*Wed (5 min).* Write three sentences about that mistake — this time correct.",
+   "de": "*Mi (5 Min.).* Schreiben Sie drei Sätze zu diesem Fehler — diesmal richtig.",
+   "es": "*Mié (5 min).* Escribe tres oraciones sobre ese error, esta vez correctamente.",
+   "fr": "*Mer. (5 min).* Écrivez trois phrases sur cette erreur — correctement cette fois.",
+   "it": "*Mer (5 min).* Scrivi tre frasi su questo errore, questa volta correttamente.",
+   "pt": "*Qua (5 min).* Escreva três frases sobre esse erro — desta vez corretamente."
+  },
+  {
+   "en": "*Fri (5 min).* Record 90 seconds. Then listen: is the mistake gone?",
+   "de": "*Fr (5 Min.).* Nehmen Sie 90 Sekunden auf. Hören Sie danach zu: Ist der Fehler weg?",
+   "es": "*Vie (5 min).* Graba 90 segundos. Después escucha: ¿desapareció el error?",
+   "fr": "*Ven. (5 min).* Enregistrez 90 secondes. Puis écoutez : l'erreur a-t-elle disparu ?",
+   "it": "*Ven (5 min).* Registra 90 secondi. Poi ascolta: l'errore è sparito?",
+   "pt": "*Sex (5 min).* Grave 90 segundos. Depois ouça: o erro desapareceu?"
+  }
  ],
  "autochequeo": [
-  "Did the story have a clear order?",
-  "Were *have to* and *can* used correctly?",
-  "Did I give a reason for my opinion?",
-  "Is Monday's mistake still there?"
+  {
+   "en": "Did the story have a clear order?",
+   "de": "Hatte die Geschichte eine klare Reihenfolge?",
+   "es": "¿Tenía la historia un orden claro?",
+   "fr": "L'histoire avait-elle un ordre clair ?",
+   "it": "La storia aveva una sequenza chiara?",
+   "pt": "A história tinha uma sequência clara?"
+  },
+  {
+   "en": "Were *have to* and *can* used correctly?",
+   "de": "Wurden *have to* und *can* richtig verwendet?",
+   "es": "¿Se usaron correctamente *have to* y *can*?",
+   "fr": "*have to* et *can* ont-ils été utilisés correctement ?",
+   "it": "*have to* e *can* sono stati usati correttamente?",
+   "pt": "*have to* e *can* foram usados corretamente?"
+  },
+  {
+   "en": "Did I give a reason for my opinion?",
+   "de": "Habe ich meine Meinung begründet?",
+   "es": "¿Di una razón para mi opinión?",
+   "fr": "Ai-je justifié mon opinion ?",
+   "it": "Ho motivato la mia opinione?",
+   "pt": "Eu justifiquei minha opinião?"
+  },
+  {
+   "en": "Is Monday's mistake still there?",
+   "de": "Ist der Fehler vom Montag noch da?",
+   "es": "¿Sigue apareciendo el error del lunes?",
+   "fr": "L'erreur de lundi est-elle toujours là ?",
+   "it": "L'errore di lunedì c'è ancora?",
+   "pt": "O erro de segunda-feira ainda está lá?"
+  }
  ],
- "promptCorreccion": "This is a review of three things at A2 level: telling a simple story, modals of obligation and ability, and opinion with a reason. (1) For each one, say if it is there and if it is correct. (2) Tell me the mistake that is still there. (3) Give me one sentence with all three. Correct nothing else. ---"
+ "promptCorreccion": {
+  "en": "This is a review of three things at A2 level: telling a simple story, modals of obligation and ability, and opinion with a reason. (1) For each one, say if it is there and if it is correct. (2) Tell me the mistake that is still there. (3) Give me one sentence with all three. Correct nothing else. ---",
+  "de": "Das ist eine Wiederholung von drei Dingen auf A2-Niveau: eine einfache Geschichte erzählen, Modalverben für Pflicht und Fähigkeit und Meinung mit Begründung. (1) Sagen Sie zu jedem Punkt, ob er vorkommt und ob er richtig ist. (2) Nennen Sie mir den Fehler, der noch da ist. (3) Geben Sie mir einen Satz mit allen drei Punkten. Korrigieren Sie nichts anderes. ---",
+  "es": "Este es un repaso de tres cosas de nivel A2: contar una historia sencilla, modales de obligación y capacidad, y opinión con una razón. (1) Para cada una, dime si aparece y si está bien. (2) Dime cuál es el error que sigue apareciendo. (3) Dame una oración con las tres. No corrijas nada más. ---",
+  "fr": "C'est une révision de trois points de niveau A2 : raconter une histoire simple, les modaux d'obligation et de capacité, et l'opinion avec justification. (1) Pour chacun, dis-moi s'il apparaît et s'il est correct. (2) Indique-moi l'erreur qui est toujours là. (3) Donne-moi une phrase avec les trois. Ne corrige rien d'autre. ---",
+  "it": "Questo è un ripasso di tre aspetti di livello A2: raccontare una storia semplice, modali di obbligo e capacità, e opinione con motivazione. (1) Per ciascuno, dimmi se compare e se è corretto. (2) Dimmi qual è l'errore che è ancora presente. (3) Dammi una frase con tutti e tre. Non correggere altro. ---",
+  "pt": "Esta é uma revisão de três pontos do nível A2: contar uma história simples, modais de obrigação e capacidade e opinião com justificativa. (1) Para cada um, diga se aparece e se está correto. (2) Diga qual é o erro que ainda aparece. (3) Dê uma frase com os três. Não corrija mais nada. ---"
+ }
 }

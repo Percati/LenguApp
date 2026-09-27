@@ -5,24 +5,115 @@
  "idioma": "de",
  "nivel": "A2",
  "clase": "review",
- "titulo": "Wiederholungswoche",
+ "titulo": {
+  "de": "Wiederholungswoche",
+  "en": "Review Week",
+  "es": "Semana de repaso",
+  "fr": "Semaine de révision",
+  "it": "Settimana di ripasso",
+  "pt": "Semana de revisão"
+ },
  "minutosEstimados": 30,
- "consigna": "Freitag, gesprochen: Erzählen Sie 90 Sekunden lang von einem Kurs, einer App oder einem Gerät, das Sie zuletzt ausprobiert haben — und was Sie davon halten. Vorher zwei oder drei Ideen notieren, nicht ablesen.",
+ "consigna": {
+  "de": "Freitag, gesprochen: Erzählen Sie 90 Sekunden lang von einem Kurs, einer App oder einem Gerät, das Sie zuletzt ausprobiert haben — und was Sie davon halten. Vorher zwei oder drei Ideen notieren, nicht ablesen.",
+  "en": "Friday, speaking: talk for 90 seconds about a course, an app or a device you tried recently — and what you think of it. Write down two or three ideas first, but do not read them.",
+  "es": "Viernes, oral: habla durante 90 segundos sobre un curso, una app o un dispositivo que hayas probado recientemente y qué te pareció. Antes anota dos o tres ideas, pero no leas.",
+  "fr": "Vendredi, à l'oral : parlez pendant 90 secondes d'un cours, d'une appli ou d'un appareil que vous avez essayé récemment, et dites ce que vous en pensez. Notez d'abord deux ou trois idées, sans les lire.",
+  "it": "Venerdì, orale: parla per 90 secondi di un corso, un'app o un dispositivo che hai provato di recente e di cosa ne pensi. Prima annota due o tre idee, ma non leggere.",
+  "pt": "Sexta-feira, oral: fale durante 90 segundos sobre um curso, um aplicativo ou um aparelho que você experimentou recentemente e diga o que achou. Antes, anote duas ou três ideias, mas não leia."
+ },
  "requisitos": [
-  "Eine Meinung mit Grund (Woche 17)",
-  "Zwei Sätze im Perfekt (Woche 20)",
-  "Ein Modalverb: *kann*, *muss* oder *möchte* (Woche 14)"
+  {
+   "de": "Eine Meinung mit Grund (Woche 17)",
+   "en": "One opinion with a reason (week 17)",
+   "es": "Una opinión con una razón (semana 17)",
+   "fr": "Une opinion avec une justification (semaine 17)",
+   "it": "Un'opinione con una motivazione (settimana 17)",
+   "pt": "Uma opinião com uma justificativa (semana 17)"
+  },
+  {
+   "de": "Zwei Sätze im Perfekt (Woche 20)",
+   "en": "Two sentences in the Perfekt tense (week 20)",
+   "es": "Dos oraciones en Perfekt (semana 20)",
+   "fr": "Deux phrases au Perfekt (semaine 20)",
+   "it": "Due frasi al Perfekt (settimana 20)",
+   "pt": "Duas frases no Perfekt (semana 20)"
+  },
+  {
+   "de": "Ein Modalverb: *kann*, *muss* oder *möchte* (Woche 14)",
+   "en": "One modal verb: *kann*, *muss* or *möchte* (week 14)",
+   "es": "Un verbo modal: *kann*, *muss* o *möchte* (semana 14)",
+   "fr": "Un verbe modal : *kann*, *muss* ou *möchte* (semaine 14)",
+   "it": "Un verbo modale: *kann*, *muss* o *möchte* (settimana 14)",
+   "pt": "Um verbo modal: *kann*, *muss* ou *möchte* (semana 14)"
+  }
  ],
  "microtareas": [
-  "*Mo (10 Min.).* Schauen Sie Ihre Korrekturen aus den Wochen 14 bis 21 an und schreiben Sie den Fehler auf, der am häufigsten markiert wurde.",
-  "*Mi (5 Min.).* Schreiben Sie zu diesem Fehler drei richtige Sätze. Mehr nicht.",
-  "*Fr (5 Min.).* 90 Sekunden aufnehmen. Danach anhören und den Fehler suchen."
+  {
+   "de": "*Mo (10 Min.).* Schauen Sie Ihre Korrekturen aus den Wochen 14 bis 21 an und schreiben Sie den Fehler auf, der am häufigsten markiert wurde.",
+   "en": "*Mon (10 min).* Look at your corrections from weeks 14 to 21 and write down the mistake that was marked most often.",
+   "es": "*Lun (10 min).* Revisa tus correcciones de las semanas 14 a 21 y anota el error que fue marcado con más frecuencia.",
+   "fr": "*Lun. (10 min).* Regardez vos corrections des semaines 14 à 21 et notez l'erreur qui a été signalée le plus souvent.",
+   "it": "*Lun (10 min).* Guarda le correzioni delle settimane dalla 14 alla 21 e annota l'errore segnalato più spesso.",
+   "pt": "*Seg (10 min).* Veja suas correções das semanas 14 a 21 e anote o erro que foi marcado com mais frequência."
+  },
+  {
+   "de": "*Mi (5 Min.).* Schreiben Sie zu diesem Fehler drei richtige Sätze. Mehr nicht.",
+   "en": "*Wed (5 min).* Write three correct sentences about this mistake. Nothing more.",
+   "es": "*Mié (5 min).* Escribe tres oraciones correctas sobre este error. Nada más.",
+   "fr": "*Mer. (5 min).* Écrivez trois phrases correctes sur cette erreur. Rien de plus.",
+   "it": "*Mer (5 min).* Scrivi tre frasi corrette su questo errore. Nient'altro.",
+   "pt": "*Qua (5 min).* Escreva três frases corretas sobre esse erro. Nada mais."
+  },
+  {
+   "de": "*Fr (5 Min.).* 90 Sekunden aufnehmen. Danach anhören und den Fehler suchen.",
+   "en": "*Fri (5 min).* Record 90 seconds. Then listen and look for the mistake.",
+   "es": "*Vie (5 min).* Graba 90 segundos. Después escucha y busca el error.",
+   "fr": "*Ven. (5 min).* Enregistrez 90 secondes. Puis écoutez et cherchez l'erreur.",
+   "it": "*Ven (5 min).* Registra 90 secondi. Poi ascolta e cerca l'errore.",
+   "pt": "*Sex (5 min).* Grave 90 segundos. Depois ouça e procure o erro."
+  }
  ],
  "autochequeo": [
-  "Habe ich meine Meinung begründet oder nur gesagt?",
-  "Waren die Perfekt-Formen richtig?",
-  "Stand das Modalverb an Position 2 und das andere Verb am Ende?",
-  "Ist der Fehler von Montag wieder passiert?"
+  {
+   "de": "Habe ich meine Meinung begründet oder nur gesagt?",
+   "en": "Did I explain my opinion, or did I only state it?",
+   "es": "¿Justifiqué mi opinión o solo la expresé?",
+   "fr": "Ai-je justifié mon opinion ou l'ai-je seulement exprimée ?",
+   "it": "Ho motivato la mia opinione o l'ho solo espressa?",
+   "pt": "Eu justifiquei minha opinião ou apenas a expressei?"
+  },
+  {
+   "de": "Waren die Perfekt-Formen richtig?",
+   "en": "Were the Perfekt forms correct?",
+   "es": "¿Eran correctas las formas del Perfekt?",
+   "fr": "Les formes du Perfekt étaient-elles correctes ?",
+   "it": "Le forme del Perfekt erano corrette?",
+   "pt": "As formas do Perfekt estavam corretas?"
+  },
+  {
+   "de": "Stand das Modalverb an Position 2 und das andere Verb am Ende?",
+   "en": "Was the modal verb in position 2 and the other verb at the end?",
+   "es": "¿Estaba el verbo modal en la posición 2 y el otro verbo al final?",
+   "fr": "Le verbe modal était-il en deuxième position et l'autre verbe à la fin ?",
+   "it": "Il verbo modale era in seconda posizione e l'altro verbo alla fine?",
+   "pt": "O verbo modal estava na posição 2 e o outro verbo no final?"
+  },
+  {
+   "de": "Ist der Fehler von Montag wieder passiert?",
+   "en": "Did Monday's mistake happen again?",
+   "es": "¿Volvió a ocurrir el error del lunes?",
+   "fr": "L'erreur de lundi s'est-elle reproduite ?",
+   "it": "L'errore di lunedì si è ripetuto?",
+   "pt": "O erro de segunda-feira aconteceu de novo?"
+  }
  ],
- "promptCorreccion": "Das ist eine Wiederholung von drei Dingen auf A2-Niveau: Meinung mit Grund, Perfekt, Modalverben. (1) Sag zu jedem, ob es vorkommt und ob es richtig ist. (2) Nenne mir den häufigsten Fehler. (3) Gib mir einen Satz, der alle drei Punkte trägt. Korrigiere nichts anderes. ---"
+ "promptCorreccion": {
+  "de": "Das ist eine Wiederholung von drei Dingen auf A2-Niveau: Meinung mit Grund, Perfekt, Modalverben. (1) Sag zu jedem, ob es vorkommt und ob es richtig ist. (2) Nenne mir den häufigsten Fehler. (3) Gib mir einen Satz, der alle drei Punkte trägt. Korrigiere nichts anderes. ---",
+  "en": "This is a review of three things at A2 level: opinion with a reason, Perfekt, and modal verbs. (1) For each one, tell me whether it appears and whether it is correct. (2) Name the most frequent mistake. (3) Give me one sentence that carries all three points. Correct nothing else. ---",
+  "es": "Este es un repaso de tres cosas de nivel A2: opinión con una razón, Perfekt y verbos modales. (1) Para cada una, dime si aparece y si está bien. (2) Dime cuál es el error más frecuente. (3) Dame una oración que incluya los tres puntos. No corrijas nada más. ---",
+  "fr": "C'est une révision de trois points de niveau A2 : opinion avec justification, Perfekt et verbes modaux. (1) Pour chacun, dis-moi s'il apparaît et s'il est correct. (2) Indique-moi l'erreur la plus fréquente. (3) Donne-moi une phrase qui réunit les trois points. Ne corrige rien d'autre. ---",
+  "it": "Questo è un ripasso di tre aspetti di livello A2: opinione con motivazione, Perfekt e verbi modali. (1) Per ciascuno, dimmi se compare e se è corretto. (2) Indicami l'errore più frequente. (3) Dammi una frase che contenga tutti e tre i punti. Non correggere altro. ---",
+  "pt": "Esta é uma revisão de três pontos do nível A2: opinião com justificativa, Perfekt e verbos modais. (1) Para cada um, diga se aparece e se está correto. (2) Diga qual é o erro mais frequente. (3) Dê uma frase que reúna os três pontos. Não corrija mais nada. ---"
+ }
 }

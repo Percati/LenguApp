@@ -5,25 +5,123 @@
  "idioma": "de",
  "nivel": "B1",
  "clase": "review",
- "titulo": "Wiederholungswoche",
+ "titulo": {
+  "de": "Wiederholungswoche",
+  "en": "Review Week",
+  "es": "Semana de repaso",
+  "fr": "Semaine de révision",
+  "it": "Settimana di ripasso",
+  "pt": "Semana de revisão"
+ },
  "minutosEstimados": 40,
- "consigna": "Freitag, gesprochen: Sprechen Sie zwei Minuten über eine Entscheidung bei der Arbeit, mit der Sie nicht einverstanden waren. Vorher notieren, dann frei sprechen.",
+ "consigna": {
+  "de": "Freitag, gesprochen: Sprechen Sie zwei Minuten über eine Entscheidung bei der Arbeit, mit der Sie nicht einverstanden waren. Vorher notieren, dann frei sprechen.",
+  "en": "Friday, speaking: talk for two minutes about a decision at work that you disagreed with. Make notes first, then speak freely.",
+  "es": "Viernes, oral: habla durante dos minutos sobre una decisión en el trabajo con la que no estabas de acuerdo. Primero anota algunas ideas y luego habla libremente.",
+  "fr": "Vendredi, à l'oral : parlez pendant deux minutes d'une décision au travail avec laquelle vous n'étiez pas d'accord. Prenez d'abord quelques notes, puis parlez librement.",
+  "it": "Venerdì, orale: parla per due minuti di una decisione sul lavoro con cui non eri d'accordo. Prima prendi qualche appunto, poi parla liberamente.",
+  "pt": "Sexta-feira, oral: fale durante dois minutos sobre uma decisão no trabalho com a qual você não concordou. Primeiro anote algumas ideias e depois fale livremente."
+ },
  "requisitos": [
-  "Eine Meinung mit Begründung (Woche 14)",
-  "Einmal höflich widersprechen (Woche 15)",
-  "Zwei Konnektoren aus verschiedenen Gruppen (Woche 16)"
+  {
+   "de": "Eine Meinung mit Begründung (Woche 14)",
+   "en": "An opinion with a justification (week 14)",
+   "es": "Una opinión con justificación (semana 14)",
+   "fr": "Une opinion avec justification (semaine 14)",
+   "it": "Un'opinione con motivazione (settimana 14)",
+   "pt": "Uma opinião com justificativa (semana 14)"
+  },
+  {
+   "de": "Einmal höflich widersprechen (Woche 15)",
+   "en": "Disagree politely once (week 15)",
+   "es": "Expresar desacuerdo de forma cortés una vez (semana 15)",
+   "fr": "Exprimer poliment son désaccord une fois (semaine 15)",
+   "it": "Esprimere una volta il proprio disaccordo in modo cortese (settimana 15)",
+   "pt": "Discordar de forma educada uma vez (semana 15)"
+  },
+  {
+   "de": "Zwei Konnektoren aus verschiedenen Gruppen (Woche 16)",
+   "en": "Two connectors from different groups (week 16)",
+   "es": "Dos conectores de grupos diferentes (semana 16)",
+   "fr": "Deux connecteurs de groupes différents (semaine 16)",
+   "it": "Due connettivi di gruppi diversi (settimana 16)",
+   "pt": "Dois conectores de grupos diferentes (semana 16)"
+  }
  ],
  "microtareas": [
-  "*Mo (10 Min.).* Korrekturen der Wochen 14 bis 21 durchsehen. Welcher Fehler wiederholt sich? Aufschreiben, mit einem Beispiel.",
-  "*Mi (5 Min.).* Vier Sätze schreiben, die diesen Fehler umgehen.",
-  "*Fr (5 Min.).* Zwei Minuten aufnehmen und einmal anhören."
+  {
+   "de": "*Mo (10 Min.).* Korrekturen der Wochen 14 bis 21 durchsehen. Welcher Fehler wiederholt sich? Aufschreiben, mit einem Beispiel.",
+   "en": "*Mon (10 min).* Review the corrections from weeks 14 to 21. Which mistake keeps repeating? Write it down with an example.",
+   "es": "*Lun (10 min).* Revisa las correcciones de las semanas 14 a 21. ¿Qué error se repite? Anótalo con un ejemplo.",
+   "fr": "*Lun. (10 min).* Passez en revue les corrections des semaines 14 à 21. Quelle erreur se répète ? Notez-la avec un exemple.",
+   "it": "*Lun (10 min).* Rivedi le correzioni delle settimane dalla 14 alla 21. Quale errore si ripete? Annotalo con un esempio.",
+   "pt": "*Seg (10 min).* Revise as correções das semanas 14 a 21. Qual erro se repete? Anote-o com um exemplo."
+  },
+  {
+   "de": "*Mi (5 Min.).* Vier Sätze schreiben, die diesen Fehler umgehen.",
+   "en": "*Wed (5 min).* Write four sentences that avoid this mistake.",
+   "es": "*Mié (5 min).* Escribe cuatro oraciones que eviten ese error.",
+   "fr": "*Mer. (5 min).* Écrivez quatre phrases qui évitent cette erreur.",
+   "it": "*Mer (5 min).* Scrivi quattro frasi che evitino questo errore.",
+   "pt": "*Qua (5 min).* Escreva quatro frases que evitem esse erro."
+  },
+  {
+   "de": "*Fr (5 Min.).* Zwei Minuten aufnehmen und einmal anhören.",
+   "en": "*Fri (5 min).* Record two minutes and listen once.",
+   "es": "*Vie (5 min).* Graba dos minutos y escucha una vez.",
+   "fr": "*Ven. (5 min).* Enregistrez deux minutes et écoutez une fois.",
+   "it": "*Ven (5 min).* Registra due minuti e ascolta una volta.",
+   "pt": "*Sex (5 min).* Grave dois minutos e ouça uma vez."
+  }
  ],
  "autochequeo": [
-  "War meine Begründung mehr als eine Wiederholung der Meinung?",
-  "Habe ich widersprochen, ohne die Person anzugreifen?",
-  "Stand das Verb nach den Konnektoren richtig?",
-  "Ist der Fehler von Montag wieder passiert?",
-  "Habe ich zwei Minuten durchgehalten?"
+  {
+   "de": "War meine Begründung mehr als eine Wiederholung der Meinung?",
+   "en": "Was my justification more than a repetition of my opinion?",
+   "es": "¿Fue mi justificación algo más que repetir mi opinión?",
+   "fr": "Ma justification allait-elle au-delà d'une simple répétition de mon opinion ?",
+   "it": "La mia motivazione era più di una semplice ripetizione della mia opinione?",
+   "pt": "Minha justificativa foi mais do que uma repetição da minha opinião?"
+  },
+  {
+   "de": "Habe ich widersprochen, ohne die Person anzugreifen?",
+   "en": "Did I disagree without attacking the other person?",
+   "es": "¿Expresé mi desacuerdo sin atacar a la otra persona?",
+   "fr": "Ai-je exprimé mon désaccord sans attaquer l'autre personne ?",
+   "it": "Ho espresso il mio disaccordo senza attaccare l'altra persona?",
+   "pt": "Eu discordei sem atacar a outra pessoa?"
+  },
+  {
+   "de": "Stand das Verb nach den Konnektoren richtig?",
+   "en": "Was the verb in the correct position after the connectors?",
+   "es": "¿Estaba el verbo en la posición correcta después de los conectores?",
+   "fr": "Le verbe était-il à la bonne place après les connecteurs ?",
+   "it": "Il verbo era nella posizione corretta dopo i connettivi?",
+   "pt": "O verbo estava na posição correta depois dos conectores?"
+  },
+  {
+   "de": "Ist der Fehler von Montag wieder passiert?",
+   "en": "Did Monday's mistake happen again?",
+   "es": "¿Volvió a ocurrir el error del lunes?",
+   "fr": "L'erreur de lundi s'est-elle reproduite ?",
+   "it": "L'errore di lunedì si è ripetuto?",
+   "pt": "O erro de segunda-feira aconteceu de novo?"
+  },
+  {
+   "de": "Habe ich zwei Minuten durchgehalten?",
+   "en": "Did I manage to keep speaking for two minutes?",
+   "es": "¿Logré hablar durante dos minutos completos?",
+   "fr": "Ai-je réussi à parler pendant deux minutes ?",
+   "it": "Sono riuscito/a a parlare per due minuti?",
+   "pt": "Eu consegui falar durante dois minutos?"
+  }
  ],
- "promptCorreccion": "Das ist eine Wiederholung von drei Punkten auf B1-Niveau: Meinung mit Begründung, höflich widersprechen, Konnektoren und Verbstellung. (1) Sag zu jedem, ob er vorkommt und ob er gelungen ist. (2) Sag mir, welcher am schwächsten war. (3) Gib mir einen Satz, der zwei davon trägt. Korrigiere nichts anderes. ---"
+ "promptCorreccion": {
+  "de": "Das ist eine Wiederholung von drei Punkten auf B1-Niveau: Meinung mit Begründung, höflich widersprechen, Konnektoren und Verbstellung. (1) Sag zu jedem, ob er vorkommt und ob er gelungen ist. (2) Sag mir, welcher am schwächsten war. (3) Gib mir einen Satz, der zwei davon trägt. Korrigiere nichts anderes. ---",
+  "en": "This is a review of three points at B1 level: opinion with justification, disagreeing politely, and connectors with verb placement. (1) For each one, tell me whether it appears and whether it works well. (2) Tell me which one was weakest. (3) Give me one sentence that combines two of them. Correct nothing else. ---",
+  "es": "Este es un repaso de tres puntos de nivel B1: opinión con justificación, expresar desacuerdo de forma cortés y conectores con posición del verbo. (1) Para cada uno, dime si aparece y si está bien logrado. (2) Dime cuál fue el más débil. (3) Dame una oración que combine dos de ellos. No corrijas nada más. ---",
+  "fr": "C'est une révision de trois points de niveau B1 : opinion avec justification, désaccord poli, et connecteurs avec placement du verbe. (1) Pour chacun, dis-moi s'il apparaît et s'il est bien réussi. (2) Dis-moi lequel était le plus faible. (3) Donne-moi une phrase qui en combine deux. Ne corrige rien d'autre. ---",
+  "it": "Questo è un ripasso di tre punti di livello B1: opinione con motivazione, disaccordo espresso in modo cortese e connettivi con posizione del verbo. (1) Per ciascuno, dimmi se compare e se è ben riuscito. (2) Dimmi quale è stato il più debole. (3) Dammi una frase che ne combini due. Non correggere altro. ---",
+  "pt": "Esta é uma revisão de três pontos do nível B1: opinião com justificativa, discordância educada e conectores com posição do verbo. (1) Para cada um, diga se aparece e se está bem feito. (2) Diga qual foi o mais fraco. (3) Dê uma frase que combine dois deles. Não corrija mais nada. ---"
+ }
 }

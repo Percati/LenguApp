@@ -5,24 +5,115 @@
  "idioma": "en",
  "nivel": "A2",
  "clase": "review",
- "titulo": "Review Week",
+ "titulo": {
+  "en": "Review Week",
+  "de": "Wiederholungswoche",
+  "es": "Semana de repaso",
+  "fr": "Semaine de révision",
+  "it": "Settimana di ripasso",
+  "pt": "Semana de revisão"
+ },
  "minutosEstimados": 30,
- "consigna": "Friday, spoken: talk for 90 seconds about a problem you had and how you solved it — at home, at work or on a trip. You may write two or three ideas first, but do not read a text.",
+ "consigna": {
+  "en": "Friday, spoken: talk for 90 seconds about a problem you had and how you solved it — at home, at work or on a trip. You may write two or three ideas first, but do not read a text.",
+  "de": "Freitag, gesprochen: Sprechen Sie 90 Sekunden lang über ein Problem, das Sie hatten, und wie Sie es gelöst haben — zu Hause, bei der Arbeit oder auf einer Reise. Sie dürfen zuerst zwei oder drei Ideen aufschreiben, aber keinen Text ablesen.",
+  "es": "Viernes, oral: habla durante 90 segundos sobre un problema que tuviste y cómo lo resolviste, en casa, en el trabajo o durante un viaje. Puedes escribir dos o tres ideas antes, pero no leer un texto.",
+  "fr": "Vendredi, à l'oral : parlez pendant 90 secondes d'un problème que vous avez eu et de la manière dont vous l'avez résolu, à la maison, au travail ou en voyage. Vous pouvez noter deux ou trois idées avant, mais ne lisez pas de texte.",
+  "it": "Venerdì, orale: parla per 90 secondi di un problema che hai avuto e di come lo hai risolto, a casa, al lavoro o durante un viaggio. Puoi scrivere due o tre idee prima, ma non leggere un testo.",
+  "pt": "Sexta-feira, oral: fale durante 90 segundos sobre um problema que você teve e como resolveu, em casa, no trabalho ou durante uma viagem. Você pode anotar duas ou três ideias antes, mas não leia um texto."
+ },
  "requisitos": [
-  "Ask for help in two different ways (week 26)",
-  "One opinion with a reason (week 27)",
-  "Two past simple sentences (week 33)"
+  {
+   "en": "Ask for help in two different ways (week 26)",
+   "de": "Auf zwei verschiedene Arten um Hilfe bitten (Woche 26)",
+   "es": "Pedir ayuda de dos maneras diferentes (semana 26)",
+   "fr": "Demander de l'aide de deux façons différentes (semaine 26)",
+   "it": "Chiedere aiuto in due modi diversi (settimana 26)",
+   "pt": "Pedir ajuda de duas maneiras diferentes (semana 26)"
+  },
+  {
+   "en": "One opinion with a reason (week 27)",
+   "de": "Eine Meinung mit Begründung (Woche 27)",
+   "es": "Una opinión con una razón (semana 27)",
+   "fr": "Une opinion avec une justification (semaine 27)",
+   "it": "Un'opinione con una motivazione (settimana 27)",
+   "pt": "Uma opinião com uma justificativa (semana 27)"
+  },
+  {
+   "en": "Two past simple sentences (week 33)",
+   "de": "Zwei Sätze im past simple (Woche 33)",
+   "es": "Dos oraciones en past simple (semana 33)",
+   "fr": "Deux phrases au past simple (semaine 33)",
+   "it": "Due frasi al past simple (settimana 33)",
+   "pt": "Duas frases no past simple (semana 33)"
+  }
  ],
  "microtareas": [
-  "*Mon (10 min).* Read your corrections from weeks 26 to 33. Which mistake keeps coming back? Write it down.",
-  "*Wed (5 min).* Write three sentences without that mistake.",
-  "*Fri (5 min).* Record 90 seconds and listen to it once."
+  {
+   "en": "*Mon (10 min).* Read your corrections from weeks 26 to 33. Which mistake keeps coming back? Write it down.",
+   "de": "*Mo (10 Min.).* Lesen Sie Ihre Korrekturen aus den Wochen 26 bis 33. Welcher Fehler kommt immer wieder? Schreiben Sie ihn auf.",
+   "es": "*Lun (10 min).* Lee tus correcciones de las semanas 26 a 33. ¿Qué error sigue apareciendo? Anótalo.",
+   "fr": "*Lun. (10 min).* Lisez vos corrections des semaines 26 à 33. Quelle erreur revient sans cesse ? Notez-la.",
+   "it": "*Lun (10 min).* Leggi le correzioni delle settimane dalla 26 alla 33. Quale errore continua a ricomparire? Annotalo.",
+   "pt": "*Seg (10 min).* Leia suas correções das semanas 26 a 33. Qual erro continua aparecendo? Anote-o."
+  },
+  {
+   "en": "*Wed (5 min).* Write three sentences without that mistake.",
+   "de": "*Mi (5 Min.).* Schreiben Sie drei Sätze ohne diesen Fehler.",
+   "es": "*Mié (5 min).* Escribe tres oraciones sin ese error.",
+   "fr": "*Mer. (5 min).* Écrivez trois phrases sans cette erreur.",
+   "it": "*Mer (5 min).* Scrivi tre frasi senza questo errore.",
+   "pt": "*Qua (5 min).* Escreva três frases sem esse erro."
+  },
+  {
+   "en": "*Fri (5 min).* Record 90 seconds and listen to it once.",
+   "de": "*Fr (5 Min.).* Nehmen Sie 90 Sekunden auf und hören Sie die Aufnahme einmal an.",
+   "es": "*Vie (5 min).* Graba 90 segundos y escucha una vez.",
+   "fr": "*Ven. (5 min).* Enregistrez 90 secondes et écoutez une fois.",
+   "it": "*Ven (5 min).* Registra 90 secondi e ascolta una volta.",
+   "pt": "*Sex (5 min).* Grave 90 segundos e ouça uma vez."
+  }
  ],
  "autochequeo": [
-  "Did I ask for help clearly?",
-  "Were the past forms right?",
-  "Did I speak without reading?",
-  "Did Monday's mistake come back?"
+  {
+   "en": "Did I ask for help clearly?",
+   "de": "Habe ich klar um Hilfe gebeten?",
+   "es": "¿Pedí ayuda con claridad?",
+   "fr": "Ai-je clairement demandé de l'aide ?",
+   "it": "Ho chiesto aiuto in modo chiaro?",
+   "pt": "Eu pedi ajuda com clareza?"
+  },
+  {
+   "en": "Were the past forms right?",
+   "de": "Waren die Vergangenheitsformen richtig?",
+   "es": "¿Eran correctas las formas del pasado?",
+   "fr": "Les formes du passé étaient-elles correctes ?",
+   "it": "Le forme del passato erano corrette?",
+   "pt": "As formas de passado estavam corretas?"
+  },
+  {
+   "en": "Did I speak without reading?",
+   "de": "Habe ich gesprochen, ohne abzulesen?",
+   "es": "¿Hablé sin leer?",
+   "fr": "Ai-je parlé sans lire ?",
+   "it": "Ho parlato senza leggere?",
+   "pt": "Eu falei sem ler?"
+  },
+  {
+   "en": "Did Monday's mistake come back?",
+   "de": "Ist der Fehler vom Montag wiedergekommen?",
+   "es": "¿Volvió a aparecer el error del lunes?",
+   "fr": "L'erreur de lundi est-elle revenue ?",
+   "it": "L'errore di lunedì è tornato?",
+   "pt": "O erro de segunda-feira voltou?"
+  }
  ],
- "promptCorreccion": "This is a review of three things at A2 level: asking for help, opinion with a reason, and the past simple. (1) For each one, say if it is there and if it is correct. (2) Tell me my most frequent mistake. (3) Give me one sentence with all three. Correct nothing else. ---"
+ "promptCorreccion": {
+  "en": "This is a review of three things at A2 level: asking for help, opinion with a reason, and the past simple. (1) For each one, say if it is there and if it is correct. (2) Tell me my most frequent mistake. (3) Give me one sentence with all three. Correct nothing else. ---",
+  "de": "Das ist eine Wiederholung von drei Dingen auf A2-Niveau: um Hilfe bitten, Meinung mit Begründung und past simple. (1) Sagen Sie zu jedem Punkt, ob er vorkommt und ob er richtig ist. (2) Nennen Sie mir meinen häufigsten Fehler. (3) Geben Sie mir einen Satz mit allen drei Punkten. Korrigieren Sie nichts anderes. ---",
+  "es": "Este es un repaso de tres cosas de nivel A2: pedir ayuda, opinión con una razón y past simple. (1) Para cada una, dime si aparece y si está bien. (2) Dime cuál es mi error más frecuente. (3) Dame una oración con las tres. No corrijas nada más. ---",
+  "fr": "C'est une révision de trois points de niveau A2 : demander de l'aide, opinion avec justification et past simple. (1) Pour chacun, dis-moi s'il apparaît et s'il est correct. (2) Indique-moi mon erreur la plus fréquente. (3) Donne-moi une phrase avec les trois. Ne corrige rien d'autre. ---",
+  "it": "Questo è un ripasso di tre aspetti di livello A2: chiedere aiuto, opinione con motivazione e past simple. (1) Per ciascuno, dimmi se compare e se è corretto. (2) Dimmi qual è il mio errore più frequente. (3) Dammi una frase con tutti e tre. Non correggere altro. ---",
+  "pt": "Esta é uma revisão de três pontos do nível A2: pedir ajuda, opinião com justificativa e past simple. (1) Para cada um, diga se aparece e se está correto. (2) Diga qual é o meu erro mais frequente. (3) Dê uma frase com os três. Não corrija mais nada. ---"
+ }
 }

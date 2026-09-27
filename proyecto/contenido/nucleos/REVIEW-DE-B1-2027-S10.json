@@ -5,25 +5,123 @@
  "idioma": "de",
  "nivel": "B1",
  "clase": "review",
- "titulo": "Wiederholungswoche",
+ "titulo": {
+  "de": "Wiederholungswoche",
+  "en": "Review Week",
+  "es": "Semana de repaso",
+  "fr": "Semaine de révision",
+  "it": "Settimana di ripasso",
+  "pt": "Semana de revisão"
+ },
  "minutosEstimados": 40,
- "consigna": "Freitag, gesprochen: Geben Sie zwei Minuten lang einer Freundin Rat, die sich nicht entscheiden kann, ob sie einen Kurs anfängt. Vorher zwei oder drei Ideen notieren — der Text wird nicht vorgelesen.",
+ "consigna": {
+  "de": "Freitag, gesprochen: Geben Sie zwei Minuten lang einer Freundin Rat, die sich nicht entscheiden kann, ob sie einen Kurs anfängt. Vorher zwei oder drei Ideen notieren — der Text wird nicht vorgelesen.",
+  "en": "Friday, speaking: spend two minutes giving advice to a friend who cannot decide whether to start a course. Write down two or three ideas first — do not read from your notes.",
+  "es": "Viernes, oral: durante dos minutos, dale consejos a una amiga que no puede decidir si empezar un curso. Antes anota dos o tres ideas, pero no leas el texto.",
+  "fr": "Vendredi, à l'oral : pendant deux minutes, donnez des conseils à une amie qui n'arrive pas à décider si elle doit commencer un cours. Notez d'abord deux ou trois idées, sans lire le texte.",
+  "it": "Venerdì, orale: per due minuti dai consigli a un'amica che non riesce a decidere se iniziare un corso. Prima annota due o tre idee, ma non leggere il testo.",
+  "pt": "Sexta-feira, oral: durante dois minutos, dê conselhos a uma amiga que não consegue decidir se começa um curso. Antes, anote duas ou três ideias, mas não leia o texto."
+ },
  "requisitos": [
-  "Zwei Ratschläge in verschiedenen Formen (Woche 9)",
-  "Zwei Infinitivsätze mit *zu* (Woche 8)",
-  "Ein Vorschlag mit Reaktion darauf (Woche 7)"
+  {
+   "de": "Zwei Ratschläge in verschiedenen Formen (Woche 9)",
+   "en": "Two pieces of advice in different forms (week 9)",
+   "es": "Dos consejos formulados de manera diferente (semana 9)",
+   "fr": "Deux conseils formulés de façons différentes (semaine 9)",
+   "it": "Due consigli formulati in modi diversi (settimana 9)",
+   "pt": "Dois conselhos formulados de maneiras diferentes (semana 9)"
+  },
+  {
+   "de": "Zwei Infinitivsätze mit *zu* (Woche 8)",
+   "en": "Two infinitive clauses with *zu* (week 8)",
+   "es": "Dos construcciones de infinitivo con *zu* (semana 8)",
+   "fr": "Deux propositions infinitives avec *zu* (semaine 8)",
+   "it": "Due frasi all'infinito con *zu* (settimana 8)",
+   "pt": "Duas orações no infinitivo com *zu* (semana 8)"
+  },
+  {
+   "de": "Ein Vorschlag mit Reaktion darauf (Woche 7)",
+   "en": "One suggestion and a reaction to it (week 7)",
+   "es": "Una propuesta y una reacción a ella (semana 7)",
+   "fr": "Une proposition et une réaction à celle-ci (semaine 7)",
+   "it": "Una proposta e una reazione ad essa (settimana 7)",
+   "pt": "Uma sugestão e uma reação a ela (semana 7)"
+  }
  ],
  "microtareas": [
-  "*Mo (10 Min.).* Lesen Sie Ihre Korrekturen aus den Wochen 2 bis 9. Schreiben Sie den Fehler auf, der am häufigsten markiert wurde, und einen Satz dazu, warum er passiert.",
-  "*Mi (5 Min.).* Schreiben Sie vier Sätze, in denen dieser Fehler vermieden wird.",
-  "*Fr (5 Min.).* Nehmen Sie zwei Minuten auf. Danach anhören und den Fehler markieren."
+  {
+   "de": "*Mo (10 Min.).* Lesen Sie Ihre Korrekturen aus den Wochen 2 bis 9. Schreiben Sie den Fehler auf, der am häufigsten markiert wurde, und einen Satz dazu, warum er passiert.",
+   "en": "*Mon (10 min).* Read your corrections from weeks 2 to 9. Write down the mistake that was marked most often, and one sentence explaining why it happens.",
+   "es": "*Lun (10 min).* Lee tus correcciones de las semanas 2 a 9. Anota el error que fue marcado con más frecuencia y una oración explicando por qué ocurre.",
+   "fr": "*Lun. (10 min).* Relisez vos corrections des semaines 2 à 9. Notez l'erreur la plus souvent signalée et une phrase expliquant pourquoi elle se produit.",
+   "it": "*Lun (10 min).* Rileggi le correzioni delle settimane dalla 2 alla 9. Annota l'errore segnalato più spesso e una frase che spieghi perché succede.",
+   "pt": "*Seg (10 min).* Leia suas correções das semanas 2 a 9. Anote o erro marcado com mais frequência e uma frase explicando por que ele acontece."
+  },
+  {
+   "de": "*Mi (5 Min.).* Schreiben Sie vier Sätze, in denen dieser Fehler vermieden wird.",
+   "en": "*Wed (5 min).* Write four sentences that avoid this mistake.",
+   "es": "*Mié (5 min).* Escribe cuatro oraciones evitando ese error.",
+   "fr": "*Mer. (5 min).* Écrivez quatre phrases en évitant cette erreur.",
+   "it": "*Mer (5 min).* Scrivi quattro frasi evitando questo errore.",
+   "pt": "*Qua (5 min).* Escreva quatro frases evitando esse erro."
+  },
+  {
+   "de": "*Fr (5 Min.).* Nehmen Sie zwei Minuten auf. Danach anhören und den Fehler markieren.",
+   "en": "*Fri (5 min).* Record two minutes. Then listen and mark the mistake.",
+   "es": "*Vie (5 min).* Graba dos minutos. Después escucha y marca el error.",
+   "fr": "*Ven. (5 min).* Enregistrez deux minutes. Puis écoutez et repérez l'erreur.",
+   "it": "*Ven (5 min).* Registra due minuti. Poi ascolta e individua l'errore.",
+   "pt": "*Sex (5 min).* Grave dois minutos. Depois ouça e marque o erro."
+  }
  ],
  "autochequeo": [
-  "Sind alle drei Anforderungen wirklich vorgekommen?",
-  "Habe ich gesprochen oder abgelesen?",
-  "Stimmte die Verbstellung, als ich schneller wurde?",
-  "Ist der Fehler von Montag wieder aufgetaucht?",
-  "Klang der Rat freundlich?"
+  {
+   "de": "Sind alle drei Anforderungen wirklich vorgekommen?",
+   "en": "Were all three requirements really included?",
+   "es": "¿Aparecieron realmente los tres requisitos?",
+   "fr": "Les trois exigences étaient-elles vraiment présentes ?",
+   "it": "C'erano davvero tutti e tre i requisiti?",
+   "pt": "Os três requisitos realmente apareceram?"
+  },
+  {
+   "de": "Habe ich gesprochen oder abgelesen?",
+   "en": "Did I speak or read?",
+   "es": "¿Hablé o leí?",
+   "fr": "Ai-je parlé ou lu ?",
+   "it": "Ho parlato o letto?",
+   "pt": "Eu falei ou li?"
+  },
+  {
+   "de": "Stimmte die Verbstellung, als ich schneller wurde?",
+   "en": "Was the verb placement correct when I started speaking faster?",
+   "es": "¿Era correcta la posición del verbo cuando empecé a hablar más rápido?",
+   "fr": "La place du verbe était-elle correcte quand j'ai commencé à parler plus vite ?",
+   "it": "La posizione del verbo era corretta quando ho iniziato a parlare più velocemente?",
+   "pt": "A posição do verbo estava correta quando comecei a falar mais rápido?"
+  },
+  {
+   "de": "Ist der Fehler von Montag wieder aufgetaucht?",
+   "en": "Did Monday's mistake come back?",
+   "es": "¿Volvió a aparecer el error del lunes?",
+   "fr": "L'erreur de lundi est-elle revenue ?",
+   "it": "L'errore di lunedì è tornato?",
+   "pt": "O erro de segunda-feira voltou?"
+  },
+  {
+   "de": "Klang der Rat freundlich?",
+   "en": "Did the advice sound friendly?",
+   "es": "¿Sonó amable el consejo?",
+   "fr": "Le conseil avait-il un ton aimable ?",
+   "it": "Il consiglio suonava gentile?",
+   "pt": "O conselho soou amigável?"
+  }
  ],
- "promptCorreccion": "Das ist eine Wiederholung von drei Punkten auf B1-Niveau: Ratschläge geben, Infinitivsätze mit *zu*, Vorschläge machen. (1) Sag zu jedem, ob er vorkommt und ob er gelungen ist. (2) Sag mir, welcher unter Zeitdruck zusammenbricht. (3) Gib mir einen Satz, der zwei davon gleichzeitig trägt. Korrigiere nichts ausserhalb dieser drei Punkte. ---"
+ "promptCorreccion": {
+  "de": "Das ist eine Wiederholung von drei Punkten auf B1-Niveau: Ratschläge geben, Infinitivsätze mit *zu*, Vorschläge machen. (1) Sag zu jedem, ob er vorkommt und ob er gelungen ist. (2) Sag mir, welcher unter Zeitdruck zusammenbricht. (3) Gib mir einen Satz, der zwei davon gleichzeitig trägt. Korrigiere nichts ausserhalb dieser drei Punkte. ---",
+  "en": "This is a review of three points at B1 level: giving advice, infinitive clauses with *zu*, and making suggestions. (1) For each one, tell me whether it appears and whether it works well. (2) Tell me which one breaks down under time pressure. (3) Give me one sentence that combines two of them. Correct nothing outside these three points. ---",
+  "es": "Este es un repaso de tres puntos de nivel B1: dar consejos, construcciones de infinitivo con *zu* y hacer propuestas. (1) Para cada uno, dime si aparece y si está bien logrado. (2) Dime cuál falla cuando hay presión de tiempo. (3) Dame una oración que combine dos de ellos. No corrijas nada fuera de estos tres puntos. ---",
+  "fr": "C'est une révision de trois points de niveau B1 : donner des conseils, les propositions infinitives avec *zu* et faire des suggestions. (1) Pour chacun, dis-moi s'il apparaît et s'il est bien réussi. (2) Dis-moi lequel s'effondre sous la pression du temps. (3) Donne-moi une phrase qui en combine deux. Ne corrige rien en dehors de ces trois points. ---",
+  "it": "Questo è un ripasso di tre punti di livello B1: dare consigli, frasi all'infinito con *zu* e fare proposte. (1) Per ciascuno, dimmi se compare e se è ben riuscito. (2) Dimmi quale cede sotto pressione. (3) Dammi una frase che ne combini due. Non correggere nulla al di fuori di questi tre punti. ---",
+  "pt": "Esta é uma revisão de três pontos do nível B1: dar conselhos, orações no infinitivo com *zu* e fazer sugestões. (1) Para cada um, diga se aparece e se está bem feito. (2) Diga qual deles falha sob pressão de tempo. (3) Dê uma frase que combine dois deles. Não corrija nada fora desses três pontos. ---"
+ }
 }
