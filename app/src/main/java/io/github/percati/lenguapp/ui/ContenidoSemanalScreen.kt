@@ -1,9 +1,11 @@
 package io.github.percati.lenguapp.ui
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
@@ -11,9 +13,19 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.selection.DisableSelection
 import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.EmojiEvents
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.filled.Translate
+import androidx.compose.material.icons.outlined.EmojiEvents
+import androidx.compose.material.icons.outlined.StarBorder
 import androidx.compose.material3.Button
+import androidx.compose.material3.FilterChip
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -37,6 +49,8 @@ import io.github.percati.lenguapp.modelo.Prioridad
 import io.github.percati.lenguapp.modelo.RedemittelItem
 import io.github.percati.lenguapp.modelo.SemanaEspecial
 import io.github.percati.lenguapp.modelo.TextoBilingue
+import io.github.percati.lenguapp.modelo.TipoGuardado
+import io.github.percati.lenguapp.modelo.aTextoBilingue
 import io.github.percati.lenguapp.modelo.resolver
 import io.github.percati.lenguapp.modelo.VocabularioItem
 import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
@@ -45,6 +59,8 @@ import io.github.percati.lenguapp.presentacion.erroresParaMostrar
 import io.github.percati.lenguapp.presentacion.traduccionParaMostrar
 import io.github.percati.lenguapp.semana.RazonSinContenido
 import io.github.percati.lenguapp.semana.ResultadoSemana
+import io.github.percati.lenguapp.semana.esFinDeSemana
+import java.time.LocalDate
 
 /**
  * AJUSTES-FASE-8.md, B.2: separacion entre secciones (Beispiele, Hinweise,
@@ -59,15 +75,39 @@ import io.github.percati.lenguapp.semana.ResultadoSemana
 private val ESPACIO_ENTRE_SECCIONES = 32.dp
 
 /**
+ * Lo que [ContenidoSemanalScreen] necesita de Guardados (feature 3) para
+ * pintar la estrella de cada item de vocabulario/Redemittel, sin saber nada
+ * de Room ni de coroutines: el llamador (io.github.percati.lenguapp.MainActivity)
+ * carga y persiste, esto solo pinta y avisa. [guardados] son las claves
+ * (ver [claveGuardado]) ya guardadas de LA FICHA QUE SE ESTA MOSTRANDO.
+ */
+data class EstadoGuardados(
+    val guardados: Set<String> = emptySet(),
+    val onAlternar: (tipo: TipoGuardado, textoOrigen: String, texto: TextoBilingue, funcion: TextoBilingue?) -> Unit =
+        { _, _, _, _ -> },
+)
+
+/** tipo + texto en el idioma que se aprende: identifica un item dentro de una ficha, sin depender de la base de datos. */
+fun claveGuardado(tipo: TipoGuardado, textoOrigen: String): String = "$tipo|$textoOrigen"
+
+/**
  * Punto de entrada de la pantalla unica: la Fase 4 agrega navegacion y
  * ajustes, pero el "no hay nada para esta celda de la matriz" es el caso
  * normal desde ahora (ver CLAUDE.md) y no puede dejar la pantalla en blanco
  * ni romper la app.
  */
 @Composable
-fun PantallaSemana(resultado: ResultadoSemana, idiomaBase: Idioma, idiomaInterfaz: Idioma, modifier: Modifier = Modifier) {
+fun PantallaSemana(
+    resultado: ResultadoSemana,
+    idiomaBase: Idioma,
+    idiomaInterfaz: Idioma,
+    modifier: Modifier = Modifier,
+    fecha: LocalDate = LocalDate.now(),
+    estadoGuardados: EstadoGuardados = EstadoGuardados(),
+) {
     when (resultado) {
-        is ResultadoSemana.Encontrado -> ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier)
+        is ResultadoSemana.Encontrado ->
+            ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier, idiomaInterfaz, fecha, estadoGuardados)
         is ResultadoSemana.SinContenido -> SinContenidoMensaje(resultado, idiomaInterfaz, modifier)
     }
 }
@@ -103,9 +143,14 @@ fun ContenidoSemanalScreen(
     contenido: ContenidoSemanal,
     idiomaBase: Idioma,
     modifier: Modifier = Modifier,
+    idiomaInterfaz: Idioma = idiomaBase,
+    // Parametro de prueba, como fechaInicial en LenguAppApp: la produccion
+    // nunca lo pasa, asi que siempre arranca en la fecha real de hoy.
+    fecha: LocalDate = LocalDate.now(),
+    estadoGuardados: EstadoGuardados = EstadoGuardados(),
 ) {
     when (contenido) {
-        is Ficha -> FichaContenido(contenido, idiomaBase, modifier)
+        is Ficha -> FichaContenido(contenido, idiomaBase, idiomaInterfaz, fecha, estadoGuardados, modifier)
         is SemanaEspecial -> SemanaEspecialContenido(contenido, idiomaBase, modifier)
     }
 }
@@ -115,88 +160,180 @@ fun ContenidoSemanalScreen(
 // copiar el prompt se excluye con DisableSelection para que el gesto de
 // seleccionar texto no le gane al click ni lo deje capturado.
 @Composable
-private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
-    // Campos bilingues (A2/B1): idioma de la app, y el que se aprende si falta esa clave.
-    val t: (TextoBilingue) -> String = { it.resolver(idiomaBase, ficha.idioma) }
-    Column(
-        modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
-    ) {
-        Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
-            ficha.variante?.let { EtiquetaVariante(it) }
-            Text(t(ficha.titulo), style = MaterialTheme.typography.headlineSmall)
-            Text(
-                textoConMarcado(t(ficha.subtitulo)),
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
-            Row(
-                modifier = Modifier.horizontalScroll(rememberScrollState()),
-                horizontalArrangement = Arrangement.spacedBy(6.dp),
+private fun FichaContenido(
+    ficha: Ficha,
+    idiomaBase: Idioma,
+    idiomaInterfaz: Idioma,
+    fecha: LocalDate,
+    estadoGuardados: EstadoGuardados,
+    modifier: Modifier = Modifier,
+) {
+    // Feature 1 (switch de traduccion en vivo): estado local, nunca
+    // persistido -- "modo revista", igual criterio que regla dura #13. Se
+    // resetea al cambiar de ficha (`remember(ficha.id)`) y siempre arranca
+    // mostrando idiomaBase, nunca el ultimo estado de la ficha anterior.
+    var mostrarIdiomaAprendido by remember(ficha.id) { mutableStateOf(false) }
+    val idiomaMostrado = if (ficha.bilingue && mostrarIdiomaAprendido) ficha.idioma else idiomaBase
+    val t: (TextoBilingue) -> String = { it.resolver(idiomaMostrado, ficha.idioma) }
+
+    // Feature 2 (desafio de fin de semana): mismo criterio, CLAUDE.md regla
+    // dura #13 explicita ("arranca en off, nunca se persiste"). Solo se
+    // ofrece dentro de la ventana sabado-domingo.
+    var modoDesafio by remember(ficha.id) { mutableStateOf(false) }
+    val enFinDeSemana = esFinDeSemana(fecha)
+
+    Column(modifier = modifier.fillMaxSize()) {
+        if (ficha.bilingue || enFinDeSemana) {
+            Column(Modifier.padding(horizontal = 16.dp, vertical = 4.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                if (ficha.bilingue) {
+                    SwitchTraduccion(
+                        activo = mostrarIdiomaAprendido,
+                        idiomaInterfaz = idiomaInterfaz,
+                        idiomaMostrado = idiomaMostrado,
+                        onCambiar = { mostrarIdiomaAprendido = it },
+                    )
+                }
+                if (enFinDeSemana) {
+                    SwitchDesafioFinde(activo = modoDesafio, idiomaInterfaz = idiomaInterfaz, onCambiar = { modoDesafio = it })
+                }
+            }
+        }
+
+        SelectionContainer {
+            Column(
+                modifier = Modifier.verticalScroll(rememberScrollState()).padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
             ) {
-                Insignia(ficha.topicId)
-                Insignia(etiquetaChallengeType(ficha.challengeType))
-                Insignia("${ficha.evidencia.escritura}w · ${formatoOralMin(ficha.evidencia.oralMin)}")
-                Insignia("${ficha.evidencia.minutosEstimados} min")
+                Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    ficha.variante?.let { EtiquetaVariante(it) }
+                    Text(t(ficha.titulo), style = MaterialTheme.typography.headlineSmall)
+                    Text(
+                        textoConMarcado(t(ficha.subtitulo)),
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    Row(
+                        modifier = Modifier.horizontalScroll(rememberScrollState()),
+                        horizontalArrangement = Arrangement.spacedBy(6.dp),
+                    ) {
+                        Insignia(ficha.topicId)
+                        Insignia(etiquetaChallengeType(ficha.challengeType))
+                        Insignia("${ficha.evidencia.escritura}w · ${formatoOralMin(ficha.evidencia.oralMin)}")
+                        Insignia("${ficha.evidencia.minutosEstimados} min")
+                    }
+                }
+
+                if (modoDesafio) {
+                    // El desafio no es contenido nuevo: reusa la mision de
+                    // esta ficha bajo otro encabezado -- mecanismo, no texto
+                    // (la redaccion final es de una conversacion de
+                    // contenido aparte). El resto de la ficha se oculta
+                    // mientras el desafio esta activo: "pasar al desafio",
+                    // no agregarlo como una seccion mas.
+                    Seccion(etiquetaSeccion("desafio", ficha.idioma, ficha.bilingue)) {
+                        Text(textoConMarcado(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
+                        ficha.mision.requisitos.forEach { Vinieta(t(it)) }
+                    }
+                } else {
+                    Text(textoConMarcado(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge)
+
+                    ficha.cuadroReferencia?.let { cuadro ->
+                        val tituloPropio = etiquetaSeccion("cuadroReferencia", ficha.idioma, ficha.bilingue)
+                        SeccionPlegable(titulo = t(cuadro.titulo).ifBlank { tituloPropio }) {
+                            CuadroReferenciaTabla(cuadro, t)
+                        }
+                    }
+
+                    Seccion(etiquetaSeccion("ejemplos", ficha.idioma, ficha.bilingue)) {
+                        ficha.ejemplos.forEach { Vinieta(t(it.texto)) }
+                    }
+
+                    Seccion(etiquetaSeccion("notas", ficha.idioma, ficha.bilingue)) {
+                        ficha.notas.forEach { Vinieta(t(it)) }
+                    }
+
+                    ficha.contraste.contrasteParaMostrar(ficha.idioma, idiomaMostrado)?.let { texto ->
+                        Seccion(etiquetaContraste(ficha.idioma, idiomaMostrado)) {
+                            Text(textoConMarcado(texto), style = MaterialTheme.typography.bodyMedium)
+                        }
+                    }
+
+                    Seccion(etiquetaSeccion("errores", ficha.idioma, ficha.bilingue)) {
+                        erroresParaMostrar(ficha.errores.map(t), ficha.erroresContrastivos, ficha.idioma, idiomaMostrado)
+                            .forEach { Vinieta(it) }
+                    }
+
+                    SeccionPlegable(
+                        titulo = "${etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)} (${ficha.vocabulario.size})",
+                    ) {
+                        Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
+                            ficha.vocabulario.forEach { VocabularioFila(it, idiomaMostrado, ficha.idioma, estadoGuardados) }
+                        }
+                    }
+
+                    SeccionPlegable(
+                        titulo = "${etiquetaSeccion("redemittel", ficha.idioma, ficha.bilingue)} (${ficha.redemittel.size})",
+                    ) {
+                        Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
+                            ficha.redemittel.forEach { RedemittelFila(it, idiomaMostrado, ficha.idioma, estadoGuardados) }
+                        }
+                    }
+
+                    Seccion(etiquetaSeccion("mision", ficha.idioma, ficha.bilingue)) {
+                        Text(textoConMarcado(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
+                        ficha.mision.requisitos.forEach { Vinieta(t(it)) }
+                    }
+
+                    Seccion(etiquetaSeccion("microtareas", ficha.idioma, ficha.bilingue)) {
+                        ficha.microtareas.forEach {
+                            Vinieta("${etiquetaDia(it.dia, ficha.idioma)} (${it.minutos} min) — ${t(it.texto)}")
+                        }
+                    }
+
+                    Seccion(etiquetaSeccion("autochequeo", ficha.idioma, ficha.bilingue)) {
+                        ficha.autochequeo.forEach { Vinieta(t(it)) }
+                    }
+
+                    TarjetaPrompt(t(ficha.promptCorreccion), etiquetaSeccion("promptCorreccion", ficha.idioma, ficha.bilingue))
+                }
             }
         }
-
-        Text(textoConMarcado(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge)
-
-        ficha.cuadroReferencia?.let { cuadro ->
-            val tituloPropio = etiquetaSeccion("cuadroReferencia", ficha.idioma, ficha.bilingue)
-            SeccionPlegable(titulo = t(cuadro.titulo).ifBlank { tituloPropio }) {
-                CuadroReferenciaTabla(cuadro, t)
-            }
-        }
-
-        Seccion(etiquetaSeccion("ejemplos", ficha.idioma, ficha.bilingue)) {
-            ficha.ejemplos.forEach { Vinieta(t(it.texto)) }
-        }
-
-        Seccion(etiquetaSeccion("notas", ficha.idioma, ficha.bilingue)) {
-            ficha.notas.forEach { Vinieta(t(it)) }
-        }
-
-        ficha.contraste.contrasteParaMostrar(ficha.idioma, idiomaBase)?.let { texto ->
-            Seccion(etiquetaContraste(ficha.idioma, idiomaBase)) {
-                Text(textoConMarcado(texto), style = MaterialTheme.typography.bodyMedium)
-            }
-        }
-
-        Seccion(etiquetaSeccion("errores", ficha.idioma, ficha.bilingue)) {
-            erroresParaMostrar(ficha.errores.map(t), ficha.erroresContrastivos, ficha.idioma, idiomaBase).forEach { Vinieta(it) }
-        }
-
-        SeccionPlegable(titulo = "${etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)} (${ficha.vocabulario.size})") {
-            Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
-                ficha.vocabulario.forEach { VocabularioFila(it, idiomaBase) }
-            }
-        }
-
-        SeccionPlegable(titulo = "${etiquetaSeccion("redemittel", ficha.idioma, ficha.bilingue)} (${ficha.redemittel.size})") {
-            Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
-                ficha.redemittel.forEach { RedemittelFila(it, idiomaBase, ficha.idioma) }
-            }
-        }
-
-        Seccion(etiquetaSeccion("mision", ficha.idioma, ficha.bilingue)) {
-            Text(textoConMarcado(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
-            ficha.mision.requisitos.forEach { Vinieta(t(it)) }
-        }
-
-        Seccion(etiquetaSeccion("microtareas", ficha.idioma, ficha.bilingue)) {
-            ficha.microtareas.forEach {
-                Vinieta("${etiquetaDia(it.dia, ficha.idioma)} (${it.minutos} min) — ${t(it.texto)}")
-            }
-        }
-
-        Seccion(etiquetaSeccion("autochequeo", ficha.idioma, ficha.bilingue)) {
-            ficha.autochequeo.forEach { Vinieta(t(it)) }
-        }
-
-        TarjetaPrompt(t(ficha.promptCorreccion), etiquetaSeccion("promptCorreccion", ficha.idioma, ficha.bilingue))
     }
+}
+
+/**
+ * Feature 1: switch de traduccion en vivo. Distinto visualmente del de
+ * abajo (Switch vs. chip). Toda la fila es clickeable, no solo el Switch:
+ * mas area de toque, y el Switch se vuelve puramente visual
+ * (`onCheckedChange = null`) para no manejar el toggle dos veces.
+ */
+@Composable
+private fun SwitchTraduccion(activo: Boolean, idiomaInterfaz: Idioma, idiomaMostrado: Idioma, onCambiar: (Boolean) -> Unit) {
+    Row(
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+        modifier = Modifier.clickable { onCambiar(!activo) },
+    ) {
+        Icon(Icons.Filled.Translate, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
+        Text(etiquetaVerEnIdioma(idiomaInterfaz, idiomaMostrado), style = MaterialTheme.typography.labelLarge, modifier = Modifier.weight(1f))
+        Switch(checked = activo, onCheckedChange = null)
+    }
+}
+
+/** Feature 2: switch del desafio de fin de semana. Un FilterChip, no un Switch: visualmente distinto a propósito. */
+@Composable
+private fun SwitchDesafioFinde(activo: Boolean, idiomaInterfaz: Idioma, onCambiar: (Boolean) -> Unit) {
+    FilterChip(
+        selected = activo,
+        onClick = { onCambiar(!activo) },
+        label = { Text(etiquetaDesafioFinde(idiomaInterfaz)) },
+        leadingIcon = {
+            Icon(
+                if (activo) Icons.Filled.EmojiEvents else Icons.Outlined.EmojiEvents,
+                contentDescription = null,
+            )
+        },
+    )
 }
 
 @Composable
@@ -276,6 +413,21 @@ private fun Insignia(
     }
 }
 
+/**
+ * Feature 3 (Guardados): estrella junto a cada item de vocabulario/Redemittel.
+ * Toggle sin confirmacion -- tocar de nuevo saca el item, no hay dialogo.
+ */
+@Composable
+private fun BotonGuardar(guardado: Boolean, onClick: () -> Unit) {
+    IconButton(onClick = onClick) {
+        Icon(
+            if (guardado) Icons.Filled.Star else Icons.Outlined.StarBorder,
+            contentDescription = null,
+            tint = if (guardado) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+    }
+}
+
 @Composable
 private fun EtiquetaVariante(variante: String) {
     Insignia(
@@ -286,7 +438,7 @@ private fun EtiquetaVariante(variante: String) {
 }
 
 @Composable
-private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma) {
+private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma, idiomaAprendido: Idioma, estadoGuardados: EstadoGuardados) {
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
             // AJUSTES-FASE-8.md, B.5: sin la etiqueta "núcleo" (nombre de
@@ -298,6 +450,13 @@ private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma) {
                 item.item,
                 style = MaterialTheme.typography.bodyLarge,
                 fontWeight = if (item.prioridad == Prioridad.NUCLEO) FontWeight.Bold else FontWeight.Normal,
+                modifier = Modifier.weight(1f),
+            )
+            BotonGuardar(
+                guardado = claveGuardado(TipoGuardado.VOCABULARIO, item.item) in estadoGuardados.guardados,
+                onClick = {
+                    estadoGuardados.onAlternar(TipoGuardado.VOCABULARIO, item.item, item.aTextoBilingue(idiomaAprendido), null)
+                },
             )
         }
         Text(
@@ -329,9 +488,27 @@ private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma) {
 }
 
 @Composable
-private fun RedemittelFila(item: RedemittelItem, idiomaBase: Idioma, idiomaAprendido: Idioma) {
+private fun RedemittelFila(item: RedemittelItem, idiomaBase: Idioma, idiomaAprendido: Idioma, estadoGuardados: EstadoGuardados) {
     Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-        Text(item.expresion, style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Medium)
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Text(
+                item.expresion,
+                style = MaterialTheme.typography.bodyLarge,
+                fontWeight = FontWeight.Medium,
+                modifier = Modifier.weight(1f),
+            )
+            BotonGuardar(
+                guardado = claveGuardado(TipoGuardado.EXPRESION, item.expresion) in estadoGuardados.guardados,
+                onClick = {
+                    estadoGuardados.onAlternar(
+                        TipoGuardado.EXPRESION,
+                        item.expresion,
+                        item.aTextoBilingue(idiomaAprendido),
+                        item.funcion,
+                    )
+                },
+            )
+        }
         Text(
             textoConMarcado(item.funcion.resolver(idiomaBase, idiomaAprendido)),
             style = MaterialTheme.typography.bodySmall,

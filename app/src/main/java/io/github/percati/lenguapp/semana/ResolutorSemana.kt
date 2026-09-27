@@ -5,6 +5,7 @@ import io.github.percati.lenguapp.modelo.EntradaCalendario
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.TipoSemana
+import java.time.DayOfWeek
 import java.time.LocalDate
 import java.time.temporal.IsoFields
 
@@ -15,6 +16,15 @@ import java.time.temporal.IsoFields
  * 2026. Por eso esto usa la API nativa y nunca se calcula a mano.
  */
 data class SemanaIso(val anio: Int, val semana: Int)
+
+/**
+ * Ventana del desafio de fin de semana: sabado 00:00 a domingo 23:59, hora
+ * local (CLAUDE.md, regla dura #11 y #13). Usa la fecha del dispositivo,
+ * el unico dato que la app lee -- nunca se calcula "es fin de semana" a
+ * mano en otro lado.
+ */
+fun esFinDeSemana(fecha: LocalDate): Boolean =
+    fecha.dayOfWeek == DayOfWeek.SATURDAY || fecha.dayOfWeek == DayOfWeek.SUNDAY
 
 fun semanaIsoDe(fecha: LocalDate): SemanaIso = SemanaIso(
     anio = fecha.get(IsoFields.WEEK_BASED_YEAR),

@@ -19,6 +19,10 @@ private val ETIQUETAS_EN = mapOf(
     "vocabulario" to "Vocabulary",
     "redemittel" to "Expressions",
     "mision" to "Mission",
+    // El desafio de fin de semana reusa la mision con otro encabezado: no
+    // es contenido nuevo, asi que no tiene fila propia en las traducciones
+    // resueltas de AJUSTES-FASE-5.md -- agregado para esa reetiqueta.
+    "desafio" to "Weekend Challenge",
     // No esta en la tabla de AJUSTES-FASE-5.md (esa cubre solo la ficha):
     // SemanaEspecial tiene su propia seccion "requisitos", sin "mision".
     "requisitos" to "Requirements",
@@ -36,6 +40,7 @@ private val ETIQUETAS_DE = mapOf(
     "vocabulario" to "Themenwortschatz",
     "redemittel" to "Redemittel",
     "mision" to "Wochenaufgabe",
+    "desafio" to "Wochenend-Herausforderung",
     "requisitos" to "Anforderungen",
     "microtareas" to "Mikroaufgaben",
     "autochequeo" to "Selbstkontrolle",
@@ -57,6 +62,7 @@ private val ETIQUETAS_ES_BILINGUE = mapOf(
     "vocabulario" to "Vocabulario",
     "redemittel" to "Redemittel",
     "mision" to "Misión",
+    "desafio" to "Desafío de fin de semana",
     "microtareas" to "Micro-tareas",
     "autochequeo" to "Autochequeo",
     "promptCorreccion" to "Prompt de corrección",

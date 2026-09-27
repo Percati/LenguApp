@@ -37,16 +37,26 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import io.github.percati.lenguapp.datos.cargarAjustes
+import io.github.percati.lenguapp.datos.cargarContenidoDesdeAssets
 import io.github.percati.lenguapp.datos.guardarAjustes
 import io.github.percati.lenguapp.datos.nombresCalendarioDisponibles
 import io.github.percati.lenguapp.datos.resolverSemana
+import io.github.percati.lenguapp.datos.RepositorioGuardados
 import io.github.percati.lenguapp.modelo.Ajustes
+import io.github.percati.lenguapp.modelo.ContenidoSemanal
+import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.ItemGuardado
 import io.github.percati.lenguapp.modelo.Nivel
+import io.github.percati.lenguapp.modelo.TextoBilingue
+import io.github.percati.lenguapp.modelo.TipoGuardado
+import io.github.percati.lenguapp.modelo.resolver
 import io.github.percati.lenguapp.presentacion.idiomaAplicacionEfectivo
 import io.github.percati.lenguapp.semana.ResultadoSemana
 import io.github.percati.lenguapp.semana.SemanaIso
@@ -54,17 +64,26 @@ import io.github.percati.lenguapp.semana.idiomasConContenido
 import io.github.percati.lenguapp.semana.nivelesConContenido
 import io.github.percati.lenguapp.semana.semanaIsoDe
 import io.github.percati.lenguapp.ui.AjustesScreen
+import io.github.percati.lenguapp.ui.ContenidoSemanalScreen
+import io.github.percati.lenguapp.ui.EstadoGuardados
+import io.github.percati.lenguapp.ui.GuardadosScreen
 import io.github.percati.lenguapp.ui.PantallaSemana
 import io.github.percati.lenguapp.ui.TemaLenguApp
+import io.github.percati.lenguapp.ui.claveGuardado
 import io.github.percati.lenguapp.ui.etiquetaAjustes
+import io.github.percati.lenguapp.ui.etiquetaGuardados
 import io.github.percati.lenguapp.ui.etiquetaHoy
 import io.github.percati.lenguapp.ui.etiquetaSemana
+import io.github.percati.lenguapp.ui.etiquetaVolver
 import io.github.percati.lenguapp.ui.mensajeDobleAtrasParaSalir
+import kotlinx.coroutines.launch
 import java.time.LocalDate
 import java.util.Locale
 
 private const val DESTINO_PRINCIPAL = "principal"
 private const val DESTINO_AJUSTES = "ajustes"
+private const val DESTINO_GUARDADOS = "guardados"
+private const val DESTINO_FICHA_GUARDADA = "ficha_guardada"
 private const val VENTANA_DOBLE_ATRAS_MS = 3000L
 
 /**
@@ -81,11 +100,18 @@ class MainActivity : ComponentActivity() {
         val nombresCalendario = nombresCalendarioDisponibles(this)
         val idiomasConContenido = idiomasConContenido(nombresCalendario)
         val nivelesConContenido = nivelesConContenido(nombresCalendario)
+        // Cargado una sola vez: Guardados necesita poder buscar la ficha de
+        // origen de un item por skillId sin pasar por el calendario (ver
+        // "tocar una fila lleva de vuelta a la ficha de origen").
+        val contenidoTodos = cargarContenidoDesdeAssets(this)
+        val repositorioGuardados = RepositorioGuardados(this)
         setContent {
             LenguAppApp(
                 ajustesIniciales = ajustesIniciales,
                 idiomasConContenido = idiomasConContenido,
                 nivelesConContenido = nivelesConContenido,
+                contenidoTodos = contenidoTodos,
+                repositorioGuardados = repositorioGuardados,
                 resolver = { idioma, nivel, fecha -> resolverSemana(this, idioma, nivel, fecha) },
                 onGuardarAjustes = { guardarAjustes(this, it) },
             )
@@ -107,12 +133,45 @@ internal fun LenguAppApp(
     // reflejar la fecha inicial real, no una fecha distinta escondida
     // detras de un resolutor con trampa).
     fechaInicial: LocalDate = LocalDate.now(),
+    // Guardados (feature 3): todo el contenido embebido, para poder buscar
+    // la ficha de origen de un item guardado por skillId sin pasar por el
+    // calendario. `repositorioGuardados` en null desactiva la feature entera
+    // (estrellas sin efecto, Guardados vacio) -- asi los tests que no la
+    // ejercitan no necesitan levantar Room.
+    contenidoTodos: List<ContenidoSemanal> = emptyList(),
+    repositorioGuardados: RepositorioGuardados? = null,
 ) {
     var ajustes by remember { mutableStateOf(ajustesIniciales) }
     var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
     var idiomaActivoElegido by rememberSaveable { mutableStateOf<String?>(null) }
+    var fichaGuardadaAbiertaId by rememberSaveable { mutableStateOf<String?>(null) }
     val fechaVista = remember(fechaVistaIso) { LocalDate.parse(fechaVistaIso) }
     val navController = rememberNavController()
+
+    var guardadosTodos by remember { mutableStateOf<List<ItemGuardado>>(emptyList()) }
+    val scope = rememberCoroutineScope()
+    LaunchedEffect(repositorioGuardados) {
+        guardadosTodos = repositorioGuardados?.listar() ?: emptyList()
+    }
+    fun alternarGuardado(idioma: Idioma, nivel: Nivel, skillId: String, tipo: TipoGuardado, textoOrigen: String, texto: TextoBilingue, funcion: TextoBilingue?) {
+        val repo = repositorioGuardados ?: return
+        scope.launch {
+            repo.alternar(idioma, nivel, tipo, textoOrigen, texto, funcion, skillId)
+            guardadosTodos = repo.listar()
+        }
+    }
+    // Lo que ContenidoSemanalScreen necesita de Guardados para ESTA ficha:
+    // que items ya estan guardados (para la estrella llena) y el callback
+    // de toggle, con skillId/idioma/nivel de la ficha ya capturados.
+    fun estadoGuardadosPara(ficha: Ficha) = EstadoGuardados(
+        guardados = guardadosTodos
+            .filter { it.skillIdOrigen == ficha.skillId }
+            .map { claveGuardado(it.tipo, it.texto.resolver(it.idioma, it.idioma)) }
+            .toSet(),
+        onAlternar = { tipo, textoOrigen, texto, funcion ->
+            alternarGuardado(ficha.idioma, ficha.nivel, ficha.skillId, tipo, textoOrigen, texto, funcion)
+        },
+    )
 
     // Solo se lee el idioma del dispositivo si el usuario activo "Segun el
     // sistema" -- CLAUDE.md, regla dura #2 enmendada (AJUSTES-FASE-6.md, E).
@@ -151,6 +210,8 @@ internal fun LenguAppApp(
                         onSemanaSiguiente = { fechaVistaIso = fechaVista.plusWeeks(1).toString() },
                         onHoy = { fechaVistaIso = LocalDate.now().toString() },
                         onAjustes = { navController.navigate(DESTINO_AJUSTES) },
+                        onGuardados = { navController.navigate(DESTINO_GUARDADOS) },
+                        guardadosDeLaFicha = ::estadoGuardadosPara,
                     )
                 }
                 composable(DESTINO_AJUSTES) {
@@ -162,6 +223,35 @@ internal fun LenguAppApp(
                         onAjustesCambiados = ::actualizarAjustes,
                         onVolver = { navController.popBackStack() },
                     )
+                }
+                composable(DESTINO_GUARDADOS) {
+                    GuardadosScreen(
+                        items = guardadosTodos,
+                        idiomasAprendidos = ajustes.idiomasAprendidos.keys,
+                        idiomaBase = ajustes.idiomaBase,
+                        idiomaInterfaz = idiomaAplicacion,
+                        existeFichaOrigen = { fichaDeOrigen(contenidoTodos, it) != null },
+                        onAbrirFicha = { item ->
+                            fichaDeOrigen(contenidoTodos, item)?.let { ficha ->
+                                fichaGuardadaAbiertaId = ficha.id
+                                navController.navigate(DESTINO_FICHA_GUARDADA)
+                            }
+                        },
+                        onVolver = { navController.popBackStack() },
+                    )
+                }
+                composable(DESTINO_FICHA_GUARDADA) {
+                    Column(Modifier.fillMaxSize()) {
+                        TextButton(onClick = { navController.popBackStack() }) { Text("< ${etiquetaVolver(idiomaAplicacion)}") }
+                        contenidoTodos.filterIsInstance<Ficha>().firstOrNull { it.id == fichaGuardadaAbiertaId }?.let { ficha ->
+                            ContenidoSemanalScreen(
+                                ficha,
+                                ajustes.idiomaBase,
+                                idiomaInterfaz = idiomaAplicacion,
+                                estadoGuardados = estadoGuardadosPara(ficha),
+                            )
+                        }
+                    }
                 }
             }
         }
@@ -181,6 +271,8 @@ private fun PantallaPrincipal(
     onSemanaSiguiente: () -> Unit,
     onHoy: () -> Unit,
     onAjustes: () -> Unit,
+    onGuardados: () -> Unit,
+    guardadosDeLaFicha: (Ficha) -> EstadoGuardados,
 ) {
     ManejarDobleAtrasParaSalir(idiomaAplicacion)
 
@@ -193,6 +285,7 @@ private fun PantallaPrincipal(
             onSemanaSiguiente = onSemanaSiguiente,
             onHoy = onHoy,
             onAjustes = onAjustes,
+            onGuardados = onGuardados,
         )
 
         if (idiomasSeleccionados.isEmpty() || idiomaActivo == null) {
@@ -211,7 +304,11 @@ private fun PantallaPrincipal(
             val resultado = remember(fechaVista, idiomaActivo, nivelActivo) {
                 resolver(idiomaActivo, nivelActivo, fechaVista)
             }
-            PantallaSemana(resultado, ajustes.idiomaBase, idiomaAplicacion)
+            val estadoGuardados = (resultado as? ResultadoSemana.Encontrado)?.contenido
+                ?.let { it as? Ficha }
+                ?.let(guardadosDeLaFicha)
+                ?: EstadoGuardados()
+            PantallaSemana(resultado, ajustes.idiomaBase, idiomaAplicacion, fecha = fechaVista, estadoGuardados = estadoGuardados)
         }
     }
 }
@@ -262,6 +359,7 @@ private fun BarraNavegacion(
     onSemanaSiguiente: () -> Unit,
     onHoy: () -> Unit,
     onAjustes: () -> Unit,
+    onGuardados: () -> Unit,
 ) {
     val textoSemana = etiquetaSemana(idiomaAplicacion)
     Column(modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp)) {
@@ -301,6 +399,7 @@ private fun BarraNavegacion(
             verticalAlignment = Alignment.CenterVertically,
         ) {
             TextButton(onClick = onHoy, enabled = !esHoy) { Text(etiquetaHoy(idiomaAplicacion)) }
+            TextButton(onClick = onGuardados) { Text(etiquetaGuardados(idiomaAplicacion)) }
             TextButton(onClick = onAjustes) { Text(etiquetaAjustes(idiomaAplicacion)) }
         }
     }
@@ -313,3 +412,16 @@ private fun SinIdiomaSeleccionado() {
         Text("Elegí al menos un idioma en Ajustes para ver contenido.", style = MaterialTheme.typography.bodyLarge)
     }
 }
+
+/**
+ * Guardados (feature 3): la ficha de origen de un item guardado, buscada por
+ * identidad (skillId + idioma + nivel), no por id completo -- [ItemGuardado]
+ * no guarda order/anio. Si el skill aparecio mas de una vez (dos ordenes, o
+ * piloto y 2027 conviviendo), se queda con la primera que encuentra: es una
+ * simplificacion deliberada, no hay forma de distinguir cual con el modelo
+ * actual. `null` si esa edicion ya no esta en `assets/contenido/` de esta
+ * build (ver GuardadosScreen, `existeFichaOrigen`).
+ */
+private fun fichaDeOrigen(contenidoTodos: List<ContenidoSemanal>, item: ItemGuardado): Ficha? =
+    contenidoTodos.filterIsInstance<Ficha>()
+        .firstOrNull { it.skillId == item.skillIdOrigen && it.idioma == item.idioma && it.nivel == item.nivel }

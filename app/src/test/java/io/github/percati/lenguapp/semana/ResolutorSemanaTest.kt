@@ -9,12 +9,26 @@ import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.SemanaEspecial
 import io.github.percati.lenguapp.modelo.id
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
 import java.time.LocalDate
 
 class ResolutorSemanaTest {
+
+    // --- Feature 2 (desafio de fin de semana): sabado 00:00 a domingo 23:59 ---
+
+    @Test
+    fun `esFinDeSemana es verdadero el sabado y el domingo`() {
+        assertTrue(esFinDeSemana(LocalDate.of(2026, 9, 12))) // sabado
+        assertTrue(esFinDeSemana(LocalDate.of(2026, 9, 13))) // domingo
+    }
+
+    @Test
+    fun `esFinDeSemana es falso de lunes a viernes`() {
+        for (dia in 7..11) assertFalse(esFinDeSemana(LocalDate.of(2026, 9, dia)))
+    }
 
     // --- Fase 2: casos de borde del anio ISO vs. el anio de calendario ---
 

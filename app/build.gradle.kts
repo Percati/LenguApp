@@ -5,6 +5,7 @@ plugins {
     kotlin("android")
     kotlin("plugin.serialization")
     kotlin("plugin.compose")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -74,6 +75,14 @@ dependencies {
 
     implementation("androidx.glance:glance-appwidget:1.1.1")
     implementation("androidx.glance:glance-material3:1.1.1")
+
+    // Guardados (feature 3): la unica persistencia de datos de usuario de la
+    // app, y es una excepcion documentada a CLAUDE.md regla dura #4 -- son
+    // marcadores de referencia, no progreso pedagogico. Ver CLAUDE.md.
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    ksp("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.compose.material:material-icons-extended")
 
     testImplementation("junit:junit:4.13.2")
     // Para testear la pantalla de Compose sin emulador: Robolectric la

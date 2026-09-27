@@ -227,3 +227,40 @@ que aparezca un caso genuinamente distinto a los dos de arriba.
 ## 9. Piloto 2026
 
 Alemán B2, inglés B2 e inglés C1 siguen completos bajo el esquema viejo. No tocar hasta que se resuelva el id con año (sección 4).
+
+## 10. Features de app — ✅ implementadas por Code (sept 2026)
+
+Tres features de UI nuevas, sin tocar `contenido/` ni ningún schema.
+
+✅ **Switch de traducción en vivo (A2/B1):** dentro de la ficha, visible mientras
+se scrollea (no adentro del scroll de la ficha). Solo en fichas con
+`bilingue == true`. No persiste — arranca siempre mostrando `idiomaBase`, se
+resetea al cambiar de ficha. Afecta todos los campos `TextoBilingue` de la
+ficha, más `contraste`/`erroresContrastivos` (mismo criterio, aunque esos dos
+son un mecanismo previo a `TextoBilingue`).
+
+✅ **Desafío de fin de semana:** switch separado (chip, no el mismo componente
+que el de traducción), visible solo sábado 00:00–domingo 23:59 hora local.
+Arranca siempre en `off` — CLAUDE.md regla dura #13. Actívalo y "pasa al
+desafío": reemplaza el contenido normal por la `mision` de esa ficha bajo el
+encabezado "Desafío de fin de semana" — mecanismo nada más, el texto final de
+la variación queda para una conversación de contenido aparte.
+
+✅ **Guardados:** nueva sección para marcar vocabulario/expresiones desde
+cualquier ficha (ícono de estrella, toggle sin confirmación). Persiste en
+Room — **única excepción documentada a la regla dura #4**, ver `CLAUDE.md`.
+Filtro por idioma (uno a la vez, no mezcla), nivel y tipo. Tocar una fila
+lleva a la ficha de origen si esa edición sigue embebida; si no, se muestra
+sin el link. Buscar la ficha de origen es por `(skillId, idioma, nivel)`, no
+por id completo — `ItemGuardado` no guarda `order`/`anio`, así que si el
+mismo skill aparece más de una vez elige la primera que encuentra. Es una
+simplificación conocida, no un bug.
+
+Tests: 211 en `testDebugUnitTest` (antes 197), 0 fallas. `compileDebugKotlin
+compileDebugUnitTestKotlin test` limpio.
+
+🟡 **Nota de entorno:** `jre-21.0.5.11-hotspot` (el que usa `gradlew` por
+default en esta máquina) no trae `jlink`, necesario para el nuevo procesador
+de anotaciones de Room (KSP). Hace falta `jdk-21.0.5.11-hotspot` (la carpeta
+hermana, con JDK completo) — `$env:JAVA_HOME` apuntando ahí antes de compilar.
+No es nada del código ni del repo, es la instalación de Java de esta máquina.

@@ -30,6 +30,8 @@ enum class ClaveTexto {
     SALIR_CONFIRMAR,
     IDIOMAS_APRENDIDOS, IDIOMA_APP, SEGUN_SISTEMA, ESTILO_VISUAL, MODO, MODO_CLARO, MODO_OSCURO,
     NIVEL, CAMBIAR_NIVEL, IDIOMA_NO_DISPONIBLE, AVISO_GLOSAS,
+    GUARDADOS, GUARDADOS_VACIO, FILTRO_IDIOMA, FILTRO_TIPO, FILTRO_TODOS,
+    TIPO_VOCABULARIO, TIPO_EXPRESION, DESAFIO_FINDE, VER_EN_IDIOMA,
 }
 
 private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
@@ -153,6 +155,53 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Le traduzioni del lessico esistono per ora solo in spagnolo.",
         Idioma.PT to "As traduções de vocabulário só existem em espanhol por agora.",
     ),
+    // --- Guardados (feature 3) ---
+    ClaveTexto.GUARDADOS to mapOf(
+        Idioma.ES to "Guardados", Idioma.EN to "Saved", Idioma.DE to "Gespeichert",
+        Idioma.FR to "Enregistrés", Idioma.IT to "Salvati", Idioma.PT to "Guardados",
+    ),
+    ClaveTexto.GUARDADOS_VACIO to mapOf(
+        Idioma.ES to "Todavía no guardaste nada. Tocá la estrella junto a una palabra o expresión para guardarla.",
+        Idioma.EN to "You haven't saved anything yet. Tap the star next to a word or expression to save it.",
+        Idioma.DE to "Du hast noch nichts gespeichert. Tippe auf den Stern neben einem Wort oder Ausdruck, um ihn zu speichern.",
+        Idioma.FR to "Vous n'avez encore rien enregistré. Appuyez sur l'étoile à côté d'un mot ou d'une expression pour l'enregistrer.",
+        Idioma.IT to "Non hai ancora salvato nulla. Tocca la stella accanto a una parola o espressione per salvarla.",
+        Idioma.PT to "Ainda não guardou nada. Toque na estrela junto a uma palavra ou expressão para a guardar.",
+    ),
+    ClaveTexto.FILTRO_IDIOMA to mapOf(
+        Idioma.ES to "Idioma", Idioma.EN to "Language", Idioma.DE to "Sprache",
+        Idioma.FR to "Langue", Idioma.IT to "Lingua", Idioma.PT to "Idioma",
+    ),
+    ClaveTexto.FILTRO_TIPO to mapOf(
+        Idioma.ES to "Tipo", Idioma.EN to "Type", Idioma.DE to "Art",
+        Idioma.FR to "Type", Idioma.IT to "Tipo", Idioma.PT to "Tipo",
+    ),
+    ClaveTexto.FILTRO_TODOS to mapOf(
+        Idioma.ES to "Todos", Idioma.EN to "All", Idioma.DE to "Alle",
+        Idioma.FR to "Tous", Idioma.IT to "Tutti", Idioma.PT to "Todos",
+    ),
+    ClaveTexto.TIPO_VOCABULARIO to mapOf(
+        Idioma.ES to "Vocabulario", Idioma.EN to "Vocabulary", Idioma.DE to "Wortschatz",
+        Idioma.FR to "Vocabulaire", Idioma.IT to "Lessico", Idioma.PT to "Vocabulário",
+    ),
+    ClaveTexto.TIPO_EXPRESION to mapOf(
+        Idioma.ES to "Expresiones", Idioma.EN to "Expressions", Idioma.DE to "Redemittel",
+        Idioma.FR to "Expressions", Idioma.IT to "Espressioni", Idioma.PT to "Expressões",
+    ),
+    // --- Desafio de fin de semana (feature 2) ---
+    ClaveTexto.DESAFIO_FINDE to mapOf(
+        Idioma.ES to "Desafío de fin de semana", Idioma.EN to "Weekend challenge", Idioma.DE to "Wochenend-Herausforderung",
+        Idioma.FR to "Défi du week-end", Idioma.IT to "Sfida del weekend", Idioma.PT to "Desafio de fim de semana",
+    ),
+    // --- Switch de traduccion en vivo (feature 1) ---
+    ClaveTexto.VER_EN_IDIOMA to mapOf(
+        Idioma.ES to "Ver en {idioma}",
+        Idioma.EN to "View in {idioma}",
+        Idioma.DE to "Auf {idioma} anzeigen",
+        Idioma.FR to "Voir en {idioma}",
+        Idioma.IT to "Vedi in {idioma}",
+        Idioma.PT to "Ver em {idioma}",
+    ),
 )
 
 /**
@@ -254,3 +303,18 @@ fun mensajeIdiomaNoDisponible(idiomaInterfaz: Idioma, idiomaSinContenido: Idioma
 )
 
 fun avisoGlosasTexto(idiomaInterfaz: Idioma): String = texto(ClaveTexto.AVISO_GLOSAS, idiomaInterfaz)
+
+fun etiquetaGuardados(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS, idiomaInterfaz)
+fun mensajeGuardadosVacio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_VACIO, idiomaInterfaz)
+fun etiquetaFiltroIdioma(idiomaInterfaz: Idioma): String = texto(ClaveTexto.FILTRO_IDIOMA, idiomaInterfaz)
+fun etiquetaFiltroTipo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.FILTRO_TIPO, idiomaInterfaz)
+fun etiquetaFiltroTodos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.FILTRO_TODOS, idiomaInterfaz)
+fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_VOCABULARIO, idiomaInterfaz)
+fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
+fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
+
+/** [idiomaMostrado] es el idioma que el switch de traduccion en vivo esta mostrando ahora, no el de interfaz. */
+fun etiquetaVerEnIdioma(idiomaInterfaz: Idioma, idiomaMostrado: Idioma): String = interpolar(
+    texto(ClaveTexto.VER_EN_IDIOMA, idiomaInterfaz),
+    "idioma" to nombreIdioma(idiomaMostrado, idiomaInterfaz),
+)
