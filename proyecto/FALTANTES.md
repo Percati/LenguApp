@@ -143,12 +143,32 @@ que conviene tener presentes:
   mayoría A1-B1 (*drei*, *fünf*, *dich*, *nachts*): cargarlas por la vía de la fusión
   parcial las etiquetaría como B2.
 
-**Última pieza que falta: las fuentes de A1 a C1 en `fuentes/`.** Son los PDF del
-Goethe (A1 Fit1, A2, B1), el DTZ y los tres .txt de C1. Sin ellas no se puede correr
-`build_wordlists.py` completo: el script omite en silencio la fuente que falta y
-reescribe `vocab_de.json` entero, así que B2 se ha ido integrando por fusión parcial.
-Con esas fuentes más el diccionario ya disponible, una sola reconstrucción deja la
-lista coherente y reetiqueta correctamente las 68 altas de arriba.
+**Última pieza que falta: cuatro PDF en `fuentes/`.** Estado al 27-09-2026, verificado
+contra `tools/fuentes.json` (las 14 entradas existen; lo que falta son los archivos):
+
+| Fuente | Archivo | Estado |
+|---|---|---|
+| Goethe A1 Fit1 | `GoetheZertifikat_A1_Fit1_Wortliste.pdf` | **falta** |
+| Goethe A2 | `GoetheZertifikat_A2_Wortliste.pdf` | **falta** |
+| Goethe B1 | `Goethe-Zertifikat_B1_Wortliste.pdf` | **falta** |
+| DTZ | `dtz_wortliste.pdf` | **falta** |
+| Sicher! C1, Aspekte neu C1, Erkundungen C1 | tres .txt | recuperables del historial (`fuentes-ocr/`, commit 077c5a6) |
+| Diccionario de frecuencia | `A_Frequency_Dictionary_of_German.pdf` | lo tiene Fer, se sube cuando se corre |
+| Seis manuales B2 | seis .txt | versionados en `fuentes/` |
+
+Los cuatro PDF del Goethe y del BAMF son gratuitos y públicos. Hasta que estén, **no se
+puede correr `build_wordlists.py` completo**: el script omite en silencio la fuente que
+falta y reescribe `vocab_de.json` entero, así que una corrida hoy borraría A1, A2, B1 y
+C1. Por eso B2 se integró por fusión parcial y por eso los 68 lemas del diccionario
+siguen sin cargar: con las cuatro listas presentes, una sola reconstrucción los etiqueta
+en su nivel real y deja de hacer falta la fusión.
+
+Reverificación de los packs alemanes contra la lista actual (27-09-2026, 4478 ítems):
+1016 verificados, 290 por encima del nivel, 1187 sin atestiguar y 801 expresiones. Las
+290 alertas se concentran en A2 (191) y B1 (84) y son en su mayoría el efecto conocido
+de la tajada A2 incompleta: *das Fahrrad*, *das Frühstück*, *das Medikament* figuran como
+B1 porque solo están en goethe-b1 y dtz. No son errores de contenido y se corrigen solas
+con la reconstrucción completa.
 
 Falta **C2** como nivel atestiguado. En sept-2026 se probó *Deutsch üben: Wortschatz
 & Grammatik C2* (Hueber, 129 págs., con capa de texto, sin OCR necesario) y **no
