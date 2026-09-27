@@ -33,7 +33,7 @@ _utf8_io()
 
 
 NIVELES = ["A1", "A2", "B1", "B2", "C1", "C2"]
-ART = ("der", "die", "das")
+ART = ("der", "die", "das", "r", "e", "s")  # r/e/s: articulo abreviado de las listas del Goethe
 
 # --- lectura -----------------------------------------------------------
 def leer(path: Path) -> str:
@@ -252,7 +252,9 @@ RE_NOMBRE_MANUAL = re.compile(r"\b(?:der|die|das)\s+([A-ZÄÖÜ][A-Za-zÄÖÜä�
 
 # --- extraccion de lemas (formato Goethe, dos columnas) ----------------
 
-RE_NOMBRE = re.compile(r"^\s*(der|die|das)\s+([A-ZÄÖÜ][\wÄÖÜäöüß-]{1,30})\b")
+# Las listas del Goethe abrevian el articulo: "r Dezember", "e Minute, -n",
+# "s Jahr, -e". Sin esa variante se perdia mas de la mitad de A1 y A2.
+RE_NOMBRE = re.compile(r"^\s*(der|die|das|r|e|s)\s+([A-ZÄÖÜ][\wÄÖÜäöüß-]{1,30})\b")
 RE_VERBO  = re.compile(r"^\s*(sich\s+)?([a-zäöüß][\wäöüß]{2,30}(?:en|ern|eln))\s*,")
 RE_SIMPLE = re.compile(r"^\s*([a-zäöüß][\wäöüß-]{1,25})\s*$")
 RE_FRASE  = re.compile(r"[.!?]\s|\d\.\s")

@@ -122,53 +122,34 @@ texto de núcleos, apariciones y semanas especiales de A2/B1 en los seis
 idiomas. El contenido B2/C1/C2 es monolingüe y entra solo por el lado del
 idioma que se aprende.
 
-## 7. Vocabulario atestiguado alemán — B2 resuelto, falta C2
+## 7. Vocabulario atestiguado alemán — A1-C1 reconstruido, falta C2
 
-`vocab_de.json` cubre A1/A2/B1/**B2**/C1: 7607 lemas. B2 entró en sept-2026 a
-partir de seis manuales pasados por OCR (Sicher! B2.1 y B2.2, Aspekte neu B2,
-Erkundungen B2, Einfach besser! 500, Deutsch intensiv B2). Dos consecuencias
-que conviene tener presentes:
+`vocab_de.json` cubre A1/A2/B1/B2/C1: **7683 lemas**. El 27-09-2026 se corrió por
+primera vez la **reconstrucción completa** (`build_wordlists.py` con las 14 fuentes
+presentes), en lugar de la fusión parcial que se venía usando desde B2. Reparto:
+A1 584, A2 604, B1 2054, B2 3172, C1 1269, más 699 con etiqueta doble.
 
-- 426 lemas que figuraban como C1 pasaron a B2, porque el nivel de enseñanza
-  es el más bajo atestiguado y ahora aparecen también en manuales B2. C1 baja
-  de 1716 a 1290 lemas; no se perdió nada, solo se reetiquetó.
-- La construcción de B2 se hizo **sin el diccionario de frecuencia** como lista
-  blanca. En sept-2026 Fer consiguió el diccionario (Jones/Tschirner, *A Frequency
-  Dictionary of German*, 315 págs., con capa de texto) y se midió su efecto: **no
-  filtra ruido, lo amplía**. El pipeline acepta un candidato si pasa el filtro
-  morfológico **o** figura en el diccionario, así que la lista blanca suma palabras
-  reales que el filtro descartaba, pero no quita las formas flexionadas que ya
-  entraban. Con el diccionario, B2 pasa de 4085 a 4383 lemas: 298 altas, 0 bajas.
-  De esas altas, 68 no están hoy en `vocab_de.json` en ningún nivel y son en su
-  mayoría A1-B1 (*drei*, *fünf*, *dich*, *nachts*): cargarlas por la vía de la fusión
-  parcial las etiquetaría como B2.
+Dos arreglos del extractor salieron de esta corrida:
 
-**Última pieza que falta: cuatro PDF en `fuentes/`.** Estado al 27-09-2026, verificado
-contra `tools/fuentes.json` (las 14 entradas existen; lo que falta son los archivos):
+- Las listas del Goethe abrevian el artículo (`r Dezember`, `e Minute, -n`). El lector
+  solo reconocía `der/die/das`, así que perdía más de la mitad de A1: pasó de 293 a 584
+  lemas. Se añadió `r|e|s` al patrón de sustantivo y a la normalización de clave; sin
+  lo segundo, `r dezember` quedaba como lema aparte de `dezember`.
+- Con eso, palabras básicas que estaban mal ubicadas volvieron a su nivel: *Dezember*,
+  *Minute*, *Montag*, *Woche* y *Bruder* pasaron de B1 a A1.
 
-| Fuente | Archivo | Estado |
-|---|---|---|
-| Goethe A1 Fit1 | `GoetheZertifikat_A1_Fit1_Wortliste.pdf` | **falta** |
-| Goethe A2 | `GoetheZertifikat_A2_Wortliste.pdf` | **falta** |
-| Goethe B1 | `Goethe-Zertifikat_B1_Wortliste.pdf` | **falta** |
-| DTZ | `dtz_wortliste.pdf` | **falta** |
-| Sicher! C1, Aspekte neu C1, Erkundungen C1 | tres .txt | recuperables del historial (`fuentes-ocr/`, commit 077c5a6) |
-| Diccionario de frecuencia | `A_Frequency_Dictionary_of_German.pdf` | lo tiene Fer, se sube cuando se corre |
-| Seis manuales B2 | seis .txt | versionados en `fuentes/` |
+Artefacto conocido que queda: **94 lemas del top-1000 de frecuencia siguen etiquetados
+B2 o C1** (*drei*, *acht*, *dich*, *dein*, *davon*). Son numerales, pronombres y
+partículas que las listas del Goethe no traen como entradas de la lista alfabética
+—aparecen en tablas del tipo `3 = drei`— así que solo los atestigua algún manual B2.
+No es un error de contenido y no afecta a los packs: se puede vivir con eso o
+ampliar el extractor para leer esas tablas.
 
-Los cuatro PDF del Goethe y del BAMF son gratuitos y públicos. Hasta que estén, **no se
-puede correr `build_wordlists.py` completo**: el script omite en silencio la fuente que
-falta y reescribe `vocab_de.json` entero, así que una corrida hoy borraría A1, A2, B1 y
-C1. Por eso B2 se integró por fusión parcial y por eso los 68 lemas del diccionario
-siguen sin cargar: con las cuatro listas presentes, una sola reconstrucción los etiqueta
-en su nivel real y deja de hacer falta la fusión.
-
-Reverificación de los packs alemanes contra la lista actual (27-09-2026, 4478 ítems):
-1016 verificados, 290 por encima del nivel, 1187 sin atestiguar y 801 expresiones. Las
-290 alertas se concentran en A2 (191) y B1 (84) y son en su mayoría el efecto conocido
-de la tajada A2 incompleta: *das Fahrrad*, *das Frühstück*, *das Medikament* figuran como
-B1 porque solo están en goethe-b1 y dtz. No son errores de contenido y se corrigen solas
-con la reconstrucción completa.
+Reverificación de los 240 packs alemanes contra la lista reconstruida: 1024 verificados,
+264 por encima del nivel, 1205 sin atestiguar y 801 expresiones. Las 264 alertas se
+concentran en A2 (163) y B1 (86) y bajan respecto de las 290 de la corrida anterior;
+C1 y C2 no tienen ninguna. No apareció nada nuevo: son palabras que los manuales de
+nivel superior también recogen.
 
 Falta **C2** como nivel atestiguado. En sept-2026 se probó *Deutsch üben: Wortschatz
 & Grammatik C2* (Hueber, 129 págs., con capa de texto, sin OCR necesario) y **no
