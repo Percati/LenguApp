@@ -28,6 +28,11 @@ CHALLENGE = {"A2": "chunk_deployment", "B1": "guided_production",
              "B2": "constrained_production", "C1": "open_production",
              "C2": "adaptive_production"}
 MIN_VOCAB = 2
+# El piloto 2026 esta congelado (regla dura #11): se escribio con el estilo viejo
+# ("Alle vier Kernwoerter" en vez de citar los items) y con dos packs de T02
+# intercambiados en de-B2. Esos dos hallazgos se reportan como aviso, no como
+# error, para que el validador siga siendo util sin pedir que se toque el piloto.
+PILOTO_CONGELADO = {("de", "B2", 2026), ("en", "B2", 2026), ("en", "C1", 2026)}
 SIMILITUD_MAX = 0.6
 
 
@@ -68,25 +73,48 @@ def main():
         if (a.idioma and idi != a.idioma) or (a.nivel and niv != a.nivel):
             continue
         tag = f"{idi}-{niv}-{a.anio}"
+        congelado = (idi, niv, a.anio) in PILOTO_CONGELADO
         cal = [x for x in leer(R / f"data/calendarios/{a.anio}-{idi}-{niv}.json")
                if x["tipo"] == "content"]
         aps = d["apariciones"]
         if len(aps) != len(cal):
             errores.append(f"{tag}: {len(aps)} apariciones, calendario tiene {len(cal)}")
+        # El packId es el n-esimo pack de ese tema EN ORDEN DE CALENDARIO, asi que
+        # se precalcula recorriendo el calendario, no las apariciones.
         cnt = collections.Counter()
-        por_skill = collections.defaultdict(list)
-        for i, (o, c) in enumerate(zip(aps, cal)):
-            w = f"{tag} S{c['semana']}"
-            for k in ("skillId", "order", "topicId"):
-                if o.get(k) != c[k]:
-                    errores.append(f"{w}: {k}={o.get(k)} y el calendario dice {c[k]}")
+        for c in cal:
             cnt[c["topicId"]] += 1
-            esperado = f"{idi}-{niv}-{a.anio}-{c['topicId']}-{cnt[c['topicId']]}"
+            c["_pack"] = f"{idi}-{niv}-{a.anio}-{c['topicId']}-{cnt[c['topicId']]}"
+        # Los archivos del piloto 2026 (de-B2, en-B2, en-C1) estan ordenados por
+        # skillId, no por semana, y estan congelados: no se pueden reordenar. Por
+        # eso cada aparicion se empareja con su semana por (skillId, order,
+        # topicId) en vez de por posicion. Para los archivos que si van en orden
+        # de calendario el emparejamiento da exactamente lo mismo.
+        libres = list(cal)
+        pares = []
+        for o in aps:
+            clave = (o.get("skillId"), o.get("order"), o.get("topicId"))
+            hit = next((x for x in libres
+                        if (x["skillId"], x["order"], x["topicId"]) == clave), None)
+            if hit is None:
+                errores.append(f"{tag}: {clave} no corresponde a ninguna semana del calendario")
+                continue
+            libres.remove(hit)
+            pares.append((o, hit))
+        for c in libres:
+            errores.append(f"{tag} S{c['semana']}: la semana no tiene aparicion")
+        pares.sort(key=lambda x: x[1]["semana"])
+
+        por_skill = collections.defaultdict(list)
+        for o, c in pares:
+            w = f"{tag} S{c['semana']}"
+            esperado = c["_pack"]
             pp = R / f"contenido/packs/{o['packId']}.json"
             if not pp.exists():
                 errores.append(f"{w}: pack {o['packId']} no existe"); continue
             if o["packId"] != esperado:
-                errores.append(f"{w}: pack {o['packId']}, se esperaba {esperado}")
+                destino = avisos if congelado else errores
+                destino.append(f"{w}: pack {o['packId']}, se esperaba {esperado}")
             pack = leer(pp)
             if pack.get("topicId") != o["topicId"]:
                 errores.append(f"{w}: pack de {pack.get('topicId')} en semana de {o['topicId']}")
@@ -103,7 +131,9 @@ def main():
             usados = [v["item"] for v in pack["vocabulario"] if v["prioridad"] == "nucleo"
                       and any(x in texto for x in variantes(v["item"]))]
             if len(usados) < MIN_VOCAB:
-                errores.append(f"{w}: solo {len(usados)} items nucleo del pack en mision/microtareas")
+                destino = avisos if congelado else errores
+                destino.append(f"{w}: solo {len(usados)} items nucleo del pack "
+                               f"en mision/microtareas")
             por_skill[o["skillId"]].append((c["semana"], o))
             nuc = leer(R / f"contenido/nucleos/{o['skillId']}-{niv}.json")
             for e in nuc["ejemplos"]:
