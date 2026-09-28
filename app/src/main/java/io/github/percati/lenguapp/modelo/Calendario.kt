@@ -17,6 +17,15 @@ data class EntradaCalendario(
     val skillId: String? = null,
     val order: Int? = null,
     val topicId: String? = null,
+    // "semanal" | "survival" | "repaso": lo que generar_calendario.py escribe
+    // en cada fila desde que existe el Survival trimestral (CLAUDE.md, regla
+    // dura #11). El parser de la app es estricto (sin ignoreUnknownKeys, ver
+    // CargadorContenido.kt) y el campo esta en TODOS los calendarios nuevos
+    // (2027 y los 7 parciales de 2026), asi que tiene que estar en el modelo
+    // aunque nada lo consuma todavia -- el desafio de fin de semana (feature 2)
+    // hoy se calcula solo de la fecha del dispositivo (esFinDeSemana en
+    // ResolutorSemana.kt), no de esta columna.
+    val desafioFinde: String? = null,
 )
 
 @Serializable

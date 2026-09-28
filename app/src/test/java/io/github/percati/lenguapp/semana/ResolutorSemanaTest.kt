@@ -125,16 +125,19 @@ class ResolutorSemanaTest {
     }
 
     @Test
-    fun `un nivel sin calendario en un anio que si tiene otros se distingue de anio sin calendario`() {
-        // 2026 tiene calendario para DE-B2 y EN-C1, pero no para DE-A2.
+    fun `un idioma sin ningun calendario en un anio que si tiene otros se distingue de anio sin calendario`() {
+        // 2026 tiene calendario para DE y EN (los 10 pares), pero ninguno de FR:
+        // clasificarDisponibilidad tiene que distinguir "falta este par" de "falta
+        // el anio entero" sin depender de que exista algun nivel real sin cubrir
+        // (con los 7 calendarios parciales, DE y EN ya cubren los cinco niveles).
         val resultado = resolverContenidoDeLaSemana(
             fecha = LocalDate.of(2026, 9, 7),
-            idioma = Idioma.DE, nivel = Nivel.A2,
-            calendario = calendarioCargado(2026, Idioma.DE, Nivel.A2),
+            idioma = Idioma.FR, nivel = Nivel.B2,
+            calendario = calendarioCargado(2026, Idioma.FR, Nivel.B2),
             contenidoPorId = cargarContenido(),
         )
         assertEquals(
-            ResultadoSemana.SinContenido(SemanaIso(2026, 37), Idioma.DE, Nivel.A2, RazonSinContenido.IDIOMA_O_NIVEL_SIN_CONTENIDO),
+            ResultadoSemana.SinContenido(SemanaIso(2026, 37), Idioma.FR, Nivel.B2, RazonSinContenido.IDIOMA_O_NIVEL_SIN_CONTENIDO),
             resultado,
         )
     }
@@ -165,11 +168,61 @@ class ResolutorSemanaTest {
         assertEquals("DE-V08-B2-2026-1", (encontrado.contenido as Ficha).id)
     }
 
+    // --- Calendarios parciales 2026 (semana 41 en adelante), ver generar_calendario.py --parcial ---
+
+    @Test
+    fun `un calendario que arranca en la semana 41 (no en la 37, como el piloto) resuelve bien esa primera semana`() {
+        val resultado = resolverContenidoDeLaSemana(
+            fecha = LocalDate.of(2026, 10, 5), // lunes de la semana ISO 41
+            idioma = Idioma.DE, nivel = Nivel.A2,
+            calendario = calendarioCargado(2026, Idioma.DE, Nivel.A2),
+            contenidoPorId = cargarContenido(),
+        )
+        assertEquals(SemanaIso(2026, 41), (resultado as? ResultadoSemana.SinContenido)?.semanaIso ?: error("se esperaba SinContenido, fue $resultado"))
+        // La semana 41 SI esta en el calendario parcial (empieza ahi), pero
+        // contenido/ todavia no tiene ninguna ficha de-A2 embebida (esa es la
+        // tarea siguiente) -- por eso "sin contenido", no un crash.
+        assertEquals(RazonSinContenido.SEMANA_FUERA_DE_LA_EDICION, resultado.razon)
+    }
+
+    @Test
+    fun `una semana anterior al inicio de un calendario parcial (S39, antes de la 41) esta fuera de la edicion`() {
+        val resultado = resolverContenidoDeLaSemana(
+            fecha = LocalDate.of(2026, 9, 21), // lunes de la semana ISO 39, antes de la 41
+            idioma = Idioma.DE, nivel = Nivel.A2,
+            calendario = calendarioCargado(2026, Idioma.DE, Nivel.A2), // generado desde S41
+            contenidoPorId = cargarContenido(),
+        )
+        assertEquals(
+            ResultadoSemana.SinContenido(SemanaIso(2026, 39), Idioma.DE, Nivel.A2, RazonSinContenido.SEMANA_FUERA_DE_LA_EDICION),
+            resultado,
+        )
+    }
+
+    @Test
+    fun `una semana con calendario pero sin ficha embebida todavia se muestra sin contenido, no crashea`() {
+        // Los 7 calendarios parciales (de-A2/B1/C1/C2, en-A2/B1/C2) ya estan
+        // embebidos; sus fichas todavia no (tarea siguiente, ver FALTANTES.md).
+        // El cargador no debe asumir que "hay calendario" implica "hay ficha".
+        for (nivel in listOf(Nivel.A2, Nivel.B1, Nivel.C1, Nivel.C2)) {
+            val resultado = resolverContenidoDeLaSemana(
+                fecha = LocalDate.of(2026, 10, 5), // S41, primera semana del calendario parcial
+                idioma = Idioma.DE, nivel = nivel,
+                calendario = calendarioCargado(2026, Idioma.DE, nivel),
+                contenidoPorId = cargarContenido(),
+            )
+            assertTrue(
+                "se esperaba SinContenido para DE-$nivel S41, fue $resultado",
+                resultado is ResultadoSemana.SinContenido,
+            )
+        }
+    }
+
     @Test
     fun `calendarioCargado distingue las tres celdas de la matriz en assets reales`() {
         assertTrue(calendarioCargado(2026, Idioma.DE, Nivel.B2) is CalendarioCargado.Encontrado)
         assertTrue(calendarioCargado(2026, Idioma.EN, Nivel.C1) is CalendarioCargado.Encontrado)
-        assertEquals(CalendarioCargado.SinCalendarioParaIdiomaONivel, calendarioCargado(2026, Idioma.DE, Nivel.A2))
+        assertEquals(CalendarioCargado.SinCalendarioParaIdiomaONivel, calendarioCargado(2026, Idioma.FR, Nivel.B2))
         assertEquals(CalendarioCargado.SinCalendarioParaElAnio, calendarioCargado(2027, Idioma.DE, Nivel.B2))
     }
 
@@ -203,11 +256,15 @@ class ResolutorSemanaTest {
     // distinguir cuales existen de verdad, cosa que idiomasConContenido solo no permite ---
 
     @Test
-    fun `nivelesConContenido en los assets reales da B2 y C1 para ingles, y solo B2 para aleman`() {
+    fun `nivelesConContenido en los assets reales da los cinco niveles para aleman e ingles`() {
+        // Desde los 7 calendarios parciales (semana 41-53, sept 2026): DE y EN
+        // ya cubren A2-C2 en 2026, aunque `contenido` todavia solo tenga las
+        // fichas del piloto (B2/C1) -- calendario y contenido son capas
+        // independientes, ver `una semana con calendario pero sin ficha embebida...`.
         val nombres = File(carpetaAssets(), "calendario").list()!!.toList()
         val niveles = nivelesConContenido(nombres)
-        assertEquals(setOf(Nivel.B2, Nivel.C1), niveles.getValue(Idioma.EN))
-        assertEquals(setOf(Nivel.B2), niveles.getValue(Idioma.DE))
+        assertEquals(Nivel.entries.toSet(), niveles.getValue(Idioma.EN))
+        assertEquals(Nivel.entries.toSet(), niveles.getValue(Idioma.DE))
     }
 
     @Test

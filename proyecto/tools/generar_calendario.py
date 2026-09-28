@@ -59,7 +59,7 @@ def rango_fechas(anio, semana):
     dom = date.fromisocalendar(anio, semana, 7)
     return lun, dom
 
-def repartir(skills, libres, nivel):
+def repartir(skills, libres, nivel, parcial=False):
     """Decide cuantas veces aparece cada skill para llenar exactamente el anio.
 
     Regla vigente: **todo skill del par (idioma, nivel) aparece al menos una
@@ -81,17 +81,44 @@ def repartir(skills, libres, nivel):
     TOPE_APARICIONES. En los niveles bajos, donde hay muchas menos skills que
     semanas, esto hace que todo el banco aparezca tres o cuatro veces, que es
     exactamente lo que se quiere en A2.
+
+    `parcial=True` (calendarios que no cubren el anio entero, p.ej. lo que
+    queda de 2026 despues del piloto) relaja "todo skill aparece": si no
+    entran todos, se eligen `libres` skills -- uno cada uno, sin machaque --
+    con prioridad fundacional > nucleo > resto (desempate por id) y el resto
+    queda afuera para la proxima edicion. El descarte se imprime por stderr,
+    nunca en silencio: quien lea la salida tiene que poder ver que quedo
+    pendiente.
     """
     n = len(skills)
     if n == 0:
         return {}
     if n > libres:
-        # Ni una vez cada uno. No se puede resolver repartiendo: el banco de ese
-        # par es mas grande que el anio y hay que achicarlo o partirlo en dos
-        # ediciones. Fallar aca es mejor que descartar skills en silencio.
-        raise ValueError(
-            f"{nivel}: {n} skills no entran en {libres} semanas ni una vez cada uno. "
-            f"Achicar el banco de este par o repartirlo en dos anios.")
+        if not parcial:
+            # Ni una vez cada uno. No se puede resolver repartiendo: el banco de
+            # ese par es mas grande que el anio y hay que achicarlo o partirlo en
+            # dos ediciones. Fallar aca es mejor que descartar skills en silencio.
+            raise ValueError(
+                f"{nivel}: {n} skills no entran en {libres} semanas ni una vez cada uno. "
+                f"Achicar el banco de este par o repartirlo en dos anios.")
+        fundacional = sorted((s for s in skills if s.get("fundacional")), key=lambda s: s["id"])
+        nucleo = sorted(
+            (s for s in skills if not s.get("fundacional") and nivel in s.get("repiteEn", [])),
+            key=lambda s: s["id"],
+        )
+        resto = sorted(
+            (s for s in skills if not s.get("fundacional") and nivel not in s.get("repiteEn", [])),
+            key=lambda s: s["id"],
+        )
+        prioridad = fundacional + nucleo + resto
+        elegidos, afuera = prioridad[:libres], prioridad[libres:]
+        if afuera:
+            print(
+                f"{nivel}: {len(afuera)} skills quedan afuera de este calendario parcial "
+                f"(para la proxima edicion): {', '.join(s['id'] for s in afuera)}",
+                file=sys.stderr,
+            )
+        return {s["id"]: 1 for s in elegidos}
 
     plan = {s["id"]: 1 for s in skills}
     nucleo = [s for s in skills if nivel in s.get("repiteEn", [])]
@@ -117,7 +144,7 @@ def repartir(skills, libres, nivel):
             break
     return plan
 
-def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=None):
+def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=None, parcial=False):
     """Reparte skills y temas en el anio.
 
     El algoritmo es constructivo, no un greedy que rellena semana a semana.
@@ -147,7 +174,7 @@ def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=Non
     fijadas = {int(w): (tuple(v["tarea"]), v["topic"]) for w, v in fijas.items()}
     rnd = random.Random(anio)
 
-    plan_ap = repartir(skills, len(libres) - len(fijadas), nivel)
+    plan_ap = repartir(skills, len(libres) - len(fijadas), nivel, parcial=parcial)
     skills = [s for s in skills if s["id"] in plan_ap]
     idx = {s["id"]: s for s in skills}
 
@@ -174,8 +201,13 @@ def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=Non
                         continue
                     if previas and abs(w - min(previas, key=lambda y: abs(y - w))) > SEP_MAX:
                         continue
+                    # Relativo al inicio del calendario, no a la semana ISO
+                    # absoluta: con desde=1 (anio completo) es lo mismo de
+                    # siempre, pero un calendario parcial que arranca en la
+                    # 41 necesita que "debutar tarde" se mida desde ESA
+                    # semana -- si no, ningun fundacional entraria nunca.
                     if idx[sk["id"]].get("fundacional") and not previas \
-                       and w > FUNDACIONAL_MAX:
+                       and (w - desde + 1) > FUNDACIONAL_MAX:
                         continue
                     ranura[w] = (sk["id"], j + 1)
                     break
@@ -237,9 +269,14 @@ def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=Non
             conteo_topic[topic] += 1
         if fallo:
             continue
-        # Regla dura: ningun topic puede quedar fuera del anio. Si el reparto
-        # dejo alguno en cero se reintenta con otra semilla en vez de aceptarlo.
-        if any(c == 0 for c in conteo_topic.values()):
+        # Regla dura en un anio completo: ningun topic puede quedar fuera.
+        # En modo parcial hay menos semanas de contenido que temas (12 y 14,
+        # p.ej.), asi que "todos" es imposible por diseno -- se pide el
+        # maximo posible, min(temas, semanas de contenido). Si el reparto no
+        # llega, se reintenta con otra semilla en vez de aceptarlo.
+        cubiertos = sum(1 for c in conteo_topic.values() if c > 0)
+        requeridos = min(len(topics), L) if parcial else len(topics)
+        if cubiertos < requeridos:
             continue
         break
     else:
@@ -265,7 +302,7 @@ def generar(anio, idioma, nivel, banco, topics, desde=1, intentos=400, fijas=Non
     return filas
 
 
-def verificar(filas, topics=None):
+def verificar(filas, topics=None, parcial=False):
     """Comprueba las reglas duras sobre el resultado. Nunca confiar sin esto."""
     errores = []
     prev = None
@@ -291,10 +328,20 @@ def verificar(filas, topics=None):
 
     # Cobertura de topics: los 14 temas tienen que aparecer al menos una vez.
     # Esta comprobacion no existia y por eso en-B2 perdio T11 sin que saltara nada.
+    # En modo parcial la exigencia se relaja a min(temas, semanas de
+    # contenido): con menos semanas que temas, "todos" es imposible por
+    # diseno, no un error -- ver generar().
     usados = {tp for _, _, _, tipo, _, _, tp, _ in filas if tipo == "content" and tp}
-    faltan = sorted(set(topics) - usados) if topics else []
-    if faltan:
-        errores.append(f"topics que no aparecen en todo el anio: {', '.join(faltan)}")
+    if topics:
+        if parcial:
+            n_contenido = sum(1 for f in filas if f[3] == "content")
+            requeridos = min(len(topics), n_contenido)
+            if len(usados) < requeridos:
+                errores.append(f"cobertura de topics (parcial): {len(usados)}/{requeridos} temas distintos")
+        else:
+            faltan = sorted(set(topics) - usados)
+            if faltan:
+                errores.append(f"topics que no aparecen en todo el anio: {', '.join(faltan)}")
 
     # El order tiene que crecer con la semana: la aparicion n-esima de un skill
     # es la n-esima del anio, porque de ahi sale la profundidad creciente. Sin
@@ -321,6 +368,11 @@ def main():
     ap.add_argument("--desde", type=int, default=1)
     ap.add_argument("--formato", choices=["md", "json"], default="md")
     ap.add_argument("--fijas", help="JSON con semanas fijadas a mano")
+    ap.add_argument(
+        "--parcial", action="store_true",
+        help="Calendario que no cubre el anio entero (p.ej. lo que queda de 2026 tras el piloto): "
+             "relaja 'todo skill aparece' y 'todos los temas aparecen' a lo que entra en las semanas dadas.",
+    )
     a = ap.parse_args()
 
     d = json.loads(Path(a.banco).read_text(encoding="utf-8"))
@@ -328,9 +380,9 @@ def main():
     if a.fijas:
         fijas = json.loads(Path(a.fijas).read_text(encoding="utf-8")).get(f"{a.anio}-{a.idioma}-{a.nivel}", {})
     filas = generar(a.anio, a.idioma, a.nivel, d["skills"], d["topics"], a.desde,
-                    fijas=fijas)
+                    fijas=fijas, parcial=a.parcial)
 
-    errs = verificar(filas, d["topics"])
+    errs = verificar(filas, d["topics"], parcial=a.parcial)
     for e in errs:
         print("REGLA VIOLADA:", e, file=sys.stderr)
 

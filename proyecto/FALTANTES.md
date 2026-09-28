@@ -264,3 +264,55 @@ default en esta máquina) no trae `jlink`, necesario para el nuevo procesador
 de anotaciones de Room (KSP). Hace falta `jdk-21.0.5.11-hotspot` (la carpeta
 hermana, con JDK completo) — `$env:JAVA_HOME` apuntando ahí antes de compilar.
 No es nada del código ni del repo, es la instalación de Java de esta máquina.
+
+## 11. Calendarios parciales 2026 (semana 41 en adelante) — ✅ 7 pares, por Code (sept 2026)
+
+`generar_calendario.py` tiene un modo `--parcial` nuevo, para calendarios que
+no cubren el año entero. Sin tocar el comportamiento de año completo ni el
+piloto (de-B2, en-B2, en-C1, semanas 37-53, congelado por regla dura #11):
+
+- **Skills:** con `--parcial`, si el banco no entra en las semanas libres se
+  eligen tantos como semanas haya (uno cada uno, sin machaque). Prioridad
+  fundacional > núcleo (`repiteEn` incluye el nivel) > resto, desempate por
+  id. Los que no entran se imprimen por stderr, no se descartan en silencio.
+- **Temas:** se exige `min(14, semanas de contenido)` temas distintos, no los
+  14 — con 12 semanas de contenido, 14 es imposible por diseño.
+- **Debut fundacional:** relativo al inicio del calendario (`w - desde + 1`),
+  no a la semana ISO absoluta — con `desde=1` es exactamente lo mismo de
+  siempre.
+
+Generados los 7 pares que faltaban de 2026 (de-A2/B1/C1/C2, en-A2/B1/C2),
+semanas 41-53, repaso en la 46, en
+`proyecto/data/calendarios/2026-{idioma}-{nivel}.json` (mismo formato que ya
+usan el piloto y los 10 pares de 2027). Skills elegidos y descartados por
+par, tal cual imprimió el script:
+
+| Par | Elegidos (12) | Afuera (para 2027) |
+|---|---|---|
+| de-A2 | F01,G01,F03,F04,G05,F05,G02,G07,G04,G03,F12,F02 | G06, G18, V01 (3) |
+| de-B1 | F01,F08,F04,F05,G03,F06,F11,G07,G02,G01,F07,F02 | F12,F13,V02,V03,V05,V06,V08,G04,G05,G06,G08,G09,G10,G11,G13,G18,G19,G22,G23,G24 (20) |
+| de-C1 | F01,F08,F04,F05,K02,F06,F09,K03,K01,G02,F07,F02 | F10,F11,F12,F13,F14,G05,G09,G10,G11,G12,G13,G14,G15,G16,G21,G26,G27,K04,K05,K06,K08,V02,V03,V04,V05,V06,V07,V08,V09 (29) |
+| de-C2 | F01,F11,F07,F08,K02,F09,F13,K03,K01,F14,F10,F02 | K04,K05,K06,V02,V05,V06,V07,V08,V09,G12,G14,G25,G26,K07,K08 (15) |
+| en-A2 | F01,F07,F03,F04,G03,F05,F08,G04,G02,G01,F06,F02 | G05,G09,G14,G18,V01,V02 (6) |
+| en-B1 | F01,F09,F03,F04,F16,F05,F10,G02,F15,F11,F08,F02 | G03,G04,G25,V02,V04,V07,G05,G06,G07,G08,G09,G10,G11,G13,G14,G17,G18,G19 (18) |
+| en-C2 | F01,F13,F04,F10,F18,F11,F14,K01,F17,F15,F12,F02 | K02,K03,K04,K05,V03,V05,V06,V07,V08,V09,G15,G16,G20,K06 (14) |
+
+(Prefijo del idioma omitido en la tabla por espacio: `de-A2` "F01" es
+`DE-F01`, etc.)
+
+`generarCalendarioAssets` (`app/build.gradle.kts`) ya no lee `semanas-fijas.json`
+para decidir qué combos embeber: ahora deriva la lista de qué archivos
+`2026-*.json` existen en `data/calendarios/` (regla dura #10, nunca a mano).
+Con esto los 10 pares de 2026 (3 piloto + 7 parciales) quedan embebidos en
+`assets/calendario/`; **2027 sigue sin embeberse** (las semanas de repaso
+2027 siguen sin dueño, sección 8).
+
+🔴 **`contenido/` todavía no tiene fichas para estos 7 pares** — tarea
+explícitamente diferida a los pasos siguientes. Efecto visible mientras
+tanto: como `nivelesConContenido` deriva disponibilidad solo de
+`assets/calendario/` (regla dura #10), Ajustes ya ofrece los cinco niveles en
+alemán e inglés, pero las semanas 41-53 de los 7 pares nuevos muestran "sin
+contenido" (no crashean: verificado con test — `EntradaCalendario` no tenía
+el campo `desafioFinde` que trae todo calendario nuevo desde el Survival
+trimestral, se agregó como opcional para que el parser estricto no rompiera
+al cargar ninguno de los 10).

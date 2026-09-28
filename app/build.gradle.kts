@@ -108,9 +108,15 @@ val generarCalendarioAssets by tasks.registering {
     group = "build"
     description = "Copia a assets/calendario/ los calendarios congelados de data/calendarios/."
 
-    // Los combos a embeber salen de semanas-fijas.json, igual que antes: es
-    // la lista de que (anio, idioma, nivel) del piloto 2026 tiene contenido
-    // fijado a mano. Lo que cambio es el origen del calendario en si.
+    // Los combos a embeber se derivan de que archivos 2026-*.json existen en
+    // data/calendarios/ (regla dura #10: se deriva del contenido, nunca se
+    // escribe a mano) -- NO de 2027-*.json, que todavia no se embebe (las
+    // semanas de repaso 2027 no tienen dueno, ver FALTANTES.md seccion 8).
+    // Hoy son 10: los 3 del piloto (de-B2, en-B2, en-C1, congelados de
+    // semanas-fijas.json) mas los 7 parciales nuevos (de-A2/B1/C1/C2,
+    // en-A2/B1/C2, semanas 41-53) que generar_calendario.py --parcial
+    // escribio ahi. El piloto no se toca: sigue siendo el mismo archivo,
+    // copiado igual que antes.
     //
     // Antes esta tarea invocaba generar_calendario.py contra el banco.json
     // vivo en cada build. Eso dejo de funcionar cuando banco.json crecio a
@@ -125,32 +131,27 @@ val generarCalendarioAssets by tasks.registering {
     //
     // El piloto 2026 esta congelado (CLAUDE.md, regla dura #11: "no se
     // regenera"), asi que recalcularlo en cada build contra un banco.json
-    // que sigue creciendo por otras razones (2027) nunca fue correcto. El
-    // calendario real ya esta precalculado y verificado en
-    // data/calendarios/2026-{idioma}-{nivel}.json (mismo formato que ya usan
-    // los 10 pares de 2027 en data/calendarios/2027-*.json): 14 semanas de
-    // semanas-fijas.json + las 3 especiales de contenido/nucleos
-    // (REVIEW-*-S40, SURVIVAL-*-S44, REVIEW-*-S48). Esta tarea ahora solo
-    // copia ese archivo ya congelado; no ejecuta ningun script de Python.
+    // que sigue creciendo por otras razones (2027) nunca fue correcto. Esta
+    // tarea ahora solo copia calendarios ya congelados; no ejecuta ningun
+    // script de Python.
     val calendarios = File(rootDir, "proyecto/data/calendarios")
-    val fijas = File(rootDir, "proyecto/data/semanas-fijas.json")
     val salida = File(projectDir, "src/main/assets/calendario")
+    val patronNombre = Regex("""^2026-([a-z]{2})-([A-Z]\d)\.json$""")
 
     inputs.dir(calendarios)
-    inputs.file(fijas)
     outputs.dir(salida)
 
     doLast {
-        val combos = groovy.json.JsonSlurper().parse(fijas) as Map<*, *>
-
         salida.deleteRecursively()
         salida.mkdirs()
 
-        for (clave in combos.keys) {
-            val (anio, idioma, nivel) = (clave as String).split("-")
-            val origen = File(calendarios, "$clave.json")
-            check(origen.isFile) { "Falta el calendario congelado $origen para el combo $clave de semanas-fijas.json." }
-            origen.copyTo(File(salida, "calendario_${anio}_${idioma}_${nivel}.json"))
+        val archivos2026 = calendarios.listFiles { f -> patronNombre.matches(f.name) }
+            ?: error("No se encontro $calendarios")
+        check(archivos2026.isNotEmpty()) { "Ningun calendario 2026-*.json en $calendarios." }
+
+        for (origen in archivos2026) {
+            val (idioma, nivel) = patronNombre.matchEntire(origen.name)!!.destructured
+            origen.copyTo(File(salida, "calendario_2026_${idioma}_${nivel}.json"))
         }
     }
 }
