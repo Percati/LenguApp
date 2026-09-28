@@ -109,8 +109,13 @@ def recolectar(base):
     return datos
 
 
-def hoja_idioma(wb, idioma, por_nivel):
+def hoja_idioma(wb, idioma, por_nivel, solo_pendientes=False):
     bases = [i for i in IDIOMAS if i != idioma]
+    if solo_pendientes:
+        por_nivel = {niv: [f for f in filas if any(b not in f[2] for b in bases)]
+                     for niv, filas in por_nivel.items()}
+        if not any(por_nivel.values()):
+            return 0
     ws = wb.create_sheet(NOMBRE[idioma][:31])
     ws.freeze_panes = "A4"
     ws["A1"] = f"Traducciones — {NOMBRE[idioma]} (idioma que se aprende)"
@@ -220,6 +225,29 @@ def _campos_aparicion(a):
         yield f"microtareas[{i}].texto", mt.get("texto")
 
 
+def semanas_por_aparicion(base):
+    """{(idioma, nivel, anio, skillId, order): semana} desde los calendarios.
+
+    Las apariciones no guardan el numero de semana: lo fija el calendario. Se
+    usa solo para rotular y ordenar las filas del maestro por semana. Si la
+    carpeta no esta, se devuelve vacio y el maestro sale sin numero de semana.
+    """
+    out = {}
+    carpeta = base.parent.joinpath("data", "calendarios")
+    if not carpeta.is_dir():
+        return out
+    for p in sorted(carpeta.glob("*.json")):
+        try:
+            anio, idi, niv = p.stem.split("-")
+        except ValueError:
+            continue
+        for sem in json.loads(p.read_text(encoding="utf-8")):
+            if sem.get("skillId"):
+                clave = (idi, niv, int(anio), sem["skillId"], sem.get("order"))
+                out.setdefault(clave, sem["semana"])
+    return out
+
+
 def recolectar_prosa(base):
     """{(idioma, nivel): [(origen, ruta, texto, traducciones, otros_usos)]}.
 
@@ -229,6 +257,7 @@ def recolectar_prosa(base):
     aparece ese texto. `otros_usos` lista los demas lugares, solo informativo.
     """
     crudo = defaultdict(list)
+    semanas = semanas_por_aparicion(base)
 
     for p in sorted(base.joinpath("nucleos").glob("*.json")):
         d = json.loads(p.read_text(encoding="utf-8"))
@@ -239,19 +268,22 @@ def recolectar_prosa(base):
             if v is None:
                 continue
             texto, trads = _valor(v)
-            crudo[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads))
+            crudo[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads, 0))
 
     for p in sorted(base.joinpath("ocurrencias").glob("*.json")):
         d = json.loads(p.read_text(encoding="utf-8"))
         if d["nivel"] not in NIVELES_BILINGUES:
             continue
         for a in d["apariciones"]:
-            origen = f'{d["idioma"]}-{d["nivel"]}-{d["anio"]} · {a["skillId"]} · {a.get("topicId","")} · ap{a.get("order","")}'
+            sem = semanas.get((d["idioma"], d["nivel"], d["anio"], a["skillId"], a.get("order")))
+            etiqueta = f'S{sem:02d} · ' if sem else ''
+            origen = (f'{etiqueta}{d["idioma"]}-{d["nivel"]}-{d["anio"]} · {a["skillId"]} · '
+                      f'{a.get("topicId","")} · ap{a.get("order","")}')
             for ruta, v in _campos_aparicion(a):
                 if v is None:
                     continue
                 texto, trads = _valor(v)
-                crudo[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads))
+                crudo[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads, sem or 0))
 
     return _agrupar(crudo)
 
@@ -268,31 +300,40 @@ def recolectar_repaso(base):
             if v is None:
                 continue
             texto, trads = _valor(v)
-            crudo[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads))
+            crudo[(d["idioma"], d["nivel"])].append((origen, ruta, texto, trads, d.get("semana", 0)))
     return _agrupar(crudo)
 
 
 def _agrupar(crudo):
-    """Junta en una fila los textos repetidos dentro de la misma combinacion."""
+    """Junta en una fila los textos repetidos y ordena por primera semana.
+
+    Un texto que aparece en varias semanas se traduce una sola vez y queda en
+    la primera donde aparece; las demas van en "otros usos".
+    """
     datos = {}
     for clave, filas in crudo.items():
         agrupado = {}
         orden = []
-        for origen, ruta, texto, trads in filas:
+        for origen, ruta, texto, trads, semana in filas:
             k = texto if texto is not None else trads.get(clave[0])
             if k not in agrupado:
-                agrupado[k] = [origen, ruta, texto, dict(trads), []]
+                agrupado[k] = [origen, ruta, texto, dict(trads), [], semana]
                 orden.append(k)
             else:
                 agrupado[k][3].update({c: v for c, v in trads.items() if c not in agrupado[k][3]})
                 agrupado[k][4].append(f"{origen} · {ruta}")
-        datos[clave] = [tuple(agrupado[k]) for k in orden]
+        orden.sort(key=lambda k: (agrupado[k][5], agrupado[k][0]))
+        datos[clave] = [tuple(agrupado[k][:5]) for k in orden]
     return datos
 
 
 def hoja_prosa(wb, idioma, nivel, filas, prefijo="Prosa", rotulo="Prosa bilingüe",
-               limites=True, nota_extra=""):
+               limites=True, nota_extra="", solo_pendientes=False):
     bases = [i for i in IDIOMAS if i != idioma]
+    if solo_pendientes:
+        filas = [f for f in filas if any(b not in f[3] for b in bases)]
+        if not filas:
+            return 0
     ws = wb.create_sheet(f"{prefijo} {idioma.upper()} {nivel}"[:31])
     ws.freeze_panes = "A4"
     ws["A1"] = f"{rotulo} — {NOMBRE[idioma]} {nivel}"
@@ -350,6 +391,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--contenido", default="../contenido")
     ap.add_argument("--salida", default="../traducciones-maestro.xlsx")
+    ap.add_argument("--solo-pendientes", action="store_true",
+                    help="deja fuera las filas ya traducidas por completo (util para un lote parcial)")
     a = ap.parse_args()
     datos = recolectar(Path(a.contenido))
     prosa = recolectar_prosa(Path(a.contenido))
@@ -359,7 +402,8 @@ def main():
     idx = wb.active; idx.title = "ÍNDICE"
     idx["A1"] = "Maestro de traducciones pendientes"
     idx["A1"].font = Font(bold=True, size=14)
-    idx["A2"] = ("Dos bloques: una hoja por idioma que se aprende con vocabulario y "
+    idx["A2"] = (("SOLO PENDIENTES: las filas ya traducidas por completo no están. " if a.solo_pendientes else "")
+                 + "Dos bloques: una hoja por idioma que se aprende con vocabulario y "
                  "expresiones, y una hoja por combinación (idioma + nivel) con toda la prosa "
                  "de las fichas bilingües A2/B1. Rellenar solo las celdas en ámbar. "
                  "No incluye contraste ni errores contrastivos: eso no es traducción, es "
@@ -376,7 +420,7 @@ def main():
     fila = 5
     total = 0
     for idi in sorted(datos, key=lambda x: NOMBRE[x]):
-        n = hoja_idioma(wb, idi, datos[idi])
+        n = hoja_idioma(wb, idi, datos[idi], solo_pendientes=a.solo_pendientes)
         idx.cell(row=fila, column=1, value=NOMBRE[idi])
         idx.cell(row=fila, column=2, value=n)
         total += n
@@ -387,8 +431,11 @@ def main():
     idx.cell(row=fila, column=2).fill = CABEZA
     fila += 1
     for (idi, niv) in sorted(prosa, key=lambda x: (NOMBRE[x[0]], ORDEN_NIVEL.index(x[1]))):
-        n = hoja_prosa(wb, idi, niv, prosa[(idi, niv)])
-        idx.cell(row=fila, column=1, value=f"{NOMBRE[idi]} {niv} — {len(prosa[(idi, niv)])} textos")
+        n = hoja_prosa(wb, idi, niv, prosa[(idi, niv)], solo_pendientes=a.solo_pendientes)
+        pend = sum(1 for f in prosa[(idi, niv)]
+                   if any(b not in f[3] for b in IDIOMAS if b != idi))
+        etiqueta = f"{NOMBRE[idi]} {niv} — {pend if a.solo_pendientes else len(prosa[(idi, niv)])} textos"
+        idx.cell(row=fila, column=1, value=etiqueta)
         idx.cell(row=fila, column=2, value=n)
         total += n
         fila += 1
@@ -400,10 +447,14 @@ def main():
     for (idi, niv) in sorted(repaso, key=lambda x: (NOMBRE[x[0]], ORDEN_NIVEL.index(x[1]))):
         n = hoja_prosa(wb, idi, niv, repaso[(idi, niv)], prefijo="Repaso",
                        rotulo="Semanas de repaso", limites=False,
+                       solo_pendientes=a.solo_pendientes,
                        nota_extra="Estos campos no tienen límite de longitud. La palabra objetivo "
                                   "(vocabulario, conector, estructura) queda en el idioma que se "
                                   "aprende; el día, los minutos y el número de semana sí se traducen.")
-        idx.cell(row=fila, column=1, value=f"{NOMBRE[idi]} {niv} — {len(repaso[(idi, niv)])} textos")
+        pend = sum(1 for f in repaso[(idi, niv)]
+                   if any(b not in f[3] for b in IDIOMAS if b != idi))
+        etiqueta = f"{NOMBRE[idi]} {niv} — {pend if a.solo_pendientes else len(repaso[(idi, niv)])} textos"
+        idx.cell(row=fila, column=1, value=etiqueta)
         idx.cell(row=fila, column=2, value=n)
         total += n
         fila += 1
