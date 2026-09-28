@@ -91,6 +91,10 @@ todo localmente con Piper); las referencias a él en `CLAUDE.md` (raíz y
 proyecto/), `PROMPT-CLAUDE-CODE.md` y `manifiesto_audio.py` se actualizaron
 para no apuntar a un archivo que ya no existe.
 
+🔴 **Pendientes tras los redemittel nuevos y los packs 2026: 1864 textos** (1834 a grabar; 30 filas son el mismo texto en otro nivel). 1003 expresiones de los bloques de redemittel agregados en septiembre y 861 ítems de vocabulario (807 de los 84 packs 2026, 52 de packs reescritos por la corrección ortográfica CH y los ítems residuales de en-C1). Ejemplos: 0 pendientes. Excel entregado con `--solo-pendientes --anio 2026`.
+
+🟡 **Bug corregido en `exportar_audio_maestro.py`:** desde la fase de traducciones, `texto`, `expresion` e `item` de A2/B1 son `{idioma: texto}`. El exportador serializaba el diccionario entero como texto, con lo que 191 ejemplos ya grabados figuraban como pendientes y el nombre sugerido salía mal. Ahora toma la clave del idioma que se aprende, igual que `validar_apariciones.py`.
+
 ## 6. Traducciones — ✅ cerrado, con una armonización diferida
 
 No queda contenido pendiente de traducir: prosa A2/B1 (95 núcleos y 192

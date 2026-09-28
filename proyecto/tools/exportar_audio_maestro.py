@@ -78,7 +78,12 @@ def celda_de(estado, idioma, niv, k):
     return True, marca or "Y", archivo
 
 
-def limpio(t):
+def limpio(t, idioma=None):
+    # Desde la fase de traducciones, los campos de A2/B1 son {idioma: texto}.
+    # El audio es del idioma que se aprende, asi que se toma esa clave; es la
+    # misma que usa validar_apariciones.py para buscar la clave en audio-estado.
+    if isinstance(t, dict):
+        t = t.get(idioma, next(iter(t.values())))
     return re.sub(r"\*+", "", str(t)).strip()
 
 
@@ -118,14 +123,14 @@ def recolectar(base):
         idi, niv, sid = d["idioma"], d["nivel"], d["skillId"]
         for e in d.get("ejemplos", []):
             if e.get("audio"):
-                t = limpio(e["texto"])
+                t = limpio(e["texto"], idi)
                 k = (niv, "Ejemplo", t)
                 ORIGENES[(idi,) + k].add(sid)
                 if k not in vistos[idi]:
                     vistos[idi].add(k)
                     datos[idi][niv].append(("Ejemplo", t, sid))
         for r in d.get("redemittel", []):
-            t = limpio(r["expresion"])
+            t = limpio(r["expresion"], idi)
             k = (niv, "Expresión", t)
             ORIGENES[(idi,) + k].add(sid)
             if k not in vistos[idi]:
@@ -136,7 +141,7 @@ def recolectar(base):
         d = json.loads(p.read_text(encoding="utf-8"))
         idi, niv = d["idioma"], d["nivel"]
         for v in d.get("vocabulario", []):
-            t = limpio(v["item"])
+            t = limpio(v["item"], idi)
             k = (niv, "Vocabulario", t)
             if k not in vistos[idi]:
                 vistos[idi].add(k)
@@ -164,7 +169,7 @@ def primeras_semanas(raiz, anio):
                 pack = json.loads(pk.read_text(encoding="utf-8"))
                 textos += [("Vocabulario", v["item"]) for v in pack.get("vocabulario", [])]
             for tipo, t in textos:
-                k = (idi, niv, tipo, limpio(t))
+                k = (idi, niv, tipo, limpio(t, idi))
                 sem[k] = min(sem.get(k, 99), s)
     return sem
 
