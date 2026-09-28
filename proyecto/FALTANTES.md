@@ -226,7 +226,17 @@ que aparezca un caso genuinamente distinto a los dos de arriba.
 
 ## 9. Piloto 2026
 
-Alemán B2, inglés B2 e inglés C1 siguen completos bajo el esquema viejo. No tocar hasta que se resuelva el id con año (sección 4).
+Alemán B2, inglés B2 e inglés C1 siguen completos bajo el esquema viejo. No tocar hasta
+que se resuelva el id con año (sección 4).
+
+Dos transiciones de continuidad del piloto quedan fuera del rango 30-80 % y no se pueden
+arreglar sin tocar contenido congelado: `de-B2-2026-T01 1->2` (7 %) y `en-C1-2026-T03
+1->2` (93 %). Desde sept-2026 `validar_packs.py` las lista como aviso, con la constante
+`DEUDA_PILOTO`, para que no tapen problemas reales del resto del calendario. Si algún día
+se descongela el piloto, hay que quitarlas de esa constante y rehacer esas dos cadenas.
+
+Packs 2026 de los 7 pares parciales (de-A2/B1/C1/C2, en-A2/B1/C2): 84 packs escritos en
+sept-2026, 12 por par, uno por semana de contenido. Cobertura 126/126 en `--anio 2026`.
 
 ## 10. Features de app — ✅ implementadas por Code (sept 2026)
 
