@@ -8,7 +8,14 @@
    "packId": "en-A2-2026-T05-1",
    "order": 1,
    "topicId": "T05",
-   "subtitulo": "An opinion about a trip",
+   "subtitulo": {
+    "en": "An opinion about a trip",
+    "de": "Meinung über eine Reise",
+    "es": "Opinión sobre un viaje",
+    "fr": "Opinion sur un voyage",
+    "it": "Opinione su un viaggio",
+    "pt": "Opinião sobre uma viagem"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -16,28 +23,63 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Write five sentences about your last trip: what was good and what wasn't.",
+    "consigna": {
+     "en": "Write five sentences about your last trip: what was good and what wasn't.",
+     "de": "Schreiben Sie fünf Sätze über Ihre letzte Reise: Was war gut und was nicht?",
+     "es": "Escribe cinco oraciones sobre tu último viaje: ¿qué estuvo bien y qué no?",
+     "fr": "Écrivez cinq phrases sur votre dernier voyage : qu'est-ce qui était bien et qu'est-ce qui ne l'était pas ?",
+     "it": "Scrivi cinque frasi sul tuo ultimo viaggio: cosa è andato bene e cosa no?",
+     "pt": "Escreva cinco frases sobre sua última viagem: o que foi bom e o que não foi?"
+    },
     "requisitos": [
      "two sentences with *I think*",
      "two reasons with *because*",
-     "use *a seat*, *a single room* and *a return ticket*"
+     {
+      "en": "use *a seat*, *a single room* and *a return ticket*",
+      "de": "*a seat*, *a single room* und *a return ticket* verwenden",
+      "es": "usar *a seat*, *a single room* y *a return ticket*",
+      "fr": "utiliser *a seat*, *a single room* et *a return ticket*",
+      "it": "usare *a seat*, *a single room* e *a return ticket*",
+      "pt": "usar *a seat*, *a single room* e *a return ticket*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Write three sentences: *I think the trip was…, because…*"
+     "texto": {
+      "en": "Write three sentences: *I think the trip was…, because…*",
+      "de": "Schreiben Sie drei Sätze: *I think the trip was…, because…*",
+      "es": "Escribe tres oraciones: *I think the trip was…, because…*",
+      "fr": "Écrivez trois phrases : *I think the trip was…, because…*",
+      "it": "Scrivi tre frasi: *I think the trip was…, because…*",
+      "pt": "Escreva três frases: *I think the trip was…, because…*"
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Two sentences about *the timetable*: good or bad?"
+     "texto": {
+      "en": "Two sentences about *the timetable*: good or bad?",
+      "de": "Zwei Sätze über *the timetable*: gut oder schlecht?",
+      "es": "Dos oraciones sobre *the timetable*: ¿bueno o malo?",
+      "fr": "Deux phrases sur *the timetable* : bien ou mal ?",
+      "it": "Due frasi su *the timetable*: buono o cattivo?",
+      "pt": "Duas frases sobre *the timetable*: bom ou ruim?"
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: where do you *get on* and *get off*?"
+     "texto": {
+      "en": "Say it out loud for 60 seconds: where do you *get on* and *get off*?",
+      "de": "Sprechen Sie 60 Sekunden laut: Wo *get on* Sie und wo *get off*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿dónde *get on* y dónde *get off*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : où *get on* et où *get off* ?",
+      "it": "Parla ad alta voce per 60 secondi: dove *get on* e dove *get off*?",
+      "pt": "Fale em voz alta por 60 segundos: onde você *get on* e onde *get off*?"
+     }
     }
    ]
   },
@@ -46,7 +88,14 @@
    "packId": "en-A2-2026-T13-1",
    "order": 1,
    "topicId": "T13",
-   "subtitulo": "At the counter",
+   "subtitulo": {
+    "en": "At the counter",
+    "de": "Am Schalter",
+    "es": "En la ventanilla",
+    "fr": "Au guichet",
+    "it": "Allo sportello",
+    "pt": "No balcão"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -54,28 +103,77 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Write a dialogue: you go to the council office to pick something up.",
+    "consigna": {
+     "en": "Write a dialogue: you go to the council office to pick something up.",
+     "de": "Schreiben Sie einen Dialog: Sie gehen ins Gemeindeamt, um etwas abzuholen.",
+     "es": "Escribe un diálogo: vas a una oficina municipal a retirar algo.",
+     "fr": "Écrivez un dialogue : vous allez à la mairie pour récupérer quelque chose.",
+     "it": "Scrivi un dialogo: vai in un ufficio comunale a ritirare qualcosa.",
+     "pt": "Escreva um diálogo: você vai a um órgão municipal buscar alguma coisa."
+    },
     "requisitos": [
-     "three fixed phrases from the reference box",
-     "one polite request",
-     "use *a counter*, *to take a ticket* and *to sign*"
+     {
+      "en": "three fixed phrases from the reference box",
+      "de": "drei feste Wendungen aus dem Referenzkasten",
+      "es": "tres expresiones fijas del recuadro de referencia",
+      "fr": "trois expressions toutes faites de l'encadré de référence",
+      "it": "tre espressioni fisse del riquadro di riferimento",
+      "pt": "três expressões prontas do quadro de referência"
+     },
+     {
+      "en": "one polite request",
+      "de": "eine höfliche Bitte",
+      "es": "un pedido cortés",
+      "fr": "une demande polie",
+      "it": "una richiesta cortese",
+      "pt": "um pedido educado"
+     },
+     {
+      "en": "use *a counter*, *to take a ticket* and *to sign*",
+      "de": "*a counter*, *to take a ticket* und *to sign* verwenden",
+      "es": "usar *a counter*, *to take a ticket* y *to sign*",
+      "fr": "utiliser *a counter*, *to take a ticket* et *to sign*",
+      "it": "usare *a counter*, *to take a ticket* e *to sign*",
+      "pt": "usar *a counter*, *to take a ticket* e *to sign*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Write three questions you ask at an office."
+     "texto": {
+      "en": "Write three questions you ask at an office.",
+      "de": "Schreiben Sie drei Fragen, die Sie in einem Amt stellen.",
+      "es": "Escribe tres preguntas que harías en una oficina pública.",
+      "fr": "Écrivez trois questions que vous posez dans une administration.",
+      "it": "Scrivi tre domande da fare in un ufficio pubblico.",
+      "pt": "Escreva três perguntas que você faria em um órgão público."
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Two sentences about *picking something up*."
+     "texto": {
+      "en": "Two sentences about *picking something up*.",
+      "de": "Zwei Sätze über *picking something up*.",
+      "es": "Dos oraciones sobre *picking something up*.",
+      "fr": "Deux phrases sur *picking something up*.",
+      "it": "Due frasi su *picking something up*.",
+      "pt": "Duas frases sobre *picking something up*."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: you *forgot your password*. What do you say?"
+     "texto": {
+      "en": "Say it out loud for 60 seconds: you *forgot your password*. What do you say?",
+      "de": "Sprechen Sie 60 Sekunden laut: Sie haben *forgot your password*. Was sagen Sie?",
+      "es": "Habla en voz alta durante 60 segundos: *forgot your password*. ¿Qué dices?",
+      "fr": "Parlez à voix haute pendant 60 secondes : vous avez *forgot your password*. Que dites-vous ?",
+      "it": "Parla ad alta voce per 60 secondi: *forgot your password*. Cosa dici?",
+      "pt": "Fale em voz alta por 60 segundos: você *forgot your password*. O que diz?"
+     }
     }
    ]
   },
@@ -84,7 +182,14 @@
    "packId": "en-A2-2026-T06-1",
    "order": 1,
    "topicId": "T06",
-   "subtitulo": "Describing a garden",
+   "subtitulo": {
+    "en": "Describing a garden",
+    "de": "Einen Garten beschreiben",
+    "es": "Describir un jardín",
+    "fr": "Décrire un jardin",
+    "it": "Descrivere un giardino",
+    "pt": "Descrever um jardim"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -92,28 +197,77 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Describe a garden or a green space you know.",
+    "consigna": {
+     "en": "Describe a garden or a green space you know.",
+     "de": "Beschreiben Sie einen Garten oder eine Grünfläche, die Sie kennen.",
+     "es": "Describe un jardín o un espacio verde que conozcas.",
+     "fr": "Décrivez un jardin ou un espace vert que vous connaissez.",
+     "it": "Descrivi un giardino o uno spazio verde che conosci.",
+     "pt": "Descreva um jardim ou uma área verde que você conhece."
+    },
     "requisitos": [
-     "three adjectives for the place",
-     "one routine with *I usually…*",
-     "use *a plant*, *a season* and *to water plants*"
+     {
+      "en": "three adjectives for the place",
+      "de": "drei Adjektive für den Ort",
+      "es": "tres adjetivos para el lugar",
+      "fr": "trois adjectifs pour le lieu",
+      "it": "tre aggettivi per il luogo",
+      "pt": "três adjetivos para o lugar"
+     },
+     {
+      "en": "one routine with *I usually…*",
+      "de": "eine Routine mit *I usually…*",
+      "es": "una rutina con *I usually…*",
+      "fr": "une routine avec *I usually…*",
+      "it": "una routine con *I usually…*",
+      "pt": "uma rotina com *I usually…*"
+     },
+     {
+      "en": "use *a plant*, *a season* and *to water plants*",
+      "de": "*a plant*, *a season* und *to water plants* verwenden",
+      "es": "usar *a plant*, *a season* y *to water plants*",
+      "fr": "utiliser *a plant*, *a season* et *to water plants*",
+      "it": "usare *a plant*, *a season* e *to water plants*",
+      "pt": "usar *a plant*, *a season* e *to water plants*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Write five sentences about the place."
+     "texto": {
+      "en": "Write five sentences about the place.",
+      "de": "Schreiben Sie fünf Sätze über den Ort.",
+      "es": "Escribe cinco oraciones sobre el lugar.",
+      "fr": "Écrivez cinq phrases sur le lieu.",
+      "it": "Scrivi cinque frasi sul luogo.",
+      "pt": "Escreva cinco frases sobre o lugar."
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Three sentences about what you do when there's *rain*."
+     "texto": {
+      "en": "Three sentences about what you do when there's *rain*.",
+      "de": "Drei Sätze darüber, was Sie tun, wenn es *rain* gibt.",
+      "es": "Tres oraciones sobre lo que haces cuando hay *rain*.",
+      "fr": "Trois phrases sur ce que vous faites quand il y a *rain*.",
+      "it": "Tre frasi su cosa fai quando c'è *rain*.",
+      "pt": "Três frases sobre o que você faz quando tem *rain*."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: what goes in *the bin* and what doesn't?"
+     "texto": {
+      "en": "Say it out loud for 60 seconds: what goes in *the bin* and what doesn't?",
+      "de": "Sprechen Sie 60 Sekunden laut: Was kommt in *the bin* und was nicht?",
+      "es": "Habla en voz alta durante 60 segundos: ¿qué va en *the bin* y qué no?",
+      "fr": "Parlez à voix haute pendant 60 secondes : qu'est-ce qui va dans *the bin* et qu'est-ce qui n'y va pas ?",
+      "it": "Parla ad alta voce per 60 secondi: cosa va in *the bin* e cosa no?",
+      "pt": "Fale em voz alta por 60 segundos: o que vai em *the bin* e o que não vai?"
+     }
     }
    ]
   },
@@ -122,7 +276,14 @@
    "packId": "en-A2-2026-T04-1",
    "order": 1,
    "topicId": "T04",
-   "subtitulo": "A story about being ill",
+   "subtitulo": {
+    "en": "A story about being ill",
+    "de": "Eine Geschichte übers Kranksein",
+    "es": "Una historia sobre estar enfermo",
+    "fr": "Une histoire sur le fait d'être malade",
+    "it": "Una storia sull'essere malati",
+    "pt": "Uma história sobre ficar doente"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -130,28 +291,63 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Tell the story of a time you were ill or hurt yourself.",
+    "consigna": {
+     "en": "Tell the story of a time you were ill or hurt yourself.",
+     "de": "Erzählen Sie von einer Zeit, in der Sie krank waren oder sich verletzt haben.",
+     "es": "Cuenta una vez en la que estuviste enfermo/a o te lastimaste.",
+     "fr": "Racontez une fois où vous avez été malade ou vous vous êtes blessé.",
+     "it": "Racconta di una volta in cui sei stato/a malato/a o ti sei fatto/a male.",
+     "pt": "Conte sobre uma vez em que você ficou doente ou se machucou."
+    },
     "requisitos": [
      "five sentences in the past simple",
      "*first* and *then*",
-     "use *the flu*, *to hurt yourself* and *to lie down*"
+     {
+      "en": "use *the flu*, *to hurt yourself* and *to lie down*",
+      "de": "*the flu*, *to hurt yourself* und *to lie down* verwenden",
+      "es": "usar *the flu*, *to hurt yourself* y *to lie down*",
+      "fr": "utiliser *the flu*, *to hurt yourself* et *to lie down*",
+      "it": "usare *the flu*, *to hurt yourself* e *to lie down*",
+      "pt": "usar *the flu*, *to hurt yourself* e *to lie down*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Put the story in four bullet points."
+     "texto": {
+      "en": "Put the story in four bullet points.",
+      "de": "Ordnen Sie die Geschichte in vier Stichpunkten.",
+      "es": "Ordena la historia en cuatro puntos.",
+      "fr": "Organisez l'histoire en quatre points.",
+      "it": "Organizza la storia in quattro punti.",
+      "pt": "Organize a história em quatro tópicos."
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Five past simple sentences: *I went…*, *I took…*"
+     "texto": {
+      "en": "Five past simple sentences: *I went…*, *I took…*",
+      "de": "Fünf Sätze im past simple: *I went…*, *I took…*",
+      "es": "Cinco oraciones en past simple: *I went…*, *I took…*",
+      "fr": "Cinq phrases au past simple : *I went…*, *I took…*",
+      "it": "Cinque frasi al past simple: *I went…*, *I took…*",
+      "pt": "Cinco frases no past simple: *I went…*, *I took…*"
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: what do you say to someone who is ill? *Get well soon!*"
+     "texto": {
+      "en": "Say it out loud for 60 seconds: what do you say to someone who is ill? *Get well soon!*",
+      "de": "Sprechen Sie 60 Sekunden laut: Was sagt man zu jemandem, der krank ist? *Get well soon!*",
+      "es": "Habla en voz alta durante 60 segundos: ¿qué le dices a alguien que está enfermo? *Get well soon!*",
+      "fr": "Parlez à voix haute pendant 60 secondes : que dites-vous à quelqu'un qui est malade ? *Get well soon!*",
+      "it": "Parla ad alta voce per 60 secondi: cosa dici a qualcuno che è malato? *Get well soon!*",
+      "pt": "Fale em voz alta por 60 segundos: o que você diz para alguém que está doente? *Get well soon!*"
+     }
     }
    ]
   },
@@ -160,7 +356,14 @@
    "packId": "en-A2-2026-T01-1",
    "order": 1,
    "topicId": "T01",
-   "subtitulo": "Have you ever worked shifts?",
+   "subtitulo": {
+    "en": "Have you ever worked shifts?",
+    "de": "Haben Sie schon einmal im Schichtdienst gearbeitet?",
+    "es": "¿Alguna vez trabajaste por turnos?",
+    "fr": "Avez-vous déjà travaillé en horaires décalés ?",
+    "it": "Hai mai lavorato a turni?",
+    "pt": "Você já trabalhou em turnos?"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -168,28 +371,77 @@
     "minutosEstimados": 55
    },
    "mision": {
-    "consigna": "Write about your work experience, or someone else's.",
+    "consigna": {
+     "en": "Write about your work experience, or someone else's.",
+     "de": "Schreiben Sie über Ihre Berufserfahrung oder die einer anderen Person.",
+     "es": "Escribe sobre tu experiencia laboral o la de otra persona.",
+     "fr": "Écrivez sur votre expérience professionnelle ou celle de quelqu'un d'autre.",
+     "it": "Scrivi della tua esperienza lavorativa o di quella di qualcun altro.",
+     "pt": "Escreva sobre sua experiência profissional ou a de outra pessoa."
+    },
     "requisitos": [
-     "two present perfect sentences for experience",
-     "three past simple sentences with a time",
-     "use *a shift*, *a canteen* and *to be on time*"
+     {
+      "en": "two present perfect sentences for experience",
+      "de": "zwei Sätze im present perfect über Erfahrungen",
+      "es": "dos oraciones en present perfect sobre experiencias",
+      "fr": "deux phrases au present perfect sur des expériences",
+      "it": "due frasi al present perfect sulle esperienze",
+      "pt": "duas frases no present perfect sobre experiências"
+     },
+     {
+      "en": "three past simple sentences with a time",
+      "de": "drei Sätze im past simple mit einer Zeitangabe",
+      "es": "tres oraciones en past simple con una referencia temporal",
+      "fr": "trois phrases au past simple avec une indication de temps",
+      "it": "tre frasi al past simple con un riferimento temporale",
+      "pt": "três frases no past simple com uma indicação de tempo"
+     },
+     {
+      "en": "use *a shift*, *a canteen* and *to be on time*",
+      "de": "*a shift*, *a canteen* und *to be on time* verwenden",
+      "es": "usar *a shift*, *a canteen* y *to be on time*",
+      "fr": "utiliser *a shift*, *a canteen* et *to be on time*",
+      "it": "usare *a shift*, *a canteen* e *to be on time*",
+      "pt": "usar *a shift*, *a canteen* e *to be on time*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Write three sentences: *I've worked…*"
+     "texto": {
+      "en": "Write three sentences: *I've worked…*",
+      "de": "Schreiben Sie drei Sätze: *I've worked…*",
+      "es": "Escribe tres oraciones: *I've worked…*",
+      "fr": "Écrivez trois phrases : *I've worked…*",
+      "it": "Scrivi tre frasi: *I've worked…*",
+      "pt": "Escreva três frases: *I've worked…*"
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Three sentences with a time: *Last year I…*"
+     "texto": {
+      "en": "Three sentences with a time: *Last year I…*",
+      "de": "Drei Sätze mit einer Zeitangabe: *Last year I…*",
+      "es": "Tres oraciones con una referencia temporal: *Last year I…*",
+      "fr": "Trois phrases avec une indication de temps : *Last year I…*",
+      "it": "Tre frasi con un riferimento temporale: *Last year I…*",
+      "pt": "Três frases com uma indicação de tempo: *Last year I…*"
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: when do you *get paid*? Do you take *a day off*?"
+     "texto": {
+      "en": "Say it out loud for 60 seconds: when do you *get paid*? Do you take *a day off*?",
+      "de": "Sprechen Sie 60 Sekunden laut: Wann *get paid* Sie? Nehmen Sie *a day off*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿cuándo *get paid*? ¿Te tomas *a day off*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : quand *get paid* ? Prenez-vous *a day off* ?",
+      "it": "Parla ad alta voce per 60 secondi: quando *get paid*? Ti prendi *a day off*?",
+      "pt": "Fale em voz alta por 60 segundos: quando você *get paid*? Você tira *a day off*?"
+     }
     }
    ]
   },
@@ -198,7 +450,14 @@
    "packId": "en-A2-2026-T03-1",
    "order": 1,
    "topicId": "T03",
-   "subtitulo": "Suggestions about a printer",
+   "subtitulo": {
+    "en": "Suggestions about a printer",
+    "de": "Vorschläge zu einem Drucker",
+    "es": "Sugerencias sobre una impresora",
+    "fr": "Suggestions à propos d'une imprimante",
+    "it": "Suggerimenti su una stampante",
+    "pt": "Sugestões sobre uma impressora"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -206,18 +465,46 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Your printer isn't working. Write a conversation with a friend.",
+    "consigna": {
+     "en": "Your printer isn't working. Write a conversation with a friend.",
+     "de": "Ihr Drucker funktioniert nicht. Schreiben Sie ein Gespräch mit einem Freund.",
+     "es": "Tu impresora no funciona. Escribe una conversación con un amigo.",
+     "fr": "Votre imprimante ne fonctionne pas. Écrivez une conversation avec un ami.",
+     "it": "La tua stampante non funziona. Scrivi una conversazione con un amico.",
+     "pt": "Sua impressora não está funcionando. Escreva uma conversa com um amigo."
+    },
     "requisitos": [
      "three suggestions with *Let's…* or *Shall we…?*",
-     "one acceptance and one refusal",
-     "use *a printer*, *to switch on* and *a charger*"
+     {
+      "en": "one acceptance and one refusal",
+      "de": "eine Zustimmung und eine Ablehnung",
+      "es": "una aceptación y un rechazo",
+      "fr": "une acceptation et un refus",
+      "it": "un'accettazione e un rifiuto",
+      "pt": "uma aceitação e uma recusa"
+     },
+     {
+      "en": "use *a printer*, *to switch on* and *a charger*",
+      "de": "*a printer*, *to switch on* und *a charger* verwenden",
+      "es": "usar *a printer*, *to switch on* y *a charger*",
+      "fr": "utiliser *a printer*, *to switch on* et *a charger*",
+      "it": "usare *a printer*, *to switch on* e *a charger*",
+      "pt": "usar *a printer*, *to switch on* e *a charger*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Write three suggestions about the printer."
+     "texto": {
+      "en": "Write three suggestions about the printer.",
+      "de": "Schreiben Sie drei Vorschläge zum Drucker.",
+      "es": "Escribe tres sugerencias sobre la impresora.",
+      "fr": "Écrivez trois suggestions à propos de l'imprimante.",
+      "it": "Scrivi tre suggerimenti sulla stampante.",
+      "pt": "Escreva três sugestões sobre a impressora."
+     }
     },
     {
      "dia": "mie",
@@ -227,7 +514,14 @@
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: you need *headphones*. Make a suggestion."
+     "texto": {
+      "en": "Say it out loud for 60 seconds: you need *headphones*. Make a suggestion.",
+      "de": "Sprechen Sie 60 Sekunden laut: Sie brauchen *headphones*. Machen Sie einen Vorschlag.",
+      "es": "Habla en voz alta durante 60 segundos: necesitas *headphones*. Haz una sugerencia.",
+      "fr": "Parlez à voix haute pendant 60 secondes : vous avez besoin de *headphones*. Faites une suggestion.",
+      "it": "Parla ad alta voce per 60 secondi: ti servono *headphones*. Fai un suggerimento.",
+      "pt": "Fale em voz alta por 60 segundos: você precisa de *headphones*. Faça uma sugestão."
+     }
     }
    ]
   },
@@ -236,7 +530,14 @@
    "packId": "en-A2-2026-T10-1",
    "order": 1,
    "topicId": "T10",
-   "subtitulo": "Comparing two bakeries",
+   "subtitulo": {
+    "en": "Comparing two bakeries",
+    "de": "Zwei Bäckereien vergleichen",
+    "es": "Comparar dos panaderías",
+    "fr": "Comparer deux boulangeries",
+    "it": "Confrontare due panetterie",
+    "pt": "Comparar duas padarias"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -244,28 +545,70 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Compare two shops where you buy food.",
+    "consigna": {
+     "en": "Compare two shops where you buy food.",
+     "de": "Vergleichen Sie zwei Geschäfte, in denen Sie Lebensmittel kaufen.",
+     "es": "Compara dos tiendas donde compras alimentos.",
+     "fr": "Comparez deux magasins où vous achetez de la nourriture.",
+     "it": "Confronta due negozi dove compri cibo.",
+     "pt": "Compare duas lojas onde você compra alimentos."
+    },
     "requisitos": [
-     "four comparatives",
+     {
+      "en": "four comparatives",
+      "de": "vier Komparative",
+      "es": "cuatro comparativos",
+      "fr": "quatre comparatifs",
+      "it": "quattro comparativi",
+      "pt": "quatro comparativos"
+     },
      "one *I prefer…*",
-     "use *a bakery*, *bread* and *cheese*"
+     {
+      "en": "use *a bakery*, *bread* and *cheese*",
+      "de": "*a bakery*, *bread* und *cheese* verwenden",
+      "es": "usar *a bakery*, *bread* y *cheese*",
+      "fr": "utiliser *a bakery*, *bread* et *cheese*",
+      "it": "usare *a bakery*, *bread* e *cheese*",
+      "pt": "usar *a bakery*, *bread* e *cheese*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Write five comparisons: *This bakery is cheaper than…*"
+     "texto": {
+      "en": "Write five comparisons: *This bakery is cheaper than…*",
+      "de": "Schreiben Sie fünf Vergleiche: *This bakery is cheaper than…*",
+      "es": "Escribe cinco comparaciones: *This bakery is cheaper than…*",
+      "fr": "Écrivez cinq comparaisons : *This bakery is cheaper than…*",
+      "it": "Scrivi cinque confronti: *This bakery is cheaper than…*",
+      "pt": "Escreva cinco comparações: *This bakery is cheaper than…*"
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Two sentences about *milk* and *a plate*: which is better?"
+     "texto": {
+      "en": "Two sentences about *milk* and *a plate*: which is better?",
+      "de": "Zwei Sätze über *milk* und *a plate*: Was ist besser?",
+      "es": "Dos oraciones sobre *milk* y *a plate*: ¿cuál es mejor?",
+      "fr": "Deux phrases sur *milk* et *a plate* : lequel est meilleur ?",
+      "it": "Due frasi su *milk* e *a plate*: quale è meglio?",
+      "pt": "Duas frases sobre *milk* e *a plate*: qual é melhor?"
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: where do you buy bread? Why?"
+     "texto": {
+      "en": "Say it out loud for 60 seconds: where do you buy bread? Why?",
+      "de": "Sprechen Sie 60 Sekunden laut: Wo kaufen Sie Brot? Warum?",
+      "es": "Habla en voz alta durante 60 segundos: ¿dónde compras pan? ¿Por qué?",
+      "fr": "Parlez à voix haute pendant 60 secondes : où achetez-vous du pain ? Pourquoi ?",
+      "it": "Parla ad alta voce per 60 secondi: dove compri il pane? Perché?",
+      "pt": "Fale em voz alta por 60 segundos: onde você compra pão? Por quê?"
+     }
     }
    ]
   },
@@ -274,7 +617,14 @@
    "packId": "en-A2-2026-T14-1",
    "order": 1,
    "topicId": "T14",
-   "subtitulo": "Plans for the shops",
+   "subtitulo": {
+    "en": "Plans for the shops",
+    "de": "Einkaufspläne",
+    "es": "Planes de compras",
+    "fr": "Projets de courses",
+    "it": "Programmi per fare acquisti",
+    "pt": "Planos de compras"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -282,11 +632,39 @@
     "minutosEstimados": 55
    },
    "mision": {
-    "consigna": "Write about your shopping plans for this week.",
+    "consigna": {
+     "en": "Write about your shopping plans for this week.",
+     "de": "Schreiben Sie über Ihre Einkaufspläne für diese Woche.",
+     "es": "Escribe sobre tus planes de compras para esta semana.",
+     "fr": "Écrivez sur vos projets de courses pour cette semaine.",
+     "it": "Scrivi dei tuoi programmi di acquisto per questa settimana.",
+     "pt": "Escreva sobre seus planos de compras para esta semana."
+    },
     "requisitos": [
-     "three sentences with *going to*",
-     "two with *will*",
-     "use *on special offer*, *a shop assistant* and *to wrap up*"
+     {
+      "en": "three sentences with *going to*",
+      "de": "drei Sätze mit *going to*",
+      "es": "tres oraciones con *going to*",
+      "fr": "trois phrases avec *going to*",
+      "it": "tre frasi con *going to*",
+      "pt": "três frases com *going to*"
+     },
+     {
+      "en": "two with *will*",
+      "de": "zwei mit *will*",
+      "es": "dos con *will*",
+      "fr": "deux avec *will*",
+      "it": "due con *will*",
+      "pt": "duas com *will*"
+     },
+     {
+      "en": "use *on special offer*, *a shop assistant* and *to wrap up*",
+      "de": "*on special offer*, *a shop assistant* und *to wrap up* verwenden",
+      "es": "usar *on special offer*, *a shop assistant* y *to wrap up*",
+      "fr": "utiliser *on special offer*, *a shop assistant* et *to wrap up*",
+      "it": "usare *on special offer*, *a shop assistant* e *to wrap up*",
+      "pt": "usar *on special offer*, *a shop assistant* e *to wrap up*"
+     }
     ]
    },
    "microtareas": [
@@ -298,12 +676,26 @@
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Two quick decisions: *I'll ask the shop assistant.*"
+     "texto": {
+      "en": "Two quick decisions: *I'll ask the shop assistant.*",
+      "de": "Zwei schnelle Entscheidungen: *I'll ask the shop assistant.*",
+      "es": "Dos decisiones rápidas: *I'll ask the shop assistant.*",
+      "fr": "Deux décisions rapides : *I'll ask the shop assistant.*",
+      "it": "Due decisioni rapide: *I'll ask the shop assistant.*",
+      "pt": "Duas decisões rápidas: *I'll ask the shop assistant.*"
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: what's in *the shop window*?"
+     "texto": {
+      "en": "Say it out loud for 60 seconds: what's in *the shop window*?",
+      "de": "Sprechen Sie 60 Sekunden laut: Was ist in *the shop window*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿qué hay en *the shop window*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : qu'y a-t-il dans *the shop window* ?",
+      "it": "Parla ad alta voce per 60 secondi: cosa c'è in *the shop window*?",
+      "pt": "Fale em voz alta por 60 segundos: o que tem em *the shop window*?"
+     }
     }
    ]
   },
@@ -312,7 +704,14 @@
    "packId": "en-A2-2026-T11-1",
    "order": 1,
    "topicId": "T11",
-   "subtitulo": "I was reading when…",
+   "subtitulo": {
+    "en": "I was reading when…",
+    "de": "Ich las gerade, als…",
+    "es": "Estaba leyendo cuando…",
+    "fr": "J'étais en train de lire quand…",
+    "it": "Stavo leggendo quando…",
+    "pt": "Eu estava lendo quando…"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -320,28 +719,77 @@
     "minutosEstimados": 55
    },
    "mision": {
-    "consigna": "Tell a story about some news that surprised you.",
+    "consigna": {
+     "en": "Tell a story about some news that surprised you.",
+     "de": "Erzählen Sie eine Geschichte über eine Nachricht, die Sie überrascht hat.",
+     "es": "Cuenta una historia sobre una noticia que te sorprendió.",
+     "fr": "Racontez une histoire à propos d'une nouvelle qui vous a surpris.",
+     "it": "Racconta una storia su una notizia che ti ha sorpreso.",
+     "pt": "Conte uma história sobre uma notícia que surpreendeu você."
+    },
     "requisitos": [
-     "three past simple sentences",
-     "two past continuous sentences",
-     "use *a headline*, *the weather forecast* and *to be surprised*"
+     {
+      "en": "three past simple sentences",
+      "de": "drei Sätze im past simple",
+      "es": "tres oraciones en past simple",
+      "fr": "trois phrases au past simple",
+      "it": "tre frasi al past simple",
+      "pt": "três frases no past simple"
+     },
+     {
+      "en": "two past continuous sentences",
+      "de": "zwei Sätze im past continuous",
+      "es": "dos oraciones en past continuous",
+      "fr": "deux phrases au past continuous",
+      "it": "due frasi al past continuous",
+      "pt": "duas frases no past continuous"
+     },
+     {
+      "en": "use *a headline*, *the weather forecast* and *to be surprised*",
+      "de": "*a headline*, *the weather forecast* und *to be surprised* verwenden",
+      "es": "usar *a headline*, *the weather forecast* y *to be surprised*",
+      "fr": "utiliser *a headline*, *the weather forecast* et *to be surprised*",
+      "it": "usare *a headline*, *the weather forecast* e *to be surprised*",
+      "pt": "usar *a headline*, *the weather forecast* e *to be surprised*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Write three background sentences: *I was reading…*"
+     "texto": {
+      "en": "Write three background sentences: *I was reading…*",
+      "de": "Schreiben Sie drei Hintergrundsätze: *I was reading…*",
+      "es": "Escribe tres oraciones de contexto: *I was reading…*",
+      "fr": "Écrivez trois phrases de contexte : *I was reading…*",
+      "it": "Scrivi tre frasi di contesto: *I was reading…*",
+      "pt": "Escreva três frases de contexto: *I was reading…*"
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Two interruptions: *I was … when…*"
+     "texto": {
+      "en": "Two interruptions: *I was … when…*",
+      "de": "Zwei Unterbrechungen: *I was … when…*",
+      "es": "Dos interrupciones: *I was … when…*",
+      "fr": "Deux interruptions : *I was … when…*",
+      "it": "Due interruzioni: *I was … when…*",
+      "pt": "Duas interrupções: *I was … when…*"
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: what did you *tell someone* about *yesterday*?"
+     "texto": {
+      "en": "Say it out loud for 60 seconds: what did you *tell someone* about *yesterday*?",
+      "de": "Sprechen Sie 60 Sekunden laut: Was haben Sie jemandem über *yesterday* *told*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿qué le *told* a alguien sobre *yesterday*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : qu'avez-vous *told* à quelqu'un à propos de *yesterday* ?",
+      "it": "Parla ad alta voce per 60 secondi: cosa hai *told* a qualcuno su *yesterday*?",
+      "pt": "Fale em voz alta por 60 segundos: o que você *told* para alguém sobre *yesterday*?"
+     }
     }
    ]
   },
@@ -350,7 +798,14 @@
    "packId": "en-A2-2026-T12-1",
    "order": 1,
    "topicId": "T12",
-   "subtitulo": "Usually and right now: sport",
+   "subtitulo": {
+    "en": "Usually and right now: sport",
+    "de": "Normalerweise und gerade jetzt: Sport",
+    "es": "Normalmente y ahora mismo: deporte",
+    "fr": "D'habitude et en ce moment : sport",
+    "it": "Di solito e proprio ora: sport",
+    "pt": "Normalmente e agora: esporte"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -358,28 +813,77 @@
     "minutosEstimados": 55
    },
    "mision": {
-    "consigna": "Write about the sport you do or watch: normally and at the moment.",
+    "consigna": {
+     "en": "Write about the sport you do or watch: normally and at the moment.",
+     "de": "Schreiben Sie über den Sport, den Sie treiben oder verfolgen: normalerweise und im Moment.",
+     "es": "Escribe sobre el deporte que practicas o sigues: normalmente y en este momento.",
+     "fr": "Écrivez sur le sport que vous pratiquez ou suivez : normalement et en ce moment.",
+     "it": "Scrivi dello sport che pratichi o segui: normalmente e in questo momento.",
+     "pt": "Escreva sobre o esporte que você pratica ou acompanha: normalmente e neste momento."
+    },
     "requisitos": [
-     "three present simple sentences",
-     "three present continuous sentences",
-     "use *a team*, *to cycle* and *a match*"
+     {
+      "en": "three present simple sentences",
+      "de": "drei Sätze im present simple",
+      "es": "tres oraciones en present simple",
+      "fr": "trois phrases au present simple",
+      "it": "tre frasi al present simple",
+      "pt": "três frases no present simple"
+     },
+     {
+      "en": "three present continuous sentences",
+      "de": "drei Sätze im present continuous",
+      "es": "tres oraciones en present continuous",
+      "fr": "trois phrases au present continuous",
+      "it": "tre frasi al present continuous",
+      "pt": "três frases no present continuous"
+     },
+     {
+      "en": "use *a team*, *to cycle* and *a match*",
+      "de": "*a team*, *to cycle* und *a match* verwenden",
+      "es": "usar *a team*, *to cycle* y *a match*",
+      "fr": "utiliser *a team*, *to cycle* et *a match*",
+      "it": "usare *a team*, *to cycle* e *a match*",
+      "pt": "usar *a team*, *to cycle* e *a match*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Three habits: *I usually cycle on Sundays.*"
+     "texto": {
+      "en": "Three habits: *I usually cycle on Sundays.*",
+      "de": "Drei Gewohnheiten: *I usually cycle on Sundays.*",
+      "es": "Tres hábitos: *I usually cycle on Sundays.*",
+      "fr": "Trois habitudes : *I usually cycle on Sundays.*",
+      "it": "Tre abitudini: *I usually cycle on Sundays.*",
+      "pt": "Três hábitos: *I usually cycle on Sundays.*"
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Three things happening now: *At the moment, I'm…*"
+     "texto": {
+      "en": "Three things happening now: *At the moment, I'm…*",
+      "de": "Drei Dinge, die gerade passieren: *At the moment, I'm…*",
+      "es": "Tres cosas que están pasando ahora: *At the moment, I'm…*",
+      "fr": "Trois choses qui se passent en ce moment : *At the moment, I'm…*",
+      "it": "Tre cose che stanno succedendo ora: *At the moment, I'm…*",
+      "pt": "Três coisas que estão acontecendo agora: *At the moment, I'm…*"
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: does your team *win* or *lose* more?"
+     "texto": {
+      "en": "Say it out loud for 60 seconds: does your team *win* or *lose* more?",
+      "de": "Sprechen Sie 60 Sekunden laut: Gewinnt oder verliert Ihr Team öfter? Mit *win* und *lose*.",
+      "es": "Habla en voz alta durante 60 segundos: ¿tu equipo gana o pierde más seguido? Con *win* y *lose*.",
+      "fr": "Parlez à voix haute pendant 60 secondes : votre équipe gagne-t-elle ou perd-elle plus souvent ? Avec *win* et *lose*.",
+      "it": "Parla ad alta voce per 60 secondi: la tua squadra vince o perde più spesso? Con *win* e *lose*.",
+      "pt": "Fale em voz alta por 60 segundos: seu time ganha ou perde com mais frequência? Com *win* e *lose*."
+     }
     }
    ]
   },
@@ -388,7 +892,14 @@
    "packId": "en-A2-2026-T08-1",
    "order": 1,
    "topicId": "T08",
-   "subtitulo": "Asking for help near home",
+   "subtitulo": {
+    "en": "Asking for help near home",
+    "de": "In der Nähe des Wohnorts um Hilfe bitten",
+    "es": "Pedir ayuda cerca de casa",
+    "fr": "Demander de l'aide près de chez soi",
+    "it": "Chiedere aiuto vicino a casa",
+    "pt": "Pedir ajuda perto de casa"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -396,28 +907,77 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "A relative is visiting and gets lost near your home. Write what you say on the phone.",
+    "consigna": {
+     "en": "A relative is visiting and gets lost near your home. Write what you say on the phone.",
+     "de": "Ein Verwandter ist zu Besuch und verirrt sich in Ihrer Nähe. Schreiben Sie, was Sie am Telefon sagen.",
+     "es": "Un familiar está de visita y se pierde cerca de tu casa. Escribe qué le dices por teléfono.",
+     "fr": "Un proche est en visite et se perd près de chez vous. Écrivez ce que vous dites au téléphone.",
+     "it": "Un parente è in visita e si perde vicino a casa tua. Scrivi cosa dici al telefono.",
+     "pt": "Um parente está visitando você e se perde perto da sua casa. Escreva o que você diz ao telefone."
+    },
     "requisitos": [
-     "two phrases for asking for or giving directions",
-     "one *Can you help me?*",
-     "use *a neighbour*, *to come round* and *to let someone know*"
+     {
+      "en": "two phrases for asking for or giving directions",
+      "de": "zwei Wendungen, um nach dem Weg zu fragen oder ihn zu erklären",
+      "es": "dos expresiones para pedir o dar indicaciones",
+      "fr": "deux expressions pour demander ou donner son chemin",
+      "it": "due espressioni per chiedere o dare indicazioni",
+      "pt": "duas expressões para pedir ou dar direções"
+     },
+     {
+      "en": "one *Can you help me?*",
+      "de": "ein *Can you help me?*",
+      "es": "un *Can you help me?*",
+      "fr": "un *Can you help me?*",
+      "it": "un *Can you help me?*",
+      "pt": "um *Can you help me?*"
+     },
+     {
+      "en": "use *a neighbour*, *to come round* and *to let someone know*",
+      "de": "*a neighbour*, *to come round* und *to let someone know* verwenden",
+      "es": "usar *a neighbour*, *to come round* y *to let someone know*",
+      "fr": "utiliser *a neighbour*, *to come round* et *to let someone know*",
+      "it": "usare *a neighbour*, *to come round* e *to let someone know*",
+      "pt": "usar *a neighbour*, *to come round* e *to let someone know*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Write three sentences giving directions."
+     "texto": {
+      "en": "Write three sentences giving directions.",
+      "de": "Schreiben Sie drei Sätze mit Wegbeschreibungen.",
+      "es": "Escribe tres oraciones dando indicaciones.",
+      "fr": "Écrivez trois phrases pour donner un itinéraire.",
+      "it": "Scrivi tre frasi con indicazioni stradali.",
+      "pt": "Escreva três frases dando direções."
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Two sentences about *arranging to meet*."
+     "texto": {
+      "en": "Two sentences about *arranging to meet*.",
+      "de": "Zwei Sätze über *arranging to meet*.",
+      "es": "Dos oraciones sobre *arranging to meet*.",
+      "fr": "Deux phrases sur *arranging to meet*.",
+      "it": "Due frasi su *arranging to meet*.",
+      "pt": "Duas frases sobre *arranging to meet*."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: how do you *get on well* with your neighbours?"
+     "texto": {
+      "en": "Say it out loud for 60 seconds: how do you *get on well* with your neighbours?",
+      "de": "Sprechen Sie 60 Sekunden laut: Wie *get on well* Sie mit Ihren Nachbarn?",
+      "es": "Habla en voz alta durante 60 segundos: ¿cómo *get on well* con tus vecinos?",
+      "fr": "Parlez à voix haute pendant 60 secondes : comment *get on well* avec vos voisins ?",
+      "it": "Parla ad alta voce per 60 secondi: come *get on well* con i tuoi vicini?",
+      "pt": "Fale em voz alta por 60 segundos: como você *get on well* com seus vizinhos?"
+     }
     }
    ]
   },
@@ -426,7 +986,14 @@
    "packId": "en-A2-2026-T02-1",
    "order": 1,
    "topicId": "T02",
-   "subtitulo": "Agreeing about money",
+   "subtitulo": {
+    "en": "Agreeing about money",
+    "de": "Beim Thema Geld zustimmen",
+    "es": "Estar de acuerdo sobre el dinero",
+    "fr": "Exprimer son accord à propos de l'argent",
+    "it": "Essere d'accordo sul denaro",
+    "pt": "Concordar sobre dinheiro"
+   },
    "challengeType": "chunk_deployment",
    "evidencia": {
     "escritura": 80,
@@ -434,28 +1001,70 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "A friend says: *Nobody needs cash any more.* Answer them.",
+    "consigna": {
+     "en": "A friend says: *Nobody needs cash any more.* Answer them.",
+     "de": "Ein Freund sagt: *Nobody needs cash any more.* Antworten Sie.",
+     "es": "Un amigo dice: *Nobody needs cash any more.* Respóndele.",
+     "fr": "Un ami dit : *Nobody needs cash any more.* Répondez-lui.",
+     "it": "Un amico dice: *Nobody needs cash any more.* Rispondi.",
+     "pt": "Um amigo diz: *Nobody needs cash any more.* Responda."
+    },
     "requisitos": [
-     "two agreements and two disagreements",
+     {
+      "en": "two agreements and two disagreements",
+      "de": "zweimal zustimmen und zweimal widersprechen",
+      "es": "dos acuerdos y dos desacuerdos",
+      "fr": "deux accords et deux désaccords",
+      "it": "due accordi e due disaccordi",
+      "pt": "duas concordâncias e duas discordâncias"
+     },
      "one reason",
-     "use *a cash machine*, *a receipt* and *to withdraw money*"
+     {
+      "en": "use *a cash machine*, *a receipt* and *to withdraw money*",
+      "de": "*a cash machine*, *a receipt* und *to withdraw money* verwenden",
+      "es": "usar *a cash machine*, *a receipt* y *to withdraw money*",
+      "fr": "utiliser *a cash machine*, *a receipt* et *to withdraw money*",
+      "it": "usare *a cash machine*, *a receipt* e *to withdraw money*",
+      "pt": "usar *a cash machine*, *a receipt* e *to withdraw money*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Write three statements about money. Agree or disagree?"
+     "texto": {
+      "en": "Write three statements about money. Agree or disagree?",
+      "de": "Schreiben Sie drei Aussagen über Geld. Zustimmen oder widersprechen?",
+      "es": "Escribe tres afirmaciones sobre dinero. ¿Estás de acuerdo o en desacuerdo?",
+      "fr": "Écrivez trois affirmations sur l'argent. D'accord ou pas d'accord ?",
+      "it": "Scrivi tre affermazioni sul denaro. Sei d'accordo o no?",
+      "pt": "Escreva três afirmações sobre dinheiro. Concorda ou discorda?"
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Three answers: *I agree*, *I don't agree*, *Maybe*."
+     "texto": {
+      "en": "Three answers: *I agree*, *I don't agree*, *Maybe*.",
+      "de": "Drei Antworten: *I agree*, *I don't agree*, *Maybe*.",
+      "es": "Tres respuestas: *I agree*, *I don't agree*, *Maybe*.",
+      "fr": "Trois réponses : *I agree*, *I don't agree*, *Maybe*.",
+      "it": "Tre risposte: *I agree*, *I don't agree*, *Maybe*.",
+      "pt": "Três respostas: *I agree*, *I don't agree*, *Maybe*."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "Say it out loud for 60 seconds: do you leave *a tip*? Is it *worth it*?"
+     "texto": {
+      "en": "Say it out loud for 60 seconds: do you leave *a tip*? Is it *worth it*?",
+      "de": "Sprechen Sie 60 Sekunden laut: Geben Sie *a tip*? Ist es *worth it*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿dejas *a tip*? ¿*worth it*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : laissez-vous *a tip* ? Est-ce *worth it* ?",
+      "it": "Parla ad alta voce per 60 secondi: lasci *a tip*? È *worth it*?",
+      "pt": "Fale em voz alta por 60 segundos: você deixa *a tip*? Vale *worth it*?"
+     }
     }
    ]
   }

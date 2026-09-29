@@ -8,7 +8,14 @@
    "packId": "de-B1-2026-T05-1",
    "order": 1,
    "topicId": "T05",
-   "subtitulo": "Meinung über eine Reise",
+   "subtitulo": {
+    "de": "Meinung über eine Reise",
+    "en": "Opinion about a trip",
+    "es": "Opinión sobre un viaje",
+    "fr": "Opinion sur un voyage",
+    "it": "Opinione su un viaggio",
+    "pt": "Opinião sobre uma viagem"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -16,28 +23,70 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Schreiben Sie Ihre Meinung: Soll man eine Reise früh oder spät buchen?",
+    "consigna": {
+     "de": "Schreiben Sie Ihre Meinung: Soll man eine Reise früh oder spät buchen?",
+     "en": "Write your opinion: should you book a trip early or late?",
+     "es": "Escribe tu opinión: ¿conviene reservar un viaje con mucha anticipación o a último momento?",
+     "fr": "Écrivez votre opinion : vaut-il mieux réserver un voyage tôt ou tard ?",
+     "it": "Scrivi la tua opinione: è meglio prenotare un viaggio presto o tardi?",
+     "pt": "Escreva sua opinião: é melhor reservar uma viagem com antecedência ou mais tarde?"
+    },
     "requisitos": [
      "eine klare Meinung",
-     "zwei Gründe mit *weil*",
-     "*die Anreise*, *die Reiseversicherung* und *sich erkundigen* verwenden"
+     {
+      "de": "zwei Gründe mit *weil*",
+      "en": "two reasons with *weil*",
+      "es": "dos razones con *weil*",
+      "fr": "deux raisons avec *weil*",
+      "it": "due motivazioni con *weil*",
+      "pt": "dois motivos com *weil*"
+     },
+     {
+      "de": "*die Anreise*, *die Reiseversicherung* und *sich erkundigen* verwenden",
+      "en": "use *die Anreise*, *die Reiseversicherung* and *sich erkundigen*",
+      "es": "usar *die Anreise*, *die Reiseversicherung* y *sich erkundigen*",
+      "fr": "utiliser *die Anreise*, *die Reiseversicherung* et *sich erkundigen*",
+      "it": "usare *die Anreise*, *die Reiseversicherung* e *sich erkundigen*",
+      "pt": "usar *die Anreise*, *die Reiseversicherung* e *sich erkundigen*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Ihre Meinung in einem Satz, darunter zwei Gründe."
+     "texto": {
+      "de": "Ihre Meinung in einem Satz, darunter zwei Gründe.",
+      "en": "Your opinion in one sentence, with two reasons underneath.",
+      "es": "Tu opinión en una oración y, debajo, dos razones.",
+      "fr": "Votre opinion en une phrase, puis deux raisons en dessous.",
+      "it": "La tua opinione in una frase, con due motivi sotto.",
+      "pt": "Sua opinião em uma frase e, abaixo, dois motivos."
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Zwei Sätze über *den Anschluss* und *die Unterlagen mitnehmen*."
+     "texto": {
+      "de": "Zwei Sätze über *den Anschluss* und *die Unterlagen mitnehmen*.",
+      "en": "Two sentences about *den Anschluss* and *die Unterlagen mitnehmen*.",
+      "es": "Dos oraciones sobre *den Anschluss* y *die Unterlagen mitnehmen*.",
+      "fr": "Deux phrases sur *den Anschluss* et *die Unterlagen mitnehmen*.",
+      "it": "Due frasi su *den Anschluss* e *die Unterlagen mitnehmen*.",
+      "pt": "Duas frases sobre *den Anschluss* e *die Unterlagen mitnehmen*."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Wie kommt man *günstig weg*?"
+     "texto": {
+      "de": "60 Sekunden laut: Wie kommt man *günstig weg*?",
+      "en": "Say it out loud for 60 seconds: how can you *günstig wegkommen*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿cómo se puede *günstig wegkommen*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : comment peut-on *günstig wegkommen* ?",
+      "it": "Parla ad alta voce per 60 secondi: come si può *günstig wegkommen*?",
+      "pt": "Fale em voz alta por 60 segundos: como é possível *günstig wegkommen*?"
+     }
     }
    ]
   },
@@ -46,7 +95,14 @@
    "packId": "de-B1-2026-T13-1",
    "order": 1,
    "topicId": "T13",
-   "subtitulo": "Einen Brief vom Amt zusammenfassen",
+   "subtitulo": {
+    "de": "Einen Brief vom Amt zusammenfassen",
+    "en": "Summarising a letter from a public office",
+    "es": "Resumir una carta de una oficina pública",
+    "fr": "Résumer une lettre d'une administration",
+    "it": "Riassumere una lettera di un ente pubblico",
+    "pt": "Resumir uma carta de um órgão público"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -54,28 +110,63 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Fassen Sie für einen Freund zusammen, was in einem Schreiben einer Behörde steht.",
+    "consigna": {
+     "de": "Fassen Sie für einen Freund zusammen, was in einem Schreiben einer Behörde steht.",
+     "en": "Summarise for a friend what a letter from a public authority says.",
+     "es": "Resume para un amigo qué dice una carta de un organismo público.",
+     "fr": "Résumez pour un ami ce qui est écrit dans un courrier d'une administration.",
+     "it": "Riassumi per un amico cosa dice una comunicazione di un ente pubblico.",
+     "pt": "Resuma para um amigo o que diz uma correspondência de um órgão público."
+    },
     "requisitos": [
      "das Wichtigste im ersten Satz",
      "höchstens drei weitere Informationen",
-     "*das Anliegen*, *die Auskunft einholen* und *etwas nachreichen* verwenden"
+     {
+      "de": "*das Anliegen*, *die Auskunft einholen* und *etwas nachreichen* verwenden",
+      "en": "use *das Anliegen*, *die Auskunft einholen* and *etwas nachreichen*",
+      "es": "usar *das Anliegen*, *die Auskunft einholen* y *etwas nachreichen*",
+      "fr": "utiliser *das Anliegen*, *die Auskunft einholen* et *etwas nachreichen*",
+      "it": "usare *das Anliegen*, *die Auskunft einholen* e *etwas nachreichen*",
+      "pt": "usar *das Anliegen*, *die Auskunft einholen* e *etwas nachreichen*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 10,
-     "texto": "Ein Schreiben in 30 Wörtern zusammenfassen."
+     "texto": {
+      "de": "Ein Schreiben in 30 Wörtern zusammenfassen.",
+      "en": "Summarise a letter in 30 words.",
+      "es": "Resume una carta en 30 palabras.",
+      "fr": "Résumez un courrier en 30 mots.",
+      "it": "Riassumi una lettera in 30 parole.",
+      "pt": "Resuma uma carta em 30 palavras."
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Den Kern in einem Satz: *Es geht um…*"
+     "texto": {
+      "de": "Den Kern in einem Satz: *Es geht um…*",
+      "en": "The main point in one sentence: *Es geht um…*",
+      "es": "La idea principal en una oración: *Es geht um…*",
+      "fr": "L'essentiel en une phrase : *Es geht um…*",
+      "it": "Il punto centrale in una frase: *Es geht um…*",
+      "pt": "O ponto principal em uma frase: *Es geht um…*"
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Was macht man mit *der Wartenummer* und *dem Beleg*?"
+     "texto": {
+      "de": "60 Sekunden laut: Was macht man mit *der Wartenummer* und *dem Beleg*?",
+      "en": "Say it out loud for 60 seconds: what do you do with *der Wartenummer* and *dem Beleg*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿qué haces con *der Wartenummer* y *dem Beleg*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : que faites-vous avec *der Wartenummer* et *dem Beleg* ?",
+      "it": "Parla ad alta voce per 60 secondi: cosa fai con *der Wartenummer* e *dem Beleg*?",
+      "pt": "Fale em voz alta por 60 segundos: o que você faz com *der Wartenummer* e *dem Beleg*?"
+     }
     }
    ]
   },
@@ -84,7 +175,14 @@
    "packId": "de-B1-2026-T06-1",
    "order": 1,
    "topicId": "T06",
-   "subtitulo": "Eine Geschichte vom Energiesparen",
+   "subtitulo": {
+    "de": "Eine Geschichte vom Energiesparen",
+    "en": "A story about saving energy",
+    "es": "Una historia sobre ahorrar energía",
+    "fr": "Une histoire sur les économies d'énergie",
+    "it": "Una storia sul risparmio energetico",
+    "pt": "Uma história sobre economia de energia"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -92,28 +190,70 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Erzählen Sie, wie Sie angefangen haben, zu Hause Energie zu sparen.",
+    "consigna": {
+     "de": "Erzählen Sie, wie Sie angefangen haben, zu Hause Energie zu sparen.",
+     "en": "Tell how you started saving energy at home.",
+     "es": "Cuenta cómo empezaste a ahorrar energía en casa.",
+     "fr": "Racontez comment vous avez commencé à économiser de l'énergie chez vous.",
+     "it": "Racconta come hai iniziato a risparmiare energia a casa.",
+     "pt": "Conte como você começou a economizar energia em casa."
+    },
     "requisitos": [
      "sechs Sätze im Perfekt",
-     "*zuerst*, *dann*, *danach*",
-     "*Strom sparen*, *der Stromverbrauch* und *die Mülltrennung* verwenden"
+     {
+      "de": "*zuerst*, *dann*, *danach*",
+      "en": "*zuerst*, *dann*, *danach*",
+      "es": "*zuerst*, *dann*, *danach*",
+      "fr": "*zuerst*, *dann*, *danach*",
+      "it": "*zuerst*, *dann*, *danach*",
+      "pt": "*zuerst*, *dann*, *danach*"
+     },
+     {
+      "de": "*Strom sparen*, *der Stromverbrauch* und *die Mülltrennung* verwenden",
+      "en": "use *Strom sparen*, *der Stromverbrauch* and *die Mülltrennung*",
+      "es": "usar *Strom sparen*, *der Stromverbrauch* y *die Mülltrennung*",
+      "fr": "utiliser *Strom sparen*, *der Stromverbrauch* et *die Mülltrennung*",
+      "it": "usare *Strom sparen*, *der Stromverbrauch* e *die Mülltrennung*",
+      "pt": "usar *Strom sparen*, *der Stromverbrauch* e *die Mülltrennung*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Die Geschichte in fünf Stichpunkten ordnen."
+     "texto": {
+      "de": "Die Geschichte in fünf Stichpunkten ordnen.",
+      "en": "Put the story into five bullet points.",
+      "es": "Ordena la historia en cinco puntos.",
+      "fr": "Organisez l'histoire en cinq points.",
+      "it": "Organizza la storia in cinque punti.",
+      "pt": "Organize a história em cinco tópicos."
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Drei Sätze im Perfekt über *das Pfand*."
+     "texto": {
+      "de": "Drei Sätze im Perfekt über *das Pfand*.",
+      "en": "Three Perfekt sentences about *das Pfand*.",
+      "es": "Tres oraciones en Perfekt sobre *das Pfand*.",
+      "fr": "Trois phrases au Perfekt sur *das Pfand*.",
+      "it": "Tre frasi al Perfekt su *das Pfand*.",
+      "pt": "Três frases no Perfekt sobre *das Pfand*."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Sind Sie auf etwas *umgestiegen*? Auf was?"
+     "texto": {
+      "de": "60 Sekunden laut: Sind Sie auf etwas *umgestiegen*? Auf was?",
+      "en": "Say it out loud for 60 seconds: have you *umgestiegen* to something? To what?",
+      "es": "Habla en voz alta durante 60 segundos: ¿has *umgestiegen* a algo? ¿A qué?",
+      "fr": "Parlez à voix haute pendant 60 secondes : êtes-vous *umgestiegen* vers quelque chose ? Vers quoi ?",
+      "it": "Parla ad alta voce per 60 secondi: sei *umgestiegen* a qualcosa? A cosa?",
+      "pt": "Fale em voz alta por 60 segundos: você já *umgestiegen* para alguma coisa? Para o quê?"
+     }
     }
    ]
   },
@@ -122,7 +262,14 @@
    "packId": "de-B1-2026-T04-1",
    "order": 1,
    "topicId": "T04",
-   "subtitulo": "Vorschläge vor einem Arzttermin",
+   "subtitulo": {
+    "de": "Vorschläge vor einem Arzttermin",
+    "en": "Suggestions before a doctor's appointment",
+    "es": "Sugerencias antes de una cita médica",
+    "fr": "Suggestions avant un rendez-vous médical",
+    "it": "Suggerimenti prima di una visita medica",
+    "pt": "Sugestões antes de uma consulta médica"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -130,28 +277,70 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Eine Freundin hat Angst vor einer Untersuchung. Machen Sie Vorschläge.",
+    "consigna": {
+     "de": "Eine Freundin hat Angst vor einer Untersuchung. Machen Sie Vorschläge.",
+     "en": "A friend is afraid of an examination. Make suggestions.",
+     "es": "Una amiga tiene miedo de un examen médico. Hazle sugerencias.",
+     "fr": "Une amie a peur d'un examen médical. Faites-lui des suggestions.",
+     "it": "Un'amica ha paura di un esame medico. Falle dei suggerimenti.",
+     "pt": "Uma amiga está com medo de um exame. Faça sugestões."
+    },
     "requisitos": [
      "drei Vorschläge mit *Wir könnten…* oder *Wollen wir…?*",
-     "eine Reaktion auf einen Gegenvorschlag",
-     "*die Beschwerden schildern*, *sich untersuchen lassen* und *die Genesung* verwenden"
+     {
+      "de": "eine Reaktion auf einen Gegenvorschlag",
+      "en": "one reaction to a counter-suggestion",
+      "es": "una reacción a una contrapropuesta",
+      "fr": "une réaction à une contre-proposition",
+      "it": "una reazione a una controproposta",
+      "pt": "uma reação a uma contraproposta"
+     },
+     {
+      "de": "*die Beschwerden schildern*, *sich untersuchen lassen* und *die Genesung* verwenden",
+      "en": "use *die Beschwerden schildern*, *sich untersuchen lassen* and *die Genesung*",
+      "es": "usar *die Beschwerden schildern*, *sich untersuchen lassen* y *die Genesung*",
+      "fr": "utiliser *die Beschwerden schildern*, *sich untersuchen lassen* et *die Genesung*",
+      "it": "usare *die Beschwerden schildern*, *sich untersuchen lassen* e *die Genesung*",
+      "pt": "usar *die Beschwerden schildern*, *sich untersuchen lassen* e *die Genesung*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Drei Vorschläge aufschreiben."
+     "texto": {
+      "de": "Drei Vorschläge aufschreiben.",
+      "en": "Write down three suggestions.",
+      "es": "Anota tres sugerencias.",
+      "fr": "Notez trois suggestions.",
+      "it": "Scrivi tre suggerimenti.",
+      "pt": "Anote três sugestões."
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Auf jeden Vorschlag antworten: ja, nein oder anders."
+     "texto": {
+      "de": "Auf jeden Vorschlag antworten: ja, nein oder anders.",
+      "en": "Reply to each suggestion: yes, no, or another idea.",
+      "es": "Responde a cada sugerencia: sí, no u otra alternativa.",
+      "fr": "Répondez à chaque suggestion : oui, non ou autrement.",
+      "it": "Rispondi a ogni suggerimento: sì, no oppure con un'alternativa.",
+      "pt": "Responda a cada sugestão: sim, não ou com outra opção."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Raten Sie jemandem, *sich impfen zu lassen*."
+     "texto": {
+      "de": "60 Sekunden laut: Raten Sie jemandem, *sich impfen zu lassen*.",
+      "en": "Say it out loud for 60 seconds: advise someone to *sich impfen zu lassen*.",
+      "es": "Habla en voz alta durante 60 segundos: aconseja a alguien *sich impfen zu lassen*.",
+      "fr": "Parlez à voix haute pendant 60 secondes : conseillez à quelqu'un de *sich impfen zu lassen*.",
+      "it": "Parla ad alta voce per 60 secondi: consiglia a qualcuno *sich impfen zu lassen*.",
+      "pt": "Fale em voz alta por 60 segundos: aconselhe alguém a *sich impfen zu lassen*."
+     }
     }
    ]
   },
@@ -160,7 +349,14 @@
    "packId": "de-B1-2026-T01-1",
    "order": 1,
    "topicId": "T01",
-   "subtitulo": "Wo und wohin im Büro",
+   "subtitulo": {
+    "de": "Wo und wohin im Büro",
+    "en": "Where and where to in the office",
+    "es": "Dónde y adónde en la oficina",
+    "fr": "Où et vers où au bureau",
+    "it": "Dove e verso dove in ufficio",
+    "pt": "Onde e para onde no escritório"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -168,28 +364,77 @@
     "minutosEstimados": 55
    },
    "mision": {
-    "consigna": "Beschreiben Sie Ihren Arbeitsplatz und was sich dort ändert, wenn jemand Neues kommt.",
+    "consigna": {
+     "de": "Beschreiben Sie Ihren Arbeitsplatz und was sich dort ändert, wenn jemand Neues kommt.",
+     "en": "Describe your workplace and what changes there when someone new arrives.",
+     "es": "Describe tu lugar de trabajo y qué cambia cuando llega alguien nuevo.",
+     "fr": "Décrivez votre lieu de travail et ce qui change lorsqu'une nouvelle personne arrive.",
+     "it": "Descrivi il tuo posto di lavoro e cosa cambia quando arriva una persona nuova.",
+     "pt": "Descreva seu local de trabalho e o que muda quando chega alguém novo."
+    },
     "requisitos": [
-     "drei Sätze mit Akkusativ (*wohin?*)",
-     "drei Sätze mit Dativ (*wo?*)",
-     "*die Einarbeitung*, *die Zusammenarbeit* und *sich einbringen* verwenden"
+     {
+      "de": "drei Sätze mit Akkusativ (*wohin?*)",
+      "en": "three sentences with the accusative (*wohin?*)",
+      "es": "tres oraciones con acusativo (*wohin?*)",
+      "fr": "trois phrases à l'accusatif (*wohin?*)",
+      "it": "tre frasi con l'accusativo (*wohin?*)",
+      "pt": "três frases com acusativo (*wohin?*)"
+     },
+     {
+      "de": "drei Sätze mit Dativ (*wo?*)",
+      "en": "three sentences with the dative (*wo?*)",
+      "es": "tres oraciones con dativo (*wo?*)",
+      "fr": "trois phrases au datif (*wo?*)",
+      "it": "tre frasi con il dativo (*wo?*)",
+      "pt": "três frases com dativo (*wo?*)"
+     },
+     {
+      "de": "*die Einarbeitung*, *die Zusammenarbeit* und *sich einbringen* verwenden",
+      "en": "use *die Einarbeitung*, *die Zusammenarbeit* and *sich einbringen*",
+      "es": "usar *die Einarbeitung*, *die Zusammenarbeit* y *sich einbringen*",
+      "fr": "utiliser *die Einarbeitung*, *die Zusammenarbeit* et *sich einbringen*",
+      "it": "usare *die Einarbeitung*, *die Zusammenarbeit* e *sich einbringen*",
+      "pt": "usar *die Einarbeitung*, *die Zusammenarbeit* e *sich einbringen*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Fünf Sätze: *Ich lege die Unterlagen auf den Tisch.* / *…liegen auf dem Tisch.*"
+     "texto": {
+      "de": "Fünf Sätze: *Ich lege die Unterlagen auf den Tisch.* / *…liegen auf dem Tisch.*",
+      "en": "Five sentences: *Ich lege die Unterlagen auf den Tisch.* / *…liegen auf dem Tisch.*",
+      "es": "Cinco oraciones: *Ich lege die Unterlagen auf den Tisch.* / *…liegen auf dem Tisch.*",
+      "fr": "Cinq phrases : *Ich lege die Unterlagen auf den Tisch.* / *…liegen auf dem Tisch.*",
+      "it": "Cinque frasi: *Ich lege die Unterlagen auf den Tisch.* / *…liegen auf dem Tisch.*",
+      "pt": "Cinco frases: *Ich lege die Unterlagen auf den Tisch.* / *…liegen auf dem Tisch.*"
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Drei Sätze über *den Überblick behalten* mit Präposition."
+     "texto": {
+      "de": "Drei Sätze über *den Überblick behalten* mit Präposition.",
+      "en": "Three sentences about *den Überblick behalten* with a preposition.",
+      "es": "Tres oraciones sobre *den Überblick behalten* con una preposición.",
+      "fr": "Trois phrases sur *den Überblick behalten* avec une préposition.",
+      "it": "Tre frasi su *den Überblick behalten* con una preposizione.",
+      "pt": "Três frases sobre *den Überblick behalten* com uma preposição."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Wann *stehen* Sie *unter Zeitdruck*?"
+     "texto": {
+      "de": "60 Sekunden laut: Wann *stehen* Sie *unter Zeitdruck*?",
+      "en": "Say it out loud for 60 seconds: when do you *stehen* *unter Zeitdruck*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿cuándo *stehen* *unter Zeitdruck*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : quand *stehen* vous *unter Zeitdruck* ?",
+      "it": "Parla ad alta voce per 60 secondi: quando *stehen* *unter Zeitdruck*?",
+      "pt": "Fale em voz alta por 60 segundos: quando você *stehen* *unter Zeitdruck*?"
+     }
     }
    ]
   },
@@ -198,7 +443,14 @@
    "packId": "de-B1-2026-T03-1",
    "order": 1,
    "topicId": "T03",
-   "subtitulo": "Rat zu einem Gerät",
+   "subtitulo": {
+    "de": "Rat zu einem Gerät",
+    "en": "Advice about a device",
+    "es": "Consejos sobre un dispositivo",
+    "fr": "Conseils à propos d'un appareil",
+    "it": "Consigli su un dispositivo",
+    "pt": "Conselhos sobre um aparelho"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -206,11 +458,32 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Ein Freund kommt mit einem Gerät nicht zurecht. Geben Sie ihm Rat.",
+    "consigna": {
+     "de": "Ein Freund kommt mit einem Gerät nicht zurecht. Geben Sie ihm Rat.",
+     "en": "A friend is having trouble using a device. Give them advice.",
+     "es": "Un amigo tiene dificultades con un dispositivo. Dale consejos.",
+     "fr": "Un ami a du mal à utiliser un appareil. Donnez-lui des conseils.",
+     "it": "Un amico ha difficoltà con un dispositivo. Dagli dei consigli.",
+     "pt": "Um amigo está tendo dificuldade com um aparelho. Dê conselhos a ele."
+    },
     "requisitos": [
-     "drei Ratschläge mit verschiedenen Formeln",
+     {
+      "de": "drei Ratschläge mit verschiedenen Formeln",
+      "en": "three pieces of advice using different structures",
+      "es": "tres consejos formulados de manera diferente",
+      "fr": "trois conseils formulés de façons différentes",
+      "it": "tre consigli formulati in modi diversi",
+      "pt": "três conselhos formulados de formas diferentes"
+     },
      "ein *An deiner Stelle würde ich…*",
-     "*die Anleitung*, *die Störung* und *etwas einrichten* verwenden"
+     {
+      "de": "*die Anleitung*, *die Störung* und *etwas einrichten* verwenden",
+      "en": "use *die Anleitung*, *die Störung* and *etwas einrichten*",
+      "es": "usar *die Anleitung*, *die Störung* y *etwas einrichten*",
+      "fr": "utiliser *die Anleitung*, *die Störung* et *etwas einrichten*",
+      "it": "usare *die Anleitung*, *die Störung* e *etwas einrichten*",
+      "pt": "usar *die Anleitung*, *die Störung* e *etwas einrichten*"
+     }
     ]
    },
    "microtareas": [
@@ -222,12 +495,26 @@
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Einen Rat umschreiben: *An deiner Stelle würde ich…*"
+     "texto": {
+      "de": "Einen Rat umschreiben: *An deiner Stelle würde ich…*",
+      "en": "Rewrite one piece of advice: *An deiner Stelle würde ich…*",
+      "es": "Reformula un consejo: *An deiner Stelle würde ich…*",
+      "fr": "Reformulez un conseil : *An deiner Stelle würde ich…*",
+      "it": "Riformula un consiglio: *An deiner Stelle würde ich…*",
+      "pt": "Reescreva um conselho: *An deiner Stelle würde ich…*"
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Wie behält man *den Überblick über Abos*?"
+     "texto": {
+      "de": "60 Sekunden laut: Wie behält man *den Überblick über Abos*?",
+      "en": "Say it out loud for 60 seconds: how can you *den Überblick über Abos behalten*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿cómo se puede *den Überblick über Abos behalten*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : comment peut-on *den Überblick über Abos behalten* ?",
+      "it": "Parla ad alta voce per 60 secondi: come si può *den Überblick über Abos behalten*?",
+      "pt": "Fale em voz alta por 60 segundos: como é possível *den Überblick über Abos behalten*?"
+     }
     }
    ]
   },
@@ -236,7 +523,14 @@
    "packId": "de-B1-2026-T10-1",
    "order": 1,
    "topicId": "T10",
-   "subtitulo": "Nachfragen beim Kochen",
+   "subtitulo": {
+    "de": "Nachfragen beim Kochen",
+    "en": "Asking for clarification while cooking",
+    "es": "Pedir aclaraciones al cocinar",
+    "fr": "Demander des précisions en cuisinant",
+    "it": "Chiedere chiarimenti mentre si cucina",
+    "pt": "Pedir esclarecimentos ao cozinhar"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -244,28 +538,70 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Schreiben Sie ein Gespräch beim gemeinsamen Kochen, in dem Sie etwas nicht verstehen.",
+    "consigna": {
+     "de": "Schreiben Sie ein Gespräch beim gemeinsamen Kochen, in dem Sie etwas nicht verstehen.",
+     "en": "Write a conversation while cooking together in which you do not understand something.",
+     "es": "Escribe una conversación mientras cocinan juntos en la que no entiendes algo.",
+     "fr": "Écrivez une conversation pendant que vous cuisinez ensemble, dans laquelle vous ne comprenez pas quelque chose.",
+     "it": "Scrivi una conversazione mentre cucinate insieme in cui non capisci qualcosa.",
+     "pt": "Escreva uma conversa enquanto vocês cozinham juntos em que você não entende alguma coisa."
+    },
     "requisitos": [
      "zwei Nachfragen",
-     "eine Selbstkorrektur (*Ich meine…*)",
-     "*das Rezept ausprobieren*, *abschmecken* und *die Beilage* verwenden"
+     {
+      "de": "eine Selbstkorrektur (*Ich meine…*)",
+      "en": "one self-correction (*Ich meine…*)",
+      "es": "una autocorrección (*Ich meine…*)",
+      "fr": "une autocorrection (*Ich meine…*)",
+      "it": "un'autocorrezione (*Ich meine…*)",
+      "pt": "uma autocorreção (*Ich meine…*)"
+     },
+     {
+      "de": "*das Rezept ausprobieren*, *abschmecken* und *die Beilage* verwenden",
+      "en": "use *das Rezept ausprobieren*, *abschmecken* and *die Beilage*",
+      "es": "usar *das Rezept ausprobieren*, *abschmecken* y *die Beilage*",
+      "fr": "utiliser *das Rezept ausprobieren*, *abschmecken* et *die Beilage*",
+      "it": "usare *das Rezept ausprobieren*, *abschmecken* e *die Beilage*",
+      "pt": "usar *das Rezept ausprobieren*, *abschmecken* e *die Beilage*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Drei Nachfragen aufschreiben: *Wie meinst du das?*"
+     "texto": {
+      "de": "Drei Nachfragen aufschreiben: *Wie meinst du das?*",
+      "en": "Write down three clarification questions: *Wie meinst du das?*",
+      "es": "Anota tres preguntas para pedir aclaración: *Wie meinst du das?*",
+      "fr": "Notez trois questions pour demander des précisions : *Wie meinst du das?*",
+      "it": "Scrivi tre domande per chiedere chiarimenti: *Wie meinst du das?*",
+      "pt": "Anote três perguntas para pedir esclarecimentos: *Wie meinst du das?*"
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Einen Satz über *die Einkaufsliste* zweimal korrigieren."
+     "texto": {
+      "de": "Einen Satz über *die Einkaufsliste* zweimal korrigieren.",
+      "en": "Correct one sentence about *die Einkaufsliste* twice.",
+      "es": "Corrige dos veces una oración sobre *die Einkaufsliste*.",
+      "fr": "Corrigez deux fois une phrase sur *die Einkaufsliste*.",
+      "it": "Correggi due volte una frase su *die Einkaufsliste*.",
+      "pt": "Corrija duas vezes uma frase sobre *die Einkaufsliste*."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Was haben Sie zuletzt *selbst gemacht*?"
+     "texto": {
+      "de": "60 Sekunden laut: Was haben Sie zuletzt *selbst gemacht*?",
+      "en": "Say it out loud for 60 seconds: what did you last *selbst gemacht*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿qué fue lo último que *selbst gemacht*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : qu'avez-vous fait récemment *selbst gemacht* ?",
+      "it": "Parla ad alta voce per 60 secondi: qual è l'ultima cosa che hai *selbst gemacht*?",
+      "pt": "Fale em voz alta por 60 segundos: qual foi a última coisa que você *selbst gemacht*?"
+     }
     }
    ]
   },
@@ -274,7 +610,14 @@
    "packId": "de-B1-2026-T14-1",
    "order": 1,
    "topicId": "T14",
-   "subtitulo": "Adjektive beim Umtauschen",
+   "subtitulo": {
+    "de": "Adjektive beim Umtauschen",
+    "en": "Adjectives when exchanging an item",
+    "es": "Adjetivos al cambiar un producto",
+    "fr": "Adjectifs lors d'un échange en magasin",
+    "it": "Aggettivi quando si cambia un articolo",
+    "pt": "Adjetivos ao trocar um produto"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -282,28 +625,70 @@
     "minutosEstimados": 55
    },
    "mision": {
-    "consigna": "Sie möchten etwas umtauschen. Beschreiben Sie die Ware und das Gespräch im Geschäft.",
+    "consigna": {
+     "de": "Sie möchten etwas umtauschen. Beschreiben Sie die Ware und das Gespräch im Geschäft.",
+     "en": "You want to exchange something. Describe the item and the conversation in the shop.",
+     "es": "Quieres cambiar algo. Describe el producto y la conversación en la tienda.",
+     "fr": "Vous voulez échanger quelque chose. Décrivez l'article et la conversation dans le magasin.",
+     "it": "Vuoi cambiare qualcosa. Descrivi l'articolo e la conversazione in negozio.",
+     "pt": "Você quer trocar alguma coisa. Descreva o produto e a conversa na loja."
+    },
     "requisitos": [
-     "sechs deklinierte Adjektive",
+     {
+      "de": "sechs deklinierte Adjektive",
+      "en": "six declined adjectives",
+      "es": "seis adjetivos declinados",
+      "fr": "six adjectifs déclinés",
+      "it": "sei aggettivi declinati",
+      "pt": "seis adjetivos declinados"
+     },
      "alle drei Typen: mit *der*, mit *ein*, ohne Artikel",
-     "*die Ware*, *der Kassenbon* und *umtauschen* verwenden"
+     {
+      "de": "*die Ware*, *der Kassenbon* und *umtauschen* verwenden",
+      "en": "use *die Ware*, *der Kassenbon* and *umtauschen*",
+      "es": "usar *die Ware*, *der Kassenbon* y *umtauschen*",
+      "fr": "utiliser *die Ware*, *der Kassenbon* et *umtauschen*",
+      "it": "usare *die Ware*, *der Kassenbon* e *umtauschen*",
+      "pt": "usar *die Ware*, *der Kassenbon* e *umtauschen*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Sechs Wörter dreimal: *die neue Ware*, *eine neue Ware*, *neue Ware*."
+     "texto": {
+      "de": "Sechs Wörter dreimal: *die neue Ware*, *eine neue Ware*, *neue Ware*.",
+      "en": "Six words, three times each: *die neue Ware*, *eine neue Ware*, *neue Ware*.",
+      "es": "Seis palabras, tres veces cada una: *die neue Ware*, *eine neue Ware*, *neue Ware*.",
+      "fr": "Six mots, chacun trois fois : *die neue Ware*, *eine neue Ware*, *neue Ware*.",
+      "it": "Sei parole, tre volte ciascuna: *die neue Ware*, *eine neue Ware*, *neue Ware*.",
+      "pt": "Seis palavras, três vezes cada uma: *die neue Ware*, *eine neue Ware*, *neue Ware*."
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Drei Sätze über *die Lieferfrist* mit Adjektiv."
+     "texto": {
+      "de": "Drei Sätze über *die Lieferfrist* mit Adjektiv.",
+      "en": "Three sentences about *die Lieferfrist* with an adjective.",
+      "es": "Tres oraciones sobre *die Lieferfrist* con un adjetivo.",
+      "fr": "Trois phrases sur *die Lieferfrist* avec un adjectif.",
+      "it": "Tre frasi su *die Lieferfrist* con un aggettivo.",
+      "pt": "Três frases sobre *die Lieferfrist* com um adjetivo."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Wie lassen Sie *sich beraten*?"
+     "texto": {
+      "de": "60 Sekunden laut: Wie lassen Sie *sich beraten*?",
+      "en": "Say it out loud for 60 seconds: how do you *sich beraten lassen*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿cómo *sich beraten lassen*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : comment *sich beraten lassen* ?",
+      "it": "Parla ad alta voce per 60 secondi: come *sich beraten lassen*?",
+      "pt": "Fale em voz alta por 60 segundos: como *sich beraten lassen*?"
+     }
     }
    ]
   },
@@ -312,7 +697,14 @@
    "packId": "de-B1-2026-T11-1",
    "order": 1,
    "topicId": "T11",
-   "subtitulo": "Konnektoren über Nachrichten",
+   "subtitulo": {
+    "de": "Konnektoren über Nachrichten",
+    "en": "Connectors when talking about the news",
+    "es": "Conectores al hablar de noticias",
+    "fr": "Connecteurs pour parler de l'actualité",
+    "it": "Connettivi per parlare delle notizie",
+    "pt": "Conectores ao falar de notícias"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -320,28 +712,77 @@
     "minutosEstimados": 55
    },
    "mision": {
-    "consigna": "Schreiben Sie, wie Sie sich informieren und was Sie von Umfragen halten.",
+    "consigna": {
+     "de": "Schreiben Sie, wie Sie sich informieren und was Sie von Umfragen halten.",
+     "en": "Write how you keep informed and what you think of surveys.",
+     "es": "Escribe cómo te informas y qué opinas de las encuestas.",
+     "fr": "Écrivez comment vous vous informez et ce que vous pensez des sondages.",
+     "it": "Scrivi come ti informi e cosa pensi dei sondaggi.",
+     "pt": "Escreva como você se informa e o que pensa sobre pesquisas."
+    },
     "requisitos": [
-     "*weil*, *obwohl*, *deshalb* und *trotzdem*, jeweils einmal",
-     "die Verbstellung markieren",
-     "*sich informieren über*, *die Umfrage* und *etwas hinterfragen* verwenden"
+     {
+      "de": "*weil*, *obwohl*, *deshalb* und *trotzdem*, jeweils einmal",
+      "en": "use *weil*, *obwohl*, *deshalb* and *trotzdem* once each",
+      "es": "usar *weil*, *obwohl*, *deshalb* y *trotzdem* una vez cada uno",
+      "fr": "utiliser *weil*, *obwohl*, *deshalb* et *trotzdem* une fois chacun",
+      "it": "usare *weil*, *obwohl*, *deshalb* e *trotzdem* una volta ciascuno",
+      "pt": "usar *weil*, *obwohl*, *deshalb* e *trotzdem* uma vez cada"
+     },
+     {
+      "de": "die Verbstellung markieren",
+      "en": "mark the verb position",
+      "es": "marcar la posición del verbo",
+      "fr": "indiquer la place du verbe",
+      "it": "segnare la posizione del verbo",
+      "pt": "marcar a posição do verbo"
+     },
+     {
+      "de": "*sich informieren über*, *die Umfrage* und *etwas hinterfragen* verwenden",
+      "en": "use *sich informieren über*, *die Umfrage* and *etwas hinterfragen*",
+      "es": "usar *sich informieren über*, *die Umfrage* y *etwas hinterfragen*",
+      "fr": "utiliser *sich informieren über*, *die Umfrage* et *etwas hinterfragen*",
+      "it": "usare *sich informieren über*, *die Umfrage* e *etwas hinterfragen*",
+      "pt": "usar *sich informieren über*, *die Umfrage* e *etwas hinterfragen*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Vier Sätze, je ein Konnektor. Wo steht das Verb?"
+     "texto": {
+      "de": "Vier Sätze, je ein Konnektor. Wo steht das Verb?",
+      "en": "Four sentences, one connector each. Where is the verb?",
+      "es": "Cuatro oraciones, un conector en cada una. ¿Dónde está el verbo?",
+      "fr": "Quatre phrases, un connecteur chacune. Où est le verbe ?",
+      "it": "Quattro frasi, un connettivo ciascuna. Dov'è il verbo?",
+      "pt": "Quatro frases, um conector em cada uma. Onde está o verbo?"
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Zwei Sätze mit *deshalb* über *die Meldung*."
+     "texto": {
+      "de": "Zwei Sätze mit *deshalb* über *die Meldung*.",
+      "en": "Two sentences with *deshalb* about *die Meldung*.",
+      "es": "Dos oraciones con *deshalb* sobre *die Meldung*.",
+      "fr": "Deux phrases avec *deshalb* sur *die Meldung*.",
+      "it": "Due frasi con *deshalb* su *die Meldung*.",
+      "pt": "Duas frases com *deshalb* sobre *die Meldung*."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Welche *Sendung verfolgen* Sie? Warum?"
+     "texto": {
+      "de": "60 Sekunden laut: Welche *Sendung verfolgen* Sie? Warum?",
+      "en": "Say it out loud for 60 seconds: which *Sendung verfolgen* do you? Why?",
+      "es": "Habla en voz alta durante 60 segundos: ¿qué *Sendung verfolgen*? ¿Por qué?",
+      "fr": "Parlez à voix haute pendant 60 secondes : quelle *Sendung verfolgen* suivez-vous ? Pourquoi ?",
+      "it": "Parla ad alta voce per 60 secondi: quale *Sendung verfolgen*? Perché?",
+      "pt": "Fale em voz alta por 60 segundos: qual *Sendung verfolgen*? Por quê?"
+     }
     }
    ]
   },
@@ -350,7 +791,14 @@
    "packId": "de-B1-2026-T12-1",
    "order": 1,
    "topicId": "T12",
-   "subtitulo": "Nebensätze über ein Hobby",
+   "subtitulo": {
+    "de": "Nebensätze über ein Hobby",
+    "en": "Subordinate clauses about a hobby",
+    "es": "Oraciones subordinadas sobre un hobby",
+    "fr": "Propositions subordonnées à propos d'un loisir",
+    "it": "Frasi subordinate su un hobby",
+    "pt": "Orações subordinadas sobre um hobby"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -358,28 +806,70 @@
     "minutosEstimados": 55
    },
    "mision": {
-    "consigna": "Beschreiben Sie ein Hobby, das Sie in einem Verein machen oder machen möchten.",
+    "consigna": {
+     "de": "Beschreiben Sie ein Hobby, das Sie in einem Verein machen oder machen möchten.",
+     "en": "Describe a hobby that you do or would like to do in a club.",
+     "es": "Describe un hobby que haces o te gustaría hacer en un club.",
+     "fr": "Décrivez un loisir que vous pratiquez ou aimeriez pratiquer dans un club.",
+     "it": "Descrivi un hobby che pratichi o vorresti praticare in un'associazione.",
+     "pt": "Descreva um hobby que você pratica ou gostaria de praticar em um clube."
+    },
     "requisitos": [
-     "fünf Nebensätze mit *dass*, *weil*, *wenn*, *obwohl*",
+     {
+      "de": "fünf Nebensätze mit *dass*, *weil*, *wenn*, *obwohl*",
+      "en": "five subordinate clauses with *dass*, *weil*, *wenn*, *obwohl*",
+      "es": "cinco subordinadas con *dass*, *weil*, *wenn*, *obwohl*",
+      "fr": "cinq subordonnées avec *dass*, *weil*, *wenn*, *obwohl*",
+      "it": "cinque subordinate con *dass*, *weil*, *wenn*, *obwohl*",
+      "pt": "cinco orações subordinadas com *dass*, *weil*, *wenn*, *obwohl*"
+     },
      "das Verb immer am Ende",
-     "*sich anmelden für*, *die Ausrüstung* und *regelmässig trainieren* verwenden"
+     {
+      "de": "*sich anmelden für*, *die Ausrüstung* und *regelmässig trainieren* verwenden",
+      "en": "use *sich anmelden für*, *die Ausrüstung* and *regelmässig trainieren*",
+      "es": "usar *sich anmelden für*, *die Ausrüstung* y *regelmässig trainieren*",
+      "fr": "utiliser *sich anmelden für*, *die Ausrüstung* et *regelmässig trainieren*",
+      "it": "usare *sich anmelden für*, *die Ausrüstung* e *regelmässig trainieren*",
+      "pt": "usar *sich anmelden für*, *die Ausrüstung* e *regelmässig trainieren*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Fünf Sätze: *Ich glaube, dass…* über *das Vereinsleben*."
+     "texto": {
+      "de": "Fünf Sätze: *Ich glaube, dass…* über *das Vereinsleben*.",
+      "en": "Five sentences: *Ich glaube, dass…* about *das Vereinsleben*.",
+      "es": "Cinco oraciones: *Ich glaube, dass…* sobre *das Vereinsleben*.",
+      "fr": "Cinq phrases : *Ich glaube, dass…* sur *das Vereinsleben*.",
+      "it": "Cinque frasi: *Ich glaube, dass…* su *das Vereinsleben*.",
+      "pt": "Cinco frases: *Ich glaube, dass…* sobre *das Vereinsleben*."
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Drei *wenn*-Sätze über *den Anfängerkurs*."
+     "texto": {
+      "de": "Drei *wenn*-Sätze über *den Anfängerkurs*.",
+      "en": "Three *wenn* sentences about *den Anfängerkurs*.",
+      "es": "Tres oraciones con *wenn* sobre *den Anfängerkurs*.",
+      "fr": "Trois phrases avec *wenn* sur *den Anfängerkurs*.",
+      "it": "Tre frasi con *wenn* su *den Anfängerkurs*.",
+      "pt": "Três frases com *wenn* sobre *den Anfängerkurs*."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Woran haben Sie *Spass*?"
+     "texto": {
+      "de": "60 Sekunden laut: Woran haben Sie *Spass*?",
+      "en": "Say it out loud for 60 seconds: what do you have *Spass* doing?",
+      "es": "Habla en voz alta durante 60 segundos: ¿con qué tienes *Spass*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : qu'est-ce qui vous donne *Spass* ?",
+      "it": "Parla ad alta voce per 60 secondi: cosa ti dà *Spass*?",
+      "pt": "Fale em voz alta por 60 segundos: o que te dá *Spass*?"
+     }
     }
    ]
   },
@@ -388,7 +878,14 @@
    "packId": "de-B1-2026-T08-1",
    "order": 1,
    "topicId": "T08",
-   "subtitulo": "Vermutungen über einen Streit",
+   "subtitulo": {
+    "de": "Vermutungen über einen Streit",
+    "en": "Making assumptions about an argument",
+    "es": "Hacer suposiciones sobre una pelea",
+    "fr": "Faire des suppositions sur une dispute",
+    "it": "Fare ipotesi su un litigio",
+    "pt": "Fazer suposições sobre uma briga"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -396,28 +893,77 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Zwei Freunde von Ihnen reden nicht mehr miteinander. Vermuten Sie, warum.",
+    "consigna": {
+     "de": "Zwei Freunde von Ihnen reden nicht mehr miteinander. Vermuten Sie, warum.",
+     "en": "Two of your friends are no longer speaking to each other. Guess why.",
+     "es": "Dos amigos tuyos ya no se hablan. Supón por qué.",
+     "fr": "Deux de vos amis ne se parlent plus. Faites des suppositions sur la raison.",
+     "it": "Due tuoi amici non si parlano più. Fai delle ipotesi sul perché.",
+     "pt": "Dois amigos seus não estão mais se falando. Faça suposições sobre o motivo."
+    },
     "requisitos": [
-     "vier Vermutungen mit *vielleicht* oder *wahrscheinlich*",
-     "Vermutung und Tatsache klar getrennt",
-     "*sich streiten*, *die Rücksicht* und *jemandem zuhören* verwenden"
+     {
+      "de": "vier Vermutungen mit *vielleicht* oder *wahrscheinlich*",
+      "en": "four assumptions with *vielleicht* or *wahrscheinlich*",
+      "es": "cuatro suposiciones con *vielleicht* o *wahrscheinlich*",
+      "fr": "quatre suppositions avec *vielleicht* ou *wahrscheinlich*",
+      "it": "quattro ipotesi con *vielleicht* o *wahrscheinlich*",
+      "pt": "quatro suposições com *vielleicht* ou *wahrscheinlich*"
+     },
+     {
+      "de": "Vermutung und Tatsache klar getrennt",
+      "en": "clearly separate assumptions from facts",
+      "es": "separar claramente las suposiciones de los hechos",
+      "fr": "séparer clairement les suppositions des faits",
+      "it": "separare chiaramente le ipotesi dai fatti",
+      "pt": "separar claramente as suposições dos fatos"
+     },
+     {
+      "de": "*sich streiten*, *die Rücksicht* und *jemandem zuhören* verwenden",
+      "en": "use *sich streiten*, *die Rücksicht* and *jemandem zuhören*",
+      "es": "usar *sich streiten*, *die Rücksicht* y *jemandem zuhören*",
+      "fr": "utiliser *sich streiten*, *die Rücksicht* et *jemandem zuhören*",
+      "it": "usare *sich streiten*, *die Rücksicht* e *jemandem zuhören*",
+      "pt": "usar *sich streiten*, *die Rücksicht* e *jemandem zuhören*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Drei mögliche Gründe aufschreiben: sicher oder vermutet?"
+     "texto": {
+      "de": "Drei mögliche Gründe aufschreiben: sicher oder vermutet?",
+      "en": "Write down three possible reasons: certain or assumed?",
+      "es": "Anota tres razones posibles: ¿seguras o supuestas?",
+      "fr": "Notez trois raisons possibles : certaines ou supposées ?",
+      "it": "Scrivi tre possibili motivi: certi o ipotizzati?",
+      "pt": "Anote três possíveis motivos: certos ou supostos?"
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "Jeden Grund mit *vielleicht* oder *wahrscheinlich* formulieren."
+     "texto": {
+      "de": "Jeden Grund mit *vielleicht* oder *wahrscheinlich* formulieren.",
+      "en": "Phrase each reason with *vielleicht* or *wahrscheinlich*.",
+      "es": "Formula cada razón con *vielleicht* o *wahrscheinlich*.",
+      "fr": "Formulez chaque raison avec *vielleicht* ou *wahrscheinlich*.",
+      "it": "Formula ogni motivo con *vielleicht* o *wahrscheinlich*.",
+      "pt": "Formule cada motivo com *vielleicht* ou *wahrscheinlich*."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Wie *pflegt* man *eine Beziehung*?"
+     "texto": {
+      "de": "60 Sekunden laut: Wie *pflegt* man *eine Beziehung*?",
+      "en": "Say it out loud for 60 seconds: how do you *eine Beziehung pflegen*?",
+      "es": "Habla en voz alta durante 60 segundos: ¿cómo se puede *eine Beziehung pflegen*?",
+      "fr": "Parlez à voix haute pendant 60 secondes : comment peut-on *eine Beziehung pflegen* ?",
+      "it": "Parla ad alta voce per 60 secondi: come si può *eine Beziehung pflegen*?",
+      "pt": "Fale em voz alta por 60 segundos: como é possível *eine Beziehung pflegen*?"
+     }
     }
    ]
   },
@@ -426,7 +972,14 @@
    "packId": "de-B1-2026-T02-1",
    "order": 1,
    "topicId": "T02",
-   "subtitulo": "Ja oder nein zum Sparen",
+   "subtitulo": {
+    "de": "Ja oder nein zum Sparen",
+    "en": "Yes or no to saving money",
+    "es": "Sí o no al ahorro",
+    "fr": "Oui ou non à l'épargne",
+    "it": "Sì o no al risparmio",
+    "pt": "Sim ou não à poupança"
+   },
    "challengeType": "guided_production",
    "evidencia": {
     "escritura": 150,
@@ -434,28 +987,70 @@
     "minutosEstimados": 45
    },
    "mision": {
-    "consigna": "Jemand sagt: *Eine Rücklage braucht man erst später im Leben.* Antworten Sie.",
+    "consigna": {
+     "de": "Jemand sagt: *Eine Rücklage braucht man erst später im Leben.* Antworten Sie.",
+     "en": "Someone says: *Eine Rücklage braucht man erst später im Leben.* Answer.",
+     "es": "Alguien dice: *Eine Rücklage braucht man erst später im Leben.* Responde.",
+     "fr": "Quelqu'un dit : *Eine Rücklage braucht man erst später im Leben.* Répondez.",
+     "it": "Qualcuno dice: *Eine Rücklage braucht man erst später im Leben.* Rispondi.",
+     "pt": "Alguém diz: *Eine Rücklage braucht man erst später im Leben.* Responda."
+    },
     "requisitos": [
      "zwei Zustimmungen und zwei Widersprüche",
-     "ein Grund pro Antwort",
-     "*die Rücklage bilden*, *die Nebenkosten* und *etwas abbezahlen* verwenden"
+     {
+      "de": "ein Grund pro Antwort",
+      "en": "one reason for each answer",
+      "es": "una razón por cada respuesta",
+      "fr": "une raison pour chaque réponse",
+      "it": "una motivazione per ogni risposta",
+      "pt": "uma justificativa para cada resposta"
+     },
+     {
+      "de": "*die Rücklage bilden*, *die Nebenkosten* und *etwas abbezahlen* verwenden",
+      "en": "use *die Rücklage bilden*, *die Nebenkosten* and *etwas abbezahlen*",
+      "es": "usar *die Rücklage bilden*, *die Nebenkosten* y *etwas abbezahlen*",
+      "fr": "utiliser *die Rücklage bilden*, *die Nebenkosten* et *etwas abbezahlen*",
+      "it": "usare *die Rücklage bilden*, *die Nebenkosten* e *etwas abbezahlen*",
+      "pt": "usar *die Rücklage bilden*, *die Nebenkosten* e *etwas abbezahlen*"
+     }
     ]
    },
    "microtareas": [
     {
      "dia": "lun",
      "minutos": 5,
-     "texto": "Drei Aussagen über Geld: Stimmen Sie zu?"
+     "texto": {
+      "de": "Drei Aussagen über Geld: Stimmen Sie zu?",
+      "en": "Three statements about money: do you agree?",
+      "es": "Tres afirmaciones sobre el dinero: ¿estás de acuerdo?",
+      "fr": "Trois affirmations sur l'argent : êtes-vous d'accord ?",
+      "it": "Tre affermazioni sul denaro: sei d'accordo?",
+      "pt": "Três afirmações sobre dinheiro: você concorda?"
+     }
     },
     {
      "dia": "mie",
      "minutos": 5,
-     "texto": "*Das finde ich nicht* auf drei Arten sagen."
+     "texto": {
+      "de": "*Das finde ich nicht* auf drei Arten sagen.",
+      "en": "Say *Das finde ich nicht* in three different ways.",
+      "es": "Di *Das finde ich nicht* de tres maneras diferentes.",
+      "fr": "Dites *Das finde ich nicht* de trois façons différentes.",
+      "it": "Di' *Das finde ich nicht* in tre modi diversi.",
+      "pt": "Diga *Das finde ich nicht* de três maneiras diferentes."
+     }
     },
     {
      "dia": "vie",
      "minutos": 5,
-     "texto": "60 Sekunden laut: Wie teilen Sie *sich* Kosten mit anderen *auf*?"
+     "texto": {
+      "de": "60 Sekunden laut: Wie teilen Sie *sich* Kosten mit anderen *auf*?",
+      "en": "Say it out loud for 60 seconds: how do you *sich* costs *aufteilen* with other people?",
+      "es": "Habla en voz alta durante 60 segundos: ¿cómo *sich* los gastos *aufteilen* con otras personas?",
+      "fr": "Parlez à voix haute pendant 60 secondes : comment *sich* les coûts *aufteilen* avec d'autres personnes ?",
+      "it": "Parla ad alta voce per 60 secondi: come *sich* le spese *aufteilen* con altre persone?",
+      "pt": "Fale em voz alta por 60 segundos: como você *sich* os custos *aufteilen* com outras pessoas?"
+     }
     }
    ]
   }

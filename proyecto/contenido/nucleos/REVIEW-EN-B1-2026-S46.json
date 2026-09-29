@@ -7,23 +7,79 @@
  "clase": "review",
  "titulo": "Review Week",
  "minutosEstimados": 40,
- "consigna": "Friday, spoken: talk for two minutes about a problem you had to sort out recently and what you asked for. Note two or three ideas first, then speak freely.",
+ "consigna": {
+  "en": "Friday, spoken: talk for two minutes about a problem you had to sort out recently and what you asked for. Note two or three ideas first, then speak freely.",
+  "de": "Freitag, gesprochen: Sprechen Sie zwei Minuten lang über ein Problem, das Sie kürzlich lösen mussten, und darüber, worum Sie gebeten haben. Notieren Sie zuerst zwei oder drei Ideen und sprechen Sie dann frei.",
+  "es": "Viernes, oral: habla durante dos minutos sobre un problema que hayas tenido que resolver recientemente y qué pediste. Anota antes dos o tres ideas y luego habla libremente.",
+  "fr": "Vendredi, à l'oral : parlez pendant deux minutes d'un problème que vous avez dû résoudre récemment et de ce que vous avez demandé. Notez d'abord deux ou trois idées, puis parlez librement.",
+  "it": "Venerdì, orale: parla per due minuti di un problema che hai dovuto risolvere di recente e di cosa hai chiesto. Prima annota due o tre idee, poi parla liberamente.",
+  "pt": "Sexta-feira, oral: fale durante dois minutos sobre um problema que você precisou resolver recentemente e o que pediu. Anote duas ou três ideias antes e depois fale livremente."
+ },
  "requisitos": [
-  "An opinion with a reason (week 41)",
-  "Two pieces of advice you'd give someone in the same situation (week 42)",
-  "The problem, the effect and a clear request (week 45)"
+  {
+   "en": "An opinion with a reason (week 41)",
+   "de": "Eine Meinung mit Begründung (Woche 41)",
+   "es": "Una opinión con una razón (semana 41)",
+   "fr": "Une opinion avec une justification (semaine 41)",
+   "it": "Un'opinione con una motivazione (settimana 41)",
+   "pt": "Uma opinião com uma justificativa (semana 41)"
+  },
+  {
+   "en": "Two pieces of advice you'd give someone in the same situation (week 42)",
+   "de": "Zwei Ratschläge, die Sie jemandem in derselben Situation geben würden (Woche 42)",
+   "es": "Dos consejos que le darías a alguien en la misma situación (semana 42)",
+   "fr": "Deux conseils que vous donneriez à quelqu'un dans la même situation (semaine 42)",
+   "it": "Due consigli che daresti a qualcuno nella stessa situazione (settimana 42)",
+   "pt": "Dois conselhos que você daria a alguém na mesma situação (semana 42)"
+  },
+  {
+   "en": "The problem, the effect and a clear request (week 45)",
+   "de": "Das Problem, die Auswirkung und eine klare Bitte (Woche 45)",
+   "es": "El problema, el efecto y un pedido claro (semana 45)",
+   "fr": "Le problème, l'effet et une demande claire (semaine 45)",
+   "it": "Il problema, l'effetto e una richiesta chiara (settimana 45)",
+   "pt": "O problema, o efeito e um pedido claro (semana 45)"
+  }
  ],
  "microtareas": [
-  "*Mon (10 min).* Read your corrections from weeks 41 to 45. Write down the mistake marked most often, and one line on why it happens.",
+  {
+   "en": "*Mon (10 min).* Read your corrections from weeks 41 to 45. Write down the mistake marked most often, and one line on why it happens.",
+   "de": "*Mo (10 Min.).* Lesen Sie Ihre Korrekturen aus den Wochen 41 bis 45. Schreiben Sie den am häufigsten markierten Fehler auf und einen Satz dazu, warum er passiert.",
+   "es": "*Lun (10 min).* Lee tus correcciones de las semanas 41 a 45. Anota el error marcado con más frecuencia y una frase explicando por qué ocurre.",
+   "fr": "*Lun. (10 min).* Lisez vos corrections des semaines 41 à 45. Notez l'erreur la plus souvent signalée et une phrase expliquant pourquoi elle se produit.",
+   "it": "*Lun (10 min).* Leggi le correzioni delle settimane dalla 41 alla 45. Annota l'errore segnalato più spesso e una frase che spieghi perché succede.",
+   "pt": "*Seg (10 min).* Leia suas correções das semanas 41 a 45. Anote o erro marcado com mais frequência e uma frase explicando por que ele acontece."
+  },
   "*Wed (5 min).* Write four sentences that avoid that mistake.",
   "*Fri (5 min).* Record two minutes. Then listen and mark the mistake."
  ],
  "autochequeo": [
   "Were all three requirements really there?",
-  "Did the complaint include a request, not just annoyance?",
-  "Was the advice usable, or too vague?",
+  {
+   "en": "Did the complaint include a request, not just annoyance?",
+   "de": "Enthielt die Beschwerde eine Bitte und nicht nur Ärger?",
+   "es": "¿La queja incluía un pedido y no solo molestia?",
+   "fr": "La plainte comprenait-elle une demande et pas seulement de l'agacement ?",
+   "it": "Il reclamo conteneva una richiesta e non solo irritazione?",
+   "pt": "A reclamação incluía um pedido e não apenas irritação?"
+  },
+  {
+   "en": "Was the advice usable, or too vague?",
+   "de": "War der Rat konkret genug, um ihn zu nutzen, oder zu vage?",
+   "es": "¿El consejo era útil o demasiado vago?",
+   "fr": "Le conseil était-il suffisamment concret pour être utile ou trop vague ?",
+   "it": "Il consiglio era utilizzabile o troppo vago?",
+   "pt": "O conselho era útil ou vago demais?"
+  },
   "Did I speak or read?",
   "Did Monday's mistake come back?"
  ],
- "promptCorreccion": "This is a review of three skills at B1 level: opinion with a reason, giving advice, and complaining with a clear request. (1) For each, say whether it is present and whether it is done well. (2) Tell me which one broke down under time pressure. (3) Give me one sentence that carries two of them at once. Correct nothing outside these three areas. ---"
+ "promptCorreccion": {
+  "en": "This is a review of three skills at B1 level: opinion with a reason, giving advice, and complaining with a clear request. (1) For each, say whether it is present and whether it is done well. (2) Tell me which one broke down under time pressure. (3) Give me one sentence that carries two of them at once. Correct nothing outside these three areas. ---",
+  "de": "Das ist eine Wiederholung von drei Fertigkeiten auf B1-Niveau: Meinung mit Begründung, Ratschläge geben und sich mit einer klaren Bitte beschweren. (1) Sagen Sie zu jedem Punkt, ob er vorkommt und ob er gut gelingt. (2) Sagen Sie mir, welcher unter Zeitdruck zusammenbricht. (3) Geben Sie mir einen Satz, der zwei davon gleichzeitig enthält. Korrigieren Sie nichts außerhalb dieser drei Bereiche. ---",
+  "es": "Este es un repaso de tres habilidades de nivel B1: opinión con una razón, dar consejos y presentar una queja con un pedido claro. (1) Para cada una, dime si aparece y si está bien lograda. (2) Dime cuál falla bajo presión de tiempo. (3) Dame una oración que combine dos de ellas a la vez. No corrijas nada fuera de estas tres áreas. ---",
+  "fr": "C'est une révision de trois compétences de niveau B1 : opinion avec justification, donner des conseils et se plaindre avec une demande claire. (1) Pour chacune, dis-moi si elle est présente et si elle est bien réalisée. (2) Dis-moi laquelle s'effondre sous la pression du temps. (3) Donne-moi une phrase qui en combine deux à la fois. Ne corrige rien en dehors de ces trois domaines. ---",
+  "it": "Questo è un ripasso di tre competenze di livello B1: opinione con motivazione, dare consigli e fare un reclamo con una richiesta chiara. (1) Per ciascuna, dimmi se compare e se è ben realizzata. (2) Dimmi quale cede sotto pressione. (3) Dammi una frase che ne combini due contemporaneamente. Non correggere nulla al di fuori di queste tre aree. ---",
+  "pt": "Esta é uma revisão de três habilidades do nível B1: opinião com justificativa, dar conselhos e fazer uma reclamação com um pedido claro. (1) Para cada uma, diga se aparece e se está bem feita. (2) Diga qual falha sob pressão de tempo. (3) Dê uma frase que combine duas delas ao mesmo tempo. Não corrija nada fora dessas três áreas. ---"
+ }
 }
