@@ -1,0 +1,733 @@
+{
+ "id": "EN-F11-B1-2027-2",
+ "skillId": "EN-F11",
+ "order": 2,
+ "idioma": "en",
+ "nivel": "B1",
+ "categoria": "fluency",
+ "topicId": "T04",
+ "titulo": {
+  "en": "Summarising Complex Information",
+  "de": "Komplexe Informationen zusammenfassen",
+  "es": "Resumir información compleja",
+  "fr": "Résumer des informations complexes",
+  "it": "Riassumere informazioni complesse",
+  "pt": "Resumir informações complexas"
+ },
+ "subtitulo": {
+  "en": "Summarising a health article",
+  "de": "Einen Gesundheitsartikel zusammenfassen",
+  "es": "Resumir un artículo sobre salud",
+  "fr": "Résumer un article sur la santé",
+  "it": "Riassumere un articolo sulla salute",
+  "pt": "Resumir um artigo sobre saúde"
+ },
+ "ancla": "CV Relaying specific information",
+ "challengeType": "guided_production",
+ "bilingue": true,
+ "evidencia": {
+  "escritura": 150,
+  "oralMin": 2.5,
+  "minutosEstimados": 45
+ },
+ "descripcion": {
+  "en": "At B1 you summarise a short text or conversation in one or two sentences, naming the main idea. The finer structure with omissions and separated opinion (B2/C1) isn't the target yet — a clear, short main point is enough.",
+  "de": "Auf B1-Niveau fasst du einen kurzen Text oder ein Gespräch in ein oder zwei Sätzen zusammen und nennst die Hauptaussage. Die feinere Struktur mit Auslassungen und einer getrennten Darstellung der eigenen Meinung auf B2/C1 ist noch nicht das Ziel – eine klare, kurze Kernaussage reicht hier aus.",
+  "es": "En B1 resumes un texto breve o una conversación en una o dos frases y señalas la idea principal. La estructura más elaborada de B2/C1, con omisiones y la opinión separada, todavía no es el objetivo: aquí basta con una idea principal clara y breve.",
+  "fr": "Au niveau B1, tu résumes un texte court ou une conversation en une ou deux phrases en indiquant l'idée principale. La structure plus élaborée de B2/C1, avec des omissions et une opinion séparée, n'est pas encore l'objectif : une idée principale claire et brève suffit ici.",
+  "it": "Al livello B1 riassumi un breve testo o una conversazione in una o due frasi, indicando l'idea principale. La struttura più articolata di B2/C1, con omissioni e opinione separata, non è ancora l'obiettivo: qui basta un punto principale chiaro e breve.",
+  "pt": "No nível B1, você resume um texto curto ou uma conversa em uma ou duas frases, indicando a ideia principal. A estrutura mais elaborada de B2/C1, com omissões e opinião separada, ainda não é o objetivo — aqui basta uma ideia principal clara e breve."
+ },
+ "cuadroReferencia": {
+  "titulo": {
+   "en": "A short summary",
+   "de": "Kurz zusammenfassen",
+   "es": "Un resumen breve",
+   "fr": "Un résumé bref",
+   "it": "Un riassunto breve",
+   "pt": "Um resumo curto"
+  },
+  "columnas": [
+   {
+    "en": "Step",
+    "de": "Schritt",
+    "es": "Paso",
+    "fr": "Étape",
+    "it": "Passaggio",
+    "pt": "Etapa"
+   },
+   {
+    "en": "Example",
+    "de": "Beispiel",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
+  ],
+  "filas": [
+   [
+    {
+     "en": "Main idea",
+     "de": "Hauptidee",
+     "es": "Idea principal",
+     "fr": "Idée principale",
+     "it": "Idea principale",
+     "pt": "Ideia principal"
+    },
+    {
+     "en": "The article is about the benefits of remote work.",
+     "de": "Der Artikel handelt von den Vorteilen der Telearbeit.",
+     "es": "El artículo trata sobre las ventajas del trabajo remoto.",
+     "fr": "L'article porte sur les avantages du télétravail.",
+     "it": "L'articolo parla dei vantaggi del lavoro da remoto.",
+     "pt": "O artigo fala sobre as vantagens do trabalho remoto."
+    }
+   ],
+   [
+    {
+     "en": "One detail",
+     "de": "Ein Detail",
+     "es": "Un detalle",
+     "fr": "Un détail",
+     "it": "Un dettaglio",
+     "pt": "Um detalhe"
+    },
+    {
+     "en": "It also mentions some downsides.",
+     "de": "Er erwähnt auch einige Nachteile.",
+     "es": "También menciona algunas desventajas.",
+     "fr": "Il mentionne aussi quelques inconvénients.",
+     "it": "Menziona anche alcuni svantaggi.",
+     "pt": "Ele também menciona algumas desvantagens."
+    }
+   ],
+   [
+    {
+     "en": "Closing",
+     "de": "Abschluss",
+     "es": "Cierre",
+     "fr": "Conclusion",
+     "it": "Chiusura",
+     "pt": "Encerramento"
+    },
+    {
+     "en": "In short, that's the main point.",
+     "de": "Kurz gesagt, das ist die Hauptaussage.",
+     "es": "En resumen, esa es la idea principal.",
+     "fr": "En bref, c'est l'idée principale.",
+     "it": "In breve, questo è il punto principale.",
+     "pt": "Resumindo, esse é o ponto principal."
+    }
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": {
+    "en": "The article is mainly about the benefits of remote work.",
+    "de": "Der Artikel handelt hauptsächlich von den Vorteilen der Telearbeit.",
+    "es": "El artículo trata principalmente sobre las ventajas del trabajo remoto.",
+    "fr": "L'article porte principalement sur les avantages du télétravail.",
+    "it": "L'articolo parla principalmente dei vantaggi del lavoro da remoto.",
+    "pt": "O artigo trata principalmente das vantagens do trabalho remoto."
+   },
+   "audio": true
+  },
+  {
+   "texto": {
+    "en": "It also mentions a few downsides, like feeling isolated.",
+    "de": "Er erwähnt auch einige Nachteile, zum Beispiel das Gefühl der Isolation.",
+    "es": "También menciona algunas desventajas, como sentirse aislado.",
+    "fr": "Il mentionne aussi quelques inconvénients, comme le sentiment d'isolement.",
+    "it": "Menziona anche alcuni svantaggi, come il sentirsi isolati.",
+    "pt": "Ele também menciona algumas desvantagens, como sentir-se isolado."
+   },
+   "audio": true
+  },
+  {
+   "texto": {
+    "en": "Basically, it says people are happier working from home.",
+    "de": "Im Grunde sagt er, dass die Menschen glücklicher sind, wenn sie von zu Hause aus arbeiten.",
+    "es": "Básicamente, dice que la gente es más feliz trabajando desde casa.",
+    "fr": "En gros, il dit que les gens sont plus heureux en travaillant de chez eux.",
+    "it": "In sostanza, dice che le persone sono più felici lavorando da casa.",
+    "pt": "Basicamente, ele diz que as pessoas ficam mais felizes trabalhando de casa."
+   }
+  }
+ ],
+ "notas": [
+  {
+   "en": "The article is about… / It's mainly about… is the easiest way to open a summary.",
+   "de": "The article is about… / It's mainly about… ist die einfachste Art, eine Zusammenfassung einzuleiten.",
+   "es": "The article is about… / It's mainly about… es la forma más sencilla de comenzar un resumen.",
+   "fr": "The article is about… / It's mainly about… est la manière la plus simple de commencer un résumé.",
+   "it": "The article is about… / It's mainly about… è il modo più semplice per iniziare un riassunto.",
+   "pt": "The article is about… / It's mainly about… é a forma mais simples de começar um resumo."
+  },
+  {
+   "en": "One or two sentences are enough for a B1 summary — more starts to become a retelling.",
+   "de": "Ein oder zwei Sätze reichen für eine Zusammenfassung auf B1-Niveau – mehr wird schnell zu einer Nacherzählung.",
+   "es": "Una o dos frases bastan para un resumen de nivel B1; con más, empieza a convertirse en un relato del texto.",
+   "fr": "Une ou deux phrases suffisent pour un résumé de niveau B1 ; au-delà, on commence à raconter le texte au lieu de le résumer.",
+   "it": "Una o due frasi bastano per un riassunto di livello B1; con di più, si rischia di raccontare il testo anziché riassumerlo.",
+   "pt": "Uma ou duas frases são suficientes para um resumo de nível B1 — mais do que isso começa a virar uma recontagem do texto."
+  },
+  {
+   "en": "Basically is a useful, informal way to open a compact summary.",
+   "de": "Basically ist eine nützliche, informelle Möglichkeit, eine knappe Zusammenfassung einzuleiten.",
+   "es": "Basically es una forma útil e informal de iniciar un resumen breve.",
+   "fr": "Basically est une manière utile et informelle d'introduire un résumé concis.",
+   "it": "Basically è un modo utile e informale per introdurre un riassunto sintetico.",
+   "pt": "Basically é uma forma útil e informal de iniciar um resumo curto."
+  }
+ ],
+ "contraste": {
+  "es": "El texto trata sobre… corresponds to the text is about…, so the basic structure transfers directly.",
+  "de": "Der Text handelt von… corresponds to the text is about…; the calque the text handles of… is a typical error.",
+  "it": "Il testo parla di… is often calqued as the text speaks of…; the natural English form is the text is about….",
+  "fr": "Le texte parle de… is often calqued as the text speaks about…; the natural English form is the text is about….",
+  "pt": "O texto fala de… is often calqued as the text speaks about…; the natural English form is the text is about…."
+ },
+ "errores": [
+  {
+   "en": "Retelling the whole text instead of summarising it.",
+   "de": "Den ganzen Text nacherzählen, statt ihn zusammenzufassen.",
+   "es": "Volver a contar todo el texto en lugar de resumirlo.",
+   "fr": "Raconter tout le texte au lieu de le résumer.",
+   "it": "Raccontare tutto il testo invece di riassumerlo.",
+   "pt": "Recontar o texto inteiro em vez de resumi-lo."
+  },
+  {
+   "en": "Giving too many details instead of just the main idea.",
+   "de": "Zu viele Details nennen, statt nur die Hauptaussage wiederzugeben.",
+   "es": "Dar demasiados detalles en lugar de limitarse a la idea principal.",
+   "fr": "Donner trop de détails au lieu de se limiter à l'idée principale.",
+   "it": "Dare troppi dettagli invece di limitarsi all'idea principale.",
+   "pt": "Dar detalhes demais em vez de se limitar à ideia principal."
+  },
+  {
+   "en": "Not stating a clear main idea at all.",
+   "de": "Überhaupt keine klare Hauptaussage nennen.",
+   "es": "No expresar ninguna idea principal clara.",
+   "fr": "Ne pas énoncer clairement l'idée principale.",
+   "it": "Non esprimere affatto un'idea principale chiara.",
+   "pt": "Não apresentar nenhuma ideia principal clara."
+  }
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*En resumen* rendered as *In resume* instead of *In short* or *To sum up*."
+  ],
+  "de": [
+   "*Kurz gesagt* rendered as *Short said* instead of *In short*."
+  ],
+  "it": [
+   "*In sintesi* rendered as *In synthesis* instead of *In short* or *To sum up*."
+  ],
+  "fr": [
+   "*En résumé* rendered as *In resume* instead of *In short* or *To sum up*."
+  ],
+  "pt": [
+   "*Em resumo* rendered as *In resume* instead of *In short* or *To sum up*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a healthy lifestyle",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "un estilo de vida sano",
+    "de": "ein gesunder Lebensstil",
+    "fr": "un mode de vie sain",
+    "it": "uno stile di vita sano",
+    "pt": "um estilo de vida saudável"
+   }
+  },
+  {
+   "item": "mental health",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la salud mental",
+    "de": "die psychische Gesundheit",
+    "fr": "la santé mentale",
+    "it": "la salute mentale",
+    "pt": "a saúde mental"
+   }
+  },
+  {
+   "item": "to feel stressed out",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "sentirse estresado",
+    "de": "gestresst sein",
+    "fr": "être stressé",
+    "it": "sentirsi stressato",
+    "pt": "sentir-se stressado"
+   }
+  },
+  {
+   "item": "to talk to someone",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "hablar con alguien",
+    "de": "mit jemandem reden",
+    "fr": "parler à qn",
+    "it": "parlare con qn",
+    "pt": "falar com alguém"
+   }
+  },
+  {
+   "item": "to work out",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "hacer ejercicio",
+    "de": "trainieren",
+    "fr": "faire du sport",
+    "it": "allenarsi",
+    "pt": "treinar"
+   }
+  },
+  {
+   "item": "a balanced diet",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una dieta equilibrada",
+    "de": "eine ausgewogene Ernährung",
+    "fr": "une alimentation équilibrée",
+    "it": "una dieta equilibrata",
+    "pt": "uma alimentação equilibrada"
+   }
+  },
+  {
+   "item": "to ask for help",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "pedir ayuda",
+    "de": "um Hilfe bitten",
+    "fr": "demander de l'aide",
+    "it": "chiedere aiuto",
+    "pt": "pedir ajuda"
+   }
+  },
+  {
+   "item": "to calm down",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "calmarse",
+    "de": "sich beruhigen",
+    "fr": "se calmer",
+    "it": "calmarsi",
+    "pt": "acalmar-se"
+   }
+  },
+  {
+   "item": "to feel overwhelmed",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sentirse desbordado",
+    "de": "überfordert sein",
+    "fr": "se sentir dépassé",
+    "it": "sentirsi sopraffatto",
+    "pt": "sentir-se sobrecarregado"
+   }
+  },
+  {
+   "item": "to get enough sleep",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dormir lo suficiente",
+    "de": "genug schlafen",
+    "fr": "dormir suffisamment",
+    "it": "dormire abbastanza",
+    "pt": "dormir o suficiente"
+   }
+  },
+  {
+   "item": "to keep fit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mantenerse en forma",
+    "de": "fit bleiben",
+    "fr": "rester en forme",
+    "it": "mantenersi in forma",
+    "pt": "manter-se em forma"
+   }
+  },
+  {
+   "item": "to look after yourself",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "cuidarse",
+    "de": "auf sich achten",
+    "fr": "prendre soin de soi",
+    "it": "prendersi cura di sé",
+    "pt": "cuidar de si"
+   }
+  },
+  {
+   "item": "to recover",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "recuperarse",
+    "de": "sich erholen",
+    "fr": "se remettre",
+    "it": "riprendersi",
+    "pt": "recuperar"
+   }
+  },
+  {
+   "item": "to take a break",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tomarse un descanso",
+    "de": "eine Pause machen",
+    "fr": "faire une pause",
+    "it": "fare una pausa",
+    "pt": "fazer uma pausa"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "It's mainly about…",
+   "funcion": {
+    "en": "main idea",
+    "de": "Hauptaussage",
+    "es": "idea principal",
+    "fr": "idée principale",
+    "it": "idea principale",
+    "pt": "ideia principal"
+   },
+   "traducciones": {
+    "es": "Se trata principalmente de…",
+    "de": "Es geht hauptsächlich um…",
+    "fr": "Il s’agit principalement de…",
+    "it": "Si tratta principalmente di…",
+    "pt": "Trata-se principalmente de…"
+   }
+  },
+  {
+   "expresion": "It's about…",
+   "funcion": {
+    "en": "main idea, simple",
+    "de": "Hauptaussage, einfach",
+    "es": "idea principal, simple",
+    "fr": "idée principale, simple",
+    "it": "idea principale, semplice",
+    "pt": "ideia principal, simples"
+   },
+   "traducciones": {
+    "es": "Es sobre…",
+    "de": "Es geht um…",
+    "fr": "Il s’agit de…",
+    "it": "Si tratta di…",
+    "pt": "Trata-se de…"
+   }
+  },
+  {
+   "expresion": "It also mentions…",
+   "funcion": {
+    "en": "one extra detail",
+    "de": "ein zusätzliches Detail",
+    "es": "un detalle adicional",
+    "fr": "un détail supplémentaire",
+    "it": "un dettaglio in più",
+    "pt": "um detalhe adicional"
+   },
+   "traducciones": {
+    "es": "También menciona…",
+    "de": "Es erwähnt auch…",
+    "fr": "Il/Elle mentionne aussi…",
+    "it": "Menziona anche…",
+    "pt": "Também menciona…"
+   }
+  },
+  {
+   "expresion": "Basically,…",
+   "funcion": {
+    "en": "compact opener",
+    "de": "knappe Einleitung",
+    "es": "inicio breve",
+    "fr": "formule d'introduction concise",
+    "it": "apertura sintetica",
+    "pt": "abertura concisa"
+   },
+   "traducciones": {
+    "es": "Básicamente,…",
+    "de": "Im Grunde…",
+    "fr": "En gros,…",
+    "it": "In pratica,…",
+    "pt": "Basicamente,…"
+   }
+  },
+  {
+   "expresion": "In short,…",
+   "funcion": {
+    "en": "compact closer",
+    "de": "knapper Abschluss",
+    "es": "cierre breve",
+    "fr": "conclusion concise",
+    "it": "chiusura sintetica",
+    "pt": "fechamento conciso"
+   },
+   "traducciones": {
+    "es": "En resumen,…",
+    "de": "Kurz gesagt,…",
+    "fr": "En bref, …",
+    "it": "In breve, …",
+    "pt": "Em resumo, …"
+   }
+  },
+  {
+   "expresion": "The main point is…",
+   "funcion": {
+    "en": "highlights the core idea",
+    "de": "hebt die Kernaussage hervor",
+    "es": "destaca la idea central",
+    "fr": "met en évidence l'idée essentielle",
+    "it": "mette in evidenza l'idea centrale",
+    "pt": "destaca a ideia central"
+   },
+   "traducciones": {
+    "es": "Lo principal es…",
+    "de": "Der wichtigste Punkt ist…",
+    "fr": "Le point principal est…",
+    "it": "Il punto principale è…",
+    "pt": "O ponto principal é…"
+   }
+  },
+  {
+   "expresion": "There are two parts to it: …",
+   "funcion": {
+    "en": "announcing the structure",
+    "de": "Struktur ankündigen",
+    "es": "anunciar la estructura",
+    "fr": "annoncer la structure",
+    "it": "annunciare la struttura",
+    "pt": "anunciar a estrutura"
+   },
+   "traducciones": {
+    "es": "Tiene dos partes: …",
+    "de": "Es geht um zwei Dinge: …",
+    "fr": "Il y a deux aspects : …",
+    "it": "Ci sono due parti: …",
+    "pt": "Tem duas partes: …"
+   }
+  },
+  {
+   "expresion": "The writer thinks that…",
+   "funcion": {
+    "en": "reporting the source's view",
+    "de": "die Meinung der Quelle wiedergeben",
+    "es": "reproducir la opinión de la fuente",
+    "fr": "rapporter l'avis de la source",
+    "it": "riferire l'opinione della fonte",
+    "pt": "reproduzir a opinião da fonte"
+   },
+   "traducciones": {
+    "es": "El autor opina que…",
+    "de": "Der Autor findet, dass…",
+    "fr": "L'auteur pense que…",
+    "it": "L'autore ritiene che…",
+    "pt": "O autor acha que…"
+   }
+  },
+  {
+   "expresion": "I'll skip the details.",
+   "funcion": {
+    "en": "announcing an omission",
+    "de": "Auslassung ankündigen",
+    "es": "anunciar una omisión",
+    "fr": "annoncer une omission",
+    "it": "annunciare un'omissione",
+    "pt": "anunciar uma omissão"
+   },
+   "traducciones": {
+    "es": "Me salteo los detalles.",
+    "de": "Die Details lasse ich weg.",
+    "fr": "Je passe les détails.",
+    "it": "Salto i dettagli.",
+    "pt": "Salto os detalhes."
+   }
+  },
+  {
+   "expresion": "Personally, I think…",
+   "funcion": {
+    "en": "separating one's own view",
+    "de": "eigene Meinung abgrenzen",
+    "es": "separar la opinión propia",
+    "fr": "distinguer son propre avis",
+    "it": "distinguere la propria opinione",
+    "pt": "separar a opinião própria"
+   },
+   "traducciones": {
+    "es": "Personalmente, creo que…",
+    "de": "Ich persönlich finde…",
+    "fr": "Personnellement, je pense que…",
+    "it": "Personalmente penso che…",
+    "pt": "Pessoalmente, acho que…"
+   }
+  },
+  {
+   "expresion": "Did you read it the same way?",
+   "funcion": {
+    "en": "checking a shared reading",
+    "de": "Verständnis abgleichen",
+    "es": "contrastar la comprensión",
+    "fr": "vérifier la compréhension commune",
+    "it": "verificare la comprensione comune",
+    "pt": "confirmar a compreensão"
+   },
+   "traducciones": {
+    "es": "¿Vos lo entendiste igual?",
+    "de": "Hast du das auch so verstanden?",
+    "fr": "Tu l'as compris pareil ?",
+    "it": "L'hai capito anche tu così?",
+    "pt": "Também entendeste assim?"
+   }
+  },
+  {
+   "expresion": "That's all it says.",
+   "funcion": {
+    "en": "marking the limit of the source",
+    "de": "Grenze der Quelle markieren",
+    "es": "marcar el límite de la fuente",
+    "fr": "marquer la limite de la source",
+    "it": "segnare il limite della fonte",
+    "pt": "marcar o limite da fonte"
+   },
+   "traducciones": {
+    "es": "Más que eso no dice.",
+    "de": "Mehr steht da nicht.",
+    "fr": "Il n'en dit pas plus.",
+    "it": "Non dice altro.",
+    "pt": "Mais do que isso não diz."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": {
+   "en": "Summarise a short article about stress for a colleague who's feeling stressed out.",
+   "de": "Fasse einen kurzen Artikel über Stress für einen Kollegen zusammen, der sich gestresst fühlt.",
+   "es": "Resume un artículo breve sobre estrés para un compañero que se siente estresado.",
+   "fr": "Résume un court article sur le stress pour un collègue qui se sent stressé.",
+   "it": "Riassumi un breve articolo sullo stress per un collega che si sente stressato.",
+   "pt": "Resuma um artigo curto sobre estresse para um colega que está se sentindo estressado."
+  },
+  "requisitos": [
+   {
+    "en": "the main point first, different opening from last time",
+    "de": "zuerst die Hauptaussage, mit einer anderen Einleitung als beim letzten Mal",
+    "es": "primero la idea principal, con un inicio distinto de la vez anterior",
+    "fr": "l'idée principale d'abord, avec une introduction différente de la dernière fois",
+    "it": "prima l'idea principale, con un'apertura diversa dalla volta scorsa",
+    "pt": "a ideia principal primeiro, com uma abertura diferente da última vez"
+   },
+   {
+    "en": "two tips",
+    "de": "zwei Tipps",
+    "es": "dos consejos",
+    "fr": "deux conseils",
+    "it": "due consigli",
+    "pt": "duas dicas"
+   },
+   {
+    "en": "use *mental health*, *to feel stressed out* and *to talk to someone*",
+    "de": "verwende *mental health*, *to feel stressed out* und *to talk to someone*",
+    "es": "usa *mental health*, *to feel stressed out* y *to talk to someone*",
+    "fr": "utilise *mental health*, *to feel stressed out* et *to talk to someone*",
+    "it": "usa *mental health*, *to feel stressed out* e *to talk to someone*",
+    "pt": "use *mental health*, *to feel stressed out* e *to talk to someone*"
+   }
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 10,
+   "texto": {
+    "en": "Summarise a health text in 30 words.",
+    "de": "Fasse einen Gesundheitstext in 30 Wörtern zusammen.",
+    "es": "Resume un texto sobre salud en 30 palabras.",
+    "fr": "Résume un texte sur la santé en 30 mots.",
+    "it": "Riassumi un testo sulla salute in 30 parole.",
+    "pt": "Resuma um texto sobre saúde em 30 palavras."
+   }
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": {
+    "en": "The main point in one sentence: *In short,…*",
+    "de": "Die Hauptaussage in einem Satz: *In short,…*",
+    "es": "La idea principal en una oración: *In short,…*",
+    "fr": "L'idée principale en une phrase : *In short,…*",
+    "it": "Il punto principale in una frase: *In short,…*",
+    "pt": "A ideia principal em uma frase: *In short,…*"
+   }
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": {
+    "en": "Record 60 seconds: *The main point is…* — about *a healthy lifestyle*.",
+    "de": "Nimm 60 Sekunden auf: *The main point is…* – zum Thema *a healthy lifestyle*.",
+    "es": "Graba 60 segundos: *The main point is…*, sobre *a healthy lifestyle*.",
+    "fr": "Enregistre 60 secondes : *The main point is…* — à propos de *a healthy lifestyle*.",
+    "it": "Registra 60 secondi: *The main point is…* — sul tema *a healthy lifestyle*.",
+    "pt": "Grave 60 segundos: *The main point is…* — sobre *a healthy lifestyle*."
+   }
+  }
+ ],
+ "autochequeo": [
+  {
+   "en": "Is the main idea clearly stated?",
+   "de": "Ist die Hauptidee klar genannt?",
+   "es": "¿La idea principal está expresada con claridad?",
+   "fr": "L'idée principale est-elle clairement indiquée ?",
+   "it": "L'idea principale è espressa chiaramente?",
+   "pt": "A ideia principal está claramente apresentada?"
+  },
+  {
+   "en": "Is the summary much shorter than the original?",
+   "de": "Ist die Zusammenfassung deutlich kürzer als das Original?",
+   "es": "¿El resumen es mucho más corto que el original?",
+   "fr": "Le résumé est-il nettement plus court que l'original ?",
+   "it": "Il riassunto è molto più breve dell'originale?",
+   "pt": "O resumo é bem mais curto que o original?"
+  },
+  {
+   "en": "Have I given no more than one extra detail?",
+   "de": "Habe ich höchstens ein zusätzliches Detail genannt?",
+   "es": "¿He incluido como máximo un detalle adicional?",
+   "fr": "Ai-je donné au maximum un détail supplémentaire ?",
+   "it": "Ho aggiunto al massimo un dettaglio?",
+   "pt": "Incluí no máximo um detalhe adicional?"
+  },
+  {
+   "en": "Have I used more than one summarising phrase?",
+   "de": "Habe ich mehr als eine Formulierung zum Zusammenfassen verwendet?",
+   "es": "¿He usado más de una expresión para resumir?",
+   "fr": "Ai-je utilisé plus d'une expression pour résumer ?",
+   "it": "Ho usato più di un'espressione per riassumere?",
+   "pt": "Usei mais de uma expressão para resumir?"
+  },
+  {
+   "en": "Does it sound like a summary, not a retelling?",
+   "de": "Klingt es wie eine Zusammenfassung und nicht wie eine Nacherzählung?",
+   "es": "¿Suena a resumen y no a un relato del texto?",
+   "fr": "Cela ressemble-t-il à un résumé plutôt qu'à une restitution détaillée ?",
+   "it": "Sembra un riassunto e non una narrazione del testo?",
+   "pt": "Parece um resumo, e não uma recontagem do texto?"
+  }
+ ],
+ "promptCorreccion": {
+  "en": "Focus only on whether the main idea is clear and the summary stays compact, without retelling the whole original text in detail. Do not rewrite the text.",
+  "de": "Konzentriere dich nur darauf, ob die Hauptaussage klar ist und die Zusammenfassung knapp bleibt, ohne den gesamten Originaltext ausführlich nachzuerzählen. Schreibe den Text nicht um.",
+  "es": "Concéntrate únicamente en si la idea principal está clara y el resumen se mantiene breve, sin volver a contar detalladamente todo el texto original. No reescribas el texto.",
+  "fr": "Concentre-toi uniquement sur la clarté de l'idée principale et sur le caractère concis du résumé, sans raconter en détail tout le texte d'origine. Ne réécris pas le texte.",
+  "it": "Concentrati solo sulla chiarezza dell'idea principale e sul fatto che il riassunto resti conciso, senza raccontare nei dettagli tutto il testo originale. Non riscrivere il testo.",
+  "pt": "Concentre-se apenas em verificar se a ideia principal está clara e se o resumo permanece conciso, sem recontar em detalhes todo o texto original. Não reescreva o texto."
+ }
+}

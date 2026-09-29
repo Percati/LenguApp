@@ -1,0 +1,31 @@
+{
+ "_tipo": "semana_especial",
+ "id": "REVIEW-DE-C1-2026-S46",
+ "semana": 46,
+ "idioma": "de",
+ "nivel": "C1",
+ "clase": "review",
+ "titulo": "Skill Review Week",
+ "minutosEstimados": 60,
+ "consigna": "Eine einzige gesprochene Produktion von mindestens zehn Minuten: Schildern Sie einen Fall aus den letzten Wochen, in dem etwas nicht so lief wie geplant — und handeln Sie mündlich aus, wie es weitergehen soll. Mit einer Person oder als Selbstaufnahme. Notizen sind Vorbereitung; bewertet wird das Gesprochene.",
+ "requisitos": [
+  "Eine Meinung mit Vorbehalt und abgesichertem Gegenargument (Woche 41)",
+  "Einordnen statt nacherzählen beim Zusammenfassen (Woche 42)",
+  "Eine Erzählung mit markiertem Wendepunkt (Woche 43)",
+  "Zwei an Bedingungen geknüpfte Vorschläge (Woche 44)",
+  "Zwei Partizipialattribute, davon eines mit *zu* (Woche 45)"
+ ],
+ "microtareas": [
+  "*Mo (10 Min.).* Lesen Sie die Korrekturen der Wochen 41 bis 45 und notieren Sie die Korrektur, die am häufigsten auftaucht.",
+  "*Mi (5 Min.).* Bauen Sie drei aufeinanderfolgende Sätze, die Einordnung, Wendepunkt und Partizipialattribut zusammen tragen.",
+  "*Fr (10 Min.).* Nehmen Sie die zehn Minuten auf. Danach nur die erste Minute anhören: Hält die Struktur von Anfang an?"
+ ],
+ "autochequeo": [
+  "Sind alle fünf Fähigkeiten vorhanden, oder hat eine die anderen verdrängt?",
+  "War der Vorbehalt echt oder nur Dekoration?",
+  "Klang das Aushandeln nach Angebot oder nach Ultimatum?",
+  "Habe ich gesprochen oder einen Text vorgetragen?",
+  "Ist die Korrektur von Montag wieder aufgetreten?"
+ ],
+ "promptCorreccion": "Das ist eine Wiederholung von fünf Fähigkeiten gleichzeitig: abgestufte Meinung, einordnendes Zusammenfassen, Erzählstruktur, Aushandeln mit Bedingungen und Partizipialattribute. (1) Sag zu jeder, ob sie vorhanden und gelungen ist. (2) Sag mir, welche unter der Last der anderen zusammengebrochen ist. (3) Gib mir einen Satz, der drei davon gleichzeitig trägt. Korrigiere nichts ausserhalb dieser fünf Bereiche. ---"
+}

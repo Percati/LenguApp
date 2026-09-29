@@ -1,0 +1,393 @@
+{
+ "id": "DE-F13-B2-2027-1",
+ "skillId": "DE-F13",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "fluency",
+ "topicId": "T13",
+ "titulo": "Register: du/Sie, formell/informell",
+ "subtitulo": "Du oder Sie — beim Amt und unter Kollegen",
+ "ancla": "PD B2",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Auf B2 wählt man sicher zwischen du und Sie und passt die Wortwahl entsprechend an. Die feineren sechs Achsen des Registers (C1) sind hier noch nicht das Ziel — es reicht, konsequent bei einer Anrede zu bleiben und die passende Grussformel zu wählen.",
+ "cuadroReferencia": {
+  "titulo": "Du oder Sie, konsequent",
+  "columnas": [
+   "Kontext",
+   "Anrede",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "E-Mail an eine Behörde",
+    "Sie",
+    "Sehr geehrte Damen und Herren,"
+   ],
+   [
+    "Nachricht an eine Freundin",
+    "du",
+    "Hey, wie geht's dir?"
+   ],
+   [
+    "E-Mail an eine Kollegin, per du",
+    "du",
+    "Hallo Anna, kannst du mir helfen?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Sehr geehrte Damen und Herren, ich schreibe Ihnen bezüglich…",
+   "audio": true
+  },
+  {
+   "texto": "Hey, wie geht's dir? Hast du kurz Zeit?",
+   "audio": true
+  },
+  {
+   "texto": "Hallo Anna, könntest du mir bitte helfen?"
+  }
+ ],
+ "notas": [
+  "Sie und du dürfen innerhalb eines Textes nicht gemischt werden — das ist der häufigste Registerfehler.",
+  "Sehr geehrte Damen und Herren ist die neutrale Anrede, wenn man den Namen des Empfängers nicht kennt.",
+  "Bei Unsicherheit ist Sie die sicherere Wahl in einer ersten Nachricht an eine unbekannte Person."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit tú und usted eine ähnliche Unterscheidung, deren Gebrauch aber je nach Land und Region stark schwankt. Spanischsprachige sollten deshalb nicht von ihrer eigenen Varietät ausgehen: Am deutschsprachigen Arbeitsplatz gilt meist Sie gegenüber Unbekannten und Kunden und du unter Kollegen im Alltag, und der Wechsel wird ausdrücklich angeboten (Wollen wir uns duzen?).",
+  "it": "Tu und Lei entsprechen du und Sie. Eine Falle ist die Verbform: Lei steht mit der 3. Person Singular (Lei è), Sie aber mit der Pluralform (Sie sind), was zu Sie ist verleitet.",
+  "fr": "Tu und vous entsprechen du und Sie sehr genau: vous ist wie Sie zugleich Höflichkeitsform und Plural und steht mit der Pluralform des Verbs (vous êtes – Sie sind). Die Anrede überträgt sich deshalb problemlos.",
+  "pt": "Die Anrede passt nicht eins zu eins: você steht mit der 3. Person Singular (você é), was zu Sie ist statt Sie sind verleitet. Im europäischen Portugiesisch kann você zudem distanziert wirken; o senhor / a senhora entspricht dort eher dem deutschen Sie.",
+  "en": "Das Englische kennt keine Unterscheidung zwischen du und Sie, die Anrede ist deshalb ganz neu. Im Zweifel ist Sie die richtige Wahl, immer gross geschrieben und mit der Pluralform des Verbs (Sie sind)."
+ },
+ "errores": [
+  "Du und Sie in derselben E-Mail mischen.",
+  "Sie mit einer informellen Grussformel wie Hey kombinieren.",
+  "Bei einer unbekannten Person direkt du verwenden, ohne dass es angeboten wurde."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Un saludo* als *Ein Gruss* übertragen statt *Freundliche Grüsse*."
+  ],
+  "it": [
+   "*Gentile Signora* als *Freundliche Frau* übertragen statt *Sehr geehrte Frau*."
+  ],
+  "fr": [
+   "*Madame, Monsieur* als *Frau, Herr* übertragen statt *Sehr geehrte Damen und Herren*."
+  ],
+  "pt": [
+   "*Caro Senhor* als *Teurer Herr* übertragen statt *Sehr geehrter Herr*."
+  ],
+  "en": [
+   "*Dear* als *Liebe* oder *Lieber* in einer formellen E-Mail übertragen statt *Sehr geehrte* oder *Sehr geehrter*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Formular ausfüllen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "rellenar el formulario",
+    "en": "to fill in the form",
+    "fr": "remplir le formulaire",
+    "it": "compilare il modulo",
+    "pt": "preencher o formulário"
+   }
+  },
+  {
+   "item": "die Frist",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el plazo",
+    "en": "the deadline",
+    "fr": "le délai",
+    "it": "la scadenza",
+    "pt": "o prazo"
+   }
+  },
+  {
+   "item": "der Antrag",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la solicitud",
+    "en": "the application",
+    "fr": "la demande",
+    "it": "la domanda",
+    "pt": "o requerimento"
+   }
+  },
+  {
+   "item": "der Kundendienst",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la atención al cliente",
+    "en": "customer service",
+    "fr": "le service client",
+    "it": "il servizio clienti",
+    "pt": "o atendimento ao cliente"
+   }
+  },
+  {
+   "item": "die Sprechstunde",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el horario de atención",
+    "en": "the office hours",
+    "fr": "les heures de consultation",
+    "it": "l'orario di ricevimento",
+    "pt": "o horário de atendimento"
+   }
+  },
+  {
+   "item": "zuständig sein für",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "ser responsable de",
+    "en": "to be responsible for",
+    "fr": "être responsable de",
+    "it": "essere responsabile di",
+    "pt": "ser responsável por"
+   }
+  },
+  {
+   "item": "die Bescheinigung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el certificado, el comprobante",
+    "en": "the certificate, proof",
+    "fr": "l'attestation",
+    "it": "il certificato",
+    "pt": "o certificado"
+   }
+  },
+  {
+   "item": "die Warteschlange",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cola de espera",
+    "en": "the queue",
+    "fr": "la file d'attente",
+    "it": "la fila",
+    "pt": "a fila"
+   }
+  },
+  {
+   "item": "die Vorlage einreichen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "presentar el documento",
+    "en": "to submit the document",
+    "fr": "soumettre le document",
+    "it": "presentare il documento",
+    "pt": "apresentar o documento"
+   }
+  },
+  {
+   "item": "die Verwaltungsgebühr",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la tasa administrativa",
+    "en": "the administrative fee",
+    "fr": "les frais administratifs",
+    "it": "la tassa amministrativa",
+    "pt": "a taxa administrativa"
+   }
+  },
+  {
+   "item": "die Zustellung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la entrega, la notificación",
+    "en": "the delivery, notification",
+    "fr": "la notification",
+    "it": "la consegna",
+    "pt": "a entrega, notificação"
+   }
+  },
+  {
+   "item": "der Beamte",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el funcionario público",
+    "en": "the civil servant",
+    "fr": "le fonctionnaire",
+    "it": "il funzionario pubblico",
+    "pt": "o funcionário público"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Sehr geehrte Damen und Herren,",
+   "funcion": "formelle Anrede, unbekannter Empfänger",
+   "traducciones": {
+    "es": "Estimados señores y señoras,",
+    "en": "Dear Sir or Madam,",
+    "fr": "Madame, Monsieur,",
+    "it": "Gentili Signore e Signori,",
+    "pt": "Exmos. Senhores,"
+   }
+  },
+  {
+   "expresion": "Hallo [Name],",
+   "funcion": "neutrale Anrede, per du",
+   "traducciones": {
+    "es": "Hola [Nombre],",
+    "en": "Hi [Name],",
+    "fr": "Salut [Nom],",
+    "it": "Ciao [Nome],",
+    "pt": "Olá [Nome],"
+   }
+  },
+  {
+   "expresion": "Mit freundlichen Grüssen",
+   "funcion": "formeller Abschluss",
+   "traducciones": {
+    "es": "Atentamente,",
+    "en": "Kind regards,",
+    "fr": "Cordialement,",
+    "it": "Cordiali saluti,",
+    "pt": "Com os melhores cumprimentos,"
+   }
+  },
+  {
+   "expresion": "Liebe Grüsse",
+   "funcion": "informeller Abschluss",
+   "traducciones": {
+    "es": "Saludos,",
+    "en": "Best,",
+    "fr": "Bien à toi,",
+    "it": "Un caro saluto,",
+    "pt": "Um abraço,"
+   }
+  },
+  {
+   "expresion": "Ich schreibe Ihnen bezüglich…",
+   "funcion": "formeller Einstieg",
+   "traducciones": {
+    "es": "Le escribo con respecto a…",
+    "en": "I am writing to you regarding…",
+    "fr": "Je vous écris au sujet de…",
+    "it": "Le scrivo in merito a…",
+    "pt": "Escrevo-lhe a respeito de…"
+   }
+  },
+  {
+   "expresion": "Hey, wie geht's?",
+   "funcion": "informeller Einstieg",
+   "traducciones": {
+    "es": "Hola, ¿cómo andás?",
+    "en": "Hey, how's it going?",
+    "fr": "Salut, ça va ?",
+    "it": "Ehi, come va?",
+    "pt": "Olá, como estás?"
+   }
+  },
+  {
+   "expresion": "Können wir uns duzen?",
+   "funcion": "Anrede aushandeln",
+   "traducciones": {
+    "es": "¿Nos podemos tutear?",
+    "en": "Shall we use first names?",
+    "fr": "On peut se tutoyer ?",
+    "it": "Possiamo darci del tu?",
+    "pt": "Podemos tratar-nos por tu?"
+   }
+  },
+  {
+   "expresion": "Sehr geehrte Frau …, / Sehr geehrter Herr …,",
+   "funcion": "formelle Anrede mit Namen",
+   "traducciones": {
+    "es": "Estimada señora …, / Estimado señor …,",
+    "en": "Dear Ms …, / Dear Mr …,",
+    "fr": "Madame …, / Monsieur …,",
+    "it": "Gentile signora …, / Gentile signor …,",
+    "pt": "Exma. Senhora …, / Exmo. Senhor …,"
+   }
+  },
+  {
+   "expresion": "Vielen Dank für Ihre Nachricht.",
+   "funcion": "formeller Einstieg auf eine Antwort",
+   "traducciones": {
+    "es": "Muchas gracias por su mensaje.",
+    "en": "Many thanks for your message.",
+    "fr": "Merci beaucoup pour votre message.",
+    "it": "Grazie molte per il suo messaggio.",
+    "pt": "Muito obrigado pela sua mensagem."
+   }
+  },
+  {
+   "expresion": "Melde dich einfach.",
+   "funcion": "informeller Abschluss mit Aufforderung",
+   "traducciones": {
+    "es": "Avisame nomás.",
+    "en": "Just let me know.",
+    "fr": "Fais-moi signe.",
+    "it": "Fammi sapere.",
+    "pt": "É só dizeres."
+   }
+  },
+  {
+   "expresion": "Ich hoffe, ich konnte weiterhelfen.",
+   "funcion": "neutraler, dienstlicher Abschluss",
+   "traducciones": {
+    "es": "Espero haber sido de ayuda.",
+    "en": "I hope that helps.",
+    "fr": "J'espère avoir pu vous aider.",
+    "it": "Spero di essere stato d'aiuto.",
+    "pt": "Espero ter ajudado."
+   }
+  },
+  {
+   "expresion": "Entschuldigen Sie die späte Antwort.",
+   "funcion": "formelle Entschuldigung im Schriftverkehr",
+   "traducciones": {
+    "es": "Disculpe la respuesta tardía.",
+    "en": "Apologies for the late reply.",
+    "fr": "Veuillez excuser ma réponse tardive.",
+    "it": "Mi scusi per la risposta tardiva.",
+    "pt": "Desculpe a resposta tardia."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie zwei Nachrichten zum selben Antrag: eine an das Amt, eine an eine Kollegin, die denselben Antrag stellen muss.",
+  "requisitos": [
+   "konsequente Anrede in beiden",
+   "passende Grussformeln",
+   "dieselben Informationen",
+   "*der Antrag*, *die Frist* und *die Vorlage einreichen* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei Sätze zur *Bescheinigung* mit *du* und mit *Sie*."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Eine Anfrage an den *Kundendienst* formell formulieren."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Einer Kollegin erklären, wie man *das Formular ausfüllt*."
+  }
+ ],
+ "autochequeo": [
+  "Ist die Anrede (du oder Sie) im ganzen Text konsequent?",
+  "Passt die Grussformel zur gewählten Anrede?",
+  "Ist Sie bei einer unbekannten Person die sichere Wahl?",
+  "Klingt die Wortwahl zum gewählten Register passend?",
+  "Habe ich mindestens eine formelle und eine informelle Version verglichen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz von du/Sie und die passende Grussformel. Prüfen Sie, ob Anrede und Wortwahl im ganzen Text zusammenpassen. Schreiben Sie den Text nicht neu."
+}

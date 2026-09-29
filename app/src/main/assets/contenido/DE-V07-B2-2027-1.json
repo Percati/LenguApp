@@ -1,0 +1,415 @@
+{
+ "id": "DE-V07-B2-2027-1",
+ "skillId": "DE-V07",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "vocabulary",
+ "topicId": "T11",
+ "titulo": "Umgangssprache vs. Standardsprache",
+ "subtitulo": "Kumpel oder Freund? Register bei Nachrichten",
+ "ancla": "PD>B2",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 60
+ },
+ "descripcion": "Auf B2 lernt man, die häufigsten umgangssprachlichen Wörter von ihrer Standardentsprechung zu unterscheiden: Kumpel/Freund, Kohle/Geld, checken/verstehen. Ziel ist, beide Register zu erkennen und im richtigen Kontext zu verwenden.",
+ "cuadroReferencia": {
+  "titulo": "Umgangssprache und Standard",
+  "columnas": [
+   "Umgangssprachlich",
+   "Standard"
+  ],
+  "filas": [
+   [
+    "der Kumpel",
+    "der Freund"
+   ],
+   [
+    "die Kohle",
+    "das Geld"
+   ],
+   [
+    "checken",
+    "verstehen"
+   ],
+   [
+    "abhauen",
+    "weggehen"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Mein Kumpel kommt heute Abend auch vorbei.",
+   "audio": true
+  },
+  {
+   "texto": "Ich hab's endlich gecheckt, wie das funktioniert.",
+   "audio": true
+  },
+  {
+   "texto": "Wir sollten langsam abhauen, es wird spät."
+  }
+ ],
+ "notas": [
+  "Umgangssprachliche Wörter gehören in ein lockeres Gespräch, nicht in eine E-Mail an eine Behörde.",
+  "Checken ist inzwischen so verbreitet, dass es fast neutral wirkt, bleibt aber informeller als verstehen oder prüfen.",
+  "Diese Wörter zu erkennen ist wichtiger als sie selbst zu benutzen — beim Zuhören begegnet man ihnen ständig."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat ein ähnliches System aus umgangssprachlichen und formellen Varianten, allerdings mit anderen konkreten Wörtern. Das Konzept ist also bekannt, aber die deutschen Wörter selbst müssen neu gelernt werden.",
+  "it": "Das Italienische kennt ähnliche Paare aus Alltags- und Standardwort (lavoro – Arbeit, im Alltag auch Job), das Prinzip ist also vertraut. Die deutschen Wörter selbst müssen neu gelernt werden, ebenso wann sie im Schreiben auffallen.",
+  "fr": "Das Französische kennt ähnliche Paare aus Alltags- und Standardwort (boulot – travail, bouquin – livre), das Prinzip ist also sehr vertraut. Die deutschen Wörter müssen neu gelernt werden.",
+  "pt": "Das Portugiesische kennt ähnliche Paare aus Alltags- und Standardwort (im Brasilianischen etwa trampo – trabalho), das Prinzip ist also vertraut. Die deutschen Wörter müssen neu gelernt werden.",
+  "en": "Viele deutsche Alltagswörter sind englische Lehnwörter (Job, cool, okay), die im Deutschen informeller klingen als im Englischen. Englischsprachige setzen sie deshalb leicht in formellen Texten ein, wo Arbeit oder Stelle passender wäre."
+ },
+ "errores": [
+  "Umgangssprachliche Wörter in einem formellen Text verwenden.",
+  "Checken für jede Bedeutung von verstehen einsetzen, auch wo prüfen gemeint ist.",
+  "Ein umgangssprachliches Wort mit falschem Register mischen, z.B. Kumpel in einer Bewerbung."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Das spanische Duzen im Beruf übertragen und Vorgesetzte oder Kunden ungefragt duzen."
+  ],
+  "it": [
+   "Den italienischen Gebrauch von *Dottore* übertragen und jeden Akademiker mit *Herr Doktor* anreden."
+  ],
+  "fr": [
+   "Das umgangssprachliche *on* als *man* übertragen, wo *wir* gemeint ist: *Man geht ins Kino* statt *Wir gehen ins Kino*."
+  ],
+  "pt": [
+   "*a gente* als *die Leute* übertragen, wo *wir* gemeint ist: *Die Leute gehen morgen* statt *Wir gehen morgen*."
+  ],
+  "en": [
+   "Weil *you* keinen Unterschied macht, in E-Mails an Vorgesetzte oder Behörden duzen."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "die Berichterstattung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cobertura informativa",
+    "en": "news coverage",
+    "fr": "la couverture médiatique",
+    "it": "la copertura mediatica",
+    "pt": "a cobertura noticiosa"
+   }
+  },
+  {
+   "item": "die Falschmeldung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la noticia falsa",
+    "en": "fake news",
+    "fr": "la fausse nouvelle",
+    "it": "la notizia falsa",
+    "pt": "a notícia falsa"
+   }
+  },
+  {
+   "item": "die Meinungsbildung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la formación de opinión",
+    "en": "forming an opinion",
+    "fr": "la formation de l'opinion",
+    "it": "la formazione dell'opinione",
+    "pt": "a formação de opinião"
+   }
+  },
+  {
+   "item": "die Pressefreiheit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la libertad de prensa",
+    "en": "freedom of the press",
+    "fr": "la liberté de la presse",
+    "it": "la libertà di stampa",
+    "pt": "a liberdade de imprensa"
+   }
+  },
+  {
+   "item": "die Quelle",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la fuente",
+    "en": "the source",
+    "fr": "la source",
+    "it": "la fonte",
+    "pt": "a fonte"
+   }
+  },
+  {
+   "item": "die Schlagzeile",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el titular",
+    "en": "the headline",
+    "fr": "le titre",
+    "it": "il titolo",
+    "pt": "a manchete"
+   }
+  },
+  {
+   "item": "die öffentliche Meinung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la opinión pública",
+    "en": "public opinion",
+    "fr": "l'opinion publique",
+    "it": "l'opinione pubblica",
+    "pt": "a opinião pública"
+   }
+  },
+  {
+   "item": "der Kommentar",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el comentario",
+    "en": "commentary",
+    "fr": "le commentaire",
+    "it": "il commento",
+    "pt": "o comentário"
+   }
+  },
+  {
+   "item": "der Leitartikel",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el editorial",
+    "en": "editorial",
+    "fr": "l'éditorial",
+    "it": "l'editoriale",
+    "pt": "o editorial"
+   }
+  },
+  {
+   "item": "die Filterblase",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la burbuja de filtro",
+    "en": "the filter bubble",
+    "fr": "la bulle de filtre",
+    "it": "la bolla di filtraggio",
+    "pt": "a bolha de filtro"
+   }
+  },
+  {
+   "item": "die Medienkompetenz",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la alfabetización mediática",
+    "en": "media literacy",
+    "fr": "l'éducation aux médias",
+    "it": "l'alfabetizzazione mediatica",
+    "pt": "a alfabetização midiática"
+   }
+  },
+  {
+   "item": "die Nachrichtenmüdigkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la fatiga informativa",
+    "en": "news fatigue",
+    "fr": "la fatigue informationnelle",
+    "it": "la stanchezza da notizie",
+    "pt": "a fadiga noticiosa"
+   }
+  },
+  {
+   "item": "die Schlagzeilenjagd",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la caza de titulares",
+    "en": "chasing headlines",
+    "fr": "la course aux gros titres",
+    "it": "la caccia ai titoloni",
+    "pt": "a caça a manchetes"
+   }
+  },
+  {
+   "item": "etwas kritisch hinterfragen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "cuestionar algo críticamente",
+    "en": "to question something critically",
+    "fr": "remettre qc en question",
+    "it": "mettere in discussione qc",
+    "pt": "questionar algo criticamente"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "der Kumpel",
+   "funcion": "informell für Freund",
+   "traducciones": {
+    "es": "el amigo, el compa",
+    "en": "mate, buddy",
+    "fr": "le pote / copain",
+    "it": "l’amico / il compare",
+    "pt": "o amigo / o companheiro"
+   }
+  },
+  {
+   "expresion": "die Kohle",
+   "funcion": "informell für Geld",
+   "traducciones": {
+    "es": "la plata, la guita",
+    "en": "cash, dough",
+    "fr": "le fric / le pognon",
+    "it": "i soldi / la grana",
+    "pt": "a massa / o dinheiro"
+   }
+  },
+  {
+   "expresion": "checken",
+   "funcion": "informell für verstehen",
+   "traducciones": {
+    "es": "captar, entender",
+    "en": "to get it",
+    "fr": "comprendre / piger",
+    "it": "capire / afferrare",
+    "pt": "perceber / sacar"
+   }
+  },
+  {
+   "expresion": "abhauen",
+   "funcion": "informell für weggehen",
+   "traducciones": {
+    "es": "rajarse, irse",
+    "en": "to take off, to head out",
+    "fr": "se tirer / partir",
+    "it": "andarsene / filarsela",
+    "pt": "baz(ar) / ir-se embora"
+   }
+  },
+  {
+   "expresion": "quatschen",
+   "funcion": "informell für reden",
+   "traducciones": {
+    "es": "charlar",
+    "en": "to chat",
+    "fr": "bavarder",
+    "it": "chiacchierare",
+    "pt": "conversar"
+   }
+  },
+  {
+   "expresion": "der Job",
+   "funcion": "informell für die Arbeit/Stelle",
+   "traducciones": {
+    "es": "el laburo",
+    "en": "the job",
+    "fr": "le boulot",
+    "it": "il lavoro",
+    "pt": "o trabalho"
+   }
+  },
+  {
+   "expresion": "krass",
+   "funcion": "informell, verstärkend",
+   "traducciones": {
+    "es": "brutal",
+    "en": "insane",
+    "fr": "dingue",
+    "it": "assurdo",
+    "pt": "brutal"
+   }
+  },
+  {
+   "expresion": "nerven",
+   "funcion": "informell für stören",
+   "traducciones": {
+    "es": "fastidiar",
+    "en": "to annoy",
+    "fr": "énerver",
+    "it": "scocciare",
+    "pt": "chatear"
+   }
+  },
+  {
+   "expresion": "die Bude",
+   "funcion": "informell für Zimmer/Wohnung",
+   "traducciones": {
+    "es": "el cuchitril",
+    "en": "the place, digs",
+    "fr": "la piaule",
+    "it": "la stanzetta",
+    "pt": "o quarto, a casinha"
+   }
+  },
+  {
+   "expresion": "Das passt schon.",
+   "funcion": "informelle Beschwichtigung",
+   "traducciones": {
+    "es": "Está bien así.",
+    "en": "That's fine.",
+    "fr": "Ça ira.",
+    "it": "Va bene così.",
+    "pt": "Está bem assim."
+   }
+  },
+  {
+   "expresion": "Wie bitte?",
+   "funcion": "standardsprachliche Nachfrage",
+   "traducciones": {
+    "es": "¿Cómo dice?",
+    "en": "Sorry?",
+    "fr": "Pardon ?",
+    "it": "Come, scusi?",
+    "pt": "Como disse?"
+   }
+  },
+  {
+   "expresion": "Im Bewerbungsschreiben besser nicht.",
+   "funcion": "Register-Grenze markieren",
+   "traducciones": {
+    "es": "En una carta de postulación, mejor no.",
+    "en": "Best not in a job application.",
+    "fr": "Dans une candidature, mieux vaut éviter.",
+    "it": "In una candidatura, meglio di no.",
+    "pt": "Numa candidatura, é melhor não."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Erzählen Sie dieselbe Nachricht zweimal: einem Kumpel per Sprachnachricht und in einem Kommentar für eine Zeitung.",
+  "requisitos": [
+   "vier umgangssprachliche Wörter in der Sprachnachricht",
+   "ihre Standardentsprechung im Kommentar",
+   "dieselben Fakten in beiden",
+   "*die Berichterstattung*, *die Pressefreiheit* und *die Meinungsbildung* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Sechs Wörter aus dem Kasten mit ihrer Standardform notieren."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Eine *Schlagzeile* locker und formell formulieren."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden locker über eine *Falschmeldung* reden, dann 30 Sekunden formell."
+  }
+ ],
+ "autochequeo": [
+  "Passt das umgangssprachliche Wort zum Kontext (Gespräch, nicht formeller Text)?",
+  "Kenne ich die Standardentsprechung zu jedem Wort?",
+  "Habe ich das Register nicht innerhalb eines Textes gemischt?",
+  "Habe ich mindestens vier umgangssprachliche Wörter benutzt?",
+  "Würde ein Muttersprachler dieses Wort in diesem Kontext auch so benutzen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Umgangssprache und Standardsprache. Prüfen Sie, ob das Register zum Kontext passt. Schreiben Sie den Text nicht neu."
+}

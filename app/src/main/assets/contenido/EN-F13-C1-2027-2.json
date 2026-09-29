@@ -1,0 +1,394 @@
+{
+ "id": "EN-F13-C1-2027-2",
+ "skillId": "EN-F13",
+ "order": 2,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T13",
+ "titulo": "Hedging and Softening Claims",
+ "subtitulo": "Hedging a complaint about the authorities",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Hedging is argumentative precision, not politeness. A hedged claim is harder to attack, easier to revise and more acceptable to an audience that does not share your view. English does this lexically and modally — there is no hedging tense. It lives in adverbs, modals, reporting structures and impersonal constructions.",
+ "cuadroReferencia": {
+  "titulo": "Hedging devices by type",
+  "columnas": [
+   "Type",
+   "Devices",
+   "What it hedges"
+  ],
+  "filas": [
+   [
+    "Modal",
+    "*might*, *may well*, *would*, *could*",
+    "the certainty of the claim"
+   ],
+   [
+    "Frequency / tendency",
+    "*tends to*, *typically*, *broadly*, *in most cases*",
+    "its generality"
+   ],
+   [
+    "Evidential",
+    "*there's some evidence that*, *as far as I can tell*, *on the numbers I've seen*",
+    "your grounds for it"
+   ],
+   [
+    "Impersonal",
+    "*it could be argued that*, *there's a case for*, *one reading is*",
+    "your ownership of it"
+   ],
+   [
+    "Self-limiting",
+    "*I'd be careful about*, *I could be wrong*, *speaking outside my area*",
+    "your authority"
+   ],
+   [
+    "Scope",
+    "*up to a point*, *in principle*, *at least for X*",
+    "its range of application"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*That tends to be the case, though the data is thinner than people assume.*",
+   "audio": true
+  },
+  {
+   "texto": "*There's some evidence to suggest that offsets underperform their stated value.*",
+   "audio": true
+  },
+  {
+   "texto": "*I'd be careful about generalising from one grid.*",
+   "audio": true
+  },
+  {
+   "texto": "*It could be argued that the cost falls on the wrong people.*",
+   "audio": true
+  },
+  {
+   "texto": "*As far as I can tell, nobody has measured this properly.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Would* is the single most productive device: *I'd say*, *I'd argue*, *I'd be careful about*.",
+  "One or two hedges per claim is the ceiling. Stacking destroys credibility.",
+  "Never hedge a verifiable number — it reads as evasive, not careful."
+ ],
+ "contraste": {
+  "es": "Spanish often states a limit plainly (eso no funciona), and the literal that doesn't work sounds blunt in English. The equivalent English register is I don't think that's going to work.",
+  "de": "German softens a plain statement with particles (das funktioniert so wohl nicht), but the particles disappear in translation and that doesn't work remains. English needs a lexical hedge instead: I don't think that's going to work.",
+  "it": "Non credo che funzioni corresponds exactly to I don't think it'll work, with the negation in the same place. The hedge therefore transfers directly.",
+  "fr": "Je ne pense pas que ça marche corresponds exactly to I don't think it'll work, with the negation in the same place. The hedge therefore transfers directly.",
+  "pt": "Portuguese often says acho que isso não vai funcionar, with the negation in the second clause. English prefers it in the first: I don't think that's going to work."
+ },
+ "errores": [
+  "*Eventually* means 'in the end', not 'possibly', despite its look-alikes in other European languages.",
+  "*Maybe* sentence-initially reads tentative rather than considered. Prefer *perhaps* or *I'd say*.",
+  "Under-hedging, which reads as aggressive rather than confident."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Parece ser que* rendered as *It seems to be that* instead of *It seems that*."
+  ],
+  "de": [
+   "*Es scheint so, als ob* rendered as *It seems so as if* instead of *It looks as if*."
+  ],
+  "it": [
+   "*A quanto pare* rendered as *At how much it seems* instead of *Apparently*."
+  ],
+  "fr": [
+   "*À ce qu'il paraît* rendered as *At what it appears* instead of *Apparently*."
+  ],
+  "pt": [
+   "*Pelos vistos* rendered as *By the seen* instead of *Apparently*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a means test",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la comprobación de recursos",
+    "de": "die Bedürftigkeitsprüfung",
+    "fr": "l'examen des ressources",
+    "it": "la verifica dei redditi",
+    "pt": "a verificação de rendimentos"
+   }
+  },
+  {
+   "item": "caseworker",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el funcionario a cargo",
+    "de": "der Sachbearbeiter / die Sachbearbeiterin",
+    "fr": "le/la gestionnaire de dossier",
+    "it": "il/la funzionario/a responsabile della pratica",
+    "pt": "o/a técnico/a responsável pelo processo"
+   }
+  },
+  {
+   "item": "office hours",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el horario de atención",
+    "de": "die Sprechzeiten / Öffnungszeiten",
+    "fr": "les heures de permanence",
+    "it": "l’orario di ricevimento",
+    "pt": "o horário de atendimento"
+   }
+  },
+  {
+   "item": "to file an objection",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "presentar un recurso",
+    "de": "Einsprache erheben / Widerspruch einlegen",
+    "fr": "faire opposition",
+    "it": "presentare ricorso",
+    "pt": "apresentar um recurso"
+   }
+  },
+  {
+   "item": "to register with the council",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "darse de alta en el ayuntamiento",
+    "de": "sich bei der Gemeinde anmelden",
+    "fr": "s'inscrire auprès de la commune",
+    "it": "registrarsi presso il comune",
+    "pt": "registar-se na câmara"
+   }
+  },
+  {
+   "item": "to renew a permit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "renovar un permiso",
+    "de": "eine Genehmigung verlängern",
+    "fr": "renouveler un permis",
+    "it": "rinnovare un permesso",
+    "pt": "renovar uma autorização"
+   }
+  },
+  {
+   "item": "a freedom of information request",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la solicitud de acceso a la información",
+    "de": "der Antrag auf Informationsfreiheit",
+    "fr": "la demande d'accès à l'information",
+    "it": "la richiesta di accesso agli atti",
+    "pt": "o pedido de acesso à informação"
+   }
+  },
+  {
+   "item": "a statutory deadline",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el plazo legal",
+    "de": "die gesetzliche Frist",
+    "fr": "le délai légal",
+    "it": "il termine di legge",
+    "pt": "o prazo legal"
+   }
+  },
+  {
+   "item": "administrative fee",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la tasa administrativa",
+    "de": "die Verwaltungsgebühr",
+    "fr": "les frais administratifs",
+    "it": "la tassa amministrativa",
+    "pt": "a taxa administrativa"
+   }
+  },
+  {
+   "item": "an ombudsman",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el defensor del pueblo",
+    "de": "der Ombudsmann",
+    "fr": "le médiateur",
+    "it": "il difensore civico",
+    "pt": "o provedor de justiça"
+   }
+  },
+  {
+   "item": "civil servant",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el funcionario público",
+    "de": "der Beamte / die Beamtin",
+    "fr": "le/la fonctionnaire",
+    "it": "il/la dipendente pubblico/a",
+    "pt": "o/a funcionário/a público/a"
+   }
+  },
+  {
+   "item": "supporting documents",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la documentación acreditativa",
+    "de": "die Nachweisunterlagen",
+    "fr": "les pièces justificatives",
+    "it": "la documentazione a supporto",
+    "pt": "os documentos comprovativos"
+   }
+  },
+  {
+   "item": "to appeal a decision",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "recurrir una decisión",
+    "de": "gegen eine Entscheidung Einspruch erheben",
+    "fr": "faire appel d'une décision",
+    "it": "impugnare una decisione",
+    "pt": "recorrer de uma decisão"
+   }
+  },
+  {
+   "item": "to submit the document",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "presentar el documento",
+    "de": "die Vorlage einreichen",
+    "fr": "soumettre le document",
+    "it": "presentare il documento",
+    "pt": "apresentar o documento"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "That tends to be…",
+   "funcion": "generalises without committing",
+   "traducciones": {
+    "es": "suele ser…",
+    "de": "Das ist tendenziell…",
+    "fr": "Cela tend à être…",
+    "it": "Tende a essere…",
+    "pt": "Isso tende a ser…"
+   }
+  },
+  {
+   "expresion": "There's some evidence that…",
+   "funcion": "marks the grounds",
+   "traducciones": {
+    "es": "hay indicios de que…",
+    "de": "Es gibt gewisse Hinweise darauf, dass…",
+    "fr": "Il y a des éléments indiquant que…",
+    "it": "Ci sono alcuni elementi che indicano che…",
+    "pt": "Há alguns indícios de que…"
+   }
+  },
+  {
+   "expresion": "I'd be careful about…",
+   "funcion": "limits your own claim",
+   "traducciones": {
+    "es": "yo tendría cuidado con…",
+    "de": "Bei … wäre ich vorsichtig.",
+    "fr": "Je serais prudent avec…",
+    "it": "Starei attento a…",
+    "pt": "Eu teria cuidado com…"
+   }
+  },
+  {
+   "expresion": "It could be argued that…",
+   "funcion": "shifts ownership",
+   "traducciones": {
+    "es": "se podría argumentar que…",
+    "de": "Man könnte argumentieren, dass…",
+    "fr": "On pourrait soutenir que…",
+    "it": "Si potrebbe sostenere che…",
+    "pt": "Poder-se-ia argumentar que…"
+   }
+  },
+  {
+   "expresion": "As far as I can tell…",
+   "funcion": "marks the limits of what you know",
+   "traducciones": {
+    "es": "por lo que puedo ver…",
+    "de": "Soweit ich das beurteilen kann…",
+    "fr": "Pour autant que je puisse en juger…",
+    "it": "Per quanto posso capire…",
+    "pt": "Tanto quanto consigo avaliar…"
+   }
+  },
+  {
+   "expresion": "Up to a point",
+   "funcion": "restricts scope",
+   "traducciones": {
+    "es": "hasta cierto punto",
+    "de": "Bis zu einem gewissen Punkt",
+    "fr": "Jusqu’à un certain point",
+    "it": "Fino a un certo punto",
+    "pt": "Até certo ponto"
+   }
+  },
+  {
+   "expresion": "May well",
+   "funcion": "high probability, not certainty",
+   "traducciones": {
+    "es": "bien puede ser que…",
+    "de": "könnte durchaus",
+    "fr": "pourrait bien",
+    "it": "potrebbe benissimo",
+    "pt": "pode muito bem"
+   }
+  },
+  {
+   "expresion": "On the numbers I've seen",
+   "funcion": "cites your evidence",
+   "traducciones": {
+    "es": "con los datos que vi",
+    "de": "Nach den Zahlen, die ich gesehen habe…",
+    "fr": "D’après les chiffres que j’ai vus…",
+    "it": "In base ai dati che ho visto…",
+    "pt": "Com base nos números que vi…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Explain to a civil servant why you think a decision on your case was wrong, hedging precisely.",
+  "requisitos": [
+   "claims hedged exactly as far as your evidence goes",
+   "one *As far as I can tell*",
+   "one *It could be argued that*",
+   "use *a means test*, *office hours* and *to file an objection*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write three objections to a decision about *a means test*, hedged."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Remove one hedge that makes you sound weaker than your evidence."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds explaining to your *caseworker* why you missed *office hours*, hedged but firm."
+  }
+ ],
+ "autochequeo": [
+  "Six devices from four different types?",
+  "Any sentence with three or more hedges?",
+  "Did I hedge a verifiable number?",
+  "Is there at least one flat factual statement, to show I know the difference?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on hedging. (1) Mark each device and say whether it fits the claim and the register. (2) Mark where I asserted flatly and a C1 professional would have hedged. (3) Mark over-hedging and show the tighter version. (4) Did I hedge any verifiable fact? Do not rewrite the text."
+}

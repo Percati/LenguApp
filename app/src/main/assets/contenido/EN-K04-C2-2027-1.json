@@ -1,0 +1,416 @@
+{
+ "id": "EN-K04-C2-2027-1",
+ "skillId": "EN-K04",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C2",
+ "categoria": "grammar",
+ "topicId": "T10",
+ "titulo": "Hedging, Passive and Impersonal Reporting",
+ "subtitulo": "One hedge word, one point on the scale",
+ "ancla": "EGP C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 65
+ },
+ "descripcion": "At C2 the caution stack is calibrated so precisely that the choice of a single hedge word signals a specific point on the certainty scale to an expert reader: may suggests genuine doubt, would appear to signals strong but not absolute confidence, cannot be ruled out signals a low but non-zero probability worth flagging.",
+ "cuadroReferencia": {
+  "titulo": "A finer certainty scale",
+  "columnas": [
+   "Hedge",
+   "Implied certainty",
+   "Typical use"
+  ],
+  "filas": [
+   [
+    "cannot be ruled out",
+    "low but non-zero",
+    "flags a risk worth naming, not expecting"
+   ],
+   [
+    "would appear to",
+    "strong but not absolute",
+    "near-conclusion, stops short of stating fact"
+   ],
+   [
+    "it is not inconceivable that",
+    "very low, deliberately understated",
+    "raises a possibility while minimising commitment"
+   ]
+  ],
+  "notaPie": "These distinctions matter most to expert readers in a field; a general reader may not register the difference, which is exactly why the choice signals expertise."
+ },
+ "ejemplos": [
+  {
+   "texto": "A confounding variable cannot be ruled out at this stage.",
+   "audio": true
+  },
+  {
+   "texto": "The results would appear to support the original hypothesis.",
+   "audio": true
+  },
+  {
+   "texto": "It is not inconceivable that the effect is seasonal rather than causal."
+  }
+ ],
+ "notas": [
+  "Cannot be ruled out is weaker than is possible — it flags that something hasn't been excluded, without suggesting it's likely.",
+  "Would appear to sits just below a confident claim; dropping would appear to and stating the fact directly would overclaim.",
+  "It is not inconceivable that is a deliberately understated way to raise a possibility that the writer actually considers worth taking seriously."
+ ],
+ "contraste": {
+  "es": "Spanish academic writing hedges with fewer distinct lexical grades and relies more on the conditional (podría no descartarse) to cover several nuances at once. Spanish speakers at C2 tend to collapse the fine English scale into two or three options, losing the exact signal of certainty an expert reader expects.",
+  "de": "German academic writing traditionally hedges less explicitly than English and relies on Konjunktiv II and a few particles (dürfte, wohl) rather than a finely graded set of lexical hedges. German speakers therefore tend to reduce the English scale to might and may, or to under-hedge claims that an expert English reader expects to see qualified.",
+  "it": "Italian academic prose hedges with the conditional, and sembrerebbe or parrebbe correspond closely to it would appear. Italian speakers therefore have one precise point of the scale ready, but tend to overuse conditional forms (it would be possible that…) where English would choose a lighter lexical hedge.",
+  "fr": "French academic prose hedges with the conditionnel and impersonal forms (il semblerait que, on pourrait penser que). The typical calque is one could think that, which sounds stilted in English, and the tendency to express every nuance with the conditional rather than with the English range of lexical hedges.",
+  "pt": "European Portuguese often hedges with the future (poderá indicar, será que…), and the calque will indicate sounds far too certain in English. Parece corresponds well to appears, but Portuguese speakers need the full English scale between may and would appear."
+ },
+ "errores": [
+  "Using a stronger hedge than the evidence actually supports, or vice versa.",
+  "Treating cannot be ruled out and is possible as interchangeable, when they signal different degrees of expected likelihood.",
+  "Dropping would appear to and overclaiming a near-conclusion as established fact."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*no se puede descartar* rendered as *cannot be discarded* instead of *cannot be ruled out*."
+  ],
+  "de": [
+   "*nicht auszuschliessen* rendered as *not to exclude* instead of *cannot be ruled out*."
+  ],
+  "it": [
+   "*non si può escludere* rendered as *cannot be excluded*, which reads as non-native, instead of *cannot be ruled out*."
+  ],
+  "fr": [
+   "*on ne peut exclure* rendered as *one cannot exclude* instead of *it cannot be ruled out*."
+  ],
+  "pt": [
+   "*não se pode descartar* rendered as *cannot be discarded* instead of *cannot be ruled out*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "an acquired taste",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "un gusto adquirido",
+    "de": "ein Geschmack, an den man sich gewöhnen muss",
+    "fr": "un goût qui s'acquiert",
+    "it": "un gusto acquisito",
+    "pt": "um gosto adquirido"
+   }
+  },
+  {
+   "item": "food insecurity",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la inseguridad alimentaria",
+    "de": "die Ernährungsunsicherheit",
+    "fr": "l'insécurité alimentaire",
+    "it": "l'insicurezza alimentare",
+    "pt": "a insegurança alimentar"
+   }
+  },
+  {
+   "item": "indulgent",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "exquisito y contundente",
+    "de": "üppig",
+    "fr": "gourmand",
+    "it": "goloso",
+    "pt": "indulgente"
+   }
+  },
+  {
+   "item": "provenance",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la procedencia",
+    "de": "die Herkunft",
+    "fr": "la provenance",
+    "it": "la provenienza",
+    "pt": "a proveniência"
+   }
+  },
+  {
+   "item": "to be malnourished",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar malnutrido",
+    "de": "mangelernährt sein",
+    "fr": "être mal nourri",
+    "it": "essere malnutrito",
+    "pt": "estar mal nutrido"
+   }
+  },
+  {
+   "item": "to savour",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "saborear",
+    "de": "geniessen",
+    "fr": "savourer",
+    "it": "assaporare",
+    "pt": "saborear"
+   }
+  },
+  {
+   "item": "ultra-processed",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "ultraprocesado",
+    "de": "hochverarbeitet",
+    "fr": "ultra-transformé",
+    "it": "ultra-processato",
+    "pt": "ultraprocessado"
+   }
+  },
+  {
+   "item": "a food desert",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un desierto alimentario",
+    "de": "eine Lebensmittelwüste",
+    "fr": "un désert alimentaire",
+    "it": "un deserto alimentare",
+    "pt": "um deserto alimentar"
+   }
+  },
+  {
+   "item": "a staple",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un alimento básico",
+    "de": "ein Grundnahrungsmittel",
+    "fr": "un aliment de base",
+    "it": "un alimento base",
+    "pt": "um alimento básico"
+   }
+  },
+  {
+   "item": "a sugar tax",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el impuesto al azúcar",
+    "de": "die Zuckersteuer",
+    "fr": "la taxe sur le sucre",
+    "it": "la tassa sullo zucchero",
+    "pt": "o imposto sobre o açúcar"
+   }
+  },
+  {
+   "item": "nutritionally deficient",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "deficiente en nutrientes",
+    "de": "nährstoffarm",
+    "fr": "carencé",
+    "it": "carente di nutrienti",
+    "pt": "deficiente em nutrientes"
+   }
+  },
+  {
+   "item": "the obesity epidemic",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la epidemia de obesidad",
+    "de": "die Adipositas-Epidemie",
+    "fr": "l'épidémie d'obésité",
+    "it": "l'epidemia di obesità",
+    "pt": "a epidemia de obesidade"
+   }
+  },
+  {
+   "item": "to be marketed at",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar dirigido comercialmente a",
+    "de": "sich richten an",
+    "fr": "être destiné à",
+    "it": "essere rivolto a",
+    "pt": "ser comercializado para"
+   }
+  },
+  {
+   "item": "to overindulge",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "darse un atracón",
+    "de": "über die Stränge schlagen",
+    "fr": "faire des excès",
+    "it": "esagerare",
+    "pt": "exagerar"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "…cannot be ruled out.",
+   "funcion": "low but non-zero probability",
+   "traducciones": {
+    "es": "no se puede descartar…",
+    "de": "…kann nicht ausgeschlossen werden.",
+    "fr": "…ne peut être écarté(e).",
+    "it": "…non si può escludere.",
+    "pt": "…não pode ser descartado/a."
+   }
+  },
+  {
+   "expresion": "…would appear to…",
+   "funcion": "strong but not absolute",
+   "traducciones": {
+    "es": "parecería que…",
+    "de": "…scheint… zu…",
+    "fr": "…semblerait…",
+    "it": "…sembrerebbe…",
+    "pt": "…pareceria…"
+   }
+  },
+  {
+   "expresion": "It is not inconceivable that…",
+   "funcion": "understated possibility, taken seriously",
+   "traducciones": {
+    "es": "no es inconcebible que…",
+    "de": "Es ist nicht undenkbar, dass…",
+    "fr": "Il n’est pas inconcevable que…",
+    "it": "Non è inconcepibile che…",
+    "pt": "Não é inconcebível que…"
+   }
+  },
+  {
+   "expresion": "There is reason to believe that…",
+   "funcion": "moderate, evidence-based",
+   "traducciones": {
+    "es": "hay razones para pensar que…",
+    "de": "Es gibt Grund zu der Annahme, dass…",
+    "fr": "Il y a des raisons de penser que…",
+    "it": "C’è motivo di ritenere che…",
+    "pt": "Há razões para acreditar que…"
+   }
+  },
+  {
+   "expresion": "…, though this warrants further scrutiny.",
+   "funcion": "flags a limit explicitly",
+   "traducciones": {
+    "es": "…, aunque esto merece mayor análisis.",
+    "de": "…, obwohl dies einer genaueren Prüfung bedarf.",
+    "fr": "…, même si cela mérite un examen plus approfondi.",
+    "it": "…, anche se ciò merita un esame più approfondito.",
+    "pt": "…, embora isto mereça uma análise mais aprofundada."
+   }
+  },
+  {
+   "expresion": "…remains an open question.",
+   "funcion": "genuine unresolved uncertainty",
+   "traducciones": {
+    "es": "…sigue siendo una pregunta abierta.",
+    "de": "…bleibt eine offene Frage.",
+    "fr": "…reste une question ouverte.",
+    "it": "…resta una questione aperta.",
+    "pt": "…continua a ser uma questão em aberto."
+   }
+  },
+  {
+   "expresion": "…is consistent with, but does not demonstrate,…",
+   "funcion": "distinguishes compatibility from proof",
+   "traducciones": {
+    "es": "…es compatible con, pero no demuestra,…",
+    "de": "…ist vereinbar mit, beweist aber nicht…",
+    "fr": "…est compatible avec, sans le démontrer,…",
+    "it": "…è compatibile con, ma non dimostra,…",
+    "pt": "…é compatível com, mas não demonstra,…"
+   }
+  },
+  {
+   "expresion": "The passive here is hiding someone.",
+   "funcion": "names what the impersonal frame conceals",
+   "traducciones": {
+    "es": "Acá la pasiva está escondiendo a alguien.",
+    "de": "Das Passiv verbirgt hier jemanden.",
+    "fr": "Le passif dissimule ici quelqu'un.",
+    "it": "Qui il passivo nasconde qualcuno.",
+    "pt": "Aqui a passiva está a esconder alguém."
+   }
+  },
+  {
+   "expresion": "I'll name the source rather than hide behind it.",
+   "funcion": "rejects impersonal attribution on purpose",
+   "traducciones": {
+    "es": "Voy a nombrar la fuente en vez de esconderme detrás.",
+    "de": "Ich nenne die Quelle, statt mich dahinter zu verstecken.",
+    "fr": "Je nommerai la source plutôt que de m'abriter derrière.",
+    "it": "Nominerò la fonte invece di nascondermi dietro.",
+    "pt": "Vou nomear a fonte em vez de me esconder atrás dela."
+   }
+  },
+  {
+   "expresion": "The hedge is doing too much work in that sentence.",
+   "funcion": "critiques someone else's hedging",
+   "traducciones": {
+    "es": "En esa frase el matiz está haciendo demasiado trabajo.",
+    "de": "In diesem Satz leistet die Abschwächung zu viel Arbeit.",
+    "fr": "Dans cette phrase, la précaution en fait trop.",
+    "it": "In quella frase l'attenuazione fa troppo lavoro.",
+    "pt": "Nessa frase a atenuação faz demasiado trabalho."
+   }
+  },
+  {
+   "expresion": "On the balance of the evidence,…",
+   "funcion": "single hedge carrying a weighed judgement",
+   "traducciones": {
+    "es": "Sopesando la evidencia,…",
+    "de": "Nach Abwägung der Belege…",
+    "fr": "Tout bien pesé au vu des données,…",
+    "it": "Soppesate le prove,…",
+    "pt": "Pesadas as provas,…"
+   }
+  },
+  {
+   "expresion": "Stated plainly, the finding is…",
+   "funcion": "drops the whole caution stack deliberately",
+   "traducciones": {
+    "es": "Dicho sin rodeos, el hallazgo es…",
+    "de": "Klar gesagt lautet der Befund: …",
+    "fr": "Dit simplement, le résultat est…",
+    "it": "Detto chiaramente, il risultato è…",
+    "pt": "Dito claramente, o resultado é…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write the findings paragraph of a report on food insecurity in a wealthy country.",
+  "requisitos": [
+   "four hedges, each signalling a different degree of certainty",
+   "one *would appear to* and one *cannot be ruled out*",
+   "one sentence saying why you chose that hedge",
+   "use *food insecurity*, *ultra-processed* and *to be malnourished*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Rank *may*, *would appear to*, *there is reason to believe* from weakest to strongest."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Rewrite three claims about *provenance* labelling at precise certainty levels."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 2 minutes on *ultra-processed* food, choosing each hedge deliberately."
+  }
+ ],
+ "autochequeo": [
+  "Does each hedge match the actual level of certainty the evidence supports?",
+  "Have I distinguished cannot be ruled out from is possible in intent?",
+  "Does would appear to stop short of overclaiming?",
+  "Would an expert reader in this field read the precise level of confidence I intend?",
+  "Is there at least one flat, unhedged claim to show the contrast?"
+ ],
+ "promptCorreccion": "Focus only on the precision of the hedging scale. Check whether each hedge word matches the intended level of certainty, not just whether a hedge is present. Do not rewrite the text."
+}

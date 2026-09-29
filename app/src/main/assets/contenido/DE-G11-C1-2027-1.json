@@ -1,0 +1,360 @@
+{
+ "id": "DE-G11-C1-2027-1",
+ "skillId": "DE-G11",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T04",
+ "titulo": "Relativsätze",
+ "subtitulo": "Relativsätze, die mehr tragen als ein Nomen",
+ "ancla": "Erkundungen C1",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf C1 treten die selteneren Relativkonstruktionen hinzu: der Relativsatz mit vorangestelltem Präpositionalobjekt (in welchem Fall), der weiterführende Relativsatz mit was, und vor allem der Relativsatz mit Genitivpräposition (innerhalb dessen). Der einfache Relativsatz gilt als bekannt.",
+ "cuadroReferencia": {
+  "titulo": "Erweiterte Relativkonstruktionen",
+  "columnas": [
+   "Konstruktion",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Genitivpräposition + dessen/deren",
+    "ein Projekt, innerhalb dessen mehrere Teams arbeiten"
+   ],
+   [
+    "weiterführend mit was",
+    "Er kam zu spät, was niemanden überraschte."
+   ],
+   [
+    "Superlativ + Relativsatz mit was",
+    "Das Beste, was mir passieren konnte"
+   ],
+   [
+    "Präposition + welcher (gehoben)",
+    "der Grund, aus welchem sie sich entschied"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Es handelt sich um ein Projekt, innerhalb dessen mehrere Teams zusammenarbeiten.",
+   "audio": true
+  },
+  {
+   "texto": "Er kam wieder zu spät, was inzwischen niemanden mehr überraschte.",
+   "audio": true
+  },
+  {
+   "texto": "Das war das Beste, was mir in diesem Jahr passieren konnte."
+  }
+ ],
+ "notas": [
+  "Der weiterführende Relativsatz mit was bezieht sich auf den ganzen vorangegangenen Satz, nicht auf ein einzelnes Nomen — das unterscheidet ihn vom normalen Relativsatz mit das.",
+  "Welcher als Relativpronomen ist auf C1 noch seltener als auf B2 und wirkt fast ausschliesslich in juristischen oder sehr formellen Texten natürlich.",
+  "Innerhalb dessen, aufgrund dessen und infolgedessen sind feste Kombinationen mit Genitivpräpositionen, die im Fachtext häufig vorkommen."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat für den weiterführenden Relativsatz mit was keine strukturelle Entsprechung; lo que kommt nahe, wird aber seltener genutzt, um einen ganzen vorherigen Satz zusammenzufassen. Spanischsprachige formulieren stattdessen oft einen neuen Hauptsatz mit esto.",
+  "en": "Das nicht-restriktive which, das sich auf einen ganzen Satz bezieht (he was late again, which surprised no one), entspricht dem weiterführenden was genau, diese Konstruktion überträgt sich also sehr natürlich. Schwieriger sind die Formen mit Genitivpräposition (innerhalb dessen), weil das Englische within which verwendet oder das Nomen wiederholt.",
+  "it": "Der weiterführende Relativsatz mit was hat im Italienischen eine genaue Entsprechung in il che (è arrivato tardi, il che non ha sorpreso nessuno). Schwieriger ist die Genitivpräposition: Nach dem Muster all'interno del quale bilden Italienischsprachige oft innerhalb welchem statt innerhalb dessen.",
+  "fr": "Ce qui und ce que entsprechen dem weiterführenden was genau (il est arrivé en retard, ce qui n'a surpris personne); anders als im Französischen ändert was aber seine Form nicht nach der Funktion, und mit Präposition wird es zu wo-: ce dont – wovon. Bei der Genitivpräposition verleitet duquel (à l'intérieur duquel) zu einem zusätzlichen von: innerhalb von dem statt innerhalb dessen.",
+  "pt": "O que entspricht dem weiterführenden was genau (chegou tarde, o que não surpreendeu ninguém). Die eigentliche Falle ist cujo: Es richtet sich nach dem folgenden Nomen (cuja casa), dessen und deren dagegen nach dem Bezugswort. Portugiesischsprachige wählen deshalb oft die falsche Form, besonders nach Genitivpräpositionen (innerhalb deren statt innerhalb dessen)."
+ },
+ "errores": [
+  "Das statt was für den weiterführenden Relativsatz verwenden.",
+  "Dessen und deren nach der Präposition vergessen und stattdessen den Artikel wiederholen.",
+  "Welcher in einem informellen Kontext verwenden, wo es unnatürlich gestelzt wirkt."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*lo que* als *das* übertragen: *Er kam zu spät, das mich ärgerte* statt *was mich ärgerte*."
+  ],
+  "en": [
+   "*which* als weiterführendes Relativum mit *welches* übertragen: *Er kam zu spät, welches mich ärgerte* statt *was*."
+  ],
+  "it": [
+   "*il che* als *das* übertragen: *Er kam zu spät, das mich ärgerte* statt *was mich ärgerte*."
+  ],
+  "fr": [
+   "*ce qui* als *das, was* doppelt übertragen: *Er kam zu spät, das, was mich ärgerte* statt *was mich ärgerte*."
+  ],
+  "pt": [
+   "*onde* für jeden Ortsbezug mit *wo* übertragen, auch im formellen Text: *die Firma, wo ich arbeite* statt *in der*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "auf seinen Körper hören",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "escuchar al cuerpo",
+    "en": "to listen to your body",
+    "fr": "écouter son corps",
+    "it": "ascoltare il proprio corpo",
+    "pt": "ouvir o corpo"
+   }
+  },
+  {
+   "item": "das Wohlbefinden",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el bienestar",
+    "en": "wellbeing",
+    "fr": "le bien-être",
+    "it": "il benessere",
+    "pt": "o bem-estar"
+   }
+  },
+  {
+   "item": "die Belastungsgrenze",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el límite de resistencia",
+    "en": "limit of what one can take",
+    "fr": "la limite de résistance",
+    "it": "il limite di sopportazione",
+    "pt": "o limite de resistência"
+   }
+  },
+  {
+   "item": "die Genesung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la recuperación",
+    "en": "recovery",
+    "fr": "la guérison",
+    "it": "la guarigione",
+    "pt": "a recuperação"
+   }
+  },
+  {
+   "item": "die Vorsorgeuntersuchung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el chequeo preventivo",
+    "en": "preventive check-up",
+    "fr": "le bilan de santé",
+    "it": "il controllo preventivo",
+    "pt": "o exame preventivo"
+   }
+  },
+  {
+   "item": "sich schonen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "cuidarse, no exigirse",
+    "en": "to take it easy",
+    "fr": "se ménager",
+    "it": "riguardarsi",
+    "pt": "poupar-se"
+   }
+  },
+  {
+   "item": "angeschlagen sein",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar bajo de defensas",
+    "en": "to be run down",
+    "fr": "être patraque",
+    "it": "essere giù di forma",
+    "pt": "estar em baixo"
+   }
+  },
+  {
+   "item": "chronisch",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "crónico",
+    "en": "chronic",
+    "fr": "chronique",
+    "it": "cronico",
+    "pt": "crónico"
+   }
+  },
+  {
+   "item": "den Arztbesuch aufschieben",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "postergar la visita al médico",
+    "en": "to put off seeing a doctor",
+    "fr": "repousser la visite chez le médecin",
+    "it": "rimandare la visita",
+    "pt": "adiar a ida ao médico"
+   }
+  },
+  {
+   "item": "die Nebenwirkung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el efecto secundario",
+    "en": "side effect",
+    "fr": "l'effet secondaire",
+    "it": "l'effetto collaterale",
+    "pt": "o efeito secundário"
+   }
+  },
+  {
+   "item": "die Schlafhygiene",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la higiene del sueño",
+    "en": "sleep hygiene",
+    "fr": "l'hygiène du sommeil",
+    "it": "l'igiene del sonno",
+    "pt": "a higiene do sono"
+   }
+  },
+  {
+   "item": "die Überweisung zum Facharzt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el volante al especialista",
+    "en": "referral to a specialist",
+    "fr": "l'orientation vers un spécialiste",
+    "it": "l'impegnativa per lo specialista",
+    "pt": "a credencial para o especialista"
+   }
+  },
+  {
+   "item": "sich auskurieren",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "curarse del todo",
+    "en": "to get fully better",
+    "fr": "se soigner à fond",
+    "it": "curarsi del tutto",
+    "pt": "curar-se por completo"
+   }
+  },
+  {
+   "item": "sich seine Kräfte einteilen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dosificar las fuerzas",
+    "en": "to pace yourself",
+    "fr": "gérer ses forces",
+    "it": "dosare le forze",
+    "pt": "gerir as forças"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, innerhalb dessen…",
+   "funcion": "Genitivpräposition, formell",
+   "traducciones": {
+    "es": "…, dentro del cual…",
+    "en": "…, within which…",
+    "fr": "…, à l’intérieur duquel…",
+    "it": "…, all’interno del quale…",
+    "pt": "…, dentro do qual…"
+   }
+  },
+  {
+   "expresion": "…, was niemanden überraschte.",
+   "funcion": "weiterführender Relativsatz",
+   "traducciones": {
+    "es": "…, lo cual no sorprendió a nadie.",
+    "en": "…, which surprised no one.",
+    "fr": "…, ce qui n’a surpris personne.",
+    "it": "…, cosa che non ha sorpreso nessuno.",
+    "pt": "…, o que não surpreendeu ninguém."
+   }
+  },
+  {
+   "expresion": "Das Beste, was…",
+   "funcion": "Superlativ + was",
+   "traducciones": {
+    "es": "Lo mejor que…",
+    "en": "The best thing that…",
+    "it": "La cosa migliore che…",
+    "pt": "O melhor que…",
+    "fr": "La meilleure chose que…"
+   }
+  },
+  {
+   "expresion": "…, aufgrund dessen…",
+   "funcion": "Ursache, formell",
+   "traducciones": {
+    "es": "…, en base a lo cual…",
+    "en": "…, on the basis of which…",
+    "fr": "…, sur la base de quoi…",
+    "it": "…, sulla base del quale…",
+    "pt": "…, com base no qual…"
+   }
+  },
+  {
+   "expresion": "der Grund, aus welchem…",
+   "funcion": "sehr formell, juristisch",
+   "traducciones": {
+    "es": "el motivo por el cual…",
+    "en": "the reason for which…",
+    "fr": "la raison pour laquelle…",
+    "it": "il motivo per cui…",
+    "pt": "o motivo pelo qual…"
+   }
+  },
+  {
+   "expresion": "…, was wiederum bedeutet, dass…",
+   "funcion": "Kettenfolge von Konsequenzen",
+   "traducciones": {
+    "es": "…, lo cual a su vez significa que…",
+    "en": "…, which in turn means that…",
+    "fr": "…, ce qui signifie à son tour que…",
+    "it": "…, il che a sua volta significa che…",
+    "pt": "…, o que, por sua vez, significa que…"
+   }
+  },
+  {
+   "expresion": "Der Relativsatz haengt zu weit hinten.",
+   "funcion": "einen Bezugsfehler ansprechen",
+   "traducciones": {
+    "es": "La relativa quedó demasiado lejos de su referente.",
+    "en": "The relative clause sits too far from what it refers to.",
+    "fr": "La relative est trop éloignée de son antécédent.",
+    "it": "La relativa è troppo lontana dal suo referente.",
+    "pt": "A relativa ficou demasiado longe do referente."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie einen Bericht über eine Phase, in der Sie an Ihre Belastungsgrenze gekommen sind, und darüber, was Ihnen bei der Genesung geholfen hat.",
+  "requisitos": [
+   "ein Relativsatz mit Genitivpräposition (*innerhalb dessen*, *aufgrund dessen*)",
+   "zwei weiterführende Relativsätze mit *was*",
+   "ein Relativsatz mit vorangestelltem Präpositionalobjekt",
+   "*die Belastungsgrenze*, *die Genesung* und *auf seinen Körper hören* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Sätze über Ihr *Wohlbefinden* mit *was* als Anschluss an den ganzen Satz."
+  },
+  {
+   "dia": "mie",
+   "minutos": 10,
+   "texto": "Zwei einfache Sätze über die *Vorsorgeuntersuchung* zu einem mit *aufgrund dessen* verbinden. Dreimal mit anderen Inhalten."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden aufnehmen: Wann *schonen Sie sich* — und wann nicht? Mindestens zwei Relativsätze mit *was*."
+  }
+ ],
+ "autochequeo": [
+  "Habe ich was statt das benutzt, wenn sich der Relativsatz auf den ganzen Satz bezieht?",
+  "Steht nach der Genitivpräposition dessen oder deren, nicht der Artikel?",
+  "Ist welcher nur in einem passend formellen Kontext eingesetzt?",
+  "Bezieht sich was auf den ganzen Satz und nicht auf ein einzelnes Nomen?",
+  "Ist das Register des ganzen Textes mit welcher konsistent?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die erweiterten Relativkonstruktionen: weiterführendes was, Genitivpräpositionen, welcher. Prüfen Sie jeden Fall auf die richtige Form. Schreiben Sie den Text nicht neu."
+}

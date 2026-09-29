@@ -1,0 +1,411 @@
+{
+ "id": "DE-F08-B2-2027-2",
+ "skillId": "DE-F08",
+ "order": 2,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "fluency",
+ "topicId": "T14",
+ "titulo": "Zusammenfassen",
+ "subtitulo": "Zusammenfassen: Lieferketten",
+ "ancla": "PD B2 (CEFR mediation)",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Auf B2 fasst man einen Text kompakt zusammen, mit dem wichtigsten Punkt am Anfang. Die feinere Struktur mit offenen Fragen und getrennter eigener Einordnung (C1) ist hier noch nicht das Ziel — es reicht, den Kern klar herauszustellen, statt den Text nachzuerzählen.",
+ "cuadroReferencia": {
+  "titulo": "Eine kompakte Zusammenfassung",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Hauptpunkt zuerst",
+    "Es geht vor allem darum, dass…"
+   ],
+   [
+    "Ein bis zwei Stützpunkte",
+    "Ausserdem wird erwähnt, dass…"
+   ],
+   [
+    "Kurzer Abschluss",
+    "Insgesamt zeigt der Text, dass…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Es geht vor allem darum, dass die Stadt mehr Grünflächen plant.",
+   "audio": true
+  },
+  {
+   "texto": "Ausserdem wird erwähnt, dass die Kosten dafür noch unklar sind.",
+   "audio": true
+  },
+  {
+   "texto": "Insgesamt zeigt der Text, dass das Projekt noch am Anfang steht."
+  }
+ ],
+ "notas": [
+  "Der Hauptpunkt sollte am Anfang stehen, nicht am Ende — das ist der wichtigste Unterschied zum Nacherzählen.",
+  "Ein bis zwei Stützpunkte reichen für eine kompakte Zusammenfassung; mehr macht sie zu lang.",
+  "Insgesamt oder zusammenfassend eignen sich gut, um den Abschluss zu markieren."
+ ],
+ "contraste": {
+  "es": "El texto trata de… entspricht genau Der Text handelt von…, und en resumen entspricht zusammenfassend. Die Formeln übertragen sich gut; zu üben ist, mit dem Hauptpunkt zu beginnen, statt der Reihenfolge des Textes zu folgen.",
+  "it": "Il testo tratta di… entspricht genau Der Text handelt von…, und in sintesi entspricht zusammenfassend. Die Formeln übertragen sich gut; zu üben ist, mit dem Hauptpunkt zu beginnen statt der Reihenfolge des Textes zu folgen.",
+  "fr": "Le texte traite de… entspricht genau Der Text handelt von…, und en résumé entspricht zusammenfassend. Die Formeln übertragen sich gut; zu üben ist, mit dem Hauptpunkt zu beginnen.",
+  "pt": "O texto trata de… entspricht genau Der Text handelt von…, und em suma entspricht kurz gesagt oder zusammenfassend. Die Formeln übertragen sich gut; zu üben ist, mit dem Hauptpunkt zu beginnen.",
+  "en": "The text is about wird oft zu Der Text ist über übertragen; richtig ist Der Text handelt von oder Im Text geht es um. In summary entspricht zusammenfassend."
+ },
+ "errores": [
+  "Den Text chronologisch nacherzählen statt den Hauptpunkt zuerst zu nennen.",
+  "Zu viele Details aus dem Original übernehmen, statt eine echte Zusammenfassung zu schreiben.",
+  "Keinen klaren Abschluss haben, sodass die Zusammenfassung einfach aufhört."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*El texto habla de* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "it": [
+   "*Il testo parla di* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "fr": [
+   "*Le texte parle de* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "pt": [
+   "*O texto fala de* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "en": [
+   "*The text is about* als *Der Text ist über* übertragen statt *Der Text handelt von*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der Onlinehandel",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el comercio electrónico",
+    "en": "online retail",
+    "fr": "le commerce en ligne",
+    "it": "il commercio online",
+    "pt": "o comércio online"
+   }
+  },
+  {
+   "item": "der Verbraucherschutz",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la protección al consumidor",
+    "en": "consumer protection",
+    "fr": "la protection des consommateurs",
+    "it": "la tutela dei consumatori",
+    "pt": "a defesa do consumidor"
+   }
+  },
+  {
+   "item": "die Herstellungsbedingungen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "las condiciones de producción",
+    "en": "production conditions",
+    "fr": "les conditions de fabrication",
+    "it": "le condizioni di produzione",
+    "pt": "as condições de produção"
+   }
+  },
+  {
+   "item": "die Lieferkette",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cadena de suministro",
+    "en": "supply chain",
+    "fr": "la chaîne d'approvisionnement",
+    "it": "la catena di fornitura",
+    "pt": "a cadeia de abastecimento"
+   }
+  },
+  {
+   "item": "die Lieferung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la entrega",
+    "en": "delivery",
+    "fr": "la livraison",
+    "it": "la consegna",
+    "pt": "a entrega"
+   }
+  },
+  {
+   "item": "die Reklamation",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la reclamación",
+    "en": "complaint (about goods)",
+    "fr": "la réclamation",
+    "it": "il reclamo",
+    "pt": "a reclamação"
+   }
+  },
+  {
+   "item": "bewusst konsumieren",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "consumir conscientemente",
+    "en": "to consume mindfully",
+    "fr": "consommer de façon responsable",
+    "it": "consumare consapevolmente",
+    "pt": "consumir conscientemente"
+   }
+  },
+  {
+   "item": "das Gütesiegel",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el sello de calidad",
+    "en": "quality label",
+    "fr": "le label de qualité",
+    "it": "il marchio di qualità",
+    "pt": "o selo de qualidade"
+   }
+  },
+  {
+   "item": "das Kleingedruckte",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la letra pequeña",
+    "en": "the small print",
+    "fr": "les petits caractères",
+    "it": "le clausole in piccolo",
+    "pt": "as letras miúdas"
+   }
+  },
+  {
+   "item": "das Verfallsdatum",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la fecha de caducidad",
+    "en": "expiry date",
+    "fr": "la date de péremption",
+    "it": "la data di scadenza",
+    "pt": "o prazo de validade"
+   }
+  },
+  {
+   "item": "der Konsumzwang",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la compulsión al consumo",
+    "en": "compulsion to consume",
+    "fr": "la compulsion de consommation",
+    "it": "la compulsione all'acquisto",
+    "pt": "a compulsão pelo consumo"
+   }
+  },
+  {
+   "item": "die Reparierbarkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la reparabilidad",
+    "en": "repairability",
+    "fr": "la réparabilité",
+    "it": "la riparabilità",
+    "pt": "a reparabilidade"
+   }
+  },
+  {
+   "item": "die Wegwerfmentalität",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la mentalidad de usar y tirar",
+    "en": "throwaway mentality",
+    "fr": "la mentalité du jetable",
+    "it": "la mentalità dell'usa e getta",
+    "pt": "a mentalidade descartável"
+   }
+  },
+  {
+   "item": "die Werbung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la publicidad",
+    "en": "advertising",
+    "fr": "la publicité",
+    "it": "la pubblicità",
+    "pt": "a publicidade"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Es geht vor allem darum, dass…",
+   "funcion": "Hauptpunkt",
+   "traducciones": {
+    "es": "Se trata sobre todo de que…",
+    "en": "It's mainly about the fact that…",
+    "fr": "Il s’agit surtout du fait que…",
+    "it": "Si tratta soprattutto del fatto che…",
+    "pt": "Trata-se sobretudo do facto de que…"
+   }
+  },
+  {
+   "expresion": "Ausserdem wird erwähnt, dass…",
+   "funcion": "Stützpunkt",
+   "traducciones": {
+    "es": "Además se menciona que…",
+    "en": "It's also mentioned that…",
+    "fr": "Il est également mentionné que…",
+    "it": "Viene inoltre menzionato che…",
+    "pt": "Também é mencionado que…"
+   }
+  },
+  {
+   "expresion": "Insgesamt zeigt der Text, dass…",
+   "funcion": "Abschluss",
+   "traducciones": {
+    "es": "En general, el texto muestra que…",
+    "en": "Overall, the text shows that…",
+    "fr": "Dans l’ensemble, le texte montre que…",
+    "it": "Nel complesso, il testo mostra che…",
+    "pt": "No geral, o texto mostra que…"
+   }
+  },
+  {
+   "expresion": "Zusammenfassend lässt sich sagen, dass…",
+   "funcion": "Abschluss, formeller",
+   "traducciones": {
+    "es": "En resumen, se puede decir que…",
+    "en": "In summary, it can be said that…",
+    "fr": "En résumé, on peut dire que…",
+    "it": "In sintesi, si può dire che…",
+    "pt": "Em resumo, pode dizer-se que…"
+   }
+  },
+  {
+   "expresion": "Der Text handelt von…",
+   "funcion": "Thema einführen",
+   "traducciones": {
+    "es": "El texto trata sobre…",
+    "en": "The text is about…",
+    "fr": "Le texte parle de…",
+    "it": "Il testo parla di…",
+    "pt": "O texto fala de…"
+   }
+  },
+  {
+   "expresion": "Kurz gesagt,…",
+   "funcion": "kompakter Einstieg",
+   "traducciones": {
+    "es": "En pocas palabras,…",
+    "en": "In short,…",
+    "fr": "En bref,…",
+    "it": "In breve,…",
+    "pt": "Resumindo,…"
+   }
+  },
+  {
+   "expresion": "Im Text geht es um zwei Punkte: …",
+   "funcion": "die Zahl der Punkte vorab nennen",
+   "traducciones": {
+    "es": "El texto trata dos puntos: …",
+    "en": "The text covers two points: …",
+    "fr": "Le texte aborde deux points : …",
+    "it": "Il testo tratta due punti: …",
+    "pt": "O texto trata dois pontos: …"
+   }
+  },
+  {
+   "expresion": "Der Autor kritisiert vor allem…",
+   "funcion": "die Haltung der Quelle wiedergeben",
+   "traducciones": {
+    "es": "El autor critica sobre todo…",
+    "en": "The author mainly criticises…",
+    "fr": "L'auteur critique surtout…",
+    "it": "L'autore critica soprattutto…",
+    "pt": "O autor critica sobretudo…"
+   }
+  },
+  {
+   "expresion": "Dazu werden Zahlen genannt: …",
+   "funcion": "Belege der Quelle erwähnen",
+   "traducciones": {
+    "es": "Al respecto se dan cifras: …",
+    "en": "Figures are given for this: …",
+    "fr": "Des chiffres sont donnés à ce sujet : …",
+    "it": "Al riguardo vengono citate cifre: …",
+    "pt": "Sobre isso são dados números: …"
+   }
+  },
+  {
+   "expresion": "Wichtig ist auch, dass…",
+   "funcion": "einen zweiten Punkt gewichten",
+   "traducciones": {
+    "es": "También es importante que…",
+    "en": "It also matters that…",
+    "fr": "Il est également important que…",
+    "it": "È importante anche che…",
+    "pt": "Também é importante que…"
+   }
+  },
+  {
+   "expresion": "Auf die Details gehe ich nicht ein.",
+   "funcion": "Auslassung ankündigen",
+   "traducciones": {
+    "es": "No entro en los detalles.",
+    "en": "I won't go into the details.",
+    "fr": "Je n'entre pas dans les détails.",
+    "it": "Non entro nei dettagli.",
+    "pt": "Não entro nos detalhes."
+   }
+  },
+  {
+   "expresion": "Meine eigene Meinung dazu ist…",
+   "funcion": "die eigene Sicht getrennt anschliessen",
+   "traducciones": {
+    "es": "Mi propia opinión al respecto es…",
+    "en": "My own view on it is…",
+    "fr": "Mon avis personnel là-dessus est…",
+    "it": "La mia opinione al riguardo è…",
+    "pt": "A minha opinião sobre isso é…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Fassen Sie einen Bericht über Herstellungsbedingungen im Onlinehandel zusammen.",
+  "requisitos": [
+   "das Wichtigste im ersten Satz",
+   "drei Nebenpunkte, andere Einleitungen als beim letzten Mal",
+   "ein *Insgesamt zeigt der Text, dass…*",
+   "*die Lieferkette*, *die Herstellungsbedingungen* und *der Verbraucherschutz* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 10,
+   "texto": "Einen Text zum *Onlinehandel* in 50 Wörtern zusammenfassen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Den ersten Satz dreimal umformulieren."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: *Der Text handelt von…* — zur *Reklamation*."
+  }
+ ],
+ "autochequeo": [
+  "Steht der Hauptpunkt am Anfang?",
+  "Sind ein bis zwei Stützpunkte genannt, nicht zu viele Details?",
+  "Gibt es einen klaren Abschluss?",
+  "Ist es eine Zusammenfassung, keine Nacherzählung?",
+  "Ist die Zusammenfassung deutlich kürzer als der Originaltext?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob der Hauptpunkt am Anfang steht und die Zusammenfassung kompakt bleibt. Schreiben Sie den Text nicht neu."
+}

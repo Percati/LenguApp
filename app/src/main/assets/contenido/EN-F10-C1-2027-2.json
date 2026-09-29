@@ -1,0 +1,411 @@
+{
+ "id": "EN-F10-C1-2027-2",
+ "skillId": "EN-F10",
+ "order": 2,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T03",
+ "titulo": "Speculating and Predicting",
+ "subtitulo": "Speculating about who is accountable when AI decides",
+ "ancla": "EGP B2/C1",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 55
+ },
+ "descripcion": "At C1, speculation is built as a chain: an observation, a graded prediction, and an explicit acknowledgement of what could prove it wrong. A flat prediction with no qualification reads as overconfident; this chain is what makes a forecast sound credible rather than guessed.",
+ "cuadroReferencia": {
+  "titulo": "The speculation chain",
+  "columnas": [
+   "Step",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Observation",
+    "Given how things have gone so far,…"
+   ],
+   [
+    "Graded prediction",
+    "…it's likely to keep drifting in that direction."
+   ],
+   [
+    "Acknowledged uncertainty",
+    "Though a lot could still change that."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Given how things have gone so far, it's likely to keep drifting the same way.",
+   "audio": true
+  },
+  {
+   "texto": "If current trends hold, we could see a real shift within the year.",
+   "audio": true
+  },
+  {
+   "texto": "That said, a lot could still change between now and then."
+  }
+ ],
+ "notas": [
+  "Likely to and bound to differ in strength: bound to reads as near-certain, likely to leaves real room for doubt.",
+  "Starting a prediction with an observation (given how things have gone) grounds it in evidence rather than a guess out of nowhere.",
+  "Closing with an acknowledged limit (a lot could still change) is what keeps a confident prediction from sounding reckless."
+ ],
+ "contraste": {
+  "es": "Si se mantiene la tendencia actual corresponds exactly to if current trends hold, so conditional predictions transfer. The English habit is to anchor the prediction in that observation before stating it.",
+  "de": "Wenn der Trend anhält corresponds exactly to if current trends hold, and dürfte maps well onto is likely to. Conditional predictions therefore transfer directly.",
+  "it": "Se l'andamento attuale continua corresponds well to if current trends continue, so conditional predictions transfer. The Italian future of probability should not be rendered with will, which sounds more certain.",
+  "fr": "Si la tendance se maintient corresponds exactly to if current trends hold, so conditional predictions transfer directly.",
+  "pt": "Se a tendência se mantiver uses the future subjunctive, which can lead to the calque if the trend will hold. English uses the present after if: if current trends hold."
+ },
+ "errores": [
+  "Jumping straight to a prediction without grounding it in an observation first.",
+  "Confusing likely to and bound to and overstating the confidence of a prediction.",
+  "Never acknowledging what could prove the prediction wrong."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Todo apunta a que* rendered as *Everything points to that* instead of *All the signs are that*."
+  ],
+  "de": [
+   "*Es ist davon auszugehen, dass* rendered as *It is to go out from that* instead of *It's safe to assume that*."
+  ],
+  "it": [
+   "*Tutto lascia pensare che* rendered as *Everything lets think that* instead of *All the signs are that*."
+  ],
+  "fr": [
+   "*Tout porte à croire que* rendered as *Everything carries to believe that* instead of *All the signs are that*."
+  ],
+  "pt": [
+   "*Ao que tudo indica* rendered as *To what everything indicates* instead of *By all indications*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "accountability",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la rendición de cuentas",
+    "de": "die Rechenschaftspflicht",
+    "fr": "la responsabilité",
+    "it": "la responsabilità",
+    "pt": "a prestação de contas"
+   }
+  },
+  {
+   "item": "algorithm",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el algoritmo",
+    "de": "der Algorithmus",
+    "fr": "l’algorithme",
+    "it": "l’algoritmo",
+    "pt": "o algoritmo"
+   }
+  },
+  {
+   "item": "biased",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "sesgado",
+    "de": "voreingenommen",
+    "fr": "partial / biaisé",
+    "it": "prevenuto / parziale",
+    "pt": "tendencioso / enviesado"
+   }
+  },
+  {
+   "item": "black box (opaque system)",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la caja negra",
+    "de": "die Blackbox",
+    "fr": "la boîte noire",
+    "it": "la scatola nera",
+    "pt": "a caixa negra"
+   }
+  },
+  {
+   "item": "informed consent",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el consentimiento informado",
+    "de": "die informierte Einwilligung",
+    "fr": "le consentement éclairé",
+    "it": "il consenso informato",
+    "pt": "o consentimento informado"
+   }
+  },
+  {
+   "item": "to displace workers",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "desplazar trabajadores",
+    "de": "Arbeitskräfte verdrängen",
+    "fr": "remplacer des travailleurs",
+    "it": "sostituire lavoratori",
+    "pt": "substituir trabalhadores"
+   }
+  },
+  {
+   "item": "to opt out (of data collection)",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "darse de baja",
+    "de": "sich abmelden",
+    "fr": "se désinscrire",
+    "it": "rinunciare",
+    "pt": "recusar a participação"
+   }
+  },
+  {
+   "item": "to roll out a feature",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "desplegar una función",
+    "de": "eine Funktion ausrollen",
+    "fr": "déployer une fonctionnalité",
+    "it": "distribuire una funzione",
+    "pt": "lançar uma funcionalidade"
+   }
+  },
+  {
+   "item": "a trade-off",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una contrapartida",
+    "de": "der Zielkonflikt",
+    "fr": "un compromis",
+    "it": "un compromesso",
+    "pt": "uma contrapartida"
+   }
+  },
+  {
+   "item": "regulatory framework",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el marco regulatorio",
+    "de": "der Rechtsrahmen",
+    "fr": "le cadre réglementaire",
+    "it": "il quadro normativo",
+    "pt": "o quadro regulatório"
+   }
+  },
+  {
+   "item": "techno-optimism",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el tecnooptimismo",
+    "de": "der Technikoptimismus",
+    "fr": "le techno-optimisme",
+    "it": "il tecno-ottimismo",
+    "pt": "o tecno-otimismo"
+   }
+  },
+  {
+   "item": "to blur the line between",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "difuminar la línea entre",
+    "de": "die Grenze verwischen zwischen",
+    "fr": "brouiller la frontière entre",
+    "it": "sfumare il confine tra",
+    "pt": "esbater a fronteira entre"
+   }
+  },
+  {
+   "item": "to lag behind",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "quedarse rezagado",
+    "de": "hinterherhinken",
+    "fr": "être à la traîne",
+    "it": "restare indietro",
+    "pt": "ficar para trás"
+   }
+  },
+  {
+   "item": "unintended consequences",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las consecuencias no deseadas",
+    "de": "die unbeabsichtigten Folgen",
+    "fr": "les conséquences imprévues",
+    "it": "le conseguenze indesiderate",
+    "pt": "as consequências não intencionais"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Given how things have gone,…",
+   "funcion": "grounds the prediction",
+   "traducciones": {
+    "es": "dado cómo han ido las cosas,…",
+    "de": "So wie die Dinge gelaufen sind,…",
+    "fr": "Vu la tournure des événements,…",
+    "it": "Visto come sono andate le cose,…",
+    "pt": "Dado como as coisas correram,…"
+   }
+  },
+  {
+   "expresion": "…it's likely to…",
+   "funcion": "graded prediction",
+   "traducciones": {
+    "es": "es probable que…",
+    "de": "…wird wahrscheinlich…",
+    "fr": "…est susceptible de…",
+    "it": "…probabilmente…",
+    "pt": "…é provável que…"
+   }
+  },
+  {
+   "expresion": "If current trends hold,…",
+   "funcion": "conditional framing",
+   "traducciones": {
+    "es": "si las tendencias actuales se mantienen,…",
+    "de": "Wenn sich die aktuellen Trends fortsetzen,…",
+    "fr": "Si les tendances actuelles se maintiennent,…",
+    "it": "Se le tendenze attuali si confermano,…",
+    "pt": "Se as tendências atuais se mantiverem,…"
+   }
+  },
+  {
+   "expresion": "…is bound to…",
+   "funcion": "near-certain prediction",
+   "traducciones": {
+    "es": "seguro que…",
+    "de": "…wird bestimmt…",
+    "fr": "…va forcément…",
+    "it": "…è destinato/a a…",
+    "pt": "…vai certamente…"
+   }
+  },
+  {
+   "expresion": "That said, a lot could change.",
+   "funcion": "acknowledges uncertainty",
+   "traducciones": {
+    "es": "dicho eso, mucho podría cambiar",
+    "de": "Allerdings könnte sich noch viel ändern.",
+    "fr": "Cela dit, beaucoup de choses pourraient encore changer.",
+    "it": "Detto questo, molte cose potrebbero ancora cambiare.",
+    "pt": "Dito isto, muita coisa ainda pode mudar."
+   }
+  },
+  {
+   "expresion": "It wouldn't surprise me if…",
+   "funcion": "softer speculative frame",
+   "traducciones": {
+    "es": "no me sorprendería que…",
+    "de": "Es würde mich nicht überraschen, wenn…",
+    "fr": "Ça ne me surprendrait pas si…",
+    "it": "Non mi sorprenderebbe se…",
+    "pt": "Não me surpreenderia se…"
+   }
+  },
+  {
+   "expresion": "The one thing that would change my mind is…",
+   "funcion": "names the falsifier of one's own forecast",
+   "traducciones": {
+    "es": "Lo único que me haría cambiar de idea es…",
+    "de": "Das Einzige, was mich umstimmen würde, ist…",
+    "fr": "La seule chose qui me ferait changer d'avis, c'est…",
+    "it": "L'unica cosa che mi farebbe cambiare idea è…",
+    "pt": "A única coisa que me faria mudar de ideias é…"
+   }
+  },
+  {
+   "expresion": "I'd put it at somewhere around…",
+   "funcion": "gives the prediction a rough magnitude",
+   "traducciones": {
+    "es": "Yo lo situaría en torno a…",
+    "de": "Ich würde das bei etwa … ansetzen.",
+    "fr": "Je situerais cela autour de…",
+    "it": "Lo collocherei intorno a…",
+    "pt": "Situaria isso à volta de…"
+   }
+  },
+  {
+   "expresion": "The alternative scenario is that…",
+   "funcion": "puts a second path beside the main one",
+   "traducciones": {
+    "es": "El escenario alternativo es que…",
+    "de": "Das Gegenszenario wäre, dass…",
+    "fr": "Le scénario alternatif, c'est que…",
+    "it": "Lo scenario alternativo è che…",
+    "pt": "O cenário alternativo é que…"
+   }
+  },
+  {
+   "expresion": "We'll know which way it's going once…",
+   "funcion": "names the signal that settles it",
+   "traducciones": {
+    "es": "Sabremos hacia dónde va cuando…",
+    "de": "Welche Richtung es nimmt, wissen wir, sobald…",
+    "fr": "Nous saurons dans quelle direction cela va dès que…",
+    "it": "Sapremo dove va non appena…",
+    "pt": "Saberemos para onde vai assim que…"
+   }
+  },
+  {
+   "expresion": "I'd be surprised if it went that far.",
+   "funcion": "caps a prediction someone else has made",
+   "traducciones": {
+    "es": "Me sorprendería que llegara tan lejos.",
+    "de": "Es würde mich überraschen, wenn es so weit käme.",
+    "fr": "Cela m'étonnerait que cela aille si loin.",
+    "it": "Mi sorprenderebbe se arrivasse a tanto.",
+    "pt": "Surpreender-me-ia que fosse tão longe."
+   }
+  },
+  {
+   "expresion": "That's a guess, and I'd treat it as one.",
+   "funcion": "separates a guess from a grounded forecast",
+   "traducciones": {
+    "es": "Eso es una conjetura, y como tal la trataría.",
+    "de": "Das ist geraten, und so würde ich es auch behandeln.",
+    "fr": "C'est une conjecture, et je la traiterais comme telle.",
+    "it": "È un'ipotesi, e come tale la tratterei.",
+    "pt": "Isso é um palpite, e como tal o trataria."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Speculate on how AI decisions at work will be regulated within ten years.",
+  "requisitos": [
+   "an observation, a graded prediction, and what would prove you wrong",
+   "three different degrees of certainty",
+   "one explicit *That said, a lot could change*",
+   "use *accountability*, *informed consent* and *to displace workers*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write three predictions about *black box* systems at different strengths."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "For each, write the fact that would make you revise it."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: will people be able to *opt out*? Graded throughout."
+  }
+ ],
+ "autochequeo": [
+  "Is the prediction grounded in a stated observation?",
+  "Is the confidence level (likely vs bound to) accurate to the evidence?",
+  "Is there an explicit acknowledgement of what could prove it wrong?",
+  "Does the prediction avoid sounding like a flat guess?",
+  "Would a listener sense confident guessing rather than reasoned speculation?"
+ ],
+ "promptCorreccion": "Focus only on the speculation chain: observation, graded prediction, acknowledged uncertainty. Check whether the prediction is grounded in evidence, whether the confidence level matches it, and whether an explicit limit is stated. Do not rewrite the text."
+}

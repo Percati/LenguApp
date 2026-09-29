@@ -1,0 +1,389 @@
+{
+ "id": "EN-K04-B2-2027-1",
+ "skillId": "EN-K04",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T01",
+ "titulo": "Hedging, Passive and Impersonal Reporting",
+ "subtitulo": "Softer claims at work",
+ "ancla": "CV Propositional precision",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "At B2 hedging and the passive are learned separately and start to appear together: a hedge softens a claim, the passive removes an unnecessary actor. The full three-layer academic stack with impersonal reporting verbs (C1) isn't the target yet — using one or two of these tools together is enough.",
+ "cuadroReferencia": {
+  "titulo": "Combining a hedge with the passive",
+  "columnas": [
+   "Layer",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Hedge alone",
+    "This may not be accurate."
+   ],
+   [
+    "Passive alone",
+    "The results were published last year."
+   ],
+   [
+    "Both together",
+    "It may not have been reported accurately."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "This may not be entirely accurate.",
+   "audio": true
+  },
+  {
+   "texto": "The results were published without much detail.",
+   "audio": true
+  },
+  {
+   "texto": "It might not have been checked properly."
+  }
+ ],
+ "notas": [
+  "A hedge (may, might, could) softens a claim without changing its basic meaning.",
+  "The passive removes the actor when it isn't important or isn't known — the report was delayed, not someone delayed the report.",
+  "Combining a hedge with the passive is common in careful, professional English but shouldn't be used on every sentence."
+ ],
+ "contraste": {
+  "es": "Spanish hedges mainly with the conditional and uses the passive less as a device for distance, preferring the impersonal se. Spanish speakers tend to under-hedge in formal English, because in Spanish one layer is usually enough.",
+  "de": "German academic prose uses the passive and man freely, so removing the actor is familiar. The hedging layer is less graded (wohl, dürfte, vermutlich), and man is often calqued as one, which sounds stiff in most English texts.",
+  "it": "Italian hedges with the condizionale and the si impersonale (si ritiene che, sembrerebbe), which match it is thought that and it would appear. The risk is stacking conditionals where English uses one lexical hedge (may, likely) plus a passive.",
+  "fr": "French hedges with the conditionnel and on (on pourrait penser que, il semblerait que). The calque one could think that sounds stilted; it could be argued that or it would appear that is the natural English equivalent.",
+  "pt": "Portuguese hedges with the se impersonal (considera-se que) and, in European Portuguese, with the future (poderá indicar). The calque will indicate is far too certain; may indicate or appears to indicate is the English equivalent."
+ },
+ "errores": [
+  "Using the passive without any hedge on a claim that is actually uncertain.",
+  "Overusing hedges on facts that are actually certain.",
+  "Forgetting the participle when combining a modal with the passive: may not checked instead of may not have been checked."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*se supone que* rendered as *It supposes that* instead of *It is assumed that*."
+  ],
+  "de": [
+   "*Es ist anzunehmen* rendered as *It is to assume that* instead of *It can be assumed that*."
+  ],
+  "it": [
+   "*si suppone che* rendered as *It supposes that* instead of *It is assumed that*."
+  ],
+  "fr": [
+   "*on suppose que* rendered as *One supposes that* instead of *It is assumed that*."
+  ],
+  "pt": [
+   "*supõe-se que* rendered as *It supposes that* instead of *It is assumed that*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "promotion",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el ascenso",
+    "de": "die Beförderung",
+    "fr": "la promotion",
+    "it": "la promozione",
+    "pt": "a promoção"
+   }
+  },
+  {
+   "item": "manager",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el/la gerente",
+    "de": "der Manager / die Managerin",
+    "fr": "le/la responsable",
+    "it": "il/la manager",
+    "pt": "o/a gestor/a"
+   }
+  },
+  {
+   "item": "workload",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la carga de trabajo",
+    "de": "das Arbeitspensum / die Arbeitsbelastung",
+    "fr": "la charge de travail",
+    "it": "il carico di lavoro",
+    "pt": "a carga de trabalho"
+   }
+  },
+  {
+   "item": "own responsibility",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la responsabilidad propia",
+    "de": "die Eigenverantwortung",
+    "fr": "la responsabilité personnelle",
+    "it": "la responsabilità personale",
+    "pt": "a responsabilidade individual"
+   }
+  },
+  {
+   "item": "performance review",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la evaluación de desempeño",
+    "de": "das Mitarbeitergespräch / die Leistungsbeurteilung",
+    "fr": "l’évaluation des performances",
+    "it": "la valutazione delle prestazioni",
+    "pt": "a avaliação de desempenho"
+   }
+  },
+  {
+   "item": "staff turnover",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la rotación de personal",
+    "de": "die Fluktuation",
+    "fr": "le turnover",
+    "it": "il turnover del personale",
+    "pt": "a rotatividade de pessoal"
+   }
+  },
+  {
+   "item": "seniority",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la antigüedad",
+    "de": "die Betriebszugehörigkeit / Dienstalter",
+    "fr": "l’ancienneté",
+    "it": "l’anzianità",
+    "pt": "a antiguidade"
+   }
+  },
+  {
+   "item": "team size",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el tamaño del equipo",
+    "de": "die Teamgrösse",
+    "fr": "la taille de l’équipe",
+    "it": "le dimensioni del team",
+    "pt": "o tamanho da equipa"
+   }
+  },
+  {
+   "item": "loyalty",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la lealtad",
+    "de": "die Loyalität",
+    "fr": "la loyauté",
+    "it": "la lealtà",
+    "pt": "a lealdade"
+   }
+  },
+  {
+   "item": "notice period",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el plazo de preaviso",
+    "de": "die Kündigungsfrist",
+    "fr": "le délai de préavis",
+    "it": "il periodo di preavviso",
+    "pt": "o prazo de aviso prévio"
+   }
+  },
+  {
+   "item": "to stand your ground",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mantenerse firme",
+    "de": "standhaft bleiben",
+    "fr": "tenir bon",
+    "it": "tenere la propria posizione",
+    "pt": "manter-se firme"
+   }
+  },
+  {
+   "item": "to get credit for something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "recibir reconocimiento por algo",
+    "de": "Anerkennung für etwas bekommen",
+    "fr": "être reconnu pour quelque chose",
+    "it": "ricevere riconoscimento per qualcosa",
+    "pt": "receber reconhecimento por algo"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "This may not be…",
+   "funcion": "hedge alone",
+   "traducciones": {
+    "es": "Esto podría no ser…",
+    "de": "Das ist vielleicht nicht…",
+    "fr": "Cela n’est peut-être pas…",
+    "it": "Questo potrebbe non essere…",
+    "pt": "Isto pode não ser…"
+   }
+  },
+  {
+   "expresion": "…was published…",
+   "funcion": "passive alone",
+   "traducciones": {
+    "es": "…se publicó…",
+    "de": "…wurde veröffentlicht…",
+    "fr": "…a été publié…",
+    "it": "…è stato pubblicato…",
+    "pt": "…foi publicado…"
+   }
+  },
+  {
+   "expresion": "It might not have been…",
+   "funcion": "hedge plus passive",
+   "traducciones": {
+    "es": "Podría no haber sido…",
+    "fr": "Il se peut que ça n’ait pas été…",
+    "it": "Potrebbe non essere stato…",
+    "pt": "Pode não ter sido…",
+    "de": "Es war vielleicht nicht…"
+   }
+  },
+  {
+   "expresion": "It's possible that…",
+   "funcion": "alternative hedge",
+   "traducciones": {
+    "es": "Es posible que…",
+    "de": "Es ist möglich, dass…",
+    "fr": "Il est possible que…",
+    "it": "È possibile che…",
+    "pt": "É possível que…"
+   }
+  },
+  {
+   "expresion": "…hasn't been confirmed.",
+   "funcion": "passive, unconfirmed claim",
+   "traducciones": {
+    "es": "…no se ha confirmado.",
+    "de": "…wurde nicht bestätigt.",
+    "fr": "…n’a pas été confirmé.",
+    "it": "…non è stato confermato.",
+    "pt": "…não foi confirmado."
+   }
+  },
+  {
+   "expresion": "As far as we know,…",
+   "funcion": "limits the claim",
+   "traducciones": {
+    "es": "Por lo que sabemos,…",
+    "de": "Soweit wir wissen,…",
+    "fr": "Pour autant que nous sachions,…",
+    "it": "Per quanto ne sappiamo,…",
+    "pt": "Tanto quanto sabemos,…"
+   }
+  },
+  {
+   "expresion": "It seems that…",
+   "funcion": "hedge with an impersonal frame",
+   "traducciones": {
+    "es": "Parece que…",
+    "de": "Es scheint, dass…",
+    "fr": "Il semble que…",
+    "it": "Sembra che…",
+    "pt": "Parece que…"
+   }
+  },
+  {
+   "expresion": "It is often said that…",
+   "funcion": "impersonal report of a common claim",
+   "traducciones": {
+    "es": "Se suele decir que…",
+    "de": "Es wird oft gesagt, dass…",
+    "fr": "On dit souvent que…",
+    "it": "Si dice spesso che…",
+    "pt": "Diz-se muitas vezes que…"
+   }
+  },
+  {
+   "expresion": "…tend to…",
+   "funcion": "hedges a generalisation",
+   "traducciones": {
+    "es": "…suelen…",
+    "de": "…neigen dazu, … zu…",
+    "fr": "…ont tendance à…",
+    "it": "…tendono a…",
+    "pt": "…tendem a…"
+   }
+  },
+  {
+   "expresion": "The decision was taken to…",
+   "funcion": "passive that removes the decision-maker",
+   "traducciones": {
+    "es": "Se tomó la decisión de…",
+    "de": "Es wurde entschieden, … zu…",
+    "fr": "La décision a été prise de…",
+    "it": "È stata presa la decisione di…",
+    "pt": "Foi tomada a decisão de…"
+   }
+  },
+  {
+   "expresion": "I'm not certain, but…",
+   "funcion": "explicit, simple hedge",
+   "traducciones": {
+    "es": "No estoy seguro, pero…",
+    "de": "Ich bin nicht sicher, aber…",
+    "fr": "Je n'en suis pas certain, mais…",
+    "it": "Non sono sicuro, ma…",
+    "pt": "Não tenho a certeza, mas…"
+   }
+  },
+  {
+   "expresion": "That part is certain.",
+   "funcion": "marks one claim as unhedged",
+   "traducciones": {
+    "es": "Esa parte sí es segura.",
+    "de": "Dieser Teil ist sicher.",
+    "fr": "Cette partie-là est certaine.",
+    "it": "Quella parte è certa.",
+    "pt": "Essa parte é certa."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write a short report on why staff are leaving a team, without claiming more than you know.",
+  "requisitos": [
+   "two hedges (*may*, *it's possible that*)",
+   "two passives without an actor",
+   "one *hasn't been confirmed*",
+   "use *workload*, *promotion* and *own responsibility*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Three blunt sentences about your *manager*. Hedge them."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Rewrite two active sentences as passives."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds on *staff turnover*, careful with every claim."
+  }
+ ],
+ "autochequeo": [
+  "Is at least one hedge used on an uncertain claim?",
+  "Is the passive used where the actor genuinely doesn't matter?",
+  "Is the participle correct when a hedge and the passive are combined?",
+  "Have I avoided hedging a fact that's actually certain?",
+  "Does at least one sentence combine both tools?"
+ ],
+ "promptCorreccion": "Focus only on hedging and the passive, together and separately. Check the participle form when they're combined and whether the hedge fits the actual certainty of the claim. Do not rewrite the text."
+}

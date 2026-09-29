@@ -1,0 +1,361 @@
+{
+ "id": "EN-G17-C1-2027-1",
+ "skillId": "EN-G17",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T03",
+ "titulo": "Gerunds and Infinitives",
+ "subtitulo": "Gerund or infinitive when the meaning moves",
+ "ancla": "EGP A1-C2",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "At C1 the focus shifts to verbs where gerund and infinitive both exist but shift the meaning subtly — regret, go on, mean — and to distinguishing perfect gerunds (having done) from simple ones, which mark that an action happened before the main verb.",
+ "cuadroReferencia": {
+  "titulo": "Subtle meaning shifts",
+  "columnas": [
+   "Verb",
+   "+ Gerund",
+   "+ Infinitive"
+  ],
+  "filas": [
+   [
+    "regret",
+    "regret saying (about the past)",
+    "regret to say (formal announcement)"
+   ],
+   [
+    "go on",
+    "went on complaining (continued)",
+    "went on to explain (did next)"
+   ],
+   [
+    "mean",
+    "means working late (implies)",
+    "meant to call (intended)"
+   ]
+  ],
+  "notaPie": "Having done + past participle marks that the gerund's action happened before the main verb: having finished the report, she left."
+ },
+ "ejemplos": [
+  {
+   "texto": "I regret to say the meeting has been cancelled.",
+   "audio": true
+  },
+  {
+   "texto": "He went on to explain the reasoning behind the decision.",
+   "audio": true
+  },
+  {
+   "texto": "Having finished early, she decided to review it again."
+  }
+ ],
+ "notas": [
+  "Regret + infinitive is used almost exclusively for formal announcements of bad news; regret + gerund is a genuine personal regret.",
+  "Go on + gerund means to continue doing the same thing; go on + infinitive means to move on to something new.",
+  "A perfect gerund (having + participle) is a compact way to show that one action clearly preceded another."
+ ],
+ "contraste": {
+  "es": "Spanish uses the infinitive more generally and does not mark these meaning differences as systematically. Spanish speakers tend to learn these verbs as isolated exceptions, without seeing the pattern that the gerund points to continuity or an earlier action and the infinitive to a next or different step.",
+  "de": "German has no gerund, only the zu-infinitive, and marks these meaning differences with different constructions (vergessen, etwas zu tun gegen vergessen, dass man etwas getan hat). German speakers therefore default to the to-infinitive, and the perfect gerund is often calqued from the German perfect infinitive: I regret to have said instead of I regret having said.",
+  "it": "Italian marks several of these distinctions with other means: smettere di fare (stop doing) against fermarsi a fare (stop to do), ricordarsi di fare against ricordarsi di aver fatto. The second pair leads to the calque I remember to have done instead of I remember doing, so the perfect gerund needs special attention.",
+  "fr": "French marks the difference between remembering an earlier action and a later duty with the perfect infinitive (se souvenir d'avoir fait). Translated literally, regretter d'avoir dit becomes I regret to have said instead of I regret having said, so the perfect gerund is the main point for French speakers.",
+  "pt": "Portuguese marks several of these distinctions lexically: continuar a fazer (go on doing) against passar a fazer (go on to do). The perfect infinitive (lembro-me de ter feito) leads to the calque I remember to have done instead of I remember doing."
+ },
+ "errores": [
+  "Using regret + infinitive for a genuine personal regret instead of a formal announcement.",
+  "Confusing went on doing and went on to do.",
+  "Using a simple gerund where a perfect gerund would clarify the sequence of events."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*acordarse de haber hecho* rendered as *remember to have done* instead of *remember doing*."
+  ],
+  "de": [
+   "*es gewohnt sein, … zu* rendered with an infinitive: *I am used to work late* instead of *I am used to working late*."
+  ],
+  "it": [
+   "*ricordarsi di aver fatto* rendered as *remember to have done* instead of *remember doing*."
+  ],
+  "fr": [
+   "*avoir l'habitude de* rendered with an infinitive: *I am used to work late* instead of *I am used to working late*."
+  ],
+  "pt": [
+   "*lembrar-se de ter feito* rendered as *remember to have done* instead of *remember doing*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "algorithm",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el algoritmo",
+    "de": "der Algorithmus",
+    "fr": "l’algorithme",
+    "it": "l’algoritmo",
+    "pt": "o algoritmo"
+   }
+  },
+  {
+   "item": "biased",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "sesgado",
+    "de": "voreingenommen",
+    "fr": "partial / biaisé",
+    "it": "prevenuto / parziale",
+    "pt": "tendencioso / enviesado"
+   }
+  },
+  {
+   "item": "black box (opaque system)",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la caja negra",
+    "de": "die Blackbox",
+    "fr": "la boîte noire",
+    "it": "la scatola nera",
+    "pt": "a caixa negra"
+   }
+  },
+  {
+   "item": "data protection",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la protección de datos",
+    "de": "der Datenschutz",
+    "fr": "la protection des données",
+    "it": "la protezione dei dati",
+    "pt": "a proteção de dados"
+   }
+  },
+  {
+   "item": "to opt out (of data collection)",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "darse de baja",
+    "de": "sich abmelden",
+    "fr": "se désinscrire",
+    "it": "rinunciare",
+    "pt": "recusar a participação"
+   }
+  },
+  {
+   "item": "to roll out a feature",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "desplegar una función",
+    "de": "eine Funktion ausrollen",
+    "fr": "déployer une fonctionnalité",
+    "it": "distribuire una funzione",
+    "pt": "lançar uma funcionalidade"
+   }
+  },
+  {
+   "item": "a trade-off",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una contrapartida",
+    "de": "der Zielkonflikt",
+    "fr": "un compromis",
+    "it": "un compromesso",
+    "pt": "uma contrapartida"
+   }
+  },
+  {
+   "item": "a workaround",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una solución alternativa",
+    "de": "die Behelfslösung",
+    "fr": "une solution de contournement",
+    "it": "una soluzione alternativa",
+    "pt": "uma solução alternativa"
+   }
+  },
+  {
+   "item": "automation",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la automatización",
+    "de": "die Automatisierung",
+    "fr": "l'automatisation",
+    "it": "l'automazione",
+    "pt": "a automação"
+   }
+  },
+  {
+   "item": "data misuse",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el abuso de datos",
+    "de": "der Missbrauch von Daten",
+    "fr": "l'abus de données",
+    "it": "l'abuso dei dati",
+    "pt": "o abuso de dados"
+   }
+  },
+  {
+   "item": "hallucination (AI output)",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la alucinación",
+    "de": "die Halluzination",
+    "fr": "l'hallucination",
+    "it": "l'allucinazione",
+    "pt": "a alucinação"
+   }
+  },
+  {
+   "item": "surveillance",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la vigilancia",
+    "de": "die Überwachung",
+    "fr": "la surveillance",
+    "it": "la sorveglianza",
+    "pt": "a vigilância"
+   }
+  },
+  {
+   "item": "to future-proof something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "preparar algo para el futuro",
+    "de": "etwas zukunftssicher machen",
+    "fr": "pérenniser qc",
+    "it": "rendere qc a prova di futuro",
+    "pt": "preparar algo para o futuro"
+   }
+  },
+  {
+   "item": "to scale up",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "escalar",
+    "de": "hochskalieren",
+    "fr": "monter en charge",
+    "it": "scalare",
+    "pt": "escalar"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "I regret to say that…",
+   "funcion": "formal bad news",
+   "traducciones": {
+    "es": "Lamento informar que…",
+    "de": "Ich bedaure sagen zu müssen, dass…",
+    "fr": "Je regrette de dire que…",
+    "it": "Mi dispiace dover dire che…",
+    "pt": "Lamento dizer que…"
+   }
+  },
+  {
+   "expresion": "I regret…-ing",
+   "funcion": "genuine personal regret",
+   "traducciones": {
+    "es": "Me arrepiento de…",
+    "de": "Ich bereue,…",
+    "fr": "Je regrette d’avoir…",
+    "it": "Mi pento di aver…",
+    "pt": "Arrependo-me de ter…"
+   }
+  },
+  {
+   "expresion": "…went on to…",
+   "funcion": "moved to a new action",
+   "traducciones": {
+    "es": "…pasó a…",
+    "fr": "…a ensuite…",
+    "it": "…ha poi…",
+    "de": "…ging dann dazu über, … zu…",
+    "pt": "…passou a… / acabou por…"
+   }
+  },
+  {
+   "expresion": "…went on…-ing",
+   "funcion": "continued the same action",
+   "traducciones": {
+    "es": "…siguió…",
+    "de": "…fuhr fort zu…",
+    "fr": "…a continué à…",
+    "it": "…ha continuato a…",
+    "pt": "…continuou a…"
+   }
+  },
+  {
+   "expresion": "Having…, …",
+   "funcion": "perfect gerund, sequence",
+   "traducciones": {
+    "es": "Habiendo…, …",
+    "de": "Nachdem …, …",
+    "fr": "Ayant…, …",
+    "it": "Avendo…, …",
+    "pt": "Tendo…, …"
+   }
+  },
+  {
+   "expresion": "I meant to…",
+   "funcion": "unfulfilled intention",
+   "traducciones": {
+    "es": "Tenía intención de…",
+    "de": "Ich wollte…",
+    "fr": "J’avais l’intention de…",
+    "it": "Avevo intenzione di…",
+    "pt": "Tinha intenção de…"
+   }
+  },
+  {
+   "expresion": "I meant the other one.",
+   "funcion": "repairs the wrong choice out loud",
+   "traducciones": {
+    "es": "Quise decir la otra forma.",
+    "de": "Ich meinte die andere Form.",
+    "fr": "Je voulais dire l'autre forme.",
+    "it": "Intendevo l'altra forma.",
+    "pt": "Queria dizer a outra forma."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write a short piece on a feature an app rolled out that you regret agreeing to.",
+  "requisitos": [
+   "*regret* with both forms, meaning different things",
+   "*go on* with both forms",
+   "one perfect gerund (*Having…*)",
+   "use *to roll out a feature*, *to opt out* and *black box*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write *I regret to say* and *I regret saying* sentences about an *algorithm*."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Two sentences with *meant to* and *means -ing* about *data protection*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: what did you mean to change in your settings and never did?"
+  }
+ ],
+ "autochequeo": [
+  "Is regret used correctly for formal announcement versus personal regret?",
+  "Is went on followed by the right form for continuation versus a new step?",
+  "Is a perfect gerund used where the sequence of events needs clarifying?",
+  "Do the subtle meaning shifts match what I actually intend to say?",
+  "Are at least five of these nuanced verbs used correctly?"
+ ],
+ "promptCorreccion": "Focus only on gerunds and infinitives with a meaning shift: regret, go on, mean, and perfect gerunds. Check whether the chosen form matches the intended meaning. Do not rewrite the text."
+}

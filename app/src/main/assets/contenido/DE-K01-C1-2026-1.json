@@ -1,0 +1,398 @@
+{
+ "id": "DE-K01-C1-2026-1",
+ "skillId": "DE-K01",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T11",
+ "titulo": "Konjunktiv II + Konditionalsatz + Modalverb im Perfekt",
+ "subtitulo": "Irreale Vorwürfe über die Berichterstattung",
+ "ancla": "Erkundungen C1",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Drei bekannte Bausteine — Konjunktiv II, der Konditionalsatz und der Modalverb-Infinitiv der Vergangenheit — verschmelzen hier zu einem einzigen Muster: dem irrealen Vorwurf über etwas, das hätte anders sein können. Wer die drei getrennt gelernt hat, baut oft *hätte gekonnt wissen* oder lässt eines der Teile weg. Das Ziel dieser Karte ist nicht, etwas Neues zu lernen, sondern die drei Teile so oft zu kombinieren, bis die Reihenfolge automatisch sitzt.",
+ "cuadroReferencia": {
+  "titulo": "Die drei Schichten des Musters",
+  "columnas": [
+   "Schicht",
+   "Form",
+   "Funktion"
+  ],
+  "filas": [
+   [
+    "1 · Bedingung",
+    "Wenn + Plusquamperfekt Konjunktiv",
+    "die nicht eingetretene Voraussetzung"
+   ],
+   [
+    "2 · Modalverb",
+    "Infinitiv + Modalverb + haben",
+    "die verpasste Möglichkeit oder Pflicht"
+   ],
+   [
+    "3 · Hauptsatz",
+    "hätte/wäre + Partizip",
+    "die ausbleibende Folge"
+   ]
+  ],
+  "notaPie": "Merke: Bei Modalverb im Perfekt steht IMMER der Infinitiv des Modalverbs am Ende, nie das Partizip — hätte wissen können, nie hätte gewusst können."
+ },
+ "ejemplos": [
+  {
+   "texto": "Wenn wir das Protokoll gelesen hätten, hätten wir den Fehler vermeiden können."
+  },
+  {
+   "texto": "Man hätte das früher wissen müssen.",
+   "audio": true
+  },
+  {
+   "texto": "Sie hätte sich informieren sollen, bevor sie unterschrieben hat.",
+   "audio": true
+  },
+  {
+   "texto": "Hätte er nachgefragt, hätte er die Frist verlängern können."
+  }
+ ],
+ "notas": [
+  "Der Doppelinfinitiv (wissen können, informieren sollen) steht immer ganz am Satzende, nach dem finiten hätte.",
+  "Im Nebensatz mit Doppelinfinitiv rückt hätte vor die beiden Infinitive: …, dass man das hätte wissen können.",
+  "Ohne wenn, mit Inversion, klingt das Muster formeller: Hätte man das gewusst, wäre die Entscheidung anders ausgefallen."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet dieselbe Bedeutung mit si + pluscuamperfecto de subjuntivo und condicional compuesto (si hubiéramos sabido, habríamos podido evitarlo), aber ohne einen dritten Baustein für das Modalverb — poder wird einfach konjugiert. Die deutsche Besonderheit ist also nicht die Bedingung, sondern der zusätzliche Doppelinfinitiv, der im Spanischen keine Entsprechung hat.",
+  "en": "Das Englische bildet dieselbe Bedeutung mit dem Third Conditional und einem Modalverb im Perfekt (if we had read the minutes, we could have avoided the mistake), die Logik ist also identisch. Der typische Fehler ist die Übertragung von could have avoided als könnten vermieden haben, was im Deutschen eine Vermutung ausdrückt; richtig ist hätten vermeiden können, mit dem Modalverb als Infinitiv am Ende.",
+  "it": "Das Italienische bildet das Muster mit se avessimo saputo, avremmo potuto evitarlo – mit dem Partizip potuto. Genau daraus entsteht der Kernfehler hätten gekonnt vermeiden statt hätten vermeiden können. Ausserdem steht im gesprochenen Italienisch oft das Imperfetto in beiden Satzteilen (se lo sapevo, lo evitavo), was zu einem Indikativ im Deutschen verleitet.",
+  "fr": "Das Französische bildet das Muster mit si nous avions su, nous aurions pu l'éviter – mit dem Partizip pu, woraus der Fehler hätten gekonnt vermeiden entsteht. Die Regel, im Bedingungssatz kein würde zu setzen, kennen Französischsprachige dagegen schon: Nach si steht auch im Französischen nie das conditionnel.",
+  "pt": "Das Portugiesische bildet das Muster mit se tivéssemos sabido, teríamos podido evitá-lo (Partizip podido) oder, häufiger, mit poderíamos ter evitado. Die zweite Form verleitet zu könnten vermieden haben, was im Deutschen eine Vermutung ausdrückt, nicht die verpasste Möglichkeit; richtig ist hätten vermeiden können."
+ },
+ "errores": [
+  "Das Partizip statt des Infinitivs beim Modalverb: hätte gewusst können statt hätte wissen können.",
+  "Ein Teil des Musters fehlt: nur der Konditionalsatz ohne das Modalverb, wodurch die verpasste Möglichkeit verloren geht.",
+  "Würde im wenn-Satz setzen: wenn wir das gelesen hätten würden statt wenn wir das gelesen hätten."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Das Imperfekt der verpassten Möglichkeit (*me lo podías haber dicho*) übertragen: *Du konntest es mir sagen* statt *Du hättest es mir sagen können*."
+  ],
+  "en": [
+   "Die englische Wortfolge von *could have known* übernehmen: *Ich hätte können wissen* statt *hätte wissen können*.",
+   "*could* mit *konnte* übertragen: *Ich konnte es wissen* statt *Ich hätte es wissen können*."
+  ],
+  "it": [
+   "Das Imperfekt der verpassten Möglichkeit (*potevi dirmelo*) übertragen: *Du konntest es mir sagen* statt *Du hättest es mir sagen können*."
+  ],
+  "fr": [
+   "Die französische Wortfolge von *j'aurais pu savoir* übernehmen: *Ich hätte können wissen* statt *hätte wissen können*."
+  ],
+  "pt": [
+   "Das Imperfekt der verpassten Möglichkeit (*podias ter dito*) übertragen: *Du konntest es mir sagen* statt *Du hättest es mir sagen können*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der Interessenkonflikt",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el conflicto de intereses",
+    "en": "conflict of interest",
+    "fr": "le conflit d'intérêts",
+    "it": "il conflitto di interessi",
+    "pt": "o conflito de interesses"
+   }
+  },
+  {
+   "item": "die Gegenrecherche",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la contrainvestigación",
+    "en": "counter-research",
+    "fr": "la contre-enquête",
+    "it": "la controinchiesta",
+    "pt": "a contra-investigação"
+   }
+  },
+  {
+   "item": "die Nachrichtenlage",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el estado de la información",
+    "en": "news situation",
+    "fr": "l'état de l'information",
+    "it": "la situazione informativa",
+    "pt": "o estado da informação"
+   }
+  },
+  {
+   "item": "die Quellenlage",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la disponibilidad de fuentes",
+    "en": "availability of sources",
+    "fr": "l'état des sources",
+    "it": "la disponibilità di fonti",
+    "pt": "a disponibilidade de fontes"
+   }
+  },
+  {
+   "item": "die Verzerrung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la distorsión",
+    "en": "distortion",
+    "fr": "la distorsion",
+    "it": "la distorsione",
+    "pt": "a distorção"
+   }
+  },
+  {
+   "item": "etwas einordnen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "contextualizar algo",
+    "en": "to put something in context",
+    "fr": "replacer qc dans son contexte",
+    "it": "contestualizzare qc",
+    "pt": "contextualizar algo"
+   }
+  },
+  {
+   "item": "der Informant",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el informante",
+    "en": "informant",
+    "fr": "l'informateur",
+    "it": "l'informatore",
+    "pt": "o informador"
+   }
+  },
+  {
+   "item": "die Gegendarstellung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la rectificación",
+    "en": "right of reply",
+    "fr": "le droit de réponse",
+    "it": "la rettifica",
+    "pt": "o direito de resposta"
+   }
+  },
+  {
+   "item": "die Meinungsmache",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la manipulación de opinión",
+    "en": "opinion-mongering",
+    "fr": "la manipulation de l'opinion",
+    "it": "la manipolazione dell'opinione",
+    "pt": "a manipulação da opinião"
+   }
+  },
+  {
+   "item": "die Reichweite",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el alcance",
+    "en": "reach",
+    "fr": "la portée",
+    "it": "la portata",
+    "pt": "o alcance"
+   }
+  },
+  {
+   "item": "die Sperrfrist",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el embargo informativo",
+    "en": "embargo",
+    "fr": "l'embargo",
+    "it": "l'embargo",
+    "pt": "o embargo"
+   }
+  },
+  {
+   "item": "etwas relativieren",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "relativizar algo",
+    "en": "to qualify something",
+    "fr": "relativiser qc",
+    "it": "relativizzare qc",
+    "pt": "relativizar algo"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das hätte man wissen müssen.",
+   "funcion": "irrealer Vorwurf, allgemein",
+   "traducciones": {
+    "es": "Eso se debería haber sabido.",
+    "en": "That should have been known.",
+    "fr": "On aurait dû le savoir.",
+    "it": "Si sarebbe dovuto sapere.",
+    "pt": "Isso era algo que se devia ter sabido."
+   }
+  },
+  {
+   "expresion": "Hätte ich das gewusst, hätte ich anders entschieden.",
+   "funcion": "vollständiges Muster, formell",
+   "traducciones": {
+    "es": "De haberlo sabido, habría decidido distinto.",
+    "en": "Had I known that, I would have decided differently.",
+    "fr": "Si je l’avais su, j’aurais décidé autrement.",
+    "it": "Se l’avessi saputo, avrei deciso diversamente.",
+    "pt": "Se eu tivesse sabido, teria decidido de outra forma."
+   }
+  },
+  {
+   "expresion": "Das wäre vermeidbar gewesen, wenn…",
+   "funcion": "Rückblick ohne direkten Vorwurf",
+   "traducciones": {
+    "es": "Eso se podría haber evitado si…",
+    "en": "That could have been avoided if…",
+    "fr": "Cela aurait pu être évité si…",
+    "it": "Si sarebbe potuto evitare se…",
+    "pt": "Isso poderia ter sido evitado se…"
+   }
+  },
+  {
+   "expresion": "Man hätte früher reagieren sollen.",
+   "funcion": "Kritik an einer Institution, unpersönlich",
+   "traducciones": {
+    "es": "Se debería haber reaccionado antes.",
+    "en": "Someone should have reacted sooner.",
+    "fr": "Il aurait fallu réagir plus tôt.",
+    "it": "Si sarebbe dovuto reagire prima.",
+    "pt": "Dever-se-ia ter reagido mais cedo."
+   }
+  },
+  {
+   "expresion": "Das wäre nicht passiert, wenn man hätte reagieren können.",
+   "funcion": "komplexere Variante mit Passiv",
+   "traducciones": {
+    "es": "Eso no habría pasado si se hubiera podido reaccionar.",
+    "en": "That wouldn't have happened if it had been possible to react.",
+    "fr": "Cela ne serait pas arrivé si on avait pu réagir.",
+    "it": "Non sarebbe successo se si fosse potuto reagire.",
+    "pt": "Isso não teria acontecido se tivesse sido possível reagir."
+   }
+  },
+  {
+   "expresion": "Im Nachhinein hätte man das anders handhaben müssen.",
+   "funcion": "Rückblick, distanziert",
+   "traducciones": {
+    "es": "En retrospectiva, se debería haber manejado distinto.",
+    "en": "In hindsight, it should have been handled differently.",
+    "fr": "Avec le recul, il aurait fallu gérer cela autrement.",
+    "it": "Col senno di poi, si sarebbe dovuto gestire diversamente.",
+    "pt": "Em retrospetiva, isso deveria ter sido tratado de outra forma."
+   }
+  },
+  {
+   "expresion": "Dass das passieren würde, war absehbar.",
+   "funcion": "Vorwurf ohne Konjunktiv, als Kontrast",
+   "traducciones": {
+    "es": "Que eso iba a pasar era previsible.",
+    "en": "That this would happen was foreseeable.",
+    "fr": "Que cela arrive était prévisible.",
+    "it": "Che sarebbe successo era prevedibile.",
+    "pt": "Que isso ia acontecer era previsível."
+   }
+  },
+  {
+   "expresion": "Ich hätte es an ihrer Stelle genauso gemacht.",
+   "funcion": "Vorwurf ausdrücklich zurücknehmen",
+   "traducciones": {
+    "es": "En su lugar yo habría hecho lo mismo.",
+    "en": "In their place I'd have done the same.",
+    "fr": "À leur place, j'aurais fait pareil.",
+    "it": "Al loro posto avrei fatto lo stesso.",
+    "pt": "No lugar deles teria feito o mesmo."
+   }
+  },
+  {
+   "expresion": "Hätte ich davon gewusst, wäre ich heute nicht hier.",
+   "funcion": "gemischter Konditionalsatz, Folge in der Gegenwart",
+   "traducciones": {
+    "es": "Si lo hubiera sabido, hoy no estaría acá.",
+    "en": "Had I known, I wouldn't be here today.",
+    "fr": "Si je l'avais su, je ne serais pas ici aujourd'hui.",
+    "it": "Se l'avessi saputo, oggi non sarei qui.",
+    "pt": "Se eu soubesse, hoje não estaria aqui."
+   }
+  },
+  {
+   "expresion": "Vorwürfe helfen jetzt nicht weiter.",
+   "funcion": "die Vorwurfsebene bewusst verlassen",
+   "traducciones": {
+    "es": "Los reproches ahora no ayudan.",
+    "en": "Recriminations don't help us now.",
+    "fr": "Les reproches n'aident pas maintenant.",
+    "it": "I rimproveri ora non aiutano.",
+    "pt": "As recriminações agora não ajudam."
+   }
+  },
+  {
+   "expresion": "Das hätte niemand voraussehen können.",
+   "funcion": "Vorwurf für unmöglich erklären",
+   "traducciones": {
+    "es": "Eso no lo podría haber previsto nadie.",
+    "en": "Nobody could have foreseen that.",
+    "fr": "Personne n'aurait pu le prévoir.",
+    "it": "Nessuno avrebbe potuto prevederlo.",
+    "pt": "Ninguém poderia ter previsto isso."
+   }
+  },
+  {
+   "expresion": "Was hätte man Ihrer Meinung nach tun sollen?",
+   "funcion": "den Vorwurf an das Gegenüber zurückgeben",
+   "traducciones": {
+    "es": "¿Y qué se debería haber hecho, según usted?",
+    "en": "What should have been done, in your view?",
+    "fr": "Qu'aurait-il fallu faire, selon vous ?",
+    "it": "Che cosa si sarebbe dovuto fare, secondo lei?",
+    "pt": "O que se devia ter feito, na sua opinião?"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie einen Kommentar über eine Falschmeldung, die sich verbreitet hat, bevor jemand nachgeprüft hat.",
+  "requisitos": [
+   "drei Modalverben im Perfekt (*hätte … müssen*)",
+   "ein Konditionalsatz ohne *wenn*",
+   "ein Satz mit doppeltem Infinitiv im Nebensatz",
+   "*die Quellenlage*, *die Gegenrecherche* und *etwas einordnen* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei Vorwürfe an die Redaktion: *Man hätte … sollen.*"
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Aus einem Vorwurf einen Konditionalsatz ohne *wenn* bauen."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden über *die Verzerrung* einer Nachrichtenlage."
+  }
+ ],
+ "autochequeo": [
+  "Steht der Infinitiv des Modalverbs, nicht das Partizip?",
+  "Ist die Reihenfolge Infinitiv + Modalverb (nicht umgekehrt)?",
+  "Habe ich würde im wenn-Satz vermieden?",
+  "Sind alle drei Schichten vorhanden: Bedingung, Modalverb, Folge?",
+  "Klingt der Satz wie ein echter Vorwurf oder wie eine blosse Feststellung?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das Muster Konjunktiv II + Konditionalsatz + Modalverb im Perfekt. (1) Prüfen Sie bei jedem Satz die Reihenfolge Infinitiv vor Modalverb. (2) Prüfen Sie, ob alle drei Schichten vorhanden sind. (3) Markieren Sie jedes würde im wenn-Satz. Schreiben Sie den Text nicht neu."
+}

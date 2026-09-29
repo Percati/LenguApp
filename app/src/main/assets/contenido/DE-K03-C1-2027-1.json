@@ -1,0 +1,402 @@
+{
+ "id": "DE-K03-C1-2027-1",
+ "skillId": "DE-K03",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T13",
+ "titulo": "Nominalisierung + Genitivkette + Präposition mit Genitiv",
+ "subtitulo": "Verwaltungsdeutsch in einer Konstruktion",
+ "ancla": "Erkundungen C2",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Der deutsche Verwaltungs- und Fachstil besteht fast vollständig aus diesem einen Muster: ein nominalisiertes Verb, gefolgt von einem Genitiv, oft eingeleitet durch eine Präposition mit Genitiv. Im Hinblick auf die Umsetzung der Richtlinie ist keine Ansammlung dreier Einzelthemen, sondern eine einzige Konstruktion. Wer sie nicht als Ganzes übt, produziert entweder unlesbare Genitivketten oder vermeidet den Nominalstil ganz.",
+ "cuadroReferencia": {
+  "titulo": "Aufbau des Musters",
+  "columnas": [
+   "Element",
+   "Beispiel",
+   "Funktion"
+  ],
+  "filas": [
+   [
+    "Präposition mit Genitiv",
+    "im Hinblick auf, aufgrund, angesichts, infolge, anlässlich",
+    "leitet den Fachsatz ein"
+   ],
+   [
+    "Nominalisierung",
+    "die Umsetzung, die Feststellung, die Durchführung",
+    "aus dem Verb gebildetes Ereignis"
+   ],
+   [
+    "Genitivkette",
+    "der Umsetzung der Richtlinie",
+    "wer/was betroffen ist"
+   ],
+   [
+    "Grenze",
+    "ab drei Gliedern umschreiben",
+    "sonst unlesbar"
+   ]
+  ],
+  "notaPie": "Faustregel: zwei Genitivglieder sind Stil, drei sind noch akzeptabel, vier sind ein Fehler — dann lieber einen Nebensatz."
+ },
+ "ejemplos": [
+  {
+   "texto": "Im Hinblick auf die Umsetzung der Richtlinie sind weitere Schritte nötig.",
+   "audio": true
+  },
+  {
+   "texto": "Aufgrund der Verzögerung des Projekts wurde die Frist verlängert.",
+   "audio": true
+  },
+  {
+   "texto": "Angesichts der Komplexität des Verfahrens empfiehlt sich eine externe Prüfung."
+  },
+  {
+   "texto": "Infolge der Änderung der Vorschriften muss der Antrag neu gestellt werden."
+  }
+ ],
+ "notas": [
+  "Aufgrund, angesichts, infolge und anlässlich verlangen alle den Genitiv, nicht den Dativ — ein häufiger Fehler auch bei fortgeschrittenen Lernenden.",
+  "Bei mehr als zwei Genitivgliedern wird die Kette fast immer klarer, wenn man sie in einen von-Satz oder einen Relativsatz auflöst.",
+  "Der Nominalstil ist Register, kein Ersatz für jeden Verbalsatz: in der gesprochenen Sprache wirkt er steif."
+ ],
+ "contraste": {
+  "es": "Das Spanische bevorzugt Infinitivkonstruktionen an genau dieser Stelle: con vistas a la aplicación de la directiva verwendet ebenfalls ein Nomen, aber ohne die deutsche Genitivkette dahinter — meist folgt de + Nomen einmal, nicht mehrfach verschachtelt. Spanischsprachige unternominalisieren deshalb im Bericht und bauen die Kette gar nicht erst auf.",
+  "en": "Das Englische bevorzugt an dieser Stelle verbale Konstruktionen (with a view to implementing the directive). Englischsprachige lösen die deutsche Kette deshalb gern in einen Infinitivsatz auf (um die Richtlinie umzusetzen), der im Bericht zu wenig formell wirkt, oder bilden die Kette mit von statt mit Genitiv.",
+  "it": "Das italienische burocratese baut ganz ähnliche Ketten (in vista dell'attuazione della direttiva), weshalb Italienischsprachige das Muster schnell produzieren. Die Risiken sind eher Übermass und Kasus: zu lange Ketten und di als von statt als Genitiv (die Umsetzung von der Richtlinie).",
+  "fr": "Das Französische baut dieselbe Kette (en vue de la mise en œuvre de la directive), Französischsprachige produzieren das Muster also fast wörtlich. Die Fehlerquelle ist der Kasus, den de verbirgt: Im Deutschen müssen Artikel und Nomen die Genitivendung tragen, und genau das -s fehlt oft (die Umsetzung des Projekt).",
+  "pt": "Portugiesisch lässt an dieser Stelle beide Stile zu (tendo em vista a implementação da diretiva oder com vista a implementar a diretiva) und wählt im Zweifel den verbalen. Portugiesischsprachige bauen die deutsche Genitivkette deshalb selten von sich aus auf und übertragen da/do als von statt als Genitiv."
+ },
+ "errores": [
+  "Dativ statt Genitiv nach aufgrund, angesichts, infolge: aufgrund dem Projekt.",
+  "Vier oder mehr Genitivglieder in einer Kette, die dadurch unlesbar wird.",
+  "Die Präposition weglassen und nur die Nominalisierung stehen lassen, wodurch der Bezug verloren geht."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Con-Konstruktionen wörtlich mit mit übersetzen, statt die passende Präposition mit Genitiv zu wählen."
+  ],
+  "en": [
+   "Die Genitivkette komplett vermeiden und stattdessen einen englisch anmutenden Verbalsatz bauen, der im deutschen Fachregister fehl am Platz wirkt."
+  ],
+  "it": [
+   "Die Genitivkette mit *von* nachbauen, nach *a causa del ritardo del progetto*: *wegen der Verzögerung von dem Projekt*."
+  ],
+  "fr": [
+   "Die Genitivkette mit *von* nachbauen, nach *en raison du retard du projet*: *aufgrund der Verzögerung von dem Projekt*."
+  ],
+  "pt": [
+   "Die Genitivkette mit *von* nachbauen, nach *devido ao atraso do projeto*: *aufgrund der Verzögerung von dem Projekt*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der Behördendschungel",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la maraña burocrática",
+    "en": "red tape jungle",
+    "fr": "le maquis administratif",
+    "it": "la giungla burocratica",
+    "pt": "o labirinto burocrático"
+   }
+  },
+  {
+   "item": "der Behördengang",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el trámite administrativo",
+    "en": "official errand",
+    "fr": "la démarche administrative",
+    "it": "la pratica burocratica",
+    "pt": "a diligência burocrática"
+   }
+  },
+  {
+   "item": "die Bearbeitungszeit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el plazo de tramitación",
+    "en": "processing time",
+    "fr": "le délai de traitement",
+    "it": "il tempo di lavorazione",
+    "pt": "o prazo de tratamento"
+   }
+  },
+  {
+   "item": "die Behörde",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la administración pública",
+    "en": "public authority",
+    "fr": "l'administration",
+    "it": "l'ente pubblico",
+    "pt": "a repartição pública"
+   }
+  },
+  {
+   "item": "die Zuständigkeit klären",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "aclarar quién es competente",
+    "en": "to clarify who is responsible",
+    "fr": "déterminer le service compétent",
+    "it": "chiarire la competenza",
+    "pt": "esclarecer a competência"
+   }
+  },
+  {
+   "item": "einer Sache nachgehen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "hacer el seguimiento de algo",
+    "en": "to follow something up",
+    "fr": "donner suite à qc",
+    "it": "dare seguito a qc",
+    "pt": "dar seguimento a algo"
+   }
+  },
+  {
+   "item": "von Pontius zu Pilatus geschickt werden",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "que te manden de un lado a otro",
+    "en": "to be sent from pillar to post",
+    "fr": "être ballotté d'un service à l'autre",
+    "it": "essere rimbalzato da un ufficio all'altro",
+    "pt": "ser mandado de um lado para o outro"
+   }
+  },
+  {
+   "item": "anspruchsberechtigt sein",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tener derecho a una prestación",
+    "en": "to be eligible",
+    "fr": "avoir droit à une prestation",
+    "it": "avere diritto alla prestazione",
+    "pt": "ter direito à prestação"
+   }
+  },
+  {
+   "item": "der Bescheid",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la resolución administrativa",
+    "en": "official decision",
+    "fr": "la notification",
+    "it": "il provvedimento",
+    "pt": "a notificação"
+   }
+  },
+  {
+   "item": "der Nachweis",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el comprobante",
+    "en": "proof, documentary evidence",
+    "fr": "le justificatif",
+    "it": "la prova documentale",
+    "pt": "o comprovativo"
+   }
+  },
+  {
+   "item": "der Wohnsitznachweis",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el certificado de domicilio",
+    "en": "proof of address",
+    "fr": "le justificatif de domicile",
+    "it": "la prova di residenza",
+    "pt": "o comprovativo de morada"
+   }
+  },
+  {
+   "item": "die Bescheinigung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el certificado",
+    "en": "certificate",
+    "fr": "l'attestation",
+    "it": "il certificato",
+    "pt": "a certidão"
+   }
+  },
+  {
+   "item": "die Verzögerung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el retraso",
+    "en": "delay",
+    "fr": "le retard",
+    "it": "il ritardo",
+    "pt": "o atraso"
+   }
+  },
+  {
+   "item": "die Vorgangsnummer",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el número de expediente",
+    "en": "reference number",
+    "fr": "le numéro de dossier",
+    "it": "il numero di pratica",
+    "pt": "o número de processo"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "im Hinblick auf…",
+   "funcion": "leitet den Bezug ein, formell",
+   "traducciones": {
+    "es": "con vistas a…",
+    "en": "with a view to…",
+    "fr": "en vue de…",
+    "it": "in vista di…",
+    "pt": "com vista a…"
+   }
+  },
+  {
+   "expresion": "aufgrund der/des…",
+   "funcion": "Ursache, formell",
+   "traducciones": {
+    "es": "debido a…",
+    "en": "due to…",
+    "fr": "en raison de…",
+    "it": "a causa di…",
+    "pt": "devido a…"
+   }
+  },
+  {
+   "expresion": "angesichts der/des…",
+   "funcion": "Umstand, der zu berücksichtigen ist",
+   "traducciones": {
+    "es": "dada la…",
+    "en": "given the…",
+    "fr": "compte tenu de…",
+    "it": "alla luce di…",
+    "pt": "tendo em conta…"
+   }
+  },
+  {
+   "expresion": "im Rahmen der/des…",
+   "funcion": "Kontext eingrenzen",
+   "traducciones": {
+    "es": "en el marco de…",
+    "en": "within the framework of…",
+    "fr": "dans le cadre de…",
+    "it": "nell’ambito di…",
+    "pt": "no âmbito de…"
+   }
+  },
+  {
+   "expresion": "anlässlich der/des…",
+   "funcion": "Anlass nennen, formell",
+   "traducciones": {
+    "es": "con motivo de…",
+    "en": "on the occasion of…",
+    "fr": "à l’occasion de…",
+    "it": "in occasione di…",
+    "pt": "por ocasião de…"
+   }
+  },
+  {
+   "expresion": "in Anbetracht der/des…",
+   "funcion": "synonym zu angesichts",
+   "traducciones": {
+    "es": "en vista de…",
+    "en": "in consideration of…",
+    "fr": "compte tenu de…",
+    "it": "in considerazione di…",
+    "pt": "tendo em consideração…"
+   }
+  },
+  {
+   "expresion": "unter Berücksichtigung der/des…",
+   "funcion": "Bedingung im Nominalstil",
+   "traducciones": {
+    "es": "teniendo en cuenta…",
+    "en": "taking into account…",
+    "fr": "compte tenu de…",
+    "it": "tenuto conto di…",
+    "pt": "tendo em conta…"
+   }
+  },
+  {
+   "expresion": "zum Zwecke der/des…",
+   "funcion": "Zweck im Nominalstil",
+   "traducciones": {
+    "es": "a efectos de…",
+    "en": "for the purpose of…",
+    "fr": "aux fins de…",
+    "it": "ai fini di…",
+    "pt": "para efeitos de…"
+   }
+  },
+  {
+   "expresion": "Auf Deutsch heisst das schlicht: …",
+   "funcion": "die Kette für Laien auflösen",
+   "traducciones": {
+    "es": "Dicho en cristiano: …",
+    "en": "In plain terms, that simply means: …",
+    "fr": "En clair, cela veut dire : …",
+    "it": "In parole povere significa: …",
+    "pt": "Em termos simples, isso quer dizer: …"
+   }
+  },
+  {
+   "expresion": "Drei Genitive hintereinander sind einer zu viel.",
+   "funcion": "die Lesbarkeitsgrenze der Kette benennen",
+   "traducciones": {
+    "es": "Tres genitivos seguidos son uno de más.",
+    "en": "Three genitives in a row is one too many.",
+    "fr": "Trois génitifs de suite, c'est un de trop.",
+    "it": "Tre genitivi di fila sono uno di troppo.",
+    "pt": "Três genitivos seguidos é um a mais."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie ein formelles Schreiben an eine Behörde, die Ihr Anliegen seit Wochen nicht bearbeitet hat.",
+  "requisitos": [
+   "drei Präpositionen mit Genitiv, jeweils mit Nominalisierung",
+   "eine Genitivkette mit drei Gliedern",
+   "kein Satz im Verbalstil, wo der Nominalstil erwartet wird",
+   "*die Bearbeitungszeit*, *der Behördengang* und *die Zuständigkeit klären* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei einfache Sätze zu Ihrem Antrag in *aufgrund*-/*angesichts*-Konstruktionen umwandeln."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Eine Genitivkette zum *Behördendschungel* bauen und laut lesen: noch verständlich?"
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden erzählen, wie Sie *von Pontius zu Pilatus geschickt* wurden. Mündlich: verbal."
+  }
+ ],
+ "autochequeo": [
+  "Steht nach aufgrund/angesichts/infolge der Genitiv, nicht der Dativ?",
+  "Hat die Genitivkette mehr als drei Glieder?",
+  "Ist die Präposition zur Bedeutung passend gewählt?",
+  "Würde ein Relativsatz an dieser Stelle klarer sein?",
+  "Passt der Nominalstil zum Register des Textes?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Präposition mit Genitiv, Nominalisierung und Genitivkette. (1) Prüfen Sie den Kasus nach jeder Präposition. (2) Markieren Sie Genitivketten ab vier Gliedern. (3) Sagen Sie, wo eine Auflösung in einen Relativsatz die Lesbarkeit verbessern würde. Schreiben Sie den Text nicht neu."
+}

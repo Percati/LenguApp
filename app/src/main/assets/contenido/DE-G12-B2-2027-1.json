@@ -1,0 +1,401 @@
+{
+ "id": "DE-G12-B2-2027-1",
+ "skillId": "DE-G12",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T06",
+ "titulo": "Nominalisierung",
+ "subtitulo": "Nominalstil für einen Umweltbericht",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Der Nominalstil ist das Tor zum deutschen Fach-, Verwaltungs- und Ingenieurdeutsch: Berichte, Protokolle und Normen sind fast vollständig nominal geschrieben. Die B2-Kompetenz ist nicht, ihn zu benutzen, sondern **zwischen beiden Stilen zu wechseln**. Wer alles nominalisiert, schreibt unlesbar; wer nichts nominalisiert, klingt im Bericht wie in einer E-Mail.",
+ "cuadroReferencia": {
+  "titulo": "Konnektor ↔ Präposition",
+  "columnas": [
+   "Nebensatz",
+   "Nominal",
+   "Kasus"
+  ],
+  "filas": [
+   [
+    "weil",
+    "wegen",
+    "Gen. (ugs. Dat.)"
+   ],
+   [
+    "obwohl",
+    "trotz",
+    "Gen."
+   ],
+   [
+    "nachdem",
+    "nach",
+    "Dat."
+   ],
+   [
+    "bevor",
+    "vor",
+    "Dat."
+   ],
+   [
+    "wenn / falls",
+    "bei",
+    "Dat."
+   ],
+   [
+    "*während* (temporal)",
+    "während",
+    "Gen."
+   ],
+   [
+    "damit / um… zu",
+    "*zu* / *zwecks*",
+    "Dat. / Gen."
+   ],
+   [
+    "ohne dass",
+    "ohne",
+    "Akk."
+   ],
+   [
+    "seitdem",
+    "seit",
+    "Dat."
+   ]
+  ],
+  "notaPie": "Suffixe: *-ung* (Prozess, **immer feminin**), *-heit / -keit* (Eigenschaft, **immer feminin**), *-nis*, substantivierter Infinitiv (*das Messen*, **neutrum**)."
+ },
+ "ejemplos": [
+  {
+   "texto": "Nachdem die Anlage geprüft worden war, … → Nach **der Prüfung** der Anlage, …"
+  },
+  {
+   "texto": "Weil die Software fehleranfällig ist, … → Wegen **der Fehleranfälligkeit** der Software, …"
+  },
+  {
+   "texto": "Wenn man die Daten auswertet, … → Bei **der Auswertung** der Daten, …"
+  },
+  {
+   "texto": "Rückwärts: *Die Inbetriebnahme erfolgt nach Abschluss der Prüfung.* → *Die Anlage wird in Betrieb genommen, sobald die Prüfung abgeschlossen ist.*"
+  },
+  {
+   "texto": "*Nach der Prüfung der Anlage wurde die Freigabe erteilt.*",
+   "audio": true
+  },
+  {
+   "texto": "*Wegen der Fehleranfälligkeit der Software haben wir den Termin verschoben.*",
+   "audio": true
+  },
+  {
+   "texto": "*Bei der Auswertung der Daten ist uns ein Muster aufgefallen.*",
+   "audio": true
+  },
+  {
+   "texto": "*Der Umgang mit personenbezogenen Daten ist streng geregelt.*",
+   "audio": true
+  },
+  {
+   "texto": "*Das setzt voraus, dass die Schnittstelle dokumentiert ist.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Genitivketten sind das Erkennungszeichen von schlechtem Nominalstil: *die Prüfung der Auswertung der Ergebnisse der Messung*. Ab drei Gliedern umschreiben.",
+  "*-ung* und *-heit/-keit* sind ausnahmslos feminin. Eine der wenigen verlässlichen Genusregeln des Deutschen.",
+  "Der Nominalstil erhöht die Formalität und senkt die Lesbarkeit. Bewusst einsetzen, nicht als Standard."
+ ],
+ "contraste": {
+  "es": "Spanisch nominalisiert deutlich weniger und bevorzugt Infinitivkonstruktionen (*tras revisar la instalación*). Wer spanisch denkt, unternominalisiert im Bericht — und wer den Nominalstil neu entdeckt, übertreibt sofort.",
+  "en": "Das Englische nominalisiert deutlich weniger und bevorzugt Gerundien: *after checking the system* statt *nach der Prüfung des Systems*. Der englische Fachstil gilt sogar als umso besser, je verbaler er ist — genau umgekehrt zum deutschen Verwaltungsdeutsch. Englischsprachige unternominalisieren deshalb im Bericht und empfinden den deutschen Nominalstil als schwerfällig, nicht als korrekt.",
+  "it": "Italienischsprachige kennen den Nominalstil aus der Behördensprache (*burocratese*), meist aber nur passiv und eher mit negativem Beigeschmack. Die B2-Aufgabe ist deshalb weniger das Bilden als das bewusste Wechseln: im Bericht nominal, im Gespräch verbal, statt das Register der Behörde zu meiden oder zu übertreiben.",
+  "fr": "Das formelle Französisch ist stark nominal (*après vérification de l'installation*), Französischsprachige nominalisieren also ohne Mühe. Die Risiken sind die entgegengesetzten: den Nominalstil auch dort einzusetzen, wo das Deutsche verbal bleibt, und *de* als *von* statt als Genitiv zu übertragen.",
+  "pt": "Das Portugiesische bleibt noch leichter verbal als das Spanische, weil der *infinitivo pessoal* sogar ein eigenes Subjekt erlaubt (*após verificarmos a instalação*). Portugiesischsprachige unternominalisieren deshalb im Bericht besonders stark und müssen die Umformung ins Nominale gezielt üben."
+ },
+ "errores": [
+  "Falscher Kasus: *wegen* verlangt schriftlich Genitiv.",
+  "Genusfehler bei *-ung*.",
+  "Nominalisieren, wo der Verbalstil klarer wäre — der häufigste Stilfehler in technischen Texten."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Nominalisierungen mit *von* statt Genitiv bilden, nach *la revisión del sistema*: *die Prüfung von dem System*."
+  ],
+  "en": [
+   "Zu wenig nominalisieren und im Bericht verbal bleiben, wie im englischen Fachstil.",
+   "Gerundien nachbauen: *nach dem Prüfen des Systems* statt *nach der Prüfung*."
+  ],
+  "it": [
+   "Nominalisierungen mit *von* statt Genitiv bilden, nach *la verifica del sistema*: *die Prüfung von dem System*."
+  ],
+  "fr": [
+   "Nominalisierungen mit *von* statt Genitiv bilden, nach *la vérification du système*: *die Prüfung von dem System*."
+  ],
+  "pt": [
+   "Nominalisierungen mit *von* statt Genitiv bilden, nach *a verificação do sistema*: *die Prüfung von dem System*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der CO2-Fussabdruck",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la huella de carbono",
+    "en": "the carbon footprint",
+    "fr": "l'empreinte carbone",
+    "it": "l'impronta di carbonio",
+    "pt": "a pegada de carbono"
+   }
+  },
+  {
+   "item": "der Klimawandel",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el cambio climático",
+    "en": "climate change",
+    "fr": "le changement climatique",
+    "it": "il cambiamento climatico",
+    "pt": "as mudanças climáticas"
+   }
+  },
+  {
+   "item": "die Treibhausgase",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gases de efecto invernadero",
+    "en": "greenhouse gases",
+    "fr": "les gaz à effet de serre",
+    "it": "i gas serra",
+    "pt": "os gases de efeito estufa"
+   }
+  },
+  {
+   "item": "die Biodiversität",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la biodiversidad",
+    "en": "biodiversity",
+    "fr": "la biodiversité",
+    "it": "la biodiversità",
+    "pt": "a biodiversidade"
+   }
+  },
+  {
+   "item": "die Dürre",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la sequía",
+    "en": "the drought",
+    "fr": "la sécheresse",
+    "it": "la siccità",
+    "pt": "a seca"
+   }
+  },
+  {
+   "item": "erneuerbare Energien",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "energías renovables",
+    "en": "renewable energy",
+    "fr": "énergies renouvelables",
+    "it": "energie rinnovabili",
+    "pt": "energias renováveis"
+   }
+  },
+  {
+   "item": "die Kreislaufwirtschaft",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la economía circular",
+    "en": "the circular economy",
+    "fr": "l'économie circulaire",
+    "it": "l'economia circolare",
+    "pt": "a economia circular"
+   }
+  },
+  {
+   "item": "die Umweltbelastung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el impacto ambiental",
+    "en": "environmental burden",
+    "fr": "l'impact environnemental",
+    "it": "l'impatto ambientale",
+    "pt": "o impacto ambiental"
+   }
+  },
+  {
+   "item": "nachhaltig",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "sostenible",
+    "en": "sustainable",
+    "fr": "durable",
+    "it": "sostenibile",
+    "pt": "sustentável"
+   }
+  },
+  {
+   "item": "die Energiewende",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la transición energética",
+    "en": "the energy transition",
+    "fr": "la transition énergétique",
+    "it": "la transizione energetica",
+    "pt": "a transição energética"
+   }
+  },
+  {
+   "item": "das Fördergeld",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el subsidio, la subvención",
+    "en": "the subsidy",
+    "fr": "la subvention",
+    "it": "il sussidio",
+    "pt": "o subsídio"
+   }
+  },
+  {
+   "item": "die Solaranlage",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la instalación solar",
+    "en": "the solar installation",
+    "fr": "l'installation solaire",
+    "it": "l'impianto solare",
+    "pt": "a instalação solar"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Nach Abschluss der…",
+   "funcion": "zeitliche Vorordnung, nominal",
+   "traducciones": {
+    "es": "tras la conclusión de…",
+    "en": "After completion of…",
+    "fr": "Après l’achèvement de…",
+    "it": "Al termine di…",
+    "pt": "Após a conclusão de…"
+   }
+  },
+  {
+   "expresion": "Wegen der…",
+   "funcion": "Begründung, nominal",
+   "traducciones": {
+    "es": "debido a…",
+    "en": "Because of the…",
+    "fr": "En raison de…",
+    "it": "A causa di…",
+    "pt": "Devido a…"
+   }
+  },
+  {
+   "expresion": "Bei der Auswertung…",
+   "funcion": "Bedingung, nominal",
+   "traducciones": {
+    "es": "al evaluar…",
+    "en": "When evaluating…",
+    "fr": "Lors de l’évaluation…",
+    "it": "Nella valutazione…",
+    "pt": "Na avaliação…"
+   }
+  },
+  {
+   "expresion": "Zur Sicherstellung der…",
+   "funcion": "Zweck, nominal",
+   "traducciones": {
+    "es": "para garantizar…",
+    "en": "In order to ensure…",
+    "fr": "Afin de garantir…",
+    "it": "Per garantire…",
+    "pt": "Para garantir…"
+   }
+  },
+  {
+   "expresion": "Trotz der…",
+   "funcion": "Einräumung, nominal",
+   "traducciones": {
+    "es": "a pesar de…",
+    "en": "Despite the…",
+    "fr": "Malgré…",
+    "it": "Nonostante…",
+    "pt": "Apesar de…"
+   }
+  },
+  {
+   "expresion": "Im Hinblick auf…",
+   "funcion": "Bezug herstellen",
+   "traducciones": {
+    "es": "con vistas a…",
+    "en": "With regard to…",
+    "fr": "En ce qui concerne…",
+    "it": "Per quanto riguarda…",
+    "pt": "No que diz respeito a…"
+   }
+  },
+  {
+   "expresion": "Unter Berücksichtigung der…",
+   "funcion": "Abwägung, sehr formell",
+   "traducciones": {
+    "es": "teniendo en cuenta…",
+    "en": "Taking into account the…",
+    "fr": "En tenant compte de…",
+    "it": "Tenendo conto di…",
+    "pt": "Tendo em conta…"
+   }
+  },
+  {
+   "expresion": "Das setzt voraus, dass…",
+   "funcion": "Bedingung, verbal",
+   "traducciones": {
+    "es": "eso presupone que…",
+    "en": "That presupposes that…",
+    "fr": "Cela suppose que…",
+    "it": "Ciò presuppone che…",
+    "pt": "Isso pressupõe que…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie denselben Inhalt zweimal: als Absatz eines Umweltberichts und als Nachricht an einen Freund.",
+  "requisitos": [
+   "im Bericht fünf Nominalisierungen",
+   "in der Nachricht keine",
+   "dieselben Fakten",
+   "*die Kreislaufwirtschaft*, *die Umweltbelastung* und *erneuerbare Energien* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei Sätze zum *Klimawandel* nominalisieren."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "*Nach Abschluss der…* und *Unter Berücksichtigung der…* je einmal."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Was bedeutet *nachhaltig* für Sie? Mündlich verbal."
+  }
+ ],
+ "autochequeo": [
+  "Ist jede *-ung*-Form feminin dekliniert?",
+  "Steht nach *wegen* und *trotz* der Genitiv?",
+  "Gibt es eine Genitivkette mit drei oder mehr Gliedern?",
+  "Ist meine E-Mail-Version wirklich vollständig verbal?",
+  "Alle vier Kernwörter?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Nominalstil. (1) Markieren Sie jede Nominalisierung und prüfen Sie Genus und Kasus nach der Präposition. (2) Markieren Sie Genitivketten ab drei Gliedern. (3) Sagen Sie, wo der Nominalstil die Lesbarkeit verschlechtert. (4) Prüfen Sie, ob meine E-Mail-Version wirklich verbal ist. Schreiben Sie den Text nicht neu."
+}

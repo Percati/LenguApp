@@ -1,0 +1,399 @@
+{
+ "id": "DE-G07-B2-2027-1",
+ "skillId": "DE-G07",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T08",
+ "titulo": "Adjektivdeklination",
+ "subtitulo": "Adjektivendungen beim Erzählen über die Familie",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Die Adjektivendung ist der Fehler, der bis C1 überlebt, weil er das Verständnis nie stört: Niemand versteht *ein gutes Wein* schlechter als *ein guter Wein*. Genau deshalb korrigiert ihn auch niemand, und genau deshalb bleibt er. Das System hat **eine** Leitfrage: Zeigt der Artikel schon Kasus und Genus an?",
+ "cuadroReferencia": {
+  "titulo": "Die drei Deklinationstypen",
+  "columnas": [
+   "Artikeltyp",
+   "Endung",
+   "Nom. Sg. m / f / n",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "**Schwach** (*der, die, das, dieser, jener, jeder, alle, beide*)",
+    "-e / -en",
+    "der frisch**e**, die frisch**e**, das frisch**e**",
+    "mit dem gut**en** Öl"
+   ],
+   [
+    "**Gemischt** (*ein, kein, mein, dein…*)",
+    "Mischform",
+    "ein frisch**er**, eine frisch**e**, ein frisch**es**",
+    "ein frisch**er** Fisch"
+   ],
+   [
+    "**Stark** (kein Artikel)",
+    "Artikelendung",
+    "frisch**er**, frisch**e**, frisch**es**",
+    "mit gut**em** Öl"
+   ]
+  ],
+  "notaPie": "Faustregeln: nach *einige, mehrere, viele, wenige* (Pl.) → **stark**. Nach *alle, beide, sämtliche* → **schwach**. Im **Dativ Plural** endet fast alles auf *-en*. Zwei aufeinanderfolgende Adjektive bekommen **dieselbe** Endung."
+ },
+ "ejemplos": [
+  {
+   "texto": "Der **frische** Fisch — ein **frischer** Fisch — **frischer** Fisch"
+  },
+  {
+   "texto": "Ich mag **deftiges** Essen. (Akk. n., artikellos)"
+  },
+  {
+   "texto": "Wir haben **regionale und saisonale** Zutaten verwendet. (Akk. Pl.)"
+  },
+  {
+   "texto": "ein Glas **kaltes** Wasser (nicht kaltem)"
+  },
+  {
+   "texto": "*Der frische Fisch kommt direkt vom Markt.*",
+   "audio": true
+  },
+  {
+   "texto": "*Mit gutem Öl schmeckt es deutlich besser.*",
+   "audio": true
+  },
+  {
+   "texto": "*Ich mag deftiges Essen, besonders im Winter.*",
+   "audio": true
+  },
+  {
+   "texto": "*Wir haben nur regionale und saisonale Zutaten verwendet.*",
+   "audio": true
+  },
+  {
+   "texto": "*Ein Glas kaltes Wasser dazu, und fertig.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Bei Unsicherheit im Dativ Plural: *-en* ist fast immer richtig.",
+  "Wenn das Genus falsch ist, ist die Endung automatisch falsch — der Fehler liegt dann nicht bei der Deklination, sondern beim Nomen.",
+  "*alle* verlangt schwach, obwohl es wie ein Mengenwort aussieht. Das ist die häufigste Ausnahme."
+ ],
+ "contraste": {
+  "es": "Spanisch dekliniert Adjektive nur nach Genus und Numerus, nie nach Kasus und nie in Abhängigkeit vom Artikel. Es gibt also keine Struktur zum Übertragen: reines Neuland. Daher die lange Fossilierung.",
+  "en": "Das Englische dekliniert Adjektive **überhaupt nicht**: *the fresh fish*, *a fresh fish*, *fresh fish*. Es gibt also weder Genus noch Kasus noch Artikelabhängigkeit zu übertragen. Für Englischsprachige ist die Adjektivdeklination deshalb schwerer als für Spanischsprachige, die immerhin Genus und Numerus kennen — hier ist wirklich alles neu.",
+  "it": "Das Italienische markiert am Adjektiv Genus und Numerus, und zwar gut hörbar (*-o, -a, -i, -e*). Italienischsprachige hören Endungen also, ordnen sie aber reflexartig dem Genus zu – dass die deutsche Endung vom Artikel und vom Kasus abhängt, ist dagegen völlig neu.",
+  "fr": "Das Französische markiert am Adjektiv Genus und Numerus, aber vieles davon nur in der Schrift (*bleu/bleue/bleus* klingen gleich). Französischsprachige haben deshalb ein schwaches Ohr für Endungen, und genau über das Hören werden die deutschen Adjektivendungen meist gefestigt – hier lohnt sich lautes Üben besonders.",
+  "pt": "Das Portugiesische markiert am Adjektiv nur Genus und Numerus, im europäischen Portugiesisch sind unbetonte Endungen zudem oft kaum hörbar. Die deutschen Endungen, die von Artikel und Kasus abhängen, sind also Neuland und müssen über viel Hören und lautes Sprechen gefestigt werden."
+ },
+ "errores": [
+  "Artikellose Mengenangaben falsch: *eine Tasse heissem Tee* statt *heisser Tee*.",
+  "Nach *alle* stark statt schwach dekliniert.",
+  "Genusfehler, die als Deklinationsfehler erscheinen.",
+  "Die Endung nur nach dem Genus wählen und den Kasus vergessen."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Das Genus aus dem Spanischen übernehmen und falsch deklinieren: *der blaue Meer* nach *el mar*."
+  ],
+  "en": [
+   "Das Adjektiv unverändert lassen, wie im Englischen: *mit gut Öl*.",
+   "Nach dem unbestimmten Artikel die Endung weglassen: *ein gut Kollege*."
+  ],
+  "it": [
+   "Das Genus aus dem Italienischen übernehmen und dann konsequent falsch deklinieren: *der schöne Meer* nach *il mare*."
+  ],
+  "fr": [
+   "Das Genus aus dem Französischen übernehmen und falsch deklinieren: *der warme Sonne* nach *le soleil*."
+  ],
+  "pt": [
+   "Das Genus aus dem Portugiesischen übernehmen und falsch deklinieren: *der frische Milch* nach *o leite*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "sich verloben",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "comprometerse",
+    "en": "to get engaged",
+    "fr": "se fiancer",
+    "it": "fidanzarsi",
+    "pt": "ficar noivo/a"
+   }
+  },
+  {
+   "item": "die Beziehung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la relación",
+    "en": "the relationship",
+    "fr": "la relation",
+    "it": "la relazione",
+    "pt": "o relacionamento"
+   }
+  },
+  {
+   "item": "sich trennen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "separarse",
+    "en": "to break up",
+    "fr": "se séparer",
+    "it": "separarsi",
+    "pt": "terminar (namoro)"
+   }
+  },
+  {
+   "item": "die Erziehung",
+   "prioridad": "nucleo",
+   "nota": "Kinder erziehen, nicht schulische Bildung",
+   "traducciones": {
+    "es": "la crianza",
+    "en": "upbringing",
+    "fr": "l'éducation (des enfants)",
+    "it": "l'educazione",
+    "pt": "a criação"
+   }
+  },
+  {
+   "item": "der Streit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la discusión",
+    "en": "the argument",
+    "fr": "la dispute",
+    "it": "il litigio",
+    "pt": "a briga"
+   }
+  },
+  {
+   "item": "sich vertragen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "reconciliarse",
+    "en": "to make up",
+    "fr": "se réconcilier",
+    "it": "fare pace",
+    "pt": "fazer as pazes"
+   }
+  },
+  {
+   "item": "die Verwandtschaft",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el parentesco / los parientes",
+    "en": "relatives",
+    "fr": "la parenté",
+    "it": "la parentela",
+    "pt": "os parentes"
+   }
+  },
+  {
+   "item": "das Vertrauen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la confianza",
+    "en": "trust",
+    "fr": "la confiance",
+    "it": "la fiducia",
+    "pt": "a confiança"
+   }
+  },
+  {
+   "item": "eifersüchtig",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "celoso/a",
+    "en": "jealous",
+    "fr": "jaloux/jalouse",
+    "it": "geloso/a",
+    "pt": "ciumento/a"
+   }
+  },
+  {
+   "item": "der Zusammenhalt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cohesión, la unión",
+    "en": "cohesion, togetherness",
+    "fr": "la cohésion",
+    "it": "la coesione",
+    "pt": "a coesão"
+   }
+  },
+  {
+   "item": "die Fürsorge",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el cuidado",
+    "en": "care",
+    "fr": "les soins",
+    "it": "la cura",
+    "pt": "o cuidado"
+   }
+  },
+  {
+   "item": "einander unterstützen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "apoyarse mutuamente",
+    "en": "to support each other",
+    "fr": "se soutenir mutuellement",
+    "it": "sostenersi a vicenda",
+    "pt": "apoiar-se mutuamente"
+   }
+  },
+  {
+   "item": "den Kontakt abbrechen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "cortar el contacto",
+    "en": "to cut off contact",
+    "fr": "couper les ponts",
+    "it": "interrompere i contatti",
+    "pt": "cortar o contato"
+   }
+  },
+  {
+   "item": "die Patchworkfamilie",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la familia ensamblada",
+    "en": "blended family",
+    "fr": "la famille recomposée",
+    "it": "la famiglia allargata",
+    "pt": "a família mosaico"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Man nimmt…",
+   "funcion": "unpersönliche Anleitung",
+   "traducciones": {
+    "es": "se toma…",
+    "en": "You take…",
+    "fr": "On prend…",
+    "it": "Si prende…",
+    "pt": "Pega-se…"
+   }
+  },
+  {
+   "expresion": "Zuerst wird… angebraten",
+   "funcion": "Reihenfolge im Passiv",
+   "traducciones": {
+    "es": "primero se sofríe…",
+    "en": "First you brown…",
+    "fr": "D’abord, on fait revenir…",
+    "it": "Per prima cosa si rosola…",
+    "pt": "Primeiro, aloura-se…"
+   }
+  },
+  {
+   "expresion": "Dazu passt…",
+   "funcion": "Empfehlung",
+   "traducciones": {
+    "es": "va bien con…",
+    "en": "It goes well with…",
+    "fr": "… accompagne bien cela",
+    "it": "Ci sta bene…",
+    "pt": "Combina bem com…"
+   }
+  },
+  {
+   "expresion": "Das schmeckt eher…",
+   "funcion": "abgeschwächte Bewertung",
+   "traducciones": {
+    "es": "sabe más bien…",
+    "en": "It tastes more…",
+    "fr": "Cela a plutôt un goût…",
+    "it": "Ha un sapore piuttosto…",
+    "pt": "Tem um sabor mais…"
+   }
+  },
+  {
+   "expresion": "Ich würde… hinzufügen",
+   "funcion": "Vorschlag",
+   "traducciones": {
+    "es": "yo añadiría…",
+    "en": "I'd add…",
+    "fr": "J’ajouterais…",
+    "it": "Aggiungerei…",
+    "pt": "Eu acrescentaria…"
+   }
+  },
+  {
+   "expresion": "Bei uns isst man…",
+   "funcion": "Herkunftsbezug",
+   "traducciones": {
+    "es": "en mi país se come…",
+    "en": "Where I'm from we eat…",
+    "fr": "Chez nous, on mange…",
+    "it": "Da noi si mangia…",
+    "pt": "Na nossa região come-se…"
+   }
+  },
+  {
+   "expresion": "Zum Schluss abschmecken",
+   "funcion": "Abschluss",
+   "traducciones": {
+    "es": "al final, rectificar",
+    "en": "Season to taste at the end",
+    "fr": "Pour finir, assaisonner à son goût",
+    "it": "Alla fine, aggiustare di sapore",
+    "pt": "No fim, temperar a gosto"
+   }
+  },
+  {
+   "expresion": "Das ist typisch für…",
+   "funcion": "Zuordnung",
+   "traducciones": {
+    "es": "es típico de…",
+    "en": "That's typical of…",
+    "fr": "C’est typique de…",
+    "it": "È tipico di…",
+    "pt": "É típico de…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Beschreiben Sie ein Familienfest oder eine Hochzeit, an die Sie sich gut erinnern.",
+  "requisitos": [
+   "mindestens fünfzehn deklinierte Adjektive",
+   "alle drei Deklinationstypen vertreten",
+   "drei Adjektive im Dativ",
+   "*die Beziehung*, *sich verloben* und *die Erziehung* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 10,
+   "texto": "Zehn Familienmitglieder je dreimal beschreiben: mit bestimmtem Artikel, mit unbestimmtem, ohne."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Fünf Dativsätze mit Adjektiv: *mit meinem jüngeren Bruder…*"
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden über eine *Beziehung*, die Ihnen wichtig ist. Mindestens acht Adjektive."
+  }
+ ],
+ "autochequeo": [
+  "Sind alle drei Deklinationstypen vertreten?",
+  "Endet im Dativ Plural alles auf *-en*?",
+  "Haben zwei aufeinanderfolgende Adjektive dieselbe Endung?",
+  "Sind die Mengenangaben stark dekliniert?",
+  "Bin ich mir bei jedem Genus sicher?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Adjektivendungen. (1) Markieren Sie jede Endung mit Kasus, Genus, Numerus und Deklinationstyp. (2) Wo der Fehler vom Genus kommt und nicht von der Deklination, sagen Sie es. (3) Prüfen Sie die Mengenangaben. (4) Nennen Sie das Muster, das ich am häufigsten falsch mache. Schreiben Sie den Text nicht neu."
+}

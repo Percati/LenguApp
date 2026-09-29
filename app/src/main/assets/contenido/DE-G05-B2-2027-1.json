@@ -1,0 +1,379 @@
+{
+ "id": "DE-G05-B2-2027-1",
+ "skillId": "DE-G05",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T13",
+ "titulo": "Subjektive Modalverben",
+ "subtitulo": "Subjektive Modalverben am Amt",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Dasselbe Modalverb hat im Deutschen zwei völlig verschiedene Verwendungen. *Er muss zum Arzt* heisst „es ist notwendig\". *Er muss krank sein* heisst „ich bin mir fast sicher\". Die zweite ist der **subjektive** Gebrauch, und sie ersetzt eine ganze Reihe umständlicher Konstruktionen: statt *Ich bin ziemlich sicher, dass er es vergessen hat* sagt man *Er wird es vergessen haben*.",
+ "cuadroReferencia": {
+  "titulo": "Skala der Sicherheit",
+  "columnas": [
+   "Form",
+   "Sicherheit",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "muss",
+    "~95 %",
+    "Das muss eine Nebenwirkung sein."
+   ],
+   [
+    "dürfte",
+    "~75 %",
+    "Das dürfte harmlos sein."
+   ],
+   [
+    "*wird* (Futur als Vermutung)",
+    "~70 %",
+    "Er wird sich krankgemeldet haben."
+   ],
+   [
+    "könnte / mag",
+    "~40 %",
+    "Das könnte am Stress liegen."
+   ],
+   [
+    "kann nicht",
+    "~5 %",
+    "Das kann nicht stimmen."
+   ],
+   [
+    "soll",
+    "Fremdbehauptung",
+    "Das Mittel soll gut verträglich sein."
+   ],
+   [
+    "will",
+    "Eigenbehauptung",
+    "Sie will nie geraucht haben."
+   ]
+  ],
+  "notaPie": "**Vergangenheit:** Modalverb + **Infinitiv Perfekt**: Er muss es vergessen **haben**."
+ },
+ "ejemplos": [
+  {
+   "texto": "*Die Beschwerden müssen mit dem Stress zusammenhängen.*",
+   "audio": true
+  },
+  {
+   "texto": "*Das dürfte eine Nebenwirkung sein.*",
+   "audio": true
+  },
+  {
+   "texto": "*Das neue Medikament soll besser verträglich sein.*",
+   "audio": true
+  },
+  {
+   "texto": "*Sie will nie geraucht haben.*",
+   "audio": true
+  },
+  {
+   "texto": "*Er wird sich krankgemeldet haben.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Dürfte* ist die eleganteste Vermutungsform im Deutschen und wird von Lernenden fast nie benutzt.",
+  "*Soll* und *will* subjektiv sind hochfrequent in Nachrichten und im Klatsch. Sie zu verstehen ist Hörverstehen; sie zu benutzen ist B2+.",
+  "Die Betonung entscheidet oft, ob objektiv oder subjektiv gemeint ist."
+ ],
+ "contraste": {
+  "es": "Spanisch hat mit *deber de* (Vermutung) gegen *deber* (Pflicht) eine ähnliche Unterscheidung — aber sie wird umgangssprachlich kaum eingehalten. Wer *deber de* nie aktiv benutzt, überträgt die Unterscheidung auch im Deutschen nicht.",
+  "en": "Das Englische kennt den subjektiven Modalgebrauch sehr wohl: *he must be ill*, *he might have forgotten*. Die Bedeutungen decken sich gut. Was fehlt, ist die Unterscheidung von *soll* und *will* für Fremd- und Eigenbehauptung — dafür braucht das Englische Umschreibungen wie *he is said to* und *he claims to*. Und *dürfte* hat gar keine Entsprechung; am nächsten liegt *is likely to*.",
+  "it": "Das Italienische kennt den subjektiven Gebrauch gut: *deve essere malato* entspricht *er muss krank sein*, *potrebbe* entspricht *könnte*, und das epistemische Futur (*sarà malato*) liegt nahe bei *dürfte* bzw. *wird wohl*. Für *soll* im Sinn einer Fremdbehauptung gibt es kein Modalverb, sondern den *condizionale* (*sarebbe malato*); diese Lücke muss eigens gefüllt werden.",
+  "fr": "Das Französische kennt den subjektiven Gebrauch (*il doit être malade* – *er muss krank sein*, *il se peut que* – *er könnte*), und für Fremdbehauptungen den *conditionnel* (*il serait malade*). Heikel ist *devoir*: Es bedeutet sowohl *müssen* als auch *sollen*, sodass Französischsprachige die beiden in beiden Bedeutungen verwechseln.",
+  "pt": "Das epistemische *dever* ist im Portugiesischen sehr lebendig (*deve estar doente* – *er muss/dürfte krank sein*), der subjektive Gebrauch ist also vertraut. Die Falle: Da *dever* auch *sollen* bedeutet, übersetzen Portugiesischsprachige es gern mit *soll* und erzeugen eine Fremdbehauptung (*er soll krank sein*), wo sie eine eigene Vermutung meinen."
+ },
+ "errores": [
+  "*Er musste krank sein* statt *Er muss krank gewesen sein*.",
+  "*soll* als Empfehlung missverstehen, wenn eine Fremdbehauptung gemeint ist.",
+  "Den Infinitiv Perfekt vergessen.",
+  "*dürfte* vermeiden und stattdessen immer *wahrscheinlich* sagen."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Debe de estar enfermo* mit *soll krank sein* übersetzen, obwohl *muss* oder *dürfte* gemeint ist."
+  ],
+  "en": [
+   "*sollen* als *should* lesen, wenn eine Fremdbehauptung gemeint ist."
+  ],
+  "it": [
+   "Das Imperfekt von *dovere* übertragen: *Er musste krank sein* für *Doveva essere malato* statt *Er muss krank gewesen sein*."
+  ],
+  "fr": [
+   "*Il a dû partir* als *Er hat gehen müssen* verstehen, obwohl die Vermutung *Er muss gegangen sein* gemeint ist."
+  ],
+  "pt": [
+   "Das Hilfsverb von *deve ter sido* übernehmen: *Er muss krank gewesen haben* statt *gewesen sein*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Formular ausfüllen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "rellenar el formulario",
+    "en": "to fill in the form",
+    "fr": "remplir le formulaire",
+    "it": "compilare il modulo",
+    "pt": "preencher o formulário"
+   }
+  },
+  {
+   "item": "die Frist",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el plazo",
+    "en": "the deadline",
+    "fr": "le délai",
+    "it": "la scadenza",
+    "pt": "o prazo"
+   }
+  },
+  {
+   "item": "der Antrag",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la solicitud",
+    "en": "the application",
+    "fr": "la demande",
+    "it": "la domanda",
+    "pt": "o requerimento"
+   }
+  },
+  {
+   "item": "der Kundendienst",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la atención al cliente",
+    "en": "customer service",
+    "fr": "le service client",
+    "it": "il servizio clienti",
+    "pt": "o atendimento ao cliente"
+   }
+  },
+  {
+   "item": "die Sprechstunde",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el horario de atención",
+    "en": "the office hours",
+    "fr": "les heures de consultation",
+    "it": "l'orario di ricevimento",
+    "pt": "o horário de atendimento"
+   }
+  },
+  {
+   "item": "die Amtssprache",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el idioma oficial",
+    "en": "the official language",
+    "fr": "la langue officielle",
+    "it": "la lingua ufficiale",
+    "pt": "o idioma oficial"
+   }
+  },
+  {
+   "item": "der Sachbearbeiter",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el funcionario a cargo",
+    "en": "the caseworker",
+    "fr": "l'agent traitant",
+    "it": "l'incaricato del caso",
+    "pt": "o funcionário responsável"
+   }
+  },
+  {
+   "item": "die Terminvereinbarung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la concertación de cita",
+    "en": "appointment scheduling",
+    "fr": "la prise de rendez-vous",
+    "it": "la fissazione dell'appuntamento",
+    "pt": "o agendamento de horário"
+   }
+  },
+  {
+   "item": "der Widerspruch einlegen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "presentar un recurso",
+    "en": "to file an objection",
+    "fr": "faire opposition",
+    "it": "presentare ricorso",
+    "pt": "apresentar um recurso"
+   }
+  },
+  {
+   "item": "die Verzögerung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la demora",
+    "en": "the delay",
+    "fr": "le retard",
+    "it": "il ritardo",
+    "pt": "o atraso"
+   }
+  },
+  {
+   "item": "die Zuständigkeit klären",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "aclarar la competencia (de quién)",
+    "en": "to clarify responsibility",
+    "fr": "clarifier la compétence",
+    "it": "chiarire la competenza",
+    "pt": "esclarecer a competência"
+   }
+  },
+  {
+   "item": "der Aktenordner",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la carpeta de expediente",
+    "en": "the case file folder",
+    "fr": "le classeur de dossier",
+    "it": "la cartella del fascicolo",
+    "pt": "a pasta do processo"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das dürfte…",
+   "funcion": "wahrscheinliche Vermutung",
+   "traducciones": {
+    "es": "probablemente sea…",
+    "en": "That is probably…",
+    "fr": "Cela devrait probablement…",
+    "it": "Probabilmente dovrebbe…",
+    "pt": "Provavelmente deverá…"
+   }
+  },
+  {
+   "expresion": "Das muss… sein",
+   "funcion": "sehr hohe Sicherheit",
+   "traducciones": {
+    "es": "tiene que ser…",
+    "en": "That must be…",
+    "fr": "Cela doit être…",
+    "it": "Deve essere…",
+    "pt": "Tem de ser…"
+   }
+  },
+  {
+   "expresion": "Es könnte sein, dass…",
+   "funcion": "Möglichkeit",
+   "traducciones": {
+    "es": "podría ser que…",
+    "en": "It could be that…",
+    "fr": "Il se pourrait que…",
+    "it": "Potrebbe darsi che…",
+    "pt": "Poderia ser que…"
+   }
+  },
+  {
+   "expresion": "Angeblich…",
+   "funcion": "Fremdbehauptung",
+   "traducciones": {
+    "es": "supuestamente…",
+    "en": "Supposedly…",
+    "fr": "Apparemment / prétendument…",
+    "it": "A quanto pare / presumibilmente…",
+    "pt": "Alegadamente…"
+   }
+  },
+  {
+   "expresion": "Soweit ich weiss…",
+   "funcion": "begrenztes Wissen",
+   "traducciones": {
+    "es": "por lo que sé…",
+    "en": "As far as I know…",
+    "fr": "À ma connaissance…",
+    "it": "Per quanto ne so…",
+    "pt": "Tanto quanto sei…"
+   }
+  },
+  {
+   "expresion": "Das kann eigentlich nicht…",
+   "funcion": "Ausschluss",
+   "traducciones": {
+    "es": "en realidad no puede…",
+    "en": "That can't really…",
+    "fr": "Cela ne peut vraiment pas…",
+    "it": "Questo non può proprio…",
+    "pt": "Isso realmente não pode…"
+   }
+  },
+  {
+   "expresion": "Er wird wohl… haben",
+   "funcion": "Vermutung über Vergangenes",
+   "traducciones": {
+    "es": "habrá…",
+    "en": "He'll probably have…",
+    "fr": "Il aura probablement…",
+    "it": "Probabilmente avrà…",
+    "pt": "Provavelmente terá…"
+   }
+  },
+  {
+   "expresion": "Vermutlich…",
+   "funcion": "neutrale Vermutung",
+   "traducciones": {
+    "es": "presumiblemente…",
+    "en": "Presumably…",
+    "fr": "Vraisemblablement…",
+    "it": "Probabilmente…",
+    "pt": "Presumivelmente…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Vermuten Sie schriftlich, warum Ihr Antrag bei einer Behörde so lange braucht.",
+  "requisitos": [
+   "drei subjektive Modalverben (*muss*, *dürfte*, *kann nicht*)",
+   "ein *Er wird wohl… haben*",
+   "ein Kontrastsatz mit objektivem Gebrauch des gleichen Modalverbs",
+   "*der Antrag*, *die Frist* und *der Kundendienst* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Sätze: *Das muss…* und *Das dürfte…* über den *Kundendienst*."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Je ein Satz mit *müssen* objektiv und subjektiv über ein *Formular*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Warum antwortet niemand? Drei Vermutungen."
+  }
+ ],
+ "autochequeo": [
+  "Sechs verschiedene Sicherheitsgrade — nachzählen.",
+  "Steht bei Vergangenheit der Infinitiv Perfekt?",
+  "Habe ich *dürfte* benutzt?",
+  "Ist irgendwo objektiv gemeint, wo ich subjektiv wollte?",
+  "Alle vier Kernwörter?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den subjektiven Gebrauch der Modalverben. (1) Markieren Sie jedes Modalverb und sagen Sie, ob es objektiv oder subjektiv gemeint ist und welchen Sicherheitsgrad es ausdrückt. (2) Prüfen Sie den Infinitiv Perfekt. (3) Markieren Sie umständliche Konstruktionen, die ein Modalverb ersetzt hätte. (4) Zeigen Sie zwei Stellen, an denen *dürfte* gepasst hätte. Schreiben Sie den Text nicht neu."
+}

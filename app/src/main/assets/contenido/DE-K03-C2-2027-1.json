@@ -1,0 +1,393 @@
+{
+ "id": "DE-K03-C2-2027-1",
+ "skillId": "DE-K03",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C2",
+ "categoria": "grammar",
+ "topicId": "T07",
+ "titulo": "Nominalisierung + Genitivkette + Präposition mit Genitiv",
+ "subtitulo": "Genitivkette oder Relativsatz — bewusst gewählt",
+ "ancla": "Erkundungen C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf C2 wird die Genitivkette bewusst als Stilmittel gegen den Relativsatz abgewogen: eine lange Kette signalisiert Verwaltungs- oder Fachregister, während ihre Auflösung ein bewusst zugänglicheres Register schafft. Beide Optionen stehen gleichberechtigt zur Verfügung, und die Wahl selbst trägt Bedeutung.",
+ "cuadroReferencia": {
+  "titulo": "Kette oder Auflösung, als bewusste Wahl",
+  "columnas": [
+   "Form",
+   "Signal",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Lange Genitivkette",
+    "distanziert, fachlich",
+    "im Rahmen der Umsetzung der Ziele der Reform"
+   ],
+   [
+    "Teilweise Auflösung",
+    "ausgewogen",
+    "im Rahmen der Reformziele, die umgesetzt werden sollen"
+   ],
+   [
+    "Volle Auflösung",
+    "zugänglich, persönlich",
+    "damit die Ziele der Reform umgesetzt werden können"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Im Rahmen der Umsetzung der Ziele der Reform sind weitere Schritte nötig.",
+   "audio": true
+  },
+  {
+   "texto": "Im Rahmen der Reformziele, die noch umgesetzt werden sollen, ergeben sich neue Fragen.",
+   "audio": true
+  },
+  {
+   "texto": "Damit die Ziele der Reform umgesetzt werden können, braucht es mehr Zeit."
+  }
+ ],
+ "notas": [
+  "Die Wahl zwischen Kette und Auflösung ist auf C2 keine Fehlerfrage mehr, sondern eine Stilentscheidung mit eigener Bedeutung.",
+  "Eine durchgehend aufgelöste Fassung eines Verwaltungstextes wirkt unpassend informell, selbst wenn sie grammatisch tadellos ist.",
+  "Eine durchgehend verkettete Fassung eines an Laien gerichteten Textes verfehlt die Zielgruppe, auch wenn sie stilistisch elegant ist."
+ ],
+ "contraste": {
+  "es": "Das Spanische kennt dieselbe Wahl (con vistas a la aplicación de la directiva gegen para aplicar la directiva), und die de-Kette klingt ebenfalls nach Verwaltung. Im Zweifel greift das Spanische aber eher zur verbalen Lösung; hispanophone C2-Sprecher lösen die Kette deshalb auch dort auf, wo die deutsche Textsorte ihre Distanz erwartet, und müssen zudem die Genitivmorphologie jedes Glieds sicher beherrschen.",
+  "it": "Das Italienische hat dieselbe Wahl (in vista dell'attuazione della direttiva gegen per attuare la direttiva), und die di-Kette klingt ebenfalls nach Behörde. Das Stilgefühl überträgt sich also weitgehend; zu lernen bleibt vor allem die Genitivmorphologie, die jedes Glied der deutschen Kette tragen muss.",
+  "fr": "Das Französische kennt dieselbe Wahl (en vue de la mise en œuvre de la directive gegen pour mettre en œuvre la directive), mit ähnlicher Registerwirkung. Der Unterschied ist morphologisch: Die de-Kette kann ohne Kasus beliebig wachsen, während im Deutschen jedes Glied den Genitiv tragen muss, was die Kette schneller schwerfällig macht.",
+  "pt": "Das Portugiesische kennt die Wahl ebenfalls (com vista à implementação da diretiva gegen para implementar a diretiva), greift aber dank des infinitivo pessoal im Zweifel zur verbalen Lösung. Portugiesischsprachige lösen die Kette deshalb auch dort auf, wo die deutsche Textsorte die Distanz der Kette erwartet.",
+  "en": "Das Englische kennt die Kette (with a view to the implementation of the directive), bewertet sie aber stilistisch negativ und löst sie im Zweifel auf (to implement the directive). Englischsprachige müssen lernen, dass die Kette im Deutschen eine legitime Registerwahl ist, kein Stilfehler."
+ },
+ "errores": [
+  "Einen Verwaltungstext durchgehend aufzulösen, wodurch das erwartete Register verloren geht.",
+  "Einen an Laien gerichteten Text durchgehend zu verketten, wodurch die Zielgruppe verfehlt wird.",
+  "Die Wahl zwischen Kette und Auflösung zufällig statt bewusst zu treffen."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*en el marco de* als *im Rahmen von dem* übertragen statt *im Rahmen des*."
+  ],
+  "it": [
+   "*ai sensi di* als *im Sinne von dem* übertragen statt *im Sinne des*."
+  ],
+  "fr": [
+   "*dans le cadre de* als *im Rahmen von dem* übertragen statt *im Rahmen des*."
+  ],
+  "pt": [
+   "*no âmbito de* als *im Bereich von dem* übertragen statt *im Rahmen des*."
+  ],
+  "en": [
+   "*within the scope of* als *innerhalb des Umfangs von* übertragen statt *im Rahmen des*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Mieterland",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el país de inquilinos",
+    "en": "nation of renters",
+    "fr": "le pays de locataires",
+    "it": "il paese di inquilini",
+    "pt": "o país de inquilinos"
+   }
+  },
+  {
+   "item": "das Wohneigentum",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la vivienda en propiedad",
+    "en": "home ownership",
+    "fr": "l'accession à la propriété",
+    "it": "la proprietà immobiliare",
+    "pt": "a casa própria"
+   }
+  },
+  {
+   "item": "der Kiez",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el barrio con identidad propia",
+    "en": "neighbourhood (Berlin)",
+    "fr": "le quartier",
+    "it": "il quartiere",
+    "pt": "o bairro"
+   }
+  },
+  {
+   "item": "der Kündigungsschutz",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la protección contra el desalojo",
+    "en": "tenant protection against eviction",
+    "fr": "la protection contre la résiliation",
+    "it": "la tutela contro lo sfratto",
+    "pt": "a proteção contra o despejo"
+   }
+  },
+  {
+   "item": "der Mietspiegel",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el índice de alquileres",
+    "en": "rent index",
+    "fr": "l'indice de référence des loyers",
+    "it": "l'indice degli affitti",
+    "pt": "o índice de rendas"
+   }
+  },
+  {
+   "item": "die Aufwertung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la revalorización del barrio",
+    "en": "upgrading (of an area)",
+    "fr": "la revalorisation",
+    "it": "la riqualificazione",
+    "pt": "a valorização"
+   }
+  },
+  {
+   "item": "die Verdrängung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el desplazamiento de vecinos",
+    "en": "displacement",
+    "fr": "l'éviction des habitants",
+    "it": "l'espulsione dei residenti",
+    "pt": "a expulsão de moradores"
+   }
+  },
+  {
+   "item": "die Wohnungsgenossenschaft",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cooperativa de vivienda",
+    "en": "housing cooperative",
+    "fr": "la coopérative de logement",
+    "it": "la cooperativa edilizia",
+    "pt": "a cooperativa de habitação"
+   }
+  },
+  {
+   "item": "Wohnraum zweckentfremden",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dar otro uso a una vivienda",
+    "en": "to misuse residential property",
+    "fr": "détourner un logement de son usage",
+    "it": "destinare le abitazioni ad altro uso",
+    "pt": "desviar a habitação do seu fim"
+   }
+  },
+  {
+   "item": "das Eigenleben",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la vida propia",
+    "en": "life of its own",
+    "fr": "la vie propre",
+    "it": "la vita propria",
+    "pt": "a vida própria"
+   }
+  },
+  {
+   "item": "der Szenebezirk",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el barrio de moda",
+    "en": "trendy district",
+    "fr": "le quartier branché",
+    "it": "il quartiere alla moda",
+    "pt": "o bairro da moda"
+   }
+  },
+  {
+   "item": "die Durchmischung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la mezcla social",
+    "en": "social mix",
+    "fr": "la mixité sociale",
+    "it": "la mescolanza sociale",
+    "pt": "a diversidade social"
+   }
+  },
+  {
+   "item": "die Luxussanierung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la reforma de lujo",
+    "en": "luxury renovation",
+    "fr": "la rénovation de standing",
+    "it": "la ristrutturazione di lusso",
+    "pt": "a remodelação de luxo"
+   }
+  },
+  {
+   "item": "die Milieuschutzsatzung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la normativa de protección del entorno social",
+    "en": "preservation ordinance for residential areas",
+    "fr": "le règlement de protection du quartier",
+    "it": "la norma di tutela del tessuto sociale",
+    "pt": "o regulamento de proteção do bairro"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "im Rahmen der Umsetzung der…",
+   "funcion": "lange Kette, distanziert",
+   "traducciones": {
+    "es": "en el marco de la aplicación de…",
+    "en": "within the framework of the implementation of…",
+    "fr": "dans le cadre de la mise en œuvre de…",
+    "it": "nell’ambito dell’attuazione di…",
+    "pt": "no âmbito da implementação de…"
+   }
+  },
+  {
+   "expresion": "…, die noch umgesetzt werden…",
+   "funcion": "teilweise Auflösung",
+   "traducciones": {
+    "es": "…, que aún deben aplicarse…",
+    "en": "…, which still need to be implemented…",
+    "fr": "…, qui doivent encore être mis en œuvre…",
+    "it": "…, che devono ancora essere attuati…",
+    "pt": "…, que ainda têm de ser implementados…"
+   }
+  },
+  {
+   "expresion": "damit…umgesetzt werden können",
+   "funcion": "volle Auflösung, Zweck",
+   "traducciones": {
+    "es": "para que… puedan aplicarse",
+    "en": "so that…can be implemented",
+    "fr": "afin que… puissent être mis en œuvre",
+    "it": "affinché… possano essere attuati",
+    "pt": "para que… possam ser implementados"
+   }
+  },
+  {
+   "expresion": "angesichts der Komplexität der…",
+   "funcion": "Kette, formell",
+   "traducciones": {
+    "es": "dada la complejidad de…",
+    "en": "given the complexity of…",
+    "fr": "Compte tenu de la complexité de…",
+    "it": "Data la complessità di…",
+    "pt": "Dada a complexidade de…"
+   }
+  },
+  {
+   "expresion": "unter Berücksichtigung dessen, dass…",
+   "funcion": "Auflösung, formell",
+   "traducciones": {
+    "es": "teniendo en cuenta que…",
+    "en": "taking into account that…",
+    "fr": "en tenant compte du fait que…",
+    "it": "tenendo conto del fatto che…",
+    "pt": "tendo em conta que…"
+   }
+  },
+  {
+   "expresion": "vor dem Hintergrund der…",
+   "funcion": "Kette, einleitend",
+   "traducciones": {
+    "es": "en el contexto de…",
+    "en": "against the background of…",
+    "fr": "dans le contexte de…",
+    "it": "nel contesto di…",
+    "pt": "no contexto de…"
+   }
+  },
+  {
+   "expresion": "nach Massgabe der/des…",
+   "funcion": "Rechtssprache, Bedingung",
+   "traducciones": {
+    "es": "con arreglo a…",
+    "en": "in accordance with…",
+    "fr": "conformément à…",
+    "it": "secondo quanto stabilito da…",
+    "pt": "nos termos de…"
+   }
+  },
+  {
+   "expresion": "Hier wähle ich bewusst den Relativsatz.",
+   "funcion": "die Stilentscheidung offenlegen",
+   "traducciones": {
+    "es": "Acá elijo a propósito la relativa.",
+    "en": "Here I deliberately choose the relative clause.",
+    "fr": "Ici, je choisis délibérément la relative.",
+    "it": "Qui scelgo di proposito la relativa.",
+    "pt": "Aqui escolho de propósito a relativa."
+   }
+  },
+  {
+   "expresion": "Die Kette signalisiert hier nur noch Distanz.",
+   "funcion": "den Registereffekt der Kette benennen",
+   "traducciones": {
+    "es": "Acá la cadena ya solo señala distancia.",
+    "en": "Here the chain signals nothing but distance.",
+    "fr": "Ici, la chaîne ne signale plus que la distance.",
+    "it": "Qui la catena segnala ormai solo distanza.",
+    "pt": "Aqui a cadeia já só sinaliza distância."
+   }
+  },
+  {
+   "expresion": "Für das Publikum draussen: … bedeutet…",
+   "funcion": "Übersetzung fürs Laienpublikum einschieben",
+   "traducciones": {
+    "es": "Para el público de afuera: … significa…",
+    "en": "For the lay audience: … means…",
+    "fr": "Pour le public non spécialiste : … signifie…",
+    "it": "Per il pubblico non addetto: … significa…",
+    "pt": "Para o público leigo: … significa…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie den Einleitungsabsatz eines Gutachtens zur Aufwertung eines Berliner Kiezes — einmal für den Stadtrat, einmal für die Anwohnerzeitung.",
+  "requisitos": [
+   "im Gutachten eine Genitivkette mit drei Gliedern",
+   "in der Anwohnerfassung dieselbe Information im Relativsatz",
+   "ein Satz, der erklärt, warum Sie wie gewählt haben",
+   "*die Aufwertung*, *der Kiez* und *der Kündigungsschutz* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei Sätze zur *Verdrängung* in Genitivketten umbauen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Die längste Kette für Laien auflösen."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "2 Minuten über *Wohnungsgenossenschaften* — verbal gesprochen."
+  }
+ ],
+ "autochequeo": [
+  "Ist die Wahl zwischen Kette und Auflösung bewusst getroffen, nicht zufällig?",
+  "Passt das gewählte Register zur Zielgruppe des Textes?",
+  "Signalisiert eine lange Kette tatsächlich das beabsichtigte Fachregister?",
+  "Würde eine aufgelöste Fassung an dieser Stelle die Zielgruppe besser erreichen?",
+  "Würde ein Fachleser die Registerentscheidung als angemessen empfinden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen Genitivkette und Auflösung. Prüfen Sie, ob diese Wahl zur Zielgruppe des Textes passt. Schreiben Sie den Text nicht neu."
+}

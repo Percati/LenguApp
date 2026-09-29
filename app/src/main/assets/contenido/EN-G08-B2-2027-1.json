@@ -1,0 +1,389 @@
+{
+ "id": "EN-G08-B2-2027-1",
+ "skillId": "EN-G08",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T02",
+ "titulo": "Prepositional Verbs and Dependent Prepositions",
+ "subtitulo": "Prepositions that come with the verb",
+ "ancla": "EGP B2",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "At B2 the point is no longer the list of pairs but the behaviour of the structure, and specifically how it differs from a phrasal verb. A phrasal verb's particle can move (*turn the light off*); a prepositional verb's preposition cannot (*we relied on Ana*, never *relied Ana on*). Two further consequences appear at this level: a verb after a preposition always takes *-ing*, never the infinitive, which is why *insisted on paying* is right and *insisted on to pay* is not; and in questions and relative clauses the preposition is normally left at the end (*Who did you rely on?*), which is neutral, correct English rather than carelessness.",
+ "cuadroReferencia": {
+  "titulo": "How the structure behaves",
+  "columnas": [
+   "Pattern",
+   "Rule",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Prepositional verb",
+    "object always follows the preposition",
+    "*We relied on Ana*, never *relied Ana on*"
+   ],
+   [
+    "Phrasal verb, separable",
+    "object can move either side",
+    "*turn the light off* / *turn off the light*"
+   ],
+   [
+    "Verb + preposition + gerund",
+    "the following verb takes *-ing*",
+    "*She insisted on paying.*"
+   ],
+   [
+    "Stranded, in a question",
+    "preposition stays at the end",
+    "*Who did you speak to?*"
+   ],
+   [
+    "Stranded, in a relative clause",
+    "preposition stays at the end",
+    "*the report I was referring to*"
+   ],
+   [
+    "Fronted preposition",
+    "formal written register only",
+    "*the report to which I referred*"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She insisted on paying for everything, which nobody had asked her to do.",
+   "audio": true
+  },
+  {
+   "texto": "The delay resulted in a loss we hadn't budgeted for.",
+   "audio": true
+  },
+  {
+   "texto": "Who exactly did you speak to about this?",
+   "audio": true
+  },
+  {
+   "texto": "That's the assumption the whole argument depends on."
+  },
+  {
+   "texto": "We eventually succeeded in getting a straight answer out of them."
+  },
+  {
+   "texto": "I'm looking forward to hearing what they decide."
+  }
+ ],
+ "notas": [
+  "The movement test separates the two structures: if the object can go before the particle, it is a phrasal verb; if it cannot, the word is a preposition.",
+  "After any preposition the following verb is a gerund, with no exceptions — including the deceptive *to* in *look forward to*, *object to* and *be used to*, which is a preposition and not an infinitive marker.",
+  "Leaving the preposition at the end of a question or relative clause is standard neutral English; fronting it is a register choice for formal writing, not a correction.",
+  "Several verbs take different prepositions with different meanings, so the preposition carries information rather than being decoration: *result in* points forward to an effect, *result from* points back to a cause."
+ ],
+ "contraste": {
+  "es": "Spanish cannot strand a preposition at all: ¿Con quién hablaste? must front it, and there is no possible Spanish equivalent of Who did you speak to?. Spanish speakers at B2 therefore tend to front the preposition in English too, producing To whom did you speak? in ordinary conversation — grammatically correct but two registers too high. Spanish also has no structure equivalent to preposition + gerund, which is why insisted on to pay is such a persistent error.",
+  "de": "German cannot strand a preposition either (Mit wem hast du gesprochen?), so Who did you speak to? feels unusual at first. For preposition + gerund, German uses a da-word and a zu-infinitive (Er bestand darauf zu zahlen), which leads directly to insisted on to pay instead of insisted on paying.",
+  "it": "Italian cannot strand a preposition (Con chi hai parlato?), so Italian speakers tend to front it (With whom did you speak?), which sounds too formal in conversation. Italian also uses an infinitive after prepositions (ha insistito a pagare), which leads to insisted to pay or insisted on to pay.",
+  "fr": "French cannot strand a preposition (À qui as-tu parlé ?), so French speakers tend to front it in English. French also uses different constructions after these verbs (insister pour payer), which leads to insisted for paying or insisted to pay instead of insisted on paying.",
+  "pt": "Portuguese cannot strand a preposition (Com quem falaste?), so Portuguese speakers tend to front it in English. After these verbs Portuguese uses a preposition + infinitive (insistiu em pagar), which leads to insisted in paying or insisted on to pay."
+ },
+ "errores": [
+  "*She insisted on to pay* — after a preposition the verb takes *-ing*: *insisted on paying*.",
+  "*I'm looking forward to meet you* — the *to* is a preposition here: *looking forward to meeting you*.",
+  "*We relied Ana on* — a prepositional verb never splits, unlike a phrasal verb.",
+  "*To whom did you speak?* used in casual conversation, which is accurate but far too formal; neutral English strands it.",
+  "Confusing *result in* with *result from*, which reverses the direction of cause and effect."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*soñar con* rendered as *dream with* instead of *dream of*.",
+   "*enamorarse de* rendered as *fall in love of* instead of *fall in love with*."
+  ],
+  "de": [
+   "*sich freuen auf* rendered as *look forward on* instead of *look forward to*."
+  ],
+  "it": [
+   "*pensare a* rendered as *think to* instead of *think of* or *think about*."
+  ],
+  "fr": [
+   "*penser à* rendered as *think to* instead of *think of* or *think about*."
+  ],
+  "pt": [
+   "*sonhar com* rendered as *dream with* instead of *dream of*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "savings account",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cuenta de ahorro",
+    "de": "das Sparkonto",
+    "fr": "le compte épargne",
+    "it": "il conto risparmio",
+    "pt": "a conta poupança"
+   }
+  },
+  {
+   "item": "to get into debt",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "endeudarse",
+    "de": "sich verschulden",
+    "fr": "s’endetter",
+    "it": "indebitarsi",
+    "pt": "endividar-se"
+   }
+  },
+  {
+   "item": "savings buffer",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la reserva de dinero",
+    "de": "die finanzielle Reserve",
+    "fr": "la réserve d’épargne",
+    "it": "il cuscinetto di risparmio",
+    "pt": "a reserva financeira"
+   }
+  },
+  {
+   "item": "retirement fund",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el fondo de jubilación",
+    "de": "die Pensionskasse / der Rentenfonds",
+    "fr": "le fonds de retraite",
+    "it": "il fondo pensione",
+    "pt": "o fundo de reforma"
+   }
+  },
+  {
+   "item": "investment",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la inversión",
+    "de": "die Investition / Anlage",
+    "fr": "l’investissement",
+    "it": "l’investimento",
+    "pt": "o investimento"
+   }
+  },
+  {
+   "item": "purchasing power",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el poder adquisitivo",
+    "de": "die Kaufkraft",
+    "fr": "le pouvoir d'achat",
+    "it": "il potere d'acquisto",
+    "pt": "o poder de compra"
+   }
+  },
+  {
+   "item": "pension fund",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el fondo de pensión",
+    "de": "die Pensionskasse",
+    "fr": "le fonds de pension",
+    "it": "il fondo pensione",
+    "pt": "o fundo de pensões"
+   }
+  },
+  {
+   "item": "pillar (of a pension system)",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el pilar (del sistema de pensiones)",
+    "de": "die Säule (eines Rentensystems)",
+    "fr": "le pilier (d’un système de retraite)",
+    "it": "il pilastro (di un sistema pensionistico)",
+    "pt": "o pilar (de um sistema de pensões)"
+   }
+  },
+  {
+   "item": "financial freedom",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la libertad financiera",
+    "de": "die finanzielle Freiheit",
+    "fr": "la liberté financière",
+    "it": "la libertà finanziaria",
+    "pt": "a liberdade financeira"
+   }
+  },
+  {
+   "item": "tax return",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la declaración de impuestos",
+    "de": "die Steuererklärung",
+    "fr": "la déclaration fiscale",
+    "it": "la dichiarazione dei redditi",
+    "pt": "a declaração de impostos"
+   }
+  },
+  {
+   "item": "to stick to a budget",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "respetar el presupuesto",
+    "de": "das Budget einhalten",
+    "fr": "respecter un budget",
+    "it": "rispettare il budget",
+    "pt": "seguir o orçamento"
+   }
+  },
+  {
+   "item": "inflation",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la inflación",
+    "de": "die Inflation",
+    "fr": "l'inflation",
+    "it": "l'inflazione",
+    "pt": "a inflação"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "It depends on whether…",
+   "funcion": "makes the condition explicit",
+   "traducciones": {
+    "es": "depende de si…",
+    "de": "Es hängt davon ab, ob…",
+    "fr": "Cela dépend de si…",
+    "it": "Dipende da se…",
+    "pt": "Depende de se…"
+   }
+  },
+  {
+   "expresion": "I'd rather rely on…",
+   "funcion": "states a preferred basis",
+   "traducciones": {
+    "es": "preferiría basarme en…",
+    "de": "Ich würde mich lieber auf… verlassen",
+    "fr": "Je préférerais m'appuyer sur…",
+    "it": "Preferirei affidarmi a…",
+    "pt": "Preferiria confiar em…"
+   }
+  },
+  {
+   "expresion": "She insisted on + -ing",
+   "funcion": "reports an imposed action",
+   "traducciones": {
+    "es": "insistió en…",
+    "de": "Sie bestand darauf, zu…",
+    "fr": "Elle a insisté pour…",
+    "it": "Ha insistito per…",
+    "pt": "Ela insistiu em…"
+   }
+  },
+  {
+   "expresion": "That resulted in…",
+   "funcion": "names the effect",
+   "traducciones": {
+    "es": "eso derivó en…",
+    "de": "Das führte zu…",
+    "fr": "Cela a abouti à…",
+    "it": "Ciò ha portato a…",
+    "pt": "Isso resultou em…"
+   }
+  },
+  {
+   "expresion": "This results from…",
+   "funcion": "names the cause",
+   "traducciones": {
+    "es": "esto se debe a…",
+    "de": "Das ergibt sich aus…",
+    "fr": "Cela découle de…",
+    "it": "Questo deriva da…",
+    "pt": "Isto resulta de…"
+   }
+  },
+  {
+   "expresion": "the point I was referring to",
+   "funcion": "strands the preposition in a relative clause",
+   "traducciones": {
+    "es": "el punto al que me refería",
+    "de": "der Punkt, auf den ich mich bezog",
+    "fr": "le point auquel je faisais référence",
+    "it": "il punto a cui mi riferivo",
+    "pt": "o ponto a que me referia"
+   }
+  },
+  {
+   "expresion": "We succeeded in + -ing",
+   "funcion": "reports an achieved outcome",
+   "traducciones": {
+    "es": "logramos…",
+    "de": "Es gelang uns, zu…",
+    "fr": "Nous avons réussi à…",
+    "it": "Siamo riusciti a…",
+    "pt": "Conseguimos…"
+   }
+  },
+  {
+   "expresion": "I'd object to + -ing",
+   "funcion": "registers an objection",
+   "traducciones": {
+    "es": "me opondría a…",
+    "de": "Ich hätte etwas dagegen, zu…",
+    "fr": "Je m'opposerais à…",
+    "it": "Mi opporrei a…",
+    "pt": "Eu opor-me-ia a…"
+   }
+  },
+  {
+   "expresion": "Who did you speak to?",
+   "funcion": "neutral question with stranded preposition",
+   "traducciones": {
+    "es": "¿con quién hablaste?",
+    "de": "Mit wem hast du gesprochen?",
+    "fr": "À qui as-tu parlé ?",
+    "it": "Con chi hai parlato?",
+    "pt": "Com quem falaste?"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write a short text about how you decide what to do with your savings.",
+  "requisitos": [
+   "six prepositional verbs from the reference box",
+   "two with *-ing* after the preposition (*insist on doing*)",
+   "one question ending in a preposition",
+   "use *savings account*, *savings buffer* and *to get into debt*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Ten verbs with their preposition about money."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Three sentences with *depend on* and *rely on* about your *retirement fund*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: what does a good budget *depend on*?"
+  }
+ ],
+ "autochequeo": [
+  "After every preposition, is the following verb in *-ing* rather than the infinitive?",
+  "Did I check *look forward to*, *object to* and *be used to* for a wrongly used infinitive?",
+  "Did I keep every prepositional verb unsplit, and split only genuine phrasal verbs?",
+  "In questions and relative clauses, did I strand the preposition instead of fronting it?",
+  "Did I use *result in* for effects and *result from* for causes, in the right direction?"
+ ],
+ "promptCorreccion": "Focus only on verbs followed by a preposition. (1) Check that every verb after a preposition is a gerund, paying attention to *look forward to*, *object to* and *be used to*. (2) Flag any prepositional verb I wrongly split as if it were a phrasal verb. (3) Tell me where I fronted a preposition and it sounds too formal for the context. (4) Check the direction of *result in* and *result from*. Do not rewrite the text — point out the errors so I can fix them."
+}

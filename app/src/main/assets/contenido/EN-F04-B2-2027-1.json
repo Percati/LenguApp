@@ -1,0 +1,393 @@
+{
+ "id": "EN-F04-B2-2027-1",
+ "skillId": "EN-F04",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "fluency",
+ "topicId": "T07",
+ "titulo": "Telling a Story / Recounting Experiences",
+ "subtitulo": "The story of a flat search",
+ "ancla": "CV Sustained monologue: describing experience",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "At B2 a story is told with correct time sequencing: past simple for the main events, past perfect for whatever happened earlier. The dramaturgy of a C1 story (a hooked opening, a marked turning point) isn't the focus yet — getting the timeline clear is.",
+ "cuadroReferencia": {
+  "titulo": "Time structure of a story",
+  "columnas": [
+   "Time",
+   "Form",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Main events",
+    "past simple",
+    "We left early and missed the bus."
+   ],
+   [
+    "Earlier event",
+    "past perfect",
+    "We'd already missed the train before we even got there."
+   ],
+   [
+    "Background",
+    "past continuous",
+    "It was raining when we arrived."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "We left early, but we'd already missed the connection.",
+   "audio": true
+  },
+  {
+   "texto": "It was raining heavily when we finally got there.",
+   "audio": true
+  },
+  {
+   "texto": "First we waited, then we just decided to walk."
+  }
+ ],
+ "notas": [
+  "The past perfect marks what happened BEFORE the main story timeline — without it, the order of events can be unclear.",
+  "First, then, after that structure the story in time without needing extra tenses.",
+  "The past continuous is useful for background: what was going on when the main event happened."
+ ],
+ "contraste": {
+  "es": "Spanish has the pluscuamperfecto with the same logic, so the past perfect transfers easily. Choosing between the Spanish indefinido and pretérito perfecto follows different rules from the English past simple and present perfect, which depend on whether the time period is finished.",
+  "de": "German tells spoken stories in the Perfekt, which leads to I have met him yesterday. English stories use the past simple throughout, with the past perfect for earlier events.",
+  "it": "Italian tells spoken stories in the passato prossimo, which leads to I have met him yesterday. English stories use the past simple throughout, with the past perfect for earlier events.",
+  "fr": "French tells spoken stories in the passé composé, which leads to I have met him yesterday. The written passé simple is a better bridge: like the English past simple, it presents events as a finished sequence.",
+  "pt": "Portuguese tells stories in the simple past (encontrei-o ontem), which maps directly onto the English past simple, and tinha + participle onto the past perfect. Storytelling tenses therefore transfer well."
+ },
+ "errores": [
+  "Leaving out the past perfect, which makes the order of events unclear.",
+  "Using only the past simple throughout, even for events that happened earlier.",
+  "Using first, then and after that in the wrong order."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Resulta que* rendered as *It results that* instead of *It turned out that*."
+  ],
+  "de": [
+   "*Auf einmal* rendered as *At once*, which means 'immediately', instead of *Suddenly* or *All of a sudden*."
+  ],
+  "it": [
+   "*Succede che* rendered as *It happens that* instead of *It turned out that*."
+  ],
+  "fr": [
+   "*Du coup* carried over as *so* in every sentence until it becomes a tic."
+  ],
+  "pt": [
+   "*Acontece que* rendered as *It happens that* instead of *It turned out that*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "house hunting",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la búsqueda de vivienda",
+    "de": "die Wohnungssuche",
+    "fr": "la recherche de logement",
+    "it": "la ricerca di casa",
+    "pt": "a procura de casa"
+   }
+  },
+  {
+   "item": "housing shortage",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la escasez de vivienda",
+    "de": "die Wohnungsnot",
+    "fr": "la pénurie de logements",
+    "it": "la carenza di alloggi",
+    "pt": "a escassez de habitação"
+   }
+  },
+  {
+   "item": "gentrification",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la gentrificación",
+    "de": "Gentrifizierung",
+    "fr": "la gentrification",
+    "it": "la gentrificazione",
+    "pt": "a gentrificação"
+   }
+  },
+  {
+   "item": "neighbourhood",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el barrio",
+    "de": "das Viertel / die Nachbarschaft",
+    "fr": "le quartier",
+    "it": "il quartiere",
+    "pt": "o bairro"
+   }
+  },
+  {
+   "item": "utility bills",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las facturas de servicios",
+    "de": "die Nebenkosten / Versorgungsrechnungen",
+    "fr": "les factures de services",
+    "it": "le bollette delle utenze",
+    "pt": "as contas dos serviços"
+   }
+  },
+  {
+   "item": "to move house",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mudarse",
+    "de": "umziehen",
+    "fr": "déménager",
+    "it": "traslocare",
+    "pt": "mudar-se"
+   }
+  },
+  {
+   "item": "deposit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el depósito de garantía",
+    "de": "die Kaution",
+    "fr": "le dépôt de garantie",
+    "it": "il deposito cauzionale",
+    "pt": "a caução"
+   }
+  },
+  {
+   "item": "housing cooperative",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cooperativa de vivienda",
+    "de": "die Wohnbaugenossenschaft",
+    "fr": "la coopérative d’habitation",
+    "it": "la cooperativa edilizia",
+    "pt": "a cooperativa habitacional"
+   }
+  },
+  {
+   "item": "own flat",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el piso propio",
+    "de": "die eigene Wohnung",
+    "fr": "son propre appartement",
+    "it": "il proprio appartamento",
+    "pt": "o apartamento próprio"
+   }
+  },
+  {
+   "item": "noisy walls",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "paredes finas",
+    "de": "hellhörige Wände",
+    "fr": "les murs mal insonorisés",
+    "it": "le pareti poco insonorizzate",
+    "pt": "as paredes com pouco isolamento acústico"
+   }
+  },
+  {
+   "item": "to keep in good condition",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mantener en buen estado",
+    "de": "in gutem Zustand halten",
+    "fr": "maintenir en bon état",
+    "it": "mantenere in buone condizioni",
+    "pt": "manter em bom estado"
+   }
+  },
+  {
+   "item": "good transport links",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "buena conexión de transporte",
+    "de": "die gute Verkehrsanbindung",
+    "fr": "les bonnes liaisons de transport",
+    "it": "i buoni collegamenti di trasporto",
+    "pt": "as boas ligações de transporte"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "First…, then…, after that…",
+   "funcion": "sequencing",
+   "traducciones": {
+    "es": "Primero…, luego…, después…",
+    "de": "Zuerst…, dann…, danach…",
+    "fr": "D’abord…, puis…, ensuite…",
+    "it": "Prima…, poi…, dopo…",
+    "pt": "Primeiro…, depois…, a seguir…"
+   }
+  },
+  {
+   "expresion": "We'd already…, before…",
+   "funcion": "marks an earlier event",
+   "traducciones": {
+    "es": "Ya habíamos…, antes de que…",
+    "de": "Wir hatten schon…, bevor…",
+    "fr": "Nous avions déjà…, avant que…",
+    "it": "Avevamo già…, prima che…",
+    "pt": "Já tínhamos…, antes de…"
+   }
+  },
+  {
+   "expresion": "It was…, when…",
+   "funcion": "sets the background",
+   "traducciones": {
+    "es": "Estaba…, cuando…",
+    "de": "Es war…, als…",
+    "fr": "C’était…, quand…",
+    "it": "Era…, quando…",
+    "pt": "Era…, quando…"
+   }
+  },
+  {
+   "expresion": "In the end,…",
+   "funcion": "closes the story",
+   "traducciones": {
+    "es": "Al final…",
+    "de": "Am Ende…",
+    "fr": "À la fin…",
+    "it": "Alla fine…",
+    "pt": "No fim…"
+   }
+  },
+  {
+   "expresion": "Suddenly,…",
+   "funcion": "unexpected event",
+   "traducciones": {
+    "es": "De repente…",
+    "de": "Plötzlich…",
+    "fr": "Soudain…",
+    "it": "All’improvviso…",
+    "pt": "De repente…"
+   }
+  },
+  {
+   "expresion": "While we were waiting,…",
+   "funcion": "simultaneity",
+   "traducciones": {
+    "es": "Mientras esperábamos…",
+    "de": "Während wir warteten,…",
+    "fr": "Pendant que nous attendions,…",
+    "it": "Mentre aspettavamo,…",
+    "pt": "Enquanto esperávamos,…"
+   }
+  },
+  {
+   "expresion": "This was about … ago.",
+   "funcion": "places the story in time",
+   "traducciones": {
+    "es": "Esto fue hace más o menos…",
+    "de": "Das war vor ungefähr…",
+    "fr": "C'était il y a environ…",
+    "it": "È stato circa … fa.",
+    "pt": "Isto foi há cerca de…"
+   }
+  },
+  {
+   "expresion": "We were just about to…",
+   "funcion": "ongoing action as background",
+   "traducciones": {
+    "es": "Justo estábamos por…",
+    "de": "Wir waren gerade dabei, … zu…",
+    "fr": "Nous étions sur le point de…",
+    "it": "Stavamo per…",
+    "pt": "Estávamos mesmo prestes a…"
+   }
+  },
+  {
+   "expresion": "Shortly after that,…",
+   "funcion": "marks quick sequence",
+   "traducciones": {
+    "es": "Poco después,…",
+    "de": "Kurz darauf…",
+    "fr": "Peu après,…",
+    "it": "Poco dopo,…",
+    "pt": "Pouco depois,…"
+   }
+  },
+  {
+   "expresion": "The funny thing was that…",
+   "funcion": "highlights what made it worth telling",
+   "traducciones": {
+    "es": "Lo gracioso fue que…",
+    "de": "Das Komische daran war, dass…",
+    "fr": "Le plus drôle, c'est que…",
+    "it": "La cosa buffa è che…",
+    "pt": "O engraçado é que…"
+   }
+  },
+  {
+   "expresion": "It all worked out fine in the end.",
+   "funcion": "evaluates the outcome",
+   "traducciones": {
+    "es": "Al final todo salió bien.",
+    "de": "Am Ende ist alles gut ausgegangen.",
+    "fr": "Finalement, tout s'est bien terminé.",
+    "it": "Alla fine è andato tutto bene.",
+    "pt": "No fim correu tudo bem."
+   }
+  },
+  {
+   "expresion": "I've done it differently ever since.",
+   "funcion": "consequence for one's own behaviour",
+   "traducciones": {
+    "es": "Desde entonces lo hago distinto.",
+    "de": "Seitdem mache ich das anders.",
+    "fr": "Depuis, je m'y prends autrement.",
+    "it": "Da allora lo faccio diversamente.",
+    "pt": "Desde então faço de outra maneira."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Tell the story of how you found (or didn't find) a place to live.",
+  "requisitos": [
+   "clear order: *first, then, after that, in the end*",
+   "three past perfect sentences",
+   "one *While we were waiting,…*",
+   "use *house hunting*, *neighbourhood* and *housing shortage*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Put your story in five bullet points."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Three sentences with *had already… before…*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds of the whole story. Check your tenses."
+  }
+ ],
+ "autochequeo": [
+  "Is the earlier event marked with the past perfect where needed?",
+  "Is the past continuous used for background, not the main events?",
+  "Is the time order of the story clear?",
+  "Is the story more than just a list of events?",
+  "Have I used at least one past perfect correctly?"
+ ],
+ "promptCorreccion": "Focus only on the time sequencing: past simple, past continuous, past perfect. Check whether earlier events are correctly marked. Do not rewrite the text."
+}

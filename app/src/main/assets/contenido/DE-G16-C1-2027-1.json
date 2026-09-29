@@ -1,0 +1,361 @@
+{
+ "id": "DE-G16-C1-2027-1",
+ "skillId": "DE-G16",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T01",
+ "titulo": "Genitiv und Genitivpräpositionen",
+ "subtitulo": "Genitivpräpositionen im Bericht",
+ "ancla": "PD B2",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf C1 kommen die formelleren Genitivpräpositionen hinzu (aufgrund, angesichts, infolge, mangels) sowie Genitivketten mit zwei oder drei Gliedern. Das ist die Sprache von Berichten und Verwaltungstexten, in denen der Genitiv gehäuft auftritt.",
+ "cuadroReferencia": {
+  "titulo": "Formelle Genitivpräpositionen",
+  "columnas": [
+   "Präposition",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "aufgrund",
+    "aufgrund der Verzögerung des Projekts"
+   ],
+   [
+    "angesichts",
+    "angesichts der Komplexität der Lage"
+   ],
+   [
+    "infolge",
+    "infolge der Änderung der Vorschriften"
+   ],
+   [
+    "mangels",
+    "mangels ausreichender Beweise"
+   ]
+  ],
+  "notaPie": "Ab drei Genitivgliedern in einer Kette wird der Satz fast immer klarer, wenn man ihn in einen Nebensatz auflöst."
+ },
+ "ejemplos": [
+  {
+   "texto": "Aufgrund der Verzögerung des gesamten Projekts musste der Zeitplan angepasst werden.",
+   "audio": true
+  },
+  {
+   "texto": "Angesichts der Komplexität der Lage wurde eine externe Prüfung empfohlen.",
+   "audio": true
+  },
+  {
+   "texto": "Mangels ausreichender Beweise wurde das Verfahren eingestellt."
+  }
+ ],
+ "notas": [
+  "Mangels ist besonders formell und typisch für juristische und administrative Texte.",
+  "Bei zwei Genitivgliedern hintereinander (der Verzögerung des Projekts) bleibt der Satz noch gut lesbar; ab drei Gliedern wird es schwierig.",
+  "Aufgrund wird in der gesprochenen Sprache oft mit Dativ verwendet, im geschriebenen Standard bleibt der Genitiv Pflicht."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet all diese Bedeutungen mit de-Konstruktionen ohne eigenen Kasus (a causa de, ante la complejidad de). Die Notwendigkeit, hier den Genitiv aktiv zu markieren, ist deshalb für Spanischsprachige eine zusätzliche Fehlerquelle, die im Spanischen nicht existiert.",
+  "it": "Das Italienische bildet diese Bedeutungen mit Präpositionalgefügen auf di (a causa di, alla luce di, in mancanza di); als Merkhilfe entspricht der Genitiv oft genau diesem di. Wo das Italienische a verlangt (in seguito a, grazie a), rutschen Italienischsprachige jedoch leicht in den Dativ: infolge dem statt infolge des.",
+  "fr": "Das Französische bildet diese Bedeutungen mit Wendungen auf de (en raison de, faute de, compte tenu de), ohne Kasus. Hilfreich ist die genaue Parallele mangels – faute de, beide oft ohne Artikel; zu lernen ist, dass im Deutschen ohne sichtbaren Genitiv der Dativ einspringt (mangels Beweisen). Der Hauptfehler bleibt de als von: aufgrund von dem Projekt.",
+  "pt": "Das Portugiesische bildet diese Bedeutungen mit Präpositionen ohne Kasus (devido a, em virtude de, por falta de), und die Verschmelzungen do/da verdecken jede Kasusmarkierung. Besonders devido a verleitet zum Dativ: aufgrund dem Projekt statt aufgrund des Projekts.",
+  "en": "Das Englische bildet diese Bedeutungen mit Präpositionen ohne Kasus (due to, in view of, as a result of, for lack of). Englischsprachige vergessen deshalb leicht die Genitivendungen an Artikel und Nomen (aufgrund des Projekt) oder greifen zum Dativ, der aus der Umgangssprache vertraut klingt (wegen dem, aufgrund dem)."
+ },
+ "errores": [
+  "Aufgrund mit Dativ statt Genitiv im geschriebenen Text verwenden.",
+  "Eine Genitivkette mit vier oder mehr Gliedern bilden, die dadurch unlesbar wird.",
+  "Mangels in einem zu informellen Kontext verwenden, wo es unpassend gestelzt wirkt."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*a pesar de* als *trotz von* übertragen: *trotz von dem Regen* statt *trotz des Regens*."
+  ],
+  "it": [
+   "*a causa di* als *wegen von* übertragen: *wegen von dem Streik* statt *wegen des Streiks*."
+  ],
+  "fr": [
+   "*en raison de* immer als *aufgrund von* übertragen, auch mit Artikel: *aufgrund von dem Streik* statt *aufgrund des Streiks*."
+  ],
+  "pt": [
+   "*por causa de* als *wegen von* übertragen: *wegen von dem Streik* statt *wegen des Streiks*."
+  ],
+  "en": [
+   "*because of* als *wegen von* übertragen: *wegen von dem Streik* statt *wegen des Streiks*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "auf Augenhöhe verhandeln",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "negociar de igual a igual",
+    "en": "to negotiate as equals",
+    "fr": "négocier d'égal à égal",
+    "it": "trattare alla pari",
+    "pt": "negociar de igual para igual"
+   }
+  },
+  {
+   "item": "das Betriebsklima",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el ambiente laboral",
+    "en": "working atmosphere",
+    "fr": "l'ambiance de travail",
+    "it": "il clima aziendale",
+    "pt": "o clima de trabalho"
+   }
+  },
+  {
+   "item": "delegieren",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "delegar",
+    "en": "to delegate",
+    "fr": "déléguer",
+    "it": "delegare",
+    "pt": "delegar"
+   }
+  },
+  {
+   "item": "die Arbeitsbelastung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la carga de trabajo",
+    "en": "workload",
+    "fr": "la charge de travail",
+    "it": "il carico di lavoro",
+    "pt": "a carga de trabalho"
+   }
+  },
+  {
+   "item": "die Unternehmenskultur",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cultura empresarial",
+    "en": "corporate culture",
+    "fr": "la culture d'entreprise",
+    "it": "la cultura aziendale",
+    "pt": "a cultura empresarial"
+   }
+  },
+  {
+   "item": "etwas ansprechen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "plantear un tema",
+    "en": "to raise an issue",
+    "fr": "aborder un sujet",
+    "it": "sollevare una questione",
+    "pt": "abordar um assunto"
+   }
+  },
+  {
+   "item": "sich abgrenzen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "poner límites",
+    "en": "to set boundaries",
+    "fr": "poser des limites",
+    "it": "porre dei limiti",
+    "pt": "impor limites"
+   }
+  },
+  {
+   "item": "der Termindruck",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la presión de los plazos",
+    "en": "deadline pressure",
+    "fr": "la pression des délais",
+    "it": "la pressione delle scadenze",
+    "pt": "a pressão dos prazos"
+   }
+  },
+  {
+   "item": "die Reibung im Team",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las fricciones en el equipo",
+    "en": "friction in the team",
+    "fr": "les frictions dans l'équipe",
+    "it": "gli attriti nel team",
+    "pt": "o atrito na equipa"
+   }
+  },
+  {
+   "item": "die Rückmeldung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la devolución",
+    "en": "feedback",
+    "fr": "le retour",
+    "it": "il riscontro",
+    "pt": "o retorno"
+   }
+  },
+  {
+   "item": "die Zuständigkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la competencia, el ámbito",
+    "en": "area of responsibility",
+    "fr": "la compétence",
+    "it": "la competenza",
+    "pt": "a competência"
+   }
+  },
+  {
+   "item": "einen Kompromiss eingehen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "llegar a un acuerdo",
+    "en": "to make a compromise",
+    "fr": "faire un compromis",
+    "it": "scendere a compromessi",
+    "pt": "chegar a um compromisso"
+   }
+  },
+  {
+   "item": "etwas zur Sprache bringen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sacar un tema a colación",
+    "en": "to bring something up",
+    "fr": "mettre qc sur le tapis",
+    "it": "portare qc in discussione",
+    "pt": "trazer algo à conversa"
+   }
+  },
+  {
+   "item": "sich verzetteln",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dispersarse",
+    "en": "to spread oneself too thin",
+    "fr": "se disperser",
+    "it": "disperdersi",
+    "pt": "dispersar-se"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "aufgrund…",
+   "funcion": "Ursache, formell",
+   "traducciones": {
+    "es": "debido a…",
+    "en": "due to…",
+    "fr": "en raison de…",
+    "it": "a causa di…",
+    "pt": "devido a…"
+   }
+  },
+  {
+   "expresion": "angesichts…",
+   "funcion": "Umstand, formell",
+   "traducciones": {
+    "es": "dada la…",
+    "en": "given the…",
+    "fr": "compte tenu de…",
+    "it": "alla luce di…",
+    "pt": "tendo em conta…"
+   }
+  },
+  {
+   "expresion": "infolge…",
+   "funcion": "Folge, formell",
+   "traducciones": {
+    "es": "a raíz de…",
+    "en": "as a result of…",
+    "fr": "à la suite de…",
+    "it": "a seguito di…",
+    "pt": "em consequência de…"
+   }
+  },
+  {
+   "expresion": "mangels…",
+   "funcion": "Mangel, sehr formell",
+   "traducciones": {
+    "es": "por falta de…",
+    "en": "for lack of…",
+    "fr": "faute de…",
+    "it": "per mancanza di…",
+    "pt": "por falta de…"
+   }
+  },
+  {
+   "expresion": "anlässlich…",
+   "funcion": "Anlass, formell",
+   "traducciones": {
+    "es": "con motivo de…",
+    "en": "on the occasion of…",
+    "fr": "à l’occasion de…",
+    "it": "in occasione di…",
+    "pt": "por ocasião de…"
+   }
+  },
+  {
+   "expresion": "in Anbetracht…",
+   "funcion": "synonym zu angesichts",
+   "traducciones": {
+    "es": "en vista de…",
+    "en": "in view of…",
+    "fr": "compte tenu de…",
+    "it": "in considerazione di…",
+    "pt": "tendo em consideração…"
+   }
+  },
+  {
+   "expresion": "Gesprochen nehme ich lieber wegen.",
+   "funcion": "die formelle Praeposition bewusst vermeiden",
+   "traducciones": {
+    "es": "Hablando prefiero la preposición común.",
+    "en": "When speaking I'd rather use the plain preposition.",
+    "fr": "À l'oral, je préfère la préposition courante.",
+    "it": "A voce preferisco la preposizione comune.",
+    "pt": "A falar prefiro a preposição comum."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie einen internen Bericht über ein Problem in der Unternehmenskultur Ihres Teams.",
+  "requisitos": [
+   "vier formelle Genitivpräpositionen (*angesichts*, *infolge*, *mangels*, *anlässlich*)",
+   "eine Genitivkette mit zwei Gliedern",
+   "ein Satz, in dem Sie den Genitiv bewusst durch *von* ersetzt haben — mit Grund",
+   "*die Unternehmenskultur*, *das Betriebsklima* und *auf Augenhöhe verhandeln* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei *weil*-Sätze zur *Arbeitsbelastung* in *aufgrund*/*infolge*-Konstruktionen umwandeln."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "*Mangels* und *angesichts* in je zwei Sätzen über *Delegieren*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: ein Problem im Team *ansprechen*. Mündlich — wie viel Genitiv verträgt es?"
+  }
+ ],
+ "autochequeo": [
+  "Steht nach jeder Präposition der Genitiv?",
+  "Hat eine Genitivkette mehr als drei Glieder?",
+  "Passt mangels zum Register des Textes?",
+  "Habe ich mindestens vier verschiedene Genitivpräpositionen benutzt?",
+  "Wäre eine Auflösung in einen Nebensatz an einer Stelle klarer?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die formellen Genitivpräpositionen aufgrund, angesichts, infolge und mangels sowie die Länge der Genitivketten. Prüfen Sie den Kasus in jedem Fall. Schreiben Sie den Text nicht neu."
+}

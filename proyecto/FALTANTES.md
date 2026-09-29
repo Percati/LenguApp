@@ -269,8 +269,39 @@ independientemente, no solo por los reportes:
   traducción al alemán — cae bajo la misma excepción ya documentada en la sección 7.5
   (alemán como idioma de interfaz, no como alemán suizo aprendido). No es un error.
 
-🔴 **Único pendiente real: Code tiene que embeber este contenido en `app/src/main/assets/`**
-y regenerar el APK. Ver sección 11 para el estado de los calendarios/assets.
+✅ **Embebido por Code (sept 2026):** `app/src/main/assets/contenido/` se
+regeneró componiendo TODO 2026 (piloto + los 7 pares parciales) y TODO 2027,
+sin separar por año — ya no hay motivo para embeber un subconjunto (ver
+sección 11 para los calendarios). 606 fichas + 56 semanas especiales (53
+repaso, 3 Survival — el Survival trimestral de 2027 no es semana especial,
+vive en el fin de semana, ver regla dura #11) confirmadas en los assets.
+
+Audio re-verificado de forma independiente, no solo por el reporte de la
+sección: `exportar_audio_maestro.py --solo-pendientes` (sin filtrar por año,
+cubre Ejemplo+Expresión+Vocabulario) da **0 textos pendientes**, y de los
+8202 archivos que `audio-estado.json` marca como grabados, **los 8202
+tienen su `.ogg` físico** en `assets/audio/` (cotejado por nombre de
+archivo, recursivo — están organizados en subcarpetas `DE/`/`EN/`, no
+sueltos). Nada falta.
+
+`ContenidoAssetsTest.kt` tenía los conteos del piloto solo (51/42/9):
+actualizado a 662/606/56. `ContenidoSemanalScreenRenderTest.kt` (pantallazo
+por cada archivo de `assets/contenido/`) pasa de 51 a 662 casos — sigue
+siendo rápido (toda la suite completa en ~1m15s), no hizo falta acotarlo.
+Dos tests de `ResolutorSemanaTest.kt` de la sección 11 asumían que las
+fichas de los 7 pares parciales todavía no estaban embebidas (correcto en
+ese momento); ahora que sí lo están, uno pasó a verificar que la semana 41
+resuelve de verdad (antes: "sin contenido"), y el otro se reescribió con un
+`contenidoPorId` sintético para seguir probando ese camino del resolutor
+sin depender de que a los assets les falte algo.
+
+Primer build con el año completo real: **APK debug 59,1 MB** (61 921 178
+bytes), `assets/audio/` 54 MB (8202 `.ogg`), `assets/contenido/` 13 MB,
+`assets/calendario/` 44 KB (10 archivos, sin cambios — 2027 sigue sin
+calendario embebido, semanas de repaso 2027 sin dueño, sección 8).
+
+`./gradlew compileDebugKotlin compileDebugUnitTestKotlin test assembleDebug`
+limpio: 825 tests, 0 fallas.
 
 ## 10. Features de app — ✅ implementadas por Code (sept 2026)
 

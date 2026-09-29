@@ -1,0 +1,394 @@
+{
+ "id": "EN-K01-C1-2027-1",
+ "skillId": "EN-K01",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T06",
+ "titulo": "Inversion, Cleft and Fronting for Emphasis",
+ "subtitulo": "An environmental argument with three kinds of emphasis",
+ "ancla": "EGP C1",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Native-sounding emphasis rarely uses just one device. A skilled writer combines negative inversion, a cleft and fronting in the same passage, choosing whichever fits each sentence rather than repeating one pattern. Learned separately, these three sound like exercises; combined, they sound like argument.",
+ "cuadroReferencia": {
+  "titulo": "Three devices, one purpose",
+  "columnas": [
+   "Device",
+   "Pattern",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Negative inversion",
+    "Not until / Rarely + aux + subject",
+    "Not until the data arrived did anyone question it."
+   ],
+   [
+    "Cleft",
+    "What/It + be + …",
+    "What mattered most was the timing."
+   ],
+   [
+    "Fronting",
+    "object or complement first",
+    "That much, at least, we can agree on."
+   ]
+  ],
+  "notaPie": "Two of these in one paragraph is stylish. Three in one sentence is theatrical — use at most two devices per sentence."
+ },
+ "ejemplos": [
+  {
+   "texto": "Not until the results were reviewed did anyone question the method.",
+   "audio": true
+  },
+  {
+   "texto": "What struck the committee most was how little had changed.",
+   "audio": true
+  },
+  {
+   "texto": "That much, at least, everyone could agree on."
+  }
+ ],
+ "notas": [
+  "Combining a cleft with fronting in the same sentence usually overloads it; pick one per sentence and save the other for a nearby sentence.",
+  "Negative inversion is the most formal of the three and reads oddly in speech unless delivered with real emphasis.",
+  "The safest combination for spoken English is a soft cleft (what struck me was…) followed by fronting in the next sentence."
+ ],
+ "contraste": {
+  "es": "Spanish moves emphasis by reordering words freely (a mí no me sorprendió), without a special grammatical structure. English cannot reorder like that, so it has to build one of these three structures – which is why Spanish speakers find it easier to combine them badly than to avoid them.",
+  "de": "German speakers emphasise mainly by fronting, because the German verb-second rule makes any element available for the first position. In English, fronting is the most marked of the three devices, so German speakers need to practise clefts and negative inversion (with do-support) to avoid relying on fronting alone.",
+  "it": "Italian emphasises through free word order and left-dislocation with a resumptive pronoun (Questo, non lo accetto). The calque This, I don't accept it is non-standard; the English equivalent is fronting without a pronoun (This I cannot accept) or a cleft.",
+  "fr": "French relies heavily on clefts (c'est… que) and dislocation (Ce rapport, je l'ai lu). French speakers therefore over-use it-clefts and may transfer dislocation, which is non-standard in written English; fronting and inversion need deliberate practice.",
+  "pt": "Brazilian Portuguese often fronts a topic without any resumptive pronoun (Isso eu não aceito), which maps directly onto English fronting (This I cannot accept). Portuguese speakers therefore have fronting and clefts ready; inversion is the device that needs practice."
+ },
+ "errores": [
+  "Stacking all three devices in a single sentence, which reads as overwrought rather than emphatic.",
+  "Dropping the auxiliary in negative inversion: Not until the results arrived anyone questioned it.",
+  "Using a cleft where the content doesn't justify the emphasis, so it reads as inflated."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Lo que quiero es que vengas* rendered as *What I want is that you come* instead of *What I want is for you to come*."
+  ],
+  "de": [
+   "Fronting the object and inverting as in German V2: *This book have I never read* instead of *This book I have never read*."
+  ],
+  "it": [
+   "*Quello che voglio è che tu venga* rendered as *What I want is that you come* instead of *What I want is for you to come*."
+  ],
+  "fr": [
+   "Keeping the resumptive *c'est*: *What I want, it is that you come* instead of *What I want is for you to come*."
+  ],
+  "pt": [
+   "*O que eu quero é que venhas* rendered as *What I want is that you come* instead of *What I want is for you to come*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "carbon footprint",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la huella de carbono",
+    "de": "der CO₂-Fussabdruck",
+    "fr": "l’empreinte carbone",
+    "it": "l’impronta di carbonio",
+    "pt": "a pegada de carbono"
+   }
+  },
+  {
+   "item": "greenhouse gases",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gases de efecto invernadero",
+    "de": "Treibhausgase",
+    "fr": "les gaz à effet de serre",
+    "it": "i gas serra",
+    "pt": "os gases com efeito de estufa"
+   }
+  },
+  {
+   "item": "drought",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la sequía",
+    "de": "die Dürre",
+    "fr": "la sécheresse",
+    "it": "la siccità",
+    "pt": "a seca"
+   }
+  },
+  {
+   "item": "tipping point",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el punto de inflexión",
+    "de": "der Kipppunkt",
+    "fr": "le point de bascule",
+    "it": "il punto di non ritorno / svolta",
+    "pt": "o ponto de viragem"
+   }
+  },
+  {
+   "item": "renewable energy",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las energías renovables",
+    "de": "erneuerbare Energie",
+    "fr": "l’énergie renouvelable",
+    "it": "l’energia rinnovabile",
+    "pt": "a energia renovável"
+   }
+  },
+  {
+   "item": "circular economy",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la economía circular",
+    "de": "die Kreislaufwirtschaft",
+    "fr": "l’économie circulaire",
+    "it": "l’economia circolare",
+    "pt": "a economia circular"
+   }
+  },
+  {
+   "item": "environmental burden",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el impacto ambiental",
+    "de": "die Umweltbelastung",
+    "fr": "l'impact environnemental",
+    "it": "l'impatto ambientale",
+    "pt": "o impacto ambiental"
+   }
+  },
+  {
+   "item": "sustainable",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sostenible",
+    "de": "nachhaltig",
+    "fr": "durable",
+    "it": "sostenibile",
+    "pt": "sustentável"
+   }
+  },
+  {
+   "item": "energy transition",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la transición energética",
+    "de": "die Energiewende",
+    "fr": "la transition énergétique",
+    "it": "la transizione energetica",
+    "pt": "a transição energética"
+   }
+  },
+  {
+   "item": "subsidy",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el subsidio",
+    "de": "die Subvention / Förderung",
+    "fr": "la subvention",
+    "it": "il sussidio",
+    "pt": "o subsídio"
+   }
+  },
+  {
+   "item": "electric mobility",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la movilidad eléctrica",
+    "de": "die Elektromobilität",
+    "fr": "la mobilité électrique",
+    "it": "la mobilità elettrica",
+    "pt": "a mobilidade elétrica"
+   }
+  },
+  {
+   "item": "net zero",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "cero neto (emisiones)",
+    "de": "Netto-Null",
+    "fr": "le zéro net",
+    "it": "zero netto",
+    "pt": "zero líquido"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Not until…did…",
+   "funcion": "delays and emphasises the trigger",
+   "traducciones": {
+    "es": "no fue hasta que…",
+    "de": "Erst als…, …",
+    "fr": "Ce n’est que lorsque… que…",
+    "it": "Solo quando…",
+    "pt": "Só quando…"
+   }
+  },
+  {
+   "expresion": "What mattered most was…",
+   "funcion": "foregrounds the key point",
+   "traducciones": {
+    "es": "lo que más importó fue…",
+    "de": "Am wichtigsten war…",
+    "fr": "Ce qui comptait le plus, c’était…",
+    "it": "Quello che contava di più era…",
+    "pt": "O que mais importou foi…"
+   }
+  },
+  {
+   "expresion": "It was X, not Y, that…",
+   "funcion": "isolates the true cause",
+   "traducciones": {
+    "es": "fue X, no Y, lo que…",
+    "de": "Es war X, nicht Y, das…",
+    "fr": "C’est X, et non Y, qui…",
+    "it": "È stato X, non Y, a…",
+    "pt": "Foi X, não Y, que…"
+   }
+  },
+  {
+   "expresion": "That much we can agree on.",
+   "funcion": "fronts a shared conclusion",
+   "traducciones": {
+    "es": "en eso sí podemos coincidir",
+    "de": "Darauf können wir uns zumindest einigen.",
+    "fr": "Là-dessus, au moins, nous pouvons être d’accord.",
+    "it": "Su questo almeno possiamo essere d’accordo.",
+    "pt": "Nisso, pelo menos, podemos concordar."
+   }
+  },
+  {
+   "expresion": "Rarely has…",
+   "funcion": "emphasises rarity, formal",
+   "traducciones": {
+    "es": "en pocas ocasiones ha…",
+    "de": "Selten hat…",
+    "fr": "Rarement a-t-on…",
+    "it": "Raramente…",
+    "pt": "Raramente…"
+   }
+  },
+  {
+   "expresion": "Little did anyone expect that…",
+   "funcion": "fixed ironic inversion",
+   "traducciones": {
+    "es": "poco se esperaba nadie que…",
+    "de": "Kaum jemand hätte erwartet, dass…",
+    "fr": "Personne ne s’attendait vraiment à ce que…",
+    "it": "Nessuno si sarebbe aspettato che…",
+    "pt": "Poucos esperavam que…"
+   }
+  },
+  {
+   "expresion": "So convinced were they that…",
+   "funcion": "so + adjective inversion, narrative",
+   "traducciones": {
+    "es": "Tan convencidos estaban de que…",
+    "de": "So überzeugt waren sie, dass…",
+    "fr": "Ils étaient si convaincus que…",
+    "it": "Erano così convinti che…",
+    "pt": "Tão convencidos estavam de que…"
+   }
+  },
+  {
+   "expresion": "The reason it failed was…",
+   "funcion": "cleft that isolates the cause",
+   "traducciones": {
+    "es": "La razón por la que falló fue…",
+    "de": "Der Grund für das Scheitern war…",
+    "fr": "La raison de l'échec, c'est…",
+    "it": "Il motivo del fallimento è stato…",
+    "pt": "A razão por que falhou foi…"
+   }
+  },
+  {
+   "expresion": "Emphasis here would be too much.",
+   "funcion": "names the choice not to emphasise",
+   "traducciones": {
+    "es": "Acá el énfasis sería demasiado.",
+    "de": "Hier wäre Betonung zu viel.",
+    "fr": "Ici, l'emphase serait excessive.",
+    "it": "Qui l'enfasi sarebbe troppa.",
+    "pt": "Aqui a ênfase seria demasiada."
+   }
+  },
+  {
+   "expresion": "One thing is certain: …",
+   "funcion": "fronting that announces a conclusion",
+   "traducciones": {
+    "es": "Una cosa es segura: …",
+    "de": "Eines steht fest: …",
+    "fr": "Une chose est sûre : …",
+    "it": "Una cosa è certa: …",
+    "pt": "Uma coisa é certa: …"
+   }
+  },
+  {
+   "expresion": "Where it does work is…",
+   "funcion": "cleft that limits the scope of a claim",
+   "traducciones": {
+    "es": "Donde sí funciona es…",
+    "de": "Wo es funktioniert, ist…",
+    "fr": "Là où cela fonctionne, c'est…",
+    "it": "Dove invece funziona è…",
+    "pt": "Onde funciona mesmo é…"
+   }
+  },
+  {
+   "expresion": "Never again would we…",
+   "funcion": "inversion projecting into the future",
+   "traducciones": {
+    "es": "Nunca más volveríamos a…",
+    "de": "Nie wieder würden wir…",
+    "fr": "Plus jamais nous ne…",
+    "it": "Mai più avremmo…",
+    "pt": "Nunca mais voltaríamos a…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write an opinion column arguing that we underestimate how close some *tipping points* are.",
+  "requisitos": [
+   "one negative inversion",
+   "one *it*-cleft and one *what*-cleft",
+   "one fronted phrase (*That much we can agree on*)",
+   "use *tipping point*, *drought* and *greenhouse gases*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write one plain paragraph about *carbon footprint*. Then mark where each device could go."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Rewrite it using all three devices, one per sentence, not stacked."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: what surprised you most about *drought*? Start with *What struck me…*"
+  }
+ ],
+ "autochequeo": [
+  "Is the auxiliary present in every inversion?",
+  "Does each sentence use at most two of the three devices?",
+  "Does the content justify the emphasis, or does it read as inflated?",
+  "Is at least one device used in a genuinely spoken-sounding way?",
+  "Would plain word order work just as well anywhere I used one of these?"
+ ],
+ "promptCorreccion": "Focus only on inversion, clefts and fronting. Check the auxiliary in every inversion, flag any sentence stacking more than two devices, and say where plain word order would serve better. Do not rewrite the text."
+}

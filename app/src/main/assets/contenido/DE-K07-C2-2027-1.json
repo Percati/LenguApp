@@ -1,0 +1,416 @@
+{
+ "id": "DE-K07-C2-2027-1",
+ "skillId": "DE-K07",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C2",
+ "categoria": "grammar",
+ "topicId": "T09",
+ "titulo": "Funktionsverbgefüge + Nominalstil + Passiversatzformen",
+ "subtitulo": "Der Ton des Verwaltungstextes",
+ "ancla": "Erkundungen C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf C2 verschmelzen Funktionsverbgefüge, Nominalstil und Passiversatzformen zum charakteristischen Ton des deutschen Verwaltungs- und Rechtstextes: Massnahmen werden in Betracht gezogen, Risiken lassen sich nicht ausschliessen, Verantwortung wird zur Kenntnis genommen. Kein einzelnes Mittel ist neu; ihre gleichzeitige Verdichtung ist es.",
+ "cuadroReferencia": {
+  "titulo": "Drei Mittel, ein Registerton",
+  "columnas": [
+   "Mittel",
+   "Beispiel",
+   "Beitrag zum Ton"
+  ],
+  "filas": [
+   [
+    "Funktionsverbgefüge",
+    "in Betracht ziehen",
+    "formalisiert die Handlung"
+   ],
+   [
+    "Nominalstil",
+    "die Berücksichtigung der Umstände",
+    "verdichtet den Inhalt"
+   ],
+   [
+    "Passiversatzform",
+    "lässt sich nicht ausschliessen",
+    "entpersonalisiert die Aussage"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Eine Anpassung der Massnahme wird derzeit in Betracht gezogen.",
+   "audio": true
+  },
+  {
+   "texto": "Ein Restrisiko lässt sich unter den gegebenen Umständen nicht ausschliessen.",
+   "audio": true
+  },
+  {
+   "texto": "Die Berücksichtigung dieser Umstände wird zur Kenntnis genommen."
+  }
+ ],
+ "notas": [
+  "Diese drei Mittel treten in Verwaltungs- und Rechtstexten fast immer gemeinsam auf, nie isoliert — das ist, was den charakteristischen Ton ausmacht.",
+  "Der Effekt ist bewusste Entpersonalisierung: Niemand entscheidet, zieht in Betracht oder nimmt zur Kenntnis — es geschieht.",
+  "In einem persönlichen Brief oder einer E-Mail an eine bekannte Person wirkt diese Dichte kalt und unpassend distanziert."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat vereinzelt ähnliche Konstruktionen, kombiniert sie aber nicht mit derselben Systematik zu einem eigenen Registerton. Ein hispanophoner C2-Sprecher erkennt den Verwaltungston beim Lesen sofort, produziert ihn aber oft mit einem persönlicheren, verbaleren Unterton, der im deutschen Original fehlt.",
+  "it": "Das burocratese ist genau diese Verbindung (si procede alla verifica, viene presa in considerazione, non si esclude che), Italienischsprachige kennen den Ton also bestens. Die Gefahr liegt im Wortlaut: Sie übertragen italienische Gefüge und bilden etwa in Betracht nehmen statt in Betracht ziehen.",
+  "fr": "Die französische Verwaltungssprache verbindet dieselben Mittel (procéder à la vérification, prendre en considération, il ne saurait être exclu que), und mit faire l'objet de (fait l'objet d'un examen) hat sie ein besonders nahes Gegenstück zum Funktionsverbgefüge. Französischsprachige treffen den Ton deshalb gut; die Fehlerquelle sind wörtlich übertragene Gefüge.",
+  "pt": "Auch die portugiesische Verwaltungssprache kennt Gefüge wie proceder à verificação oder levar em consideração, kombiniert sie aber seltener mit Passiversatzformen. Portugiesischsprachige treffen den deutschen Ton deshalb nur teilweise und übertragen Gefüge oft wörtlich (in Betracht nehmen statt in Betracht ziehen).",
+  "en": "Das Englische kennt einzelne Funktionsverbgefüge (take into consideration, bring to a conclusion), die englische Verwaltungssprache strebt aber seit Jahren nach Klarheit und Aktiv. Englischsprachige produzieren den deutschen Behördenton deshalb oft zu persönlich und zu aktiv (wir prüfen statt es wird geprüft bzw. ist zu prüfen)."
+ },
+ "errores": [
+  "Nur eines der drei Mittel verwenden und dadurch den vollen Registerton verfehlen.",
+  "Diese Dichte in einem persönlichen Kontext einsetzen, wo sie kalt und unpassend wirkt.",
+  "Das feste Verb im Funktionsverbgefüge durch ein Synonym ersetzen und dadurch die Festigkeit der Wendung zerstören."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*tomar una decisión* als *eine Entscheidung nehmen* übertragen statt *treffen*.",
+   "*poner en marcha* als *in Marsch setzen* übertragen statt *in Gang setzen*."
+  ],
+  "it": [
+   "*prendere una decisione* als *eine Entscheidung nehmen* übertragen statt *treffen*."
+  ],
+  "fr": [
+   "*prendre une décision* als *eine Entscheidung nehmen* übertragen statt *treffen*."
+  ],
+  "pt": [
+   "*tomar uma decisão* als *eine Entscheidung nehmen* übertragen statt *treffen*."
+  ],
+  "en": [
+   "*to make a decision* als *eine Entscheidung machen* übertragen statt *treffen*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Bildungsideal",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el ideal educativo",
+    "en": "educational ideal",
+    "fr": "l'idéal éducatif",
+    "it": "l'ideale formativo",
+    "pt": "o ideal educativo"
+   }
+  },
+  {
+   "item": "das duale System",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el sistema de formación dual",
+    "en": "dual vocational training system",
+    "fr": "le système dual",
+    "it": "il sistema duale",
+    "pt": "o sistema dual"
+   }
+  },
+  {
+   "item": "die Allgemeinbildung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cultura general",
+    "en": "general education",
+    "fr": "la culture générale",
+    "it": "la cultura generale",
+    "pt": "a cultura geral"
+   }
+  },
+  {
+   "item": "die Ausbildung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la formación profesional",
+    "en": "vocational training",
+    "fr": "l'apprentissage",
+    "it": "la formazione professionale",
+    "pt": "a formação profissional"
+   }
+  },
+  {
+   "item": "die Bildung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la formación integral",
+    "en": "education, cultivation",
+    "fr": "la culture, la formation",
+    "it": "la formazione",
+    "pt": "a formação"
+   }
+  },
+  {
+   "item": "sich etwas aneignen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "apropiarse de un saber",
+    "en": "to acquire, to master",
+    "fr": "s'approprier qc",
+    "it": "appropriarsi di qc",
+    "pt": "apropriar-se de algo"
+   }
+  },
+  {
+   "item": "das Pauken",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el empollar",
+    "en": "cramming",
+    "fr": "le bachotage",
+    "it": "lo studio mnemonico",
+    "pt": "o marranço"
+   }
+  },
+  {
+   "item": "der Bildungsbürger",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el burgués culto",
+    "en": "cultured middle-class citizen",
+    "fr": "le bourgeois cultivé",
+    "it": "il borghese colto",
+    "pt": "o burguês culto"
+   }
+  },
+  {
+   "item": "der Frontalunterricht",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la clase magistral tradicional",
+    "en": "teacher-centred teaching",
+    "fr": "l'enseignement magistral",
+    "it": "la lezione frontale",
+    "pt": "o ensino expositivo"
+   }
+  },
+  {
+   "item": "der Wissensdurst",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la sed de saber",
+    "en": "thirst for knowledge",
+    "fr": "la soif de savoir",
+    "it": "la sete di conoscenza",
+    "pt": "a sede de saber"
+   }
+  },
+  {
+   "item": "die Halbbildung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cultura a medias",
+    "en": "superficial learning",
+    "fr": "la demi-culture",
+    "it": "la semicultura",
+    "pt": "a meia-cultura"
+   }
+  },
+  {
+   "item": "die Neugier wecken",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "despertar la curiosidad",
+    "en": "to spark curiosity",
+    "fr": "éveiller la curiosité",
+    "it": "suscitare la curiosità",
+    "pt": "despertar a curiosidade"
+   }
+  },
+  {
+   "item": "die Selbstständigkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la autonomía",
+    "en": "independence",
+    "fr": "l'autonomie",
+    "it": "l'autonomia",
+    "pt": "a autonomia"
+   }
+  },
+  {
+   "item": "über den Horizont gehen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "superar la comprensión",
+    "en": "to be beyond one's grasp",
+    "fr": "dépasser l'entendement",
+    "it": "andare oltre la comprensione",
+    "pt": "ultrapassar a compreensão"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "…wird in Betracht gezogen.",
+   "funcion": "Funktionsverbgefüge, formell",
+   "traducciones": {
+    "es": "se está considerando…",
+    "en": "…is being considered.",
+    "fr": "…est à l’étude.",
+    "it": "…è in esame.",
+    "pt": "…está a ser considerado/a."
+   }
+  },
+  {
+   "expresion": "…lässt sich nicht ausschliessen.",
+   "funcion": "Passiversatzform",
+   "traducciones": {
+    "es": "no se puede descartar…",
+    "en": "…cannot be ruled out.",
+    "fr": "…ne peut être exclu(e).",
+    "it": "…non si può escludere.",
+    "pt": "…não pode ser excluído/a."
+   }
+  },
+  {
+   "expresion": "die Berücksichtigung der…",
+   "funcion": "Nominalstil",
+   "traducciones": {
+    "es": "la consideración de…",
+    "en": "the consideration of…",
+    "fr": "la prise en compte de…",
+    "it": "la considerazione di…",
+    "pt": "a consideração de…"
+   }
+  },
+  {
+   "expresion": "…wird zur Kenntnis genommen.",
+   "funcion": "Funktionsverbgefüge, distanziert",
+   "traducciones": {
+    "es": "se toma nota de…",
+    "en": "…is noted.",
+    "fr": "On prend acte de…",
+    "it": "…se ne prende atto.",
+    "pt": "Toma-se conhecimento de…"
+   }
+  },
+  {
+   "expresion": "eine Anpassung der…erfolgt…",
+   "funcion": "Nominalstil + Passiv",
+   "traducciones": {
+    "es": "se realiza un ajuste de…",
+    "en": "an adjustment of…takes place…",
+    "fr": "un ajustement de… est effectué…",
+    "it": "viene effettuato un adeguamento di…",
+    "pt": "é efetuado um ajuste de…"
+   }
+  },
+  {
+   "expresion": "…bleibt einer weiteren Prüfung vorbehalten.",
+   "funcion": "formelle Verzögerung",
+   "traducciones": {
+    "es": "queda sujeto a un examen posterior",
+    "en": "…remains subject to further review.",
+    "fr": "…reste soumis à un examen ultérieur.",
+    "it": "…resta soggetto a ulteriore esame.",
+    "pt": "…fica sujeito a uma análise posterior."
+   }
+  },
+  {
+   "expresion": "…ist Gegenstand laufender Prüfungen.",
+   "funcion": "Zuständigkeit ohne Zusage",
+   "traducciones": {
+    "es": "…es objeto de verificaciones en curso.",
+    "en": "…is the subject of ongoing review.",
+    "fr": "…fait l'objet d'examens en cours.",
+    "it": "…è oggetto di verifiche in corso.",
+    "pt": "…é objeto de verificações em curso."
+   }
+  },
+  {
+   "expresion": "Von einer Stellungnahme wird abgesehen.",
+   "funcion": "Auskunft verweigern, unpersönlich",
+   "traducciones": {
+    "es": "Se prescinde de tomar posición.",
+    "en": "No statement will be made.",
+    "fr": "Il est renoncé à toute prise de position.",
+    "it": "Si prescinde da una presa di posizione.",
+    "pt": "Prescinde-se de tomar posição."
+   }
+  },
+  {
+   "expresion": "Die Zuständigkeit liegt bei…",
+   "funcion": "Verantwortung verschieben, formell",
+   "traducciones": {
+    "es": "La competencia corresponde a…",
+    "en": "Responsibility lies with…",
+    "fr": "La compétence relève de…",
+    "it": "La competenza spetta a…",
+    "pt": "A competência cabe a…"
+   }
+  },
+  {
+   "expresion": "Im Klartext heisst das: …",
+   "funcion": "den Verwaltungston bewusst brechen",
+   "traducciones": {
+    "es": "En román paladino: …",
+    "en": "In plain language, that means: …",
+    "fr": "En clair, cela signifie : …",
+    "it": "In parole chiare significa: …",
+    "pt": "Em bom português, isso quer dizer: …"
+   }
+  },
+  {
+   "expresion": "Eine Fristverlängerung wird in Aussicht gestellt.",
+   "funcion": "Funktionsverbgefüge, vage Zusage",
+   "traducciones": {
+    "es": "Se contempla una prórroga del plazo.",
+    "en": "An extension of the deadline is envisaged.",
+    "fr": "Une prolongation du délai est envisagée.",
+    "it": "Si prospetta una proroga del termine.",
+    "pt": "Perspetiva-se uma prorrogação do prazo."
+   }
+  },
+  {
+   "expresion": "Wer hier handeln müsste, bleibt ungenannt.",
+   "funcion": "das fehlende Subjekt des Nominalstils benennen",
+   "traducciones": {
+    "es": "Quién debería actuar acá queda sin nombrar.",
+    "en": "Who would have to act here goes unnamed.",
+    "fr": "Qui devrait agir ici n'est pas nommé.",
+    "it": "Chi dovrebbe agire qui resta senza nome.",
+    "pt": "Quem deveria agir aqui fica por nomear."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Verfassen Sie den Auszug aus einer (fiktiven) Verordnung zur Reform der beruflichen Ausbildung.",
+  "requisitos": [
+   "drei Funktionsverbgefüge, drei Passiversatzformen, durchgehend Nominalstil",
+   "ein *bleibt einer weiteren Prüfung vorbehalten*",
+   "danach dieselbe Regelung in zwei Sätzen Alltagssprache",
+   "*das duale System*, *die Ausbildung* und *die Allgemeinbildung* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei einfache Aussagen zur *Bildung* in Verwaltungsdeutsch umformen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Einen echten Behördentext entschlüsseln: Was steht da eigentlich?"
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "2 Minuten: Welches *Bildungsideal* vertreten Sie? Bewusst ohne Verwaltungston."
+  }
+ ],
+ "autochequeo": [
+  "Sind alle drei Mittel im Text präsent, nicht nur eines?",
+  "Ist das feste Verb im Funktionsverbgefüge unverändert?",
+  "Passt diese Dichte zum Kontext, oder wirkt sie in einem persönlichen Text unpassend kalt?",
+  "Wirkt der Text wie ein echter Verwaltungs- oder Rechtstext?",
+  "Habe ich mindestens vier verschiedene Wendungen aus diesem Registerton benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Funktionsverbgefüge, Nominalstil und Passiversatzformen gemeinsam den charakteristischen Verwaltungston tragen. Schreiben Sie den Text nicht neu."
+}

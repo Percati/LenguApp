@@ -1,0 +1,376 @@
+{
+ "id": "DE-K02-C2-2026-1",
+ "skillId": "DE-K02",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C2",
+ "categoria": "grammar",
+ "topicId": "T01",
+ "titulo": "Passiv + Partizip I und II als Attribut",
+ "subtitulo": "Partizipialdichte nach Genre",
+ "ancla": "Erkundungen C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf C2 wird die Dichte dieser Konstruktion an das Genre angepasst: Gesetzestexte und Verwaltungsvorschriften tolerieren mehrere Partizipialattribute pro Satz, während selbst anspruchsvoller Journalismus einen verbaleren Stil beibehält. Die einzelne Konstruktion war schon auf C1 verfügbar; C2 bedeutet, ihre Dosierung nach Textsorte zu beurteilen.",
+ "cuadroReferencia": {
+  "titulo": "Wie viel Dichte ein Genre trägt",
+  "columnas": [
+   "Genre",
+   "Toleranz",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Gesetzestext",
+    "sehr hoch",
+    "die von der Behörde zu genehmigenden Anträge"
+   ],
+   [
+    "Wissenschaftlicher Bericht",
+    "hoch",
+    "die zu erwartenden, noch nicht quantifizierten Effekte"
+   ],
+   [
+    "Qualitätsjournalismus",
+    "mittel",
+    "die absehbaren, aber schwer zu beziffernden Folgen"
+   ],
+   [
+    "Literarische Erzählung",
+    "niedrig, nur für Effekt",
+    "das kaum zu ertragende Schweigen"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die von der Behörde zu genehmigenden Anträge werden gesammelt bearbeitet.",
+   "audio": true
+  },
+  {
+   "texto": "Die zu erwartenden, noch nicht quantifizierten Effekte bleiben unklar.",
+   "audio": true
+  },
+  {
+   "texto": "Das kaum zu ertragende Schweigen füllte den Raum."
+  }
+ ],
+ "notas": [
+  "Mehrere Partizipialattribute im selben Satz sind in Gesetzestexten normal und in literarischer Prosa fast immer ein Stilbruch.",
+  "Die Beurteilung, wie viel Dichte ein Text verträgt, ist die eigentliche C2-Kompetenz — die einzelne Konstruktion war schon vorher bekannt.",
+  "Ein zu dicht komprimierter Zeitungsartikel liest sich wie ein Verwaltungstext und verliert seine Zielgruppe."
+ ],
+ "contraste": {
+  "es": "Das Spanische toleriert in keinem Genre eine vergleichbare Dichte an Partizipialattributen und weicht durchgehend auf Relativsätze aus. Ein hispanophoner C2-Sprecher unterschätzt deshalb systematisch, wie viel Verdichtung ein deutscher Gesetzestext erwartet, und überschätzt sie in literarischer Prosa.",
+  "it": "Auch die italienische Rechts- und Verwaltungssprache ist sehr dicht, arbeitet aber mit nachgestellten Partizipien (le misure previste dall'articolo 3). Das Gefühl für die Dichte je Textsorte lässt sich deshalb übertragen; umzulernen ist, dass dieselbe Dichte im Deutschen vor dem Nomen steht und entsprechend früher an ihre Lesbarkeitsgrenze stösst.",
+  "fr": "Die französische Rechtssprache ist sehr dicht, arbeitet aber mit nachgestellten Partizipien (les mesures prévues à l'article 3). Das Genregefühl überträgt sich deshalb gut; neu ist, dass die gleiche Dichte im Deutschen vor dem Nomen steht und dort schneller schwer lesbar wird.",
+  "pt": "Die portugiesische Rechtssprache ist dicht, stellt ihre Partizipien aber nach (as medidas previstas no artigo 3.º). Das Genregefühl überträgt sich also; neu ist, dieselbe Dichte vor das Nomen zu stellen, wo sie früher an die Grenze der Lesbarkeit stösst.",
+  "en": "Die englische Rechtssprache ist dicht, stellt Partizipien aber nach (the measures provided for in Article 3), und der englische Journalismus ist deutlich verbaler als der deutsche. Englischsprachige haben deshalb ein gutes Genregefühl, unterschätzen aber, wie viel vorangestellte Verdichtung deutsche Normen- und Verwaltungstexte erwarten."
+ },
+ "errores": [
+  "Einen literarischen Text mit derselben Dichte wie einen Gesetzestext schreiben.",
+  "Einen Gesetzestext unternominalisieren und dadurch unpräzise wirken lassen.",
+  "Die Textsorte nicht vorher bestimmen, bevor die Dichte gewählt wird."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Den spanischen Rechtsstil mit Relativsätzen (*el cual*, *la cual*) übertragen, wo der deutsche Gesetzestext Partizipialattribute erwartet."
+  ],
+  "it": [
+   "Den italienischen Rechtsstil mit Relativsätzen (*il quale*, *la quale*) übertragen, wo der deutsche Gesetzestext Partizipialattribute erwartet."
+  ],
+  "fr": [
+   "Den französischen Rechtsstil mit Relativsätzen (*lequel*, *laquelle*) übertragen, wo der deutsche Gesetzestext Partizipialattribute erwartet."
+  ],
+  "pt": [
+   "Den portugiesischen Rechtsstil mit Relativsätzen (*o qual*, *a qual*) übertragen, wo der deutsche Gesetzestext Partizipialattribute erwartet."
+  ],
+  "en": [
+   "Das juristische *shall* als *soll* übertragen, wo der deutsche Gesetzestext den Indikativ oder *ist zu* verwendet: *Der Antrag soll gestellt werden* statt *Der Antrag ist zu stellen*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "Personal abbauen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "reducir plantilla",
+    "en": "to cut staff",
+    "fr": "réduire les effectifs",
+    "it": "ridurre il personale",
+    "pt": "reduzir pessoal"
+   }
+  },
+  {
+   "item": "der Handschlag gilt",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "un apretón de manos vale",
+    "en": "a handshake is binding",
+    "fr": "une poignée de main vaut accord",
+    "it": "una stretta di mano vale",
+    "pt": "um aperto de mão vale"
+   }
+  },
+  {
+   "item": "der Stellenwert der Arbeit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el lugar que ocupa el trabajo",
+    "en": "the place work holds",
+    "fr": "la place du travail",
+    "it": "il valore del lavoro",
+    "pt": "o lugar do trabalho"
+   }
+  },
+  {
+   "item": "die Aufstiegslogik",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la lógica del ascenso",
+    "en": "the logic of promotion",
+    "fr": "la logique de l'ascension",
+    "it": "la logica della carriera",
+    "pt": "a lógica da progressão"
+   }
+  },
+  {
+   "item": "die Betriebsblindheit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la ceguera del hábito laboral",
+    "en": "organisational blindness",
+    "fr": "l'aveuglement de l'habitude",
+    "it": "la cecità aziendale",
+    "pt": "a cegueira do hábito"
+   }
+  },
+  {
+   "item": "sich verdient machen um",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "hacer méritos en algo",
+    "en": "to render great service to",
+    "fr": "bien mériter de",
+    "it": "rendersi benemerito di",
+    "pt": "prestar serviços relevantes a"
+   }
+  },
+  {
+   "item": "das Schattendasein",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la existencia en la sombra",
+    "en": "a shadowy existence",
+    "fr": "une existence dans l'ombre",
+    "it": "un'esistenza nell'ombra",
+    "pt": "uma existência na sombra"
+   }
+  },
+  {
+   "item": "der Wasserkopf",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el exceso de estructura",
+    "en": "top-heavy bureaucracy",
+    "fr": "la bureaucratie pléthorique",
+    "it": "l'apparato pletorico",
+    "pt": "o excesso de estrutura"
+   }
+  },
+  {
+   "item": "die Entlassungswelle",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la ola de despidos",
+    "en": "wave of layoffs",
+    "fr": "la vague de licenciements",
+    "it": "l'ondata di licenziamenti",
+    "pt": "a vaga de despedimentos"
+   }
+  },
+  {
+   "item": "die Seilschaft",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la red de favores",
+    "en": "old boys' network",
+    "fr": "le réseau d'influence",
+    "it": "la cordata",
+    "pt": "a rede de favores"
+   }
+  },
+  {
+   "item": "die Übergabe",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el traspaso de funciones",
+    "en": "handover",
+    "fr": "la passation",
+    "it": "il passaggio di consegne",
+    "pt": "a passagem de testemunho"
+   }
+  },
+  {
+   "item": "jemanden kaltstellen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "apartar a alguien del poder",
+    "en": "to sideline someone",
+    "fr": "mettre qn sur la touche",
+    "it": "mettere qn da parte",
+    "pt": "afastar alguém"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "die von…zu genehmigenden…",
+   "funcion": "Partizipialattribut, Recht",
+   "traducciones": {
+    "es": "los… que deben ser aprobados por…",
+    "en": "the…to be approved by…",
+    "fr": "les… à approuver par…",
+    "it": "i/le… da approvare da parte di…",
+    "pt": "os/as… a aprovar por…"
+   }
+  },
+  {
+   "expresion": "die zu erwartenden, noch nicht…",
+   "funcion": "gestapeltes Attribut, Wissenschaft",
+   "traducciones": {
+    "es": "los… previsibles, aún no…",
+    "en": "the…expected, not yet…",
+    "fr": "les… attendus mais pas encore…",
+    "it": "i/le… previsti/e, non ancora…",
+    "pt": "os/as… esperados/as, ainda não…"
+   }
+  },
+  {
+   "expresion": "die absehbaren, aber schwer zu…",
+   "funcion": "gestapeltes Attribut, Journalismus",
+   "traducciones": {
+    "es": "los… previsibles, pero difíciles de…",
+    "en": "the…foreseeable but hard to…",
+    "fr": "les… prévisibles mais difficiles à…",
+    "it": "i/le… prevedibili ma difficili da…",
+    "pt": "os/as… previsíveis, mas difíceis de…"
+   }
+  },
+  {
+   "expresion": "das kaum zu ertragende…",
+   "funcion": "Partizipialattribut, literarisch",
+   "traducciones": {
+    "es": "el… apenas soportable",
+    "en": "the barely bearable…",
+    "fr": "le/la… à peine supportable",
+    "it": "il/la… a malapena sopportabile",
+    "pt": "o/a… quase insuportável"
+   }
+  },
+  {
+   "expresion": "die im Folgenden zu erläuternden…",
+   "funcion": "Verwaltungssprache, ankündigend",
+   "traducciones": {
+    "es": "los… que se explicarán a continuación",
+    "en": "the…to be explained below",
+    "fr": "les… à expliquer ci-dessous",
+    "it": "i/le… da spiegare di seguito",
+    "pt": "os/as… a explicar em seguida"
+   }
+  },
+  {
+   "expresion": "ein kaum zu überschätzender…",
+   "funcion": "verstärkendes Attribut",
+   "traducciones": {
+    "es": "un… difícil de sobreestimar",
+    "en": "a…hard to overestimate",
+    "fr": "un/une… difficile à surestimer",
+    "it": "un/una… difficile da sopravvalutare",
+    "pt": "um/uma… difícil de sobrestimar"
+   }
+  },
+  {
+   "expresion": "Zwei Attribute pro Satz sind die Grenze.",
+   "funcion": "Dichte als bewusste Entscheidung benennen",
+   "traducciones": {
+    "es": "Dos atributos por oración es el límite.",
+    "en": "Two attributes per sentence is the limit.",
+    "fr": "Deux attributs par phrase, c'est la limite.",
+    "it": "Due attributi per frase sono il limite.",
+    "pt": "Dois atributos por frase é o limite."
+   }
+  },
+  {
+   "expresion": "Für die Pressemitteilung löse ich das auf.",
+   "funcion": "Genre-Wechsel ankündigen",
+   "traducciones": {
+    "es": "Para la nota de prensa lo desarmo.",
+    "en": "For the press release I'll unpack it.",
+    "fr": "Pour le communiqué, je le déplie.",
+    "it": "Per il comunicato lo sciolgo.",
+    "pt": "Para o comunicado desdobro isso."
+   }
+  },
+  {
+   "expresion": "Hier trägt der Relativsatz besser.",
+   "funcion": "die Gegenkonstruktion begründet wählen",
+   "traducciones": {
+    "es": "Acá la subordinada de relativo funciona mejor.",
+    "en": "The relative clause carries it better here.",
+    "fr": "Ici, la relative porte mieux.",
+    "it": "Qui la relativa regge meglio.",
+    "pt": "Aqui a oração relativa funciona melhor."
+   }
+  },
+  {
+   "expresion": "Beim Vorlesen bricht der Satz.",
+   "funcion": "Verständlichkeitsprobe benennen",
+   "traducciones": {
+    "es": "Al leerlo en voz alta la oración se rompe.",
+    "en": "Read aloud, the sentence breaks.",
+    "fr": "À la lecture à voix haute, la phrase casse.",
+    "it": "A leggerla ad alta voce la frase si spezza.",
+    "pt": "Lida em voz alta, a frase parte-se."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie denselben Sachverhalt zur Personalplanung zweimal: als interne Richtlinie und als Mitteilung an die Belegschaft.",
+  "requisitos": [
+   "in der Richtlinie mindestens zwei Partizipialattribute pro Satz",
+   "in der Mitteilung höchstens eines im ganzen Text",
+   "dieselben Fakten in beiden Fassungen",
+   "*Personal abbauen*, *die Aufstiegslogik* und *der Stellenwert der Arbeit* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei Passivsätze über *Betriebsblindheit* in Attribute verdichten."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Den dichtesten Absatz für die Belegschaft entschlacken."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "2 Minuten: Wann gilt *der Handschlag* noch? Mündlich, ohne Attribute."
+  }
+ ],
+ "autochequeo": [
+  "Passt die Dichte der Attribute zum Genre des Textes?",
+  "Ist in literarischer Prosa die Dichte bewusst niedrig gehalten?",
+  "Trägt ein Gesetzestext genug Attribute, um präzise zu sein?",
+  "Habe ich die Textsorte vor der Wahl der Dichte bestimmt?",
+  "Würde ein Fachleser diese Dichte als normal für das Genre empfinden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Dichte der Partizipialattribute zum Genre des Textes passt. Prüfen Sie, ob ein literarischer Text zu dicht komprimiert ist. Schreiben Sie den Text nicht neu."
+}

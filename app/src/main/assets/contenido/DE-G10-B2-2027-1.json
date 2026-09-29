@@ -1,0 +1,395 @@
+{
+ "id": "DE-G10-B2-2027-1",
+ "skillId": "DE-G10",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T09",
+ "titulo": "Passiv und Passiversatzformen",
+ "subtitulo": "Passiversatzformen beim Lernen",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Das Passiv ist im Deutschen sehr häufig und im technischen wie im politischen Register kaum vermeidbar. Auf B2 geht es aber nicht mehr nur um Vorgangs- und Zustandspassiv, sondern um die **Ersatzformen**, die dasselbe leisten und stilistisch oft besser klingen.",
+ "cuadroReferencia": {
+  "titulo": "Passiv und Ersatzformen",
+  "columnas": [
+   "Form",
+   "Bildung",
+   "Beispiel",
+   "Register"
+  ],
+  "filas": [
+   [
+    "Vorgangspassiv",
+    "*werden* + Partizip II",
+    "Der Strom wird erzeugt.",
+    "neutral"
+   ],
+   [
+    "Zustandspassiv",
+    "*sein* + Partizip II",
+    "Die Anlage ist abgeschaltet.",
+    "neutral"
+   ],
+   [
+    "*sich lassen* + Inf.",
+    "",
+    "Das lässt sich messen.",
+    "gesprochen, elegant"
+   ],
+   [
+    "*-bar* / *-lich*",
+    "Adjektivsuffix",
+    "Das ist messbar.",
+    "kompakt, technisch"
+   ],
+   [
+    "*sein zu* + Inf.",
+    "",
+    "Der Verbrauch ist zu senken.",
+    "formell, Vorschrift"
+   ],
+   [
+    "man",
+    "Aktiv mit *man*",
+    "Man kann das messen.",
+    "umgangssprachlich"
+   ]
+  ],
+  "notaPie": "**Urheber:** von + Dat. (Person, Institution), durch + Akk. (Mittel, Ursache). **Perfekt Passiv:** ist… **worden**, nicht geworden."
+ },
+ "ejemplos": [
+  {
+   "texto": "Der Ausstoss **wird** bis 2030 halbiert."
+  },
+  {
+   "texto": "Die Ziele **sind** noch nicht erreicht."
+  },
+  {
+   "texto": "Der Zielkonflikt **lässt sich** nicht auflösen."
+  },
+  {
+   "texto": "Die Grundlast **ist** nicht beliebig **ersetzbar**."
+  },
+  {
+   "texto": "Die Emissionen **sind** deutlich **zu senken**."
+  },
+  {
+   "texto": "*Der Ausstoss wird bis 2030 halbiert.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Ziele sind noch nicht erreicht.*",
+   "audio": true
+  },
+  {
+   "texto": "*Der Zielkonflikt lässt sich nicht auflösen.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Grundlast ist nicht beliebig ersetzbar.*",
+   "audio": true
+  },
+  {
+   "texto": "*Die Emissionen sind deutlich zu senken.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Der Unterschied Vorgang/Zustand entspricht ungefähr *ser*/*estar*. Das ist die beste Eselsbrücke für Spanischsprachige.",
+  "*sein zu + Infinitiv* trägt immer Notwendigkeit oder Möglichkeit, nie Neutralität.",
+  "Manche Verben bilden kein Passiv: *bekommen*, *haben*, *kennen*, *wissen*."
+ ],
+ "contraste": {
+  "es": "Spanisch bevorzugt *se*-Konstruktionen (*se mide*) und das Aktiv, wo das Deutsche das Passiv setzt. Die direkte Übertragung erzeugt entweder zu viel *man* oder ein falsches *ist* statt *wird*.",
+  "en": "Das Englische benutzt das Passiv **noch häufiger** als das Deutsche und hat dafür eine einzige Form: *is done*, *was done*, *has been done*. Es fehlt die Unterscheidung Vorgangs- gegen Zustandspassiv — *the plant is closed* deckt beides ab. Genau dort entsteht der Fehler: Englischsprachige setzen *ist* statt *wird*, weil ihre Sprache nicht zwischen beidem trennt. Die deutschen Ersatzformen (*lässt sich*, *-bar*) entsprechen ungefähr *can be done*.",
+  "it": "Das Italienische unterscheidet Vorgang und Zustand selbst: *la porta viene chiusa* (Vorgang) gegen *la porta è chiusa* (Zustand) entspricht genau *wird* gegen *ist*. Italienischsprachige haben hier also einen echten Vorteil. Die Ersatzformen finden ebenfalls Vorbilder: *-bile* für *-bar*, das *si* passivante für *man* bzw. *lässt sich*.",
+  "fr": "Das französische Passiv mit *être* unterscheidet Vorgang und Zustand nicht: *la porte est fermée* kann beides bedeuten. Französischsprachige setzen deshalb oft *ist* statt *wird*. Dazu kommt, dass *on* im Französischen extrem häufig ist und direkt zu *man* führt; das Pronominalpassiv (*ça se mange*) ist dagegen eine gute Brücke zu *lässt sich*.",
+  "pt": "Das Portugiesische unterscheidet mit *ser* und *estar* selbst zwischen Vorgang und Zustand: *a loja é fechada às 18h* gegen *a loja está fechada* entspricht *wird* gegen *ist*. Dieser Vorteil lässt sich bewusst nutzen. Das Passiv mit *se* (*vendem-se casas*) führt dagegen eher zu *man* als zum deutschen Passiv."
+ },
+ "errores": [
+  "*ist geworden* statt *ist worden*.",
+  "sich lassen mit dem Reflexivpronomen verwechseln: Das lässt **sich** machen, nicht Das lässt mich machen."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*fue construido* als *war gebaut* übertragen statt *wurde gebaut*."
+  ],
+  "en": [
+   "*ist* statt *wird* setzen, weil das Englische Vorgang und Zustand nicht trennt.",
+   "Das Passiv überbenutzen, weil es im Englischen häufiger ist."
+  ],
+  "it": [
+   "*sein* statt *werden* nehmen, weil *essere* + Partizip im Italienischen auch Vorgang sein kann: *Das Haus ist 1990 gebaut* statt *wurde*."
+  ],
+  "fr": [
+   "*sein* statt *werden* nehmen, weil *être* + Partizip beides abdeckt: *Die Tür ist jeden Abend geschlossen* statt *wird*."
+  ],
+  "pt": [
+   "*foi construído* als *war gebaut* übertragen statt *wurde gebaut*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "die Weiterbildung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la formación continua",
+    "en": "continuing education",
+    "fr": "la formation continue",
+    "it": "la formazione continua",
+    "pt": "a formação continuada"
+   }
+  },
+  {
+   "item": "der Lehrgang",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el curso, el cursillo",
+    "en": "the training course",
+    "fr": "le stage de formation",
+    "it": "il corso di formazione",
+    "pt": "o curso de formação"
+   }
+  },
+  {
+   "item": "der Werdegang",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la trayectoria, el recorrido",
+    "en": "the career path",
+    "fr": "le parcours",
+    "it": "il percorso",
+    "pt": "a trajetória"
+   }
+  },
+  {
+   "item": "das lebenslange Lernen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el aprendizaje permanente",
+    "en": "lifelong learning",
+    "fr": "l'apprentissage tout au long de la vie",
+    "it": "l'apprendimento permanente",
+    "pt": "a aprendizagem ao longo da vida"
+   }
+  },
+  {
+   "item": "die Prüfungsangst",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el miedo a los exámenes",
+    "en": "exam anxiety",
+    "fr": "le trac des examens",
+    "it": "l'ansia da esame",
+    "pt": "o medo de exames"
+   }
+  },
+  {
+   "item": "durchfallen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "suspender, reprobar",
+    "en": "to fail (an exam)",
+    "fr": "échouer (à un examen)",
+    "it": "essere bocciato",
+    "pt": "reprovar"
+   }
+  },
+  {
+   "item": "das Fachwissen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el conocimiento especializado",
+    "en": "specialist knowledge",
+    "fr": "les connaissances spécialisées",
+    "it": "le conoscenze specialistiche",
+    "pt": "o conhecimento especializado"
+   }
+  },
+  {
+   "item": "sich vertiefen in",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "profundizar en",
+    "en": "to delve into",
+    "fr": "approfondir",
+    "it": "approfondire",
+    "pt": "aprofundar-se em"
+   }
+  },
+  {
+   "item": "die Durchlässigkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la permeabilidad (entre niveles educativos)",
+    "en": "permeability (between tracks)",
+    "fr": "la perméabilité",
+    "it": "la permeabilità",
+    "pt": "a permeabilidade"
+   }
+  },
+  {
+   "item": "der Notendurchschnitt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el promedio de notas",
+    "en": "the grade average",
+    "fr": "la moyenne des notes",
+    "it": "la media dei voti",
+    "pt": "a média de notas"
+   }
+  },
+  {
+   "item": "die Auffassungsgabe",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la capacidad de comprensión",
+    "en": "the ability to grasp things",
+    "fr": "la faculté de compréhension",
+    "it": "la capacità di comprensione",
+    "pt": "a capacidade de compreensão"
+   }
+  },
+  {
+   "item": "auf dem Laufenden bleiben",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mantenerse al día",
+    "en": "to keep up to date",
+    "fr": "se tenir au courant",
+    "it": "tenersi aggiornato",
+    "pt": "manter-se atualizado"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Dabei wird… erzeugt",
+   "funcion": "Vorgang beschreiben",
+   "traducciones": {
+    "es": "en el proceso se genera…",
+    "en": "In the process… is produced",
+    "fr": "Ce faisant, … est produit",
+    "it": "Nel processo viene prodotto…",
+    "pt": "Nesse processo, é produzido…"
+   }
+  },
+  {
+   "expresion": "Das lässt sich nicht…",
+   "funcion": "Unmöglichkeit, elegant",
+   "traducciones": {
+    "es": "eso no se puede…",
+    "en": "That can't be…",
+    "fr": "Cela ne peut pas être…",
+    "it": "Questo non si può…",
+    "pt": "Isso não se pode…"
+   }
+  },
+  {
+   "expresion": "Es ist damit zu rechnen, dass…",
+   "funcion": "Prognose, formell",
+   "traducciones": {
+    "es": "cabe esperar que…",
+    "en": "It is to be expected that…",
+    "fr": "Il faut s’attendre à ce que…",
+    "it": "C’è da aspettarsi che…",
+    "pt": "É de esperar que…"
+   }
+  },
+  {
+   "expresion": "Der Verbrauch ist zu senken",
+   "funcion": "Vorschrift",
+   "traducciones": {
+    "es": "hay que reducir el consumo",
+    "en": "Consumption is to be reduced",
+    "fr": "La consommation doit être réduite",
+    "it": "Il consumo va ridotto",
+    "pt": "O consumo deve ser reduzido"
+   }
+  },
+  {
+   "expresion": "Das ist kaum messbar",
+   "funcion": "kompakte Ersatzform",
+   "traducciones": {
+    "es": "eso apenas se puede medir",
+    "en": "That's hardly measurable",
+    "fr": "C’est à peine mesurable",
+    "it": "È difficilmente misurabile",
+    "pt": "Isso é praticamente impossível de medir"
+   }
+  },
+  {
+   "expresion": "Dadurch wird…",
+   "funcion": "Ursache mit *durch*",
+   "traducciones": {
+    "es": "con eso se…",
+    "en": "As a result…",
+    "fr": "Ainsi, … est / devient…",
+    "it": "Di conseguenza, … viene…",
+    "pt": "Desse modo, … é / fica…"
+   }
+  },
+  {
+   "expresion": "Von der Politik wird…",
+   "funcion": "Urheber mit *von*",
+   "traducciones": {
+    "es": "por parte de la política se…",
+    "en": "By policymakers…",
+    "fr": "Du côté des pouvoirs publics, …",
+    "it": "Da parte delle autorità…",
+    "pt": "Por parte das autoridades…"
+   }
+  },
+  {
+   "expresion": "Es muss abgewogen werden, ob…",
+   "funcion": "Abwägung",
+   "traducciones": {
+    "es": "hay que sopesar si…",
+    "en": "It has to be weighed up whether…",
+    "fr": "Il faut soupeser la question de savoir si…",
+    "it": "Bisogna valutare se…",
+    "pt": "É preciso ponderar se…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Beschreiben Sie, wie eine Weiterbildung in Ihrem Beruf abläuft.",
+  "requisitos": [
+   "drei *werden*-Passivsätze",
+   "drei Ersatzformen (*lässt sich*, *ist zu*, *-bar*)",
+   "ein Passiv mit Modalverb",
+   "*die Weiterbildung*, *der Lehrgang* und *der Werdegang* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Aktivsätze über einen *Lehrgang* ins Passiv setzen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei davon mit Ersatzform statt *werden*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Wie wird *lebenslanges Lernen* in Ihrer Firma gefördert?"
+  }
+ ],
+ "autochequeo": [
+  "Habe ich *wird* und *ist* richtig unterschieden?",
+  "Steht im Perfekt Passiv *worden*?",
+  "Sind mindestens zwei Ersatzformen dabei?",
+  "Habe ich *von* und *durch* richtig verwendet?",
+  "Alle vier Kernwörter?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Passiv und Ersatzformen. (1) Markieren Sie jede Form und benennen Sie den Typ. (2) Prüfen Sie Vorgang gegen Zustand. (3) Markieren Sie jede Stelle, an der eine Ersatzform natürlicher gewesen wäre als das Vorgangspassiv, und zeigen Sie sie. (4) Prüfen Sie *von* gegen *durch*. Schreiben Sie den Text nicht neu."
+}

@@ -178,11 +178,12 @@ class ResolutorSemanaTest {
             calendario = calendarioCargado(2026, Idioma.DE, Nivel.A2),
             contenidoPorId = cargarContenido(),
         )
-        assertEquals(SemanaIso(2026, 41), (resultado as? ResultadoSemana.SinContenido)?.semanaIso ?: error("se esperaba SinContenido, fue $resultado"))
-        // La semana 41 SI esta en el calendario parcial (empieza ahi), pero
-        // contenido/ todavia no tiene ninguna ficha de-A2 embebida (esa es la
-        // tarea siguiente) -- por eso "sin contenido", no un crash.
-        assertEquals(RazonSinContenido.SEMANA_FUERA_DE_LA_EDICION, resultado.razon)
+        val encontrado = resultado as? ResultadoSemana.Encontrado ?: error("se esperaba Encontrado, fue $resultado")
+        assertEquals(SemanaIso(2026, 41), encontrado.semanaIso)
+        // Primer skill del calendario parcial de-A2 (ver generar_calendario.py
+        // --parcial, FALTANTES.md seccion 11): la ficha ya esta embebida
+        // (seccion 12), asi que la semana 41 resuelve de verdad, no "sin contenido".
+        assertEquals("DE-F01-A2-2026-1", (encontrado.contenido as Ficha).id)
     }
 
     @Test
@@ -200,22 +201,24 @@ class ResolutorSemanaTest {
     }
 
     @Test
-    fun `una semana con calendario pero sin ficha embebida todavia se muestra sin contenido, no crashea`() {
-        // Los 7 calendarios parciales (de-A2/B1/C1/C2, en-A2/B1/C2) ya estan
-        // embebidos; sus fichas todavia no (tarea siguiente, ver FALTANTES.md).
-        // El cargador no debe asumir que "hay calendario" implica "hay ficha".
-        for (nivel in listOf(Nivel.A2, Nivel.B1, Nivel.C1, Nivel.C2)) {
-            val resultado = resolverContenidoDeLaSemana(
-                fecha = LocalDate.of(2026, 10, 5), // S41, primera semana del calendario parcial
-                idioma = Idioma.DE, nivel = nivel,
-                calendario = calendarioCargado(2026, Idioma.DE, nivel),
-                contenidoPorId = cargarContenido(),
-            )
-            assertTrue(
-                "se esperaba SinContenido para DE-$nivel S41, fue $resultado",
-                resultado is ResultadoSemana.SinContenido,
-            )
-        }
+    fun `una semana con entrada de calendario pero sin ficha en el mapa se muestra sin contenido, no crashea`() {
+        // A esta altura los assets reales ya tienen las 606 fichas embebidas
+        // (FALTANTES.md seccion 12), asi que este caso -- calendario "encontro"
+        // una entrada pero contenidoPorId no tiene esa ficha -- ya no se da con
+        // datos reales. Sigue siendo un camino real de resolverContenidoDeLaSemana
+        // (una build vieja, o el paso intermedio entre calendario y contenido que
+        // hubo en sept 2026): se prueba con un mapa vacio a proposito, no
+        // dependiendo de que a los assets les falte algo.
+        val resultado = resolverContenidoDeLaSemana(
+            fecha = LocalDate.of(2026, 10, 5), // S41, primera semana del calendario parcial
+            idioma = Idioma.DE, nivel = Nivel.A2,
+            calendario = calendarioCargado(2026, Idioma.DE, Nivel.A2),
+            contenidoPorId = emptyMap(),
+        )
+        assertEquals(
+            ResultadoSemana.SinContenido(SemanaIso(2026, 41), Idioma.DE, Nivel.A2, RazonSinContenido.SEMANA_FUERA_DE_LA_EDICION),
+            resultado,
+        )
     }
 
     @Test

@@ -1,0 +1,389 @@
+{
+ "id": "DE-K06-C1-2027-1",
+ "skillId": "DE-K06",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T05",
+ "titulo": "Erweiterte Partizipialattribute und Relativsätze",
+ "subtitulo": "Zwischen Partizipialattribut und Relativsatz wählen",
+ "ancla": "Erkundungen C1",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Ein guter C1-Text wechselt bewusst zwischen dem kompakten Partizipialattribut und dem ausführlicheren Relativsatz — nicht weil eines falsch wäre, sondern weil die Wahl die Lesbarkeit und den Stil steuert. Diese Karte übt die Umwandlung in beide Richtungen.",
+ "cuadroReferencia": {
+  "titulo": "Beide Richtungen üben",
+  "columnas": [
+   "Relativsatz",
+   "Partizipialattribut"
+  ],
+  "filas": [
+   [
+    "der Bericht, der letzte Woche veröffentlicht wurde",
+    "der letzte Woche veröffentlichte Bericht"
+   ],
+   [
+    "die Massnahme, die zu Kontroversen geführt hat",
+    "die zu Kontroversen führende Massnahme"
+   ],
+   [
+    "das Verfahren, das angewendet werden muss",
+    "das anzuwendende Verfahren"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Der letzte Woche veröffentlichte Bericht hat für Diskussionen gesorgt.",
+   "audio": true
+  },
+  {
+   "texto": "Die zu Kontroversen führende Massnahme wurde inzwischen überarbeitet.",
+   "audio": true
+  },
+  {
+   "texto": "Ich würde das eher als Relativsatz formulieren: die Massnahme, die zu Kontroversen geführt hat."
+  }
+ ],
+ "notas": [
+  "Ein Text, der ausschliesslich Partizipialattribute verwendet, wirkt gedrängt; einer mit nur Relativsätzen wirkt weniger dicht und professionell.",
+  "Bei mehreren Ergänzungen (letzte Woche, mit grosser Mehrheit) wird das Partizipialattribut schnell unübersichtlich — dann ist der Relativsatz die bessere Wahl.",
+  "Die Fähigkeit, zwischen beiden Formen zu wechseln, ist wichtiger als die Fähigkeit, nur eine zu bilden."
+ ],
+ "contraste": {
+  "es": "Das Spanische bleibt fast ausschliesslich beim Relativsatz und kennt keine vergleichbare Verdichtung zum Partizipialattribut vor dem Nomen. Spanischsprachige haben deshalb Zugriff auf nur eine der beiden deutschen Optionen und müssen die andere aktiv erlernen, nicht nur übersetzen.",
+  "it": "Das Italienische verkürzt Relativsätze gern mit einem nachgestellten Partizip (il documento inviato ieri dal cliente); die Verdichtungsidee ist also bekannt, nur die Richtung ist umgekehrt: Im Deutschen steht alles vor dem Nomen. Das Partizip I ist schwieriger, weil das italienische participio presente kaum noch verbal gebraucht wird.",
+  "fr": "Das Französische verkürzt Relativsätze mit nachgestelltem Partizip (le rapport envoyé hier par le client), und das participe présent ist im formellen Stil noch produktiv (les étudiants travaillant ici). Beide Verdichtungen sind also bekannt; umzulernen ist nur die Stellung vor dem Nomen und die Adjektivdeklination.",
+  "pt": "Das Portugiesische kennt das nachgestellte Partizip (o relatório enviado ontem pelo cliente), aber kaum ein verbales Partizip Präsens – die Formen auf -nte sind Adjektive, und im Brasilianischen übernimmt das Gerúndio diese Rolle (os alunos estudando aqui). Das Partizip-I-Attribut muss deshalb ohne Vorbild gelernt werden.",
+  "en": "Das Englische stellt nur kurze Partizipien vor das Nomen (the proposed changes); sobald Ergänzungen dazukommen, muss das Partizip nachgestellt werden (the changes proposed by the committee last week). Englischsprachige kennen die Verdichtung also im Kleinen, haben aber kein Vorbild für das erweiterte Attribut (die letzte Woche vom Ausschuss vorgeschlagenen Änderungen)."
+ },
+ "errores": [
+  "Ausschliesslich Partizipialattribute verwenden, auch wenn der Satz dadurch unübersichtlich wird.",
+  "Ein Partizipialattribut mit zu vielen Ergänzungen überladen.",
+  "Nie zwischen den beiden Formen wechseln, obwohl der Text dadurch monoton wirkt."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Das Partizip nach dem Nomen stellen wie in *el informe redactado por el equipo*: *der Bericht verfasst vom Team* statt *der vom Team verfasste Bericht*."
+  ],
+  "it": [
+   "Das Partizip nach dem Nomen stellen wie in *i costi aumentati nell'ultimo anno*: *die Kosten gestiegen im letzten Jahr* statt *die im letzten Jahr gestiegenen Kosten*."
+  ],
+  "fr": [
+   "Das Partizip nach dem Nomen stellen wie in *le rapport rédigé par l'équipe*: *der Bericht verfasst vom Team* statt *der vom Team verfasste Bericht*."
+  ],
+  "pt": [
+   "Das Partizip nach dem Nomen stellen wie in *o relatório redigido pela equipa*: *der Bericht verfasst vom Team* statt *der vom Team verfasste Bericht*."
+  ],
+  "en": [
+   "Das Partizip nach dem Nomen stellen wie in *the costs incurred last year*: *die Kosten entstanden letztes Jahr* statt *die letztes Jahr entstandenen Kosten*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Fettnäpfchen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la metida de pata",
+    "en": "a faux pas",
+    "fr": "l'impair",
+    "it": "la gaffe",
+    "pt": "a gafe"
+   }
+  },
+  {
+   "item": "das Heimweh",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la nostalgia del hogar",
+    "en": "homesickness",
+    "fr": "le mal du pays",
+    "it": "la nostalgia di casa",
+    "pt": "as saudades de casa"
+   }
+  },
+  {
+   "item": "der Kulturschock",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el choque cultural",
+    "en": "culture shock",
+    "fr": "le choc culturel",
+    "it": "lo shock culturale",
+    "pt": "o choque cultural"
+   }
+  },
+  {
+   "item": "die Gepflogenheit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la costumbre establecida",
+    "en": "custom, convention",
+    "fr": "l'usage",
+    "it": "la consuetudine",
+    "pt": "o costume"
+   }
+  },
+  {
+   "item": "die Verständigung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el entendimiento",
+    "en": "mutual understanding",
+    "fr": "la compréhension mutuelle",
+    "it": "la comprensione reciproca",
+    "pt": "o entendimento"
+   }
+  },
+  {
+   "item": "sich eingewöhnen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "adaptarse a un lugar",
+    "en": "to settle in",
+    "fr": "s'acclimater",
+    "it": "ambientarsi",
+    "pt": "adaptar-se"
+   }
+  },
+  {
+   "item": "abseits der ausgetretenen Pfade",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "fuera de las rutas trilladas",
+    "en": "off the beaten track",
+    "fr": "hors des sentiers battus",
+    "it": "fuori dai percorsi battuti",
+    "pt": "fora dos trilhos habituais"
+   }
+  },
+  {
+   "item": "das Fernweh",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las ganas de viajar lejos",
+    "en": "wanderlust",
+    "fr": "l'envie d'ailleurs",
+    "it": "la voglia di partire",
+    "pt": "a vontade de partir"
+   }
+  },
+  {
+   "item": "der Massentourismus",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el turismo de masas",
+    "en": "mass tourism",
+    "fr": "le tourisme de masse",
+    "it": "il turismo di massa",
+    "pt": "o turismo de massa"
+   }
+  },
+  {
+   "item": "die Gastfreundschaft",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la hospitalidad",
+    "en": "hospitality",
+    "fr": "l'hospitalité",
+    "it": "l'ospitalità",
+    "pt": "a hospitalidade"
+   }
+  },
+  {
+   "item": "die Reiseroute",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el itinerario",
+    "en": "itinerary",
+    "fr": "l'itinéraire",
+    "it": "l'itinerario",
+    "pt": "o itinerário"
+   }
+  },
+  {
+   "item": "die Sprachbarriere",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la barrera idiomática",
+    "en": "language barrier",
+    "fr": "la barrière de la langue",
+    "it": "la barriera linguistica",
+    "pt": "a barreira linguística"
+   }
+  },
+  {
+   "item": "etwas gelassen nehmen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tomarse algo con calma",
+    "en": "to take something in your stride",
+    "fr": "prendre qc avec philosophie",
+    "it": "prendere qc con filosofia",
+    "pt": "levar algo com calma"
+   }
+  },
+  {
+   "item": "sich zurechtfinden",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "orientarse, manejarse",
+    "en": "to find one's way around",
+    "fr": "se repérer",
+    "it": "orientarsi",
+    "pt": "orientar-se"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "der letzte Woche veröffentlichte…",
+   "funcion": "Partizipialattribut, kompakt",
+   "traducciones": {
+    "es": "el… publicado la semana pasada",
+    "en": "the… published last week",
+    "fr": "le/la… publié(e) la semaine dernière",
+    "it": "il/la… pubblicato/a la settimana scorsa",
+    "pt": "o/a… publicado/a na semana passada"
+   }
+  },
+  {
+   "expresion": "…, der/die/das … veröffentlicht wurde",
+   "funcion": "Relativsatz, ausführlicher",
+   "traducciones": {
+    "es": "…, que fue publicado…",
+    "en": "…, which was published…",
+    "fr": "…, qui a été publié(e)…",
+    "it": "…, che è stato/a pubblicato/a…",
+    "pt": "…, que foi publicado/a…"
+   }
+  },
+  {
+   "expresion": "die zu Kontroversen führende…",
+   "funcion": "Partizip I als Attribut",
+   "traducciones": {
+    "es": "el/la… que genera controversia",
+    "en": "the… leading to controversy",
+    "fr": "le/la… qui suscite la controverse",
+    "it": "il/la… che suscita controversie",
+    "pt": "o/a… que gera controvérsia"
+   }
+  },
+  {
+   "expresion": "das anzuwendende…",
+   "funcion": "Modalpartizip",
+   "traducciones": {
+    "es": "el… a aplicar",
+    "en": "the… to be applied",
+    "fr": "le/la… à appliquer",
+    "it": "il/la… da applicare",
+    "pt": "o/a… a aplicar"
+   }
+  },
+  {
+   "expresion": "…, was die Lesbarkeit erschwert.",
+   "funcion": "Kommentar zur eigenen Wahl",
+   "traducciones": {
+    "es": "…, lo cual dificulta la lectura.",
+    "en": "…, which makes it harder to read.",
+    "fr": "…, ce qui rend la lecture plus difficile.",
+    "it": "…, il che rende la lettura più difficile.",
+    "pt": "…, o que dificulta a leitura."
+   }
+  },
+  {
+   "expresion": "Kürzer gesagt: …",
+   "funcion": "leitet die kompaktere Version ein",
+   "traducciones": {
+    "es": "Dicho más brevemente: …",
+    "en": "More briefly: …",
+    "fr": "Plus brièvement : …",
+    "it": "Più brevemente: …",
+    "pt": "Mais resumidamente: …"
+   }
+  },
+  {
+   "expresion": "Ausführlicher gesagt: …",
+   "funcion": "Übergang zur aufgelösten Fassung",
+   "traducciones": {
+    "es": "Dicho más extensamente: …",
+    "en": "Put at greater length: …",
+    "fr": "Dit plus longuement : …",
+    "it": "Detto più per esteso: …",
+    "pt": "Dito mais extensamente: …"
+   }
+  },
+  {
+   "expresion": "Beides ist richtig, nur nicht im selben Text.",
+   "funcion": "die Wahl als Registerfrage benennen",
+   "traducciones": {
+    "es": "Las dos son correctas, pero no en el mismo texto.",
+    "en": "Both are correct, just not in the same text.",
+    "fr": "Les deux sont corrects, mais pas dans le même texte.",
+    "it": "Entrambe sono corrette, ma non nello stesso testo.",
+    "pt": "Ambas estão certas, mas não no mesmo texto."
+   }
+  },
+  {
+   "expresion": "Gesprochen würde niemand so formulieren.",
+   "funcion": "das Attribut als reine Schriftform markieren",
+   "traducciones": {
+    "es": "Hablando, nadie formularía así.",
+    "en": "Nobody would say it that way out loud.",
+    "fr": "À l'oral, personne ne dirait cela ainsi.",
+    "it": "A voce nessuno direbbe così.",
+    "pt": "A falar, ninguém formularia assim."
+   }
+  },
+  {
+   "expresion": "…, der übrigens bereits … wurde",
+   "funcion": "eingeschobener Relativsatz mit Zusatzinformation",
+   "traducciones": {
+    "es": "…, que por cierto ya fue…",
+    "en": "…, which had already been … incidentally",
+    "fr": "…, qui avait d'ailleurs déjà été…",
+    "it": "…, che peraltro era già stato…",
+    "pt": "…, que aliás já tinha sido…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie für einen Reiseblog über die ersten Wochen in einem Land, dessen Gepflogenheiten Sie nicht kannten.",
+  "requisitos": [
+   "zwei erweiterte Partizipialattribute",
+   "zwei Relativsätze an Stellen, wo das Attribut zu schwer wäre",
+   "eine Stelle, wo Sie bewusst umgewandelt haben — mit Begründung in einem Satz",
+   "*die Gepflogenheit*, *das Fettnäpfchen* und *sich eingewöhnen* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei Relativsätze über einen *Kulturschock* in Partizipialattribute umwandeln. Welcher liest sich schlechter?"
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Umgekehrt: *das nach wenigen Tagen einsetzende Heimweh* in einen Relativsatz auflösen."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden über ein *Fettnäpfchen*, in das Sie getreten sind. Mündlich: Relativsätze, keine Attribute."
+  }
+ ],
+ "autochequeo": [
+  "Habe ich mindestens einmal von Relativsatz zu Partizip und einmal umgekehrt umgewandelt?",
+  "Ist ein Partizipialattribut mit zu vielen Ergänzungen überladen?",
+  "Bleibt der Text trotz der Verdichtung lesbar?",
+  "Wechsle ich bewusst zwischen den beiden Formen, nicht zufällig?",
+  "Habe ich bei jedem Partizipialattribut korrekt zwischen Partizip I (aktiv) und Partizip II (passiv) unterschieden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Wechsel zwischen Partizipialattributen und Relativsätzen. Prüfen Sie, ob die Wahl in jedem Fall die Lesbarkeit unterstützt. Schreiben Sie den Text nicht neu."
+}

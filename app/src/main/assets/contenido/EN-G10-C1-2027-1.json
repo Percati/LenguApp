@@ -1,0 +1,365 @@
+{
+ "id": "EN-G10-C1-2027-1",
+ "skillId": "EN-G10",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T07",
+ "titulo": "Modals of Deduction",
+ "subtitulo": "Reconstructing what happened to a neighbourhood",
+ "ancla": "EGP B1/B2",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "At C1 the modal perfect of deduction (must have, might have, can't have) is expected to appear in extended reasoning, not just single sentences: a chain that builds from strong certainty down to a dismissed possibility. The forms are B1/B2; the skill here is sequencing several of them to reconstruct what probably happened.",
+ "cuadroReferencia": {
+  "titulo": "The certainty ladder in a chain",
+  "columnas": [
+   "Certainty",
+   "Form",
+   "Function in a chain"
+  ],
+  "filas": [
+   [
+    "Near-certain",
+    "must have + participle",
+    "the conclusion the evidence points to"
+   ],
+   [
+    "Possible",
+    "may/might have + participle",
+    "an alternative not ruled out"
+   ],
+   [
+    "Ruled out",
+    "can't have + participle",
+    "eliminates an option"
+   ],
+   [
+    "Should have",
+    "expected but didn't happen",
+    "marks a gap in what was expected"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She must have left early — her desk was already cleared by nine.",
+   "audio": true
+  },
+  {
+   "texto": "It might have been a scheduling error, though it can't have been deliberate given the history.",
+   "audio": true
+  },
+  {
+   "texto": "They should have been notified, but clearly weren't."
+  }
+ ],
+ "notas": [
+  "A strong C1 answer usually moves through the ladder: state the near-certain deduction, note what it doesn't rule out, then eliminate the least likely option.",
+  "Should have here is not advice — it marks something that was expected to happen and didn't, which is a distinct deductive move.",
+  "Stacking two modals in one sentence (it must have possibly been) is not standard English; keep one modal per clause."
+ ],
+ "contraste": {
+  "es": "Spanish expresses deduction with deber de + infinitive or the future of probability (será por eso), and has deduction in the past as well (debe de haberlo olvidado). What it does less often is chain several deductions in one explanation, as English does with must have / might have / can't have; Spanish speakers tend to use one isolated deduction where English expects a chain.",
+  "de": "German builds the same structure (Er muss es vergessen haben, sie kann es nicht gewusst haben), so single deductions and whole chains transfer easily. The only extra German tool, the Futur II (Er wird es vergessen haben), has no English counterpart and should not be translated as will have forgotten.",
+  "it": "Italian has close equivalents: deve averlo dimenticato (must have forgotten), non può averlo fatto (can't have done), and the futuro anteriore (l'avrà dimenticato). The last one leads to the calque he will have forgotten, where English needs must have.",
+  "fr": "French puts the modal itself in the perfect (il a dû oublier), which produces the calque he has had to forget instead of he must have forgotten. The futur antérieur (il aura oublié) is a second source of error (he will have forgotten).",
+  "pt": "Portuguese has the same order as English: deve ter esquecido (must have forgotten), não pode ter feito (can't have done). Portuguese speakers therefore build these deductions and chains with very little interference."
+ },
+ "errores": [
+  "Stacking two modal verbs in one clause instead of one per clause.",
+  "Using should have as advice when the context calls for the deductive, gap-marking sense.",
+  "Stopping at one modal of deduction where the reasoning calls for a chain that also rules something out."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Carrying over the ambiguity of *debería haber llegado* and using *should have arrived* where the deduction *must have arrived* is meant."
+  ],
+  "de": [
+   "*must not have* for 'not necessarily', as in *muss es nicht gesehen haben*, where English reads it as a confident negative: *He can't have seen it*."
+  ],
+  "it": [
+   "Carrying over the ambiguity of *dovrebbe essere arrivato* and using *should have arrived* where the deduction *must have arrived* is meant."
+  ],
+  "fr": [
+   "Carrying over the ambiguity of *il devrait être arrivé* and using *should have arrived* where the deduction *must have arrived* is meant."
+  ],
+  "pt": [
+   "Carrying over the ambiguity of *deveria ter chegado* and using *should have arrived* where the deduction *must have arrived* is meant."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a letting agent",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el agente de alquileres",
+    "de": "der Vermietungsmakler",
+    "fr": "l'agent immobilier de location",
+    "it": "l'agente immobiliare per affitti",
+    "pt": "o agente de arrendamento"
+   }
+  },
+  {
+   "item": "a rental deposit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la fianza del alquiler",
+    "de": "die Mietkaution",
+    "fr": "le dépôt de garantie",
+    "it": "la caparra",
+    "pt": "o depósito de caução"
+   }
+  },
+  {
+   "item": "a tenancy agreement",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el contrato de arrendamiento",
+    "de": "der Mietvertrag",
+    "fr": "le bail",
+    "it": "il contratto di locazione",
+    "pt": "o contrato de arrendamento"
+   }
+  },
+  {
+   "item": "to move house",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mudarse",
+    "de": "umziehen",
+    "fr": "déménager",
+    "it": "traslocare",
+    "pt": "mudar-se"
+   }
+  },
+  {
+   "item": "transport links",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la conexión de transporte",
+    "de": "die Anbindung",
+    "fr": "la desserte",
+    "it": "il collegamento",
+    "pt": "a conexão de transporte"
+   }
+  },
+  {
+   "item": "utility costs",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gastos comunes",
+    "de": "die Nebenkosten",
+    "fr": "les charges",
+    "it": "le spese condominiali",
+    "pt": "as despesas de condomínio"
+   }
+  },
+  {
+   "item": "a rent review",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la revisión del alquiler",
+    "de": "die Mietanpassung",
+    "fr": "la révision du loyer",
+    "it": "la revisione del canone",
+    "pt": "a revisão da renda"
+   }
+  },
+  {
+   "item": "an inventory report",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el inventario del estado del piso",
+    "de": "das Übergabeprotokoll",
+    "fr": "l'état des lieux",
+    "it": "il verbale di consegna",
+    "pt": "o auto de entrega"
+   }
+  },
+  {
+   "item": "damp and mould",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la humedad y el moho",
+    "de": "Feuchtigkeit und Schimmel",
+    "fr": "l'humidité et les moisissures",
+    "it": "umidità e muffa",
+    "pt": "a humidade e o bolor"
+   }
+  },
+  {
+   "item": "in need of renovation",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "necesitado de renovación",
+    "de": "renovierungsbedürftig",
+    "fr": "à rénover",
+    "it": "da ristrutturare",
+    "pt": "a precisar de renovação"
+   }
+  },
+  {
+   "item": "living space",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la superficie habitable",
+    "de": "der Wohnraum",
+    "fr": "l’espace habitable",
+    "it": "lo spazio abitativo",
+    "pt": "o espaço habitável"
+   }
+  },
+  {
+   "item": "the landlord",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el arrendador",
+    "de": "der Vermieter",
+    "fr": "le propriétaire",
+    "it": "il locatore",
+    "pt": "o locador"
+   }
+  },
+  {
+   "item": "to give notice",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "avisar de que te vas",
+    "de": "kündigen",
+    "fr": "donner son préavis",
+    "it": "dare disdetta",
+    "pt": "dar aviso prévio"
+   }
+  },
+  {
+   "item": "wear and tear",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el desgaste por uso",
+    "de": "die normale Abnutzung",
+    "fr": "l'usure normale",
+    "it": "l'usura normale",
+    "pt": "o desgaste normal"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "…must have…",
+   "funcion": "near-certain deduction",
+   "traducciones": {
+    "es": "debe de haber…",
+    "de": "…muss… gehabt haben",
+    "fr": "…a dû avoir…",
+    "it": "…deve aver…",
+    "pt": "…deve ter tido…"
+   }
+  },
+  {
+   "expresion": "It might have been…, though…",
+   "funcion": "possibility, then a limit on it",
+   "traducciones": {
+    "es": "podría haber sido…, aunque…",
+    "de": "Es könnte… gewesen sein, allerdings…",
+    "fr": "Cela aurait pu être…, mais…",
+    "it": "Potrebbe essere stato…, però…",
+    "pt": "Pode ter sido…, embora…"
+   }
+  },
+  {
+   "expresion": "…can't have…",
+   "funcion": "rules out a possibility",
+   "traducciones": {
+    "es": "no puede haber…",
+    "de": "…kann nicht… haben",
+    "fr": "…ne peut pas avoir…",
+    "it": "…non può aver…",
+    "pt": "…não pode ter…"
+   }
+  },
+  {
+   "expresion": "…should have…, but clearly didn't.",
+   "funcion": "marks an expectation gap",
+   "traducciones": {
+    "es": "debería haber…, pero claramente no…",
+    "de": "…hätte… sollen, hat es aber offensichtlich nicht.",
+    "fr": "…aurait dû…, mais ne l’a manifestement pas fait.",
+    "it": "…avrebbe dovuto…, ma chiaramente non l’ha fatto.",
+    "pt": "…deveria ter…, mas claramente não o fez."
+   }
+  },
+  {
+   "expresion": "Given that, it's unlikely that…",
+   "funcion": "narrows the chain further",
+   "traducciones": {
+    "es": "dado eso, es poco probable que…",
+    "de": "Angesichts dessen ist es unwahrscheinlich, dass…",
+    "fr": "Compte tenu de cela, il est peu probable que…",
+    "it": "Detto questo, è improbabile che…",
+    "pt": "Dado isso, é pouco provável que…"
+   }
+  },
+  {
+   "expresion": "The most likely explanation is that…",
+   "funcion": "closes the chain",
+   "traducciones": {
+    "es": "la explicación más probable es que…",
+    "de": "Die wahrscheinlichste Erklärung ist, dass…",
+    "fr": "L’explication la plus probable est que…",
+    "it": "La spiegazione più probabile è che…",
+    "pt": "A explicação mais provável é que…"
+   }
+  },
+  {
+   "expresion": "That's a guess dressed as a deduction.",
+   "funcion": "flags a deduction without evidence",
+   "traducciones": {
+    "es": "Eso es una suposición disfrazada de deducción.",
+    "de": "Das ist eine Vermutung im Gewand einer Schlussfolgerung.",
+    "fr": "C'est une supposition déguisée en déduction.",
+    "it": "È un'ipotesi travestita da deduzione.",
+    "pt": "Isso é um palpite disfarçado de dedução."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Explain how a neighbourhood you know changed, reasoning from the evidence you can see today.",
+  "requisitos": [
+   "a chain from strong certainty (*must have*) to a dismissed possibility (*can't have*)",
+   "one *should have… but clearly didn't*",
+   "a closing *The most likely explanation is…*",
+   "use *to move house*, *transport links* and *utility costs*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "List three things you noticed in a street that changed. Write a *must have* for each."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Add a *might have… though* and a *can't have* to the chain."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds on how *a tenancy agreement* in your city must have changed."
+  }
+ ],
+ "autochequeo": [
+  "Is there a clear chain from near-certain to ruled out, not just one isolated modal?",
+  "Is should have used in its deductive, gap-marking sense where intended?",
+  "Is each clause carrying only one modal verb?",
+  "Does the chain end by narrowing to the most likely explanation?",
+  "Are the participles correct throughout?"
+ ],
+ "promptCorreccion": "Focus only on modals of deduction used as a reasoning chain. Check whether the certainty ladder is used correctly and whether should have is deductive rather than advisory. Do not rewrite the text."
+}

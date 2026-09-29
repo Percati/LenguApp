@@ -1,0 +1,416 @@
+{
+ "id": "DE-K04-C1-2027-1",
+ "skillId": "DE-K04",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T14",
+ "titulo": "Konjunktiv I + Relativsatz + Nominalstil",
+ "subtitulo": "Pressesprache: Konjunktiv I im Relativsatz",
+ "ancla": "Erkundungen C1",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Presse- und Protokollsprache kombiniert drei bekannte Mittel zu einem Register: die indirekte Rede mit Konjunktiv I, eingebettet in Relativsätze, formuliert im Nominalstil. Die Massnahme, die bereits beschlossen sei, werde im kommenden Jahr umgesetzt ist keine schwierige neue Grammatik — es ist die gezielte Kombination von drei Dingen, die man bereits kann.",
+ "cuadroReferencia": {
+  "titulo": "Wie sich die drei Mittel schichten",
+  "columnas": [
+   "Mittel",
+   "Beispiel im Satz",
+   "Funktion im Register"
+  ],
+  "filas": [
+   [
+    "Konjunktiv I",
+    "…, die beschlossen sei",
+    "markiert: fremde Aussage, nicht eigene"
+   ],
+   [
+    "Relativsatz",
+    "die Massnahme, die…",
+    "bettet die Aussage in den Bericht ein"
+   ],
+   [
+    "Nominalstil",
+    "die Umsetzung der Massnahme",
+    "hält den Bericht kompakt und distanziert"
+   ]
+  ],
+  "notaPie": "Der Konjunktiv I im Relativsatz zeigt: Der Sprecher berichtet, was jemand anderes gesagt hat — er übernimmt es nicht als eigene Aussage."
+ },
+ "ejemplos": [
+  {
+   "texto": "Die Massnahme, die bereits beschlossen sei, werde im kommenden Jahr umgesetzt.",
+   "audio": true
+  },
+  {
+   "texto": "Der Sprecher erklärte, die Zahlen, die veröffentlicht worden seien, seien nicht vollständig.",
+   "audio": true
+  },
+  {
+   "texto": "Laut Bericht sei die Entscheidung, die man getroffen habe, nicht mehr rückgängig zu machen."
+  }
+ ],
+ "notas": [
+  "Wo der Konjunktiv I mit dem Indikativ zusammenfällt (meist bei wir/sie), springt man auf den Konjunktiv II: sie hätten entschieden statt sie haben entschieden.",
+  "Diese Kombination ist fast ausschliesslich schriftliches Register: Presse, Protokolle, Behördentexte. Im Gespräch wirkt sie gestelzt.",
+  "Der Relativsatz mit Konjunktiv I distanziert doppelt: einmal durch den Konjunktiv, einmal durch die Einbettung."
+ ],
+ "contraste": {
+  "es": "Das Spanische markiert berichtete Rede fast nie morphologisch, sondern über den Kontext oder según: según la medida ya decidida. Es gibt keine Entsprechung für den Konjunktiv I als eigenständiges Signal — Spanischsprachige übernehmen deshalb oft den Indikativ und verlieren die Distanzierung, die im Deutschen genau dieser Konjunktiv leistet.",
+  "en": "Das Englische markiert berichtete Rede durch Zeitenfolge, nicht durch einen Modus (the measure, which had already been decided, would be implemented). Die Funktion ist ähnlich, was hilft; das Risiko ist, dass Englischsprachige die Rückverschiebung als Plusquamperfekt übertragen (beschlossen worden war) oder vergessen, auf Konjunktiv II auszuweichen, wenn Konjunktiv I mit dem Indikativ zusammenfällt.",
+  "it": "Das Italienische kann die Distanz auch im Relativsatz mit dem condizionale markieren (la misura, che sarebbe già stata decisa, verrà attuata), die Funktion ist also vertraut. Der typische Fehler ist die formale Übertragung in den Konjunktiv II (die bereits beschlossen worden wäre), wo das Deutsche Konjunktiv I erwartet (worden sei).",
+  "fr": "Das Französische kann die Distanz auch im Relativsatz mit dem conditionnel markieren (la mesure, qui aurait déjà été décidée), die Funktion ist also bekannt. Schwierig ist die Form: Französischsprachige übertragen die analytische Reihenfolge und schreiben die sei beschlossen worden statt die beschlossen worden sei, oder greifen zum Konjunktiv II statt zum Konjunktiv I.",
+  "pt": "Das Portugiesische markiert die Distanz über Zeitverschiebung, im Relativsatz oft mit dem mais-que-perfeito (a medida, que já tinha sido decidida). Portugiesischsprachige übertragen das als Plusquamperfekt Indikativ (die bereits beschlossen worden war) statt Konjunktiv I (beschlossen worden sei) und verlieren so die Distanzierung."
+ },
+ "errores": [
+  "Konjunktiv I benutzen, wo er mit dem Indikativ zusammenfällt, ohne auf Konjunktiv II auszuweichen.",
+  "Den Relativsatz weglassen und die berichtete Aussage als eigene Behauptung formulieren.",
+  "Das Register verwechseln und die Konstruktion in einem informellen Gespräch verwenden."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Den Konjunktiv I ganz durch den Indikativ ersetzen, weil das Spanische keine Entsprechung hat, und dadurch die Distanzierung verlieren."
+  ],
+  "en": [
+   "Backshift statt Konjunktiv verwenden: die Vergangenheitsform nachbauen (die Massnahme, die beschlossen wurde) statt den Modus zu wechseln."
+  ],
+  "it": [
+   "Den Konditional der Distanz in den Relativsatz setzen: *die Massnahme, die wirksam wäre* nach *che sarebbe efficace* statt *sei*."
+  ],
+  "fr": [
+   "Den Konditional der Distanz in den Relativsatz setzen: *die Massnahme, die wirksam wäre* nach *qui serait efficace* statt *sei*."
+  ],
+  "pt": [
+   "Den Konditional der Distanz in den Relativsatz setzen: *die Massnahme, die wirksam wäre* nach *que seria eficaz* statt *sei*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Recht auf Reparatur",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el derecho a reparar",
+    "en": "the right to repair",
+    "fr": "le droit à la réparation",
+    "it": "il diritto alla riparazione",
+    "pt": "o direito à reparação"
+   }
+  },
+  {
+   "item": "der bewusste Konsum",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el consumo consciente",
+    "en": "mindful consumption",
+    "fr": "la consommation responsable",
+    "it": "il consumo consapevole",
+    "pt": "o consumo consciente"
+   }
+  },
+  {
+   "item": "der demonstrative Konsum",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el consumo ostentoso",
+    "en": "conspicuous consumption",
+    "fr": "la consommation ostentatoire",
+    "it": "il consumo vistoso",
+    "pt": "o consumo ostensivo"
+   }
+  },
+  {
+   "item": "die Herstellungsbedingungen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "las condiciones de producción",
+    "en": "production conditions",
+    "fr": "les conditions de fabrication",
+    "it": "le condizioni di produzione",
+    "pt": "as condições de produção"
+   }
+  },
+  {
+   "item": "die Wegwerfgesellschaft",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la sociedad del descarte",
+    "en": "throwaway society",
+    "fr": "la société du jetable",
+    "it": "la società dell'usa e getta",
+    "pt": "a sociedade do descartável"
+   }
+  },
+  {
+   "item": "die geplante Obsoleszenz",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la obsolescencia programada",
+    "en": "planned obsolescence",
+    "fr": "l'obsolescence programmée",
+    "it": "l'obsolescenza programmata",
+    "pt": "a obsolescência programada"
+   }
+  },
+  {
+   "item": "der Verbraucherschutz",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la protección al consumidor",
+    "en": "consumer protection",
+    "fr": "la protection des consommateurs",
+    "it": "la tutela dei consumatori",
+    "pt": "a defesa do consumidor"
+   }
+  },
+  {
+   "item": "der Zweitmarkt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el mercado de segunda mano",
+    "en": "second-hand market",
+    "fr": "le marché de l'occasion",
+    "it": "il mercato dell'usato",
+    "pt": "o mercado em segunda mão"
+   }
+  },
+  {
+   "item": "der faire Handel",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el comercio justo",
+    "en": "fair trade",
+    "fr": "le commerce équitable",
+    "it": "il commercio equo",
+    "pt": "o comércio justo"
+   }
+  },
+  {
+   "item": "die Kaufreue",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el arrepentimiento por la compra",
+    "en": "buyer's remorse",
+    "fr": "le regret d'achat",
+    "it": "il pentimento post-acquisto",
+    "pt": "o arrependimento da compra"
+   }
+  },
+  {
+   "item": "die Markentreue",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la fidelidad a la marca",
+    "en": "brand loyalty",
+    "fr": "la fidélité à la marque",
+    "it": "la fedeltà al marchio",
+    "pt": "a fidelidade à marca"
+   }
+  },
+  {
+   "item": "die Marktsättigung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la saturación del mercado",
+    "en": "market saturation",
+    "fr": "la saturation du marché",
+    "it": "la saturazione del mercato",
+    "pt": "a saturação do mercado"
+   }
+  },
+  {
+   "item": "die Reparierbarkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la reparabilidad",
+    "en": "repairability",
+    "fr": "la réparabilité",
+    "it": "la riparabilità",
+    "pt": "a reparabilidade"
+   }
+  },
+  {
+   "item": "mit dem Geldbeutel abstimmen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "votar con la billetera",
+    "en": "to vote with your wallet",
+    "fr": "voter avec son portefeuille",
+    "it": "votare con il portafoglio",
+    "pt": "votar com a carteira"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, die/der/das bereits … sei",
+   "funcion": "berichtete Eigenschaft, distanziert",
+   "traducciones": {
+    "es": "…, que ya sería…",
+    "en": "…, which was said to already be…",
+    "fr": "…, qui serait déjà…",
+    "it": "…, che sarebbe già…",
+    "pt": "…, que já seria…"
+   }
+  },
+  {
+   "expresion": "laut Bericht/Sprecher/Quelle",
+   "funcion": "Quelle nennen, formell",
+   "traducciones": {
+    "es": "según el informe/portavoz/la fuente",
+    "en": "according to the report/spokesperson/source",
+    "fr": "selon le rapport/le porte-parole/la source",
+    "it": "secondo il rapporto/portavoce/la fonte",
+    "pt": "segundo o relatório/porta-voz/a fonte"
+   }
+  },
+  {
+   "expresion": "…, wie es heisst,",
+   "funcion": "unbestimmte Quelle",
+   "traducciones": {
+    "es": "…, según se dice,",
+    "en": "…, as is being said,",
+    "fr": "…, à ce qu’on dit,",
+    "it": "…, a quanto si dice,",
+    "pt": "…, segundo se diz,"
+   }
+  },
+  {
+   "expresion": "…, so die Erklärung,",
+   "funcion": "eingeschobene Quellenangabe",
+   "traducciones": {
+    "es": "…, según la explicación,",
+    "en": "…, according to the statement,",
+    "fr": "…, selon l’explication,",
+    "it": "…, secondo la spiegazione,",
+    "pt": "…, segundo a explicação,"
+   }
+  },
+  {
+   "expresion": "…, heisst es weiter,",
+   "funcion": "Fortsetzung der Quellenangabe",
+   "traducciones": {
+    "es": "…, se añade,",
+    "en": "…, it goes on to say,",
+    "fr": "…, poursuit le texte,",
+    "it": "…, si legge inoltre,",
+    "pt": "…, acrescenta-se,"
+   }
+  },
+  {
+   "expresion": "Wie verlautet, sei…",
+   "funcion": "unbestimmte Quelle, sehr formell",
+   "traducciones": {
+    "es": "Según se ha sabido, sería…",
+    "en": "According to reports, it was said to be…",
+    "fr": "Selon certaines informations, il/elle serait…",
+    "it": "Secondo quanto riferito, sarebbe…",
+    "pt": "Segundo consta, seria…"
+   }
+  },
+  {
+   "expresion": "Nach Angaben von…",
+   "funcion": "Quelle nennen, neutral",
+   "traducciones": {
+    "es": "Según datos de…",
+    "en": "According to…",
+    "fr": "Selon les indications de…",
+    "it": "Secondo quanto riferito da…",
+    "pt": "Segundo informações de…"
+   }
+  },
+  {
+   "expresion": "Die Quelle wollte nicht genannt werden.",
+   "funcion": "Anonymität der Quelle markieren",
+   "traducciones": {
+    "es": "La fuente pidió no ser nombrada.",
+    "en": "The source asked not to be named.",
+    "fr": "La source n'a pas souhaité être nommée.",
+    "it": "La fonte ha chiesto di non essere nominata.",
+    "pt": "A fonte pediu para não ser identificada."
+   }
+  },
+  {
+   "expresion": "Eine Bestätigung steht noch aus.",
+   "funcion": "fehlende Bestätigung kennzeichnen",
+   "traducciones": {
+    "es": "Todavía falta la confirmación.",
+    "en": "Confirmation is still outstanding.",
+    "fr": "Une confirmation fait encore défaut.",
+    "it": "Manca ancora una conferma.",
+    "pt": "Falta ainda confirmação."
+   }
+  },
+  {
+   "expresion": "…, was sich nicht überprüfen liess.",
+   "funcion": "Unüberprüfbarkeit im Relativsatz",
+   "traducciones": {
+    "es": "…, algo que no se pudo verificar.",
+    "en": "…, which could not be verified.",
+    "fr": "…, ce qui n'a pas pu être vérifié.",
+    "it": "…, cosa che non è stato possibile verificare.",
+    "pt": "…, o que não foi possível verificar."
+   }
+  },
+  {
+   "expresion": "Auf Anfrage hiess es, …",
+   "funcion": "Antwort auf eine Nachfrage wiedergeben",
+   "traducciones": {
+    "es": "Consultados al respecto, señalaron que…",
+    "en": "Asked about it, they said…",
+    "fr": "Interrogés, ils ont indiqué que…",
+    "it": "Interpellati, hanno riferito che…",
+    "pt": "Questionados, referiram que…"
+   }
+  },
+  {
+   "expresion": "Dem widerspricht…",
+   "funcion": "eine Gegenstimme einführen",
+   "traducciones": {
+    "es": "A eso se opone…",
+    "en": "That is contradicted by…",
+    "fr": "Cela est contredit par…",
+    "it": "A ciò si oppone…",
+    "pt": "A isso contrapõe-se…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie eine Pressemeldung über eine (fiktive) Einigung zum Recht auf Reparatur.",
+  "requisitos": [
+   "Konjunktiv I in mindestens zwei Relativsätzen",
+   "durchgehend Nominalstil in der Einleitung",
+   "zwei Quellenangaben ohne *sagte*",
+   "*das Recht auf Reparatur*, *die geplante Obsoleszenz* und *die Wegwerfgesellschaft* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei Aussagen eines Ministeriums zum *bewussten Konsum* in indirekte Rede setzen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Zwei dieser Aussagen in Relativsätze mit Konjunktiv I einbetten."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden eine Nachricht zum *demonstrativen Konsum* vorlesen, die Sie im Pressestil geschrieben haben."
+  }
+ ],
+ "autochequeo": [
+  "Habe ich auf Konjunktiv II gewechselt, wo Konjunktiv I mit dem Indikativ zusammenfällt?",
+  "Ist die berichtete Aussage klar als fremd markiert, nicht als eigene?",
+  "Passt der Nominalstil zum Register des restlichen Textes?",
+  "Würde diese Konstruktion in einem Gespräch stehen, oder gehört sie nur in einen Bericht?",
+  "Ist zu erkennen, dass es sich um eine fremde und keine eigene Aussage handelt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Konjunktiv I in Relativsätzen im Nominalstil. (1) Prüfen Sie bei jedem Konjunktiv I, ob er sich vom Indikativ unterscheidet; wenn nicht, muss Konjunktiv II stehen. (2) Prüfen Sie, ob die Distanzierung zur fremden Aussage erhalten bleibt. (3) Sagen Sie, ob das Register zum Rest des Textes passt. Schreiben Sie den Text nicht neu."
+}

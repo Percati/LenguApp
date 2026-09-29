@@ -1,0 +1,389 @@
+{
+ "id": "DE-F08-B2-2027-1",
+ "skillId": "DE-F08",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "fluency",
+ "topicId": "T06",
+ "titulo": "Zusammenfassen",
+ "subtitulo": "Den Kern zuerst: eine Klimastudie zusammenfassen",
+ "ancla": "PD B2 (CEFR mediation)",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Auf B2 fasst man einen Text kompakt zusammen, mit dem wichtigsten Punkt am Anfang. Die feinere Struktur mit offenen Fragen und getrennter eigener Einordnung (C1) ist hier noch nicht das Ziel — es reicht, den Kern klar herauszustellen, statt den Text nachzuerzählen.",
+ "cuadroReferencia": {
+  "titulo": "Eine kompakte Zusammenfassung",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Hauptpunkt zuerst",
+    "Es geht vor allem darum, dass…"
+   ],
+   [
+    "Ein bis zwei Stützpunkte",
+    "Ausserdem wird erwähnt, dass…"
+   ],
+   [
+    "Kurzer Abschluss",
+    "Insgesamt zeigt der Text, dass…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Es geht vor allem darum, dass die Stadt mehr Grünflächen plant.",
+   "audio": true
+  },
+  {
+   "texto": "Ausserdem wird erwähnt, dass die Kosten dafür noch unklar sind.",
+   "audio": true
+  },
+  {
+   "texto": "Insgesamt zeigt der Text, dass das Projekt noch am Anfang steht."
+  }
+ ],
+ "notas": [
+  "Der Hauptpunkt sollte am Anfang stehen, nicht am Ende — das ist der wichtigste Unterschied zum Nacherzählen.",
+  "Ein bis zwei Stützpunkte reichen für eine kompakte Zusammenfassung; mehr macht sie zu lang.",
+  "Insgesamt oder zusammenfassend eignen sich gut, um den Abschluss zu markieren."
+ ],
+ "contraste": {
+  "es": "El texto trata de… entspricht genau Der Text handelt von…, und en resumen entspricht zusammenfassend. Die Formeln übertragen sich gut; zu üben ist, mit dem Hauptpunkt zu beginnen, statt der Reihenfolge des Textes zu folgen.",
+  "it": "Il testo tratta di… entspricht genau Der Text handelt von…, und in sintesi entspricht zusammenfassend. Die Formeln übertragen sich gut; zu üben ist, mit dem Hauptpunkt zu beginnen statt der Reihenfolge des Textes zu folgen.",
+  "fr": "Le texte traite de… entspricht genau Der Text handelt von…, und en résumé entspricht zusammenfassend. Die Formeln übertragen sich gut; zu üben ist, mit dem Hauptpunkt zu beginnen.",
+  "pt": "O texto trata de… entspricht genau Der Text handelt von…, und em suma entspricht kurz gesagt oder zusammenfassend. Die Formeln übertragen sich gut; zu üben ist, mit dem Hauptpunkt zu beginnen.",
+  "en": "The text is about wird oft zu Der Text ist über übertragen; richtig ist Der Text handelt von oder Im Text geht es um. In summary entspricht zusammenfassend."
+ },
+ "errores": [
+  "Den Text chronologisch nacherzählen statt den Hauptpunkt zuerst zu nennen.",
+  "Zu viele Details aus dem Original übernehmen, statt eine echte Zusammenfassung zu schreiben.",
+  "Keinen klaren Abschluss haben, sodass die Zusammenfassung einfach aufhört."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*El texto habla de* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "it": [
+   "*Il testo parla di* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "fr": [
+   "*Le texte parle de* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "pt": [
+   "*O texto fala de* als *Der Text spricht von* übertragen statt *Der Text handelt von*."
+  ],
+  "en": [
+   "*The text is about* als *Der Text ist über* übertragen statt *Der Text handelt von*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der CO2-Fussabdruck",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la huella de carbono",
+    "en": "the carbon footprint",
+    "fr": "l'empreinte carbone",
+    "it": "l'impronta di carbonio",
+    "pt": "a pegada de carbono"
+   }
+  },
+  {
+   "item": "der Klimawandel",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el cambio climático",
+    "en": "climate change",
+    "fr": "le changement climatique",
+    "it": "il cambiamento climatico",
+    "pt": "as mudanças climáticas"
+   }
+  },
+  {
+   "item": "die Treibhausgase",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gases de efecto invernadero",
+    "en": "greenhouse gases",
+    "fr": "les gaz à effet de serre",
+    "it": "i gas serra",
+    "pt": "os gases de efeito estufa"
+   }
+  },
+  {
+   "item": "die Biodiversität",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la biodiversidad",
+    "en": "biodiversity",
+    "fr": "la biodiversité",
+    "it": "la biodiversità",
+    "pt": "a biodiversidade"
+   }
+  },
+  {
+   "item": "die Dürre",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la sequía",
+    "en": "the drought",
+    "fr": "la sécheresse",
+    "it": "la siccità",
+    "pt": "a seca"
+   }
+  },
+  {
+   "item": "der Meeresspiegelanstieg",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el aumento del nivel del mar",
+    "en": "sea level rise",
+    "fr": "la montée du niveau de la mer",
+    "it": "l'innalzamento del livello del mare",
+    "pt": "a elevação do nível do mar"
+   }
+  },
+  {
+   "item": "die Aussterberate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la tasa de extinción",
+    "en": "the extinction rate",
+    "fr": "le taux d'extinction",
+    "it": "il tasso di estinzione",
+    "pt": "a taxa de extinção"
+   }
+  },
+  {
+   "item": "der Kipppunkt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el punto de inflexión (climático)",
+    "en": "the tipping point",
+    "fr": "le point de bascule",
+    "it": "il punto di non ritorno",
+    "pt": "o ponto de inflexão"
+   }
+  },
+  {
+   "item": "der Emissionshandel",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el comercio de emisiones",
+    "en": "emissions trading",
+    "fr": "le marché du carbone",
+    "it": "il mercato delle emissioni",
+    "pt": "o comércio de emissões"
+   }
+  },
+  {
+   "item": "die Klimaflucht",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el desplazamiento climático",
+    "en": "climate displacement",
+    "fr": "la migration climatique",
+    "it": "la migrazione climatica",
+    "pt": "o deslocamento climático"
+   }
+  },
+  {
+   "item": "das Artensterben",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la extinción de especies",
+    "en": "species extinction",
+    "fr": "l'extinction des espèces",
+    "it": "l'estinzione delle specie",
+    "pt": "a extinção de espécies"
+   }
+  },
+  {
+   "item": "sich abzeichnen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "vislumbrarse, hacerse evidente",
+    "en": "to become apparent",
+    "fr": "se dessiner",
+    "it": "delinearsi",
+    "pt": "tornar-se evidente"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Es geht vor allem darum, dass…",
+   "funcion": "Hauptpunkt",
+   "traducciones": {
+    "es": "Se trata sobre todo de que…",
+    "en": "It's mainly about the fact that…",
+    "fr": "Il s’agit surtout du fait que…",
+    "it": "Si tratta soprattutto del fatto che…",
+    "pt": "Trata-se sobretudo do facto de que…"
+   }
+  },
+  {
+   "expresion": "Ausserdem wird erwähnt, dass…",
+   "funcion": "Stützpunkt",
+   "traducciones": {
+    "es": "Además se menciona que…",
+    "en": "It's also mentioned that…",
+    "fr": "Il est également mentionné que…",
+    "it": "Viene inoltre menzionato che…",
+    "pt": "Também é mencionado que…"
+   }
+  },
+  {
+   "expresion": "Insgesamt zeigt der Text, dass…",
+   "funcion": "Abschluss",
+   "traducciones": {
+    "es": "En general, el texto muestra que…",
+    "en": "Overall, the text shows that…",
+    "fr": "Dans l’ensemble, le texte montre que…",
+    "it": "Nel complesso, il testo mostra che…",
+    "pt": "No geral, o texto mostra que…"
+   }
+  },
+  {
+   "expresion": "Zusammenfassend lässt sich sagen, dass…",
+   "funcion": "Abschluss, formeller",
+   "traducciones": {
+    "es": "En resumen, se puede decir que…",
+    "en": "In summary, it can be said that…",
+    "fr": "En résumé, on peut dire que…",
+    "it": "In sintesi, si può dire che…",
+    "pt": "Em resumo, pode dizer-se que…"
+   }
+  },
+  {
+   "expresion": "Der Text handelt von…",
+   "funcion": "Thema einführen",
+   "traducciones": {
+    "es": "El texto trata sobre…",
+    "en": "The text is about…",
+    "fr": "Le texte parle de…",
+    "it": "Il testo parla di…",
+    "pt": "O texto fala de…"
+   }
+  },
+  {
+   "expresion": "Kurz gesagt,…",
+   "funcion": "kompakter Einstieg",
+   "traducciones": {
+    "es": "En pocas palabras,…",
+    "en": "In short,…",
+    "fr": "En bref,…",
+    "it": "In breve,…",
+    "pt": "Resumindo,…"
+   }
+  },
+  {
+   "expresion": "Im Text geht es um zwei Punkte: …",
+   "funcion": "die Zahl der Punkte vorab nennen",
+   "traducciones": {
+    "es": "El texto trata dos puntos: …",
+    "en": "The text covers two points: …",
+    "fr": "Le texte aborde deux points : …",
+    "it": "Il testo tratta due punti: …",
+    "pt": "O texto trata dois pontos: …"
+   }
+  },
+  {
+   "expresion": "Der Autor kritisiert vor allem…",
+   "funcion": "die Haltung der Quelle wiedergeben",
+   "traducciones": {
+    "es": "El autor critica sobre todo…",
+    "en": "The author mainly criticises…",
+    "fr": "L'auteur critique surtout…",
+    "it": "L'autore critica soprattutto…",
+    "pt": "O autor critica sobretudo…"
+   }
+  },
+  {
+   "expresion": "Dazu werden Zahlen genannt: …",
+   "funcion": "Belege der Quelle erwähnen",
+   "traducciones": {
+    "es": "Al respecto se dan cifras: …",
+    "en": "Figures are given for this: …",
+    "fr": "Des chiffres sont donnés à ce sujet : …",
+    "it": "Al riguardo vengono citate cifre: …",
+    "pt": "Sobre isso são dados números: …"
+   }
+  },
+  {
+   "expresion": "Wichtig ist auch, dass…",
+   "funcion": "einen zweiten Punkt gewichten",
+   "traducciones": {
+    "es": "También es importante que…",
+    "en": "It also matters that…",
+    "fr": "Il est également important que…",
+    "it": "È importante anche che…",
+    "pt": "Também é importante que…"
+   }
+  },
+  {
+   "expresion": "Auf die Details gehe ich nicht ein.",
+   "funcion": "Auslassung ankündigen",
+   "traducciones": {
+    "es": "No entro en los detalles.",
+    "en": "I won't go into the details.",
+    "fr": "Je n'entre pas dans les détails.",
+    "it": "Non entro nei dettagli.",
+    "pt": "Não entro nos detalhes."
+   }
+  },
+  {
+   "expresion": "Meine eigene Meinung dazu ist…",
+   "funcion": "die eigene Sicht getrennt anschliessen",
+   "traducciones": {
+    "es": "Mi propia opinión al respecto es…",
+    "en": "My own view on it is…",
+    "fr": "Mon avis personnel là-dessus est…",
+    "it": "La mia opinione al riguardo è…",
+    "pt": "A minha opinião sobre isso é…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Fassen Sie einen Artikel oder eine Studie zum Klimawandel in 150 Wörtern zusammen.",
+  "requisitos": [
+   "der wichtigste Punkt im ersten Satz",
+   "höchstens drei weitere Punkte",
+   "keine eigene Meinung im Text",
+   "*der Klimawandel*, *die Treibhausgase* und *die Biodiversität* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 10,
+   "texto": "Einen Artikel zum *CO2-Fussabdruck* in genau 50 Wörtern zusammenfassen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Denselben Text in 15 Wörtern. Was fiel weg?"
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: *Kurz gesagt, …* — worum geht es bei den *Treibhausgasen*?"
+  }
+ ],
+ "autochequeo": [
+  "Steht der Hauptpunkt am Anfang?",
+  "Sind ein bis zwei Stützpunkte genannt, nicht zu viele Details?",
+  "Gibt es einen klaren Abschluss?",
+  "Ist es eine Zusammenfassung, keine Nacherzählung?",
+  "Ist die Zusammenfassung deutlich kürzer als der Originaltext?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob der Hauptpunkt am Anfang steht und die Zusammenfassung kompakt bleibt. Schreiben Sie den Text nicht neu."
+}

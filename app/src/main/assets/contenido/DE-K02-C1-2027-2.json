@@ -1,0 +1,402 @@
+{
+ "id": "DE-K02-C1-2027-2",
+ "skillId": "DE-K02",
+ "order": 2,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T03",
+ "titulo": "Passiv + Partizip I und II als Attribut",
+ "subtitulo": "Das Partizipialattribut in der Technikfolgenabschätzung",
+ "ancla": "Erkundungen C2",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Das erweiterte Partizipialattribut mit zu (die zu erwartenden Auswirkungen) ist strukturell ein verstecktes Passiv mit Modalbedeutung: es bedeutet, was erwartet werden muss. Wer Passiv und Partizipialattribute getrennt gelernt hat, erkennt diesen Zusammenhang oft nicht und vermeidet die Konstruktion ganz — dabei ist sie der Kern des deutschen Berichts- und Verwaltungsstils.",
+ "cuadroReferencia": {
+  "titulo": "Vom Nebensatz zum Attribut",
+  "columnas": [
+   "Nebensatz",
+   "Attribut",
+   "Bedeutung"
+  ],
+  "filas": [
+   [
+    "die Folgen, die zu erwarten sind",
+    "die zu erwartenden Folgen",
+    "Notwendigkeit/Möglichkeit, passivisch"
+   ],
+   [
+    "das Verfahren, das anzuwenden ist",
+    "das anzuwendende Verfahren",
+    "Vorschrift, passivisch"
+   ],
+   [
+    "die Kosten, die gesenkt werden müssen",
+    "die zu senkenden Kosten",
+    "Pflicht, passivisch"
+   ],
+   [
+    "der Bericht, der veröffentlicht wurde",
+    "der veröffentlichte Bericht",
+    "abgeschlossenes Passiv, Partizip II"
+   ]
+  ],
+  "notaPie": "Zu erwartende = muss erwartet werden. Das zu + Partizip I trägt IMMER eine Modalbedeutung, nie eine reine Beschreibung."
+ },
+ "ejemplos": [
+  {
+   "texto": "Die zu erwartenden Auswirkungen wurden im Bericht nicht erwähnt.",
+   "audio": true
+  },
+  {
+   "texto": "Das anzuwendende Verfahren richtet sich nach der jeweiligen Verordnung.",
+   "audio": true
+  },
+  {
+   "texto": "Die noch zu klärenden Fragen werden in der nächsten Sitzung besprochen."
+  },
+  {
+   "texto": "Der bereits genehmigte Antrag wird in Kürze bearbeitet."
+  }
+ ],
+ "notas": [
+  "Nur transitive Verben mit zu + Partizip I bilden diese Modalbedeutung; intransitive Verben (ankommen, geschehen) können das nicht.",
+  "Partizip II als Attribut (der veröffentlichte Bericht) ist einfaches Zustandspassiv, ohne Modalbedeutung — nicht verwechseln.",
+  "Diese Konstruktion ersetzt oft einen ganzen Relativsatz und ist deshalb ein Mittel zur Verdichtung, nicht nur eine Stilfrage."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keine direkte Entsprechung für das Modalpartizip mit zu: die zu erwartenden Folgen muss mit einem ganzen Relativsatz umschrieben werden (las consecuencias que cabe esperar). Spanischsprachige lassen die Konstruktion deshalb meist ganz weg und bauen den Relativsatz aus, was länger und weniger formell klingt.",
+  "en": "Die beste Brücke ist die englische Konstruktion are to be expected, die genau dem deutschen sind zu erwarten entspricht. Das deutsche Attribut ist nichts anderes als diese Form, vor das Nomen gezogen und dekliniert (die zu erwartenden Folgen); weil das Englische diesen Schritt nie macht, bleiben Englischsprachige meist beim Relativsatz.",
+  "it": "Mit da + Infinitiv (le conseguenze da attendersi) kennt das Italienische bereits die Verbindung von Passiv und Modalität, der Zusammenhang ist für Italienischsprachige also leicht zu sehen. Was fehlt, ist die Stellung: Das Italienische kann diese Ergänzung nie vor das Nomen setzen, das erweiterte Attribut muss deshalb aktiv geübt werden.",
+  "fr": "Mit à + Infinitiv (les conséquences à prévoir) kennt das Französische die Verbindung von Passiv und Modalität bereits. Eine nützliche Brücke ist c'est à prévoir – das ist zu erwarten: Das deutsche Attribut ist nichts anderes als dieses ist zu erwarten, vor das Nomen gezogen und dekliniert (die zu erwartenden Folgen).",
+  "pt": "Der brasilianische Infinitiv a serem + Partizip (as consequências a serem esperadas) zeigt das Passiv ausdrücklich, das im deutschen zu + Partizip I versteckt ist. Diese Form eignet sich deshalb gut als Brücke: Portugiesischsprachige sehen die Passivbedeutung, müssen aber lernen, sie in ein vorangestelltes Attribut zu verdichten."
+ },
+ "errores": [
+  "Zu + Partizip I mit einem intransitiven Verb bilden, wo es grammatisch nicht möglich ist.",
+  "Partizip I ohne zu verwenden und dabei die Modalbedeutung verlieren: die erwartenden Folgen statt die zu erwartenden Folgen.",
+  "Die Konstruktion systematisch vermeiden und stattdessen immer den Relativsatz ausschreiben."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Den Relativsatz komplett ausbauen, weil im Spanischen keine kompakte Form existiert: las consecuencias que hay que esperar wörtlich übertragen."
+  ],
+  "en": [
+   "Die Konstruktion als Gerundium missverstehen und ein reines Partizip I ohne zu bilden, parallel zum englischen expected consequences."
+  ],
+  "it": [
+   "*le conseguenze da aspettarsi* als *die Folgen zu erwarten* übertragen statt *die zu erwartenden Folgen*."
+  ],
+  "fr": [
+   "*les conséquences à prévoir* als *die Folgen zu erwarten* übertragen statt *die zu erwartenden Folgen*."
+  ],
+  "pt": [
+   "*as consequências a esperar* als *die Folgen zu erwarten* übertragen statt *die zu erwartenden Folgen*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "Arbeitsplätze verdrängen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "desplazar puestos de trabajo",
+    "en": "to displace jobs",
+    "fr": "supprimer des emplois",
+    "it": "sostituire posti di lavoro",
+    "pt": "substituir postos de trabalho"
+   }
+  },
+  {
+   "item": "die Rechenschaftspflicht",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la rendición de cuentas",
+    "en": "accountability",
+    "fr": "l'obligation de rendre des comptes",
+    "it": "l'obbligo di rendiconto",
+    "pt": "a prestação de contas"
+   }
+  },
+  {
+   "item": "die Technikfolgenabschätzung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la evaluación del impacto tecnológico",
+    "en": "technology assessment",
+    "fr": "l'évaluation des impacts technologiques",
+    "it": "la valutazione dell'impatto tecnologico",
+    "pt": "a avaliação do impacto tecnológico"
+   }
+  },
+  {
+   "item": "die digitale Kluft",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la brecha digital",
+    "en": "digital divide",
+    "fr": "la fracture numérique",
+    "it": "il divario digitale",
+    "pt": "a exclusão digital"
+   }
+  },
+  {
+   "item": "die informierte Einwilligung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el consentimiento informado",
+    "en": "informed consent",
+    "fr": "le consentement éclairé",
+    "it": "il consenso informato",
+    "pt": "o consentimento informado"
+   }
+  },
+  {
+   "item": "die künstliche Intelligenz",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la inteligencia artificial",
+    "en": "artificial intelligence",
+    "fr": "l'intelligence artificielle",
+    "it": "l'intelligenza artificiale",
+    "pt": "a inteligência artificial"
+   }
+  },
+  {
+   "item": "sich zu sehr verlassen auf",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "depender demasiado de",
+    "en": "to be over-reliant on",
+    "fr": "trop dépendre de",
+    "it": "affidarsi troppo a",
+    "pt": "depender demasiado de"
+   }
+  },
+  {
+   "item": "den Anschluss verlieren",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "quedarse fuera de juego",
+    "en": "to fall behind",
+    "fr": "perdre le contact",
+    "it": "perdere il passo",
+    "pt": "perder o comboio"
+   }
+  },
+  {
+   "item": "der Rechtsrahmen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el marco jurídico",
+    "en": "regulatory framework",
+    "fr": "le cadre juridique",
+    "it": "il quadro giuridico",
+    "pt": "o quadro jurídico"
+   }
+  },
+  {
+   "item": "der Technikoptimismus",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el tecnooptimismo",
+    "en": "techno-optimism",
+    "fr": "le techno-optimisme",
+    "it": "il tecno-ottimismo",
+    "pt": "o tecno-otimismo"
+   }
+  },
+  {
+   "item": "die Teilhabe",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la participación",
+    "en": "participation, inclusion",
+    "fr": "la participation",
+    "it": "la partecipazione",
+    "pt": "a participação"
+   }
+  },
+  {
+   "item": "die Übergangsfrist",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el período de transición",
+    "en": "transition period",
+    "fr": "la période de transition",
+    "it": "il periodo di transizione",
+    "pt": "o período de transição"
+   }
+  },
+  {
+   "item": "etwas auf den Prüfstand stellen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "someter algo a revisión",
+    "en": "to put something under scrutiny",
+    "fr": "passer qc au crible",
+    "it": "mettere qc alla prova",
+    "pt": "pôr algo em causa"
+   }
+  },
+  {
+   "item": "unbeabsichtigte Folgen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "consecuencias no deseadas",
+    "en": "unintended consequences",
+    "fr": "conséquences imprévues",
+    "it": "conseguenze indesiderate",
+    "pt": "consequências não intencionais"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "die zu erwartenden Auswirkungen",
+   "funcion": "feste Wendung, Berichte",
+   "traducciones": {
+    "es": "las consecuencias previsibles",
+    "en": "the expected consequences",
+    "fr": "les conséquences attendues",
+    "it": "le conseguenze previste",
+    "pt": "as consequências previsíveis"
+   }
+  },
+  {
+   "expresion": "das anzuwendende Verfahren",
+   "funcion": "Verwaltungssprache",
+   "traducciones": {
+    "es": "el procedimiento a aplicar",
+    "en": "the procedure to be applied",
+    "fr": "la procédure à appliquer",
+    "it": "la procedura da applicare",
+    "pt": "o procedimento a aplicar"
+   }
+  },
+  {
+   "expresion": "die noch zu klärende Frage",
+   "funcion": "offener Punkt, formell",
+   "traducciones": {
+    "es": "la cuestión pendiente de aclarar",
+    "en": "the question still to be clarified",
+    "fr": "la question qui reste à clarifier",
+    "it": "la questione ancora da chiarire",
+    "pt": "a questão ainda por esclarecer"
+   }
+  },
+  {
+   "expresion": "der bereits genehmigte Antrag",
+   "funcion": "abgeschlossener Zustand",
+   "traducciones": {
+    "es": "la solicitud ya aprobada",
+    "en": "the already approved application",
+    "fr": "la demande déjà approuvée",
+    "it": "la domanda già approvata",
+    "pt": "o pedido já aprovado"
+   }
+  },
+  {
+   "expresion": "die zu berücksichtigenden Faktoren",
+   "funcion": "feste Wendung, Analyse",
+   "traducciones": {
+    "es": "los factores a tener en cuenta",
+    "en": "the factors to be taken into account",
+    "fr": "les facteurs à prendre en compte",
+    "it": "i fattori da tenere in considerazione",
+    "pt": "os fatores a ter em conta"
+   }
+  },
+  {
+   "expresion": "das zu lösende Problem",
+   "funcion": "Aufgabenstellung, formell",
+   "traducciones": {
+    "es": "el problema por resolver",
+    "en": "the problem to be solved",
+    "fr": "le problème à résoudre",
+    "it": "il problema da risolvere",
+    "pt": "o problema a resolver"
+   }
+  },
+  {
+   "expresion": "Aufgelöst heisst das: …",
+   "funcion": "das Attribut für die Zuhörenden auflösen",
+   "traducciones": {
+    "es": "Desplegado, eso quiere decir: …",
+    "en": "Unpacked, that means: …",
+    "fr": "Déplié, cela signifie : …",
+    "it": "Sciolto, significa: …",
+    "pt": "Desdobrado, isso quer dizer: …"
+   }
+  },
+  {
+   "expresion": "Das Attribut wird hier zu lang.",
+   "funcion": "die Grenze der Konstruktion benennen",
+   "traducciones": {
+    "es": "Acá el atributo se vuelve demasiado largo.",
+    "en": "The attribute gets too long here.",
+    "fr": "Ici, l'attribut devient trop long.",
+    "it": "Qui l'attributo diventa troppo lungo.",
+    "pt": "Aqui o atributo fica demasiado longo."
+   }
+  },
+  {
+   "expresion": "die noch offene, erst zu klärende Frage",
+   "funcion": "zwei Attribute gestapelt, gerade noch lesbar",
+   "traducciones": {
+    "es": "la cuestión aún abierta, todavía por aclarar",
+    "en": "the still open question, yet to be clarified",
+    "fr": "la question encore ouverte, restant à clarifier",
+    "it": "la questione ancora aperta, da chiarire",
+    "pt": "a questão ainda em aberto, por esclarecer"
+   }
+  },
+  {
+   "expresion": "In der gesprochenen Fassung würde ich sagen: …",
+   "funcion": "Genre-Wechsel vom Bericht zur Rede",
+   "traducciones": {
+    "es": "En la versión hablada yo diría: …",
+    "en": "In the spoken version I'd say: …",
+    "fr": "Dans la version orale, je dirais : …",
+    "it": "Nella versione parlata direi: …",
+    "pt": "Na versão falada eu diria: …"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Verfassen Sie die Zusammenfassung einer Technikfolgenabschätzung zu KI im Gesundheitswesen oder in der Verwaltung.",
+  "requisitos": [
+   "drei Partizipialattribute, davon eines mit *zu* — andere als beim letzten Mal",
+   "ein Partizip I als Attribut",
+   "ein Satz, in dem Sie das Attribut bewusst in einen Passivsatz aufgelöst haben",
+   "*die Technikfolgenabschätzung*, *die digitale Kluft* und *sich zu sehr verlassen auf* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Passivsätze zur *künstlichen Intelligenz* in Partizipialattribute umwandeln."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "*die noch zu klärende Rechenschaftspflicht*: drei ähnliche Attribute bauen."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Welche Folgen hat es, wenn Maschinen *Arbeitsplätze verdrängen*? Ohne Partizipialattribute sprechen."
+  }
+ ],
+ "autochequeo": [
+  "Ist das Verb transitiv, sodass zu + Partizip I überhaupt möglich ist?",
+  "Trägt die Konstruktion eine Modalbedeutung (muss/kann erwartet werden)?",
+  "Habe ich Partizip I und Partizip II richtig unterschieden?",
+  "Könnte ich einen Relativsatz durch diese kompaktere Form ersetzen?",
+  "Klingt der Satz nach Bericht oder Verwaltungstext, wie beabsichtigt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf das erweiterte Partizipialattribut mit zu. (1) Prüfen Sie, ob das Verb transitiv ist. (2) Prüfen Sie, ob die Modalbedeutung erhalten bleibt. (3) Zeigen Sie mir zwei Relativsätze, die sich in diese Form umwandeln liessen. Schreiben Sie den Text nicht neu."
+}

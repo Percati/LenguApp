@@ -1,0 +1,393 @@
+{
+ "id": "EN-K03-B2-2027-1",
+ "skillId": "EN-K03",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T12",
+ "titulo": "Unreal Past, Modal Perfect and Third Conditional",
+ "subtitulo": "Regrets about free time",
+ "ancla": "EGP B2",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "At B2 the three regret structures — wish, modal perfect, third conditional — are learned individually and start to be combined in short exchanges. The seamless blending expected at C1 isn't the target yet; using each correctly, and occasionally together, is enough.",
+ "cuadroReferencia": {
+  "titulo": "The regret pieces",
+  "columnas": [
+   "Structure",
+   "Form",
+   "Function"
+  ],
+  "filas": [
+   [
+    "Unreal past",
+    "wish + past simple/perfect",
+    "regret about now or the past"
+   ],
+   [
+    "Modal perfect",
+    "should/could have + participle",
+    "missed action"
+   ],
+   [
+    "Third conditional",
+    "if + past perfect, would have + participle",
+    "the alternative outcome"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I wish I'd known about it sooner.",
+   "audio": true
+  },
+  {
+   "texto": "We should have checked before leaving.",
+   "audio": true
+  },
+  {
+   "texto": "If we'd checked, we wouldn't have missed the train."
+  }
+ ],
+ "notas": [
+  "Wish takes the past perfect when the regret is about the past: I wish I'd known, not I wish I knew, for a past event.",
+  "Should have is about a missed obligation; could have is about a missed possibility — they aren't interchangeable.",
+  "The if-clause of the third conditional never contains would."
+ ],
+ "contraste": {
+  "es": "Spanish expresses the same with ojalá + pluscuamperfecto de subjuntivo and with si + pluscuamperfecto + conditional perfect, and it also has the modal perfect (debería haberlo dicho, podría haberlo evitado). The logic is parallel; the difference is the form, since Spanish puts the modal in the conditional and English uses should / could have + participle.",
+  "de": "German has close equivalents for all three pieces: ich wünschte, ich hätte… (I wish I had), hätte… sollen / können (should / could have) and hätte… in conditionals. The recurring error comes from colloquial würde: I wish I would have known, if I would have known.",
+  "it": "Italian has a separate modal perfect (avrei dovuto, avrei potuto), so all three pieces exist. Translated literally, however, avrei dovuto dirtelo becomes I would have had to tell you instead of I should have told you.",
+  "fr": "French has a separate modal perfect (j'aurais dû, j'aurais pu) and si seulement j'avais su for regret, so all three pieces exist. Translated literally, j'aurais dû te le dire becomes I would have had to tell you instead of I should have told you.",
+  "pt": "Portuguese has the modal perfect in almost the same order as English (devia ter dito – should have said; podia ter evitado – could have avoided). Together with quem me dera ter sabido (I wish I had known), all three pieces transfer well."
+ },
+ "errores": [
+  "Using would in the if-clause of the third conditional.",
+  "Confusing should have and could have.",
+  "Using the past simple after wish for a past regret instead of the past perfect."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*tendría que haber ido* rendered as *I would have to have gone* instead of *I should have gone*."
+  ],
+  "de": [
+   "*wenn … nur* rendered with *when*: *When I had only known* instead of *If only I had known*."
+  ],
+  "it": [
+   "*sarei dovuto venire* rendered as *I would have had to come*, which changes the meaning, instead of *I should have come*."
+  ],
+  "fr": [
+   "*j'aurais dû venir* rendered as *I would have had to come*, which changes the meaning, instead of *I should have come*."
+  ],
+  "pt": [
+   "*devia ter vindo* rendered as *I had to come*, which states a fact, instead of *I should have come*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "leisure activity",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la actividad de ocio",
+    "de": "die Freizeitbeschäftigung",
+    "fr": "l'activité de loisir",
+    "it": "l'attività del tempo libero",
+    "pt": "a atividade de lazer"
+   }
+  },
+  {
+   "item": "to take up a hobby",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "empezar una afición",
+    "de": "ein Hobby anfangen",
+    "fr": "se mettre à un loisir",
+    "it": "iniziare un hobby",
+    "pt": "começar um passatempo"
+   }
+  },
+  {
+   "item": "to relax",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "relajarse",
+    "de": "sich entspannen",
+    "fr": "se détendre",
+    "it": "rilassarsi",
+    "pt": "relaxar"
+   }
+  },
+  {
+   "item": "club",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el club",
+    "de": "der Verein / Club",
+    "fr": "le club",
+    "it": "il club",
+    "pt": "o clube"
+   }
+  },
+  {
+   "item": "collecting",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el coleccionismo",
+    "de": "das Sammeln",
+    "fr": "la collection",
+    "it": "il collezionismo",
+    "pt": "o colecionismo"
+   }
+  },
+  {
+   "item": "to let off steam",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "descargar energía",
+    "de": "sich austoben",
+    "fr": "se défouler",
+    "it": "sfogarsi",
+    "pt": "descarregar energias"
+   }
+  },
+  {
+   "item": "pastime",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el pasatiempo",
+    "de": "der Zeitvertreib",
+    "fr": "le passe-temps",
+    "it": "il passatempo",
+    "pt": "o passatempo"
+   }
+  },
+  {
+   "item": "spare time",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el tiempo libre",
+    "de": "Freizeit",
+    "fr": "le temps libre",
+    "it": "il tempo libero",
+    "pt": "o tempo livre"
+   }
+  },
+  {
+   "item": "volunteering",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el voluntariado",
+    "de": "die Freiwilligenarbeit",
+    "fr": "le bénévolat",
+    "it": "il volontariato",
+    "pt": "o voluntariado"
+   }
+  },
+  {
+   "item": "club rules",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las reglas del club",
+    "de": "die Vereinsregeln",
+    "fr": "les règles du club",
+    "it": "le regole del club",
+    "pt": "as regras do clube"
+   }
+  },
+  {
+   "item": "to get into something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "engancharse con algo",
+    "de": "sich für etwas begeistern / in etwas einsteigen",
+    "fr": "se mettre à quelque chose",
+    "it": "appassionarsi a qualcosa",
+    "pt": "interessar-se por algo"
+   }
+  },
+  {
+   "item": "sport",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el deporte",
+    "de": "der Sport",
+    "fr": "le sport",
+    "it": "lo sport",
+    "pt": "o desporto"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "I wish I'd…",
+   "funcion": "past regret",
+   "traducciones": {
+    "es": "Ojalá hubiera…",
+    "de": "Ich wünschte, ich hätte…",
+    "fr": "Si seulement j’avais…",
+    "it": "Magari avessi…",
+    "pt": "Quem me dera ter…"
+   }
+  },
+  {
+   "expresion": "We should have…",
+   "funcion": "missed obligation",
+   "traducciones": {
+    "es": "Deberíamos haber…",
+    "de": "Wir hätten … sollen.",
+    "fr": "Nous aurions dû…",
+    "it": "Avremmo dovuto…",
+    "pt": "Devíamos ter…"
+   }
+  },
+  {
+   "expresion": "We could have…",
+   "funcion": "missed possibility",
+   "traducciones": {
+    "es": "Podríamos haber…",
+    "de": "Wir hätten … können.",
+    "fr": "Nous aurions pu…",
+    "it": "Avremmo potuto…",
+    "pt": "Poderíamos ter…"
+   }
+  },
+  {
+   "expresion": "If we'd…, we wouldn't have…",
+   "funcion": "third conditional",
+   "traducciones": {
+    "es": "Si hubiéramos…, no habríamos…",
+    "de": "Wenn wir… hätten, hätten wir nicht…",
+    "fr": "Si nous avions…, nous n’aurions pas…",
+    "it": "Se avessimo…, non avremmo…",
+    "pt": "Se tivéssemos…, não teríamos…"
+   }
+  },
+  {
+   "expresion": "It's a shame that…",
+   "funcion": "expresses regret",
+   "traducciones": {
+    "es": "Es una lástima que…",
+    "de": "Schade, dass…",
+    "fr": "C’est dommage que…",
+    "it": "È un peccato che…",
+    "pt": "É uma pena que…"
+   }
+  },
+  {
+   "expresion": "In the end, we…",
+   "funcion": "states what actually happened",
+   "traducciones": {
+    "es": "Al final, nosotros…",
+    "de": "Am Ende haben wir…",
+    "fr": "Au final, nous…",
+    "it": "Alla fine, noi…",
+    "pt": "No fim, nós…"
+   }
+  },
+  {
+   "expresion": "If only we'd…",
+   "funcion": "intensified past regret",
+   "traducciones": {
+    "es": "Si tan solo hubiéramos…",
+    "de": "Hätten wir doch nur…",
+    "fr": "Si seulement nous avions…",
+    "it": "Se solo avessimo…",
+    "pt": "Se ao menos tivéssemos…"
+   }
+  },
+  {
+   "expresion": "We shouldn't have…",
+   "funcion": "regret about something that was done",
+   "traducciones": {
+    "es": "No deberíamos haber…",
+    "de": "Wir hätten nicht … sollen.",
+    "fr": "Nous n'aurions pas dû…",
+    "it": "Non avremmo dovuto…",
+    "pt": "Não devíamos ter…"
+   }
+  },
+  {
+   "expresion": "There was nothing we could have done.",
+   "funcion": "rules the regret out",
+   "traducciones": {
+    "es": "No había nada que pudiéramos haber hecho.",
+    "de": "Wir hätten nichts tun können.",
+    "fr": "Nous n'aurions rien pu faire.",
+    "it": "Non avremmo potuto fare nulla.",
+    "pt": "Não havia nada que pudéssemos ter feito."
+   }
+  },
+  {
+   "expresion": "Next time I'll…",
+   "funcion": "turns the regret into a plan",
+   "traducciones": {
+    "es": "La próxima vez voy a…",
+    "de": "Beim nächsten Mal werde ich…",
+    "fr": "La prochaine fois, je…",
+    "it": "La prossima volta…",
+    "pt": "Da próxima vez vou…"
+   }
+  },
+  {
+   "expresion": "I don't regret it, actually.",
+   "funcion": "denies the regret",
+   "traducciones": {
+    "es": "En realidad no me arrepiento.",
+    "de": "Ich bereue es eigentlich nicht.",
+    "fr": "En fait, je ne le regrette pas.",
+    "it": "In realtà non me ne pento.",
+    "pt": "Na verdade não me arrependo."
+   }
+  },
+  {
+   "expresion": "What would you have done?",
+   "funcion": "hands the counterfactual to the other person",
+   "traducciones": {
+    "es": "¿Vos qué habrías hecho?",
+    "de": "Was hättest du gemacht?",
+    "fr": "Qu'aurais-tu fait ?",
+    "it": "Tu che cosa avresti fatto?",
+    "pt": "E tu, o que terias feito?"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write about a hobby you gave up and what you'd do differently.",
+  "requisitos": [
+   "one *I wish I'd…*",
+   "two modal perfects (*should have*, *could have*)",
+   "one third conditional",
+   "use *to take up a hobby*, *club* and *leisure activity*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write three *I wish I'd…* sentences about a *club* you left."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Turn one into *If I'd…, I would have…*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: what *should* you *have* done to *relax* more last year?"
+  }
+ ],
+ "autochequeo": [
+  "Is the past perfect used after wish for a past regret?",
+  "Are should have and could have used correctly, not interchangeably?",
+  "Is the if-clause free of would?",
+  "Are the participles correct throughout?",
+  "Are at least two of the three structures used in the same passage?"
+ ],
+ "promptCorreccion": "Focus only on wish, modal perfect and the third conditional. Check for would inside the if-clause and the choice between should and could have. Do not rewrite the text."
+}

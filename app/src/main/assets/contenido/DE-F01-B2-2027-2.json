@@ -1,0 +1,411 @@
+{
+ "id": "DE-F01-B2-2027-2",
+ "skillId": "DE-F01",
+ "order": 2,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "fluency",
+ "topicId": "T01",
+ "titulo": "Meinung äussern und begründen",
+ "subtitulo": "Eine Meinung zur Unternehmenskultur",
+ "ancla": "PD B2",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Auf B2 geht es darum, eine Meinung klar zu äussern und mit einem konkreten Grund zu stützen — nicht nur ich finde, sondern ich finde, weil. Der nächste Schritt (Vorbehalte, Gegenargumente) kommt erst auf C1; hier zählt vor allem, dass Meinung und Begründung sauber verbunden sind.",
+ "cuadroReferencia": {
+  "titulo": "Meinung und Begründung verbinden",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Meinung",
+    "Ich finde, dass das eine gute Idee ist."
+   ],
+   [
+    "Begründung mit weil",
+    "…, weil es allen mehr Flexibilität gibt."
+   ],
+   [
+    "Beispiel geben",
+    "Zum Beispiel könnte man dann von zu Hause arbeiten."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich finde, dass das eine gute Idee ist, weil es allen mehr Flexibilität gibt.",
+   "audio": true
+  },
+  {
+   "texto": "Meiner Meinung nach sollte man das gründlicher prüfen.",
+   "audio": true
+  },
+  {
+   "texto": "Zum Beispiel könnte man so von zu Hause aus arbeiten."
+  }
+ ],
+ "notas": [
+  "Meiner Meinung nach ist etwas formeller als ich finde und passt gut zu Diskussionen.",
+  "Eine Meinung ohne konkreten Grund wirkt auf B2-Niveau unvollständig — weil sollte fast immer folgen.",
+  "Ein einzelnes Beispiel macht die Begründung greifbarer als eine abstrakte Aussage."
+ ],
+ "contraste": {
+  "es": "Das Spanische äussert Meinungen sehr ähnlich direkt (creo que…), sodass die Grundstruktur leicht zu übertragen ist. Der Unterschied liegt eher im Detail: meiner Meinung nach klingt formeller als sein spanisches Gegenstück und wird auf Deutsch häufiger in Diskussionen benutzt, als Spanischsprachige zunächst erwarten.",
+  "it": "Die Grundformeln passen gut: secondo me – meiner Meinung nach, trovo che – ich finde. Eine Falle ist penso che: Im Italienischen folgt der congiuntivo, nach ich denke, dass im Deutschen der Indikativ.",
+  "fr": "Die Grundformeln passen gut: à mon avis – meiner Meinung nach, je trouve que – ich finde, je pense que – ich denke, jeweils mit Indikativ. Die Übertragung gelingt deshalb direkt.",
+  "pt": "Na minha opinião entspricht meiner Meinung nach, und acho que ist die häufigste Alltagsformel. Da achar wörtlich finden bedeutet, passt es gut zu ich finde; für eine vorsichtige Meinung ist ich glaube die bessere Wahl.",
+  "en": "Das englische I think deckt ich finde, ich glaube und ich denke gemeinsam ab. Englischsprachige benutzen deshalb oft ich denke für alles; im Deutschen ist ich finde für Bewertungen und ich glaube für Vermutungen natürlicher."
+ },
+ "errores": [
+  "Eine Meinung ohne jede Begründung äussern.",
+  "Weil mit Hauptsatzwortstellung verwenden: weil ich finde das gut statt weil ich das gut finde.",
+  "Meiner Meinung nach und ich finde im selben Satz kombinieren, was redundant wirkt."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Desde mi punto de vista* als *Von meinem Sichtpunkt* übertragen statt *Aus meiner Sicht*."
+  ],
+  "it": [
+   "*Per quanto mi riguarda* als *Für was mich betrifft* übertragen statt *Was mich betrifft*."
+  ],
+  "fr": [
+   "*En ce qui me concerne* als *In dem, was mich betrifft* übertragen statt *Was mich betrifft*."
+  ],
+  "pt": [
+   "*No que me diz respeito* als *In dem, was mich betrifft* übertragen statt *Was mich betrifft*."
+  ],
+  "en": [
+   "*As far as I'm concerned* als *So weit ich betroffen bin* übertragen statt *Was mich betrifft*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Betriebsklima",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el ambiente laboral",
+    "en": "working atmosphere",
+    "fr": "l'ambiance de travail",
+    "it": "il clima aziendale",
+    "pt": "o clima de trabalho"
+   }
+  },
+  {
+   "item": "das Homeoffice",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el teletrabajo",
+    "en": "working from home",
+    "fr": "le télétravail",
+    "it": "il lavoro da casa",
+    "pt": "o teletrabalho"
+   }
+  },
+  {
+   "item": "der Konflikt am Arbeitsplatz",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el conflicto laboral",
+    "en": "workplace conflict",
+    "fr": "le conflit au travail",
+    "it": "il conflitto sul lavoro",
+    "pt": "o conflito no trabalho"
+   }
+  },
+  {
+   "item": "die Führungskraft",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el/la directivo/a",
+    "en": "the manager, executive",
+    "fr": "le/la cadre",
+    "it": "il/la dirigente",
+    "pt": "o/a executivo/a"
+   }
+  },
+  {
+   "item": "die Unternehmenskultur",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cultura empresarial",
+    "en": "corporate culture",
+    "fr": "la culture d'entreprise",
+    "it": "la cultura aziendale",
+    "pt": "a cultura empresarial"
+   }
+  },
+  {
+   "item": "die Vereinbarkeit von Beruf und Familie",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la conciliación laboral y familiar",
+    "en": "work-life balance (family)",
+    "fr": "la conciliation travail-famille",
+    "it": "la conciliazione lavoro-famiglia",
+    "pt": "a conciliação trabalho-família"
+   }
+  },
+  {
+   "item": "die Vier-Tage-Woche",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la semana de cuatro días",
+    "en": "the four-day week",
+    "fr": "la semaine de quatre jours",
+    "it": "la settimana di quattro giorni",
+    "pt": "a semana de quatro dias"
+   }
+  },
+  {
+   "item": "das Feedbackgespräch",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la conversación de feedback",
+    "en": "feedback conversation",
+    "fr": "l'entretien de retour",
+    "it": "il colloquio di feedback",
+    "pt": "a conversa de feedback"
+   }
+  },
+  {
+   "item": "der Burnout",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el desgaste profesional",
+    "en": "burnout",
+    "fr": "l'épuisement professionnel",
+    "it": "il burnout",
+    "pt": "o esgotamento profissional"
+   }
+  },
+  {
+   "item": "der Leistungsdruck",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la presión por rendir",
+    "en": "pressure to perform",
+    "fr": "la pression de la performance",
+    "it": "la pressione da prestazione",
+    "pt": "a pressão por desempenho"
+   }
+  },
+  {
+   "item": "die Augenhöhe",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el trato de igual a igual",
+    "en": "meeting as equals",
+    "fr": "d'égal à égal",
+    "it": "alla pari",
+    "pt": "de igual para igual"
+   }
+  },
+  {
+   "item": "die Teamfähigkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la capacidad de trabajo en equipo",
+    "en": "ability to work in a team",
+    "fr": "l'esprit d'équipe",
+    "it": "la capacità di lavorare in squadra",
+    "pt": "a capacidade de trabalhar em equipa"
+   }
+  },
+  {
+   "item": "etwas ansprechen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "plantear un tema",
+    "en": "to raise an issue",
+    "fr": "aborder un sujet",
+    "it": "sollevare una questione",
+    "pt": "abordar um assunto"
+   }
+  },
+  {
+   "item": "sich abgrenzen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "poner límites",
+    "en": "to set boundaries",
+    "fr": "poser des limites",
+    "it": "porre dei limiti",
+    "pt": "impor limites"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich finde, dass…",
+   "funcion": "Meinung, neutral",
+   "traducciones": {
+    "es": "Me parece que…",
+    "en": "I think that…",
+    "fr": "Je trouve que…",
+    "it": "Penso che…",
+    "pt": "Acho que…"
+   }
+  },
+  {
+   "expresion": "Meiner Meinung nach…",
+   "funcion": "Meinung, etwas formeller",
+   "traducciones": {
+    "es": "En mi opinión…",
+    "en": "In my opinion…",
+    "fr": "À mon avis…",
+    "it": "Secondo me…",
+    "pt": "Na minha opinião…"
+   }
+  },
+  {
+   "expresion": "…, weil…",
+   "funcion": "Grund angeben",
+   "traducciones": {
+    "es": "…, porque…",
+    "en": "…, because…",
+    "fr": "…, parce que…",
+    "it": "…, perché…",
+    "pt": "…, porque…"
+   }
+  },
+  {
+   "expresion": "Zum Beispiel…",
+   "funcion": "Beispiel einführen",
+   "traducciones": {
+    "es": "Por ejemplo…",
+    "en": "For example…",
+    "fr": "Par exemple…",
+    "it": "Per esempio…",
+    "pt": "Por exemplo…"
+   }
+  },
+  {
+   "expresion": "Ich bin der Ansicht, dass…",
+   "funcion": "Meinung, formell",
+   "traducciones": {
+    "es": "Soy de la opinión de que…",
+    "en": "I am of the view that…",
+    "fr": "Je suis d’avis que…",
+    "it": "Ritengo che…",
+    "pt": "Sou da opinião de que…"
+   }
+  },
+  {
+   "expresion": "Aus diesem Grund…",
+   "funcion": "Schlussfolgerung",
+   "traducciones": {
+    "es": "Por esta razón…",
+    "en": "For this reason…",
+    "fr": "Pour cette raison…",
+    "it": "Per questo motivo…",
+    "pt": "Por esta razão…"
+   }
+  },
+  {
+   "expresion": "Ich finde das vor allem deshalb…, weil…",
+   "funcion": "Meinung und Hauptgrund in einem Satz",
+   "traducciones": {
+    "es": "Lo veo así sobre todo porque…",
+    "en": "I think that mainly because…",
+    "fr": "Je le pense surtout parce que…",
+    "it": "La penso così soprattutto perché…",
+    "pt": "Penso assim sobretudo porque…"
+   }
+  },
+  {
+   "expresion": "Ein Beispiel aus meinem Alltag: …",
+   "funcion": "Beleg aus der eigenen Erfahrung",
+   "traducciones": {
+    "es": "Un ejemplo de mi día a día: …",
+    "en": "An example from my own life: …",
+    "fr": "Un exemple de mon quotidien : …",
+    "it": "Un esempio dalla mia quotidianità: …",
+    "pt": "Um exemplo do meu dia a dia: …"
+   }
+  },
+  {
+   "expresion": "Da bin ich mir ziemlich sicher.",
+   "funcion": "Meinung als fest markieren",
+   "traducciones": {
+    "es": "De eso estoy bastante seguro.",
+    "en": "I'm fairly sure about that.",
+    "fr": "J'en suis assez sûr.",
+    "it": "Di questo sono abbastanza sicuro.",
+    "pt": "Disso estou bastante seguro."
+   }
+  },
+  {
+   "expresion": "Da bin ich mir nicht ganz sicher.",
+   "funcion": "Meinung als unsicher markieren",
+   "traducciones": {
+    "es": "De eso no estoy del todo seguro.",
+    "en": "I'm not entirely sure about that.",
+    "fr": "Je n'en suis pas tout à fait sûr.",
+    "it": "Di questo non sono del tutto sicuro.",
+    "pt": "Disso não estou totalmente seguro."
+   }
+  },
+  {
+   "expresion": "Und wie siehst du das?",
+   "funcion": "die Meinung des Gegenübers einholen",
+   "traducciones": {
+    "es": "¿Y vos cómo lo ves?",
+    "en": "And how do you see it?",
+    "fr": "Et toi, comment vois-tu cela ?",
+    "it": "E tu come la vedi?",
+    "pt": "E tu, como vês isso?"
+   }
+  },
+  {
+   "expresion": "Das ist nur meine persönliche Sicht.",
+   "funcion": "Meinung als persönlich kennzeichnen",
+   "traducciones": {
+    "es": "Es solo mi punto de vista personal.",
+    "en": "That's just my personal view.",
+    "fr": "Ce n'est que mon point de vue personnel.",
+    "it": "È solo il mio punto di vista personale.",
+    "pt": "É apenas a minha visão pessoal."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Äussern Sie Ihre Meinung zur Vier-Tage-Woche.",
+  "requisitos": [
+   "Meinung und zwei Gründe klar verbunden",
+   "ein Beispiel aus Ihrer Firma",
+   "andere Formeln als bei Ihrer letzten Meinung",
+   "*die Vier-Tage-Woche*, *die Unternehmenskultur* und *das Betriebsklima* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Ihre Meinung in einem Satz, zwei Gründe darunter."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Ein Beispiel zu *Konflikten am Arbeitsplatz*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: *Ich bin der Ansicht, dass…* — über *Homeoffice*."
+  }
+ ],
+ "autochequeo": [
+  "Habe ich meine Meinung klar formuliert?",
+  "Folgt ein konkreter Grund mit weil oder einer ähnlichen Formel?",
+  "Habe ich mindestens ein Beispiel genannt?",
+  "Steht das Verb im weil-Satz am Ende?",
+  "Klingt die Begründung konkret, nicht nur abstrakt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob Meinung und Begründung klar verbunden sind. Prüfen Sie die Wortstellung nach weil und ob mindestens ein konkretes Beispiel genannt wird. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,379 @@
+{
+ "id": "EN-F02-C1-2027-2",
+ "skillId": "EN-F02",
+ "order": 2,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T11",
+ "titulo": "Diplomatically Disagreeing",
+ "subtitulo": "Disagreeing about a news story with someone who trusts it",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 55
+ },
+ "descripcion": "English separates the strength of a disagreement from its social temperature more sharply than Spanish does. You can reject an idea completely and still sound collaborative, and the mechanism is almost entirely formulaic — which means it is learnable in a week. The core move: attack the idea, never the person, and always leave the other position somewhere to stand.",
+ "cuadroReferencia": {
+  "titulo": "Disagreement by temperature",
+  "columnas": [
+   "#",
+   "Formula",
+   "What it targets",
+   "Use when"
+  ],
+  "filas": [
+   [
+    "1",
+    "Help me understand how that would work in practice.",
+    "the mechanism",
+    "you suspect it collapses and want them to find it"
+   ],
+   [
+    "2",
+    "I see it differently, and here's why.",
+    "the conclusion",
+    "default professional register"
+   ],
+   [
+    "3",
+    "I'd challenge the assumption underneath that.",
+    "the premise",
+    "the logic is fine, the starting point isn't"
+   ],
+   [
+    "4",
+    "I hear you, but I don't think that follows.",
+    "the inference",
+    "premise granted, conclusion refused"
+   ],
+   [
+    "5",
+    "I'm going to push back on that.",
+    "the whole claim",
+    "direct but still not hostile; very standard"
+   ],
+   [
+    "6",
+    "I think that's straightforwardly wrong.",
+    "the whole claim",
+    "reserve for when you mean it"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*I'd challenge the assumption underneath that rather than the conclusion — you're assuming the failure mode is technical.*",
+   "audio": true
+  },
+  {
+   "texto": "*Help me understand how that would work with a 200-millisecond budget.*",
+   "audio": true
+  },
+  {
+   "texto": "*I hear you, but I don't think the second half follows from the first.*",
+   "audio": true
+  },
+  {
+   "texto": "*I'm going to push back on that.*",
+   "audio": true
+  },
+  {
+   "texto": "*That's true of small systems, less so of anything safety-critical.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*I'm afraid I disagree* is textbook English and sounds slightly antique in speech. Fine in writing.",
+  "Attacking the *assumption* rather than the *conclusion* is the highest-value C1 move: it lets the other person retreat without losing face.",
+  "*With respect* is a warning sign in British English — it almost always precedes a demolition. Use knowingly or not at all."
+ ],
+ "contraste": {
+  "es": "Spanish softens disagreement with formulas like no sé si estoy del todo de acuerdo, which corresponds well to I'm not sure I entirely agree. A literal no estoy de acuerdo (I don't agree) sounds blunter in English professional contexts than it usually does in Spanish.",
+  "de": "Das sehe ich etwas anders corresponds exactly to I see it slightly differently, a very useful diplomatic formula. The literal I am of another opinion sounds stiff; I'm not sure I agree is the natural English choice.",
+  "it": "Non sono del tutto d'accordo corresponds well to I don't entirely agree, and la vedo un po' diversamente to I see it slightly differently. Diplomatic disagreement therefore transfers directly.",
+  "fr": "Je ne suis pas tout à fait d'accord corresponds well to I don't entirely agree, and je vois les choses un peu différemment to I see it slightly differently. Diplomatic disagreement therefore transfers directly.",
+  "pt": "Não concordo inteiramente corresponds well to I don't entirely agree, and vejo isso de outra forma to I see it differently. Diplomatic disagreement therefore transfers directly."
+ },
+ "errores": [
+  "*You are wrong* — grammatically fine, socially expensive, rare in professional English.",
+  "Softening until the disagreement disappears. If nobody noticed you disagreed, you didn't.",
+  "*No, but…* as an opener. Reverse it: *Yes, and here's the difficulty…*"
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*I am not agree* — a fossilised Spanish-speaker error worth naming once and killing."
+  ],
+  "de": [
+   "Carrying over German directness: *That's not correct* or *I disagree* with no cushioning, which is neutral in German meetings but sounds combative in English."
+  ],
+  "it": [
+   "*Guarda, …* as an opener rendered as *Look, …*, which sounds confrontational in English, instead of *I see it a bit differently*."
+  ],
+  "fr": [
+   "*Écoute, …* as an opener rendered as *Listen, …*, which sounds confrontational in English, instead of *I see it a bit differently*."
+  ],
+  "pt": [
+   "*Olha, …* as an opener rendered as *Look, …*, which sounds confrontational in English, instead of *I see it a bit differently*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "headline",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el titular",
+    "de": "die Schlagzeile",
+    "fr": "le titre",
+    "it": "il titolo",
+    "pt": "a manchete"
+   }
+  },
+  {
+   "item": "fake news",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la noticia falsa",
+    "de": "die Falschmeldung / Fake News",
+    "fr": "la fausse information",
+    "it": "la notizia falsa",
+    "pt": "a notícia falsa"
+   }
+  },
+  {
+   "item": "media literacy",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la alfabetización mediática",
+    "de": "die Medienkompetenz",
+    "fr": "l'éducation aux médias",
+    "it": "l'alfabetizzazione mediatica",
+    "pt": "a alfabetização midiática"
+   }
+  },
+  {
+   "item": "credibility",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la credibilidad",
+    "de": "die Glaubwürdigkeit",
+    "fr": "la crédibilité",
+    "it": "la credibilità",
+    "pt": "a credibilidade"
+   }
+  },
+  {
+   "item": "to report on",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "informar sobre",
+    "de": "berichten über",
+    "fr": "faire un reportage sur",
+    "it": "fare un servizio su / riferire su",
+    "pt": "fazer uma reportagem sobre / noticiar"
+   }
+  },
+  {
+   "item": "to deny",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "desmentir",
+    "de": "dementieren",
+    "fr": "démentir",
+    "it": "smentire",
+    "pt": "desmentir"
+   }
+  },
+  {
+   "item": "media coverage",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cobertura mediática",
+    "de": "die Medienberichterstattung",
+    "fr": "la couverture médiatique",
+    "it": "la copertura mediatica",
+    "pt": "a cobertura mediática"
+   }
+  },
+  {
+   "item": "one-sided, biased",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "parcial, sesgado",
+    "de": "einseitig",
+    "fr": "partial",
+    "it": "parziale",
+    "pt": "parcial"
+   }
+  },
+  {
+   "item": "eyewitness",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el testigo presencial",
+    "de": "der Augenzeuge / die Augenzeugin",
+    "fr": "le témoin oculaire",
+    "it": "il testimone oculare",
+    "pt": "a testemunha ocular"
+   }
+  },
+  {
+   "item": "press release",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el comunicado de prensa",
+    "de": "die Pressemitteilung",
+    "fr": "le communiqué de presse",
+    "it": "il comunicato stampa",
+    "pt": "o comunicado de imprensa"
+   }
+  },
+  {
+   "item": "censorship",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la censura",
+    "de": "die Zensur",
+    "fr": "la censure",
+    "it": "la censura",
+    "pt": "a censura"
+   }
+  },
+  {
+   "item": "to spread",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "difundirse",
+    "de": "sich verbreiten",
+    "fr": "se propager",
+    "it": "diffondersi",
+    "pt": "espalhar-se"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "I see it differently",
+   "funcion": "opens disagreement neutrally",
+   "traducciones": {
+    "es": "yo lo veo distinto",
+    "de": "Ich sehe das anders.",
+    "fr": "Je le vois différemment.",
+    "it": "La vedo diversamente.",
+    "pt": "Eu vejo isso de outra forma."
+   }
+  },
+  {
+   "expresion": "I'd challenge the assumption",
+   "funcion": "targets the premise",
+   "traducciones": {
+    "es": "yo cuestionaría el supuesto",
+    "de": "Ich würde die Annahme infrage stellen.",
+    "fr": "Je remettrais l’hypothèse en question.",
+    "it": "Metterei in discussione l’assunto.",
+    "pt": "Eu questionaria esse pressuposto."
+   }
+  },
+  {
+   "expresion": "Help me understand how…",
+   "funcion": "disagreement disguised as a question",
+   "traducciones": {
+    "es": "ayudame a entender cómo…",
+    "de": "Hilf mir zu verstehen, wie…",
+    "fr": "Aide-moi à comprendre comment…",
+    "it": "Aiutami a capire come…",
+    "pt": "Ajuda-me a perceber como…"
+   }
+  },
+  {
+   "expresion": "I don't think that follows",
+   "funcion": "refuses the inference",
+   "traducciones": {
+    "es": "no creo que se siga",
+    "de": "Ich glaube nicht, dass das daraus folgt.",
+    "fr": "Je ne pense pas que cela en découle.",
+    "it": "Non credo che ne consegua.",
+    "pt": "Não acho que isso se siga daí."
+   }
+  },
+  {
+   "expresion": "I'm going to push back on that",
+   "funcion": "direct, not hostile",
+   "traducciones": {
+    "es": "te lo voy a discutir",
+    "de": "Da widerspreche ich.",
+    "fr": "Je vais contester ce point.",
+    "it": "Su questo devo dissentire.",
+    "pt": "Vou discordar disso."
+   }
+  },
+  {
+   "expresion": "Where we differ is…",
+   "funcion": "locates the disagreement",
+   "traducciones": {
+    "es": "donde diferimos es…",
+    "de": "Der Unterschied zwischen uns liegt bei…",
+    "fr": "Là où nous divergeons, c’est…",
+    "it": "Dove differiamo è…",
+    "pt": "Onde divergimos é…"
+   }
+  },
+  {
+   "expresion": "Yes, and the difficulty is…",
+   "funcion": "replaces *no, but*",
+   "traducciones": {
+    "es": "sí, y la dificultad es…",
+    "de": "Ja, und die Schwierigkeit ist…",
+    "fr": "Oui, et la difficulté, c’est…",
+    "it": "Sì, e la difficoltà è…",
+    "pt": "Sim, e a dificuldade é…"
+   }
+  },
+  {
+   "expresion": "That's true of X, less so of Y",
+   "funcion": "limits the claim's scope",
+   "traducciones": {
+    "es": "eso vale para X, menos para Y",
+    "de": "Das gilt für X, weniger für Y.",
+    "fr": "C’est vrai pour X, moins pour Y.",
+    "it": "Questo vale per X, meno per Y.",
+    "pt": "Isso é verdade para X, menos para Y."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Someone shares a headline you think is misleading. Disagree with them publicly, in a group chat or meeting.",
+  "requisitos": [
+   "challenge the source, not the person",
+   "one *That's true of X, less so of Y*",
+   "one move that leaves their position somewhere to stand",
+   "use *headline*, *credibility* and *media literacy*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write the assumption behind a headline you disagree with."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Three ways of saying *That's fake news* without saying it."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds disagreeing with: *If many outlets report it, it's true.*"
+  }
+ ],
+ "autochequeo": [
+  "Did I attack an assumption, or only the conclusion?",
+  "Would a reader know I disagreed, or did I soften it away?",
+  "Any sentence that would read as rude to a British or American colleague?",
+  "Did I open with *but* or *no*?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on how I disagree. (1) Mark each disagreement formula and rate its social temperature from 1 to 5. (2) Tell me whether I attacked the assumption or only the conclusion. (3) Flag anywhere I softened so much the disagreement vanished. (4) Flag anything that would read as rude. Do not rewrite the text."
+}

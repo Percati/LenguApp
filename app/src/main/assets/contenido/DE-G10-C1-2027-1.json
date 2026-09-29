@@ -1,0 +1,360 @@
+{
+ "id": "DE-G10-C1-2027-1",
+ "skillId": "DE-G10",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T02",
+ "titulo": "Passiv und Passiversatzformen",
+ "subtitulo": "Passiv ohne ständig werden",
+ "ancla": "Erkundungen C1",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf C1 treten die selteneren Ersatzformen in den Vordergrund: das bekommen-Passiv, das sich-lassen-Passiv in wissenschaftlichem Kontext und die Kombination mehrerer Ersatzformen im selben Text, um Wiederholung zu vermeiden. Die Grundform des Vorgangspassivs gilt als bekannt.",
+ "cuadroReferencia": {
+  "titulo": "Die selteneren Formen",
+  "columnas": [
+   "Form",
+   "Beispiel",
+   "Besonderheit"
+  ],
+  "filas": [
+   [
+    "bekommen-Passiv",
+    "Sie bekam das Dokument zugeschickt.",
+    "hebt den Empfänger hervor, informeller"
+   ],
+   [
+    "sich lassen + Infinitiv",
+    "Das lässt sich statistisch nicht belegen.",
+    "wissenschaftliches Register"
+   ],
+   [
+    "Zustandspassiv + Modalverb",
+    "Das Problem dürfte gelöst sein.",
+    "Vermutung über einen Zustand"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die Ergebnisse lassen sich nicht eindeutig interpretieren.",
+   "audio": true
+  },
+  {
+   "texto": "Er bekam die Unterlagen erst nach der Frist zugestellt.",
+   "audio": true
+  },
+  {
+   "texto": "Das Problem dürfte inzwischen behoben sein."
+  }
+ ],
+ "notas": [
+  "Das bekommen-Passiv funktioniert nur mit Verben, die einen indirekten Empfänger haben (schicken, geben, zeigen); nicht mit allen transitiven Verben.",
+  "Sich lassen + Infinitiv drückt generelle Möglichkeit aus, nicht eine einzelne Handlung — daher typisch für Aussagen über Daten und Methoden.",
+  "Mehrere Ersatzformen im selben Absatz zu mischen ist auf C1 erwünscht, um monotones wird zu vermeiden."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat kein bekommen-Passiv; die Bedeutung wird meist mit recibir umschrieben (recibió el documento), was strukturell näher am Aktiv liegt. Spanischsprachige nutzen deshalb diese Form kaum aktiv.",
+  "en": "Die eigentliche Parallele zum bekommen-Passiv ist das englische Empfängerpassiv (he was sent the documents – er bekam die Unterlagen zugeschickt). Das get-Passiv (he got fired) entspricht dagegen dem werden-Passiv; wer bekommen darauf abbildet, bildet es mit Verben ohne Empfänger (er bekam entlassen). Sich lassen entspricht meist can be + Partizip.",
+  "it": "Das Italienische hat kein bekommen-Passiv und umschreibt mit ricevere. Heikler ist sich lassen: Italienischsprachige lesen es wie farsi + Infinitiv kausativ (ich lasse mir etwas schicken) und übersehen die Möglichkeitsbedeutung in das Problem lässt sich lösen, die im Italienischen eher si può risolvere oder risolvibile entspricht.",
+  "fr": "Das Französische hat mit se voir + Infinitiv eine erstaunlich nahe Parallele zum bekommen-Passiv (il s'est vu remettre un prix – er bekam einen Preis überreicht), auch im neutralen Register. Sich lassen entspricht meist dem passiven Pronominalverb (cela se résout facilement – das lässt sich leicht lösen), nicht se laisser, das nur zulassen bedeutet.",
+  "pt": "Das Portugiesische hat kein bekommen-Passiv und umschreibt mit receber. Sich lassen wird oft als deixar-se gelesen, das nur zulassen bedeutet; die Möglichkeitsbedeutung (das lässt sich lösen) entspricht eher dem Passiv mit se oder einem Adjektiv auf -ável (resolve-se, é resolúvel). Portugiesischsprachige ersetzen die Form deshalb meist durch man kann."
+ },
+ "errores": [
+  "Das bekommen-Passiv mit Verben ohne indirekten Empfänger bilden.",
+  "Sich lassen + Infinitiv für eine einmalige konkrete Handlung verwenden statt für generelle Möglichkeit.",
+  "Ausschliesslich das Standard-Vorgangspassiv benutzen und dadurch den Text monoton machen."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*se venden pisos* als *verkaufen sich Wohnungen* übertragen statt *werden Wohnungen verkauft*."
+  ],
+  "en": [
+   "Das *get*-Passiv mit *bekommen* übertragen: *Er bekam entlassen* nach *he got fired* statt *Er wurde entlassen*."
+  ],
+  "it": [
+   "Das *si passivante* als *sich* übertragen: *Hier spricht sich Deutsch* nach *qui si parla tedesco* statt *Hier wird Deutsch gesprochen*."
+  ],
+  "fr": [
+   "Das Passiv mit *se* übertragen: *Der Wein trinkt sich kalt* nach *ce vin se boit frais* statt *wird kalt getrunken*."
+  ],
+  "pt": [
+   "*vende-se* als *verkauft sich* übertragen: *Hier verkauft sich Wohnungen* statt *Hier werden Wohnungen verkauft*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der Dauerauftrag",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la orden permanente",
+    "en": "standing order",
+    "fr": "le virement permanent",
+    "it": "l'ordine permanente",
+    "pt": "a ordem permanente"
+   }
+  },
+  {
+   "item": "die Altersvorsorge",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la previsión para la vejez",
+    "en": "retirement provision",
+    "fr": "la prévoyance vieillesse",
+    "it": "la previdenza",
+    "pt": "a poupança para a reforma"
+   }
+  },
+  {
+   "item": "die Lebenshaltungskosten",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el coste de vida",
+    "en": "cost of living",
+    "fr": "le coût de la vie",
+    "it": "il costo della vita",
+    "pt": "o custo de vida"
+   }
+  },
+  {
+   "item": "die Rücklage",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el fondo de reserva",
+    "en": "reserve, nest egg",
+    "fr": "la réserve",
+    "it": "il fondo di riserva",
+    "pt": "a reserva"
+   }
+  },
+  {
+   "item": "sich überschulden",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "endeudarse en exceso",
+    "en": "to get into excessive debt",
+    "fr": "se surendetter",
+    "it": "indebitarsi troppo",
+    "pt": "endividar-se em excesso"
+   }
+  },
+  {
+   "item": "über seine Verhältnisse leben",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "vivir por encima de sus posibilidades",
+    "en": "to live beyond one's means",
+    "fr": "vivre au-dessus de ses moyens",
+    "it": "vivere al di sopra dei propri mezzi",
+    "pt": "viver acima das posses"
+   }
+  },
+  {
+   "item": "das verfügbare Einkommen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la renta disponible",
+    "en": "disposable income",
+    "fr": "le revenu disponible",
+    "it": "il reddito disponibile",
+    "pt": "o rendimento disponível"
+   }
+  },
+  {
+   "item": "den Gürtel enger schnallen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "apretarse el cinturón",
+    "en": "to tighten one's belt",
+    "fr": "se serrer la ceinture",
+    "it": "tirare la cinghia",
+    "pt": "apertar o cinto"
+   }
+  },
+  {
+   "item": "der Gläubiger",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el acreedor",
+    "en": "creditor",
+    "fr": "le créancier",
+    "it": "il creditore",
+    "pt": "o credor"
+   }
+  },
+  {
+   "item": "die Bonität",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la solvencia",
+    "en": "creditworthiness",
+    "fr": "la solvabilité",
+    "it": "l'affidabilità creditizia",
+    "pt": "a solvência"
+   }
+  },
+  {
+   "item": "die Lastschrift",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el débito directo",
+    "en": "direct debit",
+    "fr": "le prélèvement",
+    "it": "l'addebito diretto",
+    "pt": "o débito direto"
+   }
+  },
+  {
+   "item": "die Ratenzahlung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el pago a plazos",
+    "en": "payment in instalments",
+    "fr": "le paiement échelonné",
+    "it": "il pagamento a rate",
+    "pt": "o pagamento a prestações"
+   }
+  },
+  {
+   "item": "die Schuldenfalle",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la trampa de la deuda",
+    "en": "debt trap",
+    "fr": "le piège de l'endettement",
+    "it": "la trappola del debito",
+    "pt": "a armadilha da dívida"
+   }
+  },
+  {
+   "item": "knapp bei Kasse sein",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "andar corto de dinero",
+    "en": "to be short of cash",
+    "fr": "être à court d'argent",
+    "it": "essere a corto di soldi",
+    "pt": "estar com pouco dinheiro"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "…lässt sich nicht eindeutig…",
+   "funcion": "wissenschaftliche Vorsicht",
+   "traducciones": {
+    "es": "…no se puede… de forma inequívoca",
+    "en": "…cannot be clearly…",
+    "fr": "…ne peut pas être clairement…",
+    "it": "…non può essere chiaramente…",
+    "pt": "…não pode ser claramente…"
+   }
+  },
+  {
+   "expresion": "Er/Sie bekam … zugeschickt/gezeigt/mitgeteilt",
+   "funcion": "Empfänger betonen",
+   "traducciones": {
+    "es": "Le enviaron/mostraron/comunicaron…",
+    "en": "He/She was sent/shown/told…",
+    "fr": "On lui a envoyé/montré/communiqué…",
+    "it": "Gli/Le è stato inviato/mostrato/comunicato…",
+    "pt": "Foi-lhe enviado/mostrado/comunicado…"
+   }
+  },
+  {
+   "expresion": "…gilt als erwiesen.",
+   "funcion": "Zustandspassiv, Forschung",
+   "traducciones": {
+    "es": "…se considera comprobado.",
+    "en": "…is considered proven.",
+    "fr": "…est considéré comme établi.",
+    "it": "…è considerato provato.",
+    "pt": "…é considerado comprovado."
+   }
+  },
+  {
+   "expresion": "…bleibt abzuwarten.",
+   "funcion": "offener Ausgang, formell",
+   "traducciones": {
+    "es": "…queda por ver.",
+    "en": "…remains to be seen.",
+    "fr": "…reste à voir.",
+    "it": "…resta da vedere.",
+    "pt": "…resta por ver."
+   }
+  },
+  {
+   "expresion": "…ist noch zu prüfen, ob…",
+   "funcion": "offene Frage, formell",
+   "traducciones": {
+    "es": "…queda por comprobar si…",
+    "en": "…it is still to be checked whether…",
+    "fr": "…il reste à vérifier si…",
+    "it": "…resta da verificare se…",
+    "pt": "…ainda é necessário verificar se…"
+   }
+  },
+  {
+   "expresion": "Damit ist noch nicht gesagt, dass…",
+   "funcion": "Grenze der Aussage markieren",
+   "traducciones": {
+    "es": "Con eso no está dicho que…",
+    "en": "That doesn't yet mean that…",
+    "fr": "Cela ne signifie pas encore que…",
+    "it": "Questo non significa ancora che…",
+    "pt": "Isso ainda não significa que…"
+   }
+  },
+  {
+   "expresion": "Wer handelt, bleibt hier unsichtbar.",
+   "funcion": "den Preis des Passivs benennen",
+   "traducciones": {
+    "es": "Acá queda invisible quién actúa.",
+    "en": "Who acts stays invisible here.",
+    "fr": "Ici, qui agit reste invisible.",
+    "it": "Qui resta invisibile chi agisce.",
+    "pt": "Aqui fica invisível quem age."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Erklären Sie in einem sachlichen Text, wie die Altersvorsorge in Ihrem Land funktioniert und wo sie Lücken hat.",
+  "requisitos": [
+   "vier verschiedene Passiversatzformen, keine zweimal",
+   "ein *bekommen*-Passiv",
+   "ein *lässt sich*-Satz",
+   "*die Altersvorsorge*, *die Rücklage* und *die Lebenshaltungskosten* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf *werden*-Passivsätze über Ihren *Dauerauftrag* und Ihre Fixkosten umformen — ohne *werden*."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei Sätze mit *bekommen* + Partizip: Was bekommt man von der Bank zugeschickt, mitgeteilt, erklärt?"
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Warum *überschulden sich* Menschen? Zwei Ersatzformen im Gesagten."
+  }
+ ],
+ "autochequeo": [
+  "Passt das Verb zum bekommen-Passiv (hat es einen Empfänger)?",
+  "Drückt sich lassen generelle Möglichkeit aus, nicht eine einmalige Handlung?",
+  "Sind im Text mehrere Passivformen gemischt, nicht nur eine?",
+  "Ist das Register angemessen für einen Bericht oder eine wissenschaftliche Aussage?",
+  "Vermeide ich eine monotone Wiederholung derselben Passivform?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Passiversatzformen: bekommen-Passiv und sich lassen + Infinitiv. Prüfen Sie, ob jedes Verb zur jeweiligen Form passt, und ob der Text mehrere Formen mischt. Schreiben Sie den Text nicht neu."
+}

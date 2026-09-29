@@ -1,0 +1,421 @@
+{
+ "id": "DE-V08-C1-2027-1",
+ "skillId": "DE-V08",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "vocabulary",
+ "topicId": "T03",
+ "titulo": "Helvetismen und Deutschschweizer Kontext",
+ "subtitulo": "Protokoll und Pendenzen im Schweizer Büro",
+ "ancla": "—",
+ "challengeType": "open_production",
+ "variante": "CH",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 60
+ },
+ "descripcion": "Auf C1 geht es nicht mehr nur um einzelne Helvetismen, sondern um den professionellen Kontext: Sitzungsprotokolle, E-Mails an Behörden und formelle Korrespondenz in der Deutschschweiz folgen eigenen Konventionen, die über Wortschatz hinausgehen — etwa eine tendenziell direktere Anrede und eine eigene Verwaltungssprache.",
+ "cuadroReferencia": {
+  "titulo": "Professioneller Kontext CH gegen DE",
+  "columnas": [
+   "Schweiz",
+   "Deutschland",
+   "Kontext"
+  ],
+  "filas": [
+   [
+    "das Traktandum",
+    "der Tagesordnungspunkt",
+    "Sitzung"
+   ],
+   [
+    "die Vernehmlassung",
+    "die Anhörung",
+    "Politik/Verwaltung"
+   ],
+   [
+    "allfällig",
+    "eventuell",
+    "Verwaltungssprache"
+   ],
+   [
+    "kein ß, immer ss",
+    "ß in Standardtexten",
+    "Rechtschreibung"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das Traktandum wird an der nächsten Sitzung erneut behandelt.",
+   "audio": true
+  },
+  {
+   "texto": "Allfällige Einwände sind bis Freitag schriftlich einzureichen.",
+   "audio": true
+  },
+  {
+   "texto": "Die Vernehmlassung zu diesem Gesetzesentwurf läuft noch bis Ende Monat."
+  }
+ ],
+ "notas": [
+  "Vernehmlassung ist ein spezifisch schweizerisches politisches Verfahren ohne direkte Entsprechung in Deutschland — eine öffentliche Konsultation vor der Gesetzgebung.",
+  "Das fehlende ß ist in der Schweiz Norm, nicht Nachlässigkeit, und gilt für alle Textsorten, auch sehr formelle.",
+  "Schweizer Geschäftskorrespondenz ist schriftlich oft etwas formeller im Aufbau, aber direkter im Ton als vergleichbare deutsche Texte."
+ ],
+ "contraste": {
+  "es": "Im Spanischen unterscheiden sich die Höflichkeitskonventionen vor allem nach Land (usted vs. vos/tú), nicht aber die Fachterminologie selbst grossräumig zwischen Standardvarianten. Die Deutschschweizer Eigenheit liegt daher weniger im Wortschatz als in einer eigenen professionellen Registerkultur, die spanischsprachige Lernende zusätzlich zum Vokabular erwerben müssen.",
+  "it": "Italienischsprachige aus dem Tessin kennen viele Schweizer Verwaltungsbegriffe bereits aus dem Schweizer Italienisch (trattanda – Traktandum). Für alle Italienischsprachigen gilt: Die Deutschschweizer Schreibkonventionen (ss statt ß, feste Formeln in Protokollen und Behördenbriefen) sind ein eigenes Register neben dem Wortschatz.",
+  "fr": "Französischsprachige aus der Romandie kennen die Schweizer Institutionen und ihre Begriffe bereits (votation – Abstimmung, Conseil fédéral – Bundesrat). Neu sind die Deutschschweizer Schreibkonventionen (ss statt ß, feste Formeln in Protokollen) und Begriffe wie Traktandum oder Pendenz.",
+  "pt": "Portugiesischsprachige kennen durch das europäische und das brasilianische Portugiesisch zwei Standardvarietäten mit eigenem Wortschatz, das Prinzip einer nationalen Varietät ist also vertraut. Neu sind die konkreten Deutschschweizer Konventionen (ss statt ß, Traktandum, Pendenz, feste Formeln in Behördenbriefen).",
+  "en": "Englischsprachige kennen nationale Standardvarietäten (britisches und amerikanisches Englisch), die Idee eines eigenen Schweizer Standards ist also vertraut. Neu sind die konkreten Deutschschweizer Konventionen (ss statt ß, Traktandum, Pendenz, feste Formeln in Protokollen und Behördenbriefen)."
+ },
+ "errores": [
+  "Ein ß in einem Schweizer Text verwenden.",
+  "Vernehmlassung mit Anhörung gleichsetzen, ohne den spezifisch schweizerischen politischen Kontext zu kennen.",
+  "Mundart und Standardvarietät verwechseln: Helvetismen wie Traktandum sind Standard, nicht umgangssprachlich."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*consulta* als *Konsultation* übertragen statt *Vernehmlassung*."
+  ],
+  "it": [
+   "*consultazione* als *Konsultation* übertragen statt *Vernehmlassung*."
+  ],
+  "fr": [
+   "*procédure de consultation* als *Konsultationsverfahren* übertragen statt *Vernehmlassungsverfahren*."
+  ],
+  "pt": [
+   "*consulta pública* als *öffentliche Konsultation* übertragen statt *Vernehmlassung*."
+  ],
+  "en": [
+   "*consultation* als *Konsultation* übertragen statt *Vernehmlassung*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der Algorithmus",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el algoritmo",
+    "en": "algorithm",
+    "fr": "l'algorithme",
+    "it": "l'algoritmo",
+    "pt": "o algoritmo"
+   }
+  },
+  {
+   "item": "der Datenschutz",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la protección de datos",
+    "en": "data protection",
+    "fr": "la protection des données",
+    "it": "la protezione dei dati",
+    "pt": "a proteção de dados"
+   }
+  },
+  {
+   "item": "die Blackbox",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la caja negra",
+    "en": "black box",
+    "fr": "la boîte noire",
+    "it": "la scatola nera",
+    "pt": "a caixa negra"
+   }
+  },
+  {
+   "item": "die künstliche Intelligenz",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la inteligencia artificial",
+    "en": "artificial intelligence",
+    "fr": "l'intelligence artificielle",
+    "it": "l'intelligenza artificiale",
+    "pt": "a inteligência artificial"
+   }
+  },
+  {
+   "item": "ein Modell trainieren",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "entrenar un modelo",
+    "en": "to train a model",
+    "fr": "entraîner un modèle",
+    "it": "addestrare un modello",
+    "pt": "treinar um modelo"
+   }
+  },
+  {
+   "item": "etwas hinterfragen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "cuestionar algo",
+    "en": "to question something",
+    "fr": "remettre qc en question",
+    "it": "mettere in discussione qc",
+    "pt": "questionar algo"
+   }
+  },
+  {
+   "item": "der Zielkonflikt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el conflicto de objetivos",
+    "en": "trade-off",
+    "fr": "le conflit d'objectifs",
+    "it": "il conflitto di obiettivi",
+    "pt": "o conflito de objetivos"
+   }
+  },
+  {
+   "item": "die Datenspur",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el rastro de datos",
+    "en": "data trail",
+    "fr": "la trace numérique",
+    "it": "la traccia di dati",
+    "pt": "o rasto de dados"
+   }
+  },
+  {
+   "item": "die Fehlerquote",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la tasa de error",
+    "en": "error rate",
+    "fr": "le taux d'erreur",
+    "it": "il tasso di errore",
+    "pt": "a taxa de erro"
+   }
+  },
+  {
+   "item": "die Rechenleistung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la capacidad de cálculo",
+    "en": "computing power",
+    "fr": "la puissance de calcul",
+    "it": "la potenza di calcolo",
+    "pt": "a capacidade de cálculo"
+   }
+  },
+  {
+   "item": "die Überwachung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la vigilancia",
+    "en": "surveillance",
+    "fr": "la surveillance",
+    "it": "la sorveglianza",
+    "pt": "a vigilância"
+   }
+  },
+  {
+   "item": "etwas automatisieren",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "automatizar algo",
+    "en": "to automate something",
+    "fr": "automatiser qc",
+    "it": "automatizzare qc",
+    "pt": "automatizar algo"
+   }
+  },
+  {
+   "item": "nachvollziehbar",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "comprensible, trazable",
+    "en": "traceable, comprehensible",
+    "fr": "compréhensible",
+    "it": "comprensibile",
+    "pt": "compreensível"
+   }
+  },
+  {
+   "item": "voreingenommen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sesgado",
+    "en": "biased",
+    "fr": "biaisé",
+    "it": "prevenuto",
+    "pt": "enviesado"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das Traktandum betreffend…",
+   "funcion": "Sitzungssprache",
+   "traducciones": {
+    "es": "El punto del orden del día relativo a…",
+    "en": "The agenda item concerning…",
+    "fr": "Le point de l’ordre du jour concernant…",
+    "it": "Il punto all’ordine del giorno riguardante…",
+    "pt": "O ponto da ordem de trabalhos relativo a…"
+   }
+  },
+  {
+   "expresion": "Allfällige Rückfragen…",
+   "funcion": "Verwaltungssprache",
+   "traducciones": {
+    "es": "Eventuales consultas…",
+    "en": "Any queries…",
+    "fr": "Toute question éventuelle…",
+    "it": "Eventuali domande…",
+    "pt": "Eventuais questões…"
+   }
+  },
+  {
+   "expresion": "Die Vernehmlassung läuft bis…",
+   "funcion": "politischer Prozess",
+   "traducciones": {
+    "es": "La consulta pública dura hasta…",
+    "en": "The consultation period runs until…",
+    "fr": "La consultation publique court jusqu’au…",
+    "it": "La consultazione pubblica è aperta fino al…",
+    "pt": "A consulta pública decorre até…"
+   }
+  },
+  {
+   "expresion": "Wir bitten um Kenntnisnahme.",
+   "funcion": "formelle Schlussformel",
+   "traducciones": {
+    "es": "Rogamos tomar nota.",
+    "en": "Please take note.",
+    "fr": "Nous vous prions d’en prendre connaissance.",
+    "it": "Si prega di prenderne atto.",
+    "pt": "Solicitamos que tomem conhecimento."
+   }
+  },
+  {
+   "expresion": "Die Pendenzenliste wird laufend aktualisiert.",
+   "funcion": "Projektsprache",
+   "traducciones": {
+    "es": "La lista de pendientes se actualiza continuamente.",
+    "en": "The outstanding-items list is updated continuously.",
+    "fr": "La liste des points en suspens est mise à jour en continu.",
+    "it": "L’elenco delle pendenze viene aggiornato continuamente.",
+    "pt": "A lista de pendências é atualizada continuamente."
+   }
+  },
+  {
+   "expresion": "Zuständig für dieses Dossier ist…",
+   "funcion": "Verantwortung zuweisen",
+   "traducciones": {
+    "es": "Responsable de este expediente es…",
+    "en": "Responsible for this file is…",
+    "fr": "Le dossier est sous la responsabilité de…",
+    "it": "Responsabile di questo dossier è…",
+    "pt": "O responsável por este dossiê é…"
+   }
+  },
+  {
+   "expresion": "Wir kommen auf Sie zurück.",
+   "funcion": "Schweizer Geschäftskorrespondenz",
+   "traducciones": {
+    "es": "Volveremos a ponernos en contacto.",
+    "en": "We'll get back to you.",
+    "fr": "Nous reviendrons vers vous.",
+    "it": "Le faremo sapere.",
+    "pt": "Voltaremos a contactá-lo."
+   }
+  },
+  {
+   "expresion": "Besten Dank für Ihre Rückmeldung.",
+   "funcion": "Schweizer Dankesformel",
+   "traducciones": {
+    "es": "Muchas gracias por su respuesta.",
+    "en": "Many thanks for your reply.",
+    "fr": "Merci beaucoup de votre retour.",
+    "it": "Grazie mille per il riscontro.",
+    "pt": "Muito obrigado pela sua resposta."
+   }
+  },
+  {
+   "expresion": "Freundliche Grüsse",
+   "funcion": "Schweizer Standardgruss",
+   "traducciones": {
+    "es": "Saludos cordiales",
+    "en": "Kind regards",
+    "fr": "Meilleures salutations",
+    "it": "Cordiali saluti",
+    "pt": "Com os melhores cumprimentos"
+   }
+  },
+  {
+   "expresion": "Der Entscheid liegt vor.",
+   "funcion": "Schweizer Verwaltungswort für Entscheidung",
+   "traducciones": {
+    "es": "La resolución ya está.",
+    "en": "The decision has been issued.",
+    "fr": "La décision est rendue.",
+    "it": "La decisione è stata emessa.",
+    "pt": "A decisão já foi emitida."
+   }
+  },
+  {
+   "expresion": "Das Geschäft wird dem Parlament unterbreitet.",
+   "funcion": "Schweizer politischer Prozess",
+   "traducciones": {
+    "es": "El asunto se somete al parlamento.",
+    "en": "The item goes before parliament.",
+    "fr": "L'objet est soumis au parlement.",
+    "it": "L'affare è sottoposto al parlamento.",
+    "pt": "O assunto é submetido ao parlamento."
+   }
+  },
+  {
+   "expresion": "parkieren statt parken",
+   "funcion": "Helvetismus gegenüber dem bundesdeutschen Wort",
+   "traducciones": {
+    "es": "forma helvética frente a la alemana",
+    "en": "Swiss form rather than the German one",
+    "fr": "forme suisse plutôt que la forme allemande",
+    "it": "forma svizzera invece di quella tedesca",
+    "pt": "forma suíça em vez da alemã"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Verfassen Sie ein kurzes Sitzungsprotokoll einer Schweizer Firma, die ein KI-Projekt prüft.",
+  "requisitos": [
+   "drei Helvetismen aus dem Kasten (*Traktandum*, *Pendenz*, *allfällig*)",
+   "eine *Wir bitten um Kenntnisnahme*-Formel",
+   "eine Zuständigkeit klar zugewiesen",
+   "*der Datenschutz*, *ein Modell trainieren* und *die Blackbox* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Traktanden für eine Sitzung zur *künstlichen Intelligenz* formulieren."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Eine Pendenzenliste mit drei Punkten zum *Algorithmus*, jeweils mit Zuständigkeit."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Wie unterscheidet sich eine E-Mail an eine Schweizer Behörde von einer deutschen?"
+  }
+ ],
+ "autochequeo": [
+  "Kein ß im gesamten Text?",
+  "Sind die Helvetismen als Standard und nicht als Mundart eingesetzt?",
+  "Passt der professionelle Ton zum Schweizer Kontext?",
+  "Habe ich mindestens vier spezifisch schweizerische Begriffe verwendet?",
+  "Ist der Ton direkt genug für den Schweizer Kontext, ohne unhöflich zu wirken?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Schweizer professionellen Kontext: Wortschatz, Rechtschreibung und Ton. Schreiben Sie den Text nicht neu."
+}

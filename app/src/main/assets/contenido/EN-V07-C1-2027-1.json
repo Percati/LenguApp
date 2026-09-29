@@ -1,0 +1,427 @@
+{
+ "id": "EN-V07-C1-2027-1",
+ "skillId": "EN-V07",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "vocabulary",
+ "topicId": "T14",
+ "titulo": "Discourse Markers and Linking",
+ "subtitulo": "Walking a listener through a buying decision",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 60
+ },
+ "descripcion": "Discourse markers are the difference between speech that is understood and speech that is followed. At C1 the job isn't adding *however* to writing — it's managing a spoken turn of two or three minutes so the listener always knows where they are: what's coming, what's a digression, what's the main point returning. Spoken and written markers are largely different sets, and using written ones in speech is the commonest C1 register error.",
+ "cuadroReferencia": {
+  "titulo": "Markers by function and register",
+  "columnas": [
+   "Function",
+   "Spoken",
+   "Written"
+  ],
+  "filas": [
+   [
+    "Announcing structure",
+    "*There are two things going on here* / *Let me take those in turn*",
+    "This raises two questions"
+   ],
+   [
+    "Adding",
+    "*Also* / *On top of that* / *And another thing*",
+    "*Moreover* / *Furthermore*"
+   ],
+   [
+    "Contrasting",
+    "*That said* / *Then again* / *Mind you*",
+    "*However* / *Nevertheless*"
+   ],
+   [
+    "Conceding",
+    "*Granted* / *Fair enough, but…* / *True up to a point*",
+    "*Admittedly* / *While it is true that…*"
+   ],
+   [
+    "Digressing",
+    "Just as an aside…",
+    "(parenthesis)"
+   ],
+   [
+    "Returning",
+    "Anyway, the point is…",
+    "Returning to…"
+   ],
+   [
+    "Reformulating",
+    "*Or to put it another way* / *What I mean is*",
+    "That is to say"
+   ],
+   [
+    "Concluding",
+    "*So on balance* / *The upshot is*",
+    "*In sum* / *On this evidence*"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*There are two things going on here. Let me take those in turn.*",
+   "audio": true
+  },
+  {
+   "texto": "*Granted, the numbers moved. Then again, they moved from a very low base.*",
+   "audio": true
+  },
+  {
+   "texto": "*Just as an aside — and this isn't the main point — the timing was odd. Anyway, the upshot is that nobody checked.*",
+   "audio": true
+  },
+  {
+   "texto": "*Anyway, the upshot is that nobody checked.*",
+   "audio": true
+  },
+  {
+   "texto": "*Mind you, that's only one outlet.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Actually* marks correction or surprise, not emphasis. *Actually, it was cheaper* implies you expected otherwise.",
+  "*Basically* is a filler; *essentially* is a marker. Not interchangeable.",
+  "*Anyway* is the standard return-from-digression signal in speech. Learners rarely use it; natives use it constantly."
+ ],
+ "contraste": {
+  "es": "Spanish *en realidad* maps onto *actually* only about half the time — often it's just *well*. *De hecho* is *in fact*. Treating them as one-to-one equivalents is where most misuse starts.",
+  "de": "Eigentlich maps onto actually only part of the time, and German speakers tend to overuse actually. Also is a false friend (it means so), while übrigens corresponds well to by the way.",
+  "it": "In realtà often corresponds to actually, but infatti is a false friend: it means indeed, not in fact. Treating these as one-to-one equivalents is where most misuse starts.",
+  "fr": "En fait corresponds well to actually, but en effet is a false friend: it means indeed, not in effect. Treating these as one-to-one equivalents is where most misuse starts.",
+  "pt": "Na verdade corresponds well to actually, and de facto to indeed or in fact; aliás is a false friend meaning besides or actually. Treating these as one-to-one equivalents is where most misuse starts."
+ },
+ "errores": [
+  "*In the other hand* — it's *on the other hand*.",
+  "*Moreover* and *furthermore* in speech: instantly bookish.",
+  "*At the end* meaning *finally* — use *in the end*.",
+  "Stacking: *So, basically, at the end of the day, essentially…*"
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*en definitiva* rendered as *definitively* instead of *in short* or *ultimately*."
+  ],
+  "de": [
+   "*schliesslich* rendered as *finally* in the sense 'after all': *Finally, he is the boss* instead of *After all, he is the boss*."
+  ],
+  "it": [
+   "*in definitiva* rendered as *definitively* instead of *in short* or *ultimately*."
+  ],
+  "fr": [
+   "*en définitive* rendered as *definitively* instead of *in short* or *ultimately*."
+  ],
+  "pt": [
+   "*aliás* rendered as *alias* instead of *in fact* or *by the way*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a hard sell",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la venta agresiva",
+    "de": "die aggressive Verkaufstaktik",
+    "fr": "la vente forcée",
+    "it": "la vendita aggressiva",
+    "pt": "a venda agressiva"
+   }
+  },
+  {
+   "item": "purchase decision",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la decisión de compra",
+    "de": "die Kaufentscheidung",
+    "fr": "la décision d’achat",
+    "it": "la decisione d’acquisto",
+    "pt": "a decisão de compra"
+   }
+  },
+  {
+   "item": "special offer",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la oferta especial",
+    "de": "das Sonderangebot",
+    "fr": "l’offre spéciale",
+    "it": "l’offerta speciale",
+    "pt": "a oferta especial"
+   }
+  },
+  {
+   "item": "to exchange (a product)",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "cambiar (un producto)",
+    "de": "umtauschen",
+    "fr": "échanger (un produit)",
+    "it": "cambiare (un prodotto)",
+    "pt": "trocar (um produto)"
+   }
+  },
+  {
+   "item": "to haggle over the price",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "regatear el precio",
+    "de": "um den Preis feilschen",
+    "fr": "marchander le prix",
+    "it": "contrattare sul prezzo",
+    "pt": "regatear o preço"
+   }
+  },
+  {
+   "item": "to shop around",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "comparar antes de comprar",
+    "de": "sich umschauen",
+    "fr": "comparer les offres",
+    "it": "guardarsi intorno",
+    "pt": "procurar alternativas"
+   }
+  },
+  {
+   "item": "warranty",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la garantía",
+    "de": "die Garantie",
+    "fr": "la garantie",
+    "it": "la garanzia",
+    "pt": "a garantia"
+   }
+  },
+  {
+   "item": "an impulse buy",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una compra impulsiva",
+    "de": "der Impulskauf",
+    "fr": "un achat impulsif",
+    "it": "un acquisto impulsivo",
+    "pt": "uma compra por impulso"
+   }
+  },
+  {
+   "item": "compulsion to consume",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la compulsión al consumo",
+    "de": "der Konsumzwang",
+    "fr": "la compulsion de consommation",
+    "it": "la compulsione all'acquisto",
+    "pt": "a compulsão pelo consumo"
+   }
+  },
+  {
+   "item": "customer review",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la reseña de cliente",
+    "de": "die Kundenbewertung",
+    "fr": "l’avis client",
+    "it": "la recensione del cliente",
+    "pt": "a avaliação do cliente"
+   }
+  },
+  {
+   "item": "the small print",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la letra pequeña",
+    "de": "das Kleingedruckte",
+    "fr": "les petits caractères",
+    "it": "le clausole in piccolo",
+    "pt": "as letras miúdas"
+   }
+  },
+  {
+   "item": "to be a rip-off",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser un timo",
+    "de": "der Nepp sein",
+    "fr": "être une arnaque",
+    "it": "essere una fregatura",
+    "pt": "ser uma roubalheira"
+   }
+  },
+  {
+   "item": "to return an item",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "devolver un artículo",
+    "de": "einen Artikel zurückgeben",
+    "fr": "retourner un article",
+    "it": "restituire un articolo",
+    "pt": "devolver um artigo"
+   }
+  },
+  {
+   "item": "value for money",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la relación calidad-precio",
+    "de": "das Preis-Leistungs-Verhältnis",
+    "fr": "le rapport qualité-prix",
+    "it": "il rapporto qualità-prezzo",
+    "pt": "a relação qualidade-preço"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Let me take those in turn",
+   "funcion": "announces sequence",
+   "traducciones": {
+    "es": "vamos por partes",
+    "de": "Gehen wir die Punkte der Reihe nach durch.",
+    "fr": "Prenons-les dans l’ordre.",
+    "it": "Prendiamoli uno alla volta.",
+    "pt": "Vamos por partes."
+   }
+  },
+  {
+   "expresion": "That said",
+   "funcion": "mild contrast, keeps the floor",
+   "traducciones": {
+    "es": "dicho eso",
+    "de": "Allerdings / Dabei gilt…",
+    "fr": "Cela dit…",
+    "it": "Detto questo…",
+    "pt": "Dito isso…"
+   }
+  },
+  {
+   "expresion": "Mind you",
+   "funcion": "inserts a caveat mid-turn",
+   "traducciones": {
+    "es": "eso sí",
+    "de": "Wobei / allerdings…",
+    "fr": "Cela dit / remarquez…",
+    "it": "Attenzione però…",
+    "pt": "Isso sim / repare…"
+   }
+  },
+  {
+   "expresion": "Granted",
+   "funcion": "concedes one point only",
+   "traducciones": {
+    "es": "de acuerdo, sí",
+    "de": "Zugegeben, …",
+    "fr": "Certes, …",
+    "it": "D’accordo / ammesso che…",
+    "pt": "Concedo / é verdade…"
+   }
+  },
+  {
+   "expresion": "Just as an aside",
+   "funcion": "flags a digression",
+   "traducciones": {
+    "es": "entre paréntesis",
+    "de": "Nur nebenbei bemerkt…",
+    "fr": "Juste entre parenthèses…",
+    "it": "Solo per inciso…",
+    "pt": "Só como aparte…"
+   }
+  },
+  {
+   "expresion": "Anyway, the point is",
+   "funcion": "returns from a digression",
+   "traducciones": {
+    "es": "en fin, la cuestión es",
+    "de": "Jedenfalls ist der Punkt…",
+    "fr": "Quoi qu’il en soit, le point est…",
+    "it": "Comunque, il punto è…",
+    "pt": "De qualquer forma, a questão é…"
+   }
+  },
+  {
+   "expresion": "Or to put it another way",
+   "funcion": "reformulates",
+   "traducciones": {
+    "es": "o dicho de otro modo",
+    "de": "Oder anders ausgedrückt…",
+    "fr": "Ou, autrement dit…",
+    "it": "O, per dirla in un altro modo…",
+    "pt": "Ou, dito de outra forma…"
+   }
+  },
+  {
+   "expresion": "The upshot is",
+   "funcion": "delivers the conclusion",
+   "traducciones": {
+    "es": "el resultado es",
+    "de": "Das Ergebnis ist…",
+    "fr": "Au final, …",
+    "it": "Il risultato è…",
+    "pt": "O resultado é…"
+   }
+  },
+  {
+   "expresion": "Then again",
+   "funcion": "reverses your own concession",
+   "traducciones": {
+    "es": "aunque bueno",
+    "de": "Andererseits / wiederum…",
+    "fr": "Cela dit / d’un autre côté…",
+    "it": "D’altra parte…",
+    "pt": "Por outro lado…"
+   }
+  },
+  {
+   "expresion": "So on balance",
+   "funcion": "closes with a weighted judgement",
+   "traducciones": {
+    "es": "en definitiva",
+    "de": "Alles in allem…",
+    "fr": "Donc, tout bien considéré…",
+    "it": "Quindi, tutto sommato…",
+    "pt": "No balanço geral…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Talk someone through how you decide on a big purchase, from first idea to buying.",
+  "requisitos": [
+   "a spoken turn of at least two minutes",
+   "*Let me take those in turn* to announce the structure",
+   "one marked digression (*Just as an aside*) and a return",
+   "use *to shop around*, *warranty* and *a hard sell*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write the five markers you'll use and where they go."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Say your *purchase decision* process out loud with no markers. Then with them."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 2 minutes on whether *haggling over the price* is acceptable where you live. End with *The upshot is*."
+  }
+ ],
+ "autochequeo": [
+  "Eight different markers, or three used repeatedly?",
+  "Any written-only marker in a spoken piece?",
+  "Did I signal my structure in the first two sentences?",
+  "Any stacked markers?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on discourse markers and linking. (1) List every marker I used and say whether it works in spoken register. (2) Flag any written-only markers. (3) Show me where a listener would lose the thread and which marker was missing. (4) Flag any stacking. Do not rewrite the text."
+}

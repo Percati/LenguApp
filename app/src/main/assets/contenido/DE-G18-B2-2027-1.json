@@ -1,0 +1,366 @@
+{
+ "id": "DE-G18-B2-2027-1",
+ "skillId": "DE-G18",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T08",
+ "titulo": "Temporale Nebensätze (als, wenn, während, nachdem, seitdem)",
+ "subtitulo": "Als oder wenn in Familiengeschichten",
+ "ancla": "PD A2/B1",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf B2 wird der Unterschied zwischen **als** (einmalig, Vergangenheit) und **wenn** (wiederholt oder Gegenwart/Zukunft) gefestigt, ergänzt durch **nachdem** (mit Zeitenfolge) und **seitdem** (andauernd). Das ist die Grundlage, um Zeitverhältnisse präzise auszudrücken.",
+ "cuadroReferencia": {
+  "titulo": "Temporale Konnektoren im Überblick",
+  "columnas": [
+   "Konnektor",
+   "Verwendung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "als",
+    "einmaliges Ereignis, Vergangenheit",
+    "Als ich ankam, regnete es."
+   ],
+   [
+    "wenn",
+    "wiederholt oder Gegenwart/Zukunft",
+    "Wenn ich Zeit habe, rufe ich an."
+   ],
+   [
+    "nachdem",
+    "Vorzeitigkeit, oft mit Plusquamperfekt",
+    "Nachdem wir gegessen hatten, gingen wir los."
+   ],
+   [
+    "seitdem",
+    "andauernder Zustand seit einem Zeitpunkt",
+    "Seitdem er umgezogen ist, sehen wir uns seltener."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Als ich ankam, hat es schon geregnet.",
+   "audio": true
+  },
+  {
+   "texto": "Wenn ich Zeit habe, rufe ich dich sofort an.",
+   "audio": true
+  },
+  {
+   "texto": "Nachdem wir gegessen hatten, sind wir spazieren gegangen."
+  }
+ ],
+ "notas": [
+  "Als wird nur für ein einmaliges Ereignis in der Vergangenheit verwendet — für alles andere steht wenn.",
+  "Nachdem verlangt meist unterschiedliche Zeitformen in Haupt- und Nebensatz: Plusquamperfekt im Nebensatz, Perfekt oder Präteritum im Hauptsatz.",
+  "Seitdem drückt aus, dass ein Zustand bis heute andauert."
+ ],
+ "contraste": {
+  "es": "Das Spanische unterscheidet nicht so klar zwischen einmaligem und wiederholtem Ereignis in der Vergangenheit; *cuando* deckt beide Fälle ab. Spanischsprachige verwechseln deshalb häufig *als* und *wenn*, weil ihre Muttersprache diese Unterscheidung nicht erzwingt.",
+  "it": "*Quando* deckt *als* und *wenn* ab, und zusätzlich übernimmt *wenn* auch die Bedeutung von *se*. Eine gute Brücke ist der Aspekt im Italienischen: *quando + imperfetto* (wiederholt, *quando ero bambino andavo…*) entspricht *wenn* bzw. *immer wenn*, *quando + passato prossimo/remoto* (einmalig) entspricht *als*.",
+  "fr": "*Quand* und *lorsque* decken *als* und *wenn* ab; *wenn* übernimmt ausserdem die Bedeutung von *si*. Die beste Brücke ist der Aspekt: *quand + imparfait* (wiederholt, *quand j'étais enfant, j'allais…*) entspricht *wenn* bzw. *immer wenn*, *quand + passé composé* (einmalig) entspricht *als*.",
+  "pt": "*Quando* deckt *als* und *wenn* ab. Als Brücke dient der Aspekt: *quando + imperfeito* (wiederholt) entspricht *wenn* bzw. *immer wenn*, *quando + perfeito* (einmalig) entspricht *als*. Zukünftige Zeitsätze mit dem *futuro do conjuntivo* (*quando chegares*) entsprechen immer *wenn*.",
+  "en": "*When* deckt *als*, *wenn* und die Frage *wann* ab – die Verwechslung von *wann* und *wenn* ist deshalb eine typisch englische Hürde. Eine Brücke für wenn in der Vergangenheit ist *whenever*: Wo man im Englischen *whenever* sagen könnte, steht im Deutschen *wenn* bzw. *immer wenn*, sonst *als*."
+ },
+ "errores": [
+  "Wenn statt als für ein einmaliges Ereignis in der Vergangenheit verwenden.",
+  "Nach nachdem dieselbe Zeitform in Haupt- und Nebensatz verwenden, ohne die Vorzeitigkeit zu markieren.",
+  "Seitdem und seit verwechseln, wo seit eine reine Präposition ist und seitdem ein Konnektor."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*cuando* immer mit *wenn* übersetzen, auch für ein einmaliges Ereignis in der Vergangenheit statt *als*."
+  ],
+  "it": [
+   "*quando* immer mit *wenn* übersetzen, auch für ein einmaliges Ereignis in der Vergangenheit statt *als*."
+  ],
+  "fr": [
+   "*quand* immer mit *wenn* übersetzen, auch für ein einmaliges Ereignis in der Vergangenheit statt *als*."
+  ],
+  "pt": [
+   "*quando* immer mit *wenn* übersetzen, auch für ein einmaliges Ereignis in der Vergangenheit statt *als*."
+  ],
+  "en": [
+   "*wann* statt *wenn* als Konnektor, weil beides *when* ist: *Wann ich nach Hause komme, koche ich*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Rollenbild",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el rol de género",
+    "en": "gender role model",
+    "fr": "le modèle de rôle",
+    "it": "il modello di ruolo",
+    "pt": "o papel de género"
+   }
+  },
+  {
+   "item": "der Zusammenhalt",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cohesión, la unión",
+    "en": "cohesion, togetherness",
+    "fr": "la cohésion",
+    "it": "la coesione",
+    "pt": "a coesão"
+   }
+  },
+  {
+   "item": "die Beziehung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la relación",
+    "en": "the relationship",
+    "fr": "la relation",
+    "it": "la relazione",
+    "pt": "o relacionamento"
+   }
+  },
+  {
+   "item": "die Erziehung",
+   "prioridad": "nucleo",
+   "nota": "Kinder erziehen, nicht schulische Bildung",
+   "traducciones": {
+    "es": "la crianza",
+    "en": "upbringing",
+    "fr": "l'éducation (des enfants)",
+    "it": "l'educazione",
+    "pt": "a criação"
+   }
+  },
+  {
+   "item": "die Fürsorgearbeit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el trabajo de cuidados",
+    "en": "care work",
+    "fr": "le travail de soin",
+    "it": "il lavoro di cura",
+    "pt": "o trabalho de cuidado"
+   }
+  },
+  {
+   "item": "die Verantwortung teilen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "compartir la responsabilidad",
+    "en": "to share responsibility",
+    "fr": "partager la responsabilité",
+    "it": "condividere la responsabilità",
+    "pt": "partilhar a responsabilidade"
+   }
+  },
+  {
+   "item": "sich verloben",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "comprometerse",
+    "en": "to get engaged",
+    "fr": "se fiancer",
+    "it": "fidanzarsi",
+    "pt": "ficar noivo/a"
+   }
+  },
+  {
+   "item": "der Generationenvertrag",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el pacto generacional",
+    "en": "generational contract",
+    "fr": "le contrat entre générations",
+    "it": "il patto generazionale",
+    "pt": "o pacto entre gerações"
+   }
+  },
+  {
+   "item": "die Enttäuschung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la decepción",
+    "en": "the disappointment",
+    "fr": "la déception",
+    "it": "la delusione",
+    "pt": "a decepção"
+   }
+  },
+  {
+   "item": "die Erwartungshaltung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las expectativas",
+    "en": "expectations",
+    "fr": "les attentes",
+    "it": "le aspettative",
+    "pt": "as expectativas"
+   }
+  },
+  {
+   "item": "die Kluft zwischen Generationen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la brecha generacional",
+    "en": "the generation gap",
+    "fr": "le fossé des générations",
+    "it": "il divario generazionale",
+    "pt": "o abismo geracional"
+   }
+  },
+  {
+   "item": "die Nähe zulassen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "permitir la cercanía",
+    "en": "to allow closeness",
+    "fr": "laisser place à l'intimité",
+    "it": "lasciare spazio alla vicinanza",
+    "pt": "permitir a proximidade"
+   }
+  },
+  {
+   "item": "die Patchworkfamilie",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la familia ensamblada",
+    "en": "blended family",
+    "fr": "la famille recomposée",
+    "it": "la famiglia allargata",
+    "pt": "a família reconstituída"
+   }
+  },
+  {
+   "item": "sich aussprechen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "hablar las cosas",
+    "en": "to talk things out",
+    "fr": "s'expliquer",
+    "it": "chiarirsi",
+    "pt": "conversar abertamente"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Als ich…, …",
+   "funcion": "einmaliges Ereignis, Vergangenheit",
+   "traducciones": {
+    "es": "Cuando yo…, …",
+    "en": "When I…, …",
+    "fr": "Quand je…, …",
+    "it": "Quando io…, …",
+    "pt": "Quando eu…, …"
+   }
+  },
+  {
+   "expresion": "Wenn ich…, …",
+   "funcion": "wiederholt oder Zukunft",
+   "traducciones": {
+    "es": "Cuando yo…, …",
+    "en": "When(ever) I…, …",
+    "fr": "Quand je…, …",
+    "it": "Quando io…, …",
+    "pt": "Quando eu…, …"
+   }
+  },
+  {
+   "expresion": "Nachdem wir … hatten, …",
+   "funcion": "Vorzeitigkeit",
+   "traducciones": {
+    "es": "Después de que… (hubiéramos)…, …",
+    "en": "After we had…, …",
+    "fr": "Après avoir…, …",
+    "it": "Dopo che avevamo…, …",
+    "pt": "Depois de termos…, …"
+   }
+  },
+  {
+   "expresion": "Seitdem…, …",
+   "funcion": "andauernder Zustand",
+   "traducciones": {
+    "es": "Desde que…, …",
+    "en": "Ever since…, …",
+    "fr": "Depuis que…, …",
+    "it": "Da quando…, …",
+    "pt": "Desde que…, …"
+   }
+  },
+  {
+   "expresion": "Während…, …",
+   "funcion": "Gleichzeitigkeit",
+   "traducciones": {
+    "es": "Mientras…, …",
+    "en": "While…, …",
+    "fr": "Pendant que…, …",
+    "it": "Mentre…, …",
+    "pt": "Enquanto…, …"
+   }
+  },
+  {
+   "expresion": "Bevor…, …",
+   "funcion": "Vorzeitigkeit umgekehrt",
+   "traducciones": {
+    "es": "Antes de que…, …",
+    "en": "Before…, …",
+    "fr": "Avant que…, …",
+    "it": "Prima che…, …",
+    "pt": "Antes de…, …"
+   }
+  },
+  {
+   "expresion": "Einmal oder immer? Danach richtet es sich.",
+   "funcion": "die Wahl zwischen den Konjunktionen begruenden",
+   "traducciones": {
+    "es": "¿Una vez o siempre? De eso depende.",
+    "en": "Once or always? That decides it.",
+    "fr": "Une fois ou toujours ? Cela décide.",
+    "it": "Una volta o sempre? Da questo dipende.",
+    "pt": "Uma vez ou sempre? É isso que decide."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Erzählen Sie, wie sich die Rollenbilder in Ihrer Familie über drei Generationen verändert haben.",
+  "requisitos": [
+   "drei *als* und drei *wenn* richtig verwendet",
+   "ein *nachdem* mit Plusquamperfekt",
+   "ein *seitdem*",
+   "*das Rollenbild*, *die Fürsorgearbeit* und *die Verantwortung teilen* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Sätze aus Ihrer Kindheit: *als* oder *wenn*?"
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei *nachdem*-Sätze zur *Erziehung*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: *Seitdem…* — was hat sich in Ihrer Familie verändert?"
+  }
+ ],
+ "autochequeo": [
+  "Habe ich als für ein einmaliges Ereignis in der Vergangenheit benutzt?",
+  "Ist nach nachdem die Vorzeitigkeit korrekt markiert?",
+  "Ist seitdem korrekt von seit unterschieden?",
+  "Habe ich mindestens drei verschiedene temporale Konnektoren benutzt?",
+  "Stimmt die Zeitform in Haupt- und Nebensatz zusammen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die temporalen Konnektoren als, wenn, nachdem und seitdem. Prüfen Sie die Wahl und die Zeitenfolge. Schreiben Sie den Text nicht neu."
+}

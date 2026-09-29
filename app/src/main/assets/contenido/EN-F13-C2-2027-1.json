@@ -1,0 +1,412 @@
+{
+ "id": "EN-F13-C2-2027-1",
+ "skillId": "EN-F13",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C2",
+ "categoria": "fluency",
+ "topicId": "T06",
+ "titulo": "Hedging and Softening Claims",
+ "subtitulo": "One hedge, well placed — or none",
+ "ancla": "EGP C2",
+ "challengeType": "adaptive_production",
+ "bilingue": false,
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 55
+ },
+ "descripcion": "At C2 hedging is deployed with full awareness of its social cost: knowing that stacking hedges past a certain point stops sounding careful and starts sounding evasive, and choosing a single, well-placed hedge over three weak ones because it reads as more confident, not less.",
+ "cuadroReferencia": {
+  "titulo": "One strong hedge beats three weak ones",
+  "columnas": [
+   "Version",
+   "Effect"
+  ],
+  "filas": [
+   [
+    "I think it might possibly be a bit off",
+    "reads as evasive, undermines the claim"
+   ],
+   [
+    "I suspect this is off",
+    "one hedge, reads as confident and precise"
+   ],
+   [
+    "This is off.",
+    "no hedge, used when the writer is actually sure"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "I suspect this figure is off, and here's why.",
+   "audio": true
+  },
+  {
+   "texto": "This is wrong. I'm sure enough to say so plainly.",
+   "audio": true
+  },
+  {
+   "texto": "I could be wrong about this, but I doubt it."
+  }
+ ],
+ "notas": [
+  "A single, precise hedge (I suspect) reads as more confident than three stacked ones, because it signals the speaker has already done the calibration.",
+  "Choosing not to hedge at all, when genuinely certain, is itself a marked and effective choice at this level.",
+  "I could be wrong about this, but I doubt it is a controlled way to hedge and then immediately withdraw most of the hedge."
+ ],
+ "contraste": {
+  "es": "Spanish often doubles hedges (creo que quizás…), and the habit transfers into English as stacked hedges (I think maybe it might…). English at this level rewards one precisely chosen hedge; stacking reads as uncertain rather than careful.",
+  "de": "German hedges with particles and adverbs (vielleicht, eventuell, wohl), and stacking them produces perhaps possibly it might…. Eventuell is also a false friend: it means possibly, not eventually.",
+  "it": "Italian combines the condizionale with forse (forse potrebbe…), which transfers as perhaps it might…. English at this level prefers a single, precisely chosen hedge.",
+  "fr": "French often combines peut-être with the conditionnel (peut-être que cela pourrait…), which transfers as perhaps it could…. English at this level prefers a single, precisely chosen hedge.",
+  "pt": "Portuguese combines talvez with the subjunctive or a modal (talvez possa…), which transfers as perhaps it may…. English at this level prefers a single, precisely chosen hedge."
+ },
+ "errores": [
+  "Stacking multiple hedges on a single claim, which reads as evasive rather than careful.",
+  "Hedging a claim the writer is actually certain about, undermining their own authority.",
+  "Using a hedge without any reasoning behind it, so it reads as reflexive rather than calibrated."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Por así decirlo* rendered as *For so to say it* instead of *So to speak*."
+  ],
+  "de": [
+   "*sozusagen* rendered as *so to say* instead of *so to speak*."
+  ],
+  "it": [
+   "*Per così dire* rendered as *For so to say* instead of *So to speak*."
+  ],
+  "fr": [
+   "*Pour ainsi dire* rendered as *For so to say* instead of *So to speak*."
+  ],
+  "pt": [
+   "*Por assim dizer* rendered as *For so to say* instead of *So to speak*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a tipping point",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "un punto de inflexión",
+    "de": "ein Kipppunkt",
+    "fr": "un point de basculement",
+    "it": "un punto di non ritorno",
+    "pt": "um ponto de rutura"
+   }
+  },
+  {
+   "item": "biodiversity",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la biodiversidad",
+    "de": "die Artenvielfalt",
+    "fr": "la biodiversité",
+    "it": "la biodiversità",
+    "pt": "a biodiversidade"
+   }
+  },
+  {
+   "item": "irreversible",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "irreversible",
+    "de": "unumkehrbar",
+    "fr": "irréversible",
+    "it": "irreversibile",
+    "pt": "irreversível"
+   }
+  },
+  {
+   "item": "sustainability",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la sostenibilidad",
+    "de": "die Nachhaltigkeit",
+    "fr": "la durabilité",
+    "it": "la sostenibilità",
+    "pt": "a sustentabilidade"
+   }
+  },
+  {
+   "item": "to deplete resources",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "agotar los recursos",
+    "de": "Ressourcen erschöpfen",
+    "fr": "épuiser les ressources",
+    "it": "esaurire le risorse",
+    "pt": "esgotar os recursos"
+   }
+  },
+  {
+   "item": "to mitigate",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mitigar",
+    "de": "abmildern",
+    "fr": "atténuer",
+    "it": "mitigare",
+    "pt": "mitigar"
+   }
+  },
+  {
+   "item": "a stopgap measure",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una medida provisoria",
+    "de": "eine Notlösung",
+    "fr": "une mesure palliative",
+    "it": "una misura tampone",
+    "pt": "uma medida provisória"
+   }
+  },
+  {
+   "item": "dire consequences",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "consecuencias nefastas",
+    "de": "verheerende Folgen",
+    "fr": "des conséquences désastreuses",
+    "it": "conseguenze disastrose",
+    "pt": "consequências terríveis"
+   }
+  },
+  {
+   "item": "ecological degradation",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la degradación ecológica",
+    "de": "die Umweltzerstörung",
+    "fr": "la dégradation écologique",
+    "it": "il degrado ecologico",
+    "pt": "a degradação ecológica"
+   }
+  },
+  {
+   "item": "emissions",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las emisiones",
+    "de": "die Emissionen",
+    "fr": "les émissions",
+    "it": "le emissioni",
+    "pt": "as emissões"
+   }
+  },
+  {
+   "item": "finite",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "finito",
+    "de": "endlich",
+    "fr": "limité",
+    "it": "finito",
+    "pt": "finito"
+   }
+  },
+  {
+   "item": "to be complacent",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser complaciente",
+    "de": "selbstzufrieden sein",
+    "fr": "être complaisant",
+    "it": "essere compiacente",
+    "pt": "ser complacente"
+   }
+  },
+  {
+   "item": "to decarbonise",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "descarbonizar",
+    "de": "dekarbonisieren",
+    "fr": "décarboner",
+    "it": "decarbonizzare",
+    "pt": "descarbonizar"
+   }
+  },
+  {
+   "item": "to tackle",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "abordar",
+    "de": "angehen",
+    "fr": "s'attaquer à",
+    "it": "affrontare",
+    "pt": "enfrentar"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "I suspect…",
+   "funcion": "single precise hedge",
+   "traducciones": {
+    "es": "Sospecho que…",
+    "de": "Ich vermute…",
+    "fr": "Je soupçonne que…",
+    "it": "Sospetto che…",
+    "pt": "Suspeito que…"
+   }
+  },
+  {
+   "expresion": "This is…, and I'm sure enough to say so.",
+   "funcion": "confident, unhedged claim",
+   "traducciones": {
+    "es": "Esto es…, y estoy lo bastante seguro para decirlo.",
+    "de": "Das ist…, und ich bin mir sicher genug, das so zu sagen.",
+    "fr": "C’est…, et j’en suis assez sûr pour le dire.",
+    "it": "Questo è…, e ne sono abbastanza sicuro/a da dirlo.",
+    "pt": "Isto é…, e tenho confiança suficiente para o afirmar."
+   }
+  },
+  {
+   "expresion": "I could be wrong about this, but I doubt it.",
+   "funcion": "hedges then withdraws most of it",
+   "traducciones": {
+    "es": "Podría estar equivocado en esto, pero lo dudo.",
+    "de": "Ich könnte mich darin irren, aber ich bezweifle es.",
+    "fr": "Je pourrais me tromper là-dessus, mais j’en doute.",
+    "it": "Potrei sbagliarmi, ma ne dubito.",
+    "pt": "Posso estar enganado/a, mas duvido."
+   }
+  },
+  {
+   "expresion": "I'll go out on a limb and say…",
+   "funcion": "flags a deliberately unhedged claim",
+   "traducciones": {
+    "es": "Me voy a arriesgar a decir…",
+    "de": "Ich wage mich vor und sage…",
+    "fr": "Je vais me risquer à dire…",
+    "it": "Mi sbilancio e dico…",
+    "pt": "Vou arriscar e dizer…"
+   }
+  },
+  {
+   "expresion": "…, and I don't say that lightly.",
+   "funcion": "signals the claim is considered, not casual",
+   "traducciones": {
+    "es": "…, y no lo digo a la ligera.",
+    "de": "…, und das sage ich nicht leichtfertig.",
+    "fr": "…, et je ne dis pas cela à la légère.",
+    "it": "…, e non lo dico alla leggera.",
+    "pt": "…, e não digo isso de ânimo leve."
+   }
+  },
+  {
+   "expresion": "There's no need to hedge this: …",
+   "funcion": "explicitly opts out of hedging",
+   "traducciones": {
+    "es": "No hace falta matizar esto: …",
+    "de": "Hier muss man nichts relativieren: …",
+    "fr": "Inutile de nuancer ici : …",
+    "it": "Non c’è bisogno di attenuare: …",
+    "pt": "Não é preciso fazer ressalvas aqui: …"
+   }
+  },
+  {
+   "expresion": "Strip out the hedging and it says…",
+   "funcion": "shows the unhedged core of one's own claim",
+   "traducciones": {
+    "es": "Sacá los matices y lo que dice es…",
+    "de": "Ohne die Abschwächungen heisst das: …",
+    "fr": "Retirez les précautions et cela dit…",
+    "it": "Tolte le attenuazioni, dice…",
+    "pt": "Tira as atenuações e diz…"
+   }
+  },
+  {
+   "expresion": "I'm hedging because the data is thin, not because I'm unsure.",
+   "funcion": "explains why the hedge is there",
+   "traducciones": {
+    "es": "Matizo porque los datos son pobres, no porque dude.",
+    "de": "Ich schwäche ab, weil die Datenlage dünn ist, nicht weil ich unsicher bin.",
+    "fr": "Je nuance parce que les données sont minces, pas parce que je doute.",
+    "it": "Attenuo perché i dati sono scarsi, non perché io dubiti.",
+    "pt": "Atenuo porque os dados são escassos, não porque duvide."
+   }
+  },
+  {
+   "expresion": "Read that as caution, not as doubt.",
+   "funcion": "controls how the hedge is received",
+   "traducciones": {
+    "es": "Leelo como cautela, no como duda.",
+    "de": "Verstehen Sie das als Vorsicht, nicht als Zweifel.",
+    "fr": "Prenez cela pour de la prudence, non pour un doute.",
+    "it": "Lo legga come cautela, non come dubbio.",
+    "pt": "Lê isso como cautela, não como dúvida."
+   }
+  },
+  {
+   "expresion": "Any more caveats and I'd be saying nothing.",
+   "funcion": "names the point where hedging empties the claim",
+   "traducciones": {
+    "es": "Un matiz más y no estaría diciendo nada.",
+    "de": "Noch eine Einschränkung und ich sage gar nichts mehr.",
+    "fr": "Une réserve de plus et je ne dirais plus rien.",
+    "it": "Un'altra riserva e non direi più nulla.",
+    "pt": "Mais uma ressalva e não estaria a dizer nada."
+   }
+  },
+  {
+   "expresion": "That's hedged as far as it should be.",
+   "funcion": "declares the hedging complete",
+   "traducciones": {
+    "es": "Está matizado hasta donde corresponde.",
+    "de": "So weit abgeschwächt, wie es angemessen ist.",
+    "fr": "C'est nuancé autant qu'il le faut.",
+    "it": "È attenuato quanto basta.",
+    "pt": "Está atenuado até onde deve."
+   }
+  },
+  {
+   "expresion": "You're hedging more than the evidence requires.",
+   "funcion": "calls out someone else's over-hedging",
+   "traducciones": {
+    "es": "Estás matizando más de lo que pide la evidencia.",
+    "de": "Sie schwächen mehr ab, als die Belege verlangen.",
+    "fr": "Vous nuancez plus que les données ne l'exigent.",
+    "it": "Sta attenuando più di quanto richiedano le prove.",
+    "pt": "Estás a atenuar mais do que as provas exigem."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write a short position on whether we have already passed an environmental tipping point.",
+  "requisitos": [
+   "no more than two hedges in the whole text",
+   "one claim stated flat, with *I'm sure enough to say so*",
+   "one *I'll go out on a limb and say…*",
+   "use *a tipping point*, *irreversible* and *to mitigate*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Take a paragraph you wrote with many hedges. Cut to one per claim."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Write three claims about *biodiversity* you'd state without any hedge."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 2 minutes on *sustainability*. Notice when a hedge starts to sound evasive."
+  }
+ ],
+ "autochequeo": [
+  "Is any claim hedged more than once, stacking weakens it?",
+  "Is a claim the writer is actually certain about left unhedged?",
+  "Does each hedge carry a reason, not just reflexive caution?",
+  "Would the writing read as confident overall, not evasive?",
+  "Is there at least one deliberately unhedged claim for contrast?"
+ ],
+ "promptCorreccion": "Focus only on hedging density. Flag any claim with more than one stacked hedge, and flag any certain claim left unnecessarily hedged. Do not rewrite the text."
+}

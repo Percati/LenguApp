@@ -1,0 +1,415 @@
+{
+ "id": "DE-F08-C2-2027-1",
+ "skillId": "DE-F08",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C2",
+ "categoria": "fluency",
+ "topicId": "T02",
+ "titulo": "Zusammenfassen",
+ "subtitulo": "Eine Zusammenfassung für zwei Publika",
+ "ancla": "Erkundungen C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Auf C2 wird eine Zusammenfassung auf ein spezifisches Publikum zugeschnitten: geteiltes Vorwissen wird radikal komprimiert, während genau der Teil ausgebaut wird, der für dieses Publikum neu oder relevant ist. Eine gute C2-Zusammenfassung für Fachleute liest sich anders als eine für Laien, selbst bei identischem Ausgangstext.",
+ "cuadroReferencia": {
+  "titulo": "Zusammenfassung nach Publikum",
+  "columnas": [
+   "Publikum",
+   "Was komprimiert wird",
+   "Was ausgebaut wird"
+  ],
+  "filas": [
+   [
+    "Fachpublikum",
+    "Grundlagen, Methodik",
+    "neue Ergebnisse, offene Fragen"
+   ],
+   [
+    "Laienpublikum",
+    "technische Details",
+    "Bedeutung, Konsequenzen"
+   ],
+   [
+    "Entscheidungsträger",
+    "Hintergrund",
+    "Handlungsoptionen"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Für ein Fachpublikum reicht der Hinweis auf die Methodik; entscheidend sind die neuen Ergebnisse.",
+   "audio": true
+  },
+  {
+   "texto": "Für Laien lohnt es sich, weniger auf die Technik und mehr auf die Konsequenzen einzugehen.",
+   "audio": true
+  },
+  {
+   "texto": "Für Entscheidungsträger zählt vor allem, welche Optionen sich daraus ergeben."
+  }
+ ],
+ "notas": [
+  "Dieselbe Zusammenfassung für unterschiedliche Publika zu schreiben, ist die eigentliche C2-Kompetenz — nicht die Fähigkeit, überhaupt zusammenzufassen.",
+  "Geteiltes Vorwissen radikal zu komprimieren bedeutet nicht, es wegzulassen, sondern es in einem Nebensatz anzudeuten.",
+  "Eine Zusammenfassung, die für jedes Publikum gleich aussieht, hat die eigentliche Aufgabe der Mediation verfehlt."
+ ],
+ "contraste": {
+  "es": "Como es sabido entspricht bekanntlich; das deutsche Adverb verdichtet aber einen ganzen Einschub zu einem Wort und ist deshalb das wichtigste Werkzeug dieser Verdichtung.",
+  "it": "Für die Verdichtung von Vorwissen bietet das Italienische come noto an, das genau bekanntlich entspricht. Das deutsche Adverb ersetzt dabei einen ganzen Nebensatz, was es zum wichtigsten Werkzeug dieser Verdichtung macht.",
+  "fr": "Comme on le sait entspricht bekanntlich; das deutsche Adverb verdichtet aber einen ganzen Nebensatz zu einem Wort. Die französische Schulung im résumé hilft beim Kürzen, bekanntlich ist das zusätzliche deutsche Werkzeug dafür.",
+  "pt": "Como se sabe entspricht bekanntlich; das deutsche Adverb verdichtet aber einen ganzen Nebensatz zu einem Wort und ist deshalb das wichtigste Werkzeug dieser Verdichtung.",
+  "en": "As is well known entspricht bekanntlich; das deutsche Adverb verdichtet den ganzen Einschub zu einem Wort und ist deshalb das wichtigste Werkzeug dieser Verdichtung."
+ },
+ "errores": [
+  "Dieselbe Zusammenfassung unverändert für unterschiedliche Publika verwenden.",
+  "Geteiltes Vorwissen ausführlich wiederholen, statt es knapp anzudeuten.",
+  "Für ein Fachpublikum die Methodik ausführen, statt sich auf die neuen Ergebnisse zu konzentrieren."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Como es sabido* als *Wie es bekannt ist* übertragen statt *Bekanntlich*."
+  ],
+  "it": [
+   "*Com'è noto* als *Wie es bekannt ist* übertragen statt *Bekanntlich*."
+  ],
+  "fr": [
+   "*Comme on le sait* als *Wie man es weiss* übertragen statt *Bekanntlich*."
+  ],
+  "pt": [
+   "*Como é sabido* als *Wie es bekannt ist* übertragen statt *Bekanntlich*."
+  ],
+  "en": [
+   "*As is well known* als *Wie gut bekannt ist* übertragen statt *Bekanntlich*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Sparbuch",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la libreta de ahorro",
+    "en": "passbook savings account",
+    "fr": "le livret d'épargne",
+    "it": "il libretto di risparmio",
+    "pt": "a caderneta de poupança"
+   }
+  },
+  {
+   "item": "die Aktienscheu",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el recelo hacia las acciones",
+    "en": "reluctance to invest in shares",
+    "fr": "la frilosité boursière",
+    "it": "la diffidenza verso le azioni",
+    "pt": "a aversão às ações"
+   }
+  },
+  {
+   "item": "die Geldanlage",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la inversión",
+    "en": "investment",
+    "fr": "le placement",
+    "it": "l'investimento",
+    "pt": "a aplicação financeira"
+   }
+  },
+  {
+   "item": "die Sparkultur",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cultura del ahorro",
+    "en": "savings culture",
+    "fr": "la culture de l'épargne",
+    "it": "la cultura del risparmio",
+    "pt": "a cultura da poupança"
+   }
+  },
+  {
+   "item": "haushalten",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "administrar con cuidado",
+    "en": "to budget carefully",
+    "fr": "gérer son budget",
+    "it": "amministrare con parsimonia",
+    "pt": "gerir com cuidado"
+   }
+  },
+  {
+   "item": "Schwarz auf Weiss",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "por escrito, negro sobre blanco",
+    "en": "in black and white",
+    "fr": "noir sur blanc",
+    "it": "nero su bianco",
+    "pt": "preto no branco"
+   }
+  },
+  {
+   "item": "auf Pump leben",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "vivir de prestado",
+    "en": "to live on credit",
+    "fr": "vivre à crédit",
+    "it": "vivere a credito",
+    "pt": "viver a crédito"
+   }
+  },
+  {
+   "item": "den Überblick verlieren",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "perder el control",
+    "en": "to lose track",
+    "fr": "perdre le fil",
+    "it": "perdere il controllo",
+    "pt": "perder o controlo"
+   }
+  },
+  {
+   "item": "der Kursverfall",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la caída de la cotización",
+    "en": "slump in prices",
+    "fr": "l'effondrement des cours",
+    "it": "il crollo dei corsi",
+    "pt": "a queda das cotações"
+   }
+  },
+  {
+   "item": "die Anlagestrategie",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la estrategia de inversión",
+    "en": "investment strategy",
+    "fr": "la stratégie de placement",
+    "it": "la strategia d'investimento",
+    "pt": "a estratégia de investimento"
+   }
+  },
+  {
+   "item": "die Genügsamkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la moderación",
+    "en": "contentment with little",
+    "fr": "la sobriété",
+    "it": "la moderatezza",
+    "pt": "a frugalidade"
+   }
+  },
+  {
+   "item": "die Nullzinspolitik",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la política de tipos cero",
+    "en": "zero interest rate policy",
+    "fr": "la politique de taux zéro",
+    "it": "la politica dei tassi zero",
+    "pt": "a política de juros zero"
+   }
+  },
+  {
+   "item": "die Rücklagen angreifen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tocar los ahorros",
+    "en": "to dip into savings",
+    "fr": "entamer ses réserves",
+    "it": "intaccare i risparmi",
+    "pt": "mexer nas poupanças"
+   }
+  },
+  {
+   "item": "etwas auf die hohe Kante legen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ahorrar algo",
+    "en": "to put something by",
+    "fr": "mettre qc de côté",
+    "it": "mettere da parte qc",
+    "pt": "pôr algo de parte"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Für ein Fachpublikum reicht der Hinweis auf…",
+   "funcion": "Komprimierung von Vorwissen",
+   "traducciones": {
+    "es": "para un público experto basta con mencionar…",
+    "en": "for an expert audience, it's enough to note…",
+    "fr": "Pour un public spécialisé, il suffit de noter…",
+    "it": "Per un pubblico specializzato basta osservare…",
+    "pt": "Para um público especializado, basta assinalar…"
+   }
+  },
+  {
+   "expresion": "Entscheidend sind hier die neuen…",
+   "funcion": "Fokus für Fachpublikum",
+   "traducciones": {
+    "es": "aquí lo decisivo son los nuevos…",
+    "en": "what matters here is the new…",
+    "fr": "Ce qui compte ici, ce sont les nouveaux…",
+    "it": "Ciò che conta qui sono i nuovi…",
+    "pt": "O que importa aqui são os novos…"
+   }
+  },
+  {
+   "expresion": "Für Laien lohnt es sich, auf…einzugehen.",
+   "funcion": "Fokus für Laienpublikum",
+   "traducciones": {
+    "es": "para el público general vale la pena abordar…",
+    "en": "for a general audience, it's worth addressing…",
+    "fr": "Pour un public général, il vaut la peine d’aborder…",
+    "it": "Per un pubblico generale vale la pena affrontare…",
+    "pt": "Para um público geral, vale a pena abordar…"
+   }
+  },
+  {
+   "expresion": "Welche Optionen ergeben sich daraus?",
+   "funcion": "Fokus für Entscheidungsträger",
+   "traducciones": {
+    "es": "¿qué opciones se derivan de esto?",
+    "en": "what options does this suggest?",
+    "fr": "Quelles options en découlent ?",
+    "it": "Quali opzioni ne derivano?",
+    "pt": "Que opções decorrem daí?"
+   }
+  },
+  {
+   "expresion": "Vereinfacht gesagt, für alle, die…",
+   "funcion": "Anpassung an ein spezifisches Publikum",
+   "traducciones": {
+    "es": "dicho de forma simple, para quienes…",
+    "en": "put simply, for those who…",
+    "fr": "Pour le dire simplement, pour ceux qui…",
+    "it": "In parole semplici, per chi…",
+    "pt": "Dito de forma simples, para quem…"
+   }
+  },
+  {
+   "expresion": "Ohne auf die Details einzugehen, …",
+   "funcion": "Komprimierung technischer Aspekte",
+   "traducciones": {
+    "es": "sin entrar en los detalles, …",
+    "en": "without going into the details, …",
+    "fr": "Sans entrer dans les détails, …",
+    "it": "Senza entrare nei dettagli, …",
+    "pt": "Sem entrar nos detalhes, …"
+   }
+  },
+  {
+   "expresion": "Bekanntes überspringe ich: …",
+   "funcion": "geteiltes Vorwissen ausdrücklich auslassen",
+   "traducciones": {
+    "es": "Me salto lo ya conocido: …",
+    "en": "I'll skip what's already known: …",
+    "fr": "Je passe sur ce qui est connu : …",
+    "it": "Salto ciò che è già noto: …",
+    "pt": "Salto o que já é conhecido: …"
+   }
+  },
+  {
+   "expresion": "Der eigentliche Punkt steht weiter unten: …",
+   "funcion": "Gewichtung gegen die Reihenfolge der Vorlage",
+   "traducciones": {
+    "es": "El punto que importa está más abajo: …",
+    "en": "The point that matters comes further down: …",
+    "fr": "Le point qui compte vient plus loin : …",
+    "it": "Il punto che conta viene più sotto: …",
+    "pt": "O ponto que importa vem mais abaixo: …"
+   }
+  },
+  {
+   "expresion": "Was daran neu ist: …",
+   "funcion": "das Neue vom Vorwissen trennen",
+   "traducciones": {
+    "es": "Lo nuevo en esto es: …",
+    "en": "What's new in it is: …",
+    "fr": "Ce qui est nouveau là-dedans : …",
+    "it": "Ciò che qui è nuovo: …",
+    "pt": "O que há de novo nisto: …"
+   }
+  },
+  {
+   "expresion": "Für Ihre Zwecke genügt der eine Satz: …",
+   "funcion": "Zusammenfassung auf eine Zeile bringen",
+   "traducciones": {
+    "es": "Para lo que usted necesita basta una frase: …",
+    "en": "For your purposes one sentence is enough: …",
+    "fr": "Pour ce qui vous intéresse, une phrase suffit : …",
+    "it": "Per i suoi scopi basta una frase: …",
+    "pt": "Para o seu caso basta uma frase: …"
+   }
+  },
+  {
+   "expresion": "Die Zahlen lasse ich weg, sie ändern am Bild nichts.",
+   "funcion": "Auslassung begründen",
+   "traducciones": {
+    "es": "Omito las cifras: no cambian el cuadro.",
+    "en": "I'm leaving the figures out; they don't change the picture.",
+    "fr": "Je laisse les chiffres de côté, ils ne changent rien au tableau.",
+    "it": "Ometto i numeri, non cambiano il quadro.",
+    "pt": "Deixo os números de fora, não mudam o quadro."
+   }
+  },
+  {
+   "expresion": "Wer tiefer einsteigen will, sollte bei…anfangen.",
+   "funcion": "Anschluss für Interessierte anbieten",
+   "traducciones": {
+    "es": "Quien quiera profundizar debería empezar por…",
+    "en": "Anyone wanting to go deeper should start with…",
+    "fr": "Qui veut approfondir devrait commencer par…",
+    "it": "Chi vuole approfondire dovrebbe partire da…",
+    "pt": "Quem quiser aprofundar deve começar por…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Fassen Sie die Debatte über die Aktienscheu der Deutschen einmal für Finanzfachleute und einmal für Ihre Eltern zusammen.",
+  "requisitos": [
+   "geteiltes Vorwissen für die Fachleute radikal komprimiert",
+   "für die Eltern genau der neue Teil ausgebaut",
+   "ein *Für Laien lohnt es sich, auf… einzugehen*",
+   "*die Aktienscheu*, *das Sparbuch* und *die Geldanlage* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Was wissen Fachleute über *Sparkultur* schon? Streichen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Was brauchen Ihre Eltern, das Fachleute nicht brauchen?"
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "2 Minuten: *Vereinfacht gesagt, für alle, die…* — zum *Haushalten*."
+  }
+ ],
+ "autochequeo": [
+  "Ist das Publikum vor dem Schreiben klar bestimmt?",
+  "Wird geteiltes Vorwissen komprimiert, nicht wiederholt?",
+  "Wird genau der für dieses Publikum relevante Teil ausgebaut?",
+  "Würde diese Zusammenfassung für ein anderes Publikum anders aussehen müssen?",
+  "Habe ich klar angegeben, für welches Publikum ich schreibe?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Zusammenfassung auf ein bestimmtes Publikum zugeschnitten ist. Schreiben Sie den Text nicht neu."
+}

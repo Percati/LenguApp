@@ -1,0 +1,401 @@
+{
+ "id": "EN-V03-C1-2027-1",
+ "skillId": "EN-V03",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "vocabulary",
+ "topicId": "T12",
+ "titulo": "Advanced Phrasal Verbs",
+ "subtitulo": "No investigate, no tolerate — phrasal verbs for your hobby",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 60
+ },
+ "descripcion": "At C1 the issue is not knowing phrasal verbs — it is that you avoid them and reach for the Latinate synonym, which is transparent to a Spanish speaker and therefore comfortable. The result is technically correct English that sounds like a translation: *investigate* instead of *look into*, *tolerate* instead of *put up with*, *postpone* instead of *put off*. This week the Latinate options are banned.",
+ "cuadroReferencia": {
+  "titulo": "Separability",
+  "columnas": [
+   "Pattern",
+   "Rule",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Separable, noun object",
+    "either position",
+    "*turn off the light* / *turn the light off*"
+   ],
+   [
+    "Separable, pronoun object",
+    "**must** split",
+    "*turn it off*, never *turn off it*"
+   ],
+   [
+    "Inseparable, two-part",
+    "never splits",
+    "look after the kids"
+   ],
+   [
+    "Three-part",
+    "never splits",
+    "*put up with*, *come up with*, *look forward to*"
+   ],
+   [
+    "Intransitive",
+    "no object",
+    "*give up*, *break down*, *wind down*"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*I got into it through a friend and ended up sinking about ten years into it.*",
+   "audio": true
+  },
+  {
+   "texto": "*I've been meaning to take it back up, but I keep putting it off.*",
+   "audio": true
+  },
+  {
+   "texto": "*It started as something to wind down with and turned into a second job.*",
+   "audio": true
+  },
+  {
+   "texto": "*I can't put up with the online side of it any more.*",
+   "audio": true
+  },
+  {
+   "texto": "*I lose track of time completely when I'm tinkering with it.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Register is not uniformly informal: *carry out*, *point out* and *bring about* are fully acceptable in formal writing.",
+  "Many phrasal verbs are polysemous. *Pick up* has at least six senses; learn them by context, not by list.",
+  "Three-part verbs are the ones learners most often mangle, because the middle particle looks droppable and is not."
+ ],
+ "contraste": {
+  "es": "Spanish has no phrasal verbs, so a Spanish speaker's default retrieval is always the Latinate verb — which exists in English but sits one register higher. That mismatch, not error, is what makes advanced English sound stiff.",
+  "de": "German separable verbs make phrasal verbs feel natural (nachgehen – look into), so German speakers produce them readily. The trap is similar-looking particles with different meanings (auskommen means get by, not come out).",
+  "it": "Italian has its own verbi sintagmatici (andare avanti – go on, tirare fuori – bring out), so verb + particle is a familiar idea. Italian speakers can build on these to use English phrasal verbs more actively.",
+  "fr": "French has no phrasal verbs, so the default is the Latinate verb (examiner – examine), which sits one register higher than look into. That mismatch is what makes advanced English sound stiff.",
+  "pt": "Portuguese has no phrasal verbs, so the default is the Latinate verb (investigar – investigate), which sits one register higher than look into. That mismatch is what makes advanced English sound stiff."
+ },
+ "errores": [
+  "*Discuss about* — no preposition. Contrast with *talk about*.",
+  "Pronoun after the particle: *turn on it*.",
+  "Splitting a three-part verb.",
+  "Defaulting to the Latinate verb, which is the whole point this week."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*sacar adelante* rendered as *take forward* instead of *pull through* or *see through*."
+  ],
+  "de": [
+   "*durchziehen* rendered as *pull through*, which means 'survive', instead of *see through* or *push through*."
+  ],
+  "it": [
+   "*portare avanti* rendered as *bring forward*, which means 'move earlier', instead of *carry on with* or *press ahead with*."
+  ],
+  "fr": [
+   "*mener à bien* rendered as *lead to well* instead of *see through* or *carry out*."
+  ],
+  "pt": [
+   "*levar adiante* rendered as *carry ahead* instead of *carry on with* or *press ahead with*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a side hustle",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "un emprendimiento paralelo",
+    "de": "das Nebenprojekt",
+    "fr": "une activité en parallèle",
+    "it": "un'attività secondaria",
+    "pt": "um projeto paralelo"
+   }
+  },
+  {
+   "item": "deliberate practice",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la práctica deliberada",
+    "de": "das bewusste Üben",
+    "fr": "la pratique délibérée",
+    "it": "la pratica deliberata",
+    "pt": "a prática deliberada"
+   }
+  },
+  {
+   "item": "to hone a skill",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "pulir una habilidad",
+    "de": "eine Fähigkeit verfeinern",
+    "fr": "perfectionner une compétence",
+    "it": "affinare un'abilità",
+    "pt": "apurar uma competência"
+   }
+  },
+  {
+   "item": "to plateau",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estancarse",
+    "de": "auf ein Plateau geraten",
+    "fr": "stagner",
+    "it": "arrivare a un plateau",
+    "pt": "estagnar"
+   }
+  },
+  {
+   "item": "to take the fun out of something",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "quitarle la gracia a algo",
+    "de": "etwas den Spass nehmen",
+    "fr": "gâcher le plaisir de qc",
+    "it": "togliere il gusto a qc",
+    "pt": "tirar a graça a algo"
+   }
+  },
+  {
+   "item": "to turn a hobby into a job",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "convertir un hobby en trabajo",
+    "de": "ein Hobby zum Beruf machen",
+    "fr": "faire de sa passion un métier",
+    "it": "trasformare un hobby in lavoro",
+    "pt": "transformar um passatempo em profissão"
+   }
+  },
+  {
+   "item": "a breakthrough",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un salto de calidad",
+    "de": "der Durchbruch",
+    "fr": "un déclic",
+    "it": "una svolta",
+    "pt": "um salto"
+   }
+  },
+  {
+   "item": "a creative outlet",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una vía de escape creativa",
+    "de": "das kreative Ventil",
+    "fr": "un exutoire créatif",
+    "it": "uno sfogo creativo",
+    "pt": "um escape criativo"
+   }
+  },
+  {
+   "item": "burnout",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el desgaste",
+    "de": "das Ausgebranntsein",
+    "fr": "l'épuisement",
+    "it": "il burnout",
+    "pt": "o esgotamento"
+   }
+  },
+  {
+   "item": "for the love of it",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "por puro gusto",
+    "de": "aus reiner Liebe zur Sache",
+    "fr": "par pur plaisir",
+    "it": "per puro piacere",
+    "pt": "por puro gosto"
+   }
+  },
+  {
+   "item": "to keep it just a hobby",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dejarlo como hobby nomás",
+    "de": "es beim Hobby belassen",
+    "fr": "en rester au loisir",
+    "it": "lasciarlo come hobby",
+    "pt": "mantê-lo só como passatempo"
+   }
+  },
+  {
+   "item": "to monetise something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "monetizar algo",
+    "de": "etwas zu Geld machen",
+    "fr": "monétiser qc",
+    "it": "monetizzare qc",
+    "pt": "monetizar algo"
+   }
+  },
+  {
+   "item": "to push yourself",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "exigirse",
+    "de": "sich fordern",
+    "fr": "se dépasser",
+    "it": "mettersi alla prova",
+    "pt": "exigir-se"
+   }
+  },
+  {
+   "item": "to stick with it",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "no abandonar",
+    "de": "dranbleiben",
+    "fr": "persévérer",
+    "it": "tenere duro",
+    "pt": "não desistir"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "to get into",
+   "funcion": "start being interested",
+   "traducciones": {
+    "es": "aficionarse",
+    "de": "sich für etwas begeistern",
+    "fr": "se mettre à",
+    "it": "appassionarsi a",
+    "pt": "interessar-se por"
+   }
+  },
+  {
+   "expresion": "to take up / take back up",
+   "funcion": "begin or resume an activity",
+   "traducciones": {
+    "es": "empezar / retomar",
+    "de": "mit etwas anfangen / wieder anfangen",
+    "fr": "se mettre à / reprendre",
+    "it": "iniziare / riprendere",
+    "pt": "começar / retomar"
+   }
+  },
+  {
+   "expresion": "to put off",
+   "funcion": "postpone",
+   "traducciones": {
+    "es": "postergar",
+    "de": "aufschieben",
+    "fr": "remettre à plus tard",
+    "it": "rimandare",
+    "pt": "adiar"
+   }
+  },
+  {
+   "expresion": "to end up -ing",
+   "funcion": "arrive somewhere unplanned",
+   "traducciones": {
+    "es": "terminar haciendo",
+    "de": "am Ende … tun",
+    "fr": "finir par + infinitif",
+    "it": "finire per + infinito",
+    "pt": "acabar por + infinitivo"
+   }
+  },
+  {
+   "expresion": "to wind down",
+   "funcion": "decompress",
+   "traducciones": {
+    "es": "desconectar",
+    "de": "zur Ruhe kommen / abschalten",
+    "fr": "se détendre / ralentir",
+    "it": "rilassarsi / rallentare",
+    "pt": "descontrair / abrandar"
+   }
+  },
+  {
+   "expresion": "to put up with",
+   "funcion": "tolerate",
+   "traducciones": {
+    "es": "aguantar",
+    "de": "etwas / jemanden ertragen",
+    "fr": "supporter",
+    "it": "sopportare",
+    "pt": "aguentar"
+   }
+  },
+  {
+   "expresion": "to come up with",
+   "funcion": "invent, produce",
+   "traducciones": {
+    "es": "ocurrírsele",
+    "de": "sich etwas ausdenken / auf etwas kommen",
+    "fr": "trouver / imaginer",
+    "it": "venire fuori con / inventare",
+    "pt": "ter uma ideia / arranjar"
+   }
+  },
+  {
+   "expresion": "to look into",
+   "funcion": "investigate",
+   "traducciones": {
+    "es": "averiguar",
+    "de": "etwas untersuchen / sich etwas ansehen",
+    "fr": "examiner / se renseigner sur",
+    "it": "indagare su / esaminare",
+    "pt": "investigar / analisar"
+   }
+  },
+  {
+   "expresion": "to keep at it",
+   "funcion": "persist",
+   "traducciones": {
+    "es": "seguir insistiendo",
+    "de": "dranbleiben",
+    "fr": "persévérer",
+    "it": "continuare / non mollare",
+    "pt": "persistir / continuar"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Tell the story of how a hobby started, grew and maybe turned into something more.",
+  "requisitos": [
+   "six phrasal verbs from the reference box",
+   "no Latinate synonym where a phrasal fits",
+   "one *end up -ing*",
+   "use *a side hustle*, *to plateau* and *to turn a hobby into a job*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write five sentences with Latinate verbs about your hobby, then swap each for a phrasal."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Write about something you *put off* and later *took back up*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: does money *take the fun out of* a hobby?"
+  }
+ ],
+ "autochequeo": [
+  "Twelve different phrasal verbs — count them.",
+  "Any pronoun sitting after a particle?",
+  "Did I split a three-part verb?",
+  "Did any Latinate verb slip through?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on phrasal verbs. (1) List each one and check the particle and the separation. (2) Flag every Latinate verb where a phrasal one would sound more natural, and give it. (3) Flag any register mismatch. (4) Check pronoun placement. Do not rewrite the text."
+}

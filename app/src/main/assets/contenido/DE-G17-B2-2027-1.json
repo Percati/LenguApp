@@ -1,0 +1,344 @@
+{
+ "id": "DE-G17-B2-2027-1",
+ "skillId": "DE-G17",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T04",
+ "titulo": "Negation und Fokuspartikeln",
+ "subtitulo": "Nicht, kein und Fokuspartikeln",
+ "ancla": "Aspekte B2",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf B2 wird die Wahl zwischen **nicht** und **kein** gefestigt sowie die Position von **nicht** im Satz. Fokuspartikeln wie nur, sogar und auch verschieben die Betonung im Satz und werden hier zum ersten Mal systematisch geübt.",
+ "cuadroReferencia": {
+  "titulo": "Nicht, kein und Fokuspartikeln",
+  "columnas": [
+   "Element",
+   "Regel",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "kein",
+    "verneint ein Nomen mit unbestimmtem Artikel",
+    "Ich habe kein Auto."
+   ],
+   [
+    "nicht",
+    "verneint alles andere",
+    "Ich fahre nicht mit dem Auto."
+   ],
+   [
+    "nur",
+    "engt den Fokus ein",
+    "Nur er hat das bemerkt."
+   ],
+   [
+    "sogar",
+    "verstärkt eine Überraschung",
+    "Sogar sie war überrascht."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Ich habe leider kein Auto und fahre deshalb nicht so oft weg.",
+   "audio": true
+  },
+  {
+   "texto": "Nur er hat den Fehler überhaupt bemerkt.",
+   "audio": true
+  },
+  {
+   "texto": "Sogar meine Eltern waren von der Idee begeistert."
+  }
+ ],
+ "notas": [
+  "Nicht steht am Satzende, wenn der ganze Satz verneint wird, aber direkt vor dem verneinten Element bei Teilverneinung.",
+  "Kein ersetzt ein/eine, nicht braucht diese Ersetzung nicht.",
+  "Nur und sogar stehen direkt vor dem Wort, auf das sie sich beziehen, nicht am Satzanfang wie im Englischen üblich."
+ ],
+ "contraste": {
+  "es": "Das Spanische verneint mit *no* vor dem Verb, unabhängig davon, ob ein bestimmter oder unbestimmter Artikel folgt. Die Unterscheidung zwischen *nicht* und *kein* existiert im Spanischen nicht, weshalb Spanischsprachige oft durchgehend *nicht* statt *kein* verwenden.",
+  "it": "Das Italienische verneint mit *non* und verbindet es mit *nessuno* zu einer doppelten Verneinung (*non ho nessun libro*); häufiger ist aber einfach *non ho libri*. Beides führt vom deutschen *kein* weg: einmal zu doppelter Verneinung, einmal zu *nicht* ohne Artikel. Fokuspartikeln wie *solo*, *perfino* und *anche* stehen dagegen wie im Deutschen vor dem betonten Element.",
+  "fr": "Das Französische hat mit *pas de* eine genaue Parallele zu *kein*: *je n'ai pas de voiture* ersetzt den Artikel wie *ich habe kein Auto*. Französischsprachige verstehen die Regel deshalb schnell. Für die Fokuspartikeln hilft *ne… que* (*je n'ai que deux heures* – *ich habe nur zwei Stunden*), auch wenn *nur* anders als *ne… que* direkt vor dem betonten Element steht.",
+  "pt": "Das Portugiesische verneint mit *não* und lässt im verneinten Satz oft den Artikel weg (*não tenho carro*). Das lässt sich als Brücke nutzen: Wo im Portugiesischen nach *não* kein Artikel steht, setzt das Deutsche meist *kein*. Mit *nenhum* bildet das Portugiesische dagegen eine doppelte Verneinung, die im Deutschen falsch ist.",
+  "en": "Das Englische hat mit *no* als Artikelwort eine genaue Parallele zu *kein* (*I have no car*), bevorzugt aber im Alltag *I don't have a car*, was zu *ich habe nicht ein Auto* führt. Bei den Fokuspartikeln unterscheidet sich die Stellung: *only* steht im Englischen gern vor dem Verb (*I only saw him yesterday*), *nur* dagegen direkt vor dem betonten Element."
+ },
+ "errores": [
+  "Nicht statt kein vor einem unbestimmten Nomen verwenden: ich habe nicht ein Auto statt ich habe kein Auto.",
+  "Nur oder sogar an eine falsche Position im Satz stellen, wodurch der Fokus verschoben wird.",
+  "Nicht am falschen Platz im Satz, wodurch die Bedeutung unklar wird."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Die doppelte Verneinung übernehmen: *Ich habe nicht nichts gekauft* nach *no he comprado nada*."
+  ],
+  "it": [
+   "Die doppelte Verneinung übernehmen: *Ich habe nicht nichts gesagt* nach *non ho detto niente*."
+  ],
+  "fr": [
+   "*ne … que* mit Verneinung übertragen: *Ich habe nicht nur zwei Euro* (= mehr als zwei) statt *Ich habe nur zwei Euro*."
+  ],
+  "pt": [
+   "Die doppelte Verneinung übernehmen: *Ich sehe nicht niemanden* nach *não vejo ninguém*."
+  ],
+  "en": [
+   "*nicht ein* statt *kein* nach dem Muster *not a*: *Das ist nicht ein Problem*.",
+   "*auch nicht* als *nicht auch* nach *not … either* bilden."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "sich fit halten",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mantenerse en forma",
+    "en": "to keep fit",
+    "fr": "rester en forme",
+    "it": "tenersi in forma",
+    "pt": "manter-se em forma"
+   }
+  },
+  {
+   "item": "das Wohlbefinden",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el bienestar",
+    "en": "wellbeing",
+    "fr": "le bien-être",
+    "it": "il benessere",
+    "pt": "o bem-estar"
+   }
+  },
+  {
+   "item": "die Vorsorgeuntersuchung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el chequeo preventivo",
+    "en": "preventive check-up",
+    "fr": "le bilan de santé",
+    "it": "il controllo preventivo",
+    "pt": "o check-up preventivo"
+   }
+  },
+  {
+   "item": "sich erholen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "recuperarse",
+    "en": "to recover",
+    "fr": "récupérer",
+    "it": "riprendersi",
+    "pt": "recuperar-se"
+   }
+  },
+  {
+   "item": "die Nebenwirkung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el efecto secundario",
+    "en": "the side effect",
+    "fr": "l'effet secondaire",
+    "it": "l'effetto collaterale",
+    "pt": "o efeito colateral"
+   }
+  },
+  {
+   "item": "die Ernährung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la alimentación",
+    "en": "diet, nutrition",
+    "fr": "l'alimentation",
+    "it": "l'alimentazione",
+    "pt": "a alimentação"
+   }
+  },
+  {
+   "item": "der Stress abbauen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "reducir el estrés",
+    "en": "to reduce stress",
+    "fr": "réduire le stress",
+    "it": "ridurre lo stress",
+    "pt": "reduzir o estresse"
+   }
+  },
+  {
+   "item": "die Work-Life-Balance",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el equilibrio vida-trabajo",
+    "en": "work-life balance",
+    "fr": "l'équilibre vie-travail",
+    "it": "l'equilibrio vita-lavoro",
+    "pt": "o equilíbrio vida-trabalho"
+   }
+  },
+  {
+   "item": "das Immunsystem",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el sistema inmunológico",
+    "en": "the immune system",
+    "fr": "le système immunitaire",
+    "it": "il sistema immunitario",
+    "pt": "o sistema imunológico"
+   }
+  },
+  {
+   "item": "die Bewegungsarmut",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el sedentarismo",
+    "en": "lack of physical activity",
+    "fr": "la sédentarité",
+    "it": "la sedentarietà",
+    "pt": "o sedentarismo"
+   }
+  },
+  {
+   "item": "die Belastbarkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la resistencia, la capacidad de aguante",
+    "en": "resilience, stamina",
+    "fr": "la résilience",
+    "it": "la resistenza",
+    "pt": "a resiliência"
+   }
+  },
+  {
+   "item": "die Vorbeugung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la prevención",
+    "en": "prevention",
+    "fr": "la prévention",
+    "it": "la prevenzione",
+    "pt": "a prevenção"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich habe kein…",
+   "funcion": "Verneinung eines Nomens",
+   "traducciones": {
+    "es": "No tengo…",
+    "en": "I don't have…",
+    "fr": "Je n’ai pas de…",
+    "it": "Non ho…",
+    "pt": "Não tenho…"
+   }
+  },
+  {
+   "expresion": "Ich … nicht.",
+   "funcion": "Verneinung des ganzen Satzes",
+   "traducciones": {
+    "es": "No…",
+    "en": "I don't…",
+    "fr": "Je ne… pas.",
+    "it": "Non…",
+    "pt": "Eu não…"
+   }
+  },
+  {
+   "expresion": "Nur … hat…",
+   "funcion": "Fokus einengen",
+   "traducciones": {
+    "es": "Solo … ha…",
+    "en": "Only … has…",
+    "fr": "Seul(e) … a…",
+    "it": "Solo … ha…",
+    "pt": "Só … tem…"
+   }
+  },
+  {
+   "expresion": "Sogar … war…",
+   "funcion": "Überraschung verstärken",
+   "traducciones": {
+    "es": "Incluso … estaba…",
+    "en": "Even … was…",
+    "fr": "Même … était…",
+    "it": "Perfino … era…",
+    "pt": "Até … estava…"
+   }
+  },
+  {
+   "expresion": "Auch … hat…",
+   "funcion": "Zusatz hervorheben",
+   "traducciones": {
+    "es": "También … ha…",
+    "en": "…, too, has…",
+    "fr": "… aussi a…",
+    "it": "Anche … ha…",
+    "pt": "Também … tem…"
+   }
+  },
+  {
+   "expresion": "…nicht mehr…",
+   "funcion": "beendete Handlung verneinen",
+   "traducciones": {
+    "es": "…ya no…",
+    "en": "…no longer…",
+    "fr": "…ne… plus…",
+    "it": "…non… più…",
+    "pt": "…já não…"
+   }
+  },
+  {
+   "expresion": "Wo steht das nicht genau?",
+   "funcion": "die Position der Negation pruefen",
+   "traducciones": {
+    "es": "¿Dónde va exactamente la negación?",
+    "en": "Where exactly does the negation go?",
+    "fr": "Où se place exactement la négation ?",
+    "it": "Dove va esattamente la negazione?",
+    "pt": "Onde fica exatamente a negação?"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie über Ihre Gesundheitsgewohnheiten — was Sie tun und was nicht.",
+  "requisitos": [
+   "fünf Negationen mit richtiger Position von *nicht*",
+   "drei *kein*",
+   "zwei Fokuspartikeln (*nur*, *sogar*)",
+   "*die Work-Life-Balance*, *das Immunsystem* und *die Ernährung* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Sätze mit *nicht* an verschiedenen Stellen — Bedeutung notieren."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Einen Satz mit *nur* in drei Positionen."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Was tun Sie *nicht* für Ihre Gesundheit?"
+  }
+ ],
+ "autochequeo": [
+  "Habe ich kein vor einem unbestimmten Nomen benutzt, nicht nicht?",
+  "Steht nicht an der richtigen Stelle für Voll- oder Teilverneinung?",
+  "Stehen nur, sogar und auch direkt vor dem Wort, auf das sie sich beziehen?",
+  "Habe ich mindestens drei verschiedene Fokuspartikeln benutzt?",
+  "Verschiebt sich der Fokus so, wie ich es beabsichtigt habe?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf nicht, kein und die Fokuspartikeln. Prüfen Sie die Position jeder Partikel im Satz. Schreiben Sie den Text nicht neu."
+}

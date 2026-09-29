@@ -1,0 +1,335 @@
+{
+ "id": "DE-G13-B2-2027-1",
+ "skillId": "DE-G13",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T02",
+ "titulo": "Infinitivsätze mit zu",
+ "subtitulo": "Infinitivsätze beim Sparen",
+ "ancla": "PD B1",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf B2 wird der Infinitivsatz mit zu sicher beherrscht, besonders nach Adjektiven und bestimmten Verben, und die Regel angewendet, dass er nur bei **identischem Subjekt** funktioniert. Perfekt- und Passiv-Infinitive (C1) kommen erst später dazu.",
+ "cuadroReferencia": {
+  "titulo": "Wann ein Infinitivsatz möglich ist",
+  "columnas": [
+   "Bedingung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Gleiches Subjekt",
+    "Er hofft, die Prüfung zu bestehen."
+   ],
+   [
+    "Nach es ist + Adjektiv",
+    "Es ist wichtig, pünktlich zu sein."
+   ],
+   [
+    "Anderes Subjekt",
+    "Er hofft, dass sie die Prüfung besteht. (kein Infinitiv möglich)"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Er hofft, die Prüfung dieses Mal zu bestehen.",
+   "audio": true
+  },
+  {
+   "texto": "Es ist wichtig, pünktlich zum Termin zu erscheinen.",
+   "audio": true
+  },
+  {
+   "texto": "Sie hat vor, nächstes Jahr umzuziehen."
+  }
+ ],
+ "notas": [
+  "Der Infinitivsatz ist nur möglich, wenn Haupt- und Nebensatz dasselbe Subjekt haben — sonst muss der dass-Satz stehen bleiben.",
+  "Zu steht bei trennbaren Verben zwischen Präfix und Stamm: umzuziehen, nicht zu umziehen.",
+  "Nach es ist + Adjektiv (wichtig, nötig, schön) ist der Infinitivsatz die Standardform."
+ ],
+ "contraste": {
+  "es": "Das Spanische verwendet bei gleichem Subjekt ebenfalls den blossen Infinitiv (*espera aprobar el examen*), sodass die Grundlogik bereits bekannt ist. Schwierig ist eher die Position von *zu* bei trennbaren Verben, für die es im Spanischen keine Entsprechung gibt.",
+  "it": "Bei gleichem Subjekt verwendet auch das Italienische den Infinitiv (*ho deciso di partire*), meist mit *di* oder *a*, was sich gut auf *zu* abbilden lässt. Nach unpersönlichen Adjektiven steht aber der blosse Infinitiv (*è difficile capire*), weshalb Italienischsprachige dort *zu* leicht weglassen. Die Stellung von *zu* bei trennbaren Verben (*anzurufen*) ist ganz neu.",
+  "fr": "Das Französische verlangt bei gleichem Subjekt den Infinitiv sogar (*j'ai décidé de partir*), und *de* nach Adjektiven (*il est difficile de comprendre*) entspricht *zu* sehr genau. Die Grundlogik ist also gut vorbereitet. Neu ist die Stellung von *zu* bei trennbaren Verben (*anzurufen*); ausserdem wird *pour* gern auf jedes *um… zu* übertragen, auch wo das Deutsche nur *zu* verlangt.",
+  "pt": "Bei gleichem Subjekt steht auch im Portugiesischen der Infinitiv, nach Adjektiven sogar ohne Präposition (*é difícil entender*), was zum Weglassen von *zu* führt. Dazu kommt der *infinitivo pessoal*, der einen Infinitiv auch bei verschiedenen Subjekten erlaubt; im Deutschen braucht es dort einen *dass*-Satz. Die Stellung von *zu* bei trennbaren Verben ist neu.",
+  "en": "Das Englische verwendet bei gleichem Subjekt ebenfalls den Infinitiv, und *to* entspricht nach Adjektiven und Verben meist gut *zu* (*it's difficult to understand*). Die Falle ist der englische Infinitiv mit eigenem Objekt-Subjekt (*I want you to come*), der zu *ich will dich zu kommen* verleitet; das Deutsche braucht dort einen *dass*-Satz. Die Stellung von *zu* bei trennbaren Verben ist neu."
+ },
+ "errores": [
+  "Einen dass-Satz mit gleichem Subjekt beibehalten, wo ein Infinitivsatz möglich wäre.",
+  "Zu bei trennbaren Verben falsch platzieren: zu umziehen statt umzuziehen.",
+  "Einen Infinitivsatz bilden, obwohl die Subjekte unterschiedlich sind."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*para* immer mit *für* übersetzen: *Ich spare für ein Auto zu kaufen* statt *um … zu*."
+  ],
+  "it": [
+   "*di* vor dem Infinitiv als *von* übernehmen: *Ich versuche von pünktlich zu sein* nach *cerco di*."
+  ],
+  "fr": [
+   "*de* vor dem Infinitiv als *von* übernehmen: *Ich habe beschlossen, von zu kündigen* nach *j'ai décidé de*."
+  ],
+  "pt": [
+   "Den persönlichen Infinitiv nachbilden und ein Subjekt in den *zu*-Satz setzen: *Es ist wichtig, wir zu kommen*."
+  ],
+  "en": [
+   "*um … zu* weglassen, wo *to* einen Zweck ausdrückt: *Ich lerne Deutsch, zu arbeiten*.",
+   "Das *-ing*-Muster übertragen: *Ich habe aufgehört rauchend* statt *zu rauchen*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Sparkonto",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cuenta de ahorro",
+    "en": "savings account",
+    "fr": "le compte épargne",
+    "it": "il conto risparmio",
+    "pt": "a conta poupança"
+   }
+  },
+  {
+   "item": "die Überweisung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la transferencia",
+    "en": "the bank transfer",
+    "fr": "le virement",
+    "it": "il bonifico",
+    "pt": "a transferência"
+   }
+  },
+  {
+   "item": "sich verschulden",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "endeudarse",
+    "en": "to go into debt",
+    "fr": "s'endetter",
+    "it": "indebitarsi",
+    "pt": "endividar-se"
+   }
+  },
+  {
+   "item": "der Zinssatz",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la tasa de interés",
+    "en": "the interest rate",
+    "fr": "le taux d'intérêt",
+    "it": "il tasso di interesse",
+    "pt": "a taxa de juros"
+   }
+  },
+  {
+   "item": "die Rücklage",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la reserva de dinero",
+    "en": "the reserve, savings buffer",
+    "fr": "la réserve financière",
+    "it": "la riserva finanziaria",
+    "pt": "a reserva financeira"
+   }
+  },
+  {
+   "item": "über die Runden kommen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "llegar a fin de mes",
+    "en": "to make ends meet",
+    "fr": "joindre les deux bouts",
+    "it": "arrivare a fine mese",
+    "pt": "chegar ao fim do mês"
+   }
+  },
+  {
+   "item": "die Ratenzahlung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el pago en cuotas",
+    "en": "instalment payment",
+    "fr": "le paiement échelonné",
+    "it": "il pagamento a rate",
+    "pt": "o pagamento em prestações"
+   }
+  },
+  {
+   "item": "der Dauerauftrag",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la domiciliación bancaria",
+    "en": "standing order",
+    "fr": "le virement permanent",
+    "it": "l'addebito permanente",
+    "pt": "o débito automático"
+   }
+  },
+  {
+   "item": "die Altersvorsorge",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la previsión para la jubilación",
+    "en": "retirement provision",
+    "fr": "la prévoyance vieillesse",
+    "it": "la previdenza per la vecchiaia",
+    "pt": "a previdência para a aposentadoria"
+   }
+  },
+  {
+   "item": "die Bonität",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la solvencia crediticia",
+    "en": "creditworthiness",
+    "fr": "la solvabilité",
+    "it": "l'affidabilità creditizia",
+    "pt": "a credibilidade financeira"
+   }
+  },
+  {
+   "item": "das Budget einhalten",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "respetar el presupuesto",
+    "en": "to stick to a budget",
+    "fr": "respecter un budget",
+    "it": "rispettare il budget",
+    "pt": "seguir o orçamento"
+   }
+  },
+  {
+   "item": "die Gebühren",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "las comisiones, los cargos",
+    "en": "the fees",
+    "fr": "les frais",
+    "it": "le commissioni",
+    "pt": "as taxas"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Es ist wichtig, … zu…",
+   "funcion": "Infinitivsatz nach Adjektiv",
+   "traducciones": {
+    "es": "Es importante…",
+    "en": "It's important to…",
+    "fr": "Il est important de…",
+    "it": "È importante…",
+    "pt": "É importante…"
+   }
+  },
+  {
+   "expresion": "Er/Sie hofft, … zu…",
+   "funcion": "Infinitivsatz nach hoffen",
+   "traducciones": {
+    "es": "Espera…",
+    "en": "He/She hopes to…",
+    "fr": "Il/Elle espère…",
+    "it": "Lui/Lei spera di…",
+    "pt": "Ele/Ela espera…"
+   }
+  },
+  {
+   "expresion": "Es macht Spass, … zu…",
+   "funcion": "Infinitivsatz, informell",
+   "traducciones": {
+    "es": "Es divertido…",
+    "en": "It's fun to…",
+    "fr": "C’est amusant de…",
+    "it": "È divertente…",
+    "pt": "É divertido…"
+   }
+  },
+  {
+   "expresion": "Sie hat vor, zu…",
+   "funcion": "Plan ausdrücken",
+   "traducciones": {
+    "es": "Tiene planeado…",
+    "en": "She's planning to…",
+    "fr": "Elle prévoit de…",
+    "it": "Ha intenzione di…",
+    "pt": "Ela tenciona…"
+   }
+  },
+  {
+   "expresion": "Es lohnt sich, … zu…",
+   "funcion": "Empfehlung",
+   "traducciones": {
+    "es": "Vale la pena…",
+    "en": "It's worth…",
+    "fr": "Ça vaut la peine de…",
+    "it": "Vale la pena…",
+    "pt": "Vale a pena…"
+   }
+  },
+  {
+   "expresion": "…, ohne … zu…",
+   "funcion": "negative Begleitumstände",
+   "traducciones": {
+    "es": "…, sin…",
+    "en": "…, without…",
+    "fr": "…, sans…",
+    "it": "…, senza…",
+    "pt": "…, sem…"
+   }
+  },
+  {
+   "expresion": "Geht das mit zu oder braucht es dass?",
+   "funcion": "die Bedingung des Infinitivsatzes pruefen",
+   "traducciones": {
+    "es": "¿Va con infinitivo o hace falta una subordinada?",
+    "en": "Does that take the infinitive or does it need a clause?",
+    "fr": "Cela prend-il l'infinitif ou faut-il une subordonnée ?",
+    "it": "Va con l'infinito o serve una subordinata?",
+    "pt": "Isso leva infinitivo ou precisa de uma subordinada?"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie über Ihre Sparziele für die nächsten zwei Jahre.",
+  "requisitos": [
+   "fünf Infinitivsätze mit *zu*",
+   "ein *ohne … zu*",
+   "ein Satz, in dem der Infinitivsatz NICHT geht, weil das Subjekt wechselt — mit *dass*",
+   "*das Sparkonto*, *sich verschulden* und *der Zinssatz* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Sätze: *Es ist wichtig, … zu …* über Geld."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei Sätze mit *Es lohnt sich, …* zur *Überweisung* oder zum *Sparkonto*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Was haben Sie vor, finanziell zu ändern? Zwei Infinitivsätze."
+  }
+ ],
+ "autochequeo": [
+  "Haben Haupt- und Nebensatz dasselbe Subjekt, bevor ich einen Infinitivsatz bilde?",
+  "Steht zu bei trennbaren Verben an der richtigen Stelle?",
+  "Habe ich mindestens einen Infinitivsatz nach es ist + Adjektiv gebildet?",
+  "Habe ich bei unterschiedlichem Subjekt den dass-Satz beibehalten?",
+  "Klingt der Infinitivsatz natürlicher als der entsprechende dass-Satz?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Infinitivsätze mit zu. Prüfen Sie, ob das Subjekt in beiden Teilen gleich ist und ob zu bei trennbaren Verben richtig steht. Schreiben Sie den Text nicht neu."
+}

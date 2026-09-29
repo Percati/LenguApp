@@ -1,0 +1,411 @@
+{
+ "id": "DE-F14-C2-2027-1",
+ "skillId": "DE-F14",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C2",
+ "categoria": "fluency",
+ "topicId": "T12",
+ "titulo": "Ironie, Untertreibung und Humor",
+ "subtitulo": "Trocken statt britisch",
+ "ancla": "Erkundungen C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Deutscher Humor arbeitet weniger mit britischer Untertreibung als mit trockener, direkter Feststellung, deren Komik gerade in der fehlenden Übertreibung liegt: das war ja mal wieder toll organisiert bedeutet oft genau das Gegenteil. Dieses Register ist stark kulturell geprägt und der riskanteste Skill im gesamten Bestand.",
+ "cuadroReferencia": {
+  "titulo": "Trockene Ironie im Kontext",
+  "columnas": [
+   "Gesagt",
+   "Tatsächlich gemeint"
+  ],
+  "filas": [
+   [
+    "Das war ja mal wieder toll organisiert.",
+    "Das war schlecht organisiert."
+   ],
+   [
+    "Na, das lief ja wie am Schnürchen.",
+    "Es lief überhaupt nicht gut."
+   ],
+   [
+    "Ich bin begeistert.",
+    "Ich bin genervt."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das war ja mal wieder toll organisiert.",
+   "audio": true
+  },
+  {
+   "texto": "Na, das lief ja wie am Schnürchen.",
+   "audio": true
+  },
+  {
+   "texto": "Ich bin ja so begeistert."
+  }
+ ],
+ "notas": [
+  "Ja mal wieder ist ein wichtiger Marker: es signalisiert, dass etwas ein wiederkehrendes, erwartbares Problem ist, was die Ironie verstärkt.",
+  "Die Ironie wird flach vorgetragen, ohne übertriebene Betonung — die Betonung würde die Ironie verraten, statt sie zu tragen.",
+  "Dieses Register hängt extrem stark vom gemeinsamen Kontext zwischen Sprecher und Zuhörer ab und funktioniert bei Fremden oft nicht."
+ ],
+ "contraste": {
+  "es": "Die ironische Untertreibung hat eine genaue spanische Entsprechung: no es precisamente un genio – nicht gerade ein Genie. Die Figur ist also bekannt; schwieriger ist es, den trockenen deutschen Ton zu treffen, ohne ihn durch Betonung oder Zusätze zu überzeichnen.",
+  "it": "Die ironische Untertreibung hat im Italienischen eine genaue Entsprechung: non proprio un genio – nicht gerade ein Genie. Die Figur ist also bekannt; schwieriger ist es, den trockenen deutschen Ton zu treffen, ohne ihn durch Betonung zu überzeichnen.",
+  "fr": "Die Litotes ist im Französischen eine geläufige Figur (ce n'est pas vraiment un génie – nicht gerade ein Genie), die Untertreibung ist also leicht zu erkennen und nachzubilden.",
+  "pt": "Die Untertreibung hat eine genaue Entsprechung: não é propriamente um génio – nicht gerade ein Genie. Die Figur ist also bekannt.",
+  "en": "Die britische Untertreibung ist eine enge Parallele: not exactly a genius entspricht genau nicht gerade ein Genie. Englischsprachige erkennen und bilden die deutsche Untertreibung deshalb leicht."
+ },
+ "errores": [
+  "Die Ironie mit übertriebener Betonung vortragen, wodurch sie ihre Wirkung verliert.",
+  "Diese Form bei Fremden oder in einem Kontext ohne geteilten Hintergrund einsetzen, wo sie missverstanden wird.",
+  "Ja mal wieder verwenden, wo kein wiederkehrendes Problem gemeint ist."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*¡Lo que faltaba!* als *Was fehlte!* übertragen statt *Das hat gerade noch gefehlt!*"
+  ],
+  "it": [
+   "*Ci mancava solo questa* als *Es fehlte nur das* übertragen statt *Das hat gerade noch gefehlt*."
+  ],
+  "fr": [
+   "*Il ne manquait plus que ça* als *Es fehlte nur noch das* übertragen statt *Das hat gerade noch gefehlt*."
+  ],
+  "pt": [
+   "*Só faltava isso* als *Es fehlte nur das* übertragen statt *Das hat gerade noch gefehlt*."
+  ],
+  "en": [
+   "*That's all we needed* als *Das ist alles, was wir brauchten* übertragen statt *Das hat gerade noch gefehlt*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Ehrenamt",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el voluntariado",
+    "en": "voluntary post",
+    "fr": "le bénévolat",
+    "it": "il volontariato",
+    "pt": "o voluntariado"
+   }
+  },
+  {
+   "item": "das Vereinswesen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el mundo asociativo",
+    "en": "club culture",
+    "fr": "la vie associative",
+    "it": "l'associazionismo",
+    "pt": "o associativismo"
+   }
+  },
+  {
+   "item": "der Feierabend",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el tiempo libre tras la jornada",
+    "en": "time after work",
+    "fr": "le temps après le travail",
+    "it": "il tempo dopo il lavoro",
+    "pt": "o tempo depois do trabalho"
+   }
+  },
+  {
+   "item": "die Geselligkeit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la vida social",
+    "en": "sociability",
+    "fr": "la convivialité",
+    "it": "la socievolezza",
+    "pt": "a sociabilidade"
+   }
+  },
+  {
+   "item": "die Musse",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el ocio contemplativo",
+    "en": "leisure",
+    "fr": "l'oisiveté",
+    "it": "l'otium",
+    "pt": "o ócio"
+   }
+  },
+  {
+   "item": "die Vereinsmeierei",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el excesivo espíritu de club",
+    "en": "officious club mentality",
+    "fr": "l'esprit associatif tatillon",
+    "it": "la mania associativa",
+    "pt": "o associativismo excessivo"
+   }
+  },
+  {
+   "item": "der Müssiggang",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la ociosidad",
+    "en": "idleness",
+    "fr": "l'oisiveté",
+    "it": "l'ozio",
+    "pt": "a ociosidade"
+   }
+  },
+  {
+   "item": "der Schrebergarten",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el huerto urbano familiar",
+    "en": "allotment garden",
+    "fr": "le jardin ouvrier",
+    "it": "l'orto urbano",
+    "pt": "a horta urbana"
+   }
+  },
+  {
+   "item": "der Stammgast",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el cliente habitual",
+    "en": "regular",
+    "fr": "l'habitué",
+    "it": "il cliente abituale",
+    "pt": "o cliente habitual"
+   }
+  },
+  {
+   "item": "der Tatendrang",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el ímpetu, las ganas de hacer",
+    "en": "drive, zest for action",
+    "fr": "l'ardeur",
+    "it": "la voglia di fare",
+    "pt": "o ímpeto"
+   }
+  },
+  {
+   "item": "die Freizeitgestaltung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la organización del tiempo libre",
+    "en": "use of leisure time",
+    "fr": "l'organisation des loisirs",
+    "it": "l'organizzazione del tempo libero",
+    "pt": "a ocupação dos tempos livres"
+   }
+  },
+  {
+   "item": "die Laienspielgruppe",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el grupo de teatro aficionado",
+    "en": "amateur dramatics group",
+    "fr": "la troupe amateur",
+    "it": "la compagnia amatoriale",
+    "pt": "o grupo de teatro amador"
+   }
+  },
+  {
+   "item": "mit Leib und Seele",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "en cuerpo y alma",
+    "en": "heart and soul",
+    "fr": "corps et âme",
+    "it": "anima e corpo",
+    "pt": "de corpo e alma"
+   }
+  },
+  {
+   "item": "sich die Zeit vertreiben",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "matar el tiempo",
+    "en": "to pass the time",
+    "fr": "passer le temps",
+    "it": "ammazzare il tempo",
+    "pt": "passar o tempo"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das war ja mal wieder…",
+   "funcion": "ironische Feststellung, wiederkehrend",
+   "traducciones": {
+    "es": "eso sí que estuvo…, como siempre",
+    "en": "well, that was…, as usual",
+    "fr": "Eh bien, c’était…, comme d’habitude.",
+    "it": "Beh, è stato…, come al solito.",
+    "pt": "Bem, isso foi…, como de costume."
+   }
+  },
+  {
+   "expresion": "Na, das lief ja…",
+   "funcion": "trockene ironische Bilanz",
+   "traducciones": {
+    "es": "bueno, eso salió…",
+    "en": "well, that went…",
+    "fr": "Eh bien, ça s’est passé…",
+    "it": "Beh, è andata…",
+    "pt": "Bem, isso correu…"
+   }
+  },
+  {
+   "expresion": "Ich bin ja so begeistert.",
+   "funcion": "ironische Übertreibung, flach vorgetragen",
+   "traducciones": {
+    "es": "estoy que no quepo en mí de la emoción",
+    "en": "I'm just thrilled, obviously",
+    "fr": "Je suis évidemment ravi(e).",
+    "it": "Sono ovviamente entusiasta.",
+    "pt": "Estou obviamente encantado/a."
+   }
+  },
+  {
+   "expresion": "Wie originell.",
+   "funcion": "trockene Ironie, kurz",
+   "traducciones": {
+    "es": "qué original",
+    "en": "how original",
+    "fr": "Comme c’est original.",
+    "it": "Che originalità.",
+    "pt": "Que original."
+   }
+  },
+  {
+   "expresion": "Das kann ja heiter werden.",
+   "funcion": "ironische Vorwegnahme eines Problems",
+   "traducciones": {
+    "es": "esto promete",
+    "en": "this should be fun",
+    "fr": "Ça promet.",
+    "it": "Ci sarà da divertirsi.",
+    "pt": "Isto promete."
+   }
+  },
+  {
+   "expresion": "Was für eine Überraschung.",
+   "funcion": "ironisch, erwartbares Ergebnis",
+   "traducciones": {
+    "es": "qué sorpresa",
+    "en": "what a surprise",
+    "fr": "Quelle surprise.",
+    "it": "Che sorpresa.",
+    "pt": "Que surpresa."
+   }
+  },
+  {
+   "expresion": "Damit war ja zu rechnen.",
+   "funcion": "trockene Bestätigung des Erwartbaren",
+   "traducciones": {
+    "es": "Era de esperar, claro.",
+    "en": "That was to be expected, of course.",
+    "fr": "Il fallait s'y attendre, évidemment.",
+    "it": "C'era da aspettarselo, ovvio.",
+    "pt": "Era de esperar, claro."
+   }
+  },
+  {
+   "expresion": "Es hätte schlimmer kommen können. Theoretisch.",
+   "funcion": "Untertreibung mit nachgeschobener Pointe",
+   "traducciones": {
+    "es": "Podría haber sido peor. En teoría.",
+    "en": "It could have been worse. In theory.",
+    "fr": "Ça aurait pu être pire. En théorie.",
+    "it": "Poteva andare peggio. In teoria.",
+    "pt": "Podia ter sido pior. Em teoria."
+   }
+  },
+  {
+   "expresion": "Ein gewisser Optimismus war da schon im Spiel.",
+   "funcion": "milde Kritik als Untertreibung",
+   "traducciones": {
+    "es": "Cierto optimismo había ahí, desde luego.",
+    "en": "A certain optimism was certainly at work there.",
+    "fr": "Un certain optimisme était bien à l'œuvre.",
+    "it": "Un certo ottimismo c'era, senz'altro.",
+    "pt": "Certo otimismo havia ali, sem dúvida."
+   }
+  },
+  {
+   "expresion": "Sagen wir: die Umsetzung hatte Luft nach oben.",
+   "funcion": "Beschönigung, die als Kritik gelesen wird",
+   "traducciones": {
+    "es": "Digamos que la ejecución tenía margen de mejora.",
+    "en": "Let's say the execution had room for improvement.",
+    "fr": "Disons que la mise en œuvre avait une marge de progression.",
+    "it": "Diciamo che la realizzazione aveva margini di miglioramento.",
+    "pt": "Digamos que a execução tinha margem para melhorar."
+   }
+  },
+  {
+   "expresion": "Ich lasse die Ironie hier mal weg: …",
+   "funcion": "Ironie bewusst abbrechen",
+   "traducciones": {
+    "es": "Aquí dejo la ironía de lado: …",
+    "en": "I'll drop the irony here: …",
+    "fr": "Je laisse ici l'ironie de côté : …",
+    "it": "Qui lascio da parte l'ironia: …",
+    "pt": "Aqui deixo a ironia de lado: …"
+   }
+  },
+  {
+   "expresion": "Das meine ich ohne jede Ironie.",
+   "funcion": "Ernst nach ironischem Register markieren",
+   "traducciones": {
+    "es": "Esto lo digo sin ninguna ironía.",
+    "en": "I mean that without any irony.",
+    "fr": "Je le dis sans la moindre ironie.",
+    "it": "Lo dico senza alcuna ironia.",
+    "pt": "Digo isto sem nenhuma ironia."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie einen Bericht über die Jahresversammlung eines Vereins, der gründlich schiefging — in trockener deutscher Ironie.",
+  "requisitos": [
+   "vier Formeln aus dem Kasten",
+   "keine Übertreibung",
+   "ein Satz, in dem die Ironie nur durch Tonfall erkennbar wäre — markieren Sie ihn",
+   "*die Vereinsmeierei*, *das Vereinswesen* und *die Geselligkeit* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei direkte Klagen über ein *Ehrenamt* trocken ironisch umformulieren."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Aufschreiben, woran man *Wie originell* als Kritik erkennt."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "2 Minuten über Ihren *Feierabend* — *Das kann ja heiter werden*."
+  }
+ ],
+ "autochequeo": [
+  "Wird die Ironie flach vorgetragen, ohne übertriebene Betonung?",
+  "Passt dieses Register zum geteilten Kontext mit dem Zuhörer?",
+  "Signalisiert ja mal wieder tatsächlich ein wiederkehrendes Problem?",
+  "Würde ein Muttersprachler dies tatsächlich so sagen?",
+  "Würde ein Muttersprachler das als natürlich, nicht als übertrieben empfinden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf trockene Ironie und Untertreibung. Prüfen Sie, ob die beabsichtigte Wirkung bei einem geteilten Publikum ankommen würde. Schreiben Sie den Text nicht neu."
+}

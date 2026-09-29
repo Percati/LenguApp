@@ -1,0 +1,338 @@
+{
+ "id": "EN-G15-B2-2027-1",
+ "skillId": "EN-G15",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T11",
+ "titulo": "Reduced Relative and Participle Clauses",
+ "subtitulo": "Shorter sentences in a news report",
+ "ancla": "EGP B1+",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "At B2 the basic reduction of a relative clause is learned: dropping the pronoun and auxiliary when the clause is passive or continuous, as long as the missing pronoun would be the subject. The C1 refinement of combining this with nominalisation in dense reports isn't the focus here.",
+ "cuadroReferencia": {
+  "titulo": "What reduces to what",
+  "columnas": [
+   "Full clause",
+   "Reduced",
+   "Type"
+  ],
+  "filas": [
+   [
+    "the email which was sent…",
+    "the email sent…",
+    "passive"
+   ],
+   [
+    "anyone who is waiting…",
+    "anyone waiting…",
+    "active"
+   ],
+   [
+    "the book which I read",
+    "cannot be reduced",
+    "pronoun is the object"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The email sent this morning hasn't been answered yet.",
+   "audio": true
+  },
+  {
+   "texto": "Anyone waiting outside should come in now.",
+   "audio": true
+  },
+  {
+   "texto": "The people invited to the meeting already know the agenda."
+  }
+ ],
+ "notas": [
+  "The reduction only works when the missing pronoun would be the subject of its own clause, not the object.",
+  "Passive clauses reduce with the past participle; active continuous clauses reduce with the -ing form.",
+  "This is mostly a written structure; in speech, the full relative clause is usually more natural."
+ ],
+ "contraste": {
+  "es": "Spanish does not reduce relative clauses this way in speech; que usually stays. Spanish speakers therefore tend to keep the full relative clause in English even where the reduced form would be more natural and compact.",
+  "de": "German compresses with a participle placed before the noun (der dort sitzende Mann), so the English postnominal reduction (the man sitting over there) has no German model. German speakers either keep the full relative clause or produce a calque such as the there sitting man.",
+  "it": "Reduced passive relatives are easy, since Italian uses the same postnominal participle (i documenti inviati ieri – the documents sent yesterday). Reductions with -ing are harder, because Italian rarely uses the present participle this way and keeps a relative clause instead (l'uomo che parla).",
+  "fr": "French has both reduction types: the postnominal past participle (les documents envoyés hier) and, in formal style, the participe présent (les étudiants travaillant ici). French speakers therefore reduce relative clauses easily; the risk is using the -ing form where English needs a full clause.",
+  "pt": "Reduced passive relatives are easy, since Portuguese uses the same postnominal participle (os documentos enviados ontem). Brazilian Portuguese also uses the gerúndio adjectivally (uma caixa contendo livros), which is a good bridge to -ing reductions (a box containing books)."
+ },
+ "errores": [
+  "Trying to reduce a clause where the missing pronoun is the object, which isn't grammatically allowed.",
+  "Using the wrong participle: active -ing where a passive past participle is needed, or vice versa.",
+  "Using this reduced form in casual speech, where it can sound unnecessarily formal."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Using *-ing* after the noun for a single finished action: *the letter arriving yesterday* instead of *the letter that arrived yesterday*."
+  ],
+  "de": [
+   "Placing the participle phrase before the noun: *the in Zurich living people* instead of *the people living in Zurich*."
+  ],
+  "it": [
+   "*proveniente da* rendered as *provenient from*: *the train provenient from Milan* instead of *coming from Milan*."
+  ],
+  "fr": [
+   "*en provenance de* rendered as *in provenance of*: *the train in provenance of Lyon* instead of *coming from Lyon*."
+  ],
+  "pt": [
+   "*proveniente de* rendered as *provenient from*: *the train provenient from Porto* instead of *coming from Porto*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "headline",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el titular",
+    "de": "die Schlagzeile",
+    "fr": "le titre",
+    "it": "il titolo",
+    "pt": "a manchete"
+   }
+  },
+  {
+   "item": "fake news",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la noticia falsa",
+    "de": "die Falschmeldung / Fake News",
+    "fr": "la fausse information",
+    "it": "la notizia falsa",
+    "pt": "a notícia falsa"
+   }
+  },
+  {
+   "item": "media literacy",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la alfabetización mediática",
+    "de": "die Medienkompetenz",
+    "fr": "l'éducation aux médias",
+    "it": "l'alfabetizzazione mediatica",
+    "pt": "a alfabetização midiática"
+   }
+  },
+  {
+   "item": "credibility",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la credibilidad",
+    "de": "die Glaubwürdigkeit",
+    "fr": "la crédibilité",
+    "it": "la credibilità",
+    "pt": "a credibilidade"
+   }
+  },
+  {
+   "item": "to report (news)",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "informar (noticias)",
+    "de": "berichten (Nachrichten)",
+    "fr": "rapporter / informer (actualités)",
+    "it": "riferire / dare notizie",
+    "pt": "noticiar / informar"
+   }
+  },
+  {
+   "item": "to deny",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "desmentir",
+    "de": "dementieren",
+    "fr": "démentir",
+    "it": "smentire",
+    "pt": "desmentir"
+   }
+  },
+  {
+   "item": "media coverage",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cobertura mediática",
+    "de": "die Medienberichterstattung",
+    "fr": "la couverture médiatique",
+    "it": "la copertura mediatica",
+    "pt": "a cobertura mediática"
+   }
+  },
+  {
+   "item": "biased",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "parcial",
+    "de": "voreingenommen / einseitig",
+    "fr": "partial / biaisé",
+    "it": "fazioso / parziale",
+    "pt": "tendencioso"
+   }
+  },
+  {
+   "item": "eyewitness",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el testigo presencial",
+    "de": "der Augenzeuge / die Augenzeugin",
+    "fr": "le témoin oculaire",
+    "it": "il testimone oculare",
+    "pt": "a testemunha ocular"
+   }
+  },
+  {
+   "item": "press release",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el comunicado de prensa",
+    "de": "die Pressemitteilung",
+    "fr": "le communiqué de presse",
+    "it": "il comunicato stampa",
+    "pt": "o comunicado de imprensa"
+   }
+  },
+  {
+   "item": "censorship",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la censura",
+    "de": "die Zensur",
+    "fr": "la censure",
+    "it": "la censura",
+    "pt": "a censura"
+   }
+  },
+  {
+   "item": "to go viral",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "hacerse viral",
+    "de": "viral gehen",
+    "fr": "devenir viral",
+    "it": "diventare virale",
+    "pt": "tornar-se viral"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "sent this morning",
+   "funcion": "reduced passive relative",
+   "traducciones": {
+    "es": "enviado esta mañana",
+    "de": "heute Morgen geschickt",
+    "fr": "envoyé ce matin",
+    "it": "inviato stamattina",
+    "pt": "enviado esta manhã"
+   }
+  },
+  {
+   "expresion": "anyone waiting…",
+   "funcion": "reduced active relative",
+   "traducciones": {
+    "es": "cualquiera que esté esperando…",
+    "de": "jemand, der wartet…",
+    "fr": "quiconque attend…",
+    "it": "chiunque stia aspettando…",
+    "pt": "qualquer pessoa que esteja à espera…"
+   }
+  },
+  {
+   "expresion": "the people invited to…",
+   "funcion": "reduced passive relative",
+   "traducciones": {
+    "es": "las personas invitadas a…",
+    "de": "die zu… eingeladenen Personen",
+    "fr": "les personnes invitées à…",
+    "it": "le persone invitate a…",
+    "pt": "as pessoas convidadas a…"
+   }
+  },
+  {
+   "expresion": "the report published…",
+   "funcion": "reduced passive relative",
+   "traducciones": {
+    "es": "el informe publicado…",
+    "de": "der veröffentlichte Bericht…",
+    "fr": "le rapport publié…",
+    "it": "il rapporto pubblicato…",
+    "pt": "o relatório publicado…"
+   }
+  },
+  {
+   "expresion": "those interested in…",
+   "funcion": "reduced relative, common in writing",
+   "traducciones": {
+    "es": "los interesados en…",
+    "de": "diejenigen, die an… interessiert sind",
+    "fr": "ceux qui s’intéressent à…",
+    "it": "coloro che sono interessati a…",
+    "pt": "os interessados em…"
+   }
+  },
+  {
+   "expresion": "the data available",
+   "funcion": "postposed adjective form",
+   "traducciones": {
+    "es": "los datos disponibles",
+    "de": "die verfügbaren Daten",
+    "fr": "les données disponibles",
+    "it": "i dati disponibili",
+    "pt": "os dados disponíveis"
+   }
+  },
+  {
+   "expresion": "Can I drop the pronoun here?",
+   "funcion": "tests whether the clause can be reduced",
+   "traducciones": {
+    "es": "¿Acá puedo omitir el pronombre?",
+    "de": "Kann ich das Pronomen hier weglassen?",
+    "fr": "Puis-je supprimer le pronom ici ?",
+    "it": "Qui posso togliere il pronome?",
+    "pt": "Aqui posso omitir o pronome?"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write a short news report about a false story that spread online.",
+  "requisitos": [
+   "four reduced relative clauses",
+   "one sentence where you keep *who* or *which* because it's needed",
+   "one *those interested in…*",
+   "use *fake news*, *credibility* and *media literacy*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write five sentences with *which was* or *who is*, then cut them."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Three sentences about a *headline* with a participle."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: why does *fake news* spread?"
+  }
+ ],
+ "autochequeo": [
+  "Is the reduction only used where the missing pronoun would be the subject?",
+  "Is the active/passive participle chosen correctly?",
+  "Does the reduction suit the register of the text (writing, not casual speech)?",
+  "Are at least three reduced clauses used?",
+  "Would a full relative clause sound more natural anywhere I used a reduced one?"
+ ],
+ "promptCorreccion": "Focus only on reduced relative clauses. Check whether each reduction is grammatically allowed and whether the participle form is correct. Do not rewrite the text."
+}

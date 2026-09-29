@@ -1,0 +1,366 @@
+{
+ "id": "DE-G12-C1-2027-1",
+ "skillId": "DE-G12",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T04",
+ "titulo": "Nominalisierung und Nominalstil",
+ "subtitulo": "Nominal- oder Verbalstil je nach Textsorte",
+ "ancla": "Erkundungen C1",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf C1 geht es nicht mehr nur um die Umwandlung von Nebensatz zu Nominalphrase, sondern um den bewussten Wechsel zwischen Nominal- und Verbalstil je nach Textsorte: ein Bericht verlangt Nominalstil, eine E-Mail an eine Kollegin nicht. Wer nur nominalisieren kann, aber nicht weiss wann, hat die Hälfte des Skills.",
+ "cuadroReferencia": {
+  "titulo": "Wann welcher Stil",
+  "columnas": [
+   "Textsorte",
+   "Stil",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Bericht, Protokoll",
+    "nominal",
+    "Nach Abschluss der Prüfung erfolgt die Freigabe."
+   ],
+   [
+    "E-Mail an Kollegen",
+    "verbal",
+    "Sobald wir geprüft haben, geben wir frei."
+   ],
+   [
+    "Wissenschaftlicher Aufsatz",
+    "nominal, mit Fachverben",
+    "Die Untersuchung der Ursachen ergab…"
+   ],
+   [
+    "Mündlicher Vortrag",
+    "gemischt, eher verbal",
+    "Wir haben untersucht, warum…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Nach Abschluss der Prüfung erfolgt die Freigabe der Anlage.",
+   "audio": true
+  },
+  {
+   "texto": "Die Untersuchung der Ursachen ergab keine eindeutigen Befunde.",
+   "audio": true
+  },
+  {
+   "texto": "Sobald wir das geprüft haben, sagen wir Bescheid.",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Derselbe Sachverhalt sollte je nach Textsorte einmal nominal und einmal verbal formuliert werden können — das ist die eigentliche C1-Kompetenz, nicht nur das Nominalisieren an sich.",
+  "Zu viel Nominalstil in einer E-Mail wirkt kalt oder sarkastisch, selbst wenn er grammatisch korrekt ist.",
+  "Fachverben wie ergeben, aufzeigen, belegen passen zum nominalen Wissenschaftsstil und ersetzen ein einfaches zeigen."
+ ],
+ "contraste": {
+  "es": "Das Spanische nominalisiert insgesamt weniger und bevorzugt auch im Bericht oft Infinitivkonstruktionen (tras revisar la instalación). Spanischsprachige unternominalisieren deshalb systematisch im deutschen Bericht und müssen aktiv gegensteuern, nicht nur eine Regel anwenden.",
+  "en": "Englische Fachtexte sind bei gleicher Formalität meist weniger nominal als deutsche, zumal englische Stilratgeber ausdrücklich zum Verbalstil raten. Englischsprachige unternominalisieren deutsche Berichte deshalb, obwohl ihnen die Mittel (Gerundium, Nominalisierung) grammatisch vertraut sind, und empfinden den Nominalstil eher als schwerfällig denn als angemessen.",
+  "it": "Durch das burocratese ist Italienischsprachigen ein stark nominaler Verwaltungsstil gut bekannt, der Nominalstil selbst ist also kein Fremdkörper. Die Aufgabe liegt eher darin, die di-Ketten mit echtem Genitiv zu bilden und den Nominalstil in informellen Texten bewusst zurückzunehmen.",
+  "fr": "Das formelle Französisch ist mindestens so nominal wie das Deutsche (après vérification de l'installation – nach Überprüfung der Anlage), Französischsprachige nominalisieren also ohne Mühe. Der typische Fehler ist die Übertragung von de als von statt eines echten Genitivs: die Überprüfung von der Anlage.",
+  "pt": "Das Portugiesische hält den Verbalstil noch leichter durch als das Spanische, weil der infinitivo pessoal auch mit eigenem Subjekt funktioniert (após verificarmos a instalação). Portugiesischsprachige unternominalisieren deshalb besonders stark und müssen im deutschen Bericht bewusst auf Nominalphrasen umstellen (nach Überprüfung der Anlage)."
+ },
+ "errores": [
+  "Nominalstil in einer informellen E-Mail verwenden, wo er unpassend wirkt.",
+  "Verbalstil in einem formellen Bericht beibehalten, wo Nominalstil erwartet wird.",
+  "Denselben Sachverhalt nicht in beide Richtungen umformulieren können, wenn die Textsorte wechselt."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*realizar un análisis* als *eine Analyse realisieren* übertragen statt *durchführen*."
+  ],
+  "en": [
+   "*to carry out* als *ausführen* übertragen: *eine Studie ausführen* statt *durchführen*."
+  ],
+  "it": [
+   "Den italienischen Verwaltungsstil mit langen Nominalketten auch in persönliche E-Mails übertragen."
+  ],
+  "fr": [
+   "Nominalketten mit *de* nachbauen: *die Durchführung von der Analyse von den Daten* statt Genitiv."
+  ],
+  "pt": [
+   "*fazer uma análise* als *eine Analyse machen* übertragen, auch im Bericht, statt *durchführen* oder *vornehmen*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Wohlbefinden",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el bienestar",
+    "en": "wellbeing",
+    "fr": "le bien-être",
+    "it": "il benessere",
+    "pt": "o bem-estar"
+   }
+  },
+  {
+   "item": "der Ausgleich zum Beruf",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el contrapeso al trabajo",
+    "en": "counterbalance to work",
+    "fr": "l'équilibre avec le travail",
+    "it": "il contrappeso al lavoro",
+    "pt": "o contrapeso ao trabalho"
+   }
+  },
+  {
+   "item": "die Belastungsgrenze",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el límite de resistencia",
+    "en": "limit of what one can take",
+    "fr": "la limite de résistance",
+    "it": "il limite di sopportazione",
+    "pt": "o limite de resistência"
+   }
+  },
+  {
+   "item": "die Genesung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la recuperación",
+    "en": "recovery",
+    "fr": "la guérison",
+    "it": "la guarigione",
+    "pt": "a recuperação"
+   }
+  },
+  {
+   "item": "die Prävention",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la prevención",
+    "en": "prevention",
+    "fr": "la prévention",
+    "it": "la prevenzione",
+    "pt": "a prevenção"
+   }
+  },
+  {
+   "item": "die Vorsorgeuntersuchung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el chequeo preventivo",
+    "en": "preventive check-up",
+    "fr": "le bilan de santé",
+    "it": "il controllo preventivo",
+    "pt": "o exame preventivo"
+   }
+  },
+  {
+   "item": "die Widerstandskraft",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la resiliencia",
+    "en": "resilience",
+    "fr": "la résilience",
+    "it": "la resilienza",
+    "pt": "a resiliência"
+   }
+  },
+  {
+   "item": "sich schonen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "cuidarse, no exigirse",
+    "en": "to take it easy",
+    "fr": "se ménager",
+    "it": "riguardarsi",
+    "pt": "poupar-se"
+   }
+  },
+  {
+   "item": "angeschlagen sein",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar bajo de defensas",
+    "en": "to be run down",
+    "fr": "être patraque",
+    "it": "essere giù di forma",
+    "pt": "estar em baixo"
+   }
+  },
+  {
+   "item": "das Essverhalten",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "los hábitos alimentarios",
+    "en": "eating habits",
+    "fr": "les habitudes alimentaires",
+    "it": "le abitudini alimentari",
+    "pt": "os hábitos alimentares"
+   }
+  },
+  {
+   "item": "der innere Antrieb",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la motivación interna",
+    "en": "inner drive",
+    "fr": "la motivation intérieure",
+    "it": "la spinta interiore",
+    "pt": "a motivação interior"
+   }
+  },
+  {
+   "item": "die Vorbeugung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la prevención de enfermedades",
+    "en": "prophylaxis",
+    "fr": "la prophylaxie",
+    "it": "la profilassi",
+    "pt": "a profilaxia"
+   }
+  },
+  {
+   "item": "in Bewegung bleiben",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mantenerse en movimiento",
+    "en": "to keep moving",
+    "fr": "rester actif",
+    "it": "restare in movimento",
+    "pt": "manter-se ativo"
+   }
+  },
+  {
+   "item": "sich etwas gönnen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "darse un gusto",
+    "en": "to treat yourself",
+    "fr": "s'accorder qc",
+    "it": "concedersi qc",
+    "pt": "dar-se ao gosto"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Nach Abschluss der…",
+   "funcion": "zeitliche Vorordnung, nominal",
+   "traducciones": {
+    "es": "Tras la conclusión de…",
+    "en": "Following the completion of…",
+    "fr": "Après l’achèvement de…",
+    "it": "Dopo il completamento di…",
+    "pt": "Após a conclusão de…"
+   }
+  },
+  {
+   "expresion": "Die Untersuchung ergab, dass…",
+   "funcion": "Ergebnis, wissenschaftlich",
+   "traducciones": {
+    "es": "La investigación reveló que…",
+    "en": "The investigation found that…",
+    "fr": "L’enquête a révélé que…",
+    "it": "L’indagine ha rilevato che…",
+    "pt": "A investigação revelou que…"
+   }
+  },
+  {
+   "expresion": "Sobald wir … haben, …",
+   "funcion": "verbale Alternative, informell",
+   "traducciones": {
+    "es": "En cuanto hayamos…, …",
+    "en": "As soon as we've…, …",
+    "fr": "Dès que nous aurons…, …",
+    "it": "Non appena avremo…, …",
+    "pt": "Assim que tivermos…, …"
+   }
+  },
+  {
+   "expresion": "Im Rahmen der Untersuchung wurde festgestellt, dass…",
+   "funcion": "formeller Rahmen setzen",
+   "traducciones": {
+    "es": "En el marco de la investigación se constató que…",
+    "en": "As part of the investigation, it was found that…",
+    "fr": "Dans le cadre de l’enquête, il a été constaté que…",
+    "it": "Nell’ambito dell’indagine è stato constatato che…",
+    "pt": "No âmbito da investigação, constatou-se que…"
+   }
+  },
+  {
+   "expresion": "Kurz gesagt, wir haben…",
+   "funcion": "verbaler Einstieg, mündlich",
+   "traducciones": {
+    "es": "En resumen, nosotros…",
+    "en": "In short, we've…",
+    "fr": "En bref, nous avons…",
+    "it": "In breve, abbiamo…",
+    "pt": "Resumindo, nós…"
+   }
+  },
+  {
+   "expresion": "Die Feststellung lautet, dass…",
+   "funcion": "Ergebnis, formell",
+   "traducciones": {
+    "es": "La conclusión es que…",
+    "en": "The finding is that…",
+    "fr": "Le constat est que…",
+    "it": "La constatazione è che…",
+    "pt": "A constatação é que…"
+   }
+  },
+  {
+   "expresion": "Verbal gesagt waere das klarer.",
+   "funcion": "die Nominalisierung zurueckdrehen",
+   "traducciones": {
+    "es": "Dicho con verbos sería más claro.",
+    "en": "Put with verbs it would be clearer.",
+    "fr": "Dit avec des verbes, ce serait plus clair.",
+    "it": "Detto con i verbi sarebbe più chiaro.",
+    "pt": "Dito com verbos seria mais claro."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie denselben Inhalt zweimal: einen Kurzbericht über ein Präventionsprogramm am Arbeitsplatz und eine E-Mail an eine Kollegin darüber.",
+  "requisitos": [
+   "im Bericht mindestens fünf Nominalisierungen",
+   "in der E-Mail keine einzige Nominalisierung, wo ein Verb geht",
+   "dieselben Fakten in beiden Texten",
+   "*die Prävention*, *die Widerstandskraft* und *der Ausgleich zum Beruf* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei Sätze über die *Vorsorgeuntersuchung* nominalisieren."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Umgekehrt: *Nach Abschluss der Genesung…* verbal auflösen."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Was tun Sie für Ihr *Wohlbefinden*? Mündlich — bewusst verbal."
+  }
+ ],
+ "autochequeo": [
+  "Passt der Stil (nominal oder verbal) zur Textsorte?",
+  "Könnte ich denselben Inhalt in die jeweils andere Form umschreiben?",
+  "Ist die E-Mail-Version wirklich verbal, nicht versehentlich nominal geblieben?",
+  "Klingen die Fachverben (ergeben, belegen) natürlich im Kontext?",
+  "Wirkt der Bericht nicht zu verbal für sein Register?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wahl zwischen Nominal- und Verbalstil je nach Textsorte. Prüfen Sie, ob der gewählte Stil zur Situation passt, und zeigen Sie mir, wie ein Satz in der jeweils anderen Form aussähe. Schreiben Sie den Text nicht neu."
+}

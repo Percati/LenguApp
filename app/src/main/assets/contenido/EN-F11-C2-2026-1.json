@@ -1,0 +1,394 @@
+{
+ "id": "EN-F11-C2-2026-1",
+ "skillId": "EN-F11",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C2",
+ "categoria": "fluency",
+ "topicId": "T03",
+ "titulo": "Summarising Complex Information",
+ "subtitulo": "The same summary for two audiences",
+ "ancla": "EGP C2",
+ "challengeType": "adaptive_production",
+ "bilingue": false,
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 55
+ },
+ "descripcion": "At C2 a summary is calibrated to what the specific audience already knows, compressing shared background aggressively while expanding exactly the part that's genuinely new to them — the same source material summarised differently for two different audiences.",
+ "cuadroReferencia": {
+  "titulo": "Audience-calibrated summary",
+  "columnas": [
+   "Audience",
+   "What's compressed",
+   "What's expanded"
+  ],
+  "filas": [
+   [
+    "Expert audience",
+    "background, method",
+    "the one surprising finding"
+   ],
+   [
+    "General audience",
+    "technical detail",
+    "why it matters, in plain terms"
+   ],
+   [
+    "Mixed audience",
+    "nothing, briefly note both",
+    "a short bridge naming both readings"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Skipping the methodology, which you'll know already, the one real surprise was the effect size.",
+   "audio": true
+  },
+  {
+   "texto": "In plain terms, this means prices are likely to rise faster than expected.",
+   "audio": true
+  },
+  {
+   "texto": "For those new to this, here's the one thing that actually matters."
+  }
+ ],
+ "notas": [
+  "Naming what you're skipping (skipping the methodology, which you'll know already) signals respect for an expert audience's time.",
+  "The same source can be summarised in two genuinely different ways depending on the audience, not just simplified once for everyone.",
+  "For a general audience, expanding why it matters in plain terms is more valuable than expanding technical detail they didn't ask for."
+ ],
+ "contraste": {
+  "es": "Spanish has the same tools for acknowledging shared knowledge (como ya sabéis – as you know), so audience-based summarising is not new. The English addition is to leave whole known parts out, signalled with phrases like I won't go over… again.",
+  "de": "German has wie Sie wissen and the compact bekanntlich (as is well known), so acknowledging shared knowledge is familiar. English leaves known parts out with phrases like I won't go over… again, where German speakers tend to summarise everything.",
+  "it": "Come sapete corresponds to as you know, and non sto a ripetere to I won't go over… again. Audience-based summarising therefore transfers directly.",
+  "fr": "Comme vous le savez corresponds to as you know, and je ne reviens pas sur… to I won't go back over…. Audience-based summarising therefore transfers directly.",
+  "pt": "Como sabem corresponds to as you know, and não vou repetir to I won't go over… again. Audience-based summarising therefore transfers directly."
+ },
+ "errores": [
+  "Giving the same summary regardless of audience, wasting an expert's time or losing a general reader.",
+  "Compressing the one part that's actually new to this audience.",
+  "Expanding technical detail for an audience that needs the implications instead."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*A grandes rasgos* rendered as *At big traits* instead of *Broadly speaking*."
+  ],
+  "de": [
+   "*Im Grossen und Ganzen* rendered as *In the big and whole* instead of *By and large*."
+  ],
+  "it": [
+   "*A grandi linee* rendered as *At big lines* instead of *Broadly speaking*."
+  ],
+  "fr": [
+   "*Dans les grandes lignes* rendered as *In the big lines* instead of *Broadly speaking*."
+  ],
+  "pt": [
+   "*Em linhas gerais* rendered as *In general lines* instead of *Broadly speaking*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a legacy system",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el sistema heredado",
+    "de": "das Altsystem",
+    "fr": "le système hérité",
+    "it": "il sistema legacy",
+    "pt": "o sistema herdado"
+   }
+  },
+  {
+   "item": "a single point of failure",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el punto único de fallo",
+    "de": "der Single Point of Failure",
+    "fr": "le point unique de défaillance",
+    "it": "il punto singolo di guasto",
+    "pt": "o ponto único de falha"
+   }
+  },
+  {
+   "item": "interoperability",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la interoperabilidad",
+    "de": "die Interoperabilität",
+    "fr": "l'interopérabilité",
+    "it": "l'interoperabilità",
+    "pt": "a interoperabilidade"
+   }
+  },
+  {
+   "item": "technical debt",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la deuda técnica",
+    "de": "die technische Schuld",
+    "fr": "la dette technique",
+    "it": "il debito tecnico",
+    "pt": "a dívida técnica"
+   }
+  },
+  {
+   "item": "to degrade gracefully",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "degradarse de forma controlada",
+    "de": "kontrolliert ausfallen",
+    "fr": "se dégrader progressivement",
+    "it": "degradare in modo controllato",
+    "pt": "degradar de forma controlada"
+   }
+  },
+  {
+   "item": "to future-proof",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "preparar para el futuro",
+    "de": "zukunftssicher machen",
+    "fr": "pérenniser",
+    "it": "rendere a prova di futuro",
+    "pt": "preparar para o futuro"
+   }
+  },
+  {
+   "item": "a stopgap",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la solución provisional",
+    "de": "die Notlösung",
+    "fr": "la solution provisoire",
+    "it": "la soluzione tampone",
+    "pt": "a solução provisória"
+   }
+  },
+  {
+   "item": "an audit trail",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el registro de auditoría",
+    "de": "der Prüfpfad",
+    "fr": "la piste d'audit",
+    "it": "la pista di controllo",
+    "pt": "o registo de auditoria"
+   }
+  },
+  {
+   "item": "redundancy (backup)",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la redundancia",
+    "de": "die Redundanz",
+    "fr": "la redondance",
+    "it": "la ridondanza",
+    "pt": "a redundância"
+   }
+  },
+  {
+   "item": "throughput",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el rendimiento de procesamiento",
+    "de": "der Durchsatz",
+    "fr": "le débit",
+    "it": "la produttività",
+    "pt": "o débito"
+   }
+  },
+  {
+   "item": "to be locked in",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "quedar atado a un proveedor",
+    "de": "an einen Anbieter gebunden sein",
+    "fr": "être captif d'un fournisseur",
+    "it": "essere vincolato a un fornitore",
+    "pt": "ficar preso a um fornecedor"
+   }
+  },
+  {
+   "item": "to deprecate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "declarar obsoleto",
+    "de": "als veraltet markieren",
+    "fr": "déprécier",
+    "it": "dichiarare obsoleto",
+    "pt": "descontinuar"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Skipping…, which you'll know already,…",
+   "funcion": "compresses shared background",
+   "traducciones": {
+    "es": "Saltándome…, que ya conocerán,…",
+    "de": "Wenn wir… überspringen, was ihr ohnehin schon kennt,…",
+    "fr": "En sautant…, que vous connaissez déjà,…",
+    "it": "Saltando…, che conoscete già,…",
+    "pt": "Saltando…, que já conhecem,…"
+   }
+  },
+  {
+   "expresion": "The one real surprise was…",
+   "funcion": "isolates the genuinely new part",
+   "traducciones": {
+    "es": "La única sorpresa real fue…",
+    "de": "Die einzige echte Überraschung war…",
+    "fr": "La seule véritable surprise a été…",
+    "it": "L’unica vera sorpresa è stata…",
+    "pt": "A única verdadeira surpresa foi…"
+   }
+  },
+  {
+   "expresion": "In plain terms, this means…",
+   "funcion": "expands implications for a general audience",
+   "traducciones": {
+    "es": "En términos simples, esto significa…",
+    "de": "Einfach gesagt bedeutet das…",
+    "fr": "En termes simples, cela signifie…",
+    "it": "In parole semplici, significa…",
+    "pt": "Em termos simples, isto significa…"
+   }
+  },
+  {
+   "expresion": "For those new to this,…",
+   "funcion": "flags a general-audience frame",
+   "traducciones": {
+    "es": "Para quienes son nuevos en esto,…",
+    "de": "Für diejenigen, die neu dabei sind,…",
+    "fr": "Pour ceux qui découvrent le sujet,…",
+    "it": "Per chi è nuovo a questo,…",
+    "pt": "Para quem é novo nisto,…"
+   }
+  },
+  {
+   "expresion": "The part that actually matters here is…",
+   "funcion": "isolates significance",
+   "traducciones": {
+    "es": "La parte que realmente importa acá es…",
+    "de": "Der Teil, der hier wirklich zählt, ist…",
+    "fr": "La partie qui compte vraiment ici est…",
+    "it": "La parte che conta davvero qui è…",
+    "pt": "A parte que realmente importa aqui é…"
+   }
+  },
+  {
+   "expresion": "I'll assume you know…, so let's focus on…",
+   "funcion": "explicit calibration",
+   "traducciones": {
+    "es": "Voy a asumir que conocen…, así que enfoquémonos en…",
+    "de": "Ich gehe davon aus, dass ihr… kennt, also konzentrieren wir uns auf…",
+    "fr": "Je vais supposer que vous connaissez…, donc concentrons-nous sur…",
+    "it": "Do per scontato che conosciate…, quindi concentriamoci su…",
+    "pt": "Vou partir do princípio de que conhecem…, por isso concentremo-nos em…"
+   }
+  },
+  {
+   "expresion": "Three things, then I'll stop.",
+   "funcion": "announces the shape of the summary",
+   "traducciones": {
+    "es": "Tres cosas y termino.",
+    "de": "Drei Punkte, dann höre ich auf.",
+    "fr": "Trois points, et j'arrête.",
+    "it": "Tre cose, poi mi fermo.",
+    "pt": "Três coisas e paro."
+   }
+  },
+  {
+   "expresion": "I'm leaving out the methodology deliberately.",
+   "funcion": "justifies the omission to this audience",
+   "traducciones": {
+    "es": "Dejo fuera la metodología a propósito.",
+    "de": "Die Methodik lasse ich bewusst weg.",
+    "fr": "Je laisse volontairement de côté la méthodologie.",
+    "it": "Tralascio di proposito la metodologia.",
+    "pt": "Deixo de fora a metodologia de propósito."
+   }
+  },
+  {
+   "expresion": "If you only take one thing from this: …",
+   "funcion": "compresses to a single line",
+   "traducciones": {
+    "es": "Si te llevás una sola cosa de esto: …",
+    "de": "Wenn Sie nur eines mitnehmen: …",
+    "fr": "Si vous ne retenez qu'une chose : …",
+    "it": "Se prende una sola cosa da qui: …",
+    "pt": "Se levares só uma coisa daqui: …"
+   }
+  },
+  {
+   "expresion": "The source argues for this without saying so.",
+   "funcion": "surfaces the implicit slant of the original",
+   "traducciones": {
+    "es": "La fuente defiende esto sin decirlo.",
+    "de": "Die Quelle argumentiert dafür, ohne es zu sagen.",
+    "fr": "La source plaide pour cela sans le dire.",
+    "it": "La fonte lo sostiene senza dirlo.",
+    "pt": "A fonte defende isto sem o dizer."
+   }
+  },
+  {
+   "expresion": "How much detail do you want here?",
+   "funcion": "lets the audience set the compression",
+   "traducciones": {
+    "es": "¿Cuánto detalle querés acá?",
+    "de": "Wie ausführlich soll ich hier werden?",
+    "fr": "Quel niveau de détail voulez-vous ici ?",
+    "it": "Quanto dettaglio vuole qui?",
+    "pt": "Quanto detalhe queres aqui?"
+   }
+  },
+  {
+   "expresion": "What's genuinely contested is only…",
+   "funcion": "separates settled from disputed ground",
+   "traducciones": {
+    "es": "Lo que realmente está en disputa es solo…",
+    "de": "Wirklich strittig ist nur…",
+    "fr": "Ce qui est réellement contesté, c'est seulement…",
+    "it": "Ciò che è davvero in discussione è solo…",
+    "pt": "O que está realmente em disputa é apenas…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Summarise the state of an ageing system twice: for the engineers who maintain it and for the manager who funds it.",
+  "requisitos": [
+   "shared background compressed aggressively for the experts",
+   "the genuinely new part expanded for each audience",
+   "one *I'll assume you know…, so let's focus on…*",
+   "use *technical debt*, *a single point of failure* and *to future-proof*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "List what the engineers already know about *a legacy system*. Cut it."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Write what the manager needs that the engineers don't."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 2 minutes on *interoperability* for someone new to it."
+  }
+ ],
+ "autochequeo": [
+  "Is the summary calibrated to what this specific audience already knows?",
+  "Is shared background compressed, not repeated at length?",
+  "Is the genuinely new or significant part expanded, not buried?",
+  "Would an expert feel their time was respected?",
+  "Would a general reader understand why it matters?"
+ ],
+ "promptCorreccion": "Focus only on whether the summary is calibrated to the intended audience's existing knowledge. Check what's compressed versus expanded. Do not rewrite the text."
+}

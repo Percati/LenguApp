@@ -1,0 +1,389 @@
+{
+ "id": "DE-F02-C2-2026-1",
+ "skillId": "DE-F02",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C2",
+ "categoria": "fluency",
+ "topicId": "T02",
+ "titulo": "Zustimmen und widersprechen",
+ "subtitulo": "Widerspruch auf der richtigen Ebene",
+ "ancla": "Erkundungen C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Auf C2 wird der Widerspruch präzise auf einer Ebene verortet: der Prämisse, der Logik oder der Schlussfolgerung. Diese Präzision unterscheidet den fachlichen Widerspruch vom allgemeinen Widerwillen. Diese Präzision ist es, die einen fachlichen Diskurs von einer blossen Meinungsverschiedenheit unterscheidet.",
+ "cuadroReferencia": {
+  "titulo": "Auf welcher Ebene der Widerspruch sitzt",
+  "columnas": [
+   "Ebene",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Prämisse",
+    "Da würde ich schon die Ausgangsannahme infrage stellen."
+   ],
+   [
+    "Logik",
+    "Diese Schlussfolgerung ergibt sich daraus meiner Ansicht nach nicht."
+   ],
+   [
+    "Nur die Schlussfolgerung",
+    "Die Argumentation überzeugt mich, aber nicht, wo sie endet."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Da würde ich schon die Ausgangsannahme infrage stellen, bevor wir weiterdiskutieren.",
+   "audio": true
+  },
+  {
+   "texto": "Diese Schlussfolgerung ergibt sich daraus meiner Ansicht nach nicht zwingend.",
+   "audio": true
+  },
+  {
+   "texto": "Die Argumentation überzeugt mich, aber nicht, wo sie am Ende landet."
+  }
+ ],
+ "notas": [
+  "Die Ebene des Widerspruchs zu benennen zeigt dem Gegenüber genau, worauf eine Antwort sich konzentrieren sollte.",
+  "Ergibt sich daraus nicht zwingend ist präziser als ein pauschales stimmt nicht — es kritisiert die Logik, nicht den Inhalt.",
+  "Ein Teilzugeständnis (die Argumentation überzeugt mich) vor dem eigentlichen Einwand wirkt fachlicher als ein sofortiger Widerspruch."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat dieselben Bausteine: no comparto la premisa – ich teile die Ausgangsannahme nicht, de ello no se sigue necesariamente – daraus folgt nicht zwingend. Die Übertragung gelingt fast wörtlich.",
+  "it": "Das Italienische hat für den präzisen Widerspruch dieselben Bausteine: non condivido la premessa – ich teile die Ausgangsannahme nicht, non ne consegue necessariamente – daraus folgt nicht zwingend. Die Übertragung gelingt fast wörtlich.",
+  "fr": "Das Französische hat dieselben Bausteine: je ne partage pas la prémisse – ich teile die Ausgangsannahme nicht, il ne s'ensuit pas nécessairement que – daraus folgt nicht zwingend, dass. Die Übertragung gelingt fast wörtlich.",
+  "pt": "Das Portugiesische hat dieselben Bausteine: não partilho (brasilianisch compartilho) a premissa – ich teile die Ausgangsannahme nicht, não decorre necessariamente – daraus folgt nicht zwingend. Die Übertragung gelingt fast wörtlich.",
+  "en": "Das Englische hat dieselben Bausteine: I don't share the premise – ich teile die Ausgangsannahme nicht, it doesn't necessarily follow – daraus folgt nicht zwingend. Prämisse gibt es auch im Deutschen, ausserhalb der Philosophie klingt Ausgangsannahme aber natürlicher."
+ },
+ "errores": [
+  "Pauschal widersprechen, obwohl der eigentliche Einwand nur eine Ebene betrifft.",
+  "Ergibt sich daraus nicht als vage Ablehnung statt als präzisen logischen Einwand verwenden.",
+  "Kein Teilzugeständnis machen, wodurch der Widerspruch total statt gezielt wirkt."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Eso no quita que* als *Das nimmt nicht weg, dass* übertragen statt *Das ändert nichts daran, dass*."
+  ],
+  "it": [
+   "*Il che non toglie che* als *was nicht wegnimmt, dass* übertragen statt *was nichts daran ändert, dass*."
+  ],
+  "fr": [
+   "*Il n'empêche que* als *Es verhindert nicht, dass* übertragen statt *Dennoch* oder *Trotzdem*."
+  ],
+  "pt": [
+   "*O que não tira que* als *Was nicht wegnimmt, dass* übertragen statt *Was nichts daran ändert, dass*."
+  ],
+  "en": [
+   "*That doesn't take away from…* als *Das nimmt nichts weg von…* übertragen statt *Das ändert nichts daran, dass…*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Vermögen umschichten",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "reestructurar el patrimonio",
+    "en": "to reallocate assets",
+    "fr": "réallouer son patrimoine",
+    "it": "riallocare il patrimonio",
+    "pt": "reafetar o património"
+   }
+  },
+  {
+   "item": "das Zinsumfeld",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el entorno de tipos",
+    "en": "interest rate environment",
+    "fr": "l'environnement des taux",
+    "it": "il contesto dei tassi",
+    "pt": "o ambiente de taxas"
+   }
+  },
+  {
+   "item": "die Bonitätsprüfung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el análisis de solvencia",
+    "en": "credit assessment",
+    "fr": "l'évaluation de solvabilité",
+    "it": "la valutazione del merito creditizio",
+    "pt": "a avaliação de crédito"
+   }
+  },
+  {
+   "item": "die Geldentwertung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la devaluación del dinero",
+    "en": "monetary devaluation",
+    "fr": "la dépréciation monétaire",
+    "it": "la svalutazione",
+    "pt": "a desvalorização"
+   }
+  },
+  {
+   "item": "die Rücklagenpolitik",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la política de reservas",
+    "en": "reserve policy",
+    "fr": "la politique de réserves",
+    "it": "la politica delle riserve",
+    "pt": "a política de reservas"
+   }
+  },
+  {
+   "item": "mit spitzem Bleistift rechnen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "echar cuentas al milímetro",
+    "en": "to count every penny",
+    "fr": "compter au plus juste",
+    "it": "fare i conti con la matita appuntita",
+    "pt": "fazer contas ao cêntimo"
+   }
+  },
+  {
+   "item": "das Klumpenrisiko",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el riesgo de concentración",
+    "en": "concentration risk",
+    "fr": "le risque de concentration",
+    "it": "il rischio di concentrazione",
+    "pt": "o risco de concentração"
+   }
+  },
+  {
+   "item": "der Verwässerungseffekt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el efecto de dilución",
+    "en": "dilution effect",
+    "fr": "l'effet de dilution",
+    "it": "l'effetto diluizione",
+    "pt": "o efeito de diluição"
+   }
+  },
+  {
+   "item": "die Vermögensbindung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la inmovilización del capital",
+    "en": "tied-up capital",
+    "fr": "l'immobilisation du capital",
+    "it": "il vincolo del capitale",
+    "pt": "a imobilização do capital"
+   }
+  },
+  {
+   "item": "die Verschuldungsquote",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la tasa de endeudamiento",
+    "en": "debt ratio",
+    "fr": "le taux d'endettement",
+    "it": "il tasso d'indebitamento",
+    "pt": "o rácio de endividamento"
+   }
+  },
+  {
+   "item": "die Vorfälligkeitsentschädigung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la comisión por amortización anticipada",
+    "en": "early repayment charge",
+    "fr": "l'indemnité de remboursement anticipé",
+    "it": "la penale di estinzione anticipata",
+    "pt": "a comissão de reembolso antecipado"
+   }
+  },
+  {
+   "item": "etwas gegenrechnen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "compensar en el cálculo",
+    "en": "to offset in the calculation",
+    "fr": "déduire dans le calcul",
+    "it": "compensare nel conto",
+    "pt": "descontar no cálculo"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Da würde ich schon die Ausgangsannahme infrage stellen.",
+   "funcion": "Widerspruch auf Prämissenebene",
+   "traducciones": {
+    "es": "ahí cuestionaría la premisa de partida",
+    "en": "I'd question the starting premise there",
+    "fr": "Je remettrais en question la prémisse de départ.",
+    "it": "Metterei in discussione la premessa di partenza.",
+    "pt": "Eu questionaria a premissa de partida."
+   }
+  },
+  {
+   "expresion": "Das ergibt sich daraus nicht zwingend.",
+   "funcion": "Widerspruch auf Logikebene",
+   "traducciones": {
+    "es": "eso no se sigue necesariamente de ahí",
+    "en": "that doesn't necessarily follow from that",
+    "fr": "Cela ne découle pas nécessairement de là.",
+    "it": "Questo non ne consegue necessariamente.",
+    "pt": "Isso não decorre necessariamente daí."
+   }
+  },
+  {
+   "expresion": "Die Argumentation überzeugt mich, aber…",
+   "funcion": "Teilzugeständnis, dann Einwand",
+   "traducciones": {
+    "es": "el razonamiento me convence, pero…",
+    "en": "the reasoning convinces me, but…",
+    "fr": "Le raisonnement me convainc, mais…",
+    "it": "Il ragionamento mi convince, ma…",
+    "pt": "O raciocínio convence-me, mas…"
+   }
+  },
+  {
+   "expresion": "Das ist eine andere Frage als…",
+   "funcion": "isoliert den eigentlichen Streitpunkt",
+   "traducciones": {
+    "es": "eso es una cuestión aparte de…",
+    "en": "that's a separate question from…",
+    "fr": "C’est une question distincte de…",
+    "it": "Questa è una questione distinta da…",
+    "pt": "Essa é uma questão distinta de…"
+   }
+  },
+  {
+   "expresion": "Wir gehen vielleicht einfach von unterschiedlichen Prämissen aus.",
+   "funcion": "rahmt als Prämissenunterschied",
+   "traducciones": {
+    "es": "quizás partimos de premisas distintas",
+    "en": "we may simply be starting from different premises",
+    "fr": "Nous partons peut-être simplement de prémisses différentes.",
+    "it": "Forse partiamo semplicemente da premesse diverse.",
+    "pt": "Talvez partamos simplesmente de premissas diferentes."
+   }
+  },
+  {
+   "expresion": "Die Schlussfolgerung geht mir zu weit.",
+   "funcion": "Widerspruch auf Schlussfolgerungsebene",
+   "traducciones": {
+    "es": "la conclusión me parece excesiva",
+    "en": "the conclusion overreaches, in my view",
+    "fr": "À mon avis, la conclusion va trop loin.",
+    "it": "A mio avviso, la conclusione va troppo oltre.",
+    "pt": "Na minha opinião, a conclusão vai longe demais."
+   }
+  },
+  {
+   "expresion": "Der Befund stimmt, die Deutung nicht.",
+   "funcion": "Daten zugestehen, Auslegung bestreiten",
+   "traducciones": {
+    "es": "El dato es correcto; la interpretación, no.",
+    "en": "The finding is right, the reading of it isn't.",
+    "fr": "Le constat est juste, l'interprétation non.",
+    "it": "Il dato è giusto, l'interpretazione no.",
+    "pt": "O dado está certo, a interpretação não."
+   }
+  },
+  {
+   "expresion": "Dem stimme ich in der Sache zu, nicht im Tonfall.",
+   "funcion": "inhaltliche Zustimmung, Einwand gegen die Form",
+   "traducciones": {
+    "es": "Coincido en el fondo, no en el tono.",
+    "en": "I agree on the substance, not on the tone.",
+    "fr": "Je suis d'accord sur le fond, pas sur le ton.",
+    "it": "Concordo nel merito, non nel tono.",
+    "pt": "Concordo no conteúdo, não no tom."
+   }
+  },
+  {
+   "expresion": "Hier wird Ursache mit Wirkung verwechselt.",
+   "funcion": "Widerspruch gegen die Kausalrichtung",
+   "traducciones": {
+    "es": "Aquí se confunde causa con efecto.",
+    "en": "Cause and effect are being swapped here.",
+    "fr": "Ici, on confond la cause et l'effet.",
+    "it": "Qui si confonde causa ed effetto.",
+    "pt": "Aqui confunde-se causa com efeito."
+   }
+  },
+  {
+   "expresion": "Das gilt für den Einzelfall, nicht für die Regel.",
+   "funcion": "Geltungsbereich einer Behauptung einschränken",
+   "traducciones": {
+    "es": "Eso vale para el caso concreto, no como regla.",
+    "en": "That holds for the single case, not as a rule.",
+    "fr": "Cela vaut pour le cas particulier, pas comme règle.",
+    "it": "Vale per il caso singolo, non come regola.",
+    "pt": "Isso vale para o caso concreto, não como regra."
+   }
+  },
+  {
+   "expresion": "Bevor ich widerspreche: Verstehe ich die Behauptung richtig, dass…?",
+   "funcion": "Widerspruch durch Rückversicherung vorbereiten",
+   "traducciones": {
+    "es": "Antes de discrepar: ¿entiendo bien que se afirma que…?",
+    "en": "Before I disagree: am I right that the claim is…?",
+    "fr": "Avant de contester : est-ce que je comprends bien que l'affirmation est…?",
+    "it": "Prima di obiettare: capisco bene che si afferma che…?",
+    "pt": "Antes de discordar: entendo bem que se afirma que…?"
+   }
+  },
+  {
+   "expresion": "In diesem Punkt gebe ich Ihnen recht, und genau deshalb…",
+   "funcion": "Zugeständnis als Hebel für den eigenen Schluss",
+   "traducciones": {
+    "es": "En ese punto le doy la razón, y justo por eso…",
+    "en": "On that point you're right, and that's exactly why…",
+    "fr": "Sur ce point je vous donne raison, et c'est précisément pourquoi…",
+    "it": "Su questo punto le do ragione, e proprio per questo…",
+    "pt": "Nesse ponto dou-lhe razão, e é justamente por isso que…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Widersprechen Sie der These, dass private Rücklagen gegen Geldentwertung ohnehin nichts ausrichten.",
+  "requisitos": [
+   "benennen, ob Sie Prämisse, Logik oder Schluss angreifen",
+   "einen Teil ausdrücklich zugestehen",
+   "ein *Das ist eine andere Frage als…*",
+   "*die Geldentwertung*, *die Rücklagenpolitik* und *das Vermögen umschichten* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Die These in Prämisse, Logik und Schluss zerlegen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Zu jeder Ebene einen Widerspruch — den stärksten behalten."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "2 Minuten widersprechen: *Wer mit spitzem Bleistift rechnet, verpasst die Chancen.*"
+  }
+ ],
+ "autochequeo": [
+  "Ist die Ebene des Widerspruchs (Prämisse, Logik, Schlussfolgerung) klar benannt?",
+  "Gibt es ein präzises Teilzugeständnis vor dem Einwand?",
+  "Wüsste das Gegenüber genau, worauf es antworten sollte?",
+  "Wirkt der Widerspruch fachlich gezielt, nicht pauschal?",
+  "Würde ein Fachpublikum den Einwand als präzise, nicht vage empfinden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob die Ebene des Widerspruchs präzise benannt wird. Schreiben Sie den Text nicht neu. Prüfen Sie, ob ein Teilzugeständnis vorausgeht."
+}

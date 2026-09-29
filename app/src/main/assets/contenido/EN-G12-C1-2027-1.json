@@ -1,0 +1,339 @@
+{
+ "id": "EN-G12-C1-2027-1",
+ "skillId": "EN-G12",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T11",
+ "titulo": "Impersonal and Advanced Passive",
+ "subtitulo": "Distancing a claim without hiding behind it",
+ "ancla": "EGP C1",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Beyond the basic passive, C1 English uses the impersonal it is + reporting verb pattern to attribute a claim without naming a source: it is said, it is believed, it is widely assumed. This is the register of journalism, policy writing and careful academic prose, and it fails when the pattern is used on facts that don't need distancing.",
+ "cuadroReferencia": {
+  "titulo": "The impersonal reporting pattern",
+  "columnas": [
+   "Pattern",
+   "Example",
+   "Function"
+  ],
+  "filas": [
+   [
+    "it is + reporting verb + that",
+    "It is believed that the figures are outdated.",
+    "attributes without a named source"
+   ],
+   [
+    "S + is said/believed/thought + to + infinitive",
+    "The policy is thought to have failed.",
+    "same idea, subject-first"
+   ],
+   [
+    "it is widely + verb + that",
+    "It is widely assumed that…",
+    "signals a common but unverified view"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "It is widely assumed that the figures will be revised downward.",
+   "audio": true
+  },
+  {
+   "texto": "The policy is thought to have failed for reasons unrelated to its design.",
+   "audio": true
+  },
+  {
+   "texto": "It is understood that no final decision has been made."
+  }
+ ],
+ "notas": [
+  "The subject-first version (the policy is thought to have failed) reads slightly more formal and academic than the it-first version.",
+  "Widely, generally and commonly before the reporting verb signal that the view is common, not necessarily correct.",
+  "This pattern is for genuinely unattributed or collective views — using it on a claim you could simply state as fact reads as evasive."
+ ],
+ "contraste": {
+  "es": "Spanish achieves the same effect with se cree que or se dice que, a single impersonal structure instead of two parallel forms (it is + verb, subject + is thought to). Spanish speakers usually learn only the it is pattern and miss the subject-initial variant, which is the more frequent one in English news and reports.",
+  "de": "German has a perfect bridge for the subject-initial pattern: sollen in its reported sense (Er soll sehr reich sein – He is said to be very rich). German speakers who map soll onto is said to / is thought to use the pattern naturally; the risk is translating man sagt as one says, which sounds stilted in English.",
+  "it": "Italian uses si dice che and marks unconfirmed information with the condizionale (sarebbe molto ricco). The typical calque is it is said that he would be very rich; the English subject-initial pattern (he is said to be…) has no direct Italian model and needs practice.",
+  "fr": "French uses on dit que, il paraît que and the conditionnel (il serait très riche). Il est censé être corresponds well to he is supposed to be, but the neutral he is said to be has no direct French model, and on dit is often calqued as one says.",
+  "pt": "Portuguese uses diz-se que or dizem que, and consta que for unconfirmed information. The subject-initial pattern (he is said to be…) has no direct model and needs practice, as Portuguese speakers tend to stay with it is said that."
+ },
+ "errores": [
+  "Using this pattern on a fact that doesn't need distancing, which reads as evasive.",
+  "Only using the it is + that version and never the subject-first is thought to version.",
+  "Dropping the infinitive after the subject-first pattern: the policy is thought failed instead of is thought to have failed."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*se dice que* rendered as *It says that* instead of *It is said that*."
+  ],
+  "de": [
+   "Hearsay *soll* rendered as *shall*: *He shall have resigned* instead of *He is said to have resigned*.",
+   "*man sagt* rendered as *One says that* instead of *It is said that*."
+  ],
+  "it": [
+   "*si dice che* rendered as *It says that* instead of *It is said that*."
+  ],
+  "fr": [
+   "*on dit que* rendered as *One says that* instead of *It is said that*."
+  ],
+  "pt": [
+   "*diz-se que* rendered as *It says that* instead of *It is said that*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "headline",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el titular",
+    "de": "die Schlagzeile",
+    "fr": "le titre",
+    "it": "il titolo",
+    "pt": "a manchete"
+   }
+  },
+  {
+   "item": "source",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la fuente",
+    "de": "die Quelle",
+    "fr": "la source",
+    "it": "la fonte",
+    "pt": "a fonte"
+   }
+  },
+  {
+   "item": "fake news",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la noticia falsa",
+    "de": "die Falschmeldung / Fake News",
+    "fr": "la fausse information",
+    "it": "la notizia falsa",
+    "pt": "a notícia falsa"
+   }
+  },
+  {
+   "item": "public opinion",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la opinión pública",
+    "de": "die öffentliche Meinung",
+    "fr": "l'opinion publique",
+    "it": "l'opinione pubblica",
+    "pt": "a opinião pública"
+   }
+  },
+  {
+   "item": "media literacy",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la alfabetización mediática",
+    "de": "die Medienkompetenz",
+    "fr": "l'éducation aux médias",
+    "it": "l'alfabetizzazione mediatica",
+    "pt": "a alfabetização midiática"
+   }
+  },
+  {
+   "item": "sensationalising",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la escandalización",
+    "de": "die Skandalisierung",
+    "fr": "la mise en scandale",
+    "it": "la spettacolarizzazione",
+    "pt": "a sensacionalização"
+   }
+  },
+  {
+   "item": "to find out about",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "informarse sobre",
+    "de": "sich informieren über",
+    "fr": "s'informer sur",
+    "it": "informarsi su",
+    "pt": "informar-se sobre"
+   }
+  },
+  {
+   "item": "fact-check",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la verificación de datos",
+    "de": "der Faktencheck",
+    "fr": "la vérification des faits",
+    "it": "la verifica dei fatti",
+    "pt": "a verificação de factos"
+   }
+  },
+  {
+   "item": "filter bubble",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la burbuja de filtro",
+    "de": "die Filterblase",
+    "fr": "la bulle de filtres",
+    "it": "la bolla di filtraggio",
+    "pt": "a bolha de filtro"
+   }
+  },
+  {
+   "item": "sensationalist",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sensacionalista",
+    "de": "reisserisch",
+    "fr": "racoleur",
+    "it": "sensazionalistico",
+    "pt": "sensacionalista"
+   }
+  },
+  {
+   "item": "credibility",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la credibilidad",
+    "de": "die Glaubwürdigkeit",
+    "fr": "la crédibilité",
+    "it": "la credibilità",
+    "pt": "a credibilidade"
+   }
+  },
+  {
+   "item": "manipulation",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la manipulación",
+    "de": "die Manipulation",
+    "fr": "la manipulation",
+    "it": "la manipolazione",
+    "pt": "a manipulação"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "It is believed that…",
+   "funcion": "attributes without a source",
+   "traducciones": {
+    "es": "se cree que…",
+    "de": "Es wird angenommen, dass…",
+    "fr": "On pense que…",
+    "it": "Si ritiene che…",
+    "pt": "Acredita-se que…"
+   }
+  },
+  {
+   "expresion": "…is thought to have…",
+   "funcion": "subject-first, more academic",
+   "traducciones": {
+    "es": "se piensa que… ha…",
+    "de": "…soll… gehabt haben",
+    "fr": "…aurait…",
+    "it": "…si pensa che abbia…",
+    "pt": "…pensa-se que terá…"
+   }
+  },
+  {
+   "expresion": "It is widely assumed that…",
+   "funcion": "flags a common but unverified view",
+   "traducciones": {
+    "es": "se asume ampliamente que…",
+    "de": "Es wird weithin angenommen, dass…",
+    "fr": "Il est largement admis que…",
+    "it": "È opinione diffusa che…",
+    "pt": "Parte-se geralmente do princípio de que…"
+   }
+  },
+  {
+   "expresion": "It is understood that…",
+   "funcion": "cautious, slightly official",
+   "traducciones": {
+    "es": "se entiende que…",
+    "de": "Es wird davon ausgegangen, dass…",
+    "fr": "On croit savoir que…",
+    "it": "Si apprende che…",
+    "pt": "Segundo se apurou,…"
+   }
+  },
+  {
+   "expresion": "…is said to be…",
+   "funcion": "reported characteristic",
+   "traducciones": {
+    "es": "se dice que es…",
+    "de": "…soll… sein",
+    "fr": "…serait…",
+    "it": "…si dice che sia…",
+    "pt": "…diz-se que é…"
+   }
+  },
+  {
+   "expresion": "It remains to be seen whether…",
+   "funcion": "closes with genuine uncertainty",
+   "traducciones": {
+    "es": "queda por ver si…",
+    "de": "Es bleibt abzuwarten, ob…",
+    "fr": "Reste à voir si…",
+    "it": "Resta da vedere se…",
+    "pt": "Resta saber se…"
+   }
+  },
+  {
+   "expresion": "Who believes it, though?",
+   "funcion": "questions what the impersonal form hides",
+   "traducciones": {
+    "es": "Pero ¿quién lo cree?",
+    "de": "Wer glaubt das eigentlich?",
+    "fr": "Mais qui le croit ?",
+    "it": "Ma chi lo crede?",
+    "pt": "Mas quem acredita nisso?"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write a short news analysis of a story that spread fast before anyone checked it — invented or generic, no real names or dates.",
+  "requisitos": [
+   "three different impersonal reporting patterns (*it is believed that*, *is said to*, *it remains to be seen whether*)",
+   "one sentence where you deliberately do NOT distance, because the fact is verified — and say why",
+   "use *headline*, *source* and *public opinion*",
+   "one sentence explaining how *fake news* differs from an honest error"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Take three headlines from today and rewrite each with *it is claimed that* or *is reported to*. Which one got weaker, which got more honest?"
+  },
+  {
+   "dia": "mie",
+   "minutos": 10,
+   "texto": "Write five sentences with *is thought to have* + past participle about events whose *source* you haven't verified."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: how *public opinion* forms before the facts are in. Use at least two impersonal passives."
+  }
+ ],
+ "autochequeo": [
+  "Is this pattern reserved for claims that genuinely need distancing?",
+  "Have I used both the it is + that and the subject-first is thought to forms?",
+  "Is the infinitive present after every subject-first pattern?",
+  "Would a reader sense evasion where a plain statement would have been more honest?",
+  "Is widely/generally/commonly used correctly to signal a common rather than a verified view?"
+ ],
+ "promptCorreccion": "Focus only on impersonal reporting patterns. Check whether they're used on claims that genuinely need distancing, and check the infinitive form after subject-first patterns. Do not rewrite the text."
+}

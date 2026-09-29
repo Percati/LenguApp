@@ -1,0 +1,420 @@
+{
+ "id": "EN-V09-C1-2027-1",
+ "skillId": "EN-V09",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "vocabulary",
+ "topicId": "T14",
+ "titulo": "Connotation and Nuance",
+ "subtitulo": "The word that makes the product sound good or bad",
+ "ancla": "CV Vocabulary control",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 60
+ },
+ "descripcion": "Many near-synonyms in English carry a positive, neutral or negative connotation that a dictionary definition doesn't show: slim vs. skinny, confident vs. arrogant, frugal vs. stingy. Choosing the wrong one changes how the listener feels about the person or thing being described, even though the literal meaning is close to identical.",
+ "cuadroReferencia": {
+  "titulo": "Same meaning, different connotation",
+  "columnas": [
+   "Positive",
+   "Neutral",
+   "Negative"
+  ],
+  "filas": [
+   [
+    "slim",
+    "thin",
+    "skinny"
+   ],
+   [
+    "confident",
+    "assured",
+    "arrogant"
+   ],
+   [
+    "frugal",
+    "careful with money",
+    "stingy"
+   ],
+   [
+    "curious",
+    "inquisitive",
+    "nosy"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She comes across as confident, not arrogant, which is a hard balance to strike.",
+   "audio": true
+  },
+  {
+   "texto": "He's frugal rather than stingy — there's a real difference.",
+   "audio": true
+  },
+  {
+   "texto": "It's more curiosity than nosiness, in my view."
+  }
+ ],
+ "notas": [
+  "Connotation often depends on who is being described and by whom — the same behaviour can be called confident or arrogant depending on the speaker's attitude.",
+  "Swapping a neutral word for a loaded one is a subtle but powerful way to shift a reader's sympathy without stating an opinion directly.",
+  "These pairs are worth learning together, not in isolation, since the contrast is the whole point."
+ ],
+ "contraste": {
+  "es": "Spanish has similar connotation pairs (ahorrativo/tacaño, seguro/soberbio), so the concept is familiar. The difficulty is that specific words do not always sit on the same axis: English frugal is more neutral-positive than its closest Spanish translation.",
+  "de": "English and German share many parallel pairs (thrifty/stingy – sparsam/geizig, slim/skinny – schlank/dürr), so the concept transfers well. Sensibel is a false friend, however: it means sensitive, not sensible.",
+  "it": "Italian frugale mostly describes a simple meal, while English frugal describes careful spending. Italian speakers therefore need to learn frugal as a money word with a neutral-positive tone.",
+  "fr": "French frugal mostly describes a simple meal or lifestyle, while English frugal describes careful spending. French speakers therefore need to learn frugal as a money word with a neutral-positive tone.",
+  "pt": "Portuguese frugal mostly describes a simple meal, while English frugal describes careful spending. Portuguese speakers need to learn frugal as a money word with a neutral-positive tone."
+ },
+ "errores": [
+  "Choosing a negatively connotated word when a neutral or positive one was intended.",
+  "Not noticing that a supposedly neutral translation actually carries a stronger judgement in English.",
+  "Overcorrecting into an unnaturally positive word to avoid any negative connotation, which can sound insincere."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*ignorar* rendered as *ignore*, which sounds rude, when you mean *not know*: *I ignore the answer* instead of *I don't know the answer*."
+  ],
+  "de": [
+   "*sympathisch* rendered as *sympathetic*, which means 'compassionate', instead of *likeable* or *nice*."
+  ],
+  "it": [
+   "*ignorare* rendered as *ignore*, which sounds rude, when you mean *not know*: *I ignore the answer* instead of *I don't know the answer*."
+  ],
+  "fr": [
+   "*ignorer* rendered as *ignore*, which sounds rude, when you mean *not know*: *I ignore the answer* instead of *I don't know the answer*."
+  ],
+  "pt": [
+   "*ignorar* rendered as *ignore*, which sounds rude, when you mean *not know*: *I ignore the answer* instead of *I don't know the answer*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a hard sell",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la venta agresiva",
+    "de": "die aggressive Verkaufstaktik",
+    "fr": "la vente forcée",
+    "it": "la vendita aggressiva",
+    "pt": "a venda agressiva"
+   }
+  },
+  {
+   "item": "consumer protection",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la protección al consumidor",
+    "de": "der Verbraucherschutz",
+    "fr": "la protection des consommateurs",
+    "it": "la tutela dei consumatori",
+    "pt": "a defesa do consumidor"
+   }
+  },
+  {
+   "item": "ethical sourcing",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el abastecimiento ético",
+    "de": "die ethische Beschaffung",
+    "fr": "l'approvisionnement éthique",
+    "it": "l'approvvigionamento etico",
+    "pt": "o abastecimento ético"
+   }
+  },
+  {
+   "item": "supply chain",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cadena de suministro",
+    "de": "die Lieferkette",
+    "fr": "la chaîne d'approvisionnement",
+    "it": "la catena di fornitura",
+    "pt": "a cadeia de abastecimento"
+   }
+  },
+  {
+   "item": "to haggle over the price",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "regatear el precio",
+    "de": "um den Preis feilschen",
+    "fr": "marchander le prix",
+    "it": "contrattare sul prezzo",
+    "pt": "regatear o preço"
+   }
+  },
+  {
+   "item": "to shop around",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "comparar antes de comprar",
+    "de": "sich umschauen",
+    "fr": "comparer les offres",
+    "it": "guardarsi intorno",
+    "pt": "procurar alternativas"
+   }
+  },
+  {
+   "item": "a markup",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el margen de beneficio",
+    "de": "der Aufschlag",
+    "fr": "la marge",
+    "it": "il ricarico",
+    "pt": "a margem"
+   }
+  },
+  {
+   "item": "an impulse buy",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una compra impulsiva",
+    "de": "der Impulskauf",
+    "fr": "un achat impulsif",
+    "it": "un acquisto impulsivo",
+    "pt": "uma compra por impulso"
+   }
+  },
+  {
+   "item": "compulsion to consume",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la compulsión al consumo",
+    "de": "der Konsumzwang",
+    "fr": "la compulsion de consommation",
+    "it": "la compulsione all'acquisto",
+    "pt": "a compulsão pelo consumo"
+   }
+  },
+  {
+   "item": "greenwashing",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el lavado de imagen verde",
+    "de": "das Greenwashing",
+    "fr": "l'écoblanchiment",
+    "it": "il greenwashing",
+    "pt": "o greenwashing"
+   }
+  },
+  {
+   "item": "throwaway culture",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cultura de usar y tirar",
+    "de": "die Wegwerfmentalität",
+    "fr": "la culture du jetable",
+    "it": "la cultura dell'usa e getta",
+    "pt": "a cultura do descartável"
+   }
+  },
+  {
+   "item": "to cut out the middleman",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "eliminar al intermediario",
+    "de": "den Zwischenhändler ausschalten",
+    "fr": "supprimer l'intermédiaire",
+    "it": "eliminare l'intermediario",
+    "pt": "eliminar o intermediário"
+   }
+  },
+  {
+   "item": "to vote with your wallet",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "votar con la billetera",
+    "de": "mit dem Geldbeutel abstimmen",
+    "fr": "voter avec son portefeuille",
+    "it": "votare con il portafoglio",
+    "pt": "votar com a carteira"
+   }
+  },
+  {
+   "item": "value for money",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la relación calidad-precio",
+    "de": "das Preis-Leistungs-Verhältnis",
+    "fr": "le rapport qualité-prix",
+    "it": "il rapporto qualità-prezzo",
+    "pt": "a relação qualidade-preço"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "confident, not arrogant",
+   "funcion": "distinguishes positive from negative",
+   "traducciones": {
+    "es": "seguro de sí, no soberbio",
+    "de": "selbstbewusst, nicht arrogant",
+    "fr": "sûr(e) de soi, pas arrogant(e)",
+    "it": "sicuro/a di sé, non arrogante",
+    "pt": "confiante, não arrogante"
+   }
+  },
+  {
+   "expresion": "frugal rather than stingy",
+   "funcion": "reframes a trait positively",
+   "traducciones": {
+    "es": "ahorrativo más que tacaño",
+    "de": "eher sparsam als geizig",
+    "fr": "plutôt économe qu’avare",
+    "it": "più parsimonioso che avaro",
+    "pt": "mais poupado do que avarento"
+   }
+  },
+  {
+   "expresion": "curious rather than nosy",
+   "funcion": "reframes a trait positively",
+   "traducciones": {
+    "es": "curioso más que entrometido",
+    "de": "eher neugierig als aufdringlich",
+    "fr": "plutôt curieux que indiscret",
+    "it": "più curioso che invadente",
+    "pt": "mais curioso do que intrometido"
+   }
+  },
+  {
+   "expresion": "It comes across as…",
+   "funcion": "hedges a connotation judgement",
+   "traducciones": {
+    "es": "Da la impresión de…",
+    "de": "Es wirkt…",
+    "fr": "Ça donne l’impression de…",
+    "it": "Dà l’impressione di…",
+    "pt": "Dá a impressão de…"
+   }
+  },
+  {
+   "expresion": "…, in a good way.",
+   "funcion": "clarifies an ambiguous word",
+   "traducciones": {
+    "es": "…, en el buen sentido.",
+    "de": "…, im positiven Sinne.",
+    "fr": "…, dans le bon sens.",
+    "it": "…, in senso positivo.",
+    "pt": "…, no bom sentido."
+   }
+  },
+  {
+   "expresion": "That's putting it kindly.",
+   "funcion": "signals a softened negative",
+   "traducciones": {
+    "es": "Eso es decirlo con delicadeza.",
+    "de": "Das ist noch nett ausgedrückt.",
+    "fr": "C’est le dire gentiment.",
+    "it": "Per dirla con delicatezza.",
+    "pt": "Isso é dizer de forma suave."
+   }
+  },
+  {
+   "expresion": "determined rather than stubborn",
+   "funcion": "reframes persistence positively",
+   "traducciones": {
+    "es": "decidido más que terco",
+    "de": "entschlossen statt stur",
+    "fr": "déterminé plutôt qu'obstiné",
+    "it": "determinato più che testardo",
+    "pt": "determinado mais do que teimoso"
+   }
+  },
+  {
+   "expresion": "thrifty rather than mean",
+   "funcion": "reframes carefulness with money",
+   "traducciones": {
+    "es": "ahorrativo más que tacaño",
+    "de": "sparsam statt knauserig",
+    "fr": "économe plutôt que radin",
+    "it": "parsimonioso più che spilorcio",
+    "pt": "poupado mais do que forreta"
+   }
+  },
+  {
+   "expresion": "cautious, not timid",
+   "funcion": "distinguishes prudence from fear",
+   "traducciones": {
+    "es": "prudente, no tímido",
+    "de": "vorsichtig, nicht ängstlich",
+    "fr": "prudent, pas timoré",
+    "it": "prudente, non timoroso",
+    "pt": "prudente, não tímido"
+   }
+  },
+  {
+   "expresion": "inexpensive, not cheap",
+   "funcion": "separates price from quality",
+   "traducciones": {
+    "es": "económico, no barato",
+    "de": "günstig, nicht billig",
+    "fr": "abordable, pas bon marché",
+    "it": "conveniente, non scadente",
+    "pt": "em conta, não barato"
+   }
+  },
+  {
+   "expresion": "That word does more damage than you intend.",
+   "funcion": "flags an unintended connotation",
+   "traducciones": {
+    "es": "Esa palabra hace más daño del que querés.",
+    "de": "Dieses Wort richtet mehr Schaden an, als du willst.",
+    "fr": "Ce mot fait plus de dégâts que tu ne le veux.",
+    "it": "Quella parola fa più danni di quanto intendi.",
+    "pt": "Essa palavra faz mais estragos do que queres."
+   }
+  },
+  {
+   "expresion": "Which of the two do you actually mean?",
+   "funcion": "forces the connotation choice into the open",
+   "traducciones": {
+    "es": "¿Cuál de las dos querés decir en realidad?",
+    "de": "Welches von beiden meinst du eigentlich?",
+    "fr": "Lequel des deux veux-tu dire au juste ?",
+    "it": "Quale dei due intendi davvero?",
+    "pt": "Qual dos dois queres dizer realmente?"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write two reviews of the same product: one by a fan, one by a sceptic, using near-synonyms that shift connotation.",
+  "requisitos": [
+   "four near-synonym pairs with opposite connotation",
+   "one *It comes across as…*",
+   "one *That's putting it kindly*",
+   "use *ethical sourcing*, *supply chain* and *a hard sell*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write five neutral words about shops, then a positive and negative near-synonym for each."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Describe someone who *haggles over the price*: frugal or stingy? Both versions."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds on *consumer protection*, choosing every adjective deliberately."
+  }
+ ],
+ "autochequeo": [
+  "Does each word carry the connotation I actually intend?",
+  "Have I checked a near-synonym for hidden negative or positive charge?",
+  "Would the described person feel fairly represented by this word choice?",
+  "Have I avoided overcorrecting into an insincerely positive word?",
+  "Are at least four connotation pairs used deliberately?"
+ ],
+ "promptCorreccion": "Focus only on connotation. Flag any word that carries an unintended positive or negative charge and suggest the neutral or opposite-charge alternative. Do not rewrite the text."
+}

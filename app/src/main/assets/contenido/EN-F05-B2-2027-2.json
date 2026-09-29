@@ -1,0 +1,411 @@
+{
+ "id": "EN-F05-B2-2027-2",
+ "skillId": "EN-F05",
+ "order": 2,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "fluency",
+ "topicId": "T03",
+ "titulo": "Making and Responding to Suggestions",
+ "subtitulo": "Suggestions for using technology at home",
+ "ancla": "CV Goal-oriented co-operation",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "At B2 suggestions are made politely with could and answered appropriately, either accepting or proposing an alternative. The deliberate negotiation with conditional concessions (C1) isn't the target here — a clear suggestion and a fitting response are enough.",
+ "cuadroReferencia": {
+  "titulo": "Suggestion and response",
+  "columnas": [
+   "Function",
+   "Phrase"
+  ],
+  "filas": [
+   [
+    "Making a suggestion",
+    "We could go on Saturday."
+   ],
+   [
+    "Accepting",
+    "That sounds good, let's do that."
+   ],
+   [
+    "Proposing an alternative",
+    "How about Sunday instead?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "We could go on Saturday, if that works for you.",
+   "audio": true
+  },
+  {
+   "texto": "How about Sunday instead? I'd have more time then.",
+   "audio": true
+  },
+  {
+   "texto": "That sounds good, let's do that."
+  }
+ ],
+ "notas": [
+  "We could is the most neutral way to make a suggestion and fits almost any situation.",
+  "How about…? works especially well to propose an alternative without directly rejecting the first suggestion.",
+  "Ending a suggestion with a soft tag (if that works for you) makes it sound less like an instruction."
+ ],
+ "contraste": {
+  "es": "Podríamos corresponds to we could, so suggestions transfer well. Spanish also suggests with the present (¿vamos al cine?), which translates as Do we go to the cinema? instead of Shall we go…? or Let's go….",
+  "de": "Wir könnten corresponds to we could, wollen wir…? to shall we…?, and lass uns to let's. Suggestions therefore transfer almost word for word.",
+  "it": "Potremmo corresponds to we could, and perché non…? to why don't we…?. Suggestions in the present (andiamo al cinema?) should become Shall we go…? or Let's go… rather than Do we go…?",
+  "fr": "On pourrait corresponds to we could, and et si on allait… ? to what if we went…?, even with the same past tense. On va au cinéma ? should become Shall we go…? rather than Do we go…?",
+  "pt": "Podíamos or poderíamos corresponds to we could, and que tal…? to what about…?. Vamos ao cinema? should become Shall we go…? or Let's go… rather than Do we go…?"
+ },
+ "errores": [
+  "Making a suggestion with can instead of could, which sounds more like a statement of fact than a suggestion.",
+  "Responding to a suggestion with only no and no alternative.",
+  "Using shall for suggestions, which is now old-fashioned outside of very formal contexts."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*sugerir* + subjunctive rendered as *I suggest you to go* instead of *I suggest you go* or *I suggest going*."
+  ],
+  "de": [
+   "*Wie wäre es, wenn…* rendered as *How would it be if…* instead of *How about…?* or *What if we…?*"
+  ],
+  "it": [
+   "*suggerire di* rendered as *I suggest to go* instead of *I suggest going*."
+  ],
+  "fr": [
+   "*suggérer de* rendered as *I suggest to go* instead of *I suggest going*."
+  ],
+  "pt": [
+   "*sugerir* rendered as *I suggest you to go* instead of *I suggest you go* or *I suggest going*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "algorithm",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el algoritmo",
+    "de": "der Algorithmus",
+    "fr": "l’algorithme",
+    "it": "l’algoritmo",
+    "pt": "o algoritmo"
+   }
+  },
+  {
+   "item": "artificial intelligence",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la inteligencia artificial",
+    "de": "die künstliche Intelligenz",
+    "fr": "l'intelligence artificielle",
+    "it": "l'intelligenza artificiale",
+    "pt": "a inteligência artificial"
+   }
+  },
+  {
+   "item": "biased",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "sesgado",
+    "de": "voreingenommen / einseitig",
+    "fr": "partial / biaisé",
+    "it": "fazioso / parziale",
+    "pt": "tendencioso"
+   }
+  },
+  {
+   "item": "data protection",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la protección de datos",
+    "de": "Datenschutz",
+    "fr": "la protection des données",
+    "it": "la protezione dei dati",
+    "pt": "a proteção de dados"
+   }
+  },
+  {
+   "item": "screen time",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el tiempo de pantalla",
+    "de": "die Bildschirmzeit",
+    "fr": "le temps d'écran",
+    "it": "il tempo davanti allo schermo",
+    "pt": "o tempo de ecrã"
+   }
+  },
+  {
+   "item": "software update",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la actualización de software",
+    "de": "das Software-Update",
+    "fr": "la mise à jour logicielle",
+    "it": "l’aggiornamento software",
+    "pt": "a atualização de software"
+   }
+  },
+  {
+   "item": "to train a model",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "entrenar un modelo",
+    "de": "ein Modell trainieren",
+    "fr": "entraîner un modèle",
+    "it": "addestrare un modello",
+    "pt": "treinar um modelo"
+   }
+  },
+  {
+   "item": "a data breach",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una filtración de datos",
+    "de": "das Datenleck",
+    "fr": "une fuite de données",
+    "it": "una violazione dei dati",
+    "pt": "uma fuga de dados"
+   }
+  },
+  {
+   "item": "a glitch",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un fallo técnico",
+    "de": "die Störung",
+    "fr": "un bogue",
+    "it": "un difetto tecnico",
+    "pt": "uma falha técnica"
+   }
+  },
+  {
+   "item": "automation",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la automatización",
+    "de": "die Automatisierung",
+    "fr": "l'automatisation",
+    "it": "l'automazione",
+    "pt": "a automação"
+   }
+  },
+  {
+   "item": "surveillance",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la vigilancia",
+    "de": "die Überwachung",
+    "fr": "la surveillance",
+    "it": "la sorveglianza",
+    "pt": "a vigilância"
+   }
+  },
+  {
+   "item": "to back up (files)",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "hacer una copia de seguridad",
+    "de": "sichern",
+    "fr": "sauvegarder",
+    "it": "fare il backup",
+    "pt": "fazer uma cópia de segurança"
+   }
+  },
+  {
+   "item": "to log in",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "iniciar sesión",
+    "de": "sich anmelden",
+    "fr": "se connecter",
+    "it": "accedere",
+    "pt": "iniciar sessão"
+   }
+  },
+  {
+   "item": "user-friendly",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "fácil de usar",
+    "de": "benutzerfreundlich",
+    "fr": "convivial",
+    "it": "facile da usare",
+    "pt": "fácil de usar"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "We could…",
+   "funcion": "suggestion, neutral",
+   "traducciones": {
+    "es": "Podríamos…",
+    "de": "Wir könnten…",
+    "fr": "Nous pourrions…",
+    "it": "Potremmo…",
+    "pt": "Poderíamos…"
+   }
+  },
+  {
+   "expresion": "How about…?",
+   "funcion": "suggestion as a question",
+   "traducciones": {
+    "es": "¿Qué tal si…?",
+    "de": "Wie wäre es mit…?",
+    "fr": "Et si… ?",
+    "it": "Che ne dici di…?",
+    "pt": "Que tal…?"
+   }
+  },
+  {
+   "expresion": "That sounds good.",
+   "funcion": "acceptance",
+   "traducciones": {
+    "es": "Suena bien.",
+    "de": "Das klingt gut.",
+    "fr": "Ça a l’air bien.",
+    "it": "Sembra una buona idea.",
+    "pt": "Parece bem."
+   }
+  },
+  {
+   "expresion": "…instead?",
+   "funcion": "proposing an alternative",
+   "traducciones": {
+    "es": "…en cambio?",
+    "de": "…stattdessen?",
+    "fr": "…à la place ?",
+    "it": "…invece?",
+    "pt": "…em vez disso?"
+   }
+  },
+  {
+   "expresion": "Would you be up for…?",
+   "funcion": "suggestion, informal",
+   "traducciones": {
+    "es": "¿Te copás con…?",
+    "de": "Hättest du Lust auf…?",
+    "fr": "Ça te dirait… ?",
+    "it": "Ti andrebbe di…?",
+    "pt": "Alinhas em…?"
+   }
+  },
+  {
+   "expresion": "Let's do that, then.",
+   "funcion": "confirming a suggestion",
+   "traducciones": {
+    "es": "Hagamos eso, entonces.",
+    "de": "Dann machen wir das so.",
+    "fr": "Alors, faisons comme ça.",
+    "it": "Allora facciamo così.",
+    "pt": "Então, façamos assim."
+   }
+  },
+  {
+   "expresion": "Shall we …, or would you rather…?",
+   "funcion": "puts two suggestions side by side",
+   "traducciones": {
+    "es": "¿Hacemos … o preferís…?",
+    "de": "Sollen wir …, oder lieber…?",
+    "fr": "On fait … ou tu préfères… ?",
+    "it": "Facciamo … o preferisci…?",
+    "pt": "Fazemos … ou preferes…?"
+   }
+  },
+  {
+   "expresion": "I'd rather we…",
+   "funcion": "states one's own preference politely",
+   "traducciones": {
+    "es": "Yo preferiría que…",
+    "de": "Mir wäre lieber, wenn…",
+    "fr": "Je préférerais que…",
+    "it": "Preferirei che…",
+    "pt": "Eu preferia que…"
+   }
+  },
+  {
+   "expresion": "Does that work for you?",
+   "funcion": "checks the other person agrees",
+   "traducciones": {
+    "es": "¿Te viene bien?",
+    "de": "Passt dir das?",
+    "fr": "Cela te convient ?",
+    "it": "Ti va bene?",
+    "pt": "Fica-te bem?"
+   }
+  },
+  {
+   "expresion": "That's a bit much for me, to be honest.",
+   "funcion": "declines a suggestion with a reason",
+   "traducciones": {
+    "es": "Para mí es un poco demasiado, la verdad.",
+    "de": "Das ist mir ehrlich gesagt etwas zu viel.",
+    "fr": "C'est un peu trop pour moi, honnêtement.",
+    "it": "È un po' troppo per me, sinceramente.",
+    "pt": "Para mim é um pouco demais, sinceramente."
+   }
+  },
+  {
+   "expresion": "Can we come back to it next week?",
+   "funcion": "postpones the decision",
+   "traducciones": {
+    "es": "¿Lo retomamos la semana que viene?",
+    "de": "Können wir nächste Woche darauf zurückkommen?",
+    "fr": "Pouvons-nous y revenir la semaine prochaine ?",
+    "it": "Possiamo riprenderlo la settimana prossima?",
+    "pt": "Podemos voltar a isso para a semana?"
+   }
+  },
+  {
+   "expresion": "Right, that's settled then.",
+   "funcion": "records the agreement",
+   "traducciones": {
+    "es": "Bien, entonces queda así.",
+    "de": "Gut, dann bleiben wir dabei.",
+    "fr": "Bien, c'est réglé alors.",
+    "it": "Bene, allora è deciso.",
+    "pt": "Certo, então fica assim."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Suggest to your family how to manage screen time and software updates.",
+  "requisitos": [
+   "three suggestions with different forms from last time",
+   "one *Would you be up for…?*",
+   "an agreement at the end",
+   "use *screen time*, *software update* and *data protection*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Three suggestions about *screen time*."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Reply to one suggestion with an alternative."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: how could we use *artificial intelligence* at home?"
+  }
+ ],
+ "autochequeo": [
+  "Is the suggestion made with could, not can?",
+  "Have I responded to a suggestion with acceptance or an alternative?",
+  "Does the suggestion sound polite, not like an instruction?",
+  "Have I proposed at least one alternative, not just accepted or rejected?",
+  "Does the tone sound friendly rather than demanding?"
+ ],
+ "promptCorreccion": "Focus only on suggestions and responses to them. Check whether could is used correctly and whether a fitting response was given. Do not rewrite the text."
+}

@@ -1,0 +1,394 @@
+{
+ "id": "EN-K02-C1-2027-1",
+ "skillId": "EN-K02",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T07",
+ "titulo": "Reduced Relatives, Participle Clauses and Nominalisation",
+ "subtitulo": "Dense writing about the housing market",
+ "ancla": "EGP B2",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "The density that separates C1 writing from B2 writing comes from three devices working together: dropping the relative pronoun, compressing a clause into a participle, and turning a verb into a noun. Used separately, each one saves a few words. Used together in the same paragraph, they produce the compact, confident register of a strong report.",
+ "cuadroReferencia": {
+  "titulo": "Three ways to compress",
+  "columnas": [
+   "Device",
+   "Full form",
+   "Compressed"
+  ],
+  "filas": [
+   [
+    "Reduced relative",
+    "the report which was published",
+    "the report published"
+   ],
+   [
+    "Participle clause",
+    "because it had been delayed",
+    "having been delayed"
+   ],
+   [
+    "Nominalisation",
+    "because the team decided quickly",
+    "the team's quick decision"
+   ]
+  ],
+  "notaPie": "Combining all three in one sentence is normal in a report; combining them in speech reads as stiff. Match the density to the register."
+ },
+ "ejemplos": [
+  {
+   "texto": "Having been delayed twice, the report published last week drew immediate criticism.",
+   "audio": true
+  },
+  {
+   "texto": "The team's quick decision, taken under pressure, avoided a bigger loss.",
+   "audio": true
+  },
+  {
+   "texto": "Data collected over three years, though incomplete, still points the same way."
+  }
+ ],
+ "notas": [
+  "A reduced relative only works when the missing pronoun would have been the subject; the report I read cannot become the report read by me here.",
+  "Nominalising every verb in a paragraph makes it unreadable; alternate nominal and verbal sentences.",
+  "A dangling participle is the most common failure of this combination: the participle's implied subject must match the main clause's subject."
+ ],
+ "contraste": {
+  "es": "Spanish tolerates an implicit, ambiguous subject in gerund constructions much better (estando en Madrid, me llamaron), while English requires the subject of the participle to match that of the main clause. Spanish speakers produce dangling participles precisely because the construction is acceptable in Spanish.",
+  "de": "German nominalises readily, so the nominalisation part of this cluster is easy for German speakers. The difference lies in the reduced relative, which English places after the noun where German uses a prenominal participle phrase, and in keeping participle clauses tied to the subject of the main clause.",
+  "it": "Postnominal participles are native to Italian, and bureaucratic Italian nominalises heavily, so two of the three devices come easily. The risk is the dangling participle or gerund, which colloquial Italian tolerates much more than written English.",
+  "fr": "Formal French nominalises readily and uses postnominal participles, and French speakers know the same-subject rule for the gérondif. This cluster is therefore relatively easy for them; the main risk is over-compressing texts in genres where English prefers a verbal style.",
+  "pt": "Postnominal participles are native to Portuguese, but the personal infinitive lets Portuguese stay verbal where English nominalises. Portuguese speakers therefore tend to under-nominalise and, especially in Brazilian usage, to produce dangling gerund clauses."
+ },
+ "errores": [
+  "Producing a dangling participle where the implied subject doesn't match the main clause.",
+  "Reducing a relative clause where the missing pronoun would be the object, which isn't grammatically allowed.",
+  "Nominalising every sentence in a row until the paragraph becomes unreadable."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*realización* rendered as *realisation*: *the realisation of the study* instead of *carrying out the study*."
+  ],
+  "de": [
+   "Building *of*-chains from German genitive chains: *the checking of the calculation of the loads* instead of *checking the load calculation*."
+  ],
+  "it": [
+   "*effettuare* rendered as *effectuate*: *to effectuate a check* instead of *to carry out a check*."
+  ],
+  "fr": [
+   "*réalisation* rendered as *realisation*: *the realisation of the project* instead of *completing the project*."
+  ],
+  "pt": [
+   "*realização* rendered as *realisation*: *the realisation of the study* instead of *carrying out the study*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a letting agent",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el agente de alquileres",
+    "de": "der Vermietungsmakler",
+    "fr": "l'agent immobilier de location",
+    "it": "l'agente immobiliare per affitti",
+    "pt": "o agente de arrendamento"
+   }
+  },
+  {
+   "item": "a rental deposit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la fianza del alquiler",
+    "de": "die Mietkaution",
+    "fr": "le dépôt de garantie",
+    "it": "la caparra",
+    "pt": "o depósito de caução"
+   }
+  },
+  {
+   "item": "a tenancy agreement",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el contrato de arrendamiento",
+    "de": "der Mietvertrag",
+    "fr": "le bail",
+    "it": "il contratto di locazione",
+    "pt": "o contrato de arrendamento"
+   }
+  },
+  {
+   "item": "a viewing",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la visita al inmueble",
+    "de": "die Wohnungsbesichtigung",
+    "fr": "la visite du logement",
+    "it": "la visita all'immobile",
+    "pt": "a visita ao imóvel"
+   }
+  },
+  {
+   "item": "the housing market",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el mercado inmobiliario",
+    "de": "der Immobilienmarkt",
+    "fr": "le marché du logement",
+    "it": "il mercato immobiliare",
+    "pt": "o mercado da habitação"
+   }
+  },
+  {
+   "item": "to be priced out",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "quedar fuera por los precios",
+    "de": "sich die Preise nicht mehr leisten können",
+    "fr": "être exclu par les prix",
+    "it": "essere escluso dai prezzi",
+    "pt": "ser excluído pelos preços"
+   }
+  },
+  {
+   "item": "utility costs",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gastos comunes",
+    "de": "die Nebenkosten",
+    "fr": "les charges",
+    "it": "le spese condominiali",
+    "pt": "as despesas de condomínio"
+   }
+  },
+  {
+   "item": "a bidding war",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la puja al alza",
+    "de": "das Bieterrennen",
+    "fr": "la surenchère",
+    "it": "la guerra di offerte",
+    "pt": "a guerra de licitações"
+   }
+  },
+  {
+   "item": "a first-time buyer",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el comprador de primera vivienda",
+    "de": "der Ersterwerber",
+    "fr": "le primo-accédant",
+    "it": "chi compra la prima casa",
+    "pt": "o comprador de primeira habitação"
+   }
+  },
+  {
+   "item": "a housing association",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la entidad gestora de vivienda social",
+    "de": "die Wohnungsbaugesellschaft",
+    "fr": "le bailleur social",
+    "it": "l'ente per l'edilizia sociale",
+    "pt": "a associação de habitação"
+   }
+  },
+  {
+   "item": "social housing",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la vivienda social",
+    "de": "der soziale Wohnungsbau",
+    "fr": "le logement social",
+    "it": "l'edilizia sociale",
+    "pt": "a habitação social"
+   }
+  },
+  {
+   "item": "the landlord",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el arrendador",
+    "de": "der Vermieter",
+    "fr": "le propriétaire",
+    "it": "il locatore",
+    "pt": "o locador"
+   }
+  },
+  {
+   "item": "to give notice",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "avisar de que te vas",
+    "de": "kündigen",
+    "fr": "donner son préavis",
+    "it": "dare disdetta",
+    "pt": "dar aviso prévio"
+   }
+  },
+  {
+   "item": "to rent privately",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "alquilar en el mercado libre",
+    "de": "privat mieten",
+    "fr": "louer dans le privé",
+    "it": "affittare sul mercato privato",
+    "pt": "arrendar no mercado privado"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "published last month",
+   "funcion": "reduced passive relative",
+   "traducciones": {
+    "es": "publicado el mes pasado",
+    "de": "letzten Monat veröffentlicht",
+    "fr": "publié le mois dernier",
+    "it": "pubblicato il mese scorso",
+    "pt": "publicado no mês passado"
+   }
+  },
+  {
+   "expresion": "having been…",
+   "funcion": "perfect passive participle",
+   "traducciones": {
+    "es": "habiendo sido…",
+    "de": "nachdem … worden war / nachdem man …",
+    "fr": "ayant été…",
+    "it": "essendo stato…",
+    "pt": "tendo sido…"
+   }
+  },
+  {
+   "expresion": "the team's decision to…",
+   "funcion": "nominalisation of a verb",
+   "traducciones": {
+    "es": "la decisión del equipo de…",
+    "de": "die Entscheidung des Teams,…",
+    "fr": "la décision de l’équipe de…",
+    "it": "la decisione del team di…",
+    "pt": "a decisão da equipa de…"
+   }
+  },
+  {
+   "expresion": "given the circumstances",
+   "funcion": "fixed participial phrase",
+   "traducciones": {
+    "es": "dadas las circunstancias",
+    "de": "angesichts der Umstände",
+    "fr": "compte tenu des circonstances",
+    "it": "date le circostanze",
+    "pt": "dadas as circunstâncias"
+   }
+  },
+  {
+   "expresion": "weighed against…",
+   "funcion": "participial contrast",
+   "traducciones": {
+    "es": "frente a…",
+    "de": "abgewogen gegen…",
+    "fr": "mis en balance avec…",
+    "it": "messo a confronto con…",
+    "pt": "ponderado face a…"
+   }
+  },
+  {
+   "expresion": "the data available",
+   "funcion": "postposed adjective, compact",
+   "traducciones": {
+    "es": "los datos disponibles",
+    "de": "die verfügbaren Daten",
+    "fr": "les données disponibles",
+    "it": "i dati disponibili",
+    "pt": "os dados disponíveis"
+   }
+  },
+  {
+   "expresion": "Spelled out, that means…",
+   "funcion": "unpacks the compression for the listener",
+   "traducciones": {
+    "es": "Desplegado, eso significa…",
+    "de": "Ausformuliert heisst das…",
+    "fr": "Déplié, cela signifie…",
+    "it": "Per esteso significa…",
+    "pt": "Desdobrado, isso significa…"
+   }
+  },
+  {
+   "expresion": "That sentence is carrying too much.",
+   "funcion": "names the limit of compression",
+   "traducciones": {
+    "es": "Esa frase está cargando demasiado.",
+    "de": "Dieser Satz trägt zu viel.",
+    "fr": "Cette phrase porte trop.",
+    "it": "Quella frase porta troppo peso.",
+    "pt": "Essa frase está a carregar demasiado."
+   }
+  },
+  {
+   "expresion": "In speech I'd break that in two.",
+   "funcion": "links compression to the medium",
+   "traducciones": {
+    "es": "Hablando, eso lo partiría en dos.",
+    "de": "Gesprochen würde ich das in zwei Sätze teilen.",
+    "fr": "À l'oral, je couperais cela en deux.",
+    "it": "A voce lo spezzerei in due.",
+    "pt": "A falar, partiria isso em dois."
+   }
+  },
+  {
+   "expresion": "the decision, taken last month, to…",
+   "funcion": "nominalisation with an embedded participle",
+   "traducciones": {
+    "es": "la decisión, tomada el mes pasado, de…",
+    "de": "die im letzten Monat getroffene Entscheidung, … zu…",
+    "fr": "la décision, prise le mois dernier, de…",
+    "it": "la decisione, presa il mese scorso, di…",
+    "pt": "a decisão, tomada no mês passado, de…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write a paragraph for a report on the housing situation in a city you know.",
+  "requisitos": [
+   "two reduced relatives",
+   "one participle clause",
+   "two nominalisations replacing a full clause (*the landlord's decision to…*)",
+   "use *the housing market*, *a tenancy agreement* and *utility costs*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Take three full sentences about renting and compress them into one."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Turn five verbs about *a viewing* into nouns and use each in a phrase."
+  },
+  {
+   "dia": "vie",
+   "minutos": 10,
+   "texto": "Rewrite a paragraph you wrote at B2 level about being *priced out* with all three devices."
+  }
+ ],
+ "autochequeo": [
+  "Is the reduced pronoun always the subject, never the object, of its clause?",
+  "Does every participle's implied subject match the main clause's subject?",
+  "Is the paragraph a mix of nominal and verbal sentences, not all one or the other?",
+  "Would the density fit a spoken conversation, or does it belong only in writing?",
+  "Is at least one dangling participle risk checked and fixed?"
+ ],
+ "promptCorreccion": "Focus only on reduced relatives, participle clauses and nominalisation. Flag every dangling participle, check whether reductions are grammatically allowed, and say whether the density fits the register. Do not rewrite the text."
+}

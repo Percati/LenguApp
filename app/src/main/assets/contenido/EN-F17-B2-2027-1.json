@@ -1,0 +1,393 @@
+{
+ "id": "EN-F17-B2-2027-1",
+ "skillId": "EN-F17",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "fluency",
+ "topicId": "T03",
+ "titulo": "Register Shifting: Formal vs. Informal",
+ "subtitulo": "Same news, two registers",
+ "ancla": "CV Sociolinguistic appropriateness",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "At B2 the goal is to recognise and produce two clear registers — informal (contractions, phrasal verbs) and formal (no contractions, more Latinate vocabulary) — without mixing them in the same message. The finer six-axis control and full rewriting across three registers (C1) isn't the target yet.",
+ "cuadroReferencia": {
+  "titulo": "Two registers, side by side",
+  "columnas": [
+   "Feature",
+   "Informal",
+   "Formal"
+  ],
+  "filas": [
+   [
+    "Contractions",
+    "don't, it's, we're",
+    "do not, it is, we are"
+   ],
+   [
+    "Vocabulary",
+    "find out, put off",
+    "discover, postpone"
+   ],
+   [
+    "Person",
+    "I think…",
+    "It is thought that…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Can't make it tonight, sorry!",
+   "audio": true
+  },
+  {
+   "texto": "I regret that I am unable to attend this evening.",
+   "audio": true
+  },
+  {
+   "texto": "We'll sort it out tomorrow."
+  }
+ ],
+ "notas": [
+  "Contractions are the fastest signal of informal register — removing them alone shifts a sentence towards formal.",
+  "Phrasal verbs (find out, sort out) are informal; their Latinate equivalents (discover, resolve) are formal.",
+  "Mixing registers within the same message — a contraction next to a very formal word — is the most common register error at this level."
+ ],
+ "contraste": {
+  "es": "Spanish marks formality mainly through tú/usted and verb forms, which English lacks. English carries register through vocabulary and contractions, so Spanish speakers who are polite with usted may still mix registers in English.",
+  "de": "German marks formality with Sie, which English lacks. English carries register through vocabulary, contractions and forms like Could you…? versus Can you…?, so these need conscious attention.",
+  "it": "Italian marks formality with Lei, which English lacks. English carries register through vocabulary, contractions and forms like Could you…? versus Can you…?.",
+  "fr": "French marks formality with vous, which English lacks. English carries register through vocabulary, contractions and forms like Could you…? versus Can you…?.",
+  "pt": "Portuguese marks formality with você or o senhor, which English lacks. English carries register through vocabulary, contractions and forms like Could you…? versus Can you…?."
+ },
+ "errores": [
+  "Mixing a contraction with a very formal word in the same sentence.",
+  "Using a phrasal verb in a formal email where its Latinate equivalent would fit better.",
+  "Assuming formal English is just longer or harder, rather than a different set of choices."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Estimado señor* rendered as *Esteemed Sir* instead of *Dear Mr …*."
+  ],
+  "de": [
+   "*Sehr geehrte Damen und Herren* rendered as *Very honoured ladies and gentlemen* instead of *Dear Sir or Madam*."
+  ],
+  "it": [
+   "*Gentile Signor Rossi* rendered as *Gentle Mr Rossi* instead of *Dear Mr Rossi*."
+  ],
+  "fr": [
+   "The long closing *Veuillez agréer…* carried over instead of a simple *Yours sincerely* or *Kind regards*."
+  ],
+  "pt": [
+   "*Exmo. Senhor* rendered as *Excellent Sir* instead of *Dear Sir*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "artificial intelligence",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la inteligencia artificial",
+    "de": "künstliche Intelligenz",
+    "fr": "l’intelligence artificielle",
+    "it": "l’intelligenza artificiale",
+    "pt": "a inteligência artificial"
+   }
+  },
+  {
+   "item": "data protection",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la protección de datos",
+    "de": "Datenschutz",
+    "fr": "la protection des données",
+    "it": "la protezione dei dati",
+    "pt": "a proteção de dados"
+   }
+  },
+  {
+   "item": "to upload / download",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "subir / descargar",
+    "de": "hochladen / herunterladen",
+    "fr": "télécharger (vers le haut/bas)",
+    "it": "caricare / scaricare",
+    "pt": "fazer upload / download"
+   }
+  },
+  {
+   "item": "algorithm",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el algoritmo",
+    "de": "der Algorithmus",
+    "fr": "l’algorithme",
+    "it": "l’algoritmo",
+    "pt": "o algoritmo"
+   }
+  },
+  {
+   "item": "data leak",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la filtración de datos",
+    "de": "das Datenleck",
+    "fr": "la fuite de données",
+    "it": "la fuga di dati",
+    "pt": "a fuga de dados"
+   }
+  },
+  {
+   "item": "two-step verification",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la verificación en dos pasos",
+    "de": "die Zwei-Faktor-Authentifizierung",
+    "fr": "la vérification en deux étapes",
+    "it": "la verifica in due passaggi",
+    "pt": "a verificação em dois passos"
+   }
+  },
+  {
+   "item": "biased",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sesgado",
+    "de": "voreingenommen / einseitig",
+    "fr": "partial / biaisé",
+    "it": "fazioso / parziale",
+    "pt": "tendencioso"
+   }
+  },
+  {
+   "item": "human-like",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "humanoide",
+    "de": "menschenähnlich",
+    "fr": "semblable à l’humain",
+    "it": "simile a un essere umano",
+    "pt": "semelhante ao ser humano"
+   }
+  },
+  {
+   "item": "cloud storage",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el almacenamiento en la nube",
+    "de": "Cloud-Speicher",
+    "fr": "le stockage dans le cloud",
+    "it": "l’archiviazione cloud",
+    "pt": "o armazenamento na nuvem"
+   }
+  },
+  {
+   "item": "default setting",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la configuración por defecto",
+    "de": "die Standardeinstellung",
+    "fr": "le réglage par défaut",
+    "it": "l’impostazione predefinita",
+    "pt": "a configuração predefinida"
+   }
+  },
+  {
+   "item": "to question something",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "poner en duda algo",
+    "de": "etwas infrage stellen",
+    "fr": "remettre quelque chose en question",
+    "it": "mettere in discussione qualcosa",
+    "pt": "questionar algo"
+   }
+  },
+  {
+   "item": "software update",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la actualización de software",
+    "de": "das Software-Update",
+    "fr": "la mise à jour logicielle",
+    "it": "l’aggiornamento software",
+    "pt": "a atualização de software"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Can't make it — sorry!",
+   "funcion": "informal, casual",
+   "traducciones": {
+    "es": "No puedo ir, ¡perdón!",
+    "de": "Ich schaffe es nicht — sorry!",
+    "fr": "Je ne peux pas venir — désolé(e) !",
+    "it": "Non riesco a venire — scusa!",
+    "pt": "Não consigo ir — desculpa!"
+   }
+  },
+  {
+   "expresion": "I regret that I am unable to…",
+   "funcion": "formal equivalent",
+   "traducciones": {
+    "es": "Lamento no poder…",
+    "de": "Ich bedaure, dass ich nicht… kann.",
+    "fr": "Je regrette de ne pas pouvoir…",
+    "it": "Mi dispiace di non poter…",
+    "pt": "Lamento não poder…"
+   }
+  },
+  {
+   "expresion": "We'll sort it out.",
+   "funcion": "informal, phrasal verb",
+   "traducciones": {
+    "es": "Lo vamos a resolver.",
+    "de": "Wir klären das.",
+    "fr": "On va régler ça.",
+    "it": "Lo risolveremo.",
+    "pt": "Vamos resolver isso."
+   }
+  },
+  {
+   "expresion": "We will resolve this matter.",
+   "funcion": "formal equivalent",
+   "traducciones": {
+    "es": "Resolveremos este asunto.",
+    "de": "Wir werden diese Angelegenheit klären.",
+    "fr": "Nous réglerons cette affaire.",
+    "it": "Risolveremo la questione.",
+    "pt": "Resolveremos esta questão."
+   }
+  },
+  {
+   "expresion": "Let me know if…",
+   "funcion": "informal closing",
+   "traducciones": {
+    "es": "Avisame si…",
+    "de": "Sag mir Bescheid, wenn…",
+    "fr": "Dis-moi si…",
+    "it": "Fammi sapere se…",
+    "pt": "Diz-me se…"
+   }
+  },
+  {
+   "expresion": "Please do not hesitate to contact me.",
+   "funcion": "formal closing",
+   "traducciones": {
+    "es": "No dude en contactarme.",
+    "de": "Bitte zögern Sie nicht, mich zu kontaktieren.",
+    "fr": "N’hésitez pas à me contacter.",
+    "it": "Non esiti a contattarmi.",
+    "pt": "Não hesite em contactar-me."
+   }
+  },
+  {
+   "expresion": "Thanks for getting back to me.",
+   "funcion": "informal opening in a reply",
+   "traducciones": {
+    "es": "Gracias por responderme.",
+    "de": "Danke für deine Rückmeldung.",
+    "fr": "Merci de ta réponse.",
+    "it": "Grazie per la risposta.",
+    "pt": "Obrigado pela resposta."
+   }
+  },
+  {
+   "expresion": "Thank you for your prompt reply.",
+   "funcion": "formal equivalent of the same opening",
+   "traducciones": {
+    "es": "Gracias por su pronta respuesta.",
+    "de": "Vielen Dank für Ihre rasche Antwort.",
+    "fr": "Je vous remercie de votre réponse rapide.",
+    "it": "La ringrazio per la sollecita risposta.",
+    "pt": "Agradeço a sua pronta resposta."
+   }
+  },
+  {
+   "expresion": "Just a quick one:",
+   "funcion": "informal opening for a short message",
+   "traducciones": {
+    "es": "Una cosa rápida:",
+    "de": "Nur ganz kurz:",
+    "fr": "Juste un mot rapide :",
+    "it": "Solo una cosa veloce:",
+    "pt": "Só uma coisa rápida:"
+   }
+  },
+  {
+   "expresion": "I am writing with regard to…",
+   "funcion": "formal opening naming the matter",
+   "traducciones": {
+    "es": "Le escribo en relación con…",
+    "de": "Ich schreibe Ihnen bezüglich…",
+    "fr": "Je vous écris au sujet de…",
+    "it": "Le scrivo in merito a…",
+    "pt": "Escrevo-lhe a respeito de…"
+   }
+  },
+  {
+   "expresion": "Sorry for the slow reply!",
+   "funcion": "informal apology in writing",
+   "traducciones": {
+    "es": "¡Perdón por tardar en contestar!",
+    "de": "Sorry für die späte Antwort!",
+    "fr": "Désolé pour la réponse tardive !",
+    "it": "Scusa il ritardo nella risposta!",
+    "pt": "Desculpa a demora na resposta!"
+   }
+  },
+  {
+   "expresion": "Please accept my apologies for the delay.",
+   "funcion": "formal equivalent of the same apology",
+   "traducciones": {
+    "es": "Le ruego que disculpe la demora.",
+    "de": "Bitte entschuldigen Sie die Verzögerung.",
+    "fr": "Veuillez accepter mes excuses pour ce retard.",
+    "it": "La prego di accettare le mie scuse per il ritardo.",
+    "pt": "Peço desculpa pelo atraso."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Tell a friend and your IT department about the same data problem with a work app.",
+  "requisitos": [
+   "one informal message with contractions and phrasal verbs",
+   "one formal email with none",
+   "the same facts in both",
+   "use *data protection*, *algorithm* and *to upload*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write *Can't make it — sorry!* in formal register."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Rewrite a short formal email you received as a text to a friend."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds explaining *artificial intelligence* to a friend, then 30 seconds formally."
+  }
+ ],
+ "autochequeo": [
+  "Are contractions used consistently, either all present or all absent?",
+  "Are phrasal verbs replaced with formal equivalents in the formal version?",
+  "Is the register consistent throughout, without mixing?",
+  "Would the intended reader find the register appropriate?",
+  "Have I written the same content in both registers to compare?"
+ ],
+ "promptCorreccion": "Focus only on register. Check for mixed formal and informal features in the same message, especially contractions next to formal vocabulary. Do not rewrite the text."
+}

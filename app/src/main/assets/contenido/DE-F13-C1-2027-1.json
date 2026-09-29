@@ -1,0 +1,411 @@
+{
+ "id": "DE-F13-C1-2027-1",
+ "skillId": "DE-F13",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T13",
+ "titulo": "Register: du/Sie, formell/informell",
+ "subtitulo": "Eine Aussage, drei Register — am Amt",
+ "ancla": "PD B2",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Auf C1 geht Register über du/Sie hinaus: dieselbe Aussage klingt je nach Wortwahl, Satzbau und Nominalstil unterschiedlich formell, unabhängig von der Anrede. Das Ziel ist, denselben Inhalt bewusst in zwei oder drei Registern formulieren zu können.",
+ "cuadroReferencia": {
+  "titulo": "Derselbe Inhalt, drei Register",
+  "columnas": [
+   "Register",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Informell",
+    "Das klappt bei mir nicht, tut mir leid."
+   ],
+   [
+    "Neutral",
+    "Das lässt sich bei mir leider nicht einrichten."
+   ],
+   [
+    "Formell",
+    "Eine Teilnahme ist meinerseits leider nicht möglich."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das lässt sich bei mir leider nicht einrichten.",
+   "audio": true
+  },
+  {
+   "texto": "Eine Teilnahme ist meinerseits aus terminlichen Gründen leider nicht möglich.",
+   "audio": true
+  },
+  {
+   "texto": "Das klappt bei mir echt nicht, sorry."
+  }
+ ],
+ "notas": [
+  "Register hängt nicht nur von du/Sie ab, sondern auch von Nominalstil, Wortwahl und Satzlänge.",
+  "Meinerseits und aus terminlichen Gründen sind typische Marker für ein sehr formelles Register.",
+  "Denselben Inhalt in mehreren Registern zu formulieren, ist eine eigenständige C1-Kompetenz, kein Nebenprodukt der Anredewahl."
+ ],
+ "contraste": {
+  "es": "Tú und usted entsprechen du und Sie; usted steht allerdings mit der 3. Person Singular (usted es), Sie mit der Pluralform (Sie sind). Register über Wortwahl und Satzbau kennt auch das Spanische, sodass die bewusste Verschiebung zwischen Alltags- und Amtssprache vertraut ist.",
+  "it": "Tu und Lei entsprechen du und Sie, und wie Sie wird Lei in formellen Texten gross geschrieben. Die Wahl der Anrede überträgt sich also gut; wie im Deutschen markiert auch das Italienische Register über Wortwahl, sodass die bewusste Verschiebung zwischen Alltags- und Amtssprache nicht fremd ist.",
+  "fr": "Tu und vous entsprechen du und Sie, und vous ist wie Sie zugleich Höflichkeitsform und Plural. Da die französische Schule Register ausdrücklich in drei Stufen unterscheidet (soutenu, courant, familier), ist auch die Verschiebung über Wortwahl und Satzbau vertraut.",
+  "pt": "Die portugiesische Anrede passt nicht eins zu eins: Im europäischen Portugiesisch gibt es tu, você und o senhor/a senhora, und você kann dort distanziert oder sogar unhöflich wirken; im Brasilianischen ist você die neutrale Alltagsform. Portugiesischsprachige müssen deshalb bewusst entscheiden, ob ihr Gegenüber du oder Sie entspricht, statt von você auszugehen.",
+  "en": "Das Englische kennt keine Unterscheidung zwischen du und Sie, die Anrede ist deshalb neu und im Zweifel sollte Sie gewählt werden. Register über Wortwahl kennen Englischsprachige dagegen gut (Latinate gegen germanischen Wortschatz), was der deutschen Verschiebung zwischen Alltags- und Amtssprache entspricht."
+ },
+ "errores": [
+  "Die Anrede anpassen, aber die restliche Wortwahl im selben Register belassen.",
+  "In einem formellen Text informelle Wörter oder Wendungen verwenden.",
+  "Ein sehr formelles Register in einem lockeren Kontext verwenden, was distanziert wirkt."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Saludos cordiales* als *Herzliche Grüsse* in einer formellen Mail übertragen, was zu warm wirkt, statt *Freundliche Grüsse*."
+  ],
+  "it": [
+   "*Ciao* als *Tschau* in einer beruflichen Mail an Unbekannte übertragen."
+  ],
+  "fr": [
+   "*Bien à vous* als *Gut zu Ihnen* übertragen statt *Freundliche Grüsse*."
+  ],
+  "pt": [
+   "*Atenciosamente* als *Aufmerksam* übertragen statt *Freundliche Grüsse*."
+  ],
+  "en": [
+   "*Kind regards* als *Nette Grüsse* übertragen statt *Freundliche Grüsse*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der Behördendschungel",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la maraña burocrática",
+    "en": "red tape jungle",
+    "fr": "le maquis administratif",
+    "it": "la giungla burocratica",
+    "pt": "o labirinto burocrático"
+   }
+  },
+  {
+   "item": "die Behörde",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la administración pública",
+    "en": "public authority",
+    "fr": "l'administration",
+    "it": "l'ente pubblico",
+    "pt": "a repartição pública"
+   }
+  },
+  {
+   "item": "die Bürgernähe",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cercanía al ciudadano",
+    "en": "citizen-friendliness",
+    "fr": "la proximité avec les citoyens",
+    "it": "la vicinanza al cittadino",
+    "pt": "a proximidade ao cidadão"
+   }
+  },
+  {
+   "item": "die Digitalisierung der Verwaltung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la digitalización administrativa",
+    "en": "digitalisation of public services",
+    "fr": "la numérisation de l'administration",
+    "it": "la digitalizzazione amministrativa",
+    "pt": "a digitalização administrativa"
+   }
+  },
+  {
+   "item": "die Verwaltung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la administración",
+    "en": "administration",
+    "fr": "l'administration",
+    "it": "l'amministrazione",
+    "pt": "a administração"
+   }
+  },
+  {
+   "item": "einer Sache nachgehen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "hacer el seguimiento de algo",
+    "en": "to follow something up",
+    "fr": "donner suite à qc",
+    "it": "dare seguito a qc",
+    "pt": "dar seguimento a algo"
+   }
+  },
+  {
+   "item": "anspruchsberechtigt sein",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tener derecho a una prestación",
+    "en": "to be eligible",
+    "fr": "avoir droit à une prestation",
+    "it": "avere diritto alla prestazione",
+    "pt": "ter direito à prestação"
+   }
+  },
+  {
+   "item": "der Bescheid",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la resolución administrativa",
+    "en": "official decision",
+    "fr": "la notification",
+    "it": "il provvedimento",
+    "pt": "a notificação"
+   }
+  },
+  {
+   "item": "der Datenschutz bei Behörden",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la protección de datos en la administración",
+    "en": "data protection in public bodies",
+    "fr": "la protection des données administratives",
+    "it": "la protezione dei dati amministrativi",
+    "pt": "a proteção de dados na administração"
+   }
+  },
+  {
+   "item": "der Verwaltungsakt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el acto administrativo",
+    "en": "administrative act",
+    "fr": "l'acte administratif",
+    "it": "l'atto amministrativo",
+    "pt": "o ato administrativo"
+   }
+  },
+  {
+   "item": "die Amtshilfe",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la asistencia entre organismos",
+    "en": "mutual administrative assistance",
+    "fr": "l'entraide administrative",
+    "it": "l'assistenza amministrativa",
+    "pt": "a cooperação administrativa"
+   }
+  },
+  {
+   "item": "die Auskunftspflicht",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la obligación de informar",
+    "en": "duty to provide information",
+    "fr": "l'obligation d'information",
+    "it": "l'obbligo di informazione",
+    "pt": "o dever de informação"
+   }
+  },
+  {
+   "item": "die Bescheinigung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el certificado",
+    "en": "certificate",
+    "fr": "l'attestation",
+    "it": "il certificato",
+    "pt": "a certidão"
+   }
+  },
+  {
+   "item": "die Fristen einhalten",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "cumplir los plazos",
+    "en": "to meet deadlines",
+    "fr": "respecter les délais",
+    "it": "rispettare le scadenze",
+    "pt": "cumprir os prazos"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das lässt sich leider nicht einrichten.",
+   "funcion": "neutrale Absage",
+   "traducciones": {
+    "es": "Lamentablemente no se puede organizar.",
+    "en": "Unfortunately, that can't be arranged.",
+    "fr": "Malheureusement, cela ne peut pas s’organiser.",
+    "it": "Purtroppo non si può organizzare.",
+    "pt": "Infelizmente, isso não pode ser organizado."
+   }
+  },
+  {
+   "expresion": "Eine Teilnahme ist meinerseits nicht möglich.",
+   "funcion": "formelle Absage",
+   "traducciones": {
+    "es": "Mi participación no es posible.",
+    "en": "Participation on my part is not possible.",
+    "fr": "Il ne m’est pas possible de participer.",
+    "it": "Da parte mia non è possibile partecipare.",
+    "pt": "Da minha parte, não me é possível participar."
+   }
+  },
+  {
+   "expresion": "Das klappt bei mir nicht.",
+   "funcion": "informelle Absage",
+   "traducciones": {
+    "es": "A mí no me sale.",
+    "en": "That doesn't work for me.",
+    "fr": "Ça ne marche pas pour moi.",
+    "it": "Per me non funziona.",
+    "pt": "Para mim, isso não funciona."
+   }
+  },
+  {
+   "expresion": "Aus terminlichen Gründen…",
+   "funcion": "formelle Begründung",
+   "traducciones": {
+    "es": "Por razones de agenda…",
+    "en": "Due to scheduling reasons…",
+    "fr": "Pour des raisons d’agenda…",
+    "it": "Per motivi di agenda…",
+    "pt": "Por motivos de agenda…"
+   }
+  },
+  {
+   "expresion": "Ich schaff das leider nicht.",
+   "funcion": "informelle Begründung",
+   "traducciones": {
+    "es": "No llego, la verdad.",
+    "en": "I just can't make it, unfortunately.",
+    "fr": "Malheureusement, je n’y arrive pas.",
+    "it": "Purtroppo non ce la faccio.",
+    "pt": "Infelizmente, não consigo."
+   }
+  },
+  {
+   "expresion": "Wir würden uns freuen, Sie bei anderer Gelegenheit begrüssen zu dürfen.",
+   "funcion": "sehr formeller Abschluss",
+   "traducciones": {
+    "es": "Nos alegraría recibirle en otra ocasión.",
+    "en": "We would be pleased to welcome you on another occasion.",
+    "fr": "Nous serions heureux de vous accueillir à une autre occasion.",
+    "it": "Saremmo lieti di accoglierla in un’altra occasione.",
+    "pt": "Teríamos muito gosto em recebê-lo/a noutra ocasião."
+   }
+  },
+  {
+   "expresion": "Ich formuliere das einmal, wie es im Protokoll stünde: …",
+   "funcion": "Registerwechsel ankündigen",
+   "traducciones": {
+    "es": "Lo formulo como quedaría en el acta: …",
+    "en": "Let me put it as it would read in the minutes: …",
+    "fr": "Je le formule comme cela figurerait au procès-verbal : …",
+    "it": "Lo formulo come apparirebbe a verbale: …",
+    "pt": "Formulo-o como constaria na ata: …"
+   }
+  },
+  {
+   "expresion": "Und jetzt ohne Behördendeutsch: …",
+   "funcion": "bewusster Bruch nach unten",
+   "traducciones": {
+    "es": "Y ahora sin lenguaje administrativo: …",
+    "en": "And now without the officialese: …",
+    "fr": "Et maintenant, sans jargon administratif : …",
+    "it": "E ora senza burocratese: …",
+    "pt": "E agora sem linguagem administrativa: …"
+   }
+  },
+  {
+   "expresion": "Unter uns gesagt: …",
+   "funcion": "kontrollierter Schritt in die Nähe",
+   "traducciones": {
+    "es": "Entre nosotros: …",
+    "en": "Between us: …",
+    "fr": "Entre nous : …",
+    "it": "Detto tra noi: …",
+    "pt": "Entre nós: …"
+   }
+  },
+  {
+   "expresion": "Bleiben wir doch beim Sie, das ist einfacher.",
+   "funcion": "Anrede aushandeln, ohne Distanz aufzubauen",
+   "traducciones": {
+    "es": "Mantengamos el trato formal, es más fácil.",
+    "en": "Let's keep the formal address, it's easier.",
+    "fr": "Restons-en au vouvoiement, c'est plus simple.",
+    "it": "Restiamo sul lei, è più semplice.",
+    "pt": "Fiquemos pelo tratamento formal, é mais fácil."
+   }
+  },
+  {
+   "expresion": "Das sage ich jetzt nicht in meiner Funktion.",
+   "funcion": "Rollenwechsel als Registerwechsel",
+   "traducciones": {
+    "es": "Esto no lo digo en mi función.",
+    "en": "I'm not saying this in my official capacity.",
+    "fr": "Je ne dis pas cela en ma qualité officielle.",
+    "it": "Non lo dico nella mia funzione.",
+    "pt": "Não digo isto na minha função."
+   }
+  },
+  {
+   "expresion": "Der Form halber: …",
+   "funcion": "formelle Pflichtformel, leicht distanziert",
+   "traducciones": {
+    "es": "Por cumplir con la forma: …",
+    "en": "For form's sake: …",
+    "fr": "Pour la forme : …",
+    "it": "Per la forma: …",
+    "pt": "Pela forma: …"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Sagen Sie einen Termin bei einer Behörde ab: als SMS an einen Freund, der mitkommen sollte, als E-Mail an die Sachbearbeitung, als formeller Brief.",
+  "requisitos": [
+   "drei Texte ohne Registerbruch",
+   "dieselben Fakten in allen dreien",
+   "im Brief mindestens zwei nominale Formulierungen aus dem Kasten",
+   "*die Behörde*, *die Digitalisierung der Verwaltung* und *einer Sache nachgehen* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "*Das klappt bei mir nicht* in drei Registern formulieren."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Einen Registerbruch in einer eigenen E-Mail finden und korrigieren."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden über *Bürgernähe* der *Verwaltung*: erst locker, dann formell."
+  }
+ ],
+ "autochequeo": [
+  "Ist die Wortwahl konsistent mit der gewählten Anrede?",
+  "Habe ich denselben Inhalt in mindestens zwei Registern formuliert?",
+  "Passt die Satzlänge zum gewählten Register?",
+  "Klingt das formelle Register nicht übertrieben steif für den Kontext?",
+  "Klingt das informelle Register nicht respektlos?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Konsistenz des Registers über Anrede, Wortwahl und Satzbau hinweg. Prüfen Sie, ob alle drei Ebenen zusammenpassen. Schreiben Sie den Text nicht neu."
+}

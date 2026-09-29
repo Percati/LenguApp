@@ -1,0 +1,390 @@
+{
+ "id": "EN-F14-C2-2026-1",
+ "skillId": "EN-F14",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C2",
+ "categoria": "fluency",
+ "topicId": "T10",
+ "titulo": "Giving Constructive Feedback",
+ "subtitulo": "Feedback offered as a hypothesis",
+ "ancla": "EGP C2",
+ "challengeType": "adaptive_production",
+ "bilingue": false,
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 55
+ },
+ "descripcion": "At C2 feedback separates the observation from its interpretation explicitly, offering the interpretation as a hypothesis the other person can confirm or correct — rather than asserting it as fact — which turns feedback into a conversation instead of a verdict.",
+ "cuadroReferencia": {
+  "titulo": "Observation, hypothesis, check",
+  "columnas": [
+   "Layer",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Observation",
+    "The last three drafts came in after the deadline."
+   ],
+   [
+    "Hypothesis, offered not asserted",
+    "My guess is the scope keeps growing after we start — but tell me if that's off."
+   ],
+   [
+    "Check",
+    "Does that match what's happening on your end?"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The last three drafts came in after the deadline. My guess is the scope keeps growing partway through — does that match what's happening?",
+   "audio": true
+  },
+  {
+   "texto": "I noticed you went quiet in that meeting. I don't know why, and I'd rather ask than assume.",
+   "audio": true
+  },
+  {
+   "texto": "That's my read on it, but you're closer to it than I am."
+  }
+ ],
+ "notas": [
+  "Offering the interpretation as a hypothesis (my guess is) rather than a fact keeps the recipient's own account genuinely open, not just performed as open.",
+  "Explicitly checking (does that match?) turns the feedback into a two-way exchange rather than a one-way verdict.",
+  "You're closer to it than I am hands genuine authority back to the recipient about their own situation."
+ ],
+ "contraste": {
+  "es": "Spanish can frame an interpretation as tentative (a lo mejor me equivoco, pero…), so the move exists. English uses a small set of fixed phrases for it (my reading is…, tell me if I've got this wrong) that are worth learning as units.",
+  "de": "German has exact equivalents: wenn ich das richtig verstehe (if I've understood this correctly) and korrigieren Sie mich, wenn ich falsch liege (correct me if I'm wrong). The move therefore transfers directly.",
+  "it": "Correggimi se sbaglio corresponds exactly to correct me if I'm wrong, so offering an interpretation as a hypothesis transfers directly. My reading is… is a useful additional formula.",
+  "fr": "Corrigez-moi si je me trompe corresponds exactly to correct me if I'm wrong, so the move transfers directly. My reading is… is a useful additional formula.",
+  "pt": "Corrige-me se estiver enganado corresponds exactly to correct me if I'm wrong, so the move transfers directly. My reading is… is a useful additional formula."
+ },
+ "errores": [
+  "Stating an interpretation as fact rather than as a checkable hypothesis.",
+  "Asking a checking question rhetorically, without genuine openness to being told the interpretation is wrong.",
+  "Skipping the observation and going straight to interpretation, so there's nothing concrete to check against."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Tengo la sensación de que* rendered as *I have the sensation that* instead of *I get the sense that*."
+  ],
+  "de": [
+   "*Mir kommt es so vor, als* rendered as *It comes to me like* instead of *It strikes me that*."
+  ],
+  "it": [
+   "*Ho la sensazione che* rendered as *I have the sensation that* instead of *I get the sense that*."
+  ],
+  "fr": [
+   "*J'ai le sentiment que* rendered as *I have the sentiment that* instead of *I get the sense that*."
+  ],
+  "pt": [
+   "*Tenho a sensação de que* rendered as *I have the sensation that* instead of *I get the sense that*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a palate",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el paladar",
+    "de": "der Gaumen",
+    "fr": "le palais",
+    "it": "il palato",
+    "pt": "o palato"
+   }
+  },
+  {
+   "item": "mouthfeel",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la sensación en boca",
+    "de": "das Mundgefühl",
+    "fr": "la sensation en bouche",
+    "it": "la sensazione al palato",
+    "pt": "a sensação na boca"
+   }
+  },
+  {
+   "item": "seasonality",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la estacionalidad",
+    "de": "die Saisonalität",
+    "fr": "la saisonnalité",
+    "it": "la stagionalità",
+    "pt": "a sazonalidade"
+   }
+  },
+  {
+   "item": "to be an acquired taste",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "ser un gusto que se adquiere",
+    "de": "gewöhnungsbedürftig sein",
+    "fr": "être un goût qui s'acquiert",
+    "it": "essere un gusto acquisito",
+    "pt": "ser um gosto adquirido"
+   }
+  },
+  {
+   "item": "to be moreish",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "que engancha al comerlo",
+    "de": "zum Weiteressen verführen",
+    "fr": "dont on ne se lasse pas",
+    "it": "che invoglia a continuare",
+    "pt": "que sabe a pouco"
+   }
+  },
+  {
+   "item": "to let something rest",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "dejar reposar algo",
+    "de": "etwas ruhen lassen",
+    "fr": "laisser reposer qc",
+    "it": "far riposare qc",
+    "pt": "deixar repousar algo"
+   }
+  },
+  {
+   "item": "a garnish",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la guarnición decorativa",
+    "de": "die Garnitur",
+    "fr": "la garniture",
+    "it": "la guarnizione",
+    "pt": "a guarnição"
+   }
+  },
+  {
+   "item": "a staple food",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el alimento básico",
+    "de": "das Grundnahrungsmittel",
+    "fr": "l'aliment de base",
+    "it": "l'alimento base",
+    "pt": "o alimento básico"
+   }
+  },
+  {
+   "item": "provenance",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la procedencia",
+    "de": "die Herkunft",
+    "fr": "la provenance",
+    "it": "la provenienza",
+    "pt": "a proveniência"
+   }
+  },
+  {
+   "item": "to overdo the seasoning",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "pasarse con el condimento",
+    "de": "zu stark würzen",
+    "fr": "trop assaisonner",
+    "it": "esagerare con il condimento",
+    "pt": "exagerar no tempero"
+   }
+  },
+  {
+   "item": "to reduce a sauce",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "reducir una salsa",
+    "de": "eine Sauce einkochen",
+    "fr": "faire réduire une sauce",
+    "it": "far ridurre una salsa",
+    "pt": "reduzir um molho"
+   }
+  },
+  {
+   "item": "umami",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el umami",
+    "de": "das Umami",
+    "fr": "l'umami",
+    "it": "l'umami",
+    "pt": "o umami"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "My guess is…, but tell me if that's off.",
+   "funcion": "hypothesis, not assertion",
+   "traducciones": {
+    "es": "Mi impresión es…, pero decime si me equivoco.",
+    "de": "Mein Eindruck ist…, aber sag mir, wenn ich danebenliege.",
+    "fr": "Mon impression est…, mais dis-moi si je me trompe.",
+    "it": "La mia impressione è…, ma dimmi se sbaglio.",
+    "pt": "A minha impressão é…, mas diz-me se estiver enganado/a."
+   }
+  },
+  {
+   "expresion": "Does that match what's happening on your end?",
+   "funcion": "genuine check",
+   "traducciones": {
+    "es": "¿Eso coincide con lo que está pasando de tu lado?",
+    "de": "Entspricht das dem, was bei euch passiert?",
+    "fr": "Est-ce que cela correspond à ce qui se passe de votre côté ?",
+    "it": "Corrisponde a ciò che sta succedendo da voi?",
+    "pt": "Isso corresponde ao que está a acontecer do vosso lado?"
+   }
+  },
+  {
+   "expresion": "I noticed…, and I don't know why.",
+   "funcion": "observation without imposed interpretation",
+   "traducciones": {
+    "es": "Noté…, y no sé por qué.",
+    "de": "Mir ist… aufgefallen, und ich weiß nicht warum.",
+    "fr": "J’ai remarqué…, et je ne sais pas pourquoi.",
+    "it": "Ho notato…, e non so perché.",
+    "pt": "Reparei em…, e não sei porquê."
+   }
+  },
+  {
+   "expresion": "That's my read on it, but you're closer to it than I am.",
+   "funcion": "hands back authority",
+   "traducciones": {
+    "es": "Esa es mi lectura, pero vos estás más cerca del tema que yo.",
+    "de": "So sehe ich das, aber du bist näher dran als ich.",
+    "fr": "C’est ma lecture, mais tu es plus proche du sujet que moi.",
+    "it": "Questa è la mia lettura, ma tu sei più vicino/a alla questione di me.",
+    "pt": "Essa é a minha leitura, mas tu estás mais próximo/a do assunto do que eu."
+   }
+  },
+  {
+   "expresion": "Correct me if I've got this wrong.",
+   "funcion": "invites correction",
+   "traducciones": {
+    "es": "Corregime si me equivoco.",
+    "de": "Korrigiere mich, wenn ich das falsch verstanden habe.",
+    "fr": "Corrige-moi si je me trompe.",
+    "it": "Correggimi se ho capito male.",
+    "pt": "Corrige-me se estiver enganado/a."
+   }
+  },
+  {
+   "expresion": "What's your take on why that happened?",
+   "funcion": "asks instead of asserting",
+   "traducciones": {
+    "es": "¿Cuál es tu impresión de por qué pasó eso?",
+    "de": "Wie erklärst du dir, warum das passiert ist?",
+    "fr": "Selon toi, pourquoi cela s’est-il produit ?",
+    "it": "Qual è la tua lettura del perché sia successo?",
+    "pt": "Qual é a tua leitura sobre porque é que isso aconteceu?"
+   }
+  },
+  {
+   "expresion": "I may be pattern-matching on something that isn't there.",
+   "funcion": "flags the risk in one's own reading",
+   "traducciones": {
+    "es": "Puede que esté viendo un patrón que no existe.",
+    "de": "Womöglich sehe ich ein Muster, das es nicht gibt.",
+    "fr": "Je vois peut-être un motif qui n'existe pas.",
+    "it": "Forse sto vedendo uno schema che non c'è.",
+    "pt": "Posso estar a ver um padrão que não existe."
+   }
+  },
+  {
+   "expresion": "Two readings fit what I saw.",
+   "funcion": "offers competing interpretations of the same fact",
+   "traducciones": {
+    "es": "Lo que vi admite dos lecturas.",
+    "de": "Auf das, was ich gesehen habe, passen zwei Deutungen.",
+    "fr": "Ce que j'ai vu admet deux lectures.",
+    "it": "Quel che ho visto ammette due letture.",
+    "pt": "O que vi admite duas leituras."
+   }
+  },
+  {
+   "expresion": "Is this worth your attention, or should I drop it?",
+   "funcion": "lets them set the weight of the feedback",
+   "traducciones": {
+    "es": "¿Vale tu atención o lo dejo?",
+    "de": "Ist das Ihre Aufmerksamkeit wert, oder lasse ich es?",
+    "fr": "Cela mérite-t-il votre attention, ou j'abandonne ?",
+    "it": "Vale la sua attenzione o lascio perdere?",
+    "pt": "Isto merece a tua atenção ou deixo?"
+   }
+  },
+  {
+   "expresion": "I only see the output, not the constraints you were under.",
+   "funcion": "acknowledges missing context explicitly",
+   "traducciones": {
+    "es": "Yo solo veo el resultado, no las restricciones que tenías.",
+    "de": "Ich sehe nur das Ergebnis, nicht Ihre Rahmenbedingungen.",
+    "fr": "Je ne vois que le résultat, pas les contraintes que vous aviez.",
+    "it": "Vedo solo il risultato, non i vincoli che aveva.",
+    "pt": "Só vejo o resultado, não as restrições que tinhas."
+   }
+  },
+  {
+   "expresion": "Would it help if I said what I'd have done instead?",
+   "funcion": "offers an alternative only if invited",
+   "traducciones": {
+    "es": "¿Te sirve si te digo qué habría hecho yo?",
+    "de": "Hilft es, wenn ich sage, was ich stattdessen gemacht hätte?",
+    "fr": "Cela aiderait-il que je dise ce que j'aurais fait ?",
+    "it": "Aiuta se dico che cosa avrei fatto io?",
+    "pt": "Ajuda se eu disser o que teria feito?"
+   }
+  },
+  {
+   "expresion": "Let's look again in a fortnight rather than now.",
+   "funcion": "defers the feedback to a better moment",
+   "traducciones": {
+    "es": "Mejor lo miramos en dos semanas y no ahora.",
+    "de": "Schauen wir in zwei Wochen noch einmal darauf, nicht jetzt.",
+    "fr": "Reprenons cela dans quinze jours plutôt que maintenant.",
+    "it": "Rivediamolo tra due settimane, non adesso.",
+    "pt": "Vejamos outra vez daqui a duas semanas, não agora."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Give feedback to a cook or a host on a meal that didn't land the way they hoped.",
+  "requisitos": [
+   "observation and interpretation explicitly separated",
+   "the interpretation offered as something they can correct",
+   "one question that genuinely hands them the floor",
+   "use *mouthfeel*, *to let something rest* and *to be an acquired taste*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write three observations about the dish — no interpretation at all."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Add your interpretation as a hypothesis: *My guess is…, but tell me if that's off.*"
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 2 minutes on *seasonality* as feedback, not as a verdict."
+  }
+ ],
+ "autochequeo": [
+  "Is the observation stated separately from the interpretation?",
+  "Is the interpretation offered as a checkable hypothesis, not a fact?",
+  "Is the checking question genuinely open, not rhetorical?",
+  "Does the recipient's account remain genuinely possible to differ?",
+  "Is there a concrete observation underlying the feedback?"
+ ],
+ "promptCorreccion": "Focus only on whether the observation and interpretation are kept separate, and whether the interpretation is offered as a genuine hypothesis. Do not rewrite the text."
+}

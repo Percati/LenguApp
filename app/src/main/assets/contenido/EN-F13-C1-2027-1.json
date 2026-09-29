@@ -1,0 +1,372 @@
+{
+ "id": "EN-F13-C1-2027-1",
+ "skillId": "EN-F13",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T04",
+ "titulo": "Hedging and Softening Claims",
+ "subtitulo": "Hedging a health claim so it survives",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Hedging is argumentative precision, not politeness. A hedged claim is harder to attack, easier to revise and more acceptable to an audience that does not share your view. English does this lexically and modally — there is no hedging tense. It lives in adverbs, modals, reporting structures and impersonal constructions.",
+ "cuadroReferencia": {
+  "titulo": "Hedging devices by type",
+  "columnas": [
+   "Type",
+   "Devices",
+   "What it hedges"
+  ],
+  "filas": [
+   [
+    "Modal",
+    "*might*, *may well*, *would*, *could*",
+    "the certainty of the claim"
+   ],
+   [
+    "Frequency / tendency",
+    "*tends to*, *typically*, *broadly*, *in most cases*",
+    "its generality"
+   ],
+   [
+    "Evidential",
+    "*there's some evidence that*, *as far as I can tell*, *on the numbers I've seen*",
+    "your grounds for it"
+   ],
+   [
+    "Impersonal",
+    "*it could be argued that*, *there's a case for*, *one reading is*",
+    "your ownership of it"
+   ],
+   [
+    "Self-limiting",
+    "*I'd be careful about*, *I could be wrong*, *speaking outside my area*",
+    "your authority"
+   ],
+   [
+    "Scope",
+    "*up to a point*, *in principle*, *at least for X*",
+    "its range of application"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*That tends to be the case, though the data is thinner than people assume.*",
+   "audio": true
+  },
+  {
+   "texto": "*There's some evidence to suggest that offsets underperform their stated value.*",
+   "audio": true
+  },
+  {
+   "texto": "*I'd be careful about generalising from one grid.*",
+   "audio": true
+  },
+  {
+   "texto": "*It could be argued that the cost falls on the wrong people.*",
+   "audio": true
+  },
+  {
+   "texto": "*As far as I can tell, nobody has measured this properly.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "*Would* is the single most productive device: *I'd say*, *I'd argue*, *I'd be careful about*.",
+  "One or two hedges per claim is the ceiling. Stacking destroys credibility.",
+  "Never hedge a verifiable number — it reads as evasive, not careful."
+ ],
+ "contraste": {
+  "es": "Spanish often states a limit plainly (eso no funciona), and the literal that doesn't work sounds blunt in English. The equivalent English register is I don't think that's going to work.",
+  "de": "German softens a plain statement with particles (das funktioniert so wohl nicht), but the particles disappear in translation and that doesn't work remains. English needs a lexical hedge instead: I don't think that's going to work.",
+  "it": "Non credo che funzioni corresponds exactly to I don't think it'll work, with the negation in the same place. The hedge therefore transfers directly.",
+  "fr": "Je ne pense pas que ça marche corresponds exactly to I don't think it'll work, with the negation in the same place. The hedge therefore transfers directly.",
+  "pt": "Portuguese often says acho que isso não vai funcionar, with the negation in the second clause. English prefers it in the first: I don't think that's going to work."
+ },
+ "errores": [
+  "*Eventually* means 'in the end', not 'possibly', despite its look-alikes in other European languages.",
+  "*Maybe* sentence-initially reads tentative rather than considered. Prefer *perhaps* or *I'd say*.",
+  "Under-hedging, which reads as aggressive rather than confident."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Parece ser que* rendered as *It seems to be that* instead of *It seems that*."
+  ],
+  "de": [
+   "*Es scheint so, als ob* rendered as *It seems so as if* instead of *It looks as if*."
+  ],
+  "it": [
+   "*A quanto pare* rendered as *At how much it seems* instead of *Apparently*."
+  ],
+  "fr": [
+   "*À ce qu'il paraît* rendered as *At what it appears* instead of *Apparently*."
+  ],
+  "pt": [
+   "*Pelos vistos* rendered as *By the seen* instead of *Apparently*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "to stay fit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mantenerse en forma",
+    "de": "fit bleiben",
+    "fr": "rester en forme",
+    "it": "mantenersi in forma",
+    "pt": "manter-se em forma"
+   }
+  },
+  {
+   "item": "wellbeing",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el bienestar",
+    "de": "das Wohlbefinden",
+    "fr": "le bien-être",
+    "it": "il benessere",
+    "pt": "o bem-estar"
+   }
+  },
+  {
+   "item": "preventive check-up",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el chequeo preventivo",
+    "de": "die Vorsorgeuntersuchung",
+    "fr": "le contrôle préventif",
+    "it": "il controllo preventivo",
+    "pt": "o check-up preventivo"
+   }
+  },
+  {
+   "item": "to recover",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "recuperarse",
+    "de": "sich erholen",
+    "fr": "récupérer",
+    "it": "riprendersi",
+    "pt": "recuperar-se"
+   }
+  },
+  {
+   "item": "side effect",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el efecto secundario",
+    "de": "die Nebenwirkung",
+    "fr": "l’effet secondaire",
+    "it": "l’effetto collaterale",
+    "pt": "o efeito secundário"
+   }
+  },
+  {
+   "item": "the limit of what one can take",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el límite de tolerancia",
+    "de": "die Belastungsgrenze",
+    "fr": "la limite de tolérance",
+    "it": "il limite di sopportazione",
+    "pt": "o limite de tolerância"
+   }
+  },
+  {
+   "item": "to take it easy",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tomárselo con calma",
+    "de": "es ruhig angehen lassen",
+    "fr": "y aller doucement",
+    "it": "prendersela con calma",
+    "pt": "levar as coisas com calma"
+   }
+  },
+  {
+   "item": "chronic / acute",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "crónico / agudo",
+    "de": "chronisch / akut",
+    "fr": "chronique / aigu",
+    "it": "cronico / acuto",
+    "pt": "crónico / agudo"
+   }
+  },
+  {
+   "item": "to pay attention to",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "prestar atención a",
+    "de": "auf etwas achten",
+    "fr": "faire attention à",
+    "it": "prestare attenzione a",
+    "pt": "prestar atenção a"
+   }
+  },
+  {
+   "item": "referral (to a specialist)",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la derivación médica",
+    "de": "die Überweisung (zum Facharzt)",
+    "fr": "l’orientation vers un spécialiste",
+    "it": "l’impegnativa / invio allo specialista",
+    "pt": "o encaminhamento para um especialista"
+   }
+  },
+  {
+   "item": "to be burnt out",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estar quemado, agotado",
+    "de": "ausgebrannt sein",
+    "fr": "être en burn-out / épuisé",
+    "it": "essere in burnout / esaurito",
+    "pt": "estar em burnout / esgotado"
+   }
+  },
+  {
+   "item": "recovery",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la recuperación",
+    "de": "die Erholung / Genesung",
+    "fr": "la récupération",
+    "it": "il recupero",
+    "pt": "a recuperação"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "That tends to be…",
+   "funcion": "generalises without committing",
+   "traducciones": {
+    "es": "suele ser…",
+    "de": "Das ist tendenziell…",
+    "fr": "Cela tend à être…",
+    "it": "Tende a essere…",
+    "pt": "Isso tende a ser…"
+   }
+  },
+  {
+   "expresion": "There's some evidence that…",
+   "funcion": "marks the grounds",
+   "traducciones": {
+    "es": "hay indicios de que…",
+    "de": "Es gibt gewisse Hinweise darauf, dass…",
+    "fr": "Il y a des éléments indiquant que…",
+    "it": "Ci sono alcuni elementi che indicano che…",
+    "pt": "Há alguns indícios de que…"
+   }
+  },
+  {
+   "expresion": "I'd be careful about…",
+   "funcion": "limits your own claim",
+   "traducciones": {
+    "es": "yo tendría cuidado con…",
+    "de": "Bei … wäre ich vorsichtig.",
+    "fr": "Je serais prudent avec…",
+    "it": "Starei attento a…",
+    "pt": "Eu teria cuidado com…"
+   }
+  },
+  {
+   "expresion": "It could be argued that…",
+   "funcion": "shifts ownership",
+   "traducciones": {
+    "es": "se podría argumentar que…",
+    "de": "Man könnte argumentieren, dass…",
+    "fr": "On pourrait soutenir que…",
+    "it": "Si potrebbe sostenere che…",
+    "pt": "Poder-se-ia argumentar que…"
+   }
+  },
+  {
+   "expresion": "As far as I can tell…",
+   "funcion": "marks the limits of what you know",
+   "traducciones": {
+    "es": "por lo que puedo ver…",
+    "de": "Soweit ich das beurteilen kann…",
+    "fr": "Pour autant que je puisse en juger…",
+    "it": "Per quanto posso capire…",
+    "pt": "Tanto quanto consigo avaliar…"
+   }
+  },
+  {
+   "expresion": "Up to a point",
+   "funcion": "restricts scope",
+   "traducciones": {
+    "es": "hasta cierto punto",
+    "de": "Bis zu einem gewissen Punkt",
+    "fr": "Jusqu’à un certain point",
+    "it": "Fino a un certo punto",
+    "pt": "Até certo ponto"
+   }
+  },
+  {
+   "expresion": "May well",
+   "funcion": "high probability, not certainty",
+   "traducciones": {
+    "es": "bien puede ser que…",
+    "de": "könnte durchaus",
+    "fr": "pourrait bien",
+    "it": "potrebbe benissimo",
+    "pt": "pode muito bem"
+   }
+  },
+  {
+   "expresion": "On the numbers I've seen",
+   "funcion": "cites your evidence",
+   "traducciones": {
+    "es": "con los datos que vi",
+    "de": "Nach den Zahlen, die ich gesehen habe…",
+    "fr": "D’après les chiffres que j’ai vus…",
+    "it": "In base ai dati che ho visto…",
+    "pt": "Com base nos números que vi…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Explain to a friend why you think preventive check-ups matter, without overstating the evidence.",
+  "requisitos": [
+   "four different hedging devices (modal, adverb, reporting, impersonal)",
+   "one *up to a point*",
+   "no claim stronger than your evidence",
+   "use *preventive check-up*, *wellbeing* and *to recover*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write three health claims you believe. Hedge each exactly as far as your evidence goes."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Find a claim online about *staying fit* and rewrite it honestly hedged."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds: *Does exercise speed up how you recover from illness?* Hedge everything."
+  }
+ ],
+ "autochequeo": [
+  "Six devices from four different types?",
+  "Any sentence with three or more hedges?",
+  "Did I hedge a verifiable number?",
+  "Is there at least one flat factual statement, to show I know the difference?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on hedging. (1) Mark each device and say whether it fits the claim and the register. (2) Mark where I asserted flatly and a C1 professional would have hedged. (3) Mark over-hedging and show the tighter version. (4) Did I hedge any verifiable fact? Do not rewrite the text."
+}

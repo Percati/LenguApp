@@ -1,0 +1,360 @@
+{
+ "id": "DE-G19-B2-2027-1",
+ "skillId": "DE-G19",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T01",
+ "titulo": "Vergleichssätze (als, wie, je … desto)",
+ "subtitulo": "Als, wie, je … desto im Arbeitsleben",
+ "ancla": "Aspekte B2",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf B2 wird der Unterschied zwischen **als** (bei Ungleichheit) und **wie** (bei Gleichheit) gefestigt, sowie die feste Struktur **je … desto** für proportionale Vergleiche. Diese feste Struktur hat in vielen Sprachen keine direkte Entsprechung und braucht deshalb gezielte Übung.",
+ "cuadroReferencia": {
+  "titulo": "Vergleichsformen",
+  "columnas": [
+   "Form",
+   "Verwendung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "als",
+    "Ungleichheit, Komparativ",
+    "Er ist grösser als ich."
+   ],
+   [
+    "wie",
+    "Gleichheit",
+    "Sie ist so gross wie ich."
+   ],
+   [
+    "je … desto",
+    "proportionaler Vergleich",
+    "Je mehr er übt, desto besser wird er."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Er ist deutlich grösser als ich.",
+   "audio": true
+  },
+  {
+   "texto": "Sie ist genauso schnell wie ihr Bruder.",
+   "audio": true
+  },
+  {
+   "texto": "Je mehr man übt, desto sicherer wird man."
+  }
+ ],
+ "notas": [
+  "Nach je steht Komparativ und Verb am Ende; nach desto steht ebenfalls Komparativ, aber mit normaler Wortstellung.",
+  "So … wie drückt Gleichheit aus, als drückt immer einen Unterschied aus.",
+  "Je … desto ist eine feste Struktur — beide Teile brauchen einen Komparativ."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit *cuanto más… más…* eine ähnliche Struktur wie *je… desto*, sodass das Konzept übertragbar ist. Die Verbstellung im *je*-Satz (Verb am Ende) ist aber neu und wird oft vergessen, weil das Spanische keine vergleichbare Endstellung kennt.",
+  "it": "Das Italienische trennt Ungleichheit (*più alto di/che*) und Gleichheit (*alto come*) klar, sodass sich *als* und *wie* sauber zuordnen lassen; *di* verleitet höchstens zu *grösser von mir*. *Più… più* entspricht *je… desto*, kennt aber weder Verbendstellung im ersten noch Inversion im zweiten Teil – beides muss neu gelernt werden.",
+  "fr": "Das Französische benutzt für Ungleichheit und Gleichheit dasselbe *que* (*plus grand que*, *aussi grand que*), die Muttersprache hilft also nicht bei der Wahl zwischen *als* und *wie*. *Plus… plus* entspricht *je… desto*, allerdings ohne Verbendstellung und ohne Inversion.",
+  "pt": "Das Portugiesische trennt Ungleichheit (*mais alto (do) que*) und Gleichheit (*tão alto como/quanto*) klar, sodass sich *als* und *wie* gut zuordnen lassen. *Quanto mais… mais* entspricht *je… desto*; neu sind die Verbendstellung im *je*-Satz und die Inversion im *desto*-Satz.",
+  "en": "*Than* und *as* lassen sich fast perfekt auf *als* und *wie* abbilden (*taller than* – *grösser als*, *as tall as* – *so gross wie*). Verwirrend ist nur, dass *als* auch *as* bedeutet (*als Kind* – *as a child*). *The more… the more* entspricht *je… desto*, kennt aber weder Verbendstellung noch Inversion."
+ },
+ "errores": [
+  "Wie statt als bei einem echten Unterschied verwenden.",
+  "Im je-Satz das Verb nicht ans Ende stellen.",
+  "Im desto-Satz keinen Komparativ verwenden."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*que* immer mit *wie* übersetzen, auch beim Komparativ: *grösser wie ich* nach *más alto que yo*."
+  ],
+  "it": [
+   "*di* als Vergleichswort übernehmen: *grösser von mir* nach *più alto di me* statt *grösser als ich*."
+  ],
+  "fr": [
+   "*que* immer mit *wie* übersetzen, auch beim Komparativ: *grösser wie ich* nach *plus grand que moi*."
+  ],
+  "pt": [
+   "*do que* mit *wie* übersetzen, auch beim Komparativ: *besser wie gestern* nach *melhor do que ontem*."
+  ],
+  "en": [
+   "*je … desto* nach *the … the* bilden: *Je mehr, je besser* statt *desto besser*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Homeoffice",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el teletrabajo",
+    "en": "working from home",
+    "fr": "le télétravail",
+    "it": "il lavoro da casa",
+    "pt": "o teletrabalho"
+   }
+  },
+  {
+   "item": "die Arbeitsbelastung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la carga de trabajo",
+    "en": "workload",
+    "fr": "la charge de travail",
+    "it": "il carico di lavoro",
+    "pt": "a carga de trabalho"
+   }
+  },
+  {
+   "item": "die Beförderung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el ascenso",
+    "en": "the promotion",
+    "fr": "la promotion",
+    "it": "la promozione",
+    "pt": "a promoção"
+   }
+  },
+  {
+   "item": "die Eigenverantwortung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la responsabilidad propia",
+    "en": "personal responsibility",
+    "fr": "la responsabilité individuelle",
+    "it": "la responsabilità personale",
+    "pt": "a responsabilidade própria"
+   }
+  },
+  {
+   "item": "die Führungskraft",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el/la directivo/a",
+    "en": "the manager, executive",
+    "fr": "le/la cadre",
+    "it": "il/la dirigente",
+    "pt": "o/a executivo/a"
+   }
+  },
+  {
+   "item": "die Vereinbarkeit von Beruf und Familie",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la conciliación laboral y familiar",
+    "en": "work-life balance (family)",
+    "fr": "la conciliation travail-famille",
+    "it": "la conciliazione lavoro-famiglia",
+    "pt": "a conciliação trabalho-família"
+   }
+  },
+  {
+   "item": "die Vier-Tage-Woche",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la semana de cuatro días",
+    "en": "the four-day week",
+    "fr": "la semaine de quatre jours",
+    "it": "la settimana di quattro giorni",
+    "pt": "a semana de quatro dias"
+   }
+  },
+  {
+   "item": "das Mitarbeitergespräch",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la entrevista de evaluación",
+    "en": "the performance review",
+    "fr": "l'entretien annuel",
+    "it": "il colloquio di valutazione",
+    "pt": "a avaliação de desempenho"
+   }
+  },
+  {
+   "item": "der Leistungsdruck",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la presión por rendir",
+    "en": "pressure to perform",
+    "fr": "la pression de la performance",
+    "it": "la pressione da prestazione",
+    "pt": "a pressão por desempenho"
+   }
+  },
+  {
+   "item": "die Erreichbarkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la disponibilidad permanente",
+    "en": "availability (being reachable)",
+    "fr": "la disponibilité",
+    "it": "la reperibilità",
+    "pt": "a disponibilidade"
+   }
+  },
+  {
+   "item": "die Fluktuation",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la rotación de personal",
+    "en": "staff turnover",
+    "fr": "le turnover",
+    "it": "il turnover del personale",
+    "pt": "a rotatividade de pessoal"
+   }
+  },
+  {
+   "item": "die Gleitzeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el horario flexible",
+    "en": "flexitime",
+    "fr": "l'horaire flexible",
+    "it": "l'orario flessibile",
+    "pt": "o horário flexível"
+   }
+  },
+  {
+   "item": "die Präsenzkultur",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cultura del presentismo",
+    "en": "presence culture",
+    "fr": "la culture du présentéisme",
+    "it": "la cultura della presenza",
+    "pt": "a cultura do presencialismo"
+   }
+  },
+  {
+   "item": "sich abgrenzen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "poner límites",
+    "en": "to set boundaries",
+    "fr": "poser des limites",
+    "it": "porre dei limiti",
+    "pt": "impor limites"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "…grösser/kleiner/besser als…",
+   "funcion": "Ungleichheit",
+   "traducciones": {
+    "es": "…más grande/chico/mejor que…",
+    "en": "…bigger/smaller/better than…",
+    "fr": "…plus grand/petit/meilleur que…",
+    "it": "…più grande/piccolo/migliore di…",
+    "pt": "…maior/menor/melhor do que…"
+   }
+  },
+  {
+   "expresion": "…so … wie…",
+   "funcion": "Gleichheit",
+   "traducciones": {
+    "es": "…tan … como…",
+    "en": "…as … as…",
+    "fr": "…aussi … que…",
+    "it": "…così … come…",
+    "pt": "…tão … como…"
+   }
+  },
+  {
+   "expresion": "Je mehr…, desto…",
+   "funcion": "proportionaler Vergleich",
+   "traducciones": {
+    "es": "Cuanto más…, más…",
+    "en": "The more…, the more…",
+    "fr": "Plus…, plus…",
+    "it": "Più…, più…",
+    "pt": "Quanto mais…, mais…"
+   }
+  },
+  {
+   "expresion": "Je früher…, desto besser.",
+   "funcion": "feste Wendung",
+   "traducciones": {
+    "es": "Cuanto antes, mejor.",
+    "en": "The sooner, the better.",
+    "fr": "Le plus tôt sera le mieux.",
+    "it": "Prima è, meglio è.",
+    "pt": "Quanto mais cedo, melhor."
+   }
+  },
+  {
+   "expresion": "genauso … wie…",
+   "funcion": "verstärkte Gleichheit",
+   "traducciones": {
+    "es": "igual de … que…",
+    "en": "just as … as…",
+    "fr": "aussi … que…",
+    "it": "tanto … quanto…",
+    "pt": "tão … como…"
+   }
+  },
+  {
+   "expresion": "im Vergleich zu…",
+   "funcion": "Vergleich einleiten",
+   "traducciones": {
+    "es": "en comparación con…",
+    "en": "compared to…",
+    "fr": "par rapport à…",
+    "it": "rispetto a…",
+    "pt": "em comparação com…"
+   }
+  },
+  {
+   "expresion": "Heisst es hier als oder wie?",
+   "funcion": "die haeufigste Verwechslung ansprechen",
+   "traducciones": {
+    "es": "¿Acá va que o como?",
+    "en": "Is it than or as here?",
+    "fr": "Ici, dit-on que ou comme ?",
+    "it": "Qui si dice di o come?",
+    "pt": "Aqui é do que ou como?"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Vergleichen Sie Homeoffice und Arbeit im Büro für Ihre eigene Stelle.",
+  "requisitos": [
+   "drei Vergleiche mit *als*",
+   "zwei mit *so … wie*",
+   "zwei mit *je … desto*",
+   "*das Homeoffice*, *die Vier-Tage-Woche* und *die Vereinbarkeit von Beruf und Familie* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Sätze mit *als* und *wie* — richtig gewählt?"
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei *je … desto*-Sätze zur *Arbeitsbelastung*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Ist *Homeoffice* besser? Vergleichen, nicht urteilen."
+  }
+ ],
+ "autochequeo": [
+  "Habe ich als bei Ungleichheit und wie bei Gleichheit korrekt unterschieden?",
+  "Steht im je-Satz das Verb am Ende?",
+  "Steht im desto-Satz der Komparativ direkt nach desto?",
+  "Habe ich mindestens eine je-desto-Konstruktion gebildet?",
+  "Klingt der Vergleich natürlich, nicht wörtlich aus dem Spanischen übersetzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf als, wie und je … desto. Prüfen Sie besonders die Verbstellung im je-Satz. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,725 @@
+{
+ "id": "DE-F01-A2-2027-2",
+ "skillId": "DE-F01",
+ "order": 2,
+ "idioma": "de",
+ "nivel": "A2",
+ "categoria": "fluency",
+ "topicId": "T07",
+ "titulo": {
+  "de": "Meinung äussern und begründen",
+  "en": "Expressing and justifying an opinion",
+  "es": "Expresar y justificar una opinión",
+  "fr": "Exprimer et justifier une opinion",
+  "it": "Esprimere e motivare un'opinione",
+  "pt": "Expressar e justificar uma opinião"
+ },
+ "subtitulo": {
+  "de": "Meine Meinung zur Wohnung",
+  "en": "My opinion about the apartment",
+  "es": "Mi opinión sobre el departamento",
+  "fr": "Mon opinion sur l'appartement",
+  "it": "La mia opinione sull'appartamento",
+  "pt": "Minha opinião sobre o apartamento"
+ },
+ "ancla": "PD A2",
+ "challengeType": "chunk_deployment",
+ "bilingue": true,
+ "evidencia": {
+  "escritura": 80,
+  "oralMin": 1.5,
+  "minutosEstimados": 45
+ },
+ "descripcion": {
+  "de": "Auf A2 äussert man eine sehr einfache Meinung mit ich finde und gibt, wenn möglich, einen kurzen Grund mit weil. Diese einfache Form reicht für die meisten Alltagsgespräche auf diesem Niveau. Es geht darum, sich verständlich zu machen, nicht um eine ausgefeilte Argumentation.",
+  "en": "At A2, you express a very simple opinion with I think and, if possible, give a short reason with because. This simple form is enough for most everyday conversations at this level. The aim is to make yourself understood, not to build a sophisticated argument.",
+  "es": "En A2 se expresa una opinión muy sencilla con «ich finde» y, si es posible, se da una razón breve con «weil». Esta forma simple alcanza para la mayoría de las conversaciones cotidianas de este nivel. El objetivo es hacerse entender, no desarrollar una argumentación elaborada.",
+  "fr": "Au niveau A2, on exprime une opinion très simple avec « ich finde » et, si possible, on donne une brève raison avec « weil ». Cette forme simple suffit pour la plupart des conversations quotidiennes à ce niveau. L'objectif est de se faire comprendre, pas de développer une argumentation élaborée.",
+  "it": "A livello A2 si esprime un'opinione molto semplice con «ich finde» e, se possibile, si dà una breve motivazione con «weil». Questa forma semplice basta per la maggior parte delle conversazioni quotidiane a questo livello. L'obiettivo è farsi capire, non costruire un'argomentazione elaborata.",
+  "pt": "No nível A2, expressa-se uma opinião bem simples com «ich finde» e, se possível, dá-se um motivo curto com «weil». Essa forma simples é suficiente para a maioria das conversas do dia a dia nesse nível. O objetivo é se fazer entender, não desenvolver uma argumentação elaborada."
+ },
+ "cuadroReferencia": {
+  "titulo": {
+   "de": "Einfache Meinung",
+   "en": "Simple opinion",
+   "es": "Opinión sencilla",
+   "fr": "Opinion simple",
+   "it": "Opinione semplice",
+   "pt": "Opinião simples"
+  },
+  "columnas": [
+   {
+    "de": "Schritt",
+    "en": "Step",
+    "es": "Paso",
+    "fr": "Étape",
+    "it": "Passaggio",
+    "pt": "Etapa"
+   },
+   {
+    "de": "Beispiel",
+    "en": "Example",
+    "es": "Ejemplo",
+    "fr": "Exemple",
+    "it": "Esempio",
+    "pt": "Exemplo"
+   }
+  ],
+  "filas": [
+   [
+    {
+     "de": "Meinung",
+     "en": "Opinion",
+     "es": "Opinión",
+     "fr": "Opinion",
+     "it": "Opinione",
+     "pt": "Opinião"
+    },
+    {
+     "de": "Ich finde das gut.",
+     "en": "I think that's good.",
+     "es": "Me parece bien.",
+     "fr": "Je trouve ça bien.",
+     "it": "Penso che vada bene.",
+     "pt": "Acho isso bom."
+    }
+   ],
+   [
+    {
+     "de": "Grund",
+     "en": "Reason",
+     "es": "Razón",
+     "fr": "Raison",
+     "it": "Motivo",
+     "pt": "Motivo"
+    },
+    {
+     "de": "…, weil es billig ist.",
+     "en": "…, because it's cheap.",
+     "es": "…, porque es barato.",
+     "fr": "…, parce que c'est bon marché.",
+     "it": "…, perché costa poco.",
+     "pt": "…, porque é barato."
+    }
+   ],
+   [
+    {
+     "de": "Alternative",
+     "en": "Alternative",
+     "es": "Alternativa",
+     "fr": "Alternative",
+     "it": "Alternativa",
+     "pt": "Alternativa"
+    },
+    {
+     "de": "Ich mag das.",
+     "en": "I like that.",
+     "es": "Eso me gusta.",
+     "fr": "J'aime ça.",
+     "it": "Mi piace.",
+     "pt": "Eu gosto disso."
+    }
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": {
+    "de": "Ich finde das Restaurant sehr gut.",
+    "en": "I think the restaurant is very good.",
+    "es": "Me parece que el restaurante es muy bueno.",
+    "fr": "Je trouve ce restaurant très bon.",
+    "it": "Penso che il ristorante sia molto buono.",
+    "pt": "Acho o restaurante muito bom."
+   },
+   "audio": true
+  },
+  {
+   "texto": {
+    "de": "Ich finde das schlecht, weil es teuer ist.",
+    "en": "I think that's bad because it's expensive.",
+    "es": "Me parece mal porque es caro.",
+    "fr": "Je trouve ça mauvais parce que c'est cher.",
+    "it": "Penso che sia un peccato perché è caro.",
+    "pt": "Acho isso ruim porque é caro."
+   },
+   "audio": true
+  },
+  {
+   "texto": {
+    "de": "Ich mag das nicht so gern.",
+    "en": "I don't like that very much.",
+    "es": "Eso no me gusta mucho.",
+    "fr": "Je n'aime pas trop ça.",
+    "it": "Non mi piace molto.",
+    "pt": "Não gosto muito disso."
+   }
+  }
+ ],
+ "notas": [
+  {
+   "de": "Ich finde ist die einfachste Form, eine Meinung zu äussern.",
+   "en": "Ich finde is the simplest way to express an opinion.",
+   "es": "«Ich finde» es la forma más sencilla de expresar una opinión.",
+   "fr": "« Ich finde » est la façon la plus simple d'exprimer une opinion.",
+   "it": "«Ich finde» è il modo più semplice per esprimere un'opinione.",
+   "pt": "«Ich finde» é a forma mais simples de expressar uma opinião."
+  },
+  {
+   "de": "Weil kann eine kurze Begründung liefern.",
+   "en": "Weil can introduce a short reason.",
+   "es": "«Weil» puede introducir una justificación breve.",
+   "fr": "« Weil » peut introduire une brève justification.",
+   "it": "«Weil» può introdurre una breve motivazione.",
+   "pt": "«Weil» pode introduzir uma justificativa curta."
+  },
+  {
+   "de": "Ich mag ist eine Alternative für Vorlieben.",
+   "en": "Ich mag is an alternative for expressing preferences.",
+   "es": "«Ich mag» es una alternativa para expresar preferencias.",
+   "fr": "« Ich mag » est une autre façon d'exprimer des préférences.",
+   "it": "«Ich mag» è un'alternativa per esprimere preferenze.",
+   "pt": "«Ich mag» é uma alternativa para expressar preferências."
+  }
+ ],
+ "contraste": {
+  "es": "Das Spanische äussert Meinungen mit me parece oder creo que auf sehr ähnliche Weise.",
+  "it": "Secondo me entspricht meiner Meinung nach, und mi piace entspricht mir gefällt. Nach weil steht das Verb am Ende, anders als nach perché: Ich finde den Film gut, weil er spannend ist.",
+  "fr": "Je trouve que entspricht genau ich finde, dass, und à mon avis entspricht meiner Meinung nach. Neu ist das Verb am Ende nach weil und dass.",
+  "pt": "Acho que entspricht ich finde oder ich glaube, und na minha opinião entspricht meiner Meinung nach. Neu ist das Verb am Ende nach weil.",
+  "en": "In my opinion wird oft zu in meiner Meinung; richtig ist meiner Meinung nach. I think entspricht ich finde oder ich glaube."
+ },
+ "errores": [
+  {
+   "de": "Nach weil das Verb nicht ans Ende stellen.",
+   "en": "Not putting the verb at the end after weil.",
+   "es": "No colocar el verbo al final después de «weil».",
+   "fr": "Ne pas mettre le verbe à la fin après « weil ».",
+   "it": "Non mettere il verbo alla fine dopo «weil».",
+   "pt": "Não colocar o verbo no final depois de «weil»."
+  },
+  {
+   "de": "Eine Meinung ohne jeden Grund äussern.",
+   "en": "Expressing an opinion without giving any reason.",
+   "es": "Expresar una opinión sin dar ningún motivo.",
+   "fr": "Exprimer une opinion sans donner aucune raison.",
+   "it": "Esprimere un'opinione senza dare alcun motivo.",
+   "pt": "Expressar uma opinião sem dar nenhum motivo."
+  }
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Creo que sí* als *Ich glaube, dass ja* übertragen statt *Ich glaube schon*."
+  ],
+  "it": [
+   "*Penso di sì* als *Ich denke von ja* übertragen statt *Ich glaube schon*."
+  ],
+  "fr": [
+   "*Je pense que oui* als *Ich denke, dass ja* übertragen statt *Ich glaube schon*."
+  ],
+  "pt": [
+   "*Acho que sim* als *Ich finde, dass ja* übertragen statt *Ich glaube schon*."
+  ],
+  "en": [
+   "*I think so* als *Ich denke so* übertragen statt *Ich glaube schon*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Zimmer",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la habitación",
+    "en": "room",
+    "fr": "la pièce",
+    "it": "la stanza",
+    "pt": "o quarto"
+   }
+  },
+  {
+   "item": "der Nachbar",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el vecino",
+    "en": "neighbour",
+    "fr": "le voisin",
+    "it": "il vicino",
+    "pt": "o vizinho"
+   }
+  },
+  {
+   "item": "der Vermieter",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el arrendador",
+    "en": "landlord",
+    "fr": "le propriétaire",
+    "it": "il locatore",
+    "pt": "o senhorio"
+   }
+  },
+  {
+   "item": "die Hausordnung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "las normas del edificio",
+    "en": "house rules",
+    "fr": "le règlement de l'immeuble",
+    "it": "il regolamento condominiale",
+    "pt": "o regulamento do prédio"
+   }
+  },
+  {
+   "item": "die Miete",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el alquiler",
+    "en": "rent",
+    "fr": "le loyer",
+    "it": "l'affitto",
+    "pt": "a renda"
+   }
+  },
+  {
+   "item": "die Nebenkosten",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gastos aparte",
+    "en": "service charges",
+    "fr": "les charges",
+    "it": "le spese accessorie",
+    "pt": "os encargos"
+   }
+  },
+  {
+   "item": "die Wohnung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el piso",
+    "en": "flat",
+    "fr": "l'appartement",
+    "it": "l'appartamento",
+    "pt": "o apartamento"
+   }
+  },
+  {
+   "item": "umziehen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mudarse",
+    "en": "to move house",
+    "fr": "déménager",
+    "it": "traslocare",
+    "pt": "mudar de casa"
+   }
+  },
+  {
+   "item": "der Vertrag",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el contrato",
+    "en": "contract",
+    "fr": "le contrat",
+    "it": "il contratto",
+    "pt": "o contrato"
+   }
+  },
+  {
+   "item": "die Kaution",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la fianza",
+    "en": "deposit",
+    "fr": "la caution",
+    "it": "la cauzione",
+    "pt": "a caução"
+   }
+  },
+  {
+   "item": "die Waschmaschine",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la lavadora",
+    "en": "washing machine",
+    "fr": "le lave-linge",
+    "it": "la lavatrice",
+    "pt": "a máquina de lavar"
+   }
+  },
+  {
+   "item": "laut",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ruidoso",
+    "en": "loud",
+    "fr": "bruyant",
+    "it": "rumoroso",
+    "pt": "barulhento"
+   }
+  },
+  {
+   "item": "mieten",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "alquilar",
+    "en": "to rent",
+    "fr": "louer",
+    "it": "affittare",
+    "pt": "arrendar"
+   }
+  },
+  {
+   "item": "sich beschweren",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "quejarse",
+    "en": "to complain",
+    "fr": "se plaindre",
+    "it": "lamentarsi",
+    "pt": "queixar-se"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Ich finde das…",
+   "funcion": {
+    "de": "Meinung",
+    "en": "Opinion",
+    "es": "Opinión",
+    "fr": "Opinion",
+    "it": "Opinione",
+    "pt": "Opinião"
+   },
+   "traducciones": {
+    "es": "Me parece…",
+    "en": "I think that's…",
+    "fr": "Je trouve que c’est…",
+    "it": "Penso che sia…",
+    "pt": "Acho que é…"
+   }
+  },
+  {
+   "expresion": "…, weil…",
+   "funcion": {
+    "de": "Grund",
+    "en": "Reason",
+    "es": "Razón",
+    "fr": "Raison",
+    "it": "Motivo",
+    "pt": "Motivo"
+   },
+   "traducciones": {
+    "es": "…, porque…",
+    "en": "…, because…",
+    "fr": "…, parce que…",
+    "it": "…, perché…",
+    "pt": "…, porque…"
+   }
+  },
+  {
+   "expresion": "Ich mag…",
+   "funcion": {
+    "de": "Vorliebe",
+    "en": "preference",
+    "es": "preferencia",
+    "fr": "préférence",
+    "it": "preferenza",
+    "pt": "preferência"
+   },
+   "traducciones": {
+    "es": "Me gusta…",
+    "en": "I like…",
+    "fr": "J’aime…",
+    "it": "Mi piace…",
+    "pt": "Gosto de…"
+   }
+  },
+  {
+   "expresion": "Ich mag…nicht.",
+   "funcion": {
+    "de": "Abneigung",
+    "en": "dislike",
+    "es": "desagrado",
+    "fr": "aversion",
+    "it": "antipatia",
+    "pt": "desagrado"
+   },
+   "traducciones": {
+    "es": "No me gusta…",
+    "en": "I don't like…",
+    "fr": "Je n’aime pas…",
+    "it": "Non mi piace…",
+    "pt": "Não gosto de…"
+   }
+  },
+  {
+   "expresion": "Das ist gut/schlecht.",
+   "funcion": {
+    "de": "einfache Bewertung",
+    "en": "simple evaluation",
+    "es": "valoración sencilla",
+    "fr": "évaluation simple",
+    "it": "valutazione semplice",
+    "pt": "avaliação simples"
+   },
+   "traducciones": {
+    "es": "Eso es bueno/malo.",
+    "en": "That's good/bad.",
+    "fr": "C’est bien/mal.",
+    "it": "È bene/male.",
+    "pt": "Isso é bom/mau."
+   }
+  },
+  {
+   "expresion": "Ich denke, das ist…",
+   "funcion": {
+    "de": "Meinung, Alternative",
+    "en": "opinion, alternative",
+    "es": "opinión, alternativa",
+    "fr": "opinion, alternative",
+    "it": "opinione, alternativa",
+    "pt": "opinião, alternativa"
+   },
+   "traducciones": {
+    "es": "Pienso que es…",
+    "en": "I think it's…",
+    "fr": "Je pense que c’est…",
+    "it": "Penso che sia…",
+    "pt": "Acho que é…"
+   }
+  },
+  {
+   "expresion": "Das gefällt mir.",
+   "funcion": {
+    "de": "Vorliebe",
+    "en": "preference",
+    "es": "preferencia",
+    "fr": "préférence",
+    "it": "preferenza",
+    "pt": "preferência"
+   },
+   "traducciones": {
+    "es": "Me gusta.",
+    "en": "I like it.",
+    "fr": "Cela me plaît.",
+    "it": "Mi piace.",
+    "pt": "Gosto disso."
+   }
+  },
+  {
+   "expresion": "Das ist nicht so gut.",
+   "funcion": {
+    "de": "vorsichtige Kritik",
+    "en": "careful criticism",
+    "es": "crítica suave",
+    "fr": "critique prudente",
+    "it": "critica prudente",
+    "pt": "crítica suave"
+   },
+   "traducciones": {
+    "es": "Eso no está tan bien.",
+    "en": "That's not so good.",
+    "fr": "Ce n'est pas très bien.",
+    "it": "Non è così buono.",
+    "pt": "Isso não é assim tão bom."
+   }
+  },
+  {
+   "expresion": "Und du?",
+   "funcion": {
+    "de": "nach der Meinung fragen",
+    "en": "asking for an opinion",
+    "es": "pedir la opinión",
+    "fr": "demander l'avis",
+    "it": "chiedere l'opinione",
+    "pt": "pedir a opinião"
+   },
+   "traducciones": {
+    "es": "¿Y vos?",
+    "en": "And you?",
+    "fr": "Et toi ?",
+    "it": "E tu?",
+    "pt": "E tu?"
+   }
+  },
+  {
+   "expresion": "Zum Beispiel…",
+   "funcion": {
+    "de": "Beispiel geben",
+    "en": "giving an example",
+    "es": "dar un ejemplo",
+    "fr": "donner un exemple",
+    "it": "dare un esempio",
+    "pt": "dar um exemplo"
+   },
+   "traducciones": {
+    "es": "Por ejemplo…",
+    "en": "For example…",
+    "fr": "Par exemple…",
+    "it": "Per esempio…",
+    "pt": "Por exemplo…"
+   }
+  },
+  {
+   "expresion": "Ich weiss nicht genau.",
+   "funcion": {
+    "de": "unsichere Meinung",
+    "en": "uncertain opinion",
+    "es": "opinión insegura",
+    "fr": "avis incertain",
+    "it": "opinione incerta",
+    "pt": "opinião insegura"
+   },
+   "traducciones": {
+    "es": "No sé bien.",
+    "en": "I'm not sure.",
+    "fr": "Je ne sais pas trop.",
+    "it": "Non so bene.",
+    "pt": "Não sei bem."
+   }
+  },
+  {
+   "expresion": "Das ist meine Meinung.",
+   "funcion": {
+    "de": "Meinung abschliessen",
+    "en": "closing the opinion",
+    "es": "cerrar la opinión",
+    "fr": "clore l'avis",
+    "it": "chiudere l'opinione",
+    "pt": "fechar a opinião"
+   },
+   "traducciones": {
+    "es": "Esa es mi opinión.",
+    "en": "That's my opinion.",
+    "fr": "C'est mon avis.",
+    "it": "Questa è la mia opinione.",
+    "pt": "Essa é a minha opinião."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": {
+   "de": "Schreiben Sie einer Freundin eine Postkarte über Ihre neue Wohnung: Was gefällt Ihnen, was nicht?",
+   "en": "Write a postcard to a friend about your new apartment: What do you like and what don't you like?",
+   "es": "Escriba una postal a una amiga sobre su nuevo departamento: ¿Qué le gusta y qué no?",
+   "fr": "Écrivez une carte postale à une amie au sujet de votre nouvel appartement : qu'est-ce qui vous plaît et qu'est-ce qui ne vous plaît pas ?",
+   "it": "Scriva una cartolina a un'amica sul suo nuovo appartamento: che cosa le piace e che cosa no?",
+   "pt": "Escreva um cartão-postal para uma amiga sobre seu novo apartamento: do que você gosta e do que não gosta?"
+  },
+  "requisitos": [
+   {
+    "de": "zwei Sätze mit *Ich mag…* und einer mit *Ich mag … nicht*",
+    "en": "two sentences with *Ich mag…* and one with *Ich mag … nicht*",
+    "es": "dos oraciones con *Ich mag…* y una con *Ich mag … nicht*",
+    "fr": "deux phrases avec *Ich mag…* et une avec *Ich mag … nicht*",
+    "it": "due frasi con *Ich mag…* e una con *Ich mag … nicht*",
+    "pt": "duas frases com *Ich mag…* e uma com *Ich mag … nicht*"
+   },
+   {
+    "de": "zwei Gründe mit *weil*",
+    "en": "two reasons with *weil*",
+    "es": "dos razones con *weil*",
+    "fr": "deux raisons avec *weil*",
+    "it": "due motivazioni con *weil*",
+    "pt": "dois motivos com *weil*"
+   },
+   {
+    "de": "*die Miete*, *der Vermieter* und *die Hausordnung* verwenden",
+    "en": "use *die Miete*, *der Vermieter* and *die Hausordnung*",
+    "es": "usar *die Miete*, *der Vermieter* y *die Hausordnung*",
+    "fr": "utiliser *die Miete*, *der Vermieter* et *die Hausordnung*",
+    "it": "usare *die Miete*, *der Vermieter* e *die Hausordnung*",
+    "pt": "usar *die Miete*, *der Vermieter* e *die Hausordnung*"
+   }
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": {
+    "de": "Drei Sätze: *Ich finde die Wohnung…, weil…*",
+    "en": "Three sentences: *Ich finde die Wohnung…, weil…*",
+    "es": "Tres oraciones: *Ich finde die Wohnung…, weil…*",
+    "fr": "Trois phrases : *Ich finde die Wohnung…, weil…*",
+    "it": "Tre frasi: *Ich finde die Wohnung…, weil…*",
+    "pt": "Três frases: *Ich finde die Wohnung…, weil…*"
+   }
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": {
+    "de": "Zwei Sätze über die *Nebenkosten*: gut oder schlecht?",
+    "en": "Two sentences about the *Nebenkosten*: good or bad?",
+    "es": "Dos oraciones sobre las *Nebenkosten*: ¿bien o mal?",
+    "fr": "Deux phrases sur les *Nebenkosten* : bien ou mal ?",
+    "it": "Due frasi sulle *Nebenkosten*: bene o male?",
+    "pt": "Duas frases sobre as *Nebenkosten*: boas ou ruins?"
+   }
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": {
+    "de": "60 Sekunden laut: Ihr *Zimmer* — gut oder schlecht?",
+    "en": "Speak for 60 seconds: your *Zimmer* — good or bad?",
+    "es": "Hable durante 60 segundos: su *Zimmer* — ¿bien o mal?",
+    "fr": "Parlez pendant 60 secondes : votre *Zimmer* — bien ou mal ?",
+    "it": "Parli per 60 secondi: il suo *Zimmer* — bene o male?",
+    "pt": "Fale por 60 segundos: seu *Zimmer* — bom ou ruim?"
+   }
+  }
+ ],
+ "autochequeo": [
+  {
+   "de": "Habe ich eine Meinung geäussert?",
+   "en": "Have I expressed an opinion?",
+   "es": "¿Expresé una opinión?",
+   "fr": "Ai-je exprimé une opinion ?",
+   "it": "Ho espresso un'opinione?",
+   "pt": "Expressei uma opinião?"
+  },
+  {
+   "de": "Habe ich, wenn möglich, einen Grund mit weil gegeben?",
+   "en": "Have I, where possible, given a reason with weil?",
+   "es": "¿Di, cuando era posible, una razón con «weil»?",
+   "fr": "Ai-je, lorsque c'était possible, donné une raison avec « weil » ?",
+   "it": "Ho dato, quando possibile, una motivazione con «weil»?",
+   "pt": "Dei, quando possível, um motivo com «weil»?"
+  },
+  {
+   "de": "Steht das Verb nach weil am Ende?",
+   "en": "Is the verb at the end after weil?",
+   "es": "¿El verbo está al final después de «weil»?",
+   "fr": "Le verbe est-il à la fin après « weil » ?",
+   "it": "Il verbo è alla fine dopo «weil»?",
+   "pt": "O verbo está no final depois de «weil»?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  },
+  {
+   "de": "Klingt der Satz natürlich?",
+   "en": "Does the sentence sound natural?",
+   "es": "¿La oración suena natural?",
+   "fr": "La phrase sonne-t-elle naturellement ?",
+   "it": "La frase suona naturale?",
+   "pt": "A frase soa natural?"
+  }
+ ],
+ "promptCorreccion": {
+  "de": "Konzentrieren Sie sich ausschliesslich darauf, ob die Meinung klar ist und ob weil richtig gebildet wird. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob mehr als eine Formel benutzt wird.",
+  "en": "Focus exclusively on whether the opinion is clear and whether weil is formed correctly. Do not rewrite the text. Also check whether more than one expression is used.",
+  "es": "Concéntrese exclusivamente en si la opinión está clara y si «weil» está bien construido. No reescriba el texto. Compruebe también si se utiliza más de una fórmula.",
+  "fr": "Concentrez-vous exclusivement sur la clarté de l'opinion et sur l'emploi correct de « weil ». Ne réécrivez pas le texte. Vérifiez également si plus d'une formule est utilisée.",
+  "it": "Si concentri esclusivamente sulla chiarezza dell'opinione e sul corretto uso di «weil». Non riscriva il testo. Verifichi anche se viene usata più di una formula.",
+  "pt": "Concentre-se exclusivamente em verificar se a opinião está clara e se «weil» está formado corretamente. Não reescreva o texto. Verifique também se foi usada mais de uma fórmula."
+ }
+}

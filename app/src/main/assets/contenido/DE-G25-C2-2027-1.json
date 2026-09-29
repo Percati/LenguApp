@@ -1,0 +1,356 @@
+{
+ "id": "DE-G25-C2-2027-1",
+ "skillId": "DE-G25",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C2",
+ "categoria": "grammar",
+ "topicId": "T11",
+ "titulo": "Appositionen",
+ "subtitulo": "Appositionen für dichte Berichterstattung",
+ "ancla": "Erkundungen C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Die Apposition — ein Nomen, das ein anderes ohne Verb näher bestimmt — ist eine der kompaktesten Verdichtungsformen des Deutschen: Merkel, die damalige Bundeskanzlerin, äusserte sich dazu. Sie ersetzt einen ganzen Relativsatz mit Kopula und wird in Berichten und Biografien systematisch genutzt.",
+ "cuadroReferencia": {
+  "titulo": "Vom Relativsatz zur Apposition",
+  "columnas": [
+   "Relativsatz",
+   "Apposition"
+  ],
+  "filas": [
+   [
+    "Merkel, die damals Bundeskanzlerin war, äusserte sich.",
+    "Merkel, die damalige Bundeskanzlerin, äusserte sich."
+   ],
+   [
+    "Bern, das die Hauptstadt der Schweiz ist, liegt im Mittelland.",
+    "Bern, die Hauptstadt der Schweiz, liegt im Mittelland."
+   ],
+   [
+    "Der Bericht, der ein internes Dokument war, wurde nie veröffentlicht.",
+    "Der Bericht, ein internes Dokument, wurde nie veröffentlicht."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Merkel, die damalige Bundeskanzlerin, äusserte sich zurückhaltend.",
+   "audio": true
+  },
+  {
+   "texto": "Bern, die Hauptstadt der Schweiz, liegt im Mittelland.",
+   "audio": true
+  },
+  {
+   "texto": "Der Bericht, ein internes Dokument, wurde nie veröffentlicht."
+  }
+ ],
+ "notas": [
+  "Die Apposition steht im gleichen Kasus wie das Bezugswort, das sie näher bestimmt.",
+  "Sie funktioniert nur, wenn die Kopula (ist, war) wegfallen kann, ohne dass Information verloren geht.",
+  "Appositionen sind in Biografien, Nachrichten und Nachschlagewerken extrem häufig, in gesprochener Sprache seltener."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet die Apposition auf sehr ähnliche Weise (Merkel, entonces canciller, se pronunció), sodass sich diese Konstruktion leicht überträgt. Die Schwierigkeit für Hispanophone liegt eher darin, den passenden Kasus zu markieren, wo das Spanische keinen Kasus kennt.",
+  "it": "Das Italienische bildet die Apposition genauso, oft sogar ohne Artikel (Merkel, allora cancelliera, …), die Konstruktion überträgt sich also direkt. Neu ist die Kasuskongruenz: Im Deutschen übernimmt die Apposition den Kasus ihres Bezugsworts (mit Merkel, der damaligen Bundeskanzlerin), auch in der Form mit als.",
+  "fr": "Das Französische bildet die Apposition genauso und lässt den Artikel oft weg (Merkel, alors chancelière). Französischsprachige übertragen die artikellose Form gern auch dort, wo das Deutsche einen Artikel braucht, und vergessen die Kasuskongruenz (mit Merkel, der damaligen Bundeskanzlerin).",
+  "pt": "Das Portugiesische bildet die Apposition genauso (Merkel, então chanceler), die Konstruktion überträgt sich direkt. Neu ist die Kasuskongruenz, besonders im Genitiv und nach Präpositionen (die Rede Merkels, der damaligen Kanzlerin), wo die portugiesischen Verschmelzungen (da, do) keinerlei Kasus zeigen.",
+  "en": "Das Englische bildet die Apposition genauso und oft ohne Artikel (Merkel, then chancellor), sie ist dort ein fester Bestandteil des journalistischen Stils. Neu ist nur die Kasuskongruenz, die das Englische nicht kennt (mit Merkel, der damaligen Bundeskanzlerin), auch in der Form mit als (as)."
+ },
+ "errores": [
+  "Den falschen Kasus für die Apposition wählen.",
+  "Die Kommas um die Apposition vergessen.",
+  "Eine Apposition bilden, wo die Kopula nicht wegfallen kann, ohne den Sinn zu verändern."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Das Datum nach *el lunes 3 de mayo* bilden: *am Montag 3 von Mai* statt *am Montag, dem 3. Mai*."
+  ],
+  "it": [
+   "Das Datum nach *lunedì 3 maggio* bilden: *am Montag 3 Mai* statt *am Montag, dem 3. Mai*."
+  ],
+  "fr": [
+   "Das Datum nach *lundi 3 mai* bilden und die Apposition ohne Artikel lassen: *am Montag 3. Mai* statt *am Montag, dem 3. Mai*."
+  ],
+  "pt": [
+   "Das Datum nach *segunda-feira, 3 de maio* bilden: *am Montag, 3 von Mai* statt *am Montag, dem 3. Mai*."
+  ],
+  "en": [
+   "Das Datum nach *on Monday, May 3rd* bilden: *am Montag, Mai 3.* statt *am Montag, dem 3. Mai*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der Wutbürger",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el ciudadano indignado",
+    "en": "angry citizen",
+    "fr": "le citoyen en colère",
+    "it": "il cittadino arrabbiato",
+    "pt": "o cidadão indignado"
+   }
+  },
+  {
+   "item": "die Deutungshoheit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el control del relato",
+    "en": "control of the narrative",
+    "fr": "la maîtrise du récit",
+    "it": "l'egemonia interpretativa",
+    "pt": "o domínio da narrativa"
+   }
+  },
+  {
+   "item": "die Faktenlage",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el estado de los hechos",
+    "en": "the facts of the matter",
+    "fr": "l'état des faits",
+    "it": "lo stato dei fatti",
+    "pt": "a situação factual"
+   }
+  },
+  {
+   "item": "die Meinungsfreiheit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la libertad de opinión",
+    "en": "freedom of opinion",
+    "fr": "la liberté d'opinion",
+    "it": "la libertà di opinione",
+    "pt": "a liberdade de opinião"
+   }
+  },
+  {
+   "item": "die Politikverdrossenheit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el desencanto con la política",
+    "en": "political disillusionment",
+    "fr": "le désenchantement politique",
+    "it": "la disaffezione verso la politica",
+    "pt": "o desencanto com a política"
+   }
+  },
+  {
+   "item": "die Spaltung der Gesellschaft",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la división de la sociedad",
+    "en": "social divide",
+    "fr": "la fracture sociale",
+    "it": "la spaccatura della società",
+    "pt": "a divisão da sociedade"
+   }
+  },
+  {
+   "item": "die Streitkultur",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cultura del debate",
+    "en": "culture of debate",
+    "fr": "la culture du débat",
+    "it": "la cultura del confronto",
+    "pt": "a cultura do debate"
+   }
+  },
+  {
+   "item": "etwas richtigstellen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "rectificar algo",
+    "en": "to set the record straight",
+    "fr": "rectifier qc",
+    "it": "rettificare qc",
+    "pt": "retificar algo"
+   }
+  },
+  {
+   "item": "Brücken bauen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "tender puentes",
+    "en": "to build bridges",
+    "fr": "jeter des ponts",
+    "it": "gettare ponti",
+    "pt": "construir pontes"
+   }
+  },
+  {
+   "item": "die Diskursverschiebung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el desplazamiento del discurso",
+    "en": "shifting of discourse",
+    "fr": "le déplacement du débat",
+    "it": "lo spostamento del dibattito",
+    "pt": "a deslocação do discurso"
+   }
+  },
+  {
+   "item": "die Halbwahrheit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la verdad a medias",
+    "en": "half-truth",
+    "fr": "la demi-vérité",
+    "it": "la mezza verità",
+    "pt": "a meia-verdade"
+   }
+  },
+  {
+   "item": "die Mitte der Gesellschaft",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el centro de la sociedad",
+    "en": "mainstream society",
+    "fr": "le centre de la société",
+    "it": "il centro della società",
+    "pt": "o centro da sociedade"
+   }
+  },
+  {
+   "item": "die Stammtischparole",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el eslogan de bar",
+    "en": "pub-talk slogan",
+    "fr": "le slogan de comptoir",
+    "it": "lo slogan da bar",
+    "pt": "o slogan de café"
+   }
+  },
+  {
+   "item": "die Verrohung der Sprache",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el embrutecimiento del lenguaje",
+    "en": "coarsening of language",
+    "fr": "l'ensauvagement du langage",
+    "it": "l'imbarbarimento del linguaggio",
+    "pt": "o embrutecimento da linguagem"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "…, die damalige…, …",
+   "funcion": "Apposition, zeitlich eingegrenzt",
+   "traducciones": {
+    "es": "…, entonces…, …",
+    "en": "…, then…, …",
+    "fr": "…, à l’époque…, …",
+    "it": "…, allora…, …",
+    "pt": "…, então…, …"
+   }
+  },
+  {
+   "expresion": "…, die Hauptstadt…, …",
+   "funcion": "Apposition, geografisch",
+   "traducciones": {
+    "es": "…, la capital de…, …",
+    "en": "…, the capital of…, …",
+    "fr": "…, la capitale de…, …",
+    "it": "…, la capitale di…, …",
+    "pt": "…, a capital de…, …"
+   }
+  },
+  {
+   "expresion": "…, ein internes Dokument, …",
+   "funcion": "Apposition, klassifizierend",
+   "traducciones": {
+    "es": "…, un documento interno, …",
+    "en": "…, an internal document, …",
+    "fr": "…, un document interne, …",
+    "it": "…, un documento interno, …",
+    "pt": "…, um documento interno, …"
+   }
+  },
+  {
+   "expresion": "…, selbst ein erfahrener…, …",
+   "funcion": "Apposition, verstärkend",
+   "traducciones": {
+    "es": "…, él mismo un experimentado…, …",
+    "en": "…, himself an experienced…, …",
+    "fr": "…, lui-même un/une… expérimenté(e), …",
+    "it": "…, lui stesso un… esperto, …",
+    "pt": "…, ele próprio um… experiente, …"
+   }
+  },
+  {
+   "expresion": "…, heute…, …",
+   "funcion": "Apposition mit aktuellem Bezug",
+   "traducciones": {
+    "es": "…, hoy…, …",
+    "en": "…, now…, …",
+    "fr": "…, aujourd’hui…, …",
+    "it": "…, oggi…, …",
+    "pt": "…, hoje…, …"
+   }
+  },
+  {
+   "expresion": "…, Autor mehrerer Bücher, …",
+   "funcion": "Apposition, biografisch",
+   "traducciones": {
+    "es": "…, autor de varios libros, …",
+    "en": "…, author of several books, …",
+    "fr": "…, auteur de plusieurs livres, …",
+    "it": "…, autore di diversi libri, …",
+    "pt": "…, autor de vários livros, …"
+   }
+  },
+  {
+   "expresion": "Die Apposition steht im falschen Kasus.",
+   "funcion": "den typischen Fehler benennen",
+   "traducciones": {
+    "es": "La aposición está en el caso equivocado.",
+    "en": "The apposition is in the wrong case.",
+    "fr": "L'apposition est au mauvais cas.",
+    "it": "L'apposizione è nel caso sbagliato.",
+    "pt": "A aposição está no caso errado."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie eine Nachricht über eine Debatte zur Spaltung der Gesellschaft, in der mehrere Personen und Institutionen vorkommen.",
+  "requisitos": [
+   "fünf Appositionen mit korrektem Kasus",
+   "eine Apposition mit *selbst*",
+   "eine, die einen ganzen Relativsatz ersetzt",
+   "*die Spaltung der Gesellschaft*, *die Politikverdrossenheit* und *der Wutbürger* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Relativsätze über Personen in Appositionen umwandeln."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Kasus prüfen: *mit Frau X, der Leiterin…*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "2 Minuten: eine Nachricht mit drei Appositionen vorlesen."
+  }
+ ],
+ "autochequeo": [
+  "Steht die Apposition im gleichen Kasus wie das Bezugswort?",
+  "Stehen Kommas um die Apposition?",
+  "Könnte die Kopula ohne Sinnverlust wegfallen?",
+  "Habe ich mindestens zwei verschiedene Appositionen benutzt?",
+  "Klingt der Text natürlich, wie ein echter Bericht oder eine Biografie?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Appositionen. Prüfen Sie den Kasus und die Kommasetzung. Schreiben Sie den Text nicht neu. Prüfen Sie auch, ob die Kopula tatsächlich wegfallen konnte, ohne Information zu verlieren."
+}

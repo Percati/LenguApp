@@ -1,0 +1,431 @@
+{
+ "id": "EN-F17-C2-2027-2",
+ "skillId": "EN-F17",
+ "order": 2,
+ "idioma": "en",
+ "nivel": "C2",
+ "categoria": "fluency",
+ "topicId": "T02",
+ "titulo": "Register Shifting: Formal vs. Informal",
+ "subtitulo": "Register on six axes: explaining investment",
+ "ancla": "EGP C2",
+ "challengeType": "adaptive_production",
+ "bilingue": false,
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 55
+ },
+ "descripcion": "At C2 register is controlled across six independent axes at once — contractions, vocabulary, sentence length, person, hedging and idiom — rather than as a single formal/informal switch, which is what lets a writer produce a genuinely intermediate register instead of an inconsistent mix.",
+ "cuadroReferencia": {
+  "titulo": "Six independent axes",
+  "columnas": [
+   "Axis",
+   "Informal pole",
+   "Formal pole"
+  ],
+  "filas": [
+   [
+    "Contractions",
+    "don't, it's",
+    "do not, it is"
+   ],
+   [
+    "Vocabulary",
+    "find out, sort out",
+    "discover, resolve"
+   ],
+   [
+    "Sentence length",
+    "short, simple",
+    "longer, subordinated"
+   ],
+   [
+    "Person",
+    "I think, you should",
+    "it is thought, one should"
+   ],
+   [
+    "Hedging",
+    "I guess, maybe",
+    "it may be the case that"
+   ],
+   [
+    "Idiom",
+    "phrasal, colloquial",
+    "Latinate, technical"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "It's worth noting that the figures, while broadly accurate, don't tell the whole story.",
+   "audio": true
+  },
+  {
+   "texto": "I guess what I'm saying is that the evidence doesn't fully support the conclusion.",
+   "audio": true
+  },
+  {
+   "texto": "One might reasonably question whether this holds up under scrutiny."
+  }
+ ],
+ "notas": [
+  "A genuinely intermediate register mixes some axes towards formal and others towards informal on purpose — for example, contractions kept but vocabulary raised — which reads as a controlled voice, not an inconsistency.",
+  "Moving all six axes together produces the two familiar extremes; moving them independently is what a mature, individual style actually sounds like.",
+  "An uncontrolled mix (contraction plus a very formal Latinate verb in the same clause, with no reason) is what a lower-level register error looks like — the difference from a controlled intermediate register is intentionality."
+ ],
+ "contraste": {
+  "es": "Spanish can mark register through tú/usted, which English lacks, so English register has to be carried entirely by vocabulary, contractions, sentence length and structure. Spanish speakers need to check these other axes consciously.",
+  "de": "German can mark register through du/Sie, which English lacks, so English register rests entirely on vocabulary, contractions, sentence length and structure. English contractions work like German spoken reductions (gibt's, hab's) as a signal of informality.",
+  "it": "Italian can mark register through tu/Lei, which English lacks, so English register rests on vocabulary, contractions, sentence length and structure. Italian speakers need to check these axes consciously.",
+  "fr": "French can mark register through tu/vous, which English lacks, so English register rests on vocabulary, contractions, sentence length and structure. English contractions work much like dropping ne in spoken French as a signal of informality.",
+  "pt": "Portuguese can mark register through tu, você and o senhor, which English lacks, so English register rests on vocabulary, contractions, sentence length and structure. Portuguese speakers need to check these axes consciously."
+ },
+ "errores": [
+  "Moving all six axes formal or informal together, producing a generic rather than individual register.",
+  "Mixing axes with no discernible pattern, which reads as inconsistency rather than a controlled voice.",
+  "Losing track of which axis is actually doing the work in a given sentence."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Treating long subordinate chains as the main marker of formality, as in Spanish, where English formality lives mainly in word choice."
+  ],
+  "de": [
+   "Equating formality with German passive and nominal style: *The implementation of the measure will be effected* instead of *We will implement the measure*."
+  ],
+  "it": [
+   "Treating long subordinate chains as the main marker of formality, as in Italian, where English formality lives mainly in word choice."
+  ],
+  "fr": [
+   "Treating long subordinate chains as the main marker of formality, as in French, where English formality lives mainly in word choice."
+  ],
+  "pt": [
+   "Treating long subordinate chains as the main marker of formality, as in Portuguese, where English formality lives mainly in word choice."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "compound interest",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el interés compuesto",
+    "de": "der Zinseszins",
+    "fr": "les intérêts composés",
+    "it": "l'interesse composto",
+    "pt": "os juros compostos"
+   }
+  },
+  {
+   "item": "disposable income",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la renta disponible",
+    "de": "das verfügbare Einkommen",
+    "fr": "le revenu disponible",
+    "it": "il reddito disponibile",
+    "pt": "o rendimento disponível"
+   }
+  },
+  {
+   "item": "to be frugal",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "ser austero",
+    "de": "sparsam sein",
+    "fr": "être économe",
+    "it": "essere frugale",
+    "pt": "ser poupado"
+   }
+  },
+  {
+   "item": "to diversify",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "diversificar",
+    "de": "streuen",
+    "fr": "diversifier",
+    "it": "diversificare",
+    "pt": "diversificar"
+   }
+  },
+  {
+   "item": "to squander",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "despilfarrar",
+    "de": "verschwenden",
+    "fr": "dilapider",
+    "it": "sperperare",
+    "pt": "esbanjar"
+   }
+  },
+  {
+   "item": "volatility",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la volatilidad",
+    "de": "die Volatilität",
+    "fr": "la volatilité",
+    "it": "la volatilità",
+    "pt": "a volatilidade"
+   }
+  },
+  {
+   "item": "a nest egg",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "los ahorros de reserva",
+    "de": "der Notgroschen",
+    "fr": "un bas de laine",
+    "it": "un gruzzolo",
+    "pt": "um pé-de-meia"
+   }
+  },
+  {
+   "item": "a return on investment",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el retorno de la inversión",
+    "de": "die Rendite",
+    "fr": "le retour sur investissement",
+    "it": "il ritorno sull'investimento",
+    "pt": "o retorno do investimento"
+   }
+  },
+  {
+   "item": "a speculative bubble",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una burbuja especulativa",
+    "de": "eine Spekulationsblase",
+    "fr": "une bulle spéculative",
+    "it": "una bolla speculativa",
+    "pt": "uma bolha especulativa"
+   }
+  },
+  {
+   "item": "financial literacy",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la educación financiera",
+    "de": "die Finanzkompetenz",
+    "fr": "la culture financière",
+    "it": "l'alfabetizzazione finanziaria",
+    "pt": "a literacia financeira"
+   }
+  },
+  {
+   "item": "prudent",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "prudente",
+    "de": "umsichtig",
+    "fr": "prudent",
+    "it": "prudente",
+    "pt": "prudente"
+   }
+  },
+  {
+   "item": "risk-averse",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "reacio al riesgo",
+    "de": "risikoscheu",
+    "fr": "réfractaire au risque",
+    "it": "avverso al rischio",
+    "pt": "avesso ao risco"
+   }
+  },
+  {
+   "item": "to hedge your bets",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "cubrirse las espaldas",
+    "de": "auf Nummer sicher gehen",
+    "fr": "ménager la chèvre et le chou",
+    "it": "non mettere tutte le uova nello stesso paniere",
+    "pt": "jogar pelo seguro"
+   }
+  },
+  {
+   "item": "to ride out a downturn",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "capear una caída",
+    "de": "einen Abschwung aussitzen",
+    "fr": "traverser une récession",
+    "it": "superare una recessione",
+    "pt": "resistir a uma recessão"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "It's worth noting that…",
+   "funcion": "contraction kept, vocabulary raised",
+   "traducciones": {
+    "es": "Vale la pena señalar que…",
+    "de": "Es ist erwähnenswert, dass…",
+    "fr": "Il convient de noter que…",
+    "it": "Vale la pena notare che…",
+    "pt": "Vale a pena assinalar que…"
+   }
+  },
+  {
+   "expresion": "I guess what I'm saying is…",
+   "funcion": "informal person/hedge, formal content",
+   "traducciones": {
+    "es": "Supongo que lo que digo es…",
+    "de": "Ich glaube, worauf ich hinauswill, ist…",
+    "fr": "Je suppose que ce que j’essaie de dire, c’est…",
+    "it": "Credo che quello che sto cercando di dire sia…",
+    "pt": "Acho que o que estou a tentar dizer é…"
+   }
+  },
+  {
+   "expresion": "One might reasonably question whether…",
+   "funcion": "formal person, careful hedge",
+   "traducciones": {
+    "es": "Cabría razonablemente preguntarse si…",
+    "de": "Man könnte mit Recht fragen, ob…",
+    "fr": "On pourrait raisonnablement se demander si…",
+    "it": "Ci si potrebbe ragionevolmente chiedere se…",
+    "pt": "Poder-se-ia razoavelmente questionar se…"
+   }
+  },
+  {
+   "expresion": "…, though that's just my take.",
+   "funcion": "formal clause, informal closing hedge",
+   "traducciones": {
+    "es": "…, aunque esa es solo mi impresión.",
+    "de": "…, wobei das nur meine Einschätzung ist.",
+    "fr": "…, même si ce n’est que mon avis.",
+    "it": "…, anche se questa è solo la mia opinione.",
+    "pt": "…, embora seja apenas a minha leitura."
+   }
+  },
+  {
+   "expresion": "To put it plainly,…",
+   "funcion": "signals a deliberate register drop",
+   "traducciones": {
+    "es": "Para decirlo claramente,…",
+    "de": "Um es klar zu sagen,…",
+    "fr": "Pour le dire clairement,…",
+    "it": "Per dirla chiaramente,…",
+    "pt": "Para o dizer claramente,…"
+   }
+  },
+  {
+   "expresion": "…, if that makes sense.",
+   "funcion": "informal check, in an otherwise formal register",
+   "traducciones": {
+    "es": "…, si eso tiene sentido.",
+    "de": "…, falls das verständlich ist.",
+    "fr": "…, si cela a du sens.",
+    "it": "…, se ha senso.",
+    "pt": "…, se isso fizer sentido."
+   }
+  },
+  {
+   "expresion": "Forgive the formality, but…",
+   "funcion": "flags a deliberate raise in register",
+   "traducciones": {
+    "es": "Perdón por la formalidad, pero…",
+    "de": "Verzeihen Sie die Förmlichkeit, aber…",
+    "fr": "Pardonnez la formalité, mais…",
+    "it": "Perdoni la formalità, ma…",
+    "pt": "Perdoe a formalidade, mas…"
+   }
+  },
+  {
+   "expresion": "In writing I'd put it differently.",
+   "funcion": "contrasts spoken and written register explicitly",
+   "traducciones": {
+    "es": "Por escrito lo pondría distinto.",
+    "de": "Schriftlich würde ich es anders formulieren.",
+    "fr": "À l'écrit, je le formulerais autrement.",
+    "it": "Per iscritto lo direi diversamente.",
+    "pt": "Por escrito diria isso de outra forma."
+   }
+  },
+  {
+   "expresion": "That's the version for the minutes.",
+   "funcion": "marks one register as the official one",
+   "traducciones": {
+    "es": "Esa es la versión para el acta.",
+    "de": "Das ist die Fassung fürs Protokoll.",
+    "fr": "C'est la version pour le procès-verbal.",
+    "it": "Questa è la versione per il verbale.",
+    "pt": "Essa é a versão para a ata."
+   }
+  },
+  {
+   "expresion": "Off the record, though —",
+   "funcion": "controlled drop for a single remark",
+   "traducciones": {
+    "es": "Ahora, extraoficialmente…",
+    "de": "Inoffiziell allerdings —",
+    "fr": "Officieusement, cela dit —",
+    "it": "Ufficiosamente, però —",
+    "pt": "Extraoficialmente, no entanto —"
+   }
+  },
+  {
+   "expresion": "I'll keep the idiom out of this one.",
+   "funcion": "suppresses one register axis on purpose",
+   "traducciones": {
+    "es": "En esto voy a dejar de lado los modismos.",
+    "de": "Hier lasse ich die Redewendungen weg.",
+    "fr": "Ici, je laisse de côté les expressions imagées.",
+    "it": "Qui lascio da parte i modi di dire.",
+    "pt": "Aqui deixo de lado as expressões idiomáticas."
+   }
+  },
+  {
+   "expresion": "Same content, less starch.",
+   "funcion": "announces a downshift without changing substance",
+   "traducciones": {
+    "es": "El mismo contenido, con menos almidón.",
+    "de": "Gleicher Inhalt, weniger Steifheit.",
+    "fr": "Même contenu, moins d'empesé.",
+    "it": "Stesso contenuto, meno rigidità.",
+    "pt": "O mesmo conteúdo, com menos engomado."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Explain compound interest three ways: to a child, to a colleague at lunch and in a bank's information leaflet.",
+  "requisitos": [
+   "each version distinct on at least four axes",
+   "one axis kept identical across all three on purpose",
+   "the same core facts",
+   "use *compound interest*, *to diversify* and *volatility*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write one sentence about *volatility* at six register points."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Identify which axis you find hardest to control."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 2 minutes on why people *squander* savings — then 30 seconds as a leaflet."
+  }
+ ],
+ "autochequeo": [
+  "Are the six axes moved independently, not all together?",
+  "Is there a discernible pattern to which axes are formal and which aren't?",
+  "Does the resulting register read as a controlled individual voice?",
+  "Would a careful reader sense intention rather than inconsistency?",
+  "Is at least one axis deliberately mismatched from the others?"
+ ],
+ "promptCorreccion": "Focus only on register control across contractions, vocabulary, sentence length, person, hedging and idiom. Check whether any mismatch reads as intentional or as an error. Do not rewrite the text."
+}

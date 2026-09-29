@@ -33,7 +33,7 @@ class ContenidoAssetsTest {
     }
 
     @Test
-    fun `todo el contenido 2026 del piloto carga sin excepciones`() {
+    fun `todo el contenido embebido (2026 completo y 2027) carga sin excepciones`() {
         val archivos = carpetaContenido().listFiles { f -> f.extension == "json" }
             ?.sortedBy { it.name } ?: emptyList()
         assertTrue("no se encontraron JSON en assets/contenido", archivos.isNotEmpty())
@@ -49,17 +49,20 @@ class ContenidoAssetsTest {
         val fichas = contenidos.filterIsInstance<Ficha>()
         val especiales = contenidos.filterIsInstance<SemanaEspecial>()
 
-        // Estado del contenido: 51 fichas 2026 (37-53), EN C1 + EN B2 + DE B2
-        // (17 fichas cada uno de EN B2 y DE B2, es 34 de C1... ver el detalle
-        // real: 42 fichas de skill + 9 semanas especiales, 3 por combinacion
-        // idioma-nivel (2 repaso + 1 Survival). El id de repaso/Survival
-        // lleva el nivel ademas del idioma porque ingles tiene dos niveles
-        // con calendario propio en 2026, y cada uno tiene su propia semana
-        // de repaso y Survival -- no comparten texto.
-        assertEquals(51, contenidos.size)
-        assertEquals(42, fichas.size)
-        assertEquals(9, especiales.size)
-        assertEquals(6, especiales.count { it.clase == Clase.REVIEW })
+        // Estado del contenido (sept 2026, FALTANTES.md secciones 11-12): ya
+        // no hay motivo para separar por anio en los assets embebidos --
+        // 2026 (piloto + los 7 pares parciales) y 2027 (los 10 pares) estan
+        // los dos cerrados, y componer.py compone las tres capas reales sin
+        // filtrar. 606 fichas + 56 semanas especiales = 662. De las
+        // especiales, 53 son repaso (4 por par x 10 pares 2027, mas las 6
+        // del piloto 2026, mas las 7 de los pares parciales 2026) y 3 son
+        // Survival (solo el piloto: el Survival trimestral de 2027 vive en
+        // el fin de semana, no en una semana especial -- ver CLAUDE.md,
+        // regla dura #11 y el switch de "desafio de fin de semana").
+        assertEquals(662, contenidos.size)
+        assertEquals(606, fichas.size)
+        assertEquals(56, especiales.size)
+        assertEquals(53, especiales.count { it.clase == Clase.REVIEW })
         assertEquals(3, especiales.count { it.clase == Clase.SURVIVAL })
     }
 

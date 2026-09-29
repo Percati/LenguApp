@@ -1,0 +1,411 @@
+{
+ "id": "EN-F10-C2-2027-1",
+ "skillId": "EN-F10",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C2",
+ "categoria": "fluency",
+ "topicId": "T09",
+ "titulo": "Speculating and Predicting",
+ "subtitulo": "A prediction as a scenario tree",
+ "ancla": "EGP C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 55
+ },
+ "descripcion": "At C2 a prediction is built as a scenario tree: naming the most likely path, at least one credible alternative, and the specific signal that would tell you which one is actually happening. This is speculation as structured analysis, not a single graded guess.",
+ "cuadroReferencia": {
+  "titulo": "The scenario tree",
+  "columnas": [
+   "Element",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Most likely path",
+    "The most probable outcome is a gradual decline."
+   ],
+   [
+    "Credible alternative",
+    "Though a sharper correction can't be excluded."
+   ],
+   [
+    "Deciding signal",
+    "The key thing to watch is whether demand holds through the next quarter."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The most probable outcome is a gradual decline, though a sharper correction can't be excluded.",
+   "audio": true
+  },
+  {
+   "texto": "The key thing to watch is whether demand holds through the next quarter.",
+   "audio": true
+  },
+  {
+   "texto": "If that indicator turns, the whole picture changes."
+  }
+ ],
+ "notas": [
+  "Naming a deciding signal turns a prediction into something falsifiable and useful, not just a guess.",
+  "Can't be excluded is a precise, understated way to keep a less likely scenario genuinely on the table.",
+  "This structure is expected in expert commentary — a prediction with no alternative scenario reads as overconfident."
+ ],
+ "contraste": {
+  "es": "Lo que habría que vigilar es… corresponds well to the key thing to watch is…, so building scenarios with a clear signal transfers directly. The C2 point is to name that signal explicitly rather than leave the alternative scenario open.",
+  "de": "Entscheidend wird sein, ob… corresponds closely to the key thing to watch is whether…. German speakers transfer the move well; the English phrase is more informal and more common in spoken analysis.",
+  "it": "Il punto da tenere d'occhio è… corresponds exactly to the key thing to watch is… (tenere d'occhio – keep an eye on). Building scenarios with a clear signal therefore transfers directly.",
+  "fr": "Ce qu'il faudra surveiller, c'est… corresponds closely to the key thing to watch is…. The cleft structure is the same in both languages, so the move transfers directly.",
+  "pt": "O que convém acompanhar é… or, in Brazil, ficar de olho em… corresponds well to the key thing to watch / keep an eye on. The move transfers directly."
+ },
+ "errores": [
+  "Naming an alternative scenario without any signal that would distinguish it from the main one.",
+  "Presenting only the most likely path, with no genuine alternative considered.",
+  "Using can't be excluded for something that's actually just as likely as the main scenario, understating it unfairly."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Cabe la posibilidad de que* rendered as *It fits the possibility that* instead of *There is a possibility that*."
+  ],
+  "de": [
+   "*Denkbar wäre auch* rendered as *Thinkable would also be* instead of *It's also conceivable that*."
+  ],
+  "it": [
+   "*Resta da vedere* rendered as *It rests to see* instead of *It remains to be seen*."
+  ],
+  "fr": [
+   "*Reste à savoir si* rendered as *Rests to know if* instead of *It remains to be seen whether*."
+  ],
+  "pt": [
+   "*Resta saber se* rendered as *Rests to know if* instead of *It remains to be seen whether*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a steep learning curve",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "una curva de aprendizaje pronunciada",
+    "de": "eine steile Lernkurve",
+    "fr": "une courbe d'apprentissage abrupte",
+    "it": "una curva di apprendimento ripida",
+    "pt": "uma curva de aprendizagem acentuada"
+   }
+  },
+  {
+   "item": "critical thinking",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el pensamiento crítico",
+    "de": "das kritische Denken",
+    "fr": "l'esprit critique",
+    "it": "il pensiero critico",
+    "pt": "o pensamento crítico"
+   }
+  },
+  {
+   "item": "inquisitive",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "curioso, inquisitivo",
+    "de": "wissbegierig",
+    "fr": "curieux",
+    "it": "curioso",
+    "pt": "inquisitivo"
+   }
+  },
+  {
+   "item": "rote learning",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el aprendizaje de memoria",
+    "de": "das Auswendiglernen",
+    "fr": "l'apprentissage par cœur",
+    "it": "l'apprendimento mnemonico",
+    "pt": "a aprendizagem decorada"
+   }
+  },
+  {
+   "item": "to cram",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "empollar",
+    "de": "pauken",
+    "fr": "bachoter",
+    "it": "studiare all'ultimo",
+    "pt": "marrar"
+   }
+  },
+  {
+   "item": "to grasp a concept",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "captar un concepto",
+    "de": "ein Konzept begreifen",
+    "fr": "saisir un concept",
+    "it": "afferrare un concetto",
+    "pt": "compreender um conceito"
+   }
+  },
+  {
+   "item": "a well-rounded education",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una formación integral",
+    "de": "eine umfassende Bildung",
+    "fr": "une éducation complète",
+    "it": "un'istruzione completa",
+    "pt": "uma educação completa"
+   }
+  },
+  {
+   "item": "erudite",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "erudito",
+    "de": "gelehrt",
+    "fr": "érudit",
+    "it": "erudito",
+    "pt": "erudito"
+   }
+  },
+  {
+   "item": "pedagogy",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la pedagogía",
+    "de": "die Pädagogik",
+    "fr": "la pédagogie",
+    "it": "la pedagogia",
+    "pt": "a pedagogia"
+   }
+  },
+  {
+   "item": "to be self-taught",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "ser autodidacta",
+    "de": "Autodidakt sein",
+    "fr": "être autodidacte",
+    "it": "essere autodidatta",
+    "pt": "ser autodidata"
+   }
+  },
+  {
+   "item": "to excel at",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "destacar en",
+    "de": "herausragen in",
+    "fr": "exceller en",
+    "it": "eccellere in",
+    "pt": "destacar-se em"
+   }
+  },
+  {
+   "item": "to foster curiosity",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "fomentar la curiosidad",
+    "de": "Neugier fördern",
+    "fr": "encourager la curiosité",
+    "it": "stimolare la curiosità",
+    "pt": "fomentar a curiosidade"
+   }
+  },
+  {
+   "item": "to plateau",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "estancarse",
+    "de": "auf einem Plateau stagnieren",
+    "fr": "stagner",
+    "it": "arrivare a un plateau",
+    "pt": "estagnar"
+   }
+  },
+  {
+   "item": "to spoon-feed",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dárselo todo masticado",
+    "de": "vorkauen",
+    "fr": "mâcher le travail",
+    "it": "imboccare",
+    "pt": "dar tudo mastigado"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "The most probable outcome is…",
+   "funcion": "names the main path",
+   "traducciones": {
+    "es": "el resultado más probable es…",
+    "de": "Das wahrscheinlichste Ergebnis ist…",
+    "fr": "L’issue la plus probable est…",
+    "it": "L’esito più probabile è…",
+    "pt": "O resultado mais provável é…"
+   }
+  },
+  {
+   "expresion": "…can't be excluded.",
+   "funcion": "keeps an alternative on the table",
+   "traducciones": {
+    "es": "…no se puede excluir.",
+    "de": "…kann nicht ausgeschlossen werden.",
+    "fr": "…ne peut être exclu(e).",
+    "it": "…non può essere escluso/a.",
+    "pt": "…não pode ser excluído/a."
+   }
+  },
+  {
+   "expresion": "The key thing to watch is…",
+   "funcion": "names the deciding signal",
+   "traducciones": {
+    "es": "lo clave a observar es…",
+    "de": "Worauf es besonders zu achten gilt, ist…",
+    "fr": "Le point clé à surveiller est…",
+    "it": "La cosa chiave da tenere d’occhio è…",
+    "pt": "O ponto principal a observar é…"
+   }
+  },
+  {
+   "expresion": "If that turns, the picture changes.",
+   "funcion": "conditional pivot",
+   "traducciones": {
+    "es": "si eso cambia, el panorama cambia.",
+    "de": "Wenn sich das ändert, ändert sich das Bild.",
+    "fr": "Si cela change, la situation change.",
+    "it": "Se cambia quello, cambia il quadro.",
+    "pt": "Se isso mudar, o panorama muda."
+   }
+  },
+  {
+   "expresion": "A less likely but still credible scenario is…",
+   "funcion": "names a real alternative",
+   "traducciones": {
+    "es": "un escenario menos probable pero creíble es…",
+    "de": "Ein weniger wahrscheinliches, aber dennoch glaubwürdiges Szenario ist…",
+    "fr": "Un scénario moins probable mais tout de même crédible est…",
+    "it": "Uno scenario meno probabile ma comunque credibile è…",
+    "pt": "Um cenário menos provável, mas ainda assim credível, é…"
+   }
+  },
+  {
+   "expresion": "This will largely hinge on…",
+   "funcion": "names the deciding factor",
+   "traducciones": {
+    "es": "esto dependerá en gran medida de…",
+    "de": "Das wird weitgehend von… abhängen.",
+    "fr": "Cela dépendra en grande partie de…",
+    "it": "Dipenderà in gran parte da…",
+    "pt": "Isto dependerá em grande medida de…"
+   }
+  },
+  {
+   "expresion": "The base rate here is against it.",
+   "funcion": "grounds the forecast in how often it usually happens",
+   "traducciones": {
+    "es": "La frecuencia de base juega en contra.",
+    "de": "Die Grundwahrscheinlichkeit spricht dagegen.",
+    "fr": "La fréquence de base joue contre.",
+    "it": "La frequenza di base gioca contro.",
+    "pt": "A frequência de base joga contra."
+   }
+  },
+  {
+   "expresion": "I'd put it at better than even.",
+   "funcion": "gives the prediction a rough probability",
+   "traducciones": {
+    "es": "Yo lo pondría en algo más que un cincuenta por ciento.",
+    "de": "Ich würde es bei etwas über fünfzig Prozent ansetzen.",
+    "fr": "Je le situerais un peu au-dessus de cinquante pour cent.",
+    "it": "Lo metterei poco sopra il cinquanta per cento.",
+    "pt": "Colocaria isso um pouco acima dos cinquenta por cento."
+   }
+  },
+  {
+   "expresion": "The tail risk is what I'd worry about.",
+   "funcion": "names the unlikely but costly branch",
+   "traducciones": {
+    "es": "Lo que me preocuparía es el escenario extremo.",
+    "de": "Sorgen würde mir das unwahrscheinliche Extrem machen.",
+    "fr": "Ce qui m'inquiéterait, c'est le scénario extrême.",
+    "it": "Ciò che mi preoccuperebbe è lo scenario estremo.",
+    "pt": "O que me preocuparia é o cenário extremo."
+   }
+  },
+  {
+   "expresion": "By this time next year we'll know.",
+   "funcion": "sets a horizon for the forecast",
+   "traducciones": {
+    "es": "Para esta altura del año que viene lo sabremos.",
+    "de": "Nächstes Jahr um diese Zeit wissen wir es.",
+    "fr": "D'ici un an, nous le saurons.",
+    "it": "Tra un anno lo sapremo.",
+    "pt": "Por esta altura do próximo ano saberemos."
+   }
+  },
+  {
+   "expresion": "That forecast assumes nothing else moves.",
+   "funcion": "exposes the assumption behind a prediction",
+   "traducciones": {
+    "es": "Ese pronóstico supone que nada más se mueve.",
+    "de": "Diese Prognose setzt voraus, dass sich sonst nichts ändert.",
+    "fr": "Cette prévision suppose que rien d'autre ne bouge.",
+    "it": "Quella previsione presuppone che nulla altro cambi.",
+    "pt": "Essa previsão pressupõe que nada mais se mexe."
+   }
+  },
+  {
+   "expresion": "I've been wrong about this before.",
+   "funcion": "prices in one's own track record",
+   "traducciones": {
+    "es": "Ya me equivoqué con esto antes.",
+    "de": "Damit lag ich schon einmal falsch.",
+    "fr": "Je me suis déjà trompé là-dessus.",
+    "it": "Su questo mi sono già sbagliato.",
+    "pt": "Já me enganei nisto antes."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Forecast how school assessment will change in the next decade.",
+  "requisitos": [
+   "the most probable path",
+   "at least one credible alternative",
+   "the specific signal that would tell you which one is happening",
+   "use *rote learning*, *critical thinking* and *to cram*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Name the signal you'd watch to know whether *rote learning* is really declining."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Write the alternative scenario in three sentences."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 2 minutes: *This will largely hinge on…* — about how people *grasp a concept*."
+  }
+ ],
+ "autochequeo": [
+  "Is a most-likely path named clearly?",
+  "Is at least one credible alternative included, not just a token mention?",
+  "Is there a specific, checkable signal that would distinguish the scenarios?",
+  "Would an expert in this field find the analysis structured, not just a guess?",
+  "Have I avoided hedging so much that the analysis says nothing useful?"
+ ],
+ "promptCorreccion": "Focus only on the scenario structure: main path, alternative, deciding signal. Check whether the alternative is genuinely credible and the signal genuinely checkable. Do not rewrite the text."
+}

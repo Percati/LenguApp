@@ -1,0 +1,411 @@
+{
+ "id": "DE-F09-C2-2027-2",
+ "skillId": "DE-F09",
+ "order": 2,
+ "idioma": "de",
+ "nivel": "C2",
+ "categoria": "fluency",
+ "topicId": "T10",
+ "titulo": "Argumentieren und überzeugen",
+ "subtitulo": "Steelman am Esstisch",
+ "ancla": "Erkundungen C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Auf C2 wird ein Argument gegen die stärkste, nicht die schwächste Version des Gegenarguments aufgebaut — die sogenannte Steelman-Technik. Das unterscheidet ein überzeugendes Fachargument von einer rhetorischen Übung, die nur leicht zu widerlegende Einwände vorwegnimmt.",
+ "cuadroReferencia": {
+  "titulo": "Gegen die stärkste Version argumentieren",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Stärkstes Gegenargument formulieren",
+    "Die überzeugendste Einwendung dagegen lautet, dass…"
+   ],
+   [
+    "Es ernst nehmen",
+    "Dieser Punkt hat durchaus Gewicht."
+   ],
+   [
+    "Trotzdem widerlegen",
+    "Dennoch überwiegen die Vorteile aus folgendem Grund…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Die überzeugendste Einwendung dagegen lautet, dass die Kosten kurzfristig steigen würden.",
+   "audio": true
+  },
+  {
+   "texto": "Dieser Punkt hat durchaus Gewicht und sollte nicht kleingeredet werden.",
+   "audio": true
+  },
+  {
+   "texto": "Dennoch überwiegen die langfristigen Vorteile aus folgendem Grund…"
+  }
+ ],
+ "notas": [
+  "Ein schwaches Gegenargument zu widerlegen, wirkt auf ein Fachpublikum unehrlich — die Steelman-Technik ist deshalb Standard in ernsthafter Argumentation.",
+  "Dieser Punkt hat durchaus Gewicht erkennt den Einwand explizit an, bevor er widerlegt wird, was die eigene Position stärker macht.",
+  "Diese Technik funktioniert nur, wenn das Gegenargument wirklich das stärkste verfügbare ist, nicht ein bequemes."
+ ],
+ "contraste": {
+  "es": "La objeción de más peso entspricht genau der gewichtigste Einwand, mit demselben Bild (peso – Gewicht). Im Argument ist Einwand üblich, Einwendung ist eher juristisch.",
+  "it": "L'obiezione più forte entspricht genau der stärkste Einwand, und die Technik, ihn zuerst ernst zu nehmen, ist aus dem testo argomentativo vertraut. Hinweis zur Wortwahl: Einwendung ist im Deutschen vor allem ein juristischer Begriff, im Argument ist Einwand üblich.",
+  "fr": "L'objection la plus sérieuse entspricht eher der gewichtigste Einwand als der ernsthafteste. Die Technik, den stärksten Einwand vorwegzunehmen, kennt die dissertation gut; im Argument ist Einwand üblich, Einwendung ist eher juristisch.",
+  "pt": "A objeção de maior peso entspricht genau der gewichtigste Einwand, mit demselben Bild (peso – Gewicht). Im Argument ist Einwand üblich, Einwendung ist eher juristisch.",
+  "en": "Die angelsächsische Diskussionskultur kennt die Technik ausdrücklich (steelmanning, the strongest objection – der stärkste Einwand). Englischsprachige übertragen sie deshalb gut; im Argument ist Einwand üblich, Einwendung ist eher juristisch."
+ },
+ "errores": [
+  "Ein schwaches statt des stärksten Gegenarguments widerlegen, was unehrlich wirkt.",
+  "Das Gegenargument nennen, ohne es ernst zu nehmen, bevor man es widerlegt.",
+  "Die eigene Widerlegung ohne konkreten Grund präsentieren, nur als Behauptung."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Es cierto que…, pero* als *Es ist sicher, dass…, aber* übertragen statt *Es stimmt zwar, dass…, aber*."
+  ],
+  "it": [
+   "*Ammesso che* als *Zugelassen, dass* übertragen statt *Angenommen, dass* oder *Zugegeben*."
+  ],
+  "fr": [
+   "*Force est de constater* als *Kraft ist festzustellen* übertragen statt *Man muss feststellen*."
+  ],
+  "pt": [
+   "*É certo que…, mas* als *Es ist sicher, dass…, aber* übertragen statt *Es stimmt zwar, dass…, aber*."
+  ],
+  "en": [
+   "*Granted, …* als *Gewährt, …* übertragen statt *Zugegeben, …*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Ritual",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el ritual",
+    "en": "ritual",
+    "fr": "le rituel",
+    "it": "il rituale",
+    "pt": "o ritual"
+   }
+  },
+  {
+   "item": "die Ernährungswende",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la transición alimentaria",
+    "en": "dietary shift",
+    "fr": "la transition alimentaire",
+    "it": "la transizione alimentare",
+    "pt": "a transição alimentar"
+   }
+  },
+  {
+   "item": "die Hausmannskost",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la comida casera",
+    "en": "home cooking",
+    "fr": "la cuisine familiale",
+    "it": "la cucina casalinga",
+    "pt": "a comida caseira"
+   }
+  },
+  {
+   "item": "die Regionalität",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el origen regional",
+    "en": "regional sourcing",
+    "fr": "l'origine locale",
+    "it": "la territorialità",
+    "pt": "a regionalidade"
+   }
+  },
+  {
+   "item": "die Tafelrunde",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la sobremesa compartida",
+    "en": "gathering around the table",
+    "fr": "la tablée",
+    "it": "la tavolata",
+    "pt": "a mesa partilhada"
+   }
+  },
+  {
+   "item": "die Tischkultur",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cultura de la mesa",
+    "en": "table culture",
+    "fr": "l'art de la table",
+    "it": "la cultura della tavola",
+    "pt": "a cultura da mesa"
+   }
+  },
+  {
+   "item": "das Festessen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el banquete",
+    "en": "feast",
+    "fr": "le festin",
+    "it": "il banchetto",
+    "pt": "o banquete"
+   }
+  },
+  {
+   "item": "das Masshalten",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la moderación",
+    "en": "moderation",
+    "fr": "la modération",
+    "it": "la moderazione",
+    "pt": "a moderação"
+   }
+  },
+  {
+   "item": "der Wochenmarkt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el mercado semanal",
+    "en": "weekly market",
+    "fr": "le marché hebdomadaire",
+    "it": "il mercato settimanale",
+    "pt": "o mercado semanal"
+   }
+  },
+  {
+   "item": "die Esskultur",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cultura gastronómica",
+    "en": "food culture",
+    "fr": "la culture culinaire",
+    "it": "la cultura gastronomica",
+    "pt": "a cultura gastronómica"
+   }
+  },
+  {
+   "item": "die Geselligkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la sociabilidad",
+    "en": "conviviality",
+    "fr": "la convivialité",
+    "it": "la convivialità",
+    "pt": "a convivialidade"
+   }
+  },
+  {
+   "item": "zu Tisch bitten",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "invitar a sentarse a la mesa",
+    "en": "to call to the table",
+    "fr": "inviter à passer à table",
+    "it": "invitare a tavola",
+    "pt": "chamar para a mesa"
+   }
+  },
+  {
+   "item": "über den eigenen Tellerrand schauen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mirar más allá de lo propio",
+    "en": "to look beyond one's own plate",
+    "fr": "voir plus loin que le bout de son nez",
+    "it": "guardare oltre il proprio orticello",
+    "pt": "ver para lá do próprio umbigo"
+   }
+  },
+  {
+   "item": "überliefern",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "transmitir",
+    "en": "to hand down",
+    "fr": "transmettre",
+    "it": "tramandare",
+    "pt": "transmitir"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Die überzeugendste Einwendung dagegen lautet, dass…",
+   "funcion": "stärkstes Gegenargument benennen",
+   "traducciones": {
+    "es": "la objeción más convincente en contra es que…",
+    "en": "the strongest objection to this is that…",
+    "fr": "L’objection la plus forte est que…",
+    "it": "L’obiezione più forte è che…",
+    "pt": "A objeção mais forte é que…"
+   }
+  },
+  {
+   "expresion": "Dieser Punkt hat durchaus Gewicht.",
+   "funcion": "Gegenargument ernst nehmen",
+   "traducciones": {
+    "es": "este punto tiene realmente peso",
+    "en": "this point genuinely carries weight",
+    "fr": "Ce point a réellement du poids.",
+    "it": "Questo punto ha davvero un peso.",
+    "pt": "Este ponto tem realmente peso."
+   }
+  },
+  {
+   "expresion": "Dennoch überwiegen…aus folgendem Grund…",
+   "funcion": "Widerlegung mit Begründung",
+   "traducciones": {
+    "es": "aun así, prevalecen… por la siguiente razón…",
+    "en": "nevertheless,…outweigh this for the following reason…",
+    "fr": "Néanmoins, … l’emportent pour la raison suivante…",
+    "it": "Tuttavia, … prevalgono per il seguente motivo…",
+    "pt": "Ainda assim, … prevalecem pela seguinte razão…"
+   }
+  },
+  {
+   "expresion": "Selbst wenn man das zugesteht, …",
+   "funcion": "Zugeständnis vor der Widerlegung",
+   "traducciones": {
+    "es": "incluso si se concede eso, …",
+    "en": "even granting that, …",
+    "fr": "Même en admettant cela, …",
+    "it": "Anche ammettendo questo, …",
+    "pt": "Mesmo concedendo isso, …"
+   }
+  },
+  {
+   "expresion": "Das lässt sich nicht einfach vom Tisch wischen.",
+   "funcion": "erkennt den Einwand nachdrücklich an",
+   "traducciones": {
+    "es": "eso no se puede simplemente descartar",
+    "en": "that can't simply be dismissed",
+    "fr": "On ne peut pas simplement l’écarter.",
+    "it": "Non si può semplicemente liquidare la questione.",
+    "pt": "Isso não pode ser simplesmente descartado."
+   }
+  },
+  {
+   "expresion": "Trotz dieses berechtigten Einwands…",
+   "funcion": "Übergang zur Widerlegung",
+   "traducciones": {
+    "es": "a pesar de esta objeción legítima…",
+    "en": "despite this legitimate objection…",
+    "fr": "Malgré cette objection légitime…",
+    "it": "Nonostante questa obiezione legittima…",
+    "pt": "Apesar desta objeção legítima…"
+   }
+  },
+  {
+   "expresion": "In seiner stärksten Form lautet der Einwand: …",
+   "funcion": "Gegenargument fair rekonstruieren",
+   "traducciones": {
+    "es": "En su versión más fuerte, la objeción dice: …",
+    "en": "In its strongest form the objection runs: …",
+    "fr": "Dans sa version la plus forte, l'objection est : …",
+    "it": "Nella sua forma più forte l'obiezione suona: …",
+    "pt": "Na sua forma mais forte, a objeção diz: …"
+   }
+  },
+  {
+   "expresion": "Ich will den Einwand nicht schwächer machen, als er ist.",
+   "funcion": "Absicht der fairen Darstellung benennen",
+   "traducciones": {
+    "es": "No quiero hacer la objeción más débil de lo que es.",
+    "en": "I don't want to make the objection weaker than it is.",
+    "fr": "Je ne veux pas affaiblir l'objection.",
+    "it": "Non voglio rendere l'obiezione più debole di quanto sia.",
+    "pt": "Não quero tornar a objeção mais fraca do que é."
+   }
+  },
+  {
+   "expresion": "Diese Einwendung wäre entscheidend, wenn…",
+   "funcion": "Gegenargument an eine Bedingung binden",
+   "traducciones": {
+    "es": "Esa objeción sería decisiva si…",
+    "en": "That objection would be decisive if…",
+    "fr": "Cette objection serait décisive si…",
+    "it": "Quest'obiezione sarebbe decisiva se…",
+    "pt": "Essa objeção seria decisiva se…"
+   }
+  },
+  {
+   "expresion": "Der Preis meiner Position ist…",
+   "funcion": "eigene Kosten offen einräumen",
+   "traducciones": {
+    "es": "El precio de mi posición es…",
+    "en": "The price of my position is…",
+    "fr": "Le prix de ma position, c'est…",
+    "it": "Il prezzo della mia posizione è…",
+    "pt": "O preço da minha posição é…"
+   }
+  },
+  {
+   "expresion": "Beide Seiten müssen etwas aufgeben; die Frage ist nur, was.",
+   "funcion": "Abwägung als unvermeidlich rahmen",
+   "traducciones": {
+    "es": "Ambos lados tienen que ceder algo; la cuestión es qué.",
+    "en": "Both sides have to give something up; the question is what.",
+    "fr": "Les deux camps doivent céder quelque chose ; la question est quoi.",
+    "it": "Entrambe le parti devono cedere qualcosa; la domanda è che cosa.",
+    "pt": "Ambos os lados têm de ceder algo; a questão é o quê."
+   }
+  },
+  {
+   "expresion": "Damit bleibt nur noch die Frage, ob…",
+   "funcion": "Argument auf einen Streitpunkt verengen",
+   "traducciones": {
+    "es": "Con eso solo queda la pregunta de si…",
+    "en": "That leaves only the question of whether…",
+    "fr": "Il ne reste donc que la question de savoir si…",
+    "it": "Resta così solo la questione se…",
+    "pt": "Assim resta apenas a questão de saber se…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Überzeugen Sie Ihre Familie, das gemeinsame Abendessen als Ritual wieder einzuführen.",
+  "requisitos": [
+   "das stärkste Gegenargument, fair formuliert, anders als beim letzten Mal",
+   "ein ausdrückliches Zugeständnis",
+   "ein *Das lässt sich nicht einfach vom Tisch wischen*",
+   "*das Ritual*, *die Tischkultur* und *die Tafelrunde* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Das beste Argument gegen gemeinsame Mahlzeiten aufschreiben."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Ihre Antwort genau darauf."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "2 Minuten: Ist *Hausmannskost* Teil der *Ernährungswende*?"
+  }
+ ],
+ "autochequeo": [
+  "Ist das genannte Gegenargument wirklich das stärkste verfügbare?",
+  "Wird das Gegenargument ernst genommen, bevor es widerlegt wird?",
+  "Hat die eigene Widerlegung einen konkreten Grund, nicht nur eine Behauptung?",
+  "Würde ein Vertreter des Gegenarguments sich fair dargestellt fühlen?",
+  "Würde ein Vertreter der Gegenposition den Einwand als fair dargestellt anerkennen?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich darauf, ob gegen das stärkste verfügbare Gegenargument argumentiert wird. Schreiben Sie den Text nicht neu. Prüfen Sie auch den Ton."
+}

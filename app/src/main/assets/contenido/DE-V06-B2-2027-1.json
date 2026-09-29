@@ -1,0 +1,420 @@
+{
+ "id": "DE-V06-B2-2027-1",
+ "skillId": "DE-V06",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "vocabulary",
+ "topicId": "T10",
+ "titulo": "Wortbildung: Präfixe, Suffixe, Komposita",
+ "subtitulo": "Neue Wörter selbst bilden — beim Essen",
+ "ancla": "PD B1",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 60
+ },
+ "descripcion": "Auf B2 lernt man, mit den häufigsten Präfixen und Suffixen selbst neue Wörter zu erschliessen, statt jedes Wort einzeln auswendig zu lernen: un- für das Gegenteil, -heit/-keit für Substantive aus Adjektiven, -bar für Möglichkeit. Das multipliziert den Wortschatz, ohne Listen zu lernen.",
+ "cuadroReferencia": {
+  "titulo": "Häufige Wortbildungsmuster",
+  "columnas": [
+   "Muster",
+   "Bedeutung",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "un- + Adjektiv",
+    "Gegenteil",
+    "glücklich → unglücklich"
+   ],
+   [
+    "Adjektiv + -heit/-keit",
+    "Substantiv",
+    "frei → die Freiheit, möglich → die Möglichkeit"
+   ],
+   [
+    "Verb + -bar",
+    "Möglichkeit",
+    "essen → essbar"
+   ],
+   [
+    "Nomen + Nomen",
+    "Kompositum",
+    "das Haus + die Tür → die Haustür"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das Ergebnis war leider völlig unbrauchbar.",
+   "audio": true
+  },
+  {
+   "texto": "Die Möglichkeit, das zu ändern, besteht noch.",
+   "audio": true
+  },
+  {
+   "texto": "Das Wasser ist trinkbar, das habe ich geprüft."
+  }
+ ],
+ "notas": [
+  "Bei Komposita bestimmt das letzte Wort das Genus und die Grundbedeutung: die Haustür ist eine Tür, kein Haus.",
+  "-heit und -keit bilden immer feminine Substantive, ohne Ausnahme.",
+  "-bar an ein Verb angehängt bedeutet fast immer kann + Partizip: essbar heisst kann gegessen werden."
+ ],
+ "contraste": {
+  "es": "Das Spanische bildet Wörter oft mit eigenen Wurzeln oder Vorsilben aus dem Lateinischen (posible, comestible), die morphologisch nicht mit den deutschen Mustern übereinstimmen. Spanischsprachige können deshalb die Bedeutung oft erraten, aber nicht die Form selbst korrekt bilden.",
+  "it": "Die Suffixe übertragen sich gut: -bile – -bar (mangiabile – essbar), -zione – -ung, ri- – wieder-. Bei Komposita steht der Kern im Deutschen aber am Ende (Wohnungssuche), im Italienischen meist am Anfang (ricerca di casa).",
+  "fr": "Die Suffixe übertragen sich gut: -able – -bar (mangeable – essbar), -tion – -ung. Bei Komposita steht der Kern im Deutschen aber am Ende (Wohnungssuche), im Französischen am Anfang (recherche de logement).",
+  "pt": "Die Suffixe übertragen sich gut: -ável – -bar (lavável – waschbar), -ção – -ung. Bei Komposita steht der Kern im Deutschen aber am Ende (Wohnungssuche), im Portugiesischen am Anfang (procura de casa).",
+  "en": "Englische Komposita haben wie die deutschen den Kern am Ende (housework – Hausarbeit), das Prinzip ist also vertraut; Englisch schreibt sie nur oft getrennt. Auch Suffixe übertragen sich gut: -able – -bar, -ness – -heit/-keit, -ful – -voll."
+ },
+ "errores": [
+  "Das Genus bei Komposita falsch bestimmen, meist weil das erste statt das letzte Wort gezählt wird.",
+  "Un- mit einem Nomen statt einem Adjektiv kombinieren.",
+  "-bar an ein Verb anhängen, das keine passive Bedeutung zulässt."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Die Vorsilbe *in-* aus *imposible* übernehmen: *inmöglich* statt *unmöglich*."
+  ],
+  "it": [
+   "Die Vorsilbe *in-* aus *impossibile* übernehmen: *inmöglich* statt *unmöglich*."
+  ],
+  "fr": [
+   "Die Vorsilbe *in-* aus *impossible* übernehmen: *inmöglich* statt *unmöglich*."
+  ],
+  "pt": [
+   "Die Vorsilbe *in-* aus *impossível* übernehmen: *inmöglich* statt *unmöglich*."
+  ],
+  "en": [
+   "Das englische *-able* als *-abel* übertragen: *machabel* statt *machbar*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der Verzicht",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la renuncia",
+    "en": "going without",
+    "fr": "la privation",
+    "it": "la rinuncia",
+    "pt": "a renúncia"
+   }
+  },
+  {
+   "item": "die Ernährungsweise",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el tipo de alimentación",
+    "en": "diet (way of eating)",
+    "fr": "le mode d'alimentation",
+    "it": "il regime alimentare",
+    "pt": "o modo de alimentação"
+   }
+  },
+  {
+   "item": "die Lebensmittelverschwendung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el desperdicio de alimentos",
+    "en": "food waste",
+    "fr": "le gaspillage alimentaire",
+    "it": "lo spreco alimentare",
+    "pt": "o desperdício alimentar"
+   }
+  },
+  {
+   "item": "die Unverträglichkeit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la intolerancia alimentaria",
+    "en": "food intolerance",
+    "fr": "l'intolérance alimentaire",
+    "it": "l'intolleranza alimentare",
+    "pt": "a intolerância alimentar"
+   }
+  },
+  {
+   "item": "die Zutat",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el ingrediente",
+    "en": "the ingredient",
+    "fr": "l'ingrédient",
+    "it": "l'ingrediente",
+    "pt": "o ingrediente"
+   }
+  },
+  {
+   "item": "regional und saisonal",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "local y de temporada",
+    "en": "local and seasonal",
+    "fr": "local et de saison",
+    "it": "locale e di stagione",
+    "pt": "local e sazonal"
+   }
+  },
+  {
+   "item": "würzen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "condimentar",
+    "en": "to season",
+    "fr": "assaisonner",
+    "it": "condire",
+    "pt": "temperar"
+   }
+  },
+  {
+   "item": "das Fertiggericht",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el plato preparado",
+    "en": "ready meal",
+    "fr": "le plat préparé",
+    "it": "il piatto pronto",
+    "pt": "a refeição pronta"
+   }
+  },
+  {
+   "item": "der Fleischkonsum",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el consumo de carne",
+    "en": "meat consumption",
+    "fr": "la consommation de viande",
+    "it": "il consumo di carne",
+    "pt": "o consumo de carne"
+   }
+  },
+  {
+   "item": "der Nährwert",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el valor nutricional",
+    "en": "the nutritional value",
+    "fr": "la valeur nutritive",
+    "it": "il valore nutrizionale",
+    "pt": "o valor nutricional"
+   }
+  },
+  {
+   "item": "die Essgewohnheit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el hábito alimentario",
+    "en": "eating habit",
+    "fr": "l'habitude alimentaire",
+    "it": "l'abitudine alimentare",
+    "pt": "o hábito alimentar"
+   }
+  },
+  {
+   "item": "die Herkunft der Lebensmittel",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el origen de los alimentos",
+    "en": "origin of food",
+    "fr": "l'origine des aliments",
+    "it": "l'origine degli alimenti",
+    "pt": "a origem dos alimentos"
+   }
+  },
+  {
+   "item": "die Kochkunst",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el arte culinario",
+    "en": "the culinary art",
+    "fr": "l'art culinaire",
+    "it": "l'arte culinaria",
+    "pt": "a arte culinária"
+   }
+  },
+  {
+   "item": "selbst zubereiten",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "preparar uno mismo",
+    "en": "to prepare yourself",
+    "fr": "préparer soi-même",
+    "it": "preparare da sé",
+    "pt": "preparar em casa"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "un- + Adjektiv",
+   "funcion": "Gegenteil bilden",
+   "traducciones": {
+    "es": "in-/des- + adjetivo",
+    "en": "un-/in- + adjective",
+    "fr": "in-/im-/ir- + adjectif",
+    "it": "in-/im-/ir- + aggettivo",
+    "pt": "in-/im- + adjetivo"
+   }
+  },
+  {
+   "expresion": "-heit/-keit",
+   "funcion": "Substantiv aus Adjektiv",
+   "traducciones": {
+    "es": "-idad/-eza",
+    "en": "-ness/-ity",
+    "fr": "-té/-ité",
+    "it": "-tà/-ità",
+    "pt": "-dade/-idade"
+   }
+  },
+  {
+   "expresion": "-bar",
+   "funcion": "Möglichkeit ausdrücken",
+   "traducciones": {
+    "es": "-ble",
+    "en": "-able",
+    "fr": "-able",
+    "it": "-abile",
+    "pt": "-ável/-ível"
+   }
+  },
+  {
+   "expresion": "Nomen + Nomen",
+   "funcion": "Kompositum bilden",
+   "traducciones": {
+    "es": "sustantivo + de + sustantivo",
+    "en": "noun + noun",
+    "fr": "nom + de + nom",
+    "it": "nome + di + nome",
+    "pt": "substantivo + de + substantivo"
+   }
+  },
+  {
+   "expresion": "-los",
+   "funcion": "ohne etwas",
+   "traducciones": {
+    "es": "sin-",
+    "en": "-less",
+    "fr": "sans-",
+    "it": "senza-",
+    "pt": "sem-"
+   }
+  },
+  {
+   "expresion": "-voll",
+   "funcion": "voll von etwas",
+   "traducciones": {
+    "es": "-oso/lleno de",
+    "en": "-ful",
+    "fr": "-eux/-euse / plein de",
+    "it": "-oso/-osa / pieno di",
+    "pt": "-oso/-osa / cheio de"
+   }
+  },
+  {
+   "expresion": "-ung",
+   "funcion": "Substantiv aus Verb",
+   "traducciones": {
+    "es": "sufijo que forma sustantivos a partir de verbos",
+    "en": "suffix forming nouns from verbs",
+    "fr": "suffixe formant des noms à partir de verbes",
+    "it": "suffisso che forma sostantivi da verbi",
+    "pt": "sufixo que forma substantivos a partir de verbos"
+   }
+  },
+  {
+   "expresion": "-er",
+   "funcion": "Person, die etwas tut",
+   "traducciones": {
+    "es": "sufijo de agente: quien hace algo",
+    "en": "agent suffix: the one who does something",
+    "fr": "suffixe d'agent : celui qui fait",
+    "it": "suffisso d'agente: chi compie l'azione",
+    "pt": "sufixo de agente: quem faz algo"
+   }
+  },
+  {
+   "expresion": "miss-",
+   "funcion": "Präfix für das Misslingen",
+   "traducciones": {
+    "es": "prefijo de fracaso o error",
+    "en": "prefix for failure or error",
+    "fr": "préfixe d'échec ou d'erreur",
+    "it": "prefisso di fallimento o errore",
+    "pt": "prefixo de falha ou erro"
+   }
+  },
+  {
+   "expresion": "Adjektiv + Nomen",
+   "funcion": "Kompositum mit Adjektiv als Erstglied",
+   "traducciones": {
+    "es": "compuesto con adjetivo como primer elemento",
+    "en": "compound with an adjective as first element",
+    "fr": "composé avec un adjectif en premier élément",
+    "it": "composto con aggettivo come primo elemento",
+    "pt": "composto com adjetivo como primeiro elemento"
+   }
+  },
+  {
+   "expresion": "Das letzte Glied bestimmt das Genus.",
+   "funcion": "Regel für Komposita",
+   "traducciones": {
+    "es": "El último elemento determina el género.",
+    "en": "The last element sets the gender.",
+    "fr": "Le dernier élément détermine le genre.",
+    "it": "L'ultimo elemento determina il genere.",
+    "pt": "O último elemento determina o género."
+   }
+  },
+  {
+   "expresion": "Gibt es dieses Wort wirklich?",
+   "funcion": "die eigene Neubildung überprüfen",
+   "traducciones": {
+    "es": "¿Esta palabra existe de verdad?",
+    "en": "Does that word actually exist?",
+    "fr": "Ce mot existe-t-il vraiment ?",
+    "it": "Questa parola esiste davvero?",
+    "pt": "Esta palavra existe mesmo?"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie eine Restaurantkritik oder beschreiben Sie Ihre Ernährungsweise.",
+  "requisitos": [
+   "sechs Wörter mit *un-*, *-bar*, *-los* oder *-voll*",
+   "drei Komposita",
+   "zwei Nomen auf *-heit* oder *-keit*",
+   "*die Ernährungsweise*, *die Lebensmittelverschwendung* und *der Verzicht* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Zehn Adjektive zum Essen mit *un-* oder *-los* bilden."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei Komposita zerlegen: *Lebensmittelverschwendung*, *Ernährungsweise*, *Unverträglichkeit*."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden über Ihr Lieblingsessen, mit drei selbst gebildeten Wörtern."
+  }
+ ],
+ "autochequeo": [
+  "Bestimmt das letzte Wort im Kompositum das Genus?",
+  "Ist -heit/-keit korrekt feminin?",
+  "Passt -bar zu einem Verb mit passivischer Möglichkeit?",
+  "Habe ich mindestens drei verschiedene Wortbildungsmuster benutzt?",
+  "Kann ich mindestens ein Wort erklären, das ich noch nie zuvor gesehen habe?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Wortbildungsmuster. Prüfen Sie besonders das Genus bei Komposita und die Bildung mit -heit/-keit und -bar. Schreiben Sie den Text nicht neu."
+}

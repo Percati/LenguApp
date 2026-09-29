@@ -1,0 +1,420 @@
+{
+ "id": "EN-K03-C2-2027-2",
+ "skillId": "EN-K03",
+ "order": 2,
+ "idioma": "en",
+ "nivel": "C2",
+ "categoria": "grammar",
+ "topicId": "T11",
+ "titulo": "Unreal Past, Modal Perfect and Third Conditional",
+ "subtitulo": "Mixed conditionals about public trust",
+ "ancla": "EGP C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 65
+ },
+ "descripcion": "At C2 the regret cluster extends to mixed conditionals, where a past condition produces a present result: if we had invested then, we'd be in a very different position now. This mixing is the natural, sophisticated form of regret about a past decision with ongoing consequences — not an error, as it's sometimes mistaught.",
+ "cuadroReferencia": {
+  "titulo": "Mixed conditionals",
+  "columnas": [
+   "Type",
+   "If-clause",
+   "Main clause",
+   "Meaning"
+  ],
+  "filas": [
+   [
+    "Past → Present",
+    "past perfect",
+    "would + infinitive",
+    "past condition, present result"
+   ],
+   [
+    "Present → Past",
+    "past simple",
+    "would have + participle",
+    "ongoing trait, past result"
+   ],
+   [
+    "Pure third",
+    "past perfect",
+    "would have + participle",
+    "past condition, past result"
+   ]
+  ],
+  "notaPie": "The choice of mixed pattern depends entirely on where the condition sits in time versus where the result sits — not on a fixed rule to memorise."
+ },
+ "ejemplos": [
+  {
+   "texto": "If we had invested then, we'd be in a very different position now.",
+   "audio": true
+  },
+  {
+   "texto": "If she weren't so cautious, she would have taken the offer.",
+   "audio": true
+  },
+  {
+   "texto": "If I hadn't studied medicine, I probably wouldn't be so calm in a crisis."
+  }
+ ],
+ "notas": [
+  "A mixed conditional is not a mistake — it's the correct form whenever the time of the condition and the time of the result genuinely differ.",
+  "The most common mixed pattern is past condition, present result; the reverse is rarer but equally valid.",
+  "Distinguishing this from a simple error requires checking whether the writer actually means two different time frames, or just confused the tenses."
+ ],
+ "contraste": {
+  "es": "Spanish mixes time frames quite naturally (si hubiéramos invertido entonces, ahora estaríamos en otra posición), so the concept is not new. What is often missing is the confidence to use it actively in English instead of forcing a pure third-conditional pattern.",
+  "de": "German mixes time frames freely with the Konjunktiv II (Wenn wir damals investiert hätten, wären wir jetzt…), so the concept is natural. The typical problem is would in the if-clause, because colloquial German allows würde there: if we would have invested instead of if we had invested.",
+  "it": "Italian mixes time frames naturally in both directions (se avessimo investito allora, ora saremmo…; se fossi più prudente, non avrei investito), so mixed conditionals feel familiar. The Italian congiuntivo trapassato maps directly onto the English past perfect in the if-clause.",
+  "fr": "French mixes time frames naturally (si nous avions investi, nous serions…), and because French forbids the conditional after si, French speakers rarely produce if we would have…. Mixed conditionals are therefore one of the easier C2 structures for them.",
+  "pt": "Portuguese mixes time frames naturally (se tivéssemos investido, estaríamos agora…). In colloquial European Portuguese, however, the imperfect often replaces the conditional (estávamos agora noutra situação), which can lead to we were now instead of we would be now."
+ },
+ "errores": [
+  "Forcing a mixed situation into a pure third conditional, losing the present-tense result.",
+  "Building a mixed conditional where the time frames don't actually differ, which is then a genuine error, not a valid mix.",
+  "Using would have in the if-clause of any variant."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*De no ser por ti* rendered as *Of not being for you* instead of *But for you* or *Were it not for you*."
+  ],
+  "de": [
+   "*wäre* rendered as *were* in the main clause of a mixed conditional: *Had I studied, I were a doctor now* instead of *I would be a doctor now*."
+  ],
+  "it": [
+   "Collapsing the mixed conditional into the simpler pattern: *If I studied more, I would be a doctor now* where *If I had studied* (*se avessi studiato*) is meant."
+  ],
+  "fr": [
+   "Collapsing the mixed conditional into the simpler pattern: *If I studied more, I would be a doctor now* where *If I had studied* (*si j'avais étudié*) is meant."
+  ],
+  "pt": [
+   "Collapsing the mixed conditional into the simpler pattern: *If I studied more, I would be a doctor now* where *If I had studied* (*se tivesse estudado*) is meant."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a post-truth era",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la era de la posverdad",
+    "de": "das postfaktische Zeitalter",
+    "fr": "l'ère de la post-vérité",
+    "it": "l'era della post-verità",
+    "pt": "a era da pós-verdade"
+   }
+  },
+  {
+   "item": "disinformation",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la desinformación deliberada",
+    "de": "die Desinformation",
+    "fr": "la désinformation",
+    "it": "la disinformazione deliberata",
+    "pt": "a desinformação deliberada"
+   }
+  },
+  {
+   "item": "polarisation",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la polarización",
+    "de": "die Polarisierung",
+    "fr": "la polarisation",
+    "it": "la polarizzazione",
+    "pt": "a polarização"
+   }
+  },
+  {
+   "item": "public discourse",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el discurso público",
+    "de": "der öffentliche Diskurs",
+    "fr": "le débat public",
+    "it": "il dibattito pubblico",
+    "pt": "o discurso público"
+   }
+  },
+  {
+   "item": "to debunk",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "desmentir",
+    "de": "entlarven",
+    "fr": "démystifier",
+    "it": "smentire",
+    "pt": "desmascarar"
+   }
+  },
+  {
+   "item": "to erode trust",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "erosionar la confianza",
+    "de": "Vertrauen untergraben",
+    "fr": "éroder la confiance",
+    "it": "erodere la fiducia",
+    "pt": "corroer a confiança"
+   }
+  },
+  {
+   "item": "a divisive issue",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un tema que divide",
+    "de": "ein polarisierendes Thema",
+    "fr": "un sujet qui divise",
+    "it": "una questione divisiva",
+    "pt": "uma questão fraturante"
+   }
+  },
+  {
+   "item": "an informed citizenry",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "una ciudadanía informada",
+    "de": "eine informierte Bürgerschaft",
+    "fr": "des citoyens informés",
+    "it": "una cittadinanza informata",
+    "pt": "uma cidadania informada"
+   }
+  },
+  {
+   "item": "civil debate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el debate respetuoso",
+    "de": "die sachliche Debatte",
+    "fr": "le débat courtois",
+    "it": "il confronto civile",
+    "pt": "o debate civilizado"
+   }
+  },
+  {
+   "item": "credibility",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la credibilidad",
+    "de": "die Glaubwürdigkeit",
+    "fr": "la crédibilité",
+    "it": "la credibilità",
+    "pt": "a credibilidade"
+   }
+  },
+  {
+   "item": "misinformation",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la desinformación",
+    "de": "die Fehlinformation",
+    "fr": "la mésinformation",
+    "it": "la disinformazione",
+    "pt": "a desinformação"
+   }
+  },
+  {
+   "item": "to corroborate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "corroborar",
+    "de": "bestätigen",
+    "fr": "corroborer",
+    "it": "corroborare",
+    "pt": "corroborar"
+   }
+  },
+  {
+   "item": "to entrench views",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "afianzar posturas",
+    "de": "Meinungen verfestigen",
+    "fr": "ancrer les opinions",
+    "it": "radicalizzare le opinioni",
+    "pt": "consolidar opiniões"
+   }
+  },
+  {
+   "item": "to find common ground",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "encontrar puntos en común",
+    "de": "eine gemeinsame Basis finden",
+    "fr": "trouver un terrain d'entente",
+    "it": "trovare un terreno comune",
+    "pt": "encontrar pontos em comum"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "If we had…, we'd be…now.",
+   "funcion": "past condition, present result",
+   "traducciones": {
+    "es": "si hubiéramos…, ahora estaríamos…",
+    "de": "Wenn wir… hätten, wären wir jetzt…",
+    "fr": "Si nous avions…, nous serions maintenant…",
+    "it": "Se avessimo…, ora saremmo…",
+    "pt": "Se tivéssemos…, agora estaríamos…"
+   }
+  },
+  {
+   "expresion": "If I weren't so…, I would have…",
+   "funcion": "ongoing trait, past result",
+   "traducciones": {
+    "es": "si no fuera tan…, habría…",
+    "de": "Wenn ich nicht so… wäre, hätte ich…",
+    "fr": "Si je n’étais pas si…, j’aurais…",
+    "it": "Se non fossi così…, avrei…",
+    "pt": "Se eu não fosse tão…, teria…"
+   }
+  },
+  {
+   "expresion": "Had things gone differently, we'd be…",
+   "funcion": "formal inversion, mixed",
+   "traducciones": {
+    "es": "de haber ido distinto, estaríamos…",
+    "de": "Wäre es anders gelaufen, wären wir…",
+    "fr": "Si les choses s’étaient passées autrement, nous serions…",
+    "it": "Se le cose fossero andate diversamente, saremmo…",
+    "pt": "Se as coisas tivessem corrido de forma diferente, estaríamos…"
+   }
+  },
+  {
+   "expresion": "If it weren't for…, we wouldn't have…",
+   "funcion": "ongoing factor, past result",
+   "traducciones": {
+    "es": "si no fuera por…, no habríamos…",
+    "de": "Wenn es nicht… gäbe, hätten wir nicht…",
+    "fr": "Sans…, nous n’aurions pas…",
+    "it": "Se non fosse per…, non avremmo…",
+    "pt": "Se não fosse por…, não teríamos…"
+   }
+  },
+  {
+   "expresion": "…, and that's why we're…today.",
+   "funcion": "non-conditional equivalent",
+   "traducciones": {
+    "es": "…, y por eso hoy estamos…",
+    "de": "…, und deshalb sind wir heute…",
+    "fr": "…, et c’est pourquoi nous sommes… aujourd’hui.",
+    "it": "…, ed è per questo che oggi siamo…",
+    "pt": "…, e é por isso que hoje estamos…"
+   }
+  },
+  {
+   "expresion": "Looking back, if we had…, things would be…",
+   "funcion": "reflective frame, mixed",
+   "traducciones": {
+    "es": "mirando atrás, si hubiéramos…, las cosas serían…",
+    "de": "Im Rückblick: Hätten wir…, wären die Dinge…",
+    "fr": "Avec le recul, si nous avions…, les choses seraient…",
+    "it": "Col senno di poi, se avessimo…, le cose sarebbero…",
+    "pt": "Olhando para trás, se tivéssemos…, as coisas seriam…"
+   }
+  },
+  {
+   "expresion": "We're living with a decision made in five minutes.",
+   "funcion": "present result of a past choice, no conditional",
+   "traducciones": {
+    "es": "Vivimos con una decisión tomada en cinco minutos.",
+    "de": "Wir leben mit einer in fünf Minuten getroffenen Entscheidung.",
+    "fr": "Nous vivons avec une décision prise en cinq minutes.",
+    "it": "Viviamo con una decisione presa in cinque minuti.",
+    "pt": "Vivemos com uma decisão tomada em cinco minutos."
+   }
+  },
+  {
+   "expresion": "Were it not for that, we'd still be…",
+   "funcion": "formal inversion, ongoing result",
+   "traducciones": {
+    "es": "De no ser por eso, seguiríamos…",
+    "de": "Wäre das nicht gewesen, wären wir noch immer…",
+    "fr": "N'eût été cela, nous serions encore…",
+    "it": "Se non fosse stato per questo, saremmo ancora…",
+    "pt": "Não fosse isso, ainda estaríamos…"
+   }
+  },
+  {
+   "expresion": "The counterfactual flatters us.",
+   "funcion": "questions the honesty of the what-if",
+   "traducciones": {
+    "es": "El contrafáctico nos favorece demasiado.",
+    "de": "Das Gegenszenario schmeichelt uns.",
+    "fr": "Le contrefactuel nous flatte.",
+    "it": "Il controfattuale ci lusinga.",
+    "pt": "O contrafactual lisonjeia-nos."
+   }
+  },
+  {
+   "expresion": "Every alternative I can construct ends worse.",
+   "funcion": "tests the regret against the alternatives",
+   "traducciones": {
+    "es": "Toda alternativa que puedo construir termina peor.",
+    "de": "Jede Alternative, die ich konstruieren kann, endet schlechter.",
+    "fr": "Chaque alternative que je peux construire finit plus mal.",
+    "it": "Ogni alternativa che riesco a costruire finisce peggio.",
+    "pt": "Toda a alternativa que consigo construir acaba pior."
+   }
+  },
+  {
+   "expresion": "That's hindsight doing the work, not judgement.",
+   "funcion": "names hindsight bias in the regret",
+   "traducciones": {
+    "es": "Ahí trabaja la retrospectiva, no el criterio.",
+    "de": "Da arbeitet der Rückschaufehler, nicht das Urteil.",
+    "fr": "C'est le biais rétrospectif qui opère, pas le jugement.",
+    "it": "Qui lavora il senno di poi, non il giudizio.",
+    "pt": "Aí trabalha a retrospetiva, não o critério."
+   }
+  },
+  {
+   "expresion": "Had we known, the decision would have been harder, not easier.",
+   "funcion": "complicates the counterfactual",
+   "traducciones": {
+    "es": "De haberlo sabido, la decisión habría sido más difícil, no más fácil.",
+    "de": "Hätten wir es gewusst, wäre die Entscheidung schwerer gewesen, nicht leichter.",
+    "fr": "Si nous l'avions su, la décision aurait été plus dure, non plus simple.",
+    "it": "Se l'avessimo saputo, la decisione sarebbe stata più difficile, non più facile.",
+    "pt": "Se soubéssemos, a decisão teria sido mais difícil, não mais fácil."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "A younger relative asks why adults argue so badly about the news. Explain how the present state of public debate grew out of choices made over the past twenty years.",
+  "requisitos": [
+   "three mixed conditionals, different from last time",
+   "one *If it weren't for…, we wouldn't have…*",
+   "one *…, and that's why we're… today*",
+   "use *polarisation*, *public discourse* and *to erode trust*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Three *If X had…, we would be…* sentences about *disinformation*."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "One reversed conditional: a present trait with a past result."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 2 minutes on *a post-truth era*. Look back and land in the present."
+  }
+ ],
+ "autochequeo": [
+  "Do the time frames of the condition and the result genuinely differ, justifying a mixed form?",
+  "Is the if-clause free of would/would have where a pure past perfect or past simple is needed?",
+  "Does the mixed conditional read as natural regret, not as a tense error?",
+  "Have I distinguished a genuine mix from an accidental one?",
+  "Would a native speaker read this as sophisticated, not confused?"
+ ],
+ "promptCorreccion": "Focus only on mixed conditionals. Check whether the time frames genuinely differ and whether each half of the sentence is internally correct. Do not rewrite the text."
+}

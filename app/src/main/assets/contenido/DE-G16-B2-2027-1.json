@@ -1,0 +1,350 @@
+{
+ "id": "DE-G16-B2-2027-1",
+ "skillId": "DE-G16",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T06",
+ "titulo": "Genitiv und Genitivpräpositionen",
+ "subtitulo": "Wegen, trotz, während — mit Genitiv",
+ "ancla": "PD B2",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf B2 wird der **Genitiv** nach den häufigsten Präpositionen sicher gebildet: wegen, trotz, während, innerhalb. Die komplexeren Genitivketten mit mehreren Gliedern und formelleren Präpositionen wie aufgrund oder angesichts kommen erst auf C1 dazu — hier zählt vor allem die einfache, korrekte Form.",
+ "cuadroReferencia": {
+  "titulo": "Häufige Genitivpräpositionen",
+  "columnas": [
+   "Präposition",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "wegen",
+    "wegen des schlechten Wetters"
+   ],
+   [
+    "trotz",
+    "trotz der hohen Kosten"
+   ],
+   [
+    "während",
+    "während der Sitzung"
+   ],
+   [
+    "innerhalb",
+    "innerhalb einer Woche"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Wegen des schlechten Wetters ist der Flug verspätet.",
+   "audio": true
+  },
+  {
+   "texto": "Trotz der hohen Kosten haben wir uns dafür entschieden.",
+   "audio": true
+  },
+  {
+   "texto": "Innerhalb einer Woche sollte die Antwort da sein."
+  }
+ ],
+ "notas": [
+  "Wegen wird umgangssprachlich oft mit Dativ verwendet, im geschriebenen Deutsch bleibt der Genitiv Standard.",
+  "Trotz verlangt im Genitiv keine Verneinung — trotz bedeutet bereits obwohl etwas dagegen spricht.",
+  "Innerhalb und ausserhalb sind auch räumlich verwendbar, nicht nur zeitlich."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat keinen Genitiv als eigenen Kasus; die Entsprechung wird immer mit *de* gebildet (*a pesar de*, *dentro de*). Spanischsprachige müssen deshalb aktiv lernen, dass diese deutschen Präpositionen einen bestimmten Kasus verlangen, statt einfach eine feste Wendung zu übernehmen.",
+  "it": "Das Italienische bildet diese Bedeutungen teils mit *di* (*a causa di*, *all'interno di*), teils ganz ohne Präposition (*nonostante*, *durante*). Gerade bei *trotz* und *während* fehlt deshalb jedes Signal für einen besonderen Kasus, und Italienischsprachige übernehmen leicht den umgangssprachlichen Dativ.",
+  "fr": "*À cause de* und *à l'intérieur de* lassen sich als *de*-Wendungen dem Genitiv zuordnen, *malgré* und *pendant* haben aber gar keine Präposition. Eine Besonderheit: Das Französische trennt *pendant* (Präposition) und *pendant que* (Konjunktion), während das Deutsche für beides *während* verwendet – mit Genitiv oder Verbendstellung.",
+  "pt": "*Por causa de*, *apesar de* und *dentro de* lassen sich als *de*-Wendungen gut dem Genitiv zuordnen; bei *durante* fehlt dagegen jede Präposition, und die Verschmelzungen (*do, da*) verdecken jede Kasusmarkierung. Portugiesischsprachige übersehen deshalb leicht, dass *während* überhaupt einen bestimmten Kasus verlangt.",
+  "en": "Englischsprachige kennen einen Genitiv (*the company's decision*), und *of* lässt sich gut auf ihn abbilden (*the roof of the house* – *das Dach des Hauses*). *Because of* passt deshalb gut zu *wegen*; bei *despite* und *during* fehlt dagegen jedes *of*, und entsprechend fehlt das Gefühl für den Kasus nach *trotz* und *während*."
+ },
+ "errores": [
+  "Wegen mit Dativ statt Genitiv im geschriebenen Deutsch verwenden.",
+  "Den Artikel nach der Präposition vergessen: wegen schlechten Wetter statt wegen des schlechten Wetters.",
+  "Trotz mit einer zusätzlichen Verneinung kombinieren, was redundant ist."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Den Genitiv mit *von* ersetzen, auch im Schriftlichen, nach *de*: *das Ende von dem Projekt* im Bericht."
+  ],
+  "it": [
+   "Den Genitiv mit *von* ersetzen, auch im Schriftlichen, nach *di*: *das Auto von meinem Chef* im Bericht."
+  ],
+  "fr": [
+   "Den Genitiv mit *von* ersetzen, auch im Schriftlichen, nach *de*: *das Büro von dem Direktor* im Bericht."
+  ],
+  "pt": [
+   "Den Genitiv mit *von* ersetzen, auch im Schriftlichen, nach *de*: *das Ende von dem Projekt* im Bericht."
+  ],
+  "en": [
+   "Das sächsische Genitiv-*s* mit Apostroph schreiben: *Peter's Auto* statt *Peters Auto*.",
+   "Das Genitiv-*s* auf alle Nomen übertragen: *des Firmas* statt *der Firma*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der CO2-Fussabdruck",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la huella de carbono",
+    "en": "the carbon footprint",
+    "fr": "l'empreinte carbone",
+    "it": "l'impronta di carbonio",
+    "pt": "a pegada de carbono"
+   }
+  },
+  {
+   "item": "erneuerbare Energien",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "energías renovables",
+    "en": "renewable energy",
+    "fr": "énergies renouvelables",
+    "it": "energie rinnovabili",
+    "pt": "energias renováveis"
+   }
+  },
+  {
+   "item": "der Klimawandel",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el cambio climático",
+    "en": "climate change",
+    "fr": "le changement climatique",
+    "it": "il cambiamento climatico",
+    "pt": "as mudanças climáticas"
+   }
+  },
+  {
+   "item": "nachhaltig",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "sostenible",
+    "en": "sustainable",
+    "fr": "durable",
+    "it": "sostenibile",
+    "pt": "sustentável"
+   }
+  },
+  {
+   "item": "die Mülltrennung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la separación de residuos",
+    "en": "waste separation",
+    "fr": "le tri des déchets",
+    "it": "la raccolta differenziata",
+    "pt": "a separação de lixo"
+   }
+  },
+  {
+   "item": "der Verbrauch",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el consumo",
+    "en": "consumption",
+    "fr": "la consommation",
+    "it": "il consumo",
+    "pt": "o consumo"
+   }
+  },
+  {
+   "item": "die Treibhausgase",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "los gases de efecto invernadero",
+    "en": "greenhouse gases",
+    "fr": "les gaz à effet de serre",
+    "it": "i gas serra",
+    "pt": "os gases de efeito estufa"
+   }
+  },
+  {
+   "item": "die Biodiversität",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la biodiversidad",
+    "en": "biodiversity",
+    "fr": "la biodiversité",
+    "it": "la biodiversità",
+    "pt": "a biodiversidade"
+   }
+  },
+  {
+   "item": "der ökologische Fussabdruck",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la huella ecológica",
+    "en": "the ecological footprint",
+    "fr": "l'empreinte écologique",
+    "it": "l'impronta ecologica",
+    "pt": "a pegada ecológica"
+   }
+  },
+  {
+   "item": "die Kreislaufwirtschaft",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la economía circular",
+    "en": "the circular economy",
+    "fr": "l'économie circulaire",
+    "it": "l'economia circolare",
+    "pt": "a economia circular"
+   }
+  },
+  {
+   "item": "der Raubbau",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la sobreexplotación",
+    "en": "overexploitation",
+    "fr": "la surexploitation",
+    "it": "lo sfruttamento eccessivo",
+    "pt": "a superexploração"
+   }
+  },
+  {
+   "item": "die Umweltbelastung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el impacto ambiental",
+    "en": "environmental burden",
+    "fr": "l'impact environnemental",
+    "it": "l'impatto ambientale",
+    "pt": "o impacto ambiental"
+   }
+  },
+  {
+   "item": "sich einschränken",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "limitarse, moderarse",
+    "en": "to cut back",
+    "fr": "se limiter",
+    "it": "limitarsi",
+    "pt": "moderar-se"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "wegen…",
+   "funcion": "Ursache, Genitiv",
+   "traducciones": {
+    "es": "debido a…",
+    "en": "because of…",
+    "fr": "à cause de…",
+    "it": "a causa di…",
+    "pt": "por causa de…"
+   }
+  },
+  {
+   "expresion": "trotz…",
+   "funcion": "Konzession, Genitiv",
+   "traducciones": {
+    "es": "a pesar de…",
+    "en": "despite…",
+    "fr": "malgré…",
+    "it": "nonostante…",
+    "pt": "apesar de…"
+   }
+  },
+  {
+   "expresion": "während…",
+   "funcion": "Zeitraum, Genitiv",
+   "traducciones": {
+    "es": "durante…",
+    "en": "during…",
+    "fr": "pendant…",
+    "it": "durante…",
+    "pt": "durante…"
+   }
+  },
+  {
+   "expresion": "innerhalb…",
+   "funcion": "Frist oder Raum, Genitiv",
+   "traducciones": {
+    "es": "dentro de…",
+    "en": "within…",
+    "fr": "dans…",
+    "it": "all’interno di…",
+    "pt": "dentro de…"
+   }
+  },
+  {
+   "expresion": "ausserhalb…",
+   "funcion": "Gegenteil von innerhalb",
+   "traducciones": {
+    "es": "fuera de…",
+    "en": "outside of…",
+    "fr": "en dehors de…",
+    "it": "al di fuori di…",
+    "pt": "fora de…"
+   }
+  },
+  {
+   "expresion": "aufgrund…",
+   "funcion": "formelle Ursache, Genitiv",
+   "traducciones": {
+    "es": "en base a…",
+    "en": "on the basis of…",
+    "fr": "sur la base de…",
+    "it": "sulla base di…",
+    "pt": "com base em…"
+   }
+  },
+  {
+   "expresion": "Mit Dativ waere das umgangssprachlich.",
+   "funcion": "den Registerunterschied benennen",
+   "traducciones": {
+    "es": "Con dativo eso sería coloquial.",
+    "en": "With the dative that would be colloquial.",
+    "fr": "Avec le datif, ce serait familier.",
+    "it": "Col dativo sarebbe colloquiale.",
+    "pt": "Com dativo isso seria coloquial."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie einen Beitrag für die Hauszeitung: Was kann Ihr Haus für mehr Nachhaltigkeit tun?",
+  "requisitos": [
+   "sechs Genitivpräpositionen, davon mindestens drei verschiedene",
+   "zwei mit Adjektiv (*wegen des hohen Verbrauchs*)",
+   "kein *wegen dem* im Text",
+   "*der CO2-Fussabdruck*, *erneuerbare Energien* und *nachhaltig* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf *weil*-Sätze zum *Klimawandel* mit *wegen* + Genitiv umformen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei Sätze mit *trotz* und *während* über Ihren eigenen Energieverbrauch."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Was tun Sie *trotz* aller Bequemlichkeit für die Umwelt? Genitiv mitsprechen."
+  }
+ ],
+ "autochequeo": [
+  "Steht nach diesen Präpositionen der Genitiv, nicht der Dativ?",
+  "Ist der Artikel korrekt im Genitiv dekliniert?",
+  "Habe ich mindestens vier verschiedene Genitivpräpositionen benutzt?",
+  "Habe ich wegen nicht mit Dativ verwendet?",
+  "Ist der Artikel nach der Präposition nicht vergessen worden?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf den Genitiv nach Präpositionen wie wegen, trotz, während und innerhalb. Prüfen Sie Kasus und Artikeldeklination in jedem Fall. Schreiben Sie den Text nicht neu."
+}

@@ -1,0 +1,416 @@
+{
+ "id": "EN-V06-C2-2027-2",
+ "skillId": "EN-V06",
+ "order": 2,
+ "idioma": "en",
+ "nivel": "C2",
+ "categoria": "vocabulary",
+ "topicId": "T10",
+ "titulo": "Idioms in Context",
+ "subtitulo": "Idioms bent around food",
+ "ancla": "EGP C2",
+ "challengeType": "adaptive_production",
+ "bilingue": false,
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 60
+ },
+ "descripcion": "At C2 idioms are deployed and consciously twisted for effect — modifying a fixed idiom slightly for humour or precision, and recognising when a native speaker's own twist on an idiom is play rather than an error, which is the mark of full idiomatic command.",
+ "cuadroReferencia": {
+  "titulo": "Deliberate idiom play",
+  "columnas": [
+   "Standard idiom",
+   "Deliberate twist",
+   "Effect"
+  ],
+  "filas": [
+   [
+    "to go round in circles",
+    "to go round in ever-smaller circles",
+    "intensifies the futility"
+   ],
+   [
+    "a storm in a teacup",
+    "a hurricane in a teacup",
+    "exaggerates for comic effect"
+   ],
+   [
+    "to cut a long story short",
+    "to cut an already short story shorter",
+    "self-aware, ironic"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "We're not just going round in circles — we're going round in ever-smaller ones.",
+   "audio": true
+  },
+  {
+   "texto": "It was less a storm in a teacup and more a hurricane in one.",
+   "audio": true
+  },
+  {
+   "texto": "To cut an already short story shorter, it didn't work."
+  }
+ ],
+ "notas": [
+  "Twisting a fixed idiom deliberately signals full command of the original — it only works if the standard form is obviously the base being played with.",
+  "This kind of play belongs in informal or witty registers; using it in a formal document undermines the intended effect.",
+  "A twist should still be recognisable as the source idiom — too much distortion just reads as a mistake."
+ ],
+ "contraste": {
+  "es": "Spanish speakers know idioms well, but may take a deliberately modified English idiom as a native speaker's mistake. Recognising the twist as intentional requires knowing the original English form.",
+  "de": "German headlines also twist idioms for effect, so the technique is familiar. The difficulty is recognising the English base idiom behind the twist.",
+  "it": "Italian headlines and advertising also twist idioms, so the technique is familiar. The difficulty is recognising the English base idiom behind the twist.",
+  "fr": "French headlines play constantly with fixed expressions, so the technique is very familiar. The difficulty is recognising the English base idiom behind the twist.",
+  "pt": "Portuguese headlines and advertising also twist idioms, so the technique is familiar. The difficulty is recognising the English base idiom behind the twist."
+ },
+ "errores": [
+  "Twisting an idiom the speaker doesn't actually know the standard form of, which reads as an error rather than play.",
+  "Using idiom play in a register where it undermines credibility.",
+  "Distorting the idiom so far that the source is no longer recognisable."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*No hay mal que por bien no venga* rendered as *There's no bad that doesn't come for good* instead of *Every cloud has a silver lining*."
+  ],
+  "de": [
+   "*Jetzt haben wir den Salat* rendered as *Now we have the salad* instead of *Now we're in a mess*."
+  ],
+  "it": [
+   "*Non tutto il male vien per nuocere* rendered as *Not all evil comes to harm* instead of *Every cloud has a silver lining*."
+  ],
+  "fr": [
+   "*À quelque chose malheur est bon* rendered as *To something misfortune is good* instead of *Every cloud has a silver lining*."
+  ],
+  "pt": [
+   "*Há males que vêm por bem* rendered as *There are evils that come for good* instead of *Every cloud has a silver lining*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "commensality",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la comensalidad",
+    "de": "die Tischgemeinschaft",
+    "fr": "la commensalité",
+    "it": "la commensalità",
+    "pt": "a comensalidade"
+   }
+  },
+  {
+   "item": "culinary heritage",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el patrimonio culinario",
+    "de": "das kulinarische Erbe",
+    "fr": "le patrimoine culinaire",
+    "it": "il patrimonio culinario",
+    "pt": "o património culinário"
+   }
+  },
+  {
+   "item": "food insecurity",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la inseguridad alimentaria",
+    "de": "die Ernährungsunsicherheit",
+    "fr": "l'insécurité alimentaire",
+    "it": "l'insicurezza alimentare",
+    "pt": "a insegurança alimentar"
+   }
+  },
+  {
+   "item": "provenance",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la procedencia",
+    "de": "die Herkunft",
+    "fr": "la provenance",
+    "it": "la provenienza",
+    "pt": "a proveniência"
+   }
+  },
+  {
+   "item": "to be steeped in ritual",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar lleno de rituales",
+    "de": "von Ritualen geprägt sein",
+    "fr": "être imprégné de rituels",
+    "it": "essere intriso di rituali",
+    "pt": "estar repleto de rituais"
+   }
+  },
+  {
+   "item": "ultra-processed",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "ultraprocesado",
+    "de": "hochverarbeitet",
+    "fr": "ultra-transformé",
+    "it": "ultra-processato",
+    "pt": "ultraprocessado"
+   }
+  },
+  {
+   "item": "a food desert",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un desierto alimentario",
+    "de": "eine Lebensmittelwüste",
+    "fr": "un désert alimentaire",
+    "it": "un deserto alimentare",
+    "pt": "um deserto alimentar"
+   }
+  },
+  {
+   "item": "a staple",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "un alimento básico",
+    "de": "ein Grundnahrungsmittel",
+    "fr": "un aliment de base",
+    "it": "un alimento base",
+    "pt": "um alimento básico"
+   }
+  },
+  {
+   "item": "cultural appropriation",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la apropiación cultural",
+    "de": "die kulturelle Aneignung",
+    "fr": "l'appropriation culturelle",
+    "it": "l'appropriazione culturale",
+    "pt": "a apropriação cultural"
+   }
+  },
+  {
+   "item": "food as identity",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la comida como identidad",
+    "de": "Essen als Identität",
+    "fr": "l'alimentation comme identité",
+    "it": "il cibo come identità",
+    "pt": "a comida como identidade"
+   }
+  },
+  {
+   "item": "fusion cuisine",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cocina fusión",
+    "de": "die Fusionsküche",
+    "fr": "la cuisine fusion",
+    "it": "la cucina fusion",
+    "pt": "a cozinha de fusão"
+   }
+  },
+  {
+   "item": "the obesity epidemic",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la epidemia de obesidad",
+    "de": "die Adipositas-Epidemie",
+    "fr": "l'épidémie d'obésité",
+    "it": "l'epidemia di obesità",
+    "pt": "a epidemia de obesidade"
+   }
+  },
+  {
+   "item": "to be handed down",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "transmitirse de generación en generación",
+    "de": "überliefert werden",
+    "fr": "se transmettre",
+    "it": "essere tramandato",
+    "pt": "ser transmitido"
+   }
+  },
+  {
+   "item": "to break bread",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "compartir la mesa",
+    "de": "das Brot brechen",
+    "fr": "rompre le pain",
+    "it": "spezzare il pane",
+    "pt": "partilhar a mesa"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "…in ever-smaller circles.",
+   "funcion": "intensifies a standard idiom",
+   "traducciones": {
+    "es": "…en círculos cada vez más pequeños.",
+    "de": "…in immer kleineren Kreisen.",
+    "fr": "…dans des cercles de plus en plus petits.",
+    "it": "…in cerchi sempre più piccoli.",
+    "pt": "…em círculos cada vez menores."
+   }
+  },
+  {
+   "expresion": "a hurricane in a teacup",
+   "funcion": "exaggerated twist for comedy",
+   "traducciones": {
+    "es": "un huracán en una taza de té",
+    "de": "viel Lärm um nichts",
+    "fr": "une tempête dans un verre d’eau",
+    "it": "una tempesta in un bicchier d’acqua",
+    "pt": "uma tempestade num copo de água"
+   }
+  },
+  {
+   "expresion": "to cut an already short story shorter",
+   "funcion": "self-aware twist",
+   "traducciones": {
+    "es": "para acortar una historia ya corta",
+    "de": "um eine ohnehin schon kurze Geschichte noch kürzer zu machen",
+    "fr": "pour faire encore plus court",
+    "it": "per farla ancora più breve",
+    "pt": "para encurtar uma história já curta"
+   }
+  },
+  {
+   "expresion": "not to put too fine a point on it,",
+   "funcion": "ironic understatement before bluntness",
+   "traducciones": {
+    "es": "para no andarme con rodeos,",
+    "de": "um es ganz direkt zu sagen,",
+    "fr": "pour ne pas tourner autour du pot,",
+    "it": "per non girarci troppo intorno,",
+    "pt": "para não andar com rodeios,"
+   }
+  },
+  {
+   "expresion": "…, if that's not too strong a word.",
+   "funcion": "flags a deliberately strong word choice",
+   "traducciones": {
+    "es": "…, si no es una palabra demasiado fuerte.",
+    "de": "…, wenn das nicht zu stark ausgedrückt ist.",
+    "fr": "…, si le mot n’est pas trop fort.",
+    "it": "…, se non è un’espressione troppo forte.",
+    "pt": "…, se não for uma expressão demasiado forte."
+   }
+  },
+  {
+   "expresion": "the understatement of the year",
+   "funcion": "ironic self-commentary on one's own understatement",
+   "traducciones": {
+    "es": "la subestimación del año",
+    "de": "die Untertreibung des Jahres",
+    "fr": "l’euphémisme de l’année",
+    "it": "l’eufemismo dell’anno",
+    "pt": "o eufemismo do ano"
+   }
+  },
+  {
+   "expresion": "the elephant in the room nobody will name",
+   "funcion": "expands a worn idiom to revive it",
+   "traducciones": {
+    "es": "el elefante en la sala que nadie nombra",
+    "de": "der Elefant im Raum, den niemand benennt",
+    "fr": "l'éléphant dans la pièce que personne ne nomme",
+    "it": "l'elefante nella stanza che nessuno nomina",
+    "pt": "o elefante na sala que ninguém nomeia"
+   }
+  },
+  {
+   "expresion": "to move the goalposts, and the pitch with them",
+   "funcion": "extends an idiom for emphasis",
+   "traducciones": {
+    "es": "cambiar las reglas, y de paso el terreno",
+    "de": "die Spielregeln ändern und gleich das Spielfeld dazu",
+    "fr": "changer les règles, et le terrain avec",
+    "it": "cambiare le regole, e con esse il campo",
+    "pt": "mudar as regras, e o campo com elas"
+   }
+  },
+  {
+   "expresion": "a storm in a very small teacup",
+   "funcion": "modifies a fixed idiom for scale",
+   "traducciones": {
+    "es": "una tormenta en un vaso muy pequeño",
+    "de": "ein Sturm in einer sehr kleinen Teetasse",
+    "fr": "une tempête dans un très petit verre d'eau",
+    "it": "una tempesta in un bicchiere molto piccolo",
+    "pt": "uma tempestade num copo muito pequeno"
+   }
+  },
+  {
+   "expresion": "to clutch at increasingly distant straws",
+   "funcion": "intensifies a standard idiom",
+   "traducciones": {
+    "es": "agarrarse a clavos cada vez más lejanos",
+    "de": "nach immer ferneren Strohhalmen greifen",
+    "fr": "se raccrocher à des branches toujours plus lointaines",
+    "it": "aggrapparsi a fili d'erba sempre più lontani",
+    "pt": "agarrar-se a palhas cada vez mais distantes"
+   }
+  },
+  {
+   "expresion": "…, to coin a well-worn phrase.",
+   "funcion": "ironic flag on a deliberately tired idiom",
+   "traducciones": {
+    "es": "…, por usar una frase muy gastada.",
+    "de": "…, um eine abgegriffene Wendung zu bemühen.",
+    "fr": "…, pour reprendre une formule bien usée.",
+    "it": "…, per usare una frase molto logora.",
+    "pt": "…, para usar uma frase muito gasta."
+   }
+  },
+  {
+   "expresion": "A twist only works if the original is obvious.",
+   "funcion": "states the condition for bending an idiom",
+   "traducciones": {
+    "es": "El juego solo funciona si el original es obvio.",
+    "de": "Die Abwandlung funktioniert nur, wenn das Original bekannt ist.",
+    "fr": "La variation ne marche que si l'original est évident.",
+    "it": "La variazione funziona solo se l'originale è ovvio.",
+    "pt": "A variação só funciona se o original for óbvio."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write a food essay on culinary heritage in which one fixed idiom is bent to fit the theme.",
+  "requisitos": [
+   "two idioms, one twisted",
+   "the twist obviously intentional",
+   "one *not to put too fine a point on it,*",
+   "use *culinary heritage*, *commensality* and *to be steeped in ritual*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Take three food-free idioms and bend each around *provenance*."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Test: would a native reader smile or frown?"
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 2 minutes on *food insecurity* — no playful idioms here. Why?"
+  }
+ ],
+ "autochequeo": [
+  "Is the source idiom being twisted still clearly recognisable?",
+  "Does the register fit deliberate idiom play, not formal writing?",
+  "Would a native reader read this as play, not as an error?",
+  "Is the twist used sparingly, for a specific effect?",
+  "Do I know the standard form of every idiom I'm twisting?"
+ ],
+ "promptCorreccion": "Focus only on deliberate idiom twists. Check whether the source idiom remains recognisable and whether the register fits. Do not rewrite the text. Flag anything that reads as an error rather than deliberate play."
+}

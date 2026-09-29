@@ -1,0 +1,389 @@
+{
+ "id": "EN-F14-B2-2027-2",
+ "skillId": "EN-F14",
+ "order": 2,
+ "idioma": "en",
+ "nivel": "B2",
+ "categoria": "fluency",
+ "topicId": "T07",
+ "titulo": "Giving Constructive Feedback",
+ "subtitulo": "Feedback on someone's new flat",
+ "ancla": "CV Facilitating collaborative interaction",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "At B2 feedback names what happened and what to change, kept separate from a judgement of character. The full four-slot structure with an acknowledged limit (C1) isn't the target yet — describing behaviour and suggesting a change clearly is enough.",
+ "cuadroReferencia": {
+  "titulo": "Feedback: behaviour, not character",
+  "columnas": [
+   "Type",
+   "Example"
+  ],
+  "filas": [
+   [
+    "Character (avoid)",
+    "You're careless."
+   ],
+   [
+    "Behaviour (use)",
+    "The report had a few mistakes in it."
+   ],
+   [
+    "Suggestion",
+    "Maybe double-check the numbers next time."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "The report had a few mistakes in the numbers.",
+   "audio": true
+  },
+  {
+   "texto": "Maybe it would help to double-check before sending it.",
+   "audio": true
+  },
+  {
+   "texto": "Can I give you some quick feedback on that?"
+  }
+ ],
+ "notas": [
+  "Asking permission first (can I give you some feedback?) makes the rest much easier to accept.",
+  "Describing behaviour instead of character avoids sounding like a personal attack.",
+  "One suggestion at a time is more useful than a long list of everything that could be improved."
+ ],
+ "contraste": {
+  "es": "Spanish can separate the action from the person (el informe tenía errores – the report had some errors, rather than eres descuidado – you're careless). English feedback relies on exactly this separation, so the action-focused form is worth using consistently.",
+  "de": "German uses the same separation (der Bericht hatte einige Fehler rather than du bist schlampig), and ehrlich gesagt corresponds to to be honest. Constructive feedback therefore transfers directly.",
+  "it": "Italian uses the same separation (nel rapporto c'erano degli errori rather than sei distratto), so constructive feedback transfers directly.",
+  "fr": "French uses the same separation (le rapport contenait quelques erreurs rather than tu es négligent), so constructive feedback transfers directly.",
+  "pt": "Portuguese uses the same separation (o relatório tinha alguns erros rather than és descuidado), so constructive feedback transfers directly."
+ },
+ "errores": [
+  "Judging character instead of describing behaviour: you're disorganised instead of the files weren't labelled clearly.",
+  "Giving feedback without asking permission first.",
+  "Giving several pieces of feedback at once instead of focusing on one."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Te voy a decir una cosa* rendered as *I'm going to tell you a thing* instead of *Can I give you some feedback?*"
+  ],
+  "de": [
+   "Carrying over German directness: *This is wrong* with no cushioning, which is neutral in German but sounds harsh in English."
+  ],
+  "it": [
+   "*Ti dico una cosa* rendered as *I tell you a thing* instead of *Can I give you some feedback?*"
+  ],
+  "fr": [
+   "*Il faudrait que tu* rendered as *It would need that you* instead of *It might help to*."
+  ],
+  "pt": [
+   "*Tens de melhorar* rendered as *You have to improve* instead of *There's room to improve*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "utility bills",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "las facturas de servicios",
+    "de": "die Nebenkosten / Versorgungsrechnungen",
+    "fr": "les factures de services",
+    "it": "le bollette delle utenze",
+    "pt": "as contas dos serviços"
+   }
+  },
+  {
+   "item": "to move house",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "mudarse",
+    "de": "umziehen",
+    "fr": "déménager",
+    "it": "traslocare",
+    "pt": "mudar-se"
+   }
+  },
+  {
+   "item": "housing cooperative",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cooperativa de vivienda",
+    "de": "die Wohnbaugenossenschaft",
+    "fr": "la coopérative d’habitation",
+    "it": "la cooperativa edilizia",
+    "pt": "a cooperativa habitacional"
+   }
+  },
+  {
+   "item": "good transport links",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "buena conexión de transporte",
+    "de": "die gute Verkehrsanbindung",
+    "fr": "les bonnes liaisons de transport",
+    "it": "i buoni collegamenti di trasporto",
+    "pt": "as boas ligações de transporte"
+   }
+  },
+  {
+   "item": "landlord",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el arrendador",
+    "de": "der Vermieter / die Vermieterin",
+    "fr": "le/la propriétaire bailleur",
+    "it": "il/la proprietario/a",
+    "pt": "o/a senhorio/a"
+   }
+  },
+  {
+   "item": "homeowner",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el/la dueño/a de casa",
+    "de": "der Hauseigentümer / die Hauseigentümerin",
+    "fr": "le/la propriétaire du logement",
+    "it": "il/la proprietario/a di casa",
+    "pt": "o/a proprietário/a da casa"
+   }
+  },
+  {
+   "item": "living space",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el espacio habitable",
+    "de": "der Wohnraum",
+    "fr": "l’espace habitable",
+    "it": "lo spazio abitativo",
+    "pt": "o espaço habitável"
+   }
+  },
+  {
+   "item": "needs renovating",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "necesita renovación",
+    "de": "renovierungsbedürftig",
+    "fr": "à rénover",
+    "it": "da ristrutturare",
+    "pt": "a precisar de renovação"
+   }
+  },
+  {
+   "item": "good neighbours",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "buenos vecinos",
+    "de": "gute Nachbarn",
+    "fr": "de bons voisins",
+    "it": "buoni vicini",
+    "pt": "bons vizinhos"
+   }
+  },
+  {
+   "item": "own flat",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el piso propio",
+    "de": "die eigene Wohnung",
+    "fr": "son propre appartement",
+    "it": "il proprio appartamento",
+    "pt": "o apartamento próprio"
+   }
+  },
+  {
+   "item": "noisy walls",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "paredes finas",
+    "de": "hellhörige Wände",
+    "fr": "les murs mal insonorisés",
+    "it": "le pareti poco insonorizzate",
+    "pt": "as paredes com pouco isolamento acústico"
+   }
+  },
+  {
+   "item": "vacant flat",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el piso vacío",
+    "de": "die leer stehende Wohnung",
+    "fr": "l’appartement vacant",
+    "it": "l’appartamento vuoto",
+    "pt": "o apartamento vazio"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Can I give you some feedback?",
+   "funcion": "asks permission",
+   "traducciones": {
+    "es": "¿Te puedo dar una devolución?",
+    "de": "Kann ich dir etwas Feedback geben?",
+    "fr": "Je peux te faire un retour ?",
+    "it": "Posso darti un feedback?",
+    "pt": "Posso dar-te algum feedback?"
+   }
+  },
+  {
+   "expresion": "The report had…",
+   "funcion": "describes behaviour, not character",
+   "traducciones": {
+    "es": "El informe tenía…",
+    "de": "Der Bericht hatte…",
+    "fr": "Le rapport avait…",
+    "it": "Il rapporto aveva…",
+    "pt": "O relatório tinha…"
+   }
+  },
+  {
+   "expresion": "Maybe it would help to…",
+   "funcion": "suggestion",
+   "traducciones": {
+    "es": "Quizás ayudaría…",
+    "de": "Vielleicht würde es helfen,…",
+    "fr": "Cela aiderait peut-être de…",
+    "it": "Forse aiuterebbe…",
+    "pt": "Talvez ajudasse…"
+   }
+  },
+  {
+   "expresion": "Next time, it might be worth…",
+   "funcion": "forward-looking suggestion",
+   "traducciones": {
+    "es": "La próxima vez, podría valer la pena…",
+    "de": "Beim nächsten Mal könnte es sich lohnen,…",
+    "fr": "La prochaine fois, cela vaudrait peut-être la peine de…",
+    "it": "La prossima volta potrebbe valere la pena…",
+    "pt": "Da próxima vez, talvez valha a pena…"
+   }
+  },
+  {
+   "expresion": "One thing I noticed was…",
+   "funcion": "specific observation",
+   "traducciones": {
+    "es": "Una cosa que noté fue…",
+    "de": "Eine Sache, die mir aufgefallen ist, war…",
+    "fr": "Une chose que j’ai remarquée, c’est…",
+    "it": "Una cosa che ho notato è stata…",
+    "pt": "Uma coisa que notei foi…"
+   }
+  },
+  {
+   "expresion": "Overall it was good, but…",
+   "funcion": "balances praise and feedback",
+   "traducciones": {
+    "es": "En general estuvo bien, pero…",
+    "de": "Insgesamt war es gut, aber…",
+    "fr": "Dans l’ensemble, c’était bien, mais…",
+    "it": "Nel complesso è andata bene, ma…",
+    "pt": "No geral, foi bom, mas…"
+   }
+  },
+  {
+   "expresion": "Is now a good time?",
+   "funcion": "checks the moment before giving feedback",
+   "traducciones": {
+    "es": "¿Es buen momento ahora?",
+    "de": "Passt es dir gerade?",
+    "fr": "C'est le bon moment ?",
+    "it": "È un buon momento?",
+    "pt": "É boa altura agora?"
+   }
+  },
+  {
+   "expresion": "What worked well was…",
+   "funcion": "names the positive specifically",
+   "traducciones": {
+    "es": "Lo que funcionó bien fue…",
+    "de": "Gut funktioniert hat…",
+    "fr": "Ce qui a bien marché, c'est…",
+    "it": "Ciò che ha funzionato bene è…",
+    "pt": "O que funcionou bem foi…"
+   }
+  },
+  {
+   "expresion": "The effect on the reader was…",
+   "funcion": "names the impact, not the person",
+   "traducciones": {
+    "es": "El efecto en quien lo lee fue…",
+    "de": "Auf die Lesenden hat das so gewirkt: …",
+    "fr": "L'effet sur le lecteur a été…",
+    "it": "L'effetto su chi legge è stato…",
+    "pt": "O efeito em quem lê foi…"
+   }
+  },
+  {
+   "expresion": "How did you see it yourself?",
+   "funcion": "invites their own reading first",
+   "traducciones": {
+    "es": "¿Y vos cómo lo viste?",
+    "de": "Wie hast du es selbst gesehen?",
+    "fr": "Et toi, comment l'as-tu vu ?",
+    "it": "E tu come l'hai vista?",
+    "pt": "E tu, como viste isso?"
+   }
+  },
+  {
+   "expresion": "Just one thing, then I'll stop.",
+   "funcion": "limits the amount of feedback",
+   "traducciones": {
+    "es": "Solo una cosa y ya está.",
+    "de": "Nur eine Sache, dann höre ich auf.",
+    "fr": "Juste une chose, et j'arrête.",
+    "it": "Solo una cosa, poi smetto.",
+    "pt": "Só uma coisa, e fico por aqui."
+   }
+  },
+  {
+   "expresion": "Does that make sense?",
+   "funcion": "checks the feedback landed",
+   "traducciones": {
+    "es": "¿Se entiende lo que digo?",
+    "de": "Ergibt das für dich Sinn?",
+    "fr": "Est-ce que cela te parle ?",
+    "it": "Ha senso per te?",
+    "pt": "Isto faz sentido para ti?"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "You helped a friend move into a housing cooperative. A month later, they ask you what the co-op could do better for new residents. Tell them.",
+  "requisitos": [
+   "behaviour and effect, not the person",
+   "one positive and one thing to change, different phrasing from last time",
+   "one *One thing I noticed was…*",
+   "use *to move house*, *utility bills* and *good transport links*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Two feedback sentences on a *housing cooperative* flat."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Rewrite *Your flat is ugly* as useful feedback."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds giving feedback on a friend's move."
+  }
+ ],
+ "autochequeo": [
+  "Is the feedback about behaviour, not character?",
+  "Was permission asked before giving feedback?",
+  "Is only one main point given, not a long list?",
+  "Is there a clear, specific suggestion for next time?",
+  "Would the other person know exactly what to change?"
+ ],
+ "promptCorreccion": "Focus only on how the feedback is given. Check whether it describes behaviour rather than character, and whether it includes a specific, actionable suggestion. Do not rewrite the text."
+}

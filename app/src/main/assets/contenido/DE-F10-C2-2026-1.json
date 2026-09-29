@@ -1,0 +1,390 @@
+{
+ "id": "DE-F10-C2-2026-1",
+ "skillId": "DE-F10",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C2",
+ "categoria": "fluency",
+ "topicId": "T08",
+ "titulo": "Abschwächen und relativieren",
+ "subtitulo": "Ein Wort, ein Punkt auf der Skala",
+ "ancla": "Erkundungen C2",
+ "challengeType": "adaptive_production",
+ "evidencia": {
+  "escritura": 500,
+  "oralMin": 8,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Auf C2 wird die Abschwächungsskala so fein kalibriert, dass ein einzelnes Wort einem Fachpublikum einen präzisen Punkt auf der Sicherheitsskala signalisiert: lässt sich nicht ausschliessen bedeutet etwas anderes als dürfte eher unwahrscheinlich sein, und die Wahl zwischen beiden ist selbst eine fachliche Aussage.",
+ "cuadroReferencia": {
+  "titulo": "Eine feinere Sicherheitsskala",
+  "columnas": [
+   "Formel",
+   "Implizierte Sicherheit"
+  ],
+  "filas": [
+   [
+    "lässt sich nicht ausschliessen",
+    "gering, aber nicht null — wert, erwähnt zu werden"
+   ],
+   [
+    "dürfte eher unwahrscheinlich sein",
+    "gering, aber nicht ausgeschlossen"
+   ],
+   [
+    "es spricht wenig dafür, dass",
+    "sehr gering, deutlich abgelehnt"
+   ]
+  ],
+  "notaPie": "Diese Unterscheidungen sind vor allem für Fachleser relevant; ein allgemeines Publikum registriert den Unterschied oft nicht — genau das macht die Wahl zu einem Signal von Expertise."
+ },
+ "ejemplos": [
+  {
+   "texto": "Ein Störfaktor lässt sich zum jetzigen Zeitpunkt nicht ausschliessen.",
+   "audio": true
+  },
+  {
+   "texto": "Ein saisonaler Effekt dürfte eher unwahrscheinlich sein.",
+   "audio": true
+  },
+  {
+   "texto": "Es spricht wenig dafür, dass der Zusammenhang kausal ist."
+  }
+ ],
+ "notas": [
+  "Lässt sich nicht ausschliessen ist schwächer als ist möglich — es signalisiert, dass etwas nicht ausgeschlossen wurde, ohne es für wahrscheinlich zu halten.",
+  "Dürfte eher unwahrscheinlich sein liegt knapp unter einer klaren Ablehnung und lässt bewusst eine Restmöglichkeit offen.",
+  "Diese Wahl signalisiert Fachkompetenz gerade dadurch, dass ein allgemeines Publikum den feinen Unterschied nicht bemerkt."
+ ],
+ "contraste": {
+  "es": "Das kultivierte Spanisch stützt sich stärker auf den condicional (podría no descartarse), um mehrere dieser Nuancen gleichzeitig abzudecken. Hispanophone C2-Sprecher neigen dazu, diese feine Skala auf zwei oder drei Optionen zu reduzieren und damit das genaue Sicherheitssignal zu verlieren, das ein Fachleser im Deutschen erwartet.",
+  "it": "Das Italienische hat für die feine Skala einige genaue Entsprechungen: non è da escludere entspricht es ist nicht auszuschliessen, sogar mit derselben Konstruktion (da + Infinitiv – zu + Infinitiv). Die Gefahr liegt darin, alles über den condizionale zu lösen, wo das Deutsche zwischen dürfte, möglicherweise und es scheint unterscheidet.",
+  "fr": "Il n'est pas exclu que entspricht genau es ist nicht ausgeschlossen, dass. Die Gefahr liegt darin, jede Nuance über den conditionnel auszudrücken, wo das Deutsche zwischen dürfte, möglicherweise und es scheint unterscheidet.",
+  "pt": "Não é de excluir entspricht es ist nicht auszuschliessen. Im europäischen Portugiesisch dient zudem das Futur als Abschwächung (poderá indicar), das wörtlich als wird anzeigen viel zu sicher klingt; im Deutschen passt dürfte anzeigen.",
+  "en": "Das Englische hat eine ähnlich feine Skala, die sich Stufe für Stufe zuordnen lässt: is likely to – dürfte, appears to – scheint, possibly – möglicherweise, cannot be ruled out – ist nicht auszuschliessen."
+ },
+ "errores": [
+  "Eine stärkere Abschwächung wählen, als die Evidenz tatsächlich hergibt, oder umgekehrt.",
+  "Lässt sich nicht ausschliessen und ist möglich als austauschbar behandeln, obwohl sie unterschiedliche Sicherheitsgrade implizieren.",
+  "Es spricht wenig dafür so verwenden, als wäre es eine vollständige Ablehnung, was es nicht ist."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*No se descarta* als *Es wird nicht verworfen* übertragen statt *Es ist nicht auszuschliessen*."
+  ],
+  "it": [
+   "*Non si esclude* als *Es schliesst sich nicht aus* übertragen statt *Es ist nicht auszuschliessen*."
+  ],
+  "fr": [
+   "*Il semblerait que* als *Es würde scheinen* übertragen statt *Anscheinend* oder *Es scheint*."
+  ],
+  "pt": [
+   "*Não é de excluir* als *Es ist nicht von auszuschliessen* übertragen statt *Es ist nicht auszuschliessen*."
+  ],
+  "en": [
+   "*It would appear that* als *Es würde erscheinen, dass* übertragen statt *Es scheint* oder *Anscheinend*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Aufeinander-Angewiesensein",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la dependencia mutua",
+    "en": "mutual dependence",
+    "fr": "la dépendance mutuelle",
+    "it": "la dipendenza reciproca",
+    "pt": "a dependência mútua"
+   }
+  },
+  {
+   "item": "das Vertrauen verspielen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "dilapidar la confianza",
+    "en": "to squander trust",
+    "fr": "gâcher la confiance",
+    "it": "dilapidare la fiducia",
+    "pt": "desperdiçar a confiança"
+   }
+  },
+  {
+   "item": "die Kränkbarkeit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la susceptibilidad a la ofensa",
+    "en": "susceptibility to hurt",
+    "fr": "la susceptibilité",
+    "it": "la suscettibilità",
+    "pt": "a suscetibilidade"
+   }
+  },
+  {
+   "item": "die Verlässlichkeit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la fiabilidad en el trato",
+    "en": "dependability",
+    "fr": "la fiabilité",
+    "it": "l'affidabilità",
+    "pt": "a fiabilidade"
+   }
+  },
+  {
+   "item": "die Zweisamkeit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la intimidad de la pareja",
+    "en": "togetherness of two",
+    "fr": "l'intimité du couple",
+    "it": "l'intimità di coppia",
+    "pt": "a intimidade a dois"
+   }
+  },
+  {
+   "item": "einander gewachsen sein",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar a la altura del otro",
+    "en": "to be a match for each other",
+    "fr": "être à la hauteur l'un de l'autre",
+    "it": "essere all'altezza l'uno dell'altro",
+    "pt": "estar à altura um do outro"
+   }
+  },
+  {
+   "item": "der Zwist",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la desavenencia",
+    "en": "discord",
+    "fr": "la discorde",
+    "it": "il dissidio",
+    "pt": "a desavença"
+   }
+  },
+  {
+   "item": "die Anerkennung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el reconocimiento",
+    "en": "recognition",
+    "fr": "la reconnaissance",
+    "it": "il riconoscimento",
+    "pt": "o reconhecimento"
+   }
+  },
+  {
+   "item": "die Entfremdung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el extrañamiento mutuo",
+    "en": "estrangement",
+    "fr": "l'aliénation",
+    "it": "l'estraniamento",
+    "pt": "o afastamento"
+   }
+  },
+  {
+   "item": "die Fürsorglichkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la solicitud atenta",
+    "en": "attentiveness",
+    "fr": "la sollicitude",
+    "it": "la premura",
+    "pt": "a solicitude"
+   }
+  },
+  {
+   "item": "die Gewohnheit als Kitt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la costumbre como argamasa",
+    "en": "habit as glue",
+    "fr": "l'habitude comme ciment",
+    "it": "l'abitudine come collante",
+    "pt": "o hábito como cimento"
+   }
+  },
+  {
+   "item": "sich versöhnlich zeigen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "mostrarse conciliador",
+    "en": "to show willingness to make up",
+    "fr": "se montrer conciliant",
+    "it": "mostrarsi conciliante",
+    "pt": "mostrar-se conciliador"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "…lässt sich nicht ausschliessen.",
+   "funcion": "geringe, nicht-null Wahrscheinlichkeit",
+   "traducciones": {
+    "es": "no se puede descartar…",
+    "en": "…cannot be ruled out",
+    "fr": "…ne peut être exclu(e).",
+    "it": "…non si può escludere.",
+    "pt": "…não pode ser excluído/a."
+   }
+  },
+  {
+   "expresion": "…dürfte eher unwahrscheinlich sein.",
+   "funcion": "gering, nicht ausgeschlossen",
+   "traducciones": {
+    "es": "…sería más bien improbable",
+    "en": "…is rather unlikely to be the case",
+    "fr": "…semble plutôt improbable.",
+    "it": "…sembra piuttosto improbabile.",
+    "pt": "…parece bastante improvável."
+   }
+  },
+  {
+   "expresion": "Es spricht wenig dafür, dass…",
+   "funcion": "deutliche, aber nicht absolute Ablehnung",
+   "traducciones": {
+    "es": "hay pocos indicios de que…",
+    "en": "there's little to suggest that…",
+    "fr": "Peu d’éléments indiquent que…",
+    "it": "Ci sono pochi elementi che indicano che…",
+    "pt": "Há poucos indícios de que…"
+   }
+  },
+  {
+   "expresion": "Vieles spricht dafür, dass…",
+   "funcion": "hohe, nicht absolute Sicherheit",
+   "traducciones": {
+    "es": "mucho indica que…",
+    "en": "much suggests that…",
+    "fr": "De nombreux éléments indiquent que…",
+    "it": "Molti elementi fanno pensare che…",
+    "pt": "Muitos indícios apontam para que…"
+   }
+  },
+  {
+   "expresion": "…, was noch genauerer Prüfung bedarf.",
+   "funcion": "markiert eine offene Frage explizit",
+   "traducciones": {
+    "es": "…, lo cual requiere un análisis más detallado",
+    "en": "…, which warrants closer examination",
+    "fr": "…, ce qui mérite un examen plus approfondi",
+    "it": "…, il che richiede un esame più approfondito",
+    "pt": "…, o que exige uma análise mais aprofundada"
+   }
+  },
+  {
+   "expresion": "Dies bleibt eine offene Frage.",
+   "funcion": "echte, unaufgelöste Unsicherheit",
+   "traducciones": {
+    "es": "esto sigue siendo una pregunta abierta",
+    "en": "this remains an open question",
+    "fr": "Cela reste une question ouverte.",
+    "it": "Resta una questione aperta.",
+    "pt": "Isto continua a ser uma questão em aberto."
+   }
+  },
+  {
+   "expresion": "Mit aller Vorsicht: …",
+   "funcion": "starke Abschwächung vorweg angekündigt",
+   "traducciones": {
+    "es": "Con toda cautela: …",
+    "en": "With every caution: …",
+    "fr": "En toute prudence : …",
+    "it": "Con ogni cautela: …",
+    "pt": "Com toda a cautela: …"
+   }
+  },
+  {
+   "expresion": "Darauf würde ich mich nicht verlassen.",
+   "funcion": "Belastbarkeit einer Annahme bestreiten",
+   "traducciones": {
+    "es": "Yo no contaría con eso.",
+    "en": "I wouldn't rely on that.",
+    "fr": "Je ne m'y fierais pas.",
+    "it": "Su questo non farei conto.",
+    "pt": "Nisso eu não contaria."
+   }
+  },
+  {
+   "expresion": "Die Datenlage trägt diese Aussage nicht.",
+   "funcion": "Aussage von der Evidenz trennen",
+   "traducciones": {
+    "es": "Los datos no sostienen esa afirmación.",
+    "en": "The data doesn't support that statement.",
+    "fr": "Les données ne soutiennent pas cette affirmation.",
+    "it": "I dati non sostengono quest'affermazione.",
+    "pt": "Os dados não sustentam essa afirmação."
+   }
+  },
+  {
+   "expresion": "Hier verzichte ich bewusst auf jede Abschwächung: …",
+   "funcion": "Abschwächung ausdrücklich aussetzen",
+   "traducciones": {
+    "es": "Aquí renuncio a propósito a toda cautela: …",
+    "en": "Here I'm deliberately dropping every qualifier: …",
+    "fr": "Ici, je renonce volontairement à toute prudence : …",
+    "it": "Qui rinuncio deliberatamente a ogni cautela: …",
+    "pt": "Aqui prescindo de propósito de qualquer cautela: …"
+   }
+  },
+  {
+   "expresion": "So weit reicht meine Kenntnis, weiter nicht.",
+   "funcion": "Reichweite des eigenen Wissens markieren",
+   "traducciones": {
+    "es": "Hasta ahí llega lo que sé, no más.",
+    "en": "That's as far as my knowledge goes, no further.",
+    "fr": "Mes connaissances vont jusque-là, pas plus loin.",
+    "it": "Fin qui arriva quel che so, non oltre.",
+    "pt": "Até aí vai o que sei, não mais."
+   }
+  },
+  {
+   "expresion": "Alles, was darüber hinausgeht, wäre Wunschdenken.",
+   "funcion": "Abgrenzung gegen Überinterpretation",
+   "traducciones": {
+    "es": "Todo lo que vaya más allá sería pensar con el deseo.",
+    "en": "Anything beyond that would be wishful thinking.",
+    "fr": "Tout ce qui va au-delà serait un vœu pieux.",
+    "it": "Tutto ciò che va oltre sarebbe un pio desiderio.",
+    "pt": "Tudo o que for além disso seria pensar por desejo."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Verfassen Sie eine Einschätzung dazu, wie belastbar Vertrauen in einer langen Beziehung ist.",
+  "requisitos": [
+   "vier Abschwächungen, jede an einer anderen Stelle der Skala",
+   "ein *lässt sich nicht ausschliessen* und ein *dürfte eher unwahrscheinlich sein*",
+   "ein Satz, der begründet, warum Sie gerade diese Stufe gewählt haben",
+   "*die Kränkbarkeit*, *das Vertrauen verspielen* und *die Verlässlichkeit* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Sechs Abschwächungen von schwach bis stark ordnen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei Aussagen über *das Aufeinander-Angewiesensein* exakt kalibrieren."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "2 Minuten: Was heisst es, *einander gewachsen zu sein*? Jede Abschwächung bewusst."
+  }
+ ],
+ "autochequeo": [
+  "Passt jede Abschwächungsformel zur tatsächlichen Evidenzlage?",
+  "Sind lässt sich nicht ausschliessen und dürfte unwahrscheinlich sein klar unterschieden?",
+  "Gibt es mindestens eine unabgeschwächte Aussage zum Kontrast?",
+  "Würde ein Fachleser den genauen Sicherheitsgrad erkennen?",
+  "Habe ich mindestens vier verschiedene Abstufungen der Skala benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Präzision der Abschwächungsskala. Prüfen Sie, ob jede Formel den tatsächlichen Sicherheitsgrad trifft. Schreiben Sie den Text nicht neu."
+}

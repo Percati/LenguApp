@@ -1,0 +1,389 @@
+{
+ "id": "DE-F07-B2-2027-1",
+ "skillId": "DE-F07",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "fluency",
+ "topicId": "T12",
+ "titulo": "Vermutungen ausdrücken",
+ "subtitulo": "Vermuten über Freizeit",
+ "ancla": "Aspekte B2",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Auf B2 drückt man Vermutungen mit den gängigsten Modalverben aus: könnte, müsste, dürfte. Die Argumentationskette aus Beobachtung, Vermutung und eingeräumter Unsicherheit (C1) ist hier noch nicht nötig — eine klar markierte Vermutung reicht.",
+ "cuadroReferencia": {
+  "titulo": "Vermutung mit Modalverben",
+  "columnas": [
+   "Form",
+   "Sicherheit"
+  ],
+  "filas": [
+   [
+    "Das könnte sein.",
+    "niedrig"
+   ],
+   [
+    "Das dürfte stimmen.",
+    "mittel-hoch"
+   ],
+   [
+    "Das müsste eigentlich klappen.",
+    "hoch"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das könnte daran liegen, dass er verschlafen hat.",
+   "audio": true
+  },
+  {
+   "texto": "Das dürfte inzwischen erledigt sein.",
+   "audio": true
+  },
+  {
+   "texto": "Das müsste eigentlich funktionieren, so wie wir es geplant haben."
+  }
+ ],
+ "notas": [
+  "Dürfte drückt eine wahrscheinliche Vermutung aus, wird aber von Lernenden selten aktiv benutzt — es lohnt sich zu üben.",
+  "Müsste in einer Vermutung heisst nicht Pflicht, sondern hohe Erwartung: das müsste klappen bedeutet ich erwarte, dass es klappt.",
+  "Vielleicht ist die einfachste, aber am wenigsten präzise Form — die Modalverben differenzieren den Grad der Sicherheit besser."
+ ],
+ "contraste": {
+  "es": "Das Spanische drückt Vermutung oft mit deber de oder dem Futuro de probabilidad aus (será por eso). Die drei deutschen Abstufungen könnte/dürfte/müsste haben im Spanischen keine so klare Entsprechung, weshalb Spanischsprachige oft nur eine Form (meist könnte) benutzen und die anderen vermeiden.",
+  "it": "Die Abstufung hat italienische Entsprechungen: potrebbe – könnte, dovrebbe – dürfte (dovrebbe essere a casa – er dürfte zu Hause sein), und das Futur sarà a casa – er wird wohl zu Hause sein. Italienischsprachige können die drei Stufen deshalb gut zuordnen.",
+  "fr": "Die Abstufung hat französische Entsprechungen: il pourrait – er könnte, il devrait être là – er dürfte da sein, il doit être là – er muss da sein. Die drei Stufen lassen sich deshalb gut zuordnen.",
+  "pt": "Die Abstufung hat portugiesische Entsprechungen: pode estar – könnte sein, deve estar – dürfte oder müsste sein. Die Falle ist dever: Wörtlich als soll übersetzt, wird aus der eigenen Vermutung eine fremde Behauptung.",
+  "en": "Die englischen Modalverben lassen sich gut zuordnen: could / might – könnte, should – dürfte (he should be at home – er dürfte zu Hause sein), must – muss bzw. müsste. Englischsprachige treffen die Abstufung deshalb leicht."
+ },
+ "errores": [
+  "Nur könnte für jede Vermutung verwenden, unabhängig vom Sicherheitsgrad.",
+  "Dürfte gar nicht benutzen, obwohl es die treffendste Form für eine wahrscheinliche Vermutung wäre.",
+  "Müsste als Pflicht statt als Vermutung missverstehen."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Debe de estar en casa* als *Er soll zu Hause sein* übertragen, was eine Fremdbehauptung ausdrückt, statt *Er dürfte zu Hause sein*."
+  ],
+  "it": [
+   "*Dovrebbe essere a casa* als *Er soll zu Hause sein* übertragen, was eine Fremdbehauptung ausdrückt, statt *Er dürfte zu Hause sein*."
+  ],
+  "fr": [
+   "*Il doit être chez lui* als *Er soll zu Hause sein* übertragen, was eine Fremdbehauptung ausdrückt, statt *Er muss* oder *dürfte zu Hause sein*."
+  ],
+  "pt": [
+   "*Deve estar em casa* als *Er soll zu Hause sein* übertragen, was eine Fremdbehauptung ausdrückt, statt *Er dürfte zu Hause sein*."
+  ],
+  "en": [
+   "*He should be home* als *Er soll zu Hause sein* übertragen, was eine Fremdbehauptung ausdrückt, statt *Er dürfte zu Hause sein*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "ein Hobby nachgehen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "dedicarse a una afición",
+    "en": "to pursue a hobby",
+    "fr": "pratiquer un loisir",
+    "it": "dedicarsi a un hobby",
+    "pt": "dedicar-se a um hobby"
+   }
+  },
+  {
+   "item": "der Verein",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el club, la asociación",
+    "en": "the club, association",
+    "fr": "l'association",
+    "it": "l'associazione",
+    "pt": "o clube, a associação"
+   }
+  },
+  {
+   "item": "die Musse",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el tiempo de ocio",
+    "en": "leisure, spare time",
+    "fr": "les loisirs",
+    "it": "il tempo libero",
+    "pt": "o lazer"
+   }
+  },
+  {
+   "item": "das Ehrenamt",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el voluntariado",
+    "en": "volunteer work",
+    "fr": "le bénévolat",
+    "it": "il volontariato",
+    "pt": "o trabalho voluntário"
+   }
+  },
+  {
+   "item": "der Feierabend",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el fin de la jornada laboral",
+    "en": "the end of the working day",
+    "fr": "la fin de journée de travail",
+    "it": "la fine della giornata lavorativa",
+    "pt": "o fim do expediente"
+   }
+  },
+  {
+   "item": "das Bastelprojekt",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el proyecto de manualidades",
+    "en": "the craft project",
+    "fr": "le projet de bricolage",
+    "it": "il progetto di fai-da-te",
+    "pt": "o projeto artesanal"
+   }
+  },
+  {
+   "item": "die Freizeitgestaltung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la organización del tiempo libre",
+    "en": "leisure planning",
+    "fr": "l'organisation des loisirs",
+    "it": "l'organizzazione del tempo libero",
+    "pt": "a organização do lazer"
+   }
+  },
+  {
+   "item": "der Wettkampf",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la competencia",
+    "en": "the competition",
+    "fr": "la compétition",
+    "it": "la competizione",
+    "pt": "a competição"
+   }
+  },
+  {
+   "item": "sich engagieren für",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "comprometerse con",
+    "en": "to get involved in",
+    "fr": "s'investir pour",
+    "it": "impegnarsi per",
+    "pt": "engajar-se por"
+   }
+  },
+  {
+   "item": "die Amateurliga",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la liga amateur",
+    "en": "the amateur league",
+    "fr": "la ligue amateur",
+    "it": "il campionato amatoriale",
+    "pt": "a liga amadora"
+   }
+  },
+  {
+   "item": "die Sammelleidenschaft",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la pasión por coleccionar",
+    "en": "passion for collecting",
+    "fr": "la passion de collectionner",
+    "it": "la passione del collezionismo",
+    "pt": "a paixão por colecionar"
+   }
+  },
+  {
+   "item": "die Kreativität ausleben",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "dar rienda suelta a la creatividad",
+    "en": "to express one's creativity",
+    "fr": "exprimer sa créativité",
+    "it": "esprimere la creatività",
+    "pt": "expressar a criatividade"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das könnte sein.",
+   "funcion": "Vermutung, niedrige Sicherheit",
+   "traducciones": {
+    "es": "Podría ser.",
+    "en": "That could be.",
+    "fr": "C’est possible.",
+    "it": "Potrebbe essere.",
+    "pt": "Pode ser."
+   }
+  },
+  {
+   "expresion": "Das dürfte stimmen.",
+   "funcion": "Vermutung, hohe Wahrscheinlichkeit",
+   "traducciones": {
+    "es": "Seguramente sea así.",
+    "en": "That's probably right.",
+    "fr": "C’est probablement vrai.",
+    "it": "Probabilmente è così.",
+    "pt": "Provavelmente é verdade."
+   }
+  },
+  {
+   "expresion": "Das müsste eigentlich…",
+   "funcion": "hohe Erwartung",
+   "traducciones": {
+    "es": "Se supone que…",
+    "en": "That should…",
+    "fr": "Ça devrait normalement…",
+    "it": "In teoria dovrebbe…",
+    "pt": "Em princípio, deveria…"
+   }
+  },
+  {
+   "expresion": "Vielleicht liegt es daran, dass…",
+   "funcion": "einfache Vermutung",
+   "traducciones": {
+    "es": "Quizás sea porque…",
+    "en": "Maybe it's because…",
+    "fr": "C’est peut-être parce que…",
+    "it": "Forse è perché…",
+    "pt": "Talvez seja porque…"
+   }
+  },
+  {
+   "expresion": "Ich vermute, dass…",
+   "funcion": "Vermutung, explizit",
+   "traducciones": {
+    "es": "Supongo que…",
+    "en": "I suspect that…",
+    "fr": "Je suppose que…",
+    "it": "Suppongo che…",
+    "pt": "Suponho que…"
+   }
+  },
+  {
+   "expresion": "Wahrscheinlich…",
+   "funcion": "Adverb, alternative Form",
+   "traducciones": {
+    "es": "Probablemente…",
+    "en": "Probably…",
+    "fr": "Probablement…",
+    "it": "Probabilmente…",
+    "pt": "Provavelmente…"
+   }
+  },
+  {
+   "expresion": "Ich könnte mir vorstellen, dass…",
+   "funcion": "Vermutung, persönlich gerahmt",
+   "traducciones": {
+    "es": "Me imagino que…",
+    "en": "I could imagine that…",
+    "fr": "J'imagine que…",
+    "it": "Potrei immaginare che…",
+    "pt": "Posso imaginar que…"
+   }
+  },
+  {
+   "expresion": "Vermutlich hat es damit zu tun, dass…",
+   "funcion": "Ursache vermuten",
+   "traducciones": {
+    "es": "Probablemente tenga que ver con que…",
+    "en": "It probably has to do with…",
+    "fr": "Cela tient probablement au fait que…",
+    "it": "Probabilmente ha a che fare con il fatto che…",
+    "pt": "Provavelmente tem a ver com o facto de…"
+   }
+  },
+  {
+   "expresion": "Das kann eigentlich nicht sein.",
+   "funcion": "Vermutung ausschliessen",
+   "traducciones": {
+    "es": "Eso en realidad no puede ser.",
+    "en": "That can't really be it.",
+    "fr": "Cela ne peut pas vraiment être le cas.",
+    "it": "Questo non può essere.",
+    "pt": "Isso não pode ser."
+   }
+  },
+  {
+   "expresion": "Keine Ahnung, aber vielleicht…",
+   "funcion": "Vermutung ohne Wissen, informell",
+   "traducciones": {
+    "es": "Ni idea, pero quizá…",
+    "en": "No idea, but maybe…",
+    "fr": "Aucune idée, mais peut-être…",
+    "it": "Non ne ho idea, ma forse…",
+    "pt": "Não faço ideia, mas talvez…"
+   }
+  },
+  {
+   "expresion": "Das weiss ich nicht sicher.",
+   "funcion": "Vermutung klar von Wissen trennen",
+   "traducciones": {
+    "es": "Eso no lo sé con seguridad.",
+    "en": "I don't know that for sure.",
+    "fr": "Je ne le sais pas avec certitude.",
+    "it": "Non lo so con certezza.",
+    "pt": "Isso não sei com certeza."
+   }
+  },
+  {
+   "expresion": "Warten wir mal ab.",
+   "funcion": "Vermutung offenlassen",
+   "traducciones": {
+    "es": "Esperemos a ver.",
+    "en": "Let's wait and see.",
+    "fr": "Attendons de voir.",
+    "it": "Aspettiamo e vediamo.",
+    "pt": "Esperemos para ver."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Vermuten Sie, warum immer weniger Menschen ein Ehrenamt übernehmen.",
+  "requisitos": [
+   "vier Vermutungen mit verschiedenen Mitteln",
+   "ein *Vielleicht liegt es daran, dass…*",
+   "Vermutung und Tatsache klar getrennt",
+   "*das Ehrenamt*, *der Verein* und *die Musse* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei Gründe für weniger *Ehrenamt* notieren — sicher oder vermutet?"
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Jeden mit *könnte*, *dürfte* oder *müsste* formulieren."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Warum haben Leute keine *Musse* mehr?"
+  }
+ ],
+ "autochequeo": [
+  "Habe ich mindestens zwei verschiedene Modalverben benutzt (könnte, dürfte, müsste)?",
+  "Passt der gewählte Sicherheitsgrad zur tatsächlichen Situation?",
+  "Habe ich müsste nicht mit einer Pflicht verwechselt?",
+  "Habe ich dürfte mindestens einmal aktiv benutzt?",
+  "Ist die Vermutung klar als Vermutung markiert, nicht als Tatsache?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Modalverben der Vermutung. Prüfen Sie, ob der Sicherheitsgrad zur Situation passt und ob mehr als eine Form benutzt wird. Schreiben Sie den Text nicht neu."
+}

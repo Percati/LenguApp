@@ -1,0 +1,345 @@
+{
+ "id": "DE-G15-B2-2027-1",
+ "skillId": "DE-G15",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "B2",
+ "categoria": "grammar",
+ "topicId": "T11",
+ "titulo": "Konjunktiv I und indirekte Rede",
+ "subtitulo": "Konjunktiv I: was in der Zeitung stand",
+ "ancla": "Aspekte B1+",
+ "challengeType": "constrained_production",
+ "evidencia": {
+  "escritura": 250,
+  "oralMin": 4,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Auf B2 wird die indirekte Rede mit **Konjunktiv I** für die dritte Person eingeführt: er sagte, er sei müde. Die Einbettung in Relativsätze und Nominalstil (C1) kommt später — hier zählt die korrekte Grundform. Dazu gehört auch, die Quelle zu benennen: *nach Angaben von…*, *einer Studie zufolge…* leiten eine fremde Aussage ein, ohne dass man sie sich zu eigen macht.",
+ "cuadroReferencia": {
+  "titulo": "Direkte und indirekte Rede",
+  "columnas": [
+   "Direkt",
+   "Indirekt mit Konjunktiv I"
+  ],
+  "filas": [
+   [
+    "\"Ich bin müde.\"",
+    "Er sagte, er sei müde."
+   ],
+   [
+    "\"Ich habe keine Zeit.\"",
+    "Sie sagte, sie habe keine Zeit."
+   ],
+   [
+    "\"Wir kommen morgen.\"",
+    "Sie sagten, sie kämen morgen. (Konjunktiv II, da Konjunktiv I = Indikativ)"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Er sagte, er sei mit der Arbeit fertig.",
+   "audio": true
+  },
+  {
+   "texto": "Sie meinte, sie habe das schon erledigt.",
+   "audio": true
+  },
+  {
+   "texto": "Sie sagten, sie kämen etwas später."
+  }
+ ],
+ "notas": [
+  "Wo Konjunktiv I mit dem Indikativ zusammenfällt (meist bei wir/sie), wechselt man zum Konjunktiv II.",
+  "Dass kann nach dem Einleitungsverb stehen oder weggelassen werden: er sagte, dass er müde sei oder er sagte, er sei müde.",
+  "Konjunktiv I wird vor allem schriftlich verwendet; im Gespräch reicht oft der Indikativ mit einem Signalwort wie angeblich."
+ ],
+ "contraste": {
+  "es": "Das Spanische markiert berichtete Rede nicht durch einen eigenen Modus, sondern durch den Kontext oder *que* + Indikativ/Subjuntivo je nach Verb. Der deutsche Konjunktiv I hat deshalb keine direkte Entsprechung, und Spanischsprachige benutzen oft einfach den Indikativ, wo der Konjunktiv I erwartet wird.",
+  "it": "Das Italienische hat mit dem *condizionale* ein Mittel, Distanz auszudrücken, benutzt es aber für unbestätigte Nachrichten, nicht für neutral wiedergegebene Rede (*ha detto che era stanco* steht im Indikativ). Italienischsprachige greifen deshalb bei Gerüchten zum Konjunktiv II und bei normaler indirekter Rede zum Indikativ; der Konjunktiv I dazwischen ist neu. *Secondo* und *stando a* entsprechen gut *laut* und *zufolge*.",
+  "fr": "Die französische indirekte Rede arbeitet mit Zeitenfolge im Indikativ (*il a dit qu'il était fatigué*); eine eigene Verbform gibt es nur für Gerüchte (*conditionnel*). Französischsprachige empfinden den Konjunktiv I für neutral berichtete Rede deshalb als überflüssig und verwechseln ihn mit dem *subjonctif*, den er nicht ersetzt. *Selon* entspricht gut *laut* bzw. *zufolge*.",
+  "pt": "Das Portugiesische markiert berichtete Rede durch Rückverschiebung der Zeit (*disse que estava cansado*), nicht durch einen Modus, weshalb Portugiesischsprachige *er sagte, er war müde* bilden. Für unbestätigte Nachrichten gibt es in der Presse *teria* bzw. *terá*, aber keine Form für neutral wiedergegebene Rede. *Segundo* entspricht gut *laut* und *zufolge*.",
+  "en": "Das Englische markiert berichtete Rede über die Zeitenfolge (*she said she was tired*), nicht über einen Modus. Englischsprachige übertragen die Rückverschiebung und bilden *sie sagte, sie war müde*; dass eine eigene Verbform die Quelle markiert, ist neu. *According to* entspricht gut *laut* und *zufolge*."
+ },
+ "errores": [
+  "Konjunktiv I benutzen, wo er mit dem Indikativ zusammenfällt, ohne zu Konjunktiv II zu wechseln.",
+  "Den Indikativ in indirekter Rede verwenden, wo Konjunktiv I erwartet wird.",
+  "Die Personalpronomen nicht anpassen: er sagte, ich sei müde statt er sei müde."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Die spanische Zeitenfolge übernehmen und in die Vergangenheit verschieben: *Sie sagte, sie war müde* statt *sie sei müde*."
+  ],
+  "it": [
+   "Den italienischen *congiuntivo* der indirekten Rede auf Konjunktiv II statt Konjunktiv I übertragen, auch wo Konjunktiv I eindeutig ist: *er sagte, er hätte keine Zeit*."
+  ],
+  "fr": [
+   "Die französische Zeitenfolge übernehmen und in die Vergangenheit verschieben: *Sie sagte, sie war müde* statt *sie sei müde*."
+  ],
+  "pt": [
+   "Die portugiesische Zeitenfolge übernehmen und in die Vergangenheit verschieben: *Er sagte, er hatte keine Zeit* statt *er habe*."
+  ],
+  "en": [
+   "Die englische Zeitenverschiebung (*backshift*) übertragen: *Er sagte, er war krank* statt *er sei krank*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "die Schlagzeile",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el titular",
+    "en": "the headline",
+    "fr": "le titre",
+    "it": "il titolo",
+    "pt": "a manchete"
+   }
+  },
+  {
+   "item": "die Quelle",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la fuente",
+    "en": "the source",
+    "fr": "la source",
+    "it": "la fonte",
+    "pt": "a fonte"
+   }
+  },
+  {
+   "item": "die Falschmeldung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la noticia falsa",
+    "en": "fake news",
+    "fr": "la fausse nouvelle",
+    "it": "la notizia falsa",
+    "pt": "a notícia falsa"
+   }
+  },
+  {
+   "item": "die öffentliche Meinung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la opinión pública",
+    "en": "public opinion",
+    "fr": "l'opinion publique",
+    "it": "l'opinione pubblica",
+    "pt": "a opinião pública"
+   }
+  },
+  {
+   "item": "die Medienkompetenz",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la alfabetización mediática",
+    "en": "media literacy",
+    "fr": "l'éducation aux médias",
+    "it": "l'alfabetizzazione mediatica",
+    "pt": "a alfabetização midiática"
+   }
+  },
+  {
+   "item": "die Skandalisierung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la escandalización",
+    "en": "sensationalising",
+    "fr": "la mise en scandale",
+    "it": "la spettacolarizzazione",
+    "pt": "a sensacionalização"
+   }
+  },
+  {
+   "item": "sich informieren über",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "informarse sobre",
+    "en": "to find out about",
+    "fr": "s'informer sur",
+    "it": "informarsi su",
+    "pt": "informar-se sobre"
+   }
+  },
+  {
+   "item": "der Faktencheck",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la verificación de datos",
+    "en": "the fact-check",
+    "fr": "la vérification des faits",
+    "it": "il controllo dei fatti",
+    "pt": "a verificação de fatos"
+   }
+  },
+  {
+   "item": "die Filterblase",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la burbuja de filtro",
+    "en": "the filter bubble",
+    "fr": "la bulle de filtre",
+    "it": "la bolla di filtraggio",
+    "pt": "a bolha de filtro"
+   }
+  },
+  {
+   "item": "reisserisch",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sensacionalista",
+    "en": "sensationalist",
+    "fr": "racoleur",
+    "it": "sensazionalistico",
+    "pt": "sensacionalista"
+   }
+  },
+  {
+   "item": "die Glaubwürdigkeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la credibilidad",
+    "en": "credibility",
+    "fr": "la crédibilité",
+    "it": "la credibilità",
+    "pt": "a credibilidade"
+   }
+  },
+  {
+   "item": "die Manipulation",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la manipulación",
+    "en": "manipulation",
+    "fr": "la manipulation",
+    "it": "la manipolazione",
+    "pt": "a manipulação"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Er/Sie sagte, er/sie sei…",
+   "funcion": "indirekte Rede, Konjunktiv I",
+   "traducciones": {
+    "es": "Dijo que era/estaba…",
+    "en": "He/She said he/she was…",
+    "fr": "Il/Elle a dit qu’il/elle était…",
+    "it": "Ha detto che era…",
+    "pt": "Ele/Ela disse que era/estava…"
+   }
+  },
+  {
+   "expresion": "Er/Sie meinte, er/sie habe…",
+   "funcion": "indirekte Rede mit haben",
+   "traducciones": {
+    "es": "Dijo que había/tenía…",
+    "en": "He/She said he/she had…",
+    "fr": "Il/Elle a dit qu’il/elle avait…",
+    "it": "Ha detto che aveva…",
+    "pt": "Ele/Ela disse que tinha…"
+   }
+  },
+  {
+   "expresion": "Sie sagten, sie kämen…",
+   "funcion": "Konjunktiv II bei Zusammenfall",
+   "traducciones": {
+    "es": "Dijeron que vendrían…",
+    "en": "They said they would come…",
+    "fr": "Ils ont dit qu’ils viendraient…",
+    "it": "Hanno detto che sarebbero venuti…",
+    "pt": "Disseram que viriam…"
+   }
+  },
+  {
+   "expresion": "Laut ihm/ihr…",
+   "funcion": "alternative Einleitung",
+   "traducciones": {
+    "es": "Según él/ella…",
+    "en": "According to him/her…",
+    "fr": "Selon lui/elle…",
+    "it": "Secondo lui/lei…",
+    "pt": "Segundo ele/ela…"
+   }
+  },
+  {
+   "expresion": "Angeblich…",
+   "funcion": "Alternative zum Konjunktiv I, informell",
+   "traducciones": {
+    "es": "Supuestamente…",
+    "en": "Allegedly…",
+    "fr": "Apparemment / prétendument…",
+    "it": "A quanto pare / presumibilmente…",
+    "pt": "Alegadamente…"
+   }
+  },
+  {
+   "expresion": "Er fragte, ob…",
+   "funcion": "indirekte Frage",
+   "traducciones": {
+    "es": "Preguntó si…",
+    "en": "He asked whether…",
+    "fr": "Il a demandé si…",
+    "it": "Ha chiesto se…",
+    "pt": "Ele perguntou se…"
+   }
+  },
+  {
+   "expresion": "Nach Angaben von…",
+   "funcion": "Quelle benennen",
+   "traducciones": {
+    "es": "según datos de…",
+    "en": "Nach Angaben von…",
+    "fr": "Selon les informations de…",
+    "it": "Secondo quanto riferito da…",
+    "pt": "Segundo dados de…"
+   }
+  },
+  {
+   "expresion": "Einer Studie zufolge…",
+   "funcion": "Studie als Quelle anführen",
+   "traducciones": {
+    "es": "según un estudio…",
+    "en": "Einer Studie zufolge…",
+    "fr": "Selon une étude…",
+    "it": "Secondo uno studio…",
+    "pt": "Segundo um estudo…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Geben Sie einen Zeitungsbericht über eine Falschmeldung in indirekter Rede wieder.",
+  "requisitos": [
+   "sechs Sätze mit Konjunktiv I",
+   "eine indirekte Frage mit *ob*",
+   "zwei Quellenangaben (*laut*, *nach Angaben von*)",
+   "*die Falschmeldung*, *die Quelle* und *die öffentliche Meinung* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Fünf Aussagen aus einer *Schlagzeile* in Konjunktiv I setzen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Drei Fragen eines Journalisten mit *ob* und Fragewort wiedergeben."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Was sagte ein Politiker angeblich? Mit *laut*."
+  }
+ ],
+ "autochequeo": [
+  "Steht Konjunktiv I, wo er sich vom Indikativ unterscheidet?",
+  "Ist bei Zusammenfall auf Konjunktiv II gewechselt?",
+  "Sind die Personalpronomen korrekt angepasst?",
+  "Ist die indirekte Frage korrekt mit ob oder einem Fragewort gebildet?",
+  "Habe ich dass wahlweise weggelassen oder korrekt gesetzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Konjunktiv I in der indirekten Rede. Prüfen Sie, wo auf Konjunktiv II gewechselt werden muss. Schreiben Sie den Text nicht neu."
+}

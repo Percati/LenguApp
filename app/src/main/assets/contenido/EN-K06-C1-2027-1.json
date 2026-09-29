@@ -1,0 +1,415 @@
+{
+ "id": "EN-K06-C1-2027-1",
+ "skillId": "EN-K06",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T03",
+ "titulo": "Reported Speech, Backshift and Hedged Attribution",
+ "subtitulo": "Reporting what a tech company said, and how far you believe it",
+ "ancla": "Objective Proficiency",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Journalistic and careful professional English often reports what someone said while simultaneously distancing the writer from it: she reportedly claimed she had been unaware combines backshift, a reporting verb chosen for its connotation, and a hedge adverb, all in one clause.",
+ "cuadroReferencia": {
+  "titulo": "Three layers of distance",
+  "columnas": [
+   "Layer",
+   "Device",
+   "Example fragment"
+  ],
+  "filas": [
+   [
+    "Backshift",
+    "tense moves back",
+    "she had been unaware"
+   ],
+   [
+    "Reporting verb choice",
+    "claim signals doubt, state is neutral",
+    "she claimed / she stated"
+   ],
+   [
+    "Hedge adverb",
+    "adds a further layer of distance",
+    "reportedly, allegedly"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "She reportedly claimed she had been unaware of the decision.",
+   "audio": true
+  },
+  {
+   "texto": "He allegedly stated that the funds had already been transferred.",
+   "audio": true
+  },
+  {
+   "texto": "Officials reportedly admitted that the figures had been wrong."
+  }
+ ],
+ "notas": [
+  "Claim carries an inbuilt note of doubt; state and say are neutral — choosing between them is itself a form of commentary.",
+  "Reportedly and allegedly both distance the writer from a claim, but allegedly specifically implies possible wrongdoing.",
+  "Overusing all three layers on every sentence makes a text read as needlessly suspicious rather than careful."
+ ],
+ "contraste": {
+  "es": "Spanish achieves a similar effect with según se dice or presuntamente, but rarely combines three distinct layers in one sentence as systematically as English journalism does. Spanish speakers tend to use one layer of distance where English expects two or three.",
+  "de": "German marks distance with the Konjunktiv I, which does not change with the time of reporting, and with adverbs such as angeblich or Berichten zufolge. German speakers therefore often skip backshift (She said she is unaware) and rely on one adverb, where careful English combines backshift, a chosen reporting verb and a hedging adverb.",
+  "it": "Italian journalism marks distance with the condizionale (avrebbe dichiarato di non sapere), which leads to the calque she would have claimed. Secondo quanto riportato corresponds well to reportedly; the English combination of backshift, reporting verb and adverb has to be learned as a pattern.",
+  "fr": "The French conditionnel journalistique (elle aurait affirmé ne pas être au courant) leads to the calque she would have claimed. Selon and prétendument are useful, but prétendument is more sceptical than reportedly, so the choice of adverb needs care.",
+  "pt": "European Portuguese uses alegadamente very much like allegedly, and the press marks unconfirmed claims with the future perfect (terá afirmado), which leads to the calque she will have claimed. Backshift itself is familiar, as Portuguese reported speech shifts tenses in the same way."
+ },
+ "errores": [
+  "Choosing claim where a neutral verb like state or say would be more accurate and fair.",
+  "Stacking all three layers on a fact that is actually verified, which reads as unfairly doubtful.",
+  "Getting the backshift wrong when combining it with a reporting verb of doubt."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Copying the reportive conditional (*según el informe, los costes habrían subido*): *costs would have risen* instead of *costs have reportedly risen*."
+  ],
+  "de": [
+   "Keeping the present after a past reporting verb, as with Konjunktiv I (*er sagte, er sei krank*): *He said he is ill* where the backshift is expected."
+  ],
+  "it": [
+   "Copying the reportive conditional (*secondo il rapporto, i costi sarebbero aumentati*): *costs would have risen* instead of *costs have reportedly risen*."
+  ],
+  "fr": [
+   "Copying the reportive conditional (*selon le rapport, les coûts auraient augmenté*): *costs would have risen* instead of *costs have reportedly risen*."
+  ],
+  "pt": [
+   "Copying the reportive conditional (*segundo o relatório, os custos teriam subido*): *costs would have risen* instead of *costs have reportedly risen*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "a rabbit hole",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "un pozo sin fondo de contenido",
+    "de": "ein Kaninchenbau",
+    "fr": "un engrenage sans fin",
+    "it": "un buco nero di contenuti",
+    "pt": "um poço sem fundo"
+   }
+  },
+  {
+   "item": "algorithm",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el algoritmo",
+    "de": "der Algorithmus",
+    "fr": "l'algorithme",
+    "it": "l'algoritmo",
+    "pt": "o algoritmo"
+   }
+  },
+  {
+   "item": "data protection",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la protección de datos",
+    "de": "der Datenschutz",
+    "fr": "la protection des données",
+    "it": "la protezione dei dati",
+    "pt": "a proteção de dados"
+   }
+  },
+  {
+   "item": "to be glued to a screen",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar pegado a la pantalla",
+    "de": "am Bildschirm kleben",
+    "fr": "être scotché à un écran",
+    "it": "essere incollato allo schermo",
+    "pt": "estar colado ao ecrã"
+   }
+  },
+  {
+   "item": "to be hooked on an app",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "estar enganchado a una app",
+    "de": "an einer App hängen",
+    "fr": "être accro à une appli",
+    "it": "essere dipendente da un'app",
+    "pt": "estar viciado numa app"
+   }
+  },
+  {
+   "item": "a digital footprint",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la huella digital",
+    "de": "der digitale Fussabdruck",
+    "fr": "l'empreinte numérique",
+    "it": "l'impronta digitale",
+    "pt": "a pegada digital"
+   }
+  },
+  {
+   "item": "biased",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "sesgado",
+    "de": "voreingenommen",
+    "fr": "biaisé",
+    "it": "distorto",
+    "pt": "enviesado"
+   }
+  },
+  {
+   "item": "hype",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el entusiasmo exagerado",
+    "de": "der Hype",
+    "fr": "le battage médiatique",
+    "it": "l'hype",
+    "pt": "o entusiasmo exagerado"
+   }
+  },
+  {
+   "item": "screen fatigue",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el cansancio de pantalla",
+    "de": "die Bildschirmmüdigkeit",
+    "fr": "la fatigue des écrans",
+    "it": "l'affaticamento da schermo",
+    "pt": "o cansaço dos ecrãs"
+   }
+  },
+  {
+   "item": "surveillance",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la vigilancia",
+    "de": "die Überwachung",
+    "fr": "la surveillance",
+    "it": "la sorveglianza",
+    "pt": "a vigilância"
+   }
+  },
+  {
+   "item": "to doomscroll",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "consumir malas noticias sin parar",
+    "de": "sich durch schlechte Nachrichten scrollen",
+    "fr": "faire du doomscrolling",
+    "it": "fare doomscrolling",
+    "pt": "fazer doomscrolling"
+   }
+  },
+  {
+   "item": "to fall for a scam",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "caer en una estafa",
+    "de": "auf einen Betrug hereinfallen",
+    "fr": "tomber dans une arnaque",
+    "it": "cadere in una truffa",
+    "pt": "cair num esquema"
+   }
+  },
+  {
+   "item": "to go viral",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "volverse viral",
+    "de": "viral gehen",
+    "fr": "devenir viral",
+    "it": "diventare virale",
+    "pt": "tornar-se viral"
+   }
+  },
+  {
+   "item": "to log off",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "desconectarse",
+    "de": "sich abmelden",
+    "fr": "se déconnecter",
+    "it": "disconnettersi",
+    "pt": "desligar-se"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "…reportedly…",
+   "funcion": "distances without implying wrongdoing",
+   "traducciones": {
+    "es": "…según se informa…",
+    "de": "…Berichten zufolge…",
+    "fr": "…selon certaines informations…",
+    "it": "…secondo quanto riferito…",
+    "pt": "…segundo consta…"
+   }
+  },
+  {
+   "expresion": "…allegedly…",
+   "funcion": "distances, implies possible wrongdoing",
+   "traducciones": {
+    "es": "…presuntamente…",
+    "de": "…angeblich…",
+    "fr": "…prétendument…",
+    "it": "…presumibilmente…",
+    "pt": "…alegadamente…"
+   }
+  },
+  {
+   "expresion": "…claimed that…",
+   "funcion": "reporting verb with inbuilt doubt",
+   "traducciones": {
+    "es": "…afirmó que… (con reservas)",
+    "de": "…behauptete, dass…",
+    "fr": "…a affirmé que…",
+    "it": "…ha affermato che…",
+    "pt": "…afirmou que…"
+   }
+  },
+  {
+   "expresion": "…stated that…",
+   "funcion": "neutral reporting verb",
+   "traducciones": {
+    "es": "…declaró que…",
+    "de": "…erklärte, dass…",
+    "fr": "…a déclaré que…",
+    "it": "…ha dichiarato che…",
+    "pt": "…declarou que…"
+   }
+  },
+  {
+   "expresion": "…had been…",
+   "funcion": "backshift into the past perfect",
+   "traducciones": {
+    "es": "…había sido…",
+    "de": "…war… gewesen",
+    "fr": "…avait été…",
+    "it": "…era stato/a…",
+    "pt": "…tinha sido…"
+   }
+  },
+  {
+   "expresion": "According to sources,…",
+   "funcion": "attributes without naming the source",
+   "traducciones": {
+    "es": "Según fuentes,…",
+    "de": "Quellen zufolge…",
+    "fr": "Selon des sources,…",
+    "it": "Secondo alcune fonti,…",
+    "pt": "Segundo fontes,…"
+   }
+  },
+  {
+   "expresion": "She denied that she had…",
+   "funcion": "reporting verb with backshift, negative",
+   "traducciones": {
+    "es": "Negó haber…",
+    "de": "Sie bestritt, … zu haben.",
+    "fr": "Elle a nié avoir…",
+    "it": "Ha negato di aver…",
+    "pt": "Negou ter…"
+   }
+  },
+  {
+   "expresion": "He insisted that he was…",
+   "funcion": "reporting verb signalling persistence",
+   "traducciones": {
+    "es": "Insistió en que estaba…",
+    "de": "Er beharrte darauf, dass er … sei.",
+    "fr": "Il a insisté sur le fait qu'il était…",
+    "it": "Ha insistito che era…",
+    "pt": "Insistiu que estava…"
+   }
+  },
+  {
+   "expresion": "He admitted that he had…",
+   "funcion": "reporting verb conceding fault",
+   "traducciones": {
+    "es": "Admitió que había…",
+    "de": "Er räumte ein, dass er … habe.",
+    "fr": "Il a admis qu'il avait…",
+    "it": "Ha ammesso di aver…",
+    "pt": "Admitiu que tinha…"
+   }
+  },
+  {
+   "expresion": "No backshift here: the claim still stands.",
+   "funcion": "explains why the tense doesn't move",
+   "traducciones": {
+    "es": "Acá no hay retroceso: la afirmación sigue vigente.",
+    "de": "Hier keine Zeitverschiebung: die Aussage gilt weiter.",
+    "fr": "Pas de concordance ici : l'affirmation tient toujours.",
+    "it": "Qui nessuno spostamento: l'affermazione vale ancora.",
+    "pt": "Aqui sem recuo: a afirmação mantém-se."
+   }
+  },
+  {
+   "expresion": "That's my paraphrase, not their words.",
+   "funcion": "separates paraphrase from quotation",
+   "traducciones": {
+    "es": "Esa es mi paráfrasis, no sus palabras.",
+    "de": "Das ist meine Umschreibung, nicht ihre Worte.",
+    "fr": "C'est ma paraphrase, pas leurs mots.",
+    "it": "È la mia parafrasi, non le loro parole.",
+    "pt": "Essa é a minha paráfrase, não as palavras deles."
+   }
+  },
+  {
+   "expresion": "They declined to comment.",
+   "funcion": "reports the absence of a statement",
+   "traducciones": {
+    "es": "Declinaron hacer comentarios.",
+    "de": "Sie wollten sich nicht äussern.",
+    "fr": "Ils n'ont pas souhaité commenter.",
+    "it": "Hanno preferito non commentare.",
+    "pt": "Declinaram comentar."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Write a short report on a (fictional) announcement by an app company about how it handles your data.",
+  "requisitos": [
+   "three reporting verbs chosen for their connotation (*claimed*, *insisted*, *admitted*)",
+   "correct backshift in at least four clauses",
+   "one hedge adverb (*reportedly*, *allegedly*)",
+   "use *algorithm*, *data protection* and *to be hooked on an app*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write three things an app told you in its terms, in reported speech with backshift."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Same three, now with a reporting verb that shows your doubt."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds on falling down *a rabbit hole* online, reporting what a friend told you about it."
+  }
+ ],
+ "autochequeo": [
+  "Does the reporting verb (claim, state, say) match the actual level of certainty?",
+  "Is the backshift correctly applied?",
+  "Is the distancing adverb (reportedly, allegedly) appropriate to the situation?",
+  "Have I avoided stacking all three layers on a verified fact?",
+  "Would a reader sense fairness rather than unwarranted suspicion?"
+ ],
+ "promptCorreccion": "Focus only on reported speech combined with hedged attribution. Check the reporting verb choice, the backshift and whether the distancing feels fair to the source. Do not rewrite the text."
+}

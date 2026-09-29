@@ -1,0 +1,378 @@
+{
+ "id": "EN-F12-C1-2027-1",
+ "skillId": "EN-F12",
+ "order": 1,
+ "idioma": "en",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T06",
+ "titulo": "Persuading and Negotiating",
+ "subtitulo": "Getting a yes on a green measure from someone who doesn't care",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Persuasion in English leans on framing rather than force: presenting your proposal in terms of the other side's interest, offering conditional concessions, making it easy to say yes. The move that matters most is separating positions from interests — a position has one solution, an interest has several.",
+ "cuadroReferencia": {
+  "titulo": "The negotiation toolkit",
+  "columnas": [
+   "Move",
+   "Function",
+   "Language"
+  ],
+  "filas": [
+   [
+    "Anchor",
+    "sets the reference point",
+    "I was thinking somewhere around X"
+   ],
+   [
+    "Conditional offer",
+    "concedes nothing unilaterally",
+    "If you could be flexible on the date, I'd be able to move on the price"
+   ],
+   [
+    "Interest probe",
+    "finds the real need",
+    "What would it take for this to work for you?"
+   ],
+   [
+    "Reframe to interest",
+    "converts a position into a problem",
+    "I think we want the same thing; we disagree about how"
+   ],
+   [
+    "Trial close",
+    "lowers the commitment",
+    "Suppose we tried it for three months and reviewed it"
+   ],
+   [
+    "Limited refusal",
+    "says no and offers something",
+    "I can't do X, but here's what I can do"
+   ],
+   [
+    "Reason-giving",
+    "raises compliance measurably",
+    "…because the alternative is another month empty"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "*If you could be flexible on the date, I'd be able to move on the price.*",
+   "audio": true
+  },
+  {
+   "texto": "*What would it take for this to work for you?*",
+   "audio": true
+  },
+  {
+   "texto": "*I can't do the full amount, but I can do it in two payments this month.*",
+   "audio": true
+  },
+  {
+   "texto": "*Suppose we tried it for three months and reviewed it.*",
+   "audio": true
+  },
+  {
+   "texto": "*I think we want the same thing here; we just disagree about how.*",
+   "audio": true
+  }
+ ],
+ "notas": [
+  "Conditional offers concede nothing until reciprocated. That is why they are the workhorse.",
+  "*What would it take?* is the most useful negotiating question in English.",
+  "Giving a reason materially increases compliance, even a weak one. *Because* does real work."
+ ],
+ "contraste": {
+  "es": "Spanish has the same conditional language for opening positions (nuestra propuesta inicial sería… – our starting point would be…), so the phrases transfer. What needs practice is setting an ambitious first figure and justifying it, since English treats the first offer as an anchor.",
+  "de": "Unser Ausgangspunkt wäre… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly.",
+  "it": "La nostra proposta iniziale sarebbe… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly.",
+  "fr": "Notre proposition de départ serait… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly.",
+  "pt": "A nossa proposta inicial seria… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly."
+ },
+ "errores": [
+  "Opening with your minimum.",
+  "*I want* repeated — replace with *I'm looking for*, *what would help is*, *my constraint is*.",
+  "Conceding without a counter-ask, which resets expectations for the whole negotiation.",
+  "Confusing persuasion with volume or repetition."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Estaríamos dispuestos a* rendered as *We would be disposed to* instead of *We'd be willing to*."
+  ],
+  "de": [
+   "*Wir kommen Ihnen entgegen* rendered as *We come towards you* instead of *We can meet you halfway*."
+  ],
+  "it": [
+   "*Siamo disposti a* rendered as *We are disposed to* instead of *We're willing to*."
+  ],
+  "fr": [
+   "*Nous sommes disposés à* rendered as *We are disposed to* instead of *We're willing to*."
+  ],
+  "pt": [
+   "*Estamos dispostos a* rendered as *We are disposed to* instead of *We're willing to*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "carbon footprint",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la huella de carbono",
+    "de": "der CO₂-Fussabdruck",
+    "fr": "l’empreinte carbone",
+    "it": "l’impronta di carbonio",
+    "pt": "a pegada de carbono"
+   }
+  },
+  {
+   "item": "climate change",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el cambio climático",
+    "de": "Klimawandel",
+    "fr": "le changement climatique",
+    "it": "il cambiamento climatico",
+    "pt": "as alterações climáticas"
+   }
+  },
+  {
+   "item": "greenhouse gases",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gases de efecto invernadero",
+    "de": "Treibhausgase",
+    "fr": "les gaz à effet de serre",
+    "it": "i gas serra",
+    "pt": "os gases com efeito de estufa"
+   }
+  },
+  {
+   "item": "biodiversity",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la biodiversidad",
+    "de": "die Biodiversität",
+    "fr": "la biodiversité",
+    "it": "la biodiversità",
+    "pt": "a biodiversidade"
+   }
+  },
+  {
+   "item": "drought",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la sequía",
+    "de": "die Dürre",
+    "fr": "la sécheresse",
+    "it": "la siccità",
+    "pt": "a seca"
+   }
+  },
+  {
+   "item": "sea level rise",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el aumento del nivel del mar",
+    "de": "der Meeresspiegelanstieg",
+    "fr": "la montée du niveau de la mer",
+    "it": "l'innalzamento del livello del mare",
+    "pt": "a elevação do nível do mar"
+   }
+  },
+  {
+   "item": "extinction rate",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la tasa de extinción",
+    "de": "die Aussterberate",
+    "fr": "le taux d’extinction",
+    "it": "il tasso di estinzione",
+    "pt": "a taxa de extinção"
+   }
+  },
+  {
+   "item": "tipping point",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el punto de inflexión",
+    "de": "der Kipppunkt",
+    "fr": "le point de bascule",
+    "it": "il punto di non ritorno / svolta",
+    "pt": "o ponto de viragem"
+   }
+  },
+  {
+   "item": "emissions trading",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el comercio de emisiones",
+    "de": "der Emissionshandel",
+    "fr": "le marché du carbone",
+    "it": "il mercato delle emissioni",
+    "pt": "o comércio de emissões"
+   }
+  },
+  {
+   "item": "climate displacement",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el desplazamiento climático",
+    "de": "die Klimaflucht",
+    "fr": "la migration climatique",
+    "it": "la migrazione climatica",
+    "pt": "o deslocamento climático"
+   }
+  },
+  {
+   "item": "species extinction",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la extinción de especies",
+    "de": "das Artensterben",
+    "fr": "l'extinction des espèces",
+    "it": "l'estinzione delle specie",
+    "pt": "a extinção de espécies"
+   }
+  },
+  {
+   "item": "to become apparent",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "hacerse evidente",
+    "de": "sich abzeichnen",
+    "fr": "se dessiner",
+    "it": "delinearsi",
+    "pt": "tornar-se evidente"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "If you could… I'd be able to…",
+   "funcion": "conditional offer",
+   "traducciones": {
+    "es": "si pudieras…, yo podría…",
+    "de": "Wenn du … könntest, könnte ich…",
+    "fr": "Si tu pouvais…, je pourrais…",
+    "it": "Se potessi…, potrei…",
+    "pt": "Se pudesses…, eu poderia…"
+   }
+  },
+  {
+   "expresion": "What would it take?",
+   "funcion": "probes the real interest",
+   "traducciones": {
+    "es": "¿qué haría falta?",
+    "de": "Was müsste dafür passieren?",
+    "fr": "Qu’est-ce qu’il faudrait ?",
+    "it": "Cosa ci vorrebbe?",
+    "pt": "O que seria necessário?"
+   }
+  },
+  {
+   "expresion": "Suppose we tried…",
+   "funcion": "trial close",
+   "traducciones": {
+    "es": "¿y si probamos…?",
+    "de": "Angenommen, wir versuchen…",
+    "fr": "Supposons qu’on essaie…",
+    "it": "Supponiamo di provare…",
+    "pt": "Suponhamos que tentássemos…"
+   }
+  },
+  {
+   "expresion": "I can't do X, but I can do Y",
+   "funcion": "limited refusal",
+   "traducciones": {
+    "es": "X no puedo, Y sí",
+    "de": "X kann ich nicht, aber Y kann ich.",
+    "fr": "Je ne peux pas faire X, mais je peux faire Y.",
+    "it": "X non posso farlo, ma Y sì.",
+    "pt": "X não posso fazer, mas Y posso."
+   }
+  },
+  {
+   "expresion": "My constraint is…",
+   "funcion": "states the limit without demanding",
+   "traducciones": {
+    "es": "mi limitación es…",
+    "de": "Meine Einschränkung ist…",
+    "fr": "Ma contrainte est…",
+    "it": "Il mio vincolo è…",
+    "pt": "A minha limitação é…"
+   }
+  },
+  {
+   "expresion": "We want the same thing here",
+   "funcion": "reframes to shared interest",
+   "traducciones": {
+    "es": "queremos lo mismo",
+    "de": "Wir wollen hier dasselbe.",
+    "fr": "Nous voulons la même chose ici.",
+    "it": "Vogliamo la stessa cosa.",
+    "pt": "Queremos a mesma coisa aqui."
+   }
+  },
+  {
+   "expresion": "Would it help if…",
+   "funcion": "offers without conceding",
+   "traducciones": {
+    "es": "¿ayudaría si…?",
+    "de": "Würde es helfen, wenn…",
+    "fr": "Est-ce que ça aiderait si…",
+    "it": "Aiuterebbe se…",
+    "pt": "Ajudaria se…"
+   }
+  },
+  {
+   "expresion": "I was thinking somewhere around…",
+   "funcion": "anchors",
+   "traducciones": {
+    "es": "pensaba en algo así como…",
+    "de": "Ich dachte an ungefähr…",
+    "fr": "Je pensais à quelque chose autour de…",
+    "it": "Pensavo a qualcosa intorno a…",
+    "pt": "Estava a pensar em algo por volta de…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Persuade a sceptical neighbour or colleague to support a concrete measure that reduces your building's or office's *carbon footprint*.",
+  "requisitos": [
+   "two conditional offers (*If you could… I'd be able to…*)",
+   "one reframe from their position to their interest",
+   "one *What would it take?*",
+   "use *carbon footprint*, *greenhouse gases* and *biodiversity*"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Write the measure you'd propose, then the three interests someone might have against it."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Three conditional concessions that give nothing unless the other side moves."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "Record 90 seconds making the case on *climate change* to someone who cares only about cost."
+  }
+ ],
+ "autochequeo": [
+  "Did any offer concede unilaterally?",
+  "Did I frame in terms of their interest or mine?",
+  "Did I anchor, or open at my minimum?",
+  "Did I give a reason for each ask?",
+  "All four core items?"
+ ],
+ "promptCorreccion": "Focus only on persuasion and negotiation. (1) Check each conditional offer for unilateral concession. (2) Say whose interest I framed around. (3) Flag any concession without a counter-ask. (4) Rewrite my opening so it anchors higher without sounding unreasonable. Do not rewrite the rest."
+}

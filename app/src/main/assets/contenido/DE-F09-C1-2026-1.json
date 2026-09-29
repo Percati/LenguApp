@@ -1,0 +1,389 @@
+{
+ "id": "DE-F09-C1-2026-1",
+ "skillId": "DE-F09",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "fluency",
+ "topicId": "T10",
+ "titulo": "Argumentieren und überzeugen",
+ "subtitulo": "Ein gewichtetes Argument über Essen",
+ "ancla": "PD B2",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 55
+ },
+ "descripcion": "Auf C1 wird ein Argument nicht nur begründet, sondern gegen ein wahrscheinliches Gegenargument abgesichert und gewichtet: das entscheidende Argument tritt hervor, die schwächeren bleiben im Hintergrund. Das unterscheidet ein überzeugendes Argument von einer blossen Aufzählung von Gründen.",
+ "cuadroReferencia": {
+  "titulo": "Ein Argument gewichten",
+  "columnas": [
+   "Schritt",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "Hauptargument",
+    "Das entscheidende Argument ist die Kostenersparnis."
+   ],
+   [
+    "Nebenargument",
+    "Hinzu kommt, dass es auch ökologisch sinnvoll wäre."
+   ],
+   [
+    "Gegenargument entkräften",
+    "Man könnte einwenden, dass es aufwendig ist, aber…"
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Das entscheidende Argument ist für mich die langfristige Kostenersparnis.",
+   "audio": true
+  },
+  {
+   "texto": "Hinzu kommt, dass es auch ökologisch durchaus sinnvoll wäre.",
+   "audio": true
+  },
+  {
+   "texto": "Man könnte einwenden, dass es zunächst aufwendig ist, aber das relativiert sich schnell."
+  }
+ ],
+ "notas": [
+  "Ein gewichtetes Argument nennt explizit, welcher Punkt am wichtigsten ist, statt alle gleichrangig aufzulisten.",
+  "Hinzu kommt, dass fügt ein unterstützendes, aber nicht zentrales Argument hinzu.",
+  "Ein vorweggenommenes Gegenargument macht die eigene Position robuster, weil sie schon auf Kritik reagiert hat."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat Mittel zur Gewichtung (sobre todo, lo decisivo es), die sich direkt übertragen lassen. Zu achten ist darauf, das entscheidende Argument im Deutschen ausdrücklich zu markieren (Entscheidend ist aber…), statt es nur durch die Reihenfolge anzudeuten.",
+  "it": "Das Italienische hat Mittel zur Gewichtung (soprattutto, il punto decisivo è), und der tema argomentativo übt die Struktur von These und Widerlegung. Die Übertragung gelingt deshalb gut; zu achten ist darauf, das entscheidende Argument ausdrücklich zu markieren (Entscheidend ist aber…), statt es nur durch die Reihenfolge anzudeuten.",
+  "fr": "Die französische dissertation ordnet Argumente meist steigend und endet mit dem stärksten. Das Gewichten ist also vertraut; im Deutschen wird das entscheidende Argument aber oft ausdrücklich markiert (Entscheidend ist jedoch…), statt es nur durch die Position ans Ende hervorzuheben.",
+  "pt": "Das Portugiesische hat Mittel zur Gewichtung (sobretudo, o argumento decisivo é), die sich direkt übertragen lassen. Zu achten ist darauf, das entscheidende Argument im Deutschen ausdrücklich zu markieren (Entscheidend ist aber…), statt mehrere Gründe gleichrangig aneinanderzureihen.",
+  "en": "Die englische Essaytradition verlangt, das stärkste Argument klar hervorzuheben (above all, the crucial point is), die Gewichtung ist Englischsprachigen also vertraut. Die Formeln übertragen sich gut: Entscheidend ist…, vor allem aber…."
+ },
+ "errores": [
+  "Mehrere Argumente ohne Gewichtung gleichrangig aufzählen.",
+  "Kein Gegenargument vorwegnehmen, obwohl eines naheliegt.",
+  "Hinzu kommt, dass für das Hauptargument verwenden, wodurch die Gewichtung verloren geht."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "*Sobre todo* als *Über alles* übertragen statt *Vor allem*."
+  ],
+  "it": [
+   "*Soprattutto* als *Über alles* übertragen statt *Vor allem*."
+  ],
+  "fr": [
+   "*Surtout* als *Über alles* übertragen statt *Vor allem*."
+  ],
+  "pt": [
+   "*Sobretudo* als *Über alles* übertragen statt *Vor allem*."
+  ],
+  "en": [
+   "*Above all* als *Über alles* übertragen statt *Vor allem*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "das Gericht abrunden",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "redondear el plato",
+    "en": "to round off a dish",
+    "fr": "parfaire un plat",
+    "it": "completare il piatto",
+    "pt": "arredondar o prato"
+   }
+  },
+  {
+   "item": "der Eigengeschmack",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el sabor propio",
+    "en": "natural flavour",
+    "fr": "le goût propre",
+    "it": "il sapore proprio",
+    "pt": "o sabor próprio"
+   }
+  },
+  {
+   "item": "die Geschmacksnote",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el matiz de sabor",
+    "en": "flavour note",
+    "fr": "la note gustative",
+    "it": "la nota di sapore",
+    "pt": "a nota de sabor"
+   }
+  },
+  {
+   "item": "die Konsistenz",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la consistencia",
+    "en": "texture",
+    "fr": "la consistance",
+    "it": "la consistenza",
+    "pt": "a consistência"
+   }
+  },
+  {
+   "item": "die Saisonküche",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la cocina de temporada",
+    "en": "seasonal cooking",
+    "fr": "la cuisine de saison",
+    "it": "la cucina di stagione",
+    "pt": "a cozinha sazonal"
+   }
+  },
+  {
+   "item": "die Zubereitungsart",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el modo de preparación",
+    "en": "method of preparation",
+    "fr": "le mode de préparation",
+    "it": "il metodo di preparazione",
+    "pt": "o modo de preparação"
+   }
+  },
+  {
+   "item": "das Aroma",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el aroma",
+    "en": "aroma",
+    "fr": "l'arôme",
+    "it": "l'aroma",
+    "pt": "o aroma"
+   }
+  },
+  {
+   "item": "das Mundgefühl",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la sensación en boca",
+    "en": "mouthfeel",
+    "fr": "la sensation en bouche",
+    "it": "la sensazione al palato",
+    "pt": "a sensação na boca"
+   }
+  },
+  {
+   "item": "der Beikost",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el acompañamiento",
+    "en": "accompaniment",
+    "fr": "l'accompagnement",
+    "it": "il contorno",
+    "pt": "o acompanhamento"
+   }
+  },
+  {
+   "item": "die Garzeit",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el tiempo de cocción",
+    "en": "cooking time",
+    "fr": "le temps de cuisson",
+    "it": "il tempo di cottura",
+    "pt": "o tempo de cozedura"
+   }
+  },
+  {
+   "item": "die Marinade",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la marinada",
+    "en": "marinade",
+    "fr": "la marinade",
+    "it": "la marinata",
+    "pt": "a marinada"
+   }
+  },
+  {
+   "item": "verfeinern",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "refinar",
+    "en": "to refine",
+    "fr": "affiner",
+    "it": "raffinare",
+    "pt": "refinar"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Das entscheidende Argument ist…",
+   "funcion": "Hauptargument markieren",
+   "traducciones": {
+    "es": "El argumento decisivo es…",
+    "en": "The decisive argument is…",
+    "fr": "L’argument décisif est…",
+    "it": "L’argomento decisivo è…",
+    "pt": "O argumento decisivo é…"
+   }
+  },
+  {
+   "expresion": "Hinzu kommt, dass…",
+   "funcion": "Nebenargument hinzufügen",
+   "traducciones": {
+    "es": "A eso se suma que…",
+    "en": "On top of that,…",
+    "fr": "À cela s’ajoute que…",
+    "it": "A ciò si aggiunge che…",
+    "pt": "A isso acresce que…"
+   }
+  },
+  {
+   "expresion": "Man könnte einwenden, dass…, aber…",
+   "funcion": "Gegenargument entkräften",
+   "traducciones": {
+    "es": "Se podría objetar que…, pero…",
+    "en": "One could object that…, but…",
+    "fr": "On pourrait objecter que…, mais…",
+    "it": "Si potrebbe obiettare che…, ma…",
+    "pt": "Poder-se-ia objetar que…, mas…"
+   }
+  },
+  {
+   "expresion": "Vor allem aber…",
+   "funcion": "das wichtigste Argument hervorheben",
+   "traducciones": {
+    "es": "Pero sobre todo…",
+    "en": "But above all…",
+    "fr": "Mais surtout…",
+    "it": "Ma soprattutto…",
+    "pt": "Mas sobretudo…"
+   }
+  },
+  {
+   "expresion": "Das relativiert sich, wenn man bedenkt, dass…",
+   "funcion": "Einwand entkräften",
+   "traducciones": {
+    "es": "Eso se relativiza si se piensa que…",
+    "en": "That's less significant when you consider that…",
+    "fr": "Cela se relativise lorsqu’on considère que…",
+    "it": "Questo si ridimensiona se si considera che…",
+    "pt": "Isso relativiza-se quando se considera que…"
+   }
+  },
+  {
+   "expresion": "Letztlich überwiegt…",
+   "funcion": "Abwägung abschliessen",
+   "traducciones": {
+    "es": "Al final, pesa más…",
+    "en": "Ultimately, what outweighs it is…",
+    "fr": "En fin de compte, ce qui l’emporte, c’est…",
+    "it": "In definitiva, prevale…",
+    "pt": "No fim, prevalece…"
+   }
+  },
+  {
+   "expresion": "In seiner stärksten Form lautet der Einwand: …",
+   "funcion": "Gegenargument fair rekonstruieren",
+   "traducciones": {
+    "es": "En su versión más fuerte, la objeción dice: …",
+    "en": "In its strongest form the objection runs: …",
+    "fr": "Dans sa version la plus forte, l'objection est : …",
+    "it": "Nella sua forma più forte l'obiezione suona: …",
+    "pt": "Na sua forma mais forte, a objeção diz: …"
+   }
+  },
+  {
+   "expresion": "Der Preis dieser Lösung ist…",
+   "funcion": "eigene Kosten offen einräumen",
+   "traducciones": {
+    "es": "El precio de esta solución es…",
+    "en": "The price of this solution is…",
+    "fr": "Le prix de cette solution, c'est…",
+    "it": "Il prezzo di questa soluzione è…",
+    "pt": "O preço desta solução é…"
+   }
+  },
+  {
+   "expresion": "Die Beweislast liegt hier nicht bei mir.",
+   "funcion": "Beweislast zuweisen",
+   "traducciones": {
+    "es": "Aquí la carga de la prueba no es mía.",
+    "en": "The burden of proof isn't mine here.",
+    "fr": "Ici, la charge de la preuve ne m'incombe pas.",
+    "it": "Qui l'onere della prova non è mio.",
+    "pt": "Aqui o ónus da prova não é meu."
+   }
+  },
+  {
+   "expresion": "Damit bleibt eigentlich nur die Frage, ob…",
+   "funcion": "Argument auf einen Streitpunkt verengen",
+   "traducciones": {
+    "es": "Con eso queda en realidad solo la pregunta de si…",
+    "en": "That leaves really only the question whether…",
+    "fr": "Il ne reste donc vraiment que la question de savoir si…",
+    "it": "Resta così in fondo solo la questione se…",
+    "pt": "Fica assim apenas a questão de saber se…"
+   }
+  },
+  {
+   "expresion": "Das Beispiel trägt die Schlussfolgerung nicht.",
+   "funcion": "Beleg als unzureichend zurückweisen",
+   "traducciones": {
+    "es": "El ejemplo no sostiene la conclusión.",
+    "en": "The example doesn't carry the conclusion.",
+    "fr": "L'exemple ne soutient pas la conclusion.",
+    "it": "L'esempio non regge la conclusione.",
+    "pt": "O exemplo não sustenta a conclusão."
+   }
+  },
+  {
+   "expresion": "Darauf möchte ich das Gespräch nicht verengen.",
+   "funcion": "Nebenschauplatz abwehren",
+   "traducciones": {
+    "es": "No quisiera reducir la conversación a eso.",
+    "en": "I don't want to narrow the discussion to that.",
+    "fr": "Je ne voudrais pas réduire la discussion à cela.",
+    "it": "Non vorrei ridurre la discussione a questo.",
+    "pt": "Não quero reduzir a conversa a isso."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Überzeugen Sie eine skeptische Leserschaft, dass Saisonküche mehr ist als eine Mode.",
+  "requisitos": [
+   "ein klar benanntes entscheidendes Argument",
+   "ein aufgegriffenes und entkräftetes Gegenargument",
+   "eine Gewichtung am Schluss",
+   "*die Saisonküche*, *der Eigengeschmack* und *die Zubereitungsart* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Vier Argumente notieren und nach Stärke ordnen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Das stärkste Gegenargument aufschreiben — fair formuliert."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Wie *rundet* man *ein Gericht ab*? Mit Gewichtung."
+  }
+ ],
+ "autochequeo": [
+  "Ist ein Argument klar als das wichtigste markiert?",
+  "Ist mindestens ein Gegenargument vorweggenommen und entkräftet?",
+  "Sind Haupt- und Nebenargumente unterscheidbar?",
+  "Klingt die Argumentation gewichtet, nicht wie eine blosse Liste?",
+  "Habe ich mindestens vier verschiedene Redemittel benutzt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die Gewichtung der Argumentation. Prüfen Sie, ob ein Hauptargument klar hervortritt und ob ein Gegenargument entkräftet wird. Schreiben Sie den Text nicht neu."
+}

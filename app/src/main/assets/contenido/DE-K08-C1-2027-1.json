@@ -1,0 +1,415 @@
+{
+ "id": "DE-K08-C1-2027-1",
+ "skillId": "DE-K08",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T07",
+ "titulo": "Zweiteilige Konnektoren + Vergleichs- und Konzessivsätze",
+ "subtitulo": "Ein Argument über zweiteilige Konnektoren tragen",
+ "ancla": "Aspekte C1",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Zweiteilige Konnektoren (nicht nur… sondern auch, zwar… allerdings, je… desto) strukturieren ein Argument über mehrere Sätze hinweg. Getrennt gelernt, wirken sie wie einfache Formeln; im selben Argument kombiniert, tragen sie die gesamte Gedankenführung eines anspruchsvollen Textes.",
+ "cuadroReferencia": {
+  "titulo": "Drei Paare, drei Funktionen",
+  "columnas": [
+   "Paar",
+   "Funktion",
+   "Beispiel"
+  ],
+  "filas": [
+   [
+    "nicht nur…, sondern auch…",
+    "Verstärkung",
+    "Nicht nur die Kosten steigen, sondern auch die Wartezeiten."
+   ],
+   [
+    "zwar…, allerdings…",
+    "Einräumung und Einschränkung",
+    "Zwar ist die Idee gut, allerdings fehlt das Budget."
+   ],
+   [
+    "je…, desto…",
+    "proportionaler Zusammenhang",
+    "Je später wir entscheiden, desto teurer wird es."
+   ]
+  ]
+ },
+ "ejemplos": [
+  {
+   "texto": "Nicht nur die Kosten steigen, sondern auch die Wartezeiten verlängern sich.",
+   "audio": true
+  },
+  {
+   "texto": "Zwar ist die Idee vielversprechend, allerdings fehlt dafür das Budget.",
+   "audio": true
+  },
+  {
+   "texto": "Je später wir uns entscheiden, desto teurer wird die ganze Sache."
+  }
+ ],
+ "notas": [
+  "Nach je steht der Komparativ, im desto-Satz folgt Verb-Subjekt-Umstellung: je später, desto teurer wird es.",
+  "Zwar steht meist direkt nach dem Verb oder am Satzanfang und kündigt zwingend ein allerdings oder aber an.",
+  "Diese drei Paare lassen sich in einem einzigen Argument kombinieren: erst zwar…allerdings, dann je…desto als Konsequenz."
+ ],
+ "contraste": {
+  "es": "Das Spanische hat mit no solo… sino también und cuanto más… más eine sehr ähnliche Struktur, sodass sich diese Muster leicht übertragen lassen. Schwieriger ist zwar…allerdings, da Spanisch dafür eher zwei separate Sätze mit si bien und sin embargo braucht, statt eines einzigen zweiteiligen Konnektors.",
+  "it": "Non solo… ma anche und più… più entsprechen den deutschen Mustern gut, zwar… aber findet in è vero che… ma eine brauchbare Parallele. Die eigentliche Fehlerquelle ist die Wortstellung: Das italienische più… più kennt keine Inversion, deshalb fehlt im desto-Satz oft die Verb-Subjekt-Umstellung.",
+  "fr": "Non seulement… mais aussi und plus… plus entsprechen den deutschen Mustern, und certes… mais ist eine sehr nahe Parallele zu zwar… aber – Französischsprachige verwenden zwar deshalb natürlicher als Spanischsprachige. Die Fehlerquelle ist die Wortstellung im desto-Satz, da plus… plus keine Inversion kennt.",
+  "pt": "Não só… mas também und quanto mais… mais entsprechen den deutschen Mustern; für zwar… aber bietet se por um lado… por outro nur eine grobe Parallele. Portugiesischsprachige übertragen quanto mais… mais gern als je… je, was altmodisch klingt, und vergessen im desto-Satz die Inversion.",
+  "en": "Not only… but also und the more… the more entsprechen den deutschen Mustern fast wörtlich, zwar… aber findet in admittedly… but eine gute Parallele. Die Falle ist die Wortstellung: Das Englische behält nach the more die normale Reihenfolge (the more you practise, the easier it gets), das Deutsche verlangt im desto-Satz aber das Verb vor dem Subjekt."
+ },
+ "errores": [
+  "Zwar ohne folgendes allerdings oder aber stehen lassen.",
+  "Nach je den Komparativ vergessen: je spät statt je später.",
+  "Die Verb-Subjekt-Umstellung im desto-Satz auslassen."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Zwei separate Hauptsätze mit si bien-Logik bilden, statt zwar und allerdings im selben Argumentgefüge zu verbinden."
+  ],
+  "it": [
+   "*né … né* als *weder … weder* übertragen statt *weder … noch*."
+  ],
+  "fr": [
+   "*ni … ni* als *weder … weder* übertragen statt *weder … noch*."
+  ],
+  "pt": [
+   "*nem … nem* als *weder … weder* übertragen statt *weder … noch*."
+  ],
+  "en": [
+   "*both … and* als *beide … und* übertragen: *beide Anna und Tom* statt *sowohl Anna als auch Tom*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "der Zuzug",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la llegada de nuevos habitantes",
+    "en": "influx of new residents",
+    "fr": "l'afflux de nouveaux habitants",
+    "it": "l'afflusso di nuovi abitanti",
+    "pt": "o afluxo de novos residentes"
+   }
+  },
+  {
+   "item": "der soziale Wohnungsbau",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la vivienda social",
+    "en": "social housing",
+    "fr": "le logement social",
+    "it": "l'edilizia popolare",
+    "pt": "a habitação social"
+   }
+  },
+  {
+   "item": "die Gentrifizierung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la gentrificación",
+    "en": "gentrification",
+    "fr": "la gentrification",
+    "it": "la gentrificazione",
+    "pt": "a gentrificação"
+   }
+  },
+  {
+   "item": "die Nebenkosten",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "los gastos comunes",
+    "en": "service charges",
+    "fr": "les charges",
+    "it": "le spese accessorie",
+    "pt": "os encargos"
+   }
+  },
+  {
+   "item": "die Verdrängung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el desplazamiento de vecinos",
+    "en": "displacement of residents",
+    "fr": "l'éviction des habitants",
+    "it": "l'espulsione degli abitanti",
+    "pt": "a expulsão dos moradores"
+   }
+  },
+  {
+   "item": "die Wohnungsnot",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la escasez de vivienda",
+    "en": "housing shortage",
+    "fr": "la crise du logement",
+    "it": "l'emergenza abitativa",
+    "pt": "a falta de habitação"
+   }
+  },
+  {
+   "item": "der Ballungsraum",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el área metropolitana",
+    "en": "conurbation",
+    "fr": "l'agglomération",
+    "it": "l'area metropolitana",
+    "pt": "a área metropolitana"
+   }
+  },
+  {
+   "item": "der Leerstand",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la vivienda desocupada",
+    "en": "vacancy",
+    "fr": "la vacance des logements",
+    "it": "gli immobili sfitti",
+    "pt": "os imóveis devolutos"
+   }
+  },
+  {
+   "item": "die Anbindung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la conexión con el transporte",
+    "en": "transport links",
+    "fr": "la desserte",
+    "it": "i collegamenti",
+    "pt": "a ligação de transportes"
+   }
+  },
+  {
+   "item": "die Bevölkerungsdichte",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la densidad de población",
+    "en": "population density",
+    "fr": "la densité de population",
+    "it": "la densità di popolazione",
+    "pt": "a densidade populacional"
+   }
+  },
+  {
+   "item": "die Infrastruktur",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la infraestructura",
+    "en": "infrastructure",
+    "fr": "les infrastructures",
+    "it": "le infrastrutture",
+    "pt": "as infraestruturas"
+   }
+  },
+  {
+   "item": "die Lage",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la ubicación",
+    "en": "location",
+    "fr": "l'emplacement",
+    "it": "la posizione",
+    "pt": "a localização"
+   }
+  },
+  {
+   "item": "die Mietpreisbremse",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el límite al alquiler",
+    "en": "rent cap",
+    "fr": "l'encadrement des loyers",
+    "it": "il tetto agli affitti",
+    "pt": "o travão às rendas"
+   }
+  },
+  {
+   "item": "die Nachverdichtung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la densificación urbana",
+    "en": "urban densification",
+    "fr": "la densification urbaine",
+    "it": "la densificazione urbana",
+    "pt": "a densificação urbana"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "Nicht nur…, sondern auch…",
+   "funcion": "Verstärkung",
+   "traducciones": {
+    "es": "No solo…, sino también…",
+    "en": "Not only…, but also…",
+    "fr": "Non seulement…, mais aussi…",
+    "it": "Non solo…, ma anche…",
+    "pt": "Não só…, mas também…"
+   }
+  },
+  {
+   "expresion": "Zwar…, allerdings…",
+   "funcion": "Einräumung und Einschränkung",
+   "traducciones": {
+    "es": "Si bien…, sin embargo…",
+    "en": "While…, however…",
+    "fr": "Certes…, toutefois…",
+    "it": "È vero che…, tuttavia…",
+    "pt": "É certo que…, contudo…"
+   }
+  },
+  {
+   "expresion": "Je…, desto…",
+   "funcion": "proportionaler Zusammenhang",
+   "traducciones": {
+    "es": "Cuanto más…, más…",
+    "en": "The more…, the more…",
+    "fr": "Plus…, plus…",
+    "it": "Più…, più…",
+    "pt": "Quanto mais…, mais…"
+   }
+  },
+  {
+   "expresion": "Sowohl…als auch…",
+   "funcion": "beides gilt",
+   "traducciones": {
+    "es": "Tanto… como…",
+    "en": "Both… and…",
+    "fr": "À la fois… et…",
+    "it": "Sia… sia…",
+    "pt": "Tanto… como…"
+   }
+  },
+  {
+   "expresion": "Weder…noch…",
+   "funcion": "beides trifft nicht zu",
+   "traducciones": {
+    "es": "Ni… ni…",
+    "en": "Neither… nor…",
+    "fr": "Ni… ni…",
+    "it": "Né… né…",
+    "pt": "Nem… nem…"
+   }
+  },
+  {
+   "expresion": "Zwar…, aber immerhin…",
+   "funcion": "Einräumung mit positivem Ausklang",
+   "traducciones": {
+    "es": "Si bien…, al menos…",
+    "en": "While…, at least…",
+    "fr": "Certes…, mais au moins…",
+    "it": "È vero che…, ma almeno…",
+    "pt": "É certo que…, mas pelo menos…"
+   }
+  },
+  {
+   "expresion": "Entweder…oder…",
+   "funcion": "Alternative, ausschliessend",
+   "traducciones": {
+    "es": "O bien… o bien…",
+    "en": "Either… or…",
+    "fr": "Soit… soit…",
+    "it": "O… o…",
+    "pt": "Ou… ou…"
+   }
+  },
+  {
+   "expresion": "Einerseits…, andererseits…",
+   "funcion": "zwei Seiten derselben Sache",
+   "traducciones": {
+    "es": "Por un lado…, por otro…",
+    "en": "On the one hand…, on the other…",
+    "fr": "D'une part…, d'autre part…",
+    "it": "Da un lato…, dall'altro…",
+    "pt": "Por um lado…, por outro…"
+   }
+  },
+  {
+   "expresion": "Nicht so sehr…, sondern vielmehr…",
+   "funcion": "Gewichtung korrigieren",
+   "traducciones": {
+    "es": "No tanto…, sino más bien…",
+    "en": "Not so much…, but rather…",
+    "fr": "Non pas tant…, mais plutôt…",
+    "it": "Non tanto…, quanto piuttosto…",
+    "pt": "Não tanto…, mas antes…"
+   }
+  },
+  {
+   "expresion": "Je nachdem, ob…, …",
+   "funcion": "Bedingung als Verzweigung",
+   "traducciones": {
+    "es": "Según si…, …",
+    "en": "Depending on whether…, …",
+    "fr": "Selon que…, …",
+    "it": "A seconda che…, …",
+    "pt": "Consoante…, …"
+   }
+  },
+  {
+   "expresion": "Umso wichtiger ist es, dass…",
+   "funcion": "Verstärkung nach einer Einräumung",
+   "traducciones": {
+    "es": "Tanto más importante es que…",
+    "en": "All the more important, then, that…",
+    "fr": "Il est d'autant plus important que…",
+    "it": "Tanto più importante è che…",
+    "pt": "Tanto mais importante é que…"
+   }
+  },
+  {
+   "expresion": "Erst…, dann und nur dann…",
+   "funcion": "Reihenfolge als Bedingung",
+   "traducciones": {
+    "es": "Primero…, y solo entonces…",
+    "en": "First…, and only then…",
+    "fr": "D'abord…, et alors seulement…",
+    "it": "Prima…, e solo allora…",
+    "pt": "Primeiro…, e só então…"
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie einen Leserbrief zur Gentrifizierung in einem Quartier, das Sie kennen.",
+  "requisitos": [
+   "*nicht nur… sondern auch*, *zwar… allerdings*, *je… desto*",
+   "ein *weder… noch*",
+   "die Konnektoren über mindestens zwei Absätze verteilt",
+   "*die Gentrifizierung*, *die Verdrängung* und *der soziale Wohnungsbau* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei *je… desto*-Sätze zu *Zuzug* und Mietpreisen."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Einen Absatz mit *zwar… allerdings* über *die Nebenkosten* schreiben."
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Ist *die Wohnungsnot* lösbar? Mindestens zwei zweiteilige Konnektoren."
+  }
+ ],
+ "autochequeo": [
+  "Folgt auf zwar ein allerdings oder aber?",
+  "Steht nach je der Komparativ?",
+  "Ist im desto-Satz Verb-Subjekt-Umstellung vorhanden?",
+  "Habe ich mindestens zwei der drei Paare im selben Text kombiniert?",
+  "Trägt die Struktur wirklich das Argument, oder ist sie nur angehängt?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf die zweiteiligen Konnektoren. Prüfen Sie bei jedem Paar die vollständige Form und die Wortstellung, besonders nach je…desto. Schreiben Sie den Text nicht neu."
+}

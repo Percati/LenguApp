@@ -1,0 +1,380 @@
+{
+ "id": "DE-K03-C1-2026-1",
+ "skillId": "DE-K03",
+ "order": 1,
+ "idioma": "de",
+ "nivel": "C1",
+ "categoria": "grammar",
+ "topicId": "T14",
+ "titulo": "Nominalisierung + Genitivkette + Präposition mit Genitiv",
+ "subtitulo": "Nominalstil für einen Marktbericht",
+ "ancla": "Erkundungen C2",
+ "challengeType": "open_production",
+ "evidencia": {
+  "escritura": 400,
+  "oralMin": 6,
+  "minutosEstimados": 65
+ },
+ "descripcion": "Der deutsche Verwaltungs- und Fachstil besteht fast vollständig aus diesem einen Muster: ein nominalisiertes Verb, gefolgt von einem Genitiv, oft eingeleitet durch eine Präposition mit Genitiv. Im Hinblick auf die Umsetzung der Richtlinie ist keine Ansammlung dreier Einzelthemen, sondern eine einzige Konstruktion. Wer sie nicht als Ganzes übt, produziert entweder unlesbare Genitivketten oder vermeidet den Nominalstil ganz.",
+ "cuadroReferencia": {
+  "titulo": "Aufbau des Musters",
+  "columnas": [
+   "Element",
+   "Beispiel",
+   "Funktion"
+  ],
+  "filas": [
+   [
+    "Präposition mit Genitiv",
+    "im Hinblick auf, aufgrund, angesichts, infolge, anlässlich",
+    "leitet den Fachsatz ein"
+   ],
+   [
+    "Nominalisierung",
+    "die Umsetzung, die Feststellung, die Durchführung",
+    "aus dem Verb gebildetes Ereignis"
+   ],
+   [
+    "Genitivkette",
+    "der Umsetzung der Richtlinie",
+    "wer/was betroffen ist"
+   ],
+   [
+    "Grenze",
+    "ab drei Gliedern umschreiben",
+    "sonst unlesbar"
+   ]
+  ],
+  "notaPie": "Faustregel: zwei Genitivglieder sind Stil, drei sind noch akzeptabel, vier sind ein Fehler — dann lieber einen Nebensatz."
+ },
+ "ejemplos": [
+  {
+   "texto": "Im Hinblick auf die Umsetzung der Richtlinie sind weitere Schritte nötig.",
+   "audio": true
+  },
+  {
+   "texto": "Aufgrund der Verzögerung des Projekts wurde die Frist verlängert.",
+   "audio": true
+  },
+  {
+   "texto": "Angesichts der Komplexität des Verfahrens empfiehlt sich eine externe Prüfung."
+  },
+  {
+   "texto": "Infolge der Änderung der Vorschriften muss der Antrag neu gestellt werden."
+  }
+ ],
+ "notas": [
+  "Aufgrund, angesichts, infolge und anlässlich verlangen alle den Genitiv, nicht den Dativ — ein häufiger Fehler auch bei fortgeschrittenen Lernenden.",
+  "Bei mehr als zwei Genitivgliedern wird die Kette fast immer klarer, wenn man sie in einen von-Satz oder einen Relativsatz auflöst.",
+  "Der Nominalstil ist Register, kein Ersatz für jeden Verbalsatz: in der gesprochenen Sprache wirkt er steif."
+ ],
+ "contraste": {
+  "es": "Das Spanische bevorzugt Infinitivkonstruktionen an genau dieser Stelle: con vistas a la aplicación de la directiva verwendet ebenfalls ein Nomen, aber ohne die deutsche Genitivkette dahinter — meist folgt de + Nomen einmal, nicht mehrfach verschachtelt. Spanischsprachige unternominalisieren deshalb im Bericht und bauen die Kette gar nicht erst auf.",
+  "en": "Das Englische bevorzugt an dieser Stelle verbale Konstruktionen (with a view to implementing the directive). Englischsprachige lösen die deutsche Kette deshalb gern in einen Infinitivsatz auf (um die Richtlinie umzusetzen), der im Bericht zu wenig formell wirkt, oder bilden die Kette mit von statt mit Genitiv.",
+  "it": "Das italienische burocratese baut ganz ähnliche Ketten (in vista dell'attuazione della direttiva), weshalb Italienischsprachige das Muster schnell produzieren. Die Risiken sind eher Übermass und Kasus: zu lange Ketten und di als von statt als Genitiv (die Umsetzung von der Richtlinie).",
+  "fr": "Das Französische baut dieselbe Kette (en vue de la mise en œuvre de la directive), Französischsprachige produzieren das Muster also fast wörtlich. Die Fehlerquelle ist der Kasus, den de verbirgt: Im Deutschen müssen Artikel und Nomen die Genitivendung tragen, und genau das -s fehlt oft (die Umsetzung des Projekt).",
+  "pt": "Portugiesisch lässt an dieser Stelle beide Stile zu (tendo em vista a implementação da diretiva oder com vista a implementar a diretiva) und wählt im Zweifel den verbalen. Portugiesischsprachige bauen die deutsche Genitivkette deshalb selten von sich aus auf und übertragen da/do als von statt als Genitiv."
+ },
+ "errores": [
+  "Dativ statt Genitiv nach aufgrund, angesichts, infolge: aufgrund dem Projekt.",
+  "Vier oder mehr Genitivglieder in einer Kette, die dadurch unlesbar wird.",
+  "Die Präposition weglassen und nur die Nominalisierung stehen lassen, wodurch der Bezug verloren geht."
+ ],
+ "erroresContrastivos": {
+  "es": [
+   "Con-Konstruktionen wörtlich mit mit übersetzen, statt die passende Präposition mit Genitiv zu wählen."
+  ],
+  "en": [
+   "Die Genitivkette komplett vermeiden und stattdessen einen englisch anmutenden Verbalsatz bauen, der im deutschen Fachregister fehl am Platz wirkt."
+  ],
+  "it": [
+   "Die Genitivkette mit *von* nachbauen, nach *a causa del ritardo del progetto*: *wegen der Verzögerung von dem Projekt*."
+  ],
+  "fr": [
+   "Die Genitivkette mit *von* nachbauen, nach *en raison du retard du projet*: *aufgrund der Verzögerung von dem Projekt*."
+  ],
+  "pt": [
+   "Die Genitivkette mit *von* nachbauen, nach *devido ao atraso do projeto*: *aufgrund der Verzögerung von dem Projekt*."
+  ]
+ },
+ "vocabulario": [
+  {
+   "item": "den Preis aushandeln",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "negociar el precio",
+    "en": "to negotiate the price",
+    "fr": "négocier le prix",
+    "it": "trattare il prezzo",
+    "pt": "negociar o preço"
+   }
+  },
+  {
+   "item": "der Impulskauf",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la compra impulsiva",
+    "en": "impulse purchase",
+    "fr": "l'achat impulsif",
+    "it": "l'acquisto d'impulso",
+    "pt": "a compra por impulso"
+   }
+  },
+  {
+   "item": "die Gewährleistungsfrist",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el plazo de garantía legal",
+    "en": "warranty period",
+    "fr": "le délai de garantie",
+    "it": "il termine di garanzia",
+    "pt": "o prazo de garantia"
+   }
+  },
+  {
+   "item": "die Kaufkraftverschiebung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el desplazamiento del poder adquisitivo",
+    "en": "shift in purchasing power",
+    "fr": "le déplacement du pouvoir d'achat",
+    "it": "lo spostamento del potere d'acquisto",
+    "pt": "a deslocação do poder de compra"
+   }
+  },
+  {
+   "item": "die Produktkennzeichnung",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "el etiquetado del producto",
+    "en": "product labelling",
+    "fr": "l'étiquetage des produits",
+    "it": "l'etichettatura dei prodotti",
+    "pt": "a rotulagem do produto"
+   }
+  },
+  {
+   "item": "die Verfügbarkeit",
+   "prioridad": "nucleo",
+   "traducciones": {
+    "es": "la disponibilidad",
+    "en": "availability",
+    "fr": "la disponibilité",
+    "it": "la disponibilità",
+    "pt": "a disponibilidade"
+   }
+  },
+  {
+   "item": "das Rückgaberecht",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el derecho de devolución",
+    "en": "right of return",
+    "fr": "le droit de retour",
+    "it": "il diritto di reso",
+    "pt": "o direito de devolução"
+   }
+  },
+  {
+   "item": "der Warenkorb",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cesta de la compra",
+    "en": "shopping basket",
+    "fr": "le panier",
+    "it": "il carrello",
+    "pt": "o cesto de compras"
+   }
+  },
+  {
+   "item": "die Handelsspanne",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "el margen comercial",
+    "en": "trade margin",
+    "fr": "la marge commerciale",
+    "it": "il margine commerciale",
+    "pt": "a margem comercial"
+   }
+  },
+  {
+   "item": "die Lieferkette",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la cadena de suministro",
+    "en": "supply chain",
+    "fr": "la chaîne d'approvisionnement",
+    "it": "la catena di fornitura",
+    "pt": "a cadeia de abastecimento"
+   }
+  },
+  {
+   "item": "die Preisbindung",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "la fijación de precios",
+    "en": "price fixing",
+    "fr": "le prix imposé",
+    "it": "il prezzo imposto",
+    "pt": "a fixação de preços"
+   }
+  },
+  {
+   "item": "etwas nachbestellen",
+   "prioridad": "ampliacion",
+   "traducciones": {
+    "es": "hacer un pedido adicional",
+    "en": "to reorder something",
+    "fr": "recommander qc",
+    "it": "riordinare qc",
+    "pt": "encomendar de novo"
+   }
+  }
+ ],
+ "redemittel": [
+  {
+   "expresion": "im Hinblick auf…",
+   "funcion": "leitet den Bezug ein, formell",
+   "traducciones": {
+    "es": "con vistas a…",
+    "en": "with a view to…",
+    "fr": "en vue de…",
+    "it": "in vista di…",
+    "pt": "com vista a…"
+   }
+  },
+  {
+   "expresion": "aufgrund der/des…",
+   "funcion": "Ursache, formell",
+   "traducciones": {
+    "es": "debido a…",
+    "en": "due to…",
+    "fr": "en raison de…",
+    "it": "a causa di…",
+    "pt": "devido a…"
+   }
+  },
+  {
+   "expresion": "angesichts der/des…",
+   "funcion": "Umstand, der zu berücksichtigen ist",
+   "traducciones": {
+    "es": "dada la…",
+    "en": "given the…",
+    "fr": "compte tenu de…",
+    "it": "alla luce di…",
+    "pt": "tendo em conta…"
+   }
+  },
+  {
+   "expresion": "im Rahmen der/des…",
+   "funcion": "Kontext eingrenzen",
+   "traducciones": {
+    "es": "en el marco de…",
+    "en": "within the framework of…",
+    "fr": "dans le cadre de…",
+    "it": "nell’ambito di…",
+    "pt": "no âmbito de…"
+   }
+  },
+  {
+   "expresion": "anlässlich der/des…",
+   "funcion": "Anlass nennen, formell",
+   "traducciones": {
+    "es": "con motivo de…",
+    "en": "on the occasion of…",
+    "fr": "à l’occasion de…",
+    "it": "in occasione di…",
+    "pt": "por ocasião de…"
+   }
+  },
+  {
+   "expresion": "in Anbetracht der/des…",
+   "funcion": "synonym zu angesichts",
+   "traducciones": {
+    "es": "en vista de…",
+    "en": "in consideration of…",
+    "fr": "compte tenu de…",
+    "it": "in considerazione di…",
+    "pt": "tendo em consideração…"
+   }
+  },
+  {
+   "expresion": "unter Berücksichtigung der/des…",
+   "funcion": "Bedingung im Nominalstil",
+   "traducciones": {
+    "es": "teniendo en cuenta…",
+    "en": "taking into account…",
+    "fr": "compte tenu de…",
+    "it": "tenuto conto di…",
+    "pt": "tendo em conta…"
+   }
+  },
+  {
+   "expresion": "zum Zwecke der/des…",
+   "funcion": "Zweck im Nominalstil",
+   "traducciones": {
+    "es": "a efectos de…",
+    "en": "for the purpose of…",
+    "fr": "aux fins de…",
+    "it": "ai fini di…",
+    "pt": "para efeitos de…"
+   }
+  },
+  {
+   "expresion": "Auf Deutsch heisst das schlicht: …",
+   "funcion": "die Kette für Laien auflösen",
+   "traducciones": {
+    "es": "Dicho en cristiano: …",
+    "en": "In plain terms, that simply means: …",
+    "fr": "En clair, cela veut dire : …",
+    "it": "In parole povere significa: …",
+    "pt": "Em termos simples, isso quer dizer: …"
+   }
+  },
+  {
+   "expresion": "Drei Genitive hintereinander sind einer zu viel.",
+   "funcion": "die Lesbarkeitsgrenze der Kette benennen",
+   "traducciones": {
+    "es": "Tres genitivos seguidos son uno de más.",
+    "en": "Three genitives in a row is one too many.",
+    "fr": "Trois génitifs de suite, c'est un de trop.",
+    "it": "Tre genitivi di fila sono uno di troppo.",
+    "pt": "Três genitivos seguidos é um a mais."
+   }
+  }
+ ],
+ "mision": {
+  "consigna": "Schreiben Sie den Einleitungsabsatz eines Berichts über das Kaufverhalten in Ihrer Region.",
+  "requisitos": [
+   "drei Präpositionen mit Genitiv, jeweils mit Nominalisierung",
+   "eine Genitivkette mit drei Gliedern",
+   "ein Satz, den Sie wieder verbal aufgelöst haben, weil er kippte",
+   "*die Kaufkraftverschiebung*, *die Produktkennzeichnung* und *der Impulskauf* verwenden"
+  ]
+ },
+ "microtareas": [
+  {
+   "dia": "lun",
+   "minutos": 5,
+   "texto": "Drei einfache Sätze über *die Verfügbarkeit* in Nominalstil umwandeln."
+  },
+  {
+   "dia": "mie",
+   "minutos": 5,
+   "texto": "Eine Genitivkette laut lesen: noch verständlich?"
+  },
+  {
+   "dia": "vie",
+   "minutos": 5,
+   "texto": "90 Sekunden: Wie *handelt* man *den Preis aus*? Mündlich verbal."
+  }
+ ],
+ "autochequeo": [
+  "Steht nach aufgrund/angesichts/infolge der Genitiv, nicht der Dativ?",
+  "Hat die Genitivkette mehr als drei Glieder?",
+  "Ist die Präposition zur Bedeutung passend gewählt?",
+  "Würde ein Relativsatz an dieser Stelle klarer sein?",
+  "Passt der Nominalstil zum Register des Textes?"
+ ],
+ "promptCorreccion": "Konzentrieren Sie sich ausschliesslich auf Präposition mit Genitiv, Nominalisierung und Genitivkette. (1) Prüfen Sie den Kasus nach jeder Präposition. (2) Markieren Sie Genitivketten ab vier Gliedern. (3) Sagen Sie, wo eine Auflösung in einen Relativsatz die Lesbarkeit verbessern würde. Schreiben Sie den Text nicht neu."
+}
