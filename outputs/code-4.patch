@@ -1,0 +1,593 @@
+From 42ace7878f7726e4ff1da82f7109aeded311b33e Mon Sep 17 00:00:00 2001
+From: FerP <fernandopercat@gmail.com>
+Date: Thu, 24 Sep 2026 22:11:35 +0200
+Subject: [PATCH] Code: minLength solo sobre el idioma que se aprende;
+ subtitulo interpreta el marcado
+
+Schema: en los campos bilingues la rama objeto {idioma: texto} pierde el
+minLength (queda maxLength para todas las claves) y el minimo rige solo sobre
+la clave del idioma de la ficha, con dos condicionales en allOf (de / en).
+Traducciones correctas pero mas cortas ya no rompen la validacion; hay que
+revertir las 66 celdas alargadas en 29875fa (anotado en FALTANTES 4.7).
+
+App: el renderizador ya interpretaba *cita*/**destaque** en consigna,
+requisitos y microtareas; faltaba subtitulo. Corregido, con textoSinMarcado
+para el widget de Glance (sin texto con estilo). Test de render nuevo.
+
+Componer las tres capas reales: 522 fichas, 9 especiales, 0 con problemas.
+compileDebugKotlin compileDebugUnitTestKotlin test: limpio.
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+---
+ .../lenguapp/ui/ContenidoSemanalScreen.kt     |   2 +-
+ .../percati/lenguapp/ui/MarcadoEnLinea.kt     |   6 +
+ .../lenguapp/widget/SemanaGlanceWidget.kt     |   3 +-
+ .../percati/lenguapp/ui/MarcadoEnLineaTest.kt |   5 +
+ .../ContenidoSemanalScreenInteraccionTest.kt  |  25 ++
+ proyecto/FALTANTES.md                         |  24 ++
+ proyecto/schema/ficha.schema.json             | 342 +++++++++++++++++-
+ 7 files changed, 387 insertions(+), 20 deletions(-)
+
+diff --git a/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt b/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt
+index 6f924c8a..aa596e58 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt
+@@ -122,7 +122,7 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier
+             ficha.variante?.let { EtiquetaVariante(it) }
+             Text(ficha.titulo, style = MaterialTheme.typography.headlineSmall)
+             Text(
+-                ficha.subtitulo,
++                textoConMarcado(ficha.subtitulo),
+                 style = MaterialTheme.typography.titleMedium,
+                 color = MaterialTheme.colorScheme.onSurfaceVariant,
+             )
+diff --git a/app/src/main/java/io/github/percati/lenguapp/ui/MarcadoEnLinea.kt b/app/src/main/java/io/github/percati/lenguapp/ui/MarcadoEnLinea.kt
+index f698def5..0336a17f 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/ui/MarcadoEnLinea.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/ui/MarcadoEnLinea.kt
+@@ -20,6 +20,12 @@ import androidx.compose.ui.text.withStyle
+  */
+ private val PATRON_MARCADO = Regex("""\*\*([^*]+)\*\*|\*([^*]+)\*""")
+ 
++/**
++ * El mismo texto sin los marcadores, para superficies que no admiten texto con
++ * estilo (el widget de Glance): sin esto los asteriscos se verian literales.
++ */
++fun textoSinMarcado(texto: String): String = textoConMarcado(texto).text
++
+ fun textoConMarcado(texto: String): AnnotatedString = buildAnnotatedString {
+     var indice = 0
+     for (coincidencia in PATRON_MARCADO.findAll(texto)) {
+diff --git a/app/src/main/java/io/github/percati/lenguapp/widget/SemanaGlanceWidget.kt b/app/src/main/java/io/github/percati/lenguapp/widget/SemanaGlanceWidget.kt
+index e76838cd..dd19457c 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/widget/SemanaGlanceWidget.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/widget/SemanaGlanceWidget.kt
+@@ -31,6 +31,7 @@ import io.github.percati.lenguapp.semana.ResultadoSemana
+ import io.github.percati.lenguapp.ui.mensajeSinCalendario
+ import io.github.percati.lenguapp.ui.mensajeSinContenidoNivel
+ import io.github.percati.lenguapp.ui.mensajeSinContenidoSemana
++import io.github.percati.lenguapp.ui.textoSinMarcado
+ import java.util.Locale
+ 
+ /**
+@@ -86,7 +87,7 @@ private fun ContenidoWidget(resultado: ResultadoSemana?, idiomaInterfaz: Idioma)
+                     style = TextStyle(fontWeight = FontWeight.Bold, color = GlanceTheme.colors.onBackground),
+                 )
+                 if (!subtitulo.isNullOrBlank()) {
+-                    Text(text = subtitulo, style = TextStyle(color = GlanceTheme.colors.onBackground))
++                    Text(text = textoSinMarcado(subtitulo), style = TextStyle(color = GlanceTheme.colors.onBackground))
+                 }
+             }
+             is ResultadoSemana.SinContenido -> Text(
+diff --git a/app/src/test/java/io/github/percati/lenguapp/ui/MarcadoEnLineaTest.kt b/app/src/test/java/io/github/percati/lenguapp/ui/MarcadoEnLineaTest.kt
+index 5c210ea9..48ed1333 100644
+--- a/app/src/test/java/io/github/percati/lenguapp/ui/MarcadoEnLineaTest.kt
++++ b/app/src/test/java/io/github/percati/lenguapp/ui/MarcadoEnLineaTest.kt
+@@ -55,4 +55,9 @@ class MarcadoEnLineaTest {
+     fun `texto vacio no rompe nada`() {
+         assertEquals(AnnotatedString(""), textoConMarcado(""))
+     }
++
++    @Test
++    fun `textoSinMarcado quita los marcadores para superficies sin estilo (widget)`() {
++        assertEquals("Say the word and no more", textoSinMarcado("Say *the word* and **no** more"))
++    }
+ }
+diff --git a/app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenInteraccionTest.kt b/app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenInteraccionTest.kt
+index 81af6e4e..83f5162c 100644
+--- a/app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenInteraccionTest.kt
++++ b/app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenInteraccionTest.kt
+@@ -91,6 +91,31 @@ class ContenidoSemanalScreenInteraccionTest {
+         composeTestRule.onNode(hasText("weglassen, weil es vor", substring = true)).assertDoesNotExist()
+     }
+ 
++    // Marcado en linea en los campos que la convencion de "palabra objetivo sin
++    // traducir" usa: subtitulo, consigna, requisitos y microtareas. Ninguno
++    // debe mostrar los asteriscos literales.
++    @Test
++    fun `el marcado con asteriscos se interpreta en subtitulo, consigna, requisitos y microtareas`() {
++        val base = ficha()
++        val ficha = base.copy(
++            subtitulo = "Palabra clave ${'*'}zuverlassig${'*'} en el subtitulo",
++            mision = base.mision.copy(
++                consigna = "Consigna con ${'*'}Wortstellung${'*'} sin traducir",
++                requisitos = listOf("Requisito con ${'*'}Nebensatz${'*'} marcado"),
++            ),
++            microtareas = base.microtareas.mapIndexed { i, m ->
++                if (i == 0) m.copy(texto = "Microtarea con ${'*'}Satzklammer${'*'} marcada") else m
++            },
++        )
++        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
++
++        composeTestRule.onNode(hasText("Palabra clave zuverlassig en el subtitulo")).assertExists()
++        composeTestRule.onNode(hasText("Consigna con Wortstellung sin traducir")).assertExists()
++        composeTestRule.onNode(hasText("Requisito con Nebensatz marcado", substring = true)).assertExists()
++        composeTestRule.onNode(hasText("Microtarea con Satzklammer marcada", substring = true)).assertExists()
++        composeTestRule.onNode(hasText("${'*'}", substring = true)).assertDoesNotExist()
++    }
++
+     @Test
+     fun `vocabulario y redemittel arrancan plegados y se abren al tocar el titulo`() {
+         val ficha = ficha()
+diff --git a/proyecto/FALTANTES.md b/proyecto/FALTANTES.md
+index 639fd496..d8ec2c88 100644
+--- a/proyecto/FALTANTES.md
++++ b/proyecto/FALTANTES.md
+@@ -39,6 +39,30 @@ compuestas, 9 semanas especiales, 0 con problemas".
+ `validar_apariciones.py` ya no tiene el chequeo muerto de colisión entre
+ años — lo retiró Code de paso.
+ 
++### 4.7 — `minLength` de los campos bilingües y marcado con asteriscos (Code, sept 2026)
++
++✅ **`minLength`:** en los campos bilingües la rama objeto `{idioma: texto}` ya no
++lleva `minLength` (solo `maxLength`, igual para todas las claves). El mínimo rige
++únicamente sobre la clave del idioma que se aprende (`de` en fichas alemanas,
++`en` en fichas inglesas), vía dos condicionales en `allOf`. Una traducción corta
++al es/en/fr/it/pt ya no rompe la ficha.
++
++🔴 **Para Traducciones:** hay que **revertir a su redacción original las 66 celdas
++que se alargaron como parche temporal en el commit `29875fa`** — el schema ya no
++las necesita alargadas. `maxLength` sigue aplicando a todas las claves.
++
++✅ **Marcado `*cita*` / `**destaque**`:** el renderizador ya lo interpretaba en
++`mision.consigna`, `mision.requisitos` y `microtareas[].texto`. Le faltaba
++`subtitulo`: corregido (ahora se ve en cursiva/negrita, no como asteriscos
++literales; en el widget se quita el marcado porque Glance no admite texto con
++estilo). Por eso **no hace falta sacar** los 5 subtítulos ingleses con asteriscos.
++`titulo` de la ficha NO interpreta marcado (no se pidió): no usar asteriscos ahí.
++
++🟡 **Aviso para la app:** los modelos Kotlin (`Ficha.subtitulo`, etc.) siguen
++siendo `String`. Cuando A2/B1 se embeba con campos `{idioma: texto}`, hay que
++extender `ContenidoSemanal.kt` y el renderizador para resolver el idioma.
++Hoy no rompe nada porque el contenido embebido es solo el piloto 2026 (B2/C1).
++
+ ## 5. Audio — 🟡 grabado y convertido, falta subir 4462 al repo
+ 
+ ✅ **7348/7348 filas del Excel grabadas** (6312 textos distintos). `audio-estado.json` registra **6368 archivos: 3298 EN y 3070 DE**. `validar_apariciones.py --anio 2027` no da avisos de audio.
+diff --git a/proyecto/schema/ficha.schema.json b/proyecto/schema/ficha.schema.json
+index a5ef4080..431b9312 100644
+--- a/proyecto/schema/ficha.schema.json
++++ b/proyecto/schema/ficha.schema.json
+@@ -95,7 +95,6 @@
+           },
+           "additionalProperties": {
+             "type": "string",
+-            "minLength": 3,
+             "maxLength": 80
+           },
+           "minProperties": 1
+@@ -124,7 +123,6 @@
+           },
+           "additionalProperties": {
+             "type": "string",
+-            "minLength": 5,
+             "maxLength": 160
+           },
+           "minProperties": 1
+@@ -197,7 +195,6 @@
+           },
+           "additionalProperties": {
+             "type": "string",
+-            "minLength": 200,
+             "maxLength": 1600
+           },
+           "minProperties": 1
+@@ -359,8 +356,7 @@
+                   ]
+                 },
+                 "additionalProperties": {
+-                  "type": "string",
+-                  "minLength": 5
++                  "type": "string"
+                 },
+                 "minProperties": 1
+               }
+@@ -398,8 +394,7 @@
+               ]
+             },
+             "additionalProperties": {
+-              "type": "string",
+-              "minLength": 20
++              "type": "string"
+             },
+             "minProperties": 1
+           }
+@@ -447,8 +442,7 @@
+               ]
+             },
+             "additionalProperties": {
+-              "type": "string",
+-              "minLength": 10
++              "type": "string"
+             },
+             "minProperties": 1
+           }
+@@ -614,8 +608,7 @@
+                 ]
+               },
+               "additionalProperties": {
+-                "type": "string",
+-                "minLength": 30
++                "type": "string"
+               },
+               "minProperties": 1
+             }
+@@ -692,8 +685,7 @@
+                   ]
+                 },
+                 "additionalProperties": {
+-                  "type": "string",
+-                  "minLength": 15
++                  "type": "string"
+                 },
+                 "minProperties": 1
+               }
+@@ -730,8 +722,7 @@
+               ]
+             },
+             "additionalProperties": {
+-              "type": "string",
+-              "minLength": 10
++              "type": "string"
+             },
+             "minProperties": 1
+           }
+@@ -758,8 +749,7 @@
+             ]
+           },
+           "additionalProperties": {
+-            "type": "string",
+-            "minLength": 150
++            "type": "string"
+           },
+           "minProperties": 1
+         }
+@@ -844,7 +834,323 @@
+           "cuadroReferencia"
+         ]
+       }
++    },
++    {
++      "if": {
++        "properties": {
++          "idioma": {
++            "const": "de"
++          }
++        },
++        "required": [
++          "idioma"
++        ]
++      },
++      "then": {
++        "properties": {
++          "titulo": {
++            "if": {
++              "type": "object"
++            },
++            "then": {
++              "properties": {
++                "de": {
++                  "minLength": 3
++                }
++              }
++            }
++          },
++          "subtitulo": {
++            "if": {
++              "type": "object"
++            },
++            "then": {
++              "properties": {
++                "de": {
++                  "minLength": 5
++                }
++              }
++            }
++          },
++          "descripcion": {
++            "if": {
++              "type": "object"
++            },
++            "then": {
++              "properties": {
++                "de": {
++                  "minLength": 200
++                }
++              }
++            }
++          },
++          "ejemplos": {
++            "items": {
++              "properties": {
++                "texto": {
++                  "if": {
++                    "type": "object"
++                  },
++                  "then": {
++                    "properties": {
++                      "de": {
++                        "minLength": 5
++                      }
++                    }
++                  }
++                }
++              }
++            }
++          },
++          "notas": {
++            "items": {
++              "if": {
++                "type": "object"
++              },
++              "then": {
++                "properties": {
++                  "de": {
++                    "minLength": 20
++                  }
++                }
++              }
++            }
++          },
++          "errores": {
++            "items": {
++              "if": {
++                "type": "object"
++              },
++              "then": {
++                "properties": {
++                  "de": {
++                    "minLength": 10
++                  }
++                }
++              }
++            }
++          },
++          "mision": {
++            "properties": {
++              "consigna": {
++                "if": {
++                  "type": "object"
++                },
++                "then": {
++                  "properties": {
++                    "de": {
++                      "minLength": 30
++                    }
++                  }
++                }
++              }
++            }
++          },
++          "microtareas": {
++            "items": {
++              "properties": {
++                "texto": {
++                  "if": {
++                    "type": "object"
++                  },
++                  "then": {
++                    "properties": {
++                      "de": {
++                        "minLength": 15
++                      }
++                    }
++                  }
++                }
++              }
++            }
++          },
++          "autochequeo": {
++            "items": {
++              "if": {
++                "type": "object"
++              },
++              "then": {
++                "properties": {
++                  "de": {
++                    "minLength": 10
++                  }
++                }
++              }
++            }
++          },
++          "promptCorreccion": {
++            "if": {
++              "type": "object"
++            },
++            "then": {
++              "properties": {
++                "de": {
++                  "minLength": 150
++                }
++              }
++            }
++          }
++        }
++      }
++    },
++    {
++      "if": {
++        "properties": {
++          "idioma": {
++            "const": "en"
++          }
++        },
++        "required": [
++          "idioma"
++        ]
++      },
++      "then": {
++        "properties": {
++          "titulo": {
++            "if": {
++              "type": "object"
++            },
++            "then": {
++              "properties": {
++                "en": {
++                  "minLength": 3
++                }
++              }
++            }
++          },
++          "subtitulo": {
++            "if": {
++              "type": "object"
++            },
++            "then": {
++              "properties": {
++                "en": {
++                  "minLength": 5
++                }
++              }
++            }
++          },
++          "descripcion": {
++            "if": {
++              "type": "object"
++            },
++            "then": {
++              "properties": {
++                "en": {
++                  "minLength": 200
++                }
++              }
++            }
++          },
++          "ejemplos": {
++            "items": {
++              "properties": {
++                "texto": {
++                  "if": {
++                    "type": "object"
++                  },
++                  "then": {
++                    "properties": {
++                      "en": {
++                        "minLength": 5
++                      }
++                    }
++                  }
++                }
++              }
++            }
++          },
++          "notas": {
++            "items": {
++              "if": {
++                "type": "object"
++              },
++              "then": {
++                "properties": {
++                  "en": {
++                    "minLength": 20
++                  }
++                }
++              }
++            }
++          },
++          "errores": {
++            "items": {
++              "if": {
++                "type": "object"
++              },
++              "then": {
++                "properties": {
++                  "en": {
++                    "minLength": 10
++                  }
++                }
++              }
++            }
++          },
++          "mision": {
++            "properties": {
++              "consigna": {
++                "if": {
++                  "type": "object"
++                },
++                "then": {
++                  "properties": {
++                    "en": {
++                      "minLength": 30
++                    }
++                  }
++                }
++              }
++            }
++          },
++          "microtareas": {
++            "items": {
++              "properties": {
++                "texto": {
++                  "if": {
++                    "type": "object"
++                  },
++                  "then": {
++                    "properties": {
++                      "en": {
++                        "minLength": 15
++                      }
++                    }
++                  }
++                }
++              }
++            }
++          },
++          "autochequeo": {
++            "items": {
++              "if": {
++                "type": "object"
++              },
++              "then": {
++                "properties": {
++                  "en": {
++                    "minLength": 10
++                  }
++                }
++              }
++            }
++          },
++          "promptCorreccion": {
++            "if": {
++              "type": "object"
++            },
++            "then": {
++              "properties": {
++                "en": {
++                  "minLength": 150
++                }
++              }
++            }
++          }
++        }
++      }
+     }
+   ],
+-  "$comment": "MARCADO EN LINEA. Los campos de prosa y de tabla pueden contener dos marcadores, planos y sin anidar: *cita* para una palabra o expresion citada, y **destaque** para el elemento sobre el que se llama la atencion (por ejemplo la posicion del verbo en la ficha de Satzbau). La app necesita UN solo renderizador que los convierta a texto con estilo. El marcado que envolvia el campo entero ya fue quitado por el compilador: los ejemplos y los Redemittel llegan limpios y la app los estiliza por su rol. -- CAMPOS BILINGUES A2/B1. En A2 y B1 toda la prosa de la ficha se puede mostrar en el idioma que se aprende O en el idioma de la app (switch en la interfaz), asi que necesita un lugar donde alojar la traduccion. Los campos afectados (titulo, descripcion, notas, ejemplos[].texto, errores, autochequeo, cuadroReferencia.titulo/columnas/filas/notaPie, promptCorreccion, subtitulo, mision.consigna/requisitos, microtareas[].texto, redemittel[].funcion) aceptan `oneOf` un string plano (como hasta ahora, y como siguen siendo en B2/C1/C2, que no son bilingues) o un objeto {idioma: texto} con el MISMO patron que ya usan contraste, erroresContrastivos y vocabulario[].traducciones: propertyNames limitado a los seis idiomas soportados (es, en, de, fr, it, pt) y minProperties 1, para que se pueda ir poblando una clave a la vez en vez de exigir las seis de entrada. El propio idioma de la ficha (p.ej. 'de' en una ficha alemana) va como una clave mas del objeto, no aparte: es el mismo mecanismo, solo que ahora tambien alcanza a la prosa y no unicamente al vocabulario y los Redemittel. La forma `oneOf` es deliberada y no un `if`/`then` que EXIJA el objeto en A2/B1: los 95 nucleos y 192 apariciones de A2/B1 todavia tienen estos campos como string plano (nadie los tradujo todavia), asi que exigir el objeto ahora romperia toda esa composicion. El campo queda listo para que se traduzca de a poco; no se vuelve obligatorio con esta revision del schema."
++  "$comment": "MARCADO EN LINEA. Los campos de prosa y de tabla pueden contener dos marcadores, planos y sin anidar: *cita* para una palabra o expresion citada, y **destaque** para el elemento sobre el que se llama la atencion (por ejemplo la posicion del verbo en la ficha de Satzbau). La app necesita UN solo renderizador que los convierta a texto con estilo. El marcado que envolvia el campo entero ya fue quitado por el compilador: los ejemplos y los Redemittel llegan limpios y la app los estiliza por su rol. -- CAMPOS BILINGUES A2/B1. En A2 y B1 toda la prosa de la ficha se puede mostrar en el idioma que se aprende O en el idioma de la app (switch en la interfaz), asi que necesita un lugar donde alojar la traduccion. Los campos afectados (titulo, descripcion, notas, ejemplos[].texto, errores, autochequeo, cuadroReferencia.titulo/columnas/filas/notaPie, promptCorreccion, subtitulo, mision.consigna/requisitos, microtareas[].texto, redemittel[].funcion) aceptan `oneOf` un string plano (como hasta ahora, y como siguen siendo en B2/C1/C2, que no son bilingues) o un objeto {idioma: texto} con el MISMO patron que ya usan contraste, erroresContrastivos y vocabulario[].traducciones: propertyNames limitado a los seis idiomas soportados (es, en, de, fr, it, pt) y minProperties 1, para que se pueda ir poblando una clave a la vez en vez de exigir las seis de entrada. El propio idioma de la ficha (p.ej. 'de' en una ficha alemana) va como una clave mas del objeto, no aparte: es el mismo mecanismo, solo que ahora tambien alcanza a la prosa y no unicamente al vocabulario y los Redemittel. La forma `oneOf` es deliberada y no un `if`/`then` que EXIJA el objeto en A2/B1: los 95 nucleos y 192 apariciones de A2/B1 todavia tienen estos campos como string plano (nadie los tradujo todavia), asi que exigir el objeto ahora romperia toda esa composicion. El campo queda listo para que se traduzca de a poco; no se vuelve obligatorio con esta revision del schema. -- MINLENGTH EN LOS CAMPOS BILINGUES. El minLength de cada campo se penso para la prosa original (aleman/ingles); espanol, ingles y demas idiomas de app comprimen frente al original, asi que exigirlo a TODAS las claves del objeto {idioma: texto} rechazaba traducciones correctas. Ahora la rama objeto de cada campo solo lleva maxLength (limite de diseno visual, igual para todas las claves), y el minLength rige unicamente sobre la clave del idioma que se aprende (la que ya existia como string plano), mediante dos condicionales en allOf (idioma = de exige minLength en la clave 'de'; idioma = en, en la clave 'en'). Las demas claves no tienen minimo. -- DONDE LA APP INTERPRETA EL MARCADO. El renderizador aplica *cita* y **destaque** en descripcion, ejemplos, notas, errores, autochequeo, cuadroReferencia, promptCorreccion, subtitulo, mision.consigna, mision.requisitos, microtareas[].texto y redemittel[].funcion. NO en titulo. Convencion de traduccion: la palabra objetivo de la consigna queda sin traducir y entre asteriscos."
+ }
+\ No newline at end of file
+-- 
+2.55.0.windows.5
+

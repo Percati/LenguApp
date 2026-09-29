@@ -1,0 +1,1465 @@
+From 9ac596a663ec6ebf476dfa33eb5ba179b7d42606 Mon Sep 17 00:00:00 2001
+From: FerP <fernandopercat@gmail.com>
+Date: Sat, 26 Sep 2026 00:44:23 +0200
+Subject: [PATCH] Code: semanas especiales bilingues (A2/B1) e id con anio
+
+semana-especial.schema.json: los 6 campos de texto aceptan oneOf string plano
+u objeto {idioma: texto} (no obligatorio); el id lleva el anio
+(REVIEW-DE-B2-2027-S10), mismo criterio que el id de ficha, porque piloto
+2026 (S40/44/48) y 2027 (S10/22/34/46) solo no chocaban por usar semanas
+distintas. Los 49 archivos de nucleos y los 9 assets del piloto se renombraron
+con su anio; componer.py valida las semanas especiales contra su schema.
+Kotlin: idDeEntrada agrega el anio, SemanaEspecial usa TextoBilingue y la
+pantalla/widget lo resuelven. Tests actualizados y uno nuevo.
+
+Componer las tres capas reales: 522 fichas, 49 semanas especiales, 0 con
+problemas. compileDebugKotlin compileDebugUnitTestKotlin test: limpio.
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+---
+ ...B2-S40.json => REVIEW-DE-B2-2026-S40.json} |   2 +-
+ ...B2-S48.json => REVIEW-DE-B2-2026-S48.json} |   2 +-
+ .../contenido/REVIEW-EN-B2-2026-S40.json      |   2 +-
+ .../contenido/REVIEW-EN-B2-2026-S48.json      |   2 +-
+ .../contenido/REVIEW-EN-C1-2026-S40.json      |   2 +-
+ .../contenido/REVIEW-EN-C1-2026-S48.json      |   2 +-
+ ...-S44.json => SURVIVAL-DE-B2-2026-S44.json} |   2 +-
+ .../contenido/SURVIVAL-EN-B2-2026-S44.json    |   2 +-
+ ...-S44.json => SURVIVAL-EN-C1-2026-S44.json} |   2 +-
+ .../lenguapp/modelo/ContenidoSemanal.kt       |  12 +-
+ .../lenguapp/semana/ResolutorSemana.kt        |   9 +-
+ .../lenguapp/ui/ContenidoSemanalScreen.kt     |  18 ++-
+ .../lenguapp/widget/SemanaGlanceWidget.kt     |   2 +-
+ .../lenguapp/datos/ContenidoAssetsTest.kt     |   6 +-
+ .../lenguapp/modelo/TextoBilingueTest.kt      |  27 ++++
+ .../lenguapp/semana/ResolutorSemanaTest.kt    |   2 +-
+ .../ContenidoSemanalScreenInteraccionTest.kt  |   2 +-
+ proyecto/FALTANTES.md                         |   2 +-
+ ...A2-S10.json => REVIEW-DE-A2-2027-S10.json} |   2 +-
+ ...A2-S22.json => REVIEW-DE-A2-2027-S22.json} |   2 +-
+ ...A2-S34.json => REVIEW-DE-A2-2027-S34.json} |   2 +-
+ ...A2-S46.json => REVIEW-DE-A2-2027-S46.json} |   2 +-
+ ...B1-S10.json => REVIEW-DE-B1-2027-S10.json} |   2 +-
+ ...B1-S22.json => REVIEW-DE-B1-2027-S22.json} |   2 +-
+ ...B1-S34.json => REVIEW-DE-B1-2027-S34.json} |   2 +-
+ ...B1-S46.json => REVIEW-DE-B1-2027-S46.json} |   2 +-
+ ...B2-S40.json => REVIEW-DE-B2-2026-S40.json} |   2 +-
+ ...B2-S48.json => REVIEW-DE-B2-2026-S48.json} |   2 +-
+ ...B2-S10.json => REVIEW-DE-B2-2027-S10.json} |   2 +-
+ ...B2-S22.json => REVIEW-DE-B2-2027-S22.json} |   2 +-
+ ...B2-S34.json => REVIEW-DE-B2-2027-S34.json} |   2 +-
+ ...B2-S46.json => REVIEW-DE-B2-2027-S46.json} |   2 +-
+ ...C1-S10.json => REVIEW-DE-C1-2027-S10.json} |   2 +-
+ ...C1-S22.json => REVIEW-DE-C1-2027-S22.json} |   2 +-
+ ...C1-S34.json => REVIEW-DE-C1-2027-S34.json} |   2 +-
+ ...C1-S46.json => REVIEW-DE-C1-2027-S46.json} |   2 +-
+ ...C2-S10.json => REVIEW-DE-C2-2027-S10.json} |   2 +-
+ ...C2-S22.json => REVIEW-DE-C2-2027-S22.json} |   2 +-
+ ...C2-S34.json => REVIEW-DE-C2-2027-S34.json} |   2 +-
+ ...C2-S46.json => REVIEW-DE-C2-2027-S46.json} |   2 +-
+ ...A2-S10.json => REVIEW-EN-A2-2027-S10.json} |   2 +-
+ ...A2-S22.json => REVIEW-EN-A2-2027-S22.json} |   2 +-
+ ...A2-S34.json => REVIEW-EN-A2-2027-S34.json} |   2 +-
+ ...A2-S46.json => REVIEW-EN-A2-2027-S46.json} |   2 +-
+ ...B1-S10.json => REVIEW-EN-B1-2027-S10.json} |   2 +-
+ ...B1-S22.json => REVIEW-EN-B1-2027-S22.json} |   2 +-
+ ...B1-S34.json => REVIEW-EN-B1-2027-S34.json} |   2 +-
+ ...B1-S46.json => REVIEW-EN-B1-2027-S46.json} |   2 +-
+ .../nucleos/REVIEW-EN-B2-2026-S40.json        |   2 +-
+ .../nucleos/REVIEW-EN-B2-2026-S48.json        |   2 +-
+ ...B2-S10.json => REVIEW-EN-B2-2027-S10.json} |   2 +-
+ ...B2-S22.json => REVIEW-EN-B2-2027-S22.json} |   2 +-
+ ...B2-S34.json => REVIEW-EN-B2-2027-S34.json} |   2 +-
+ ...B2-S46.json => REVIEW-EN-B2-2027-S46.json} |   2 +-
+ .../nucleos/REVIEW-EN-C1-2026-S40.json        |   2 +-
+ .../nucleos/REVIEW-EN-C1-2026-S48.json        |   2 +-
+ ...C1-S10.json => REVIEW-EN-C1-2027-S10.json} |   2 +-
+ ...C1-S22.json => REVIEW-EN-C1-2027-S22.json} |   2 +-
+ ...C1-S34.json => REVIEW-EN-C1-2027-S34.json} |   2 +-
+ ...C1-S46.json => REVIEW-EN-C1-2027-S46.json} |   2 +-
+ ...C2-S10.json => REVIEW-EN-C2-2027-S10.json} |   2 +-
+ ...C2-S22.json => REVIEW-EN-C2-2027-S22.json} |   2 +-
+ ...C2-S34.json => REVIEW-EN-C2-2027-S34.json} |   2 +-
+ ...C2-S46.json => REVIEW-EN-C2-2027-S46.json} |   2 +-
+ ...-S44.json => SURVIVAL-DE-B2-2026-S44.json} |   2 +-
+ .../nucleos/SURVIVAL-EN-B2-2026-S44.json      |   2 +-
+ ...-S44.json => SURVIVAL-EN-C1-2026-S44.json} |   2 +-
+ proyecto/schema/semana-especial.schema.json   | 144 ++++++++++++++++--
+ proyecto/tools/componer.py                    |  14 +-
+ 69 files changed, 261 insertions(+), 93 deletions(-)
+ rename app/src/main/assets/contenido/{REVIEW-DE-B2-S40.json => REVIEW-DE-B2-2026-S40.json} (98%)
+ rename app/src/main/assets/contenido/{REVIEW-DE-B2-S48.json => REVIEW-DE-B2-2026-S48.json} (98%)
+ rename proyecto/contenido/nucleos/REVIEW-EN-B2-S40.json => app/src/main/assets/contenido/REVIEW-EN-B2-2026-S40.json (97%)
+ rename proyecto/contenido/nucleos/REVIEW-EN-B2-S48.json => app/src/main/assets/contenido/REVIEW-EN-B2-2026-S48.json (98%)
+ rename proyecto/contenido/nucleos/REVIEW-EN-C1-S40.json => app/src/main/assets/contenido/REVIEW-EN-C1-2026-S40.json (98%)
+ rename proyecto/contenido/nucleos/REVIEW-EN-C1-S48.json => app/src/main/assets/contenido/REVIEW-EN-C1-2026-S48.json (98%)
+ rename app/src/main/assets/contenido/{SURVIVAL-DE-B2-S44.json => SURVIVAL-DE-B2-2026-S44.json} (97%)
+ rename proyecto/contenido/nucleos/SURVIVAL-EN-B2-S44.json => app/src/main/assets/contenido/SURVIVAL-EN-B2-2026-S44.json (96%)
+ rename app/src/main/assets/contenido/{SURVIVAL-EN-C1-S44.json => SURVIVAL-EN-C1-2026-S44.json} (96%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-A2-S10.json => REVIEW-DE-A2-2027-S10.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-A2-S22.json => REVIEW-DE-A2-2027-S22.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-A2-S34.json => REVIEW-DE-A2-2027-S34.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-A2-S46.json => REVIEW-DE-A2-2027-S46.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-B1-S10.json => REVIEW-DE-B1-2027-S10.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-B1-S22.json => REVIEW-DE-B1-2027-S22.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-B1-S34.json => REVIEW-DE-B1-2027-S34.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-B1-S46.json => REVIEW-DE-B1-2027-S46.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-B2-S40.json => REVIEW-DE-B2-2026-S40.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-B2-S48.json => REVIEW-DE-B2-2026-S48.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-B2-S10.json => REVIEW-DE-B2-2027-S10.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-B2-S22.json => REVIEW-DE-B2-2027-S22.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-B2-S34.json => REVIEW-DE-B2-2027-S34.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-B2-S46.json => REVIEW-DE-B2-2027-S46.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-C1-S10.json => REVIEW-DE-C1-2027-S10.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-C1-S22.json => REVIEW-DE-C1-2027-S22.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-C1-S34.json => REVIEW-DE-C1-2027-S34.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-C1-S46.json => REVIEW-DE-C1-2027-S46.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-C2-S10.json => REVIEW-DE-C2-2027-S10.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-C2-S22.json => REVIEW-DE-C2-2027-S22.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-C2-S34.json => REVIEW-DE-C2-2027-S34.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-DE-C2-S46.json => REVIEW-DE-C2-2027-S46.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-A2-S10.json => REVIEW-EN-A2-2027-S10.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-A2-S22.json => REVIEW-EN-A2-2027-S22.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-A2-S34.json => REVIEW-EN-A2-2027-S34.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-A2-S46.json => REVIEW-EN-A2-2027-S46.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-B1-S10.json => REVIEW-EN-B1-2027-S10.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-B1-S22.json => REVIEW-EN-B1-2027-S22.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-B1-S34.json => REVIEW-EN-B1-2027-S34.json} (97%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-B1-S46.json => REVIEW-EN-B1-2027-S46.json} (97%)
+ rename app/src/main/assets/contenido/REVIEW-EN-B2-S40.json => proyecto/contenido/nucleos/REVIEW-EN-B2-2026-S40.json (97%)
+ rename app/src/main/assets/contenido/REVIEW-EN-B2-S48.json => proyecto/contenido/nucleos/REVIEW-EN-B2-2026-S48.json (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-B2-S10.json => REVIEW-EN-B2-2027-S10.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-B2-S22.json => REVIEW-EN-B2-2027-S22.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-B2-S34.json => REVIEW-EN-B2-2027-S34.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-B2-S46.json => REVIEW-EN-B2-2027-S46.json} (98%)
+ rename app/src/main/assets/contenido/REVIEW-EN-C1-S40.json => proyecto/contenido/nucleos/REVIEW-EN-C1-2026-S40.json (98%)
+ rename app/src/main/assets/contenido/REVIEW-EN-C1-S48.json => proyecto/contenido/nucleos/REVIEW-EN-C1-2026-S48.json (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-C1-S10.json => REVIEW-EN-C1-2027-S10.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-C1-S22.json => REVIEW-EN-C1-2027-S22.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-C1-S34.json => REVIEW-EN-C1-2027-S34.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-C1-S46.json => REVIEW-EN-C1-2027-S46.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-C2-S10.json => REVIEW-EN-C2-2027-S10.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-C2-S22.json => REVIEW-EN-C2-2027-S22.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-C2-S34.json => REVIEW-EN-C2-2027-S34.json} (98%)
+ rename proyecto/contenido/nucleos/{REVIEW-EN-C2-S46.json => REVIEW-EN-C2-2027-S46.json} (98%)
+ rename proyecto/contenido/nucleos/{SURVIVAL-DE-B2-S44.json => SURVIVAL-DE-B2-2026-S44.json} (97%)
+ rename app/src/main/assets/contenido/SURVIVAL-EN-B2-S44.json => proyecto/contenido/nucleos/SURVIVAL-EN-B2-2026-S44.json (96%)
+ rename proyecto/contenido/nucleos/{SURVIVAL-EN-C1-S44.json => SURVIVAL-EN-C1-2026-S44.json} (96%)
+
+diff --git a/app/src/main/assets/contenido/REVIEW-DE-B2-S40.json b/app/src/main/assets/contenido/REVIEW-DE-B2-2026-S40.json
+similarity index 98%
+rename from app/src/main/assets/contenido/REVIEW-DE-B2-S40.json
+rename to app/src/main/assets/contenido/REVIEW-DE-B2-2026-S40.json
+index 98e80963..2c3081be 100644
+--- a/app/src/main/assets/contenido/REVIEW-DE-B2-S40.json
++++ b/app/src/main/assets/contenido/REVIEW-DE-B2-2026-S40.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B2-S40",
++ "id": "REVIEW-DE-B2-2026-S40",
+  "semana": 40,
+  "idioma": "de",
+  "nivel": "B2",
+diff --git a/app/src/main/assets/contenido/REVIEW-DE-B2-S48.json b/app/src/main/assets/contenido/REVIEW-DE-B2-2026-S48.json
+similarity index 98%
+rename from app/src/main/assets/contenido/REVIEW-DE-B2-S48.json
+rename to app/src/main/assets/contenido/REVIEW-DE-B2-2026-S48.json
+index 24518f44..0d43de6d 100644
+--- a/app/src/main/assets/contenido/REVIEW-DE-B2-S48.json
++++ b/app/src/main/assets/contenido/REVIEW-DE-B2-2026-S48.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B2-S48",
++ "id": "REVIEW-DE-B2-2026-S48",
+  "semana": 48,
+  "idioma": "de",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-B2-S40.json b/app/src/main/assets/contenido/REVIEW-EN-B2-2026-S40.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-EN-B2-S40.json
+rename to app/src/main/assets/contenido/REVIEW-EN-B2-2026-S40.json
+index 6d97f58c..8859d4f7 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-B2-S40.json
++++ b/app/src/main/assets/contenido/REVIEW-EN-B2-2026-S40.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B2-S40",
++ "id": "REVIEW-EN-B2-2026-S40",
+  "semana": 40,
+  "idioma": "en",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-B2-S48.json b/app/src/main/assets/contenido/REVIEW-EN-B2-2026-S48.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-B2-S48.json
+rename to app/src/main/assets/contenido/REVIEW-EN-B2-2026-S48.json
+index e01c4b33..4e69788d 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-B2-S48.json
++++ b/app/src/main/assets/contenido/REVIEW-EN-B2-2026-S48.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B2-S48",
++ "id": "REVIEW-EN-B2-2026-S48",
+  "semana": 48,
+  "idioma": "en",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-C1-S40.json b/app/src/main/assets/contenido/REVIEW-EN-C1-2026-S40.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-C1-S40.json
+rename to app/src/main/assets/contenido/REVIEW-EN-C1-2026-S40.json
+index c67fce4c..fb43b06b 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-C1-S40.json
++++ b/app/src/main/assets/contenido/REVIEW-EN-C1-2026-S40.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C1-S40",
++ "id": "REVIEW-EN-C1-2026-S40",
+  "semana": 40,
+  "idioma": "en",
+  "nivel": "C1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-C1-S48.json b/app/src/main/assets/contenido/REVIEW-EN-C1-2026-S48.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-C1-S48.json
+rename to app/src/main/assets/contenido/REVIEW-EN-C1-2026-S48.json
+index e9c744e4..3a2683ef 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-C1-S48.json
++++ b/app/src/main/assets/contenido/REVIEW-EN-C1-2026-S48.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C1-S48",
++ "id": "REVIEW-EN-C1-2026-S48",
+  "semana": 48,
+  "idioma": "en",
+  "nivel": "C1",
+diff --git a/app/src/main/assets/contenido/SURVIVAL-DE-B2-S44.json b/app/src/main/assets/contenido/SURVIVAL-DE-B2-2026-S44.json
+similarity index 97%
+rename from app/src/main/assets/contenido/SURVIVAL-DE-B2-S44.json
+rename to app/src/main/assets/contenido/SURVIVAL-DE-B2-2026-S44.json
+index 7a8fda5a..350f6d4b 100644
+--- a/app/src/main/assets/contenido/SURVIVAL-DE-B2-S44.json
++++ b/app/src/main/assets/contenido/SURVIVAL-DE-B2-2026-S44.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "SURVIVAL-DE-B2-S44",
++ "id": "SURVIVAL-DE-B2-2026-S44",
+  "semana": 44,
+  "idioma": "de",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/SURVIVAL-EN-B2-S44.json b/app/src/main/assets/contenido/SURVIVAL-EN-B2-2026-S44.json
+similarity index 96%
+rename from proyecto/contenido/nucleos/SURVIVAL-EN-B2-S44.json
+rename to app/src/main/assets/contenido/SURVIVAL-EN-B2-2026-S44.json
+index aff9a4e2..c2714405 100644
+--- a/proyecto/contenido/nucleos/SURVIVAL-EN-B2-S44.json
++++ b/app/src/main/assets/contenido/SURVIVAL-EN-B2-2026-S44.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "SURVIVAL-EN-B2-S44",
++ "id": "SURVIVAL-EN-B2-2026-S44",
+  "semana": 44,
+  "idioma": "en",
+  "nivel": "B2",
+diff --git a/app/src/main/assets/contenido/SURVIVAL-EN-C1-S44.json b/app/src/main/assets/contenido/SURVIVAL-EN-C1-2026-S44.json
+similarity index 96%
+rename from app/src/main/assets/contenido/SURVIVAL-EN-C1-S44.json
+rename to app/src/main/assets/contenido/SURVIVAL-EN-C1-2026-S44.json
+index 4ad85af3..8c3352bf 100644
+--- a/app/src/main/assets/contenido/SURVIVAL-EN-C1-S44.json
++++ b/app/src/main/assets/contenido/SURVIVAL-EN-C1-2026-S44.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "SURVIVAL-EN-C1-S44",
++ "id": "SURVIVAL-EN-C1-2026-S44",
+  "semana": 44,
+  "idioma": "en",
+  "nivel": "C1",
+diff --git a/app/src/main/java/io/github/percati/lenguapp/modelo/ContenidoSemanal.kt b/app/src/main/java/io/github/percati/lenguapp/modelo/ContenidoSemanal.kt
+index bc75210c..ce4c0dfd 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/modelo/ContenidoSemanal.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/modelo/ContenidoSemanal.kt
+@@ -247,12 +247,12 @@ data class SemanaEspecial(
+     // su propia semana de repaso/Survival, pero el campo explicito faltaba.
+     val nivel: Nivel,
+     val clase: Clase,
+-    val titulo: String,
++    val titulo: TextoBilingue,
+     val minutosEstimados: Int? = null,
+-    val consigna: String,
+-    val requisitos: List<String>? = null,
++    val consigna: TextoBilingue,
++    val requisitos: List<TextoBilingue>? = null,
+     // Aca son texto libre, a diferencia de Ficha.microtareas que son objetos.
+-    val microtareas: List<String>? = null,
+-    val autochequeo: List<String>,
+-    val promptCorreccion: String,
++    val microtareas: List<TextoBilingue>? = null,
++    val autochequeo: List<TextoBilingue>,
++    val promptCorreccion: TextoBilingue,
+ ) : ContenidoSemanal
+diff --git a/app/src/main/java/io/github/percati/lenguapp/semana/ResolutorSemana.kt b/app/src/main/java/io/github/percati/lenguapp/semana/ResolutorSemana.kt
+index 23886813..49ff2048 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/semana/ResolutorSemana.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/semana/ResolutorSemana.kt
+@@ -153,8 +153,9 @@ fun resolverContenidoDeLaSemana(
+  * justo el caso que decide cual calendario se cargo (ver
+  * resolverContenidoDeLaSemana/RepositorioSemana.kt).
+  *
+- * REVIEW y SURVIVAL siguen sin anio en el id: son del piloto 2026 bajo el
+- * esquema viejo (regla dura #11) y no se regeneran; llevan el nivel ademas
++ * REVIEW y SURVIVAL llevan tambien el anio (REVIEW-DE-B2-2026-S40): el
++ * piloto 2026 (S40/S44/S48) y 2027 (S10/S22/S34/S46) solo no chocaban porque
++ * usan semanas distintas, y eso no es una garantia. Llevan el nivel ademas
+  * del idioma porque un mismo idioma puede tener mas de un nivel con
+  * calendario propio (ingles B2 y C1 en 2026), y la semana de repaso o
+  * Survival de cada nivel es contenido distinto, no el mismo texto para los
+@@ -163,6 +164,6 @@ fun resolverContenidoDeLaSemana(
+ private fun idDeEntrada(entrada: EntradaCalendario, idioma: Idioma, nivel: Nivel, anio: Int): String =
+     when (entrada.tipo) {
+         TipoSemana.CONTENT -> "${entrada.skillId}-${nivel.name}-${anio}-${entrada.order}"
+-        TipoSemana.REVIEW -> "REVIEW-${idioma.name}-${nivel.name}-S${entrada.semana}"
+-        TipoSemana.SURVIVAL -> "SURVIVAL-${idioma.name}-${nivel.name}-S${entrada.semana}"
++        TipoSemana.REVIEW -> "REVIEW-${idioma.name}-${nivel.name}-${anio}-S${entrada.semana}"
++        TipoSemana.SURVIVAL -> "SURVIVAL-${idioma.name}-${nivel.name}-${anio}-S${entrada.semana}"
+     }
+diff --git a/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt b/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt
+index 82fc1824..da292710 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt
+@@ -106,7 +106,7 @@ fun ContenidoSemanalScreen(
+ ) {
+     when (contenido) {
+         is Ficha -> FichaContenido(contenido, idiomaBase, modifier)
+-        is SemanaEspecial -> SemanaEspecialContenido(contenido, modifier)
++        is SemanaEspecial -> SemanaEspecialContenido(contenido, idiomaBase, modifier)
+     }
+ }
+ 
+@@ -200,13 +200,15 @@ private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier
+ }
+ 
+ @Composable
+-private fun SemanaEspecialContenido(especial: SemanaEspecial, modifier: Modifier = Modifier) = SelectionContainer {
++private fun SemanaEspecialContenido(especial: SemanaEspecial, idiomaBase: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
++    // Campos bilingues (A2/B1): idioma base del usuario, y el que se aprende si falta esa clave.
++    val t: (TextoBilingue) -> String = { it.resolver(idiomaBase, especial.idioma) }
+     Column(
+         modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
+         verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
+     ) {
+         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+-            Text(especial.titulo, style = MaterialTheme.typography.headlineSmall)
++            Text(t(especial.titulo), style = MaterialTheme.typography.headlineSmall)
+             val minutos = especial.minutosEstimados?.let { " · $it min" } ?: ""
+             Text(
+                 "${etiquetaClase(especial.clase)} · semana ${especial.semana}$minutos",
+@@ -215,21 +217,21 @@ private fun SemanaEspecialContenido(especial: SemanaEspecial, modifier: Modifier
+             )
+         }
+ 
+-        Text(textoConMarcado(especial.consigna), style = MaterialTheme.typography.bodyLarge)
++        Text(textoConMarcado(t(especial.consigna)), style = MaterialTheme.typography.bodyLarge)
+ 
+         especial.requisitos?.takeIf { it.isNotEmpty() }?.let { requisitos ->
+-            Seccion(etiquetaSeccion("requisitos", especial.idioma, bilingue = false)) { requisitos.forEach { Vinieta(it) } }
++            Seccion(etiquetaSeccion("requisitos", especial.idioma, bilingue = false)) { requisitos.forEach { Vinieta(t(it)) } }
+         }
+ 
+         especial.microtareas?.takeIf { it.isNotEmpty() }?.let { tareas ->
+-            Seccion(etiquetaSeccion("microtareas", especial.idioma, bilingue = false)) { tareas.forEach { Vinieta(it) } }
++            Seccion(etiquetaSeccion("microtareas", especial.idioma, bilingue = false)) { tareas.forEach { Vinieta(t(it)) } }
+         }
+ 
+         Seccion(etiquetaSeccion("autochequeo", especial.idioma, bilingue = false)) {
+-            especial.autochequeo.forEach { Vinieta(it) }
++            especial.autochequeo.forEach { Vinieta(t(it)) }
+         }
+ 
+-        especial.promptCorreccion.takeIf { it.isNotBlank() }?.let {
++        t(especial.promptCorreccion).takeIf { it.isNotBlank() }?.let {
+             TarjetaPrompt(it, etiquetaSeccion("promptCorreccion", especial.idioma, bilingue = false))
+         }
+     }
+diff --git a/app/src/main/java/io/github/percati/lenguapp/widget/SemanaGlanceWidget.kt b/app/src/main/java/io/github/percati/lenguapp/widget/SemanaGlanceWidget.kt
+index 8ed866bf..2a25bb97 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/widget/SemanaGlanceWidget.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/widget/SemanaGlanceWidget.kt
+@@ -82,7 +82,7 @@ private fun ContenidoWidget(resultado: ResultadoSemana?, idiomaInterfaz: Idioma,
+                 val (titulo, subtitulo) = when (val contenido = resultado.contenido) {
+                     is Ficha -> contenido.titulo.resolver(idiomaBase, contenido.idioma) to
+                         contenido.subtitulo.resolver(idiomaBase, contenido.idioma)
+-                    is SemanaEspecial -> contenido.titulo to null
++                    is SemanaEspecial -> contenido.titulo.resolver(idiomaBase, contenido.idioma) to null
+                 }
+                 Text(
+                     text = titulo,
+diff --git a/app/src/test/java/io/github/percati/lenguapp/datos/ContenidoAssetsTest.kt b/app/src/test/java/io/github/percati/lenguapp/datos/ContenidoAssetsTest.kt
+index ee71f410..069dd3a9 100644
+--- a/app/src/test/java/io/github/percati/lenguapp/datos/ContenidoAssetsTest.kt
++++ b/app/src/test/java/io/github/percati/lenguapp/datos/ContenidoAssetsTest.kt
+@@ -66,9 +66,9 @@ class ContenidoAssetsTest {
+     @Test
+     fun `las semanas especiales conocidas del piloto cargan como SemanaEspecial`() {
+         val ids = listOf(
+-            "REVIEW-DE-B2-S40", "REVIEW-DE-B2-S48", "SURVIVAL-DE-B2-S44",
+-            "REVIEW-EN-B2-S40", "REVIEW-EN-B2-S48", "SURVIVAL-EN-B2-S44",
+-            "REVIEW-EN-C1-S40", "REVIEW-EN-C1-S48", "SURVIVAL-EN-C1-S44",
++            "REVIEW-DE-B2-2026-S40", "REVIEW-DE-B2-2026-S48", "SURVIVAL-DE-B2-2026-S44",
++            "REVIEW-EN-B2-2026-S40", "REVIEW-EN-B2-2026-S48", "SURVIVAL-EN-B2-2026-S44",
++            "REVIEW-EN-C1-2026-S40", "REVIEW-EN-C1-2026-S48", "SURVIVAL-EN-C1-2026-S44",
+         )
+         for (id in ids) {
+             val archivo = File(carpetaContenido(), "$id.json")
+diff --git a/app/src/test/java/io/github/percati/lenguapp/modelo/TextoBilingueTest.kt b/app/src/test/java/io/github/percati/lenguapp/modelo/TextoBilingueTest.kt
+index 588c6e0c..bd3d5428 100644
+--- a/app/src/test/java/io/github/percati/lenguapp/modelo/TextoBilingueTest.kt
++++ b/app/src/test/java/io/github/percati/lenguapp/modelo/TextoBilingueTest.kt
+@@ -100,6 +100,33 @@ class TextoBilingueTest {
+ 
+     private fun lista(e: JsonElement, f: (JsonElement) -> JsonElement) = JsonArray(e.jsonArray.map(f))
+ 
++    @Test
++    fun `una semana especial acepta sus seis campos como string plano u objeto por idioma`() {
++        val carpeta = listOf(File("src/main/assets"), File("app/src/main/assets")).first { it.isDirectory }
++        val base = jsonContenido.parseToJsonElement(File(carpeta, "contenido/REVIEW-DE-B2-2026-S40.json").readText()).jsonObject
++
++        val plano = parsearContenido(base.toString()) as SemanaEspecial
++        assertEquals(plano.titulo.plano, plano.titulo.resolver(Idioma.ES, plano.idioma))
++
++        val m = base.toMutableMap()
++        m["titulo"] = bilingue(base.getValue("titulo"))
++        m["consigna"] = bilingue(base.getValue("consigna"))
++        m["promptCorreccion"] = bilingue(base.getValue("promptCorreccion"))
++        m["requisitos"] = lista(base.getValue("requisitos")) { bilingue(it) }
++        m["microtareas"] = lista(base.getValue("microtareas")) { bilingue(it) }
++        m["autochequeo"] = lista(base.getValue("autochequeo")) { bilingue(it) }
++        val e = parsearContenido(JsonObject(m).toString()) as SemanaEspecial
++
++        assertTrue(e.titulo.resolver(Idioma.ES, Idioma.DE).startsWith("ES: "))
++        assertTrue(e.consigna.resolver(Idioma.ES, Idioma.DE).startsWith("ES: "))
++        assertTrue(e.promptCorreccion.resolver(Idioma.ES, Idioma.DE).startsWith("ES: "))
++        assertTrue(e.requisitos!!.all { it.resolver(Idioma.ES, Idioma.DE).startsWith("ES: ") })
++        assertTrue(e.microtareas!!.all { it.resolver(Idioma.ES, Idioma.DE).startsWith("ES: ") })
++        assertTrue(e.autochequeo.all { it.resolver(Idioma.ES, Idioma.DE).startsWith("ES: ") })
++        // Sin clave "fr" cae al aleman.
++        assertEquals(plano.titulo.plano, e.titulo.resolver(Idioma.FR, Idioma.DE))
++    }
++
+     @Test
+     fun `una ficha con campos string plano (piloto 2026) sigue funcionando igual`() {
+         val ficha = parsearContenido(jsonPiloto().toString()) as Ficha
+diff --git a/app/src/test/java/io/github/percati/lenguapp/semana/ResolutorSemanaTest.kt b/app/src/test/java/io/github/percati/lenguapp/semana/ResolutorSemanaTest.kt
+index 096f5de9..4bf2e78e 100644
+--- a/app/src/test/java/io/github/percati/lenguapp/semana/ResolutorSemanaTest.kt
++++ b/app/src/test/java/io/github/percati/lenguapp/semana/ResolutorSemanaTest.kt
+@@ -93,7 +93,7 @@ class ResolutorSemanaTest {
+             contenidoPorId = cargarContenido(),
+         )
+         val encontrado = resultado as? ResultadoSemana.Encontrado ?: error("se esperaba Encontrado, fue $resultado")
+-        assertEquals("REVIEW-DE-B2-S40", (encontrado.contenido as SemanaEspecial).id)
++        assertEquals("REVIEW-DE-B2-2026-S40", (encontrado.contenido as SemanaEspecial).id)
+     }
+ 
+     @Test
+diff --git a/app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenInteraccionTest.kt b/app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenInteraccionTest.kt
+index ed13b182..f69a65d5 100644
+--- a/app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenInteraccionTest.kt
++++ b/app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenInteraccionTest.kt
+@@ -189,7 +189,7 @@ class ContenidoSemanalScreenInteraccionTest {
+     @Test
+     fun `una semana especial sin prompt de correccion no muestra el boton de copiar`() {
+         val carpeta = listOf(File("src/main/assets"), File("app/src/main/assets")).first { it.isDirectory }
+-        val survival = parsearContenido(File(carpeta, "contenido/SURVIVAL-EN-B2-S44.json").readText())
++        val survival = parsearContenido(File(carpeta, "contenido/SURVIVAL-EN-B2-2026-S44.json").readText())
+         composeTestRule.setContent { ContenidoSemanalScreen(survival, idiomaBase = Idioma.ES) }
+ 
+         composeTestRule.onNode(hasText("Copiar al portapapeles", substring = true)).assertDoesNotExist()
+diff --git a/proyecto/FALTANTES.md b/proyecto/FALTANTES.md
+index 7d1ce89b..50b7b5fd 100644
+--- a/proyecto/FALTANTES.md
++++ b/proyecto/FALTANTES.md
+@@ -196,7 +196,7 @@ que aparezca un caso genuinamente distinto a los dos de arriba.
+ 
+ ## 8. Sin dueño todavía
+ 
+-- **Semanas especiales sin soporte multiidioma:** el schema de `semana_especial` usa strings planos, no `{idioma: texto}`. Las 8 semanas de repaso de A2/B1 (2 niveles × 4 semanas) quedan solo en el idioma que se aprende, rodeadas de fichas ya traducidas a los 5 idiomas de app. Es ajuste de schema (Code) + traducción del contenido (Traducciones). Sin dueño todavía.
++- **Semanas especiales sin soporte multiidioma:** ✅ el lado de Code ya está resuelto. `semana-especial.schema.json` acepta `oneOf` string plano u objeto `{idioma: texto}` en sus 6 campos de texto (no obligatorio; B2/C1/C2 siguen monolingües), y los modelos Kotlin (`SemanaEspecial`) y la pantalla ya los resuelven. **Falta solo la traducción del contenido de las semanas de repaso A2/B1 (Traducciones).** Además el id de las semanas especiales ahora lleva año: `REVIEW-DE-B2-2027-S10`, `SURVIVAL-EN-B2-2026-S44` (los 49 archivos de `contenido/nucleos/` se renombraron y `componer.py` ahora los valida contra su schema). Verificado: 522 fichas, 49 semanas especiales, 0 problemas.
+ 
+ ## 9. Piloto 2026
+ 
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-A2-S10.json b/proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S10.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-DE-A2-S10.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S10.json
+index 9010c03d..75169b20 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-A2-S10.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S10.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-A2-S10",
++ "id": "REVIEW-DE-A2-2027-S10",
+  "semana": 10,
+  "idioma": "de",
+  "nivel": "A2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-A2-S22.json b/proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S22.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-DE-A2-S22.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S22.json
+index 8d5a371a..b6946385 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-A2-S22.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S22.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-A2-S22",
++ "id": "REVIEW-DE-A2-2027-S22",
+  "semana": 22,
+  "idioma": "de",
+  "nivel": "A2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-A2-S34.json b/proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S34.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-DE-A2-S34.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S34.json
+index cd769ed6..2ae80eeb 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-A2-S34.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S34.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-A2-S34",
++ "id": "REVIEW-DE-A2-2027-S34",
+  "semana": 34,
+  "idioma": "de",
+  "nivel": "A2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-A2-S46.json b/proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S46.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-DE-A2-S46.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S46.json
+index 70540608..fd60ab8f 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-A2-S46.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-A2-2027-S46.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-A2-S46",
++ "id": "REVIEW-DE-A2-2027-S46",
+  "semana": 46,
+  "idioma": "de",
+  "nivel": "A2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-B1-S10.json b/proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S10.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-DE-B1-S10.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S10.json
+index 76e0a8a3..bf59d56c 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-B1-S10.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S10.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B1-S10",
++ "id": "REVIEW-DE-B1-2027-S10",
+  "semana": 10,
+  "idioma": "de",
+  "nivel": "B1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-B1-S22.json b/proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S22.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-DE-B1-S22.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S22.json
+index b0568519..82b13371 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-B1-S22.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S22.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B1-S22",
++ "id": "REVIEW-DE-B1-2027-S22",
+  "semana": 22,
+  "idioma": "de",
+  "nivel": "B1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-B1-S34.json b/proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S34.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-DE-B1-S34.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S34.json
+index 7c0787c9..2e4b0c83 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-B1-S34.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S34.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B1-S34",
++ "id": "REVIEW-DE-B1-2027-S34",
+  "semana": 34,
+  "idioma": "de",
+  "nivel": "B1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-B1-S46.json b/proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S46.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-DE-B1-S46.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S46.json
+index 5a318fbe..4854b656 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-B1-S46.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-B1-2027-S46.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B1-S46",
++ "id": "REVIEW-DE-B1-2027-S46",
+  "semana": 46,
+  "idioma": "de",
+  "nivel": "B1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-B2-S40.json b/proyecto/contenido/nucleos/REVIEW-DE-B2-2026-S40.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-B2-S40.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-B2-2026-S40.json
+index 98e80963..2c3081be 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-B2-S40.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-B2-2026-S40.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B2-S40",
++ "id": "REVIEW-DE-B2-2026-S40",
+  "semana": 40,
+  "idioma": "de",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-B2-S48.json b/proyecto/contenido/nucleos/REVIEW-DE-B2-2026-S48.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-B2-S48.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-B2-2026-S48.json
+index 24518f44..0d43de6d 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-B2-S48.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-B2-2026-S48.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B2-S48",
++ "id": "REVIEW-DE-B2-2026-S48",
+  "semana": 48,
+  "idioma": "de",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-B2-S10.json b/proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S10.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-B2-S10.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S10.json
+index b2d084e1..baf831f2 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-B2-S10.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S10.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B2-S10",
++ "id": "REVIEW-DE-B2-2027-S10",
+  "semana": 10,
+  "idioma": "de",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-B2-S22.json b/proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S22.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-B2-S22.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S22.json
+index 96fbb8ba..b0406bca 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-B2-S22.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S22.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B2-S22",
++ "id": "REVIEW-DE-B2-2027-S22",
+  "semana": 22,
+  "idioma": "de",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-B2-S34.json b/proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S34.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-B2-S34.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S34.json
+index 99ada586..3b112f30 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-B2-S34.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S34.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B2-S34",
++ "id": "REVIEW-DE-B2-2027-S34",
+  "semana": 34,
+  "idioma": "de",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-B2-S46.json b/proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S46.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-B2-S46.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S46.json
+index 65a90b35..451f3007 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-B2-S46.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-B2-2027-S46.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-B2-S46",
++ "id": "REVIEW-DE-B2-2027-S46",
+  "semana": 46,
+  "idioma": "de",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-C1-S10.json b/proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S10.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-C1-S10.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S10.json
+index 2373671d..87004e90 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-C1-S10.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S10.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-C1-S10",
++ "id": "REVIEW-DE-C1-2027-S10",
+  "semana": 10,
+  "idioma": "de",
+  "nivel": "C1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-C1-S22.json b/proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S22.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-C1-S22.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S22.json
+index d16a19da..60e4bf9b 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-C1-S22.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S22.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-C1-S22",
++ "id": "REVIEW-DE-C1-2027-S22",
+  "semana": 22,
+  "idioma": "de",
+  "nivel": "C1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-C1-S34.json b/proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S34.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-C1-S34.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S34.json
+index 757d41d6..a725133a 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-C1-S34.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S34.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-C1-S34",
++ "id": "REVIEW-DE-C1-2027-S34",
+  "semana": 34,
+  "idioma": "de",
+  "nivel": "C1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-C1-S46.json b/proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S46.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-C1-S46.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S46.json
+index 72f8b227..918e7b8b 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-C1-S46.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-C1-2027-S46.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-C1-S46",
++ "id": "REVIEW-DE-C1-2027-S46",
+  "semana": 46,
+  "idioma": "de",
+  "nivel": "C1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-C2-S10.json b/proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S10.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-C2-S10.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S10.json
+index fcd94d47..3610e2b5 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-C2-S10.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S10.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-C2-S10",
++ "id": "REVIEW-DE-C2-2027-S10",
+  "semana": 10,
+  "idioma": "de",
+  "nivel": "C2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-C2-S22.json b/proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S22.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-C2-S22.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S22.json
+index e61b2a1e..0ea3349e 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-C2-S22.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S22.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-C2-S22",
++ "id": "REVIEW-DE-C2-2027-S22",
+  "semana": 22,
+  "idioma": "de",
+  "nivel": "C2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-C2-S34.json b/proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S34.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-C2-S34.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S34.json
+index d98d1384..7029afd8 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-C2-S34.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S34.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-C2-S34",
++ "id": "REVIEW-DE-C2-2027-S34",
+  "semana": 34,
+  "idioma": "de",
+  "nivel": "C2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-DE-C2-S46.json b/proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S46.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-DE-C2-S46.json
+rename to proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S46.json
+index 8677cc1c..9424ba5a 100644
+--- a/proyecto/contenido/nucleos/REVIEW-DE-C2-S46.json
++++ b/proyecto/contenido/nucleos/REVIEW-DE-C2-2027-S46.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-DE-C2-S46",
++ "id": "REVIEW-DE-C2-2027-S46",
+  "semana": 46,
+  "idioma": "de",
+  "nivel": "C2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-A2-S10.json b/proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S10.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-EN-A2-S10.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S10.json
+index b5e459a2..b1a0603f 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-A2-S10.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S10.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-A2-S10",
++ "id": "REVIEW-EN-A2-2027-S10",
+  "semana": 10,
+  "idioma": "en",
+  "nivel": "A2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-A2-S22.json b/proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S22.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-EN-A2-S22.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S22.json
+index 2a6158e4..adfaefc0 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-A2-S22.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S22.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-A2-S22",
++ "id": "REVIEW-EN-A2-2027-S22",
+  "semana": 22,
+  "idioma": "en",
+  "nivel": "A2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-A2-S34.json b/proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S34.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-EN-A2-S34.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S34.json
+index e994d8d3..12145732 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-A2-S34.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S34.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-A2-S34",
++ "id": "REVIEW-EN-A2-2027-S34",
+  "semana": 34,
+  "idioma": "en",
+  "nivel": "A2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-A2-S46.json b/proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S46.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-EN-A2-S46.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S46.json
+index f8743419..e05cdbb0 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-A2-S46.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-A2-2027-S46.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-A2-S46",
++ "id": "REVIEW-EN-A2-2027-S46",
+  "semana": 46,
+  "idioma": "en",
+  "nivel": "A2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-B1-S10.json b/proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S10.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-EN-B1-S10.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S10.json
+index 6495b0b9..505efb36 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-B1-S10.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S10.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B1-S10",
++ "id": "REVIEW-EN-B1-2027-S10",
+  "semana": 10,
+  "idioma": "en",
+  "nivel": "B1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-B1-S22.json b/proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S22.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-EN-B1-S22.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S22.json
+index 32e30529..67f53a99 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-B1-S22.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S22.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B1-S22",
++ "id": "REVIEW-EN-B1-2027-S22",
+  "semana": 22,
+  "idioma": "en",
+  "nivel": "B1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-B1-S34.json b/proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S34.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-EN-B1-S34.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S34.json
+index 55019e99..60f5c00e 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-B1-S34.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S34.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B1-S34",
++ "id": "REVIEW-EN-B1-2027-S34",
+  "semana": 34,
+  "idioma": "en",
+  "nivel": "B1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-B1-S46.json b/proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S46.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/REVIEW-EN-B1-S46.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S46.json
+index 1d8733ca..15106d0c 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-B1-S46.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-B1-2027-S46.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B1-S46",
++ "id": "REVIEW-EN-B1-2027-S46",
+  "semana": 46,
+  "idioma": "en",
+  "nivel": "B1",
+diff --git a/app/src/main/assets/contenido/REVIEW-EN-B2-S40.json b/proyecto/contenido/nucleos/REVIEW-EN-B2-2026-S40.json
+similarity index 97%
+rename from app/src/main/assets/contenido/REVIEW-EN-B2-S40.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-B2-2026-S40.json
+index 6d97f58c..8859d4f7 100644
+--- a/app/src/main/assets/contenido/REVIEW-EN-B2-S40.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-B2-2026-S40.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B2-S40",
++ "id": "REVIEW-EN-B2-2026-S40",
+  "semana": 40,
+  "idioma": "en",
+  "nivel": "B2",
+diff --git a/app/src/main/assets/contenido/REVIEW-EN-B2-S48.json b/proyecto/contenido/nucleos/REVIEW-EN-B2-2026-S48.json
+similarity index 98%
+rename from app/src/main/assets/contenido/REVIEW-EN-B2-S48.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-B2-2026-S48.json
+index e01c4b33..4e69788d 100644
+--- a/app/src/main/assets/contenido/REVIEW-EN-B2-S48.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-B2-2026-S48.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B2-S48",
++ "id": "REVIEW-EN-B2-2026-S48",
+  "semana": 48,
+  "idioma": "en",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-B2-S10.json b/proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S10.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-B2-S10.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S10.json
+index 1cab0bd7..88c6255e 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-B2-S10.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S10.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B2-S10",
++ "id": "REVIEW-EN-B2-2027-S10",
+  "semana": 10,
+  "idioma": "en",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-B2-S22.json b/proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S22.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-B2-S22.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S22.json
+index dddb0a81..d2bf61cc 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-B2-S22.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S22.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B2-S22",
++ "id": "REVIEW-EN-B2-2027-S22",
+  "semana": 22,
+  "idioma": "en",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-B2-S34.json b/proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S34.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-B2-S34.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S34.json
+index 9e3b7d04..3cd1edf6 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-B2-S34.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S34.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B2-S34",
++ "id": "REVIEW-EN-B2-2027-S34",
+  "semana": 34,
+  "idioma": "en",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-B2-S46.json b/proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S46.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-B2-S46.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S46.json
+index 80b4b809..d8d3ce27 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-B2-S46.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-B2-2027-S46.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-B2-S46",
++ "id": "REVIEW-EN-B2-2027-S46",
+  "semana": 46,
+  "idioma": "en",
+  "nivel": "B2",
+diff --git a/app/src/main/assets/contenido/REVIEW-EN-C1-S40.json b/proyecto/contenido/nucleos/REVIEW-EN-C1-2026-S40.json
+similarity index 98%
+rename from app/src/main/assets/contenido/REVIEW-EN-C1-S40.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-C1-2026-S40.json
+index c67fce4c..fb43b06b 100644
+--- a/app/src/main/assets/contenido/REVIEW-EN-C1-S40.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-C1-2026-S40.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C1-S40",
++ "id": "REVIEW-EN-C1-2026-S40",
+  "semana": 40,
+  "idioma": "en",
+  "nivel": "C1",
+diff --git a/app/src/main/assets/contenido/REVIEW-EN-C1-S48.json b/proyecto/contenido/nucleos/REVIEW-EN-C1-2026-S48.json
+similarity index 98%
+rename from app/src/main/assets/contenido/REVIEW-EN-C1-S48.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-C1-2026-S48.json
+index e9c744e4..3a2683ef 100644
+--- a/app/src/main/assets/contenido/REVIEW-EN-C1-S48.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-C1-2026-S48.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C1-S48",
++ "id": "REVIEW-EN-C1-2026-S48",
+  "semana": 48,
+  "idioma": "en",
+  "nivel": "C1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-C1-S10.json b/proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S10.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-C1-S10.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S10.json
+index e7536930..450b3c6d 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-C1-S10.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S10.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C1-S10",
++ "id": "REVIEW-EN-C1-2027-S10",
+  "semana": 10,
+  "idioma": "en",
+  "nivel": "C1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-C1-S22.json b/proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S22.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-C1-S22.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S22.json
+index 1c130179..01307fb3 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-C1-S22.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S22.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C1-S22",
++ "id": "REVIEW-EN-C1-2027-S22",
+  "semana": 22,
+  "idioma": "en",
+  "nivel": "C1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-C1-S34.json b/proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S34.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-C1-S34.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S34.json
+index 04595730..47c1dbf2 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-C1-S34.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S34.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C1-S34",
++ "id": "REVIEW-EN-C1-2027-S34",
+  "semana": 34,
+  "idioma": "en",
+  "nivel": "C1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-C1-S46.json b/proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S46.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-C1-S46.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S46.json
+index 36ba032f..f87be99b 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-C1-S46.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-C1-2027-S46.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C1-S46",
++ "id": "REVIEW-EN-C1-2027-S46",
+  "semana": 46,
+  "idioma": "en",
+  "nivel": "C1",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-C2-S10.json b/proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S10.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-C2-S10.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S10.json
+index 7d1f59c4..41a7215d 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-C2-S10.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S10.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C2-S10",
++ "id": "REVIEW-EN-C2-2027-S10",
+  "semana": 10,
+  "idioma": "en",
+  "nivel": "C2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-C2-S22.json b/proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S22.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-C2-S22.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S22.json
+index 75d59183..3557417a 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-C2-S22.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S22.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C2-S22",
++ "id": "REVIEW-EN-C2-2027-S22",
+  "semana": 22,
+  "idioma": "en",
+  "nivel": "C2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-C2-S34.json b/proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S34.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-C2-S34.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S34.json
+index 7bc86a11..76795bdf 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-C2-S34.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S34.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C2-S34",
++ "id": "REVIEW-EN-C2-2027-S34",
+  "semana": 34,
+  "idioma": "en",
+  "nivel": "C2",
+diff --git a/proyecto/contenido/nucleos/REVIEW-EN-C2-S46.json b/proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S46.json
+similarity index 98%
+rename from proyecto/contenido/nucleos/REVIEW-EN-C2-S46.json
+rename to proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S46.json
+index 28a2e767..cd0731f9 100644
+--- a/proyecto/contenido/nucleos/REVIEW-EN-C2-S46.json
++++ b/proyecto/contenido/nucleos/REVIEW-EN-C2-2027-S46.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "REVIEW-EN-C2-S46",
++ "id": "REVIEW-EN-C2-2027-S46",
+  "semana": 46,
+  "idioma": "en",
+  "nivel": "C2",
+diff --git a/proyecto/contenido/nucleos/SURVIVAL-DE-B2-S44.json b/proyecto/contenido/nucleos/SURVIVAL-DE-B2-2026-S44.json
+similarity index 97%
+rename from proyecto/contenido/nucleos/SURVIVAL-DE-B2-S44.json
+rename to proyecto/contenido/nucleos/SURVIVAL-DE-B2-2026-S44.json
+index 7a8fda5a..350f6d4b 100644
+--- a/proyecto/contenido/nucleos/SURVIVAL-DE-B2-S44.json
++++ b/proyecto/contenido/nucleos/SURVIVAL-DE-B2-2026-S44.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "SURVIVAL-DE-B2-S44",
++ "id": "SURVIVAL-DE-B2-2026-S44",
+  "semana": 44,
+  "idioma": "de",
+  "nivel": "B2",
+diff --git a/app/src/main/assets/contenido/SURVIVAL-EN-B2-S44.json b/proyecto/contenido/nucleos/SURVIVAL-EN-B2-2026-S44.json
+similarity index 96%
+rename from app/src/main/assets/contenido/SURVIVAL-EN-B2-S44.json
+rename to proyecto/contenido/nucleos/SURVIVAL-EN-B2-2026-S44.json
+index aff9a4e2..c2714405 100644
+--- a/app/src/main/assets/contenido/SURVIVAL-EN-B2-S44.json
++++ b/proyecto/contenido/nucleos/SURVIVAL-EN-B2-2026-S44.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "SURVIVAL-EN-B2-S44",
++ "id": "SURVIVAL-EN-B2-2026-S44",
+  "semana": 44,
+  "idioma": "en",
+  "nivel": "B2",
+diff --git a/proyecto/contenido/nucleos/SURVIVAL-EN-C1-S44.json b/proyecto/contenido/nucleos/SURVIVAL-EN-C1-2026-S44.json
+similarity index 96%
+rename from proyecto/contenido/nucleos/SURVIVAL-EN-C1-S44.json
+rename to proyecto/contenido/nucleos/SURVIVAL-EN-C1-2026-S44.json
+index 4ad85af3..8c3352bf 100644
+--- a/proyecto/contenido/nucleos/SURVIVAL-EN-C1-S44.json
++++ b/proyecto/contenido/nucleos/SURVIVAL-EN-C1-2026-S44.json
+@@ -1,6 +1,6 @@
+ {
+  "_tipo": "semana_especial",
+- "id": "SURVIVAL-EN-C1-S44",
++ "id": "SURVIVAL-EN-C1-2026-S44",
+  "semana": 44,
+  "idioma": "en",
+  "nivel": "C1",
+diff --git a/proyecto/schema/semana-especial.schema.json b/proyecto/schema/semana-especial.schema.json
+index c9fef947..6fb6a8ba 100644
+--- a/proyecto/schema/semana-especial.schema.json
++++ b/proyecto/schema/semana-especial.schema.json
+@@ -1,7 +1,7 @@
+ {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "title": "Semana especial (Review / Survival)",
+-  "description": "Las semanas de integracion no tienen skill ni topic, asi que no encajan en ficha.schema.json. Forzarlas ahi exigiria hacer opcionales casi todos los campos obligatorios y el schema perderia su funcion.",
++  "description": "Las semanas de integracion no tienen skill ni topic, asi que no encajan en ficha.schema.json. Forzarlas ahi exigiria hacer opcionales casi todos los campos obligatorios y el schema perderia su funcion. En A2/B1 (bilingue) los seis campos de texto (titulo, consigna, requisitos[], microtareas[], autochequeo[], promptCorreccion) pueden ser {idioma: texto} en vez de un string plano, con el mismo patron oneOf que ficha.schema.json (ver su $comment, 'campos bilingues A2/B1'): propertyNames limitado a es/en/de/fr/it/pt y minProperties 1. No es obligatorio: B2/C1/C2 siguen monolingues y las semanas A2/B1 actuales siguen siendo string plano.",
+   "type": "object",
+   "additionalProperties": false,
+   "required": [
+@@ -22,8 +22,8 @@
+     },
+     "id": {
+       "type": "string",
+-      "pattern": "^(REVIEW|SURVIVAL)-(EN|DE|ES|FR|IT|PT)-[ABC][12]-S\\d{1,2}$",
+-      "description": "Incluye el NIVEL. Sin el, compilar el segundo nivel de un idioma pisa en silencio el archivo del primero: paso de verdad al agregar ingles B2."
++      "pattern": "^(REVIEW|SURVIVAL)-(EN|DE|ES|FR|IT|PT)-[ABC][12]-\\d{4}-S\\d{1,2}$",
++      "description": "Incluye el NIVEL y el ANIO. Sin el nivel, compilar el segundo nivel de un idioma pisa en silencio el archivo del primero (paso de verdad al agregar ingles B2). Sin el anio, el piloto 2026 (S40/S44/S48) y 2027 (S10/S22/S34/S46) solo no chocan porque usan semanas distintas: no es una garantia. Mismo criterio que el id de ficha (skillId-nivel-anio-order). Ej: REVIEW-DE-B2-2027-S10."
+     },
+     "semana": {
+       "type": "integer",
+@@ -47,7 +47,28 @@
+       ]
+     },
+     "titulo": {
+-      "type": "string"
++      "oneOf": [
++        {
++          "type": "string"
++        },
++        {
++          "type": "object",
++          "propertyNames": {
++            "enum": [
++              "es",
++              "en",
++              "de",
++              "fr",
++              "it",
++              "pt"
++            ]
++          },
++          "additionalProperties": {
++            "type": "string"
++          },
++          "minProperties": 1
++        }
++      ]
+     },
+     "minutosEstimados": {
+       "type": "integer",
+@@ -55,18 +76,81 @@
+       "maximum": 240
+     },
+     "consigna": {
+-      "type": "string"
++      "oneOf": [
++        {
++          "type": "string"
++        },
++        {
++          "type": "object",
++          "propertyNames": {
++            "enum": [
++              "es",
++              "en",
++              "de",
++              "fr",
++              "it",
++              "pt"
++            ]
++          },
++          "additionalProperties": {
++            "type": "string"
++          },
++          "minProperties": 1
++        }
++      ]
+     },
+     "requisitos": {
+       "type": "array",
+       "items": {
+-        "type": "string"
++        "oneOf": [
++          {
++            "type": "string"
++          },
++          {
++            "type": "object",
++            "propertyNames": {
++              "enum": [
++                "es",
++                "en",
++                "de",
++                "fr",
++                "it",
++                "pt"
++              ]
++            },
++            "additionalProperties": {
++              "type": "string"
++            },
++            "minProperties": 1
++          }
++        ]
+       }
+     },
+     "microtareas": {
+       "type": "array",
+       "items": {
+-        "type": "string"
++        "oneOf": [
++          {
++            "type": "string"
++          },
++          {
++            "type": "object",
++            "propertyNames": {
++              "enum": [
++                "es",
++                "en",
++                "de",
++                "fr",
++                "it",
++                "pt"
++              ]
++            },
++            "additionalProperties": {
++              "type": "string"
++            },
++            "minProperties": 1
++          }
++        ]
+       }
+     },
+     "autochequeo": {
+@@ -74,11 +158,53 @@
+       "minItems": 1,
+       "maxItems": 5,
+       "items": {
+-        "type": "string"
++        "oneOf": [
++          {
++            "type": "string"
++          },
++          {
++            "type": "object",
++            "propertyNames": {
++              "enum": [
++                "es",
++                "en",
++                "de",
++                "fr",
++                "it",
++                "pt"
++              ]
++            },
++            "additionalProperties": {
++              "type": "string"
++            },
++            "minProperties": 1
++          }
++        ]
+       }
+     },
+     "promptCorreccion": {
+-      "type": "string"
++      "oneOf": [
++        {
++          "type": "string"
++        },
++        {
++          "type": "object",
++          "propertyNames": {
++            "enum": [
++              "es",
++              "en",
++              "de",
++              "fr",
++              "it",
++              "pt"
++            ]
++          },
++          "additionalProperties": {
++            "type": "string"
++          },
++          "minProperties": 1
++        }
++      ]
+     },
+     "nivel": {
+       "enum": [
+diff --git a/proyecto/tools/componer.py b/proyecto/tools/componer.py
+index c89664a1..85758933 100644
+--- a/proyecto/tools/componer.py
++++ b/proyecto/tools/componer.py
+@@ -36,11 +36,16 @@ def main():
+     base, out = Path(a.contenido), Path(a.salida)
+     out.mkdir(parents=True, exist_ok=True)
+ 
+-    val = None
++    val = val_esp = None
+     if a.schema:
+         import jsonschema
+         val = jsonschema.Draft202012Validator(
+             json.loads(Path(a.schema).read_text(encoding="utf-8")))
++        # Las semanas especiales tienen su propio schema, junto al de ficha.
++        esp = Path(a.schema).with_name("semana-especial.schema.json")
++        if esp.exists():
++            val_esp = jsonschema.Draft202012Validator(
++                json.loads(esp.read_text(encoding="utf-8")))
+ 
+     nucleos, packs = {}, {}
+     especiales = []
+@@ -100,6 +105,13 @@ def main():
+             n += 1
+ 
+     for d in especiales:
++        if val_esp:
++            errs = list(val_esp.iter_errors(d))
++            if errs:
++                print(f"  ! {d.get('id')}: {list(errs[0].path)} {errs[0].message[:70]}",
++                      file=sys.stderr)
++                fallos += 1
++                continue
+         if d["id"] in vistos:
+             print(f"  ! id duplicado {d['id']}: semana especial y {vistos[d['id']]}",
+                   file=sys.stderr)
+-- 
+2.55.0.windows.5
+

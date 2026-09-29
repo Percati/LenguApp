@@ -1,0 +1,1747 @@
+From 80b4aacf80b3526fd05949c8b578c3212106c80c Mon Sep 17 00:00:00 2001
+From: FerP <fernandopercat@gmail.com>
+Date: Sun, 27 Sep 2026 21:55:42 +0200
+Subject: [PATCH] Code: switch de traduccion en vivo, desafio de fin de semana,
+ seccion Guardados
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Tres features de UI, sin tocar contenido ni schemas.
+
+Feature 1 -- switch de traduccion en vivo: dentro de la ficha, fuera del
+scroll (siempre visible). Solo en fichas bilingues (A2/B1). Estado local, no
+persistido -- arranca siempre en idiomaBase, se resetea al cambiar de ficha.
+Afecta todos los campos TextoBilingue mas contraste/erroresContrastivos.
+
+Feature 2 -- desafio de fin de semana: esFinDeSemana() (sabado 00:00 a
+domingo 23:59 hora local) en ResolutorSemana.kt. Switch propio (chip, no el
+mismo componente que el de traduccion), solo visible en esa ventana, arranca
+siempre en off (CLAUDE.md regla dura #13). Actívalo y reemplaza el contenido
+normal por la mision de la ficha bajo "Desafio de fin de semana" --
+mecanismo, la redaccion final queda para otra conversacion de contenido.
+
+Feature 3 -- Guardados: TipoGuardado/ItemGuardado (modelo/Guardados.kt),
+Room (datos/GuardadosDb.kt) y GuardadosScreen.kt con filtro por idioma (uno
+a la vez), nivel y tipo. Estrella junto a cada item de vocabulario/Redemittel
+(toggle sin confirmacion). Tocar una fila abre la ficha de origen si esa
+edicion sigue embebida (busqueda por skillId+idioma+nivel, no id completo:
+el modelo no guarda order/anio). Es la unica persistencia de datos de
+usuario de toda la app -- excepcion documentada a CLAUDE.md regla dura #4
+en los dos CLAUDE.md (root y proyecto/).
+
+Agrega Room + KSP (build.gradle.kts, root y app). Nota de entorno anotada en
+FALTANTES.md: el JRE de esta maquina no trae jlink, hace falta apuntar
+JAVA_HOME al JDK completo para compilar con KSP.
+
+Tests nuevos: esFinDeSemana, RepositorioGuardados (Room en memoria),
+GuardadosScreen (filtro por idioma, guardar/quitar se refleja en la lista),
+switch de traduccion y desafio (incluyendo que ninguno persiste entre
+"aperturas" simuladas con key()). 211 tests en testDebugUnitTest (antes
+197), 0 fallas. compileDebugKotlin compileDebugUnitTestKotlin test: limpio.
+assembleDebug: limpio, APK generado para que Fer la prueble.
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+---
+ CLAUDE.md                                     |   2 +-
+ app/build.gradle.kts                          |   9 +
+ .../github/percati/lenguapp/MainActivity.kt   | 114 ++++++-
+ .../percati/lenguapp/datos/GuardadosDb.kt     | 135 ++++++++
+ .../percati/lenguapp/modelo/Guardados.kt      |  57 ++++
+ .../lenguapp/semana/ResolutorSemana.kt        |  10 +
+ .../lenguapp/ui/ContenidoSemanalScreen.kt     | 321 ++++++++++++++----
+ .../percati/lenguapp/ui/EtiquetasSeccion.kt   |   6 +
+ .../percati/lenguapp/ui/GuardadosScreen.kt    | 163 +++++++++
+ .../percati/lenguapp/ui/TextosInterfaz.kt     |  64 ++++
+ .../datos/RepositorioGuardadosTest.kt         |  72 ++++
+ .../lenguapp/semana/ResolutorSemanaTest.kt    |  14 +
+ .../ui/ContenidoSemanalScreenFeaturesTest.kt  | 143 ++++++++
+ .../lenguapp/ui/GuardadosScreenTest.kt        | 113 ++++++
+ build.gradle.kts                              |   2 +
+ proyecto/CLAUDE.md                            |   2 +-
+ proyecto/FALTANTES.md                         |  37 ++
+ 17 files changed, 1189 insertions(+), 75 deletions(-)
+ create mode 100644 app/src/main/java/io/github/percati/lenguapp/datos/GuardadosDb.kt
+ create mode 100644 app/src/main/java/io/github/percati/lenguapp/modelo/Guardados.kt
+ create mode 100644 app/src/main/java/io/github/percati/lenguapp/ui/GuardadosScreen.kt
+ create mode 100644 app/src/test/java/io/github/percati/lenguapp/datos/RepositorioGuardadosTest.kt
+ create mode 100644 app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenFeaturesTest.kt
+ create mode 100644 app/src/testDebug/java/io/github/percati/lenguapp/ui/GuardadosScreenTest.kt
+
+diff --git a/CLAUDE.md b/CLAUDE.md
+index 29e740fc..4454348a 100644
+--- a/CLAUDE.md
++++ b/CLAUDE.md
+@@ -8,7 +8,7 @@ El brief completo está en `proyecto/PROMPT-CLAUDE-CODE.md`.
+ 1. **Nunca agregar el permiso `INTERNET` al manifiesto.** Es la prueba verificable de que la app no puede rastrear nada. Si algo parece necesitar red, no se hace.
+ 2. Los únicos datos que se leen del dispositivo son **la fecha** y, **si el usuario lo elige explícitamente**, el idioma del sistema. Nada sale del dispositivo. (La formulación original decía solo "la fecha"; se enmendó al agregar la opción "Idioma del sistema" — ver `AJUSTES-FASE-6.md`, bloque E. Una regla dura que se incumple en silencio deja de ser una regla.)
+ 3. Sin Google Play Services, Firebase, analítica, informes de fallos ni SDK de terceros.
+-4. **Sin persistencia de progreso.** Modo revista: manda la fecha. No implementarla aunque parezca una mejora obvia.
++4. **Sin persistencia de progreso.** Modo revista: manda la fecha. No implementarla aunque parezca una mejora obvia. (Excepcion unica y documentada, sept 2026: **Guardados** persiste en Room que vocabulario/expresiones marco el usuario -- ver `app/src/main/java/io/github/percati/lenguapp/datos/GuardadosDb.kt`. No es progreso pedagogico -- no dice que aprendio ni que le falta, es una lista de referencia que el usuario arma a mano, item por item -- asi que no compite con "modo revista": la semana que corresponde la sigue mandando la fecha, nunca un guardado. Es la unica tabla de datos de usuario en toda la app.)
+ 5. Semanas **ISO 8601** con la API nativa (`IsoFields.WEEK_OF_WEEK_BASED_YEAR`). Nunca a mano.
+ 6. `uiLanguage` y `baseLanguage` son **dos campos distintos en los datos**, aunque en la pantalla de ajustes se presenten como uno solo. No fusionarlos en el modelo: el día que alguien quiera interfaz en un idioma y glosas en otro, se desdobla el ajuste sin migrar datos.
+ 9. Los nombres de campo (`uiLanguage`, `baseLanguage`, `challengeType`…) **nunca aparecen en texto visible al usuario**.
+diff --git a/app/build.gradle.kts b/app/build.gradle.kts
+index 505bc85f..c6d39e53 100644
+--- a/app/build.gradle.kts
++++ b/app/build.gradle.kts
+@@ -5,6 +5,7 @@ plugins {
+     kotlin("android")
+     kotlin("plugin.serialization")
+     kotlin("plugin.compose")
++    id("com.google.devtools.ksp")
+ }
+ 
+ android {
+@@ -75,6 +76,14 @@ dependencies {
+     implementation("androidx.glance:glance-appwidget:1.1.1")
+     implementation("androidx.glance:glance-material3:1.1.1")
+ 
++    // Guardados (feature 3): la unica persistencia de datos de usuario de la
++    // app, y es una excepcion documentada a CLAUDE.md regla dura #4 -- son
++    // marcadores de referencia, no progreso pedagogico. Ver CLAUDE.md.
++    implementation("androidx.room:room-runtime:2.6.1")
++    implementation("androidx.room:room-ktx:2.6.1")
++    ksp("androidx.room:room-compiler:2.6.1")
++    implementation("androidx.compose.material:material-icons-extended")
++
+     testImplementation("junit:junit:4.13.2")
+     // Para testear la pantalla de Compose sin emulador: Robolectric la
+     // renderiza en la JVM. Los tests en src/testDebug/ (ui-test-manifest es
+diff --git a/app/src/main/java/io/github/percati/lenguapp/MainActivity.kt b/app/src/main/java/io/github/percati/lenguapp/MainActivity.kt
+index 981c5ce5..d6d532f4 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/MainActivity.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/MainActivity.kt
+@@ -37,16 +37,26 @@ import androidx.compose.ui.Modifier
+ import androidx.compose.ui.platform.LocalContext
+ import androidx.compose.ui.text.style.TextAlign
+ import androidx.compose.ui.unit.dp
++import androidx.compose.runtime.LaunchedEffect
++import androidx.compose.runtime.rememberCoroutineScope
+ import androidx.navigation.compose.NavHost
+ import androidx.navigation.compose.composable
+ import androidx.navigation.compose.rememberNavController
+ import io.github.percati.lenguapp.datos.cargarAjustes
++import io.github.percati.lenguapp.datos.cargarContenidoDesdeAssets
+ import io.github.percati.lenguapp.datos.guardarAjustes
+ import io.github.percati.lenguapp.datos.nombresCalendarioDisponibles
+ import io.github.percati.lenguapp.datos.resolverSemana
++import io.github.percati.lenguapp.datos.RepositorioGuardados
+ import io.github.percati.lenguapp.modelo.Ajustes
++import io.github.percati.lenguapp.modelo.ContenidoSemanal
++import io.github.percati.lenguapp.modelo.Ficha
+ import io.github.percati.lenguapp.modelo.Idioma
++import io.github.percati.lenguapp.modelo.ItemGuardado
+ import io.github.percati.lenguapp.modelo.Nivel
++import io.github.percati.lenguapp.modelo.TextoBilingue
++import io.github.percati.lenguapp.modelo.TipoGuardado
++import io.github.percati.lenguapp.modelo.resolver
+ import io.github.percati.lenguapp.presentacion.idiomaAplicacionEfectivo
+ import io.github.percati.lenguapp.semana.ResultadoSemana
+ import io.github.percati.lenguapp.semana.SemanaIso
+@@ -54,17 +64,26 @@ import io.github.percati.lenguapp.semana.idiomasConContenido
+ import io.github.percati.lenguapp.semana.nivelesConContenido
+ import io.github.percati.lenguapp.semana.semanaIsoDe
+ import io.github.percati.lenguapp.ui.AjustesScreen
++import io.github.percati.lenguapp.ui.ContenidoSemanalScreen
++import io.github.percati.lenguapp.ui.EstadoGuardados
++import io.github.percati.lenguapp.ui.GuardadosScreen
+ import io.github.percati.lenguapp.ui.PantallaSemana
+ import io.github.percati.lenguapp.ui.TemaLenguApp
++import io.github.percati.lenguapp.ui.claveGuardado
+ import io.github.percati.lenguapp.ui.etiquetaAjustes
++import io.github.percati.lenguapp.ui.etiquetaGuardados
+ import io.github.percati.lenguapp.ui.etiquetaHoy
+ import io.github.percati.lenguapp.ui.etiquetaSemana
++import io.github.percati.lenguapp.ui.etiquetaVolver
+ import io.github.percati.lenguapp.ui.mensajeDobleAtrasParaSalir
++import kotlinx.coroutines.launch
+ import java.time.LocalDate
+ import java.util.Locale
+ 
+ private const val DESTINO_PRINCIPAL = "principal"
+ private const val DESTINO_AJUSTES = "ajustes"
++private const val DESTINO_GUARDADOS = "guardados"
++private const val DESTINO_FICHA_GUARDADA = "ficha_guardada"
+ private const val VENTANA_DOBLE_ATRAS_MS = 3000L
+ 
+ /**
+@@ -81,11 +100,18 @@ class MainActivity : ComponentActivity() {
+         val nombresCalendario = nombresCalendarioDisponibles(this)
+         val idiomasConContenido = idiomasConContenido(nombresCalendario)
+         val nivelesConContenido = nivelesConContenido(nombresCalendario)
++        // Cargado una sola vez: Guardados necesita poder buscar la ficha de
++        // origen de un item por skillId sin pasar por el calendario (ver
++        // "tocar una fila lleva de vuelta a la ficha de origen").
++        val contenidoTodos = cargarContenidoDesdeAssets(this)
++        val repositorioGuardados = RepositorioGuardados(this)
+         setContent {
+             LenguAppApp(
+                 ajustesIniciales = ajustesIniciales,
+                 idiomasConContenido = idiomasConContenido,
+                 nivelesConContenido = nivelesConContenido,
++                contenidoTodos = contenidoTodos,
++                repositorioGuardados = repositorioGuardados,
+                 resolver = { idioma, nivel, fecha -> resolverSemana(this, idioma, nivel, fecha) },
+                 onGuardarAjustes = { guardarAjustes(this, it) },
+             )
+@@ -107,13 +133,46 @@ internal fun LenguAppApp(
+     // reflejar la fecha inicial real, no una fecha distinta escondida
+     // detras de un resolutor con trampa).
+     fechaInicial: LocalDate = LocalDate.now(),
++    // Guardados (feature 3): todo el contenido embebido, para poder buscar
++    // la ficha de origen de un item guardado por skillId sin pasar por el
++    // calendario. `repositorioGuardados` en null desactiva la feature entera
++    // (estrellas sin efecto, Guardados vacio) -- asi los tests que no la
++    // ejercitan no necesitan levantar Room.
++    contenidoTodos: List<ContenidoSemanal> = emptyList(),
++    repositorioGuardados: RepositorioGuardados? = null,
+ ) {
+     var ajustes by remember { mutableStateOf(ajustesIniciales) }
+     var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
+     var idiomaActivoElegido by rememberSaveable { mutableStateOf<String?>(null) }
++    var fichaGuardadaAbiertaId by rememberSaveable { mutableStateOf<String?>(null) }
+     val fechaVista = remember(fechaVistaIso) { LocalDate.parse(fechaVistaIso) }
+     val navController = rememberNavController()
+ 
++    var guardadosTodos by remember { mutableStateOf<List<ItemGuardado>>(emptyList()) }
++    val scope = rememberCoroutineScope()
++    LaunchedEffect(repositorioGuardados) {
++        guardadosTodos = repositorioGuardados?.listar() ?: emptyList()
++    }
++    fun alternarGuardado(idioma: Idioma, nivel: Nivel, skillId: String, tipo: TipoGuardado, textoOrigen: String, texto: TextoBilingue, funcion: TextoBilingue?) {
++        val repo = repositorioGuardados ?: return
++        scope.launch {
++            repo.alternar(idioma, nivel, tipo, textoOrigen, texto, funcion, skillId)
++            guardadosTodos = repo.listar()
++        }
++    }
++    // Lo que ContenidoSemanalScreen necesita de Guardados para ESTA ficha:
++    // que items ya estan guardados (para la estrella llena) y el callback
++    // de toggle, con skillId/idioma/nivel de la ficha ya capturados.
++    fun estadoGuardadosPara(ficha: Ficha) = EstadoGuardados(
++        guardados = guardadosTodos
++            .filter { it.skillIdOrigen == ficha.skillId }
++            .map { claveGuardado(it.tipo, it.texto.resolver(it.idioma, it.idioma)) }
++            .toSet(),
++        onAlternar = { tipo, textoOrigen, texto, funcion ->
++            alternarGuardado(ficha.idioma, ficha.nivel, ficha.skillId, tipo, textoOrigen, texto, funcion)
++        },
++    )
++
+     // Solo se lee el idioma del dispositivo si el usuario activo "Segun el
+     // sistema" -- CLAUDE.md, regla dura #2 enmendada (AJUSTES-FASE-6.md, E).
+     val codigoIdiomaSistema = remember(ajustes.idiomaSegunSistema) {
+@@ -151,6 +210,8 @@ internal fun LenguAppApp(
+                         onSemanaSiguiente = { fechaVistaIso = fechaVista.plusWeeks(1).toString() },
+                         onHoy = { fechaVistaIso = LocalDate.now().toString() },
+                         onAjustes = { navController.navigate(DESTINO_AJUSTES) },
++                        onGuardados = { navController.navigate(DESTINO_GUARDADOS) },
++                        guardadosDeLaFicha = ::estadoGuardadosPara,
+                     )
+                 }
+                 composable(DESTINO_AJUSTES) {
+@@ -163,6 +224,35 @@ internal fun LenguAppApp(
+                         onVolver = { navController.popBackStack() },
+                     )
+                 }
++                composable(DESTINO_GUARDADOS) {
++                    GuardadosScreen(
++                        items = guardadosTodos,
++                        idiomasAprendidos = ajustes.idiomasAprendidos.keys,
++                        idiomaBase = ajustes.idiomaBase,
++                        idiomaInterfaz = idiomaAplicacion,
++                        existeFichaOrigen = { fichaDeOrigen(contenidoTodos, it) != null },
++                        onAbrirFicha = { item ->
++                            fichaDeOrigen(contenidoTodos, item)?.let { ficha ->
++                                fichaGuardadaAbiertaId = ficha.id
++                                navController.navigate(DESTINO_FICHA_GUARDADA)
++                            }
++                        },
++                        onVolver = { navController.popBackStack() },
++                    )
++                }
++                composable(DESTINO_FICHA_GUARDADA) {
++                    Column(Modifier.fillMaxSize()) {
++                        TextButton(onClick = { navController.popBackStack() }) { Text("< ${etiquetaVolver(idiomaAplicacion)}") }
++                        contenidoTodos.filterIsInstance<Ficha>().firstOrNull { it.id == fichaGuardadaAbiertaId }?.let { ficha ->
++                            ContenidoSemanalScreen(
++                                ficha,
++                                ajustes.idiomaBase,
++                                idiomaInterfaz = idiomaAplicacion,
++                                estadoGuardados = estadoGuardadosPara(ficha),
++                            )
++                        }
++                    }
++                }
+             }
+         }
+     }
+@@ -181,6 +271,8 @@ private fun PantallaPrincipal(
+     onSemanaSiguiente: () -> Unit,
+     onHoy: () -> Unit,
+     onAjustes: () -> Unit,
++    onGuardados: () -> Unit,
++    guardadosDeLaFicha: (Ficha) -> EstadoGuardados,
+ ) {
+     ManejarDobleAtrasParaSalir(idiomaAplicacion)
+ 
+@@ -193,6 +285,7 @@ private fun PantallaPrincipal(
+             onSemanaSiguiente = onSemanaSiguiente,
+             onHoy = onHoy,
+             onAjustes = onAjustes,
++            onGuardados = onGuardados,
+         )
+ 
+         if (idiomasSeleccionados.isEmpty() || idiomaActivo == null) {
+@@ -211,7 +304,11 @@ private fun PantallaPrincipal(
+             val resultado = remember(fechaVista, idiomaActivo, nivelActivo) {
+                 resolver(idiomaActivo, nivelActivo, fechaVista)
+             }
+-            PantallaSemana(resultado, ajustes.idiomaBase, idiomaAplicacion)
++            val estadoGuardados = (resultado as? ResultadoSemana.Encontrado)?.contenido
++                ?.let { it as? Ficha }
++                ?.let(guardadosDeLaFicha)
++                ?: EstadoGuardados()
++            PantallaSemana(resultado, ajustes.idiomaBase, idiomaAplicacion, fecha = fechaVista, estadoGuardados = estadoGuardados)
+         }
+     }
+ }
+@@ -262,6 +359,7 @@ private fun BarraNavegacion(
+     onSemanaSiguiente: () -> Unit,
+     onHoy: () -> Unit,
+     onAjustes: () -> Unit,
++    onGuardados: () -> Unit,
+ ) {
+     val textoSemana = etiquetaSemana(idiomaAplicacion)
+     Column(modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp)) {
+@@ -301,6 +399,7 @@ private fun BarraNavegacion(
+             verticalAlignment = Alignment.CenterVertically,
+         ) {
+             TextButton(onClick = onHoy, enabled = !esHoy) { Text(etiquetaHoy(idiomaAplicacion)) }
++            TextButton(onClick = onGuardados) { Text(etiquetaGuardados(idiomaAplicacion)) }
+             TextButton(onClick = onAjustes) { Text(etiquetaAjustes(idiomaAplicacion)) }
+         }
+     }
+@@ -313,3 +412,16 @@ private fun SinIdiomaSeleccionado() {
+         Text("Elegí al menos un idioma en Ajustes para ver contenido.", style = MaterialTheme.typography.bodyLarge)
+     }
+ }
++
++/**
++ * Guardados (feature 3): la ficha de origen de un item guardado, buscada por
++ * identidad (skillId + idioma + nivel), no por id completo -- [ItemGuardado]
++ * no guarda order/anio. Si el skill aparecio mas de una vez (dos ordenes, o
++ * piloto y 2027 conviviendo), se queda con la primera que encuentra: es una
++ * simplificacion deliberada, no hay forma de distinguir cual con el modelo
++ * actual. `null` si esa edicion ya no esta en `assets/contenido/` de esta
++ * build (ver GuardadosScreen, `existeFichaOrigen`).
++ */
++private fun fichaDeOrigen(contenidoTodos: List<ContenidoSemanal>, item: ItemGuardado): Ficha? =
++    contenidoTodos.filterIsInstance<Ficha>()
++        .firstOrNull { it.skillId == item.skillIdOrigen && it.idioma == item.idioma && it.nivel == item.nivel }
+diff --git a/app/src/main/java/io/github/percati/lenguapp/datos/GuardadosDb.kt b/app/src/main/java/io/github/percati/lenguapp/datos/GuardadosDb.kt
+new file mode 100644
+index 00000000..bf0eeb79
+--- /dev/null
++++ b/app/src/main/java/io/github/percati/lenguapp/datos/GuardadosDb.kt
+@@ -0,0 +1,135 @@
++package io.github.percati.lenguapp.datos
++
++import android.content.Context
++import androidx.room.Dao
++import androidx.room.Database
++import androidx.room.Entity
++import androidx.room.PrimaryKey
++import androidx.room.Query
++import androidx.room.Room
++import androidx.room.RoomDatabase
++import androidx.room.TypeConverter
++import androidx.room.TypeConverters
++import androidx.room.Delete
++import androidx.room.Insert
++import io.github.percati.lenguapp.modelo.Idioma
++import io.github.percati.lenguapp.modelo.ItemGuardado
++import io.github.percati.lenguapp.modelo.Nivel
++import io.github.percati.lenguapp.modelo.TextoBilingue
++import io.github.percati.lenguapp.modelo.TipoGuardado
++import kotlinx.serialization.encodeToString
++
++/**
++ * Guardados (feature 3): unica tabla persistida de datos de usuario en toda
++ * la app -- excepcion documentada a CLAUDE.md regla dura #4, ver ese
++ * archivo. `textoOrigen` es la palabra/expresion en el idioma que se
++ * aprende, tal cual esta en la ficha (VocabularioItem.item /
++ * RedemittelItem.expresion): sirve solo para el toggle guardar/quitar
++ * (¿esta ya guardado ESTE item de ESTA ficha?), no se expone en
++ * [ItemGuardado] -- ahi lo que se muestra es [textoJson] resuelto por
++ * idioma, no la clave de identidad.
++ */
++@Entity(tableName = "guardados")
++data class GuardadoEntity(
++    @PrimaryKey(autoGenerate = true) val id: Long = 0,
++    val idioma: Idioma,
++    val nivel: Nivel,
++    val tipo: TipoGuardado,
++    val textoOrigen: String,
++    val textoJson: String,
++    val funcionJson: String?,
++    val skillIdOrigen: String,
++)
++
++fun GuardadoEntity.aDominio(): ItemGuardado = ItemGuardado(
++    id = id,
++    idioma = idioma,
++    nivel = nivel,
++    tipo = tipo,
++    texto = jsonContenido.decodeFromString(TextoBilingue.serializer(), textoJson),
++    funcion = funcionJson?.let { jsonContenido.decodeFromString(TextoBilingue.serializer(), it) },
++    skillIdOrigen = skillIdOrigen,
++)
++
++class Convertidores {
++    @TypeConverter fun idiomaAString(v: Idioma): String = v.name
++
++    @TypeConverter fun stringAIdioma(v: String): Idioma = Idioma.valueOf(v)
++
++    @TypeConverter fun nivelAString(v: Nivel): String = v.name
++
++    @TypeConverter fun stringANivel(v: String): Nivel = Nivel.valueOf(v)
++
++    @TypeConverter fun tipoAString(v: TipoGuardado): String = v.name
++
++    @TypeConverter fun stringATipo(v: String): TipoGuardado = TipoGuardado.valueOf(v)
++}
++
++@Dao
++interface GuardadoDao {
++    @Query("SELECT * FROM guardados ORDER BY id DESC")
++    suspend fun listarTodos(): List<GuardadoEntity>
++
++    @Query("SELECT * FROM guardados WHERE skillIdOrigen = :skillIdOrigen AND tipo = :tipo AND textoOrigen = :textoOrigen LIMIT 1")
++    suspend fun buscar(skillIdOrigen: String, tipo: TipoGuardado, textoOrigen: String): GuardadoEntity?
++
++    @Insert
++    suspend fun insertar(entidad: GuardadoEntity)
++
++    @Delete
++    suspend fun borrar(entidad: GuardadoEntity)
++}
++
++@Database(entities = [GuardadoEntity::class], version = 1, exportSchema = false)
++@TypeConverters(Convertidores::class)
++abstract class GuardadosDatabase : RoomDatabase() {
++    abstract fun dao(): GuardadoDao
++}
++
++private var instancia: GuardadosDatabase? = null
++
++private fun db(context: Context): GuardadosDatabase =
++    instancia ?: Room.databaseBuilder(context.applicationContext, GuardadosDatabase::class.java, "guardados.db")
++        .build().also { instancia = it }
++
++/**
++ * Repositorio sin dependencia de Context mas alla de abrir la base: el resto
++ * de la app (pantallas, tests) trabaja con [ItemGuardado]/[GuardadoDao] de
++ * dominio, nunca con la entidad de Room directamente.
++ */
++class RepositorioGuardados(private val dao: GuardadoDao) {
++    constructor(context: Context) : this(db(context).dao())
++
++    suspend fun listar(): List<ItemGuardado> = dao.listarTodos().map { it.aDominio() }
++
++    suspend fun estaGuardado(skillIdOrigen: String, tipo: TipoGuardado, textoOrigen: String): Boolean =
++        dao.buscar(skillIdOrigen, tipo, textoOrigen) != null
++
++    /** Guarda si no estaba, lo quita si ya estaba -- toggle sin confirmacion. */
++    suspend fun alternar(
++        idioma: Idioma,
++        nivel: Nivel,
++        tipo: TipoGuardado,
++        textoOrigen: String,
++        texto: TextoBilingue,
++        funcion: TextoBilingue?,
++        skillIdOrigen: String,
++    ) {
++        val existente = dao.buscar(skillIdOrigen, tipo, textoOrigen)
++        if (existente != null) {
++            dao.borrar(existente)
++        } else {
++            dao.insertar(
++                GuardadoEntity(
++                    idioma = idioma,
++                    nivel = nivel,
++                    tipo = tipo,
++                    textoOrigen = textoOrigen,
++                    textoJson = jsonContenido.encodeToString(texto),
++                    funcionJson = funcion?.let { jsonContenido.encodeToString(it) },
++                    skillIdOrigen = skillIdOrigen,
++                ),
++            )
++        }
++    }
++}
+diff --git a/app/src/main/java/io/github/percati/lenguapp/modelo/Guardados.kt b/app/src/main/java/io/github/percati/lenguapp/modelo/Guardados.kt
+new file mode 100644
+index 00000000..fefec205
+--- /dev/null
++++ b/app/src/main/java/io/github/percati/lenguapp/modelo/Guardados.kt
+@@ -0,0 +1,57 @@
++package io.github.percati.lenguapp.modelo
++
++import kotlinx.serialization.Serializable
++
++/**
++ * Guardados: marcadores de vocabulario/Redemittel que el usuario elige
++ * conservar para repasar, no progreso pedagogico (que aprendio, que le
++ * falta). Es la unica excepcion documentada a CLAUDE.md regla dura #4 -- ver
++ * ese archivo para la justificacion completa. Persiste en Room
++ * (datos/GuardadosDb.kt); este archivo es el modelo de dominio, sin nada de
++ * Android ni de Room.
++ */
++@Serializable
++enum class TipoGuardado { VOCABULARIO, EXPRESION }
++
++/**
++ * `texto` y `funcion` son un snapshot de [TextoBilingue] tomado al guardar,
++ * no una referencia viva al [VocabularioItem]/[RedemittelItem] de origen: si
++ * una edicion futura deja de embeber esa ficha, el guardado sigue
++ * mostrandose igual (ver [skillIdOrigen]).
++ */
++@Serializable
++data class ItemGuardado(
++    val id: Long = 0,
++    val idioma: Idioma,
++    val nivel: Nivel,
++    val tipo: TipoGuardado,
++    val texto: TextoBilingue,
++    // Solo para tipo == EXPRESION: la funcion de la expresion (que hace, no
++    // que significa). El vocabulario no tiene equivalente.
++    val funcion: TextoBilingue? = null,
++    val skillIdOrigen: String,
++)
++
++/**
++ * El item de vocabulario, tal cual esta en la ficha, como [TextoBilingue]:
++ * la palabra en el idioma que se aprende es la clave propia de ese idioma, y
++ * [VocabularioItem.traducciones] aporta el resto -- mismo mecanismo que ya
++ * resuelve contraste/erroresContrastivos, reempaquetado para reusar
++ * [resolver] en la pantalla de Guardados en vez de traduccionParaMostrar().
++ * Una traduccion vacia ("todavia sin traducir", ver VocabularioItem) se
++ * omite: [TextoBilingue.resolver] ya trata una clave vacia como ausente.
++ */
++fun VocabularioItem.aTextoBilingue(idioma: Idioma): TextoBilingue =
++    TextoBilingue(porIdioma = mapOf(idioma.name.lowercase() to item) + traducciones.filterValues { it.isNotBlank() })
++
++/**
++ * Igual que [VocabularioItem.aTextoBilingue], para la expresion misma de un
++ * Redemittel. `null` en [RedemittelItem.traducciones] es "sin equivalencia
++ * directa" (ver RedemittelItem): al guardar se omite en vez de guardarse
++ * como ausente-a-completar, porque acá no hay pantalla que distinga las dos
++ * situaciones (esa distincion, [io.github.percati.lenguapp.presentacion.TraduccionRedemittel],
++ * es propia de la ficha en vivo) -- mostrar el idioma que se aprende de
++ * fallback es razonable en los dos casos.
++ */
++fun RedemittelItem.aTextoBilingue(idioma: Idioma): TextoBilingue =
++    TextoBilingue(porIdioma = mapOf(idioma.name.lowercase() to expresion) + traducciones.filterValues { !it.isNullOrBlank() }.mapValues { it.value!! })
+diff --git a/app/src/main/java/io/github/percati/lenguapp/semana/ResolutorSemana.kt b/app/src/main/java/io/github/percati/lenguapp/semana/ResolutorSemana.kt
+index 49ff2048..9f46c372 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/semana/ResolutorSemana.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/semana/ResolutorSemana.kt
+@@ -5,6 +5,7 @@ import io.github.percati.lenguapp.modelo.EntradaCalendario
+ import io.github.percati.lenguapp.modelo.Idioma
+ import io.github.percati.lenguapp.modelo.Nivel
+ import io.github.percati.lenguapp.modelo.TipoSemana
++import java.time.DayOfWeek
+ import java.time.LocalDate
+ import java.time.temporal.IsoFields
+ 
+@@ -16,6 +17,15 @@ import java.time.temporal.IsoFields
+  */
+ data class SemanaIso(val anio: Int, val semana: Int)
+ 
++/**
++ * Ventana del desafio de fin de semana: sabado 00:00 a domingo 23:59, hora
++ * local (CLAUDE.md, regla dura #11 y #13). Usa la fecha del dispositivo,
++ * el unico dato que la app lee -- nunca se calcula "es fin de semana" a
++ * mano en otro lado.
++ */
++fun esFinDeSemana(fecha: LocalDate): Boolean =
++    fecha.dayOfWeek == DayOfWeek.SATURDAY || fecha.dayOfWeek == DayOfWeek.SUNDAY
++
+ fun semanaIsoDe(fecha: LocalDate): SemanaIso = SemanaIso(
+     anio = fecha.get(IsoFields.WEEK_BASED_YEAR),
+     semana = fecha.get(IsoFields.WEEK_OF_WEEK_BASED_YEAR),
+diff --git a/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt b/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt
+index da292710..db96dbba 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreen.kt
+@@ -1,9 +1,11 @@
+ package io.github.percati.lenguapp.ui
+ 
++import androidx.compose.foundation.clickable
+ import androidx.compose.foundation.horizontalScroll
+ import androidx.compose.foundation.layout.Arrangement
+ import androidx.compose.foundation.layout.Column
+ import androidx.compose.foundation.layout.Row
++import androidx.compose.foundation.layout.fillMaxSize
+ import androidx.compose.foundation.layout.fillMaxWidth
+ import androidx.compose.foundation.layout.padding
+ import androidx.compose.foundation.rememberScrollState
+@@ -11,9 +13,19 @@ import androidx.compose.foundation.shape.RoundedCornerShape
+ import androidx.compose.foundation.text.selection.DisableSelection
+ import androidx.compose.foundation.text.selection.SelectionContainer
+ import androidx.compose.foundation.verticalScroll
++import androidx.compose.material.icons.Icons
++import androidx.compose.material.icons.filled.EmojiEvents
++import androidx.compose.material.icons.filled.Star
++import androidx.compose.material.icons.filled.Translate
++import androidx.compose.material.icons.outlined.EmojiEvents
++import androidx.compose.material.icons.outlined.StarBorder
+ import androidx.compose.material3.Button
++import androidx.compose.material3.FilterChip
++import androidx.compose.material3.Icon
++import androidx.compose.material3.IconButton
+ import androidx.compose.material3.MaterialTheme
+ import androidx.compose.material3.Surface
++import androidx.compose.material3.Switch
+ import androidx.compose.material3.Text
+ import androidx.compose.runtime.Composable
+ import androidx.compose.runtime.getValue
+@@ -37,6 +49,8 @@ import io.github.percati.lenguapp.modelo.Prioridad
+ import io.github.percati.lenguapp.modelo.RedemittelItem
+ import io.github.percati.lenguapp.modelo.SemanaEspecial
+ import io.github.percati.lenguapp.modelo.TextoBilingue
++import io.github.percati.lenguapp.modelo.TipoGuardado
++import io.github.percati.lenguapp.modelo.aTextoBilingue
+ import io.github.percati.lenguapp.modelo.resolver
+ import io.github.percati.lenguapp.modelo.VocabularioItem
+ import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
+@@ -45,6 +59,8 @@ import io.github.percati.lenguapp.presentacion.erroresParaMostrar
+ import io.github.percati.lenguapp.presentacion.traduccionParaMostrar
+ import io.github.percati.lenguapp.semana.RazonSinContenido
+ import io.github.percati.lenguapp.semana.ResultadoSemana
++import io.github.percati.lenguapp.semana.esFinDeSemana
++import java.time.LocalDate
+ 
+ /**
+  * AJUSTES-FASE-8.md, B.2: separacion entre secciones (Beispiele, Hinweise,
+@@ -58,6 +74,22 @@ import io.github.percati.lenguapp.semana.ResultadoSemana
+  */
+ private val ESPACIO_ENTRE_SECCIONES = 32.dp
+ 
++/**
++ * Lo que [ContenidoSemanalScreen] necesita de Guardados (feature 3) para
++ * pintar la estrella de cada item de vocabulario/Redemittel, sin saber nada
++ * de Room ni de coroutines: el llamador (io.github.percati.lenguapp.MainActivity)
++ * carga y persiste, esto solo pinta y avisa. [guardados] son las claves
++ * (ver [claveGuardado]) ya guardadas de LA FICHA QUE SE ESTA MOSTRANDO.
++ */
++data class EstadoGuardados(
++    val guardados: Set<String> = emptySet(),
++    val onAlternar: (tipo: TipoGuardado, textoOrigen: String, texto: TextoBilingue, funcion: TextoBilingue?) -> Unit =
++        { _, _, _, _ -> },
++)
++
++/** tipo + texto en el idioma que se aprende: identifica un item dentro de una ficha, sin depender de la base de datos. */
++fun claveGuardado(tipo: TipoGuardado, textoOrigen: String): String = "$tipo|$textoOrigen"
++
+ /**
+  * Punto de entrada de la pantalla unica: la Fase 4 agrega navegacion y
+  * ajustes, pero el "no hay nada para esta celda de la matriz" es el caso
+@@ -65,9 +97,17 @@ private val ESPACIO_ENTRE_SECCIONES = 32.dp
+  * ni romper la app.
+  */
+ @Composable
+-fun PantallaSemana(resultado: ResultadoSemana, idiomaBase: Idioma, idiomaInterfaz: Idioma, modifier: Modifier = Modifier) {
++fun PantallaSemana(
++    resultado: ResultadoSemana,
++    idiomaBase: Idioma,
++    idiomaInterfaz: Idioma,
++    modifier: Modifier = Modifier,
++    fecha: LocalDate = LocalDate.now(),
++    estadoGuardados: EstadoGuardados = EstadoGuardados(),
++) {
+     when (resultado) {
+-        is ResultadoSemana.Encontrado -> ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier)
++        is ResultadoSemana.Encontrado ->
++            ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier, idiomaInterfaz, fecha, estadoGuardados)
+         is ResultadoSemana.SinContenido -> SinContenidoMensaje(resultado, idiomaInterfaz, modifier)
+     }
+ }
+@@ -103,9 +143,14 @@ fun ContenidoSemanalScreen(
+     contenido: ContenidoSemanal,
+     idiomaBase: Idioma,
+     modifier: Modifier = Modifier,
++    idiomaInterfaz: Idioma = idiomaBase,
++    // Parametro de prueba, como fechaInicial en LenguAppApp: la produccion
++    // nunca lo pasa, asi que siempre arranca en la fecha real de hoy.
++    fecha: LocalDate = LocalDate.now(),
++    estadoGuardados: EstadoGuardados = EstadoGuardados(),
+ ) {
+     when (contenido) {
+-        is Ficha -> FichaContenido(contenido, idiomaBase, modifier)
++        is Ficha -> FichaContenido(contenido, idiomaBase, idiomaInterfaz, fecha, estadoGuardados, modifier)
+         is SemanaEspecial -> SemanaEspecialContenido(contenido, idiomaBase, modifier)
+     }
+ }
+@@ -115,90 +160,182 @@ fun ContenidoSemanalScreen(
+ // copiar el prompt se excluye con DisableSelection para que el gesto de
+ // seleccionar texto no le gane al click ni lo deje capturado.
+ @Composable
+-private fun FichaContenido(ficha: Ficha, idiomaBase: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
+-    // Campos bilingues (A2/B1): idioma de la app, y el que se aprende si falta esa clave.
+-    val t: (TextoBilingue) -> String = { it.resolver(idiomaBase, ficha.idioma) }
+-    Column(
+-        modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
+-        verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
+-    ) {
+-        Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+-            ficha.variante?.let { EtiquetaVariante(it) }
+-            Text(t(ficha.titulo), style = MaterialTheme.typography.headlineSmall)
+-            Text(
+-                textoConMarcado(t(ficha.subtitulo)),
+-                style = MaterialTheme.typography.titleMedium,
+-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+-            )
+-            Row(
+-                modifier = Modifier.horizontalScroll(rememberScrollState()),
+-                horizontalArrangement = Arrangement.spacedBy(6.dp),
+-            ) {
+-                Insignia(ficha.topicId)
+-                Insignia(etiquetaChallengeType(ficha.challengeType))
+-                Insignia("${ficha.evidencia.escritura}w · ${formatoOralMin(ficha.evidencia.oralMin)}")
+-                Insignia("${ficha.evidencia.minutosEstimados} min")
++private fun FichaContenido(
++    ficha: Ficha,
++    idiomaBase: Idioma,
++    idiomaInterfaz: Idioma,
++    fecha: LocalDate,
++    estadoGuardados: EstadoGuardados,
++    modifier: Modifier = Modifier,
++) {
++    // Feature 1 (switch de traduccion en vivo): estado local, nunca
++    // persistido -- "modo revista", igual criterio que regla dura #13. Se
++    // resetea al cambiar de ficha (`remember(ficha.id)`) y siempre arranca
++    // mostrando idiomaBase, nunca el ultimo estado de la ficha anterior.
++    var mostrarIdiomaAprendido by remember(ficha.id) { mutableStateOf(false) }
++    val idiomaMostrado = if (ficha.bilingue && mostrarIdiomaAprendido) ficha.idioma else idiomaBase
++    val t: (TextoBilingue) -> String = { it.resolver(idiomaMostrado, ficha.idioma) }
++
++    // Feature 2 (desafio de fin de semana): mismo criterio, CLAUDE.md regla
++    // dura #13 explicita ("arranca en off, nunca se persiste"). Solo se
++    // ofrece dentro de la ventana sabado-domingo.
++    var modoDesafio by remember(ficha.id) { mutableStateOf(false) }
++    val enFinDeSemana = esFinDeSemana(fecha)
++
++    Column(modifier = modifier.fillMaxSize()) {
++        if (ficha.bilingue || enFinDeSemana) {
++            Column(Modifier.padding(horizontal = 16.dp, vertical = 4.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
++                if (ficha.bilingue) {
++                    SwitchTraduccion(
++                        activo = mostrarIdiomaAprendido,
++                        idiomaInterfaz = idiomaInterfaz,
++                        idiomaMostrado = idiomaMostrado,
++                        onCambiar = { mostrarIdiomaAprendido = it },
++                    )
++                }
++                if (enFinDeSemana) {
++                    SwitchDesafioFinde(activo = modoDesafio, idiomaInterfaz = idiomaInterfaz, onCambiar = { modoDesafio = it })
++                }
+             }
+         }
+ 
+-        Text(textoConMarcado(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge)
++        SelectionContainer {
++            Column(
++                modifier = Modifier.verticalScroll(rememberScrollState()).padding(16.dp),
++                verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
++            ) {
++                Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
++                    ficha.variante?.let { EtiquetaVariante(it) }
++                    Text(t(ficha.titulo), style = MaterialTheme.typography.headlineSmall)
++                    Text(
++                        textoConMarcado(t(ficha.subtitulo)),
++                        style = MaterialTheme.typography.titleMedium,
++                        color = MaterialTheme.colorScheme.onSurfaceVariant,
++                    )
++                    Row(
++                        modifier = Modifier.horizontalScroll(rememberScrollState()),
++                        horizontalArrangement = Arrangement.spacedBy(6.dp),
++                    ) {
++                        Insignia(ficha.topicId)
++                        Insignia(etiquetaChallengeType(ficha.challengeType))
++                        Insignia("${ficha.evidencia.escritura}w · ${formatoOralMin(ficha.evidencia.oralMin)}")
++                        Insignia("${ficha.evidencia.minutosEstimados} min")
++                    }
++                }
+ 
+-        ficha.cuadroReferencia?.let { cuadro ->
+-            val tituloPropio = etiquetaSeccion("cuadroReferencia", ficha.idioma, ficha.bilingue)
+-            SeccionPlegable(titulo = t(cuadro.titulo).ifBlank { tituloPropio }) {
+-                CuadroReferenciaTabla(cuadro, t)
+-            }
+-        }
++                if (modoDesafio) {
++                    // El desafio no es contenido nuevo: reusa la mision de
++                    // esta ficha bajo otro encabezado -- mecanismo, no texto
++                    // (la redaccion final es de una conversacion de
++                    // contenido aparte). El resto de la ficha se oculta
++                    // mientras el desafio esta activo: "pasar al desafio",
++                    // no agregarlo como una seccion mas.
++                    Seccion(etiquetaSeccion("desafio", ficha.idioma, ficha.bilingue)) {
++                        Text(textoConMarcado(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
++                        ficha.mision.requisitos.forEach { Vinieta(t(it)) }
++                    }
++                } else {
++                    Text(textoConMarcado(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge)
+ 
+-        Seccion(etiquetaSeccion("ejemplos", ficha.idioma, ficha.bilingue)) {
+-            ficha.ejemplos.forEach { Vinieta(t(it.texto)) }
+-        }
++                    ficha.cuadroReferencia?.let { cuadro ->
++                        val tituloPropio = etiquetaSeccion("cuadroReferencia", ficha.idioma, ficha.bilingue)
++                        SeccionPlegable(titulo = t(cuadro.titulo).ifBlank { tituloPropio }) {
++                            CuadroReferenciaTabla(cuadro, t)
++                        }
++                    }
+ 
+-        Seccion(etiquetaSeccion("notas", ficha.idioma, ficha.bilingue)) {
+-            ficha.notas.forEach { Vinieta(t(it)) }
+-        }
++                    Seccion(etiquetaSeccion("ejemplos", ficha.idioma, ficha.bilingue)) {
++                        ficha.ejemplos.forEach { Vinieta(t(it.texto)) }
++                    }
+ 
+-        ficha.contraste.contrasteParaMostrar(ficha.idioma, idiomaBase)?.let { texto ->
+-            Seccion(etiquetaContraste(ficha.idioma, idiomaBase)) {
+-                Text(textoConMarcado(texto), style = MaterialTheme.typography.bodyMedium)
+-            }
+-        }
++                    Seccion(etiquetaSeccion("notas", ficha.idioma, ficha.bilingue)) {
++                        ficha.notas.forEach { Vinieta(t(it)) }
++                    }
+ 
+-        Seccion(etiquetaSeccion("errores", ficha.idioma, ficha.bilingue)) {
+-            erroresParaMostrar(ficha.errores.map(t), ficha.erroresContrastivos, ficha.idioma, idiomaBase).forEach { Vinieta(it) }
+-        }
++                    ficha.contraste.contrasteParaMostrar(ficha.idioma, idiomaMostrado)?.let { texto ->
++                        Seccion(etiquetaContraste(ficha.idioma, idiomaMostrado)) {
++                            Text(textoConMarcado(texto), style = MaterialTheme.typography.bodyMedium)
++                        }
++                    }
+ 
+-        SeccionPlegable(titulo = "${etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)} (${ficha.vocabulario.size})") {
+-            Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
+-                ficha.vocabulario.forEach { VocabularioFila(it, idiomaBase) }
+-            }
+-        }
++                    Seccion(etiquetaSeccion("errores", ficha.idioma, ficha.bilingue)) {
++                        erroresParaMostrar(ficha.errores.map(t), ficha.erroresContrastivos, ficha.idioma, idiomaMostrado)
++                            .forEach { Vinieta(it) }
++                    }
+ 
+-        SeccionPlegable(titulo = "${etiquetaSeccion("redemittel", ficha.idioma, ficha.bilingue)} (${ficha.redemittel.size})") {
+-            Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
+-                ficha.redemittel.forEach { RedemittelFila(it, idiomaBase, ficha.idioma) }
+-            }
+-        }
++                    SeccionPlegable(
++                        titulo = "${etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)} (${ficha.vocabulario.size})",
++                    ) {
++                        Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
++                            ficha.vocabulario.forEach { VocabularioFila(it, idiomaMostrado, ficha.idioma, estadoGuardados) }
++                        }
++                    }
+ 
+-        Seccion(etiquetaSeccion("mision", ficha.idioma, ficha.bilingue)) {
+-            Text(textoConMarcado(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
+-            ficha.mision.requisitos.forEach { Vinieta(t(it)) }
+-        }
++                    SeccionPlegable(
++                        titulo = "${etiquetaSeccion("redemittel", ficha.idioma, ficha.bilingue)} (${ficha.redemittel.size})",
++                    ) {
++                        Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
++                            ficha.redemittel.forEach { RedemittelFila(it, idiomaMostrado, ficha.idioma, estadoGuardados) }
++                        }
++                    }
+ 
+-        Seccion(etiquetaSeccion("microtareas", ficha.idioma, ficha.bilingue)) {
+-            ficha.microtareas.forEach {
+-                Vinieta("${etiquetaDia(it.dia, ficha.idioma)} (${it.minutos} min) — ${t(it.texto)}")
+-            }
+-        }
++                    Seccion(etiquetaSeccion("mision", ficha.idioma, ficha.bilingue)) {
++                        Text(textoConMarcado(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
++                        ficha.mision.requisitos.forEach { Vinieta(t(it)) }
++                    }
++
++                    Seccion(etiquetaSeccion("microtareas", ficha.idioma, ficha.bilingue)) {
++                        ficha.microtareas.forEach {
++                            Vinieta("${etiquetaDia(it.dia, ficha.idioma)} (${it.minutos} min) — ${t(it.texto)}")
++                        }
++                    }
+ 
+-        Seccion(etiquetaSeccion("autochequeo", ficha.idioma, ficha.bilingue)) {
+-            ficha.autochequeo.forEach { Vinieta(t(it)) }
++                    Seccion(etiquetaSeccion("autochequeo", ficha.idioma, ficha.bilingue)) {
++                        ficha.autochequeo.forEach { Vinieta(t(it)) }
++                    }
++
++                    TarjetaPrompt(t(ficha.promptCorreccion), etiquetaSeccion("promptCorreccion", ficha.idioma, ficha.bilingue))
++                }
++            }
+         }
++    }
++}
+ 
+-        TarjetaPrompt(t(ficha.promptCorreccion), etiquetaSeccion("promptCorreccion", ficha.idioma, ficha.bilingue))
++/**
++ * Feature 1: switch de traduccion en vivo. Distinto visualmente del de
++ * abajo (Switch vs. chip). Toda la fila es clickeable, no solo el Switch:
++ * mas area de toque, y el Switch se vuelve puramente visual
++ * (`onCheckedChange = null`) para no manejar el toggle dos veces.
++ */
++@Composable
++private fun SwitchTraduccion(activo: Boolean, idiomaInterfaz: Idioma, idiomaMostrado: Idioma, onCambiar: (Boolean) -> Unit) {
++    Row(
++        verticalAlignment = Alignment.CenterVertically,
++        horizontalArrangement = Arrangement.spacedBy(8.dp),
++        modifier = Modifier.clickable { onCambiar(!activo) },
++    ) {
++        Icon(Icons.Filled.Translate, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
++        Text(etiquetaVerEnIdioma(idiomaInterfaz, idiomaMostrado), style = MaterialTheme.typography.labelLarge, modifier = Modifier.weight(1f))
++        Switch(checked = activo, onCheckedChange = null)
+     }
+ }
+ 
++/** Feature 2: switch del desafio de fin de semana. Un FilterChip, no un Switch: visualmente distinto a propósito. */
++@Composable
++private fun SwitchDesafioFinde(activo: Boolean, idiomaInterfaz: Idioma, onCambiar: (Boolean) -> Unit) {
++    FilterChip(
++        selected = activo,
++        onClick = { onCambiar(!activo) },
++        label = { Text(etiquetaDesafioFinde(idiomaInterfaz)) },
++        leadingIcon = {
++            Icon(
++                if (activo) Icons.Filled.EmojiEvents else Icons.Outlined.EmojiEvents,
++                contentDescription = null,
++            )
++        },
++    )
++}
++
+ @Composable
+ private fun SemanaEspecialContenido(especial: SemanaEspecial, idiomaBase: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
+     // Campos bilingues (A2/B1): idioma base del usuario, y el que se aprende si falta esa clave.
+@@ -276,6 +413,21 @@ private fun Insignia(
+     }
+ }
+ 
++/**
++ * Feature 3 (Guardados): estrella junto a cada item de vocabulario/Redemittel.
++ * Toggle sin confirmacion -- tocar de nuevo saca el item, no hay dialogo.
++ */
++@Composable
++private fun BotonGuardar(guardado: Boolean, onClick: () -> Unit) {
++    IconButton(onClick = onClick) {
++        Icon(
++            if (guardado) Icons.Filled.Star else Icons.Outlined.StarBorder,
++            contentDescription = null,
++            tint = if (guardado) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
++        )
++    }
++}
++
+ @Composable
+ private fun EtiquetaVariante(variante: String) {
+     Insignia(
+@@ -286,7 +438,7 @@ private fun EtiquetaVariante(variante: String) {
+ }
+ 
+ @Composable
+-private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma) {
++private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma, idiomaAprendido: Idioma, estadoGuardados: EstadoGuardados) {
+     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+             // AJUSTES-FASE-8.md, B.5: sin la etiqueta "núcleo" (nombre de
+@@ -298,6 +450,13 @@ private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma) {
+                 item.item,
+                 style = MaterialTheme.typography.bodyLarge,
+                 fontWeight = if (item.prioridad == Prioridad.NUCLEO) FontWeight.Bold else FontWeight.Normal,
++                modifier = Modifier.weight(1f),
++            )
++            BotonGuardar(
++                guardado = claveGuardado(TipoGuardado.VOCABULARIO, item.item) in estadoGuardados.guardados,
++                onClick = {
++                    estadoGuardados.onAlternar(TipoGuardado.VOCABULARIO, item.item, item.aTextoBilingue(idiomaAprendido), null)
++                },
+             )
+         }
+         Text(
+@@ -329,9 +488,27 @@ private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma) {
+ }
+ 
+ @Composable
+-private fun RedemittelFila(item: RedemittelItem, idiomaBase: Idioma, idiomaAprendido: Idioma) {
++private fun RedemittelFila(item: RedemittelItem, idiomaBase: Idioma, idiomaAprendido: Idioma, estadoGuardados: EstadoGuardados) {
+     Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+-        Text(item.expresion, style = MaterialTheme.typography.bodyLarge, fontWeight = FontWeight.Medium)
++        Row(verticalAlignment = Alignment.CenterVertically) {
++            Text(
++                item.expresion,
++                style = MaterialTheme.typography.bodyLarge,
++                fontWeight = FontWeight.Medium,
++                modifier = Modifier.weight(1f),
++            )
++            BotonGuardar(
++                guardado = claveGuardado(TipoGuardado.EXPRESION, item.expresion) in estadoGuardados.guardados,
++                onClick = {
++                    estadoGuardados.onAlternar(
++                        TipoGuardado.EXPRESION,
++                        item.expresion,
++                        item.aTextoBilingue(idiomaAprendido),
++                        item.funcion,
++                    )
++                },
++            )
++        }
+         Text(
+             textoConMarcado(item.funcion.resolver(idiomaBase, idiomaAprendido)),
+             style = MaterialTheme.typography.bodySmall,
+diff --git a/app/src/main/java/io/github/percati/lenguapp/ui/EtiquetasSeccion.kt b/app/src/main/java/io/github/percati/lenguapp/ui/EtiquetasSeccion.kt
+index 60401f0c..76fe37cc 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/ui/EtiquetasSeccion.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/ui/EtiquetasSeccion.kt
+@@ -19,6 +19,10 @@ private val ETIQUETAS_EN = mapOf(
+     "vocabulario" to "Vocabulary",
+     "redemittel" to "Expressions",
+     "mision" to "Mission",
++    // El desafio de fin de semana reusa la mision con otro encabezado: no
++    // es contenido nuevo, asi que no tiene fila propia en las traducciones
++    // resueltas de AJUSTES-FASE-5.md -- agregado para esa reetiqueta.
++    "desafio" to "Weekend Challenge",
+     // No esta en la tabla de AJUSTES-FASE-5.md (esa cubre solo la ficha):
+     // SemanaEspecial tiene su propia seccion "requisitos", sin "mision".
+     "requisitos" to "Requirements",
+@@ -36,6 +40,7 @@ private val ETIQUETAS_DE = mapOf(
+     "vocabulario" to "Themenwortschatz",
+     "redemittel" to "Redemittel",
+     "mision" to "Wochenaufgabe",
++    "desafio" to "Wochenend-Herausforderung",
+     "requisitos" to "Anforderungen",
+     "microtareas" to "Mikroaufgaben",
+     "autochequeo" to "Selbstkontrolle",
+@@ -57,6 +62,7 @@ private val ETIQUETAS_ES_BILINGUE = mapOf(
+     "vocabulario" to "Vocabulario",
+     "redemittel" to "Redemittel",
+     "mision" to "Misión",
++    "desafio" to "Desafío de fin de semana",
+     "microtareas" to "Micro-tareas",
+     "autochequeo" to "Autochequeo",
+     "promptCorreccion" to "Prompt de corrección",
+diff --git a/app/src/main/java/io/github/percati/lenguapp/ui/GuardadosScreen.kt b/app/src/main/java/io/github/percati/lenguapp/ui/GuardadosScreen.kt
+new file mode 100644
+index 00000000..f955b73d
+--- /dev/null
++++ b/app/src/main/java/io/github/percati/lenguapp/ui/GuardadosScreen.kt
+@@ -0,0 +1,163 @@
++package io.github.percati.lenguapp.ui
++
++import androidx.compose.foundation.clickable
++import androidx.compose.foundation.horizontalScroll
++import androidx.compose.foundation.layout.Arrangement
++import androidx.compose.foundation.layout.Column
++import androidx.compose.foundation.layout.Row
++import androidx.compose.foundation.layout.padding
++import androidx.compose.foundation.rememberScrollState
++import androidx.compose.foundation.shape.RoundedCornerShape
++import androidx.compose.foundation.verticalScroll
++import androidx.compose.material3.FilterChip
++import androidx.compose.material3.MaterialTheme
++import androidx.compose.material3.ScrollableTabRow
++import androidx.compose.material3.Surface
++import androidx.compose.material3.Tab
++import androidx.compose.material3.Text
++import androidx.compose.material3.TextButton
++import androidx.compose.runtime.Composable
++import androidx.compose.runtime.getValue
++import androidx.compose.runtime.mutableStateOf
++import androidx.compose.runtime.remember
++import androidx.compose.runtime.setValue
++import androidx.compose.ui.Alignment
++import androidx.compose.ui.Modifier
++import androidx.compose.ui.unit.dp
++import io.github.percati.lenguapp.modelo.Idioma
++import io.github.percati.lenguapp.modelo.ItemGuardado
++import io.github.percati.lenguapp.modelo.Nivel
++import io.github.percati.lenguapp.modelo.TipoGuardado
++import io.github.percati.lenguapp.modelo.resolver
++
++/**
++ * Feature 3 (Guardados): filtra, no mezcla -- un idioma a la vez, como pide
++ * la especificacion, reusando el mismo patron de pestañas por idioma que
++ * PantallaPrincipal (MainActivity.kt) usa para `idiomasAprendidos`. Nivel y
++ * tipo son chips de un solo filtro activo cada uno, con "Todos" como
++ * opcion por defecto.
++ */
++@Composable
++fun GuardadosScreen(
++    items: List<ItemGuardado>,
++    idiomasAprendidos: Set<Idioma>,
++    idiomaBase: Idioma,
++    idiomaInterfaz: Idioma,
++    // false cuando el contenido de esa semana/edicion ya no esta en
++    // assets/contenido/ de la build actual (una edicion anterior, por
++    // ejemplo): la fila se sigue mostrando, sin el link.
++    existeFichaOrigen: (ItemGuardado) -> Boolean,
++    onAbrirFicha: (ItemGuardado) -> Unit,
++    onVolver: () -> Unit,
++    modifier: Modifier = Modifier,
++) {
++    val idiomasDisponibles = remember(items, idiomasAprendidos) {
++        (idiomasAprendidos + items.map { it.idioma }).sortedBy { it.ordinal }
++    }
++    var idiomaElegido by remember(idiomasDisponibles) { mutableStateOf(idiomasDisponibles.firstOrNull()) }
++    var nivelElegido by remember { mutableStateOf<Nivel?>(null) }
++    var tipoElegido by remember { mutableStateOf<TipoGuardado?>(null) }
++
++    val filtrados = remember(items, idiomaElegido, nivelElegido, tipoElegido) {
++        items.filter { it.idioma == idiomaElegido }
++            .filter { nivelElegido == null || it.nivel == nivelElegido }
++            .filter { tipoElegido == null || it.tipo == tipoElegido }
++    }
++
++    Column(modifier = modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
++        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
++            TextButton(onClick = onVolver) { Text("< ${etiquetaVolver(idiomaInterfaz)}") }
++            Text(etiquetaGuardados(idiomaInterfaz), style = MaterialTheme.typography.headlineSmall)
++        }
++
++        if (idiomasDisponibles.isEmpty()) {
++            Text(mensajeGuardadosVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge)
++        } else {
++            ScrollableTabRow(selectedTabIndex = idiomasDisponibles.indexOf(idiomaElegido).coerceAtLeast(0)) {
++                idiomasDisponibles.forEach { idioma ->
++                    Tab(
++                        selected = idioma == idiomaElegido,
++                        onClick = { idiomaElegido = idioma },
++                        text = { Text(idioma.name) },
++                    )
++                }
++            }
++
++            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
++                Text(etiquetaFiltroTipo(idiomaInterfaz), style = MaterialTheme.typography.labelMedium)
++                Row(
++                    modifier = Modifier.horizontalScroll(rememberScrollState()),
++                    horizontalArrangement = Arrangement.spacedBy(8.dp),
++                ) {
++                    FilterChip(selected = tipoElegido == null, onClick = { tipoElegido = null }, label = { Text(etiquetaFiltroTodos(idiomaInterfaz)) })
++                    FilterChip(
++                        selected = tipoElegido == TipoGuardado.VOCABULARIO,
++                        onClick = { tipoElegido = TipoGuardado.VOCABULARIO },
++                        label = { Text(etiquetaTipoVocabulario(idiomaInterfaz)) },
++                    )
++                    FilterChip(
++                        selected = tipoElegido == TipoGuardado.EXPRESION,
++                        onClick = { tipoElegido = TipoGuardado.EXPRESION },
++                        label = { Text(etiquetaTipoExpresion(idiomaInterfaz)) },
++                    )
++                }
++            }
++
++            Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
++                Text(etiquetaNivel(idiomaInterfaz), style = MaterialTheme.typography.labelMedium)
++                Row(
++                    modifier = Modifier.horizontalScroll(rememberScrollState()),
++                    horizontalArrangement = Arrangement.spacedBy(8.dp),
++                ) {
++                    FilterChip(selected = nivelElegido == null, onClick = { nivelElegido = null }, label = { Text(etiquetaFiltroTodos(idiomaInterfaz)) })
++                    Nivel.entries.forEach { nivel ->
++                        FilterChip(selected = nivelElegido == nivel, onClick = { nivelElegido = nivel }, label = { Text(nivel.name) })
++                    }
++                }
++            }
++
++            if (filtrados.isEmpty()) {
++                Text(mensajeGuardadosVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge)
++            } else {
++                Column(
++                    modifier = Modifier.verticalScroll(rememberScrollState()),
++                    verticalArrangement = Arrangement.spacedBy(8.dp),
++                ) {
++                    filtrados.forEach { item ->
++                        FilaGuardado(
++                            item,
++                            idiomaBase,
++                            enlazable = existeFichaOrigen(item),
++                            onClick = { onAbrirFicha(item) },
++                        )
++                    }
++                }
++            }
++        }
++    }
++}
++
++@Composable
++private fun FilaGuardado(item: ItemGuardado, idiomaBase: Idioma, enlazable: Boolean, onClick: () -> Unit) {
++    Surface(
++        shape = RoundedCornerShape(8.dp),
++        color = MaterialTheme.colorScheme.surfaceVariant,
++        modifier = if (enlazable) Modifier.clickable(onClick = onClick) else Modifier,
++    ) {
++        Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
++            Text(item.texto.resolver(idiomaBase, item.idioma), style = MaterialTheme.typography.bodyLarge)
++            item.funcion?.let {
++                Text(
++                    it.resolver(idiomaBase, item.idioma),
++                    style = MaterialTheme.typography.bodySmall,
++                    color = MaterialTheme.colorScheme.onSurfaceVariant,
++                )
++            }
++            Text(
++                "${item.idioma.name} · ${item.nivel.name} · ${item.skillIdOrigen}",
++                style = MaterialTheme.typography.labelSmall,
++                color = MaterialTheme.colorScheme.onSurfaceVariant,
++            )
++        }
++    }
++}
+diff --git a/app/src/main/java/io/github/percati/lenguapp/ui/TextosInterfaz.kt b/app/src/main/java/io/github/percati/lenguapp/ui/TextosInterfaz.kt
+index 9ad5a55d..74f8f1a7 100644
+--- a/app/src/main/java/io/github/percati/lenguapp/ui/TextosInterfaz.kt
++++ b/app/src/main/java/io/github/percati/lenguapp/ui/TextosInterfaz.kt
+@@ -30,6 +30,8 @@ enum class ClaveTexto {
+     SALIR_CONFIRMAR,
+     IDIOMAS_APRENDIDOS, IDIOMA_APP, SEGUN_SISTEMA, ESTILO_VISUAL, MODO, MODO_CLARO, MODO_OSCURO,
+     NIVEL, CAMBIAR_NIVEL, IDIOMA_NO_DISPONIBLE, AVISO_GLOSAS,
++    GUARDADOS, GUARDADOS_VACIO, FILTRO_IDIOMA, FILTRO_TIPO, FILTRO_TODOS,
++    TIPO_VOCABULARIO, TIPO_EXPRESION, DESAFIO_FINDE, VER_EN_IDIOMA,
+ }
+ 
+ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
+@@ -153,6 +155,53 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
+         Idioma.IT to "Le traduzioni del lessico esistono per ora solo in spagnolo.",
+         Idioma.PT to "As traduções de vocabulário só existem em espanhol por agora.",
+     ),
++    // --- Guardados (feature 3) ---
++    ClaveTexto.GUARDADOS to mapOf(
++        Idioma.ES to "Guardados", Idioma.EN to "Saved", Idioma.DE to "Gespeichert",
++        Idioma.FR to "Enregistrés", Idioma.IT to "Salvati", Idioma.PT to "Guardados",
++    ),
++    ClaveTexto.GUARDADOS_VACIO to mapOf(
++        Idioma.ES to "Todavía no guardaste nada. Tocá la estrella junto a una palabra o expresión para guardarla.",
++        Idioma.EN to "You haven't saved anything yet. Tap the star next to a word or expression to save it.",
++        Idioma.DE to "Du hast noch nichts gespeichert. Tippe auf den Stern neben einem Wort oder Ausdruck, um ihn zu speichern.",
++        Idioma.FR to "Vous n'avez encore rien enregistré. Appuyez sur l'étoile à côté d'un mot ou d'une expression pour l'enregistrer.",
++        Idioma.IT to "Non hai ancora salvato nulla. Tocca la stella accanto a una parola o espressione per salvarla.",
++        Idioma.PT to "Ainda não guardou nada. Toque na estrela junto a uma palavra ou expressão para a guardar.",
++    ),
++    ClaveTexto.FILTRO_IDIOMA to mapOf(
++        Idioma.ES to "Idioma", Idioma.EN to "Language", Idioma.DE to "Sprache",
++        Idioma.FR to "Langue", Idioma.IT to "Lingua", Idioma.PT to "Idioma",
++    ),
++    ClaveTexto.FILTRO_TIPO to mapOf(
++        Idioma.ES to "Tipo", Idioma.EN to "Type", Idioma.DE to "Art",
++        Idioma.FR to "Type", Idioma.IT to "Tipo", Idioma.PT to "Tipo",
++    ),
++    ClaveTexto.FILTRO_TODOS to mapOf(
++        Idioma.ES to "Todos", Idioma.EN to "All", Idioma.DE to "Alle",
++        Idioma.FR to "Tous", Idioma.IT to "Tutti", Idioma.PT to "Todos",
++    ),
++    ClaveTexto.TIPO_VOCABULARIO to mapOf(
++        Idioma.ES to "Vocabulario", Idioma.EN to "Vocabulary", Idioma.DE to "Wortschatz",
++        Idioma.FR to "Vocabulaire", Idioma.IT to "Lessico", Idioma.PT to "Vocabulário",
++    ),
++    ClaveTexto.TIPO_EXPRESION to mapOf(
++        Idioma.ES to "Expresiones", Idioma.EN to "Expressions", Idioma.DE to "Redemittel",
++        Idioma.FR to "Expressions", Idioma.IT to "Espressioni", Idioma.PT to "Expressões",
++    ),
++    // --- Desafio de fin de semana (feature 2) ---
++    ClaveTexto.DESAFIO_FINDE to mapOf(
++        Idioma.ES to "Desafío de fin de semana", Idioma.EN to "Weekend challenge", Idioma.DE to "Wochenend-Herausforderung",
++        Idioma.FR to "Défi du week-end", Idioma.IT to "Sfida del weekend", Idioma.PT to "Desafio de fim de semana",
++    ),
++    // --- Switch de traduccion en vivo (feature 1) ---
++    ClaveTexto.VER_EN_IDIOMA to mapOf(
++        Idioma.ES to "Ver en {idioma}",
++        Idioma.EN to "View in {idioma}",
++        Idioma.DE to "Auf {idioma} anzeigen",
++        Idioma.FR to "Voir en {idioma}",
++        Idioma.IT to "Vedi in {idioma}",
++        Idioma.PT to "Ver em {idioma}",
++    ),
+ )
+ 
+ /**
+@@ -254,3 +303,18 @@ fun mensajeIdiomaNoDisponible(idiomaInterfaz: Idioma, idiomaSinContenido: Idioma
+ )
+ 
+ fun avisoGlosasTexto(idiomaInterfaz: Idioma): String = texto(ClaveTexto.AVISO_GLOSAS, idiomaInterfaz)
++
++fun etiquetaGuardados(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS, idiomaInterfaz)
++fun mensajeGuardadosVacio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_VACIO, idiomaInterfaz)
++fun etiquetaFiltroIdioma(idiomaInterfaz: Idioma): String = texto(ClaveTexto.FILTRO_IDIOMA, idiomaInterfaz)
++fun etiquetaFiltroTipo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.FILTRO_TIPO, idiomaInterfaz)
++fun etiquetaFiltroTodos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.FILTRO_TODOS, idiomaInterfaz)
++fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_VOCABULARIO, idiomaInterfaz)
++fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
++fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
++
++/** [idiomaMostrado] es el idioma que el switch de traduccion en vivo esta mostrando ahora, no el de interfaz. */
++fun etiquetaVerEnIdioma(idiomaInterfaz: Idioma, idiomaMostrado: Idioma): String = interpolar(
++    texto(ClaveTexto.VER_EN_IDIOMA, idiomaInterfaz),
++    "idioma" to nombreIdioma(idiomaMostrado, idiomaInterfaz),
++)
+diff --git a/app/src/test/java/io/github/percati/lenguapp/datos/RepositorioGuardadosTest.kt b/app/src/test/java/io/github/percati/lenguapp/datos/RepositorioGuardadosTest.kt
+new file mode 100644
+index 00000000..d20e79ba
+--- /dev/null
++++ b/app/src/test/java/io/github/percati/lenguapp/datos/RepositorioGuardadosTest.kt
+@@ -0,0 +1,72 @@
++package io.github.percati.lenguapp.datos
++
++import androidx.room.Room
++import androidx.test.core.app.ApplicationProvider
++import io.github.percati.lenguapp.modelo.Idioma
++import io.github.percati.lenguapp.modelo.Nivel
++import io.github.percati.lenguapp.modelo.TextoBilingue
++import io.github.percati.lenguapp.modelo.TipoGuardado
++import kotlinx.coroutines.runBlocking
++import org.junit.Assert.assertEquals
++import org.junit.Assert.assertTrue
++import org.junit.Test
++import org.junit.runner.RunWith
++import org.robolectric.RobolectricTestRunner
++
++/**
++ * Guardados (feature 3): "guardar/quitar un item se refleja en la pantalla
++ * de Guardados" empieza aca, en el repositorio -- GuardadosScreen solo pinta
++ * la lista que [RepositorioGuardados.listar] devuelve (ver GuardadosScreenTest
++ * para la parte de pantalla). Room en memoria: rapido, sin tocar disco, y
++ * el toggle es la misma llamada que usa la estrella de la ficha.
++ */
++@RunWith(RobolectricTestRunner::class)
++class RepositorioGuardadosTest {
++
++    private fun repositorio(): RepositorioGuardados {
++        val db = Room.inMemoryDatabaseBuilder(ApplicationProvider.getApplicationContext(), GuardadosDatabase::class.java)
++            .allowMainThreadQueries()
++            .build()
++        return RepositorioGuardados(db.dao())
++    }
++
++    @Test
++    fun `guardar un item lo agrega a listar, quitarlo lo saca`() = runBlocking {
++        val repo = repositorio()
++        val texto = TextoBilingue(porIdioma = mapOf("de" to "die Miete", "es" to "el alquiler"))
++
++        assertTrue(repo.listar().isEmpty())
++
++        repo.alternar(Idioma.DE, Nivel.B2, TipoGuardado.VOCABULARIO, "die Miete", texto, null, "DE-V02")
++        val trasGuardar = repo.listar()
++        assertEquals(1, trasGuardar.size)
++        assertEquals("DE-V02", trasGuardar.single().skillIdOrigen)
++        assertTrue(repo.estaGuardado("DE-V02", TipoGuardado.VOCABULARIO, "die Miete"))
++
++        repo.alternar(Idioma.DE, Nivel.B2, TipoGuardado.VOCABULARIO, "die Miete", texto, null, "DE-V02")
++        assertTrue("guardar de nuevo lo mismo debe sacarlo (toggle), no duplicarlo", repo.listar().isEmpty())
++        assertTrue(!repo.estaGuardado("DE-V02", TipoGuardado.VOCABULARIO, "die Miete"))
++    }
++
++    @Test
++    fun `una expresion guardada conserva su funcion, un vocabulario no tiene`() = runBlocking {
++        val repo = repositorio()
++        val funcion = TextoBilingue(porIdioma = mapOf("de" to "einen Vorschlag abschwächen"))
++        repo.alternar(
++            Idioma.DE, Nivel.B2, TipoGuardado.EXPRESION, "das würde ich so nicht sagen",
++            TextoBilingue(porIdioma = mapOf("de" to "das würde ich so nicht sagen")), funcion, "DE-V05",
++        )
++        val item = repo.listar().single()
++        assertEquals(TipoGuardado.EXPRESION, item.tipo)
++        assertEquals(funcion, item.funcion)
++    }
++
++    @Test
++    fun `dos items distintos de la misma ficha se guardan por separado`() = runBlocking {
++        val repo = repositorio()
++        val t = TextoBilingue(porIdioma = mapOf("de" to "x"))
++        repo.alternar(Idioma.DE, Nivel.B2, TipoGuardado.VOCABULARIO, "die Miete", t, null, "DE-V02")
++        repo.alternar(Idioma.DE, Nivel.B2, TipoGuardado.VOCABULARIO, "der Mieter", t, null, "DE-V02")
++        assertEquals(2, repo.listar().size)
++    }
++}
+diff --git a/app/src/test/java/io/github/percati/lenguapp/semana/ResolutorSemanaTest.kt b/app/src/test/java/io/github/percati/lenguapp/semana/ResolutorSemanaTest.kt
+index 4bf2e78e..11ea0a45 100644
+--- a/app/src/test/java/io/github/percati/lenguapp/semana/ResolutorSemanaTest.kt
++++ b/app/src/test/java/io/github/percati/lenguapp/semana/ResolutorSemanaTest.kt
+@@ -9,6 +9,7 @@ import io.github.percati.lenguapp.modelo.Nivel
+ import io.github.percati.lenguapp.modelo.SemanaEspecial
+ import io.github.percati.lenguapp.modelo.id
+ import org.junit.Assert.assertEquals
++import org.junit.Assert.assertFalse
+ import org.junit.Assert.assertTrue
+ import org.junit.Test
+ import java.io.File
+@@ -16,6 +17,19 @@ import java.time.LocalDate
+ 
+ class ResolutorSemanaTest {
+ 
++    // --- Feature 2 (desafio de fin de semana): sabado 00:00 a domingo 23:59 ---
++
++    @Test
++    fun `esFinDeSemana es verdadero el sabado y el domingo`() {
++        assertTrue(esFinDeSemana(LocalDate.of(2026, 9, 12))) // sabado
++        assertTrue(esFinDeSemana(LocalDate.of(2026, 9, 13))) // domingo
++    }
++
++    @Test
++    fun `esFinDeSemana es falso de lunes a viernes`() {
++        for (dia in 7..11) assertFalse(esFinDeSemana(LocalDate.of(2026, 9, dia)))
++    }
++
+     // --- Fase 2: casos de borde del anio ISO vs. el anio de calendario ---
+ 
+     @Test
+diff --git a/app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenFeaturesTest.kt b/app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenFeaturesTest.kt
+new file mode 100644
+index 00000000..8af6a0df
+--- /dev/null
++++ b/app/src/testDebug/java/io/github/percati/lenguapp/ui/ContenidoSemanalScreenFeaturesTest.kt
+@@ -0,0 +1,143 @@
++package io.github.percati.lenguapp.ui
++
++import androidx.activity.ComponentActivity
++import androidx.compose.runtime.getValue
++import androidx.compose.runtime.key
++import androidx.compose.runtime.mutableIntStateOf
++import androidx.compose.runtime.remember
++import androidx.compose.runtime.setValue
++import androidx.compose.ui.test.hasText
++import androidx.compose.ui.test.junit4.createAndroidComposeRule
++import androidx.compose.ui.test.onNodeWithText
++import androidx.compose.ui.test.performClick
++import io.github.percati.lenguapp.datos.parsearContenido
++import io.github.percati.lenguapp.modelo.Ficha
++import io.github.percati.lenguapp.modelo.Idioma
++import io.github.percati.lenguapp.modelo.TextoBilingue
++import org.junit.Rule
++import org.junit.Test
++import org.junit.runner.RunWith
++import org.robolectric.RobolectricTestRunner
++import java.io.File
++import java.time.LocalDate
++
++/**
++ * Feature 1 (switch de traduccion en vivo) y feature 2 (desafio de fin de
++ * semana), sobre una ficha real del piloto vuelta bilingue con `.copy()`
++ * (el piloto 2026 en si sigue en string plano -- ver FALTANTES.md 4.8).
++ */
++@RunWith(RobolectricTestRunner::class)
++class ContenidoSemanalScreenFeaturesTest {
++
++    @get:Rule
++    val composeTestRule = createAndroidComposeRule<ComponentActivity>()
++
++    // Semana 37 de 2026: lunes 7 -> sabado 12 y domingo 13 son su fin de
++    // semana; lunes 14 ya es la semana siguiente pero sigue sirviendo de
++    // "no es fin de semana" para esta ficha.
++    private val sabado = LocalDate.of(2026, 9, 12)
++    private val lunes = LocalDate.of(2026, 9, 14)
++
++    private fun fichaBilingue(): Ficha {
++        val carpeta = listOf(File("src/main/assets"), File("app/src/main/assets")).first { it.isDirectory }
++        val base = parsearContenido(File(carpeta, "contenido/DE-G01-B2-2026-1.json").readText()) as Ficha
++        return base.copy(
++            bilingue = true,
++            titulo = TextoBilingue(porIdioma = mapOf("de" to "Satzbau", "es" to "Estructura de la oración")),
++            subtitulo = TextoBilingue(porIdioma = mapOf("de" to "Verbstellung", "es" to "Posición del verbo")),
++            descripcion = TextoBilingue(porIdioma = mapOf("de" to "Die Beschreibung auf Deutsch.", "es" to "La descripción en español.")),
++        )
++    }
++
++    // --- Feature 1: switch de traduccion en vivo ---
++
++    @Test
++    fun `el switch de traduccion arranca mostrando idiomaBase, y alternar cambia el idioma mostrado`() {
++        val ficha = fichaBilingue()
++        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
++
++        // Arranca en idiomaBase (ES): la etiqueta del switch lo dice, y el titulo se ve en espanol.
++        composeTestRule.onNode(hasText(etiquetaVerEnIdioma(Idioma.ES, Idioma.ES))).assertExists()
++        composeTestRule.onNodeWithText("Estructura de la oración").assertExists()
++        composeTestRule.onNode(hasText("Satzbau")).assertDoesNotExist()
++
++        // Toda la fila es clickeable (SwitchTraduccion), no hace falta acertarle al Switch exacto.
++        composeTestRule.onNode(hasText("Ver en", substring = true)).performClick()
++
++        composeTestRule.onNode(hasText(etiquetaVerEnIdioma(Idioma.ES, Idioma.DE))).assertExists()
++        composeTestRule.onNodeWithText("Satzbau").assertExists()
++        composeTestRule.onNode(hasText("Estructura de la oración")).assertDoesNotExist()
++    }
++
++    @Test
++    fun `el switch de traduccion no persiste entre aperturas -- una composicion nueva arranca de nuevo en idiomaBase`() {
++        val ficha = fichaBilingue()
++        // createAndroidComposeRule solo admite un setContent() por test:
++        // "reabrir la app" se simula con key() -- cambiar la key tira el
++        // remember() de adentro y arma la subcomposicion desde cero, que es
++        // justo lo que pasa en un restart real (Activity/composicion nuevas).
++        lateinit var reabrir: () -> Unit
++        composeTestRule.setContent {
++            var version by remember { mutableIntStateOf(0) }
++            reabrir = { version++ }
++            key(version) { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
++        }
++
++        // "Apertura" 1: se activa el switch (se ve el idioma que se aprende).
++        composeTestRule.onNode(hasText("Ver en", substring = true)).performClick()
++        composeTestRule.onNodeWithText("Satzbau").assertExists()
++
++        // "Apertura" 2: arranca de nuevo en idiomaBase (CLAUDE.md regla dura #13, mismo criterio).
++        composeTestRule.runOnIdle(reabrir)
++        composeTestRule.onNodeWithText("Estructura de la oración").assertExists()
++        composeTestRule.onNode(hasText("Satzbau")).assertDoesNotExist()
++    }
++
++    @Test
++    fun `el switch de traduccion no aparece en fichas no bilingues`() {
++        val ficha = fichaBilingue().copy(bilingue = false)
++        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
++        composeTestRule.onNode(hasText("Ver en", substring = true)).assertDoesNotExist()
++    }
++
++    // --- Feature 2: desafio de fin de semana ---
++
++    @Test
++    fun `el desafio no aparece fuera de la ventana sabado-domingo`() {
++        val ficha = fichaBilingue()
++        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES, fecha = lunes) }
++        composeTestRule.onNode(hasText(etiquetaDesafioFinde(Idioma.ES))).assertDoesNotExist()
++    }
++
++    @Test
++    fun `el desafio aparece el sabado, y activarlo reemplaza el contenido normal por la mision`() {
++        val ficha = fichaBilingue()
++        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES, fecha = sabado) }
++
++        composeTestRule.onNode(hasText(etiquetaDesafioFinde(Idioma.ES))).assertExists()
++        // Sin activar el switch, se ve el contenido semanal por defecto, no el desafio.
++        composeTestRule.onNode(hasText("La descripción en español.")).assertExists()
++
++        composeTestRule.onNode(hasText(etiquetaDesafioFinde(Idioma.ES))).performClick()
++
++        // "Pasar al desafio": el resto de la ficha (descripcion, vocabulario) se oculta.
++        composeTestRule.onNode(hasText("La descripción en español.")).assertDoesNotExist()
++    }
++
++    @Test
++    fun `el switch del desafio arranca en off cada vez, aunque haya quedado en on antes`() {
++        val ficha = fichaBilingue()
++        lateinit var reabrir: () -> Unit
++        composeTestRule.setContent {
++            var version by remember { mutableIntStateOf(0) }
++            reabrir = { version++ }
++            key(version) { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES, fecha = sabado) }
++        }
++        composeTestRule.onNode(hasText(etiquetaDesafioFinde(Idioma.ES))).performClick()
++        composeTestRule.onNode(hasText("La descripción en español.")).assertDoesNotExist()
++
++        // Nueva "apertura": arranca en off de nuevo, se ve el contenido normal.
++        composeTestRule.runOnIdle(reabrir)
++        composeTestRule.onNode(hasText("La descripción en español.")).assertExists()
++    }
++}
+diff --git a/app/src/testDebug/java/io/github/percati/lenguapp/ui/GuardadosScreenTest.kt b/app/src/testDebug/java/io/github/percati/lenguapp/ui/GuardadosScreenTest.kt
+new file mode 100644
+index 00000000..a74c1e63
+--- /dev/null
++++ b/app/src/testDebug/java/io/github/percati/lenguapp/ui/GuardadosScreenTest.kt
+@@ -0,0 +1,113 @@
++package io.github.percati.lenguapp.ui
++
++import androidx.activity.ComponentActivity
++import androidx.compose.runtime.getValue
++import androidx.compose.runtime.mutableStateOf
++import androidx.compose.runtime.setValue
++import androidx.compose.ui.test.hasText
++import androidx.compose.ui.test.junit4.createAndroidComposeRule
++import androidx.compose.ui.test.onNodeWithText
++import androidx.compose.ui.test.performClick
++import io.github.percati.lenguapp.modelo.Idioma
++import io.github.percati.lenguapp.modelo.ItemGuardado
++import io.github.percati.lenguapp.modelo.Nivel
++import io.github.percati.lenguapp.modelo.TextoBilingue
++import io.github.percati.lenguapp.modelo.TipoGuardado
++import org.junit.Assert.assertFalse
++import org.junit.Rule
++import org.junit.Test
++import org.robolectric.RobolectricTestRunner
++import org.junit.runner.RunWith
++
++/**
++ * Feature 3 (Guardados): filtro por idioma y reflejo de guardar/quitar en
++ * la pantalla. GuardadosScreen es puro (toma `items` de afuera), asi que
++ * "se refleja" se prueba manejando el estado en el propio test -- misma
++ * forma en que MainActivity.kt lo hace con `guardadosTodos`.
++ */
++@RunWith(RobolectricTestRunner::class)
++class GuardadosScreenTest {
++
++    @get:Rule
++    val composeTestRule = createAndroidComposeRule<ComponentActivity>()
++
++    private fun item(idioma: Idioma, texto: String, skillId: String) = ItemGuardado(
++        idioma = idioma,
++        nivel = Nivel.B2,
++        tipo = TipoGuardado.VOCABULARIO,
++        texto = TextoBilingue(porIdioma = mapOf(idioma.name.lowercase() to texto)),
++        skillIdOrigen = skillId,
++    )
++
++    @Test
++    fun `el filtro de idioma filtra, no mezcla`() {
++        val items = listOf(
++            item(Idioma.DE, "die Miete", "DE-V02"),
++            item(Idioma.EN, "the lease", "EN-V02"),
++        )
++        composeTestRule.setContent {
++            GuardadosScreen(
++                items = items,
++                idiomasAprendidos = setOf(Idioma.DE, Idioma.EN),
++                idiomaBase = Idioma.ES,
++                idiomaInterfaz = Idioma.ES,
++                existeFichaOrigen = { true },
++                onAbrirFicha = {},
++                onVolver = {},
++            )
++        }
++
++        // Pestaña EN (primera: el enum Idioma declara EN antes que DE -- ver
++        // el mismo criterio en LenguAppAppTest): solo EN, nunca los dos mezclados.
++        composeTestRule.onNodeWithText("the lease").assertExists()
++        composeTestRule.onNode(hasText("die Miete")).assertDoesNotExist()
++
++        // Cambiar a DE: ahora solo DE, EN desaparece -- filtra, no mezcla.
++        composeTestRule.onNodeWithText("DE").performClick()
++        composeTestRule.onNodeWithText("die Miete").assertExists()
++        composeTestRule.onNode(hasText("the lease")).assertDoesNotExist()
++    }
++
++    @Test
++    fun `guardar y quitar un item se refleja en la lista de Guardados`() {
++        var guardados by mutableStateOf<List<ItemGuardado>>(emptyList())
++        val elItem = item(Idioma.DE, "die Miete", "DE-V02")
++
++        composeTestRule.setContent {
++            GuardadosScreen(
++                items = guardados,
++                idiomasAprendidos = setOf(Idioma.DE),
++                idiomaBase = Idioma.ES,
++                idiomaInterfaz = Idioma.ES,
++                existeFichaOrigen = { true },
++                onAbrirFicha = {},
++                onVolver = {},
++            )
++        }
++        composeTestRule.onNode(hasText("die Miete")).assertDoesNotExist()
++
++        // "Guardar" (lo que en la ficha real hace el toggle de la estrella).
++        guardados = guardados + elItem
++        composeTestRule.onNodeWithText("die Miete").assertExists()
++
++        // "Quitar" (tocar la estrella de nuevo).
++        guardados = guardados - elItem
++        composeTestRule.onNode(hasText("die Miete")).assertDoesNotExist()
++    }
++
++    @Test
++    fun `sin idioma aprendido ni items guardados no rompe, muestra el mensaje vacio`() {
++        composeTestRule.setContent {
++            GuardadosScreen(
++                items = emptyList(),
++                idiomasAprendidos = emptySet(),
++                idiomaBase = Idioma.ES,
++                idiomaInterfaz = Idioma.ES,
++                existeFichaOrigen = { true },
++                onAbrirFicha = {},
++                onVolver = {},
++            )
++        }
++        composeTestRule.onNodeWithText(mensajeGuardadosVacio(Idioma.ES)).assertExists()
++    }
++}
+diff --git a/build.gradle.kts b/build.gradle.kts
+index 23ed3497..c0a9f0cf 100644
+--- a/build.gradle.kts
++++ b/build.gradle.kts
+@@ -3,4 +3,6 @@ plugins {
+     kotlin("android") version "2.0.21" apply false
+     kotlin("plugin.serialization") version "2.0.21" apply false
+     kotlin("plugin.compose") version "2.0.21" apply false
++    // Room (Guardados, feature 3): genera el Dao en tiempo de compilacion.
++    id("com.google.devtools.ksp") version "2.0.21-1.0.28" apply false
+ }
+diff --git a/proyecto/CLAUDE.md b/proyecto/CLAUDE.md
+index 394f7e5b..d3879a49 100644
+--- a/proyecto/CLAUDE.md
++++ b/proyecto/CLAUDE.md
+@@ -8,7 +8,7 @@ El brief completo está en `proyecto/PROMPT-CLAUDE-CODE.md`.
+ 1. **Nunca agregar el permiso `INTERNET` al manifiesto.** Es la prueba verificable de que la app no puede rastrear nada. Si algo parece necesitar red, no se hace.
+ 2. Los únicos datos que se leen del dispositivo son **la fecha** y, **si el usuario lo elige explícitamente**, el idioma del sistema. Nada sale del dispositivo. (La formulación original decía solo "la fecha"; se enmendó al agregar la opción "Idioma del sistema" — ver `docs/historial/AJUSTES-FASE-6.md`, bloque E. Una regla dura que se incumple en silencio deja de ser una regla.)
+ 3. Sin Google Play Services, Firebase, analítica, informes de fallos ni SDK de terceros.
+-4. **Sin persistencia de progreso.** Modo revista: manda la fecha. No implementarla aunque parezca una mejora obvia.
++4. **Sin persistencia de progreso.** Modo revista: manda la fecha. No implementarla aunque parezca una mejora obvia. (Excepcion unica y documentada, sept 2026: **Guardados** persiste en Room que vocabulario/expresiones marco el usuario -- ver `app/src/main/java/io/github/percati/lenguapp/datos/GuardadosDb.kt`. No es progreso pedagogico -- no dice que aprendio ni que le falta, es una lista de referencia que el usuario arma a mano, item por item -- asi que no compite con "modo revista": la semana que corresponde la sigue mandando la fecha, nunca un guardado. Es la unica tabla de datos de usuario en toda la app.)
+ 5. Semanas **ISO 8601** con la API nativa (`IsoFields.WEEK_OF_WEEK_BASED_YEAR`). Nunca a mano.
+ 6. `uiLanguage` y `baseLanguage` son **dos campos distintos en los datos**, aunque en la pantalla de ajustes se presenten como uno solo. No fusionarlos en el modelo: el día que alguien quiera interfaz en un idioma y glosas en otro, se desdobla el ajuste sin migrar datos.
+ 9. Los nombres de campo (`uiLanguage`, `baseLanguage`, `challengeType`…) **nunca aparecen en texto visible al usuario**.
+diff --git a/proyecto/FALTANTES.md b/proyecto/FALTANTES.md
+index df85f70c..6e77ac17 100644
+--- a/proyecto/FALTANTES.md
++++ b/proyecto/FALTANTES.md
+@@ -227,3 +227,40 @@ que aparezca un caso genuinamente distinto a los dos de arriba.
+ ## 9. Piloto 2026
+ 
+ Alemán B2, inglés B2 e inglés C1 siguen completos bajo el esquema viejo. No tocar hasta que se resuelva el id con año (sección 4).
++
++## 10. Features de app — ✅ implementadas por Code (sept 2026)
++
++Tres features de UI nuevas, sin tocar `contenido/` ni ningún schema.
++
++✅ **Switch de traducción en vivo (A2/B1):** dentro de la ficha, visible mientras
++se scrollea (no adentro del scroll de la ficha). Solo en fichas con
++`bilingue == true`. No persiste — arranca siempre mostrando `idiomaBase`, se
++resetea al cambiar de ficha. Afecta todos los campos `TextoBilingue` de la
++ficha, más `contraste`/`erroresContrastivos` (mismo criterio, aunque esos dos
++son un mecanismo previo a `TextoBilingue`).
++
++✅ **Desafío de fin de semana:** switch separado (chip, no el mismo componente
++que el de traducción), visible solo sábado 00:00–domingo 23:59 hora local.
++Arranca siempre en `off` — CLAUDE.md regla dura #13. Actívalo y "pasa al
++desafío": reemplaza el contenido normal por la `mision` de esa ficha bajo el
++encabezado "Desafío de fin de semana" — mecanismo nada más, el texto final de
++la variación queda para una conversación de contenido aparte.
++
++✅ **Guardados:** nueva sección para marcar vocabulario/expresiones desde
++cualquier ficha (ícono de estrella, toggle sin confirmación). Persiste en
++Room — **única excepción documentada a la regla dura #4**, ver `CLAUDE.md`.
++Filtro por idioma (uno a la vez, no mezcla), nivel y tipo. Tocar una fila
++lleva a la ficha de origen si esa edición sigue embebida; si no, se muestra
++sin el link. Buscar la ficha de origen es por `(skillId, idioma, nivel)`, no
++por id completo — `ItemGuardado` no guarda `order`/`anio`, así que si el
++mismo skill aparece más de una vez elige la primera que encuentra. Es una
++simplificación conocida, no un bug.
++
++Tests: 211 en `testDebugUnitTest` (antes 197), 0 fallas. `compileDebugKotlin
++compileDebugUnitTestKotlin test` limpio.
++
++🟡 **Nota de entorno:** `jre-21.0.5.11-hotspot` (el que usa `gradlew` por
++default en esta máquina) no trae `jlink`, necesario para el nuevo procesador
++de anotaciones de Room (KSP). Hace falta `jdk-21.0.5.11-hotspot` (la carpeta
++hermana, con JDK completo) — `$env:JAVA_HOME` apuntando ahí antes de compilar.
++No es nada del código ni del repo, es la instalación de Java de esta máquina.
+-- 
+2.55.0.windows.5
+
