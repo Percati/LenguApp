@@ -64,7 +64,12 @@ def main():
             prev = estado.get(k)
             # migracion silenciosa del formato viejo (booleano) al nuevo (dict)
             entrada = prev if isinstance(prev, dict) else ({"grabado": True} if prev else {})
-            entrada["grabado"] = bool(marca and str(marca).strip()) or entrada.get("grabado", False)
+            # El nombre del archivo es la prueba de que el audio existe: vale
+            # tanto como una marca en la columna "Grabado" (Fer a veces solo
+            # completa el nombre). Lo inverso no: ver el chequeo del final.
+            entrada["grabado"] = bool((marca and str(marca).strip())
+                                      or (archivo and str(archivo).strip())
+                                      or entrada.get("grabado", False))
             if marca and str(marca).strip():
                 # se guarda tal cual (p.ej. "Y (14.09.26)"): la fecha es dato de Fer
                 entrada["marca"] = str(marca).strip()
