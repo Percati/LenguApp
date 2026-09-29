@@ -107,13 +107,16 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Lingua dell'applicazione",
         Idioma.PT to "Idioma da aplicação",
     ),
+    // Una sola palabra por idioma: "Según el sistema" y sus equivalentes no
+    // entraban en el ancho de pantalla en varios de los 6 idiomas y obligaban
+    // a deslizar para leer la opcion completa.
     ClaveTexto.SEGUN_SISTEMA to mapOf(
-        Idioma.ES to "Según el sistema",
-        Idioma.EN to "Follow the system",
-        Idioma.DE to "Systemeinstellung",
-        Idioma.FR to "Selon le système",
-        Idioma.IT to "Come il sistema",
-        Idioma.PT to "Conforme o sistema",
+        Idioma.ES to "Sistema",
+        Idioma.EN to "System",
+        Idioma.DE to "System",
+        Idioma.FR to "Système",
+        Idioma.IT to "Sistema",
+        Idioma.PT to "Sistema",
     ),
     ClaveTexto.ESTILO_VISUAL to mapOf(
         Idioma.ES to "Estilo visual", Idioma.EN to "Visual style", Idioma.DE to "Erscheinungsbild",

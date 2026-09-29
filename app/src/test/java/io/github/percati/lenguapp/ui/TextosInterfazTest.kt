@@ -102,7 +102,7 @@ class TextosInterfazTest {
         assertEquals("Idioma que aprendés", etiquetaIdiomasAprendidos(Idioma.ES))
         assertEquals("Language you're learning", etiquetaIdiomasAprendidos(Idioma.EN))
         assertEquals("Sprache der App", etiquetaIdiomaApp(Idioma.DE))
-        assertEquals("Selon le système", etiquetaSegunSistema(Idioma.FR))
+        assertEquals("Système", etiquetaSegunSistema(Idioma.FR))
         assertEquals("Stile visivo", etiquetaEstiloVisual(Idioma.IT))
         assertEquals("Modo", etiquetaModo(Idioma.PT))
         assertEquals("Hell", etiquetaModoClaro(Idioma.DE))

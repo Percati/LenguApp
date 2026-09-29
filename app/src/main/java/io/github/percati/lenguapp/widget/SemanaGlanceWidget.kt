@@ -21,9 +21,11 @@ import androidx.glance.text.Text
 import androidx.glance.text.TextStyle
 import io.github.percati.lenguapp.MainActivity
 import io.github.percati.lenguapp.datos.cargarAjustes
+import io.github.percati.lenguapp.datos.cargarContenidoDesdeAssets
 import io.github.percati.lenguapp.datos.resolverSemana
 import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.id
 import io.github.percati.lenguapp.modelo.SemanaEspecial
 import io.github.percati.lenguapp.modelo.resolver
 import io.github.percati.lenguapp.presentacion.idiomaAplicacionEfectivo
@@ -51,7 +53,8 @@ class SemanaGlanceWidget : GlanceAppWidget() {
         // disponibilidad de calendario, esto es sobre preferencia vacia).
         val primerIdioma = ajustes.idiomasAprendidos.keys.minByOrNull { it.ordinal }
         val resultado = primerIdioma?.let { idioma ->
-            resolverSemana(context, idioma, ajustes.idiomasAprendidos.getValue(idioma))
+            val contenidoPorId = cargarContenidoDesdeAssets(context).associateBy { it.id }
+            resolverSemana(context, contenidoPorId, idioma, ajustes.idiomasAprendidos.getValue(idioma))
         }
         // Misma resolucion que MainActivity.kt: "segun el sistema" solo lee
         // el idioma del dispositivo si el usuario activo esa opcion

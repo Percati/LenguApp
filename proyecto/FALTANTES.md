@@ -391,3 +391,45 @@ contenido" (no crashean: verificado con test — `EntradaCalendario` no tenía
 el campo `desafioFinde` que trae todo calendario nuevo desde el Survival
 trimestral, se agregó como opcional para que el parser estricto no rompiera
 al cargar ninguno de los 10).
+
+(Nota: esto se resolvió después — ver sección 12, "Embebido por Code".)
+
+## 13. Transiciones lentas y etiqueta "Sistema" — ✅ arreglado (Code, sept 2026)
+
+Fer reportó lentitud al navegar entre semanas, cambiar el idioma que se
+aprende y volver de Ajustes a la pantalla principal. Perfilado antes de
+tocar nada (no se puso ningún spinner): la causa real era
+`resolverSemana()` (`datos/RepositorioSemana.kt`), que releía y reparseaba
+los **662 JSON de `assets/contenido/` (13 MB)** en cada una de esas tres
+transiciones — I/O sincrónico sobre `AssetManager`, en el hilo principal,
+porque el resultado vive en un `remember()` de `MainActivity.kt` que se
+descarta cada vez que esa composición se destruye (al navegar a Ajustes y
+volver, por ejemplo). El `remember` de `PantallaPrincipal` ya estaba bien
+keyeado (`fechaVista`, `idiomaActivo`, `nivelActivo`) — el problema no era
+recomposición de más, era el costo real de lo que se recomputaba cada vez.
+
+Arreglo: `contenidoPorId` se carga y parsea **una sola vez**, en
+`MainActivity.onCreate()` (mismo lugar donde ya se cargaba una vez para
+Guardados), y se pasa ya armado a `resolverSemana()`. El widget
+(`SemanaGlanceWidget.kt`) usa el mismo cambio de firma.
+
+**Medido, no "se siente más rápido"** (`RepositorioSemanaPerfTest.kt`,
+nuevo — parsea los 662 JSON reales embebidos, no un mock): 20 transiciones
+simuladas reparseando todo cada vez, **2444 ms**; las mismas 20 con el mapa
+ya cacheado, **10 ms** — **239x**. El test queda como guarda de regresión
+(falla si el parseo vuelve a colarse en el camino de resolución).
+
+Además, en la misma pasada: `ClaveTexto.SEGUN_SISTEMA` (Ajustes) pasó de
+una frase que no entraba en el ancho de pantalla en varios idiomas
+("Según el sistema", "Selon le système"…) a una palabra por idioma
+("Sistema", "System", "Système"…). Y `idiomaAplicacionEfectivo()`
+(`presentacion/IdiomaAplicacion.kt`): cuando "según el sistema" está activo
+pero el locale del dispositivo no es ninguno de los 6 idiomas soportados,
+el fallback ahora es **inglés fijo** (`Idioma.EN`, decisión de Fer — el más
+universal de los seis), no el último idioma elegido a mano como antes
+(eso seguía siendo `idiomaInterfaz`, que arranca en español por defecto).
+El caso "la opción está apagada" no cambió: ese sigue siendo `idiomaInterfaz`,
+una elección explícita del usuario, no un fallback.
+
+`compileDebugKotlin compileDebugUnitTestKotlin test`: limpio, 826 tests
+(antes 825), 0 fallas.

@@ -24,16 +24,18 @@ class IdiomaAplicacionTest {
     }
 
     @Test
-    fun `segun el sistema con un idioma no soportado cae al elegido a mano`() {
-        // "ca" (catalan) no es ninguno de los 6 idiomas soportados.
+    fun `segun el sistema con un idioma no soportado cae a ingles fijo, no al elegido a mano`() {
+        // "ca" (catalan) no es ninguno de los 6 idiomas soportados. El
+        // fallback es Idioma.EN fijo (decision de Fer), no idiomaInterfaz --
+        // aunque el usuario haya elegido PT a mano alguna vez.
         val ajustes = Ajustes(idiomaInterfaz = Idioma.PT, idiomaSegunSistema = true)
-        assertEquals(Idioma.PT, idiomaAplicacionEfectivo(ajustes, codigoIdiomaSistema = "ca"))
+        assertEquals(Idioma.EN, idiomaAplicacionEfectivo(ajustes, codigoIdiomaSistema = "ca"))
     }
 
     @Test
-    fun `segun el sistema sin codigo de idioma (nulo) cae al elegido a mano`() {
+    fun `segun el sistema sin codigo de idioma (nulo) cae a ingles fijo`() {
         val ajustes = Ajustes(idiomaInterfaz = Idioma.IT, idiomaSegunSistema = true)
-        assertEquals(Idioma.IT, idiomaAplicacionEfectivo(ajustes, codigoIdiomaSistema = null))
+        assertEquals(Idioma.EN, idiomaAplicacionEfectivo(ajustes, codigoIdiomaSistema = null))
     }
 
     // --- avisoGlosasSoloEnEspanol: correccion factual de AJUSTES-FASE-6.md, bloque C ---

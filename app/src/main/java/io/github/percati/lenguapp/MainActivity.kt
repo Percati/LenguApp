@@ -52,6 +52,7 @@ import io.github.percati.lenguapp.modelo.Ajustes
 import io.github.percati.lenguapp.modelo.ContenidoSemanal
 import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.id
 import io.github.percati.lenguapp.modelo.ItemGuardado
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.TextoBilingue
@@ -100,10 +101,16 @@ class MainActivity : ComponentActivity() {
         val nombresCalendario = nombresCalendarioDisponibles(this)
         val idiomasConContenido = idiomasConContenido(nombresCalendario)
         val nivelesConContenido = nivelesConContenido(nombresCalendario)
-        // Cargado una sola vez: Guardados necesita poder buscar la ficha de
-        // origen de un item por skillId sin pasar por el calendario (ver
-        // "tocar una fila lleva de vuelta a la ficha de origen").
+        // Cargado y parseado UNA sola vez por Activity, no en cada resolucion
+        // de semana: Guardados necesita poder buscar la ficha de origen de un
+        // item por skillId sin pasar por el calendario (ver "tocar una fila
+        // lleva de vuelta a la ficha de origen"), y resolverSemana() usa el
+        // mismo mapa en vez de releer y reparsear los 662 JSON de
+        // assets/contenido/ en cada cambio de semana/idioma/vuelta de
+        // Ajustes -- eso era la causa real de la lentitud reportada (ver el
+        // comentario de resolverSemana en RepositorioSemana.kt).
         val contenidoTodos = cargarContenidoDesdeAssets(this)
+        val contenidoPorId = contenidoTodos.associateBy { it.id }
         val repositorioGuardados = RepositorioGuardados(this)
         setContent {
             LenguAppApp(
@@ -112,7 +119,7 @@ class MainActivity : ComponentActivity() {
                 nivelesConContenido = nivelesConContenido,
                 contenidoTodos = contenidoTodos,
                 repositorioGuardados = repositorioGuardados,
-                resolver = { idioma, nivel, fecha -> resolverSemana(this, idioma, nivel, fecha) },
+                resolver = { idioma, nivel, fecha -> resolverSemana(this, contenidoPorId, idioma, nivel, fecha) },
                 onGuardarAjustes = { guardarAjustes(this, it) },
             )
         }
