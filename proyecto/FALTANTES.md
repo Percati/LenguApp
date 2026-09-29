@@ -240,8 +240,37 @@ arreglar sin tocar contenido congelado: `de-B2-2026-T01 1->2` (7 %) y `en-C1-202
 `DEUDA_PILOTO`, para que no tapen problemas reales del resto del calendario. Si algún día
 se descongela el piloto, hay que quitarlas de esa constante y rehacer esas dos cadenas.
 
+🔴 **`de-B2-2026`: los packs `T02-1` y `T02-2` están intercambiados respecto al orden real
+del calendario** — verificado con los datos crudos (no es un falso positivo del
+validador). El calendario dice semana 38 = `DE-G02` (debería usar el pack cronológicamente
+primero, `T02-1`) y semana 52 = `DE-F10` (debería usar `T02-2`); las `ocurrencias/` reales
+tienen exactamente al revés: `DE-G02`→`T02-2` y `DE-F10`→`T02-1`. Efecto real: un usuario
+en esas dos semanas del piloto ve un vocabulario pensado para la otra. Congelado por regla
+dura #11, no se toca — queda documentado para si el piloto se descongela alguna vez.
+
 Packs 2026 de los 7 pares parciales (de-A2/B1/C1/C2, en-A2/B1/C2): 84 packs escritos en
 sept-2026, 12 por par, uno por semana de contenido. Cobertura 126/126 en `--anio 2026`.
+
+## 12. Contenido 2026 completo (sept-2026) — ✅ verificado de punta a punta
+
+Apariciones (84 + 7 repasos), audio (1834 clips nuevos, 0 pendientes) y traducciones
+(1815 celdas, 4 pares bilingües) de los 7 pares parciales están cerrados. Verificado
+independientemente, no solo por los reportes:
+
+- `componer.py`: **606 fichas compuestas, 56 semanas especiales, 0 con problemas**.
+- `validar_apariciones.py --anio 2026`: 0 errores, 44 avisos (todos del piloto congelado,
+  sección 9). `--anio 2027`: 0 errores, 0 avisos, intacto.
+- Exportador de traducciones `--solo-pendientes`: 0 celdas. Exportador de audio
+  `--solo-pendientes` (con `--estado audio-estado.json` explícito — el default relativo
+  `../audio-estado.json` apunta mal si no se corre desde `proyecto/`): 0 textos.
+- 8202 `.ogg` reales en el repo, 8143 registrados en `audio-estado.json`, 0 registrados
+  sin archivo físico (los 59 de más son audio grabado por adelantado, no un hueco).
+- `ß` suelto en packs/ocurrencias 2026: 1 instancia, en `en-B1-2026.json`, dentro de una
+  traducción al alemán — cae bajo la misma excepción ya documentada en la sección 7.5
+  (alemán como idioma de interfaz, no como alemán suizo aprendido). No es un error.
+
+🔴 **Único pendiente real: Code tiene que embeber este contenido en `app/src/main/assets/`**
+y regenerar el APK. Ver sección 11 para el estado de los calendarios/assets.
 
 ## 10. Features de app — ✅ implementadas por Code (sept 2026)
 
