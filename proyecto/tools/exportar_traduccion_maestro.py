@@ -327,6 +327,72 @@ def _agrupar(crudo):
     return datos
 
 
+def recolectar_contraste(base):
+    """{idioma_que_se_aprende: [(nucleo, nivel, clave, texto, traduccion)]}.
+
+    Cada entrada de `contraste` esta atada al idioma de app de su clave, asi
+    que solo necesita UNA traduccion: la de esa clave. El texto original esta
+    escrito en el idioma que se aprende y no se toca.
+    """
+    datos = defaultdict(list)
+    for p in sorted(base.joinpath("nucleos").glob("*.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        if d.get("_tipo") or not d.get("contraste"):
+            continue
+        for clave, v in d["contraste"].items():
+            if isinstance(v, dict):
+                texto, trad = v.get(d["idioma"], ""), v.get(clave)
+            else:
+                texto, trad = v, None
+            datos[d["idioma"]].append((p.stem, d["nivel"], clave, texto, trad))
+    for idi in datos:
+        datos[idi].sort(key=lambda x: (ORDEN_NIVEL.index(x[1]), x[0], x[2]))
+    return datos
+
+
+def hoja_contraste(wb, idioma, filas, solo_pendientes=False):
+    if solo_pendientes:
+        filas = [f for f in filas if not f[4]]
+        if not filas:
+            return 0
+    ws = wb.create_sheet(f"Contraste {idioma.upper()}"[:31])
+    ws.freeze_panes = "A4"
+    ws["A1"] = f"Contraste — {NOMBRE[idioma]} (idioma que se aprende)"
+    ws["A1"].font = Font(bold=True, size=13)
+    ws["A2"] = ("Una fila por entrada de contraste. El texto original está en el idioma que se "
+                "aprende y no se toca: solo hay que traducirlo al idioma de la columna "
+                "«Idioma destino», que es el de la clave de esa entrada. La palabra o expresión "
+                "que deba quedar sin traducir va entre «comillas angulares», no entre asteriscos.")
+    ws["A2"].font = Font(size=9, color="7F6000")
+    ws["A2"].alignment = Alignment(wrap_text=True)
+
+    cab = ["Núcleo", "Nivel", "Entrada", "Idioma destino",
+           f"{NOMBRE[idioma]} — original", "Traducción"]
+    for j, t in enumerate(cab, start=1):
+        c = ws.cell(row=3, column=j, value=t)
+        c.font = Font(bold=True, color="FFFFFF", size=9); c.fill = CABEZA
+        c.alignment = Alignment(wrap_text=True, horizontal="center")
+    for i, a_ in enumerate([16, 7, 9, 14, 70, 70], start=1):
+        ws.column_dimensions[get_column_letter(i)].width = a_
+
+    fila = 3
+    tot = 0
+    for nucleo, nivel, clave, texto, trad in filas:
+        fila += 1
+        for j, v in enumerate([nucleo, nivel, clave, NOMBRE[clave], texto], start=1):
+            c = ws.cell(row=fila, column=j, value=v)
+            c.border = BORDE; c.alignment = Alignment(wrap_text=True)
+            if j == 5:
+                c.fill = GRIS
+        c = ws.cell(row=fila, column=6, value=trad)
+        c.border = BORDE; c.alignment = Alignment(wrap_text=True)
+        if trad:
+            c.fill = VERDE
+        else:
+            c.fill = AMBAR; tot += 1
+    return tot
+
+
 def hoja_prosa(wb, idioma, nivel, filas, prefijo="Prosa", rotulo="Prosa bilingüe",
                limites=True, nota_extra="", solo_pendientes=False):
     bases = [i for i in IDIOMAS if i != idioma]
@@ -455,6 +521,18 @@ def main():
                    if any(b not in f[3] for b in IDIOMAS if b != idi))
         etiqueta = f"{NOMBRE[idi]} {niv} — {pend if a.solo_pendientes else len(repaso[(idi, niv)])} textos"
         idx.cell(row=fila, column=1, value=etiqueta)
+        idx.cell(row=fila, column=2, value=n)
+        total += n
+        fila += 1
+    contraste = recolectar_contraste(Path(a.contenido))
+    fila += 1
+    c = idx.cell(row=fila, column=1, value="Contraste (todos los niveles)")
+    c.font = Font(bold=True, color="FFFFFF"); c.fill = CABEZA
+    idx.cell(row=fila, column=2).fill = CABEZA
+    fila += 1
+    for idi in sorted(contraste, key=lambda x: NOMBRE[x]):
+        n = hoja_contraste(wb, idi, contraste[idi], solo_pendientes=a.solo_pendientes)
+        idx.cell(row=fila, column=1, value=f"{NOMBRE[idi]} — {len(contraste[idi])} entradas")
         idx.cell(row=fila, column=2, value=n)
         total += n
         fila += 1

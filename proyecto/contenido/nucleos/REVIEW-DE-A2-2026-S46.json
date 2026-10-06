@@ -5,7 +5,14 @@
  "idioma": "de",
  "nivel": "A2",
  "clase": "review",
- "titulo": "Wiederholungswoche",
+ "titulo": {
+  "de": "Wiederholungswoche",
+  "en": "Review Week",
+  "es": "Semana de repaso",
+  "fr": "Semaine de révision",
+  "it": "Settimana di ripasso",
+  "pt": "Semana de revisão"
+ },
  "minutosEstimados": 30,
  "consigna": {
   "de": "Freitag, gesprochen: Erzählen Sie 90 Sekunden lang von etwas, das Sie in den letzten Wochen erlebt haben — bei der Arbeit, im Urlaub oder beim Arzt. Vorher dürfen Sie zwei oder drei Ideen notieren; abgelesen wird nicht.",
@@ -16,7 +23,14 @@
   "pt": "Sexta-feira, oral: fale durante 90 segundos sobre algo que você viveu nas últimas semanas, no trabalho, nas férias ou no médico. Você pode anotar duas ou três ideias antes, mas não leia."
  },
  "requisitos": [
-  "Eine Meinung mit Grund (Woche 41)",
+  {
+   "de": "Eine Meinung mit Grund (Woche 41)",
+   "en": "One opinion with a reason (week 41)",
+   "es": "Una opinión con una razón (semana 41)",
+   "fr": "Une opinion avec une justification (semaine 41)",
+   "it": "Un'opinione con una motivazione (settimana 41)",
+   "pt": "Uma opinião com uma justificativa (semana 41)"
+  },
   {
    "de": "Zwei Sätze im Perfekt (Woche 44)",
    "en": "Two sentences in the Perfekt (week 44)",
@@ -43,14 +57,56 @@
    "it": "*Lun (10 min).* Leggi le correzioni delle settimane dalla 41 alla 45. Annota quale errore compare più spesso.",
    "pt": "*Seg (10 min).* Leia suas correções das semanas 41 a 45. Anote qual erro aparece com mais frequência."
   },
-  "*Mi (5 Min.).* Schreiben Sie drei Sätze, in denen dieser Fehler nicht mehr vorkommt. Nur drei.",
-  "*Fr (5 Min.).* Nehmen Sie die 90 Sekunden auf. Danach einmal anhören: War der Fehler wieder da?"
+  {
+   "de": "*Mi (5 Min.).* Schreiben Sie drei Sätze, in denen dieser Fehler nicht mehr vorkommt. Nur drei.",
+   "en": "*Wed (5 min).* Write three sentences in which that mistake no longer appears. Only three.",
+   "es": "*Mié (5 min).* Escribe tres oraciones en las que ese error ya no aparezca. Solo tres.",
+   "fr": "*Mer. (5 min).* Écrivez trois phrases dans lesquelles cette erreur n'apparaît plus. Seulement trois.",
+   "it": "*Mer (5 min).* Scrivi tre frasi in cui quell'errore non compare più. Solo tre.",
+   "pt": "*Qua (5 min).* Escreva três frases em que esse erro não apareça mais. Só três."
+  },
+  {
+   "de": "*Fr (5 Min.).* Nehmen Sie die 90 Sekunden auf. Danach einmal anhören: War der Fehler wieder da?",
+   "en": "*Fri (5 min).* Record the 90 seconds. Then listen once: did the mistake appear again?",
+   "es": "*Vie (5 min).* Graba los 90 segundos. Después escucha una vez: ¿volvió a aparecer el error?",
+   "fr": "*Ven. (5 min).* Enregistrez les 90 secondes. Puis écoutez une fois : l'erreur est-elle réapparue ?",
+   "it": "*Ven (5 min).* Registra i 90 secondi. Poi ascolta una volta: l'errore è ricomparso?",
+   "pt": "*Sex (5 min).* Grave os 90 segundos. Depois ouça uma vez: o erro apareceu de novo?"
+  }
  ],
  "autochequeo": [
-  "Waren alle drei Punkte aus den Anforderungen dabei?",
-  "Habe ich abgelesen oder wirklich gesprochen?",
-  "Stand das Verb an der richtigen Stelle?",
-  "Ist der Fehler von Montag noch aufgetaucht?"
+  {
+   "de": "Waren alle drei Punkte aus den Anforderungen dabei?",
+   "en": "Were all three required points included?",
+   "es": "¿Incluí los tres puntos de los requisitos?",
+   "fr": "Les trois points demandés étaient-ils présents ?",
+   "it": "C'erano tutti e tre i punti richiesti?",
+   "pt": "Os três pontos exigidos apareceram?"
+  },
+  {
+   "de": "Habe ich abgelesen oder wirklich gesprochen?",
+   "en": "Did I read from my notes, or did I actually speak?",
+   "es": "¿Leí o realmente hablé?",
+   "fr": "Ai-je lu mes notes ou ai-je vraiment parlé ?",
+   "it": "Ho letto oppure ho parlato davvero?",
+   "pt": "Eu li ou realmente falei?"
+  },
+  {
+   "de": "Stand das Verb an der richtigen Stelle?",
+   "en": "Was the verb in the right position?",
+   "es": "¿Estaba el verbo en la posición correcta?",
+   "fr": "Le verbe était-il à la bonne place ?",
+   "it": "Il verbo era nella posizione corretta?",
+   "pt": "O verbo estava na posição correta?"
+  },
+  {
+   "de": "Ist der Fehler von Montag noch aufgetaucht?",
+   "en": "Did Monday's mistake appear again?",
+   "es": "¿Volvió a aparecer el error del lunes?",
+   "fr": "L'erreur de lundi est-elle réapparue ?",
+   "it": "L'errore di lunedì è ricomparso?",
+   "pt": "O erro de segunda-feira apareceu de novo?"
+  }
  ],
  "promptCorreccion": {
   "de": "Das ist eine Wiederholung von drei Dingen auf A2-Niveau: Meinung mit Grund, Perfekt, Modalverben. (1) Sag zu jedem, ob es vorkommt und ob es richtig ist. (2) Sag mir den einen Fehler, den ich am häufigsten mache. (3) Gib mir einen einzigen Satz, der alle drei Punkte enthält. Korrigiere nichts anderes. ---",

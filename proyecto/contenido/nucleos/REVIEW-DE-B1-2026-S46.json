@@ -5,7 +5,14 @@
  "idioma": "de",
  "nivel": "B1",
  "clase": "review",
- "titulo": "Wiederholungswoche",
+ "titulo": {
+  "de": "Wiederholungswoche",
+  "en": "Review Week",
+  "es": "Semana de repaso",
+  "fr": "Semaine de révision",
+  "it": "Settimana di ripasso",
+  "pt": "Semana de revisão"
+ },
  "minutosEstimados": 40,
  "consigna": {
   "de": "Freitag, gesprochen: Sprechen Sie zwei Minuten über eine Entscheidung, die bei Ihnen gerade ansteht — eine Reise, ein Arzttermin, eine Anschaffung. Vorher zwei oder drei Ideen notieren, dann frei sprechen.",
@@ -50,12 +57,40 @@
    "it": "*Lun (10 min).* Leggi le correzioni delle settimane dalla 41 alla 45. Annota l'errore più frequente e una frase che spieghi perché succede.",
    "pt": "*Seg (10 min).* Leia suas correções das semanas 41 a 45. Anote o erro mais frequente e uma frase explicando por que ele acontece."
   },
-  "*Mi (5 Min.).* Schreiben Sie vier Sätze, in denen dieser Fehler vermieden wird.",
-  "*Fr (5 Min.).* Nehmen Sie zwei Minuten auf. Danach anhören und den Fehler markieren."
+  {
+   "de": "*Mi (5 Min.).* Schreiben Sie vier Sätze, in denen dieser Fehler vermieden wird.",
+   "en": "*Wed (5 min).* Write four sentences that avoid this mistake.",
+   "es": "*Mié (5 min).* Escribe cuatro oraciones evitando ese error.",
+   "fr": "*Mer. (5 min).* Écrivez quatre phrases en évitant cette erreur.",
+   "it": "*Mer (5 min).* Scrivi quattro frasi evitando questo errore.",
+   "pt": "*Qua (5 min).* Escreva quatro frases evitando esse erro."
+  },
+  {
+   "de": "*Fr (5 Min.).* Nehmen Sie zwei Minuten auf. Danach anhören und den Fehler markieren.",
+   "en": "*Fri (5 min).* Record two minutes. Then listen and mark the mistake.",
+   "es": "*Vie (5 min).* Graba dos minutos. Después escucha y marca el error.",
+   "fr": "*Ven. (5 min).* Enregistrez deux minutes. Puis écoutez et repérez l'erreur.",
+   "it": "*Ven (5 min).* Registra due minuti. Poi ascolta e individua l'errore.",
+   "pt": "*Sex (5 min).* Grave dois minutos. Depois ouça e marque o erro."
+  }
  ],
  "autochequeo": [
-  "Sind alle drei Anforderungen wirklich vorgekommen?",
-  "War meine Begründung mehr als eine Wiederholung der Meinung?",
+  {
+   "de": "Sind alle drei Anforderungen wirklich vorgekommen?",
+   "en": "Were all three requirements really included?",
+   "es": "¿Aparecieron realmente los tres requisitos?",
+   "fr": "Les trois exigences étaient-elles vraiment présentes ?",
+   "it": "C'erano davvero tutti e tre i requisiti?",
+   "pt": "Os três requisitos realmente apareceram?"
+  },
+  {
+   "de": "War meine Begründung mehr als eine Wiederholung der Meinung?",
+   "en": "Was my justification more than a repetition of my opinion?",
+   "es": "¿Fue mi justificación algo más que repetir mi opinión?",
+   "fr": "Ma justification allait-elle au-delà d'une simple répétition de mon opinion ?",
+   "it": "La mia motivazione era più di una semplice ripetizione della mia opinione?",
+   "pt": "Minha justificativa foi mais do que uma repetição da minha opinião?"
+  },
   {
    "de": "Kam das Wichtigste zuerst oder erst am Schluss?",
    "en": "Did the most important point come first, or only at the end?",
@@ -64,8 +99,22 @@
    "it": "La cosa più importante è venuta prima o solo alla fine?",
    "pt": "O ponto mais importante veio primeiro ou só no final?"
   },
-  "Stimmte die Verbstellung, als ich schneller wurde?",
-  "Ist der Fehler von Montag wieder aufgetaucht?"
+  {
+   "de": "Stimmte die Verbstellung, als ich schneller wurde?",
+   "en": "Was the verb placement correct when I started speaking faster?",
+   "es": "¿Era correcta la posición del verbo cuando empecé a hablar más rápido?",
+   "fr": "La place du verbe était-elle correcte quand j'ai commencé à parler plus vite ?",
+   "it": "La posizione del verbo era corretta quando ho iniziato a parlare più velocemente?",
+   "pt": "A posição do verbo estava correta quando comecei a falar mais rápido?"
+  },
+  {
+   "de": "Ist der Fehler von Montag wieder aufgetaucht?",
+   "en": "Did Monday's mistake come back?",
+   "es": "¿Volvió a aparecer el error del lunes?",
+   "fr": "L'erreur de lundi est-elle revenue ?",
+   "it": "L'errore di lunedì è tornato?",
+   "pt": "O erro de segunda-feira voltou?"
+  }
  ],
  "promptCorreccion": {
   "de": "Das ist eine Wiederholung von drei Punkten auf B1-Niveau: Meinung mit Begründung, Zusammenfassen mit dem Wichtigsten zuerst, Vorschläge machen. (1) Sag zu jedem, ob er vorkommt und ob er gelungen ist. (2) Sag mir, welcher unter Zeitdruck zusammenbricht. (3) Gib mir einen Satz, der zwei davon gleichzeitig trägt. Korrigiere nichts ausserhalb dieser drei Punkte. ---",

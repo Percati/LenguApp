@@ -26,6 +26,7 @@ Cubre los dos bloques del maestro:
 Uso:
     python3 importar_traduccion_maestro.py ../traducciones-a-completar.xlsx --contenido ../contenido
 """
+from collections import defaultdict
 import argparse, json, re, sys
 from pathlib import Path
 import openpyxl
@@ -333,6 +334,73 @@ def volcar_repaso(base, por_combo):
     return archivos, celdas
 
 
+def datos_desde_contenido(base):
+    """{(idioma, nivel): {texto_original: {destino: texto}}} con lo YA traducido.
+
+    Sirve para normalizar: un mismo texto puede estar como objeto {idioma: texto}
+    en un archivo y como string plano en otro (p. ej. la misma consigna repetida
+    en 2026 y 2027). El maestro agrupa los repetidos en una fila, asi que si esa
+    fila ya estaba completa no vuelve a salir y esas copias quedan sin traducir.
+    Con este indice se completan solas, sin pasar por el Excel.
+    """
+    datos = defaultdict(dict)
+
+    def anotar(combo, v):
+        if isinstance(v, dict) and combo[0] in v:
+            datos[combo].setdefault(v[combo[0]], {c: t for c, t in v.items() if c != combo[0]})
+
+    for p in sorted(base.joinpath("nucleos").glob("*.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        combo = (d.get("idioma"), d.get("nivel"))
+        if d.get("_tipo") == "semana_especial":
+            for clave in ("titulo", "consigna", "promptCorreccion"):
+                anotar(combo, d.get(clave))
+            for clave in ("requisitos", "microtareas", "autochequeo"):
+                for x in d.get(clave, []):
+                    anotar(combo, x)
+            continue
+        for ruta, v in _recorrer_nucleo(d):
+            anotar(combo, v)
+
+    for p in sorted(base.joinpath("ocurrencias").glob("*.json")):
+        d = json.loads(p.read_text(encoding="utf-8"))
+        combo = (d["idioma"], d["nivel"])
+        for a in d["apariciones"]:
+            anotar(combo, a.get("subtitulo"))
+            m = a.get("mision") or {}
+            anotar(combo, m.get("consigna"))
+            for x in m.get("requisitos", []):
+                anotar(combo, x)
+            for mt in a.get("microtareas", []):
+                anotar(combo, mt.get("texto"))
+    return datos
+
+
+def _recorrer_nucleo(d):
+    """(ruta, valor) de los campos bilingues de un nucleo normal."""
+    for clave in ("titulo", "descripcion", "promptCorreccion"):
+        if clave in d:
+            yield [clave], d[clave]
+    c = d.get("cuadroReferencia") or {}
+    for clave in ("titulo", "notaPie"):
+        if c.get(clave) is not None:
+            yield ["cuadroReferencia", clave], c[clave]
+    for i, x in enumerate(c.get("columnas", [])):
+        yield ["cuadroReferencia", "columnas", i], x
+    for i, fila in enumerate(c.get("filas", [])):
+        for j, x in enumerate(fila):
+            yield ["cuadroReferencia", "filas", i, j], x
+    for i, e in enumerate(d.get("ejemplos", [])):
+        if "texto" in e:
+            yield ["ejemplos", i, "texto"], e["texto"]
+    for clave in ("notas", "errores", "autochequeo"):
+        for i, x in enumerate(d.get(clave, [])):
+            yield [clave, i], x
+    for i, r in enumerate(d.get("redemittel", [])):
+        if "funcion" in r:
+            yield ["redemittel", i, "funcion"], r["funcion"]
+
+
 def volcar_prosa(base, por_combo):
     """Escribe la prosa traducida en nucleos y ocurrencias. Devuelve (archivos, celdas)."""
     archivos = celdas = 0
@@ -438,12 +506,21 @@ def main():
     n_archivos, n_celdas = volcar_prosa(base, por_combo)
     n_sem, n_celdas_sem = volcar_repaso(base, por_repaso)
 
+    # Normalizacion: copias del mismo texto que quedaron como string plano.
+    ya = datos_desde_contenido(base)
+    n_norm_arch, n_norm = volcar_prosa(base, ya)
+    n_norm_arch2, n_norm2 = volcar_repaso(base, ya)
+
     print(f"{n_red} expresiones y {n_voc} items de vocabulario actualizados en el contenido fuente.",
           file=sys.stderr)
     print(f"Prosa A2/B1: {n_celdas} traducciones escritas en {n_archivos} archivos.",
           file=sys.stderr)
     print(f"Semanas de repaso A2/B1: {n_celdas_sem} traducciones escritas en {n_sem} archivos.",
           file=sys.stderr)
+    if n_norm or n_norm2:
+        print(f"Normalizacion: {n_norm + n_norm2} traducciones copiadas a textos repetidos que "
+              f"habian quedado como string plano, en {n_norm_arch + n_norm_arch2} archivos.",
+              file=sys.stderr)
     print("Volvé a correr exportar_traduccion_maestro.py: esas celdas ya van a salir verdes.",
           file=sys.stderr)
 
