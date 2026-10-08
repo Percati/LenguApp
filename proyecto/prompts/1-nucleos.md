@@ -33,6 +33,17 @@ Reglas de contenido que NO tenés que reinventar (ya están decididas):
 - El campo `contraste` es un diccionario por idioma de app: escribí SOLO la clave
   `"es"`. Las claves `it`, `fr`, `pt`, `en` las agrega la conversación de Contrastes
   — no las toques si ya existen, no inventes contenido para esas claves.
+- `categoriasUso` de cada redemittel (decidido oct 2026): array de 1 o más
+  etiquetas de filtro, con la lista cerrada en `data/categorias-uso.json` — 18
+  funciones comunicativas y 15 patrones gramaticales. El schema lo declara como
+  array de strings libre a propósito y delega la lista en esta conversación, así
+  que **los strings tienen que ser los del archivo, carácter por carácter**; no
+  inventes una categoría nueva sin decidirla con Fer. Validá con
+  `python3 tools/validar_categorias.py` antes de cerrar la tanda. Un redemittel
+  puede llevar etiquetas de las dos ramas a la vez: un patrón gramatical también
+  cumple una función comunicativa. `[]` significa revisado y sin categoría que
+  encaje, que NO es lo mismo que el campo ausente (= todavía sin revisar); no
+  fuerces una etiqueta para vaciar la lista.
 - Errores típicos (decidido por la conversación de Errores Típicos, sept 2026):
   `errores` es la lista UNIVERSAL (2+): solo errores que comete cualquier
   aprendiente, sea cual sea su idioma de app. Nunca nombres un idioma concreto ahí

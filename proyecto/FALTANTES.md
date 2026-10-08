@@ -225,6 +225,41 @@ de las dos excepciones siguientes:
 No queda ninguna instancia fuera de estas dos categorías. No reabrir salvo
 que aparezca un caso genuinamente distinto a los dos de arriba.
 
+## 7.6 Categorías de uso de los redemittel (`categoriasUso`) — 91% tageado
+
+Tageadas **2624 de 2897** expresiones contra `data/categorias-uso.json` (18 funciones
+comunicativas + 15 patrones gramaticales). Validar con
+`python3 tools/validar_categorias.py`.
+
+Las **273 restantes** quedaron con `categoriasUso: []`, que significa *revisado y sin
+categoría que encaje* — distinto del campo ausente, que sería *sin revisar*. No se
+forzó ninguna etiqueta para vaciar la lista.
+
+De esas 273, **221 son un hueco de la taxonomía, no casos raros**: caen en skills cuyo
+contenido es léxico-semántico, y ninguna de las dos ramas (función comunicativa /
+patrón gramatical) está pensada para describirlo.
+
+| Expresiones | Skill | Qué describe su `funcion` |
+|---|---|---|
+| 43 | DE-V06 | formación de palabras (*Kompositum*, *un-* + adjetivo) |
+| 29 | DE-V08 | helvetismos |
+| 24 | DE-V07 | sinónimo coloquial frente al estándar |
+| 22 | EN-F17 | cambio de registro formal/informal |
+| 22 | EN-V08 | precisión léxica (qué reemplaza a *very*, *good*) |
+| 18 | DE-F13 | registro du/Sie |
+| 17 + 16 | EN-V09, DE-V09 | connotación |
+| 16 | EN-F03 | describir personas y lugares |
+| 14 | EN-G18 | determinantes y cuantificadores |
+
+Cubrirlas exigiría decidir con Fer una tercera rama o 4-5 categorías más — del tipo
+*Registro*, *Formación de palabras*, *Variante regional*, *Elección léxica y
+connotación*, *Describir* y *Determinación*. **No se inventaron**: la taxonomía
+vigente es la aprobada el 08-10-2026.
+
+Las otras 52 son cola larga: descripciones de `funcion` únicas y muy específicas
+(«plants a detail whose weight comes later»). Se resuelven a mano o ampliando el
+léxico, sin decisión de diseño de por medio.
+
 ## 8. Sin dueño todavía
 
 - **Semanas especiales sin soporte multiidioma:** ✅ el lado de Code ya está resuelto. `semana-especial.schema.json` acepta `oneOf` string plano u objeto `{idioma: texto}` en sus 6 campos de texto (no obligatorio; B2/C1/C2 siguen monolingües), y los modelos Kotlin (`SemanaEspecial`) y la pantalla ya los resuelven. **Falta solo la traducción del contenido de las semanas de repaso A2/B1 (Traducciones).** Además el id de las semanas especiales ahora lleva año: `REVIEW-DE-B2-2027-S10`, `SURVIVAL-EN-B2-2026-S44` (los 49 archivos de `contenido/nucleos/` se renombraron y `componer.py` ahora los valida contra su schema). Verificado: 522 fichas, 49 semanas especiales, 0 problemas.

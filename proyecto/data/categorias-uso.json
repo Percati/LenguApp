@@ -1,0 +1,42 @@
+{
+  "_nota": "Lista cerrada de valores validos del campo `categoriasUso` de redemittel. El schema lo declara como array de strings libre a proposito: la lista la aplica la conversacion de Nucleos por convencion, y este archivo ES esa convencion. Cualquier valor fuera de aqui es un error de tipeo, no una categoria nueva. Para agregar una, decidirlo con Fer primero.",
+  "_aprobado": "2026-10-08. 15 funciones comunicativas y 7 patrones gramaticales aprobados por Fer; +3 comunicativas y +8 gramaticales aprobados el mismo dia al detectar que el 62% de los redemittel de nucleos grammar no tenia patron que los recibiera.",
+  "_uso": "Una expresion lleva 1 o mas categorias, de cualquiera de las dos ramas: un redemittel gramatical puede ademas cumplir una funcion comunicativa.",
+  "funcionComunicativa": [
+    "Opinar",
+    "Acordar",
+    "Discrepar",
+    "Pedir",
+    "Preguntar/pedir aclaración",
+    "Sugerir/proponer",
+    "Aconsejar",
+    "Dar razones",
+    "Ejemplificar",
+    "Reformular",
+    "Organizar el discurso",
+    "Suponer/especular",
+    "Plantear un problema/quejarse",
+    "Postergar una decisión",
+    "Describir un proceso o camino",
+    "Saludar y despedirse",
+    "Agradecer y disculparse",
+    "Reaccionar y valorar"
+  ],
+  "patronGramatical": [
+    "Colocación fija",
+    "Rección (preposición/caso)",
+    "Tiempo verbal específico",
+    "Comparación",
+    "Modalidad (capacidad/obligación)",
+    "Hábito/rutina",
+    "Duración",
+    "Subordinación y conectores",
+    "Orden de palabras y énfasis",
+    "Caso y declinación",
+    "Voz pasiva e impersonalidad",
+    "Irrealidad y condicionalidad",
+    "Discurso referido",
+    "Nominalización y compresión",
+    "Relativización"
+  ]
+}
