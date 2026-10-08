@@ -401,6 +401,60 @@ def _recorrer_nucleo(d):
             yield ["redemittel", i, "funcion"], r["funcion"]
 
 
+def leer_hoja_contraste(ws):
+    """Devuelve {(nucleo, entrada): traduccion} de una hoja "Contraste XX".
+
+    Columnas: Nucleo | Nivel | Entrada | Idioma destino | <Idioma> - original | Traduccion
+    """
+    out = {}
+    for r in range(4, ws.max_row + 1):
+        nucleo = ws.cell(row=r, column=1).value
+        entrada = ws.cell(row=r, column=3).value
+        trad = ws.cell(row=r, column=6).value
+        if not nucleo or not entrada:
+            continue
+        if trad is None or not str(trad).strip():
+            continue
+        out[(str(nucleo).strip(), str(entrada).strip())] = str(trad).strip()
+    return out
+
+
+def volcar_contraste(base, por_nucleo):
+    """Pasa cada entrada de contraste de string plano al objeto bilingue.
+
+    {clave: "texto"} -> {clave: {idioma_aprendido: "texto", clave: "traduccion"}}
+    Nunca pisa una clave interna que ya exista.
+    """
+    if not por_nucleo:
+        return 0, 0
+    n_arch = n_celdas = 0
+    for p in sorted(base.joinpath("nucleos").glob("*.json")):
+        original = p.read_text(encoding="utf-8")
+        d = json.loads(original)
+        if d.get("_tipo") or not d.get("contraste"):
+            continue
+        idi = d["idioma"]
+        cambios = []
+        for clave, v in d["contraste"].items():
+            trad = por_nucleo.get((p.stem, clave))
+            if not trad:
+                continue
+            if isinstance(v, dict):
+                if clave in v:
+                    continue
+                nuevo = dict(v)
+                nuevo[clave] = trad
+            else:
+                nuevo = {idi: v, clave: trad}
+            d["contraste"][clave] = nuevo
+            cambios.append((["contraste", clave], nuevo))
+            n_celdas += 1
+        if cambios:
+            escribir(p, original, d, cambios)
+            n_arch += 1
+    return n_arch, n_celdas
+
+
 def volcar_prosa(base, por_combo):
     """Escribe la prosa traducida en nucleos y ocurrencias. Devuelve (archivos, celdas)."""
     archivos = celdas = 0
@@ -447,8 +501,12 @@ def main():
     por_idioma = {}
     por_combo = {}
     por_repaso = {}
+    por_contraste = {}
     for hoja in wb.sheetnames:
         if hoja.upper().startswith("ÍNDICE") or hoja.upper().startswith("INDICE"):
+            continue
+        if hoja.startswith("Contraste "):
+            por_contraste.update(leer_hoja_contraste(wb[hoja]))
             continue
         if hoja.startswith("Prosa ") or hoja.startswith("Repaso "):
             partes = hoja.split()
@@ -505,6 +563,7 @@ def main():
 
     n_archivos, n_celdas = volcar_prosa(base, por_combo)
     n_sem, n_celdas_sem = volcar_repaso(base, por_repaso)
+    n_cont_arch, n_cont = volcar_contraste(base, por_contraste)
 
     # Normalizacion: copias del mismo texto que quedaron como string plano.
     ya = datos_desde_contenido(base)
@@ -517,6 +576,9 @@ def main():
           file=sys.stderr)
     print(f"Semanas de repaso A2/B1: {n_celdas_sem} traducciones escritas en {n_sem} archivos.",
           file=sys.stderr)
+    if n_cont:
+        print(f"Contraste bilingue: {n_cont} entradas pasadas a objeto en {n_cont_arch} archivos.",
+              file=sys.stderr)
     if n_norm or n_norm2:
         print(f"Normalizacion: {n_norm + n_norm2} traducciones copiadas a textos repetidos que "
               f"habian quedado como string plano, en {n_norm_arch + n_norm_arch2} archivos.",

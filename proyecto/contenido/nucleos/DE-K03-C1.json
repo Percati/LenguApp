@@ -59,11 +59,26 @@
   "Der Nominalstil ist Register, kein Ersatz für jeden Verbalsatz: in der gesprochenen Sprache wirkt er steif."
  ],
  "contraste": {
-  "es": "Das Spanische bevorzugt Infinitivkonstruktionen an genau dieser Stelle: con vistas a la aplicación de la directiva verwendet ebenfalls ein Nomen, aber ohne die deutsche Genitivkette dahinter — meist folgt de + Nomen einmal, nicht mehrfach verschachtelt. Spanischsprachige unternominalisieren deshalb im Bericht und bauen die Kette gar nicht erst auf.",
-  "en": "Das Englische bevorzugt an dieser Stelle verbale Konstruktionen (with a view to implementing the directive). Englischsprachige lösen die deutsche Kette deshalb gern in einen Infinitivsatz auf (um die Richtlinie umzusetzen), der im Bericht zu wenig formell wirkt, oder bilden die Kette mit von statt mit Genitiv.",
-  "it": "Das italienische burocratese baut ganz ähnliche Ketten (in vista dell'attuazione della direttiva), weshalb Italienischsprachige das Muster schnell produzieren. Die Risiken sind eher Übermass und Kasus: zu lange Ketten und di als von statt als Genitiv (die Umsetzung von der Richtlinie).",
-  "fr": "Das Französische baut dieselbe Kette (en vue de la mise en œuvre de la directive), Französischsprachige produzieren das Muster also fast wörtlich. Die Fehlerquelle ist der Kasus, den de verbirgt: Im Deutschen müssen Artikel und Nomen die Genitivendung tragen, und genau das -s fehlt oft (die Umsetzung des Projekt).",
-  "pt": "Portugiesisch lässt an dieser Stelle beide Stile zu (tendo em vista a implementação da diretiva oder com vista a implementar a diretiva) und wählt im Zweifel den verbalen. Portugiesischsprachige bauen die deutsche Genitivkette deshalb selten von sich aus auf und übertragen da/do als von statt als Genitiv."
+  "es": {
+   "de": "Das Spanische bevorzugt Infinitivkonstruktionen an genau dieser Stelle: con vistas a la aplicación de la directiva verwendet ebenfalls ein Nomen, aber ohne die deutsche Genitivkette dahinter — meist folgt de + Nomen einmal, nicht mehrfach verschachtelt. Spanischsprachige unternominalisieren deshalb im Bericht und bauen die Kette gar nicht erst auf.",
+   "es": "El español prefiere precisamente en este punto las construcciones de infinitivo: «con vistas a la aplicación de la directiva» también emplea un sustantivo, pero sin la cadena de genitivos alemana; normalmente aparece una sola relación con «de», no varias encadenadas. Por eso, los hispanohablantes tienden a verbalizar el informe y ni siquiera construyen esa cadena."
+  },
+  "en": {
+   "de": "Das Englische bevorzugt an dieser Stelle verbale Konstruktionen (with a view to implementing the directive). Englischsprachige lösen die deutsche Kette deshalb gern in einen Infinitivsatz auf (um die Richtlinie umzusetzen), der im Bericht zu wenig formell wirkt, oder bilden die Kette mit von statt mit Genitiv.",
+   "en": "English prefers verbal constructions here («with a view to implementing the directive»). English speakers therefore tend to dissolve the German nominal chain into an infinitive clause («um die Richtlinie umzusetzen»), which may sound insufficiently formal in a report, or they build the chain with «von» instead of the genitive."
+  },
+  "it": {
+   "de": "Das italienische burocratese baut ganz ähnliche Ketten (in vista dell'attuazione della direttiva), weshalb Italienischsprachige das Muster schnell produzieren. Die Risiken sind eher Übermass und Kasus: zu lange Ketten und di als von statt als Genitiv (die Umsetzung von der Richtlinie).",
+   "it": "Il «burocratese» italiano costruisce catene molto simili («in vista dell'attuazione della direttiva»), perciò gli italofoni producono presto questo modello. I rischi sono piuttosto l'eccesso e il caso: catene troppo lunghe e «di» reso con «von» invece che con un genitivo («die Umsetzung von der Richtlinie»)."
+  },
+  "fr": {
+   "de": "Das Französische baut dieselbe Kette (en vue de la mise en œuvre de la directive), Französischsprachige produzieren das Muster also fast wörtlich. Die Fehlerquelle ist der Kasus, den de verbirgt: Im Deutschen müssen Artikel und Nomen die Genitivendung tragen, und genau das -s fehlt oft (die Umsetzung des Projekt).",
+   "fr": "Le français construit la même chaîne («en vue de la mise en œuvre de la directive»), de sorte que les francophones peuvent presque transférer le modèle mot pour mot. La source d'erreur est le cas, masqué par «de» en français : en allemand, article et nom doivent porter la marque du génitif, et c'est précisément le «-s» qui manque souvent («die Umsetzung des Projekt»)."
+  },
+  "pt": {
+   "de": "Portugiesisch lässt an dieser Stelle beide Stile zu (tendo em vista a implementação da diretiva oder com vista a implementar a diretiva) und wählt im Zweifel den verbalen. Portugiesischsprachige bauen die deutsche Genitivkette deshalb selten von sich aus auf und übertragen da/do als von statt als Genitiv.",
+   "pt": "O português admite aqui os dois estilos («tendo em vista a implementação da diretiva» ou «com vista a implementar a diretiva») e, na dúvida, tende ao verbal. Por isso, falantes de português raramente constroem espontaneamente a cadeia de genitivos alemã e costumam transferir «da/do» como «von» em vez de usar genitivo."
+  }
  },
  "errores": [
   "Dativ statt Genitiv nach aufgrund, angesichts, infolge: aufgrund dem Projekt.",
