@@ -60,4 +60,30 @@ class MarcadoEnLineaTest {
     fun `textoSinMarcado quita los marcadores para superficies sin estilo (widget)`() {
         assertEquals("Say the word and no more", textoSinMarcado("Say *the word* and **no** more"))
     }
+
+    // --- angulares: palabra objetivo entre « » cuando la ficha muestra la traduccion ---
+
+    @Test
+    fun `angulares envuelve la cita entre comillas angulares y la deja en cursiva`() {
+        val resultado = textoConMarcado("Se dice *weil* y el verbo va al final.", angulares = true)
+        assertEquals("Se dice «weil» y el verbo va al final.", resultado.text)
+        val cursiva = resultado.spanStyles.single()
+        assertEquals(SpanStyle(fontStyle = FontStyle.Italic), cursiva.item)
+        assertEquals("«weil»", resultado.text.substring(cursiva.start, cursiva.end))
+    }
+
+    @Test
+    fun `sin angulares la cita solo se italiza, como siempre`() {
+        assertEquals("Se dice weil", textoConMarcado("Se dice *weil*").text)
+    }
+
+    @Test
+    fun `angulares no duplica si el texto ya trae las comillas angulares escritas a mano`() {
+        assertEquals("Se dice «weil»", textoConMarcado("Se dice «*weil*»", angulares = true).text)
+    }
+
+    @Test
+    fun `angulares no envuelve el destaque doble asterisco`() {
+        assertEquals("el verbo kündigen", textoConMarcado("el verbo **kündigen**", angulares = true).text)
+    }
 }

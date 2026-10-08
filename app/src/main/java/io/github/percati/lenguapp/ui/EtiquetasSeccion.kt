@@ -4,82 +4,92 @@ import io.github.percati.lenguapp.modelo.Dia
 import io.github.percati.lenguapp.modelo.Idioma
 
 /**
- * Los titulos de seccion siguen el idioma de la ficha, no el de la
- * interfaz: mostrar "Vocabulario" en una ficha alemana mientras el resto
- * esta en aleman es incoherente. Tabla indexada por ficha.idioma -- ver
- * proyecto/AJUSTES-FASE-5.md, B1. Solo en/de por ahora: son los dos unicos
- * idiomas con contenido.
+ * Titulos de seccion de la ficha, en los SEIS idiomas soportados (antes eran
+ * dos mapas fijos -- ingles/aleman por la ficha y un espanol concatenado
+ * para las bilingues -- que nunca resolvian DE/IT/FR/PT y dejaban
+ * "Redemittel" tambien en espanol). Mismo patron que TIPO_VOCABULARIO /
+ * TIPO_EXPRESION en TextosInterfaz.kt: una tabla clave -> idioma -> texto.
+ *
+ * Que idioma se pide lo decide quien llama: una ficha bilingue (A2/B1) usa
+ * el idioma que el switch de traduccion esta mostrando; una no bilingue, el
+ * idioma que se aprende (los titulos siguen el idioma de la ficha, no el
+ * de la interfaz -- proyecto/AJUSTES-FASE-5.md, B1).
+ *
+ * "contraste" es un caso aparte: es el titulo de la seccion de contraste
+ * cuando se muestra TRADUCIDA, y nombra al idioma de app en el propio idioma
+ * de app ("Contraste con el espanol"). Cuando se muestra en el idioma que se
+ * aprende el titulo nombra al idioma BASE desde afuera -- ver
+ * [etiquetaContraste].
  */
-private val ETIQUETAS_EN = mapOf(
-    "descripcion" to "Description",
-    "cuadroReferencia" to "Reference",
-    "ejemplos" to "Examples",
-    "notas" to "Notes",
-    "errores" to "Common mistakes",
-    "vocabulario" to "Vocabulary",
-    "redemittel" to "Expressions",
-    "mision" to "Mission",
-    // El desafio de fin de semana reusa la mision con otro encabezado: no
-    // es contenido nuevo, asi que no tiene fila propia en las traducciones
-    // resueltas de AJUSTES-FASE-5.md -- agregado para esa reetiqueta.
-    "desafio" to "Weekend Challenge",
+private val ETIQUETAS: Map<String, Map<Idioma, String>> = mapOf(
+    "descripcion" to mapOf(
+        Idioma.ES to "Descripción", Idioma.EN to "Description", Idioma.DE to "Beschreibung",
+        Idioma.FR to "Description", Idioma.IT to "Descrizione", Idioma.PT to "Descrição",
+    ),
+    "cuadroReferencia" to mapOf(
+        Idioma.ES to "Cuadro de referencia", Idioma.EN to "Reference", Idioma.DE to "Übersichtskasten",
+        Idioma.FR to "Tableau de référence", Idioma.IT to "Quadro di riferimento", Idioma.PT to "Quadro de referência",
+    ),
+    "ejemplos" to mapOf(
+        Idioma.ES to "Ejemplos", Idioma.EN to "Examples", Idioma.DE to "Beispiele",
+        Idioma.FR to "Exemples", Idioma.IT to "Esempi", Idioma.PT to "Exemplos",
+    ),
+    "notas" to mapOf(
+        Idioma.ES to "Notas", Idioma.EN to "Notes", Idioma.DE to "Hinweise",
+        Idioma.FR to "Notes", Idioma.IT to "Note", Idioma.PT to "Notas",
+    ),
+    "errores" to mapOf(
+        Idioma.ES to "Errores comunes", Idioma.EN to "Common mistakes", Idioma.DE to "Typische Fehler",
+        Idioma.FR to "Erreurs fréquentes", Idioma.IT to "Errori comuni", Idioma.PT to "Erros comuns",
+    ),
+    "vocabulario" to mapOf(
+        Idioma.ES to "Vocabulario", Idioma.EN to "Vocabulary", Idioma.DE to "Themenwortschatz",
+        Idioma.FR to "Vocabulaire", Idioma.IT to "Lessico", Idioma.PT to "Vocabulário",
+    ),
+    "redemittel" to mapOf(
+        Idioma.ES to "Expresiones", Idioma.EN to "Expressions", Idioma.DE to "Redemittel",
+        Idioma.FR to "Expressions", Idioma.IT to "Espressioni", Idioma.PT to "Expressões",
+    ),
+    "mision" to mapOf(
+        Idioma.ES to "Misión", Idioma.EN to "Mission", Idioma.DE to "Wochenaufgabe",
+        Idioma.FR to "Mission", Idioma.IT to "Missione", Idioma.PT to "Missão",
+    ),
+    // El desafio de fin de semana reusa la mision con otro encabezado: no es
+    // contenido nuevo, asi que no tiene fila propia en las traducciones
+    // resueltas de AJUSTES-FASE-5.md.
+    "desafio" to mapOf(
+        Idioma.ES to "Desafío de fin de semana", Idioma.EN to "Weekend Challenge", Idioma.DE to "Wochenend-Herausforderung",
+        Idioma.FR to "Défi du week-end", Idioma.IT to "Sfida del weekend", Idioma.PT to "Desafio de fim de semana",
+    ),
     // No esta en la tabla de AJUSTES-FASE-5.md (esa cubre solo la ficha):
     // SemanaEspecial tiene su propia seccion "requisitos", sin "mision".
-    "requisitos" to "Requirements",
-    "microtareas" to "Micro-tasks",
-    "autochequeo" to "Self-check",
-    "promptCorreccion" to "Correction prompt",
+    "requisitos" to mapOf(
+        Idioma.ES to "Requisitos", Idioma.EN to "Requirements", Idioma.DE to "Anforderungen",
+        Idioma.FR to "Exigences", Idioma.IT to "Requisiti", Idioma.PT to "Requisitos",
+    ),
+    "microtareas" to mapOf(
+        Idioma.ES to "Micro-tareas", Idioma.EN to "Micro-tasks", Idioma.DE to "Mikroaufgaben",
+        Idioma.FR to "Micro-tâches", Idioma.IT to "Micro-attività", Idioma.PT to "Micro-tarefas",
+    ),
+    "autochequeo" to mapOf(
+        Idioma.ES to "Autochequeo", Idioma.EN to "Self-check", Idioma.DE to "Selbstkontrolle",
+        Idioma.FR to "Auto-évaluation", Idioma.IT to "Autoverifica", Idioma.PT to "Autoverificação",
+    ),
+    "promptCorreccion" to mapOf(
+        Idioma.ES to "Prompt de corrección", Idioma.EN to "Correction prompt", Idioma.DE to "Korrekturprompt",
+        Idioma.FR to "Prompt de correction", Idioma.IT to "Prompt di correzione", Idioma.PT to "Prompt de correção",
+    ),
+    "contraste" to mapOf(
+        Idioma.ES to "Contraste con el español", Idioma.EN to "Contrast with English", Idioma.DE to "Kontrast zum Deutschen",
+        Idioma.FR to "Contraste avec le français", Idioma.IT to "Contrasto con l'italiano", Idioma.PT to "Contraste com o português",
+    ),
 )
 
-private val ETIQUETAS_DE = mapOf(
-    "descripcion" to "Beschreibung",
-    "cuadroReferencia" to "Übersichtskasten",
-    "ejemplos" to "Beispiele",
-    "notas" to "Hinweise",
-    "errores" to "Typische Fehler",
-    "vocabulario" to "Themenwortschatz",
-    "redemittel" to "Redemittel",
-    "mision" to "Wochenaufgabe",
-    "desafio" to "Wochenend-Herausforderung",
-    "requisitos" to "Anforderungen",
-    "microtareas" to "Mikroaufgaben",
-    "autochequeo" to "Selbstkontrolle",
-    "promptCorreccion" to "Korrekturprompt",
-)
+/** Visibilidad de modulo solo para EtiquetasSeccionTest: recorre la tabla cruda, sin el fallback a la clave de [etiquetaSeccion]. */
+internal fun tablaEtiquetasSeccionCruda(): Map<String, Map<Idioma, String>> = ETIQUETAS
 
-/**
- * Espanol para la mitad bilingue (A2/B1): CLAUDE.md dice bilingue = tambien
- * en la lengua base, pero en 2026 "es" es la unica lengua base con datos, y
- * A2/B1 todavia no tienen fichas. Cuando haya otras lenguas base con
- * contenido bilingue real, esto se generaliza igual que contraste.
- */
-private val ETIQUETAS_ES_BILINGUE = mapOf(
-    "descripcion" to "Descripción",
-    "cuadroReferencia" to "Cuadro de referencia",
-    "ejemplos" to "Ejemplos",
-    "notas" to "Notas",
-    "errores" to "Errores comunes",
-    "vocabulario" to "Vocabulario",
-    "redemittel" to "Redemittel",
-    "mision" to "Misión",
-    "desafio" to "Desafío de fin de semana",
-    "microtareas" to "Micro-tareas",
-    "autochequeo" to "Autochequeo",
-    "promptCorreccion" to "Prompt de corrección",
-)
-
-private fun etiquetasDe(idioma: Idioma): Map<String, String> = if (idioma == Idioma.DE) ETIQUETAS_DE else ETIQUETAS_EN
-
-/**
- * `bilingue == true` (A2/B1): el titulo va en los dos idiomas, p.ej.
- * "Beschreibung / Descripción" -- decision ya tomada en el syllabus, sección 3.
- */
-fun etiquetaSeccion(clave: String, idioma: Idioma, bilingue: Boolean): String {
-    val propia = etiquetasDe(idioma)[clave] ?: clave
-    if (!bilingue) return propia
-    val espanol = ETIQUETAS_ES_BILINGUE[clave] ?: clave
-    return "$propia / $espanol"
-}
+/** Titulo de seccion `clave` en `idioma`; una clave desconocida se devuelve tal cual (no rompe la pantalla). */
+fun etiquetaSeccion(clave: String, idioma: Idioma): String = ETIQUETAS[clave]?.get(idioma) ?: clave
 
 /**
  * Nombres de idioma para armar "Kontrast zum Spanischen" / "Contrast with

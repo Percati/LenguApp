@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.selection.DisableSelection
@@ -45,6 +46,7 @@ import io.github.percati.lenguapp.modelo.ContenidoSemanal
 import io.github.percati.lenguapp.modelo.CuadroReferencia
 import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.Prioridad
 import io.github.percati.lenguapp.modelo.RedemittelItem
 import io.github.percati.lenguapp.modelo.SemanaEspecial
@@ -73,6 +75,9 @@ import java.time.LocalDate
  * secundario queda como ultimo recurso si esto no alcanza -- no aplicado.
  */
 private val ESPACIO_ENTRE_SECCIONES = 32.dp
+
+/** Separacion entre items de vocabulario / expresiones: mayor que la que hay DENTRO de un item (palabra + traduccion pegadas). */
+private val ESPACIO_ENTRE_ITEMS = 22.dp
 
 /**
  * Lo que [ContenidoSemanalScreen] necesita de Guardados (feature 3) para
@@ -171,10 +176,22 @@ private fun FichaContenido(
     // Feature 1 (switch de traduccion en vivo): estado local, nunca
     // persistido -- "modo revista", igual criterio que regla dura #13. Se
     // resetea al cambiar de ficha (`remember(ficha.id)`) y siempre arranca
-    // mostrando idiomaBase, nunca el ultimo estado de la ficha anterior.
-    var mostrarIdiomaAprendido by remember(ficha.id) { mutableStateOf(false) }
-    val idiomaMostrado = if (ficha.bilingue && mostrarIdiomaAprendido) ficha.idioma else idiomaBase
+    // traducido (idiomaBase), nunca con el ultimo estado de la ficha anterior.
+    //
+    // El switch solo tiene sentido en una ficha bilingue (A2/B1) cuando el
+    // idioma de app NO es el que se aprende: si coinciden no hay nada que
+    // traducir. Sin switch (B2+, o idiomas iguales) se muestra siempre el
+    // idioma que se aprende.
+    var traducir by remember(ficha.id) { mutableStateOf(true) }
+    val puedeTraducir = ficha.bilingue && idiomaBase != ficha.idioma
+    val traduccionActiva = puedeTraducir && traducir
+    val idiomaMostrado = if (traduccionActiva) idiomaBase else ficha.idioma
     val t: (TextoBilingue) -> String = { it.resolver(idiomaMostrado, ficha.idioma) }
+    // Cuando se muestra la traduccion, la palabra objetivo (*cita*) queda
+    // sin traducir: ademas de la cursiva va entre « » (ver textoConMarcado).
+    val m: (String) -> AnnotatedString = { textoConMarcado(it, angulares = traduccionActiva) }
+    // Titulos de seccion en el idioma que se esta mostrando (ver EtiquetasSeccion.kt).
+    val et: (String) -> String = { etiquetaSeccion(it, idiomaMostrado) }
 
     // Feature 2 (desafio de fin de semana): mismo criterio, CLAUDE.md regla
     // dura #13 explicita ("arranca en off, nunca se persiste"). Solo se
@@ -183,14 +200,14 @@ private fun FichaContenido(
     val enFinDeSemana = esFinDeSemana(fecha)
 
     Column(modifier = modifier.fillMaxSize()) {
-        if (ficha.bilingue || enFinDeSemana) {
+        if (puedeTraducir || enFinDeSemana) {
             Column(Modifier.padding(horizontal = 16.dp, vertical = 4.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                if (ficha.bilingue) {
+                if (puedeTraducir) {
                     SwitchTraduccion(
-                        activo = mostrarIdiomaAprendido,
+                        activo = traducir,
                         idiomaInterfaz = idiomaInterfaz,
-                        idiomaMostrado = idiomaMostrado,
-                        onCambiar = { mostrarIdiomaAprendido = it },
+                        idiomaDestino = idiomaBase,
+                        onCambiar = { traducir = it },
                     )
                 }
                 if (enFinDeSemana) {
@@ -208,7 +225,7 @@ private fun FichaContenido(
                     ficha.variante?.let { EtiquetaVariante(it) }
                     Text(t(ficha.titulo), style = MaterialTheme.typography.headlineSmall)
                     Text(
-                        textoConMarcado(t(ficha.subtitulo)),
+                        m(t(ficha.subtitulo)),
                         style = MaterialTheme.typography.titleMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
@@ -230,71 +247,89 @@ private fun FichaContenido(
                     // contenido aparte). El resto de la ficha se oculta
                     // mientras el desafio esta activo: "pasar al desafio",
                     // no agregarlo como una seccion mas.
-                    Seccion(etiquetaSeccion("desafio", ficha.idioma, ficha.bilingue)) {
-                        Text(textoConMarcado(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
-                        ficha.mision.requisitos.forEach { Vinieta(t(it)) }
+                    Seccion(et("desafio")) {
+                        Text(m(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
+                        ficha.mision.requisitos.forEach { Vinieta(t(it), traduccionActiva) }
                     }
                 } else {
-                    Text(textoConMarcado(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge)
+                    Text(m(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge)
 
                     ficha.cuadroReferencia?.let { cuadro ->
-                        val tituloPropio = etiquetaSeccion("cuadroReferencia", ficha.idioma, ficha.bilingue)
-                        SeccionPlegable(titulo = t(cuadro.titulo).ifBlank { tituloPropio }) {
-                            CuadroReferenciaTabla(cuadro, t)
+                        SeccionPlegable(titulo = t(cuadro.titulo).ifBlank { et("cuadroReferencia") }) {
+                            CuadroReferenciaTabla(cuadro, t, traduccionActiva)
                         }
                     }
 
-                    Seccion(etiquetaSeccion("ejemplos", ficha.idioma, ficha.bilingue)) {
-                        ficha.ejemplos.forEach { Vinieta(t(it.texto)) }
-                    }
-
-                    Seccion(etiquetaSeccion("notas", ficha.idioma, ficha.bilingue)) {
-                        ficha.notas.forEach { Vinieta(t(it)) }
-                    }
-
-                    ficha.contraste.contrasteParaMostrar(ficha.idioma, idiomaMostrado)?.let { texto ->
-                        Seccion(etiquetaContraste(ficha.idioma, idiomaMostrado)) {
-                            Text(textoConMarcado(texto), style = MaterialTheme.typography.bodyMedium)
+                    Seccion(et("ejemplos")) {
+                        // El original en el idioma que se aprende se muestra
+                        // SIEMPRE; la traduccion es un agregado debajo (otra
+                        // tipografia), solo con el switch activo -- nunca
+                        // reemplaza al original.
+                        ficha.ejemplos.forEach { ejemplo ->
+                            val original = ejemplo.texto.resolver(ficha.idioma, ficha.idioma)
+                            val traduccion = if (traduccionActiva) {
+                                ejemplo.texto.resolver(idiomaBase, ficha.idioma).takeIf { it.isNotBlank() && it != original }
+                            } else {
+                                null
+                            }
+                            EjemploFila(original, traduccion)
                         }
                     }
 
-                    Seccion(etiquetaSeccion("errores", ficha.idioma, ficha.bilingue)) {
-                        erroresParaMostrar(ficha.errores.map(t), ficha.erroresContrastivos, ficha.idioma, idiomaMostrado)
-                            .forEach { Vinieta(it) }
+                    Seccion(et("notas")) {
+                        ficha.notas.forEach { Vinieta(t(it), traduccionActiva) }
                     }
 
-                    SeccionPlegable(
-                        titulo = "${etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)} (${ficha.vocabulario.size})",
-                    ) {
-                        Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
-                            ficha.vocabulario.forEach { VocabularioFila(it, idiomaMostrado, ficha.idioma, estadoGuardados) }
+                    // El contraste ya no depende del switch para APARECER (solo
+                    // del idioma de app: la entrada es la de idiomaBase), solo
+                    // cambia de idioma -- titulo y contenido. Ver
+                    // contrasteParaMostrar().
+                    ficha.contraste.contrasteParaMostrar(ficha.idioma, idiomaBase, idiomaMostrado)?.let { texto ->
+                        val titulo = if (traduccionActiva) et("contraste") else etiquetaContraste(ficha.idioma, idiomaBase)
+                        Seccion(titulo) {
+                            Text(m(texto), style = MaterialTheme.typography.bodyMedium)
                         }
                     }
 
-                    SeccionPlegable(
-                        titulo = "${etiquetaSeccion("redemittel", ficha.idioma, ficha.bilingue)} (${ficha.redemittel.size})",
-                    ) {
-                        Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
-                            ficha.redemittel.forEach { RedemittelFila(it, idiomaMostrado, ficha.idioma, estadoGuardados) }
+                    Seccion(et("errores")) {
+                        // Los errores contrastivos son los de la lengua base
+                        // (idiomaBase), no los del idioma que el switch muestra.
+                        erroresParaMostrar(ficha.errores.map(t), ficha.erroresContrastivos, ficha.idioma, idiomaBase)
+                            .forEach { Vinieta(it, traduccionActiva) }
+                    }
+
+                    SeccionPlegable(titulo = "${et("vocabulario")} (${ficha.vocabulario.size})") {
+                        Column(verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_ITEMS)) {
+                            // Las glosas siempre en el idioma de app: el switch
+                            // cambia la prosa, no la traduccion del vocabulario.
+                            ficha.vocabulario.forEach { VocabularioFila(it, idiomaBase, ficha.idioma, estadoGuardados) }
                         }
                     }
 
-                    Seccion(etiquetaSeccion("mision", ficha.idioma, ficha.bilingue)) {
-                        Text(textoConMarcado(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
-                        ficha.mision.requisitos.forEach { Vinieta(t(it)) }
+                    SeccionPlegable(titulo = "${et("redemittel")} (${ficha.redemittel.size})") {
+                        Column(verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_ITEMS)) {
+                            ficha.redemittel.forEach {
+                                RedemittelFila(it, idiomaBase, idiomaMostrado, ficha.idioma, estadoGuardados)
+                            }
+                        }
                     }
 
-                    Seccion(etiquetaSeccion("microtareas", ficha.idioma, ficha.bilingue)) {
+                    Seccion(et("mision")) {
+                        Text(m(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
+                        ficha.mision.requisitos.forEach { Vinieta(t(it), traduccionActiva) }
+                    }
+
+                    Seccion(et("microtareas")) {
                         ficha.microtareas.forEach {
-                            Vinieta("${etiquetaDia(it.dia, ficha.idioma)} (${it.minutos} min) — ${t(it.texto)}")
+                            Vinieta("${etiquetaDia(it.dia, idiomaMostrado)} (${it.minutos} min) — ${t(it.texto)}", traduccionActiva)
                         }
                     }
 
-                    Seccion(etiquetaSeccion("autochequeo", ficha.idioma, ficha.bilingue)) {
-                        ficha.autochequeo.forEach { Vinieta(t(it)) }
+                    Seccion(et("autochequeo")) {
+                        ficha.autochequeo.forEach { Vinieta(t(it), traduccionActiva) }
                     }
 
-                    TarjetaPrompt(t(ficha.promptCorreccion), etiquetaSeccion("promptCorreccion", ficha.idioma, ficha.bilingue))
+                    TarjetaPrompt(t(ficha.promptCorreccion), et("promptCorreccion"), traduccionActiva)
                 }
             }
         }
@@ -305,18 +340,39 @@ private fun FichaContenido(
  * Feature 1: switch de traduccion en vivo. Distinto visualmente del de
  * abajo (Switch vs. chip). Toda la fila es clickeable, no solo el Switch:
  * mas area de toque, y el Switch se vuelve puramente visual
- * (`onCheckedChange = null`) para no manejar el toggle dos veces.
+ * (`onCheckedChange = null`) para no manejar el toggle dos veces. La
+ * etiqueta dice que HACE ("Traducir al espanol"), no que idioma se ve.
  */
 @Composable
-private fun SwitchTraduccion(activo: Boolean, idiomaInterfaz: Idioma, idiomaMostrado: Idioma, onCambiar: (Boolean) -> Unit) {
+private fun SwitchTraduccion(activo: Boolean, idiomaInterfaz: Idioma, idiomaDestino: Idioma, onCambiar: (Boolean) -> Unit) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(8.dp),
         modifier = Modifier.clickable { onCambiar(!activo) },
     ) {
         Icon(Icons.Filled.Translate, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
-        Text(etiquetaVerEnIdioma(idiomaInterfaz, idiomaMostrado), style = MaterialTheme.typography.labelLarge, modifier = Modifier.weight(1f))
+        Text(etiquetaTraducirA(idiomaInterfaz, idiomaDestino), style = MaterialTheme.typography.labelLarge, modifier = Modifier.weight(1f))
         Switch(checked = activo, onCheckedChange = null)
+    }
+}
+
+/**
+ * Un ejemplo: el original en el idioma que se aprende, y debajo -- solo si
+ * hay traduccion que mostrar -- la traduccion en una tipografia distinta
+ * (mas chica, color secundario, sin vineta propia).
+ */
+@Composable
+private fun EjemploFila(original: String, traduccion: String?) {
+    Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
+        Vinieta(original)
+        if (traduccion != null) {
+            Text(
+                textoConMarcado(traduccion, angulares = true),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.padding(start = 16.dp),
+            )
+        }
     }
 }
 
@@ -339,7 +395,12 @@ private fun SwitchDesafioFinde(activo: Boolean, idiomaInterfaz: Idioma, onCambia
 @Composable
 private fun SemanaEspecialContenido(especial: SemanaEspecial, idiomaBase: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
     // Campos bilingues (A2/B1): idioma base del usuario, y el que se aprende si falta esa clave.
-    val t: (TextoBilingue) -> String = { it.resolver(idiomaBase, especial.idioma) }
+    // Solo las semanas A2/B1 son bilingues; B2+ se muestran en el idioma que se aprende.
+    val bilingue = especial.nivel == Nivel.A2 || especial.nivel == Nivel.B1
+    val idiomaTexto = if (bilingue) idiomaBase else especial.idioma
+    val traducido = idiomaTexto != especial.idioma
+    val t: (TextoBilingue) -> String = { it.resolver(idiomaTexto, especial.idioma) }
+    val et: (String) -> String = { etiquetaSeccion(it, idiomaTexto) }
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
@@ -354,22 +415,22 @@ private fun SemanaEspecialContenido(especial: SemanaEspecial, idiomaBase: Idioma
             )
         }
 
-        Text(textoConMarcado(t(especial.consigna)), style = MaterialTheme.typography.bodyLarge)
+        Text(textoConMarcado(t(especial.consigna), angulares = traducido), style = MaterialTheme.typography.bodyLarge)
 
         especial.requisitos?.takeIf { it.isNotEmpty() }?.let { requisitos ->
-            Seccion(etiquetaSeccion("requisitos", especial.idioma, bilingue = false)) { requisitos.forEach { Vinieta(t(it)) } }
+            Seccion(et("requisitos")) { requisitos.forEach { Vinieta(t(it), traducido) } }
         }
 
         especial.microtareas?.takeIf { it.isNotEmpty() }?.let { tareas ->
-            Seccion(etiquetaSeccion("microtareas", especial.idioma, bilingue = false)) { tareas.forEach { Vinieta(t(it)) } }
+            Seccion(et("microtareas")) { tareas.forEach { Vinieta(t(it), traducido) } }
         }
 
-        Seccion(etiquetaSeccion("autochequeo", especial.idioma, bilingue = false)) {
-            especial.autochequeo.forEach { Vinieta(t(it)) }
+        Seccion(et("autochequeo")) {
+            especial.autochequeo.forEach { Vinieta(t(it), traducido) }
         }
 
         t(especial.promptCorreccion).takeIf { it.isNotBlank() }?.let {
-            TarjetaPrompt(it, etiquetaSeccion("promptCorreccion", especial.idioma, bilingue = false))
+            TarjetaPrompt(it, et("promptCorreccion"), traducido)
         }
     }
 }
@@ -390,10 +451,10 @@ private fun Seccion(titulo: String, contenido: @Composable () -> Unit) {
 }
 
 @Composable
-private fun Vinieta(texto: String) {
+private fun Vinieta(texto: String, angulares: Boolean = false) {
     Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
         Text("•", style = MaterialTheme.typography.bodyMedium)
-        Text(textoConMarcado(texto), style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(end = 4.dp))
+        Text(textoConMarcado(texto, angulares), style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(end = 4.dp))
     }
 }
 
@@ -419,7 +480,7 @@ private fun Insignia(
  */
 @Composable
 private fun BotonGuardar(guardado: Boolean, onClick: () -> Unit) {
-    IconButton(onClick = onClick) {
+    IconButton(onClick = onClick, modifier = Modifier.size(36.dp)) {
         Icon(
             if (guardado) Icons.Filled.Star else Icons.Outlined.StarBorder,
             contentDescription = null,
@@ -439,7 +500,11 @@ private fun EtiquetaVariante(variante: String) {
 
 @Composable
 private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma, idiomaAprendido: Idioma, estadoGuardados: EstadoGuardados) {
+    // Palabra y traduccion van pegadas (son una unidad); lo demas del item
+    // (reccion, nota, insignias) tiene un poco mas de aire, y entre items la
+    // separacion es mayor todavia (ESPACIO_ENTRE_ITEMS, en quien llama).
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Column(verticalArrangement = Arrangement.spacedBy(0.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
             // AJUSTES-FASE-8.md, B.5: sin la etiqueta "núcleo" (nombre de
             // campo mostrado en crudo, y siempre en español -- CLAUDE.md,
@@ -464,6 +529,7 @@ private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma, idiomaApr
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
+        }
         item.reccion?.takeIf { it.isNotBlank() }?.let {
             Text(
                 "rección: $it",
@@ -488,38 +554,50 @@ private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma, idiomaApr
 }
 
 @Composable
-private fun RedemittelFila(item: RedemittelItem, idiomaBase: Idioma, idiomaAprendido: Idioma, estadoGuardados: EstadoGuardados) {
-    Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Text(
-                item.expresion,
-                style = MaterialTheme.typography.bodyLarge,
-                fontWeight = FontWeight.Medium,
-                modifier = Modifier.weight(1f),
-            )
-            BotonGuardar(
-                guardado = claveGuardado(TipoGuardado.EXPRESION, item.expresion) in estadoGuardados.guardados,
-                onClick = {
-                    estadoGuardados.onAlternar(
-                        TipoGuardado.EXPRESION,
-                        item.expresion,
-                        item.aTextoBilingue(idiomaAprendido),
-                        item.funcion,
-                    )
-                },
-            )
+private fun RedemittelFila(
+    item: RedemittelItem,
+    idiomaBase: Idioma,
+    idiomaMostrado: Idioma,
+    idiomaAprendido: Idioma,
+    estadoGuardados: EstadoGuardados,
+) {
+    // Orden: expresion, su traduccion (pegadas), y la funcion debajo de la
+    // traduccion -- antes la funcion quedaba en el medio, entre las dos.
+    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Column(verticalArrangement = Arrangement.spacedBy(0.dp)) {
+            Row(verticalAlignment = Alignment.CenterVertically) {
+                Text(
+                    item.expresion,
+                    style = MaterialTheme.typography.bodyLarge,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.weight(1f),
+                )
+                BotonGuardar(
+                    guardado = claveGuardado(TipoGuardado.EXPRESION, item.expresion) in estadoGuardados.guardados,
+                    onClick = {
+                        estadoGuardados.onAlternar(
+                            TipoGuardado.EXPRESION,
+                            item.expresion,
+                            item.aTextoBilingue(idiomaAprendido),
+                            item.funcion,
+                        )
+                    },
+                )
+            }
+            // La traduccion de la expresion es la del idioma de app (idiomaBase),
+            // siempre: el switch cambia la prosa de la ficha, no las glosas.
+            val texto = when (val traduccion = item.traduccionParaMostrar(idiomaBase)) {
+                is TraduccionRedemittel.Disponible -> traduccion.texto
+                TraduccionRedemittel.SinEquivalenciaDirecta -> "Sin equivalencia directa: se aprende por situación."
+                TraduccionRedemittel.SinTraducirTodavia -> "—"
+            }
+            Text(texto, style = MaterialTheme.typography.bodyMedium)
         }
         Text(
-            textoConMarcado(item.funcion.resolver(idiomaBase, idiomaAprendido)),
+            textoConMarcado(item.funcion.resolver(idiomaMostrado, idiomaAprendido), angulares = idiomaMostrado != idiomaAprendido),
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
-        val texto = when (val traduccion = item.traduccionParaMostrar(idiomaBase)) {
-            is TraduccionRedemittel.Disponible -> traduccion.texto
-            TraduccionRedemittel.SinEquivalenciaDirecta -> "Sin equivalencia directa: se aprende por situación."
-            TraduccionRedemittel.SinTraducirTodavia -> "—"
-        }
-        Text(texto, style = MaterialTheme.typography.bodyMedium)
     }
 }
 
@@ -530,7 +608,7 @@ private fun RedemittelFila(item: RedemittelItem, idiomaBase: Idioma, idiomaApren
  * en vez de truncarlo.
  */
 @Composable
-private fun CuadroReferenciaTabla(cuadro: CuadroReferencia, t: (TextoBilingue) -> String) {
+private fun CuadroReferenciaTabla(cuadro: CuadroReferencia, t: (TextoBilingue) -> String, angulares: Boolean = false) {
     Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
         cuadro.filas.forEach { fila ->
             Surface(
@@ -543,7 +621,7 @@ private fun CuadroReferenciaTabla(cuadro: CuadroReferencia, t: (TextoBilingue) -
                         if (celda.isNotBlank()) {
                             val etiqueta = cuadro.columnas.getOrNull(i)?.let(t)
                             Text(
-                                textoConMarcado(if (etiqueta != null) "$etiqueta: $celda" else celda),
+                                textoConMarcado(if (etiqueta != null) "$etiqueta: $celda" else celda, angulares),
                                 style = MaterialTheme.typography.bodyMedium,
                             )
                         }
@@ -553,7 +631,7 @@ private fun CuadroReferenciaTabla(cuadro: CuadroReferencia, t: (TextoBilingue) -
         }
         cuadro.notaPie?.let(t)?.takeIf { it.isNotBlank() }?.let {
             Text(
-                textoConMarcado(it),
+                textoConMarcado(it, angulares),
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
@@ -563,7 +641,7 @@ private fun CuadroReferenciaTabla(cuadro: CuadroReferencia, t: (TextoBilingue) -
 
 /** El unico botón que toca el sistema: copia el prompt de corrección al portapapeles. */
 @Composable
-private fun TarjetaPrompt(prompt: String, titulo: String) {
+private fun TarjetaPrompt(prompt: String, titulo: String, angulares: Boolean = false) {
     val portapapeles = LocalClipboardManager.current
     var copiado by remember { mutableStateOf(false) }
     Surface(
@@ -573,7 +651,7 @@ private fun TarjetaPrompt(prompt: String, titulo: String) {
     ) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             Text(titulo, style = MaterialTheme.typography.titleMedium)
-            Text(textoConMarcado(prompt), style = MaterialTheme.typography.bodyMedium)
+            Text(textoConMarcado(prompt, angulares), style = MaterialTheme.typography.bodyMedium)
             // Es la unica accion de la pantalla: boton de ancho completo,
             // no un boton mas perdido entre el resto -- AJUSTES-FASE-5.md, B4.5.
             // DisableSelection (AJUSTES-FASE-8.md, B.4): el resto de la ficha

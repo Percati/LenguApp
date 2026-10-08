@@ -144,12 +144,14 @@ data class Ficha(
     val cuadroReferencia: CuadroReferencia? = null,
     val ejemplos: List<Ejemplo>,
     val notas: List<TextoBilingue>,
-    // Un renglon por lengua base; solo las lenguas con contenido escrito
-    // estan presentes (2026: "es" en todas, "en" en las 14 fichas alemanas).
-    // AJUSTES posteriores a Fase 9: la app muestra la del idioma base y
-    // oculta la seccion entera si falta la clave -- nunca cae a "es" bajo
-    // un titulo que anuncia otro idioma (ver contrasteParaMostrar()).
-    val contraste: Map<String, String>? = null,
+    // Una entrada por lengua base (la clave); solo las lenguas con contenido
+    // escrito estan presentes. Cada valor es un TextoBilingue: string plano
+    // (formato viejo: el texto en el idioma que se aprende, sin traducir) u
+    // objeto {idioma: texto} con el original (clave del idioma que se
+    // aprende) y su traduccion (clave del idioma de app que nombra la
+    // entrada). La app muestra la entrada del idioma de app actual y la
+    // oculta entera si no existe -- ver contrasteParaMostrar().
+    val contraste: Map<String, TextoBilingue>? = null,
     val errores: List<TextoBilingue>,
     // Errores tipicos ADICIONALES segun la lengua base (los de un
     // anglohablante que aprende aleman no son los de un hispanohablante):
@@ -217,6 +219,10 @@ data class RedemittelItem(
     val funcion: TextoBilingue,
     // null = sin equivalencia directa; se aprende por situacion, no es un error.
     val traducciones: Map<String, String?>,
+    // Etiquetas internas de filtro (0 o mas), no texto para el usuario: la
+    // lista cerrada de valores la fija Nucleos por convencion, no el schema.
+    // Opcional -- los redemittel existentes todavia no lo traen.
+    val categoriasUso: List<String>? = null,
 )
 
 @Serializable

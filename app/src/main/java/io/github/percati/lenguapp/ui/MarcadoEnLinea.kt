@@ -26,7 +26,16 @@ private val PATRON_MARCADO = Regex("""\*\*([^*]+)\*\*|\*([^*]+)\*""")
  */
 fun textoSinMarcado(texto: String): String = textoConMarcado(texto).text
 
-fun textoConMarcado(texto: String): AnnotatedString = buildAnnotatedString {
+/**
+ * `angulares = true` es para cuando la ficha muestra una TRADUCCION: la
+ * palabra objetivo (`*cita*`) queda sin traducir en el idioma que se
+ * aprende, y ademas de la cursiva se envuelve entre « » para que se vea
+ * donde empieza y termina dentro de la frase traducida. Si el texto ya trae
+ * los « » escritos a mano alrededor (como los escribe Traducciones en las
+ * celdas traducidas), no se duplican. El destaque `**x**` no se envuelve:
+ * marca una posicion (p.ej. del verbo), no una palabra citada.
+ */
+fun textoConMarcado(texto: String, angulares: Boolean = false): AnnotatedString = buildAnnotatedString {
     var indice = 0
     for (coincidencia in PATRON_MARCADO.findAll(texto)) {
         append(texto.substring(indice, coincidencia.range.first))
@@ -34,7 +43,16 @@ fun textoConMarcado(texto: String): AnnotatedString = buildAnnotatedString {
         val cita = coincidencia.groups[2]?.value
         when {
             destaque != null -> withStyle(SpanStyle(fontWeight = FontWeight.Bold)) { append(destaque) }
-            cita != null -> withStyle(SpanStyle(fontStyle = FontStyle.Italic)) { append(cita) }
+            cita != null -> {
+                val yaEntreAngulares = texto.getOrNull(coincidencia.range.first - 1) == '«' &&
+                    texto.getOrNull(coincidencia.range.last + 1) == '»'
+                val envolver = angulares && !yaEntreAngulares
+                withStyle(SpanStyle(fontStyle = FontStyle.Italic)) {
+                    if (envolver) append("«")
+                    append(cita)
+                    if (envolver) append("»")
+                }
+            }
         }
         indice = coincidencia.range.last + 1
     }

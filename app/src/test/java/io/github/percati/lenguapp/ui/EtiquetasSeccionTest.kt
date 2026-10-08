@@ -3,30 +3,60 @@ package io.github.percati.lenguapp.ui
 import io.github.percati.lenguapp.modelo.Dia
 import io.github.percati.lenguapp.modelo.Idioma
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class EtiquetasSeccionTest {
 
     @Test
-    fun `una ficha alemana muestra los titulos en aleman`() {
-        assertEquals("Übersichtskasten", etiquetaSeccion("cuadroReferencia", Idioma.DE, bilingue = false))
-        assertEquals("Themenwortschatz", etiquetaSeccion("vocabulario", Idioma.DE, bilingue = false))
+    fun `las etiquetas en aleman coinciden con la tabla original`() {
+        assertEquals("Übersichtskasten", etiquetaSeccion("cuadroReferencia", Idioma.DE))
+        assertEquals("Themenwortschatz", etiquetaSeccion("vocabulario", Idioma.DE))
+        assertEquals("Beschreibung", etiquetaSeccion("descripcion", Idioma.DE))
     }
 
     @Test
-    fun `una ficha inglesa muestra los titulos en ingles`() {
-        assertEquals("Vocabulary", etiquetaSeccion("vocabulario", Idioma.EN, bilingue = false))
-        assertEquals("Correction prompt", etiquetaSeccion("promptCorreccion", Idioma.EN, bilingue = false))
+    fun `las etiquetas en ingles coinciden con la tabla original`() {
+        assertEquals("Vocabulary", etiquetaSeccion("vocabulario", Idioma.EN))
+        assertEquals("Correction prompt", etiquetaSeccion("promptCorreccion", Idioma.EN))
     }
 
     @Test
-    fun `bilingue muestra los dos idiomas, ficha primero y espanol despues`() {
-        assertEquals("Beschreibung / Descripción", etiquetaSeccion("descripcion", Idioma.DE, bilingue = true))
+    fun `redemittel es Expresiones en espanol, no Redemittel`() {
+        assertEquals("Expresiones", etiquetaSeccion("redemittel", Idioma.ES))
+        assertEquals("Expressions", etiquetaSeccion("redemittel", Idioma.EN))
+        assertEquals("Redemittel", etiquetaSeccion("redemittel", Idioma.DE))
+        assertEquals("Espressioni", etiquetaSeccion("redemittel", Idioma.IT))
     }
 
     @Test
-    fun `una clave desconocida no rompe, devuelve la clave cruda`() {
-        assertEquals("algo-nuevo", etiquetaSeccion("algo-nuevo", Idioma.DE, bilingue = false))
+    fun `resuelve los seis idiomas, ya no solo ingles y aleman`() {
+        assertEquals("Exemples", etiquetaSeccion("ejemplos", Idioma.FR))
+        assertEquals("Esempi", etiquetaSeccion("ejemplos", Idioma.IT))
+        assertEquals("Exemplos", etiquetaSeccion("ejemplos", Idioma.PT))
+        assertEquals("Ejemplos", etiquetaSeccion("ejemplos", Idioma.ES))
+    }
+
+    @Test
+    fun `toda clave tiene etiqueta no vacia en los seis idiomas`() {
+        val tabla = tablaEtiquetasSeccionCruda()
+        tabla.forEach { (clave, porIdioma) ->
+            Idioma.entries.forEach { idioma ->
+                assertTrue("$clave sin etiqueta en $idioma", !porIdioma[idioma].isNullOrBlank())
+            }
+        }
+    }
+
+    @Test
+    fun `una clave desconocida se devuelve tal cual, no rompe`() {
+        assertEquals("algo-nuevo", etiquetaSeccion("algo-nuevo", Idioma.DE))
+    }
+
+    @Test
+    fun `el titulo de contraste traducido nombra al idioma de app en el propio idioma de app`() {
+        assertEquals("Contraste con el español", etiquetaSeccion("contraste", Idioma.ES))
+        assertEquals("Contrast with English", etiquetaSeccion("contraste", Idioma.EN))
+        assertEquals("Kontrast zum Deutschen", etiquetaSeccion("contraste", Idioma.DE))
     }
 
     @Test

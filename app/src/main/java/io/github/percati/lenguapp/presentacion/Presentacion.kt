@@ -2,7 +2,9 @@ package io.github.percati.lenguapp.presentacion
 
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.RedemittelItem
+import io.github.percati.lenguapp.modelo.TextoBilingue
 import io.github.percati.lenguapp.modelo.VocabularioItem
+import io.github.percati.lenguapp.modelo.resolver
 
 private const val SIN_TRADUCCION = "—"
 
@@ -24,18 +26,34 @@ fun VocabularioItem.traduccionParaMostrar(idiomaBase: Idioma): String =
     traducciones.valorParaIdiomaBase(idiomaBase) ?: SIN_TRADUCCION
 
 /**
- * `contraste` es opcional y solo "es" esta poblado en 2026. A diferencia de
- * las glosas, ACA no cae a español (AJUSTES-FASE-8.md, B.6): el titulo de
- * la seccion anuncia el idioma base ("Contraste con el aleman"), y mostrar
- * la prosa en español bajo ese titulo afirmaria algo falso -- no es un
- * texto que "sigue siendo util en otro idioma" como una glosa, es una
- * observacion especifica de un idioma. `null` (clave ausente, o el idioma
- * que se aprende coincide con el base -- no hay contraste posible contra
- * si mismo) significa que la seccion entera se oculta.
+ * `contraste` es {idioma_de_app: entrada}, y cada entrada es un
+ * [TextoBilingue]: string plano (formato viejo: el texto en el idioma que se
+ * aprende) u objeto {idioma: texto} con el original y su traduccion. Se
+ * comporta como el resto de los campos bilingues (revertido a proposito por
+ * Fer, oct 2026: antes mostraba SIEMPRE el idioma que se aprende, sin
+ * importar el switch, citando AJUSTES-FASE-8.md B.6).
+ *
+ * Que ENTRADA se usa lo decide solo el idioma de app (`idiomaBase`): la
+ * clave nombra contra que lengua se contrasta. Que IDIOMA se muestra de
+ * esa entrada lo decide `idiomaMostrado` (el switch de traduccion): el
+ * original en el idioma que se aprende, o la traduccion en el de app --
+ * con fallback al original si Traducciones todavia no la escribio (una
+ * entrada string plano, o un objeto con una sola clave, siempre se ve).
+ *
+ * La seccion NO depende del switch para aparecer: existe mientras haya una
+ * entrada para el idioma de app actual. `null` (clave ausente, o el idioma
+ * que se aprende coincide con el de app -- no hay contraste posible contra
+ * si mismo) significa que se oculta entera.
  */
-fun Map<String, String>?.contrasteParaMostrar(idiomaAprendido: Idioma, idiomaBase: Idioma): String? {
+fun Map<String, TextoBilingue>?.contrasteParaMostrar(
+    idiomaAprendido: Idioma,
+    idiomaBase: Idioma,
+    idiomaMostrado: Idioma,
+): String? {
     if (idiomaAprendido == idiomaBase) return null
-    return this?.get(idiomaBase.name.lowercase())?.takeIf { it.isNotBlank() }
+    val entrada = this?.get(idiomaBase.name.lowercase()) ?: return null
+    if (entrada.resolver(idiomaAprendido, idiomaAprendido).isBlank()) return null
+    return entrada.resolver(idiomaMostrado, idiomaAprendido)
 }
 
 /**

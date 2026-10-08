@@ -403,7 +403,7 @@
     },
     "contraste": {
       "type": "object",
-      "description": "Una linea por lengua base. Solo 'es' esta poblado en 2026.",
+      "description": "Una entrada por idioma de app (la clave). Cada VALOR es string plano (formato viejo: texto en el idioma que se aprende) u objeto {idioma: texto} con dos claves: la del idioma que se aprende (texto original) y la del idioma de app que nombra la entrada (su traduccion). Ver $comment, 'contraste bilingue'.",
       "propertyNames": {
         "enum": [
           "es",
@@ -415,8 +415,29 @@
         ]
       },
       "additionalProperties": {
-        "type": "string",
-        "minLength": 20
+        "oneOf": [
+          {
+            "type": "string",
+            "minLength": 20
+          },
+          {
+            "type": "object",
+            "propertyNames": {
+              "enum": [
+                "es",
+                "en",
+                "de",
+                "fr",
+                "it",
+                "pt"
+              ]
+            },
+            "additionalProperties": {
+              "type": "string"
+            },
+            "minProperties": 1
+          }
+        ]
       }
     },
     "errores": {
@@ -576,6 +597,14 @@
               ],
               "description": "null = sin equivalencia directa; se aprende por situacion"
             }
+          },
+          "categoriasUso": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "description": "Etiquetas internas de filtro (0 o mas). NO es texto bilingue: no lo lee el usuario tal cual, la app lo traduce con su propia tabla de interfaz. La lista cerrada de categorias validas la aplica Nucleos por convencion, no este schema. Opcional: los redemittel existentes todavia no lo tienen."
           }
         }
       }
@@ -989,6 +1018,23 @@
                 }
               }
             }
+          },
+          "contraste": {
+            "additionalProperties": {
+              "if": {
+                "type": "object"
+              },
+              "then": {
+                "required": [
+                  "de"
+                ],
+                "properties": {
+                  "de": {
+                    "minLength": 20
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -1147,10 +1193,27 @@
                 }
               }
             }
+          },
+          "contraste": {
+            "additionalProperties": {
+              "if": {
+                "type": "object"
+              },
+              "then": {
+                "required": [
+                  "en"
+                ],
+                "properties": {
+                  "en": {
+                    "minLength": 20
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
   ],
-  "$comment": "MARCADO EN LINEA. Los campos de prosa y de tabla pueden contener dos marcadores, planos y sin anidar: *cita* para una palabra o expresion citada, y **destaque** para el elemento sobre el que se llama la atencion (por ejemplo la posicion del verbo en la ficha de Satzbau). La app necesita UN solo renderizador que los convierta a texto con estilo. El marcado que envolvia el campo entero ya fue quitado por el compilador: los ejemplos y los Redemittel llegan limpios y la app los estiliza por su rol. -- CAMPOS BILINGUES A2/B1. En A2 y B1 toda la prosa de la ficha se puede mostrar en el idioma que se aprende O en el idioma de la app (switch en la interfaz), asi que necesita un lugar donde alojar la traduccion. Los campos afectados (titulo, descripcion, notas, ejemplos[].texto, errores, autochequeo, cuadroReferencia.titulo/columnas/filas/notaPie, promptCorreccion, subtitulo, mision.consigna/requisitos, microtareas[].texto, redemittel[].funcion) aceptan `oneOf` un string plano (como hasta ahora, y como siguen siendo en B2/C1/C2, que no son bilingues) o un objeto {idioma: texto} con el MISMO patron que ya usan contraste, erroresContrastivos y vocabulario[].traducciones: propertyNames limitado a los seis idiomas soportados (es, en, de, fr, it, pt) y minProperties 1, para que se pueda ir poblando una clave a la vez en vez de exigir las seis de entrada. El propio idioma de la ficha (p.ej. 'de' en una ficha alemana) va como una clave mas del objeto, no aparte: es el mismo mecanismo, solo que ahora tambien alcanza a la prosa y no unicamente al vocabulario y los Redemittel. La forma `oneOf` es deliberada y no un `if`/`then` que EXIJA el objeto en A2/B1: los 95 nucleos y 192 apariciones de A2/B1 todavia tienen estos campos como string plano (nadie los tradujo todavia), asi que exigir el objeto ahora romperia toda esa composicion. El campo queda listo para que se traduzca de a poco; no se vuelve obligatorio con esta revision del schema. -- MINLENGTH EN LOS CAMPOS BILINGUES. El minLength de cada campo se penso para la prosa original (aleman/ingles); espanol, ingles y demas idiomas de app comprimen frente al original, asi que exigirlo a TODAS las claves del objeto {idioma: texto} rechazaba traducciones correctas. Ahora la rama objeto de cada campo solo lleva maxLength (limite de diseno visual, igual para todas las claves), y el minLength rige unicamente sobre la clave del idioma que se aprende (la que ya existia como string plano), mediante dos condicionales en allOf (idioma = de exige minLength en la clave 'de'; idioma = en, en la clave 'en'). Las demas claves no tienen minimo. -- DONDE LA APP INTERPRETA EL MARCADO. El renderizador aplica *cita* y **destaque** en descripcion, ejemplos, notas, errores, autochequeo, cuadroReferencia, promptCorreccion, subtitulo, mision.consigna, mision.requisitos, microtareas[].texto y redemittel[].funcion. NO en titulo. Convencion de traduccion: la palabra objetivo de la consigna queda sin traducir y entre asteriscos."
+  "$comment": "MARCADO EN LINEA. Los campos de prosa y de tabla pueden contener dos marcadores, planos y sin anidar: *cita* para una palabra o expresion citada, y **destaque** para el elemento sobre el que se llama la atencion (por ejemplo la posicion del verbo en la ficha de Satzbau). La app necesita UN solo renderizador que los convierta a texto con estilo. El marcado que envolvia el campo entero ya fue quitado por el compilador: los ejemplos y los Redemittel llegan limpios y la app los estiliza por su rol. -- CAMPOS BILINGUES A2/B1. En A2 y B1 toda la prosa de la ficha se puede mostrar en el idioma que se aprende O en el idioma de la app (switch en la interfaz), asi que necesita un lugar donde alojar la traduccion. Los campos afectados (titulo, descripcion, notas, ejemplos[].texto, errores, autochequeo, cuadroReferencia.titulo/columnas/filas/notaPie, promptCorreccion, subtitulo, mision.consigna/requisitos, microtareas[].texto, redemittel[].funcion) aceptan `oneOf` un string plano (como hasta ahora, y como siguen siendo en B2/C1/C2, que no son bilingues) o un objeto {idioma: texto} con el MISMO patron que ya usan contraste, erroresContrastivos y vocabulario[].traducciones: propertyNames limitado a los seis idiomas soportados (es, en, de, fr, it, pt) y minProperties 1, para que se pueda ir poblando una clave a la vez en vez de exigir las seis de entrada. El propio idioma de la ficha (p.ej. 'de' en una ficha alemana) va como una clave mas del objeto, no aparte: es el mismo mecanismo, solo que ahora tambien alcanza a la prosa y no unicamente al vocabulario y los Redemittel. La forma `oneOf` es deliberada y no un `if`/`then` que EXIJA el objeto en A2/B1: los 95 nucleos y 192 apariciones de A2/B1 todavia tienen estos campos como string plano (nadie los tradujo todavia), asi que exigir el objeto ahora romperia toda esa composicion. El campo queda listo para que se traduzca de a poco; no se vuelve obligatorio con esta revision del schema. -- MINLENGTH EN LOS CAMPOS BILINGUES. El minLength de cada campo se penso para la prosa original (aleman/ingles); espanol, ingles y demas idiomas de app comprimen frente al original, asi que exigirlo a TODAS las claves del objeto {idioma: texto} rechazaba traducciones correctas. Ahora la rama objeto de cada campo solo lleva maxLength (limite de diseno visual, igual para todas las claves), y el minLength rige unicamente sobre la clave del idioma que se aprende (la que ya existia como string plano), mediante dos condicionales en allOf (idioma = de exige minLength en la clave 'de'; idioma = en, en la clave 'en'). Las demas claves no tienen minimo. -- DONDE LA APP INTERPRETA EL MARCADO. El renderizador aplica *cita* y **destaque** en descripcion, ejemplos, notas, errores, autochequeo, cuadroReferencia, promptCorreccion, subtitulo, mision.consigna, mision.requisitos, microtareas[].texto y redemittel[].funcion. NO en titulo. Convencion de traduccion: la palabra objetivo de la consigna queda sin traducir y entre asteriscos. -- CONTRASTE BILINGUE. `contraste` es {idioma_de_app: entrada}; cada entrada es string plano (formato viejo: el texto en el idioma que se aprende, sin traduccion) u objeto {idioma: texto} con dos claves pobladas: la del idioma que se aprende (el original) y la del idioma de app que nombra la entrada (su traduccion). La clave del idioma que se aprende es obligatoria cuando la entrada es objeto (con el mismo minLength 20 que el string plano) -- sin ella la app no tendria a que caer si falta la traduccion; la traduccion no lleva minLength (comprime respecto del original, ver 'MINLENGTH EN LOS CAMPOS BILINGUES'). Mientras Traducciones no termine, las entradas string y objeto conviven. -- CATEGORIASUSO. redemittel[].categoriasUso es un array opcional de strings libres (etiquetas internas de filtro): ni bilingue ni obligatorio."
 }

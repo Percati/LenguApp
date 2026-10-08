@@ -56,15 +56,16 @@ class ContenidoSemanalScreenFeaturesTest {
         val ficha = fichaBilingue()
         composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
 
-        // Arranca en idiomaBase (ES): la etiqueta del switch lo dice, y el titulo se ve en espanol.
-        composeTestRule.onNode(hasText(etiquetaVerEnIdioma(Idioma.ES, Idioma.ES))).assertExists()
+        // Arranca traducido (idiomaBase = ES): la etiqueta dice que HACE el switch, y el titulo se ve en espanol.
+        composeTestRule.onNode(hasText(etiquetaTraducirA(Idioma.ES, Idioma.ES))).assertExists()
         composeTestRule.onNodeWithText("Estructura de la oración").assertExists()
         composeTestRule.onNode(hasText("Satzbau")).assertDoesNotExist()
 
         // Toda la fila es clickeable (SwitchTraduccion), no hace falta acertarle al Switch exacto.
-        composeTestRule.onNode(hasText("Ver en", substring = true)).performClick()
+        composeTestRule.onNode(hasText("Traducir", substring = true)).performClick()
 
-        composeTestRule.onNode(hasText(etiquetaVerEnIdioma(Idioma.ES, Idioma.DE))).assertExists()
+        // La etiqueta no cambia al tocarla (antes "Ver en X" cambiaba de idioma y era ambigua).
+        composeTestRule.onNode(hasText(etiquetaTraducirA(Idioma.ES, Idioma.ES))).assertExists()
         composeTestRule.onNodeWithText("Satzbau").assertExists()
         composeTestRule.onNode(hasText("Estructura de la oración")).assertDoesNotExist()
     }
@@ -84,7 +85,7 @@ class ContenidoSemanalScreenFeaturesTest {
         }
 
         // "Apertura" 1: se activa el switch (se ve el idioma que se aprende).
-        composeTestRule.onNode(hasText("Ver en", substring = true)).performClick()
+        composeTestRule.onNode(hasText("Traducir", substring = true)).performClick()
         composeTestRule.onNodeWithText("Satzbau").assertExists()
 
         // "Apertura" 2: arranca de nuevo en idiomaBase (CLAUDE.md regla dura #13, mismo criterio).
@@ -97,7 +98,118 @@ class ContenidoSemanalScreenFeaturesTest {
     fun `el switch de traduccion no aparece en fichas no bilingues`() {
         val ficha = fichaBilingue().copy(bilingue = false)
         composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
-        composeTestRule.onNode(hasText("Ver en", substring = true)).assertDoesNotExist()
+        composeTestRule.onNode(hasText("Traducir", substring = true)).assertDoesNotExist()
+    }
+
+    @Test
+    fun `el switch de traduccion se oculta si el idioma de la app es el que se aprende`() {
+        val ficha = fichaBilingue()
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.DE) }
+        composeTestRule.onNode(hasText("übersetzen", substring = true)).assertDoesNotExist()
+        // Sin switch se ve el idioma que se aprende.
+        composeTestRule.onNodeWithText("Satzbau").assertExists()
+    }
+
+    // --- Ejemplos: el original SIEMPRE, la traduccion solo con el switch activo ---
+
+    private fun fichaConEjemplo(): Ficha {
+        val base = fichaBilingue()
+        return base.copy(
+            ejemplos = listOf(
+                base.ejemplos.first().copy(
+                    texto = TextoBilingue(porIdioma = mapOf("de" to "Ich finde das gut.", "es" to "Me parece bien.")),
+                ),
+            ),
+        )
+    }
+
+    @Test
+    fun `un ejemplo muestra siempre el original, y la traduccion aparece debajo solo con el switch activo`() {
+        val ficha = fichaConEjemplo()
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+
+        composeTestRule.onNodeWithText("Ich finde das gut.").assertExists()
+        composeTestRule.onNodeWithText("Me parece bien.").assertExists()
+
+        composeTestRule.onNode(hasText("Traducir", substring = true)).performClick()
+
+        composeTestRule.onNodeWithText("Ich finde das gut.").assertExists()
+        composeTestRule.onNode(hasText("Me parece bien.")).assertDoesNotExist()
+    }
+
+    // --- Palabra objetivo (*cita*) entre « » solo cuando se muestra la traduccion ---
+
+    @Test
+    fun `la palabra objetivo va entre comillas angulares al traducir, y sin ellas en el idioma que se aprende`() {
+        val base = fichaBilingue()
+        val ficha = base.copy(
+            descripcion = TextoBilingue(
+                porIdioma = mapOf("de" to "Nach *weil* steht das Verb am Ende.", "es" to "Después de *weil* el verbo va al final."),
+            ),
+        )
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+
+        composeTestRule.onNodeWithText("Después de «weil» el verbo va al final.").assertExists()
+
+        composeTestRule.onNode(hasText("Traducir", substring = true)).performClick()
+        composeTestRule.onNodeWithText("Nach weil steht das Verb am Ende.").assertExists()
+    }
+
+    // --- Contraste bilingue: la seccion existe siempre, solo cambia de idioma ---
+
+    private fun fichaConContraste(entrada: TextoBilingue): Ficha =
+        fichaBilingue().copy(contraste = mapOf("es" to entrada))
+
+    @Test
+    fun `el contraste aparece en los dos modos del switch, cambiando titulo y contenido de idioma`() {
+        val ficha = fichaConContraste(
+            TextoBilingue(porIdioma = mapOf("de" to "Das Spanische kennt keine Verbendstellung.", "es" to "El español no tiene verbo final.")),
+        )
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+
+        // Traducido (por defecto): titulo y texto en el idioma de app.
+        composeTestRule.onNodeWithText("Contraste con el español").assertExists()
+        composeTestRule.onNodeWithText("El español no tiene verbo final.").assertExists()
+
+        // Idioma que se aprende: la seccion sigue, titulo y texto en aleman.
+        composeTestRule.onNode(hasText("Traducir", substring = true)).performClick()
+        composeTestRule.onNodeWithText("Kontrast zum Spanischen").assertExists()
+        composeTestRule.onNodeWithText("Das Spanische kennt keine Verbendstellung.").assertExists()
+        composeTestRule.onNode(hasText("Contraste con el español")).assertDoesNotExist()
+    }
+
+    @Test
+    fun `una entrada de contraste sin traduccion cae al original en el modo traducido, sin crashear`() {
+        val ficha = fichaConContraste(TextoBilingue(porIdioma = mapOf("de" to "Das Spanische kennt keine Verbendstellung.")))
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+        composeTestRule.onNodeWithText("Das Spanische kennt keine Verbendstellung.").assertExists()
+        composeTestRule.onNodeWithText("Contraste con el español").assertExists()
+    }
+
+    // --- Titulos de seccion en los 6 idiomas, siguiendo el idioma mostrado ---
+
+    @Test
+    fun `los titulos de seccion siguen el idioma mostrado y redemittel es Expresiones en espanol`() {
+        val ficha = fichaBilingue()
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+
+        composeTestRule.onNodeWithText("Ejemplos").assertExists()
+        composeTestRule.onNode(hasText("Expresiones", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("Redemittel", substring = true)).assertDoesNotExist()
+
+        composeTestRule.onNode(hasText("Traducir", substring = true)).performClick()
+        composeTestRule.onNodeWithText("Beispiele").assertExists()
+        composeTestRule.onNode(hasText("Redemittel", substring = true)).assertExists()
+    }
+
+    @Test
+    fun `la etiqueta del dia de las microtareas sigue el idioma mostrado, no el que se aprende`() {
+        val ficha = fichaBilingue()
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+
+        composeTestRule.onNode(hasText("lun (", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("Traducir", substring = true)).performClick()
+        composeTestRule.onNode(hasText("Mo (", substring = true)).assertExists()
     }
 
     // --- Feature 2: desafio de fin de semana ---

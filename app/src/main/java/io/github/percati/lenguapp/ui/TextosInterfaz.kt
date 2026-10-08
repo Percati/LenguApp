@@ -31,7 +31,7 @@ enum class ClaveTexto {
     IDIOMAS_APRENDIDOS, IDIOMA_APP, SEGUN_SISTEMA, ESTILO_VISUAL, MODO, MODO_CLARO, MODO_OSCURO,
     NIVEL, CAMBIAR_NIVEL, IDIOMA_NO_DISPONIBLE, AVISO_GLOSAS,
     GUARDADOS, GUARDADOS_VACIO, FILTRO_IDIOMA, FILTRO_TIPO, FILTRO_TODOS,
-    TIPO_VOCABULARIO, TIPO_EXPRESION, DESAFIO_FINDE, VER_EN_IDIOMA,
+    TIPO_VOCABULARIO, TIPO_EXPRESION, DESAFIO_FINDE, TRADUCIR_A,
 }
 
 private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
@@ -197,13 +197,17 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "Défi du week-end", Idioma.IT to "Sfida del weekend", Idioma.PT to "Desafio de fim de semana",
     ),
     // --- Switch de traduccion en vivo (feature 1) ---
-    ClaveTexto.VER_EN_IDIOMA to mapOf(
-        Idioma.ES to "Ver en {idioma}",
-        Idioma.EN to "View in {idioma}",
-        Idioma.DE to "Auf {idioma} anzeigen",
-        Idioma.FR to "Voir en {idioma}",
-        Idioma.IT to "Vedi in {idioma}",
-        Idioma.PT to "Ver em {idioma}",
+    // Dice que HACE el switch (traducir al idioma de app), no que idioma se esta
+    // viendo ahora: la etiqueta vieja "Ver en {idioma}" cambiaba de idioma al
+    // tocarla y se leia igual de bien como "estoy viendo X" que como "pasar a X".
+    // {idioma} es siempre el idioma de app (el destino de la traduccion).
+    ClaveTexto.TRADUCIR_A to mapOf(
+        Idioma.ES to "Traducir al {idioma}",
+        Idioma.EN to "Translate to {idioma}",
+        Idioma.DE to "Auf {idioma} übersetzen",
+        Idioma.FR to "Traduire en {idioma}",
+        Idioma.IT to "Traduci in {idioma}",
+        Idioma.PT to "Traduzir para {idioma}",
     ),
 )
 
@@ -316,8 +320,15 @@ fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.T
 fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
 
-/** [idiomaMostrado] es el idioma que el switch de traduccion en vivo esta mostrando ahora, no el de interfaz. */
-fun etiquetaVerEnIdioma(idiomaInterfaz: Idioma, idiomaMostrado: Idioma): String = interpolar(
-    texto(ClaveTexto.VER_EN_IDIOMA, idiomaInterfaz),
-    "idioma" to nombreIdioma(idiomaMostrado, idiomaInterfaz),
-)
+/**
+ * Etiqueta del switch de traduccion: "Traducir al espanol". [idiomaDestino] es
+ * el idioma de app al que se traduce (el que el usuario eligio en Ajustes),
+ * nombrado en el idioma de interfaz. Los idiomas romances lo llevan en
+ * minuscula ("al espanol"); en aleman e ingles los nombres de idioma son
+ * nombres propios y quedan capitalizados.
+ */
+fun etiquetaTraducirA(idiomaInterfaz: Idioma, idiomaDestino: Idioma): String {
+    val nombre = nombreIdioma(idiomaDestino, idiomaInterfaz)
+    val nombreEnContexto = if (idiomaInterfaz == Idioma.EN || idiomaInterfaz == Idioma.DE) nombre else nombre.lowercase()
+    return interpolar(texto(ClaveTexto.TRADUCIR_A, idiomaInterfaz), "idioma" to nombreEnContexto)
+}

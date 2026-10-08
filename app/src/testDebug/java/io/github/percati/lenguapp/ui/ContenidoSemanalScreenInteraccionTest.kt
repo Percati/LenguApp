@@ -71,7 +71,7 @@ class ContenidoSemanalScreenInteraccionTest {
         composeTestRule.onNode(hasText("vergessen: im Deutschen Pflicht", substring = true)).assertExists()
 
         // Las glosas de vocabulario ahora traen ingles ademas de espanol.
-        val tituloVocabulario = etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)
+        val tituloVocabulario = etiquetaSeccion("vocabulario", ficha.idioma)
         composeTestRule.onNode(hasText(tituloVocabulario, substring = true)).performScrollTo().performClick()
         composeTestRule.onNode(hasText("the notice period", substring = true)).assertExists()
     }
@@ -123,7 +123,9 @@ class ContenidoSemanalScreenInteraccionTest {
     @Test
     fun `un campo bilingue se muestra en el idioma de la app y cae al que se aprende si falta`() {
         val base = ficha()
+        // bilingue = true: una ficha no bilingue (B2+) muestra siempre el idioma que se aprende.
         val ficha = base.copy(
+            bilingue = true,
             titulo = TextoBilingue(porIdioma = mapOf("de" to "Titel DE", "es" to "Titulo ES")),
             subtitulo = TextoBilingue(porIdioma = mapOf("de" to "Untertitel DE")),
         )
@@ -140,8 +142,8 @@ class ContenidoSemanalScreenInteraccionTest {
         // Los titulos siguen el idioma de la ficha desde la Fase 5 (B1): DE-G01
         // es alemana, asi que la seccion se llama "Themenwortschatz", no
         // "Vocabulario".
-        val tituloVocabulario = etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)
-        val tituloRedemittel = etiquetaSeccion("redemittel", ficha.idioma, ficha.bilingue)
+        val tituloVocabulario = etiquetaSeccion("vocabulario", ficha.idioma)
+        val tituloRedemittel = etiquetaSeccion("redemittel", ficha.idioma)
 
         // Plegado: el primer item de vocabulario no esta en pantalla todavia.
         composeTestRule.onNode(hasText(ficha.vocabulario.first().item, substring = true)).assertDoesNotExist()
@@ -246,7 +248,7 @@ class ContenidoSemanalScreenInteraccionTest {
                 ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES)
             }
         }
-        val tituloVocabulario = etiquetaSeccion("vocabulario", ficha.idioma, ficha.bilingue)
+        val tituloVocabulario = etiquetaSeccion("vocabulario", ficha.idioma)
         composeTestRule.onNode(hasText(tituloVocabulario, substring = true)).performScrollTo().performClick()
         composeTestRule.waitForIdle()
         composeTestRule.onNode(hasText(ficha.vocabulario.first().item, substring = true)).performScrollTo()

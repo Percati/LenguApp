@@ -76,36 +76,61 @@ class PresentacionTest {
         assertEquals(TraduccionRedemittel.SinEquivalenciaDirecta, resultado)
     }
 
-    // --- contraste: a diferencia de las glosas, NUNCA cae a espanol (AJUSTES-FASE-8.md, B.6) ---
+    // --- contraste bilingue (revertido a proposito, oct 2026): cada entrada es un
+    // TextoBilingue {idioma: texto}; la entrada la elige el idioma de app, el idioma
+    // mostrado (el switch) elige el texto dentro de ella ---
+
+    private fun entrada(original: String, traduccion: String? = null, claveTraduccion: String = "es") =
+        if (traduccion == null) TextoBilingue.de(original)
+        else TextoBilingue(porIdioma = mapOf("de" to original, claveTraduccion to traduccion))
 
     @Test
     fun `contraste ausente no muestra nada`() {
-        assertEquals(null, null.contrasteParaMostrar(Idioma.DE, Idioma.ES))
+        assertEquals(null, null.contrasteParaMostrar(Idioma.DE, Idioma.ES, Idioma.ES))
     }
 
     @Test
-    fun `contraste con el idioma base disponible se muestra`() {
-        assertEquals(
-            "El espanol no...",
-            mapOf("es" to "El espanol no...", "de" to "Das Deutsche...").contrasteParaMostrar(Idioma.DE, Idioma.ES),
-        )
+    fun `switch en idioma aprendido muestra el original, switch en idioma de app muestra la traduccion`() {
+        val contraste = mapOf("es" to entrada("Das Spanische kennt...", "El espanol conoce..."))
+        assertEquals("Das Spanische kennt...", contraste.contrasteParaMostrar(Idioma.DE, Idioma.ES, idiomaMostrado = Idioma.DE))
+        assertEquals("El espanol conoce...", contraste.contrasteParaMostrar(Idioma.DE, Idioma.ES, idiomaMostrado = Idioma.ES))
     }
 
     @Test
-    fun `contraste NO cae a espanol si el idioma base no esta poblado -- se oculta la seccion entera`() {
-        assertEquals(null, mapOf("es" to "El espanol no...").contrasteParaMostrar(Idioma.DE, Idioma.FR))
+    fun `una entrada sin traduccion (solo la clave del idioma aprendido) cae al original en los dos modos`() {
+        // Traducciones puede no haber terminado las ~1465 entradas: la app tiene que funcionar igual.
+        val contraste = mapOf("es" to entrada("Das Spanische kennt..."))
+        assertEquals("Das Spanische kennt...", contraste.contrasteParaMostrar(Idioma.DE, Idioma.ES, Idioma.ES))
+        assertEquals("Das Spanische kennt...", contraste.contrasteParaMostrar(Idioma.DE, Idioma.ES, Idioma.DE))
     }
 
     @Test
-    fun `contraste se oculta si el idioma que se aprende coincide con el idioma base, no hay contraste posible`() {
-        assertEquals(null, mapOf("de" to "Das Deutsche...").contrasteParaMostrar(Idioma.DE, Idioma.DE))
+    fun `el formato viejo (string plano) sigue funcionando`() {
+        val contraste = mapOf("es" to TextoBilingue.de("Das Spanische kennt..."))
+        assertEquals("Das Spanische kennt...", contraste.contrasteParaMostrar(Idioma.DE, Idioma.ES, Idioma.ES))
     }
 
     @Test
-    fun `contraste con dos claves (es, en) elige la del idioma base sin importar el orden del mapa`() {
-        val contraste = mapOf("es" to "El espanol no tiene...", "en" to "English has no...")
-        assertEquals("El espanol no tiene...", contraste.contrasteParaMostrar(Idioma.DE, Idioma.ES))
-        assertEquals("English has no...", contraste.contrasteParaMostrar(Idioma.DE, Idioma.EN))
+    fun `la entrada depende solo del idioma de app, no del switch -- la seccion existe aunque se muestre el idioma aprendido`() {
+        val contraste = mapOf("es" to entrada("Das Spanische...", "El espanol..."), "en" to entrada("Spanish...", "x", "en"))
+        assertEquals("Das Spanische...", contraste.contrasteParaMostrar(Idioma.DE, Idioma.ES, Idioma.DE))
+        assertEquals("x", contraste.contrasteParaMostrar(Idioma.DE, Idioma.EN, Idioma.EN))
+    }
+
+    @Test
+    fun `contraste NO cae a otra entrada si el idioma de app no esta poblado -- se oculta la seccion entera`() {
+        val contraste = mapOf("es" to entrada("Das Spanische...", "El espanol..."))
+        assertEquals(null, contraste.contrasteParaMostrar(Idioma.DE, Idioma.FR, Idioma.FR))
+    }
+
+    @Test
+    fun `contraste se oculta si el idioma que se aprende coincide con el de app, no hay contraste posible`() {
+        assertEquals(null, mapOf("de" to entrada("Das Deutsche...")).contrasteParaMostrar(Idioma.DE, Idioma.DE, Idioma.DE))
+    }
+
+    @Test
+    fun `una entrada vacia se trata como ausente`() {
+        assertEquals(null, mapOf("es" to TextoBilingue.de("")).contrasteParaMostrar(Idioma.DE, Idioma.ES, Idioma.ES))
     }
 
     // --- erroresContrastivos: se SUMAN a errores, nunca lo reemplazan (mismo criterio que contraste) ---

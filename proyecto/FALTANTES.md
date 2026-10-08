@@ -433,3 +433,48 @@ una elección explícita del usuario, no un fallback.
 
 `compileDebugKotlin compileDebugUnitTestKotlin test`: limpio, 826 tests
 (antes 825), 0 fallas.
+
+## 14. Contraste bilingüe completo, `categoriasUso` y 7 fixes de UI — ✅ por Code (oct 2026)
+
+**Schema (para Traducciones y Núcleos):**
+
+- `contraste` — cada VALOR (no el campo entero) es ahora `oneOf` string plano
+  (formato viejo) u objeto `{idioma: texto}` con dos claves: la del idioma que
+  se aprende (el original, **obligatoria** en forma objeto y con `minLength` 20)
+  y la del idioma de app que nombra la entrada (su traducción, sin `minLength`).
+  Las entradas string y objeto conviven mientras Traducciones no termine.
+  Verificado: 606/56/0 con los datos de hoy; forma objeto, sin clave del
+  aprendido, original corto e idioma inválido probados con jsonschema.
+- `redemittel[].categoriasUso` — array de strings libres, opcional, sin
+  estructura bilingüe. La lista cerrada de categorías la aplica Núcleos por
+  convención, no el schema.
+
+**App:**
+
+- El renderizado del contraste sigue el switch como el resto de los campos
+  bilingües: la ENTRADA la elige el idioma de app; el IDIOMA (original o
+  traducción, con fallback al original si falta la traducción) lo elige el
+  switch, y el título también ("Kontrast zum Spanischen" / "Contraste con el
+  español"). La sección ya no depende del switch para aparecer.
+  Decisión a revisar: en fichas **no** bilingües (B2+, sin switch) el contraste
+  se muestra en el idioma que se aprende, igual que antes.
+- (a) `EtiquetasSeccion.kt`: tabla de títulos en los 6 idiomas ("redemittel" =
+  "Expresiones" en español). Ya no se concatenan dos idiomas.
+- (b) `*palabra*` se muestra «palabra» (cursiva + comillas angulares) cuando la
+  ficha muestra la traducción; no duplica si el texto ya trae « ».
+- (c) El switch se oculta si idioma de app == idioma que se aprende.
+- (d) Ejemplos: el original siempre; la traducción debajo, tipografía chica,
+  solo con el switch activo.
+- (e) Interlineado: palabra+traducción pegadas, más aire entre ítems; en
+  expresiones la función va debajo de la traducción.
+- (f) El día de las microtareas sigue el idioma mostrado.
+- (g) Etiqueta del switch: "Traducir al {idioma}" ("Translate to…", "Auf …
+  übersetzen", "Traduire en…", "Traduci in…", "Traduzir para…"), fija: dice qué
+  hace el switch, no qué idioma se ve. El switch ON = traducido (por defecto).
+
+Además se corrigió un bug latente de la primera versión del switch: las glosas
+de vocabulario/expresiones se resolvían con el idioma *mostrado*, así que con
+el switch en el idioma aprendido caían al español fijo; ahora siempre usan el
+idioma de app.
+
+`compileDebugKotlin compileDebugUnitTestKotlin test`: 844 tests, 0 fallas.

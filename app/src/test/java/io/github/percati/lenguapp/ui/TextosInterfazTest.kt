@@ -151,4 +151,14 @@ class TextosInterfazTest {
         assertEquals("German", nombreIdioma(Idioma.DE, Idioma.EN))
         assertEquals("Deutsch", nombreIdioma(Idioma.DE, Idioma.DE))
     }
+
+    @Test
+    fun `etiquetaTraducirA dice que hace el switch, nombrando el idioma de destino sin ambiguedad`() {
+        assertEquals("Traducir al español", etiquetaTraducirA(Idioma.ES, Idioma.ES))
+        assertEquals("Translate to Spanish", etiquetaTraducirA(Idioma.EN, Idioma.ES))
+        assertEquals("Auf Spanisch übersetzen", etiquetaTraducirA(Idioma.DE, Idioma.ES))
+        assertEquals("Traduire en espagnol", etiquetaTraducirA(Idioma.FR, Idioma.ES))
+        assertEquals("Traduci in spagnolo", etiquetaTraducirA(Idioma.IT, Idioma.ES))
+        assertEquals("Traduzir para espanhol", etiquetaTraducirA(Idioma.PT, Idioma.ES))
+    }
 }
