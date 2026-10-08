@@ -1,4 +1,4 @@
-# Qué falta, a 22 de septiembre de 2026 (actualización 3)
+# Qué falta, a 8 de octubre de 2026 (actualización 4)
 
 Estado regenerado a partir de los archivos reales del repositorio (parche de Apariciones ya aplicado y verificado en un clon de prueba, no solo leído). Si este archivo y otro documento del proyecto se contradicen, este es el que hay que creer.
 
@@ -513,3 +513,27 @@ el switch en el idioma aprendido caían al español fijo; ahora siempre usan el
 idioma de app.
 
 `compileDebugKotlin compileDebugUnitTestKotlin test`: 844 tests, 0 fallas.
+
+## 15. Estado a 8-oct-2026 (verificado en clon fresco) — falta SOLO Code Ronda B
+
+Verificado tras los commits aa953bd, 790f118, 5f9e1c2 y df6cf9e:
+
+| Chequeo | Resultado |
+|---|---|
+| `componer.py` | 606 fichas, 56 semanas especiales, 0 con problemas |
+| `categoriasUso` | 2624 de 2897 redemittel (91%); 273 con lista vacía = revisadas sin categoría (ver 7.6) |
+| Contraste bilingüe | 1465 entradas en 293 núcleos, 0 strings planos restantes |
+| Taxonomía | 33 valores en uso = 18 funciones + 15 patrones (los +3/+8 aprobados el 08-10); ninguno fuera de `data/categorias-uso.json` |
+| Code Ronda A | Los 7 fixes de la sección 14 aplicados, 844 tests en verde |
+
+**Pendiente, en este orden:**
+
+1. **Code Ronda B** (única pieza que bloquea el cierre de esta tanda): Planilla del profesor (PDF local, al final de cada ficha) y Biblioteca (Vocabulario / Expresiones, pestañas por idioma, filtros de nivel/topic/uso, estrella sincronizada con Guardados). Notas para ese prompt:
+   - `banco.json` no se embebe en assets: la Biblioteca necesita un JSON chico con `topicNombres` (T01-T14).
+   - La Biblioteca de Expresiones filtra por `categoriasUso`; con 33 valores conviene agrupar los chips por rama (función comunicativa / patrón gramatical).
+   - **Textos que siguen hardcodeados en español, fuera del alcance de Ronda A** (a incluir en Ronda B): `etiquetaClase()` en `ContenidoSemanalScreen.kt` ("Semana de repaso", "Semana Survival"; ~línea 676) y el botón "Copiar al portapapeles"/"Copiado" del prompt de corrección. Deben pasar por `TextosInterfaz` en los 6 idiomas.
+   - Además `etiquetaDia` usa el idioma equivocado en repaso/Survival (ver nota previa de la sección 14, punto f solo cubrió microtareas).
+2. 273 redemittel sin categoría: 221 son hueco de taxonomía léxica (decisión de Fer: tercera rama o 4-5 categorías: Registro, Formación de palabras, Variante regional, Elección léxica y connotación, Describir, Determinación); 52 son cola larga. No bloquea nada.
+3. Idea nueva, sin decidir: prompt de conversación de voz para IAs externas (análogo al de corrección). Opinión en el chat; si se aprueba, es contenido nuevo dentro del 10-15%.
+
+**Diferido / largo plazo (sin cambios):** tuteo unificado (6.1) hasta el primer idioma nuevo a aprender; sumar español (roadmap PDF entregado); estética, ícono y splash (esperan referencias de Fer); app única vs. una por idioma (APK ~60 MB, 90% audio); 2028 y el resto de 2027 necesitan packs, apariciones, audio y traducciones nuevos (núcleos y calendario se reutilizan); piloto 2026 congelado con su deuda conocida.
