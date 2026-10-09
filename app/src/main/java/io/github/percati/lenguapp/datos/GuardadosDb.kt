@@ -73,6 +73,9 @@ interface GuardadoDao {
     @Query("SELECT * FROM guardados WHERE skillIdOrigen = :skillIdOrigen AND tipo = :tipo AND textoOrigen = :textoOrigen LIMIT 1")
     suspend fun buscar(skillIdOrigen: String, tipo: TipoGuardado, textoOrigen: String): GuardadoEntity?
 
+    @Query("SELECT * FROM guardados WHERE idioma = :idioma AND tipo = :tipo AND textoOrigen = :textoOrigen")
+    suspend fun buscarPorTexto(idioma: Idioma, tipo: TipoGuardado, textoOrigen: String): List<GuardadoEntity>
+
     @Insert
     suspend fun insertar(entidad: GuardadoEntity)
 
@@ -105,7 +108,17 @@ class RepositorioGuardados(private val dao: GuardadoDao) {
     suspend fun estaGuardado(skillIdOrigen: String, tipo: TipoGuardado, textoOrigen: String): Boolean =
         dao.buscar(skillIdOrigen, tipo, textoOrigen) != null
 
-    /** Guarda si no estaba, lo quita si ya estaba -- toggle sin confirmacion. */
+    /**
+     * Guarda si no estaba, lo quita si ya estaba -- toggle sin confirmacion.
+     *
+     * La identidad de un guardado es (idioma, tipo, texto), no (skill, tipo,
+     * texto): la misma palabra o expresion aparece en varias fichas y niveles, y la
+     * estrella de la ficha y la de la Biblioteca tienen que ser la misma estrella.
+     * `skillIdOrigen` y `nivel` quedan como el origen de la PRIMERA vez que se la
+     * guardo (para volver a esa ficha desde Guardados). Quitar borra todas las filas
+     * con ese texto, tambien las que haya dejado una version anterior de la app
+     * (cuando la identidad incluia el skill).
+     */
     suspend fun alternar(
         idioma: Idioma,
         nivel: Nivel,
@@ -115,9 +128,9 @@ class RepositorioGuardados(private val dao: GuardadoDao) {
         funcion: TextoBilingue?,
         skillIdOrigen: String,
     ) {
-        val existente = dao.buscar(skillIdOrigen, tipo, textoOrigen)
-        if (existente != null) {
-            dao.borrar(existente)
+        val existentes = dao.buscarPorTexto(idioma, tipo, textoOrigen)
+        if (existentes.isNotEmpty()) {
+            existentes.forEach { dao.borrar(it) }
         } else {
             dao.insertar(
                 GuardadoEntity(

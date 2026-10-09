@@ -82,7 +82,13 @@ import io.github.percati.lenguapp.ui.GuardadosScreen
 import io.github.percati.lenguapp.ui.PantallaSemana
 import io.github.percati.lenguapp.ui.TemaLenguApp
 import io.github.percati.lenguapp.ui.claveGuardado
+import io.github.percati.lenguapp.ui.BibliotecaScreen
+import io.github.percati.lenguapp.ui.claveBiblioteca
 import io.github.percati.lenguapp.ui.etiquetaAjustes
+import io.github.percati.lenguapp.ui.etiquetaBiblioteca
+import io.github.percati.lenguapp.presentacion.construirBiblioteca
+import io.github.percati.lenguapp.datos.CategoriasUso
+import io.github.percati.lenguapp.datos.cargarCategoriasUsoDesdeAssets
 import io.github.percati.lenguapp.ui.etiquetaGuardados
 import io.github.percati.lenguapp.ui.etiquetaHoy
 import io.github.percati.lenguapp.ui.etiquetaSemana
@@ -95,6 +101,7 @@ import java.util.Locale
 private const val DESTINO_PRINCIPAL = "principal"
 private const val DESTINO_AJUSTES = "ajustes"
 private const val DESTINO_GUARDADOS = "guardados"
+private const val DESTINO_BIBLIOTECA = "biblioteca"
 private const val DESTINO_FICHA_GUARDADA = "ficha_guardada"
 private const val VENTANA_DOBLE_ATRAS_MS = 3000L
 
@@ -126,6 +133,7 @@ class MainActivity : ComponentActivity() {
         val promptsVoz = cargarPlantillasPromptVozDesdeAssets(this)
         val planillaTextos = cargarPlanillaTextosDesdeAssets(this)
         val topicNombres = cargarTopicNombresDesdeAssets(this)
+        val categoriasUso = cargarCategoriasUsoDesdeAssets(this)
         setContent {
             LenguAppApp(
                 ajustesIniciales = ajustesIniciales,
@@ -136,6 +144,7 @@ class MainActivity : ComponentActivity() {
                 promptsVoz = promptsVoz,
                 planillaTextos = planillaTextos,
                 topicNombres = topicNombres,
+                categoriasUso = categoriasUso,
                 resolver = { idioma, nivel, fecha -> resolverSemana(this, contenidoPorId, idioma, nivel, fecha) },
                 onGuardarAjustes = { guardarAjustes(this, it) },
             )
@@ -168,6 +177,7 @@ internal fun LenguAppApp(
     // Planilla del profesor: textos fijos por idioma que se aprende + nombres de topic (banco.json).
     planillaTextos: Map<Idioma, PlanillaTextos> = emptyMap(),
     topicNombres: Map<String, String> = emptyMap(),
+    categoriasUso: CategoriasUso = CategoriasUso(),
 ) {
     var ajustes by remember { mutableStateOf(ajustesIniciales) }
     var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
@@ -192,14 +202,22 @@ internal fun LenguAppApp(
     // que items ya estan guardados (para la estrella llena) y el callback
     // de toggle, con skillId/idioma/nivel de la ficha ya capturados.
     fun estadoGuardadosPara(ficha: Ficha) = EstadoGuardados(
+        // La identidad de un guardado es (idioma, tipo, texto): la misma palabra en
+        // otra ficha u otro nivel (o desde la Biblioteca) es la misma estrella.
         guardados = guardadosTodos
-            .filter { it.skillIdOrigen == ficha.skillId }
+            .filter { it.idioma == ficha.idioma }
             .map { claveGuardado(it.tipo, it.texto.resolver(it.idioma, it.idioma)) }
             .toSet(),
         onAlternar = { tipo, textoOrigen, texto, funcion ->
             alternarGuardado(ficha.idioma, ficha.nivel, ficha.skillId, tipo, textoOrigen, texto, funcion)
         },
     )
+
+    // Biblioteca: agregada una sola vez (deduplicada entre todas las fichas embebidas).
+    val itemsBiblioteca = remember(contenidoTodos) { construirBiblioteca(contenidoTodos) }
+    val guardadasBiblioteca = guardadosTodos
+        .map { claveBiblioteca(it.idioma, it.tipo, it.texto.resolver(it.idioma, it.idioma)) }
+        .toSet()
 
     // Solo se lee el idioma del dispositivo si el usuario activo "Segun el
     // sistema" -- CLAUDE.md, regla dura #2 enmendada (AJUSTES-FASE-6.md, E).
@@ -265,6 +283,7 @@ internal fun LenguAppApp(
                         onHoy = { fechaVistaIso = LocalDate.now().toString() },
                         onAjustes = { navController.navigate(DESTINO_AJUSTES) },
                         onGuardados = { navController.navigate(DESTINO_GUARDADOS) },
+                        onBiblioteca = { navController.navigate(DESTINO_BIBLIOTECA) },
                         guardadosDeLaFicha = ::estadoGuardadosPara,
                         promptsVoz = promptsVoz,
                         onPlanilla = onPlanilla,
@@ -292,6 +311,24 @@ internal fun LenguAppApp(
                                 fichaGuardadaAbiertaId = ficha.id
                                 navController.navigate(DESTINO_FICHA_GUARDADA)
                             }
+                        },
+                        onVolver = { navController.popBackStack() },
+                    )
+                }
+                composable(DESTINO_BIBLIOTECA) {
+                    BibliotecaScreen(
+                        items = itemsBiblioteca,
+                        idiomasAprendidos = ajustes.idiomasAprendidos,
+                        idiomaBase = ajustes.idiomaBase,
+                        idiomaInterfaz = idiomaAplicacion,
+                        topicNombres = topicNombres,
+                        categorias = categoriasUso,
+                        guardadas = guardadasBiblioteca,
+                        onAlternar = { item ->
+                            alternarGuardado(
+                                item.idioma, item.nivelOrigen, item.skillIdOrigen, item.tipo,
+                                item.texto, item.textoBilingue(), item.funcion,
+                            )
                         },
                         onVolver = { navController.popBackStack() },
                     )
@@ -330,6 +367,7 @@ private fun PantallaPrincipal(
     onHoy: () -> Unit,
     onAjustes: () -> Unit,
     onGuardados: () -> Unit,
+    onBiblioteca: () -> Unit,
     guardadosDeLaFicha: (Ficha) -> EstadoGuardados,
     promptsVoz: Map<String, String>,
     onPlanilla: ((ContenidoSemanal) -> Unit)?,
@@ -346,6 +384,7 @@ private fun PantallaPrincipal(
             onHoy = onHoy,
             onAjustes = onAjustes,
             onGuardados = onGuardados,
+            onBiblioteca = onBiblioteca,
         )
 
         if (idiomasSeleccionados.isEmpty() || idiomaActivo == null) {
@@ -423,6 +462,7 @@ private fun BarraNavegacion(
     onHoy: () -> Unit,
     onAjustes: () -> Unit,
     onGuardados: () -> Unit,
+    onBiblioteca: () -> Unit,
 ) {
     val textoSemana = etiquetaSemana(idiomaAplicacion)
     Column(modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp)) {
@@ -462,6 +502,7 @@ private fun BarraNavegacion(
             verticalAlignment = Alignment.CenterVertically,
         ) {
             TextButton(onClick = onHoy, enabled = !esHoy) { Text(etiquetaHoy(idiomaAplicacion)) }
+            TextButton(onClick = onBiblioteca) { Text(etiquetaBiblioteca(idiomaAplicacion)) }
             TextButton(onClick = onGuardados) { Text(etiquetaGuardados(idiomaAplicacion)) }
             TextButton(onClick = onAjustes) { Text(etiquetaAjustes(idiomaAplicacion)) }
         }

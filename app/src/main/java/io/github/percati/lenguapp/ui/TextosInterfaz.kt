@@ -33,6 +33,7 @@ enum class ClaveTexto {
     GUARDADOS, GUARDADOS_VACIO, FILTRO_IDIOMA, FILTRO_TIPO, FILTRO_TODOS,
     TIPO_VOCABULARIO, TIPO_EXPRESION, DESAFIO_FINDE, TRADUCIR_A,
     SEMANA_REPASO, SEMANA_SURVIVAL, COPIAR_PORTAPAPELES, COPIADO, PROMPT_VOZ_TITULO, PROMPT_VOZ_AYUDA, PLANILLA_BOTON, PLANILLA_SIN_LECTOR,
+    BIBLIOTECA, BIBLIOTECA_BUSCAR, BIBLIOTECA_TEMA, BIBLIOTECA_SIN_CATEGORIA, BIBLIOTECA_FUNCIONES, BIBLIOTECA_PATRONES, BIBLIOTECA_VACIO,
 }
 
 private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
@@ -248,6 +249,63 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Nessuna app può aprire o condividere il PDF.",
         Idioma.PT to "Não há nenhuma aplicação para abrir ou partilhar o PDF.",
     ),
+    // --- Biblioteca (Ronda B, pieza 4) ---
+    ClaveTexto.BIBLIOTECA to mapOf(
+        Idioma.ES to "Biblioteca",
+        Idioma.EN to "Library",
+        Idioma.DE to "Bibliothek",
+        Idioma.FR to "Bibliothèque",
+        Idioma.IT to "Biblioteca",
+        Idioma.PT to "Biblioteca",
+    ),
+    ClaveTexto.BIBLIOTECA_BUSCAR to mapOf(
+        Idioma.ES to "Buscar",
+        Idioma.EN to "Search",
+        Idioma.DE to "Suchen",
+        Idioma.FR to "Rechercher",
+        Idioma.IT to "Cerca",
+        Idioma.PT to "Pesquisar",
+    ),
+    ClaveTexto.BIBLIOTECA_TEMA to mapOf(
+        Idioma.ES to "Tema",
+        Idioma.EN to "Topic",
+        Idioma.DE to "Thema",
+        Idioma.FR to "Thème",
+        Idioma.IT to "Tema",
+        Idioma.PT to "Tema",
+    ),
+    ClaveTexto.BIBLIOTECA_SIN_CATEGORIA to mapOf(
+        Idioma.ES to "Sin categoría",
+        Idioma.EN to "No category",
+        Idioma.DE to "Ohne Kategorie",
+        Idioma.FR to "Sans catégorie",
+        Idioma.IT to "Senza categoria",
+        Idioma.PT to "Sem categoria",
+    ),
+    ClaveTexto.BIBLIOTECA_FUNCIONES to mapOf(
+        Idioma.ES to "Funciones comunicativas",
+        Idioma.EN to "Communicative functions",
+        Idioma.DE to "Kommunikative Funktionen",
+        Idioma.FR to "Fonctions communicatives",
+        Idioma.IT to "Funzioni comunicative",
+        Idioma.PT to "Funções comunicativas",
+    ),
+    ClaveTexto.BIBLIOTECA_PATRONES to mapOf(
+        Idioma.ES to "Patrones gramaticales",
+        Idioma.EN to "Grammar patterns",
+        Idioma.DE to "Grammatikalische Muster",
+        Idioma.FR to "Structures grammaticales",
+        Idioma.IT to "Strutture grammaticali",
+        Idioma.PT to "Padrões gramaticais",
+    ),
+    ClaveTexto.BIBLIOTECA_VACIO to mapOf(
+        Idioma.ES to "No hay nada para mostrar con estos filtros.",
+        Idioma.EN to "Nothing to show with these filters.",
+        Idioma.DE to "Mit diesen Filtern gibt es nichts anzuzeigen.",
+        Idioma.FR to "Rien à afficher avec ces filtres.",
+        Idioma.IT to "Niente da mostrare con questi filtri.",
+        Idioma.PT to "Nada para mostrar com estes filtros.",
+    ),
     // --- Switch de traduccion en vivo (feature 1) ---
     // Dice que HACE el switch (traducir al idioma de app), no que idioma se esta
     // viendo ahora: la etiqueta vieja "Ver en {idioma}" cambiaba de idioma al
@@ -377,6 +435,13 @@ fun etiquetaCopiarPortapapeles(idiomaInterfaz: Idioma): String = texto(ClaveText
 fun etiquetaCopiado(idiomaInterfaz: Idioma): String = texto(ClaveTexto.COPIADO, idiomaInterfaz)
 fun etiquetaPlanillaBoton(idiomaInterfaz: Idioma): String = texto(ClaveTexto.PLANILLA_BOTON, idiomaInterfaz)
 fun mensajePlanillaSinLector(idiomaInterfaz: Idioma): String = texto(ClaveTexto.PLANILLA_SIN_LECTOR, idiomaInterfaz)
+fun etiquetaBiblioteca(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA, idiomaInterfaz)
+fun etiquetaBibliotecaBuscar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_BUSCAR, idiomaInterfaz)
+fun etiquetaBibliotecaTema(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_TEMA, idiomaInterfaz)
+fun etiquetaBibliotecaSinCategoria(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_SIN_CATEGORIA, idiomaInterfaz)
+fun etiquetaBibliotecaFunciones(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_FUNCIONES, idiomaInterfaz)
+fun etiquetaBibliotecaPatrones(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_PATRONES, idiomaInterfaz)
+fun etiquetaBibliotecaVacio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_VACIO, idiomaInterfaz)
 fun etiquetaPromptVozTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.PROMPT_VOZ_TITULO, idiomaInterfaz)
 fun etiquetaPromptVozAyuda(idiomaInterfaz: Idioma): String = texto(ClaveTexto.PROMPT_VOZ_AYUDA, idiomaInterfaz)
 

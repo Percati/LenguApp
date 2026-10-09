@@ -186,6 +186,16 @@ val generarTopicNombresAssets by tasks.registering {
     }
 }
 
+// Lista cerrada de categoriasUso (funciones comunicativas + patrones gramaticales):
+// la Biblioteca filtra las expresiones por ella. Se copia a assets/temas/ en cada
+// build (no se versiona la copia).
+val copiarCategoriasUsoAssets by tasks.registering(Copy::class) {
+    group = "build"
+    description = "Copia categorias-uso.json a assets/temas/."
+    from(File(rootDir, "proyecto/data")) { include("categorias-uso.json") }
+    into(File(projectDir, "src/main/assets/temas"))
+}
+
 // preBuild es dependencia transitiva tanto de compileDebugKotlin como de
 // compileDebugUnitTestKotlin, asi que esto corre antes de compilar y antes
 // de testear, en ambas variantes.
@@ -193,6 +203,7 @@ tasks.matching { it.name == "preBuild" }.configureEach {
     dependsOn(generarCalendarioAssets)
     dependsOn(copiarPlantillasAssets)
     dependsOn(generarTopicNombresAssets)
+    dependsOn(copiarCategoriasUsoAssets)
 }
 
 // assembleDebug debe fallar si el JSON de assets/ no valida contra el schema:

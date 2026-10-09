@@ -69,4 +69,31 @@ class RepositorioGuardadosTest {
         repo.alternar(Idioma.DE, Nivel.B2, TipoGuardado.VOCABULARIO, "der Mieter", t, null, "DE-V02")
         assertEquals(2, repo.listar().size)
     }
+
+    @Test
+    fun `la identidad es idioma-tipo-texto, la misma palabra desde otra ficha o nivel es la misma estrella`() = runBlocking {
+        val repo = repositorio()
+        val t = TextoBilingue(porIdioma = mapOf("de" to "die Miete"))
+        // Guardada desde la ficha de un skill...
+        repo.alternar(Idioma.DE, Nivel.B2, TipoGuardado.VOCABULARIO, "die Miete", t, null, "DE-V02")
+        // ...y tocada desde la Biblioteca con otro skill/nivel de origen: la quita, no duplica.
+        repo.alternar(Idioma.DE, Nivel.A2, TipoGuardado.VOCABULARIO, "die Miete", t, null, "DE-V09")
+        assertTrue(repo.listar().isEmpty())
+
+        // Y al reves: guardada desde la Biblioteca, la ficha ve la misma fila.
+        repo.alternar(Idioma.DE, Nivel.A2, TipoGuardado.VOCABULARIO, "die Miete", t, null, "DE-V09")
+        assertEquals(1, repo.listar().size)
+        repo.alternar(Idioma.DE, Nivel.B2, TipoGuardado.VOCABULARIO, "die Miete", t, null, "DE-V02")
+        assertTrue(repo.listar().isEmpty())
+    }
+
+    @Test
+    fun `el mismo texto en otro idioma o de otro tipo es otro guardado`() = runBlocking {
+        val repo = repositorio()
+        val t = TextoBilingue(porIdioma = mapOf("de" to "x"))
+        repo.alternar(Idioma.DE, Nivel.B2, TipoGuardado.VOCABULARIO, "Tag", t, null, "DE-V02")
+        repo.alternar(Idioma.EN, Nivel.B2, TipoGuardado.VOCABULARIO, "Tag", t, null, "EN-V02")
+        repo.alternar(Idioma.DE, Nivel.B2, TipoGuardado.EXPRESION, "Tag", t, null, "DE-V02")
+        assertEquals(3, repo.listar().size)
+    }
 }

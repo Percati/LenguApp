@@ -1,0 +1,231 @@
+package io.github.percati.lenguapp.ui
+
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.outlined.StarBorder
+import androidx.compose.material3.FilterChip
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.ScrollableTabRow
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Tab
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.unit.dp
+import io.github.percati.lenguapp.datos.CategoriasUso
+import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.Nivel
+import io.github.percati.lenguapp.modelo.TipoGuardado
+import io.github.percati.lenguapp.modelo.resolver
+import io.github.percati.lenguapp.presentacion.ItemBiblioteca
+import io.github.percati.lenguapp.presentacion.SIN_CATEGORIA
+import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
+import io.github.percati.lenguapp.presentacion.filtrar
+import io.github.percati.lenguapp.presentacion.traduccionParaMostrar
+
+const val TAG_ESTRELLA_BIBLIOTECA = "estrella-biblioteca"
+
+/** Clave de la estrella en la Biblioteca: idioma + tipo + texto (la identidad de un guardado, ver RepositorioGuardados.alternar). */
+fun claveBiblioteca(idioma: Idioma, tipo: TipoGuardado, texto: String): String = "$idioma|$tipo|$texto"
+
+/**
+ * Biblioteca: consulta pura en pantalla de todo el vocabulario y las expresiones
+ * embebidos, deduplicados. Pestañas por idioma aprendido (filtra, no mezcla); nivel
+ * multi-seleccion con el nivel actual del idioma por defecto (se cambia aca sin
+ * tocar Ajustes); vocabulario por topic, expresiones por categoriasUso (agrupadas
+ * en sus dos ramas); buscador libre. La traduccion siempre en el idioma de app. Sin
+ * persistencia: filtros y busqueda arrancan en el default en cada apertura (regla
+ * dura #4). La estrella es la de Guardados (mismo Room).
+ */
+@OptIn(ExperimentalLayoutApi::class, ExperimentalFoundationApi::class)
+@Composable
+fun BibliotecaScreen(
+    items: List<ItemBiblioteca>,
+    idiomasAprendidos: Map<Idioma, Nivel>,
+    idiomaBase: Idioma,
+    idiomaInterfaz: Idioma,
+    topicNombres: Map<String, String>,
+    categorias: CategoriasUso,
+    guardadas: Set<String>,
+    onAlternar: (ItemBiblioteca) -> Unit,
+    onVolver: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val idiomas = remember(idiomasAprendidos) { idiomasAprendidos.keys.sortedBy { it.ordinal } }
+    var idiomaElegido by remember(idiomas) { mutableStateOf(idiomas.firstOrNull()) }
+    var nivelesPorIdioma by remember { mutableStateOf<Map<Idioma, Set<Nivel>>>(emptyMap()) }
+    var tipo by remember { mutableStateOf(TipoGuardado.VOCABULARIO) }
+    var topic by remember { mutableStateOf<String?>(null) }
+    var categoriasElegidas by remember { mutableStateOf<Set<String>>(emptySet()) }
+    var busqueda by remember { mutableStateOf("") }
+
+    val idioma = idiomaElegido
+    val niveles = idioma?.let { nivelesPorIdioma[it] ?: setOfNotNull(idiomasAprendidos[it]) } ?: emptySet()
+    val filtrados = remember(items, idioma, tipo, niveles, topic, categoriasElegidas, busqueda, idiomaBase) {
+        if (idioma == null) emptyList() else items.filtrar(idioma, tipo, niveles, topic, categoriasElegidas, busqueda, idiomaBase)
+    }
+
+    Column(modifier = modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            TextButton(onClick = onVolver) { Text("< ${etiquetaVolver(idiomaInterfaz)}") }
+            Text(etiquetaBiblioteca(idiomaInterfaz), style = MaterialTheme.typography.headlineSmall)
+        }
+
+        if (idioma == null) {
+            Text(etiquetaBibliotecaVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge)
+            return@Column
+        }
+
+        LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            item {
+                Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    ScrollableTabRow(selectedTabIndex = idiomas.indexOf(idioma).coerceAtLeast(0)) {
+                        idiomas.forEach { i ->
+                            Tab(selected = i == idioma, onClick = { idiomaElegido = i }, text = { Text(i.name) })
+                        }
+                    }
+
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        FilterChip(
+                            selected = tipo == TipoGuardado.VOCABULARIO,
+                            onClick = { tipo = TipoGuardado.VOCABULARIO },
+                            label = { Text(etiquetaTipoVocabulario(idiomaInterfaz)) },
+                        )
+                        FilterChip(
+                            selected = tipo == TipoGuardado.EXPRESION,
+                            onClick = { tipo = TipoGuardado.EXPRESION },
+                            label = { Text(etiquetaTipoExpresion(idiomaInterfaz)) },
+                        )
+                    }
+
+                    Text(etiquetaNivel(idiomaInterfaz), style = MaterialTheme.typography.labelMedium)
+                    Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        Nivel.entries.forEach { n ->
+                            FilterChip(
+                                selected = n in niveles,
+                                onClick = {
+                                    val nuevo = if (n in niveles) niveles - n else niveles + n
+                                    nivelesPorIdioma = nivelesPorIdioma + (idioma to nuevo)
+                                },
+                                label = { Text(n.name) },
+                            )
+                        }
+                    }
+
+                    if (tipo == TipoGuardado.VOCABULARIO) {
+                        Text(etiquetaBibliotecaTema(idiomaInterfaz), style = MaterialTheme.typography.labelMedium)
+                        Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            FilterChip(selected = topic == null, onClick = { topic = null }, label = { Text(etiquetaFiltroTodos(idiomaInterfaz)) })
+                            topicNombres.keys.sorted().forEach { id ->
+                                FilterChip(selected = topic == id, onClick = { topic = id }, label = { Text(topicNombres.getValue(id)) })
+                            }
+                        }
+                    } else {
+                        RamaCategorias(etiquetaBibliotecaFunciones(idiomaInterfaz), categorias.funcionComunicativa, categoriasElegidas) { categoriasElegidas = it }
+                        RamaCategorias(etiquetaBibliotecaPatrones(idiomaInterfaz), categorias.patronGramatical, categoriasElegidas) { categoriasElegidas = it }
+                        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            FilterChip(
+                                selected = SIN_CATEGORIA in categoriasElegidas,
+                                onClick = { categoriasElegidas = alternarEn(categoriasElegidas, SIN_CATEGORIA) },
+                                label = { Text(etiquetaBibliotecaSinCategoria(idiomaInterfaz)) },
+                            )
+                        }
+                    }
+
+                    OutlinedTextField(
+                        value = busqueda,
+                        onValueChange = { busqueda = it },
+                        label = { Text(etiquetaBibliotecaBuscar(idiomaInterfaz)) },
+                        singleLine = true,
+                        modifier = Modifier.fillMaxWidth(),
+                    )
+                }
+            }
+
+            if (filtrados.isEmpty()) {
+                item { Text(etiquetaBibliotecaVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge) }
+            }
+            items(filtrados, key = { claveBiblioteca(it.idioma, it.tipo, it.texto) }) { item ->
+                FilaBiblioteca(
+                    item = item,
+                    idiomaBase = idiomaBase,
+                    guardada = claveBiblioteca(item.idioma, item.tipo, item.texto) in guardadas,
+                    onAlternar = { onAlternar(item) },
+                )
+            }
+        }
+    }
+}
+
+private fun alternarEn(conjunto: Set<String>, valor: String): Set<String> =
+    if (valor in conjunto) conjunto - valor else conjunto + valor
+
+/** Una rama de la lista cerrada de categoriasUso, como una fila de chips con su titulo (los nombres, en espanol, tal cual). */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun RamaCategorias(titulo: String, valores: List<String>, elegidas: Set<String>, onCambio: (Set<String>) -> Unit) {
+    if (valores.isEmpty()) return
+    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        Text(titulo, style = MaterialTheme.typography.labelMedium)
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            valores.forEach { v ->
+                FilterChip(selected = v in elegidas, onClick = { onCambio(alternarEn(elegidas, v)) }, label = { Text(v) })
+            }
+        }
+    }
+}
+
+@Composable
+private fun FilaBiblioteca(item: ItemBiblioteca, idiomaBase: Idioma, guardada: Boolean, onAlternar: () -> Unit) {
+    val traduccion = item.vocabulario?.traduccionParaMostrar(idiomaBase)
+        ?: when (val t = item.redemittel?.traduccionParaMostrar(idiomaBase)) {
+            is TraduccionRedemittel.Disponible -> t.texto
+            else -> "—"
+        }
+    Surface(shape = RoundedCornerShape(8.dp), color = MaterialTheme.colorScheme.surfaceVariant, modifier = Modifier.fillMaxWidth()) {
+        Row(Modifier.padding(start = 12.dp, top = 8.dp, bottom = 8.dp, end = 4.dp), verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                Text(item.texto, style = MaterialTheme.typography.bodyLarge)
+                Text(traduccion, style = MaterialTheme.typography.bodyMedium)
+                item.funcion?.let {
+                    Text(
+                        it.resolver(item.idioma, item.idioma),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
+            IconButton(onClick = onAlternar, modifier = Modifier.size(40.dp).testTag(TAG_ESTRELLA_BIBLIOTECA)) {
+                Icon(
+                    if (guardada) Icons.Filled.Star else Icons.Outlined.StarBorder,
+                    contentDescription = null,
+                    tint = if (guardada) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+        }
+    }
+}
