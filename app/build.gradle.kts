@@ -196,6 +196,77 @@ val copiarCategoriasUsoAssets by tasks.registering(Copy::class) {
     into(File(projectDir, "src/main/assets/temas"))
 }
 
+// Red de seguridad para que assets/contenido/ nunca vuelva a desfasarse de
+// nucleos/packs/ocurrencias en silencio (paso en limpio, oct 2026): esos
+// JSON SI se versionan (a diferencia de calendario/plantillas/temas, que se
+// copian frescos en cada build), porque son el contenido real de la app --
+// pero por eso mismo nadie los regeneraba en cada build, y nada avisaba
+// cuando alguien tocaba un nucleo/pack/ocurrencia y se olvidaba de correr
+// componer.py y copiar el resultado a assets/.
+//
+// Esta tarea recompone con tools/componer.py en un directorio de build (no
+// se toca assets/) y compara archivo por archivo contra lo embebido. Si
+// difieren -- en el set de archivos o en el contenido -- el build falla con
+// el comando exacto para regenerar. Elegido en vez de "documentar el paso a
+// mano" porque una regla dura que depende de que alguien se acuerde de
+// correrla es exactamente el bug que la origino.
+val verificarAssetsContenidoActualizados by tasks.registering {
+    group = "verification"
+    description = "Falla si assets/contenido/ esta desfasado de proyecto/contenido/ (nucleos/packs/ocurrencias)."
+
+    val raizProyecto = File(rootDir, "proyecto")
+    val contenidoFuente = File(raizProyecto, "contenido")
+    val schema = File(raizProyecto, "schema/ficha.schema.json")
+    val assetsContenido = File(projectDir, "src/main/assets/contenido")
+    val salidaRecompuesta = layout.buildDirectory.dir("contenido-recompuesto").get().asFile
+
+    inputs.dir(contenidoFuente)
+    inputs.file(schema)
+    inputs.dir(assetsContenido)
+    outputs.dir(salidaRecompuesta)
+
+    doLast {
+        salidaRecompuesta.deleteRecursively()
+        salidaRecompuesta.mkdirs()
+
+        val salidaProceso = ByteArrayOutputStream()
+        val resultado = exec {
+            commandLine(
+                "python3", File(raizProyecto, "tools/componer.py").absolutePath,
+                "--contenido", contenidoFuente.absolutePath,
+                "--salida", salidaRecompuesta.absolutePath,
+                "--schema", schema.absolutePath,
+            )
+            standardOutput = salidaProceso
+            errorOutput = salidaProceso
+            isIgnoreExitValue = true
+        }
+        check(resultado.exitValue == 0) {
+            "componer.py fallo al recomponer el contenido:\n${salidaProceso.toString(Charsets.UTF_8)}"
+        }
+
+        val nombresFuente = salidaRecompuesta.listFiles { f -> f.extension == "json" }!!.map { it.name }.toSet()
+        val nombresAssets = assetsContenido.listFiles { f -> f.extension == "json" }!!.map { it.name }.toSet()
+
+        val faltanEnAssets = nombresFuente - nombresAssets
+        val sobranEnAssets = nombresAssets - nombresFuente
+        val desfasados = (nombresFuente intersect nombresAssets).filter { nombre ->
+            File(salidaRecompuesta, nombre).readText(Charsets.UTF_8) != File(assetsContenido, nombre).readText(Charsets.UTF_8)
+        }
+
+        if (faltanEnAssets.isNotEmpty() || sobranEnAssets.isNotEmpty() || desfasados.isNotEmpty()) {
+            throw GradleException(
+                "assets/contenido/ esta desfasado de proyecto/contenido/ (nucleos/packs/ocurrencias). " +
+                    "Regeneralo con:\n" +
+                    "  python3 proyecto/tools/componer.py --contenido proyecto/contenido --salida app/src/main/assets/contenido --schema proyecto/schema/ficha.schema.json\n" +
+                    "Faltan en assets (${faltanEnAssets.size}): ${faltanEnAssets.take(10)}\n" +
+                    "Sobran en assets (${sobranEnAssets.size}): ${sobranEnAssets.take(10)}\n" +
+                    "Con contenido distinto (${desfasados.size}): ${desfasados.take(10)}",
+            )
+        }
+    }
+}
+
 // preBuild es dependencia transitiva tanto de compileDebugKotlin como de
 // compileDebugUnitTestKotlin, asi que esto corre antes de compilar y antes
 // de testear, en ambas variantes.
@@ -204,6 +275,7 @@ tasks.matching { it.name == "preBuild" }.configureEach {
     dependsOn(copiarPlantillasAssets)
     dependsOn(generarTopicNombresAssets)
     dependsOn(copiarCategoriasUsoAssets)
+    dependsOn(verificarAssetsContenidoActualizados)
 }
 
 // assembleDebug debe fallar si el JSON de assets/ no valida contra el schema:

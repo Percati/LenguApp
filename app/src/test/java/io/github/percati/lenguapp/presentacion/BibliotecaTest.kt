@@ -111,4 +111,25 @@ class BibliotecaTest {
         val v = items.first()
         assertEquals("${v.tipo}|${v.texto}", v.claveGuardado())
     }
+
+    /**
+     * Contra los assets REALES (no fichas de prueba): si esto fallara de
+     * nuevo por un desfasaje de assets/contenido con los nucleos (ver
+     * verificarAssetsContenidoActualizados en app/build.gradle.kts), es acá
+     * donde se notaría en el filtro que usa la Biblioteca, no solo en que el
+     * JSON compila.
+     */
+    @Test
+    fun `al menos una expresion de EN-C1 tiene categoriasUso no vacio`() {
+        val expresionesEnC1 = items.filter { it.idioma == Idioma.EN && it.tipo == TipoGuardado.EXPRESION && Nivel.C1 in it.niveles }
+        assertTrue("no hay expresiones EN-C1 en el contenido embebido", expresionesEnC1.isNotEmpty())
+        assertTrue("ninguna expresion EN-C1 tiene categoriasUso", expresionesEnC1.any { it.categorias.isNotEmpty() })
+    }
+
+    @Test
+    fun `filtrar expresiones EN por la categoria Dar razones devuelve resultados`() {
+        val r = items.filtrar(Idioma.EN, TipoGuardado.EXPRESION, emptySet(), null, setOf("Dar razones"), "", Idioma.ES)
+        assertTrue("filtrar por 'Dar razones' no devolvio nada", r.isNotEmpty())
+        assertTrue(r.all { "Dar razones" in it.categorias })
+    }
 }
