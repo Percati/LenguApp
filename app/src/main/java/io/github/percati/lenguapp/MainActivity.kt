@@ -87,6 +87,7 @@ import io.github.percati.lenguapp.ui.claveBiblioteca
 import io.github.percati.lenguapp.ui.etiquetaAjustes
 import io.github.percati.lenguapp.ui.etiquetaBiblioteca
 import io.github.percati.lenguapp.presentacion.construirBiblioteca
+import io.github.percati.lenguapp.presentacion.textoOrigen
 import io.github.percati.lenguapp.datos.CategoriasUso
 import io.github.percati.lenguapp.datos.cargarCategoriasUsoDesdeAssets
 import io.github.percati.lenguapp.ui.etiquetaGuardados
@@ -302,15 +303,21 @@ internal fun LenguAppApp(
                 composable(DESTINO_GUARDADOS) {
                     GuardadosScreen(
                         items = guardadosTodos,
+                        itemsBiblioteca = itemsBiblioteca,
                         idiomasAprendidos = ajustes.idiomasAprendidos.keys,
                         idiomaBase = ajustes.idiomaBase,
                         idiomaInterfaz = idiomaAplicacion,
+                        topicNombres = topicNombres,
+                        categoriasUso = categoriasUso,
                         existeFichaOrigen = { fichaDeOrigen(contenidoTodos, it) != null },
                         onAbrirFicha = { item ->
                             fichaDeOrigen(contenidoTodos, item)?.let { ficha ->
                                 fichaGuardadaAbiertaId = ficha.id
                                 navController.navigate(DESTINO_FICHA_GUARDADA)
                             }
+                        },
+                        onQuitar = { item ->
+                            alternarGuardado(item.idioma, item.nivel, item.skillIdOrigen, item.tipo, item.textoOrigen(), item.texto, item.funcion)
                         },
                         onVolver = { navController.popBackStack() },
                     )
