@@ -25,6 +25,7 @@ import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
@@ -111,10 +112,11 @@ fun PantallaSemana(
     fecha: LocalDate = LocalDate.now(),
     estadoGuardados: EstadoGuardados = EstadoGuardados(),
     promptsVoz: Map<String, String> = emptyMap(),
+    onPlanilla: ((ContenidoSemanal) -> Unit)? = null,
 ) {
     when (resultado) {
         is ResultadoSemana.Encontrado ->
-            ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier, idiomaInterfaz, fecha, estadoGuardados, promptsVoz)
+            ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, onPlanilla)
         is ResultadoSemana.SinContenido -> SinContenidoMensaje(resultado, idiomaInterfaz, modifier)
     }
 }
@@ -157,10 +159,13 @@ fun ContenidoSemanalScreen(
     estadoGuardados: EstadoGuardados = EstadoGuardados(),
     // Plantillas de prompt de voz por "idioma-nivel" (ver presentacion/PromptVoz.kt).
     promptsVoz: Map<String, String> = emptyMap(),
+    // Planilla del profesor (PDF local): si es null el boton no se muestra. Quien llama
+    // (MainActivity.kt) es el que sabe de archivos e Intents; esta pantalla solo avisa.
+    onPlanilla: ((ContenidoSemanal) -> Unit)? = null,
 ) {
     when (contenido) {
-        is Ficha -> FichaContenido(contenido, idiomaBase, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, modifier)
-        is SemanaEspecial -> SemanaEspecialContenido(contenido, idiomaBase, idiomaInterfaz, modifier)
+        is Ficha -> FichaContenido(contenido, idiomaBase, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, onPlanilla, modifier)
+        is SemanaEspecial -> SemanaEspecialContenido(contenido, idiomaBase, idiomaInterfaz, onPlanilla, modifier)
     }
 }
 
@@ -176,6 +181,7 @@ private fun FichaContenido(
     fecha: LocalDate,
     estadoGuardados: EstadoGuardados,
     promptsVoz: Map<String, String>,
+    onPlanilla: ((ContenidoSemanal) -> Unit)?,
     modifier: Modifier = Modifier,
 ) {
     // Feature 1 (switch de traduccion en vivo): estado local, nunca
@@ -349,6 +355,8 @@ private fun FichaContenido(
                         )
                     }
                 }
+
+                onPlanilla?.let { BotonPlanilla(etiquetaPlanillaBoton(idiomaInterfaz)) { it(ficha) } }
             }
         }
     }
@@ -411,7 +419,13 @@ private fun SwitchDesafioFinde(activo: Boolean, idiomaInterfaz: Idioma, onCambia
 }
 
 @Composable
-private fun SemanaEspecialContenido(especial: SemanaEspecial, idiomaBase: Idioma, idiomaInterfaz: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
+private fun SemanaEspecialContenido(
+    especial: SemanaEspecial,
+    idiomaBase: Idioma,
+    idiomaInterfaz: Idioma,
+    onPlanilla: ((ContenidoSemanal) -> Unit)?,
+    modifier: Modifier = Modifier,
+) = SelectionContainer {
     // Campos bilingues (A2/B1): idioma base del usuario, y el que se aprende si falta esa clave.
     // Solo las semanas A2/B1 son bilingues; B2+ se muestran en el idioma que se aprende.
     val bilingue = especial.nivel == Nivel.A2 || especial.nivel == Nivel.B1
@@ -450,6 +464,16 @@ private fun SemanaEspecialContenido(especial: SemanaEspecial, idiomaBase: Idioma
         t(especial.promptCorreccion).takeIf { it.isNotBlank() }?.let {
             TarjetaPrompt(it, et("promptCorreccion"), idiomaInterfaz, traducido)
         }
+
+        onPlanilla?.let { BotonPlanilla(etiquetaPlanillaBoton(idiomaInterfaz)) { it(especial) } }
+    }
+}
+
+/** Boton de ancho completo al final de la semana: abre la planilla del profesor (PDF generado en el dispositivo). */
+@Composable
+private fun BotonPlanilla(texto: String, onClick: () -> Unit) {
+    DisableSelection {
+        OutlinedButton(onClick = onClick, modifier = Modifier.fillMaxWidth()) { Text(texto) }
     }
 }
 

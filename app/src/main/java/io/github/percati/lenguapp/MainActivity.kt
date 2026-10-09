@@ -43,7 +43,17 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import io.github.percati.lenguapp.datos.cargarAjustes
+import io.github.percati.lenguapp.datos.PlanillaTextos
 import io.github.percati.lenguapp.datos.cargarContenidoDesdeAssets
+import io.github.percati.lenguapp.datos.cargarPlanillaTextosDesdeAssets
+import io.github.percati.lenguapp.datos.cargarTopicNombresDesdeAssets
+import io.github.percati.lenguapp.modelo.SemanaEspecial
+import io.github.percati.lenguapp.pdf.abrirPlanilla
+import io.github.percati.lenguapp.pdf.escribirPlanillaEnCache
+import io.github.percati.lenguapp.presentacion.construirPlanilla
+import io.github.percati.lenguapp.ui.mensajePlanillaSinLector
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import io.github.percati.lenguapp.datos.cargarPlantillasPromptVozDesdeAssets
 import io.github.percati.lenguapp.datos.guardarAjustes
 import io.github.percati.lenguapp.datos.nombresCalendarioDisponibles
@@ -114,6 +124,8 @@ class MainActivity : ComponentActivity() {
         val contenidoPorId = contenidoTodos.associateBy { it.id }
         val repositorioGuardados = RepositorioGuardados(this)
         val promptsVoz = cargarPlantillasPromptVozDesdeAssets(this)
+        val planillaTextos = cargarPlanillaTextosDesdeAssets(this)
+        val topicNombres = cargarTopicNombresDesdeAssets(this)
         setContent {
             LenguAppApp(
                 ajustesIniciales = ajustesIniciales,
@@ -122,6 +134,8 @@ class MainActivity : ComponentActivity() {
                 contenidoTodos = contenidoTodos,
                 repositorioGuardados = repositorioGuardados,
                 promptsVoz = promptsVoz,
+                planillaTextos = planillaTextos,
+                topicNombres = topicNombres,
                 resolver = { idioma, nivel, fecha -> resolverSemana(this, contenidoPorId, idioma, nivel, fecha) },
                 onGuardarAjustes = { guardarAjustes(this, it) },
             )
@@ -151,6 +165,9 @@ internal fun LenguAppApp(
     contenidoTodos: List<ContenidoSemanal> = emptyList(),
     repositorioGuardados: RepositorioGuardados? = null,
     promptsVoz: Map<String, String> = emptyMap(),
+    // Planilla del profesor: textos fijos por idioma que se aprende + nombres de topic (banco.json).
+    planillaTextos: Map<Idioma, PlanillaTextos> = emptyMap(),
+    topicNombres: Map<String, String> = emptyMap(),
 ) {
     var ajustes by remember { mutableStateOf(ajustesIniciales) }
     var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
@@ -191,6 +208,32 @@ internal fun LenguAppApp(
     }
     val idiomaAplicacion = idiomaAplicacionEfectivo(ajustes, codigoIdiomaSistema)
 
+    val contexto = LocalContext.current
+    // Planilla del profesor: se genera en un hilo de fondo, se escribe en la cache de
+    // la app y se entrega al lector de PDF del sistema. Sin textos embebidos, no hay boton.
+    val onPlanilla: ((ContenidoSemanal) -> Unit)? = if (planillaTextos.isEmpty()) {
+        null
+    } else {
+        { contenido ->
+            val idiomaAprendido = when (contenido) {
+                is Ficha -> contenido.idioma
+                is SemanaEspecial -> contenido.idioma
+            }
+            val textos = planillaTextos[idiomaAprendido] ?: planillaTextos[Idioma.EN]
+            if (textos != null) {
+                scope.launch {
+                    val archivo = withContext(Dispatchers.IO) {
+                        val planilla = construirPlanilla(contenido, textos, (contenido as? Ficha)?.let { topicNombres[it.topicId] })
+                        escribirPlanillaEnCache(contexto, contenido.id, planilla)
+                    }
+                    if (!abrirPlanilla(contexto, archivo)) {
+                        Toast.makeText(contexto, mensajePlanillaSinLector(idiomaAplicacion), Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
+        }
+    }
+
     val idiomasSeleccionados = ajustes.idiomasAprendidos.keys.sortedBy { it.ordinal }
     val idiomaActivo = idiomasSeleccionados.firstOrNull { it.name == idiomaActivoElegido } ?: idiomasSeleccionados.firstOrNull()
 
@@ -224,6 +267,7 @@ internal fun LenguAppApp(
                         onGuardados = { navController.navigate(DESTINO_GUARDADOS) },
                         guardadosDeLaFicha = ::estadoGuardadosPara,
                         promptsVoz = promptsVoz,
+                        onPlanilla = onPlanilla,
                     )
                 }
                 composable(DESTINO_AJUSTES) {
@@ -262,6 +306,7 @@ internal fun LenguAppApp(
                                 idiomaInterfaz = idiomaAplicacion,
                                 estadoGuardados = estadoGuardadosPara(ficha),
                                 promptsVoz = promptsVoz,
+                                onPlanilla = onPlanilla,
                             )
                         }
                     }
@@ -287,6 +332,7 @@ private fun PantallaPrincipal(
     onGuardados: () -> Unit,
     guardadosDeLaFicha: (Ficha) -> EstadoGuardados,
     promptsVoz: Map<String, String>,
+    onPlanilla: ((ContenidoSemanal) -> Unit)?,
 ) {
     ManejarDobleAtrasParaSalir(idiomaAplicacion)
 
@@ -324,7 +370,7 @@ private fun PantallaPrincipal(
                 ?: EstadoGuardados()
             PantallaSemana(
                 resultado, ajustes.idiomaBase, idiomaAplicacion,
-                fecha = fechaVista, estadoGuardados = estadoGuardados, promptsVoz = promptsVoz,
+                fecha = fechaVista, estadoGuardados = estadoGuardados, promptsVoz = promptsVoz, onPlanilla = onPlanilla,
             )
         }
     }
