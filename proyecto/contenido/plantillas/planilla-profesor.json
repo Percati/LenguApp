@@ -1,0 +1,149 @@
+{
+  "_nota": "PROPUESTA para revision de Fer (Ronda B, pieza 3): textos fijos de la planilla del profesor. Van en el IDIOMA QUE SE APRENDE (la planilla la lee el profesor de ese idioma), una entrada por idioma aprendible. Lo demas de la planilla (objetivo, topic, gramatica de repaso, redemittel) sale de la ficha tal cual. No hay preguntas escritas: el giro inesperado es una instruccion generica al profesor. Las dos frases de reparacion son frases del alumno para pedir ayuda o reformular. Se copia a assets/plantillas/ en cada build (copiarPlantillasAssets).",
+  "textos": {
+    "es": {
+      "titulo": "Planilla del profesor",
+      "nivel": "Nivel",
+      "objetivo": "Objetivo comunicativo",
+      "tema": "Tema",
+      "enfoque": "Enfoque de la semana",
+      "gramatica": "Estructura de repaso",
+      "expresionesObjetivo": "Expresiones objetivo",
+      "expresionesReparacion": "Expresiones de reparación (pedir ayuda, reformular)",
+      "frasesReparacion": ["Perdón, ¿cómo se dice … en español?", "A ver, lo digo de otra manera: …"],
+      "situaciones": "Situaciones para practicar",
+      "situacionCotidiana": "Cotidiana: una charla distendida entre amigos o vecinos sobre el tema de arriba.",
+      "situacionProfesional": "Profesional: dos colegas comentan el tema en una reunión breve o en una llamada con un cliente.",
+      "giro": "Giro inesperado",
+      "giroTexto": "A mitad de la conversación, introducí una complicación (una objeción, un cambio de plan, una restricción nueva) para que el alumno tenga que reformular sobre la marcha. No prepares preguntas escritas.",
+      "criterios": "Criterios de devolución",
+      "criteriosLista": [
+        "¿Se entendió el mensaje sin esfuerzo?",
+        "¿Usó las expresiones objetivo con naturalidad?",
+        "¿Fue preciso con la estructura de repaso cuando importaba?"
+      ],
+      "recordatorio": "Recordatorio: no reescribas todo lo que dice el alumno. Elegí dos o tres patrones que pesen más y trabajá solo esos.",
+      "semana": "Semana"
+    },
+    "en": {
+      "titulo": "Teacher's sheet",
+      "nivel": "Level",
+      "objetivo": "Communicative goal",
+      "tema": "Topic",
+      "enfoque": "This week's focus",
+      "gramatica": "Structure to review",
+      "expresionesObjetivo": "Target expressions",
+      "expresionesReparacion": "Repair expressions (asking for help, rephrasing)",
+      "frasesReparacion": ["Sorry, how do you say … in English?", "Let me put that another way: …"],
+      "situaciones": "Situations to practise",
+      "situacionCotidiana": "Everyday: a relaxed chat between friends or neighbours about the topic above.",
+      "situacionProfesional": "Professional: two colleagues discuss the topic in a short meeting or on a call with a client.",
+      "giro": "Unexpected twist",
+      "giroTexto": "Halfway through the conversation, introduce a complication (an objection, a change of plan, a new constraint) so the student has to rephrase on the fly. Do not prepare written questions.",
+      "criterios": "Feedback criteria",
+      "criteriosLista": [
+        "Could you follow the message without effort?",
+        "Did the student use the target expressions naturally?",
+        "Was the reviewed structure accurate when it mattered?"
+      ],
+      "recordatorio": "Reminder: do not rewrite everything the student says. Pick the two or three patterns that matter most and work on those only.",
+      "semana": "Week"
+    },
+    "de": {
+      "titulo": "Unterrichtsblatt für Lehrkräfte",
+      "nivel": "Niveau",
+      "objetivo": "Kommunikatives Ziel",
+      "tema": "Thema",
+      "enfoque": "Schwerpunkt der Woche",
+      "gramatica": "Zu wiederholende Struktur",
+      "expresionesObjetivo": "Zielausdrücke",
+      "expresionesReparacion": "Reparaturausdrücke (um Hilfe bitten, umformulieren)",
+      "frasesReparacion": ["Entschuldigung, wie sagt man … auf Deutsch?", "Ich versuche es anders zu sagen: …"],
+      "situaciones": "Situationen zum Üben",
+      "situacionCotidiana": "Alltag: ein entspanntes Gespräch unter Freunden oder Nachbarn zum obigen Thema.",
+      "situacionProfesional": "Beruf: zwei Kolleginnen oder Kollegen besprechen das Thema in einer kurzen Besprechung oder in einem Telefonat mit einem Kunden.",
+      "giro": "Unerwartete Wendung",
+      "giroTexto": "Bringen Sie in der Mitte des Gesprächs eine Komplikation ein (einen Einwand, eine Planänderung, eine neue Bedingung), damit die lernende Person spontan umformulieren muss. Bereiten Sie keine schriftlichen Fragen vor.",
+      "criterios": "Kriterien für die Rückmeldung",
+      "criteriosLista": [
+        "War die Aussage ohne Mühe zu verstehen?",
+        "Wurden die Zielausdrücke natürlich verwendet?",
+        "War die wiederholte Struktur genau, wenn es darauf ankam?"
+      ],
+      "recordatorio": "Erinnerung: Schreiben Sie nicht alles um, was die lernende Person sagt. Wählen Sie zwei oder drei besonders wichtige Muster und arbeiten Sie nur daran.",
+      "semana": "Woche"
+    },
+    "fr": {
+      "titulo": "Fiche de l'enseignant",
+      "nivel": "Niveau",
+      "objetivo": "Objectif communicatif",
+      "tema": "Thème",
+      "enfoque": "Axe de la semaine",
+      "gramatica": "Structure à réviser",
+      "expresionesObjetivo": "Expressions cibles",
+      "expresionesReparacion": "Expressions de réparation (demander de l'aide, reformuler)",
+      "frasesReparacion": ["Pardon, comment dit-on … en français ?", "Je reformule : …"],
+      "situaciones": "Situations à pratiquer",
+      "situacionCotidiana": "Quotidienne : une conversation détendue entre amis ou voisins sur le thème ci-dessus.",
+      "situacionProfesional": "Professionnelle : deux collègues discutent du thème lors d'une courte réunion ou d'un appel avec un client.",
+      "giro": "Rebondissement",
+      "giroTexto": "Au milieu de la conversation, introduisez une complication (une objection, un changement de plan, une nouvelle contrainte) pour que l'élève doive reformuler sur le vif. Ne préparez pas de questions écrites.",
+      "criterios": "Critères de retour",
+      "criteriosLista": [
+        "Le message était-il compréhensible sans effort ?",
+        "L'élève a-t-il utilisé naturellement les expressions cibles ?",
+        "La structure révisée était-elle exacte quand c'était important ?"
+      ],
+      "recordatorio": "Rappel : ne réécrivez pas tout ce que dit l'élève. Choisissez deux ou trois schémas qui comptent le plus et travaillez seulement ceux-là.",
+      "semana": "Semaine"
+    },
+    "it": {
+      "titulo": "Scheda dell'insegnante",
+      "nivel": "Livello",
+      "objetivo": "Obiettivo comunicativo",
+      "tema": "Tema",
+      "enfoque": "Focus della settimana",
+      "gramatica": "Struttura da ripassare",
+      "expresionesObjetivo": "Espressioni obiettivo",
+      "expresionesReparacion": "Espressioni di riparazione (chiedere aiuto, riformulare)",
+      "frasesReparacion": ["Scusa, come si dice … in italiano?", "Provo a dirlo in un altro modo: …"],
+      "situaciones": "Situazioni da praticare",
+      "situacionCotidiana": "Quotidiana: una chiacchierata rilassata tra amici o vicini sul tema qui sopra.",
+      "situacionProfesional": "Professionale: due colleghi parlano del tema in una breve riunione o in una telefonata con un cliente.",
+      "giro": "Colpo di scena",
+      "giroTexto": "A metà conversazione, introduci una complicazione (un'obiezione, un cambio di programma, un nuovo vincolo) perché lo studente debba riformulare al volo. Non preparare domande scritte.",
+      "criterios": "Criteri per il feedback",
+      "criteriosLista": [
+        "Il messaggio era comprensibile senza sforzo?",
+        "Lo studente ha usato le espressioni obiettivo in modo naturale?",
+        "La struttura ripassata era corretta quando contava?"
+      ],
+      "recordatorio": "Promemoria: non riscrivere tutto ciò che dice lo studente. Scegli due o tre schemi che contano di più e lavora solo su quelli.",
+      "semana": "Settimana"
+    },
+    "pt": {
+      "titulo": "Ficha do professor",
+      "nivel": "Nível",
+      "objetivo": "Objetivo comunicativo",
+      "tema": "Tema",
+      "enfoque": "Foco da semana",
+      "gramatica": "Estrutura de revisão",
+      "expresionesObjetivo": "Expressões-alvo",
+      "expresionesReparacion": "Expressões de reparação (pedir ajuda, reformular)",
+      "frasesReparacion": ["Desculpa, como se diz … em português?", "Deixa-me dizer de outra forma: …"],
+      "situaciones": "Situações para praticar",
+      "situacionCotidiana": "Quotidiana: uma conversa descontraída entre amigos ou vizinhos sobre o tema acima.",
+      "situacionProfesional": "Profissional: dois colegas falam do tema numa reunião curta ou num telefonema com um cliente.",
+      "giro": "Reviravolta",
+      "giroTexto": "A meio da conversa, introduza uma complicação (uma objeção, uma mudança de plano, uma nova restrição) para que o aluno tenha de reformular na hora. Não prepare perguntas escritas.",
+      "criterios": "Critérios de devolução",
+      "criteriosLista": [
+        "A mensagem foi compreendida sem esforço?",
+        "O aluno usou as expressões-alvo com naturalidade?",
+        "A estrutura revista foi precisa quando importava?"
+      ],
+      "recordatorio": "Lembrete: não reescreva tudo o que o aluno diz. Escolha dois ou três padrões que mais pesem e trabalhe só esses.",
+      "semana": "Semana"
+    }
+  }
+}

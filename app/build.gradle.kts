@@ -161,9 +161,29 @@ val generarCalendarioAssets by tasks.registering {
 // build, igual que el calendario -- no se versiona la copia.
 val copiarPlantillasAssets by tasks.registering(Copy::class) {
     group = "build"
-    description = "Copia a assets/plantillas/ las plantillas de prompt de voz."
-    from(File(rootDir, "proyecto/contenido/plantillas")) { include("prompt-voz.json") }
+    description = "Copia a assets/plantillas/ el prompt de voz y los textos fijos de la planilla del profesor."
+    from(File(rootDir, "proyecto/contenido/plantillas")) { include("prompt-voz.json", "planilla-profesor.json") }
     into(File(projectDir, "src/main/assets/plantillas"))
+}
+
+// Nombres legibles de los 14 topics (T01-T14): viven en proyecto/data/banco.json
+// (`topicNombres`), que NO se embebe entero en assets/ -- pesa mucho mas de lo que
+// la app necesita. Se extrae solo esa tabla a assets/temas/topic-nombres.json en
+// cada build (no se versiona la copia). La usan la Biblioteca y la planilla del
+// profesor.
+val generarTopicNombresAssets by tasks.registering {
+    group = "build"
+    description = "Extrae topicNombres de banco.json a assets/temas/topic-nombres.json."
+    val banco = File(rootDir, "proyecto/data/banco.json")
+    val salida = File(projectDir, "src/main/assets/temas/topic-nombres.json")
+    inputs.file(banco)
+    outputs.file(salida)
+    doLast {
+        val raiz = groovy.json.JsonSlurper().parse(banco) as Map<*, *>
+        val nombres = raiz["topicNombres"] as? Map<*, *> ?: error("banco.json no tiene topicNombres")
+        salida.parentFile.mkdirs()
+        salida.writeText(groovy.json.JsonOutput.toJson(nombres), Charsets.UTF_8)
+    }
 }
 
 // preBuild es dependencia transitiva tanto de compileDebugKotlin como de
@@ -172,6 +192,7 @@ val copiarPlantillasAssets by tasks.registering(Copy::class) {
 tasks.matching { it.name == "preBuild" }.configureEach {
     dependsOn(generarCalendarioAssets)
     dependsOn(copiarPlantillasAssets)
+    dependsOn(generarTopicNombresAssets)
 }
 
 // assembleDebug debe fallar si el JSON de assets/ no valida contra el schema:
