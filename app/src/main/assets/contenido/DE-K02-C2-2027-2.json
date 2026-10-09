@@ -65,11 +65,26 @@
   "Ein zu dicht komprimierter Zeitungsartikel liest sich wie ein Verwaltungstext und verliert seine Zielgruppe."
  ],
  "contraste": {
-  "es": "Das Spanische toleriert in keinem Genre eine vergleichbare Dichte an Partizipialattributen und weicht durchgehend auf Relativsätze aus. Ein hispanophoner C2-Sprecher unterschätzt deshalb systematisch, wie viel Verdichtung ein deutscher Gesetzestext erwartet, und überschätzt sie in literarischer Prosa.",
-  "it": "Auch die italienische Rechts- und Verwaltungssprache ist sehr dicht, arbeitet aber mit nachgestellten Partizipien (le misure previste dall'articolo 3). Das Gefühl für die Dichte je Textsorte lässt sich deshalb übertragen; umzulernen ist, dass dieselbe Dichte im Deutschen vor dem Nomen steht und entsprechend früher an ihre Lesbarkeitsgrenze stösst.",
-  "fr": "Die französische Rechtssprache ist sehr dicht, arbeitet aber mit nachgestellten Partizipien (les mesures prévues à l'article 3). Das Genregefühl überträgt sich deshalb gut; neu ist, dass die gleiche Dichte im Deutschen vor dem Nomen steht und dort schneller schwer lesbar wird.",
-  "pt": "Die portugiesische Rechtssprache ist dicht, stellt ihre Partizipien aber nach (as medidas previstas no artigo 3.º). Das Genregefühl überträgt sich also; neu ist, dieselbe Dichte vor das Nomen zu stellen, wo sie früher an die Grenze der Lesbarkeit stösst.",
-  "en": "Die englische Rechtssprache ist dicht, stellt Partizipien aber nach (the measures provided for in Article 3), und der englische Journalismus ist deutlich verbaler als der deutsche. Englischsprachige haben deshalb ein gutes Genregefühl, unterschätzen aber, wie viel vorangestellte Verdichtung deutsche Normen- und Verwaltungstexte erwarten."
+  "es": {
+   "de": "Das Spanische toleriert in keinem Genre eine vergleichbare Dichte an Partizipialattributen und weicht durchgehend auf Relativsätze aus. Ein hispanophoner C2-Sprecher unterschätzt deshalb systematisch, wie viel Verdichtung ein deutscher Gesetzestext erwartet, und überschätzt sie in literarischer Prosa.",
+   "es": "El español no tolera en ningún género una densidad comparable de atributos participiales y recurre de manera sistemática a las oraciones de relativo. Por eso, un hispanohablante de C2 suele subestimar cuánta condensación espera un texto jurídico alemán y, al mismo tiempo, puede sobreutilizarla en prosa literaria."
+  },
+  "it": {
+   "de": "Auch die italienische Rechts- und Verwaltungssprache ist sehr dicht, arbeitet aber mit nachgestellten Partizipien (le misure previste dall'articolo 3). Das Gefühl für die Dichte je Textsorte lässt sich deshalb übertragen; umzulernen ist, dass dieselbe Dichte im Deutschen vor dem Nomen steht und entsprechend früher an ihre Lesbarkeitsgrenze stösst.",
+   "it": "Anche il linguaggio giuridico e amministrativo italiano è molto denso, ma usa participi posposti («le misure previste dall'articolo 3»). Il senso della densità appropriata al genere si trasferisce quindi bene; bisogna reimparare che in tedesco la stessa densità precede il nome e raggiunge prima il limite di leggibilità."
+  },
+  "fr": {
+   "de": "Die französische Rechtssprache ist sehr dicht, arbeitet aber mit nachgestellten Partizipien (les mesures prévues à l'article 3). Das Genregefühl überträgt sich deshalb gut; neu ist, dass die gleiche Dichte im Deutschen vor dem Nomen steht und dort schneller schwer lesbar wird.",
+   "fr": "Le langage juridique français est très dense, mais utilise des participes postposés («les mesures prévues à l'article 3»). Le sens du genre se transfère donc bien ; ce qui est nouveau, c'est que la même densité se place avant le nom en allemand et y devient plus rapidement difficile à lire."
+  },
+  "pt": {
+   "de": "Die portugiesische Rechtssprache ist dicht, stellt ihre Partizipien aber nach (as medidas previstas no artigo 3.º). Das Genregefühl überträgt sich also; neu ist, dieselbe Dichte vor das Nomen zu stellen, wo sie früher an die Grenze der Lesbarkeit stösst.",
+   "pt": "A linguagem jurídica portuguesa também é densa, mas coloca os particípios depois do substantivo («as medidas previstas no artigo 3.º»). O senso de gênero textual se transfere, mas é preciso aprender a colocar essa mesma densidade antes do substantivo em alemão, onde ela chega mais rapidamente ao limite da legibilidade."
+  },
+  "en": {
+   "de": "Die englische Rechtssprache ist dicht, stellt Partizipien aber nach (the measures provided for in Article 3), und der englische Journalismus ist deutlich verbaler als der deutsche. Englischsprachige haben deshalb ein gutes Genregefühl, unterschätzen aber, wie viel vorangestellte Verdichtung deutsche Normen- und Verwaltungstexte erwarten.",
+   "en": "English legal language is dense but places participles after the noun («the measures provided for in Article 3»), and English journalism is much more verbal than German journalism. English speakers therefore have a good sense of genre, but underestimate how much pre-nominal compression German legal and administrative texts expect."
+  }
  },
  "errores": [
   "Einen literarischen Text mit derselben Dichte wie einen Gesetzestext schreiben.",
@@ -259,7 +274,11 @@
     "fr": "les… à approuver par…",
     "it": "i/le… da approvare da parte di…",
     "pt": "os/as… a aprovar por…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "die zu erwartenden, noch nicht…",
@@ -270,7 +289,11 @@
     "fr": "les… attendus mais pas encore…",
     "it": "i/le… previsti/e, non ancora…",
     "pt": "os/as… esperados/as, ainda não…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "die absehbaren, aber schwer zu…",
@@ -281,7 +304,11 @@
     "fr": "les… prévisibles mais difficiles à…",
     "it": "i/le… prevedibili ma difficili da…",
     "pt": "os/as… previsíveis, mas difíceis de…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "das kaum zu ertragende…",
@@ -292,7 +319,11 @@
     "fr": "le/la… à peine supportable",
     "it": "il/la… a malapena sopportabile",
     "pt": "o/a… quase insuportável"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "die im Folgenden zu erläuternden…",
@@ -303,7 +334,11 @@
     "fr": "les… à expliquer ci-dessous",
     "it": "i/le… da spiegare di seguito",
     "pt": "os/as… a explicar em seguida"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "ein kaum zu überschätzender…",
@@ -314,7 +349,11 @@
     "fr": "un/une… difficile à surestimer",
     "it": "un/una… difficile da sopravvalutare",
     "pt": "um/uma… difícil de sobrestimar"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Zwei Attribute pro Satz sind die Grenze.",
@@ -325,7 +364,11 @@
     "fr": "Deux attributs par phrase, c'est la limite.",
     "it": "Due attributi per frase sono il limite.",
     "pt": "Dois atributos por frase é o limite."
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Für die Pressemitteilung löse ich das auf.",
@@ -336,7 +379,11 @@
     "fr": "Pour le communiqué, je le déplie.",
     "it": "Per il comunicato lo sciolgo.",
     "pt": "Para o comunicado desdobro isso."
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Hier trägt der Relativsatz besser.",
@@ -347,7 +394,12 @@
     "fr": "Ici, la relative porte mieux.",
     "it": "Qui la relativa regge meglio.",
     "pt": "Aqui a oração relativa funciona melhor."
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Nominalización y compresión",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Beim Vorlesen bricht der Satz.",
@@ -358,7 +410,11 @@
     "fr": "À la lecture à voix haute, la phrase casse.",
     "it": "A leggerla ad alta voce la frase si spezza.",
     "pt": "Lida em voz alta, a frase parte-se."
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Nominalización y compresión"
+   ]
   }
  ],
  "mision": {

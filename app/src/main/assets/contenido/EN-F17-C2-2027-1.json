@@ -76,11 +76,26 @@
   "An uncontrolled mix (contraction plus a very formal Latinate verb in the same clause, with no reason) is what a lower-level register error looks like — the difference from a controlled intermediate register is intentionality."
  ],
  "contraste": {
-  "es": "Spanish can mark register through tú/usted, which English lacks, so English register has to be carried entirely by vocabulary, contractions, sentence length and structure. Spanish speakers need to check these other axes consciously.",
-  "de": "German can mark register through du/Sie, which English lacks, so English register rests entirely on vocabulary, contractions, sentence length and structure. English contractions work like German spoken reductions (gibt's, hab's) as a signal of informality.",
-  "it": "Italian can mark register through tu/Lei, which English lacks, so English register rests on vocabulary, contractions, sentence length and structure. Italian speakers need to check these axes consciously.",
-  "fr": "French can mark register through tu/vous, which English lacks, so English register rests on vocabulary, contractions, sentence length and structure. English contractions work much like dropping ne in spoken French as a signal of informality.",
-  "pt": "Portuguese can mark register through tu, você and o senhor, which English lacks, so English register rests on vocabulary, contractions, sentence length and structure. Portuguese speakers need to check these axes consciously."
+  "es": {
+   "en": "Spanish can mark register through tú/usted, which English lacks, so English register has to be carried entirely by vocabulary, contractions, sentence length and structure. Spanish speakers need to check these other axes consciously.",
+   "es": "El español puede marcar el registro mediante «tú/usted», algo que el inglés no tiene. Por eso, en inglés el registro debe expresarse íntegramente mediante vocabulario, contracciones, longitud de las oraciones y estructura. Los hispanohablantes deben revisar conscientemente esos otros ejes."
+  },
+  "de": {
+   "en": "German can mark register through du/Sie, which English lacks, so English register rests entirely on vocabulary, contractions, sentence length and structure. English contractions work like German spoken reductions (gibt's, hab's) as a signal of informality.",
+   "de": "Deutsch kann Register über «du/Sie» markieren, was dem Englischen fehlt. Englisches Register hängt daher vollständig von Wortschatz, Kontraktionen, Satzlänge und Struktur ab. Englische Kontraktionen funktionieren ähnlich wie gesprochene deutsche Verkürzungen («gibt's», «hab's») als Informalitätssignal."
+  },
+  "it": {
+   "en": "Italian can mark register through tu/Lei, which English lacks, so English register rests on vocabulary, contractions, sentence length and structure. Italian speakers need to check these axes consciously.",
+   "it": "L'italiano può marcare il registro tramite «tu/Lei», cosa che l'inglese non fa. Il registro inglese si basa quindi su lessico, contrazioni, lunghezza delle frasi e struttura; gli italofoni devono controllare consapevolmente questi assi."
+  },
+  "fr": {
+   "en": "French can mark register through tu/vous, which English lacks, so English register rests on vocabulary, contractions, sentence length and structure. English contractions work much like dropping ne in spoken French as a signal of informality.",
+   "fr": "Le français peut marquer le registre par «tu/vous», ce que l'anglais n'a pas. Le registre anglais repose donc sur le vocabulaire, les contractions, la longueur des phrases et la structure. Les contractions anglaises jouent un rôle proche de la chute de «ne» à l'oral en français comme marque d'informalité."
+  },
+  "pt": {
+   "en": "Portuguese can mark register through tu, você and o senhor, which English lacks, so English register rests on vocabulary, contractions, sentence length and structure. Portuguese speakers need to check these axes consciously.",
+   "pt": "O português pode marcar registro por meio de «tu», «você» e «o senhor/a senhora», algo que o inglês não possui. Por isso, o registro inglês depende de vocabulário, contrações, comprimento das frases e estrutura; falantes de português precisam verificar esses eixos conscientemente."
+  }
  },
  "errores": [
   "Moving all six axes formal or informal together, producing a generic rather than individual register.",
@@ -270,7 +285,8 @@
     "fr": "Il convient de noter que…",
     "it": "Vale la pena notare che…",
     "pt": "Vale a pena assinalar que…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "I guess what I'm saying is…",
@@ -281,7 +297,10 @@
     "fr": "Je suppose que ce que j’essaie de dire, c’est…",
     "it": "Credo che quello che sto cercando di dire sia…",
     "pt": "Acho que o que estou a tentar dizer é…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "One might reasonably question whether…",
@@ -292,7 +311,10 @@
     "fr": "On pourrait raisonnablement se demander si…",
     "it": "Ci si potrebbe ragionevolmente chiedere se…",
     "pt": "Poder-se-ia razoavelmente questionar se…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "…, though that's just my take.",
@@ -303,7 +325,11 @@
     "fr": "…, même si ce n’est que mon avis.",
     "it": "…, anche se questa è solo la mia opinione.",
     "pt": "…, embora seja apenas a minha leitura."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "To put it plainly,…",
@@ -314,7 +340,8 @@
     "fr": "Pour le dire clairement,…",
     "it": "Per dirla chiaramente,…",
     "pt": "Para o dizer claramente,…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "…, if that makes sense.",
@@ -325,7 +352,8 @@
     "fr": "…, si cela a du sens.",
     "it": "…, se ha senso.",
     "pt": "…, se isso fizer sentido."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Forgive the formality, but…",
@@ -336,7 +364,8 @@
     "fr": "Pardonnez la formalité, mais…",
     "it": "Perdoni la formalità, ma…",
     "pt": "Perdoe a formalidade, mas…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "In writing I'd put it differently.",
@@ -347,7 +376,10 @@
     "fr": "À l'écrit, je le formulerais autrement.",
     "it": "Per iscritto lo direi diversamente.",
     "pt": "Por escrito diria isso de outra forma."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "That's the version for the minutes.",
@@ -358,7 +390,8 @@
     "fr": "C'est la version pour le procès-verbal.",
     "it": "Questa è la versione per il verbale.",
     "pt": "Essa é a versão para a ata."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Off the record, though —",
@@ -369,7 +402,8 @@
     "fr": "Officieusement, cela dit —",
     "it": "Ufficiosamente, però —",
     "pt": "Extraoficialmente, no entanto —"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "I'll keep the idiom out of this one.",
@@ -380,7 +414,8 @@
     "fr": "Ici, je laisse de côté les expressions imagées.",
     "it": "Qui lascio da parte i modi di dire.",
     "pt": "Aqui deixo de lado as expressões idiomáticas."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Same content, less starch.",
@@ -391,7 +426,10 @@
     "fr": "Même contenu, moins d'empesé.",
     "it": "Stesso contenuto, meno rigidità.",
     "pt": "O mesmo conteúdo, com menos engomado."
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   }
  ],
  "mision": {

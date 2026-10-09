@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische stimmt mit es verdad oder tienes razón zu, was strukturell sehr ähnlich ist (tener razón – recht haben). Für den Widerspruch entspricht no estoy de acuerdo genau ich bin nicht einverstanden, und sí, pero entspricht der deutschen Einleitung ja, aber.",
-  "it": "Hai ragione entspricht genau du hast recht, mit derselben Struktur (haben + Recht). Sono d'accordo lässt sich mit ich bin einverstanden oder ich stimme zu übersetzen; zu lernen ist, dass zustimmen den Dativ verlangt (ich stimme dir zu).",
-  "fr": "Tu as raison entspricht genau du hast recht, und je suis d'accord entspricht ich bin einverstanden. Für je suis d'accord avec toi ist ich stimme dir zu natürlicher als einverstanden mit dir.",
-  "pt": "Tens razão bzw. você tem razão entspricht genau du hast recht, und concordo entspricht ich stimme zu – mit Dativ (ich stimme dir zu).",
-  "en": "You're right wird oft wörtlich zu du bist recht; richtig ist du hast recht. I agree with you ist im Deutschen ich stimme dir zu, mit Dativ und ohne Präposition."
+  "es": {
+   "de": "Das Spanische stimmt mit es verdad oder tienes razón zu, was strukturell sehr ähnlich ist (tener razón – recht haben). Für den Widerspruch entspricht no estoy de acuerdo genau ich bin nicht einverstanden, und sí, pero entspricht der deutschen Einleitung ja, aber.",
+   "es": "El español expresa acuerdo con «es verdad» o «tienes razón», una estructura muy parecida («tener razón» – «recht haben»). Para disentir, «no estoy de acuerdo» corresponde exactamente a «ich bin nicht einverstanden», y «sí, pero» equivale a la introducción alemana «ja, aber»."
+  },
+  "it": {
+   "de": "Hai ragione entspricht genau du hast recht, mit derselben Struktur (haben + Recht). Sono d'accordo lässt sich mit ich bin einverstanden oder ich stimme zu übersetzen; zu lernen ist, dass zustimmen den Dativ verlangt (ich stimme dir zu).",
+   "it": "«Hai ragione» corrisponde esattamente a «du hast recht», con la stessa struttura («haben + Recht»). «Sono d'accordo» può essere reso con «ich bin einverstanden» o «ich stimme zu»; va imparato che «zustimmen» richiede il dativo («ich stimme dir zu»)."
+  },
+  "fr": {
+   "de": "Tu as raison entspricht genau du hast recht, und je suis d'accord entspricht ich bin einverstanden. Für je suis d'accord avec toi ist ich stimme dir zu natürlicher als einverstanden mit dir.",
+   "fr": "«Tu as raison» correspond exactement à «du hast recht», et «je suis d'accord» à «ich bin einverstanden». Pour «je suis d'accord avec toi», «ich stimme dir zu» est plus naturel que «einverstanden mit dir»."
+  },
+  "pt": {
+   "de": "Tens razão bzw. você tem razão entspricht genau du hast recht, und concordo entspricht ich stimme zu – mit Dativ (ich stimme dir zu).",
+   "pt": "«Tens razão» ou «você tem razão» corresponde exatamente a «du hast recht», e «concordo» a «ich stimme zu», que em alemão exige dativo («ich stimme dir zu»)."
+  },
+  "en": {
+   "de": "You're right wird oft wörtlich zu du bist recht; richtig ist du hast recht. I agree with you ist im Deutschen ich stimme dir zu, mit Dativ und ohne Präposition.",
+   "en": "«You're right» is often translated literally as «du bist recht»; the correct form is «du hast recht». «I agree with you» is «ich stimme dir zu» in German, with the dative and no preposition."
+  }
  },
  "errores": [
   {
@@ -405,7 +420,10 @@
     "fr": "C’est vrai.",
     "it": "È vero.",
     "pt": "É verdade."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Das finde ich auch.",
@@ -423,7 +441,10 @@
     "fr": "Moi aussi.",
     "it": "Anch’io la penso così.",
     "pt": "Eu também acho."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Das finde ich nicht.",
@@ -441,7 +462,11 @@
     "fr": "Je ne pense pas.",
     "it": "Non credo.",
     "pt": "Acho que não."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Ja, aber…",
@@ -459,7 +484,10 @@
     "fr": "Oui, mais…",
     "it": "Sì, ma…",
     "pt": "Sim, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Genau!",
@@ -477,7 +505,10 @@
     "fr": "Exactement !",
     "it": "Esatto!",
     "pt": "Exatamente!"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Ich sehe das anders.",
@@ -495,7 +526,11 @@
     "fr": "Je vois les choses autrement.",
     "it": "La vedo diversamente.",
     "pt": "Eu vejo isso de outra forma."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Da hast du recht.",
@@ -513,7 +548,10 @@
     "fr": "Là, tu as raison.",
     "it": "Su questo hai ragione.",
     "pt": "Nisso tens razão."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Warum denkst du das?",
@@ -531,7 +569,11 @@
     "fr": "Pourquoi penses-tu cela ?",
     "it": "Perché lo pensi?",
     "pt": "Porque pensas isso?"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Das stimmt nicht ganz.",
@@ -549,7 +591,11 @@
     "fr": "Ce n'est pas tout à fait exact.",
     "it": "Non è del tutto vero.",
     "pt": "Isso não é bem assim."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Bei mir war das anders.",
@@ -567,7 +613,11 @@
     "fr": "Pour moi, c'était différent.",
     "it": "Per me è stato diverso.",
     "pt": "Comigo foi diferente."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Ejemplificar"
+   ]
   },
   {
    "expresion": "Da müssen wir uns nicht einig sein.",
@@ -585,7 +635,12 @@
     "fr": "Nous n'avons pas à être d'accord là-dessus.",
     "it": "Non dobbiamo per forza essere d'accordo.",
     "pt": "Não temos de concordar nisso."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Genau das meine ich auch.",
@@ -603,7 +658,10 @@
     "fr": "C'est exactement ce que je veux dire aussi.",
     "it": "È proprio quello che intendo anch'io.",
     "pt": "É exatamente isso que também quero dizer."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   }
  ],
  "mision": {

@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische erzählt vergangene Geschichten oft im pretérito indefinido, einer einfachen Vergangenheitsform, die eher zum deutschen Präteritum führt; im deutschen Gespräch steht aber meist das Perfekt. Die zeitlichen Marker übertragen sich direkt (primero – zuerst, luego – dann), verlangen im Deutschen aber die Umstellung von Verb und Subjekt (dann bin ich gegangen).",
-  "it": "Die Zeitmarker passen genau (prima – zuerst, poi – dann, dopo – danach), und das passato prossimo entspricht dem Perfekt. Die Falle ist die Wortstellung: Nach dann steht im Deutschen das Verb vor dem Subjekt (dann bin ich gegangen), im Italienischen nicht (poi sono andato).",
-  "fr": "Die Zeitmarker passen genau (d'abord – zuerst, puis – dann, ensuite – danach), und das passé composé entspricht dem Perfekt. Die Falle ist die Wortstellung: Nach dann steht im Deutschen das Verb vor dem Subjekt (dann bin ich gegangen), im Französischen nicht (puis je suis allé).",
-  "pt": "Die Zeitmarker passen genau (primeiro – zuerst, depois – dann, a seguir – danach). Zwei Unterschiede: Das Portugiesische erzählt im pretérito perfeito simples, was eher zum Präteritum führt, und nach dann steht im Deutschen das Verb vor dem Subjekt.",
-  "en": "Die Zeitmarker passen genau (first – zuerst, then – dann, after that – danach). Zwei Unterschiede: Englischsprachige erzählen im simple past, was zum Präteritum führt, und nach dann steht im Deutschen das Verb vor dem Subjekt (dann bin ich gegangen, nicht dann ich ging)."
+  "es": {
+   "de": "Das Spanische erzählt vergangene Geschichten oft im pretérito indefinido, einer einfachen Vergangenheitsform, die eher zum deutschen Präteritum führt; im deutschen Gespräch steht aber meist das Perfekt. Die zeitlichen Marker übertragen sich direkt (primero – zuerst, luego – dann), verlangen im Deutschen aber die Umstellung von Verb und Subjekt (dann bin ich gegangen).",
+   "es": "En español, las historias del pasado suelen contarse en pretérito indefinido, una forma simple que conduce más bien al Präteritum alemán; en el alemán hablado, sin embargo, suele usarse el Perfekt. Los marcadores temporales se transfieren directamente («primero» – «zuerst», «luego» – «dann»), pero en alemán obligan a invertir verbo y sujeto («dann bin ich gegangen»)."
+  },
+  "it": {
+   "de": "Die Zeitmarker passen genau (prima – zuerst, poi – dann, dopo – danach), und das passato prossimo entspricht dem Perfekt. Die Falle ist die Wortstellung: Nach dann steht im Deutschen das Verb vor dem Subjekt (dann bin ich gegangen), im Italienischen nicht (poi sono andato).",
+   "it": "I marcatori temporali corrispondono bene («prima» – «zuerst», «poi» – «dann», «dopo» – «danach»), e il passato prossimo corrisponde al Perfekt. Il tranello è l'ordine delle parole: dopo «dann» in tedesco il verbo viene prima del soggetto («dann bin ich gegangen»), mentre in italiano no («poi sono andato»)."
+  },
+  "fr": {
+   "de": "Die Zeitmarker passen genau (d'abord – zuerst, puis – dann, ensuite – danach), und das passé composé entspricht dem Perfekt. Die Falle ist die Wortstellung: Nach dann steht im Deutschen das Verb vor dem Subjekt (dann bin ich gegangen), im Französischen nicht (puis je suis allé).",
+   "fr": "Les marqueurs temporels correspondent exactement («d'abord» – «zuerst», «puis» – «dann», «ensuite» – «danach»), et le passé composé correspond au Perfekt. Le piège est l'ordre des mots : après «dann», en allemand, le verbe précède le sujet («dann bin ich gegangen»), contrairement au français («puis je suis allé»)."
+  },
+  "pt": {
+   "de": "Die Zeitmarker passen genau (primeiro – zuerst, depois – dann, a seguir – danach). Zwei Unterschiede: Das Portugiesische erzählt im pretérito perfeito simples, was eher zum Präteritum führt, und nach dann steht im Deutschen das Verb vor dem Subjekt.",
+   "pt": "Os marcadores temporais correspondem bem («primeiro» – «zuerst», «depois» – «dann», «a seguir» – «danach»). Há duas diferenças: o português narra no pretérito perfeito simples, o que aproxima do Präteritum, e depois de «dann» o verbo vem antes do sujeito em alemão."
+  },
+  "en": {
+   "de": "Die Zeitmarker passen genau (first – zuerst, then – dann, after that – danach). Zwei Unterschiede: Englischsprachige erzählen im simple past, was zum Präteritum führt, und nach dann steht im Deutschen das Verb vor dem Subjekt (dann bin ich gegangen, nicht dann ich ging).",
+   "en": "The time markers match exactly («first» – «zuerst», «then» – «dann», «after that» – «danach»). There are two differences: English speakers narrate in the simple past, which encourages use of the Präteritum, and after «dann» the German verb comes before the subject («dann bin ich gegangen», not «dann ich ging»)."
+  }
  },
  "errores": [
   {
@@ -383,7 +398,10 @@
     "fr": "L’année dernière…",
     "it": "L’anno scorso…",
     "pt": "No ano passado…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Zuerst…, dann…",
@@ -401,7 +419,10 @@
     "fr": "D’abord…, puis…",
     "it": "Prima…, poi…",
     "pt": "Primeiro…, depois…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Danach…",
@@ -419,7 +440,10 @@
     "fr": "Après cela…",
     "it": "Dopo…",
     "pt": "Depois…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Am Ende…",
@@ -437,7 +461,10 @@
     "fr": "À la fin…",
     "it": "Alla fine…",
     "pt": "No fim…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Es war ein toller Tag.",
@@ -455,7 +482,10 @@
     "fr": "C’était une super journée.",
     "it": "È stata una giornata fantastica.",
     "pt": "Foi um dia ótimo."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Das hat mir sehr gefallen.",
@@ -473,7 +503,10 @@
     "fr": "Ça m’a beaucoup plu.",
     "it": "Mi è piaciuto molto.",
     "pt": "Gostei muito."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Eines Tages…",
@@ -491,7 +524,10 @@
     "fr": "Un jour…",
     "it": "Un giorno…",
     "pt": "Um dia…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Plötzlich…",
@@ -509,7 +545,10 @@
     "fr": "Soudain…",
     "it": "All'improvviso…",
     "pt": "De repente…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Zum Glück…",
@@ -527,7 +566,10 @@
     "fr": "Heureusement…",
     "it": "Per fortuna…",
     "pt": "Felizmente…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Das werde ich nie vergessen.",
@@ -545,7 +587,11 @@
     "fr": "Je ne l'oublierai jamais.",
     "it": "Non lo dimenticherò mai.",
     "pt": "Nunca me vou esquecer disso."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Seitdem mache ich das anders.",
@@ -563,7 +609,11 @@
     "fr": "Depuis, je fais autrement.",
     "it": "Da allora lo faccio diversamente.",
     "pt": "Desde então faço de outra maneira."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Weisst du, was dann passiert ist?",
@@ -581,7 +631,10 @@
     "fr": "Tu sais ce qui s'est passé ensuite ?",
     "it": "Sai cos'è successo dopo?",
     "pt": "Sabes o que aconteceu depois?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {
@@ -594,7 +647,14 @@
    "pt": "Conte como você começou a economizar energia em casa."
   },
   "requisitos": [
-   "sechs Sätze im Perfekt",
+   {
+    "de": "sechs Sätze im Perfekt",
+    "en": "six sentences in the perfect tense",
+    "es": "seis frases en perfecto",
+    "fr": "six phrases au parfait",
+    "it": "sei frasi al Perfekt",
+    "pt": "seis frases no Perfekt"
+   },
    {
     "de": "*zuerst*, *dann*, *danach*",
     "en": "*zuerst*, *dann*, *danach*",

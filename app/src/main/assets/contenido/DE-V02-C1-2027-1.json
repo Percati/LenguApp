@@ -70,11 +70,26 @@
   "Unter Zugzwang stehen ist neutraler als in der Klemme sitzen und passt besser zu einem formellen Kontext."
  ],
  "contraste": {
-  "es": "Die Bildspender unterscheiden sich stark: das Deutsche greift zu Handwerk und Verwaltung, das Spanische oft zu Körper und Tieren. Auf halbem Weg stehen bleiben hat keine wörtliche spanische Entsprechung; quedarse a medias kommt der Bedeutung nahe, ohne dasselbe Bild zu nutzen.",
-  "en": "Das Englische hat für manche dieser Wendungen Teilentsprechungen (not to stick your neck out liegt nahe bei sich nicht aus dem Fenster lehnen), aber die Bildspender unterscheiden sich so stark, dass die direkte Übersetzung meist scheitert. Englischsprachige sollten jede Wendung als feste Einheit lernen, statt sie aus der englischen abzuleiten.",
-  "it": "Manche Bilder decken sich überraschend (Tomaten auf den Augen haben – avere le fette di salame sugli occhi, beide mit Essen), andere gar nicht (den Nagel auf den Kopf treffen – colpire nel segno). Italienischsprachige sollten jede Wendung deshalb als Einheit lernen und das Bild nicht selbst übersetzen.",
-  "fr": "Manche Wendungen decken sich genau (die Katze im Sack kaufen – acheter chat en poche), andere nur in der Bedeutung (den Nagel auf den Kopf treffen – mettre le doigt dessus). Gerade die exakten Treffer verleiten dazu, auch andere Bilder wörtlich zu übertragen.",
-  "pt": "Manche Bilder ähneln sich, bedeuten aber anderes: die Katze im Sack kaufen und comprar gato por lebre sprechen beide von Katzen, doch die portugiesische Wendung meint, betrogen zu werden. Portugiesischsprachige sollten deshalb auch bei ähnlichen Bildern die genaue Bedeutung prüfen."
+  "es": {
+   "de": "Die Bildspender unterscheiden sich stark: das Deutsche greift zu Handwerk und Verwaltung, das Spanische oft zu Körper und Tieren. Auf halbem Weg stehen bleiben hat keine wörtliche spanische Entsprechung; quedarse a medias kommt der Bedeutung nahe, ohne dasselbe Bild zu nutzen.",
+   "es": "Las imágenes metafóricas difieren mucho: el alemán recurre con frecuencia al mundo de los oficios y la administración, mientras que el español usa a menudo el cuerpo o los animales. «Auf halbem Weg stehen bleiben» no tiene un equivalente literal; «quedarse a medias» se aproxima al significado sin conservar la misma imagen."
+  },
+  "en": {
+   "de": "Das Englische hat für manche dieser Wendungen Teilentsprechungen (not to stick your neck out liegt nahe bei sich nicht aus dem Fenster lehnen), aber die Bildspender unterscheiden sich so stark, dass die direkte Übersetzung meist scheitert. Englischsprachige sollten jede Wendung als feste Einheit lernen, statt sie aus der englischen abzuleiten.",
+   "en": "English has partial equivalents for some of these idioms («not to stick your neck out» is close to «sich nicht aus dem Fenster lehnen»), but the source images differ so much that direct translation usually fails. English speakers should learn each expression as a fixed unit rather than derive it from the English idiom."
+  },
+  "it": {
+   "de": "Manche Bilder decken sich überraschend (Tomaten auf den Augen haben – avere le fette di salame sugli occhi, beide mit Essen), andere gar nicht (den Nagel auf den Kopf treffen – colpire nel segno). Italienischsprachige sollten jede Wendung deshalb als Einheit lernen und das Bild nicht selbst übersetzen.",
+   "it": "Alcune immagini coincidono sorprendentemente («Tomaten auf den Augen haben» – «avere le fette di salame sugli occhi», entrambe con cibo), altre per nulla («den Nagel auf den Kopf treffen» – «colpire nel segno»). Gli italofoni dovrebbero quindi imparare ogni espressione come unità e non tradurre autonomamente l'immagine."
+  },
+  "fr": {
+   "de": "Manche Wendungen decken sich genau (die Katze im Sack kaufen – acheter chat en poche), andere nur in der Bedeutung (den Nagel auf den Kopf treffen – mettre le doigt dessus). Gerade die exakten Treffer verleiten dazu, auch andere Bilder wörtlich zu übertragen.",
+   "fr": "Certaines expressions correspondent presque exactement («die Katze im Sack kaufen» – «acheter chat en poche»), d'autres seulement par le sens («den Nagel auf den Kopf treffen» – «mettre le doigt dessus»). Les rares correspondances très proches peuvent justement pousser à traduire d'autres images trop littéralement."
+  },
+  "pt": {
+   "de": "Manche Bilder ähneln sich, bedeuten aber anderes: die Katze im Sack kaufen und comprar gato por lebre sprechen beide von Katzen, doch die portugiesische Wendung meint, betrogen zu werden. Portugiesischsprachige sollten deshalb auch bei ähnlichen Bildern die genaue Bedeutung prüfen.",
+   "pt": "Algumas imagens são parecidas, mas significam coisas diferentes: «die Katze im Sack kaufen» e «comprar gato por lebre» falam de gatos, porém a expressão portuguesa significa ser enganado. Por isso, mesmo quando a imagem parece semelhante, é preciso verificar o significado exato."
+  }
  },
  "errores": [
   "Eine Redewendung wörtlich aus der Muttersprache übersetzen.",
@@ -264,7 +279,11 @@
     "fr": "s’arrêter à mi-chemin",
     "it": "fermarsi a metà strada",
     "pt": "ficar a meio caminho"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "unter Zugzwang stehen",
@@ -275,7 +294,10 @@
     "fr": "être sous pression pour agir",
     "it": "essere sotto pressione per agire",
     "pt": "estar sob pressão para agir"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "die Dinge beim Namen nennen",
@@ -286,7 +308,11 @@
     "fr": "appeler un chat un chat",
     "it": "chiamare le cose con il loro nome",
     "pt": "chamar as coisas pelos nomes"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "sich nicht aus dem Fenster lehnen",
@@ -297,7 +323,10 @@
     "fr": "ne pas trop se mouiller",
     "it": "non esporsi troppo",
     "pt": "não se expor demasiado"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "das Kind nicht mit dem Bade ausschütten",
@@ -308,7 +337,11 @@
     "fr": "ne pas jeter le bébé avec l’eau du bain",
     "it": "non buttare via il bambino con l’acqua sporca",
     "pt": "não deitar fora o bebé com a água do banho"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "sich mit fremden Federn schmücken",
@@ -319,7 +352,10 @@
     "fr": "s’attribuer le mérite du travail d’autrui",
     "it": "farsi bello con i meriti altrui",
     "pt": "apropriar-se do mérito alheio"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "den Rahmen sprengen",
@@ -330,7 +366,10 @@
     "fr": "dépasser le cadre",
     "it": "andare oltre i limiti",
     "pt": "ultrapassar o âmbito"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "etwas auf die lange Bank schieben",
@@ -341,7 +380,11 @@
     "fr": "faire traîner les choses",
     "it": "rimandare a lungo",
     "pt": "empurrar algo com a barriga"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Postergar una decisión"
+   ]
   },
   {
    "expresion": "mit zweierlei Mass messen",
@@ -352,7 +395,10 @@
     "fr": "avoir deux poids, deux mesures",
     "it": "usare due pesi e due misure",
     "pt": "usar dois pesos e duas medidas"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "den Finger in die Wunde legen",
@@ -363,7 +409,11 @@
     "fr": "mettre le doigt sur la plaie",
     "it": "mettere il dito nella piaga",
     "pt": "pôr o dedo na ferida"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "aus dem Ruder laufen",
@@ -374,7 +424,10 @@
     "fr": "déraper",
     "it": "sfuggire di mano",
     "pt": "sair do controlo"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Das ist hier fehl am Platz.",
@@ -385,7 +438,10 @@
     "fr": "C'est déplacé ici.",
     "it": "Qui è fuori luogo.",
     "pt": "Isso aqui está fora de lugar."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   }
  ],
  "mision": {

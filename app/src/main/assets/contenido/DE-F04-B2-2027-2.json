@@ -60,11 +60,26 @@
   "Zuerst, dann, danach strukturieren die Geschichte zeitlich, ohne dass man ständig neue Zeitformen braucht."
  ],
  "contraste": {
-  "es": "Das Spanische hat mit pretérito pluscuamperfecto dieselbe Logik für Vorzeitigkeit, sodass sich das Konzept leicht überträgt. Die Wahl zwischen Perfekt und Präteritum im Deutschen folgt aber anderen Regeln als im Spanischen, wo pretérito und imperfecto stärker nach Aspekt statt nach Register unterscheiden.",
-  "it": "Die Verteilung passt gut: Im Gespräch entspricht das passato prossimo dem Perfekt, Beschreibungen im imperfetto (era, avevo) dem Präteritum war und hatte, und der trapassato prossimo dem Plusquamperfekt. Die Erzählung überträgt sich deshalb weitgehend direkt.",
-  "fr": "Die Verteilung passt gut: Im Gespräch entspricht das passé composé dem Perfekt, Beschreibungen im imparfait (c'était, j'avais) dem Präteritum war und hatte, und das plus-que-parfait dem Plusquamperfekt.",
-  "pt": "Das Portugiesische erzählt mündlich mit dem pretérito perfeito simples (fui, vi), was eher zum Präteritum führt; im deutschen Gespräch steht aber das Perfekt. Der Plusquamperfekt überträgt sich dagegen direkt (tinha visto – hatte gesehen).",
-  "en": "Englischsprachige erzählen im simple past und benutzen deshalb im Gespräch zu oft das Präteritum, wo das Deutsche das Perfekt erwartet. Das past perfect entspricht dem Plusquamperfekt direkt."
+  "es": {
+   "de": "Das Spanische hat mit pretérito pluscuamperfecto dieselbe Logik für Vorzeitigkeit, sodass sich das Konzept leicht überträgt. Die Wahl zwischen Perfekt und Präteritum im Deutschen folgt aber anderen Regeln als im Spanischen, wo pretérito und imperfecto stärker nach Aspekt statt nach Register unterscheiden.",
+   "es": "El español tiene con el pretérito pluscuamperfecto la misma lógica de anterioridad, por lo que el concepto se transfiere con facilidad. Sin embargo, la elección entre Perfekt y Präteritum en alemán sigue reglas distintas de la oposición española entre pretérito e imperfecto, que depende más del aspecto que del registro."
+  },
+  "it": {
+   "de": "Die Verteilung passt gut: Im Gespräch entspricht das passato prossimo dem Perfekt, Beschreibungen im imperfetto (era, avevo) dem Präteritum war und hatte, und der trapassato prossimo dem Plusquamperfekt. Die Erzählung überträgt sich deshalb weitgehend direkt.",
+   "it": "La distribuzione corrisponde bene: nel parlato il passato prossimo equivale al Perfekt, le descrizioni all'imperfetto («era», «avevo») corrispondono al Präteritum «war» e «hatte», e il trapassato prossimo al Plusquamperfekt. La narrazione si trasferisce quindi in gran parte direttamente."
+  },
+  "fr": {
+   "de": "Die Verteilung passt gut: Im Gespräch entspricht das passé composé dem Perfekt, Beschreibungen im imparfait (c'était, j'avais) dem Präteritum war und hatte, und das plus-que-parfait dem Plusquamperfekt.",
+   "fr": "La répartition correspond bien : à l'oral, le passé composé correspond au Perfekt, les descriptions à l'imparfait («c'était», «j'avais») au Präteritum «war» et «hatte», et le plus-que-parfait au Plusquamperfekt."
+  },
+  "pt": {
+   "de": "Das Portugiesische erzählt mündlich mit dem pretérito perfeito simples (fui, vi), was eher zum Präteritum führt; im deutschen Gespräch steht aber das Perfekt. Der Plusquamperfekt überträgt sich dagegen direkt (tinha visto – hatte gesehen).",
+   "pt": "O português narrado oralmente usa o pretérito perfeito simples («fui», «vi»), o que pode levar ao Präteritum; na conversa em alemão, porém, usa-se o Perfekt. Já o mais-que-perfeito composto se transfere diretamente: «tinha visto» – «hatte gesehen»."
+  },
+  "en": {
+   "de": "Englischsprachige erzählen im simple past und benutzen deshalb im Gespräch zu oft das Präteritum, wo das Deutsche das Perfekt erwartet. Das past perfect entspricht dem Plusquamperfekt direkt.",
+   "en": "English speakers narrate in the simple past and therefore use too much German Präteritum in conversation, where German normally expects the Perfekt. The past perfect corresponds directly to the German Plusquamperfekt."
+  }
  },
  "errores": [
   "Das Plusquamperfekt weglassen, wodurch die Reihenfolge der Ereignisse unklar wird.",
@@ -254,7 +269,10 @@
     "fr": "D’abord…, puis…, ensuite…",
     "it": "Prima…, poi…, dopo…",
     "pt": "Primeiro…, depois…, a seguir…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Wir hatten schon…, bevor…",
@@ -265,7 +283,10 @@
     "fr": "Nous avions déjà…, avant que…",
     "it": "Avevamo già…, prima che…",
     "pt": "Já tínhamos…, antes de…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Es war schon…, als…",
@@ -276,7 +297,10 @@
     "fr": "Il était déjà…, quand…",
     "it": "Era già…, quando…",
     "pt": "Já era…, quando…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Am Ende…",
@@ -287,7 +311,10 @@
     "fr": "À la fin…",
     "it": "Alla fine…",
     "pt": "No fim…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Plötzlich…",
@@ -298,7 +325,10 @@
     "fr": "Soudain…",
     "it": "All’improvviso…",
     "pt": "De repente…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Während wir warteten,…",
@@ -309,7 +339,10 @@
     "fr": "Pendant que nous attendions,…",
     "it": "Mentre aspettavamo,…",
     "pt": "Enquanto esperávamos,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Das war vor ungefähr…",
@@ -320,7 +353,10 @@
     "fr": "C'était il y a environ…",
     "it": "È stato circa … fa.",
     "pt": "Isso foi há cerca de…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Wir waren gerade dabei, … zu…",
@@ -331,7 +367,10 @@
     "fr": "Nous étions justement en train de…",
     "it": "Eravamo proprio lì lì per…",
     "pt": "Estávamos mesmo a…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Kurz darauf…",
@@ -342,7 +381,10 @@
     "fr": "Peu après…",
     "it": "Poco dopo…",
     "pt": "Pouco depois…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Das Komische daran war, dass…",
@@ -353,7 +395,10 @@
     "fr": "Le plus curieux, c'est que…",
     "it": "La cosa strana è che…",
     "pt": "O curioso é que…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "Am Ende ist alles gut ausgegangen.",
@@ -364,7 +409,11 @@
     "fr": "Finalement, tout s'est bien terminé.",
     "it": "Alla fine è andato tutto bene.",
     "pt": "No fim correu tudo bem."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Opinar"
+   ]
   },
   {
    "expresion": "Seitdem mache ich das anders.",
@@ -375,7 +424,10 @@
     "fr": "Depuis, je m'y prends autrement.",
     "it": "Da allora lo faccio diversamente.",
     "pt": "Desde então faço isso de outra maneira."
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   }
  ],
  "mision": {

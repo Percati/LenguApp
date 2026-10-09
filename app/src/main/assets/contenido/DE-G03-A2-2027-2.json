@@ -207,11 +207,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische unterscheidet nicht zwischen Bewegung und Ort mit unterschiedlichem Kasus. Diese Unterscheidung ist für Spanischsprachige völlig neu.",
-  "it": "Das Italienische zeigt nicht, ob es um einen Ort oder eine Richtung geht: sono in cucina und vado in cucina. Bekannt ist aber, dass Präposition und Artikel verschmelzen (nella, sul) – im, ins, am und aufs funktionieren genauso.",
-  "fr": "Das Französische fragt mit où nach Ort und Richtung. Das Deutsche hat zwei Fragen, wo und wohin, und genau diese Frage entscheidet den Kasus: Wo? in der Küche, wohin? in die Küche.",
-  "pt": "Das Portugiesische zeigt den Unterschied schon mit der Präposition: estou em casa (Ort), vou para casa (Richtung). Diese Frage hilft direkt: em – wo? – Dativ, para – wohin? – Akkusativ.",
-  "en": "Das Englische hat eine gute Brücke: in the kitchen (Ort) und into the kitchen (Richtung), on the table und onto the table. Wo into oder onto passt, braucht das Deutsche den Akkusativ: in die Küche."
+  "es": {
+   "de": "Das Spanische unterscheidet nicht zwischen Bewegung und Ort mit unterschiedlichem Kasus. Diese Unterscheidung ist für Spanischsprachige völlig neu.",
+   "es": "El español no distingue movimiento y ubicación mediante un cambio de caso. Esta diferencia es completamente nueva para los hispanohablantes."
+  },
+  "it": {
+   "de": "Das Italienische zeigt nicht, ob es um einen Ort oder eine Richtung geht: sono in cucina und vado in cucina. Bekannt ist aber, dass Präposition und Artikel verschmelzen (nella, sul) – im, ins, am und aufs funktionieren genauso.",
+   "it": "L'italiano non segnala con il caso la differenza tra luogo e direzione: «sono in cucina» e «vado in cucina». È però familiare la fusione tra preposizione e articolo («nella», «sul»): «im», «ins», «am» e «aufs» funzionano in modo simile, ma con il caso."
+  },
+  "fr": {
+   "de": "Das Französische fragt mit où nach Ort und Richtung. Das Deutsche hat zwei Fragen, wo und wohin, und genau diese Frage entscheidet den Kasus: Wo? in der Küche, wohin? in die Küche.",
+   "fr": "Le français utilise «où» aussi bien pour le lieu que pour la direction. L'allemand distingue «wo» et «wohin», et c'est précisément cette différence qui détermine le cas : «Wo? in der Küche», «wohin? in die Küche»."
+  },
+  "pt": {
+   "de": "Das Portugiesische zeigt den Unterschied schon mit der Präposition: estou em casa (Ort), vou para casa (Richtung). Diese Frage hilft direkt: em – wo? – Dativ, para – wohin? – Akkusativ.",
+   "pt": "O português já diferencia lugar e direção pelas preposições: «estou em casa» para lugar, «vou para casa» para direção. Essa distinção ajuda diretamente: «em» – «wo?» – dativo; «para» – «wohin?» – acusativo."
+  },
+  "en": {
+   "de": "Das Englische hat eine gute Brücke: in the kitchen (Ort) und into the kitchen (Richtung), on the table und onto the table. Wo into oder onto passt, braucht das Deutsche den Akkusativ: in die Küche.",
+   "en": "English offers a useful bridge: «in the kitchen» for location and «into the kitchen» for direction, «on the table» and «onto the table». Where «into» or «onto» fits, German requires the accusative: «in die Küche»."
+  }
  },
  "errores": [
   {
@@ -421,7 +436,11 @@
     "fr": "Je vais dans le/la…",
     "it": "Vado nel/nella…",
     "pt": "Vou para o/a…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "Ich bin in der…",
@@ -439,7 +458,11 @@
     "fr": "Je suis dans le/la…",
     "it": "Sono nel/nella…",
     "pt": "Estou no/na…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "…auf dem Tisch",
@@ -457,7 +480,11 @@
     "fr": "…sur la table",
     "it": "…sul tavolo",
     "pt": "…sobre a mesa"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "Ich fahre nach…",
@@ -475,7 +502,10 @@
     "fr": "Je vais à…",
     "it": "Vado a…",
     "pt": "Vou para…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "Ich wohne in…",
@@ -493,7 +523,11 @@
     "fr": "J’habite à…",
     "it": "Abito a…",
     "pt": "Moro em…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "…an der…",
@@ -511,7 +545,11 @@
     "fr": "…au/à la…",
     "it": "…al/alla…",
     "pt": "…no/na…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "Wohin oder wo?",
@@ -529,7 +567,12 @@
     "fr": "Vers où ou où ?",
     "it": "Verso dove o dove?",
     "pt": "Para onde ou onde?"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Opinar",
+    "Caso y declinación"
+   ]
   }
  ],
  "mision": {

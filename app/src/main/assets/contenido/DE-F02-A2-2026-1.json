@@ -175,11 +175,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische stimmt mit es verdad zu, was strukturell sehr ähnlich ist.",
-  "it": "Hai ragione entspricht genau du hast recht, mit derselben Struktur. D'accordo passt gut zu einverstanden oder okay.",
-  "fr": "Tu as raison entspricht genau du hast recht, mit derselben Struktur (avoir – haben). D'accord passt gut zu einverstanden oder okay.",
-  "pt": "Tens razão bzw. você tem razão entspricht genau du hast recht, mit derselben Struktur (ter – haben).",
-  "en": "You're right wird oft zu du bist recht übertragen; richtig ist du hast recht. I agree entspricht ich bin einverstanden oder ich stimme zu."
+  "es": {
+   "de": "Das Spanische stimmt mit es verdad zu, was strukturell sehr ähnlich ist.",
+   "es": "El español muestra acuerdo con «es verdad», una estructura muy parecida."
+  },
+  "it": {
+   "de": "Hai ragione entspricht genau du hast recht, mit derselben Struktur. D'accordo passt gut zu einverstanden oder okay.",
+   "it": "«Hai ragione» corrisponde esattamente a «du hast recht», con la stessa struttura. «D'accordo» corrisponde bene a «einverstanden» oppure «okay»."
+  },
+  "fr": {
+   "de": "Tu as raison entspricht genau du hast recht, mit derselben Struktur (avoir – haben). D'accord passt gut zu einverstanden oder okay.",
+   "fr": "«Tu as raison» correspond exactement à «du hast recht», avec la même structure («avoir» – «haben»). «D'accord» correspond bien à «einverstanden» ou «okay»."
+  },
+  "pt": {
+   "de": "Tens razão bzw. você tem razão entspricht genau du hast recht, mit derselben Struktur (ter – haben).",
+   "pt": "«Tens razão» ou, no português do Brasil, «você tem razão» corresponde exatamente a «du hast recht», com a mesma estrutura («ter» – «haben»)."
+  },
+  "en": {
+   "de": "You're right wird oft zu du bist recht übertragen; richtig ist du hast recht. I agree entspricht ich bin einverstanden oder ich stimme zu.",
+   "en": "«You're right» is often rendered as «du bist recht»; the correct form is «du hast recht». «I agree» corresponds to «ich bin einverstanden» or «ich stimme zu»."
+  }
  },
  "errores": [
   {
@@ -367,7 +382,10 @@
     "fr": "C’est vrai.",
     "it": "È vero.",
     "pt": "Isso é verdade."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Das finde ich auch.",
@@ -385,7 +403,10 @@
     "fr": "Moi aussi.",
     "it": "Anch’io la penso così.",
     "pt": "Eu também acho."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Das finde ich nicht.",
@@ -403,7 +424,11 @@
     "fr": "Je ne pense pas.",
     "it": "Non credo.",
     "pt": "Acho que não."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Genau!",
@@ -421,7 +446,10 @@
     "fr": "Exactement !",
     "it": "Esatto!",
     "pt": "Exatamente!"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Vielleicht.",
@@ -439,7 +467,10 @@
     "fr": "Peut-être.",
     "it": "Forse.",
     "pt": "Talvez."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Ich weiss nicht.",
@@ -457,7 +488,10 @@
     "fr": "Je ne sais pas.",
     "it": "Non lo so.",
     "pt": "Não sei."
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "Das sehe ich auch so.",
@@ -475,7 +509,10 @@
     "fr": "Je le vois aussi ainsi.",
     "it": "La vedo anch'io così.",
     "pt": "Também vejo assim."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Ja, aber…",
@@ -493,7 +530,10 @@
     "fr": "Oui, mais…",
     "it": "Sì, ma…",
     "pt": "Sim, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Warum denkst du das?",
@@ -511,7 +551,10 @@
     "fr": "Pourquoi penses-tu cela ?",
     "it": "Perché lo pensi?",
     "pt": "Porque pensas isso?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Bei mir ist das anders.",
@@ -529,7 +572,10 @@
     "fr": "Chez moi, c'est différent.",
     "it": "Per me è diverso.",
     "pt": "Comigo é diferente."
-   }
+   },
+   "categoriasUso": [
+    "Ejemplificar"
+   ]
   },
   {
    "expresion": "Das ist nicht ganz richtig.",
@@ -547,7 +593,11 @@
     "fr": "Ce n'est pas tout à fait exact.",
     "it": "Non è del tutto giusto.",
     "pt": "Isso não está bem certo."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Ist das für dich okay?",
@@ -565,7 +615,11 @@
     "fr": "Cela te va ?",
     "it": "Per te va bene?",
     "pt": "Para ti está bem?"
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Preguntar/pedir aclaración"
+   ]
   }
  ],
  "mision": {
@@ -578,8 +632,22 @@
    "pt": "Um amigo diz: *Bargeld braucht man nicht mehr.* Responda."
   },
   "requisitos": [
-   "zwei Sätze mit *Das stimmt* oder *Das finde ich auch*",
-   "zwei Sätze mit *Das finde ich nicht*",
+   {
+    "de": "zwei Sätze mit *Das stimmt* oder *Das finde ich auch*",
+    "en": "two sentences with *Das stimmt* or *Das finde ich auch*",
+    "es": "dos oraciones con *Das stimmt* o *Das finde ich auch*",
+    "fr": "deux phrases avec *Das stimmt* ou *Das finde ich auch*",
+    "it": "due frasi con *Das stimmt* o *Das finde ich auch*",
+    "pt": "duas frases com *Das stimmt* ou *Das finde ich auch*"
+   },
+   {
+    "de": "zwei Sätze mit *Das finde ich nicht*",
+    "en": "two sentences with *Das finde ich nicht*",
+    "es": "dos oraciones con *Das finde ich nicht*",
+    "fr": "deux phrases avec *Das finde ich nicht*",
+    "it": "due frasi con *Das finde ich nicht*",
+    "pt": "duas frases com *Das finde ich nicht*"
+   },
    {
     "de": "*der Geldautomat*, *die Quittung* und *günstig* verwenden",
     "en": "use *der Geldautomat*, *die Quittung* and *günstig*",
@@ -606,7 +674,14 @@
   {
    "dia": "mie",
    "minutos": 5,
-   "texto": "Drei Antworten mit verschiedenen Formeln."
+   "texto": {
+    "de": "Drei Antworten mit verschiedenen Formeln.",
+    "en": "Three replies using different expressions.",
+    "es": "Tres respuestas con fórmulas diferentes.",
+    "fr": "Trois réponses avec des formules différentes.",
+    "it": "Tre risposte con formule diverse.",
+    "pt": "Três respostas com fórmulas diferentes."
+   }
   },
   {
    "dia": "vie",

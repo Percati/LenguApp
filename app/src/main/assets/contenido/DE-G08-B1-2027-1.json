@@ -241,11 +241,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische hat feste Präpositionen (esperar a, pensar en), aber keine Pronominaladverbien. Alegrarse de que necesita keinen Platzhalter, das Deutsche schon — deshalb wird darauf oft vergessen.",
-  "it": "Die Pronomen ci und ne funktionieren wie daran und davon (ci penso – ich denke daran), das Prinzip ist also bekannt. Die festen Präpositionen stimmen aber oft nicht: aspettare hat gar keine Präposition, warten braucht auf.",
-  "fr": "Y und en funktionieren wie daran und davon (j'y pense – ich denke daran), das Prinzip ist bekannt. Die festen Präpositionen stimmen aber oft nicht: attendre hat keine Präposition, warten braucht auf; s'intéresser à heisst sich interessieren für.",
-  "pt": "Das Portugiesische hat keine Pronominaladverbien, sagt aber nisso (penso nisso) – eine Präposition mit Pronomen, fast wie da + an. Die festen Präpositionen stimmen oft nicht: esperar hat keine Präposition, warten braucht auf.",
-  "en": "Im Englischen sagt man about it oder on it, im Deutschen wird daraus ein Wort: darüber, darauf. Englischsprachige sagen deshalb oft auf es. Die Präpositionen selbst passen selten (wait for – warten auf, think of – denken an), deshalb muss man sie mit dem Verb zusammen lernen."
+  "es": {
+   "de": "Das Spanische hat feste Präpositionen (esperar a, pensar en), aber keine Pronominaladverbien. Alegrarse de que necesita keinen Platzhalter, das Deutsche schon — deshalb wird darauf oft vergessen.",
+   "es": "El español tiene preposiciones fijas («esperar a», «pensar en»), pero no pronominales adverbiales como «darauf». En «alegrarse de que» no se necesita ningún elemento anticipatorio, mientras que el alemán sí lo requiere; por eso «darauf» se omite con frecuencia."
+  },
+  "it": {
+   "de": "Die Pronomen ci und ne funktionieren wie daran und davon (ci penso – ich denke daran), das Prinzip ist also bekannt. Die festen Präpositionen stimmen aber oft nicht: aspettare hat gar keine Präposition, warten braucht auf.",
+   "it": "I pronomi «ci» e «ne» funzionano in modo simile a «daran» e «davon» («ci penso» – «ich denke daran»), quindi il principio è noto. Le preposizioni fisse però spesso non coincidono: «aspettare» non richiede preposizione, mentre «warten» richiede «auf»."
+  },
+  "fr": {
+   "de": "Y und en funktionieren wie daran und davon (j'y pense – ich denke daran), das Prinzip ist bekannt. Die festen Präpositionen stimmen aber oft nicht: attendre hat keine Präposition, warten braucht auf; s'intéresser à heisst sich interessieren für.",
+   "fr": "«Y» et «en» fonctionnent de manière comparable à «daran» et «davon» («j'y pense» – «ich denke daran»), donc le principe est connu. En revanche, les prépositions fixes ne coïncident souvent pas : «attendre» n'a pas de préposition, alors que «warten» exige «auf» ; «s'intéresser à» correspond à «sich interessieren für»."
+  },
+  "pt": {
+   "de": "Das Portugiesische hat keine Pronominaladverbien, sagt aber nisso (penso nisso) – eine Präposition mit Pronomen, fast wie da + an. Die festen Präpositionen stimmen oft nicht: esperar hat keine Präposition, warten braucht auf.",
+   "pt": "O português não tem advérbios pronominais como «daran», mas usa formas como «nisso» («penso nisso»), isto é, preposição + pronome, algo próximo de «da + an». As preposições fixas, porém, muitas vezes não coincidem: «esperar» não leva preposição, enquanto «warten» exige «auf»."
+  },
+  "en": {
+   "de": "Im Englischen sagt man about it oder on it, im Deutschen wird daraus ein Wort: darüber, darauf. Englischsprachige sagen deshalb oft auf es. Die Präpositionen selbst passen selten (wait for – warten auf, think of – denken an), deshalb muss man sie mit dem Verb zusammen lernen.",
+   "en": "In English one says «about it» or «on it»; in German this becomes a single word: «darüber», «darauf». English speakers therefore often say «auf es». The prepositions themselves rarely match («wait for» – «warten auf», «think of» – «denken an»), so they need to be learned together with the verb."
+  }
  },
  "errores": [
   {
@@ -464,7 +479,11 @@
     "fr": "Je me réjouis de…",
     "it": "Non vedo l’ora di…",
     "pt": "Estou ansioso/a por…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Ich warte auf…",
@@ -482,7 +501,10 @@
     "fr": "J’attends…",
     "it": "Aspetto…",
     "pt": "Estou à espera de…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "Ich denke an…",
@@ -500,7 +522,10 @@
     "fr": "Je pense à…",
     "it": "Penso a…",
     "pt": "Estou a pensar em…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "Ich interessiere mich für…",
@@ -518,7 +543,10 @@
     "fr": "Je m’intéresse à…",
     "it": "Mi interessa…",
     "pt": "Interesso-me por…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "Ich freue mich darauf.",
@@ -536,7 +564,10 @@
     "fr": "J’ai hâte.",
     "it": "Non vedo l’ora.",
     "pt": "Estou ansioso/a por isso."
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "Worauf freust du dich?",
@@ -554,7 +585,11 @@
     "fr": "Qu’est-ce que tu attends avec impatience ?",
     "it": "Cosa aspetti con impazienza?",
     "pt": "O que estás ansioso/a por fazer?"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Welche Präposition gehört zum Verb?",
@@ -572,7 +607,11 @@
     "fr": "Quelle préposition va avec le verbe ?",
     "it": "Quale preposizione regge il verbo?",
     "pt": "Que preposição leva o verbo?"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Colocación fija"
+   ]
   }
  ],
  "mision": {

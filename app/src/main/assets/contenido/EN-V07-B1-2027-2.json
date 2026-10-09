@@ -201,11 +201,26 @@
   }
  ],
  "contraste": {
-  "es": "Y, pero, porque and así que correspond directly to and, but, because and so, so the basic connectors transfer directly.",
-  "de": "Und, aber and weil correspond directly to and, but and because. The German word also is a false friend: it means so, not also.",
-  "it": "E, ma and perché correspond to and, but and because; perché also means why, which English separates.",
-  "fr": "Et, mais, parce que and donc correspond directly to and, but, because and so, so the basic connectors transfer directly.",
-  "pt": "E, mas, porque and então correspond directly to and, but, because and so, so the basic connectors transfer directly."
+  "es": {
+   "en": "Y, pero, porque and así que correspond directly to and, but, because and so, so the basic connectors transfer directly.",
+   "es": "«Y», «pero», «porque» y «así que» corresponden directamente a «and», «but», «because» y «so», por lo que los conectores básicos se transfieren directamente."
+  },
+  "de": {
+   "en": "Und, aber and weil correspond directly to and, but and because. The German word also is a false friend: it means so, not also.",
+   "de": "«Und», «aber» und «weil» entsprechen direkt «and», «but» und «because». Das deutsche Wort «also» ist ein falscher Freund: Es bedeutet «so», nicht «also»."
+  },
+  "it": {
+   "en": "E, ma and perché correspond to and, but and because; perché also means why, which English separates.",
+   "it": "«E», «ma» e «perché» corrispondono a «and», «but» e «because»; «perché» significa anche «why», che l'inglese distingue."
+  },
+  "fr": {
+   "en": "Et, mais, parce que and donc correspond directly to and, but, because and so, so the basic connectors transfer directly.",
+   "fr": "«Et», «mais», «parce que» et «donc» correspondent directement à «and», «but», «because» et «so» ; les connecteurs de base se transfèrent donc directement."
+  },
+  "pt": {
+   "en": "E, mas, porque and então correspond directly to and, but, because and so, so the basic connectors transfer directly.",
+   "pt": "«E», «mas», «porque» e «então» correspondem diretamente a «and», «but», «because» e «so», então os conectores básicos se transferem diretamente."
+  }
  },
  "errores": [
   {
@@ -423,7 +438,10 @@
     "fr": "…et…",
     "it": "…e…",
     "pt": "…e…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "…but…",
@@ -441,7 +459,11 @@
     "fr": "…mais…",
     "it": "…ma…",
     "pt": "…mas…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Comparación"
+   ]
   },
   {
    "expresion": "…because…",
@@ -459,7 +481,11 @@
     "fr": "…parce que…",
     "it": "…perché…",
     "pt": "…porque…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "…so…",
@@ -477,7 +503,10 @@
     "fr": "…donc…",
     "it": "…quindi…",
     "pt": "…por isso…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Also,…",
@@ -495,7 +524,10 @@
     "fr": "De plus,…",
     "it": "Inoltre,…",
     "pt": "Além disso,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "That's why…",
@@ -513,7 +545,10 @@
     "fr": "C’est pourquoi…",
     "it": "Perciò…",
     "pt": "Por isso…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "First of all,…",
@@ -531,7 +566,10 @@
     "fr": "Tout d'abord,…",
     "it": "Prima di tutto,…",
     "pt": "Antes de mais,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "For example,…",
@@ -549,7 +587,11 @@
     "fr": "Par exemple,…",
     "it": "Per esempio,…",
     "pt": "Por exemplo,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Ejemplificar"
+   ]
   },
   {
    "expresion": "However,…",
@@ -567,7 +609,11 @@
     "fr": "Cependant,…",
     "it": "Tuttavia,…",
     "pt": "No entanto,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Comparación"
+   ]
   },
   {
    "expresion": "In the end,…",
@@ -585,7 +631,10 @@
     "fr": "Finalement,…",
     "it": "Alla fine,…",
     "pt": "No fim,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "On the other hand,…",
@@ -603,7 +652,10 @@
     "fr": "D'un autre côté,…",
     "it": "D'altra parte,…",
     "pt": "Por outro lado,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Do I need a linker here at all?",
@@ -621,7 +673,11 @@
     "fr": "Ai-je vraiment besoin d'un connecteur ici ?",
     "it": "Qui serve davvero un connettivo?",
     "pt": "Preciso mesmo de um conector aqui?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Subordinación y conectores"
+   ]
   }
  ],
  "mision": {

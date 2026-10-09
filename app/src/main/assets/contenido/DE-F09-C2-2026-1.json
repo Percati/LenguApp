@@ -56,11 +56,26 @@
   "Diese Technik funktioniert nur, wenn das Gegenargument wirklich das stärkste verfügbare ist, nicht ein bequemes."
  ],
  "contraste": {
-  "es": "La objeción de más peso entspricht genau der gewichtigste Einwand, mit demselben Bild (peso – Gewicht). Im Argument ist Einwand üblich, Einwendung ist eher juristisch.",
-  "it": "L'obiezione più forte entspricht genau der stärkste Einwand, und die Technik, ihn zuerst ernst zu nehmen, ist aus dem testo argomentativo vertraut. Hinweis zur Wortwahl: Einwendung ist im Deutschen vor allem ein juristischer Begriff, im Argument ist Einwand üblich.",
-  "fr": "L'objection la plus sérieuse entspricht eher der gewichtigste Einwand als der ernsthafteste. Die Technik, den stärksten Einwand vorwegzunehmen, kennt die dissertation gut; im Argument ist Einwand üblich, Einwendung ist eher juristisch.",
-  "pt": "A objeção de maior peso entspricht genau der gewichtigste Einwand, mit demselben Bild (peso – Gewicht). Im Argument ist Einwand üblich, Einwendung ist eher juristisch.",
-  "en": "Die angelsächsische Diskussionskultur kennt die Technik ausdrücklich (steelmanning, the strongest objection – der stärkste Einwand). Englischsprachige übertragen sie deshalb gut; im Argument ist Einwand üblich, Einwendung ist eher juristisch."
+  "es": {
+   "de": "La objeción de más peso entspricht genau der gewichtigste Einwand, mit demselben Bild (peso – Gewicht). Im Argument ist Einwand üblich, Einwendung ist eher juristisch.",
+   "es": "«La objeción de más peso» corresponde exactamente a «der gewichtigste Einwand», con la misma metáfora («peso» – Gewicht). En la argumentación se usa normalmente «Einwand»; «Einwendung» es más bien jurídico."
+  },
+  "it": {
+   "de": "L'obiezione più forte entspricht genau der stärkste Einwand, und die Technik, ihn zuerst ernst zu nehmen, ist aus dem testo argomentativo vertraut. Hinweis zur Wortwahl: Einwendung ist im Deutschen vor allem ein juristischer Begriff, im Argument ist Einwand üblich.",
+   "it": "«L'obiezione più forte» corrisponde bene a «der stärkste Einwand», e la tecnica di prendere sul serio prima l'obiezione più solida è familiare dal testo argomentativo. Nota lessicale: «Einwendung» è soprattutto giuridico; nell'argomentazione normale si usa «Einwand»."
+  },
+  "fr": {
+   "de": "L'objection la plus sérieuse entspricht eher der gewichtigste Einwand als der ernsthafteste. Die Technik, den stärksten Einwand vorwegzunehmen, kennt die dissertation gut; im Argument ist Einwand üblich, Einwendung ist eher juristisch.",
+   "fr": "«L'objection la plus sérieuse» se rapproche davantage de «der gewichtigste Einwand» que de «der ernsthafteste». La technique consistant à anticiper l'objection la plus forte est familière grâce à la dissertation ; dans l'argumentation, «Einwand» est courant, tandis que «Einwendung» est plutôt juridique."
+  },
+  "pt": {
+   "de": "A objeção de maior peso entspricht genau der gewichtigste Einwand, mit demselben Bild (peso – Gewicht). Im Argument ist Einwand üblich, Einwendung ist eher juristisch.",
+   "pt": "«A objeção de maior peso» corresponde exatamente a «der gewichtigste Einwand», com a mesma imagem («peso» – Gewicht). Em argumentação, «Einwand» é a forma usual; «Einwendung» é mais jurídica."
+  },
+  "en": {
+   "de": "Die angelsächsische Diskussionskultur kennt die Technik ausdrücklich (steelmanning, the strongest objection – der stärkste Einwand). Englischsprachige übertragen sie deshalb gut; im Argument ist Einwand üblich, Einwendung ist eher juristisch.",
+   "en": "Anglo-American discussion culture explicitly teaches this technique («steelmanning», «the strongest objection» – «der stärkste Einwand»). English speakers therefore transfer it well; in argumentation, «Einwand» is common, whereas «Einwendung» is more legalistic."
+  }
  },
  "errores": [
   "Ein schwaches statt des stärksten Gegenarguments widerlegen, was unehrlich wirkt.",
@@ -228,7 +243,10 @@
     "fr": "L’objection la plus forte est que…",
     "it": "L’obiezione più forte è che…",
     "pt": "A objeção mais forte é que…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Dieser Punkt hat durchaus Gewicht.",
@@ -239,7 +257,10 @@
     "fr": "Ce point a réellement du poids.",
     "it": "Questo punto ha davvero un peso.",
     "pt": "Este ponto tem realmente peso."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Dennoch überwiegen…aus folgendem Grund…",
@@ -250,7 +271,10 @@
     "fr": "Néanmoins, … l’emportent pour la raison suivante…",
     "it": "Tuttavia, … prevalgono per il seguente motivo…",
     "pt": "Ainda assim, … prevalecem pela seguinte razão…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Selbst wenn man das zugesteht, …",
@@ -261,7 +285,10 @@
     "fr": "Même en admettant cela, …",
     "it": "Anche ammettendo questo, …",
     "pt": "Mesmo concedendo isso, …"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Das lässt sich nicht einfach vom Tisch wischen.",
@@ -272,7 +299,10 @@
     "fr": "On ne peut pas simplement l’écarter.",
     "it": "Non si può semplicemente liquidare la questione.",
     "pt": "Isso não pode ser simplesmente descartado."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Trotz dieses berechtigten Einwands…",
@@ -283,7 +313,10 @@
     "fr": "Malgré cette objection légitime…",
     "it": "Nonostante questa obiezione legittima…",
     "pt": "Apesar desta objeção legítima…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "In seiner stärksten Form lautet der Einwand: …",
@@ -294,7 +327,10 @@
     "fr": "Dans sa version la plus forte, l'objection est : …",
     "it": "Nella sua forma più forte l'obiezione suona: …",
     "pt": "Na sua forma mais forte, a objeção diz: …"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Ich will den Einwand nicht schwächer machen, als er ist.",
@@ -305,7 +341,8 @@
     "fr": "Je ne veux pas affaiblir l'objection.",
     "it": "Non voglio rendere l'obiezione più debole di quanto sia.",
     "pt": "Não quero tornar a objeção mais fraca do que é."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Diese Einwendung wäre entscheidend, wenn…",
@@ -316,7 +353,11 @@
     "fr": "Cette objection serait décisive si…",
     "it": "Quest'obiezione sarebbe decisiva se…",
     "pt": "Essa objeção seria decisiva se…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "Der Preis meiner Position ist…",
@@ -327,7 +368,11 @@
     "fr": "Le prix de ma position, c'est…",
     "it": "Il prezzo della mia posizione è…",
     "pt": "O preço da minha posição é…"
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Beide Seiten müssen etwas aufgeben; die Frage ist nur, was.",
@@ -338,7 +383,10 @@
     "fr": "Les deux camps doivent céder quelque chose ; la question est quoi.",
     "it": "Entrambe le parti devono cedere qualcosa; la domanda è che cosa.",
     "pt": "Ambos os lados têm de ceder algo; a questão é o quê."
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Damit bleibt nur noch die Frage, ob…",
@@ -349,7 +397,10 @@
     "fr": "Il ne reste donc que la question de savoir si…",
     "it": "Resta così solo la questione se…",
     "pt": "Assim resta apenas a questão de saber se…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   }
  ],
  "mision": {

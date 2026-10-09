@@ -88,11 +88,26 @@
   "Giving a reason materially increases compliance, even a weak one. *Because* does real work."
  ],
  "contraste": {
-  "es": "Spanish has the same conditional language for opening positions (nuestra propuesta inicial sería… – our starting point would be…), so the phrases transfer. What needs practice is setting an ambitious first figure and justifying it, since English treats the first offer as an anchor.",
-  "de": "Unser Ausgangspunkt wäre… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly.",
-  "it": "La nostra proposta iniziale sarebbe… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly.",
-  "fr": "Notre proposition de départ serait… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly.",
-  "pt": "A nossa proposta inicial seria… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly."
+  "es": {
+   "en": "Spanish has the same conditional language for opening positions (nuestra propuesta inicial sería… – our starting point would be…), so the phrases transfer. What needs practice is setting an ambitious first figure and justifying it, since English treats the first offer as an anchor.",
+   "es": "El español tiene el mismo lenguaje condicional para las posiciones iniciales («nuestra propuesta inicial sería…» – «our starting point would be…»), por lo que las expresiones se transfieren. Lo que hay que practicar es fijar una primera cifra ambiciosa y justificarla, ya que en inglés la primera oferta funciona como ancla."
+  },
+  "de": {
+   "en": "Unser Ausgangspunkt wäre… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly.",
+   "de": "«Unser Ausgangspunkt wäre…» entspricht genau «our starting point would be…», einschließlich des Konditionals. Die Sprache des Verhandelns und Ankerns lässt sich daher direkt übertragen."
+  },
+  "it": {
+   "en": "La nostra proposta iniziale sarebbe… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly.",
+   "it": "«La nostra proposta iniziale sarebbe…» corrisponde esattamente a «our starting point would be…», con lo stesso condizionale. Il linguaggio di ancoraggio si trasferisce quindi direttamente."
+  },
+  "fr": {
+   "en": "Notre proposition de départ serait… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly.",
+   "fr": "«Notre proposition de départ serait…» correspond exactement à «our starting point would be…», avec le même conditionnel. Le langage d'ancrage se transfère donc directement."
+  },
+  "pt": {
+   "en": "A nossa proposta inicial seria… corresponds exactly to our starting point would be…, with the same conditional. The language of anchoring therefore transfers directly.",
+   "pt": "«A nossa proposta inicial seria…» corresponde exatamente a «our starting point would be…», com o mesmo condicional. A linguagem de ancoragem se transfere diretamente."
+  }
  },
  "errores": [
   "Opening with your minimum.",
@@ -283,7 +298,11 @@
     "fr": "Si tu pouvais…, je pourrais…",
     "it": "Se potessi…, potrei…",
     "pt": "Se pudesses…, eu poderia…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer",
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "What would it take?",
@@ -294,7 +313,11 @@
     "fr": "Qu’est-ce qu’il faudrait ?",
     "it": "Cosa ci vorrebbe?",
     "pt": "O que seria necessário?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Suppose we tried…",
@@ -305,7 +328,10 @@
     "fr": "Supposons qu’on essaie…",
     "it": "Supponiamo di provare…",
     "pt": "Suponhamos que tentássemos…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "I can't do X, but I can do Y",
@@ -316,7 +342,10 @@
     "fr": "Je ne peux pas faire X, mais je peux faire Y.",
     "it": "X non posso farlo, ma Y sì.",
     "pt": "X não posso fazer, mas Y posso."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "My constraint is…",
@@ -327,7 +356,10 @@
     "fr": "Ma contrainte est…",
     "it": "Il mio vincolo è…",
     "pt": "A minha limitação é…"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "We want the same thing here",
@@ -338,7 +370,10 @@
     "fr": "Nous voulons la même chose ici.",
     "it": "Vogliamo la stessa cosa.",
     "pt": "Queremos a mesma coisa aqui."
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Would it help if…",
@@ -349,7 +384,10 @@
     "fr": "Est-ce que ça aiderait si…",
     "it": "Aiuterebbe se…",
     "pt": "Ajudaria se…"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "I was thinking somewhere around…",
@@ -360,7 +398,10 @@
     "fr": "Je pensais à quelque chose autour de…",
     "it": "Pensavo a qualcosa intorno a…",
     "pt": "Estava a pensar em algo por volta de…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   }
  ],
  "mision": {

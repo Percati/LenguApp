@@ -56,11 +56,26 @@
   "Du solltest ist auf B2 noch akzeptabel, sollte aber nicht in jedem Satz wiederholt werden."
  ],
  "contraste": {
-  "es": "Im Spanischen ist deberías ähnlich direkt wie du solltest und sozial gut akzeptiert. Die Formel an deiner Stelle würde ich hat eine enge spanische Entsprechung (yo en tu lugar), sodass sich diese Struktur leicht überträgt.",
-  "it": "Dovresti entspricht du solltest, und se fossi in te entspricht an deiner Stelle würde ich. Beide Strukturen übertragen sich direkt.",
-  "fr": "Tu devrais entspricht du solltest, und à ta place entspricht genau an deiner Stelle. Beide Strukturen übertragen sich direkt.",
-  "pt": "Devias bzw. deverias entspricht du solltest, und no teu lugar oder se eu fosse você entspricht an deiner Stelle würde ich. Beide Strukturen übertragen sich direkt.",
-  "en": "You should entspricht du solltest. If I were you wird oft zu wenn ich du wäre; das ist möglich, natürlicher ist aber an deiner Stelle würde ich."
+  "es": {
+   "de": "Im Spanischen ist deberías ähnlich direkt wie du solltest und sozial gut akzeptiert. Die Formel an deiner Stelle würde ich hat eine enge spanische Entsprechung (yo en tu lugar), sodass sich diese Struktur leicht überträgt.",
+   "es": "En español, «deberías» es tan directo como «du solltest» y resulta socialmente natural. La fórmula «an deiner Stelle würde ich» tiene un equivalente cercano en «yo en tu lugar», por lo que se transfiere con facilidad."
+  },
+  "it": {
+   "de": "Dovresti entspricht du solltest, und se fossi in te entspricht an deiner Stelle würde ich. Beide Strukturen übertragen sich direkt.",
+   "it": "«Dovresti» corrisponde a «du solltest», e «se fossi in te» a «an deiner Stelle würde ich». Entrambe le strutture si trasferiscono direttamente."
+  },
+  "fr": {
+   "de": "Tu devrais entspricht du solltest, und à ta place entspricht genau an deiner Stelle. Beide Strukturen übertragen sich direkt.",
+   "fr": "«Tu devrais» correspond à «du solltest», et «à ta place» exactement à «an deiner Stelle». Les deux structures se transfèrent directement."
+  },
+  "pt": {
+   "de": "Devias bzw. deverias entspricht du solltest, und no teu lugar oder se eu fosse você entspricht an deiner Stelle würde ich. Beide Strukturen übertragen sich direkt.",
+   "pt": "«Devias/deverias» ou, no Brasil, «você deveria» corresponde a «du solltest», e «no teu lugar» ou «se eu fosse você» a «an deiner Stelle würde ich». As duas estruturas se transferem diretamente."
+  },
+  "en": {
+   "de": "You should entspricht du solltest. If I were you wird oft zu wenn ich du wäre; das ist möglich, natürlicher ist aber an deiner Stelle würde ich.",
+   "en": "«You should» corresponds to «du solltest». «If I were you» can be translated as «wenn ich du wäre»; that is possible, but «an deiner Stelle würde ich» is more natural."
+  }
  },
  "errores": [
   "Du solltest in jedem Satz wiederholen, was belehrend wirkt.",
@@ -228,7 +243,10 @@
     "fr": "À ta place, je…",
     "it": "Al tuo posto, io…",
     "pt": "No teu lugar, eu…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Du solltest…",
@@ -239,7 +257,10 @@
     "fr": "Tu devrais…",
     "it": "Dovresti…",
     "pt": "Devias…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Warum probierst du nicht…?",
@@ -250,7 +271,11 @@
     "fr": "Pourquoi tu n’essaies pas… ?",
     "it": "Perché non provi…?",
     "pt": "Porque não experimentas…?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Es wäre vielleicht besser, wenn…",
@@ -261,7 +286,10 @@
     "fr": "Ce serait peut-être mieux si…",
     "it": "Forse sarebbe meglio se…",
     "pt": "Talvez fosse melhor se…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Ich würde dir raten, zu…",
@@ -272,7 +300,10 @@
     "fr": "Je te conseillerais de…",
     "it": "Ti consiglierei di…",
     "pt": "Aconselhar-te-ia a…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Hast du schon mal überlegt, zu…?",
@@ -283,7 +314,11 @@
     "fr": "Tu as déjà pensé à… ?",
     "it": "Hai già pensato di…?",
     "pt": "Já pensaste em…?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Wenn ich du wäre, würde ich…",
@@ -294,7 +329,10 @@
     "fr": "Si j'étais toi, je…",
     "it": "Se fossi in te, …",
     "pt": "Se eu fosse tu, …"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Versuch es doch erst mal mit…",
@@ -305,7 +343,10 @@
     "fr": "Essaie d'abord avec…",
     "it": "Prova prima con…",
     "pt": "Tenta primeiro com…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Das würde ich lieber lassen.",
@@ -316,7 +357,10 @@
     "fr": "Cela, je le laisserais tomber.",
     "it": "Io lascerei perdere.",
     "pt": "Isso eu deixava."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "…, weil es dir Zeit spart.",
@@ -327,7 +371,11 @@
     "fr": "…, parce que cela te fait gagner du temps.",
     "it": "…, perché ti fa risparmiare tempo.",
     "pt": "…, porque te poupa tempo."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Frag am besten jemanden, der sich auskennt.",
@@ -338,7 +386,10 @@
     "fr": "Le mieux, c'est de demander à quelqu'un qui s'y connaît.",
     "it": "Meglio chiedere a qualcuno che se ne intende.",
     "pt": "É melhor perguntares a alguém que perceba."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   },
   {
    "expresion": "Musst du natürlich selbst wissen.",
@@ -349,7 +400,10 @@
     "fr": "C'est à toi de voir, bien sûr.",
     "it": "Poi decidi tu, ovviamente.",
     "pt": "Tu é que sabes, claro."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   }
  ],
  "mision": {

@@ -56,11 +56,26 @@
   "You should is fine at B2 but shouldn't be repeated in every sentence."
  ],
  "contraste": {
-  "es": "Deberías corresponds to you should, and yo en tu lugar to if I were you, so the structure transfers easily.",
-  "de": "Du solltest corresponds to you should, and an deiner Stelle to if I were you. Du musst as advice becomes you must, which sounds much stronger in English.",
-  "it": "Dovresti corresponds to you should, and se fossi in te to if I were you, with the same unreal form. Devi as advice becomes you must, which sounds much stronger in English.",
-  "fr": "Tu devrais corresponds to you should, and à ta place to if I were you. Tu dois as advice becomes you must, which sounds much stronger in English.",
-  "pt": "Devias or deverias corresponds to you should, and se eu fosse a ti or se eu fosse você to if I were you, with the same unreal form. The structure transfers easily."
+  "es": {
+   "en": "Deberías corresponds to you should, and yo en tu lugar to if I were you, so the structure transfers easily.",
+   "es": "«Deberías» corresponde a «you should» y «yo en tu lugar» a «if I were you», por lo que la estructura se transfiere fácilmente."
+  },
+  "de": {
+   "en": "Du solltest corresponds to you should, and an deiner Stelle to if I were you. Du musst as advice becomes you must, which sounds much stronger in English.",
+   "de": "«Du solltest» entspricht «you should» und «an deiner Stelle» entspricht «if I were you». «Du musst» wird als Ratschlag zu «you must», was im Englischen deutlich stärker klingt."
+  },
+  "it": {
+   "en": "Dovresti corresponds to you should, and se fossi in te to if I were you, with the same unreal form. Devi as advice becomes you must, which sounds much stronger in English.",
+   "it": "«Dovresti» corrisponde a «you should» e «se fossi in te» a «if I were you», con la stessa forma irreale. «Devi» come consiglio diventa «you must», molto più forte in inglese."
+  },
+  "fr": {
+   "en": "Tu devrais corresponds to you should, and à ta place to if I were you. Tu dois as advice becomes you must, which sounds much stronger in English.",
+   "fr": "«Tu devrais» correspond à «you should», et «à ta place» à «if I were you». «Tu dois» comme conseil devient «you must», ce qui sonne beaucoup plus fort en anglais."
+  },
+  "pt": {
+   "en": "Devias or deverias corresponds to you should, and se eu fosse a ti or se eu fosse você to if I were you, with the same unreal form. The structure transfers easily.",
+   "pt": "«Devias» ou «você deveria» corresponde a «you should», e «se eu fosse a ti» ou «se eu fosse você» a «if I were you», com a mesma forma irreal. A estrutura se transfere facilmente."
+  }
  },
  "errores": [
   "Repeating you should in every sentence, which sounds preachy.",
@@ -228,7 +243,10 @@
     "fr": "À ta place, je…",
     "it": "Al tuo posto, io…",
     "pt": "No teu lugar, eu…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "You should…",
@@ -239,7 +257,10 @@
     "fr": "Tu devrais…",
     "it": "Dovresti…",
     "pt": "Devias…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Why don't you…?",
@@ -250,7 +271,10 @@
     "fr": "Pourquoi tu ne… pas ?",
     "it": "Perché non…?",
     "pt": "Porque não…?"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "It might be a good idea to…",
@@ -261,7 +285,11 @@
     "fr": "Ce serait peut-être une bonne idée de…",
     "it": "Potrebbe essere una buona idea…",
     "pt": "Talvez fosse uma boa ideia…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "I'd suggest…",
@@ -272,7 +300,10 @@
     "fr": "Je suggérerais…",
     "it": "Suggerirei…",
     "pt": "Eu sugeriria…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Have you thought about…?",
@@ -283,7 +314,10 @@
     "fr": "Tu as pensé à… ?",
     "it": "Hai pensato a…?",
     "pt": "Já pensaste em…?"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Try starting with…",
@@ -294,7 +328,12 @@
     "fr": "Essaie de commencer par…",
     "it": "Prova a cominciare con…",
     "pt": "Tenta começar por…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer",
+    "Organizar el discurso",
+    "Describir un proceso o camino"
+   ]
   },
   {
    "expresion": "I'd avoid … if I were you.",
@@ -305,7 +344,10 @@
     "fr": "J'éviterais … à ta place.",
     "it": "Al posto tuo eviterei…",
     "pt": "Eu evitaria … se fosse a ti."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "…, because it'll save you time later.",
@@ -316,7 +358,11 @@
     "fr": "…, parce que cela te fera gagner du temps ensuite.",
     "it": "…, perché dopo ti farà risparmiare tempo.",
     "pt": "…, porque depois te poupa tempo."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Your best bet is probably to…",
@@ -327,7 +373,10 @@
     "fr": "Le mieux serait sans doute de…",
     "it": "La cosa migliore è probabilmente…",
     "pt": "O melhor será provavelmente…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "You might want to ask someone who's done it.",
@@ -338,7 +387,10 @@
     "fr": "Tu pourrais demander à quelqu'un qui l'a déjà fait.",
     "it": "Potresti chiedere a chi l'ha già fatto.",
     "pt": "Podias perguntar a alguém que já o fez."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Up to you, of course.",
@@ -349,7 +401,10 @@
     "fr": "C'est à toi de voir, bien sûr.",
     "it": "Poi decidi tu, ovviamente.",
     "pt": "Tu é que sabes, claro."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   }
  ],
  "mision": {

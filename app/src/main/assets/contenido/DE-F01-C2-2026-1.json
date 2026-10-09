@@ -56,11 +56,26 @@
   "Die Wahl der Formel signalisiert dem Zuhörer, wie viel Widerspruch angemessen wäre."
  ],
  "contraste": {
-  "es": "Das Spanische hat für die Abstufung der Gewissheit genaue Entsprechungen: con toda probabilidad – aller Wahrscheinlichkeit nach, en gran medida – weitgehend. Die Skala lässt sich deshalb Stufe für Stufe übertragen.",
-  "it": "Das Italienische hat für die Abstufung der Gewissheit genaue Entsprechungen: con ogni probabilità – aller Wahrscheinlichkeit nach, sono in larga misura convinto – ich bin weitgehend überzeugt. Die Skala lässt sich deshalb Stufe für Stufe übertragen.",
-  "fr": "Das Französische hat für die Abstufung der Gewissheit genaue Entsprechungen: selon toute vraisemblance – aller Wahrscheinlichkeit nach, je suis à peu près certain – ich bin mir weitgehend sicher. Die Skala lässt sich Stufe für Stufe übertragen.",
-  "pt": "Das Portugiesische hat für die Abstufung genaue Entsprechungen: com toda a probabilidade – aller Wahrscheinlichkeit nach, em grande medida – weitgehend. Die Skala lässt sich Stufe für Stufe übertragen.",
-  "en": "Das Englische hat eine sehr fein abgestufte Skala der Gewissheit (in all likelihood – aller Wahrscheinlichkeit nach, I'm fairly confident – ich bin mir ziemlich sicher), Englischsprachige können sie also Stufe für Stufe übertragen."
+  "es": {
+   "de": "Das Spanische hat für die Abstufung der Gewissheit genaue Entsprechungen: con toda probabilidad – aller Wahrscheinlichkeit nach, en gran medida – weitgehend. Die Skala lässt sich deshalb Stufe für Stufe übertragen.",
+   "es": "El español dispone de equivalentes muy precisos para graduar el grado de certeza: «con toda probabilidad» – aller Wahrscheinlichkeit nach, «en gran medida» – weitgehend. Por eso, la escala puede trasladarse nivel por nivel."
+  },
+  "it": {
+   "de": "Das Italienische hat für die Abstufung der Gewissheit genaue Entsprechungen: con ogni probabilità – aller Wahrscheinlichkeit nach, sono in larga misura convinto – ich bin weitgehend überzeugt. Die Skala lässt sich deshalb Stufe für Stufe übertragen.",
+   "it": "L'italiano dispone di equivalenti precisi per graduare la certezza: «con ogni probabilità» – «aller Wahrscheinlichkeit nach», «sono in larga misura convinto» – «ich bin weitgehend überzeugt». La scala si può quindi trasferire livello per livello."
+  },
+  "fr": {
+   "de": "Das Französische hat für die Abstufung der Gewissheit genaue Entsprechungen: selon toute vraisemblance – aller Wahrscheinlichkeit nach, je suis à peu près certain – ich bin mir weitgehend sicher. Die Skala lässt sich Stufe für Stufe übertragen.",
+   "fr": "Le français a des équivalents très précis pour graduer la certitude : «selon toute vraisemblance» – «aller Wahrscheinlichkeit nach», «je suis à peu près certain» – «ich bin mir weitgehend sicher». La gradation peut donc se transférer étape par étape."
+  },
+  "pt": {
+   "de": "Das Portugiesische hat für die Abstufung genaue Entsprechungen: com toda a probabilidade – aller Wahrscheinlichkeit nach, em grande medida – weitgehend. Die Skala lässt sich Stufe für Stufe übertragen.",
+   "pt": "O português tem equivalentes precisos para graduar o grau de certeza: «com toda a probabilidade» – aller Wahrscheinlichkeit nach, «em grande medida» – weitgehend. Por isso, a escala pode ser transferida etapa por etapa."
+  },
+  "en": {
+   "de": "Das Englische hat eine sehr fein abgestufte Skala der Gewissheit (in all likelihood – aller Wahrscheinlichkeit nach, I'm fairly confident – ich bin mir ziemlich sicher), Englischsprachige können sie also Stufe für Stufe übertragen.",
+   "en": "English has a finely graded scale of certainty («in all likelihood» – «aller Wahrscheinlichkeit nach», «I'm fairly confident» – «ich bin mir ziemlich sicher»), so English speakers can transfer it level by level."
+  }
  },
  "errores": [
   "Eine Meinung bei einer echten strittigen Frage mit voller Überzeugung äussern, was naiv statt autoritativ wirkt.",
@@ -228,7 +243,10 @@
     "fr": "Je suis fermement convaincu(e) que…",
     "it": "Sono fermamente convinto/a che…",
     "pt": "Estou firmemente convencido/a de que…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Wenn ich mich festlegen müsste, würde ich sagen…",
@@ -239,7 +257,10 @@
     "fr": "Si je devais me prononcer, je dirais…",
     "it": "Se dovessi sbilanciarmi, direi…",
     "pt": "Se tivesse de me pronunciar, diria…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "…, ohne mich völlig darauf festzulegen.",
@@ -250,7 +271,10 @@
     "fr": "…, sans m’engager totalement là-dessus",
     "it": "…, senza impegnarmi del tutto su questo",
     "pt": "…, sem me comprometer totalmente com isso"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Diese Position vertrete ich mit Vorbehalt.",
@@ -261,7 +285,11 @@
     "fr": "Je défends cette position avec des réserves.",
     "it": "Sostengo questa posizione con riserva.",
     "pt": "Defendo esta posição com reservas."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Ich liesse mich vom Gegenteil überzeugen.",
@@ -272,7 +300,10 @@
     "fr": "Je pourrais me laisser convaincre du contraire.",
     "it": "Potrei lasciarmi convincere del contrario.",
     "pt": "Eu poderia deixar-me convencer do contrário."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Es ist wirklich schwer zu sagen, aber…",
@@ -283,7 +314,10 @@
     "fr": "C’est vraiment difficile à dire, mais…",
     "it": "È davvero difficile dirlo, ma…",
     "pt": "É realmente difícil dizer, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Das halte ich für gesichert.",
@@ -294,7 +328,10 @@
     "fr": "Cela, je le tiens pour établi.",
     "it": "Questo lo ritengo assodato.",
     "pt": "Isso considero certo."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Meine Einschätzung beruht allein auf…",
@@ -305,7 +342,10 @@
     "fr": "Mon appréciation repose uniquement sur…",
     "it": "La mia valutazione si basa solo su…",
     "pt": "A minha avaliação baseia-se apenas em…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "Je länger ich darüber nachdenke, desto weniger sicher bin ich mir.",
@@ -316,7 +356,10 @@
     "fr": "Plus j'y réfléchis, moins j'en suis sûr.",
     "it": "Più ci penso, meno ne sono sicuro.",
     "pt": "Quanto mais penso nisso, menos certeza tenho."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Das ist mein Eindruck, nicht mehr.",
@@ -327,7 +370,10 @@
     "fr": "C'est mon impression, rien de plus.",
     "it": "È la mia impressione, nulla di più.",
     "pt": "É a minha impressão, nada mais."
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Da müsste ich mich erst einlesen, bevor ich etwas behaupte.",
@@ -338,7 +384,10 @@
     "fr": "Il faudrait que je me documente avant d'affirmer quoi que ce soit.",
     "it": "Dovrei prima documentarmi, prima di affermare qualcosa.",
     "pt": "Aí teria de me informar antes de afirmar algo."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Sollte sich das bestätigen, revidiere ich meine Position.",
@@ -349,7 +398,11 @@
     "fr": "Si cela se confirme, je révise ma position.",
     "it": "Se ciò si confermasse, rivedo la mia posizione.",
     "pt": "Se isso se confirmar, revejo a minha posição."
-   }
+   },
+   "categoriasUso": [
+    "Opinar",
+    "Irrealidad y condicionalidad"
+   ]
   }
  ],
  "mision": {

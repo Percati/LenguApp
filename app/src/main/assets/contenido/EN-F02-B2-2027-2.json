@@ -60,11 +60,26 @@
   "Agreeing with emphasis first shows you're listening, even if you plan to disagree afterwards."
  ],
  "contraste": {
-  "es": "Tienes razón corresponds to you're right and sí, pero to yes, but, so the basic formulas transfer. No estoy de acuerdo becomes I don't agree, which is correct but sounds firmer in English than I'm not sure I agree.",
-  "de": "Du hast recht is often calqued as you have right; English uses be: you're right. Ja, aber corresponds directly to yes, but.",
-  "it": "Sono d'accordo is often calqued as I am agree; English agree is a verb: I agree. Hai ragione similarly leads to you have reason instead of you're right.",
-  "fr": "Je suis d'accord is often calqued as I am agree; English agree is a verb: I agree. Tu as raison similarly leads to you have reason instead of you're right.",
-  "pt": "Concordo corresponds exactly to I agree, a single verb in both languages. Tens razão, however, leads to you have reason instead of you're right."
+  "es": {
+   "en": "Tienes razón corresponds to you're right and sí, pero to yes, but, so the basic formulas transfer. No estoy de acuerdo becomes I don't agree, which is correct but sounds firmer in English than I'm not sure I agree.",
+   "es": "«Tienes razón» corresponde a «you're right» y «sí, pero» a «yes, but», por lo que las fórmulas básicas se transfieren. «No estoy de acuerdo» se convierte en «I don't agree», que es correcto pero suena más firme en inglés que «I'm not sure I agree»."
+  },
+  "de": {
+   "en": "Du hast recht is often calqued as you have right; English uses be: you're right. Ja, aber corresponds directly to yes, but.",
+   "de": "«Du hast recht» wird oft wörtlich als «you have right» übertragen; Englisch verwendet «be»: «you're right». «Ja, aber» entspricht direkt «yes, but»."
+  },
+  "it": {
+   "en": "Sono d'accordo is often calqued as I am agree; English agree is a verb: I agree. Hai ragione similarly leads to you have reason instead of you're right.",
+   "it": "«Sono d'accordo» viene spesso calcato come «I am agree»; in inglese «agree» è un verbo: «I agree». «Hai ragione» porta allo stesso modo a «you have reason» invece di «you're right»."
+  },
+  "fr": {
+   "en": "Je suis d'accord is often calqued as I am agree; English agree is a verb: I agree. Tu as raison similarly leads to you have reason instead of you're right.",
+   "fr": "«Je suis d'accord» est souvent calqué en «I am agree» ; en anglais, «agree» est un verbe : «I agree». «Tu as raison» conduit de même à «you have reason» au lieu de «you're right»."
+  },
+  "pt": {
+   "en": "Concordo corresponds exactly to I agree, a single verb in both languages. Tens razão, however, leads to you have reason instead of you're right.",
+   "pt": "«Concordo» corresponde exatamente a «I agree», um único verbo nas duas línguas. Já «tens razão» ou «você tem razão» pode levar a «you have reason» em vez de «you're right»."
+  }
  },
  "errores": [
   "Disagreeing directly without acknowledging anything first.",
@@ -232,7 +247,10 @@
     "fr": "Là-dessus, je suis d’accord avec toi.",
     "it": "Su questo sono d’accordo con te.",
     "pt": "Nisso concordo contigo."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Yes, but…",
@@ -243,7 +261,10 @@
     "fr": "Oui, mais…",
     "it": "Sì, ma…",
     "pt": "Sim, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "I see it a bit differently.",
@@ -254,7 +275,11 @@
     "fr": "Je vois les choses un peu différemment.",
     "it": "Io la vedo un po’ diversamente.",
     "pt": "Eu vejo isso de forma um pouco diferente."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I don't really agree with that.",
@@ -265,7 +290,11 @@
     "fr": "Je ne suis pas vraiment d’accord avec ça.",
     "it": "Non sono molto d’accordo su questo.",
     "pt": "Não concordo muito com isso."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "That's a fair point, but…",
@@ -276,7 +305,10 @@
     "fr": "C’est un argument valable, mais…",
     "it": "È un’osservazione valida, ma…",
     "pt": "É um ponto válido, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Exactly, that's how I see it too.",
@@ -287,7 +319,10 @@
     "fr": "Exactement, c’est aussi comme ça que je le vois.",
     "it": "Esatto, anch’io la vedo così.",
     "pt": "Exatamente, eu também vejo assim."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "What makes you say that?",
@@ -298,7 +333,10 @@
     "fr": "Qu'est-ce qui te fait dire cela ?",
     "it": "Che cosa te lo fa dire?",
     "pt": "O que te leva a dizer isso?"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I'd agree with the second part, not the first.",
@@ -309,7 +347,11 @@
     "fr": "Je suis d'accord avec la seconde partie, pas la première.",
     "it": "Sono d'accordo sulla seconda parte, non sulla prima.",
     "pt": "Concordo com a segunda parte, não com a primeira."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "My experience has been different.",
@@ -320,7 +362,11 @@
     "fr": "J'ai vécu les choses autrement.",
     "it": "La mia esperienza è stata diversa.",
     "pt": "A minha experiência foi outra."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Ejemplificar"
+   ]
   },
   {
    "expresion": "I really don't see it that way.",
@@ -331,7 +377,11 @@
     "fr": "Je ne vois vraiment pas les choses ainsi.",
     "it": "Davvero non la vedo così.",
     "pt": "Realmente não vejo isso assim."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Can we agree on that much?",
@@ -342,7 +392,10 @@
     "fr": "Pouvons-nous au moins nous entendre là-dessus ?",
     "it": "Possiamo almeno concordare su questo?",
     "pt": "Podemos pelo menos concordar nisso?"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I'd put it slightly differently.",
@@ -353,7 +406,10 @@
     "fr": "Je le formulerais un peu autrement.",
     "it": "Lo direi in modo un po' diverso.",
     "pt": "Eu diria isso de outra forma."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   }
  ],
  "mision": {

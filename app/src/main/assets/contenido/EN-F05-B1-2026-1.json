@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Podríamos corresponds to we could, and ¿por qué no…? to why don't we…?, so suggestions transfer directly.",
-  "de": "Wollen wir…? corresponds to shall we…?, lass uns to let's, and wir könnten to we could. Suggestions therefore transfer almost word for word.",
-  "it": "Perché non…? corresponds to why don't we…?, and andiamo… to let's go…. Suggestions therefore transfer directly.",
-  "fr": "On pourrait corresponds to we could, and et si on…? to what if we…? or how about…?. Suggestions therefore transfer directly.",
-  "pt": "Que tal…? corresponds to how about…?, and vamos… to let's…. Suggestions therefore transfer directly."
+  "es": {
+   "en": "Podríamos corresponds to we could, and ¿por qué no…? to why don't we…?, so suggestions transfer directly.",
+   "es": "«Podríamos» corresponde a «we could», y «¿por qué no…?» a «why don't we…?», por lo que las sugerencias se transfieren directamente."
+  },
+  "de": {
+   "en": "Wollen wir…? corresponds to shall we…?, lass uns to let's, and wir könnten to we could. Suggestions therefore transfer almost word for word.",
+   "de": "«Wollen wir…?» entspricht «shall we…?», «lass uns» entspricht «let's» und «wir könnten» entspricht «we could». Vorschläge lassen sich daher fast Wort für Wort übertragen."
+  },
+  "it": {
+   "en": "Perché non…? corresponds to why don't we…?, and andiamo… to let's go…. Suggestions therefore transfer directly.",
+   "it": "«Perché non…?» corrisponde a «why don't we…?», e «andiamo…» a «let's go…». I suggerimenti si trasferiscono quindi direttamente."
+  },
+  "fr": {
+   "en": "On pourrait corresponds to we could, and et si on…? to what if we…? or how about…?. Suggestions therefore transfer directly.",
+   "fr": "«On pourrait» correspond à «we could», et «et si on… ?» à «what if we…?» ou «how about…?». Les suggestions se transfèrent donc directement."
+  },
+  "pt": {
+   "en": "Que tal…? corresponds to how about…?, and vamos… to let's…. Suggestions therefore transfer directly.",
+   "pt": "«Que tal…?» corresponde a «how about…?», e «vamos…» a «let's…». As sugestões, portanto, se transferem diretamente."
+  }
  },
  "errores": [
   {
@@ -383,7 +398,10 @@
     "fr": "Nous pourrions…",
     "it": "Potremmo…",
     "pt": "Poderíamos…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "How about…?",
@@ -401,7 +419,10 @@
     "fr": "Et si… ?",
     "it": "Che ne dici di…?",
     "pt": "Que tal…?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "That sounds good.",
@@ -419,7 +440,10 @@
     "fr": "Ça a l’air bien.",
     "it": "Sembra una buona idea.",
     "pt": "Parece bem."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "…instead?",
@@ -437,7 +461,10 @@
     "fr": "…à la place ?",
     "it": "…invece?",
     "pt": "…em vez disso?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Why don't we…?",
@@ -455,7 +482,10 @@
     "fr": "Pourquoi ne pas… ?",
     "it": "Perché non…?",
     "pt": "Porque não…?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Good idea!",
@@ -473,7 +503,10 @@
     "fr": "Bonne idée !",
     "it": "Buona idea!",
     "pt": "Boa ideia!"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Do you fancy…?",
@@ -491,7 +524,10 @@
     "fr": "Ça te dit de… ?",
     "it": "Ti va di…?",
     "pt": "Apetece-te…?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Does that work for you?",
@@ -509,7 +545,10 @@
     "fr": "Cela te convient ?",
     "it": "Ti va bene?",
     "pt": "Dá-te jeito?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "I'd rather not, I've got plans.",
@@ -527,7 +566,11 @@
     "fr": "Plutôt pas, j'ai déjà quelque chose.",
     "it": "Preferirei di no, ho già un impegno.",
     "pt": "Prefiro não, já tenho planos."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "What if we… instead?",
@@ -545,7 +588,11 @@
     "fr": "Et si nous… à la place ?",
     "it": "E se invece…?",
     "pt": "E se em vez disso…?"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Let's do that, then.",
@@ -563,7 +610,10 @@
     "fr": "Alors faisons ça.",
     "it": "Allora facciamo così.",
     "pt": "Então fazemos isso."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "I'll let you know later.",
@@ -581,7 +631,10 @@
     "fr": "Je te fais signe plus tard.",
     "it": "Ti faccio sapere dopo.",
     "pt": "Depois digo-te."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   }
  ],
  "mision": {
@@ -594,8 +647,22 @@
    "pt": "Seu aparelho continua falhando. Sugira a um colega de casa o que vocês podem fazer."
   },
   "requisitos": [
-   "three suggestions with different forms",
-   "one alternative with *…instead?*",
+   {
+    "en": "three suggestions with different forms",
+    "de": "drei Vorschläge mit unterschiedlichen Formen",
+    "es": "tres sugerencias con formas diferentes",
+    "fr": "trois suggestions avec des formes différentes",
+    "it": "tre proposte con forme diverse",
+    "pt": "três sugestões com formas diferentes"
+   },
+   {
+    "en": "one alternative with *…instead?*",
+    "de": "eine Alternative mit *…instead?*",
+    "es": "una alternativa con *…instead?*",
+    "fr": "une alternative avec *…instead?*",
+    "it": "un'alternativa con *…instead?*",
+    "pt": "uma alternativa com *…instead?*"
+   },
    {
     "en": "use *a fault*, *to reset* and *to be worth upgrading*",
     "de": "*a fault*, *to reset* und *to be worth upgrading* verwenden",
@@ -610,7 +677,14 @@
   {
    "dia": "lun",
    "minutos": 5,
-   "texto": "Write three suggestions: *How about…?*"
+   "texto": {
+    "en": "Write three suggestions: *How about…?*",
+    "de": "Schreibe drei Vorschläge: *How about…?*",
+    "es": "Escribe tres sugerencias: *How about…?*",
+    "fr": "Écris trois suggestions : *How about…?*",
+    "it": "Scrivi tre proposte: *How about…?*",
+    "pt": "Escreva três sugestões: *How about…?*"
+   }
   },
   {
    "dia": "mie",

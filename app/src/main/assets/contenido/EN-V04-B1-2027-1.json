@@ -201,11 +201,26 @@
   }
  ],
  "contraste": {
-  "es": "Tomar covers several collocations (tomar una decisión, tomar una ducha), which English splits: make a decision, have or take a shower.",
-  "de": "German often uses a single verb where English needs a collocation (duschen – have a shower, frühstücken – have breakfast), and eine Entscheidung treffen gives no clue that English uses make.",
-  "it": "Italian fare leads to make a shower (fare la doccia) and make breakfast (fare colazione), where English uses have.",
-  "fr": "Prendre une douche corresponds to take a shower, but prendre le petit-déjeuner leads to take breakfast, where English uses have.",
-  "pt": "Tomar banho corresponds to take a shower, but tomar o pequeno-almoço leads to take breakfast, where English uses have."
+  "es": {
+   "en": "Tomar covers several collocations (tomar una decisión, tomar una ducha), which English splits: make a decision, have or take a shower.",
+   "es": "«Tomar» cubre varias colocaciones («tomar una decisión», «tomar una ducha») que el inglés reparte entre diferentes verbos: «make a decision», «have» o «take a shower»."
+  },
+  "de": {
+   "en": "German often uses a single verb where English needs a collocation (duschen – have a shower, frühstücken – have breakfast), and eine Entscheidung treffen gives no clue that English uses make.",
+   "de": "Im Deutschen steht oft ein einzelnes Verb, wo Englisch eine Kollokation braucht («duschen» – «have a shower», «frühstücken» – «have breakfast»), und «eine Entscheidung treffen» verrät nicht, dass Englisch «make» verwendet."
+  },
+  "it": {
+   "en": "Italian fare leads to make a shower (fare la doccia) and make breakfast (fare colazione), where English uses have.",
+   "it": "«Fare» porta a «make a shower» da «fare la doccia» e «make breakfast» da «fare colazione», mentre l'inglese usa «have»."
+  },
+  "fr": {
+   "en": "Prendre une douche corresponds to take a shower, but prendre le petit-déjeuner leads to take breakfast, where English uses have.",
+   "fr": "«Prendre une douche» correspond à «take a shower», mais «prendre le petit-déjeuner» conduit à «take breakfast», là où l'anglais utilise «have»."
+  },
+  "pt": {
+   "en": "Tomar banho corresponds to take a shower, but tomar o pequeno-almoço leads to take breakfast, where English uses have.",
+   "pt": "«Tomar banho» corresponde a «take a shower», mas «tomar o pequeno-almoço» ou «tomar café da manhã» pode levar a «take breakfast», enquanto o inglês usa «have»."
+  }
  },
  "errores": [
   {
@@ -423,7 +438,10 @@
     "fr": "prendre le petit-déjeuner/déjeuner/dîner",
     "it": "fare colazione/pranzare/cenare",
     "pt": "tomar o pequeno-almoço/almoçar/jantar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to make a decision",
@@ -441,7 +459,10 @@
     "fr": "prendre une décision",
     "it": "prendere una decisione",
     "pt": "tomar uma decisão"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to make a mistake",
@@ -459,7 +480,10 @@
     "fr": "faire une erreur",
     "it": "commettere un errore",
     "pt": "cometer um erro"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to take/have a shower",
@@ -477,7 +501,10 @@
     "fr": "prendre une douche",
     "it": "fare una doccia",
     "pt": "tomar banho"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to have a good time",
@@ -495,7 +522,10 @@
     "fr": "passer un bon moment",
     "it": "divertirsi",
     "pt": "divertir-se"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to take a break",
@@ -513,7 +543,10 @@
     "fr": "faire une pause",
     "it": "fare una pausa",
     "pt": "fazer uma pausa"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to do the shopping",
@@ -531,7 +564,10 @@
     "fr": "faire les courses",
     "it": "fare la spesa",
     "pt": "fazer as compras"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to catch the bus",
@@ -549,7 +585,10 @@
     "fr": "prendre le bus",
     "it": "prendere l'autobus",
     "pt": "apanhar o autocarro"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to pay attention",
@@ -567,7 +606,10 @@
     "fr": "faire attention",
     "it": "prestare attenzione",
     "pt": "prestar atenção"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to keep a promise",
@@ -585,7 +627,10 @@
     "fr": "tenir une promesse",
     "it": "mantenere una promessa",
     "pt": "cumprir uma promessa"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to save time",
@@ -603,7 +648,10 @@
     "fr": "gagner du temps",
     "it": "risparmiare tempo",
     "pt": "poupar tempo"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Is it make or do?",
@@ -621,7 +669,10 @@
     "fr": "Dit-on faire ou réaliser ?",
     "it": "Si dice fare o compiere?",
     "pt": "É fazer ou realizar?"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   }
  ],
  "mision": {

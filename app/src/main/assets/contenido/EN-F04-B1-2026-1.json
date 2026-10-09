@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Primero, luego and después correspond to first, then and after that, and the indefinido maps onto the English past simple, so storytelling transfers well.",
-  "de": "First, then and after that correspond to zuerst, dann and danach. German tells spoken stories in the Perfekt, however, which leads to Yesterday I have seen… instead of Yesterday I saw….",
-  "it": "Prima, poi and dopo correspond to first, then and after that. Italian tells stories in the passato prossimo, which leads to Yesterday I have seen… instead of Yesterday I saw….",
-  "fr": "D'abord, puis and ensuite correspond to first, then and after that. French tells stories in the passé composé, which leads to Yesterday I have seen… instead of Yesterday I saw….",
-  "pt": "Primeiro, depois and a seguir correspond to first, then and after that, and the Portuguese simple past (vi, fui) maps onto the English past simple. Storytelling therefore transfers well."
+  "es": {
+   "en": "Primero, luego and después correspond to first, then and after that, and the indefinido maps onto the English past simple, so storytelling transfers well.",
+   "es": "«Primero», «luego» y «después» corresponden a «first», «then» y «after that», y el indefinido se corresponde con el past simple inglés, por lo que narrar se transfiere bien."
+  },
+  "de": {
+   "en": "First, then and after that correspond to zuerst, dann and danach. German tells spoken stories in the Perfekt, however, which leads to Yesterday I have seen… instead of Yesterday I saw….",
+   "de": "«First», «then» und «after that» entsprechen «zuerst», «dann» und «danach». Im gesprochenen Deutsch erzählt man Geschichten jedoch meist im Perfekt, was zu «Yesterday I have seen…» statt «Yesterday I saw…» führt."
+  },
+  "it": {
+   "en": "Prima, poi and dopo correspond to first, then and after that. Italian tells stories in the passato prossimo, which leads to Yesterday I have seen… instead of Yesterday I saw….",
+   "it": "«Prima», «poi» e «dopo» corrispondono a «first», «then» e «after that». L'italiano racconta le storie al passato prossimo, il che porta a «Yesterday I have seen…» invece di «Yesterday I saw…»."
+  },
+  "fr": {
+   "en": "D'abord, puis and ensuite correspond to first, then and after that. French tells stories in the passé composé, which leads to Yesterday I have seen… instead of Yesterday I saw….",
+   "fr": "«D'abord», «puis» et «ensuite» correspondent à «first», «then» et «after that». Le français raconte les histoires au passé composé, ce qui conduit à «Yesterday I have seen…» au lieu de «Yesterday I saw…»."
+  },
+  "pt": {
+   "en": "Primeiro, depois and a seguir correspond to first, then and after that, and the Portuguese simple past (vi, fui) maps onto the English past simple. Storytelling therefore transfers well.",
+   "pt": "«Primeiro», «depois» e «a seguir» correspondem a «first», «then» e «after that», e o passado simples português («vi», «fui») corresponde ao past simple inglês. A narração, portanto, se transfere bem."
+  }
  },
  "errores": [
   {
@@ -383,7 +398,10 @@
     "fr": "L’année dernière…",
     "it": "L’anno scorso…",
     "pt": "No ano passado…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "First…, then…",
@@ -401,7 +419,10 @@
     "fr": "D’abord…, puis…",
     "it": "Prima…, poi…",
     "pt": "Primeiro…, depois…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "After that,…",
@@ -419,7 +440,10 @@
     "fr": "Après cela,…",
     "it": "Dopo…",
     "pt": "Depois…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "In the end,…",
@@ -437,7 +461,10 @@
     "fr": "À la fin…",
     "it": "Alla fine…",
     "pt": "No fim…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "It was a great day.",
@@ -455,7 +482,10 @@
     "fr": "C’était une super journée.",
     "it": "È stata una giornata fantastica.",
     "pt": "Foi um dia ótimo."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "I really enjoyed it.",
@@ -473,7 +503,10 @@
     "fr": "J’ai vraiment apprécié.",
     "it": "Mi è piaciuto molto.",
     "pt": "Gostei muito."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "One day,…",
@@ -491,7 +524,10 @@
     "fr": "Un jour,…",
     "it": "Un giorno,…",
     "pt": "Um dia,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Suddenly,…",
@@ -509,7 +545,10 @@
     "fr": "Soudain,…",
     "it": "All'improvviso,…",
     "pt": "De repente,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Luckily,…",
@@ -527,7 +566,10 @@
     "fr": "Heureusement,…",
     "it": "Per fortuna,…",
     "pt": "Felizmente,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "I'll never forget it.",
@@ -545,7 +587,11 @@
     "fr": "Je ne l'oublierai jamais.",
     "it": "Non lo dimenticherò mai.",
     "pt": "Nunca me vou esquecer disso."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "I've done it differently since then.",
@@ -563,7 +609,11 @@
     "fr": "Depuis, je fais autrement.",
     "it": "Da allora lo faccio diversamente.",
     "pt": "Desde então faço de outra maneira."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Guess what happened next.",
@@ -581,7 +631,10 @@
     "fr": "Devine ce qui s'est passé ensuite.",
     "it": "Indovina cos'è successo dopo.",
     "pt": "Adivinha o que aconteceu depois."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {
@@ -594,7 +647,14 @@
    "pt": "Conte sobre uma vez em que você finalmente foi ao médico."
   },
   "requisitos": [
-   "six past simple sentences",
+   {
+    "en": "six past simple sentences",
+    "de": "sechs Sätze im past simple",
+    "es": "seis oraciones en past simple",
+    "fr": "six phrases au past simple",
+    "it": "sei frasi al past simple",
+    "pt": "seis frases no past simple"
+   },
    {
     "en": "*first*, *then*, *after that*",
     "de": "*first*, *then*, *after that*",

@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "El texto trata sobre… corresponds to the text is about…, so the basic structure transfers directly.",
-  "de": "Der Text handelt von… corresponds to the text is about…; the calque the text handles of… is a typical error.",
-  "it": "Il testo parla di… is often calqued as the text speaks of…; the natural English form is the text is about….",
-  "fr": "Le texte parle de… is often calqued as the text speaks about…; the natural English form is the text is about….",
-  "pt": "O texto fala de… is often calqued as the text speaks about…; the natural English form is the text is about…."
+  "es": {
+   "en": "El texto trata sobre… corresponds to the text is about…, so the basic structure transfers directly.",
+   "es": "«El texto trata sobre…» corresponde a «the text is about…», por lo que la estructura básica se transfiere directamente."
+  },
+  "de": {
+   "en": "Der Text handelt von… corresponds to the text is about…; the calque the text handles of… is a typical error.",
+   "de": "«Der Text handelt von…» entspricht «the text is about…». Die wörtliche Übertragung «the text handles of…» ist ein typischer Fehler."
+  },
+  "it": {
+   "en": "Il testo parla di… is often calqued as the text speaks of…; the natural English form is the text is about….",
+   "it": "«Il testo parla di…» viene spesso calcato come «the text speaks of…»; la forma naturale è «the text is about…»."
+  },
+  "fr": {
+   "en": "Le texte parle de… is often calqued as the text speaks about…; the natural English form is the text is about….",
+   "fr": "«Le texte parle de…» est souvent calqué en «the text speaks about…» ; la formulation naturelle est «the text is about…»."
+  },
+  "pt": {
+   "en": "O texto fala de… is often calqued as the text speaks about…; the natural English form is the text is about….",
+   "pt": "«O texto fala de…» costuma ser calcado como «the text speaks about…»; a forma natural em inglês é «the text is about…»."
+  }
  },
  "errores": [
   {
@@ -383,7 +398,10 @@
     "fr": "Il s’agit principalement de…",
     "it": "Si tratta principalmente di…",
     "pt": "Trata-se principalmente de…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "It's about…",
@@ -401,7 +419,10 @@
     "fr": "Il s’agit de…",
     "it": "Si tratta di…",
     "pt": "Trata-se de…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "It also mentions…",
@@ -419,7 +440,10 @@
     "fr": "Il/Elle mentionne aussi…",
     "it": "Menziona anche…",
     "pt": "Também menciona…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Basically,…",
@@ -437,7 +461,10 @@
     "fr": "En gros,…",
     "it": "In pratica,…",
     "pt": "Basicamente,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "In short,…",
@@ -455,7 +482,10 @@
     "fr": "En bref, …",
     "it": "In breve, …",
     "pt": "Em resumo, …"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "The main point is…",
@@ -473,7 +503,10 @@
     "fr": "Le point principal est…",
     "it": "Il punto principale è…",
     "pt": "O ponto principal é…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "There are two parts to it: …",
@@ -491,7 +524,10 @@
     "fr": "Il y a deux aspects : …",
     "it": "Ci sono due parti: …",
     "pt": "Tem duas partes: …"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "The writer thinks that…",
@@ -509,7 +545,10 @@
     "fr": "L'auteur pense que…",
     "it": "L'autore ritiene che…",
     "pt": "O autor acha que…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "I'll skip the details.",
@@ -527,7 +566,10 @@
     "fr": "Je passe les détails.",
     "it": "Salto i dettagli.",
     "pt": "Salto os detalhes."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Personally, I think…",
@@ -545,7 +587,10 @@
     "fr": "Personnellement, je pense que…",
     "it": "Personalmente penso che…",
     "pt": "Pessoalmente, acho que…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "Did you read it the same way?",
@@ -563,7 +608,10 @@
     "fr": "Tu l'as compris pareil ?",
     "it": "L'hai capito anche tu così?",
     "pt": "Também entendeste assim?"
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "That's all it says.",
@@ -581,7 +629,10 @@
     "fr": "Il n'en dit pas plus.",
     "it": "Non dice altro.",
     "pt": "Mais do que isso não diz."
-   }
+   },
+   "categoriasUso": [
+    "Reformular"
+   ]
   }
  ],
  "mision": {
@@ -602,7 +653,14 @@
     "it": "l'idea principale per prima",
     "pt": "a ideia principal primeiro"
    },
-   "two more details",
+   {
+    "en": "two more details",
+    "de": "zwei weitere Details",
+    "es": "dos detalles más",
+    "fr": "deux détails supplémentaires",
+    "it": "altri due dettagli",
+    "pt": "mais dois detalhes"
+   },
    {
     "en": "use *to sign up for*, *a beginners' course* and *equipment*",
     "de": "*to sign up for*, *a beginners' course* und *equipment* verwenden",

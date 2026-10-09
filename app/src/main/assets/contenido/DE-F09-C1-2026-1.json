@@ -56,11 +56,26 @@
   "Ein vorweggenommenes Gegenargument macht die eigene Position robuster, weil sie schon auf Kritik reagiert hat."
  ],
  "contraste": {
-  "es": "Das Spanische hat Mittel zur Gewichtung (sobre todo, lo decisivo es), die sich direkt übertragen lassen. Zu achten ist darauf, das entscheidende Argument im Deutschen ausdrücklich zu markieren (Entscheidend ist aber…), statt es nur durch die Reihenfolge anzudeuten.",
-  "it": "Das Italienische hat Mittel zur Gewichtung (soprattutto, il punto decisivo è), und der tema argomentativo übt die Struktur von These und Widerlegung. Die Übertragung gelingt deshalb gut; zu achten ist darauf, das entscheidende Argument ausdrücklich zu markieren (Entscheidend ist aber…), statt es nur durch die Reihenfolge anzudeuten.",
-  "fr": "Die französische dissertation ordnet Argumente meist steigend und endet mit dem stärksten. Das Gewichten ist also vertraut; im Deutschen wird das entscheidende Argument aber oft ausdrücklich markiert (Entscheidend ist jedoch…), statt es nur durch die Position ans Ende hervorzuheben.",
-  "pt": "Das Portugiesische hat Mittel zur Gewichtung (sobretudo, o argumento decisivo é), die sich direkt übertragen lassen. Zu achten ist darauf, das entscheidende Argument im Deutschen ausdrücklich zu markieren (Entscheidend ist aber…), statt mehrere Gründe gleichrangig aneinanderzureihen.",
-  "en": "Die englische Essaytradition verlangt, das stärkste Argument klar hervorzuheben (above all, the crucial point is), die Gewichtung ist Englischsprachigen also vertraut. Die Formeln übertragen sich gut: Entscheidend ist…, vor allem aber…."
+  "es": {
+   "de": "Das Spanische hat Mittel zur Gewichtung (sobre todo, lo decisivo es), die sich direkt übertragen lassen. Zu achten ist darauf, das entscheidende Argument im Deutschen ausdrücklich zu markieren (Entscheidend ist aber…), statt es nur durch die Reihenfolge anzudeuten.",
+   "es": "El español dispone de recursos para jerarquizar argumentos («sobre todo», «lo decisivo es») que se trasladan directamente. Hay que procurar marcar de forma explícita en alemán cuál es el argumento decisivo («Entscheidend ist aber…»), en vez de dejar que la importancia dependa solo del orden."
+  },
+  "it": {
+   "de": "Das Italienische hat Mittel zur Gewichtung (soprattutto, il punto decisivo è), und der tema argomentativo übt die Struktur von These und Widerlegung. Die Übertragung gelingt deshalb gut; zu achten ist darauf, das entscheidende Argument ausdrücklich zu markieren (Entscheidend ist aber…), statt es nur durch die Reihenfolge anzudeuten.",
+   "it": "L'italiano dispone di mezzi per mettere in rilievo un argomento («soprattutto», «il punto decisivo è»), e il tema argomentativo esercita la struttura di tesi e confutazione. Il trasferimento riesce quindi bene; bisogna però segnare esplicitamente in tedesco l'argomento decisivo («Entscheidend ist aber…») invece di affidarsi solo all'ordine."
+  },
+  "fr": {
+   "de": "Die französische dissertation ordnet Argumente meist steigend und endet mit dem stärksten. Das Gewichten ist also vertraut; im Deutschen wird das entscheidende Argument aber oft ausdrücklich markiert (Entscheidend ist jedoch…), statt es nur durch die Position ans Ende hervorzuheben.",
+   "fr": "La dissertation française organise souvent les arguments de manière croissante et termine par le plus fort. La hiérarchisation est donc familière ; en allemand, l'argument décisif est cependant souvent signalé explicitement («Entscheidend ist jedoch…») au lieu d'être mis en valeur uniquement par sa position finale."
+  },
+  "pt": {
+   "de": "Das Portugiesische hat Mittel zur Gewichtung (sobretudo, o argumento decisivo é), die sich direkt übertragen lassen. Zu achten ist darauf, das entscheidende Argument im Deutschen ausdrücklich zu markieren (Entscheidend ist aber…), statt mehrere Gründe gleichrangig aneinanderzureihen.",
+   "pt": "O português dispõe de recursos para hierarquizar argumentos («sobretudo», «o argumento decisivo é») que se transferem diretamente. É importante marcar explicitamente em alemão qual argumento é decisivo («Entscheidend ist aber…»), em vez de simplesmente alinhar vários motivos no mesmo nível."
+  },
+  "en": {
+   "de": "Die englische Essaytradition verlangt, das stärkste Argument klar hervorzuheben (above all, the crucial point is), die Gewichtung ist Englischsprachigen also vertraut. Die Formeln übertragen sich gut: Entscheidend ist…, vor allem aber….",
+   "en": "The English essay tradition also expects the strongest argument to be clearly highlighted («above all», «the crucial point is»), so this weighting is familiar to English speakers. The German formulas transfer well: «Entscheidend ist…», «vor allem aber…»."
+  }
  },
  "errores": [
   "Mehrere Argumente ohne Gewichtung gleichrangig aufzählen.",
@@ -228,7 +243,10 @@
     "fr": "L’argument décisif est…",
     "it": "L’argomento decisivo è…",
     "pt": "O argumento decisivo é…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Hinzu kommt, dass…",
@@ -239,7 +257,10 @@
     "fr": "À cela s’ajoute que…",
     "it": "A ciò si aggiunge che…",
     "pt": "A isso acresce que…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Man könnte einwenden, dass…, aber…",
@@ -250,7 +271,10 @@
     "fr": "On pourrait objecter que…, mais…",
     "it": "Si potrebbe obiettare che…, ma…",
     "pt": "Poder-se-ia objetar que…, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Vor allem aber…",
@@ -261,7 +285,10 @@
     "fr": "Mais surtout…",
     "it": "Ma soprattutto…",
     "pt": "Mas sobretudo…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "Das relativiert sich, wenn man bedenkt, dass…",
@@ -272,7 +299,10 @@
     "fr": "Cela se relativise lorsqu’on considère que…",
     "it": "Questo si ridimensiona se si considera che…",
     "pt": "Isso relativiza-se quando se considera que…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Letztlich überwiegt…",
@@ -283,7 +313,10 @@
     "fr": "En fin de compte, ce qui l’emporte, c’est…",
     "it": "In definitiva, prevale…",
     "pt": "No fim, prevalece…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "In seiner stärksten Form lautet der Einwand: …",
@@ -294,7 +327,10 @@
     "fr": "Dans sa version la plus forte, l'objection est : …",
     "it": "Nella sua forma più forte l'obiezione suona: …",
     "pt": "Na sua forma mais forte, a objeção diz: …"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Der Preis dieser Lösung ist…",
@@ -305,7 +341,11 @@
     "fr": "Le prix de cette solution, c'est…",
     "it": "Il prezzo di questa soluzione è…",
     "pt": "O preço desta solução é…"
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Die Beweislast liegt hier nicht bei mir.",
@@ -316,7 +356,10 @@
     "fr": "Ici, la charge de la preuve ne m'incombe pas.",
     "it": "Qui l'onere della prova non è mio.",
     "pt": "Aqui o ónus da prova não é meu."
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Damit bleibt eigentlich nur die Frage, ob…",
@@ -327,7 +370,10 @@
     "fr": "Il ne reste donc vraiment que la question de savoir si…",
     "it": "Resta così in fondo solo la questione se…",
     "pt": "Fica assim apenas a questão de saber se…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Das Beispiel trägt die Schlussfolgerung nicht.",
@@ -338,7 +384,10 @@
     "fr": "L'exemple ne soutient pas la conclusion.",
     "it": "L'esempio non regge la conclusione.",
     "pt": "O exemplo não sustenta a conclusão."
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Darauf möchte ich das Gespräch nicht verengen.",
@@ -349,7 +398,10 @@
     "fr": "Je ne voudrais pas réduire la discussion à cela.",
     "it": "Non vorrei ridurre la discussione a questo.",
     "pt": "Não quero reduzir a conversa a isso."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   }
  ],
  "mision": {

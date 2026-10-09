@@ -60,11 +60,26 @@
   "A strong closing line draws a general lesson, not just a summary of what happened."
  ],
  "contraste": {
-  "es": "Spanish has clear markers for the turning point (de repente – suddenly; fue entonces cuando – that's when), so the technique transfers. The English habit is to mark the turn explicitly with such a phrase rather than let the order of events carry it.",
-  "de": "German marks the turning point with plötzlich, und dann or aus heiterem Himmel, which corresponds exactly to out of the blue. The technique therefore transfers directly.",
-  "it": "Italian marks the turning point with all'improvviso or di punto in bianco, which corresponds well to out of the blue. The technique therefore transfers directly.",
-  "fr": "French marks the turning point with tout à coup or c'est alors que, which corresponds exactly to that's when, even with the same cleft structure. The technique therefore transfers directly.",
-  "pt": "Portuguese marks the turning point with de repente or, in Brazil, do nada, which corresponds well to out of nowhere. The technique therefore transfers directly."
+  "es": {
+   "en": "Spanish has clear markers for the turning point (de repente – suddenly; fue entonces cuando – that's when), so the technique transfers. The English habit is to mark the turn explicitly with such a phrase rather than let the order of events carry it.",
+   "es": "El español tiene marcadores claros para el punto de giro («de repente» – «suddenly»; «fue entonces cuando» – «that's when»), por lo que la técnica se transfiere. En inglés se suele marcar explícitamente ese giro con una expresión así, en vez de dejar que lo indique solo el orden de los hechos."
+  },
+  "de": {
+   "en": "German marks the turning point with plötzlich, und dann or aus heiterem Himmel, which corresponds exactly to out of the blue. The technique therefore transfers directly.",
+   "de": "Deutsch markiert den Wendepunkt mit «plötzlich», «und dann» oder «aus heiterem Himmel», was gut «out of the blue» entspricht. Die Technik lässt sich daher direkt übertragen."
+  },
+  "it": {
+   "en": "Italian marks the turning point with all'improvviso or di punto in bianco, which corresponds well to out of the blue. The technique therefore transfers directly.",
+   "it": "L'italiano marca il punto di svolta con «all'improvviso» o «di punto in bianco», che corrispondono bene a «out of the blue». La tecnica si trasferisce quindi direttamente."
+  },
+  "fr": {
+   "en": "French marks the turning point with tout à coup or c'est alors que, which corresponds exactly to that's when, even with the same cleft structure. The technique therefore transfers directly.",
+   "fr": "Le français marque le tournant avec «tout à coup» ou «c'est alors que», qui correspond exactement à «that's when», jusque dans la structure clivée. La technique se transfère donc directement."
+  },
+  "pt": {
+   "en": "Portuguese marks the turning point with de repente or, in Brazil, do nada, which corresponds well to out of nowhere. The technique therefore transfers directly.",
+   "pt": "O português marca a virada com «de repente» ou, no Brasil, «do nada», o que corresponde bem a «out of nowhere». A técnica se transfere diretamente."
+  }
  },
  "errores": [
   "Starting with a date or plain time reference instead of creating curiosity.",
@@ -232,7 +247,10 @@
     "fr": "Je ne l’avais vraiment pas vu venir.",
     "it": "Non me l’aspettavo proprio.",
     "pt": "Nunca imaginei que isso fosse acontecer."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "And then, out of nowhere,…",
@@ -243,7 +261,10 @@
     "fr": "Et puis, de nulle part,…",
     "it": "E poi, dal nulla,…",
     "pt": "E então, do nada,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "That's when it hit me that…",
@@ -254,7 +275,10 @@
     "fr": "C’est là que j’ai compris que…",
     "it": "È allora che mi sono reso/a conto che…",
     "pt": "Foi aí que percebi que…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "It's changed how I see things since.",
@@ -265,7 +289,11 @@
     "fr": "Depuis, cela a changé ma façon de voir les choses.",
     "it": "Da allora ha cambiato il mio modo di vedere le cose.",
     "pt": "Desde então, isso mudou a forma como vejo as coisas."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Looking back on it now,…",
@@ -276,7 +304,10 @@
     "fr": "En y repensant maintenant,…",
     "it": "Ripensandoci ora,…",
     "pt": "Olhando para trás agora,…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "It's stuck with me ever since.",
@@ -287,7 +318,10 @@
     "fr": "Ça m’est resté en tête depuis.",
     "it": "Mi è rimasto impresso da allora.",
     "pt": "Isso ficou-me na memória desde então."
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Let me take it from the start.",
@@ -298,7 +332,10 @@
     "fr": "Je reprends depuis le début.",
     "it": "Riparto dall'inizio.",
     "pt": "Começo pelo princípio."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "What I didn't know at the time was…",
@@ -309,7 +346,10 @@
     "fr": "Ce que j'ignorais alors, c'était…",
     "it": "Quel che allora non sapevo era…",
     "pt": "O que eu na altura não sabia era…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Up to that point, everything was going to plan.",
@@ -320,7 +360,10 @@
     "fr": "Jusque-là, tout se passait comme prévu.",
     "it": "Fino a quel momento andava tutto secondo i piani.",
     "pt": "Até esse momento tudo corria conforme o previsto."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "To cut a long story short,…",
@@ -331,7 +374,11 @@
     "fr": "Pour faire court,…",
     "it": "Per farla breve,…",
     "pt": "Para encurtar,…"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "So much for the background.",
@@ -342,7 +389,10 @@
     "fr": "Voilà pour le contexte.",
     "it": "Questo quanto agli antefatti.",
     "pt": "Até aqui os antecedentes."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Whether that's really what happened, I still don't know.",
@@ -353,7 +403,11 @@
     "fr": "Si c'est vraiment ce qui s'est passé, je l'ignore encore.",
     "it": "Se sia andata davvero così, ancora non lo so.",
     "pt": "Se foi mesmo assim, ainda não sei."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Modalidad (capacidad/obligación)"
+   ]
   }
  ],
  "mision": {

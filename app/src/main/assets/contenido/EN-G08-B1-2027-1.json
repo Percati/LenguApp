@@ -382,11 +382,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish has a dependent preposition for most of these verbs too, so the concept itself is familiar – the problem is that the choice rarely matches. Depender de becomes depend on, esperar a becomes wait for, pensar en becomes think about. Because the pattern exists in both languages, Spanish speakers transfer it confidently and get the preposition wrong rather than omitting it.",
-  "de": "Many German prepositions look like English ones but do not match: warten auf is wait for, not wait on; Angst vor is afraid of, not afraid before; interessiert an is interested in. German speakers transfer the German preposition confidently, so the error sounds fluent but is wrong.",
-  "it": "Italian aspettare has no preposition, which leads to I'm waiting you instead of I'm waiting for you. Other Italian prepositions are transferred directly: pensare a becomes think to, dipendere da becomes depend from.",
-  "fr": "French attendre has no preposition, which leads to I'm waiting you instead of I'm waiting for you. Other French prepositions are transferred directly: penser à becomes think to, dépendre de becomes depend of.",
-  "pt": "Portuguese esperar has no preposition, which leads to I'm waiting you. Other prepositions are transferred directly: pensar em becomes think in, depender de becomes depend of."
+  "es": {
+   "en": "Spanish has a dependent preposition for most of these verbs too, so the concept itself is familiar – the problem is that the choice rarely matches. Depender de becomes depend on, esperar a becomes wait for, pensar en becomes think about. Because the pattern exists in both languages, Spanish speakers transfer it confidently and get the preposition wrong rather than omitting it.",
+   "es": "El español también tiene una preposición regida para muchos de estos verbos, por lo que el concepto es familiar; el problema es que la elección rara vez coincide. «Depender de» se convierte en «depend on», «esperar a» en «wait for», «pensar en» en «think about». Como el patrón existe en ambas lenguas, los hispanohablantes lo transfieren con seguridad y suelen equivocarse de preposición en lugar de omitirla."
+  },
+  "de": {
+   "en": "Many German prepositions look like English ones but do not match: warten auf is wait for, not wait on; Angst vor is afraid of, not afraid before; interessiert an is interested in. German speakers transfer the German preposition confidently, so the error sounds fluent but is wrong.",
+   "de": "Viele deutsche Präpositionen sehen englischen ähnlich, passen aber nicht: «warten auf» heißt «wait for», nicht «wait on»; «Angst vor» heißt «afraid of», nicht «afraid before»; «interessiert an» heißt «interested in». Deutschsprachige übertragen die deutsche Präposition oft sehr sicher, daher klingt der Fehler flüssig, ist aber trotzdem falsch."
+  },
+  "it": {
+   "en": "Italian aspettare has no preposition, which leads to I'm waiting you instead of I'm waiting for you. Other Italian prepositions are transferred directly: pensare a becomes think to, dipendere da becomes depend from.",
+   "it": "«Aspettare» non prende preposizione in italiano, il che porta a «I'm waiting you» invece di «I'm waiting for you». Altre preposizioni italiane vengono trasferite direttamente: «pensare a» diventa «think to», «dipendere da» diventa «depend from»."
+  },
+  "fr": {
+   "en": "French attendre has no preposition, which leads to I'm waiting you instead of I'm waiting for you. Other French prepositions are transferred directly: penser à becomes think to, dépendre de becomes depend of.",
+   "fr": "«Attendre» ne prend pas de préposition en français, ce qui conduit à «I'm waiting you» au lieu de «I'm waiting for you». D'autres prépositions françaises sont transférées directement : «penser à» devient «think to», «dépendre de» devient «depend of»."
+  },
+  "pt": {
+   "en": "Portuguese esperar has no preposition, which leads to I'm waiting you. Other prepositions are transferred directly: pensar em becomes think in, depender de becomes depend of.",
+   "pt": "«Esperar» não usa preposição em português, o que pode levar a «I'm waiting you». Outras preposições são transferidas diretamente: «pensar em» pode virar «think in», «depender de» pode virar «depend of»."
+  }
  },
  "errores": [
   {
@@ -620,7 +635,10 @@
     "fr": "Cela dépend de…",
     "it": "Dipende da…",
     "pt": "Depende de…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "I'm waiting for…",
@@ -638,7 +656,10 @@
     "fr": "J’attends…",
     "it": "Aspetto…",
     "pt": "Estou à espera de…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "I agree with you",
@@ -656,7 +677,11 @@
     "fr": "Je suis d’accord avec toi.",
     "it": "Sono d’accordo con te.",
     "pt": "Concordo contigo."
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Acordar"
+   ]
   },
   {
    "expresion": "Don't worry about…",
@@ -674,7 +699,10 @@
     "fr": "Ne t’inquiète pas pour…",
     "it": "Non preoccuparti di…",
     "pt": "Não te preocupes com…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "Can I ask for…?",
@@ -692,7 +720,11 @@
     "fr": "Puis-je demander… ?",
     "it": "Posso chiedere…?",
     "pt": "Posso pedir…?"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Pedir"
+   ]
   },
   {
    "expresion": "This belongs to…",
@@ -710,7 +742,10 @@
     "fr": "Cela appartient à…",
     "it": "Questo appartiene a…",
     "pt": "Isto pertence a…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "I'm thinking about…",
@@ -728,7 +763,10 @@
     "fr": "Je réfléchis à…",
     "it": "Sto pensando a…",
     "pt": "Estou a pensar em…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "We arrived at…",
@@ -746,7 +784,10 @@
     "fr": "Nous sommes arrivés à…",
     "it": "Siamo arrivati a…",
     "pt": "Chegámos a…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   }
  ],
  "mision": {

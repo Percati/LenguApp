@@ -91,11 +91,26 @@
   "Stay on the problem, not the person. *You never answer* invites a defence; *I haven't had a reply* states a fact."
  ],
  "contraste": {
-  "es": "A literal quiero que me devuelvan el dinero (I want you to give me my money back) sounds aggressive in English; the natural form is I'd like a refund or Could you…?. The softener belongs even in a firm complaint.",
-  "de": "Ich möchte… corresponds to I'd like…, so polite complaints transfer. Ich will mein Geld zurück becomes I want my money back, which sounds much more aggressive in English.",
-  "it": "Vorrei… corresponds exactly to I'd like…, so polite complaints transfer directly (vorrei un rimborso – I'd like a refund).",
-  "fr": "Je voudrais… corresponds exactly to I'd like…, so polite complaints transfer directly (je voudrais être remboursé – I'd like a refund).",
-  "pt": "Gostaria de… corresponds to I'd like…. In European Portuguese queria… is the usual polite form, but the calque I wanted… does not sound polite in English."
+  "es": {
+   "en": "A literal quiero que me devuelvan el dinero (I want you to give me my money back) sounds aggressive in English; the natural form is I'd like a refund or Could you…?. The softener belongs even in a firm complaint.",
+   "es": "El «quiero que me devuelvan el dinero» literal («I want you to give me my money back») suena agresivo en inglés; lo natural es «I'd like a refund» o «Could you…?». El atenuante se mantiene incluso en una queja firme."
+  },
+  "de": {
+   "en": "Ich möchte… corresponds to I'd like…, so polite complaints transfer. Ich will mein Geld zurück becomes I want my money back, which sounds much more aggressive in English.",
+   "de": "«Ich will mein Geld zurück» wird zu «I want my money back», was im Englischen deutlich aggressiver klingt."
+  },
+  "it": {
+   "en": "Vorrei… corresponds exactly to I'd like…, so polite complaints transfer directly (vorrei un rimborso – I'd like a refund).",
+   "it": "«Vorrei…» corrisponde esattamente a «I'd like…», quindi le lamentele cortesi si trasferiscono direttamente («vorrei un rimborso» – «I'd like a refund»)."
+  },
+  "fr": {
+   "en": "Je voudrais… corresponds exactly to I'd like…, so polite complaints transfer directly (je voudrais être remboursé – I'd like a refund).",
+   "fr": "«Je voudrais…» correspond exactement à «I'd like…», donc les plaintes polies se transfèrent directement («je voudrais être remboursé» – «I'd like a refund»)."
+  },
+  "pt": {
+   "en": "Gostaria de… corresponds to I'd like…. In European Portuguese queria… is the usual polite form, but the calque I wanted… does not sound polite in English.",
+   "pt": "«Gostaria de…» corresponde a «I'd like…». No português europeu, «queria…» é a forma educada usual, mas o calque «I wanted…» não soa educado em inglês."
+  }
  },
  "errores": [
   "Complaining without asking for anything.",
@@ -293,7 +308,10 @@
     "fr": "Je vous écris au sujet de…",
     "it": "Le scrivo in merito a…",
     "pt": "Escrevo-lhe a propósito de…"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "The problem is that…",
@@ -304,7 +322,8 @@
     "fr": "Le problème, c’est que…",
     "it": "Il problema è che…",
     "pt": "O problema é que…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "As a result,…",
@@ -315,7 +334,10 @@
     "fr": "Par conséquent, …",
     "it": "Di conseguenza, …",
     "pt": "Como resultado, …"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Could you please…",
@@ -326,7 +348,10 @@
     "fr": "Pourriez-vous, s’il vous plaît, …",
     "it": "Potrebbe per favore…",
     "pt": "Poderia, por favor, …"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "I'd appreciate it if you could…",
@@ -337,7 +362,8 @@
     "fr": "Je vous serais reconnaissant si vous pouviez…",
     "it": "Le sarei grato se potesse…",
     "pt": "Agradecia se pudesse…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "I was wondering if…",
@@ -348,7 +374,8 @@
     "fr": "Je me demandais si…",
     "it": "Mi chiedevo se…",
     "pt": "Gostaria de saber se…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "I'd like this sorted out by…",
@@ -359,7 +386,8 @@
     "fr": "J’aimerais que ce soit réglé d’ici…",
     "it": "Vorrei che la questione fosse risolta entro…",
     "pt": "Gostaria que isto ficasse resolvido até…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "I look forward to hearing from you.",
@@ -370,7 +398,11 @@
     "fr": "Dans l’attente de votre réponse.",
     "it": "Resto in attesa di una sua risposta.",
     "pt": "Fico a aguardar a sua resposta."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse",
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {

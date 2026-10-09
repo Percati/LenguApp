@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish uses si + present and the simple future, with the same logic as English. The typical error is putting will in the if-clause as well.",
-  "de": "German uses the present in both halves (Wenn es regnet, bleiben wir zu Hause), so German speakers often forget will in the result: If it rains, we'll stay at home. German wenn means both if and when, so the two English words are easy to mix up.",
-  "it": "Italian can use the future after se (se pioverà, resteremo a casa), which leads to if it will rain. English uses the present after if: If it rains, we'll stay at home.",
-  "fr": "French does not use the future after si (s'il pleut, nous resterons à la maison), exactly like English. The first conditional therefore transfers very well: If it rains, we'll stay at home.",
-  "pt": "Portuguese uses the future subjunctive after se (se chover, ficamos em casa). Because this form looks like a future, Portuguese speakers sometimes write if it will rain; English uses the present after if."
+  "es": {
+   "en": "Spanish uses si + present and the simple future, with the same logic as English. The typical error is putting will in the if-clause as well.",
+   "es": "El español usa «si» + presente y el futuro simple, con la misma lógica que el inglés. El error típico es poner «will» también en la cláusula con «if»."
+  },
+  "de": {
+   "en": "German uses the present in both halves (Wenn es regnet, bleiben wir zu Hause), so German speakers often forget will in the result: If it rains, we'll stay at home. German wenn means both if and when, so the two English words are easy to mix up.",
+   "de": "Im Deutschen steht in beiden Satzteilen Präsens («Wenn es regnet, bleiben wir zu Hause»), daher vergessen Deutschsprachige im Ergebnissatz leicht «will»: «If it rains, we'll stay at home». Außerdem bedeutet «wenn» sowohl «if» als auch «when», sodass die beiden englischen Wörter leicht verwechselt werden."
+  },
+  "it": {
+   "en": "Italian can use the future after se (se pioverà, resteremo a casa), which leads to if it will rain. English uses the present after if: If it rains, we'll stay at home.",
+   "it": "L'italiano può usare il futuro dopo «se» («se pioverà, resteremo a casa»), il che porta a «if it will rain». L'inglese usa il presente dopo «if»: «If it rains, we'll stay at home»."
+  },
+  "fr": {
+   "en": "French does not use the future after si (s'il pleut, nous resterons à la maison), exactly like English. The first conditional therefore transfers very well: If it rains, we'll stay at home.",
+   "fr": "Le français n'emploie pas le futur après «si» («s'il pleut, nous resterons à la maison»), exactement comme l'anglais. Le first conditional se transfère donc très bien : «If it rains, we'll stay at home»."
+  },
+  "pt": {
+   "en": "Portuguese uses the future subjunctive after se (se chover, ficamos em casa). Because this form looks like a future, Portuguese speakers sometimes write if it will rain; English uses the present after if.",
+   "pt": "O português usa o futuro do subjuntivo depois de «se» («se chover, ficamos em casa»). Como essa forma tem valor de futuro, falantes de português às vezes escrevem «if it will rain»; em inglês usa-se o presente depois de «if»."
+  }
  },
  "errores": [
   {
@@ -429,7 +444,10 @@
     "fr": "Si…, je…",
     "it": "Se…, …",
     "pt": "Se…, vou…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "If you…, you'll…",
@@ -447,7 +465,10 @@
     "fr": "Si tu…, tu…",
     "it": "Se tu…, …",
     "pt": "Se tu…, vais…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "…if I have time.",
@@ -465,7 +486,10 @@
     "fr": "…si j’ai le temps.",
     "it": "…se ho tempo.",
     "pt": "…se eu tiver tempo."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "If I see her, I'll…",
@@ -483,7 +507,11 @@
     "fr": "Si je la vois, je…",
     "it": "Se la vedo, …",
     "pt": "Se eu a vir, vou…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Ejemplificar"
+   ]
   },
   {
    "expresion": "We'll…if…",
@@ -501,7 +529,10 @@
     "fr": "Nous… si…",
     "it": "… se…",
     "pt": "Vamos… se…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "If it's sunny, we'll…",
@@ -519,7 +550,11 @@
     "fr": "S’il fait beau, nous…",
     "it": "Se c’è il sole, …",
     "pt": "Se estiver sol, vamos…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Is this likely to happen?",
@@ -537,7 +572,10 @@
     "fr": "Est-ce probable ?",
     "it": "È probabile?",
     "pt": "Isto é provável?"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   }
  ],
  "mision": {

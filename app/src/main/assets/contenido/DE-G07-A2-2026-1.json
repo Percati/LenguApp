@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische dekliniert Adjektive nach Genus und Numerus, aber nicht nach Kasus. Diese zusätzliche Ebene ist für Spanischsprachige neu.",
-  "it": "Im Italienischen steht das Adjektiv meist nach dem Nomen (la macchina nuova). Im Deutschen steht es immer davor und bekommt eine Endung: das neue Auto.",
-  "fr": "Im Französischen steht das Adjektiv meist nach dem Nomen (la voiture neuve). Im Deutschen steht es immer davor und bekommt eine Endung, die man auch hört: das neue Auto.",
-  "pt": "Im Portugiesischen steht das Adjektiv meist nach dem Nomen (o carro novo). Im Deutschen steht es immer davor und bekommt eine Endung: das neue Auto.",
-  "en": "Im Englischen steht das Adjektiv wie im Deutschen vor dem Nomen, bekommt aber nie eine Endung (the new car). Die Stellung ist also leicht, die Endung ist neu: das neue Auto."
+  "es": {
+   "de": "Das Spanische dekliniert Adjektive nach Genus und Numerus, aber nicht nach Kasus. Diese zusätzliche Ebene ist für Spanischsprachige neu.",
+   "es": "En español, los adjetivos concuerdan en género y número, pero no en caso. Esta capa adicional es nueva para los hispanohablantes."
+  },
+  "it": {
+   "de": "Im Italienischen steht das Adjektiv meist nach dem Nomen (la macchina nuova). Im Deutschen steht es immer davor und bekommt eine Endung: das neue Auto.",
+   "it": "In italiano l'aggettivo viene spesso dopo il nome («la macchina nuova»). In tedesco viene sempre prima e prende una desinenza: «das neue Auto»."
+  },
+  "fr": {
+   "de": "Im Französischen steht das Adjektiv meist nach dem Nomen (la voiture neuve). Im Deutschen steht es immer davor und bekommt eine Endung, die man auch hört: das neue Auto.",
+   "fr": "En français, l'adjectif se place le plus souvent après le nom («la voiture neuve»). En allemand, il se place toujours avant le nom et reçoit une terminaison que l'on entend : «das neue Auto»."
+  },
+  "pt": {
+   "de": "Im Portugiesischen steht das Adjektiv meist nach dem Nomen (o carro novo). Im Deutschen steht es immer davor und bekommt eine Endung: das neue Auto.",
+   "pt": "Em português, o adjetivo geralmente vem depois do substantivo («o carro novo»). Em alemão, ele vem antes e recebe uma terminação: «das neue Auto»."
+  },
+  "en": {
+   "de": "Im Englischen steht das Adjektiv wie im Deutschen vor dem Nomen, bekommt aber nie eine Endung (the new car). Die Stellung ist also leicht, die Endung ist neu: das neue Auto.",
+   "en": "In English, as in German, the adjective comes before the noun, but it never takes an ending («the new car»). The position is therefore easy; the ending is new: «das neue Auto»."
+  }
  },
  "errores": [
   {
@@ -375,7 +390,10 @@
     "fr": "le nouveau…",
     "it": "il nuovo…",
     "pt": "o novo…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "die neue…",
@@ -393,7 +411,10 @@
     "fr": "la nouvelle…",
     "it": "la nuova…",
     "pt": "a nova…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "das neue…",
@@ -411,7 +432,10 @@
     "fr": "le/la nouveau/nouvelle…",
     "it": "il/la nuovo/a…",
     "pt": "o/a novo/a…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "der grosse…",
@@ -429,7 +453,10 @@
     "fr": "le grand…",
     "it": "il grande…",
     "pt": "o grande…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "die kleine…",
@@ -447,7 +474,10 @@
     "fr": "la petite…",
     "it": "la piccola…",
     "pt": "a pequena…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "das alte…",
@@ -465,7 +495,10 @@
     "fr": "l’ancien/l’ancienne…",
     "it": "il vecchio/la vecchia…",
     "pt": "o/a velho/a…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "Welche Endung kommt hier hin?",
@@ -483,7 +516,11 @@
     "fr": "Quelle terminaison ici ?",
     "it": "Quale desinenza va qui?",
     "pt": "Que terminação vai aqui?"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación",
+    "Pedir"
+   ]
   }
  ],
  "mision": {
@@ -496,7 +533,14 @@
    "pt": "Descreva uma loja onde você costuma fazer compras."
   },
   "requisitos": [
-   "sechs Adjektive nach *der*, *die*, *das*",
+   {
+    "de": "sechs Adjektive nach *der*, *die*, *das*",
+    "en": "six adjectives after *der*, *die*, *das*",
+    "es": "seis adjetivos después de *der*, *die*, *das*",
+    "fr": "six adjectifs après *der*, *die*, *das*",
+    "it": "sei aggettivi dopo *der*, *die*, *das*",
+    "pt": "seis adjetivos depois de *der*, *die*, *das*"
+   },
    {
     "de": "zwei Sätze mit *neu* oder *alt*",
     "en": "two sentences with *neu* or *alt*",

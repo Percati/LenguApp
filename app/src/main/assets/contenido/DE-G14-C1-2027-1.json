@@ -56,11 +56,26 @@
   "Diese Form ersetzt einen ganzen Relativsatz mit Modalverb und verdichtet dadurch den Satz erheblich."
  ],
  "contraste": {
-  "es": "Das Spanische hat keine direkte Entsprechung für diese Modalpartizipien; die Bedeutung muss über einen vollständigen Relativsatz mit deber oder poder ausgedrückt werden (los problemas que cabe esperar). Spanischsprachige umschreiben deshalb meist, statt die kompakte deutsche Form zu bilden.",
-  "it": "Das Italienische hat mit da + Infinitiv eine genaue semantische Entsprechung (i problemi da aspettarsi, le decisioni da prendere): passivisch und modal zugleich. Italienischsprachige verstehen die Konstruktion deshalb sofort; neu ist nur, dass sie im Deutschen vor dem Nomen steht und dekliniert wird (die zu treffenden Entscheidungen).",
-  "fr": "Das Französische hat mit à + Infinitiv eine genaue Entsprechung (les problèmes à prévoir, les mesures à prendre), die Modal- und Passivbedeutung ist also sofort klar. Neu ist, dass die deutsche Form vor dem Nomen steht und wie ein Adjektiv dekliniert wird – Französischsprachige vergessen deshalb oft die Endung (die zu erwartende Probleme).",
-  "pt": "Im europäischen Portugiesisch gibt es a + Infinitiv (medidas a tomar), im brasilianischen vor allem den flektierten passiven Infinitiv (as medidas a serem tomadas). Beide machen Passiv und Modalität sichtbar; neu für Portugiesischsprachige ist die kompakte, vorangestellte und deklinierte deutsche Form (die zu treffenden Massnahmen).",
-  "en": "Das Englische hat keine vorangestellte Entsprechung, kommt aber mit nachgestelltem to be + Partizip nahe (the problems to be expected, the decisions to be made), das ebenfalls Passiv und Modalität verbindet. Englischsprachige verstehen die Bedeutung deshalb sofort, weichen beim Schreiben aber auf Relativsätze aus, statt das kompakte Attribut zu bilden."
+  "es": {
+   "de": "Das Spanische hat keine direkte Entsprechung für diese Modalpartizipien; die Bedeutung muss über einen vollständigen Relativsatz mit deber oder poder ausgedrückt werden (los problemas que cabe esperar). Spanischsprachige umschreiben deshalb meist, statt die kompakte deutsche Form zu bilden.",
+   "es": "El español no tiene un equivalente directo de estos participios modales; el significado debe expresarse mediante una oración de relativo completa con «deber» o «poder» («los problemas que cabe esperar»). Por eso, los hispanohablantes suelen parafrasear en vez de producir la forma alemana compacta."
+  },
+  "it": {
+   "de": "Das Italienische hat mit da + Infinitiv eine genaue semantische Entsprechung (i problemi da aspettarsi, le decisioni da prendere): passivisch und modal zugleich. Italienischsprachige verstehen die Konstruktion deshalb sofort; neu ist nur, dass sie im Deutschen vor dem Nomen steht und dekliniert wird (die zu treffenden Entscheidungen).",
+   "it": "L'italiano ha con «da + infinito» un equivalente semantico molto preciso («i problemi da aspettarsi», «le decisioni da prendere»): insieme passivo e modale. Gli italofoni capiscono quindi subito la costruzione; la novità è che in tedesco si trova prima del nome e viene declinata («die zu treffenden Entscheidungen»)."
+  },
+  "fr": {
+   "de": "Das Französische hat mit à + Infinitiv eine genaue Entsprechung (les problèmes à prévoir, les mesures à prendre), die Modal- und Passivbedeutung ist also sofort klar. Neu ist, dass die deutsche Form vor dem Nomen steht und wie ein Adjektiv dekliniert wird – Französischsprachige vergessen deshalb oft die Endung (die zu erwartende Probleme).",
+   "fr": "Le français possède avec «à + infinitif» un équivalent très proche («les problèmes à prévoir», «les mesures à prendre»), donc la valeur modale et passive est immédiatement claire. Ce qui est nouveau, c'est que la forme allemande se place avant le nom et se décline comme un adjectif ; les francophones oublient donc souvent la terminaison («die zu erwartende Probleme»)."
+  },
+  "pt": {
+   "de": "Im europäischen Portugiesisch gibt es a + Infinitiv (medidas a tomar), im brasilianischen vor allem den flektierten passiven Infinitiv (as medidas a serem tomadas). Beide machen Passiv und Modalität sichtbar; neu für Portugiesischsprachige ist die kompakte, vorangestellte und deklinierte deutsche Form (die zu treffenden Massnahmen).",
+   "pt": "No português europeu existe «a + infinitivo» («medidas a tomar»); no brasileiro, sobretudo o infinitivo passivo flexionado («as medidas a serem tomadas»). Ambas as formas tornam passividade e modalidade explícitas; a novidade é a forma alemã compacta, anteposta e declinada («die zu treffenden Massnahmen»)."
+  },
+  "en": {
+   "de": "Das Englische hat keine vorangestellte Entsprechung, kommt aber mit nachgestelltem to be + Partizip nahe (the problems to be expected, the decisions to be made), das ebenfalls Passiv und Modalität verbindet. Englischsprachige verstehen die Bedeutung deshalb sofort, weichen beim Schreiben aber auf Relativsätze aus, statt das kompakte Attribut zu bilden.",
+   "en": "English has no pre-nominal equivalent, but post-nominal «to be + past participle» comes close («the problems to be expected», «the decisions to be made»), combining passive meaning and modality in the same way. English speakers therefore understand the meaning immediately, but in writing they tend to use relative clauses instead of forming the compact German attribute."
+  }
  },
  "errores": [
   "Zu + Partizip I mit einem intransitiven Verb bilden.",
@@ -250,7 +265,10 @@
     "fr": "les… à prévoir",
     "it": "i… prevedibili",
     "pt": "os… previsíveis"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "die noch zu klärende…",
@@ -261,7 +279,10 @@
     "fr": "le/la… qui reste à clarifier",
     "it": "il/la… ancora da chiarire",
     "pt": "o/a… ainda por esclarecer"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "das anzuwendende…",
@@ -272,7 +293,10 @@
     "fr": "le/la… à appliquer",
     "it": "il/la… da applicare",
     "pt": "o/a… a aplicar"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "die zu berücksichtigenden…",
@@ -283,7 +307,10 @@
     "fr": "les… à prendre en compte",
     "it": "i… da tenere in considerazione",
     "pt": "os… a ter em conta"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "das zu lösende…",
@@ -294,7 +321,10 @@
     "fr": "le/la… à résoudre",
     "it": "il/la… da risolvere",
     "pt": "o/a… a resolver"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "die zu vermeidenden…",
@@ -305,7 +335,10 @@
     "fr": "les… à éviter",
     "it": "i… da evitare",
     "pt": "os… a evitar"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Das Attribut wird hier zu schwer.",
@@ -316,7 +349,10 @@
     "fr": "Ici, l'attribut devient trop lourd.",
     "it": "Qui l'attributo diventa troppo pesante.",
     "pt": "Aqui o atributo fica demasiado pesado."
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   }
  ],
  "mision": {

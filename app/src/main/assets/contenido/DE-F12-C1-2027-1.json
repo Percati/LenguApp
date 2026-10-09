@@ -60,11 +60,26 @@
   "Eine konkrete Frist macht die Forderung viel wirksamer als bitte kümmern Sie sich bald darum."
  ],
  "contraste": {
-  "es": "Die formelle spanische Beschwerde hat feste Formeln (por medio de la presente – hiermit, a más tardar el… – spätestens bis zum…), sodass die vierteilige Struktur vertraut ist. Der vorweggenommene Einwand muss meist ausdrücklich ergänzt werden.",
-  "it": "Die formelle italienische Beschwerde hat eine ähnliche Struktur und direkte Formeln: Con la presente entspricht Hiermit, entro e non oltre entspricht spätestens bis. Italienischsprachige können die vierteilige Struktur deshalb gut übernehmen; der vorweggenommene Einwand muss meist ausdrücklich ergänzt werden.",
-  "fr": "Die französische formelle Beschwerde hat feste Formeln (Par la présente – Hiermit, je vous prie de bien vouloir… d'ici le… – ich bitte Sie, bis zum… zu…). Die Falle liegt am Schluss: Die ausführlichen französischen Schlussformeln haben im Deutschen keine Entsprechung, wo Mit freundlichen Grüssen genügt.",
-  "pt": "Die formelle portugiesische Beschwerde hat feste Formeln (Venho por este meio – Hiermit, no prazo de – innerhalb von), sodass die Struktur vertraut ist. Der vorweggenommene Einwand muss meist ausdrücklich ergänzt werden.",
-  "en": "Die englische formelle Beschwerde hat eine ähnliche Struktur (I am writing to complain about…, I would be grateful if you could… by…). Die Übertragung gelingt deshalb gut; im Deutschen wird die Frist aber meist ausdrücklicher gesetzt und mit einer Folge verbunden (andernfalls sehe ich mich gezwungen…)."
+  "es": {
+   "de": "Die formelle spanische Beschwerde hat feste Formeln (por medio de la presente – hiermit, a más tardar el… – spätestens bis zum…), sodass die vierteilige Struktur vertraut ist. Der vorweggenommene Einwand muss meist ausdrücklich ergänzt werden.",
+   "es": "La reclamación formal en español tiene fórmulas fijas («por medio de la presente» – hiermit; «a más tardar el…» – spätestens bis zum…), de modo que la estructura en cuatro partes resulta familiar. Normalmente hay que añadir de forma explícita la objeción anticipada."
+  },
+  "it": {
+   "de": "Die formelle italienische Beschwerde hat eine ähnliche Struktur und direkte Formeln: Con la presente entspricht Hiermit, entro e non oltre entspricht spätestens bis. Italienischsprachige können die vierteilige Struktur deshalb gut übernehmen; der vorweggenommene Einwand muss meist ausdrücklich ergänzt werden.",
+   "it": "La lamentela formale italiana ha una struttura simile e formule dirette: «Con la presente» corrisponde a «Hiermit», «entro e non oltre» a «spätestens bis». Gli italofoni possono quindi adottare bene la struttura in quattro parti; l'obiezione anticipata deve però spesso essere aggiunta esplicitamente."
+  },
+  "fr": {
+   "de": "Die französische formelle Beschwerde hat feste Formeln (Par la présente – Hiermit, je vous prie de bien vouloir… d'ici le… – ich bitte Sie, bis zum… zu…). Die Falle liegt am Schluss: Die ausführlichen französischen Schlussformeln haben im Deutschen keine Entsprechung, wo Mit freundlichen Grüssen genügt.",
+   "fr": "La plainte formelle française a des formules fixes («Par la présente» – «Hiermit», «je vous prie de bien vouloir… d'ici le…» – «ich bitte Sie, bis zum… zu…»). Le piège se situe à la fin : les longues formules de clôture françaises n'ont pas d'équivalent direct en allemand, où «Mit freundlichen Grüssen» suffit."
+  },
+  "pt": {
+   "de": "Die formelle portugiesische Beschwerde hat feste Formeln (Venho por este meio – Hiermit, no prazo de – innerhalb von), sodass die Struktur vertraut ist. Der vorweggenommene Einwand muss meist ausdrücklich ergänzt werden.",
+   "pt": "A reclamação formal em português tem fórmulas fixas («Venho por este meio» – Hiermit; «no prazo de» – innerhalb von), por isso a estrutura é familiar. A objeção antecipada geralmente precisa ser acrescentada de forma explícita."
+  },
+  "en": {
+   "de": "Die englische formelle Beschwerde hat eine ähnliche Struktur (I am writing to complain about…, I would be grateful if you could… by…). Die Übertragung gelingt deshalb gut; im Deutschen wird die Frist aber meist ausdrücklicher gesetzt und mit einer Folge verbunden (andernfalls sehe ich mich gezwungen…).",
+   "en": "Formal English complaints have a similar structure («I am writing to complain about…», «I would be grateful if you could… by…»), so the transfer is straightforward. In German, however, the deadline is usually stated more explicitly and linked to a consequence («andernfalls sehe ich mich gezwungen…»)."
+  }
  },
  "errores": [
   "Die Beschwerde ohne konkrete Frist formulieren.",
@@ -254,7 +269,10 @@
     "fr": "…est en retard depuis…",
     "it": "…è in ritardo da…",
     "pt": "…está em atraso há…"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Dadurch konnten wir … nicht…",
@@ -265,7 +283,10 @@
     "fr": "De ce fait, nous n’avons pas pu…",
     "it": "Di conseguenza, non siamo riusciti a…",
     "pt": "Por isso, não conseguimos…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Ich bitte um Klärung bis spätestens…",
@@ -276,7 +297,11 @@
     "fr": "Je vous prie de clarifier ce point au plus tard d’ici…",
     "it": "Chiedo un chiarimento entro e non oltre…",
     "pt": "Solicito um esclarecimento, o mais tardar, até…"
-   }
+   },
+   "categoriasUso": [
+    "Pedir",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Mir ist bewusst, dass…, doch…",
@@ -287,7 +312,10 @@
     "fr": "Je suis conscient(e) que…, mais…",
     "it": "Sono consapevole che…, tuttavia…",
     "pt": "Estou consciente de que…, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Ich sehe mich gezwungen, …",
@@ -298,7 +326,10 @@
     "fr": "Je me vois contraint(e) de…",
     "it": "Mi vedo costretto/a a…",
     "pt": "Vejo-me obrigado/a a…"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Andernfalls sehe ich mich gezwungen, …",
@@ -309,7 +340,10 @@
     "fr": "Dans le cas contraire, je me verrai contraint(e) de…",
     "it": "In caso contrario, sarò costretto/a a…",
     "pt": "Caso contrário, ver-me-ei obrigado/a a…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Der Vorgang ist dokumentiert.",
@@ -320,7 +354,10 @@
     "fr": "Le dossier est documenté.",
     "it": "La vicenda è documentata.",
     "pt": "O processo está documentado."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Es geht mir nicht um Schuld, sondern um eine Lösung.",
@@ -331,7 +368,10 @@
     "fr": "Ce n'est pas la faute qui m'intéresse, mais une solution.",
     "it": "Non mi interessa la colpa, ma una soluzione.",
     "pt": "Não me interessa a culpa, mas uma solução."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Das ist nun der zweite Fall dieser Art.",
@@ -342,7 +382,10 @@
     "fr": "C'est déjà le deuxième cas de ce genre.",
     "it": "È ormai il secondo caso di questo tipo.",
     "pt": "Este é já o segundo caso deste tipo."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Welche Lösung können Sie mir anbieten?",
@@ -353,7 +396,10 @@
     "fr": "Quelle solution pouvez-vous me proposer ?",
     "it": "Quale soluzione può offrirmi?",
     "pt": "Que solução me pode oferecer?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Für eine rasche Klärung wäre ich dankbar.",
@@ -364,7 +410,10 @@
     "fr": "Je vous saurais gré d'un règlement rapide.",
     "it": "Le sarei grato di un chiarimento rapido.",
     "pt": "Agradeceria um esclarecimento rápido."
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Damit wäre die Sache für mich erledigt.",
@@ -375,7 +424,10 @@
     "fr": "Cela réglerait l'affaire pour moi.",
     "it": "Con questo la questione per me sarebbe chiusa.",
     "pt": "Com isso o assunto ficaria resolvido para mim."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   }
  ],
  "mision": {

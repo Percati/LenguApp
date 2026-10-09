@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish uses que for almost everything, without distinguishing people from things, so Spanish speakers need to remember to use who for people in English.",
-  "de": "German chooses der, die or das by the gender of the noun (der Mann, die Frau, das Buch). English chooses by person or thing: who for people, that or which for things, so German speakers need a new question: is it a person or a thing?",
-  "it": "Italian che is used for people and things. English uses who for people and that or which for things, so Italian speakers need to check: is it a person or a thing?",
-  "fr": "French qui is used for people and things, which sometimes leads to who for things (the book who is on the table). English uses who for people and that or which for things.",
-  "pt": "Portuguese que is used for people and things. English uses who for people and that or which for things, so Portuguese speakers need to check: is it a person or a thing?"
+  "es": {
+   "en": "Spanish uses que for almost everything, without distinguishing people from things, so Spanish speakers need to remember to use who for people in English.",
+   "es": "El español usa «que» para casi todo, sin distinguir personas de cosas, por lo que los hispanohablantes deben recordar usar «who» para personas en inglés."
+  },
+  "de": {
+   "en": "German chooses der, die or das by the gender of the noun (der Mann, die Frau, das Buch). English chooses by person or thing: who for people, that or which for things, so German speakers need a new question: is it a person or a thing?",
+   "de": "Im Deutschen richtet sich «der», «die» oder «das» nach dem Genus des Substantivs («der Mann, die Frau, das Buch»). Im Englischen richtet sich die Wahl nach Person oder Sache: «who» für Personen, «that» oder «which» für Dinge. Deutschsprachige brauchen daher eine neue Leitfrage: Geht es um eine Person oder um eine Sache?"
+  },
+  "it": {
+   "en": "Italian che is used for people and things. English uses who for people and that or which for things, so Italian speakers need to check: is it a person or a thing?",
+   "it": "In italiano «che» si usa per persone e cose. L'inglese usa «who» per le persone e «that» o «which» per le cose, quindi bisogna sempre controllare: è una persona o una cosa?"
+  },
+  "fr": {
+   "en": "French qui is used for people and things, which sometimes leads to who for things (the book who is on the table). English uses who for people and that or which for things.",
+   "fr": "Le français «qui» s'emploie pour les personnes et les choses, ce qui peut conduire à «who» pour des objets («the book who is on the table»). L'anglais utilise «who» pour les personnes et «that» ou «which» pour les choses."
+  },
+  "pt": {
+   "en": "Portuguese que is used for people and things. English uses who for people and that or which for things, so Portuguese speakers need to check: is it a person or a thing?",
+   "pt": "Em português, «que» é usado para pessoas e coisas. Em inglês, «who» é usado para pessoas e «that» ou «which» para coisas; por isso é preciso verificar: trata-se de uma pessoa ou de uma coisa?"
+  }
  },
  "errores": [
   {
@@ -429,7 +444,10 @@
     "fr": "…qui…",
     "it": "…che…",
     "pt": "…que…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "…that…",
@@ -447,7 +465,10 @@
     "fr": "…que…",
     "it": "…che…",
     "pt": "…que…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "The person who…",
@@ -465,7 +486,11 @@
     "fr": "La personne qui…",
     "it": "La persona che…",
     "pt": "A pessoa que…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "The thing that…",
@@ -483,7 +508,11 @@
     "fr": "Ce qui…",
     "it": "La cosa che…",
     "pt": "Aquilo que…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "The place that…",
@@ -501,7 +530,10 @@
     "fr": "L’endroit qui…",
     "it": "Il posto che…",
     "pt": "O lugar que…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "…I know.",
@@ -519,7 +551,10 @@
     "fr": "…que je connais.",
     "it": "…che conosco.",
     "pt": "…que conheço."
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "Person or thing?",
@@ -537,7 +572,10 @@
     "fr": "Personne ou chose ?",
     "it": "Persona o cosa?",
     "pt": "Pessoa ou coisa?"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   }
  ],
  "mision": {

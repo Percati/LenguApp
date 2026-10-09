@@ -60,11 +60,26 @@
   "In einem persönlichen Brief oder einer E-Mail an eine bekannte Person wirkt diese Dichte kalt und unpassend distanziert."
  ],
  "contraste": {
-  "es": "Das Spanische hat vereinzelt ähnliche Konstruktionen, kombiniert sie aber nicht mit derselben Systematik zu einem eigenen Registerton. Ein hispanophoner C2-Sprecher erkennt den Verwaltungston beim Lesen sofort, produziert ihn aber oft mit einem persönlicheren, verbaleren Unterton, der im deutschen Original fehlt.",
-  "it": "Das burocratese ist genau diese Verbindung (si procede alla verifica, viene presa in considerazione, non si esclude che), Italienischsprachige kennen den Ton also bestens. Die Gefahr liegt im Wortlaut: Sie übertragen italienische Gefüge und bilden etwa in Betracht nehmen statt in Betracht ziehen.",
-  "fr": "Die französische Verwaltungssprache verbindet dieselben Mittel (procéder à la vérification, prendre en considération, il ne saurait être exclu que), und mit faire l'objet de (fait l'objet d'un examen) hat sie ein besonders nahes Gegenstück zum Funktionsverbgefüge. Französischsprachige treffen den Ton deshalb gut; die Fehlerquelle sind wörtlich übertragene Gefüge.",
-  "pt": "Auch die portugiesische Verwaltungssprache kennt Gefüge wie proceder à verificação oder levar em consideração, kombiniert sie aber seltener mit Passiversatzformen. Portugiesischsprachige treffen den deutschen Ton deshalb nur teilweise und übertragen Gefüge oft wörtlich (in Betracht nehmen statt in Betracht ziehen).",
-  "en": "Das Englische kennt einzelne Funktionsverbgefüge (take into consideration, bring to a conclusion), die englische Verwaltungssprache strebt aber seit Jahren nach Klarheit und Aktiv. Englischsprachige produzieren den deutschen Behördenton deshalb oft zu persönlich und zu aktiv (wir prüfen statt es wird geprüft bzw. ist zu prüfen)."
+  "es": {
+   "de": "Das Spanische hat vereinzelt ähnliche Konstruktionen, kombiniert sie aber nicht mit derselben Systematik zu einem eigenen Registerton. Ein hispanophoner C2-Sprecher erkennt den Verwaltungston beim Lesen sofort, produziert ihn aber oft mit einem persönlicheren, verbaleren Unterton, der im deutschen Original fehlt.",
+   "es": "El español tiene algunas construcciones parecidas, pero no las combina con la misma sistematicidad para crear un tono administrativo propio. Un hispanohablante de C2 reconoce inmediatamente ese registro al leer, pero suele producirlo con un matiz más personal y verbal que no está presente en el original alemán."
+  },
+  "it": {
+   "de": "Das burocratese ist genau diese Verbindung (si procede alla verifica, viene presa in considerazione, non si esclude che), Italienischsprachige kennen den Ton also bestens. Die Gefahr liegt im Wortlaut: Sie übertragen italienische Gefüge und bilden etwa in Betracht nehmen statt in Betracht ziehen.",
+   "it": "Il «burocratese» usa proprio questa combinazione («si procede alla verifica», «viene presa in considerazione», «non si esclude che»), quindi gli italofoni conoscono perfettamente il tono. Il pericolo sta nel trasferire letteralmente le locuzioni italiane e formare, per esempio, «in Betracht nehmen» invece di «in Betracht ziehen»."
+  },
+  "fr": {
+   "de": "Die französische Verwaltungssprache verbindet dieselben Mittel (procéder à la vérification, prendre en considération, il ne saurait être exclu que), und mit faire l'objet de (fait l'objet d'un examen) hat sie ein besonders nahes Gegenstück zum Funktionsverbgefüge. Französischsprachige treffen den Ton deshalb gut; die Fehlerquelle sind wörtlich übertragene Gefüge.",
+   "fr": "Le langage administratif français combine des moyens comparables («procéder à la vérification», «prendre en considération», «il ne saurait être exclu que»), et «faire l'objet de» offre un équivalent particulièrement proche de nombreuses constructions allemandes à verbe support. Les francophones reproduisent donc bien le ton ; les erreurs viennent surtout des groupes traduits trop littéralement."
+  },
+  "pt": {
+   "de": "Auch die portugiesische Verwaltungssprache kennt Gefüge wie proceder à verificação oder levar em consideração, kombiniert sie aber seltener mit Passiversatzformen. Portugiesischsprachige treffen den deutschen Ton deshalb nur teilweise und übertragen Gefüge oft wörtlich (in Betracht nehmen statt in Betracht ziehen).",
+   "pt": "A linguagem administrativa portuguesa também conhece construções como «proceder à verificação» e «levar em consideração», mas as combina com menos frequência com formas substitutas da passiva. Por isso, falantes de português reproduzem apenas parcialmente o tom alemão e frequentemente transferem essas construções de forma literal («in Betracht nehmen» em vez de «in Betracht ziehen»)."
+  },
+  "en": {
+   "de": "Das Englische kennt einzelne Funktionsverbgefüge (take into consideration, bring to a conclusion), die englische Verwaltungssprache strebt aber seit Jahren nach Klarheit und Aktiv. Englischsprachige produzieren den deutschen Behördenton deshalb oft zu persönlich und zu aktiv (wir prüfen statt es wird geprüft bzw. ist zu prüfen).",
+   "en": "English has some light-verb constructions («take into consideration», «bring to a conclusion»), but English administrative style has aimed for clarity and active voice for years. English speakers therefore often make German official style too personal and too active («wir prüfen» instead of «es wird geprüft» or «ist zu prüfen»)."
+  }
  },
  "errores": [
   "Nur eines der drei Mittel verwenden und dadurch den vollen Registerton verfehlen.",
@@ -255,7 +270,12 @@
     "fr": "…est à l’étude.",
     "it": "…è in esame.",
     "pt": "…está a ser considerado/a."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "…lässt sich nicht ausschliessen.",
@@ -266,7 +286,12 @@
     "fr": "…ne peut être exclu(e).",
     "it": "…non si può escludere.",
     "pt": "…não pode ser excluído/a."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "die Berücksichtigung der…",
@@ -277,7 +302,12 @@
     "fr": "la prise en compte de…",
     "it": "la considerazione di…",
     "pt": "a consideração de…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "…wird zur Kenntnis genommen.",
@@ -288,7 +318,12 @@
     "fr": "On prend acte de…",
     "it": "…se ne prende atto.",
     "pt": "Toma-se conhecimento de…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "eine Anpassung der…erfolgt…",
@@ -299,7 +334,12 @@
     "fr": "un ajustement de… est effectué…",
     "it": "viene effettuato un adeguamento di…",
     "pt": "é efetuado um ajuste de…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "…bleibt einer weiteren Prüfung vorbehalten.",
@@ -310,7 +350,12 @@
     "fr": "…reste soumis à un examen ultérieur.",
     "it": "…resta soggetto a ulteriore esame.",
     "pt": "…fica sujeito a uma análise posterior."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "…ist Gegenstand laufender Prüfungen.",
@@ -321,7 +366,14 @@
     "fr": "…fait l'objet d'examens en cours.",
     "it": "…è oggetto di verifiche in corso.",
     "pt": "…é objeto de verificações em curso."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad",
+    "Modalidad (capacidad/obligación)",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Von einer Stellungnahme wird abgesehen.",
@@ -332,7 +384,13 @@
     "fr": "Il est renoncé à toute prise de position.",
     "it": "Si prescinde da una presa di posizione.",
     "pt": "Prescinde-se de tomar posição."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Die Zuständigkeit liegt bei…",
@@ -343,7 +401,12 @@
     "fr": "La compétence relève de…",
     "it": "La competenza spetta a…",
     "pt": "A competência cabe a…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "Im Klartext heisst das: …",
@@ -354,7 +417,12 @@
     "fr": "En clair, cela signifie : …",
     "it": "In parole chiare significa: …",
     "pt": "Em bom português, isso quer dizer: …"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "Eine Fristverlängerung wird in Aussicht gestellt.",
@@ -365,7 +433,13 @@
     "fr": "Une prolongation du délai est envisagée.",
     "it": "Si prospetta una proroga del termine.",
     "pt": "Perspetiva-se uma prorrogação do prazo."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Wer hier handeln müsste, bleibt ungenannt.",
@@ -376,7 +450,12 @@
     "fr": "Qui devrait agir ici n'est pas nommé.",
     "it": "Chi dovrebbe agire qui resta senza nome.",
     "pt": "Quem deveria agir aqui fica por nomear."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   }
  ],
  "mision": {

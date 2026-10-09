@@ -70,11 +70,26 @@
   "Un- kann auch verstärkend wirken statt zu verneinen: ein Unmenge bedeutet sehr viel, nicht keine Menge."
  ],
  "contraste": {
-  "es": "Das Spanische bildet Komposita viel seltener und meist mit einer Präposition dazwischen (la búsqueda de vivienda statt Wohnungssuche). Spanischsprachige zerlegen deutsche Komposita deshalb oft nicht selbstständig und übersetzen oder umschreiben stattdessen, statt das Kompositum direkt zu verstehen oder zu bilden.",
-  "en": "Auch das Englische bildet Komposita weniger frei und verwendet oft zwei getrennte Wörter (housing search statt Wohnungssuche). Englischsprachige können einfache deutsche Komposita meist entschlüsseln, bilden aber selten aktiv neue und weichen auf eine Präpositionalphrase aus (die Suche nach einer Wohnung).",
-  "it": "Das Italienische bildet Komposita meist mit di (ricerca di casa) oder mit dem Kern am Anfang (portachiavi). Im Deutschen steht der Kern immer am Ende (Schlüsselanhänger), was Italienischsprachige bewusst umdrehen müssen. Suffixe übertragen sich dagegen gut: -bile – -bar, -zione – -ung.",
-  "fr": "Das Französische bildet Komposita meist mit de (recherche de logement) oder mit dem Kern am Anfang (timbre-poste). Im Deutschen steht der Kern immer am Ende (Briefmarke), was Französischsprachige bewusst umdrehen müssen. Suffixe übertragen sich gut: -able – -bar, -tion – -ung.",
-  "pt": "Das Portugiesische bildet Komposita meist mit de (procura de casa) oder mit dem Kern am Anfang (guarda-chuva). Im Deutschen steht der Kern immer am Ende (Regenschirm), was Portugiesischsprachige bewusst umdrehen müssen. Suffixe übertragen sich gut: -ável – -bar, -ção – -ung."
+  "es": {
+   "de": "Das Spanische bildet Komposita viel seltener und meist mit einer Präposition dazwischen (la búsqueda de vivienda statt Wohnungssuche). Spanischsprachige zerlegen deutsche Komposita deshalb oft nicht selbstständig und übersetzen oder umschreiben stattdessen, statt das Kompositum direkt zu verstehen oder zu bilden.",
+   "es": "El español forma muchos menos compuestos y normalmente intercala una preposición («la búsqueda de vivienda» frente a «Wohnungssuche»). Por eso, los hispanohablantes suelen no descomponer los compuestos alemanes por sí mismos y prefieren traducirlos o parafrasearlos en lugar de comprenderlos o formarlos directamente."
+  },
+  "en": {
+   "de": "Auch das Englische bildet Komposita weniger frei und verwendet oft zwei getrennte Wörter (housing search statt Wohnungssuche). Englischsprachige können einfache deutsche Komposita meist entschlüsseln, bilden aber selten aktiv neue und weichen auf eine Präpositionalphrase aus (die Suche nach einer Wohnung).",
+   "en": "English also forms compounds less freely and often uses two separate words («housing search» instead of «Wohnungssuche»). English speakers can usually decode simple German compounds, but they rarely coin new ones actively and tend to use a prepositional phrase instead («die Suche nach einer Wohnung»)."
+  },
+  "it": {
+   "de": "Das Italienische bildet Komposita meist mit di (ricerca di casa) oder mit dem Kern am Anfang (portachiavi). Im Deutschen steht der Kern immer am Ende (Schlüsselanhänger), was Italienischsprachige bewusst umdrehen müssen. Suffixe übertragen sich dagegen gut: -bile – -bar, -zione – -ung.",
+   "it": "L'italiano forma i composti soprattutto con «di» («ricerca di casa») o con il nucleo all'inizio («portachiavi»). In tedesco il nucleo è sempre alla fine («Schlüsselanhänger»), e gli italofoni devono quindi invertire consapevolmente la struttura. I suffissi invece si trasferiscono bene: «-bile» – «-bar», «-zione» – «-ung»."
+  },
+  "fr": {
+   "de": "Das Französische bildet Komposita meist mit de (recherche de logement) oder mit dem Kern am Anfang (timbre-poste). Im Deutschen steht der Kern immer am Ende (Briefmarke), was Französischsprachige bewusst umdrehen müssen. Suffixe übertragen sich gut: -able – -bar, -tion – -ung.",
+   "fr": "Le français forme le plus souvent les composés avec «de» («recherche de logement») ou avec le noyau au début («timbre-poste»). En allemand, le noyau se trouve toujours à la fin («Briefmarke»), ce que les francophones doivent consciemment inverser. Les suffixes se transfèrent bien : «-able» – «-bar», «-tion» – «-ung»."
+  },
+  "pt": {
+   "de": "Das Portugiesische bildet Komposita meist mit de (procura de casa) oder mit dem Kern am Anfang (guarda-chuva). Im Deutschen steht der Kern immer am Ende (Regenschirm), was Portugiesischsprachige bewusst umdrehen müssen. Suffixe übertragen sich gut: -ável – -bar, -ção – -ung.",
+   "pt": "O português costuma formar compostos com «de» («procura de casa») ou com o núcleo no início («guarda-chuva»). Em alemão, o núcleo fica sempre no final («Regenschirm»), e falantes de português precisam inverter conscientemente essa ordem. Os sufixos se transferem bem: «-ável» – «-bar», «-ção» – «-ung»."
+  }
  },
  "errores": [
   "Ein -bar-Adjektiv aus einem Verb bilden, das diese Form nicht zulässt.",
@@ -264,7 +279,10 @@
     "fr": "…, mais faisable.",
     "it": "…, ma fattibile.",
     "pt": "…, mas viável."
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "ohne klare…",
@@ -275,7 +293,8 @@
     "fr": "sans… clair(e)",
     "it": "senza un/una… chiaro/a",
     "pt": "sem… claro/a"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Wohnungssuche",
@@ -286,7 +305,8 @@
     "fr": "la recherche d’un logement",
     "it": "la ricerca di un alloggio",
     "pt": "a procura de habitação"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "der Zeitdruck",
@@ -297,7 +317,8 @@
     "fr": "la pression du temps",
     "it": "la pressione del tempo",
     "pt": "a pressão do tempo"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "unausgereift",
@@ -308,7 +329,10 @@
     "fr": "pas encore abouti(e)",
     "it": "non ancora maturo/a",
     "pt": "ainda pouco desenvolvido/a"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "verlängern/verbessern/vertiefen",
@@ -319,7 +343,8 @@
     "fr": "prolonger/améliorer/approfondir",
     "it": "prolungare/migliorare/approfondire",
     "pt": "prolongar/melhorar/aprofundar"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Belastbarkeit",
@@ -330,7 +355,8 @@
     "fr": "la résistance",
     "it": "la resistenza",
     "pt": "a resistência"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "nachvollziehbar",
@@ -341,7 +367,8 @@
     "fr": "compréhensible",
     "it": "comprensibile",
     "pt": "compreensível"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Fristverlängerung",
@@ -352,7 +379,8 @@
     "fr": "la prolongation du délai",
     "it": "la proroga del termine",
     "pt": "a prorrogação do prazo"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "zunehmend",
@@ -363,7 +391,10 @@
     "fr": "de plus en plus",
     "it": "sempre più",
     "pt": "cada vez mais"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "entkräften",
@@ -374,7 +405,8 @@
     "fr": "réfuter",
     "it": "confutare",
     "pt": "refutar"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Das Wort habe ich selbst gebildet.",
@@ -385,7 +417,8 @@
     "fr": "J'ai formé ce mot moi-même.",
     "it": "Quella parola l'ho coniata io.",
     "pt": "Essa palavra fui eu que a formei."
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

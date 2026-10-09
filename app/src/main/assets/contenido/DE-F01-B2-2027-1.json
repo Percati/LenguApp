@@ -56,11 +56,26 @@
   "Ein einzelnes Beispiel macht die Begründung greifbarer als eine abstrakte Aussage."
  ],
  "contraste": {
-  "es": "Das Spanische äussert Meinungen sehr ähnlich direkt (creo que…), sodass die Grundstruktur leicht zu übertragen ist. Der Unterschied liegt eher im Detail: meiner Meinung nach klingt formeller als sein spanisches Gegenstück und wird auf Deutsch häufiger in Diskussionen benutzt, als Spanischsprachige zunächst erwarten.",
-  "it": "Die Grundformeln passen gut: secondo me – meiner Meinung nach, trovo che – ich finde. Eine Falle ist penso che: Im Italienischen folgt der congiuntivo, nach ich denke, dass im Deutschen der Indikativ.",
-  "fr": "Die Grundformeln passen gut: à mon avis – meiner Meinung nach, je trouve que – ich finde, je pense que – ich denke, jeweils mit Indikativ. Die Übertragung gelingt deshalb direkt.",
-  "pt": "Na minha opinião entspricht meiner Meinung nach, und acho que ist die häufigste Alltagsformel. Da achar wörtlich finden bedeutet, passt es gut zu ich finde; für eine vorsichtige Meinung ist ich glaube die bessere Wahl.",
-  "en": "Das englische I think deckt ich finde, ich glaube und ich denke gemeinsam ab. Englischsprachige benutzen deshalb oft ich denke für alles; im Deutschen ist ich finde für Bewertungen und ich glaube für Vermutungen natürlicher."
+  "es": {
+   "de": "Das Spanische äussert Meinungen sehr ähnlich direkt (creo que…), sodass die Grundstruktur leicht zu übertragen ist. Der Unterschied liegt eher im Detail: meiner Meinung nach klingt formeller als sein spanisches Gegenstück und wird auf Deutsch häufiger in Diskussionen benutzt, als Spanischsprachige zunächst erwarten.",
+   "es": "El español expresa opiniones de manera muy parecida y directa («creo que…»), por lo que la estructura básica se transfiere con facilidad. La diferencia está más en el matiz: «meiner Meinung nach» suena más formal que su equivalente español y se usa en alemán en discusiones con más frecuencia de la que los hispanohablantes suelen esperar al principio."
+  },
+  "it": {
+   "de": "Die Grundformeln passen gut: secondo me – meiner Meinung nach, trovo che – ich finde. Eine Falle ist penso che: Im Italienischen folgt der congiuntivo, nach ich denke, dass im Deutschen der Indikativ.",
+   "it": "Le formule di base corrispondono bene: «secondo me» – «meiner Meinung nach», «trovo che» – «ich finde». Un tranello è «penso che»: in italiano segue spesso il congiuntivo, mentre dopo «ich denke, dass» il tedesco usa l'indicativo."
+  },
+  "fr": {
+   "de": "Die Grundformeln passen gut: à mon avis – meiner Meinung nach, je trouve que – ich finde, je pense que – ich denke, jeweils mit Indikativ. Die Übertragung gelingt deshalb direkt.",
+   "fr": "Les formules de base correspondent bien : «à mon avis» – «meiner Meinung nach», «je trouve que» – «ich finde», «je pense que» – «ich denke», toujours avec l'indicatif en français. Le transfert est donc direct."
+  },
+  "pt": {
+   "de": "Na minha opinião entspricht meiner Meinung nach, und acho que ist die häufigste Alltagsformel. Da achar wörtlich finden bedeutet, passt es gut zu ich finde; für eine vorsichtige Meinung ist ich glaube die bessere Wahl.",
+   "pt": "«Na minha opinião» corresponde a «meiner Meinung nach», e «acho que» é uma das fórmulas mais frequentes no uso cotidiano. Como «achar» literalmente significa «encontrar/considerar», ele se aproxima bem de «ich finde»; para uma opinião mais cautelosa, «ich glaube» pode ser a melhor escolha."
+  },
+  "en": {
+   "de": "Das englische I think deckt ich finde, ich glaube und ich denke gemeinsam ab. Englischsprachige benutzen deshalb oft ich denke für alles; im Deutschen ist ich finde für Bewertungen und ich glaube für Vermutungen natürlicher.",
+   "en": "English «I think» covers German «ich finde», «ich glaube» and «ich denke». English speakers therefore often use «ich denke» for everything; in German, «ich finde» is more natural for evaluations and «ich glaube» for assumptions."
+  }
  },
  "errores": [
   "Eine Meinung ohne jede Begründung äussern.",
@@ -228,7 +243,10 @@
     "fr": "Je trouve que…",
     "it": "Penso che…",
     "pt": "Acho que…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "Meiner Meinung nach…",
@@ -239,7 +257,10 @@
     "fr": "À mon avis…",
     "it": "Secondo me…",
     "pt": "Na minha opinião…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "…, weil…",
@@ -250,7 +271,10 @@
     "fr": "…, parce que…",
     "it": "…, perché…",
     "pt": "…, porque…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Zum Beispiel…",
@@ -261,7 +285,10 @@
     "fr": "Par exemple…",
     "it": "Per esempio…",
     "pt": "Por exemplo…"
-   }
+   },
+   "categoriasUso": [
+    "Ejemplificar"
+   ]
   },
   {
    "expresion": "Ich bin der Ansicht, dass…",
@@ -272,7 +299,10 @@
     "fr": "Je suis d’avis que…",
     "it": "Ritengo che…",
     "pt": "Sou da opinião de que…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "Aus diesem Grund…",
@@ -283,7 +313,11 @@
     "fr": "Pour cette raison…",
     "it": "Per questo motivo…",
     "pt": "Por esta razão…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Ich finde das vor allem deshalb…, weil…",
@@ -294,7 +328,10 @@
     "fr": "Je le pense surtout parce que…",
     "it": "La penso così soprattutto perché…",
     "pt": "Penso assim sobretudo porque…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "Ein Beispiel aus meinem Alltag: …",
@@ -305,7 +342,10 @@
     "fr": "Un exemple de mon quotidien : …",
     "it": "Un esempio dalla mia quotidianità: …",
     "pt": "Um exemplo do meu dia a dia: …"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Da bin ich mir ziemlich sicher.",
@@ -316,7 +356,10 @@
     "fr": "J'en suis assez sûr.",
     "it": "Di questo sono abbastanza sicuro.",
     "pt": "Disso estou bastante seguro."
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "Da bin ich mir nicht ganz sicher.",
@@ -327,7 +370,11 @@
     "fr": "Je n'en suis pas tout à fait sûr.",
     "it": "Di questo non sono del tutto sicuro.",
     "pt": "Disso não estou totalmente seguro."
-   }
+   },
+   "categoriasUso": [
+    "Opinar",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Und wie siehst du das?",
@@ -338,7 +385,10 @@
     "fr": "Et toi, comment vois-tu cela ?",
     "it": "E tu come la vedi?",
     "pt": "E tu, como vês isso?"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "Das ist nur meine persönliche Sicht.",
@@ -349,7 +399,10 @@
     "fr": "Ce n'est que mon point de vue personnel.",
     "it": "È solo il mio punto di vista personale.",
     "pt": "É apenas a minha visão pessoal."
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   }
  ],
  "mision": {

@@ -207,11 +207,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische hat keine feste Verbposition und keine Verbletztstellung nach porque. Diese deutsche Regel ist deshalb für Spanischsprachige völlig neu.",
-  "it": "Im Italienischen bleibt das Verb nach perché in der Mitte, das Verb am Ende nach weil ist also neu. Leichter ist die Umstellung im Hauptsatz: Auch im Italienischen kann das Subjekt nach dem Verb stehen (oggi lavora Marco – heute arbeitet Marco).",
-  "fr": "Im Französischen steht das Subjekt fast immer vor dem Verb, auch nach parce que. Neu sind deshalb zwei Dinge: das Verb am Ende nach weil und das Verb vor dem Subjekt in Sätzen wie Heute arbeite ich.",
-  "pt": "Im Portugiesischen bleibt das Verb nach porque in der Mitte, das Verb am Ende ist also neu. Dazu kommt: Im Portugiesischen fällt das Subjekt oft weg (trabalho hoje), im Deutschen muss es immer da sein: Heute arbeite ich.",
-  "en": "Im Englischen steht das Verb nach because in der Mitte (because I have time), Englischsprachige lassen es deshalb oft dort. Neu ist auch das Verb vor dem Subjekt: Heute arbeite ich, nicht heute ich arbeite."
+  "es": {
+   "de": "Das Spanische hat keine feste Verbposition und keine Verbletztstellung nach porque. Diese deutsche Regel ist deshalb für Spanischsprachige völlig neu.",
+   "es": "El español no tiene una posición fija del verbo comparable ni coloca el verbo al final después de «porque». Por eso, esta regla del alemán es completamente nueva para los hispanohablantes."
+  },
+  "it": {
+   "de": "Im Italienischen bleibt das Verb nach perché in der Mitte, das Verb am Ende nach weil ist also neu. Leichter ist die Umstellung im Hauptsatz: Auch im Italienischen kann das Subjekt nach dem Verb stehen (oggi lavora Marco – heute arbeitet Marco).",
+   "it": "In italiano il verbo resta nella sua posizione normale dopo «perché», quindi la posizione finale del verbo dopo «weil» è nuova. Più facile è l'inversione nella frase principale: anche in italiano il soggetto può seguire il verbo («oggi lavora Marco» – «heute arbeitet Marco»)."
+  },
+  "fr": {
+   "de": "Im Französischen steht das Subjekt fast immer vor dem Verb, auch nach parce que. Neu sind deshalb zwei Dinge: das Verb am Ende nach weil und das Verb vor dem Subjekt in Sätzen wie Heute arbeite ich.",
+   "fr": "En français, le sujet précède presque toujours le verbe, y compris après «parce que». Deux choses sont donc nouvelles : le verbe à la fin après «weil» et le verbe avant le sujet dans des phrases comme «Heute arbeite ich»."
+  },
+  "pt": {
+   "de": "Im Portugiesischen bleibt das Verb nach porque in der Mitte, das Verb am Ende ist also neu. Dazu kommt: Im Portugiesischen fällt das Subjekt oft weg (trabalho hoje), im Deutschen muss es immer da sein: Heute arbeite ich.",
+   "pt": "Em português, depois de «porque» o verbo permanece em sua posição normal; por isso, colocá-lo no final depois de «weil» é algo novo. Além disso, em português o sujeito muitas vezes pode ser omitido («trabalho hoje»), enquanto em alemão ele normalmente precisa aparecer: «Heute arbeite ich»."
+  },
+  "en": {
+   "de": "Im Englischen steht das Verb nach because in der Mitte (because I have time), Englischsprachige lassen es deshalb oft dort. Neu ist auch das Verb vor dem Subjekt: Heute arbeite ich, nicht heute ich arbeite.",
+   "en": "In English, the verb stays in its normal position after «because» («because I have time»), so English speakers often leave it there in German too. Another new feature is the verb before the subject: «Heute arbeite ich», not «heute ich arbeite»."
+  }
  },
  "errores": [
   {
@@ -407,7 +422,12 @@
     "fr": "J’habite à…",
     "it": "Abito a…",
     "pt": "Moro em…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Subordinación y conectores",
+    "Opinar"
+   ]
   },
   {
    "expresion": "Heute…ich…",
@@ -425,7 +445,11 @@
     "fr": "Aujourd’hui, je…",
     "it": "Oggi io…",
     "pt": "Hoje eu…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Subordinación y conectores"
+   ]
   },
   {
    "expresion": "…, weil…",
@@ -443,7 +467,12 @@
     "fr": "…, parce que…",
     "it": "…, perché…",
     "pt": "…, porque…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Subordinación y conectores",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Ich lerne Deutsch, weil…",
@@ -461,7 +490,12 @@
     "fr": "J’apprends l’allemand parce que…",
     "it": "Studio il tedesco perché…",
     "pt": "Estou a aprender alemão porque…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Subordinación y conectores",
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Ich arbeite in…",
@@ -479,7 +513,11 @@
     "fr": "Je travaille à/dans…",
     "it": "Lavoro a/in…",
     "pt": "Trabalho em…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Subordinación y conectores"
+   ]
   },
   {
    "expresion": "Jeden Tag…ich…",
@@ -497,7 +535,11 @@
     "fr": "Tous les jours, je…",
     "it": "Ogni giorno…",
     "pt": "Todos os dias eu…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Subordinación y conectores"
+   ]
   },
   {
    "expresion": "Wo steht das Verb?",
@@ -515,7 +557,11 @@
     "fr": "Où va le verbe ?",
     "it": "Dove va il verbo?",
     "pt": "Onde fica o verbo?"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Subordinación y conectores"
+   ]
   }
  ],
  "mision": {
@@ -536,7 +582,14 @@
     "it": "iniziare tre frasi con un'espressione di tempo — verbo in posizione 2",
     "pt": "começar três frases com uma expressão de tempo — verbo na posição 2"
    },
-   "zwei Sätze mit *weil*, Verb am Ende",
+   {
+    "de": "zwei Sätze mit *weil*, Verb am Ende",
+    "en": "two sentences with *weil*, verb at the end",
+    "es": "dos oraciones con *weil*, verbo al final",
+    "fr": "deux phrases avec *weil*, verbe à la fin",
+    "it": "due frasi con *weil*, verbo alla fine",
+    "pt": "duas frases com *weil*, verbo no final"
+   },
    {
     "de": "*die Gemeinde*, *der Schalter* und *unterschreiben* verwenden",
     "en": "use *die Gemeinde*, *der Schalter* and *unterschreiben*",

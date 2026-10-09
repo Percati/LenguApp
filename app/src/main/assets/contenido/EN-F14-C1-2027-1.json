@@ -78,11 +78,26 @@
   "Naming your own uncertainty makes the feedback easier to accept without weakening it."
  ],
  "contraste": {
-  "es": "Spanish has the pieces of structured feedback (lo que funciona muy bien es… – what works really well is…; lo que yo cambiaría es… – what I'd change is…), so the four slots can be filled with direct equivalents.",
-  "de": "Was gut funktioniert, ist… and was ich ändern würde, ist… correspond directly to the English slots, including the cleft structure. Structured feedback therefore transfers directly.",
-  "it": "Quello che funziona bene è… and cambierei… correspond directly to the English slots. Structured feedback therefore transfers directly.",
-  "fr": "Ce qui marche bien, c'est… and ce que je changerais, c'est… correspond directly to the English slots, including the cleft structure. Structured feedback therefore transfers directly.",
-  "pt": "O que funciona bem é… and o que eu mudaria é… correspond directly to the English slots. Structured feedback therefore transfers directly."
+  "es": {
+   "en": "Spanish has the pieces of structured feedback (lo que funciona muy bien es… – what works really well is…; lo que yo cambiaría es… – what I'd change is…), so the four slots can be filled with direct equivalents.",
+   "es": "El español tiene las piezas del feedback estructurado («lo que funciona muy bien es…» – «what works really well is…»; «lo que yo cambiaría es…» – «what I'd change is…»), por lo que las cuatro casillas pueden llenarse con equivalentes directos."
+  },
+  "de": {
+   "en": "Was gut funktioniert, ist… and was ich ändern würde, ist… correspond directly to the English slots, including the cleft structure. Structured feedback therefore transfers directly.",
+   "de": "«Was gut funktioniert, ist…» und «was ich ändern würde, ist…» entsprechen direkt den englischen Mustern, einschließlich der Spaltsatzstruktur. Strukturiertes Feedback lässt sich daher direkt übertragen."
+  },
+  "it": {
+   "en": "Quello che funziona bene è… and cambierei… correspond directly to the English slots. Structured feedback therefore transfers directly.",
+   "it": "«Quello che funziona bene è…» e «cambierei…» corrispondono direttamente agli schemi inglesi. Il feedback strutturato si trasferisce quindi direttamente."
+  },
+  "fr": {
+   "en": "Ce qui marche bien, c'est… and ce que je changerais, c'est… correspond directly to the English slots, including the cleft structure. Structured feedback therefore transfers directly.",
+   "fr": "«Ce qui marche bien, c'est…» et «ce que je changerais, c'est…» correspondent directement aux cadres anglais, y compris la structure clivée. Le feedback structuré se transfère donc directement."
+  },
+  "pt": {
+   "en": "O que funciona bem é… and o que eu mudaria é… correspond directly to the English slots. Structured feedback therefore transfers directly.",
+   "pt": "«O que funciona bem é…» e «o que eu mudaria é…» correspondem diretamente aos moldes ingleses. O feedback estruturado se transfere diretamente."
+  }
  },
  "errores": [
   "*You always* / *You never* — indefensible, and guarantees defensiveness.",
@@ -273,7 +288,10 @@
     "fr": "Je peux te faire un retour ?",
     "it": "Posso darti un feedback?",
     "pt": "Posso dar-te algum feedback?"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "When X happened, the effect was Y",
@@ -284,7 +302,10 @@
     "fr": "Quand X s’est produit, l’effet a été Y.",
     "it": "Quando è successo X, l’effetto è stato Y.",
     "pt": "Quando aconteceu X, o efeito foi Y."
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "That's the bit I'd do differently",
@@ -295,7 +316,10 @@
     "fr": "C’est la partie que je ferais différemment.",
     "it": "È la parte che farei diversamente.",
     "pt": "Essa é a parte que eu faria de outra forma."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "What's your read?",
@@ -306,7 +330,10 @@
     "fr": "Quelle est ton analyse ?",
     "it": "Come la vedi?",
     "pt": "Qual é a tua leitura?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "I might be missing context",
@@ -317,7 +344,8 @@
     "fr": "Il me manque peut-être du contexte.",
     "it": "Forse mi manca del contesto.",
     "pt": "Talvez me falte contexto."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Here's what would help next time",
@@ -328,7 +356,8 @@
     "fr": "Voici ce qui aiderait la prochaine fois…",
     "it": "Ecco cosa aiuterebbe la prossima volta…",
     "pt": "Isto ajudaria da próxima vez…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Two things worked, one didn't",
@@ -339,7 +368,10 @@
     "fr": "Deux choses ont marché, une non.",
     "it": "Due cose hanno funzionato, una no.",
     "pt": "Duas coisas funcionaram, uma não."
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "How do you want to handle it?",
@@ -350,7 +382,8 @@
     "fr": "Comment veux-tu gérer ça ?",
     "it": "Come vuoi gestirla?",
     "pt": "Como queres lidar com isso?"
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

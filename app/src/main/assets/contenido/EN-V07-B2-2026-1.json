@@ -94,11 +94,26 @@
   "One marker per sentence is enough. Two in a row cancel each other out."
  ],
  "contraste": {
-  "es": "Spanish formal writing often builds long sentences with several linked clauses, while English prefers shorter sentences joined with markers (however, as a result). Translating a Spanish paragraph sentence by sentence can produce one very long English sentence.",
-  "de": "German formal writing often packs several subordinate clauses into one sentence, while English prefers shorter sentences joined with markers. The German word also is a false friend: it means so, not also.",
-  "it": "Italian formal writing often uses long, complex sentences, while English prefers shorter ones joined with markers (however, so). Quindi corresponds well to so.",
-  "fr": "French formal writing often uses long sentences, while English prefers shorter ones joined with markers. Donc corresponds well to so, and cependant to however.",
-  "pt": "Portuguese formal writing often uses long sentences, while English prefers shorter ones joined with markers. Portanto corresponds well to so, and no entanto to however."
+  "es": {
+   "en": "Spanish formal writing often builds long sentences with several linked clauses, while English prefers shorter sentences joined with markers (however, as a result). Translating a Spanish paragraph sentence by sentence can produce one very long English sentence.",
+   "es": "La escritura formal en español suele construir oraciones largas con varias cláusulas enlazadas, mientras que el inglés prefiere frases más cortas conectadas con marcadores como «however» o «as a result». Traducir un párrafo español oración por oración puede producir una única frase inglesa demasiado larga."
+  },
+  "de": {
+   "en": "German formal writing often packs several subordinate clauses into one sentence, while English prefers shorter sentences joined with markers. The German word also is a false friend: it means so, not also.",
+   "de": "Formelles Deutsch packt oft mehrere Nebensätze in einen langen Satz, während Englisch kürzere Sätze mit Verknüpfungswörtern bevorzugt. Das deutsche «also» ist außerdem ein falscher Freund: Es bedeutet «so», nicht «also»."
+  },
+  "it": {
+   "en": "Italian formal writing often uses long, complex sentences, while English prefers shorter ones joined with markers (however, so). Quindi corresponds well to so.",
+   "it": "La scrittura formale italiana usa spesso periodi lunghi e complessi, mentre l'inglese preferisce frasi più brevi unite da marcatori come «however» e «so». «Quindi» corrisponde bene a «so»."
+  },
+  "fr": {
+   "en": "French formal writing often uses long sentences, while English prefers shorter ones joined with markers. Donc corresponds well to so, and cependant to however.",
+   "fr": "L'écriture formelle française utilise souvent de longues phrases, tandis que l'anglais préfère des phrases plus courtes reliées par des marqueurs. «Donc» correspond bien à «so», et «cependant» à «however»."
+  },
+  "pt": {
+   "en": "Portuguese formal writing often uses long sentences, while English prefers shorter ones joined with markers. Portanto corresponds well to so, and no entanto to however.",
+   "pt": "A escrita formal em português costuma usar frases longas, enquanto o inglês prefere frases mais curtas ligadas por marcadores. «Portanto» corresponde bem a «so», e «no entanto» a «however»."
+  }
  },
  "errores": [
   "*In the other hand* — it is *on the other hand*.",
@@ -296,7 +311,11 @@
     "fr": "Cela dit, …",
     "it": "Detto questo, …",
     "pt": "Dito isso, …"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Comparación"
+   ]
   },
   {
    "expresion": "On top of that,…",
@@ -307,7 +326,10 @@
     "fr": "En plus de cela, …",
     "it": "Inoltre, …",
     "pt": "Além disso, …"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "…, though.",
@@ -318,7 +340,11 @@
     "fr": "…, cependant.",
     "it": "…, però.",
     "pt": "…, no entanto."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Comparación"
+   ]
   },
   {
    "expresion": "That's why…",
@@ -329,7 +355,10 @@
     "fr": "C’est pourquoi…",
     "it": "Ecco perché…",
     "pt": "Por isso…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "For instance,…",
@@ -340,7 +369,11 @@
     "fr": "Par exemple, …",
     "it": "Per esempio, …",
     "pt": "Por exemplo, …"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Ejemplificar"
+   ]
   },
   {
    "expresion": "I mean,…",
@@ -351,7 +384,11 @@
     "fr": "Je veux dire, …",
     "it": "Voglio dire, …",
     "pt": "Quero dizer, …"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Reformular"
+   ]
   },
   {
    "expresion": "All in all,…",
@@ -362,7 +399,10 @@
     "fr": "Dans l’ensemble, …",
     "it": "Tutto sommato, …",
     "pt": "No geral, …"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Given that…",
@@ -373,7 +413,11 @@
     "fr": "Étant donné que…",
     "it": "Dato che…",
     "pt": "Dado que…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Dar razones"
+   ]
   }
  ],
  "mision": {

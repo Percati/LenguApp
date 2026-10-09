@@ -60,11 +60,26 @@
   "Einfacher gesagt und ehrlich gesagt sind nützliche, kontrollierte Brücken vom formellen zum informellen Register."
  ],
  "contraste": {
-  "es": "Der bewusste Registerbruch wird im Deutschen oft ausdrücklich angekündigt (salopp gesagt, um es deutlich zu sagen). Das Spanische hat dafür passende Formeln (por decirlo llanamente, valga la expresión), die sich gut als Brücke nutzen lassen.",
-  "it": "Der bewusste Registerbruch wird im Deutschen oft ausdrücklich angekündigt (salopp gesagt, um es deutlich zu sagen). Das Italienische hat dafür passende Formeln (detto in parole povere, per dirla tutta), die sich gut als Brücke nutzen lassen.",
-  "fr": "Das Französische kündigt den Registerbruch mit festen Formeln an (passez-moi l'expression, pour parler familièrement), die genau wenn Sie mir den Ausdruck erlauben oder salopp gesagt entsprechen. Die Technik ist also vertraut.",
-  "pt": "Das Portugiesische kündigt den Registerbruch mit passe a expressão an, was genau wenn Sie mir den Ausdruck erlauben entspricht. Die Technik ist also vertraut.",
-  "en": "Englischsprachige sind informelle Einschübe in Sachtexten gewohnt, und die Ankündigungsformeln passen gut (to put it bluntly – um es deutlich zu sagen, salopp gesagt). Die Technik überträgt sich deshalb leicht."
+  "es": {
+   "de": "Der bewusste Registerbruch wird im Deutschen oft ausdrücklich angekündigt (salopp gesagt, um es deutlich zu sagen). Das Spanische hat dafür passende Formeln (por decirlo llanamente, valga la expresión), die sich gut als Brücke nutzen lassen.",
+   "es": "En alemán, una ruptura deliberada de registro suele anunciarse explícitamente («salopp gesagt», «um es deutlich zu sagen»). El español dispone de fórmulas adecuadas como «por decirlo llanamente» o «valga la expresión», que funcionan bien como puente."
+  },
+  "it": {
+   "de": "Der bewusste Registerbruch wird im Deutschen oft ausdrücklich angekündigt (salopp gesagt, um es deutlich zu sagen). Das Italienische hat dafür passende Formeln (detto in parole povere, per dirla tutta), die sich gut als Brücke nutzen lassen.",
+   "it": "Il cambio consapevole di registro viene spesso annunciato esplicitamente in tedesco («salopp gesagt», «um es deutlich zu sagen»). L'italiano ha formule adatte («detto in parole povere», «per dirla tutta»), che costituiscono un buon ponte."
+  },
+  "fr": {
+   "de": "Das Französische kündigt den Registerbruch mit festen Formeln an (passez-moi l'expression, pour parler familièrement), die genau wenn Sie mir den Ausdruck erlauben oder salopp gesagt entsprechen. Die Technik ist also vertraut.",
+   "fr": "Le français annonce lui aussi une rupture de registre par des formules fixes («passez-moi l'expression», «pour parler familièrement»), qui correspondent bien à «wenn Sie mir den Ausdruck erlauben» ou «salopp gesagt». La technique est donc familière."
+  },
+  "pt": {
+   "de": "Das Portugiesische kündigt den Registerbruch mit passe a expressão an, was genau wenn Sie mir den Ausdruck erlauben entspricht. Die Technik ist also vertraut.",
+   "pt": "O português pode anunciar uma quebra de registro com «passe a expressão», que corresponde muito bem a «wenn Sie mir den Ausdruck erlauben». A técnica, portanto, é familiar."
+  },
+  "en": {
+   "de": "Englischsprachige sind informelle Einschübe in Sachtexten gewohnt, und die Ankündigungsformeln passen gut (to put it bluntly – um es deutlich zu sagen, salopp gesagt). Die Technik überträgt sich deshalb leicht.",
+   "en": "English speakers are used to informal parenthetical comments in factual texts, and the signalling formulas match well («to put it bluntly» – «um es deutlich zu sagen», «salopp gesagt»). The technique therefore transfers easily."
+  }
  },
  "errores": [
   "Mehr als einen Registerbruch in einem kurzen Text setzen, was die Konsistenz zerstört statt einen Effekt zu erzielen.",
@@ -254,7 +269,8 @@
     "fr": "…, et, franchement, …",
     "it": "…, e, francamente, …",
     "pt": "…, e, francamente, …"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Einfacher gesagt, …",
@@ -265,7 +281,8 @@
     "fr": "Pour le dire plus simplement, …",
     "it": "Per dirla più semplicemente, …",
     "pt": "Dito de forma mais simples, …"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "…, um es milde auszudrücken.",
@@ -276,7 +293,11 @@
     "fr": "…, pour le dire gentiment",
     "it": "…, per dirla con delicatezza",
     "pt": "…, para dizer de forma suave"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "…, was höflich ausgedrückt ist.",
@@ -287,7 +308,8 @@
     "fr": "…, ce qui est une façon polie de le dire",
     "it": "…, che è un modo educato di dirlo",
     "pt": "…, que é uma forma educada de o dizer"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Kurz gesagt: …",
@@ -298,7 +320,8 @@
     "fr": "En bref : …",
     "it": "In breve: …",
     "pt": "Em suma: …"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "…, wenn ich das offen sagen darf.",
@@ -309,7 +332,8 @@
     "fr": "…, si je peux le dire franchement",
     "it": "…, se posso dirlo apertamente",
     "pt": "…, se me é permitido dizê-lo abertamente"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Der Form halber: …",
@@ -320,7 +344,8 @@
     "fr": "Pour la forme : …",
     "it": "Per la forma: …",
     "pt": "Pela forma: …"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Unter uns gesagt: …",
@@ -331,7 +356,8 @@
     "fr": "Entre nous : …",
     "it": "Detto tra noi: …",
     "pt": "Entre nós: …"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Ich formuliere es einmal so, wie es im Protokoll stehen würde: …",
@@ -342,7 +368,8 @@
     "fr": "Je le formule comme cela figurerait au procès-verbal : …",
     "it": "Lo formulo come apparirebbe a verbale: …",
     "pt": "Formulo-o como constaria na ata: …"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Und jetzt ohne Amtsdeutsch: …",
@@ -353,7 +380,8 @@
     "fr": "Et maintenant, sans jargon administratif : …",
     "it": "E ora senza linguaggio burocratico: …",
     "pt": "E agora sem linguagem administrativa: …"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Bleiben wir doch beim Sie, das macht es einfacher.",
@@ -364,7 +392,11 @@
     "fr": "Restons-en au vouvoiement, c'est plus simple.",
     "it": "Restiamo sul lei, è più semplice.",
     "pt": "Fiquemos pelo tratamento formal, é mais simples."
-   }
+   },
+   "categoriasUso": [
+    "Saludar y despedirse",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Das sage ich jetzt als Privatperson, nicht im Namen der Stelle.",
@@ -375,7 +407,8 @@
     "fr": "Je dis cela à titre privé, non au nom du service.",
     "it": "Lo dico a titolo personale, non a nome dell'ufficio.",
     "pt": "Digo isto a título pessoal, não em nome do serviço."
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

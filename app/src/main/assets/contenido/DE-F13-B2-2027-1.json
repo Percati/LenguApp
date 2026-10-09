@@ -60,11 +60,26 @@
   "Bei Unsicherheit ist Sie die sicherere Wahl in einer ersten Nachricht an eine unbekannte Person."
  ],
  "contraste": {
-  "es": "Das Spanische hat mit tú und usted eine ähnliche Unterscheidung, deren Gebrauch aber je nach Land und Region stark schwankt. Spanischsprachige sollten deshalb nicht von ihrer eigenen Varietät ausgehen: Am deutschsprachigen Arbeitsplatz gilt meist Sie gegenüber Unbekannten und Kunden und du unter Kollegen im Alltag, und der Wechsel wird ausdrücklich angeboten (Wollen wir uns duzen?).",
-  "it": "Tu und Lei entsprechen du und Sie. Eine Falle ist die Verbform: Lei steht mit der 3. Person Singular (Lei è), Sie aber mit der Pluralform (Sie sind), was zu Sie ist verleitet.",
-  "fr": "Tu und vous entsprechen du und Sie sehr genau: vous ist wie Sie zugleich Höflichkeitsform und Plural und steht mit der Pluralform des Verbs (vous êtes – Sie sind). Die Anrede überträgt sich deshalb problemlos.",
-  "pt": "Die Anrede passt nicht eins zu eins: você steht mit der 3. Person Singular (você é), was zu Sie ist statt Sie sind verleitet. Im europäischen Portugiesisch kann você zudem distanziert wirken; o senhor / a senhora entspricht dort eher dem deutschen Sie.",
-  "en": "Das Englische kennt keine Unterscheidung zwischen du und Sie, die Anrede ist deshalb ganz neu. Im Zweifel ist Sie die richtige Wahl, immer gross geschrieben und mit der Pluralform des Verbs (Sie sind)."
+  "es": {
+   "de": "Das Spanische hat mit tú und usted eine ähnliche Unterscheidung, deren Gebrauch aber je nach Land und Region stark schwankt. Spanischsprachige sollten deshalb nicht von ihrer eigenen Varietät ausgehen: Am deutschsprachigen Arbeitsplatz gilt meist Sie gegenüber Unbekannten und Kunden und du unter Kollegen im Alltag, und der Wechsel wird ausdrücklich angeboten (Wollen wir uns duzen?).",
+   "es": "El español tiene una distinción parecida entre «tú» y «usted», pero su uso varía mucho según el país y la región. Por eso, los hispanohablantes no deberían partir automáticamente de su propia variedad: en un entorno laboral germanófono suele usarse «Sie» con desconocidos y clientes y «du» entre compañeros en el trato cotidiano, y el cambio se propone de forma explícita («Wollen wir uns duzen?»)."
+  },
+  "it": {
+   "de": "Tu und Lei entsprechen du und Sie. Eine Falle ist die Verbform: Lei steht mit der 3. Person Singular (Lei è), Sie aber mit der Pluralform (Sie sind), was zu Sie ist verleitet.",
+   "it": "«Tu» e «Lei» corrispondono a «du» e «Sie». Un tranello è la forma verbale: «Lei» usa la terza persona singolare («Lei è»), mentre «Sie» usa il plurale («Sie sind»), il che può portare all'errore «Sie ist»."
+  },
+  "fr": {
+   "de": "Tu und vous entsprechen du und Sie sehr genau: vous ist wie Sie zugleich Höflichkeitsform und Plural und steht mit der Pluralform des Verbs (vous êtes – Sie sind). Die Anrede überträgt sich deshalb problemlos.",
+   "fr": "«Tu» et «vous» correspondent très exactement à «du» et «Sie» : «vous», comme «Sie», est à la fois une forme de politesse et une forme plurielle et se construit avec le verbe au pluriel («vous êtes» – «Sie sind»). L'adresse se transfère donc sans difficulté majeure."
+  },
+  "pt": {
+   "de": "Die Anrede passt nicht eins zu eins: você steht mit der 3. Person Singular (você é), was zu Sie ist statt Sie sind verleitet. Im europäischen Portugiesisch kann você zudem distanziert wirken; o senhor / a senhora entspricht dort eher dem deutschen Sie.",
+   "pt": "A forma de tratamento não corresponde exatamente: «você» usa a terceira pessoa do singular («você é»), o que pode levar ao erro «Sie ist» em vez de «Sie sind». No português europeu, «você» pode ainda soar distante; «o senhor / a senhora» costuma se aproximar mais do alemão «Sie»."
+  },
+  "en": {
+   "de": "Das Englische kennt keine Unterscheidung zwischen du und Sie, die Anrede ist deshalb ganz neu. Im Zweifel ist Sie die richtige Wahl, immer gross geschrieben und mit der Pluralform des Verbs (Sie sind).",
+   "en": "English has no distinction between «du» and «Sie», so the choice of address is entirely new. When in doubt, «Sie» is the safer option; it is always capitalized and takes the plural verb form («Sie sind»)."
+  }
  },
  "errores": [
   "Du und Sie in derselben E-Mail mischen.",
@@ -232,7 +247,10 @@
     "fr": "Madame, Monsieur,",
     "it": "Gentili Signore e Signori,",
     "pt": "Exmos. Senhores,"
-   }
+   },
+   "categoriasUso": [
+    "Saludar y despedirse"
+   ]
   },
   {
    "expresion": "Hallo [Name],",
@@ -243,7 +261,10 @@
     "fr": "Salut [Nom],",
     "it": "Ciao [Nome],",
     "pt": "Olá [Nome],"
-   }
+   },
+   "categoriasUso": [
+    "Saludar y despedirse"
+   ]
   },
   {
    "expresion": "Mit freundlichen Grüssen",
@@ -254,7 +275,10 @@
     "fr": "Cordialement,",
     "it": "Cordiali saluti,",
     "pt": "Com os melhores cumprimentos,"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Liebe Grüsse",
@@ -265,7 +289,10 @@
     "fr": "Bien à toi,",
     "it": "Un caro saluto,",
     "pt": "Um abraço,"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Ich schreibe Ihnen bezüglich…",
@@ -276,7 +303,10 @@
     "fr": "Je vous écris au sujet de…",
     "it": "Le scrivo in merito a…",
     "pt": "Escrevo-lhe a respeito de…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Hey, wie geht's?",
@@ -287,7 +317,10 @@
     "fr": "Salut, ça va ?",
     "it": "Ehi, come va?",
     "pt": "Olá, como estás?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Können wir uns duzen?",
@@ -298,7 +331,11 @@
     "fr": "On peut se tutoyer ?",
     "it": "Possiamo darci del tu?",
     "pt": "Podemos tratar-nos por tu?"
-   }
+   },
+   "categoriasUso": [
+    "Saludar y despedirse",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Sehr geehrte Frau …, / Sehr geehrter Herr …,",
@@ -309,7 +346,10 @@
     "fr": "Madame …, / Monsieur …,",
     "it": "Gentile signora …, / Gentile signor …,",
     "pt": "Exma. Senhora …, / Exmo. Senhor …,"
-   }
+   },
+   "categoriasUso": [
+    "Saludar y despedirse"
+   ]
   },
   {
    "expresion": "Vielen Dank für Ihre Nachricht.",
@@ -320,7 +360,10 @@
     "fr": "Merci beaucoup pour votre message.",
     "it": "Grazie molte per il suo messaggio.",
     "pt": "Muito obrigado pela sua mensagem."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Melde dich einfach.",
@@ -331,7 +374,11 @@
     "fr": "Fais-moi signe.",
     "it": "Fammi sapere.",
     "pt": "É só dizeres."
-   }
+   },
+   "categoriasUso": [
+    "Pedir",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Ich hoffe, ich konnte weiterhelfen.",
@@ -342,7 +389,10 @@
     "fr": "J'espère avoir pu vous aider.",
     "it": "Spero di essere stato d'aiuto.",
     "pt": "Espero ter ajudado."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Entschuldigen Sie die späte Antwort.",
@@ -353,7 +403,10 @@
     "fr": "Veuillez excuser ma réponse tardive.",
     "it": "Mi scusi per la risposta tardiva.",
     "pt": "Desculpe a resposta tardia."
-   }
+   },
+   "categoriasUso": [
+    "Agradecer y disculparse"
+   ]
   }
  ],
  "mision": {

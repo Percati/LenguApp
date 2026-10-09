@@ -85,11 +85,26 @@
   "*alle* verlangt schwach, obwohl es wie ein Mengenwort aussieht. Das ist die häufigste Ausnahme."
  ],
  "contraste": {
-  "es": "Spanisch dekliniert Adjektive nur nach Genus und Numerus, nie nach Kasus und nie in Abhängigkeit vom Artikel. Es gibt also keine Struktur zum Übertragen: reines Neuland. Daher die lange Fossilierung.",
-  "en": "Das Englische dekliniert Adjektive **überhaupt nicht**: *the fresh fish*, *a fresh fish*, *fresh fish*. Es gibt also weder Genus noch Kasus noch Artikelabhängigkeit zu übertragen. Für Englischsprachige ist die Adjektivdeklination deshalb schwerer als für Spanischsprachige, die immerhin Genus und Numerus kennen — hier ist wirklich alles neu.",
-  "it": "Das Italienische markiert am Adjektiv Genus und Numerus, und zwar gut hörbar (*-o, -a, -i, -e*). Italienischsprachige hören Endungen also, ordnen sie aber reflexartig dem Genus zu – dass die deutsche Endung vom Artikel und vom Kasus abhängt, ist dagegen völlig neu.",
-  "fr": "Das Französische markiert am Adjektiv Genus und Numerus, aber vieles davon nur in der Schrift (*bleu/bleue/bleus* klingen gleich). Französischsprachige haben deshalb ein schwaches Ohr für Endungen, und genau über das Hören werden die deutschen Adjektivendungen meist gefestigt – hier lohnt sich lautes Üben besonders.",
-  "pt": "Das Portugiesische markiert am Adjektiv nur Genus und Numerus, im europäischen Portugiesisch sind unbetonte Endungen zudem oft kaum hörbar. Die deutschen Endungen, die von Artikel und Kasus abhängen, sind also Neuland und müssen über viel Hören und lautes Sprechen gefestigt werden."
+  "es": {
+   "de": "Spanisch dekliniert Adjektive nur nach Genus und Numerus, nie nach Kasus und nie in Abhängigkeit vom Artikel. Es gibt also keine Struktur zum Übertragen: reines Neuland. Daher die lange Fossilierung.",
+   "es": "En español, los adjetivos solo concuerdan en género y número, nunca en caso ni según el tipo de artículo. No hay, por tanto, una estructura previa que transferir: es terreno completamente nuevo. De ahí que los errores se fosilicen durante mucho tiempo."
+  },
+  "en": {
+   "de": "Das Englische dekliniert Adjektive **überhaupt nicht**: *the fresh fish*, *a fresh fish*, *fresh fish*. Es gibt also weder Genus noch Kasus noch Artikelabhängigkeit zu übertragen. Für Englischsprachige ist die Adjektivdeklination deshalb schwerer als für Spanischsprachige, die immerhin Genus und Numerus kennen — hier ist wirklich alles neu.",
+   "en": "English does not decline adjectives at all: «the fresh fish», «a fresh fish», «fresh fish». There is therefore no gender, case or article-dependent adjective ending to transfer. For English speakers, German adjective declension is consequently especially difficult: the whole system is new."
+  },
+  "it": {
+   "de": "Das Italienische markiert am Adjektiv Genus und Numerus, und zwar gut hörbar (*-o, -a, -i, -e*). Italienischsprachige hören Endungen also, ordnen sie aber reflexartig dem Genus zu – dass die deutsche Endung vom Artikel und vom Kasus abhängt, ist dagegen völlig neu.",
+   "it": "L'italiano marca genere e numero sull'aggettivo in modo ben udibile («-o, -a, -i, -e»). Gli italofoni sono quindi sensibili alle desinenze, ma le associano istintivamente al genere; il fatto che in tedesco la desinenza dipenda anche dall'articolo e dal caso è invece del tutto nuovo."
+  },
+  "fr": {
+   "de": "Das Französische markiert am Adjektiv Genus und Numerus, aber vieles davon nur in der Schrift (*bleu/bleue/bleus* klingen gleich). Französischsprachige haben deshalb ein schwaches Ohr für Endungen, und genau über das Hören werden die deutschen Adjektivendungen meist gefestigt – hier lohnt sich lautes Üben besonders.",
+   "fr": "Le français marque le genre et le nombre sur l'adjectif, mais beaucoup de ces marques ne s'entendent qu'à l'écrit («bleu/bleue/bleus» se prononcent pareil). Les francophones ont donc souvent une faible sensibilité auditive aux terminaisons, alors que c'est précisément par l'écoute qu'on automatise les terminaisons allemandes ; le travail à voix haute est particulièrement utile ici."
+  },
+  "pt": {
+   "de": "Das Portugiesische markiert am Adjektiv nur Genus und Numerus, im europäischen Portugiesisch sind unbetonte Endungen zudem oft kaum hörbar. Die deutschen Endungen, die von Artikel und Kasus abhängen, sind also Neuland und müssen über viel Hören und lautes Sprechen gefestigt werden.",
+   "pt": "O português marca no adjetivo apenas gênero e número; no português europeu, terminações átonas ainda podem ser pouco perceptíveis na fala. As terminações alemãs, que dependem do artigo e do caso, são portanto terreno novo e precisam ser consolidadas com muita escuta e prática em voz alta."
+  }
  },
  "errores": [
   "Artikellose Mengenangaben falsch: *eine Tasse heissem Tee* statt *heisser Tee*.",
@@ -292,7 +307,12 @@
     "fr": "On prend…",
     "it": "Si prende…",
     "pt": "Pega-se…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación",
+    "Describir un proceso o camino",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "Zuerst wird… angebraten",
@@ -303,7 +323,12 @@
     "fr": "D’abord, on fait revenir…",
     "it": "Per prima cosa si rosola…",
     "pt": "Primeiro, aloura-se…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación",
+    "Organizar el discurso",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "Dazu passt…",
@@ -314,7 +339,11 @@
     "fr": "… accompagne bien cela",
     "it": "Ci sta bene…",
     "pt": "Combina bem com…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Das schmeckt eher…",
@@ -325,7 +354,11 @@
     "fr": "Cela a plutôt un goût…",
     "it": "Ha un sapore piuttosto…",
     "pt": "Tem um sabor mais…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Ich würde… hinzufügen",
@@ -336,7 +369,11 @@
     "fr": "J’ajouterais…",
     "it": "Aggiungerei…",
     "pt": "Eu acrescentaria…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Bei uns isst man…",
@@ -347,7 +384,10 @@
     "fr": "Chez nous, on mange…",
     "it": "Da noi si mangia…",
     "pt": "Na nossa região come-se…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "Zum Schluss abschmecken",
@@ -358,7 +398,11 @@
     "fr": "Pour finir, assaisonner à son goût",
     "it": "Alla fine, aggiustare di sapore",
     "pt": "No fim, temperar a gosto"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Das ist typisch für…",
@@ -369,7 +413,10 @@
     "fr": "C’est typique de…",
     "it": "È tipico di…",
     "pt": "É típico de…"
-   }
+   },
+   "categoriasUso": [
+    "Caso y declinación"
+   ]
   }
  ],
  "mision": {

@@ -60,11 +60,26 @@
   "Diese Wörter zu erkennen ist wichtiger als sie selbst zu benutzen — beim Zuhören begegnet man ihnen ständig."
  ],
  "contraste": {
-  "es": "Das Spanische hat ein ähnliches System aus umgangssprachlichen und formellen Varianten, allerdings mit anderen konkreten Wörtern. Das Konzept ist also bekannt, aber die deutschen Wörter selbst müssen neu gelernt werden.",
-  "it": "Das Italienische kennt ähnliche Paare aus Alltags- und Standardwort (lavoro – Arbeit, im Alltag auch Job), das Prinzip ist also vertraut. Die deutschen Wörter selbst müssen neu gelernt werden, ebenso wann sie im Schreiben auffallen.",
-  "fr": "Das Französische kennt ähnliche Paare aus Alltags- und Standardwort (boulot – travail, bouquin – livre), das Prinzip ist also sehr vertraut. Die deutschen Wörter müssen neu gelernt werden.",
-  "pt": "Das Portugiesische kennt ähnliche Paare aus Alltags- und Standardwort (im Brasilianischen etwa trampo – trabalho), das Prinzip ist also vertraut. Die deutschen Wörter müssen neu gelernt werden.",
-  "en": "Viele deutsche Alltagswörter sind englische Lehnwörter (Job, cool, okay), die im Deutschen informeller klingen als im Englischen. Englischsprachige setzen sie deshalb leicht in formellen Texten ein, wo Arbeit oder Stelle passender wäre."
+  "es": {
+   "de": "Das Spanische hat ein ähnliches System aus umgangssprachlichen und formellen Varianten, allerdings mit anderen konkreten Wörtern. Das Konzept ist also bekannt, aber die deutschen Wörter selbst müssen neu gelernt werden.",
+   "es": "El español también tiene un sistema de variantes coloquiales y formales, aunque los marcadores concretos sean distintos. El concepto es conocido, pero las palabras alemanas correspondientes deben aprenderse de nuevo."
+  },
+  "it": {
+   "de": "Das Italienische kennt ähnliche Paare aus Alltags- und Standardwort (lavoro – Arbeit, im Alltag auch Job), das Prinzip ist also vertraut. Die deutschen Wörter selbst müssen neu gelernt werden, ebenso wann sie im Schreiben auffallen.",
+   "it": "L'italiano conosce coppie simili tra parola quotidiana e standard; il principio è quindi familiare. Vanno però imparati i termini tedeschi concreti e soprattutto i contesti in cui una parola colloquiale risulta evidente nello scritto."
+  },
+  "fr": {
+   "de": "Das Französische kennt ähnliche Paare aus Alltags- und Standardwort (boulot – travail, bouquin – livre), das Prinzip ist also sehr vertraut. Die deutschen Wörter müssen neu gelernt werden.",
+   "fr": "Le français connaît des couples comparables entre registre courant et familier («boulot» – «travail», «bouquin» – «livre»), donc le principe est très familier. Les mots allemands eux-mêmes doivent toutefois être appris."
+  },
+  "pt": {
+   "de": "Das Portugiesische kennt ähnliche Paare aus Alltags- und Standardwort (im Brasilianischen etwa trampo – trabalho), das Prinzip ist also vertraut. Die deutschen Wörter müssen neu gelernt werden.",
+   "pt": "O português conhece pares semelhantes entre palavra coloquial e padrão — no Brasil, por exemplo, «trampo» e «trabalho» —, então o princípio é familiar. O vocabulário alemão concreto, porém, precisa ser aprendido."
+  },
+  "en": {
+   "de": "Viele deutsche Alltagswörter sind englische Lehnwörter (Job, cool, okay), die im Deutschen informeller klingen als im Englischen. Englischsprachige setzen sie deshalb leicht in formellen Texten ein, wo Arbeit oder Stelle passender wäre.",
+   "en": "Many everyday German words are English loanwords («Job», «cool», «okay») that sound more informal in German than in English. English speakers therefore tend to use them in formal texts where «Arbeit» or «Stelle» would be more appropriate."
+  }
  },
  "errores": [
   "Umgangssprachliche Wörter in einem formellen Text verwenden.",
@@ -254,7 +269,8 @@
     "fr": "le pote / copain",
     "it": "l’amico / il compare",
     "pt": "o amigo / o companheiro"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Kohle",
@@ -265,7 +281,8 @@
     "fr": "le fric / le pognon",
     "it": "i soldi / la grana",
     "pt": "a massa / o dinheiro"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "checken",
@@ -276,7 +293,8 @@
     "fr": "comprendre / piger",
     "it": "capire / afferrare",
     "pt": "perceber / sacar"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "abhauen",
@@ -287,7 +305,8 @@
     "fr": "se tirer / partir",
     "it": "andarsene / filarsela",
     "pt": "baz(ar) / ir-se embora"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "quatschen",
@@ -298,7 +317,8 @@
     "fr": "bavarder",
     "it": "chiacchierare",
     "pt": "conversar"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "der Job",
@@ -309,7 +329,8 @@
     "fr": "le boulot",
     "it": "il lavoro",
     "pt": "o trabalho"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "krass",
@@ -320,7 +341,8 @@
     "fr": "dingue",
     "it": "assurdo",
     "pt": "brutal"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "nerven",
@@ -331,7 +353,8 @@
     "fr": "énerver",
     "it": "scocciare",
     "pt": "chatear"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Bude",
@@ -342,7 +365,8 @@
     "fr": "la piaule",
     "it": "la stanzetta",
     "pt": "o quarto, a casinha"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Das passt schon.",
@@ -353,7 +377,10 @@
     "fr": "Ça ira.",
     "it": "Va bene così.",
     "pt": "Está bem assim."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Wie bitte?",
@@ -364,7 +391,10 @@
     "fr": "Pardon ?",
     "it": "Come, scusi?",
     "pt": "Como disse?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Im Bewerbungsschreiben besser nicht.",
@@ -375,7 +405,8 @@
     "fr": "Dans une candidature, mieux vaut éviter.",
     "it": "In una candidatura, meglio di no.",
     "pt": "Numa candidatura, é melhor não."
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

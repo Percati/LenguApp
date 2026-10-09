@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish uses voy a very much like going to, so the structure transfers directly.",
-  "de": "German often uses the present for the future (Morgen besuche ich meine Oma), which leads to Tomorrow I visit my grandma instead of I'm going to visit. Be careful with will: ich will means I want, not I will.",
-  "it": "Italian often uses the present for the future (domani parto), which leads to Tomorrow I leave instead of I'm going to leave or I'm leaving. The Italian future corresponds to will for predictions.",
-  "fr": "French je vais + infinitive corresponds exactly to going to (je vais visiter ma grand-mère – I'm going to visit my grandma), and the French future to will. French speakers therefore transfer the two forms well.",
-  "pt": "Portuguese vou + infinitive (vou visitar a minha avó) corresponds exactly to going to, so plans transfer directly. The simple future is rare in spoken Portuguese, so Portuguese speakers tend to under-use will."
+  "es": {
+   "en": "Spanish uses voy a very much like going to, so the structure transfers directly.",
+   "es": "El español usa «voy a» de forma muy parecida a «going to», por lo que la estructura se transfiere directamente."
+  },
+  "de": {
+   "en": "German often uses the present for the future (Morgen besuche ich meine Oma), which leads to Tomorrow I visit my grandma instead of I'm going to visit. Be careful with will: ich will means I want, not I will.",
+   "de": "Im Deutschen steht für Zukünftiges oft das Präsens («Morgen besuche ich meine Oma»), was zu «Tomorrow I visit my grandma» statt «I'm going to visit my grandma» führen kann. Vorsicht mit «will»: Das deutsche «ich will» bedeutet «I want», nicht «I will»."
+  },
+  "it": {
+   "en": "Italian often uses the present for the future (domani parto), which leads to Tomorrow I leave instead of I'm going to leave or I'm leaving. The Italian future corresponds to will for predictions.",
+   "it": "L'italiano usa spesso il presente per il futuro («domani parto»), il che porta a «Tomorrow I leave» invece di «I'm going to leave» o «I'm leaving». Il futuro italiano corrisponde a «will» per le previsioni."
+  },
+  "fr": {
+   "en": "French je vais + infinitive corresponds exactly to going to (je vais visiter ma grand-mère – I'm going to visit my grandma), and the French future to will. French speakers therefore transfer the two forms well.",
+   "fr": "Le français «je vais» + infinitif correspond exactement à «going to» («je vais visiter ma grand-mère» – «I'm going to visit my grandma»), et le futur français à «will». Les francophones transfèrent donc bien les deux formes."
+  },
+  "pt": {
+   "en": "Portuguese vou + infinitive (vou visitar a minha avó) corresponds exactly to going to, so plans transfer directly. The simple future is rare in spoken Portuguese, so Portuguese speakers tend to under-use will.",
+   "pt": "«Vou» + infinitivo («vou visitar a minha avó») corresponde exatamente a «going to», então os planos se transferem diretamente. O futuro simples é pouco usado na fala em português, por isso falantes de português tendem a usar pouco «will»."
+  }
  },
  "errores": [
   {
@@ -429,7 +444,10 @@
     "fr": "Je vais + infinitif…",
     "it": "Ho intenzione di…",
     "pt": "Vou + infinitivo…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "I'll…",
@@ -447,7 +465,10 @@
     "fr": "Je vais…",
     "it": "Farò…",
     "pt": "Vou…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "I'm…-ing at…",
@@ -465,7 +486,11 @@
     "fr": "Je… à…",
     "it": "Alle… + presente",
     "pt": "Às… + presente"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "It's going to…",
@@ -483,7 +508,12 @@
     "fr": "Ça va…",
     "it": "Sta per…",
     "pt": "Vai…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Dar razones",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "What are you going to do?",
@@ -501,7 +531,10 @@
     "fr": "Qu’est-ce que tu vas faire ?",
     "it": "Che cosa farai?",
     "pt": "O que vais fazer?"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "I probably won't…",
@@ -519,7 +552,11 @@
     "fr": "Je ne vais probablement pas…",
     "it": "Probabilmente non…",
     "pt": "Provavelmente não vou…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Is it a plan or a decision right now?",
@@ -537,7 +574,10 @@
     "fr": "Un projet ou une décision immédiate ?",
     "it": "Un piano o una decisione immediata?",
     "pt": "É um plano ou uma decisão de agora?"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   }
  ],
  "mision": {

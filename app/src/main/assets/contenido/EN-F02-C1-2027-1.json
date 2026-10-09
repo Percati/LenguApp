@@ -90,11 +90,26 @@
   "*With respect* is a warning sign in British English — it almost always precedes a demolition. Use knowingly or not at all."
  ],
  "contraste": {
-  "es": "Spanish softens disagreement with formulas like no sé si estoy del todo de acuerdo, which corresponds well to I'm not sure I entirely agree. A literal no estoy de acuerdo (I don't agree) sounds blunter in English professional contexts than it usually does in Spanish.",
-  "de": "Das sehe ich etwas anders corresponds exactly to I see it slightly differently, a very useful diplomatic formula. The literal I am of another opinion sounds stiff; I'm not sure I agree is the natural English choice.",
-  "it": "Non sono del tutto d'accordo corresponds well to I don't entirely agree, and la vedo un po' diversamente to I see it slightly differently. Diplomatic disagreement therefore transfers directly.",
-  "fr": "Je ne suis pas tout à fait d'accord corresponds well to I don't entirely agree, and je vois les choses un peu différemment to I see it slightly differently. Diplomatic disagreement therefore transfers directly.",
-  "pt": "Não concordo inteiramente corresponds well to I don't entirely agree, and vejo isso de outra forma to I see it differently. Diplomatic disagreement therefore transfers directly."
+  "es": {
+   "en": "Spanish softens disagreement with formulas like no sé si estoy del todo de acuerdo, which corresponds well to I'm not sure I entirely agree. A literal no estoy de acuerdo (I don't agree) sounds blunter in English professional contexts than it usually does in Spanish.",
+   "es": "El español suaviza el desacuerdo con fórmulas como «no sé si estoy del todo de acuerdo», que corresponde bien a «I'm not sure I entirely agree». El literal «no estoy de acuerdo» («I don't agree») suena más brusco en contextos profesionales ingleses de lo que suele sonar en español."
+  },
+  "de": {
+   "en": "Das sehe ich etwas anders corresponds exactly to I see it slightly differently, a very useful diplomatic formula. The literal I am of another opinion sounds stiff; I'm not sure I agree is the natural English choice.",
+   "de": "«Das sehe ich etwas anders» entspricht genau «I see it slightly differently» und ist eine sehr nützliche diplomatische Formel. Das wörtliche «I am of another opinion» klingt steif; natürlicher ist «I'm not sure I agree»."
+  },
+  "it": {
+   "en": "Non sono del tutto d'accordo corresponds well to I don't entirely agree, and la vedo un po' diversamente to I see it slightly differently. Diplomatic disagreement therefore transfers directly.",
+   "it": "«Non sono del tutto d'accordo» corrisponde bene a «I don't entirely agree», e «la vedo un po' diversamente» a «I see it slightly differently». Il disaccordo diplomatico si trasferisce quindi direttamente."
+  },
+  "fr": {
+   "en": "Je ne suis pas tout à fait d'accord corresponds well to I don't entirely agree, and je vois les choses un peu différemment to I see it slightly differently. Diplomatic disagreement therefore transfers directly.",
+   "fr": "«Je ne suis pas tout à fait d'accord» correspond bien à «I don't entirely agree», et «je vois les choses un peu différemment» à «I see it slightly differently». Le désaccord diplomatique se transfère donc directement."
+  },
+  "pt": {
+   "en": "Não concordo inteiramente corresponds well to I don't entirely agree, and vejo isso de outra forma to I see it differently. Diplomatic disagreement therefore transfers directly.",
+   "pt": "«Não concordo inteiramente» corresponde bem a «I don't entirely agree», e «vejo isso de outra forma» a «I see it differently». O desacordo diplomático, portanto, se transfere diretamente."
+  }
  },
  "errores": [
   "*You are wrong* — grammatically fine, socially expensive, rare in professional English.",
@@ -284,7 +299,11 @@
     "fr": "Je le vois différemment.",
     "it": "La vedo diversamente.",
     "pt": "Eu vejo isso de outra forma."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I'd challenge the assumption",
@@ -295,7 +314,10 @@
     "fr": "Je remettrais l’hypothèse en question.",
     "it": "Metterei in discussione l’assunto.",
     "pt": "Eu questionaria esse pressuposto."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Help me understand how…",
@@ -306,7 +328,11 @@
     "fr": "Aide-moi à comprendre comment…",
     "it": "Aiutami a capire come…",
     "pt": "Ajuda-me a perceber como…"
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I don't think that follows",
@@ -317,7 +343,10 @@
     "fr": "Je ne pense pas que cela en découle.",
     "it": "Non credo che ne consegua.",
     "pt": "Não acho que isso se siga daí."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I'm going to push back on that",
@@ -328,7 +357,10 @@
     "fr": "Je vais contester ce point.",
     "it": "Su questo devo dissentire.",
     "pt": "Vou discordar disso."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Where we differ is…",
@@ -339,7 +371,11 @@
     "fr": "Là où nous divergeons, c’est…",
     "it": "Dove differiamo è…",
     "pt": "Onde divergimos é…"
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Yes, and the difficulty is…",
@@ -350,7 +386,10 @@
     "fr": "Oui, et la difficulté, c’est…",
     "it": "Sì, e la difficoltà è…",
     "pt": "Sim, e a dificuldade é…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "That's true of X, less so of Y",
@@ -361,7 +400,10 @@
     "fr": "C’est vrai pour X, moins pour Y.",
     "it": "Questo vale per X, meno per Y.",
     "pt": "Isso é verdade para X, menos para Y."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   }
  ],
  "mision": {

@@ -60,11 +60,26 @@
   "In plainer terms and frankly are useful, controlled bridges from formal to informal register."
  ],
  "contraste": {
-  "es": "Formal Spanish tolerates a deliberate change of register within one text less than contemporary English, where a single well-placed informal turn counts as style rather than carelessness. Spanish speakers at C2 therefore tend to avoid register shifts altogether and lose a rhetorical tool professional English expects.",
-  "de": "Separable verbs give German speakers a structural feel for phrasal verbs, so the forms themselves are easy. What is less familiar is the deliberate drop into informal register within a formal text, which German professional writing generally avoids, so German speakers keep the whole piece at the Latinate end.",
-  "it": "Because Latinate English verbs are transparent to Italian speakers (investigate – investigare), the formal end of the register ladder feels safest. The deliberate drop into a phrasal verb for rhetorical effect is less familiar, as formal Italian tends to stay at one register throughout a text.",
-  "fr": "Latinate English verbs are transparent to French speakers (investigate – enquêter, investiguer), and formal French writing keeps a stable, carefully policed register. French speakers therefore stay at the formal end and rarely risk a deliberate informal turn in English.",
-  "pt": "Latinate English verbs are transparent to Portuguese speakers (investigate – investigar), so the formal end of the ladder feels safest. The deliberate informal turn within a formal text is less common in Portuguese professional writing and has to be practised as a conscious stylistic choice."
+  "es": {
+   "en": "Formal Spanish tolerates a deliberate change of register within one text less than contemporary English, where a single well-placed informal turn counts as style rather than carelessness. Spanish speakers at C2 therefore tend to avoid register shifts altogether and lose a rhetorical tool professional English expects.",
+   "es": "El español formal tolera menos que el inglés contemporáneo un cambio deliberado de registro dentro del mismo texto, donde un giro informal bien colocado se considera estilo y no descuido. Por eso, los hispanohablantes de C2 tienden a evitar por completo los cambios de registro y pierden una herramienta retórica habitual en el inglés profesional."
+  },
+  "de": {
+   "en": "Separable verbs give German speakers a structural feel for phrasal verbs, so the forms themselves are easy. What is less familiar is the deliberate drop into informal register within a formal text, which German professional writing generally avoids, so German speakers keep the whole piece at the Latinate end.",
+   "de": "Trennbare Verben geben Deutschsprachigen ein strukturelles Gefühl für phrasal verbs, daher sind die Formen selbst leicht. Weniger vertraut ist der bewusste Wechsel in ein informelleres Register innerhalb eines formellen Textes, den deutsche Fachsprache meist vermeidet. Deutschsprachige bleiben daher oft durchgehend am lateinisch-formellen Ende."
+  },
+  "it": {
+   "en": "Because Latinate English verbs are transparent to Italian speakers (investigate – investigare), the formal end of the register ladder feels safest. The deliberate drop into a phrasal verb for rhetorical effect is less familiar, as formal Italian tends to stay at one register throughout a text.",
+   "it": "Poiché i verbi inglesi di origine latina sono trasparenti per gli italofoni («investigate» – «investigare»), il polo formale della scala di registro sembra il più sicuro. Il passaggio deliberato a un phrasal verb per effetto retorico è meno familiare, perché l'italiano formale tende a mantenere un unico registro per tutto il testo."
+  },
+  "fr": {
+   "en": "Latinate English verbs are transparent to French speakers (investigate – enquêter, investiguer), and formal French writing keeps a stable, carefully policed register. French speakers therefore stay at the formal end and rarely risk a deliberate informal turn in English.",
+   "fr": "Les verbes anglais d'origine latine sont transparents pour les francophones («investigate» – «enquêter, investiguer»), et le français formel maintient un registre stable et très contrôlé. Les francophones restent donc au pôle formel et osent rarement un virage volontairement informel en anglais."
+  },
+  "pt": {
+   "en": "Latinate English verbs are transparent to Portuguese speakers (investigate – investigar), so the formal end of the ladder feels safest. The deliberate informal turn within a formal text is less common in Portuguese professional writing and has to be practised as a conscious stylistic choice.",
+   "pt": "Verbos ingleses de origem latina são transparentes para falantes de português («investigate» – «investigar»), então o extremo formal da escala parece mais seguro. A virada deliberadamente informal dentro de um texto formal é menos comum na escrita profissional em português e precisa ser praticada como escolha estilística consciente."
+  }
  },
  "errores": [
   "Shifting register more than once in a short text, which breaks consistency instead of adding effect.",
@@ -254,7 +269,10 @@
     "fr": "…, et, franchement, …",
     "it": "…, e, francamente, …",
     "pt": "…, e, francamente, …"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "In plainer terms, …",
@@ -265,7 +283,10 @@
     "fr": "En termes plus simples,…",
     "it": "Detto in termini più semplici,…",
     "pt": "Dito de forma mais simples,…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "…, to put it mildly.",
@@ -276,7 +297,10 @@
     "fr": "…, pour le dire gentiment.",
     "it": "…, per dirla con delicatezza.",
     "pt": "…, para dizer de forma suave."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "…, though I should note that…",
@@ -287,7 +311,10 @@
     "fr": "…, même si je dois préciser que…",
     "it": "…, anche se dovrei osservare che…",
     "pt": "…, embora deva assinalar que…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Put simply, …",
@@ -298,7 +325,10 @@
     "fr": "Pour le dire simplement,…",
     "it": "In parole semplici,…",
     "pt": "Dito de forma simples,…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "…, which is a polite way of saying…",
@@ -309,7 +339,10 @@
     "fr": "…, ce qui est une façon polie de dire…",
     "it": "…, che è un modo educato per dire…",
     "pt": "…, que é uma forma educada de dizer…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "I'll stay in one register for this bit.",
@@ -320,7 +353,10 @@
     "fr": "Pour ce passage, je reste dans un seul registre.",
     "it": "Per questa parte resto su un solo registro.",
     "pt": "Nesta parte fico num só registo."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "That shift wasn't deliberate — let me redo it.",
@@ -331,7 +367,11 @@
     "fr": "Ce glissement n'était pas voulu — je reprends.",
     "it": "Quello slittamento non era voluto — rifaccio.",
     "pt": "Essa mudança não foi propositada — refaço."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Reformular"
+   ]
   },
   {
    "expresion": "The idiom would undercut the point here.",
@@ -342,7 +382,11 @@
     "fr": "L'expression imagée affaiblirait ici le propos.",
     "it": "Qui il modo di dire indebolirebbe il punto.",
     "pt": "Aqui a expressão idiomática enfraqueceria o argumento."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "…, or, in the language of the report, …",
@@ -353,7 +397,10 @@
     "fr": "…, ou, dans la langue du rapport, …",
     "it": "…, o, nella lingua del rapporto, …",
     "pt": "…, ou, na linguagem do relatório, …"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Who's in the room decides the wording.",
@@ -364,7 +411,11 @@
     "fr": "Qui est dans la pièce décide de la formulation.",
     "it": "Chi è nella stanza decide la formulazione.",
     "pt": "Quem está na sala decide a formulação."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Comparación"
+   ]
   },
   {
    "expresion": "I'd rather sound blunt than evasive.",
@@ -375,7 +426,10 @@
     "fr": "Je préfère paraître abrupt qu'évasif.",
     "it": "Preferisco sembrare brusco che evasivo.",
     "pt": "Prefiro parecer brusco a parecer evasivo."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   }
  ],
  "mision": {

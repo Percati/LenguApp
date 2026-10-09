@@ -60,11 +60,26 @@
   "Etwas in Anspruch nehmen bedeutet, ein Angebot oder eine Leistung zu nutzen."
  ],
  "contraste": {
-  "es": "Das Spanische hat vereinzelt ähnliche Konstruktionen (tomar en consideración), aber deutlich seltener und weniger systematisch als das Deutsche. Spanischsprachige greifen deshalb meist zum einfachen Verb.",
-  "it": "Viele Funktionsverbgefüge haben italienische Entsprechungen: giocare un ruolo – eine Rolle spielen, mettere a disposizione – zur Verfügung stellen. Italienischsprachige erkennen die Konstruktion deshalb leicht.",
-  "fr": "Viele Funktionsverbgefüge haben französische Entsprechungen: jouer un rôle – eine Rolle spielen, mettre à disposition – zur Verfügung stellen, entrer en ligne de compte – in Frage kommen. Französischsprachige erkennen die Konstruktion deshalb leicht.",
-  "pt": "Einige Funktionsverbgefüge haben portugiesische Entsprechungen (pôr à disposição – zur Verfügung stellen). Bei eine Rolle spielen verleitet desempenhar um papel zu Formen wie eine Rolle erfüllen, das deutsche Verb ist aber spielen.",
-  "en": "Einige Funktionsverbgefüge haben englische Entsprechungen (play a role – eine Rolle spielen, take into account – berücksichtigen, in Betracht ziehen). Englischsprachige erkennen die Konstruktion deshalb, müssen die deutschen Verben aber einzeln lernen."
+  "es": {
+   "de": "Das Spanische hat vereinzelt ähnliche Konstruktionen (tomar en consideración), aber deutlich seltener und weniger systematisch als das Deutsche. Spanischsprachige greifen deshalb meist zum einfachen Verb.",
+   "es": "El español tiene algunas construcciones parecidas («tomar en consideración»), pero son mucho menos frecuentes y sistemáticas que en alemán. Por eso, los hispanohablantes suelen recurrir al verbo simple."
+  },
+  "it": {
+   "de": "Viele Funktionsverbgefüge haben italienische Entsprechungen: giocare un ruolo – eine Rolle spielen, mettere a disposizione – zur Verfügung stellen. Italienischsprachige erkennen die Konstruktion deshalb leicht.",
+   "it": "Molte costruzioni con verbo supporto hanno equivalenti italiani: «giocare un ruolo» – «eine Rolle spielen», «mettere a disposizione» – «zur Verfügung stellen». Gli italofoni riconoscono quindi facilmente il tipo di costruzione."
+  },
+  "fr": {
+   "de": "Viele Funktionsverbgefüge haben französische Entsprechungen: jouer un rôle – eine Rolle spielen, mettre à disposition – zur Verfügung stellen, entrer en ligne de compte – in Frage kommen. Französischsprachige erkennen die Konstruktion deshalb leicht.",
+   "fr": "De nombreuses constructions à verbe support ont des équivalents français : «jouer un rôle» – «eine Rolle spielen», «mettre à disposition» – «zur Verfügung stellen», «entrer en ligne de compte» – «in Frage kommen». Les francophones reconnaissent donc facilement le type de construction."
+  },
+  "pt": {
+   "de": "Einige Funktionsverbgefüge haben portugiesische Entsprechungen (pôr à disposição – zur Verfügung stellen). Bei eine Rolle spielen verleitet desempenhar um papel zu Formen wie eine Rolle erfüllen, das deutsche Verb ist aber spielen.",
+   "pt": "Algumas construções com verbo-suporte têm equivalentes em português («pôr à disposição» – «zur Verfügung stellen»). Em «eine Rolle spielen», porém, «desempenhar um papel» pode levar a formas como «eine Rolle erfüllen», enquanto o verbo alemão correto é «spielen»."
+  },
+  "en": {
+   "de": "Einige Funktionsverbgefüge haben englische Entsprechungen (play a role – eine Rolle spielen, take into account – berücksichtigen, in Betracht ziehen). Englischsprachige erkennen die Konstruktion deshalb, müssen die deutschen Verben aber einzeln lernen.",
+   "en": "Some German light-verb constructions have English counterparts («play a role» – «eine Rolle spielen», «take into account» – «berücksichtigen / in Betracht ziehen»). English speakers therefore recognize the construction, but still need to learn the specific German verb in each expression."
+  }
  },
  "errores": [
   "Das feste Verb durch ein Synonym ersetzen.",
@@ -232,7 +247,10 @@
     "fr": "mettre quelque chose à disposition",
     "it": "mettere qualcosa a disposizione",
     "pt": "disponibilizar algo"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "etwas in Betracht ziehen",
@@ -243,7 +261,10 @@
     "fr": "prendre quelque chose en considération",
     "it": "prendere qualcosa in considerazione",
     "pt": "ter algo em consideração"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "etwas in Anspruch nehmen",
@@ -254,7 +275,11 @@
     "fr": "recourir à quelque chose / utiliser quelque chose",
     "it": "usufruire di qualcosa",
     "pt": "recorrer a algo / utilizar algo"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Kritik üben an",
@@ -265,7 +290,10 @@
     "fr": "critiquer",
     "it": "criticare",
     "pt": "criticar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "zum Ausdruck bringen",
@@ -276,7 +304,10 @@
     "fr": "exprimer",
     "it": "esprimere",
     "pt": "expressar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "in Kraft treten",
@@ -287,7 +318,10 @@
     "fr": "entrer en vigueur",
     "it": "entrare in vigore",
     "pt": "entrar em vigor"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "eine Entscheidung treffen",
@@ -298,7 +332,10 @@
     "fr": "prendre une décision",
     "it": "prendere una decisione",
     "pt": "tomar uma decisão"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "in Frage kommen",
@@ -309,7 +346,11 @@
     "fr": "entrer en ligne de compte",
     "it": "essere preso in considerazione",
     "pt": "estar em consideração"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "zur Sprache bringen",
@@ -320,7 +361,10 @@
     "fr": "aborder un sujet",
     "it": "portare all'attenzione",
     "pt": "trazer à conversa"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "in Anspruch nehmen",
@@ -331,7 +375,10 @@
     "fr": "faire appel à",
     "it": "usufruire di",
     "pt": "usufruir de"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "eine Rolle spielen",
@@ -342,7 +389,10 @@
     "fr": "jouer un rôle",
     "it": "avere un ruolo",
     "pt": "desempenhar um papel"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Das einfache Verb reicht hier.",
@@ -353,7 +403,10 @@
     "fr": "Le verbe simple suffit ici.",
     "it": "Qui basta il verbo semplice.",
     "pt": "Aqui basta o verbo simples."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   }
  ],
  "mision": {

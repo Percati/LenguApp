@@ -111,11 +111,26 @@
   "Das Höflichkeitsregister ist schriftlich formeller als in Deutschland, mündlich oft weniger."
  ],
  "contraste": {
-  "es": "Die Lage ist vergleichbar mit dem Rioplatense gegenüber dem peninsularen Spanisch: eine vollwertige Standardvarietät, die in ihrem Raum korrekt und ausserhalb markiert ist. Der Fehler wäre, sie als „Dialekt\" einzuordnen.",
-  "en": "Das Englische kennt dieselbe Lage aus eigener Erfahrung: britisches und amerikanisches Standardenglisch unterscheiden sich in Wortschatz (*lift* / *elevator*) und Rechtschreibung (*colour* / *color*), und beides ist in seinem Raum korrekt. Das Verhältnis Schweizer Hochdeutsch zu bundesdeutschem Standard ist genau parallel. Englischsprachige verstehen das Prinzip also sofort — der Fehler ist eher, Mundart und Standardvarietät zu verwechseln.",
-  "it": "Die Lage ist vergleichbar mit dem Schweizer Italienisch gegenüber dem Italienischen in Italien: eine vollwertige Standardvarietät mit eigenen Wörtern. Wer sie als Dialekt einordnet, verkennt, dass Schweizer Hochdeutsch in seinem Raum korrekt ist.",
-  "fr": "Die Lage ist vergleichbar mit dem Schweizer oder belgischen Französisch (septante, nonante): eine vollwertige Standardvarietät, die in ihrem Raum korrekt ist. Französischsprachige erkennen dieses Prinzip deshalb schnell.",
-  "pt": "Die Lage ist vergleichbar mit europäischem und brasilianischem Portugiesisch: zwei vollwertige Standardvarietäten mit eigenem Wortschatz. Portugiesischsprachige erkennen dieses Prinzip deshalb schnell."
+  "es": {
+   "de": "Die Lage ist vergleichbar mit dem Rioplatense gegenüber dem peninsularen Spanisch: eine vollwertige Standardvarietät, die in ihrem Raum korrekt und ausserhalb markiert ist. Der Fehler wäre, sie als „Dialekt\" einzuordnen.",
+   "es": "La situación es comparable a la relación entre el español rioplatense y el peninsular: una variedad estándar plenamente válida, correcta en su ámbito y marcada fuera de él. El error sería clasificarla simplemente como «dialecto»."
+  },
+  "en": {
+   "de": "Das Englische kennt dieselbe Lage aus eigener Erfahrung: britisches und amerikanisches Standardenglisch unterscheiden sich in Wortschatz (*lift* / *elevator*) und Rechtschreibung (*colour* / *color*), und beides ist in seinem Raum korrekt. Das Verhältnis Schweizer Hochdeutsch zu bundesdeutschem Standard ist genau parallel. Englischsprachige verstehen das Prinzip also sofort — der Fehler ist eher, Mundart und Standardvarietät zu verwechseln.",
+   "en": "English speakers know this situation from their own language: British and American Standard English differ in vocabulary («lift» / «elevator») and spelling («colour» / «color»), and both are correct within their respective varieties. The relationship between Swiss Standard German and the standard used in Germany is directly comparable. English speakers usually understand the principle immediately; the more common error is confusing dialect with a standard variety."
+  },
+  "it": {
+   "de": "Die Lage ist vergleichbar mit dem Schweizer Italienisch gegenüber dem Italienischen in Italien: eine vollwertige Standardvarietät mit eigenen Wörtern. Wer sie als Dialekt einordnet, verkennt, dass Schweizer Hochdeutsch in seinem Raum korrekt ist.",
+   "it": "La situazione è paragonabile all'italiano svizzero rispetto all'italiano d'Italia: una varietà standard pienamente valida, con alcune parole proprie. Considerarla semplicemente un dialetto significherebbe non riconoscere che lo standard svizzero tedesco è corretto nel proprio ambito."
+  },
+  "fr": {
+   "de": "Die Lage ist vergleichbar mit dem Schweizer oder belgischen Französisch (septante, nonante): eine vollwertige Standardvarietät, die in ihrem Raum korrekt ist. Französischsprachige erkennen dieses Prinzip deshalb schnell.",
+   "fr": "La situation est comparable au français de Suisse ou de Belgique («septante», «nonante») : une variété standard à part entière, correcte dans son espace. Les francophones comprennent donc rapidement le principe."
+  },
+  "pt": {
+   "de": "Die Lage ist vergleichbar mit europäischem und brasilianischem Portugiesisch: zwei vollwertige Standardvarietäten mit eigenem Wortschatz. Portugiesischsprachige erkennen dieses Prinzip deshalb schnell.",
+   "pt": "A situação é comparável à do português europeu e brasileiro: duas variedades-padrão plenas, com vocabulário próprio. Por isso, falantes de português reconhecem esse princípio rapidamente."
+  }
  },
  "errores": [
   "Mundart und Standard verwechseln: *gäll*, *lueg*, *scho* gehören **nicht** ins Schriftdeutsch, *Velo* und *parkieren* schon.",
@@ -331,7 +346,8 @@
     "fr": "Lors de la dernière séance, nous avons…",
     "it": "In occasione dell’ultima riunione abbiamo…",
     "pt": "Na última reunião, nós…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Als Traktandum 3 wurde behandelt…",
@@ -342,7 +358,8 @@
     "fr": "Au point 3 de l’ordre du jour, il a été question de…",
     "it": "Al punto 3 dell’ordine del giorno si è trattato…",
     "pt": "No ponto 3 da ordem de trabalhos foi tratado…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Allfällige Rückfragen richten Sie bitte an…",
@@ -353,7 +370,8 @@
     "fr": "Pour toute question éventuelle, veuillez vous adresser à…",
     "it": "Per eventuali domande, rivolgersi a…",
     "pt": "Para eventuais questões, contacte…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Die Pendenz bleibt offen",
@@ -364,7 +382,8 @@
     "fr": "Le point reste en suspens",
     "it": "La pendenza resta aperta",
     "pt": "O assunto continua pendente"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Zuständig ist…",
@@ -375,7 +394,10 @@
     "fr": "La personne responsable est…",
     "it": "Il responsabile è…",
     "pt": "O responsável é…"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Termin: bis spätestens…",
@@ -386,7 +408,10 @@
     "fr": "Délai : au plus tard le…",
     "it": "Termine: entro e non oltre…",
     "pt": "Prazo: o mais tardar até…"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Zur Kenntnis genommen",
@@ -397,7 +422,8 @@
     "fr": "Pris acte",
     "it": "Preso atto",
     "pt": "Tomado conhecimento"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Beschlossen wurde, dass…",
@@ -408,7 +434,10 @@
     "fr": "Il a été décidé que…",
     "it": "È stato deciso che…",
     "pt": "Foi decidido que…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {

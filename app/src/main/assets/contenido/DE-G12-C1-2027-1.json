@@ -66,11 +66,26 @@
   "Fachverben wie ergeben, aufzeigen, belegen passen zum nominalen Wissenschaftsstil und ersetzen ein einfaches zeigen."
  ],
  "contraste": {
-  "es": "Das Spanische nominalisiert insgesamt weniger und bevorzugt auch im Bericht oft Infinitivkonstruktionen (tras revisar la instalación). Spanischsprachige unternominalisieren deshalb systematisch im deutschen Bericht und müssen aktiv gegensteuern, nicht nur eine Regel anwenden.",
-  "en": "Englische Fachtexte sind bei gleicher Formalität meist weniger nominal als deutsche, zumal englische Stilratgeber ausdrücklich zum Verbalstil raten. Englischsprachige unternominalisieren deutsche Berichte deshalb, obwohl ihnen die Mittel (Gerundium, Nominalisierung) grammatisch vertraut sind, und empfinden den Nominalstil eher als schwerfällig denn als angemessen.",
-  "it": "Durch das burocratese ist Italienischsprachigen ein stark nominaler Verwaltungsstil gut bekannt, der Nominalstil selbst ist also kein Fremdkörper. Die Aufgabe liegt eher darin, die di-Ketten mit echtem Genitiv zu bilden und den Nominalstil in informellen Texten bewusst zurückzunehmen.",
-  "fr": "Das formelle Französisch ist mindestens so nominal wie das Deutsche (après vérification de l'installation – nach Überprüfung der Anlage), Französischsprachige nominalisieren also ohne Mühe. Der typische Fehler ist die Übertragung von de als von statt eines echten Genitivs: die Überprüfung von der Anlage.",
-  "pt": "Das Portugiesische hält den Verbalstil noch leichter durch als das Spanische, weil der infinitivo pessoal auch mit eigenem Subjekt funktioniert (após verificarmos a instalação). Portugiesischsprachige unternominalisieren deshalb besonders stark und müssen im deutschen Bericht bewusst auf Nominalphrasen umstellen (nach Überprüfung der Anlage)."
+  "es": {
+   "de": "Das Spanische nominalisiert insgesamt weniger und bevorzugt auch im Bericht oft Infinitivkonstruktionen (tras revisar la instalación). Spanischsprachige unternominalisieren deshalb systematisch im deutschen Bericht und müssen aktiv gegensteuern, nicht nur eine Regel anwenden.",
+   "es": "En general, el español nominaliza menos y, también en los informes, suele preferir construcciones de infinitivo («tras revisar la instalación»). Por eso, los hispanohablantes tienden a verbalizar sistemáticamente el estilo nominal de los informes alemanes y deben contrarrestar conscientemente esa tendencia, no solo aplicar una regla."
+  },
+  "en": {
+   "de": "Englische Fachtexte sind bei gleicher Formalität meist weniger nominal als deutsche, zumal englische Stilratgeber ausdrücklich zum Verbalstil raten. Englischsprachige unternominalisieren deutsche Berichte deshalb, obwohl ihnen die Mittel (Gerundium, Nominalisierung) grammatisch vertraut sind, und empfinden den Nominalstil eher als schwerfällig denn als angemessen.",
+   "en": "At the same level of formality, English technical texts are usually less nominal than German ones, especially because English style guides explicitly encourage verbal style. English speakers therefore de-nominalize German reports even though gerunds and nominalization are grammatically familiar to them, and they tend to perceive German nominal style as cumbersome rather than appropriately formal."
+  },
+  "it": {
+   "de": "Durch das burocratese ist Italienischsprachigen ein stark nominaler Verwaltungsstil gut bekannt, der Nominalstil selbst ist also kein Fremdkörper. Die Aufgabe liegt eher darin, die di-Ketten mit echtem Genitiv zu bilden und den Nominalstil in informellen Texten bewusst zurückzunehmen.",
+   "it": "Grazie al «burocratese», agli italofoni è ben noto uno stile amministrativo fortemente nominale, quindi il nominalismo non è estraneo. Il compito è piuttosto trasformare le catene con «di» in veri genitivi e ridurre consapevolmente lo stile nominale nei testi informali."
+  },
+  "fr": {
+   "de": "Das formelle Französisch ist mindestens so nominal wie das Deutsche (après vérification de l'installation – nach Überprüfung der Anlage), Französischsprachige nominalisieren also ohne Mühe. Der typische Fehler ist die Übertragung von de als von statt eines echten Genitivs: die Überprüfung von der Anlage.",
+   "fr": "Le français formel est au moins aussi nominal que l'allemand («après vérification de l'installation» – «nach Überprüfung der Anlage»), donc les francophones nominalisent sans difficulté. L'erreur typique est plutôt de traduire «de» par «von» au lieu d'un véritable génitif : «die Überprüfung von der Anlage»."
+  },
+  "pt": {
+   "de": "Das Portugiesische hält den Verbalstil noch leichter durch als das Spanische, weil der infinitivo pessoal auch mit eigenem Subjekt funktioniert (após verificarmos a instalação). Portugiesischsprachige unternominalisieren deshalb besonders stark und müssen im deutschen Bericht bewusst auf Nominalphrasen umstellen (nach Überprüfung der Anlage).",
+   "pt": "O português mantém o estilo verbal ainda mais facilmente que o espanhol, porque o infinitivo pessoal permite até sujeito próprio («após verificarmos a instalação»). Por isso, falantes de português tendem a desfazer fortemente as nominalizações e precisam passar conscientemente para sintagmas nominais em relatórios alemães («nach Überprüfung der Anlage»)."
+  }
  },
  "errores": [
   "Nominalstil in einer informellen E-Mail verwenden, wo er unpassend wirkt.",
@@ -260,7 +275,10 @@
     "fr": "Après l’achèvement de…",
     "it": "Dopo il completamento di…",
     "pt": "Após a conclusão de…"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Die Untersuchung ergab, dass…",
@@ -271,7 +289,10 @@
     "fr": "L’enquête a révélé que…",
     "it": "L’indagine ha rilevato che…",
     "pt": "A investigação revelou que…"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Sobald wir … haben, …",
@@ -282,7 +303,10 @@
     "fr": "Dès que nous aurons…, …",
     "it": "Non appena avremo…, …",
     "pt": "Assim que tivermos…, …"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Im Rahmen der Untersuchung wurde festgestellt, dass…",
@@ -293,7 +317,11 @@
     "fr": "Dans le cadre de l’enquête, il a été constaté que…",
     "it": "Nell’ambito dell’indagine è stato constatato che…",
     "pt": "No âmbito da investigação, constatou-se que…"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Kurz gesagt, wir haben…",
@@ -304,7 +332,11 @@
     "fr": "En bref, nous avons…",
     "it": "In breve, abbiamo…",
     "pt": "Resumindo, nós…"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Die Feststellung lautet, dass…",
@@ -315,7 +347,10 @@
     "fr": "Le constat est que…",
     "it": "La constatazione è che…",
     "pt": "A constatação é que…"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Verbal gesagt waere das klarer.",
@@ -326,7 +361,10 @@
     "fr": "Dit avec des verbes, ce serait plus clair.",
     "it": "Detto con i verbi sarebbe più chiaro.",
     "pt": "Dito com verbos seria mais claro."
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   }
  ],
  "mision": {

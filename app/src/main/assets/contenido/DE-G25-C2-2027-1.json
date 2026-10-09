@@ -56,11 +56,26 @@
   "Appositionen sind in Biografien, Nachrichten und Nachschlagewerken extrem häufig, in gesprochener Sprache seltener."
  ],
  "contraste": {
-  "es": "Das Spanische bildet die Apposition auf sehr ähnliche Weise (Merkel, entonces canciller, se pronunció), sodass sich diese Konstruktion leicht überträgt. Die Schwierigkeit für Hispanophone liegt eher darin, den passenden Kasus zu markieren, wo das Spanische keinen Kasus kennt.",
-  "it": "Das Italienische bildet die Apposition genauso, oft sogar ohne Artikel (Merkel, allora cancelliera, …), die Konstruktion überträgt sich also direkt. Neu ist die Kasuskongruenz: Im Deutschen übernimmt die Apposition den Kasus ihres Bezugsworts (mit Merkel, der damaligen Bundeskanzlerin), auch in der Form mit als.",
-  "fr": "Das Französische bildet die Apposition genauso und lässt den Artikel oft weg (Merkel, alors chancelière). Französischsprachige übertragen die artikellose Form gern auch dort, wo das Deutsche einen Artikel braucht, und vergessen die Kasuskongruenz (mit Merkel, der damaligen Bundeskanzlerin).",
-  "pt": "Das Portugiesische bildet die Apposition genauso (Merkel, então chanceler), die Konstruktion überträgt sich direkt. Neu ist die Kasuskongruenz, besonders im Genitiv und nach Präpositionen (die Rede Merkels, der damaligen Kanzlerin), wo die portugiesischen Verschmelzungen (da, do) keinerlei Kasus zeigen.",
-  "en": "Das Englische bildet die Apposition genauso und oft ohne Artikel (Merkel, then chancellor), sie ist dort ein fester Bestandteil des journalistischen Stils. Neu ist nur die Kasuskongruenz, die das Englische nicht kennt (mit Merkel, der damaligen Bundeskanzlerin), auch in der Form mit als (as)."
+  "es": {
+   "de": "Das Spanische bildet die Apposition auf sehr ähnliche Weise (Merkel, entonces canciller, se pronunció), sodass sich diese Konstruktion leicht überträgt. Die Schwierigkeit für Hispanophone liegt eher darin, den passenden Kasus zu markieren, wo das Spanische keinen Kasus kennt.",
+   "es": "El español forma la aposición de manera muy parecida («Merkel, entonces canciller, se pronunció»), de modo que la construcción se transfiere con facilidad. La dificultad para los hispanohablantes está más bien en marcar el caso correcto, algo que el español no tiene."
+  },
+  "it": {
+   "de": "Das Italienische bildet die Apposition genauso, oft sogar ohne Artikel (Merkel, allora cancelliera, …), die Konstruktion überträgt sich also direkt. Neu ist die Kasuskongruenz: Im Deutschen übernimmt die Apposition den Kasus ihres Bezugsworts (mit Merkel, der damaligen Bundeskanzlerin), auch in der Form mit als.",
+   "it": "L'italiano forma l'apposizione nello stesso modo, spesso anche senza articolo («Merkel, allora cancelliera, …»), quindi la costruzione si trasferisce direttamente. La novità è l'accordo di caso: in tedesco l'apposizione assume il caso del termine a cui si riferisce («mit Merkel, der damaligen Bundeskanzlerin»), anche nella costruzione con «als»."
+  },
+  "fr": {
+   "de": "Das Französische bildet die Apposition genauso und lässt den Artikel oft weg (Merkel, alors chancelière). Französischsprachige übertragen die artikellose Form gern auch dort, wo das Deutsche einen Artikel braucht, und vergessen die Kasuskongruenz (mit Merkel, der damaligen Bundeskanzlerin).",
+   "fr": "Le français forme l'apposition de la même manière et omet souvent l'article («Merkel, alors chancelière»). Les francophones ont donc tendance à transférer cette absence d'article là où l'allemand en exige un et à oublier la concordance en cas («mit Merkel, der damaligen Bundeskanzlerin»)."
+  },
+  "pt": {
+   "de": "Das Portugiesische bildet die Apposition genauso (Merkel, então chanceler), die Konstruktion überträgt sich direkt. Neu ist die Kasuskongruenz, besonders im Genitiv und nach Präpositionen (die Rede Merkels, der damaligen Kanzlerin), wo die portugiesischen Verschmelzungen (da, do) keinerlei Kasus zeigen.",
+   "pt": "O português forma a aposição da mesma maneira («Merkel, então chanceler»), por isso a construção se transfere diretamente. A novidade é a concordância de caso, sobretudo no genitivo e após preposições («die Rede Merkels, der damaligen Kanzlerin»), enquanto as contrações portuguesas «da/do» não mostram caso algum."
+  },
+  "en": {
+   "de": "Das Englische bildet die Apposition genauso und oft ohne Artikel (Merkel, then chancellor), sie ist dort ein fester Bestandteil des journalistischen Stils. Neu ist nur die Kasuskongruenz, die das Englische nicht kennt (mit Merkel, der damaligen Bundeskanzlerin), auch in der Form mit als (as).",
+   "en": "English forms appositions in the same way and often without an article («Merkel, then chancellor»); this is a standard feature of journalistic style. What is new is case agreement, which English lacks («mit Merkel, der damaligen Bundeskanzlerin»), including in constructions with «als» («as»)."
+  }
  },
  "errores": [
   "Den falschen Kasus für die Apposition wählen.",
@@ -250,7 +265,10 @@
     "fr": "…, à l’époque…, …",
     "it": "…, allora…, …",
     "pt": "…, então…, …"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "…, die Hauptstadt…, …",
@@ -261,7 +279,10 @@
     "fr": "…, la capitale de…, …",
     "it": "…, la capitale di…, …",
     "pt": "…, a capital de…, …"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "…, ein internes Dokument, …",
@@ -272,7 +293,10 @@
     "fr": "…, un document interne, …",
     "it": "…, un documento interno, …",
     "pt": "…, um documento interno, …"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "…, selbst ein erfahrener…, …",
@@ -283,7 +307,10 @@
     "fr": "…, lui-même un/une… expérimenté(e), …",
     "it": "…, lui stesso un… esperto, …",
     "pt": "…, ele próprio um… experiente, …"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "…, heute…, …",
@@ -294,7 +321,10 @@
     "fr": "…, aujourd’hui…, …",
     "it": "…, oggi…, …",
     "pt": "…, hoje…, …"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "…, Autor mehrerer Bücher, …",
@@ -305,7 +335,10 @@
     "fr": "…, auteur de plusieurs livres, …",
     "it": "…, autore di diversi libri, …",
     "pt": "…, autor de vários livros, …"
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Die Apposition steht im falschen Kasus.",
@@ -316,7 +349,10 @@
     "fr": "L'apposition est au mauvais cas.",
     "it": "L'apposizione è nel caso sbagliato.",
     "pt": "A aposição está no caso errado."
-   }
+   },
+   "categoriasUso": [
+    "Nominalización y compresión"
+   ]
   }
  ],
  "mision": {

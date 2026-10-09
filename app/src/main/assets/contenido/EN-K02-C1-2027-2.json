@@ -61,11 +61,26 @@
   "A dangling participle is the most common failure of this combination: the participle's implied subject must match the main clause's subject."
  ],
  "contraste": {
-  "es": "Spanish tolerates an implicit, ambiguous subject in gerund constructions much better (estando en Madrid, me llamaron), while English requires the subject of the participle to match that of the main clause. Spanish speakers produce dangling participles precisely because the construction is acceptable in Spanish.",
-  "de": "German nominalises readily, so the nominalisation part of this cluster is easy for German speakers. The difference lies in the reduced relative, which English places after the noun where German uses a prenominal participle phrase, and in keeping participle clauses tied to the subject of the main clause.",
-  "it": "Postnominal participles are native to Italian, and bureaucratic Italian nominalises heavily, so two of the three devices come easily. The risk is the dangling participle or gerund, which colloquial Italian tolerates much more than written English.",
-  "fr": "Formal French nominalises readily and uses postnominal participles, and French speakers know the same-subject rule for the gérondif. This cluster is therefore relatively easy for them; the main risk is over-compressing texts in genres where English prefers a verbal style.",
-  "pt": "Postnominal participles are native to Portuguese, but the personal infinitive lets Portuguese stay verbal where English nominalises. Portuguese speakers therefore tend to under-nominalise and, especially in Brazilian usage, to produce dangling gerund clauses."
+  "es": {
+   "en": "Spanish tolerates an implicit, ambiguous subject in gerund constructions much better (estando en Madrid, me llamaron), while English requires the subject of the participle to match that of the main clause. Spanish speakers produce dangling participles precisely because the construction is acceptable in Spanish.",
+   "es": "El español tolera mucho mejor un sujeto implícito y ambiguo en construcciones de gerundio («estando en Madrid, me llamaron»), mientras que el inglés exige que el sujeto del participio coincida con el del verbo principal. Precisamente por eso los hispanohablantes producen dangling participles: la construcción equivalente sí es aceptable en español."
+  },
+  "de": {
+   "en": "German nominalises readily, so the nominalisation part of this cluster is easy for German speakers. The difference lies in the reduced relative, which English places after the noun where German uses a prenominal participle phrase, and in keeping participle clauses tied to the subject of the main clause.",
+   "de": "Deutsch nominalisiert sehr leicht, daher ist dieser Teil für Deutschsprachige unkompliziert. Der Unterschied liegt im reduced relative, das im Englischen nach dem Substantiv steht, während Deutsch eine vorangestellte Partizipgruppe verwendet, und darin, Partizipialsätze eindeutig auf das Subjekt des Hauptsatzes zu beziehen."
+  },
+  "it": {
+   "en": "Postnominal participles are native to Italian, and bureaucratic Italian nominalises heavily, so two of the three devices come easily. The risk is the dangling participle or gerund, which colloquial Italian tolerates much more than written English.",
+   "it": "I participi postnominali sono naturali in italiano e l'italiano burocratico nominalizza molto, quindi due dei tre dispositivi risultano facili. Il rischio è il dangling participle o gerund, che l'italiano colloquiale tollera molto più dell'inglese scritto."
+  },
+  "fr": {
+   "en": "Formal French nominalises readily and uses postnominal participles, and French speakers know the same-subject rule for the gérondif. This cluster is therefore relatively easy for them; the main risk is over-compressing texts in genres where English prefers a verbal style.",
+   "fr": "Le français formel nominalise facilement et utilise des participes postposés, et les francophones connaissent la règle du même sujet pour le gérondif. Ce groupe de structures est donc relativement facile ; le principal risque est de trop compresser dans des genres où l'anglais préfère un style verbal."
+  },
+  "pt": {
+   "en": "Postnominal participles are native to Portuguese, but the personal infinitive lets Portuguese stay verbal where English nominalises. Portuguese speakers therefore tend to under-nominalise and, especially in Brazilian usage, to produce dangling gerund clauses.",
+   "pt": "Particípios depois do substantivo são naturais em português, mas o infinitivo pessoal permite manter a redação verbal onde o inglês nominaliza. Falantes de português tendem, portanto, a nominalizar pouco e, especialmente no uso brasileiro, a produzir orações de gerúndio com sujeito solto."
+  }
  },
  "errores": [
   "Producing a dangling participle where the implied subject doesn't match the main clause.",
@@ -255,7 +270,12 @@
     "fr": "publié le mois dernier",
     "it": "pubblicato il mese scorso",
     "pt": "publicado no mês passado"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "having been…",
@@ -266,7 +286,12 @@
     "fr": "ayant été…",
     "it": "essendo stato…",
     "pt": "tendo sido…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "the team's decision to…",
@@ -277,7 +302,11 @@
     "fr": "la décision de l’équipe de…",
     "it": "la decisione del team di…",
     "pt": "a decisão da equipa de…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "given the circumstances",
@@ -288,7 +317,12 @@
     "fr": "compte tenu des circonstances",
     "it": "date le circostanze",
     "pt": "dadas as circunstâncias"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión",
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "weighed against…",
@@ -299,7 +333,12 @@
     "fr": "mis en balance avec…",
     "it": "messo a confronto con…",
     "pt": "ponderado face a…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión",
+    "Comparación"
+   ]
   },
   {
    "expresion": "the data available",
@@ -310,7 +349,11 @@
     "fr": "les données disponibles",
     "it": "i dati disponibili",
     "pt": "os dados disponíveis"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Spelled out, that means…",
@@ -321,7 +364,11 @@
     "fr": "Déplié, cela signifie…",
     "it": "Per esteso significa…",
     "pt": "Desdobrado, isso significa…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "That sentence is carrying too much.",
@@ -332,7 +379,12 @@
     "fr": "Cette phrase porte trop.",
     "it": "Quella frase porta troppo peso.",
     "pt": "Essa frase está a carregar demasiado."
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "In speech I'd break that in two.",
@@ -343,7 +395,11 @@
     "fr": "À l'oral, je couperais cela en deux.",
     "it": "A voce lo spezzerei in due.",
     "pt": "A falar, partiria isso em dois."
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "the decision, taken last month, to…",
@@ -354,7 +410,11 @@
     "fr": "la décision, prise le mois dernier, de…",
     "it": "la decisione, presa il mese scorso, di…",
     "pt": "a decisão, tomada no mês passado, de…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   }
  ],
  "mision": {

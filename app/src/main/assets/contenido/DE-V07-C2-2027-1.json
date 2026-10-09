@@ -60,11 +60,26 @@
   "Ganz umgangssprachliche Formen (nee, seh) gehören ausschliesslich in sehr informelle, mündliche Register."
  ],
  "contraste": {
-  "es": "Das Spanische hat ein vergleichbares Spektrum, aber die Marker für jede Ebene unterscheiden sich stark von den deutschen. Hispanophone C2-Sprecher übertragen oft ihre eigenen umgangssprachlichen Muster wörtlich, ohne zu merken, dass ein bestimmter deutscher umgangssprachlicher Marker in einem anderen Kontext auffällt oder sogar unpassend wirkt.",
-  "it": "Das Italienische hat ein breites Spektrum vom Standard über die regionale Umgangssprache bis zum Dialekt, Italienischsprachige sind also für Registerebenen sensibilisiert. Die deutschen Marker jeder Ebene (salopp, derb, jugendsprachlich) sind aber andere und dürfen nicht aus dem Italienischen abgeleitet werden.",
-  "fr": "Die französische Schule unterscheidet ausdrücklich zwischen soutenu, courant, familier und populaire, Französischsprachige sind also für Registerebenen sensibilisiert. Die deutschen Marker jeder Ebene sind aber andere und müssen neu gelernt werden.",
-  "pt": "Das Portugiesische hat ein breites Spektrum bis zur gíria, Portugiesischsprachige sind also für Registerebenen sensibilisiert. Die deutschen Marker jeder Ebene sind aber andere und müssen neu gelernt werden.",
-  "en": "Englischsprachige kennen ein breites Spektrum bis zum Slang. Eine Besonderheit: Viele deutsche umgangssprachliche Wörter sind englische Lehnwörter (cool, chillen), die im Deutschen informeller wirken als ihr Ursprung im Englischen."
+  "es": {
+   "de": "Das Spanische hat ein vergleichbares Spektrum, aber die Marker für jede Ebene unterscheiden sich stark von den deutschen. Hispanophone C2-Sprecher übertragen oft ihre eigenen umgangssprachlichen Muster wörtlich, ohne zu merken, dass ein bestimmter deutscher umgangssprachlicher Marker in einem anderen Kontext auffällt oder sogar unpassend wirkt.",
+   "es": "El español dispone de un espectro de registros comparable, pero los marcadores concretos de cada nivel son muy diferentes de los alemanes. Los hispanohablantes de C2 suelen trasladar literalmente sus propios patrones coloquiales sin advertir que un determinado marcador coloquial alemán puede destacar o incluso resultar inadecuado en otro contexto."
+  },
+  "it": {
+   "de": "Das Italienische hat ein breites Spektrum vom Standard über die regionale Umgangssprache bis zum Dialekt, Italienischsprachige sind also für Registerebenen sensibilisiert. Die deutschen Marker jeder Ebene (salopp, derb, jugendsprachlich) sind aber andere und dürfen nicht aus dem Italienischen abgeleitet werden.",
+   "it": "L'italiano possiede un ampio spettro che va dallo standard alla lingua regionale colloquiale fino al dialetto, quindi gli italofoni sono sensibili ai livelli di registro. I marcatori tedeschi di ciascun livello («salopp», «derb», «jugendsprachlich») sono però diversi e non possono essere dedotti dall'italiano."
+  },
+  "fr": {
+   "de": "Die französische Schule unterscheidet ausdrücklich zwischen soutenu, courant, familier und populaire, Französischsprachige sind also für Registerebenen sensibilisiert. Die deutschen Marker jeder Ebene sind aber andere und müssen neu gelernt werden.",
+   "fr": "L'enseignement du français distingue explicitement «soutenu», «courant», «familier» et «populaire», de sorte que les francophones sont sensibilisés aux niveaux de registre. Les marqueurs allemands propres à chaque niveau sont toutefois différents et doivent être appris."
+  },
+  "pt": {
+   "de": "Das Portugiesische hat ein breites Spektrum bis zur gíria, Portugiesischsprachige sind also für Registerebenen sensibilisiert. Die deutschen Marker jeder Ebene sind aber andere und müssen neu gelernt werden.",
+   "pt": "O português cobre um amplo espectro de registros, até a «gíria», por isso falantes de português estão acostumados a distinguir níveis de registro. Os marcadores concretos de cada nível em alemão, porém, são outros e precisam ser aprendidos."
+  },
+  "en": {
+   "de": "Englischsprachige kennen ein breites Spektrum bis zum Slang. Eine Besonderheit: Viele deutsche umgangssprachliche Wörter sind englische Lehnwörter (cool, chillen), die im Deutschen informeller wirken als ihr Ursprung im Englischen.",
+   "en": "English speakers know a wide register range extending into slang. One special feature is that many colloquial German words are English loanwords («cool», «chillen») that sound more informal in German than their English originals do."
+  }
  },
  "errores": [
   "Sehr formelle und sehr umgangssprachliche Marker im selben Satz mischen.",
@@ -254,7 +269,8 @@
     "fr": "Je ne suis pas en mesure de partager…",
     "it": "Non sono in grado di condividere…",
     "pt": "Não me é possível partilhar…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Ich sehe das anders.",
@@ -265,7 +281,8 @@
     "fr": "Je le vois différemment.",
     "it": "La vedo diversamente.",
     "pt": "Eu vejo isso de outra forma."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Da bin ich echt anderer Meinung.",
@@ -276,7 +293,8 @@
     "fr": "Là, je ne suis vraiment pas d’accord.",
     "it": "Su questo non sono davvero d’accordo.",
     "pt": "Aí, discordo mesmo."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Nee, das seh ich voll anders.",
@@ -287,7 +305,8 @@
     "fr": "Non, je vois ça complètement différemment.",
     "it": "No, la vedo completamente diversamente.",
     "pt": "Não, eu vejo isso de forma completamente diferente."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Gestatten Sie mir die Bemerkung, dass…",
@@ -298,7 +317,10 @@
     "fr": "Permettez-moi de faire remarquer que…",
     "it": "Mi permetta di osservare che…",
     "pt": "Permita-me observar que…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Ehrlich, das find ich nicht so gut.",
@@ -309,7 +331,8 @@
     "fr": "Honnêtement, je ne trouve pas ça formidable.",
     "it": "Onestamente, non mi sembra affatto il massimo.",
     "pt": "Sinceramente, não acho isso nada bom."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Ich erlaube mir den Hinweis, dass…",
@@ -320,7 +343,10 @@
     "fr": "Permettez-moi de signaler que…",
     "it": "Mi permetto di segnalare che…",
     "pt": "Permito-me assinalar que…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Ich möchte zu bedenken geben, dass…",
@@ -331,7 +357,10 @@
     "fr": "Je voudrais faire observer que…",
     "it": "Vorrei far presente che…",
     "pt": "Gostaria de fazer notar que…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Ehrlich gesagt überzeugt mich das nicht.",
@@ -342,7 +371,10 @@
     "fr": "Honnêtement, cela ne me convainc pas.",
     "it": "Sinceramente non mi convince.",
     "pt": "Sinceramente, isso não me convence."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Das kauf ich dir nicht ab.",
@@ -353,7 +385,10 @@
     "fr": "Je n'y crois pas une seconde.",
     "it": "Non ci casco.",
     "pt": "Isso não te compro."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Hier wechsle ich bewusst das Register.",
@@ -364,7 +399,8 @@
     "fr": "Ici, je change de registre volontairement.",
     "it": "Qui cambio registro di proposito.",
     "pt": "Aqui mudo de registo de propósito."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Das war kein Ausrutscher, das war Absicht.",
@@ -375,7 +411,8 @@
     "fr": "Ce n'était pas un écart, c'était voulu.",
     "it": "Non è stato uno scivolone, era voluto.",
     "pt": "Não foi um deslize, foi de propósito."
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

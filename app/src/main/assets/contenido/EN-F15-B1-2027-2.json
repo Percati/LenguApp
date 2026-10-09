@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish enters a conversation with short signals (perdón, oye), while English usually adds a phrase such as Can I say something?. Oye in particular sounds abrupt if translated as Hey.",
-  "de": "Darf ich kurz was sagen? corresponds exactly to Can I just say something?, with kurz doing the work of just.",
-  "it": "Scusa, posso dire una cosa? corresponds exactly to Sorry, can I say something?, so the formula transfers directly.",
-  "fr": "Pardon, je peux dire quelque chose ? corresponds exactly to Sorry, can I say something?, so the formula transfers directly.",
-  "pt": "Desculpa, posso dizer uma coisa? corresponds exactly to Sorry, can I say something?, so the formula transfers directly."
+  "es": {
+   "en": "Spanish enters a conversation with short signals (perdón, oye), while English usually adds a phrase such as Can I say something?. Oye in particular sounds abrupt if translated as Hey.",
+   "es": "En español se entra en una conversación con señales breves («perdón», «oye»), mientras que el inglés suele añadir una frase como «Can I say something?». En particular, «oye» suena brusco si se traduce como «Hey»."
+  },
+  "de": {
+   "en": "Darf ich kurz was sagen? corresponds exactly to Can I just say something?, with kurz doing the work of just.",
+   "de": "«Darf ich kurz was sagen?» entspricht genau «Can I just say something?», wobei «kurz» die Funktion von «just» übernimmt."
+  },
+  "it": {
+   "en": "Scusa, posso dire una cosa? corresponds exactly to Sorry, can I say something?, so the formula transfers directly.",
+   "it": "«Scusa, posso dire una cosa?» corrisponde esattamente a «Sorry, can I say something?», quindi la formula si trasferisce direttamente."
+  },
+  "fr": {
+   "en": "Pardon, je peux dire quelque chose ? corresponds exactly to Sorry, can I say something?, so the formula transfers directly.",
+   "fr": "«Pardon, je peux dire quelque chose ?» correspond exactement à «Sorry, can I say something?», donc la formule se transfère directement."
+  },
+  "pt": {
+   "en": "Desculpa, posso dizer uma coisa? corresponds exactly to Sorry, can I say something?, so the formula transfers directly.",
+   "pt": "«Desculpa, posso dizer uma coisa?» corresponde exatamente a «Sorry, can I say something?», então a fórmula se transfere diretamente."
+  }
  },
  "errores": [
   {
@@ -405,7 +420,10 @@
     "fr": "Je peux dire quelque chose ?",
     "it": "Posso dire una cosa?",
     "pt": "Posso dizer uma coisa?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Let me think for a second.",
@@ -423,7 +441,11 @@
     "fr": "Laisse-moi réfléchir une seconde.",
     "it": "Fammi pensare un attimo.",
     "pt": "Deixa-me pensar um segundo."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Sorry, could you repeat that?",
@@ -441,7 +463,8 @@
     "fr": "Désolé, tu peux répéter ?",
     "it": "Scusa, puoi ripetere?",
     "pt": "Desculpa, podes repetir?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Sorry to interrupt, but…",
@@ -459,7 +482,10 @@
     "fr": "Désolé(e) de t’interrompre, mais…",
     "it": "Scusa se interrompo, ma…",
     "pt": "Desculpa interromper, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "What do you mean?",
@@ -477,7 +503,10 @@
     "fr": "Qu’est-ce que tu veux dire ?",
     "it": "Cosa intendi?",
     "pt": "O que queres dizer?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Sorry, what?",
@@ -495,7 +524,8 @@
     "fr": "Pardon ?",
     "it": "Come, scusa?",
     "pt": "Desculpa, o quê?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Hang on, I'm lost.",
@@ -513,7 +543,10 @@
     "fr": "Attends, je suis perdu.",
     "it": "Aspetta, mi sono perso.",
     "pt": "Espera, perdi-me."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Could you say that more slowly?",
@@ -531,7 +564,8 @@
     "fr": "Peux-tu le dire plus lentement ?",
     "it": "Puoi dirlo più lentamente?",
     "pt": "Podes dizer isso mais devagar?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "How do you say…?",
@@ -549,7 +583,8 @@
     "fr": "Comment dit-on… ?",
     "it": "Come si dice…?",
     "pt": "Como se diz…?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "You were saying?",
@@ -567,7 +602,10 @@
     "fr": "Tu disais ?",
     "it": "Dicevi?",
     "pt": "Estavas a dizer?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Let me start again.",
@@ -585,7 +623,10 @@
     "fr": "Je recommence.",
     "it": "Ricomincio.",
     "pt": "Deixa-me começar outra vez."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Sorry, I meant…",
@@ -603,7 +644,10 @@
     "fr": "Pardon, je voulais dire…",
     "it": "Scusa, intendevo…",
     "pt": "Desculpa, queria dizer…"
-   }
+   },
+   "categoriasUso": [
+    "Reformular"
+   ]
   }
  ],
  "mision": {

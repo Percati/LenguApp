@@ -57,11 +57,26 @@
   "This is serious, and I want to say that plainly is itself a marked, deliberate move — stating directness explicitly, rather than assuming it will register on its own."
  ],
  "contraste": {
-  "es": "Spanish knows understatement (no está mal, no es precisamente…), so the device is familiar. The C2 skill is knowing when to drop it: in serious or high-stakes moments English switches to plain directness, and understatement there reads as evasive.",
-  "de": "German understatement (nicht schlecht, nicht gerade…) works much like English, so the device is familiar. A trap is British quite: quite good often means only fairly good, not ziemlich gut.",
-  "it": "Italian litotes (non male, non proprio…) corresponds well to English understatement, so the device is familiar. The C2 skill is knowing when to drop it for plain directness.",
-  "fr": "French litotes is familiar, but pas mal can be strongly positive in French (c'est pas mal du tout), while English not bad is milder. French speakers need to recalibrate how strong English understatement is.",
-  "pt": "Portuguese nada mau and não é propriamente… correspond well to English understatement, so the device is familiar. The C2 skill is knowing when to drop it for plain directness."
+  "es": {
+   "en": "Spanish knows understatement (no está mal, no es precisamente…), so the device is familiar. The C2 skill is knowing when to drop it: in serious or high-stakes moments English switches to plain directness, and understatement there reads as evasive.",
+   "es": "El español conoce la atenuación («no está mal», «no es precisamente…»), por lo que el recurso es familiar. La habilidad C2 consiste en saber cuándo abandonarlo: en momentos serios o de alto riesgo, el inglés pasa a la franqueza directa, y atenuar ahí puede sonar evasivo."
+  },
+  "de": {
+   "en": "German understatement (nicht schlecht, nicht gerade…) works much like English, so the device is familiar. A trap is British quite: quite good often means only fairly good, not ziemlich gut.",
+   "de": "Deutsche Untertreibung («nicht schlecht», «nicht gerade…») funktioniert ähnlich wie englische, daher ist das Mittel vertraut. Eine Falle ist britisches «quite»: «quite good» bedeutet oft nur «fairly good», nicht «ziemlich gut» im starken Sinn."
+  },
+  "it": {
+   "en": "Italian litotes (non male, non proprio…) corresponds well to English understatement, so the device is familiar. The C2 skill is knowing when to drop it for plain directness.",
+   "it": "La litote italiana («non male», «non proprio…») corrisponde bene all'understatement inglese, quindi il dispositivo è familiare. La competenza C2 consiste nel sapere quando abbandonarlo e usare una formulazione diretta."
+  },
+  "fr": {
+   "en": "French litotes is familiar, but pas mal can be strongly positive in French (c'est pas mal du tout), while English not bad is milder. French speakers need to recalibrate how strong English understatement is.",
+   "fr": "La litote est familière en français, mais «pas mal» peut être très positif («c'est pas mal du tout»), alors que «not bad» est plus modéré en anglais. Les francophones doivent donc recalibrer la force de l'understatement anglais."
+  },
+  "pt": {
+   "en": "Portuguese nada mau and não é propriamente… correspond well to English understatement, so the device is familiar. The C2 skill is knowing when to drop it for plain directness.",
+   "pt": "«Nada mau» e «não é propriamente…» correspondem bem ao understatement inglês, então o recurso é familiar. A habilidade C2 está em saber quando abandoná-lo e usar uma formulação direta."
+  }
  },
  "errores": [
   "Understating a genuinely serious or painful moment, which can read as cold or evasive.",
@@ -251,7 +266,10 @@
     "fr": "Pas vraiment le/la plus fluide…, pour être honnête.",
     "it": "Non proprio il/la più fluido/a…, se devo essere sincero/a.",
     "pt": "Não foi propriamente o/a mais fluido/a…, para ser sincero/a."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "…, without any of the usual understatement.",
@@ -262,7 +280,10 @@
     "fr": "…, sans l’atténuation habituelle.",
     "it": "…, senza la consueta attenuazione.",
     "pt": "…, sem a habitual atenuação."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "I want to say that plainly.",
@@ -273,7 +294,10 @@
     "fr": "Je veux le dire clairement.",
     "it": "Voglio dirlo chiaramente.",
     "pt": "Quero dizê-lo claramente."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "I'm not going to make light of this.",
@@ -284,7 +308,10 @@
     "fr": "Je ne vais pas minimiser cela.",
     "it": "Non intendo minimizzare la cosa.",
     "pt": "Não vou desvalorizar isto."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "This isn't the moment for irony.",
@@ -295,7 +322,8 @@
     "fr": "Ce n’est pas le moment pour l’ironie.",
     "it": "Non è il momento per l’ironia.",
     "pt": "Este não é o momento para ironia."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "In all seriousness,…",
@@ -306,7 +334,8 @@
     "fr": "Très sérieusement,…",
     "it": "Parlando seriamente,…",
     "pt": "Falando a sério,…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "That was irony, in case it didn't travel.",
@@ -317,7 +346,11 @@
     "fr": "C'était de l'ironie, au cas où cela n'est pas passé.",
     "it": "Era ironia, nel caso non fosse arrivata.",
     "pt": "Isso era ironia, caso não tenha passado."
-   }
+   },
+   "categoriasUso": [
+    "Reformular",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "I'd joke about it if you were up for that.",
@@ -328,7 +361,11 @@
     "fr": "J'en plaisanterais si vous étiez d'humeur.",
     "it": "Ci scherzerei sopra, se ti andasse.",
     "pt": "Brincaria com isso se estivesses para aí virado."
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "The understatement is doing the complaining for me.",
@@ -339,7 +376,8 @@
     "fr": "La litote se charge de la plainte à ma place.",
     "it": "L'understatement sta facendo la lagnanza al posto mio.",
     "pt": "O eufemismo está a fazer a queixa por mim."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "You'd have to have been there.",
@@ -350,7 +388,10 @@
     "fr": "Il fallait y être.",
     "it": "Bisognava esserci.",
     "pt": "Era preciso ter estado lá."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "I'll say the sincere version too, just in case.",
@@ -361,7 +402,8 @@
     "fr": "Je donne aussi la version sincère, au cas où.",
     "it": "Dico anche la versione sincera, per sicurezza.",
     "pt": "Digo também a versão sincera, por via das dúvidas."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Humour would be cheap here.",
@@ -372,7 +414,11 @@
     "fr": "L'humour serait facile ici.",
     "it": "Qui l'umorismo sarebbe a buon mercato.",
     "pt": "Aqui o humor seria barato."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Reaccionar y valorar"
+   ]
   }
  ],
  "mision": {

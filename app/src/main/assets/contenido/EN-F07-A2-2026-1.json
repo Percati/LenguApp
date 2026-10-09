@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "¿Cuánto cuesta? corresponds to How much is it?, and un billete para… to a ticket to…, not for.",
-  "de": "Was kostet das? corresponds to How much is it?. Careful with ich bekomme… in shops: bekommen means get, so I become a coffee is a false-friend error; say Can I have a coffee?",
-  "it": "Vorrei… corresponds to I'd like…, so polite requests transfer. Un biglietto per… becomes a ticket to…, not for.",
-  "fr": "Je voudrais… corresponds to I'd like…, so polite requests transfer. Un billet pour… becomes a ticket to…, not for.",
-  "pt": "In European Portuguese queria… is the polite form, but the calque I wanted… is not polite in English; say I'd like…. Um bilhete para… becomes a ticket to…."
+  "es": {
+   "en": "¿Cuánto cuesta? corresponds to How much is it?, and un billete para… to a ticket to…, not for.",
+   "es": "«¿Cuánto cuesta?» corresponde a «How much is it?», y «un billete para…» a «a ticket to…», no «for»."
+  },
+  "de": {
+   "en": "Was kostet das? corresponds to How much is it?. Careful with ich bekomme… in shops: bekommen means get, so I become a coffee is a false-friend error; say Can I have a coffee?",
+   "de": "«Was kostet das?» entspricht «How much is it?». Vorsicht mit «ich bekomme…» im Geschäft: «bekommen» bedeutet «get», daher ist «I become a coffee» ein typischer falscher Freund. Natürlich ist «Can I have a coffee?»."
+  },
+  "it": {
+   "en": "Vorrei… corresponds to I'd like…, so polite requests transfer. Un biglietto per… becomes a ticket to…, not for.",
+   "it": "«Vorrei…» corrisponde a «I'd like…», quindi le richieste cortesi si trasferiscono bene. «Un biglietto per…» diventa «a ticket to…», non «for»."
+  },
+  "fr": {
+   "en": "Je voudrais… corresponds to I'd like…, so polite requests transfer. Un billet pour… becomes a ticket to…, not for.",
+   "fr": "«Je voudrais…» correspond à «I'd like…», donc les demandes polies se transfèrent bien. «Un billet pour…» devient «a ticket to…», pas «for»."
+  },
+  "pt": {
+   "en": "In European Portuguese queria… is the polite form, but the calque I wanted… is not polite in English; say I'd like…. Um bilhete para… becomes a ticket to….",
+   "pt": "No português europeu, «queria…» é uma forma educada, mas o calque «I wanted…» não soa educado em inglês; use «I'd like…». «Um bilhete para…» vira «a ticket to…»."
+  }
  },
  "errores": [
   {
@@ -375,7 +390,10 @@
     "fr": "Combien ça coûte ?",
     "it": "Quanto costa?",
     "pt": "Quanto custa isto?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "One ticket to…, please.",
@@ -393,7 +411,10 @@
     "fr": "Un billet pour…, s’il vous plaît.",
     "it": "Un biglietto per…, per favore.",
     "pt": "Um bilhete para…, por favor."
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "I'd like to make an appointment.",
@@ -411,7 +432,10 @@
     "fr": "J’aimerais prendre rendez-vous.",
     "it": "Vorrei fissare un appuntamento.",
     "pt": "Gostaria de marcar uma consulta."
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Do you have this in a different size?",
@@ -429,7 +453,10 @@
     "fr": "Avez-vous ceci dans une autre taille ?",
     "it": "Ce l’ha in un’altra taglia?",
     "pt": "Tem isto noutro tamanho?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Can I pay by card?",
@@ -447,7 +474,10 @@
     "fr": "Puis-je payer par carte ?",
     "it": "Posso pagare con la carta?",
     "pt": "Posso pagar com cartão?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "What time is the appointment?",
@@ -465,7 +495,10 @@
     "fr": "À quelle heure est le rendez-vous ?",
     "it": "A che ora è l’appuntamento?",
     "pt": "A que horas é a consulta?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Can I try it on?",
@@ -483,7 +516,10 @@
     "fr": "Puis-je l'essayer ?",
     "it": "Posso provarlo?",
     "pt": "Posso experimentar?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Is there a later one?",
@@ -501,7 +537,10 @@
     "fr": "Y en a-t-il un plus tard ?",
     "it": "Ce n'è uno più tardi?",
     "pt": "Há um mais tarde?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Return, please.",
@@ -519,7 +558,10 @@
     "fr": "Aller-retour, s'il vous plaît.",
     "it": "Andata e ritorno, per favore.",
     "pt": "Ida e volta, por favor."
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Do you take cards?",
@@ -537,7 +579,10 @@
     "fr": "Acceptez-vous les cartes ?",
     "it": "Accettate carte?",
     "pt": "Aceitam cartão?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Could I change the appointment?",
@@ -555,7 +600,10 @@
     "fr": "Puis-je déplacer le rendez-vous ?",
     "it": "Posso spostare l'appuntamento?",
     "pt": "Posso mudar a marcação?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Sorry, could you repeat the price?",
@@ -573,7 +621,8 @@
     "fr": "Pardon, pouvez-vous répéter le prix ?",
     "it": "Scusi, può ripetere il prezzo?",
     "pt": "Desculpe, pode repetir o preço?"
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

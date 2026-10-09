@@ -56,11 +56,26 @@
   "One suggestion at a time is more useful than a long list of everything that could be improved."
  ],
  "contraste": {
-  "es": "Spanish can separate the action from the person (el informe tenía errores – the report had some errors, rather than eres descuidado – you're careless). English feedback relies on exactly this separation, so the action-focused form is worth using consistently.",
-  "de": "German uses the same separation (der Bericht hatte einige Fehler rather than du bist schlampig), and ehrlich gesagt corresponds to to be honest. Constructive feedback therefore transfers directly.",
-  "it": "Italian uses the same separation (nel rapporto c'erano degli errori rather than sei distratto), so constructive feedback transfers directly.",
-  "fr": "French uses the same separation (le rapport contenait quelques erreurs rather than tu es négligent), so constructive feedback transfers directly.",
-  "pt": "Portuguese uses the same separation (o relatório tinha alguns erros rather than és descuidado), so constructive feedback transfers directly."
+  "es": {
+   "en": "Spanish can separate the action from the person (el informe tenía errores – the report had some errors, rather than eres descuidado – you're careless). English feedback relies on exactly this separation, so the action-focused form is worth using consistently.",
+   "es": "El español puede separar la acción de la persona («el informe tenía errores» – «the report had some errors», en lugar de «eres descuidado» – «you're careless»). El feedback en inglés depende precisamente de esa separación, por lo que conviene usar de forma sistemática la formulación centrada en la acción."
+  },
+  "de": {
+   "en": "German uses the same separation (der Bericht hatte einige Fehler rather than du bist schlampig), and ehrlich gesagt corresponds to to be honest. Constructive feedback therefore transfers directly.",
+   "de": "Im Deutschen trennt man ebenfalls Sache und Person («der Bericht hatte einige Fehler» statt «du bist schlampig»), und «ehrlich gesagt» entspricht «to be honest». Konstruktives Feedback lässt sich daher direkt übertragen."
+  },
+  "it": {
+   "en": "Italian uses the same separation (nel rapporto c'erano degli errori rather than sei distratto), so constructive feedback transfers directly.",
+   "it": "L'italiano usa la stessa separazione («nel rapporto c'erano degli errori» invece di «sei distratto»), quindi il feedback costruttivo si trasferisce direttamente."
+  },
+  "fr": {
+   "en": "French uses the same separation (le rapport contenait quelques erreurs rather than tu es négligent), so constructive feedback transfers directly.",
+   "fr": "Le français utilise la même séparation («le rapport contenait quelques erreurs» plutôt que «tu es négligent»), donc le feedback constructif se transfère directement."
+  },
+  "pt": {
+   "en": "Portuguese uses the same separation (o relatório tinha alguns erros rather than és descuidado), so constructive feedback transfers directly.",
+   "pt": "O português usa a mesma separação («o relatório tinha alguns erros» em vez de «você é descuidado»), então o feedback construtivo se transfere diretamente."
+  }
  },
  "errores": [
   "Judging character instead of describing behaviour: you're disorganised instead of the files weren't labelled clearly.",
@@ -228,7 +243,10 @@
     "fr": "Je peux te faire un retour ?",
     "it": "Posso darti un feedback?",
     "pt": "Posso dar-te algum feedback?"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "The report had…",
@@ -239,7 +257,10 @@
     "fr": "Le rapport avait…",
     "it": "Il rapporto aveva…",
     "pt": "O relatório tinha…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Maybe it would help to…",
@@ -250,7 +271,10 @@
     "fr": "Cela aiderait peut-être de…",
     "it": "Forse aiuterebbe…",
     "pt": "Talvez ajudasse…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Next time, it might be worth…",
@@ -261,7 +285,10 @@
     "fr": "La prochaine fois, cela vaudrait peut-être la peine de…",
     "it": "La prossima volta potrebbe valere la pena…",
     "pt": "Da próxima vez, talvez valha a pena…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "One thing I noticed was…",
@@ -272,7 +299,10 @@
     "fr": "Une chose que j’ai remarquée, c’est…",
     "it": "Una cosa che ho notato è stata…",
     "pt": "Uma coisa que notei foi…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Overall it was good, but…",
@@ -283,7 +313,12 @@
     "fr": "Dans l’ensemble, c’était bien, mais…",
     "it": "Nel complesso è andata bene, ma…",
     "pt": "No geral, foi bom, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar",
+    "Opinar",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Is now a good time?",
@@ -294,7 +329,10 @@
     "fr": "C'est le bon moment ?",
     "it": "È un buon momento?",
     "pt": "É boa altura agora?"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "What worked well was…",
@@ -305,7 +343,10 @@
     "fr": "Ce qui a bien marché, c'est…",
     "it": "Ciò che ha funzionato bene è…",
     "pt": "O que funcionou bem foi…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "The effect on the reader was…",
@@ -316,7 +357,10 @@
     "fr": "L'effet sur le lecteur a été…",
     "it": "L'effetto su chi legge è stato…",
     "pt": "O efeito em quem lê foi…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "How did you see it yourself?",
@@ -327,7 +371,10 @@
     "fr": "Et toi, comment l'as-tu vu ?",
     "it": "E tu come l'hai vista?",
     "pt": "E tu, como viste isso?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Just one thing, then I'll stop.",
@@ -338,7 +385,10 @@
     "fr": "Juste une chose, et j'arrête.",
     "it": "Solo una cosa, poi smetto.",
     "pt": "Só uma coisa, e fico por aqui."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Does that make sense?",
@@ -349,7 +399,10 @@
     "fr": "Est-ce que cela te parle ?",
     "it": "Ha senso per te?",
     "pt": "Isto faz sentido para ti?"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   }
  ],
  "mision": {

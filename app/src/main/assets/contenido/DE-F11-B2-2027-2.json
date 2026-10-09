@@ -56,11 +56,26 @@
   "Sich selbst korrigieren mit ich meine eigentlich ist ganz normal und wirkt nicht unsicher."
  ],
  "contraste": {
-  "es": "Die Formeln haben spanische Entsprechungen: perdona que te interrumpa – Entschuldigung, wenn ich unterbreche; ¿cómo que…? – wie meinst du das?; mejor dicho – beziehungsweise. Neu sind die Partikeln kurz und mal (Darf ich mal kurz etwas sagen?), die im Spanischen fehlen.",
-  "it": "Die Formeln haben italienische Entsprechungen: scusa se ti interrompo – Entschuldigung, wenn ich unterbreche; cioè? – wie meinst du das?; anzi – beziehungsweise, vielmehr. Neu sind die Partikeln kurz und mal (Darf ich kurz etwas sagen?), die im Italienischen fehlen.",
-  "fr": "Die Formeln haben französische Entsprechungen: pardon de vous interrompre – Entschuldigung, wenn ich unterbreche; c'est-à-dire ? – wie meinen Sie das?. Neu sind die Partikeln kurz und mal, die die deutsche Formel natürlich machen.",
-  "pt": "Die Formeln haben portugiesische Entsprechungen: desculpa interromper – Entschuldigung, wenn ich unterbreche; como assim? – wie meinst du das?; ou melhor – beziehungsweise, besser gesagt. Neu sind die Partikeln kurz und mal.",
-  "en": "Die Formeln haben englische Entsprechungen: sorry to interrupt – Entschuldigung, wenn ich unterbreche; what do you mean? – wie meinst du das?; or rather – beziehungsweise. Das englische just entspricht oft den deutschen Partikeln kurz und mal."
+  "es": {
+   "de": "Die Formeln haben spanische Entsprechungen: perdona que te interrumpa – Entschuldigung, wenn ich unterbreche; ¿cómo que…? – wie meinst du das?; mejor dicho – beziehungsweise. Neu sind die Partikeln kurz und mal (Darf ich mal kurz etwas sagen?), die im Spanischen fehlen.",
+   "es": "Las fórmulas tienen equivalentes españoles: «perdona que te interrumpa» – «Entschuldigung, wenn ich unterbreche»; «¿cómo que…?» – «wie meinst du das?»; «mejor dicho» – «beziehungsweise». Lo nuevo son las partículas «kurz» y «mal» («Darf ich mal kurz etwas sagen?»), que no tienen una equivalencia directa en español."
+  },
+  "it": {
+   "de": "Die Formeln haben italienische Entsprechungen: scusa se ti interrompo – Entschuldigung, wenn ich unterbreche; cioè? – wie meinst du das?; anzi – beziehungsweise, vielmehr. Neu sind die Partikeln kurz und mal (Darf ich kurz etwas sagen?), die im Italienischen fehlen.",
+   "it": "Le formule hanno equivalenti italiani: «scusa se ti interrompo» – «Entschuldigung, wenn ich unterbreche»; «cioè?» – «wie meinst du das?»; «anzi» può corrispondere a «beziehungsweise» o «vielmehr» a seconda del contesto. La novità sono le particelle «kurz» e «mal» («Darf ich kurz etwas sagen?»), che non hanno equivalenti diretti in italiano."
+  },
+  "fr": {
+   "de": "Die Formeln haben französische Entsprechungen: pardon de vous interrompre – Entschuldigung, wenn ich unterbreche; c'est-à-dire ? – wie meinen Sie das?. Neu sind die Partikeln kurz und mal, die die deutsche Formel natürlich machen.",
+   "fr": "Les formules ont des équivalents français : «pardon de vous interrompre» – «Entschuldigung, wenn ich unterbreche» ; «c'est-à-dire ?» – «wie meinen Sie das?». La nouveauté réside dans les particules «kurz» et «mal», qui rendent la formule allemande naturelle."
+  },
+  "pt": {
+   "de": "Die Formeln haben portugiesische Entsprechungen: desculpa interromper – Entschuldigung, wenn ich unterbreche; como assim? – wie meinst du das?; ou melhor – beziehungsweise, besser gesagt. Neu sind die Partikeln kurz und mal.",
+   "pt": "As fórmulas têm equivalentes em português: «desculpa interromper» – «Entschuldigung, wenn ich unterbreche»; «como assim?» – «wie meinst du das?»; «ou melhor» – «beziehungsweise» ou «besser gesagt». A novidade são as partículas «kurz» e «mal»."
+  },
+  "en": {
+   "de": "Die Formeln haben englische Entsprechungen: sorry to interrupt – Entschuldigung, wenn ich unterbreche; what do you mean? – wie meinst du das?; or rather – beziehungsweise. Das englische just entspricht oft den deutschen Partikeln kurz und mal.",
+   "en": "The formulas have clear English equivalents: «sorry to interrupt» – «Entschuldigung, wenn ich unterbreche»; «what do you mean?» – «wie meinst du das?»; «or rather» – «beziehungsweise». English «just» often corresponds to the German particles «kurz» and «mal»."
+  }
  },
  "errores": [
   "Ohne jede einleitende Formel unterbrechen.",
@@ -228,7 +243,10 @@
     "fr": "Excuse-moi, je peux juste dire quelque chose ?",
     "it": "Scusa, posso dire una cosa velocemente?",
     "pt": "Desculpa, posso dizer uma coisa rapidamente?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Wie meinst du das genau?",
@@ -239,7 +257,10 @@
     "fr": "Qu’est-ce que tu veux dire exactement ?",
     "it": "Che cosa intendi esattamente?",
     "pt": "O que queres dizer exatamente?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Ich meine eigentlich…",
@@ -250,7 +271,10 @@
     "fr": "Ce que je veux dire, en fait, c’est…",
     "it": "Quello che intendo, in realtà, è…",
     "pt": "O que quero dizer, na verdade, é…"
-   }
+   },
+   "categoriasUso": [
+    "Reformular"
+   ]
   },
   {
    "expresion": "Entschuldigung, kann ich kurz was einwerfen?",
@@ -261,7 +285,10 @@
     "fr": "Excuse-moi, je peux intervenir une seconde ?",
     "it": "Scusa, posso intervenire un attimo?",
     "pt": "Desculpa, posso intervir um instante?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Verstehe ich das richtig, dass…?",
@@ -272,7 +299,10 @@
     "fr": "Est-ce que je comprends bien que… ?",
     "it": "Ho capito bene che…?",
     "pt": "Estou a perceber bem que…?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Was ich sagen wollte, ist…",
@@ -283,7 +313,10 @@
     "fr": "Ce que je voulais dire, c’est…",
     "it": "Quello che volevo dire è…",
     "pt": "O que eu queria dizer era…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Moment, da komme ich nicht mit.",
@@ -294,7 +327,10 @@
     "fr": "Un instant, là je décroche.",
     "it": "Un momento, lì mi sono perso.",
     "pt": "Um momento, aí perdi-me."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Kannst du das noch mal anders sagen?",
@@ -305,7 +341,11 @@
     "fr": "Peux-tu le dire autrement ?",
     "it": "Puoi dirlo in un altro modo?",
     "pt": "Podes dizer isso de outra maneira?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir",
+    "Reformular"
+   ]
   },
   {
    "expresion": "Lass mich kurz überlegen.",
@@ -316,7 +356,11 @@
     "fr": "Laisse-moi réfléchir un instant.",
     "it": "Fammi pensare un attimo.",
     "pt": "Deixa-me pensar um momento."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Du wolltest gerade etwas sagen.",
@@ -327,7 +371,10 @@
     "fr": "Tu allais dire quelque chose.",
     "it": "Stavi per dire qualcosa.",
     "pt": "Ias dizer alguma coisa."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Also noch mal von vorne: …",
@@ -338,7 +385,11 @@
     "fr": "Bon, je reprends depuis le début : …",
     "it": "Allora, ricomincio: …",
     "pt": "Bom, outra vez desde o início: …"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Reformular"
+   ]
   },
   {
    "expresion": "Wie heisst das noch mal?",
@@ -349,7 +400,10 @@
     "fr": "Comment ça s'appelle, déjà ?",
     "it": "Come si chiama, adesso?",
     "pt": "Como é que se diz isso?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   }
  ],
  "mision": {

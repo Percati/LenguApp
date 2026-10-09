@@ -57,11 +57,26 @@
   "This only works if the named interest is actually accurate — a wrong guess here damages trust more than saying nothing."
  ],
  "contraste": {
-  "es": "Spanish has the same conditional tools for concessions (estaríamos dispuestos a… siempre que… – we'd be willing to… provided that…), so the language transfers. The C2 point is to attach every concession to a condition in the same sentence, so that it strengthens rather than weakens the position.",
-  "de": "Wir wären bereit, …, vorausgesetzt, dass… corresponds exactly to we'd be willing to…, provided that…. German speakers therefore frame conditional concessions well in English.",
-  "it": "Saremmo disposti a… a patto che… corresponds closely to we'd be willing to… provided that…. Note that a patto che takes the congiuntivo, while provided that takes an ordinary present.",
-  "fr": "Nous serions prêts à… à condition que… corresponds closely to we'd be willing to… provided that…. Note that à condition que takes the subjonctif, while provided that takes an ordinary present.",
-  "pt": "Estaríamos dispostos a… desde que… corresponds exactly to we'd be willing to… provided that…, with desde que in its conditional meaning. Conditional concessions therefore transfer directly."
+  "es": {
+   "en": "Spanish has the same conditional tools for concessions (estaríamos dispuestos a… siempre que… – we'd be willing to… provided that…), so the language transfers. The C2 point is to attach every concession to a condition in the same sentence, so that it strengthens rather than weakens the position.",
+   "es": "El español tiene las mismas herramientas condicionales para hacer concesiones («estaríamos dispuestos a… siempre que…» – «we'd be willing to… provided that…»), por lo que el lenguaje se transfiere. El punto C2 es unir cada concesión a una condición en la misma oración, de modo que refuerce y no debilite la posición."
+  },
+  "de": {
+   "en": "Wir wären bereit, …, vorausgesetzt, dass… corresponds exactly to we'd be willing to…, provided that…. German speakers therefore frame conditional concessions well in English.",
+   "de": "«Wir wären bereit, …, vorausgesetzt, dass…» entspricht genau «we'd be willing to…, provided that…». Bedingte Zugeständnisse lassen sich daher gut übertragen."
+  },
+  "it": {
+   "en": "Saremmo disposti a… a patto che… corresponds closely to we'd be willing to… provided that…. Note that a patto che takes the congiuntivo, while provided that takes an ordinary present.",
+   "it": "«Saremmo disposti a… a patto che…» corrisponde bene a «we'd be willing to… provided that…». Da notare che «a patto che» richiede il congiuntivo, mentre «provided that» prende un presente normale."
+  },
+  "fr": {
+   "en": "Nous serions prêts à… à condition que… corresponds closely to we'd be willing to… provided that…. Note that à condition que takes the subjonctif, while provided that takes an ordinary present.",
+   "fr": "«Nous serions prêts à… à condition que…» correspond étroitement à «we'd be willing to… provided that…». À noter que «à condition que» prend le subjonctif, alors que «provided that» prend un présent ordinaire."
+  },
+  "pt": {
+   "en": "Estaríamos dispostos a… desde que… corresponds exactly to we'd be willing to… provided that…, with desde que in its conditional meaning. Conditional concessions therefore transfer directly.",
+   "pt": "«Estaríamos dispostos a… desde que…» corresponde exatamente a «we'd be willing to… provided that…», com «desde que» em sentido condicional. Concessões condicionais se transferem diretamente."
+  }
  },
  "errores": [
   "Naming an interest that's actually wrong, which reads as presumptuous rather than perceptive.",
@@ -229,7 +244,10 @@
     "fr": "Je soupçonne que ce qui compte vraiment pour toi, c’est…",
     "it": "Sospetto che ciò che conta davvero per te sia…",
     "pt": "Suspeito que o que realmente importa para ti é…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Before you ask, I can already…",
@@ -240,7 +258,10 @@
     "fr": "Avant que tu ne poses la question, je peux déjà…",
     "it": "Prima che tu lo chieda, posso già…",
     "pt": "Antes que perguntes, já posso…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Let's treat this as a shared problem.",
@@ -251,7 +272,10 @@
     "fr": "Considérons cela comme un problème commun.",
     "it": "Consideriamolo un problema comune.",
     "pt": "Tratemos isto como um problema comum."
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Is that a fair read of where you're coming from?",
@@ -262,7 +286,10 @@
     "fr": "Est-ce une lecture juste de ta position ?",
     "it": "È una lettura corretta della tua posizione?",
     "pt": "É uma leitura justa da tua posição?"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "That's not a concession I need you to earn.",
@@ -273,7 +300,10 @@
     "fr": "Ce n’est pas une concession que tu dois mériter.",
     "it": "Non è una concessione che devi guadagnarti.",
     "pt": "Não é uma concessão que tenhas de merecer."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "What would actually solve this for both of us?",
@@ -284,7 +314,10 @@
     "fr": "Qu’est-ce qui réglerait réellement cela pour nous deux ?",
     "it": "Che cosa risolverebbe davvero questo per entrambi?",
     "pt": "O que resolveria isto de facto para nós os dois?"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Tell me where I've read you wrong.",
@@ -295,7 +328,10 @@
     "fr": "Dites-moi en quoi je vous ai mal lu.",
     "it": "Mi dica dove l'ho letta male.",
     "pt": "Diz-me onde te li mal."
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "That's the one thing I can't move on.",
@@ -306,7 +342,10 @@
     "fr": "C'est le seul point sur lequel je ne peux pas bouger.",
     "it": "È l'unico punto su cui non posso cedere.",
     "pt": "É o único ponto em que não posso ceder."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Everything else is negotiable.",
@@ -317,7 +356,10 @@
     "fr": "Tout le reste est négociable.",
     "it": "Tutto il resto è negoziabile.",
     "pt": "Tudo o resto é negociável."
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "What does this look like from your side of the table?",
@@ -328,7 +370,10 @@
     "fr": "À quoi cela ressemble-t-il de votre côté de la table ?",
     "it": "Come appare questo dalla sua parte del tavolo?",
     "pt": "Como é que isto se vê do teu lado da mesa?"
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   },
   {
    "expresion": "If we can't agree today, what's the cost of waiting?",
@@ -339,7 +384,10 @@
     "fr": "Si nous ne nous entendons pas aujourd'hui, que coûte l'attente ?",
     "it": "Se oggi non ci accordiamo, quanto costa aspettare?",
     "pt": "Se hoje não acordarmos, qual é o custo de esperar?"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Let's write down what we've agreed so far.",
@@ -350,7 +398,11 @@
     "fr": "Notons ce sur quoi nous nous sommes déjà entendus.",
     "it": "Mettiamo per iscritto ciò su cui siamo già d'accordo.",
     "pt": "Escrevamos o que já acordámos."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Sugerir/proponer"
+   ]
   }
  ],
  "mision": {

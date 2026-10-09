@@ -61,11 +61,26 @@
   "One flat, unhedged sentence per paragraph keeps the writing from sounding permanently uncertain."
  ],
  "contraste": {
-  "es": "Spanish hedges mainly with the conditional and creo que, and uses the impersonal passive far less as an academic device – it prefers the impersonal se (se sugiere que) to stacking three distinct layers as English does. Spanish speakers tend to under-hedge in academic English because in Spanish one layer is usually enough.",
-  "de": "German academic prose uses the passive and man extensively, so removing the actor is familiar. The lexical hedges are less graded than in English, and man is often calqued as one (one could argue that…), which sounds formal and old-fashioned in most English registers.",
-  "it": "Italian academic prose hedges with the si impersonale and the condizionale (si ritiene che, sembrerebbe), and it is thought that matches si ritiene che well. The typical risk is stacking conditionals (it would seem that it could be…) where English uses one lexical hedge and a passive.",
-  "fr": "French academic prose hedges with the conditionnel and on (on pourrait penser que, il semblerait que). The calque one could think that sounds stilted in English; it could be argued that or it would appear that is the natural equivalent.",
-  "pt": "Portuguese hedges with the se impersonal (considera-se que) and, in European Portuguese, with the future (poderá indicar). The calque will indicate is far too certain in English; considera-se que maps well onto it is considered that."
+  "es": {
+   "en": "Spanish hedges mainly with the conditional and creo que, and uses the impersonal passive far less as an academic device – it prefers the impersonal se (se sugiere que) to stacking three distinct layers as English does. Spanish speakers tend to under-hedge in academic English because in Spanish one layer is usually enough.",
+   "es": "El español atenúa principalmente con el condicional y «creo que», y usa mucho menos el pasivo impersonal como recurso académico; prefiere el «se» impersonal («se sugiere que») a acumular tres capas distintas como hace el inglés. Los hispanohablantes tienden a atenuar demasiado poco en inglés académico porque en español una sola capa suele bastar."
+  },
+  "de": {
+   "en": "German academic prose uses the passive and man extensively, so removing the actor is familiar. The lexical hedges are less graded than in English, and man is often calqued as one (one could argue that…), which sounds formal and old-fashioned in most English registers.",
+   "de": "Deutsche wissenschaftliche Prosa verwendet Passiv und «man» sehr häufig, daher ist das Weglassen des Handelnden vertraut. Die lexikalischen Abschwächungen sind weniger fein abgestuft als im Englischen, und «man» wird oft als «one» übertragen («one could argue that…»), was in den meisten englischen Registern formell und altmodisch klingt."
+  },
+  "it": {
+   "en": "Italian academic prose hedges with the si impersonale and the condizionale (si ritiene che, sembrerebbe), and it is thought that matches si ritiene che well. The typical risk is stacking conditionals (it would seem that it could be…) where English uses one lexical hedge and a passive.",
+   "it": "La prosa accademica italiana attenua con il «si» impersonale e il condizionale («si ritiene che», «sembrerebbe»), e «it is thought that» corrisponde bene a «si ritiene che». Il rischio tipico è accumulare condizionali («it would seem that it could be…») dove l'inglese usa un hedge lessicale e un passivo."
+  },
+  "fr": {
+   "en": "French academic prose hedges with the conditionnel and on (on pourrait penser que, il semblerait que). The calque one could think that sounds stilted in English; it could be argued that or it would appear that is the natural equivalent.",
+   "fr": "La prose académique française atténue avec le conditionnel et «on» («on pourrait penser que», «il semblerait que»). Le calque «one could think that» sonne guindé ; les équivalents naturels sont «it could be argued that» ou «it would appear that»."
+  },
+  "pt": {
+   "en": "Portuguese hedges with the se impersonal (considera-se que) and, in European Portuguese, with the future (poderá indicar). The calque will indicate is far too certain in English; considera-se que maps well onto it is considered that.",
+   "pt": "O português atenua com o «se» impessoal («considera-se que») e, no português europeu, com o futuro («poderá indicar»). O calque «will indicate» soa certo demais; «considera-se que» corresponde bem a «it is considered that»."
+  }
  },
  "errores": [
   "Stacking all three layers on a fact that is actually certain, which reads as evasive.",
@@ -255,7 +270,12 @@
     "it": "È stato suggerito che…",
     "pt": "Foi sugerido que…",
     "de": "Es wurde die Vermutung geäußert, dass…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Opinar"
+   ]
   },
   {
    "expresion": "It is thought that…",
@@ -266,7 +286,12 @@
     "fr": "On pense que…",
     "it": "Si pensa che…",
     "pt": "Pensa-se que…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "…may well be…",
@@ -277,7 +302,14 @@
     "fr": "…pourrait bien être…",
     "it": "…potrebbe benissimo essere…",
     "pt": "…pode muito bem ser…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar",
+    "Suponer/especular",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "This could arguably be explained by…",
@@ -288,7 +320,13 @@
     "fr": "Cela pourrait sans doute s’expliquer par…",
     "it": "Questo potrebbe forse essere spiegato da…",
     "pt": "Isto poderia, de certa forma, explicar-se por…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "…, though this remains unconfirmed.",
@@ -299,7 +337,12 @@
     "fr": "…, bien que cela reste à confirmer.",
     "it": "…, sebbene ciò resti non confermato.",
     "pt": "…, embora isto continue por confirmar."
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "There is some evidence to suggest that…",
@@ -310,7 +353,11 @@
     "fr": "Certains éléments laissent penser que…",
     "it": "Ci sono alcuni indizi che suggeriscono che…",
     "pt": "Há alguns indícios de que…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido"
+   ]
   },
   {
    "expresion": "Reports suggest that…",
@@ -321,7 +368,11 @@
     "fr": "Des rapports laissent penser que…",
     "it": "Alcune fonti indicano che…",
     "pt": "Os relatos apontam para que…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido"
+   ]
   },
   {
    "expresion": "The evidence points in that direction.",
@@ -332,7 +383,13 @@
     "fr": "Les données vont dans ce sens.",
     "it": "Le prove vanno in quella direzione.",
     "pt": "As provas apontam nessa direção."
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Little is known about…",
@@ -343,7 +400,11 @@
     "fr": "On sait peu de choses sur…",
     "it": "Poco si sa di…",
     "pt": "Pouco se sabe sobre…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido"
+   ]
   },
   {
    "expresion": "This claim I'd make without hedging.",
@@ -354,7 +415,12 @@
     "fr": "Cette affirmation, je la ferais sans réserve.",
     "it": "Quest'affermazione la farei senza attenuazioni.",
     "pt": "Esta afirmação fá-la-ia sem atenuações."
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Responsibility for … has not been established.",
@@ -365,7 +431,12 @@
     "fr": "La responsabilité de … n'a pas été établie.",
     "it": "La responsabilità di … non è stata accertata.",
     "pt": "A responsabilidade por … não foi estabelecida."
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Who says so matters here.",
@@ -376,7 +447,11 @@
     "fr": "Ici, savoir qui le dit compte.",
     "it": "Qui conta chi lo dice.",
     "pt": "Aqui importa quem o diz."
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido"
+   ]
   }
  ],
  "mision": {

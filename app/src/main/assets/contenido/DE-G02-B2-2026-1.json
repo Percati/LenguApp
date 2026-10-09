@@ -151,11 +151,26 @@
   "*Während* ist zweideutig: temporal (*während ich arbeite*) und adversativ (*während andere sparen, gibt er alles aus*)."
  ],
  "contraste": {
-  "es": "Für *weil / denn / deshalb* hat das Spanische im Grunde *porque* und *por eso*, ohne Stellungsfolgen. Die Bedeutung ist also gratis; gelernt werden muss ausschliesslich die Gruppe.",
-  "en": "Das Englische kennt die Unterscheidung zwischen *weil* und *denn* nicht: *because* deckt beides ab und verlangt nie eine Umstellung. Die eigentliche Hürde ist deshalb Gruppe 3 — nach *therefore* oder *nevertheless* bleibt im Englischen die Wortstellung unverändert, im Deutschen nicht. Zudem trennt das Englische Kommas anders: vor *that* steht keines, vor *dass* immer.",
-  "it": "*Perché* deckt *weil* und *denn* ab, *quindi* und *perciò* entsprechen *deshalb* – alles ohne Folgen für die Wortstellung, die Gruppe muss also neu gelernt werden. Eine zweite, unscheinbare Quelle ist das Komma: Vor *che* steht im Italienischen keines, vor *dass* im Deutschen immer.",
-  "fr": "Das Französische kennt die Unterscheidung zwischen *weil* und *denn* genau: *parce que* leitet einen Nebensatz ein, *car* verbindet zwei Hauptsätze und kann nicht am Satzanfang stehen – wie *denn*. Diese Parallele hilft sehr. Neu ist Gruppe 3: Nach *donc* oder *pourtant* folgt im Französischen das Subjekt, nach *deshalb* und *trotzdem* das Verb.",
-  "pt": "Das Portugiesische hat mit *porque* (unterordnend) und *pois* (erklärend, beiordnend) eine grobe Parallele zu *weil* und *denn*. Stellungsfolgen haben beide nicht, die Gruppen müssen also neu gelernt werden. Nach *portanto* und *no entanto* bleibt im Portugiesischen die Reihenfolge Subjekt–Verb, nach *deshalb* und *trotzdem* nicht."
+  "es": {
+   "de": "Für *weil / denn / deshalb* hat das Spanische im Grunde *porque* und *por eso*, ohne Stellungsfolgen. Die Bedeutung ist also gratis; gelernt werden muss ausschliesslich die Gruppe.",
+   "es": "Para «weil / denn / deshalb», el español dispone básicamente de «porque» y «por eso», sin consecuencias en el orden de palabras. El significado viene prácticamente dado; lo que hay que aprender es exclusivamente qué grupo de conector es cada forma alemana y qué orden exige."
+  },
+  "en": {
+   "de": "Das Englische kennt die Unterscheidung zwischen *weil* und *denn* nicht: *because* deckt beides ab und verlangt nie eine Umstellung. Die eigentliche Hürde ist deshalb Gruppe 3 — nach *therefore* oder *nevertheless* bleibt im Englischen die Wortstellung unverändert, im Deutschen nicht. Zudem trennt das Englische Kommas anders: vor *that* steht keines, vor *dass* immer.",
+   "en": "English does not distinguish between German «weil» and «denn»: «because» covers both and never triggers a word-order change. The real difficulty is the group with adverbial connectors: after «therefore» or «nevertheless», English word order stays unchanged, German word order does not. Comma rules also differ: English normally has no comma before «that», whereas German always has one before «dass»."
+  },
+  "it": {
+   "de": "*Perché* deckt *weil* und *denn* ab, *quindi* und *perciò* entsprechen *deshalb* – alles ohne Folgen für die Wortstellung, die Gruppe muss also neu gelernt werden. Eine zweite, unscheinbare Quelle ist das Komma: Vor *che* steht im Italienischen keines, vor *dass* im Deutschen immer.",
+   "it": "«Perché» copre «weil» e «denn», mentre «quindi» e «perciò» corrispondono a «deshalb»; in italiano tutto questo non modifica l'ordine delle parole, quindi i gruppi tedeschi devono essere imparati come sistema nuovo. Una seconda fonte di errore, meno evidente, è la virgola: davanti a «che» in italiano di norma non c'è, davanti a «dass» in tedesco sì."
+  },
+  "fr": {
+   "de": "Das Französische kennt die Unterscheidung zwischen *weil* und *denn* genau: *parce que* leitet einen Nebensatz ein, *car* verbindet zwei Hauptsätze und kann nicht am Satzanfang stehen – wie *denn*. Diese Parallele hilft sehr. Neu ist Gruppe 3: Nach *donc* oder *pourtant* folgt im Französischen das Subjekt, nach *deshalb* und *trotzdem* das Verb.",
+   "fr": "Le français connaît très bien la distinction entre «weil» et «denn» : «parce que» introduit une subordonnée, tandis que «car» relie deux propositions principales et ne se place pas en tête de phrase, comme «denn». Cette parallèle est très utile. La nouveauté est le troisième groupe : après «donc» ou «pourtant», le français met le sujet, alors qu'après «deshalb» et «trotzdem» l'allemand met le verbe."
+  },
+  "pt": {
+   "de": "Das Portugiesische hat mit *porque* (unterordnend) und *pois* (erklärend, beiordnend) eine grobe Parallele zu *weil* und *denn*. Stellungsfolgen haben beide nicht, die Gruppen müssen also neu gelernt werden. Nach *portanto* und *no entanto* bleibt im Portugiesischen die Reihenfolge Subjekt–Verb, nach *deshalb* und *trotzdem* nicht.",
+   "pt": "O português tem com «porque» uma conjunção subordinativa e com «pois» uma forma explicativa/coordenativa, o que oferece uma aproximação grosseira de «weil» e «denn». Nenhuma delas altera a ordem das palavras, portanto os grupos alemães ainda precisam ser aprendidos. Depois de «portanto» e «no entanto», o português mantém sujeito-verbo; depois de «deshalb» e «trotzdem», o alemão não."
+  }
  },
  "errores": [
   "*Deshalb ich habe…* — Umstellung vergessen.",
@@ -358,7 +373,13 @@
     "fr": "Cela tient surtout au fait que…",
     "it": "Ciò è dovuto soprattutto al fatto che…",
     "pt": "Isso deve-se sobretudo ao facto de que…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Dar razones",
+    "Organizar el discurso",
+    "Comparación"
+   ]
   },
   {
    "expresion": "Zwar…, allerdings…",
@@ -369,7 +390,10 @@
     "fr": "Certes…, toutefois…",
     "it": "È vero che…, tuttavia…",
     "pt": "É certo que…, no entanto…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores"
+   ]
   },
   {
    "expresion": "Je…, desto…",
@@ -380,7 +404,10 @@
     "fr": "Plus…, plus…",
     "it": "Più…, più…",
     "pt": "Quanto mais…, mais…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores"
+   ]
   },
   {
    "expresion": "Indem ich…, …",
@@ -391,7 +418,10 @@
     "fr": "En faisant…, …",
     "it": "Facendo…, …",
     "pt": "Ao fazer…, …"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores"
+   ]
   },
   {
    "expresion": "Sobald…, …",
@@ -402,7 +432,11 @@
     "fr": "Dès que…, …",
     "it": "Non appena…, …",
     "pt": "Assim que…, …"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "Damit ich… kann, …",
@@ -413,7 +447,10 @@
     "fr": "Pour que je puisse…, …",
     "it": "Affinché io possa…, …",
     "pt": "Para que eu possa…, …"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores"
+   ]
   },
   {
    "expresion": "Deshalb…",
@@ -424,7 +461,11 @@
     "fr": "C’est pourquoi…",
     "it": "Perciò…",
     "pt": "Por isso…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Trotzdem…",
@@ -435,7 +476,10 @@
     "fr": "Malgré tout…",
     "it": "Tuttavia / ciononostante…",
     "pt": "Mesmo assim…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores"
+   ]
   }
  ],
  "mision": {

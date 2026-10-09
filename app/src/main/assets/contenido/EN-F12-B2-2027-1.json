@@ -83,11 +83,26 @@
   "Giving a reason increases agreement even when the reason is weak. *Because* does real work in English."
  ],
  "contraste": {
-  "es": "Spanish uses the same conditional language for offers (podríamos ofrecer… – we could offer…), so the phrases transfer. What needs practice is opening with a figure that leaves room, since English negotiation expects movement from the first offer.",
-  "de": "Wir könnten Ihnen… anbieten corresponds exactly to we could offer you…, so the language of offers transfers directly.",
-  "it": "Potremmo offrirvi… corresponds exactly to we could offer you…, so the language of offers transfers directly.",
-  "fr": "Nous pourrions vous proposer… corresponds exactly to we could offer you…, so the language of offers transfers directly.",
-  "pt": "Poderíamos oferecer-lhe… corresponds exactly to we could offer you…, so the language of offers transfers directly."
+  "es": {
+   "en": "Spanish uses the same conditional language for offers (podríamos ofrecer… – we could offer…), so the phrases transfer. What needs practice is opening with a figure that leaves room, since English negotiation expects movement from the first offer.",
+   "es": "El español usa el mismo lenguaje condicional para hacer ofertas («podríamos ofrecer…» – «we could offer…»), por lo que las expresiones se transfieren. Lo que hay que practicar es abrir con una cifra que deje margen, ya que la negociación en inglés espera movimiento desde la primera oferta."
+  },
+  "de": {
+   "en": "Wir könnten Ihnen… anbieten corresponds exactly to we could offer you…, so the language of offers transfers directly.",
+   "de": "«Wir könnten Ihnen… anbieten» entspricht genau «we could offer you…», sodass sich die Sprache von Angeboten direkt übertragen lässt."
+  },
+  "it": {
+   "en": "Potremmo offrirvi… corresponds exactly to we could offer you…, so the language of offers transfers directly.",
+   "it": "«Potremmo offrirvi…» corrisponde esattamente a «we could offer you…», quindi il linguaggio delle offerte si trasferisce direttamente."
+  },
+  "fr": {
+   "en": "Nous pourrions vous proposer… corresponds exactly to we could offer you…, so the language of offers transfers directly.",
+   "fr": "«Nous pourrions vous proposer…» correspond exactement à «we could offer you…» ; la langue des offres se transfère donc directement."
+  },
+  "pt": {
+   "en": "Poderíamos oferecer-lhe… corresponds exactly to we could offer you…, so the language of offers transfers directly.",
+   "pt": "«Poderíamos oferecer-lhe…» ou, no Brasil, «poderíamos oferecer a você…» corresponde exatamente a «we could offer you…», então o idioma das ofertas se transfere diretamente."
+  }
  },
  "errores": [
   "Saying *I want* repeatedly. Use *I'm looking for*, *what would help is*.",
@@ -256,7 +271,11 @@
     "fr": "J’espérais quelque chose autour de…",
     "it": "Speravo in qualcosa intorno a…",
     "pt": "Eu esperava algo por volta de…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "If you could…, I'd be able to…",
@@ -267,7 +286,11 @@
     "fr": "Si tu pouvais…, je pourrais…",
     "it": "Se potessi…, riuscirei a…",
     "pt": "Se pudesses…, eu poderia…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer",
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "What would work for you?",
@@ -278,7 +301,10 @@
     "fr": "Qu’est-ce qui te conviendrait ?",
     "it": "Cosa andrebbe bene per te?",
     "pt": "O que funcionaria para ti?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "What if we tried…?",
@@ -289,7 +315,10 @@
     "fr": "Et si on essayait… ?",
     "it": "E se provassimo…?",
     "pt": "E se tentássemos…?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "I can't do that, but I could…",
@@ -300,7 +329,10 @@
     "fr": "Je ne peux pas faire ça, mais je pourrais…",
     "it": "Questo non posso farlo, ma potrei…",
     "pt": "Isso não posso fazer, mas poderia…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Would you be able to…?",
@@ -311,7 +343,10 @@
     "fr": "Est-ce que tu pourrais… ?",
     "it": "Potresti…?",
     "pt": "Poderias…?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "…because otherwise…",
@@ -322,7 +357,10 @@
     "fr": "…parce que sinon…",
     "it": "…perché altrimenti…",
     "pt": "…porque senão…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "That works for me.",
@@ -333,7 +371,10 @@
     "fr": "Ça me va.",
     "it": "Per me va bene.",
     "pt": "Isso funciona para mim."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {

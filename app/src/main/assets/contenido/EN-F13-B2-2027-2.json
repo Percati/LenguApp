@@ -84,11 +84,26 @@
   "Never soften a fact. *The restaurant might close at eleven* when you know it does sounds evasive rather than careful."
  ],
  "contraste": {
-  "es": "A plain Spanish opinion (eso es un error) translated literally (that's a mistake) often sounds harsher in English than intended. Adding a softener (I think that might be a mistake) brings it to the intended level.",
-  "de": "German softens with particles (das ist wohl nicht ganz richtig), which disappear in translation and leave that's wrong. English needs a lexical softener: I'm not sure that's quite right.",
-  "it": "A plain Italian statement (è sbagliato) becomes that's wrong, which sounds harsh in English. A softener (I'm not sure that's quite right) brings it to the intended level.",
-  "fr": "C'est faux becomes that's false or that's wrong, which sounds harsh in English. A softener (I'm not sure that's quite right) brings it to the intended level.",
-  "pt": "Isso está errado becomes that's wrong, which sounds harsh in English. A softener (I'm not sure that's quite right) brings it to the intended level."
+  "es": {
+   "en": "A plain Spanish opinion (eso es un error) translated literally (that's a mistake) often sounds harsher in English than intended. Adding a softener (I think that might be a mistake) brings it to the intended level.",
+   "es": "Una opinión directa en español («eso es un error») traducida literalmente («that's a mistake») suele sonar más dura en inglés de lo que se pretende. Añadir un atenuante («I think that might be a mistake») la lleva al nivel adecuado."
+  },
+  "de": {
+   "en": "German softens with particles (das ist wohl nicht ganz richtig), which disappear in translation and leave that's wrong. English needs a lexical softener: I'm not sure that's quite right.",
+   "de": "Im Deutschen wird mit Partikeln abgeschwächt («das ist wohl nicht ganz richtig»). Bei der Übersetzung verschwinden diese leicht und übrig bleibt «that's wrong». Englisch braucht stattdessen eine lexikalische Abschwächung: «I'm not sure that's quite right»."
+  },
+  "it": {
+   "en": "A plain Italian statement (è sbagliato) becomes that's wrong, which sounds harsh in English. A softener (I'm not sure that's quite right) brings it to the intended level.",
+   "it": "Un'affermazione italiana diretta («è sbagliato») diventa «that's wrong», che suona duro in inglese. Un attenuatore («I'm not sure that's quite right») riporta il tono al livello desiderato."
+  },
+  "fr": {
+   "en": "C'est faux becomes that's false or that's wrong, which sounds harsh in English. A softener (I'm not sure that's quite right) brings it to the intended level.",
+   "fr": "«C'est faux» devient «that's false» ou «that's wrong», formulations dures en anglais. Un atténuateur («I'm not sure that's quite right») ramène le ton au niveau voulu."
+  },
+  "pt": {
+   "en": "Isso está errado becomes that's wrong, which sounds harsh in English. A softener (I'm not sure that's quite right) brings it to the intended level.",
+   "pt": "«Isso está errado» vira «that's wrong», que soa duro em inglês. Um atenuante («I'm not sure that's quite right») leva a frase ao tom desejado."
+  }
  },
  "errores": [
   "Saying nothing at all instead of disagreeing, which is the opposite over-correction.",
@@ -279,7 +294,10 @@
     "fr": "C’est un peu…",
     "it": "È un po’…",
     "pt": "É um pouco…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I'd say…",
@@ -290,7 +308,10 @@
     "fr": "Je dirais…",
     "it": "Direi…",
     "pt": "Eu diria…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "It might just be my taste.",
@@ -301,7 +322,10 @@
     "fr": "C’est peut-être juste une question de goût.",
     "it": "Forse è solo una questione di gusti.",
     "pt": "Talvez seja apenas uma questão de gosto."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Not really.",
@@ -312,7 +336,11 @@
     "fr": "Pas vraiment.",
     "it": "Non proprio.",
     "pt": "Não muito / não propriamente."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "…, don't you think?",
@@ -323,7 +351,11 @@
     "fr": "…, tu ne trouves pas ?",
     "it": "…, non trovi?",
     "pt": "…, não achas?"
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "To be honest,…",
@@ -334,7 +366,11 @@
     "fr": "Pour être honnête, …",
     "it": "A dire il vero, …",
     "pt": "Para ser sincero, …"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "They tend to…",
@@ -345,7 +381,10 @@
     "fr": "Ils ont tendance à…",
     "it": "Tendono a…",
     "pt": "Tendem a…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I'm not sure that's right.",
@@ -356,7 +395,10 @@
     "fr": "Je ne suis pas sûr que ce soit juste.",
     "it": "Non sono sicuro che sia corretto.",
     "pt": "Não tenho a certeza de que isso esteja certo."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   }
  ],
  "mision": {

@@ -61,11 +61,26 @@
   "A twist should still be recognisable as the source idiom — too much distortion just reads as a mistake."
  ],
  "contraste": {
-  "es": "Spanish speakers know idioms well, but may take a deliberately modified English idiom as a native speaker's mistake. Recognising the twist as intentional requires knowing the original English form.",
-  "de": "German headlines also twist idioms for effect, so the technique is familiar. The difficulty is recognising the English base idiom behind the twist.",
-  "it": "Italian headlines and advertising also twist idioms, so the technique is familiar. The difficulty is recognising the English base idiom behind the twist.",
-  "fr": "French headlines play constantly with fixed expressions, so the technique is very familiar. The difficulty is recognising the English base idiom behind the twist.",
-  "pt": "Portuguese headlines and advertising also twist idioms, so the technique is familiar. The difficulty is recognising the English base idiom behind the twist."
+  "es": {
+   "en": "Spanish speakers know idioms well, but may take a deliberately modified English idiom as a native speaker's mistake. Recognising the twist as intentional requires knowing the original English form.",
+   "es": "Los hispanohablantes conocen bien los modismos, pero pueden interpretar un modismo inglés modificado deliberadamente como un error de un nativo. Reconocer que el giro es intencionado exige conocer la forma inglesa original."
+  },
+  "de": {
+   "en": "German headlines also twist idioms for effect, so the technique is familiar. The difficulty is recognising the English base idiom behind the twist.",
+   "de": "Auch deutsche Schlagzeilen spielen mit Redewendungen, daher ist die Technik vertraut. Die Schwierigkeit liegt darin, die englische Grundredensart hinter der Abwandlung zu erkennen."
+  },
+  "it": {
+   "en": "Italian headlines and advertising also twist idioms, so the technique is familiar. The difficulty is recognising the English base idiom behind the twist.",
+   "it": "Anche titoli e pubblicità italiani modificano idiomi per creare effetto, quindi la tecnica è familiare. La difficoltà sta nel riconoscere l'idiom inglese di base dietro la variazione."
+  },
+  "fr": {
+   "en": "French headlines play constantly with fixed expressions, so the technique is very familiar. The difficulty is recognising the English base idiom behind the twist.",
+   "fr": "Les titres français jouent constamment avec les expressions figées, donc la technique est très familière. La difficulté consiste à reconnaître l'idiome anglais de base derrière la variation."
+  },
+  "pt": {
+   "en": "Portuguese headlines and advertising also twist idioms, so the technique is familiar. The difficulty is recognising the English base idiom behind the twist.",
+   "pt": "Manchetes e publicidade em português também brincam com idioms, então a técnica é familiar. A dificuldade está em reconhecer o idiom inglês original por trás da alteração."
+  }
  },
  "errores": [
   "Twisting an idiom the speaker doesn't actually know the standard form of, which reads as an error rather than play.",
@@ -255,7 +270,10 @@
     "fr": "…dans des cercles de plus en plus petits.",
     "it": "…in cerchi sempre più piccoli.",
     "pt": "…em círculos cada vez menores."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "a hurricane in a teacup",
@@ -266,7 +284,10 @@
     "fr": "une tempête dans un verre d’eau",
     "it": "una tempesta in un bicchier d’acqua",
     "pt": "uma tempestade num copo de água"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to cut an already short story shorter",
@@ -277,7 +298,10 @@
     "fr": "pour faire encore plus court",
     "it": "per farla ancora più breve",
     "pt": "para encurtar uma história já curta"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "not to put too fine a point on it,",
@@ -288,7 +312,11 @@
     "fr": "pour ne pas tourner autour du pot,",
     "it": "per non girarci troppo intorno,",
     "pt": "para não andar com rodeios,"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "…, if that's not too strong a word.",
@@ -299,7 +327,10 @@
     "fr": "…, si le mot n’est pas trop fort.",
     "it": "…, se non è un’espressione troppo forte.",
     "pt": "…, se não for uma expressão demasiado forte."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "the understatement of the year",
@@ -310,7 +341,11 @@
     "fr": "l’euphémisme de l’année",
     "it": "l’eufemismo dell’anno",
     "pt": "o eufemismo do ano"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "the elephant in the room nobody will name",
@@ -321,7 +356,10 @@
     "fr": "l'éléphant dans la pièce que personne ne nomme",
     "it": "l'elefante nella stanza che nessuno nomina",
     "pt": "o elefante na sala que ninguém nomeia"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to move the goalposts, and the pitch with them",
@@ -332,7 +370,11 @@
     "fr": "changer les règles, et le terrain avec",
     "it": "cambiare le regole, e con esse il campo",
     "pt": "mudar as regras, e o campo com elas"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "a storm in a very small teacup",
@@ -343,7 +385,10 @@
     "fr": "une tempête dans un très petit verre d'eau",
     "it": "una tempesta in un bicchiere molto piccolo",
     "pt": "uma tempestade num copo muito pequeno"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to clutch at increasingly distant straws",
@@ -354,7 +399,10 @@
     "fr": "se raccrocher à des branches toujours plus lointaines",
     "it": "aggrapparsi a fili d'erba sempre più lontani",
     "pt": "agarrar-se a palhas cada vez mais distantes"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "…, to coin a well-worn phrase.",
@@ -365,7 +413,10 @@
     "fr": "…, pour reprendre une formule bien usée.",
     "it": "…, per usare una frase molto logora.",
     "pt": "…, para usar uma frase muito gasta."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "A twist only works if the original is obvious.",
@@ -376,7 +427,10 @@
     "fr": "La variation ne marche que si l'original est évident.",
     "it": "La variazione funziona solo se l'originale è ovvio.",
     "pt": "A variação só funciona se o original for óbvio."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   }
  ],
  "mision": {

@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Más grande que is often calqued as more big than; English adds -er to short adjectives: bigger than.",
-  "de": "German größer corresponds exactly to bigger, with the same -er ending, so simple comparatives transfer directly.",
-  "it": "Più grande di is often calqued as more big than; English adds -er to short adjectives: bigger than.",
-  "fr": "Plus grand que is often calqued as more big than; English adds -er to short adjectives: bigger than.",
-  "pt": "Mais alto que is often calqued as more tall than; English adds -er to short adjectives: taller than."
+  "es": {
+   "en": "Más grande que is often calqued as more big than; English adds -er to short adjectives: bigger than.",
+   "es": "«Más grande que» suele calcarse como «more big than»; en inglés los adjetivos cortos añaden «-er»: «bigger than»."
+  },
+  "de": {
+   "en": "German größer corresponds exactly to bigger, with the same -er ending, so simple comparatives transfer directly.",
+   "de": "Das deutsche «größer» entspricht genau «bigger» und hat ebenfalls die Endung «-er», sodass sich einfache Komparative direkt übertragen lassen."
+  },
+  "it": {
+   "en": "Più grande di is often calqued as more big than; English adds -er to short adjectives: bigger than.",
+   "it": "«Più grande di» viene spesso calcato come «more big than»; in inglese gli aggettivi brevi aggiungono «-er»: «bigger than»."
+  },
+  "fr": {
+   "en": "Plus grand que is often calqued as more big than; English adds -er to short adjectives: bigger than.",
+   "fr": "«Plus grand que» est souvent calqué en «more big than» ; l'anglais ajoute «-er» aux adjectifs courts : «bigger than»."
+  },
+  "pt": {
+   "en": "Mais alto que is often calqued as more tall than; English adds -er to short adjectives: taller than.",
+   "pt": "«Mais alto que» costuma ser calcado como «more tall than»; em inglês, adjetivos curtos recebem «-er»: «taller than»."
+  }
  },
  "errores": [
   {
@@ -397,7 +412,10 @@
     "fr": "…est plus grand que…",
     "it": "…è più grande di…",
     "pt": "…é maior do que…"
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "…is more expensive than…",
@@ -415,7 +433,10 @@
     "fr": "…est plus cher que…",
     "it": "…è più costoso di…",
     "pt": "…é mais caro do que…"
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "They're similar.",
@@ -433,7 +454,10 @@
     "fr": "Ils/Elles se ressemblent.",
     "it": "Sono simili.",
     "pt": "São parecidos/as."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "…is cheaper.",
@@ -451,7 +475,10 @@
     "fr": "…est moins cher.",
     "it": "…è più economico.",
     "pt": "…é mais barato."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "I prefer…",
@@ -469,7 +496,10 @@
     "fr": "Je préfère…",
     "it": "Preferisco…",
     "pt": "Prefiro…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "…is smaller than…",
@@ -487,7 +517,10 @@
     "fr": "…est plus petit que…",
     "it": "…è più piccolo di…",
     "pt": "…é menor do que…"
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "…is better than…",
@@ -505,7 +538,10 @@
     "fr": "…est meilleur que…",
     "it": "…è meglio di…",
     "pt": "…é melhor do que…"
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "…is the cheapest.",
@@ -523,7 +559,10 @@
     "fr": "…est le moins cher.",
     "it": "…è il più economico.",
     "pt": "…é o mais barato."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "They're not the same.",
@@ -541,7 +580,10 @@
     "fr": "Ils ne sont pas pareils.",
     "it": "Non sono uguali.",
     "pt": "Não são iguais."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "This one is smaller, but it's cheaper.",
@@ -559,7 +601,11 @@
     "fr": "Celui-ci est plus petit, mais moins cher.",
     "it": "Questo è più piccolo, ma più economico.",
     "pt": "Este é mais pequeno, mas mais barato."
-   }
+   },
+   "categoriasUso": [
+    "Comparación",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Which one do you prefer?",
@@ -577,7 +623,10 @@
     "fr": "Lequel préfères-tu ?",
     "it": "Quale preferisci?",
     "pt": "Qual preferes?"
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "I prefer this one, because…",
@@ -595,7 +644,11 @@
     "fr": "Je préfère celui-ci, parce que…",
     "it": "Preferisco questo, perché…",
     "pt": "Prefiro este, porque…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones",
+    "Opinar"
+   ]
   }
  ],
  "mision": {

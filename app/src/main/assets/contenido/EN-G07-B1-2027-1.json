@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish has an exact equivalent with si + pluscuamperfecto de subjuntivo and the conditional perfect (si hubiéramos revisado, no nos habríamos perdido), so the logic transfers directly.",
-  "de": "German uses hätte in both halves (Wenn wir es geprüft hätten, hätten wir uns nicht verlaufen), which leads to If we had checked, we had not got lost. English needs had in the if-clause and would have in the result.",
-  "it": "Italian has an exact equivalent (se avessimo controllato, non ci saremmo persi), so the logic transfers directly. In colloquial Italian the imperfetto sometimes replaces both halves (se controllavamo, non ci perdevamo), which can lead to if we checked, we didn't get lost.",
-  "fr": "French has an exact equivalent (si nous avions vérifié, nous ne nous serions pas perdus), including the rule that the conditional never follows si. The logic and the form both transfer directly.",
-  "pt": "Portuguese has an exact equivalent (se tivéssemos verificado, não nos teríamos perdido), so the logic transfers directly. In colloquial European Portuguese the result clause often uses tínhamos, which leads to we had not got lost instead of we wouldn't have got lost."
+  "es": {
+   "en": "Spanish has an exact equivalent with si + pluscuamperfecto de subjuntivo and the conditional perfect (si hubiéramos revisado, no nos habríamos perdido), so the logic transfers directly.",
+   "es": "El español tiene un equivalente exacto con «si» + pluscuamperfecto de subjuntivo y condicional compuesto («si hubiéramos revisado, no nos habríamos perdido»), por lo que la lógica se transfiere directamente."
+  },
+  "de": {
+   "en": "German uses hätte in both halves (Wenn wir es geprüft hätten, hätten wir uns nicht verlaufen), which leads to If we had checked, we had not got lost. English needs had in the if-clause and would have in the result.",
+   "de": "Im Deutschen steht in beiden Satzhälften «hätte» («Wenn wir es geprüft hätten, hätten wir uns nicht verlaufen»). Die wörtliche Übertragung ergibt «If we had checked, we had not got lost». Im Englischen braucht man «had» im if-Satz und «would have» im Ergebnissatz."
+  },
+  "it": {
+   "en": "Italian has an exact equivalent (se avessimo controllato, non ci saremmo persi), so the logic transfers directly. In colloquial Italian the imperfetto sometimes replaces both halves (se controllavamo, non ci perdevamo), which can lead to if we checked, we didn't get lost.",
+   "it": "L'italiano ha un equivalente esatto («se avessimo controllato, non ci saremmo persi»), quindi la logica si trasferisce direttamente. Nell'italiano colloquiale, però, l'imperfetto può sostituire entrambe le forme («se controllavamo, non ci perdevamo»), il che può portare a «if we checked, we didn't get lost»."
+  },
+  "fr": {
+   "en": "French has an exact equivalent (si nous avions vérifié, nous ne nous serions pas perdus), including the rule that the conditional never follows si. The logic and the form both transfer directly.",
+   "fr": "Le français a un équivalent exact («si nous avions vérifié, nous ne nous serions pas perdus»), y compris la règle selon laquelle le conditionnel ne suit jamais «si». La logique et la forme se transfèrent donc directement."
+  },
+  "pt": {
+   "en": "Portuguese has an exact equivalent (se tivéssemos verificado, não nos teríamos perdido), so the logic transfers directly. In colloquial European Portuguese the result clause often uses tínhamos, which leads to we had not got lost instead of we wouldn't have got lost.",
+   "pt": "O português tem um equivalente exato («se tivéssemos verificado, não nos teríamos perdido»), então a lógica se transfere diretamente. No português europeu coloquial, porém, a oração de resultado pode usar «tínhamos», o que leva a «we had not got lost» em vez de «we wouldn't have got lost»."
+  }
  },
  "errores": [
   {
@@ -437,7 +452,10 @@
     "fr": "Si nous avions…, nous n’aurions pas…",
     "it": "Se avessimo…, non avremmo…",
     "pt": "Se tivéssemos…, não teríamos…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "If I had known,…",
@@ -455,7 +473,11 @@
     "fr": "Si je l’avais su,…",
     "it": "Se l’avessi saputo,…",
     "pt": "Se eu tivesse sabido,…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "We might have… if…",
@@ -473,7 +495,11 @@
     "fr": "Nous aurions pu… si…",
     "it": "Avremmo potuto… se…",
     "pt": "Poderíamos ter… se…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "I would have called you.",
@@ -491,7 +517,10 @@
     "fr": "Je t’aurais appelé(e).",
     "it": "Ti avrei chiamato.",
     "pt": "Ter-te-ia ligado."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "It wouldn't have happened if…",
@@ -509,7 +538,12 @@
     "fr": "Cela ne serait pas arrivé si…",
     "it": "Non sarebbe successo se…",
     "pt": "Não teria acontecido se…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Organizar el discurso",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "In hindsight,…",
@@ -527,7 +561,11 @@
     "fr": "Avec le recul, …",
     "it": "Col senno di poi, …",
     "pt": "Em retrospetiva, …"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Agradecer y disculparse"
+   ]
   },
   {
    "expresion": "That can't be changed now.",
@@ -545,7 +583,10 @@
     "fr": "Cela ne peut plus être changé.",
     "it": "Non si può più cambiare.",
     "pt": "Isso já não se pode mudar."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   }
  ],
  "mision": {

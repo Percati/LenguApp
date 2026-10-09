@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Many varieties of Latin American Spanish prefer the indefinido even for experiences, so the English present perfect can feel unnatural at first.",
-  "de": "For life experience German often uses war with schon (Ich war schon in Paris), which leads to I was already in Paris. English uses the present perfect here: I've been to Paris.",
-  "it": "Italian sono stato a Parigi corresponds well to I've been to Paris, so life experience is easy. The difficulty comes later: Italian also uses the same form for finished time (sono stato a Parigi l'anno scorso), where English needs I went to Paris last year.",
-  "fr": "French uses the passé composé with être for movement (je suis déjà allé à Paris), which can lead to I am gone to Paris or I have gone to Paris. For experience, English uses been: I've been to Paris.",
-  "pt": "For life experience Portuguese uses the simple past with já (já estive em Paris), which leads to I already was in Paris. English uses the present perfect here: I've been to Paris."
+  "es": {
+   "en": "Many varieties of Latin American Spanish prefer the indefinido even for experiences, so the English present perfect can feel unnatural at first.",
+   "es": "Muchas variedades del español latinoamericano prefieren el indefinido incluso para experiencias, por lo que el present perfect inglés puede resultar poco natural al principio."
+  },
+  "de": {
+   "en": "For life experience German often uses war with schon (Ich war schon in Paris), which leads to I was already in Paris. English uses the present perfect here: I've been to Paris.",
+   "de": "Für Lebenserfahrungen verwendet das Deutsche häufig «war» mit «schon» («Ich war schon in Paris»), was leicht zu «I was already in Paris» führt. Im Englischen steht hier das present perfect: «I've been to Paris»."
+  },
+  "it": {
+   "en": "Italian sono stato a Parigi corresponds well to I've been to Paris, so life experience is easy. The difficulty comes later: Italian also uses the same form for finished time (sono stato a Parigi l'anno scorso), where English needs I went to Paris last year.",
+   "it": "«Sono stato a Parigi» corrisponde bene a «I've been to Paris», quindi parlare di esperienze di vita è facile. La difficoltà arriva dopo: l'italiano usa la stessa forma anche per un tempo concluso («sono stato a Parigi l'anno scorso»), dove l'inglese richiede «I went to Paris last year»."
+  },
+  "fr": {
+   "en": "French uses the passé composé with être for movement (je suis déjà allé à Paris), which can lead to I am gone to Paris or I have gone to Paris. For experience, English uses been: I've been to Paris.",
+   "fr": "Le français utilise le passé composé avec «être» pour les verbes de mouvement («je suis déjà allé à Paris»), ce qui peut produire «I am gone to Paris» ou «I have gone to Paris». Pour parler d'expérience, l'anglais utilise «been» : «I've been to Paris»."
+  },
+  "pt": {
+   "en": "For life experience Portuguese uses the simple past with já (já estive em Paris), which leads to I already was in Paris. English uses the present perfect here: I've been to Paris.",
+   "pt": "Para experiências de vida, o português usa o passado simples com «já» («já estive em Paris»), o que pode levar a «I already was in Paris». Em inglês, usa-se o present perfect: «I've been to Paris»."
+  }
  },
  "errores": [
   {
@@ -407,7 +422,10 @@
     "fr": "Je suis déjà allé(e) à…",
     "it": "Sono stato/a a…",
     "pt": "Já estive em…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "I went to…in…",
@@ -425,7 +443,11 @@
     "fr": "Je suis allé(e) à… en…",
     "it": "Sono andato/a a… nel…",
     "pt": "Fui a… em…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Have you ever…?",
@@ -443,7 +465,10 @@
     "fr": "As-tu déjà… ?",
     "it": "Hai mai…?",
     "pt": "Já alguma vez…?"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "When did you…?",
@@ -461,7 +486,10 @@
     "fr": "Quand as-tu… ?",
     "it": "Quando hai…?",
     "pt": "Quando…?"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "I've never…",
@@ -479,7 +507,10 @@
     "fr": "Je n’ai jamais…",
     "it": "Non ho mai…",
     "pt": "Nunca…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Last year, I…",
@@ -497,7 +528,12 @@
     "fr": "L’année dernière, j’ai…",
     "it": "L’anno scorso ho…",
     "pt": "No ano passado, eu…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Organizar el discurso",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Is the time finished or not?",
@@ -515,7 +551,10 @@
     "fr": "La période est-elle terminée ou non ?",
     "it": "Il periodo è concluso o no?",
     "pt": "O período acabou ou não?"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   }
  ],
  "mision": {

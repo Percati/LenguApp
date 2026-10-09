@@ -64,11 +64,26 @@
   "Ohne wenn, mit Inversion, klingt das Muster formeller: Hätte man das gewusst, wäre die Entscheidung anders ausgefallen."
  ],
  "contraste": {
-  "es": "Das Spanische bildet dieselbe Bedeutung mit si + pluscuamperfecto de subjuntivo und condicional compuesto (si hubiéramos sabido, habríamos podido evitarlo), aber ohne einen dritten Baustein für das Modalverb — poder wird einfach konjugiert. Die deutsche Besonderheit ist also nicht die Bedingung, sondern der zusätzliche Doppelinfinitiv, der im Spanischen keine Entsprechung hat.",
-  "en": "Das Englische bildet dieselbe Bedeutung mit dem Third Conditional und einem Modalverb im Perfekt (if we had read the minutes, we could have avoided the mistake), die Logik ist also identisch. Der typische Fehler ist die Übertragung von could have avoided als könnten vermieden haben, was im Deutschen eine Vermutung ausdrückt; richtig ist hätten vermeiden können, mit dem Modalverb als Infinitiv am Ende.",
-  "it": "Das Italienische bildet das Muster mit se avessimo saputo, avremmo potuto evitarlo – mit dem Partizip potuto. Genau daraus entsteht der Kernfehler hätten gekonnt vermeiden statt hätten vermeiden können. Ausserdem steht im gesprochenen Italienisch oft das Imperfetto in beiden Satzteilen (se lo sapevo, lo evitavo), was zu einem Indikativ im Deutschen verleitet.",
-  "fr": "Das Französische bildet das Muster mit si nous avions su, nous aurions pu l'éviter – mit dem Partizip pu, woraus der Fehler hätten gekonnt vermeiden entsteht. Die Regel, im Bedingungssatz kein würde zu setzen, kennen Französischsprachige dagegen schon: Nach si steht auch im Französischen nie das conditionnel.",
-  "pt": "Das Portugiesische bildet das Muster mit se tivéssemos sabido, teríamos podido evitá-lo (Partizip podido) oder, häufiger, mit poderíamos ter evitado. Die zweite Form verleitet zu könnten vermieden haben, was im Deutschen eine Vermutung ausdrückt, nicht die verpasste Möglichkeit; richtig ist hätten vermeiden können."
+  "es": {
+   "de": "Das Spanische bildet dieselbe Bedeutung mit si + pluscuamperfecto de subjuntivo und condicional compuesto (si hubiéramos sabido, habríamos podido evitarlo), aber ohne einen dritten Baustein für das Modalverb — poder wird einfach konjugiert. Die deutsche Besonderheit ist also nicht die Bedingung, sondern der zusätzliche Doppelinfinitiv, der im Spanischen keine Entsprechung hat.",
+   "es": "El español expresa el mismo significado con «si + pluscuamperfecto de subjuntivo» y condicional compuesto («si hubiéramos sabido, habríamos podido evitarlo»), pero sin un tercer elemento para el verbo modal: «poder» simplemente se conjuga. La particularidad alemana no está, por tanto, en la condición, sino en el doble infinitivo adicional, que no tiene equivalente en español."
+  },
+  "en": {
+   "de": "Das Englische bildet dieselbe Bedeutung mit dem Third Conditional und einem Modalverb im Perfekt (if we had read the minutes, we could have avoided the mistake), die Logik ist also identisch. Der typische Fehler ist die Übertragung von could have avoided als könnten vermieden haben, was im Deutschen eine Vermutung ausdrückt; richtig ist hätten vermeiden können, mit dem Modalverb als Infinitiv am Ende.",
+   "en": "English expresses the same meaning with the Third Conditional plus a perfect modal («if we had read the minutes, we could have avoided the mistake»), so the logic is identical. The typical error is translating «could have avoided» as «könnten vermieden haben», which in German suggests conjecture; the correct form is «hätten vermeiden können», with the modal verb as an infinitive at the end."
+  },
+  "it": {
+   "de": "Das Italienische bildet das Muster mit se avessimo saputo, avremmo potuto evitarlo – mit dem Partizip potuto. Genau daraus entsteht der Kernfehler hätten gekonnt vermeiden statt hätten vermeiden können. Ausserdem steht im gesprochenen Italienisch oft das Imperfetto in beiden Satzteilen (se lo sapevo, lo evitavo), was zu einem Indikativ im Deutschen verleitet.",
+   "it": "L'italiano forma lo schema con «se avessimo saputo, avremmo potuto evitarlo», usando il participio «potuto». Da qui nasce precisamente l'errore «hätten gekonnt vermeiden» invece di «hätten vermeiden können». Inoltre nel parlato italiano compare spesso l'imperfetto in entrambe le parti («se lo sapevo, lo evitavo»), che può indurre a usare l'indicativo anche in tedesco."
+  },
+  "fr": {
+   "de": "Das Französische bildet das Muster mit si nous avions su, nous aurions pu l'éviter – mit dem Partizip pu, woraus der Fehler hätten gekonnt vermeiden entsteht. Die Regel, im Bedingungssatz kein würde zu setzen, kennen Französischsprachige dagegen schon: Nach si steht auch im Französischen nie das conditionnel.",
+   "fr": "Le français forme ce schéma avec «si nous avions su, nous aurions pu l'éviter» ; le participe «pu» mène facilement à l'erreur «hätten gekonnt vermeiden». En revanche, les francophones connaissent déjà la règle qui interdit le conditionnel après «si» : comme en allemand avec «wenn», le conditionnel français n'apparaît jamais dans la proposition conditionnelle."
+  },
+  "pt": {
+   "de": "Das Portugiesische bildet das Muster mit se tivéssemos sabido, teríamos podido evitá-lo (Partizip podido) oder, häufiger, mit poderíamos ter evitado. Die zweite Form verleitet zu könnten vermieden haben, was im Deutschen eine Vermutung ausdrückt, nicht die verpasste Möglichkeit; richtig ist hätten vermeiden können.",
+   "pt": "O português forma o padrão com «se tivéssemos sabido, teríamos podido evitá-lo» — com o particípio «podido» — ou, mais frequentemente, «poderíamos ter evitado». A segunda forma favorece o erro «könnten vermieden haben», que em alemão expressa uma suposição, não uma possibilidade perdida; o correto é «hätten vermeiden können»."
+  }
  },
  "errores": [
   "Das Partizip statt des Infinitivs beim Modalverb: hätte gewusst können statt hätte wissen können.",
@@ -237,7 +252,12 @@
     "fr": "On aurait dû le savoir.",
     "it": "Si sarebbe dovuto sapere.",
     "pt": "Isso era algo que se devia ter sabido."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Hätte ich das gewusst, hätte ich anders entschieden.",
@@ -248,7 +268,11 @@
     "fr": "Si je l’avais su, j’aurais décidé autrement.",
     "it": "Se l’avessi saputo, avrei deciso diversamente.",
     "pt": "Se eu tivesse sabido, teria decidido de outra forma."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Das wäre vermeidbar gewesen, wenn…",
@@ -259,7 +283,12 @@
     "fr": "Cela aurait pu être évité si…",
     "it": "Si sarebbe potuto evitare se…",
     "pt": "Isso poderia ter sido evitado se…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Man hätte früher reagieren sollen.",
@@ -270,7 +299,13 @@
     "fr": "Il aurait fallu réagir plus tôt.",
     "it": "Si sarebbe dovuto reagire prima.",
     "pt": "Dever-se-ia ter reagido mais cedo."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Discrepar",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "Das wäre nicht passiert, wenn man hätte reagieren können.",
@@ -281,7 +316,12 @@
     "fr": "Cela ne serait pas arrivé si on avait pu réagir.",
     "it": "Non sarebbe successo se si fosse potuto reagire.",
     "pt": "Isso não teria acontecido se tivesse sido possível reagir."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "Im Nachhinein hätte man das anders handhaben müssen.",
@@ -292,7 +332,11 @@
     "fr": "Avec le recul, il aurait fallu gérer cela autrement.",
     "it": "Col senno di poi, si sarebbe dovuto gestire diversamente.",
     "pt": "Em retrospetiva, isso deveria ter sido tratado de outra forma."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Dass das passieren würde, war absehbar.",
@@ -303,7 +347,12 @@
     "fr": "Que cela arrive était prévisible.",
     "it": "Che sarebbe successo era prevedibile.",
     "pt": "Que isso ia acontecer era previsível."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Ich hätte es an ihrer Stelle genauso gemacht.",
@@ -314,7 +363,12 @@
     "fr": "À leur place, j'aurais fait pareil.",
     "it": "Al loro posto avrei fatto lo stesso.",
     "pt": "No lugar deles teria feito o mesmo."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Hätte ich davon gewusst, wäre ich heute nicht hier.",
@@ -325,7 +379,12 @@
     "fr": "Si je l'avais su, je ne serais pas ici aujourd'hui.",
     "it": "Se l'avessi saputo, oggi non sarei qui.",
     "pt": "Se eu soubesse, hoje não estaria aqui."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Vorwürfe helfen jetzt nicht weiter.",
@@ -336,7 +395,12 @@
     "fr": "Les reproches n'aident pas maintenant.",
     "it": "I rimproveri ora non aiutano.",
     "pt": "As recriminações agora não ajudam."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Das hätte niemand voraussehen können.",
@@ -347,7 +411,12 @@
     "fr": "Personne n'aurait pu le prévoir.",
     "it": "Nessuno avrebbe potuto prevederlo.",
     "pt": "Ninguém poderia ter previsto isso."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Was hätte man Ihrer Meinung nach tun sollen?",
@@ -358,7 +427,12 @@
     "fr": "Qu'aurait-il fallu faire, selon vous ?",
     "it": "Che cosa si sarebbe dovuto fare, secondo lei?",
     "pt": "O que se devia ter feito, na sua opinião?"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Plantear un problema/quejarse"
+   ]
   }
  ],
  "mision": {

@@ -56,11 +56,26 @@
   "Diese Moderationsfunktionen setzen voraus, dass man das Gespräch als Ganzes im Blick behält, nicht nur den eigenen Redebeitrag."
  ],
  "contraste": {
-  "es": "Die gesichtswahrenden Formeln haben spanische Entsprechungen: quizá no me expliqué bien – ich habe mich wohl unklar ausgedrückt, debe de haber habido un malentendido – da muss ein Missverständnis vorliegen. Die Strategie überträgt sich direkt.",
-  "it": "Die gesichtswahrenden Formeln haben italienische Entsprechungen: mi sono spiegato male – ich habe mich wohl unklar ausgedrückt, forse non ci siamo capiti – vielleicht haben wir uns missverstanden. Die Strategie überträgt sich also direkt.",
-  "fr": "Die gesichtswahrenden Formeln haben französische Entsprechungen: je me suis peut-être mal exprimé – ich habe mich wohl unklar ausgedrückt, il a dû y avoir un malentendu – da muss ein Missverständnis vorliegen. Die Strategie überträgt sich direkt.",
-  "pt": "Die gesichtswahrenden Formeln haben portugiesische Entsprechungen: se calhar expliquei-me mal (europäisch) – ich habe mich wohl unklar ausgedrückt, deve ter havido um mal-entendido – da muss ein Missverständnis vorliegen. Die Strategie überträgt sich direkt.",
-  "en": "Die gesichtswahrenden Formeln haben genaue englische Entsprechungen: perhaps I didn't make myself clear – ich habe mich wohl unklar ausgedrückt, there seems to have been a misunderstanding – da scheint ein Missverständnis vorzuliegen."
+  "es": {
+   "de": "Die gesichtswahrenden Formeln haben spanische Entsprechungen: quizá no me expliqué bien – ich habe mich wohl unklar ausgedrückt, debe de haber habido un malentendido – da muss ein Missverständnis vorliegen. Die Strategie überträgt sich direkt.",
+   "es": "Las fórmulas para proteger la imagen del interlocutor tienen equivalentes en español: «quizá no me expliqué bien» – ich habe mich wohl unklar ausgedrückt; «debe de haber habido un malentendido» – da muss ein Missverständnis vorliegen. La estrategia se transfiere directamente."
+  },
+  "it": {
+   "de": "Die gesichtswahrenden Formeln haben italienische Entsprechungen: mi sono spiegato male – ich habe mich wohl unklar ausgedrückt, forse non ci siamo capiti – vielleicht haben wir uns missverstanden. Die Strategie überträgt sich also direkt.",
+   "it": "Le formule che proteggono la faccia hanno equivalenti italiani: «mi sono spiegato male» – «ich habe mich wohl unklar ausgedrückt», «forse non ci siamo capiti» – «vielleicht haben wir uns missverstanden». La strategia si trasferisce quindi direttamente."
+  },
+  "fr": {
+   "de": "Die gesichtswahrenden Formeln haben französische Entsprechungen: je me suis peut-être mal exprimé – ich habe mich wohl unklar ausgedrückt, il a dû y avoir un malentendu – da muss ein Missverständnis vorliegen. Die Strategie überträgt sich direkt.",
+   "fr": "Les formules qui préservent la face ont des équivalents français : «je me suis peut-être mal exprimé» – «ich habe mich wohl unklar ausgedrückt», «il a dû y avoir un malentendu» – «da muss ein Missverständnis vorliegen». La stratégie se transfère directement."
+  },
+  "pt": {
+   "de": "Die gesichtswahrenden Formeln haben portugiesische Entsprechungen: se calhar expliquei-me mal (europäisch) – ich habe mich wohl unklar ausgedrückt, deve ter havido um mal-entendido – da muss ein Missverständnis vorliegen. Die Strategie überträgt sich direkt.",
+   "pt": "As fórmulas de preservação da imagem do interlocutor têm equivalentes em português: no europeu, «se calhar expliquei-me mal» – ich habe mich wohl unklar ausgedrückt; «deve ter havido um mal-entendido» – da muss ein Missverständnis vorliegen. A estratégia se transfere diretamente."
+  },
+  "en": {
+   "de": "Die gesichtswahrenden Formeln haben genaue englische Entsprechungen: perhaps I didn't make myself clear – ich habe mich wohl unklar ausgedrückt, there seems to have been a misunderstanding – da scheint ein Missverständnis vorzuliegen.",
+   "en": "Face-saving formulas have close English equivalents: «perhaps I didn't make myself clear» – «ich habe mich wohl unklar ausgedrückt», «there seems to have been a misunderstanding» – «da scheint ein Missverständnis vorzuliegen»."
+  }
  },
  "errores": [
   "Eine Korrektur so formulieren, dass sie das Gegenüber blossstellt, statt das Gesicht zu wahren.",
@@ -250,7 +265,10 @@
     "fr": "Avant d’aller plus loin sur ce point, …",
     "it": "Prima di andare oltre su questo punto, …",
     "pt": "Antes de avançarmos neste ponto, …"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Das setzt eigentlich voraus, dass…, oder?",
@@ -261,7 +279,10 @@
     "fr": "Cela suppose en fait que…, n’est-ce pas ?",
     "it": "Questo in realtà presuppone che…, no?",
     "pt": "Isso na verdade pressupõe que…, não é?"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Da ist uns beiden ein Missverständnis unterlaufen.",
@@ -272,7 +293,10 @@
     "fr": "Nous nous sommes tous les deux un peu mal compris ici.",
     "it": "Qui c’è stato un piccolo malinteso da entrambe le parti.",
     "pt": "Aqui houve um pequeno mal-entendido dos dois lados."
-   }
+   },
+   "categoriasUso": [
+    "Reformular"
+   ]
   },
   {
    "expresion": "Um noch mal auf den Kernpunkt zurückzukommen: …",
@@ -283,7 +307,10 @@
     "fr": "Pour revenir au point essentiel : …",
     "it": "Per tornare al punto centrale: …",
     "pt": "Para voltar ao ponto central: …"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Vielleicht sollten wir da kurz genauer hinschauen.",
@@ -294,7 +321,10 @@
     "fr": "Peut-être devrions-nous examiner cela de plus près.",
     "it": "Forse dovremmo esaminarlo più da vicino.",
     "pt": "Talvez devêssemos analisar isso mais de perto."
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Ich glaube, wir meinen da eigentlich dasselbe.",
@@ -305,7 +335,10 @@
     "fr": "Je pense qu’au fond, nous disons la même chose.",
     "it": "Credo che in fondo stiamo dicendo la stessa cosa.",
     "pt": "Acho que, no fundo, estamos a dizer a mesma coisa."
-   }
+   },
+   "categoriasUso": [
+    "Reformular"
+   ]
   },
   {
    "expresion": "Darf ich das kurz auseinanderhalten?",
@@ -316,7 +349,10 @@
     "fr": "Puis-je distinguer les deux un instant ?",
     "it": "Posso distinguere brevemente le due cose?",
     "pt": "Posso separar isso por um momento?"
-   }
+   },
+   "categoriasUso": [
+    "Reformular"
+   ]
   },
   {
    "expresion": "Bevor wir weiterreden, sollten wir uns auf die Begriffe einigen.",
@@ -327,7 +363,10 @@
     "fr": "Avant de continuer, nous devrions nous accorder sur les termes.",
     "it": "Prima di proseguire dovremmo intenderci sui termini.",
     "pt": "Antes de continuarmos, devíamos acordar os termos."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Sie haben vorhin etwas angedeutet, das hier weiterhilft.",
@@ -338,7 +377,10 @@
     "fr": "Vous avez évoqué tout à l'heure quelque chose qui aide ici.",
     "it": "Prima ha accennato a qualcosa che qui aiuta.",
     "pt": "Há pouco insinuou algo que aqui ajuda."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Ich glaube, da haben wir uns gegenseitig missverstanden.",
@@ -349,7 +391,10 @@
     "fr": "Je crois que nous nous sommes mal comprises de part et d'autre.",
     "it": "Credo che lì ci siamo fraintesi a vicenda.",
     "pt": "Creio que aí nos desentendemos mutuamente."
-   }
+   },
+   "categoriasUso": [
+    "Reformular"
+   ]
   },
   {
    "expresion": "Dazu hat…noch nichts gesagt.",
@@ -360,7 +405,10 @@
     "fr": "…n'a encore rien dit là-dessus.",
     "it": "Su questo…non ha ancora detto nulla.",
     "pt": "Sobre isso…ainda não disse nada."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Lassen Sie mich kurz zusammenfassen, wo wir stehen.",
@@ -371,7 +419,10 @@
     "fr": "Laissez-moi résumer brièvement où nous en sommes.",
     "it": "Mi permetta di riassumere brevemente dove siamo.",
     "pt": "Deixe-me resumir brevemente onde estamos."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {

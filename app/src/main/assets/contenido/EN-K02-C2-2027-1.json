@@ -65,11 +65,26 @@
   "Judging the ceiling of compression a text can bear is itself the C2 skill — the individual constructions were already available at C1."
  ],
  "contraste": {
-  "es": "Spanish legal and scientific writing tends to stay more verbal than its English equivalent. Spanish speakers at C2 therefore tend to underestimate how much compression English expects in a legal or technical register, and to overestimate it in narrative.",
-  "de": "German legal, technical and administrative writing is even more nominal than its English equivalent. German speakers therefore handle the dense end of the scale easily but tend to over-compress in genres such as journalism or business writing, where English keeps a clearly verbal backbone.",
-  "it": "Italian bureaucratic style (burocratese) is highly nominal, so Italian speakers can produce heavy compression easily. The risk is transferring that tone to business and journalistic English, where it reads as stiff; the C2 skill is recognising how verbal those English genres remain.",
-  "fr": "Formal French is strongly nominal (la mise en œuvre de…), and the French press is more nominal than the English press. French speakers therefore handle legal and technical compression well but tend to over-compress journalistic or business English.",
-  "pt": "Portuguese can keep almost any text verbal thanks to the personal infinitive, and tends to do so even in formal registers. Portuguese speakers therefore tend to under-compress legal and technical English, where English expects dense nominalisation."
+  "es": {
+   "en": "Spanish legal and scientific writing tends to stay more verbal than its English equivalent. Spanish speakers at C2 therefore tend to underestimate how much compression English expects in a legal or technical register, and to overestimate it in narrative.",
+   "es": "El español jurídico y científico tiende a ser más verbal que su equivalente inglés. Por eso, los hispanohablantes de C2 suelen subestimar cuánto grado de compresión espera el inglés en registros jurídicos o técnicos y sobreestimarlo en narrativa."
+  },
+  "de": {
+   "en": "German legal, technical and administrative writing is even more nominal than its English equivalent. German speakers therefore handle the dense end of the scale easily but tend to over-compress in genres such as journalism or business writing, where English keeps a clearly verbal backbone.",
+   "de": "Deutsche juristische, technische und administrative Texte sind sogar nominaler als ihre englischen Entsprechungen. Deutschsprachige beherrschen daher das dichte Ende der Skala gut, neigen aber in Journalismus oder Geschäftssprache zur Überverdichtung, wo Englisch ein klareres verbales Rückgrat bevorzugt."
+  },
+  "it": {
+   "en": "Italian bureaucratic style (burocratese) is highly nominal, so Italian speakers can produce heavy compression easily. The risk is transferring that tone to business and journalistic English, where it reads as stiff; the C2 skill is recognising how verbal those English genres remain.",
+   "it": "Lo stile burocratico italiano («burocratese») è fortemente nominale, quindi gli italofoni sanno produrre facilmente una forte compressione. Il rischio è trasferire quel tono all'inglese commerciale o giornalistico, dove suona rigido; la competenza C2 consiste nel riconoscere quanto quei generi inglesi rimangano verbali."
+  },
+  "fr": {
+   "en": "Formal French is strongly nominal (la mise en œuvre de…), and the French press is more nominal than the English press. French speakers therefore handle legal and technical compression well but tend to over-compress journalistic or business English.",
+   "fr": "Le français formel est fortement nominal («la mise en œuvre de…»), et la presse française est plus nominale que la presse anglaise. Les francophones gèrent donc bien la compression juridique et technique, mais ont tendance à sur-comprimer l'anglais journalistique ou professionnel."
+  },
+  "pt": {
+   "en": "Portuguese can keep almost any text verbal thanks to the personal infinitive, and tends to do so even in formal registers. Portuguese speakers therefore tend to under-compress legal and technical English, where English expects dense nominalisation.",
+   "pt": "O português consegue manter quase qualquer texto verbal graças ao infinitivo pessoal e tende a fazer isso até em registros formais. Falantes de português, portanto, tendem a comprimir pouco o inglês jurídico e técnico, onde o inglês espera nominalização densa."
+  }
  },
  "errores": [
   "Using an absolute construction outside legal or highly formal writing, where it reads as pretentious.",
@@ -259,7 +274,11 @@
     "fr": "La partie ayant…, …",
     "it": "La parte, avendo…, …",
     "pt": "Tendo a parte…, …"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "…collected in situ…",
@@ -270,7 +289,11 @@
     "fr": "…recueillis in situ…",
     "it": "…raccolti in situ…",
     "pt": "…recolhidos in situ…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Having lost…, …",
@@ -281,7 +304,11 @@
     "fr": "Ayant perdu…, …",
     "it": "Avendo perso…, …",
     "pt": "Tendo perdido…, …"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Exhausted, …",
@@ -292,7 +319,11 @@
     "fr": "Épuisé(e), …",
     "it": "Esausto/a, …",
     "pt": "Exausto/a, …"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "This having been established, …",
@@ -303,7 +334,12 @@
     "fr": "Cela étant établi,…",
     "it": "Stabilito ciò,…",
     "pt": "Uma vez estabelecido isto,…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "…, thereby…-ing",
@@ -314,7 +350,11 @@
     "fr": "…, ce qui a eu pour effet de…",
     "it": "…, facendo così…",
     "pt": "…, com isso…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Two participles per sentence is the ceiling.",
@@ -325,7 +365,11 @@
     "fr": "Deux participes par phrase, c'est le plafond.",
     "it": "Due participi per frase sono il tetto.",
     "pt": "Dois particípios por frase é o teto."
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "For the summary I'll put the verbs back.",
@@ -336,7 +380,11 @@
     "fr": "Pour le résumé, je remets les verbes.",
     "it": "Per il riassunto rimetto i verbi.",
     "pt": "Para o resumo reponho os verbos."
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "Read aloud, it collapses.",
@@ -347,7 +395,11 @@
     "fr": "Lu à voix haute, cela s'effondre.",
     "it": "Letto ad alta voce crolla.",
     "pt": "Lido em voz alta, desmorona."
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "The nominal style hides who acted.",
@@ -358,7 +410,11 @@
     "fr": "Le style nominal masque qui a agi.",
     "it": "Lo stile nominale nasconde chi ha agito.",
     "pt": "O estilo nominal esconde quem agiu."
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   }
  ],
  "mision": {

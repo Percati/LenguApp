@@ -57,11 +57,26 @@
   "Zu viele spontane Neubildungen im selben Text wirken gesucht statt geistreich — ein bis zwei pro Absatz sind das Maximum."
  ],
  "contraste": {
-  "es": "Das Spanische kann diese Präzision meist nur mit einer ganzen Phrase erreichen (el cansancio de las videollamadas), nie mit einem einzigen neuen Wort. Hispanophone C2-Sprecher denken deshalb oft zuerst in der Phrase und trauen sich nicht, sie zu einem einzigen, im Deutschen völlig normalen Kompositum zu verdichten.",
-  "it": "Das Italienische drückt neue Begriffe meist mit einer Phrase aus (la stanchezza da videochiamate) oder übernimmt englische Wörter. Das deutsche Ad-hoc-Kompositum (Videokonferenzmüdigkeit) mit dem Kern am Ende ist deshalb eine bewusste Umstellung.",
-  "fr": "Das Französische drückt neue Begriffe mit einer Phrase aus (la fatigue liée aux visioconférences), Komposita sind selten. Das deutsche Ad-hoc-Kompositum mit dem Kern am Ende ist deshalb eine bewusste Umstellung.",
-  "pt": "Das Portugiesische drückt neue Begriffe mit einer Phrase aus (o cansaço das videochamadas) oder übernimmt englische Wörter. Das deutsche Ad-hoc-Kompositum mit dem Kern am Ende ist deshalb eine bewusste Umstellung.",
-  "en": "Das Englische bildet ebenfalls frei neue Komposita mit dem Kern am Ende (Zoom fatigue), schreibt sie aber getrennt. Englischsprachige können deutsche Ad-hoc-Komposita deshalb gut bilden; neu ist nur die Zusammenschreibung (Videokonferenzmüdigkeit)."
+  "es": {
+   "de": "Das Spanische kann diese Präzision meist nur mit einer ganzen Phrase erreichen (el cansancio de las videollamadas), nie mit einem einzigen neuen Wort. Hispanophone C2-Sprecher denken deshalb oft zuerst in der Phrase und trauen sich nicht, sie zu einem einzigen, im Deutschen völlig normalen Kompositum zu verdichten.",
+   "es": "El español normalmente solo puede alcanzar esta precisión mediante una frase completa («el cansancio de las videollamadas»), nunca mediante una única palabra nueva. Por eso, los hispanohablantes de C2 suelen pensar primero en la perífrasis y dudan en condensarla en un solo compuesto, algo completamente normal en alemán."
+  },
+  "it": {
+   "de": "Das Italienische drückt neue Begriffe meist mit einer Phrase aus (la stanchezza da videochiamate) oder übernimmt englische Wörter. Das deutsche Ad-hoc-Kompositum (Videokonferenzmüdigkeit) mit dem Kern am Ende ist deshalb eine bewusste Umstellung.",
+   "it": "L'italiano esprime i concetti nuovi di solito con una frase («la stanchezza da videochiamate») oppure prende in prestito parole inglesi. Il composto tedesco creato sul momento («Videokonferenzmüdigkeit»), con il nucleo alla fine, richiede quindi un cambio di prospettiva consapevole."
+  },
+  "fr": {
+   "de": "Das Französische drückt neue Begriffe mit einer Phrase aus (la fatigue liée aux visioconférences), Komposita sind selten. Das deutsche Ad-hoc-Kompositum mit dem Kern am Ende ist deshalb eine bewusste Umstellung.",
+   "fr": "Le français exprime les notions nouvelles au moyen d'un groupe de mots («la fatigue liée aux visioconférences») ; les composés sont rares. Le composé allemand créé sur le moment, avec le noyau à la fin, demande donc un changement de perspective conscient."
+  },
+  "pt": {
+   "de": "Das Portugiesische drückt neue Begriffe mit einer Phrase aus (o cansaço das videochamadas) oder übernimmt englische Wörter. Das deutsche Ad-hoc-Kompositum mit dem Kern am Ende ist deshalb eine bewusste Umstellung.",
+   "pt": "O português exprime conceitos novos com uma expressão («o cansaço das videochamadas») ou adota palavras inglesas. Por isso, o composto alemão criado ad hoc, com o núcleo no final, exige uma reorganização consciente."
+  },
+  "en": {
+   "de": "Das Englische bildet ebenfalls frei neue Komposita mit dem Kern am Ende (Zoom fatigue), schreibt sie aber getrennt. Englischsprachige können deutsche Ad-hoc-Komposita deshalb gut bilden; neu ist nur die Zusammenschreibung (Videokonferenzmüdigkeit).",
+   "en": "English also freely creates new compounds with the head at the end («Zoom fatigue»), but writes them as separate words. English speakers can therefore form German ad-hoc compounds quite well; the new point is writing them as one word («Videokonferenzmüdigkeit»)."
+  }
  },
  "errores": [
   "Ein Kompositum bilden, dessen Bestandteile für den Leser nicht mehr erkennbar sind.",
@@ -251,7 +266,8 @@
     "fr": "la fatigue liée à Zoom",
     "it": "la fatica da Zoom",
     "pt": "a fadiga de Zoom"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Klimaangst",
@@ -262,7 +278,8 @@
     "fr": "l’éco-anxiété",
     "it": "l’ansia climatica",
     "pt": "a ansiedade climática"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Aufschiebekultur",
@@ -273,7 +290,8 @@
     "fr": "une culture de la procrastination",
     "it": "una cultura della procrastinazione",
     "pt": "uma cultura de procrastinação"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Entscheidungsmüdigkeit",
@@ -284,7 +302,8 @@
     "fr": "la fatigue décisionnelle",
     "it": "l’affaticamento decisionale",
     "pt": "a fadiga decisória"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "das Dauerkrisengefühl",
@@ -295,7 +314,8 @@
     "fr": "le sentiment de crise permanente",
     "it": "la sensazione di crisi permanente",
     "pt": "a sensação de crise permanente"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Optimierungsfalle",
@@ -306,7 +326,8 @@
     "fr": "le piège de l’optimisation",
     "it": "la trappola dell’ottimizzazione",
     "pt": "a armadilha da otimização"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Aufmerksamkeitsökonomie",
@@ -317,7 +338,8 @@
     "fr": "l'économie de l'attention",
     "it": "l'economia dell'attenzione",
     "pt": "a economia da atenção"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Verantwortungsdiffusion",
@@ -328,7 +350,8 @@
     "fr": "la dilution de la responsabilité",
     "it": "la diffusione della responsabilità",
     "pt": "a difusão da responsabilidade"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Scheinbeteiligung",
@@ -339,7 +362,8 @@
     "fr": "la participation de façade",
     "it": "la partecipazione di facciata",
     "pt": "a participação de fachada"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "wegdigitalisieren",
@@ -350,7 +374,8 @@
     "fr": "faire disparaître par la numérisation",
     "it": "far sparire digitalizzando",
     "pt": "fazer desaparecer por digitalização"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "die Dauerempörung",
@@ -361,7 +386,10 @@
     "fr": "l'indignation permanente",
     "it": "l'indignazione permanente",
     "pt": "a indignação permanente"
-   }
+   },
+   "categoriasUso": [
+    "Duración"
+   ]
   },
   {
    "expresion": "Das Wort gibt es nicht, aber jeder versteht es.",
@@ -372,7 +400,8 @@
     "fr": "Ce mot n'existe pas, mais tout le monde comprend.",
     "it": "La parola non esiste, ma tutti la capiscono.",
     "pt": "A palavra não existe, mas toda a gente percebe."
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

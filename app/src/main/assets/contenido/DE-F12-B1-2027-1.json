@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Por desgracia entspricht leider und ¿podría…? entspricht könnten Sie…?, die höfliche Beschwerde überträgt sich also direkt. Zu beachten sind trennbare Verben: cambiar – umtauschen (ich möchte es umtauschen).",
-  "it": "Purtroppo entspricht leider und potrebbe…? entspricht könnten Sie…?, die höfliche Beschwerde überträgt sich also direkt. Zu beachten sind trennbare Verben in diesem Bereich: vorrei cambiarlo – ich möchte es umtauschen.",
-  "fr": "Malheureusement entspricht leider und pourriez-vous…? entspricht könnten Sie…?, die höfliche Beschwerde überträgt sich also direkt. Zu beachten sind trennbare Verben: échanger – umtauschen (ich möchte es umtauschen).",
-  "pt": "Infelizmente entspricht leider und poderia…? entspricht könnten Sie…?. Im europäischen Portugiesisch ist podia…? üblich, was wörtlich zu konnten Sie führt; richtig ist könnten.",
-  "en": "Unfortunately entspricht leider und could you…? entspricht könnten Sie…?, die höfliche Beschwerde überträgt sich also direkt. Zu beachten sind trennbare Verben: exchange – umtauschen, return – zurückgeben."
+  "es": {
+   "de": "Por desgracia entspricht leider und ¿podría…? entspricht könnten Sie…?, die höfliche Beschwerde überträgt sich also direkt. Zu beachten sind trennbare Verben: cambiar – umtauschen (ich möchte es umtauschen).",
+   "es": "«Por desgracia» corresponde a «leider» y «¿podría…?» a «könnten Sie…?», por lo que la queja cortés se transfiere directamente. Hay que prestar atención a los verbos separables: «cambiar» – «umtauschen» («ich möchte es umtauschen»)."
+  },
+  "it": {
+   "de": "Purtroppo entspricht leider und potrebbe…? entspricht könnten Sie…?, die höfliche Beschwerde überträgt sich also direkt. Zu beachten sind trennbare Verben in diesem Bereich: vorrei cambiarlo – ich möchte es umtauschen.",
+   "it": "«Purtroppo» corrisponde a «leider» e «potrebbe…?» a «könnten Sie…?», quindi la lamentela cortese si trasferisce direttamente. Bisogna fare attenzione ai verbi separabili in questo ambito: «vorrei cambiarlo» – «ich möchte es umtauschen»."
+  },
+  "fr": {
+   "de": "Malheureusement entspricht leider und pourriez-vous…? entspricht könnten Sie…?, die höfliche Beschwerde überträgt sich also direkt. Zu beachten sind trennbare Verben: échanger – umtauschen (ich möchte es umtauschen).",
+   "fr": "«Malheureusement» correspond à «leider» et «pourriez-vous…?» à «könnten Sie…?», de sorte que la plainte polie se transfère directement. Il faut toutefois faire attention aux verbes séparables : «échanger» – «umtauschen» («ich möchte es umtauschen»)."
+  },
+  "pt": {
+   "de": "Infelizmente entspricht leider und poderia…? entspricht könnten Sie…?. Im europäischen Portugiesisch ist podia…? üblich, was wörtlich zu konnten Sie führt; richtig ist könnten.",
+   "pt": "«Infelizmente» corresponde a «leider» e «poderia…?» a «könnten Sie…?». No português europeu, «podia…?» é muito comum; transferido literalmente, levaria a «konnten Sie», mas em alemão a forma correta de cortesia é «könnten Sie»."
+  },
+  "en": {
+   "de": "Unfortunately entspricht leider und could you…? entspricht könnten Sie…?, die höfliche Beschwerde überträgt sich also direkt. Zu beachten sind trennbare Verben: exchange – umtauschen, return – zurückgeben.",
+   "en": "«Unfortunately» corresponds to «leider» and «could you…?» to «könnten Sie…?», so the polite complaint transfers directly. One point to watch is separable verbs in this area: «exchange» – «umtauschen», «return» – «zurückgeben»."
+  }
  },
  "errores": [
   {
@@ -405,7 +420,10 @@
     "fr": "…ne fonctionne malheureusement pas.",
     "it": "…purtroppo non funziona.",
     "pt": "…infelizmente não funciona."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Könnten Sie bitte…?",
@@ -423,7 +441,10 @@
     "fr": "Pourriez-vous, s’il vous plaît… ?",
     "it": "Potrebbe per favore…?",
     "pt": "Poderia, por favor…?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Ich hätte gern…",
@@ -441,7 +462,10 @@
     "fr": "J’aimerais…",
     "it": "Vorrei…",
     "pt": "Gostaria de…"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Das ist schon das zweite Mal.",
@@ -459,7 +483,11 @@
     "fr": "C’est déjà la deuxième fois.",
     "it": "È già la seconda volta.",
     "pt": "Já é a segunda vez."
-   }
+   },
+   "categoriasUso": [
+    "Reformular",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Wann können Sie das reparieren?",
@@ -477,7 +505,10 @@
     "fr": "Quand pouvez-vous réparer cela ?",
     "it": "Quando può ripararlo?",
     "pt": "Quando pode reparar isto?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Vielen Dank für Ihr Verständnis.",
@@ -495,7 +526,10 @@
     "fr": "Merci de votre compréhension.",
     "it": "Grazie per la comprensione.",
     "pt": "Obrigado/a pela compreensão."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Ich habe ein Problem mit…",
@@ -513,7 +547,10 @@
     "fr": "J'ai un problème avec…",
     "it": "Ho un problema con…",
     "pt": "Tenho um problema com…"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Das Problem ist seit Montag.",
@@ -531,7 +568,10 @@
     "fr": "Le problème dure depuis lundi.",
     "it": "Il problema c'è da lunedì.",
     "pt": "O problema existe desde segunda."
-   }
+   },
+   "categoriasUso": [
+    "Duración"
+   ]
   },
   {
    "expresion": "Deshalb konnte ich nicht…",
@@ -549,7 +589,11 @@
     "fr": "C'est pourquoi je n'ai pas pu…",
     "it": "Per questo non ho potuto…",
     "pt": "Por isso não consegui…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Was können Sie tun?",
@@ -567,7 +611,10 @@
     "fr": "Que pouvez-vous faire ?",
     "it": "Che cosa può fare?",
     "pt": "O que pode fazer?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Bis wann geht das?",
@@ -585,7 +632,10 @@
     "fr": "Pour quand est-ce possible ?",
     "it": "Entro quando si può fare?",
     "pt": "Até quando pode ser?"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Gut, dann warte ich darauf.",
@@ -603,7 +653,11 @@
     "fr": "Bien, j'attends alors.",
     "it": "Bene, allora resto in attesa.",
     "pt": "Bem, então fico à espera."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Plantear un problema/quejarse"
+   ]
   }
  ],
  "mision": {

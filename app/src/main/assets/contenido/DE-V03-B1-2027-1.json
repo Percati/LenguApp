@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische verwendet hier tener (tener tiempo, tener miedo, tener hambre), was strukturell fast identisch zum deutschen haben ist. Diese Kollokationen übertragen sich deshalb sehr leicht.",
-  "it": "Das Italienische bildet diese Ausdrücke genau wie das Deutsche mit haben: avere fame – Hunger haben, avere paura – Angst haben, avere ragione – recht haben. Die Kollokationen übertragen sich deshalb direkt.",
-  "fr": "Das Französische bildet diese Ausdrücke genau wie das Deutsche mit haben: avoir faim – Hunger haben, avoir peur – Angst haben, avoir raison – recht haben. Die Kollokationen übertragen sich direkt.",
-  "pt": "Das Portugiesische bildet diese Ausdrücke genau wie das Deutsche mit haben: ter fome – Hunger haben, ter medo – Angst haben, ter razão – recht haben. Die Kollokationen übertragen sich direkt.",
-  "en": "Das Englische benutzt hier oft be, wo das Deutsche haben verlangt: I'm hungry – ich habe Hunger (oder ich bin hungrig), I'm afraid – ich habe Angst, you're right – du hast recht. Ich bin Angst oder du bist recht sind typische Fehler."
+  "es": {
+   "de": "Das Spanische verwendet hier tener (tener tiempo, tener miedo, tener hambre), was strukturell fast identisch zum deutschen haben ist. Diese Kollokationen übertragen sich deshalb sehr leicht.",
+   "es": "El español usa aquí «tener» («tener tiempo», «tener miedo», «tener hambre»), una estructura casi idéntica al alemán «haben». Por eso, estas colocaciones se transfieren con mucha facilidad."
+  },
+  "it": {
+   "de": "Das Italienische bildet diese Ausdrücke genau wie das Deutsche mit haben: avere fame – Hunger haben, avere paura – Angst haben, avere ragione – recht haben. Die Kollokationen übertragen sich deshalb direkt.",
+   "it": "L'italiano costruisce queste espressioni proprio come il tedesco con «avere»: «avere fame» – «Hunger haben», «avere paura» – «Angst haben», «avere ragione» – «recht haben». Le collocazioni si trasferiscono direttamente."
+  },
+  "fr": {
+   "de": "Das Französische bildet diese Ausdrücke genau wie das Deutsche mit haben: avoir faim – Hunger haben, avoir peur – Angst haben, avoir raison – recht haben. Die Kollokationen übertragen sich direkt.",
+   "fr": "Le français forme ces expressions exactement comme l'allemand avec «avoir» : «avoir faim» – «Hunger haben», «avoir peur» – «Angst haben», «avoir raison» – «recht haben». Ces collocations se transfèrent directement."
+  },
+  "pt": {
+   "de": "Das Portugiesische bildet diese Ausdrücke genau wie das Deutsche mit haben: ter fome – Hunger haben, ter medo – Angst haben, ter razão – recht haben. Die Kollokationen übertragen sich direkt.",
+   "pt": "O português forma essas expressões exatamente como o alemão com «ter/haben»: «ter fome» – «Hunger haben», «ter medo» – «Angst haben», «ter razão» – «recht haben». As colocações se transferem diretamente."
+  },
+  "en": {
+   "de": "Das Englische benutzt hier oft be, wo das Deutsche haben verlangt: I'm hungry – ich habe Hunger (oder ich bin hungrig), I'm afraid – ich habe Angst, you're right – du hast recht. Ich bin Angst oder du bist recht sind typische Fehler.",
+   "en": "English often uses «be» where German uses «haben»: «I'm hungry» – «ich habe Hunger» (or «ich bin hungrig»), «I'm afraid» – «ich habe Angst», «you're right» – «du hast recht». «Ich bin Angst» and «du bist recht» are typical errors."
+  }
  },
  "errores": [
   {
@@ -398,7 +413,10 @@
     "fr": "Je n’ai pas le temps.",
     "it": "Non ho tempo.",
     "pt": "Não tenho tempo."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Ich habe Angst vor…",
@@ -416,7 +434,11 @@
     "fr": "J’ai peur de…",
     "it": "Ho paura di…",
     "pt": "Tenho medo de…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "Ich habe Hunger.",
@@ -434,7 +456,10 @@
     "fr": "J’ai faim.",
     "it": "Ho fame.",
     "pt": "Tenho fome."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Du hast recht.",
@@ -452,7 +477,10 @@
     "fr": "Tu as raison.",
     "it": "Hai ragione.",
     "pt": "Tens razão."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Ich habe Lust auf…",
@@ -470,7 +498,12 @@
     "fr": "J’ai envie de…",
     "it": "Ho voglia di…",
     "pt": "Tenho vontade de…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Pedir",
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "Ich habe Durst.",
@@ -488,7 +521,10 @@
     "fr": "J’ai soif.",
     "it": "Ho sete.",
     "pt": "Tenho sede."
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "eine Frage stellen",
@@ -506,7 +542,10 @@
     "fr": "poser une question",
     "it": "fare una domanda",
     "pt": "fazer uma pergunta"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "einen Fehler machen",
@@ -524,7 +563,10 @@
     "fr": "faire une erreur",
     "it": "fare un errore",
     "pt": "cometer um erro"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "eine Pause machen",
@@ -542,7 +584,10 @@
     "fr": "faire une pause",
     "it": "fare una pausa",
     "pt": "fazer uma pausa"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "einen Termin haben",
@@ -560,7 +605,10 @@
     "fr": "avoir un rendez-vous",
     "it": "avere un appuntamento",
     "pt": "ter uma consulta"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Spass machen",
@@ -578,7 +626,10 @@
     "fr": "être amusant",
     "it": "essere divertente",
     "pt": "ser divertido"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Heisst es haben oder machen?",
@@ -596,7 +647,10 @@
     "fr": "Dit-on avoir ou faire ?",
     "it": "Si dice avere o fare?",
     "pt": "É com ter ou com fazer?"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   }
  ],
  "mision": {

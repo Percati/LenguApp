@@ -56,11 +56,26 @@
   "Dieses Register hängt extrem stark vom gemeinsamen Kontext zwischen Sprecher und Zuhörer ab und funktioniert bei Fremden oft nicht."
  ],
  "contraste": {
-  "es": "Die ironische Untertreibung hat eine genaue spanische Entsprechung: no es precisamente un genio – nicht gerade ein Genie. Die Figur ist also bekannt; schwieriger ist es, den trockenen deutschen Ton zu treffen, ohne ihn durch Betonung oder Zusätze zu überzeichnen.",
-  "it": "Die ironische Untertreibung hat im Italienischen eine genaue Entsprechung: non proprio un genio – nicht gerade ein Genie. Die Figur ist also bekannt; schwieriger ist es, den trockenen deutschen Ton zu treffen, ohne ihn durch Betonung zu überzeichnen.",
-  "fr": "Die Litotes ist im Französischen eine geläufige Figur (ce n'est pas vraiment un génie – nicht gerade ein Genie), die Untertreibung ist also leicht zu erkennen und nachzubilden.",
-  "pt": "Die Untertreibung hat eine genaue Entsprechung: não é propriamente um génio – nicht gerade ein Genie. Die Figur ist also bekannt.",
-  "en": "Die britische Untertreibung ist eine enge Parallele: not exactly a genius entspricht genau nicht gerade ein Genie. Englischsprachige erkennen und bilden die deutsche Untertreibung deshalb leicht."
+  "es": {
+   "de": "Die ironische Untertreibung hat eine genaue spanische Entsprechung: no es precisamente un genio – nicht gerade ein Genie. Die Figur ist also bekannt; schwieriger ist es, den trockenen deutschen Ton zu treffen, ohne ihn durch Betonung oder Zusätze zu überzeichnen.",
+   "es": "La ironía mediante atenuación tiene un equivalente exacto en español: «no es precisamente un genio» – nicht gerade ein Genie. La figura es, por tanto, familiar; lo más difícil es reproducir el tono seco del alemán sin exagerarlo mediante la entonación o añadidos."
+  },
+  "it": {
+   "de": "Die ironische Untertreibung hat im Italienischen eine genaue Entsprechung: non proprio un genio – nicht gerade ein Genie. Die Figur ist also bekannt; schwieriger ist es, den trockenen deutschen Ton zu treffen, ohne ihn durch Betonung zu überzeichnen.",
+   "it": "La litote ironica ha un equivalente molto preciso in italiano: «non proprio un genio» – «nicht gerade ein Genie». La figura è quindi nota; più difficile è cogliere il tono secco tedesco senza sovraccaricarlo con intonazione o aggiunte."
+  },
+  "fr": {
+   "de": "Die Litotes ist im Französischen eine geläufige Figur (ce n'est pas vraiment un génie – nicht gerade ein Genie), die Untertreibung ist also leicht zu erkennen und nachzubilden.",
+   "fr": "La litote est une figure courante en français («ce n'est pas vraiment un génie» – «nicht gerade ein Genie»), de sorte que la sous-expression se reconnaît et se reproduit facilement."
+  },
+  "pt": {
+   "de": "Die Untertreibung hat eine genaue Entsprechung: não é propriamente um génio – nicht gerade ein Genie. Die Figur ist also bekannt.",
+   "pt": "A atenuação tem um equivalente preciso: «não é propriamente um génio» – nicht gerade ein Genie. A figura retórica é, portanto, conhecida."
+  },
+  "en": {
+   "de": "Die britische Untertreibung ist eine enge Parallele: not exactly a genius entspricht genau nicht gerade ein Genie. Englischsprachige erkennen und bilden die deutsche Untertreibung deshalb leicht.",
+   "en": "British understatement is a close parallel: «not exactly a genius» corresponds very closely to «nicht gerade ein Genie». English speakers therefore recognise and produce German understatement quite easily."
+  }
  },
  "errores": [
   "Die Ironie mit übertriebener Betonung vortragen, wodurch sie ihre Wirkung verliert.",
@@ -250,7 +265,10 @@
     "fr": "Eh bien, c’était…, comme d’habitude.",
     "it": "Beh, è stato…, come al solito.",
     "pt": "Bem, isso foi…, como de costume."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Na, das lief ja…",
@@ -261,7 +279,11 @@
     "fr": "Eh bien, ça s’est passé…",
     "it": "Beh, è andata…",
     "pt": "Bem, isso correu…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Ich bin ja so begeistert.",
@@ -272,7 +294,10 @@
     "fr": "Je suis évidemment ravi(e).",
     "it": "Sono ovviamente entusiasta.",
     "pt": "Estou obviamente encantado/a."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Wie originell.",
@@ -283,7 +308,10 @@
     "fr": "Comme c’est original.",
     "it": "Che originalità.",
     "pt": "Que original."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Das kann ja heiter werden.",
@@ -294,7 +322,11 @@
     "fr": "Ça promet.",
     "it": "Ci sarà da divertirsi.",
     "pt": "Isto promete."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Was für eine Überraschung.",
@@ -305,7 +337,10 @@
     "fr": "Quelle surprise.",
     "it": "Che sorpresa.",
     "pt": "Que surpresa."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Damit war ja zu rechnen.",
@@ -316,7 +351,11 @@
     "fr": "Il fallait s'y attendre, évidemment.",
     "it": "C'era da aspettarselo, ovvio.",
     "pt": "Era de esperar, claro."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Es hätte schlimmer kommen können. Theoretisch.",
@@ -327,7 +366,11 @@
     "fr": "Ça aurait pu être pire. En théorie.",
     "it": "Poteva andare peggio. In teoria.",
     "pt": "Podia ter sido pior. Em teoria."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Ein gewisser Optimismus war da schon im Spiel.",
@@ -338,7 +381,11 @@
     "fr": "Un certain optimisme était bien à l'œuvre.",
     "it": "Un certo ottimismo c'era, senz'altro.",
     "pt": "Certo otimismo havia ali, sem dúvida."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Sagen wir: die Umsetzung hatte Luft nach oben.",
@@ -349,7 +396,10 @@
     "fr": "Disons que la mise en œuvre avait une marge de progression.",
     "it": "Diciamo che la realizzazione aveva margini di miglioramento.",
     "pt": "Digamos que a execução tinha margem para melhorar."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Ich lasse die Ironie hier mal weg: …",
@@ -360,7 +410,10 @@
     "fr": "Je laisse ici l'ironie de côté : …",
     "it": "Qui lascio da parte l'ironia: …",
     "pt": "Aqui deixo a ironia de lado: …"
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Das meine ich ohne jede Ironie.",
@@ -371,7 +424,10 @@
     "fr": "Je le dis sans la moindre ironie.",
     "it": "Lo dico senza alcuna ironia.",
     "pt": "Digo isto sem nenhuma ironia."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   }
  ],
  "mision": {

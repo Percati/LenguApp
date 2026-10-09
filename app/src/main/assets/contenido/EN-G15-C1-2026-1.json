@@ -83,11 +83,26 @@
   "These are written structures. In conversation they sound stiff."
  ],
  "contraste": {
-  "es": "Spanish has gerund and participle clauses too, but tolerates a dangling subject far more readily (estando en Madrid, me robaron). English does not: the same construction reads as an error.",
-  "de": "German compresses relative clauses into participles placed before the noun (die mit dem Medikament behandelten Patienten), while English places them after it (the patients given the drug). German speakers therefore know the compression but have to move the whole participle phrase behind the noun.",
-  "it": "Reduced relatives are easy, because Italian uses exactly the same postnominal participle (i pazienti trattati con il farmaco – the patients treated with the drug). The risk lies in participle and gerund clauses: colloquial Italian tolerates a different subject (essendo a Madrid, mi hanno derubato), while English treats this as an error.",
-  "fr": "Reduced relatives are easy, since French uses the same postnominal participle (les patients traités avec le médicament). French school grammar also insists that the gérondif shares the subject of the main clause, so French speakers already know the rule that prevents dangling participles in English.",
-  "pt": "Reduced relatives are easy, since Portuguese uses the same postnominal participle (os doentes tratados com o fármaco). Gerund clauses with a different subject are common, especially in Brazilian Portuguese, so dangling participles are the main risk."
+  "es": {
+   "en": "Spanish has gerund and participle clauses too, but tolerates a dangling subject far more readily (estando en Madrid, me robaron). English does not: the same construction reads as an error.",
+   "es": "El español también tiene cláusulas de gerundio y participio, pero tolera mucho más fácilmente un sujeto colgante («estando en Madrid, me robaron»). El inglés no: la misma construcción se lee como un error."
+  },
+  "de": {
+   "en": "German compresses relative clauses into participles placed before the noun (die mit dem Medikament behandelten Patienten), while English places them after it (the patients given the drug). German speakers therefore know the compression but have to move the whole participle phrase behind the noun.",
+   "de": "Deutsch verdichtet Relativsätze zu Partizipgruppen vor dem Substantiv («die mit dem Medikament behandelten Patienten»), während Englisch sie danach stellt («the patients given the drug»). Deutschsprachige kennen also die Verdichtung, müssen aber die gesamte Partizipgruppe hinter das Substantiv verschieben."
+  },
+  "it": {
+   "en": "Reduced relatives are easy, because Italian uses exactly the same postnominal participle (i pazienti trattati con il farmaco – the patients treated with the drug). The risk lies in participle and gerund clauses: colloquial Italian tolerates a different subject (essendo a Madrid, mi hanno derubato), while English treats this as an error.",
+   "it": "Le relative ridotte sono facili, perché l'italiano usa esattamente lo stesso participio postnominale («i pazienti trattati con il farmaco» – «the patients treated with the drug»). Il rischio sta nelle clausole participiali e gerundive: l'italiano colloquiale tollera più facilmente un soggetto diverso («essendo a Madrid, mi hanno derubato»), mentre l'inglese lo considera un errore."
+  },
+  "fr": {
+   "en": "Reduced relatives are easy, since French uses the same postnominal participle (les patients traités avec le médicament). French school grammar also insists that the gérondif shares the subject of the main clause, so French speakers already know the rule that prevents dangling participles in English.",
+   "fr": "Les relatives réduites sont faciles, car le français utilise le même participe postposé («les patients traités avec le médicament»). La grammaire scolaire française insiste aussi sur le fait que le gérondif partage le sujet de la proposition principale, donc les francophones connaissent déjà la règle qui évite les dangling participles en anglais."
+  },
+  "pt": {
+   "en": "Reduced relatives are easy, since Portuguese uses the same postnominal participle (os doentes tratados com o fármaco). Gerund clauses with a different subject are common, especially in Brazilian Portuguese, so dangling participles are the main risk.",
+   "pt": "As relativas reduzidas são fáceis, pois o português usa o mesmo particípio depois do substantivo («os doentes tratados com o fármaco»). Orações de gerúndio com sujeito diferente são comuns, sobretudo no português brasileiro, então dangling participles são o principal risco."
+  }
  },
  "errores": [
   "*Walking into the room, the lights were off* — the lights were not walking.",
@@ -284,7 +299,12 @@
     "fr": "publié le mois dernier",
     "it": "pubblicato il mese scorso",
     "pt": "publicado no mês passado"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "anyone taking…",
@@ -295,7 +315,11 @@
     "fr": "toute personne prenant…",
     "it": "chiunque assuma…",
     "pt": "qualquer pessoa que tome…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "having been…",
@@ -306,7 +330,12 @@
     "fr": "ayant été…",
     "it": "essendo stato…",
     "pt": "tendo sido…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión",
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "given the circumstances",
@@ -317,7 +346,12 @@
     "fr": "compte tenu des circonstances",
     "it": "date le circostanze",
     "pt": "dadas as circunstâncias"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión",
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "weighed against…",
@@ -328,7 +362,12 @@
     "fr": "mis en balance avec…",
     "it": "messo a confronto con…",
     "pt": "ponderado face a…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión",
+    "Comparación"
+   ]
   },
   {
    "expresion": "the data available",
@@ -339,7 +378,11 @@
     "fr": "les données disponibles",
     "it": "i dati disponibili",
     "pt": "os dados disponíveis"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "followed by…",
@@ -350,7 +393,12 @@
     "fr": "suivi de…",
     "it": "seguito da…",
     "pt": "seguido de…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "based on…",
@@ -361,7 +409,11 @@
     "fr": "sur la base de…",
     "it": "basato su…",
     "pt": "com base em…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Nominalización y compresión"
+   ]
   }
  ],
  "mision": {

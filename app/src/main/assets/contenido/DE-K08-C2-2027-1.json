@@ -60,11 +60,26 @@
   "Diese Dichte an zweiteiligen Konnektoren gehört in Essays und Analysen, nicht in gesprochene Sprache."
  ],
  "contraste": {
-  "es": "Das Spanische hat mit no solo…sino también und cuanto más…más die gleichen Grundstrukturen, verkettet sie aber seltener bewusst zu einer mehrsätzigen Architektur. Hispanophone C2-Sprecher benutzen die einzelnen Paare korrekt, verpassen aber oft die Chance, sie als Gesamtstruktur eines Arguments einzusetzen.",
-  "it": "Die italienische Schule übt den testo argomentativo ausdrücklich mit Konzession und Widerlegung (è vero che… ma, non solo… ma anche), die Architektur eines Arguments ist also vertraut. Die deutschen Paare lassen sich in diese Struktur einsetzen; zu achten ist vor allem auf die Wortstellung in je… desto, die das italienische più… più nicht kennt.",
-  "fr": "Die französische dissertation (thèse, antithèse, synthèse) trainiert die Architektur eines Arguments intensiv, mit certes… mais als kanonischer Konzession. Französischsprachige bauen die Struktur deshalb sicher auf, neigen aber dazu, sie so schematisch durchzuziehen, dass sie im Deutschen mechanisch wirkt.",
-  "pt": "Der portugiesische texto argumentativo arbeitet stark mit se por um lado… por outro und é certo que… mas, die Architektur ist also bekannt. Portugiesischsprachige übertragen vor allem einerseits… andererseits so häufig, dass die übrigen deutschen Paare zu kurz kommen; die Abwechslung ist hier die eigentliche C2-Aufgabe.",
-  "en": "Der englische Essay baut Argumente eher linear mit Einzelkonnektoren (however, moreover, therefore) als mit zweiteiligen Paaren. Englischsprachige verwenden die deutschen Paare korrekt, setzen sie aber selten als tragende Architektur ein; auffällig ist oft das Fehlen von zwar… allerdings als Eröffnung."
+  "es": {
+   "de": "Das Spanische hat mit no solo…sino también und cuanto más…más die gleichen Grundstrukturen, verkettet sie aber seltener bewusst zu einer mehrsätzigen Architektur. Hispanophone C2-Sprecher benutzen die einzelnen Paare korrekt, verpassen aber oft die Chance, sie als Gesamtstruktur eines Arguments einzusetzen.",
+   "es": "El español posee las mismas estructuras básicas con «no solo… sino también» y «cuanto más… más», pero las encadena conscientemente con menor frecuencia para construir una arquitectura que abarque varias oraciones. Los hispanohablantes de C2 usan correctamente los pares individuales, pero a menudo desaprovechan la posibilidad de convertirlos en la estructura global de un argumento."
+  },
+  "it": {
+   "de": "Die italienische Schule übt den testo argomentativo ausdrücklich mit Konzession und Widerlegung (è vero che… ma, non solo… ma anche), die Architektur eines Arguments ist also vertraut. Die deutschen Paare lassen sich in diese Struktur einsetzen; zu achten ist vor allem auf die Wortstellung in je… desto, die das italienische più… più nicht kennt.",
+   "it": "La scuola italiana esercita esplicitamente il testo argomentativo con concessione e confutazione («è vero che… ma», «non solo… ma anche»), quindi l'architettura dell'argomento è familiare. Le coppie tedesche si inseriscono bene in questa struttura; bisogna soprattutto fare attenzione all'ordine delle parole in «je… desto», che l'italiano «più… più» non conosce."
+  },
+  "fr": {
+   "de": "Die französische dissertation (thèse, antithèse, synthèse) trainiert die Architektur eines Arguments intensiv, mit certes… mais als kanonischer Konzession. Französischsprachige bauen die Struktur deshalb sicher auf, neigen aber dazu, sie so schematisch durchzuziehen, dass sie im Deutschen mechanisch wirkt.",
+   "fr": "La dissertation française («thèse, antithèse, synthèse») entraîne intensivement l'architecture argumentative, avec «certes… mais» comme concession canonique. Les francophones construisent donc généralement la structure avec assurance, mais peuvent la dérouler de façon si schématique qu'elle paraît mécanique en allemand."
+  },
+  "pt": {
+   "de": "Der portugiesische texto argumentativo arbeitet stark mit se por um lado… por outro und é certo que… mas, die Architektur ist also bekannt. Portugiesischsprachige übertragen vor allem einerseits… andererseits so häufig, dass die übrigen deutschen Paare zu kurz kommen; die Abwechslung ist hier die eigentliche C2-Aufgabe.",
+   "pt": "O «texto argumentativo» em português trabalha bastante com «se por um lado… por outro» e «é certo que… mas», portanto a arquitetura é familiar. Falantes de português usam sobretudo «einerseits… andererseits» com tanta frequência que os demais pares alemães ficam subutilizados; aqui, a verdadeira tarefa de C2 é variar."
+  },
+  "en": {
+   "de": "Der englische Essay baut Argumente eher linear mit Einzelkonnektoren (however, moreover, therefore) als mit zweiteiligen Paaren. Englischsprachige verwenden die deutschen Paare korrekt, setzen sie aber selten als tragende Architektur ein; auffällig ist oft das Fehlen von zwar… allerdings als Eröffnung.",
+   "en": "English essays tend to build arguments linearly with individual connectors («however», «moreover», «therefore») rather than with paired structures. English speakers use German pairs correctly but rarely make them the organising backbone of an argument; a common absence is an opening such as «zwar… allerdings»."
+  }
  },
  "errores": [
   "Die drei Paare ohne verbindende Übergangssätze aneinanderreihen, sodass die Kette mechanisch wirkt.",
@@ -254,7 +269,12 @@
     "fr": "Certes…, mais il apparaît toutefois que…",
     "it": "Sebbene…, tuttavia emerge che…",
     "pt": "Embora…, verifica-se contudo que…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Je…, desto…",
@@ -265,7 +285,11 @@
     "fr": "Plus…, plus…",
     "it": "Più…, più…",
     "pt": "Quanto mais…, mais…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación"
+   ]
   },
   {
    "expresion": "Nicht nur…, sondern auch…",
@@ -276,7 +300,11 @@
     "fr": "Non seulement…, mais aussi…",
     "it": "Non solo…, ma anche…",
     "pt": "Não só…, mas também…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación"
+   ]
   },
   {
    "expresion": "Das führt zu der Frage, ob…",
@@ -287,7 +315,12 @@
     "fr": "Cela soulève la question de savoir si…",
     "it": "Questo solleva la questione se…",
     "pt": "Isso levanta a questão de saber se…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Damit hängt zusammen, dass…",
@@ -298,7 +331,12 @@
     "fr": "Cela est lié au fait que…",
     "it": "A ciò si collega il fatto che…",
     "pt": "Relacionado com isto está o facto de que…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Vor diesem Hintergrund…",
@@ -309,7 +347,12 @@
     "fr": "Dans ce contexte…",
     "it": "In questo contesto…",
     "pt": "Neste contexto…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Soweit die Konzession; nun zum Kern.",
@@ -320,7 +363,12 @@
     "fr": "Voilà pour la concession ; passons au fond.",
     "it": "Fin qui la concessione; ora il nocciolo.",
     "pt": "Até aqui a concessão; agora o essencial."
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Daraus folgt allerdings nicht, dass…",
@@ -331,7 +379,11 @@
     "fr": "Il n'en découle pas pour autant que…",
     "it": "Da ciò non segue però che…",
     "pt": "Daí não decorre, porém, que…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación"
+   ]
   },
   {
    "expresion": "Beides zusammen ergibt erst das Bild.",
@@ -342,7 +394,11 @@
     "fr": "Les deux ensemble seulement donnent le tableau.",
     "it": "Solo entrambe insieme danno il quadro.",
     "pt": "Só as duas juntas dão o quadro."
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación"
+   ]
   },
   {
    "expresion": "Bleibt die Frage nach…",
@@ -353,7 +409,12 @@
     "fr": "Reste la question de…",
     "it": "Resta la questione di…",
     "pt": "Resta a questão de…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Je weniger…, desto dringlicher wird…",
@@ -364,7 +425,11 @@
     "fr": "Moins…, plus … devient urgent.",
     "it": "Meno…, più urgente diventa…",
     "pt": "Quanto menos…, mais urgente se torna…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación"
+   ]
   },
   {
    "expresion": "Damit schliesst sich der Kreis zu…",
@@ -375,7 +440,11 @@
     "fr": "La boucle est ainsi bouclée avec…",
     "it": "Così si chiude il cerchio con…",
     "pt": "Com isso fecha-se o círculo com…"
-   }
+   },
+   "categoriasUso": [
+    "Subordinación y conectores",
+    "Comparación"
+   ]
   }
  ],
  "mision": {

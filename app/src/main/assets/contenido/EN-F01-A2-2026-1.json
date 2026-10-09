@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Creo que corresponds to I think, and me gusta la música to I like music; the article disappears in English, so I like the music is a typical error.",
-  "de": "Ich mag corresponds exactly to I like, and ich finde to I think. Basic opinions therefore transfer easily.",
-  "it": "Mi piace la musica corresponds to I like music; the article disappears in English. Secondo me is best rendered as I think, not according to me.",
-  "fr": "J'aime corresponds exactly to I like, but the article disappears in English (j'aime la musique – I like music). Je trouve que is best rendered as I think.",
-  "pt": "Gosto de… is often calqued as I like of…; English has no preposition: I like music. Acho que corresponds to I think."
+  "es": {
+   "en": "Creo que corresponds to I think, and me gusta la música to I like music; the article disappears in English, so I like the music is a typical error.",
+   "es": "«Creo que» corresponde a «I think», y «me gusta la música» a «I like music»; en inglés el artículo desaparece, por lo que «I like the music» es un error típico."
+  },
+  "de": {
+   "en": "Ich mag corresponds exactly to I like, and ich finde to I think. Basic opinions therefore transfer easily.",
+   "de": "«Ich mag» entspricht genau «I like» und «ich finde» entspricht «I think». Einfache Meinungsäußerungen lassen sich daher leicht übertragen."
+  },
+  "it": {
+   "en": "Mi piace la musica corresponds to I like music; the article disappears in English. Secondo me is best rendered as I think, not according to me.",
+   "it": "«Mi piace la musica» corrisponde a «I like music»; in inglese l'articolo scompare. «Secondo me» si rende meglio con «I think», non con «according to me»."
+  },
+  "fr": {
+   "en": "J'aime corresponds exactly to I like, but the article disappears in English (j'aime la musique – I like music). Je trouve que is best rendered as I think.",
+   "fr": "«J'aime» correspond exactement à «I like», mais l'article disparaît en anglais («j'aime la musique» – «I like music»). «Je trouve que» se traduit le plus naturellement par «I think»."
+  },
+  "pt": {
+   "en": "Gosto de… is often calqued as I like of…; English has no preposition: I like music. Acho que corresponds to I think.",
+   "pt": "«Gosto de…» costuma ser calcado como «I like of…»; em inglês não há preposição: «I like music». «Acho que» corresponde a «I think»."
+  }
  },
  "errores": [
   {
@@ -375,7 +390,10 @@
     "fr": "Je pense que c’est…",
     "it": "Penso che questo sia…",
     "pt": "Acho que isto é…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "…, because…",
@@ -393,7 +411,10 @@
     "fr": "…, parce que…",
     "it": "…, perché…",
     "pt": "…, porque…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "I like…",
@@ -411,7 +432,10 @@
     "fr": "J’aime…",
     "it": "Mi piace…",
     "pt": "Gosto de…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "I don't like…",
@@ -429,7 +453,10 @@
     "fr": "Je n’aime pas…",
     "it": "Non mi piace…",
     "pt": "Não gosto de…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "This is good/bad.",
@@ -447,7 +474,10 @@
     "fr": "C’est bien/mal.",
     "it": "Questo è buono/cattivo.",
     "pt": "Isto é bom/mau."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "What do you think?",
@@ -465,7 +495,10 @@
     "fr": "Qu’en penses-tu ?",
     "it": "Che ne pensi?",
     "pt": "O que achas?"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "I really like…",
@@ -483,7 +516,10 @@
     "fr": "J'aime beaucoup…",
     "it": "Mi piace molto…",
     "pt": "Gosto muito de…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "It's not so good.",
@@ -501,7 +537,10 @@
     "fr": "Ce n'est pas très bien.",
     "it": "Non è così buono.",
     "pt": "Não é assim tão bom."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "And you?",
@@ -519,7 +558,10 @@
     "fr": "Et toi ?",
     "it": "E tu?",
     "pt": "E tu?"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "For example,…",
@@ -537,7 +579,10 @@
     "fr": "Par exemple,…",
     "it": "Per esempio,…",
     "pt": "Por exemplo,…"
-   }
+   },
+   "categoriasUso": [
+    "Ejemplificar"
+   ]
   },
   {
    "expresion": "I'm not sure.",
@@ -555,7 +600,11 @@
     "fr": "Je n'en suis pas sûr.",
     "it": "Non sono sicuro.",
     "pt": "Não tenho a certeza."
-   }
+   },
+   "categoriasUso": [
+    "Opinar",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "That's just my opinion.",
@@ -573,7 +622,11 @@
     "fr": "Ce n'est que mon avis.",
     "it": "È solo la mia opinione.",
     "pt": "É só a minha opinião."
-   }
+   },
+   "categoriasUso": [
+    "Opinar",
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {
@@ -586,8 +639,22 @@
    "pt": "Escreva cinco frases sobre sua última viagem: o que foi bom e o que não foi?"
   },
   "requisitos": [
-   "two sentences with *I think*",
-   "two reasons with *because*",
+   {
+    "en": "two sentences with *I think*",
+    "de": "zwei Sätze mit *I think*",
+    "es": "dos oraciones con *I think*",
+    "fr": "deux phrases avec *I think*",
+    "it": "due frasi con *I think*",
+    "pt": "duas frases com *I think*"
+   },
+   {
+    "en": "two reasons with *because*",
+    "de": "zwei Gründe mit *because*",
+    "es": "dos razones con *because*",
+    "fr": "deux raisons avec *because*",
+    "it": "due motivi con *because*",
+    "pt": "duas razões com *because*"
+   },
    {
     "en": "use *a seat*, *a single room* and *a return ticket*",
     "de": "*a seat*, *a single room* und *a return ticket* verwenden",

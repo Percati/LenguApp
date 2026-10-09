@@ -56,11 +56,26 @@
   "Doch am Satzende oder in der Mitte macht einen Vorschlag freundlicher und weniger bestimmt."
  ],
  "contraste": {
-  "es": "Das Spanische macht Vorschläge oft mit podríamos, was strukturell dem deutschen könnten sehr ähnlich ist. Der Unterschied liegt im Konjunktiv II als Standardform: im Deutschen ist er bei Vorschlägen fast obligatorisch, während das Spanische auch den Indikativ zulässt.",
-  "it": "Potremmo entspricht genau wir könnten, und che ne dici di…? passt gut zu was hältst du von…?. Vorschläge mit Konjunktiv II sind Italienischsprachigen also vertraut; neu ist nur, dass das Deutsche sie noch häufiger erwartet.",
-  "fr": "On pourrait entspricht wir könnten, und et si on allait… ? mit imparfait hat dieselbe Logik wie wie wäre es, wenn wir… mit Konjunktiv II. Vorschläge übertragen sich deshalb sehr gut.",
-  "pt": "Poderíamos entspricht wir könnten. Im europäischen Portugiesisch sagt man oft podíamos, was wörtlich zu wir konnten führt; richtig ist der Konjunktiv II könnten.",
-  "en": "We could entspricht wir könnten, how about…? passt gut zu wie wäre es mit…?, und let's zu lass uns. Vorschläge übertragen sich also gut; zu beachten ist, dass das Deutsche den Konjunktiv II noch häufiger erwartet als das Englische would."
+  "es": {
+   "de": "Das Spanische macht Vorschläge oft mit podríamos, was strukturell dem deutschen könnten sehr ähnlich ist. Der Unterschied liegt im Konjunktiv II als Standardform: im Deutschen ist er bei Vorschlägen fast obligatorisch, während das Spanische auch den Indikativ zulässt.",
+   "es": "El español formula propuestas a menudo con «podríamos», estructuralmente muy parecido a «könnten». La diferencia está en el Konjunktiv II como forma estándar: en alemán es casi obligatorio en las propuestas, mientras que el español admite también formas del indicativo según el contexto."
+  },
+  "it": {
+   "de": "Potremmo entspricht genau wir könnten, und che ne dici di…? passt gut zu was hältst du von…?. Vorschläge mit Konjunktiv II sind Italienischsprachigen also vertraut; neu ist nur, dass das Deutsche sie noch häufiger erwartet.",
+   "it": "«Potremmo» corrisponde esattamente a «wir könnten», e «che ne dici di…?» si abbina bene a «was hältst du von…?». Le proposte al Konjunktiv II sono quindi familiari agli italofoni; la novità è che il tedesco le richiede ancora più spesso."
+  },
+  "fr": {
+   "de": "On pourrait entspricht wir könnten, und et si on allait… ? mit imparfait hat dieselbe Logik wie wie wäre es, wenn wir… mit Konjunktiv II. Vorschläge übertragen sich deshalb sehr gut.",
+   "fr": "«On pourrait» correspond à «wir könnten», et «et si on allait…?» avec l'imparfait suit la même logique que «wie wäre es, wenn wir…?» avec Konjunktiv II. Les propositions se transfèrent donc très bien."
+  },
+  "pt": {
+   "de": "Poderíamos entspricht wir könnten. Im europäischen Portugiesisch sagt man oft podíamos, was wörtlich zu wir konnten führt; richtig ist der Konjunktiv II könnten.",
+   "pt": "«Poderíamos» corresponde a «wir könnten». No português europeu, também se usa muito «podíamos», que, traduzido literalmente, levaria a «wir konnten»; para uma sugestão em alemão, o correto é o Konjunktiv II «könnten»."
+  },
+  "en": {
+   "de": "We could entspricht wir könnten, how about…? passt gut zu wie wäre es mit…?, und let's zu lass uns. Vorschläge übertragen sich also gut; zu beachten ist, dass das Deutsche den Konjunktiv II noch häufiger erwartet als das Englische would.",
+   "en": "«We could» corresponds to «wir könnten», «how about…?» matches «wie wäre es mit…?» well, and «let's» corresponds to «lass uns». Suggestions therefore transfer well; one point to note is that German uses the Konjunktiv II even more often than English uses «would»."
+  }
  },
  "errores": [
   "Einen Vorschlag im Indikativ formulieren, wo der Konjunktiv II erwartet wird: wir können statt wir könnten.",
@@ -239,7 +254,10 @@
     "fr": "Nous pourrions…",
     "it": "Potremmo…",
     "pt": "Poderíamos…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Wie wäre es mit…?",
@@ -250,7 +268,11 @@
     "fr": "Et si… ?",
     "it": "Che ne dici di…?",
     "pt": "Que tal…?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Das klingt gut.",
@@ -261,7 +283,10 @@
     "fr": "Ça a l’air bien.",
     "it": "Sembra una buona idea.",
     "pt": "Parece bem."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Stattdessen könnten wir…",
@@ -272,7 +297,10 @@
     "fr": "À la place, nous pourrions…",
     "it": "Invece potremmo…",
     "pt": "Em vez disso, poderíamos…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Hättest du Lust auf…?",
@@ -283,7 +311,10 @@
     "fr": "Ça te dirait… ?",
     "it": "Ti andrebbe di…?",
     "pt": "Apetece-te…?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Machen wir das so.",
@@ -294,7 +325,11 @@
     "fr": "Faisons comme ça.",
     "it": "Facciamo così.",
     "pt": "Façamos assim."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Sollen wir …, oder lieber…?",
@@ -305,7 +340,10 @@
     "fr": "On fait … ou plutôt… ?",
     "it": "Facciamo … o piuttosto…?",
     "pt": "Fazemos … ou antes…?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Mir wäre lieber, wenn…",
@@ -316,7 +354,10 @@
     "fr": "Je préférerais que…",
     "it": "Preferirei che…",
     "pt": "Eu preferia que…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Passt dir das?",
@@ -327,7 +368,10 @@
     "fr": "Cela te convient ?",
     "it": "Ti va bene?",
     "pt": "Fica-te bem?"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Das ist mir leider zu…",
@@ -338,7 +382,12 @@
     "fr": "C'est malheureusement trop … pour moi.",
     "it": "Purtroppo per me è troppo…",
     "pt": "Para mim isso é demasiado…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Sugerir/proponer",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Können wir das nächste Woche noch mal anschauen?",
@@ -349,7 +398,10 @@
     "fr": "Pouvons-nous y revenir la semaine prochaine ?",
     "it": "Possiamo riguardarlo la settimana prossima?",
     "pt": "Podemos voltar a ver isso para a semana?"
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   },
   {
    "expresion": "Dann bleiben wir dabei.",
@@ -360,7 +412,10 @@
     "fr": "Alors on en reste là.",
     "it": "Allora restiamo così.",
     "pt": "Então fica assim."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   }
  ],
  "mision": {

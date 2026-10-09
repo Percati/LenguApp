@@ -57,11 +57,26 @@
   "You're closer to it than I am hands genuine authority back to the recipient about their own situation."
  ],
  "contraste": {
-  "es": "Spanish can frame an interpretation as tentative (a lo mejor me equivoco, pero…), so the move exists. English uses a small set of fixed phrases for it (my reading is…, tell me if I've got this wrong) that are worth learning as units.",
-  "de": "German has exact equivalents: wenn ich das richtig verstehe (if I've understood this correctly) and korrigieren Sie mich, wenn ich falsch liege (correct me if I'm wrong). The move therefore transfers directly.",
-  "it": "Correggimi se sbaglio corresponds exactly to correct me if I'm wrong, so offering an interpretation as a hypothesis transfers directly. My reading is… is a useful additional formula.",
-  "fr": "Corrigez-moi si je me trompe corresponds exactly to correct me if I'm wrong, so the move transfers directly. My reading is… is a useful additional formula.",
-  "pt": "Corrige-me se estiver enganado corresponds exactly to correct me if I'm wrong, so the move transfers directly. My reading is… is a useful additional formula."
+  "es": {
+   "en": "Spanish can frame an interpretation as tentative (a lo mejor me equivoco, pero…), so the move exists. English uses a small set of fixed phrases for it (my reading is…, tell me if I've got this wrong) that are worth learning as units.",
+   "es": "El español puede presentar una interpretación como tentativa («a lo mejor me equivoco, pero…»), por lo que el movimiento existe. El inglés usa un pequeño repertorio de fórmulas fijas («my reading is…», «tell me if I've got this wrong») que conviene aprender como unidades."
+  },
+  "de": {
+   "en": "German has exact equivalents: wenn ich das richtig verstehe (if I've understood this correctly) and korrigieren Sie mich, wenn ich falsch liege (correct me if I'm wrong). The move therefore transfers directly.",
+   "de": "Deutsch hat genaue Entsprechungen: «wenn ich das richtig verstehe» («if I've understood this correctly») und «korrigieren Sie mich, wenn ich falsch liege» («correct me if I'm wrong»). Die Gesprächsfunktion lässt sich daher direkt übertragen."
+  },
+  "it": {
+   "en": "Correggimi se sbaglio corresponds exactly to correct me if I'm wrong, so offering an interpretation as a hypothesis transfers directly. My reading is… is a useful additional formula.",
+   "it": "«Correggimi se sbaglio» corrisponde esattamente a «correct me if I'm wrong», quindi presentare un'interpretazione come ipotesi si trasferisce direttamente. «My reading is…» è una formula aggiuntiva utile."
+  },
+  "fr": {
+   "en": "Corrigez-moi si je me trompe corresponds exactly to correct me if I'm wrong, so the move transfers directly. My reading is… is a useful additional formula.",
+   "fr": "«Corrigez-moi si je me trompe» correspond exactement à «correct me if I'm wrong» ; le mouvement se transfère donc directement. «My reading is…» est une formule supplémentaire utile."
+  },
+  "pt": {
+   "en": "Corrige-me se estiver enganado corresponds exactly to correct me if I'm wrong, so the move transfers directly. My reading is… is a useful additional formula.",
+   "pt": "«Corrige-me se estiver enganado» ou, no Brasil, «me corrija se eu estiver enganado» corresponde exatamente a «correct me if I'm wrong», então a função se transfere diretamente. «My reading is…» é uma fórmula adicional útil."
+  }
  },
  "errores": [
   "Stating an interpretation as fact rather than as a checkable hypothesis.",
@@ -229,7 +244,10 @@
     "fr": "Mon impression est…, mais dis-moi si je me trompe.",
     "it": "La mia impressione è…, ma dimmi se sbaglio.",
     "pt": "A minha impressão é…, mas diz-me se estiver enganado/a."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Does that match what's happening on your end?",
@@ -240,7 +258,8 @@
     "fr": "Est-ce que cela correspond à ce qui se passe de votre côté ?",
     "it": "Corrisponde a ciò che sta succedendo da voi?",
     "pt": "Isso corresponde ao que está a acontecer do vosso lado?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "I noticed…, and I don't know why.",
@@ -251,7 +270,10 @@
     "fr": "J’ai remarqué…, et je ne sais pas pourquoi.",
     "it": "Ho notato…, e non so perché.",
     "pt": "Reparei em…, e não sei porquê."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "That's my read on it, but you're closer to it than I am.",
@@ -262,7 +284,8 @@
     "fr": "C’est ma lecture, mais tu es plus proche du sujet que moi.",
     "it": "Questa è la mia lettura, ma tu sei più vicino/a alla questione di me.",
     "pt": "Essa é a minha leitura, mas tu estás mais próximo/a do assunto do que eu."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Correct me if I've got this wrong.",
@@ -273,7 +296,10 @@
     "fr": "Corrige-moi si je me trompe.",
     "it": "Correggimi se ho capito male.",
     "pt": "Corrige-me se estiver enganado/a."
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "What's your take on why that happened?",
@@ -284,7 +310,8 @@
     "fr": "Selon toi, pourquoi cela s’est-il produit ?",
     "it": "Qual è la tua lettura del perché sia successo?",
     "pt": "Qual é a tua leitura sobre porque é que isso aconteceu?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "I may be pattern-matching on something that isn't there.",
@@ -295,7 +322,8 @@
     "fr": "Je vois peut-être un motif qui n'existe pas.",
     "it": "Forse sto vedendo uno schema che non c'è.",
     "pt": "Posso estar a ver um padrão que não existe."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Two readings fit what I saw.",
@@ -306,7 +334,8 @@
     "fr": "Ce que j'ai vu admet deux lectures.",
     "it": "Quel che ho visto ammette due letture.",
     "pt": "O que vi admite duas leituras."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Is this worth your attention, or should I drop it?",
@@ -317,7 +346,10 @@
     "fr": "Cela mérite-t-il votre attention, ou j'abandonne ?",
     "it": "Vale la sua attenzione o lascio perdere?",
     "pt": "Isto merece a tua atenção ou deixo?"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "I only see the output, not the constraints you were under.",
@@ -328,7 +360,8 @@
     "fr": "Je ne vois que le résultat, pas les contraintes que vous aviez.",
     "it": "Vedo solo il risultato, non i vincoli che aveva.",
     "pt": "Só vejo o resultado, não as restrições que tinhas."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Would it help if I said what I'd have done instead?",
@@ -339,7 +372,10 @@
     "fr": "Cela aiderait-il que je dise ce que j'aurais fait ?",
     "it": "Aiuta se dico che cosa avrei fatto io?",
     "pt": "Ajuda se eu disser o que teria feito?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Let's look again in a fortnight rather than now.",
@@ -350,7 +386,11 @@
     "fr": "Reprenons cela dans quinze jours plutôt que maintenant.",
     "it": "Rivediamolo tra due settimane, non adesso.",
     "pt": "Vejamos outra vez daqui a duas semanas, não agora."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar",
+    "Suponer/especular"
+   ]
   }
  ],
  "mision": {

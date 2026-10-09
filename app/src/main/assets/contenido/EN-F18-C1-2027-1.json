@@ -60,11 +60,26 @@
   "To put it mildly is a useful signal that flags the understatement explicitly, for contexts where the irony might otherwise be missed."
  ],
  "contraste": {
-  "es": "Spanish knows litotes (no está nada mal), but English understatement goes further (a bit of a problem for a disaster), so Spanish speakers may take it literally. When producing it, the key is to leave it unexplained.",
-  "de": "German understatement (nicht ganz ideal) is close to English, so the device is familiar. The English scale goes further, though: slightly disappointing can mean very bad.",
-  "it": "Italian litotes (non è proprio il massimo) corresponds well to English understatement. The English scale goes further, though, and a bit of a problem can describe a disaster.",
-  "fr": "French litotes (ce n'est pas l'idéal) corresponds well to English understatement. The English scale goes further, though, and a bit of a problem can describe a disaster.",
-  "pt": "Portuguese litotes (não é o ideal) corresponds well to English understatement. The English scale goes further, though, and a bit of a problem can describe a disaster."
+  "es": {
+   "en": "Spanish knows litotes (no está nada mal), but English understatement goes further (a bit of a problem for a disaster), so Spanish speakers may take it literally. When producing it, the key is to leave it unexplained.",
+   "es": "El español conoce la litotes («no está nada mal»), pero la atenuación inglesa va más lejos («a bit of a problem» para un desastre), por lo que los hispanohablantes pueden interpretarla literalmente. Al producirla, la clave es dejarla sin explicar."
+  },
+  "de": {
+   "en": "German understatement (nicht ganz ideal) is close to English, so the device is familiar. The English scale goes further, though: slightly disappointing can mean very bad.",
+   "de": "Deutsche Untertreibung («nicht ganz ideal») ist dem Englischen ähnlich, daher ist das Mittel vertraut. Die englische Skala geht jedoch weiter: «slightly disappointing» kann sehr schlecht bedeuten."
+  },
+  "it": {
+   "en": "Italian litotes (non è proprio il massimo) corresponds well to English understatement. The English scale goes further, though, and a bit of a problem can describe a disaster.",
+   "it": "La litote italiana («non è proprio il massimo») corrisponde bene all'understatement inglese. La scala inglese va però oltre: «a bit of a problem» può descrivere un disastro."
+  },
+  "fr": {
+   "en": "French litotes (ce n'est pas l'idéal) corresponds well to English understatement. The English scale goes further, though, and a bit of a problem can describe a disaster.",
+   "fr": "La litote française («ce n'est pas l'idéal») correspond bien à l'understatement anglais. Mais l'échelle anglaise va plus loin : «a bit of a problem» peut décrire une catastrophe."
+  },
+  "pt": {
+   "en": "Portuguese litotes (não é o ideal) corresponds well to English understatement. The English scale goes further, though, and a bit of a problem can describe a disaster.",
+   "pt": "A litotes portuguesa («não é o ideal») corresponde bem ao understatement inglês. A escala inglesa vai mais longe, porém: «a bit of a problem» pode descrever um desastre."
+  }
  },
  "errores": [
   "Missing the ironic intent and reacting to an understatement as if it were literal.",
@@ -254,7 +269,10 @@
     "fr": "Pas mal du tout.",
     "it": "Niente male.",
     "pt": "Nada mal."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "…, to put it mildly.",
@@ -265,7 +283,10 @@
     "fr": "…, pour le dire gentiment.",
     "it": "…, per dirla con delicatezza.",
     "pt": "…, para dizer de forma suave."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "That could have gone better.",
@@ -276,7 +297,10 @@
     "fr": "Ça aurait pu mieux se passer.",
     "it": "Poteva andare meglio.",
     "pt": "Isso podia ter corrido melhor."
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "I wasn't overly impressed.",
@@ -287,7 +311,10 @@
     "fr": "Je n’ai pas été particulièrement impressionné(e).",
     "it": "Non mi ha colpito particolarmente.",
     "pt": "Não fiquei particularmente impressionado/a."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "It's a bit of a…",
@@ -298,7 +325,10 @@
     "fr": "C’est un peu…",
     "it": "È un po’…",
     "pt": "É um pouco…"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Could be worse, I suppose.",
@@ -309,7 +339,10 @@
     "fr": "Ça pourrait être pire, j’imagine.",
     "it": "Potrebbe andare peggio, suppongo.",
     "pt": "Podia ser pior, suponho."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "I'll drop the irony for a second: …",
@@ -320,7 +353,10 @@
     "fr": "Je laisse l'ironie de côté un instant : …",
     "it": "Lascio l'ironia per un attimo: …",
     "pt": "Deixo a ironia por um momento: …"
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "I mean that sincerely, for once.",
@@ -331,7 +367,10 @@
     "fr": "Je le dis sincèrement, pour une fois.",
     "it": "Lo dico sul serio, per una volta.",
     "pt": "Digo isto a sério, por uma vez."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Was that a joke, or should I be worried?",
@@ -342,7 +381,10 @@
     "fr": "C'était une blague, ou dois-je m'inquiéter ?",
     "it": "Era una battuta o dovrei preoccuparmi?",
     "pt": "Isso era uma piada ou devo preocupar-me?"
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "No offence meant, by the way.",
@@ -353,7 +395,10 @@
     "fr": "Sans vouloir vexer, d'ailleurs.",
     "it": "Senza offesa, tra l'altro.",
     "pt": "Sem ofensa, já agora."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "I'd say it went well, but you were there.",
@@ -364,7 +409,11 @@
     "fr": "Je dirais que ça s'est bien passé, mais tu y étais.",
     "it": "Direi che è andata bene, ma tu c'eri.",
     "pt": "Diria que correu bem, mas tu estavas lá."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar",
+    "Acordar"
+   ]
   },
   {
    "expresion": "This isn't something I'd joke about.",
@@ -375,7 +424,10 @@
     "fr": "Ce n'est pas un sujet sur lequel je plaisanterais.",
     "it": "Non è una cosa su cui scherzerei.",
     "pt": "Isto não é algo sobre o que eu brincaria."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   }
  ],
  "mision": {

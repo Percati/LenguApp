@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish uses que for almost everything, without distinguishing people from things. Spanish speakers tend to use which even for people, by analogy with que.",
-  "de": "German uses der, die, das for people and things alike, and uses was after alles, nichts and etwas. The calque everything what I have is a typical German error; English uses everything (that) I have. German also puts commas around all relative clauses.",
-  "it": "Italian che is used for people and things alike, which leads to which for people (the man which I met). Quello che corresponds well to what (quello che voglio – what I want).",
-  "fr": "French qui refers to people and things alike, which sometimes leads to who for things (the book who is on the table). Ce que corresponds well to what (ce que je veux – what I want).",
-  "pt": "Portuguese que refers to people and things alike, which leads to which for people. Tudo o que often becomes all what instead of everything that or all that."
+  "es": {
+   "en": "Spanish uses que for almost everything, without distinguishing people from things. Spanish speakers tend to use which even for people, by analogy with que.",
+   "es": "El español usa «que» para casi todo, sin distinguir personas de cosas. Por eso, los hispanohablantes tienden a usar «which» incluso para personas, por analogía con «que»."
+  },
+  "de": {
+   "en": "German uses der, die, das for people and things alike, and uses was after alles, nichts and etwas. The calque everything what I have is a typical German error; English uses everything (that) I have. German also puts commas around all relative clauses.",
+   "de": "Im Deutschen verwendet man «der, die, das» für Personen und Dinge gleichermaßen und «was» nach «alles, nichts, etwas». Die wörtliche Übertragung «everything what I have» ist ein typischer deutscher Fehler; auf Englisch heißt es «everything (that) I have». Außerdem setzt das Deutsche Kommas um alle Relativsätze."
+  },
+  "it": {
+   "en": "Italian che is used for people and things alike, which leads to which for people (the man which I met). Quello che corresponds well to what (quello che voglio – what I want).",
+   "it": "«Che» si usa in italiano per persone e cose allo stesso modo, il che porta a «which» per le persone («the man which I met»). «Quello che» corrisponde bene a «what» («quello che voglio» – «what I want»)."
+  },
+  "fr": {
+   "en": "French qui refers to people and things alike, which sometimes leads to who for things (the book who is on the table). Ce que corresponds well to what (ce que je veux – what I want).",
+   "fr": "Le français «qui» renvoie aussi bien aux personnes qu'aux choses, ce qui peut mener à «who» pour des objets («the book who is on the table»). «Ce que» correspond bien à «what» («ce que je veux» – «what I want»)."
+  },
+  "pt": {
+   "en": "Portuguese que refers to people and things alike, which leads to which for people. Tudo o que often becomes all what instead of everything that or all that.",
+   "pt": "«Que» em português se refere tanto a pessoas quanto a coisas, o que pode levar ao uso de «which» para pessoas. «Tudo o que» também pode virar «all what» em vez de «everything that» ou «all that»."
+  }
  },
  "errores": [
   {
@@ -437,7 +452,10 @@
     "fr": "…qui…",
     "it": "…che…",
     "pt": "…que…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "…which…",
@@ -455,7 +473,10 @@
     "fr": "…qui/que…",
     "it": "…che…",
     "pt": "…que…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "…that…",
@@ -473,7 +494,10 @@
     "fr": "…que…",
     "it": "…che…",
     "pt": "…que…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "The person who…",
@@ -491,7 +515,11 @@
     "fr": "La personne qui…",
     "it": "La persona che…",
     "pt": "A pessoa que…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "The thing that…",
@@ -509,7 +537,11 @@
     "fr": "Ce qui…",
     "it": "La cosa che…",
     "pt": "Aquilo que…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "…whose…",
@@ -527,7 +559,10 @@
     "fr": "…dont…",
     "it": "…il cui/la cui…",
     "pt": "…cujo/cuja…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "Is that information essential?",
@@ -545,7 +580,10 @@
     "fr": "Cette information est-elle essentielle ?",
     "it": "Quell'informazione è essenziale?",
     "pt": "Essa informação é essencial?"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   }
  ],
  "mision": {

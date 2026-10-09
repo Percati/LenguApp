@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "¿Podría…? corresponds to could you…?, so polite complaints transfer. A bare imperative (cámbielo – change it) sounds much ruder in English without please or could you.",
-  "de": "Könnten Sie…? corresponds to could you…?, and bitte to please, so polite complaints transfer directly.",
-  "it": "Potrebbe…? corresponds to could you…?, and per favore to please, so polite complaints transfer directly.",
-  "fr": "Pourriez-vous…? corresponds to could you…?, and s'il vous plaît to please, so polite complaints transfer directly.",
-  "pt": "Poderia…? corresponds to could you…?, and por favor to please. In European Portuguese podia…? is common, which can lead to the calque could you in the past sense; the form is the same in English, so this transfers well."
+  "es": {
+   "en": "¿Podría…? corresponds to could you…?, so polite complaints transfer. A bare imperative (cámbielo – change it) sounds much ruder in English without please or could you.",
+   "es": "«¿Podría…?» corresponde a «could you…?», por lo que las quejas corteses se transfieren. Un imperativo desnudo («cámbielo» – «change it») suena mucho más brusco en inglés sin «please» o «could you»."
+  },
+  "de": {
+   "en": "Könnten Sie…? corresponds to could you…?, and bitte to please, so polite complaints transfer directly.",
+   "de": "«Könnten Sie…?» entspricht «could you…?» und «bitte» entspricht «please», sodass sich höfliche Beschwerden gut übertragen lassen."
+  },
+  "it": {
+   "en": "Potrebbe…? corresponds to could you…?, and per favore to please, so polite complaints transfer directly.",
+   "it": "«Potrebbe…?» corrisponde a «could you…?» e «per favore» a «please»; le lamentele cortesi si trasferiscono quindi direttamente."
+  },
+  "fr": {
+   "en": "Pourriez-vous…? corresponds to could you…?, and s'il vous plaît to please, so polite complaints transfer directly.",
+   "fr": "«Pourriez-vous… ?» correspond à «could you…?» et «s'il vous plaît» à «please» ; les plaintes polies se transfèrent donc directement."
+  },
+  "pt": {
+   "en": "Poderia…? corresponds to could you…?, and por favor to please. In European Portuguese podia…? is common, which can lead to the calque could you in the past sense; the form is the same in English, so this transfers well.",
+   "pt": "«Poderia…?» corresponde a «could you…?», e «por favor» a «please». No português europeu, «podia…?» é comum; como a forma inglesa é a mesma, essa transferência funciona bem."
+  }
  },
  "errores": [
   {
@@ -405,7 +420,10 @@
     "fr": "…ne fonctionne malheureusement pas.",
     "it": "…purtroppo non funziona.",
     "pt": "…infelizmente não funciona."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Could you please…?",
@@ -423,7 +441,10 @@
     "fr": "Pourriez-vous, s’il vous plaît… ?",
     "it": "Potrebbe per favore…?",
     "pt": "Poderia, por favor…?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "I'd like…",
@@ -441,7 +462,10 @@
     "fr": "J’aimerais…",
     "it": "Vorrei…",
     "pt": "Gostaria de…"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "This is the second time this has happened.",
@@ -459,7 +483,10 @@
     "fr": "C’est la deuxième fois que cela arrive.",
     "it": "È la seconda volta che succede.",
     "pt": "É a segunda vez que isto acontece."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "When can you fix this?",
@@ -477,7 +504,8 @@
     "fr": "Quand pouvez-vous réparer cela ?",
     "it": "Quando può ripararlo?",
     "pt": "Quando pode reparar isto?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Thank you for your help.",
@@ -495,7 +523,10 @@
     "fr": "Merci pour votre aide.",
     "it": "Grazie per il suo aiuto.",
     "pt": "Obrigado/a pela sua ajuda."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "I've got a problem with…",
@@ -513,7 +544,10 @@
     "fr": "J'ai un problème avec…",
     "it": "Ho un problema con…",
     "pt": "Tenho um problema com…"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "It's been like this since Monday.",
@@ -531,7 +565,10 @@
     "fr": "C'est comme ça depuis lundi.",
     "it": "È così da lunedì.",
     "pt": "Está assim desde segunda."
-   }
+   },
+   "categoriasUso": [
+    "Duración"
+   ]
   },
   {
    "expresion": "Because of that, I couldn't…",
@@ -549,7 +586,11 @@
     "fr": "C'est pourquoi je n'ai pas pu…",
     "it": "Per questo non ho potuto…",
     "pt": "Por isso não consegui…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "What can you do about it?",
@@ -567,7 +608,8 @@
     "fr": "Que pouvez-vous y faire ?",
     "it": "Che cosa può fare in merito?",
     "pt": "O que pode fazer quanto a isso?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Is there someone else I could ask?",
@@ -585,7 +627,10 @@
     "fr": "Y a-t-il quelqu'un d'autre à qui je puisse demander ?",
     "it": "C'è qualcun altro a cui posso chiedere?",
     "pt": "Há mais alguém a quem possa perguntar?"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "All right, I'll wait to hear from you.",
@@ -603,7 +648,11 @@
     "fr": "Bien, j'attends de vos nouvelles.",
     "it": "Bene, resto in attesa.",
     "pt": "Muito bem, fico a aguardar."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Plantear un problema/quejarse"
+   ]
   }
  ],
  "mision": {

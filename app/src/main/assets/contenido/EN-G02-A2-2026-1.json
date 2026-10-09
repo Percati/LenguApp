@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish uses the imperfecto for the background and the indefinido for the main event, with a logic very close to English.",
-  "de": "German uses the same past form for the background and the main event (Ich ging nach Hause, als es anfing zu regnen). German speakers therefore rarely use the past continuous and need to practise it for the background: I was walking home when it started to rain.",
-  "it": "Italian stavo camminando corresponds exactly to I was walking, and the passato prossimo to the main event. The logic transfers well: I was walking home when it started to rain.",
-  "fr": "The French imparfait (je marchais quand il a commencé à pleuvoir) corresponds well to the past continuous for the background. The logic transfers well: I was walking when it started to rain.",
-  "pt": "Portuguese estava a andar or estava andando corresponds exactly to I was walking, and the simple past to the main event. The logic transfers well: I was walking home when it started to rain."
+  "es": {
+   "en": "Spanish uses the imperfecto for the background and the indefinido for the main event, with a logic very close to English.",
+   "es": "El español usa el imperfecto para el contexto y el indefinido para el acontecimiento principal, con una lógica muy parecida a la del inglés."
+  },
+  "de": {
+   "en": "German uses the same past form for the background and the main event (Ich ging nach Hause, als es anfing zu regnen). German speakers therefore rarely use the past continuous and need to practise it for the background: I was walking home when it started to rain.",
+   "de": "Im Deutschen kann dieselbe Vergangenheitsform Hintergrund und Hauptereignis ausdrücken («Ich ging nach Hause, als es anfing zu regnen»). Deutschsprachige verwenden deshalb das past continuous zu selten und müssen es für den Hintergrund üben: «I was walking home when it started to rain»."
+  },
+  "it": {
+   "en": "Italian stavo camminando corresponds exactly to I was walking, and the passato prossimo to the main event. The logic transfers well: I was walking home when it started to rain.",
+   "it": "«Stavo camminando» corrisponde esattamente a «I was walking», e il passato prossimo all'evento principale. La logica si trasferisce bene: «I was walking home when it started to rain»."
+  },
+  "fr": {
+   "en": "The French imparfait (je marchais quand il a commencé à pleuvoir) corresponds well to the past continuous for the background. The logic transfers well: I was walking when it started to rain.",
+   "fr": "L'imparfait français («je marchais quand il a commencé à pleuvoir») correspond bien au past continuous pour le contexte. La logique se transfère facilement : «I was walking when it started to rain»."
+  },
+  "pt": {
+   "en": "Portuguese estava a andar or estava andando corresponds exactly to I was walking, and the simple past to the main event. The logic transfers well: I was walking home when it started to rain.",
+   "pt": "«Estava a andar» ou «estava andando» corresponde exatamente a «I was walking», e o passado simples ao evento principal. A lógica se transfere bem: «I was walking home when it started to rain»."
+  }
  },
  "errores": [
   {
@@ -375,7 +390,10 @@
     "fr": "J’ai… hier.",
     "it": "Ieri ho…",
     "pt": "Ontem eu…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "I was…-ing when…",
@@ -393,7 +411,11 @@
     "fr": "J’étais en train de… quand…",
     "it": "Stavo… quando…",
     "pt": "Estava a… quando…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "I lived in…for…",
@@ -411,7 +433,12 @@
     "fr": "J’ai vécu à… pendant…",
     "it": "Ho vissuto a… per…",
     "pt": "Morei em… durante…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Hábito/rutina",
+    "Duración"
+   ]
   },
   {
    "expresion": "It started to…",
@@ -429,7 +456,10 @@
     "fr": "Ça a commencé à…",
     "it": "Ha iniziato a…",
     "pt": "Começou a…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "We went to…",
@@ -447,7 +477,11 @@
     "fr": "Nous sommes allés à…",
     "it": "Siamo andati a…",
     "pt": "Fomos a…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "At that moment,…",
@@ -465,7 +499,11 @@
     "fr": "À ce moment-là,…",
     "it": "In quel momento,…",
     "pt": "Nesse momento,…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "What was happening around it?",
@@ -483,7 +521,11 @@
     "fr": "Que se passait-il autour ?",
     "it": "Che cosa succedeva intorno?",
     "pt": "O que se passava à volta?"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {

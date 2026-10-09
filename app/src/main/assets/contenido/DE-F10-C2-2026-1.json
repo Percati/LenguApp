@@ -57,11 +57,26 @@
   "Diese Wahl signalisiert Fachkompetenz gerade dadurch, dass ein allgemeines Publikum den feinen Unterschied nicht bemerkt."
  ],
  "contraste": {
-  "es": "Das kultivierte Spanisch stützt sich stärker auf den condicional (podría no descartarse), um mehrere dieser Nuancen gleichzeitig abzudecken. Hispanophone C2-Sprecher neigen dazu, diese feine Skala auf zwei oder drei Optionen zu reduzieren und damit das genaue Sicherheitssignal zu verlieren, das ein Fachleser im Deutschen erwartet.",
-  "it": "Das Italienische hat für die feine Skala einige genaue Entsprechungen: non è da escludere entspricht es ist nicht auszuschliessen, sogar mit derselben Konstruktion (da + Infinitiv – zu + Infinitiv). Die Gefahr liegt darin, alles über den condizionale zu lösen, wo das Deutsche zwischen dürfte, möglicherweise und es scheint unterscheidet.",
-  "fr": "Il n'est pas exclu que entspricht genau es ist nicht ausgeschlossen, dass. Die Gefahr liegt darin, jede Nuance über den conditionnel auszudrücken, wo das Deutsche zwischen dürfte, möglicherweise und es scheint unterscheidet.",
-  "pt": "Não é de excluir entspricht es ist nicht auszuschliessen. Im europäischen Portugiesisch dient zudem das Futur als Abschwächung (poderá indicar), das wörtlich als wird anzeigen viel zu sicher klingt; im Deutschen passt dürfte anzeigen.",
-  "en": "Das Englische hat eine ähnlich feine Skala, die sich Stufe für Stufe zuordnen lässt: is likely to – dürfte, appears to – scheint, possibly – möglicherweise, cannot be ruled out – ist nicht auszuschliessen."
+  "es": {
+   "de": "Das kultivierte Spanisch stützt sich stärker auf den condicional (podría no descartarse), um mehrere dieser Nuancen gleichzeitig abzudecken. Hispanophone C2-Sprecher neigen dazu, diese feine Skala auf zwei oder drei Optionen zu reduzieren und damit das genaue Sicherheitssignal zu verlieren, das ein Fachleser im Deutschen erwartet.",
+   "es": "El español culto recurre con más frecuencia al condicional («podría no descartarse») para reunir varios de estos matices al mismo tiempo. Los hispanohablantes de nivel C2 tienden a reducir esta escala fina a dos o tres opciones y pierden así la señal exacta de grado de certeza que un lector especializado espera en alemán."
+  },
+  "it": {
+   "de": "Das Italienische hat für die feine Skala einige genaue Entsprechungen: non è da escludere entspricht es ist nicht auszuschliessen, sogar mit derselben Konstruktion (da + Infinitiv – zu + Infinitiv). Die Gefahr liegt darin, alles über den condizionale zu lösen, wo das Deutsche zwischen dürfte, möglicherweise und es scheint unterscheidet.",
+   "it": "L'italiano possiede alcuni equivalenti molto precisi per la scala fine: «non è da escludere» corrisponde a «es ist nicht auszuschliessen», perfino con una costruzione simile («da + infinito» – «zu + Infinitiv»). Il rischio è risolvere ogni sfumatura con il condizionale, mentre il tedesco distingue tra «dürfte», «möglicherweise» ed «es scheint»."
+  },
+  "fr": {
+   "de": "Il n'est pas exclu que entspricht genau es ist nicht ausgeschlossen, dass. Die Gefahr liegt darin, jede Nuance über den conditionnel auszudrücken, wo das Deutsche zwischen dürfte, möglicherweise und es scheint unterscheidet.",
+   "fr": "«Il n'est pas exclu que» correspond exactement à «es ist nicht ausgeschlossen, dass». Le risque est d'exprimer toutes les nuances par le conditionnel, alors que l'allemand distingue plus finement «dürfte», «möglicherweise» et «es scheint»."
+  },
+  "pt": {
+   "de": "Não é de excluir entspricht es ist nicht auszuschliessen. Im europäischen Portugiesisch dient zudem das Futur als Abschwächung (poderá indicar), das wörtlich als wird anzeigen viel zu sicher klingt; im Deutschen passt dürfte anzeigen.",
+   "pt": "«Não é de excluir» corresponde a «es ist nicht auszuschliessen». No português europeu, o futuro também pode servir para atenuar («poderá indicar»); uma tradução literal como «wird anzeigen» soa segura demais em alemão, onde «dürfte anzeigen» é mais adequado."
+  },
+  "en": {
+   "de": "Das Englische hat eine ähnlich feine Skala, die sich Stufe für Stufe zuordnen lässt: is likely to – dürfte, appears to – scheint, possibly – möglicherweise, cannot be ruled out – ist nicht auszuschliessen.",
+   "en": "English has a similarly fine scale that can be mapped level by level: «is likely to» – «dürfte», «appears to» – «scheint», «possibly» – «möglicherweise», «cannot be ruled out» – «ist nicht auszuschliessen»."
+  }
  },
  "errores": [
   "Eine stärkere Abschwächung wählen, als die Evidenz tatsächlich hergibt, oder umgekehrt.",
@@ -229,7 +244,10 @@
     "fr": "…ne peut être exclu(e).",
     "it": "…non si può escludere.",
     "pt": "…não pode ser excluído/a."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "…dürfte eher unwahrscheinlich sein.",
@@ -240,7 +258,10 @@
     "fr": "…semble plutôt improbable.",
     "it": "…sembra piuttosto improbabile.",
     "pt": "…parece bastante improvável."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Es spricht wenig dafür, dass…",
@@ -251,7 +272,10 @@
     "fr": "Peu d’éléments indiquent que…",
     "it": "Ci sono pochi elementi che indicano che…",
     "pt": "Há poucos indícios de que…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Vieles spricht dafür, dass…",
@@ -262,7 +286,10 @@
     "fr": "De nombreux éléments indiquent que…",
     "it": "Molti elementi fanno pensare che…",
     "pt": "Muitos indícios apontam para que…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "…, was noch genauerer Prüfung bedarf.",
@@ -273,7 +300,10 @@
     "fr": "…, ce qui mérite un examen plus approfondi",
     "it": "…, il che richiede un esame più approfondito",
     "pt": "…, o que exige uma análise mais aprofundada"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Dies bleibt eine offene Frage.",
@@ -284,7 +314,10 @@
     "fr": "Cela reste une question ouverte.",
     "it": "Resta una questione aperta.",
     "pt": "Isto continua a ser uma questão em aberto."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Mit aller Vorsicht: …",
@@ -295,7 +328,10 @@
     "fr": "En toute prudence : …",
     "it": "Con ogni cautela: …",
     "pt": "Com toda a cautela: …"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Darauf würde ich mich nicht verlassen.",
@@ -306,7 +342,10 @@
     "fr": "Je ne m'y fierais pas.",
     "it": "Su questo non farei conto.",
     "pt": "Nisso eu não contaria."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Die Datenlage trägt diese Aussage nicht.",
@@ -317,7 +356,10 @@
     "fr": "Les données ne soutiennent pas cette affirmation.",
     "it": "I dati non sostengono quest'affermazione.",
     "pt": "Os dados não sustentam essa afirmação."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Hier verzichte ich bewusst auf jede Abschwächung: …",
@@ -328,7 +370,10 @@
     "fr": "Ici, je renonce volontairement à toute prudence : …",
     "it": "Qui rinuncio deliberatamente a ogni cautela: …",
     "pt": "Aqui prescindo de propósito de qualquer cautela: …"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "So weit reicht meine Kenntnis, weiter nicht.",
@@ -339,7 +384,10 @@
     "fr": "Mes connaissances vont jusque-là, pas plus loin.",
     "it": "Fin qui arriva quel che so, non oltre.",
     "pt": "Até aí vai o que sei, não mais."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Alles, was darüber hinausgeht, wäre Wunschdenken.",
@@ -350,7 +398,10 @@
     "fr": "Tout ce qui va au-delà serait un vœu pieux.",
     "it": "Tutto ciò che va oltre sarebbe un pio desiderio.",
     "pt": "Tudo o que for além disso seria pensar por desejo."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   }
  ],
  "mision": {

@@ -56,11 +56,26 @@
   "Vielleicht ist die einfachste, aber am wenigsten präzise Form — die Modalverben differenzieren den Grad der Sicherheit besser."
  ],
  "contraste": {
-  "es": "Das Spanische drückt Vermutung oft mit deber de oder dem Futuro de probabilidad aus (será por eso). Die drei deutschen Abstufungen könnte/dürfte/müsste haben im Spanischen keine so klare Entsprechung, weshalb Spanischsprachige oft nur eine Form (meist könnte) benutzen und die anderen vermeiden.",
-  "it": "Die Abstufung hat italienische Entsprechungen: potrebbe – könnte, dovrebbe – dürfte (dovrebbe essere a casa – er dürfte zu Hause sein), und das Futur sarà a casa – er wird wohl zu Hause sein. Italienischsprachige können die drei Stufen deshalb gut zuordnen.",
-  "fr": "Die Abstufung hat französische Entsprechungen: il pourrait – er könnte, il devrait être là – er dürfte da sein, il doit être là – er muss da sein. Die drei Stufen lassen sich deshalb gut zuordnen.",
-  "pt": "Die Abstufung hat portugiesische Entsprechungen: pode estar – könnte sein, deve estar – dürfte oder müsste sein. Die Falle ist dever: Wörtlich als soll übersetzt, wird aus der eigenen Vermutung eine fremde Behauptung.",
-  "en": "Die englischen Modalverben lassen sich gut zuordnen: could / might – könnte, should – dürfte (he should be at home – er dürfte zu Hause sein), must – muss bzw. müsste. Englischsprachige treffen die Abstufung deshalb leicht."
+  "es": {
+   "de": "Das Spanische drückt Vermutung oft mit deber de oder dem Futuro de probabilidad aus (será por eso). Die drei deutschen Abstufungen könnte/dürfte/müsste haben im Spanischen keine so klare Entsprechung, weshalb Spanischsprachige oft nur eine Form (meist könnte) benutzen und die anderen vermeiden.",
+   "es": "El español expresa suposiciones a menudo con «deber de» o con el futuro de probabilidad («será por eso»). Los tres grados alemanes «könnte/dürfte/müsste» no tienen una correspondencia tan nítida en español, por lo que los hispanohablantes suelen recurrir a una sola forma, normalmente «könnte», y evitan las demás."
+  },
+  "it": {
+   "de": "Die Abstufung hat italienische Entsprechungen: potrebbe – könnte, dovrebbe – dürfte (dovrebbe essere a casa – er dürfte zu Hause sein), und das Futur sarà a casa – er wird wohl zu Hause sein. Italienischsprachige können die drei Stufen deshalb gut zuordnen.",
+   "it": "La gradazione ha equivalenti italiani: «potrebbe» – «könnte», «dovrebbe» – «dürfte» in valore probabilistico («dovrebbe essere a casa» – «er dürfte zu Hause sein»), e il futuro «sarà a casa» – «er wird wohl zu Hause sein». Gli italofoni possono quindi distinguere abbastanza bene i tre livelli."
+  },
+  "fr": {
+   "de": "Die Abstufung hat französische Entsprechungen: il pourrait – er könnte, il devrait être là – er dürfte da sein, il doit être là – er muss da sein. Die drei Stufen lassen sich deshalb gut zuordnen.",
+   "fr": "Les degrés ont des équivalents français : «il pourrait» – «er könnte», «il devrait être là» – «er dürfte da sein», «il doit être là» – «er muss da sein». On peut donc assez bien faire correspondre les trois niveaux."
+  },
+  "pt": {
+   "de": "Die Abstufung hat portugiesische Entsprechungen: pode estar – könnte sein, deve estar – dürfte oder müsste sein. Die Falle ist dever: Wörtlich als soll übersetzt, wird aus der eigenen Vermutung eine fremde Behauptung.",
+   "pt": "A gradação tem equivalentes em português: «pode estar» – «könnte sein», «deve estar» – «dürfte» ou «müsste sein». A armadilha está em «dever»: traduzido literalmente como «sollen», ele transforma uma hipótese própria em uma informação atribuída a terceiros."
+  },
+  "en": {
+   "de": "Die englischen Modalverben lassen sich gut zuordnen: could / might – könnte, should – dürfte (he should be at home – er dürfte zu Hause sein), must – muss bzw. müsste. Englischsprachige treffen die Abstufung deshalb leicht.",
+   "en": "The English modal verbs can be mapped well: «could / might» – «könnte», «should» – «dürfte» in probability contexts («he should be at home» – «er dürfte zu Hause sein»), «must» – «muss» or «müsste». English speakers therefore usually grasp the gradation quite easily."
+  }
  },
  "errores": [
   "Nur könnte für jede Vermutung verwenden, unabhängig vom Sicherheitsgrad.",
@@ -228,7 +243,10 @@
     "fr": "C’est possible.",
     "it": "Potrebbe essere.",
     "pt": "Pode ser."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Das dürfte stimmen.",
@@ -239,7 +257,10 @@
     "fr": "C’est probablement vrai.",
     "it": "Probabilmente è così.",
     "pt": "Provavelmente é verdade."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Das müsste eigentlich…",
@@ -250,7 +271,10 @@
     "fr": "Ça devrait normalement…",
     "it": "In teoria dovrebbe…",
     "pt": "Em princípio, deveria…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Vielleicht liegt es daran, dass…",
@@ -261,7 +285,10 @@
     "fr": "C’est peut-être parce que…",
     "it": "Forse è perché…",
     "pt": "Talvez seja porque…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Ich vermute, dass…",
@@ -272,7 +299,10 @@
     "fr": "Je suppose que…",
     "it": "Suppongo che…",
     "pt": "Suponho que…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Wahrscheinlich…",
@@ -283,7 +313,8 @@
     "fr": "Probablement…",
     "it": "Probabilmente…",
     "pt": "Provavelmente…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Ich könnte mir vorstellen, dass…",
@@ -294,7 +325,10 @@
     "fr": "J'imagine que…",
     "it": "Potrei immaginare che…",
     "pt": "Posso imaginar que…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Vermutlich hat es damit zu tun, dass…",
@@ -305,7 +339,11 @@
     "fr": "Cela tient probablement au fait que…",
     "it": "Probabilmente ha a che fare con il fatto che…",
     "pt": "Provavelmente tem a ver com o facto de…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Das kann eigentlich nicht sein.",
@@ -316,7 +354,10 @@
     "fr": "Cela ne peut pas vraiment être le cas.",
     "it": "Questo non può essere.",
     "pt": "Isso não pode ser."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Keine Ahnung, aber vielleicht…",
@@ -327,7 +368,10 @@
     "fr": "Aucune idée, mais peut-être…",
     "it": "Non ne ho idea, ma forse…",
     "pt": "Não faço ideia, mas talvez…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Das weiss ich nicht sicher.",
@@ -338,7 +382,10 @@
     "fr": "Je ne le sais pas avec certitude.",
     "it": "Non lo so con certezza.",
     "pt": "Isso não sei com certeza."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Warten wir mal ab.",
@@ -349,7 +396,10 @@
     "fr": "Attendons de voir.",
     "it": "Aspettiamo e vediamo.",
     "pt": "Esperemos para ver."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   }
  ],
  "mision": {

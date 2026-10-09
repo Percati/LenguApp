@@ -57,11 +57,26 @@
   "Dieses Register ist stark kulturell geprägt und funktioniert nicht in jedem Kontext oder mit jedem Publikum."
  ],
  "contraste": {
-  "es": "Die Litotes ist auch im Spanischen geläufig (no está mal – nicht schlecht), die deutsche Untertreibung ist also erkennbar. Schwieriger sind die deutschen Ironiesignale (na toll, super, echt jetzt), deren Bedeutungsumkehr sich über Tonfall und Kontext zeigt und gezielt gehört werden muss.",
-  "it": "Die Litotes kennt das Italienische gut (non è male, non c'è male – nicht schlecht). Schwieriger sind die deutschen Ironiesignale (na toll, super, echt jetzt), deren Bedeutungsumkehr sich über Tonfall und Kontext zeigt und gezielt gehört werden muss.",
-  "fr": "Die Litotes ist im Französischen eine bekannte, sogar schulisch benannte Stilfigur (c'est pas mal, ce n'est pas bête), die deutsche Untertreibung ist also leicht zu erkennen. Neu sind vor allem die deutschen Ironiesignale (na toll, super), die über Tonfall und Kontext die Bedeutung umkehren.",
-  "pt": "Die Litotes ist auch im Portugiesischen geläufig (não está mal, nada mau – nicht schlecht), die deutsche Untertreibung ist also leicht zu erkennen. Neu sind vor allem die deutschen Ironiesignale (na toll, super), deren Bedeutungsumkehr über Tonfall und Kontext läuft.",
-  "en": "Die britische Untertreibung (not bad, quite good) ist eine enge Parallele zur deutschen, Englischsprachige erkennen sie deshalb leicht. Zu beachten ist, dass ganz gut wie das britische quite good eher abschwächt als lobt."
+  "es": {
+   "de": "Die Litotes ist auch im Spanischen geläufig (no está mal – nicht schlecht), die deutsche Untertreibung ist also erkennbar. Schwieriger sind die deutschen Ironiesignale (na toll, super, echt jetzt), deren Bedeutungsumkehr sich über Tonfall und Kontext zeigt und gezielt gehört werden muss.",
+   "es": "La litote también es habitual en español («no está mal» – nicht schlecht), por lo que la atenuación alemana se reconoce fácilmente. Más difíciles son las señales alemanas de ironía («na toll», «super», «echt jetzt»), cuyo significado se invierte por el tono y el contexto y debe aprenderse a percibir de forma específica."
+  },
+  "it": {
+   "de": "Die Litotes kennt das Italienische gut (non è male, non c'è male – nicht schlecht). Schwieriger sind die deutschen Ironiesignale (na toll, super, echt jetzt), deren Bedeutungsumkehr sich über Tonfall und Kontext zeigt und gezielt gehört werden muss.",
+   "it": "La litote è ben nota in italiano («non è male», «non c'è male» – «nicht schlecht»). Più difficili sono i segnali tedeschi di ironia («na toll», «super», «echt jetzt»), in cui il significato si capovolge attraverso tono e contesto e deve essere imparato soprattutto all'ascolto."
+  },
+  "fr": {
+   "de": "Die Litotes ist im Französischen eine bekannte, sogar schulisch benannte Stilfigur (c'est pas mal, ce n'est pas bête), die deutsche Untertreibung ist also leicht zu erkennen. Neu sind vor allem die deutschen Ironiesignale (na toll, super), die über Tonfall und Kontext die Bedeutung umkehren.",
+   "fr": "La litote est en français une figure de style bien connue et même enseignée («c'est pas mal», «ce n'est pas bête»), donc la sous-expression allemande se reconnaît facilement. Ce qui est plus nouveau, ce sont les signaux allemands d'ironie («na toll», «super»), où le ton et le contexte renversent le sens."
+  },
+  "pt": {
+   "de": "Die Litotes ist auch im Portugiesischen geläufig (não está mal, nada mau – nicht schlecht), die deutsche Untertreibung ist also leicht zu erkennen. Neu sind vor allem die deutschen Ironiesignale (na toll, super), deren Bedeutungsumkehr über Tonfall und Kontext läuft.",
+   "pt": "A litote também é comum em português («não está mal», «nada mau» – nicht schlecht), portanto a atenuação alemã é fácil de reconhecer. A novidade está sobretudo nos sinais alemães de ironia («na toll», «super»), cuja inversão de sentido depende do tom e do contexto."
+  },
+  "en": {
+   "de": "Die britische Untertreibung (not bad, quite good) ist eine enge Parallele zur deutschen, Englischsprachige erkennen sie deshalb leicht. Zu beachten ist, dass ganz gut wie das britische quite good eher abschwächt als lobt.",
+   "en": "British understatement («not bad», «quite good») is a close parallel to German understatement, so English speakers recognise it easily. One point to note is that «ganz gut», like British «quite good», often tones down praise rather than intensifying it."
+  }
  },
  "errores": [
   "Eine untertreibende Aussage wörtlich nehmen, statt die ironische Lücke zu erkennen.",
@@ -251,7 +266,10 @@
     "fr": "Ça ne s’est pas passé de façon tout à fait optimale.",
     "it": "Non è andata proprio nel migliore dei modi.",
     "pt": "Não correu totalmente bem."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Ganz nett, muss ich sagen.",
@@ -262,7 +280,10 @@
     "fr": "Plutôt sympa, je dois dire.",
     "it": "Niente male, devo dire.",
     "pt": "Bastante agradável, tenho de dizer."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Es hat sich ein bisschen verzögert.",
@@ -273,7 +294,10 @@
     "fr": "Ça a pris un peu de retard.",
     "pt": "Atrasou-se um pouco.",
     "it": "C’è stato un po’ di ritardo."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "…, sagen wir mal, …",
@@ -284,7 +308,10 @@
     "fr": "…, disons, …",
     "it": "…, diciamo, …",
     "pt": "…, digamos, …"
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Na, das war ja grossartig.",
@@ -295,7 +322,10 @@
     "fr": "Eh bien, c’était vraiment formidable.",
     "it": "Beh, è stato proprio fantastico.",
     "pt": "Bem, isso foi mesmo ótimo."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Kann man so machen.",
@@ -306,7 +336,11 @@
     "fr": "On peut faire comme ça.",
     "it": "Si può fare così.",
     "pt": "Pode fazer-se assim."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Damit war ja zu rechnen.",
@@ -317,7 +351,11 @@
     "fr": "Il fallait s'y attendre, évidemment.",
     "it": "C'era da aspettarselo, ovvio.",
     "pt": "Era de esperar, claro."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Es hätte schlimmer kommen können.",
@@ -328,7 +366,10 @@
     "fr": "Cela aurait pu être pire.",
     "it": "Poteva andare peggio.",
     "pt": "Podia ter sido pior."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Ein gewisser Optimismus war da im Spiel.",
@@ -339,7 +380,11 @@
     "fr": "Un certain optimisme était à l'œuvre.",
     "it": "Un certo ottimismo c'era.",
     "pt": "Certo otimismo havia ali."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Das meine ich ohne Ironie.",
@@ -350,7 +395,10 @@
     "fr": "Je le dis sans ironie.",
     "it": "Lo dico senza ironia.",
     "pt": "Digo isto sem ironia."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Verstehen Sie das bitte nicht falsch: …",
@@ -361,7 +409,10 @@
     "fr": "Ne le prenez pas mal, s'il vous plaît : …",
     "it": "La prego di non fraintendere: …",
     "pt": "Por favor, não leve a mal: …"
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "War das Ironie oder meinst du das ernst?",
@@ -372,7 +423,10 @@
     "fr": "C'était de l'ironie ou tu es sérieux ?",
     "it": "Era ironia o dici sul serio?",
     "pt": "Isso era ironia ou estás a falar a sério?"
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   }
  ],
  "mision": {

@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish uses si + imperfecto de subjuntivo and the simple conditional (si tuviera tiempo, viajaría), with the same logic as English. The typical error is putting would in the if-clause as well, especially for speakers of varieties that use the conditional after si (si tendría).",
-  "de": "German has the same logic (Wenn ich Zeit hätte, würde ich reisen), but colloquial German also allows würde after wenn. This leads to if I would have time, the most frequent error with the second conditional.",
-  "it": "Italian has the same logic (se avessi tempo, viaggerei) and no conditional after se, so the structure transfers well. New for Italian speakers is the form if I were for all persons, which has no Italian equivalent.",
-  "fr": "French si + imparfait (si j'avais le temps, je voyagerais) corresponds exactly to if + past simple, and French does not allow the conditional after si. The second conditional is therefore one of the easiest structures for French speakers.",
-  "pt": "Portuguese has the same logic (se tivesse tempo, viajaria). In colloquial European Portuguese the imperfeito often replaces the conditional (viajava), which can lead to I travelled more instead of I would travel more."
+  "es": {
+   "en": "Spanish uses si + imperfecto de subjuntivo and the simple conditional (si tuviera tiempo, viajaría), with the same logic as English. The typical error is putting would in the if-clause as well, especially for speakers of varieties that use the conditional after si (si tendría).",
+   "es": "El español usa «si» + imperfecto de subjuntivo y condicional simple («si tuviera tiempo, viajaría»), con la misma lógica que el inglés. El error típico es poner «would» también en la cláusula con «if», sobre todo en hablantes de variedades que usan el condicional después de «si» («si tendría»)."
+  },
+  "de": {
+   "en": "German has the same logic (Wenn ich Zeit hätte, würde ich reisen), but colloquial German also allows würde after wenn. This leads to if I would have time, the most frequent error with the second conditional.",
+   "de": "Die Logik ist im Deutschen dieselbe («Wenn ich Zeit hätte, würde ich reisen»), aber umgangssprachlich steht «würde» auch im «wenn»-Satz. Das führt zu «if I would have time», dem häufigsten Fehler beim second conditional."
+  },
+  "it": {
+   "en": "Italian has the same logic (se avessi tempo, viaggerei) and no conditional after se, so the structure transfers well. New for Italian speakers is the form if I were for all persons, which has no Italian equivalent.",
+   "it": "L'italiano ha la stessa logica («se avessi tempo, viaggerei») e non usa il condizionale dopo «se» nella lingua standard, quindi la struttura si trasferisce bene. Nuova per gli italofoni è la forma «if I were» per tutte le persone, che non ha un equivalente italiano."
+  },
+  "fr": {
+   "en": "French si + imparfait (si j'avais le temps, je voyagerais) corresponds exactly to if + past simple, and French does not allow the conditional after si. The second conditional is therefore one of the easiest structures for French speakers.",
+   "fr": "«Si» + imparfait («si j'avais le temps, je voyagerais») correspond exactement à «if» + past simple, et le français n'autorise pas le conditionnel après «si». Le second conditional est donc l'une des structures les plus faciles pour les francophones."
+  },
+  "pt": {
+   "en": "Portuguese has the same logic (se tivesse tempo, viajaria). In colloquial European Portuguese the imperfeito often replaces the conditional (viajava), which can lead to I travelled more instead of I would travel more.",
+   "pt": "O português tem a mesma lógica («se tivesse tempo, viajaria»). No português europeu coloquial, o imperfeito muitas vezes substitui o condicional («viajava»), o que pode gerar «I travelled more» em vez de «I would travel more»."
+  }
  },
  "errores": [
   {
@@ -437,7 +452,10 @@
     "fr": "Si j’avais…, je…",
     "it": "Se avessi…, io…",
     "pt": "Se eu tivesse…, eu…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "If I were you, I'd…",
@@ -455,7 +473,12 @@
     "fr": "À ta place, je…",
     "it": "Al tuo posto, io…",
     "pt": "No teu lugar, eu…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Aconsejar",
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "What would you do if…?",
@@ -473,7 +496,10 @@
     "fr": "Que ferais-tu si… ?",
     "it": "Che cosa faresti se…?",
     "pt": "O que farias se…?"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "It would be great if…",
@@ -491,7 +517,10 @@
     "fr": "Ce serait super si…",
     "it": "Sarebbe fantastico se…",
     "pt": "Seria ótimo se…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "I could… if…",
@@ -509,7 +538,12 @@
     "fr": "Je pourrais… si…",
     "it": "Potrei… se…",
     "pt": "Eu poderia… se…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Suponer/especular",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "…, wouldn't it?",
@@ -527,7 +561,11 @@
     "fr": "…, n’est-ce pas ?",
     "it": "…, vero?",
     "pt": "…, não é?"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Acordar"
+   ]
   },
   {
    "expresion": "But it isn't the case, is it?",
@@ -545,7 +583,11 @@
     "fr": "Mais ce n'est pas le cas, si ?",
     "it": "Ma non è così, vero?",
     "pt": "Mas não é o caso, pois não?"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Acordar"
+   ]
   }
  ],
  "mision": {

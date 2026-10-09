@@ -108,11 +108,26 @@
   "Wendungen werden im Deutschen selten variiert. Wortspiele damit klingen bei Lernenden fast immer wie Fehler."
  ],
  "contraste": {
-  "es": "Die Bildspender unterscheiden sich stark: Spanisch nimmt oft Körper und Tiere, Deutsch oft Handwerk, Verkehr und Verwaltung. Wörtliche Übertragung funktioniert praktisch nie — *no tener pelos en la lengua* hat keine deutsche Entsprechung mit Haaren.",
-  "en": "Auch das Englische ist reich an Redewendungen, aber die Bildspender unterscheiden sich: Englisch greift oft zu Wetter, Schiffen und Geld, Deutsch zu Handwerk, Verkehr und Verwaltung. *Bahnhof verstehen* hat keine englische Entsprechung mit einem Bahnhof; am nächsten liegt *it's all Greek to me*. Umgekehrt lässt sich *to be in the same boat* fast wörtlich übertragen, was die Ausnahme ist, nicht die Regel.",
-  "it": "Manche Wendungen haben ein anderes Bild mit gleicher Bedeutung: *die Daumen drücken* – *incrociare le dita*, *die Nase voll haben* – *averne piene le scatole*. Wörtlich übertragen funktionieren sie also nicht, lassen sich aber gut als Paare lernen.",
-  "fr": "Manche Wendungen haben ein anderes Bild mit gleicher Bedeutung: *die Daumen drücken* – *croiser les doigts*, *die Nase voll haben* – *en avoir ras le bol*. Wörtlich übertragen funktionieren sie nicht, lassen sich aber gut als Paare lernen.",
-  "pt": "Manche Wendungen haben ein anderes Bild mit gleicher Bedeutung: *die Daumen drücken* – *cruzar os dedos* (europäisch auch *fazer figas*), *die Nase voll haben* – *estar farto*. Sie lassen sich gut als Paare lernen."
+  "es": {
+   "de": "Die Bildspender unterscheiden sich stark: Spanisch nimmt oft Körper und Tiere, Deutsch oft Handwerk, Verkehr und Verwaltung. Wörtliche Übertragung funktioniert praktisch nie — *no tener pelos en la lengua* hat keine deutsche Entsprechung mit Haaren.",
+   "es": "Las imágenes de las expresiones idiomáticas difieren mucho: el español recurre a menudo al cuerpo y a los animales; el alemán, al trabajo manual, el transporte y la administración. La traducción literal casi nunca funciona: «no tener pelos en la lengua» no tiene un equivalente alemán con «pelos»."
+  },
+  "en": {
+   "de": "Auch das Englische ist reich an Redewendungen, aber die Bildspender unterscheiden sich: Englisch greift oft zu Wetter, Schiffen und Geld, Deutsch zu Handwerk, Verkehr und Verwaltung. *Bahnhof verstehen* hat keine englische Entsprechung mit einem Bahnhof; am nächsten liegt *it's all Greek to me*. Umgekehrt lässt sich *to be in the same boat* fast wörtlich übertragen, was die Ausnahme ist, nicht die Regel.",
+   "en": "English is also rich in idioms, but the source images differ: English often draws on weather, ships and money, German on crafts, transport and administration. «Bahnhof verstehen» has no English railway equivalent; «it's all Greek to me» is closest. Conversely, «to be in the same boat» can be translated almost literally, but that is the exception rather than the rule."
+  },
+  "it": {
+   "de": "Manche Wendungen haben ein anderes Bild mit gleicher Bedeutung: *die Daumen drücken* – *incrociare le dita*, *die Nase voll haben* – *averne piene le scatole*. Wörtlich übertragen funktionieren sie also nicht, lassen sich aber gut als Paare lernen.",
+   "it": "Alcune espressioni usano immagini diverse con lo stesso significato: «die Daumen drücken» – «incrociare le dita», «die Nase voll haben» – «averne piene le scatole». La traduzione letterale quindi non funziona, ma si possono imparare bene come coppie."
+  },
+  "fr": {
+   "de": "Manche Wendungen haben ein anderes Bild mit gleicher Bedeutung: *die Daumen drücken* – *croiser les doigts*, *die Nase voll haben* – *en avoir ras le bol*. Wörtlich übertragen funktionieren sie nicht, lassen sich aber gut als Paare lernen.",
+   "fr": "Certaines expressions emploient une image différente pour le même sens : «die Daumen drücken» – «croiser les doigts», «die Nase voll haben» – «en avoir ras le bol». La traduction littérale ne fonctionne pas, mais ces expressions se mémorisent bien par paires."
+  },
+  "pt": {
+   "de": "Manche Wendungen haben ein anderes Bild mit gleicher Bedeutung: *die Daumen drücken* – *cruzar os dedos* (europäisch auch *fazer figas*), *die Nase voll haben* – *estar farto*. Sie lassen sich gut als Paare lernen.",
+   "pt": "Algumas expressões usam imagens diferentes com o mesmo significado: «die Daumen drücken» – «cruzar os dedos» (no português europeu também «fazer figas»), «die Nase voll haben» – «estar farto». Elas podem ser aprendidas bem como pares."
+  }
  },
  "errores": [
   "Eine Redewendung wörtlich aus der Muttersprache übertragen.",
@@ -315,7 +330,10 @@
     "fr": "Au début, j’avais du mal à…",
     "it": "All’inizio facevo fatica a…",
     "pt": "No início, custava-me…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Inzwischen habe ich mich daran gewöhnt",
@@ -326,7 +344,10 @@
     "fr": "Entre-temps, je m’y suis habitué",
     "it": "Nel frattempo mi ci sono abituato",
     "pt": "Entretanto, habituei-me a isso"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Das war für mich befremdlich",
@@ -337,7 +358,10 @@
     "fr": "Cela m’a paru déroutant",
     "it": "Per me è stato sconcertante",
     "pt": "Isso pareceu-me estranho"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Da habe ich erst mal…",
@@ -348,7 +372,12 @@
     "fr": "Là, j’ai d’abord…",
     "it": "A quel punto ho prima…",
     "pt": "Aí, primeiro…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Reaccionar y valorar",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Es hat eine Weile gedauert, bis…",
@@ -359,7 +388,10 @@
     "fr": "Il a fallu un certain temps avant que…",
     "it": "Ci è voluto un po’ prima che…",
     "pt": "Demorou algum tempo até que…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Rückblickend würde ich sagen…",
@@ -370,7 +402,11 @@
     "fr": "Avec le recul, je dirais…",
     "it": "Col senno di poi direi…",
     "pt": "Olhando para trás, diria…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Opinar"
+   ]
   },
   {
    "expresion": "Was mich am meisten überrascht hat, war…",
@@ -381,7 +417,11 @@
     "fr": "Ce qui m’a le plus surpris, c’était…",
     "it": "Ciò che mi ha sorpreso di più è stato…",
     "pt": "O que mais me surpreendeu foi…"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "Daran musste ich mich erst gewöhnen",
@@ -392,7 +432,10 @@
     "fr": "J’ai d’abord dû m’y habituer",
     "it": "Ho dovuto prima abituarmi",
     "pt": "Tive primeiro de me habituar a isso"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   }
  ],
  "mision": {

@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische hat mit poder, tener que und querer ähnliche Verben, sodass sich die Bedeutungen leicht übertragen lassen.",
-  "it": "Die Bedeutungen passen gut: potere – können, dovere – müssen, vorrei – ich möchte. Neu ist die Stellung: Der Infinitiv steht im Deutschen am Satzende (Ich kann heute nicht kommen).",
-  "fr": "Die Bedeutungen passen gut: pouvoir – können, devoir – müssen, und je voudrais ist wie ich möchte eine höfliche Form. Neu ist die Stellung: Der Infinitiv steht im Deutschen am Satzende.",
-  "pt": "Die Bedeutungen passen gut: poder – können, ter de – müssen. Vorsicht bei der höflichen Form: Im europäischen Portugiesisch sagt man queria um café, im Deutschen aber ich möchte einen Kaffee, nicht ich wollte.",
-  "en": "Die Bedeutungen passen gut: can – können, have to – müssen, would like – möchte. Achtung: must not heisst nicht nicht müssen, sondern nicht dürfen."
+  "es": {
+   "de": "Das Spanische hat mit poder, tener que und querer ähnliche Verben, sodass sich die Bedeutungen leicht übertragen lassen.",
+   "es": "El español tiene verbos parecidos como «poder», «tener que» y «querer», por lo que los significados se transfieren con facilidad."
+  },
+  "it": {
+   "de": "Die Bedeutungen passen gut: potere – können, dovere – müssen, vorrei – ich möchte. Neu ist die Stellung: Der Infinitiv steht im Deutschen am Satzende (Ich kann heute nicht kommen).",
+   "it": "I significati corrispondono bene: «potere» – «können», «dovere» – «müssen», «vorrei» – «ich möchte». La novità è la posizione: in tedesco l'infinito va alla fine della frase («Ich kann heute nicht kommen»)."
+  },
+  "fr": {
+   "de": "Die Bedeutungen passen gut: pouvoir – können, devoir – müssen, und je voudrais ist wie ich möchte eine höfliche Form. Neu ist die Stellung: Der Infinitiv steht im Deutschen am Satzende.",
+   "fr": "Les significations correspondent bien : «pouvoir» – «können», «devoir» – «müssen», et «je voudrais» fonctionne comme la forme polie «ich möchte». La nouveauté est la position : l'infinitif se place à la fin de la phrase en allemand."
+  },
+  "pt": {
+   "de": "Die Bedeutungen passen gut: poder – können, ter de – müssen. Vorsicht bei der höflichen Form: Im europäischen Portugiesisch sagt man queria um café, im Deutschen aber ich möchte einen Kaffee, nicht ich wollte.",
+   "pt": "Os significados combinam bem: «poder» – «können», «ter de» – «müssen». Cuidado com a forma de cortesia: no português europeu é comum «queria um café», mas em alemão se diz «ich möchte einen Kaffee», e não «ich wollte»."
+  },
+  "en": {
+   "de": "Die Bedeutungen passen gut: can – können, have to – müssen, would like – möchte. Achtung: must not heisst nicht nicht müssen, sondern nicht dürfen.",
+   "en": "The meanings match well: «can» – «können», «have to» – «müssen», «would like» – «möchte». Be careful: «must not» does not mean «nicht müssen» but «nicht dürfen»."
+  }
  },
  "errores": [
   {
@@ -407,7 +422,10 @@
     "fr": "Je peux…",
     "it": "Posso…",
     "pt": "Posso…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Ich muss…",
@@ -425,7 +443,10 @@
     "fr": "Je dois…",
     "it": "Devo…",
     "pt": "Tenho de…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Ich möchte…",
@@ -443,7 +464,11 @@
     "fr": "J’aimerais…",
     "it": "Vorrei…",
     "pt": "Gostaria de…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Kannst du…?",
@@ -461,7 +486,11 @@
     "fr": "Tu peux… ?",
     "it": "Puoi…?",
     "pt": "Podes…?"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Ich muss leider…",
@@ -479,7 +508,12 @@
     "fr": "Malheureusement, je dois…",
     "it": "Purtroppo devo…",
     "pt": "Infelizmente, tenho de…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Agradecer y disculparse",
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "Möchtest du…?",
@@ -497,7 +531,11 @@
     "fr": "Tu veux… ?",
     "it": "Vuoi…?",
     "pt": "Queres…?"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Welches Modalverb passt?",
@@ -515,7 +553,10 @@
     "fr": "Quel modal convient ?",
     "it": "Quale verbo modale va bene?",
     "pt": "Que verbo modal encaixa?"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   }
  ],
  "mision": {

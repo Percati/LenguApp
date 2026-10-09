@@ -56,11 +56,26 @@
   "This structure is expected in expert commentary — a prediction with no alternative scenario reads as overconfident."
  ],
  "contraste": {
-  "es": "Lo que habría que vigilar es… corresponds well to the key thing to watch is…, so building scenarios with a clear signal transfers directly. The C2 point is to name that signal explicitly rather than leave the alternative scenario open.",
-  "de": "Entscheidend wird sein, ob… corresponds closely to the key thing to watch is whether…. German speakers transfer the move well; the English phrase is more informal and more common in spoken analysis.",
-  "it": "Il punto da tenere d'occhio è… corresponds exactly to the key thing to watch is… (tenere d'occhio – keep an eye on). Building scenarios with a clear signal therefore transfers directly.",
-  "fr": "Ce qu'il faudra surveiller, c'est… corresponds closely to the key thing to watch is…. The cleft structure is the same in both languages, so the move transfers directly.",
-  "pt": "O que convém acompanhar é… or, in Brazil, ficar de olho em… corresponds well to the key thing to watch / keep an eye on. The move transfers directly."
+  "es": {
+   "en": "Lo que habría que vigilar es… corresponds well to the key thing to watch is…, so building scenarios with a clear signal transfers directly. The C2 point is to name that signal explicitly rather than leave the alternative scenario open.",
+   "es": "«Lo que habría que vigilar es…» corresponde bien a «the key thing to watch is…», por lo que construir escenarios con una señal clara se transfiere directamente. El punto C2 es nombrar explícitamente esa señal en vez de dejar abierto el escenario alternativo."
+  },
+  "de": {
+   "en": "Entscheidend wird sein, ob… corresponds closely to the key thing to watch is whether…. German speakers transfer the move well; the English phrase is more informal and more common in spoken analysis.",
+   "de": "«Entscheidend wird sein, ob…» entspricht gut «the key thing to watch is whether…». Deutschsprachige übertragen die Funktion leicht; die englische Wendung ist informeller und in gesprochener Analyse häufiger."
+  },
+  "it": {
+   "en": "Il punto da tenere d'occhio è… corresponds exactly to the key thing to watch is… (tenere d'occhio – keep an eye on). Building scenarios with a clear signal therefore transfers directly.",
+   "it": "«Il punto da tenere d'occhio è…» corrisponde esattamente a «the key thing to watch is…» («tenere d'occhio» – «keep an eye on»). Costruire scenari con un segnale chiaro si trasferisce quindi direttamente."
+  },
+  "fr": {
+   "en": "Ce qu'il faudra surveiller, c'est… corresponds closely to the key thing to watch is…. The cleft structure is the same in both languages, so the move transfers directly.",
+   "fr": "«Ce qu'il faudra surveiller, c'est…» correspond étroitement à «the key thing to watch is…». La structure clivée est la même dans les deux langues, donc le mouvement se transfère directement."
+  },
+  "pt": {
+   "en": "O que convém acompanhar é… or, in Brazil, ficar de olho em… corresponds well to the key thing to watch / keep an eye on. The move transfers directly.",
+   "pt": "«O que convém acompanhar é…» ou, no Brasil, «o que é preciso ficar de olho é…» corresponde bem a «the key thing to watch / keep an eye on». O movimento se transfere diretamente."
+  }
  },
  "errores": [
   "Naming an alternative scenario without any signal that would distinguish it from the main one.",
@@ -250,7 +265,10 @@
     "fr": "L’issue la plus probable est…",
     "it": "L’esito più probabile è…",
     "pt": "O resultado mais provável é…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "…can't be excluded.",
@@ -261,7 +279,10 @@
     "fr": "…ne peut être exclu(e).",
     "it": "…non può essere escluso/a.",
     "pt": "…não pode ser excluído/a."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "The key thing to watch is…",
@@ -272,7 +293,10 @@
     "fr": "Le point clé à surveiller est…",
     "it": "La cosa chiave da tenere d’occhio è…",
     "pt": "O ponto principal a observar é…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "If that turns, the picture changes.",
@@ -283,7 +307,10 @@
     "fr": "Si cela change, la situation change.",
     "it": "Se cambia quello, cambia il quadro.",
     "pt": "Se isso mudar, o panorama muda."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "A less likely but still credible scenario is…",
@@ -294,7 +321,10 @@
     "fr": "Un scénario moins probable mais tout de même crédible est…",
     "it": "Uno scenario meno probabile ma comunque credibile è…",
     "pt": "Um cenário menos provável, mas ainda assim credível, é…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "This will largely hinge on…",
@@ -305,7 +335,10 @@
     "fr": "Cela dépendra en grande partie de…",
     "it": "Dipenderà in gran parte da…",
     "pt": "Isto dependerá em grande medida de…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "The base rate here is against it.",
@@ -316,7 +349,11 @@
     "fr": "La fréquence de base joue contre.",
     "it": "La frequenza di base gioca contro.",
     "pt": "A frequência de base joga contra."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular",
+    "Hábito/rutina"
+   ]
   },
   {
    "expresion": "I'd put it at better than even.",
@@ -327,7 +364,11 @@
     "fr": "Je le situerais un peu au-dessus de cinquante pour cent.",
     "it": "Lo metterei poco sopra il cinquanta per cento.",
     "pt": "Colocaria isso um pouco acima dos cinquenta por cento."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "The tail risk is what I'd worry about.",
@@ -338,7 +379,10 @@
     "fr": "Ce qui m'inquiéterait, c'est le scénario extrême.",
     "it": "Ciò che mi preoccuperebbe è lo scenario estremo.",
     "pt": "O que me preocuparia é o cenário extremo."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "By this time next year we'll know.",
@@ -349,7 +393,10 @@
     "fr": "D'ici un an, nous le saurons.",
     "it": "Tra un anno lo sapremo.",
     "pt": "Por esta altura do próximo ano saberemos."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "That forecast assumes nothing else moves.",
@@ -360,7 +407,10 @@
     "fr": "Cette prévision suppose que rien d'autre ne bouge.",
     "it": "Quella previsione presuppone che nulla altro cambi.",
     "pt": "Essa previsão pressupõe que nada mais se mexe."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "I've been wrong about this before.",
@@ -371,7 +421,10 @@
     "fr": "Je me suis déjà trompé là-dessus.",
     "it": "Su questo mi sono già sbagliato.",
     "pt": "Já me enganei nisto antes."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   }
  ],
  "mision": {

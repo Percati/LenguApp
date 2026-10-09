@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish has tener que and poder as close equivalents, so the logic transfers easily.",
-  "de": "Can and können match well, and can't corresponds to nicht dürfen (Du darfst hier nicht rauchen – You can't smoke here). Have to corresponds to müssen; careful with must not, which means nicht dürfen, not nicht müssen.",
-  "it": "Potere corresponds to can, and non si può to you can't (qui non si può fumare – you can't smoke here). Dovere covers both must and have to; at A2, have to is the safer everyday choice.",
-  "fr": "Pouvoir corresponds to can, and on ne peut pas to you can't (on ne peut pas fumer ici – you can't smoke here). Devoir covers must and have to; at A2, have to is the safer everyday choice.",
-  "pt": "Ter de or ter que corresponds exactly to have to, and poder to can (aqui não se pode fumar – you can't smoke here). The three A2 modals therefore transfer very well."
+  "es": {
+   "en": "Spanish has tener que and poder as close equivalents, so the logic transfers easily.",
+   "es": "El español tiene «tener que» y «poder» como equivalentes cercanos, por lo que la lógica se transfiere fácilmente."
+  },
+  "de": {
+   "en": "Can and können match well, and can't corresponds to nicht dürfen (Du darfst hier nicht rauchen – You can't smoke here). Have to corresponds to müssen; careful with must not, which means nicht dürfen, not nicht müssen.",
+   "de": "«Can» und «können» passen gut zusammen, und «can't» entspricht «nicht dürfen» («Du darfst hier nicht rauchen» – «You can't smoke here»). «Have to» entspricht «müssen». Vorsicht: «must not» bedeutet «nicht dürfen», nicht «nicht müssen»."
+  },
+  "it": {
+   "en": "Potere corresponds to can, and non si può to you can't (qui non si può fumare – you can't smoke here). Dovere covers both must and have to; at A2, have to is the safer everyday choice.",
+   "it": "«Potere» corrisponde a «can», e «non si può» a «you can't» («qui non si può fumare» – «you can't smoke here»). «Dovere» copre sia «must» sia «have to»; a livello A2, «have to» è la scelta quotidiana più sicura."
+  },
+  "fr": {
+   "en": "Pouvoir corresponds to can, and on ne peut pas to you can't (on ne peut pas fumer ici – you can't smoke here). Devoir covers must and have to; at A2, have to is the safer everyday choice.",
+   "fr": "«Pouvoir» correspond à «can», et «on ne peut pas» à «you can't» («on ne peut pas fumer ici» – «you can't smoke here»). «Devoir» couvre «must» et «have to» ; au niveau A2, «have to» est le choix courant le plus sûr."
+  },
+  "pt": {
+   "en": "Ter de or ter que corresponds exactly to have to, and poder to can (aqui não se pode fumar – you can't smoke here). The three A2 modals therefore transfer very well.",
+   "pt": "«Ter de» ou «ter que» corresponde exatamente a «have to», e «poder» a «can» («aqui não se pode fumar» – «you can't smoke here»). Os três modais de A2, portanto, se transferem muito bem."
+  }
  },
  "errores": [
   {
@@ -429,7 +444,10 @@
     "fr": "Je dois…",
     "it": "Devo…",
     "pt": "Tenho de…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "She has to…",
@@ -447,7 +465,10 @@
     "fr": "Elle doit…",
     "it": "Lei deve…",
     "pt": "Ela tem de…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Can I…?",
@@ -465,7 +486,10 @@
     "fr": "Puis-je… ?",
     "it": "Posso…?",
     "pt": "Posso…?"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "I can…",
@@ -483,7 +507,10 @@
     "fr": "Je peux…",
     "it": "Posso…",
     "pt": "Posso…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "You can't…",
@@ -501,7 +528,10 @@
     "fr": "Tu ne peux pas…",
     "it": "Non puoi…",
     "pt": "Não podes…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "I can't…",
@@ -519,7 +549,10 @@
     "fr": "Je ne peux pas…",
     "it": "Non posso…",
     "pt": "Não posso…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Do I have to, or can I?",
@@ -537,7 +570,10 @@
     "fr": "Dois-je ou puis-je ?",
     "it": "Devo o posso?",
     "pt": "Tenho de ou posso?"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   }
  ],
  "mision": {

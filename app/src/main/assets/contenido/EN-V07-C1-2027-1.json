@@ -93,11 +93,26 @@
   "*Anyway* is the standard return-from-digression signal in speech. Learners rarely use it; natives use it constantly."
  ],
  "contraste": {
-  "es": "Spanish *en realidad* maps onto *actually* only about half the time — often it's just *well*. *De hecho* is *in fact*. Treating them as one-to-one equivalents is where most misuse starts.",
-  "de": "Eigentlich maps onto actually only part of the time, and German speakers tend to overuse actually. Also is a false friend (it means so), while übrigens corresponds well to by the way.",
-  "it": "In realtà often corresponds to actually, but infatti is a false friend: it means indeed, not in fact. Treating these as one-to-one equivalents is where most misuse starts.",
-  "fr": "En fait corresponds well to actually, but en effet is a false friend: it means indeed, not in effect. Treating these as one-to-one equivalents is where most misuse starts.",
-  "pt": "Na verdade corresponds well to actually, and de facto to indeed or in fact; aliás is a false friend meaning besides or actually. Treating these as one-to-one equivalents is where most misuse starts."
+  "es": {
+   "en": "Spanish *en realidad* maps onto *actually* only about half the time — often it's just *well*. *De hecho* is *in fact*. Treating them as one-to-one equivalents is where most misuse starts.",
+   "es": "El español «en realidad» solo corresponde a «actually» aproximadamente la mitad de las veces; muchas veces es simplemente «well». «De hecho» es «in fact». Tratar estos elementos como equivalentes uno a uno es donde empieza la mayor parte del mal uso."
+  },
+  "de": {
+   "en": "Eigentlich maps onto actually only part of the time, and German speakers tend to overuse actually. Also is a false friend (it means so), while übrigens corresponds well to by the way.",
+   "de": "«Eigentlich» entspricht nur manchmal «actually», und Deutschsprachige verwenden «actually» deshalb oft zu häufig. «Also» ist ein falscher Freund und bedeutet «so», während «übrigens» gut «by the way» entspricht."
+  },
+  "it": {
+   "en": "In realtà often corresponds to actually, but infatti is a false friend: it means indeed, not in fact. Treating these as one-to-one equivalents is where most misuse starts.",
+   "it": "«In realtà» corrisponde spesso a «actually», ma «infatti» è un falso amico: significa «indeed», non «in fact». Trattare queste forme come equivalenti uno a uno è all'origine di molti usi scorretti."
+  },
+  "fr": {
+   "en": "En fait corresponds well to actually, but en effet is a false friend: it means indeed, not in effect. Treating these as one-to-one equivalents is where most misuse starts.",
+   "fr": "«En fait» correspond bien à «actually», mais «en effet» est un faux ami : il signifie «indeed», pas «in effect». Traiter ces formes comme des équivalents un à un est à l'origine de nombreux emplois fautifs."
+  },
+  "pt": {
+   "en": "Na verdade corresponds well to actually, and de facto to indeed or in fact; aliás is a false friend meaning besides or actually. Treating these as one-to-one equivalents is where most misuse starts.",
+   "pt": "«Na verdade» corresponde bem a «actually», e «de fato» a «indeed» ou «in fact»; «aliás» é um falso amigo que significa «besides» ou às vezes «actually». Tratar tudo como equivalência um a um é onde começa grande parte do uso incorreto."
+  }
  },
  "errores": [
   "*In the other hand* — it's *on the other hand*.",
@@ -288,7 +303,10 @@
     "fr": "Prenons-les dans l’ordre.",
     "it": "Prendiamoli uno alla volta.",
     "pt": "Vamos por partes."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "That said",
@@ -299,7 +317,11 @@
     "fr": "Cela dit…",
     "it": "Detto questo…",
     "pt": "Dito isso…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Comparación"
+   ]
   },
   {
    "expresion": "Mind you",
@@ -310,7 +332,11 @@
     "fr": "Cela dit / remarquez…",
     "it": "Attenzione però…",
     "pt": "Isso sim / repare…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Granted",
@@ -321,7 +347,11 @@
     "fr": "Certes, …",
     "it": "D’accordo / ammesso che…",
     "pt": "Concedo / é verdade…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Acordar"
+   ]
   },
   {
    "expresion": "Just as an aside",
@@ -332,7 +362,10 @@
     "fr": "Juste entre parenthèses…",
     "it": "Solo per inciso…",
     "pt": "Só como aparte…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Anyway, the point is",
@@ -343,7 +376,10 @@
     "fr": "Quoi qu’il en soit, le point est…",
     "it": "Comunque, il punto è…",
     "pt": "De qualquer forma, a questão é…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Or to put it another way",
@@ -354,7 +390,11 @@
     "fr": "Ou, autrement dit…",
     "it": "O, per dirla in un altro modo…",
     "pt": "Ou, dito de outra forma…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Reformular"
+   ]
   },
   {
    "expresion": "The upshot is",
@@ -365,7 +405,10 @@
     "fr": "Au final, …",
     "it": "Il risultato è…",
     "pt": "O resultado é…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Then again",
@@ -376,7 +419,10 @@
     "fr": "Cela dit / d’un autre côté…",
     "it": "D’altra parte…",
     "pt": "Por outro lado…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "So on balance",
@@ -387,7 +433,11 @@
     "fr": "Donc, tout bien considéré…",
     "it": "Quindi, tutto sommato…",
     "pt": "No balanço geral…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Opinar"
+   ]
   }
  ],
  "mision": {

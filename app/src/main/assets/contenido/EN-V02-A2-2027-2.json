@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish has no phrasal verbs, so combinations like get up or turn on have to be learned as new blocks.",
-  "de": "German separable verbs are a close model (aufstehen – get up, anmachen – turn on), so German speakers learn everyday phrasal verbs easily.",
-  "it": "Italian verbs with a particle (andare fuori – go out, venire giù – come down) are a good model for everyday phrasal verbs.",
-  "fr": "French has no phrasal verbs, so combinations like get up or turn on have to be learned as new blocks.",
-  "pt": "Portuguese has no phrasal verbs, so combinations like get up or turn on have to be learned as new blocks."
+  "es": {
+   "en": "Spanish has no phrasal verbs, so combinations like get up or turn on have to be learned as new blocks.",
+   "es": "El español no tiene phrasal verbs, por lo que combinaciones como «get up» o «turn on» deben aprenderse como bloques nuevos."
+  },
+  "de": {
+   "en": "German separable verbs are a close model (aufstehen – get up, anmachen – turn on), so German speakers learn everyday phrasal verbs easily.",
+   "de": "Deutsche trennbare Verben sind ein gutes Modell («aufstehen» – «get up», «anmachen» – «turn on»), daher lernen Deutschsprachige alltägliche phrasal verbs meist relativ leicht."
+  },
+  "it": {
+   "en": "Italian verbs with a particle (andare fuori – go out, venire giù – come down) are a good model for everyday phrasal verbs.",
+   "it": "I verbi italiani con particella («andare fuori» – «go out», «venire giù» – «come down») sono un buon modello per i phrasal verbs quotidiani."
+  },
+  "fr": {
+   "en": "French has no phrasal verbs, so combinations like get up or turn on have to be learned as new blocks.",
+   "fr": "Le français n'a pas de phrasal verbs ; des combinaisons comme «get up» ou «turn on» doivent donc être apprises comme de nouveaux blocs."
+  },
+  "pt": {
+   "en": "Portuguese has no phrasal verbs, so combinations like get up or turn on have to be learned as new blocks.",
+   "pt": "O português não tem phrasal verbs, então combinações como «get up» ou «turn on» precisam ser aprendidas como blocos novos."
+  }
  },
  "errores": [
   {
@@ -397,7 +412,10 @@
     "fr": "se lever",
     "it": "alzarsi",
     "pt": "levantar-se"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to sit down",
@@ -415,7 +433,10 @@
     "fr": "s’asseoir",
     "it": "sedersi",
     "pt": "sentar-se"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to come in",
@@ -433,7 +454,10 @@
     "fr": "entrer",
     "it": "entrare",
     "pt": "entrar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to stand up",
@@ -451,7 +475,10 @@
     "fr": "se lever",
     "it": "alzarsi",
     "pt": "levantar-se"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to go out",
@@ -469,7 +496,10 @@
     "fr": "sortir",
     "it": "uscire",
     "pt": "sair"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to wake up",
@@ -487,7 +517,10 @@
     "fr": "se réveiller",
     "it": "svegliarsi",
     "pt": "acordar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to turn on",
@@ -505,7 +538,10 @@
     "fr": "allumer",
     "it": "accendere",
     "pt": "ligar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to turn off",
@@ -523,7 +559,10 @@
     "fr": "éteindre",
     "it": "spegnere",
     "pt": "desligar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to put on",
@@ -541,7 +580,10 @@
     "fr": "mettre",
     "it": "mettersi",
     "pt": "vestir"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to take off",
@@ -559,7 +601,10 @@
     "fr": "enlever",
     "it": "togliersi",
     "pt": "tirar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to get on",
@@ -577,7 +622,10 @@
     "fr": "monter dans",
     "it": "salire su",
     "pt": "entrar em"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "Which one goes with it?",
@@ -595,7 +643,10 @@
     "fr": "Laquelle va avec ce verbe ?",
     "it": "Quale ci va con questo verbo?",
     "pt": "Qual vai com este verbo?"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   }
  ],
  "mision": {

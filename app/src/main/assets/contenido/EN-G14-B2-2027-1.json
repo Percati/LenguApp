@@ -60,11 +60,26 @@
   "Whose works for both people and things to show possession: the company whose logo we redesigned."
  ],
  "contraste": {
-  "es": "Spanish distinguishes restrictive and explanatory clauses less visibly, and que is used for almost everything. Spanish speakers tend to forget the commas around English non-defining clauses, unintentionally changing the meaning of the sentence.",
-  "de": "German puts commas around every relative clause, defining or not. German speakers therefore add commas to defining clauses as well, which in English turns them into non-defining ones and changes the meaning (The students, who passed, received a certificate).",
-  "it": "Italian also uses commas to separate non-defining clauses, so the principle is familiar. The difficulty is the pronoun: Italian che covers both types, which leads to that in non-defining clauses (my brother, that lives in Rome) instead of who or which.",
-  "fr": "French also marks non-defining clauses with commas, so the principle is familiar. The difficulty is the pronoun: French qui is used for people and things alike, so French speakers need to learn when English uses who, which or that.",
-  "pt": "Portuguese grammar explicitly distinguishes restrictive and explanatory relative clauses and marks the latter with commas, so the principle transfers well. The difficulty is the pronoun: que covers both types, which leads to that in non-defining clauses (my sister, that lives in Porto)."
+  "es": {
+   "en": "Spanish distinguishes restrictive and explanatory clauses less visibly, and que is used for almost everything. Spanish speakers tend to forget the commas around English non-defining clauses, unintentionally changing the meaning of the sentence.",
+   "es": "El español distingue de forma menos visible entre relativas restrictivas y explicativas, y usa «que» para casi todo. Los hispanohablantes tienden a olvidar las comas en las non-defining clauses inglesas, cambiando sin querer el significado."
+  },
+  "de": {
+   "en": "German puts commas around every relative clause, defining or not. German speakers therefore add commas to defining clauses as well, which in English turns them into non-defining ones and changes the meaning (The students, who passed, received a certificate).",
+   "de": "Im Deutschen stehen Kommas um jeden Relativsatz, egal ob bestimmend oder nicht. Deutschsprachige setzen deshalb auch bei defining relative clauses Kommas; im Englischen werden sie dadurch zu non-defining clauses und die Bedeutung ändert sich («The students, who passed, received a certificate»)."
+  },
+  "it": {
+   "en": "Italian also uses commas to separate non-defining clauses, so the principle is familiar. The difficulty is the pronoun: Italian che covers both types, which leads to that in non-defining clauses (my brother, that lives in Rome) instead of who or which.",
+   "it": "L'italiano usa anch'esso le virgole per separare le relative non restrittive, quindi il principio è familiare. La difficoltà sta nel pronome: «che» copre entrambi i tipi e può portare a «that» nelle non-defining clauses («my brother, that lives in Rome») invece di «who» o «which»."
+  },
+  "fr": {
+   "en": "French also marks non-defining clauses with commas, so the principle is familiar. The difficulty is the pronoun: French qui is used for people and things alike, so French speakers need to learn when English uses who, which or that.",
+   "fr": "Le français marque aussi les relatives non déterminatives avec des virgules, donc le principe est familier. La difficulté vient du pronom : «qui» s'utilise pour les personnes et les choses, et il faut apprendre quand l'anglais emploie «who», «which» ou «that»."
+  },
+  "pt": {
+   "en": "Portuguese grammar explicitly distinguishes restrictive and explanatory relative clauses and marks the latter with commas, so the principle transfers well. The difficulty is the pronoun: que covers both types, which leads to that in non-defining clauses (my sister, that lives in Porto).",
+   "pt": "A gramática do português distingue explicitamente orações relativas restritivas e explicativas e marca estas últimas com vírgulas, então o princípio se transfere bem. A dificuldade está no pronome: «que» cobre os dois tipos e pode levar a «that» em non-defining clauses («my sister, that lives in Porto»)."
+  }
  },
  "errores": [
   "Missing commas around a non-defining clause, which changes the meaning.",
@@ -232,7 +247,10 @@
     "fr": "…qui a appelé…",
     "it": "…che ha chiamato…",
     "pt": "…que ligou…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "…, who…, …",
@@ -243,7 +261,10 @@
     "fr": "…, qui…, …",
     "it": "…, che…, …",
     "pt": "…, que…, …"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "…that I read",
@@ -254,7 +275,10 @@
     "fr": "…que j’ai lu",
     "it": "…che ho letto",
     "pt": "…que li"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "…, which…, …",
@@ -265,7 +289,10 @@
     "fr": "…, ce qui…, …",
     "it": "…, il che…, …",
     "pt": "…, o que…, …"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "…whose…",
@@ -276,7 +303,10 @@
     "fr": "…dont…",
     "it": "…il cui/la cui…",
     "pt": "…cujo/cuja…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "…where…",
@@ -287,7 +317,10 @@
     "fr": "…où…",
     "it": "…dove…",
     "pt": "…onde…"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   },
   {
    "expresion": "Does it need commas here?",
@@ -298,7 +331,10 @@
     "fr": "Faut-il des virgules ici ?",
     "it": "Qui ci vogliono le virgole?",
     "pt": "Aqui leva vírgulas?"
-   }
+   },
+   "categoriasUso": [
+    "Relativización"
+   ]
   }
  ],
  "mision": {

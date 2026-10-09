@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "¿Qué tal? corresponds to How are you? or How's it going?, and no hay problema to no problem, so many chunks transfer directly.",
-  "de": "Wie geht's? corresponds to How are you?, and kein Problem to no problem. German bitte has no single English equivalent: please, you're welcome or pardon? depending on the situation.",
-  "it": "Come va? corresponds to How's it going?, and nessun problema to no problem. Italian prego has several English equivalents: you're welcome, please, or go ahead.",
-  "fr": "Ça va? corresponds to How's it going?, and de rien to you're welcome, so many chunks transfer directly.",
-  "pt": "Tudo bem? corresponds to How are you? or Everything OK?, and de nada to you're welcome, so many chunks transfer directly."
+  "es": {
+   "en": "¿Qué tal? corresponds to How are you? or How's it going?, and no hay problema to no problem, so many chunks transfer directly.",
+   "es": "«¿Qué tal?» corresponde a «How are you?» o «How's it going?», y «no hay problema» a «no problem», por lo que muchas expresiones fijas se transfieren directamente."
+  },
+  "de": {
+   "en": "Wie geht's? corresponds to How are you?, and kein Problem to no problem. German bitte has no single English equivalent: please, you're welcome or pardon? depending on the situation.",
+   "de": "«Wie geht's?» entspricht «How are you?» und «kein Problem» entspricht «no problem». Für das deutsche «bitte» gibt es keine einzige englische Entsprechung: Je nach Situation heißt es «please», «you're welcome» oder «pardon?»."
+  },
+  "it": {
+   "en": "Come va? corresponds to How's it going?, and nessun problema to no problem. Italian prego has several English equivalents: you're welcome, please, or go ahead.",
+   "it": "«Come va?» corrisponde a «How's it going?», e «nessun problema» a «no problem». «Prego» ha diversi equivalenti inglesi: «you're welcome», «please» o «go ahead»."
+  },
+  "fr": {
+   "en": "Ça va? corresponds to How's it going?, and de rien to you're welcome, so many chunks transfer directly.",
+   "fr": "«Ça va ?» correspond à «How's it going?», et «de rien» à «you're welcome» ; de nombreuses expressions figées se transfèrent donc directement."
+  },
+  "pt": {
+   "en": "Tudo bem? corresponds to How are you? or Everything OK?, and de nada to you're welcome, so many chunks transfer directly.",
+   "pt": "«Tudo bem?» corresponde a «How are you?» ou «Everything OK?», e «de nada» a «you're welcome», então muitas expressões prontas se transferem diretamente."
+  }
  },
  "errores": [
   {
@@ -398,7 +413,10 @@
     "fr": "Ça va ?",
     "it": "Come va?",
     "pt": "Como vai?"
-   }
+   },
+   "categoriasUso": [
+    "Saludar y despedirse"
+   ]
   },
   {
    "expresion": "No problem.",
@@ -416,7 +434,11 @@
     "fr": "Pas de problème.",
     "it": "Nessun problema.",
     "pt": "Sem problema."
-   }
+   },
+   "categoriasUso": [
+    "Agradecer y disculparse",
+    "Pedir"
+   ]
   },
   {
    "expresion": "See you later!",
@@ -434,7 +456,10 @@
     "fr": "À plus tard !",
     "it": "A più tardi!",
     "pt": "Até logo!"
-   }
+   },
+   "categoriasUso": [
+    "Saludar y despedirse"
+   ]
   },
   {
    "expresion": "Take care!",
@@ -452,7 +477,10 @@
     "fr": "Prends soin de toi !",
     "it": "Abbi cura di te!",
     "pt": "Cuida-te!"
-   }
+   },
+   "categoriasUso": [
+    "Saludar y despedirse"
+   ]
   },
   {
    "expresion": "No worries.",
@@ -470,7 +498,11 @@
     "fr": "Pas de souci.",
     "it": "Nessun problema.",
     "pt": "Não faz mal."
-   }
+   },
+   "categoriasUso": [
+    "Agradecer y disculparse",
+    "Acordar"
+   ]
   },
   {
    "expresion": "Have a good one!",
@@ -488,7 +520,10 @@
     "fr": "Bonne journée !",
     "it": "Buona giornata!",
     "pt": "Fica bem!"
-   }
+   },
+   "categoriasUso": [
+    "Saludar y despedirse"
+   ]
   },
   {
    "expresion": "Excuse me!",
@@ -506,7 +541,8 @@
     "fr": "Excusez-moi !",
     "it": "Scusi!",
     "pt": "Desculpe!"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Thanks a lot!",
@@ -524,7 +560,10 @@
     "fr": "Merci beaucoup !",
     "it": "Grazie mille!",
     "pt": "Muito obrigado!"
-   }
+   },
+   "categoriasUso": [
+    "Agradecer y disculparse"
+   ]
   },
   {
    "expresion": "You're welcome.",
@@ -542,7 +581,10 @@
     "fr": "Je vous en prie.",
     "it": "Prego.",
     "pt": "De nada."
-   }
+   },
+   "categoriasUso": [
+    "Agradecer y disculparse"
+   ]
   },
   {
    "expresion": "See you tomorrow!",
@@ -560,7 +602,10 @@
     "fr": "À demain !",
     "it": "A domani!",
     "pt": "Até amanhã!"
-   }
+   },
+   "categoriasUso": [
+    "Saludar y despedirse"
+   ]
   },
   {
    "expresion": "Just a moment, please.",
@@ -578,7 +623,8 @@
     "fr": "Un instant, s'il vous plaît.",
     "it": "Un momento, per favore.",
     "pt": "Um momento, por favor."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "How do you say that?",
@@ -596,7 +642,8 @@
     "fr": "Comment dit-on cela ?",
     "it": "Come si dice?",
     "pt": "Como é que se diz isso?"
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

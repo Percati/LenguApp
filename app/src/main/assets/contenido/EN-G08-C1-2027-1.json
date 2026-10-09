@@ -92,11 +92,26 @@
   "Nominalising a prepositional verb usually changes the preposition too: *depend on* becomes *dependence on*, but *result in* becomes *the result of*. The noun's preposition has to be checked separately."
  ],
  "contraste": {
-  "es": "Spanish resolves several of these distinctions lexically rather than through the preposition: consist of and consist in are both consistir en, so the distinction has no Spanish trigger to carry it and has to be learned as new information rather than mapped. The register axis is also missing, because Spanish must front the preposition in every register — meaning a Spanish speaker at C1 has no native instinct for when fronting sounds formal, and either avoids it entirely or applies it uniformly.",
-  "de": "German has an exact parallel for one key pair: bestehen aus (consist of) and bestehen in (consist in). Prepositional verbs are just as fixed in German, but the prepositions rarely match (depend on – abhängen von). The register axis is new: German always puts the preposition before the relative pronoun (die Kollegin, mit der ich arbeite), so German speakers have no instinct for when stranding (who I work with) sounds natural and fronting sounds formal.",
-  "it": "Italian expresses both consist of and consist in with consistere in, so the distinction has to be learned from scratch. Like Spanish, Italian always places the preposition before the relative pronoun (la collega con cui lavoro), so the register contrast between who I work with and with whom I work has no Italian model.",
-  "fr": "French has a useful parallel: consister en (to be made of) against consister à + infinitive (the essence is doing), which maps well onto consist of and consist in. As in the other Romance languages, the preposition always precedes the relative pronoun (avec qui je travaille), so preposition stranding and its register value are new.",
-  "pt": "Portuguese uses consistir em for both consist of and consist in, and always places the preposition before the relative pronoun. In colloquial Brazilian Portuguese the preposition is often dropped altogether (a pessoa que eu falei), which can lead to the person I talked instead of the person I talked to."
+  "es": {
+   "en": "Spanish resolves several of these distinctions lexically rather than through the preposition: consist of and consist in are both consistir en, so the distinction has no Spanish trigger to carry it and has to be learned as new information rather than mapped. The register axis is also missing, because Spanish must front the preposition in every register — meaning a Spanish speaker at C1 has no native instinct for when fronting sounds formal, and either avoids it entirely or applies it uniformly.",
+   "es": "El español resuelve varias de estas distinciones léxicamente en lugar de mediante la preposición: «consist of» y «consist in» se traducen ambos como «consistir en», por lo que no hay una pista española que permita transferir la diferencia y hay que aprenderla como información nueva. También falta el eje de registro, porque el español debe anteponer la preposición en todos los registros; así, un hablante de C1 no tiene intuición nativa sobre cuándo el fronting suena formal y puede evitarlo por completo o aplicarlo siempre."
+  },
+  "de": {
+   "en": "German has an exact parallel for one key pair: bestehen aus (consist of) and bestehen in (consist in). Prepositional verbs are just as fixed in German, but the prepositions rarely match (depend on – abhängen von). The register axis is new: German always puts the preposition before the relative pronoun (die Kollegin, mit der ich arbeite), so German speakers have no instinct for when stranding (who I work with) sounds natural and fronting sounds formal.",
+   "de": "Das Deutsche hat bei einem wichtigen Paar eine genaue Parallele: «bestehen aus» («consist of») und «bestehen in» («consist in»). Präpositionalverben sind im Deutschen ebenso fest, doch die Präpositionen stimmen selten überein («depend on» – «abhängen von»). Neu ist die Registerfrage: Im Deutschen steht die Präposition immer vor dem Relativpronomen («die Kollegin, mit der ich arbeite»), daher fehlt Deutschsprachigen das Gefühl dafür, wann englisches Stranding («who I work with») natürlich und Fronting formell klingt."
+  },
+  "it": {
+   "en": "Italian expresses both consist of and consist in with consistere in, so the distinction has to be learned from scratch. Like Spanish, Italian always places the preposition before the relative pronoun (la collega con cui lavoro), so the register contrast between who I work with and with whom I work has no Italian model.",
+   "it": "L'italiano rende sia «consist of» sia «consist in» con «consistere in», quindi la distinzione va imparata da zero. Come lo spagnolo, mette sempre la preposizione davanti al relativo («la collega con cui lavoro»), per cui il contrasto di registro fra «who I work with» e «with whom I work» non ha un modello italiano."
+  },
+  "fr": {
+   "en": "French has a useful parallel: consister en (to be made of) against consister à + infinitive (the essence is doing), which maps well onto consist of and consist in. As in the other Romance languages, the preposition always precedes the relative pronoun (avec qui je travaille), so preposition stranding and its register value are new.",
+   "fr": "Le français offre un parallèle utile : «consister en» pour la composition et «consister à» + infinitif pour l'essence d'une activité, ce qui correspond bien à «consist of» et «consist in». Comme dans les autres langues romanes, la préposition précède toujours le pronom relatif («avec qui je travaille»), donc le preposition stranding et sa valeur de registre sont nouveaux."
+  },
+  "pt": {
+   "en": "Portuguese uses consistir em for both consist of and consist in, and always places the preposition before the relative pronoun. In colloquial Brazilian Portuguese the preposition is often dropped altogether (a pessoa que eu falei), which can lead to the person I talked instead of the person I talked to.",
+   "pt": "O português usa «consistir em» tanto para «consist of» quanto para «consist in», e sempre coloca a preposição antes do pronome relativo. No português brasileiro coloquial, a preposição às vezes é omitida («a pessoa que eu falei»), o que pode levar a «the person I talked» em vez de «the person I talked to»."
+  }
  },
  "errores": [
   "*The book consists in three parts* — parts take *of*; *in* is reserved for an essence or a difficulty.",
@@ -268,7 +283,11 @@
     "fr": "La difficulté consiste en…",
     "it": "La difficoltà consiste nel…",
     "pt": "A dificuldade consiste em…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "This paper is concerned with…",
@@ -279,7 +298,10 @@
     "fr": "Cet article porte sur…",
     "it": "Questo lavoro si occupa di…",
     "pt": "Este trabalho ocupa-se de…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "I'd agree with you on…, though not to…",
@@ -290,7 +312,11 @@
     "fr": "Je suis d'accord avec vous sur…, mais pas pour…",
     "it": "Concordo con te su…, ma non accetto…",
     "pt": "Concordo consigo em…, mas não aceito…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Acordar"
+   ]
   },
   {
    "expresion": "…, which resulted from…",
@@ -301,7 +327,11 @@
     "fr": "…, ce qui découlait de…",
     "it": "…, che derivava da…",
     "pt": "…, o que resultou de…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "…, which resulted in…",
@@ -312,7 +342,11 @@
     "fr": "…, ce qui a abouti à…",
     "it": "…, che ha portato a…",
     "pt": "…, o que levou a…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "the premise on which… rests",
@@ -323,7 +357,10 @@
     "fr": "la prémisse sur laquelle repose…",
     "it": "la premessa su cui si basa…",
     "pt": "a premissa em que… se apoia"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "the premise … rests on",
@@ -334,7 +371,10 @@
     "fr": "la prémisse sur laquelle… s'appuie",
     "it": "la premessa su cui… poggia",
     "pt": "a premissa em que… se apoia"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)"
+   ]
   },
   {
    "expresion": "compared with, rather than compared to",
@@ -345,7 +385,11 @@
     "fr": "comparé avec, et non assimilé à",
     "it": "confrontato con, non assimilato a",
     "pt": "comparado com, não equiparado a"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Comparación"
+   ]
   },
   {
    "expresion": "our dependence on…",
@@ -356,7 +400,11 @@
     "fr": "notre dépendance à l'égard de…",
     "it": "la nostra dipendenza da…",
     "pt": "a nossa dependência de…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Nominalización y compresión"
+   ]
   },
   {
    "expresion": "substituted for, not substituted with",
@@ -367,7 +415,11 @@
     "fr": "substitué à, non remplacé par",
     "it": "sostituito a, non sostituito con",
     "pt": "substituído por (o substituído em foco)"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Orden de palabras y énfasis"
+   ]
   }
  ],
  "mision": {

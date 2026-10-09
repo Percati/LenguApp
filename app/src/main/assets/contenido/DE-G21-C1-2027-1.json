@@ -60,11 +60,26 @@
   "Drohen mit einem unbelebten Subjekt (das Projekt droht zu scheitern) ist eine feste, sehr nützliche Konstruktion für negative Prognosen."
  ],
  "contraste": {
-  "es": "Das Spanische hat mit parecer eine enge Entsprechung zu scheinen, aber keine direkten Entsprechungen für pflegen oder das unpersönliche drohen mit Sachsubjekt. Solía + Infinitivo kommt pflegen nahe, wird aber seltener im formellen Register verwendet als das deutsche Äquivalent.",
-  "it": "Das Italienische hat für alle drei Verben enge Entsprechungen: sembrare + Infinitiv (sembra conoscerlo), essere solito + Infinitiv für pflegen und minacciare di mit Sachsubjekt (la situazione minaccia di degenerare) für drohen. Italienischsprachige übertragen die Konstruktion deshalb gut; zu achten ist vor allem auf zu statt der italienischen Präposition di.",
-  "fr": "Sembler + Infinitiv (il semble le connaître) und menacer de mit Sachsubjekt (le mur menace de s'effondrer) entsprechen scheinen und drohen direkt; pflegen findet in avoir coutume de eine Entsprechung im gleichen gehobenen Register. Weil das Französische aber sehr oft il semble que wählt, bauen Französischsprachige leicht er scheint, dass statt es scheint, dass oder er scheint zu.",
-  "pt": "Parecer + Infinitiv (parece conhecê-lo) und ameaçar mit Sachsubjekt (o prédio ameaça ruir) entsprechen scheinen und drohen gut. Für pflegen gibt es costumar, das aber alltäglich und neutral ist; Portugiesischsprachige setzen pflegen deshalb auch in der Alltagssprache ein, wo es gestelzt wirkt (ich pflege Kaffee zu trinken).",
-  "en": "Seem to entspricht scheinen zu genau (he seems to know – er scheint zu wissen), und threaten to mit Sachsubjekt (the wall threatens to collapse) entspricht drohen. Für pflegen gibt es tend to oder be in the habit of, die aber nicht dasselbe gehobene Register haben; used to verleitet ausserdem dazu, pflegen auf die Vergangenheit zu beschränken."
+  "es": {
+   "de": "Das Spanische hat mit parecer eine enge Entsprechung zu scheinen, aber keine direkten Entsprechungen für pflegen oder das unpersönliche drohen mit Sachsubjekt. Solía + Infinitivo kommt pflegen nahe, wird aber seltener im formellen Register verwendet als das deutsche Äquivalent.",
+   "es": "El español tiene en «parecer» un equivalente cercano de «scheinen», pero no dispone de equivalentes directos para «pflegen» ni para el uso impersonal de «drohen» con sujeto inanimado. «Solía + infinitivo» se acerca a «pflegen», aunque se usa menos en el registro formal que su equivalente alemán."
+  },
+  "it": {
+   "de": "Das Italienische hat für alle drei Verben enge Entsprechungen: sembrare + Infinitiv (sembra conoscerlo), essere solito + Infinitiv für pflegen und minacciare di mit Sachsubjekt (la situazione minaccia di degenerare) für drohen. Italienischsprachige übertragen die Konstruktion deshalb gut; zu achten ist vor allem auf zu statt der italienischen Präposition di.",
+   "it": "L'italiano ha equivalenti molto vicini per tutti e tre i verbi: «sembrare + infinito» («sembra conoscerlo»), «essere solito + infinito» per «pflegen» e «minacciare di» con soggetto inanimato («la situazione minaccia di degenerare») per «drohen». La costruzione si trasferisce quindi bene; bisogna soprattutto usare «zu» al posto della preposizione italiana «di»."
+  },
+  "fr": {
+   "de": "Sembler + Infinitiv (il semble le connaître) und menacer de mit Sachsubjekt (le mur menace de s'effondrer) entsprechen scheinen und drohen direkt; pflegen findet in avoir coutume de eine Entsprechung im gleichen gehobenen Register. Weil das Französische aber sehr oft il semble que wählt, bauen Französischsprachige leicht er scheint, dass statt es scheint, dass oder er scheint zu.",
+   "fr": "«Sembler + infinitif» («il semble le connaître») et «menacer de» avec sujet inanimé («le mur menace de s'effondrer») correspondent directement à «scheinen» et «drohen» ; «avoir coutume de» offre même un équivalent de registre soutenu à «pflegen». Comme le français choisit très souvent «il semble que», les francophones construisent facilement «er scheint, dass» au lieu de «es scheint, dass» ou «er scheint zu»."
+  },
+  "pt": {
+   "de": "Parecer + Infinitiv (parece conhecê-lo) und ameaçar mit Sachsubjekt (o prédio ameaça ruir) entsprechen scheinen und drohen gut. Für pflegen gibt es costumar, das aber alltäglich und neutral ist; Portugiesischsprachige setzen pflegen deshalb auch in der Alltagssprache ein, wo es gestelzt wirkt (ich pflege Kaffee zu trinken).",
+   "pt": "«Parecer + infinitivo» («parece conhecê-lo») e «ameaçar» com sujeito inanimado («o prédio ameaça ruir») correspondem bem a «scheinen» e «drohen». Para «pflegen», existe «costumar», mas ele é cotidiano e neutro; por isso, falantes de português às vezes usam «pflegen» também na fala comum, onde soa rebuscado («ich pflege Kaffee zu trinken»)."
+  },
+  "en": {
+   "de": "Seem to entspricht scheinen zu genau (he seems to know – er scheint zu wissen), und threaten to mit Sachsubjekt (the wall threatens to collapse) entspricht drohen. Für pflegen gibt es tend to oder be in the habit of, die aber nicht dasselbe gehobene Register haben; used to verleitet ausserdem dazu, pflegen auf die Vergangenheit zu beschränken.",
+   "en": "«Seem to» corresponds exactly to «scheinen zu» («he seems to know» – «er scheint zu wissen»), and «threaten to» with an inanimate subject («the wall threatens to collapse») corresponds to «drohen». For «pflegen», English has «tend to» or «be in the habit of», but these do not carry the same elevated register; «used to» can also mislead learners into treating «pflegen» as past-only."
+  }
  },
  "errores": [
   "Scheinen mit dass statt mit zu + Infinitiv konstruieren.",
@@ -254,7 +269,11 @@
     "fr": "…semble être…",
     "it": "…sembra essere…",
     "pt": "…parece ser…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "…pflegt(e) … zu…",
@@ -265,7 +284,11 @@
     "fr": "…avait/a l’habitude de…",
     "it": "…era solito/a / tende a…",
     "pt": "…costumava / costuma…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Hábito/rutina"
+   ]
   },
   {
    "expresion": "…droht zu scheitern/zu kollabieren.",
@@ -276,7 +299,11 @@
     "fr": "…risque d’échouer/de s’effondrer.",
     "it": "…rischia di fallire/collassare.",
     "pt": "…corre o risco de falhar/colapsar."
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Es scheint, als ob…",
@@ -287,7 +314,10 @@
     "fr": "On dirait que…",
     "it": "Sembra che…",
     "pt": "Parece que…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "…droht sich zu verschlechtern.",
@@ -298,7 +328,10 @@
     "fr": "…risque de se détériorer.",
     "it": "…rischia di peggiorare.",
     "pt": "…corre o risco de piorar."
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Wie es scheint, …",
@@ -309,7 +342,12 @@
     "fr": "À ce qu’il semble, …",
     "it": "A quanto pare, …",
     "pt": "Ao que parece, …"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Organizar el discurso",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Gesprochen sage ich lieber vermutlich.",
@@ -320,7 +358,10 @@
     "fr": "À l'oral, je préfère un simple adverbe.",
     "it": "A voce preferisco un semplice avverbio.",
     "pt": "A falar prefiro um advérbio simples."
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   }
  ],
  "mision": {

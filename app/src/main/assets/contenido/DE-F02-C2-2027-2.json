@@ -56,11 +56,26 @@
   "Ein Teilzugeständnis (die Argumentation überzeugt mich) vor dem eigentlichen Einwand wirkt fachlicher als ein sofortiger Widerspruch."
  ],
  "contraste": {
-  "es": "Das Spanische hat dieselben Bausteine: no comparto la premisa – ich teile die Ausgangsannahme nicht, de ello no se sigue necesariamente – daraus folgt nicht zwingend. Die Übertragung gelingt fast wörtlich.",
-  "it": "Das Italienische hat für den präzisen Widerspruch dieselben Bausteine: non condivido la premessa – ich teile die Ausgangsannahme nicht, non ne consegue necessariamente – daraus folgt nicht zwingend. Die Übertragung gelingt fast wörtlich.",
-  "fr": "Das Französische hat dieselben Bausteine: je ne partage pas la prémisse – ich teile die Ausgangsannahme nicht, il ne s'ensuit pas nécessairement que – daraus folgt nicht zwingend, dass. Die Übertragung gelingt fast wörtlich.",
-  "pt": "Das Portugiesische hat dieselben Bausteine: não partilho (brasilianisch compartilho) a premissa – ich teile die Ausgangsannahme nicht, não decorre necessariamente – daraus folgt nicht zwingend. Die Übertragung gelingt fast wörtlich.",
-  "en": "Das Englische hat dieselben Bausteine: I don't share the premise – ich teile die Ausgangsannahme nicht, it doesn't necessarily follow – daraus folgt nicht zwingend. Prämisse gibt es auch im Deutschen, ausserhalb der Philosophie klingt Ausgangsannahme aber natürlicher."
+  "es": {
+   "de": "Das Spanische hat dieselben Bausteine: no comparto la premisa – ich teile die Ausgangsannahme nicht, de ello no se sigue necesariamente – daraus folgt nicht zwingend. Die Übertragung gelingt fast wörtlich.",
+   "es": "El español dispone de los mismos recursos: «no comparto la premisa» – ich teile die Ausgangsannahme nicht; «de ello no se sigue necesariamente» – daraus folgt nicht zwingend. La transferencia puede hacerse casi literalmente."
+  },
+  "it": {
+   "de": "Das Italienische hat für den präzisen Widerspruch dieselben Bausteine: non condivido la premessa – ich teile die Ausgangsannahme nicht, non ne consegue necessariamente – daraus folgt nicht zwingend. Die Übertragung gelingt fast wörtlich.",
+   "it": "L'italiano dispone degli stessi elementi per un dissenso preciso: «non condivido la premessa» – «ich teile die Ausgangsannahme nicht», «non ne consegue necessariamente» – «daraus folgt nicht zwingend». Il trasferimento riesce quasi parola per parola."
+  },
+  "fr": {
+   "de": "Das Französische hat dieselben Bausteine: je ne partage pas la prémisse – ich teile die Ausgangsannahme nicht, il ne s'ensuit pas nécessairement que – daraus folgt nicht zwingend, dass. Die Übertragung gelingt fast wörtlich.",
+   "fr": "Le français dispose des mêmes éléments : «je ne partage pas la prémisse» – «ich teile die Ausgangsannahme nicht», «il ne s'ensuit pas nécessairement que» – «daraus folgt nicht zwingend, dass». Le transfert peut se faire presque mot pour mot."
+  },
+  "pt": {
+   "de": "Das Portugiesische hat dieselben Bausteine: não partilho (brasilianisch compartilho) a premissa – ich teile die Ausgangsannahme nicht, não decorre necessariamente – daraus folgt nicht zwingend. Die Übertragung gelingt fast wörtlich.",
+   "pt": "O português dispõe dos mesmos elementos: «não partilho» — no Brasil, «não compartilho» — «a premissa» corresponde a «ich teile die Ausgangsannahme nicht», e «não decorre necessariamente» a «daraus folgt nicht zwingend». A transferência é quase literal."
+  },
+  "en": {
+   "de": "Das Englische hat dieselben Bausteine: I don't share the premise – ich teile die Ausgangsannahme nicht, it doesn't necessarily follow – daraus folgt nicht zwingend. Prämisse gibt es auch im Deutschen, ausserhalb der Philosophie klingt Ausgangsannahme aber natürlicher.",
+   "en": "English has the same building blocks: «I don't share the premise» – «ich teile die Ausgangsannahme nicht», «it doesn't necessarily follow» – «daraus folgt nicht zwingend». «Prämisse» also exists in German, but outside philosophy «Ausgangsannahme» often sounds more natural."
+  }
  },
  "errores": [
   "Pauschal widersprechen, obwohl der eigentliche Einwand nur eine Ebene betrifft.",
@@ -250,7 +265,10 @@
     "fr": "Je remettrais en question la prémisse de départ.",
     "it": "Metterei in discussione la premessa di partenza.",
     "pt": "Eu questionaria a premissa de partida."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Das ergibt sich daraus nicht zwingend.",
@@ -261,7 +279,10 @@
     "fr": "Cela ne découle pas nécessairement de là.",
     "it": "Questo non ne consegue necessariamente.",
     "pt": "Isso não decorre necessariamente daí."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Die Argumentation überzeugt mich, aber…",
@@ -272,7 +293,11 @@
     "fr": "Le raisonnement me convainc, mais…",
     "it": "Il ragionamento mi convince, ma…",
     "pt": "O raciocínio convence-me, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Acordar"
+   ]
   },
   {
    "expresion": "Das ist eine andere Frage als…",
@@ -283,7 +308,10 @@
     "fr": "C’est une question distincte de…",
     "it": "Questa è una questione distinta da…",
     "pt": "Essa é uma questão distinta de…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Wir gehen vielleicht einfach von unterschiedlichen Prämissen aus.",
@@ -294,7 +322,11 @@
     "fr": "Nous partons peut-être simplement de prémisses différentes.",
     "it": "Forse partiamo semplicemente da premesse diverse.",
     "pt": "Talvez partamos simplesmente de premissas diferentes."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Comparación"
+   ]
   },
   {
    "expresion": "Die Schlussfolgerung geht mir zu weit.",
@@ -305,7 +337,12 @@
     "fr": "À mon avis, la conclusion va trop loin.",
     "it": "A mio avviso, la conclusione va troppo oltre.",
     "pt": "Na minha opinião, a conclusão vai longe demais."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Suponer/especular",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Der Befund stimmt, die Deutung nicht.",
@@ -316,7 +353,11 @@
     "fr": "Le constat est juste, l'interprétation non.",
     "it": "Il dato è giusto, l'interpretazione no.",
     "pt": "O dado está certo, a interpretação não."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Dem stimme ich in der Sache zu, nicht im Tonfall.",
@@ -327,7 +368,11 @@
     "fr": "Je suis d'accord sur le fond, pas sur le ton.",
     "it": "Concordo nel merito, non nel tono.",
     "pt": "Concordo no conteúdo, não no tom."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Hier wird Ursache mit Wirkung verwechselt.",
@@ -338,7 +383,11 @@
     "fr": "Ici, on confond la cause et l'effet.",
     "it": "Qui si confonde causa ed effetto.",
     "pt": "Aqui confunde-se causa com efeito."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Describir un proceso o camino"
+   ]
   },
   {
    "expresion": "Das gilt für den Einzelfall, nicht für die Regel.",
@@ -349,7 +398,10 @@
     "fr": "Cela vaut pour le cas particulier, pas comme règle.",
     "it": "Vale per il caso singolo, non come regola.",
     "pt": "Isso vale para o caso concreto, não como regra."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Bevor ich widerspreche: Verstehe ich die Behauptung richtig, dass…?",
@@ -360,7 +412,11 @@
     "fr": "Avant de contester : est-ce que je comprends bien que l'affirmation est…?",
     "it": "Prima di obiettare: capisco bene che si afferma che…?",
     "pt": "Antes de discordar: entendo bem que se afirma que…?"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "In diesem Punkt gebe ich Ihnen recht, und genau deshalb…",
@@ -371,7 +427,11 @@
     "fr": "Sur ce point je vous donne raison, et c'est précisément pourquoi…",
     "it": "Su questo punto le do ragione, e proprio per questo…",
     "pt": "Nesse ponto dou-lhe razão, e é justamente por isso que…"
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {

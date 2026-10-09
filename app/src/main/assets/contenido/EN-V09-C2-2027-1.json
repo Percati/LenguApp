@@ -61,11 +61,26 @@
   "Mixing sympathetic and unsympathetic words for the same person within one passage undoes the effect and reads as simply inconsistent."
  ],
  "contraste": {
-  "es": "Spanish journalism uses connotation just as much, so the principle is familiar. The C2 skill is sustaining one chain of loaded words through a whole passage without an explicit evaluative sentence.",
-  "de": "German journalism uses connotation just as much (Reform versus Einschnitt), so the principle is familiar. The C2 skill is sustaining one chain of loaded English words through a passage.",
-  "it": "Italian journalism uses connotation just as much, so the principle is familiar. The C2 skill is sustaining one chain of loaded English words through a passage without stating the opinion.",
-  "fr": "French journalism uses connotation just as much, so the principle is familiar. The C2 skill is sustaining one chain of loaded English words through a passage without stating the opinion.",
-  "pt": "Portuguese journalism uses connotation just as much, so the principle is familiar. The C2 skill is sustaining one chain of loaded English words through a passage without stating the opinion."
+  "es": {
+   "en": "Spanish journalism uses connotation just as much, so the principle is familiar. The C2 skill is sustaining one chain of loaded words through a whole passage without an explicit evaluative sentence.",
+   "es": "El periodismo español usa la connotación tanto como el inglés, por lo que el principio es familiar. La habilidad C2 consiste en mantener una cadena coherente de palabras cargadas a lo largo de todo un pasaje sin añadir una oración evaluativa explícita."
+  },
+  "de": {
+   "en": "German journalism uses connotation just as much (Reform versus Einschnitt), so the principle is familiar. The C2 skill is sustaining one chain of loaded English words through a passage.",
+   "de": "Deutscher Journalismus arbeitet genauso mit Konnotation («Reform» gegenüber «Einschnitt»), daher ist das Prinzip vertraut. Die C2-Fertigkeit besteht darin, eine zusammenhängende Kette wertender englischer Wörter durch einen ganzen Abschnitt zu ziehen, ohne die Meinung ausdrücklich auszusprechen."
+  },
+  "it": {
+   "en": "Italian journalism uses connotation just as much, so the principle is familiar. The C2 skill is sustaining one chain of loaded English words through a passage without stating the opinion.",
+   "it": "Il giornalismo italiano usa la connotazione tanto quanto quello inglese, quindi il principio è familiare. La competenza C2 consiste nel mantenere per tutto il passaggio una catena coerente di parole connotate in inglese senza dichiarare esplicitamente l'opinione."
+  },
+  "fr": {
+   "en": "French journalism uses connotation just as much, so the principle is familiar. The C2 skill is sustaining one chain of loaded English words through a passage without stating the opinion.",
+   "fr": "Le journalisme français utilise autant la connotation, donc le principe est familier. La compétence C2 consiste à maintenir tout au long d'un passage une chaîne cohérente de mots chargés en anglais sans énoncer explicitement le jugement."
+  },
+  "pt": {
+   "en": "Portuguese journalism uses connotation just as much, so the principle is familiar. The C2 skill is sustaining one chain of loaded English words through a passage without stating the opinion.",
+   "pt": "O jornalismo em português usa conotação tanto quanto o inglês, então o princípio é familiar. A habilidade C2 consiste em sustentar ao longo de um trecho uma cadeia coerente de palavras carregadas em inglês sem declarar explicitamente a opinião."
+  }
  },
  "errores": [
   "Breaking the connotative thread partway through, mixing sympathetic and unsympathetic words for the same subject.",
@@ -255,7 +270,8 @@
     "fr": "a expliqué patiemment",
     "it": "ha spiegato con pazienza",
     "pt": "explicou pacientemente"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "went on and on",
@@ -266,7 +282,8 @@
     "fr": "n’en finissait pas de parler",
     "it": "ha continuato a parlare all’infinito",
     "pt": "não parava de falar"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "stayed composed",
@@ -277,7 +294,8 @@
     "fr": "est resté(e) calme",
     "it": "è rimasto/a composto/a",
     "pt": "manteve a compostura"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "was evasive",
@@ -288,7 +306,8 @@
     "fr": "s’est montré(e) évasif/évasive",
     "it": "è stato/a evasivo/a",
     "pt": "foi evasivo/a"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "adapted",
@@ -299,7 +318,8 @@
     "fr": "s’est adapté(e)",
     "it": "si è adattato/a",
     "pt": "adaptou-se"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "backtracked",
@@ -310,7 +330,8 @@
     "fr": "est revenu(e) sur ses propos",
     "it": "ha fatto marcia indietro",
     "pt": "recuou"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "held their ground",
@@ -321,7 +342,10 @@
     "fr": "a tenu bon",
     "it": "ha tenuto duro",
     "pt": "manteve-se firme"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "refused to budge",
@@ -332,7 +356,10 @@
     "fr": "n'a pas voulu céder d'un pouce",
     "it": "non ha ceduto di un millimetro",
     "pt": "não cedeu um milímetro"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "kept the detail to himself",
@@ -343,7 +370,8 @@
     "fr": "a gardé le détail pour lui",
     "it": "ha tenuto per sé il dettaglio",
     "pt": "guardou o pormenor para si"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "withheld the detail",
@@ -354,7 +382,8 @@
     "fr": "a tu le détail",
     "it": "ha taciuto il dettaglio",
     "pt": "omitiu o pormenor"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "The reader never notices the choosing.",
@@ -365,7 +394,10 @@
     "fr": "Le lecteur ne remarque jamais le choix.",
     "it": "Chi legge non si accorge mai della scelta.",
     "pt": "Quem lê nunca nota a escolha."
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Both are defensible; only one is fair.",
@@ -376,7 +408,8 @@
     "fr": "Les deux se défendent ; une seule est juste.",
     "it": "Entrambe sono difendibili; giusta è una sola.",
     "pt": "Ambas são defensáveis; justa é só uma."
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Deberías corresponds to you should, so giving advice transfers easily.",
-  "de": "Du solltest corresponds to you should, so giving advice transfers easily. Du musst becomes you must, which sounds much stronger than advice.",
-  "it": "Dovresti corresponds to you should, so giving advice transfers easily. Devi becomes you must, which sounds much stronger than advice.",
-  "fr": "Tu devrais corresponds to you should, so giving advice transfers easily. Tu dois becomes you must, which sounds much stronger than advice.",
-  "pt": "Devias or deverias corresponds to you should, so giving advice transfers easily."
+  "es": {
+   "en": "Deberías corresponds to you should, so giving advice transfers easily.",
+   "es": "«Deberías» corresponde a «you should», por lo que dar consejos se transfiere fácilmente."
+  },
+  "de": {
+   "en": "Du solltest corresponds to you should, so giving advice transfers easily. Du musst becomes you must, which sounds much stronger than advice.",
+   "de": "«Du solltest» entspricht «you should», daher lässt sich das Geben von Ratschlägen leicht übertragen. «Du musst» wird zu «you must», was im Englischen deutlich stärker klingt als ein Ratschlag."
+  },
+  "it": {
+   "en": "Dovresti corresponds to you should, so giving advice transfers easily. Devi becomes you must, which sounds much stronger than advice.",
+   "it": "«Dovresti» corrisponde a «you should», quindi dare consigli si trasferisce facilmente. «Devi» diventa «you must», che in inglese suona molto più forte di un semplice consiglio."
+  },
+  "fr": {
+   "en": "Tu devrais corresponds to you should, so giving advice transfers easily. Tu dois becomes you must, which sounds much stronger than advice.",
+   "fr": "«Tu devrais» correspond à «you should», donc les conseils se transfèrent facilement. «Tu dois» devient «you must», beaucoup plus fort qu'un simple conseil en anglais."
+  },
+  "pt": {
+   "en": "Devias or deverias corresponds to you should, so giving advice transfers easily.",
+   "pt": "«Devias» ou, no português do Brasil, «você deveria» corresponde a «you should», então dar conselhos se transfere facilmente."
+  }
  },
  "errores": [
   {
@@ -383,7 +398,10 @@
     "fr": "Tu devrais…",
     "it": "Dovresti…",
     "pt": "Devias…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "If I were you, I'd…",
@@ -401,7 +419,10 @@
     "fr": "À ta place, je…",
     "it": "Al tuo posto, io…",
     "pt": "No teu lugar, eu…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Why don't you…?",
@@ -419,7 +440,10 @@
     "fr": "Pourquoi tu ne… pas ?",
     "it": "Perché non…?",
     "pt": "Porque não…?"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Maybe you should…",
@@ -437,7 +461,11 @@
     "fr": "Peut-être que tu devrais…",
     "it": "Forse dovresti…",
     "pt": "Talvez devesses…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "You could try…",
@@ -455,7 +483,10 @@
     "fr": "Tu pourrais essayer…",
     "it": "Potresti provare…",
     "pt": "Poderias tentar…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "It might help to…",
@@ -473,7 +504,10 @@
     "fr": "Ça pourrait aider de…",
     "it": "Potrebbe aiutare…",
     "pt": "Poderia ajudar…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Have you tried…?",
@@ -491,7 +525,10 @@
     "fr": "As-tu essayé… ?",
     "it": "Hai provato a…?",
     "pt": "Já experimentaste…?"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "I wouldn't do that.",
@@ -509,7 +546,10 @@
     "fr": "Je ne ferais pas cela.",
     "it": "Io non lo farei.",
     "pt": "Eu não faria isso."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "…, because it's quicker.",
@@ -527,7 +567,11 @@
     "fr": "…, parce que c'est plus rapide.",
     "it": "…, perché è più veloce.",
     "pt": "…, porque é mais rápido."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "That worked for me.",
@@ -545,7 +589,11 @@
     "fr": "Chez moi, cela a marché.",
     "it": "A me ha funzionato.",
     "pt": "Comigo resultou."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar",
+    "Ejemplificar"
+   ]
   },
   {
    "expresion": "But you know best.",
@@ -563,7 +611,10 @@
     "fr": "Mais tu sais mieux que moi.",
     "it": "Ma tu sai meglio.",
     "pt": "Mas tu é que sabes."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   },
   {
    "expresion": "Ask someone who's done it.",
@@ -581,7 +632,10 @@
     "fr": "Demande à quelqu'un qui l'a fait.",
     "it": "Chiedi a chi l'ha già fatto.",
     "pt": "Pergunta a alguém que já o fez."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   }
  ],
  "mision": {
@@ -594,8 +648,22 @@
    "pt": "Um amigo precisa lidar com um órgão público pela primeira vez. Dê conselhos a ele."
   },
   "requisitos": [
-   "three pieces of advice with different forms",
-   "one *If I were you, I'd…*",
+   {
+    "en": "three pieces of advice with different forms",
+    "de": "drei Ratschläge mit unterschiedlichen Formen",
+    "es": "tres consejos con formas diferentes",
+    "fr": "trois conseils avec des formes différentes",
+    "it": "tre consigli con forme diverse",
+    "pt": "três conselhos com formas diferentes"
+   },
+   {
+    "en": "one *If I were you, I'd…*",
+    "de": "einer mit *If I were you, I'd…*",
+    "es": "uno con *If I were you, I'd…*",
+    "fr": "un avec *If I were you, I'd…*",
+    "it": "uno con *If I were you, I'd…*",
+    "pt": "um com *If I were you, I'd…*"
+   },
    {
     "en": "use *a queue number*, *to get information* and *proof of payment*",
     "de": "*a queue number*, *to get information* und *proof of payment* verwenden",

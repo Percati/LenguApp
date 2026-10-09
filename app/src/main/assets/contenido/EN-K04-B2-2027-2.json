@@ -56,11 +56,26 @@
   "Combining a hedge with the passive is common in careful, professional English but shouldn't be used on every sentence."
  ],
  "contraste": {
-  "es": "Spanish hedges mainly with the conditional and uses the passive less as a device for distance, preferring the impersonal se. Spanish speakers tend to under-hedge in formal English, because in Spanish one layer is usually enough.",
-  "de": "German academic prose uses the passive and man freely, so removing the actor is familiar. The hedging layer is less graded (wohl, dürfte, vermutlich), and man is often calqued as one, which sounds stiff in most English texts.",
-  "it": "Italian hedges with the condizionale and the si impersonale (si ritiene che, sembrerebbe), which match it is thought that and it would appear. The risk is stacking conditionals where English uses one lexical hedge (may, likely) plus a passive.",
-  "fr": "French hedges with the conditionnel and on (on pourrait penser que, il semblerait que). The calque one could think that sounds stilted; it could be argued that or it would appear that is the natural English equivalent.",
-  "pt": "Portuguese hedges with the se impersonal (considera-se que) and, in European Portuguese, with the future (poderá indicar). The calque will indicate is far too certain; may indicate or appears to indicate is the English equivalent."
+  "es": {
+   "en": "Spanish hedges mainly with the conditional and uses the passive less as a device for distance, preferring the impersonal se. Spanish speakers tend to under-hedge in formal English, because in Spanish one layer is usually enough.",
+   "es": "El español atenúa principalmente con el condicional y usa menos el pasivo como recurso de distanciamiento, prefiriendo el «se» impersonal. Los hispanohablantes tienden a atenuar demasiado poco en inglés formal, porque en español una sola capa suele bastar."
+  },
+  "de": {
+   "en": "German academic prose uses the passive and man freely, so removing the actor is familiar. The hedging layer is less graded (wohl, dürfte, vermutlich), and man is often calqued as one, which sounds stiff in most English texts.",
+   "de": "Deutsche wissenschaftliche Texte verwenden Passiv und «man» sehr frei, daher ist das Weglassen des Handelnden vertraut. Die Abstufung von Abschwächungen ist weniger fein («wohl, dürfte, vermutlich»), und «man» wird oft als «one» übertragen, was in den meisten englischen Texten steif klingt."
+  },
+  "it": {
+   "en": "Italian hedges with the condizionale and the si impersonale (si ritiene che, sembrerebbe), which match it is thought that and it would appear. The risk is stacking conditionals where English uses one lexical hedge (may, likely) plus a passive.",
+   "it": "L'italiano attenua con il condizionale e il «si» impersonale («si ritiene che», «sembrerebbe»), che corrispondono a «it is thought that» e «it would appear». Il rischio è accumulare condizionali dove l'inglese usa un solo hedge lessicale («may», «likely») più un passivo."
+  },
+  "fr": {
+   "en": "French hedges with the conditionnel and on (on pourrait penser que, il semblerait que). The calque one could think that sounds stilted; it could be argued that or it would appear that is the natural English equivalent.",
+   "fr": "Le français atténue avec le conditionnel et «on» («on pourrait penser que», «il semblerait que»). Le calque «one could think that» sonne guindé ; les équivalents naturels sont «it could be argued that» ou «it would appear that»."
+  },
+  "pt": {
+   "en": "Portuguese hedges with the se impersonal (considera-se que) and, in European Portuguese, with the future (poderá indicar). The calque will indicate is far too certain; may indicate or appears to indicate is the English equivalent.",
+   "pt": "O português atenua com o «se» impessoal («considera-se que») e, no português europeu, com o futuro («poderá indicar»). O calque «will indicate» é certo demais; os equivalentes ingleses são «may indicate» ou «appears to indicate»."
+  }
  },
  "errores": [
   "Using the passive without any hedge on a claim that is actually uncertain.",
@@ -228,7 +243,12 @@
     "fr": "Cela n’est peut-être pas…",
     "it": "Questo potrebbe non essere…",
     "pt": "Isto pode não ser…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "…was published…",
@@ -239,7 +259,11 @@
     "fr": "…a été publié…",
     "it": "…è stato pubblicato…",
     "pt": "…foi publicado…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido"
+   ]
   },
   {
    "expresion": "It might not have been…",
@@ -250,7 +274,12 @@
     "it": "Potrebbe non essere stato…",
     "pt": "Pode não ter sido…",
     "de": "Es war vielleicht nicht…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "It's possible that…",
@@ -261,7 +290,12 @@
     "fr": "Il est possible que…",
     "it": "È possibile che…",
     "pt": "É possível que…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "…hasn't been confirmed.",
@@ -272,7 +306,12 @@
     "fr": "…n’a pas été confirmé.",
     "it": "…non è stato confermato.",
     "pt": "…não foi confirmado."
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Acordar"
+   ]
   },
   {
    "expresion": "As far as we know,…",
@@ -283,7 +322,12 @@
     "fr": "Pour autant que nous sachions,…",
     "it": "Per quanto ne sappiamo,…",
     "pt": "Tanto quanto sabemos,…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "It seems that…",
@@ -294,7 +338,12 @@
     "fr": "Il semble que…",
     "it": "Sembra che…",
     "pt": "Parece que…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "It is often said that…",
@@ -305,7 +354,11 @@
     "fr": "On dit souvent que…",
     "it": "Si dice spesso che…",
     "pt": "Diz-se muitas vezes que…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido"
+   ]
   },
   {
    "expresion": "…tend to…",
@@ -316,7 +369,12 @@
     "fr": "…ont tendance à…",
     "it": "…tendono a…",
     "pt": "…tendem a…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "The decision was taken to…",
@@ -327,7 +385,11 @@
     "fr": "La décision a été prise de…",
     "it": "È stata presa la decisione di…",
     "pt": "Foi tomada a decisão de…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido"
+   ]
   },
   {
    "expresion": "I'm not certain, but…",
@@ -338,7 +400,12 @@
     "fr": "Je n'en suis pas certain, mais…",
     "it": "Non sono sicuro, ma…",
     "pt": "Não tenho a certeza, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "That part is certain.",
@@ -349,7 +416,12 @@
     "fr": "Cette partie-là est certaine.",
     "it": "Quella parte è certa.",
     "pt": "Essa parte é certa."
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido",
+    "Discrepar"
+   ]
   }
  ],
  "mision": {

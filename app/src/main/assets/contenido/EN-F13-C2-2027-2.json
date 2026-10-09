@@ -57,11 +57,26 @@
   "I could be wrong about this, but I doubt it is a controlled way to hedge and then immediately withdraw most of the hedge."
  ],
  "contraste": {
-  "es": "Spanish often doubles hedges (creo que quizás…), and the habit transfers into English as stacked hedges (I think maybe it might…). English at this level rewards one precisely chosen hedge; stacking reads as uncertain rather than careful.",
-  "de": "German hedges with particles and adverbs (vielleicht, eventuell, wohl), and stacking them produces perhaps possibly it might…. Eventuell is also a false friend: it means possibly, not eventually.",
-  "it": "Italian combines the condizionale with forse (forse potrebbe…), which transfers as perhaps it might…. English at this level prefers a single, precisely chosen hedge.",
-  "fr": "French often combines peut-être with the conditionnel (peut-être que cela pourrait…), which transfers as perhaps it could…. English at this level prefers a single, precisely chosen hedge.",
-  "pt": "Portuguese combines talvez with the subjunctive or a modal (talvez possa…), which transfers as perhaps it may…. English at this level prefers a single, precisely chosen hedge."
+  "es": {
+   "en": "Spanish often doubles hedges (creo que quizás…), and the habit transfers into English as stacked hedges (I think maybe it might…). English at this level rewards one precisely chosen hedge; stacking reads as uncertain rather than careful.",
+   "es": "El español duplica a menudo los atenuantes («creo que quizás…»), y ese hábito pasa al inglés como acumulación («I think maybe it might…»). A este nivel, el inglés premia un solo hedge elegido con precisión; acumularlos suena inseguro, no cuidadoso."
+  },
+  "de": {
+   "en": "German hedges with particles and adverbs (vielleicht, eventuell, wohl), and stacking them produces perhaps possibly it might…. Eventuell is also a false friend: it means possibly, not eventually.",
+   "de": "Deutsch schwächt mit Partikeln und Adverbien ab («vielleicht, eventuell, wohl»), und beim Stapeln entsteht leicht «perhaps possibly it might…». «Eventuell» ist außerdem ein falscher Freund: Es bedeutet «possibly», nicht «eventually»."
+  },
+  "it": {
+   "en": "Italian combines the condizionale with forse (forse potrebbe…), which transfers as perhaps it might…. English at this level prefers a single, precisely chosen hedge.",
+   "it": "L'italiano combina il condizionale con «forse» («forse potrebbe…»), che si trasferisce come «perhaps it might…». A questo livello l'inglese preferisce un solo hedge scelto con precisione."
+  },
+  "fr": {
+   "en": "French often combines peut-être with the conditionnel (peut-être que cela pourrait…), which transfers as perhaps it could…. English at this level prefers a single, precisely chosen hedge.",
+   "fr": "Le français combine souvent «peut-être» avec le conditionnel («peut-être que cela pourrait…»), ce qui se transfère en «perhaps it could…». À ce niveau, l'anglais préfère un seul hedge choisi avec précision."
+  },
+  "pt": {
+   "en": "Portuguese combines talvez with the subjunctive or a modal (talvez possa…), which transfers as perhaps it may…. English at this level prefers a single, precisely chosen hedge.",
+   "pt": "O português combina «talvez» com o subjuntivo ou com um modal («talvez possa…»), o que se transfere como «perhaps it may…». Nesse nível, o inglês prefere um único hedge escolhido com precisão."
+  }
  },
  "errores": [
   "Stacking multiple hedges on a single claim, which reads as evasive rather than careful.",
@@ -251,7 +266,10 @@
     "fr": "Je soupçonne que…",
     "it": "Sospetto che…",
     "pt": "Suspeito que…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "This is…, and I'm sure enough to say so.",
@@ -262,7 +280,10 @@
     "fr": "C’est…, et j’en suis assez sûr pour le dire.",
     "it": "Questo è…, e ne sono abbastanza sicuro/a da dirlo.",
     "pt": "Isto é…, e tenho confiança suficiente para o afirmar."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I could be wrong about this, but I doubt it.",
@@ -273,7 +294,10 @@
     "fr": "Je pourrais me tromper là-dessus, mais j’en doute.",
     "it": "Potrei sbagliarmi, ma ne dubito.",
     "pt": "Posso estar enganado/a, mas duvido."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I'll go out on a limb and say…",
@@ -284,7 +308,10 @@
     "fr": "Je vais me risquer à dire…",
     "it": "Mi sbilancio e dico…",
     "pt": "Vou arriscar e dizer…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "…, and I don't say that lightly.",
@@ -295,7 +322,10 @@
     "fr": "…, et je ne dis pas cela à la légère.",
     "it": "…, e non lo dico alla leggera.",
     "pt": "…, e não digo isso de ânimo leve."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "There's no need to hedge this: …",
@@ -306,7 +336,8 @@
     "fr": "Inutile de nuancer ici : …",
     "it": "Non c’è bisogno di attenuare: …",
     "pt": "Não é preciso fazer ressalvas aqui: …"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Strip out the hedging and it says…",
@@ -317,7 +348,10 @@
     "fr": "Retirez les précautions et cela dit…",
     "it": "Tolte le attenuazioni, dice…",
     "pt": "Tira as atenuações e diz…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I'm hedging because the data is thin, not because I'm unsure.",
@@ -328,7 +362,10 @@
     "fr": "Je nuance parce que les données sont minces, pas parce que je doute.",
     "it": "Attenuo perché i dati sono scarsi, non perché io dubiti.",
     "pt": "Atenuo porque os dados são escassos, não porque duvide."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Read that as caution, not as doubt.",
@@ -339,7 +376,10 @@
     "fr": "Prenez cela pour de la prudence, non pour un doute.",
     "it": "Lo legga come cautela, non come dubbio.",
     "pt": "Lê isso como cautela, não como dúvida."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Any more caveats and I'd be saying nothing.",
@@ -350,7 +390,8 @@
     "fr": "Une réserve de plus et je ne dirais plus rien.",
     "it": "Un'altra riserva e non direi più nulla.",
     "pt": "Mais uma ressalva e não estaria a dizer nada."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "That's hedged as far as it should be.",
@@ -361,7 +402,8 @@
     "fr": "C'est nuancé autant qu'il le faut.",
     "it": "È attenuato quanto basta.",
     "pt": "Está atenuado até onde deve."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "You're hedging more than the evidence requires.",
@@ -372,7 +414,8 @@
     "fr": "Vous nuancez plus que les données ne l'exigent.",
     "it": "Sta attenuando più di quanto richiedano le prove.",
     "pt": "Estás a atenuar mais do que as provas exigem."
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

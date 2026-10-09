@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische hat keine trennbaren Verben — es gibt keine Präfixe, die im Satz wandern. Diese Struktur ist für Spanischsprachige komplett neu.",
-  "it": "Das Italienische kennt Verben mit einem kleinen Zusatzwort (andare via – weggehen, venire giù – herunterkommen). Das Zusatzwort steht dort direkt nach dem Verb, im Deutschen wandert es ans Satzende: Ich gehe morgen früh weg.",
-  "fr": "Das Französische hat nur feste Präfixe (revenir, défaire), die nie wandern – wie die untrennbaren Verben bekommen oder verstehen. Trennbare Verben wie aufstehen oder anrufen sind dagegen ganz neu.",
-  "pt": "Mit ir embora (weggehen) kennt das Portugiesische ein Verb mit Zusatzwort. Im Deutschen steht dieses Zusatzwort aber am Satzende: Ich gehe morgen früh weg.",
-  "en": "Das Englische hat phrasal verbs (get up, call back), die wie trennbare Verben funktionieren. Neu ist nur, dass das deutsche Präfix ganz ans Satzende geht: Ich rufe dich morgen an."
+  "es": {
+   "de": "Das Spanische hat keine trennbaren Verben — es gibt keine Präfixe, die im Satz wandern. Diese Struktur ist für Spanischsprachige komplett neu.",
+   "es": "El español no tiene verbos separables: no existen prefijos que cambien de posición dentro de la oración. Esta estructura es completamente nueva para los hispanohablantes."
+  },
+  "it": {
+   "de": "Das Italienische kennt Verben mit einem kleinen Zusatzwort (andare via – weggehen, venire giù – herunterkommen). Das Zusatzwort steht dort direkt nach dem Verb, im Deutschen wandert es ans Satzende: Ich gehe morgen früh weg.",
+   "it": "L'italiano conosce verbi con una piccola parola aggiuntiva («andare via» – «weggehen», «venire giù» – «herunterkommen»). In italiano questa parola viene subito dopo il verbo; in tedesco si sposta fino alla fine della frase: «Ich gehe morgen früh weg»."
+  },
+  "fr": {
+   "de": "Das Französische hat nur feste Präfixe (revenir, défaire), die nie wandern – wie die untrennbaren Verben bekommen oder verstehen. Trennbare Verben wie aufstehen oder anrufen sind dagegen ganz neu.",
+   "fr": "Le français ne connaît que des préfixes fixes («revenir», «défaire») qui ne se séparent jamais, comme les verbes allemands inséparables «bekommen» ou «verstehen». Les verbes séparables comme «aufstehen» ou «anrufen» sont donc entièrement nouveaux."
+  },
+  "pt": {
+   "de": "Mit ir embora (weggehen) kennt das Portugiesische ein Verb mit Zusatzwort. Im Deutschen steht dieses Zusatzwort aber am Satzende: Ich gehe morgen früh weg.",
+   "pt": "Com «ir embora» («weggehen»), o português conhece um verbo acompanhado de uma palavra adicional. Em alemão, porém, essa parte vai para o fim da frase: «Ich gehe morgen früh weg»."
+  },
+  "en": {
+   "de": "Das Englische hat phrasal verbs (get up, call back), die wie trennbare Verben funktionieren. Neu ist nur, dass das deutsche Präfix ganz ans Satzende geht: Ich rufe dich morgen an.",
+   "en": "English has phrasal verbs («get up», «call back»), which work similarly to separable German verbs. The new point is simply that the German prefix moves all the way to the end of the sentence: «Ich rufe dich morgen an»."
+  }
  },
  "errores": [
   {
@@ -397,7 +412,10 @@
     "fr": "Je me lève…",
     "it": "Mi alzo…",
     "pt": "Levanto-me…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "Ich rufe…an.",
@@ -415,7 +433,10 @@
     "fr": "J’appelle…",
     "it": "Chiamo…",
     "pt": "Ligo para…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "Ich kaufe…ein.",
@@ -433,7 +454,11 @@
     "fr": "J’achète…",
     "it": "Compro…",
     "pt": "Compro…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Kommst du mit?",
@@ -451,7 +476,11 @@
     "fr": "Tu viens avec nous ?",
     "it": "Vieni con noi?",
     "pt": "Vens connosco?"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Ich mache das Licht an.",
@@ -469,7 +498,10 @@
     "fr": "J’allume la lumière.",
     "it": "Accendo la luce.",
     "pt": "Acendo a luz."
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "Ich räume auf.",
@@ -487,7 +519,10 @@
     "fr": "Je range.",
     "it": "Metto in ordine.",
     "pt": "Arrumo."
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "Trennbar oder nicht?",
@@ -505,7 +540,11 @@
     "fr": "Séparable ou non ?",
     "it": "Separabile o no?",
     "pt": "Separável ou não?"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Pedir"
+   ]
   }
  ],
  "mision": {

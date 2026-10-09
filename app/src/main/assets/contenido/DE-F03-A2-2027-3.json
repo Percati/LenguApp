@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische benutzt in diesen Situationen ähnliche feste Formeln (¿cuánto cuesta?, quisiera una cita), sodass sich die Grundstruktur leicht überträgt.",
-  "it": "Die Formeln passen gut: quanto costa? – was kostet das?, vorrei un appuntamento – ich hätte gern einen Termin. Achtung: appuntamento heisst im Deutschen Termin (beim Arzt) oder Verabredung (mit Freunden).",
-  "fr": "Die Formeln passen gut: combien ça coûte ? – was kostet das?, je voudrais prendre rendez-vous – ich möchte einen Termin vereinbaren. Achtung: rendez-vous heisst Termin oder Verabredung.",
-  "pt": "Die Formeln passen gut: quanto custa? – was kostet das?, marcar uma consulta – einen Termin vereinbaren. Im europäischen Portugiesisch ist queria… höflich, wörtlich übertragen wird es aber zu ich wollte; richtig ist ich möchte oder ich hätte gern.",
-  "en": "Die Formeln passen gut: how much is it? – was kostet das?, I'd like to make an appointment – ich möchte einen Termin vereinbaren. Can I have…? klingt als kann ich… haben? weniger höflich als ich hätte gern…."
+  "es": {
+   "de": "Das Spanische benutzt in diesen Situationen ähnliche feste Formeln (¿cuánto cuesta?, quisiera una cita), sodass sich die Grundstruktur leicht überträgt.",
+   "es": "El español utiliza en estas situaciones fórmulas fijas similares («¿cuánto cuesta?», «quisiera una cita»), por lo que la estructura básica se transfiere con facilidad."
+  },
+  "it": {
+   "de": "Die Formeln passen gut: quanto costa? – was kostet das?, vorrei un appuntamento – ich hätte gern einen Termin. Achtung: appuntamento heisst im Deutschen Termin (beim Arzt) oder Verabredung (mit Freunden).",
+   "it": "Le formule corrispondono bene: «quanto costa?» – «was kostet das?», «vorrei un appuntamento» – «ich hätte gern einen Termin». Attenzione: «appuntamento» in tedesco può essere «Termin» dal medico oppure «Verabredung» con amici."
+  },
+  "fr": {
+   "de": "Die Formeln passen gut: combien ça coûte ? – was kostet das?, je voudrais prendre rendez-vous – ich möchte einen Termin vereinbaren. Achtung: rendez-vous heisst Termin oder Verabredung.",
+   "fr": "Les formules correspondent bien : «combien ça coûte ?» – «was kostet das?», «je voudrais prendre rendez-vous» – «ich möchte einen Termin vereinbaren». Attention : «rendez-vous» peut correspondre en allemand à «Termin» ou à «Verabredung»."
+  },
+  "pt": {
+   "de": "Die Formeln passen gut: quanto custa? – was kostet das?, marcar uma consulta – einen Termin vereinbaren. Im europäischen Portugiesisch ist queria… höflich, wörtlich übertragen wird es aber zu ich wollte; richtig ist ich möchte oder ich hätte gern.",
+   "pt": "As fórmulas combinam bem: «quanto custa?» – «was kostet das?», «marcar uma consulta» – «einen Termin vereinbaren». No português europeu, «queria…» é uma forma educada; se for transferida literalmente, porém, vira «ich wollte». Em alemão, o natural é «ich möchte» ou «ich hätte gern»."
+  },
+  "en": {
+   "de": "Die Formeln passen gut: how much is it? – was kostet das?, I'd like to make an appointment – ich möchte einen Termin vereinbaren. Can I have…? klingt als kann ich… haben? weniger höflich als ich hätte gern….",
+   "en": "The formulas match well: «how much is it?» – «was kostet das?», «I'd like to make an appointment» – «ich möchte einen Termin vereinbaren». «Can I have…?» rendered as «kann ich… haben?» sounds less polite than «ich hätte gern…»."
+  }
  },
  "errores": [
   {
@@ -405,7 +420,10 @@
     "fr": "Combien ça coûte ?",
     "it": "Quanto costa?",
     "pt": "Quanto custa isso?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Ich hätte gern…",
@@ -423,7 +441,10 @@
     "fr": "J’aimerais…",
     "it": "Vorrei…",
     "pt": "Gostaria de…"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Wo finde ich…?",
@@ -441,7 +462,8 @@
     "fr": "Où puis-je trouver… ?",
     "it": "Dove posso trovare…?",
     "pt": "Onde posso encontrar…?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Haben Sie…?",
@@ -459,7 +481,8 @@
     "fr": "Avez-vous… ?",
     "it": "Ha…?",
     "pt": "Tem…?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Ich brauche einen Termin für…",
@@ -477,7 +500,11 @@
     "fr": "J’ai besoin d’un rendez-vous pour…",
     "it": "Ho bisogno di un appuntamento per…",
     "pt": "Preciso de uma consulta/um horário para…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Können Sie mir helfen?",
@@ -495,7 +522,10 @@
     "fr": "Pouvez-vous m’aider ?",
     "it": "Può aiutarmi?",
     "pt": "Pode ajudar-me?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Ich möchte bitte…",
@@ -513,7 +543,10 @@
     "fr": "Je voudrais, s'il vous plaît,…",
     "it": "Vorrei, per favore,…",
     "pt": "Queria, por favor,…"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Nur schauen, danke.",
@@ -531,7 +564,11 @@
     "fr": "Je regarde seulement, merci.",
     "it": "Sto solo guardando, grazie.",
     "pt": "Só a ver, obrigado."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Kann ich mit Karte zahlen?",
@@ -549,7 +586,11 @@
     "fr": "Puis-je payer par carte ?",
     "it": "Posso pagare con la carta?",
     "pt": "Posso pagar com cartão?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Wann haben Sie geöffnet?",
@@ -567,7 +608,8 @@
     "fr": "Quels sont vos horaires ?",
     "it": "Quando siete aperti?",
     "pt": "A que horas abrem?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Ich habe einen Termin um…",
@@ -585,7 +627,11 @@
     "fr": "J'ai rendez-vous à…",
     "it": "Ho un appuntamento alle…",
     "pt": "Tenho uma marcação às…"
-   }
+   },
+   "categoriasUso": [
+    "Discurso referido",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Können Sie das aufschreiben?",
@@ -603,7 +649,10 @@
     "fr": "Pouvez-vous l'écrire ?",
     "it": "Può scrivermelo?",
     "pt": "Pode escrever isso?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   }
  ],
  "mision": {

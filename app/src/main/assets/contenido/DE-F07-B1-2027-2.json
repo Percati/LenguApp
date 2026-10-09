@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische drückt Vermutung mit quizás oder probablemente aus, was strukturell fast identisch zum Deutschen ist. Diese einfache Form der Vermutung überträgt sich deshalb sehr leicht.",
-  "it": "Forse und probabilmente entsprechen vielleicht und wahrscheinlich direkt. Eine italienische Besonderheit ist das Futur für Vermutungen (sarà a casa), das im Deutschen wird wohl entspricht: Er wird wohl zu Hause sein.",
-  "fr": "Peut-être und probablement entsprechen vielleicht und wahrscheinlich. Eine Falle ist sans doute: Es bedeutet wahrscheinlich, nicht ohne Zweifel.",
-  "pt": "Talvez entspricht vielleicht, steht aber mit dem Konjunktiv (talvez venha), während vielleicht einen normalen Indikativ hat (vielleicht kommt er). Im europäischen Portugiesisch ist se calhar eine häufige Alternative.",
-  "en": "Maybe, perhaps und probably entsprechen vielleicht und wahrscheinlich direkt, und I guess passt gut zu ich vermute. Die einfache Vermutung überträgt sich deshalb sehr leicht."
+  "es": {
+   "de": "Das Spanische drückt Vermutung mit quizás oder probablemente aus, was strukturell fast identisch zum Deutschen ist. Diese einfache Form der Vermutung überträgt sich deshalb sehr leicht.",
+   "es": "El español expresa suposiciones con «quizás» o «probablemente», de una forma estructuralmente casi idéntica al alemán. Por eso, esta forma sencilla de expresar hipótesis se transfiere con mucha facilidad."
+  },
+  "it": {
+   "de": "Forse und probabilmente entsprechen vielleicht und wahrscheinlich direkt. Eine italienische Besonderheit ist das Futur für Vermutungen (sarà a casa), das im Deutschen wird wohl entspricht: Er wird wohl zu Hause sein.",
+   "it": "«Forse» e «probabilmente» corrispondono direttamente a «vielleicht» e «wahrscheinlich». Una particolarità italiana è l'uso del futuro per le supposizioni («sarà a casa»), che in tedesco corrisponde bene a «wird wohl»: «Er wird wohl zu Hause sein»."
+  },
+  "fr": {
+   "de": "Peut-être und probablement entsprechen vielleicht und wahrscheinlich. Eine Falle ist sans doute: Es bedeutet wahrscheinlich, nicht ohne Zweifel.",
+   "fr": "«Peut-être» et «probablement» correspondent à «vielleicht» et «wahrscheinlich». Attention à «sans doute» : cela signifie généralement «wahrscheinlich», et non «ohne Zweifel»."
+  },
+  "pt": {
+   "de": "Talvez entspricht vielleicht, steht aber mit dem Konjunktiv (talvez venha), während vielleicht einen normalen Indikativ hat (vielleicht kommt er). Im europäischen Portugiesisch ist se calhar eine häufige Alternative.",
+   "pt": "«Talvez» corresponde a «vielleicht», mas em português costuma vir com o subjuntivo («talvez venha»), enquanto «vielleicht» usa o indicativo normal («vielleicht kommt er»). No português europeu, «se calhar» é uma alternativa frequente."
+  },
+  "en": {
+   "de": "Maybe, perhaps und probably entsprechen vielleicht und wahrscheinlich direkt, und I guess passt gut zu ich vermute. Die einfache Vermutung überträgt sich deshalb sehr leicht.",
+   "en": "«Maybe», «perhaps» and «probably» correspond directly to «vielleicht» and «wahrscheinlich», and «I guess» matches «ich vermute» well. Simple assumptions therefore transfer very easily."
+  }
  },
  "errores": [
   {
@@ -405,7 +420,10 @@
     "fr": "Peut-être que c’est…",
     "it": "Forse è…",
     "pt": "Talvez seja…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Er/Sie ist wahrscheinlich…",
@@ -423,7 +441,10 @@
     "fr": "Il/Elle est probablement…",
     "it": "Probabilmente è…",
     "pt": "Ele/Ela provavelmente é…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Ich glaube, dass…",
@@ -441,7 +462,10 @@
     "fr": "Je crois que…",
     "it": "Credo che…",
     "pt": "Acho que…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Ich denke, das liegt an…",
@@ -459,7 +483,11 @@
     "fr": "Je pense que c’est dû à…",
     "it": "Penso che sia dovuto a…",
     "pt": "Acho que isso se deve a…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Keine Ahnung, aber vielleicht…",
@@ -477,7 +505,10 @@
     "fr": "Aucune idée, mais peut-être…",
     "it": "Non ne ho idea, ma forse…",
     "pt": "Não faço ideia, mas talvez…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Bestimmt ist…",
@@ -495,7 +526,10 @@
     "fr": "C’est certainement…",
     "it": "È sicuramente…",
     "pt": "É certamente…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Es kann sein, dass…",
@@ -513,7 +547,10 @@
     "fr": "Il se peut que…",
     "it": "Può darsi che…",
     "pt": "Pode ser que…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Das glaube ich eher nicht.",
@@ -531,7 +568,10 @@
     "fr": "Je ne crois pas.",
     "it": "Direi di no.",
     "pt": "Acho que não."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Vielleicht hat er/sie einfach…",
@@ -549,7 +589,10 @@
     "fr": "Peut-être qu'il/elle a simplement…",
     "it": "Forse ha semplicemente…",
     "pt": "Talvez simplesmente…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Das weiss ich nicht genau.",
@@ -567,7 +610,10 @@
     "fr": "Je ne le sais pas exactement.",
     "it": "Non lo so esattamente.",
     "pt": "Isso não sei ao certo."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Warten wir mal ab.",
@@ -585,7 +631,11 @@
     "fr": "Attendons de voir.",
     "it": "Aspettiamo e vediamo.",
     "pt": "Esperemos para ver."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Was denkst du, warum?",
@@ -603,7 +653,10 @@
     "fr": "Et toi, pourquoi, à ton avis ?",
     "it": "Secondo te perché?",
     "pt": "E tu, porque achas?"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   }
  ],
  "mision": {

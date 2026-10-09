@@ -60,11 +60,26 @@
   "Diese Kombinationen sind fast ausschliesslich gesprochen und wirken schriftlich oft überladen."
  ],
  "contraste": {
-  "es": "Das Spanische hat keine Entsprechung für gestapelte Modalpartikeln; ähnliche Feintöne werden über Intonation, Gestik oder ganze Zusatzsätze ausgedrückt. Hispanophone C2-Sprecher verstehen diese Kombinationen beim Hören oft intuitiv richtig, produzieren sie aber selten aktiv, weil es keine Eins-zu-eins-Strategie zur Bildung gibt.",
-  "it": "Das Italienische kennt kleine Kombinationen von Abtönungswörtern (ma dai – ach komm, ma su), das Stapeln ist also nicht völlig fremd. Die feste Reihenfolge deutscher Partikeln (ja doch, doch mal, halt eben) muss aber über Hören und Nachahmen gelernt werden.",
-  "fr": "Das Französische kennt einige Kombinationen (mais enfin, ben voyons), die ironisch oder abtönend wirken; ben voyons kommt etwa na klar doch nahe. Die feste Reihenfolge deutscher Partikelgruppen muss aber über Hören und Nachahmen gelernt werden.",
-  "pt": "Das Portugiesische kennt einige feste Verbindungen, etwa pois é, das genau oder ja eben entspricht. Die feste Reihenfolge deutscher Partikelgruppen muss aber über Hören und Nachahmen gelernt werden.",
-  "en": "Das Englische hat keine Modalpartikeln; ähnliche Nuancen entstehen über Intonation, Frageanhängsel und Wörter wie just oder really. Gestapelte Partikeln werden beim Hören meist verstanden, müssen aber über Nachahmen aktiv gelernt werden."
+  "es": {
+   "de": "Das Spanische hat keine Entsprechung für gestapelte Modalpartikeln; ähnliche Feintöne werden über Intonation, Gestik oder ganze Zusatzsätze ausgedrückt. Hispanophone C2-Sprecher verstehen diese Kombinationen beim Hören oft intuitiv richtig, produzieren sie aber selten aktiv, weil es keine Eins-zu-eins-Strategie zur Bildung gibt.",
+   "es": "El español no tiene un equivalente para las partículas modales apiladas; matices semejantes se expresan mediante la entonación, los gestos o frases adicionales completas. Los hispanohablantes de C2 suelen interpretar bien estas combinaciones al escucharlas, pero rara vez las producen de manera activa porque no existe una estrategia uno a uno para formarlas."
+  },
+  "it": {
+   "de": "Das Italienische kennt kleine Kombinationen von Abtönungswörtern (ma dai – ach komm, ma su), das Stapeln ist also nicht völlig fremd. Die feste Reihenfolge deutscher Partikeln (ja doch, doch mal, halt eben) muss aber über Hören und Nachahmen gelernt werden.",
+   "it": "L'italiano conosce piccole combinazioni di parole attenuative («ma dai», «ma su»), quindi l'accumulo non è del tutto estraneo. L'ordine fisso delle particelle tedesche («ja doch», «doch mal», «halt eben») deve però essere imparato attraverso ascolto e imitazione."
+  },
+  "fr": {
+   "de": "Das Französische kennt einige Kombinationen (mais enfin, ben voyons), die ironisch oder abtönend wirken; ben voyons kommt etwa na klar doch nahe. Die feste Reihenfolge deutscher Partikelgruppen muss aber über Hören und Nachahmen gelernt werden.",
+   "fr": "Le français connaît certaines combinaisons («mais enfin», «ben voyons») qui peuvent avoir une valeur ironique ou atténuante ; «ben voyons» peut parfois se rapprocher de «na klar doch». L'ordre figé des groupes de particules allemands doit toutefois s'apprendre par l'écoute et l'imitation."
+  },
+  "pt": {
+   "de": "Das Portugiesische kennt einige feste Verbindungen, etwa pois é, das genau oder ja eben entspricht. Die feste Reihenfolge deutscher Partikelgruppen muss aber über Hören und Nachahmen gelernt werden.",
+   "pt": "O português conhece algumas combinações fixas, como «pois é», que corresponde muito bem a «oder ja eben». A ordem fixa dos grupos de partículas alemãs, porém, precisa ser aprendida por escuta e imitação."
+  },
+  "en": {
+   "de": "Das Englische hat keine Modalpartikeln; ähnliche Nuancen entstehen über Intonation, Frageanhängsel und Wörter wie just oder really. Gestapelte Partikeln werden beim Hören meist verstanden, müssen aber über Nachahmen aktiv gelernt werden.",
+   "en": "English has no modal particles; similar nuances are expressed through intonation, question tags and words such as «just» or «really». Stacked particles are usually understood when heard, but need to be learned actively through imitation."
+  }
  },
  "errores": [
   "Die Partikeln in einer Kombination in falscher Reihenfolge verwenden.",
@@ -254,7 +269,10 @@
     "fr": "Franchement, ce n’est vraiment pas…",
     "it": "Onestamente, questo non è proprio…",
     "pt": "Sinceramente, isso não é mesmo…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Kannst du das doch mal eben…?",
@@ -265,7 +283,10 @@
     "fr": "Tu pourrais vite… ?",
     "it": "Potresti… un attimo?",
     "pt": "Você poderia… rapidinho?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Das ist halt eben so.",
@@ -276,7 +297,11 @@
     "fr": "C’est comme ça.",
     "it": "È così e basta.",
     "pt": "É assim mesmo."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Na ja, wird schon irgendwie.",
@@ -287,7 +312,10 @@
     "fr": "Bon, ça finira bien par s’arranger.",
     "it": "Beh, in qualche modo si sistemerà.",
     "pt": "Bem, de alguma forma isto vai resolver-se."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Das kann ja wohl nicht wahr sein.",
@@ -298,7 +326,10 @@
     "fr": "Ce n’est vraiment pas possible.",
     "it": "Questo non può davvero essere vero.",
     "pt": "Isto não pode mesmo ser verdade."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Jetzt mal ehrlich…",
@@ -309,7 +340,10 @@
     "fr": "Mais sérieusement…",
     "it": "Ma, seriamente…",
     "pt": "Mas, a sério…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Das wird schon irgendwie gehen, denke ich mal.",
@@ -320,7 +354,10 @@
     "fr": "Cela ira bien d'une manière ou d'une autre, j'imagine.",
     "it": "In qualche modo andrà, immagino.",
     "pt": "Há de dar de alguma maneira, suponho."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Das ist ja mal was ganz Neues.",
@@ -331,7 +368,11 @@
     "fr": "En voilà une nouveauté.",
     "it": "Ma che novità.",
     "pt": "Grande novidade."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Nun ja, wenn du meinst.",
@@ -342,7 +383,10 @@
     "fr": "Enfin, si tu le dis.",
     "it": "Be', se lo dici tu.",
     "pt": "Bem, se tu o dizes."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Das hätte man ja auch mal sagen können.",
@@ -353,7 +397,11 @@
     "fr": "On aurait quand même pu le dire.",
     "it": "Si sarebbe anche potuto dirlo.",
     "pt": "Bem que se podia ter dito."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Das ist eben leider so.",
@@ -364,7 +412,11 @@
     "fr": "Malheureusement, c'est ainsi.",
     "it": "Purtroppo è proprio così.",
     "pt": "Infelizmente é mesmo assim."
-   }
+   },
+   "categoriasUso": [
+    "Agradecer y disculparse",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Schriftlich würde ich das weglassen.",
@@ -375,7 +427,10 @@
     "fr": "À l'écrit, je l'omettrais.",
     "it": "Per iscritto lo lascerei fuori.",
     "pt": "Por escrito deixava isso de fora."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   }
  ],
  "mision": {

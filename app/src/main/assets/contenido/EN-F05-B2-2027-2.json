@@ -56,11 +56,26 @@
   "Ending a suggestion with a soft tag (if that works for you) makes it sound less like an instruction."
  ],
  "contraste": {
-  "es": "Podríamos corresponds to we could, so suggestions transfer well. Spanish also suggests with the present (¿vamos al cine?), which translates as Do we go to the cinema? instead of Shall we go…? or Let's go….",
-  "de": "Wir könnten corresponds to we could, wollen wir…? to shall we…?, and lass uns to let's. Suggestions therefore transfer almost word for word.",
-  "it": "Potremmo corresponds to we could, and perché non…? to why don't we…?. Suggestions in the present (andiamo al cinema?) should become Shall we go…? or Let's go… rather than Do we go…?",
-  "fr": "On pourrait corresponds to we could, and et si on allait… ? to what if we went…?, even with the same past tense. On va au cinéma ? should become Shall we go…? rather than Do we go…?",
-  "pt": "Podíamos or poderíamos corresponds to we could, and que tal…? to what about…?. Vamos ao cinema? should become Shall we go…? or Let's go… rather than Do we go…?"
+  "es": {
+   "en": "Podríamos corresponds to we could, so suggestions transfer well. Spanish also suggests with the present (¿vamos al cine?), which translates as Do we go to the cinema? instead of Shall we go…? or Let's go….",
+   "es": "«Podríamos» corresponde a «we could», por lo que las sugerencias se transfieren bien. El español también sugiere con el presente («¿vamos al cine?»), que literalmente se convierte en «Do we go to the cinema?» en lugar de «Shall we go…?» o «Let's go…»."
+  },
+  "de": {
+   "en": "Wir könnten corresponds to we could, wollen wir…? to shall we…?, and lass uns to let's. Suggestions therefore transfer almost word for word.",
+   "de": "«Wir könnten» entspricht «we could», «wollen wir…?» entspricht «shall we…?» und «lass uns» entspricht «let's». Vorschläge lassen sich daher fast Wort für Wort übertragen."
+  },
+  "it": {
+   "en": "Potremmo corresponds to we could, and perché non…? to why don't we…?. Suggestions in the present (andiamo al cinema?) should become Shall we go…? or Let's go… rather than Do we go…?",
+   "it": "«Potremmo» corrisponde a «we could», e «perché non…?» a «why don't we…?». Le proposte al presente («andiamo al cinema?») devono diventare «Shall we go…?» o «Let's go…», non «Do we go…?»."
+  },
+  "fr": {
+   "en": "On pourrait corresponds to we could, and et si on allait… ? to what if we went…?, even with the same past tense. On va au cinéma ? should become Shall we go…? rather than Do we go…?",
+   "fr": "«On pourrait» correspond à «we could», et «et si on allait… ?» à «what if we went…?», avec même un temps passé similaire. «On va au cinéma ?» doit devenir «Shall we go…?» plutôt que «Do we go…?»."
+  },
+  "pt": {
+   "en": "Podíamos or poderíamos corresponds to we could, and que tal…? to what about…?. Vamos ao cinema? should become Shall we go…? or Let's go… rather than Do we go…?",
+   "pt": "«Podíamos» ou «poderíamos» corresponde a «we could», e «que tal…?» a «what about…?». «Vamos ao cinema?» deve virar «Shall we go…?» ou «Let's go…», e não «Do we go…?»."
+  }
  },
  "errores": [
   "Making a suggestion with can instead of could, which sounds more like a statement of fact than a suggestion.",
@@ -250,7 +265,10 @@
     "fr": "Nous pourrions…",
     "it": "Potremmo…",
     "pt": "Poderíamos…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "How about…?",
@@ -261,7 +279,10 @@
     "fr": "Et si… ?",
     "it": "Che ne dici di…?",
     "pt": "Que tal…?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "That sounds good.",
@@ -272,7 +293,10 @@
     "fr": "Ça a l’air bien.",
     "it": "Sembra una buona idea.",
     "pt": "Parece bem."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "…instead?",
@@ -283,7 +307,8 @@
     "fr": "…à la place ?",
     "it": "…invece?",
     "pt": "…em vez disso?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Would you be up for…?",
@@ -294,7 +319,10 @@
     "fr": "Ça te dirait… ?",
     "it": "Ti andrebbe di…?",
     "pt": "Alinhas em…?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Let's do that, then.",
@@ -305,7 +333,11 @@
     "fr": "Alors, faisons comme ça.",
     "it": "Allora facciamo così.",
     "pt": "Então, façamos assim."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Shall we …, or would you rather…?",
@@ -316,7 +348,10 @@
     "fr": "On fait … ou tu préfères… ?",
     "it": "Facciamo … o preferisci…?",
     "pt": "Fazemos … ou preferes…?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "I'd rather we…",
@@ -327,7 +362,10 @@
     "fr": "Je préférerais que…",
     "it": "Preferirei che…",
     "pt": "Eu preferia que…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "Does that work for you?",
@@ -338,7 +376,10 @@
     "fr": "Cela te convient ?",
     "it": "Ti va bene?",
     "pt": "Fica-te bem?"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "That's a bit much for me, to be honest.",
@@ -349,7 +390,12 @@
     "fr": "C'est un peu trop pour moi, honnêtement.",
     "it": "È un po' troppo per me, sinceramente.",
     "pt": "Para mim é um pouco demais, sinceramente."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Sugerir/proponer",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Can we come back to it next week?",
@@ -360,7 +406,10 @@
     "fr": "Pouvons-nous y revenir la semaine prochaine ?",
     "it": "Possiamo riprenderlo la settimana prossima?",
     "pt": "Podemos voltar a isso para a semana?"
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   },
   {
    "expresion": "Right, that's settled then.",
@@ -371,7 +420,10 @@
     "fr": "Bien, c'est réglé alors.",
     "it": "Bene, allora è deciso.",
     "pt": "Certo, então fica assim."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   }
  ],
  "mision": {

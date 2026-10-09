@@ -89,11 +89,26 @@
   "British English uses the present perfect more than American English. Both are correct; be consistent."
  ],
  "contraste": {
-  "es": "Spanish uses he comprado for finished past time in much of Spain, and the simple past almost always in Latin America. Neither maps onto English: the English rule is about whether the time period is finished, not about how recent the event was.",
-  "de": "German uses the Perfekt as the normal spoken past for finished events, which produces I have bought it yesterday. In the other direction, German uses the present with seit for situations that are still going on (Ich wohne seit 2020 hier), which produces I live here since 2020 instead of I have lived here since 2020.",
-  "it": "In northern and standard spoken Italian, the passato prossimo is used for finished events (ieri ho comprato una macchina), which produces I have bought a car yesterday. Italian also uses the present with da for ongoing situations (vivo qui da due anni), which leads to I live here since two years.",
-  "fr": "The passé composé is the normal spoken past in French (hier j'ai acheté une voiture), which produces I have bought a car yesterday. French also uses depuis + present for ongoing situations (j'habite ici depuis deux ans), which leads to I live here since two years instead of I have lived here for two years.",
-  "pt": "Portuguese uses the simple past for finished events (comprei um carro ontem), which matches the English past simple well. The Portuguese pretérito perfeito composto (tenho feito) means something repeated up to now and corresponds more closely to the present perfect continuous (I have been doing); ongoing situations with há (moro aqui há dois anos) lead to I live here for two years."
+  "es": {
+   "en": "Spanish uses he comprado for finished past time in much of Spain, and the simple past almost always in Latin America. Neither maps onto English: the English rule is about whether the time period is finished, not about how recent the event was.",
+   "es": "El español usa «he comprado» para un pasado terminado en gran parte de España, y el pasado simple casi siempre en América Latina. Ninguno se corresponde exactamente con el inglés: la regla inglesa depende de si el período temporal está terminado, no de lo reciente que sea el hecho."
+  },
+  "de": {
+   "en": "German uses the Perfekt as the normal spoken past for finished events, which produces I have bought it yesterday. In the other direction, German uses the present with seit for situations that are still going on (Ich wohne seit 2020 hier), which produces I live here since 2020 instead of I have lived here since 2020.",
+   "de": "Im Deutschen ist das Perfekt die normale gesprochene Vergangenheit für abgeschlossene Ereignisse, wodurch «I have bought it yesterday» entsteht. Umgekehrt steht im Deutschen bei noch andauernden Situationen das Präsens mit «seit» («Ich wohne seit 2020 hier»), was zu «I live here since 2020» statt «I have lived here since 2020» führt."
+  },
+  "it": {
+   "en": "In northern and standard spoken Italian, the passato prossimo is used for finished events (ieri ho comprato una macchina), which produces I have bought a car yesterday. Italian also uses the present with da for ongoing situations (vivo qui da due anni), which leads to I live here since two years.",
+   "it": "Nell'italiano standard parlato, soprattutto al Nord, il passato prossimo si usa per eventi conclusi («ieri ho comprato una macchina»), il che produce «I have bought a car yesterday». L'italiano usa inoltre il presente con «da» per situazioni ancora in corso («vivo qui da due anni»), che porta a «I live here since two years»."
+  },
+  "fr": {
+   "en": "The passé composé is the normal spoken past in French (hier j'ai acheté une voiture), which produces I have bought a car yesterday. French also uses depuis + present for ongoing situations (j'habite ici depuis deux ans), which leads to I live here since two years instead of I have lived here for two years.",
+   "fr": "Le passé composé est le passé parlé normal en français («hier j'ai acheté une voiture»), ce qui produit «I have bought a car yesterday». Le français utilise aussi «depuis» + présent pour une situation toujours en cours («j'habite ici depuis deux ans»), ce qui mène à «I live here since two years» au lieu de «I have lived here for two years»."
+  },
+  "pt": {
+   "en": "Portuguese uses the simple past for finished events (comprei um carro ontem), which matches the English past simple well. The Portuguese pretérito perfeito composto (tenho feito) means something repeated up to now and corresponds more closely to the present perfect continuous (I have been doing); ongoing situations with há (moro aqui há dois anos) lead to I live here for two years.",
+   "pt": "O português usa o passado simples para eventos concluídos («comprei um carro ontem»), o que combina bem com o past simple inglês. O pretérito perfeito composto («tenho feito») indica algo repetido até o presente e se aproxima mais do present perfect continuous («I have been doing»); situações em curso com «há» («moro aqui há dois anos») podem levar a «I live here for two years»."
+  }
  },
  "errores": [
   "*I have bought it last year* — finished time needs the past simple.",
@@ -262,7 +277,10 @@
     "fr": "Je viens de…",
     "it": "Ho appena…",
     "pt": "Acabei de…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "I haven't … yet",
@@ -273,7 +291,10 @@
     "fr": "Je n’ai pas encore…",
     "it": "Non ho ancora…",
     "pt": "Ainda não…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Have you ever…?",
@@ -284,7 +305,10 @@
     "fr": "As-tu déjà… ?",
     "it": "Hai mai…?",
     "pt": "Já alguma vez…?"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "I've been … since / for",
@@ -295,7 +319,10 @@
     "fr": "Je … depuis…",
     "it": "… da / da quanto tempo…",
     "pt": "… há / desde…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "So far this year…",
@@ -306,7 +333,11 @@
     "fr": "Depuis le début de l’année…",
     "it": "Finora quest’anno…",
     "pt": "Até agora este ano…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "When did you…?",
@@ -317,7 +348,10 @@
     "fr": "Quand as-tu… ?",
     "it": "Quando hai…?",
     "pt": "Quando…?"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Last year I…",
@@ -328,7 +362,10 @@
     "fr": "L’année dernière, j’ai…",
     "it": "L’anno scorso ho…",
     "pt": "No ano passado, eu…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "That was when…",
@@ -339,7 +376,11 @@
     "fr": "C’est à ce moment-là que…",
     "it": "È stato allora che…",
     "pt": "Foi nessa altura que…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Sugerir/proponer"
+   ]
   }
  ],
  "mision": {

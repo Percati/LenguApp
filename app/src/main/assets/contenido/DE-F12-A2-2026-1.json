@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Die Grundformeln passen gut: disculpe, … no funciona – Entschuldigung, … funktioniert nicht; por desgracia – leider. Die höfliche Beschwerde überträgt sich also direkt.",
-  "it": "Scusi, … non funziona entspricht Entschuldigung, … funktioniert nicht, und purtroppo entspricht leider. Die höfliche Beschwerde überträgt sich also direkt.",
-  "fr": "Excusez-moi, … ne marche pas entspricht Entschuldigung, … funktioniert nicht, und malheureusement entspricht leider.",
-  "pt": "Desculpe, … não funciona entspricht Entschuldigung, … funktioniert nicht, und infelizmente entspricht leider.",
-  "en": "Excuse me, … doesn't work entspricht Entschuldigung, … funktioniert nicht, und unfortunately entspricht leider. Die höfliche Beschwerde überträgt sich direkt."
+  "es": {
+   "de": "Die Grundformeln passen gut: disculpe, … no funciona – Entschuldigung, … funktioniert nicht; por desgracia – leider. Die höfliche Beschwerde überträgt sich also direkt.",
+   "es": "Las fórmulas básicas encajan bien: «disculpe, … no funciona» – «Entschuldigung, … funktioniert nicht»; «por desgracia» – «leider». Por eso, la queja cortés se transfiere de manera directa."
+  },
+  "it": {
+   "de": "Scusi, … non funziona entspricht Entschuldigung, … funktioniert nicht, und purtroppo entspricht leider. Die höfliche Beschwerde überträgt sich also direkt.",
+   "it": "«Scusi, … non funziona» corrisponde a «Entschuldigung, … funktioniert nicht», e «purtroppo» a «leider». La lamentela cortese si trasferisce quindi direttamente."
+  },
+  "fr": {
+   "de": "Excusez-moi, … ne marche pas entspricht Entschuldigung, … funktioniert nicht, und malheureusement entspricht leider.",
+   "fr": "«Excusez-moi, … ne marche pas» correspond à «Entschuldigung, … funktioniert nicht», et «malheureusement» à «leider»."
+  },
+  "pt": {
+   "de": "Desculpe, … não funciona entspricht Entschuldigung, … funktioniert nicht, und infelizmente entspricht leider.",
+   "pt": "«Desculpe, … não funciona» corresponde a «Entschuldigung, … funktioniert nicht», e «infelizmente» a «leider»."
+  },
+  "en": {
+   "de": "Excuse me, … doesn't work entspricht Entschuldigung, … funktioniert nicht, und unfortunately entspricht leider. Die höfliche Beschwerde überträgt sich direkt.",
+   "en": "«Excuse me, … doesn't work» corresponds to «Entschuldigung, … funktioniert nicht», and «unfortunately» to «leider». The polite complaint transfers directly."
+  }
  },
  "errores": [
   {
@@ -375,7 +390,10 @@
     "fr": "Ça ne marche pas.",
     "it": "Non funziona.",
     "pt": "Isso não funciona."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Können Sie das reparieren?",
@@ -393,7 +411,10 @@
     "fr": "Pouvez-vous le réparer ?",
     "it": "Può ripararlo?",
     "pt": "Pode repará-lo?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "Das ist kaputt.",
@@ -411,7 +432,10 @@
     "fr": "C’est cassé.",
     "it": "È rotto.",
     "pt": "Está estragado."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Entschuldigung, …",
@@ -429,7 +453,10 @@
     "fr": "Excusez-moi, …",
     "it": "Mi scusi, …",
     "pt": "Desculpe, …"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Das ist leider…",
@@ -447,7 +474,11 @@
     "fr": "Malheureusement, c’est…",
     "it": "Purtroppo è…",
     "pt": "Infelizmente, isso é…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Danke für Ihre Hilfe.",
@@ -465,7 +496,10 @@
     "fr": "Merci pour votre aide.",
     "it": "Grazie per il suo aiuto.",
     "pt": "Obrigado/a pela sua ajuda."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Ich habe ein Problem.",
@@ -483,7 +517,10 @@
     "fr": "J'ai un problème.",
     "it": "Ho un problema.",
     "pt": "Tenho um problema."
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Seit gestern.",
@@ -501,7 +538,10 @@
     "fr": "Depuis hier.",
     "it": "Da ieri.",
     "pt": "Desde ontem."
-   }
+   },
+   "categoriasUso": [
+    "Duración"
+   ]
   },
   {
    "expresion": "Was kann ich tun?",
@@ -519,7 +559,10 @@
     "fr": "Que puis-je faire ?",
     "it": "Che cosa posso fare?",
     "pt": "O que posso fazer?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Wann ist es fertig?",
@@ -537,7 +580,10 @@
     "fr": "Quand est-ce prêt ?",
     "it": "Quando è pronto?",
     "pt": "Quando fica pronto?"
-   }
+   },
+   "categoriasUso": [
+    "Plantear un problema/quejarse"
+   ]
   },
   {
    "expresion": "Das ist schon wieder passiert.",
@@ -555,7 +601,11 @@
     "fr": "C'est arrivé de nouveau.",
     "it": "È successo di nuovo.",
     "pt": "Aconteceu outra vez."
-   }
+   },
+   "categoriasUso": [
+    "Pedir",
+    "Reformular"
+   ]
   },
   {
    "expresion": "Gut, ich warte.",
@@ -573,7 +623,10 @@
     "fr": "D'accord, j'attends.",
     "it": "Bene, aspetto.",
     "pt": "Está bem, espero."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {
@@ -586,8 +639,22 @@
    "pt": "Você tem um problema com um vizinho. Escreva uma mensagem curta para ele."
   },
   "requisitos": [
-   "das Problem in einem Satz",
-   "eine höfliche Bitte",
+   {
+    "de": "das Problem in einem Satz",
+    "en": "state the problem in one sentence",
+    "es": "expresar el problema en una oración",
+    "fr": "exposer le problème en une phrase",
+    "it": "esporre il problema in una frase",
+    "pt": "apresentar o problema em uma frase"
+   },
+   {
+    "de": "eine höfliche Bitte",
+    "en": "one polite request",
+    "es": "un pedido cortés",
+    "fr": "une demande polie",
+    "it": "una richiesta cortese",
+    "pt": "um pedido educado"
+   },
    {
     "de": "*der Nachbar*, *Bescheid geben* und *sich vertragen* verwenden",
     "en": "use *der Nachbar*, *Bescheid geben* and *sich vertragen*",

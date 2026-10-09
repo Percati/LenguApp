@@ -60,11 +60,26 @@
   "Where they really diverge is in… isolates the single dimension that matters most, instead of listing every difference."
  ],
  "contraste": {
-  "es": "Spanish has the pieces for a graded comparison (en conjunto – on balance; por poco – only just), so the structure transfers. The compact English form on balance…, but only just is worth learning as one unit.",
-  "de": "German has close equivalents: unterm Strich (on balance) and knapp (only just: knapp besser – only just better). Graded comparison therefore transfers directly.",
-  "it": "Italian has close equivalents: tutto sommato (on balance) and di poco (only just). Graded comparison therefore transfers directly.",
-  "fr": "French has close equivalents: tout bien considéré (on balance) and de justesse (only just). Graded comparison therefore transfers directly.",
-  "pt": "Portuguese has close equivalents: feitas as contas (on balance) and por pouco (only just). Graded comparison therefore transfers directly."
+  "es": {
+   "en": "Spanish has the pieces for a graded comparison (en conjunto – on balance; por poco – only just), so the structure transfers. The compact English form on balance…, but only just is worth learning as one unit.",
+   "es": "El español tiene los elementos para una comparación graduada («en conjunto» – «on balance»; «por poco» – «only just»), por lo que la estructura se transfiere. La forma inglesa compacta «on balance…, but only just» conviene aprenderla como una unidad."
+  },
+  "de": {
+   "en": "German has close equivalents: unterm Strich (on balance) and knapp (only just: knapp besser – only just better). Graded comparison therefore transfers directly.",
+   "de": "Das Deutsche hat nahe Entsprechungen: «unterm Strich» für «on balance» und «knapp» für «only just» («knapp besser» – «only just better»). Abgestufte Vergleiche lassen sich daher direkt übertragen."
+  },
+  "it": {
+   "en": "Italian has close equivalents: tutto sommato (on balance) and di poco (only just). Graded comparison therefore transfers directly.",
+   "it": "L'italiano ha equivalenti vicini: «tutto sommato» («on balance») e «di poco» («only just»). La comparazione graduata si trasferisce quindi direttamente."
+  },
+  "fr": {
+   "en": "French has close equivalents: tout bien considéré (on balance) and de justesse (only just). Graded comparison therefore transfers directly.",
+   "fr": "Le français a des équivalents proches : «tout bien considéré» («on balance») et «de justesse» («only just»). La comparaison graduée se transfère donc directement."
+  },
+  "pt": {
+   "en": "Portuguese has close equivalents: feitas as contas (on balance) and por pouco (only just). Graded comparison therefore transfers directly.",
+   "pt": "O português tem equivalentes próximos: «feitas as contas» («on balance») e «por pouco» («only just»). A comparação graduada se transfere diretamente."
+  }
  },
  "errores": [
   "Comparing without naming any shared ground first, which makes the contrast feel one-sided.",
@@ -232,7 +247,10 @@
     "fr": "Ils se ressemblent sur X, mais pas sur Y.",
     "it": "Sono simili in X, ma non in Y.",
     "pt": "São semelhantes em X, mas não em Y."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "On balance, I'd lean towards…",
@@ -243,7 +261,11 @@
     "fr": "Tout bien considéré, je pencherais plutôt pour…",
     "it": "Tutto sommato, propenderei per…",
     "pt": "No geral, inclinar-me-ia para…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Opinar"
+   ]
   },
   {
    "expresion": "…, but only just.",
@@ -254,7 +276,11 @@
     "fr": "…, mais de justesse.",
     "it": "…, ma per un soffio.",
     "pt": "…, mas por muito pouco."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Opinar"
+   ]
   },
   {
    "expresion": "Both share the same…",
@@ -265,7 +291,10 @@
     "fr": "Les deux partagent le même…",
     "it": "Entrambi condividono lo stesso…",
     "pt": "Ambos partilham o mesmo…"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Where they really diverge is in…",
@@ -276,7 +305,10 @@
     "fr": "Là où ils divergent vraiment, c’est…",
     "it": "Dove divergono davvero è…",
     "pt": "Onde realmente divergem é em…"
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "It's less a question of X and more one of Y.",
@@ -287,7 +319,10 @@
     "fr": "C’est moins une question de X que de Y.",
     "it": "Non è tanto una questione di X quanto di Y.",
     "pt": "Não é tanto uma questão de X, mas sim de Y."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "They're closer than the labels suggest.",
@@ -298,7 +333,11 @@
     "fr": "Ils sont plus proches que les étiquettes ne le laissent croire.",
     "it": "Sono più vicini di quanto suggeriscano le etichette.",
     "pt": "São mais próximos do que os rótulos sugerem."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Comparación"
+   ]
   },
   {
    "expresion": "The comparison only holds up to a point.",
@@ -309,7 +348,10 @@
     "fr": "La comparaison ne tient que jusqu'à un certain point.",
     "it": "Il paragone regge solo fino a un certo punto.",
     "pt": "A comparação só se sustenta até certo ponto."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "It depends what you're optimising for.",
@@ -320,7 +362,10 @@
     "fr": "Cela dépend de ce que l'on cherche à optimiser.",
     "it": "Dipende da che cosa si vuole ottimizzare.",
     "pt": "Depende do que se quer otimizar."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "For most purposes the difference doesn't matter.",
@@ -331,7 +376,10 @@
     "fr": "Pour la plupart des usages, la différence n'a pas d'importance.",
     "it": "Per la maggior parte degli scopi la differenza non conta.",
     "pt": "Para a maioria dos fins a diferença não importa."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "What one gains in X, it loses in Y.",
@@ -342,7 +390,10 @@
     "fr": "Ce que l'on gagne en X, on le perd en Y.",
     "it": "Ciò che si guadagna in X lo si perde in Y.",
     "pt": "O que se ganha em X perde-se em Y."
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "I wouldn't put them in the same category at all.",
@@ -353,7 +404,10 @@
     "fr": "Je ne les mettrais pas du tout dans la même catégorie.",
     "it": "Non li metterei affatto nella stessa categoria.",
     "pt": "Não os colocaria de todo na mesma categoria."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   }
  ],
  "mision": {

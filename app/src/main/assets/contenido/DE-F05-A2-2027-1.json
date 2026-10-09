@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische hat mit ¿vamos a…? eine direkte Entsprechung zu wollen wir…?",
-  "it": "Andiamo al cinema? entspricht gehen wir ins Kino? oder wollen wir ins Kino gehen?. Die Struktur ist also bekannt; neu ist wollen wir als feste Formel für Vorschläge.",
-  "fr": "On va au cinéma ? entspricht gehen wir ins Kino?. Neu ist wollen wir… als feste Formel für Vorschläge.",
-  "pt": "Vamos ao cinema? entspricht gehen wir ins Kino?. Neu ist wollen wir… als feste Formel für Vorschläge.",
-  "en": "Shall we…? entspricht genau wollen wir…?, und let's entspricht lass uns. Vorschläge übertragen sich deshalb direkt."
+  "es": {
+   "de": "Das Spanische hat mit ¿vamos a…? eine direkte Entsprechung zu wollen wir…?",
+   "es": "El español tiene en «¿vamos a…?» un equivalente directo de «wollen wir…?»."
+  },
+  "it": {
+   "de": "Andiamo al cinema? entspricht gehen wir ins Kino? oder wollen wir ins Kino gehen?. Die Struktur ist also bekannt; neu ist wollen wir als feste Formel für Vorschläge.",
+   "it": "«Andiamo al cinema?» corrisponde a «gehen wir ins Kino?» oppure «wollen wir ins Kino gehen?». La struttura è quindi familiare; la novità è «wollen wir…» come formula fissa per fare proposte."
+  },
+  "fr": {
+   "de": "On va au cinéma ? entspricht gehen wir ins Kino?. Neu ist wollen wir… als feste Formel für Vorschläge.",
+   "fr": "«On va au cinéma ?» correspond à «gehen wir ins Kino?». La nouveauté est «wollen wir…?» comme formule fixe pour faire une proposition."
+  },
+  "pt": {
+   "de": "Vamos ao cinema? entspricht gehen wir ins Kino?. Neu ist wollen wir… als feste Formel für Vorschläge.",
+   "pt": "«Vamos ao cinema?» corresponde a «gehen wir ins Kino?». A novidade é «wollen wir…?» como fórmula fixa para fazer sugestões."
+  },
+  "en": {
+   "de": "Shall we…? entspricht genau wollen wir…?, und let's entspricht lass uns. Vorschläge übertragen sich deshalb direkt.",
+   "en": "«Shall we…?» corresponds exactly to «wollen wir…?», and «let's» to «lass uns». Suggestions therefore transfer directly."
+  }
  },
  "errores": [
   {
@@ -397,7 +412,10 @@
     "fr": "On… ?",
     "it": "Facciamo…?",
     "pt": "Vamos…?"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Ja, gerne!",
@@ -415,7 +433,10 @@
     "fr": "Oui, volontiers !",
     "it": "Sì, volentieri!",
     "pt": "Sim, com prazer!"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Nein, lieber nicht.",
@@ -433,7 +454,10 @@
     "fr": "Non, plutôt pas.",
     "it": "No, meglio di no.",
     "pt": "Não, é melhor não."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Gute Idee!",
@@ -451,7 +475,10 @@
     "fr": "Bonne idée !",
     "it": "Buona idea!",
     "pt": "Boa ideia!"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Wir könnten…",
@@ -469,7 +496,10 @@
     "fr": "Nous pourrions…",
     "it": "Potremmo…",
     "pt": "Poderíamos…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Das klingt gut.",
@@ -487,7 +517,10 @@
     "fr": "Ça a l’air bien.",
     "it": "Sembra una buona idea.",
     "pt": "Parece bem."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Hast du Zeit?",
@@ -505,7 +538,11 @@
     "fr": "Tu as le temps ?",
     "it": "Hai tempo?",
     "pt": "Tens tempo?"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Wann passt es dir?",
@@ -523,7 +560,12 @@
     "fr": "Quand cela te convient-il ?",
     "it": "Quando ti va bene?",
     "pt": "Quando te dá jeito?"
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Sugerir/proponer",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Vielleicht später.",
@@ -541,7 +583,10 @@
     "fr": "Peut-être plus tard.",
     "it": "Forse più tardi.",
     "pt": "Talvez mais tarde."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Und wenn wir…?",
@@ -559,7 +604,11 @@
     "fr": "Et si nous… ?",
     "it": "E se…?",
     "pt": "E se…?"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Abgemacht!",
@@ -577,7 +626,10 @@
     "fr": "C'est entendu !",
     "it": "Affare fatto!",
     "pt": "Combinado!"
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Ich sage dir Bescheid.",
@@ -595,7 +647,10 @@
     "fr": "Je te dirai.",
     "it": "Ti faccio sapere.",
     "pt": "Depois digo-te."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   }
  ],
  "mision": {

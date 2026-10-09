@@ -60,11 +60,26 @@
   "In einer E-Mail an eine Behörde ist Umgangssprache fast immer ein Fehler; im Gespräch mit Freunden ist reine Standardsprache oft unnötig steif."
  ],
  "contraste": {
-  "es": "Das Spanische hat ebenfalls einen deutlichen Unterschied zwischen umgangssprachlichem und formellem Register, aber die Marker unterscheiden sich stark. Spanischsprachige übertragen oft ihre eigenen umgangssprachlichen Muster wörtlich und merken nicht, dass ein deutscher umgangssprachlicher Marker in einem anderen Kontext auffällt.",
-  "it": "Italienischsprachige kennen durch das Nebeneinander von Italienisch und Dialekt ein feines Gespür für Registerwechsel. Die deutschen umgangssprachlichen Marker (haste, gibts, ne) sind aber andere und müssen gezielt gelernt werden, damit sie im Schreiben nicht aus Versehen in formelle Texte geraten.",
-  "fr": "Französischsprachige kennen deutliche Marker gesprochener Sprache aus dem Französischen (je sais pas, on statt nous). Die deutschen Marker (haste, gibts, ne) sind andere, funktionieren aber ähnlich und müssen im Schreiben bewusst dem informellen Kontext vorbehalten bleiben.",
-  "pt": "Das brasilianische Portugiesisch hat deutliche Marker gesprochener Sprache (a gente statt nós, tá, pra), Portugiesischsprachige kennen das Prinzip also gut. Die deutschen Marker (haste, gibts, ne) sind andere und gehören im Schreiben nur in informelle Kontexte.",
-  "en": "Englischsprachige kennen Reduktionen der gesprochenen Sprache (gonna, wanna) und deren Grenzen im Schreiben, das Prinzip ist also vertraut. Die deutschen Marker (haste, gibts, ne) funktionieren ähnlich und gehören im Schreiben nur in informelle Kontexte."
+  "es": {
+   "de": "Das Spanische hat ebenfalls einen deutlichen Unterschied zwischen umgangssprachlichem und formellem Register, aber die Marker unterscheiden sich stark. Spanischsprachige übertragen oft ihre eigenen umgangssprachlichen Muster wörtlich und merken nicht, dass ein deutscher umgangssprachlicher Marker in einem anderen Kontext auffällt.",
+   "es": "El español también distingue claramente entre registro coloquial y formal, pero los marcadores concretos son muy distintos. Los hispanohablantes suelen trasladar literalmente sus propios patrones coloquiales sin advertir que un marcador coloquial alemán puede llamar la atención en otro contexto."
+  },
+  "it": {
+   "de": "Italienischsprachige kennen durch das Nebeneinander von Italienisch und Dialekt ein feines Gespür für Registerwechsel. Die deutschen umgangssprachlichen Marker (haste, gibts, ne) sind aber andere und müssen gezielt gelernt werden, damit sie im Schreiben nicht aus Versehen in formelle Texte geraten.",
+   "it": "Gli italofoni, grazie alla convivenza tra italiano e dialetti, hanno spesso una sensibilità fine per i cambi di registro. I marcatori colloquiali tedeschi («haste», «gibts», «ne») sono però diversi e devono essere imparati in modo mirato, per evitare che entrino per errore in testi formali."
+  },
+  "fr": {
+   "de": "Französischsprachige kennen deutliche Marker gesprochener Sprache aus dem Französischen (je sais pas, on statt nous). Die deutschen Marker (haste, gibts, ne) sind andere, funktionieren aber ähnlich und müssen im Schreiben bewusst dem informellen Kontext vorbehalten bleiben.",
+   "fr": "Les francophones connaissent des marqueurs nets de langue parlée en français («je sais pas», «on» au lieu de «nous»). Les marqueurs allemands («haste», «gibts», «ne») sont différents mais fonctionnent de manière comparable et doivent être réservés consciemment aux contextes informels à l'écrit."
+  },
+  "pt": {
+   "de": "Das brasilianische Portugiesisch hat deutliche Marker gesprochener Sprache (a gente statt nós, tá, pra), Portugiesischsprachige kennen das Prinzip also gut. Die deutschen Marker (haste, gibts, ne) sind andere und gehören im Schreiben nur in informelle Kontexte.",
+   "pt": "O português brasileiro tem marcadores claros de fala coloquial («a gente» em vez de «nós», «tá», «pra»), por isso o princípio é bem conhecido. Os marcadores alemães («haste», «gibts», «ne») são outros e, na escrita, pertencem apenas a contextos informais."
+  },
+  "en": {
+   "de": "Englischsprachige kennen Reduktionen der gesprochenen Sprache (gonna, wanna) und deren Grenzen im Schreiben, das Prinzip ist also vertraut. Die deutschen Marker (haste, gibts, ne) funktionieren ähnlich und gehören im Schreiben nur in informelle Kontexte.",
+   "en": "English speakers know reductions in spoken language («gonna», «wanna») and their limits in writing, so the principle is familiar. German forms such as «haste», «gibts» and «ne» work similarly and belong in writing only in informal contexts."
+  }
  },
  "errores": [
   "Umgangssprachliche Marker in eine formelle E-Mail übernehmen.",
@@ -254,7 +269,8 @@
     "fr": "Je n’y comprends rien.",
     "it": "Non ci capisco niente.",
     "pt": "Não percebo nada disso."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Das nervt total.",
@@ -265,7 +281,10 @@
     "fr": "C’est vraiment énervant.",
     "it": "È davvero fastidioso.",
     "pt": "Isso irrita imenso."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Keine Ahnung, ehrlich gesagt.",
@@ -276,7 +295,8 @@
     "fr": "Aucune idée, franchement.",
     "it": "Nessuna idea, sinceramente.",
     "pt": "Não faço ideia, sinceramente."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Das ist mir ehrlich gesagt zu kompliziert.",
@@ -287,7 +307,8 @@
     "fr": "Pour être honnête, c’est trop compliqué pour moi.",
     "it": "A dire il vero, per me è troppo complicato.",
     "pt": "Sinceramente, isso é demasiado complicado para mim."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Das verstehe ich nicht ganz.",
@@ -298,7 +319,8 @@
     "fr": "Je ne comprends pas tout à fait.",
     "it": "Non lo capisco del tutto.",
     "pt": "Não percebo bem isso."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Ich bin mir da nicht sicher.",
@@ -309,7 +331,8 @@
     "fr": "Je n’en suis pas sûr(e).",
     "it": "Non ne sono sicuro/a.",
     "pt": "Não tenho a certeza disso."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Das ist echt ätzend.",
@@ -320,7 +343,10 @@
     "fr": "C'est vraiment pénible.",
     "it": "È davvero una pizza.",
     "pt": "Isso é mesmo uma seca."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Das halte ich für wenig überzeugend.",
@@ -331,7 +357,10 @@
     "fr": "Je trouve cela peu convaincant.",
     "it": "Lo trovo poco convincente.",
     "pt": "Acho isso pouco convincente."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Da ist was dran.",
@@ -342,7 +371,10 @@
     "fr": "Il y a du vrai là-dedans.",
     "it": "C'è del vero.",
     "pt": "Há alguma verdade nisso."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Das leuchtet mir ein.",
@@ -353,7 +385,10 @@
     "fr": "Cela me paraît logique.",
     "it": "Mi convince.",
     "pt": "Isso faz-me sentido."
-   }
+   },
+   "categoriasUso": [
+    "Acordar"
+   ]
   },
   {
    "expresion": "Ich bin da raus.",
@@ -364,7 +399,8 @@
     "fr": "Moi, j'arrête là.",
     "it": "Io mi tiro fuori.",
     "pt": "Eu saio disto."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Das war jetzt zu salopp.",
@@ -375,7 +411,8 @@
     "fr": "C'était trop familier.",
     "it": "È uscito troppo colloquiale.",
     "pt": "Isso saiu demasiado informal."
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

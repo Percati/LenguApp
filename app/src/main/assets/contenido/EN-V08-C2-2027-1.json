@@ -61,11 +61,26 @@
   "Varying sentence openings across a paragraph is a mechanical discipline worth checking for in any longer piece."
  ],
  "contraste": {
-  "es": "Spanish speakers have usually learned to avoid very and good by this level, so the remaining gap is structural: a favourite Spanish sentence pattern, such as a fronted subordinate clause, can become a personal tic in English without the writer noticing.",
-  "de": "A typical German tic is the overuse of actually, carried over from eigentlich, and sentence-initial so, carried over from also. Both are harmless once, but noticeable when repeated.",
-  "it": "A typical Italian tic is basically or let's say, carried over from praticamente and diciamo. Both are harmless once, but noticeable when repeated.",
-  "fr": "A typical French tic is in fact or actually, carried over from en fait. It is harmless once, but noticeable when repeated in polished English.",
-  "pt": "A typical Portuguese tic is basically or like, carried over from basicamente and, in Brazil, tipo. Both are harmless once, but noticeable when repeated."
+  "es": {
+   "en": "Spanish speakers have usually learned to avoid very and good by this level, so the remaining gap is structural: a favourite Spanish sentence pattern, such as a fronted subordinate clause, can become a personal tic in English without the writer noticing.",
+   "es": "A este nivel, los hispanohablantes normalmente ya han aprendido a evitar abusar de «very» y «good», por lo que la brecha restante es estructural: un patrón de oración favorito del español, por ejemplo una subordinada adelantada, puede convertirse en un tic personal en inglés sin que el escritor lo note."
+  },
+  "de": {
+   "en": "A typical German tic is the overuse of actually, carried over from eigentlich, and sentence-initial so, carried over from also. Both are harmless once, but noticeable when repeated.",
+   "de": "Ein typischer deutscher Tick ist die übermäßige Verwendung von «actually», beeinflusst durch «eigentlich», und von satzinitialem «so», beeinflusst durch «also». Einzeln sind beide harmlos, bei Wiederholung fallen sie jedoch auf."
+  },
+  "it": {
+   "en": "A typical Italian tic is basically or let's say, carried over from praticamente and diciamo. Both are harmless once, but noticeable when repeated.",
+   "it": "Un tipico tic italiano è l'uso ripetuto di «basically» o «let's say», influenzato da «praticamente» e «diciamo». Una volta sono innocui, ma se ripetuti diventano evidenti."
+  },
+  "fr": {
+   "en": "A typical French tic is in fact or actually, carried over from en fait. It is harmless once, but noticeable when repeated in polished English.",
+   "fr": "Un tic français typique est l'emploi répété de «in fact» ou «actually», calqué sur «en fait». Une fois, cela ne gêne pas ; répété, cela devient visible dans un anglais soigné."
+  },
+  "pt": {
+   "en": "A typical Portuguese tic is basically or like, carried over from basicamente and, in Brazil, tipo. Both are harmless once, but noticeable when repeated.",
+   "pt": "Um tic típico de falantes de português é usar demais «basically» ou «like», influenciado por «basicamente» e, no Brasil, «tipo». Uma vez, ambos são inofensivos; repetidos, chamam atenção."
+  }
  },
  "errores": [
   "Fixing word-level overuse while leaving structural or rhetorical tics untouched.",
@@ -255,7 +270,11 @@
     "fr": "…, même si parfois…",
     "it": "…, anche se talvolta…",
     "pt": "…, embora por vezes…"
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "No, that's simply not right.",
@@ -266,7 +285,11 @@
     "fr": "Non, ce n’est tout simplement pas exact.",
     "it": "No, semplicemente non è corretto.",
     "pt": "Não, isso simplesmente não está certo."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "For once, I'll skip the caveat:",
@@ -277,7 +300,8 @@
     "fr": "Pour une fois, je vais laisser de côté la réserve :",
     "it": "Per una volta, tralascio la precisazione:",
     "pt": "Desta vez, vou dispensar a ressalva:"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Put simply,…",
@@ -288,7 +312,10 @@
     "fr": "Dit simplement,…",
     "it": "Detto in modo semplice,…",
     "pt": "Dito de forma simples,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "This much is unambiguous:",
@@ -299,7 +326,10 @@
     "fr": "Une chose est sans ambiguïté :",
     "it": "Questo è inequivocabile:",
     "pt": "Isto é inequívoco:"
-   }
+   },
+   "categoriasUso": [
+    "Hábito/rutina"
+   ]
   },
   {
    "expresion": "…, and I mean that without qualification.",
@@ -310,7 +340,10 @@
     "fr": "…, et je le dis sans réserve.",
     "it": "…, e lo dico senza riserve.",
     "pt": "…, e digo-o sem reservas."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I've used that structure twice already.",
@@ -321,7 +354,8 @@
     "fr": "J'ai déjà employé cette structure deux fois.",
     "it": "Ho già usato quella struttura due volte.",
     "pt": "Já usei essa estrutura duas vezes."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Let me say that without the triplet.",
@@ -332,7 +366,8 @@
     "fr": "Je le redis sans le ternaire.",
     "it": "Lo dico senza la terna.",
     "pt": "Digo isso sem a tríade."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "No rhetorical question this time:",
@@ -343,7 +378,10 @@
     "fr": "Cette fois, sans question rhétorique :",
     "it": "Stavolta senza domanda retorica:",
     "pt": "Desta vez sem pergunta retórica:"
-   }
+   },
+   "categoriasUso": [
+    "Pedir"
+   ]
   },
   {
    "expresion": "That's the third not X but Y in a page.",
@@ -354,7 +392,8 @@
     "fr": "C'est le troisième non pas X mais Y en une page.",
     "it": "È il terzo non X ma Y in una pagina.",
     "pt": "É o terceiro não X mas Y numa página."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "The plainer version says more.",
@@ -365,7 +404,10 @@
     "fr": "La version plus sobre en dit plus.",
     "it": "La versione più piana dice di più.",
     "pt": "A versão mais simples diz mais."
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Blunt is the right register here.",
@@ -376,7 +418,8 @@
     "fr": "Ici, la brusquerie est le bon registre.",
     "it": "Qui il registro giusto è quello brusco.",
     "pt": "Aqui o registo certo é o brusco."
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

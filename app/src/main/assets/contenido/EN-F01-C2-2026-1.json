@@ -56,11 +56,26 @@
   "Naming the counter-view briefly, without arguing it, shows intellectual honesty rather than weakness."
  ],
  "contraste": {
-  "es": "Spanish has formulas for graded confidence (me inclino a pensar que – I'd lean towards; con reservas – tentatively), so the move itself transfers. Expressions such as I hold that loosely have no fixed Spanish equivalent and are best learned as units.",
-  "de": "German grades confidence with ich tendiere dazu (I'd lean towards) and vorläufig or mit Vorbehalt (tentatively), so the move transfers well. I hold that loosely has no German equivalent and is best learned as a unit.",
-  "it": "Propendo per corresponds exactly to I'd lean towards, and con beneficio d'inventario to taking something with a pinch of salt. Italian speakers can therefore map most of the confidence scale directly; I hold that loosely needs to be learned as a unit.",
-  "fr": "Je pencherais pour corresponds closely to I'd lean towards, even with the same conditional, and sous réserve to tentatively. The scale transfers well; I hold that loosely has no French equivalent.",
-  "pt": "Inclino-me a pensar que corresponds to I'd lean towards, and com reservas to tentatively. The scale transfers well; I hold that loosely has no Portuguese equivalent and is best learned as a unit."
+  "es": {
+   "en": "Spanish has formulas for graded confidence (me inclino a pensar que – I'd lean towards; con reservas – tentatively), so the move itself transfers. Expressions such as I hold that loosely have no fixed Spanish equivalent and are best learned as units.",
+   "es": "El español tiene fórmulas para graduar la certeza («me inclino a pensar que» – «I'd lean towards»; «con reservas» – «tentatively»), por lo que el movimiento retórico se transfiere. Expresiones como «I hold that loosely» no tienen un equivalente fijo en español y conviene aprenderlas como unidades."
+  },
+  "de": {
+   "en": "German grades confidence with ich tendiere dazu (I'd lean towards) and vorläufig or mit Vorbehalt (tentatively), so the move transfers well. I hold that loosely has no German equivalent and is best learned as a unit.",
+   "de": "Deutsch stuft Sicherheit mit «ich tendiere dazu» («I'd lean towards») und «vorläufig» oder «mit Vorbehalt» («tentatively») ab, daher lässt sich die Bewegung gut übertragen. «I hold that loosely» hat keine direkte deutsche Entsprechung und sollte als feste Wendung gelernt werden."
+  },
+  "it": {
+   "en": "Propendo per corresponds exactly to I'd lean towards, and con beneficio d'inventario to taking something with a pinch of salt. Italian speakers can therefore map most of the confidence scale directly; I hold that loosely needs to be learned as a unit.",
+   "it": "«Propendo per» corrisponde esattamente a «I'd lean towards», e «con beneficio d'inventario» a «taking something with a pinch of salt». Gli italofoni possono quindi mappare gran parte della scala di certezza; «I hold that loosely» va imparato come unità."
+  },
+  "fr": {
+   "en": "Je pencherais pour corresponds closely to I'd lean towards, even with the same conditional, and sous réserve to tentatively. The scale transfers well; I hold that loosely has no French equivalent.",
+   "fr": "«Je pencherais pour» correspond étroitement à «I'd lean towards», jusque dans le conditionnel, et «sous réserve» à «tentatively». L'échelle se transfère bien ; «I hold that loosely» n'a pas d'équivalent français fixe."
+  },
+  "pt": {
+   "en": "Inclino-me a pensar que corresponds to I'd lean towards, and com reservas to tentatively. The scale transfers well; I hold that loosely has no Portuguese equivalent and is best learned as a unit.",
+   "pt": "«Inclino-me a pensar que» ou, no Brasil, «tendo a pensar que» corresponde a «I'd lean towards», e «com reservas» a «tentatively». A escala se transfere bem; «I hold that loosely» não tem equivalente fixo em português e deve ser aprendido como unidade."
+  }
  },
  "errores": [
   "Stating an opinion with full confidence on a genuinely contested question, which reads as naive rather than authoritative.",
@@ -228,7 +243,10 @@
     "fr": "Si je devais me prononcer, je dirais…",
     "it": "Se dovessi sbilanciarmi, direi…",
     "pt": "Se tivesse de me pronunciar, diria…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "I hold that view fairly loosely.",
@@ -239,7 +257,10 @@
     "fr": "Je tiens cette opinion de façon assez souple.",
     "it": "Sostengo questa opinione con una certa flessibilità.",
     "pt": "Sustento essa opinião sem grande firmeza."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "…, though a strong case exists the other way.",
@@ -250,7 +271,11 @@
     "fr": "…, bien qu’il y ait de solides arguments en sens inverse.",
     "it": "…, anche se ci sono forti argomenti in senso contrario.",
     "pt": "…, embora haja bons argumentos em sentido contrário."
-   }
+   },
+   "categoriasUso": [
+    "Opinar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I'd lean towards…",
@@ -261,7 +286,10 @@
     "fr": "Je pencherais plutôt pour…",
     "it": "Propenderei per…",
     "pt": "Inclinar-me-ia mais para…"
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "It's genuinely difficult to say, but…",
@@ -272,7 +300,10 @@
     "fr": "C’est vraiment difficile à dire, mais…",
     "it": "È davvero difficile dirlo, ma…",
     "pt": "É realmente difícil dizer, mas…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "I could be persuaded otherwise.",
@@ -283,7 +314,10 @@
     "fr": "Je pourrais me laisser convaincre du contraire.",
     "it": "Potrei lasciarmi convincere del contrario.",
     "pt": "Poderiam convencer-me do contrário."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "My confidence here is about as high as it gets.",
@@ -294,7 +328,10 @@
     "fr": "Ma confiance ici est à peu près au maximum.",
     "it": "La mia sicurezza qui è quasi al massimo.",
     "pt": "A minha confiança aqui é das mais altas que tenho."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "What would change my mind is…",
@@ -305,7 +342,10 @@
     "fr": "Ce qui me ferait changer d'avis, c'est…",
     "it": "A farmi cambiare idea sarebbe…",
     "pt": "O que me faria mudar de ideias é…"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "That's a view I've changed before.",
@@ -316,7 +356,10 @@
     "fr": "C'est un avis que j'ai déjà changé.",
     "it": "È un'opinione che ho già cambiato.",
     "pt": "É uma opinião que já mudei antes."
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   },
   {
    "expresion": "I hold it strongly, but on thin evidence.",
@@ -327,7 +370,11 @@
     "fr": "Je le soutiens fermement, mais sur peu d'éléments.",
     "it": "La sostengo con forza, ma su prove scarse.",
     "pt": "Defendo-a com força, mas com poucas provas."
-   }
+   },
+   "categoriasUso": [
+    "Dar razones",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "That's the position; the reasoning behind it is shakier.",
@@ -338,7 +385,10 @@
     "fr": "Voilà la position ; le raisonnement derrière est plus fragile.",
     "it": "Questa è la posizione; il ragionamento dietro è più fragile.",
     "pt": "Essa é a posição; o raciocínio por trás é mais frágil."
-   }
+   },
+   "categoriasUso": [
+    "Comparación"
+   ]
   },
   {
    "expresion": "I'd rather not give you a view I can't defend.",
@@ -349,7 +399,11 @@
     "fr": "Je préfère ne pas donner un avis que je ne peux pas défendre.",
     "it": "Preferisco non dare un'opinione che non so difendere.",
     "pt": "Prefiro não dar uma opinião que não consigo defender."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Dar razones"
+   ]
   }
  ],
  "mision": {

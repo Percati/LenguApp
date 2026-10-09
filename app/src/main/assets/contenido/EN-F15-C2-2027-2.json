@@ -57,11 +57,26 @@
   "Finishing someone else's stumbled sentence accurately and briefly helps them; doing it repeatedly or inaccurately undermines them."
  ],
  "contraste": {
-  "es": "Spanish has phrases for the same moves (¿tú qué opinas, Ana? – what's your take, Ana?; volviendo a lo de antes – going back to…), so the functions transfer. The work lies in building a ready repertoire of English phrases for each move.",
-  "de": "German has phrases for the same moves (Was meinen Sie dazu? – What's your take?; um noch mal auf… zurückzukommen – going back to…). One difference: English meetings often use first names even in formal settings, where German would use Sie and a surname.",
-  "it": "Italian has phrases for the same moves (tu che ne pensi? – what's your take?; tornando a… – going back to…), so the functions transfer directly.",
-  "fr": "French has phrases for the same moves (et toi, qu'en penses-tu ? – what's your take?; pour revenir à… – going back to…), so the functions transfer directly.",
-  "pt": "Portuguese has phrases for the same moves (e tu, o que achas? – what's your take?; voltando a… – going back to…), so the functions transfer directly."
+  "es": {
+   "en": "Spanish has phrases for the same moves (¿tú qué opinas, Ana? – what's your take, Ana?; volviendo a lo de antes – going back to…), so the functions transfer. The work lies in building a ready repertoire of English phrases for each move.",
+   "es": "El español tiene expresiones para las mismas funciones («¿tú qué opinas, Ana?» – «what's your take, Ana?»; «volviendo a lo de antes» – «going back to…»), por lo que la función se transfiere. El trabajo consiste en construir un repertorio listo de expresiones inglesas para cada movimiento."
+  },
+  "de": {
+   "en": "German has phrases for the same moves (Was meinen Sie dazu? – What's your take?; um noch mal auf… zurückzukommen – going back to…). One difference: English meetings often use first names even in formal settings, where German would use Sie and a surname.",
+   "de": "Deutsch hat Formeln für dieselben Gesprächsschritte («Was meinen Sie dazu?» – «What's your take?»; «um noch mal auf… zurückzukommen» – «going back to…»). Ein Unterschied: In englischen Meetings werden auch in formellen Kontexten häufig Vornamen verwendet, wo Deutsch «Sie» und den Nachnamen benutzen würde."
+  },
+  "it": {
+   "en": "Italian has phrases for the same moves (tu che ne pensi? – what's your take?; tornando a… – going back to…), so the functions transfer directly.",
+   "it": "L'italiano ha espressioni per le stesse funzioni («tu che ne pensi?» – «what's your take?»; «tornando a…» – «going back to…»), quindi le funzioni si trasferiscono direttamente."
+  },
+  "fr": {
+   "en": "French has phrases for the same moves (et toi, qu'en penses-tu ? – what's your take?; pour revenir à… – going back to…), so the functions transfer directly.",
+   "fr": "Le français possède des expressions pour les mêmes mouvements («et toi, qu'en penses-tu ?» – «what's your take?» ; «pour revenir à…» – «going back to…»), donc les fonctions se transfèrent directement."
+  },
+  "pt": {
+   "en": "Portuguese has phrases for the same moves (e tu, o que achas? – what's your take?; voltando a… – going back to…), so the functions transfer directly.",
+   "pt": "O português tem expressões para os mesmos movimentos («e você, o que acha?» – «what's your take?»; «voltando a…» – «going back to…»), então as funções se transferem diretamente."
+  }
  },
  "errores": [
   "Redirecting so abruptly that it reads as a correction rather than a smooth return.",
@@ -251,7 +266,10 @@
     "fr": "Quelle est ton impression là-dessus ?",
     "it": "Qual è la tua lettura?",
     "pt": "Qual é a tua leitura disto?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "So, coming back to…",
@@ -262,7 +280,10 @@
     "fr": "Donc, pour revenir à…",
     "it": "Quindi, tornando a…",
     "pt": "Então, voltando a…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "—I think what you mean is…",
@@ -273,7 +294,10 @@
     "fr": "—Je crois que tu veux dire…",
     "it": "—Credo che tu intenda…",
     "pt": "—Acho que o que queres dizer é…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "We got a bit sidetracked, but…",
@@ -284,7 +308,8 @@
     "fr": "Nous nous sommes un peu écartés du sujet, mais…",
     "it": "Ci siamo un po’ allontanati dal punto, ma…",
     "pt": "Desviámo-nos um pouco, mas…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "I don't think we've heard from you yet.",
@@ -295,7 +320,10 @@
     "fr": "Je crois qu’on ne t’a pas encore entendu.",
     "it": "Credo che non ti abbiamo ancora sentito.",
     "pt": "Acho que ainda não te ouvimos."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Sorry, go on — you were saying?",
@@ -306,7 +334,8 @@
     "fr": "Désolé, continue — tu disais ?",
     "it": "Scusa, continua — cosa stavi dicendo?",
     "pt": "Desculpa, continua — estavas a dizer?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "You two are closer than it sounds.",
@@ -317,7 +346,8 @@
     "fr": "Vous deux êtes plus proches que cela n'en a l'air.",
     "it": "Voi due siete più vicini di quanto sembri.",
     "pt": "Vocês dois estão mais próximos do que parece."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Can we park that and come back to it?",
@@ -328,7 +358,8 @@
     "fr": "Peut-on mettre cela de côté et y revenir ?",
     "it": "Possiamo accantonarlo e tornarci dopo?",
     "pt": "Podemos pôr isso de lado e voltar depois?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "We've got ten minutes, so —",
@@ -339,7 +370,8 @@
     "fr": "Il nous reste dix minutes, donc —",
     "it": "Abbiamo dieci minuti, quindi —",
     "pt": "Temos dez minutos, portanto —"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "I think we've been arguing about definitions.",
@@ -350,7 +382,11 @@
     "fr": "Je crois que nous débattions de définitions.",
     "it": "Credo che stessimo discutendo di definizioni.",
     "pt": "Acho que estivemos a discutir definições."
-   }
+   },
+   "categoriasUso": [
+    "Acordar",
+    "Discrepar"
+   ]
   },
   {
    "expresion": "That's me talking too much — over to you.",
@@ -361,7 +397,8 @@
     "fr": "J'ai trop parlé — à vous.",
     "it": "Ho parlato troppo — a lei.",
     "pt": "Falei demais — agora tu."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Where did we land on that, in the end?",
@@ -372,7 +409,10 @@
     "fr": "Où en sommes-nous restés là-dessus, finalement ?",
     "it": "Alla fine, dove siamo arrivati su questo?",
     "pt": "Afinal, em que ficámos nisso?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {

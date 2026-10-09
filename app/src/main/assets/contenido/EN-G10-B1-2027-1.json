@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish uses deber de + infinitive for similar deductions (debe de estar cansada), which transfers well to English must be.",
-  "de": "German has the same structure (Sie muss müde sein – She must be tired), so the positive form transfers directly. The negative does not: German speakers often say she mustn't be tired where English uses she can't be tired.",
-  "it": "Italian has close equivalents: deve essere stanca (she must be tired) and non può essere stanca (she can't be tired). The Italian future of probability (sarà stanca) is a separate source of error, producing she will be tired.",
-  "fr": "French has close equivalents: elle doit être fatiguée (she must be tired) and elle ne peut pas être fatiguée (she can't be tired). The transfer is direct for present-time deduction.",
-  "pt": "Portuguese has the same structure: deve estar cansada (she must be tired) and não pode estar cansada (she can't be tired). Portuguese speakers therefore handle present-time deduction with very little interference."
+  "es": {
+   "en": "Spanish uses deber de + infinitive for similar deductions (debe de estar cansada), which transfers well to English must be.",
+   "es": "El español usa «deber de» + infinitivo para deducciones similares («debe de estar cansada»), que se transfiere bien al inglés «must be»."
+  },
+  "de": {
+   "en": "German has the same structure (Sie muss müde sein – She must be tired), so the positive form transfers directly. The negative does not: German speakers often say she mustn't be tired where English uses she can't be tired.",
+   "de": "Das Deutsche hat dieselbe Struktur («Sie muss müde sein» – «She must be tired»), daher lässt sich die positive Form direkt übertragen. Bei der Verneinung gilt das nicht: Deutschsprachige sagen leicht «she mustn't be tired», wo Englisch «she can't be tired» verwendet."
+  },
+  "it": {
+   "en": "Italian has close equivalents: deve essere stanca (she must be tired) and non può essere stanca (she can't be tired). The Italian future of probability (sarà stanca) is a separate source of error, producing she will be tired.",
+   "it": "L'italiano ha equivalenti vicini: «deve essere stanca» («she must be tired») e «non può essere stanca» («she can't be tired»). Il futuro di probabilità italiano («sarà stanca») è un'ulteriore fonte di errore e può produrre «she will be tired»."
+  },
+  "fr": {
+   "en": "French has close equivalents: elle doit être fatiguée (she must be tired) and elle ne peut pas être fatiguée (she can't be tired). The transfer is direct for present-time deduction.",
+   "fr": "Le français a des équivalents proches : «elle doit être fatiguée» («she must be tired») et «elle ne peut pas être fatiguée» («she can't be tired»). La déduction au présent se transfère donc directement."
+  },
+  "pt": {
+   "en": "Portuguese has the same structure: deve estar cansada (she must be tired) and não pode estar cansada (she can't be tired). Portuguese speakers therefore handle present-time deduction with very little interference.",
+   "pt": "O português tem a mesma estrutura: «deve estar cansada» («she must be tired») e «não pode estar cansada» («she can't be tired»). Falantes de português lidam, portanto, com deduções no presente com pouca interferência."
+  }
  },
  "errores": [
   {
@@ -437,7 +452,10 @@
     "fr": "…doit être…",
     "it": "…deve essere…",
     "pt": "…deve ser…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "…can't be…",
@@ -455,7 +473,10 @@
     "fr": "…ne peut pas être…",
     "it": "…non può essere…",
     "pt": "…não pode ser…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "That makes sense.",
@@ -473,7 +494,11 @@
     "fr": "Ça se tient.",
     "it": "Ha senso.",
     "pt": "Isso faz sentido."
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Acordar"
+   ]
   },
   {
    "expresion": "It must be because…",
@@ -491,7 +516,11 @@
     "fr": "Ce doit être parce que…",
     "it": "Deve essere perché…",
     "pt": "Deve ser porque…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "I guess…",
@@ -509,7 +538,10 @@
     "fr": "Je suppose que…",
     "it": "Immagino che…",
     "pt": "Suponho que…"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "That would explain it.",
@@ -527,7 +559,12 @@
     "fr": "Cela l’expliquerait.",
     "it": "Questo lo spiegherebbe.",
     "pt": "Isso explicaria."
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Acordar",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "How sure am I?",
@@ -545,7 +582,12 @@
     "fr": "À quel point en suis-je sûr ?",
     "it": "Quanto ne sono sicuro?",
     "pt": "Quão seguro estou?"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)",
+    "Comparación",
+    "Suponer/especular"
+   ]
   }
  ],
  "mision": {

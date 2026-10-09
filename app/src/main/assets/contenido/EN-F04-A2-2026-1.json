@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Primero and luego correspond to first and then, and the indefinido maps onto the past simple, so simple stories transfer directly.",
-  "de": "German tells spoken stories in the Perfekt, which leads to Yesterday I have seen…. English uses the past simple: Yesterday I saw….",
-  "it": "Italian tells stories in the passato prossimo, which leads to Yesterday I have seen…. English uses the past simple: Yesterday I saw….",
-  "fr": "French tells stories in the passé composé, which leads to Yesterday I have seen…. English uses the past simple: Yesterday I saw….",
-  "pt": "Portuguese tells stories in the simple past (ontem vi…), which maps directly onto the English past simple (Yesterday I saw…)."
+  "es": {
+   "en": "Primero and luego correspond to first and then, and the indefinido maps onto the past simple, so simple stories transfer directly.",
+   "es": "«Primero» y «luego» corresponden a «first» y «then», y el indefinido se corresponde con el past simple, por lo que las historias sencillas se transfieren directamente."
+  },
+  "de": {
+   "en": "German tells spoken stories in the Perfekt, which leads to Yesterday I have seen…. English uses the past simple: Yesterday I saw….",
+   "de": "Im gesprochenen Deutsch erzählt man Geschichten meist im Perfekt; dadurch entsteht leicht «Yesterday I have seen…». Im Englischen verwendet man das past simple: «Yesterday I saw…»."
+  },
+  "it": {
+   "en": "Italian tells stories in the passato prossimo, which leads to Yesterday I have seen…. English uses the past simple: Yesterday I saw….",
+   "it": "L'italiano racconta le storie al passato prossimo, il che porta a «Yesterday I have seen…». L'inglese usa il past simple: «Yesterday I saw…»."
+  },
+  "fr": {
+   "en": "French tells stories in the passé composé, which leads to Yesterday I have seen…. English uses the past simple: Yesterday I saw….",
+   "fr": "Le français raconte les histoires au passé composé, ce qui conduit à «Yesterday I have seen…». L'anglais utilise le past simple : «Yesterday I saw…»."
+  },
+  "pt": {
+   "en": "Portuguese tells stories in the simple past (ontem vi…), which maps directly onto the English past simple (Yesterday I saw…).",
+   "pt": "O português conta histórias no passado simples («ontem vi…»), que corresponde diretamente ao past simple do inglês («Yesterday I saw…»)."
+  }
  },
  "errores": [
   {
@@ -375,7 +390,10 @@
     "fr": "L’année dernière…",
     "it": "L’anno scorso…",
     "pt": "No ano passado…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "First…",
@@ -393,7 +411,11 @@
     "fr": "D’abord…",
     "it": "Prima…",
     "pt": "Primeiro…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Describir un proceso o camino"
+   ]
   },
   {
    "expresion": "Then…",
@@ -411,7 +433,10 @@
     "fr": "Ensuite…",
     "it": "Poi…",
     "pt": "Depois…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "It was great.",
@@ -429,7 +454,10 @@
     "fr": "C’était super.",
     "it": "È stato fantastico.",
     "pt": "Foi ótimo."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "I went to…",
@@ -447,7 +475,10 @@
     "fr": "Je suis allé(e) à…",
     "it": "Sono andato/a a…",
     "pt": "Fui a…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "We saw…",
@@ -465,7 +496,10 @@
     "fr": "Nous avons vu…",
     "it": "Abbiamo visto…",
     "pt": "Vimos…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "One day…",
@@ -483,7 +517,10 @@
     "fr": "Un jour…",
     "it": "Un giorno…",
     "pt": "Um dia…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "After that…",
@@ -501,7 +538,10 @@
     "fr": "Ensuite…",
     "it": "Dopo…",
     "pt": "Depois…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Suddenly…",
@@ -519,7 +559,10 @@
     "fr": "Soudain…",
     "it": "All'improvviso…",
     "pt": "De repente…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "In the end…",
@@ -537,7 +580,10 @@
     "fr": "À la fin…",
     "it": "Alla fine…",
     "pt": "No fim…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "It wasn't very good.",
@@ -555,7 +601,10 @@
     "fr": "Ce n'était pas très bien.",
     "it": "Non è stato granché.",
     "pt": "Não foi muito bom."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "And then what happened?",
@@ -573,7 +622,8 @@
     "fr": "Et ensuite ?",
     "it": "E poi cos'è successo?",
     "pt": "E depois o que aconteceu?"
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {
@@ -586,8 +636,22 @@
    "pt": "Conte sobre uma vez em que você ficou doente ou se machucou."
   },
   "requisitos": [
-   "five sentences in the past simple",
-   "*first* and *then*",
+   {
+    "en": "five sentences in the past simple",
+    "de": "fünf Sätze im Simple Past",
+    "es": "cinco oraciones en pasado simple",
+    "fr": "cinq phrases au prétérit",
+    "it": "cinque frasi al past simple",
+    "pt": "cinco frases no simple past"
+   },
+   {
+    "en": "*first* and *then*",
+    "de": "*first* und *then*",
+    "es": "*first* y *then*",
+    "fr": "*first* et *then*",
+    "it": "*first* e *then*",
+    "pt": "*first* e *then*"
+   },
    {
     "en": "use *the flu*, *to hurt yourself* and *to lie down*",
     "de": "*the flu*, *to hurt yourself* und *to lie down* verwenden",

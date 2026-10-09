@@ -65,11 +65,26 @@
   "Distinguishing this from a simple error requires checking whether the writer actually means two different time frames, or just confused the tenses."
  ],
  "contraste": {
-  "es": "Spanish mixes time frames quite naturally (si hubiéramos invertido entonces, ahora estaríamos en otra posición), so the concept is not new. What is often missing is the confidence to use it actively in English instead of forcing a pure third-conditional pattern.",
-  "de": "German mixes time frames freely with the Konjunktiv II (Wenn wir damals investiert hätten, wären wir jetzt…), so the concept is natural. The typical problem is would in the if-clause, because colloquial German allows würde there: if we would have invested instead of if we had invested.",
-  "it": "Italian mixes time frames naturally in both directions (se avessimo investito allora, ora saremmo…; se fossi più prudente, non avrei investito), so mixed conditionals feel familiar. The Italian congiuntivo trapassato maps directly onto the English past perfect in the if-clause.",
-  "fr": "French mixes time frames naturally (si nous avions investi, nous serions…), and because French forbids the conditional after si, French speakers rarely produce if we would have…. Mixed conditionals are therefore one of the easier C2 structures for them.",
-  "pt": "Portuguese mixes time frames naturally (se tivéssemos investido, estaríamos agora…). In colloquial European Portuguese, however, the imperfect often replaces the conditional (estávamos agora noutra situação), which can lead to we were now instead of we would be now."
+  "es": {
+   "en": "Spanish mixes time frames quite naturally (si hubiéramos invertido entonces, ahora estaríamos en otra posición), so the concept is not new. What is often missing is the confidence to use it actively in English instead of forcing a pure third-conditional pattern.",
+   "es": "El español mezcla los marcos temporales con naturalidad («si hubiéramos invertido entonces, ahora estaríamos en otra posición»), por lo que el concepto no es nuevo. Lo que suele faltar es la confianza para usarlo activamente en inglés en lugar de forzar un third conditional puro."
+  },
+  "de": {
+   "en": "German mixes time frames freely with the Konjunktiv II (Wenn wir damals investiert hätten, wären wir jetzt…), so the concept is natural. The typical problem is would in the if-clause, because colloquial German allows würde there: if we would have invested instead of if we had invested.",
+   "de": "Deutsch kann Zeitbezüge mit Konjunktiv II frei mischen («Wenn wir damals investiert hätten, wären wir jetzt…»), daher ist das Konzept vertraut. Das typische Problem ist «would» im if-Satz, weil umgangssprachliches Deutsch dort «würde» zulässt: «if we would have invested» statt «if we had invested»."
+  },
+  "it": {
+   "en": "Italian mixes time frames naturally in both directions (se avessimo investito allora, ora saremmo…; se fossi più prudente, non avrei investito), so mixed conditionals feel familiar. The Italian congiuntivo trapassato maps directly onto the English past perfect in the if-clause.",
+   "it": "L'italiano mescola naturalmente i piani temporali in entrambe le direzioni («se avessimo investito allora, ora saremmo…»; «se fossi più prudente, non avrei investito»), quindi i mixed conditionals risultano familiari. Il congiuntivo trapassato italiano corrisponde direttamente al past perfect nella if-clause inglese."
+  },
+  "fr": {
+   "en": "French mixes time frames naturally (si nous avions investi, nous serions…), and because French forbids the conditional after si, French speakers rarely produce if we would have…. Mixed conditionals are therefore one of the easier C2 structures for them.",
+   "fr": "Le français mélange naturellement les cadres temporels («si nous avions investi, nous serions…»), et comme il interdit le conditionnel après «si», les francophones produisent rarement «if we would have…». Les mixed conditionals font donc partie des structures C2 les plus faciles pour eux."
+  },
+  "pt": {
+   "en": "Portuguese mixes time frames naturally (se tivéssemos investido, estaríamos agora…). In colloquial European Portuguese, however, the imperfect often replaces the conditional (estávamos agora noutra situação), which can lead to we were now instead of we would be now.",
+   "pt": "O português mistura quadros temporais naturalmente («se tivéssemos investido, estaríamos agora…»). No português europeu coloquial, porém, o imperfeito pode substituir o condicional («estávamos agora noutra situação»), o que pode levar a «we were now» em vez de «we would be now»."
+  }
  },
  "errores": [
   "Forcing a mixed situation into a pure third conditional, losing the present-tense result.",
@@ -259,7 +274,11 @@
     "fr": "Si nous avions…, nous serions maintenant…",
     "it": "Se avessimo…, ora saremmo…",
     "pt": "Se tivéssemos…, agora estaríamos…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "If I weren't so…, I would have…",
@@ -270,7 +289,12 @@
     "fr": "Si je n’étais pas si…, j’aurais…",
     "it": "Se non fossi così…, avrei…",
     "pt": "Se eu não fosse tão…, teria…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Duración"
+   ]
   },
   {
    "expresion": "Had things gone differently, we'd be…",
@@ -281,7 +305,12 @@
     "fr": "Si les choses s’étaient passées autrement, nous serions…",
     "it": "Se le cose fossero andate diversamente, saremmo…",
     "pt": "Se as coisas tivessem corrido de forma diferente, estaríamos…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "If it weren't for…, we wouldn't have…",
@@ -292,7 +321,12 @@
     "fr": "Sans…, nous n’aurions pas…",
     "it": "Se non fosse per…, non avremmo…",
     "pt": "Se não fosse por…, não teríamos…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Duración"
+   ]
   },
   {
    "expresion": "…, and that's why we're…today.",
@@ -303,7 +337,11 @@
     "fr": "…, et c’est pourquoi nous sommes… aujourd’hui.",
     "it": "…, ed è per questo che oggi siamo…",
     "pt": "…, e é por isso que hoje estamos…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Looking back, if we had…, things would be…",
@@ -314,7 +352,11 @@
     "fr": "Avec le recul, si nous avions…, les choses seraient…",
     "it": "Col senno di poi, se avessimo…, le cose sarebbero…",
     "pt": "Olhando para trás, se tivéssemos…, as coisas seriam…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "We're living with a decision made in five minutes.",
@@ -325,7 +367,11 @@
     "fr": "Nous vivons avec une décision prise en cinq minutes.",
     "it": "Viviamo con una decisione presa in cinque minuti.",
     "pt": "Vivemos com uma decisão tomada em cinco minutos."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Were it not for that, we'd still be…",
@@ -336,7 +382,13 @@
     "fr": "N'eût été cela, nous serions encore…",
     "it": "Se non fosse stato per questo, saremmo ancora…",
     "pt": "Não fosse isso, ainda estaríamos…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Duración",
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "The counterfactual flatters us.",
@@ -347,7 +399,11 @@
     "fr": "Le contrefactuel nous flatte.",
     "it": "Il controfattuale ci lusinga.",
     "pt": "O contrafactual lisonjeia-nos."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Every alternative I can construct ends worse.",
@@ -358,7 +414,12 @@
     "fr": "Chaque alternative que je peux construire finit plus mal.",
     "it": "Ogni alternativa che riesco a costruire finisce peggio.",
     "pt": "Toda a alternativa que consigo construir acaba pior."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Agradecer y disculparse"
+   ]
   },
   {
    "expresion": "That's hindsight doing the work, not judgement.",
@@ -369,7 +430,12 @@
     "fr": "C'est le biais rétrospectif qui opère, pas le jugement.",
     "it": "Qui lavora il senno di poi, non il giudizio.",
     "pt": "Aí trabalha a retrospetiva, não o critério."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Agradecer y disculparse"
+   ]
   },
   {
    "expresion": "Had we known, the decision would have been harder, not easier.",
@@ -380,7 +446,12 @@
     "fr": "Si nous l'avions su, la décision aurait été plus dure, non plus simple.",
     "it": "Se l'avessimo saputo, la decisione sarebbe stata più difficile, non più facile.",
     "pt": "Se soubéssemos, a decisão teria sido mais difícil, não mais fácil."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Discrepar"
+   ]
   }
  ],
  "mision": {

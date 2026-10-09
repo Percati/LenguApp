@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische bildet die Bedingung mit imperfecto de subjuntivo und condicional (si tuviera tiempo, vendría), was strukturell dem Deutschen ähnelt. Der Unterschied ist, dass das Deutsche für hätte und wäre eigene, kurze Formen hat, während das Spanische durchgehend die subjuntivo-Form braucht.",
-  "it": "Die Struktur passt gut: se avessi tempo, verrei – wenn ich Zeit hätte, würde ich kommen. Auch im Italienischen steht im se-Satz kein Konditional. Umgangssprachlich hört man aber oft das Imperfetto (se avevo tempo, venivo), das zu wenn ich Zeit hatte verleitet.",
-  "fr": "Wie im Deutschen steht im französischen si-Satz kein Konditional. Dort steht aber das imparfait im Indikativ (si j'avais le temps), was zu wenn ich Zeit hatte statt hätte verleitet. Höflichkeit passt gut: je voudrais – ich hätte gern.",
-  "pt": "Die Struktur passt gut: se tivesse tempo, viria – wenn ich Zeit hätte, würde ich kommen. Vorsicht bei der Höflichkeit: Im europäischen Portugiesisch fragt man podias ajudar-me?, im Deutschen aber könntest du mir helfen?, nicht konntest du.",
-  "en": "Englischsprachige benutzen gern würde + Infinitiv für alles und vermeiden hätte und wäre, weil es im Englischen keine eigenen Formen gibt. Im if-Satz steht das past (if I had time), was zu wenn ich Zeit hatte verleitet; richtig ist hätte."
+  "es": {
+   "de": "Das Spanische bildet die Bedingung mit imperfecto de subjuntivo und condicional (si tuviera tiempo, vendría), was strukturell dem Deutschen ähnelt. Der Unterschied ist, dass das Deutsche für hätte und wäre eigene, kurze Formen hat, während das Spanische durchgehend die subjuntivo-Form braucht.",
+   "es": "El español forma la condición con imperfecto de subjuntivo y condicional («si tuviera tiempo, vendría»), de manera estructuralmente parecida al alemán. La diferencia es que el alemán tiene formas breves propias como «hätte» y «wäre», mientras que el español recurre sistemáticamente al subjuntivo."
+  },
+  "it": {
+   "de": "Die Struktur passt gut: se avessi tempo, verrei – wenn ich Zeit hätte, würde ich kommen. Auch im Italienischen steht im se-Satz kein Konditional. Umgangssprachlich hört man aber oft das Imperfetto (se avevo tempo, venivo), das zu wenn ich Zeit hatte verleitet.",
+   "it": "La struttura corrisponde bene: «se avessi tempo, verrei» – «wenn ich Zeit hätte, würde ich kommen». Anche in italiano nella proposizione con «se» non si usa il condizionale. Nel parlato, però, si sente spesso l'imperfetto («se avevo tempo, venivo»), che può portare all'errore «wenn ich Zeit hatte» invece di «hätte»."
+  },
+  "fr": {
+   "de": "Wie im Deutschen steht im französischen si-Satz kein Konditional. Dort steht aber das imparfait im Indikativ (si j'avais le temps), was zu wenn ich Zeit hatte statt hätte verleitet. Höflichkeit passt gut: je voudrais – ich hätte gern.",
+   "fr": "Comme en allemand, le conditionnel ne se met pas dans la proposition française avec «si». On y trouve cependant l'imparfait de l'indicatif («si j'avais le temps»), ce qui peut conduire à «wenn ich Zeit hatte» au lieu de «hätte». Pour la politesse, la correspondance est bonne : «je voudrais» – «ich hätte gern»."
+  },
+  "pt": {
+   "de": "Die Struktur passt gut: se tivesse tempo, viria – wenn ich Zeit hätte, würde ich kommen. Vorsicht bei der Höflichkeit: Im europäischen Portugiesisch fragt man podias ajudar-me?, im Deutschen aber könntest du mir helfen?, nicht konntest du.",
+   "pt": "A estrutura combina bem: «se tivesse tempo, viria» – «wenn ich Zeit hätte, würde ich kommen». Cuidado com a cortesia: no português europeu pode-se dizer «podias ajudar-me?», mas em alemão é «könntest du mir helfen?», e não «konntest du»."
+  },
+  "en": {
+   "de": "Englischsprachige benutzen gern würde + Infinitiv für alles und vermeiden hätte und wäre, weil es im Englischen keine eigenen Formen gibt. Im if-Satz steht das past (if I had time), was zu wenn ich Zeit hatte verleitet; richtig ist hätte.",
+   "en": "English speakers often use «würde + infinitive» for everything and avoid «hätte» and «wäre», because English has no separate forms. In an if-clause English uses the past («if I had time»), which can lead to «wenn ich Zeit hatte»; the correct form is «hätte»."
+  }
  },
  "errores": [
   {
@@ -405,7 +420,11 @@
     "fr": "Pourrais-tu… ?",
     "it": "Potresti…?",
     "pt": "Poderias…?"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Ich hätte gern…",
@@ -423,7 +442,11 @@
     "fr": "J’aimerais…",
     "it": "Vorrei…",
     "pt": "Gostaria de…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Wenn ich…hätte, würde ich…",
@@ -441,7 +464,10 @@
     "fr": "Si j’avais…, je…",
     "it": "Se avessi…, io…",
     "pt": "Se eu tivesse…, eu…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "Das wäre toll.",
@@ -459,7 +485,11 @@
     "fr": "Ce serait super.",
     "it": "Sarebbe fantastico.",
     "pt": "Seria ótimo."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Ich würde gern…",
@@ -477,7 +507,11 @@
     "fr": "J’aimerais…",
     "it": "Mi piacerebbe…",
     "pt": "Gostaria de…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Wäre es möglich, dass…?",
@@ -495,7 +529,11 @@
     "fr": "Serait-il possible que… ?",
     "it": "Sarebbe possibile che…?",
     "pt": "Seria possível que…?"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Pedir"
+   ]
   },
   {
    "expresion": "Klingt das höflich genug?",
@@ -513,7 +551,11 @@
     "fr": "Cela sonne-t-il assez poli ?",
     "it": "Suona abbastanza cortese?",
     "pt": "Soa suficientemente cortês?"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Dar razones"
+   ]
   }
  ],
  "mision": {

@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish has no phrasal verbs, so the first word that comes to mind is often a Latin-based verb (discover instead of find out). These verbs exist in English but sound more formal.",
-  "de": "German separable verbs are a close model (herausfinden – find out, aufstehen – get up), so everyday phrasal verbs feel natural to German speakers.",
-  "it": "Italian verbs with a particle (andare via – go away, tirare fuori – take out) are a good model, so everyday phrasal verbs are easy to understand.",
-  "fr": "French has no phrasal verbs, so the first word that comes to mind is often a Latin-based verb (découvrir – discover instead of find out), which sounds more formal in English.",
-  "pt": "Portuguese has no phrasal verbs, so the first word that comes to mind is often a Latin-based verb (descobrir – discover instead of find out), which sounds more formal in English."
+  "es": {
+   "en": "Spanish has no phrasal verbs, so the first word that comes to mind is often a Latin-based verb (discover instead of find out). These verbs exist in English but sound more formal.",
+   "es": "El español no tiene phrasal verbs, por lo que la primera palabra que suele venir a la mente es un verbo de origen latino («discover» en vez de «find out»). Esos verbos existen en inglés, pero suenan más formales."
+  },
+  "de": {
+   "en": "German separable verbs are a close model (herausfinden – find out, aufstehen – get up), so everyday phrasal verbs feel natural to German speakers.",
+   "de": "Deutsche trennbare Verben sind ein gutes Modell («herausfinden» – «find out», «aufstehen» – «get up»), daher fühlen sich alltägliche phrasal verbs für Deutschsprachige natürlich an."
+  },
+  "it": {
+   "en": "Italian verbs with a particle (andare via – go away, tirare fuori – take out) are a good model, so everyday phrasal verbs are easy to understand.",
+   "it": "I verbi italiani con particella («andare via» – «go away», «tirare fuori» – «take out») sono un buon modello, quindi i phrasal verbs quotidiani sono facili da capire."
+  },
+  "fr": {
+   "en": "French has no phrasal verbs, so the first word that comes to mind is often a Latin-based verb (découvrir – discover instead of find out), which sounds more formal in English.",
+   "fr": "Le français n'a pas de phrasal verbs, donc le premier mot qui vient à l'esprit est souvent un verbe d'origine latine («découvrir» – «discover» plutôt que «find out»), qui sonne plus formel en anglais."
+  },
+  "pt": {
+   "en": "Portuguese has no phrasal verbs, so the first word that comes to mind is often a Latin-based verb (descobrir – discover instead of find out), which sounds more formal in English.",
+   "pt": "O português não tem phrasal verbs, então a primeira palavra que vem à mente costuma ser um verbo de origem latina («descobrir» – «discover» em vez de «find out»), que soa mais formal em inglês."
+  }
  },
  "errores": [
   {
@@ -405,7 +420,10 @@
     "fr": "se lever",
     "it": "alzarsi",
     "pt": "levantar-se"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to look for",
@@ -423,7 +441,10 @@
     "fr": "chercher",
     "it": "cercare",
     "pt": "procurar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to find out",
@@ -441,7 +462,10 @@
     "fr": "découvrir / apprendre",
     "it": "scoprire / venire a sapere",
     "pt": "descobrir / ficar a saber"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to wake up",
@@ -459,7 +483,10 @@
     "fr": "se réveiller",
     "it": "svegliarsi",
     "pt": "acordar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to pick up",
@@ -477,7 +504,10 @@
     "fr": "aller chercher / récupérer",
     "it": "andare a prendere / ritirare",
     "pt": "ir buscar / recolher"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to turn on/off",
@@ -495,7 +525,10 @@
     "fr": "allumer/éteindre",
     "it": "accendere/spegnere",
     "pt": "ligar/desligar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to give up",
@@ -513,7 +546,10 @@
     "fr": "abandonner",
     "it": "arrendersi",
     "pt": "desistir"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to put off",
@@ -531,7 +567,11 @@
     "fr": "reporter",
     "it": "rimandare",
     "pt": "adiar"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Postergar una decisión"
+   ]
   },
   {
    "expresion": "to get on with",
@@ -549,7 +589,10 @@
     "fr": "continuer",
     "it": "andare avanti con",
     "pt": "continuar com"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to run out of",
@@ -567,7 +610,10 @@
     "fr": "être à court de",
     "it": "rimanere senza",
     "pt": "ficar sem"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   },
   {
    "expresion": "to work out",
@@ -585,7 +631,11 @@
     "fr": "bien se passer",
     "it": "andare bene",
     "pt": "correr bem"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Is it one word or two?",
@@ -603,7 +653,10 @@
     "fr": "Est-ce en un mot ou deux ?",
     "it": "Va unito o separato?",
     "pt": "Fica junto ou separado?"
-   }
+   },
+   "categoriasUso": [
+    "Colocación fija"
+   ]
   }
  ],
  "mision": {

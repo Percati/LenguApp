@@ -57,11 +57,26 @@
   "Mixing marked and bare sentences within a passage, using bare ones for the strongest logical steps, is itself a rhetorical technique."
  ],
  "contraste": {
-  "es": "Formal Spanish has a rich set of connectors (por consiguiente, no obstante, asimismo), and translating each one (consequently, nevertheless, likewise) produces over-linked English. Polished English often drops the connector and lets the logic speak for itself.",
-  "de": "Formal German uses many connectors (zudem, allerdings, somit), and translating each one produces over-linked English. The German word also is a false friend: it means so or therefore, not also.",
-  "it": "Formal Italian uses many connectors (inoltre, tuttavia, pertanto), and translating each one produces over-linked English. Polished English often drops the connector altogether.",
-  "fr": "Formal French uses many connectors (en outre, toutefois, par conséquent), and en effet is a false friend: it means indeed or because, not in effect. Polished English often drops the connector altogether.",
-  "pt": "Formal Portuguese uses many connectors (além disso, contudo, portanto), and aliás is a false friend: it means besides or actually, not alias. Polished English often drops the connector altogether."
+  "es": {
+   "en": "Formal Spanish has a rich set of connectors (por consiguiente, no obstante, asimismo), and translating each one (consequently, nevertheless, likewise) produces over-linked English. Polished English often drops the connector and lets the logic speak for itself.",
+   "es": "El español formal dispone de un amplio repertorio de conectores («por consiguiente», «no obstante», «asimismo»), y traducirlos todos como «consequently», «nevertheless», «likewise» produce un inglés excesivamente enlazado. El inglés pulido suele omitir el conector y dejar que la lógica se entienda sola."
+  },
+  "de": {
+   "en": "Formal German uses many connectors (zudem, allerdings, somit), and translating each one produces over-linked English. The German word also is a false friend: it means so or therefore, not also.",
+   "de": "Formelles Deutsch verwendet viele Konnektoren («zudem, allerdings, somit»), und wenn jeder davon übersetzt wird, wirkt das Englische überverknüpft. Das deutsche «also» ist zudem ein falscher Freund: Es bedeutet «so» oder «therefore», nicht «also»."
+  },
+  "it": {
+   "en": "Formal Italian uses many connectors (inoltre, tuttavia, pertanto), and translating each one produces over-linked English. Polished English often drops the connector altogether.",
+   "it": "L'italiano formale usa molti connettivi («inoltre», «tuttavia», «pertanto»), e tradurli tutti produce un inglese eccessivamente connesso. L'inglese elegante spesso elimina del tutto il connettivo."
+  },
+  "fr": {
+   "en": "Formal French uses many connectors (en outre, toutefois, par conséquent), and en effet is a false friend: it means indeed or because, not in effect. Polished English often drops the connector altogether.",
+   "fr": "Le français formel utilise beaucoup de connecteurs («en outre», «toutefois», «par conséquent»), et «en effet» est un faux ami : il signifie «indeed» ou parfois «because», pas «in effect». L'anglais soigné omet souvent complètement le connecteur."
+  },
+  "pt": {
+   "en": "Formal Portuguese uses many connectors (além disso, contudo, portanto), and aliás is a false friend: it means besides or actually, not alias. Polished English often drops the connector altogether.",
+   "pt": "O português formal usa muitos conectores («além disso», «contudo», «portanto»), e «aliás» é um falso amigo: significa «besides» ou «actually», não «alias». O inglês bem lapidado muitas vezes elimina o conector por completo."
+  }
  },
  "errores": [
   "Using bare juxtaposition where the logical link genuinely isn't obvious, leaving the reader confused.",
@@ -251,7 +266,11 @@
     "fr": "…sont restées sans réponse. … a échoué.",
     "it": "…sono rimaste inascoltate. … è fallito.",
     "pt": "…foram ignoradas. … falhou."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "That, in itself, was the answer.",
@@ -262,7 +281,10 @@
     "fr": "C’était, en soi, la réponse.",
     "it": "Quella, di per sé, era la risposta.",
     "pt": "Isso, por si só, era a resposta."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Nobody was surprised.",
@@ -273,7 +295,11 @@
     "fr": "Personne n’a été surpris.",
     "it": "Nessuno è rimasto sorpreso.",
     "pt": "Ninguém ficou surpreendido."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "However,…",
@@ -284,7 +310,10 @@
     "fr": "Cependant,…",
     "it": "Tuttavia,…",
     "pt": "No entanto,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "As a direct result,…",
@@ -295,7 +324,10 @@
     "fr": "En conséquence directe,…",
     "it": "Come conseguenza diretta,…",
     "pt": "Como resultado direto,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Which is to say,…",
@@ -306,7 +338,11 @@
     "fr": "Autrement dit,…",
     "it": "Vale a dire,…",
     "pt": "Ou seja,…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Reformular"
+   ]
   },
   {
    "expresion": "The two facts sit side by side.",
@@ -317,7 +353,10 @@
     "fr": "Les deux faits se tiennent côte à côte.",
     "it": "I due fatti stanno l'uno accanto all'altro.",
     "pt": "Os dois factos ficam lado a lado."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Hence the caution.",
@@ -328,7 +367,10 @@
     "fr": "D'où la prudence.",
     "it": "Da qui la cautela.",
     "pt": "Daí a cautela."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Not that it follows.",
@@ -339,7 +381,10 @@
     "fr": "Non que cela en découle.",
     "it": "Non che ne consegua.",
     "pt": "Não que daí decorra."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Whether the two are connected is another matter.",
@@ -350,7 +395,10 @@
     "fr": "Savoir si les deux sont liés est une autre affaire.",
     "it": "Se le due cose siano collegate è un'altra questione.",
     "pt": "Se as duas coisas estão ligadas é outra questão."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Every marker here would be one too many.",
@@ -361,7 +409,11 @@
     "fr": "Ici, chaque connecteur serait un de trop.",
     "it": "Qui ogni connettivo sarebbe uno di troppo.",
     "pt": "Aqui qualquer conector seria um a mais."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "This one needs spelling out:",
@@ -372,7 +424,10 @@
     "fr": "Celui-ci mérite d'être explicité :",
     "it": "Questo va esplicitato:",
     "pt": "Este precisa de ser explicitado:"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {

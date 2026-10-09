@@ -207,11 +207,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische benutzt für die Zukunft meist voy a + Infinitiv oder das futuro simple, während das Deutsche das einfache Präsens bevorzugt. Spanischsprachige benutzen deshalb oft das Futur I, wo im Deutschen das Präsens natürlicher wäre.",
-  "it": "Auch das Italienische benutzt für die Zukunft oft das Präsens (domani parto – morgen fahre ich), das passt also gut. Und das futuro für Vermutungen (sarà a casa) entspricht genau dem Futur I: er wird zu Hause sein.",
-  "fr": "Auch das Französische benutzt für die nahe Zukunft oft das Präsens, das passt. Anders ist es nach quand: Das Französische verlangt dort das Futur (quand je serai à Berlin), das Deutsche das Präsens (wenn ich in Berlin bin).",
-  "pt": "Das Portugiesische benutzt für die Zukunft oft vou + Infinitiv (vou viajar amanhã). Im Deutschen reicht das Präsens: Ich fahre morgen. Nach quando steht im Portugiesischen das futuro do conjuntivo (quando chegar), im Deutschen das Präsens (wenn ich ankomme).",
-  "en": "Im Englischen braucht man für die Zukunft meist will oder going to, im Deutschen reicht das Präsens: Ich fahre morgen. Vorsicht: ich will heisst nicht I will, sondern I want."
+  "es": {
+   "de": "Das Spanische benutzt für die Zukunft meist voy a + Infinitiv oder das futuro simple, während das Deutsche das einfache Präsens bevorzugt. Spanischsprachige benutzen deshalb oft das Futur I, wo im Deutschen das Präsens natürlicher wäre.",
+   "es": "En español, el futuro suele expresarse con «voy a + infinitivo» o con el futuro simple, mientras que el alemán prefiere muchas veces el presente. Por eso, los hispanohablantes usan a menudo Futur I donde en alemán sonaría más natural el Präsens."
+  },
+  "it": {
+   "de": "Auch das Italienische benutzt für die Zukunft oft das Präsens (domani parto – morgen fahre ich), das passt also gut. Und das futuro für Vermutungen (sarà a casa) entspricht genau dem Futur I: er wird zu Hause sein.",
+   "it": "Anche l'italiano usa spesso il presente per il futuro («domani parto» – «morgen fahre ich»), quindi questo aspetto è familiare. Inoltre il futuro con valore di supposizione («sarà a casa») corrisponde bene al Futur I epistemico: «er wird zu Hause sein»."
+  },
+  "fr": {
+   "de": "Auch das Französische benutzt für die nahe Zukunft oft das Präsens, das passt. Anders ist es nach quand: Das Französische verlangt dort das Futur (quand je serai à Berlin), das Deutsche das Präsens (wenn ich in Berlin bin).",
+   "fr": "Le français utilise lui aussi souvent le présent pour un futur proche, ce qui aide. La différence apparaît après «quand» : le français exige le futur («quand je serai à Berlin»), alors que l'allemand emploie le présent («wenn ich in Berlin bin»)."
+  },
+  "pt": {
+   "de": "Das Portugiesische benutzt für die Zukunft oft vou + Infinitiv (vou viajar amanhã). Im Deutschen reicht das Präsens: Ich fahre morgen. Nach quando steht im Portugiesischen das futuro do conjuntivo (quando chegar), im Deutschen das Präsens (wenn ich ankomme).",
+   "pt": "O português costuma usar «vou + infinitivo» para o futuro («vou viajar amanhã»). Em alemão, muitas vezes basta o presente: «Ich fahre morgen». Depois de «quando», o português usa o futuro do subjuntivo («quando chegar»), enquanto o alemão usa o presente («wenn ich ankomme»)."
+  },
+  "en": {
+   "de": "Im Englischen braucht man für die Zukunft meist will oder going to, im Deutschen reicht das Präsens: Ich fahre morgen. Vorsicht: ich will heisst nicht I will, sondern I want.",
+   "en": "In English, the future usually needs «will» or «going to», whereas German often uses the present tense: «Ich fahre morgen». Be careful: German «ich will» does not mean «I will», but «I want»."
+  }
  },
  "errores": [
   {
@@ -430,7 +445,10 @@
     "fr": "Demain, je vais…",
     "it": "Domani vado…",
     "pt": "Amanhã vou…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Nächstes Jahr mache ich…",
@@ -448,7 +466,10 @@
     "fr": "L’année prochaine, je…",
     "it": "L’anno prossimo farò…",
     "pt": "No próximo ano, vou…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Ich werde das schaffen.",
@@ -466,7 +487,10 @@
     "fr": "Je vais y arriver.",
     "it": "Ce la farò.",
     "pt": "Vou conseguir."
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Das wird schon klappen.",
@@ -484,7 +508,11 @@
     "fr": "Ça va marcher.",
     "it": "Andrà tutto bene.",
     "pt": "Vai dar certo."
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Bald…",
@@ -502,7 +530,10 @@
     "fr": "Bientôt…",
     "it": "Presto…",
     "pt": "Em breve…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "In zwei Wochen…",
@@ -520,7 +551,10 @@
     "fr": "Dans deux semaines…",
     "it": "Tra due settimane…",
     "pt": "Daqui a duas semanas…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Reicht hier das Präsens?",
@@ -538,7 +572,10 @@
     "fr": "Le présent suffit-il ici ?",
     "it": "Qui basta il presente?",
     "pt": "Aqui basta o presente?"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   }
  ],
  "mision": {

@@ -60,11 +60,26 @@
   "Eine Möglichkeit wäre… öffnet Optionen, ohne eine davon zu bevorzugen."
  ],
  "contraste": {
-  "es": "Das Spanische kennt den optionalen Ratschlag (yo que tú…, podrías…) und die Rückgabe der Verantwortung (tú verás, al final decides tú). Tú verás entspricht dabei genau das musst du selbst wissen, sodass sich die Struktur fast wörtlich überträgt.",
-  "en": "Das Englische schwächt Ratschläge ähnlich ab (if I were you…), die Struktur überträgt sich gut. Die Lücke ist der Schlusszug, die ausdrückliche Rückgabe der Verantwortung (it's ultimately your call): Englischsprachige setzen ihn weniger systematisch ein, als das deutsche C1-Register erwartet.",
-  "it": "Das Italienische kennt den optionalen Ratschlag (potresti…, se fossi in te…) und die Rückgabe der Verantwortung (vedi tu, decidi tu). Diese Struktur lässt sich fast direkt übertragen: An deiner Stelle würde ich…, aber das musst du letztlich selbst entscheiden.",
-  "fr": "Das Französische hat für beide Teile genaue Entsprechungen: à ta place, je… (an deiner Stelle würde ich…) und c'est à toi de voir (das musst du selbst wissen). Die Struktur aus Option und Rückgabe der Verantwortung lässt sich fast wörtlich übertragen.",
-  "pt": "Das Portugiesische hat für beide Teile genaue Entsprechungen: no teu lugar, eu… (an deiner Stelle würde ich…) und im europäischen Portugiesisch tu é que sabes (das musst du selbst wissen). Die Struktur aus Option und Rückgabe der Verantwortung lässt sich fast wörtlich übertragen."
+  "es": {
+   "de": "Das Spanische kennt den optionalen Ratschlag (yo que tú…, podrías…) und die Rückgabe der Verantwortung (tú verás, al final decides tú). Tú verás entspricht dabei genau das musst du selbst wissen, sodass sich die Struktur fast wörtlich überträgt.",
+   "es": "El español dispone tanto del consejo opcional («yo que tú…», «podrías…») como de fórmulas para devolver la responsabilidad («tú verás», «al final decides tú»). «Tú verás» corresponde muy bien a «das musst du selbst wissen», de modo que la estructura puede trasladarse casi literalmente."
+  },
+  "en": {
+   "de": "Das Englische schwächt Ratschläge ähnlich ab (if I were you…), die Struktur überträgt sich gut. Die Lücke ist der Schlusszug, die ausdrückliche Rückgabe der Verantwortung (it's ultimately your call): Englischsprachige setzen ihn weniger systematisch ein, als das deutsche C1-Register erwartet.",
+   "en": "English softens advice in a similar way («if I were you…»), so the structure transfers well. The missing move is the explicit return of responsibility at the end («it's ultimately your call»): English speakers use this less systematically than German C1 register often expects."
+  },
+  "it": {
+   "de": "Das Italienische kennt den optionalen Ratschlag (potresti…, se fossi in te…) und die Rückgabe der Verantwortung (vedi tu, decidi tu). Diese Struktur lässt sich fast direkt übertragen: An deiner Stelle würde ich…, aber das musst du letztlich selbst entscheiden.",
+   "it": "L'italiano conosce il consiglio non vincolante («potresti…», «se fossi in te…») e la restituzione della responsabilità («vedi tu», «decidi tu»). Questa struttura si trasferisce quasi direttamente: «An deiner Stelle würde ich…, aber das musst du letztlich selbst entscheiden»."
+  },
+  "fr": {
+   "de": "Das Französische hat für beide Teile genaue Entsprechungen: à ta place, je… (an deiner Stelle würde ich…) und c'est à toi de voir (das musst du selbst wissen). Die Struktur aus Option und Rückgabe der Verantwortung lässt sich fast wörtlich übertragen.",
+   "fr": "Le français a des équivalents précis pour les deux parties : «à ta place, je…» – «an deiner Stelle würde ich…» et «c'est à toi de voir» – «das musst du selbst wissen». La structure qui propose une option puis rend la responsabilité à l'autre se transfère presque mot pour mot."
+  },
+  "pt": {
+   "de": "Das Portugiesische hat für beide Teile genaue Entsprechungen: no teu lugar, eu… (an deiner Stelle würde ich…) und im europäischen Portugiesisch tu é que sabes (das musst du selbst wissen). Die Struktur aus Option und Rückgabe der Verantwortung lässt sich fast wörtlich übertragen.",
+   "pt": "O português tem equivalentes exatos para as duas partes: «no teu lugar, eu…» (an deiner Stelle würde ich…) e, no português europeu, «tu é que sabes» (das musst du selbst wissen). A estrutura de oferecer uma opção e devolver a responsabilidade pode ser transferida quase literalmente."
+  }
  },
  "errores": [
   "Einen Ratschlag direkt mit du solltest formulieren, ohne jede Abschwächung.",
@@ -254,7 +269,10 @@
     "fr": "À ta place, je…",
     "it": "Al tuo posto, io…",
     "pt": "No teu lugar, eu…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Aus meiner Erfahrung…",
@@ -265,7 +283,10 @@
     "fr": "D’après mon expérience…",
     "it": "Per esperienza personale…",
     "pt": "Pela minha experiência…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Eine Möglichkeit wäre…",
@@ -276,7 +297,11 @@
     "fr": "Une possibilité serait…",
     "it": "Una possibilità sarebbe…",
     "pt": "Uma possibilidade seria…"
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "Letztlich musst du das selbst entscheiden.",
@@ -287,7 +312,10 @@
     "fr": "En fin de compte, c’est à toi de décider.",
     "it": "Alla fine devi decidere tu.",
     "pt": "No fim, tens de decidir tu."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   },
   {
    "expresion": "Es könnte sich lohnen, … zu…",
@@ -298,7 +326,10 @@
     "fr": "Cela pourrait valoir la peine de…",
     "it": "Potrebbe valere la pena…",
     "pt": "Poderia valer a pena…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Ich würde vorsichtig sein mit…",
@@ -309,7 +340,10 @@
     "fr": "Je serais prudent(e) avec…",
     "it": "Andrei cauto/a con…",
     "pt": "Eu teria cuidado com…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Was bei mir funktioniert hat, muss bei dir nicht passen.",
@@ -320,7 +354,11 @@
     "fr": "Ce qui a marché pour moi ne te conviendra pas forcément.",
     "it": "Ciò che ha funzionato per me non deve per forza andarti bene.",
     "pt": "O que resultou comigo não tem de te servir."
-   }
+   },
+   "categoriasUso": [
+    "Ejemplificar",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Willst du einen Rat oder soll ich einfach zuhören?",
@@ -331,7 +369,11 @@
     "fr": "Tu veux un conseil, ou je t'écoute simplement ?",
     "it": "Vuoi un consiglio o preferisci che ti ascolti e basta?",
     "pt": "Queres um conselho ou preferes que eu apenas oiça?"
-   }
+   },
+   "categoriasUso": [
+    "Pedir",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Denkbar wäre auch der umgekehrte Weg.",
@@ -342,7 +384,11 @@
     "fr": "La voie inverse serait également envisageable.",
     "it": "Sarebbe pensabile anche la via opposta.",
     "pt": "Também seria pensável o caminho inverso."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar",
+    "Describir un proceso o camino"
+   ]
   },
   {
    "expresion": "Bevor du dich entscheidest, würde ich … prüfen.",
@@ -353,7 +399,10 @@
     "fr": "Avant de décider, je vérifierais…",
     "it": "Prima di decidere, verificherei…",
     "pt": "Antes de decidires, eu verificaria…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Das ist ein Rat unter Vorbehalt: Ich kenne nicht alle Umstände.",
@@ -364,7 +413,10 @@
     "fr": "C'est un conseil sous réserve : je ne connais pas toutes les circonstances.",
     "it": "È un consiglio con riserva: non conosco tutte le circostanze.",
     "pt": "É um conselho com reservas: não conheço todas as circunstâncias."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Da würde ich mich an deiner Stelle nicht drängen lassen.",
@@ -375,7 +427,10 @@
     "fr": "À ta place, je ne me laisserais pas presser.",
     "it": "Al posto tuo non mi farei mettere fretta.",
     "pt": "No teu lugar não me deixaria pressionar."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   }
  ],
  "mision": {

@@ -61,11 +61,26 @@
   "These are markers of written, often literary or highly rhetorical register — restraint matters more than range here."
  ],
  "contraste": {
-  "es": "Spanish achieves a similar rhetorical effect through free word order and emphatic phrases (fue precisamente entonces cuando…), without obligatory grammatical inversion. Advanced Spanish speakers therefore find it hard to remember that English inversion after these openers is syntactically required, not an optional choice for emphasis.",
-  "de": "German fronts almost any element and inverts automatically (Nur dann verstand ich es), so the idea of inversion after a fronted phrase is familiar. The trap is do-support: German has no auxiliary to insert, which produces Little knew I instead of Little did I know, and the English restriction of inversion to negative or restrictive openers is new.",
-  "it": "Italian achieves emphasis through free word order and clefts (è stato allora che…), so it-clefts come easily. Grammatical inversion with do-support has no Italian model, and because Italian can place the subject after the verb freely, Italian speakers may invert where English does not allow it.",
-  "fr": "French has literary inversion after openers such as à peine or peut-être (À peine était-il arrivé que…), a close model for Hardly had he arrived when…. Clefts (c'est… que) are extremely frequent in French, so French speakers use it-clefts readily, sometimes more often than English prefers.",
-  "pt": "Portuguese emphasises through free word order and clefts (foi então que…, o que eu quero é…), so it-clefts and wh-clefts come easily. Inversion with do-support has no Portuguese model and has to be learned as a fixed set of openers."
+  "es": {
+   "en": "Spanish achieves a similar rhetorical effect through free word order and emphatic phrases (fue precisamente entonces cuando…), without obligatory grammatical inversion. Advanced Spanish speakers therefore find it hard to remember that English inversion after these openers is syntactically required, not an optional choice for emphasis.",
+   "es": "El español logra un efecto retórico parecido mediante el orden libre y expresiones enfáticas («fue precisamente entonces cuando…»), sin inversión gramatical obligatoria. A los hispanohablantes avanzados les cuesta recordar que, tras estos inicios, la inversión inglesa es sintácticamente obligatoria y no una opción estilística."
+  },
+  "de": {
+   "en": "German fronts almost any element and inverts automatically (Nur dann verstand ich es), so the idea of inversion after a fronted phrase is familiar. The trap is do-support: German has no auxiliary to insert, which produces Little knew I instead of Little did I know, and the English restriction of inversion to negative or restrictive openers is new.",
+   "de": "Deutsch kann fast jedes Element voranstellen und invertiert automatisch («Nur dann verstand ich es»), daher ist die Idee von Inversion nach einem vorangestellten Ausdruck vertraut. Die Falle ist do-support: Im Deutschen muss kein Hilfsverb eingefügt werden, wodurch «Little knew I» statt «Little did I know» entsteht. Neu ist außerdem, dass Englisch die Inversion auf negative oder restriktive Satzanfänge beschränkt."
+  },
+  "it": {
+   "en": "Italian achieves emphasis through free word order and clefts (è stato allora che…), so it-clefts come easily. Grammatical inversion with do-support has no Italian model, and because Italian can place the subject after the verb freely, Italian speakers may invert where English does not allow it.",
+   "it": "L'italiano enfatizza tramite ordine libero e cleft («è stato allora che…»), quindi gli it-cleft risultano facili. L'inversione grammaticale con do-support non ha un modello italiano e, dato che l'italiano può porre liberamente il soggetto dopo il verbo, gli italofoni possono invertire dove l'inglese non lo consente."
+  },
+  "fr": {
+   "en": "French has literary inversion after openers such as à peine or peut-être (À peine était-il arrivé que…), a close model for Hardly had he arrived when…. Clefts (c'est… que) are extremely frequent in French, so French speakers use it-clefts readily, sometimes more often than English prefers.",
+   "fr": "Le français possède une inversion littéraire après des amorces comme «à peine» ou «peut-être» («À peine était-il arrivé que…»), proche de «Hardly had he arrived when…». Les clivées («c'est… que») sont extrêmement fréquentes, donc les francophones utilisent facilement les it-clefts, parfois davantage que l'anglais ne le souhaite."
+  },
+  "pt": {
+   "en": "Portuguese emphasises through free word order and clefts (foi então que…, o que eu quero é…), so it-clefts and wh-clefts come easily. Inversion with do-support has no Portuguese model and has to be learned as a fixed set of openers.",
+   "pt": "O português enfatiza com ordem livre e clefts («foi então que…», «o que eu quero é…»), então it-clefts e wh-clefts vêm com facilidade. A inversion com do-support não tem modelo em português e precisa ser aprendida como um conjunto fixo de aberturas."
+  }
  },
  "errores": [
   "Omitting do-support after not only in the inverted clause.",
@@ -255,7 +270,10 @@
     "fr": "Ce n’est que lorsque… que…",
     "it": "Solo quando…",
     "pt": "Só quando…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "Little did…know…",
@@ -266,7 +284,11 @@
     "fr": "Loin de se douter que…",
     "it": "Poco sapeva che…",
     "pt": "Mal imaginava que…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Not only…but also…",
@@ -277,7 +299,10 @@
     "fr": "Non seulement…, mais aussi…",
     "it": "Non solo…, ma anche…",
     "pt": "Não só…, mas também…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "Rarely, if ever, has…",
@@ -288,7 +313,10 @@
     "fr": "Rarement, voire jamais, … a…",
     "it": "Raramente, se mai, … ha…",
     "pt": "Raramente, ou nunca, …"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "Never before had…",
@@ -299,7 +327,10 @@
     "fr": "Jamais auparavant… n’avait…",
     "it": "Mai prima d’ora… aveva…",
     "pt": "Nunca antes… tinha…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "So + adjective + was/were…that…",
@@ -310,7 +341,10 @@
     "fr": "Si + adjectif + était/étaient… que…",
     "it": "Così + aggettivo + era/erano… che…",
     "pt": "Tão + adjetivo + era/eram… que…"
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis"
+   ]
   },
   {
    "expresion": "Two in a row and it turns theatrical.",
@@ -321,7 +355,11 @@
     "fr": "Deux de suite et cela devient théâtral.",
     "it": "Due di fila e diventa teatrale.",
     "pt": "Duas seguidas e torna-se teatral."
-   }
+   },
+   "categoriasUso": [
+    "Orden de palabras y énfasis",
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {

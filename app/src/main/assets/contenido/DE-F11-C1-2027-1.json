@@ -56,11 +56,26 @@
   "Eine kurze Zwischenzusammenfassung hilft allen Beteiligten, wieder auf denselben Stand zu kommen."
  ],
  "contraste": {
-  "es": "Die Steuerungsformeln haben spanische Entsprechungen (volviendo a… – um auf… zurückzukommen, si me permites – darf ich kurz einhaken, resumiendo – um kurz zusammenzufassen). Neu sind vor allem die Partikeln kurz und mal, ohne die die deutsche Formel steif wirkt.",
-  "it": "Die Steuerungsformeln haben italienische Entsprechungen (tornando a… – um auf… zurückzukommen, se posso intervenire – darf ich kurz einhaken, riassumendo – um kurz zusammenzufassen). Neu sind vor allem die abschwächenden Partikeln kurz und mal (Darf ich mal kurz…?), ohne die die deutsche Formel steif wirkt.",
-  "fr": "Die Steuerungsformeln haben französische Entsprechungen (pour revenir à… – um auf… zurückzukommen, si je peux me permettre – wenn ich kurz einhaken darf, pour résumer – um kurz zusammenzufassen). Neu sind die Partikeln kurz und mal, die die deutsche Formel erst natürlich machen.",
-  "pt": "Die Steuerungsformeln haben portugiesische Entsprechungen (voltando a… – um auf… zurückzukommen, se me permite – darf ich kurz einhaken, resumindo – um kurz zusammenzufassen). Neu sind die Partikeln kurz und mal, die die deutsche Formel erst natürlich machen.",
-  "en": "Die englischen Steuerungsformeln haben direkte Entsprechungen (coming back to… – um auf… zurückzukommen, if I could just come in here – darf ich kurz einhaken, let me just recap – um kurz zusammenzufassen). Das englische just entspricht dabei oft den deutschen Partikeln kurz und mal."
+  "es": {
+   "de": "Die Steuerungsformeln haben spanische Entsprechungen (volviendo a… – um auf… zurückzukommen, si me permites – darf ich kurz einhaken, resumiendo – um kurz zusammenzufassen). Neu sind vor allem die Partikeln kurz und mal, ohne die die deutsche Formel steif wirkt.",
+   "es": "Las fórmulas para conducir la conversación tienen equivalentes en español («volviendo a…» – um auf… zurückzukommen; «si me permites» – darf ich kurz einhaken; «resumiendo» – um kurz zusammenzufassen). La novedad son sobre todo las partículas «kurz» y «mal», sin las cuales la fórmula alemana puede sonar rígida."
+  },
+  "it": {
+   "de": "Die Steuerungsformeln haben italienische Entsprechungen (tornando a… – um auf… zurückzukommen, se posso intervenire – darf ich kurz einhaken, riassumendo – um kurz zusammenzufassen). Neu sind vor allem die abschwächenden Partikeln kurz und mal (Darf ich mal kurz…?), ohne die die deutsche Formel steif wirkt.",
+   "it": "Le formule di gestione del discorso hanno equivalenti italiani: «tornando a…» – «um auf… zurückzukommen», «se posso intervenire» – «darf ich kurz einhaken», «riassumendo» – «um kurz zusammenzufassen». La novità sono soprattutto le particelle attenuanti «kurz» e «mal» («Darf ich mal kurz…?»), senza le quali la formula tedesca può suonare rigida."
+  },
+  "fr": {
+   "de": "Die Steuerungsformeln haben französische Entsprechungen (pour revenir à… – um auf… zurückzukommen, si je peux me permettre – wenn ich kurz einhaken darf, pour résumer – um kurz zusammenzufassen). Neu sind die Partikeln kurz und mal, die die deutsche Formel erst natürlich machen.",
+   "fr": "Les formules de gestion du discours ont des équivalents français : «pour revenir à…» – «um auf… zurückzukommen», «si je peux me permettre» – «wenn ich kurz einhaken darf», «pour résumer» – «um kurz zusammenzufassen». La nouveauté réside dans les particules «kurz» et «mal», qui rendent la formule allemande vraiment naturelle."
+  },
+  "pt": {
+   "de": "Die Steuerungsformeln haben portugiesische Entsprechungen (voltando a… – um auf… zurückzukommen, se me permite – darf ich kurz einhaken, resumindo – um kurz zusammenzufassen). Neu sind die Partikeln kurz und mal, die die deutsche Formel erst natürlich machen.",
+   "pt": "As fórmulas para conduzir a conversa têm equivalentes em português («voltando a…» – um auf… zurückzukommen; «se me permite» – darf ich kurz einhaken; «resumindo» – um kurz zusammenzufassen). A novidade são as partículas «kurz» e «mal», que tornam a fórmula alemã realmente natural."
+  },
+  "en": {
+   "de": "Die englischen Steuerungsformeln haben direkte Entsprechungen (coming back to… – um auf… zurückzukommen, if I could just come in here – darf ich kurz einhaken, let me just recap – um kurz zusammenzufassen). Das englische just entspricht dabei oft den deutschen Partikeln kurz und mal.",
+   "en": "English discourse-management formulas have direct German equivalents: «coming back to…» – «um auf… zurückzukommen», «if I could just come in here» – «darf ich kurz einhaken», «let me just recap» – «um kurz zusammenzufassen». English «just» often corresponds here to German «kurz» or «mal»."
+  }
  },
  "errores": [
   "Ein Gespräch zurücklenken, ohne den ursprünglichen Punkt konkret zu benennen.",
@@ -250,7 +265,10 @@
     "fr": "Pour revenir à…",
     "it": "Per tornare a…",
     "pt": "Voltando a…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Lass sie/ihn doch erst mal ausreden.",
@@ -261,7 +279,10 @@
     "fr": "Laisse-la/le finir d’abord.",
     "it": "Lasciala/lo finire prima.",
     "pt": "Deixa-a/o acabar primeiro."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Wenn ich das richtig verstehe, meint ihr…",
@@ -272,7 +293,11 @@
     "fr": "Si je comprends bien, vous voulez dire…",
     "it": "Se ho capito bene, intendete…",
     "pt": "Se percebo bem, querem dizer…"
-   }
+   },
+   "categoriasUso": [
+    "Reformular",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Bevor wir weitermachen, kurz zur Klärung:…",
@@ -283,7 +308,10 @@
     "fr": "Avant de continuer, juste pour clarifier :…",
     "it": "Prima di continuare, solo per chiarire:…",
     "pt": "Antes de continuarmos, só para esclarecer:…"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Ihr scheint beide etwas Ähnliches zu meinen.",
@@ -294,7 +322,10 @@
     "fr": "Vous semblez tous les deux vouloir dire quelque chose de similaire.",
     "it": "Sembra che entrambi intendiate qualcosa di simile.",
     "pt": "Parece que os dois querem dizer algo semelhante."
-   }
+   },
+   "categoriasUso": [
+    "Reformular"
+   ]
   },
   {
    "expresion": "Darf ich kurz einhaken?",
@@ -305,7 +336,10 @@
     "fr": "Puis-je intervenir un instant ?",
     "it": "Posso intervenire un attimo?",
     "pt": "Posso intervir um momento?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Dazu hat sich … noch gar nicht geäussert.",
@@ -316,7 +350,10 @@
     "fr": "…ne s'est pas encore exprimé là-dessus.",
     "it": "Su questo…non si è ancora espresso.",
     "pt": "Sobre isso…ainda não se pronunciou."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Wir sind etwas abgekommen, zurück zu…",
@@ -327,7 +364,10 @@
     "fr": "Nous nous sommes un peu écartés ; revenons à…",
     "it": "Ci siamo un po' allontanati; torniamo a…",
     "pt": "Desviámo-nos um pouco; voltemos a…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Können wir uns zuerst auf den Begriff einigen?",
@@ -338,7 +378,10 @@
     "fr": "Pouvons-nous d'abord nous entendre sur le terme ?",
     "it": "Possiamo prima intenderci sul termine?",
     "pt": "Podemos primeiro acordar o termo?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Da habe ich mich vorhin unklar ausgedrückt.",
@@ -349,7 +392,10 @@
     "fr": "Je me suis mal exprimé tout à l'heure.",
     "it": "Prima mi sono espresso in modo poco chiaro.",
     "pt": "Há pouco exprimi-me de forma pouco clara."
-   }
+   },
+   "categoriasUso": [
+    "Reformular"
+   ]
   },
   {
    "expresion": "Halten wir kurz fest, wo wir stehen.",
@@ -360,7 +406,10 @@
     "fr": "Notons brièvement où nous en sommes.",
     "it": "Fissiamo brevemente a che punto siamo.",
     "pt": "Fixemos brevemente onde estamos."
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Zwei Fragen laufen hier durcheinander.",
@@ -371,7 +420,10 @@
     "fr": "Deux questions se mélangent ici.",
     "it": "Qui si stanno confondendo due domande.",
     "pt": "Aqui estão a misturar-se duas perguntas."
-   }
+   },
+   "categoriasUso": [
+    "Reformular"
+   ]
   }
  ],
  "mision": {

@@ -97,11 +97,26 @@
   "*I'd rather* takes a bare infinitive for yourself (*I'd rather go*) and a past tense for someone else (*I'd rather you went*)."
  ],
  "contraste": {
-  "es": "Spanish uses the subjunctive here — ojalá tuviera más tiempo — and the subjunctive is a distinct verb form. English has no separate subjunctive left, so it borrows the past tense. The logic is the same: an unreal form for an unreal situation.",
-  "de": "German uses the Konjunktiv II (Ich wünschte, ich hätte mehr Zeit), and hätte maps neatly onto the English past had. The traps are I wish I would have… and it's time with the present tense, copied from German es wird Zeit, dass wir gehen (it's time we went).",
-  "it": "Italian uses the congiuntivo imperfetto (magari avessi più tempo), which maps well onto the English past (I wish I had more time). After è ora che, colloquial Italian often uses the present (è ora che andiamo), which leads to it's time we go instead of it's time we went.",
-  "fr": "French si seulement + imparfait (si seulement j'avais plus de temps) maps exactly onto if only I had. For wish, French uses j'aimerais or je voudrais, which leads to I would like to have more time instead of I wish I had; after il est temps que French uses the subjunctive present, which can produce it's time we go.",
-  "pt": "Portuguese expresses the wish with quem me dera (European) or tomara que (Brazilian) plus the subjunctive, which maps well onto I wish I had. After já é hora, Portuguese often uses a personal infinitive (já é hora de irmos), which corresponds well to it's time for us to go."
+  "es": {
+   "en": "Spanish uses the subjunctive here — ojalá tuviera más tiempo — and the subjunctive is a distinct verb form. English has no separate subjunctive left, so it borrows the past tense. The logic is the same: an unreal form for an unreal situation.",
+   "es": "El español usa aquí el subjuntivo —«ojalá tuviera más tiempo»— y el subjuntivo es una forma verbal distinta. El inglés ya no tiene un subjuntivo separado y reutiliza el pasado. La lógica es la misma: una forma irreal para una situación irreal."
+  },
+  "de": {
+   "en": "German uses the Konjunktiv II (Ich wünschte, ich hätte mehr Zeit), and hätte maps neatly onto the English past had. The traps are I wish I would have… and it's time with the present tense, copied from German es wird Zeit, dass wir gehen (it's time we went).",
+   "de": "Deutsch verwendet den Konjunktiv II («Ich wünschte, ich hätte mehr Zeit»), und «hätte» passt gut zum englischen past «had». Die Fallen sind «I wish I would have…» und «it's time» mit Präsens, beeinflusst von deutschem «es wird Zeit, dass wir gehen»; korrekt ist «it's time we went»."
+  },
+  "it": {
+   "en": "Italian uses the congiuntivo imperfetto (magari avessi più tempo), which maps well onto the English past (I wish I had more time). After è ora che, colloquial Italian often uses the present (è ora che andiamo), which leads to it's time we go instead of it's time we went.",
+   "it": "L'italiano usa il congiuntivo imperfetto («magari avessi più tempo»), che corrisponde bene al past inglese («I wish I had more time»). Dopo «è ora che», l'italiano colloquiale usa spesso il presente («è ora che andiamo»), il che porta a «it's time we go» invece di «it's time we went»."
+  },
+  "fr": {
+   "en": "French si seulement + imparfait (si seulement j'avais plus de temps) maps exactly onto if only I had. For wish, French uses j'aimerais or je voudrais, which leads to I would like to have more time instead of I wish I had; after il est temps que French uses the subjunctive present, which can produce it's time we go.",
+   "fr": "«Si seulement» + imparfait («si seulement j'avais plus de temps») correspond exactement à «if only I had». Pour exprimer le souhait, le français utilise «j'aimerais» ou «je voudrais», ce qui mène à «I would like to have more time» au lieu de «I wish I had». Après «il est temps que», le français utilise le subjonctif présent, ce qui peut produire «it's time we go»."
+  },
+  "pt": {
+   "en": "Portuguese expresses the wish with quem me dera (European) or tomara que (Brazilian) plus the subjunctive, which maps well onto I wish I had. After já é hora, Portuguese often uses a personal infinitive (já é hora de irmos), which corresponds well to it's time for us to go.",
+   "pt": "O português expressa o desejo com «quem me dera» no europeu ou «tomara que» no brasileiro + subjuntivo, o que se aproxima bem de «I wish I had». Depois de «já é hora», o português muitas vezes usa infinitivo pessoal («já é hora de irmos»), que corresponde bem a «it's time for us to go»."
+  }
  },
  "errores": [
   "*I wish I have more time* — the present tense breaks the structure.",
@@ -304,7 +319,11 @@
     "fr": "Si seulement je…",
     "it": "Magari io…",
     "pt": "Quem me dera…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Agradecer y disculparse"
+   ]
   },
   {
    "expresion": "I wish he would…",
@@ -315,7 +334,11 @@
     "fr": "Si seulement il voulait…",
     "it": "Magari lui…",
     "pt": "Quem me dera que ele…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "If only I had…",
@@ -326,7 +349,11 @@
     "fr": "Si seulement j’avais…",
     "it": "Se solo avessi…",
     "pt": "Se ao menos eu tivesse…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Agradecer y disculparse"
+   ]
   },
   {
    "expresion": "It's time we…",
@@ -337,7 +364,10 @@
     "fr": "Il est temps que nous…",
     "it": "È ora che noi…",
     "pt": "Está na hora de nós…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad"
+   ]
   },
   {
    "expresion": "I'd rather you didn't.",
@@ -348,7 +378,11 @@
     "fr": "Je préférerais que tu ne le fasses pas.",
     "it": "Preferirei che tu non lo facessi.",
     "pt": "Preferia que não fizesses isso."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Opinar"
+   ]
   },
   {
    "expresion": "He acts as if he knew.",
@@ -359,7 +393,11 @@
     "fr": "Il agit comme s’il savait.",
     "it": "Si comporta come se sapesse.",
     "pt": "Ele age como se soubesse."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Comparación"
+   ]
   },
   {
    "expresion": "I could have…",
@@ -370,7 +408,12 @@
     "fr": "J’aurais pu…",
     "it": "Avrei potuto…",
     "pt": "Eu poderia ter…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Suponer/especular",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Looking back,…",
@@ -381,7 +424,11 @@
     "fr": "Avec le recul, …",
     "it": "Ripensandoci, …",
     "pt": "Olhando para trás, …"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Agradecer y disculparse"
+   ]
   }
  ],
  "mision": {

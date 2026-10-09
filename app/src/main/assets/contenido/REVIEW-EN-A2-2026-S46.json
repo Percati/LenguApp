@@ -5,7 +5,14 @@
  "idioma": "en",
  "nivel": "A2",
  "clase": "review",
- "titulo": "Review Week",
+ "titulo": {
+  "en": "Review Week",
+  "de": "Wiederholungswoche",
+  "es": "Semana de repaso",
+  "fr": "Semaine de révision",
+  "it": "Settimana di ripasso",
+  "pt": "Semana de revisão"
+ },
  "minutosEstimados": 30,
  "consigna": {
   "en": "Friday, spoken: talk for 90 seconds about something that happened in the last few weeks — at work, on a trip, or at the doctor's. You may note two or three ideas first, but do not read them out.",
@@ -50,14 +57,56 @@
    "it": "*Lun (10 min).* Leggi le correzioni delle settimane dalla 41 alla 45. Annota l'errore che ritorna più spesso.",
    "pt": "*Seg (10 min).* Leia suas correções das semanas 41 a 45. Anote o erro que aparece com mais frequência."
   },
-  "*Wed (5 min).* Write three sentences where that mistake does not happen. Only three.",
-  "*Fri (5 min).* Record the 90 seconds. Then listen once: was the mistake there again?"
+  {
+   "en": "*Wed (5 min).* Write three sentences where that mistake does not happen. Only three.",
+   "de": "*Mi (5 Min.).* Schreiben Sie drei Sätze, in denen dieser Fehler nicht vorkommt. Nur drei.",
+   "es": "*Mié (5 min).* Escribe tres oraciones en las que ese error no aparezca. Solo tres.",
+   "fr": "*Mer. (5 min).* Écrivez trois phrases dans lesquelles cette erreur n'apparaît pas. Seulement trois.",
+   "it": "*Mer (5 min).* Scrivi tre frasi in cui questo errore non compare. Solo tre.",
+   "pt": "*Qua (5 min).* Escreva três frases em que esse erro não apareça. Só três."
+  },
+  {
+   "en": "*Fri (5 min).* Record the 90 seconds. Then listen once: was the mistake there again?",
+   "de": "*Fr (5 Min.).* Nehmen Sie die 90 Sekunden auf. Hören Sie danach einmal zu: War der Fehler wieder da?",
+   "es": "*Vie (5 min).* Graba los 90 segundos. Después escucha una vez: ¿volvió a aparecer el error?",
+   "fr": "*Ven. (5 min).* Enregistrez les 90 secondes. Puis écoutez une fois : l'erreur est-elle revenue ?",
+   "it": "*Ven (5 min).* Registra i 90 secondi. Poi ascolta una volta: l'errore è tornato?",
+   "pt": "*Sex (5 min).* Grave os 90 segundos. Depois ouça uma vez: o erro voltou?"
+  }
  ],
  "autochequeo": [
-  "Were all three requirements there?",
-  "Did I speak, or did I read my notes?",
-  "Were the past forms right?",
-  "Did Monday's mistake come back?"
+  {
+   "en": "Were all three requirements there?",
+   "de": "Waren alle drei Anforderungen vorhanden?",
+   "es": "¿Estaban presentes los tres requisitos?",
+   "fr": "Les trois exigences étaient-elles présentes ?",
+   "it": "C'erano tutti e tre i requisiti?",
+   "pt": "Os três requisitos estavam presentes?"
+  },
+  {
+   "en": "Did I speak, or did I read my notes?",
+   "de": "Habe ich gesprochen oder meine Notizen abgelesen?",
+   "es": "¿Hablé o leí mis notas?",
+   "fr": "Ai-je parlé ou lu mes notes ?",
+   "it": "Ho parlato o letto i miei appunti?",
+   "pt": "Eu falei ou li minhas anotações?"
+  },
+  {
+   "en": "Were the past forms right?",
+   "de": "Waren die Vergangenheitsformen richtig?",
+   "es": "¿Eran correctas las formas del pasado?",
+   "fr": "Les formes du passé étaient-elles correctes ?",
+   "it": "Le forme del passato erano corrette?",
+   "pt": "As formas de passado estavam corretas?"
+  },
+  {
+   "en": "Did Monday's mistake come back?",
+   "de": "Ist der Fehler vom Montag wiedergekommen?",
+   "es": "¿Volvió a aparecer el error del lunes?",
+   "fr": "L'erreur de lundi est-elle revenue ?",
+   "it": "L'errore di lunedì è tornato?",
+   "pt": "O erro de segunda-feira voltou?"
+  }
  ],
  "promptCorreccion": {
   "en": "This is a review of three things at A2 level: opinion with a reason, fixed transaction phrases, and the past simple. (1) For each one, say if it is there and if it is correct. (2) Tell me the one mistake I make most often. (3) Give me one sentence that contains all three. Correct nothing else. ---",

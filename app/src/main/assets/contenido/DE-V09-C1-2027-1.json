@@ -65,11 +65,26 @@
   "Diese Paare lernt man am besten zusammen, im direkten Kontrast, nicht einzeln."
  ],
  "contraste": {
-  "es": "Das Spanische hat ähnliche konnotative Paare (ahorrativo/tacaño, seguro/soberbio), sodass das Konzept bereits vertraut ist. Die Schwierigkeit liegt darin, dass die spezifischen Wörter nicht immer auf derselben Achse liegen wie ihre naheliegendste spanische Übersetzung.",
-  "it": "Das Italienische hat ähnliche Paare (snello/magro, parsimonioso/tirchio), das Prinzip der Konnotation ist also vertraut. Hilfreich ist, dass einige heikle Wörter übereinstimmen (sensibile – sensibel, eventuale – eventuell), anders als etwa im Englischen.",
-  "fr": "Das Französische hat ähnliche Paare (mince/maigre, économe/avare), und maigre ist wie mager eher negativ. Hilfreich ist, dass einige heikle Wörter übereinstimmen (sensible – sensibel, éventuel – eventuell).",
-  "pt": "Das Portugiesische hat ähnliche Paare (poupado/sovina), und einige heikle Wörter stimmen überein (sensível – sensibel, eventual – eventuell). Eine Falle ist magro: Es ist oft neutral oder positiv und entspricht eher schlank als dünn.",
-  "en": "Das Englische hat sehr ähnliche Paare (slim/thin, thrifty/stingy, confident/arrogant), das Prinzip ist also vertraut. Gefährlich sind falsche Freunde, die die Konnotation verschieben: sensibel heisst sensitive, nicht sensible, und eventuell heisst possibly, nicht eventually."
+  "es": {
+   "de": "Das Spanische hat ähnliche konnotative Paare (ahorrativo/tacaño, seguro/soberbio), sodass das Konzept bereits vertraut ist. Die Schwierigkeit liegt darin, dass die spezifischen Wörter nicht immer auf derselben Achse liegen wie ihre naheliegendste spanische Übersetzung.",
+   "es": "El español tiene pares con connotaciones similares («ahorrativo/tacaño», «seguro/soberbio»), por lo que el concepto resulta familiar. La dificultad está en que las palabras concretas no siempre se sitúan en el mismo eje valorativo que su traducción española más evidente."
+  },
+  "it": {
+   "de": "Das Italienische hat ähnliche Paare (snello/magro, parsimonioso/tirchio), das Prinzip der Konnotation ist also vertraut. Hilfreich ist, dass einige heikle Wörter übereinstimmen (sensibile – sensibel, eventuale – eventuell), anders als etwa im Englischen.",
+   "it": "L'italiano ha coppie simili («snello/magro», «parsimonioso/tirchio»), quindi il principio della connotazione è familiare. È utile anche che alcune parole delicate coincidano («sensibile» – «sensibel», «eventuale» – «eventuell»), diversamente da quanto accade per esempio in inglese."
+  },
+  "fr": {
+   "de": "Das Französische hat ähnliche Paare (mince/maigre, économe/avare), und maigre ist wie mager eher negativ. Hilfreich ist, dass einige heikle Wörter übereinstimmen (sensible – sensibel, éventuel – eventuell).",
+   "fr": "Le français a des paires comparables («mince/maigre», «économe/avare»), et «maigre», comme «mager», est plutôt négatif. Il est utile que certains mots délicats coïncident : «sensible» – «sensibel», «éventuel» – «eventuell»."
+  },
+  "pt": {
+   "de": "Das Portugiesische hat ähnliche Paare (poupado/sovina), und einige heikle Wörter stimmen überein (sensível – sensibel, eventual – eventuell). Eine Falle ist magro: Es ist oft neutral oder positiv und entspricht eher schlank als dünn.",
+   "pt": "O português tem pares semelhantes («poupado/sovina»), e algumas palavras potencialmente traiçoeiras coincidem («sensível» – sensibel, «eventual» – eventuell). Uma armadilha é «magro»: muitas vezes é neutro ou positivo e corresponde mais a «schlank» do que a «dünn»."
+  },
+  "en": {
+   "de": "Das Englische hat sehr ähnliche Paare (slim/thin, thrifty/stingy, confident/arrogant), das Prinzip ist also vertraut. Gefährlich sind falsche Freunde, die die Konnotation verschieben: sensibel heisst sensitive, nicht sensible, und eventuell heisst possibly, nicht eventually.",
+   "en": "English has very similar pairs («slim/thin», «thrifty/stingy», «confident/arrogant»), so the principle is familiar. False friends are dangerous because they shift connotation: German «sensibel» means «sensitive», not «sensible», and «eventuell» means «possibly», not «eventually»."
+  }
  },
  "errores": [
   "Ein negativ konnotiertes Wort wählen, wo ein neutrales oder positives gemeint war.",
@@ -259,7 +274,8 @@
     "fr": "sûr(e) de soi, pas arrogant(e)",
     "it": "sicuro/a di sé, non arrogante",
     "pt": "confiante, não arrogante"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "eher sparsam als geizig",
@@ -270,7 +286,8 @@
     "fr": "plutôt économe qu’avare",
     "it": "più parsimonioso che avaro",
     "pt": "mais poupado do que avarento"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "eher neugierig als aufdringlich",
@@ -281,7 +298,8 @@
     "fr": "plutôt curieux que indiscret",
     "it": "più curioso che invadente",
     "pt": "mais curioso do que intrometido"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Das wirkt auf mich…",
@@ -292,7 +310,11 @@
     "fr": "Cela me semble…",
     "it": "A me sembra…",
     "pt": "Isso parece-me…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Relativización"
+   ]
   },
   {
    "expresion": "…, um es milde auszudrücken.",
@@ -303,7 +325,8 @@
     "fr": "…, pour le dire gentiment.",
     "it": "…, per dirla con delicatezza.",
     "pt": "…, para dizer de forma suave."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "…, im positiven Sinne.",
@@ -314,7 +337,8 @@
     "fr": "…, au sens positif.",
     "it": "…, in senso positivo.",
     "pt": "…, no sentido positivo."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "eher bestimmt als herrisch",
@@ -325,7 +349,10 @@
     "fr": "ferme plutôt qu'autoritaire",
     "it": "deciso più che autoritario",
     "pt": "firme mais do que mandão"
-   }
+   },
+   "categoriasUso": [
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "eher zurückhaltend als desinteressiert",
@@ -336,7 +363,10 @@
     "fr": "réservé plutôt que désintéressé",
     "it": "riservato più che disinteressato",
     "pt": "reservado mais do que desinteressado"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "günstig, nicht billig",
@@ -347,7 +377,8 @@
     "fr": "avantageux, pas bon marché",
     "it": "conveniente, non scadente",
     "pt": "em conta, não barato"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Das klingt abwertender, als es gemeint ist.",
@@ -358,7 +389,8 @@
     "fr": "Cela sonne plus péjoratif que voulu.",
     "it": "Suona più dispregiativo di quanto s'intenda.",
     "pt": "Isso soa mais depreciativo do que se pretende."
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Welches Wort würden Sie wählen?",
@@ -369,7 +401,8 @@
     "fr": "Quel mot choisiriez-vous ?",
     "it": "Quale parola sceglierebbe?",
     "pt": "Que palavra escolheria?"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Beide Wörter treffen zu, nur nicht gleich freundlich.",
@@ -380,7 +413,8 @@
     "fr": "Les deux mots conviennent, mais pas avec la même bienveillance.",
     "it": "Entrambe le parole valgono, ma non con la stessa benevolenza.",
     "pt": "As duas palavras servem, só não com a mesma simpatia."
-   }
+   },
+   "categoriasUso": []
   }
  ],
  "mision": {

@@ -60,11 +60,26 @@
   "Could have and might have differ in confidence: could have is a genuine possibility, might have is more tentative."
  ],
  "contraste": {
-  "es": "Spanish expresses the same with si + pluscuamperfecto de subjuntivo and the conditional perfect, regret with ojalá + pluscuamperfecto de subjuntivo, and it also has the modal perfect (debería haberlo dicho, podría haberlo evitado). The logic is therefore parallel; the typical problem is the order of the pieces, since Spanish puts the modal in the conditional and English uses should have / could have + participle.",
-  "de": "German has all three pieces with close equivalents: ich wünschte, ich hätte… (I wish I had…), hätte… sollen / können (should / could have) and the Konjunktiv II Plusquamperfekt in conditionals. The typical errors come from colloquial German würde: I wish I would have… and if I would have known….",
-  "it": "Italian has the modal perfect as a separate piece (avrei dovuto dirtelo, avrei potuto evitarlo), so the logic transfers well. Translated literally, however, avrei dovuto becomes I would have had to tell you, where English says I should have told you.",
-  "fr": "French has the modal perfect (j'aurais dû le dire, j'aurais pu l'éviter) and si seulement j'avais su for regret, so the logic is parallel. Literal translation, however, turns j'aurais dû into I would have had to, where English uses should have.",
-  "pt": "Portuguese has the modal perfect in almost the same order as English: devia ter dito (should have said), podia ter evitado (could have avoided). Regret with quem me dera ter sabido (I wish I had known) also transfers well, so the three pieces are familiar."
+  "es": {
+   "en": "Spanish expresses the same with si + pluscuamperfecto de subjuntivo and the conditional perfect, regret with ojalá + pluscuamperfecto de subjuntivo, and it also has the modal perfect (debería haberlo dicho, podría haberlo evitado). The logic is therefore parallel; the typical problem is the order of the pieces, since Spanish puts the modal in the conditional and English uses should have / could have + participle.",
+   "es": "El español expresa lo mismo con «si» + pluscuamperfecto de subjuntivo y condicional compuesto, con «ojalá» + pluscuamperfecto de subjuntivo para el arrepentimiento, y también dispone del modal perfecto («debería haberlo dicho», «podría haberlo evitado»). La lógica es paralela; el problema típico es el orden de los elementos, porque el español pone el modal en condicional y el inglés usa «should have / could have» + participio."
+  },
+  "de": {
+   "en": "German has all three pieces with close equivalents: ich wünschte, ich hätte… (I wish I had…), hätte… sollen / können (should / could have) and the Konjunktiv II Plusquamperfekt in conditionals. The typical errors come from colloquial German würde: I wish I would have… and if I would have known….",
+   "de": "Im Deutschen gibt es für alle drei Elemente nahe Entsprechungen: «ich wünschte, ich hätte…» («I wish I had…»), «hätte… sollen/können» («should/could have») und den Konjunktiv II Plusquamperfekt in Konditionalsätzen. Typische Fehler kommen aus umgangssprachlichem «würde»: «I wish I would have…» und «if I would have known…»."
+  },
+  "it": {
+   "en": "Italian has the modal perfect as a separate piece (avrei dovuto dirtelo, avrei potuto evitarlo), so the logic transfers well. Translated literally, however, avrei dovuto becomes I would have had to tell you, where English says I should have told you.",
+   "it": "L'italiano ha un modal perfect separato («avrei dovuto dirtelo», «avrei potuto evitarlo»), quindi la logica si trasferisce bene. Tradotto letteralmente, però, «avrei dovuto» diventa «I would have had to tell you», dove l'inglese dice «I should have told you»."
+  },
+  "fr": {
+   "en": "French has the modal perfect (j'aurais dû le dire, j'aurais pu l'éviter) and si seulement j'avais su for regret, so the logic is parallel. Literal translation, however, turns j'aurais dû into I would have had to, where English uses should have.",
+   "fr": "Le français possède le modal perfect («j'aurais dû le dire», «j'aurais pu l'éviter») et «si seulement j'avais su» pour le regret, donc la logique est parallèle. Mais la traduction littérale transforme «j'aurais dû» en «I would have had to», là où l'anglais dit «should have»."
+  },
+  "pt": {
+   "en": "Portuguese has the modal perfect in almost the same order as English: devia ter dito (should have said), podia ter evitado (could have avoided). Regret with quem me dera ter sabido (I wish I had known) also transfers well, so the three pieces are familiar.",
+   "pt": "O português tem o modal perfect quase na mesma ordem do inglês: «devia ter dito» («should have said»), «podia ter evitado» («could have avoided»). O arrependimento com «quem me dera ter sabido» («I wish I had known») também se transfere bem, então os três elementos são familiares."
+  }
  },
  "errores": [
   "Using would have inside the if-clause of a third conditional.",
@@ -254,7 +269,12 @@
     "fr": "Si seulement je l’avais su.",
     "it": "Magari l’avessi saputo.",
     "pt": "Quem me dera ter sabido."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Agradecer y disculparse"
+   ]
   },
   {
    "expresion": "We could have avoided it.",
@@ -265,7 +285,12 @@
     "fr": "Nous aurions pu l’éviter.",
     "it": "Avremmo potuto evitarlo.",
     "pt": "Poderíamos tê-lo evitado."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "We should have asked.",
@@ -276,7 +301,12 @@
     "fr": "Nous aurions dû demander.",
     "it": "Avremmo dovuto chiedere.",
     "pt": "Deveríamos ter perguntado."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Agradecer y disculparse"
+   ]
   },
   {
    "expresion": "If we'd known, we wouldn't have…",
@@ -287,7 +317,11 @@
     "fr": "Si nous l’avions su, nous n’aurions pas…",
     "it": "Se l’avessimo saputo, non avremmo…",
     "pt": "Se tivéssemos sabido, não teríamos…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "It might have helped if…",
@@ -298,7 +332,11 @@
     "fr": "Cela aurait peut-être aidé si…",
     "it": "Avrebbe potuto aiutare se…",
     "pt": "Talvez tivesse ajudado se…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "In hindsight, we should have…",
@@ -309,7 +347,12 @@
     "fr": "Avec le recul, nous aurions dû…",
     "it": "A posteriori, avremmo dovuto…",
     "pt": "Em retrospetiva, deveríamos ter…"
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Agradecer y disculparse"
+   ]
   },
   {
    "expresion": "Part of me wishes we hadn't.",
@@ -320,7 +363,12 @@
     "fr": "Une part de moi aurait préféré que nous ne l'ayons pas fait.",
     "it": "Una parte di me vorrebbe che non l'avessimo fatto.",
     "pt": "Uma parte de mim desejava que não o tivéssemos feito."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Agradecer y disculparse"
+   ]
   },
   {
    "expresion": "I'd do the same again.",
@@ -331,7 +379,13 @@
     "fr": "Je referais la même chose.",
     "it": "Lo rifarei uguale.",
     "pt": "Voltaria a fazer o mesmo."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Discrepar",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Regret isn't quite the word.",
@@ -342,7 +396,11 @@
     "fr": "Regret n'est pas tout à fait le mot.",
     "it": "Rimpianto non è proprio la parola.",
     "pt": "Arrependimento não é bem a palavra."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "We couldn't have known at the time.",
@@ -353,7 +411,11 @@
     "fr": "Nous ne pouvions pas le savoir à l'époque.",
     "it": "All'epoca non potevamo saperlo.",
     "pt": "Na altura não podíamos saber."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "It would have made no difference anyway.",
@@ -364,7 +426,11 @@
     "fr": "Cela n'aurait de toute façon rien changé.",
     "it": "Non avrebbe comunque cambiato nulla.",
     "pt": "De qualquer forma não teria mudado nada."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)"
+   ]
   },
   {
    "expresion": "Let's leave the what-ifs for now.",
@@ -375,7 +441,12 @@
     "fr": "Laissons les et si de côté pour l'instant.",
     "it": "Lasciamo perdere i se per ora.",
     "pt": "Deixemos os e se por agora."
-   }
+   },
+   "categoriasUso": [
+    "Irrealidad y condicionalidad",
+    "Modalidad (capacidad/obligación)",
+    "Agradecer y disculparse"
+   ]
   }
  ],
  "mision": {

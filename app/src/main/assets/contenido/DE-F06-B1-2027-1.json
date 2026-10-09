@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische gibt Räte sehr direkt mit deberías, was strukturell dem deutschen solltest entspricht. An deiner Stelle hat mit yo en tu lugar eine enge Entsprechung.",
-  "it": "Dovresti entspricht du solltest, und ti consiglio di… entspricht ich rate dir, … zu – in beiden Sprachen mit Dativ. Die Formeln übertragen sich deshalb direkt.",
-  "fr": "Tu devrais entspricht du solltest, und je te conseille de… entspricht ich rate dir, … zu – in beiden Sprachen mit einem indirekten Objekt (te – dir). Die Formeln übertragen sich direkt.",
-  "pt": "Deverias bzw. você deveria entspricht du solltest, und aconselho-te a… entspricht ich rate dir, … zu. Die Formeln übertragen sich direkt.",
-  "en": "You should entspricht du solltest. Bei I advise you to… ist Vorsicht nötig: raten verlangt den Dativ (ich rate dir), was im Englischen nicht sichtbar ist."
+  "es": {
+   "de": "Das Spanische gibt Räte sehr direkt mit deberías, was strukturell dem deutschen solltest entspricht. An deiner Stelle hat mit yo en tu lugar eine enge Entsprechung.",
+   "es": "El español da consejos de forma muy directa con «deberías», que corresponde estructuralmente a «solltest» en alemán. «An deiner Stelle» tiene un equivalente cercano en «yo en tu lugar»."
+  },
+  "it": {
+   "de": "Dovresti entspricht du solltest, und ti consiglio di… entspricht ich rate dir, … zu – in beiden Sprachen mit Dativ. Die Formeln übertragen sich deshalb direkt.",
+   "it": "«Dovresti» corrisponde a «du solltest», e «ti consiglio di…» a «ich rate dir, … zu»; in entrambe le lingue compare un oggetto indiretto («ti» – «dir»). Le formule si trasferiscono quindi direttamente."
+  },
+  "fr": {
+   "de": "Tu devrais entspricht du solltest, und je te conseille de… entspricht ich rate dir, … zu – in beiden Sprachen mit einem indirekten Objekt (te – dir). Die Formeln übertragen sich direkt.",
+   "fr": "«Tu devrais» correspond à «du solltest», et «je te conseille de…» à «ich rate dir, … zu» ; dans les deux langues, on utilise un objet indirect («te» – «dir»). Les formules se transfèrent directement."
+  },
+  "pt": {
+   "de": "Deverias bzw. você deveria entspricht du solltest, und aconselho-te a… entspricht ich rate dir, … zu. Die Formeln übertragen sich direkt.",
+   "pt": "«Deverias» ou, no português do Brasil, «você deveria» corresponde a «du solltest», e «aconselho você a…» corresponde a «ich rate dir, … zu». As fórmulas se transferem diretamente."
+  },
+  "en": {
+   "de": "You should entspricht du solltest. Bei I advise you to… ist Vorsicht nötig: raten verlangt den Dativ (ich rate dir), was im Englischen nicht sichtbar ist.",
+   "en": "«You should» corresponds to «du solltest». With «I advise you to…», however, take care: «raten» requires the dative («ich rate dir»), which is not visible in English."
+  }
  },
  "errores": [
   {
@@ -405,7 +420,10 @@
     "fr": "Tu devrais…",
     "it": "Dovresti…",
     "pt": "Devias…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "An deiner Stelle würde ich…",
@@ -423,7 +441,10 @@
     "fr": "À ta place, je…",
     "it": "Al tuo posto, io…",
     "pt": "No teu lugar, eu…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Warum probierst du nicht…?",
@@ -441,7 +462,11 @@
     "fr": "Pourquoi tu n’essaies pas… ?",
     "it": "Perché non provi…?",
     "pt": "Porque não experimentas…?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Es wäre gut, wenn du…",
@@ -459,7 +484,10 @@
     "fr": "Ce serait bien si tu…",
     "it": "Sarebbe bene se tu…",
     "pt": "Seria bom se tu…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Vielleicht solltest du…",
@@ -477,7 +505,11 @@
     "fr": "Peut-être que tu devrais…",
     "it": "Forse dovresti…",
     "pt": "Talvez devesses…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Ich würde dir empfehlen, zu…",
@@ -495,7 +527,10 @@
     "fr": "Je te recommanderais de…",
     "it": "Ti consiglierei di…",
     "pt": "Recomendaria que…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Probier doch mal…",
@@ -513,7 +548,11 @@
     "fr": "Essaie donc…",
     "it": "Prova un po'…",
     "pt": "Experimenta…"
-   }
+   },
+   "categoriasUso": [
+    "Sugerir/proponer",
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "Das würde ich lassen.",
@@ -531,7 +570,10 @@
     "fr": "Je laisserais tomber.",
     "it": "Io lascerei perdere.",
     "pt": "Eu deixava isso."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "…, weil das schneller geht.",
@@ -549,7 +591,11 @@
     "fr": "…, parce que c'est plus rapide.",
     "it": "…, perché così è più veloce.",
     "pt": "…, porque assim é mais rápido."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar",
+    "Dar razones"
+   ]
   },
   {
    "expresion": "Bei mir hat das geholfen.",
@@ -567,7 +613,11 @@
     "fr": "Chez moi, cela a marché.",
     "it": "A me è servito.",
     "pt": "Comigo resultou."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar",
+    "Ejemplificar"
+   ]
   },
   {
    "expresion": "Aber du kennst die Situation besser.",
@@ -585,7 +635,10 @@
     "fr": "Mais tu connais mieux la situation.",
     "it": "Ma tu conosci meglio la situazione.",
     "pt": "Mas tu conheces melhor a situação."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   },
   {
    "expresion": "Frag am besten jemanden, der das kennt.",
@@ -603,7 +656,10 @@
     "fr": "Le mieux, c'est de demander à quelqu'un qui s'y connaît.",
     "it": "Meglio chiedere a chi se ne intende.",
     "pt": "É melhor perguntar a quem percebe."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   }
  ],
  "mision": {

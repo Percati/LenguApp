@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische erzählt meist im pretérito indefinido, einer einfachen Vergangenheitsform, was eher zum Präteritum führt. Im deutschen Gespräch steht aber das Perfekt: ich bin gegangen, ich habe gegessen.",
-  "it": "Das passato prossimo entspricht dem Perfekt sehr gut, und auch das Hilfsverb passt oft: sono andato – ich bin gegangen, ho mangiato – ich habe gegessen.",
-  "fr": "Das passé composé entspricht dem Perfekt sehr gut, und auch das Hilfsverb passt oft: je suis allé – ich bin gegangen, j'ai mangé – ich habe gegessen.",
-  "pt": "Das Portugiesische erzählt mit einer einfachen Vergangenheitsform (fui, comi), was eher zum Präteritum führt. Im deutschen Gespräch steht aber das Perfekt: ich bin gegangen, ich habe gegessen.",
-  "en": "Englischsprachige erzählen im simple past (I went, I ate), was zum Präteritum führt. Im deutschen Gespräch steht aber das Perfekt: ich bin gegangen, ich habe gegessen."
+  "es": {
+   "de": "Das Spanische erzählt meist im pretérito indefinido, einer einfachen Vergangenheitsform, was eher zum Präteritum führt. Im deutschen Gespräch steht aber das Perfekt: ich bin gegangen, ich habe gegessen.",
+   "es": "En español, los relatos suelen contarse en pretérito indefinido, una forma simple del pasado que lleva más bien hacia el Präteritum alemán. Sin embargo, en la conversación en alemán se usa el Perfekt: «ich bin gegangen», «ich habe gegessen»."
+  },
+  "it": {
+   "de": "Das passato prossimo entspricht dem Perfekt sehr gut, und auch das Hilfsverb passt oft: sono andato – ich bin gegangen, ho mangiato – ich habe gegessen.",
+   "it": "Il «passato prossimo» corrisponde molto bene al Perfekt tedesco e spesso coincide anche l'ausiliare: «sono andato» – «ich bin gegangen», «ho mangiato» – «ich habe gegessen»."
+  },
+  "fr": {
+   "de": "Das passé composé entspricht dem Perfekt sehr gut, und auch das Hilfsverb passt oft: je suis allé – ich bin gegangen, j'ai mangé – ich habe gegessen.",
+   "fr": "Le «passé composé» correspond très bien au Perfekt allemand, et l'auxiliaire coïncide souvent aussi : «je suis allé» – «ich bin gegangen», «j'ai mangé» – «ich habe gegessen»."
+  },
+  "pt": {
+   "de": "Das Portugiesische erzählt mit einer einfachen Vergangenheitsform (fui, comi), was eher zum Präteritum führt. Im deutschen Gespräch steht aber das Perfekt: ich bin gegangen, ich habe gegessen.",
+   "pt": "Em português, costuma-se narrar o passado com uma forma simples («fui», «comi»), o que leva mais facilmente ao Präteritum. Na conversa em alemão, porém, usa-se o Perfekt: «ich bin gegangen», «ich habe gegessen»."
+  },
+  "en": {
+   "de": "Englischsprachige erzählen im simple past (I went, I ate), was zum Präteritum führt. Im deutschen Gespräch steht aber das Perfekt: ich bin gegangen, ich habe gegessen.",
+   "en": "English speakers tell past events in the simple past («I went», «I ate»), which can lead them toward the German Präteritum. In spoken German, however, the Perfekt is normally used: «ich bin gegangen», «ich habe gegessen»."
+  }
  },
  "errores": [
   {
@@ -375,7 +390,10 @@
     "fr": "L’année dernière…",
     "it": "L’anno scorso…",
     "pt": "No ano passado…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Zuerst…",
@@ -393,7 +411,11 @@
     "fr": "D’abord…",
     "it": "Prima…",
     "pt": "Primeiro…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso",
+    "Describir un proceso o camino"
+   ]
   },
   {
    "expresion": "Dann…",
@@ -411,7 +433,10 @@
     "fr": "Ensuite…",
     "it": "Poi…",
     "pt": "Depois…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Es war toll.",
@@ -429,7 +454,10 @@
     "fr": "C’était super.",
     "it": "È stato fantastico.",
     "pt": "Foi ótimo."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Ich habe…gesehen.",
@@ -447,7 +475,10 @@
     "fr": "J’ai vu…",
     "it": "Ho visto…",
     "pt": "Vi…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Wir sind…gefahren.",
@@ -465,7 +496,10 @@
     "fr": "Nous sommes allés à…",
     "it": "Siamo andati a…",
     "pt": "Fomos a…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Einmal…",
@@ -483,7 +517,10 @@
     "fr": "Une fois…",
     "it": "Una volta…",
     "pt": "Uma vez…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Danach…",
@@ -501,7 +538,10 @@
     "fr": "Ensuite…",
     "it": "Dopo…",
     "pt": "Depois…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Plötzlich…",
@@ -519,7 +559,10 @@
     "fr": "Soudain…",
     "it": "All'improvviso…",
     "pt": "De repente…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Am Ende…",
@@ -537,7 +580,10 @@
     "fr": "À la fin…",
     "it": "Alla fine…",
     "pt": "No fim…"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Das war nicht so gut.",
@@ -555,7 +601,10 @@
     "fr": "Ce n'était pas très bien.",
     "it": "Non è stato granché.",
     "pt": "Isso não foi assim tão bom."
-   }
+   },
+   "categoriasUso": [
+    "Reaccionar y valorar"
+   ]
   },
   {
    "expresion": "Und was ist dann passiert?",
@@ -573,7 +622,10 @@
     "fr": "Et ensuite ?",
     "it": "E poi cos'è successo?",
     "pt": "E depois o que aconteceu?"
-   }
+   },
+   "categoriasUso": [
+    "Organizar el discurso"
+   ]
   }
  ],
  "mision": {
@@ -586,8 +638,22 @@
    "pt": "Conte a história: você estava doente. O que aconteceu?"
   },
   "requisitos": [
-   "fünf Sätze im Perfekt",
-   "*zuerst* und *dann*",
+   {
+    "de": "fünf Sätze im Perfekt",
+    "en": "five sentences in Perfekt",
+    "es": "cinco oraciones en Perfekt",
+    "fr": "cinq phrases au Perfekt",
+    "it": "cinque frasi al Perfekt",
+    "pt": "cinco frases no Perfekt"
+   },
+   {
+    "de": "*zuerst* und *dann*",
+    "en": "*zuerst* and *dann*",
+    "es": "*zuerst* y *dann*",
+    "fr": "*zuerst* et *dann*",
+    "it": "*zuerst* e *dann*",
+    "pt": "*zuerst* e *dann*"
+   },
    {
     "de": "*die Grippe*, *die Salbe* und *sich verletzen* verwenden",
     "en": "use *die Grippe*, *die Salbe* and *sich verletzen*",

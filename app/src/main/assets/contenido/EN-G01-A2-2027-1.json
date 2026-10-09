@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Spanish has both forms (trabajo, estoy trabajando), but uses the simple present more often for things happening now. Spanish speakers therefore need to pay attention to marking the difference in English, where the continuous is required for right now.",
-  "de": "German has only one present form (Ich arbeite means I work and I'm working). German speakers therefore often use the present simple for things happening now (Look, it rains) and need to practise the continuous for right now; the German word gerade is a good signal for it.",
-  "it": "Italian has a continuous form (sto lavorando – I'm working), but uses the simple present much more often for things happening now. Italian speakers therefore tend to ask What do you do? when they mean What are you doing?",
-  "fr": "French has only one simple present (je travaille means I work and I'm working); être en train de exists but is used much less than the English continuous. French speakers therefore often use the simple present for things happening now: Look, it rains.",
-  "pt": "Portuguese uses a continuous form very often (estou a trabalhar in Portugal, estou trabalhando in Brazil), so the present continuous is familiar. Brazilian Portuguese also uses it with verbs like gostar (estou gostando), which leads to I'm liking it, where English uses I like it."
+  "es": {
+   "en": "Spanish has both forms (trabajo, estoy trabajando), but uses the simple present more often for things happening now. Spanish speakers therefore need to pay attention to marking the difference in English, where the continuous is required for right now.",
+   "es": "El español tiene ambas formas («trabajo», «estoy trabajando»), pero usa el presente simple con más frecuencia para acciones en curso. Por eso, los hispanohablantes deben prestar atención a marcar la diferencia en inglés, donde el continuous es obligatorio para lo que ocurre justo ahora."
+  },
+  "de": {
+   "en": "German has only one present form (Ich arbeite means I work and I'm working). German speakers therefore often use the present simple for things happening now (Look, it rains) and need to practise the continuous for right now; the German word gerade is a good signal for it.",
+   "de": "Im Deutschen gibt es nur eine Präsensform: «Ich arbeite» kann «I work» oder «I'm working» bedeuten. Deutschsprachige verwenden deshalb im Englischen oft das present simple für etwas, das gerade passiert («Look, it rains»), und müssen das continuous für «jetzt gerade» bewusst üben. Das deutsche «gerade» ist dabei ein gutes Signal."
+  },
+  "it": {
+   "en": "Italian has a continuous form (sto lavorando – I'm working), but uses the simple present much more often for things happening now. Italian speakers therefore tend to ask What do you do? when they mean What are you doing?",
+   "it": "L'italiano ha una forma progressiva («sto lavorando» – «I'm working»), ma usa molto più spesso il presente semplice per azioni in corso. Gli italofoni tendono quindi a chiedere «What do you do?» quando intendono «What are you doing?»."
+  },
+  "fr": {
+   "en": "French has only one simple present (je travaille means I work and I'm working); être en train de exists but is used much less than the English continuous. French speakers therefore often use the simple present for things happening now: Look, it rains.",
+   "fr": "Le français n'a qu'un présent simple : «je travaille» peut signifier «I work» ou «I'm working». «Être en train de» existe, mais s'emploie bien moins que le continuous anglais. Les francophones utilisent donc souvent le simple present pour une action en cours : «Look, it rains»."
+  },
+  "pt": {
+   "en": "Portuguese uses a continuous form very often (estou a trabalhar in Portugal, estou trabalhando in Brazil), so the present continuous is familiar. Brazilian Portuguese also uses it with verbs like gostar (estou gostando), which leads to I'm liking it, where English uses I like it.",
+   "pt": "O português usa muito a forma contínua («estou a trabalhar» em Portugal, «estou trabalhando» no Brasil), então o present continuous é familiar. O português brasileiro também a usa com verbos como «gostar» («estou gostando»), o que pode levar a «I'm liking it», enquanto o inglês prefere «I like it»."
+  }
  },
  "errores": [
   {
@@ -429,7 +444,11 @@
     "fr": "Je… tous les jours.",
     "it": "Io… ogni giorno.",
     "pt": "Eu… todos os dias."
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Hábito/rutina"
+   ]
   },
   {
    "expresion": "I'm…-ing right now.",
@@ -447,7 +466,11 @@
     "fr": "Je suis en train de… en ce moment.",
     "it": "Sto… proprio adesso.",
     "pt": "Estou a… agora mesmo."
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Hábito/rutina"
+   ]
   },
   {
    "expresion": "I always…",
@@ -465,7 +488,11 @@
     "fr": "Je… toujours.",
     "it": "Io… sempre.",
     "pt": "Eu… sempre."
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Hábito/rutina"
+   ]
   },
   {
    "expresion": "At the moment, I'm…-ing",
@@ -483,7 +510,11 @@
     "fr": "En ce moment, je suis en train de…",
     "it": "Al momento sto…",
     "pt": "Neste momento, estou a…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Hábito/rutina"
+   ]
   },
   {
    "expresion": "She usually…",
@@ -501,7 +532,11 @@
     "fr": "Elle… d’habitude.",
     "it": "Di solito lei…",
     "pt": "Ela normalmente…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Hábito/rutina"
+   ]
   },
   {
    "expresion": "They're…-ing today.",
@@ -519,7 +554,11 @@
     "fr": "Ils/Elles… aujourd’hui.",
     "it": "Oggi stanno…",
     "pt": "Hoje estão a…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Hábito/rutina"
+   ]
   },
   {
    "expresion": "Always or right now?",
@@ -537,7 +576,11 @@
     "fr": "Toujours ou en ce moment ?",
     "it": "Sempre o proprio adesso?",
     "pt": "Sempre ou agora mesmo?"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico",
+    "Hábito/rutina"
+   ]
   }
  ],
  "mision": {

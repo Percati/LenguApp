@@ -60,11 +60,26 @@
   "This pattern is for genuinely unattributed or collective views — using it on a claim you could simply state as fact reads as evasive."
  ],
  "contraste": {
-  "es": "Spanish achieves the same effect with se cree que or se dice que, a single impersonal structure instead of two parallel forms (it is + verb, subject + is thought to). Spanish speakers usually learn only the it is pattern and miss the subject-initial variant, which is the more frequent one in English news and reports.",
-  "de": "German has a perfect bridge for the subject-initial pattern: sollen in its reported sense (Er soll sehr reich sein – He is said to be very rich). German speakers who map soll onto is said to / is thought to use the pattern naturally; the risk is translating man sagt as one says, which sounds stilted in English.",
-  "it": "Italian uses si dice che and marks unconfirmed information with the condizionale (sarebbe molto ricco). The typical calque is it is said that he would be very rich; the English subject-initial pattern (he is said to be…) has no direct Italian model and needs practice.",
-  "fr": "French uses on dit que, il paraît que and the conditionnel (il serait très riche). Il est censé être corresponds well to he is supposed to be, but the neutral he is said to be has no direct French model, and on dit is often calqued as one says.",
-  "pt": "Portuguese uses diz-se que or dizem que, and consta que for unconfirmed information. The subject-initial pattern (he is said to be…) has no direct model and needs practice, as Portuguese speakers tend to stay with it is said that."
+  "es": {
+   "en": "Spanish achieves the same effect with se cree que or se dice que, a single impersonal structure instead of two parallel forms (it is + verb, subject + is thought to). Spanish speakers usually learn only the it is pattern and miss the subject-initial variant, which is the more frequent one in English news and reports.",
+   "es": "El español logra el mismo efecto con «se cree que» o «se dice que», una única estructura impersonal en vez de dos formas paralelas («it is + verb», «subject + is thought to»). Los hispanohablantes suelen aprender solo el patrón con «it is» y se pierden la variante con sujeto inicial, más frecuente en noticias e informes ingleses."
+  },
+  "de": {
+   "en": "German has a perfect bridge for the subject-initial pattern: sollen in its reported sense (Er soll sehr reich sein – He is said to be very rich). German speakers who map soll onto is said to / is thought to use the pattern naturally; the risk is translating man sagt as one says, which sounds stilted in English.",
+   "de": "Für das Subjektmuster gibt es im Deutschen eine perfekte Brücke: «sollen» in berichtender Bedeutung («Er soll sehr reich sein» – «He is said to be very rich»). Wer «soll» mit «is said to / is thought to» verbindet, verwendet das Muster meist natürlich. Die Gefahr liegt darin, «man sagt» als «one says» zu übersetzen, was im Englischen steif klingt."
+  },
+  "it": {
+   "en": "Italian uses si dice che and marks unconfirmed information with the condizionale (sarebbe molto ricco). The typical calque is it is said that he would be very rich; the English subject-initial pattern (he is said to be…) has no direct Italian model and needs practice.",
+   "it": "L'italiano usa «si dice che» e marca le informazioni non confermate con il condizionale («sarebbe molto ricco»). Il calco tipico è «it is said that he would be very rich»; il modello inglese con soggetto iniziale («he is said to be…») non ha un equivalente diretto e va praticato."
+  },
+  "fr": {
+   "en": "French uses on dit que, il paraît que and the conditionnel (il serait très riche). Il est censé être corresponds well to he is supposed to be, but the neutral he is said to be has no direct French model, and on dit is often calqued as one says.",
+   "fr": "Le français utilise «on dit que», «il paraît que» et le conditionnel («il serait très riche»). «Il est censé être» correspond bien à «he is supposed to be», mais le neutre «he is said to be» n'a pas de modèle direct, et «on dit» est souvent calqué en «one says»."
+  },
+  "pt": {
+   "en": "Portuguese uses diz-se que or dizem que, and consta que for unconfirmed information. The subject-initial pattern (he is said to be…) has no direct model and needs practice, as Portuguese speakers tend to stay with it is said that.",
+   "pt": "O português usa «diz-se que» ou «dizem que», e «consta que» para informação não confirmada. O padrão com sujeito inicial («he is said to be…») não tem um modelo direto e precisa ser praticado, pois falantes de português tendem a ficar com «it is said that»."
+  }
  },
  "errores": [
   "Using this pattern on a fact that doesn't need distancing, which reads as evasive.",
@@ -233,7 +248,10 @@
     "fr": "On pense que…",
     "it": "Si ritiene che…",
     "pt": "Acredita-se que…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "…is thought to have…",
@@ -244,7 +262,10 @@
     "fr": "…aurait…",
     "it": "…si pensa che abbia…",
     "pt": "…pensa-se que terá…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "It is widely assumed that…",
@@ -255,7 +276,11 @@
     "fr": "Il est largement admis que…",
     "it": "È opinione diffusa che…",
     "pt": "Parte-se geralmente do princípio de que…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Opinar"
+   ]
   },
   {
    "expresion": "It is understood that…",
@@ -266,7 +291,10 @@
     "fr": "On croit savoir que…",
     "it": "Si apprende che…",
     "pt": "Segundo se apurou,…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad"
+   ]
   },
   {
    "expresion": "…is said to be…",
@@ -277,7 +305,11 @@
     "fr": "…serait…",
     "it": "…si dice che sia…",
     "pt": "…diz-se que é…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Discurso referido"
+   ]
   },
   {
    "expresion": "It remains to be seen whether…",
@@ -288,7 +320,12 @@
     "fr": "Reste à voir si…",
     "it": "Resta da vedere se…",
     "pt": "Resta saber se…"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad",
+    "Suponer/especular",
+    "Organizar el discurso"
+   ]
   },
   {
    "expresion": "Who believes it, though?",
@@ -299,7 +336,10 @@
     "fr": "Mais qui le croit ?",
     "it": "Ma chi lo crede?",
     "pt": "Mas quem acredita nisso?"
-   }
+   },
+   "categoriasUso": [
+    "Voz pasiva e impersonalidad"
+   ]
   }
  ],
  "mision": {

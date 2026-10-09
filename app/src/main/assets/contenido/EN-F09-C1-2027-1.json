@@ -56,11 +56,26 @@
   "One option would be… opens possibilities without ranking them, which reads as less directive than you should."
  ],
  "contraste": {
-  "es": "Spanish has the formulas for both steps (yo que tú – if I were you; tú verás – it's your call), so advice that hands the decision back transfers almost word for word.",
-  "de": "An deiner Stelle würde ich… corresponds to if I were you, I'd…, and das musst du selbst wissen to it's your call. The structure transfers almost word for word.",
-  "it": "Se fossi in te corresponds to if I were you, and vedi tu to it's your call. The structure transfers almost word for word.",
-  "fr": "À ta place corresponds to if I were you, and c'est à toi de voir to it's your call. The structure transfers almost word for word.",
-  "pt": "No teu lugar corresponds to if I were you, and the European tu é que sabes to it's your call. The structure transfers almost word for word."
+  "es": {
+   "en": "Spanish has the formulas for both steps (yo que tú – if I were you; tú verás – it's your call), so advice that hands the decision back transfers almost word for word.",
+   "es": "El español tiene las fórmulas para ambos pasos («yo que tú» – «if I were you»; «tú verás» – «it's your call»), por lo que un consejo que devuelve la decisión al otro se transfiere casi palabra por palabra."
+  },
+  "de": {
+   "en": "An deiner Stelle würde ich… corresponds to if I were you, I'd…, and das musst du selbst wissen to it's your call. The structure transfers almost word for word.",
+   "de": "«An deiner Stelle würde ich…» entspricht «if I were you, I'd…» und «das musst du selbst wissen» entspricht «it's your call». Die Struktur lässt sich fast Wort für Wort übertragen."
+  },
+  "it": {
+   "en": "Se fossi in te corresponds to if I were you, and vedi tu to it's your call. The structure transfers almost word for word.",
+   "it": "«Se fossi in te» corrisponde a «if I were you», e «vedi tu» a «it's your call». La struttura si trasferisce quasi parola per parola."
+  },
+  "fr": {
+   "en": "À ta place corresponds to if I were you, and c'est à toi de voir to it's your call. The structure transfers almost word for word.",
+   "fr": "«À ta place» correspond à «if I were you», et «c'est à toi de voir» à «it's your call». La structure se transfère presque mot pour mot."
+  },
+  "pt": {
+   "en": "No teu lugar corresponds to if I were you, and the European tu é que sabes to it's your call. The structure transfers almost word for word.",
+   "pt": "«No teu lugar» ou, no Brasil, «no seu lugar» corresponde a «if I were you», e o europeu «tu é que sabes» corresponde a «it's your call». A estrutura se transfere quase palavra por palavra."
+  }
  },
  "errores": [
   "Giving advice with you should and no softening at all.",
@@ -250,7 +265,10 @@
     "fr": "Ce qui a fonctionné pour moi, c’est…",
     "it": "Quello che ha funzionato per me è stato…",
     "pt": "O que funcionou para mim foi…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "One option would be to…",
@@ -261,7 +279,10 @@
     "fr": "Une possibilité serait de…",
     "it": "Un’opzione sarebbe…",
     "pt": "Uma opção seria…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "For what it's worth, I'd…",
@@ -272,7 +293,11 @@
     "it": "Per quel che vale, io…",
     "de": "Wenn du mich fragst, würde ich…",
     "pt": "Se serve de alguma coisa, eu…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar",
+    "Sugerir/proponer"
+   ]
   },
   {
    "expresion": "But that's your call.",
@@ -283,7 +308,10 @@
     "fr": "Mais c’est à toi de décider.",
     "it": "Ma sta a te decidere.",
     "pt": "Mas isso é decisão tua."
-   }
+   },
+   "categoriasUso": [
+    "Postergar una decisión"
+   ]
   },
   {
    "expresion": "It might be worth considering…",
@@ -294,7 +322,10 @@
     "fr": "Cela vaudrait peut-être la peine d’envisager…",
     "it": "Potrebbe valere la pena considerare…",
     "pt": "Poderia valer a pena considerar…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar"
+   ]
   },
   {
    "expresion": "I'd be careful about…",
@@ -305,7 +336,10 @@
     "fr": "Je serais prudent(e) avec…",
     "it": "Andrei cauto/a con…",
     "pt": "Eu teria cuidado com…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Do you want advice, or do you just want to think out loud?",
@@ -316,7 +350,11 @@
     "fr": "Tu veux un conseil, ou juste réfléchir à voix haute ?",
     "it": "Vuoi un consiglio o solo pensare ad alta voce?",
     "pt": "Queres um conselho ou apenas pensar em voz alta?"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar",
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "What worked for me might not transfer.",
@@ -327,7 +365,11 @@
     "fr": "Ce qui a marché pour moi ne s'applique pas forcément.",
     "it": "Ciò che ha funzionato per me potrebbe non valere per te.",
     "pt": "O que resultou comigo pode não servir."
-   }
+   },
+   "categoriasUso": [
+    "Ejemplificar",
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Before you decide, I'd find out whether…",
@@ -338,7 +380,11 @@
     "fr": "Avant de décider, je chercherais à savoir si…",
     "it": "Prima di decidere, verificherei se…",
     "pt": "Antes de decidires, eu averiguaria se…"
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar",
+    "Comparación"
+   ]
   },
   {
    "expresion": "The opposite approach is just as defensible.",
@@ -349,7 +395,10 @@
     "fr": "L'approche inverse se défend tout autant.",
     "it": "L'approccio opposto è altrettanto difendibile.",
     "pt": "A abordagem oposta é igualmente defensável."
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "Bear in mind I only know half the picture.",
@@ -360,7 +409,10 @@
     "fr": "Garde à l'esprit que je ne connais que la moitié de l'histoire.",
     "it": "Tieni presente che conosco solo metà della storia.",
     "pt": "Tem em conta que só conheço metade."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "Whatever you do, I wouldn't let yourself be rushed.",
@@ -371,7 +423,11 @@
     "fr": "Quoi que tu fasses, je ne me laisserais pas presser.",
     "it": "Qualunque cosa tu faccia, non mi farei mettere fretta.",
     "pt": "Faças o que fizeres, não me deixaria pressionar."
-   }
+   },
+   "categoriasUso": [
+    "Aconsejar",
+    "Postergar una decisión"
+   ]
   }
  ],
  "mision": {

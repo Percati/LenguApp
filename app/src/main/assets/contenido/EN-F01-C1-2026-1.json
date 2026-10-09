@@ -88,11 +88,26 @@
   "Naming the limit of your own claim strengthens it. Counter-intuitive, but reliably true in English argument."
  ],
  "contraste": {
-  "es": "Spanish can hedge inside the verb (*creo que sea* vs. *creo que es*); English can't. *I think* is only a frame, never a hedge, so English needs a second device stacked on top of it to soften anything.",
-  "de": "German softens with the Konjunktiv II and particles (das wäre wohl…, ich würde sagen), and would and I'd say are good English equivalents. The particles themselves have no counterpart, so German speakers need an extra lexical hedge in English (probably, a bit).",
-  "it": "Italian, like Spanish, can hedge inside the verb (penso che sia rather than è; sarebbe), which English cannot do. I think is only a frame in English, so Italian speakers need a second device (probably, might) to soften a claim.",
-  "fr": "French softens with the conditionnel (ce serait plutôt…), which maps well onto English would. After je pense que French uses the indicative, as English does, so French speakers mainly need to add lexical hedges (probably, a bit).",
-  "pt": "Portuguese can hedge inside the verb with the subjunctive (não acho que seja), which English cannot do. I think is only a frame in English, so Portuguese speakers need a second device (probably, might) to soften a claim."
+  "es": {
+   "en": "Spanish can hedge inside the verb (*creo que sea* vs. *creo que es*); English can't. *I think* is only a frame, never a hedge, so English needs a second device stacked on top of it to soften anything.",
+   "es": "El español puede atenuar dentro del verbo («creo que sea» frente a «creo que es»); el inglés no puede. «I think» es solo un marco, no un atenuante, por lo que el inglés necesita un segundo recurso encima de él para suavizar una afirmación."
+  },
+  "de": {
+   "en": "German softens with the Konjunktiv II and particles (das wäre wohl…, ich würde sagen), and would and I'd say are good English equivalents. The particles themselves have no counterpart, so German speakers need an extra lexical hedge in English (probably, a bit).",
+   "de": "Deutsch schwächt mit Konjunktiv II und Partikeln ab («das wäre wohl…», «ich würde sagen»), und «would» bzw. «I'd say» sind gute englische Entsprechungen. Die Partikeln selbst haben keine direkte Entsprechung, daher brauchen Deutschsprachige im Englischen oft eine zusätzliche lexikalische Abschwächung wie «probably» oder «a bit»."
+  },
+  "it": {
+   "en": "Italian, like Spanish, can hedge inside the verb (penso che sia rather than è; sarebbe), which English cannot do. I think is only a frame in English, so Italian speakers need a second device (probably, might) to soften a claim.",
+   "it": "L'italiano, come lo spagnolo, può attenuare dentro il verbo («penso che sia» invece di «è»; «sarebbe»), cosa che l'inglese non può fare. «I think» è solo una cornice in inglese, quindi serve un secondo dispositivo («probably», «might») per attenuare l'affermazione."
+  },
+  "fr": {
+   "en": "French softens with the conditionnel (ce serait plutôt…), which maps well onto English would. After je pense que French uses the indicative, as English does, so French speakers mainly need to add lexical hedges (probably, a bit).",
+   "fr": "Le français atténue avec le conditionnel («ce serait plutôt…»), qui se rend bien par «would». Après «je pense que», le français utilise l'indicatif comme l'anglais ; il faut surtout ajouter des hedges lexicaux comme «probably» ou «a bit»."
+  },
+  "pt": {
+   "en": "Portuguese can hedge inside the verb with the subjunctive (não acho que seja), which English cannot do. I think is only a frame in English, so Portuguese speakers need a second device (probably, might) to soften a claim.",
+   "pt": "O português pode atenuar dentro do verbo com o subjuntivo («não acho que seja»), algo que o inglês não pode fazer. «I think» é apenas uma moldura em inglês, então falantes de português precisam de um segundo recurso («probably», «might») para suavizar uma afirmação."
+  }
  },
  "errores": [
   "Circular reasoning: *I think remote work is good because working remotely is beneficial.*",
@@ -295,7 +310,10 @@
     "fr": "Ma position est…",
     "it": "La mia posizione è…",
     "pt": "A minha posição é…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "What makes me say that is…",
@@ -306,7 +324,10 @@
     "fr": "Ce qui me fait dire cela, c’est…",
     "it": "Ciò che mi porta a dirlo è…",
     "pt": "O que me leva a dizer isso é…"
-   }
+   },
+   "categoriasUso": [
+    "Dar razones"
+   ]
   },
   {
    "expresion": "I'd separate two things…",
@@ -317,7 +338,8 @@
     "fr": "Je distinguerais deux choses…",
     "it": "Distinguerei due cose…",
     "pt": "Eu separaria duas coisas…"
-   }
+   },
+   "categoriasUso": []
   },
   {
    "expresion": "Where I'd stop short is…",
@@ -328,7 +350,10 @@
     "fr": "Là où je m’arrêterais, c’est…",
     "it": "Dove mi fermerei è…",
     "pt": "Onde eu traçaria o limite é…"
-   }
+   },
+   "categoriasUso": [
+    "Discrepar"
+   ]
   },
   {
    "expresion": "That's my instinct, not my evidence",
@@ -339,7 +364,10 @@
     "fr": "C’est mon intuition, pas une preuve.",
     "it": "È una mia impressione, non una prova.",
     "pt": "Isso é a minha intuição, não uma prova."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "I'm outside my lane here",
@@ -350,7 +378,10 @@
     "fr": "Là, je sors de mon domaine.",
     "it": "Qui esco dal mio campo.",
     "pt": "Aqui já estou fora da minha área."
-   }
+   },
+   "categoriasUso": [
+    "Suponer/especular"
+   ]
   },
   {
    "expresion": "What's your read on it?",
@@ -361,7 +392,10 @@
     "fr": "Quelle est ton analyse ?",
     "it": "Come la vedi?",
     "pt": "Qual é a tua leitura?"
-   }
+   },
+   "categoriasUso": [
+    "Preguntar/pedir aclaración"
+   ]
   },
   {
    "expresion": "Where do you land?",
@@ -372,7 +406,10 @@
     "fr": "Où te situes-tu ?",
     "it": "Tu da che parte stai?",
     "pt": "A que conclusão chegas?"
-   }
+   },
+   "categoriasUso": [
+    "Opinar"
+   ]
   }
  ],
  "mision": {

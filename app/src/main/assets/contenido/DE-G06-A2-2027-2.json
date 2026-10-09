@@ -183,11 +183,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische unterscheidet pretérito perfecto und pretérito indefinido nach dem Zeitbezug, während das Deutsche im Gespräch fast immer das Perfekt bevorzugt.",
-  "it": "Im Gespräch erzählen Italienischsprachige meist im passato prossimo (sono andato, ho mangiato), und das entspricht dem deutschen Perfekt sehr gut. Auch das Hilfsverb passt oft: essere – sein, avere – haben.",
-  "fr": "Das passé composé (je suis allé, j'ai mangé) entspricht dem deutschen Perfekt sehr gut, und das passé simple steht wie das Präteritum vieler Verben vor allem in Büchern. Auch die Hilfsverben passen oft: être – sein, avoir – haben.",
-  "pt": "Im Portugiesischen erzählt man mit einer einfachen Form (fui, comi), deshalb liegt das Präteritum nahe. Im deutschen Gespräch benutzt man aber das Perfekt: ich bin gegangen, ich habe gegessen.",
-  "en": "Im Englischen erzählt man mit dem simple past (I went, I ate), deshalb liegt das Präteritum nahe. Im deutschen Gespräch benutzt man aber das Perfekt: ich bin gegangen, ich habe gegessen."
+  "es": {
+   "de": "Das Spanische unterscheidet pretérito perfecto und pretérito indefinido nach dem Zeitbezug, während das Deutsche im Gespräch fast immer das Perfekt bevorzugt.",
+   "es": "El español distingue entre pretérito perfecto y pretérito indefinido según la relación temporal, mientras que en alemán hablado se prefiere casi siempre el Perfekt."
+  },
+  "it": {
+   "de": "Im Gespräch erzählen Italienischsprachige meist im passato prossimo (sono andato, ho mangiato), und das entspricht dem deutschen Perfekt sehr gut. Auch das Hilfsverb passt oft: essere – sein, avere – haben.",
+   "it": "Nel parlato gli italofoni raccontano di solito al passato prossimo («sono andato», «ho mangiato»), che corrisponde molto bene al Perfekt tedesco. Anche l'ausiliare spesso coincide: «essere» – «sein», «avere» – «haben»."
+  },
+  "fr": {
+   "de": "Das passé composé (je suis allé, j'ai mangé) entspricht dem deutschen Perfekt sehr gut, und das passé simple steht wie das Präteritum vieler Verben vor allem in Büchern. Auch die Hilfsverben passen oft: être – sein, avoir – haben.",
+   "fr": "Le «passé composé» («je suis allé», «j'ai mangé») correspond très bien au Perfekt allemand, tandis que le passé simple, comme le Präteritum de nombreux verbes allemands, apparaît surtout dans les livres. Les auxiliaires coïncident souvent aussi : «être» – «sein», «avoir» – «haben»."
+  },
+  "pt": {
+   "de": "Im Portugiesischen erzählt man mit einer einfachen Form (fui, comi), deshalb liegt das Präteritum nahe. Im deutschen Gespräch benutzt man aber das Perfekt: ich bin gegangen, ich habe gegessen.",
+   "pt": "Em português, o passado costuma ser narrado com uma forma simples («fui», «comi»), por isso o Präteritum parece natural. Na conversa em alemão, porém, usa-se o Perfekt: «ich bin gegangen», «ich habe gegessen»."
+  },
+  "en": {
+   "de": "Im Englischen erzählt man mit dem simple past (I went, I ate), deshalb liegt das Präteritum nahe. Im deutschen Gespräch benutzt man aber das Perfekt: ich bin gegangen, ich habe gegessen.",
+   "en": "English tells past events with the simple past («I went», «I ate»), so the German Präteritum feels natural. In spoken German, however, the Perfekt is normally used: «ich bin gegangen», «ich habe gegessen»."
+  }
  },
  "errores": [
   {
@@ -397,7 +412,10 @@
     "fr": "J’ai fait…",
     "it": "Ho fatto…",
     "pt": "Fiz…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Ich war…",
@@ -415,7 +433,10 @@
     "fr": "J’étais…",
     "it": "Ero…",
     "pt": "Eu estava…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Ich hatte…",
@@ -433,7 +454,10 @@
     "fr": "J’avais…",
     "it": "Avevo…",
     "pt": "Eu tinha…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Gestern habe ich…",
@@ -451,7 +475,10 @@
     "fr": "Hier, j’ai…",
     "it": "Ieri ho…",
     "pt": "Ontem eu…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Letztes Jahr war ich…",
@@ -469,7 +496,10 @@
     "fr": "L’année dernière, j’étais…",
     "it": "L’anno scorso ero…",
     "pt": "No ano passado eu estava…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Ich habe…gesehen.",
@@ -487,7 +517,10 @@
     "fr": "J’ai vu…",
     "it": "Ho visto…",
     "pt": "Vi…"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   },
   {
    "expresion": "Perfekt oder Präteritum?",
@@ -505,7 +538,10 @@
     "fr": "Composé ou simple ?",
     "it": "Prossimo o remoto?",
     "pt": "Composto ou simples?"
-   }
+   },
+   "categoriasUso": [
+    "Tiempo verbal específico"
+   ]
   }
  ],
  "mision": {

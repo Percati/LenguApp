@@ -215,11 +215,26 @@
   }
  ],
  "contraste": {
-  "es": "Das Spanische unterscheidet nicht zwischen Bewegung und Ort mit unterschiedlichem Kasus: en la cocina bedeutet sowohl in der Küche als auch in die Küche. Diese fehlende Unterscheidung ist der Hauptgrund, warum Spanischsprachige den Wechsel zwischen Akkusativ und Dativ hier besonders schwierig finden.",
-  "it": "Italienische Präpositionen zeigen Ort und Richtung nicht (sono in cucina, vado in cucina), die Frage wo oder wohin ist deshalb neu. Vertraut ist die Verschmelzung mit dem Artikel (nella, sul, alla): im, am, ins und aufs funktionieren genauso, nur mit Kasus.",
-  "fr": "Das Französische zeigt Ort und Richtung nicht: je suis dans la cuisine, je vais dans la cuisine. Die Präpositionen selbst sind leicht (sur – auf, sous – unter, devant – vor, entre – zwischen), neu ist nur der Kasus.",
-  "pt": "Das Portugiesische trennt Ort und Richtung mit verschiedenen Präpositionen (estou em casa, vou para casa) und fragt onde oder para onde. Genau diese Unterscheidung entscheidet im Deutschen den Kasus; neu ist, dass dafür dieselbe Präposition mit zwei Kasus steht.",
-  "en": "Das Englische hat mit in/into und on/onto eine Brücke: Wo into oder onto passt, steht im Deutschen der Akkusativ (in die Küche, auf den Tisch). Neu ist, dass dieselbe Präposition beides kann und nur der Kasus den Unterschied zeigt."
+  "es": {
+   "de": "Das Spanische unterscheidet nicht zwischen Bewegung und Ort mit unterschiedlichem Kasus: en la cocina bedeutet sowohl in der Küche als auch in die Küche. Diese fehlende Unterscheidung ist der Hauptgrund, warum Spanischsprachige den Wechsel zwischen Akkusativ und Dativ hier besonders schwierig finden.",
+   "es": "El español no distingue ubicación y movimiento mediante casos distintos: «en la cocina» puede corresponder tanto a «in der Küche» como, según el contexto, a la idea de dirección que en alemán se expresa con «in die Küche». Esta ausencia de contraste es la principal razón por la que a los hispanohablantes les cuesta especialmente alternar entre acusativo y dativo."
+  },
+  "it": {
+   "de": "Italienische Präpositionen zeigen Ort und Richtung nicht (sono in cucina, vado in cucina), die Frage wo oder wohin ist deshalb neu. Vertraut ist die Verschmelzung mit dem Artikel (nella, sul, alla): im, am, ins und aufs funktionieren genauso, nur mit Kasus.",
+   "it": "Le preposizioni italiane non distinguono luogo e direzione («sono in cucina», «vado in cucina»), quindi la domanda «wo» o «wohin» è nuova. È invece familiare la fusione con l'articolo («nella», «sul», «alla»): «im», «am», «ins» e «aufs» funzionano in modo simile, ma con il caso."
+  },
+  "fr": {
+   "de": "Das Französische zeigt Ort und Richtung nicht: je suis dans la cuisine, je vais dans la cuisine. Die Präpositionen selbst sind leicht (sur – auf, sous – unter, devant – vor, entre – zwischen), neu ist nur der Kasus.",
+   "fr": "Le français ne marque pas la différence entre lieu et direction : «je suis dans la cuisine», «je vais dans la cuisine». Les prépositions elles-mêmes sont faciles («sur» – «auf», «sous» – «unter», «devant» – «vor», «entre» – «zwischen») ; seul le cas est nouveau."
+  },
+  "pt": {
+   "de": "Das Portugiesische trennt Ort und Richtung mit verschiedenen Präpositionen (estou em casa, vou para casa) und fragt onde oder para onde. Genau diese Unterscheidung entscheidet im Deutschen den Kasus; neu ist, dass dafür dieselbe Präposition mit zwei Kasus steht.",
+   "pt": "O português distingue lugar e direção por preposições diferentes («estou em casa», «vou para casa») e pergunta «onde» ou «para onde». É exatamente essa distinção que determina o caso em alemão; o novo é que a mesma preposição alemã pode aparecer com dois casos diferentes."
+  },
+  "en": {
+   "de": "Das Englische hat mit in/into und on/onto eine Brücke: Wo into oder onto passt, steht im Deutschen der Akkusativ (in die Küche, auf den Tisch). Neu ist, dass dieselbe Präposition beides kann und nur der Kasus den Unterschied zeigt.",
+   "en": "English provides a bridge with «in/into» and «on/onto»: where «into» or «onto» fits, German uses the accusative («in die Küche», «auf den Tisch»). The new point is that the same German preposition can express both meanings and only the case shows the difference."
+  }
  },
  "errores": [
   {
@@ -437,7 +452,11 @@
     "fr": "Je vais dans le/la…",
     "it": "Vado nel/nella…",
     "pt": "Vou para o/a…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "Ich bin in der…",
@@ -455,7 +474,11 @@
     "fr": "Je suis dans le/la…",
     "it": "Sono nel/nella…",
     "pt": "Estou no/na…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "…auf dem Tisch",
@@ -473,7 +496,11 @@
     "fr": "…sur la table",
     "it": "…sul tavolo",
     "pt": "…sobre a mesa"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "…auf den Tisch",
@@ -491,7 +518,11 @@
     "fr": "…sur la table (mouvement)",
     "it": "…sul tavolo (movimento)",
     "pt": "…para cima da mesa"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "mit dem…",
@@ -509,7 +540,11 @@
     "fr": "avec le/la…",
     "it": "con il/la…",
     "pt": "com o/a…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "für den…",
@@ -527,7 +562,11 @@
     "fr": "pour le…",
     "it": "per il…",
     "pt": "para o…"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   },
   {
    "expresion": "Welchen Kasus verlangt die Präposition?",
@@ -545,7 +584,11 @@
     "fr": "Quel cas exige la préposition ?",
     "it": "Quale caso richiede la preposizione?",
     "pt": "Que caso pede a preposição?"
-   }
+   },
+   "categoriasUso": [
+    "Rección (preposición/caso)",
+    "Caso y declinación"
+   ]
   }
  ],
  "mision": {
