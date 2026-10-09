@@ -156,7 +156,7 @@ fun ContenidoSemanalScreen(
 ) {
     when (contenido) {
         is Ficha -> FichaContenido(contenido, idiomaBase, idiomaInterfaz, fecha, estadoGuardados, modifier)
-        is SemanaEspecial -> SemanaEspecialContenido(contenido, idiomaBase, modifier)
+        is SemanaEspecial -> SemanaEspecialContenido(contenido, idiomaBase, idiomaInterfaz, modifier)
     }
 }
 
@@ -329,7 +329,7 @@ private fun FichaContenido(
                         ficha.autochequeo.forEach { Vinieta(t(it), traduccionActiva) }
                     }
 
-                    TarjetaPrompt(t(ficha.promptCorreccion), et("promptCorreccion"), traduccionActiva)
+                    TarjetaPrompt(t(ficha.promptCorreccion), et("promptCorreccion"), idiomaInterfaz, traduccionActiva)
                 }
             }
         }
@@ -393,7 +393,7 @@ private fun SwitchDesafioFinde(activo: Boolean, idiomaInterfaz: Idioma, onCambia
 }
 
 @Composable
-private fun SemanaEspecialContenido(especial: SemanaEspecial, idiomaBase: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
+private fun SemanaEspecialContenido(especial: SemanaEspecial, idiomaBase: Idioma, idiomaInterfaz: Idioma, modifier: Modifier = Modifier) = SelectionContainer {
     // Campos bilingues (A2/B1): idioma base del usuario, y el que se aprende si falta esa clave.
     // Solo las semanas A2/B1 son bilingues; B2+ se muestran en el idioma que se aprende.
     val bilingue = especial.nivel == Nivel.A2 || especial.nivel == Nivel.B1
@@ -409,7 +409,7 @@ private fun SemanaEspecialContenido(especial: SemanaEspecial, idiomaBase: Idioma
             Text(t(especial.titulo), style = MaterialTheme.typography.headlineSmall)
             val minutos = especial.minutosEstimados?.let { " · $it min" } ?: ""
             Text(
-                "${etiquetaClase(especial.clase)} · semana ${especial.semana}$minutos",
+                "${etiquetaClase(especial.clase, idiomaTexto)} · ${etiquetaSemana(idiomaTexto)} ${especial.semana}$minutos",
                 style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
@@ -430,7 +430,7 @@ private fun SemanaEspecialContenido(especial: SemanaEspecial, idiomaBase: Idioma
         }
 
         t(especial.promptCorreccion).takeIf { it.isNotBlank() }?.let {
-            TarjetaPrompt(it, et("promptCorreccion"), traducido)
+            TarjetaPrompt(it, et("promptCorreccion"), idiomaInterfaz, traducido)
         }
     }
 }
@@ -641,7 +641,7 @@ private fun CuadroReferenciaTabla(cuadro: CuadroReferencia, t: (TextoBilingue) -
 
 /** El unico botón que toca el sistema: copia el prompt de corrección al portapapeles. */
 @Composable
-private fun TarjetaPrompt(prompt: String, titulo: String, angulares: Boolean = false) {
+private fun TarjetaPrompt(prompt: String, titulo: String, idiomaInterfaz: Idioma, angulares: Boolean = false) {
     val portapapeles = LocalClipboardManager.current
     var copiado by remember { mutableStateOf(false) }
     Surface(
@@ -665,16 +665,16 @@ private fun TarjetaPrompt(prompt: String, titulo: String, angulares: Boolean = f
                     },
                     modifier = Modifier.fillMaxWidth(),
                 ) {
-                    Text(if (copiado) "Copiado" else "Copiar al portapapeles")
+                    Text(if (copiado) etiquetaCopiado(idiomaInterfaz) else etiquetaCopiarPortapapeles(idiomaInterfaz))
                 }
             }
         }
     }
 }
 
-private fun etiquetaClase(clase: Clase): String = when (clase) {
-    Clase.REVIEW -> "Semana de repaso"
-    Clase.SURVIVAL -> "Semana Survival"
+private fun etiquetaClase(clase: Clase, idioma: Idioma): String = when (clase) {
+    Clase.REVIEW -> etiquetaSemanaRepaso(idioma)
+    Clase.SURVIVAL -> etiquetaSemanaSurvival(idioma)
 }
 
 private fun etiquetaChallengeType(tipo: ChallengeType): String =

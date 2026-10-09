@@ -161,4 +161,18 @@ class TextosInterfazTest {
         assertEquals("Traduci in spagnolo", etiquetaTraducirA(Idioma.IT, Idioma.ES))
         assertEquals("Traduzir para espanhol", etiquetaTraducirA(Idioma.PT, Idioma.ES))
     }
+
+    @Test
+    fun `los textos fijos de la ficha (repaso, Survival, copiar) existen en los seis idiomas`() {
+        for (idioma in Idioma.entries) {
+            assertTrue(etiquetaSemanaRepaso(idioma).isNotBlank())
+            assertTrue(etiquetaSemanaSurvival(idioma).isNotBlank())
+            assertTrue(etiquetaCopiarPortapapeles(idioma).isNotBlank())
+            assertTrue(etiquetaCopiado(idioma).isNotBlank())
+        }
+        assertEquals("Review week", etiquetaSemanaRepaso(Idioma.EN))
+        assertEquals("Wiederholungswoche", etiquetaSemanaRepaso(Idioma.DE))
+        assertEquals("Copy to clipboard", etiquetaCopiarPortapapeles(Idioma.EN))
+        assertEquals("Copiato", etiquetaCopiado(Idioma.IT))
+    }
 }

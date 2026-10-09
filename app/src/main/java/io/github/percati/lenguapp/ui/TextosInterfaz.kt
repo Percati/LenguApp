@@ -32,6 +32,7 @@ enum class ClaveTexto {
     NIVEL, CAMBIAR_NIVEL, IDIOMA_NO_DISPONIBLE, AVISO_GLOSAS,
     GUARDADOS, GUARDADOS_VACIO, FILTRO_IDIOMA, FILTRO_TIPO, FILTRO_TODOS,
     TIPO_VOCABULARIO, TIPO_EXPRESION, DESAFIO_FINDE, TRADUCIR_A,
+    SEMANA_REPASO, SEMANA_SURVIVAL, COPIAR_PORTAPAPELES, COPIADO,
 }
 
 private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
@@ -196,6 +197,23 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.ES to "Desafío de fin de semana", Idioma.EN to "Weekend challenge", Idioma.DE to "Wochenend-Herausforderung",
         Idioma.FR to "Défi du week-end", Idioma.IT to "Sfida del weekend", Idioma.PT to "Desafio de fim de semana",
     ),
+    // --- Textos fijos de la ficha que habian quedado en espanol ---
+    ClaveTexto.SEMANA_REPASO to mapOf(
+        Idioma.ES to "Semana de repaso", Idioma.EN to "Review week", Idioma.DE to "Wiederholungswoche",
+        Idioma.FR to "Semaine de révision", Idioma.IT to "Settimana di ripasso", Idioma.PT to "Semana de revisão",
+    ),
+    ClaveTexto.SEMANA_SURVIVAL to mapOf(
+        Idioma.ES to "Semana Survival", Idioma.EN to "Survival week", Idioma.DE to "Survival-Woche",
+        Idioma.FR to "Semaine Survival", Idioma.IT to "Settimana Survival", Idioma.PT to "Semana Survival",
+    ),
+    ClaveTexto.COPIAR_PORTAPAPELES to mapOf(
+        Idioma.ES to "Copiar al portapapeles", Idioma.EN to "Copy to clipboard", Idioma.DE to "In die Zwischenablage kopieren",
+        Idioma.FR to "Copier dans le presse-papiers", Idioma.IT to "Copia negli appunti", Idioma.PT to "Copiar para a área de transferência",
+    ),
+    ClaveTexto.COPIADO to mapOf(
+        Idioma.ES to "Copiado", Idioma.EN to "Copied", Idioma.DE to "Kopiert",
+        Idioma.FR to "Copié", Idioma.IT to "Copiato", Idioma.PT to "Copiado",
+    ),
     // --- Switch de traduccion en vivo (feature 1) ---
     // Dice que HACE el switch (traducir al idioma de app), no que idioma se esta
     // viendo ahora: la etiqueta vieja "Ver en {idioma}" cambiaba de idioma al
@@ -319,6 +337,10 @@ fun etiquetaFiltroTodos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.FILTR
 fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_VOCABULARIO, idiomaInterfaz)
 fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
+fun etiquetaSemanaRepaso(idioma: Idioma): String = texto(ClaveTexto.SEMANA_REPASO, idioma)
+fun etiquetaSemanaSurvival(idioma: Idioma): String = texto(ClaveTexto.SEMANA_SURVIVAL, idioma)
+fun etiquetaCopiarPortapapeles(idiomaInterfaz: Idioma): String = texto(ClaveTexto.COPIAR_PORTAPAPELES, idiomaInterfaz)
+fun etiquetaCopiado(idiomaInterfaz: Idioma): String = texto(ClaveTexto.COPIADO, idiomaInterfaz)
 
 /**
  * Etiqueta del switch de traduccion: "Traducir al espanol". [idiomaDestino] es
