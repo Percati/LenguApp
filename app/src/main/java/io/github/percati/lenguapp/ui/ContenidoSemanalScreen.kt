@@ -294,19 +294,25 @@ private fun FichaContenido(
                     // El contraste ya no depende del switch para APARECER (solo
                     // del idioma de app: la entrada es la de idiomaBase), solo
                     // cambia de idioma -- titulo y contenido. Ver
-                    // contrasteParaMostrar().
+                    // contrasteParaMostrar(). Las citas ajenas al idioma del texto
+                    // ya vienen entre « » escritas a mano (Contrastes), asi que NO
+                    // se envuelve nada dinamicamente: un `*würde*` suelto es del
+                    // mismo idioma que la linea y no lleva « ».
                     ficha.contraste.contrasteParaMostrar(ficha.idioma, idiomaBase, idiomaMostrado)?.let { texto ->
                         val titulo = if (traduccionActiva) et("contraste") else etiquetaContraste(ficha.idioma, idiomaBase)
                         Seccion(titulo) {
-                            Text(m(texto), style = MaterialTheme.typography.bodyMedium)
+                            Text(textoConMarcado(texto), style = MaterialTheme.typography.bodyMedium)
                         }
                     }
 
                     Seccion(et("errores")) {
                         // Los errores contrastivos son los de la lengua base
                         // (idiomaBase), no los del idioma que el switch muestra.
-                        erroresParaMostrar(ficha.errores.map(t), ficha.erroresContrastivos, ficha.idioma, idiomaBase)
-                            .forEach { Vinieta(it, traduccionActiva) }
+                        ficha.errores.forEach { Vinieta(t(it), traduccionActiva) }
+                        // Estas lineas estan escritas en el idioma que se aprende (con las
+                        // citas ajenas ya entre « » a mano), como el contraste: sin angulares.
+                        erroresParaMostrar(emptyList(), ficha.erroresContrastivos, ficha.idioma, idiomaBase)
+                            .forEach { Vinieta(it) }
                     }
 
                     SeccionPlegable(titulo = "${et("vocabulario")} (${ficha.vocabulario.size})") {

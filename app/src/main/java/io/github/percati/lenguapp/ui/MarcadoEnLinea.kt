@@ -32,7 +32,8 @@ fun textoSinMarcado(texto: String): String = textoConMarcado(texto).text
  * aprende, y ademas de la cursiva se envuelve entre « » para que se vea
  * donde empieza y termina dentro de la frase traducida. Si el texto ya trae
  * los « » escritos a mano alrededor (como los escribe Traducciones en las
- * celdas traducidas), no se duplican. El destaque `**x**` no se envuelve:
+ * celdas traducidas), no se duplican; tampoco se envuelve una cita que ya
+ * contiene « » adentro. El destaque `**x**` no se envuelve:
  * marca una posicion (p.ej. del verbo), no una palabra citada.
  */
 fun textoConMarcado(texto: String, angulares: Boolean = false): AnnotatedString = buildAnnotatedString {
@@ -46,7 +47,10 @@ fun textoConMarcado(texto: String, angulares: Boolean = false): AnnotatedString 
             cita != null -> {
                 val yaEntreAngulares = texto.getOrNull(coincidencia.range.first - 1) == '«' &&
                     texto.getOrNull(coincidencia.range.last + 1) == '»'
-                val envolver = angulares && !yaEntreAngulares
+                // Una cita que ya lleva « » adentro (p.ej. `*«vorrei» – ich hätte gern*`)
+                // marca ella misma sus fragmentos ajenos: envolverla daria «««.
+                val traeAngulares = '«' in cita || '»' in cita
+                val envolver = angulares && !yaEntreAngulares && !traeAngulares
                 withStyle(SpanStyle(fontStyle = FontStyle.Italic)) {
                     if (envolver) append("«")
                     append(cita)

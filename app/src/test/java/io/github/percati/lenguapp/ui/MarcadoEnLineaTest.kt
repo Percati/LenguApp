@@ -86,4 +86,11 @@ class MarcadoEnLineaTest {
     fun `angulares no envuelve el destaque doble asterisco`() {
         assertEquals("el verbo kündigen", textoConMarcado("el verbo **kündigen**", angulares = true).text)
     }
+
+    @Test
+    fun `angulares no envuelve una cita que ya trae comillas angulares adentro`() {
+        val texto = "Hoflichkeit (*«vorrei» – ich hätte gern, «potrebbe» – könnten Sie*) passt."
+        val r = textoConMarcado(texto, angulares = true).text
+        assertEquals("Hoflichkeit («vorrei» – ich hätte gern, «potrebbe» – könnten Sie) passt.", r)
+    }
 }
