@@ -537,3 +537,22 @@ Verificado tras los commits aa953bd, 790f118, 5f9e1c2 y df6cf9e:
 3. **Prompt de conversación de voz** (aprobado 8-oct): plantilla escrita en `contenido/plantillas/prompt-voz.json`, piloto solo EN B2 y C1, 2026; la app lo arma desde la ficha (pieza 2 de Ronda B). Fer lo prueba con voz real y itera la plantilla; recién después se decide extender a otros pares. El prompt completo de Code está en `prompts/9-code-ronda-b.md`.
 
 **Diferido / largo plazo (sin cambios):** tuteo unificado (6.1) hasta el primer idioma nuevo a aprender; sumar español (roadmap PDF entregado); estética, ícono y splash (esperan referencias de Fer); app única vs. una por idioma (APK ~60 MB, 90% audio); 2028 y el resto de 2027 necesitan packs, apariciones, audio y traducciones nuevos (núcleos y calendario se reutilizan); piloto 2026 congelado con su deuda conocida.
+
+## 16. Code Ronda B — ✅ implementada (Code, oct 2026), pendiente de revisión de Fer
+
+Cuatro piezas, un commit cada una (`compileDebugKotlin compileDebugUnitTestKotlin test` en verde en cada una; 890 tests al cierre):
+
+1. **Textos fijos** (`9be2b39e`): `etiquetaClase()` ("Semana de repaso"/"Semana Survival"), "Copiar al portapapeles"/"Copiado" y el encabezado de repaso/Survival pasan por `TextosInterfaz` en los 6 idiomas; un test de cobertura por clave nueva.
+2. **Prompt de voz** (`e6f07352`): `PromptVoz.kt` arma el prompt desde la ficha con la plantilla de `plantillas/prompt-voz.json` (sin tocar su texto); línea con placeholder sin datos se descarta; máx. 6 expresiones y 6 palabras núcleo; `oralMin` redondeado (default 6). Tarjeta debajo del prompt de corrección, solo si existe plantilla `{idioma}-{nivel}` (hoy en-B2 y en-C1). Título y ayuda en 6 idiomas.
+3. **Planilla del profesor** — textos fijos en commit aparte (`646648a7`, **para revisión de Fer**: `contenido/plantillas/planilla-profesor.json`, 6 idiomas) y generador (`61aaec0e`): PDF A4 con `PdfDocument`, márgenes 20 mm, 1–2 páginas, escrito en `cacheDir/planillas/` y abierto por `FileProvider` + `ACTION_VIEW` (sin permisos de almacenamiento). Botón al final de toda ficha y semana especial.
+4. **Biblioteca** (`0431f4e8`): botón "Biblioteca" en la barra superior. Pestañas por idioma aprendido, nivel multi-selección (por defecto el nivel actual del idioma; se cambia en la pantalla sin tocar Ajustes), Vocabulario por topic, Expresiones por `categoriasUso` agrupadas en funciones comunicativas / patrones gramaticales + "Sin categoría", buscador. Items deduplicados entre fichas. Sin persistencia de filtros (regla 4).
+
+**Decisiones donde el prompt no cerraba:**
+- **Identidad de Guardados = (idioma, tipo, texto)**, ya no (skill, tipo, texto): es lo que hace que la estrella de la ficha y la de la Biblioteca sean la misma fila. `skillIdOrigen`/`nivel` quedan como el origen de la primera vez que se guardó. Quitar borra todas las filas con ese texto (incluidas duplicados de versiones anteriores).
+- `banco.json` no se embebe: `generarTopicNombresAssets` extrae solo `topicNombres`, y `categorias-uso.json` se copia a `assets/temas/` (ambos gitignored, como el calendario).
+
+**Abierto / para Fer:**
+- Los **nombres de topic y de categoría existen solo en español** (`banco.json`, `categorias-uso.json`): la Biblioteca los muestra tal cual en cualquier idioma de app. Traducirlos es decisión de contenido.
+- Planilla: **sin subtemas** (no hay dato en la ficha; se usa solo el subtítulo) y **sin reciclaje pasivo de semanas anteriores** (opcional en el prompt, no implementado).
+- **El PDF real solo se puede verificar en un dispositivo**: `PdfDocument` es nativo y no corre bajo Robolectric. Los tests cubren el layout (paginación contra `Bitmap`, ≤ 2 páginas en A2, C1, repaso y Survival) pero no los bytes del PDF.
+- `etiquetaDia` en repaso/Survival: se corrigió el idioma del encabezado; los días dentro de las microtareas ya usaban el idioma correcto desde la Ronda A.
