@@ -145,10 +145,15 @@ private fun FilaGuardado(item: ItemGuardado, idiomaBase: Idioma, enlazable: Bool
         modifier = if (enlazable) Modifier.clickable(onClick = onClick) else Modifier,
     ) {
         Column(Modifier.padding(12.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            Text(item.texto.resolver(idiomaBase, item.idioma), style = MaterialTheme.typography.bodyLarge)
+            // resolver() prefiere idiomaBase: si difiere del idioma aprendido, lo que
+            // se muestra puede ser una traduccion con una cita *entre asteriscos* del
+            // idioma que se aprende sin traducir -- misma regla que en la ficha
+            // (ContenidoSemanalScreen, textoConMarcado con angulares).
+            val angulares = idiomaBase != item.idioma
+            Text(textoConMarcado(item.texto.resolver(idiomaBase, item.idioma), angulares), style = MaterialTheme.typography.bodyLarge)
             item.funcion?.let {
                 Text(
-                    it.resolver(idiomaBase, item.idioma),
+                    textoConMarcado(it.resolver(idiomaBase, item.idioma), angulares),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )

@@ -34,6 +34,8 @@ enum class ClaveTexto {
     TIPO_VOCABULARIO, TIPO_EXPRESION, DESAFIO_FINDE, TRADUCIR_A,
     SEMANA_REPASO, SEMANA_SURVIVAL, COPIAR_PORTAPAPELES, COPIADO, PROMPT_VOZ_TITULO, PROMPT_VOZ_AYUDA, PLANILLA_BOTON, PLANILLA_SIN_LECTOR,
     BIBLIOTECA, BIBLIOTECA_BUSCAR, BIBLIOTECA_TEMA, BIBLIOTECA_SIN_CATEGORIA, BIBLIOTECA_FUNCIONES, BIBLIOTECA_PATRONES, BIBLIOTECA_VACIO,
+    QUITAR_FILTROS, QUITAR,
+    ORDENAR_POR, ORDEN_ALFABETICO, ORDEN_FECHA, ASCENDENTE, DESCENDENTE, QUITAR_ESTRELLA,
 }
 
 private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
@@ -306,6 +308,73 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Niente da mostrare con questi filtri.",
         Idioma.PT to "Nada para mostrar com estes filtros.",
     ),
+    // --- Biblioteca/Guardados: limpiar filtros (Ronda C) ---
+    ClaveTexto.QUITAR_FILTROS to mapOf(
+        Idioma.ES to "Quitar filtros",
+        Idioma.EN to "Clear filters",
+        Idioma.DE to "Filter zurücksetzen",
+        Idioma.FR to "Effacer les filtres",
+        Idioma.IT to "Rimuovi filtri",
+        Idioma.PT to "Remover filtros",
+    ),
+    // Version corta para los botones junto al titulo de cada rama de
+    // categoriasUso (el titulo ya nombra el grupo, no hace falta repetirlo).
+    ClaveTexto.QUITAR to mapOf(
+        Idioma.ES to "Quitar",
+        Idioma.EN to "Clear",
+        Idioma.DE to "Zurücksetzen",
+        Idioma.FR to "Effacer",
+        Idioma.IT to "Rimuovi",
+        Idioma.PT to "Remover",
+    ),
+    ClaveTexto.ORDENAR_POR to mapOf(
+        Idioma.ES to "Ordenar por",
+        Idioma.EN to "Sort by",
+        Idioma.DE to "Sortieren nach",
+        Idioma.FR to "Trier par",
+        Idioma.IT to "Ordina per",
+        Idioma.PT to "Ordenar por",
+    ),
+    ClaveTexto.ORDEN_ALFABETICO to mapOf(
+        Idioma.ES to "Alfabético",
+        Idioma.EN to "Alphabetical",
+        Idioma.DE to "Alphabetisch",
+        Idioma.FR to "Alphabétique",
+        Idioma.IT to "Alfabetico",
+        Idioma.PT to "Alfabético",
+    ),
+    ClaveTexto.ORDEN_FECHA to mapOf(
+        Idioma.ES to "Fecha",
+        Idioma.EN to "Date",
+        Idioma.DE to "Datum",
+        Idioma.FR to "Date",
+        Idioma.IT to "Data",
+        Idioma.PT to "Data",
+    ),
+    ClaveTexto.ASCENDENTE to mapOf(
+        Idioma.ES to "Ascendente",
+        Idioma.EN to "Ascending",
+        Idioma.DE to "Aufsteigend",
+        Idioma.FR to "Croissant",
+        Idioma.IT to "Crescente",
+        Idioma.PT to "Crescente",
+    ),
+    ClaveTexto.DESCENDENTE to mapOf(
+        Idioma.ES to "Descendente",
+        Idioma.EN to "Descending",
+        Idioma.DE to "Absteigend",
+        Idioma.FR to "Décroissant",
+        Idioma.IT to "Decrescente",
+        Idioma.PT to "Decrescente",
+    ),
+    ClaveTexto.QUITAR_ESTRELLA to mapOf(
+        Idioma.ES to "Quitar de Guardados",
+        Idioma.EN to "Remove from Saved",
+        Idioma.DE to "Aus Gespeichert entfernen",
+        Idioma.FR to "Retirer des éléments enregistrés",
+        Idioma.IT to "Rimuovi dai salvati",
+        Idioma.PT to "Remover de Salvos",
+    ),
     // --- Switch de traduccion en vivo (feature 1) ---
     // Dice que HACE el switch (traducir al idioma de app), no que idioma se esta
     // viendo ahora: la etiqueta vieja "Ver en {idioma}" cambiaba de idioma al
@@ -442,6 +511,14 @@ fun etiquetaBibliotecaSinCategoria(idiomaInterfaz: Idioma): String = texto(Clave
 fun etiquetaBibliotecaFunciones(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_FUNCIONES, idiomaInterfaz)
 fun etiquetaBibliotecaPatrones(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_PATRONES, idiomaInterfaz)
 fun etiquetaBibliotecaVacio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_VACIO, idiomaInterfaz)
+fun etiquetaQuitarFiltros(idiomaInterfaz: Idioma): String = texto(ClaveTexto.QUITAR_FILTROS, idiomaInterfaz)
+fun etiquetaQuitar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.QUITAR, idiomaInterfaz)
+fun etiquetaOrdenarPor(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ORDENAR_POR, idiomaInterfaz)
+fun etiquetaOrdenAlfabetico(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ORDEN_ALFABETICO, idiomaInterfaz)
+fun etiquetaOrdenFecha(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ORDEN_FECHA, idiomaInterfaz)
+fun etiquetaAscendente(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ASCENDENTE, idiomaInterfaz)
+fun etiquetaDescendente(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESCENDENTE, idiomaInterfaz)
+fun etiquetaQuitarEstrella(idiomaInterfaz: Idioma): String = texto(ClaveTexto.QUITAR_ESTRELLA, idiomaInterfaz)
 fun etiquetaPromptVozTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.PROMPT_VOZ_TITULO, idiomaInterfaz)
 fun etiquetaPromptVozAyuda(idiomaInterfaz: Idioma): String = texto(ClaveTexto.PROMPT_VOZ_AYUDA, idiomaInterfaz)
 

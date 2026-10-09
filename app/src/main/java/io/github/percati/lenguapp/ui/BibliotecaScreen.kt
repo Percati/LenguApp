@@ -84,9 +84,16 @@ fun BibliotecaScreen(
     var busqueda by remember { mutableStateOf("") }
 
     val idioma = idiomaElegido
-    val niveles = idioma?.let { nivelesPorIdioma[it] ?: setOfNotNull(idiomasAprendidos[it]) } ?: emptySet()
+    val nivelesDefault = idioma?.let { setOfNotNull(idiomasAprendidos[it]) } ?: emptySet()
+    val niveles = idioma?.let { nivelesPorIdioma[it] ?: nivelesDefault } ?: emptySet()
     val filtrados = remember(items, idioma, tipo, niveles, topic, categoriasElegidas, busqueda, idiomaBase) {
         if (idioma == null) emptyList() else items.filtrar(idioma, tipo, niveles, topic, categoriasElegidas, busqueda, idiomaBase)
+    }
+    val hayFiltrosQueQuitar = niveles != nivelesDefault || topic != null || categoriasElegidas.isNotEmpty()
+    fun quitarTodosLosFiltros() {
+        if (idioma != null) nivelesPorIdioma = nivelesPorIdioma - idioma
+        topic = null
+        categoriasElegidas = emptySet()
     }
 
     Column(modifier = modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
@@ -109,7 +116,7 @@ fun BibliotecaScreen(
                         }
                     }
 
-                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         FilterChip(
                             selected = tipo == TipoGuardado.VOCABULARIO,
                             onClick = { tipo = TipoGuardado.VOCABULARIO },
@@ -120,6 +127,9 @@ fun BibliotecaScreen(
                             onClick = { tipo = TipoGuardado.EXPRESION },
                             label = { Text(etiquetaTipoExpresion(idiomaInterfaz)) },
                         )
+                        if (hayFiltrosQueQuitar) {
+                            TextButton(onClick = { quitarTodosLosFiltros() }) { Text(etiquetaQuitarFiltros(idiomaInterfaz)) }
+                        }
                     }
 
                     Text(etiquetaNivel(idiomaInterfaz), style = MaterialTheme.typography.labelMedium)
@@ -138,15 +148,15 @@ fun BibliotecaScreen(
 
                     if (tipo == TipoGuardado.VOCABULARIO) {
                         Text(etiquetaBibliotecaTema(idiomaInterfaz), style = MaterialTheme.typography.labelMedium)
-                        Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                             FilterChip(selected = topic == null, onClick = { topic = null }, label = { Text(etiquetaFiltroTodos(idiomaInterfaz)) })
                             topicNombres.keys.sorted().forEach { id ->
                                 FilterChip(selected = topic == id, onClick = { topic = id }, label = { Text(topicNombres.getValue(id)) })
                             }
                         }
                     } else {
-                        RamaCategorias(etiquetaBibliotecaFunciones(idiomaInterfaz), categorias.funcionComunicativa, categoriasElegidas) { categoriasElegidas = it }
-                        RamaCategorias(etiquetaBibliotecaPatrones(idiomaInterfaz), categorias.patronGramatical, categoriasElegidas) { categoriasElegidas = it }
+                        RamaCategorias(etiquetaBibliotecaFunciones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.funcionComunicativa, categoriasElegidas) { categoriasElegidas = it }
+                        RamaCategorias(etiquetaBibliotecaPatrones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.patronGramatical, categoriasElegidas) { categoriasElegidas = it }
                         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             FilterChip(
                                 selected = SIN_CATEGORIA in categoriasElegidas,
@@ -187,10 +197,15 @@ private fun alternarEn(conjunto: Set<String>, valor: String): Set<String> =
 /** Una rama de la lista cerrada de categoriasUso, como una fila de chips con su titulo (los nombres, en espanol, tal cual). */
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun RamaCategorias(titulo: String, valores: List<String>, elegidas: Set<String>, onCambio: (Set<String>) -> Unit) {
+private fun RamaCategorias(titulo: String, etiquetaQuitar: String, valores: List<String>, elegidas: Set<String>, onCambio: (Set<String>) -> Unit) {
     if (valores.isEmpty()) return
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-        Text(titulo, style = MaterialTheme.typography.labelMedium)
+        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+            Text(titulo, style = MaterialTheme.typography.labelMedium)
+            if (elegidas.any { it in valores }) {
+                TextButton(onClick = { onCambio(elegidas - valores.toSet()) }) { Text(etiquetaQuitar, style = MaterialTheme.typography.labelMedium) }
+            }
+        }
         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             valores.forEach { v ->
                 FilterChip(selected = v in elegidas, onClick = { onCambio(alternarEn(elegidas, v)) }, label = { Text(v) })
@@ -210,10 +225,15 @@ private fun FilaBiblioteca(item: ItemBiblioteca, idiomaBase: Idioma, guardada: B
         Row(Modifier.padding(start = 12.dp, top = 8.dp, bottom = 8.dp, end = 4.dp), verticalAlignment = Alignment.CenterVertically) {
             Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
                 Text(item.texto, style = MaterialTheme.typography.bodyLarge)
-                Text(traduccion, style = MaterialTheme.typography.bodyMedium)
+                // La traduccion esta en idiomaBase: una cita *entre asteriscos* ahi
+                // adentro es, como en la ficha, una palabra del idioma que se
+                // aprende que quedo sin traducir -- misma regla que m() en
+                // ContenidoSemanalScreen (textoConMarcado, angulares cuando los
+                // idiomas difieren).
+                Text(textoConMarcado(traduccion, angulares = item.idioma != idiomaBase), style = MaterialTheme.typography.bodyMedium)
                 item.funcion?.let {
                     Text(
-                        it.resolver(item.idioma, item.idioma),
+                        textoConMarcado(it.resolver(item.idioma, item.idioma)),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
