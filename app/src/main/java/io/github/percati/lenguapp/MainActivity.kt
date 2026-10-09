@@ -44,6 +44,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import io.github.percati.lenguapp.datos.cargarAjustes
 import io.github.percati.lenguapp.datos.cargarContenidoDesdeAssets
+import io.github.percati.lenguapp.datos.cargarPlantillasPromptVozDesdeAssets
 import io.github.percati.lenguapp.datos.guardarAjustes
 import io.github.percati.lenguapp.datos.nombresCalendarioDisponibles
 import io.github.percati.lenguapp.datos.resolverSemana
@@ -112,6 +113,7 @@ class MainActivity : ComponentActivity() {
         val contenidoTodos = cargarContenidoDesdeAssets(this)
         val contenidoPorId = contenidoTodos.associateBy { it.id }
         val repositorioGuardados = RepositorioGuardados(this)
+        val promptsVoz = cargarPlantillasPromptVozDesdeAssets(this)
         setContent {
             LenguAppApp(
                 ajustesIniciales = ajustesIniciales,
@@ -119,6 +121,7 @@ class MainActivity : ComponentActivity() {
                 nivelesConContenido = nivelesConContenido,
                 contenidoTodos = contenidoTodos,
                 repositorioGuardados = repositorioGuardados,
+                promptsVoz = promptsVoz,
                 resolver = { idioma, nivel, fecha -> resolverSemana(this, contenidoPorId, idioma, nivel, fecha) },
                 onGuardarAjustes = { guardarAjustes(this, it) },
             )
@@ -147,6 +150,7 @@ internal fun LenguAppApp(
     // ejercitan no necesitan levantar Room.
     contenidoTodos: List<ContenidoSemanal> = emptyList(),
     repositorioGuardados: RepositorioGuardados? = null,
+    promptsVoz: Map<String, String> = emptyMap(),
 ) {
     var ajustes by remember { mutableStateOf(ajustesIniciales) }
     var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
@@ -219,6 +223,7 @@ internal fun LenguAppApp(
                         onAjustes = { navController.navigate(DESTINO_AJUSTES) },
                         onGuardados = { navController.navigate(DESTINO_GUARDADOS) },
                         guardadosDeLaFicha = ::estadoGuardadosPara,
+                        promptsVoz = promptsVoz,
                     )
                 }
                 composable(DESTINO_AJUSTES) {
@@ -256,6 +261,7 @@ internal fun LenguAppApp(
                                 ajustes.idiomaBase,
                                 idiomaInterfaz = idiomaAplicacion,
                                 estadoGuardados = estadoGuardadosPara(ficha),
+                                promptsVoz = promptsVoz,
                             )
                         }
                     }
@@ -280,6 +286,7 @@ private fun PantallaPrincipal(
     onAjustes: () -> Unit,
     onGuardados: () -> Unit,
     guardadosDeLaFicha: (Ficha) -> EstadoGuardados,
+    promptsVoz: Map<String, String>,
 ) {
     ManejarDobleAtrasParaSalir(idiomaAplicacion)
 
@@ -315,7 +322,10 @@ private fun PantallaPrincipal(
                 ?.let { it as? Ficha }
                 ?.let(guardadosDeLaFicha)
                 ?: EstadoGuardados()
-            PantallaSemana(resultado, ajustes.idiomaBase, idiomaAplicacion, fecha = fechaVista, estadoGuardados = estadoGuardados)
+            PantallaSemana(
+                resultado, ajustes.idiomaBase, idiomaAplicacion,
+                fecha = fechaVista, estadoGuardados = estadoGuardados, promptsVoz = promptsVoz,
+            )
         }
     }
 }

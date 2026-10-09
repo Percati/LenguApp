@@ -58,6 +58,7 @@ import io.github.percati.lenguapp.modelo.VocabularioItem
 import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
 import io.github.percati.lenguapp.presentacion.contrasteParaMostrar
 import io.github.percati.lenguapp.presentacion.erroresParaMostrar
+import io.github.percati.lenguapp.presentacion.promptVozPara
 import io.github.percati.lenguapp.presentacion.traduccionParaMostrar
 import io.github.percati.lenguapp.semana.RazonSinContenido
 import io.github.percati.lenguapp.semana.ResultadoSemana
@@ -109,10 +110,11 @@ fun PantallaSemana(
     modifier: Modifier = Modifier,
     fecha: LocalDate = LocalDate.now(),
     estadoGuardados: EstadoGuardados = EstadoGuardados(),
+    promptsVoz: Map<String, String> = emptyMap(),
 ) {
     when (resultado) {
         is ResultadoSemana.Encontrado ->
-            ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier, idiomaInterfaz, fecha, estadoGuardados)
+            ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier, idiomaInterfaz, fecha, estadoGuardados, promptsVoz)
         is ResultadoSemana.SinContenido -> SinContenidoMensaje(resultado, idiomaInterfaz, modifier)
     }
 }
@@ -153,9 +155,11 @@ fun ContenidoSemanalScreen(
     // nunca lo pasa, asi que siempre arranca en la fecha real de hoy.
     fecha: LocalDate = LocalDate.now(),
     estadoGuardados: EstadoGuardados = EstadoGuardados(),
+    // Plantillas de prompt de voz por "idioma-nivel" (ver presentacion/PromptVoz.kt).
+    promptsVoz: Map<String, String> = emptyMap(),
 ) {
     when (contenido) {
-        is Ficha -> FichaContenido(contenido, idiomaBase, idiomaInterfaz, fecha, estadoGuardados, modifier)
+        is Ficha -> FichaContenido(contenido, idiomaBase, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, modifier)
         is SemanaEspecial -> SemanaEspecialContenido(contenido, idiomaBase, idiomaInterfaz, modifier)
     }
 }
@@ -171,6 +175,7 @@ private fun FichaContenido(
     idiomaInterfaz: Idioma,
     fecha: LocalDate,
     estadoGuardados: EstadoGuardados,
+    promptsVoz: Map<String, String>,
     modifier: Modifier = Modifier,
 ) {
     // Feature 1 (switch de traduccion en vivo): estado local, nunca
@@ -330,6 +335,19 @@ private fun FichaContenido(
                     }
 
                     TarjetaPrompt(t(ficha.promptCorreccion), et("promptCorreccion"), idiomaInterfaz, traduccionActiva)
+
+                    // Prompt de voz: siempre en el idioma que se aprende (la IA
+                    // tiene que hablarlo), sin switch de traduccion; solo si hay
+                    // plantilla para este (idioma, nivel). Titulo y ayuda en el
+                    // idioma de interfaz.
+                    promptVozPara(ficha, promptsVoz)?.let { promptVoz ->
+                        TarjetaPrompt(
+                            promptVoz,
+                            etiquetaPromptVozTitulo(idiomaInterfaz),
+                            idiomaInterfaz,
+                            ayuda = etiquetaPromptVozAyuda(idiomaInterfaz),
+                        )
+                    }
                 }
             }
         }
@@ -641,7 +659,7 @@ private fun CuadroReferenciaTabla(cuadro: CuadroReferencia, t: (TextoBilingue) -
 
 /** El unico botón que toca el sistema: copia el prompt de corrección al portapapeles. */
 @Composable
-private fun TarjetaPrompt(prompt: String, titulo: String, idiomaInterfaz: Idioma, angulares: Boolean = false) {
+private fun TarjetaPrompt(prompt: String, titulo: String, idiomaInterfaz: Idioma, angulares: Boolean = false, ayuda: String? = null) {
     val portapapeles = LocalClipboardManager.current
     var copiado by remember { mutableStateOf(false) }
     Surface(
@@ -651,6 +669,7 @@ private fun TarjetaPrompt(prompt: String, titulo: String, idiomaInterfaz: Idioma
     ) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             Text(titulo, style = MaterialTheme.typography.titleMedium)
+            ayuda?.let { Text(textoConMarcado(it), style = MaterialTheme.typography.bodySmall) }
             Text(textoConMarcado(prompt, angulares), style = MaterialTheme.typography.bodyMedium)
             // Es la unica accion de la pantalla: boton de ancho completo,
             // no un boton mas perdido entre el resto -- AJUSTES-FASE-5.md, B4.5.

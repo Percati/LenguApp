@@ -156,11 +156,22 @@ val generarCalendarioAssets by tasks.registering {
     }
 }
 
+// Plantillas de prompt de voz (proyecto/contenido/plantillas/prompt-voz.json):
+// Fer las itera en ese JSON, asi que viven alli y se copian a assets/ en cada
+// build, igual que el calendario -- no se versiona la copia.
+val copiarPlantillasAssets by tasks.registering(Copy::class) {
+    group = "build"
+    description = "Copia a assets/plantillas/ las plantillas de prompt de voz."
+    from(File(rootDir, "proyecto/contenido/plantillas")) { include("prompt-voz.json") }
+    into(File(projectDir, "src/main/assets/plantillas"))
+}
+
 // preBuild es dependencia transitiva tanto de compileDebugKotlin como de
 // compileDebugUnitTestKotlin, asi que esto corre antes de compilar y antes
 // de testear, en ambas variantes.
 tasks.matching { it.name == "preBuild" }.configureEach {
     dependsOn(generarCalendarioAssets)
+    dependsOn(copiarPlantillasAssets)
 }
 
 // assembleDebug debe fallar si el JSON de assets/ no valida contra el schema:

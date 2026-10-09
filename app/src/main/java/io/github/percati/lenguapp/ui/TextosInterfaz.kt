@@ -32,7 +32,7 @@ enum class ClaveTexto {
     NIVEL, CAMBIAR_NIVEL, IDIOMA_NO_DISPONIBLE, AVISO_GLOSAS,
     GUARDADOS, GUARDADOS_VACIO, FILTRO_IDIOMA, FILTRO_TIPO, FILTRO_TODOS,
     TIPO_VOCABULARIO, TIPO_EXPRESION, DESAFIO_FINDE, TRADUCIR_A,
-    SEMANA_REPASO, SEMANA_SURVIVAL, COPIAR_PORTAPAPELES, COPIADO,
+    SEMANA_REPASO, SEMANA_SURVIVAL, COPIAR_PORTAPAPELES, COPIADO, PROMPT_VOZ_TITULO, PROMPT_VOZ_AYUDA,
 }
 
 private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
@@ -214,6 +214,23 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.ES to "Copiado", Idioma.EN to "Copied", Idioma.DE to "Kopiert",
         Idioma.FR to "Copié", Idioma.IT to "Copiato", Idioma.PT to "Copiado",
     ),
+    // --- Prompt de conversacion de voz (Ronda B, pieza 2) ---
+    ClaveTexto.PROMPT_VOZ_TITULO to mapOf(
+        Idioma.ES to "Prompt para conversar por voz",
+        Idioma.EN to "Prompt for a voice conversation",
+        Idioma.DE to "Prompt für ein Sprachgespräch",
+        Idioma.FR to "Prompt pour converser à l'oral",
+        Idioma.IT to "Prompt per conversare a voce",
+        Idioma.PT to "Prompt para conversar por voz",
+    ),
+    ClaveTexto.PROMPT_VOZ_AYUDA to mapOf(
+        Idioma.ES to "Pegalo al empezar una conversación de voz con tu IA. Decile *feedback* cuando quieras la devolución.",
+        Idioma.EN to "Paste it at the start of a voice conversation with your AI. Say *feedback* whenever you want the debrief.",
+        Idioma.DE to "Füge ihn zu Beginn eines Sprachgesprächs mit deiner KI ein. Sag *feedback*, wenn du die Rückmeldung möchtest.",
+        Idioma.FR to "Collez-le au début d'une conversation vocale avec votre IA. Dites *feedback* quand vous voulez le retour.",
+        Idioma.IT to "Incollalo all'inizio di una conversazione vocale con la tua IA. Di' *feedback* quando vuoi la valutazione.",
+        Idioma.PT to "Cole-o no início de uma conversa por voz com a sua IA. Diga *feedback* quando quiser o retorno.",
+    ),
     // --- Switch de traduccion en vivo (feature 1) ---
     // Dice que HACE el switch (traducir al idioma de app), no que idioma se esta
     // viendo ahora: la etiqueta vieja "Ver en {idioma}" cambiaba de idioma al
@@ -341,6 +358,8 @@ fun etiquetaSemanaRepaso(idioma: Idioma): String = texto(ClaveTexto.SEMANA_REPAS
 fun etiquetaSemanaSurvival(idioma: Idioma): String = texto(ClaveTexto.SEMANA_SURVIVAL, idioma)
 fun etiquetaCopiarPortapapeles(idiomaInterfaz: Idioma): String = texto(ClaveTexto.COPIAR_PORTAPAPELES, idiomaInterfaz)
 fun etiquetaCopiado(idiomaInterfaz: Idioma): String = texto(ClaveTexto.COPIADO, idiomaInterfaz)
+fun etiquetaPromptVozTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.PROMPT_VOZ_TITULO, idiomaInterfaz)
+fun etiquetaPromptVozAyuda(idiomaInterfaz: Idioma): String = texto(ClaveTexto.PROMPT_VOZ_AYUDA, idiomaInterfaz)
 
 /**
  * Etiqueta del switch de traduccion: "Traducir al espanol". [idiomaDestino] es
