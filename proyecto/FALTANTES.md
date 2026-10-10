@@ -775,3 +775,8 @@ Verificado por Overview: el parche de Code (9 commits) aplica limpio sobre `ab35
 - Va a Traducciones como `prompts/14-traducciones-neutro-lexico-usted.md`, **antes** de Code Ronda F. Incluye la regla R7 del verificador.
 - Medido (assets, 10-oct): ~438 imperativos de «usted» en ~145 archivos; léxico peninsular: piso 40, billete 60 (mucho es dinero, válido), aparcar 9, coche 8, ordenador 6, móvil 6, camarero 3, tío/tía 4, coger confianza 1.
 - Parche de assets tras el tuteo (`9cd4de7d`) aplicado y verificado: recomposición idéntica, 0 diferencias.
+
+### 23.2 Español neutro parte 2 — ✅ hecho (Traducciones, verificado por Overview 10-oct-2026)
+- 232 cadenas «usted»→«tú», lista corta de léxico aplicada (piso→apartamento, billete de transporte→boleto, aparcar→estacionar, coche→auto, ordenador→computadora, móvil→celular, coger confianza→ganar confianza), regla R7 y formas de «vosotros» en R6. R1-R7 en 0; assets regenerados.
+- Excepciones aceptadas: 27 «usted/ustedes» y 3 filas formales en los 6 idiomas (contenido que se enseña), `billete` de dinero, `camarero` (sin término neutro), menciones metalingüísticas («computadora/ordenador»).
+- Abierto: `camarero` → `mesero` si Fer lo decide antes de publicar (parche de dos líneas).
