@@ -39,6 +39,7 @@ enum class ClaveTexto {
     SIN_IDIOMA_TITULO, SIN_IDIOMA_TEXTO, SIN_IDIOMA_WIDGET,
     RETO_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_HABILIDAD, RETO_CONDICIONES, RETO_FRASES_TITULO, RETO_FRASES_AYUDA,
     ACERCA_COMO_TITULO, ACERCA_COMO_TEXTO, ACERCA_CREDITOS_TEXTO, ACERCA_PRUEBA,
+    GUARDADOS_EXPORTAR, GUARDADOS_IMPORTAR, GUARDADOS_EXPORTAR_ANKI, GUARDADOS_EXPORTAR_RESPALDO, GUARDADOS_MSG_EXPORTADO, GUARDADOS_MSG_IMPORTADO, GUARDADOS_ERR_INVALIDO, GUARDADOS_ERR_GRANDE, GUARDADOS_ERR_VERSION, GUARDADOS_ERR_ARCHIVO,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
 }
 
@@ -262,6 +263,87 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Prova a usarne almeno due:",
         Idioma.PT to "Tente usar pelo menos duas:",
     ),
+    // --- Exportar / importar Guardados (Ronda F2, tarea 6) ---
+    ClaveTexto.GUARDADOS_EXPORTAR to mapOf(
+        Idioma.ES to "Exportar",
+        Idioma.EN to "Export",
+        Idioma.DE to "Exportieren",
+        Idioma.FR to "Exporter",
+        Idioma.IT to "Esporta",
+        Idioma.PT to "Exportar",
+    ),
+    ClaveTexto.GUARDADOS_IMPORTAR to mapOf(
+        Idioma.ES to "Importar",
+        Idioma.EN to "Import",
+        Idioma.DE to "Importieren",
+        Idioma.FR to "Importer",
+        Idioma.IT to "Importa",
+        Idioma.PT to "Importar",
+    ),
+    ClaveTexto.GUARDADOS_EXPORTAR_ANKI to mapOf(
+        Idioma.ES to "A Anki (TSV)",
+        Idioma.EN to "To Anki (TSV)",
+        Idioma.DE to "Für Anki (TSV)",
+        Idioma.FR to "Pour Anki (TSV)",
+        Idioma.IT to "Per Anki (TSV)",
+        Idioma.PT to "Para o Anki (TSV)",
+    ),
+    ClaveTexto.GUARDADOS_EXPORTAR_RESPALDO to mapOf(
+        Idioma.ES to "Copia de seguridad (JSON)",
+        Idioma.EN to "Backup (JSON)",
+        Idioma.DE to "Sicherung (JSON)",
+        Idioma.FR to "Sauvegarde (JSON)",
+        Idioma.IT to "Copia di sicurezza (JSON)",
+        Idioma.PT to "Cópia de segurança (JSON)",
+    ),
+    ClaveTexto.GUARDADOS_MSG_EXPORTADO to mapOf(
+        Idioma.ES to "{n} elementos exportados.",
+        Idioma.EN to "{n} items exported.",
+        Idioma.DE to "{n} Einträge exportiert.",
+        Idioma.FR to "{n} éléments exportés.",
+        Idioma.IT to "{n} elementi esportati.",
+        Idioma.PT to "{n} itens exportados.",
+    ),
+    ClaveTexto.GUARDADOS_MSG_IMPORTADO to mapOf(
+        Idioma.ES to "Importados: {nuevos} nuevos, {ya} ya estaban.",
+        Idioma.EN to "Imported: {nuevos} new, {ya} already there.",
+        Idioma.DE to "Importiert: {nuevos} neu, {ya} bereits vorhanden.",
+        Idioma.FR to "Importés : {nuevos} nouveaux, {ya} déjà présents.",
+        Idioma.IT to "Importati: {nuevos} nuovi, {ya} già presenti.",
+        Idioma.PT to "Importados: {nuevos} novos, {ya} já estavam.",
+    ),
+    ClaveTexto.GUARDADOS_ERR_INVALIDO to mapOf(
+        Idioma.ES to "El archivo no es una copia de seguridad válida.",
+        Idioma.EN to "The file is not a valid backup.",
+        Idioma.DE to "Die Datei ist keine gültige Sicherung.",
+        Idioma.FR to "Le fichier n'est pas une sauvegarde valide.",
+        Idioma.IT to "Il file non è una copia di sicurezza valida.",
+        Idioma.PT to "O arquivo não é uma cópia de segurança válida.",
+    ),
+    ClaveTexto.GUARDADOS_ERR_GRANDE to mapOf(
+        Idioma.ES to "El archivo es demasiado grande.",
+        Idioma.EN to "The file is too large.",
+        Idioma.DE to "Die Datei ist zu groß.",
+        Idioma.FR to "Le fichier est trop volumineux.",
+        Idioma.IT to "Il file è troppo grande.",
+        Idioma.PT to "O arquivo é grande demais.",
+    ),
+    ClaveTexto.GUARDADOS_ERR_VERSION to mapOf(
+        Idioma.ES to "El archivo es de una versión que esta app no conoce.",
+        Idioma.EN to "The file is from a version this app does not know.",
+        Idioma.DE to "Die Datei stammt aus einer Version, die diese App nicht kennt.",
+        Idioma.FR to "Le fichier provient d'une version que cette application ne connaît pas.",
+        Idioma.IT to "Il file proviene da una versione che questa app non conosce.",
+        Idioma.PT to "O arquivo é de uma versão que este aplicativo não conhece.",
+    ),
+    ClaveTexto.GUARDADOS_ERR_ARCHIVO to mapOf(
+        Idioma.ES to "No se pudo acceder al archivo.",
+        Idioma.EN to "The file could not be accessed.",
+        Idioma.DE to "Auf die Datei konnte nicht zugegriffen werden.",
+        Idioma.FR to "Impossible d'accéder au fichier.",
+        Idioma.IT to "Impossibile accedere al file.",
+        Idioma.PT to "Não foi possível acessar o arquivo.",
+    ),
     // --- Estado sin idioma elegido (pantalla y widget) ---
     ClaveTexto.SIN_IDIOMA_TITULO to mapOf(
         Idioma.ES to "Sin idioma seleccionado",
@@ -361,12 +443,12 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "Privacidade",
     ),
     ClaveTexto.ACERCA_PRIVACIDAD_TEXTO to mapOf(
-        Idioma.ES to "Sin Internet y sin cuenta: la app no puede enviar nada a ningún sitio. Solo lee la fecha del dispositivo (y su idioma, únicamente si lo eliges en Ajustes). Lo único que se guarda en tu celular son tus ajustes y los elementos que marcas con la estrella en Guardados. No utiliza cuentas ni estadísticas de uso, no solicita permiso de Internet ni de ubicación, y no envía información a terceros.",
-        Idioma.EN to "No internet and no account: the app cannot send anything anywhere. It only reads the device's date (and its language, only if you choose that in Settings). The only things stored on your phone are your settings and what you mark with a star in Saved. It uses no accounts or usage statistics, does not request permission for internet or location, and sends no information to third parties.",
-        Idioma.DE to "Kein Internet, kein Konto: Die App kann nirgendwohin etwas senden. Sie liest nur das Datum des Geräts (und seine Sprache, nur wenn du das in den Einstellungen wählst). Auf deinem Handy gespeichert werden nur deine Einstellungen und das, was du unter Gespeichert mit dem Stern markierst. Sie verwendet weder Konten noch Nutzungsstatistiken, fordert keine Berechtigung für Internet oder Standort an und sendet keine Informationen an Dritte.",
-        Idioma.FR to "Pas d'Internet, pas de compte : l'application ne peut rien envoyer nulle part. Elle lit seulement la date de l'appareil (et sa langue, uniquement si tu le choisis dans Paramètres). Seuls tes paramètres et les éléments que tu marques d'une étoile dans Enregistrés sont conservés sur ton téléphone. Elle n'utilise ni compte ni statistiques d'utilisation, ne demande aucune autorisation d'accès à Internet ni à la localisation, et n'envoie aucune information à des tiers.",
-        Idioma.IT to "Niente Internet e niente account: l'app non può inviare nulla da nessuna parte. Legge soltanto la data del dispositivo (e la sua lingua, solo se lo scegli in Impostazioni). Sul telefono vengono conservate soltanto le tue impostazioni e ciò che contrassegni con la stella in Salvati. Non usa account né statistiche d'uso, non richiede l'autorizzazione per Internet né per la posizione e non invia informazioni a terze parti.",
-        Idioma.PT to "Sem internet e sem conta: o aplicativo não pode enviar nada para lugar nenhum. Ele só lê a data do dispositivo (e o idioma, somente se você escolher isso em Configurações). As únicas coisas salvas no seu celular são as suas configurações e os itens que você marca com a estrela em Salvos. Não usa contas nem estatísticas de uso, não solicita permissão de internet nem de localização e não envia informações a terceiros.",
+        Idioma.ES to "Sin Internet y sin cuenta: la app no puede enviar nada a ningún sitio. Solo lee la fecha del dispositivo (y su idioma, únicamente si lo eliges en Ajustes). Lo único que se guarda en tu celular son tus ajustes y los elementos que marcas con la estrella en Guardados. No utiliza cuentas ni estadísticas de uso, no solicita permiso de Internet ni de ubicación, y no envía información a terceros. Si exportas o importas tus Guardados, lo haces con un archivo que eliges tú en ese momento; la app no lee ningún otro archivo.",
+        Idioma.EN to "No internet and no account: the app cannot send anything anywhere. It only reads the device's date (and its language, only if you choose that in Settings). The only things stored on your phone are your settings and what you mark with a star in Saved. It uses no accounts or usage statistics, does not request permission for internet or location, and sends no information to third parties. If you export or import your Saved items, you do it with a file you choose at that moment; the app reads no other file.",
+        Idioma.DE to "Kein Internet, kein Konto: Die App kann nirgendwohin etwas senden. Sie liest nur das Datum des Geräts (und seine Sprache, nur wenn du das in den Einstellungen wählst). Auf deinem Handy gespeichert werden nur deine Einstellungen und das, was du unter Gespeichert mit dem Stern markierst. Sie verwendet weder Konten noch Nutzungsstatistiken, fordert keine Berechtigung für Internet oder Standort an und sendet keine Informationen an Dritte. Wenn du deine gespeicherten Einträge exportierst oder importierst, geschieht das mit einer Datei, die du in diesem Moment selbst auswählst; die App liest keine andere Datei.",
+        Idioma.FR to "Pas d'Internet, pas de compte : l'application ne peut rien envoyer nulle part. Elle lit seulement la date de l'appareil (et sa langue, uniquement si tu le choisis dans Paramètres). Seuls tes paramètres et les éléments que tu marques d'une étoile dans Enregistrés sont conservés sur ton téléphone. Elle n'utilise ni compte ni statistiques d'utilisation, ne demande aucune autorisation d'accès à Internet ni à la localisation, et n'envoie aucune information à des tiers. Si tu exportes ou importes tes éléments enregistrés, tu le fais avec un fichier que tu choisis à ce moment-là ; l'application ne lit aucun autre fichier.",
+        Idioma.IT to "Niente Internet e niente account: l'app non può inviare nulla da nessuna parte. Legge soltanto la data del dispositivo (e la sua lingua, solo se lo scegli in Impostazioni). Sul telefono vengono conservate soltanto le tue impostazioni e ciò che contrassegni con la stella in Salvati. Non usa account né statistiche d'uso, non richiede l'autorizzazione per Internet né per la posizione e non invia informazioni a terze parti. Se esporti o importi i tuoi elementi salvati, lo fai con un file che scegli tu in quel momento; l'app non legge nessun altro file.",
+        Idioma.PT to "Sem internet e sem conta: o aplicativo não pode enviar nada para lugar nenhum. Ele só lê a data do dispositivo (e o idioma, somente se você escolher isso em Configurações). As únicas coisas salvas no seu celular são as suas configurações e os itens que você marca com a estrela em Salvos. Não usa contas nem estatísticas de uso, não solicita permissão de internet nem de localização e não envia informações a terceiros. Se você exportar ou importar os seus Salvos, isso é feito com um arquivo que você escolhe naquele momento; o aplicativo não lê nenhum outro arquivo.",
     ),
     ClaveTexto.ACERCA_LICENCIAS_TITULO to mapOf(
         Idioma.ES to "Licencias y créditos",
@@ -689,6 +771,18 @@ fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.T
 fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
 fun etiquetaAcercaDe(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_DE, idiomaInterfaz)
+fun etiquetaGuardadosExportar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_EXPORTAR, idiomaInterfaz)
+fun etiquetaGuardadosImportar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_IMPORTAR, idiomaInterfaz)
+fun etiquetaGuardadosExportarAnki(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_EXPORTAR_ANKI, idiomaInterfaz)
+fun etiquetaGuardadosExportarRespaldo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_EXPORTAR_RESPALDO, idiomaInterfaz)
+fun mensajeGuardadosExportado(idiomaInterfaz: Idioma, n: Int): String =
+    interpolar(texto(ClaveTexto.GUARDADOS_MSG_EXPORTADO, idiomaInterfaz), "n" to n.toString())
+fun mensajeGuardadosImportado(idiomaInterfaz: Idioma, nuevos: Int, ya: Int): String =
+    interpolar(texto(ClaveTexto.GUARDADOS_MSG_IMPORTADO, idiomaInterfaz), "nuevos" to nuevos.toString(), "ya" to ya.toString())
+fun mensajeGuardadosErrorInvalido(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_ERR_INVALIDO, idiomaInterfaz)
+fun mensajeGuardadosErrorGrande(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_ERR_GRANDE, idiomaInterfaz)
+fun mensajeGuardadosErrorVersion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_ERR_VERSION, idiomaInterfaz)
+fun mensajeGuardadosErrorArchivo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_ERR_ARCHIVO, idiomaInterfaz)
 fun etiquetaSinIdiomaTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.SIN_IDIOMA_TITULO, idiomaInterfaz)
 fun mensajeSinIdioma(idiomaInterfaz: Idioma): String = texto(ClaveTexto.SIN_IDIOMA_TEXTO, idiomaInterfaz)
 fun mensajeSinIdiomaWidget(idiomaInterfaz: Idioma): String = texto(ClaveTexto.SIN_IDIOMA_WIDGET, idiomaInterfaz)

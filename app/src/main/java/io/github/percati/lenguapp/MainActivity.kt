@@ -84,6 +84,23 @@ import io.github.percati.lenguapp.ui.PantallaSemana
 import io.github.percati.lenguapp.ui.TemaLenguApp
 import io.github.percati.lenguapp.ui.claveGuardado
 import io.github.percati.lenguapp.ui.AcercaDeScreen
+import android.net.Uri
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import io.github.percati.lenguapp.datos.ErrorRespaldo
+import io.github.percati.lenguapp.datos.LecturaRespaldo
+import io.github.percati.lenguapp.datos.NOMBRE_ARCHIVO_RESPALDO
+import io.github.percati.lenguapp.datos.leerLimitado
+import io.github.percati.lenguapp.datos.parsearRespaldo
+import io.github.percati.lenguapp.datos.serializarRespaldo
+import io.github.percati.lenguapp.presentacion.NOMBRE_ARCHIVO_ANKI
+import io.github.percati.lenguapp.presentacion.exportarAnkiTsv
+import io.github.percati.lenguapp.ui.mensajeGuardadosErrorArchivo
+import io.github.percati.lenguapp.ui.mensajeGuardadosErrorGrande
+import io.github.percati.lenguapp.ui.mensajeGuardadosErrorInvalido
+import io.github.percati.lenguapp.ui.mensajeGuardadosErrorVersion
+import io.github.percati.lenguapp.ui.mensajeGuardadosExportado
+import io.github.percati.lenguapp.ui.mensajeGuardadosImportado
 import io.github.percati.lenguapp.ui.BibliotecaScreen
 import io.github.percati.lenguapp.ui.etiquetaSinIdiomaTitulo
 import io.github.percati.lenguapp.ui.mensajeSinIdioma
@@ -225,6 +242,54 @@ internal fun LenguAppApp(
     )
 
     // Biblioteca: agregada una sola vez (deduplicada entre todas las fichas embebidas).
+    // Exportar / importar Guardados con el selector de archivos del sistema (Storage Access Framework):
+    // sin permisos nuevos y sin red; el archivo lo elige el usuario en ese momento.
+    val contextoArchivos = LocalContext.current
+    val avisar: (String) -> Unit = { Toast.makeText(contextoArchivos, it, Toast.LENGTH_LONG).show() }
+    val idiomaDeMensajes = idiomaAplicacionEfectivo(ajustes, if (ajustes.idiomaSegunSistema) Locale.getDefault().language else null)
+    fun escribirArchivo(uri: Uri, contenido: String, n: Int) {
+        scope.launch {
+            val ok = withContext(Dispatchers.IO) {
+                runCatching { contextoArchivos.contentResolver.openOutputStream(uri, "wt")!!.use { it.write(contenido.toByteArray(Charsets.UTF_8)) } }.isSuccess
+            }
+            avisar(if (ok) mensajeGuardadosExportado(idiomaDeMensajes, n) else mensajeGuardadosErrorArchivo(idiomaDeMensajes))
+        }
+    }
+    val crearAnki = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("text/tab-separated-values")) { uri ->
+        if (uri != null) escribirArchivo(uri, exportarAnkiTsv(guardadosTodos, ajustes.idiomaBase), guardadosTodos.size)
+    }
+    val crearRespaldo = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/json")) { uri ->
+        if (uri != null) escribirArchivo(uri, serializarRespaldo(guardadosTodos), guardadosTodos.size)
+    }
+    val abrirRespaldo = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        val repo = repositorioGuardados
+        if (uri != null && repo != null) {
+            scope.launch {
+                val bytes = withContext(Dispatchers.IO) {
+                    runCatching { contextoArchivos.contentResolver.openInputStream(uri)!!.use { leerLimitado(it) } }
+                }
+                if (bytes.isFailure) {
+                    avisar(mensajeGuardadosErrorArchivo(idiomaDeMensajes))
+                } else {
+                    when (val lectura = parsearRespaldo(bytes.getOrNull())) {
+                        is LecturaRespaldo.Rechazada -> avisar(
+                            when (lectura.error) {
+                                ErrorRespaldo.DEMASIADO_GRANDE -> mensajeGuardadosErrorGrande(idiomaDeMensajes)
+                                ErrorRespaldo.NO_VALIDO -> mensajeGuardadosErrorInvalido(idiomaDeMensajes)
+                                ErrorRespaldo.VERSION_DESCONOCIDA -> mensajeGuardadosErrorVersion(idiomaDeMensajes)
+                            },
+                        )
+                        is LecturaRespaldo.Correcta -> {
+                            val r = repo.importar(lectura.items)
+                            guardadosTodos = repo.listar()
+                            avisar(mensajeGuardadosImportado(idiomaDeMensajes, r.agregados, r.yaEstaban))
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     val itemsBiblioteca = remember(contenidoTodos) { construirBiblioteca(contenidoTodos) }
     val guardadasBiblioteca = guardadosTodos
         .map { claveBiblioteca(it.idioma, it.tipo, it.texto.resolver(it.idioma, it.idioma)) }
@@ -332,6 +397,9 @@ internal fun LenguAppApp(
                             alternarGuardado(item.idioma, item.nivel, item.skillIdOrigen, item.tipo, item.textoOrigen(), item.texto, item.funcion)
                         },
                         onVolver = { navController.popBackStack() },
+                        onExportarAnki = { crearAnki.launch(NOMBRE_ARCHIVO_ANKI) },
+                        onExportarRespaldo = { crearRespaldo.launch(NOMBRE_ARCHIVO_RESPALDO) },
+                        onImportar = { abrirRespaldo.launch(arrayOf("application/json", "application/octet-stream", "text/plain")) },
                     )
                 }
                 composable(DESTINO_ACERCA) {

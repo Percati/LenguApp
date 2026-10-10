@@ -145,4 +145,37 @@ class RepositorioGuardados(private val dao: GuardadoDao) {
             )
         }
     }
+
+    /**
+     * Fusiona los items de una copia de seguridad SIN duplicar y sin pisar lo existente: la
+     * identidad es (idioma, tipo, original), la misma que usa [alternar]. Los que ya estaban (en
+     * la base o repetidos dentro del archivo) no se tocan; los nuevos se agregan en el orden del archivo.
+     */
+    suspend fun importar(items: List<ItemRespaldo>): ResultadoImportacion {
+        var agregados = 0
+        var yaEstaban = 0
+        for (item in items) {
+            val original = item.original()
+            if (dao.buscarPorTexto(item.idioma, item.tipo, original).isNotEmpty()) {
+                yaEstaban++
+            } else {
+                dao.insertar(
+                    GuardadoEntity(
+                        idioma = item.idioma,
+                        nivel = item.nivel,
+                        tipo = item.tipo,
+                        textoOrigen = original,
+                        textoJson = jsonContenido.encodeToString(item.texto),
+                        funcionJson = item.funcion?.let { jsonContenido.encodeToString(it) },
+                        skillIdOrigen = item.skillIdOrigen,
+                    ),
+                )
+                agregados++
+            }
+        }
+        return ResultadoImportacion(agregados, yaEstaban)
+    }
 }
+
+/** Cuantos items de la copia se agregaron y cuantos ya estaban. */
+data class ResultadoImportacion(val agregados: Int, val yaEstaban: Int)

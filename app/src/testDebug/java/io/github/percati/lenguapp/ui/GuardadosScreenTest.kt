@@ -5,6 +5,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.test.assertCountEquals
+import androidx.compose.ui.test.assertIsEnabled
+import androidx.compose.ui.test.assertIsNotEnabled
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithTag
@@ -231,5 +233,43 @@ class GuardadosScreenTest {
         composeTestRule.onNodeWithText("Descendente").performClick()
         composeTestRule.onNodeWithText("ancla").assertExists()
         composeTestRule.onNodeWithText("zebra").assertExists()
+    }
+
+    // --- exportar / importar (Ronda F2, tarea 6) ---
+
+    @Test
+    fun `Exportar ofrece Anki y copia de seguridad, e Importar avisa`() {
+        val llamadas = mutableListOf<String>()
+        composeTestRule.setContent {
+            GuardadosScreen(
+                items = listOf(item(Idioma.DE, "die Miete", "DE-V02")),
+                itemsBiblioteca = emptyList(),
+                idiomasAprendidos = setOf(Idioma.DE),
+                idiomaBase = Idioma.ES,
+                idiomaInterfaz = Idioma.ES,
+                topicNombres = NombresI18n(),
+                categoriasUso = CategoriasUso(),
+                existeFichaOrigen = { true },
+                onAbrirFicha = {},
+                onQuitar = {},
+                onVolver = {},
+                onExportarAnki = { llamadas += "anki" },
+                onExportarRespaldo = { llamadas += "respaldo" },
+                onImportar = { llamadas += "importar" },
+            )
+        }
+        composeTestRule.onNodeWithText("Exportar").performClick()
+        composeTestRule.onNodeWithText("A Anki (TSV)").performClick()
+        composeTestRule.onNodeWithText("Exportar").performClick()
+        composeTestRule.onNodeWithText("Copia de seguridad (JSON)").performClick()
+        composeTestRule.onNodeWithText("Importar").performClick()
+        assertEquals(listOf("anki", "respaldo", "importar"), llamadas)
+    }
+
+    @Test
+    fun `sin ningun guardado Exportar esta deshabilitado pero Importar no`() {
+        mostrar(emptyList(), idiomasAprendidos = setOf(Idioma.DE))
+        composeTestRule.onNodeWithText("Exportar").assertIsNotEnabled()
+        composeTestRule.onNodeWithText("Importar").assertIsEnabled()
     }
 }

@@ -21,6 +21,10 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
+import androidx.compose.foundation.layout.Box
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -83,6 +87,10 @@ fun GuardadosScreen(
     onQuitar: (ItemGuardado) -> Unit,
     onVolver: () -> Unit,
     modifier: Modifier = Modifier,
+    // Exportar a Anki / copia de seguridad e importar (selector de archivos del sistema; MainActivity hace el trabajo).
+    onExportarAnki: () -> Unit = {},
+    onExportarRespaldo: () -> Unit = {},
+    onImportar: () -> Unit = {},
 ) {
     val indice = remember(itemsBiblioteca) { itemsBiblioteca.indiceBiblioteca() }
     val idiomasDisponibles = remember(items, idiomasAprendidos) {
@@ -106,6 +114,8 @@ fun GuardadosScreen(
             TextButton(onClick = onVolver) { Text("< ${etiquetaVolver(idiomaInterfaz)}") }
             Text(etiquetaGuardados(idiomaInterfaz), style = MaterialTheme.typography.headlineSmall)
         }
+
+        BotonesArchivo(items.isNotEmpty(), idiomaInterfaz, onExportarAnki, onExportarRespaldo, onImportar)
 
         if (idiomasDisponibles.isEmpty() || idioma == null) {
             Text(mensajeGuardadosVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge)
@@ -296,4 +306,32 @@ private fun FilaGuardado(item: ItemGuardado, idiomaBase: Idioma, idiomaInterfaz:
         onEstrella = onQuitar,
         onClick = if (enlazable) onClick else null,
     )
+}
+
+/** Exportar (menu: Anki o copia de seguridad) e Importar (solo la copia de seguridad). */
+@Composable
+private fun BotonesArchivo(
+    hayItems: Boolean,
+    idiomaInterfaz: Idioma,
+    onExportarAnki: () -> Unit,
+    onExportarRespaldo: () -> Unit,
+    onImportar: () -> Unit,
+) {
+    var menuAbierto by remember { mutableStateOf(false) }
+    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        Box {
+            OutlinedButton(onClick = { menuAbierto = true }, enabled = hayItems) { Text(etiquetaGuardadosExportar(idiomaInterfaz)) }
+            DropdownMenu(expanded = menuAbierto, onDismissRequest = { menuAbierto = false }) {
+                DropdownMenuItem(
+                    text = { Text(etiquetaGuardadosExportarAnki(idiomaInterfaz)) },
+                    onClick = { menuAbierto = false; onExportarAnki() },
+                )
+                DropdownMenuItem(
+                    text = { Text(etiquetaGuardadosExportarRespaldo(idiomaInterfaz)) },
+                    onClick = { menuAbierto = false; onExportarRespaldo() },
+                )
+            }
+        }
+        OutlinedButton(onClick = onImportar) { Text(etiquetaGuardadosImportar(idiomaInterfaz)) }
+    }
 }
