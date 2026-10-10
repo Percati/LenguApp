@@ -88,6 +88,8 @@ import io.github.percati.lenguapp.ui.AcercaDeScreen
 import io.github.percati.lenguapp.ui.BibliotecaScreen
 import io.github.percati.lenguapp.ui.NOMBRE_APP
 import io.github.percati.lenguapp.ui.etiquetaAcercaDe
+import io.github.percati.lenguapp.ui.etiquetaSinIdiomaTitulo
+import io.github.percati.lenguapp.ui.mensajeSinIdioma
 import io.github.percati.lenguapp.ui.textoLineaFija
 import io.github.percati.lenguapp.ui.claveBiblioteca
 import io.github.percati.lenguapp.ui.etiquetaAjustes
@@ -416,7 +418,7 @@ private fun PantallaPrincipal(
         )
 
         if (idiomasSeleccionados.isEmpty() || idiomaActivo == null) {
-            SinIdiomaSeleccionado()
+            SinIdiomaSeleccionado(idiomaAplicacion)
         } else {
             ScrollableTabRow(selectedTabIndex = idiomasSeleccionados.indexOf(idiomaActivo).coerceAtLeast(0)) {
                 idiomasSeleccionados.forEach { idioma ->
@@ -560,10 +562,10 @@ private fun EncabezadoApp(idiomaAplicacion: Idioma, onAcercaDe: () -> Unit) {
 }
 
 @Composable
-private fun SinIdiomaSeleccionado() {
+private fun SinIdiomaSeleccionado(idiomaAplicacion: Idioma) {
     Column(Modifier.padding(24.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Text("Sin idioma seleccionado", style = MaterialTheme.typography.headlineSmall)
-        Text("Elegí al menos un idioma en Ajustes para ver contenido.", style = MaterialTheme.typography.bodyLarge)
+        Text(etiquetaSinIdiomaTitulo(idiomaAplicacion), style = MaterialTheme.typography.headlineSmall)
+        Text(mensajeSinIdioma(idiomaAplicacion), style = MaterialTheme.typography.bodyLarge)
     }
 }
 

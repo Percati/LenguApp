@@ -32,6 +32,7 @@ import io.github.percati.lenguapp.presentacion.idiomaAplicacionEfectivo
 import io.github.percati.lenguapp.semana.RazonSinContenido
 import io.github.percati.lenguapp.semana.ResultadoSemana
 import io.github.percati.lenguapp.ui.mensajeSinCalendario
+import io.github.percati.lenguapp.ui.mensajeSinIdiomaWidget
 import io.github.percati.lenguapp.ui.mensajeSinContenidoNivel
 import io.github.percati.lenguapp.ui.mensajeSinContenidoSemana
 import io.github.percati.lenguapp.ui.textoSinMarcado
@@ -100,7 +101,7 @@ private fun ContenidoWidget(resultado: ResultadoSemana?, idiomaInterfaz: Idioma,
                 style = TextStyle(color = GlanceTheme.colors.onBackground),
             )
             null -> Text(
-                text = "Elegí un idioma en Ajustes.",
+                text = mensajeSinIdiomaWidget(idiomaInterfaz),
                 style = TextStyle(color = GlanceTheme.colors.onBackground),
             )
         }

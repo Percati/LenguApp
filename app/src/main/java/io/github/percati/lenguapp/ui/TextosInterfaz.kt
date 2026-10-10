@@ -36,6 +36,7 @@ enum class ClaveTexto {
     BIBLIOTECA, BIBLIOTECA_BUSCAR, BIBLIOTECA_TEMA, BIBLIOTECA_SIN_CATEGORIA, BIBLIOTECA_FUNCIONES, BIBLIOTECA_PATRONES, BIBLIOTECA_VACIO,
     QUITAR_FILTROS, QUITAR,
     ORDENAR_POR, ORDEN_ALFABETICO, ORDEN_FECHA, ASCENDENTE, DESCENDENTE, QUITAR_ESTRELLA,
+    SIN_IDIOMA_TITULO, SIN_IDIOMA_TEXTO, SIN_IDIOMA_WIDGET,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
     RETO_TITULO, RETO_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_ROTULO_MISION,
 }
@@ -242,6 +243,31 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "La mission :",
         Idioma.IT to "La missione:",
         Idioma.PT to "A missão:",
+    ),
+    // --- Estado sin idioma elegido (pantalla y widget) ---
+    ClaveTexto.SIN_IDIOMA_TITULO to mapOf(
+        Idioma.ES to "Sin idioma seleccionado",
+        Idioma.EN to "No language selected",
+        Idioma.DE to "Keine Sprache ausgewählt",
+        Idioma.FR to "Aucune langue sélectionnée",
+        Idioma.IT to "Nessuna lingua selezionata",
+        Idioma.PT to "Nenhum idioma selecionado",
+    ),
+    ClaveTexto.SIN_IDIOMA_TEXTO to mapOf(
+        Idioma.ES to "Elige al menos un idioma en Ajustes para ver contenido.",
+        Idioma.EN to "Choose at least one language in Settings to see content.",
+        Idioma.DE to "Wähle in den Einstellungen mindestens eine Sprache, um Inhalte zu sehen.",
+        Idioma.FR to "Choisissez au moins une langue dans Paramètres pour voir du contenu.",
+        Idioma.IT to "Scegli almeno una lingua in Impostazioni per vedere i contenuti.",
+        Idioma.PT to "Escolha pelo menos um idioma em Ajustes para ver conteúdo.",
+    ),
+    ClaveTexto.SIN_IDIOMA_WIDGET to mapOf(
+        Idioma.ES to "Elige un idioma en Ajustes.",
+        Idioma.EN to "Choose a language in Settings.",
+        Idioma.DE to "Wähle in den Einstellungen eine Sprache.",
+        Idioma.FR to "Choisissez une langue dans Paramètres.",
+        Idioma.IT to "Scegli una lingua in Impostazioni.",
+        Idioma.PT to "Escolha um idioma em Ajustes.",
     ),
     // --- Acerca de y linea fija (Ronda E, tarea 6) ---
     ClaveTexto.ACERCA_DE to mapOf(
@@ -616,6 +642,9 @@ fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIP
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
 fun etiquetaRetoTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_TITULO, idiomaInterfaz)
 fun etiquetaAcercaDe(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_DE, idiomaInterfaz)
+fun etiquetaSinIdiomaTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.SIN_IDIOMA_TITULO, idiomaInterfaz)
+fun mensajeSinIdioma(idiomaInterfaz: Idioma): String = texto(ClaveTexto.SIN_IDIOMA_TEXTO, idiomaInterfaz)
+fun mensajeSinIdiomaWidget(idiomaInterfaz: Idioma): String = texto(ClaveTexto.SIN_IDIOMA_WIDGET, idiomaInterfaz)
 fun textoLineaFija(idiomaInterfaz: Idioma): String = texto(ClaveTexto.LINEA_FIJA, idiomaInterfaz)
 fun etiquetaAcercaQueEsTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_QUE_ES_TITULO, idiomaInterfaz)
 fun textoAcercaQueEs(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_QUE_ES_TEXTO, idiomaInterfaz)
