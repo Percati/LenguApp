@@ -865,3 +865,8 @@ Requisitos ya aplicados al empezar: parche de Overview y tuteo de Traducciones c
 - Orden: Traducciones (17) → Overview regenera assets → Code F2 (18, versión 0.2.2) → [si Fer lo confirma: exportar/importar Guardados e índice de habilidades] → Code Ronda G (15) → ronda H (ícono y splash).
 - Guía para testers (qué es decisión de diseño y qué es un error): `docs/guia-testers.md` y `docs/guia-testers-lenguapp.pdf`. Actualizar con cada versión.
 - 10-oct-2026: Fer confirmó exportar/importar Guardados (TSV Anki + JSON de respaldo) e índice de habilidades (vista dentro de la Biblioteca): tareas 6 y 7 del prompt 18.
+
+## 27. Verificación del parche R8 (Traducciones, 10-oct-2026) y siguiente deuda de contenido
+- Parche R8 verificado por Overview en clon fresco: 606 fichas, 56 semanas especiales, 0 con problemas; R1-R8 en 0; las 1370 cadenas cambiadas solo agregan « » (quitándolos, idénticas a las anteriores), mismos `*`, estructura JSON idéntica; el caso de `EN-F01-B1` («I think es neutral…») quedó como «I think» es neutral…. Assets regenerados.
+- Decisión de Traducciones aceptada: `titulo` no se marca (tope de 80 caracteres); `*x*` sin « » queda como está (en este repo `*x*` es también énfasis del idioma de destino; ~9558 casos, separar los dos usos queda anotado en 14.1).
+- Deuda hallada: (a) trato formal en las instrucciones de alemán (~480 cadenas), francés (~500) e italiano (~270), contra la decisión «tú en todo»; (b) ~88 cadenas con `ß` en texto alemán, contra la ortografía suiza. Va a Traducciones como `prompts/19-traducciones-registro-y-ss.md` (R9 y R10). No bloquea la prueba con testers hispanohablantes.
