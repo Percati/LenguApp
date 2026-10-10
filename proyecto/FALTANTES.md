@@ -127,6 +127,26 @@ texto de núcleos, apariciones y semanas especiales de A2/B1 en los seis
 idiomas. El contenido B2/C1/C2 es monolingüe y entra solo por el lado del
 idioma que se aprende.
 
+#### 6.1.1 — Voseo → tuteo en español: ✅ hecho (Traducciones, 10-oct-2026)
+
+Ojo que son **dos ejes distintos** y solo uno está cerrado:
+
+- **vos / tú (dentro del español): cerrado.** 138 cadenas en 77 archivos de
+  `nucleos`, `packs` y `ocurrencias` pasaron de voseo rioplatense a tuteo
+  neutro, en todos los niveles (no solo A2/B1). Incluye tres regionalismos de
+  un solo país: `nomás` → «nada más», `el laburo` → «el trabajo» y
+  `¿Te copás con…?` → «¿Te animas a…?». R6 pasó de 236 a 0.
+- **usted / tú (y *vous*/*Sie*/*Lei* en los otros idiomas): sigue abierto**,
+  tal como lo describe 6.1. El español del lote de prosa alemana todavía usa
+  usted («Hable»), y eso no es voseo, así que este pase no lo tocó.
+
+No se tocó el léxico. El español del contenido mezcla glosas peninsulares
+(`el piso`, `el coche`, `el billete`, `el ordenador`, `el móvil`, `el
+camarero`, `el tío`) con el resto del material, y hay un `coger confianza` en
+`de-C2-2027-T08-1` que es vulgar en buena parte de América. Son decisiones de
+vocabulario con peso pedagógico, no de registro, así que entran en el pase de
+6.1 o en uno propio — pero conviene decidirlas antes de publicar.
+
 ## 7. Vocabulario atestiguado alemán — A1-C1 reconstruido, falta C2
 
 `vocab_de.json` cubre A1/A2/B1/B2/C1: **7683 lemas**. El 27-09-2026 se corrió por

@@ -16,8 +16,25 @@ Sale con codigo 1 si hay algun error. Reglas (ver REGLAS-PREVENCION.md):
       claves.
   R4  Los « » estan balanceados en todo el contenido.
   R5  Todo categoriasUso usado pertenece a la lista cerrada.
-  R6  El espanol del contenido es neutro (tuteo): ninguna cadena bajo la clave
-      'es' lleva formas de voseo (vos, tenes, podes, elegi, proba...).
+  R6  El espanol del contenido es neutro (tuteo): ninguna cadena ESPANOLA
+      lleva formas de voseo (vos, tenes, podes, proba, decime...).
+
+      Dos precisiones, aprendidas al pasar el contenido a tuteo (oct 2026):
+
+      a) Solo se revisan las cadenas cuyo camino TERMINA en la clave 'es'. En
+         un campo bilingue de A2/B1 el valor de la clave 'es' es un objeto
+         {idioma_aprendido: original, es: traduccion}, asi que recorrer todo
+         lo que cuelga de 'es' tambien leia el aleman y el ingles, y marcaba
+         como voseo palabras que no son espanol.
+
+      b) La lista NO incluye las formas en -i que coinciden con el preterito
+         de primera persona: elegi, corregi, describi, escribi, repeti,
+         resumi, sali. 'Corregi' puede ser imperativo voseante o 'yo corregi',
+         y los autochequeos estan escritos justamente en primera persona
+         ('Corregi con claridad un error propio?'). Marcarlas daba falsos
+         positivos sobre espanol correcto y, como esta regla corre en
+         preBuild, dejaba el build en rojo sin arreglo posible. Si aparece
+         voseo con esas formas hay que verlo a mano.
 """
 import argparse, glob, json, os, re, sys
 
@@ -43,20 +60,42 @@ def recorrer_textos(o):
 
 
 VOSEO = re.compile(
-    r"\b(vos|tenés|podés|querés|sabés|decís|hacés|usás|pensás|sentís|elegí|probá|mirá|decí|hablá|fijate|repetí|"
-    r"escribí|pensá|intentá|contá|usá|escuchá|completá|marcá|anotá|reescribí|grabá|agregá|corregí|revisá|"
-    r"preguntá|buscá|leé|ponete|acordate|fijá|armá|tratá|empezá|ordená|cambiá|resumí|explicá|describí|"
-    r"contestá|respondé|practicá|andá|vení|salí|poné|tené|sé vos|fijate)\b", re.IGNORECASE)
+    # pronombre: 'vos' pronombre, no la mencion metalinguistica «vos/tu»
+    r"\b(vos(?!/)|sé vos"
+    # presente de indicativo voseante (-as/-es/-is)
+    r"|tenés|podés|querés|sabés|decís|hacés|usás|pensás|sentís|andás|basás|conocés|copás|creés|debés"
+    r"|decidís|esperás|llevás|movés|opinás|preferís|probás|referís|repetís|venís|vivís|ponés|salís"
+    # imperativo voseante de verbos en -ar (sin ambiguedad con el preterito)
+    r"|probá|mirá|hablá|pensá|intentá|contá|usá|escuchá|completá|marcá|anotá|grabá|agregá|revisá"
+    r"|preguntá|buscá|fijá|armá|tratá|empezá|ordená|explicá|contestá|practicá|andá|adiviná|entrá"
+    r"|esperá|guardá|pará|sacá|cambiá|dejá|tomá|llamá|avisá|mandá|pasá|ayudá|prepará|imaginá|acercá"
+    # imperativo voseante de verbos en -er/-ir sin colision con el preterito
+    r"|decí|leé|respondé|vení|tené|hacé|poné|vé"
+    # imperativo voseante con enclitico (el tuteo lleva tilde: dejame/dejame -> dejame)
+    r"|decime|decilo|decile|dejame|dejalo|dejala|dejanos|avisame|avisanos|contame|contanos|mirame"
+    r"|miralo|mirala|esperame|esperanos|ayudame|ayudanos|preguntale|preguntame|tomalo|tomala|leelo"
+    r"|leela|hacelo|hacela|ponelo|ponela|tenelo|pensalo|probalo|fijate|ponete|acordate|sentate"
+    r"|quedate|callate|levantate|apurate|animate|preparate|imaginate|acercate|movete|volvete"
+    # regionalismos de un solo pais, sin ambiguedad. 'dale' NO entra: en
+    # 'Dale consejos a un amigo' es el imperativo normal de dar + le, asi que
+    # la particula rioplatense 'dale' hay que verla a mano.
+    r"|nomás|laburo|laburar"
+    r")\b", re.IGNORECASE)
 
 
 def textos_es(o, ruta=""):
-    """Cadenas que cuelgan de una clave 'es' (traducciones al espanol)."""
+    """Cadenas que son espanol: su camino TERMINA en la clave 'es'.
+
+    En A2/B1 el valor de una clave 'es' puede ser el objeto bilingue
+    {idioma_aprendido: original, es: traduccion}: ahi solo la clave interna
+    'es' es espanol, y el original en aleman o ingles no debe revisarse.
+    """
     if isinstance(o, dict):
         for k, v in o.items():
-            if k == "es":
-                yield from recorrer_textos(v)
+            if k == "es" and isinstance(v, str):
+                yield v
             else:
-                yield from textos_es(v, ruta + "/" + k)
+                yield from textos_es(v, ruta + "/" + str(k))
     elif isinstance(o, list):
         for x in o:
             yield from textos_es(x, ruta)
