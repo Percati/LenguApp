@@ -83,7 +83,12 @@ import io.github.percati.lenguapp.ui.GuardadosScreen
 import io.github.percati.lenguapp.ui.PantallaSemana
 import io.github.percati.lenguapp.ui.TemaLenguApp
 import io.github.percati.lenguapp.ui.claveGuardado
+import androidx.compose.ui.text.font.FontWeight
+import io.github.percati.lenguapp.ui.AcercaDeScreen
 import io.github.percati.lenguapp.ui.BibliotecaScreen
+import io.github.percati.lenguapp.ui.NOMBRE_APP
+import io.github.percati.lenguapp.ui.etiquetaAcercaDe
+import io.github.percati.lenguapp.ui.textoLineaFija
 import io.github.percati.lenguapp.ui.claveBiblioteca
 import io.github.percati.lenguapp.ui.etiquetaAjustes
 import io.github.percati.lenguapp.ui.etiquetaBiblioteca
@@ -104,6 +109,7 @@ private const val DESTINO_PRINCIPAL = "principal"
 private const val DESTINO_AJUSTES = "ajustes"
 private const val DESTINO_GUARDADOS = "guardados"
 private const val DESTINO_BIBLIOTECA = "biblioteca"
+private const val DESTINO_ACERCA = "acerca"
 private const val DESTINO_FICHA_GUARDADA = "ficha_guardada"
 private const val VENTANA_DOBLE_ATRAS_MS = 3000L
 
@@ -136,6 +142,7 @@ class MainActivity : ComponentActivity() {
         val planillaTextos = cargarPlanillaTextosDesdeAssets(this)
         val topicNombres = cargarTopicNombresDesdeAssets(this)
         val categoriasUso = cargarCategoriasUsoDesdeAssets(this)
+        val versionApp = runCatching { packageManager.getPackageInfo(packageName, 0).versionName }.getOrNull().orEmpty()
         setContent {
             LenguAppApp(
                 ajustesIniciales = ajustesIniciales,
@@ -147,6 +154,7 @@ class MainActivity : ComponentActivity() {
                 planillaTextos = planillaTextos,
                 topicNombres = topicNombres,
                 categoriasUso = categoriasUso,
+                versionApp = versionApp,
                 resolver = { idioma, nivel, fecha -> resolverSemana(this, contenidoPorId, idioma, nivel, fecha) },
                 onGuardarAjustes = { guardarAjustes(this, it) },
             )
@@ -180,6 +188,8 @@ internal fun LenguAppApp(
     planillaTextos: Map<Idioma, PlanillaTextos> = emptyMap(),
     topicNombres: NombresI18n = NombresI18n(),
     categoriasUso: CategoriasUso = CategoriasUso(),
+    // Para la pantalla Acerca de (versionName del paquete; vacio = no se muestra).
+    versionApp: String = "",
 ) {
     var ajustes by remember { mutableStateOf(ajustesIniciales) }
     var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
@@ -286,6 +296,7 @@ internal fun LenguAppApp(
                         onAjustes = { navController.navigate(DESTINO_AJUSTES) },
                         onGuardados = { navController.navigate(DESTINO_GUARDADOS) },
                         onBiblioteca = { navController.navigate(DESTINO_BIBLIOTECA) },
+                        onAcercaDe = { navController.navigate(DESTINO_ACERCA) },
                         guardadosDeLaFicha = ::estadoGuardadosPara,
                         promptsVoz = promptsVoz,
                         onPlanilla = onPlanilla,
@@ -320,6 +331,13 @@ internal fun LenguAppApp(
                         onQuitar = { item ->
                             alternarGuardado(item.idioma, item.nivel, item.skillIdOrigen, item.tipo, item.textoOrigen(), item.texto, item.funcion)
                         },
+                        onVolver = { navController.popBackStack() },
+                    )
+                }
+                composable(DESTINO_ACERCA) {
+                    AcercaDeScreen(
+                        idiomaInterfaz = idiomaAplicacion,
+                        version = versionApp,
                         onVolver = { navController.popBackStack() },
                     )
                 }
@@ -376,6 +394,7 @@ private fun PantallaPrincipal(
     onAjustes: () -> Unit,
     onGuardados: () -> Unit,
     onBiblioteca: () -> Unit,
+    onAcercaDe: () -> Unit,
     guardadosDeLaFicha: (Ficha) -> EstadoGuardados,
     promptsVoz: Map<String, String>,
     onPlanilla: ((ContenidoSemanal) -> Unit)?,
@@ -383,6 +402,7 @@ private fun PantallaPrincipal(
     ManejarDobleAtrasParaSalir(idiomaAplicacion)
 
     Column(Modifier.fillMaxSize()) {
+        EncabezadoApp(idiomaAplicacion, onAcercaDe)
         BarraNavegacion(
             semanaIso = semanaIsoDe(fechaVista),
             esHoy = fechaVista == LocalDate.now(),
@@ -514,6 +534,28 @@ private fun BarraNavegacion(
             TextButton(onClick = onGuardados) { Text(etiquetaGuardados(idiomaAplicacion)) }
             TextButton(onClick = onAjustes) { Text(etiquetaAjustes(idiomaAplicacion)) }
         }
+    }
+}
+
+/**
+ * Nombre de la app y, debajo, una linea fija que dice para que es (no es un curso: fija lo
+ * aprendido en uno), mas el acceso a Acerca de.
+ */
+@Composable
+private fun EncabezadoApp(idiomaAplicacion: Idioma, onAcercaDe: () -> Unit) {
+    Row(
+        modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 4.dp, top = 4.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Column(Modifier.weight(1f)) {
+            Text(NOMBRE_APP, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+            Text(
+                textoLineaFija(idiomaAplicacion),
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+        TextButton(onClick = onAcercaDe) { Text(etiquetaAcercaDe(idiomaAplicacion)) }
     }
 }
 

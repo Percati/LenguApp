@@ -19,7 +19,16 @@ import io.github.percati.lenguapp.semana.CalendarioCargado
 import io.github.percati.lenguapp.semana.ResultadoSemana
 import io.github.percati.lenguapp.semana.resolverContenidoDeLaSemana
 import io.github.percati.lenguapp.semana.semanaIsoDe
+import io.github.percati.lenguapp.ui.etiquetaAcercaDe
+import io.github.percati.lenguapp.ui.etiquetaAcercaLicenciasTitulo
+import io.github.percati.lenguapp.ui.etiquetaAcercaPrivacidadTitulo
+import io.github.percati.lenguapp.ui.etiquetaAcercaQueEsTitulo
 import io.github.percati.lenguapp.ui.mensajeDobleAtrasParaSalir
+import io.github.percati.lenguapp.ui.textoAcercaLicencias
+import io.github.percati.lenguapp.ui.textoAcercaPrivacidad
+import io.github.percati.lenguapp.ui.textoAcercaQueEs
+import io.github.percati.lenguapp.ui.textoAcercaVersion
+import io.github.percati.lenguapp.ui.textoLineaFija
 import io.github.percati.lenguapp.ui.mensajeSinContenidoSemana
 import io.github.percati.lenguapp.ui.mensajeSinContenidoTitulo
 import org.junit.Assert.assertEquals
@@ -330,5 +339,67 @@ class LenguAppAppTest {
         composeTestRule.onNode(hasText("Semana ${semanaIso.semana} · ${semanaIso.anio} (Hoy)", substring = true)).assertExists()
         // De vuelta en hoy, el tope: la flecha de avanzar desaparece otra vez.
         composeTestRule.onNodeWithContentDescription("> Semana").assertDoesNotExist()
+    }
+
+    // --- Acerca de y linea fija (Ronda E, tarea 6) ---
+
+    private fun mostrarApp(idiomaApp: Idioma) {
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2), idiomaInterfaz = idiomaApp, idiomaBase = idiomaApp),
+                idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
+                resolver = ::resolverDePrueba,
+                fechaInicial = LocalDate.of(2026, 9, 7),
+                onGuardarAjustes = {},
+                versionApp = "0.2.0",
+            )
+        }
+    }
+
+    @Test
+    fun `bajo el nombre de la app hay una linea fija en el idioma de la app`() {
+        for (idioma in Idioma.entries) {
+            val textos = textoLineaFija(idioma)
+            assertTrue(textos.isNotBlank())
+        }
+        mostrarApp(Idioma.ES)
+        composeTestRule.onNodeWithText("LenguApp").assertExists()
+        composeTestRule.onNodeWithText("Para fijar lo que ya aprendiste en tu curso.").assertExists()
+    }
+
+    @Test
+    fun `Acerca de se abre desde la barra superior y dice que es, privacidad, licencias y version, y se vuelve`() {
+        mostrarApp(Idioma.ES)
+        composeTestRule.onNodeWithText("Acerca de").performClick()
+
+        composeTestRule.onNodeWithText("Qué es y qué no es").assertExists()
+        composeTestRule.onNode(hasText("No es un curso: fija lo que ya aprendiste en un curso de tu nivel.", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("Sin Internet y sin cuenta", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("GPL-3.0", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("CC BY-SA 4.0", substring = true)).assertExists()
+        composeTestRule.onNodeWithText("Versión 0.2.0").assertExists()
+
+        composeTestRule.onNodeWithText("< Volver").performClick()
+        composeTestRule.onNodeWithText("Para fijar lo que ya aprendiste en tu curso.").assertExists()
+    }
+
+    @Test
+    fun `Acerca de en cada uno de los 6 idiomas muestra sus textos, sin claves ni llaves sueltas`() {
+        for (idioma in Idioma.entries) {
+            val textos = listOf(
+                etiquetaAcercaDe(idioma), textoLineaFija(idioma),
+                etiquetaAcercaQueEsTitulo(idioma), textoAcercaQueEs(idioma),
+                etiquetaAcercaPrivacidadTitulo(idioma), textoAcercaPrivacidad(idioma),
+                etiquetaAcercaLicenciasTitulo(idioma), textoAcercaLicencias(idioma),
+                textoAcercaVersion(idioma, "0.2.0"),
+            )
+            assertTrue("$idioma: texto vacio", textos.all { it.isNotBlank() })
+            assertTrue("$idioma: placeholder sin resolver", textos.none { it.contains("{") })
+            assertTrue("$idioma: licencias", textoAcercaLicencias(idioma).let { it.contains("GPL-3.0") && it.contains("CC BY-SA 4.0") })
+            assertTrue("$idioma: version", textoAcercaVersion(idioma, "0.2.0").contains("0.2.0"))
+        }
+        // los textos de un idioma no son los de otro
+        assertFalse(textoAcercaQueEs(Idioma.ES) == textoAcercaQueEs(Idioma.EN))
     }
 }

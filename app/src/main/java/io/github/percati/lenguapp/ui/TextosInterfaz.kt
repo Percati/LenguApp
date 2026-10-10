@@ -36,6 +36,7 @@ enum class ClaveTexto {
     BIBLIOTECA, BIBLIOTECA_BUSCAR, BIBLIOTECA_TEMA, BIBLIOTECA_SIN_CATEGORIA, BIBLIOTECA_FUNCIONES, BIBLIOTECA_PATRONES, BIBLIOTECA_VACIO,
     QUITAR_FILTROS, QUITAR,
     ORDENAR_POR, ORDEN_ALFABETICO, ORDEN_FECHA, ASCENDENTE, DESCENDENTE, QUITAR_ESTRELLA,
+    ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
     RETO_TITULO, RETO_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_ROTULO_MISION,
 }
 
@@ -241,6 +242,79 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "La mission :",
         Idioma.IT to "La missione:",
         Idioma.PT to "A missão:",
+    ),
+    // --- Acerca de y linea fija (Ronda E, tarea 6) ---
+    ClaveTexto.ACERCA_DE to mapOf(
+        Idioma.ES to "Acerca de",
+        Idioma.EN to "About",
+        Idioma.DE to "Über die App",
+        Idioma.FR to "À propos",
+        Idioma.IT to "Informazioni",
+        Idioma.PT to "Sobre",
+    ),
+    ClaveTexto.LINEA_FIJA to mapOf(
+        Idioma.ES to "Para fijar lo que ya aprendiste en tu curso.",
+        Idioma.EN to "To consolidate what you already learned in your course.",
+        Idioma.DE to "Um zu festigen, was du in deinem Kurs schon gelernt hast.",
+        Idioma.FR to "Pour fixer ce que vous avez déjà appris dans votre cours.",
+        Idioma.IT to "Per fissare ciò che hai già imparato nel tuo corso.",
+        Idioma.PT to "Para fixar o que já aprendeu no seu curso.",
+    ),
+    ClaveTexto.ACERCA_QUE_ES_TITULO to mapOf(
+        Idioma.ES to "Qué es y qué no es",
+        Idioma.EN to "What it is and what it isn't",
+        Idioma.DE to "Was sie ist und was nicht",
+        Idioma.FR to "Ce que c'est et ce que ce n'est pas",
+        Idioma.IT to "Cosa è e cosa non è",
+        Idioma.PT to "O que é e o que não é",
+    ),
+    ClaveTexto.ACERCA_QUE_ES_TEXTO to mapOf(
+        Idioma.ES to "LenguApp te da cada semana una ficha para practicar hablando el idioma que aprendes, al nivel que elijas. No es un curso: fija lo que ya aprendiste en un curso de tu nivel.",
+        Idioma.EN to "LenguApp gives you one sheet a week to practise speaking the language you are learning, at the level you choose. It is not a course: it helps you consolidate what you already learned in a course at your level.",
+        Idioma.DE to "LenguApp gibt dir jede Woche ein Blatt, um die Sprache, die du lernst, mündlich zu üben – auf dem Niveau, das du wählst. Es ist kein Kurs: Es festigt, was du in einem Kurs auf deinem Niveau schon gelernt hast.",
+        Idioma.FR to "LenguApp vous propose chaque semaine une fiche pour vous exercer à parler la langue que vous apprenez, au niveau de votre choix. Ce n'est pas un cours : l'application consolide ce que vous avez déjà appris dans un cours de votre niveau.",
+        Idioma.IT to "LenguApp ti propone ogni settimana una scheda per esercitarti a parlare la lingua che stai imparando, al livello che scegli. Non è un corso: consolida ciò che hai già imparato in un corso del tuo livello.",
+        Idioma.PT to "A LenguApp oferece-lhe todas as semanas uma ficha para praticar a falar a língua que está a aprender, ao nível que escolher. Não é um curso: consolida o que já aprendeu num curso do seu nível.",
+    ),
+    ClaveTexto.ACERCA_PRIVACIDAD_TITULO to mapOf(
+        Idioma.ES to "Privacidad",
+        Idioma.EN to "Privacy",
+        Idioma.DE to "Datenschutz",
+        Idioma.FR to "Confidentialité",
+        Idioma.IT to "Privacy",
+        Idioma.PT to "Privacidade",
+    ),
+    ClaveTexto.ACERCA_PRIVACIDAD_TEXTO to mapOf(
+        Idioma.ES to "Sin Internet y sin cuenta: la app no puede enviar nada a ningún sitio. Solo lee la fecha del dispositivo (y su idioma, únicamente si lo eliges en Ajustes). Lo único que se guarda en tu móvil son los elementos que marcas con la estrella en Guardados.",
+        Idioma.EN to "No internet and no account: the app cannot send anything anywhere. It only reads the device's date (and its language, only if you choose that in Settings). The only thing stored on your phone is what you mark with a star in Saved.",
+        Idioma.DE to "Kein Internet, kein Konto: Die App kann nirgendwohin etwas senden. Sie liest nur das Datum des Geräts (und seine Sprache, nur wenn du das in den Einstellungen wählst). Auf deinem Handy gespeichert wird nur, was du unter Gespeichert mit dem Stern markierst.",
+        Idioma.FR to "Pas d'Internet, pas de compte : l'application ne peut rien envoyer nulle part. Elle lit seulement la date de l'appareil (et sa langue, uniquement si vous le choisissez dans Paramètres). Seuls les éléments que vous marquez d'une étoile dans Enregistrés sont conservés sur votre téléphone.",
+        Idioma.IT to "Niente Internet e niente account: l'app non può inviare nulla da nessuna parte. Legge soltanto la data del dispositivo (e la sua lingua, solo se lo scegli in Impostazioni). Sul telefono viene conservato soltanto ciò che contrassegni con la stella in Salvati.",
+        Idioma.PT to "Sem Internet e sem conta: a aplicação não pode enviar nada para lado nenhum. Só lê a data do dispositivo (e o seu idioma, apenas se o escolher em Ajustes). A única coisa guardada no telemóvel são os itens que marcar com a estrela em Guardados.",
+    ),
+    ClaveTexto.ACERCA_LICENCIAS_TITULO to mapOf(
+        Idioma.ES to "Licencias",
+        Idioma.EN to "Licences",
+        Idioma.DE to "Lizenzen",
+        Idioma.FR to "Licences",
+        Idioma.IT to "Licenze",
+        Idioma.PT to "Licenças",
+    ),
+    ClaveTexto.ACERCA_LICENCIAS_TEXTO to mapOf(
+        Idioma.ES to "Código: GPL-3.0. Contenido: CC BY-SA 4.0.",
+        Idioma.EN to "Code: GPL-3.0. Content: CC BY-SA 4.0.",
+        Idioma.DE to "Code: GPL-3.0. Inhalt: CC BY-SA 4.0.",
+        Idioma.FR to "Code : GPL-3.0. Contenu : CC BY-SA 4.0.",
+        Idioma.IT to "Codice: GPL-3.0. Contenuti: CC BY-SA 4.0.",
+        Idioma.PT to "Código: GPL-3.0. Conteúdo: CC BY-SA 4.0.",
+    ),
+    ClaveTexto.ACERCA_VERSION to mapOf(
+        Idioma.ES to "Versión {version}",
+        Idioma.EN to "Version {version}",
+        Idioma.DE to "Version {version}",
+        Idioma.FR to "Version {version}",
+        Idioma.IT to "Versione {version}",
+        Idioma.PT to "Versão {version}",
     ),
     // --- Textos fijos de la ficha que habian quedado en espanol ---
     ClaveTexto.SEMANA_REPASO to mapOf(
@@ -541,6 +615,16 @@ fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.T
 fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
 fun etiquetaRetoTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_TITULO, idiomaInterfaz)
+fun etiquetaAcercaDe(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_DE, idiomaInterfaz)
+fun textoLineaFija(idiomaInterfaz: Idioma): String = texto(ClaveTexto.LINEA_FIJA, idiomaInterfaz)
+fun etiquetaAcercaQueEsTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_QUE_ES_TITULO, idiomaInterfaz)
+fun textoAcercaQueEs(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_QUE_ES_TEXTO, idiomaInterfaz)
+fun etiquetaAcercaPrivacidadTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_PRIVACIDAD_TITULO, idiomaInterfaz)
+fun textoAcercaPrivacidad(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_PRIVACIDAD_TEXTO, idiomaInterfaz)
+fun etiquetaAcercaLicenciasTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_LICENCIAS_TITULO, idiomaInterfaz)
+fun textoAcercaLicencias(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_LICENCIAS_TEXTO, idiomaInterfaz)
+fun textoAcercaVersion(idiomaInterfaz: Idioma, version: String): String =
+    interpolar(texto(ClaveTexto.ACERCA_VERSION, idiomaInterfaz), "version" to version)
 fun textoRetoLinea(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_LINEA, idiomaInterfaz)
 fun etiquetaRetoMision(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_ROTULO_MISION, idiomaInterfaz)
 
