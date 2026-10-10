@@ -20,6 +20,12 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material3.Icon
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -54,6 +60,8 @@ fun AjustesScreen(
     onAjustesCambiados: (Ajustes) -> Unit,
     onVolver: () -> Unit,
     modifier: Modifier = Modifier,
+    // Acerca de vive aca (no en la pantalla principal, que gana alto para el contenido).
+    onAcercaDe: () -> Unit = {},
 ) {
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
@@ -63,6 +71,8 @@ fun AjustesScreen(
             TextButton(onClick = onVolver) { Text("< ${etiquetaVolver(idiomaAplicacionEfectivo)}") }
             Text(etiquetaAjustes(idiomaAplicacionEfectivo), style = MaterialTheme.typography.headlineSmall)
         }
+
+        EncabezadoApp(idiomaAplicacionEfectivo, onAcercaDe)
 
         SelectorIdiomasAprendidos(
             idiomasAprendidos = ajustes.idiomasAprendidos,
@@ -284,6 +294,29 @@ private fun SelectorModoTema(idiomaInterfaz: Idioma, modoElegido: ModoTema, onEl
                     label = { Text(nombreVisible(modo, idiomaInterfaz)) },
                 )
             }
+        }
+    }
+}
+
+/**
+ * Arriba del todo de Ajustes: el nombre de la app, la linea fija que dice para que es (no es un
+ * curso: fija lo aprendido en uno) y la fila "Acerca de". Antes vivian en la pantalla principal.
+ */
+@Composable
+private fun EncabezadoApp(idiomaInterfaz: Idioma, onAcercaDe: () -> Unit) {
+    Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
+        Text(NOMBRE_APP, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
+        Text(
+            textoLineaFija(idiomaInterfaz),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
+        Row(
+            modifier = Modifier.fillMaxWidth().clickable(onClick = onAcercaDe).padding(vertical = 8.dp),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text(etiquetaAcercaDe(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
         }
     }
 }

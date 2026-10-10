@@ -359,30 +359,31 @@ class LenguAppAppTest {
     }
 
     @Test
-    fun `bajo el nombre de la app hay una linea fija en el idioma de la app`() {
-        for (idioma in Idioma.entries) {
-            val textos = textoLineaFija(idioma)
-            assertTrue(textos.isNotBlank())
-        }
+    fun `la pantalla principal no lleva encabezado, ni el nombre de la app ni la linea fija`() {
         mostrarApp(Idioma.ES)
-        composeTestRule.onNodeWithText("LenguApp").assertExists()
-        composeTestRule.onNodeWithText("Para fijar lo que ya aprendiste en tu curso.").assertExists()
+        composeTestRule.onAllNodesWithText("LenguApp").assertCountEquals(0)
+        composeTestRule.onAllNodesWithText("Para fijar lo que ya aprendiste en tu curso.").assertCountEquals(0)
+        composeTestRule.onAllNodesWithText("Acerca de").assertCountEquals(0)
     }
 
     @Test
-    fun `Acerca de se abre desde la barra superior y dice que es, privacidad, licencias y version, y se vuelve`() {
+    fun `Ajustes lleva arriba el nombre de la app, la linea fija y la fila Acerca de, que se abre y se vuelve`() {
         mostrarApp(Idioma.ES)
+        composeTestRule.onNodeWithText("Ajustes").performClick()
+
+        composeTestRule.onNodeWithText("LenguApp").assertExists()
+        composeTestRule.onNodeWithText("Para fijar lo que ya aprendiste en tu curso.").assertExists()
         composeTestRule.onNodeWithText("Acerca de").performClick()
 
         composeTestRule.onNodeWithText("Qué es y qué no es").assertExists()
-        composeTestRule.onNode(hasText("No es un curso: fija lo que ya aprendiste en un curso de tu nivel.", substring = true)).assertExists()
-        composeTestRule.onNode(hasText("Sin Internet y sin cuenta", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("No es un curso", substring = true)).assertExists()
         composeTestRule.onNode(hasText("GPL-3.0", substring = true)).assertExists()
         composeTestRule.onNode(hasText("CC BY-SA 4.0", substring = true)).assertExists()
         composeTestRule.onNodeWithText("Versión 0.2.0").assertExists()
 
+        // Volver lleva a Ajustes (donde esta la fila), no a la principal
         composeTestRule.onNodeWithText("< Volver").performClick()
-        composeTestRule.onNodeWithText("Para fijar lo que ya aprendiste en tu curso.").assertExists()
+        composeTestRule.onNodeWithText("Acerca de").assertExists()
     }
 
     @Test

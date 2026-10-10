@@ -8,8 +8,8 @@ El nombre "LenguApp" es provisorio.
 ## Cómo dejar claro que NO es un curso
 Tres lugares, de más a menos visible, sin guardar nada en el dispositivo (regla dura 4):
 1. **Tienda**: es lo primero que dice la descripción (línea con ⚠, en las tres versiones) y lo primero que dice la descripción corta.
-2. **Pantalla principal**: una línea fija bajo el nombre de la app: «Para fijar lo que ya aprendiste en tu curso.» (los 6 idiomas).
-3. **Acerca de**: pantalla estática con qué es y qué no es, privacidad, licencias y versión.
+2. **Ajustes**: arriba del todo, el nombre de la app y una línea fija: «Para fijar lo que ya aprendiste en tu curso.» (los 6 idiomas), con una fila «Acerca de». Ya no está en la pantalla principal, que queda sin encabezado para dar el alto al contenido.
+3. **Acerca de**: pantalla estática con qué es y qué no es, cómo está pensada, privacidad, licencias y versión.
 No hay pantalla de bienvenida que se muestre una sola vez: requeriría recordar que ya se vio.
 
 ## Mensajes clave (en este orden)

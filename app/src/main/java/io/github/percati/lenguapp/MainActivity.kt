@@ -83,15 +83,11 @@ import io.github.percati.lenguapp.ui.GuardadosScreen
 import io.github.percati.lenguapp.ui.PantallaSemana
 import io.github.percati.lenguapp.ui.TemaLenguApp
 import io.github.percati.lenguapp.ui.claveGuardado
-import androidx.compose.ui.text.font.FontWeight
 import io.github.percati.lenguapp.ui.AcercaDeScreen
 import io.github.percati.lenguapp.ui.BibliotecaScreen
-import io.github.percati.lenguapp.ui.NOMBRE_APP
-import io.github.percati.lenguapp.ui.etiquetaAcercaDe
 import io.github.percati.lenguapp.ui.etiquetaSinIdiomaTitulo
 import io.github.percati.lenguapp.ui.mensajeSinIdioma
 import io.github.percati.lenguapp.ui.nombreIdioma
-import io.github.percati.lenguapp.ui.textoLineaFija
 import io.github.percati.lenguapp.ui.claveBiblioteca
 import io.github.percati.lenguapp.ui.etiquetaAjustes
 import io.github.percati.lenguapp.ui.etiquetaBiblioteca
@@ -299,7 +295,6 @@ internal fun LenguAppApp(
                         onAjustes = { navController.navigate(DESTINO_AJUSTES) },
                         onGuardados = { navController.navigate(DESTINO_GUARDADOS) },
                         onBiblioteca = { navController.navigate(DESTINO_BIBLIOTECA) },
-                        onAcercaDe = { navController.navigate(DESTINO_ACERCA) },
                         guardadosDeLaFicha = ::estadoGuardadosPara,
                         promptsVoz = promptsVoz,
                         onPlanilla = onPlanilla,
@@ -313,6 +308,7 @@ internal fun LenguAppApp(
                         nivelesConContenido = nivelesConContenido,
                         idiomaAplicacionEfectivo = idiomaAplicacion,
                         onAjustesCambiados = ::actualizarAjustes,
+                        onAcercaDe = { navController.navigate(DESTINO_ACERCA) },
                         onVolver = { navController.popBackStack() },
                     )
                 }
@@ -399,7 +395,6 @@ private fun PantallaPrincipal(
     onAjustes: () -> Unit,
     onGuardados: () -> Unit,
     onBiblioteca: () -> Unit,
-    onAcercaDe: () -> Unit,
     guardadosDeLaFicha: (Ficha) -> EstadoGuardados,
     promptsVoz: Map<String, String>,
     onPlanilla: ((ContenidoSemanal) -> Unit)?,
@@ -408,7 +403,6 @@ private fun PantallaPrincipal(
     ManejarDobleAtrasParaSalir(idiomaAplicacion)
 
     Column(Modifier.fillMaxSize()) {
-        EncabezadoApp(idiomaAplicacion, onAcercaDe)
         BarraNavegacion(
             semanaIso = semanaIsoDe(fechaVista),
             esHoy = fechaVista == LocalDate.now(),
@@ -541,28 +535,6 @@ private fun BarraNavegacion(
             TextButton(onClick = onGuardados) { Text(etiquetaGuardados(idiomaAplicacion)) }
             TextButton(onClick = onAjustes) { Text(etiquetaAjustes(idiomaAplicacion)) }
         }
-    }
-}
-
-/**
- * Nombre de la app y, debajo, una linea fija que dice para que es (no es un curso: fija lo
- * aprendido en uno), mas el acceso a Acerca de.
- */
-@Composable
-private fun EncabezadoApp(idiomaAplicacion: Idioma, onAcercaDe: () -> Unit) {
-    Row(
-        modifier = Modifier.fillMaxWidth().padding(start = 16.dp, end = 4.dp, top = 4.dp),
-        verticalAlignment = Alignment.CenterVertically,
-    ) {
-        Column(Modifier.weight(1f)) {
-            Text(NOMBRE_APP, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
-            Text(
-                textoLineaFija(idiomaAplicacion),
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
-        }
-        TextButton(onClick = onAcercaDe) { Text(etiquetaAcercaDe(idiomaAplicacion)) }
     }
 }
 
