@@ -68,13 +68,13 @@ class TextosInterfazTest {
     }
 
     @Test
-    fun `etiquetaAjustes coincide con las seis columnas del documento -- PT es Ajustes, no Configuracoes`() {
+    fun `etiquetaAjustes coincide con las seis columnas del documento -- PT es Configuracoes (Brasil), ya no Ajustes`() {
         assertEquals("Ajustes", etiquetaAjustes(Idioma.ES))
         assertEquals("Settings", etiquetaAjustes(Idioma.EN))
         assertEquals("Einstellungen", etiquetaAjustes(Idioma.DE))
         assertEquals("Paramètres", etiquetaAjustes(Idioma.FR))
         assertEquals("Impostazioni", etiquetaAjustes(Idioma.IT))
-        assertEquals("Ajustes", etiquetaAjustes(Idioma.PT))
+        assertEquals("Configurações", etiquetaAjustes(Idioma.PT))
     }
 
     @Test
@@ -92,7 +92,7 @@ class TextosInterfazTest {
         assertEquals("Pulsá otra vez para salir", mensajeDobleAtrasParaSalir(Idioma.ES))
         assertEquals("Press again to exit", mensajeDobleAtrasParaSalir(Idioma.EN))
         assertEquals("Zum Beenden nochmals drücken", mensajeDobleAtrasParaSalir(Idioma.DE))
-        assertEquals("Appuyez à nouveau pour quitter", mensajeDobleAtrasParaSalir(Idioma.FR))
+        assertEquals("Appuie à nouveau pour quitter", mensajeDobleAtrasParaSalir(Idioma.FR))
         assertEquals("Premi di nuovo per uscire", mensajeDobleAtrasParaSalir(Idioma.IT))
         assertEquals("Pressione novamente para sair", mensajeDobleAtrasParaSalir(Idioma.PT))
     }

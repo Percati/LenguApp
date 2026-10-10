@@ -52,7 +52,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
     ),
     ClaveTexto.AJUSTES to mapOf(
         Idioma.ES to "Ajustes", Idioma.EN to "Settings", Idioma.DE to "Einstellungen",
-        Idioma.FR to "Paramètres", Idioma.IT to "Impostazioni", Idioma.PT to "Ajustes",
+        Idioma.FR to "Paramètres", Idioma.IT to "Impostazioni", Idioma.PT to "Configurações",
     ),
     ClaveTexto.VOLVER to mapOf(
         Idioma.ES to "Volver", Idioma.EN to "Back", Idioma.DE to "Zurück",
@@ -94,7 +94,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.ES to "Pulsá otra vez para salir",
         Idioma.EN to "Press again to exit",
         Idioma.DE to "Zum Beenden nochmals drücken",
-        Idioma.FR to "Appuyez à nouveau pour quitter",
+        Idioma.FR to "Appuie à nouveau pour quitter",
         Idioma.IT to "Premi di nuovo per uscire",
         Idioma.PT to "Pressione novamente para sair",
     ),
@@ -102,9 +102,9 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.ES to "Idioma que aprendés",
         Idioma.EN to "Language you're learning",
         Idioma.DE to "Sprache, die du lernst",
-        Idioma.FR to "Langue que vous apprenez",
+        Idioma.FR to "Langue que tu apprends",
         Idioma.IT to "Lingua che stai imparando",
-        Idioma.PT to "Idioma que está a aprender",
+        Idioma.PT to "Idioma que você está aprendendo",
     ),
     ClaveTexto.IDIOMA_APP to mapOf(
         Idioma.ES to "Idioma de la aplicación",
@@ -112,7 +112,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.DE to "Sprache der App",
         Idioma.FR to "Langue de l'application",
         Idioma.IT to "Lingua dell'applicazione",
-        Idioma.PT to "Idioma da aplicação",
+        Idioma.PT to "Idioma do aplicativo",
     ),
     // Una sola palabra por idioma: "Según el sistema" y sus equivalentes no
     // entraban en el ancho de pantalla en varios de los 6 idiomas y obligaban
@@ -163,20 +163,20 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.DE to "Die Wortschatzübersetzungen liegen bisher nur auf Spanisch vor.",
         Idioma.FR to "Les traductions du vocabulaire n'existent pour l'instant qu'en espagnol.",
         Idioma.IT to "Le traduzioni del lessico esistono per ora solo in spagnolo.",
-        Idioma.PT to "As traduções de vocabulário só existem em espanhol por agora.",
+        Idioma.PT to "As traduções de vocabulário só existem em espanhol por enquanto.",
     ),
     // --- Guardados (feature 3) ---
     ClaveTexto.GUARDADOS to mapOf(
         Idioma.ES to "Guardados", Idioma.EN to "Saved", Idioma.DE to "Gespeichert",
-        Idioma.FR to "Enregistrés", Idioma.IT to "Salvati", Idioma.PT to "Guardados",
+        Idioma.FR to "Enregistrés", Idioma.IT to "Salvati", Idioma.PT to "Salvos",
     ),
     ClaveTexto.GUARDADOS_VACIO to mapOf(
         Idioma.ES to "Todavía no guardaste nada. Tocá la estrella junto a una palabra o expresión para guardarla.",
         Idioma.EN to "You haven't saved anything yet. Tap the star next to a word or expression to save it.",
         Idioma.DE to "Du hast noch nichts gespeichert. Tippe auf den Stern neben einem Wort oder Ausdruck, um ihn zu speichern.",
-        Idioma.FR to "Vous n'avez encore rien enregistré. Appuyez sur l'étoile à côté d'un mot ou d'une expression pour l'enregistrer.",
+        Idioma.FR to "Tu n'as encore rien enregistré. Appuie sur l'étoile à côté d'un mot ou d'une expression pour l'enregistrer.",
         Idioma.IT to "Non hai ancora salvato nulla. Tocca la stella accanto a una parola o espressione per salvarla.",
-        Idioma.PT to "Ainda não guardou nada. Toque na estrela junto a uma palavra ou expressão para a guardar.",
+        Idioma.PT to "Você ainda não salvou nada. Toque na estrela ao lado de uma palavra ou expressão para salvá-la.",
     ),
     ClaveTexto.FILTRO_IDIOMA to mapOf(
         Idioma.ES to "Idioma", Idioma.EN to "Language", Idioma.DE to "Sprache",
@@ -218,23 +218,23 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.DE to "Die Wochenaufgabe, aber im Ernstfall.",
         Idioma.FR to "La mission de la semaine, mais en conditions réelles.",
         Idioma.IT to "La missione della settimana, ma in modalità reale.",
-        Idioma.PT to "A missão da semana, mas em modo real.",
+        Idioma.PT to "A missão da semana, mas no modo real.",
     ),
     ClaveTexto.RETO_REGLAS_BASICO to mapOf(
         Idioma.ES to "1. De corrido, sin leer.\n2. Una sola toma.\n3. Díselo a una persona o grábate en audio.\n4. Escúchalo: ¿se entiende? Repítelo una vez.",
         Idioma.EN to "1. Out loud and fluently, without reading.\n2. One single take.\n3. Say it to a person, or record yourself.\n4. Listen back: is it clear? Do it once more.",
         Idioma.DE to "1. Flüssig und ohne abzulesen.\n2. Nur ein Versuch.\n3. Sag es einer Person oder nimm dich auf.\n4. Hör es dir an: Ist es verständlich? Sprich es noch einmal.",
-        Idioma.FR to "1. D'un trait, sans lire.\n2. Une seule prise.\n3. Dites-le à quelqu'un ou enregistrez-vous.\n4. Écoutez-vous : est-ce compréhensible ? Recommencez une fois.",
+        Idioma.FR to "1. D'un trait, sans lire.\n2. Une seule prise.\n3. Dis-le à quelqu'un ou enregistre-toi.\n4. Écoute-toi : est-ce compréhensible ? Recommence une fois.",
         Idioma.IT to "1. Di seguito, senza leggere.\n2. Una sola ripresa.\n3. Dillo a una persona o registrati.\n4. Riascoltati: si capisce? Ripetilo una volta.",
-        Idioma.PT to "1. De seguida, sem ler.\n2. Uma só gravação.\n3. Diga-o a uma pessoa ou grave-se em áudio.\n4. Ouça: percebe-se? Repita uma vez.",
+        Idioma.PT to "1. De uma vez, sem ler.\n2. Uma única gravação.\n3. Diga isso a uma pessoa ou grave um áudio.\n4. Escute: dá para entender? Repita uma vez.",
     ),
     ClaveTexto.RETO_REGLAS_AVANZADO to mapOf(
         Idioma.ES to "1. Sin notas, una sola toma de {oralMin} min.\n2. Cambia de interlocutor a mitad (de un amigo a tu jefe, o al revés).\n3. Grábate y apunta una cosa que mejorarías.\n4. Repite con ese cambio.",
         Idioma.EN to "1. No notes, one single take of {oralMin} min.\n2. Switch listener halfway through (from a friend to your boss, or the other way round).\n3. Record yourself and note one thing you would improve.\n4. Do it again with that change.",
         Idioma.DE to "1. Ohne Notizen, ein einziger Durchgang von {oralMin} Min.\n2. Wechsle in der Mitte das Gegenüber (von einem Freund zu einem Vorgesetzten, oder umgekehrt).\n3. Nimm dich auf und notiere eine Sache, die du verbessern würdest.\n4. Wiederhole es mit dieser Änderung.",
-        Idioma.FR to "1. Sans notes, en une seule prise de {oralMin} min.\n2. Changez d'interlocuteur à mi-parcours (d'un ami à votre supérieur, ou l'inverse).\n3. Enregistrez-vous et notez une chose à améliorer.\n4. Recommencez avec ce changement.",
+        Idioma.FR to "1. Sans notes, en une seule prise de {oralMin} min.\n2. Change d'interlocuteur à mi-parcours (d'un ami à ton supérieur, ou l'inverse).\n3. Enregistre-toi et note une chose à améliorer.\n4. Recommence avec ce changement.",
         Idioma.IT to "1. Senza appunti, una sola ripresa di {oralMin} min.\n2. Cambia interlocutore a metà (da un amico al tuo capo, o viceversa).\n3. Registrati e annota una cosa da migliorare.\n4. Ripeti con quel cambiamento.",
-        Idioma.PT to "1. Sem notas, numa só gravação de {oralMin} min.\n2. Mude de interlocutor a meio (de um amigo para o seu chefe, ou ao contrário).\n3. Grave-se e anote uma coisa a melhorar.\n4. Repita com essa mudança.",
+        Idioma.PT to "1. Sem anotações, em uma única gravação de {oralMin} min.\n2. Troque de interlocutor na metade (de um amigo para o seu chefe, ou o contrário).\n3. Faça uma gravação e anote uma coisa que você melhoraria.\n4. Repita com essa mudança.",
     ),
     ClaveTexto.RETO_ROTULO_MISION to mapOf(
         Idioma.ES to "La misión:",
@@ -257,17 +257,17 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.ES to "Elige al menos un idioma en Ajustes para ver contenido.",
         Idioma.EN to "Choose at least one language in Settings to see content.",
         Idioma.DE to "Wähle in den Einstellungen mindestens eine Sprache, um Inhalte zu sehen.",
-        Idioma.FR to "Choisissez au moins une langue dans Paramètres pour voir du contenu.",
+        Idioma.FR to "Choisis au moins une langue dans Paramètres pour voir du contenu.",
         Idioma.IT to "Scegli almeno una lingua in Impostazioni per vedere i contenuti.",
-        Idioma.PT to "Escolha pelo menos um idioma em Ajustes para ver conteúdo.",
+        Idioma.PT to "Escolha pelo menos um idioma em Configurações para ver o conteúdo.",
     ),
     ClaveTexto.SIN_IDIOMA_WIDGET to mapOf(
         Idioma.ES to "Elige un idioma en Ajustes.",
         Idioma.EN to "Choose a language in Settings.",
         Idioma.DE to "Wähle in den Einstellungen eine Sprache.",
-        Idioma.FR to "Choisissez une langue dans Paramètres.",
+        Idioma.FR to "Choisis une langue dans Paramètres.",
         Idioma.IT to "Scegli una lingua in Impostazioni.",
-        Idioma.PT to "Escolha um idioma em Ajustes.",
+        Idioma.PT to "Escolha um idioma em Configurações.",
     ),
     // --- Acerca de y linea fija (Ronda E, tarea 6) ---
     ClaveTexto.ACERCA_DE to mapOf(
@@ -282,9 +282,9 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.ES to "Para fijar lo que ya aprendiste en tu curso.",
         Idioma.EN to "To consolidate what you already learned in your course.",
         Idioma.DE to "Um zu festigen, was du in deinem Kurs schon gelernt hast.",
-        Idioma.FR to "Pour fixer ce que vous avez déjà appris dans votre cours.",
+        Idioma.FR to "Pour fixer ce que tu as déjà appris dans ton cours.",
         Idioma.IT to "Per fissare ciò che hai già imparato nel tuo corso.",
-        Idioma.PT to "Para fixar o que já aprendeu no seu curso.",
+        Idioma.PT to "Para fixar o que você já aprendeu no seu curso.",
     ),
     ClaveTexto.ACERCA_QUE_ES_TITULO to mapOf(
         Idioma.ES to "Qué es y qué no es",
@@ -298,9 +298,9 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.ES to "LenguApp te da cada semana una ficha para practicar hablando el idioma que aprendes, al nivel que elijas. No es un curso: fija lo que ya aprendiste en un curso de tu nivel.",
         Idioma.EN to "LenguApp gives you one sheet a week to practise speaking the language you are learning, at the level you choose. It is not a course: it helps you consolidate what you already learned in a course at your level.",
         Idioma.DE to "LenguApp gibt dir jede Woche ein Blatt, um die Sprache, die du lernst, mündlich zu üben – auf dem Niveau, das du wählst. Es ist kein Kurs: Es festigt, was du in einem Kurs auf deinem Niveau schon gelernt hast.",
-        Idioma.FR to "LenguApp vous propose chaque semaine une fiche pour vous exercer à parler la langue que vous apprenez, au niveau de votre choix. Ce n'est pas un cours : l'application consolide ce que vous avez déjà appris dans un cours de votre niveau.",
+        Idioma.FR to "LenguApp te propose chaque semaine une fiche pour t'exercer à parler la langue que tu apprends, au niveau de ton choix. Ce n'est pas un cours : l'application consolide ce que tu as déjà appris dans un cours de ton niveau.",
         Idioma.IT to "LenguApp ti propone ogni settimana una scheda per esercitarti a parlare la lingua che stai imparando, al livello che scegli. Non è un corso: consolida ciò che hai già imparato in un corso del tuo livello.",
-        Idioma.PT to "A LenguApp oferece-lhe todas as semanas uma ficha para praticar a falar a língua que está a aprender, ao nível que escolher. Não é um curso: consolida o que já aprendeu num curso do seu nível.",
+        Idioma.PT to "O LenguApp traz toda semana uma ficha para você praticar falando o idioma que está aprendendo, no nível que escolher. Não é um curso: ele fixa o que você já aprendeu em um curso do seu nível.",
     ),
     ClaveTexto.ACERCA_PRIVACIDAD_TITULO to mapOf(
         Idioma.ES to "Privacidad",
@@ -314,9 +314,9 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.ES to "Sin Internet y sin cuenta: la app no puede enviar nada a ningún sitio. Solo lee la fecha del dispositivo (y su idioma, únicamente si lo eliges en Ajustes). Lo único que se guarda en tu móvil son los elementos que marcas con la estrella en Guardados.",
         Idioma.EN to "No internet and no account: the app cannot send anything anywhere. It only reads the device's date (and its language, only if you choose that in Settings). The only thing stored on your phone is what you mark with a star in Saved.",
         Idioma.DE to "Kein Internet, kein Konto: Die App kann nirgendwohin etwas senden. Sie liest nur das Datum des Geräts (und seine Sprache, nur wenn du das in den Einstellungen wählst). Auf deinem Handy gespeichert wird nur, was du unter Gespeichert mit dem Stern markierst.",
-        Idioma.FR to "Pas d'Internet, pas de compte : l'application ne peut rien envoyer nulle part. Elle lit seulement la date de l'appareil (et sa langue, uniquement si vous le choisissez dans Paramètres). Seuls les éléments que vous marquez d'une étoile dans Enregistrés sont conservés sur votre téléphone.",
+        Idioma.FR to "Pas d'Internet, pas de compte : l'application ne peut rien envoyer nulle part. Elle lit seulement la date de l'appareil (et sa langue, uniquement si tu le choisis dans Paramètres). Seuls les éléments que tu marques d'une étoile dans Enregistrés sont conservés sur ton téléphone.",
         Idioma.IT to "Niente Internet e niente account: l'app non può inviare nulla da nessuna parte. Legge soltanto la data del dispositivo (e la sua lingua, solo se lo scegli in Impostazioni). Sul telefono viene conservato soltanto ciò che contrassegni con la stella in Salvati.",
-        Idioma.PT to "Sem Internet e sem conta: a aplicação não pode enviar nada para lado nenhum. Só lê a data do dispositivo (e o seu idioma, apenas se o escolher em Ajustes). A única coisa guardada no telemóvel são os itens que marcar com a estrela em Guardados.",
+        Idioma.PT to "Sem internet e sem conta: o aplicativo não pode enviar nada para lugar nenhum. Ele só lê a data do dispositivo (e o idioma, somente se você escolher isso em Configurações). A única coisa salva no seu celular são os itens que você marca com a estrela em Salvos.",
     ),
     ClaveTexto.ACERCA_LICENCIAS_TITULO to mapOf(
         Idioma.ES to "Licencias",
@@ -372,9 +372,9 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.ES to "Pegalo al empezar una conversación de voz con tu IA. Decile *feedback* cuando quieras la devolución.",
         Idioma.EN to "Paste it at the start of a voice conversation with your AI. Say *feedback* whenever you want the debrief.",
         Idioma.DE to "Füge ihn zu Beginn eines Sprachgesprächs mit deiner KI ein. Sag *feedback*, wenn du die Rückmeldung möchtest.",
-        Idioma.FR to "Collez-le au début d'une conversation vocale avec votre IA. Dites *feedback* quand vous voulez le retour.",
+        Idioma.FR to "Colle-le au début d'une conversation vocale avec ton IA. Dis *feedback* quand tu veux le retour.",
         Idioma.IT to "Incollalo all'inizio di una conversazione vocale con la tua IA. Di' *feedback* quando vuoi la valutazione.",
-        Idioma.PT to "Cole-o no início de uma conversa por voz com a sua IA. Diga *feedback* quando quiser o retorno.",
+        Idioma.PT to "Cole no início de uma conversa por voz com a sua IA. Diga *feedback* quando quiser o retorno.",
     ),
     // --- Planilla del profesor (Ronda B, pieza 3) ---
     ClaveTexto.PLANILLA_BOTON to mapOf(
@@ -391,7 +391,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.DE to "Es gibt keine App, um das PDF zu öffnen oder zu teilen.",
         Idioma.FR to "Aucune application ne peut ouvrir ou partager le PDF.",
         Idioma.IT to "Nessuna app può aprire o condividere il PDF.",
-        Idioma.PT to "Não há nenhuma aplicação para abrir ou partilhar o PDF.",
+        Idioma.PT to "Não há nenhum aplicativo para abrir ou compartilhar o PDF.",
     ),
     // --- Biblioteca (Ronda B, pieza 4) ---
     ClaveTexto.BIBLIOTECA to mapOf(
@@ -408,7 +408,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.DE to "Suchen",
         Idioma.FR to "Rechercher",
         Idioma.IT to "Cerca",
-        Idioma.PT to "Pesquisar",
+        Idioma.PT to "Buscar",
     ),
     ClaveTexto.BIBLIOTECA_TEMA to mapOf(
         Idioma.ES to "Tema",
@@ -515,7 +515,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.DE to "Aus Gespeichert entfernen",
         Idioma.FR to "Retirer des éléments enregistrés",
         Idioma.IT to "Rimuovi dai salvati",
-        Idioma.PT to "Remover de Salvos",
+        Idioma.PT to "Remover dos Salvos",
     ),
     // --- Switch de traduccion en vivo (feature 1) ---
     // Dice que HACE el switch (traducir al idioma de app), no que idioma se esta

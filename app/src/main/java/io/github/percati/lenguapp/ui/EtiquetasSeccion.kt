@@ -69,11 +69,11 @@ private val ETIQUETAS: Map<String, Map<Idioma, String>> = mapOf(
     ),
     "microtareas" to mapOf(
         Idioma.ES to "Micro-tareas", Idioma.EN to "Micro-tasks", Idioma.DE to "Mikroaufgaben",
-        Idioma.FR to "Micro-tâches", Idioma.IT to "Micro-attività", Idioma.PT to "Micro-tarefas",
+        Idioma.FR to "Micro-tâches", Idioma.IT to "Micro-attività", Idioma.PT to "Microtarefas",
     ),
     "autochequeo" to mapOf(
         Idioma.ES to "Autochequeo", Idioma.EN to "Self-check", Idioma.DE to "Selbstkontrolle",
-        Idioma.FR to "Auto-évaluation", Idioma.IT to "Autoverifica", Idioma.PT to "Autoverificação",
+        Idioma.FR to "Auto-évaluation", Idioma.IT to "Autoverifica", Idioma.PT to "Autoavaliação",
     ),
     "promptCorreccion" to mapOf(
         Idioma.ES to "Prompt de corrección", Idioma.EN to "Correction prompt", Idioma.DE to "Korrekturprompt",
@@ -90,6 +90,9 @@ internal fun tablaEtiquetasSeccionCruda(): Map<String, Map<Idioma, String>> = ET
 
 /** Titulo de seccion `clave` en `idioma`; una clave desconocida se devuelve tal cual (no rompe la pantalla). */
 fun etiquetaSeccion(clave: String, idioma: Idioma): String = ETIQUETAS[clave]?.get(idioma) ?: clave
+
+/** Solo para los tests de cobertura/registro: la tabla cruda, sin fallback. */
+internal fun etiquetasSeccionCrudas(): Map<String, Map<Idioma, String>> = ETIQUETAS
 
 /**
  * Nombres de idioma para armar "Kontrast zum Spanischen" / "Contrast with
