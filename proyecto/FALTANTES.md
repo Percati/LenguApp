@@ -723,3 +723,9 @@ Verificado por Overview: el parche de Code (9 commits) aplica limpio sobre `ab35
 - Cerrado ahora por Overview: textos de tienda fr-FR, it-IT, pt-BR (informales; pt de Brasil). Pendiente: revisión de un hablante antes de publicar.
 - Sumado a Ronda F (`prompts/13`, tarea 6): test de la matriz de superficies.
 - Sigue abierto: dirección visual (ícono, pantalla de carga, UI), nombre definitivo, capturas, 273 expresiones sin categoría, maestro de traducciones sin `erroresContrastivos` (sección 20), 2027/2028, CI en el repo.
+
+### 23.1 Decisiones de Fer del 10-oct-2026 (español neutro)
+- Léxico: **lista corta** de sustituciones (no revisión total). Tratamiento: **tú en todo**, también en la prosa de alemán.
+- Va a Traducciones como `prompts/14-traducciones-neutro-lexico-usted.md`, **antes** de Code Ronda F. Incluye la regla R7 del verificador.
+- Medido (assets, 10-oct): ~438 imperativos de «usted» en ~145 archivos; léxico peninsular: piso 40, billete 60 (mucho es dinero, válido), aparcar 9, coche 8, ordenador 6, móvil 6, camarero 3, tío/tía 4, coger confianza 1.
+- Parche de assets tras el tuteo (`9cd4de7d`) aplicado y verificado: recomposición idéntica, 0 diferencias.
