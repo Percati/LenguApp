@@ -120,7 +120,7 @@ fun BibliotecaScreen(
             return@Column
         }
 
-        LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        LazyColumn(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreItems)) {
             item {
                 Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                     ScrollableTabRow(selectedTabIndex = idiomas.indexOf(idioma).coerceAtLeast(0)) {

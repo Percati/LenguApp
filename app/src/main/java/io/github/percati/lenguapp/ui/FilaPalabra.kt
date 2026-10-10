@@ -52,7 +52,7 @@ fun FilaPalabra(
                 (if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
                     .weight(1f)
                     .padding(start = 12.dp, top = 8.dp, bottom = 8.dp, end = 4.dp),
-                verticalArrangement = Arrangement.spacedBy(2.dp),
+                verticalArrangement = Arrangement.spacedBy(espaciadoActual().dentroDeItem),
             ) {
                 Text(original, style = MaterialTheme.typography.bodyLarge)
                 // La traduccion esta en idiomaBase: una cita *entre asteriscos* ahi adentro es una

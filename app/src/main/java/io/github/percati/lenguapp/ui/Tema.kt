@@ -119,5 +119,5 @@ fun TemaLenguApp(familiaTema: FamiliaTema, modoTema: ModoTema, content: @Composa
         ModoTema.SEGUN_SISTEMA -> oscuroDelSistema
     }
     val esquema = paletaPara(familiaTema, oscuro).aColorScheme(oscuro)
-    MaterialTheme(colorScheme = esquema, content = content)
+    MaterialTheme(colorScheme = esquema, typography = tipografiaProporcional(), content = content)
 }

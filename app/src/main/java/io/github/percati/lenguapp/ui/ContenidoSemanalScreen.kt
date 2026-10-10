@@ -90,11 +90,6 @@ import java.time.LocalDate
 /** Cuantas frases de la ficha se ofrecen en el reto del fin de semana. */
 private const val MAX_FRASES_RETO = 3
 
-private val ESPACIO_ENTRE_SECCIONES = 32.dp
-
-/** Separacion entre items de vocabulario / expresiones: mayor que la que hay DENTRO de un item (palabra + traduccion pegadas). */
-private val ESPACIO_ENTRE_ITEMS = 22.dp
-
 /**
  * Lo que [ContenidoSemanalScreen] necesita de Guardados (feature 3) para
  * pintar la estrella de cada item de vocabulario/Redemittel, sin saber nada
@@ -248,7 +243,7 @@ private fun FichaContenido(
         SelectionContainer {
             Column(
                 modifier = Modifier.verticalScroll(rememberScrollState()).padding(16.dp),
-                verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
+                verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones),
             ) {
                 Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
                     ficha.variante?.let { EtiquetaVariante(it) }
@@ -336,7 +331,7 @@ private fun FichaContenido(
                     }
 
                     SeccionPlegable(titulo = "${et("vocabulario")} (${ficha.vocabulario.size})") {
-                        Column(verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_ITEMS)) {
+                        Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreItems)) {
                             // Las glosas siempre en el idioma de app: el switch
                             // cambia la prosa, no la traduccion del vocabulario.
                             ficha.vocabulario.forEach { VocabularioFila(it, idiomaBase, ficha.idioma, estadoGuardados) }
@@ -344,7 +339,7 @@ private fun FichaContenido(
                     }
 
                     SeccionPlegable(titulo = "${et("redemittel")} (${ficha.redemittel.size})") {
-                        Column(verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_ITEMS)) {
+                        Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreItems)) {
                             ficha.redemittel.forEach {
                                 RedemittelFila(it, idiomaBase, idiomaMostrado, ficha.idioma, estadoGuardados)
                             }
@@ -463,7 +458,7 @@ private fun SemanaEspecialContenido(
     val et: (String) -> String = { etiquetaSeccion(it, idiomaTexto) }
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
-        verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES),
+        verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones),
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
             Text(t(especial.titulo), style = MaterialTheme.typography.headlineSmall)
@@ -522,7 +517,7 @@ private fun iconosReto(nivel: Nivel): List<ImageVector> =
 
 @Composable
 private fun RetoFinDeSemana(ficha: Ficha, idiomaInterfaz: Idioma, habilidad: String, tema: String) {
-    Column(verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES)) {
+    Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones)) {
         Seccion(etiquetaDesafioFinde(idiomaInterfaz)) {
             Text(textoRetoLinea(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge)
             FilaDato(etiquetaBibliotecaTema(idiomaInterfaz), tema)
@@ -531,7 +526,7 @@ private fun RetoFinDeSemana(ficha: Ficha, idiomaInterfaz: Idioma, habilidad: Str
         Seccion(etiquetaRetoCondiciones(idiomaInterfaz)) {
             val iconos = iconosReto(ficha.nivel)
             reglasReto(idiomaInterfaz, ficha.nivel, oralMinRedondeado(ficha.evidencia.oralMin)).forEachIndexed { i, regla ->
-                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas * 3)) {
                     Icon(iconos.getOrElse(i) { iconos.last() }, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
                     Text(regla, style = MaterialTheme.typography.bodyMedium)
                 }
@@ -558,7 +553,8 @@ private fun FilaDato(etiqueta: String, valor: String) {
 
 @Composable
 private fun Seccion(titulo: String, contenido: @Composable () -> Unit) {
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+    // El espacio entre viñetas / renglones de la lista es proporcional a la letra (ui/Espaciado.kt), no 8.dp fijos.
+    Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
         Text(titulo, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
         contenido()
     }
@@ -566,7 +562,7 @@ private fun Seccion(titulo: String, contenido: @Composable () -> Unit) {
 
 @Composable
 private fun Vinieta(texto: String, angulares: Boolean = false) {
-    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+    Row(horizontalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
         Text("•", style = MaterialTheme.typography.bodyMedium)
         Text(textoConMarcado(texto, angulares), style = MaterialTheme.typography.bodyMedium, modifier = Modifier.padding(end = 4.dp))
     }
@@ -617,7 +613,7 @@ private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma, idiomaApr
     // Palabra y traduccion van pegadas (son una unidad); lo demas del item
     // (reccion, nota, insignias) tiene un poco mas de aire, y entre items la
     // separacion es mayor todavia (ESPACIO_ENTRE_ITEMS, en quien llama).
-    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+    Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
         Column(verticalArrangement = Arrangement.spacedBy(0.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
             // AJUSTES-FASE-8.md, B.5: sin la etiqueta "núcleo" (nombre de
@@ -677,7 +673,7 @@ private fun RedemittelFila(
 ) {
     // Orden: expresion, su traduccion (pegadas), y la funcion debajo de la
     // traduccion -- antes la funcion quedaba en el medio, entre las dos.
-    Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+    Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
         Column(verticalArrangement = Arrangement.spacedBy(0.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(
