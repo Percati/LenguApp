@@ -40,6 +40,7 @@ enum class ClaveTexto {
     RETO_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_HABILIDAD, RETO_CONDICIONES, RETO_FRASES_TITULO, RETO_FRASES_AYUDA,
     ACERCA_COMO_TITULO, ACERCA_COMO_TEXTO, ACERCA_CREDITOS_TEXTO, ACERCA_PRUEBA,
     GUARDADOS_EXPORTAR, GUARDADOS_IMPORTAR, GUARDADOS_EXPORTAR_ANKI, GUARDADOS_EXPORTAR_RESPALDO, GUARDADOS_MSG_EXPORTADO, GUARDADOS_MSG_IMPORTADO, GUARDADOS_ERR_INVALIDO, GUARDADOS_ERR_GRANDE, GUARDADOS_ERR_VERSION, GUARDADOS_ERR_ARCHIVO,
+    BIBLIOTECA_VISTA_LEXICO, BIBLIOTECA_VISTA_HABILIDADES, HABILIDAD_SEMANAS,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
 }
 
@@ -343,6 +344,31 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "Impossible d'accéder au fichier.",
         Idioma.IT to "Impossibile accedere al file.",
         Idioma.PT to "Não foi possível acessar o arquivo.",
+    ),
+    // --- Indice de habilidades (Ronda F2, tarea 7) ---
+    ClaveTexto.BIBLIOTECA_VISTA_LEXICO to mapOf(
+        Idioma.ES to "Vocabulario y expresiones",
+        Idioma.EN to "Vocabulary and expressions",
+        Idioma.DE to "Wortschatz und Redewendungen",
+        Idioma.FR to "Vocabulaire et expressions",
+        Idioma.IT to "Vocabolario ed espressioni",
+        Idioma.PT to "Vocabulário e expressões",
+    ),
+    ClaveTexto.BIBLIOTECA_VISTA_HABILIDADES to mapOf(
+        Idioma.ES to "Habilidades",
+        Idioma.EN to "Skills",
+        Idioma.DE to "Fähigkeiten",
+        Idioma.FR to "Compétences",
+        Idioma.IT to "Abilità",
+        Idioma.PT to "Habilidades",
+    ),
+    ClaveTexto.HABILIDAD_SEMANAS to mapOf(
+        Idioma.ES to "sem. {semanas}",
+        Idioma.EN to "wk {semanas}",
+        Idioma.DE to "KW {semanas}",
+        Idioma.FR to "sem. {semanas}",
+        Idioma.IT to "sett. {semanas}",
+        Idioma.PT to "sem. {semanas}",
     ),
     // --- Estado sin idioma elegido (pantalla y widget) ---
     ClaveTexto.SIN_IDIOMA_TITULO to mapOf(
@@ -771,6 +797,10 @@ fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.T
 fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
 fun etiquetaAcercaDe(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_DE, idiomaInterfaz)
+fun etiquetaBibliotecaVistaLexico(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_VISTA_LEXICO, idiomaInterfaz)
+fun etiquetaBibliotecaVistaHabilidades(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_VISTA_HABILIDADES, idiomaInterfaz)
+fun textoHabilidadSemanas(idiomaInterfaz: Idioma, semanas: List<Int>): String =
+    interpolar(texto(ClaveTexto.HABILIDAD_SEMANAS, idiomaInterfaz), "semanas" to semanas.joinToString(", "))
 fun etiquetaGuardadosExportar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_EXPORTAR, idiomaInterfaz)
 fun etiquetaGuardadosImportar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_IMPORTAR, idiomaInterfaz)
 fun etiquetaGuardadosExportarAnki(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_EXPORTAR_ANKI, idiomaInterfaz)

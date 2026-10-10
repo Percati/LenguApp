@@ -27,6 +27,10 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
+import androidx.compose.foundation.clickable
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import io.github.percati.lenguapp.presentacion.FilaHabilidad
+import io.github.percati.lenguapp.presentacion.IndiceHabilidades
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -80,6 +84,9 @@ fun BibliotecaScreen(
     onAlternar: (ItemBiblioteca) -> Unit,
     onVolver: () -> Unit,
     modifier: Modifier = Modifier,
+    // Segunda vista: indice de habilidades del idioma de la pestana (solo lectura) y como abrir una.
+    habilidades: (Idioma) -> IndiceHabilidades = { IndiceHabilidades.SinCalendario(0) },
+    onAbrirFicha: (String) -> Unit = {},
 ) {
     val idiomas = remember(idiomasAprendidos) { idiomasAprendidos.keys.sortedBy { it.ordinal } }
     var idiomaElegido by remember(idiomas) { mutableStateOf(idiomas.firstOrNull()) }
@@ -89,6 +96,8 @@ fun BibliotecaScreen(
     var topic by remember(idiomaElegido) { mutableStateOf<String?>(null) }
     var categoriasElegidas by remember(idiomaElegido) { mutableStateOf<Set<String>>(emptySet()) }
     var busqueda by remember { mutableStateOf("") }
+    // Vista: palabras y expresiones (la de siempre) o indice de habilidades. Sin persistencia: cada apertura arranca en la primera.
+    var vista by remember { mutableStateOf(VistaBiblioteca.LEXICO) }
 
     val idioma = idiomaElegido
     val nivelesDefault = idioma?.let { setOfNotNull(idiomasAprendidos[it]) } ?: emptySet()
@@ -108,6 +117,9 @@ fun BibliotecaScreen(
         topic = null
         categoriasElegidas = emptySet()
     }
+
+    // El indice se arma solo si se esta mirando esa vista.
+    val indiceHabilidades = if (idioma != null && vista == VistaBiblioteca.HABILIDADES) remember(idioma, habilidades) { habilidades(idioma) } else null
 
     Column(modifier = modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -129,6 +141,20 @@ fun BibliotecaScreen(
                         }
                     }
 
+                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        FilterChip(
+                            selected = vista == VistaBiblioteca.LEXICO,
+                            onClick = { vista = VistaBiblioteca.LEXICO },
+                            label = { Text(etiquetaBibliotecaVistaLexico(idiomaInterfaz)) },
+                        )
+                        FilterChip(
+                            selected = vista == VistaBiblioteca.HABILIDADES,
+                            onClick = { vista = VistaBiblioteca.HABILIDADES },
+                            label = { Text(etiquetaBibliotecaVistaHabilidades(idiomaInterfaz)) },
+                        )
+                    }
+
+                    if (vista == VistaBiblioteca.LEXICO) Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         FilterChip(
                             selected = tipo == TipoGuardado.VOCABULARIO,
@@ -192,7 +218,28 @@ fun BibliotecaScreen(
                         singleLine = true,
                         modifier = Modifier.fillMaxWidth(),
                     )
+                    }
                 }
+            }
+
+            if (indiceHabilidades != null) {
+                when (val indice: IndiceHabilidades = indiceHabilidades) {
+                    is IndiceHabilidades.SinCalendario ->
+                        item { Text(mensajeSinCalendario(idiomaInterfaz, indice.anio), style = MaterialTheme.typography.bodyLarge) }
+                    is IndiceHabilidades.Filas -> {
+                        item {
+                            Text(
+                                "${etiquetaNivel(idiomaInterfaz)} ${indice.nivel.name} · ${indice.anio}",
+                                style = MaterialTheme.typography.labelLarge,
+                            )
+                        }
+                        if (indice.filas.isEmpty()) item { Text(etiquetaBibliotecaVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge) }
+                        items(indice.filas, key = { "habilidad|${it.skillId}" }) { fila ->
+                            FilaHabilidadIndice(fila, idiomaInterfaz) { onAbrirFicha(fila.fichaAAbrir) }
+                        }
+                    }
+                }
+                return@LazyColumn
             }
 
             if (filtrados.isEmpty()) {
@@ -247,4 +294,25 @@ private fun FilaBiblioteca(item: ItemBiblioteca, idiomaBase: Idioma, guardada: B
         descripcionEstrella = null,
         onEstrella = onAlternar,
     )
+}
+
+/** Las dos vistas de la Biblioteca. */
+private enum class VistaBiblioteca { LEXICO, HABILIDADES }
+
+/** Una habilidad del indice: titulo y semanas del anio; un toque abre la ficha. */
+@Composable
+private fun FilaHabilidadIndice(fila: FilaHabilidad, idiomaInterfaz: Idioma, onClick: () -> Unit) {
+    Surface(shape = RoundedCornerShape(8.dp), color = MaterialTheme.colorScheme.surfaceVariant, modifier = Modifier.fillMaxWidth().clickable(onClick = onClick)) {
+        Row(Modifier.padding(start = 12.dp, top = 8.dp, bottom = 8.dp, end = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(espaciadoActual().dentroDeItem)) {
+                Text(fila.titulo, style = MaterialTheme.typography.bodyLarge)
+                Text(
+                    textoHabilidadSemanas(idiomaInterfaz, fila.semanas),
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
+        }
+    }
 }

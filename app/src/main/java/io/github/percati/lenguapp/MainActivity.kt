@@ -83,6 +83,10 @@ import io.github.percati.lenguapp.ui.GuardadosScreen
 import io.github.percati.lenguapp.ui.PantallaSemana
 import io.github.percati.lenguapp.ui.TemaLenguApp
 import io.github.percati.lenguapp.ui.claveGuardado
+import io.github.percati.lenguapp.datos.cargarCalendarioDesdeAssets
+import io.github.percati.lenguapp.presentacion.IndiceHabilidades
+import io.github.percati.lenguapp.presentacion.construirIndiceHabilidades
+import io.github.percati.lenguapp.semana.CalendarioCargado
 import io.github.percati.lenguapp.ui.AcercaDeScreen
 import android.net.Uri
 import androidx.activity.compose.rememberLauncherForActivityResult
@@ -172,6 +176,7 @@ class MainActivity : ComponentActivity() {
                 categoriasUso = categoriasUso,
                 versionApp = versionApp,
                 resolver = { idioma, nivel, fecha -> resolverSemana(this, contenidoPorId, idioma, nivel, fecha) },
+                calendarioDe = { anio, idioma, nivel -> cargarCalendarioDesdeAssets(this, anio, idioma, nivel) },
                 onGuardarAjustes = { guardarAjustes(this, it) },
             )
         }
@@ -206,6 +211,8 @@ internal fun LenguAppApp(
     categoriasUso: CategoriasUso = CategoriasUso(),
     // Para la pantalla Acerca de (versionName del paquete; vacio = no se muestra).
     versionApp: String = "",
+    // Calendario de un (anio, idioma, nivel): lo usa el indice de habilidades de la Biblioteca.
+    calendarioDe: (Int, Idioma, Nivel) -> CalendarioCargado = { _, _, _ -> CalendarioCargado.SinCalendarioParaIdiomaONivel },
 ) {
     var ajustes by remember { mutableStateOf(ajustesIniciales) }
     var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
@@ -290,6 +297,7 @@ internal fun LenguAppApp(
         }
     }
 
+    val contenidoPorId = remember(contenidoTodos) { contenidoTodos.associateBy { it.id } }
     val itemsBiblioteca = remember(contenidoTodos) { construirBiblioteca(contenidoTodos) }
     val guardadasBiblioteca = guardadosTodos
         .map { claveBiblioteca(it.idioma, it.tipo, it.texto.resolver(it.idioma, it.idioma)) }
@@ -425,6 +433,23 @@ internal fun LenguAppApp(
                             )
                         },
                         onVolver = { navController.popBackStack() },
+                        // Indice de habilidades: el calendario del anio que se esta viendo, en el nivel actual del idioma.
+                        habilidades = { idioma ->
+                            val semanaVista = semanaIsoDe(fechaVista)
+                            val nivel = ajustes.idiomasAprendidos[idioma]
+                            if (nivel == null) {
+                                IndiceHabilidades.SinCalendario(semanaVista.anio)
+                            } else {
+                                construirIndiceHabilidades(
+                                    calendarioDe(semanaVista.anio, idioma, nivel), semanaVista.anio, idioma, nivel,
+                                    contenidoPorId, ajustes.idiomaBase, semanaVista.semana,
+                                )
+                            }
+                        },
+                        onAbrirFicha = { fichaId ->
+                            fichaGuardadaAbiertaId = fichaId
+                            navController.navigate(DESTINO_FICHA_GUARDADA)
+                        },
                     )
                 }
                 composable(DESTINO_FICHA_GUARDADA) {

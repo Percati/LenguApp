@@ -9,6 +9,9 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import io.github.percati.lenguapp.datos.CategoriasUso
 import io.github.percati.lenguapp.datos.NombresI18n
+import io.github.percati.lenguapp.presentacion.AparicionHabilidad
+import io.github.percati.lenguapp.presentacion.FilaHabilidad
+import io.github.percati.lenguapp.presentacion.IndiceHabilidades
 import io.github.percati.lenguapp.datos.parsearContenido
 import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
@@ -222,5 +225,66 @@ class BibliotecaScreenTest {
         composeTestRule.onNodeWithText("Inglés").assertExists()
         composeTestRule.onAllNodesWithText("DE").assertCountEquals(0)
         composeTestRule.onAllNodesWithText("EN").assertCountEquals(0)
+    }
+
+    // --- indice de habilidades (Ronda F2, tarea 7) ---
+
+    private fun indiceDePrueba(vararg filas: FilaHabilidad) =
+        IndiceHabilidades.Filas(Idioma.DE, Nivel.B2, 2026, filas.toList())
+
+    private fun mostrarConHabilidades(indice: (Idioma) -> IndiceHabilidades, onAbrirFicha: (String) -> Unit = {}) {
+        composeTestRule.setContent {
+            BibliotecaScreen(
+                items = items(),
+                idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2),
+                idiomaBase = Idioma.ES,
+                idiomaInterfaz = Idioma.ES,
+                topicNombres = NombresI18n(),
+                categorias = CategoriasUso(),
+                guardadas = emptySet(),
+                onAlternar = {},
+                onVolver = {},
+                habilidades = indice,
+                onAbrirFicha = onAbrirFicha,
+            )
+        }
+    }
+
+    @Test
+    fun `la Biblioteca tiene dos vistas y arranca en vocabulario y expresiones`() {
+        mostrarConHabilidades({ indiceDePrueba() })
+        composeTestRule.onNodeWithText("Vocabulario y expresiones").assertExists()
+        composeTestRule.onNodeWithText("Habilidades").assertExists()
+        composeTestRule.onAllNodesWithText("zzz-actual").assertCountEquals(1) // la vista de siempre
+    }
+
+    @Test
+    fun `la vista Habilidades lista titulo y semanas, y un toque abre la ficha`() {
+        val abiertas = mutableListOf<String>()
+        val a = FilaHabilidad("DE-G01", "Satzbau", listOf(AparicionHabilidad(6, "DE-G01-B2-2026-1"), AparicionHabilidad(20, "DE-G01-B2-2026-2"), AparicionHabilidad(33, "DE-G01-B2-2026-3")), "DE-G01-B2-2026-2")
+        val b = FilaHabilidad("DE-G02", "Konjunktiv", listOf(AparicionHabilidad(10, "DE-G02-B2-2026-1")), "DE-G02-B2-2026-1")
+        mostrarConHabilidades({ indiceDePrueba(a, b) }, onAbrirFicha = { abiertas += it })
+
+        composeTestRule.onNodeWithText("Habilidades").performClick()
+        composeTestRule.onNodeWithText("Satzbau").assertExists()
+        composeTestRule.onNodeWithText("sem. 6, 20, 33").assertExists()
+        composeTestRule.onNodeWithText("sem. 10").assertExists()
+        // la vista de palabras desaparece
+        composeTestRule.onAllNodesWithText("zzz-actual").assertCountEquals(0)
+
+        composeTestRule.onNodeWithText("Satzbau").performClick()
+        composeTestRule.onNodeWithText("Konjunktiv").performClick()
+        assertEquals(listOf("DE-G01-B2-2026-2", "DE-G02-B2-2026-1"), abiertas)
+
+        // y se puede volver a la vista de palabras
+        composeTestRule.onNodeWithText("Vocabulario y expresiones").performClick()
+        composeTestRule.onAllNodesWithText("zzz-actual").assertCountEquals(1)
+    }
+
+    @Test
+    fun `sin calendario la vista Habilidades lo dice, sin lista`() {
+        mostrarConHabilidades({ IndiceHabilidades.SinCalendario(2031) })
+        composeTestRule.onNodeWithText("Habilidades").performClick()
+        composeTestRule.onNode(androidx.compose.ui.test.hasText("2031", substring = true)).assertExists()
     }
 }

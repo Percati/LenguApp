@@ -140,7 +140,7 @@ fun resolverContenidoDeLaSemana(
         is CalendarioCargado.SinCalendarioParaIdiomaONivel -> sinContenido(RazonSinContenido.IDIOMA_O_NIVEL_SIN_CONTENIDO)
         is CalendarioCargado.Encontrado -> {
             val entrada = calendario.entradas.firstOrNull { it.semana == semanaIso.semana }
-            val contenido = entrada?.let { contenidoPorId[idDeEntrada(it, idioma, nivel, semanaIso.anio)] }
+            val contenido = entrada?.let { contenidoPorId[idContenidoDeEntrada(it, idioma, nivel, semanaIso.anio)] }
             if (contenido != null) {
                 ResultadoSemana.Encontrado(semanaIso, contenido)
             } else {
@@ -171,7 +171,7 @@ fun resolverContenidoDeLaSemana(
  * Survival de cada nivel es contenido distinto, no el mismo texto para los
  * dos.
  */
-private fun idDeEntrada(entrada: EntradaCalendario, idioma: Idioma, nivel: Nivel, anio: Int): String =
+fun idContenidoDeEntrada(entrada: EntradaCalendario, idioma: Idioma, nivel: Nivel, anio: Int): String =
     when (entrada.tipo) {
         TipoSemana.CONTENT -> "${entrada.skillId}-${nivel.name}-${anio}-${entrada.order}"
         TipoSemana.REVIEW -> "REVIEW-${idioma.name}-${nivel.name}-${anio}-S${entrada.semana}"

@@ -421,4 +421,40 @@ class LenguAppAppTest {
         composeTestRule.onNodeWithText("German").assertExists()
         composeTestRule.onAllNodesWithText("DE").assertCountEquals(0)
     }
+
+    @Test
+    fun `desde la Biblioteca, el indice de habilidades lleva a la ficha de esa semana`() {
+        val contenido = cargarContenido()
+        composeTestRule.setContent {
+            LenguAppApp(
+                ajustesIniciales = Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2), idiomaInterfaz = Idioma.ES, idiomaBase = Idioma.ES),
+                idiomasConContenido = setOf(Idioma.DE),
+                nivelesConContenido = nivelesDePrueba,
+                resolver = ::resolverDePrueba,
+                fechaInicial = LocalDate.of(2026, 9, 7),
+                onGuardarAjustes = {},
+                contenidoTodos = contenido.values.toList(),
+                calendarioDe = { anio, idioma, nivel ->
+                    val archivo = File(carpetaAssets(), "calendario/calendario_${anio}_${idioma.name.lowercase()}_${nivel.name}.json")
+                    if (archivo.isFile) CalendarioCargado.Encontrado(parsearCalendario(archivo.readText())) else CalendarioCargado.SinCalendarioParaElAnio
+                },
+            )
+        }
+        composeTestRule.onNodeWithText("Biblioteca").performClick()
+        composeTestRule.onNodeWithText("Habilidades").performClick()
+        composeTestRule.onNode(hasText("Nivel B2 · 2026", substring = true)).assertExists()
+
+        // La primera fila del indice (por titulo): abre la ficha de esa habilidad
+        val calendario = CalendarioCargado.Encontrado(parsearCalendario(File(carpetaAssets(), "calendario/calendario_2026_de_B2.json").readText()))
+        val indice = io.github.percati.lenguapp.presentacion.construirIndiceHabilidades(calendario, 2026, Idioma.DE, Nivel.B2, contenido, Idioma.ES, 37)
+            as io.github.percati.lenguapp.presentacion.IndiceHabilidades.Filas
+        val titulo = indice.filas.first().titulo
+        composeTestRule.onNodeWithText(titulo).performClick()
+
+        // Ahora se ve la ficha (con su boton Volver, que regresa a la Biblioteca)
+        composeTestRule.onNodeWithText("< Volver").assertExists()
+        composeTestRule.onNode(hasText(titulo)).assertExists()
+        composeTestRule.onNodeWithText("< Volver").performClick()
+        composeTestRule.onNodeWithText("Habilidades").assertExists()
+    }
 }
