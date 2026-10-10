@@ -11,6 +11,13 @@ private const val MAX_ITEMS_PROMPT_VOZ = 6
 /** Minutos orales por defecto cuando la ficha no trae un `oralMin` utilizable. */
 private const val ORAL_MIN_POR_DEFECTO = 6
 
+/**
+ * Las primeras `max` expresiones (Redemittel) de la ficha, en el idioma que se aprende, sin vacias.
+ * UNA sola seleccion para el prompt de voz ({expresiones}) y el reto del fin de semana ("Frases para usar").
+ */
+fun expresionesDeLaFicha(ficha: Ficha, max: Int): List<String> =
+    ficha.redemittel.take(max).map { it.expresion.trim() }.filter { it.isNotEmpty() }
+
 /** Los minutos orales de la ficha redondeados a entero; 6 si no hay un valor utilizable. Lo usan el prompt de voz y el reto del fin de semana. */
 fun oralMinRedondeado(oralMin: Double): Int = Math.round(oralMin).toInt().takeIf { it > 0 } ?: ORAL_MIN_POR_DEFECTO
 
@@ -39,8 +46,7 @@ fun promptVozPara(ficha: Ficha, plantillas: Map<String, String>): String? {
         "titulo" to t(ficha.titulo),
         "consigna" to t(ficha.mision.consigna),
         "requisitos" to ficha.mision.requisitos.map(::t).filter { it.isNotEmpty() }.joinToString("; "),
-        "expresiones" to ficha.redemittel.take(MAX_ITEMS_PROMPT_VOZ).map { it.expresion.trim() }
-            .filter { it.isNotEmpty() }.joinToString(", "),
+        "expresiones" to expresionesDeLaFicha(ficha, MAX_ITEMS_PROMPT_VOZ).joinToString(", "),
         "vocabulario" to ficha.vocabulario.filter { it.prioridad == Prioridad.NUCLEO }
             .take(MAX_ITEMS_PROMPT_VOZ).map { it.item.trim() }.filter { it.isNotEmpty() }.joinToString(", "),
         "oralMin" to oralMinRedondeado(ficha.evidencia.oralMin).toString(),

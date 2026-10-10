@@ -29,6 +29,13 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
+import androidx.compose.material.icons.filled.Group
+import androidx.compose.material.icons.filled.Mic
+import androidx.compose.material.icons.filled.Replay
+import androidx.compose.material.icons.filled.SwapHoriz
+import androidx.compose.material.icons.filled.Timer
+import androidx.compose.ui.graphics.vector.ImageVector
+import io.github.percati.lenguapp.datos.NombresI18n
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -59,6 +66,7 @@ import io.github.percati.lenguapp.modelo.VocabularioItem
 import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
 import io.github.percati.lenguapp.presentacion.contrasteParaMostrar
 import io.github.percati.lenguapp.presentacion.erroresParaMostrar
+import io.github.percati.lenguapp.presentacion.expresionesDeLaFicha
 import io.github.percati.lenguapp.presentacion.idiomaMostradoDeFicha
 import io.github.percati.lenguapp.presentacion.oralMinRedondeado
 import io.github.percati.lenguapp.presentacion.promptEnIdiomaAprendido
@@ -79,8 +87,8 @@ import java.time.LocalDate
  * corte entre secciones se note sin una regla. Un separador tenue en color
  * secundario queda como ultimo recurso si esto no alcanza -- no aplicado.
  */
-/** Cuantos requisitos de la mision se muestran dentro del reto del fin de semana. */
-private const val MAX_REQUISITOS_RETO = 2
+/** Cuantas frases de la ficha se ofrecen en el reto del fin de semana. */
+private const val MAX_FRASES_RETO = 3
 
 private val ESPACIO_ENTRE_SECCIONES = 32.dp
 
@@ -119,10 +127,11 @@ fun PantallaSemana(
     estadoGuardados: EstadoGuardados = EstadoGuardados(),
     promptsVoz: Map<String, String> = emptyMap(),
     onPlanilla: ((ContenidoSemanal) -> Unit)? = null,
+    topicNombres: NombresI18n = NombresI18n(),
 ) {
     when (resultado) {
         is ResultadoSemana.Encontrado ->
-            ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, onPlanilla)
+            ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, onPlanilla, topicNombres)
         is ResultadoSemana.SinContenido -> SinContenidoMensaje(resultado, idiomaInterfaz, modifier)
     }
 }
@@ -168,9 +177,11 @@ fun ContenidoSemanalScreen(
     // Planilla del profesor (PDF local): si es null el boton no se muestra. Quien llama
     // (MainActivity.kt) es el que sabe de archivos e Intents; esta pantalla solo avisa.
     onPlanilla: ((ContenidoSemanal) -> Unit)? = null,
+    // Nombres de topic en 6 idiomas: el reto del fin de semana muestra el tema en el idioma de app.
+    topicNombres: NombresI18n = NombresI18n(),
 ) {
     when (contenido) {
-        is Ficha -> FichaContenido(contenido, idiomaBase, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, onPlanilla, modifier)
+        is Ficha -> FichaContenido(contenido, idiomaBase, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, onPlanilla, topicNombres, modifier)
         is SemanaEspecial -> SemanaEspecialContenido(contenido, idiomaBase, idiomaInterfaz, onPlanilla, modifier)
     }
 }
@@ -188,6 +199,7 @@ private fun FichaContenido(
     estadoGuardados: EstadoGuardados,
     promptsVoz: Map<String, String>,
     onPlanilla: ((ContenidoSemanal) -> Unit)?,
+    topicNombres: NombresI18n,
     modifier: Modifier = Modifier,
 ) {
     // Feature 1 (switch de traduccion en vivo): estado local, nunca
@@ -258,21 +270,17 @@ private fun FichaContenido(
                 }
 
                 if (modoDesafio) {
-                    // El reto no es contenido nuevo ni la mision repetida (REGLAS-PREVENCION
-                    // P4): es un ENCUADRE fijo que la hace "en vivo" -- una linea, las reglas
-                    // del reto segun el nivel y, al final y en chico, la consigna de la ficha
-                    // con solo sus dos primeros requisitos. Rotulos y reglas en el idioma de
-                    // app; la consigna, como el resto de la ficha. El resto de la ficha se
-                    // oculta mientras el reto esta activo.
-                    Seccion(etiquetaRetoTitulo(idiomaInterfaz)) {
-                        Text(textoRetoLinea(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge)
-                        reglasReto(idiomaInterfaz, ficha.nivel, oralMinRedondeado(ficha.evidencia.oralMin)).forEach {
-                            Text(it, style = MaterialTheme.typography.bodyMedium)
-                        }
-                        Text(etiquetaRetoMision(idiomaInterfaz), style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Bold)
-                        Text(m(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodySmall)
-                        ficha.mision.requisitos.take(MAX_REQUISITOS_RETO).forEach { Vinieta(t(it), traduccionActiva) }
-                    }
+                    // El reto NO es la mision repetida (REGLAS-PREVENCION P4): no muestra la consigna ni los
+                    // requisitos. Es hablar en voz alta: una linea, el tema y la habilidad, las condiciones
+                    // (una idea por fila, con icono) y hasta 3 frases de la ficha para usar. Rotulos y
+                    // condiciones en el idioma de app; las frases en el que se aprende. El resto de la
+                    // ficha se oculta mientras el reto esta activo.
+                    RetoFinDeSemana(
+                        ficha = ficha,
+                        idiomaInterfaz = idiomaInterfaz,
+                        habilidad = t(ficha.titulo),
+                        tema = topicNombres.nombre(ficha.topicId, idiomaInterfaz),
+                    )
                 } else {
                     Text(m(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge)
 
@@ -504,6 +512,50 @@ private fun BotonPlanilla(texto: String, onClick: () -> Unit) {
  * bodyMedium/bodyLarge. FontWeight.Bold suma el segundo eje de contraste
  * que pidio B.2, antes de considerar un separador.
  */
+/** Iconos de las condiciones del reto, en el orden de las filas (Material Icons existentes). */
+private fun iconosReto(nivel: Nivel): List<ImageVector> =
+    if (nivel == Nivel.A2 || nivel == Nivel.B1) {
+        listOf(Icons.Filled.Mic, Icons.Filled.Timer, Icons.Filled.Group, Icons.Filled.Replay)
+    } else {
+        listOf(Icons.Filled.Mic, Icons.Filled.Timer, Icons.Filled.SwapHoriz, Icons.Filled.Replay)
+    }
+
+@Composable
+private fun RetoFinDeSemana(ficha: Ficha, idiomaInterfaz: Idioma, habilidad: String, tema: String) {
+    Column(verticalArrangement = Arrangement.spacedBy(ESPACIO_ENTRE_SECCIONES)) {
+        Seccion(etiquetaDesafioFinde(idiomaInterfaz)) {
+            Text(textoRetoLinea(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge)
+            FilaDato(etiquetaBibliotecaTema(idiomaInterfaz), tema)
+            FilaDato(etiquetaRetoHabilidad(idiomaInterfaz), habilidad)
+        }
+        Seccion(etiquetaRetoCondiciones(idiomaInterfaz)) {
+            val iconos = iconosReto(ficha.nivel)
+            reglasReto(idiomaInterfaz, ficha.nivel, oralMinRedondeado(ficha.evidencia.oralMin)).forEachIndexed { i, regla ->
+                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                    Icon(iconos.getOrElse(i) { iconos.last() }, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
+                    Text(regla, style = MaterialTheme.typography.bodyMedium)
+                }
+            }
+        }
+        // Las mismas expresiones que el prompt de voz (expresionesDeLaFicha), en el idioma que se aprende.
+        val frases = expresionesDeLaFicha(ficha, MAX_FRASES_RETO)
+        if (frases.isNotEmpty()) {
+            Seccion(etiquetaRetoFrasesTitulo(idiomaInterfaz)) {
+                Text(textoRetoFrasesAyuda(idiomaInterfaz), style = MaterialTheme.typography.bodyMedium)
+                frases.forEach { Vinieta(it) }
+            }
+        }
+    }
+}
+
+@Composable
+private fun FilaDato(etiqueta: String, valor: String) {
+    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text("$etiqueta:", style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Bold)
+        Text(valor, style = MaterialTheme.typography.bodyMedium)
+    }
+}
+
 @Composable
 private fun Seccion(titulo: String, contenido: @Composable () -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {

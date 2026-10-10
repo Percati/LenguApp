@@ -51,7 +51,7 @@ class RegistroTextosTest {
         assertTrue(mensajeSinIdioma(Idioma.PT).contains("Configurações"))
         assertTrue(textoAcercaPrivacidad(Idioma.PT).contains("celular"))
         assertTrue(textoAcercaQueEs(Idioma.PT).contains("você"))
-        assertTrue(reglasReto(Idioma.PT, io.github.percati.lenguapp.modelo.Nivel.C1, 6).joinToString(" ").contains("em uma única gravação"))
+        assertTrue(reglasReto(Idioma.PT, io.github.percati.lenguapp.modelo.Nivel.C1, 6).joinToString(" ").contains("Uma gravação de"))
     }
 
     @Test

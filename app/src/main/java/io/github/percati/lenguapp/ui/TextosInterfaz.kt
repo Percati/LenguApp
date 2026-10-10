@@ -37,8 +37,8 @@ enum class ClaveTexto {
     QUITAR_FILTROS, QUITAR,
     ORDENAR_POR, ORDEN_ALFABETICO, ORDEN_FECHA, ASCENDENTE, DESCENDENTE, QUITAR_ESTRELLA,
     SIN_IDIOMA_TITULO, SIN_IDIOMA_TEXTO, SIN_IDIOMA_WIDGET,
+    RETO_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_HABILIDAD, RETO_CONDICIONES, RETO_FRASES_TITULO, RETO_FRASES_AYUDA,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
-    RETO_TITULO, RETO_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_ROTULO_MISION,
 }
 
 private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
@@ -204,45 +204,62 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "Défi du week-end", Idioma.IT to "Sfida del weekend", Idioma.PT to "Desafio de fim de semana",
     ),
     // --- Reto del fin de semana (Ronda E, tarea 4) ---
-    ClaveTexto.RETO_TITULO to mapOf(
-        Idioma.ES to "Reto del fin de semana",
-        Idioma.EN to "Weekend challenge",
-        Idioma.DE to "Wochenend-Challenge",
-        Idioma.FR to "Défi du week-end",
-        Idioma.IT to "Sfida del weekend",
-        Idioma.PT to "Desafio do fim de semana",
-    ),
+    // --- Desafio de fin de semana (Ronda F2, tarea 2) ---
     ClaveTexto.RETO_LINEA to mapOf(
-        Idioma.ES to "La misión de la semana, pero en modo real.",
-        Idioma.EN to "This week's mission, but for real.",
-        Idioma.DE to "Die Wochenaufgabe, aber im Ernstfall.",
-        Idioma.FR to "La mission de la semaine, mais en conditions réelles.",
-        Idioma.IT to "La missione della settimana, ma in modalità reale.",
-        Idioma.PT to "A missão da semana, mas no modo real.",
+        Idioma.ES to "Dilo en voz alta, como en una conversación de verdad.",
+        Idioma.EN to "Say it out loud, like in a real conversation.",
+        Idioma.DE to "Sag es laut, wie in einem echten Gespräch.",
+        Idioma.FR to "Dis-le à voix haute, comme dans une vraie conversation.",
+        Idioma.IT to "Dillo ad alta voce, come in una vera conversazione.",
+        Idioma.PT to "Diga em voz alta, como em uma conversa de verdade.",
     ),
     ClaveTexto.RETO_REGLAS_BASICO to mapOf(
-        Idioma.ES to "1. De corrido, sin leer.\n2. Una sola toma.\n3. Díselo a una persona o grábate en audio.\n4. Escúchalo: ¿se entiende? Repítelo una vez.",
-        Idioma.EN to "1. Out loud and fluently, without reading.\n2. One single take.\n3. Say it to a person, or record yourself.\n4. Listen back: is it clear? Do it once more.",
-        Idioma.DE to "1. Flüssig und ohne abzulesen.\n2. Nur ein Versuch.\n3. Sag es einer Person oder nimm dich auf.\n4. Hör es dir an: Ist es verständlich? Sprich es noch einmal.",
-        Idioma.FR to "1. D'un trait, sans lire.\n2. Une seule prise.\n3. Dis-le à quelqu'un ou enregistre-toi.\n4. Écoute-toi : est-ce compréhensible ? Recommence une fois.",
-        Idioma.IT to "1. Di seguito, senza leggere.\n2. Una sola ripresa.\n3. Dillo a una persona o registrati.\n4. Riascoltati: si capisce? Ripetilo una volta.",
-        Idioma.PT to "1. De uma vez, sem ler.\n2. Uma única gravação.\n3. Diga isso a uma pessoa ou grave um áudio.\n4. Escute: dá para entender? Repita uma vez.",
+        Idioma.ES to "De corrido, sin leer\nUna sola toma\nDíselo a una persona o grábate\nEscúchalo y repítelo una vez",
+        Idioma.EN to "Fluently, without reading\nOne single take\nSay it to a person or record yourself\nListen back and repeat it once",
+        Idioma.DE to "Flüssig, ohne abzulesen\nNur ein Versuch\nSag es einer Person oder nimm dich auf\nHör es dir an und wiederhole es einmal",
+        Idioma.FR to "D'un trait, sans lire\nUne seule prise\nDis-le à quelqu'un ou enregistre-toi\nÉcoute-toi et recommence une fois",
+        Idioma.IT to "Di seguito, senza leggere\nUna sola ripresa\nDillo a una persona o registrati\nRiascoltati e ripetilo una volta",
+        Idioma.PT to "De uma vez, sem ler\nUma única gravação\nDiga isso a uma pessoa ou grave um áudio\nEscute e repita uma vez",
     ),
     ClaveTexto.RETO_REGLAS_AVANZADO to mapOf(
-        Idioma.ES to "1. Sin notas, una sola toma de {oralMin} min.\n2. Cambia de interlocutor a mitad (de un amigo a tu jefe, o al revés).\n3. Grábate y apunta una cosa que mejorarías.\n4. Repite con ese cambio.",
-        Idioma.EN to "1. No notes, one single take of {oralMin} min.\n2. Switch listener halfway through (from a friend to your boss, or the other way round).\n3. Record yourself and note one thing you would improve.\n4. Do it again with that change.",
-        Idioma.DE to "1. Ohne Notizen, ein einziger Durchgang von {oralMin} Min.\n2. Wechsle in der Mitte das Gegenüber (von einem Freund zu einem Vorgesetzten, oder umgekehrt).\n3. Nimm dich auf und notiere eine Sache, die du verbessern würdest.\n4. Wiederhole es mit dieser Änderung.",
-        Idioma.FR to "1. Sans notes, en une seule prise de {oralMin} min.\n2. Change d'interlocuteur à mi-parcours (d'un ami à ton supérieur, ou l'inverse).\n3. Enregistre-toi et note une chose à améliorer.\n4. Recommence avec ce changement.",
-        Idioma.IT to "1. Senza appunti, una sola ripresa di {oralMin} min.\n2. Cambia interlocutore a metà (da un amico al tuo capo, o viceversa).\n3. Registrati e annota una cosa da migliorare.\n4. Ripeti con quel cambiamento.",
-        Idioma.PT to "1. Sem anotações, em uma única gravação de {oralMin} min.\n2. Troque de interlocutor na metade (de um amigo para o seu chefe, ou o contrário).\n3. Faça uma gravação e anote uma coisa que você melhoraria.\n4. Repita com essa mudança.",
+        Idioma.ES to "Sin notas\nUna toma de {oralMin} min\nCambia de interlocutor a mitad\nGrábate y apunta una cosa que mejorarías",
+        Idioma.EN to "No notes\nOne take of {oralMin} min\nSwitch listener halfway through\nRecord yourself and note one thing to improve",
+        Idioma.DE to "Ohne Notizen\nEin Durchgang von {oralMin} Min.\nWechsle in der Mitte das Gegenüber\nNimm dich auf und notiere eine Sache, die du verbessern würdest",
+        Idioma.FR to "Sans notes\nUne prise de {oralMin} min\nChange d'interlocuteur à mi-parcours\nEnregistre-toi et note une chose à améliorer",
+        Idioma.IT to "Senza appunti\nUna ripresa di {oralMin} min\nCambia interlocutore a metà\nRegistrati e annota una cosa da migliorare",
+        Idioma.PT to "Sem anotações\nUma gravação de {oralMin} min\nTroque de interlocutor na metade\nGrave um áudio e anote uma coisa que você melhoraria",
     ),
-    ClaveTexto.RETO_ROTULO_MISION to mapOf(
-        Idioma.ES to "La misión:",
-        Idioma.EN to "The mission:",
-        Idioma.DE to "Die Wochenaufgabe:",
-        Idioma.FR to "La mission :",
-        Idioma.IT to "La missione:",
-        Idioma.PT to "A missão:",
+    ClaveTexto.RETO_HABILIDAD to mapOf(
+        Idioma.ES to "Habilidad",
+        Idioma.EN to "Skill",
+        Idioma.DE to "Fähigkeit",
+        Idioma.FR to "Compétence",
+        Idioma.IT to "Abilità",
+        Idioma.PT to "Habilidade",
+    ),
+    ClaveTexto.RETO_CONDICIONES to mapOf(
+        Idioma.ES to "Condiciones",
+        Idioma.EN to "Conditions",
+        Idioma.DE to "Bedingungen",
+        Idioma.FR to "Conditions",
+        Idioma.IT to "Condizioni",
+        Idioma.PT to "Condições",
+    ),
+    ClaveTexto.RETO_FRASES_TITULO to mapOf(
+        Idioma.ES to "Frases para usar",
+        Idioma.EN to "Phrases to use",
+        Idioma.DE to "Ausdrücke zum Verwenden",
+        Idioma.FR to "Phrases à utiliser",
+        Idioma.IT to "Frasi da usare",
+        Idioma.PT to "Frases para usar",
+    ),
+    ClaveTexto.RETO_FRASES_AYUDA to mapOf(
+        Idioma.ES to "Intenta usar al menos dos:",
+        Idioma.EN to "Try to use at least two:",
+        Idioma.DE to "Versuche, mindestens zwei zu verwenden:",
+        Idioma.FR to "Essaie d'en utiliser au moins deux :",
+        Idioma.IT to "Prova a usarne almeno due:",
+        Idioma.PT to "Tente usar pelo menos duas:",
     ),
     // --- Estado sin idioma elegido (pantalla y widget) ---
     ClaveTexto.SIN_IDIOMA_TITULO to mapOf(
@@ -638,7 +655,6 @@ fun etiquetaFiltroTodos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.FILTR
 fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_VOCABULARIO, idiomaInterfaz)
 fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
-fun etiquetaRetoTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_TITULO, idiomaInterfaz)
 fun etiquetaAcercaDe(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_DE, idiomaInterfaz)
 fun etiquetaSinIdiomaTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.SIN_IDIOMA_TITULO, idiomaInterfaz)
 fun mensajeSinIdioma(idiomaInterfaz: Idioma): String = texto(ClaveTexto.SIN_IDIOMA_TEXTO, idiomaInterfaz)
@@ -653,7 +669,10 @@ fun textoAcercaLicencias(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACER
 fun textoAcercaVersion(idiomaInterfaz: Idioma, version: String): String =
     interpolar(texto(ClaveTexto.ACERCA_VERSION, idiomaInterfaz), "version" to version)
 fun textoRetoLinea(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_LINEA, idiomaInterfaz)
-fun etiquetaRetoMision(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_ROTULO_MISION, idiomaInterfaz)
+fun etiquetaRetoHabilidad(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_HABILIDAD, idiomaInterfaz)
+fun etiquetaRetoCondiciones(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_CONDICIONES, idiomaInterfaz)
+fun etiquetaRetoFrasesTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_FRASES_TITULO, idiomaInterfaz)
+fun textoRetoFrasesAyuda(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_FRASES_AYUDA, idiomaInterfaz)
 
 /**
  * Las reglas del reto del fin de semana, una por renglon, en el idioma de app. A2/B1:

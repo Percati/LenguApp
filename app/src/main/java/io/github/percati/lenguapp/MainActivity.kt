@@ -303,6 +303,7 @@ internal fun LenguAppApp(
                         guardadosDeLaFicha = ::estadoGuardadosPara,
                         promptsVoz = promptsVoz,
                         onPlanilla = onPlanilla,
+                        topicNombres = topicNombres,
                     )
                 }
                 composable(DESTINO_AJUSTES) {
@@ -373,6 +374,7 @@ internal fun LenguAppApp(
                                 estadoGuardados = estadoGuardadosPara(ficha),
                                 promptsVoz = promptsVoz,
                                 onPlanilla = onPlanilla,
+                                topicNombres = topicNombres,
                             )
                         }
                     }
@@ -401,6 +403,7 @@ private fun PantallaPrincipal(
     guardadosDeLaFicha: (Ficha) -> EstadoGuardados,
     promptsVoz: Map<String, String>,
     onPlanilla: ((ContenidoSemanal) -> Unit)?,
+    topicNombres: NombresI18n,
 ) {
     ManejarDobleAtrasParaSalir(idiomaAplicacion)
 
@@ -441,6 +444,7 @@ private fun PantallaPrincipal(
             PantallaSemana(
                 resultado, ajustes.idiomaBase, idiomaAplicacion,
                 fecha = fechaVista, estadoGuardados = estadoGuardados, promptsVoz = promptsVoz, onPlanilla = onPlanilla,
+                topicNombres = topicNombres,
             )
         }
     }

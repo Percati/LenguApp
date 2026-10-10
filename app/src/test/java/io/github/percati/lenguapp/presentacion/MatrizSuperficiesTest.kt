@@ -19,7 +19,7 @@ import io.github.percati.lenguapp.ui.ClaveTexto
 import io.github.percati.lenguapp.ui.etiquetaBiblioteca
 import io.github.percati.lenguapp.ui.etiquetaGuardados
 import io.github.percati.lenguapp.ui.etiquetaPlanillaBoton
-import io.github.percati.lenguapp.ui.etiquetaRetoTitulo
+import io.github.percati.lenguapp.ui.etiquetaDesafioFinde
 import io.github.percati.lenguapp.ui.nombreIdioma
 import io.github.percati.lenguapp.ui.reglasReto
 import io.github.percati.lenguapp.ui.tablaChromeCruda
@@ -82,7 +82,7 @@ class MatrizSuperficiesTest {
         assertEquals(crudo.getValue(ClaveTexto.GUARDADOS).getValue(app), etiquetaGuardados(app))
         assertEquals(crudo.getValue(ClaveTexto.BIBLIOTECA).getValue(app), etiquetaBiblioteca(app))
         assertEquals(crudo.getValue(ClaveTexto.PLANILLA_BOTON).getValue(app), etiquetaPlanillaBoton(app))
-        assertEquals(crudo.getValue(ClaveTexto.RETO_TITULO).getValue(app), etiquetaRetoTitulo(app))
+        assertEquals(crudo.getValue(ClaveTexto.DESAFIO_FINDE).getValue(app), etiquetaDesafioFinde(app))
         // el nombre del idioma que se aprende, tambien en el idioma de app
         assertEquals(tablaNombresIdiomaCruda().getValue(aprendido).getValue(app), nombreIdioma(aprendido, app))
     }
