@@ -638,3 +638,33 @@ ida-y-vuelta, o antes de sumar un idioma nuevo que multiplique estos ítems.
 - Agregar integración continua en el repositorio (componer + verificador + tests en cada push): hoy depende de que alguien corra los comandos.
 - Un test de «matriz de superficies» (idioma aprendido × idioma de app × pantalla) que falle ante texto en el idioma equivocado, para no depender de que Fer lo encuentre a mano.
 - Antes de sumar español, ejecutar la checklist completa con un par de prueba (ES A2 o B1 con app en inglés) en una rama.
+
+## 21. Code Ronda E — ✅ implementada (Code, oct 2026), pendiente de probar en el teléfono
+
+Requisitos ya aplicados al empezar: parche de Overview (reglas de prevención, nombres en 6 idiomas, verificador) y de Traducciones (`erroresContrastivos` A2/B1) con los assets regenerados. 7 tareas + 1 chica, un commit cada una; `compileDebugKotlin compileDebugUnitTestKotlin test` en verde en cada una.
+
+| Tarea | Qué se hizo | Regla |
+|---|---|---|
+| 5 (primero, por orden de dependencia) | `erroresContrastivos` pasa a `Map<String, List<TextoBilingue>>`: con los assets nuevos el modelo viejo (`List<String>`) ya no parseaba y no había build en verde sin esto. Con el switch activo sale la traducción, apagado el original, B2+ igual que antes. Test sobre las 481 filas reales | P2 |
+| 1 | `NombresI18n` (clave → idioma → nombre, fallback español, luego la clave). Gradle extrae `topicNombresI18n`; `categorias-uso.json › nombres` se lee en la app. Biblioteca y Guardados muestran topic y categoría en el idioma de app; el valor guardado en `categoriasUso` sigue siendo el español. Test sobre los assets: falla si falta un idioma en alguna clave | P1 |
+| 2 | Planilla: el topic sale en el idioma que se aprende. El layout se separó del dibujo (`maquetar`); si la 2.ª carilla queda con ≤ 3 líneas se prueba, en orden, interlineado/espacio → cuerpo hasta 9 pt → márgenes de 15 mm. Sobre las 662 fichas y semanas especiales reales: 659 entran en una hoja (406 gracias a la compactación), 3 quedan en dos con 4 líneas en la 2.ª (`DE-G25-C2-2027-1`, `DE-V05-B2-2026-1`, `DE-V05-B2-2027-1`: justo por encima del umbral, no se tocan), ninguna pasa de dos | P1, P8 |
+| 3 | Biblioteca: los chips de topic y de categoría salen de los ítems del idioma de la pestaña, todos los niveles; con el filtro de nivel activo muestran su contador y un chip puede dar 0 en ese nivel pero nunca en todos. «Sin categoría» solo si hay expresiones sin categoría. Topic y categorías elegidos se vacían al cambiar de pestaña. Tests sobre los assets, por idioma, y de propiedad | P3 |
+| 4 | Reto del fin de semana: encuadre fijo (título, línea, 4 reglas por nivel con `{oralMin}`, rótulo y la consigna en chico con solo 2 requisitos) en vez de repetir la misión; todo en `TextosInterfaz`. Test por nivel A2–C2 sobre fichas reales | P4, regla 13 |
+| 6 | «Acerca de» (acceso desde la cabecera de la pantalla principal) y la línea fija bajo el nombre de la app; 6 idiomas; la versión sale del `versionName` del paquete | P7 |
+| 7 | Tarea Gradle `verificarConsistenciaContenido`, enganchada a `preBuild`: corre `verificar_consistencia.py` sobre la recomposición de `componer.py` que ya hace `verificarAssetsContenidoActualizados` (se reutiliza ese directorio en vez de recomponer dos veces). Comprobado que falla al quitarle un idioma a un nombre de categoría | P6 |
+| extra | Los dos únicos textos de pantalla que seguían hardcodeados en español (`SinIdiomaSeleccionado` y el widget) pasan a `TextosInterfaz` | P7 |
+
+**Decisiones donde el prompt no cerraba:**
+- **Orden**: la tarea 5 va antes que la 1 porque sin el modelo nuevo los assets regenerados no parsean y ningún commit habría tenido el build en verde.
+- **Planilla, qué cuenta como «línea» de la 2.ª carilla**: líneas de texto ya envueltas (sin contar las viñetas «•», que acompañan a una línea). Si no entra ni con la compactación máxima, queda con el estilo normal en dos carillas (no con el más apretado).
+- **«Acerca de»** se accede desde una cabecera nueva (nombre de la app + línea fija + botón), no desde la barra de cuatro botones, que a 150 % de fuente ya no tiene lugar para un quinto. La app no mostraba su nombre en la pantalla principal; ahora sí.
+- **Texto de privacidad**: «solo lee la fecha» no era del todo cierto (idioma del sistema si el usuario lo elige; Guardados persiste lo marcado). Se dice con precisión, en los 6 idiomas.
+- **Reglas del reto**: traduje yo las dos tandas de reglas, la línea y los rótulos a EN/DE/FR/IT/PT; conviene que Traducciones las revise (como el resto de `TextosInterfaz`). Redondeo de `oralMin` = el mismo que el prompt de voz (6 si no hay dato).
+
+**Hallazgos (no tocados):**
+- **Switch de traducción solo en A2/B1.** En B2+ el reto, los errores y el resto muestran siempre el idioma que se aprende (es lo que fija la tabla de superficies).
+- **Pestañas de idioma** (Biblioteca, Guardados, principal) muestran el código (`EN`, `DE`…), no el nombre del idioma en el idioma de app. Es una elección de diseño, no un texto sin traducir, pero no es la tabla de superficies.
+- **`widget_descripcion`** (`res/values/strings.xml`, el texto que muestra el selector de widgets de Android) sigue solo en español; requiere `values-xx/` por idioma y no pasa por `TextosInterfaz`.
+- **Voseo en contenido** (`¿Elegí…?` en autochequeos de B1 2027, etc.): de Contrastes/Traducciones, como en la sección 18.
+- **El PDF real** sigue sin poder probarse bajo Robolectric: hay que mirar la planilla compactada en el teléfono (cuerpo de 9 pt y márgenes de 15 mm se ven recién ahí).
+- **Deuda de la sección 20** sigue abierta: `erroresContrastivos` no está en el maestro de traducciones.
