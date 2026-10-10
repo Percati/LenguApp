@@ -9,6 +9,20 @@ import io.github.percati.lenguapp.modelo.resolver
 private const val SIN_TRADUCCION = "—"
 
 /**
+ * Idioma en que se muestra la prosa de una ficha (REGLAS-PREVENCION, tabla 2): el que se
+ * aprende, salvo en A2/B1 (`bilingue`) con el switch de traduccion activo y un idioma de
+ * app distinto, que es el idioma de app.
+ */
+fun idiomaMostradoDeFicha(bilingue: Boolean, idiomaAprendido: Idioma, idiomaBase: Idioma, traducir: Boolean = true): Idioma =
+    if (bilingue && traducir && idiomaBase != idiomaAprendido) idiomaBase else idiomaAprendido
+
+/**
+ * El prompt de correccion va SIEMPRE en el idioma que se aprende (tabla 2): se copia y se pega
+ * en una IA externa, y no sigue al switch de traduccion de la ficha.
+ */
+fun TextoBilingue.promptEnIdiomaAprendido(idiomaAprendido: Idioma): String = resolver(idiomaAprendido, idiomaAprendido)
+
+/**
  * Idioma base, y si no hay nada ahi "es" -- el unico poblado en 2026. Un
  * valor vacio a proposito cuenta como "nada ahi", no como un error: cae
  * igual que si la clave faltara.

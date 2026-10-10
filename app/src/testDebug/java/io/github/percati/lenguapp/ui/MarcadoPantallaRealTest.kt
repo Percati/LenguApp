@@ -94,4 +94,16 @@ class MarcadoPantallaRealTest {
         assertTrue(todo(), todo().contains("mit dem Vornamen übertragen"))
         assertTrue(todo(), !todo().contains("Trasladar «Señor» con el nombre de pila"))
     }
+
+    @Test
+    fun `el prompt de correccion sale en el idioma que se aprende aunque el switch muestre la traduccion`() {
+        val ficha = ficha("DE-F13-B1-2027-1")
+        val original = ficha.promptCorreccion.porIdioma.getValue("de").replace("*", "").take(40)
+        val traduccion = ficha.promptCorreccion.porIdioma.getValue("es").replace("*", "").take(40)
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+        // switch activo (default): la prosa va en espanol, pero el prompt a copiar sigue en aleman
+        val todo = textosEnPantalla().joinToString(" | ") { it.replace("*", "").replace("«", "").replace("»", "") }
+        assertTrue(todo, todo.contains(original.replace("«", "").replace("»", "")))
+        assertTrue(!todo.contains(traduccion.replace("«", "").replace("»", "")))
+    }
 }

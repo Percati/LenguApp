@@ -59,7 +59,9 @@ import io.github.percati.lenguapp.modelo.VocabularioItem
 import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
 import io.github.percati.lenguapp.presentacion.contrasteParaMostrar
 import io.github.percati.lenguapp.presentacion.erroresParaMostrar
+import io.github.percati.lenguapp.presentacion.idiomaMostradoDeFicha
 import io.github.percati.lenguapp.presentacion.oralMinRedondeado
+import io.github.percati.lenguapp.presentacion.promptEnIdiomaAprendido
 import io.github.percati.lenguapp.presentacion.promptVozPara
 import io.github.percati.lenguapp.presentacion.traduccionParaMostrar
 import io.github.percati.lenguapp.semana.RazonSinContenido
@@ -200,7 +202,7 @@ private fun FichaContenido(
     var traducir by remember(ficha.id) { mutableStateOf(true) }
     val puedeTraducir = ficha.bilingue && idiomaBase != ficha.idioma
     val traduccionActiva = puedeTraducir && traducir
-    val idiomaMostrado = if (traduccionActiva) idiomaBase else ficha.idioma
+    val idiomaMostrado = idiomaMostradoDeFicha(ficha.bilingue, ficha.idioma, idiomaBase, traducir)
     val t: (TextoBilingue) -> String = { it.resolver(idiomaMostrado, ficha.idioma) }
     // Cuando se muestra la traduccion, la palabra objetivo (*cita*) queda
     // sin traducir: ademas de la cursiva va entre « » (ver textoConMarcado).
@@ -356,7 +358,9 @@ private fun FichaContenido(
                         ficha.autochequeo.forEach { Vinieta(t(it), traduccionActiva) }
                     }
 
-                    TarjetaPrompt(t(ficha.promptCorreccion), et("promptCorreccion"), idiomaInterfaz, traduccionActiva)
+                    // Siempre en el idioma que se aprende (tabla 2 de REGLAS-PREVENCION), no sigue al switch;
+                    // el titulo de la tarjeta si (es una seccion de la ficha).
+                    TarjetaPrompt(ficha.promptCorreccion.promptEnIdiomaAprendido(ficha.idioma), et("promptCorreccion"), idiomaInterfaz)
 
                     // Prompt de voz: siempre en el idioma que se aprende (la IA
                     // tiene que hablarlo), sin switch de traduccion; solo si hay
@@ -477,8 +481,8 @@ private fun SemanaEspecialContenido(
             especial.autochequeo.forEach { Vinieta(t(it), traducido) }
         }
 
-        t(especial.promptCorreccion).takeIf { it.isNotBlank() }?.let {
-            TarjetaPrompt(it, et("promptCorreccion"), idiomaInterfaz, traducido)
+        especial.promptCorreccion.promptEnIdiomaAprendido(especial.idioma).takeIf { it.isNotBlank() }?.let {
+            TarjetaPrompt(it, et("promptCorreccion"), idiomaInterfaz)
         }
 
         onPlanilla?.let { BotonPlanilla(etiquetaPlanillaBoton(idiomaInterfaz)) { it(especial) } }
