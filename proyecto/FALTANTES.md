@@ -695,3 +695,11 @@ Verificado por Overview: el parche de Code (9 commits) aplica limpio sobre `ab35
 3. Avisar a Overview para regenerar assets.
 4. Code: `prompts/13-code-ronda-f.md` (versión 0.2.1).
 5. Probar el APK en el teléfono.
+
+
+## 23. Verificación del 10-oct-2026 (push de Code Ronda E + parche de Overview) y cierre de menores
+- Verificado en clon fresco de `origin/main` (`43034f4e`): 606 fichas, 56 semanas especiales, 0 con problemas; assets idénticos a la recomposición (0 diferencias); sin `INTERNET` en el manifest; versión aún 0.2.0 (sube a 0.2.1 en Ronda F).
+- Verificador: R1-R5 en verde; R6 (voseo) falla con ~196+ avisos hasta que Traducciones termine `prompts/12`. Después: verificar su parche, regenerar assets (parche aparte de Overview) y recién ahí Code Ronda F.
+- Cerrado ahora por Overview: textos de tienda fr-FR, it-IT, pt-BR (informales; pt de Brasil). Pendiente: revisión de un hablante antes de publicar.
+- Sumado a Ronda F (`prompts/13`, tarea 6): test de la matriz de superficies.
+- Sigue abierto: dirección visual (ícono, pantalla de carga, UI), nombre definitivo, capturas, 273 expresiones sin categoría, maestro de traducciones sin `erroresContrastivos` (sección 20), 2027/2028, CI en el repo.

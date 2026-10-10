@@ -20,6 +20,9 @@ El texto de privacidad de «Acerca de» ya es el correcto. Comprobá que coincid
 - `versionName` `0.2.1`, `versionCode` `3`.
 - Compilá el APK debug y reportá su tamaño; confirmá que el manifest final no tiene `INTERNET` ni los permisos removidos (regla 1).
 
+## Tarea 6 — Test de la «matriz de superficies» (chico, previene regresiones)
+Un solo test JVM que recorra idioma aprendido (en, de) × idioma de app (6) × nivel (A2, B1, B2) y, para una ficha de cada combinación, afirme el idioma de salida de cada superficie según la tabla de `REGLAS-PREVENCION.md` §2 (etiquetas de UI, nombres de topic/categoría, ficha, planilla, prompt de corrección). Sin pantallas: sobre las funciones de `presentacion/` y `datos/`. Si una superficie no se puede probar sin UI, anotala en el informe en vez de forzarla.
+
 ## Fuera de alcance
 Las 3 planillas que quedan en dos carillas con 4 líneas (`DE-G25-C2-2027-1`, `DE-V05-B2-2026-1`, `DE-V05-B2-2027-1`): son 3 de 662 y se ven en el teléfono antes de decidir. Ícono, pantalla de carga y UI: esperan la dirección visual de Fer.
 

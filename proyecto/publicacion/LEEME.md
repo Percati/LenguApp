@@ -1,8 +1,8 @@
 # Publicación (Play Store / F-Droid)
 
-Textos listos en `fastlane/metadata/android/<idioma>/` (es-ES, en-US, de-DE): el mismo formato lo lee
+Textos listos en `fastlane/metadata/android/<idioma>/` (es-ES, en-US, de-DE, fr-FR, it-IT, pt-BR): el mismo formato lo lee
 F-Droid, y se pueden pegar tal cual en la consola de Play. Límites: título ≤ 30, descripción corta ≤ 80,
-larga ≤ 4000 caracteres. Falta fr-FR, it-IT y pt-BR (se traducen de es-ES cuando se decida publicar en esos mercados).
+larga ≤ 4000 caracteres. fr-FR, it-IT y pt-BR traducidos de es-ES en registro informal (tu / você; pt de Brasil); falta que un hablante los revise antes de publicar.
 El nombre "LenguApp" es provisorio.
 
 ## Cómo dejar claro que NO es un curso
