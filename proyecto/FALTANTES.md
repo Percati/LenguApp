@@ -580,6 +580,50 @@ idioma de app.
 
 `compileDebugKotlin compileDebugUnitTestKotlin test`: 844 tests, 0 fallas.
 
+### 14.1 — Fragmentos sin « » y regla R8: ✅ hecho (Traducciones, 10-oct-2026)
+
+P5 pedía que todo fragmento del idioma que se aprende fuera entre « », pero
+R4 solo comprobaba que los « » estuvieran **balanceados**, no que existieran.
+Resultado: 1370 cadenas de las fichas A2/B1 llevaban el fragmento sin marcar.
+Ya están todas marcadas, y **R8** comprueba de ahora en más que existan.
+
+**Conteo por idioma de destino** (cadenas corregidas): it 274, pt 267, fr 246,
+es 232, de 189, en 162 — 1370 en total, en 75 archivos de `nucleos`, `packs` y
+`ocurrencias`.
+Campos más afectados: `notas`, `errores`, `autochequeo`, `promptCorreccion`,
+`descripcion`, `subtitulo`, `mision/requisitos` y `microtareas/texto`.
+
+**Qué NO mira R8, y por qué:**
+
+- **`titulo`** — no lleva marcado de ningún tipo (tampoco `*cursiva*`, ver
+  `reglas-fichas`) y tiene un tope de 80 caracteres que los « » hacen saltar:
+  marcar «Temporal subordinate clauses (als, wenn, …)» lo llevaba a 87 y
+  rompía el esquema. `cuadroReferencia.titulo` sí se marca (no tiene tope).
+- **`redemittel[].funcion`** — son etiquetas semánticas casi idénticas entre
+  idiomas («opinion»/«opinion»/«opinione»): todo lo que marcaba era cognado.
+- **`vocabulario[].traducciones`** — si la glosa correcta es la misma palabra
+  («la pollution», «le stress», «la privacy», «le wifi»), marcarla no aporta.
+- **Fragmentos de menos de 3 caracteres** — `du`, `wo`, `ja`. Dan demasiado
+  ruido; los que había se marcaron a mano.
+- **Metalenguaje gramatical: sí se marca.** El repo ya lo marcaba 884 veces
+  contra 470 sin marcar, así que se unificó marcándolo («present perfect»,
+  «past simple», «Perfekt», «Präteritum», «Konjunktiv II», «phrasal verbs»).
+
+**Lo que queda abierto:**
+
+- **9558 fragmentos `*x*` sin « »** en los idiomas de destino. **No se
+  tocaron a propósito**: en este repo `*x*` tiene dos usos, y la mayoría de
+  esos 9558 **no** son fragmentos extranjeros sino énfasis o etiquetas del
+  propio idioma de destino (`*Lun (10 min).*`, `*pour*` + infinitivo, el
+  plural en `*-s*`). Convertirlos en bloque habría envuelto texto que no es
+  extranjero. Si se quiere unificar `*x*` → `«*x*»` donde sí es un fragmento
+  del idioma aprendido, hay que distinguir los dos usos primero.
+- **140 `ß` en el contenido**, contra la ortografía suiza que usa el proyecto
+  (p. ej. `auszuschließen` en `EN-G10-B1`). Es anterior a este pase y no entra
+  en «solo agregar « »», pero conviene barrerlo.
+- **Vouvoiement en francés** (`Écrivez`, `Concentrez-vous`, `Donnez-lui`): es
+  el eje usted/tú en los otros idiomas, que sigue abierto en 6.1.
+
 ## 15. Estado a 8-oct-2026 (verificado en clon fresco) — falta SOLO Code Ronda B
 
 Verificado tras los commits aa953bd, 790f118, 5f9e1c2 y df6cf9e:

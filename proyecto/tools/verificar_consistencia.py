@@ -157,6 +157,210 @@ EXENTAS_R7 = {
 }
 
 
+# --------------------------------------------------------------------------
+# R8: fragmentos del idioma que se aprende sin « » (P5 de REGLAS-PREVENCION).
+# R4 solo mira que los « » esten balanceados; R8 mira que EXISTAN.
+#
+# Se revisan las fichas EN y DE de A2/B1, en cada valor de texto bajo una
+# clave de idioma distinta del que se aprende. No se revisa el texto del
+# idioma aprendido (ahi el fragmento ES el idioma del texto), ni el campo
+# 'funcion' (son etiquetas semanticas casi identicas entre idiomas:
+# 'opinion'/'opinion'/'opinione'), ni 'vocabulario[].traducciones' (si la
+# glosa correcta es la misma palabra -- 'la pollution', 'le stress', 'la
+# privacy' -- marcarla no aporta nada), ni 'titulo': el titulo no lleva
+# marcado de ningun tipo (tampoco *cursiva*, ver reglas-fichas) y tiene un
+# tope de 80 caracteres que los « » hacen saltar.
+# --------------------------------------------------------------------------
+FUNC = {
+    "en": ["I think", "I believe", "I agree", "I disagree", "because", "however",
+           "maybe", "perhaps", "should", "would", "could", "might", "going to",
+           "will", "shall", "must", "may", "can", "cannot", "should have",
+           "would have", "could have", "might have", "must be", "can't be",
+           "had better", "would rather", "be going to", "be able to",
+           "used to", "have to", "there is", "there are", "I'm", "you're", "it's",
+           "the", "some", "any", "who", "which", "that", "whose", "whom",
+           "much", "many", "was", "were", "always", "usually", "often", "never",
+           "first", "then", "after that", "if I were you", "if I had known",
+           "I would known", "she always arrives", "I found out that she moved",
+           "make a decision", "have breakfast", "have lunch", "have dinner",
+           "take a shower", "have a shower", "find out", "discover", "make",
+           "have", "take", "get", "give", "Recht haben",
+           "Simple Present", "Present Continuous", "Simple Past", "Present Perfect",
+           "First Conditional", "Second Conditional", "Third Conditional",
+           "don't", "doesn't", "didn't", "can't", "won't", "isn't", "aren't",
+           "mustn't", "mustn't be", "needn't", "shouldn't", "couldn't",
+           "wouldn't", "haven't", "hasn't", "hadn't", "wasn't", "weren't",
+
+           "I was", "I have", "do you", "did you",
+           "present perfect", "past simple", "simple past", "present simple",
+           "present continuous", "past continuous", "past perfect", "phrasal verb",
+           "phrasal verbs", "question tag", "question tags", "tag question",
+           "first conditional", "second conditional", "third conditional",
+           "what do you think", "how about", "what about", "by the way"],
+    "de": ["ich denke", "ich finde", "ich glaube", "meiner Meinung nach", "weil",
+           "deshalb", "deswegen", "darum", "obwohl", "trotzdem", "aber",
+           "ich hätte", "ich würde", "ich möchte", "man muss", "es gibt",
+           "zuerst", "dann", "danach", "als", "wenn", "wo", "wohin", "woher",
+           "wie", "warum", "wieso", "seitdem", "nachdem", "während", "bevor",
+           "damit", "sodass", "falls", "sobald", "solange", "entweder", "weder",
+           "sowohl", "ausserdem", "trotzdem", "allerdings", "jedoch", "sondern",
+           "Ich muss", "Ich kann", "Ich will", "Ich darf", "Ich soll",
+           "Akkusativ", "Dativ", "zu Hause", "nach Hause",
+           "Perfekt", "Präteritum", "Plusquamperfekt", "Konjunktiv", "Konjunktiv II",
+           "Passiv", "Aktiv", "Nominalisierung", "Relativsatz", "Relativsätze",
+           "Konnektoren", "Nebensatz", "Hauptsatz", "Satzbau", "Wortstellung",
+           "Modalpartikel", "Modalpartikeln", "Futur", "Futur I", "Imperativ",
+           "Dativ", "Akkusativ", "Nominativ", "Genitiv", "Komparativ", "Superlativ",
+           "Umlaut", "Partizip", "Partizip II", "Infinitiv",
+           "können", "müssen", "wollen", "sollen", "dürfen", "mögen", "möchten",
+           "hätte", "wäre", "würde", "nicht müssen", "nicht dürfen",
+           "könnten", "könnte", "solltest", "sollte", "möchte", "Recht haben",
+           "Konjunktiv II", "ich arbeite", "er schläft"],
+}
+
+COLISIONES = {
+    ("en", "es"): {"no", "a", "me", "sin", "con", "o", "e", "mi", "tu", "su", "la",
+                   "el", "un", "una", "de", "en", "es", "si", "ya", "van", "son"},
+    ("en", "it"): {"no", "a", "i", "e", "o", "me", "se", "da", "di", "la", "il",
+                   "un", "una", "in", "non", "come", "sono", "van"},
+    ("en", "fr"): {"a", "on", "en", "la", "le", "un", "une", "de", "des", "du",
+                   "me", "se", "si", "ou", "et", "sur", "pour", "mais", "car",
+                   # mismas palabras en frances: no son fragmento ingles
+                   "minutes", "minute", "note", "notes", "plan", "train",
+                   "important", "central", "nature", "sport", "service",
+                   "arrive", "arrives", "question", "questions", "double"},
+    ("en", "pt"): {"a", "o", "as", "os", "da", "das", "do", "dos", "no", "na",
+                   "em", "me", "se", "um", "uma", "de", "e", "ou", "com", "sem"},
+    ("en", "de"): {"die", "das", "der", "ein", "eine", "in", "an", "am", "im",
+                   "so", "also", "man", "war", "ist", "hat", "will", "mit", "bei",
+                   # 'was' en aleman es 'que/lo que', no el 'was' ingles; 'wer'
+                   # y 'wen' son pronombres alemanes
+                   "was", "wer", "wen", "wem", "wo", "wie", "den", "dem", "des",
+                   "sie", "wir", "ihr", "uns", "nie", "halt", "eben", "doch"},
+    ("de", "es"): {"no", "a", "me", "o", "e", "mi", "tu", "su", "la", "el", "un",
+                   "una", "de", "en", "es", "si", "ya", "son", "va", "vas"},
+    ("de", "it"): {"no", "a", "i", "e", "o", "me", "se", "da", "di", "la", "il",
+                   "un", "una", "in", "non", "come", "sono", "stato", "mai"},
+    ("de", "fr"): {"a", "on", "en", "la", "le", "un", "une", "de", "des", "du",
+                   "me", "se", "si", "ou", "et", "sur", "pour", "mais", "car",
+                   "ans", "bus", "pas",
+                   # el frances tiene las mismas palabras: no son fragmento aleman
+                   "futur", "imperatif", "nature", "important", "central",
+                   "central", "mode", "note", "plan", "train", "rose", "sport"},
+    ("de", "pt"): {"a", "o", "as", "os", "da", "das", "do", "dos", "no", "na",
+                   "em", "me", "se", "um", "uma", "de", "e", "ou", "com", "sem",
+                   "bem", "mais", "ja"},
+    ("de", "en"): {"a", "an", "the", "in", "is", "it", "so", "also", "man", "war",
+                   "will", "hat", "am", "bin", "ist", "was", "wall", "rat", "die",
+                   "hast", "mit", "bald", "halt", "gift", "art", "bad", "fast"},
+}
+
+COMUNES = {
+    # Cognados: misma grafia en el idioma de destino, asi que no son un
+    # fragmento extranjero sino la palabra normal del destino. Cada uno se
+    # dejo fuera tras verlo dar un falso positivo.
+    "alternative", "routine", "problem", "plan", "sport", "obligation",
+    "suggestion", "opinion", "information", "moment", "normal", "total",
+    "international", "interesse", "interessant", "kontakt", "material",
+    "person", "service", "standard", "system", "telefon", "text", "zentral",
+    "position", "position 2", "position 1", "basis", "detail", "direkt",
+    "ideal", "modern", "privat", "intern", "extern", "neutral", "idea",
+    "proportional", "temporal", "lokal", "kausal", "konzessiv", "final",
+    "positiv", "negativ", "pollution", "privacy", "stress", "wifi", "central",
+    "important", "parents", "documents", "nature", "air", "roles", "dose",
+    "reception", "part-time", "fake news", "training", "make-up",
+    "superlative", "superlatives", "comparative", "comparatives", "futur",
+    "imperativ", "infinitiv", "partizip", "umlaut",
+}
+
+
+# Excepciones de R8, por cadena completa.
+EXENTAS_R8 = {
+    # 'Velo' es la palabra suiza para la bicicleta y aqui es el objeto del que
+    # habla la nota, no un fragmento suelto; ya va entre « » donde hace falta.
+    "«Velo», «Billett» y «Trottoir» proceden originalmente del francés.",
+}
+
+
+def _enmascarar_r8(t):
+    """Tapa lo que ya esta marcado: « » y *…*."""
+    t = re.sub(r"«[^»]*»", lambda m: " " * len(m.group(0)), t)
+    t = re.sub(r"\*\*?[^*]+\*\*?", lambda m: " " * len(m.group(0)), t)
+    return t
+
+
+def _limpiar_frag(s):
+    s = re.sub(r"^[…\.,;:¡¿\"'\s]+", "", s.strip())
+    return re.sub(r"[…\.,;:!?\"'\s]+$", "", s).strip()
+
+
+def _fragmentos_ficha(d, ap):
+    """Textos en el idioma aprendido que trae la propia ficha."""
+    out = set()
+    for r in d.get("redemittel", []) or []:
+        if isinstance(r, dict) and isinstance(r.get("expresion"), str):
+            out.add(r["expresion"])
+    for v in d.get("vocabulario", []) or []:
+        if isinstance(v, dict) and isinstance(v.get("item"), str):
+            out.add(v["item"])
+    for e in d.get("ejemplos", []) or []:
+        tx = e.get("texto") if isinstance(e, dict) else None
+        if isinstance(tx, dict) and isinstance(tx.get(ap), str):
+            out.add(tx[ap])
+    for fila in ((d.get("cuadroReferencia") or {}).get("filas") or []):
+        for c in fila:
+            if isinstance(c, dict) and isinstance(c.get(ap), str):
+                out.add(c[ap])
+            elif isinstance(c, str):
+                out.add(c)
+    return {f for f in (_limpiar_frag(x) for x in out) if 3 <= len(f) <= 48}
+
+
+def _textos_con_ruta(o, ruta=None):
+    ruta = ruta or []
+    if isinstance(o, dict):
+        for k, v in o.items():
+            yield from _textos_con_ruta(v, ruta + [k])
+    elif isinstance(o, list):
+        for i, x in enumerate(o):
+            yield from _textos_con_ruta(x, ruta + [i])
+    elif isinstance(o, str):
+        yield (ruta, o)
+
+
+def revisar_r8(d, nom, errores):
+    if d.get("nivel") not in ("A2", "B1") or d.get("idioma") not in ("en", "de"):
+        return
+    ap = d["idioma"]
+    propios = _fragmentos_ficha(d, ap)
+    cache = {}
+    for ruta, t in _textos_con_ruta(d):
+        if not ruta or ruta[-1] not in LANGS or ruta[-1] == ap:
+            continue
+        if "funcion" in ruta or "titulo" in ruta:
+            continue
+        if "vocabulario" in ruta and "traducciones" in ruta:
+            continue
+        if t in EXENTAS_R8:
+            continue
+        destino = ruta[-1]
+        if destino not in cache:
+            col = COLISIONES.get((ap, destino), set())
+            fr = sorted({f for f in list(propios) + FUNC.get(ap, [])
+                         if 3 <= len(f) <= 48
+                         and f.lower() not in col and f.lower() not in COMUNES},
+                        key=len, reverse=True)
+            cache[destino] = re.compile(
+                r"(?<!\w)(" + "|".join(re.escape(f) for f in fr) + r")(?!\w)",
+                re.IGNORECASE) if fr else None
+        rx = cache[destino]
+        if rx is None:
+            continue
+        m = rx.search(_enmascarar_r8(t))
+        if m:
+            errores.append(f"R8 {nom}: '{m.group(1)}' en {ruta[-1]} sin « »: {t[:60]}")
+
+
 def textos_es(o, ruta=""):
     """Cadenas que son espanol: su camino TERMINA en la clave 'es'.
 
@@ -249,6 +453,7 @@ def main():
             m = LEXICO_PENINSULAR.search(t)
             if m:
                 errores.append(f"R7 {nom}: lexico peninsular '{m.group(0)}' en: {t[:70]}")
+        revisar_r8(d, nom, errores)
         for r in d.get("redemittel", []) if isinstance(d, dict) else []:
             for c in r.get("categoriasUso") or []:
                 usadas.add(c)
