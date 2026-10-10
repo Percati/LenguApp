@@ -104,7 +104,7 @@ class GuardadosScreenTest {
         composeTestRule.onNode(hasText("die Miete")).assertDoesNotExist()
 
         // Cambiar a DE: ahora solo DE, EN desaparece -- filtra, no mezcla.
-        composeTestRule.onNodeWithText("DE").performClick()
+        composeTestRule.onNodeWithText("Alemán").performClick()
         composeTestRule.onNodeWithText("die Miete").assertExists()
         composeTestRule.onNode(hasText("the lease")).assertDoesNotExist()
     }

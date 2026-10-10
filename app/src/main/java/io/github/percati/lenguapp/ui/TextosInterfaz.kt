@@ -556,11 +556,9 @@ private val TABLA_NOMBRES_IDIOMA: Map<Idioma, Map<Idioma, String>> = mapOf(
     ),
     Idioma.IT to mapOf(
         Idioma.ES to "Italiano", Idioma.EN to "Italian", Idioma.DE to "Italienisch",
-        // "Italiano" en la columna fr es lo que dice la tabla resuelta de
-        // AJUSTES-FASE-9.md -- probable error de transcripcion en el
-        // documento (se esperaria "Italien"), pero la instruccion fue no
-        // inventar ninguna cadena. Reportado, no corregido en silencio.
-        Idioma.FR to "Italiano", Idioma.IT to "Italiano", Idioma.PT to "Italiano",
+        // La tabla de AJUSTES-FASE-9.md traia "Italiano" tambien en la columna fr (error de
+        // transcripcion): ahora que el nombre se ve en las pestanas, se corrige a "Italien".
+        Idioma.FR to "Italien", Idioma.IT to "Italiano", Idioma.PT to "Italiano",
     ),
     Idioma.PT to mapOf(
         Idioma.ES to "Portugués", Idioma.EN to "Portuguese", Idioma.DE to "Portugiesisch",

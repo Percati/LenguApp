@@ -111,7 +111,7 @@ fun GuardadosScreen(
         } else {
             ScrollableTabRow(selectedTabIndex = idiomasDisponibles.indexOf(idioma).coerceAtLeast(0)) {
                 idiomasDisponibles.forEach { i ->
-                    Tab(selected = i == idioma, onClick = { idiomaElegido = i }, text = { Text(i.name) })
+                    Tab(selected = i == idioma, onClick = { idiomaElegido = i }, text = { Text(nombreIdioma(i, idiomaInterfaz)) })
                 }
             }
 

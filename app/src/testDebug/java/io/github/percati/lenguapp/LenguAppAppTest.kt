@@ -1,6 +1,7 @@
 package io.github.percati.lenguapp
 
 import androidx.activity.ComponentActivity
+import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
@@ -99,7 +100,7 @@ class LenguAppAppTest {
 
         // Las pestañas no estan dentro del scroll de la ficha, asi que
         // siempre estan a la vista: no hace falta performScrollTo().
-        composeTestRule.onNodeWithText("DE").performClick()
+        composeTestRule.onNodeWithText("Alemán").performClick()
 
         // Misma semana (37), ahora en aleman: DE-G01. Si el nivel no
         // viniera del mapa por idioma, esto mostraria "sin contenido".
@@ -118,7 +119,7 @@ class LenguAppAppTest {
                 onGuardarAjustes = {},
             )
         }
-        composeTestRule.onNodeWithText("DE").assertExists()
+        composeTestRule.onNodeWithText("Alemán").assertExists()
         composeTestRule.onNode(hasText("Satzbau", substring = true)).assertExists()
     }
 
@@ -401,5 +402,12 @@ class LenguAppAppTest {
         }
         // los textos de un idioma no son los de otro
         assertFalse(textoAcercaQueEs(Idioma.ES) == textoAcercaQueEs(Idioma.EN))
+    }
+
+    @Test
+    fun `las pestanas de la pantalla principal muestran el nombre del idioma en el idioma de la app`() {
+        mostrarApp(Idioma.EN)
+        composeTestRule.onNodeWithText("German").assertExists()
+        composeTestRule.onAllNodesWithText("DE").assertCountEquals(0)
     }
 }

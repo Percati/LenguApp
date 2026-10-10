@@ -175,4 +175,20 @@ class TextosInterfazTest {
         assertEquals("Copy to clipboard", etiquetaCopiarPortapapeles(Idioma.EN))
         assertEquals("Copiato", etiquetaCopiado(Idioma.IT))
     }
+
+    @Test
+    fun `el nombre de cada idioma en cada idioma de app no es un codigo de dos letras`() {
+        for (app in Idioma.entries) for (idioma in Idioma.entries) {
+            val nombre = nombreIdioma(idioma, app)
+            assertTrue("$idioma en $app: $nombre", nombre.length > 2 && !nombre.equals(idioma.name, ignoreCase = true))
+        }
+        // y se ven distintos segun el idioma de app
+        assertEquals("Alemán", nombreIdioma(Idioma.DE, Idioma.ES))
+        assertEquals("German", nombreIdioma(Idioma.DE, Idioma.EN))
+        assertEquals("Deutsch", nombreIdioma(Idioma.DE, Idioma.DE))
+        assertEquals("Allemand", nombreIdioma(Idioma.DE, Idioma.FR))
+        assertEquals("Tedesco", nombreIdioma(Idioma.DE, Idioma.IT))
+        assertEquals("Alemão", nombreIdioma(Idioma.DE, Idioma.PT))
+        assertEquals("Italien", nombreIdioma(Idioma.IT, Idioma.FR))
+    }
 }

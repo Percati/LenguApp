@@ -90,6 +90,7 @@ import io.github.percati.lenguapp.ui.NOMBRE_APP
 import io.github.percati.lenguapp.ui.etiquetaAcercaDe
 import io.github.percati.lenguapp.ui.etiquetaSinIdiomaTitulo
 import io.github.percati.lenguapp.ui.mensajeSinIdioma
+import io.github.percati.lenguapp.ui.nombreIdioma
 import io.github.percati.lenguapp.ui.textoLineaFija
 import io.github.percati.lenguapp.ui.claveBiblioteca
 import io.github.percati.lenguapp.ui.etiquetaAjustes
@@ -425,7 +426,7 @@ private fun PantallaPrincipal(
                     Tab(
                         selected = idioma == idiomaActivo,
                         onClick = { onIdiomaActivoElegido(idioma) },
-                        text = { Text(idioma.name) },
+                        text = { Text(nombreIdioma(idioma, idiomaAplicacion)) },
                     )
                 }
             }

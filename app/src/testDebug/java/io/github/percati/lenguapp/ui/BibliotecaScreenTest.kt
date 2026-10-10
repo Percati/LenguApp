@@ -181,7 +181,7 @@ class BibliotecaScreenTest {
         )
         val nombres = NombresI18n(mapOf(topicReal to mapOf("es" to "Tema real"), otroTopic to mapOf("es" to "Solo ingles")))
         mostrarItems(lista, mapOf(Idioma.DE to Nivel.B2, Idioma.EN to Nivel.B2), topicNombres = nombres)
-        composeTestRule.onNodeWithText("DE").performClick() // la primera pestana es EN (orden del enum)
+        composeTestRule.onNodeWithText("Alemán").performClick() // la primera pestana es EN (orden del enum)
 
         // pestana DE (nivel B2): el topic con items solo en C1 se muestra, con (0); el de EN no existe
         composeTestRule.onNodeWithText("Tema real (0)").assertExists()
@@ -192,7 +192,7 @@ class BibliotecaScreenTest {
         composeTestRule.onNodeWithText("Tema real (1)").assertExists()
 
         // pestana EN: al reves
-        composeTestRule.onNodeWithText("EN").performClick()
+        composeTestRule.onNodeWithText("Inglés").performClick()
         composeTestRule.onNodeWithText("Solo ingles (1)").assertExists()
         composeTestRule.onAllNodesWithText("Tema real", substring = true).assertCountEquals(0)
     }
@@ -206,12 +206,21 @@ class BibliotecaScreenTest {
         )
         val categorias = CategoriasUso(funcionComunicativa = listOf("Pedir", "Sugerir", "Opinar"))
         mostrarItems(lista, mapOf(Idioma.DE to Nivel.B2, Idioma.EN to Nivel.B2), categorias)
-        composeTestRule.onNodeWithText("DE").performClick() // la primera pestana es EN (orden del enum)
+        composeTestRule.onNodeWithText("Alemán").performClick() // la primera pestana es EN (orden del enum)
         composeTestRule.onNodeWithText("Expresiones").performClick()
 
         composeTestRule.onNodeWithText("Pedir (1)").assertExists()
         composeTestRule.onAllNodesWithText("Sugerir", substring = true).assertCountEquals(0)
         composeTestRule.onAllNodesWithText("Opinar", substring = true).assertCountEquals(0)
         composeTestRule.onAllNodesWithText("Sin categoría", substring = true).assertCountEquals(0)
+    }
+
+    @Test
+    fun `las pestanas de idioma muestran el nombre, no el codigo de dos letras`() {
+        mostrarItems(items(), mapOf(Idioma.DE to Nivel.B2, Idioma.EN to Nivel.B2))
+        composeTestRule.onNodeWithText("Alemán").assertExists()
+        composeTestRule.onNodeWithText("Inglés").assertExists()
+        composeTestRule.onAllNodesWithText("DE").assertCountEquals(0)
+        composeTestRule.onAllNodesWithText("EN").assertCountEquals(0)
     }
 }

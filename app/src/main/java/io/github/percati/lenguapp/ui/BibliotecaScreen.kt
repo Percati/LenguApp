@@ -124,7 +124,7 @@ fun BibliotecaScreen(
                 Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                     ScrollableTabRow(selectedTabIndex = idiomas.indexOf(idioma).coerceAtLeast(0)) {
                         idiomas.forEach { i ->
-                            Tab(selected = i == idioma, onClick = { idiomaElegido = i }, text = { Text(i.name) })
+                            Tab(selected = i == idioma, onClick = { idiomaElegido = i }, text = { Text(nombreIdioma(i, idiomaInterfaz)) })
                         }
                     }
 
