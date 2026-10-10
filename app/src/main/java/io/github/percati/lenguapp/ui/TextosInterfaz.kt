@@ -38,6 +38,7 @@ enum class ClaveTexto {
     ORDENAR_POR, ORDEN_ALFABETICO, ORDEN_FECHA, ASCENDENTE, DESCENDENTE, QUITAR_ESTRELLA,
     SIN_IDIOMA_TITULO, SIN_IDIOMA_TEXTO, SIN_IDIOMA_WIDGET,
     RETO_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_HABILIDAD, RETO_CONDICIONES, RETO_FRASES_TITULO, RETO_FRASES_AYUDA,
+    ACERCA_COMO_TITULO, ACERCA_COMO_TEXTO, ACERCA_CREDITOS_TEXTO, ACERCA_PRUEBA,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
 }
 
@@ -287,6 +288,38 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "Escolha um idioma em Configurações.",
     ),
     // --- Acerca de y linea fija (Ronda E, tarea 6) ---
+    ClaveTexto.ACERCA_COMO_TITULO to mapOf(
+        Idioma.ES to "Cómo está pensada",
+        Idioma.EN to "How it is designed",
+        Idioma.DE to "Wie sie gedacht ist",
+        Idioma.FR to "Comment elle est conçue",
+        Idioma.IT to "Come è pensata",
+        Idioma.PT to "Como foi pensado",
+    ),
+    ClaveTexto.ACERCA_COMO_TEXTO to mapOf(
+        Idioma.ES to "Las habilidades más importantes de cada nivel se repiten durante el año con distinta profundidad, porque la repetición espaciada es la base del método. Cuatro veces al año se dedica una semana al repaso, y cada fin de semana hay un desafío de práctica oral. El contenido se publica en ediciones anuales. Puedes practicar alemán o inglés, y la interfaz está disponible en español, inglés, alemán, francés, italiano y portugués.",
+        Idioma.EN to "The most important skills of each level come back during the year at a different depth, because spaced repetition is the basis of the method. Four times a year one week is devoted to review, and every weekend there is an oral practice challenge. The content is published in yearly editions. You can practise German or English, and the interface is available in Spanish, English, German, French, Italian and Portuguese.",
+        Idioma.DE to "Die wichtigsten Fähigkeiten jedes Niveaus kehren im Lauf des Jahres in unterschiedlicher Tiefe wieder, denn verteiltes Wiederholen ist die Grundlage der Methode. Viermal im Jahr ist eine Woche der Wiederholung gewidmet, und an jedem Wochenende gibt es eine mündliche Übungsaufgabe. Die Inhalte erscheinen in jährlichen Ausgaben. Du kannst Deutsch oder Englisch üben, und die Oberfläche gibt es auf Spanisch, Englisch, Deutsch, Französisch, Italienisch und Portugiesisch.",
+        Idioma.FR to "Les compétences les plus importantes de chaque niveau reviennent au fil de l'année avec une profondeur différente, car la répétition espacée est la base de la méthode. Quatre fois par an, une semaine est consacrée à la révision, et chaque week-end propose un défi de pratique orale. Le contenu est publié en éditions annuelles. Tu peux pratiquer l'allemand ou l'anglais, et l'interface est disponible en espagnol, anglais, allemand, français, italien et portugais.",
+        Idioma.IT to "Le abilità più importanti di ogni livello ritornano durante l'anno con una profondità diversa, perché la ripetizione distanziata è la base del metodo. Quattro volte all'anno una settimana è dedicata al ripasso, e ogni fine settimana c'è una sfida di pratica orale. I contenuti vengono pubblicati in edizioni annuali. Puoi praticare tedesco o inglese, e l'interfaccia è disponibile in spagnolo, inglese, tedesco, francese, italiano e portoghese.",
+        Idioma.PT to "As habilidades mais importantes de cada nível voltam ao longo do ano com profundidade diferente, porque a repetição espaçada é a base do método. Quatro vezes por ano uma semana é dedicada à revisão, e todo fim de semana há um desafio de prática oral. O conteúdo é publicado em edições anuais. Você pode praticar alemão ou inglês, e a interface está disponível em espanhol, inglês, alemão, francês, italiano e português.",
+    ),
+    ClaveTexto.ACERCA_CREDITOS_TEXTO to mapOf(
+        Idioma.ES to "Las voces sintéticas se generan con Piper: de_DE-thorsten-high (alemán) y en_US-ryan-high y en_US-lessac-high (inglés).",
+        Idioma.EN to "The synthetic voices are generated with Piper: de_DE-thorsten-high (German) and en_US-ryan-high and en_US-lessac-high (English).",
+        Idioma.DE to "Die synthetischen Stimmen werden mit Piper erzeugt: de_DE-thorsten-high (Deutsch) sowie en_US-ryan-high und en_US-lessac-high (Englisch).",
+        Idioma.FR to "Les voix synthétiques sont générées avec Piper : de_DE-thorsten-high (allemand) et en_US-ryan-high et en_US-lessac-high (anglais).",
+        Idioma.IT to "Le voci sintetiche sono generate con Piper: de_DE-thorsten-high (tedesco) e en_US-ryan-high e en_US-lessac-high (inglese).",
+        Idioma.PT to "As vozes sintéticas são geradas com o Piper: de_DE-thorsten-high (alemão) e en_US-ryan-high e en_US-lessac-high (inglês).",
+    ),
+    ClaveTexto.ACERCA_PRUEBA to mapOf(
+        Idioma.ES to "Esta es una versión de prueba; tus comentarios ayudan a mejorarla.",
+        Idioma.EN to "This is a test version; your feedback helps improve it.",
+        Idioma.DE to "Dies ist eine Testversion; dein Feedback hilft, sie zu verbessern.",
+        Idioma.FR to "Ceci est une version de test ; tes commentaires aident à l'améliorer.",
+        Idioma.IT to "Questa è una versione di prova; i tuoi commenti aiutano a migliorarla.",
+        Idioma.PT to "Esta é uma versão de teste; seus comentários ajudam a melhorá-la.",
+    ),
     ClaveTexto.ACERCA_DE to mapOf(
         Idioma.ES to "Acerca de",
         Idioma.EN to "About",
@@ -312,12 +345,12 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "O que é e o que não é",
     ),
     ClaveTexto.ACERCA_QUE_ES_TEXTO to mapOf(
-        Idioma.ES to "LenguApp te da cada semana una ficha para practicar hablando el idioma que aprendes, al nivel que elijas. No es un curso: fija lo que ya aprendiste en un curso de tu nivel.",
-        Idioma.EN to "LenguApp gives you one sheet a week to practise speaking the language you are learning, at the level you choose. It is not a course: it helps you consolidate what you already learned in a course at your level.",
-        Idioma.DE to "LenguApp gibt dir jede Woche ein Blatt, um die Sprache, die du lernst, mündlich zu üben – auf dem Niveau, das du wählst. Es ist kein Kurs: Es festigt, was du in einem Kurs auf deinem Niveau schon gelernt hast.",
-        Idioma.FR to "LenguApp te propose chaque semaine une fiche pour t'exercer à parler la langue que tu apprends, au niveau de ton choix. Ce n'est pas un cours : l'application consolide ce que tu as déjà appris dans un cours de ton niveau.",
-        Idioma.IT to "LenguApp ti propone ogni settimana una scheda per esercitarti a parlare la lingua che stai imparando, al livello che scegli. Non è un corso: consolida ciò che hai già imparato in un corso del tuo livello.",
-        Idioma.PT to "O LenguApp traz toda semana uma ficha para você praticar falando o idioma que está aprendendo, no nível que escolher. Não é um curso: ele fixa o que você já aprendeu em um curso do seu nível.",
+        Idioma.ES to "LenguApp ofrece cada semana una ficha de práctica de alemán o de inglés, entre los niveles A2 y C2. Cada ficha propone una habilidad y un tema, con vocabulario y expresiones, una misión breve, microtareas y un texto para que una inteligencia artificial corrija tu producción. No es un curso: no enseña desde cero, sino que consolida lo que ya aprendiste en un curso de tu nivel.",
+        Idioma.EN to "LenguApp offers a weekly practice sheet in German or English, between levels A2 and C2. Each sheet proposes a skill and a topic, with vocabulary and expressions, a short mission, micro-tasks and a text for an artificial intelligence to correct your output. It is not a course: it does not teach from scratch, but consolidates what you already learned in a course at your level.",
+        Idioma.DE to "LenguApp bietet jede Woche ein Übungsblatt für Deutsch oder Englisch, zwischen den Niveaus A2 und C2. Jedes Blatt enthält eine Fähigkeit und ein Thema, mit Wortschatz und Redewendungen, einer kurzen Mission, Mikroaufgaben und einem Text, mit dem eine künstliche Intelligenz deine Sprachproduktion korrigieren kann. Es ist kein Kurs: Es vermittelt nichts von Grund auf, sondern festigt, was du in einem Kurs auf deinem Niveau schon gelernt hast.",
+        Idioma.FR to "LenguApp propose chaque semaine une fiche d'entraînement en allemand ou en anglais, entre les niveaux A2 et C2. Chaque fiche présente une compétence et un thème, avec du vocabulaire et des expressions, une courte mission, des microtâches et un texte permettant à une intelligence artificielle de corriger ta production. Ce n'est pas un cours : l'application n'enseigne pas à partir de zéro, elle consolide ce que tu as déjà appris dans un cours de ton niveau.",
+        Idioma.IT to "LenguApp propone ogni settimana una scheda di pratica di tedesco o di inglese, tra i livelli A2 e C2. Ogni scheda presenta un'abilità e un tema, con vocabolario ed espressioni, una breve missione, microattività e un testo con cui un'intelligenza artificiale può correggere la tua produzione. Non è un corso: non insegna da zero, ma consolida ciò che hai già imparato in un corso del tuo livello.",
+        Idioma.PT to "O LenguApp oferece toda semana uma ficha de prática de alemão ou de inglês, entre os níveis A2 e C2. Cada ficha propõe uma habilidade e um tema, com vocabulário e expressões, uma missão curta, microtarefas e um texto para que uma inteligência artificial corrija a sua produção. Não é um curso: não ensina do zero, mas consolida o que você já aprendeu em um curso do seu nível.",
     ),
     ClaveTexto.ACERCA_PRIVACIDAD_TITULO to mapOf(
         Idioma.ES to "Privacidad",
@@ -328,20 +361,20 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "Privacidade",
     ),
     ClaveTexto.ACERCA_PRIVACIDAD_TEXTO to mapOf(
-        Idioma.ES to "Sin Internet y sin cuenta: la app no puede enviar nada a ningún sitio. Solo lee la fecha del dispositivo (y su idioma, únicamente si lo eliges en Ajustes). Lo único que se guarda en tu celular son tus ajustes y los elementos que marcas con la estrella en Guardados.",
-        Idioma.EN to "No internet and no account: the app cannot send anything anywhere. It only reads the device's date (and its language, only if you choose that in Settings). The only things stored on your phone are your settings and what you mark with a star in Saved.",
-        Idioma.DE to "Kein Internet, kein Konto: Die App kann nirgendwohin etwas senden. Sie liest nur das Datum des Geräts (und seine Sprache, nur wenn du das in den Einstellungen wählst). Auf deinem Handy gespeichert werden nur deine Einstellungen und das, was du unter Gespeichert mit dem Stern markierst.",
-        Idioma.FR to "Pas d'Internet, pas de compte : l'application ne peut rien envoyer nulle part. Elle lit seulement la date de l'appareil (et sa langue, uniquement si tu le choisis dans Paramètres). Seuls tes paramètres et les éléments que tu marques d'une étoile dans Enregistrés sont conservés sur ton téléphone.",
-        Idioma.IT to "Niente Internet e niente account: l'app non può inviare nulla da nessuna parte. Legge soltanto la data del dispositivo (e la sua lingua, solo se lo scegli in Impostazioni). Sul telefono vengono conservate soltanto le tue impostazioni e ciò che contrassegni con la stella in Salvati.",
-        Idioma.PT to "Sem internet e sem conta: o aplicativo não pode enviar nada para lugar nenhum. Ele só lê a data do dispositivo (e o idioma, somente se você escolher isso em Configurações). As únicas coisas salvas no seu celular são as suas configurações e os itens que você marca com a estrela em Salvos.",
+        Idioma.ES to "Sin Internet y sin cuenta: la app no puede enviar nada a ningún sitio. Solo lee la fecha del dispositivo (y su idioma, únicamente si lo eliges en Ajustes). Lo único que se guarda en tu celular son tus ajustes y los elementos que marcas con la estrella en Guardados. No utiliza cuentas ni estadísticas de uso, no solicita permiso de Internet ni de ubicación, y no envía información a terceros.",
+        Idioma.EN to "No internet and no account: the app cannot send anything anywhere. It only reads the device's date (and its language, only if you choose that in Settings). The only things stored on your phone are your settings and what you mark with a star in Saved. It uses no accounts or usage statistics, does not request permission for internet or location, and sends no information to third parties.",
+        Idioma.DE to "Kein Internet, kein Konto: Die App kann nirgendwohin etwas senden. Sie liest nur das Datum des Geräts (und seine Sprache, nur wenn du das in den Einstellungen wählst). Auf deinem Handy gespeichert werden nur deine Einstellungen und das, was du unter Gespeichert mit dem Stern markierst. Sie verwendet weder Konten noch Nutzungsstatistiken, fordert keine Berechtigung für Internet oder Standort an und sendet keine Informationen an Dritte.",
+        Idioma.FR to "Pas d'Internet, pas de compte : l'application ne peut rien envoyer nulle part. Elle lit seulement la date de l'appareil (et sa langue, uniquement si tu le choisis dans Paramètres). Seuls tes paramètres et les éléments que tu marques d'une étoile dans Enregistrés sont conservés sur ton téléphone. Elle n'utilise ni compte ni statistiques d'utilisation, ne demande aucune autorisation d'accès à Internet ni à la localisation, et n'envoie aucune information à des tiers.",
+        Idioma.IT to "Niente Internet e niente account: l'app non può inviare nulla da nessuna parte. Legge soltanto la data del dispositivo (e la sua lingua, solo se lo scegli in Impostazioni). Sul telefono vengono conservate soltanto le tue impostazioni e ciò che contrassegni con la stella in Salvati. Non usa account né statistiche d'uso, non richiede l'autorizzazione per Internet né per la posizione e non invia informazioni a terze parti.",
+        Idioma.PT to "Sem internet e sem conta: o aplicativo não pode enviar nada para lugar nenhum. Ele só lê a data do dispositivo (e o idioma, somente se você escolher isso em Configurações). As únicas coisas salvas no seu celular são as suas configurações e os itens que você marca com a estrela em Salvos. Não usa contas nem estatísticas de uso, não solicita permissão de internet nem de localização e não envia informações a terceiros.",
     ),
     ClaveTexto.ACERCA_LICENCIAS_TITULO to mapOf(
-        Idioma.ES to "Licencias",
-        Idioma.EN to "Licences",
-        Idioma.DE to "Lizenzen",
-        Idioma.FR to "Licences",
-        Idioma.IT to "Licenze",
-        Idioma.PT to "Licenças",
+        Idioma.ES to "Licencias y créditos",
+        Idioma.EN to "Licences and credits",
+        Idioma.DE to "Lizenzen und Danksagungen",
+        Idioma.FR to "Licences et crédits",
+        Idioma.IT to "Licenze e crediti",
+        Idioma.PT to "Licenças e créditos",
     ),
     ClaveTexto.ACERCA_LICENCIAS_TEXTO to mapOf(
         Idioma.ES to "Código: GPL-3.0. Contenido: CC BY-SA 4.0.",
@@ -661,6 +694,10 @@ fun mensajeSinIdioma(idiomaInterfaz: Idioma): String = texto(ClaveTexto.SIN_IDIO
 fun mensajeSinIdiomaWidget(idiomaInterfaz: Idioma): String = texto(ClaveTexto.SIN_IDIOMA_WIDGET, idiomaInterfaz)
 fun textoLineaFija(idiomaInterfaz: Idioma): String = texto(ClaveTexto.LINEA_FIJA, idiomaInterfaz)
 fun etiquetaAcercaQueEsTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_QUE_ES_TITULO, idiomaInterfaz)
+fun etiquetaAcercaComoTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TITULO, idiomaInterfaz)
+fun textoAcercaComo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TEXTO, idiomaInterfaz)
+fun textoAcercaCreditos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_CREDITOS_TEXTO, idiomaInterfaz)
+fun textoAcercaPrueba(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_PRUEBA, idiomaInterfaz)
 fun textoAcercaQueEs(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_QUE_ES_TEXTO, idiomaInterfaz)
 fun etiquetaAcercaPrivacidadTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_PRIVACIDAD_TITULO, idiomaInterfaz)
 fun textoAcercaPrivacidad(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_PRIVACIDAD_TEXTO, idiomaInterfaz)

@@ -38,21 +38,28 @@ fun AcercaDeScreen(
         }
         Column(
             modifier = Modifier.verticalScroll(rememberScrollState()),
-            verticalArrangement = Arrangement.spacedBy(20.dp),
+            verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones),
         ) {
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Text(NOMBRE_APP, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
                 Text(textoLineaFija(idiomaInterfaz), style = MaterialTheme.typography.bodyMedium)
             }
             Bloque(etiquetaAcercaQueEsTitulo(idiomaInterfaz), textoAcercaQueEs(idiomaInterfaz))
+            Bloque(etiquetaAcercaComoTitulo(idiomaInterfaz), textoAcercaComo(idiomaInterfaz))
             Bloque(etiquetaAcercaPrivacidadTitulo(idiomaInterfaz), textoAcercaPrivacidad(idiomaInterfaz))
-            Bloque(etiquetaAcercaLicenciasTitulo(idiomaInterfaz), textoAcercaLicencias(idiomaInterfaz))
-            if (version.isNotBlank()) {
-                Text(
-                    textoAcercaVersion(idiomaInterfaz, version),
-                    style = MaterialTheme.typography.labelMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
+            Bloque(
+                etiquetaAcercaLicenciasTitulo(idiomaInterfaz),
+                textoAcercaLicencias(idiomaInterfaz) + "\n" + textoAcercaCreditos(idiomaInterfaz),
+            )
+            Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
+                if (version.isNotBlank()) {
+                    Text(
+                        textoAcercaVersion(idiomaInterfaz, version),
+                        style = MaterialTheme.typography.labelLarge,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+                Text(textoAcercaPrueba(idiomaInterfaz), style = MaterialTheme.typography.bodyMedium)
             }
         }
     }
@@ -60,7 +67,7 @@ fun AcercaDeScreen(
 
 @Composable
 private fun Bloque(titulo: String, texto: String) {
-    Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+    Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
         Text(titulo, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
         Text(texto, style = MaterialTheme.typography.bodyLarge)
     }

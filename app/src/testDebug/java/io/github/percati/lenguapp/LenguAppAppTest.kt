@@ -20,7 +20,11 @@ import io.github.percati.lenguapp.semana.CalendarioCargado
 import io.github.percati.lenguapp.semana.ResultadoSemana
 import io.github.percati.lenguapp.semana.resolverContenidoDeLaSemana
 import io.github.percati.lenguapp.semana.semanaIsoDe
+import io.github.percati.lenguapp.ui.etiquetaAcercaComoTitulo
 import io.github.percati.lenguapp.ui.etiquetaAcercaDe
+import io.github.percati.lenguapp.ui.textoAcercaComo
+import io.github.percati.lenguapp.ui.textoAcercaCreditos
+import io.github.percati.lenguapp.ui.textoAcercaPrueba
 import io.github.percati.lenguapp.ui.etiquetaAcercaLicenciasTitulo
 import io.github.percati.lenguapp.ui.etiquetaAcercaPrivacidadTitulo
 import io.github.percati.lenguapp.ui.etiquetaAcercaQueEsTitulo
@@ -380,6 +384,11 @@ class LenguAppAppTest {
         composeTestRule.onNode(hasText("GPL-3.0", substring = true)).assertExists()
         composeTestRule.onNode(hasText("CC BY-SA 4.0", substring = true)).assertExists()
         composeTestRule.onNodeWithText("Versión 0.2.0").assertExists()
+        composeTestRule.onNodeWithText("Cómo está pensada").assertExists()
+        composeTestRule.onNode(hasText("No utiliza cuentas ni estadísticas de uso", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("Piper", substring = true)).assertExists()
+        composeTestRule.onNodeWithText("Licencias y créditos").assertExists()
+        composeTestRule.onNode(hasText("versión de prueba", substring = true)).assertExists()
 
         // Volver lleva a Ajustes (donde esta la fila), no a la principal
         composeTestRule.onNodeWithText("< Volver").performClick()
@@ -395,6 +404,7 @@ class LenguAppAppTest {
                 etiquetaAcercaPrivacidadTitulo(idioma), textoAcercaPrivacidad(idioma),
                 etiquetaAcercaLicenciasTitulo(idioma), textoAcercaLicencias(idioma),
                 textoAcercaVersion(idioma, "0.2.0"),
+                etiquetaAcercaComoTitulo(idioma), textoAcercaComo(idioma), textoAcercaCreditos(idioma), textoAcercaPrueba(idioma),
             )
             assertTrue("$idioma: texto vacio", textos.all { it.isNotBlank() })
             assertTrue("$idioma: placeholder sin resolver", textos.none { it.contains("{") })
