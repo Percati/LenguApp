@@ -864,9 +864,42 @@ Requisitos ya aplicados al empezar: parche de Overview y tuteo de Traducciones c
 | 5 | **Guardados muestra solo la traducción** | `FilaGuardado` usa `texto.resolver(idiomaBase, …)` y la función en idioma de app; Biblioteca muestra original + traducción + función en idioma aprendido | Code F2, tarea 1 (un composable compartido) |
 - Orden: Traducciones (17) → Overview regenera assets → Code F2 (18, versión 0.2.2) → [si Fer lo confirma: exportar/importar Guardados e índice de habilidades] → Code Ronda G (15) → ronda H (ícono y splash).
 - Guía para testers (qué es decisión de diseño y qué es un error): `docs/guia-testers.md` y `docs/guia-testers-lenguapp.pdf`. Actualizar con cada versión.
+- ✅ Hecho en Code F2 (sección 28, versión 0.2.2).
 - 10-oct-2026: Fer confirmó exportar/importar Guardados (TSV Anki + JSON de respaldo) e índice de habilidades (vista dentro de la Biblioteca): tareas 6 y 7 del prompt 18.
 
 ## 27. Verificación del parche R8 (Traducciones, 10-oct-2026) y siguiente deuda de contenido
 - Parche R8 verificado por Overview en clon fresco: 606 fichas, 56 semanas especiales, 0 con problemas; R1-R8 en 0; las 1370 cadenas cambiadas solo agregan « » (quitándolos, idénticas a las anteriores), mismos `*`, estructura JSON idéntica; el caso de `EN-F01-B1` («I think es neutral…») quedó como «I think» es neutral…. Assets regenerados.
 - Decisión de Traducciones aceptada: `titulo` no se marca (tope de 80 caracteres); `*x*` sin « » queda como está (en este repo `*x*` es también énfasis del idioma de destino; ~9558 casos, separar los dos usos queda anotado en 14.1).
 - Deuda hallada: (a) trato formal en las instrucciones de alemán (~480 cadenas), francés (~500) e italiano (~270), contra la decisión «tú en todo»; (b) ~88 cadenas con `ß` en texto alemán, contra la ortografía suiza. Va a Traducciones como `prompts/19-traducciones-registro-y-ss.md` (R9 y R10). No bloquea la prueba con testers hispanohablantes.
+
+## 28. Code Ronda F2 — ✅ implementada (Code, oct 2026), versión 0.2.2
+
+Cierra la sección 26 (feedback de uso de Fer). Requisitos aplicados al empezar: parche R8 de Traducciones y assets regenerados (R1–R8 en 0). 7 tareas, un commit cada una; `compileDebugKotlin compileDebugUnitTestKotlin test` en verde en cada una.
+
+| # | Tarea | Qué se hizo |
+|---|---|---|
+| 1 | Guardados = Biblioteca | Un solo composable `FilaPalabra` para las dos pantallas: original (idioma que se aprende) · traducción al idioma de app (se omite si no hay, sin repetir el original) · contexto/función en el idioma que se aprende (solo si existe). El snapshot de Room ya traía original y traducciones: **sin migración** (test por Room). El orden alfabético de Guardados pasó a ser por el original. Se quitó el pie técnico `DE · B2 · DE-V02` de la fila. `MatrizSuperficiesTest` suma la superficie «fila de Guardados» |
+| 2 | Desafío | Ya no muestra consigna ni requisitos de la misión (ni el rótulo «La misión:»). Muestra: línea nueva («Dilo en voz alta…»), **Tema** (topic en idioma de app), **Habilidad** (título de la ficha), **Condiciones** (4 filas con ícono Mic/Timer/Group·SwapHoriz/Replay, una idea por fila) y **Frases para usar** (hasta 3, mismas expresiones que el prompt de voz: `expresionesDeLaFicha`). Se eliminaron `RETO_TITULO` y `RETO_ROTULO_MISION` |
+| 3 | Espaciado | **Causa real**: `Seccion` usaba `spacedBy(8.dp)` entre viñetas, y 22.dp / 32.dp entre items y secciones: dp fijos que no siguen el `fontScale`. El interlineado ya era en sp (el tema usaba la tipografía por defecto de Material 3), solo que sin proporción explícita. Ahora todo es múltiplo del tamaño de letra (`ui/Espaciado.kt`): viñetas 0,35 × cuerpo, dentro del ítem 0,15, entre ítems 0,6, entre secciones 1 × cuerpo grande; interlineado del tema en sp (cuerpo 1,45). Test con fontScale 1,0/1,3/1,6. Las secciones pasaron de 32 dp a ~16 dp y las viñetas de 8 dp a ~5 dp: **más compacto que antes**, que es lo que se pidió |
+| 4 | Encabezado | Fuera de la pantalla principal. Ajustes lleva arriba el nombre, la línea fija y la fila «Acerca de». `publicacion/LEEME.md` actualizado |
+| 5 | Acerca de | Cinco bloques en 6 idiomas (qué es, cómo está pensada, privacidad, licencias y créditos, versión de prueba). Ver «Textos quitados» abajo |
+| 6 | Exportar / importar Guardados | Anki (TSV) y copia de seguridad (JSON v1) con el selector del sistema; importar solo el JSON, sin duplicar por (idioma, tipo, original), con límites (5 MB, 50 000 ítems) y mensajes claros. **Regla dura 2 enmendada** en los dos `CLAUDE.md`; `PRIVACY.md` (raíz y legal) y «Acerca de» lo dicen |
+| 7 | Índice de habilidades | Segunda vista de la Biblioteca («Vocabulario y expresiones» \| «Habilidades»): título + semanas del año que se está viendo; un toque abre la próxima aparición |
+
+**Decisiones donde el prompt no cerraba:**
+- **Exportar a Anki**: se exportan **todos** los guardados (no los filtrados): lo más simple. Reverso = traducción + « — » + contexto. Etiquetas `de B2` = dos etiquetas de Anki (idioma y nivel).
+- **Índice, qué abre un toque**: la **próxima aparición** desde la semana que se está viendo (o la última si ya pasaron todas). El prompt decía «abre esa semana» sin precisar cuál cuando hay varias. Orden: alfabético por título.
+- **Índice, qué año/qué calendario**: solo hay calendarios embebidos de **2026** (y parciales: desde la semana 37 o 41 según el par), así que el índice de hoy lista únicamente las semanas desde ahí; con un año sin calendario dice «todavía no hay calendario para {año}». Cuando se embeba el calendario 2027 el índice lo usará solo.
+- **Primera vista de la Biblioteca** se llama «Vocabulario y expresiones» (no solo «Vocabulario»): ya existe el chip «Vocabulario» dentro de esa vista.
+- **El desafío no puede mostrar el tema si falta `topicNombres`**: cae al id del tema (T01…); en la app real siempre están.
+- **Guía de testers** (`docs/guia-testers.md`) corregida (el .pdf no se regeneró): decía «cada 8 y ~16 semanas» (son 4 repasos al año) y «el audio funciona sin conexión» (ver abajo).
+
+**Textos de «Acerca de» que quité o corregí por no ser verdad:**
+- «vocabulario y expresiones **con audio**»: **la app todavía no reproduce audio** (los .ogg están dentro del APK pero no hay reproductor; solo existe el campo `audio` en el modelo). Quitado.
+- «**cada ocho semanas** se dedica una semana al repaso» → son **cuatro al año** (2027: semanas 10, 22, 34 y 46). «y, de forma periódica, a la supervivencia» → no hay Survival en 2027 (solo en el piloto 2026); se reemplazó por el desafío de cada fin de semana, que sí existe.
+- «las habilidades se repiten **varias veces** al año» → solo repiten las marcadas como núcleo de cada nivel (regla 12); ahora dice «las más importantes de cada nivel».
+- **Licencias de las voces: no están documentadas en el repo** (solo los nombres: `de_DE-thorsten-high`, `en_US-ryan-high`, `en_US-lessac-high`, en `PROYECTO.md` y `audio-manifiesto.md`). La línea de créditos nombra las voces y Piper pero **no afirma ninguna licencia**. Pendiente de Overview: documentar la licencia de cada voz antes de publicar.
+- Se verificó contra el manifest (sin `INTERNET`, sin ubicación, sin cuentas ni analítica) y `PRIVACY.md` cada frase de privacidad; todas son verdad.
+- **fr/it/pt de «Acerca de» y de los textos nuevos de esta ronda: no los revisó una persona nativa** (traducción mía, registro informal; FR «tu», PT «você» de Brasil).
+
+**Para probar en el teléfono:** que el selector de archivos del sistema abra (crear `.tsv`/`.json` y abrir el `.json`) —los lanzadores no se pueden probar bajo Robolectric—, importar el TSV en Anki real, y mirar el espaciado nuevo con la letra del sistema al 130 % y al 160 %.
