@@ -780,3 +780,26 @@ Verificado por Overview: el parche de Code (9 commits) aplica limpio sobre `ab35
 - 232 cadenas «usted»→«tú», lista corta de léxico aplicada (piso→apartamento, billete de transporte→boleto, aparcar→estacionar, coche→auto, ordenador→computadora, móvil→celular, coger confianza→ganar confianza), regla R7 y formas de «vosotros» en R6. R1-R7 en 0; assets regenerados.
 - Excepciones aceptadas: 27 «usted/ustedes» y 3 filas formales en los 6 idiomas (contenido que se enseña), `billete` de dinero, `camarero` (sin término neutro), menciones metalingüísticas («computadora/ordenador»).
 - Abierto: `camarero` → `mesero` si Fer lo decide antes de publicar (parche de dos líneas).
+
+## 24. Code Ronda F — ✅ implementada (Code, oct 2026), versión 0.2.1
+
+Requisitos ya aplicados al empezar: parche de Overview y tuteo de Traducciones con los assets regenerados (R1-R7 en 0). 6 tareas + 1 corrección, un commit cada una; `compileDebugKotlin compileDebugUnitTestKotlin test` en verde en cada una.
+
+| Tarea | Qué se hizo |
+|---|---|
+| 1 | Pestañas de idioma (Biblioteca, Guardados, principal) con el **nombre en el idioma de app** (`nombreIdioma`), no `EN`/`DE`. Se corrigió además la tabla: `Italiano` en la columna francesa era `Italien` (error de transcripción heredado de AJUSTES-FASE-9). Test: ninguno de los 36 nombres es un código |
+| 2 | `widget_descripcion` en `values/` (inglés, respaldo) + `values-es/de/fr/it/pt`. Test: todo string visible de `values/` existe en los otros cinco; el manifest y `xml/` solo apuntan a `@string` (`app_name`, nombre propio, queda único) |
+| 3 | **Portugués de Brasil** en TextosInterfaz, EtiquetasSeccion y planilla (celular, aplicativo, **Configurações** en vez de Ajustes, **Salvos** en vez de Guardados —que además convivía con «Remover de Salvos»—, «em uma única gravação», «dá para entender?», Autoavaliação, Microtarefas, Buscar…). **Informal en los 6**: francés pasa de *vous* a *tu* en toda la interfaz; la planilla mantiene su registro (es para el profesor), salvo la variante PT, que pasa a Brasil. Tests: lista corta de portugués europeo en las cadenas PT, nada de *vous* en FR, sin trato de usted en ES/IT/DE/EN |
+| 4 | Acerca de vs `PRIVACY.md`: **diferían**. El texto de la app decía «lo único que se guarda son las estrellas» y omitía los ajustes (que `PRIVACY.md` sí menciona). Se corrigió el texto de la app en los 6 idiomas (aunque el prompt decía que el de la app mandaba: era el que estaba incompleto). Test con las ideas clave por idioma y comprobación de `PRIVACY.md` |
+| 5 | `versionName 0.2.1`, `versionCode 3` |
+| 6 | `MatrizSuperficiesTest`: (en, de) × 6 idiomas de app × (A2, B1, B2) sobre fichas reales; afirma el idioma de salida de rótulos, reglas del reto, nombres de topic/categoría, prosa de la ficha con y sin switch, errores contrastivos, traducciones de vocabulario/expresiones, planilla y prompts |
+
+**Decisiones donde el prompt no cerraba:**
+- **Hallazgo de la matriz (cambia comportamiento):** el prompt de corrección seguía al switch: en A2/B1 con el switch activo se mostraba **y se copiaba** en el idioma de app, contra la tabla 2 («prompt de corrección → idioma que se aprende»). Ahora va siempre en el idioma que se aprende (el título de la tarjeta sigue a la ficha). Revertible en una línea por superficie (`promptEnIdiomaAprendido` en `Presentacion.kt`); Fer decide si prefiere ver el prompt traducido.
+- **Voseo en el español de la interfaz** (que el prompt no mencionaba): `Pulsá`, `Idioma que aprendés`, `Tocá`, `Pegalo`/`Decile`, y `móvil` → tuteo neutro/celular. Test de la lista de formas.
+- **Ajustes**: las pestañas de idioma de la pantalla de Ajustes (chips de idiomas aprendidos y de idioma de app) siguen mostrando el código `EN`/`DE`; no son pestañas, sus tests dependen del código y no estaba pedido. Queda anotado.
+- **Pestañas de Guardados**: la fila de cada ítem sigue mostrando `DE · B2 · DE-V02` (origen técnico), no es una pestaña.
+
+**No se puede probar sin UI** (anotado en el encabezado del test): el cableado de cada `Text` de `ContenidoSemanalScreen` a la función correcta, el switch como control y el copiado al portapapeles; lo cubren los tests de pantalla existentes.
+
+**Sigue abierto:** las 3 planillas en dos carillas (a mirar en el teléfono), revisión humana de fr/it/pt (tienda y ahora la interfaz en pt-BR), `camarero`→`mesero` (23.2), dirección visual, 273 expresiones sin categoría, `erroresContrastivos` en el maestro de traducciones (sección 20), 2027/2028.
