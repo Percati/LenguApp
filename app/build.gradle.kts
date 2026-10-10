@@ -268,6 +268,52 @@ val verificarAssetsContenidoActualizados by tasks.registering {
     }
 }
 
+// Reglas de prevencion (proyecto/REGLAS-PREVENCION.md, regla dura 14): el verificador de
+// consistencia (A2/B1 bilingues incluido erroresContrastivos, nombres de topic y categoria
+// en 6 idiomas, textos de la planilla, « » balanceados, categoriasUso en la lista cerrada)
+// corre sobre la recomposicion que acaba de hacer verificarAssetsContenidoActualizados
+// (componer.py sobre proyecto/contenido/), no sobre los nucleos crudos: ve lo mismo que la
+// app. Si hay problemas, el build falla con la lista.
+val verificarConsistenciaContenido by tasks.registering {
+    group = "verification"
+    description = "Recompone el contenido con componer.py y corre verificar_consistencia.py; falla si hay problemas."
+    dependsOn(verificarAssetsContenidoActualizados)
+
+    val raizProyecto = File(rootDir, "proyecto")
+    val recompuesto = layout.buildDirectory.dir("contenido-recompuesto").get().asFile
+    val marca = layout.buildDirectory.file("verificarConsistenciaContenido.ok").get().asFile
+
+    inputs.dir(recompuesto)
+    inputs.file(File(raizProyecto, "tools/verificar_consistencia.py"))
+    inputs.dir(File(raizProyecto, "data"))
+    inputs.dir(File(raizProyecto, "contenido/plantillas"))
+    outputs.file(marca)
+
+    doLast {
+        marca.delete()
+        val salidaProceso = ByteArrayOutputStream()
+        val resultado = exec {
+            commandLine(
+                "python3", File(raizProyecto, "tools/verificar_consistencia.py").absolutePath,
+                "--build", recompuesto.absolutePath,
+            )
+            standardOutput = salidaProceso
+            errorOutput = salidaProceso
+            isIgnoreExitValue = true
+        }
+        val texto = salidaProceso.toString(Charsets.UTF_8)
+        if (resultado.exitValue != 0) {
+            throw GradleException(
+                "verificar_consistencia.py encontro problemas (reglas de prevencion, proyecto/REGLAS-PREVENCION.md):\n$texto\n" +
+                    "Para correrlo a mano:\n" +
+                    "  python3 proyecto/tools/componer.py --contenido proyecto/contenido --salida /tmp/b --schema proyecto/schema/ficha.schema.json\n" +
+                    "  python3 proyecto/tools/verificar_consistencia.py --build /tmp/b",
+            )
+        }
+        marca.writeText(texto, Charsets.UTF_8)
+    }
+}
+
 // preBuild es dependencia transitiva tanto de compileDebugKotlin como de
 // compileDebugUnitTestKotlin, asi que esto corre antes de compilar y antes
 // de testear, en ambas variantes.
@@ -277,6 +323,7 @@ tasks.matching { it.name == "preBuild" }.configureEach {
     dependsOn(generarTopicNombresAssets)
     dependsOn(copiarCategoriasUsoAssets)
     dependsOn(verificarAssetsContenidoActualizados)
+    dependsOn(verificarConsistenciaContenido)
 }
 
 // assembleDebug debe fallar si el JSON de assets/ no valida contra el schema:
