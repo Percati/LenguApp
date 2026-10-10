@@ -35,6 +35,11 @@ Sale con codigo 1 si hay algun error. Reglas (ver REGLAS-PREVENCION.md):
          positivos sobre espanol correcto y, como esta regla corre en
          preBuild, dejaba el build en rojo sin arreglo posible. Si aparece
          voseo con esas formas hay que verlo a mano.
+
+  R7  El espanol del contenido trata al lector de TU y usa lexico neutro:
+      ninguna cadena espanola lleva un imperativo de usted en posicion de
+      imperativo, ni los peninsularismos de la lista corta. Las excepciones
+      son explicitas (EXENTAS_R7) y cada una dice por que. Ver FALTANTES 6.1.1.
 """
 import argparse, glob, json, os, re, sys
 
@@ -80,7 +85,76 @@ VOSEO = re.compile(
     # 'Dale consejos a un amigo' es el imperativo normal de dar + le, asi que
     # la particula rioplatense 'dale' hay que verla a mano.
     r"|nomás|laburo|laburar"
+    # vosotros: tampoco es neutro. Aparecio una vez, en una cita de ejemplo
+    # («como ya sabéis»), y el espanol neutro usa ustedes.
+    r"|vosotros|vuestro|vuestra|vuestros|vuestras|habéis|tenéis|podéis|queréis|sabéis"
+    r"|sois|estáis|hacéis|vais|veis|dais|coméis|vivís|escribís"
     r")\b", re.IGNORECASE)
+
+
+# --------------------------------------------------------------------------
+# R7: usted y lexico peninsular (decision de Fer del 10-10-2026: tu en todo,
+# mas una lista CORTA de sustituciones de lexico).
+# --------------------------------------------------------------------------
+# Solo se marca el imperativo de usted en POSICION DE IMPERATIVO (arranque de
+# la cadena o detras de . ! ? : ; ¡ ¿ — ) ). Un subjuntivo dentro de 'que ...'
+# tiene la misma forma ('que explique por que', 'segun se mire', 'aunque se
+# cuente') y es espanol correcto: marcarlo dejaria el build en rojo para
+# siempre, porque esta regla corre en preBuild.
+# La posicion de imperativo incluye el arranque de la cadena, el detras de un
+# signo de puntuacion, y el detras de un cierre de *cursiva* o de '(N)', porque
+# las micro-tareas escriben 'Cinco oraciones: *Ich stehe auf.* Subraya el
+# prefijo.' y '60 segundos: compara precios'.
+_POS = r"(?:^|[.!?:;¡¿—)*]\s+|^¡|—\s*|\bLuego\s+|\bDespués\s+)"
+USTED_IMP = re.compile(
+    _POS +
+    r"(reescriba|compruebe|revise|escriba|hable|describa|haga|responda|anote|explique"
+    r"|indique|compare|repita|ordene|subraye|marque|reformule|formule|elija|pruebe"
+    r"|busque|complete|grabe|agregue|añada|diga|cuente|escuche|practique|intente"
+    r"|corrija|resuma|empiece|cambie|trate|piense|pida|fíjese|acuérdese"
+    r"|concéntrese|imagine|prepare|justifique|identifique|evite|incluya|exprese"
+    r"|preste|termine|convierta|solicite|converse|preséntese|corríjase|limítese"
+    r"|léalas|léalo|respóndale|explíquele|cuéntele|dígalo|hágalo"
+    r"|escríbalo|anótelo|revíselo|repítalo|descríbalo|póngase"
+    r"|sírvase|use|pase|vaya|llame|mire|tenga|deje|tome|avise|ponga|salga|venga"
+    r"|siga|vuelva|observe|verifique|repase|adapte|transforme|decida|defina|aplique"
+    r"|señale|enumere|sustituya|reemplace|simplifique|amplíe)\b",
+    re.IGNORECASE)
+
+# Lista CORTA. Deliberadamente NO estan:
+#   vale     -> en todo el contenido es el verbo 'valer' ('vale la pena'), no
+#               el '!vale!' de Espana.
+#   billete  -> en los packs de finanzas traduce 'der Schein' / 'a note', o sea
+#               dinero, y ahi sirve en toda America. Solo el billete de
+#               transporte se paso a 'boleto', a mano.
+#   camarero -> no hay termino neutro ('mesero' America, 'mozo' Rio de la
+#               Plata, 'camarero' Espana). Se dejo y esta documentado en
+#               FALTANTES 6.1.1.
+#   tio/tia  -> en este contenido son el tio y la tia de la familia, no el
+#               'tio' coloquial de Espana.
+# 'telefonia movil' es un adjetivo normal en todo el espanol: solo el
+# sustantivo 'el movil' (= el celular) es peninsular.
+LEXICO_PENINSULAR = re.compile(
+    r"\b(aparcar|aparcamiento|coches?|ordenador(?:es)?|(?<!telefonía )móvil(?:es)?"
+    r"|coger confianza|pisos?)\b", re.IGNORECASE)
+
+# Excepciones explicitas de R7, por cadena completa.
+EXENTAS_R7 = {
+    # 'der Stock': aqui 'piso' es la planta de un edificio, valido en todas partes
+    "el piso, la planta",
+    # nota que habla DE la variacion regional del espanol
+    "El español conoce, incluso dentro de América Latina, muchas palabras que cambian "
+    "según el país («computadora/ordenador», «plata/dinero») sin que una variante sea "
+    "incorrecta. En ese mismo sentido, palabras suizas como «Velo» o «Znüni» no son jerga, "
+    "sino formas del alemán estándar de Suiza.",
+    # interjeccion, no imperativo de 'ir'
+    "Vaya novedad.",
+    # filas formales en los SEIS idiomas (aleman 'Rufen Sie', frances 'Appelez',
+    # italiano 'Chiami'): el registro formal es el contenido que se ensena
+    "¡Llame a una ambulancia!",
+    "¡Llame a una ambulancia, por favor!",
+    "¡Pase, por favor!",
+}
 
 
 def textos_es(o, ruta=""):
@@ -167,6 +241,14 @@ def main():
             m = VOSEO.search(t)
             if m:
                 errores.append(f"R6 {nom}: voseo '{m.group(0)}' en: {t[:70]}")
+            if t in EXENTAS_R7:
+                continue
+            m = USTED_IMP.search(t)
+            if m:
+                errores.append(f"R7 {nom}: imperativo de usted '{m.group(2)}' en: {t[:70]}")
+            m = LEXICO_PENINSULAR.search(t)
+            if m:
+                errores.append(f"R7 {nom}: lexico peninsular '{m.group(0)}' en: {t[:70]}")
         for r in d.get("redemittel", []) if isinstance(d, dict) else []:
             for c in r.get("categoriasUso") or []:
                 usadas.add(c)

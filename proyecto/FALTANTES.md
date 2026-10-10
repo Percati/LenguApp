@@ -136,16 +136,62 @@ Ojo que son **dos ejes distintos** y solo uno está cerrado:
   neutro, en todos los niveles (no solo A2/B1). Incluye tres regionalismos de
   un solo país: `nomás` → «nada más», `el laburo` → «el trabajo» y
   `¿Te copás con…?` → «¿Te animas a…?». R6 pasó de 236 a 0.
-- **usted / tú (y *vous*/*Sie*/*Lei* en los otros idiomas): sigue abierto**,
-  tal como lo describe 6.1. El español del lote de prosa alemana todavía usa
-  usted («Hable»), y eso no es voseo, así que este pase no lo tocó.
+- **usted / tú dentro del español: cerrado** (ver 6.1.2).
+- **El trato en los otros idiomas (*vous*/*Sie*/*Lei*): sigue abierto**, tal
+  como lo describe 6.1. Este pase fue solo del español.
 
-No se tocó el léxico. El español del contenido mezcla glosas peninsulares
-(`el piso`, `el coche`, `el billete`, `el ordenador`, `el móvil`, `el
-camarero`, `el tío`) con el resto del material, y hay un `coger confianza` en
-`de-C2-2027-T08-1` que es vulgar en buena parte de América. Son decisiones de
-vocabulario con peso pedagógico, no de registro, así que entran en el pase de
-6.1 o en uno propio — pero conviene decidirlas antes de publicar.
+#### 6.1.2 — «usted» → «tú» y léxico neutro en español: ✅ hecho (Traducciones, 10-oct-2026)
+
+Decisión de Fer del 10-10-2026: **tú en todo**, también en la prosa de las
+fichas de alemán, y **lista corta** de léxico (no se reescribe el léxico
+entero). 319 cadenas en 94 archivos.
+
+**Tratamiento.** 232 cadenas pasaron de usted a tú: 180 de misión,
+micro-tareas y requisitos (casi todas en `ocurrencias/de-A2-2027.json` y
+`de-B1-2027.json`), 48 de `promptCorreccion`, y 4 que se habían escapado por
+tener el verbo detrás de una cursiva. No fue solo cambiar el imperativo: hubo
+que pasar también los posesivos (`su` → `tu`), los pronombres (`le` → `te`),
+los reflexivos de cortesía (`se perdió` → `te perdiste`) y los verbos del
+resto de la oración (`¿Cómo paga?` → `¿Cómo pagas?`).
+
+**Léxico aplicado:**
+
+| Término | Sustituto | Por qué |
+|---|---|---|
+| `piso` (vivienda) | `apartamento` | `piso` como vivienda es solo de España |
+| `compañero/a de piso` | `compañero/a de apartamento` | igual |
+| `billete` (transporte) | `boleto` | el más entendido en América; **el `billete` de dinero se dejó** |
+| `aparcar` | `estacionar` | `aparcar` es de España |
+| `coche` | `auto` | `coche` es de España (y en México es el tren) |
+| `ordenador` | `computadora` | `ordenador` es solo de España |
+| `móvil` (sustantivo) | `celular` | `móvil` como teléfono es de España |
+| `coger confianza` | `ganar confianza` | `coger` es vulgar en buena parte de América |
+
+**Lo que se dejó, a propósito:**
+
+- `camarero` (3): **no hay término neutro** — `mesero` en América, `mozo` en
+  el Río de la Plata, `camarero` en España. Si se prefiere la forma mayoritaria
+  de América, el cambio es a `mesero`; está sin hacer a propósito.
+- `vale` (14): en todo el contenido es el verbo *valer* («vale la pena»), no el
+  «¡vale!» de España.
+- `tío`/`tía` (4): aquí son el tío y la tía de la familia, no el «tío»
+  coloquial de España.
+- `billete` (2): traduce `der Schein` y `a note`, o sea dinero, y ahí sirve en
+  toda América.
+- `el piso, la planta`: traduce `der Stock`, es la planta de un edificio.
+- `acera`, `ascensor`, `ratón`: son los términos neutros.
+- **27 `usted`/`ustedes` de registro formal**, que son el contenido que se
+  enseña (Redemittel y ejemplos formales de queja, negociación y trato
+  `du`/`Sie`), más tres filas que están en registro formal en los **seis**
+  idiomas a la vez (alemán `Rufen Sie`, francés `Appelez`, italiano `Chiami`):
+  «¡Llame a una ambulancia!», «¡Llame a una ambulancia, por favor!» y
+  «¡Pase, por favor!». Y «Vaya novedad.», que es una interjección, no un
+  imperativo.
+
+**Regla R7** del verificador cubre las dos cosas (imperativo de usted en
+posición de imperativo, y la lista corta de léxico), con las excepciones
+explícitas en `EXENTAS_R7`. R6 además sumó las formas de *vosotros*, que
+aparecían una vez («como ya sabéis» → «como ya saben»).
 
 ## 7. Vocabulario atestiguado alemán — A1-C1 reconstruido, falta C2
 
