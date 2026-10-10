@@ -36,6 +36,7 @@ enum class ClaveTexto {
     BIBLIOTECA, BIBLIOTECA_BUSCAR, BIBLIOTECA_TEMA, BIBLIOTECA_SIN_CATEGORIA, BIBLIOTECA_FUNCIONES, BIBLIOTECA_PATRONES, BIBLIOTECA_VACIO,
     QUITAR_FILTROS, QUITAR,
     ORDENAR_POR, ORDEN_ALFABETICO, ORDEN_FECHA, ASCENDENTE, DESCENDENTE, QUITAR_ESTRELLA,
+    RETO_TITULO, RETO_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_ROTULO_MISION,
 }
 
 private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
@@ -199,6 +200,47 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
     ClaveTexto.DESAFIO_FINDE to mapOf(
         Idioma.ES to "Desafío de fin de semana", Idioma.EN to "Weekend challenge", Idioma.DE to "Wochenend-Herausforderung",
         Idioma.FR to "Défi du week-end", Idioma.IT to "Sfida del weekend", Idioma.PT to "Desafio de fim de semana",
+    ),
+    // --- Reto del fin de semana (Ronda E, tarea 4) ---
+    ClaveTexto.RETO_TITULO to mapOf(
+        Idioma.ES to "Reto del fin de semana",
+        Idioma.EN to "Weekend challenge",
+        Idioma.DE to "Wochenend-Challenge",
+        Idioma.FR to "Défi du week-end",
+        Idioma.IT to "Sfida del weekend",
+        Idioma.PT to "Desafio do fim de semana",
+    ),
+    ClaveTexto.RETO_LINEA to mapOf(
+        Idioma.ES to "La misión de la semana, pero en modo real.",
+        Idioma.EN to "This week's mission, but for real.",
+        Idioma.DE to "Die Wochenaufgabe, aber im Ernstfall.",
+        Idioma.FR to "La mission de la semaine, mais en conditions réelles.",
+        Idioma.IT to "La missione della settimana, ma in modalità reale.",
+        Idioma.PT to "A missão da semana, mas em modo real.",
+    ),
+    ClaveTexto.RETO_REGLAS_BASICO to mapOf(
+        Idioma.ES to "1. De corrido, sin leer.\n2. Una sola toma.\n3. Díselo a una persona o grábate en audio.\n4. Escúchalo: ¿se entiende? Repítelo una vez.",
+        Idioma.EN to "1. Out loud and fluently, without reading.\n2. One single take.\n3. Say it to a person, or record yourself.\n4. Listen back: is it clear? Do it once more.",
+        Idioma.DE to "1. Flüssig und ohne abzulesen.\n2. Nur ein Versuch.\n3. Sag es einer Person oder nimm dich auf.\n4. Hör es dir an: Ist es verständlich? Sprich es noch einmal.",
+        Idioma.FR to "1. D'un trait, sans lire.\n2. Une seule prise.\n3. Dites-le à quelqu'un ou enregistrez-vous.\n4. Écoutez-vous : est-ce compréhensible ? Recommencez une fois.",
+        Idioma.IT to "1. Di seguito, senza leggere.\n2. Una sola ripresa.\n3. Dillo a una persona o registrati.\n4. Riascoltati: si capisce? Ripetilo una volta.",
+        Idioma.PT to "1. De seguida, sem ler.\n2. Uma só gravação.\n3. Diga-o a uma pessoa ou grave-se em áudio.\n4. Ouça: percebe-se? Repita uma vez.",
+    ),
+    ClaveTexto.RETO_REGLAS_AVANZADO to mapOf(
+        Idioma.ES to "1. Sin notas, una sola toma de {oralMin} min.\n2. Cambia de interlocutor a mitad (de un amigo a tu jefe, o al revés).\n3. Grábate y apunta una cosa que mejorarías.\n4. Repite con ese cambio.",
+        Idioma.EN to "1. No notes, one single take of {oralMin} min.\n2. Switch listener halfway through (from a friend to your boss, or the other way round).\n3. Record yourself and note one thing you would improve.\n4. Do it again with that change.",
+        Idioma.DE to "1. Ohne Notizen, ein einziger Durchgang von {oralMin} Min.\n2. Wechsle in der Mitte das Gegenüber (von einem Freund zu einem Vorgesetzten, oder umgekehrt).\n3. Nimm dich auf und notiere eine Sache, die du verbessern würdest.\n4. Wiederhole es mit dieser Änderung.",
+        Idioma.FR to "1. Sans notes, en une seule prise de {oralMin} min.\n2. Changez d'interlocuteur à mi-parcours (d'un ami à votre supérieur, ou l'inverse).\n3. Enregistrez-vous et notez une chose à améliorer.\n4. Recommencez avec ce changement.",
+        Idioma.IT to "1. Senza appunti, una sola ripresa di {oralMin} min.\n2. Cambia interlocutore a metà (da un amico al tuo capo, o viceversa).\n3. Registrati e annota una cosa da migliorare.\n4. Ripeti con quel cambiamento.",
+        Idioma.PT to "1. Sem notas, numa só gravação de {oralMin} min.\n2. Mude de interlocutor a meio (de um amigo para o seu chefe, ou ao contrário).\n3. Grave-se e anote uma coisa a melhorar.\n4. Repita com essa mudança.",
+    ),
+    ClaveTexto.RETO_ROTULO_MISION to mapOf(
+        Idioma.ES to "La misión:",
+        Idioma.EN to "The mission:",
+        Idioma.DE to "Die Wochenaufgabe:",
+        Idioma.FR to "La mission :",
+        Idioma.IT to "La missione:",
+        Idioma.PT to "A missão:",
     ),
     // --- Textos fijos de la ficha que habian quedado en espanol ---
     ClaveTexto.SEMANA_REPASO to mapOf(
@@ -498,6 +540,20 @@ fun etiquetaFiltroTodos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.FILTR
 fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_VOCABULARIO, idiomaInterfaz)
 fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
+fun etiquetaRetoTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_TITULO, idiomaInterfaz)
+fun textoRetoLinea(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_LINEA, idiomaInterfaz)
+fun etiquetaRetoMision(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_ROTULO_MISION, idiomaInterfaz)
+
+/**
+ * Las reglas del reto del fin de semana, una por renglon, en el idioma de app. A2/B1:
+ * de corrido y sin leer; B2/C1/C2: sin notas, `oralMin` minutos, con cambio de
+ * interlocutor. `oralMin` ya viene redondeado (ver oralMinRedondeado).
+ */
+fun reglasReto(idiomaInterfaz: Idioma, nivel: Nivel, oralMin: Int): List<String> {
+    val basico = nivel == Nivel.A2 || nivel == Nivel.B1
+    val clave = if (basico) ClaveTexto.RETO_REGLAS_BASICO else ClaveTexto.RETO_REGLAS_AVANZADO
+    return interpolar(texto(clave, idiomaInterfaz), "oralMin" to oralMin.toString()).split('\n')
+}
 fun etiquetaSemanaRepaso(idioma: Idioma): String = texto(ClaveTexto.SEMANA_REPASO, idioma)
 fun etiquetaSemanaSurvival(idioma: Idioma): String = texto(ClaveTexto.SEMANA_SURVIVAL, idioma)
 fun etiquetaCopiarPortapapeles(idiomaInterfaz: Idioma): String = texto(ClaveTexto.COPIAR_PORTAPAPELES, idiomaInterfaz)

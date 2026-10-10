@@ -11,6 +11,9 @@ private const val MAX_ITEMS_PROMPT_VOZ = 6
 /** Minutos orales por defecto cuando la ficha no trae un `oralMin` utilizable. */
 private const val ORAL_MIN_POR_DEFECTO = 6
 
+/** Los minutos orales de la ficha redondeados a entero; 6 si no hay un valor utilizable. Lo usan el prompt de voz y el reto del fin de semana. */
+fun oralMinRedondeado(oralMin: Double): Int = Math.round(oralMin).toInt().takeIf { it > 0 } ?: ORAL_MIN_POR_DEFECTO
+
 /** Clave de plantilla para una ficha: "en-B2", "en-C1"... (idioma en minuscula + nivel). */
 fun clavePlantillaVoz(ficha: Ficha): String = "${ficha.idioma.name.lowercase()}-${ficha.nivel.name}"
 
@@ -40,7 +43,7 @@ fun promptVozPara(ficha: Ficha, plantillas: Map<String, String>): String? {
             .filter { it.isNotEmpty() }.joinToString(", "),
         "vocabulario" to ficha.vocabulario.filter { it.prioridad == Prioridad.NUCLEO }
             .take(MAX_ITEMS_PROMPT_VOZ).map { it.item.trim() }.filter { it.isNotEmpty() }.joinToString(", "),
-        "oralMin" to Math.round(ficha.evidencia.oralMin).toInt().takeIf { it > 0 }.let { (it ?: ORAL_MIN_POR_DEFECTO).toString() },
+        "oralMin" to oralMinRedondeado(ficha.evidencia.oralMin).toString(),
     )
 
     val patron = Regex("\\{(titulo|consigna|requisitos|expresiones|vocabulario|oralMin)\\}")

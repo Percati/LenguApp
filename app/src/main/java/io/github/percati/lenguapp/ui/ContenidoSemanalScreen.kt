@@ -59,6 +59,7 @@ import io.github.percati.lenguapp.modelo.VocabularioItem
 import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
 import io.github.percati.lenguapp.presentacion.contrasteParaMostrar
 import io.github.percati.lenguapp.presentacion.erroresParaMostrar
+import io.github.percati.lenguapp.presentacion.oralMinRedondeado
 import io.github.percati.lenguapp.presentacion.promptVozPara
 import io.github.percati.lenguapp.presentacion.traduccionParaMostrar
 import io.github.percati.lenguapp.semana.RazonSinContenido
@@ -76,6 +77,9 @@ import java.time.LocalDate
  * corte entre secciones se note sin una regla. Un separador tenue en color
  * secundario queda como ultimo recurso si esto no alcanza -- no aplicado.
  */
+/** Cuantos requisitos de la mision se muestran dentro del reto del fin de semana. */
+private const val MAX_REQUISITOS_RETO = 2
+
 private val ESPACIO_ENTRE_SECCIONES = 32.dp
 
 /** Separacion entre items de vocabulario / expresiones: mayor que la que hay DENTRO de un item (palabra + traduccion pegadas). */
@@ -252,15 +256,20 @@ private fun FichaContenido(
                 }
 
                 if (modoDesafio) {
-                    // El desafio no es contenido nuevo: reusa la mision de
-                    // esta ficha bajo otro encabezado -- mecanismo, no texto
-                    // (la redaccion final es de una conversacion de
-                    // contenido aparte). El resto de la ficha se oculta
-                    // mientras el desafio esta activo: "pasar al desafio",
-                    // no agregarlo como una seccion mas.
-                    Seccion(et("desafio")) {
-                        Text(m(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
-                        ficha.mision.requisitos.forEach { Vinieta(t(it), traduccionActiva) }
+                    // El reto no es contenido nuevo ni la mision repetida (REGLAS-PREVENCION
+                    // P4): es un ENCUADRE fijo que la hace "en vivo" -- una linea, las reglas
+                    // del reto segun el nivel y, al final y en chico, la consigna de la ficha
+                    // con solo sus dos primeros requisitos. Rotulos y reglas en el idioma de
+                    // app; la consigna, como el resto de la ficha. El resto de la ficha se
+                    // oculta mientras el reto esta activo.
+                    Seccion(etiquetaRetoTitulo(idiomaInterfaz)) {
+                        Text(textoRetoLinea(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge)
+                        reglasReto(idiomaInterfaz, ficha.nivel, oralMinRedondeado(ficha.evidencia.oralMin)).forEach {
+                            Text(it, style = MaterialTheme.typography.bodyMedium)
+                        }
+                        Text(etiquetaRetoMision(idiomaInterfaz), style = MaterialTheme.typography.labelLarge, fontWeight = FontWeight.Bold)
+                        Text(m(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodySmall)
+                        ficha.mision.requisitos.take(MAX_REQUISITOS_RETO).forEach { Vinieta(t(it), traduccionActiva) }
                     }
                 } else {
                     Text(m(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge)
