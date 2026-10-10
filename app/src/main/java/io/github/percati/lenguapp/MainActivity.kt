@@ -46,6 +46,7 @@ import io.github.percati.lenguapp.datos.cargarAjustes
 import io.github.percati.lenguapp.datos.PlanillaTextos
 import io.github.percati.lenguapp.datos.cargarContenidoDesdeAssets
 import io.github.percati.lenguapp.datos.cargarPlanillaTextosDesdeAssets
+import io.github.percati.lenguapp.datos.NombresI18n
 import io.github.percati.lenguapp.datos.cargarTopicNombresDesdeAssets
 import io.github.percati.lenguapp.modelo.SemanaEspecial
 import io.github.percati.lenguapp.pdf.abrirPlanilla
@@ -177,7 +178,7 @@ internal fun LenguAppApp(
     promptsVoz: Map<String, String> = emptyMap(),
     // Planilla del profesor: textos fijos por idioma que se aprende + nombres de topic (banco.json).
     planillaTextos: Map<Idioma, PlanillaTextos> = emptyMap(),
-    topicNombres: Map<String, String> = emptyMap(),
+    topicNombres: NombresI18n = NombresI18n(),
     categoriasUso: CategoriasUso = CategoriasUso(),
 ) {
     var ajustes by remember { mutableStateOf(ajustesIniciales) }
@@ -242,7 +243,7 @@ internal fun LenguAppApp(
             if (textos != null) {
                 scope.launch {
                     val archivo = withContext(Dispatchers.IO) {
-                        val planilla = construirPlanilla(contenido, textos, (contenido as? Ficha)?.let { topicNombres[it.topicId] })
+                        val planilla = construirPlanilla(contenido, textos, (contenido as? Ficha)?.let { topicNombres.nombre(it.topicId, idiomaAprendido) })
                         escribirPlanillaEnCache(contexto, contenido.id, planilla)
                     }
                     if (!abrirPlanilla(contexto, archivo)) {

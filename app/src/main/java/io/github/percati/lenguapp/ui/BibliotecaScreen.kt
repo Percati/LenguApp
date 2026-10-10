@@ -37,6 +37,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import io.github.percati.lenguapp.datos.CategoriasUso
+import io.github.percati.lenguapp.datos.NombresI18n
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.TipoGuardado
@@ -68,7 +69,7 @@ fun BibliotecaScreen(
     idiomasAprendidos: Map<Idioma, Nivel>,
     idiomaBase: Idioma,
     idiomaInterfaz: Idioma,
-    topicNombres: Map<String, String>,
+    topicNombres: NombresI18n,
     categorias: CategoriasUso,
     guardadas: Set<String>,
     onAlternar: (ItemBiblioteca) -> Unit,
@@ -150,13 +151,13 @@ fun BibliotecaScreen(
                         Text(etiquetaBibliotecaTema(idiomaInterfaz), style = MaterialTheme.typography.labelMedium)
                         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                             FilterChip(selected = topic == null, onClick = { topic = null }, label = { Text(etiquetaFiltroTodos(idiomaInterfaz)) })
-                            topicNombres.keys.sorted().forEach { id ->
-                                FilterChip(selected = topic == id, onClick = { topic = id }, label = { Text(topicNombres.getValue(id)) })
+                            topicNombres.claves.sorted().forEach { id ->
+                                FilterChip(selected = topic == id, onClick = { topic = id }, label = { Text(topicNombres.nombre(id, idiomaInterfaz)) })
                             }
                         }
                     } else {
-                        RamaCategorias(etiquetaBibliotecaFunciones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.funcionComunicativa, categoriasElegidas) { categoriasElegidas = it }
-                        RamaCategorias(etiquetaBibliotecaPatrones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.patronGramatical, categoriasElegidas) { categoriasElegidas = it }
+                        RamaCategorias(etiquetaBibliotecaFunciones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.funcionComunicativa, categoriasElegidas, { categorias.nombre(it, idiomaInterfaz) }) { categoriasElegidas = it }
+                        RamaCategorias(etiquetaBibliotecaPatrones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.patronGramatical, categoriasElegidas, { categorias.nombre(it, idiomaInterfaz) }) { categoriasElegidas = it }
                         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             FilterChip(
                                 selected = SIN_CATEGORIA in categoriasElegidas,
@@ -194,10 +195,10 @@ fun BibliotecaScreen(
 private fun alternarEn(conjunto: Set<String>, valor: String): Set<String> =
     if (valor in conjunto) conjunto - valor else conjunto + valor
 
-/** Una rama de la lista cerrada de categoriasUso, como una fila de chips con su titulo (los nombres, en espanol, tal cual). */
+/** Una rama de la lista cerrada de categoriasUso, como una fila de chips con su titulo (los nombres, en el idioma de app). */
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun RamaCategorias(titulo: String, etiquetaQuitar: String, valores: List<String>, elegidas: Set<String>, onCambio: (Set<String>) -> Unit) {
+private fun RamaCategorias(titulo: String, etiquetaQuitar: String, valores: List<String>, elegidas: Set<String>, nombre: (String) -> String, onCambio: (Set<String>) -> Unit) {
     if (valores.isEmpty()) return
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
@@ -208,7 +209,7 @@ private fun RamaCategorias(titulo: String, etiquetaQuitar: String, valores: List
         }
         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             valores.forEach { v ->
-                FilterChip(selected = v in elegidas, onClick = { onCambio(alternarEn(elegidas, v)) }, label = { Text(v) })
+                FilterChip(selected = v in elegidas, onClick = { onCambio(alternarEn(elegidas, v)) }, label = { Text(nombre(v)) })
             }
         }
     }

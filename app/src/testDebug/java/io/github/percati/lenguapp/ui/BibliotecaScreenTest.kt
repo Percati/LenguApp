@@ -8,6 +8,7 @@ import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import io.github.percati.lenguapp.datos.CategoriasUso
+import io.github.percati.lenguapp.datos.NombresI18n
 import io.github.percati.lenguapp.datos.parsearContenido
 import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
@@ -53,7 +54,7 @@ class BibliotecaScreenTest {
                 idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2),
                 idiomaBase = Idioma.ES,
                 idiomaInterfaz = Idioma.ES,
-                topicNombres = mapOf("T01" to "Tema uno"),
+                topicNombres = NombresI18n(mapOf("T01" to mapOf("es" to "Tema uno"))),
                 categorias = CategoriasUso(),
                 guardadas = guardadas,
                 onAlternar = onAlternar,
@@ -119,7 +120,7 @@ class BibliotecaScreenTest {
                 idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2),
                 idiomaBase = Idioma.ES,
                 idiomaInterfaz = Idioma.ES,
-                topicNombres = mapOf("T01" to "Tema uno"),
+                topicNombres = NombresI18n(mapOf("T01" to mapOf("es" to "Tema uno"))),
                 categorias = CategoriasUso(funcionComunicativa = listOf("Pedir", "Sugerir")),
                 guardadas = emptySet(),
                 onAlternar = {},

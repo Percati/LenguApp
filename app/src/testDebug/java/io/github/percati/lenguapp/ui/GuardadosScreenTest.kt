@@ -12,6 +12,7 @@ import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import io.github.percati.lenguapp.datos.CategoriasUso
+import io.github.percati.lenguapp.datos.NombresI18n
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.ItemGuardado
 import io.github.percati.lenguapp.modelo.Nivel
@@ -79,7 +80,7 @@ class GuardadosScreenTest {
                 idiomasAprendidos = idiomasAprendidos,
                 idiomaBase = Idioma.ES,
                 idiomaInterfaz = Idioma.ES,
-                topicNombres = mapOf("T01" to "Tema uno", "T02" to "Tema dos"),
+                topicNombres = NombresI18n(mapOf("T01" to mapOf("es" to "Tema uno"), "T02" to mapOf("es" to "Tema dos"))),
                 categoriasUso = CategoriasUso(funcionComunicativa = listOf("Agradecer", "Pedir")),
                 existeFichaOrigen = { true },
                 onAbrirFicha = {},
@@ -120,7 +121,7 @@ class GuardadosScreenTest {
                 idiomasAprendidos = setOf(Idioma.DE),
                 idiomaBase = Idioma.ES,
                 idiomaInterfaz = Idioma.ES,
-                topicNombres = emptyMap(),
+                topicNombres = NombresI18n(),
                 categoriasUso = CategoriasUso(),
                 existeFichaOrigen = { true },
                 onAbrirFicha = {},

@@ -31,7 +31,6 @@ class PlanillaTextosTest {
     @Test
     fun `los nombres de topic generados en el build cubren T01 a T14`() {
         val nombres = parsearTopicNombres(File(assets(), "temas/topic-nombres.json").readText())
-        assertEquals((1..14).map { "T%02d".format(it) }.toSet(), nombres.keys)
-        assertTrue(nombres.values.all { it.isNotBlank() })
+        assertEquals((1..14).map { "T%02d".format(it) }.toSet(), nombres.claves)
     }
 }

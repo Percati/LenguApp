@@ -56,11 +56,15 @@ fun cargarPlanillaTextosDesdeAssets(context: Context): Map<Idioma, PlanillaTexto
         context.assets.open(RUTA_PLANILLA).bufferedReader().use { parsearPlanillaTextos(it.readText()) }
     }.getOrDefault(emptyMap())
 
-/** {"T01": "Trabajo y carrera", ...}. Solo en espanol por ahora (banco.json). */
-fun parsearTopicNombres(texto: String): Map<String, String> =
-    jsonSinEstricto.decodeFromString(texto)
+/**
+ * {"T01": {"es": "Trabajo y carrera", "en": "Work and career", ...}, ...}: `topicNombresI18n`
+ * de banco.json, extraido por Gradle a assets/temas/topic-nombres.json. (El `topicNombres`
+ * solo en espanol queda en banco.json para las herramientas; la app no lo usa.)
+ */
+fun parsearTopicNombres(texto: String): NombresI18n =
+    NombresI18n(jsonSinEstricto.decodeFromString<Map<String, Map<String, String>>>(texto))
 
-fun cargarTopicNombresDesdeAssets(context: Context): Map<String, String> =
+fun cargarTopicNombresDesdeAssets(context: Context): NombresI18n =
     runCatching {
         context.assets.open(RUTA_TOPIC_NOMBRES).bufferedReader().use { parsearTopicNombres(it.readText()) }
-    }.getOrDefault(emptyMap())
+    }.getOrDefault(NombresI18n())

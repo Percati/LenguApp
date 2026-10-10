@@ -31,6 +31,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
 import io.github.percati.lenguapp.datos.CategoriasUso
+import io.github.percati.lenguapp.datos.NombresI18n
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.ItemGuardado
 import io.github.percati.lenguapp.modelo.Nivel
@@ -71,7 +72,7 @@ fun GuardadosScreen(
     idiomasAprendidos: Set<Idioma>,
     idiomaBase: Idioma,
     idiomaInterfaz: Idioma,
-    topicNombres: Map<String, String>,
+    topicNombres: NombresI18n,
     categoriasUso: CategoriasUso,
     // false cuando el contenido de esa semana/edicion ya no esta en
     // assets/contenido/ de la build actual (una edicion anterior, por
@@ -209,7 +210,7 @@ private fun FacetaTopic(
     items: List<ItemGuardado>,
     filtros: FiltrosGuardados,
     indice: Map<Triple<Idioma, TipoGuardado, String>, ItemBiblioteca>,
-    topicNombres: Map<String, String>,
+    topicNombres: NombresI18n,
     idiomaInterfaz: Idioma,
     onElegir: (String?) -> Unit,
 ) {
@@ -221,7 +222,7 @@ private fun FacetaTopic(
         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             FilterChip(selected = filtros.topic == null, onClick = { onElegir(null) }, label = { Text("${etiquetaFiltroTodos(idiomaInterfaz)} ($total)") })
             opciones.keys.sorted().forEach { id ->
-                val nombre = topicNombres[id] ?: id
+                val nombre = topicNombres.nombre(id, idiomaInterfaz)
                 FilterChip(selected = filtros.topic == id, onClick = { onElegir(id) }, label = { Text("$nombre (${opciones.getValue(id)})") })
             }
         }
@@ -249,7 +250,7 @@ private fun FacetaCategoria(
         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             FilterChip(selected = filtros.categoria == null, onClick = { onElegir(null) }, label = { Text("${etiquetaFiltroTodos(idiomaInterfaz)} ($total)") })
             valoresOrdenados.forEach { cat ->
-                FilterChip(selected = filtros.categoria == cat, onClick = { onElegir(cat) }, label = { Text("$cat (${opciones.getValue(cat)})") })
+                FilterChip(selected = filtros.categoria == cat, onClick = { onElegir(cat) }, label = { Text("${categoriasUso.nombre(cat, idiomaInterfaz)} (${opciones.getValue(cat)})") })
             }
         }
     }
