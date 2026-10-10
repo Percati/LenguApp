@@ -806,7 +806,7 @@
     },
     "erroresContrastivos": {
       "type": "object",
-      "description": "Errores tipicos ADICIONALES segun la lengua base del usuario. Los errores de un anglohablante que aprende aleman no son los de un hispanohablante, asi que esta seccion depende del par (lengua que se aprende, lengua base). El campo 'errores' sigue siendo el universal; este se suma, no lo reemplaza.",
+      "description": "Errores tipicos ADICIONALES segun la lengua base del usuario. Los errores de un anglohablante que aprende aleman no son los de un hispanohablante, asi que esta seccion depende del par (lengua que se aprende, lengua base). El campo 'errores' sigue siendo el universal; este se suma, no lo reemplaza. En A2 y B1 cada item es un objeto {idioma_que_se_aprende: original, idioma_de_la_clave: traduccion} (la clave de erroresContrastivos ES el idioma de app, asi que la traduccion va siempre a ese idioma); en B2/C1/C2 sigue siendo un string en el idioma que se aprende. Decision de Fer del 10-10-2026: revierte para A2/B1 la regla 'los errores no llevan traduccion' del 16-09-2026.",
       "propertyNames": {
         "enum": [
           "es",
@@ -820,8 +820,32 @@
       "additionalProperties": {
         "type": "array",
         "items": {
-          "type": "string",
-          "minLength": 10
+          "oneOf": [
+            {
+              "type": "string",
+              "minLength": 10
+            },
+            {
+              "type": "object",
+              "minProperties": 2,
+              "maxProperties": 2,
+              "propertyNames": {
+                "enum": [
+                  "es",
+                  "en",
+                  "de",
+                  "fr",
+                  "it",
+                  "pt"
+                ]
+              },
+              "additionalProperties": {
+                "type": "string",
+                "minLength": 5,
+                "maxLength": 400
+              }
+            }
+          ]
         }
       }
     }

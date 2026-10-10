@@ -584,3 +584,39 @@ El parche de Overview (`e131886f`, assets regenerados tras el marcado « ») ya 
 - Quedan voseos en contenido (p. ej. `¿Elegí …?` en autochequeos de `DE-F13-B1-2027-*`, `REVIEW-*-B1-2027-*`): es de Contrastes/Traducciones.
 - Hay textos en español hardcodeados fuera de `TextosInterfaz`: `MainActivity.kt` (`SinIdiomaSeleccionado`) y el widget (`SemanaGlanceWidget.kt`, "Elegí un idioma en Ajustes.").
 - Casos de datos que no se pueden decidir por regla: un `*x*` suelto en texto traducido podría ser ajeno al idioma de la línea sin « »; en las tres fichas muestreadas no aparece.
+
+## 19. Revisión del 10-oct-2026 (feedback de uso de Fer) — reglas de prevención
+
+Fer encontró cinco defectos en alemán B1 y la planilla. Causas verificadas:
+
+| Defecto | Causa real | Dónde se arregla |
+|---|---|---|
+| Desafío del finde igual a la misión | La app reutilizaba la misión tal cual; el texto propio «era de otra conversación» y nunca se escribió | Code, tarea 4 de Ronda E (encuadre fijo, no 600 textos nuevos) |
+| Último error común sin traducir (DE B1) | `erroresContrastivos` es string en el idioma aprendido en TODOS los niveles; en A2/B1 es el único campo de prosa sin forma bilingüe (481 ítems en 95 núcleos; el resto de A2/B1 está completo, verificado) | Esquema (hecho), Traducciones (prompt 10), Code tarea 5 |
+| Filtros de Biblioteca vacíos | Los chips de topic y de categoría salían de listas fijas (14 topics, 33 categorías) en vez de los ítems del idioma. Hoy «Caso y declinación» está vacío en todo inglés | Code, tarea 3 |
+| Topic de la planilla en español | `topicNombres` solo existe en español | Hecho en datos: `topicNombresI18n` y `categorias-uso.json › nombres`, 6 idiomas; Code tarea 1 y 2 los usa |
+| Planilla a 2 carillas con 3 líneas | Sin regla de compactación | Code, tarea 2 |
+
+**Decisión de Fer que se revierte:** los errores típicos ya no «no llevan traducción» en A2/B1 (decisión del 16-09-2026). En B2+ no cambia.
+
+**Nuevo en el repo (parche de Overview):** `REGLAS-PREVENCION.md` (8 reglas, idioma de salida por superficie, checklist para sumar un idioma), regla dura 14 en ambos `CLAUDE.md`, `tools/verificar_consistencia.py` (R1 bilingüe A2/B1, R2 nombres en 6 idiomas, R3 textos de planilla, R4 « » balanceados, R5 categorías en la lista cerrada; hoy falla solo R1 con 1210 apariciones = la deuda de arriba), `publicacion/` (textos de tienda es/en/de en formato fastlane + LEEME), `docs/inspiracion-ui.md`, prompts 10 y 11.
+
+**Orden de pasos (secuencial, uno por vez):**
+1. Aplicar el parche de Overview.
+2. Traducciones: `prompts/10-traducciones-errores-contrastivos.md`.
+3. Avisar a Overview para regenerar assets.
+4. Code: `prompts/11-code-ronda-e.md` (7 tareas, la última engancha el verificador al build, por eso va después del paso 2).
+
+**Pendientes por cerrar:**
+- Pasos 2 a 4 de arriba.
+- Probar el APK 0.2.0 en el teléfono: planilla (PDF real), prompt de voz con Claude y ChatGPT, Guardados, instalación encima de la versión anterior.
+- Dirección visual: ícono, pantalla de carga y UI (Fer elige referencias en `docs/inspiracion-ui.md`).
+- Publicación: capturas, textos fr/it/pt, nombre definitivo, verificar que «A2 a C2» sea verdad para todos los pares.
+- 273 expresiones sin categoría (221 por hueco de taxonomía léxica: decisión pendiente).
+- Tuteo unificado (6.1) y sumar español: hacerlo con la checklist de la sección 3 de `REGLAS-PREVENCION.md`.
+- Contenido: resto de 2027 y 2028 (packs, apariciones, audio, traducciones); app única o una por idioma (APK ~60 MB, 90 % audio).
+
+**Recomendaciones (cortas):**
+- Agregar integración continua en el repositorio (componer + verificador + tests en cada push): hoy depende de que alguien corra los comandos.
+- Un test de «matriz de superficies» (idioma aprendido × idioma de app × pantalla) que falle ante texto en el idioma equivocado, para no depender de que Fer lo encuentre a mano.
+- Antes de sumar español, ejecutar la checklist completa con un par de prueba (ES A2 o B1 con app en inglés) en una rama.
