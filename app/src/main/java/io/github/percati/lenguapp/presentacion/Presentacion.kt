@@ -68,12 +68,15 @@ fun Map<String, TextoBilingue>?.contrasteParaMostrar(
  */
 fun erroresParaMostrar(
     errores: List<String>,
-    erroresContrastivos: Map<String, List<String>>?,
+    erroresContrastivos: Map<String, List<TextoBilingue>>?,
     idiomaAprendido: Idioma,
     idiomaBase: Idioma,
+    // Con el switch de traduccion activo (A2/B1) se muestra la traduccion (la clave del
+    // idioma de app); apagado, el original. Un string plano (B2+) sale igual en ambos casos.
+    texto: (TextoBilingue) -> String = { it.resolver(idiomaBase, idiomaAprendido) },
 ): List<String> {
     if (idiomaAprendido == idiomaBase) return errores
-    val adicionales = erroresContrastivos?.get(idiomaBase.name.lowercase()).orEmpty()
+    val adicionales = erroresContrastivos?.get(idiomaBase.name.lowercase()).orEmpty().map(texto)
     return errores + adicionales
 }
 

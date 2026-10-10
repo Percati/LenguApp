@@ -80,4 +80,18 @@ class MarcadoPantallaRealTest {
         // cita inglesa a mano: solo `would` va entre « ».
         assertTrue(todo, todo.contains("würde auch im wenn-Satz setzen, parallel zu «would»."))
     }
+
+    @Test
+    fun `DE B1 con la app en espanol, con el switch activo el error contrastivo sale en espanol, apagado en aleman`() {
+        val ficha = ficha("DE-F13-B1-2027-1")
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES) }
+        fun todo() = textosEnPantalla().joinToString(" | ")
+        assertTrue(todo(), todo().contains("Trasladar «Señor» con el nombre de pila"))
+        assertTrue(todo(), !todo().contains("mit dem Vornamen übertragen"))
+
+        composeTestRule.onAllNodes(hasText("Traducir", substring = true))[0].performClick()
+        composeTestRule.waitForIdle()
+        assertTrue(todo(), todo().contains("mit dem Vornamen übertragen"))
+        assertTrue(todo(), !todo().contains("Trasladar «Señor» con el nombre de pila"))
+    }
 }

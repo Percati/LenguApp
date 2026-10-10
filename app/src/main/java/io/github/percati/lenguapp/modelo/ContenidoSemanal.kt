@@ -157,7 +157,8 @@ data class Ficha(
     // anglohablante que aprende aleman no son los de un hispanohablante):
     // se suman a errores, no lo reemplazan. Ausente si no hay ninguno
     // escrito para ese par (idioma que se aprende, lengua base).
-    val erroresContrastivos: Map<String, List<String>>? = null,
+    // A2/B1: cada item es {idioma que se aprende: original, idioma de la clave: traduccion}; B2+: string plano.
+    val erroresContrastivos: Map<String, List<TextoBilingue>>? = null,
     val vocabulario: List<VocabularioItem>,
     val redemittel: List<RedemittelItem>,
     val mision: Mision,

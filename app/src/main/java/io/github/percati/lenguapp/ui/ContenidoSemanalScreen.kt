@@ -309,9 +309,10 @@ private fun FichaContenido(
                         // Los errores contrastivos son los de la lengua base
                         // (idiomaBase), no los del idioma que el switch muestra.
                         ficha.errores.forEach { Vinieta(t(it), traduccionActiva) }
-                        // Estas lineas estan escritas en el idioma que se aprende (con las
-                        // citas ajenas ya entre « » a mano), como el contraste: sin angulares.
-                        erroresParaMostrar(emptyList(), ficha.erroresContrastivos, ficha.idioma, idiomaBase)
+                        // En A2/B1 cada item es bilingue: traduccion con el switch activo,
+                        // original apagado (t()); en B2+ es el string plano. Las citas ajenas
+                        // ya vienen entre « » a mano, como en el contraste: sin angulares.
+                        erroresParaMostrar(emptyList(), ficha.erroresContrastivos, ficha.idioma, idiomaBase, t)
                             .forEach { Vinieta(it) }
                     }
 

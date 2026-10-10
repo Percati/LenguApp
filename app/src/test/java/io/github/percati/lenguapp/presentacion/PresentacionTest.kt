@@ -146,7 +146,7 @@ class PresentacionTest {
     @Test
     fun `con erroresContrastivos para el idioma base, se agregan al final de los universales`() {
         val universales = listOf("universal 1", "universal 2")
-        val contrastivos = mapOf("en" to listOf("solo para anglohablantes"))
+        val contrastivos = mapOf("en" to listOf(TextoBilingue.de("solo para anglohablantes")))
         assertEquals(
             listOf("universal 1", "universal 2", "solo para anglohablantes"),
             erroresParaMostrar(universales, contrastivos, Idioma.DE, Idioma.EN),
@@ -156,14 +156,14 @@ class PresentacionTest {
     @Test
     fun `erroresContrastivos de otro idioma base NO se mezclan -- mismo criterio que el contraste`() {
         val universales = listOf("universal 1")
-        val contrastivos = mapOf("en" to listOf("solo para anglohablantes"))
+        val contrastivos = mapOf("en" to listOf(TextoBilingue.de("solo para anglohablantes")))
         assertEquals(universales, erroresParaMostrar(universales, contrastivos, Idioma.DE, Idioma.FR))
     }
 
     @Test
     fun `erroresContrastivos no aporta nada si el idioma que se aprende coincide con el base`() {
         val universales = listOf("universal 1")
-        val contrastivos = mapOf("de" to listOf("no deberia poder pasar esto"))
+        val contrastivos = mapOf("de" to listOf(TextoBilingue.de("no deberia poder pasar esto")))
         assertEquals(universales, erroresParaMostrar(universales, contrastivos, Idioma.DE, Idioma.DE))
     }
 }
