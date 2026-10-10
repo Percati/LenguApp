@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Nombre propio: igual en todos los idiomas. -->
     <string name="app_name">LenguApp</string>
-    <string name="widget_descripcion">Muestra el skill y el tema de la semana actual</string>
+    <!-- Ingles = idioma de respaldo; values-es/de/fr/it/pt traen el resto. -->
+    <string name="widget_descripcion">Shows this week\'s skill and topic</string>
 </resources>
