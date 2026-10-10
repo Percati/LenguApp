@@ -43,6 +43,7 @@ import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.TipoGuardado
 import io.github.percati.lenguapp.modelo.resolver
 import io.github.percati.lenguapp.presentacion.ItemBiblioteca
+import io.github.percati.lenguapp.presentacion.datosFila
 import io.github.percati.lenguapp.presentacion.SIN_CATEGORIA
 import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
 import io.github.percati.lenguapp.presentacion.categoriasDelIdioma
@@ -234,36 +235,16 @@ private fun RamaCategorias(titulo: String, etiquetaQuitar: String, valores: List
 
 @Composable
 private fun FilaBiblioteca(item: ItemBiblioteca, idiomaBase: Idioma, guardada: Boolean, onAlternar: () -> Unit) {
-    val traduccion = item.vocabulario?.traduccionParaMostrar(idiomaBase)
-        ?: when (val t = item.redemittel?.traduccionParaMostrar(idiomaBase)) {
-            is TraduccionRedemittel.Disponible -> t.texto
-            else -> "—"
-        }
-    Surface(shape = RoundedCornerShape(8.dp), color = MaterialTheme.colorScheme.surfaceVariant, modifier = Modifier.fillMaxWidth()) {
-        Row(Modifier.padding(start = 12.dp, top = 8.dp, bottom = 8.dp, end = 4.dp), verticalAlignment = Alignment.CenterVertically) {
-            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                Text(item.texto, style = MaterialTheme.typography.bodyLarge)
-                // La traduccion esta en idiomaBase: una cita *entre asteriscos* ahi
-                // adentro es, como en la ficha, una palabra del idioma que se
-                // aprende que quedo sin traducir -- misma regla que m() en
-                // ContenidoSemanalScreen (textoConMarcado, angulares cuando los
-                // idiomas difieren).
-                Text(textoConMarcado(traduccion, angulares = item.idioma != idiomaBase), style = MaterialTheme.typography.bodyMedium)
-                item.funcion?.let {
-                    Text(
-                        textoConMarcado(it.resolver(item.idioma, item.idioma)),
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    )
-                }
-            }
-            IconButton(onClick = onAlternar, modifier = Modifier.size(40.dp).testTag(TAG_ESTRELLA_BIBLIOTECA)) {
-                Icon(
-                    if (guardada) Icons.Filled.Star else Icons.Outlined.StarBorder,
-                    contentDescription = null,
-                    tint = if (guardada) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            }
-        }
-    }
+    val d = item.datosFila(idiomaBase)
+    FilaPalabra(
+        original = d.original,
+        traduccion = d.traduccion,
+        funcion = d.funcion,
+        idiomaAprendido = item.idioma,
+        idiomaBase = idiomaBase,
+        guardada = guardada,
+        tagEstrella = TAG_ESTRELLA_BIBLIOTECA,
+        descripcionEstrella = null,
+        onEstrella = onAlternar,
+    )
 }

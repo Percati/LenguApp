@@ -8,6 +8,10 @@ import io.github.percati.lenguapp.datos.parsearPlanillaTextos
 import io.github.percati.lenguapp.datos.parsearPlantillasPromptVoz
 import io.github.percati.lenguapp.datos.parsearTopicNombres
 import io.github.percati.lenguapp.modelo.Ficha
+import io.github.percati.lenguapp.modelo.ItemGuardado
+import io.github.percati.lenguapp.modelo.TextoBilingue
+import io.github.percati.lenguapp.modelo.TipoGuardado
+import io.github.percati.lenguapp.modelo.aTextoBilingue
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.resolver
@@ -200,5 +204,58 @@ class MatrizSuperficiesTest {
             assertNotNull(prompt)
             assertTrue(prompt!!.contains(f.titulo.resolver(aprendido, aprendido).trim()))
         }
+    }
+
+    // --- Fila de Guardados (Ronda F2, tarea 1): original + traduccion al idioma de app + funcion en idioma aprendido ---
+
+    @Test
+    fun `la fila de Guardados muestra original, traduccion en idioma de app y funcion en idioma aprendido`() = matriz { aprendido, app, nivel, f ->
+        val enBiblioteca = construirBiblioteca(listOf(f))
+        val v = f.vocabulario.first()
+        val r = f.redemittel.first()
+        val gV = ItemGuardado(idioma = aprendido, nivel = nivel, tipo = TipoGuardado.VOCABULARIO, texto = v.aTextoBilingue(aprendido), skillIdOrigen = f.skillId)
+        val gR = ItemGuardado(idioma = aprendido, nivel = nivel, tipo = TipoGuardado.EXPRESION, texto = r.aTextoBilingue(aprendido), funcion = r.funcion, skillIdOrigen = f.skillId)
+
+        val dV = gV.datosFila(app)
+        assertEquals("$aprendido $nivel app=$app", v.item, dV.original)
+        val esperadaV = (v.traducciones[codigo(app)]?.takeIf { it.isNotBlank() } ?: v.traducciones["es"]?.takeIf { it.isNotBlank() })?.takeIf { it != v.item }
+        assertEquals(esperadaV, dV.traduccion)
+        assertNull("el vocabulario no tiene funcion", dV.funcion)
+
+        val dR = gR.datosFila(app)
+        assertEquals(r.expresion, dR.original)
+        val propia = r.traducciones[codigo(app)]?.takeIf { it.isNotBlank() } ?: r.traducciones["es"]?.takeIf { it.isNotBlank() }
+        assertEquals(propia?.takeIf { it != r.expresion }, dR.traduccion)
+        assertEquals(r.funcion.resolver(aprendido, aprendido).trim().takeIf { it.isNotEmpty() }, dR.funcion)
+
+        // y es EXACTAMENTE lo que muestra la Biblioteca
+        val bV = enBiblioteca.first { it.tipo == TipoGuardado.VOCABULARIO && it.texto == v.item }.datosFila(app)
+        val bR = enBiblioteca.first { it.tipo == TipoGuardado.EXPRESION && it.texto == r.expresion }.datosFila(app)
+        assertEquals(bV, dV)
+        assertEquals(bR, dR)
+    }
+
+    @Test
+    fun `un guardado sin traduccion omite la linea, y uno sin funcion tambien`() {
+        val sin = ItemGuardado(idioma = Idioma.DE, nivel = Nivel.B2, tipo = TipoGuardado.EXPRESION,
+            texto = TextoBilingue(porIdioma = mapOf("de" to "sowieso")), funcion = TextoBilingue(plano = "   "), skillIdOrigen = "DE-V01")
+        for (app in Idioma.entries) {
+            val d = sin.datosFila(app)
+            assertEquals("sowieso", d.original)
+            assertNull("no se repite el original ni se muestra un hueco", d.traduccion)
+            assertNull("funcion en blanco se omite", d.funcion)
+        }
+    }
+
+    @Test
+    fun `lo que se guarda en Room ya trae original y traducciones, no hace falta migrar`() {
+        // El snapshot es aTextoBilingue(): la palabra bajo la clave del idioma aprendido + traducciones.
+        val f = fichas.first { it.idioma == Idioma.EN && it.nivel == Nivel.B1 }
+        val v = f.vocabulario.first { (it.traducciones["es"] ?: "").isNotBlank() }
+        val snapshot = v.aTextoBilingue(Idioma.EN)
+        assertEquals(v.item, snapshot.porIdioma["en"])
+        assertEquals(v.traducciones.getValue("es"), snapshot.porIdioma["es"])
+        val g = ItemGuardado(idioma = Idioma.EN, nivel = Nivel.B1, tipo = TipoGuardado.VOCABULARIO, texto = snapshot, skillIdOrigen = f.skillId)
+        assertEquals(DatosFila(v.item, v.traducciones.getValue("es"), null), g.datosFila(Idioma.ES))
     }
 }

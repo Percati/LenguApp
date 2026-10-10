@@ -114,14 +114,13 @@ fun List<ItemGuardado>.opcionesCategoria(filtros: FiltrosGuardados, indice: Map<
 }
 
 /**
- * Orden, en el idioma de app para el alfabetico (el mismo texto que se ve en
- * la fila). FECHA usa el id de Room: autoincremental, asi que mas alto es
+ * Orden; el alfabetico es por el original en el idioma que se aprende (la primera linea de la fila). FECHA usa el id de Room: autoincremental, asi que mas alto es
  * mas reciente -- igual que "fecha de guardado, mas reciente primero" sin
  * necesitar un campo de fecha propio.
  */
 fun List<ItemGuardado>.ordenar(criterio: CriterioOrdenGuardados, direccion: DireccionOrden, idiomaBase: Idioma): List<ItemGuardado> {
     val comparador: Comparator<ItemGuardado> = when (criterio) {
-        CriterioOrdenGuardados.ALFABETICO -> compareBy { it.texto.resolver(idiomaBase, it.idioma).lowercase() }
+        CriterioOrdenGuardados.ALFABETICO -> compareBy { it.textoOrigen().lowercase() }
         CriterioOrdenGuardados.NIVEL -> compareBy { it.nivel }
         CriterioOrdenGuardados.FECHA -> compareBy { it.id }
         CriterioOrdenGuardados.TIPO -> compareBy { it.tipo }

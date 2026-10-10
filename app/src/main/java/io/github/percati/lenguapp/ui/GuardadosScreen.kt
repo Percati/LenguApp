@@ -41,6 +41,7 @@ import io.github.percati.lenguapp.presentacion.CriterioOrdenGuardados
 import io.github.percati.lenguapp.presentacion.DireccionOrden
 import io.github.percati.lenguapp.presentacion.FiltrosGuardados
 import io.github.percati.lenguapp.presentacion.ItemBiblioteca
+import io.github.percati.lenguapp.presentacion.datosFila
 import io.github.percati.lenguapp.presentacion.delIdioma
 import io.github.percati.lenguapp.presentacion.filtrarCascada
 import io.github.percati.lenguapp.presentacion.indiceBiblioteca
@@ -281,39 +282,18 @@ private fun FilaOrden(
 
 @Composable
 private fun FilaGuardado(item: ItemGuardado, idiomaBase: Idioma, idiomaInterfaz: Idioma, enlazable: Boolean, onClick: () -> Unit, onQuitar: () -> Unit) {
-    Surface(shape = RoundedCornerShape(8.dp), color = MaterialTheme.colorScheme.surfaceVariant) {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Column(
-                (if (enlazable) Modifier.clickable(onClick = onClick) else Modifier)
-                    .weight(1f).padding(12.dp),
-                verticalArrangement = Arrangement.spacedBy(4.dp),
-            ) {
-                // resolver() prefiere idiomaBase: si difiere del idioma aprendido, lo que
-                // se muestra puede ser una traduccion con una cita *entre asteriscos* del
-                // idioma que se aprende sin traducir -- misma regla que en la ficha
-                // (ContenidoSemanalScreen, textoConMarcado con angulares).
-                val angulares = idiomaBase != item.idioma
-                Text(textoConMarcado(item.texto.resolver(idiomaBase, item.idioma), angulares), style = MaterialTheme.typography.bodyLarge)
-                item.funcion?.let {
-                    Text(
-                        textoConMarcado(it.resolver(idiomaBase, item.idioma), angulares),
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    )
-                }
-                Text(
-                    "${item.idioma.name} · ${item.nivel.name} · ${item.skillIdOrigen}",
-                    style = MaterialTheme.typography.labelSmall,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            }
-            IconButton(onClick = onQuitar, modifier = Modifier.size(40.dp).padding(end = 8.dp).testTag(TAG_ESTRELLA_GUARDADOS)) {
-                Icon(
-                    Icons.Filled.Star,
-                    contentDescription = etiquetaQuitarEstrella(idiomaInterfaz),
-                    tint = MaterialTheme.colorScheme.primary,
-                )
-            }
-        }
-    }
+    // La misma fila que la Biblioteca (ui/FilaPalabra.kt): original, traduccion y funcion; solo cambia la estrella.
+    val d = item.datosFila(idiomaBase)
+    FilaPalabra(
+        original = d.original,
+        traduccion = d.traduccion,
+        funcion = d.funcion,
+        idiomaAprendido = item.idioma,
+        idiomaBase = idiomaBase,
+        guardada = true,
+        tagEstrella = TAG_ESTRELLA_GUARDADOS,
+        descripcionEstrella = etiquetaQuitarEstrella(idiomaInterfaz),
+        onEstrella = onQuitar,
+        onClick = if (enlazable) onClick else null,
+    )
 }

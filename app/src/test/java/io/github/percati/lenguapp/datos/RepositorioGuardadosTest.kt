@@ -3,6 +3,7 @@ package io.github.percati.lenguapp.datos
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.presentacion.datosFila
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.TextoBilingue
 import io.github.percati.lenguapp.modelo.TipoGuardado
@@ -95,5 +96,19 @@ class RepositorioGuardadosTest {
         repo.alternar(Idioma.EN, Nivel.B2, TipoGuardado.VOCABULARIO, "Tag", t, null, "EN-V02")
         repo.alternar(Idioma.DE, Nivel.B2, TipoGuardado.EXPRESION, "Tag", t, null, "DE-V02")
         assertEquals(3, repo.listar().size)
+    }
+
+    @Test
+    fun `lo guardado en Room se muestra con original, traduccion y funcion sin migrar nada`() = runBlocking {
+        val repo = repositorio()
+        val texto = TextoBilingue(porIdioma = mapOf("en" to "I'd say", "es" to "yo diría", "de" to "ich würde sagen"))
+        val funcion = TextoBilingue(porIdioma = mapOf("en" to "softening an opinion", "es" to "suavizar una opinión"))
+        repo.alternar(Idioma.EN, Nivel.B2, TipoGuardado.EXPRESION, "I'd say", texto, funcion, "EN-V05")
+
+        val d = repo.listar().single().datosFila(Idioma.ES)
+        assertEquals("I'd say", d.original)
+        assertEquals("yo diría", d.traduccion)
+        assertEquals("softening an opinion", d.funcion) // siempre en el idioma que se aprende
+        assertEquals("ich würde sagen", repo.listar().single().datosFila(Idioma.DE).traduccion)
     }
 }
