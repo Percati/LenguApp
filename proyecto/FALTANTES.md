@@ -616,6 +616,24 @@ Fer encontró cinco defectos en alemán B1 y la planilla. Causas verificadas:
 - Tuteo unificado (6.1) y sumar español: hacerlo con la checklist de la sección 3 de `REGLAS-PREVENCION.md`.
 - Contenido: resto de 2027 y 2028 (packs, apariciones, audio, traducciones); app única o una por idioma (APK ~60 MB, 90 % audio).
 
+## 20. `erroresContrastivos` bilingüe en A2/B1 — ✅ hecho (Traducciones, 10-oct-2026)
+
+Los 481 ítems de `erroresContrastivos` de los 95 núcleos A2/B1 pasaron de string
+plano a objeto `{idioma_aprendido: original, clave: traducción}`, cerrando P2 de
+`REGLAS-PREVENCION.md`. El original quedó intacto byte a byte en los 481; B2, C1
+y C2 siguen siendo strings, como manda el esquema. Verificado con `componer.py`
+(606 fichas, 56 semanas especiales, 0 problemas) y `verificar_consistencia.py`
+(240 fichas A2/B1, 0 problemas).
+
+**Deuda que deja:** la conversión se hizo con un script de un solo uso, no por el
+maestro de traducciones. `exportar_traduccion_maestro.py` e
+`importar_traduccion_maestro.py` **no cubren `erroresContrastivos`**, así que
+estos 481 ítems no aparecen en el Excel maestro ni en ámbar ni en verde: si Fer
+quiere revisar o corregir una de estas traducciones, hoy tiene que editar el JSON
+a mano. Agregar una hoja «Errores contrastivos» (idioma, nivel, skill, clave,
+original, traducción) al par exportador/importador cuando haga falta ese
+ida-y-vuelta, o antes de sumar un idioma nuevo que multiplique estos ítems.
+
 **Recomendaciones (cortas):**
 - Agregar integración continua en el repositorio (componer + verificador + tests en cada push): hoy depende de que alguien corra los comandos.
 - Un test de «matriz de superficies» (idioma aprendido × idioma de app × pantalla) que falle ante texto en el idioma equivocado, para no depender de que Fer lo encuentre a mano.
