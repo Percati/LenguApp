@@ -28,7 +28,7 @@ class PromptVozPantallaTest {
         val ficha = contenido("EN-F01-C1-2026-1")
         composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES, promptsVoz = plantillas()) }
         composeTestRule.onNode(hasText(etiquetaPromptVozTitulo(Idioma.ES))).assertExists()
-        composeTestRule.onNode(hasText("Pegalo al empezar una conversación de voz", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("Pégalo al empezar una conversación de voz", substring = true)).assertExists()
         composeTestRule.onNode(hasText("You are my spoken English conversation partner", substring = true)).assertExists()
     }
 

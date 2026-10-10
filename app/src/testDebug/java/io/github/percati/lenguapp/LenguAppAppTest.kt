@@ -202,7 +202,7 @@ class LenguAppAppTest {
             )
         }
         composeTestRule.onNodeWithText("Ajustes").performClick()
-        composeTestRule.onNodeWithText("Idioma que aprendés").assertExists()
+        composeTestRule.onNodeWithText("Idioma que aprendes").assertExists()
 
         composeTestRule.activity.onBackPressedDispatcher.onBackPressed()
 

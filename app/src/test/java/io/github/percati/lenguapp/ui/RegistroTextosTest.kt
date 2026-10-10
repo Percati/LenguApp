@@ -61,10 +61,34 @@ class RegistroTextosTest {
         assertEquals("cadenas FR de usted: $malas", emptyList<Pair<String, String>>(), malas)
     }
 
+    // --- Acerca de / privacidad coherente con PRIVACY.md (Ronda F, tarea 4) ---
+
+    @Test
+    fun `el texto de privacidad dice lo mismo que PRIVACY md, en los 6 idiomas`() {
+        // fecha, idioma del sistema solo si lo elige el usuario, sin Internet ni cuenta, y se guardan ajustes y estrellas
+        val claves = mapOf(
+            Idioma.ES to listOf("Sin Internet", "fecha", "únicamente si lo eliges", "ajustes", "estrella"),
+            Idioma.EN to listOf("No internet", "date", "only if you choose", "settings", "star"),
+            Idioma.DE to listOf("Kein Internet", "Datum", "nur wenn du", "Einstellungen", "Stern"),
+            Idioma.FR to listOf("Pas d'Internet", "date", "uniquement si tu", "paramètres", "étoile"),
+            Idioma.IT to listOf("Niente Internet", "data", "solo se lo scegli", "impostazioni", "stella"),
+            Idioma.PT to listOf("Sem internet", "data", "somente se você", "configurações", "estrela"),
+        )
+        for ((idioma, palabras) in claves) {
+            val texto = textoAcercaPrivacidad(idioma)
+            for (p in palabras) assertTrue("$idioma: falta '$p' en: $texto", texto.contains(p, ignoreCase = true))
+        }
+        val raiz = listOf(File("../PRIVACY.md"), File("PRIVACY.md")).first { it.isFile }.readText()
+        assertTrue(raiz.contains("INTERNET"))
+        assertTrue(raiz.contains("idioma del sistema"))
+        assertTrue(raiz.contains("estrella"))
+        assertTrue(raiz.contains("ajustes", ignoreCase = true))
+    }
+
     @Test
     fun `los otros idiomas tambien tutean en la interfaz`() {
         val formal = mapOf(
-            Idioma.ES to Regex("""\busted(es)?\b""", RegexOption.IGNORE_CASE),
+            Idioma.ES to Regex("""\busted(es)?\b|\b(Pulsá|Tocá|Pegalo|Decile|aprendés|[Ee]legí|[Pp]egá|tenés|querés|podés|vos)\b""", RegexOption.IGNORE_CASE),
             Idioma.IT to Regex("""\bLei\b|\bLa sua\b"""),
             Idioma.DE to Regex("""\b(Ihnen|Ihr|Ihre|Ihren)\b|\b(Wählen|Drücken|Geben|Tippen) Sie\b"""),
             Idioma.EN to Regex("""\byour honou?r\b""", RegexOption.IGNORE_CASE),

@@ -89,7 +89,7 @@ class TextosInterfazTest {
 
     @Test
     fun `mensajeDobleAtrasParaSalir tiene el texto nuevo del documento, no el improvisado de la Fase 7`() {
-        assertEquals("Pulsá otra vez para salir", mensajeDobleAtrasParaSalir(Idioma.ES))
+        assertEquals("Pulsa otra vez para salir", mensajeDobleAtrasParaSalir(Idioma.ES))
         assertEquals("Press again to exit", mensajeDobleAtrasParaSalir(Idioma.EN))
         assertEquals("Zum Beenden nochmals drücken", mensajeDobleAtrasParaSalir(Idioma.DE))
         assertEquals("Appuie à nouveau pour quitter", mensajeDobleAtrasParaSalir(Idioma.FR))
@@ -99,7 +99,7 @@ class TextosInterfazTest {
 
     @Test
     fun `etiquetas de Ajustes coinciden con el documento`() {
-        assertEquals("Idioma que aprendés", etiquetaIdiomasAprendidos(Idioma.ES))
+        assertEquals("Idioma que aprendes", etiquetaIdiomasAprendidos(Idioma.ES))
         assertEquals("Language you're learning", etiquetaIdiomasAprendidos(Idioma.EN))
         assertEquals("Sprache der App", etiquetaIdiomaApp(Idioma.DE))
         assertEquals("Système", etiquetaSegunSistema(Idioma.FR))

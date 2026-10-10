@@ -91,7 +91,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "Ainda não há calendário para {anio}.",
     ),
     ClaveTexto.SALIR_CONFIRMAR to mapOf(
-        Idioma.ES to "Pulsá otra vez para salir",
+        Idioma.ES to "Pulsa otra vez para salir",
         Idioma.EN to "Press again to exit",
         Idioma.DE to "Zum Beenden nochmals drücken",
         Idioma.FR to "Appuie à nouveau pour quitter",
@@ -99,7 +99,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "Pressione novamente para sair",
     ),
     ClaveTexto.IDIOMAS_APRENDIDOS to mapOf(
-        Idioma.ES to "Idioma que aprendés",
+        Idioma.ES to "Idioma que aprendes",
         Idioma.EN to "Language you're learning",
         Idioma.DE to "Sprache, die du lernst",
         Idioma.FR to "Langue que tu apprends",
@@ -171,7 +171,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "Enregistrés", Idioma.IT to "Salvati", Idioma.PT to "Salvos",
     ),
     ClaveTexto.GUARDADOS_VACIO to mapOf(
-        Idioma.ES to "Todavía no guardaste nada. Tocá la estrella junto a una palabra o expresión para guardarla.",
+        Idioma.ES to "Todavía no guardaste nada. Toca la estrella junto a una palabra o expresión para guardarla.",
         Idioma.EN to "You haven't saved anything yet. Tap the star next to a word or expression to save it.",
         Idioma.DE to "Du hast noch nichts gespeichert. Tippe auf den Stern neben einem Wort oder Ausdruck, um ihn zu speichern.",
         Idioma.FR to "Tu n'as encore rien enregistré. Appuie sur l'étoile à côté d'un mot ou d'une expression pour l'enregistrer.",
@@ -311,12 +311,12 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "Privacidade",
     ),
     ClaveTexto.ACERCA_PRIVACIDAD_TEXTO to mapOf(
-        Idioma.ES to "Sin Internet y sin cuenta: la app no puede enviar nada a ningún sitio. Solo lee la fecha del dispositivo (y su idioma, únicamente si lo eliges en Ajustes). Lo único que se guarda en tu móvil son los elementos que marcas con la estrella en Guardados.",
-        Idioma.EN to "No internet and no account: the app cannot send anything anywhere. It only reads the device's date (and its language, only if you choose that in Settings). The only thing stored on your phone is what you mark with a star in Saved.",
-        Idioma.DE to "Kein Internet, kein Konto: Die App kann nirgendwohin etwas senden. Sie liest nur das Datum des Geräts (und seine Sprache, nur wenn du das in den Einstellungen wählst). Auf deinem Handy gespeichert wird nur, was du unter Gespeichert mit dem Stern markierst.",
-        Idioma.FR to "Pas d'Internet, pas de compte : l'application ne peut rien envoyer nulle part. Elle lit seulement la date de l'appareil (et sa langue, uniquement si tu le choisis dans Paramètres). Seuls les éléments que tu marques d'une étoile dans Enregistrés sont conservés sur ton téléphone.",
-        Idioma.IT to "Niente Internet e niente account: l'app non può inviare nulla da nessuna parte. Legge soltanto la data del dispositivo (e la sua lingua, solo se lo scegli in Impostazioni). Sul telefono viene conservato soltanto ciò che contrassegni con la stella in Salvati.",
-        Idioma.PT to "Sem internet e sem conta: o aplicativo não pode enviar nada para lugar nenhum. Ele só lê a data do dispositivo (e o idioma, somente se você escolher isso em Configurações). A única coisa salva no seu celular são os itens que você marca com a estrela em Salvos.",
+        Idioma.ES to "Sin Internet y sin cuenta: la app no puede enviar nada a ningún sitio. Solo lee la fecha del dispositivo (y su idioma, únicamente si lo eliges en Ajustes). Lo único que se guarda en tu celular son tus ajustes y los elementos que marcas con la estrella en Guardados.",
+        Idioma.EN to "No internet and no account: the app cannot send anything anywhere. It only reads the device's date (and its language, only if you choose that in Settings). The only things stored on your phone are your settings and what you mark with a star in Saved.",
+        Idioma.DE to "Kein Internet, kein Konto: Die App kann nirgendwohin etwas senden. Sie liest nur das Datum des Geräts (und seine Sprache, nur wenn du das in den Einstellungen wählst). Auf deinem Handy gespeichert werden nur deine Einstellungen und das, was du unter Gespeichert mit dem Stern markierst.",
+        Idioma.FR to "Pas d'Internet, pas de compte : l'application ne peut rien envoyer nulle part. Elle lit seulement la date de l'appareil (et sa langue, uniquement si tu le choisis dans Paramètres). Seuls tes paramètres et les éléments que tu marques d'une étoile dans Enregistrés sont conservés sur ton téléphone.",
+        Idioma.IT to "Niente Internet e niente account: l'app non può inviare nulla da nessuna parte. Legge soltanto la data del dispositivo (e la sua lingua, solo se lo scegli in Impostazioni). Sul telefono vengono conservate soltanto le tue impostazioni e ciò che contrassegni con la stella in Salvati.",
+        Idioma.PT to "Sem internet e sem conta: o aplicativo não pode enviar nada para lugar nenhum. Ele só lê a data do dispositivo (e o idioma, somente se você escolher isso em Configurações). As únicas coisas salvas no seu celular são as suas configurações e os itens que você marca com a estrela em Salvos.",
     ),
     ClaveTexto.ACERCA_LICENCIAS_TITULO to mapOf(
         Idioma.ES to "Licencias",
@@ -369,7 +369,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "Prompt para conversar por voz",
     ),
     ClaveTexto.PROMPT_VOZ_AYUDA to mapOf(
-        Idioma.ES to "Pegalo al empezar una conversación de voz con tu IA. Decile *feedback* cuando quieras la devolución.",
+        Idioma.ES to "Pégalo al empezar una conversación de voz con tu IA. Dile *feedback* cuando quieras la devolución.",
         Idioma.EN to "Paste it at the start of a voice conversation with your AI. Say *feedback* whenever you want the debrief.",
         Idioma.DE to "Füge ihn zu Beginn eines Sprachgesprächs mit deiner KI ein. Sag *feedback*, wenn du die Rückmeldung möchtest.",
         Idioma.FR to "Colle-le au début d'une conversation vocale avec ton IA. Dis *feedback* quand tu veux le retour.",

@@ -64,7 +64,7 @@ class AjustesScreenTest {
         val actual = montar(Ajustes(idiomasAprendidos = emptyMap()))
 
         // "EN" aparece tambien en el selector de idioma de la aplicacion mas
-        // abajo: la primera ocurrencia es la de "Idioma que aprendés".
+        // abajo: la primera ocurrencia es la de "Idioma que aprendes".
         composeTestRule.onAllNodesWithText("EN").onFirst().performClick()
         composeTestRule.onNodeWithText("C1").performClick()
 
