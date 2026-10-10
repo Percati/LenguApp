@@ -46,8 +46,23 @@ Registro **formal** (sin coloquialismos), pero seguí tuteando como en el resto 
 5. **Versión** (como ahora) y una frase: «Esta es una versión de prueba; tus comentarios ayudan a mejorarla.»
 Todas las strings en `TextosInterfaz` con 6 idiomas (P7). Test: ninguna clave nueva sin sus 6 idiomas; R6-equivalente de registro sobre las strings nuevas (sin voseo ni «usted»).
 
+## Tarea 6 — Exportar e importar Guardados (confirmada por Fer, 10-oct-2026)
+Dos archivos, con el selector de archivos del sistema (Storage Access Framework: `CreateDocument` / `OpenDocument`), **sin permisos nuevos y sin `INTERNET`**. Botones «Exportar» e «Importar» en la pantalla de Guardados (6 idiomas, P7).
+- **Exportar a Anki (TSV):** UTF-8, cabeceras `#separator:tab` y `#html:false`; columnas: anverso = original en el idioma que se aprende, reverso = traducción al idioma de app + (si existe) el contexto en el idioma aprendido, etiquetas = `idioma nivel`. Escapá tabuladores y saltos de línea. Se exportan los items del idioma activo con los filtros vigentes o todos (elegí lo más simple y reportalo).
+- **Copia de seguridad (JSON):** `lenguapp-guardados.json` con `version: 1` y los items tal cual (idioma, nivel, tipo, texto, función, skillIdOrigen).
+- **Importar (solo el JSON):** validá versión y estructura, límite de tamaño razonable, rechazá lo que no cumpla con un mensaje claro; **fusioná sin duplicar** por la identidad (idioma, tipo, texto) y no pises lo existente. Informá cuántos se agregaron y cuántos ya estaban. Nada se ejecuta ni se interpreta del archivo más allá de esos campos.
+- Regla dura 2: leer o escribir un archivo **que el usuario elige en ese momento** es una acción del usuario, no una lectura del dispositivo; documentalo en `CLAUDE.md` (enmienda como la del idioma del sistema) y en `PRIVACY.md`/«Acerca de» si cambia lo que decís.
+- Tests: ida y vuelta (exportar→importar a una base vacía deja los mismos items), importación con duplicados, archivo corrupto, versión desconocida, TSV con tabuladores y saltos en el texto.
+
+## Tarea 7 — Índice de habilidades (confirmada por Fer, 10-oct-2026)
+Lista de solo lectura de las habilidades del idioma activo, para volver a una concreta sin recorrer semanas. **Dentro de la Biblioteca**, como segunda vista («Vocabulario» | «Habilidades»), para no sumar otro botón a la barra (Fer quiere más espacio para el contenido).
+- Cada fila: el nombre de la habilidad (el título de la ficha en el nivel activo, con la regla de idioma de la ficha), y las **semanas del año en que aparece** (por ejemplo «sem. 6, 20, 33»), del año que se está viendo.
+- Tocar una fila abre esa semana (la ficha). Si la habilidad no tiene ficha en el nivel activo, no aparece.
+- Sin estado persistente (regla 4): nada de «vista» o «hecho». Los nombres y rótulos en idioma de app (P7, 6 idiomas); los títulos de ficha según la regla de la ficha.
+- Tests: el índice de EN y DE en cada nivel lista las habilidades que existen en los assets, con sus semanas correctas según el calendario; abrir una fila navega a la semana.
+
 ## Fuera de alcance
-Temas, tipografías y estilo visual (Ronda G); ícono y splash; exportar/importar Guardados e índice de habilidades (todavía sin confirmar); contenido.
+Temas, tipografías y estilo visual (Ronda G); ícono y splash; contenido.
 
 ## Informe
 Commit por tarea, tests, tamaño del APK, causa real del interlineado, decisiones donde el prompt no cerraba, textos de Acerca de que quitaste por no ser verdad. Actualizá `FALTANTES.md` (sección 26).
