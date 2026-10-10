@@ -118,6 +118,43 @@ fun List<ItemBiblioteca>.filtrar(
         .sortedBy { it.texto.lowercase() }
 }
 
+/**
+ * Opciones de filtro DERIVADAS de los items (REGLAS-PREVENCION P3): ninguna lista es fija.
+ * Un topic o una categoria sin ningun item en NINGUN nivel del idioma no existe como chip;
+ * que de 0 en un nivel concreto si esta permitido (el contador lo muestra).
+ */
+fun List<ItemBiblioteca>.topicsDelIdioma(idioma: Idioma): Set<String> =
+    filter { it.idioma == idioma && it.tipo == TipoGuardado.VOCABULARIO }.flatMapTo(linkedSetOf()) { it.topics }
+
+/** Categorias de uso con al menos una expresion en el idioma, en todos los niveles; [SIN_CATEGORIA] si hay expresiones sin ninguna. */
+fun List<ItemBiblioteca>.categoriasDelIdioma(idioma: Idioma): Set<String> {
+    val expresiones = filter { it.idioma == idioma && it.tipo == TipoGuardado.EXPRESION }
+    return buildSet {
+        expresiones.forEach { addAll(it.categorias) }
+        if (expresiones.any { it.categorias.isEmpty() }) add(SIN_CATEGORIA)
+    }
+}
+
+private fun List<ItemBiblioteca>.delIdiomaYNiveles(idioma: Idioma, tipo: TipoGuardado, niveles: Set<Nivel>): List<ItemBiblioteca> =
+    filter { it.idioma == idioma && it.tipo == tipo && (niveles.isEmpty() || it.niveles.any { n -> n in niveles }) }
+
+/** Cuantos items de vocabulario tiene cada topic con el filtro de nivel activo (vacio = todos los niveles). */
+fun List<ItemBiblioteca>.contarTopics(idioma: Idioma, niveles: Set<Nivel>): Map<String, Int> {
+    val conteo = mutableMapOf<String, Int>()
+    for (item in delIdiomaYNiveles(idioma, TipoGuardado.VOCABULARIO, niveles)) for (t in item.topics) conteo[t] = (conteo[t] ?: 0) + 1
+    return conteo
+}
+
+/** Cuantas expresiones tiene cada categoria (y [SIN_CATEGORIA]) con el filtro de nivel activo. */
+fun List<ItemBiblioteca>.contarCategorias(idioma: Idioma, niveles: Set<Nivel>): Map<String, Int> {
+    val conteo = mutableMapOf<String, Int>()
+    for (item in delIdiomaYNiveles(idioma, TipoGuardado.EXPRESION, niveles)) {
+        if (item.categorias.isEmpty()) conteo[SIN_CATEGORIA] = (conteo[SIN_CATEGORIA] ?: 0) + 1
+        for (c in item.categorias) conteo[c] = (conteo[c] ?: 0) + 1
+    }
+    return conteo
+}
+
 private fun ItemBiblioteca.coincide(q: String, idiomaBase: Idioma): Boolean {
     if (texto.lowercase().contains(q)) return true
     val traduccion = vocabulario?.traduccionParaMostrar(idiomaBase)

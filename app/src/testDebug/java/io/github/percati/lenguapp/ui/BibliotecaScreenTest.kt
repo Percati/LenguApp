@@ -135,7 +135,7 @@ class BibliotecaScreenTest {
         mostrarExpresiones()
         composeTestRule.onAllNodesWithText("Quitar").assertCountEquals(0)
 
-        composeTestRule.onNodeWithText("Pedir").performClick()
+        composeTestRule.onNodeWithText("Pedir (1)").performClick()
         composeTestRule.onAllNodesWithText("zzz-pedir").assertCountEquals(1)
         composeTestRule.onAllNodesWithText("zzz-sugerir").assertCountEquals(0)
         composeTestRule.onAllNodesWithText("Quitar").assertCountEquals(1)
@@ -144,5 +144,74 @@ class BibliotecaScreenTest {
         composeTestRule.onAllNodesWithText("Quitar").assertCountEquals(0)
         composeTestRule.onAllNodesWithText("zzz-pedir").assertCountEquals(1)
         composeTestRule.onAllNodesWithText("zzz-sugerir").assertCountEquals(1)
+    }
+
+    // --- filtros derivados de los items (Ronda E, tarea 3) ---
+
+    private fun mostrarItems(
+        lista: List<ItemBiblioteca>,
+        aprendidos: Map<Idioma, Nivel>,
+        categorias: CategoriasUso = CategoriasUso(),
+        topicNombres: NombresI18n = NombresI18n(),
+    ) {
+        composeTestRule.setContent {
+            BibliotecaScreen(
+                items = lista,
+                idiomasAprendidos = aprendidos,
+                idiomaBase = Idioma.ES,
+                idiomaInterfaz = Idioma.ES,
+                topicNombres = topicNombres,
+                categorias = categorias,
+                guardadas = emptySet(),
+                onAlternar = {},
+                onVolver = {},
+            )
+        }
+    }
+
+    @Test
+    fun `un topic sin items en el idioma de la pestana no aparece, y uno que da 0 en el nivel elegido si, con su contador`() {
+        val b = base()
+        val topicReal = b.topics.first()
+        val otroTopic = "T99"
+        val lista = listOf(
+            b.copy(texto = "zzz-uno", niveles = setOf(Nivel.C1), topics = setOf(topicReal)),
+            // topic que solo existe en EN: no debe aparecer en la pestana DE
+            b.copy(idioma = Idioma.EN, texto = "zzz-english", niveles = setOf(Nivel.B2), topics = setOf(otroTopic)),
+        )
+        val nombres = NombresI18n(mapOf(topicReal to mapOf("es" to "Tema real"), otroTopic to mapOf("es" to "Solo ingles")))
+        mostrarItems(lista, mapOf(Idioma.DE to Nivel.B2, Idioma.EN to Nivel.B2), topicNombres = nombres)
+        composeTestRule.onNodeWithText("DE").performClick() // la primera pestana es EN (orden del enum)
+
+        // pestana DE (nivel B2): el topic con items solo en C1 se muestra, con (0); el de EN no existe
+        composeTestRule.onNodeWithText("Tema real (0)").assertExists()
+        composeTestRule.onAllNodesWithText("Solo ingles", substring = true).assertCountEquals(0)
+
+        // con C1 elegido pasa a (1)
+        composeTestRule.onNodeWithText("C1").performClick()
+        composeTestRule.onNodeWithText("Tema real (1)").assertExists()
+
+        // pestana EN: al reves
+        composeTestRule.onNodeWithText("EN").performClick()
+        composeTestRule.onNodeWithText("Solo ingles (1)").assertExists()
+        composeTestRule.onAllNodesWithText("Tema real", substring = true).assertCountEquals(0)
+    }
+
+    @Test
+    fun `una categoria sin ninguna expresion en el idioma no es un chip, y Sin categoria solo si hay`() {
+        val b = base().copy(tipo = TipoGuardado.EXPRESION, niveles = setOf(Nivel.B2))
+        val lista = listOf(
+            b.copy(texto = "zzz-pedir", categorias = setOf("Pedir")),
+            b.copy(idioma = Idioma.EN, texto = "zzz-en", categorias = setOf("Sugerir")),
+        )
+        val categorias = CategoriasUso(funcionComunicativa = listOf("Pedir", "Sugerir", "Opinar"))
+        mostrarItems(lista, mapOf(Idioma.DE to Nivel.B2, Idioma.EN to Nivel.B2), categorias)
+        composeTestRule.onNodeWithText("DE").performClick() // la primera pestana es EN (orden del enum)
+        composeTestRule.onNodeWithText("Expresiones").performClick()
+
+        composeTestRule.onNodeWithText("Pedir (1)").assertExists()
+        composeTestRule.onAllNodesWithText("Sugerir", substring = true).assertCountEquals(0)
+        composeTestRule.onAllNodesWithText("Opinar", substring = true).assertCountEquals(0)
+        composeTestRule.onAllNodesWithText("Sin categoría", substring = true).assertCountEquals(0)
     }
 }

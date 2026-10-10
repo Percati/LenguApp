@@ -45,7 +45,11 @@ import io.github.percati.lenguapp.modelo.resolver
 import io.github.percati.lenguapp.presentacion.ItemBiblioteca
 import io.github.percati.lenguapp.presentacion.SIN_CATEGORIA
 import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
+import io.github.percati.lenguapp.presentacion.categoriasDelIdioma
+import io.github.percati.lenguapp.presentacion.contarCategorias
+import io.github.percati.lenguapp.presentacion.contarTopics
 import io.github.percati.lenguapp.presentacion.filtrar
+import io.github.percati.lenguapp.presentacion.topicsDelIdioma
 import io.github.percati.lenguapp.presentacion.traduccionParaMostrar
 
 const val TAG_ESTRELLA_BIBLIOTECA = "estrella-biblioteca"
@@ -80,8 +84,9 @@ fun BibliotecaScreen(
     var idiomaElegido by remember(idiomas) { mutableStateOf(idiomas.firstOrNull()) }
     var nivelesPorIdioma by remember { mutableStateOf<Map<Idioma, Set<Nivel>>>(emptyMap()) }
     var tipo by remember { mutableStateOf(TipoGuardado.VOCABULARIO) }
-    var topic by remember { mutableStateOf<String?>(null) }
-    var categoriasElegidas by remember { mutableStateOf<Set<String>>(emptySet()) }
+    // Topic y categorias elegidos son DE la pestana: al cambiar de idioma arrancan vacios (un valor del otro idioma podria no existir aca).
+    var topic by remember(idiomaElegido) { mutableStateOf<String?>(null) }
+    var categoriasElegidas by remember(idiomaElegido) { mutableStateOf<Set<String>>(emptySet()) }
     var busqueda by remember { mutableStateOf("") }
 
     val idioma = idiomaElegido
@@ -90,6 +95,12 @@ fun BibliotecaScreen(
     val filtrados = remember(items, idioma, tipo, niveles, topic, categoriasElegidas, busqueda, idiomaBase) {
         if (idioma == null) emptyList() else items.filtrar(idioma, tipo, niveles, topic, categoriasElegidas, busqueda, idiomaBase)
     }
+    // Las listas de chips salen de los items del idioma de la pestana, todos sus niveles (P3);
+    // el contador es con el filtro de nivel activo.
+    val topicsDisponibles = remember(items, idioma) { if (idioma == null) emptySet() else items.topicsDelIdioma(idioma) }
+    val categoriasDisponibles = remember(items, idioma) { if (idioma == null) emptySet() else items.categoriasDelIdioma(idioma) }
+    val contadorTopics = remember(items, idioma, niveles) { if (idioma == null) emptyMap() else items.contarTopics(idioma, niveles) }
+    val contadorCategorias = remember(items, idioma, niveles) { if (idioma == null) emptyMap() else items.contarCategorias(idioma, niveles) }
     val hayFiltrosQueQuitar = niveles != nivelesDefault || topic != null || categoriasElegidas.isNotEmpty()
     fun quitarTodosLosFiltros() {
         if (idioma != null) nivelesPorIdioma = nivelesPorIdioma - idioma
@@ -151,19 +162,25 @@ fun BibliotecaScreen(
                         Text(etiquetaBibliotecaTema(idiomaInterfaz), style = MaterialTheme.typography.labelMedium)
                         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                             FilterChip(selected = topic == null, onClick = { topic = null }, label = { Text(etiquetaFiltroTodos(idiomaInterfaz)) })
-                            topicNombres.claves.sorted().forEach { id ->
-                                FilterChip(selected = topic == id, onClick = { topic = id }, label = { Text(topicNombres.nombre(id, idiomaInterfaz)) })
+                            topicsDisponibles.sorted().forEach { id ->
+                                FilterChip(
+                                    selected = topic == id,
+                                    onClick = { topic = id },
+                                    label = { Text("${topicNombres.nombre(id, idiomaInterfaz)} (${contadorTopics[id] ?: 0})") },
+                                )
                             }
                         }
                     } else {
-                        RamaCategorias(etiquetaBibliotecaFunciones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.funcionComunicativa, categoriasElegidas, { categorias.nombre(it, idiomaInterfaz) }) { categoriasElegidas = it }
-                        RamaCategorias(etiquetaBibliotecaPatrones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.patronGramatical, categoriasElegidas, { categorias.nombre(it, idiomaInterfaz) }) { categoriasElegidas = it }
-                        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                            FilterChip(
-                                selected = SIN_CATEGORIA in categoriasElegidas,
-                                onClick = { categoriasElegidas = alternarEn(categoriasElegidas, SIN_CATEGORIA) },
-                                label = { Text(etiquetaBibliotecaSinCategoria(idiomaInterfaz)) },
-                            )
+                        RamaCategorias(etiquetaBibliotecaFunciones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.funcionComunicativa.filter { it in categoriasDisponibles }, categoriasElegidas, contadorCategorias, { categorias.nombre(it, idiomaInterfaz) }) { categoriasElegidas = it }
+                        RamaCategorias(etiquetaBibliotecaPatrones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.patronGramatical.filter { it in categoriasDisponibles }, categoriasElegidas, contadorCategorias, { categorias.nombre(it, idiomaInterfaz) }) { categoriasElegidas = it }
+                        if (SIN_CATEGORIA in categoriasDisponibles) {
+                            FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                FilterChip(
+                                    selected = SIN_CATEGORIA in categoriasElegidas,
+                                    onClick = { categoriasElegidas = alternarEn(categoriasElegidas, SIN_CATEGORIA) },
+                                    label = { Text("${etiquetaBibliotecaSinCategoria(idiomaInterfaz)} (${contadorCategorias[SIN_CATEGORIA] ?: 0})") },
+                                )
+                            }
                         }
                     }
 
@@ -198,7 +215,7 @@ private fun alternarEn(conjunto: Set<String>, valor: String): Set<String> =
 /** Una rama de la lista cerrada de categoriasUso, como una fila de chips con su titulo (los nombres, en el idioma de app). */
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-private fun RamaCategorias(titulo: String, etiquetaQuitar: String, valores: List<String>, elegidas: Set<String>, nombre: (String) -> String, onCambio: (Set<String>) -> Unit) {
+private fun RamaCategorias(titulo: String, etiquetaQuitar: String, valores: List<String>, elegidas: Set<String>, contador: Map<String, Int>, nombre: (String) -> String, onCambio: (Set<String>) -> Unit) {
     if (valores.isEmpty()) return
     Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
@@ -209,7 +226,7 @@ private fun RamaCategorias(titulo: String, etiquetaQuitar: String, valores: List
         }
         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             valores.forEach { v ->
-                FilterChip(selected = v in elegidas, onClick = { onCambio(alternarEn(elegidas, v)) }, label = { Text(nombre(v)) })
+                FilterChip(selected = v in elegidas, onClick = { onCambio(alternarEn(elegidas, v)) }, label = { Text("${nombre(v)} (${contador[v] ?: 0})") })
             }
         }
     }
