@@ -668,3 +668,30 @@ Requisitos ya aplicados al empezar: parche de Overview (reglas de prevención, n
 - **Voseo en contenido** (`¿Elegí…?` en autochequeos de B1 2027, etc.): de Contrastes/Traducciones, como en la sección 18.
 - **El PDF real** sigue sin poder probarse bajo Robolectric: hay que mirar la planilla compactada en el teléfono (cuerpo de 9 pt y márgenes de 15 mm se ven recién ahí).
 - **Deuda de la sección 20** sigue abierta: `erroresContrastivos` no está en el maestro de traducciones.
+
+## 22. Revisión de la Ronda E y siguiente tanda (10-oct-2026)
+
+Verificado por Overview: el parche de Code (9 commits) aplica limpio sobre `ab355c92`; si `git am` dice que ya está, es porque Code commiteó en la carpeta local de Fer y falta solo el `git push`.
+
+**Decisiones sobre los hallazgos de Code:**
+
+| Hallazgo | Veredicto | Dónde |
+|---|---|---|
+| 3 planillas en 2 carillas con 4 líneas | No vale la pena (3 de 662); mirarlas en el teléfono | — |
+| Pestañas de idioma con código `EN`/`DE` | Se arregla (nombre en el idioma de app) | Code, Ronda F, tarea 1 |
+| `widget_descripcion` solo en español | Se arregla | Code, Ronda F, tarea 2 |
+| Voseo en el español del contenido (~85 cadenas, sobre todo traducciones de Redemittel) | Se arregla ahora y queda cubierto por la regla R6 del verificador | Traducciones (prompt 12) |
+| Maestro de traducciones sin `erroresContrastivos` | Diferido hasta sumar un idioma | sección 20 |
+| Switch de traducción solo en A2/B1 | Es el diseño, no un defecto | — |
+
+**Hallazgos propios de esta revisión:**
+- `PRIVACY.md` (raíz y `proyecto/legal/`) decía «nada sobre vos… ni progreso guardado» y «solo lee la fecha»: ya no era cierto (Guardados persiste las estrellas; el idioma del sistema se lee si el usuario lo elige). Corregido, y en el mismo parche los textos de tienda en es/en/de.
+- Los textos de interfaz que escribió Code en portugués son de Portugal («telemóvel», «a aprender»), pero la voz y el contenido son de Brasil. Además FR y PT usan trato de usted mientras ES/DE/IT/EN tutean. Se unifica en Ronda F, tarea 3.
+- Nueva regla R6 en `verificar_consistencia.py`: el español del contenido es neutro (lista aproximada de formas de voseo; no reemplaza la revisión humana de -ás/-és/-ís).
+
+**Orden de pasos (secuencial):**
+1. Subir lo que Code ya commiteó (`git push`) y aplicar el parche de Overview de esta ronda.
+2. Traducciones: `prompts/12-traducciones-tuteo.md`.
+3. Avisar a Overview para regenerar assets.
+4. Code: `prompts/13-code-ronda-f.md` (versión 0.2.1).
+5. Probar el APK en el teléfono.

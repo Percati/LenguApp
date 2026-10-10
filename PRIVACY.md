@@ -4,7 +4,7 @@ Esta aplicación **no recoge ningún dato**.
 
 ## Qué lee del dispositivo
 
-La fecha. Nada más.
+La fecha. Y el idioma del sistema, solo si lo eliges tú en Ajustes («Sistema»). Nada más.
 
 ## Qué envía
 
@@ -12,7 +12,7 @@ Nada. La aplicación **no declara el permiso `INTERNET`** en su manifiesto, así
 
 ## Qué guarda
 
-Nada sobre vos. No hay cuentas, ni perfil, ni historial, ni progreso guardado. La aplicación muestra el contenido de la semana en curso según la fecha, y eso es todo lo que hace.
+Solo lo que tú marcas con la estrella (vocabulario y expresiones, sección Guardados), en tu propio teléfono. Es una lista de referencia que armas a mano: no dice qué aprendiste ni qué te falta. No hay cuentas, ni perfil, ni historial, ni progreso. Tus ajustes de idioma también quedan en el teléfono. La aplicación muestra el contenido de la semana en curso según la fecha.
 
 ## Terceros
 

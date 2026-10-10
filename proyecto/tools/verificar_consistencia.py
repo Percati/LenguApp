@@ -16,8 +16,10 @@ Sale con codigo 1 si hay algun error. Reglas (ver REGLAS-PREVENCION.md):
       claves.
   R4  Los « » estan balanceados en todo el contenido.
   R5  Todo categoriasUso usado pertenece a la lista cerrada.
+  R6  El espanol del contenido es neutro (tuteo): ninguna cadena bajo la clave
+      'es' lleva formas de voseo (vos, tenes, podes, elegi, proba...).
 """
-import argparse, glob, json, os, sys
+import argparse, glob, json, os, re, sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LANGS = ["es", "en", "de", "fr", "it", "pt"]
@@ -38,6 +40,26 @@ def recorrer_textos(o):
     elif isinstance(o, dict):
         for v in o.values():
             yield from recorrer_textos(v)
+
+
+VOSEO = re.compile(
+    r"\b(vos|tenés|podés|querés|sabés|decís|hacés|usás|pensás|sentís|elegí|probá|mirá|decí|hablá|fijate|repetí|"
+    r"escribí|pensá|intentá|contá|usá|escuchá|completá|marcá|anotá|reescribí|grabá|agregá|corregí|revisá|"
+    r"preguntá|buscá|leé|ponete|acordate|fijá|armá|tratá|empezá|ordená|cambiá|resumí|explicá|describí|"
+    r"contestá|respondé|practicá|andá|vení|salí|poné|tené|sé vos|fijate)\b", re.IGNORECASE)
+
+
+def textos_es(o, ruta=""):
+    """Cadenas que cuelgan de una clave 'es' (traducciones al espanol)."""
+    if isinstance(o, dict):
+        for k, v in o.items():
+            if k == "es":
+                yield from recorrer_textos(v)
+            else:
+                yield from textos_es(v, ruta + "/" + k)
+    elif isinstance(o, list):
+        for x in o:
+            yield from textos_es(x, ruta)
 
 
 def main():
@@ -102,6 +124,10 @@ def main():
             if s.count("«") != s.count("»"):
                 errores.append(f"R4 {nom}: « » desbalanceados en: {s[:60]}")
                 break
+        for t in textos_es(d):
+            m = VOSEO.search(t)
+            if m:
+                errores.append(f"R6 {nom}: voseo '{m.group(0)}' en: {t[:70]}")
         for r in d.get("redemittel", []) if isinstance(d, dict) else []:
             for c in r.get("categoriasUso") or []:
                 usadas.add(c)
