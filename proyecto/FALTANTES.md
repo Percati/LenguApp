@@ -809,3 +809,14 @@ Requisitos ya aplicados al empezar: parche de Overview y tuteo de Traducciones c
 - Prompt: `prompts/15-code-ronda-g-diseno.md`. Ícono del lanzador y arte de la splash esperan el archivo de Fer (ronda H). Paleta para ícono/splash: la elige Fer entre las cuatro.
 - Se descartó para la UI el segundo color decorativo de cada paleta: la estrella usa el acento (los acentos secundarios amarillo/coral no pasan 3:1 sobre el fondo claro). Solo sirve para ícono/splash.
 - Pendiente de Ajustes: los chips de idioma muestran `EN`/`DE` (tarea 3 lo cierra si es trivial).
+
+## 26. Feedback de uso del 10-oct-2026 (tarde) — qué hacer y en qué orden
+| # | Hallazgo de Fer | Causa verificada por Overview | Dónde se arregla |
+|---|---|---|---|
+| 1 | Encabezado ocupa mucho alto | `EncabezadoApp` en la pantalla principal | Code F2, tarea 4 |
+| 2 | Palabras en otro idioma sin « » en fichas traducidas (ej. `EN-F01-B1`: «I think es neutral…») | R4 comprueba balance, no existencia. ~100 cadenas solo en EN→es (heurística) | Traducciones, prompt 17 (regla R8) |
+| 3 | Desafío = copia de la misión; viñetas con demasiado espacio | Reto muestra consigna y 2 requisitos de la misión; espacios en dp fijos | Code F2, tareas 2 y 3 |
+| 4 | «Acerca de» corto | — | Code F2, tarea 5 |
+| 5 | **Guardados muestra solo la traducción** | `FilaGuardado` usa `texto.resolver(idiomaBase, …)` y la función en idioma de app; Biblioteca muestra original + traducción + función en idioma aprendido | Code F2, tarea 1 (un composable compartido) |
+- Orden: Traducciones (17) → Overview regenera assets → Code F2 (18, versión 0.2.2) → [si Fer lo confirma: exportar/importar Guardados e índice de habilidades] → Code Ronda G (15) → ronda H (ícono y splash).
+- Guía para testers (qué es decisión de diseño y qué es un error): `docs/guia-testers.md` y `docs/guia-testers-lenguapp.pdf`. Actualizar con cada versión.
