@@ -1,6 +1,7 @@
 package io.github.percati.lenguapp.pdf
 
 import io.github.percati.lenguapp.datos.parsearContenido
+import io.github.percati.lenguapp.datos.parsearTopicNombres
 import io.github.percati.lenguapp.datos.parsearPlanillaTextos
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.presentacion.construirPlanilla
@@ -21,6 +22,7 @@ class PlanillaPdfTest {
 
     private fun assets(): File = listOf(File("src/main/assets"), File("app/src/main/assets")).first { it.isDirectory }
     private val textos = parsearPlanillaTextos(File(assets(), "plantillas/planilla-profesor.json").readText())
+    private val topicNombres = parsearTopicNombres(File(assets(), "temas/topic-nombres.json").readText())
 
     /**
      * PdfDocument es nativo y no corre bajo Robolectric ("document is closed"), asi
@@ -29,7 +31,7 @@ class PlanillaPdfTest {
      */
     private fun paginas(id: String, idioma: Idioma): Int {
         val contenido = parsearContenido(File(assets(), "contenido/$id.json").readText())
-        val planilla = construirPlanilla(contenido, textos.getValue(idioma), nombreTopic = "Tema de prueba")
+        val planilla = construirPlanilla(contenido, textos.getValue(idioma), topicNombres = topicNombres)
         return PlanillaPdf.dibujar(planilla, object : PlanillaPdf.Paginador {
             override fun abrir(numero: Int): Canvas = Canvas(Bitmap.createBitmap(595, 842, Bitmap.Config.ARGB_8888))
             override fun cerrar() = Unit

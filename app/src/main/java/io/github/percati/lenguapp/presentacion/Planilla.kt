@@ -1,5 +1,6 @@
 package io.github.percati.lenguapp.presentacion
 
+import io.github.percati.lenguapp.datos.NombresI18n
 import io.github.percati.lenguapp.datos.PlanillaTextos
 import io.github.percati.lenguapp.modelo.ContenidoSemanal
 import io.github.percati.lenguapp.modelo.Ficha
@@ -30,12 +31,17 @@ private const val MAX_FILAS_CUADRO = 3
  * (redemittel) --; solo los textos fijos (secciones, 2 frases de reparacion, las
  * dos situaciones, el giro inesperado, los 3 criterios y el recordatorio) vienen
  * del JSON de textos. El giro es una instruccion generica al profesor: no hay
- * preguntas escritas. `nombreTopic` solo existe en espanol (banco.json): si no
- * hay, se muestra el id del topic.
+ * preguntas escritas. El nombre del topic sale de `topicNombres` EN EL IDIOMA QUE SE
+ * APRENDE (REGLAS-PREVENCION P1: la planilla no tiene ni un texto en otro idioma); sin
+ * entrada para ese topic se muestra su id.
  */
-fun construirPlanilla(contenido: ContenidoSemanal, textos: PlanillaTextos, nombreTopic: String?): PlanillaContenido =
+fun construirPlanilla(
+    contenido: ContenidoSemanal,
+    textos: PlanillaTextos,
+    topicNombres: NombresI18n = NombresI18n(),
+): PlanillaContenido =
     when (contenido) {
-        is Ficha -> construirPlanillaFicha(contenido, textos, nombreTopic)
+        is Ficha -> construirPlanillaFicha(contenido, textos, topicNombres)
         is SemanaEspecial -> construirPlanillaEspecial(contenido, textos)
     }
 
@@ -43,7 +49,7 @@ private fun limpio(texto: String): String = textoSinMarcado(texto).trim()
 
 private fun TextoBilingue.enAprendido(idioma: Idioma): String = limpio(resolver(idioma, idioma))
 
-private fun construirPlanillaFicha(ficha: Ficha, textos: PlanillaTextos, nombreTopic: String?): PlanillaContenido {
+private fun construirPlanillaFicha(ficha: Ficha, textos: PlanillaTextos, topicNombres: NombresI18n): PlanillaContenido {
     val aprendido = ficha.idioma
     val gramatica = buildList {
         add(ficha.titulo.enAprendido(aprendido))
@@ -63,7 +69,7 @@ private fun construirPlanillaFicha(ficha: Ficha, textos: PlanillaTextos, nombreT
         SeccionPlanilla(textos.objetivo, listOf(ficha.mision.consigna.enAprendido(aprendido)), conVinietas = false),
         SeccionPlanilla(
             textos.tema,
-            listOf(nombreTopic?.takeIf { it.isNotBlank() } ?: ficha.topicId, ficha.subtitulo.enAprendido(aprendido))
+            listOf(topicNombres.nombre(ficha.topicId, aprendido), ficha.subtitulo.enAprendido(aprendido))
                 .filter { it.isNotEmpty() },
         ),
         SeccionPlanilla(textos.gramatica, gramatica.filter { it.isNotEmpty() }).takeIf { gramatica.isNotEmpty() },

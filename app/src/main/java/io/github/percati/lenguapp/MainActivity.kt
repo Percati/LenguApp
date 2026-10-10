@@ -243,7 +243,7 @@ internal fun LenguAppApp(
             if (textos != null) {
                 scope.launch {
                     val archivo = withContext(Dispatchers.IO) {
-                        val planilla = construirPlanilla(contenido, textos, (contenido as? Ficha)?.let { topicNombres.nombre(it.topicId, idiomaAprendido) })
+                        val planilla = construirPlanilla(contenido, textos, topicNombres)
                         escribirPlanillaEnCache(contexto, contenido.id, planilla)
                     }
                     if (!abrirPlanilla(contexto, archivo)) {

@@ -1,5 +1,6 @@
 package io.github.percati.lenguapp.presentacion
 
+import io.github.percati.lenguapp.datos.NombresI18n
 import io.github.percati.lenguapp.datos.PlanillaTextos
 import io.github.percati.lenguapp.datos.parsearContenido
 import io.github.percati.lenguapp.datos.parsearPlanillaTextos
@@ -26,7 +27,7 @@ class PlanillaTest {
     fun `una ficha A2 alemana arma la planilla en aleman con las secciones pedidas`() {
         val ficha = contenido("DE-F01-A2-2026-1") as Ficha
         val t = textos().getValue(Idioma.DE)
-        val p = construirPlanilla(ficha, t, nombreTopic = "Trabajo y carrera")
+        val p = construirPlanilla(ficha, t, NombresI18n(mapOf(ficha.topicId to mapOf("de" to "Arbeit und Karriere", "es" to "Trabajo y carrera"))))
 
         assertEquals(t.titulo, p.titulo)
         assertTrue(p.encabezado.contains("A2"))
@@ -37,7 +38,7 @@ class PlanillaTest {
         assertEquals(ficha.mision.consigna.porIdioma.getValue("de").replace("*", ""), objetivo)
         // topic: nombre legible + enfoque de la aparicion
         val tema = p.secciones.first { it.titulo == t.tema }.lineas
-        assertEquals("Trabajo y carrera", tema.first())
+        assertEquals("Arbeit und Karriere", tema.first())  // en el idioma que se aprende, no en espanol
         assertEquals(ficha.subtitulo.porIdioma.getValue("de").replace("*", ""), tema.last())
     }
 
@@ -45,7 +46,7 @@ class PlanillaTest {
     fun `como mucho 3 expresiones objetivo, 2 frases de reparacion y 3 criterios`() {
         val ficha = contenido("EN-F01-C1-2026-1") as Ficha
         val t = textos().getValue(Idioma.EN)
-        val p = construirPlanilla(ficha, t, nombreTopic = null)
+        val p = construirPlanilla(ficha, t)
 
         assertEquals(3, p.secciones.first { it.titulo == t.expresionesObjetivo }.lineas.size)
         assertTrue(p.secciones.first { it.titulo == t.expresionesObjetivo }.lineas.first().startsWith(ficha.redemittel.first().expresion))
@@ -57,14 +58,14 @@ class PlanillaTest {
     fun `sin nombre de topic se muestra el id del topic, no queda vacio`() {
         val ficha = contenido("EN-F01-C1-2026-1") as Ficha
         val t = textos().getValue(Idioma.EN)
-        val tema = construirPlanilla(ficha, t, nombreTopic = null).secciones.first { it.titulo == t.tema }.lineas
+        val tema = construirPlanilla(ficha, t).secciones.first { it.titulo == t.tema }.lineas
         assertEquals(ficha.topicId, tema.first())
     }
 
     @Test
     fun `el giro inesperado es una instruccion generica, sin preguntas escritas`() {
         val t = textos().getValue(Idioma.EN)
-        val p = construirPlanilla(contenido("EN-F01-C1-2026-1"), t, null)
+        val p = construirPlanilla(contenido("EN-F01-C1-2026-1"), t)
         val giro = p.secciones.first { it.titulo == t.giro }
         assertEquals(listOf(t.giroTexto), giro.lineas)
         assertFalse(giro.lineas.any { it.contains("?") })
@@ -73,7 +74,7 @@ class PlanillaTest {
     @Test
     fun `la planilla termina con el recordatorio de no reescribir lo que dice el alumno`() {
         val t = textos().getValue(Idioma.DE)
-        val p = construirPlanilla(contenido("DE-F01-A2-2026-1"), t, null)
+        val p = construirPlanilla(contenido("DE-F01-A2-2026-1"), t)
         assertEquals(listOf(t.recordatorio), p.secciones.last().lineas)
     }
 
@@ -81,7 +82,7 @@ class PlanillaTest {
     fun `una semana de repaso tambien tiene planilla, con el objetivo de su consigna y sin topic`() {
         val especial = contenido("REVIEW-DE-B2-2026-S40") as SemanaEspecial
         val t = textos().getValue(Idioma.DE)
-        val p = construirPlanilla(especial, t, null)
+        val p = construirPlanilla(especial, t)
         assertTrue(p.encabezado.contains("${especial.semana}"))
         assertTrue(titulos(p).contains(t.objetivo))
         assertFalse(titulos(p).contains(t.tema))
@@ -92,7 +93,7 @@ class PlanillaTest {
     fun `cada idioma aprendible arma su planilla con sus propios textos fijos`() {
         val ficha = contenido("EN-F01-C1-2026-1") as Ficha
         for ((idioma, t) in textos()) {
-            val p = construirPlanilla(ficha, t, null)
+            val p = construirPlanilla(ficha, t)
             assertEquals("$idioma", t.titulo, p.titulo)
             assertTrue(p.secciones.size >= 8)
         }
