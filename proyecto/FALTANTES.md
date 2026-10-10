@@ -803,3 +803,9 @@ Requisitos ya aplicados al empezar: parche de Overview y tuteo de Traducciones c
 **No se puede probar sin UI** (anotado en el encabezado del test): el cableado de cada `Text` de `ContenidoSemanalScreen` a la función correcta, el switch como control y el copiado al portapapeles; lo cubren los tests de pantalla existentes.
 
 **Sigue abierto:** las 3 planillas en dos carillas (a mirar en el teléfono), revisión humana de fr/it/pt (tienda y ahora la interfaz en pt-BR), `camarero`→`mesero` (23.2), dirección visual, 273 expresiones sin categoría, `erroresContrastivos` en el maestro de traducciones (sección 20), 2027/2028.
+
+## 25. Dirección visual (decidida por Fer, 10-oct-2026) — Code Ronda G
+- Temas: Papel (por defecto), Terracota, Mar, Grafito + «Sistema» (color dinámico M3); claro/oscuro/sistema aparte. Tipografías: Sistema, Lectura (Literata), Clara (Atkinson Hyperlegible), todas OFL y embebidas. Referencias: Bear (paletas y tipografías), Material 3 (calidad), Things 3 / Day One / Readwise Reader (fichas, Guardados, Biblioteca). Anti-referencia: Duolingo.
+- Prompt: `prompts/15-code-ronda-g-diseno.md`. Ícono del lanzador y arte de la splash esperan el archivo de Fer (ronda H). Paleta para ícono/splash: la elige Fer entre las cuatro.
+- Se descartó para la UI el segundo color decorativo de cada paleta: la estrella usa el acento (los acentos secundarios amarillo/coral no pasan 3:1 sobre el fondo claro). Solo sirve para ícono/splash.
+- Pendiente de Ajustes: los chips de idioma muestran `EN`/`DE` (tarea 3 lo cierra si es trivial).
