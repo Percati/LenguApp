@@ -1,7 +1,7 @@
 {
  "idioma": "de", "nivel": "B2", "topicId": "T13", "n": 1, "anio": 2027,
  "vocabulario": [
-  {"item": "das Formular ausfüllen", "prioridad": "nucleo", "traducciones": {"es": "rellenar el formulario", "en": "to fill in the form", "fr": "remplir le formulaire", "it": "compilare il modulo", "pt": "preencher o formulário"}},
+  {"item": "das Formular ausfüllen", "prioridad": "nucleo", "nucleoVerbal": "ausfüllen", "claseNucleo": ["trennbar"], "traducciones": {"es": "rellenar el formulario", "en": "to fill in the form", "fr": "remplir le formulaire", "it": "compilare il modulo", "pt": "preencher o formulário"}},
   {"item": "die Frist", "prioridad": "nucleo", "traducciones": {"es": "el plazo", "en": "the deadline", "fr": "le délai", "it": "la scadenza", "pt": "o prazo"}},
   {"item": "zuständig sein für", "prioridad": "nucleo", "reccion": "für + Akk", "traducciones": {"es": "ser responsable de", "en": "to be responsible for", "fr": "être responsable de", "it": "essere responsabile di", "pt": "ser responsável por"}},
   {"item": "die Bescheinigung", "prioridad": "nucleo", "traducciones": {"es": "el certificado, el comprobante", "en": "the certificate, proof", "fr": "l'attestation", "it": "il certificato", "pt": "o certificado"}},
@@ -11,7 +11,7 @@
   {"item": "der Antrag", "prioridad": "ampliacion", "traducciones": {"es": "la solicitud", "en": "the application", "fr": "la demande", "it": "la domanda", "pt": "o requerimento"}},
   {"item": "die Gebührenordnung", "prioridad": "ampliacion", "traducciones": {"es": "el arancel, la tarifa oficial", "en": "the fee schedule", "fr": "le barème des frais", "it": "il tariffario", "pt": "a tabela de taxas"}},
   {"item": "der Kundendienst", "prioridad": "ampliacion", "traducciones": {"es": "la atención al cliente", "en": "customer service", "fr": "le service client", "it": "il servizio clienti", "pt": "o atendimento ao cliente"}},
-  {"item": "die Vorlage einreichen", "prioridad": "ampliacion", "traducciones": {"es": "presentar el documento", "en": "to submit the document", "fr": "soumettre le document", "it": "presentare il documento", "pt": "apresentar o documento"}},
-  {"item": "verlängern lassen", "prioridad": "ampliacion", "traducciones": {"es": "hacer renovar (algo)", "en": "to have renewed", "fr": "faire renouveler", "it": "far rinnovare", "pt": "fazer renovar"}}
+  {"item": "die Vorlage einreichen", "prioridad": "ampliacion", "nucleoVerbal": "einreichen", "claseNucleo": ["trennbar"], "traducciones": {"es": "presentar el documento", "en": "to submit the document", "fr": "soumettre le document", "it": "presentare il documento", "pt": "apresentar o documento"}},
+  {"item": "verlängern lassen", "prioridad": "ampliacion", "nucleoVerbal": "verlängern", "claseNucleo": ["simple"], "traducciones": {"es": "hacer renovar (algo)", "en": "to have renewed", "fr": "faire renouveler", "it": "far rinnovare", "pt": "fazer renovar"}}
  ]
 }

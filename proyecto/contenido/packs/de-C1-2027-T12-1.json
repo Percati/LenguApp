@@ -19,6 +19,10 @@
   {
    "item": "den Dreh herausbekommen",
    "prioridad": "nucleo",
+   "nucleoVerbal": "herausbekommen",
+   "claseNucleo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "agarrarle la mano",
     "en": "to get the hang of it",
@@ -52,6 +56,12 @@
   {
    "item": "einem Hobby nachgehen",
    "prioridad": "nucleo",
+   "nucleoVerbal": "nachgehen",
+   "claseNucleo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
+   "reccionNucleo": "Dat",
    "traducciones": {
     "es": "dedicarse a un pasatiempo",
     "en": "to pursue a hobby",
@@ -63,6 +73,10 @@
   {
    "item": "sich die Zeit vertreiben",
    "prioridad": "nucleo",
+   "nucleoVerbal": "vertreiben",
+   "claseNucleo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "pasar el rato",
     "en": "to pass the time",
@@ -146,6 +160,10 @@
   {
    "item": "neue Kraft tanken",
    "prioridad": "ampliacion",
+   "nucleoVerbal": "tanken",
+   "claseNucleo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "recargar energías",
     "en": "to recharge one's batteries",

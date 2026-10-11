@@ -2,7 +2,13 @@
  "idioma": "de",
  "version": 1,
  "_leeme": "Tabla maestra de verbos (prompt 20). Clave: (idioma, forma normalizada). Se aplica con proyecto/tools/aplicar_verbos.py a TODAS las repeticiones del item en contenido/packs. Solo claseVerbo y reccion llegan al contenido; base, raiz y nota son de trabajo. Sin nivel: la vista Verbos filtra solo por claseVerbo.",
- "clases": ["simple", "reflexivo", "trennbar", "mit-Praposition", "mit-Dativ"],
+ "clases": [
+  "simple",
+  "reflexivo",
+  "trennbar",
+  "mit-Praposition",
+  "mit-Dativ"
+ ],
  "reccionOtros": {
   "das protokoll führen": null,
   "das risiko eingehen": null,
@@ -37,310 +43,4691 @@
   "zuständig sein für": "für + Akk"
  },
  "verbos": [
-  {"forma": "abfahren", "item": "abfahren", "base": "abfahren", "claseVerbo": ["trennbar"], "raiz": "fahren"},
-  {"forma": "abgeben", "item": "abgeben", "base": "abgeben", "claseVerbo": ["trennbar"], "raiz": "geben"},
-  {"forma": "abheben", "item": "abheben", "base": "abheben", "claseVerbo": ["trennbar"], "raiz": "heben"},
-  {"forma": "abholen", "item": "abholen", "base": "abholen", "claseVerbo": ["trennbar"], "raiz": "holen"},
-  {"forma": "ablenken", "item": "ablenken", "base": "ablenken", "claseVerbo": ["trennbar"], "raiz": "lenken"},
-  {"forma": "absagen", "item": "absagen", "base": "absagen", "claseVerbo": ["trennbar"], "raiz": "sagen"},
-  {"forma": "abschalten", "item": "abschalten", "base": "abschalten", "claseVerbo": ["trennbar"], "raiz": "schalten"},
-  {"forma": "abschmecken", "item": "abschmecken", "base": "abschmecken", "claseVerbo": ["trennbar"], "raiz": "schmecken"},
-  {"forma": "abstürzen", "item": "abstürzen", "base": "abstürzen", "claseVerbo": ["trennbar"], "raiz": "stürzen"},
-  {"forma": "achten auf", "item": "achten auf", "base": "achten", "claseVerbo": ["mit-Praposition"], "reccion": "auf + Akk"},
-  {"forma": "aktualisieren", "item": "aktualisieren", "base": "aktualisieren", "claseVerbo": ["simple"]},
-  {"forma": "anbraten", "item": "anbraten", "base": "anbraten", "claseVerbo": ["trennbar"], "raiz": "braten"},
-  {"forma": "anfangen", "item": "anfangen", "base": "anfangen", "claseVerbo": ["trennbar"], "raiz": "fangen"},
-  {"forma": "anlegen", "item": "anlegen", "base": "anlegen", "claseVerbo": ["trennbar"], "raiz": "legen"},
-  {"forma": "anmelden", "item": "anmelden", "base": "anmelden", "claseVerbo": ["trennbar"], "raiz": "melden"},
-  {"forma": "anprobieren", "item": "anprobieren", "base": "anprobieren", "claseVerbo": ["trennbar"], "raiz": "probieren"},
-  {"forma": "anrufen", "item": "anrufen", "base": "anrufen", "claseVerbo": ["trennbar"], "raiz": "rufen"},
-  {"forma": "anschwitzen", "item": "anschwitzen", "base": "anschwitzen", "claseVerbo": ["trennbar"], "raiz": "schwitzen"},
-  {"forma": "arbeiten", "item": "arbeiten", "base": "arbeiten", "claseVerbo": ["simple"]},
-  {"forma": "auf etwas verzichten", "item": "auf etwas verzichten", "base": "verzichten", "claseVerbo": ["mit-Praposition"], "reccion": "auf + Akk"},
-  {"forma": "auf sich achten", "item": "auf sich achten", "base": "achten", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "auf + Akk"},
-  {"forma": "aufbauschen", "item": "aufbauschen", "base": "aufbauschen", "claseVerbo": ["trennbar"], "raiz": "bauschen"},
-  {"forma": "auffallen", "item": "auffallen", "base": "auffallen", "claseVerbo": ["trennbar", "mit-Dativ"], "reccion": "Dat", "raiz": "fallen"},
-  {"forma": "aufgeben", "item": "aufgeben", "base": "aufgeben", "claseVerbo": ["trennbar"], "raiz": "geben"},
-  {"forma": "aufräumen", "item": "aufräumen", "base": "aufräumen", "claseVerbo": ["trennbar"], "raiz": "räumen"},
-  {"forma": "ausfüllen", "item": "ausfüllen", "base": "ausfüllen", "claseVerbo": ["trennbar"], "raiz": "füllen"},
-  {"forma": "ausschalten", "item": "ausschalten", "base": "ausschalten", "claseVerbo": ["trennbar"], "raiz": "schalten"},
-  {"forma": "aussteigen", "item": "aussteigen", "base": "aussteigen", "claseVerbo": ["trennbar"], "raiz": "steigen"},
-  {"forma": "basteln", "item": "basteln", "base": "basteln", "claseVerbo": ["simple"]},
-  {"forma": "beantragen", "item": "beantragen", "base": "beantragen", "claseVerbo": ["simple"]},
-  {"forma": "beeinflussen", "item": "beeinflussen", "base": "beeinflussen", "claseVerbo": ["simple"]},
-  {"forma": "berichten", "item": "berichten", "base": "berichten", "claseVerbo": ["mit-Praposition"], "reccion": "über + Akk / von + Dat"},
-  {"forma": "berichten über", "item": "berichten über", "base": "berichten", "claseVerbo": ["mit-Praposition"], "reccion": "über + Akk"},
-  {"forma": "besichtigen", "item": "besichtigen", "base": "besichtigen", "claseVerbo": ["simple"]},
-  {"forma": "bestehen", "item": "bestehen", "base": "bestehen", "claseVerbo": ["simple"]},
-  {"forma": "bestellen", "item": "bestellen", "base": "bestellen", "claseVerbo": ["simple"]},
-  {"forma": "besuchen", "item": "besuchen", "base": "besuchen", "claseVerbo": ["simple"]},
-  {"forma": "bezahlen", "item": "bezahlen", "base": "bezahlen", "claseVerbo": ["simple"]},
-  {"forma": "brauchen", "item": "brauchen", "base": "brauchen", "claseVerbo": ["simple"]},
-  {"forma": "buchen", "item": "buchen", "base": "buchen", "claseVerbo": ["simple"]},
-  {"forma": "delegieren", "item": "delegieren", "base": "delegieren", "claseVerbo": ["simple"]},
-  {"forma": "dementieren", "item": "dementieren", "base": "dementieren", "claseVerbo": ["simple"]},
-  {"forma": "diskutieren", "item": "diskutieren", "base": "diskutieren", "claseVerbo": ["simple"]},
-  {"forma": "dranbleiben", "item": "dranbleiben", "base": "dranbleiben", "claseVerbo": ["trennbar"], "raiz": "bleiben"},
-  {"forma": "durchfallen", "item": "durchfallen", "base": "durchfallen", "claseVerbo": ["trennbar"], "raiz": "fallen"},
-  {"forma": "einfrieren", "item": "einfrieren", "base": "einfrieren", "claseVerbo": ["trennbar"], "raiz": "frieren"},
-  {"forma": "einkaufen", "item": "einkaufen", "base": "einkaufen", "claseVerbo": ["trennbar"], "raiz": "kaufen"},
-  {"forma": "einlenken", "item": "einlenken", "base": "einlenken", "claseVerbo": ["trennbar"], "raiz": "lenken"},
-  {"forma": "einpacken", "item": "einpacken", "base": "einpacken", "claseVerbo": ["trennbar"], "raiz": "packen"},
-  {"forma": "einschalten", "item": "einschalten", "base": "einschalten", "claseVerbo": ["trennbar"], "raiz": "schalten"},
-  {"forma": "einspringen", "item": "einspringen", "base": "einspringen", "claseVerbo": ["trennbar"], "raiz": "springen"},
-  {"forma": "einsteigen", "item": "einsteigen", "base": "einsteigen", "claseVerbo": ["trennbar"], "raiz": "steigen"},
-  {"forma": "empfehlen", "item": "empfehlen", "base": "empfehlen", "claseVerbo": ["simple"]},
-  {"forma": "erkennen", "item": "erkennen", "base": "erkennen", "claseVerbo": ["simple"]},
-  {"forma": "erklären", "item": "erklären", "base": "erklären", "claseVerbo": ["simple"]},
-  {"forma": "ersetzen", "item": "ersetzen", "base": "ersetzen", "claseVerbo": ["simple"]},
-  {"forma": "erzählen", "item": "erzählen", "base": "erzählen", "claseVerbo": ["simple"]},
-  {"forma": "etwas abbezahlen", "item": "etwas abbezahlen", "base": "abbezahlen", "claseVerbo": ["trennbar"], "raiz": "bezahlen"},
-  {"forma": "etwas abbrechen", "item": "etwas abbrechen", "base": "abbrechen", "claseVerbo": ["trennbar"], "raiz": "brechen"},
-  {"forma": "etwas abbuchen", "item": "etwas abbuchen", "base": "abbuchen", "claseVerbo": ["trennbar"], "raiz": "buchen"},
-  {"forma": "etwas abwägen", "item": "etwas abwägen", "base": "abwägen", "claseVerbo": ["trennbar"], "raiz": "wägen"},
-  {"forma": "etwas anbraten", "item": "etwas anbraten", "base": "anbraten", "claseVerbo": ["trennbar"], "raiz": "braten"},
-  {"forma": "etwas ansprechen", "item": "etwas ansprechen", "base": "ansprechen", "claseVerbo": ["trennbar"], "raiz": "sprechen"},
-  {"forma": "etwas ausprobieren", "item": "etwas ausprobieren", "base": "ausprobieren", "claseVerbo": ["trennbar"], "raiz": "probieren"},
-  {"forma": "etwas automatisieren", "item": "etwas automatisieren", "base": "automatisieren", "claseVerbo": ["simple"]},
-  {"forma": "etwas beanstanden", "item": "etwas beanstanden", "base": "beanstanden", "claseVerbo": ["simple"]},
-  {"forma": "etwas beschönigen", "item": "etwas beschönigen", "base": "beschönigen", "claseVerbo": ["simple"]},
-  {"forma": "etwas bewirken", "item": "etwas bewirken", "base": "bewirken", "claseVerbo": ["simple"]},
-  {"forma": "etwas dementieren", "item": "etwas dementieren", "base": "dementieren", "claseVerbo": ["simple"]},
-  {"forma": "etwas eindämmen", "item": "etwas eindämmen", "base": "eindämmen", "claseVerbo": ["trennbar"], "raiz": "dämmen"},
-  {"forma": "etwas einordnen", "item": "etwas einordnen", "base": "einordnen", "claseVerbo": ["trennbar"], "raiz": "ordnen"},
-  {"forma": "etwas einrichten", "item": "etwas einrichten", "base": "einrichten", "claseVerbo": ["trennbar"], "raiz": "richten"},
-  {"forma": "etwas entgegenwirken", "item": "etwas entgegenwirken", "base": "entgegenwirken", "claseVerbo": ["trennbar", "mit-Dativ"], "reccion": "Dat", "raiz": "wirken"},
-  {"forma": "etwas eskalieren", "item": "etwas eskalieren", "base": "eskalieren", "claseVerbo": ["simple"]},
-  {"forma": "etwas gegenrechnen", "item": "etwas gegenrechnen", "base": "gegenrechnen", "claseVerbo": ["trennbar"], "raiz": "rechnen"},
-  {"forma": "etwas hinterfragen", "item": "etwas hinterfragen", "base": "hinterfragen", "claseVerbo": ["simple"], "nota": "prefijo inseparable aunque empiece por hinter-"},
-  {"forma": "etwas kompensieren", "item": "etwas kompensieren", "base": "kompensieren", "claseVerbo": ["simple"]},
-  {"forma": "etwas kultivieren", "item": "etwas kultivieren", "base": "kultivieren", "claseVerbo": ["simple"]},
-  {"forma": "etwas nachbestellen", "item": "etwas nachbestellen", "base": "nachbestellen", "claseVerbo": ["trennbar"], "raiz": "bestellen"},
-  {"forma": "etwas nachreichen", "item": "etwas nachreichen", "base": "nachreichen", "claseVerbo": ["trennbar"], "raiz": "reichen"},
-  {"forma": "etwas nachrüsten", "item": "etwas nachrüsten", "base": "nachrüsten", "claseVerbo": ["trennbar"], "raiz": "rüsten"},
-  {"forma": "etwas nachvollziehen", "item": "etwas nachvollziehen", "base": "nachvollziehen", "claseVerbo": ["trennbar"], "raiz": "vollziehen"},
-  {"forma": "etwas relativieren", "item": "etwas relativieren", "base": "relativieren", "claseVerbo": ["simple"]},
-  {"forma": "etwas richtigstellen", "item": "etwas richtigstellen", "base": "richtigstellen", "claseVerbo": ["trennbar"], "raiz": "stellen"},
-  {"forma": "etwas skandalisieren", "item": "etwas skandalisieren", "base": "skandalisieren", "claseVerbo": ["simple"]},
-  {"forma": "etwas tun gegen", "item": "etwas tun gegen", "base": "tun", "claseVerbo": ["mit-Praposition"], "reccion": "gegen + Akk"},
-  {"forma": "etwas verantworten", "item": "etwas verantworten", "base": "verantworten", "claseVerbo": ["simple"]},
-  {"forma": "etwas veredeln", "item": "etwas veredeln", "base": "veredeln", "claseVerbo": ["simple"]},
-  {"forma": "etwas verinnerlichen", "item": "etwas verinnerlichen", "base": "verinnerlichen", "claseVerbo": ["simple"]},
-  {"forma": "etwas vertiefen", "item": "etwas vertiefen", "base": "vertiefen", "claseVerbo": ["simple"]},
-  {"forma": "etwas verändern", "item": "etwas verändern", "base": "verändern", "claseVerbo": ["simple"]},
-  {"forma": "etwas voraussetzen", "item": "etwas voraussetzen", "base": "voraussetzen", "claseVerbo": ["trennbar"], "raiz": "setzen"},
-  {"forma": "etwas zurücklegen", "item": "etwas zurücklegen", "base": "zurücklegen", "claseVerbo": ["trennbar"], "raiz": "legen"},
-  {"forma": "etwas zurückrollen", "item": "etwas zurückrollen", "base": "zurückrollen", "claseVerbo": ["trennbar"], "raiz": "rollen"},
-  {"forma": "etwas zurückschicken", "item": "etwas zurückschicken", "base": "zurückschicken", "claseVerbo": ["trennbar"], "raiz": "schicken"},
-  {"forma": "etwas ändern", "item": "etwas ändern", "base": "ändern", "claseVerbo": ["simple"]},
-  {"forma": "etwas übernehmen", "item": "etwas übernehmen", "base": "übernehmen", "claseVerbo": ["simple"], "nota": "prefijo inseparable (übernehmen)"},
-  {"forma": "feilschen", "item": "feilschen", "base": "feilschen", "claseVerbo": ["simple"]},
-  {"forma": "fotografieren", "item": "fotografieren", "base": "fotografieren", "claseVerbo": ["simple"]},
-  {"forma": "fragen", "item": "fragen", "base": "fragen", "claseVerbo": ["simple"]},
-  {"forma": "fremdeln", "item": "fremdeln", "base": "fremdeln", "claseVerbo": ["simple"]},
-  {"forma": "funktionieren", "item": "funktionieren", "base": "funktionieren", "claseVerbo": ["simple"]},
-  {"forma": "gefallen", "item": "gefallen", "base": "gefallen", "claseVerbo": ["mit-Dativ"], "reccion": "Dat"},
-  {"forma": "gewinnen", "item": "gewinnen", "base": "gewinnen", "claseVerbo": ["simple"]},
-  {"forma": "giessen", "item": "giessen", "base": "giessen", "claseVerbo": ["simple"]},
-  {"forma": "glauben", "item": "glauben", "base": "glauben", "claseVerbo": ["mit-Dativ"], "reccion": "Dat"},
-  {"forma": "haushalten", "item": "haushalten", "base": "haushalten", "claseVerbo": ["trennbar"], "raiz": "halten"},
-  {"forma": "heiraten", "item": "heiraten", "base": "heiraten", "claseVerbo": ["simple"]},
-  {"forma": "helfen", "item": "helfen", "base": "helfen", "claseVerbo": ["mit-Dativ"], "reccion": "Dat"},
-  {"forma": "herumwerkeln", "item": "herumwerkeln", "base": "herumwerkeln", "claseVerbo": ["trennbar"], "raiz": "werkeln"},
-  {"forma": "herunterladen", "item": "herunterladen", "base": "herunterladen", "claseVerbo": ["trennbar"], "raiz": "laden"},
-  {"forma": "hinterherhinken", "item": "hinterherhinken", "base": "hinterherhinken", "claseVerbo": ["trennbar"], "raiz": "hinken"},
-  {"forma": "hoffen", "item": "hoffen", "base": "hoffen", "claseVerbo": ["mit-Praposition"], "reccion": "auf + Akk"},
-  {"forma": "in etwas versinken", "item": "in etwas versinken", "base": "versinken", "claseVerbo": ["mit-Praposition"], "reccion": "in + Akk/Dat"},
-  {"forma": "jemandem etwas anvertrauen", "item": "jemandem etwas anvertrauen", "base": "anvertrauen", "claseVerbo": ["trennbar"], "raiz": "vertrauen"},
-  {"forma": "jemandem etwas gönnen", "item": "jemandem etwas gönnen", "base": "gönnen", "claseVerbo": ["simple"]},
-  {"forma": "jemandem etwas vorwerfen", "item": "jemandem etwas vorwerfen", "base": "vorwerfen", "claseVerbo": ["trennbar"], "raiz": "werfen"},
-  {"forma": "jemandem etwas übelnehmen", "item": "jemandem etwas übelnehmen", "base": "übelnehmen", "claseVerbo": ["trennbar"], "raiz": "nehmen"},
-  {"forma": "jemandem kündigen", "item": "jemandem kündigen", "base": "kündigen", "claseVerbo": ["mit-Dativ"], "reccion": "Dat"},
-  {"forma": "jemandem verzeihen", "item": "jemandem verzeihen", "base": "verzeihen", "claseVerbo": ["mit-Dativ"], "reccion": "Dat"},
-  {"forma": "jemandem zuhören", "item": "jemandem zuhören", "base": "zuhören", "claseVerbo": ["trennbar", "mit-Dativ"], "reccion": "Dat", "raiz": "hören"},
-  {"forma": "jemanden kaltstellen", "item": "jemanden kaltstellen", "base": "kaltstellen", "claseVerbo": ["trennbar"], "raiz": "stellen"},
-  {"forma": "jemanden vermissen", "item": "jemanden vermissen", "base": "vermissen", "claseVerbo": ["simple"]},
-  {"forma": "kaufen", "item": "kaufen", "base": "kaufen", "claseVerbo": ["simple"]},
-  {"forma": "klappen", "item": "klappen", "base": "klappen", "claseVerbo": ["simple"]},
-  {"forma": "kochen", "item": "kochen", "base": "kochen", "claseVerbo": ["simple"]},
-  {"forma": "kosten", "item": "kosten", "base": "kosten", "claseVerbo": ["simple"]},
-  {"forma": "krankmelden", "item": "krankmelden", "base": "krankmelden", "claseVerbo": ["trennbar"], "raiz": "melden"},
-  {"forma": "kränkeln", "item": "kränkeln", "base": "kränkeln", "claseVerbo": ["simple"]},
-  {"forma": "kündigen", "item": "kündigen", "base": "kündigen", "claseVerbo": ["simple"]},
-  {"forma": "laden", "item": "laden", "base": "laden", "claseVerbo": ["simple"]},
-  {"forma": "lernen", "item": "lernen", "base": "lernen", "claseVerbo": ["simple"]},
-  {"forma": "lesen", "item": "lesen", "base": "lesen", "claseVerbo": ["simple"]},
-  {"forma": "löschen", "item": "löschen", "base": "löschen", "claseVerbo": ["simple"]},
-  {"forma": "mieten", "item": "mieten", "base": "mieten", "claseVerbo": ["simple"]},
-  {"forma": "mitbringen", "item": "mitbringen", "base": "mitbringen", "claseVerbo": ["trennbar"], "raiz": "bringen"},
-  {"forma": "mitmachen", "item": "mitmachen", "base": "mitmachen", "claseVerbo": ["trennbar"], "raiz": "machen"},
-  {"forma": "nachfragen", "item": "nachfragen", "base": "nachfragen", "claseVerbo": ["trennbar"], "raiz": "fragen"},
-  {"forma": "nachgeben", "item": "nachgeben", "base": "nachgeben", "claseVerbo": ["trennbar", "mit-Dativ"], "reccion": "Dat", "raiz": "geben"},
-  {"forma": "nachreichen", "item": "nachreichen", "base": "nachreichen", "claseVerbo": ["trennbar"], "raiz": "reichen"},
-  {"forma": "nachrüsten", "item": "nachrüsten", "base": "nachrüsten", "claseVerbo": ["trennbar"], "raiz": "rüsten"},
-  {"forma": "parkieren", "item": "parkieren", "base": "parkieren", "claseVerbo": ["simple"]},
-  {"forma": "passen", "item": "passen", "base": "passen", "claseVerbo": ["mit-Dativ"], "reccion": "Dat"},
-  {"forma": "passieren", "item": "passieren", "base": "passieren", "claseVerbo": ["mit-Dativ"], "reccion": "Dat"},
-  {"forma": "probieren", "item": "probieren", "base": "probieren", "claseVerbo": ["simple"]},
-  {"forma": "protestieren", "item": "protestieren", "base": "protestieren", "claseVerbo": ["mit-Praposition"], "reccion": "gegen + Akk"},
-  {"forma": "prüfen", "item": "prüfen", "base": "prüfen", "claseVerbo": ["simple"]},
-  {"forma": "rauchen", "item": "rauchen", "base": "rauchen", "claseVerbo": ["simple"]},
-  {"forma": "reklamieren", "item": "reklamieren", "base": "reklamieren", "claseVerbo": ["simple"]},
-  {"forma": "reparieren", "item": "reparieren", "base": "reparieren", "claseVerbo": ["simple"]},
-  {"forma": "reservieren", "item": "reservieren", "base": "reservieren", "claseVerbo": ["simple"]},
-  {"forma": "schlafen", "item": "schlafen", "base": "schlafen", "claseVerbo": ["simple"]},
-  {"forma": "schmecken", "item": "schmecken", "base": "schmecken", "claseVerbo": ["mit-Dativ"], "reccion": "Dat"},
-  {"forma": "schneiden", "item": "schneiden", "base": "schneiden", "claseVerbo": ["simple"]},
-  {"forma": "schwimmen", "item": "schwimmen", "base": "schwimmen", "claseVerbo": ["simple"]},
-  {"forma": "schönreden", "item": "schönreden", "base": "schönreden", "claseVerbo": ["trennbar"], "raiz": "reden"},
-  {"forma": "schützen", "item": "schützen", "base": "schützen", "claseVerbo": ["simple"]},
-  {"forma": "sich abgrenzen", "item": "sich abgrenzen", "base": "sich abgrenzen", "claseVerbo": ["reflexivo", "trennbar", "mit-Praposition"], "reccion": "von + Dat", "raiz": "grenzen"},
-  {"forma": "sich absichern", "item": "sich absichern", "base": "sich absichern", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "sichern"},
-  {"forma": "sich absichern gegen", "item": "sich absichern gegen", "base": "sich absichern", "claseVerbo": ["reflexivo", "trennbar", "mit-Praposition"], "reccion": "gegen + Akk", "raiz": "sichern"},
-  {"forma": "sich abstimmen", "item": "sich abstimmen", "base": "sich abstimmen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "stimmen"},
-  {"forma": "sich abzeichnen", "item": "sich abzeichnen", "base": "sich abzeichnen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "zeichnen", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich akklimatisieren", "item": "sich akklimatisieren", "base": "sich akklimatisieren", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich anmelden", "item": "sich anmelden", "base": "sich anmelden", "claseVerbo": ["reflexivo", "trennbar", "mit-Praposition"], "reccion": "bei + Dat / zu + Dat", "raiz": "melden"},
-  {"forma": "sich anmelden für", "item": "sich anmelden für", "base": "sich anmelden", "claseVerbo": ["reflexivo", "trennbar", "mit-Praposition"], "reccion": "für + Akk", "raiz": "melden"},
-  {"forma": "sich anpassen", "item": "sich anpassen", "base": "sich anpassen", "claseVerbo": ["reflexivo", "trennbar", "mit-Praposition"], "reccion": "an + Akk", "raiz": "passen"},
-  {"forma": "sich auf etwas verlassen", "item": "sich auf etwas verlassen", "base": "sich verlassen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "auf + Akk"},
-  {"forma": "sich auseinanderleben", "item": "sich auseinanderleben", "base": "sich auseinanderleben", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "leben", "nota": "recíproco"},
-  {"forma": "sich auskennen", "item": "sich auskennen", "base": "sich auskennen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "kennen", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich auskurieren", "item": "sich auskurieren", "base": "sich auskurieren", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "kurieren"},
-  {"forma": "sich auspowern", "item": "sich auspowern", "base": "sich auspowern", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "powern"},
-  {"forma": "sich ausruhen", "item": "sich ausruhen", "base": "sich ausruhen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "ruhen"},
-  {"forma": "sich aussprechen", "item": "sich aussprechen", "base": "sich aussprechen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "sprechen"},
-  {"forma": "sich austoben", "item": "sich austoben", "base": "sich austoben", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "toben"},
-  {"forma": "sich belohnen", "item": "sich belohnen", "base": "sich belohnen", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich beschweren", "item": "sich beschweren", "base": "sich beschweren", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "über + Akk / bei + Dat", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich beschäftigen mit", "item": "sich beschäftigen mit", "base": "sich beschäftigen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "mit + Dat"},
-  {"forma": "sich bewerben", "item": "sich bewerben", "base": "sich bewerben", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "um + Akk / bei + Dat", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich bewerben um", "item": "sich bewerben um", "base": "sich bewerben", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "um + Akk", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich bewähren", "item": "sich bewähren", "base": "sich bewähren", "claseVerbo": ["reflexivo"], "nota": "reflexivo casi fijo (el sentido 2, obsoleto, no lleva sich)"},
-  {"forma": "sich distanzieren von", "item": "sich distanzieren von", "base": "sich distanzieren", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "von + Dat", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich durchsetzen", "item": "sich durchsetzen", "base": "sich durchsetzen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "setzen"},
-  {"forma": "sich einarbeiten", "item": "sich einarbeiten", "base": "sich einarbeiten", "claseVerbo": ["reflexivo", "trennbar", "mit-Praposition"], "reccion": "in + Akk", "raiz": "arbeiten"},
-  {"forma": "sich einarbeiten in", "item": "sich einarbeiten in", "base": "sich einarbeiten", "claseVerbo": ["reflexivo", "trennbar", "mit-Praposition"], "reccion": "in + Akk", "raiz": "arbeiten"},
-  {"forma": "sich einbringen", "item": "sich einbringen", "base": "sich einbringen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "bringen"},
-  {"forma": "sich eingewöhnen", "item": "sich eingewöhnen", "base": "sich eingewöhnen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "gewöhnen"},
-  {"forma": "sich einigen", "item": "sich einigen", "base": "sich einigen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "auf + Akk / über + Akk", "nota": "recíproco; «einigen» no es separable"},
-  {"forma": "sich einlassen auf", "item": "sich einlassen auf", "base": "sich einlassen", "claseVerbo": ["reflexivo", "trennbar", "mit-Praposition"], "reccion": "auf + Akk", "raiz": "lassen", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich einleben", "item": "sich einleben", "base": "sich einleben", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "leben", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich einmischen", "item": "sich einmischen", "base": "sich einmischen", "claseVerbo": ["reflexivo", "trennbar", "mit-Praposition"], "reccion": "in + Akk", "raiz": "mischen", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich einschränken", "item": "sich einschränken", "base": "sich einschränken", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "schränken"},
-  {"forma": "sich engagieren", "item": "sich engagieren", "base": "sich engagieren", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "für + Akk"},
-  {"forma": "sich engagieren für", "item": "sich engagieren für", "base": "sich engagieren", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "für + Akk"},
-  {"forma": "sich entscheiden", "item": "sich entscheiden", "base": "sich entscheiden", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "für + Akk / gegen + Akk"},
-  {"forma": "sich entschuldigen", "item": "sich entschuldigen", "base": "sich entschuldigen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "für + Akk / bei + Dat"},
-  {"forma": "sich entspannen", "item": "sich entspannen", "base": "sich entspannen", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich erholen", "item": "sich erholen", "base": "sich erholen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "von + Dat"},
-  {"forma": "sich erkundigen", "item": "sich erkundigen", "base": "sich erkundigen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "nach + Dat", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich etwas aneignen", "item": "sich etwas aneignen", "base": "sich aneignen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "eignen"},
-  {"forma": "sich etwas aufteilen", "item": "sich etwas aufteilen", "base": "sich aufteilen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "teilen"},
-  {"forma": "sich etwas bestellen", "item": "sich etwas bestellen", "base": "sich bestellen", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich etwas gönnen", "item": "sich etwas gönnen", "base": "sich gönnen", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich etwas leisten", "item": "sich etwas leisten", "base": "sich leisten", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich fordern", "item": "sich fordern", "base": "sich fordern", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich fortbilden", "item": "sich fortbilden", "base": "sich fortbilden", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "bilden"},
-  {"forma": "sich freuen", "item": "sich freuen", "base": "sich freuen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "auf + Akk / über + Akk", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich freuen auf", "item": "sich freuen auf", "base": "sich freuen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "auf + Akk", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich freuen über", "item": "sich freuen über", "base": "sich freuen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "über + Akk", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich fühlen", "item": "sich fühlen", "base": "sich fühlen", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich gedulden", "item": "sich gedulden", "base": "sich gedulden", "claseVerbo": ["reflexivo"], "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich gewöhnen an", "item": "sich gewöhnen an", "base": "sich gewöhnen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "an + Akk"},
-  {"forma": "sich hinlegen", "item": "sich hinlegen", "base": "sich hinlegen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "legen"},
-  {"forma": "sich in etwas versuchen", "item": "sich in etwas versuchen", "base": "sich versuchen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "in + Dat"},
-  {"forma": "sich in etwas vertiefen", "item": "sich in etwas vertiefen", "base": "sich vertiefen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "in + Akk"},
-  {"forma": "sich informieren", "item": "sich informieren", "base": "sich informieren", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "über + Akk"},
-  {"forma": "sich informieren über", "item": "sich informieren über", "base": "sich informieren", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "über + Akk"},
-  {"forma": "sich jemandem öffnen", "item": "sich jemandem öffnen", "base": "sich öffnen", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich konzentrieren", "item": "sich konzentrieren", "base": "sich konzentrieren", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "auf + Akk"},
-  {"forma": "sich krankmelden", "item": "sich krankmelden", "base": "sich krankmelden", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "melden"},
-  {"forma": "sich kümmern um", "item": "sich kümmern um", "base": "sich kümmern", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "um + Akk", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich lohnen", "item": "sich lohnen", "base": "sich lohnen", "claseVerbo": ["reflexivo"], "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich melden", "item": "sich melden", "base": "sich melden", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich schonen", "item": "sich schonen", "base": "sich schonen", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich streiten", "item": "sich streiten", "base": "sich streiten", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "über + Akk / um + Akk", "nota": "recíproco"},
-  {"forma": "sich treffen", "item": "sich treffen", "base": "sich treffen", "claseVerbo": ["reflexivo"], "nota": "recíproco"},
-  {"forma": "sich trennen", "item": "sich trennen", "base": "sich trennen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "von + Dat", "nota": "recíproco o reflexivo según el sentido"},
-  {"forma": "sich um etwas kümmern", "item": "sich um etwas kümmern", "base": "sich kümmern", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "um + Akk", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich umsehen", "item": "sich umsehen", "base": "sich umsehen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "sehen"},
-  {"forma": "sich verabreden", "item": "sich verabreden", "base": "sich verabreden", "claseVerbo": ["reflexivo"], "nota": "recíproco"},
-  {"forma": "sich verbessern", "item": "sich verbessern", "base": "sich verbessern", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich verbreiten", "item": "sich verbreiten", "base": "sich verbreiten", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich verfahren", "item": "sich verfahren", "base": "sich verfahren", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich verlassen auf", "item": "sich verlassen auf", "base": "sich verlassen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "auf + Akk"},
-  {"forma": "sich verlaufen", "item": "sich verlaufen", "base": "sich verlaufen", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich verletzen", "item": "sich verletzen", "base": "sich verletzen", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich verloben", "item": "sich verloben", "base": "sich verloben", "claseVerbo": ["reflexivo"], "nota": "recíproco"},
-  {"forma": "sich verrechnen", "item": "sich verrechnen", "base": "sich verrechnen", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich verschulden", "item": "sich verschulden", "base": "sich verschulden", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich versichern", "item": "sich versichern", "base": "sich versichern", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich verstehen", "item": "sich verstehen", "base": "sich verstehen", "claseVerbo": ["reflexivo"], "nota": "recíproco"},
-  {"forma": "sich versöhnen", "item": "sich versöhnen", "base": "sich versöhnen", "claseVerbo": ["reflexivo"], "nota": "recíproco"},
-  {"forma": "sich vertiefen in", "item": "sich vertiefen in", "base": "sich vertiefen", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "in + Akk"},
-  {"forma": "sich vertragen", "item": "sich vertragen", "base": "sich vertragen", "claseVerbo": ["reflexivo"], "nota": "recíproco"},
-  {"forma": "sich verzetteln", "item": "sich verzetteln", "base": "sich verzetteln", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich verändern", "item": "sich verändern", "base": "sich verändern", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich vorstellen", "item": "sich vorstellen", "base": "sich vorstellen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "stellen"},
-  {"forma": "sich weiterentwickeln", "item": "sich weiterentwickeln", "base": "sich weiterentwickeln", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "entwickeln"},
-  {"forma": "sich weiterqualifizieren", "item": "sich weiterqualifizieren", "base": "sich weiterqualifizieren", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "qualifizieren"},
-  {"forma": "sich wohlfühlen", "item": "sich wohlfühlen", "base": "sich wohlfühlen", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "fühlen"},
-  {"forma": "sich zerstreiten", "item": "sich zerstreiten", "base": "sich zerstreiten", "claseVerbo": ["reflexivo"], "nota": "recíproco"},
-  {"forma": "sich zurechtfinden", "item": "sich zurechtfinden", "base": "sich zurechtfinden", "claseVerbo": ["reflexivo", "trennbar"], "raiz": "finden"},
-  {"forma": "sich ändern", "item": "sich ändern", "base": "sich ändern", "claseVerbo": ["reflexivo"]},
-  {"forma": "sich äussern", "item": "sich äussern", "base": "sich äussern", "claseVerbo": ["reflexivo", "mit-Praposition"], "reccion": "zu + Dat", "nota": "reflexivo fijo (solo con sich)"},
-  {"forma": "sich überschulden", "item": "sich überschulden", "base": "sich überschulden", "claseVerbo": ["reflexivo"]},
-  {"forma": "sparen", "item": "sparen", "base": "sparen", "claseVerbo": ["simple"]},
-  {"forma": "speichern", "item": "speichern", "base": "speichern", "claseVerbo": ["simple"]},
-  {"forma": "spielen", "item": "spielen", "base": "spielen", "claseVerbo": ["simple"]},
-  {"forma": "steigen", "item": "steigen", "base": "steigen", "claseVerbo": ["simple"]},
-  {"forma": "streiten", "item": "streiten", "base": "streiten", "claseVerbo": ["mit-Praposition"], "reccion": "über + Akk / um + Akk"},
-  {"forma": "suchen", "item": "suchen", "base": "suchen", "claseVerbo": ["simple"]},
-  {"forma": "surfen", "item": "surfen", "base": "surfen", "claseVerbo": ["simple"]},
-  {"forma": "teilen", "item": "teilen", "base": "teilen", "claseVerbo": ["simple"]},
-  {"forma": "tippen", "item": "tippen", "base": "tippen", "claseVerbo": ["simple"]},
-  {"forma": "trainieren", "item": "trainieren", "base": "trainieren", "claseVerbo": ["simple"]},
-  {"forma": "treffen", "item": "treffen", "base": "treffen", "claseVerbo": ["simple"]},
-  {"forma": "trennen", "item": "trennen", "base": "trennen", "claseVerbo": ["simple"]},
-  {"forma": "tüfteln", "item": "tüfteln", "base": "tüfteln", "claseVerbo": ["mit-Praposition"], "reccion": "an + Dat"},
-  {"forma": "umsteigen", "item": "umsteigen", "base": "umsteigen", "claseVerbo": ["trennbar"], "raiz": "steigen"},
-  {"forma": "umsteigen auf", "item": "umsteigen auf", "base": "umsteigen", "claseVerbo": ["trennbar", "mit-Praposition"], "reccion": "auf + Akk", "raiz": "steigen"},
-  {"forma": "umtauschen", "item": "umtauschen", "base": "umtauschen", "claseVerbo": ["trennbar"], "raiz": "tauschen"},
-  {"forma": "umziehen", "item": "umziehen", "base": "umziehen", "claseVerbo": ["trennbar"], "raiz": "ziehen"},
-  {"forma": "unterschreiben", "item": "unterschreiben", "base": "unterschreiben", "claseVerbo": ["simple"], "nota": "prefijo inseparable (unterschreiben)"},
-  {"forma": "verderben", "item": "verderben", "base": "verderben", "claseVerbo": ["simple"]},
-  {"forma": "verdienen", "item": "verdienen", "base": "verdienen", "claseVerbo": ["simple"]},
-  {"forma": "verfeinern", "item": "verfeinern", "base": "verfeinern", "claseVerbo": ["simple"]},
-  {"forma": "vergleichen", "item": "vergleichen", "base": "vergleichen", "claseVerbo": ["simple"]},
-  {"forma": "verlieren", "item": "verlieren", "base": "verlieren", "claseVerbo": ["simple"]},
-  {"forma": "vermeiden", "item": "vermeiden", "base": "vermeiden", "claseVerbo": ["simple"]},
-  {"forma": "verschenken", "item": "verschenken", "base": "verschenken", "claseVerbo": ["simple"]},
-  {"forma": "verschlafen", "item": "verschlafen", "base": "verschlafen", "claseVerbo": ["simple"]},
-  {"forma": "verstehen", "item": "verstehen", "base": "verstehen", "claseVerbo": ["simple"]},
-  {"forma": "vertrauen", "item": "vertrauen", "base": "vertrauen", "claseVerbo": ["mit-Dativ"], "reccion": "Dat"},
-  {"forma": "verzeihen", "item": "verzeihen", "base": "verzeihen", "claseVerbo": ["mit-Dativ"], "reccion": "Dat"},
-  {"forma": "verzichten auf", "item": "verzichten auf", "base": "verzichten", "claseVerbo": ["mit-Praposition"], "reccion": "auf + Akk"},
-  {"forma": "wandern", "item": "wandern", "base": "wandern", "claseVerbo": ["simple"]},
-  {"forma": "warten", "item": "warten", "base": "warten", "claseVerbo": ["mit-Praposition"], "reccion": "auf + Akk"},
-  {"forma": "wechseln", "item": "wechseln", "base": "wechseln", "claseVerbo": ["simple"]},
-  {"forma": "wegwerfen", "item": "wegwerfen", "base": "wegwerfen", "claseVerbo": ["trennbar"], "raiz": "werfen"},
-  {"forma": "wehtun", "item": "wehtun", "base": "wehtun", "claseVerbo": ["trennbar", "mit-Dativ"], "reccion": "Dat", "raiz": "tun"},
-  {"forma": "weitergeben", "item": "weitergeben", "base": "weitergeben", "claseVerbo": ["trennbar"], "raiz": "geben"},
-  {"forma": "weitermachen", "item": "weitermachen", "base": "weitermachen", "claseVerbo": ["trennbar"], "raiz": "machen"},
-  {"forma": "werkeln", "item": "werkeln", "base": "werkeln", "claseVerbo": ["simple"]},
-  {"forma": "widersprechen", "item": "widersprechen", "base": "widersprechen", "claseVerbo": ["mit-Dativ"], "reccion": "Dat", "nota": "prefijo inseparable (widersprechen)"},
-  {"forma": "wiederholen", "item": "wiederholen", "base": "wiederholen", "claseVerbo": ["simple"], "nota": "inseparable con el sentido «repetir»"},
-  {"forma": "wiederverwenden", "item": "wiederverwenden", "base": "wiederverwenden", "claseVerbo": ["trennbar"], "raiz": "verwenden"},
-  {"forma": "wissen", "item": "wissen", "base": "wissen", "claseVerbo": ["simple"]},
-  {"forma": "würzen", "item": "würzen", "base": "würzen", "claseVerbo": ["simple"]},
-  {"forma": "zubereiten", "item": "zubereiten", "base": "zubereiten", "claseVerbo": ["trennbar"], "raiz": "bereiten"},
-  {"forma": "zuhören", "item": "zuhören", "base": "zuhören", "claseVerbo": ["trennbar", "mit-Dativ"], "reccion": "Dat", "raiz": "hören"},
-  {"forma": "zurückkommen", "item": "zurückkommen", "base": "zurückkommen", "claseVerbo": ["trennbar"], "raiz": "kommen"},
-  {"forma": "zurückschicken", "item": "zurückschicken", "base": "zurückschicken", "claseVerbo": ["trennbar"], "raiz": "schicken"},
-  {"forma": "zustimmen", "item": "zustimmen", "base": "zustimmen", "claseVerbo": ["trennbar", "mit-Dativ"], "reccion": "Dat", "raiz": "stimmen"},
-  {"forma": "üben", "item": "üben", "base": "üben", "claseVerbo": ["simple"]},
-  {"forma": "überliefern", "item": "überliefern", "base": "überliefern", "claseVerbo": ["simple"], "nota": "prefijo inseparable (überliefern)"},
-  {"forma": "überweisen", "item": "überweisen", "base": "überweisen", "claseVerbo": ["simple"], "nota": "prefijo inseparable (überweisen)"}
- ]
+  {
+   "forma": "abfahren",
+   "item": "abfahren",
+   "base": "abfahren",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "fahren"
+  },
+  {
+   "forma": "abgeben",
+   "item": "abgeben",
+   "base": "abgeben",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "geben"
+  },
+  {
+   "forma": "abheben",
+   "item": "abheben",
+   "base": "abheben",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "heben"
+  },
+  {
+   "forma": "abholen",
+   "item": "abholen",
+   "base": "abholen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "holen"
+  },
+  {
+   "forma": "ablenken",
+   "item": "ablenken",
+   "base": "ablenken",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "lenken"
+  },
+  {
+   "forma": "absagen",
+   "item": "absagen",
+   "base": "absagen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "sagen"
+  },
+  {
+   "forma": "abschalten",
+   "item": "abschalten",
+   "base": "abschalten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "schalten"
+  },
+  {
+   "forma": "abschmecken",
+   "item": "abschmecken",
+   "base": "abschmecken",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "schmecken"
+  },
+  {
+   "forma": "abstürzen",
+   "item": "abstürzen",
+   "base": "abstürzen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "stürzen"
+  },
+  {
+   "forma": "achten auf",
+   "item": "achten auf",
+   "base": "achten",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk"
+  },
+  {
+   "forma": "aktualisieren",
+   "item": "aktualisieren",
+   "base": "aktualisieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "anbraten",
+   "item": "anbraten",
+   "base": "anbraten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "braten"
+  },
+  {
+   "forma": "anfangen",
+   "item": "anfangen",
+   "base": "anfangen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "fangen"
+  },
+  {
+   "forma": "anlegen",
+   "item": "anlegen",
+   "base": "anlegen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "legen"
+  },
+  {
+   "forma": "anmelden",
+   "item": "anmelden",
+   "base": "anmelden",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "melden"
+  },
+  {
+   "forma": "anprobieren",
+   "item": "anprobieren",
+   "base": "anprobieren",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "probieren"
+  },
+  {
+   "forma": "anrufen",
+   "item": "anrufen",
+   "base": "anrufen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "rufen"
+  },
+  {
+   "forma": "anschwitzen",
+   "item": "anschwitzen",
+   "base": "anschwitzen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "schwitzen"
+  },
+  {
+   "forma": "arbeiten",
+   "item": "arbeiten",
+   "base": "arbeiten",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "auf etwas verzichten",
+   "item": "auf etwas verzichten",
+   "base": "verzichten",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk"
+  },
+  {
+   "forma": "auf sich achten",
+   "item": "auf sich achten",
+   "base": "achten",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk"
+  },
+  {
+   "forma": "aufbauschen",
+   "item": "aufbauschen",
+   "base": "aufbauschen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "bauschen"
+  },
+  {
+   "forma": "auffallen",
+   "item": "auffallen",
+   "base": "auffallen",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
+   "reccion": "Dat",
+   "raiz": "fallen"
+  },
+  {
+   "forma": "aufgeben",
+   "item": "aufgeben",
+   "base": "aufgeben",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "geben"
+  },
+  {
+   "forma": "aufräumen",
+   "item": "aufräumen",
+   "base": "aufräumen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "räumen"
+  },
+  {
+   "forma": "ausfüllen",
+   "item": "ausfüllen",
+   "base": "ausfüllen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "füllen"
+  },
+  {
+   "forma": "ausschalten",
+   "item": "ausschalten",
+   "base": "ausschalten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "schalten"
+  },
+  {
+   "forma": "aussteigen",
+   "item": "aussteigen",
+   "base": "aussteigen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "steigen"
+  },
+  {
+   "forma": "basteln",
+   "item": "basteln",
+   "base": "basteln",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "beantragen",
+   "item": "beantragen",
+   "base": "beantragen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "beeinflussen",
+   "item": "beeinflussen",
+   "base": "beeinflussen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "berichten",
+   "item": "berichten",
+   "base": "berichten",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "über + Akk / von + Dat"
+  },
+  {
+   "forma": "berichten über",
+   "item": "berichten über",
+   "base": "berichten",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "über + Akk"
+  },
+  {
+   "forma": "besichtigen",
+   "item": "besichtigen",
+   "base": "besichtigen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "bestehen",
+   "item": "bestehen",
+   "base": "bestehen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "bestellen",
+   "item": "bestellen",
+   "base": "bestellen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "besuchen",
+   "item": "besuchen",
+   "base": "besuchen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "bezahlen",
+   "item": "bezahlen",
+   "base": "bezahlen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "brauchen",
+   "item": "brauchen",
+   "base": "brauchen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "buchen",
+   "item": "buchen",
+   "base": "buchen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "delegieren",
+   "item": "delegieren",
+   "base": "delegieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "dementieren",
+   "item": "dementieren",
+   "base": "dementieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "diskutieren",
+   "item": "diskutieren",
+   "base": "diskutieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "dranbleiben",
+   "item": "dranbleiben",
+   "base": "dranbleiben",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "bleiben"
+  },
+  {
+   "forma": "durchfallen",
+   "item": "durchfallen",
+   "base": "durchfallen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "fallen"
+  },
+  {
+   "forma": "einfrieren",
+   "item": "einfrieren",
+   "base": "einfrieren",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "frieren"
+  },
+  {
+   "forma": "einkaufen",
+   "item": "einkaufen",
+   "base": "einkaufen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "kaufen"
+  },
+  {
+   "forma": "einlenken",
+   "item": "einlenken",
+   "base": "einlenken",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "lenken"
+  },
+  {
+   "forma": "einpacken",
+   "item": "einpacken",
+   "base": "einpacken",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "packen"
+  },
+  {
+   "forma": "einschalten",
+   "item": "einschalten",
+   "base": "einschalten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "schalten"
+  },
+  {
+   "forma": "einspringen",
+   "item": "einspringen",
+   "base": "einspringen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "springen"
+  },
+  {
+   "forma": "einsteigen",
+   "item": "einsteigen",
+   "base": "einsteigen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "steigen"
+  },
+  {
+   "forma": "empfehlen",
+   "item": "empfehlen",
+   "base": "empfehlen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "erkennen",
+   "item": "erkennen",
+   "base": "erkennen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "erklären",
+   "item": "erklären",
+   "base": "erklären",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "ersetzen",
+   "item": "ersetzen",
+   "base": "ersetzen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "erzählen",
+   "item": "erzählen",
+   "base": "erzählen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas abbezahlen",
+   "item": "etwas abbezahlen",
+   "base": "abbezahlen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "bezahlen"
+  },
+  {
+   "forma": "etwas abbrechen",
+   "item": "etwas abbrechen",
+   "base": "abbrechen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "brechen"
+  },
+  {
+   "forma": "etwas abbuchen",
+   "item": "etwas abbuchen",
+   "base": "abbuchen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "buchen"
+  },
+  {
+   "forma": "etwas abwägen",
+   "item": "etwas abwägen",
+   "base": "abwägen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "wägen"
+  },
+  {
+   "forma": "etwas anbraten",
+   "item": "etwas anbraten",
+   "base": "anbraten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "braten"
+  },
+  {
+   "forma": "etwas ansprechen",
+   "item": "etwas ansprechen",
+   "base": "ansprechen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "sprechen"
+  },
+  {
+   "forma": "etwas ausprobieren",
+   "item": "etwas ausprobieren",
+   "base": "ausprobieren",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "probieren"
+  },
+  {
+   "forma": "etwas automatisieren",
+   "item": "etwas automatisieren",
+   "base": "automatisieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas beanstanden",
+   "item": "etwas beanstanden",
+   "base": "beanstanden",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas beschönigen",
+   "item": "etwas beschönigen",
+   "base": "beschönigen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas bewirken",
+   "item": "etwas bewirken",
+   "base": "bewirken",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas dementieren",
+   "item": "etwas dementieren",
+   "base": "dementieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas eindämmen",
+   "item": "etwas eindämmen",
+   "base": "eindämmen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "dämmen"
+  },
+  {
+   "forma": "etwas einordnen",
+   "item": "etwas einordnen",
+   "base": "einordnen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "ordnen"
+  },
+  {
+   "forma": "etwas einrichten",
+   "item": "etwas einrichten",
+   "base": "einrichten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "richten"
+  },
+  {
+   "forma": "etwas entgegenwirken",
+   "item": "etwas entgegenwirken",
+   "base": "entgegenwirken",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
+   "reccion": "Dat",
+   "raiz": "wirken"
+  },
+  {
+   "forma": "etwas eskalieren",
+   "item": "etwas eskalieren",
+   "base": "eskalieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas gegenrechnen",
+   "item": "etwas gegenrechnen",
+   "base": "gegenrechnen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "rechnen"
+  },
+  {
+   "forma": "etwas hinterfragen",
+   "item": "etwas hinterfragen",
+   "base": "hinterfragen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "nota": "prefijo inseparable aunque empiece por hinter-"
+  },
+  {
+   "forma": "etwas kompensieren",
+   "item": "etwas kompensieren",
+   "base": "kompensieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas kultivieren",
+   "item": "etwas kultivieren",
+   "base": "kultivieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas nachbestellen",
+   "item": "etwas nachbestellen",
+   "base": "nachbestellen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "bestellen"
+  },
+  {
+   "forma": "etwas nachreichen",
+   "item": "etwas nachreichen",
+   "base": "nachreichen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "reichen"
+  },
+  {
+   "forma": "etwas nachrüsten",
+   "item": "etwas nachrüsten",
+   "base": "nachrüsten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "rüsten"
+  },
+  {
+   "forma": "etwas nachvollziehen",
+   "item": "etwas nachvollziehen",
+   "base": "nachvollziehen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "vollziehen"
+  },
+  {
+   "forma": "etwas relativieren",
+   "item": "etwas relativieren",
+   "base": "relativieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas richtigstellen",
+   "item": "etwas richtigstellen",
+   "base": "richtigstellen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "stellen"
+  },
+  {
+   "forma": "etwas skandalisieren",
+   "item": "etwas skandalisieren",
+   "base": "skandalisieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas tun gegen",
+   "item": "etwas tun gegen",
+   "base": "tun",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "gegen + Akk"
+  },
+  {
+   "forma": "etwas verantworten",
+   "item": "etwas verantworten",
+   "base": "verantworten",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas veredeln",
+   "item": "etwas veredeln",
+   "base": "veredeln",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas verinnerlichen",
+   "item": "etwas verinnerlichen",
+   "base": "verinnerlichen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas vertiefen",
+   "item": "etwas vertiefen",
+   "base": "vertiefen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas verändern",
+   "item": "etwas verändern",
+   "base": "verändern",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas voraussetzen",
+   "item": "etwas voraussetzen",
+   "base": "voraussetzen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "setzen"
+  },
+  {
+   "forma": "etwas zurücklegen",
+   "item": "etwas zurücklegen",
+   "base": "zurücklegen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "legen"
+  },
+  {
+   "forma": "etwas zurückrollen",
+   "item": "etwas zurückrollen",
+   "base": "zurückrollen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "rollen"
+  },
+  {
+   "forma": "etwas zurückschicken",
+   "item": "etwas zurückschicken",
+   "base": "zurückschicken",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "schicken"
+  },
+  {
+   "forma": "etwas ändern",
+   "item": "etwas ändern",
+   "base": "ändern",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "etwas übernehmen",
+   "item": "etwas übernehmen",
+   "base": "übernehmen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "nota": "prefijo inseparable (übernehmen)"
+  },
+  {
+   "forma": "feilschen",
+   "item": "feilschen",
+   "base": "feilschen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "fotografieren",
+   "item": "fotografieren",
+   "base": "fotografieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "fragen",
+   "item": "fragen",
+   "base": "fragen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "fremdeln",
+   "item": "fremdeln",
+   "base": "fremdeln",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "funktionieren",
+   "item": "funktionieren",
+   "base": "funktionieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "gefallen",
+   "item": "gefallen",
+   "base": "gefallen",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
+   "reccion": "Dat"
+  },
+  {
+   "forma": "gewinnen",
+   "item": "gewinnen",
+   "base": "gewinnen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "giessen",
+   "item": "giessen",
+   "base": "giessen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "glauben",
+   "item": "glauben",
+   "base": "glauben",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
+   "reccion": "Dat"
+  },
+  {
+   "forma": "haushalten",
+   "item": "haushalten",
+   "base": "haushalten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "halten"
+  },
+  {
+   "forma": "heiraten",
+   "item": "heiraten",
+   "base": "heiraten",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "helfen",
+   "item": "helfen",
+   "base": "helfen",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
+   "reccion": "Dat"
+  },
+  {
+   "forma": "herumwerkeln",
+   "item": "herumwerkeln",
+   "base": "herumwerkeln",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "werkeln"
+  },
+  {
+   "forma": "herunterladen",
+   "item": "herunterladen",
+   "base": "herunterladen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "laden"
+  },
+  {
+   "forma": "hinterherhinken",
+   "item": "hinterherhinken",
+   "base": "hinterherhinken",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "hinken"
+  },
+  {
+   "forma": "hoffen",
+   "item": "hoffen",
+   "base": "hoffen",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk"
+  },
+  {
+   "forma": "in etwas versinken",
+   "item": "in etwas versinken",
+   "base": "versinken",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "in + Akk/Dat"
+  },
+  {
+   "forma": "jemandem etwas anvertrauen",
+   "item": "jemandem etwas anvertrauen",
+   "base": "anvertrauen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "vertrauen"
+  },
+  {
+   "forma": "jemandem etwas gönnen",
+   "item": "jemandem etwas gönnen",
+   "base": "gönnen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "jemandem etwas vorwerfen",
+   "item": "jemandem etwas vorwerfen",
+   "base": "vorwerfen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "werfen"
+  },
+  {
+   "forma": "jemandem etwas übelnehmen",
+   "item": "jemandem etwas übelnehmen",
+   "base": "übelnehmen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "nehmen"
+  },
+  {
+   "forma": "jemandem kündigen",
+   "item": "jemandem kündigen",
+   "base": "kündigen",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
+   "reccion": "Dat"
+  },
+  {
+   "forma": "jemandem verzeihen",
+   "item": "jemandem verzeihen",
+   "base": "verzeihen",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
+   "reccion": "Dat"
+  },
+  {
+   "forma": "jemandem zuhören",
+   "item": "jemandem zuhören",
+   "base": "zuhören",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
+   "reccion": "Dat",
+   "raiz": "hören"
+  },
+  {
+   "forma": "jemanden kaltstellen",
+   "item": "jemanden kaltstellen",
+   "base": "kaltstellen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "stellen"
+  },
+  {
+   "forma": "jemanden vermissen",
+   "item": "jemanden vermissen",
+   "base": "vermissen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "kaufen",
+   "item": "kaufen",
+   "base": "kaufen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "klappen",
+   "item": "klappen",
+   "base": "klappen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "kochen",
+   "item": "kochen",
+   "base": "kochen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "kosten",
+   "item": "kosten",
+   "base": "kosten",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "krankmelden",
+   "item": "krankmelden",
+   "base": "krankmelden",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "melden"
+  },
+  {
+   "forma": "kränkeln",
+   "item": "kränkeln",
+   "base": "kränkeln",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "kündigen",
+   "item": "kündigen",
+   "base": "kündigen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "laden",
+   "item": "laden",
+   "base": "laden",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "lernen",
+   "item": "lernen",
+   "base": "lernen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "lesen",
+   "item": "lesen",
+   "base": "lesen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "löschen",
+   "item": "löschen",
+   "base": "löschen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "mieten",
+   "item": "mieten",
+   "base": "mieten",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "mitbringen",
+   "item": "mitbringen",
+   "base": "mitbringen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "bringen"
+  },
+  {
+   "forma": "mitmachen",
+   "item": "mitmachen",
+   "base": "mitmachen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "machen"
+  },
+  {
+   "forma": "nachfragen",
+   "item": "nachfragen",
+   "base": "nachfragen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "fragen"
+  },
+  {
+   "forma": "nachgeben",
+   "item": "nachgeben",
+   "base": "nachgeben",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
+   "reccion": "Dat",
+   "raiz": "geben"
+  },
+  {
+   "forma": "nachreichen",
+   "item": "nachreichen",
+   "base": "nachreichen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "reichen"
+  },
+  {
+   "forma": "nachrüsten",
+   "item": "nachrüsten",
+   "base": "nachrüsten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "rüsten"
+  },
+  {
+   "forma": "parkieren",
+   "item": "parkieren",
+   "base": "parkieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "passen",
+   "item": "passen",
+   "base": "passen",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
+   "reccion": "Dat"
+  },
+  {
+   "forma": "passieren",
+   "item": "passieren",
+   "base": "passieren",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
+   "reccion": "Dat"
+  },
+  {
+   "forma": "probieren",
+   "item": "probieren",
+   "base": "probieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "protestieren",
+   "item": "protestieren",
+   "base": "protestieren",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "gegen + Akk"
+  },
+  {
+   "forma": "prüfen",
+   "item": "prüfen",
+   "base": "prüfen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "rauchen",
+   "item": "rauchen",
+   "base": "rauchen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "reklamieren",
+   "item": "reklamieren",
+   "base": "reklamieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "reparieren",
+   "item": "reparieren",
+   "base": "reparieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "reservieren",
+   "item": "reservieren",
+   "base": "reservieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "schlafen",
+   "item": "schlafen",
+   "base": "schlafen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "schmecken",
+   "item": "schmecken",
+   "base": "schmecken",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
+   "reccion": "Dat"
+  },
+  {
+   "forma": "schneiden",
+   "item": "schneiden",
+   "base": "schneiden",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "schwimmen",
+   "item": "schwimmen",
+   "base": "schwimmen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "schönreden",
+   "item": "schönreden",
+   "base": "schönreden",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "reden"
+  },
+  {
+   "forma": "schützen",
+   "item": "schützen",
+   "base": "schützen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "sich abgrenzen",
+   "item": "sich abgrenzen",
+   "base": "sich abgrenzen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "von + Dat",
+   "raiz": "grenzen"
+  },
+  {
+   "forma": "sich absichern",
+   "item": "sich absichern",
+   "base": "sich absichern",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "sichern"
+  },
+  {
+   "forma": "sich absichern gegen",
+   "item": "sich absichern gegen",
+   "base": "sich absichern",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "gegen + Akk",
+   "raiz": "sichern"
+  },
+  {
+   "forma": "sich abstimmen",
+   "item": "sich abstimmen",
+   "base": "sich abstimmen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "stimmen"
+  },
+  {
+   "forma": "sich abzeichnen",
+   "item": "sich abzeichnen",
+   "base": "sich abzeichnen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "zeichnen",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich akklimatisieren",
+   "item": "sich akklimatisieren",
+   "base": "sich akklimatisieren",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich anmelden",
+   "item": "sich anmelden",
+   "base": "sich anmelden",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "bei + Dat / zu + Dat",
+   "raiz": "melden"
+  },
+  {
+   "forma": "sich anmelden für",
+   "item": "sich anmelden für",
+   "base": "sich anmelden",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "für + Akk",
+   "raiz": "melden"
+  },
+  {
+   "forma": "sich anpassen",
+   "item": "sich anpassen",
+   "base": "sich anpassen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "an + Akk",
+   "raiz": "passen"
+  },
+  {
+   "forma": "sich auf etwas verlassen",
+   "item": "sich auf etwas verlassen",
+   "base": "sich verlassen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk"
+  },
+  {
+   "forma": "sich auseinanderleben",
+   "item": "sich auseinanderleben",
+   "base": "sich auseinanderleben",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "leben",
+   "nota": "recíproco"
+  },
+  {
+   "forma": "sich auskennen",
+   "item": "sich auskennen",
+   "base": "sich auskennen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "kennen",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich auskurieren",
+   "item": "sich auskurieren",
+   "base": "sich auskurieren",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "kurieren"
+  },
+  {
+   "forma": "sich auspowern",
+   "item": "sich auspowern",
+   "base": "sich auspowern",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "powern"
+  },
+  {
+   "forma": "sich ausruhen",
+   "item": "sich ausruhen",
+   "base": "sich ausruhen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "ruhen"
+  },
+  {
+   "forma": "sich aussprechen",
+   "item": "sich aussprechen",
+   "base": "sich aussprechen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "sprechen"
+  },
+  {
+   "forma": "sich austoben",
+   "item": "sich austoben",
+   "base": "sich austoben",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "toben"
+  },
+  {
+   "forma": "sich belohnen",
+   "item": "sich belohnen",
+   "base": "sich belohnen",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich beschweren",
+   "item": "sich beschweren",
+   "base": "sich beschweren",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "über + Akk / bei + Dat",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich beschäftigen mit",
+   "item": "sich beschäftigen mit",
+   "base": "sich beschäftigen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "mit + Dat"
+  },
+  {
+   "forma": "sich bewerben",
+   "item": "sich bewerben",
+   "base": "sich bewerben",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "um + Akk / bei + Dat",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich bewerben um",
+   "item": "sich bewerben um",
+   "base": "sich bewerben",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "um + Akk",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich bewähren",
+   "item": "sich bewähren",
+   "base": "sich bewähren",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "nota": "reflexivo casi fijo (el sentido 2, obsoleto, no lleva sich)"
+  },
+  {
+   "forma": "sich distanzieren von",
+   "item": "sich distanzieren von",
+   "base": "sich distanzieren",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "von + Dat",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich durchsetzen",
+   "item": "sich durchsetzen",
+   "base": "sich durchsetzen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "setzen"
+  },
+  {
+   "forma": "sich einarbeiten",
+   "item": "sich einarbeiten",
+   "base": "sich einarbeiten",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "in + Akk",
+   "raiz": "arbeiten"
+  },
+  {
+   "forma": "sich einarbeiten in",
+   "item": "sich einarbeiten in",
+   "base": "sich einarbeiten",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "in + Akk",
+   "raiz": "arbeiten"
+  },
+  {
+   "forma": "sich einbringen",
+   "item": "sich einbringen",
+   "base": "sich einbringen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "bringen"
+  },
+  {
+   "forma": "sich eingewöhnen",
+   "item": "sich eingewöhnen",
+   "base": "sich eingewöhnen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "gewöhnen"
+  },
+  {
+   "forma": "sich einigen",
+   "item": "sich einigen",
+   "base": "sich einigen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk / über + Akk",
+   "nota": "recíproco; «einigen» no es separable"
+  },
+  {
+   "forma": "sich einlassen auf",
+   "item": "sich einlassen auf",
+   "base": "sich einlassen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk",
+   "raiz": "lassen",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich einleben",
+   "item": "sich einleben",
+   "base": "sich einleben",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "leben",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich einmischen",
+   "item": "sich einmischen",
+   "base": "sich einmischen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "in + Akk",
+   "raiz": "mischen",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich einschränken",
+   "item": "sich einschränken",
+   "base": "sich einschränken",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "schränken"
+  },
+  {
+   "forma": "sich engagieren",
+   "item": "sich engagieren",
+   "base": "sich engagieren",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "für + Akk"
+  },
+  {
+   "forma": "sich engagieren für",
+   "item": "sich engagieren für",
+   "base": "sich engagieren",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "für + Akk"
+  },
+  {
+   "forma": "sich entscheiden",
+   "item": "sich entscheiden",
+   "base": "sich entscheiden",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "für + Akk / gegen + Akk"
+  },
+  {
+   "forma": "sich entschuldigen",
+   "item": "sich entschuldigen",
+   "base": "sich entschuldigen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "für + Akk / bei + Dat"
+  },
+  {
+   "forma": "sich entspannen",
+   "item": "sich entspannen",
+   "base": "sich entspannen",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich erholen",
+   "item": "sich erholen",
+   "base": "sich erholen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "von + Dat"
+  },
+  {
+   "forma": "sich erkundigen",
+   "item": "sich erkundigen",
+   "base": "sich erkundigen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "nach + Dat",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich etwas aneignen",
+   "item": "sich etwas aneignen",
+   "base": "sich aneignen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "eignen"
+  },
+  {
+   "forma": "sich etwas aufteilen",
+   "item": "sich etwas aufteilen",
+   "base": "sich aufteilen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "teilen"
+  },
+  {
+   "forma": "sich etwas bestellen",
+   "item": "sich etwas bestellen",
+   "base": "sich bestellen",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich etwas gönnen",
+   "item": "sich etwas gönnen",
+   "base": "sich gönnen",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich etwas leisten",
+   "item": "sich etwas leisten",
+   "base": "sich leisten",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich fordern",
+   "item": "sich fordern",
+   "base": "sich fordern",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich fortbilden",
+   "item": "sich fortbilden",
+   "base": "sich fortbilden",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "bilden"
+  },
+  {
+   "forma": "sich freuen",
+   "item": "sich freuen",
+   "base": "sich freuen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk / über + Akk",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich freuen auf",
+   "item": "sich freuen auf",
+   "base": "sich freuen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich freuen über",
+   "item": "sich freuen über",
+   "base": "sich freuen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "über + Akk",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich fühlen",
+   "item": "sich fühlen",
+   "base": "sich fühlen",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich gedulden",
+   "item": "sich gedulden",
+   "base": "sich gedulden",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich gewöhnen an",
+   "item": "sich gewöhnen an",
+   "base": "sich gewöhnen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "an + Akk"
+  },
+  {
+   "forma": "sich hinlegen",
+   "item": "sich hinlegen",
+   "base": "sich hinlegen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "legen"
+  },
+  {
+   "forma": "sich in etwas versuchen",
+   "item": "sich in etwas versuchen",
+   "base": "sich versuchen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "in + Dat"
+  },
+  {
+   "forma": "sich in etwas vertiefen",
+   "item": "sich in etwas vertiefen",
+   "base": "sich vertiefen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "in + Akk"
+  },
+  {
+   "forma": "sich informieren",
+   "item": "sich informieren",
+   "base": "sich informieren",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "über + Akk"
+  },
+  {
+   "forma": "sich informieren über",
+   "item": "sich informieren über",
+   "base": "sich informieren",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "über + Akk"
+  },
+  {
+   "forma": "sich jemandem öffnen",
+   "item": "sich jemandem öffnen",
+   "base": "sich öffnen",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich konzentrieren",
+   "item": "sich konzentrieren",
+   "base": "sich konzentrieren",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk"
+  },
+  {
+   "forma": "sich krankmelden",
+   "item": "sich krankmelden",
+   "base": "sich krankmelden",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "melden"
+  },
+  {
+   "forma": "sich kümmern um",
+   "item": "sich kümmern um",
+   "base": "sich kümmern",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "um + Akk",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich lohnen",
+   "item": "sich lohnen",
+   "base": "sich lohnen",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich melden",
+   "item": "sich melden",
+   "base": "sich melden",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich schonen",
+   "item": "sich schonen",
+   "base": "sich schonen",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich streiten",
+   "item": "sich streiten",
+   "base": "sich streiten",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "über + Akk / um + Akk",
+   "nota": "recíproco"
+  },
+  {
+   "forma": "sich treffen",
+   "item": "sich treffen",
+   "base": "sich treffen",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "nota": "recíproco"
+  },
+  {
+   "forma": "sich trennen",
+   "item": "sich trennen",
+   "base": "sich trennen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "von + Dat",
+   "nota": "recíproco o reflexivo según el sentido"
+  },
+  {
+   "forma": "sich um etwas kümmern",
+   "item": "sich um etwas kümmern",
+   "base": "sich kümmern",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "um + Akk",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich umsehen",
+   "item": "sich umsehen",
+   "base": "sich umsehen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "sehen"
+  },
+  {
+   "forma": "sich verabreden",
+   "item": "sich verabreden",
+   "base": "sich verabreden",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "nota": "recíproco"
+  },
+  {
+   "forma": "sich verbessern",
+   "item": "sich verbessern",
+   "base": "sich verbessern",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich verbreiten",
+   "item": "sich verbreiten",
+   "base": "sich verbreiten",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich verfahren",
+   "item": "sich verfahren",
+   "base": "sich verfahren",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich verlassen auf",
+   "item": "sich verlassen auf",
+   "base": "sich verlassen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk"
+  },
+  {
+   "forma": "sich verlaufen",
+   "item": "sich verlaufen",
+   "base": "sich verlaufen",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich verletzen",
+   "item": "sich verletzen",
+   "base": "sich verletzen",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich verloben",
+   "item": "sich verloben",
+   "base": "sich verloben",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "nota": "recíproco"
+  },
+  {
+   "forma": "sich verrechnen",
+   "item": "sich verrechnen",
+   "base": "sich verrechnen",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich verschulden",
+   "item": "sich verschulden",
+   "base": "sich verschulden",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich versichern",
+   "item": "sich versichern",
+   "base": "sich versichern",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich verstehen",
+   "item": "sich verstehen",
+   "base": "sich verstehen",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "nota": "recíproco"
+  },
+  {
+   "forma": "sich versöhnen",
+   "item": "sich versöhnen",
+   "base": "sich versöhnen",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "nota": "recíproco"
+  },
+  {
+   "forma": "sich vertiefen in",
+   "item": "sich vertiefen in",
+   "base": "sich vertiefen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "in + Akk"
+  },
+  {
+   "forma": "sich vertragen",
+   "item": "sich vertragen",
+   "base": "sich vertragen",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "nota": "recíproco"
+  },
+  {
+   "forma": "sich verzetteln",
+   "item": "sich verzetteln",
+   "base": "sich verzetteln",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich verändern",
+   "item": "sich verändern",
+   "base": "sich verändern",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich vorstellen",
+   "item": "sich vorstellen",
+   "base": "sich vorstellen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "stellen"
+  },
+  {
+   "forma": "sich weiterentwickeln",
+   "item": "sich weiterentwickeln",
+   "base": "sich weiterentwickeln",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "entwickeln"
+  },
+  {
+   "forma": "sich weiterqualifizieren",
+   "item": "sich weiterqualifizieren",
+   "base": "sich weiterqualifizieren",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "qualifizieren"
+  },
+  {
+   "forma": "sich wohlfühlen",
+   "item": "sich wohlfühlen",
+   "base": "sich wohlfühlen",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "fühlen"
+  },
+  {
+   "forma": "sich zerstreiten",
+   "item": "sich zerstreiten",
+   "base": "sich zerstreiten",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "nota": "recíproco"
+  },
+  {
+   "forma": "sich zurechtfinden",
+   "item": "sich zurechtfinden",
+   "base": "sich zurechtfinden",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
+   "raiz": "finden"
+  },
+  {
+   "forma": "sich ändern",
+   "item": "sich ändern",
+   "base": "sich ändern",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sich äussern",
+   "item": "sich äussern",
+   "base": "sich äussern",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "zu + Dat",
+   "nota": "reflexivo fijo (solo con sich)"
+  },
+  {
+   "forma": "sich überschulden",
+   "item": "sich überschulden",
+   "base": "sich überschulden",
+   "claseVerbo": [
+    "reflexivo"
+   ]
+  },
+  {
+   "forma": "sparen",
+   "item": "sparen",
+   "base": "sparen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "speichern",
+   "item": "speichern",
+   "base": "speichern",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "spielen",
+   "item": "spielen",
+   "base": "spielen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "steigen",
+   "item": "steigen",
+   "base": "steigen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "streiten",
+   "item": "streiten",
+   "base": "streiten",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "über + Akk / um + Akk"
+  },
+  {
+   "forma": "suchen",
+   "item": "suchen",
+   "base": "suchen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "surfen",
+   "item": "surfen",
+   "base": "surfen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "teilen",
+   "item": "teilen",
+   "base": "teilen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "tippen",
+   "item": "tippen",
+   "base": "tippen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "trainieren",
+   "item": "trainieren",
+   "base": "trainieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "treffen",
+   "item": "treffen",
+   "base": "treffen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "trennen",
+   "item": "trennen",
+   "base": "trennen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "tüfteln",
+   "item": "tüfteln",
+   "base": "tüfteln",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "an + Dat"
+  },
+  {
+   "forma": "umsteigen",
+   "item": "umsteigen",
+   "base": "umsteigen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "steigen"
+  },
+  {
+   "forma": "umsteigen auf",
+   "item": "umsteigen auf",
+   "base": "umsteigen",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk",
+   "raiz": "steigen"
+  },
+  {
+   "forma": "umtauschen",
+   "item": "umtauschen",
+   "base": "umtauschen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "tauschen"
+  },
+  {
+   "forma": "umziehen",
+   "item": "umziehen",
+   "base": "umziehen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "ziehen"
+  },
+  {
+   "forma": "unterschreiben",
+   "item": "unterschreiben",
+   "base": "unterschreiben",
+   "claseVerbo": [
+    "simple"
+   ],
+   "nota": "prefijo inseparable (unterschreiben)"
+  },
+  {
+   "forma": "verderben",
+   "item": "verderben",
+   "base": "verderben",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "verdienen",
+   "item": "verdienen",
+   "base": "verdienen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "verfeinern",
+   "item": "verfeinern",
+   "base": "verfeinern",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "vergleichen",
+   "item": "vergleichen",
+   "base": "vergleichen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "verlieren",
+   "item": "verlieren",
+   "base": "verlieren",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "vermeiden",
+   "item": "vermeiden",
+   "base": "vermeiden",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "verschenken",
+   "item": "verschenken",
+   "base": "verschenken",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "verschlafen",
+   "item": "verschlafen",
+   "base": "verschlafen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "verstehen",
+   "item": "verstehen",
+   "base": "verstehen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "vertrauen",
+   "item": "vertrauen",
+   "base": "vertrauen",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
+   "reccion": "Dat"
+  },
+  {
+   "forma": "verzeihen",
+   "item": "verzeihen",
+   "base": "verzeihen",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
+   "reccion": "Dat"
+  },
+  {
+   "forma": "verzichten auf",
+   "item": "verzichten auf",
+   "base": "verzichten",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk"
+  },
+  {
+   "forma": "wandern",
+   "item": "wandern",
+   "base": "wandern",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "warten",
+   "item": "warten",
+   "base": "warten",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk"
+  },
+  {
+   "forma": "wechseln",
+   "item": "wechseln",
+   "base": "wechseln",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "wegwerfen",
+   "item": "wegwerfen",
+   "base": "wegwerfen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "werfen"
+  },
+  {
+   "forma": "wehtun",
+   "item": "wehtun",
+   "base": "wehtun",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
+   "reccion": "Dat",
+   "raiz": "tun"
+  },
+  {
+   "forma": "weitergeben",
+   "item": "weitergeben",
+   "base": "weitergeben",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "geben"
+  },
+  {
+   "forma": "weitermachen",
+   "item": "weitermachen",
+   "base": "weitermachen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "machen"
+  },
+  {
+   "forma": "werkeln",
+   "item": "werkeln",
+   "base": "werkeln",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "widersprechen",
+   "item": "widersprechen",
+   "base": "widersprechen",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
+   "reccion": "Dat",
+   "nota": "prefijo inseparable (widersprechen)"
+  },
+  {
+   "forma": "wiederholen",
+   "item": "wiederholen",
+   "base": "wiederholen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "nota": "inseparable con el sentido «repetir»"
+  },
+  {
+   "forma": "wiederverwenden",
+   "item": "wiederverwenden",
+   "base": "wiederverwenden",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "verwenden"
+  },
+  {
+   "forma": "wissen",
+   "item": "wissen",
+   "base": "wissen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "würzen",
+   "item": "würzen",
+   "base": "würzen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "zubereiten",
+   "item": "zubereiten",
+   "base": "zubereiten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "bereiten"
+  },
+  {
+   "forma": "zuhören",
+   "item": "zuhören",
+   "base": "zuhören",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
+   "reccion": "Dat",
+   "raiz": "hören"
+  },
+  {
+   "forma": "zurückkommen",
+   "item": "zurückkommen",
+   "base": "zurückkommen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "kommen"
+  },
+  {
+   "forma": "zurückschicken",
+   "item": "zurückschicken",
+   "base": "zurückschicken",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "raiz": "schicken"
+  },
+  {
+   "forma": "zustimmen",
+   "item": "zustimmen",
+   "base": "zustimmen",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
+   "reccion": "Dat",
+   "raiz": "stimmen"
+  },
+  {
+   "forma": "üben",
+   "item": "üben",
+   "base": "üben",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "überliefern",
+   "item": "überliefern",
+   "base": "überliefern",
+   "claseVerbo": [
+    "simple"
+   ],
+   "nota": "prefijo inseparable (überliefern)"
+  },
+  {
+   "forma": "überweisen",
+   "item": "überweisen",
+   "base": "überweisen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "nota": "prefijo inseparable (überweisen)"
+  }
+ ],
+ "nucleos": [
+  {
+   "nucleo": "abbauen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "den Stress abbauen",
+    "Personal abbauen"
+   ]
+  },
+  {
+   "nucleo": "abbrechen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "den Kontakt abbrechen"
+   ]
+  },
+  {
+   "nucleo": "abfedern",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Inflation abfedern"
+   ]
+  },
+  {
+   "nucleo": "abgeben",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "Verantwortung abgeben"
+   ]
+  },
+  {
+   "nucleo": "abgleichen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Erwartungen abgleichen"
+   ]
+  },
+  {
+   "nucleo": "abklären",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Beschwerden abklären"
+   ]
+  },
+  {
+   "nucleo": "ablegen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Prüfung ablegen",
+    "eine Prüfung ablegen / bestehen"
+   ]
+  },
+  {
+   "nucleo": "abrunden",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "das Gericht abrunden"
+   ]
+  },
+  {
+   "nucleo": "abstimmen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "mit dem Geldbeutel abstimmen"
+   ]
+  },
+  {
+   "nucleo": "abwandeln",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "das Rezept abwandeln"
+   ]
+  },
+  {
+   "nucleo": "anbieten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "jemandem das Du anbieten"
+   ]
+  },
+  {
+   "nucleo": "angreifen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Rücklagen angreifen"
+   ]
+  },
+  {
+   "nucleo": "sich anmelden",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "bei + Dat / zu + Dat",
+   "colocaciones": [
+    "sich für einen Kurs anmelden"
+   ],
+   "nota": "la reccion es la del verbo (bei/zu); «sich für einen Kurs anmelden» muestra für"
+  },
+  {
+   "nucleo": "anpassen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "den Lebenslauf anpassen"
+   ]
+  },
+  {
+   "nucleo": "antreten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "das Erbe antreten",
+    "die Rückreise antreten"
+   ]
+  },
+  {
+   "nucleo": "arbeiten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Schicht arbeiten"
+   ]
+  },
+  {
+   "nucleo": "aufbauen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "das Vertrauen aufbauen"
+   ]
+  },
+  {
+   "nucleo": "aufschieben",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "den Arztbesuch aufschieben"
+   ]
+  },
+  {
+   "nucleo": "aufstehen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "früh aufstehen"
+   ]
+  },
+  {
+   "nucleo": "ausfüllen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "das Formular ausfüllen"
+   ]
+  },
+  {
+   "nucleo": "aushalten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Schmerzen aushalten"
+   ]
+  },
+  {
+   "nucleo": "aushandeln",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "den Preis aushandeln"
+   ]
+  },
+  {
+   "nucleo": "ausleben",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Kreativität ausleben"
+   ]
+  },
+  {
+   "nucleo": "auslernen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "nie auslernen"
+   ]
+  },
+  {
+   "nucleo": "ausprobieren",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "das Rezept ausprobieren"
+   ]
+  },
+  {
+   "nucleo": "ausstossen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "der Ausstoss / ausstossen"
+   ],
+   "nota": "rama verbal de un item con barra (DWDS: stösst aus, hat ausgestossen)"
+  },
+  {
+   "nucleo": "bauen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Brücken bauen"
+   ]
+  },
+  {
+   "nucleo": "behalten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Überblick behalten"
+   ]
+  },
+  {
+   "nucleo": "bekennen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Farbe bekennen"
+   ]
+  },
+  {
+   "nucleo": "bekommen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Kopf frei bekommen",
+    "eine Zusage bekommen"
+   ]
+  },
+  {
+   "nucleo": "belassen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "es beim Hobby belassen"
+   ]
+  },
+  {
+   "nucleo": "beraten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "sich beraten lassen"
+   ],
+   "nota": "infinitivo incrustado de «lassen»"
+  },
+  {
+   "nucleo": "bestehen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Prüfung bestehen"
+   ]
+  },
+  {
+   "nucleo": "bestellen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "online bestellen"
+   ]
+  },
+  {
+   "nucleo": "bewahren",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Schöpfung bewahren"
+   ]
+  },
+  {
+   "nucleo": "bezahlen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "bar bezahlen",
+    "die Rechnung bezahlen"
+   ]
+  },
+  {
+   "nucleo": "beäugen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "etwas kritisch beäugen"
+   ]
+  },
+  {
+   "nucleo": "bilden",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Rücklage / Rücklagen bilden",
+    "die Rücklage bilden",
+    "sich eine Meinung bilden"
+   ],
+   "nota": "«sich eine Meinung bilden» es dativo libre, no verbo reflexivo"
+  },
+  {
+   "nucleo": "bitten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "zu Tisch bitten"
+   ],
+   "nota": "«bitten um» es el regimen habitual, pero la colocacion no lo muestra: sin reccion"
+  },
+  {
+   "nucleo": "bleiben",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "am Ball bleiben",
+    "auf dem Laufenden bleiben",
+    "fit bleiben",
+    "geduldig bleiben",
+    "in Bewegung bleiben",
+    "in Kontakt bleiben",
+    "übrig bleiben"
+   ]
+  },
+  {
+   "nucleo": "boykottieren",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "eine Marke boykottieren"
+   ]
+  },
+  {
+   "nucleo": "bringen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "etwas zur Sprache bringen"
+   ]
+  },
+  {
+   "nucleo": "buchen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Reise buchen"
+   ]
+  },
+  {
+   "nucleo": "denken",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "etwas zu Ende denken",
+    "langfristig denken"
+   ]
+  },
+  {
+   "nucleo": "drosseln",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Verbrauch drosseln"
+   ]
+  },
+  {
+   "nucleo": "durchbrechen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Routine durchbrechen"
+   ]
+  },
+  {
+   "nucleo": "durchschauen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Werbung durchschauen"
+   ]
+  },
+  {
+   "nucleo": "sich einarbeiten",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
+   "reccion": "in + Akk",
+   "colocaciones": [
+    "die Einarbeitung / sich einarbeiten in"
+   ],
+   "nota": "rama verbal de un item con barra (DWDS: arbeitet ein; sich in etwas (Akk) einarbeiten)"
+  },
+  {
+   "nucleo": "einbeziehen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "den Menschen einbeziehen"
+   ]
+  },
+  {
+   "nucleo": "eingehen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "das Risiko eingehen",
+    "eine Bindung eingehen",
+    "einen Kompromiss eingehen"
+   ]
+  },
+  {
+   "nucleo": "einhalten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "das Budget einhalten",
+    "die Frist einhalten",
+    "die Fristen einhalten"
+   ]
+  },
+  {
+   "nucleo": "einholen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Auskunft einholen"
+   ]
+  },
+  {
+   "nucleo": "einkaufen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "regional einkaufen"
+   ]
+  },
+  {
+   "nucleo": "einlegen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "den Widerspruch einlegen",
+    "Einspruch einlegen",
+    "Widerspruch einlegen"
+   ]
+  },
+  {
+   "nucleo": "einreichen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Unterlagen einreichen",
+    "die Vorlage einreichen",
+    "einen Antrag einreichen"
+   ]
+  },
+  {
+   "nucleo": "einschränken",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "den Konsum einschränken",
+    "den Zugriff einschränken"
+   ]
+  },
+  {
+   "nucleo": "einspeisen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "Energie einspeisen"
+   ]
+  },
+  {
+   "nucleo": "einstellen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Uhrzeit einstellen"
+   ]
+  },
+  {
+   "nucleo": "einteilen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Zeit einteilen",
+    "sich seine Kräfte einteilen"
+   ]
+  },
+  {
+   "nucleo": "entdecken",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Talent entdecken"
+   ]
+  },
+  {
+   "nucleo": "sich entziehen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Dativ"
+   ],
+   "reccion": "Dat",
+   "colocaciones": [
+    "sich dem Zugriff entziehen",
+    "sich einer Sache entziehen"
+   ]
+  },
+  {
+   "nucleo": "erfüllen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Auflage erfüllen"
+   ]
+  },
+  {
+   "nucleo": "erhalten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Anerkennung erhalten"
+   ]
+  },
+  {
+   "nucleo": "erheben",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Einspruch erheben"
+   ]
+  },
+  {
+   "nucleo": "erweitern",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Horizont erweitern"
+   ]
+  },
+  {
+   "nucleo": "eröffnen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Konto eröffnen"
+   ]
+  },
+  {
+   "nucleo": "essen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "bewusst essen",
+    "gemeinsam essen",
+    "gesund essen",
+    "massvoll essen"
+   ]
+  },
+  {
+   "nucleo": "fahren",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Rad fahren"
+   ]
+  },
+  {
+   "nucleo": "fallen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "durch eine Prüfung fallen",
+    "mit der Tür ins Haus fallen"
+   ]
+  },
+  {
+   "nucleo": "finden",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Lösung finden"
+   ]
+  },
+  {
+   "nucleo": "freihalten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "den Rücken freihalten"
+   ]
+  },
+  {
+   "nucleo": "sich fühlen",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "colocaciones": [
+    "sich fehl am Platz fühlen",
+    "sich verwurzelt fühlen"
+   ]
+  },
+  {
+   "nucleo": "führen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Protokoll führen"
+   ]
+  },
+  {
+   "nucleo": "geben",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Bescheid geben",
+    "jemandem Freiraum geben"
+   ]
+  },
+  {
+   "nucleo": "gehen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "auf dem Zahnfleisch gehen",
+    "auf den Leim gehen",
+    "den Beschwerden auf den Grund gehen",
+    "jemandem aus dem Weg gehen",
+    "mit der Zeit gehen",
+    "mit jemandem durch dick und dünn gehen",
+    "spazieren gehen",
+    "zu Fuss gehen",
+    "über den Horizont gehen"
+   ]
+  },
+  {
+   "nucleo": "geniessen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "etwas mit Vorsicht geniessen",
+    "mit Bedacht geniessen",
+    "mit Vorsicht zu geniessen"
+   ]
+  },
+  {
+   "nucleo": "geraten",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "in + Akk",
+   "colocaciones": [
+    "in die Kritik geraten",
+    "in Verzug geraten"
+   ]
+  },
+  {
+   "nucleo": "gestalten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Freizeit gestalten"
+   ]
+  },
+  {
+   "nucleo": "giessen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Öl ins Feuer giessen"
+   ]
+  },
+  {
+   "nucleo": "glätten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Wogen glätten"
+   ]
+  },
+  {
+   "nucleo": "gründen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Familie gründen"
+   ]
+  },
+  {
+   "nucleo": "halten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Mass halten",
+    "den Anschluss halten",
+    "etwas in Ehren halten",
+    "instand halten",
+    "Mass halten",
+    "sich auf dem Laufenden halten",
+    "sich bedeckt halten",
+    "sich fit halten"
+   ],
+   "nota": "el «sich» de «sich fit halten» es objeto, no verbo reflexivo"
+  },
+  {
+   "nucleo": "herausbekommen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "den Dreh herausbekommen"
+   ]
+  },
+  {
+   "nucleo": "hinauswerfen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "das Geld zum Fenster hinauswerfen"
+   ]
+  },
+  {
+   "nucleo": "hinterfragen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "etwas kritisch hinterfragen"
+   ]
+  },
+  {
+   "nucleo": "hinterlegen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Kaution hinterlegen"
+   ],
+   "nota": "inseparable en el sentido de depositar («die Kaution hinterlegen», DWDS acepcion II: hinterlegt, hat hinterlegt); la separable es regional y significa «poner detras»"
+  },
+  {
+   "nucleo": "hochladen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "hochladen / herunterladen"
+   ]
+  },
+  {
+   "nucleo": "holen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "sich Hilfe holen"
+   ],
+   "nota": "«sich Hilfe holen» es dativo libre, no verbo reflexivo"
+  },
+  {
+   "nucleo": "hängen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "in der Warteschleife hängen"
+   ]
+  },
+  {
+   "nucleo": "hören",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk",
+   "colocaciones": [
+    "auf seinen Körper hören"
+   ]
+  },
+  {
+   "nucleo": "impfen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "sich impfen lassen"
+   ],
+   "nota": "infinitivo incrustado de «lassen»: el verbo que se aprende es impfen"
+  },
+  {
+   "nucleo": "kaufen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "auf Rechnung kaufen",
+    "bewusst kaufen",
+    "etwas ausleihen statt kaufen",
+    "gebraucht kaufen",
+    "regional kaufen"
+   ]
+  },
+  {
+   "nucleo": "kennenlernen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "neue Leute kennenlernen"
+   ]
+  },
+  {
+   "nucleo": "klären",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Zuständigkeit klären"
+   ]
+  },
+  {
+   "nucleo": "kochen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "auf Vorrat kochen",
+    "selbst kochen"
+   ]
+  },
+  {
+   "nucleo": "kommen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "zu Besuch kommen",
+    "zur Ruhe kommen",
+    "über die Runden kommen"
+   ]
+  },
+  {
+   "nucleo": "konsumieren",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "bewusst konsumieren"
+   ]
+  },
+  {
+   "nucleo": "sich kümmern",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "um + Akk",
+   "colocaciones": [
+    "sich um die Eltern kümmern"
+   ]
+  },
+  {
+   "nucleo": "kündigen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Vertrag kündigen"
+   ]
+  },
+  {
+   "nucleo": "kürzertreten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "beruflich kürzertreten"
+   ]
+  },
+  {
+   "nucleo": "laufen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "auf Eierschalen laufen",
+    "von Pontius zu Pilatus laufen"
+   ]
+  },
+  {
+   "nucleo": "leben",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "auf Pump leben",
+    "über seine Verhältnisse leben"
+   ]
+  },
+  {
+   "nucleo": "legen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "etwas auf die hohe Kante legen"
+   ]
+  },
+  {
+   "nucleo": "leiten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Sitzung leiten"
+   ]
+  },
+  {
+   "nucleo": "machen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Erfahrung machen",
+    "die Kopie machen",
+    "die Pause machen",
+    "die Übung zur zweiten Natur machen",
+    "ein Hobby zum Beruf machen",
+    "etwas hinterfragbar machen",
+    "etwas zu Geld machen",
+    "Feierabend machen",
+    "Fortschritte machen",
+    "gern machen",
+    "selbst machen",
+    "sich verdient machen um",
+    "Spass machen",
+    "Überstunden machen"
+   ],
+   "nota": "«sich verdient machen um» es un modismo; machen no rige um"
+  },
+  {
+   "nucleo": "meistern",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Alltag meistern"
+   ]
+  },
+  {
+   "nucleo": "melden",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Problem melden",
+    "einen Mangel melden",
+    "sich zu Wort melden"
+   ]
+  },
+  {
+   "nucleo": "mitbringen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Tasche mitbringen"
+   ]
+  },
+  {
+   "nucleo": "mitnehmen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Unterlagen mitnehmen"
+   ]
+  },
+  {
+   "nucleo": "nachgehen",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
+   "reccion": "Dat",
+   "colocaciones": [
+    "ein Hobby nachgehen",
+    "einem Hobby nachgehen",
+    "einer Sache nachgehen"
+   ]
+  },
+  {
+   "nucleo": "nachkochen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "das Rezept nachkochen"
+   ]
+  },
+  {
+   "nucleo": "nehmen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "etwas den Reiz nehmen",
+    "etwas gelassen nehmen",
+    "etwas in Angriff nehmen",
+    "etwas in Kauf nehmen",
+    "in die Pflicht nehmen",
+    "Rücksicht nehmen",
+    "Rücksicht nehmen auf",
+    "sich Zeit nehmen",
+    "sich Zeit nehmen für"
+   ],
+   "nota": "la preposicion de «Rücksicht nehmen auf» y «sich Zeit nehmen für» es de la colocacion, no del verbo"
+  },
+  {
+   "nucleo": "nutzen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "bewusst nutzen",
+    "das Sonderangebot nutzen"
+   ]
+  },
+  {
+   "nucleo": "sich organisieren",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "colocaciones": [
+    "sich digital organisieren"
+   ]
+  },
+  {
+   "nucleo": "sich orientieren",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "colocaciones": [
+    "sich neu orientieren"
+   ]
+  },
+  {
+   "nucleo": "pflegen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Beziehung pflegen",
+    "die Musse pflegen"
+   ]
+  },
+  {
+   "nucleo": "planen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Budget planen",
+    "einkaufen planen"
+   ]
+  },
+  {
+   "nucleo": "prüfen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Kleingedruckte prüfen",
+    "die Quelle prüfen",
+    "die Rechnung prüfen"
+   ]
+  },
+  {
+   "nucleo": "rechnen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "mit spitzem Bleistift rechnen"
+   ],
+   "nota": "«rechnen mit» existe como regimen, pero en «mit spitzem Bleistift rechnen» el mit es instrumental: sin reccion"
+  },
+  {
+   "nucleo": "reden",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "offen reden"
+   ]
+  },
+  {
+   "nucleo": "reisen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "nachhaltig reisen"
+   ]
+  },
+  {
+   "nucleo": "reissen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "ein Loch in den Geldbeutel reissen"
+   ]
+  },
+  {
+   "nucleo": "romantisieren",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "einen Ort romantisieren"
+   ]
+  },
+  {
+   "nucleo": "rücken",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "etwas ins rechte Licht rücken"
+   ]
+  },
+  {
+   "nucleo": "sagen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Bescheid sagen"
+   ]
+  },
+  {
+   "nucleo": "schalten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "stumm schalten"
+   ]
+  },
+  {
+   "nucleo": "schauen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "jemandem über die Schulter schauen",
+    "über den eigenen Tellerrand schauen"
+   ]
+  },
+  {
+   "nucleo": "schieben",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "auf die lange Bank schieben",
+    "etwas auf die lange Bank schieben"
+   ]
+  },
+  {
+   "nucleo": "schildern",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Beschwerden schildern"
+   ]
+  },
+  {
+   "nucleo": "schlagen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Wurzeln schlagen"
+   ]
+  },
+  {
+   "nucleo": "schonen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Ressourcen schonen"
+   ]
+  },
+  {
+   "nucleo": "schützen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Umwelt schützen"
+   ]
+  },
+  {
+   "nucleo": "senken",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Kosten senken"
+   ]
+  },
+  {
+   "nucleo": "setzen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Ziel setzen",
+    "den Ton setzen",
+    "Grenzen setzen",
+    "sich nicht unter Druck setzen"
+   ],
+   "nota": "«sich unter Druck setzen» es objeto reflexivo de un verbo transitivo"
+  },
+  {
+   "nucleo": "sitzen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "zwischen den Stühlen sitzen"
+   ]
+  },
+  {
+   "nucleo": "sparen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Energie sparen",
+    "Geld sparen",
+    "Strom sparen"
+   ]
+  },
+  {
+   "nucleo": "spielen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Karten spielen"
+   ]
+  },
+  {
+   "nucleo": "sprechen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "ein Machtwort sprechen"
+   ]
+  },
+  {
+   "nucleo": "stehen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "auf der Kippe stehen",
+    "unter Zeitdruck stehen",
+    "zur Disposition stehen"
+   ]
+  },
+  {
+   "nucleo": "stellen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Frage stellen",
+    "etwas auf den Prüfstand stellen",
+    "etwas in Frage stellen",
+    "in Frage stellen"
+   ]
+  },
+  {
+   "nucleo": "sich streiten",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "über + Akk / um + Akk",
+   "colocaciones": [
+    "sich streiten über / um"
+   ]
+  },
+  {
+   "nucleo": "streuen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Risiko streuen"
+   ]
+  },
+  {
+   "nucleo": "studieren",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "berufsbegleitend studieren"
+   ]
+  },
+  {
+   "nucleo": "stärken",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "jemandem den Rücken stärken"
+   ]
+  },
+  {
+   "nucleo": "suchen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Gespräch suchen",
+    "die Aussprache suchen",
+    "die Wohnung suchen"
+   ]
+  },
+  {
+   "nucleo": "tanken",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "neue Kraft tanken"
+   ]
+  },
+  {
+   "nucleo": "teilen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Aufgaben teilen",
+    "die Erfahrung teilen",
+    "die Meinung teilen",
+    "die Verantwortung teilen"
+   ]
+  },
+  {
+   "nucleo": "trainieren",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "ein Modell trainieren",
+    "regelmässig trainieren"
+   ]
+  },
+  {
+   "nucleo": "treffen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Entscheidung treffen"
+   ]
+  },
+  {
+   "nucleo": "treiben",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "sich treiben lassen"
+   ],
+   "nota": "infinitivo incrustado de «lassen»; el «sich» es objeto del lassen, no del verbo"
+  },
+  {
+   "nucleo": "treten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "auf der Stelle treten",
+    "ins Fettnäpfchen treten"
+   ]
+  },
+  {
+   "nucleo": "trinken",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "genug trinken"
+   ]
+  },
+  {
+   "nucleo": "umschichten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "das Vermögen umschichten"
+   ]
+  },
+  {
+   "nucleo": "umstellen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Ernährung umstellen"
+   ]
+  },
+  {
+   "nucleo": "unterstützen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "einander unterstützen"
+   ]
+  },
+  {
+   "nucleo": "untersuchen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "sich untersuchen lassen"
+   ],
+   "nota": "infinitivo incrustado de «lassen»"
+  },
+  {
+   "nucleo": "verdrängen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Arbeitsplätze verdrängen"
+   ]
+  },
+  {
+   "nucleo": "vereinbaren",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Termin vereinbaren"
+   ]
+  },
+  {
+   "nucleo": "verfeinern",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "eine Fertigkeit verfeinern"
+   ]
+  },
+  {
+   "nucleo": "verfolgen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Bestellung verfolgen",
+    "die Sendung verfolgen"
+   ]
+  },
+  {
+   "nucleo": "vergessen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Passwort vergessen"
+   ]
+  },
+  {
+   "nucleo": "vergleichen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Preis vergleichen"
+   ]
+  },
+  {
+   "nucleo": "sich vergreifen",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "colocaciones": [
+    "sich im Ton vergreifen"
+   ]
+  },
+  {
+   "nucleo": "verhandeln",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "auf Augenhöhe verhandeln"
+   ]
+  },
+  {
+   "nucleo": "sich verlassen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
+   "reccion": "auf + Akk",
+   "colocaciones": [
+    "sich zu sehr verlassen auf"
+   ]
+  },
+  {
+   "nucleo": "verlieren",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Interesse verlieren",
+    "den Anschluss verlieren",
+    "den Überblick verlieren",
+    "die Geduld verlieren"
+   ]
+  },
+  {
+   "nucleo": "verlängern",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "verlängern lassen"
+   ],
+   "nota": "infinitivo incrustado de «lassen»"
+  },
+  {
+   "nucleo": "verpassen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Anschluss verpassen"
+   ]
+  },
+  {
+   "nucleo": "verschieben",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Termin verschieben"
+   ]
+  },
+  {
+   "nucleo": "verschärfen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Ton verschärfen"
+   ]
+  },
+  {
+   "nucleo": "verspielen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Vertrauen verspielen"
+   ]
+  },
+  {
+   "nucleo": "vertreiben",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "sich die Zeit vertreiben"
+   ],
+   "nota": "«sich die Zeit vertreiben» es dativo libre, no verbo reflexivo"
+  },
+  {
+   "nucleo": "verwerten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Reste verwerten"
+   ]
+  },
+  {
+   "nucleo": "sich verwirklichen",
+   "claseVerbo": [
+    "reflexivo"
+   ],
+   "colocaciones": [
+    "sich selbst verwirklichen"
+   ]
+  },
+  {
+   "nucleo": "verwischen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Grenze verwischen"
+   ]
+  },
+  {
+   "nucleo": "wahren",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Distanz wahren",
+    "die Frist wahren"
+   ]
+  },
+  {
+   "nucleo": "wechseln",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Beruf wechseln",
+    "den Job wechseln"
+   ]
+  },
+  {
+   "nucleo": "wecken",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Neugier wecken"
+   ]
+  },
+  {
+   "nucleo": "wegkommen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "günstig wegkommen"
+   ]
+  },
+  {
+   "nucleo": "weitergeben",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Tradition weitergeben"
+   ]
+  },
+  {
+   "nucleo": "sich widmen",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Dativ"
+   ],
+   "reccion": "Dat",
+   "colocaciones": [
+    "sich einer Sache widmen"
+   ]
+  },
+  {
+   "nucleo": "zahlen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "in Raten zahlen"
+   ]
+  },
+  {
+   "nucleo": "zaubern",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "etwas auf den Tisch zaubern"
+   ]
+  },
+  {
+   "nucleo": "zeigen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Gesicht zeigen",
+    "sich versöhnlich zeigen"
+   ],
+   "nota": "«sich versöhnlich zeigen» es objeto reflexivo de un verbo transitivo"
+  },
+  {
+   "nucleo": "ziehen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "an einem Strang ziehen",
+    "aufs Land ziehen",
+    "beruflich Bilanz ziehen",
+    "die Bilanz ziehen",
+    "die Nummer ziehen"
+   ]
+  },
+  {
+   "nucleo": "zubereiten",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "selbst zubereiten"
+   ]
+  },
+  {
+   "nucleo": "zugehen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "aufeinander zugehen"
+   ]
+  },
+  {
+   "nucleo": "zulassen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Nähe zulassen"
+   ]
+  },
+  {
+   "nucleo": "zurückbringen",
+   "claseVerbo": [
+    "trennbar"
+   ],
+   "colocaciones": [
+    "die Flasche zurückbringen"
+   ]
+  },
+  {
+   "nucleo": "zweckentfremden",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Wohnraum zweckentfremden"
+   ]
+  },
+  {
+   "nucleo": "zügeln",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Ehrgeiz zügeln"
+   ]
+  },
+  {
+   "nucleo": "ändern",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Passwort ändern",
+    "die Gewohnheit ändern"
+   ]
+  },
+  {
+   "nucleo": "äussern",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "Bedenken äussern"
+   ]
+  },
+  {
+   "nucleo": "üben",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "regelmässig üben"
+   ]
+  },
+  {
+   "nucleo": "überfordern",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "den Körper überfordern"
+   ]
+  },
+  {
+   "nucleo": "übernehmen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "die Kosten übernehmen",
+    "die Verantwortung übernehmen",
+    "eine Aufgabe übernehmen",
+    "sich finanziell übernehmen"
+   ],
+   "nota": "inseparable; la entrada etiquetada «etwas übernehmen» ya dice simple"
+  },
+  {
+   "nucleo": "überziehen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "das Konto überziehen"
+   ]
+  }
+ ],
+ "_leeme_nucleos": "Nucleos verbales de las colocaciones (prompt 23). `nucleoVerbal` + `claseNucleo` + `reccionNucleo` se aplican al ITEM de la colocacion; el nucleo no es un item y no es marcable en Guardados. `colocaciones` es de trabajo: la aplica aplicar_verbos.py. La reccion es la del verbo, no la de cada colocacion."
 }

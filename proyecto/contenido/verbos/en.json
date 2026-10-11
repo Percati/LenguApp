@@ -2,367 +2,5405 @@
  "idioma": "en",
  "version": 1,
  "_leeme": "Tabla maestra de verbos (prompt 20). Clave: (idioma, forma normalizada). Se aplica con proyecto/tools/aplicar_verbos.py a TODAS las repeticiones del item en contenido/packs. Solo claseVerbo y reccion llegan al contenido; base, raiz y nota son de trabajo. Sin nivel: la vista Verbos filtra solo por claseVerbo.",
- "clases": ["simple", "phrasal-separable", "phrasal-inseparable", "verbo-preposicion"],
+ "clases": [
+  "simple",
+  "phrasal-separable",
+  "phrasal-inseparable",
+  "verbo-preposicion"
+ ],
  "verbos": [
-  {"forma": "acclimatise", "item": "to acclimatise", "base": "acclimatise", "claseVerbo": ["simple"]},
-  {"forma": "acclimatise to", "item": "to acclimatise to", "base": "acclimatise to", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "adapt", "item": "to adapt", "base": "adapt", "claseVerbo": ["simple"]},
-  {"forma": "advocate for yourself", "item": "to advocate for yourself", "base": "advocate for", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "affect", "item": "to affect", "base": "affect", "claseVerbo": ["simple"]},
-  {"forma": "afford", "item": "to afford", "base": "afford", "claseVerbo": ["simple"]},
-  {"forma": "agree", "item": "to agree", "base": "agree", "claseVerbo": ["simple"]},
-  {"forma": "agree with", "item": "to agree with", "base": "agree with", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "alleviate", "item": "to alleviate", "base": "alleviate", "claseVerbo": ["simple"]},
-  {"forma": "apologise", "item": "to apologise", "base": "apologise", "claseVerbo": ["simple"]},
-  {"forma": "apply for", "item": "to apply for", "base": "apply for", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "apply for a job", "item": "to apply for a job", "base": "apply for", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "apply for something", "item": "to apply for something", "base": "apply for", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "argue", "item": "to argue", "base": "argue", "claseVerbo": ["simple"]},
-  {"forma": "arrive", "item": "to arrive", "base": "arrive", "claseVerbo": ["simple"]},
-  {"forma": "ask around", "item": "to ask around", "base": "ask around", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "ask for directions", "item": "to ask for directions", "base": "ask for", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "ask for help", "item": "to ask for help", "base": "ask for", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "automate", "item": "to automate", "base": "automate", "claseVerbo": ["simple"]},
-  {"forma": "back up", "item": "to back up", "base": "back up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "back up (files)", "item": "to back up (files)", "base": "back up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "backtrack on", "item": "to backtrack on", "base": "backtrack on", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "bake", "item": "to bake", "base": "bake", "claseVerbo": ["simple"]},
-  {"forma": "batch-cook", "item": "to batch-cook", "base": "batch-cook", "claseVerbo": ["simple"]},
-  {"forma": "believe", "item": "to believe", "base": "believe", "claseVerbo": ["simple"]},
-  {"forma": "blend in", "item": "to blend in", "base": "blend in", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "boil", "item": "to boil", "base": "boil", "claseVerbo": ["simple"]},
-  {"forma": "bond with someone", "item": "to bond with someone", "base": "bond with", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "book", "item": "to book", "base": "book", "claseVerbo": ["simple"]},
-  {"forma": "borrow", "item": "to borrow", "base": "borrow", "claseVerbo": ["simple"]},
-  {"forma": "bottle up your emotions", "item": "to bottle up your emotions", "base": "bottle up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "break up", "item": "to break up", "base": "break up", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "bring up children", "item": "to bring up children", "base": "bring up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "brush up on", "item": "to brush up on", "base": "brush up", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "build up savings", "item": "to build up savings", "base": "build up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "burn off energy", "item": "to burn off energy", "base": "burn off", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "burn out", "item": "to burn out", "base": "burn out", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "buy", "item": "to buy", "base": "buy", "claseVerbo": ["simple"]},
-  {"forma": "buy into a trend", "item": "to buy into a trend", "base": "buy into", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "call back", "item": "to call back", "base": "call back", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "call in sick", "item": "to call in sick", "base": "call in", "claseVerbo": ["phrasal-inseparable"], "nota": "dudoso: «call in» = avisar por teléfono; fijo con «sick»"},
-  {"forma": "calm down", "item": "to calm down", "base": "calm down", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "cancel", "item": "to cancel", "base": "cancel", "claseVerbo": ["simple"]},
-  {"forma": "carve out a niche", "item": "to carve out a niche", "base": "carve out", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "catch up", "item": "to catch up", "base": "catch up", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "catch up on work", "item": "to catch up on work", "base": "catch up", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "catch up with someone", "item": "to catch up with someone", "base": "catch up with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "change", "item": "to change", "base": "change", "claseVerbo": ["simple"]},
-  {"forma": "charge", "item": "to charge", "base": "charge", "claseVerbo": ["simple"]},
-  {"forma": "chase up", "item": "to chase up", "base": "chase up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "check", "item": "to check", "base": "check", "claseVerbo": ["simple"]},
-  {"forma": "check in", "item": "to check in", "base": "check in", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "check in online", "item": "to check in online", "base": "check in", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "clock in", "item": "to clock in", "base": "clock in", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "come round", "item": "to come round", "base": "come round", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "commodify", "item": "to commodify", "base": "commodify", "claseVerbo": ["simple"]},
-  {"forma": "commute", "item": "to commute", "base": "commute", "claseVerbo": ["simple"]},
-  {"forma": "compare", "item": "to compare", "base": "compare", "claseVerbo": ["simple"]},
-  {"forma": "complain", "item": "to complain", "base": "complain", "claseVerbo": ["simple"]},
-  {"forma": "complain about", "item": "to complain about", "base": "complain about", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "complain about something", "item": "to complain about something", "base": "complain about", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "compromise", "item": "to compromise", "base": "compromise", "claseVerbo": ["simple"]},
-  {"forma": "concentrate", "item": "to concentrate", "base": "concentrate", "claseVerbo": ["simple"]},
-  {"forma": "confide in", "item": "to confide in", "base": "confide in", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "connect", "item": "to connect", "base": "connect", "claseVerbo": ["simple"]},
-  {"forma": "cook", "item": "to cook", "base": "cook", "claseVerbo": ["simple"]},
-  {"forma": "corroborate", "item": "to corroborate", "base": "corroborate", "claseVerbo": ["simple"]},
-  {"forma": "cost", "item": "to cost", "base": "cost", "claseVerbo": ["simple"]},
-  {"forma": "cover for someone", "item": "to cover for someone", "base": "cover for", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "cram", "item": "to cram", "base": "cram", "claseVerbo": ["simple"]},
-  {"forma": "cram for an exam", "item": "to cram for an exam", "base": "cram for", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "crash", "item": "to crash", "base": "crash", "claseVerbo": ["simple"]},
-  {"forma": "cut", "item": "to cut", "base": "cut", "claseVerbo": ["simple"]},
-  {"forma": "cut back on", "item": "to cut back on", "base": "cut back", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "cut down on", "item": "to cut down on", "base": "cut down", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "cut down on demand", "item": "to cut down on demand", "base": "cut down", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "cut down on plastic", "item": "to cut down on plastic", "base": "cut down", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "cut down on shopping", "item": "to cut down on shopping", "base": "cut down", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "cut down on something", "item": "to cut down on something", "base": "cut down", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "cut down on sugar", "item": "to cut down on sugar", "base": "cut down", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "cut down on waste", "item": "to cut down on waste", "base": "cut down", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "cut out the middleman", "item": "to cut out the middleman", "base": "cut out", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "cycle", "item": "to cycle", "base": "cycle", "claseVerbo": ["simple"]},
-  {"forma": "dabble in", "item": "to dabble in", "base": "dabble in", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "dabble in something", "item": "to dabble in something", "base": "dabble in", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "deal with something", "item": "to deal with something", "base": "deal with", "claseVerbo": ["phrasal-inseparable"], "nota": "dudoso PI|VP: «deal» solo es «repartir»; se trata como phrasal"},
-  {"forma": "debunk", "item": "to debunk", "base": "debunk", "claseVerbo": ["simple"]},
-  {"forma": "decarbonise", "item": "to decarbonise", "base": "decarbonise", "claseVerbo": ["simple"]},
-  {"forma": "decide", "item": "to decide", "base": "decide", "claseVerbo": ["simple"]},
-  {"forma": "declutter", "item": "to declutter", "base": "declutter", "claseVerbo": ["simple"]},
-  {"forma": "delegate", "item": "to delegate", "base": "delegate", "claseVerbo": ["simple"]},
-  {"forma": "delete", "item": "to delete", "base": "delete", "claseVerbo": ["simple"]},
-  {"forma": "deny", "item": "to deny", "base": "deny", "claseVerbo": ["simple"]},
-  {"forma": "deprecate", "item": "to deprecate", "base": "deprecate", "claseVerbo": ["simple"]},
-  {"forma": "disagree", "item": "to disagree", "base": "disagree", "claseVerbo": ["simple"]},
-  {"forma": "discuss", "item": "to discuss", "base": "discuss", "claseVerbo": ["simple"]},
-  {"forma": "diversify", "item": "to diversify", "base": "diversify", "claseVerbo": ["simple"]},
-  {"forma": "do without", "item": "to do without", "base": "do without", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "doomscroll", "item": "to doomscroll", "base": "doomscroll", "claseVerbo": ["simple"]},
-  {"forma": "download", "item": "to download", "base": "download", "claseVerbo": ["simple"]},
-  {"forma": "downshift", "item": "to downshift", "base": "downshift", "claseVerbo": ["simple"]},
-  {"forma": "drift apart", "item": "to drift apart", "base": "drift apart", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "drop out", "item": "to drop out", "base": "drop out", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "drop out of something", "item": "to drop out of something", "base": "drop out of", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "earn", "item": "to earn", "base": "earn", "claseVerbo": ["simple"]},
-  {"forma": "eat out", "item": "to eat out", "base": "eat out", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "erode", "item": "to erode", "base": "erode", "claseVerbo": ["simple"]},
-  {"forma": "evict", "item": "to evict", "base": "evict", "claseVerbo": ["simple"]},
-  {"forma": "exacerbate", "item": "to exacerbate", "base": "exacerbate", "claseVerbo": ["simple"]},
-  {"forma": "excel at", "item": "to excel at", "base": "excel at", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "exchange", "item": "to exchange", "base": "exchange", "claseVerbo": ["simple"]},
-  {"forma": "exchange (a product)", "item": "to exchange (a product)", "base": "exchange", "claseVerbo": ["simple"]},
-  {"forma": "expedite", "item": "to expedite", "base": "expedite", "claseVerbo": ["simple"]},
-  {"forma": "explain", "item": "to explain", "base": "explain", "claseVerbo": ["simple"]},
-  {"forma": "fact-check", "item": "to fact-check", "base": "fact-check", "claseVerbo": ["simple"]},
-  {"forma": "fall behind", "item": "to fall behind", "base": "fall behind", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "fall for a scam", "item": "to fall for a scam", "base": "fall for", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "fall out", "item": "to fall out", "base": "fall out", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "fall out with", "item": "to fall out with", "base": "fall out with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "fall out with someone", "item": "to fall out with someone", "base": "fall out with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "fill in", "item": "to fill in", "base": "fill in", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "fill in a form", "item": "to fill in a form", "base": "fill in", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "fill in the form", "item": "to fill in the form", "base": "fill in", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "find out", "item": "to find out", "base": "find out", "claseVerbo": ["phrasal-separable"], "nota": "dudoso PS|PI: «find it out» es poco natural pero posible"},
-  {"forma": "find out about", "item": "to find out about", "base": "find out", "claseVerbo": ["phrasal-inseparable"], "nota": "con preposición detrás: no admite el objeto en medio"},
-  {"forma": "find out about something", "item": "to find out about something", "base": "find out", "claseVerbo": ["phrasal-inseparable"], "nota": "con preposición detrás: no admite el objeto en medio"},
-  {"forma": "find out who's responsible", "item": "to find out who's responsible", "base": "find out", "claseVerbo": ["phrasal-separable"], "nota": "dudoso PS|PI: ver «find out»"},
-  {"forma": "fit", "item": "to fit", "base": "fit", "claseVerbo": ["simple"]},
-  {"forma": "fit in", "item": "to fit in", "base": "fit in", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "flare up", "item": "to flare up", "base": "flare up", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "flee (from disasters)", "item": "to flee (from disasters)", "base": "flee", "claseVerbo": ["simple"]},
-  {"forma": "follow up", "item": "to follow up", "base": "follow up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "forgive", "item": "to forgive", "base": "forgive", "claseVerbo": ["simple"]},
-  {"forma": "freeze", "item": "to freeze", "base": "freeze", "claseVerbo": ["simple"]},
-  {"forma": "fry", "item": "to fry", "base": "fry", "claseVerbo": ["simple"]},
-  {"forma": "future-proof", "item": "to future-proof", "base": "future-proof", "claseVerbo": ["simple"]},
-  {"forma": "get along", "item": "to get along", "base": "get along", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "get into something", "item": "to get into something", "base": "get into", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "get off", "item": "to get off", "base": "get off", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "get on", "item": "to get on", "base": "get on", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "get on well", "item": "to get on well", "base": "get on", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "get on well with", "item": "to get on well with", "base": "get on", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "get on with someone", "item": "to get on with someone", "base": "get on with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "get over something", "item": "to get over something", "base": "get over", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "give up", "item": "to give up", "base": "give up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "give up smoking", "item": "to give up smoking", "base": "give up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "gloss over something", "item": "to gloss over something", "base": "gloss over", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "go off", "item": "to go off", "base": "go off", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "go off (food)", "item": "to go off (food)", "base": "go off", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "go off (milk)", "item": "to go off (milk)", "base": "go off", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "grow apart", "item": "to grow apart", "base": "grow apart", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "haggle", "item": "to haggle", "base": "haggle", "claseVerbo": ["simple"]},
-  {"forma": "haggle over the price", "item": "to haggle over the price", "base": "haggle over", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "hand in", "item": "to hand in", "base": "hand in", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "hand in a document", "item": "to hand in a document", "base": "hand in", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "hand in your notice", "item": "to hand in your notice", "base": "hand in", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "hang out with", "item": "to hang out with", "base": "hang out with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "hang out with friends", "item": "to hang out with friends", "base": "hang out with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "happen", "item": "to happen", "base": "happen", "claseVerbo": ["simple"]},
-  {"forma": "hedge against inflation", "item": "to hedge against inflation", "base": "hedge against", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "help", "item": "to help", "base": "help", "claseVerbo": ["simple"]},
-  {"forma": "hold out for a sale", "item": "to hold out for a sale", "base": "hold out for", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "hope", "item": "to hope", "base": "hope", "claseVerbo": ["simple"]},
-  {"forma": "hurt", "item": "to hurt", "base": "hurt", "claseVerbo": ["simple"]},
-  {"forma": "improve", "item": "to improve", "base": "improve", "claseVerbo": ["simple"]},
-  {"forma": "incentivise", "item": "to incentivise", "base": "incentivise", "claseVerbo": ["simple"]},
-  {"forma": "invest", "item": "to invest", "base": "invest", "claseVerbo": ["simple"]},
-  {"forma": "join", "item": "to join", "base": "join", "claseVerbo": ["simple"]},
-  {"forma": "juggle", "item": "to juggle", "base": "juggle", "claseVerbo": ["simple"]},
-  {"forma": "keep up with", "item": "to keep up with", "base": "keep up with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "keep up with technology", "item": "to keep up with technology", "base": "keep up with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "keep up with the news", "item": "to keep up with the news", "base": "keep up with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "lag behind", "item": "to lag behind", "base": "lag behind", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "learn", "item": "to learn", "base": "learn", "claseVerbo": ["simple"]},
-  {"forma": "learn from mistakes", "item": "to learn from mistakes", "base": "learn from", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "leave", "item": "to leave", "base": "leave", "claseVerbo": ["simple"]},
-  {"forma": "lend", "item": "to lend", "base": "lend", "claseVerbo": ["simple"]},
-  {"forma": "lie down", "item": "to lie down", "base": "lie down", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "listen", "item": "to listen", "base": "listen", "claseVerbo": ["simple"]},
-  {"forma": "listen to your body", "item": "to listen to your body", "base": "listen to", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "log in", "item": "to log in", "base": "log in", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "log off", "item": "to log off", "base": "log off", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "look after", "item": "to look after", "base": "look after", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "look after someone", "item": "to look after someone", "base": "look after", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "look after yourself", "item": "to look after yourself", "base": "look after", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "look for", "item": "to look for", "base": "look for", "claseVerbo": ["phrasal-inseparable"], "nota": "dudoso PI|VP: «look» solo es «mirar»; se trata como phrasal"},
-  {"forma": "look for a flat", "item": "to look for a flat", "base": "look for", "claseVerbo": ["phrasal-inseparable"], "nota": "dudoso PI|VP: ver «look for»"},
-  {"forma": "look forward to", "item": "to look forward to", "base": "look forward to", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "look into something", "item": "to look into something", "base": "look into", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "look up to someone", "item": "to look up to someone", "base": "look up to", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "lose", "item": "to lose", "base": "lose", "claseVerbo": ["simple"]},
-  {"forma": "make up", "item": "to make up", "base": "make up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "meet up", "item": "to meet up", "base": "meet up", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "meet up with", "item": "to meet up with", "base": "meet up with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "micromanage", "item": "to micromanage", "base": "micromanage", "claseVerbo": ["simple"]},
-  {"forma": "mitigate", "item": "to mitigate", "base": "mitigate", "claseVerbo": ["simple"]},
-  {"forma": "monetise", "item": "to monetise", "base": "monetise", "claseVerbo": ["simple"]},
-  {"forma": "move in", "item": "to move in", "base": "move in", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "move out", "item": "to move out", "base": "move out", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "move to the countryside", "item": "to move to the countryside", "base": "move to", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "mute", "item": "to mute", "base": "mute", "claseVerbo": ["simple"]},
-  {"forma": "open up about", "item": "to open up about", "base": "open up", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "open up to someone", "item": "to open up to someone", "base": "open up to", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "opt out", "item": "to opt out", "base": "opt out", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "opt out (of data collection)", "item": "to opt out (of data collection)", "base": "opt out", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "opt out of a scheme", "item": "to opt out of a scheme", "base": "opt out of", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "order", "item": "to order", "base": "order", "claseVerbo": ["simple"]},
-  {"forma": "overcharge", "item": "to overcharge", "base": "overcharge", "claseVerbo": ["simple"]},
-  {"forma": "overindulge", "item": "to overindulge", "base": "overindulge", "claseVerbo": ["simple"]},
-  {"forma": "owe", "item": "to owe", "base": "owe", "claseVerbo": ["simple"]},
-  {"forma": "pack", "item": "to pack", "base": "pack", "claseVerbo": ["simple"]},
-  {"forma": "pass", "item": "to pass", "base": "pass", "claseVerbo": ["simple"]},
-  {"forma": "pass down a recipe", "item": "to pass down a recipe", "base": "pass down", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "pass on traditions", "item": "to pass on traditions", "base": "pass on", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "pay", "item": "to pay", "base": "pay", "claseVerbo": ["simple"]},
-  {"forma": "pay back", "item": "to pay back", "base": "pay back", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "pay into a pension", "item": "to pay into a pension", "base": "pay into", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "perpetuate", "item": "to perpetuate", "base": "perpetuate", "claseVerbo": ["simple"]},
-  {"forma": "plateau", "item": "to plateau", "base": "plateau", "claseVerbo": ["simple"]},
-  {"forma": "play", "item": "to play", "base": "play", "claseVerbo": ["simple"]},
-  {"forma": "potter about", "item": "to potter about", "base": "potter about", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "practise", "item": "to practise", "base": "practise", "claseVerbo": ["simple"]},
-  {"forma": "privatise", "item": "to privatise", "base": "privatise", "claseVerbo": ["simple"]},
-  {"forma": "protect", "item": "to protect", "base": "protect", "claseVerbo": ["simple"]},
-  {"forma": "protest", "item": "to protest", "base": "protest", "claseVerbo": ["simple"]},
-  {"forma": "push back on something", "item": "to push back on something", "base": "push back", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "put in effort", "item": "to put in effort", "base": "put in", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "put off seeing a doctor", "item": "to put off seeing a doctor", "base": "put off", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "put up with", "item": "to put up with", "base": "put up with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "put up with pain", "item": "to put up with pain", "base": "put up with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "queue", "item": "to queue", "base": "queue", "claseVerbo": ["simple"]},
-  {"forma": "quit", "item": "to quit", "base": "quit", "claseVerbo": ["simple"]},
-  {"forma": "read", "item": "to read", "base": "read", "claseVerbo": ["simple"]},
-  {"forma": "recharge", "item": "to recharge", "base": "recharge", "claseVerbo": ["simple"]},
-  {"forma": "reciprocate", "item": "to reciprocate", "base": "reciprocate", "claseVerbo": ["simple"]},
-  {"forma": "recommend", "item": "to recommend", "base": "recommend", "claseVerbo": ["simple"]},
-  {"forma": "recover", "item": "to recover", "base": "recover", "claseVerbo": ["simple"]},
-  {"forma": "recover from", "item": "to recover from", "base": "recover from", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "recycle", "item": "to recycle", "base": "recycle", "claseVerbo": ["simple"]},
-  {"forma": "regenerate", "item": "to regenerate", "base": "regenerate", "claseVerbo": ["simple"]},
-  {"forma": "register", "item": "to register", "base": "register", "claseVerbo": ["simple"]},
-  {"forma": "register with the council", "item": "to register with the council", "base": "register with", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "regulate", "item": "to regulate", "base": "regulate", "claseVerbo": ["simple"]},
-  {"forma": "relax", "item": "to relax", "base": "relax", "claseVerbo": ["simple"]},
-  {"forma": "rely on", "item": "to rely on", "base": "rely on", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "renew", "item": "to renew", "base": "renew", "claseVerbo": ["simple"]},
-  {"forma": "rent", "item": "to rent", "base": "rent", "claseVerbo": ["simple"]},
-  {"forma": "repair", "item": "to repair", "base": "repair", "claseVerbo": ["simple"]},
-  {"forma": "repeat", "item": "to repeat", "base": "repeat", "claseVerbo": ["simple"]},
-  {"forma": "replace", "item": "to replace", "base": "replace", "claseVerbo": ["simple"]},
-  {"forma": "report (news)", "item": "to report (news)", "base": "report", "claseVerbo": ["simple"]},
-  {"forma": "report on", "item": "to report on", "base": "report on", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "report on something", "item": "to report on something", "base": "report on", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "report to someone", "item": "to report to someone", "base": "report to", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "reset", "item": "to reset", "base": "reset", "claseVerbo": ["simple"]},
-  {"forma": "reskill", "item": "to reskill", "base": "reskill", "claseVerbo": ["simple"]},
-  {"forma": "rest", "item": "to rest", "base": "rest", "claseVerbo": ["simple"]},
-  {"forma": "retrain", "item": "to retrain", "base": "retrain", "claseVerbo": ["simple"]},
-  {"forma": "reuse", "item": "to reuse", "base": "reuse", "claseVerbo": ["simple"]},
-  {"forma": "revise", "item": "to revise", "base": "revise", "claseVerbo": ["simple"]},
-  {"forma": "rewild", "item": "to rewild", "base": "rewild", "claseVerbo": ["simple"]},
-  {"forma": "ride out a downturn", "item": "to ride out a downturn", "base": "ride out", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "roll out a feature", "item": "to roll out a feature", "base": "roll out", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "run out of", "item": "to run out of", "base": "run out of", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "run out of battery", "item": "to run out of battery", "base": "run out of", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "save up for something", "item": "to save up for something", "base": "save up for", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "savour", "item": "to savour", "base": "savour", "claseVerbo": ["simple"]},
-  {"forma": "scale (intransitive)", "item": "to scale (intransitive)", "base": "scale", "claseVerbo": ["simple"]},
-  {"forma": "scale up", "item": "to scale up", "base": "scale up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "scroll through", "item": "to scroll through", "base": "scroll through", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "scrutinise", "item": "to scrutinise", "base": "scrutinise", "claseVerbo": ["simple"]},
-  {"forma": "search for something", "item": "to search for something", "base": "search for", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "season", "item": "to season", "base": "season", "claseVerbo": ["simple"]},
-  {"forma": "see through advertising", "item": "to see through advertising", "base": "see through", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "send back", "item": "to send back", "base": "send back", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "send off", "item": "to send off", "base": "send off", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "sensationalise", "item": "to sensationalise", "base": "sensationalise", "claseVerbo": ["simple"]},
-  {"forma": "set off", "item": "to set off", "base": "set off", "claseVerbo": ["phrasal-inseparable"], "nota": "sentido «partir» (intransitivo); transitivo («set off an alarm») sería separable"},
-  {"forma": "set up", "item": "to set up", "base": "set up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "settle in", "item": "to settle in", "base": "settle in", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "settle into a job", "item": "to settle into a job", "base": "settle into", "claseVerbo": ["phrasal-inseparable"], "nota": "dudoso PI|VP: «settle into» = adaptarse, no composicional"},
-  {"forma": "shake off a cold", "item": "to shake off a cold", "base": "shake off", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "share", "item": "to share", "base": "share", "claseVerbo": ["simple"]},
-  {"forma": "shop around", "item": "to shop around", "base": "shop around", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "shrug off an illness", "item": "to shrug off an illness", "base": "shrug off", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "sign", "item": "to sign", "base": "sign", "claseVerbo": ["simple"]},
-  {"forma": "sign off on", "item": "to sign off on", "base": "sign off", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "sign off on something", "item": "to sign off on something", "base": "sign off", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "sign up", "item": "to sign up", "base": "sign up", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "sign up for", "item": "to sign up for", "base": "sign up for", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "sign up for a course", "item": "to sign up for a course", "base": "sign up for", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "sleep on it", "item": "to sleep on it", "base": "sleep on", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "smoke", "item": "to smoke", "base": "smoke", "claseVerbo": ["simple"]},
-  {"forma": "spend", "item": "to spend", "base": "spend", "claseVerbo": ["simple"]},
-  {"forma": "splash out on", "item": "to splash out on", "base": "splash out", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "splash out on something", "item": "to splash out on something", "base": "splash out", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "splurge", "item": "to splurge", "base": "splurge", "claseVerbo": ["simple"]},
-  {"forma": "spoon-feed", "item": "to spoon-feed", "base": "spoon-feed", "claseVerbo": ["simple"]},
-  {"forma": "spread", "item": "to spread", "base": "spread", "claseVerbo": ["simple"]},
-  {"forma": "squander", "item": "to squander", "base": "squander", "claseVerbo": ["simple"]},
-  {"forma": "stagnate", "item": "to stagnate", "base": "stagnate", "claseVerbo": ["simple"]},
-  {"forma": "stand out", "item": "to stand out", "base": "stand out", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "stand up for", "item": "to stand up for", "base": "stand up for", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "stave off", "item": "to stave off", "base": "stave off", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "stick to", "item": "to stick to", "base": "stick to", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "stick to a budget", "item": "to stick to a budget", "base": "stick to", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "stick with it", "item": "to stick with it", "base": "stick with", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "stream", "item": "to stream", "base": "stream", "claseVerbo": ["simple"]},
-  {"forma": "streamline", "item": "to streamline", "base": "streamline", "claseVerbo": ["simple"]},
-  {"forma": "study for", "item": "to study for", "base": "study for", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "supplant", "item": "to supplant", "base": "supplant", "claseVerbo": ["simple"]},
-  {"forma": "swim", "item": "to swim", "base": "swim", "claseVerbo": ["simple"]},
-  {"forma": "swipe", "item": "to swipe", "base": "swipe", "claseVerbo": ["simple"]},
-  {"forma": "switch off", "item": "to switch off", "base": "switch off", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "switch on", "item": "to switch on", "base": "switch on", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "switch on the news", "item": "to switch on the news", "base": "switch on", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "switch to", "item": "to switch to", "base": "switch to", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "tackle", "item": "to tackle", "base": "tackle", "claseVerbo": ["simple"]},
-  {"forma": "tailor", "item": "to tailor", "base": "tailor", "claseVerbo": ["simple"]},
-  {"forma": "take after someone", "item": "to take after someone", "base": "take after", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "take on (a role)", "item": "to take on (a role)", "base": "take on", "claseVerbo": ["phrasal-separable"], "nota": "paréntesis ignorado en la clasificación"},
-  {"forma": "take on a role", "item": "to take on a role", "base": "take on", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "take on a task", "item": "to take on a task", "base": "take on", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "take up a hobby", "item": "to take up a hobby", "base": "take up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "take up a hobby again", "item": "to take up a hobby again", "base": "take up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "take up an offer", "item": "to take up an offer", "base": "take up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "talk to someone", "item": "to talk to someone", "base": "talk to", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "taste", "item": "to taste", "base": "taste", "claseVerbo": ["simple"]},
-  {"forma": "throw away", "item": "to throw away", "base": "throw away", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "tidy up", "item": "to tidy up", "base": "tidy up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "tinker with", "item": "to tinker with", "base": "tinker with", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "tinker with something", "item": "to tinker with something", "base": "tinker with", "claseVerbo": ["verbo-preposicion"]},
-  {"forma": "top up your qualifications", "item": "to top up your qualifications", "base": "top up", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "trade down", "item": "to trade down", "base": "trade down", "claseVerbo": ["phrasal-inseparable"]},
-  {"forma": "train", "item": "to train", "base": "train", "claseVerbo": ["simple"]},
-  {"forma": "troubleshoot", "item": "to troubleshoot", "base": "troubleshoot", "claseVerbo": ["simple"]},
-  {"forma": "trust", "item": "to trust", "base": "trust", "claseVerbo": ["simple"]},
-  {"forma": "try", "item": "to try", "base": "try", "claseVerbo": ["simple"]},
-  {"forma": "try on", "item": "to try on", "base": "try on", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "try out a recipe", "item": "to try out a recipe", "base": "try out", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "turn down an offer", "item": "to turn down an offer", "base": "turn down", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "turn off", "item": "to turn off", "base": "turn off", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "turn off the light", "item": "to turn off the light", "base": "turn off", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "type", "item": "to type", "base": "type", "claseVerbo": ["simple"]},
-  {"forma": "understand", "item": "to understand", "base": "understand", "claseVerbo": ["simple"]},
-  {"forma": "unwind", "item": "to unwind", "base": "unwind", "claseVerbo": ["simple"]},
-  {"forma": "upcycle", "item": "to upcycle", "base": "upcycle", "claseVerbo": ["simple"]},
-  {"forma": "update", "item": "to update", "base": "update", "claseVerbo": ["simple"]},
-  {"forma": "upskill", "item": "to upskill", "base": "upskill", "claseVerbo": ["simple"]},
-  {"forma": "visit", "item": "to visit", "base": "visit", "claseVerbo": ["simple"]},
-  {"forma": "vote", "item": "to vote", "base": "vote", "claseVerbo": ["simple"]},
-  {"forma": "wait", "item": "to wait", "base": "wait", "claseVerbo": ["simple"]},
-  {"forma": "walk", "item": "to walk", "base": "walk", "claseVerbo": ["simple"]},
-  {"forma": "while away the hours", "item": "to while away the hours", "base": "while away", "claseVerbo": ["phrasal-inseparable"], "nota": "transitivo con objeto fijo detrás; no admite «while the hours away»"},
-  {"forma": "win", "item": "to win", "base": "win", "claseVerbo": ["simple"]},
-  {"forma": "wind down", "item": "to wind down", "base": "wind down", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "work", "item": "to work", "base": "work", "claseVerbo": ["simple"]},
-  {"forma": "work (to function)", "item": "to work (to function)", "base": "work", "claseVerbo": ["simple"]},
-  {"forma": "work out", "item": "to work out", "base": "work out", "claseVerbo": ["phrasal-separable"]},
-  {"forma": "wrap up", "item": "to wrap up", "base": "wrap up", "claseVerbo": ["phrasal-separable"]}
- ]
+  {
+   "forma": "acclimatise",
+   "item": "to acclimatise",
+   "base": "acclimatise",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "acclimatise to",
+   "item": "to acclimatise to",
+   "base": "acclimatise to",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "adapt",
+   "item": "to adapt",
+   "base": "adapt",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "advocate for yourself",
+   "item": "to advocate for yourself",
+   "base": "advocate for",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "affect",
+   "item": "to affect",
+   "base": "affect",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "afford",
+   "item": "to afford",
+   "base": "afford",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "agree",
+   "item": "to agree",
+   "base": "agree",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "agree with",
+   "item": "to agree with",
+   "base": "agree with",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "alleviate",
+   "item": "to alleviate",
+   "base": "alleviate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "apologise",
+   "item": "to apologise",
+   "base": "apologise",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "apply for",
+   "item": "to apply for",
+   "base": "apply for",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "apply for a job",
+   "item": "to apply for a job",
+   "base": "apply for",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "apply for something",
+   "item": "to apply for something",
+   "base": "apply for",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "argue",
+   "item": "to argue",
+   "base": "argue",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "arrive",
+   "item": "to arrive",
+   "base": "arrive",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "ask around",
+   "item": "to ask around",
+   "base": "ask around",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "ask for directions",
+   "item": "to ask for directions",
+   "base": "ask for",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "ask for help",
+   "item": "to ask for help",
+   "base": "ask for",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "automate",
+   "item": "to automate",
+   "base": "automate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "back up",
+   "item": "to back up",
+   "base": "back up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "back up (files)",
+   "item": "to back up (files)",
+   "base": "back up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "backtrack on",
+   "item": "to backtrack on",
+   "base": "backtrack on",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "bake",
+   "item": "to bake",
+   "base": "bake",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "batch-cook",
+   "item": "to batch-cook",
+   "base": "batch-cook",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "believe",
+   "item": "to believe",
+   "base": "believe",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "blend in",
+   "item": "to blend in",
+   "base": "blend in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "boil",
+   "item": "to boil",
+   "base": "boil",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "bond with someone",
+   "item": "to bond with someone",
+   "base": "bond with",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "book",
+   "item": "to book",
+   "base": "book",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "borrow",
+   "item": "to borrow",
+   "base": "borrow",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "bottle up your emotions",
+   "item": "to bottle up your emotions",
+   "base": "bottle up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "break up",
+   "item": "to break up",
+   "base": "break up",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "bring up children",
+   "item": "to bring up children",
+   "base": "bring up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "brush up on",
+   "item": "to brush up on",
+   "base": "brush up",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "build up savings",
+   "item": "to build up savings",
+   "base": "build up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "burn off energy",
+   "item": "to burn off energy",
+   "base": "burn off",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "burn out",
+   "item": "to burn out",
+   "base": "burn out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "buy",
+   "item": "to buy",
+   "base": "buy",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "buy into a trend",
+   "item": "to buy into a trend",
+   "base": "buy into",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "call back",
+   "item": "to call back",
+   "base": "call back",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "call in sick",
+   "item": "to call in sick",
+   "base": "call in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "nota": "dudoso: «call in» = avisar por teléfono; fijo con «sick»"
+  },
+  {
+   "forma": "calm down",
+   "item": "to calm down",
+   "base": "calm down",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "cancel",
+   "item": "to cancel",
+   "base": "cancel",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "carve out a niche",
+   "item": "to carve out a niche",
+   "base": "carve out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "catch up",
+   "item": "to catch up",
+   "base": "catch up",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "catch up on work",
+   "item": "to catch up on work",
+   "base": "catch up",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "catch up with someone",
+   "item": "to catch up with someone",
+   "base": "catch up with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "change",
+   "item": "to change",
+   "base": "change",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "charge",
+   "item": "to charge",
+   "base": "charge",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "chase up",
+   "item": "to chase up",
+   "base": "chase up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "check",
+   "item": "to check",
+   "base": "check",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "check in",
+   "item": "to check in",
+   "base": "check in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "check in online",
+   "item": "to check in online",
+   "base": "check in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "clock in",
+   "item": "to clock in",
+   "base": "clock in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "come round",
+   "item": "to come round",
+   "base": "come round",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "commodify",
+   "item": "to commodify",
+   "base": "commodify",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "commute",
+   "item": "to commute",
+   "base": "commute",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "compare",
+   "item": "to compare",
+   "base": "compare",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "complain",
+   "item": "to complain",
+   "base": "complain",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "complain about",
+   "item": "to complain about",
+   "base": "complain about",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "complain about something",
+   "item": "to complain about something",
+   "base": "complain about",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "compromise",
+   "item": "to compromise",
+   "base": "compromise",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "concentrate",
+   "item": "to concentrate",
+   "base": "concentrate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "confide in",
+   "item": "to confide in",
+   "base": "confide in",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "connect",
+   "item": "to connect",
+   "base": "connect",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "cook",
+   "item": "to cook",
+   "base": "cook",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "corroborate",
+   "item": "to corroborate",
+   "base": "corroborate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "cost",
+   "item": "to cost",
+   "base": "cost",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "cover for someone",
+   "item": "to cover for someone",
+   "base": "cover for",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "cram",
+   "item": "to cram",
+   "base": "cram",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "cram for an exam",
+   "item": "to cram for an exam",
+   "base": "cram for",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "crash",
+   "item": "to crash",
+   "base": "crash",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "cut",
+   "item": "to cut",
+   "base": "cut",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "cut back on",
+   "item": "to cut back on",
+   "base": "cut back",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "cut down on",
+   "item": "to cut down on",
+   "base": "cut down",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "cut down on demand",
+   "item": "to cut down on demand",
+   "base": "cut down",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "cut down on plastic",
+   "item": "to cut down on plastic",
+   "base": "cut down",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "cut down on shopping",
+   "item": "to cut down on shopping",
+   "base": "cut down",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "cut down on something",
+   "item": "to cut down on something",
+   "base": "cut down",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "cut down on sugar",
+   "item": "to cut down on sugar",
+   "base": "cut down",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "cut down on waste",
+   "item": "to cut down on waste",
+   "base": "cut down",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "cut out the middleman",
+   "item": "to cut out the middleman",
+   "base": "cut out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "cycle",
+   "item": "to cycle",
+   "base": "cycle",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "dabble in",
+   "item": "to dabble in",
+   "base": "dabble in",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "dabble in something",
+   "item": "to dabble in something",
+   "base": "dabble in",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "deal with something",
+   "item": "to deal with something",
+   "base": "deal with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "nota": "dudoso PI|VP: «deal» solo es «repartir»; se trata como phrasal"
+  },
+  {
+   "forma": "debunk",
+   "item": "to debunk",
+   "base": "debunk",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "decarbonise",
+   "item": "to decarbonise",
+   "base": "decarbonise",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "decide",
+   "item": "to decide",
+   "base": "decide",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "declutter",
+   "item": "to declutter",
+   "base": "declutter",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "delegate",
+   "item": "to delegate",
+   "base": "delegate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "delete",
+   "item": "to delete",
+   "base": "delete",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "deny",
+   "item": "to deny",
+   "base": "deny",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "deprecate",
+   "item": "to deprecate",
+   "base": "deprecate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "disagree",
+   "item": "to disagree",
+   "base": "disagree",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "discuss",
+   "item": "to discuss",
+   "base": "discuss",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "diversify",
+   "item": "to diversify",
+   "base": "diversify",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "do without",
+   "item": "to do without",
+   "base": "do without",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "doomscroll",
+   "item": "to doomscroll",
+   "base": "doomscroll",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "download",
+   "item": "to download",
+   "base": "download",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "downshift",
+   "item": "to downshift",
+   "base": "downshift",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "drift apart",
+   "item": "to drift apart",
+   "base": "drift apart",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "drop out",
+   "item": "to drop out",
+   "base": "drop out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "drop out of something",
+   "item": "to drop out of something",
+   "base": "drop out of",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "earn",
+   "item": "to earn",
+   "base": "earn",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "eat out",
+   "item": "to eat out",
+   "base": "eat out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "erode",
+   "item": "to erode",
+   "base": "erode",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "evict",
+   "item": "to evict",
+   "base": "evict",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "exacerbate",
+   "item": "to exacerbate",
+   "base": "exacerbate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "excel at",
+   "item": "to excel at",
+   "base": "excel at",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "exchange",
+   "item": "to exchange",
+   "base": "exchange",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "exchange (a product)",
+   "item": "to exchange (a product)",
+   "base": "exchange",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "expedite",
+   "item": "to expedite",
+   "base": "expedite",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "explain",
+   "item": "to explain",
+   "base": "explain",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "fact-check",
+   "item": "to fact-check",
+   "base": "fact-check",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "fall behind",
+   "item": "to fall behind",
+   "base": "fall behind",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "fall for a scam",
+   "item": "to fall for a scam",
+   "base": "fall for",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "fall out",
+   "item": "to fall out",
+   "base": "fall out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "fall out with",
+   "item": "to fall out with",
+   "base": "fall out with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "fall out with someone",
+   "item": "to fall out with someone",
+   "base": "fall out with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "fill in",
+   "item": "to fill in",
+   "base": "fill in",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "fill in a form",
+   "item": "to fill in a form",
+   "base": "fill in",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "fill in the form",
+   "item": "to fill in the form",
+   "base": "fill in",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "find out",
+   "item": "to find out",
+   "base": "find out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "nota": "dudoso PS|PI: «find it out» es poco natural pero posible"
+  },
+  {
+   "forma": "find out about",
+   "item": "to find out about",
+   "base": "find out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "nota": "con preposición detrás: no admite el objeto en medio"
+  },
+  {
+   "forma": "find out about something",
+   "item": "to find out about something",
+   "base": "find out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "nota": "con preposición detrás: no admite el objeto en medio"
+  },
+  {
+   "forma": "find out who's responsible",
+   "item": "to find out who's responsible",
+   "base": "find out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "nota": "dudoso PS|PI: ver «find out»"
+  },
+  {
+   "forma": "fit",
+   "item": "to fit",
+   "base": "fit",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "fit in",
+   "item": "to fit in",
+   "base": "fit in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "flare up",
+   "item": "to flare up",
+   "base": "flare up",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "flee (from disasters)",
+   "item": "to flee (from disasters)",
+   "base": "flee",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "follow up",
+   "item": "to follow up",
+   "base": "follow up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "forgive",
+   "item": "to forgive",
+   "base": "forgive",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "freeze",
+   "item": "to freeze",
+   "base": "freeze",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "fry",
+   "item": "to fry",
+   "base": "fry",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "future-proof",
+   "item": "to future-proof",
+   "base": "future-proof",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "get along",
+   "item": "to get along",
+   "base": "get along",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "get into something",
+   "item": "to get into something",
+   "base": "get into",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "get off",
+   "item": "to get off",
+   "base": "get off",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "get on",
+   "item": "to get on",
+   "base": "get on",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "get on well",
+   "item": "to get on well",
+   "base": "get on",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "get on well with",
+   "item": "to get on well with",
+   "base": "get on",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "get on with someone",
+   "item": "to get on with someone",
+   "base": "get on with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "get over something",
+   "item": "to get over something",
+   "base": "get over",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "give up",
+   "item": "to give up",
+   "base": "give up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "give up smoking",
+   "item": "to give up smoking",
+   "base": "give up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "gloss over something",
+   "item": "to gloss over something",
+   "base": "gloss over",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "go off",
+   "item": "to go off",
+   "base": "go off",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "go off (food)",
+   "item": "to go off (food)",
+   "base": "go off",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "go off (milk)",
+   "item": "to go off (milk)",
+   "base": "go off",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "grow apart",
+   "item": "to grow apart",
+   "base": "grow apart",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "haggle",
+   "item": "to haggle",
+   "base": "haggle",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "haggle over the price",
+   "item": "to haggle over the price",
+   "base": "haggle over",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "hand in",
+   "item": "to hand in",
+   "base": "hand in",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "hand in a document",
+   "item": "to hand in a document",
+   "base": "hand in",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "hand in your notice",
+   "item": "to hand in your notice",
+   "base": "hand in",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "hang out with",
+   "item": "to hang out with",
+   "base": "hang out with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "hang out with friends",
+   "item": "to hang out with friends",
+   "base": "hang out with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "happen",
+   "item": "to happen",
+   "base": "happen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "hedge against inflation",
+   "item": "to hedge against inflation",
+   "base": "hedge against",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "help",
+   "item": "to help",
+   "base": "help",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "hold out for a sale",
+   "item": "to hold out for a sale",
+   "base": "hold out for",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "hope",
+   "item": "to hope",
+   "base": "hope",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "hurt",
+   "item": "to hurt",
+   "base": "hurt",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "improve",
+   "item": "to improve",
+   "base": "improve",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "incentivise",
+   "item": "to incentivise",
+   "base": "incentivise",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "invest",
+   "item": "to invest",
+   "base": "invest",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "join",
+   "item": "to join",
+   "base": "join",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "juggle",
+   "item": "to juggle",
+   "base": "juggle",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "keep up with",
+   "item": "to keep up with",
+   "base": "keep up with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "keep up with technology",
+   "item": "to keep up with technology",
+   "base": "keep up with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "keep up with the news",
+   "item": "to keep up with the news",
+   "base": "keep up with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "lag behind",
+   "item": "to lag behind",
+   "base": "lag behind",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "learn",
+   "item": "to learn",
+   "base": "learn",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "learn from mistakes",
+   "item": "to learn from mistakes",
+   "base": "learn from",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "leave",
+   "item": "to leave",
+   "base": "leave",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "lend",
+   "item": "to lend",
+   "base": "lend",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "lie down",
+   "item": "to lie down",
+   "base": "lie down",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "listen",
+   "item": "to listen",
+   "base": "listen",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "listen to your body",
+   "item": "to listen to your body",
+   "base": "listen to",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "log in",
+   "item": "to log in",
+   "base": "log in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "log off",
+   "item": "to log off",
+   "base": "log off",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "look after",
+   "item": "to look after",
+   "base": "look after",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "look after someone",
+   "item": "to look after someone",
+   "base": "look after",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "look after yourself",
+   "item": "to look after yourself",
+   "base": "look after",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "look for",
+   "item": "to look for",
+   "base": "look for",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "nota": "dudoso PI|VP: «look» solo es «mirar»; se trata como phrasal"
+  },
+  {
+   "forma": "look for a flat",
+   "item": "to look for a flat",
+   "base": "look for",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "nota": "dudoso PI|VP: ver «look for»"
+  },
+  {
+   "forma": "look forward to",
+   "item": "to look forward to",
+   "base": "look forward to",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "look into something",
+   "item": "to look into something",
+   "base": "look into",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "look up to someone",
+   "item": "to look up to someone",
+   "base": "look up to",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "lose",
+   "item": "to lose",
+   "base": "lose",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "make up",
+   "item": "to make up",
+   "base": "make up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "meet up",
+   "item": "to meet up",
+   "base": "meet up",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "meet up with",
+   "item": "to meet up with",
+   "base": "meet up with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "micromanage",
+   "item": "to micromanage",
+   "base": "micromanage",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "mitigate",
+   "item": "to mitigate",
+   "base": "mitigate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "monetise",
+   "item": "to monetise",
+   "base": "monetise",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "move in",
+   "item": "to move in",
+   "base": "move in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "move out",
+   "item": "to move out",
+   "base": "move out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "move to the countryside",
+   "item": "to move to the countryside",
+   "base": "move to",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "mute",
+   "item": "to mute",
+   "base": "mute",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "open up about",
+   "item": "to open up about",
+   "base": "open up",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "open up to someone",
+   "item": "to open up to someone",
+   "base": "open up to",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "opt out",
+   "item": "to opt out",
+   "base": "opt out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "opt out (of data collection)",
+   "item": "to opt out (of data collection)",
+   "base": "opt out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "opt out of a scheme",
+   "item": "to opt out of a scheme",
+   "base": "opt out of",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "order",
+   "item": "to order",
+   "base": "order",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "overcharge",
+   "item": "to overcharge",
+   "base": "overcharge",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "overindulge",
+   "item": "to overindulge",
+   "base": "overindulge",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "owe",
+   "item": "to owe",
+   "base": "owe",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "pack",
+   "item": "to pack",
+   "base": "pack",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "pass",
+   "item": "to pass",
+   "base": "pass",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "pass down a recipe",
+   "item": "to pass down a recipe",
+   "base": "pass down",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "pass on traditions",
+   "item": "to pass on traditions",
+   "base": "pass on",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "pay",
+   "item": "to pay",
+   "base": "pay",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "pay back",
+   "item": "to pay back",
+   "base": "pay back",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "pay into a pension",
+   "item": "to pay into a pension",
+   "base": "pay into",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "perpetuate",
+   "item": "to perpetuate",
+   "base": "perpetuate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "plateau",
+   "item": "to plateau",
+   "base": "plateau",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "play",
+   "item": "to play",
+   "base": "play",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "potter about",
+   "item": "to potter about",
+   "base": "potter about",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "practise",
+   "item": "to practise",
+   "base": "practise",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "privatise",
+   "item": "to privatise",
+   "base": "privatise",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "protect",
+   "item": "to protect",
+   "base": "protect",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "protest",
+   "item": "to protest",
+   "base": "protest",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "push back on something",
+   "item": "to push back on something",
+   "base": "push back",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "put in effort",
+   "item": "to put in effort",
+   "base": "put in",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "put off seeing a doctor",
+   "item": "to put off seeing a doctor",
+   "base": "put off",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "put up with",
+   "item": "to put up with",
+   "base": "put up with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "put up with pain",
+   "item": "to put up with pain",
+   "base": "put up with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "queue",
+   "item": "to queue",
+   "base": "queue",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "quit",
+   "item": "to quit",
+   "base": "quit",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "read",
+   "item": "to read",
+   "base": "read",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "recharge",
+   "item": "to recharge",
+   "base": "recharge",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "reciprocate",
+   "item": "to reciprocate",
+   "base": "reciprocate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "recommend",
+   "item": "to recommend",
+   "base": "recommend",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "recover",
+   "item": "to recover",
+   "base": "recover",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "recover from",
+   "item": "to recover from",
+   "base": "recover from",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "recycle",
+   "item": "to recycle",
+   "base": "recycle",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "regenerate",
+   "item": "to regenerate",
+   "base": "regenerate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "register",
+   "item": "to register",
+   "base": "register",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "register with the council",
+   "item": "to register with the council",
+   "base": "register with",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "regulate",
+   "item": "to regulate",
+   "base": "regulate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "relax",
+   "item": "to relax",
+   "base": "relax",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "rely on",
+   "item": "to rely on",
+   "base": "rely on",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "renew",
+   "item": "to renew",
+   "base": "renew",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "rent",
+   "item": "to rent",
+   "base": "rent",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "repair",
+   "item": "to repair",
+   "base": "repair",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "repeat",
+   "item": "to repeat",
+   "base": "repeat",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "replace",
+   "item": "to replace",
+   "base": "replace",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "report (news)",
+   "item": "to report (news)",
+   "base": "report",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "report on",
+   "item": "to report on",
+   "base": "report on",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "report on something",
+   "item": "to report on something",
+   "base": "report on",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "report to someone",
+   "item": "to report to someone",
+   "base": "report to",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "reset",
+   "item": "to reset",
+   "base": "reset",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "reskill",
+   "item": "to reskill",
+   "base": "reskill",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "rest",
+   "item": "to rest",
+   "base": "rest",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "retrain",
+   "item": "to retrain",
+   "base": "retrain",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "reuse",
+   "item": "to reuse",
+   "base": "reuse",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "revise",
+   "item": "to revise",
+   "base": "revise",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "rewild",
+   "item": "to rewild",
+   "base": "rewild",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "ride out a downturn",
+   "item": "to ride out a downturn",
+   "base": "ride out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "roll out a feature",
+   "item": "to roll out a feature",
+   "base": "roll out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "run out of",
+   "item": "to run out of",
+   "base": "run out of",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "run out of battery",
+   "item": "to run out of battery",
+   "base": "run out of",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "save up for something",
+   "item": "to save up for something",
+   "base": "save up for",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "savour",
+   "item": "to savour",
+   "base": "savour",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "scale (intransitive)",
+   "item": "to scale (intransitive)",
+   "base": "scale",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "scale up",
+   "item": "to scale up",
+   "base": "scale up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "scroll through",
+   "item": "to scroll through",
+   "base": "scroll through",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "scrutinise",
+   "item": "to scrutinise",
+   "base": "scrutinise",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "search for something",
+   "item": "to search for something",
+   "base": "search for",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "season",
+   "item": "to season",
+   "base": "season",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "see through advertising",
+   "item": "to see through advertising",
+   "base": "see through",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "send back",
+   "item": "to send back",
+   "base": "send back",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "send off",
+   "item": "to send off",
+   "base": "send off",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "sensationalise",
+   "item": "to sensationalise",
+   "base": "sensationalise",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "set off",
+   "item": "to set off",
+   "base": "set off",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "nota": "sentido «partir» (intransitivo); transitivo («set off an alarm») sería separable"
+  },
+  {
+   "forma": "set up",
+   "item": "to set up",
+   "base": "set up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "settle in",
+   "item": "to settle in",
+   "base": "settle in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "settle into a job",
+   "item": "to settle into a job",
+   "base": "settle into",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "nota": "dudoso PI|VP: «settle into» = adaptarse, no composicional"
+  },
+  {
+   "forma": "shake off a cold",
+   "item": "to shake off a cold",
+   "base": "shake off",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "share",
+   "item": "to share",
+   "base": "share",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "shop around",
+   "item": "to shop around",
+   "base": "shop around",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "shrug off an illness",
+   "item": "to shrug off an illness",
+   "base": "shrug off",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "sign",
+   "item": "to sign",
+   "base": "sign",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "sign off on",
+   "item": "to sign off on",
+   "base": "sign off",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "sign off on something",
+   "item": "to sign off on something",
+   "base": "sign off",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "sign up",
+   "item": "to sign up",
+   "base": "sign up",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "sign up for",
+   "item": "to sign up for",
+   "base": "sign up for",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "sign up for a course",
+   "item": "to sign up for a course",
+   "base": "sign up for",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "sleep on it",
+   "item": "to sleep on it",
+   "base": "sleep on",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "smoke",
+   "item": "to smoke",
+   "base": "smoke",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "spend",
+   "item": "to spend",
+   "base": "spend",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "splash out on",
+   "item": "to splash out on",
+   "base": "splash out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "splash out on something",
+   "item": "to splash out on something",
+   "base": "splash out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "splurge",
+   "item": "to splurge",
+   "base": "splurge",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "spoon-feed",
+   "item": "to spoon-feed",
+   "base": "spoon-feed",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "spread",
+   "item": "to spread",
+   "base": "spread",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "squander",
+   "item": "to squander",
+   "base": "squander",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "stagnate",
+   "item": "to stagnate",
+   "base": "stagnate",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "stand out",
+   "item": "to stand out",
+   "base": "stand out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "stand up for",
+   "item": "to stand up for",
+   "base": "stand up for",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "stave off",
+   "item": "to stave off",
+   "base": "stave off",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "stick to",
+   "item": "to stick to",
+   "base": "stick to",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "stick to a budget",
+   "item": "to stick to a budget",
+   "base": "stick to",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "stick with it",
+   "item": "to stick with it",
+   "base": "stick with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "stream",
+   "item": "to stream",
+   "base": "stream",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "streamline",
+   "item": "to streamline",
+   "base": "streamline",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "study for",
+   "item": "to study for",
+   "base": "study for",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "supplant",
+   "item": "to supplant",
+   "base": "supplant",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "swim",
+   "item": "to swim",
+   "base": "swim",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "swipe",
+   "item": "to swipe",
+   "base": "swipe",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "switch off",
+   "item": "to switch off",
+   "base": "switch off",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "switch on",
+   "item": "to switch on",
+   "base": "switch on",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "switch on the news",
+   "item": "to switch on the news",
+   "base": "switch on",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "switch to",
+   "item": "to switch to",
+   "base": "switch to",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "tackle",
+   "item": "to tackle",
+   "base": "tackle",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "tailor",
+   "item": "to tailor",
+   "base": "tailor",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "take after someone",
+   "item": "to take after someone",
+   "base": "take after",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "take on (a role)",
+   "item": "to take on (a role)",
+   "base": "take on",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "nota": "paréntesis ignorado en la clasificación"
+  },
+  {
+   "forma": "take on a role",
+   "item": "to take on a role",
+   "base": "take on",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "take on a task",
+   "item": "to take on a task",
+   "base": "take on",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "take up a hobby",
+   "item": "to take up a hobby",
+   "base": "take up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "take up a hobby again",
+   "item": "to take up a hobby again",
+   "base": "take up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "take up an offer",
+   "item": "to take up an offer",
+   "base": "take up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "talk to someone",
+   "item": "to talk to someone",
+   "base": "talk to",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "taste",
+   "item": "to taste",
+   "base": "taste",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "throw away",
+   "item": "to throw away",
+   "base": "throw away",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "tidy up",
+   "item": "to tidy up",
+   "base": "tidy up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "tinker with",
+   "item": "to tinker with",
+   "base": "tinker with",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "tinker with something",
+   "item": "to tinker with something",
+   "base": "tinker with",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ]
+  },
+  {
+   "forma": "top up your qualifications",
+   "item": "to top up your qualifications",
+   "base": "top up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "trade down",
+   "item": "to trade down",
+   "base": "trade down",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ]
+  },
+  {
+   "forma": "train",
+   "item": "to train",
+   "base": "train",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "troubleshoot",
+   "item": "to troubleshoot",
+   "base": "troubleshoot",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "trust",
+   "item": "to trust",
+   "base": "trust",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "try",
+   "item": "to try",
+   "base": "try",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "try on",
+   "item": "to try on",
+   "base": "try on",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "try out a recipe",
+   "item": "to try out a recipe",
+   "base": "try out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "turn down an offer",
+   "item": "to turn down an offer",
+   "base": "turn down",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "turn off",
+   "item": "to turn off",
+   "base": "turn off",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "turn off the light",
+   "item": "to turn off the light",
+   "base": "turn off",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "type",
+   "item": "to type",
+   "base": "type",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "understand",
+   "item": "to understand",
+   "base": "understand",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "unwind",
+   "item": "to unwind",
+   "base": "unwind",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "upcycle",
+   "item": "to upcycle",
+   "base": "upcycle",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "update",
+   "item": "to update",
+   "base": "update",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "upskill",
+   "item": "to upskill",
+   "base": "upskill",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "visit",
+   "item": "to visit",
+   "base": "visit",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "vote",
+   "item": "to vote",
+   "base": "vote",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "wait",
+   "item": "to wait",
+   "base": "wait",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "walk",
+   "item": "to walk",
+   "base": "walk",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "while away the hours",
+   "item": "to while away the hours",
+   "base": "while away",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "nota": "transitivo con objeto fijo detrás; no admite «while the hours away»"
+  },
+  {
+   "forma": "win",
+   "item": "to win",
+   "base": "win",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "wind down",
+   "item": "to wind down",
+   "base": "wind down",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "work",
+   "item": "to work",
+   "base": "work",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "work (to function)",
+   "item": "to work (to function)",
+   "base": "work",
+   "claseVerbo": [
+    "simple"
+   ]
+  },
+  {
+   "forma": "work out",
+   "item": "to work out",
+   "base": "work out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  },
+  {
+   "forma": "wrap up",
+   "item": "to wrap up",
+   "base": "wrap up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ]
+  }
+ ],
+ "nucleos": [
+  {
+   "nucleo": "to accept",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to accept cookies"
+   ]
+  },
+  {
+   "nucleo": "to acquire",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to acquire a taste for something"
+   ]
+  },
+  {
+   "nucleo": "to afford",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to afford something"
+   ]
+  },
+  {
+   "nucleo": "to appeal",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to appeal a decision"
+   ]
+  },
+  {
+   "nucleo": "to arrange",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to arrange to meet"
+   ]
+  },
+  {
+   "nucleo": "to ask",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to ask a question"
+   ]
+  },
+  {
+   "nucleo": "to assume",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to assume something"
+   ]
+  },
+  {
+   "nucleo": "to augment",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to augment human capabilities"
+   ]
+  },
+  {
+   "nucleo": "to automate",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to automate a task"
+   ]
+  },
+  {
+   "nucleo": "to back up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to back something up"
+   ]
+  },
+  {
+   "nucleo": "to ban",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to ban something"
+   ]
+  },
+  {
+   "nucleo": "to bear",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to bear a resemblance",
+    "to bear the brunt"
+   ]
+  },
+  {
+   "nucleo": "to become",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to become apparent",
+    "to become clear",
+    "to become obsolete"
+   ]
+  },
+  {
+   "nucleo": "to binge-watch",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to binge-watch a series"
+   ]
+  },
+  {
+   "nucleo": "to block",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to block someone"
+   ]
+  },
+  {
+   "nucleo": "to blur",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to blur the line between"
+   ]
+  },
+  {
+   "nucleo": "to book",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to book a table",
+    "to book an appointment",
+    "to book in advance"
+   ]
+  },
+  {
+   "nucleo": "to borrow",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to borrow / to lend"
+   ]
+  },
+  {
+   "nucleo": "to bottle up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to bottle something up",
+    "to bottle things up"
+   ]
+  },
+  {
+   "nucleo": "to boycott",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to boycott a brand"
+   ]
+  },
+  {
+   "nucleo": "to break",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to break a story",
+    "to break bread",
+    "to break bread with someone",
+    "to break the cycle"
+   ]
+  },
+  {
+   "nucleo": "to bring",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to bring documents",
+    "to bring your own bag"
+   ]
+  },
+  {
+   "nucleo": "to broaden",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to broaden your horizons",
+    "to broaden your skill set"
+   ]
+  },
+  {
+   "nucleo": "to budget",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to budget meticulously"
+   ]
+  },
+  {
+   "nucleo": "to burn",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to burn bridges"
+   ]
+  },
+  {
+   "nucleo": "to bury",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to bury the hatchet",
+    "to bury the lede"
+   ]
+  },
+  {
+   "nucleo": "to buy",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to buy in bulk",
+    "to buy local",
+    "to buy too much"
+   ]
+  },
+  {
+   "nucleo": "to call",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to call it a day",
+    "to call someone"
+   ]
+  },
+  {
+   "nucleo": "to calm down",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to calm things down"
+   ]
+  },
+  {
+   "nucleo": "to cancel",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to cancel a contract",
+    "to cancel a subscription",
+    "to cancel plans"
+   ]
+  },
+  {
+   "nucleo": "to catch",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to catch a cold"
+   ]
+  },
+  {
+   "nucleo": "to challenge",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to challenge assumptions"
+   ]
+  },
+  {
+   "nucleo": "to change",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to change careers",
+    "to change something",
+    "to change trains",
+    "to change your mind"
+   ]
+  },
+  {
+   "nucleo": "to charge",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to charge the battery"
+   ]
+  },
+  {
+   "nucleo": "to chase up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to chase something up"
+   ]
+  },
+  {
+   "nucleo": "to check",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to check the facts"
+   ]
+  },
+  {
+   "nucleo": "to check in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "colocaciones": [
+    "to check in / check out"
+   ]
+  },
+  {
+   "nucleo": "to cherry-pick",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to cherry-pick facts"
+   ]
+  },
+  {
+   "nucleo": "to chop",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to chop / to slice"
+   ]
+  },
+  {
+   "nucleo": "to clear",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to clear the air"
+   ]
+  },
+  {
+   "nucleo": "to climb",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to climb the career ladder"
+   ]
+  },
+  {
+   "nucleo": "to come",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to come under fire"
+   ]
+  },
+  {
+   "nucleo": "to commodify",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to commodify leisure"
+   ]
+  },
+  {
+   "nucleo": "to compare",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to compare prices"
+   ]
+  },
+  {
+   "nucleo": "to cover",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to cover the costs"
+   ]
+  },
+  {
+   "nucleo": "to curate",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to curate content"
+   ]
+  },
+  {
+   "nucleo": "to curb",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to curb emissions",
+    "to curb your spending"
+   ]
+  },
+  {
+   "nucleo": "to cut",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to cut corners",
+    "to cut corners (in cooking)",
+    "to cut through the red tape"
+   ]
+  },
+  {
+   "nucleo": "to dedicate",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ],
+   "colocaciones": [
+    "to dedicate time to"
+   ],
+   "nota": "rige to («to dedicate time to»)"
+  },
+  {
+   "nucleo": "to degrade",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to degrade gracefully"
+   ]
+  },
+  {
+   "nucleo": "to deny",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to deny something"
+   ]
+  },
+  {
+   "nucleo": "to deplete",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to deplete resources"
+   ]
+  },
+  {
+   "nucleo": "to describe",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to describe your symptoms"
+   ]
+  },
+  {
+   "nucleo": "to develop",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to develop a taste for something"
+   ]
+  },
+  {
+   "nucleo": "to discover",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to discover a talent"
+   ]
+  },
+  {
+   "nucleo": "to displace",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to displace residents",
+    "to displace workers"
+   ]
+  },
+  {
+   "nucleo": "to double-check",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to double-check an output"
+   ]
+  },
+  {
+   "nucleo": "to download",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to download / upload"
+   ]
+  },
+  {
+   "nucleo": "to downplay",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to downplay / to overstate"
+   ]
+  },
+  {
+   "nucleo": "to draw",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to draw your pension"
+   ]
+  },
+  {
+   "nucleo": "to drink",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to drink water"
+   ]
+  },
+  {
+   "nucleo": "to eat",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to eat healthily"
+   ]
+  },
+  {
+   "nucleo": "to enjoy",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to enjoy something"
+   ]
+  },
+  {
+   "nucleo": "to entrench",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to entrench privilege",
+    "to entrench views"
+   ]
+  },
+  {
+   "nucleo": "to erode",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to erode trust"
+   ]
+  },
+  {
+   "nucleo": "to err",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to err on the side of caution"
+   ]
+  },
+  {
+   "nucleo": "to escalate",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to escalate a complaint",
+    "to escalate an issue"
+   ]
+  },
+  {
+   "nucleo": "to exchange",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to exchange an item"
+   ]
+  },
+  {
+   "nucleo": "to exercise",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to exercise restraint"
+   ]
+  },
+  {
+   "nucleo": "to explain",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to explain the problem"
+   ]
+  },
+  {
+   "nucleo": "to externalise",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to externalise costs"
+   ]
+  },
+  {
+   "nucleo": "to fail",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to fail an exam"
+   ]
+  },
+  {
+   "nucleo": "to fall",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to fall short of",
+    "to fall through the cracks"
+   ]
+  },
+  {
+   "nucleo": "to fall behind",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "colocaciones": [
+    "to fall behind / to catch up"
+   ]
+  },
+  {
+   "nucleo": "to feel",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to feel adrift",
+    "to feel at home",
+    "to feel better",
+    "to feel dizzy",
+    "to feel homesick",
+    "to feel like",
+    "to feel out of place",
+    "to feel overwhelmed",
+    "to feel stressed out",
+    "to feel under the weather",
+    "to feel well"
+   ]
+  },
+  {
+   "nucleo": "to file",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to file an objection"
+   ]
+  },
+  {
+   "nucleo": "to find",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to find a compromise",
+    "to find common ground",
+    "to find one's way around",
+    "to find your feet",
+    "to find your way around"
+   ]
+  },
+  {
+   "nucleo": "to finish",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to finish work"
+   ]
+  },
+  {
+   "nucleo": "to fix",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to fix a problem",
+    "to fix something"
+   ]
+  },
+  {
+   "nucleo": "to follow",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to follow a programme",
+    "to follow a recipe",
+    "to follow someone",
+    "to follow the news"
+   ]
+  },
+  {
+   "nucleo": "to forget",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to forget your password"
+   ]
+  },
+  {
+   "nucleo": "to forgive",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to forgive someone"
+   ]
+  },
+  {
+   "nucleo": "to form",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to form a bond",
+    "to form an opinion"
+   ]
+  },
+  {
+   "nucleo": "to foster",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to foster curiosity"
+   ]
+  },
+  {
+   "nucleo": "to frame",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to frame a story"
+   ]
+  },
+  {
+   "nucleo": "to fry",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to fry, brown"
+   ]
+  },
+  {
+   "nucleo": "to further",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to further one's education",
+    "to further one's studies"
+   ]
+  },
+  {
+   "nucleo": "to future-proof",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to future-proof something"
+   ]
+  },
+  {
+   "nucleo": "to gain",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to gain traction"
+   ]
+  },
+  {
+   "nucleo": "to give",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to give notice",
+    "to give someone space",
+    "to give someone the benefit of the doubt",
+    "to give someone the cold shoulder"
+   ]
+  },
+  {
+   "nucleo": "to give up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to give something up"
+   ]
+  },
+  {
+   "nucleo": "to go",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to go easy on something",
+    "to go for a run",
+    "to go for a walk",
+    "to go hiking",
+    "to go into debt",
+    "to go native",
+    "to go off the beaten track",
+    "to go offline",
+    "to go out for dinner",
+    "to go shopping",
+    "to go the extra mile",
+    "to go vegetarian",
+    "to go viral"
+   ]
+  },
+  {
+   "nucleo": "to grab",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to grab a bite"
+   ]
+  },
+  {
+   "nucleo": "to grasp",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to grasp a concept"
+   ]
+  },
+  {
+   "nucleo": "to hand in",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to hand something in"
+   ]
+  },
+  {
+   "nucleo": "to harbour",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to harbour resentment"
+   ]
+  },
+  {
+   "nucleo": "to hear out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to hear someone out"
+   ]
+  },
+  {
+   "nucleo": "to hedge",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to hedge your bets"
+   ]
+  },
+  {
+   "nucleo": "to help",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to help each other"
+   ]
+  },
+  {
+   "nucleo": "to hit",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to hit a plateau",
+    "to hit the ground running"
+   ]
+  },
+  {
+   "nucleo": "to hold",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to hold a grudge"
+   ]
+  },
+  {
+   "nucleo": "to hone",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to hone a craft",
+    "to hone a skill"
+   ]
+  },
+  {
+   "nucleo": "to hurt",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to hurt yourself"
+   ]
+  },
+  {
+   "nucleo": "to immerse",
+   "claseVerbo": [
+    "verbo-preposicion"
+   ],
+   "colocaciones": [
+    "to immerse yourself in"
+   ],
+   "nota": "rige in («to immerse yourself in»); el objeto es reflexivo"
+  },
+  {
+   "nucleo": "to insulate",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to insulate a house"
+   ]
+  },
+  {
+   "nucleo": "to join",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to join a club"
+   ]
+  },
+  {
+   "nucleo": "to jump",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to jump through hoops"
+   ]
+  },
+  {
+   "nucleo": "to keep",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to keep a human in the loop",
+    "to keep a promise",
+    "to keep fit",
+    "to keep going",
+    "to keep improving",
+    "to keep in good condition",
+    "to keep in touch",
+    "to keep it just a hobby",
+    "to keep on top of your finances",
+    "to keep someone posted",
+    "to keep track of",
+    "to keep track of spending",
+    "to keep up to date",
+    "to keep your skills current"
+   ]
+  },
+  {
+   "nucleo": "to keep up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to keep something up"
+   ],
+   "nota": "separable en «to keep something up»; «to keep up with» es otra entrada"
+  },
+  {
+   "nucleo": "to keep up with",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "colocaciones": [
+    "to keep up with the Joneses"
+   ]
+  },
+  {
+   "nucleo": "to kick",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to kick the can down the road"
+   ]
+  },
+  {
+   "nucleo": "to land",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to land a job"
+   ]
+  },
+  {
+   "nucleo": "to learn",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to learn by heart"
+   ]
+  },
+  {
+   "nucleo": "to leave",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to leave a tip",
+    "to leave the car at home"
+   ]
+  },
+  {
+   "nucleo": "to let down",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to let someone down"
+   ],
+   "nota": "Cambridge FCE phrasal list: let down; «let sb down» va separado"
+  },
+  {
+   "nucleo": "to let off",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to let off steam"
+   ],
+   "nota": "Cambridge FCE phrasal list: let off. «to let someone know» y «to let something rest» son causativos (let + infinitivo) y no se indexan"
+  },
+  {
+   "nucleo": "to level",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to level the playing field"
+   ]
+  },
+  {
+   "nucleo": "to like",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to like something"
+   ]
+  },
+  {
+   "nucleo": "to live",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to live beyond your means",
+    "to live far away",
+    "to live hand to mouth",
+    "to live within your means"
+   ]
+  },
+  {
+   "nucleo": "to lodge",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to lodge an appeal"
+   ]
+  },
+  {
+   "nucleo": "to log in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "colocaciones": [
+    "to log in / log out"
+   ]
+  },
+  {
+   "nucleo": "to lose",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to lose interest",
+    "to lose patience",
+    "to lose something in translation",
+    "to lose the human touch",
+    "to lose the joy",
+    "to lose touch",
+    "to lose track of time",
+    "to lose your bearings",
+    "to lose yourself in something"
+   ]
+  },
+  {
+   "nucleo": "to make",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to make a change",
+    "to make a complaint",
+    "to make a difference",
+    "to make a good impression",
+    "to make an appointment",
+    "to make an effort",
+    "to make ends meet",
+    "to make life easier",
+    "to make mistakes",
+    "to make progress",
+    "to make time for",
+    "to make time for something",
+    "to make your mouth water",
+    "to make your voice heard"
+   ]
+  },
+  {
+   "nucleo": "to manage",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to manage a condition",
+    "to manage your time"
+   ]
+  },
+  {
+   "nucleo": "to meet",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to meet new people"
+   ]
+  },
+  {
+   "nucleo": "to mend",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to mend fences"
+   ]
+  },
+  {
+   "nucleo": "to miss",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to miss a connection",
+    "to miss a flight",
+    "to miss someone"
+   ]
+  },
+  {
+   "nucleo": "to monetise",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to monetise something"
+   ]
+  },
+  {
+   "nucleo": "to move",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to move abroad",
+    "to move house"
+   ]
+  },
+  {
+   "nucleo": "to move in",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "colocaciones": [
+    "to move in / move out"
+   ]
+  },
+  {
+   "nucleo": "to navigate",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to navigate the system"
+   ]
+  },
+  {
+   "nucleo": "to need",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to need something",
+    "to really need"
+   ]
+  },
+  {
+   "nucleo": "to offset",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to offset emissions"
+   ]
+  },
+  {
+   "nucleo": "to open",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to open / close an account",
+    "to open an account"
+   ]
+  },
+  {
+   "nucleo": "to opt out",
+   "claseVerbo": [
+    "phrasal-inseparable"
+   ],
+   "colocaciones": [
+    "to opt out / opt in"
+   ]
+  },
+  {
+   "nucleo": "to order",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to order online"
+   ]
+  },
+  {
+   "nucleo": "to outsource",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to outsource a task"
+   ]
+  },
+  {
+   "nucleo": "to overdo",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to overdo the seasoning"
+   ]
+  },
+  {
+   "nucleo": "to overextend",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to overextend yourself"
+   ]
+  },
+  {
+   "nucleo": "to overstay",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to overstay a welcome"
+   ]
+  },
+  {
+   "nucleo": "to overstep",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to overstep the mark"
+   ]
+  },
+  {
+   "nucleo": "to pace",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to pace yourself"
+   ]
+  },
+  {
+   "nucleo": "to pass",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to pass / to fail an exam",
+    "to pass an exam"
+   ]
+  },
+  {
+   "nucleo": "to patch up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to patch things up"
+   ]
+  },
+  {
+   "nucleo": "to pay",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to pay attention to",
+    "to pay by card",
+    "to pay in cash",
+    "to pay in instalments",
+    "to pay lip service to",
+    "to pay on invoice"
+   ]
+  },
+  {
+   "nucleo": "to pay off",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to pay something off"
+   ]
+  },
+  {
+   "nucleo": "to perpetuate",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to perpetuate prejudice"
+   ]
+  },
+  {
+   "nucleo": "to phase out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to phase out / phase in"
+   ]
+  },
+  {
+   "nucleo": "to pick up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to pick something up"
+   ]
+  },
+  {
+   "nucleo": "to plan",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to plan meals",
+    "to plan your meals"
+   ]
+  },
+  {
+   "nucleo": "to play",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to play cards"
+   ]
+  },
+  {
+   "nucleo": "to pollute",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to pollute / pollution"
+   ]
+  },
+  {
+   "nucleo": "to post",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to post something"
+   ]
+  },
+  {
+   "nucleo": "to postpone",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to postpone an appointment"
+   ]
+  },
+  {
+   "nucleo": "to prevent",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to prevent illness"
+   ]
+  },
+  {
+   "nucleo": "to price out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to price locals out"
+   ]
+  },
+  {
+   "nucleo": "to pull",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to pull strings",
+    "to pull your weight"
+   ]
+  },
+  {
+   "nucleo": "to push",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to push yourself"
+   ]
+  },
+  {
+   "nucleo": "to put",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to put down roots",
+    "to put someone first"
+   ]
+  },
+  {
+   "nucleo": "to put aside",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to put money aside"
+   ]
+  },
+  {
+   "nucleo": "to question",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to question something",
+    "to question the status quo"
+   ]
+  },
+  {
+   "nucleo": "to quit",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to quit / to fire"
+   ]
+  },
+  {
+   "nucleo": "to raise",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to raise awareness",
+    "to raise children"
+   ]
+  },
+  {
+   "nucleo": "to read",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to read between the lines"
+   ]
+  },
+  {
+   "nucleo": "to rebuild",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to rebuild confidence"
+   ]
+  },
+  {
+   "nucleo": "to recharge",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to recharge your batteries"
+   ]
+  },
+  {
+   "nucleo": "to reclaim",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to reclaim your time"
+   ]
+  },
+  {
+   "nucleo": "to recycle",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to recycle / recycling"
+   ]
+  },
+  {
+   "nucleo": "to redress",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to redress a grievance"
+   ]
+  },
+  {
+   "nucleo": "to reduce",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to reduce a sauce",
+    "to reduce demand",
+    "to reduce stress"
+   ]
+  },
+  {
+   "nucleo": "to regret",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to regret buying"
+   ]
+  },
+  {
+   "nucleo": "to reinvent",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to reinvent yourself"
+   ]
+  },
+  {
+   "nucleo": "to render",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to render something redundant"
+   ]
+  },
+  {
+   "nucleo": "to renew",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to renew a permit",
+    "to renew something"
+   ]
+  },
+  {
+   "nucleo": "to rent",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to rent instead of buying",
+    "to rent privately"
+   ]
+  },
+  {
+   "nucleo": "to repair",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to repair rather than replace"
+   ]
+  },
+  {
+   "nucleo": "to replace",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to replace jobs"
+   ]
+  },
+  {
+   "nucleo": "to report",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to report something"
+   ]
+  },
+  {
+   "nucleo": "to retire",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to retire early"
+   ]
+  },
+  {
+   "nucleo": "to retrain",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to retrain / reskilling"
+   ]
+  },
+  {
+   "nucleo": "to return",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to return an item",
+    "to return something"
+   ]
+  },
+  {
+   "nucleo": "to reward",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to reward yourself"
+   ]
+  },
+  {
+   "nucleo": "to ring-fence",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to ring-fence funds"
+   ]
+  },
+  {
+   "nucleo": "to roll out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to roll something out"
+   ]
+  },
+  {
+   "nucleo": "to romanticise",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to romanticise a place"
+   ]
+  },
+  {
+   "nucleo": "to run",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to run its course",
+    "to run late",
+    "to run yourself into the ground"
+   ]
+  },
+  {
+   "nucleo": "to save",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to save a file",
+    "to save energy",
+    "to save money"
+   ]
+  },
+  {
+   "nucleo": "to say",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to say sorry"
+   ]
+  },
+  {
+   "nucleo": "to scratch",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to scratch an itch"
+   ]
+  },
+  {
+   "nucleo": "to season",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to season / seasoning",
+    "to season to taste"
+   ]
+  },
+  {
+   "nucleo": "to see",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to see a doctor",
+    "to see both sides",
+    "to see eye to eye",
+    "to see things differently"
+   ]
+  },
+  {
+   "nucleo": "to send",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to send a message"
+   ]
+  },
+  {
+   "nucleo": "to service",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to service a debt"
+   ]
+  },
+  {
+   "nucleo": "to set",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to set a goal",
+    "to set boundaries",
+    "to set healthy boundaries",
+    "to set the alarm"
+   ]
+  },
+  {
+   "nucleo": "to set up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to set something up"
+   ]
+  },
+  {
+   "nucleo": "to shadow",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to shadow a colleague"
+   ]
+  },
+  {
+   "nucleo": "to shape",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to shape the narrative"
+   ]
+  },
+  {
+   "nucleo": "to share",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to share a meal",
+    "to share an opinion",
+    "to share food",
+    "to share responsibility",
+    "to share the chores",
+    "to share the housework"
+   ]
+  },
+  {
+   "nucleo": "to shop",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to shop on impulse",
+    "to shop online",
+    "to shop responsibly"
+   ]
+  },
+  {
+   "nucleo": "to shoulder",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to shoulder responsibility",
+    "to shoulder the burden"
+   ]
+  },
+  {
+   "nucleo": "to sit",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to sit an exam"
+   ]
+  },
+  {
+   "nucleo": "to sleep",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to sleep well"
+   ]
+  },
+  {
+   "nucleo": "to smooth over",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to smooth things over"
+   ]
+  },
+  {
+   "nucleo": "to sort out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to sort something out"
+   ]
+  },
+  {
+   "nucleo": "to source",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to source ingredients"
+   ]
+  },
+  {
+   "nucleo": "to spend",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to spend money on",
+    "to spend quality time",
+    "to spend time together",
+    "to spend too much"
+   ]
+  },
+  {
+   "nucleo": "to spin",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to spin a story"
+   ]
+  },
+  {
+   "nucleo": "to split",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to split the bill"
+   ]
+  },
+  {
+   "nucleo": "to stand",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to stand your ground"
+   ]
+  },
+  {
+   "nucleo": "to start",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to start a family",
+    "to start work"
+   ]
+  },
+  {
+   "nucleo": "to stay",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to stay ahead of the curve",
+    "to stay close",
+    "to stay fit",
+    "to stay motivated",
+    "to stay on top of things"
+   ]
+  },
+  {
+   "nucleo": "to stifle",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to stifle creativity",
+    "to stifle innovation"
+   ]
+  },
+  {
+   "nucleo": "to strike",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to strike a balance"
+   ]
+  },
+  {
+   "nucleo": "to submit",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to submit later",
+    "to submit the document"
+   ]
+  },
+  {
+   "nucleo": "to swap",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to swap clothes",
+    "to swap shifts"
+   ]
+  },
+  {
+   "nucleo": "to switch",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to switch providers"
+   ]
+  },
+  {
+   "nucleo": "to take",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to take a break",
+    "to take a course",
+    "to take a day off",
+    "to take a measure",
+    "to take a ticket",
+    "to take a toll on",
+    "to take a wrong turn",
+    "to take action",
+    "to take ages",
+    "to take care of someone",
+    "to take care of your parents",
+    "to take credit for something",
+    "to take it easy",
+    "to take its toll",
+    "to take medicine",
+    "to take part",
+    "to take photos",
+    "to take sides",
+    "to take someone for granted",
+    "to take something amiss",
+    "to take something in your stride",
+    "to take something the wrong way",
+    "to take something with a pinch of salt",
+    "to take the fun out of something",
+    "to take the reins",
+    "to take time off sick"
+   ]
+  },
+  {
+   "nucleo": "to take back",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to take something back"
+   ]
+  },
+  {
+   "nucleo": "to take out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to take out a loan / a policy"
+   ],
+   "nota": "«to take out a loan / a policy»: la segunda rama no se indexa"
+  },
+  {
+   "nucleo": "to take up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to take something up again"
+   ]
+  },
+  {
+   "nucleo": "to talk out",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to talk things out"
+   ]
+  },
+  {
+   "nucleo": "to talk over",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to talk it over"
+   ]
+  },
+  {
+   "nucleo": "to taste",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to taste good",
+    "to taste like"
+   ]
+  },
+  {
+   "nucleo": "to teach",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to teach to the test"
+   ]
+  },
+  {
+   "nucleo": "to tell",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to tell someone"
+   ]
+  },
+  {
+   "nucleo": "to think",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to think twice"
+   ]
+  },
+  {
+   "nucleo": "to throw together",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to throw something together"
+   ]
+  },
+  {
+   "nucleo": "to tighten",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to tighten the purse strings",
+    "to tighten your belt"
+   ]
+  },
+  {
+   "nucleo": "to touch",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to touch base"
+   ]
+  },
+  {
+   "nucleo": "to track",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to track a parcel",
+    "to track an order"
+   ]
+  },
+  {
+   "nucleo": "to train",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to train a model",
+    "to train regularly"
+   ]
+  },
+  {
+   "nucleo": "to transfer",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to transfer money"
+   ]
+  },
+  {
+   "nucleo": "to travel",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to travel light"
+   ]
+  },
+  {
+   "nucleo": "to tread",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to tread lightly",
+    "to tread water"
+   ]
+  },
+  {
+   "nucleo": "to treat",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to treat yourself"
+   ]
+  },
+  {
+   "nucleo": "to trust",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to trust someone",
+    "to trust the media"
+   ]
+  },
+  {
+   "nucleo": "to turn",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to turn a hobby into a job"
+   ]
+  },
+  {
+   "nucleo": "to update",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to update / an update"
+   ]
+  },
+  {
+   "nucleo": "to uphold",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to uphold traditions"
+   ]
+  },
+  {
+   "nucleo": "to upload",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to upload / download"
+   ]
+  },
+  {
+   "nucleo": "to vent",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to vent your frustration"
+   ]
+  },
+  {
+   "nucleo": "to view",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to view a flat"
+   ]
+  },
+  {
+   "nucleo": "to visit",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to visit someone"
+   ]
+  },
+  {
+   "nucleo": "to vote",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to vote with your wallet"
+   ]
+  },
+  {
+   "nucleo": "to wait",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to wait a day",
+    "to wait in a queue"
+   ]
+  },
+  {
+   "nucleo": "to walk",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to walk on eggshells"
+   ]
+  },
+  {
+   "nucleo": "to waste",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to waste food",
+    "to waste money"
+   ]
+  },
+  {
+   "nucleo": "to watch",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to watch TV"
+   ]
+  },
+  {
+   "nucleo": "to water",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to water plants"
+   ]
+  },
+  {
+   "nucleo": "to weather",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to weather a downturn"
+   ]
+  },
+  {
+   "nucleo": "to weigh",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to weigh the risks"
+   ]
+  },
+  {
+   "nucleo": "to whip up",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to whip something up"
+   ]
+  },
+  {
+   "nucleo": "to widen",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to widen access"
+   ]
+  },
+  {
+   "nucleo": "to withdraw",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to withdraw / to deposit",
+    "to withdraw money"
+   ]
+  },
+  {
+   "nucleo": "to work",
+   "claseVerbo": [
+    "simple"
+   ],
+   "colocaciones": [
+    "to work from home"
+   ]
+  },
+  {
+   "nucleo": "to write off",
+   "claseVerbo": [
+    "phrasal-separable"
+   ],
+   "colocaciones": [
+    "to write something off"
+   ]
+  }
+ ],
+ "_leeme_nucleos": "Nucleos verbales de las colocaciones (prompt 23). `nucleoVerbal` + `claseNucleo` + `reccionNucleo` se aplican al ITEM de la colocacion; el nucleo no es un item y no es marcable en Guardados. `colocaciones` es de trabajo: la aplica aplicar_verbos.py. La reccion es la del verbo, no la de cada colocacion."
 }

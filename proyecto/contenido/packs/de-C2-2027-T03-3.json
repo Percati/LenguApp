@@ -8,6 +8,10 @@
   {
    "item": "den Anschluss verpassen",
    "prioridad": "nucleo",
+   "nucleoVerbal": "verpassen",
+   "claseNucleo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "quedarse atrás",
     "en": "to miss the boat",
@@ -74,6 +78,10 @@
   {
    "item": "Mass halten",
    "prioridad": "ampliacion",
+   "nucleoVerbal": "halten",
+   "claseNucleo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "mantener la mesura",
     "en": "to show restraint",
@@ -129,6 +137,10 @@
   {
    "item": "mit der Zeit gehen",
    "prioridad": "ampliacion",
+   "nucleoVerbal": "gehen",
+   "claseNucleo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "adaptarse a los tiempos",
     "en": "to move with the times",
@@ -140,6 +152,12 @@
   {
    "item": "sich einer Sache entziehen",
    "prioridad": "ampliacion",
+   "nucleoVerbal": "sich entziehen",
+   "claseNucleo": [
+    "reflexivo",
+    "mit-Dativ"
+   ],
+   "reccionNucleo": "Dat",
    "traducciones": {
     "es": "sustraerse a algo",
     "en": "to evade something",
