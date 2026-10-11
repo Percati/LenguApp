@@ -43,6 +43,7 @@ enum class ClaveTexto {
     BIBLIOTECA_VISTA_LEXICO, BIBLIOTECA_VISTA_HABILIDADES, HABILIDAD_SEMANAS,
     TEMA_PAPEL, TEMA_TERRACOTA, TEMA_MAR, TEMA_GRAFITO,
     FUENTE_TITULO, FUENTE_LECTURA, FUENTE_CLARA, ACERCA_FUENTES_TEXTO,
+    BIBLIOTECA_VISTA_VERBOS, VERBO_REFLEXIVO, VERBO_TRENNBAR, VERBO_MIT_PRAPOSITION, VERBO_MIT_DATIV, VERBO_PHRASAL_SEPARABLE, VERBO_PHRASAL_INSEPARABLE, VERBO_VERBO_PREPOSICION, VERBOS_VACIO,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
 }
 
@@ -371,6 +372,79 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "sem. {semanas}",
         Idioma.IT to "sett. {semanas}",
         Idioma.PT to "sem. {semanas}",
+    ),
+    // --- Vista Verbos (Ronda H) ---
+    ClaveTexto.BIBLIOTECA_VISTA_VERBOS to mapOf(
+        Idioma.ES to "Verbos",
+        Idioma.EN to "Verbs",
+        Idioma.DE to "Verben",
+        Idioma.FR to "Verbes",
+        Idioma.IT to "Verbi",
+        Idioma.PT to "Verbos",
+    ),
+    ClaveTexto.VERBO_REFLEXIVO to mapOf(
+        Idioma.ES to "Reflexivo",
+        Idioma.EN to "Reflexive",
+        Idioma.DE to "Reflexiv",
+        Idioma.FR to "Pronominal",
+        Idioma.IT to "Riflessivo",
+        Idioma.PT to "Reflexivo",
+    ),
+    ClaveTexto.VERBO_TRENNBAR to mapOf(
+        Idioma.ES to "Separable",
+        Idioma.EN to "Separable",
+        Idioma.DE to "Trennbar",
+        Idioma.FR to "Séparable",
+        Idioma.IT to "Separabile",
+        Idioma.PT to "Separável",
+    ),
+    ClaveTexto.VERBO_MIT_PRAPOSITION to mapOf(
+        Idioma.ES to "Con preposición",
+        Idioma.EN to "With preposition",
+        Idioma.DE to "Mit Präposition",
+        Idioma.FR to "Avec préposition",
+        Idioma.IT to "Con preposizione",
+        Idioma.PT to "Com preposição",
+    ),
+    ClaveTexto.VERBO_MIT_DATIV to mapOf(
+        Idioma.ES to "Con dativo",
+        Idioma.EN to "With dative",
+        Idioma.DE to "Mit Dativ",
+        Idioma.FR to "Avec datif",
+        Idioma.IT to "Con il dativo",
+        Idioma.PT to "Com dativo",
+    ),
+    ClaveTexto.VERBO_PHRASAL_SEPARABLE to mapOf(
+        Idioma.ES to "Phrasal separable",
+        Idioma.EN to "Separable phrasal verb",
+        Idioma.DE to "Trennbares Phrasal Verb",
+        Idioma.FR to "Phrasal verb séparable",
+        Idioma.IT to "Phrasal verb separabile",
+        Idioma.PT to "Phrasal verb separável",
+    ),
+    ClaveTexto.VERBO_PHRASAL_INSEPARABLE to mapOf(
+        Idioma.ES to "Phrasal inseparable",
+        Idioma.EN to "Inseparable phrasal verb",
+        Idioma.DE to "Untrennbares Phrasal Verb",
+        Idioma.FR to "Phrasal verb inséparable",
+        Idioma.IT to "Phrasal verb inseparabile",
+        Idioma.PT to "Phrasal verb inseparável",
+    ),
+    ClaveTexto.VERBO_VERBO_PREPOSICION to mapOf(
+        Idioma.ES to "Verbo + preposición",
+        Idioma.EN to "Verb + preposition",
+        Idioma.DE to "Verb + Präposition",
+        Idioma.FR to "Verbe + préposition",
+        Idioma.IT to "Verbo + preposizione",
+        Idioma.PT to "Verbo + preposição",
+    ),
+    ClaveTexto.VERBOS_VACIO to mapOf(
+        Idioma.ES to "Aún no hay verbos para este nivel. Prueba con otro idioma o nivel.",
+        Idioma.EN to "No verbs for this level yet. Try another language or level.",
+        Idioma.DE to "Für dieses Niveau gibt es noch keine Verben. Versuche eine andere Sprache oder ein anderes Niveau.",
+        Idioma.FR to "Pas encore de verbes pour ce niveau. Essaie une autre langue ou un autre niveau.",
+        Idioma.IT to "Non ci sono ancora verbi per questo livello. Prova con un'altra lingua o un altro livello.",
+        Idioma.PT to "Ainda não há verbos para este nível. Tente outro idioma ou nível.",
     ),
     // --- Tipografias (Ronda G) ---
     ClaveTexto.FUENTE_TITULO to mapOf(
@@ -865,6 +939,20 @@ fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.T
 fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
 fun etiquetaAcercaDe(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_DE, idiomaInterfaz)
+fun etiquetaBibliotecaVistaVerbos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_VISTA_VERBOS, idiomaInterfaz)
+fun mensajeVerbosVacio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.VERBOS_VACIO, idiomaInterfaz)
+
+/** Nombre de una clase de verbo (`claseVerbo`) en el idioma de app; `null` si la app no la conoce (el verbo se ve igual, sin chip) o es `simple`. */
+fun etiquetaClaseVerbo(clase: String, idiomaInterfaz: Idioma): String? = when (clase) {
+    "reflexivo" -> texto(ClaveTexto.VERBO_REFLEXIVO, idiomaInterfaz)
+    "trennbar" -> texto(ClaveTexto.VERBO_TRENNBAR, idiomaInterfaz)
+    "mit-Praposition" -> texto(ClaveTexto.VERBO_MIT_PRAPOSITION, idiomaInterfaz)
+    "mit-Dativ" -> texto(ClaveTexto.VERBO_MIT_DATIV, idiomaInterfaz)
+    "phrasal-separable" -> texto(ClaveTexto.VERBO_PHRASAL_SEPARABLE, idiomaInterfaz)
+    "phrasal-inseparable" -> texto(ClaveTexto.VERBO_PHRASAL_INSEPARABLE, idiomaInterfaz)
+    "verbo-preposicion" -> texto(ClaveTexto.VERBO_VERBO_PREPOSICION, idiomaInterfaz)
+    else -> null
+}
 fun etiquetaFuente(idiomaInterfaz: Idioma): String = texto(ClaveTexto.FUENTE_TITULO, idiomaInterfaz)
 fun textoAcercaFuentes(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_FUENTES_TEXTO, idiomaInterfaz)
 

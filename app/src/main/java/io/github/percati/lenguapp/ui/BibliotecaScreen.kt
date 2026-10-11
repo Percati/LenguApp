@@ -32,6 +32,11 @@ import androidx.compose.foundation.clickable
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import io.github.percati.lenguapp.presentacion.FilaHabilidad
 import io.github.percati.lenguapp.presentacion.IndiceHabilidades
+import androidx.compose.foundation.layout.ColumnScope
+import io.github.percati.lenguapp.presentacion.contarClases
+import io.github.percati.lenguapp.presentacion.filtrarPorClases
+import io.github.percati.lenguapp.presentacion.lineaExtraVerbo
+import io.github.percati.lenguapp.presentacion.verbosDe
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -97,6 +102,8 @@ fun BibliotecaScreen(
     var topic by remember(idiomaElegido) { mutableStateOf<String?>(null) }
     var categoriasElegidas by remember(idiomaElegido) { mutableStateOf<Set<String>>(emptySet()) }
     var busqueda by remember { mutableStateOf("") }
+    // Vista Verbos: las clases elegidas (chips) son DE la pestana; sin persistencia.
+    var clasesElegidas by remember(idiomaElegido) { mutableStateOf<Set<String>>(emptySet()) }
     // Vista: palabras y expresiones (la de siempre) o indice de habilidades. Sin persistencia: cada apertura arranca en la primera.
     var vista by remember { mutableStateOf(VistaBiblioteca.LEXICO) }
 
@@ -118,6 +125,14 @@ fun BibliotecaScreen(
         topic = null
         categoriasElegidas = emptySet()
     }
+
+    // Vista Verbos: los verbos del idioma de la pestana en su nivel actual (sin filtro de nivel), y sus chips de clase.
+    val nivelDeVerbos = idioma?.let { idiomasAprendidos[it] }
+    val verbos = remember(items, idioma, nivelDeVerbos) {
+        if (idioma == null || nivelDeVerbos == null) emptyList() else items.verbosDe(idioma, nivelDeVerbos)
+    }
+    val conteoClases = remember(verbos) { verbos.contarClases() }
+    val verbosFiltrados = remember(verbos, clasesElegidas) { verbos.filtrarPorClases(clasesElegidas) }
 
     // El indice se arma solo si se esta mirando esa vista.
     val indiceHabilidades = if (idioma != null && vista == VistaBiblioteca.HABILIDADES) remember(idioma, habilidades) { habilidades(idioma) } else null
@@ -148,6 +163,7 @@ fun BibliotecaScreen(
                         vistas = listOf(
                             OpcionFiltro(VistaBiblioteca.LEXICO.name, etiquetaBibliotecaVistaLexico(idiomaInterfaz)),
                             OpcionFiltro(VistaBiblioteca.HABILIDADES.name, etiquetaBibliotecaVistaHabilidades(idiomaInterfaz)),
+                            OpcionFiltro(VistaBiblioteca.VERBOS.name, etiquetaBibliotecaVistaVerbos(idiomaInterfaz)),
                         ),
                         elegida = vista.name,
                         onElegir = { vista = VistaBiblioteca.valueOf(it) },
@@ -211,7 +227,45 @@ fun BibliotecaScreen(
                         modifier = Modifier.fillMaxWidth(),
                     )
                     }
+
+                    if (vista == VistaBiblioteca.VERBOS) {
+                        nivelDeVerbos?.let {
+                            Text("${etiquetaNivel(idiomaInterfaz)} ${it.name}", style = MaterialTheme.typography.labelLarge)
+                        }
+                        // Un solo grupo: la clase. Solo las que existen en los verbos de este idioma y nivel (P3);
+                        // `simple` nunca es un chip; sin ninguno elegido se ven todos.
+                        if (conteoClases.isNotEmpty()) {
+                            GrupoChips(
+                                opciones = conteoClases.map { (clase, n) ->
+                                    OpcionFiltro(clase, "${etiquetaClaseVerbo(clase, idiomaInterfaz) ?: clase} ($n)")
+                                },
+                                estaElegida = { it.clave in clasesElegidas },
+                                onElegir = { clasesElegidas = alternarEn(clasesElegidas, it.clave) },
+                                disposicion = DisposicionChips.AJUSTADA,
+                            )
+                        }
+                    }
                 }
+            }
+
+            if (vista == VistaBiblioteca.VERBOS) {
+                if (verbos.isEmpty()) {
+                    item { Text(mensajeVerbosVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge) }
+                }
+                items(verbosFiltrados, key = { "verbo|${it.idioma}|${it.texto}" }) { verbo ->
+                    val linea = verbo.lineaExtraVerbo(clasesElegidas) { etiquetaClaseVerbo(it, idiomaInterfaz) }
+                    FilaBiblioteca(
+                        item = verbo,
+                        idiomaBase = idiomaBase,
+                        guardada = claveBiblioteca(verbo.idioma, verbo.tipo, verbo.texto) in guardadas,
+                        onAlternar = { onAlternar(verbo) },
+                        // La linea discreta: regimen en aleman, separabilidad del phrasal en ingles.
+                        extra = if (linea == null) null else ({
+                            Text(linea, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }),
+                    )
+                }
+                return@LazyColumn
             }
 
             if (indiceHabilidades != null) {
@@ -274,7 +328,13 @@ private fun RamaCategorias(titulo: String, etiquetaQuitar: String, valores: List
 }
 
 @Composable
-private fun FilaBiblioteca(item: ItemBiblioteca, idiomaBase: Idioma, guardada: Boolean, onAlternar: () -> Unit) {
+private fun FilaBiblioteca(
+    item: ItemBiblioteca,
+    idiomaBase: Idioma,
+    guardada: Boolean,
+    onAlternar: () -> Unit,
+    extra: (@Composable ColumnScope.() -> Unit)? = null,
+) {
     val d = item.datosFila(idiomaBase)
     FilaPalabra(
         original = d.original,
@@ -286,11 +346,12 @@ private fun FilaBiblioteca(item: ItemBiblioteca, idiomaBase: Idioma, guardada: B
         tagEstrella = TAG_ESTRELLA_BIBLIOTECA,
         descripcionEstrella = null,
         onEstrella = onAlternar,
+        extra = extra,
     )
 }
 
-/** Las dos vistas de la Biblioteca. */
-private enum class VistaBiblioteca { LEXICO, HABILIDADES }
+/** Las tres vistas de la Biblioteca. */
+private enum class VistaBiblioteca { LEXICO, HABILIDADES, VERBOS }
 
 /** Una habilidad del indice: titulo y semanas del anio; un toque abre la ficha. */
 @Composable

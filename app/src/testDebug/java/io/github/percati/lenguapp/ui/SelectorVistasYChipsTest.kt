@@ -43,17 +43,11 @@ class SelectorVistasYChipsTest {
     @get:Rule
     val composeTestRule = createAndroidComposeRule<ComponentActivity>()
 
-    // La tercera vista (todavia sin implementar) se llamara "Verbos" en cada idioma.
-    private val verbos = mapOf(
-        Idioma.ES to "Verbos", Idioma.EN to "Verbs", Idioma.DE to "Verben",
-        Idioma.FR to "Verbes", Idioma.IT to "Verbi", Idioma.PT to "Verbos",
-    )
-
     private fun probar(idioma: Idioma) {
         val vistas = listOf(
             OpcionFiltro("LEXICO", etiquetaBibliotecaVistaLexico(idioma)),
             OpcionFiltro("HABILIDADES", etiquetaBibliotecaVistaHabilidades(idioma)),
-            OpcionFiltro("VERBOS", verbos.getValue(idioma)),
+            OpcionFiltro("VERBOS", etiquetaBibliotecaVistaVerbos(idioma)),
         )
         var elegida by mutableStateOf("LEXICO")
         composeTestRule.setContent {
