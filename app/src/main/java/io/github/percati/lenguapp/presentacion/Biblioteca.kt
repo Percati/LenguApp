@@ -37,6 +37,24 @@ data class ItemBiblioteca(
         vocabulario?.aTextoBilingue(idioma) ?: redemittel!!.aTextoBilingue(idioma)
 
     val funcion: TextoBilingue? get() = redemittel?.funcion
+
+    /**
+     * Texto para la busqueda (la MISMA normalizacion que la vista Verbos: [normalizarBusqueda], sin
+     * mayusculas ni diacriticos): el original y la funcion, calculados una sola vez. No forma parte de la
+     * igualdad del item.
+     */
+    internal val textoBuscable: String by lazy(LazyThreadSafetyMode.NONE) {
+        normalizarBusqueda(texto) + "\u0000" + (funcion?.resolver(idioma, idioma)?.let(::normalizarBusqueda) ?: "")
+    }
+
+    private val traduccionBuscablePorIdioma = java.util.concurrent.ConcurrentHashMap<Idioma, String>(2)
+
+    /** La traduccion al idioma de app, normalizada y cacheada por idioma. */
+    internal fun traduccionBuscable(idiomaBase: Idioma): String = traduccionBuscablePorIdioma.getOrPut(idiomaBase) {
+        val traduccion = vocabulario?.traduccionParaMostrar(idiomaBase)
+            ?: (redemittel?.traduccionParaMostrar(idiomaBase) as? TraduccionRedemittel.Disponible)?.texto
+        traduccion?.let(::normalizarBusqueda) ?: ""
+    }
 }
 
 /** Clave de la estrella: la misma que usa la ficha (tipo + texto en el idioma que se aprende). */
@@ -105,7 +123,8 @@ fun List<ItemBiblioteca>.filtrar(
     busqueda: String,
     idiomaBase: Idioma,
 ): List<ItemBiblioteca> {
-    val q = busqueda.trim().lowercase()
+    // La misma busqueda que la vista Verbos: subcadena, sin mayusculas ni diacriticos (uber encuentra «über…»).
+    val q = normalizarBusqueda(busqueda)
     return filter { it.idioma == idioma && it.tipo == tipo }
         .filter { niveles.isEmpty() || it.niveles.any { n -> n in niveles } }
         .filter { tipo != TipoGuardado.VOCABULARIO || topic == null || topic in it.topics }
@@ -155,10 +174,6 @@ fun List<ItemBiblioteca>.contarCategorias(idioma: Idioma, niveles: Set<Nivel>): 
     return conteo
 }
 
-private fun ItemBiblioteca.coincide(q: String, idiomaBase: Idioma): Boolean {
-    if (texto.lowercase().contains(q)) return true
-    val traduccion = vocabulario?.traduccionParaMostrar(idiomaBase)
-        ?: (redemittel?.traduccionParaMostrar(idiomaBase) as? TraduccionRedemittel.Disponible)?.texto
-    if (traduccion != null && traduccion.lowercase().contains(q)) return true
-    return funcion?.resolver(idioma, idioma)?.lowercase()?.contains(q) == true
-}
+/** Coincide en el original, en la traduccion al idioma de app o en la funcion (los mismos campos de siempre). */
+private fun ItemBiblioteca.coincide(q: String, idiomaBase: Idioma): Boolean =
+    textoBuscable.contains(q) || traduccionBuscable(idiomaBase).contains(q)
