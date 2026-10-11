@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Igual que values/themes.xml pero sobre la base oscura de la plataforma. -->
+    <style name="Theme.LenguApp" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/fondo_papel</item>
+        <item name="android:colorBackground">@color/fondo_papel</item>
+    </style>
+</resources>

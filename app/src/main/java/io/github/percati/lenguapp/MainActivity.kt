@@ -93,6 +93,7 @@ import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.activity.result.contract.ActivityResultContracts
 import io.github.percati.lenguapp.datos.ErrorRespaldo
 import io.github.percati.lenguapp.datos.LecturaRespaldo
@@ -146,6 +147,8 @@ private const val DURACION_TRANSICION_MS = 180
  */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Pantalla de carga: tema Theme.LenguApp.Splash (fondo Papel, sin icono) -> Theme.LenguApp.
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         val ajustesIniciales = cargarAjustes(this)
         val nombresCalendario = nombresCalendarioDisponibles(this)

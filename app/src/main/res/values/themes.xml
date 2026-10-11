@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema de la ventana: solo el fondo (Papel) para que no haya un destello blanco antes de Compose. -->
+    <style name="Theme.LenguApp" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/fondo_papel</item>
+        <item name="android:colorBackground">@color/fondo_papel</item>
+    </style>
+
+    <!--
+        PANTALLA DE CARGA (androidx.core:core-splashscreen). Fondo = fondo del tema Papel (claro/oscuro
+        segun el sistema), SIN icono propio: Fer todavia no tiene el arte.
+        >>> UN SOLO LUGAR para la ronda H: cuando llegue el icono, reemplazar `splash_vacio` (drawable)
+        >>> por el glifo de la splash, y en el manifest agregar android:icon / android:roundIcon con el
+        >>> adaptive icon (capa monocromatica para iconos tematicos). Ver FALTANTES.md, seccion 25.
+    -->
+    <style name="Theme.LenguApp.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/fondo_papel</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_vacio</item>
+        <item name="postSplashScreenTheme">@style/Theme.LenguApp</item>
+    </style>
+</resources>

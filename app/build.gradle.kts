@@ -73,6 +73,9 @@ dependencies {
     // para desapilar, en vez de cerrar la app.
     implementation("androidx.navigation:navigation-compose:2.8.4")
 
+    // Pantalla de carga (Ronda G, tarea 5): API de splash compatible desde API 23, sin icono propio todavia.
+    implementation("androidx.core:core-splashscreen:1.0.1")
+
     implementation("androidx.glance:glance-appwidget:1.1.1")
     implementation("androidx.glance:glance-material3:1.1.1")
 
