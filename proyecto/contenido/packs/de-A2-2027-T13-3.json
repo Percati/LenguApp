@@ -8,6 +8,9 @@
   {
    "item": "beantragen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "solicitar",
     "en": "to apply for",
@@ -74,6 +77,11 @@
   {
    "item": "sich beschweren",
    "prioridad": "nucleo",
+   "reccion": "über + Akk / bei + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "reclamar",
     "en": "to complain",
@@ -85,6 +93,9 @@
   {
    "item": "abgeben",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "entregar",
     "en": "to hand in",
@@ -151,6 +162,9 @@
   {
    "item": "kündigen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "dar de baja",
     "en": "to cancel",

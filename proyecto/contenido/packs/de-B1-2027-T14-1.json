@@ -41,6 +41,9 @@
   {
    "item": "einkaufen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "hacer la compra",
     "en": "to shop",
@@ -52,6 +55,11 @@
   {
    "item": "sich entscheiden",
    "prioridad": "nucleo",
+   "reccion": "für + Akk / gegen + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "decidirse",
     "en": "to decide",
@@ -63,6 +71,9 @@
   {
    "item": "umtauschen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "cambiar un artículo",
     "en": "to exchange",
@@ -140,6 +151,9 @@
   {
    "item": "sich etwas gönnen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "darse un gusto",
     "en": "to treat yourself",
@@ -151,6 +165,9 @@
   {
    "item": "zurückschicken",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "devolver",
     "en": "to send back",

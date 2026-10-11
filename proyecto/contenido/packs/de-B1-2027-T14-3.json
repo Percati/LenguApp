@@ -52,6 +52,9 @@
   {
    "item": "einkaufen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "hacer la compra",
     "en": "to shop",
@@ -129,6 +132,9 @@
   {
    "item": "reparieren",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "reparar",
     "en": "to repair",
@@ -140,6 +146,10 @@
   {
    "item": "vertrauen",
    "prioridad": "ampliacion",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "confiar",
     "en": "to trust",
@@ -151,6 +161,10 @@
   {
    "item": "verzichten auf",
    "prioridad": "ampliacion",
+   "reccion": "auf + Akk",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "prescindir de",
     "en": "to do without",

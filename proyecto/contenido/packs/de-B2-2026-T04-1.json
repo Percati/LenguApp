@@ -30,14 +30,16 @@
   {
    "item": "sich schonen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "cuidarse",
     "en": "to take it easy, to go easy on oneself",
     "fr": "se ménager / se reposer",
     "it": "riguardarsi / riposarsi",
     "pt": "poupar-se / descansar"
-   },
-   "reccion": "reflexiv"
+   }
   },
   {
    "item": "die Belastungsgrenze",
@@ -115,14 +117,17 @@
   {
    "item": "sich krankmelden",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
    "traducciones": {
     "es": "dar parte de baja",
     "en": "to call in sick",
     "fr": "se déclarer malade / se mettre en arrêt",
     "it": "darsi malato / mettersi in malattia",
     "pt": "dar baixa por doença"
-   },
-   "reccion": "reflexiv"
+   }
   },
   {
    "item": "die Genesung",
@@ -139,14 +144,17 @@
   {
    "item": "achten auf",
    "prioridad": "ampliacion",
+   "reccion": "auf + Akk",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "prestar atención a",
     "en": "to pay attention to, to watch",
     "fr": "faire attention à",
     "it": "prestare attenzione a",
     "pt": "prestar atenção a"
-   },
-   "reccion": "+ Akk."
+   }
   },
   {
    "item": "chronisch / akut",

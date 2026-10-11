@@ -7,6 +7,9 @@
   {
    "item": "etwas ansprechen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "sacar un tema",
     "en": "to raise a subject",
@@ -14,12 +17,12 @@
     "it": "affrontare / sollevare un argomento",
     "pt": "abordar um assunto"
    },
-   "reccion": "Akk.",
    "nota": "Schlüsselverb für Konflikte"
   },
   {
    "item": "Rücksicht nehmen auf",
    "prioridad": "nucleo",
+   "reccion": "auf + Akk",
    "traducciones": {
     "es": "tener consideración con",
     "en": "to be considerate of",
@@ -27,24 +30,27 @@
     "it": "avere riguardo per",
     "pt": "ter consideração por"
    },
-   "reccion": "+ Akk.",
    "nota": "starkes Kulturkonzept"
   },
   {
    "item": "sich auseinanderleben",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
    "traducciones": {
     "es": "distanciarse con el tiempo",
     "en": "to drift apart",
     "fr": "s’éloigner l’un de l’autre avec le temps",
     "it": "allontanarsi col tempo",
     "pt": "afastar-se com o tempo"
-   },
-   "reccion": "reflexiv"
+   }
   },
   {
    "item": "das Verhältnis zu",
    "prioridad": "nucleo",
+   "reccion": "zu + Dat",
    "traducciones": {
     "es": "la relación con",
     "en": "the relationship with",
@@ -52,24 +58,26 @@
     "it": "il rapporto con",
     "pt": "a relação com"
    },
-   "reccion": "+ Dat.",
    "nota": "neutraler als *Beziehung*"
   },
   {
    "item": "jemandem etwas anvertrauen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "confiar algo a alguien",
     "en": "to confide something to someone",
     "fr": "confier quelque chose à quelqu’un",
     "it": "confidare qualcosa a qualcuno",
     "pt": "confiar algo a alguém"
-   },
-   "reccion": "Dat. + Akk."
+   }
   },
   {
    "item": "sich streiten über / um",
    "prioridad": "ampliacion",
+   "reccion": "über + Akk / um + Akk",
    "traducciones": {
     "es": "discutir sobre / por",
     "en": "to argue about / over",
@@ -77,7 +85,6 @@
     "it": "litigare su / per",
     "pt": "discutir sobre / por"
    },
-   "reccion": "+ Akk.",
    "nota": "Präposition ändert die Nuance"
   },
   {
@@ -95,6 +102,7 @@
   {
    "item": "jemandem aus dem Weg gehen",
    "prioridad": "ampliacion",
+   "reccion": "Dat",
    "traducciones": {
     "es": "evitar a alguien",
     "en": "to avoid someone",
@@ -102,7 +110,6 @@
     "it": "evitare qualcuno",
     "pt": "evitar alguém"
    },
-   "reccion": "Dat.",
    "nota": "Redewendung"
   },
   {
@@ -121,6 +128,9 @@
   {
    "item": "sich vertragen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "llevarse bien",
     "en": "to get on, to make up",
@@ -128,7 +138,6 @@
     "it": "andare d’accordo / fare pace",
     "pt": "dar-se bem / fazer as pazes"
    },
-   "reccion": "reflexiv",
    "nota": "umgangssprachlich, sehr nützlich"
   },
   {
@@ -156,6 +165,7 @@
   {
    "item": "jemandem den Rücken stärken",
    "prioridad": "ampliacion",
+   "reccion": "Dat",
    "traducciones": {
     "es": "respaldar a alguien",
     "en": "to back someone up",
@@ -163,20 +173,19 @@
     "it": "sostenere qualcuno",
     "pt": "apoiar alguém"
    },
-   "reccion": "Dat.",
    "nota": "Redewendung"
   },
   {
    "item": "die Verpflichtung gegenüber",
    "prioridad": "ampliacion",
+   "reccion": "gegenüber + Dat",
    "traducciones": {
     "es": "la obligación hacia",
     "en": "the obligation towards",
     "fr": "l’obligation envers",
     "it": "l’obbligo nei confronti di",
     "pt": "a obrigação para com"
-   },
-   "reccion": "+ Dat."
+   }
   }
  ],
  "anio": 2026

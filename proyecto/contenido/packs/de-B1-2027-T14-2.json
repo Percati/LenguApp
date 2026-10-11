@@ -63,6 +63,9 @@
   {
    "item": "einkaufen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "hacer la compra",
     "en": "to shop",
@@ -74,6 +77,11 @@
   {
    "item": "sich entscheiden",
    "prioridad": "nucleo",
+   "reccion": "für + Akk / gegen + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "decidirse",
     "en": "to decide",
@@ -151,6 +159,10 @@
   {
    "item": "vertrauen",
    "prioridad": "ampliacion",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "confiar",
     "en": "to trust",

@@ -8,6 +8,10 @@
   {
    "item": "berichten",
    "prioridad": "nucleo",
+   "reccion": "über + Akk / von + Dat",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "informar",
     "en": "to report",
@@ -52,6 +56,9 @@
   {
    "item": "lesen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "leer",
     "en": "to read",
@@ -63,6 +70,10 @@
   {
    "item": "passieren",
    "prioridad": "nucleo",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "pasar, ocurrir",
     "en": "to happen",
@@ -151,6 +162,9 @@
   {
    "item": "wissen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "saber",
     "en": "to know",

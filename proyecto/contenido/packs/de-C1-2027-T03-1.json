@@ -8,6 +8,9 @@
   {
    "item": "abschalten",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "desconectar",
     "en": "to switch off, to unwind",
@@ -63,6 +66,9 @@
   {
    "item": "etwas hinterfragen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "cuestionar algo",
     "en": "to question something",
@@ -74,6 +80,9 @@
   {
    "item": "ablenken",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "distraer",
     "en": "to distract",
@@ -140,6 +149,12 @@
   {
    "item": "sich anmelden",
    "prioridad": "ampliacion",
+   "reccion": "bei + Dat / zu + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "iniciar sesión",
     "en": "to log in",

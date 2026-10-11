@@ -52,6 +52,11 @@
   {
    "item": "sich erholen",
    "prioridad": "nucleo",
+   "reccion": "von + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "recuperarse",
     "en": "to recover",
@@ -63,6 +68,10 @@
   {
    "item": "sich krankmelden",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
    "traducciones": {
     "es": "dar parte de enfermo",
     "en": "to call in sick",
@@ -151,6 +160,11 @@
   {
    "item": "wehtun",
    "prioridad": "ampliacion",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "doler",
     "en": "to hurt",

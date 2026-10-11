@@ -63,6 +63,9 @@
   {
    "item": "speichern",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "guardar",
     "en": "to save",
@@ -74,6 +77,11 @@
   {
    "item": "zustimmen",
    "prioridad": "nucleo",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "dar el consentimiento",
     "en": "to consent",
@@ -118,6 +126,9 @@
   {
    "item": "löschen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "borrar",
     "en": "to delete",
@@ -129,6 +140,10 @@
   {
    "item": "sich auskennen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
    "traducciones": {
     "es": "manejarse bien con algo",
     "en": "to know your way around",
@@ -151,6 +166,9 @@
   {
    "item": "weitergeben",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "ceder, transmitir",
     "en": "to pass on",

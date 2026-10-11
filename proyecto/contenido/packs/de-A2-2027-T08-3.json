@@ -30,6 +30,10 @@
   {
    "item": "helfen",
    "prioridad": "nucleo",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "ayudar",
     "en": "to help",
@@ -41,6 +45,11 @@
   {
    "item": "sich kümmern um",
    "prioridad": "nucleo",
+   "reccion": "um + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "ocuparse de",
     "en": "to take care of",
@@ -52,6 +61,9 @@
   {
    "item": "sich verstehen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "llevarse bien",
     "en": "to get on well",
@@ -63,6 +75,10 @@
   {
    "item": "vertrauen",
    "prioridad": "nucleo",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "confiar",
     "en": "to trust",
@@ -129,6 +145,11 @@
   {
    "item": "sich entschuldigen",
    "prioridad": "ampliacion",
+   "reccion": "für + Akk / bei + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "pedir disculpas",
     "en": "to apologise",
@@ -140,6 +161,11 @@
   {
    "item": "sich verlassen auf",
    "prioridad": "ampliacion",
+   "reccion": "auf + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "contar con alguien",
     "en": "to rely on",
@@ -151,6 +177,11 @@
   {
    "item": "zuhören",
    "prioridad": "ampliacion",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "escuchar",
     "en": "to listen",

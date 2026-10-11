@@ -85,6 +85,9 @@
   {
    "item": "sich verlaufen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "perderse",
     "en": "to get lost",
@@ -96,6 +99,9 @@
   {
    "item": "besichtigen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "visitar, recorrer",
     "en": "to visit, to tour",
@@ -140,6 +146,9 @@
   {
    "item": "fragen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "preguntar",
     "en": "to ask",
@@ -151,6 +160,11 @@
   {
    "item": "sich freuen",
    "prioridad": "ampliacion",
+   "reccion": "auf + Akk / über + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "alegrarse",
     "en": "to be glad",

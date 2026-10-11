@@ -7,6 +7,9 @@
   {
    "item": "abschmecken",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "rectificar de sal",
     "en": "to season to taste",
@@ -14,7 +17,6 @@
     "it": "aggiustare di sale / condire a piacere",
     "pt": "temperar a gosto"
    },
-   "reccion": "Akk.",
    "nota": "ohne genaue Entsprechung"
   },
   {
@@ -66,18 +68,23 @@
   {
    "item": "etwas anbraten",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "sofreír",
     "en": "to brown, to sear",
     "fr": "faire revenir / saisir",
     "it": "rosolare",
     "pt": "alourar / selar"
-   },
-   "reccion": "Akk."
+   }
   },
   {
    "item": "anschwitzen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "pochar",
     "en": "to sweat (vegetables)",
@@ -85,7 +92,6 @@
     "it": "stufare / far appassire",
     "pt": "refogar ligeiramente"
    },
-   "reccion": "Akk.",
    "nota": "milder als anbraten"
   },
   {
@@ -113,6 +119,9 @@
   {
    "item": "verderben",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "echarse a perder",
     "en": "to spoil, to go off",

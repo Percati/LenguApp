@@ -30,6 +30,11 @@
   {
    "item": "sich entschuldigen",
    "prioridad": "nucleo",
+   "reccion": "für + Akk / bei + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "pedir disculpas",
     "en": "to apologise",
@@ -41,6 +46,9 @@
   {
    "item": "sich verstehen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "llevarse bien",
     "en": "to get on",
@@ -52,6 +60,10 @@
   {
    "item": "streiten",
    "prioridad": "nucleo",
+   "reccion": "über + Akk / um + Akk",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "discutir",
     "en": "to argue",
@@ -63,6 +75,11 @@
   {
    "item": "zuhören",
    "prioridad": "nucleo",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "escuchar",
     "en": "to listen",
@@ -140,6 +157,11 @@
   {
    "item": "sich kümmern um",
    "prioridad": "ampliacion",
+   "reccion": "um + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "ocuparse de",
     "en": "to look after",
@@ -151,6 +173,11 @@
   {
    "item": "sich verlassen auf",
    "prioridad": "ampliacion",
+   "reccion": "auf + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "contar con alguien",
     "en": "to rely on",

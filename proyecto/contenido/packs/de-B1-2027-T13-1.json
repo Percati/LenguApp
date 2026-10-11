@@ -8,6 +8,9 @@
   {
    "item": "beantragen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "solicitar",
     "en": "to apply for",
@@ -74,6 +77,9 @@
   {
    "item": "abgeben",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "entregar",
     "en": "to hand in",
@@ -140,6 +146,12 @@
   {
    "item": "sich anmelden",
    "prioridad": "ampliacion",
+   "reccion": "bei + Dat / zu + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "empadronarse",
     "en": "to register",

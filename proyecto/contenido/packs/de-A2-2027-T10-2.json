@@ -8,6 +8,9 @@
   {
    "item": "bestellen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "pedir",
     "en": "to order",
@@ -63,6 +66,9 @@
   {
    "item": "kochen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "cocinar",
     "en": "to cook",
@@ -74,6 +80,10 @@
   {
    "item": "schmecken",
    "prioridad": "nucleo",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "saber, gustar",
     "en": "to taste",
@@ -129,6 +139,9 @@
   {
    "item": "einkaufen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "hacer la compra",
     "en": "to shop for food",
@@ -140,6 +153,9 @@
   {
    "item": "reservieren",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "reservar",
     "en": "to reserve",

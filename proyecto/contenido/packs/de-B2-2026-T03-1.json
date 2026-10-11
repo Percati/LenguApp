@@ -7,6 +7,7 @@
   {
    "item": "der Umgang mit",
    "prioridad": "nucleo",
+   "reccion": "mit + Dat",
    "traducciones": {
     "es": "el trato con",
     "en": "dealing with, handling of",
@@ -14,12 +15,14 @@
     "it": "la gestione di / il rapporto con",
     "pt": "a gestão de / o modo de lidar com"
    },
-   "reccion": "+ Dat.",
    "nota": "extrem hochfrequente Formel"
   },
   {
    "item": "etwas abwägen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "sopesar",
     "en": "to weigh something up",
@@ -27,7 +30,6 @@
     "it": "valutare / soppesare",
     "pt": "ponderar"
    },
-   "reccion": "Akk.",
    "nota": "zentral zum Argumentieren"
   },
   {
@@ -45,6 +47,9 @@
   {
    "item": "etwas voraussetzen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "dar por supuesto / requerir",
     "en": "to presuppose / to require",
@@ -52,7 +57,6 @@
     "it": "presupporre / richiedere qualcosa",
     "pt": "pressupor / exigir algo"
    },
-   "reccion": "Akk.",
    "nota": "doppelter Sinn"
   },
   {
@@ -111,20 +115,19 @@
     "it": "mettere in discussione qualcosa",
     "pt": "pôr algo em causa"
    },
-   "reccion": "Akk.",
    "nota": "Funktionsverbgefüge"
   },
   {
    "item": "die Auswirkung auf",
    "prioridad": "ampliacion",
+   "reccion": "auf + Akk",
    "traducciones": {
     "es": "el efecto sobre",
     "en": "the impact on",
     "fr": "l’impact sur",
     "it": "l’impatto su",
     "pt": "o impacto sobre"
-   },
-   "reccion": "+ Akk."
+   }
   },
   {
    "item": "die Verlässlichkeit",
@@ -141,14 +144,16 @@
   {
    "item": "etwas nachrüsten",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "actualizar añadiendo",
     "en": "to retrofit",
     "fr": "mettre à niveau / équiper après coup",
     "it": "aggiornare / adeguare a posteriori",
     "pt": "modernizar / equipar posteriormente"
-   },
-   "reccion": "Akk."
+   }
   },
   {
    "item": "voreingenommen",
