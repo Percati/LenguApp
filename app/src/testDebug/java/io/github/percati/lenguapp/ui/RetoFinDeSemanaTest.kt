@@ -171,8 +171,13 @@ class RetoFinDeSemanaTest {
             assertFalse("$idioma: placeholder sin resolver: $linea", linea.contains("{") || linea.contains("}"))
             assertTrue(etiquetaRetoHabilidad(idioma).isNotBlank())
         }
-        assertEquals("Habla 7 min sobre esto, en voz alta y de una sola vez (aunque la consigna pida escribir):", textoRetoConsignaLinea(Idioma.ES, 7))
-        assertEquals("Speak for 7 min about this, out loud and in one go (even if the task asks you to write):", textoRetoConsignaLinea(Idioma.EN, 7))
+        assertEquals("Esto es lo que vas a contar. En voz alta, 7 min, de una sola vez y sin escribir nada:", textoRetoConsignaLinea(Idioma.ES, 7))
+        assertEquals("This is what you'll talk about. Out loud, 7 min, in one go, with no writing:", textoRetoConsignaLinea(Idioma.EN, 7))
+        // Ronda L: sin el parentesis que aclaraba la contradiccion, en los 6 idiomas
+        for (idioma in Idioma.entries) {
+            val linea = textoRetoConsignaLinea(idioma, 7)
+            assertFalse("$idioma: quedo un parentesis: $linea", linea.contains("(") || linea.contains(")"))
+        }
         // RETO_LINEA («Dilo en voz alta…») se fundio en la linea nueva: no queda la vieja
         assertFalse(ClaveTexto.entries.any { it.name == "RETO_LINEA" })
     }

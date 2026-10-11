@@ -213,16 +213,17 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
     ),
     // --- Reto del fin de semana (Ronda E, tarea 4) ---
     // --- Desafio de fin de semana (Ronda F2, tarea 2) ---
-    // Linea oral que va ANTES de la consigna de la ficha (Ronda K, tarea 2): reencuadra la consigna como tarea para hablar.
-    // {oralMin} = evidencia.oralMin redondeado; "min" y no "minutos" para no depender del plural. La aclaracion final
-    // existe porque muchas consignas piden escribir (es la misma consigna de la mision), y aca se resuelve hablando.
+    // Linea oral que va ANTES de la consigna de la ficha (Ronda K, encuadre corregido en la L): presenta la consigna
+    // como el TEMA de lo que se va a contar, no como una orden. Asi funciona aunque la consigna (que esta redactada
+    // para la evidencia escrita) empiece con "Escribe…": se lee como tema y no hace falta aclarar nada entre parentesis.
+    // {oralMin} = evidencia.oralMin redondeado; "min" y no "minutos" para no depender del plural.
     ClaveTexto.RETO_CONSIGNA_LINEA to mapOf(
-        Idioma.ES to "Habla {oralMin} min sobre esto, en voz alta y de una sola vez (aunque la consigna pida escribir):",
-        Idioma.EN to "Speak for {oralMin} min about this, out loud and in one go (even if the task asks you to write):",
-        Idioma.DE to "Sprich {oralMin} Min. lang darüber, laut und in einem Zug (auch wenn die Aufgabe ein Schreiben verlangt):",
-        Idioma.FR to "Parle {oralMin} min de cela, à voix haute et d'un seul trait (même si la consigne demande d'écrire) :",
-        Idioma.IT to "Parla per {oralMin} min di questo, ad alta voce e tutto d'un fiato (anche se la consegna chiede di scrivere):",
-        Idioma.PT to "Fale por {oralMin} min sobre isso, em voz alta e de uma só vez (mesmo que o enunciado peça para escrever):",
+        Idioma.ES to "Esto es lo que vas a contar. En voz alta, {oralMin} min, de una sola vez y sin escribir nada:",
+        Idioma.EN to "This is what you'll talk about. Out loud, {oralMin} min, in one go, with no writing:",
+        Idioma.DE to "Davon erzählst du. Laut, {oralMin} Min. am Stück und ohne etwas aufzuschreiben:",
+        Idioma.FR to "Voilà ce que tu vas raconter. À voix haute, {oralMin} min, d'un seul trait et sans rien écrire :",
+        Idioma.IT to "Questo è ciò che racconterai. Ad alta voce, {oralMin} min, tutto d'un fiato e senza scrivere nulla:",
+        Idioma.PT to "Isto é o que você vai contar. Em voz alta, {oralMin} min, de uma só vez e sem escrever nada:",
     ),
     ClaveTexto.RETO_REGLAS_BASICO to mapOf(
         Idioma.ES to "De corrido, sin leer\nUna sola toma\nDíselo a una persona o grábate\nEscúchalo y repítelo una vez",
