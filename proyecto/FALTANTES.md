@@ -1047,3 +1047,27 @@ Verificado por Overview sobre `origin/main` (HEAD `c2f71956`): compositor 606 / 
 
 **Deuda abierta para la ronda H:** el `contentDescription` «Contraer/Expandir» de `ui/SeccionPlegable.kt` está en español fijo. No es texto a la vista, pero TalkBack **lo lee en voz alta**, así que con la app en alemán el lector dice una palabra en español: va a `TextosInterfaz` en 6 idiomas (P7). Siguen pendientes: nombres de las clases de verbo en fr/it/pt sin revisar por nativo, ejemplos con el verbo separado (5 de 108), licencias de las voces Piper.
 
+## 32. Code Ronda H — ✅ implementada (Code, 11-oct-2026), versión 0.2.4
+
+Cuatro tareas, un commit cada una; `compileDebugKotlin compileDebugUnitTestKotlin test` en verde en cada una. Sin tocar contenido, esquema ni assets.
+
+- **Vista «Verbos»** (`presentacion/Verbos.kt`, `ui/BibliotecaScreen.kt`): tercera vista de la Biblioteca. Entran los ítems de vocabulario con `claseVerbo` no vacío del idioma de la pestaña y de **su nivel actual**, deduplicados por el original (el agrupado de `construirBiblioteca` ya es por idioma + tipo + texto), alfabéticos. Fila = `FilaPalabra` con `extra`: en alemán el `reccion`; en inglés la separabilidad del phrasal, salvo que ya la diga el chip elegido. La estrella es la de las otras vistas (mismo ítem y misma clave de Guardados). **Un solo grupo de chips, la clase, sin filtro de nivel** (el «dos grupos, nivel y tipo» de 25.1 quedó obsoleto, no se implementó). Chips por idioma desde los datos con su cuenta; `simple` nunca es chip; clase desconocida: el verbo se ve, sin chip, y no rompe (test). Estado vacío en 6 idiomas.
+- **Búsqueda** (solo en Verbos): subcadena insensible a mayúsculas y diacriticos (`uber` → *übernehmen*, ß = ss) sobre el original y la traducción al idioma de app, mientras se escribe, sobre lo ya filtrado por clase; botón de borrar; mensaje propio de «sin resultados». Nada de datos nuevos (sin campo de familia ni raíz).
+- **TalkBack**: «Contraer/Expandir» de `SeccionPlegable` a `TextosInterfaz` (6 idiomas). Auditoría: no había otro `contentDescription` con texto fijo; un test lo vigila sobre el código fuente. Quedan los `contentDescription` de las flechas de semana (`"< Semana"`, `"> Semana"`): la palabra va traducida pero TalkBack dice «menor que»; cosmético, no se tocó (los tests de pantalla los usan).
+- **Tamaño del APK** (empaquetado limpio): **62 913 939 B**, +16 384 sobre los 62 897 555 B de la Ronda G. Manifest sin `INTERNET` ni permisos nuevos; 1088 tests, 0 fallas; los dos guardas de `preBuild` en verde.
+- **Versión** 0.2.4 (versionCode 6); guía de testers (`.md`) con la versión y la fila de Verbos; el `.pdf` lo regenera Overview.
+
+**Elecciones donde el prompt no cerraba:** los chips de clase son **multi-selección con OR** (como las categorías de expresiones): con «Separable» y «Reflexivo» se ven los que tienen alguna de las dos; la cuenta de cada chip es sobre todos los verbos del par (no baja al escribir en la búsqueda); la búsqueda y las clases elegidas se vacían al cambiar de pestaña de idioma; el nivel mostrado es el nivel actual del idioma en Ajustes (no el multiselector de la vista de palabras).
+
+**Verbos a la vista por (idioma, nivel)** (únicos por original, datos reales; entre paréntesis las clases con chip):
+
+| | A2 | B1 | B2 | C1 | C2 |
+|---|---|---|---|---|---|
+| **DE** | 124 (trennbar 32, reflexivo 25, mit-Praposition 16, mit-Dativ 9) | 121 (48, 50, 28, 10) | 72 (40, 35, 16, **2**) | 54 (27, 25, 7, **2**) | **24** (13, 8, 3, **sin mit-Dativ**) |
+| **EN** | 102 (phrasal-sep. 13, phrasal-insep. 12, verbo-prep. **4**) | 128 (25, 47, 13) | 72 (11, 32, 7) | 76 (13, 31, 12) | 65 (**6**, 9, **5**) |
+
+Pares flojos: **DE C2 con 24 verbos** y sin ningún `mit-Dativ` (el chip no aparece); `mit-Dativ` con 2 en DE B2 y C1; EN A2 con solo 4 `verbo-preposicion` y EN C2 con 6 `phrasal-separable` y 5 `verbo-preposicion`. DE C2 y los chips de 2–6 ítems son los candidatos a contenido nuevo. `reccion` está poblado en DE en 25 / 38 / 18 / 9 / 3 verbos (A2…C2): la línea extra solo se dibuja ahí. En EN no hay `reccion`; la línea extra es la separabilidad.
+
+**Sin revisar por nativo:** los nombres de las clases, de la vista, el estado vacío, el «sin resultados» y Contraer/Expandir en fr / it / pt.
+
+**Búsqueda en «Vocabulario y expresiones» (propuesta, no hecha):** ya la tiene (campo «Buscar», sobre original, traducción y función, sin diacríticos no: usa `lowercase()` plano). Costo de unificarla con la de Verbos: reemplazar `coincide()` de `Biblioteca.kt` por `normalizarBusqueda` (una línea, más sus tests) para que `uber` también encuentre *über…* ahí; bajo, y de paso las dos vistas se comportan igual.

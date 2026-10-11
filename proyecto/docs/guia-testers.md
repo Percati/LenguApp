@@ -1,4 +1,4 @@
-# LenguApp · guía rápida para testers (versión 0.2.3)
+# LenguApp · guía rápida para testers (versión 0.2.4)
 
 **Qué es.** Una app para practicar un idioma cada semana (alemán o inglés, de A2 a C2). **No es un curso:** sirve para fijar lo que ya aprendiste en uno. Funciona sin internet, sin cuenta y sin recopilar datos. Está en prueba y tu opinión ayuda mucho.
 
@@ -13,6 +13,7 @@
 | El nombre de la app y «Acerca de» están en Ajustes | La pantalla principal queda libre para el contenido. |
 | Guardados e importar/exportar | Guardados muestra lo mismo que la Biblioteca. Puedes exportar a Anki o hacer una copia de seguridad, e importarla después; eliges tú el archivo en ese momento. |
 | Habilidades en la Biblioteca | Es una lista de solo lectura: toca una habilidad para abrir su semana. |
+| Verbos en la Biblioteca | Una tercera vista lista los verbos del idioma y del nivel que estás viendo, sin repetirlos. Puedes filtrar por clase (separable, reflexivo, con preposición…); no hay filtro por nivel a propósito, y los verbos simples no tienen botón propio: se ven cuando no eliges ninguna clase. La barra de búsqueda filtra mientras escribes: «machen» encuentra aufmachen, zumachen y abmachen, y también funciona sin tildes (uber encuentra übernehmen) o con la traducción (abrir encuentra aufmachen). |
 | No hay estadísticas, rachas ni progreso | Decisión de diseño. La app solo guarda tus estrellas (Guardados) y tus ajustes. |
 | El prompt para conversar por voz con una IA existe solo en inglés B2 y C1 | Es una prueba. El prompt para que una IA corrija tu texto sí está en todos los niveles. |
 | Los prompts para la IA están siempre en el idioma que aprendes | Así la IA responde en ese idioma, aunque la app esté en el tuyo. |
