@@ -44,6 +44,7 @@ enum class ClaveTexto {
     TEMA_PAPEL, TEMA_TERRACOTA, TEMA_MAR, TEMA_GRAFITO,
     FUENTE_TITULO, FUENTE_LECTURA, FUENTE_CLARA, ACERCA_FUENTES_TEXTO,
     BIBLIOTECA_VISTA_VERBOS, VERBO_REFLEXIVO, VERBO_TRENNBAR, VERBO_MIT_PRAPOSITION, VERBO_MIT_DATIV, VERBO_PHRASAL_SEPARABLE, VERBO_PHRASAL_INSEPARABLE, VERBO_VERBO_PREPOSICION, VERBOS_VACIO,
+    VERBOS_SIN_RESULTADOS, BUSCAR_BORRAR,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
 }
 
@@ -374,6 +375,22 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "sem. {semanas}",
     ),
     // --- Vista Verbos (Ronda H) ---
+    ClaveTexto.VERBOS_SIN_RESULTADOS to mapOf(
+        Idioma.ES to "Ningún verbo coincide. Prueba con otra búsqueda.",
+        Idioma.EN to "No verb matches. Try another search.",
+        Idioma.DE to "Kein Verb passt. Versuche eine andere Suche.",
+        Idioma.FR to "Aucun verbe ne correspond. Essaie une autre recherche.",
+        Idioma.IT to "Nessun verbo corrisponde. Prova con un'altra ricerca.",
+        Idioma.PT to "Nenhum verbo corresponde. Tente outra busca.",
+    ),
+    ClaveTexto.BUSCAR_BORRAR to mapOf(
+        Idioma.ES to "Borrar búsqueda",
+        Idioma.EN to "Clear search",
+        Idioma.DE to "Suche löschen",
+        Idioma.FR to "Effacer la recherche",
+        Idioma.IT to "Cancella la ricerca",
+        Idioma.PT to "Limpar a busca",
+    ),
     ClaveTexto.BIBLIOTECA_VISTA_VERBOS to mapOf(
         Idioma.ES to "Verbos",
         Idioma.EN to "Verbs",
@@ -941,6 +958,8 @@ fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESA
 fun etiquetaAcercaDe(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_DE, idiomaInterfaz)
 fun etiquetaBibliotecaVistaVerbos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_VISTA_VERBOS, idiomaInterfaz)
 fun mensajeVerbosVacio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.VERBOS_VACIO, idiomaInterfaz)
+fun mensajeVerbosSinResultados(idiomaInterfaz: Idioma): String = texto(ClaveTexto.VERBOS_SIN_RESULTADOS, idiomaInterfaz)
+fun descripcionBorrarBusqueda(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BUSCAR_BORRAR, idiomaInterfaz)
 
 /** Nombre de una clase de verbo (`claseVerbo`) en el idioma de app; `null` si la app no la conoce (el verbo se ve igual, sin chip) o es `simple`. */
 fun etiquetaClaseVerbo(clase: String, idiomaInterfaz: Idioma): String? = when (clase) {

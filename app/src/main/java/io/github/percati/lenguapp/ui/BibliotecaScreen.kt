@@ -37,6 +37,8 @@ import io.github.percati.lenguapp.presentacion.contarClases
 import io.github.percati.lenguapp.presentacion.filtrarPorClases
 import io.github.percati.lenguapp.presentacion.lineaExtraVerbo
 import io.github.percati.lenguapp.presentacion.verbosDe
+import androidx.compose.material.icons.filled.Close
+import io.github.percati.lenguapp.presentacion.filtrarPorBusquedaVerbos
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -104,6 +106,8 @@ fun BibliotecaScreen(
     var busqueda by remember { mutableStateOf("") }
     // Vista Verbos: las clases elegidas (chips) son DE la pestana; sin persistencia.
     var clasesElegidas by remember(idiomaElegido) { mutableStateOf<Set<String>>(emptySet()) }
+    // La busqueda de la vista Verbos filtra mientras se escribe, sobre los ya filtrados por clase; sin persistencia.
+    var busquedaVerbos by remember(idiomaElegido) { mutableStateOf("") }
     // Vista: palabras y expresiones (la de siempre) o indice de habilidades. Sin persistencia: cada apertura arranca en la primera.
     var vista by remember { mutableStateOf(VistaBiblioteca.LEXICO) }
 
@@ -132,7 +136,9 @@ fun BibliotecaScreen(
         if (idioma == null || nivelDeVerbos == null) emptyList() else items.verbosDe(idioma, nivelDeVerbos)
     }
     val conteoClases = remember(verbos) { verbos.contarClases() }
-    val verbosFiltrados = remember(verbos, clasesElegidas) { verbos.filtrarPorClases(clasesElegidas) }
+    val verbosFiltrados = remember(verbos, clasesElegidas, busquedaVerbos, idiomaBase) {
+        verbos.filtrarPorClases(clasesElegidas).filtrarPorBusquedaVerbos(busquedaVerbos, idiomaBase)
+    }
 
     // El indice se arma solo si se esta mirando esa vista.
     val indiceHabilidades = if (idioma != null && vista == VistaBiblioteca.HABILIDADES) remember(idioma, habilidades) { habilidades(idioma) } else null
@@ -232,6 +238,21 @@ fun BibliotecaScreen(
                         nivelDeVerbos?.let {
                             Text("${etiquetaNivel(idiomaInterfaz)} ${it.name}", style = MaterialTheme.typography.labelLarge)
                         }
+                        // Busqueda (arriba de los chips): original y traduccion al idioma de app, mientras se escribe.
+                        if (verbos.isNotEmpty()) {
+                            OutlinedTextField(
+                                value = busquedaVerbos,
+                                onValueChange = { busquedaVerbos = it },
+                                label = { Text(etiquetaBibliotecaBuscar(idiomaInterfaz)) },
+                                singleLine = true,
+                                trailingIcon = if (busquedaVerbos.isEmpty()) null else ({
+                                    IconButton(onClick = { busquedaVerbos = "" }) {
+                                        Icon(Icons.Filled.Close, contentDescription = descripcionBorrarBusqueda(idiomaInterfaz))
+                                    }
+                                }),
+                                modifier = Modifier.fillMaxWidth(),
+                            )
+                        }
                         // Un solo grupo: la clase. Solo las que existen en los verbos de este idioma y nivel (P3);
                         // `simple` nunca es un chip; sin ninguno elegido se ven todos.
                         if (conteoClases.isNotEmpty()) {
@@ -251,6 +272,9 @@ fun BibliotecaScreen(
             if (vista == VistaBiblioteca.VERBOS) {
                 if (verbos.isEmpty()) {
                     item { Text(mensajeVerbosVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge) }
+                }
+                if (verbos.isNotEmpty() && verbosFiltrados.isEmpty()) {
+                    item { Text(mensajeVerbosSinResultados(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge) }
                 }
                 items(verbosFiltrados, key = { "verbo|${it.idioma}|${it.texto}" }) { verbo ->
                     val linea = verbo.lineaExtraVerbo(clasesElegidas) { etiquetaClaseVerbo(it, idiomaInterfaz) }

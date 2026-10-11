@@ -67,3 +67,28 @@ fun ItemBiblioteca.lineaExtraVerbo(clasesElegidas: Set<String>, etiquetaDeClase:
     if (separabilidad in clasesElegidas) return null
     return etiquetaDeClase(separabilidad)
 }
+
+/**
+ * Una cadena para comparar en la busqueda: minusculas, sin diacriticos (u = ü = Ü) y ß = ss. Asi `uber`
+ * encuentra «übernehmen» y `UBER` tambien.
+ */
+fun normalizarBusqueda(texto: String): String =
+    java.text.Normalizer.normalize(texto, java.text.Normalizer.Form.NFD)
+        .replace(Regex("\\p{Mn}+"), "")
+        .lowercase(java.util.Locale.ROOT)
+        .replace("ß", "ss")
+        .trim()
+
+/**
+ * Busqueda de la vista Verbos, MIENTRAS se escribe: por subcadena, insensible a mayusculas y diacriticos,
+ * sobre el original (idioma que se aprende) y sobre la traduccion al idioma de app. Sin datos nuevos: «machen»
+ * encuentra machen, aufmachen, zumachen, abmachen porque el texto los contiene. Vacia = no filtra.
+ */
+fun List<ItemBiblioteca>.filtrarPorBusquedaVerbos(consulta: String, idiomaBase: Idioma): List<ItemBiblioteca> {
+    val q = normalizarBusqueda(consulta)
+    if (q.isEmpty()) return this
+    return filter { v ->
+        normalizarBusqueda(v.texto).contains(q) ||
+            v.datosFila(idiomaBase).traduccion?.let { normalizarBusqueda(it).contains(q) } == true
+    }
+}
