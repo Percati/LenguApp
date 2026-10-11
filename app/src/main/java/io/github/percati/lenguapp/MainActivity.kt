@@ -1,11 +1,14 @@
 package io.github.percati.lenguapp
 
 import android.app.Activity
+import android.os.Build
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
+import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -81,7 +84,9 @@ import io.github.percati.lenguapp.ui.ContenidoSemanalScreen
 import io.github.percati.lenguapp.ui.EstadoGuardados
 import io.github.percati.lenguapp.ui.GuardadosScreen
 import io.github.percati.lenguapp.ui.PantallaSemana
+import io.github.percati.lenguapp.ui.AjustarIconosDeBarras
 import io.github.percati.lenguapp.ui.TemaLenguApp
+import io.github.percati.lenguapp.ui.margenesSuperiorYLateralesDelSistema
 import io.github.percati.lenguapp.ui.claveGuardado
 import io.github.percati.lenguapp.datos.cargarCalendarioDesdeAssets
 import io.github.percati.lenguapp.presentacion.IndiceHabilidades
@@ -150,6 +155,16 @@ class MainActivity : ComponentActivity() {
         // Pantalla de carga: tema Theme.LenguApp.Splash (fondo Papel, sin icono) -> Theme.LenguApp.
         installSplashScreen()
         super.onCreate(savedInstanceState)
+        // Pantalla completa (Ronda K): la app se dibuja bajo las barras del sistema y los insets se aplican en
+        // la raiz y en los scrolls (ui/BarrasSistema.kt). Los iconos de las barras los ajusta LenguAppApp segun el
+        // fondo del tema elegido. En horizontal el contenido llega hasta el borde del recorte de la camara y los
+        // margenes laterales lo apartan de el.
+        enableEdgeToEdge()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+            window.attributes = window.attributes.apply {
+                layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
+            }
+        }
         val ajustesIniciales = cargarAjustes(this)
         val nombresCalendario = nombresCalendarioDisponibles(this)
         val idiomasConContenido = idiomasConContenido(nombresCalendario)
@@ -352,6 +367,8 @@ internal fun LenguAppApp(
     }
 
     TemaLenguApp(familiaTema = ajustes.familiaTema, modoTema = ajustes.modoTema, fuente = ajustes.fuente) {
+        // Iconos de las barras del sistema legibles sobre el fondo del tema elegido (claro/oscuro, los 4 temas y el dinamico).
+        AjustarIconosDeBarras(MaterialTheme.colorScheme.background)
         // AJUSTES-FASE-8.md, B.1: Surface() sin `color` pinta con
         // colorScheme.surface (el 30% de la regla 60-30-10), no con
         // colorScheme.background (el 60%) -- por eso las tarjetas del
@@ -362,9 +379,11 @@ internal fun LenguAppApp(
             // Movimiento sutil: un fundido corto entre pantallas, sin deslizamientos. Compose escala sus
             // animaciones con la configuracion del sistema "Quitar animaciones" (duracion 0 = cambio
             // instantaneo): no hace falta leerla a mano.
+            // Arriba y a los costados (barra de estado, notch): una vez, aca. Abajo lo resuelve cada scroll.
             NavHost(
                 navController = navController,
                 startDestination = DESTINO_PRINCIPAL,
+                modifier = Modifier.margenesSuperiorYLateralesDelSistema(),
                 enterTransition = { fadeIn(tween(DURACION_TRANSICION_MS)) },
                 exitTransition = { fadeOut(tween(DURACION_TRANSICION_MS)) },
                 popEnterTransition = { fadeIn(tween(DURACION_TRANSICION_MS)) },

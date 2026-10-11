@@ -249,7 +249,7 @@ private fun FichaContenido(
           // Columna de lectura: en pantallas anchas el texto no se estira de borde a borde.
           Box(Modifier.fillMaxSize(), contentAlignment = Alignment.TopCenter) {
             Column(
-                modifier = Modifier.widthIn(max = ANCHO_LECTURA).fillMaxWidth().verticalScroll(rememberScrollState()).padding(16.dp),
+                modifier = Modifier.widthIn(max = ANCHO_LECTURA).fillMaxWidth().verticalScroll(rememberScrollState()).finDeScrollSobreBarras().padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones),
             ) {
                 Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -466,7 +466,7 @@ private fun SemanaEspecialContenido(
     val et: (String) -> String = { etiquetaSeccion(it, idiomaTexto) }
     Box(modifier.fillMaxSize(), contentAlignment = Alignment.TopCenter) {
     Column(
-        modifier = Modifier.widthIn(max = ANCHO_LECTURA).fillMaxWidth().verticalScroll(rememberScrollState()).padding(16.dp),
+        modifier = Modifier.widthIn(max = ANCHO_LECTURA).fillMaxWidth().verticalScroll(rememberScrollState()).finDeScrollSobreBarras().padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones),
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {

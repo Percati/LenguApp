@@ -31,13 +31,13 @@ fun AcercaDeScreen(
     onVolver: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    Column(modifier = modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
+    Column(modifier = modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             TextButton(onClick = onVolver) { Text("< ${etiquetaVolver(idiomaInterfaz)}") }
             Text(etiquetaAcercaDe(idiomaInterfaz), style = MaterialTheme.typography.headlineSmall)
         }
         Column(
-            modifier = Modifier.verticalScroll(rememberScrollState()),
+            modifier = Modifier.verticalScroll(rememberScrollState()).finDeScrollSobreBarras().padding(bottom = 16.dp),
             verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones),
         ) {
             Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {

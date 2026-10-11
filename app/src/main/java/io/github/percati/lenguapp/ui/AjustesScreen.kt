@@ -72,7 +72,7 @@ fun AjustesScreen(
     onAcercaDe: () -> Unit = {},
 ) {
     Column(
-        modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
+        modifier = modifier.verticalScroll(rememberScrollState()).finDeScrollSobreBarras().padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(24.dp),
     ) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {

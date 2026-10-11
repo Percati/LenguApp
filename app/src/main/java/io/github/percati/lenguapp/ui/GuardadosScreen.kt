@@ -109,7 +109,7 @@ fun GuardadosScreen(
     }
     val hayFiltrosQueQuitar = filtrosValidos != FiltrosGuardados()
 
-    Column(modifier = modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
+    Column(modifier = modifier.padding(start = 16.dp, top = 16.dp, end = 16.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             TextButton(onClick = onVolver) { Text("< ${etiquetaVolver(idiomaInterfaz)}") }
             Text(etiquetaGuardados(idiomaInterfaz), style = MaterialTheme.typography.headlineSmall)
@@ -144,7 +144,7 @@ fun GuardadosScreen(
                 Text(mensajeGuardadosVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge)
             } else {
                 Column(
-                    modifier = Modifier.verticalScroll(rememberScrollState()),
+                    modifier = Modifier.verticalScroll(rememberScrollState()).finDeScrollSobreBarras().padding(bottom = 16.dp),
                 ) {
                     filtrados.forEach { item ->
                         FilaGuardado(

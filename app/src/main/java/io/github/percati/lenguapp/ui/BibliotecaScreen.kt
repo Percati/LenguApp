@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -145,7 +146,7 @@ fun BibliotecaScreen(
     // El indice se arma solo si se esta mirando esa vista.
     val indiceHabilidades = if (idioma != null && vista == VistaBiblioteca.HABILIDADES) remember(idioma, habilidades) { habilidades(idioma) } else null
 
-    Column(modifier = modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
+    Column(modifier = modifier.padding(start = 16.dp, top = 8.dp, end = 16.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             TextButton(onClick = onVolver) { Text("< ${etiquetaVolver(idiomaInterfaz)}") }
             Text(etiquetaBiblioteca(idiomaInterfaz), style = MaterialTheme.typography.headlineSmall)
@@ -156,7 +157,8 @@ fun BibliotecaScreen(
             return@Column
         }
 
-        LazyColumn {
+        // La lista pasa por debajo de la barra de navegacion y termina con el relleno que deja la ultima fila a la vista.
+        LazyColumn(contentPadding = PaddingValues(bottom = paddingInferiorDelSistema().calculateBottomPadding() + 8.dp)) {
             item {
                 Column(verticalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.padding(bottom = espaciadoActual().entreItems)) {
                     ScrollableTabRow(selectedTabIndex = idiomas.indexOf(idioma).coerceAtLeast(0)) {
