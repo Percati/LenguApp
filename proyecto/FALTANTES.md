@@ -137,8 +137,8 @@ Ojo que son **dos ejes distintos** y solo uno está cerrado:
   un solo país: `nomás` → «nada más», `el laburo` → «el trabajo» y
   `¿Te copás con…?` → «¿Te animas a…?». R6 pasó de 236 a 0.
 - **usted / tú dentro del español: cerrado** (ver 6.1.2).
-- **El trato en los otros idiomas (*vous*/*Sie*/*Lei*): sigue abierto**, tal
-  como lo describe 6.1. Este pase fue solo del español.
+- **El trato en los otros idiomas (*vous*/*Sie*/*Lei*): cerrado** (ver 6.1.3,
+  11-oct-2026). Este pase fue solo del español.
 
 #### 6.1.2 — «usted» → «tú» y léxico neutro en español: ✅ hecho (Traducciones, 10-oct-2026)
 
@@ -192,6 +192,80 @@ resto de la oración (`¿Cómo paga?` → `¿Cómo pagas?`).
 posición de imperativo, y la lista corta de léxico), con las excepciones
 explícitas en `EXENTAS_R7`. R6 además sumó las formas de *vosotros*, que
 aparecían una vez («como ya sabéis» → «como ya saben»).
+
+#### 6.1.3 — *Sie* / *vous* / *Lei* → tú en alemán, francés e italiano: ✅ hecho (Traducciones, 11-oct-2026)
+
+Cierra 6.1 para el contenido ya generado de alemán e inglés. **1.207 cadenas
+de instrucción** en 122 archivos: **alemán 423**, **francés 515**,
+**italiano 269**. No fue cambiar el imperativo: cambió la persona del verbo
+en toda la oración, los pronombres, los posesivos y los reflexivos
+(`Schreiben Sie … Ihre` → `Schreib … deine`; `Concentrez-vous … votre
+famille` → `Concentre-toi … ta famille`; `Si concentri … la sua opinione` →
+`Concentrati … la tua opinione`).
+
+**Dónde sí y dónde no.** Solo los campos donde la app le habla al
+aprendiente: `mision`, `microtareas`, `autochequeo`, `promptCorreccion`,
+`notas`, `descripcion`, `subtitulo`, `requisitos`. Quedan fuera a propósito
+`redemittel`, `ejemplos`, `cuadroReferencia`, `contraste`,
+`erroresContrastivos` y `vocabulario`: ahí el registro formal puede ser el
+contenido que se enseña. Tampoco se toca lo que va entre « » ni entre
+`*…*`, salvo en alemán cuando el idioma de la instrucción es también el que
+se aprende: ahí la palabra marcada forma parte de la gramática de la frase y
+hay que conjugarla (`Was *bestellen* Sie gern?` → `Was *bestellst* du
+gern?`).
+
+**Cómo se comprueba: R9** en `verificar_consistencia.py` (regla P9), con
+`EXENTAS_R9` — 32 excepciones, cada una con su motivo — y `--autotest`. La
+regla detecta el 100% de lo que se corrigió, con 0 falsos positivos sobre el
+contenido actual.
+
+**Los tres detalles del francés que hubo que decidir:**
+
+- `votre` → `ton` o `ta` según el género del sustantivo, pero `ton` también
+  delante de vocal aunque el sustantivo sea femenino (`ton opinion`, `ton
+  école`, `ton équipe`).
+- Los sustantivos alemanes dentro de `*…*` se tratan como **masculinos**
+  (`ton *Schule*`, `ton *Arbeitszeit*`), que es el uso francés para palabras
+  extranjeras no asimiladas. Si se prefiere el género del alemán, es un pase
+  aparte de ~13 cadenas.
+- `rendez-vous` es un sustantivo, no un imperativo con pronombre: R9 lo
+  exceptúa en las dos posiciones del token.
+
+**Lo que R9 no puede ver (leer a ojo al escribir contenido nuevo).** En
+italiano la cortesía usa la 3.ª persona del indicativo, idéntica a una 3.ª
+persona real: `Scriva che cosa ha comprato ieri` (usted compró) y `che cosa
+ha detto il medico?` (lo dijo el médico) tienen la misma forma. **15 cadenas**
+de esa clase se arreglaron a mano porque ninguna regla las marcaba. Las que
+de verdad hablan de otra persona se dejaron como estaban y están en
+`EXENTAS_R9` con su motivo.
+
+**Otros dos casos que quedaron a propósito:**
+
+- `vous` de plural real (`Toi et un ami, vous voulez cuisiner…`): no es
+  cortesía, es sujeto plural. En `EXENTAS_R9`.
+- `Sie` como contenido en la ficha `DE-V08` (que enseña justamente `du`
+  frente a `Sie`) y las etiquetas `(du)` / `(Sie)` que marcan el registro
+  pedido en cada mensaje. En `EXENTAS_R9`.
+
+**Efecto colateral del schema.** El imperativo informal alemán es más corto
+que el de cortesía, y **11 `promptCorreccion` de núcleos `de` quedaron bajo
+el mínimo de 150 caracteres** que el schema le exige al original. Se
+alargaron en estilo de la casa, en los seis idiomas del campo, con una frase
+útil para un prompt de corrección (`Markier jeden Fehler einzeln.` /
+`Nenn zu jedem Fehler die Regel.`). Son los núcleos `DE-F01-B1`,
+`DE-F02-B1`, `DE-F07-B1`, `DE-F12-B1`, `DE-G01-A2`, `DE-G02-A2`,
+`DE-G04-A2`, `DE-G13-B1`, `DE-V01-A2`, `DE-V03-B1` y `DE-V05-B1`. Si se
+prefiere bajar el mínimo del schema en vez de alargar el texto, es una
+decisión de Code y estas 11 frases se pueden quitar.
+
+**Lo que sigue abierto:** los fragmentos alemanes marcados con `*…*` dentro
+de una instrucción en otro idioma siguen en formal (`*interessieren Sie
+sich*`, `*beschweren Sie sich*`, `*entscheiden Sie sich*`, `*fühlen Sie
+sich*`, `*treffen Sie sich*`, `*leisten Sie sich*`, `*informieren Sie
+sich*`). Son la expresión que se enseña, no instrucción, así que R9 no mira
+ahí. Si el criterio es que el aprendiente vea siempre `du`, hay que tocar
+`redemittel` y `vocabulario`, no las instrucciones — y eso cambia el lema
+que se enseña, así que es una decisión aparte.
 
 ## 7. Vocabulario atestiguado alemán — A1-C1 reconstruido, falta C2
 
@@ -272,24 +346,40 @@ segura: escribir Redemittel C2 nuevos desde cero, usando el manual solo como
 referencia de registro/nivel, nunca transcribiendo. Los 9 núcleos `fluency` de
 alemán C2 están todos en el mínimo (6); hay margen de 6 más por núcleo. Sin dueño.
 
-## 7.5 Ortografía suiza (ss vs ß) — ✅ cerrado, dos excepciones documentadas
+## 7.5 Ortografía suiza (ss vs ß) — ✅ cerrado, una sola excepción (revisado 11-oct-2026)
 
 Regla (`contenido/nucleos/DE-V08-B1.json`): en alemán suizo se escribe
-siempre `ss`, nunca `ß`. Se corrigió en tres tandas (núcleos por
-Apariciones, packs/ocurrencias por Packs, semanas de repaso por
-Apariciones) — 522/49/0 sin cambio de número en cada paso, cero `ß` fuera
-de las dos excepciones siguientes:
+siempre `ss`, nunca `ß`.
 
-- **`DE-V08-B1/B2/C1`** (43 instancias): la letra es el contenido
-  pedagógico del núcleo (enseña la propia regla), no un error.
-- **`contenido/nucleos/EN-*.json`, clave `de` de `contraste`/`erroresContrastivos`**
-  (58 instancias): ahí el alemán es el idioma de interfaz para un usuario
-  germanohablante (Alemania/Austria/Suiza indistintamente), no el alemán
-  suizo que se enseña — corresponde ortografía estándar (`ß`), y unificarla
-  a `ss` sería el error, no la corrección.
+**Cambio del 11-oct-2026 — ojo, revierte la segunda excepción que decía
+antes esta sección.** El pase R10 de Traducciones (prompt 19) pasó a `ss`
+las **90 cadenas** con eszett que quedaban (98 marcas, 53 archivos), y
+`verificar_consistencia.py` **R10** lo comprueba de acá en adelante. Queda
+una sola excepción, en `EXENTAS_R10` con su motivo:
 
-No queda ninguna instancia fuera de estas dos categorías. No reabrir salvo
-que aparezca un caso genuinamente distinto a los dos de arriba.
+- **La eszett como objeto de la explicación** (42 cadenas, fichas
+  `DE-V08-B1/B2/C1` en los seis idiomas): «Im Schweizer Hochdeutsch
+  schreibt man kein ß», «Kein ß im Text?», la grafía «ss/ß», y la columna
+  alemana del cuadro de `DE-V08-B2` (`Straße, groß, heißen`) que existe
+  justamente para contrastar con la suiza.
+
+**Lo que cambió respecto de la versión anterior de esta sección.** Antes
+había una segunda excepción: la clave `de` de `contraste` y
+`erroresContrastivos` en los núcleos `EN-*` conservaba `ß` con el argumento
+de que ahí el alemán es el **idioma de interfaz** para un usuario
+germanohablante (Alemania/Austria/Suiza), no el alemán suizo que se enseña.
+Ese argumento sigue siendo razonable, pero choca con dos cosas más nuevas:
+la sección 27 registró esas cadenas como deuda a corregir, y el prompt 19
+pidió `ss` en **todo** texto alemán salvo la letra como objeto. Se aplicó lo
+pedido: una sola regla, sin depender de qué papel cumple el alemán en cada
+campo.
+
+**Si se prefiere volver al criterio anterior**, son **29 cadenas** (28 de
+`contraste`, 1 de `erroresContrastivos`, todas en núcleos `EN-*`): hay que
+devolverles el `ß` y agregarlas a `EXENTAS_R10` con ese motivo. El resto de
+las 90 (notas, autochequeo, ejemplos, cuadros, descripciones, prompts y
+redemittel) no estaba exceptuado por la versión vieja de esta sección, así
+que ahí no hay nada que decidir.
 
 ## 7.6 Categorías de uso de los redemittel (`categoriasUso`) — 91% tageado
 
@@ -871,6 +961,8 @@ Requisitos ya aplicados al empezar: parche de Overview y tuteo de Traducciones c
 - Parche R8 verificado por Overview en clon fresco: 606 fichas, 56 semanas especiales, 0 con problemas; R1-R8 en 0; las 1370 cadenas cambiadas solo agregan « » (quitándolos, idénticas a las anteriores), mismos `*`, estructura JSON idéntica; el caso de `EN-F01-B1` («I think es neutral…») quedó como «I think» es neutral…. Assets regenerados.
 - Decisión de Traducciones aceptada: `titulo` no se marca (tope de 80 caracteres); `*x*` sin « » queda como está (en este repo `*x*` es también énfasis del idioma de destino; ~9558 casos, separar los dos usos queda anotado en 14.1).
 - Deuda hallada: (a) trato formal en las instrucciones de alemán (~480 cadenas), francés (~500) e italiano (~270), contra la decisión «tú en todo»; (b) ~88 cadenas con `ß` en texto alemán, contra la ortografía suiza. Va a Traducciones como `prompts/19-traducciones-registro-y-ss.md` (R9 y R10). No bloquea la prueba con testers hispanohablantes.
+- **Las dos deudas están cerradas (Traducciones, 11-oct-2026).** 1.207 cadenas de registro (de 423, fr 515, it 269) y 90 cadenas con eszett (98 marcas), 122 archivos de `contenido/`. `componer.py` da 606/56/0 y `verificar_consistencia.py` da R1-R10 en 0. Las reglas nuevas son **R9** (trato formal, con 32 excepciones motivadas) y **R10** (eszett, con 42), más `--autotest` para que no queden excepciones de más. Detalle en 6.1.3 y 7.5.
+- Tres cosas que quedaron decididas en ese pase y conviene saber antes de revisarlo: (1) 11 `promptCorreccion` de núcleos `de` se alargaron una frase en los seis idiomas porque el imperativo informal los dejaba bajo el mínimo de 150 del schema (6.1.3); (2) el pase de eszett **revierte** la segunda excepción que tenía 7.5 — 29 cadenas de `contraste` en núcleos `EN-*` que antes conservaban `ß` a propósito; (3) los fragmentos alemanes marcados con `*…*` dentro de una instrucción en otro idioma siguen en formal porque son la expresión que se enseña, no instrucción (6.1.3).
 
 ## 28. Code Ronda F2 — ✅ implementada (Code, oct 2026), versión 0.2.2
 

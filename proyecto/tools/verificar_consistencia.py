@@ -40,6 +40,25 @@ Sale con codigo 1 si hay algun error. Reglas (ver REGLAS-PREVENCION.md):
       ninguna cadena espanola lleva un imperativo de usted en posicion de
       imperativo, ni los peninsularismos de la lista corta. Las excepciones
       son explicitas (EXENTAS_R7) y cada una dice por que. Ver FALTANTES 6.1.1.
+
+  R9  El texto de INSTRUCCION de aleman, frances e italiano trata al
+      aprendiente de TU (decision de Fer del 10-10-2026: tu en todos los
+      idiomas). Se revisan solo los campos donde la app le habla al
+      aprendiente (CAMPOS_R9) y NO las ramas de contenido ensenado
+      (PROHIBIDAS_R9: redemittel, ejemplos, cuadroReferencia, contraste,
+      erroresContrastivos, vocabulario), donde el registro formal puede ser
+      justamente lo que se ensena. Tampoco se mira dentro de « » ni de *…*:
+      ahi va el idioma que se aprende.
+
+      Limite conocido: en italiano la cortesia usa la 3a persona del
+      indicativo ('che cosa ha comprato?'), identica a una 3a persona real
+      ('che cosa ha detto il medico?'). La regla no puede distinguirlas y no
+      las marca; las 15 cadenas de esa clase se arreglaron a mano en oct 2026
+      y hay que revisarlas a ojo al escribir contenido nuevo (FALTANTES 6.1).
+
+  R10 Ortografia suiza: ninguna cadena lleva ß. Las excepciones son las
+      cadenas donde la eszett es el objeto de la explicacion (la ficha
+      DE-V08 y las notas sobre «ss/ß»), en EXENTAS_R10 con su motivo.
 """
 import argparse, glob, json, os, re, sys
 
@@ -361,6 +380,191 @@ def revisar_r8(d, nom, errores):
             errores.append(f"R8 {nom}: '{m.group(1)}' en {ruta[-1]} sin « »: {t[:60]}")
 
 
+# --------------------------------------------------------------------------
+# R9: trato formal en el texto de instruccion de aleman, frances e italiano.
+# --------------------------------------------------------------------------
+# Campos donde la app le habla al aprendiente.
+CAMPOS_R9 = ("mision", "microtareas", "autochequeo", "promptCorreccion", "notas",
+             "descripcion", "subtitulo", "requisitos", "consigna", "entregable",
+             "criterios", "texto", "pista")
+# Ramas que NO se miran: ahi el registro formal es contenido ensenado.
+PROHIBIDAS_R9 = ("redemittel", "ejemplos", "cuadroReferencia", "contraste",
+                 "erroresContrastivos", "vocabulario")
+
+# Aleman: pronombres y posesivos de cortesia.
+R9_DE = re.compile(r"\b(Sie|Ihnen|Ihre[mnrs]?|Ihr)\b")
+
+# Frances: vous/votre/vos y toda forma en -ez (imperativo o presente de
+# cortesia). FR_NO_VERBO son las palabras en -ez que no son verbos.
+R9_FR = re.compile(r"\b([Vv]ous|[Vv]otre|[Vv]os|[Vv]ôtres?)\b|\b(\w+ez)\b")
+FR_NO_VERBO = {"chez", "assez", "nez"}
+
+# Italiano, cuatro piezas:
+# a) pronombre y posesivo de cortesia. El posesivo aparece en mayuscula
+#    ('Sua madre') y en minuscula ('la sua opinione'); en minuscula coincide
+#    con el posesivo de 3a persona, asi que se marca igual y las pocas
+#    cadenas que de verdad hablan de otra persona van en EXENTAS_R9.
+R9_IT_PRON = re.compile(r"\b(Lei|[Ss]uo|[Ss]ua|[Ss]uoi|[Ss]ue)\b")
+# b) congiuntivo de cortesia inequivoco: la forma de tu seria otra.
+IT_UNAMB = ("Scriva|Riscriva|Descriva|Risponda|Legga|Rilegga|Prenda|Scelga|Faccia|"
+            "Metta|Vada|Aggiunga|Corregga|Ripeta|Chieda|Veda|Venga|Tenga|Ponga|"
+            "Esponga|Proponga|Riassuma|Decida|Reagisca|Esegua|Traduca|Dia|"
+            "Richieda|Concluda|Riprenda|Discuta|"
+            "Esprima|Rifletta|Rimetta|Distingua|Deduca|Riconosca|Sostituisca|"
+            "Inserisca|Costruisca|Finisca|Ammetta")
+# c) congiuntivo de los verbos en -are: coincide con el presente de tu ('tu
+#    parli'), asi que solo cuenta en posicion de imperativo.
+IT_AMB = ("Parli|Controlli|Verifichi|Racconti|Usi|Annoti|Confronti|Segni|Immagini|"
+          "Registri|Spieghi|Eviti|Noti|Pensi|Completi|Elenchi|Provi|Colleghi|"
+          "Formuli|Cerchi|Guardi|Ascolti|Ordini|Termini|Inizi|Continui|Partecipi|"
+          "Prepari|Confermi|Giustifichi|Trasformi|Riformuli|Compili|Osservi|"
+          "Sottolinei|Ripassi|Cambi|Marchi|Indichi")
+PRE_IMP_IT = (r"(?:^|(?<=[:.!?;—] )|(?<=, )|(?<=\be )|(?<=\bo )|(?<=\bpoi )"
+              r"|(?<=\bPoi )|(?<=\bNon )|(?<=\bnon ))")
+# 'non' no entra aqui: 'che non usi piu' es presente de 2a persona correcto.
+PRE_IMP_AMB = (r"(?:^|(?<=[:.!?;—] )|(?<=, )|(?<=\be )|(?<=\bo )|(?<=\bpoi )"
+               r"|(?<=\bPoi ))")
+R9_IT_AMB = re.compile(PRE_IMP_AMB + r"(" + IT_AMB + r")\b", re.IGNORECASE)
+# En minuscula la forma inequivoca solo es cortesia detras de 'non', de un
+# pronombre atono ('Gli dia', 'si corregga') o al principio de la cadena.
+R9_IT_UNAMB = re.compile(
+    r"\b(" + IT_UNAMB + r")\b|" + PRE_IMP_IT + r"[Nn]on\s+(" + IT_UNAMB.lower() + r")\b|"
+    r"\b(?:[GgMmTtSsCcVv]li|[Ll]e|[Ll]o|[Ll]a|mi|si|ci|ne)\s+(" + IT_UNAMB.lower() + r")\b|"
+    r"^(" + IT_UNAMB.lower() + r")\b")
+# d) reflexivo de cortesia.
+R9_IT_REFL = re.compile(r"\b[Ss]i\s+(concentri|eserciti|assicuri|prepari|fermi|"
+                        r"abitui|ricordi|informi|limiti|registri)\b")
+
+EXENTAS_R9 = {
+    "Können Sie…? ist die einfachste höfliche Bitte.": "DE-V08: la forma de cortesia es el contenido que se ensena",
+    "Könnten Sie…? ist die höflichste einfache Bitte auf B1.": "DE-V08: la forma de cortesia es el contenido que se ensena",
+    "Auf B1 wird die Wahl zwischen du und Sie sicher getroffen: Sie bei Fremden und in formellen Situationen, du bei Freunden und Familie. Feinere Register-Unterschiede kommen erst später — hier zählt vor allem, nicht mitten im Gespräch zu wechseln.": "DE-V08: describe el contraste du/Sie",
+    "Sie wird immer grossgeschrieben, auch mitten im Satz.": "DE-V08: regla ortografica sobre el pronombre Sie",
+    "Im Zweifel ist es höflicher, mit Sie zu beginnen, als zu früh zu duzen.": "DE-V08: consejo sobre cuando usar Sie",
+    "Ist Sie durchgehend grossgeschrieben?": "DE-V08: autochequeo sobre la ortografia de Sie",
+    "Habe ich nicht ohne Grund zwischen du und Sie gewechselt?": "DE-V08: autochequeo sobre el cambio de registro",
+    "Habe ich mindestens ein Beispiel für du UND eines für Sie gegeben?": "DE-V08: autochequeo que pide un ejemplo de cada registro",
+    "Wie geht's? ist informell; die formelle Version ist wie geht es Ihnen?": "contrasta la version informal con la formal",
+    "Du oder Sie beim Thema Umwelt": "subtitulo de la ficha du/Sie",
+    "Du oder Sie beim Thema Gesundheit": "subtitulo de la ficha du/Sie",
+    "Toi et un ami, vous voulez cuisiner ensemble le week-end. Écris la conversation.": "'vous' con sujeto plural (toi et un ami), no es cortesia",
+    "Toi et un ami, vous voulez faire quelque chose ensemble ce week-end. Écris la conversation.": "'vous' con sujeto plural (toi et un ami), no es cortesia",
+    "Konzentrier dich ausschliesslich auf die Wahl zwischen du und Sie. Prüf die Grossschreibung von Sie und die Konsistenz im Text. Schreib den Text nicht neu.": "DE-V08: el prompt habla justamente de la eleccion du/Sie",
+    "Schreib zwei kurze Nachrichten: eine an deine Nachbarin (Sie) und eine an einen Freund (du). Es geht um den Müll im Haus.": "DE-V08: '(Sie)' y '(du)' etiquetan el registro pedido en cada mensaje",
+    "Eine Kollegin ist überfordert. Schreib ihr eine Nachricht (du) und eine E-Mail an den Chef (Sie).": "'(Sie)' y '(du)' etiquetan el registro pedido en cada mensaje",
+    "Auf B1 wird die Wahl zwischen du und Sie sicher getroffen: Sie bei Fremden und in formellen Situationen, du bei Freunden und Familie. Feinere Register-Unterschiede kommen erst später — hier zählt vor allem, die Grundregel richtig anzuwenden.": "DE-V08: describe el contraste du/Sie (variante de la descripcion)",
+    "Il genere e il numero del pronome relativo dipendono dall’antecedente; il caso dipende dalla sua funzione nella frase relativa.": "'la sua funzione' = del pronombre relativo, no del lector",
+    "Ho descritto un luogo con la sua atmosfera e non solo con dei fatti?": "'la sua atmosfera' = del lugar",
+    "Ho usato l’espressione per la sua funzione corretta e non semplicemente come un saluto qualsiasi?": "'la sua funzione' = de la expresion",
+    "Concentrati solo sui «phrasal verbs» quotidiani. Controlla la preposizione usata in ciascuno e suggerisci un «phrasal verb» quando al suo posto è stato usato un verbo formale di una sola parola. Non riscrivere il testo.": "'al suo posto' = en lugar del verbo formal",
+    "Scrivi un messaggio a un amico: il suo cellulare non funziona.": "'il suo cellulare' = del amigo",
+    "Chiedi a qualcuno *What do you think?* e scrivi la sua risposta.": "'la sua risposta' = de la otra persona",
+    "Tua nonna ha un nuovo smartphone ed è preoccupata per i suoi dati. Scrivile un breve messaggio con dei consigli.": "'i suoi dati' = de la abuela",
+    "Un amico ha litigato con la sua compagna. Dagli un consiglio.": "'la sua compagna' = la pareja del amigo",
+    "Un amico si trasferisce dalla Germania a Zurigo. Spiegagli, con un elenco di consigli, che cosa deve dire al suo operatore di telefonia mobile.": "'al suo operatore' = del amigo",
+    "Auf A2 verwendest du feste Wendungen fürs Einkaufen, den Kauf von Fahrkarten und das Vereinbaren von Terminen. Es geht darum, diese alltäglichen Situationen zu bewältigen, nicht um freie Sprachproduktion. Sie gehören zu den häufigsten realen Situationen auf diesem Niveau.": "'Sie' de tercera persona del plural (las expresiones), no cortesia",
+    "Auf A2 lernst du die grundlegendsten alltäglichen «Phrasal Verbs»: «get up, sit down, come in». Sie werden ständig in alltäglichen Anweisungen und Gesprächen verwendet. Vielfältigere «Phrasal Verbs» mit ihren Präpositionen kommen auf höheren Niveaus.": "'Sie' de tercera persona del plural (los phrasal verbs / los conectores / las expresiones), no cortesia",
+    "Sie werden ständig zu Hause, in der Schule und bei der Arbeit verwendet.": "'Sie' de tercera persona del plural (los phrasal verbs / los conectores / las expresiones), no cortesia",
+    "Auf B1-Niveau lernst du die häufigsten alltäglichen «phrasal verbs»: «get up, look for, find out». Sie werden im gesprochenen Englisch ständig verwendet; wer sie zugunsten formeller Einwortverben vermeidet, klingt im Alltag steif und unnatürlich.": "'Sie' de tercera persona del plural (los phrasal verbs / los conectores / las expresiones), no cortesia",
+    "Auf B1-Niveau verknüpfst du Ideen mit einfachen Konnektoren: «and, but, so, because». Sie sind die grundlegenden Bausteine, aus denen später auf B2- und C1-Niveau ein breiteres Repertoire entsteht, bei dem Register und Nuancen wichtiger werden.": "'Sie' de tercera persona del plural (los phrasal verbs / los conectores / las expresiones), no cortesia",
+    "Scrivi un breve dialogo: ordini del cibo. Con *order*.": "'ordini' es presente de 2a persona dentro de la escena (vos pedis comida), no imperativo de cortesia: la frase ya trata de tu"
+}
+
+EXENTAS_R10 = {
+    "Im Schweizer Hochdeutsch schreibt man kein ß, immer ss.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Swiss Standard German does not use ß; it always uses ss.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "En el alemán estándar suizo no se escribe «ß», siempre se usa «ss».": "la eszett es el objeto de la explicacion (DE-V08)",
+    "En suisse standard, on n’écrit pas « ß » ; on utilise toujours « ss ».": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Nel tedesco standard svizzero non si usa «ß»: si scrive sempre «ss».": "la eszett es el objeto de la explicacion (DE-V08)",
+    "No alemão-padrão suíço não se usa «ß»; usa-se sempre «ss».": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Ein ß in einem Schweizer Text verwenden.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Using ß in a Swiss text.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Usar «ß» en un texto suizo.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Employer « ß » dans un texte suisse.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Usare «ß» in un testo svizzero.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Usar «ß» em um texto suíço.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Kein ß im Text?": "la eszett es el objeto de la explicacion (DE-V08)",
+    "No ß in the text?": "la eszett es el objeto de la explicacion (DE-V08)",
+    "¿No hay ningún «ß» en el texto?": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Pas de « ß » dans le texte ?": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Nessun «ß» nel testo?": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Nenhum «ß» no texto?": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Konzentrier dich ausschliesslich auf die Helvetismen. Prüf die ss/ß-Schreibung und ob die Wörter korrekt als Standard eingesetzt sind. Schreib den Text nicht neu.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Focus exclusively on the Helvetisms. Check the ss/ß spelling and whether the words are correctly used as standard language. Do not rewrite the text.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Concéntrate exclusivamente en los helvetismos. Revisa la escritura «ss/ß» y si las palabras se usan correctamente como lengua estándar. No reescribas el texto.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Concentre-toi exclusivement sur les helvétismes. Vérifie l’orthographe « ss/ß » et que les mots sont correctement employés comme langue standard. Ne réécris pas le texte.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Concentrati esclusivamente sugli elvetismi. Controlla la grafia «ss/ß» e che le parole siano usate correttamente come lingua standard. Non riscrivere il testo.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Concentre-se exclusivamente nos helvetismos. Verifique a grafia «ss/ß» e se as palavras são usadas corretamente como língua padrão. Não reescreva o texto.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Straße, groß, heißen": "columna alemana del cuadro, frente a la suiza: muestra la grafia con eszett",
+    "**kein ß in CH**": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Das **ß existiert im Schweizer Standard nicht**. Immer *ss*. Das ist Norm, nicht Nachlässigkeit.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Ein ß in einem Schweizer Dokument.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Kein einziges ß im Text?": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Konzentrieren Sie sich ausschliesslich auf die Schweizer Standardvarietät. (1) Markieren Sie jeden Helvetismus und sagen Sie, ob er Standard oder Mundart ist. (2) Prüfen Sie die ss/ß-Schreibung. (3) Markieren Sie bundesdeutsche Formen, die in einem Schweizer Protokoll auffallen würden. (4) Ist das Register für ein Protokoll formell genug? Schreiben Sie den Text nicht neu.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "kein ß, immer ss": "la eszett es el objeto de la explicacion (DE-V08)",
+    "ß in Standardtexten": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Das fehlende ß ist in der Schweiz Norm, nicht Nachlässigkeit, und gilt für alle Textsorten, auch sehr formelle.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Italienischsprachige aus dem Tessin kennen viele Schweizer Verwaltungsbegriffe bereits aus dem Schweizer Italienisch (trattanda – Traktandum). Für alle Italienischsprachigen gilt: Die Deutschschweizer Schreibkonventionen (ss statt ß, feste Formeln in Protokollen und Behördenbriefen) sind ein eigenes Register neben dem Wortschatz.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Gli italofoni del Ticino conoscono già molti termini amministrativi svizzeri dallo svizzero italiano, per esempio «trattanda» – «Traktandum». Per tutti gli italofoni vale però che le convenzioni scritte della Svizzera tedesca («ss» invece di «ß», formule fisse nei verbali e nelle lettere ufficiali) costituiscono un registro specifico oltre al lessico.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Französischsprachige aus der Romandie kennen die Schweizer Institutionen und ihre Begriffe bereits («votation» – Abstimmung, «Conseil fédéral» – Bundesrat). Neu sind die Deutschschweizer Schreibkonventionen (ss statt ß, feste Formeln in Protokollen) und Begriffe wie Traktandum oder Pendenz.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Les francophones de Suisse romande connaissent déjà les institutions suisses et leur terminologie («votation» – «Abstimmung», «Conseil fédéral» – «Bundesrat»). Ce qui est nouveau, ce sont les conventions écrites de Suisse alémanique («ss» au lieu de «ß», formules fixes dans les procès-verbaux) et des termes comme «Traktandum» ou «Pendenz».": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Portugiesischsprachige kennen durch das europäische und das brasilianische Portugiesisch zwei Standardvarietäten mit eigenem Wortschatz, das Prinzip einer nationalen Varietät ist also vertraut. Neu sind die konkreten Deutschschweizer Konventionen (ss statt ß, Traktandum, Pendenz, feste Formeln in Behördenbriefen).": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Falantes de português conhecem, pelo português europeu e brasileiro, duas variedades-padrão com vocabulário próprio; portanto, o princípio de uma variedade nacional é familiar. A novidade são as convenções concretas do alemão suíço («ss» em vez de «ß», «Traktandum», «Pendenz», fórmulas fixas em cartas administrativas).": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Englischsprachige kennen nationale Standardvarietäten (britisches und amerikanisches Englisch), die Idee eines eigenen Schweizer Standards ist also vertraut. Neu sind die konkreten Deutschschweizer Konventionen (ss statt ß, Traktandum, Pendenz, feste Formeln in Protokollen und Behördenbriefen).": "la eszett es el objeto de la explicacion (DE-V08)",
+    "English speakers are familiar with national standard varieties (British and American English), so the idea of a distinct Swiss standard is familiar. What is new are the specific Swiss German conventions: «ss» instead of «ß», words such as «Traktandum» and «Pendenz», and fixed formulas in minutes and official correspondence.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Kein ß im gesamten Text?": "la eszett es el objeto de la explicacion (DE-V08)"
+}
+
+R10 = re.compile("\u00df")
+
+
+def _enmascarar_r9(t):
+    """Tapa « » y *…*: ahi dentro va el idioma que se aprende."""
+    t = re.sub("\u00ab[^\u00bb]*\u00bb", lambda m: " " * len(m.group(0)), t)
+    return re.sub(r"\*\*?[^*]+\*\*?", lambda m: " " * len(m.group(0)), t)
+
+
+def _es_instruccion(ruta):
+    if any(isinstance(k, str) and k in PROHIBIDAS_R9 for k in ruta):
+        return False
+    return any(isinstance(k, str) and k in CAMPOS_R9 for k in ruta)
+
+
+def marca_r9(idi, t):
+    """Formas de cortesia halladas en un texto de instruccion."""
+    s = _enmascarar_r9(t)
+    out = []
+    if idi == "de":
+        out = [m.group(0) for m in R9_DE.finditer(s)]
+    elif idi == "fr":
+        for m in R9_FR.finditer(s):
+            g = m.group(0)
+            low = g.lower()
+            if low in FR_NO_VERBO:
+                continue
+            # 'rendez-vous' es un sustantivo, no imperativo + pronombre
+            if low == "rendez" and s[m.end():m.end() + 5].startswith("-vous"):
+                continue
+            if low == "vous" and s[max(0, m.start() - 7):m.start()].endswith("rendez-"):
+                continue
+            out.append(g)
+    elif idi == "it":
+        for rx in (R9_IT_PRON, R9_IT_UNAMB, R9_IT_AMB, R9_IT_REFL):
+            out += [m.group(0).strip() for m in rx.finditer(s)]
+    return out
+
+
+def revisar_r9_r10(d, nom, errores):
+    for ruta, t in _textos_con_ruta(d):
+        idi = ruta[-1] if ruta and isinstance(ruta[-1], str) else None
+        if idi in ("de", "fr", "it") and _es_instruccion(ruta) and t not in EXENTAS_R9:
+            m = marca_r9(idi, t)
+            if m:
+                errores.append(f"R9 {nom}: trato formal '{m[0]}' en {'/'.join(str(x) for x in ruta)}: {t[:60]}")
+        if R10.search(t) and t not in EXENTAS_R10:
+            errores.append(f"R10 {nom}: eszett en {'/'.join(str(x) for x in ruta)}: {t[:60]}")
+
+
 def textos_es(o, ruta=""):
     """Cadenas que son espanol: su camino TERMINA en la clave 'es'.
 
@@ -379,10 +583,79 @@ def textos_es(o, ruta=""):
             yield from textos_es(x, ruta)
 
 
+# --------------------------------------------------------------------------
+# Autotest de R9 y R10: casos que DEBEN marcarse y casos que NO.
+# Se corre con --autotest y no toca el contenido.
+# --------------------------------------------------------------------------
+CASOS_R9 = [
+    # (idioma, texto, debe_marcar)
+    ("de", "Schreiben Sie fünf Sätze über Ihre Ferien.", True),
+    ("de", "Erzählen Sie, wie es Ihnen gefallen hat.", True),
+    ("de", "Schreib fünf Sätze über deine Ferien.", False),
+    ("de", "Erzähl, wie es dir gefallen hat.", False),
+    ("de", "Die Konnektoren sind einfach; «and, but» kommen zuerst.", False),
+    ("fr", "Écrivez cinq phrases sur vos vacances.", True),
+    ("fr", "Concentrez-vous sur l'ordre des mots.", True),
+    ("fr", "Écris cinq phrases sur tes vacances.", False),
+    ("fr", "Concentre-toi sur l'ordre des mots.", False),
+    ("fr", "parle pendant 90 secondes d'un rendez-vous chez le médecin", False),
+    ("fr", "Il y en a assez pour deux.", False),
+    ("it", "Scriva cinque frasi sulle sue vacanze.", True),
+    ("it", "Si concentri sull'ordine delle parole.", True),
+    ("it", "Non riscriva il testo.", True),
+    ("it", "Gli dia un consiglio.", True),
+    ("it", "Scrivi cinque frasi sulle tue vacanze.", False),
+    ("it", "Concentrati sull'ordine delle parole.", False),
+    ("it", "Non riscrivere il testo.", False),
+    ("it", "A livello A2 si esprime accordo con «das stimmt». Si tratta di una formula.", False),
+    ("it", "Verifica che la formula sia chiara e cortese.", False),
+    ("it", "60 secondi: una *Anwendung* che non usi più.", False),
+    # ambiguedad conocida: 'ordini' en posicion de imperativo parece cortesia
+    # pero aqui es presente de 2a persona dentro de la escena; se resuelve
+    # con la excepcion explicita, no con la regla.
+    ("it", "Scrivi un breve dialogo: ordini del cibo. Con *order*.", False),
+]
+CASOS_R10 = [
+    ("Das Haus wurde vor dreißig Jahren gebaut.", True),
+    ("Das Haus wurde vor dreissig Jahren gebaut.", False),
+    ("Im Schweizer Hochdeutsch schreibt man kein ß, immer ss.", False),  # exenta
+]
+
+
+def autotest():
+    fallos = []
+    for idi, t, debe in CASOS_R9:
+        hay = bool(marca_r9(idi, t)) and t not in EXENTAS_R9
+        if hay != debe:
+            fallos.append(f"R9 {idi}: esperaba {debe}, dio {hay}: {t[:60]}")
+    for t, debe in CASOS_R10:
+        hay = bool(R10.search(t)) and t not in EXENTAS_R10
+        if hay != debe:
+            fallos.append(f"R10: esperaba {debe}, dio {hay}: {t[:60]}")
+    # ninguna excepcion puede estar de mas: todas tienen que disparar la regla
+    for t in EXENTAS_R9:
+        if not any(marca_r9(i, t) for i in ("de", "fr", "it")):
+            fallos.append(f"EXENTAS_R9 sobrante (la regla ya no la marca): {t[:60]}")
+    for t in EXENTAS_R10:
+        if not R10.search(t):
+            fallos.append(f"EXENTAS_R10 sobrante (no lleva eszett): {t[:60]}")
+    print(f"autotest R9/R10: {len(CASOS_R9) + len(CASOS_R10)} casos, "
+          f"{len(EXENTAS_R9)} + {len(EXENTAS_R10)} excepciones, {len(fallos)} fallos")
+    for f in fallos:
+        print(" -", f)
+    return 1 if fallos else 0
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--build", required=True, help="salida de componer.py")
+    ap.add_argument("--build", help="salida de componer.py")
+    ap.add_argument("--autotest", action="store_true",
+                    help="prueba R9/R10 contra casos fijos y sale")
     a = ap.parse_args()
+    if a.autotest:
+        sys.exit(autotest())
+    if not a.build:
+        ap.error("hace falta --build (o --autotest)")
     errores = []
 
     # R1
@@ -454,6 +727,7 @@ def main():
             if m:
                 errores.append(f"R7 {nom}: lexico peninsular '{m.group(0)}' en: {t[:70]}")
         revisar_r8(d, nom, errores)
+        revisar_r9_r10(d, nom, errores)
         for r in d.get("redemittel", []) if isinstance(d, dict) else []:
             for c in r.get("categoriasUso") or []:
                 usadas.add(c)
