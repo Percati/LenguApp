@@ -1,5 +1,7 @@
 # Prompt para la conversación «Verbos» — taxonomía cerrada, esquema y etiquetado de verbos para la Biblioteca
 
+> **Requisito previo:** esta conversación necesita el repo. Conectá la raíz del repo como carpeta (o usá Claude Code dentro del repo) antes de pegar el prompt. Sin repo no hay inventario posible: no inventes números, pará y avisá.
+
 Leé `CLAUDE.md`, `REGLAS-PREVENCION.md` (P3, P5, P7), `FALTANTES.md` 14, 20, 28 y 29, y el esquema `schema/ficha.schema.json` (campo `vocabulario[]` y `redemittel[].categoriasUso`). Trabajás sobre `proyecto/contenido/`, `proyecto/schema/` y `proyecto/tools/verificar_consistencia.py` (nunca `build/` ni `assets/`; Overview regenera los assets). No pushees. Partí del `origin/main` actual (Code F2 y patch 19 ya integrados).
 
 ## Qué se decidió (Fer, 11-oct-2026)
@@ -28,6 +30,11 @@ Con un script reproducible (guardalo en `tools/`): extraé de `vocabulario` y `r
 - Esquema: en `vocabulario[].items` agregá `claseVerbo` (array de strings, opcional, `minItems` 1 cuando está) y reutilizá `reccion`. En EN la separabilidad **es** la clase (`phrasal-separable` / `phrasal-inseparable`), no un booleano aparte. Para `redemittel` decidí si hace falta el mismo campo o si los verbos solo viven en `vocabulario` (recomendación de Overview: solo `vocabulario`, y los redemittel verbales se quedan como están).
 - Verificador (R11, nueva): `claseVerbo` solo con valores de la lista cerrada de **ese idioma**; en DE, `reccion` obligatoria para `mit-Praposition`, con formato controlado (`auf + Akk`, `mit + Dat`, `an + Akk/Dat`…) y lista cerrada de preposiciones; en EN, `phrasal-*` solo si la forma tiene partícula. Demostrá con casos negativos que marca el 100 % de lo malo y **0 falsos positivos** sobre lo bueno.
 - Actualizá `componer.py` solo si hace falta para que los campos nuevos pasen; **no** generes todavía el índice de verbos (lo hace Overview después).
+
+## Reglas de método (cerradas por Overview tras la revisión de esta conversación)
+1. **Tabla maestra.** No etiquetes ficha por ficha. Construí una tabla maestra `(idioma, forma normalizada) → claseVerbo[], reccion` (archivo versionado, p. ej. `contenido/verbos/maestra-de.json` y `maestra-en.json`) y **aplicala a todas las repeticiones** de ese verbo en las fichas. R11 verifica además que dos apariciones del mismo verbo nunca tengan etiquetas distintas.
+2. **Criterio operativo EN, fijado antes de etiquetar.** `phrasal-*`: la partícula cambia el significado de forma no composicional (*give up*, *look after*, *get on*). `verbo-preposicion`: el verbo solo selecciona la preposición y el significado se mantiene (*depend on*, *listen to*). Separable si el objeto puede ir entre verbo y partícula (*turn the light off*). Si en el inventario los dudosos entre `phrasal-inseparable` y `verbo-preposicion` superan ~20 %, **fusioná las dos clases** y decilo.
+3. **Listas cerradas en el esquema, sin heurística.** Lista de partículas EN (*up, down, out, off, on, in, over, away, back, through, along, around, into, about, across, apart, ahead…*, la cerrás vos) y lista de preposiciones DE para `reccion`. R11 se apoya solo en esas listas.
 
 ## Tarea 4 — Etiquetar
 - Etiquetá **todos** los ítems verbales reutilizables, en la **fuente** (nucleos/packs/ocurrencias). Leélos uno por uno: no clasifiques por heurística sola. Un `sich` suelto no es reflexivo si es recíproco o fijo (anotá los casos).
