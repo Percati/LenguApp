@@ -10,7 +10,7 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.io.File
 
-/** Busqueda de la vista Verbos (Ronda H, tarea 2), sobre los assets reales. */
+/** Busqueda de la vista Verbos (Ronda H, tarea 2; con nucleos y colocaciones desde la J), sobre los assets reales. */
 class BusquedaVerbosTest {
 
     private fun assets(): File = listOf(File("src/main/assets"), File("app/src/main/assets")).first { it.isDirectory }
@@ -22,7 +22,7 @@ class BusquedaVerbosTest {
         )
     }
 
-    private fun todosLosVerbosDe(idioma: Idioma) = items.verbosDe(idioma)
+    private fun todosLosVerbosDe(idioma: Idioma) = items.entradasVerbo(idioma)
 
     @Test
     fun `la normalizacion ignora mayusculas y diacriticos`() {
@@ -35,10 +35,10 @@ class BusquedaVerbosTest {
     @Test
     fun `buscar uber o UBER encuentra los verbos con u dieresis, sin acentos ni mayusculas`() {
         val todos = todosLosVerbosDe(Idioma.DE)
-        val conDieresis = todos.map { it.texto }.filter { it.contains("über") }.toSet()
+        val conDieresis = todos.map { it.infinitivo }.filter { it.contains("über") }.toSet()
         assertTrue("no hay verbos con über en los datos", conDieresis.isNotEmpty())
         for (q in listOf("uber", "UBER", "über", "Über")) {
-            val r = todos.filtrarPorBusquedaVerbos(q, Idioma.ES).map { it.texto }.toSet()
+            val r = todos.filtrarPorBusquedaVerbos(q, Idioma.ES).map { it.infinitivo }.toSet()
             assertTrue("$q no encontro $conDieresis (encontro $r)", r.containsAll(conDieresis))
         }
     }
@@ -46,36 +46,36 @@ class BusquedaVerbosTest {
     @Test
     fun `buscar machen encuentra la familia por subcadena`() {
         val todos = todosLosVerbosDe(Idioma.DE)
-        val esperados = todos.map { it.texto }.filter { it.lowercase().contains("machen") }.toSet()
+        val esperados = todos.map { it.infinitivo }.filter { it.lowercase().contains("machen") }.toSet()
         assertTrue("necesito al menos 2 verbos con machen en los datos: $esperados", esperados.size >= 2)
-        assertEquals(esperados, todos.filtrarPorBusquedaVerbos("machen", Idioma.ES).map { it.texto }.toSet())
-        assertEquals(esperados, todos.filtrarPorBusquedaVerbos("MACHEN", Idioma.ES).map { it.texto }.toSet())
+        assertTrue(todos.filtrarPorBusquedaVerbos("machen", Idioma.ES).map { it.infinitivo }.toSet().containsAll(esperados))
+        assertEquals(todos.filtrarPorBusquedaVerbos("machen", Idioma.ES), todos.filtrarPorBusquedaVerbos("MACHEN", Idioma.ES))
     }
 
     @Test
     fun `tambien busca en la traduccion al idioma de app, el de app y no otro`() {
         val verbos = todosLosVerbosDe(Idioma.DE)
-        val v = verbos.first { (it.datosFila(Idioma.ES).traduccion?.length ?: 0) >= 6 }
+        val v = items.verbosDe(Idioma.DE).first { (it.datosFila(Idioma.ES).traduccion?.length ?: 0) >= 6 }
         val fragmento = v.datosFila(Idioma.ES).traduccion!!.substring(1, 5).uppercase()
-        assertTrue("`$fragmento` (traduccion de ${v.texto}) no lo encontro", verbos.filtrarPorBusquedaVerbos(fragmento, Idioma.ES).any { it.texto == v.texto })
-        val ingles = verbos.first { it.datosFila(Idioma.EN).traduccion != null }
+        assertTrue("`$fragmento` (traduccion de ${v.texto}) no lo encontro", verbos.filtrarPorBusquedaVerbos(fragmento, Idioma.ES).any { it.infinitivo == v.texto })
+        val ingles = items.verbosDe(Idioma.DE).first { it.datosFila(Idioma.EN).traduccion != null }
         val f = ingles.datosFila(Idioma.EN).traduccion!!.take(4)
-        assertTrue(verbos.filtrarPorBusquedaVerbos(f, Idioma.EN).any { it.texto == ingles.texto })
+        assertTrue(verbos.filtrarPorBusquedaVerbos(f, Idioma.EN).any { it.infinitivo == ingles.texto })
     }
 
     @Test
     fun `una consulta vacia o en blanco no filtra, y una sin coincidencias da vacio`() {
-        val verbos = items.verbosDe(Idioma.DE)
+        val verbos = items.entradasVerbo(Idioma.DE)
         assertEquals(verbos, verbos.filtrarPorBusquedaVerbos("", Idioma.ES))
         assertEquals(verbos, verbos.filtrarPorBusquedaVerbos("   ", Idioma.ES))
-        assertEquals(emptyList<ItemBiblioteca>(), verbos.filtrarPorBusquedaVerbos("qqqqzzzz", Idioma.ES))
+        assertEquals(emptyList<EntradaVerbo>(), verbos.filtrarPorBusquedaVerbos("qqqqzzzz", Idioma.ES))
     }
 
     @Test
     fun `la busqueda se aplica sobre los verbos ya filtrados por clase`() {
-        val soloTrennbar = items.verbosDe(Idioma.DE).filtrarPorClases(setOf("trennbar"))
+        val soloTrennbar = items.entradasVerbo(Idioma.DE).filtrarPorClases(setOf("trennbar"))
         val r = soloTrennbar.filtrarPorBusquedaVerbos("a", Idioma.ES)
-        assertTrue(r.isNotEmpty() && r.all { "trennbar" in it.vocabulario!!.claseVerbo })
+        assertTrue(r.isNotEmpty() && r.all { "trennbar" in it.clases })
     }
 
     @Test
@@ -83,16 +83,8 @@ class BusquedaVerbosTest {
         val verbos = todosLosVerbosDe(Idioma.DE)
         val buscador = BuscadorVerbos(verbos, Idioma.ES)
         for (q in listOf("stellen", "uber", "MACHEN", "a", "qqqq", "")) {
-            assertEquals(q, verbos.filtrarPorBusquedaVerbos(q, Idioma.ES).map { it.texto }, buscador.filtrar(verbos, q).map { it.texto })
+            assertEquals(q, verbos.filtrarPorBusquedaVerbos(q, Idioma.ES).map { it.infinitivo }, buscador.filtrar(verbos, q).map { it.infinitivo })
         }
-        assertTrue("DE tiene mas de 300 formas", verbos.size > 300)
-    }
-
-    @Test
-    fun `stellen en aleman devuelve los 6 miembros de la familia, sea cual sea el nivel`() {
-        val miembros = setOf("bestellen", "sich etwas bestellen", "sich vorstellen", "etwas nachbestellen", "jemanden kaltstellen", "etwas richtigstellen")
-        // la busqueda es sobre todo el idioma: el nivel de Ajustes no entra en la cuenta (ver el test de pantalla)
-        val r = todosLosVerbosDe(Idioma.DE).filtrarPorBusquedaVerbos("stellen", Idioma.ES).map { it.texto }.toSet()
-        assertTrue("faltan ${miembros - r}", r.containsAll(miembros))
+        assertEquals("DE: 305 propios + 197 nucleos - 32 fusionados", 470, verbos.size)
     }
 }

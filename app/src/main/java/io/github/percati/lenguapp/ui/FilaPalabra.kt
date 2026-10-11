@@ -47,6 +47,8 @@ fun FilaPalabra(
     onClick: (() -> Unit)? = null,
     // Linea opcional debajo de la funcion (la usara la vista Verbos: regimen / separabilidad). Por defecto no hay nada.
     extra: (@Composable ColumnScope.() -> Unit)? = null,
+    // false = fila de solo lectura, sin estrella (el nucleo verbal de la vista Verbos: no es un item, no se marca).
+    conEstrella: Boolean = true,
 ) {
     val espaciado = espaciadoActual()
     Column(modifier.fillMaxWidth()) {
@@ -74,7 +76,7 @@ fun FilaPalabra(
                 extra?.invoke(this)
             }
             // Estrella discreta: contorno fino en reposo, llena con el acento cuando esta guardada.
-            IconButton(onClick = onEstrella, modifier = Modifier.size(40.dp).testTag(tagEstrella)) {
+            if (conEstrella) IconButton(onClick = onEstrella, modifier = Modifier.size(40.dp).testTag(tagEstrella)) {
                 Icon(
                     if (guardada) Icons.Filled.Star else Icons.Outlined.StarBorder,
                     contentDescription = descripcionEstrella,

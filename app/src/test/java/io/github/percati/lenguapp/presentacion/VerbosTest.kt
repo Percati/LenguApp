@@ -59,7 +59,7 @@ class VerbosTest {
     fun `la familia de stellen se encuentra entera con cualquier nivel, los 6 miembros`() {
         val miembros = setOf("bestellen", "sich etwas bestellen", "sich vorstellen", "etwas nachbestellen", "jemanden kaltstellen", "etwas richtigstellen")
         val verbos = items.verbosDe(Idioma.DE)
-        val r = verbos.filtrarPorBusquedaVerbos("stellen", Idioma.ES).map { it.texto }.toSet()
+        val r = items.entradasVerbo(Idioma.DE).filtrarPorBusquedaVerbos("stellen", Idioma.ES).filter { it.propio != null }.map { it.infinitivo }.toSet()
         assertTrue("faltan ${miembros - r} (encontro $r)", r.containsAll(miembros))
         // viven repartidos entre niveles (ninguno en B2): con un solo nivel no se podia encontrar la familia
         val porNivel = miembros.associateWith { m -> verbos.first { it.texto == m }.niveles }
@@ -70,13 +70,13 @@ class VerbosTest {
     @Test
     fun `los chips son solo las clases presentes, simple nunca, y cada chip tiene al menos un verbo`() {
         for (idioma in idiomas) {
-            val verbos = items.verbosDe(idioma)
+            val verbos = items.entradasVerbo(idioma)
             val conteo = verbos.contarClases()
             assertFalse("simple no es un chip", CLASE_VERBO_SIMPLE in conteo)
             assertTrue(conteo.keys.all { it in CLASES_VERBO_CONOCIDAS })
             for ((clase, n) in conteo) {
                 assertTrue("$idioma $clase vacio", n >= 1)
-                assertEquals(n, verbos.count { clase in it.vocabulario!!.claseVerbo })
+                assertEquals(n, verbos.count { clase in it.clases })
             }
             // el aleman no ofrece clases del ingles y viceversa (los chips salen de los datos del idioma)
             val delOtro = if (idioma == Idioma.DE) setOf("phrasal-separable", "phrasal-inseparable", "verbo-preposicion") else setOf("reflexivo", "trennbar", "mit-Praposition", "mit-Dativ")
@@ -88,15 +88,15 @@ class VerbosTest {
 
     @Test
     fun `sin chip elegido se ven todos los verbos, con chips los que tienen alguna de las clases`() {
-        val verbos = items.verbosDe(Idioma.DE)
+        val verbos = items.entradasVerbo(Idioma.DE)
         assertEquals(verbos, verbos.filtrarPorClases(emptySet()))
         val trennbar = verbos.filtrarPorClases(setOf("trennbar"))
-        assertTrue(trennbar.isNotEmpty() && trennbar.all { "trennbar" in it.vocabulario!!.claseVerbo })
+        assertTrue(trennbar.isNotEmpty() && trennbar.all { "trennbar" in it.clases })
         val union = verbos.filtrarPorClases(setOf("trennbar", "reflexivo"))
         assertTrue(union.size >= trennbar.size)
-        assertTrue(union.all { v -> "trennbar" in v.vocabulario!!.claseVerbo || "reflexivo" in v.vocabulario!!.claseVerbo })
+        assertTrue(union.all { v -> "trennbar" in v.clases || "reflexivo" in v.clases })
         // los `simple` entran en "todos" aunque no tengan chip
-        assertTrue(verbos.any { it.vocabulario!!.claseVerbo == listOf("simple") })
+        assertTrue(verbos.any { it.clases == listOf("simple") })
     }
 
     @Test
@@ -107,13 +107,13 @@ class VerbosTest {
             vocabulario = base.vocabulario!!.copy(item = "zzz-verbo-raro", claseVerbo = listOf("clase-del-futuro")),
         )
         val lista = items.filter { it.idioma == Idioma.DE } + raro
-        val verbos = lista.verbosDe(Idioma.DE)
-        assertTrue("el verbo de clase desconocida se muestra", verbos.any { it.texto == "zzz-verbo-raro" })
+        val verbos = lista.entradasVerbo(Idioma.DE)
+        assertTrue("el verbo de clase desconocida se muestra", verbos.any { it.infinitivo == "zzz-verbo-raro" })
         assertFalse("y no genera chip", verbos.contarClases().keys.any { it == "clase-del-futuro" })
         assertEquals(emptyList<String>(), raro.clasesDeChip())
         assertNull(etiquetaClaseVerbo("clase-del-futuro", Idioma.ES))
         // con un chip elegido no entra (no tiene esa clase), con ninguno si
-        assertTrue(verbos.filtrarPorClases(setOf("trennbar")).none { it.texto == "zzz-verbo-raro" })
+        assertTrue(verbos.filtrarPorClases(setOf("trennbar")).none { it.infinitivo == "zzz-verbo-raro" })
     }
 
     @Test

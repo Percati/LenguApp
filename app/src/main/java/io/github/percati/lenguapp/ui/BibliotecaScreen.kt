@@ -3,6 +3,7 @@ package io.github.percati.lenguapp.ui
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
@@ -36,8 +37,8 @@ import androidx.compose.foundation.layout.ColumnScope
 import io.github.percati.lenguapp.presentacion.BuscadorVerbos
 import io.github.percati.lenguapp.presentacion.contarClases
 import io.github.percati.lenguapp.presentacion.filtrarPorClases
-import io.github.percati.lenguapp.presentacion.lineaExtraVerbo
-import io.github.percati.lenguapp.presentacion.verbosDe
+import io.github.percati.lenguapp.presentacion.EntradaVerbo
+import io.github.percati.lenguapp.presentacion.entradasVerbo
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -130,11 +131,12 @@ fun BibliotecaScreen(
         categoriasElegidas = emptySet()
     }
 
-    // Vista Verbos: TODOS los verbos etiquetados del idioma de la pestana; el nivel no es una dimension de la
-    // vista (ni filtra ni se fija en el de Ajustes). Chips de clase y cuentas sobre ese conjunto (P3).
-    val verbos = remember(items, idioma) { if (idioma == null) emptyList() else items.verbosDe(idioma) }
+    // Vista Verbos: TODAS las entradas del idioma de la pestana (verbos propios + nucleos verbales de las
+    // colocaciones, fusionados por infinitivo); el nivel no es una dimension de la vista (ni filtra ni se fija
+    // en el de Ajustes). Chips de clase y cuentas sobre ese conjunto (P3).
+    val verbos = remember(items, idioma) { if (idioma == null) emptyList() else items.entradasVerbo(idioma) }
     val conteoClases = remember(verbos) { verbos.contarClases() }
-    // El texto normalizado de cada verbo se calcula una vez, no en cada tecla.
+    // El texto normalizado de cada entrada y de sus colocaciones se calcula una vez, no en cada tecla.
     val buscadorVerbos = remember(verbos, idiomaBase) { BuscadorVerbos(verbos, idiomaBase) }
     val verbosFiltrados = remember(verbos, clasesElegidas, busquedaVerbos, buscadorVerbos) {
         buscadorVerbos.filtrar(verbos.filtrarPorClases(clasesElegidas), busquedaVerbos)
@@ -234,9 +236,15 @@ fun BibliotecaScreen(
                     )
                     }
 
-                    if (vista == VistaBiblioteca.VERBOS) {
-                        // Busqueda (arriba de los chips): original y traduccion al idioma de app, mientras se escribe.
-                        if (verbos.isNotEmpty()) {
+                }
+            }
+
+            if (vista == VistaBiblioteca.VERBOS) {
+                // La busqueda es LA forma de usar esta vista (cientos de entradas): queda fija arriba mientras se
+                // recorre la lista, con fondo opaco. Los chips de clase se van con el scroll (la busqueda tiene prioridad).
+                if (verbos.isNotEmpty()) {
+                    item(key = "buscar-verbos") {
+                        Surface(color = MaterialTheme.colorScheme.background, modifier = Modifier.fillMaxWidth()) {
                             OutlinedTextField(
                                 value = busquedaVerbos,
                                 onValueChange = { busquedaVerbos = it },
@@ -247,43 +255,40 @@ fun BibliotecaScreen(
                                         Icon(Icons.Filled.Close, contentDescription = descripcionBorrarBusqueda(idiomaInterfaz))
                                     }
                                 }),
-                                modifier = Modifier.fillMaxWidth(),
-                            )
-                        }
-                        // Un solo grupo: la clase. Solo las que existen en los verbos de este idioma y nivel (P3);
-                        // `simple` nunca es un chip; sin ninguno elegido se ven todos.
-                        if (conteoClases.isNotEmpty()) {
-                            GrupoChips(
-                                opciones = conteoClases.map { (clase, n) ->
-                                    OpcionFiltro(clase, "${etiquetaClaseVerbo(clase, idiomaInterfaz) ?: clase} ($n)")
-                                },
-                                estaElegida = { it.clave in clasesElegidas },
-                                onElegir = { clasesElegidas = alternarEn(clasesElegidas, it.clave) },
-                                disposicion = DisposicionChips.AJUSTADA,
+                                modifier = Modifier.fillMaxWidth().padding(bottom = 8.dp),
                             )
                         }
                     }
                 }
-            }
-
-            if (vista == VistaBiblioteca.VERBOS) {
+                // Un solo grupo: la clase. Solo las que existen en las entradas de este idioma (P3);
+                // `simple` nunca es un chip; sin ninguno elegido se ven todas.
+                if (conteoClases.isNotEmpty()) {
+                    item(key = "chips-verbos") {
+                        GrupoChips(
+                            opciones = conteoClases.map { (clase, n) ->
+                                OpcionFiltro(clase, "${etiquetaClaseVerbo(clase, idiomaInterfaz) ?: clase} ($n)")
+                            },
+                            estaElegida = { it.clave in clasesElegidas },
+                            onElegir = { clasesElegidas = alternarEn(clasesElegidas, it.clave) },
+                            disposicion = DisposicionChips.AJUSTADA,
+                        )
+                    }
+                }
                 if (verbos.isEmpty()) {
                     item { Text(mensajeVerbosVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge) }
                 }
                 if (verbos.isNotEmpty() && verbosFiltrados.isEmpty()) {
                     item { Text(mensajeVerbosSinResultados(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge) }
                 }
-                items(verbosFiltrados, key = { "verbo|${it.idioma}|${it.texto}" }) { verbo ->
-                    val linea = verbo.lineaExtraVerbo(clasesElegidas) { etiquetaClaseVerbo(it, idiomaInterfaz) }.ifEmpty { null }
-                    FilaBiblioteca(
-                        item = verbo,
+                items(verbosFiltrados, key = { "verbo|${it.propio?.idioma ?: idioma}|${it.infinitivo}" }) { entrada ->
+                    FilaEntradaVerbo(
+                        entrada = entrada,
+                        idioma = idioma,
                         idiomaBase = idiomaBase,
-                        guardada = claveBiblioteca(verbo.idioma, verbo.tipo, verbo.texto) in guardadas,
-                        onAlternar = { onAlternar(verbo) },
-                        // La linea discreta: nivel mas bajo (dato, no filtro) + regimen en aleman o separabilidad en ingles.
-                        extra = if (linea == null) null else ({
-                            Text(linea, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                        }),
+                        idiomaInterfaz = idiomaInterfaz,
+                        clasesElegidas = clasesElegidas,
+                        guardadas = guardadas,
+                        onAlternar = onAlternar,
                     )
                 }
                 return@LazyColumn
@@ -369,6 +374,57 @@ private fun FilaBiblioteca(
         onEstrella = onAlternar,
         extra = extra,
     )
+}
+
+/**
+ * Una entrada de la vista Verbos. Verbo propio: su fila de siempre (marcable, con traduccion). Nucleo puro: un
+ * encabezado con el infinitivo, SIN estrella ni traduccion (no es un item). En los dos casos las colocaciones
+ * van visibles debajo, cada una con su traduccion y su propia estrella (la clave de Guardados es la de la colocacion).
+ */
+@Composable
+private fun FilaEntradaVerbo(
+    entrada: EntradaVerbo,
+    idioma: Idioma,
+    idiomaBase: Idioma,
+    idiomaInterfaz: Idioma,
+    clasesElegidas: Set<String>,
+    guardadas: Set<String>,
+    onAlternar: (ItemBiblioteca) -> Unit,
+) {
+    // La linea discreta: nivel mas bajo (dato, no filtro) + regimen en aleman o separabilidad en ingles.
+    val linea = entrada.lineaExtra(clasesElegidas) { etiquetaClaseVerbo(it, idiomaInterfaz) }.ifEmpty { null }
+    val extra: (@Composable ColumnScope.() -> Unit)? = if (linea == null) null else ({
+        Text(linea, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+    })
+    Column {
+        val propio = entrada.propio
+        if (propio != null) {
+            FilaBiblioteca(
+                item = propio,
+                idiomaBase = idiomaBase,
+                guardada = claveBiblioteca(propio.idioma, propio.tipo, propio.texto) in guardadas,
+                onAlternar = { onAlternar(propio) },
+                extra = extra,
+            )
+        } else {
+            FilaPalabra(
+                original = entrada.infinitivo, traduccion = null, funcion = null,
+                idiomaAprendido = idioma, idiomaBase = idiomaBase,
+                guardada = false, tagEstrella = TAG_ESTRELLA_BIBLIOTECA, descripcionEstrella = null, onEstrella = {},
+                extra = extra, conEstrella = false,
+            )
+        }
+        for (colocacion in entrada.colocaciones) {
+            Box(Modifier.padding(start = 20.dp)) {
+                FilaBiblioteca(
+                    item = colocacion,
+                    idiomaBase = idiomaBase,
+                    guardada = claveBiblioteca(colocacion.idioma, colocacion.tipo, colocacion.texto) in guardadas,
+                    onAlternar = { onAlternar(colocacion) },
+                )
+            }
+        }
+    }
 }
 
 /** Las tres vistas de la Biblioteca. */
