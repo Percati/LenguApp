@@ -394,12 +394,12 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
     ),
     // --- Vista Verbos (Ronda H) ---
     ClaveTexto.VERBOS_SIN_RESULTADOS to mapOf(
-        Idioma.ES to "Ningún verbo coincide. Prueba con otra búsqueda.",
-        Idioma.EN to "No verb matches. Try another search.",
-        Idioma.DE to "Kein Verb passt. Versuche eine andere Suche.",
-        Idioma.FR to "Aucun verbe ne correspond. Essaie une autre recherche.",
-        Idioma.IT to "Nessun verbo corrisponde. Prova con un'altra ricerca.",
-        Idioma.PT to "Nenhum verbo corresponde. Tente outra busca.",
+        Idioma.ES to "Ningún verbo de esta lista coincide. Prueba con otra búsqueda.",
+        Idioma.EN to "No verb in this list matches. Try another search.",
+        Idioma.DE to "Kein Verb in dieser Liste passt. Versuche eine andere Suche.",
+        Idioma.FR to "Aucun verbe de cette liste ne correspond. Essaie une autre recherche.",
+        Idioma.IT to "Nessun verbo di questo elenco corrisponde. Prova con un'altra ricerca.",
+        Idioma.PT to "Nenhum verbo desta lista corresponde. Tente outra busca.",
     ),
     ClaveTexto.BUSCAR_BORRAR to mapOf(
         Idioma.ES to "Borrar búsqueda",
@@ -474,12 +474,12 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "Verbo + preposição",
     ),
     ClaveTexto.VERBOS_VACIO to mapOf(
-        Idioma.ES to "Aún no hay verbos para este nivel. Prueba con otro idioma o nivel.",
-        Idioma.EN to "No verbs for this level yet. Try another language or level.",
-        Idioma.DE to "Für dieses Niveau gibt es noch keine Verben. Versuche eine andere Sprache oder ein anderes Niveau.",
-        Idioma.FR to "Pas encore de verbes pour ce niveau. Essaie une autre langue ou un autre niveau.",
-        Idioma.IT to "Non ci sono ancora verbi per questo livello. Prova con un'altra lingua o un altro livello.",
-        Idioma.PT to "Ainda não há verbos para este nível. Tente outro idioma ou nível.",
+        Idioma.ES to "Todavía no hay verbos etiquetados para este idioma.",
+        Idioma.EN to "No tagged verbs for this language yet.",
+        Idioma.DE to "Für diese Sprache gibt es noch keine gekennzeichneten Verben.",
+        Idioma.FR to "Pas encore de verbes étiquetés pour cette langue.",
+        Idioma.IT to "Non ci sono ancora verbi etichettati per questa lingua.",
+        Idioma.PT to "Ainda não há verbos etiquetados para este idioma.",
     ),
     // --- Tipografias (Ronda G) ---
     ClaveTexto.FUENTE_TITULO to mapOf(
