@@ -371,6 +371,9 @@
   {
    "item": "krankmelden",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "dar parte de enfermo",
     "en": "to call in sick",
@@ -382,6 +385,9 @@
   {
    "item": "kündigen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "renunciar, despedir",
     "en": "to quit, to give notice",
@@ -393,6 +399,11 @@
   {
    "item": "sich bewerben",
    "prioridad": "ampliacion",
+   "reccion": "um + Akk / bei + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "postularse",
     "en": "to apply",

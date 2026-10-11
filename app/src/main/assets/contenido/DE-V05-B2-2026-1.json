@@ -177,12 +177,12 @@
     "it": "riuscire a capire / seguire il ragionamento",
     "pt": "conseguir compreender / acompanhar o raciocínio"
    },
-   "reccion": "Akk.",
    "nota": "extrem hochfrequent"
   },
   {
    "item": "die Absprache / absprechen mit",
    "prioridad": "nucleo",
+   "reccion": "mit + Dat",
    "traducciones": {
     "es": "el acuerdo previo",
     "en": "the informal arrangement / to agree with",
@@ -190,12 +190,15 @@
     "it": "l’accordo / concordare con",
     "pt": "o acordo prévio / combinar com"
    },
-   "reccion": "+ Dat.",
    "nota": "informelle Vorabklärung"
   },
   {
    "item": "sich einbringen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
    "traducciones": {
     "es": "implicarse, aportar",
     "en": "to get involved, to contribute",
@@ -203,7 +206,6 @@
     "it": "partecipare / contribuire",
     "pt": "envolver-se / contribuir"
    },
-   "reccion": "reflexiv",
    "nota": "schwer übersetzbar"
   },
   {
@@ -221,38 +223,42 @@
   {
    "item": "die Einarbeitung / sich einarbeiten in",
    "prioridad": "ampliacion",
+   "reccion": "in + Akk",
    "traducciones": {
     "es": "el período de incorporación",
     "en": "the induction / to get to grips with",
     "fr": "l’intégration / se familiariser avec",
     "it": "l’inserimento / familiarizzarsi con",
     "pt": "a integração / familiarizar-se com"
-   },
-   "reccion": "+ Akk."
+   }
   },
   {
    "item": "sich kümmern um",
    "prioridad": "ampliacion",
+   "reccion": "um + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "encargarse de",
     "en": "to take care of",
     "fr": "s’occuper de",
     "it": "occuparsi di",
     "pt": "tratar de / ocupar-se de"
-   },
-   "reccion": "+ Akk."
+   }
   },
   {
    "item": "zuständig sein für",
    "prioridad": "ampliacion",
+   "reccion": "für + Akk",
    "traducciones": {
     "es": "ser responsable de",
     "en": "to be responsible for",
     "fr": "être responsable de",
     "it": "essere responsabile di",
     "pt": "ser responsável por"
-   },
-   "reccion": "+ Akk."
+   }
   },
   {
    "item": "etwas in Angriff nehmen",
@@ -264,7 +270,6 @@
     "it": "affrontare qualcosa",
     "pt": "atacar / começar a tratar de algo"
    },
-   "reccion": "Akk.",
    "nota": "Funktionsverbgefüge"
   },
   {
@@ -318,6 +323,10 @@
   {
    "item": "jemandem kündigen",
    "prioridad": "ampliacion",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "despedir a alguien",
     "en": "to give someone notice",
@@ -325,7 +334,6 @@
     "it": "licenziare qualcuno",
     "pt": "despedir alguém"
    },
-   "reccion": "+ Dat.",
    "nota": "Achtung: wer kündigt wem?"
   },
   {

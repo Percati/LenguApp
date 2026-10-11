@@ -382,6 +382,9 @@
   {
    "item": "ersetzen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "sustituir",
     "en": "to replace",
@@ -393,6 +396,9 @@
   {
    "item": "ablenken",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "distraer",
     "en": "to distract",
@@ -404,6 +410,9 @@
   {
    "item": "abschalten",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "desconectar",
     "en": "to switch off",
@@ -459,6 +468,11 @@
   {
    "item": "sich verlassen auf",
    "prioridad": "ampliacion",
+   "reccion": "auf + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "confiar en algo",
     "en": "to rely on",

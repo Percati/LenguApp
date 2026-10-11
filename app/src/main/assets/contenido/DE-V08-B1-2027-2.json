@@ -287,7 +287,7 @@
    }
   },
   {
-   "item": "der Vertrag kündigen",
+   "item": "den Vertrag kündigen",
    "prioridad": "nucleo",
    "traducciones": {
     "es": "dar de baja el contrato",
@@ -333,6 +333,11 @@
   {
    "item": "sich erkundigen",
    "prioridad": "nucleo",
+   "reccion": "nach + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "informarse, preguntar",
     "en": "to enquire",
@@ -388,6 +393,9 @@
   {
    "item": "empfehlen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "recomendar",
     "en": "to recommend",
@@ -399,6 +407,9 @@
   {
    "item": "wechseln",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "cambiarse de proveedor",
     "en": "to switch",
@@ -684,12 +695,12 @@
     "pt": "colocar em cada caso a palavra alemã entre parênteses"
    },
    {
-    "de": "*der Anbieter*, *die Beratung* und *der Vertrag kündigen* verwenden",
-    "en": "use *der Anbieter*, *die Beratung* and *der Vertrag kündigen*",
-    "es": "usar *der Anbieter*, *die Beratung* y *der Vertrag kündigen*",
-    "fr": "utiliser *der Anbieter*, *die Beratung* et *der Vertrag kündigen*",
-    "it": "usare *der Anbieter*, *die Beratung* e *der Vertrag kündigen*",
-    "pt": "usar *der Anbieter*, *die Beratung* e *der Vertrag kündigen*"
+    "de": "*der Anbieter*, *die Beratung* und *den Vertrag kündigen* verwenden",
+    "en": "use *der Anbieter*, *die Beratung* and *den Vertrag kündigen*",
+    "es": "usar *der Anbieter*, *die Beratung* y *den Vertrag kündigen*",
+    "fr": "utiliser *der Anbieter*, *die Beratung* et *den Vertrag kündigen*",
+    "it": "usare *der Anbieter*, *die Beratung* e *den Vertrag kündigen*",
+    "pt": "usar *der Anbieter*, *die Beratung* e *den Vertrag kündigen*"
    }
   ]
  },

@@ -216,6 +216,9 @@
   {
    "item": "dranbleiben",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "no abandonar",
     "en": "to stick with it",
@@ -238,6 +241,9 @@
   {
    "item": "herumwerkeln",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "andar haciendo cositas",
     "en": "to potter about",
@@ -260,6 +266,11 @@
   {
    "item": "sich in etwas versuchen",
    "prioridad": "ampliacion",
+   "reccion": "in + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "probar suerte con algo",
     "en": "to dabble in something",

@@ -212,6 +212,10 @@ data class VocabularioItem(
     // El item esta bajo el nivel declarado a proposito (distincion, registro
     // o doble sentido que si corresponde al nivel), no es un error de banco.
     val bajoNivelJustificado: Boolean = false,
+    // Clases de verbo (taxonomia cerrada por idioma, ver FALTANTES 29/30): DE simple, reflexivo,
+    // trennbar, mit-Praposition, mit-Dativ; EN simple, phrasal-separable, phrasal-inseparable,
+    // verbo-preposicion. Opcional. Todavia no se muestra en ninguna pantalla (la vista Verbos llega despues).
+    val claseVerbo: List<String> = emptyList(),
 )
 
 @Serializable

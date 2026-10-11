@@ -172,12 +172,12 @@
     "it": "accettare qualcosa come prezzo da pagare",
     "pt": "aceitar algo como preço a pagar"
    },
-   "reccion": "Akk.",
    "nota": "Funktionsverbgefüge"
   },
   {
    "item": "der Verzicht auf",
    "prioridad": "nucleo",
+   "reccion": "auf + Akk",
    "traducciones": {
     "es": "la renuncia a",
     "en": "going without, forgoing",
@@ -185,7 +185,6 @@
     "it": "la rinuncia a",
     "pt": "a renúncia a"
    },
-   "reccion": "+ Akk.",
    "nota": "starkes Konzept im DACH-Diskurs",
    "variante": "CH"
   },
@@ -229,14 +228,16 @@
   {
    "item": "etwas eindämmen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "contener, frenar",
     "en": "to curb, to contain",
     "fr": "endiguer / freiner quelque chose",
     "it": "contenere / frenare qualcosa",
     "pt": "conter / travar algo"
-   },
-   "reccion": "Akk."
+   }
   },
   {
    "item": "der Ausstoss / ausstossen",
@@ -248,7 +249,6 @@
     "it": "le emissioni / emettere",
     "pt": "as emissões / emitir"
    },
-   "reccion": "Akk.",
    "nota": "häufiger als *Emission*"
   },
   {
@@ -300,26 +300,28 @@
   {
    "item": "die Abhängigkeit von",
    "prioridad": "ampliacion",
+   "reccion": "von + Dat",
    "traducciones": {
     "es": "la dependencia de",
     "en": "dependence on",
     "fr": "la dépendance à / de",
     "it": "la dipendenza da",
     "pt": "a dependência de"
-   },
-   "reccion": "+ Dat."
+   }
   },
   {
    "item": "schönreden",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "maquillar, endulzar",
     "en": "to talk up, to gloss over",
     "fr": "enjoliver / minimiser les problèmes",
     "it": "edulcorare / abbellire",
     "pt": "embelezar / dourar a pílula"
-   },
-   "reccion": "Akk."
+   }
   }
  ],
  "redemittel": [

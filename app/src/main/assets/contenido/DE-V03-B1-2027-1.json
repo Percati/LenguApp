@@ -306,6 +306,10 @@
   {
    "item": "sich zurechtfinden",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
    "traducciones": {
     "es": "manejarse, orientarse",
     "en": "to find your way around",
@@ -317,6 +321,9 @@
   {
    "item": "umsteigen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "hacer transbordo",
     "en": "to change trains",
@@ -383,6 +390,11 @@
   {
    "item": "sich beschweren",
    "prioridad": "ampliacion",
+   "reccion": "über + Akk / bei + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "reclamar",
     "en": "to complain",
@@ -394,6 +406,9 @@
   {
    "item": "sich verlaufen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "perderse",
     "en": "to get lost",

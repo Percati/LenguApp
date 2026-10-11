@@ -334,6 +334,9 @@
   {
    "item": "heiraten",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "casarse",
     "en": "to get married",
@@ -345,6 +348,9 @@
   {
    "item": "sich treffen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "encontrarse",
     "en": "to meet",
@@ -356,6 +362,9 @@
   {
    "item": "besuchen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "visitar",
     "en": "to visit",
@@ -411,6 +420,10 @@
   {
    "item": "streiten",
    "prioridad": "ampliacion",
+   "reccion": "über + Akk / um + Akk",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "discutir, pelear",
     "en": "to argue",

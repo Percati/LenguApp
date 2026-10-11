@@ -137,20 +137,24 @@
     "fr": "prendre le risque",
     "it": "correre il rischio",
     "pt": "correr o risco"
-   },
-   "reccion": "Akk."
+   }
   },
   {
    "item": "sich absichern gegen",
    "prioridad": "nucleo",
+   "reccion": "gegen + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "cubrirse frente a",
     "en": "to hedge against, to insure against",
     "fr": "se couvrir contre",
     "it": "coprirsi da",
     "pt": "proteger-se contra"
-   },
-   "reccion": "+ Akk."
+   }
   },
   {
    "item": "die Schwankung",
@@ -188,14 +192,16 @@
   {
    "item": "etwas abbuchen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "cargar en cuenta",
     "en": "to debit from an account",
     "fr": "débiter quelque chose d’un compte",
     "it": "addebitare qualcosa sul conto",
     "pt": "debitar algo numa conta"
-   },
-   "reccion": "Akk."
+   }
   },
   {
    "item": "die Steuererklärung",
@@ -239,8 +245,7 @@
     "fr": "pouvoir se permettre quelque chose",
     "it": "potersi permettere qualcosa",
     "pt": "poder permitir-se algo"
-   },
-   "reccion": "Akk."
+   }
   },
   {
    "item": "die Rendite",

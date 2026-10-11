@@ -146,6 +146,9 @@
   {
    "item": "etwas hinterfragen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "cuestionar críticamente",
     "en": "to question critically",
@@ -153,7 +156,6 @@
     "it": "mettere in discussione qualcosa",
     "pt": "questionar algo criticamente"
    },
-   "reccion": "Akk.",
    "nota": "Schlüsselverb ab B2"
   },
   {
@@ -222,8 +224,7 @@
     "fr": "donner la parole à quelqu’un",
     "it": "dare la parola a qualcuno",
     "pt": "dar voz a alguém"
-   },
-   "reccion": "Akk."
+   }
   },
   {
    "item": "aus zuverlässiger Quelle",
@@ -239,26 +240,30 @@
   {
    "item": "etwas relativieren",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "matizar",
     "en": "to qualify, to put into perspective",
     "fr": "nuancer / relativiser quelque chose",
     "it": "relativizzare / mettere in prospettiva qualcosa",
     "pt": "relativizar / pôr algo em perspetiva"
-   },
-   "reccion": "Akk."
+   }
   },
   {
    "item": "jemandem etwas vorwerfen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "reprochar algo a alguien",
     "en": "to accuse someone of something",
     "fr": "reprocher quelque chose à quelqu’un",
     "it": "rimproverare qualcosa a qualcuno",
     "pt": "reprovar / censurar algo a alguém"
-   },
-   "reccion": "Dat. + Akk."
+   }
   },
   {
    "item": "in die Kritik geraten",
@@ -286,18 +291,25 @@
   {
    "item": "sich distanzieren von",
    "prioridad": "ampliacion",
+   "reccion": "von + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "distanciarse de",
     "en": "to distance oneself from",
     "fr": "prendre ses distances avec",
     "it": "prendere le distanze da",
     "pt": "distanciar-se de"
-   },
-   "reccion": "+ Dat."
+   }
   },
   {
    "item": "etwas dementieren",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "desmentir",
     "en": "to deny, to issue a denial",
@@ -305,7 +317,6 @@
     "it": "smentire qualcosa",
     "pt": "desmentir algo"
    },
-   "reccion": "Akk.",
    "nota": "journalistisch"
   }
  ],

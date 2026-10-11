@@ -151,7 +151,7 @@
    }
   },
   {
-   "item": "der Stress abbauen",
+   "item": "den Stress abbauen",
    "prioridad": "nucleo",
    "traducciones": {
     "es": "reducir el estrés",
@@ -197,6 +197,10 @@
   {
    "item": "sich auspowern",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
    "traducciones": {
     "es": "descargar energía, ejercitarse a fondo",
     "en": "to work off energy",
@@ -252,6 +256,11 @@
   {
    "item": "sich erholen",
    "prioridad": "ampliacion",
+   "reccion": "von + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "recuperarse",
     "en": "to recover",

@@ -299,6 +299,11 @@
   {
    "item": "jemandem zuhören",
    "prioridad": "nucleo",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "escuchar a alguien",
     "en": "to listen to someone",
@@ -310,6 +315,9 @@
   {
    "item": "sich melden",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "dar señales de vida",
     "en": "to get in touch",
@@ -321,6 +329,11 @@
   {
    "item": "sich streiten",
    "prioridad": "nucleo",
+   "reccion": "über + Akk / um + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "discutir",
     "en": "to argue",
@@ -365,6 +378,9 @@
   {
    "item": "jemanden vermissen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "echar de menos a alguien",
     "en": "to miss someone",
@@ -387,6 +403,9 @@
   {
    "item": "sich versöhnen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "reconciliarse",
     "en": "to make up",

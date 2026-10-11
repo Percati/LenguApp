@@ -267,7 +267,7 @@
    }
   },
   {
-   "item": "der Beruf wechseln",
+   "item": "den Beruf wechseln",
    "prioridad": "nucleo",
    "traducciones": {
     "es": "cambiar de profesión",
@@ -401,6 +401,11 @@
   {
    "item": "sich freuen auf",
    "prioridad": "ampliacion",
+   "reccion": "auf + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "tener ganas de algo",
     "en": "to look forward to",

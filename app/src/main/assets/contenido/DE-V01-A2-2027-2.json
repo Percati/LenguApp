@@ -270,6 +270,10 @@
   {
    "item": "berichten",
    "prioridad": "nucleo",
+   "reccion": "über + Akk / von + Dat",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "informar",
     "en": "to report",
@@ -314,6 +318,9 @@
   {
    "item": "erzählen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "contar",
     "en": "to tell",
@@ -325,6 +332,10 @@
   {
    "item": "glauben",
    "prioridad": "nucleo",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "creer",
     "en": "to believe",
@@ -336,6 +347,9 @@
   {
    "item": "lesen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "leer",
     "en": "to read",
@@ -380,6 +394,9 @@
   {
    "item": "diskutieren",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "debatir",
     "en": "to discuss",
@@ -402,6 +419,11 @@
   {
    "item": "sich informieren",
    "prioridad": "ampliacion",
+   "reccion": "über + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "informarse",
     "en": "to find out",

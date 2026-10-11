@@ -188,6 +188,11 @@
   {
    "item": "sich beschäftigen mit",
    "prioridad": "nucleo",
+   "reccion": "mit + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "dedicarse a",
     "en": "to spend time on, to occupy oneself with",
@@ -195,7 +200,6 @@
     "it": "occuparsi di / dedicarsi a",
     "pt": "ocupar-se de / dedicar-se a"
    },
-   "reccion": "+ Dat.",
    "nota": "extrem hochfrequent"
   },
   {
@@ -224,6 +228,9 @@
   {
    "item": "abschalten",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "desconectar",
     "en": "to switch off (mentally)",
@@ -236,18 +243,23 @@
   {
    "item": "etwas ausprobieren",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "probar algo",
     "en": "to try something out",
     "fr": "essayer quelque chose",
     "it": "provare qualcosa",
     "pt": "experimentar algo"
-   },
-   "reccion": "Akk."
+   }
   },
   {
    "item": "werkeln",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "trajinar",
     "en": "to potter about",
@@ -260,6 +272,10 @@
   {
    "item": "tüfteln",
    "prioridad": "ampliacion",
+   "reccion": "an + Dat",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "trastear con ingenio",
     "en": "to tinker",
@@ -267,7 +283,6 @@
     "it": "smanettare / armeggiare",
     "pt": "inventar / mexer com engenho"
    },
-   "reccion": "an + Dat.",
    "nota": "technischer als basteln"
   },
   {
@@ -297,26 +312,29 @@
   {
    "item": "sich austoben",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "reflexivo",
+    "trennbar"
+   ],
    "traducciones": {
     "es": "desfogarse",
     "en": "to let off steam",
     "fr": "se défouler",
     "it": "sfogarsi",
     "pt": "descarregar energias"
-   },
-   "reccion": "reflexiv"
+   }
   },
   {
    "item": "die Leidenschaft für",
    "prioridad": "ampliacion",
+   "reccion": "für + Akk",
    "traducciones": {
     "es": "la pasión por",
     "en": "the passion for",
     "fr": "la passion pour",
     "it": "la passione per",
     "pt": "a paixão por"
-   },
-   "reccion": "+ Akk."
+   }
   },
   {
    "item": "gemütlich / die Gemütlichkeit",
@@ -333,14 +351,17 @@
   {
    "item": "in etwas versinken",
    "prioridad": "ampliacion",
+   "reccion": "in + Akk/Dat",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "sumergirse en algo",
     "en": "to become absorbed in",
     "fr": "se plonger dans quelque chose",
     "it": "immergersi in qualcosa",
     "pt": "mergulhar em algo"
-   },
-   "reccion": "+ Akk."
+   }
   },
   {
    "item": "der Zeitvertreib",

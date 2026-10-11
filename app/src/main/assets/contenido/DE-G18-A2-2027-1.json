@@ -302,6 +302,9 @@
   {
    "item": "kochen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "cocinar",
     "en": "to cook",
@@ -313,6 +316,10 @@
   {
    "item": "schmecken",
    "prioridad": "nucleo",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "saber, gustar",
     "en": "to taste",
@@ -368,6 +375,9 @@
   {
    "item": "einkaufen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "trennbar"
+   ],
    "traducciones": {
     "es": "hacer la compra",
     "en": "to shop for food",
@@ -379,6 +389,9 @@
   {
    "item": "probieren",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "probar",
     "en": "to try",

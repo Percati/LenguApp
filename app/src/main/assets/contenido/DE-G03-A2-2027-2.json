@@ -304,6 +304,10 @@
   {
    "item": "helfen",
    "prioridad": "nucleo",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "ayudar",
     "en": "to help",
@@ -315,6 +319,9 @@
   {
    "item": "sich treffen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "encontrarse",
     "en": "to meet",
@@ -326,6 +333,9 @@
   {
    "item": "sich verstehen",
    "prioridad": "nucleo",
+   "claseVerbo": [
+    "reflexivo"
+   ],
    "traducciones": {
     "es": "llevarse bien",
     "en": "to get on well",
@@ -337,6 +347,10 @@
   {
    "item": "vertrauen",
    "prioridad": "nucleo",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "confiar",
     "en": "to trust",
@@ -348,6 +362,9 @@
   {
    "item": "besuchen",
    "prioridad": "ampliacion",
+   "claseVerbo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "visitar",
     "en": "to visit",
@@ -381,6 +398,11 @@
   {
    "item": "sich entschuldigen",
    "prioridad": "ampliacion",
+   "reccion": "für + Akk / bei + Dat",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "pedir disculpas",
     "en": "to apologise",
@@ -392,6 +414,11 @@
   {
    "item": "sich freuen über",
    "prioridad": "ampliacion",
+   "reccion": "über + Akk",
+   "claseVerbo": [
+    "reflexivo",
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "alegrarse por algo",
     "en": "to be pleased about",
@@ -403,6 +430,10 @@
   {
    "item": "streiten",
    "prioridad": "ampliacion",
+   "reccion": "über + Akk / um + Akk",
+   "claseVerbo": [
+    "mit-Praposition"
+   ],
    "traducciones": {
     "es": "discutir, pelear",
     "en": "to argue",
@@ -414,6 +445,11 @@
   {
    "item": "zuhören",
    "prioridad": "ampliacion",
+   "reccion": "Dat",
+   "claseVerbo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
    "traducciones": {
     "es": "escuchar",
     "en": "to listen",
