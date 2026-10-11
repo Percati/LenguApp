@@ -1215,3 +1215,14 @@ Coinciden con los esperados (470 / 559); no hubo que parar. Las 1104 apariciones
 **Sin revisar por nativo:** nada nuevo (no se agregaron cadenas a `TextosInterfaz`).
 
 **Deudas que siguen** (de la sección 38, sin tocar): los 7 ítems con dos verbos separados por barra solo indexan el primero; `ein Hobby nachgehen`; los núcleos no tienen glosa propia, así que la búsqueda por traducción solo los encuentra a través de sus colocaciones.
+
+## 41. Verificación de Code Ronda J y dos hallazgos de uso (11-oct-2026) — Ronda K
+
+**Verificación de la Ronda J.** Sobre `origin/main` (HEAD `9c1eabc1`, 0.2.6 / versionCode 8): compositor 606 / 56 / 0, R1–R11 en 0, **assets idénticos a la salida del compositor** (la tarea 0 los regeneró bien y los dos guardas de `preBuild` pasan), los tres campos en `VocabularioItem`, manifest sin `INTERNET`. Los totales de la vista dan lo esperado: **DE 470** y **EN 559** con las 32 y 65 fusiones. **Code tiene razón en el caso «stellen»: son 9 entradas, no 10** — el 10 del prompt 24 contaba *bestellen* dos veces, antes de fusionar. Error de Overview al escribir el prompt, no de la implementación. **Guía de testers: `.pdf` regenerado por Overview** (0.2.6, una hoja).
+
+**Hallazgo 1 — la app no usa toda la pantalla.** El contenido empieza debajo de la barra de estado y no llega a la zona del notch. Falta edge-to-edge. Ronda K, tarea 1.
+
+**Hallazgo 2 — el desafío del fin de semana no tiene consigna.** El rediseño de la Ronda F2 (sección 28) quitó la consigna y los requisitos para no repetir la misión (P4), pero se llevó puesta **la tarea**: hoy el bloque dice *cómo* hacerlo (una toma de 6 min, sin notas, cambiá de interlocutor) y no dice *qué* hacer. «Tema: Educación» y «Habilidad: Summarising Complex Information» son etiquetas, no una consigna. **Decisión:** el desafío usa `mision.consigna` como encabezado de la actividad, reencuadrada como tarea oral con los minutos de `evidencia.oralMin`; sin requisitos ni micro-tareas. **P4 no cambia de criterio pero sí de lectura:** la misión completa es consigna + requisitos + micro-tareas + evidencia escrita; reusar solo la consigna con encuadre oral mantiene el desafío distinto de su fuente. El test de P4 pasa a comparar el bloque completo en vez de la presencia de la consigna. Ronda K, tarea 2. Versión 0.2.7.
+
+**Nota de método:** este es el segundo hallazgo que sale de usar la app y no de revisar código (el primero fue el recorte por nivel de la vista Verbos). Conviene que Fer pruebe cada versión antes de encadenar otra ronda.
+
