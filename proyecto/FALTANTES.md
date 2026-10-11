@@ -1039,3 +1039,11 @@ Cierra la sección 26 (feedback de uso de Fer). Requisitos aplicados al empezar:
 
 Los 4 parches de «Verbos» ya estaban en `origin/main` (HEAD `8b5f0d54`). Verificado por Overview: 606 / 56 / 0 problemas, R1–R11 en 0, `aplicar_verbos.py` sin diferencias (1229 apariciones etiquetadas). Los assets quedan **desactualizados a propósito**: el parser de Kotlin es estricto y `VocabularioItem` no tiene `claseVerbo`, así que regenerarlos antes de que Code agregue el campo rompería la app. Por eso el prompt 15 (Ronda G) arranca con la **Tarea 0**: campo + assets, en un commit propio. Hasta entonces el build local falla en `verificarAssetsContenidoActualizados`; es esperado. Siguiente: Ronda G → Ronda H (vista «Verbos» con búsqueda de texto, filtro solo por clase, sin nivel; ícono y splash).
 
+## 31. Verificación de Code Ronda G (11-oct-2026) y versión 0.2.3
+
+Verificado por Overview sobre `origin/main` (HEAD `c2f71956`): compositor 606 / 56 / 0, R1–R11 en 0, **assets idénticos a la salida del compositor** (los dos guardas de `preBuild` pasan), `VocabularioItem.claseVerbo` presente, 4 fuentes OFL de 380 KB con licencia en `LICENSES/`, color dinámico tras `SDK_INT >= S`, migración `ACADEMIA→PAPEL` / `EDITORIAL→MAR` en `RepositorioAjustes.kt`, manifest sin `INTERNET`, enmienda de la regla 2 por el color dinámico en los dos `CLAUDE.md`.
+
+**Corregido por Overview en este parche:** la Ronda G cambió temas, tipografías y toda la lectura sin subir la versión, así que la app de Fer se habría llamado igual que la anterior. **versionCode 5, versionName 0.2.3.** Guía de testers actualizada (versión, los dos selectores nuevos, el aviso de los signos que caen a la fuente del sistema, ícono y splash todavía provisorios) y **`.pdf` regenerado** (2 carillas), que era la deuda que dejó F2.
+
+**Deuda abierta para la ronda H:** el `contentDescription` «Contraer/Expandir» de `ui/SeccionPlegable.kt` está en español fijo. No es texto a la vista, pero TalkBack **lo lee en voz alta**, así que con la app en alemán el lector dice una palabra en español: va a `TextosInterfaz` en 6 idiomas (P7). Siguen pendientes: nombres de las clases de verbo en fr/it/pt sin revisar por nativo, ejemplos con el verbo separado (5 de 108), licencias de las voces Piper.
+
