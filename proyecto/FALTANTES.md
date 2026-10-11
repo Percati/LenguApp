@@ -995,3 +995,12 @@ Cierra la sección 26 (feedback de uso de Fer). Requisitos aplicados al empezar:
 - **fr/it/pt de «Acerca de» y de los textos nuevos de esta ronda: no los revisó una persona nativa** (traducción mía, registro informal; FR «tu», PT «você» de Brasil).
 
 **Para probar en el teléfono:** que el selector de archivos del sistema abra (crear `.tsv`/`.json` y abrir el `.json`) —los lanzadores no se pueden probar bajo Robolectric—, importar el TSV en Anki real, y mirar el espaciado nuevo con la letra del sistema al 130 % y al 160 %.
+
+## 29. Verificación de Code F2 y de los patches 19 (11-oct-2026); idea «Verbos en la Biblioteca»
+
+**Verificación.** El patch 19 de Traducciones (R9/R10) se aplicó limpio: 606/56/0, R1-R10 en 0, 1324 cambios solo de texto. Una cosa no pedida: 11 núcleos DE ganaron una frase en `promptCorreccion` (6 idiomas) porque el esquema exige ≥150 caracteres en `de` y la forma «du» queda más corta; aceptado. Assets regenerados en patch propio. Code F2: los 8 commits ya están en `origin/main` (el patch 17 que Fer reenvió es redundante). Manifest sin `INTERNET`. Sin verificar por Overview: la suite de 1016 tests (no se corrió acá).
+
+**Deudas que deja F2:** (1) la guía de testers `.pdf` no se regeneró (el `.md` sí); (2) las licencias de las voces Piper no están documentadas en el repo y «Acerca de» solo las nombra: Overview las documenta antes de publicar; (3) los textos nuevos fr/it/pt de «Acerca de» no los revisó un nativo; (4) los calendarios embebidos son solo 2026 y parciales, por eso el índice de habilidades lista pocas semanas.
+
+**Verbos en la Biblioteca (decidido por Fer):** tercera vista «Verbos», dentro de la Biblioteca. Taxonomía cerrada por idioma; solo **nivel y tipo** son obligatorios; se reutiliza el contenido existente; DE lleva el caso/preposición que rige; EN marca si el phrasal es separable; sin «sustantivo + verbo». Medición: `tipo` y `nivelVerificado` están vacíos en el 100 % de los ~8150 ítems de vocabulario y `reccion` existe solo en 70 ítems DE. Orden: prompt 20 (contenido) → Code Ronda G (prompt 15, con la tarea 6 que solo prepara la estructura) → Overview genera el índice de verbos en el compositor → Code ronda H (vista Verbos + ícono y splash).
+

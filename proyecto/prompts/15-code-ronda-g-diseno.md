@@ -54,3 +54,10 @@ Integrá la API de pantalla de carga (`androidx.core:core-splashscreen`) con fon
 
 ## Informe
 Commit por tarea, tests, tamaño del APK y delta, fuentes y licencias usadas, decisiones donde el prompt no cerraba, lista de pantallas tocadas. Actualizá `FALTANTES.md` (sección 25).
+
+## Tarea 6 — Preparar la Biblioteca para una tercera vista (no implementar «Verbos»)
+Fer va a sumar una vista **«Verbos»** a la Biblioteca en una ronda posterior (el contenido y su etiquetado se están diseñando aparte, prompt 20). En esta ronda **no implementes la vista ni leas datos de verbos**. Solo dejá lista la estructura:
+- El selector de vistas de la Biblioteca (hoy «Vocabulario y expresiones» | «Habilidades») debe aguantar **tres** vistas en pantalla angosta y con la letra al 160 %, en los 6 idiomas (textos largos en alemán y portugués). Usá un componente de segmentos o pestañas que no se rompa con tres.
+- Los **chips de filtro** deben ser un componente reutilizable que reciba su lista (se calcula por idioma desde los datos, P3) y que se pueda colapsar o desplazar horizontalmente cuando hay muchos. La nueva vista tendrá dos grupos de chips (nivel y tipo).
+- La fila de un verbo reutilizará `FilaPalabra`; dejá `FilaPalabra` con un espacio opcional para una línea extra (régimen/separabilidad) sin cambiar nada de lo visible hoy.
+- Documentá en `FALTANTES.md` (sección 25) dónde se enchufa la tercera vista.
