@@ -1016,3 +1016,8 @@ Cierra la sección 26 (feedback de uso de Fer). Requisitos aplicados al empezar:
 - **Ejemplos con el verbo separado:** solo 5 de los 108 trennbar lo muestran. Escribir los demás es contenido nuevo y queda pendiente (no se hizo).
 - **Corrección «der → den»:** 6 colocaciones DE, 11 apariciones en packs (commit 6202d0de), más 12 líneas de prosa en dos microtareas de `ocurrencias/de-B1-2027.json`.
 - **Aviso para Code:** el parser de Kotlin es estricto y `VocabularioItem` no tiene `claseVerbo`; hasta que Code lo agregue y Overview regenere los assets, la tarea `verificarAssetsContenidoActualizados` (P6) fallará.
+
+## 30. Verificación del paso 2-3 de «Verbos» (11-oct-2026) y siguiente paso
+
+Los 4 parches de «Verbos» ya estaban en `origin/main` (HEAD `8b5f0d54`). Verificado por Overview: 606 / 56 / 0 problemas, R1–R11 en 0, `aplicar_verbos.py` sin diferencias (1229 apariciones etiquetadas). Los assets quedan **desactualizados a propósito**: el parser de Kotlin es estricto y `VocabularioItem` no tiene `claseVerbo`, así que regenerarlos antes de que Code agregue el campo rompería la app. Por eso el prompt 15 (Ronda G) arranca con la **Tarea 0**: campo + assets, en un commit propio. Hasta entonces el build local falla en `verificarAssetsContenidoActualizados`; es esperado. Siguiente: Ronda G → Ronda H (vista «Verbos» con búsqueda de texto, filtro solo por clase, sin nivel; ícono y splash).
+

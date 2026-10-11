@@ -2,6 +2,14 @@
 
 Leé `CLAUDE.md` (reglas 1-14), `REGLAS-PREVENCION.md` (P1, P7), `docs/inspiracion-ui.md` y `FALTANTES.md` secciones 24 y 25. Partí de `origin/main` actualizado. **No empieces mientras haya otra ronda de Code sin aplicar** (Fer puede mandar arreglos de la prueba de la 0.2.1 antes; esos van primero). Commit por tarea, `compileDebugKotlin compileDebugUnitTestKotlin test` en verde antes de cada uno. No pushees.
 
+
+## Tarea 0 — PRIMERA y urgente: `claseVerbo` en el modelo y assets al día
+El contenido ya trae un campo nuevo, `claseVerbo` (lista de strings, opcional), en `vocabulario[]` de los packs (prompt 20, FALTANTES 29). El parser de la app es estricto (sin `ignoreUnknownKeys`), así que **hoy los assets regenerados romperían la carga**, y los assets actuales están desactualizados (el guard `verificarAssetsContenidoActualizados` falla en `preBuild`). Hacé esto antes que nada, en su propio commit:
+1. Agregá `claseVerbo: List<String> = emptyList()` a `VocabularioItem` (`modelo/ContenidoSemanal.kt`). No lo muestres en ningún lado todavía.
+2. Regenerá los assets: `python3 proyecto/tools/componer.py --contenido proyecto/contenido --salida <tmp> --schema proyecto/schema/ficha.schema.json` (esperado: 606 fichas, 56 semanas especiales, 0 con problemas) y reemplazá `app/src/main/assets/contenido/` por la salida (`rm -rf` + `cp -r`). Compilá y corré los tests: tienen que estar en verde, y `verificarAssetsContenidoActualizados` y `verificarConsistenciaContenido` también.
+3. Test: cargar una ficha real con `claseVerbo` y comprobar que el parser la lee (por ejemplo una con `trennbar` y una con `phrasal-separable`).
+4. Informá el tamaño del APK antes y después.
+
 ## Dirección decidida por Fer (10-oct-2026)
 - **Paletas y tipografías seleccionables:** inspiración Bear. **Diseño bien hecho:** Material 3 (componentes estándar, sin reinventarlos). **Fichas, Guardados y Biblioteca:** Things 3, Day One, Readwise Reader, en ese orden: tipografía de lectura cuidada, mucho aire, listas de filas con línea fina en vez de tarjetas, marcas discretas.
 - **Lo que NO queremos:** Duolingo. Nada de mascota, racha, anillos de progreso, confeti ni colores saturados de «logro». La app no guarda progreso (regla 4) y el diseño no debe sugerirlo.
