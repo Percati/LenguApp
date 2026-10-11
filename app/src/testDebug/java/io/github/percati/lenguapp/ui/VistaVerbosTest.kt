@@ -3,6 +3,7 @@ package io.github.percati.lenguapp.ui
 import androidx.activity.ComponentActivity
 import androidx.compose.ui.layout.boundsInRoot
 import androidx.compose.ui.test.assertCountEquals
+import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithTag
@@ -178,7 +179,17 @@ class VistaVerbosTest {
 
     @Test
     fun `no hay filtro de nivel, ni chips ni selector de niveles en la vista`() {
-        mostrar(lista)
-        for (n in listOf("A2", "B1", "C1", "C2")) composeTestRule.onAllNodesWithText(n).assertCountEquals(0)
+        // con verbos de varios niveles: la linea extra SI muestra el nivel (dato), pero ningun control lo ofrece como filtro
+        val variados = listOf(
+            verbo("anmelden", listOf("trennbar"), nivel = Nivel.A2), verbo("aufmachen", listOf("trennbar"), nivel = Nivel.B1),
+            verbo("hochladen", listOf("trennbar"), nivel = Nivel.C1), verbo("beschweren", listOf("reflexivo"), nivel = Nivel.C2),
+        )
+        mostrar(variados)
+        for (n in listOf("A2", "B1", "C1", "C2")) {
+            composeTestRule.onNodeWithText(n).assertExists() // como dato de la fila
+            composeTestRule.onAllNodes(hasText(n) and hasClickAction()).assertCountEquals(0) // nunca como control (chip)
+        }
+        // los unicos controles de filtro son los de clase: el grupo de chips del lexico (niveles) no se compone aca
+        composeTestRule.onAllNodes(hasText("Nivel", substring = true)).assertCountEquals(0)
     }
 }

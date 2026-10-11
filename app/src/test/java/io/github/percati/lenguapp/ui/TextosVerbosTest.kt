@@ -9,7 +9,7 @@ import java.io.File
 
 /**
  * Textos de la vista Verbos que no pueden mentir (Ronda I, tarea 2): el nivel no se puede cambiar ahi, y
- * la lista no es exhaustiva.
+ * la lista ya no se declara incompleta desde que los nucleos de las colocaciones entran (Ronda J).
  */
 class TextosVerbosTest {
 
@@ -44,6 +44,8 @@ class TextosVerbosTest {
         val fila = guia.lines().first { it.startsWith("| Verbos en la Biblioteca") }
         assertFalse(fila.contains("del nivel que estás viendo"))
         assertTrue(fila.contains("todos los niveles"))
-        assertTrue("avisa que la lista no es exhaustiva", fila.contains("no es exhaustiva"))
+        assertFalse("con los nucleos verbales la lista ya no se declara incompleta", fila.contains("exhaustiva"))
+        assertTrue("cuenta que debajo de un verbo salen las frases donde se usa", fila.contains("frases"))
+        assertTrue("y que la busqueda mira las frases", fila.contains("«Frage» encuentra stellen"))
     }
 }
