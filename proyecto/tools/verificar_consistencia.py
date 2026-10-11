@@ -56,11 +56,25 @@ Sale con codigo 1 si hay algun error. Reglas (ver REGLAS-PREVENCION.md):
       las marca; las 15 cadenas de esa clase se arreglaron a mano en oct 2026
       y hay que revisarlas a ojo al escribir contenido nuevo (FALTANTES 6.1).
 
+  R11 Verbos de la Biblioteca (prompt 20, oct 2026): vocabulario[].claseVerbo
+      y reccion. Las listas salen de schema/ficha.schema.json ($defs) y no
+      se duplican aca. (a) cada valor de claseVerbo pertenece a la lista de
+      ESE idioma, `simple` va sola y en ingles hay exactamente una clase;
+      (b) aleman: reccion obligatoria con mit-Praposition (formato
+      «auf + Akk», varias separadas por « / ») y con mit-Dativ (exactamente
+      «Dat»); cualquier reccion alemana tiene ese formato y una reccion en un
+      verbo con claseVerbo solo se admite si la justifica una de esas dos
+      clases; ingles: sin reccion; (c) ingles: phrasal-separable /
+      phrasal-inseparable solo si la forma lleva una particula de la lista
+      despues del verbo; (d) el mismo verbo (idioma + forma normalizada) lleva
+      las mismas etiquetas en todas las fichas. `--autotest` demuestra con
+      casos negativos que marca todo lo malo y nada de lo bueno.
+
   R10 Ortografia suiza: ninguna cadena lleva ß. Las excepciones son las
       cadenas donde la eszett es el objeto de la explicacion (la ficha
       DE-V08 y las notas sobre «ss/ß»), en EXENTAS_R10 con su motivo.
 """
-import argparse, glob, json, os, re, sys
+import argparse, glob, json, os, re, sys, unicodedata
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LANGS = ["es", "en", "de", "fr", "it", "pt"]
@@ -622,6 +636,209 @@ CASOS_R10 = [
 ]
 
 
+# ---------------------------------------------------------------- R11
+def _esquema():
+    return cargar(os.path.join(RAIZ, "schema", "ficha.schema.json"))
+
+
+def listas_r11(esq=None):
+    defs = (esq or _esquema())["$defs"]
+    preps = defs["prepsReccionDE"]["enum"]
+    entrada = "(?:%s) \\+ (?:Akk|Dat|Akk/Dat)" % "|".join(preps)
+    return {
+        "clases": {"de": defs["clasesVerboDE"]["enum"], "en": defs["clasesVerboEN"]["enum"]},
+        "particulas": set(defs["particulasEN"]["enum"]),
+        "rec_de": re.compile("^(?:Dat|%s(?: / %s)*)$" % (entrada, entrada)),
+        "rec_prep": re.compile("^%s(?: / %s)*$" % (entrada, entrada)),
+    }
+
+
+def clave_verbo(idioma, item):
+    k = " ".join(unicodedata.normalize("NFC", item).split()).casefold()
+    if idioma == "en":
+        k = k[7:] if k.startswith("not to ") else (k[3:] if k.startswith("to ") else k)
+    return k
+
+
+def r11_item(idioma, it, L):
+    """Mensajes de R11 para UN item de vocabulario (sin mirar otras fichas)."""
+    m = []
+    cl = it.get("claseVerbo")
+    rec = it.get("reccion")
+    if cl is not None:
+        if not isinstance(cl, list) or not cl:
+            return [f"claseVerbo debe ser una lista no vacia: {it['item']}"]
+        for c in cl:
+            if c not in L["clases"][idioma]:
+                m.append(f"claseVerbo '{c}' no existe en {idioma}: {it['item']}")
+        if "simple" in cl and len(cl) > 1:
+            m.append(f"'simple' es exclusiva: {it['item']} -> {cl}")
+        if len(cl) != len(set(cl)):
+            m.append(f"claseVerbo repetida: {it['item']}")
+    if idioma == "en":
+        if rec is not None:
+            m.append(f"reccion no se usa en ingles: {it['item']}")
+        if cl is not None and len(cl) != 1:
+            m.append(f"en ingles va exactamente una clase: {it['item']} -> {cl}")
+        if cl and any(c.startswith("phrasal") for c in cl):
+            cuerpo = re.sub(r"\([^)]*\)", " ", it["item"].lower())
+            cuerpo = re.sub(r"^(?:not )?to ", "", cuerpo).split()
+            if not any(t.strip(",;/") in L["particulas"] for t in cuerpo[1:]):
+                m.append(f"phrasal sin particula de la lista despues del verbo: {it['item']}")
+    else:
+        if rec is not None and not (isinstance(rec, str) and L["rec_de"].match(rec)):
+            m.append(f"reccion fuera del formato controlado ('auf + Akk', 'Dat'): {it['item']} -> {rec!r}")
+        if cl and "mit-Praposition" in cl:
+            if rec is None:
+                m.append(f"mit-Praposition sin reccion: {it['item']}")
+            elif not L["rec_prep"].match(rec):
+                m.append(f"mit-Praposition necesita preposicion + caso en reccion: {it['item']} -> {rec!r}")
+        if cl and "mit-Dativ" in cl and rec != "Dat":
+            m.append(f"mit-Dativ exige reccion 'Dat': {it['item']} -> {rec!r}")
+        if cl and rec is not None and not ({"mit-Praposition", "mit-Dativ"} & set(cl)):
+            m.append(f"reccion sin clase que la justifique: {it['item']} -> {cl}, {rec!r}")
+    return m
+
+
+def r11_consistencia(fichas):
+    """fichas: [(nombre, idioma, [items])]. El mismo verbo, las mismas etiquetas siempre."""
+    vistos, m = {}, []
+    for nom, idioma, items in fichas:
+        for it in items:
+            etq = (tuple(sorted(it.get("claseVerbo") or ())), it.get("reccion"))
+            k = (idioma, clave_verbo(idioma, it["item"]))
+            if k not in vistos:
+                vistos[k] = (etq, nom)
+            elif vistos[k][0] != etq:
+                m.append(f"«{it['item']}» ({idioma}) tiene etiquetas distintas: {vistos[k][0]} en {vistos[k][1]} y {etq} en {nom}")
+    return m
+
+
+def revisar_r11(build, errores):
+    L = listas_r11()
+    fichas = []
+    for f in sorted(glob.glob(os.path.join(build, "*.json"))):
+        d = cargar(f)
+        if not isinstance(d, dict) or "vocabulario" not in d:
+            continue
+        nom = os.path.basename(f)
+        for msg in (x for it in d["vocabulario"] for x in r11_item(d["idioma"], it, L)):
+            errores.append(f"R11 {nom}: {msg}")
+        fichas.append((nom, d["idioma"], d["vocabulario"]))
+    for msg in r11_consistencia(fichas):
+        errores.append(f"R11 {msg}")
+
+
+def _it(item, **kw):
+    d = {"item": item, "prioridad": "nucleo", "traducciones": {"es": "x"}}
+    d.update(kw)
+    return d
+
+
+# (idioma, item, debe_marcar). Lo MALO tiene que marcarse todo; lo BUENO, nada.
+CASOS_R11 = [
+    # --- bueno
+    ("de", _it("kaufen", claseVerbo=["simple"]), False),
+    ("de", _it("sich freuen auf", claseVerbo=["reflexivo", "mit-Praposition"], reccion="auf + Akk"), False),
+    ("de", _it("sich beschweren", claseVerbo=["reflexivo", "mit-Praposition"], reccion="über + Akk / bei + Dat"), False),
+    ("de", _it("tüfteln", claseVerbo=["mit-Praposition"], reccion="an + Dat"), False),
+    ("de", _it("in etwas versinken", claseVerbo=["mit-Praposition"], reccion="in + Akk/Dat"), False),
+    ("de", _it("helfen", claseVerbo=["mit-Dativ"], reccion="Dat"), False),
+    ("de", _it("jemandem zuhören", claseVerbo=["trennbar", "mit-Dativ"], reccion="Dat"), False),
+    ("de", _it("aufräumen", claseVerbo=["trennbar"]), False),
+    ("de", _it("der Umgang mit", reccion="mit + Dat"), False),            # sustantivo: sin claseVerbo
+    ("de", _it("die Verpflichtung gegenüber", reccion="gegenüber + Dat"), False),
+    ("de", _it("der Tisch"), False),
+    ("en", _it("to win", claseVerbo=["simple"]), False),
+    ("en", _it("to turn off the light", claseVerbo=["phrasal-separable"]), False),
+    ("en", _it("to take on (a role)", claseVerbo=["phrasal-separable"]), False),
+    ("en", _it("to look after", claseVerbo=["phrasal-inseparable"]), False),
+    ("en", _it("to stick to", claseVerbo=["phrasal-inseparable"]), False),
+    ("en", _it("not to give up", claseVerbo=["phrasal-separable"]), False),
+    ("en", _it("to listen to your body", claseVerbo=["verbo-preposicion"]), False),
+    ("en", _it("a mistake"), False),
+    # --- malo
+    ("de", _it("kaufen", claseVerbo=["verbo"]), True),                    # etiqueta inventada
+    ("de", _it("kaufen", claseVerbo=["phrasal-separable"]), True),        # etiqueta del otro idioma
+    ("de", _it("kaufen", claseVerbo=[]), True),                           # lista vacia
+    ("de", _it("kaufen", claseVerbo=["simple", "reflexivo"]), True),      # simple no es exclusiva
+    ("de", _it("sich freuen auf", claseVerbo=["reflexivo", "mit-Praposition"]), True),                 # falta reccion
+    ("de", _it("sich freuen auf", claseVerbo=["reflexivo", "mit-Praposition"], reccion="Akk."), True),  # formato viejo
+    ("de", _it("sich freuen auf", claseVerbo=["mit-Praposition"], reccion="+ Akk."), True),
+    ("de", _it("sich freuen auf", claseVerbo=["mit-Praposition"], reccion="auf Akk"), True),            # sin '+'
+    ("de", _it("sich freuen auf", claseVerbo=["mit-Praposition"], reccion="ueber + Akk"), True),       # preposicion fuera de la lista
+    ("de", _it("sich freuen auf", claseVerbo=["mit-Praposition"], reccion="auf + Gen"), True),         # caso fuera de la lista
+    ("de", _it("sich freuen auf", claseVerbo=["mit-Praposition"], reccion="Dat"), True),               # caso sin preposicion
+    ("de", _it("helfen", claseVerbo=["mit-Dativ"]), True),                # falta reccion
+    ("de", _it("helfen", claseVerbo=["mit-Dativ"], reccion="Akk"), True),
+    ("de", _it("helfen", claseVerbo=["mit-Dativ"], reccion="+ Dat."), True),
+    ("de", _it("einsteigen", claseVerbo=["trennbar"], reccion="in + Akk"), True),                      # reccion sin clase que la justifique
+    ("de", _it("der Umgang mit", reccion="+ Dat."), True),                # formato viejo tambien en sustantivos
+    ("de", _it("sich einleben", claseVerbo=["reflexivo"], reccion="reflexiv"), True),
+    ("en", _it("to win", claseVerbo=["trennbar"]), True),
+    ("en", _it("to win", claseVerbo=["simple", "phrasal-separable"]), True),
+    ("en", _it("to look after", claseVerbo=["phrasal-inseparable", "verbo-preposicion"]), True),       # una sola clase
+    ("en", _it("to win", claseVerbo=["simple"], reccion="auf + Akk"), True),                           # reccion en ingles
+    ("en", _it("to win", claseVerbo=["phrasal-separable"]), True),                                      # phrasal sin particula
+    ("en", _it("to give", claseVerbo=["phrasal-separable"]), True),                                    # phrasal sin particula
+    ("en", _it("to make a decision", claseVerbo=["phrasal-inseparable"]), True),
+    ("en", _it("to look after", claseVerbo=["Phrasal"]), True),
+]
+
+
+def autotest_r11():
+    fallos = []
+    L = listas_r11()
+    esq = _esquema()
+    # el patron del esquema coincide con el que reconstruye R11 desde $defs
+    pat_esq = [c["then"]["properties"]["vocabulario"]["items"]["properties"]["reccion"]["pattern"]
+               for c in esq["allOf"] if c.get("if", {}).get("properties", {}).get("idioma", {}).get("const") == "de"
+               and "vocabulario" in c.get("then", {}).get("properties", {})][0]
+    if pat_esq != L["rec_de"].pattern:
+        fallos.append("el patron de reccion del esquema difiere del que R11 reconstruye desde $defs")
+    try:
+        import jsonschema
+        envol = {"$schema": "https://json-schema.org/draft/2020-12/schema", "$defs": esq["$defs"], "type": "object",
+                 "properties": {"vocabulario": {"type": "array", "items": esq["properties"]["vocabulario"]["items"]}},
+                 "allOf": [c for c in esq["allOf"] if "vocabulario" in c.get("then", {}).get("properties", {})]}
+        val = jsonschema.Draft202012Validator(envol)
+    except ImportError:
+        val = None
+    n_malos = n_buenos = marc_malos = marc_buenos = esq_malos = esq_buenos = 0
+    for idi, it, debe in CASOS_R11:
+        hay = bool(r11_item(idi, it, L))
+        if debe:
+            n_malos += 1; marc_malos += hay
+        else:
+            n_buenos += 1; marc_buenos += hay
+        if hay != debe:
+            fallos.append(f"R11 {idi}: esperaba {debe}, dio {hay}: {it['item']} {it.get('claseVerbo')} {it.get('reccion')}")
+        if val is not None:
+            rechaza = not val.is_valid({"idioma": idi, "vocabulario": [it]})
+            esq_malos += debe and rechaza
+            esq_buenos += (not debe) and rechaza
+            if rechaza != debe:
+                fallos.append(f"esquema {idi}: esperaba rechazo={debe}, dio {rechaza}: {it['item']} {it.get('claseVerbo')} {it.get('reccion')}")
+    # coherencia entre fichas
+    a = [("A.json", "de", [_it("helfen", claseVerbo=["mit-Dativ"], reccion="Dat")]),
+         ("B.json", "de", [_it("Helfen", claseVerbo=["mit-Dativ"], reccion="Dat")])]
+    b = [("A.json", "de", [_it("helfen", claseVerbo=["mit-Dativ"], reccion="Dat")]),
+         ("B.json", "de", [_it("helfen", claseVerbo=["simple"])])]
+    c = [("A.json", "en", [_it("to look after", claseVerbo=["phrasal-inseparable"])]),
+         ("B.json", "en", [_it("look after", claseVerbo=["phrasal-separable"])])]
+    d = [("A.json", "en", [_it("to look after", claseVerbo=["phrasal-inseparable"])]),
+         ("B.json", "en", [_it("to look after")])]                       # etiquetado en una ficha y sin etiquetar en otra
+    for nombre, f, debe in (("igual", a, False), ("de-distinta-clase", b, True), ("en-distinta-clase", c, True), ("sin-etiqueta", d, True)):
+        hay = bool(r11_consistencia(f))
+        if hay != debe:
+            fallos.append(f"R11 consistencia '{nombre}': esperaba {debe}, dio {hay}")
+    print(f"autotest R11: {len(CASOS_R11)} casos + 4 de coherencia; "
+          f"malos marcados {marc_malos}/{n_malos}, falsos positivos {marc_buenos}/{n_buenos}"
+          + (f"; el esquema rechaza {esq_malos}/{n_malos} malos y {esq_buenos}/{n_buenos} buenos" if val is not None else "; (sin jsonschema: esquema no probado)")
+          + f", {len(fallos)} fallos")
+    return fallos
+
+
 def autotest():
     fallos = []
     for idi, t, debe in CASOS_R9:
@@ -639,6 +856,7 @@ def autotest():
     for t in EXENTAS_R10:
         if not R10.search(t):
             fallos.append(f"EXENTAS_R10 sobrante (no lleva eszett): {t[:60]}")
+    fallos += autotest_r11()
     print(f"autotest R9/R10: {len(CASOS_R9) + len(CASOS_R10)} casos, "
           f"{len(EXENTAS_R9)} + {len(EXENTAS_R10)} excepciones, {len(fallos)} fallos")
     for f in fallos:
@@ -733,6 +951,9 @@ def main():
                 usadas.add(c)
     for c in sorted(usadas - set(todas)):
         errores.append(f"R5 categoriasUso fuera de la lista cerrada: {c}")
+
+    # R11
+    revisar_r11(a.build, errores)
 
     print(f"{n_a2b1} fichas A2/B1 revisadas, {len(errores)} problemas")
     por_regla = {}
