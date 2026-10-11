@@ -132,3 +132,26 @@ fun TemaLenguApp(
     }
     MaterialTheme(colorScheme = esquema, typography = tipografiaProporcional(familia = familiaTipografica(fuente)), content = content)
 }
+
+/**
+ * Los tres colores de la vista previa de un tema en el selector de Ajustes: fondo, superficie y acento, en el
+ * modo `oscuro` actual. SISTEMA muestra los del color dinamico del dispositivo (o los de Papel si no hay).
+ */
+@Composable
+fun coloresDeVistaPrevia(familia: FamiliaTema, oscuro: Boolean): Triple<Color, Color, Color> {
+    val contexto = LocalContext.current
+    if (familia == FamiliaTema.SISTEMA && colorDinamicoDisponible()) {
+        val e = if (oscuro) dynamicDarkColorScheme(contexto) else dynamicLightColorScheme(contexto)
+        return Triple(e.background, e.surface, e.primary)
+    }
+    val p = paletaPara(familia, oscuro)
+    return Triple(p.fondo, p.superficie, p.acento)
+}
+
+/** Si el modo elegido (claro / oscuro / sistema) se ve oscuro ahora. */
+@Composable
+fun modoSeVeOscuro(modo: ModoTema): Boolean = when (modo) {
+    ModoTema.CLARO -> false
+    ModoTema.OSCURO -> true
+    ModoTema.SEGUN_SISTEMA -> isSystemInDarkTheme()
+}

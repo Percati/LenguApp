@@ -9,6 +9,10 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.longClick
 import androidx.compose.ui.test.hasAnyChild
 import androidx.compose.ui.test.hasScrollAction
+import androidx.compose.ui.layout.boundsInRoot
+import androidx.compose.ui.test.assertCountEquals
+import io.github.percati.lenguapp.modelo.FuenteTema
+import org.junit.Assert.assertTrue
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onFirst
@@ -34,6 +38,8 @@ import org.robolectric.shadows.ShadowToast
  * idioma de la aplicacion unificado, aviso de idioma no disponible.
  */
 @RunWith(RobolectricTestRunner::class)
+// Pantalla alta: la tira de ajustes entera se compone y se mide (el orden de los selectores).
+@org.robolectric.annotation.Config(qualifiers = "w400dp-h3000dp")
 class AjustesScreenTest {
 
     @get:Rule
@@ -63,9 +69,8 @@ class AjustesScreenTest {
     fun `tocar un idioma no seleccionado abre el menu de nivel, y elegir uno lo agrega`() {
         val actual = montar(Ajustes(idiomasAprendidos = emptyMap()))
 
-        // "EN" aparece tambien en el selector de idioma de la aplicacion mas
-        // abajo: la primera ocurrencia es la de "Idioma que aprendes".
-        composeTestRule.onAllNodesWithText("EN").onFirst().performClick()
+        // El chip del idioma que se aprende dice "Inglés" (en el idioma de app); el de la aplicacion, "English".
+        composeTestRule.onNodeWithText("Inglés").performClick()
         composeTestRule.onNodeWithText("C1").performClick()
 
         assertEquals(mapOf(Idioma.EN to Nivel.C1), actual().idiomasAprendidos)
@@ -75,7 +80,7 @@ class AjustesScreenTest {
     fun `tocar un idioma ya seleccionado lo saca`() {
         val actual = montar(Ajustes(idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2, Idioma.EN to Nivel.C1)))
 
-        composeTestRule.onAllNodesWithText("DE").onFirst().performClick()
+        composeTestRule.onNodeWithText("Alemán").performClick()
 
         assertEquals(mapOf(Idioma.EN to Nivel.C1), actual().idiomasAprendidos)
     }
@@ -95,10 +100,8 @@ class AjustesScreenTest {
     fun `elegir un idioma de la aplicacion escribe base e interfaz con el mismo valor y apaga segun el sistema`() {
         val actual = montar(Ajustes(idiomaBase = Idioma.ES, idiomaInterfaz = Idioma.ES, idiomaSegunSistema = true))
 
-        // "DE" aparece dos veces en pantalla (la pestaña de idioma aprendido
-        // y el selector de idioma de la aplicacion): se toma la ultima, que
-        // es el selector de idioma de la aplicacion.
-        composeTestRule.onAllNodesWithText("DE").onLast().performClick()
+        // El selector de idioma de la aplicacion muestra cada idioma con su propio nombre ("Deutsch").
+        composeTestRule.onNodeWithText("Deutsch").performClick()
 
         val ajustes = actual()
         assertEquals(Idioma.DE, ajustes.idiomaBase)
@@ -121,7 +124,7 @@ class AjustesScreenTest {
     fun `mantener pulsado un idioma sin contenido muestra un toast en el idioma de interfaz`() {
         montar(Ajustes(idiomaInterfaz = Idioma.EN))
 
-        composeTestRule.onAllNodesWithText("ES").onFirst().performTouchInput { longClick() }
+        composeTestRule.onNodeWithText("Spanish").performTouchInput { longClick() }
 
         assertEquals(mensajeIdiomaNoDisponible(Idioma.EN, Idioma.ES), ShadowToast.getTextOfLatestToast())
     }
@@ -200,7 +203,7 @@ class AjustesScreenTest {
             )
         }
 
-        composeTestRule.onAllNodesWithText("EN").onFirst().performClick()
+        composeTestRule.onNodeWithText("Inglés").performClick()
 
         composeTestRule.onNodeWithText("B2").assertExists()
         composeTestRule.onNodeWithText("C1").assertExists()
@@ -210,5 +213,87 @@ class AjustesScreenTest {
 
         composeTestRule.onNodeWithText("B2").performClick()
         assertEquals(mapOf(Idioma.EN to Nivel.B2), obtenerActual().idiomasAprendidos)
+    }
+
+    // --- Ronda G: tema, modo y tipografia ---
+
+    @Test
+    fun `el orden de los ajustes es idioma, tema, modo, tipografia`() {
+        montar(Ajustes())
+        fun top(texto: String) = composeTestRule.onAllNodes(hasText(texto)).fetchSemanticsNodes().first().boundsInRoot.top
+        val idioma = top(etiquetaIdiomaApp(Idioma.ES))
+        val tema = top(etiquetaEstiloVisual(Idioma.ES))
+        val modo = top(etiquetaModo(Idioma.ES))
+        val fuente = top(etiquetaFuente(Idioma.ES))
+        assertTrue("idioma < tema < modo < tipografia: $idioma $tema $modo $fuente", idioma < tema && tema < modo && modo < fuente)
+    }
+
+    @Test
+    fun `el selector de tema ofrece los cuatro temas con su nombre en el idioma de app`() {
+        montar(Ajustes(idiomaInterfaz = Idioma.DE, idiomaBase = Idioma.DE))
+        for (n in listOf("Papier", "Terrakotta", "Meer", "Graphit")) composeTestRule.onNodeWithText(n).assertExists()
+        composeTestRule.onAllNodes(hasText("Academia")).assertCountEquals(0)
+    }
+
+    @Test
+    fun `elegir Terracota o Grafito escribe la familia sin tocar modo ni tipografia`() {
+        val actual = montar(Ajustes(familiaTema = FamiliaTema.PAPEL, modoTema = ModoTema.OSCURO, fuente = FuenteTema.CLARA))
+        filaConChip("Terracota").performScrollTo()
+        composeTestRule.onNodeWithText("Terracota").performClick()
+        assertEquals(FamiliaTema.TERRACOTA, actual().familiaTema)
+        filaConChip("Grafito").performScrollTo()
+        composeTestRule.onNodeWithText("Grafito").performClick()
+        assertEquals(FamiliaTema.GRAFITO, actual().familiaTema)
+        assertEquals(ModoTema.OSCURO, actual().modoTema)
+        assertEquals(FuenteTema.CLARA, actual().fuente)
+    }
+
+    @Test
+    fun `la vista previa de cada tema son tres puntos de color, fondo superficie y acento`() {
+        // los colores de la vista previa salen de la paleta del modo actual
+        val papel = paletaPara(FamiliaTema.PAPEL, false)
+        assertEquals(androidx.compose.ui.graphics.Color(0xFFF7F6F2), papel.fondo)
+        assertEquals(androidx.compose.ui.graphics.Color(0xFFFFFFFF), papel.superficie)
+        assertEquals(androidx.compose.ui.graphics.Color(0xFF2F5D8A), papel.acento)
+        val mar = paletaPara(FamiliaTema.MAR, true)
+        assertEquals(androidx.compose.ui.graphics.Color(0xFF0F1A1C), mar.fondo)
+        assertEquals(androidx.compose.ui.graphics.Color(0xFF172426), mar.superficie)
+        assertEquals(androidx.compose.ui.graphics.Color(0xFF6FC4C9), mar.acento)
+    }
+
+    @Test
+    fun `cada opcion de tema dibuja sus tres puntos de color en la pantalla`() {
+        var previas: List<Triple<androidx.compose.ui.graphics.Color, androidx.compose.ui.graphics.Color, androidx.compose.ui.graphics.Color>> = emptyList()
+        composeTestRule.setContent {
+            previas = familiasOfrecidas().map { coloresDeVistaPrevia(it, oscuro = false) }
+        }
+        assertTrue(previas.size >= 4)
+        // las cuatro paletas fijas son distintas entre si
+        assertEquals(previas.take(4).toSet().size, 4)
+    }
+
+    @Test
+    fun `el selector de tipografia tiene las tres opciones y elegir una la escribe sin tocar el tema`() {
+        val actual = montar(Ajustes(familiaTema = FamiliaTema.MAR))
+        filaConChip("Lectura").performScrollTo()
+        composeTestRule.onNodeWithText("Clara").assertExists()
+        composeTestRule.onAllNodes(hasText("Aa")).assertCountEquals(3)
+        composeTestRule.onNodeWithText("Lectura").performClick()
+        assertEquals(FuenteTema.LECTURA, actual().fuente)
+        assertEquals(FamiliaTema.MAR, actual().familiaTema)
+    }
+
+    @Test
+    fun `los chips de idioma muestran el nombre, no el codigo de dos letras`() {
+        montar(Ajustes(idiomaInterfaz = Idioma.FR, idiomaBase = Idioma.FR))
+        // idioma que se aprende: nombre en el idioma de app (frances)
+        composeTestRule.onNodeWithText("Allemand").assertExists()
+        composeTestRule.onNodeWithText("Anglais").assertExists()
+        // idioma de la aplicacion: cada uno con su propio nombre
+        for (n in listOf("Español", "English", "Deutsch", "Français", "Italiano", "Português")) {
+            // (en frances, "Français" sale tambien en el chip del idioma que se aprende)
+            assertTrue(n, composeTestRule.onAllNodes(hasText(n)).fetchSemanticsNodes().isNotEmpty())
+        }
+        for (codigo in listOf("EN", "DE", "ES", "FR", "IT", "PT")) composeTestRule.onAllNodes(hasText(codigo)).assertCountEquals(0)
     }
 }

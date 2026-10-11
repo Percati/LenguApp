@@ -26,6 +26,14 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material3.Icon
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontFamily
+import io.github.percati.lenguapp.modelo.FuenteTema
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -103,6 +111,7 @@ fun AjustesScreen(
         SelectorFamiliaTema(
             idiomaInterfaz = idiomaAplicacionEfectivo,
             familiaElegida = ajustes.familiaTema,
+            modo = ajustes.modoTema,
             onElegir = { onAjustesCambiados(ajustes.copy(familiaTema = it)) },
         )
 
@@ -110,6 +119,12 @@ fun AjustesScreen(
             idiomaInterfaz = idiomaAplicacionEfectivo,
             modoElegido = ajustes.modoTema,
             onElegir = { onAjustesCambiados(ajustes.copy(modoTema = it)) },
+        )
+
+        SelectorFuente(
+            idiomaInterfaz = idiomaAplicacionEfectivo,
+            fuenteElegida = ajustes.fuente,
+            onElegir = { onAjustesCambiados(ajustes.copy(fuente = it)) },
         )
     }
 }
@@ -153,7 +168,7 @@ private fun SelectorIdiomasAprendidos(
                                 onClick = {
                                     if (nivelActual != null) onCambiar(idiomasAprendidos - idioma) else menuAbiertoPara = idioma
                                 },
-                                label = { Text(idioma.name) },
+                                label = { Text(nombreIdioma(idioma, idiomaInterfaz)) },
                             )
                             DropdownMenu(expanded = menuAbiertoPara == idioma, onDismissRequest = { menuAbiertoPara = null }) {
                                 Text(
@@ -202,7 +217,7 @@ private fun IdiomaNoDisponible(idioma: Idioma, idiomaInterfaz: Idioma, contexto:
             onLongClick = { Toast.makeText(contexto, mensajeIdiomaNoDisponible(idiomaInterfaz, idioma), Toast.LENGTH_SHORT).show() },
         ),
     ) {
-        Text(idioma.name, modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp))
+        Text(nombreIdioma(idioma, idiomaInterfaz), modifier = Modifier.padding(horizontal = 12.dp, vertical = 8.dp))
     }
 }
 
@@ -236,7 +251,7 @@ private fun SelectorIdiomaAplicacion(
                 FilterChip(
                     selected = !idiomaSegunSistema && idioma == idiomaElegido,
                     onClick = { onElegirIdioma(idioma) },
-                    label = { Text(idioma.name) },
+                    label = { Text(nombreIdioma(idioma, idioma)) },
                 )
             }
         }
@@ -255,7 +270,8 @@ private fun nombreVisible(modo: ModoTema, idiomaInterfaz: Idioma): String = when
  * (nombreTema); SISTEMA solo se ofrece donde hay color dinamico (API 31+).
  */
 @Composable
-private fun SelectorFamiliaTema(idiomaInterfaz: Idioma, familiaElegida: FamiliaTema, onElegir: (FamiliaTema) -> Unit) {
+private fun SelectorFamiliaTema(idiomaInterfaz: Idioma, familiaElegida: FamiliaTema, modo: ModoTema, onElegir: (FamiliaTema) -> Unit) {
+    val oscuro = modoSeVeOscuro(modo)
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Text(etiquetaEstiloVisual(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
         Row(
@@ -266,7 +282,16 @@ private fun SelectorFamiliaTema(idiomaInterfaz: Idioma, familiaElegida: FamiliaT
                 FilterChip(
                     selected = familia == familiaElegida,
                     onClick = { onElegir(familia) },
-                    label = { Text(nombreTema(familia, idiomaInterfaz)) },
+                    label = {
+                        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            Text(nombreTema(familia, idiomaInterfaz))
+                            // Vista previa: fondo, superficie y acento del tema en el modo actual.
+                            val (fondo, superficie, acento) = coloresDeVistaPrevia(familia, oscuro)
+                            Row(horizontalArrangement = Arrangement.spacedBy(3.dp)) {
+                                for (color in listOf(fondo, superficie, acento)) PuntoDeColor(color)
+                            }
+                        }
+                    },
                 )
             }
         }
@@ -311,6 +336,44 @@ private fun EncabezadoApp(idiomaInterfaz: Idioma, onAcercaDe: () -> Unit) {
         ) {
             Text(etiquetaAcercaDe(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
             Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
+        }
+    }
+}
+
+/** Un punto de color de la vista previa de un tema, con un borde fino para que se vea aunque sea del color del fondo. */
+@Composable
+private fun PuntoDeColor(color: Color) {
+    Box(
+        Modifier
+            .size(14.dp)
+            .clip(CircleShape)
+            .background(color)
+            .border(0.75.dp, MaterialTheme.colorScheme.outline, CircleShape),
+    )
+}
+
+/** Tipografia: cada opcion escribe su nombre en su propia fuente, con una muestra corta ("Aa"). */
+@Composable
+private fun SelectorFuente(idiomaInterfaz: Idioma, fuenteElegida: FuenteTema, onElegir: (FuenteTema) -> Unit) {
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text(etiquetaFuente(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
+        Row(
+            modifier = Modifier.horizontalScroll(rememberScrollState()),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            FuenteTema.entries.forEach { fuente ->
+                val familia = familiaTipografica(fuente) ?: FontFamily.Default
+                FilterChip(
+                    selected = fuente == fuenteElegida,
+                    onClick = { onElegir(fuente) },
+                    label = {
+                        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            Text("Aa", fontFamily = familia, fontWeight = FontWeight.Bold)
+                            Text(nombreFuente(fuente, idiomaInterfaz), fontFamily = familia)
+                        }
+                    },
+                )
+            }
         }
     }
 }
