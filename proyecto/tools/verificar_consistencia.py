@@ -44,7 +44,12 @@ Sale con codigo 1 si hay algun error. Reglas (ver REGLAS-PREVENCION.md):
   R9  El texto de INSTRUCCION de aleman, frances e italiano trata al
       aprendiente de TU (decision de Fer del 10-10-2026: tu en todos los
       idiomas). Se revisan solo los campos donde la app le habla al
-      aprendiente (CAMPOS_R9) y NO las ramas de contenido ensenado
+      aprendiente (CAMPOS_R9), tanto cuando son objeto bilingue
+      {idioma: texto} como cuando son un string plano: en B2/C1/C2 la prosa es
+      monolingue, asi que el campo es un string y el idioma del texto es el de
+      la ficha, no la ultima clave del camino. Quedan fuera 'dia' y 'minutos'
+      de las micro-tareas, que no son prosa. NO se revisan las ramas de
+      contenido ensenado
       (PROHIBIDAS_R9: redemittel, ejemplos, cuadroReferencia, contraste,
       erroresContrastivos, vocabulario), donde el registro formal puede ser
       justamente lo que se ensena. Tampoco se mira dentro de « » ni de *…*:
@@ -55,6 +60,13 @@ Sale con codigo 1 si hay algun error. Reglas (ver REGLAS-PREVENCION.md):
       ('che cosa ha detto il medico?'). La regla no puede distinguirlas y no
       las marca; las 15 cadenas de esa clase se arreglaron a mano en oct 2026
       y hay que revisarlas a ojo al escribir contenido nuevo (FALTANTES 6.1).
+
+      En las cadenas planas alemanas el riesgo es el inverso: 'Sie' al
+      principio de oracion puede ser «ella» o «ellos» (la prosa de los nucleos
+      habla DE las formas gramaticales: «Sie sind das Kennzeichen des
+      Bürokratiestils»), y 'Ihr' puede ser «su (de ellos)». La forma es la
+      misma que la de cortesia, asi que esas cadenas van en EXENTAS_R9 con su
+      motivo. 'sie' en minuscula nunca es cortesia y la regla no la mira.
 
   R11 Verbos de la Biblioteca (prompt 20, oct 2026): vocabulario[].claseVerbo
       + nucleos verbales de las colocaciones (prompt 23): nucleoVerbal/claseNucleo/reccionNucleo
@@ -482,7 +494,47 @@ EXENTAS_R9 = {
     "Sie werden ständig zu Hause, in der Schule und bei der Arbeit verwendet.": "'Sie' de tercera persona del plural (los phrasal verbs / los conectores / las expresiones), no cortesia",
     "Auf B1-Niveau lernst du die häufigsten alltäglichen «phrasal verbs»: «get up, look for, find out». Sie werden im gesprochenen Englisch ständig verwendet; wer sie zugunsten formeller Einwortverben vermeidet, klingt im Alltag steif und unnatürlich.": "'Sie' de tercera persona del plural (los phrasal verbs / los conectores / las expresiones), no cortesia",
     "Auf B1-Niveau verknüpfst du Ideen mit einfachen Konnektoren: «and, but, so, because». Sie sind die grundlegenden Bausteine, aus denen später auf B2- und C1-Niveau ein breiteres Repertoire entsteht, bei dem Register und Nuancen wichtiger werden.": "'Sie' de tercera persona del plural (los phrasal verbs / los conectores / las expresiones), no cortesia",
-    "Scrivi un breve dialogo: ordini del cibo. Con *order*.": "'ordini' es presente de 2a persona dentro de la escena (vos pedis comida), no imperativo de cortesia: la frase ya trata de tu"
+    "Scrivi un breve dialogo: ordini del cibo. Con *order*.": "'ordini' es presente de 2a persona dentro de la escena (vos pedis comida), no imperativo de cortesia: la frase ya trata de tu",
+    "Ich hätte gern, dass… ist höflicher als Sie müssen das reparieren und passt gut zu einer schriftlichen Beschwerde.":
+        "contenido ensenado: el contraste du/Sie o un ejemplo citado en formal",
+    "Eine konkrete Frist macht die Forderung viel wirksamer als bitte kümmern Sie sich bald darum.":
+        "contenido ensenado: el contraste du/Sie o un ejemplo citado en formal",
+    "Auf B2 wählt man sicher zwischen du und Sie und passt die Wortwahl entsprechend an. Die feineren sechs Achsen des Registers (C1) sind hier noch nicht das Ziel — es reicht, konsequent bei einer Anrede zu bleiben und die passende Grussformel zu wählen.":
+        "contenido ensenado: el contraste du/Sie o un ejemplo citado en formal",
+    "Sie und du dürfen innerhalb eines Textes nicht gemischt werden — das ist der häufigste Registerfehler.":
+        "contenido ensenado: el contraste du/Sie o un ejemplo citado en formal",
+    "Bei Unsicherheit ist Sie die sicherere Wahl in einer ersten Nachricht an eine unbekannte Person.":
+        "contenido ensenado: el contraste du/Sie o un ejemplo citado en formal",
+    "Ist die Anrede (du oder Sie) im ganzen Text konsequent?":
+        "contenido ensenado: el contraste du/Sie o un ejemplo citado en formal",
+    "Ist Sie bei einer unbekannten Person die sichere Wahl?":
+        "contenido ensenado: el contraste du/Sie o un ejemplo citado en formal",
+    "Auf C1 geht Register über du/Sie hinaus: dieselbe Aussage klingt je nach Wortwahl, Satzbau und Nominalstil unterschiedlich formell, unabhängig von der Anrede. Das Ziel ist, denselben Inhalt bewusst in zwei oder drei Registern formulieren zu können.":
+        "contenido ensenado: el contraste du/Sie o un ejemplo citado en formal",
+    "Register hängt nicht nur von du/Sie ab, sondern auch von Nominalstil, Wortwahl und Satzlänge.":
+        "contenido ensenado: el contraste du/Sie o un ejemplo citado en formal",
+    "*Soll* und *will* subjektiv sind hochfrequent in Nachrichten und im Klatsch. Sie zu verstehen ist Hörverstehen; sie zu benutzen ist B2+.":
+        "'Sie'/'Ihr' de tercera persona: habla de las formas gramaticales, no del lector",
+    "Neben den klassischen Modalverben gibt es im Deutschen eine kleine Gruppe von Vollverben, die selbst eine Modalbedeutung tragen: scheinen (Anschein), pflegen (Gewohnheit), drohen (negative Erwartung). Sie werden wie normale Verben mit zu + Infinitiv konstruiert.":
+        "'Sie'/'Ihr' de tercera persona: habla de las formas gramaticales, no del lector",
+    "Die Apposition — ein Nomen, das ein anderes ohne Verb näher bestimmt — ist eine der kompaktesten Verdichtungsformen des Deutschen: Merkel, die damalige Bundeskanzlerin, äusserte sich dazu. Sie ersetzt einen ganzen Relativsatz mit Kopula und wird in Berichten und Biografien systematisch genutzt.":
+        "'Sie'/'Ihr' de tercera persona: habla de las formas gramaticales, no del lector",
+    "Sie funktioniert nur, wenn die Kopula (ist, war) wegfallen kann, ohne dass Information verloren geht.":
+        "'Sie'/'Ihr' de tercera persona: habla de las formas gramaticales, no del lector",
+    "Auf C2 werden seltenere, bildungssprachliche Redewendungen beherrscht, deren Ursprung oft literarisch oder historisch ist: den Rubikon überschreiten, ein Danaergeschenk, auf Sand gebaut sein. Ihre Verwendung signalisiert Bildung, birgt aber das Risiko, gestelzt zu wirken, wenn sie zu häufig eingesetzt werden.":
+        "'Sie'/'Ihr' de tercera persona: habla de las formas gramaticales, no del lector",
+    "Ein Funktionsverbgefüge ersetzt ein einfaches Verb durch Verb plus Nomen: in Betracht ziehen statt erwägen, zur Verfügung stellen statt geben. Sie sind das Kennzeichen des deutschen Bürokratie-, Wirtschafts- und Wissenschaftsstils und klingen, richtig eingesetzt, kompetent und sachlich — falsch dosiert, aufgeblasen.":
+        "'Sie'/'Ihr' de tercera persona: habla de las formas gramaticales, no del lector",
+    "Modalpartikeln tragen keine eigene Bedeutung, sondern drücken die Haltung der sprechenden Person aus: Erwartung, gemeinsames Wissen, Freundlichkeit, Ungeduld. Sie sind der Hauptgrund dafür, dass grammatisch fehlerfreies Deutsch trotzdem fremd klingen kann. *Komm her* und *Komm doch mal her* sind beide korrekt — nur der zweite Satz klingt, als hätte ihn eine deutschsprachige Person gesagt. Sie sind immer **unbetont**.":
+        "'Sie'/'Ihr' de tercera persona: habla de las formas gramaticales, no del lector",
+    "Ihr völliges Fehlen wirkt steif oder sogar unhöflich — der häufigste Effekt bei Lernenden auf B2.":
+        "'Sie'/'Ihr' de tercera persona: habla de las formas gramaticales, no del lector",
+    "Könnten Sie das bitte **mal** prüfen ist höflicher als ohne mal, nicht weniger höflich.":
+        "contenido ensenado: el contraste du/Sie o un ejemplo citado en formal",
+    "Du oder Sie — beim Amt und unter Kollegen":
+        "contenido ensenado: el contraste du/Sie o un ejemplo citado en formal",
+    "Konzentrier dich ausschliesslich auf die Konsistenz von du/Sie und die passende Grussformel. Prüf, ob Anrede und Wortwahl im ganzen Text zusammenpassen. Schreib den Text nicht neu.":
+        "el prompt habla justamente de la coherencia du/Sie",
 }
 
 EXENTAS_R10 = {
@@ -515,7 +567,7 @@ EXENTAS_R10 = {
     "Das **ß existiert im Schweizer Standard nicht**. Immer *ss*. Das ist Norm, nicht Nachlässigkeit.": "la eszett es el objeto de la explicacion (DE-V08)",
     "Ein ß in einem Schweizer Dokument.": "la eszett es el objeto de la explicacion (DE-V08)",
     "Kein einziges ß im Text?": "la eszett es el objeto de la explicacion (DE-V08)",
-    "Konzentrieren Sie sich ausschliesslich auf die Schweizer Standardvarietät. (1) Markieren Sie jeden Helvetismus und sagen Sie, ob er Standard oder Mundart ist. (2) Prüfen Sie die ss/ß-Schreibung. (3) Markieren Sie bundesdeutsche Formen, die in einem Schweizer Protokoll auffallen würden. (4) Ist das Register für ein Protokoll formell genug? Schreiben Sie den Text nicht neu.": "la eszett es el objeto de la explicacion (DE-V08)",
+    "Konzentrier dich ausschliesslich auf die Schweizer Standardvarietät. (1) Markier jeden Helvetismus und sag, ob er Standard oder Mundart ist. (2) Prüf die ss/ß-Schreibung. (3) Markier bundesdeutsche Formen, die in einem Schweizer Protokoll auffallen würden. (4) Ist das Register für ein Protokoll formell genug? Schreib den Text nicht neu.": "la eszett es el objeto de la explicacion (DE-V08)",
     "kein ß, immer ss": "la eszett es el objeto de la explicacion (DE-V08)",
     "ß in Standardtexten": "la eszett es el objeto de la explicacion (DE-V08)",
     "Das fehlende ß ist in der Schweiz Norm, nicht Nachlässigkeit, und gilt für alle Textsorten, auch sehr formelle.": "la eszett es el objeto de la explicacion (DE-V08)",
@@ -537,6 +589,18 @@ def _enmascarar_r9(t):
     """Tapa « » y *…*: ahi dentro va el idioma que se aprende."""
     t = re.sub("\u00ab[^\u00bb]*\u00bb", lambda m: " " * len(m.group(0)), t)
     return re.sub(r"\*\*?[^*]+\*\*?", lambda m: " " * len(m.group(0)), t)
+
+
+# 'dia' y 'minutos' de las micro-tareas no son prosa (ver $comment del schema).
+NO_PROSA_R9 = ("dia", "minutos")
+
+
+def _idioma_ficha(d, nom):
+    """Idioma que se aprende: el de la ficha, o el prefijo del nombre."""
+    i = d.get("idioma")
+    if i:
+        return i
+    return "de" if nom.upper().startswith("DE") else "en"
 
 
 def _es_instruccion(ruta):
@@ -570,8 +634,11 @@ def marca_r9(idi, t):
 
 
 def revisar_r9_r10(d, nom, errores):
+    propio = _idioma_ficha(d, nom)
     for ruta, t in _textos_con_ruta(d):
-        idi = ruta[-1] if ruta and isinstance(ruta[-1], str) else None
+        ult = ruta[-1] if ruta and isinstance(ruta[-1], str) else None
+        # campo bilingue: el idioma es la ultima clave; campo plano: el de la ficha
+        idi = ult if ult in LANGS else (None if ult in NO_PROSA_R9 else propio)
         if idi in ("de", "fr", "it") and _es_instruccion(ruta) and t not in EXENTAS_R9:
             m = marca_r9(idi, t)
             if m:
@@ -629,7 +696,27 @@ CASOS_R9 = [
     # pero aqui es presente de 2a persona dentro de la escena; se resuelve
     # con la excepcion explicita, no con la regla.
     ("it", "Scrivi un breve dialogo: ordini del cibo. Con *order*.", False),
+    # --- cadenas planas de B2/C1/C2 (prompt 26) ---
+    ("de", "Nehmen Sie Stellung zu der Frage und begruenden Sie kurz.", True),
+    ("de", "Nimm Stellung zu der Frage und begruende kurz.", False),
+    ("de", "Wie sicher sind Sie wirklich?", True),
+    ("de", "Wie sicher bist du wirklich?", False),
+    ("de", "Ihre Meinung in einem Satz, zwei Gruende darunter.", True),
+    ("de", "Deine Meinung in einem Satz, zwei Gruende darunter.", False),
+    ("de", "Moderieren Sie ein Gespraech und fassen Sie am Ende zusammen.", True),
+    ("de", "Moderier ein Gespraech und fass am Ende zusammen.", False),
+    # 'sie' en minuscula nunca es cortesia: la regla no la mira
+    ("de", "Die Modalpartikeln sind unbetont; sie tragen keine eigene Bedeutung.", False),
+    ("de", "sie werden staendig zu Hause und bei der Arbeit verwendet.", False),
+    # 'Sie' a principio de oracion como «ellos»: la forma es la misma que la de
+    # cortesia, asi que la regla la marca y se resuelve con la excepcion
+    ("de", "Sie werden ständig zu Hause, in der Schule und bei der Arbeit verwendet.", False),
+    ("de", "Ihr völliges Fehlen wirkt steif oder sogar unhöflich — der häufigste Effekt bei Lernenden auf B2.", False),
+    # las dos exenciones de DE-F13: el contraste du/Sie que se ensena
+    ("de", "Schreib zwei kurze Nachrichten: eine an deine Nachbarin (Sie) und eine an einen Freund (du). Es geht um den Müll im Haus.", False),
+    ("de", "Eine Kollegin ist überfordert. Schreib ihr eine Nachricht (du) und eine E-Mail an den Chef (Sie).", False),
 ]
+
 CASOS_R10 = [
     ("Das Haus wurde vor dreißig Jahren gebaut.", True),
     ("Das Haus wurde vor dreissig Jahren gebaut.", False),
@@ -976,6 +1063,23 @@ def autotest():
         if not R10.search(t):
             fallos.append(f"EXENTAS_R10 sobrante (no lleva eszett): {t[:60]}")
     fallos += autotest_r11()
+    # coherencia: el idioma de una cadena plana sale de la ficha, y los campos
+    # planos de instruccion se alcanzan (lo que el prompt 19 no miraba)
+    if _idioma_ficha({"idioma": "de"}, "x.json") != "de":
+        fallos.append("coherencia: _idioma_ficha no respeta d['idioma']")
+    if _idioma_ficha({}, "DE-F01-B2.json") != "de":
+        fallos.append("coherencia: _idioma_ficha no deriva 'de' del nombre")
+    if _idioma_ficha({}, "EN-F01-B2.json") != "en":
+        fallos.append("coherencia: _idioma_ficha no deriva 'en' del nombre")
+    for ruta in (("promptCorreccion",), ("mision", "consigna"),
+                 ("apariciones", 0, "microtareas", 0, "texto"),
+                 ("apariciones", 0, "mision", "requisitos", 0)):
+        if not _es_instruccion(ruta):
+            fallos.append(f"coherencia: {ruta} deberia ser campo de instruccion")
+    for ruta in (("redemittel", 0, "expresion"), ("ejemplos", 0, "texto"),
+                 ("vocabulario", 0, "item")):
+        if _es_instruccion(ruta):
+            fallos.append(f"coherencia: {ruta} no deberia ser campo de instruccion")
     print(f"autotest R9/R10: {len(CASOS_R9) + len(CASOS_R10)} casos, "
           f"{len(EXENTAS_R9)} + {len(EXENTAS_R10)} excepciones, {len(fallos)} fallos")
     for f in fallos:

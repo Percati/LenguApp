@@ -267,6 +267,82 @@ ahí. Si el criterio es que el aprendiente vea siempre `du`, hay que tocar
 `redemittel` y `vocabulario`, no las instrucciones — y eso cambia el lema
 que se enseña, así que es una decisión aparte.
 
+#### 6.1.4 — El tuteo que R9 nunca miró: las cadenas planas de B2/C1/C2: ✅ hecho (Traducciones, 11-oct-2026)
+
+El prompt 19 pidió marcar el registro «bajo las claves `de`, `fr`, `it`», y
+eso dejó afuera **todas las cadenas planas**: en B2/C1/C2 la prosa de
+instrucción es monolingüe, así que el campo es un `string` y R9 no lo
+miraba. **458 cadenas** en 128 archivos pasaron a `du`.
+
+**Conteo real por campo y nivel** (solo alemán; el inglés no distingue trato
+y `fr`/`it` no tienen ni una cadena plana — comprobado):
+
+| campo | B2 | C1 | C2 | total |
+|---|---|---|---|---|
+| `apariciones/mision/consigna` | 62 | 60 | 60 | 182 |
+| `promptCorreccion` | 39 | 41 | 27 | 107 |
+| `apariciones/microtareas/texto` | 35 | 41 | 17 | 93 |
+| `apariciones/mision/requisitos` | 6 | 16 | 18 | 40 |
+| `microtareas` (semanas especiales) | 16 | 6 | 1 | 23 |
+| `consigna` (semanas especiales) | 3 | 5 | 5 | 13 |
+| **total convertido** | **161** | **169** | **128** | **458** |
+| `notas` / `descripcion` / `autochequeo` / `subtitulo` (exentas) | 11 | 5 | 3 | 19 |
+
+**Dónde difiere de la tabla del prompt 26.** Las filas de **A2 y B1 de esa
+tabla no existen**: en A2/B1 los campos de instrucción son objetos bilingües
+y el prompt 19 ya los había pasado a `du`. Las únicas cadenas planas de
+A2/B1 son las 360 de `microtareas/dia` (`lun`, `mie`, `vie`), que no son
+prosa. Eso explica la diferencia entre el «~699» del encabezado y las 477
+que mide R9: 477 − 19 exentas = 458 convertidas. Por campo, en B2/C1/C2 las
+dos mediciones coinciden salvo tres celdas de B2 (micro-tareas 51 contra 54,
+notas 6 contra 5, descripción/subtítulo 3 contra 4), diferencia de
+convención al contar, no de contenido.
+
+**Las 19 exentas, en dos clases** (todas en `EXENTAS_R9` con su motivo):
+
+- **`Sie`/`Ihr` de tercera persona** (8): la prosa de los núcleos habla *de*
+  las formas gramaticales. «Modalpartikeln … **Sie** sind der Hauptgrund
+  dafür, dass …», «Ein Funktionsverbgefüge … **Sie** sind das Kennzeichen des
+  deutschen Bürokratiestils», «**Ihr** völliges Fehlen wirkt steif». La forma
+  es idéntica a la de cortesía y ninguna regla puede distinguirlas.
+- **Contenido enseñado** (11): el contraste du/Sie de las fichas de registro
+  y los ejemplos citados en formal. «**Sie** und du dürfen innerhalb eines
+  Textes nicht gemischt werden», «Ich hätte gern, dass… ist höflicher als
+  **Sie müssen das reparieren**», «Ist die Anrede (du oder **Sie**) im ganzen
+  Text konsequent?», «Du oder **Sie** — beim Amt und unter Kollegen».
+
+**Lo que hubo que arreglar a mano: 30 cadenas.** 27 por el residuo que el
+transformador no resolvía (`Sie` como objeto — «was Sie daran hält» →
+«was dich daran hält»; sujeto compuesto — «Sie und ein Kollege sollen» →
+«Du und ein Kollege sollt»; recíprocos — «wie Sie sich … annähern» → «wie
+ihr euch … annähert») y 3 defectos que encontró el barrido a ojo y los
+chequeos mecánicos no veían:
+
+- `*Bildungsideal* vertreten Sie?` quedaba como `*Bildungsideal* vertritt?`,
+  sin sujeto: tras una marca `*…*` o un guion, un verbo en **minúscula** es
+  una inversión interrogativa, no un imperativo. La regla del transformador
+  ahora exige mayúscula en esa posición.
+- `— hören Sie den Unterschied?` → `hörst du den Unterschied?`, mismo caso.
+- Dos auxiliares coordinados al final de la oración que se quedaron en plural
+  («und später erfahren **haben**» → «erfahren **hast**»).
+
+**Efecto colateral del schema, otra vez.** El imperativo informal es más
+corto, y **14 `promptCorreccion` de núcleos `de` de B2/C1/C2** quedaron bajo
+el mínimo de 150 caracteres. Se alargaron una frase en estilo de la casa
+(`Markier jeden Fehler einzeln.` / `Nenn zu jedem Fehler die Regel.`); son
+monolingües, así que no hubo nada que sincronizar en los otros cinco
+idiomas. Núcleos: `DE-F01-C2`, `DE-F07-C2`, `DE-F08-B2`, `DE-F08-C2`,
+`DE-G15-C1`, `DE-G17-B2`, `DE-G19-B2`, `DE-G26-C1`, `DE-G27-C1`,
+`DE-V03-C1`, `DE-V04-B2`, `DE-V06-C1`, `DE-V07-B2`, `DE-V08-C1`. Con los 11
+del prompt 19 son **25 en total**; si se prefiere bajar el mínimo del schema,
+es decisión de Code y las 25 frases se pueden quitar.
+
+**Una excepción de R10 que hubo que reescribir:** el `promptCorreccion` de
+`DE-V08-B2` está en `EXENTAS_R10` porque habla de la grafía «ss/ß», y el
+cambio de registro le cambió el texto. Las excepciones van por texto exacto,
+así que cualquier pase que toque una cadena exenta tiene que actualizar la
+excepción en el mismo commit; el `--autotest` avisa cuando una queda de más.
+
 ## 7. Vocabulario atestiguado alemán — A1-C1 reconstruido, falta C2
 
 `vocab_de.json` cubre A1/A2/B1/B2/C1: **7683 lemas**. El 27-09-2026 se corrió por
@@ -1266,6 +1342,8 @@ Tres commits, uno por tarea, sobre la Ronda J. Contenido, esquema y assets sin t
 **Hallazgo de Overview, más grave: ~699 cadenas planas en alemán siguen en trato formal.** El prompt 19 pidió marcar el registro **«bajo las claves `de`, `fr`, `it`»** — frase mía — y eso dejó afuera **todas las cadenas planas**: los campos de instrucción de B2, C1 y C2 no son bilingües, así que son `string` y R9 nunca los miró; lo mismo con los campos de A2/B1 todavía sin traducir. Reparto por campo y nivel en el prompt 26. Ejemplos: «Nehmen Sie Stellung zu der Frage…», «Wie sicher sind Sie wirklich?». **Ahora es urgente porque la Ronda K puso la consigna como encabezado en negrita del desafío**: un usuario de alemán C2 abre la app un sábado y lo primero que lee, en el texto más grande de la pantalla, es «Nehmen Sie Stellung…». Incumple P9. **Prompt 26 para Traducciones:** ampliar R9 a las cadenas planas (con cuidado de los falsos positivos: `Sie` a principio de oración puede ser «ella/ellos») y corregir. Las dos exenciones legítimas de `DE-F13` (el contraste Sie/du que se enseña) tienen que seguir pasando.
 
 **Orden:** prompt 26 (Traducciones) → Overview regenera los assets → Code arregla el encuadre de la línea oral en su próxima ronda, junto con lo que salga de probar la 0.2.7 en el teléfono.
+
+**Prompt 26 cerrado (Traducciones, 11-oct-2026).** 458 cadenas planas de B2/C1/C2 pasadas a `du` en 128 archivos; R9 ahora mira los campos de instrucción tanto en objeto bilingüe como en `string` plano (en la cadena plana el idioma es el de la ficha). Compositor 606/56/0, R1–R11 en 0, los dos autotests sin fallos, estructura JSON idéntica, mismas marcas y ningún tope superado. El reparto real por campo y nivel, las 19 excepciones y los tres defectos que encontró el barrido están en **6.1.4**. Dos cosas para la lista de Code: (a) con el prompt 19 van **25 `promptCorreccion` alemanes alargados** porque el imperativo informal los dejaba bajo el mínimo de 150 del schema — si se prefiere bajar el mínimo, las 25 frases se quitan; (b) **la consigna de C2 ya no dice «Nehmen Sie Stellung…»**, así que el encabezado del desafío del fin de semana cumple P9; el desajuste que queda es el de la línea oral, no el del registro.
 
 ## 44. Tutorial por partes (decidido por Fer, 11-oct-2026) — guion listo, implementación diferida
 
