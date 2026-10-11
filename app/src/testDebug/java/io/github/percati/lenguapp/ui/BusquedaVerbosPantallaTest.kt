@@ -118,4 +118,18 @@ class BusquedaVerbosPantallaTest {
         mostrar(vistaVerbos = false)
         composeTestRule.onNodeWithText("Buscar").assertExists()
     }
+
+    @Test
+    fun `con aleman B2 en Ajustes, buscar stellen muestra los 6 miembros de la familia aunque ninguno sea de B2`() {
+        fun v(texto: String, nivel: Nivel) = verbo(texto, listOf("trennbar")).copy(niveles = setOf(nivel))
+        val familia = listOf(
+            v("bestellen", Nivel.A2), v("sich bestellen", Nivel.B1), v("sich vorstellen", Nivel.B1),
+            v("nachbestellen", Nivel.C1), v("kaltstellen", Nivel.C2), v("richtigstellen", Nivel.C2),
+        )
+        mostrar(familia + verbo("arbeiten", listOf("simple"))) // Ajustes: DE en B2
+        composeTestRule.onNodeWithText("Buscar").performTextInput("stellen")
+        for (m in familia) composeTestRule.onNodeWithText(m.texto).assertExists()
+        composeTestRule.onAllNodesWithText("arbeiten").assertCountEquals(0)
+        composeTestRule.onAllNodesWithText(mensajeVerbosSinResultados(Idioma.ES)).assertCountEquals(0)
+    }
 }

@@ -33,12 +33,12 @@ import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import io.github.percati.lenguapp.presentacion.FilaHabilidad
 import io.github.percati.lenguapp.presentacion.IndiceHabilidades
 import androidx.compose.foundation.layout.ColumnScope
+import io.github.percati.lenguapp.presentacion.BuscadorVerbos
 import io.github.percati.lenguapp.presentacion.contarClases
 import io.github.percati.lenguapp.presentacion.filtrarPorClases
 import io.github.percati.lenguapp.presentacion.lineaExtraVerbo
 import io.github.percati.lenguapp.presentacion.verbosDe
 import androidx.compose.material.icons.filled.Close
-import io.github.percati.lenguapp.presentacion.filtrarPorBusquedaVerbos
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -130,14 +130,14 @@ fun BibliotecaScreen(
         categoriasElegidas = emptySet()
     }
 
-    // Vista Verbos: los verbos del idioma de la pestana en su nivel actual (sin filtro de nivel), y sus chips de clase.
-    val nivelDeVerbos = idioma?.let { idiomasAprendidos[it] }
-    val verbos = remember(items, idioma, nivelDeVerbos) {
-        if (idioma == null || nivelDeVerbos == null) emptyList() else items.verbosDe(idioma, nivelDeVerbos)
-    }
+    // Vista Verbos: TODOS los verbos etiquetados del idioma de la pestana; el nivel no es una dimension de la
+    // vista (ni filtra ni se fija en el de Ajustes). Chips de clase y cuentas sobre ese conjunto (P3).
+    val verbos = remember(items, idioma) { if (idioma == null) emptyList() else items.verbosDe(idioma) }
     val conteoClases = remember(verbos) { verbos.contarClases() }
-    val verbosFiltrados = remember(verbos, clasesElegidas, busquedaVerbos, idiomaBase) {
-        verbos.filtrarPorClases(clasesElegidas).filtrarPorBusquedaVerbos(busquedaVerbos, idiomaBase)
+    // El texto normalizado de cada verbo se calcula una vez, no en cada tecla.
+    val buscadorVerbos = remember(verbos, idiomaBase) { BuscadorVerbos(verbos, idiomaBase) }
+    val verbosFiltrados = remember(verbos, clasesElegidas, busquedaVerbos, buscadorVerbos) {
+        buscadorVerbos.filtrar(verbos.filtrarPorClases(clasesElegidas), busquedaVerbos)
     }
 
     // El indice se arma solo si se esta mirando esa vista.
@@ -235,9 +235,6 @@ fun BibliotecaScreen(
                     }
 
                     if (vista == VistaBiblioteca.VERBOS) {
-                        nivelDeVerbos?.let {
-                            Text("${etiquetaNivel(idiomaInterfaz)} ${it.name}", style = MaterialTheme.typography.labelLarge)
-                        }
                         // Busqueda (arriba de los chips): original y traduccion al idioma de app, mientras se escribe.
                         if (verbos.isNotEmpty()) {
                             OutlinedTextField(
@@ -277,13 +274,13 @@ fun BibliotecaScreen(
                     item { Text(mensajeVerbosSinResultados(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge) }
                 }
                 items(verbosFiltrados, key = { "verbo|${it.idioma}|${it.texto}" }) { verbo ->
-                    val linea = verbo.lineaExtraVerbo(clasesElegidas) { etiquetaClaseVerbo(it, idiomaInterfaz) }
+                    val linea = verbo.lineaExtraVerbo(clasesElegidas) { etiquetaClaseVerbo(it, idiomaInterfaz) }.ifEmpty { null }
                     FilaBiblioteca(
                         item = verbo,
                         idiomaBase = idiomaBase,
                         guardada = claveBiblioteca(verbo.idioma, verbo.tipo, verbo.texto) in guardadas,
                         onAlternar = { onAlternar(verbo) },
-                        // La linea discreta: regimen en aleman, separabilidad del phrasal en ingles.
+                        // La linea discreta: nivel mas bajo (dato, no filtro) + regimen en aleman o separabilidad en ingles.
                         extra = if (linea == null) null else ({
                             Text(linea, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                         }),

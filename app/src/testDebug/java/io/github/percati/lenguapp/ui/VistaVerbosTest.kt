@@ -123,10 +123,12 @@ class VistaVerbosTest {
     }
 
     @Test
-    fun `el regimen del aleman va en una linea discreta, y los verbos sin regimen no dibujan nada`() {
+    fun `la linea discreta lleva el nivel y, en aleman, el regimen, y sin regimen solo el nivel`() {
         mostrar(lista)
-        composeTestRule.onNodeWithText("über + Akk").assertExists()
+        composeTestRule.onNodeWithText("B2 · über + Akk").assertExists()
         composeTestRule.onAllNodes(hasText("+ Dat", substring = true)).assertCountEquals(0)
+        // los verbos sin regimen dibujan solo el nivel
+        composeTestRule.onAllNodesWithText("B2").assertCountEquals(lista.count { it.vocabulario?.claseVerbo?.isNotEmpty() == true } - 1)
     }
 
     @Test
@@ -136,12 +138,13 @@ class VistaVerbosTest {
             verbo("to get off", listOf("phrasal-inseparable"), idioma = Idioma.EN, nivel = Nivel.B1),
         )
         mostrar(en, aprendidos = mapOf(Idioma.EN to Nivel.B1))
-        // sin chip elegido: cada fila dice su clase (ademas de estar en el chip, con su cuenta)
-        composeTestRule.onNodeWithText("Phrasal separable").assertExists()
-        composeTestRule.onNodeWithText("Phrasal inseparable").assertExists()
+        // sin chip elegido: cada fila dice su nivel y su clase (ademas de estar en el chip, con su cuenta)
+        composeTestRule.onNodeWithText("B1 · Phrasal separable").assertExists()
+        composeTestRule.onNodeWithText("B1 · Phrasal inseparable").assertExists()
         composeTestRule.onNodeWithText("Phrasal separable (1)").performClick()
-        // con el chip: la fila ya no lo repite (queda solo el chip)
+        // con el chip: la fila ya no repite la clase (queda el nivel y el chip)
         composeTestRule.onAllNodes(hasText("Phrasal separable", substring = true)).assertCountEquals(1)
+        composeTestRule.onNodeWithText("B1").assertExists()
     }
 
     @Test
@@ -161,9 +164,21 @@ class VistaVerbosTest {
     }
 
     @Test
-    fun `solo se ven los verbos del nivel actual, no los de otros niveles`() {
+    fun `el nivel de Ajustes no recorta, se ven los verbos de todos los niveles, cada uno con su nivel`() {
         val otroNivel = verbo("hochladen", listOf("trennbar"), nivel = Nivel.C1)
-        mostrar(lista + otroNivel)
-        composeTestRule.onAllNodesWithText("hochladen").assertCountEquals(0)
+        val a2 = verbo("anmelden", listOf("trennbar"), nivel = Nivel.A2)
+        mostrar(lista + otroNivel + a2) // Ajustes: DE en B2
+        composeTestRule.onNodeWithText("hochladen").assertExists()
+        composeTestRule.onNodeWithText("anmelden").assertExists()
+        composeTestRule.onNodeWithText("C1").assertExists()
+        composeTestRule.onNodeWithText("A2").assertExists()
+        // y la vista ya no encabeza con un "Nivel B2"
+        composeTestRule.onAllNodes(hasText("Nivel B2", substring = true)).assertCountEquals(0)
+    }
+
+    @Test
+    fun `no hay filtro de nivel, ni chips ni selector de niveles en la vista`() {
+        mostrar(lista)
+        for (n in listOf("A2", "B1", "C1", "C2")) composeTestRule.onAllNodesWithText(n).assertCountEquals(0)
     }
 }

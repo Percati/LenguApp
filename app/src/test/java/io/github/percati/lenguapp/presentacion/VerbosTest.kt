@@ -24,42 +24,71 @@ class VerbosTest {
             .map { parsearContenido(it.readText()) as ContenidoSemanal }.filterIsInstance<Ficha>()
     }
     private val items by lazy { construirBiblioteca(fichas) }
-    private val pares = listOf(Idioma.DE, Idioma.EN).flatMap { i -> Nivel.entries.map { n -> i to n } }
+    private val idiomas = listOf(Idioma.DE, Idioma.EN)
 
     @Test
-    fun `los verbos de cada par son los items con claseVerbo, sin repetir el original`() {
-        for ((idioma, nivel) in pares) {
+    fun `los verbos de un idioma son TODOS los items con claseVerbo, de cualquier nivel, sin repetir el original`() {
+        for (idioma in idiomas) {
             // calculado directo de las fichas, sin pasar por la Biblioteca
-            val esperados = fichas.filter { it.idioma == idioma && it.nivel == nivel }
+            val esperados = fichas.filter { it.idioma == idioma }
                 .flatMap { f -> f.vocabulario.filter { it.claseVerbo.isNotEmpty() }.map { it.item.trim() } }.toSet()
-            val verbos = items.verbosDe(idioma, nivel)
-            assertTrue("$idioma $nivel: sin verbos", verbos.isNotEmpty())
-            assertEquals("$idioma $nivel", esperados, verbos.map { it.texto }.toSet())
-            assertEquals("$idioma $nivel: un verbo aparece una sola vez", verbos.size, verbos.map { it.texto }.toSet().size)
+            val verbos = items.verbosDe(idioma)
+            assertTrue("$idioma: sin verbos", verbos.isNotEmpty())
+            assertEquals("$idioma", esperados, verbos.map { it.texto }.toSet())
+            assertEquals("$idioma: un verbo aparece una sola vez", verbos.size, verbos.map { it.texto }.toSet().size)
             assertEquals("orden alfabetico por el original", verbos.map { it.texto.lowercase() }, verbos.map { it.texto.lowercase() }.sorted())
         }
     }
 
     @Test
+    fun `el nivel no recorta, hay verbos de los 5 niveles y el conjunto del idioma contiene el de cada nivel`() {
+        for (idioma in idiomas) {
+            val todos = items.verbosDe(idioma).map { it.texto }.toSet()
+            for (nivel in Nivel.entries) {
+                val delNivel = items.filter { it.idioma == idioma && it.esVerbo() && nivel in it.niveles }.map { it.texto }.toSet()
+                assertTrue("$idioma $nivel: sin verbos", delNivel.isNotEmpty())
+                assertTrue("$idioma $nivel: el conjunto del idioma debe contener el del nivel", todos.containsAll(delNivel))
+            }
+            // y hay verbos que NO estan en un nivel concreto (el recorte por nivel escondia material)
+            val enB1 = items.filter { it.idioma == idioma && it.esVerbo() && Nivel.B1 in it.niveles }.size
+            assertTrue("$idioma: todos (${todos.size}) debe ser mucho mas que B1 ($enB1)", todos.size > enB1)
+        }
+    }
+
+    @Test
+    fun `la familia de stellen se encuentra entera con cualquier nivel, los 6 miembros`() {
+        val miembros = setOf("bestellen", "sich etwas bestellen", "sich vorstellen", "etwas nachbestellen", "jemanden kaltstellen", "etwas richtigstellen")
+        val verbos = items.verbosDe(Idioma.DE)
+        val r = verbos.filtrarPorBusquedaVerbos("stellen", Idioma.ES).map { it.texto }.toSet()
+        assertTrue("faltan ${miembros - r} (encontro $r)", r.containsAll(miembros))
+        // viven repartidos entre niveles (ninguno en B2): con un solo nivel no se podia encontrar la familia
+        val porNivel = miembros.associateWith { m -> verbos.first { it.texto == m }.niveles }
+        assertTrue("alguno deberia estar en A2 y otro en C2: $porNivel", porNivel.values.any { Nivel.A2 in it } && porNivel.values.any { Nivel.C2 in it })
+        assertTrue("ninguno en B2: $porNivel", porNivel.values.none { Nivel.B2 in it })
+    }
+
+    @Test
     fun `los chips son solo las clases presentes, simple nunca, y cada chip tiene al menos un verbo`() {
-        for ((idioma, nivel) in pares) {
-            val verbos = items.verbosDe(idioma, nivel)
+        for (idioma in idiomas) {
+            val verbos = items.verbosDe(idioma)
             val conteo = verbos.contarClases()
             assertFalse("simple no es un chip", CLASE_VERBO_SIMPLE in conteo)
             assertTrue(conteo.keys.all { it in CLASES_VERBO_CONOCIDAS })
             for ((clase, n) in conteo) {
-                assertTrue("$idioma $nivel $clase vacio", n >= 1)
+                assertTrue("$idioma $clase vacio", n >= 1)
                 assertEquals(n, verbos.count { clase in it.vocabulario!!.claseVerbo })
             }
             // el aleman no ofrece clases del ingles y viceversa (los chips salen de los datos del idioma)
             val delOtro = if (idioma == Idioma.DE) setOf("phrasal-separable", "phrasal-inseparable", "verbo-preposicion") else setOf("reflexivo", "trennbar", "mit-Praposition", "mit-Dativ")
-            assertTrue("$idioma $nivel: clases del otro idioma $conteo", conteo.keys.none { it in delOtro })
+            assertTrue("$idioma: clases del otro idioma $conteo", conteo.keys.none { it in delOtro })
+            // con todos los niveles hay de las 4 (DE) o 3 (EN) clases
+            assertEquals(if (idioma == Idioma.DE) 4 else 3, conteo.size)
         }
     }
 
     @Test
     fun `sin chip elegido se ven todos los verbos, con chips los que tienen alguna de las clases`() {
-        val verbos = items.verbosDe(Idioma.DE, Nivel.B1)
+        val verbos = items.verbosDe(Idioma.DE)
         assertEquals(verbos, verbos.filtrarPorClases(emptySet()))
         val trennbar = verbos.filtrarPorClases(setOf("trennbar"))
         assertTrue(trennbar.isNotEmpty() && trennbar.all { "trennbar" in it.vocabulario!!.claseVerbo })
@@ -72,13 +101,13 @@ class VerbosTest {
 
     @Test
     fun `una clase desconocida no rompe, el verbo se ve, sin chip para esa clase`() {
-        val base = items.verbosDe(Idioma.DE, Nivel.A2).first { it.vocabulario!!.claseVerbo.contains("trennbar") }
+        val base = items.verbosDe(Idioma.DE).first { it.vocabulario!!.claseVerbo.contains("trennbar") }
         val raro = base.copy(
             texto = "zzz-verbo-raro",
             vocabulario = base.vocabulario!!.copy(item = "zzz-verbo-raro", claseVerbo = listOf("clase-del-futuro")),
         )
         val lista = items.filter { it.idioma == Idioma.DE } + raro
-        val verbos = lista.verbosDe(Idioma.DE, Nivel.A2)
+        val verbos = lista.verbosDe(Idioma.DE)
         assertTrue("el verbo de clase desconocida se muestra", verbos.any { it.texto == "zzz-verbo-raro" })
         assertFalse("y no genera chip", verbos.contarClases().keys.any { it == "clase-del-futuro" })
         assertEquals(emptyList<String>(), raro.clasesDeChip())
@@ -111,28 +140,40 @@ class VerbosTest {
     // --- la linea discreta de debajo del verbo ---
 
     @Test
-    fun `en aleman la linea extra es el regimen cuando existe, y nada cuando no`() {
-        val conReccion = items.verbosDe(Idioma.DE, Nivel.B1).first { !it.vocabulario!!.reccion.isNullOrBlank() }
-        assertEquals(conReccion.vocabulario!!.reccion!!.trim(), conReccion.lineaExtraVerbo(emptySet()) { it })
-        val sinReccion = items.verbosDe(Idioma.DE, Nivel.B1).first { it.vocabulario!!.reccion.isNullOrBlank() }
-        assertNull(sinReccion.lineaExtraVerbo(emptySet()) { it })
+    fun `la linea extra lleva el nivel mas bajo como dato, y en aleman el regimen despues`() {
+        val conReccion = items.verbosDe(Idioma.DE).first { !it.vocabulario!!.reccion.isNullOrBlank() }
+        val bajo = conReccion.niveles.min().name
+        assertEquals("$bajo · ${conReccion.vocabulario!!.reccion!!.trim()}", conReccion.lineaExtraVerbo(emptySet()) { it })
+        val sinReccion = items.verbosDe(Idioma.DE).first { it.vocabulario!!.reccion.isNullOrBlank() }
+        assertEquals("sin regimen: solo el nivel", sinReccion.niveles.min().name, sinReccion.lineaExtraVerbo(emptySet()) { it })
     }
 
     @Test
-    fun `en ingles la linea extra es la separabilidad, salvo que ya se desprenda del chip elegido`() {
-        val sep = items.verbosDe(Idioma.EN, Nivel.B1).first { "phrasal-separable" in it.vocabulario!!.claseVerbo }
-        assertEquals("phrasal-separable", sep.lineaExtraVerbo(emptySet()) { it })
-        assertEquals("phrasal-separable", sep.lineaExtraVerbo(setOf("verbo-preposicion")) { it })
-        assertNull("el chip elegido ya lo dice", sep.lineaExtraVerbo(setOf("phrasal-separable")) { it })
-        val prep = items.verbosDe(Idioma.EN, Nivel.B1).first { it.vocabulario!!.claseVerbo == listOf("verbo-preposicion") }
-        assertNull("verbo + preposicion no es separabilidad", prep.lineaExtraVerbo(emptySet()) { it })
-        val simple = items.verbosDe(Idioma.EN, Nivel.B1).first { it.vocabulario!!.claseVerbo == listOf("simple") }
-        assertNull(simple.lineaExtraVerbo(emptySet()) { it })
+    fun `el nivel de la linea extra es el mas bajo en que aparece el verbo`() {
+        val enVarios = items.verbosDe(Idioma.DE).first { it.niveles.size >= 2 }
+        assertEquals(enVarios.niveles.minOf { it.ordinal }, enVarios.nivelMasBajo()!!.ordinal)
+        assertTrue(enVarios.lineaExtraVerbo(emptySet()) { it }.startsWith(enVarios.nivelMasBajo()!!.name))
+        // nunca el nivel de Ajustes ni el primero que se cargo: el minimo del conjunto
+        val sintetico = enVarios.copy(niveles = setOf(Nivel.C2, Nivel.B1, Nivel.C1))
+        assertEquals(Nivel.B1, sintetico.nivelMasBajo())
+    }
+
+    @Test
+    fun `en ingles la linea extra es el nivel y la separabilidad, salvo que ya se desprenda del chip elegido`() {
+        val sep = items.verbosDe(Idioma.EN).first { "phrasal-separable" in it.vocabulario!!.claseVerbo }
+        val n = sep.nivelMasBajo()!!.name
+        assertEquals("$n · phrasal-separable", sep.lineaExtraVerbo(emptySet()) { it })
+        assertEquals("$n · phrasal-separable", sep.lineaExtraVerbo(setOf("verbo-preposicion")) { it })
+        assertEquals("el chip elegido ya lo dice: queda el nivel", n, sep.lineaExtraVerbo(setOf("phrasal-separable")) { it })
+        val prep = items.verbosDe(Idioma.EN).first { it.vocabulario!!.claseVerbo == listOf("verbo-preposicion") }
+        assertEquals("verbo + preposicion no es separabilidad", prep.nivelMasBajo()!!.name, prep.lineaExtraVerbo(emptySet()) { it })
+        val simple = items.verbosDe(Idioma.EN).first { it.vocabulario!!.claseVerbo == listOf("simple") }
+        assertEquals(simple.nivelMasBajo()!!.name, simple.lineaExtraVerbo(emptySet()) { it })
     }
 
     @Test
     fun `el verbo es el mismo item de Guardados que en las otras vistas, no una clave distinta`() {
-        val v = items.verbosDe(Idioma.DE, Nivel.A2).first()
+        val v = items.verbosDe(Idioma.DE).first()
         // misma identidad (idioma, tipo, texto) que usa la vista de vocabulario y la ficha
         assertEquals(TipoGuardado.VOCABULARIO, v.tipo)
         assertTrue(items.any { it === v })

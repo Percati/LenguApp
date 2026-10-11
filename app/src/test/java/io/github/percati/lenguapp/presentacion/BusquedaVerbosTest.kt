@@ -22,7 +22,7 @@ class BusquedaVerbosTest {
         )
     }
 
-    private fun todosLosVerbosDe(idioma: Idioma) = Nivel.entries.flatMap { items.verbosDe(idioma, it) }.distinctBy { it.texto }
+    private fun todosLosVerbosDe(idioma: Idioma) = items.verbosDe(idioma)
 
     @Test
     fun `la normalizacion ignora mayusculas y diacriticos`() {
@@ -65,7 +65,7 @@ class BusquedaVerbosTest {
 
     @Test
     fun `una consulta vacia o en blanco no filtra, y una sin coincidencias da vacio`() {
-        val verbos = items.verbosDe(Idioma.DE, Nivel.B1)
+        val verbos = items.verbosDe(Idioma.DE)
         assertEquals(verbos, verbos.filtrarPorBusquedaVerbos("", Idioma.ES))
         assertEquals(verbos, verbos.filtrarPorBusquedaVerbos("   ", Idioma.ES))
         assertEquals(emptyList<ItemBiblioteca>(), verbos.filtrarPorBusquedaVerbos("qqqqzzzz", Idioma.ES))
@@ -73,8 +73,26 @@ class BusquedaVerbosTest {
 
     @Test
     fun `la busqueda se aplica sobre los verbos ya filtrados por clase`() {
-        val soloTrennbar = items.verbosDe(Idioma.DE, Nivel.B1).filtrarPorClases(setOf("trennbar"))
+        val soloTrennbar = items.verbosDe(Idioma.DE).filtrarPorClases(setOf("trennbar"))
         val r = soloTrennbar.filtrarPorBusquedaVerbos("a", Idioma.ES)
         assertTrue(r.isNotEmpty() && r.all { "trennbar" in it.vocabulario!!.claseVerbo })
+    }
+
+    @Test
+    fun `el buscador precalculado da lo mismo que filtrar en cada tecla, y cubre el conjunto entero`() {
+        val verbos = todosLosVerbosDe(Idioma.DE)
+        val buscador = BuscadorVerbos(verbos, Idioma.ES)
+        for (q in listOf("stellen", "uber", "MACHEN", "a", "qqqq", "")) {
+            assertEquals(q, verbos.filtrarPorBusquedaVerbos(q, Idioma.ES).map { it.texto }, buscador.filtrar(verbos, q).map { it.texto })
+        }
+        assertTrue("DE tiene mas de 300 formas", verbos.size > 300)
+    }
+
+    @Test
+    fun `stellen en aleman devuelve los 6 miembros de la familia, sea cual sea el nivel`() {
+        val miembros = setOf("bestellen", "sich etwas bestellen", "sich vorstellen", "etwas nachbestellen", "jemanden kaltstellen", "etwas richtigstellen")
+        // la busqueda es sobre todo el idioma: el nivel de Ajustes no entra en la cuenta (ver el test de pantalla)
+        val r = todosLosVerbosDe(Idioma.DE).filtrarPorBusquedaVerbos("stellen", Idioma.ES).map { it.texto }.toSet()
+        assertTrue("faltan ${miembros - r}", r.containsAll(miembros))
     }
 }
