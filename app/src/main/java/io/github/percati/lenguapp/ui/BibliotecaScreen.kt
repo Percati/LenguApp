@@ -142,18 +142,16 @@ fun BibliotecaScreen(
                         }
                     }
 
-                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        FilterChip(
-                            selected = vista == VistaBiblioteca.LEXICO,
-                            onClick = { vista = VistaBiblioteca.LEXICO },
-                            label = { Text(etiquetaBibliotecaVistaLexico(idiomaInterfaz)) },
-                        )
-                        FilterChip(
-                            selected = vista == VistaBiblioteca.HABILIDADES,
-                            onClick = { vista = VistaBiblioteca.HABILIDADES },
-                            label = { Text(etiquetaBibliotecaVistaHabilidades(idiomaInterfaz)) },
-                        )
-                    }
+                    // Selector de vistas: una fila desplazable que aguanta tres (la futura vista "Verbos"
+                    // se suma a esta lista y a `when (vista)` mas abajo).
+                    SelectorDeVistas(
+                        vistas = listOf(
+                            OpcionFiltro(VistaBiblioteca.LEXICO.name, etiquetaBibliotecaVistaLexico(idiomaInterfaz)),
+                            OpcionFiltro(VistaBiblioteca.HABILIDADES.name, etiquetaBibliotecaVistaHabilidades(idiomaInterfaz)),
+                        ),
+                        elegida = vista.name,
+                        onElegir = { vista = VistaBiblioteca.valueOf(it) },
+                    )
 
                     if (vista == VistaBiblioteca.LEXICO) Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -173,42 +171,35 @@ fun BibliotecaScreen(
                     }
 
                     Text(etiquetaNivel(idiomaInterfaz), style = MaterialTheme.typography.labelMedium)
-                    Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                        Nivel.entries.forEach { n ->
-                            FilterChip(
-                                selected = n in niveles,
-                                onClick = {
-                                    val nuevo = if (n in niveles) niveles - n else niveles + n
-                                    nivelesPorIdioma = nivelesPorIdioma + (idioma to nuevo)
-                                },
-                                label = { Text(n.name) },
-                            )
-                        }
-                    }
+                    GrupoChips(
+                        opciones = Nivel.entries.map { OpcionFiltro(it.name, it.name) },
+                        estaElegida = { Nivel.valueOf(it.clave) in niveles },
+                        onElegir = { o ->
+                            val n = Nivel.valueOf(o.clave)
+                            val nuevo = if (n in niveles) niveles - n else niveles + n
+                            nivelesPorIdioma = nivelesPorIdioma + (idioma to nuevo)
+                        },
+                    )
 
                     if (tipo == TipoGuardado.VOCABULARIO) {
                         Text(etiquetaBibliotecaTema(idiomaInterfaz), style = MaterialTheme.typography.labelMedium)
-                        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                            FilterChip(selected = topic == null, onClick = { topic = null }, label = { Text(etiquetaFiltroTodos(idiomaInterfaz)) })
-                            topicsDisponibles.sorted().forEach { id ->
-                                FilterChip(
-                                    selected = topic == id,
-                                    onClick = { topic = id },
-                                    label = { Text("${topicNombres.nombre(id, idiomaInterfaz)} (${contadorTopics[id] ?: 0})") },
-                                )
-                            }
-                        }
+                        GrupoChips(
+                            opciones = listOf(OpcionFiltro("", etiquetaFiltroTodos(idiomaInterfaz))) +
+                                topicsDisponibles.sorted().map { OpcionFiltro(it, "${topicNombres.nombre(it, idiomaInterfaz)} (${contadorTopics[it] ?: 0})") },
+                            estaElegida = { (topic ?: "") == it.clave },
+                            onElegir = { topic = it.clave.ifEmpty { null } },
+                            disposicion = DisposicionChips.AJUSTADA,
+                        )
                     } else {
                         RamaCategorias(etiquetaBibliotecaFunciones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.funcionComunicativa.filter { it in categoriasDisponibles }, categoriasElegidas, contadorCategorias, { categorias.nombre(it, idiomaInterfaz) }) { categoriasElegidas = it }
                         RamaCategorias(etiquetaBibliotecaPatrones(idiomaInterfaz), etiquetaQuitar(idiomaInterfaz), categorias.patronGramatical.filter { it in categoriasDisponibles }, categoriasElegidas, contadorCategorias, { categorias.nombre(it, idiomaInterfaz) }) { categoriasElegidas = it }
                         if (SIN_CATEGORIA in categoriasDisponibles) {
-                            FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                                FilterChip(
-                                    selected = SIN_CATEGORIA in categoriasElegidas,
-                                    onClick = { categoriasElegidas = alternarEn(categoriasElegidas, SIN_CATEGORIA) },
-                                    label = { Text("${etiquetaBibliotecaSinCategoria(idiomaInterfaz)} (${contadorCategorias[SIN_CATEGORIA] ?: 0})") },
-                                )
-                            }
+                            GrupoChips(
+                                opciones = listOf(OpcionFiltro(SIN_CATEGORIA, "${etiquetaBibliotecaSinCategoria(idiomaInterfaz)} (${contadorCategorias[SIN_CATEGORIA] ?: 0})")),
+                                estaElegida = { SIN_CATEGORIA in categoriasElegidas },
+                                onElegir = { categoriasElegidas = alternarEn(categoriasElegidas, SIN_CATEGORIA) },
+                                disposicion = DisposicionChips.AJUSTADA,
+                            )
                         }
                     }
 
@@ -273,11 +264,12 @@ private fun RamaCategorias(titulo: String, etiquetaQuitar: String, valores: List
                 TextButton(onClick = { onCambio(elegidas - valores.toSet()) }) { Text(etiquetaQuitar, style = MaterialTheme.typography.labelMedium) }
             }
         }
-        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            valores.forEach { v ->
-                FilterChip(selected = v in elegidas, onClick = { onCambio(alternarEn(elegidas, v)) }, label = { Text("${nombre(v)} (${contador[v] ?: 0})") })
-            }
-        }
+        GrupoChips(
+            opciones = valores.map { OpcionFiltro(it, "${nombre(it)} (${contador[it] ?: 0})") },
+            estaElegida = { it.clave in elegidas },
+            onElegir = { onCambio(alternarEn(elegidas, it.clave)) },
+            disposicion = DisposicionChips.AJUSTADA,
+        )
     }
 }
 
