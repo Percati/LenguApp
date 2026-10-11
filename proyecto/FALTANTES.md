@@ -1373,3 +1373,27 @@ Fer quiere un tutorial con foco (oscurece la pantalla menos lo que señala), **p
 
 **Pendiente abierto, decisión de Code:** son ya **25 `promptCorreccion`** alemanes alargados (11 del prompt 19 y 14 del 26) porque el imperativo informal queda bajo el mínimo de 150 caracteres del esquema. Posición de Overview: dejarlo como está; el mínimo existe para que el prompt sea útil. Code opina en la Ronda L y se decide después.
 
+## 46. Code Ronda L — ✅ implementada (Code, 12-oct-2026), versión 0.2.8
+
+Tres commits, uno por tarea, sobre la Ronda K y el tuteo de Traducciones (assets ya regenerados por Overview). Contenido, esquema y assets sin tocar.
+
+- **Tarea 1 — la consigna deja de ser un titular** (`ui/ContenidoSemanalScreen.kt`): de `headlineSmall` + `Bold` a **`bodyLarge` con `FontWeight.Medium`, sin negrita y en `onSurface` pleno**. La línea de encuadre que la precede pasa a **`bodyMedium` en `onSurfaceVariant`** (línea de apoyo), y la consigna lleva 6 dp de aire arriba y abajo. La jerarquía la dan **la posición** (primera cosa del bloque), **el color** (pleno contra el de apoyo) y **el aire**; no el tamaño. Test `ConsignaDesafioEstiloTest` (dos casos, **letra al 100 % y al 160 %** con `@Config(fontScale = 1.6f)`): lee el `TextStyle` que recibe el texto (no píxeles) y comprueba bodyLarge, peso medio, no Bold, no más grande que `titleMedium`, colores, que la escala de letra llegó al texto, y que el **bloque entero** (línea oral, consigna, Tema, Habilidad, Condiciones con sus 4 reglas, Frases con sus 3 expresiones) está presente y **en orden**, con la consigna en pocos renglones.
+- **Tarea 2 — encuadre sin paréntesis** (`TextosInterfaz.kt`): la línea oral presenta la consigna como **el tema de lo que se va a contar**, no como una orden. El paréntesis «(aunque la consigna pida escribir)» se quitó en los 6 idiomas; los minutos siguen saliendo de `evidencia.oralMin`. Test: ningún idioma tiene paréntesis, ES y EN exactos, `{oralMin}` resuelto. P4 intacto: sus tests (sin requisitos ni micro-tareas, bloque completo ≠ misión) siguen pasando.
+- **Tarea 3 — versión 0.2.8 (versionCode 10)**; la guía lleva la versión y **la fila del desafío no cambia** (sigue siendo cierta: «arriba la consigna con los minutos…»), así que no crece.
+
+**Línea oral final** (`{oralMin}` = minutos redondeados de la ficha):
+
+| | |
+|---|---|
+| ES | Esto es lo que vas a contar. En voz alta, {oralMin} min, de una sola vez y sin escribir nada: |
+| EN | This is what you'll talk about. Out loud, {oralMin} min, in one go, with no writing: |
+| DE | Davon erzählst du. Laut, {oralMin} Min. am Stück und ohne etwas aufzuschreiben: |
+| FR | Voilà ce que tu vas raconter. À voix haute, {oralMin} min, d'un seul trait et sans rien écrire : |
+| IT | Questo è ciò che racconterai. Ad alta voce, {oralMin} min, tutto d'un fiato e senza scrivere nulla: |
+| PT | Isto é o que você vai contar. Em voz alta, {oralMin} min, de uma só vez e sem escrever nada: |
+
+**Lo demás del bloque, con el mismo criterio.** Nada más quedó desproporcionado: las condiciones son `bodyMedium` con icono, las frases `bodyMedium`/viñetas y Tema/Habilidad `labelLarge` + `bodyMedium`. Lo único grande que queda son los **títulos de sección en `titleLarge` Bold** («Desafío de fin de semana», «Condiciones», «Frases para usar»), que son los mismos de toda la ficha (`Seccion`) y no los toqué; tres seguidos con la letra al 160 % pesan, pero el test al 160 % confirma que todo el bloque sigue presente y legible. Si se quiere aligerar, el candidato es `Seccion` entero (afecta a toda la app), no el desafío.
+
+**Tamaño del APK** (empaquetado limpio): **62 950 571 B**, **−1 260 B** sobre los 62 951 831 B de la Ronda K (el tuteo de Traducciones acortó algo los JSON; el código nuevo pesa lo mismo). Manifest sin `INTERNET` ni permisos nuevos. **1145 tests, 0 fallas.**
+
+**Opinión sobre el mínimo de 150 caracteres del `promptCorreccion` (no se tocó):** hay que **dejarlo**. Medido sobre los assets: la distribución de `promptCorreccion` en la lengua de cada ficha tiene su p10 entre 153 y 169 en 8 de los 10 pares (los otros dos, 188 y 165), **también en inglés** (EN A2 155, B1 150, C2 152), donde no hubo ningún cambio de registro; es decir, el mínimo funciona como piso de calidad parejo en los dos idiomas y los 25 alargados de alemán quedan dentro de esa misma banda baja (mediana de DE ~170 en A2/B1/C2). Bajar el piso no arregla nada, solo permitiría que cualquier prompt futuro se acorte hasta ser menos útil; alargar 25 frases en estilo de la casa fue el costo correcto. Lo que sí conviene vigilar es que los prompts más cortos (los 21 de DE A2 y 16 de DE C2 bajo 160) sigan siendo instrucciones completas y no solo piso cumplido.
