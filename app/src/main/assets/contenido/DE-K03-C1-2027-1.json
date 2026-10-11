@@ -160,6 +160,10 @@
   {
    "item": "die Zuständigkeit klären",
    "prioridad": "nucleo",
+   "nucleoVerbal": "klären",
+   "claseNucleo": [
+    "simple"
+   ],
    "traducciones": {
     "es": "aclarar quién es competente",
     "en": "to clarify who is responsible",
@@ -171,6 +175,12 @@
   {
    "item": "einer Sache nachgehen",
    "prioridad": "nucleo",
+   "nucleoVerbal": "nachgehen",
+   "claseNucleo": [
+    "trennbar",
+    "mit-Dativ"
+   ],
+   "reccionNucleo": "Dat",
    "traducciones": {
     "es": "hacer el seguimiento de algo",
     "en": "to follow something up",

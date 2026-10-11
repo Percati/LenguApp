@@ -216,6 +216,12 @@ data class VocabularioItem(
     // trennbar, mit-Praposition, mit-Dativ; EN simple, phrasal-separable, phrasal-inseparable,
     // verbo-preposicion. Opcional. Todavia no se muestra en ninguna pantalla (la vista Verbos llega despues).
     val claseVerbo: List<String> = emptyList(),
+    // Nucleo verbal de una COLOCACION (Ronda J, FALTANTES 38): «die Frage stellen» lleva nucleoVerbal «stellen».
+    // El nucleo no es un item (sin glosa propia, no marcable); un item nunca lleva claseVerbo y nucleoVerbal a la vez.
+    val nucleoVerbal: String? = null,
+    // Clase(s) del NUCLEO (misma taxonomia que claseVerbo) y su reccion (solo aleman).
+    val claseNucleo: List<String> = emptyList(),
+    val reccionNucleo: String? = null,
 )
 
 @Serializable
