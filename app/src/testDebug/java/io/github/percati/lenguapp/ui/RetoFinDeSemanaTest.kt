@@ -21,6 +21,7 @@ import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.TextoBilingue
 import io.github.percati.lenguapp.modelo.resolver
+import io.github.percati.lenguapp.presentacion.consignaDelDesafio
 import io.github.percati.lenguapp.presentacion.expresionesDeLaFicha
 import io.github.percati.lenguapp.presentacion.oralMinRedondeado
 import org.junit.Assert.assertEquals
@@ -36,10 +37,11 @@ import java.io.File
 import java.time.LocalDate
 
 /**
- * Desafio de fin de semana (Ronda F2, tarea 2 / REGLAS-PREVENCION P4): NO es la mision repetida.
- * Sobre fichas reales de cada nivel A2 a C2: no aparece ni la consigna ni los requisitos de la
- * mision, si el encuadre propio (linea, tema, habilidad, condiciones, frases); no persiste nada
- * (regla dura 13).
+ * Desafio de fin de semana (Ronda F2, tarea 2 / REGLAS-PREVENCION P4; consigna en la Ronda K): NO es la mision
+ * repetida. La mision completa es consigna + requisitos + micro-tareas + evidencia escrita; el desafio reusa SOLO la
+ * consigna, como encabezado oral (linea de encuadre con los minutos + consigna), y nunca los requisitos ni las
+ * micro-tareas. Sobre fichas reales de cada nivel A2 a C2: consigna, tema, habilidad, condiciones y frases, en ese
+ * orden; no persiste nada (regla dura 13).
  */
 @RunWith(RobolectricTestRunner::class)
 @Config(qualifiers = "w400dp-h6000dp")
@@ -81,18 +83,34 @@ class RetoFinDeSemanaTest {
         val unidos = conReto.joinToString(" | ")
         val visibles = conReto.map { limpio(it) }
 
-        // La mision NO se muestra: ni consigna ni requisitos, en ningun idioma posible
+        // La consigna de la mision SI se muestra (en el idioma que se esta mostrando); sus requisitos y micro-tareas NO,
+        // en ningun idioma posible
+        val mostrado = if (ficha.bilingue) idiomaApp else ficha.idioma
+        assertTrue("$nivel: falta la consigna: $unidos", visibles.any { it.contains(fragmentos(ficha.mision.consigna, ficha, mostrado)) })
         for (idioma in listOf(idiomaApp, ficha.idioma)) {
-            assertFalse("$nivel: aparece la consigna: $unidos", visibles.any { it.contains(fragmentos(ficha.mision.consigna, ficha, idioma)) })
             for (req in ficha.mision.requisitos) {
                 assertFalse("$nivel: aparece un requisito", visibles.any { it.contains(fragmentos(req, ficha, idioma)) })
+            }
+            for (mt in ficha.microtareas) {
+                assertFalse("$nivel: aparece una micro-tarea", visibles.any { it.contains(fragmentos(mt.texto, ficha, idioma)) })
             }
         }
         // ...ni la descripcion u otras secciones de la ficha
         assertFalse(visibles.any { it.contains(fragmentos(ficha.descripcion, ficha, ficha.idioma)) })
 
-        // Encabezado, linea, tema y habilidad
-        assertTrue(unidos, conReto.contains(textoRetoLinea(idiomaApp)))
+        // Linea oral con los minutos de la ficha, y la consigna justo debajo, antes que todo lo demas
+        val lineaOral = textoRetoConsignaLinea(idiomaApp, oralMinRedondeado(ficha.evidencia.oralMin))
+        assertTrue(unidos, conReto.contains(lineaOral))
+        assertTrue("la linea lleva los minutos de la ficha", lineaOral.contains(oralMinRedondeado(ficha.evidencia.oralMin).toString()))
+        val iLinea = conReto.indexOf(lineaOral)
+        val iConsigna = conReto.indexOfFirst { limpio(it).contains(fragmentos(ficha.mision.consigna, ficha, mostrado)) }
+        val iTema = conReto.indexOf("${etiquetaBibliotecaTema(idiomaApp)}:")
+        val iHabilidad = conReto.indexOf("${etiquetaRetoHabilidad(idiomaApp)}:")
+        val iCondiciones = conReto.indexOf(etiquetaRetoCondiciones(idiomaApp))
+        val iFrases = conReto.indexOf(etiquetaRetoFrasesTitulo(idiomaApp))
+        assertEquals("el orden del bloque: linea oral, consigna, tema, habilidad, condiciones, frases ($conReto)", listOf(iLinea, iConsigna, iTema, iHabilidad, iCondiciones, iFrases).sorted(), listOf(iLinea, iConsigna, iTema, iHabilidad, iCondiciones, iFrases))
+        assertEquals("consigna justo despues de la linea", iLinea + 1, iConsigna)
+        assertTrue(conReto.contains(etiquetaDesafioFinde(idiomaApp)))
         assertTrue(unidos, conReto.contains("${etiquetaBibliotecaTema(idiomaApp)}:"))
         assertTrue(unidos, conReto.contains(topics.nombre(ficha.topicId, idiomaApp)))   // el tema, en el idioma de app
         assertTrue(unidos, conReto.contains("${etiquetaRetoHabilidad(idiomaApp)}:"))
@@ -147,10 +165,16 @@ class RetoFinDeSemanaTest {
         }
         for (idioma in Idioma.entries) assertNotEquals(reglasReto(idioma, Nivel.A2, 6), reglasReto(idioma, Nivel.C1, 6))
         for (idioma in Idioma.entries) {
-            assertTrue(textoRetoLinea(idioma).isNotBlank())
+            val linea = textoRetoConsignaLinea(idioma, 7)
+            assertTrue("$idioma: sin traducir", linea.isNotBlank() && linea != textoRetoConsignaLinea(Idioma.ES, 7) || idioma == Idioma.ES)
+            assertTrue("$idioma: lleva los minutos", linea.contains("7 "))
+            assertFalse("$idioma: placeholder sin resolver: $linea", linea.contains("{") || linea.contains("}"))
             assertTrue(etiquetaRetoHabilidad(idioma).isNotBlank())
         }
-        assertEquals("Dilo en voz alta, como en una conversación de verdad.", textoRetoLinea(Idioma.ES))
+        assertEquals("Habla 7 min sobre esto, en voz alta y de una sola vez (aunque la consigna pida escribir):", textoRetoConsignaLinea(Idioma.ES, 7))
+        assertEquals("Speak for 7 min about this, out loud and in one go (even if the task asks you to write):", textoRetoConsignaLinea(Idioma.EN, 7))
+        // RETO_LINEA («Dilo en voz alta…») se fundio en la linea nueva: no queda la vieja
+        assertFalse(ClaveTexto.entries.any { it.name == "RETO_LINEA" })
     }
 
     @Test
@@ -180,5 +204,50 @@ class RetoFinDeSemanaTest {
         composeTestRule.runOnIdle(reabrir)
         composeTestRule.waitForIdle()
         assertFalse(textosEnPantalla().contains(etiquetaRetoCondiciones(Idioma.ES)))
+    }
+
+    @Test
+    fun `P4 el bloque completo del desafio es distinto de la mision, y no vuelve a mostrar requisitos ni micro-tareas`() {
+        val ficha = fichaDe(Nivel.B2)
+        composeTestRule.setContent { ContenidoSemanalScreen(ficha, idiomaBase = Idioma.ES, fecha = sabado, topicNombres = topics) }
+        val mision = textosEnPantalla().map { limpio(it) }
+        val consigna = fragmentos(ficha.mision.consigna, ficha, ficha.idioma)
+        // la mision completa (en la ficha normal) trae consigna + requisitos + micro-tareas
+        assertTrue(mision.any { it.contains(consigna) })
+        assertTrue(ficha.mision.requisitos.all { r -> mision.any { it.contains(fragmentos(r, ficha, ficha.idioma)) } })
+        assertTrue(ficha.microtareas.all { m -> mision.any { it.contains(fragmentos(m.texto, ficha, ficha.idioma)) } })
+
+        composeTestRule.onNode(hasText(etiquetaDesafioFinde(Idioma.ES))).performClick()
+        composeTestRule.waitForIdle()
+        val desafio = textosEnPantalla().map { limpio(it) }
+        // la consigna se reusa; nada mas de la mision
+        assertTrue(desafio.any { it.contains(consigna) })
+        assertTrue("requisitos en el desafio", ficha.mision.requisitos.none { r -> desafio.any { it.contains(fragmentos(r, ficha, ficha.idioma)) } })
+        assertTrue("micro-tareas en el desafio", ficha.microtareas.none { m -> desafio.any { it.contains(fragmentos(m.texto, ficha, ficha.idioma)) } })
+        // y el bloque visible, completo, no es el de la mision (tiene encuadre propio y le faltan partes)
+        assertNotEquals(mision.toSet(), desafio.toSet())
+        assertTrue("el desafio trae textos propios", (desafio.toSet() - mision.toSet()).isNotEmpty())
+        assertTrue("a la mision completa le falta lo que el desafio quita", (mision.toSet() - desafio.toSet()).size >= ficha.mision.requisitos.size)
+    }
+
+    @Test
+    fun `una ficha sin consigna no queda sin encabezado, cae a la descripcion`() {
+        val base = fichaDe(Nivel.B2)
+        val sinConsigna = base.copy(mision = base.mision.copy(consigna = TextoBilingue.de("")))
+        activarReto(sinConsigna, Idioma.ES)
+        val visibles = textosEnPantalla().map { limpio(it) }
+        assertTrue("sin consigna ni descripcion de reemplazo: $visibles", visibles.any { it.contains(fragmentos(sinConsigna.descripcion, sinConsigna, sinConsigna.idioma)) })
+        // la linea oral sigue, y el resto del bloque tambien
+        assertTrue(visibles.contains(textoRetoConsignaLinea(Idioma.ES, oralMinRedondeado(sinConsigna.evidencia.oralMin))))
+        assertTrue(visibles.contains(etiquetaRetoCondiciones(Idioma.ES)))
+    }
+
+    @Test
+    fun `consignaDelDesafio cae de la consigna a la descripcion y de ahi al titulo`() {
+        assertEquals("Ve a Berlín", consignaDelDesafio("  Ve a Berlín ", "desc", "titulo"))
+        assertEquals("desc", consignaDelDesafio("", "desc", "titulo"))
+        assertEquals("desc", consignaDelDesafio("   ", " desc ", "titulo"))
+        assertEquals("titulo", consignaDelDesafio("", " ", "titulo"))
+        assertEquals("", consignaDelDesafio("", "", ""))
     }
 }

@@ -66,6 +66,7 @@ import io.github.percati.lenguapp.modelo.aTextoBilingue
 import io.github.percati.lenguapp.modelo.resolver
 import io.github.percati.lenguapp.modelo.VocabularioItem
 import io.github.percati.lenguapp.presentacion.TraduccionRedemittel
+import io.github.percati.lenguapp.presentacion.consignaDelDesafio
 import io.github.percati.lenguapp.presentacion.contrasteParaMostrar
 import io.github.percati.lenguapp.presentacion.erroresParaMostrar
 import io.github.percati.lenguapp.presentacion.expresionesDeLaFicha
@@ -272,14 +273,17 @@ private fun FichaContenido(
                 }
 
                 if (modoDesafio) {
-                    // El reto NO es la mision repetida (REGLAS-PREVENCION P4): no muestra la consigna ni los
-                    // requisitos. Es hablar en voz alta: una linea, el tema y la habilidad, las condiciones
-                    // (una idea por fila, con icono) y hasta 3 frases de la ficha para usar. Rotulos y
-                    // condiciones en el idioma de app; las frases en el que se aprende. El resto de la
-                    // ficha se oculta mientras el reto esta activo.
+                    // El reto NO es la mision repetida (REGLAS-PREVENCION P4): la mision completa es consigna +
+                    // requisitos + micro-tareas + evidencia escrita; el reto reusa SOLO la consigna, como tarea
+                    // oral concreta (con una linea de encuadre y los minutos de la ficha), y nunca los requisitos ni
+                    // las micro-tareas. Despues: tema y habilidad, las condiciones (una idea por fila, con icono) y
+                    // hasta 3 frases de la ficha para usar. Rotulos y condiciones en el idioma de app; las frases
+                    // en el que se aprende. El resto de la ficha se oculta mientras el reto esta activo. Sin consigna
+                    // en la ficha, el encabezado cae a la descripcion (consignaDelDesafio).
                     RetoFinDeSemana(
                         ficha = ficha,
                         idiomaInterfaz = idiomaInterfaz,
+                        consigna = m(consignaDelDesafio(t(ficha.mision.consigna), t(ficha.descripcion), t(ficha.titulo))),
                         habilidad = t(ficha.titulo),
                         tema = topicNombres.nombre(ficha.topicId, idiomaInterfaz),
                     )
@@ -526,10 +530,12 @@ private fun iconosReto(nivel: Nivel): List<ImageVector> =
     }
 
 @Composable
-private fun RetoFinDeSemana(ficha: Ficha, idiomaInterfaz: Idioma, habilidad: String, tema: String) {
+private fun RetoFinDeSemana(ficha: Ficha, idiomaInterfaz: Idioma, consigna: AnnotatedString, habilidad: String, tema: String) {
     Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones)) {
         Seccion(etiquetaDesafioFinde(idiomaInterfaz)) {
-            Text(textoRetoLinea(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge)
+            // Lo primero que se lee: la tarea oral (linea de encuadre + la consigna de la ficha, con el peso mas fuerte del bloque).
+            Text(textoRetoConsignaLinea(idiomaInterfaz, oralMinRedondeado(ficha.evidencia.oralMin)), style = MaterialTheme.typography.bodyLarge)
+            Text(consigna, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
             FilaDato(etiquetaBibliotecaTema(idiomaInterfaz), tema)
             FilaDato(etiquetaRetoHabilidad(idiomaInterfaz), habilidad)
         }

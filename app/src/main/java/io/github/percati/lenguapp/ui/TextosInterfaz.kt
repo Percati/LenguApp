@@ -37,7 +37,7 @@ enum class ClaveTexto {
     QUITAR_FILTROS, QUITAR,
     ORDENAR_POR, ORDEN_ALFABETICO, ORDEN_FECHA, ASCENDENTE, DESCENDENTE, QUITAR_ESTRELLA,
     SIN_IDIOMA_TITULO, SIN_IDIOMA_TEXTO, SIN_IDIOMA_WIDGET,
-    RETO_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_HABILIDAD, RETO_CONDICIONES, RETO_FRASES_TITULO, RETO_FRASES_AYUDA,
+    RETO_CONSIGNA_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_HABILIDAD, RETO_CONDICIONES, RETO_FRASES_TITULO, RETO_FRASES_AYUDA,
     ACERCA_COMO_TITULO, ACERCA_COMO_TEXTO, ACERCA_CREDITOS_TEXTO, ACERCA_PRUEBA,
     GUARDADOS_EXPORTAR, GUARDADOS_IMPORTAR, GUARDADOS_EXPORTAR_ANKI, GUARDADOS_EXPORTAR_RESPALDO, GUARDADOS_MSG_EXPORTADO, GUARDADOS_MSG_IMPORTADO, GUARDADOS_ERR_INVALIDO, GUARDADOS_ERR_GRANDE, GUARDADOS_ERR_VERSION, GUARDADOS_ERR_ARCHIVO,
     BIBLIOTECA_VISTA_LEXICO, BIBLIOTECA_VISTA_HABILIDADES, HABILIDAD_SEMANAS,
@@ -213,13 +213,16 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
     ),
     // --- Reto del fin de semana (Ronda E, tarea 4) ---
     // --- Desafio de fin de semana (Ronda F2, tarea 2) ---
-    ClaveTexto.RETO_LINEA to mapOf(
-        Idioma.ES to "Dilo en voz alta, como en una conversación de verdad.",
-        Idioma.EN to "Say it out loud, like in a real conversation.",
-        Idioma.DE to "Sag es laut, wie in einem echten Gespräch.",
-        Idioma.FR to "Dis-le à voix haute, comme dans une vraie conversation.",
-        Idioma.IT to "Dillo ad alta voce, come in una vera conversazione.",
-        Idioma.PT to "Diga em voz alta, como em uma conversa de verdade.",
+    // Linea oral que va ANTES de la consigna de la ficha (Ronda K, tarea 2): reencuadra la consigna como tarea para hablar.
+    // {oralMin} = evidencia.oralMin redondeado; "min" y no "minutos" para no depender del plural. La aclaracion final
+    // existe porque muchas consignas piden escribir (es la misma consigna de la mision), y aca se resuelve hablando.
+    ClaveTexto.RETO_CONSIGNA_LINEA to mapOf(
+        Idioma.ES to "Habla {oralMin} min sobre esto, en voz alta y de una sola vez (aunque la consigna pida escribir):",
+        Idioma.EN to "Speak for {oralMin} min about this, out loud and in one go (even if the task asks you to write):",
+        Idioma.DE to "Sprich {oralMin} Min. lang darüber, laut und in einem Zug (auch wenn die Aufgabe ein Schreiben verlangt):",
+        Idioma.FR to "Parle {oralMin} min de cela, à voix haute et d'un seul trait (même si la consigne demande d'écrire) :",
+        Idioma.IT to "Parla per {oralMin} min di questo, ad alta voce e tutto d'un fiato (anche se la consegna chiede di scrivere):",
+        Idioma.PT to "Fale por {oralMin} min sobre isso, em voz alta e de uma só vez (mesmo que o enunciado peça para escrever):",
     ),
     ClaveTexto.RETO_REGLAS_BASICO to mapOf(
         Idioma.ES to "De corrido, sin leer\nUna sola toma\nDíselo a una persona o grábate\nEscúchalo y repítelo una vez",
@@ -1042,7 +1045,8 @@ fun etiquetaAcercaLicenciasTitulo(idiomaInterfaz: Idioma): String = texto(ClaveT
 fun textoAcercaLicencias(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_LICENCIAS_TEXTO, idiomaInterfaz)
 fun textoAcercaVersion(idiomaInterfaz: Idioma, version: String): String =
     interpolar(texto(ClaveTexto.ACERCA_VERSION, idiomaInterfaz), "version" to version)
-fun textoRetoLinea(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_LINEA, idiomaInterfaz)
+fun textoRetoConsignaLinea(idiomaInterfaz: Idioma, oralMin: Int): String =
+    interpolar(texto(ClaveTexto.RETO_CONSIGNA_LINEA, idiomaInterfaz), "oralMin" to oralMin.toString())
 fun etiquetaRetoHabilidad(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_HABILIDAD, idiomaInterfaz)
 fun etiquetaRetoCondiciones(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_CONDICIONES, idiomaInterfaz)
 fun etiquetaRetoFrasesTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.RETO_FRASES_TITULO, idiomaInterfaz)
