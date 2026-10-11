@@ -126,4 +126,46 @@ class NucleosVerbosPantallaTest {
         composeTestRule.onNodeWithText("Separable (1)").performClick()
         composeTestRule.onNodeWithText("umstellen").assertIsDisplayed()
     }
+
+    @Test
+    fun `buscar Frage trae stellen y se ve la colocacion que coincidio`() {
+        mostrar(colocacionesDe("stellen") + colocacionesDe("einstellen"))
+        composeTestRule.onNodeWithText("einstellen").assertIsDisplayed()
+        composeTestRule.onNodeWithText("Buscar").performTextInput("frage")
+        composeTestRule.onNodeWithText("stellen").assertIsDisplayed()
+        composeTestRule.onNodeWithText("die Frage stellen").assertIsDisplayed()
+        composeTestRule.onAllNodesWithText("einstellen").assertCountEquals(0)
+    }
+}
+
+/** El campo de busqueda queda fijo arriba de la vista Verbos mientras se recorre la lista (Ronda J, tarea 2). */
+@RunWith(RobolectricTestRunner::class)
+@Config(qualifiers = "w400dp-h600dp")
+class BuscadorFijoVerbosTest {
+
+    @get:Rule
+    val composeTestRule = createAndroidComposeRule<ComponentActivity>()
+
+    @Test
+    fun `el campo de busqueda sigue a la vista despues de recorrer la lista, y los chips se van con el scroll`() {
+        composeTestRule.setContent {
+            BibliotecaScreen(
+                items = itemsReales, idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2), idiomaBase = Idioma.ES, idiomaInterfaz = Idioma.ES,
+                topicNombres = NombresI18n(), categorias = CategoriasUso(), guardadas = emptySet(),
+                onAlternar = {}, onVolver = {},
+            )
+        }
+        composeTestRule.onNodeWithText("Verbos").performClick()
+        composeTestRule.onNodeWithText("Buscar").assertIsDisplayed()
+        composeTestRule.onNodeWithText("Alemán").assertIsDisplayed()
+
+        composeTestRule.onNode(hasScrollToIndexAction() and SemanticsMatcher.keyIsDefined(SemanticsProperties.VerticalScrollAxisRange)).performScrollToIndex(300)
+        composeTestRule.waitForIdle()
+        // la lista avanzo: la pestana de idioma ya no esta, pero el campo si
+        composeTestRule.onAllNodesWithText("Alemán").assertCountEquals(0)
+        composeTestRule.onNodeWithText("Buscar").assertIsDisplayed()
+        // y se puede escribir sin volver arriba
+        composeTestRule.onNodeWithText("Buscar").performTextInput("stellen")
+        composeTestRule.onNodeWithText("Buscar").assertIsDisplayed()
+    }
 }

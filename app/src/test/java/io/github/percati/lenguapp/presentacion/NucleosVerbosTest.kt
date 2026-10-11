@@ -187,4 +187,79 @@ class NucleosVerbosTest {
         assertEquals("$n · phrasal-separable", sep.lineaExtra(emptySet()) { it })
         assertEquals(n, sep.lineaExtra(setOf("phrasal-separable")) { it })
     }
+
+    // --- busqueda ---
+
+    @Test
+    fun `buscar Frage trae stellen, por el texto de su colocacion`() {
+        val entradas = items.entradasVerbo(Idioma.DE)
+        val r = entradas.filtrarPorBusquedaVerbos("Frage", Idioma.ES)
+        val stellen = r.firstOrNull { it.infinitivo == "stellen" }
+        assertNotNull("Frage debe traer stellen", stellen)
+        assertTrue("y la colocacion que coincidio esta entre las de la entrada", stellen!!.colocaciones.any { it.texto.contains("Frage") })
+        assertFalse("«Frage» no esta en el infinitivo: lo encontro por la colocacion", "frage" in stellen.infinitivo)
+    }
+
+    @Test
+    fun `buscar por la traduccion de una colocacion trae su nucleo`() {
+        val entradas = items.entradasVerbo(Idioma.DE)
+        // la traduccion al idioma de app de «die Frage stellen»
+        val colocacion = items.first { it.idioma == Idioma.DE && it.texto == "die Frage stellen" }
+        val traduccion = colocacion.datosFila(Idioma.ES).traduccion!!
+        val r = entradas.filtrarPorBusquedaVerbos(traduccion.uppercase(), Idioma.ES)
+        assertTrue("`$traduccion` debe traer stellen", r.any { it.infinitivo == "stellen" })
+    }
+
+    @Test
+    fun `el caso stellen en aleman devuelve la familia, con la fusion de bestellen en una sola fila`() {
+        val entradas = items.entradasVerbo(Idioma.DE)
+        val r = entradas.filtrarPorBusquedaVerbos("stellen", Idioma.ES)
+        val propios = setOf("bestellen", "sich etwas bestellen", "sich vorstellen", "etwas nachbestellen", "etwas richtigstellen", "jemanden kaltstellen")
+        val nucleos = setOf("stellen", "einstellen", "umstellen")
+        assertTrue("faltan propios ${propios - r.filter { it.propio != null }.map { it.infinitivo }.toSet()}", r.filter { it.propio != null }.map { it.infinitivo }.containsAll(propios))
+        assertTrue("faltan nucleos", r.filter { it.propio == null }.map { it.infinitivo }.containsAll(nucleos))
+        assertEquals("bestellen es UNA sola fila (la del verbo propio)", 1, r.count { it.infinitivo == "bestellen" })
+        val bestellen = r.single { it.infinitivo == "bestellen" }
+        assertNotNull(bestellen.propio)
+        assertTrue(bestellen.colocaciones.any { it.texto == "online bestellen" })
+        // el prompt contaba 10 con bestellen dos veces (6 propios + 4 nucleos); fusionado son 9 + lo que traiga por colocaciones
+        assertEquals(r.size, r.map { it.infinitivo }.toSet().size)
+        assertEquals("stellen: ${r.map { it.infinitivo }}", propios.size + nucleos.size, r.size)
+    }
+
+    @Test
+    fun `el buscador precalculado cubre colocaciones y da lo mismo que filtrar en cada tecla`() {
+        val entradas = items.entradasVerbo(Idioma.EN)
+        val buscador = BuscadorVerbos(entradas, Idioma.ES)
+        for (q in listOf("take", "TAKE", "up", "a", "qqqq", "", "  ")) {
+            assertEquals(q, entradas.filtrarPorBusquedaVerbos(q, Idioma.ES).map { it.infinitivo }, buscador.filtrar(entradas, q).map { it.infinitivo })
+        }
+        // no cruza campos: la consulta no puede coincidir a caballo del infinitivo y de una colocacion
+        assertEquals(emptyList<EntradaVerbo>(), entradas.filtrarPorBusquedaVerbos("zzzz\u0000", Idioma.ES))
+    }
+
+    @Test
+    fun `la busqueda sigue siendo sin diacriticos tambien sobre las colocaciones`() {
+        val colocacion = items.first { it.idioma == Idioma.DE && it.esColocacionConNucleo() && Regex("[äöüß]").containsMatchIn(it.texto) }
+        val q = normalizarBusqueda(colocacion.texto).take(10)
+        val r = items.entradasVerbo(Idioma.DE).filtrarPorBusquedaVerbos(q, Idioma.ES)
+        assertTrue(r.any { e -> e.colocaciones.any { it === colocacion } })
+    }
+
+    @Test
+    fun `teclear no renormaliza, filtrar es una busqueda de subcadena sobre texto ya preparado`() {
+        for (idioma in listOf(Idioma.DE, Idioma.EN)) {
+            val entradas = items.entradasVerbo(idioma)
+            repeat(3) { BuscadorVerbos(entradas, Idioma.ES).filtrar(entradas, "x") } // calentar
+            val t0 = System.nanoTime()
+            val buscador = BuscadorVerbos(entradas, Idioma.ES)
+            val construir = (System.nanoTime() - t0) / 1e6
+            val teclas = listOf("s", "st", "ste", "stel", "stell", "stelle", "stellen")
+            val t1 = System.nanoTime()
+            repeat(50) { for (q in teclas) buscador.filtrar(entradas, q) }
+            val porTecla = (System.nanoTime() - t1) / 1e6 / (50 * teclas.size)
+            println("BUSQUEDA-VERBOS $idioma: ${entradas.size} entradas, preparar ${"%.1f".format(construir)} ms (una vez), filtrar ${"%.3f".format(porTecla)} ms por tecla")
+            assertTrue("$idioma: filtrar por tecla = $porTecla ms", porTecla < 20.0)
+        }
+    }
 }

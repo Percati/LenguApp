@@ -179,6 +179,10 @@ class BuscadorVerbos(entradas: List<EntradaVerbo>, idiomaBase: Idioma) {
             val partes = ArrayList<String>(2 + e.colocaciones.size * 2)
             partes += normalizarBusqueda(e.infinitivo)
             e.propio?.datosFila(idiomaBase)?.traduccion?.let { partes += normalizarBusqueda(it) }
+            for (c in e.colocaciones) {
+                partes += normalizarBusqueda(c.texto)
+                c.datosFila(idiomaBase).traduccion?.let { partes += normalizarBusqueda(it) }
+            }
             m[e] = partes.joinToString("\u0000")
         }
     }

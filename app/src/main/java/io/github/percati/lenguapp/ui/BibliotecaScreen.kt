@@ -243,7 +243,7 @@ fun BibliotecaScreen(
                 // La busqueda es LA forma de usar esta vista (cientos de entradas): queda fija arriba mientras se
                 // recorre la lista, con fondo opaco. Los chips de clase se van con el scroll (la busqueda tiene prioridad).
                 if (verbos.isNotEmpty()) {
-                    item(key = "buscar-verbos") {
+                    stickyHeader(key = "buscar-verbos") {
                         Surface(color = MaterialTheme.colorScheme.background, modifier = Modifier.fillMaxWidth()) {
                             OutlinedTextField(
                                 value = busquedaVerbos,
