@@ -81,7 +81,7 @@ class EspaciadoEscalaTest {
         val f = ficha()
         composeTestRule.setContent {
             CompositionLocalProvider(LocalDensity provides Density(2f, escala)) {
-                TemaLenguApp(familiaTema = io.github.percati.lenguapp.modelo.FamiliaTema.ACADEMIA, modoTema = io.github.percati.lenguapp.modelo.ModoTema.CLARO) {
+                TemaLenguApp(familiaTema = io.github.percati.lenguapp.modelo.FamiliaTema.PAPEL, modoTema = io.github.percati.lenguapp.modelo.ModoTema.CLARO) {
                     ContenidoSemanalScreen(f, idiomaBase = Idioma.ES)
                 }
             }

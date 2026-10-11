@@ -27,12 +27,16 @@ data class Ajustes(
     val idiomaBase: Idioma = Idioma.ES,
     val idiomaInterfaz: Idioma = Idioma.ES,
     val idiomaSegunSistema: Boolean = false,
-    val familiaTema: FamiliaTema = FamiliaTema.ACADEMIA,
+    val familiaTema: FamiliaTema = FamiliaTema.PAPEL,
     val modoTema: ModoTema = ModoTema.SEGUN_SISTEMA,
 )
 
-/** AJUSTES-FASE-7.md, bloque 1: dos ajustes, no uno -- familia y modo se eligen por separado. */
-enum class FamiliaTema { ACADEMIA, EDITORIAL }
+/**
+ * Ronda G: cuatro temas de color + SISTEMA (color dinamico de Material 3, solo API 31+). Familia y modo
+ * (claro/oscuro/sistema) son dos ajustes independientes. Los valores guardados por versiones anteriores
+ * (ACADEMIA, EDITORIAL) se migran al cargar: ver datos/RepositorioAjustes.kt (migrarFamiliaTema).
+ */
+enum class FamiliaTema { PAPEL, TERRACOTA, MAR, GRAFITO, SISTEMA }
 
 /**
  * `SEGUN_SISTEMA` lee el modo claro/oscuro del dispositivo -- misma clase de

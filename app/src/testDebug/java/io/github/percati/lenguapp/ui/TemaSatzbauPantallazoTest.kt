@@ -56,10 +56,11 @@ class TemaSatzbauPantallazoTest(
         @JvmStatic
         @ParameterizedRobolectricTestRunner.Parameters(name = "{0}")
         fun temas(): List<Array<Any>> = listOf(
-            arrayOf("academia-claro", FamiliaTema.ACADEMIA, ModoTema.CLARO),
-            arrayOf("academia-oscuro", FamiliaTema.ACADEMIA, ModoTema.OSCURO),
-            arrayOf("editorial-claro", FamiliaTema.EDITORIAL, ModoTema.CLARO),
-            arrayOf("editorial-oscuro", FamiliaTema.EDITORIAL, ModoTema.OSCURO),
+            arrayOf("papel-claro", FamiliaTema.PAPEL, ModoTema.CLARO),
+            arrayOf("papel-oscuro", FamiliaTema.PAPEL, ModoTema.OSCURO),
+            arrayOf("terracota-claro", FamiliaTema.TERRACOTA, ModoTema.CLARO),
+            arrayOf("mar-claro", FamiliaTema.MAR, ModoTema.CLARO),
+            arrayOf("grafito-oscuro", FamiliaTema.GRAFITO, ModoTema.OSCURO),
         )
     }
 

@@ -67,7 +67,7 @@ class ContenidoSemanalScreenRenderTest(private val nombreArchivo: String) {
         val contenido = parsearContenido(File(carpetaAssets(), "contenido/$nombreArchivo").readText())
 
         composeTestRule.setContent {
-            TemaLenguApp(familiaTema = FamiliaTema.ACADEMIA, modoTema = ModoTema.CLARO) {
+            TemaLenguApp(familiaTema = FamiliaTema.PAPEL, modoTema = ModoTema.CLARO) {
                 CompositionLocalProvider(
                     LocalDensity provides Density(LocalDensity.current.density, fontScale = 1.5f),
                 ) {

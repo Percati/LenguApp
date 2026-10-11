@@ -145,25 +145,25 @@ class AjustesScreenTest {
 
     @Test
     fun `elegir una familia de tema la escribe en los ajustes, sin tocar el modo`() {
-        val actual = montar(Ajustes(familiaTema = FamiliaTema.ACADEMIA, modoTema = ModoTema.OSCURO))
+        val actual = montar(Ajustes(familiaTema = FamiliaTema.PAPEL, modoTema = ModoTema.OSCURO))
 
-        filaConChip("Editorial").performScrollTo()
-        composeTestRule.onNodeWithText("Editorial").performClick()
+        filaConChip("Mar").performScrollTo()
+        composeTestRule.onNodeWithText("Mar").performClick()
 
         val ajustes = actual()
-        assertEquals(FamiliaTema.EDITORIAL, ajustes.familiaTema)
+        assertEquals(FamiliaTema.MAR, ajustes.familiaTema)
         assertEquals(ModoTema.OSCURO, ajustes.modoTema)
     }
 
     @Test
     fun `elegir un modo de tema lo escribe en los ajustes, sin tocar la familia`() {
-        val actual = montar(Ajustes(familiaTema = FamiliaTema.EDITORIAL, modoTema = ModoTema.SEGUN_SISTEMA))
+        val actual = montar(Ajustes(familiaTema = FamiliaTema.MAR, modoTema = ModoTema.SEGUN_SISTEMA))
 
         filaConChip("Oscuro").performScrollTo()
         composeTestRule.onNodeWithText("Oscuro").performClick()
 
         val ajustes = actual()
-        assertEquals(FamiliaTema.EDITORIAL, ajustes.familiaTema)
+        assertEquals(FamiliaTema.MAR, ajustes.familiaTema)
         assertEquals(ModoTema.OSCURO, ajustes.modoTema)
     }
 

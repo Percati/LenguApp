@@ -92,13 +92,13 @@ class RepositorioAjustesTest {
     @Test
     fun `guardar y cargar preserva familiaTema y modoTema, es preferencia igual que el idioma`() {
         val contexto = contexto()
-        val ajustes = Ajustes(familiaTema = FamiliaTema.EDITORIAL, modoTema = ModoTema.OSCURO)
+        val ajustes = Ajustes(familiaTema = FamiliaTema.TERRACOTA, modoTema = ModoTema.OSCURO)
         guardarAjustes(contexto, ajustes)
         assertEquals(ajustes, cargarAjustes(contexto))
     }
 
     @Test
-    fun `migracion- el esquema viejo sin claves de tema cae a Academia y Segun el sistema`() {
+    fun `migracion- el esquema viejo sin claves de tema cae a Papel y Segun el sistema`() {
         val contexto = contexto()
         contexto.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit()
             .putString("idioma_aprendido", "DE")
@@ -106,7 +106,7 @@ class RepositorioAjustesTest {
 
         val ajustes = cargarAjustes(contexto)
 
-        assertEquals(FamiliaTema.ACADEMIA, ajustes.familiaTema)
+        assertEquals(FamiliaTema.PAPEL, ajustes.familiaTema)
         assertEquals(ModoTema.SEGUN_SISTEMA, ajustes.modoTema)
     }
 
@@ -118,5 +118,41 @@ class RepositorioAjustesTest {
             .apply()
 
         assertEquals(mapOf(Idioma.DE to Nivel.B2), cargarAjustes(contexto).idiomasAprendidos)
+    }
+
+    // --- Ronda G: migracion del tema guardado ---
+
+    private fun conTemaGuardado(valor: String?): Ajustes {
+        val contexto = contexto()
+        val prefs = contexto.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
+        // un ajuste completo, con otros valores no por defecto: la migracion no debe tocar nada mas
+        guardarAjustes(contexto, Ajustes(idiomaBase = Idioma.EN, idiomaInterfaz = Idioma.DE, modoTema = ModoTema.OSCURO, idiomasAprendidos = mapOf(Idioma.EN to Nivel.C1)))
+        val editor = prefs.edit()
+        if (valor == null) editor.remove("familia_tema") else editor.putString("familia_tema", valor)
+        editor.apply()
+        return cargarAjustes(contexto)
+    }
+
+    @Test
+    fun `migracion de tema- ACADEMIA pasa a PAPEL y EDITORIAL a MAR`() {
+        assertEquals(FamiliaTema.PAPEL, conTemaGuardado("ACADEMIA").familiaTema)
+        assertEquals(FamiliaTema.MAR, conTemaGuardado("EDITORIAL").familiaTema)
+    }
+
+    @Test
+    fun `migracion de tema- un valor desconocido o ausente cae a PAPEL, los nuevos se conservan`() {
+        assertEquals(FamiliaTema.PAPEL, conTemaGuardado("NO_EXISTE").familiaTema)
+        assertEquals(FamiliaTema.PAPEL, conTemaGuardado("").familiaTema)
+        assertEquals(FamiliaTema.PAPEL, conTemaGuardado(null).familiaTema)
+        for (f in FamiliaTema.entries) assertEquals(f, conTemaGuardado(f.name).familiaTema)
+    }
+
+    @Test
+    fun `migracion de tema- no se pierde ningun otro ajuste`() {
+        val a = conTemaGuardado("EDITORIAL")
+        assertEquals(Idioma.EN, a.idiomaBase)
+        assertEquals(Idioma.DE, a.idiomaInterfaz)
+        assertEquals(ModoTema.OSCURO, a.modoTema)
+        assertEquals(mapOf(Idioma.EN to Nivel.C1), a.idiomasAprendidos)
     }
 }

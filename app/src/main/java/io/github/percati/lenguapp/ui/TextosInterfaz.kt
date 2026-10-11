@@ -41,6 +41,7 @@ enum class ClaveTexto {
     ACERCA_COMO_TITULO, ACERCA_COMO_TEXTO, ACERCA_CREDITOS_TEXTO, ACERCA_PRUEBA,
     GUARDADOS_EXPORTAR, GUARDADOS_IMPORTAR, GUARDADOS_EXPORTAR_ANKI, GUARDADOS_EXPORTAR_RESPALDO, GUARDADOS_MSG_EXPORTADO, GUARDADOS_MSG_IMPORTADO, GUARDADOS_ERR_INVALIDO, GUARDADOS_ERR_GRANDE, GUARDADOS_ERR_VERSION, GUARDADOS_ERR_ARCHIVO,
     BIBLIOTECA_VISTA_LEXICO, BIBLIOTECA_VISTA_HABILIDADES, HABILIDAD_SEMANAS,
+    TEMA_PAPEL, TEMA_TERRACOTA, TEMA_MAR, TEMA_GRAFITO,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
 }
 
@@ -369,6 +370,39 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "sem. {semanas}",
         Idioma.IT to "sett. {semanas}",
         Idioma.PT to "sem. {semanas}",
+    ),
+    // --- Temas de color (Ronda G) ---
+    ClaveTexto.TEMA_PAPEL to mapOf(
+        Idioma.ES to "Papel",
+        Idioma.EN to "Paper",
+        Idioma.DE to "Papier",
+        Idioma.FR to "Papier",
+        Idioma.IT to "Carta",
+        Idioma.PT to "Papel",
+    ),
+    ClaveTexto.TEMA_TERRACOTA to mapOf(
+        Idioma.ES to "Terracota",
+        Idioma.EN to "Terracotta",
+        Idioma.DE to "Terrakotta",
+        Idioma.FR to "Terre cuite",
+        Idioma.IT to "Terracotta",
+        Idioma.PT to "Terracota",
+    ),
+    ClaveTexto.TEMA_MAR to mapOf(
+        Idioma.ES to "Mar",
+        Idioma.EN to "Sea",
+        Idioma.DE to "Meer",
+        Idioma.FR to "Mer",
+        Idioma.IT to "Mare",
+        Idioma.PT to "Mar",
+    ),
+    ClaveTexto.TEMA_GRAFITO to mapOf(
+        Idioma.ES to "Grafito",
+        Idioma.EN to "Graphite",
+        Idioma.DE to "Graphit",
+        Idioma.FR to "Graphite",
+        Idioma.IT to "Grafite",
+        Idioma.PT to "Grafite",
     ),
     // --- Estado sin idioma elegido (pantalla y widget) ---
     ClaveTexto.SIN_IDIOMA_TITULO to mapOf(
@@ -797,6 +831,15 @@ fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.T
 fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
 fun etiquetaAcercaDe(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_DE, idiomaInterfaz)
+
+/** Nombre de un tema de color en el idioma de app; SISTEMA reutiliza el rotulo "Sistema" de los selectores. */
+fun nombreTema(familia: io.github.percati.lenguapp.modelo.FamiliaTema, idiomaInterfaz: Idioma): String = when (familia) {
+    io.github.percati.lenguapp.modelo.FamiliaTema.PAPEL -> texto(ClaveTexto.TEMA_PAPEL, idiomaInterfaz)
+    io.github.percati.lenguapp.modelo.FamiliaTema.TERRACOTA -> texto(ClaveTexto.TEMA_TERRACOTA, idiomaInterfaz)
+    io.github.percati.lenguapp.modelo.FamiliaTema.MAR -> texto(ClaveTexto.TEMA_MAR, idiomaInterfaz)
+    io.github.percati.lenguapp.modelo.FamiliaTema.GRAFITO -> texto(ClaveTexto.TEMA_GRAFITO, idiomaInterfaz)
+    io.github.percati.lenguapp.modelo.FamiliaTema.SISTEMA -> etiquetaSegunSistema(idiomaInterfaz)
+}
 fun etiquetaBibliotecaVistaLexico(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_VISTA_LEXICO, idiomaInterfaz)
 fun etiquetaBibliotecaVistaHabilidades(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_VISTA_HABILIDADES, idiomaInterfaz)
 fun textoHabilidadSemanas(idiomaInterfaz: Idioma, semanas: List<Int>): String =

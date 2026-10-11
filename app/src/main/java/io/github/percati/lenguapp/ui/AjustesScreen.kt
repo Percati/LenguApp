@@ -243,11 +243,6 @@ private fun SelectorIdiomaAplicacion(
     }
 }
 
-private fun nombreVisible(familia: FamiliaTema): String = when (familia) {
-    FamiliaTema.ACADEMIA -> "Academia"
-    FamiliaTema.EDITORIAL -> "Editorial"
-}
-
 private fun nombreVisible(modo: ModoTema, idiomaInterfaz: Idioma): String = when (modo) {
     ModoTema.CLARO -> etiquetaModoClaro(idiomaInterfaz)
     ModoTema.OSCURO -> etiquetaModoOscuro(idiomaInterfaz)
@@ -256,9 +251,8 @@ private fun nombreVisible(modo: ModoTema, idiomaInterfaz: Idioma): String = when
 
 /**
  * Familia de tema y modo son dos ajustes separados, no uno --
- * AJUSTES-FASE-7.md, bloque 1. Los nombres de familia (Academia, Editorial)
- * no estan en la tabla de AJUSTES-FASE-9.md, bloque B: quedan sin traducir
- * a proposito, no es un olvido.
+ * AJUSTES-FASE-7.md, bloque 1. Los nombres de los temas salen en el idioma de app
+ * (nombreTema); SISTEMA solo se ofrece donde hay color dinamico (API 31+).
  */
 @Composable
 private fun SelectorFamiliaTema(idiomaInterfaz: Idioma, familiaElegida: FamiliaTema, onElegir: (FamiliaTema) -> Unit) {
@@ -268,11 +262,11 @@ private fun SelectorFamiliaTema(idiomaInterfaz: Idioma, familiaElegida: FamiliaT
             modifier = Modifier.horizontalScroll(rememberScrollState()),
             horizontalArrangement = Arrangement.spacedBy(8.dp),
         ) {
-            FamiliaTema.entries.forEach { familia ->
+            familiasOfrecidas().forEach { familia ->
                 FilterChip(
                     selected = familia == familiaElegida,
                     onClick = { onElegir(familia) },
-                    label = { Text(nombreVisible(familia)) },
+                    label = { Text(nombreTema(familia, idiomaInterfaz)) },
                 )
             }
         }

@@ -50,7 +50,7 @@ fun cargarAjustes(context: Context): Ajustes {
             idiomaBase = nombreAEnum(prefs.getString(CLAVE_IDIOMA_BASE, null), Idioma.ES),
             idiomaInterfaz = nombreAEnum(prefs.getString(CLAVE_IDIOMA_INTERFAZ, null), Idioma.ES),
             idiomaSegunSistema = prefs.getBoolean(CLAVE_IDIOMA_SEGUN_SISTEMA, false),
-            familiaTema = nombreAEnum(prefs.getString(CLAVE_FAMILIA_TEMA, null), FamiliaTema.ACADEMIA),
+            familiaTema = migrarFamiliaTema(prefs.getString(CLAVE_FAMILIA_TEMA, null)),
             modoTema = nombreAEnum(prefs.getString(CLAVE_MODO_TEMA, null), ModoTema.SEGUN_SISTEMA),
         )
     }
@@ -66,7 +66,7 @@ fun cargarAjustes(context: Context): Ajustes {
         idiomaBase = nombreAEnum(prefs.getString(CLAVE_IDIOMA_BASE, null), Idioma.ES),
         idiomaInterfaz = nombreAEnum(prefs.getString(CLAVE_IDIOMA_INTERFAZ, null), Idioma.ES),
         idiomaSegunSistema = prefs.getBoolean(CLAVE_IDIOMA_SEGUN_SISTEMA, false),
-        familiaTema = nombreAEnum(prefs.getString(CLAVE_FAMILIA_TEMA, null), FamiliaTema.ACADEMIA),
+        familiaTema = migrarFamiliaTema(prefs.getString(CLAVE_FAMILIA_TEMA, null)),
         modoTema = nombreAEnum(prefs.getString(CLAVE_MODO_TEMA, null), ModoTema.SEGUN_SISTEMA),
     )
     guardarAjustes(context, migrado)
@@ -84,4 +84,14 @@ fun guardarAjustes(context: Context, ajustes: Ajustes) {
         .remove(CLAVE_VIEJA_IDIOMA_APRENDIDO)
         .remove(CLAVE_VIEJA_NIVEL)
         .apply()
+}
+
+/**
+ * El tema guardado por versiones anteriores: ACADEMIA pasa a PAPEL, EDITORIAL a MAR, y cualquier
+ * valor desconocido o ausente a PAPEL (el tema por defecto). Los valores nuevos se leen tal cual.
+ */
+fun migrarFamiliaTema(nombre: String?): FamiliaTema = when (nombre) {
+    "ACADEMIA" -> FamiliaTema.PAPEL
+    "EDITORIAL" -> FamiliaTema.MAR
+    else -> FamiliaTema.entries.firstOrNull { it.name == nombre } ?: FamiliaTema.PAPEL
 }
