@@ -533,9 +533,21 @@ private fun iconosReto(nivel: Nivel): List<ImageVector> =
 private fun RetoFinDeSemana(ficha: Ficha, idiomaInterfaz: Idioma, consigna: AnnotatedString, habilidad: String, tema: String) {
     Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones)) {
         Seccion(etiquetaDesafioFinde(idiomaInterfaz)) {
-            // Lo primero que se lee: la tarea oral (linea de encuadre + la consigna de la ficha, con el peso mas fuerte del bloque).
-            Text(textoRetoConsignaLinea(idiomaInterfaz, oralMinRedondeado(ficha.evidencia.oralMin)), style = MaterialTheme.typography.bodyLarge)
-            Text(consigna, style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold)
+            // Lo primero que se lee: la tarea oral. La consigna es PROSA de dos a cuatro renglones, no un titular:
+            // tamano de cuerpo (bodyLarge) con peso medio, sin negrita. La jerarquia la da la posicion, el aire
+            // alrededor y el color pleno (onSurface) contra el onSurfaceVariant de la linea de encuadre que la precede.
+            Text(
+                textoRetoConsignaLinea(idiomaInterfaz, oralMinRedondeado(ficha.evidencia.oralMin)),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+            Text(
+                consigna,
+                style = MaterialTheme.typography.bodyLarge,
+                fontWeight = FontWeight.Medium,
+                color = MaterialTheme.colorScheme.onSurface,
+                modifier = Modifier.padding(vertical = 6.dp),
+            )
             FilaDato(etiquetaBibliotecaTema(idiomaInterfaz), tema)
             FilaDato(etiquetaRetoHabilidad(idiomaInterfaz), habilidad)
         }
