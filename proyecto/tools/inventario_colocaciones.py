@@ -41,7 +41,10 @@ EXCLUIDOS_DE = {"sein", "haben", "werden", "lassen", "können", "müssen", "soll
                 "dürfen", "mögen"}
 
 # ------------------------------------------------------------------ ingles
-EXCLUIDOS_EN = {"be", "have", "get", "do", "let"}
+# `let` NO se excluye: sus casos son phrasal (let down, let off), no causativos (correccion de
+# Fer, 11-oct-2026). Los dos causativos que quedan («to let someone know», «to let something
+# rest») no se indexan: el infinitivo incrustado (know, rest) no es lo que ensena el item.
+EXCLUIDOS_EN = {"be", "have", "get", "do"}
 # arranques que no son el verbo: articulos, pronombres y adverbios que se cuelan delante
 NO_VERBO_EN = {"something", "someone", "somebody", "your", "yourself", "oneself", "one's", "it", "its",
                "a", "an", "the", "my", "their", "in", "on", "out", "really", "just", "never", "always",
@@ -81,6 +84,10 @@ def nucleo_de(variante):
         return ""
     if ult in PARTICIPIOS_DE:
         return ""
+    if ult == "lassen" and len(toks) > 1:
+        # causativo: el verbo que se aprende es el infinitivo incrustado («sich impfen lassen»
+        # ensena impfen), no lassen. Decision de Fer, 11-oct-2026.
+        return nucleo_de(" ".join(toks[:-1]))
     if INF_DE.search(ult) or ult in INF_IRREG_DE:
         return ult
     return ""
@@ -210,6 +217,9 @@ def main():
         P(f"- verbos de la vista hoy: {len(etq[idi])} nucleos etiquetados -> "
           f"**+{len(nuevos_u)}** con esta ronda")
         P(f"- nucleos con una sola colocacion: {sum(1 for n in ns_u if len(grupos[(idi,n)])==1)}\n")
+        if idi == "de":
+            P("- `lassen` esta en la lista de exclusion pero no aparece como nucleo: la regla del "
+              "infinitivo incrustado lo reemplaza antes («sich impfen lassen» -> impfen).\n")
         P(f"### {idi.upper()}: los {a.top} nucleos mas frecuentes (sin los excluidos)\n")
         P("| nucleo | nuevo | colocaciones | las colocaciones |")
         P("|---|---|---|---|")

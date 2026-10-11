@@ -551,6 +551,33 @@
               ]
             },
             "description": "Clase del verbo para la vista «Verbos» de la Biblioteca. OPCIONAL: solo lo llevan los items cuyo nucleo es el verbo (prompt 20, opcion A); los demas (sustantivos, colocaciones, modismos) no lo llevan. `simple` = verbo sin ningun rasgo de los demas, exclusiva. Se aplica desde contenido/verbos/{idioma}.json con tools/aplicar_verbos.py; no se escribe a mano en los packs. Las listas por idioma estan en $defs."
+          },
+          "nucleoVerbal": {
+            "type": "string",
+            "minLength": 2,
+            "description": "Infinitivo del verbo que es nucleo de esta colocacion (prompt 23): «die Frage stellen» lleva nucleoVerbal «stellen». El nucleo NO es un item: no se lista como colocacion, no tiene glosa propia y NO es marcable en Guardados (la estrella vive en la colocacion, que si es un item). Se escribe con la misma ortografia que las entradas de la vista: «sich widmen», «to take back». Un item con nucleoVerbal nunca tiene claseVerbo: la opcion A decide que se lista."
+          },
+          "claseNucleo": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "simple",
+                "reflexivo",
+                "trennbar",
+                "mit-Praposition",
+                "mit-Dativ",
+                "phrasal-separable",
+                "phrasal-inseparable",
+                "verbo-preposicion"
+              ]
+            },
+            "description": "Clase del nucleo verbal, con la misma lista cerrada que claseVerbo. Siempre la misma para el mismo nucleo, venga de un verbo propio o de una colocacion (R11)."
+          },
+          "reccionNucleo": {
+            "type": "string",
+            "description": "Reccion del NUCLEO en aleman, en el formato controlado de `reccion`. Es la del verbo, no la de cada colocacion: «Rücksicht nehmen auf» no le da reccion a *nehmen*."
           }
         },
         "allOf": [
@@ -655,6 +682,162 @@
               ],
               "properties": {
                 "claseVerbo": {
+                  "not": {
+                    "contains": {
+                      "enum": [
+                        "mit-Praposition",
+                        "mit-Dativ"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "then": false
+          },
+          {
+            "if": {
+              "required": [
+                "nucleoVerbal"
+              ]
+            },
+            "then": {
+              "required": [
+                "claseNucleo"
+              ],
+              "not": {
+                "required": [
+                  "claseVerbo"
+                ]
+              },
+              "description": "Una colocacion con nucleo no es un verbo propio: nunca lleva claseVerbo"
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "claseNucleo"
+              ]
+            },
+            "then": {
+              "required": [
+                "nucleoVerbal"
+              ]
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "reccionNucleo"
+              ]
+            },
+            "then": {
+              "required": [
+                "nucleoVerbal"
+              ]
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "claseNucleo"
+              ],
+              "properties": {
+                "claseNucleo": {
+                  "contains": {
+                    "const": "simple"
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "claseNucleo": {
+                  "maxItems": 1
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "claseNucleo"
+              ],
+              "properties": {
+                "claseNucleo": {
+                  "contains": {
+                    "enum": [
+                      "phrasal-separable",
+                      "phrasal-inseparable"
+                    ]
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "nucleoVerbal": {
+                  "pattern": "^to \\S+(?: \\S+)*? (?:up|down|out|off|on|in|over|away|back|through|along|around|round|into|onto|about|across|apart|ahead|aside|after|behind|by|for|to|with|without|forward|together|under|upon)$"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "claseNucleo"
+              ],
+              "properties": {
+                "claseNucleo": {
+                  "contains": {
+                    "const": "mit-Praposition"
+                  }
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "reccionNucleo"
+              ],
+              "properties": {
+                "reccionNucleo": {
+                  "pattern": "^(?:an|auf|aus|bei|durch|für|gegen|gegenüber|in|mit|nach|über|um|unter|von|vor|zu|zwischen) \\+ (?:Akk|Dat|Akk/Dat)(?: / (?:an|auf|aus|bei|durch|für|gegen|gegenüber|in|mit|nach|über|um|unter|von|vor|zu|zwischen) \\+ (?:Akk|Dat|Akk/Dat))*$"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "claseNucleo"
+              ],
+              "properties": {
+                "claseNucleo": {
+                  "contains": {
+                    "const": "mit-Dativ"
+                  }
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "reccionNucleo"
+              ],
+              "properties": {
+                "reccionNucleo": {
+                  "const": "Dat"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "required": [
+                "claseNucleo",
+                "reccionNucleo"
+              ],
+              "properties": {
+                "claseNucleo": {
                   "not": {
                     "contains": {
                       "enum": [
@@ -1395,6 +1578,20 @@
                 },
                 "reccion": {
                   "pattern": "^(?:Dat|(?:an|auf|aus|bei|durch|für|gegen|gegenüber|in|mit|nach|über|um|unter|von|vor|zu|zwischen) \\+ (?:Akk|Dat|Akk/Dat)(?: / (?:an|auf|aus|bei|durch|für|gegen|gegenüber|in|mit|nach|über|um|unter|von|vor|zu|zwischen) \\+ (?:Akk|Dat|Akk/Dat))*)$"
+                },
+                "claseNucleo": {
+                  "items": {
+                    "$ref": "#/$defs/clasesVerboDE"
+                  }
+                },
+                "nucleoVerbal": {
+                  "pattern": "^(?:sich )?\\S+(?:en|ern|eln)$",
+                  "not": {
+                    "$ref": "#/$defs/nucleosExcluidosDE"
+                  }
+                },
+                "reccionNucleo": {
+                  "pattern": "^(?:Dat|(?:an|auf|aus|bei|durch|für|gegen|gegenüber|in|mit|nach|über|um|unter|von|vor|zu|zwischen) \\+ (?:Akk|Dat|Akk/Dat)(?: / (?:an|auf|aus|bei|durch|für|gegen|gegenüber|in|mit|nach|über|um|unter|von|vor|zu|zwischen) \\+ (?:Akk|Dat|Akk/Dat))*)$"
                 }
               }
             }
@@ -1424,7 +1621,20 @@
                   },
                   "maxItems": 1
                 },
-                "reccion": false
+                "reccion": false,
+                "claseNucleo": {
+                  "items": {
+                    "$ref": "#/$defs/clasesVerboEN"
+                  },
+                  "maxItems": 1
+                },
+                "nucleoVerbal": {
+                  "pattern": "^to [a-z][a-z'-]*(?: (?:up|down|out|off|on|in|over|away|back|through|along|around|round|into|onto|about|across|apart|ahead|aside|after|behind|by|for|to|with|without|forward|together|under|upon))*$",
+                  "not": {
+                    "$ref": "#/$defs/nucleosExcluidosEN"
+                  }
+                },
+                "reccionNucleo": false
               }
             }
           }
@@ -1432,7 +1642,7 @@
       }
     }
   ],
-  "$comment": "MARCADO EN LINEA. Los campos de prosa y de tabla pueden contener dos marcadores, planos y sin anidar: *cita* para una palabra o expresion citada, y **destaque** para el elemento sobre el que se llama la atencion (por ejemplo la posicion del verbo en la ficha de Satzbau). La app necesita UN solo renderizador que los convierta a texto con estilo. El marcado que envolvia el campo entero ya fue quitado por el compilador: los ejemplos y los Redemittel llegan limpios y la app los estiliza por su rol. -- CAMPOS BILINGUES A2/B1. En A2 y B1 toda la prosa de la ficha se puede mostrar en el idioma que se aprende O en el idioma de la app (switch en la interfaz), asi que necesita un lugar donde alojar la traduccion. Los campos afectados (titulo, descripcion, notas, ejemplos[].texto, errores, autochequeo, cuadroReferencia.titulo/columnas/filas/notaPie, promptCorreccion, subtitulo, mision.consigna/requisitos, microtareas[].texto, redemittel[].funcion) aceptan `oneOf` un string plano (como hasta ahora, y como siguen siendo en B2/C1/C2, que no son bilingues) o un objeto {idioma: texto} con el MISMO patron que ya usan contraste, erroresContrastivos y vocabulario[].traducciones: propertyNames limitado a los seis idiomas soportados (es, en, de, fr, it, pt) y minProperties 1, para que se pueda ir poblando una clave a la vez en vez de exigir las seis de entrada. El propio idioma de la ficha (p.ej. 'de' en una ficha alemana) va como una clave mas del objeto, no aparte: es el mismo mecanismo, solo que ahora tambien alcanza a la prosa y no unicamente al vocabulario y los Redemittel. La forma `oneOf` es deliberada y no un `if`/`then` que EXIJA el objeto en A2/B1: los 95 nucleos y 192 apariciones de A2/B1 todavia tienen estos campos como string plano (nadie los tradujo todavia), asi que exigir el objeto ahora romperia toda esa composicion. El campo queda listo para que se traduzca de a poco; no se vuelve obligatorio con esta revision del schema. -- MINLENGTH EN LOS CAMPOS BILINGUES. El minLength de cada campo se penso para la prosa original (aleman/ingles); espanol, ingles y demas idiomas de app comprimen frente al original, asi que exigirlo a TODAS las claves del objeto {idioma: texto} rechazaba traducciones correctas. Ahora la rama objeto de cada campo solo lleva maxLength (limite de diseno visual, igual para todas las claves), y el minLength rige unicamente sobre la clave del idioma que se aprende (la que ya existia como string plano), mediante dos condicionales en allOf (idioma = de exige minLength en la clave 'de'; idioma = en, en la clave 'en'). Las demas claves no tienen minimo. -- DONDE LA APP INTERPRETA EL MARCADO. El renderizador aplica *cita* y **destaque** en descripcion, ejemplos, notas, errores, autochequeo, cuadroReferencia, promptCorreccion, subtitulo, mision.consigna, mision.requisitos, microtareas[].texto y redemittel[].funcion. NO en titulo. Convencion de traduccion: la palabra objetivo de la consigna queda sin traducir y entre asteriscos. -- CONTRASTE BILINGUE. `contraste` es {idioma_de_app: entrada}; cada entrada es string plano (formato viejo: el texto en el idioma que se aprende, sin traduccion) u objeto {idioma: texto} con dos claves pobladas: la del idioma que se aprende (el original) y la del idioma de app que nombra la entrada (su traduccion). La clave del idioma que se aprende es obligatoria cuando la entrada es objeto (con el mismo minLength 20 que el string plano) -- sin ella la app no tendria a que caer si falta la traduccion; la traduccion no lleva minLength (comprime respecto del original, ver 'MINLENGTH EN LOS CAMPOS BILINGUES'). Mientras Traducciones no termine, las entradas string y objeto conviven. -- CATEGORIASUSO. redemittel[].categoriasUso es un array opcional de strings libres (etiquetas internas de filtro): ni bilingue ni obligatorio. -- CLASEVERBO Y RECCION (prompt 20, oct 2026). vocabulario[].claseVerbo es opcional y marca los items que la vista «Verbos» de la Biblioteca muestra; se filtra SOLO por clase (no hay nivel). Listas cerradas por idioma en $defs; `reccion` en aleman tiene formato controlado (patron del ficha-nivel) y el verificador R11 de tools/verificar_consistencia.py repite estas reglas con mensajes legibles y comprueba que el mismo verbo lleve las mismas etiquetas en todas las fichas.",
+  "$comment": "MARCADO EN LINEA. Los campos de prosa y de tabla pueden contener dos marcadores, planos y sin anidar: *cita* para una palabra o expresion citada, y **destaque** para el elemento sobre el que se llama la atencion (por ejemplo la posicion del verbo en la ficha de Satzbau). La app necesita UN solo renderizador que los convierta a texto con estilo. El marcado que envolvia el campo entero ya fue quitado por el compilador: los ejemplos y los Redemittel llegan limpios y la app los estiliza por su rol. -- CAMPOS BILINGUES A2/B1. En A2 y B1 toda la prosa de la ficha se puede mostrar en el idioma que se aprende O en el idioma de la app (switch en la interfaz), asi que necesita un lugar donde alojar la traduccion. Los campos afectados (titulo, descripcion, notas, ejemplos[].texto, errores, autochequeo, cuadroReferencia.titulo/columnas/filas/notaPie, promptCorreccion, subtitulo, mision.consigna/requisitos, microtareas[].texto, redemittel[].funcion) aceptan `oneOf` un string plano (como hasta ahora, y como siguen siendo en B2/C1/C2, que no son bilingues) o un objeto {idioma: texto} con el MISMO patron que ya usan contraste, erroresContrastivos y vocabulario[].traducciones: propertyNames limitado a los seis idiomas soportados (es, en, de, fr, it, pt) y minProperties 1, para que se pueda ir poblando una clave a la vez en vez de exigir las seis de entrada. El propio idioma de la ficha (p.ej. 'de' en una ficha alemana) va como una clave mas del objeto, no aparte: es el mismo mecanismo, solo que ahora tambien alcanza a la prosa y no unicamente al vocabulario y los Redemittel. La forma `oneOf` es deliberada y no un `if`/`then` que EXIJA el objeto en A2/B1: los 95 nucleos y 192 apariciones de A2/B1 todavia tienen estos campos como string plano (nadie los tradujo todavia), asi que exigir el objeto ahora romperia toda esa composicion. El campo queda listo para que se traduzca de a poco; no se vuelve obligatorio con esta revision del schema. -- MINLENGTH EN LOS CAMPOS BILINGUES. El minLength de cada campo se penso para la prosa original (aleman/ingles); espanol, ingles y demas idiomas de app comprimen frente al original, asi que exigirlo a TODAS las claves del objeto {idioma: texto} rechazaba traducciones correctas. Ahora la rama objeto de cada campo solo lleva maxLength (limite de diseno visual, igual para todas las claves), y el minLength rige unicamente sobre la clave del idioma que se aprende (la que ya existia como string plano), mediante dos condicionales en allOf (idioma = de exige minLength en la clave 'de'; idioma = en, en la clave 'en'). Las demas claves no tienen minimo. -- DONDE LA APP INTERPRETA EL MARCADO. El renderizador aplica *cita* y **destaque** en descripcion, ejemplos, notas, errores, autochequeo, cuadroReferencia, promptCorreccion, subtitulo, mision.consigna, mision.requisitos, microtareas[].texto y redemittel[].funcion. NO en titulo. Convencion de traduccion: la palabra objetivo de la consigna queda sin traducir y entre asteriscos. -- CONTRASTE BILINGUE. `contraste` es {idioma_de_app: entrada}; cada entrada es string plano (formato viejo: el texto en el idioma que se aprende, sin traduccion) u objeto {idioma: texto} con dos claves pobladas: la del idioma que se aprende (el original) y la del idioma de app que nombra la entrada (su traduccion). La clave del idioma que se aprende es obligatoria cuando la entrada es objeto (con el mismo minLength 20 que el string plano) -- sin ella la app no tendria a que caer si falta la traduccion; la traduccion no lleva minLength (comprime respecto del original, ver 'MINLENGTH EN LOS CAMPOS BILINGUES'). Mientras Traducciones no termine, las entradas string y objeto conviven. -- CATEGORIASUSO. redemittel[].categoriasUso es un array opcional de strings libres (etiquetas internas de filtro): ni bilingue ni obligatorio. -- CLASEVERBO Y RECCION (prompt 20, oct 2026). vocabulario[].claseVerbo es opcional y marca los items que la vista «Verbos» de la Biblioteca muestra; se filtra SOLO por clase (no hay nivel). Listas cerradas por idioma en $defs; `reccion` en aleman tiene formato controlado (patron del ficha-nivel) y el verificador R11 de tools/verificar_consistencia.py repite estas reglas con mensajes legibles y comprueba que el mismo verbo lleve las mismas etiquetas en todas las fichas. -- NUCLEOS VERBALES DE LAS COLOCACIONES (prompt 23). Hay dos tipos de entrada en la vista Verbos y el esquema los separa a proposito: el VERBO PROPIO lleva `claseVerbo` (+ `reccion`), es un item del vocabulario, se lista y es marcable en Guardados; el NUCLEO de una colocacion lleva `nucleoVerbal` + `claseNucleo` (+ `reccionNucleo`) en el item de la COLOCACION, no se lista como colocacion, no tiene glosa propia y no es marcable (su clave de Guardados no existiria en ninguna ficha). Los dos campos de clase nunca aparecen juntos en un item. La tabla maestra `contenido/verbos/{idioma}.json` es la unica fuente: `verbos[]` para el primer tipo y `nucleos[]` para el segundo; los escribe `tools/aplicar_verbos.py` y los verifica R11.",
   "$defs": {
     "clasesVerboDE": {
       "enum": [
@@ -1511,6 +1721,30 @@
         "zwischen"
       ],
       "description": "Preposiciones validas en `reccion` (formato «auf + Akk», «an + Akk/Dat», varias separadas por « / »). Un caso suelto solo vale como «Dat» (mit-Dativ)."
+    },
+    "nucleosExcluidosDE": {
+      "enum": [
+        "sein",
+        "haben",
+        "werden",
+        "können",
+        "lassen",
+        "müssen",
+        "sollen",
+        "wollen",
+        "dürfen",
+        "mögen"
+      ],
+      "description": "Auxiliares, copulas y modales: no son nucleo verbal de la vista Verbos (prompt 23). Lo que ensena la colocacion es el adjetivo o el sustantivo, no el verbo."
+    },
+    "nucleosExcluidosEN": {
+      "enum": [
+        "to be",
+        "to have",
+        "to do",
+        "to get"
+      ],
+      "description": "Auxiliares y verbos livianos del ingles: no son nucleo verbal de la vista Verbos (prompt 23). `to let` NO esta excluido: sus casos son phrasal (let down, let off), no causativos."
     }
   }
 }

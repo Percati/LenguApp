@@ -57,6 +57,7 @@ Sale con codigo 1 si hay algun error. Reglas (ver REGLAS-PREVENCION.md):
       y hay que revisarlas a ojo al escribir contenido nuevo (FALTANTES 6.1).
 
   R11 Verbos de la Biblioteca (prompt 20, oct 2026): vocabulario[].claseVerbo
+      + nucleos verbales de las colocaciones (prompt 23): nucleoVerbal/claseNucleo/reccionNucleo
       y reccion. Las listas salen de schema/ficha.schema.json ($defs) y no
       se duplican aca. (a) cada valor de claseVerbo pertenece a la lista de
       ESE idioma, `simple` va sola y en ingles hay exactamente una clase;
@@ -650,6 +651,10 @@ def listas_r11(esq=None):
         "particulas": set(defs["particulasEN"]["enum"]),
         "rec_de": re.compile("^(?:Dat|%s(?: / %s)*)$" % (entrada, entrada)),
         "rec_prep": re.compile("^%s(?: / %s)*$" % (entrada, entrada)),
+        "excluidos": {"de": set(defs["nucleosExcluidosDE"]["enum"]),
+                      "en": set(defs["nucleosExcluidosEN"]["enum"])},
+        "nuc": {"de": re.compile(r"^(?:sich )?\S+(?:en|ern|eln)$"),
+                "en": re.compile(r"^to [a-z][a-z'-]*(?: \S+)*$")},
     }
 
 
@@ -660,26 +665,80 @@ def clave_verbo(idioma, item):
     return k
 
 
+def r11_clases(idioma, it, cl, campo, L):
+    """Reglas comunes a claseVerbo y claseNucleo: lista cerrada, 'simple' exclusiva, sin repetir,
+    y en ingles exactamente una."""
+    m = []
+    if not isinstance(cl, list) or not cl:
+        return [f"{campo} debe ser una lista no vacia: {it['item']}"]
+    for c in cl:
+        if c not in L["clases"][idioma]:
+            m.append(f"{campo} '{c}' no existe en {idioma}: {it['item']}")
+    if "simple" in cl and len(cl) > 1:
+        m.append(f"'simple' es exclusiva ({campo}): {it['item']} -> {cl}")
+    if len(cl) != len(set(cl)):
+        m.append(f"{campo} repetida: {it['item']}")
+    if idioma == "en" and len(cl) != 1:
+        m.append(f"en ingles va exactamente una clase ({campo}): {it['item']} -> {cl}")
+    return m
+
+
+def r11_nucleo(idioma, it, L):
+    """Mensajes de R11 para el nucleo verbal de UNA colocacion (prompt 23)."""
+    m = []
+    nuc, cl, rec = it.get("nucleoVerbal"), it.get("claseNucleo"), it.get("reccionNucleo")
+    if nuc is None and cl is None and rec is None:
+        return m
+    if nuc is None:
+        return [f"claseNucleo/reccionNucleo sin nucleoVerbal: {it['item']}"]
+    if not isinstance(nuc, str) or not nuc.strip():
+        return [f"nucleoVerbal vacio: {it['item']}"]
+    if it.get("claseVerbo") is not None:
+        m.append(f"un item no puede ser verbo propio y colocacion a la vez (claseVerbo + "
+                 f"nucleoVerbal): {it['item']}")
+    if cl is None:
+        m.append(f"nucleoVerbal sin claseNucleo: {it['item']}")
+    else:
+        m += r11_clases(idioma, it, cl, "claseNucleo", L)
+    if not L["nuc"][idioma].match(nuc):
+        m.append(f"nucleoVerbal no tiene forma de infinitivo de {idioma}: {it['item']} -> {nuc!r}")
+    if nuc in L["excluidos"][idioma]:
+        m.append(f"nucleoVerbal es un auxiliar/copula de la lista de exclusion: {it['item']} -> {nuc!r}")
+    cl = cl or []
+    if idioma == "en":
+        if rec is not None:
+            m.append(f"reccionNucleo no se usa en ingles: {it['item']}")
+        if any(c.startswith("phrasal") for c in cl):
+            cuerpo = re.sub(r"^(?:not )?to ", "", nuc.lower()).split()
+            if not any(t in L["particulas"] for t in cuerpo[1:]):
+                m.append(f"nucleo phrasal sin particula de la lista: {it['item']} -> {nuc!r}")
+    else:
+        if rec is not None and not (isinstance(rec, str) and L["rec_de"].match(rec)):
+            m.append(f"reccionNucleo fuera del formato controlado: {it['item']} -> {rec!r}")
+        if "mit-Praposition" in cl:
+            if rec is None:
+                m.append(f"nucleo mit-Praposition sin reccionNucleo: {it['item']} -> {nuc!r}")
+            elif not L["rec_prep"].match(rec):
+                m.append(f"nucleo mit-Praposition necesita preposicion + caso: {it['item']} -> {rec!r}")
+        if "mit-Dativ" in cl and rec != "Dat":
+            m.append(f"nucleo mit-Dativ exige reccionNucleo 'Dat': {it['item']} -> {rec!r}")
+        if rec is not None and not ({"mit-Praposition", "mit-Dativ"} & set(cl)):
+            m.append(f"reccionNucleo sin clase que la justifique: {it['item']} -> {cl}, {rec!r}")
+    return m
+
+
 def r11_item(idioma, it, L):
     """Mensajes de R11 para UN item de vocabulario (sin mirar otras fichas)."""
-    m = []
+    m = r11_nucleo(idioma, it, L)
     cl = it.get("claseVerbo")
     rec = it.get("reccion")
     if cl is not None:
         if not isinstance(cl, list) or not cl:
-            return [f"claseVerbo debe ser una lista no vacia: {it['item']}"]
-        for c in cl:
-            if c not in L["clases"][idioma]:
-                m.append(f"claseVerbo '{c}' no existe en {idioma}: {it['item']}")
-        if "simple" in cl and len(cl) > 1:
-            m.append(f"'simple' es exclusiva: {it['item']} -> {cl}")
-        if len(cl) != len(set(cl)):
-            m.append(f"claseVerbo repetida: {it['item']}")
+            return m + [f"claseVerbo debe ser una lista no vacia: {it['item']}"]
+        m += r11_clases(idioma, it, cl, "claseVerbo", L)
     if idioma == "en":
         if rec is not None:
             m.append(f"reccion no se usa en ingles: {it['item']}")
-        if cl is not None and len(cl) != 1:
-            m.append(f"en ingles va exactamente una clase: {it['item']} -> {cl}")
         if cl and any(c.startswith("phrasal") for c in cl):
             cuerpo = re.sub(r"\([^)]*\)", " ", it["item"].lower())
             cuerpo = re.sub(r"^(?:not )?to ", "", cuerpo).split()
@@ -701,8 +760,12 @@ def r11_item(idioma, it, L):
 
 
 def r11_consistencia(fichas):
-    """fichas: [(nombre, idioma, [items])]. El mismo verbo, las mismas etiquetas siempre."""
-    vistos, m = {}, []
+    """fichas: [(nombre, idioma, [items])]. Tres garantias:
+    1. el mismo item lleva siempre las mismas etiquetas;
+    2. el mismo nucleoVerbal lleva siempre la misma claseNucleo y reccionNucleo;
+    3. un nucleo y el verbo propio del mismo infinitivo coinciden en clase y reccion (P11
+       ampliada: la clase de un verbo no depende de por donde entro a la vista)."""
+    vistos, nucs, propios, m = {}, {}, {}, []
     for nom, idioma, items in fichas:
         for it in items:
             etq = (tuple(sorted(it.get("claseVerbo") or ())), it.get("reccion"))
@@ -711,6 +774,21 @@ def r11_consistencia(fichas):
                 vistos[k] = (etq, nom)
             elif vistos[k][0] != etq:
                 m.append(f"«{it['item']}» ({idioma}) tiene etiquetas distintas: {vistos[k][0]} en {vistos[k][1]} y {etq} en {nom}")
+            if it.get("claseVerbo"):
+                propios.setdefault(k, (etq, nom, it["item"]))
+            nuc = it.get("nucleoVerbal")
+            if nuc:
+                e = (tuple(sorted(it.get("claseNucleo") or ())), it.get("reccionNucleo"))
+                kn = (idioma, clave_verbo(idioma, nuc))
+                if kn not in nucs:
+                    nucs[kn] = (e, nom, nuc)
+                elif nucs[kn][0] != e:
+                    m.append(f"el nucleo «{nuc}» ({idioma}) tiene etiquetas distintas: "
+                             f"{nucs[kn][0]} en {nucs[kn][1]} y {e} en {nom}")
+    for kn, (e, nom, nuc) in nucs.items():
+        if kn in propios and propios[kn][0] != e:
+            m.append(f"el nucleo «{nuc}» ({kn[0]}) y el verbo «{propios[kn][2]}» son el mismo "
+                     f"infinitivo y no coinciden: {e} en {nom} y {propios[kn][0]} en {propios[kn][1]}")
     return m
 
 
@@ -783,6 +861,38 @@ CASOS_R11 = [
     ("en", _it("to give", claseVerbo=["phrasal-separable"]), True),                                    # phrasal sin particula
     ("en", _it("to make a decision", claseVerbo=["phrasal-inseparable"]), True),
     ("en", _it("to look after", claseVerbo=["Phrasal"]), True),
+    # --- nucleos verbales de colocaciones (prompt 23): bueno
+    ("de", _it("die Frage stellen", nucleoVerbal="stellen", claseNucleo=["simple"]), False),
+    ("de", _it("die Uhrzeit einstellen", nucleoVerbal="einstellen", claseNucleo=["trennbar"]), False),
+    ("de", _it("sich einer Sache widmen", nucleoVerbal="sich widmen",
+               claseNucleo=["reflexivo", "mit-Dativ"], reccionNucleo="Dat"), False),
+    ("de", _it("auf seinen Körper hören", nucleoVerbal="hören",
+               claseNucleo=["mit-Praposition"], reccionNucleo="auf + Akk"), False),
+    ("en", _it("to keep a promise", nucleoVerbal="to keep", claseNucleo=["simple"]), False),
+    ("en", _it("to take something back", nucleoVerbal="to take back",
+               claseNucleo=["phrasal-separable"]), False),
+    ("en", _it("to keep up with the Joneses", nucleoVerbal="to keep up with",
+               claseNucleo=["phrasal-inseparable"]), False),
+    # --- nucleos: malo
+    ("de", _it("die Frage stellen", nucleoVerbal="stellen"), True),               # sin claseNucleo
+    ("de", _it("die Frage stellen", claseNucleo=["simple"]), True),               # sin nucleoVerbal
+    ("de", _it("die Frage stellen", nucleoVerbal="stellen", claseNucleo=["simple"],
+               claseVerbo=["simple"]), True),                                     # las dos cosas a la vez
+    ("de", _it("pünktlich sein", nucleoVerbal="sein", claseNucleo=["simple"]), True),   # auxiliar excluido
+    ("de", _it("satt werden", nucleoVerbal="werden", claseNucleo=["simple"]), True),
+    ("de", _it("die Frage stellen", nucleoVerbal="die Frage stellen", claseNucleo=["simple"]), True),
+    ("de", _it("die Frage stellen", nucleoVerbal="stellen", claseNucleo=["mit-Praposition"]), True),
+    ("de", _it("die Frage stellen", nucleoVerbal="stellen", claseNucleo=["simple"],
+               reccionNucleo="auf + Akk"), True),                                 # reccion sin clase
+    ("de", _it("die Frage stellen", nucleoVerbal="stellen", claseNucleo=["simple", "trennbar"]), True),
+    ("de", _it("die Frage stellen", nucleoVerbal="stellen", claseNucleo=["phrasal-separable"]), True),
+    ("en", _it("to be rusty", nucleoVerbal="to be", claseNucleo=["simple"]), True),     # auxiliar excluido
+    ("en", _it("to get a refund", nucleoVerbal="to get", claseNucleo=["simple"]), True),
+    ("en", _it("to keep a promise", nucleoVerbal="keep", claseNucleo=["simple"]), True),  # sin «to»
+    ("en", _it("to keep a promise", nucleoVerbal="to keep", claseNucleo=["phrasal-separable"]), True),
+    ("en", _it("to keep a promise", nucleoVerbal="to keep", claseNucleo=["simple"],
+               reccionNucleo="auf + Akk"), True),
+    ("en", _it("to keep a promise", nucleoVerbal="to keep", claseNucleo=["trennbar"]), True),
 ]
 
 
@@ -828,11 +938,20 @@ def autotest_r11():
          ("B.json", "en", [_it("look after", claseVerbo=["phrasal-separable"])])]
     d = [("A.json", "en", [_it("to look after", claseVerbo=["phrasal-inseparable"])]),
          ("B.json", "en", [_it("to look after")])]                       # etiquetado en una ficha y sin etiquetar en otra
-    for nombre, f, debe in (("igual", a, False), ("de-distinta-clase", b, True), ("en-distinta-clase", c, True), ("sin-etiqueta", d, True)):
+    # nucleos: el mismo nucleo con dos clases, y nucleo contra verbo propio del mismo infinitivo
+    e = [("A.json", "de", [_it("die Frage stellen", nucleoVerbal="stellen", claseNucleo=["simple"])]),
+         ("B.json", "de", [_it("in Frage stellen", nucleoVerbal="stellen", claseNucleo=["trennbar"])])]
+    f_ = [("A.json", "de", [_it("die Uhrzeit einstellen", nucleoVerbal="einstellen", claseNucleo=["simple"])]),
+          ("B.json", "de", [_it("einstellen", claseVerbo=["trennbar"])])]
+    g = [("A.json", "de", [_it("die Uhrzeit einstellen", nucleoVerbal="einstellen", claseNucleo=["trennbar"])]),
+         ("B.json", "de", [_it("einstellen", claseVerbo=["trennbar"])])]
+    for nombre, f, debe in (("igual", a, False), ("de-distinta-clase", b, True), ("en-distinta-clase", c, True),
+                            ("sin-etiqueta", d, True), ("nucleo-distinta-clase", e, True),
+                            ("nucleo-vs-verbo-distinto", f_, True), ("nucleo-vs-verbo-igual", g, False)):
         hay = bool(r11_consistencia(f))
         if hay != debe:
             fallos.append(f"R11 consistencia '{nombre}': esperaba {debe}, dio {hay}")
-    print(f"autotest R11: {len(CASOS_R11)} casos + 4 de coherencia; "
+    print(f"autotest R11: {len(CASOS_R11)} casos + 7 de coherencia; "
           f"malos marcados {marc_malos}/{n_malos}, falsos positivos {marc_buenos}/{n_buenos}"
           + (f"; el esquema rechaza {esq_malos}/{n_malos} malos y {esq_buenos}/{n_buenos} buenos" if val is not None else "; (sin jsonschema: esquema no probado)")
           + f", {len(fallos)} fallos")
