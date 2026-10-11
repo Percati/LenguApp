@@ -1082,3 +1082,13 @@ Verificado por Overview sobre `origin/main` (HEAD `c5b4f726`): los 4 commits est
 
 **Pares flojos de contenido (dato de Code, sin acción todavía):** DE C2 con 24 verbos y sin ningún `mit-Dativ`; `mit-Dativ` con 2 en B2 y 2 en C1; EN A2 con 4 `verbo-preposicion`; EN C2 con 6 `phrasal-separable` y 5 `verbo-preposicion`. Con la Ronda I el nivel deja de recortar la vista, así que esto deja de ser urgente: se decide si hace falta contenido nuevo recién si una **clase entera** de un idioma queda floja.
 
+## 34. La búsqueda de familias de verbos choca con la opción A (11-oct-2026) — deuda de contenido
+
+Fer probó la 0.2.4 con alemán B2 y **«stellen» no devolvió ningún resultado**. Dos causas, una de código y una de contenido.
+
+**Código (la cubre la Ronda I, prompt 22):** la vista recorta por el nivel de Ajustes y ningún miembro de la familia *stellen* está en B2 (A2, B1, C1 y C2).
+
+**Contenido (sin resolver).** Con el nivel arreglado la búsqueda devolverá 6 verbos, pero **ni *stellen*, ni *einstellen*, ni *umstellen*** — los tres que Fer nombró como ejemplo al pedir la función — porque en el contenido no existen como verbos: viven dentro de colocaciones que la **opción A** dejó fuera a propósito (*die Frage stellen* A2, *die Uhrzeit einstellen* A2, *die Ernährung umstellen* B1, *etwas in Frage stellen* B2, *etwas auf den Prüfstand stellen* C1). Medición de Overview sobre los packs DE: **341 colocaciones verbales sin etiquetar**, con **191 núcleos verbales distintos** escondidos dentro, de los cuales **120 no aparecen en ningún verbo etiquetado** (*abbauen*, *einhalten*, *führen*, *behalten*, *nachgehen*, *widmen*…). Es decir: la vista Verbos muestra 305 formas DE y deja afuera unos 120 verbos que el usuario sí estudió.
+
+La opción A sigue siendo correcta para **qué se lista** (una vista de verbos no debe llenarse de frases), pero es insuficiente para **qué se indexa**: el núcleo verbal de una colocación es un verbo que el usuario aprendió. Opciones para decidir con Fer: (a) extraer el núcleo verbal de las colocaciones a la tabla maestra y listarlo como verbo, con la colocación como ejemplo de uso; (b) dejar que la búsqueda de la vista Verbos alcance también a las colocaciones, mostrándolas en una sección aparte; (c) aceptar la laguna y decirlo en la guía de testers. Recomendación de Overview: **(a)**, con el núcleo como entrada y la colocación visible como contexto, porque es lo que respeta la idea de «familia» que motivó la función. Requiere una ronda de la conversación «Verbos» (prompt nuevo) y después una de Code.
+
