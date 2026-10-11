@@ -1357,3 +1357,19 @@ Fer quiere un tutorial con foco (oscurece la pantalla menos lo que señala), **p
 
 **Cuándo:** la **bienvenida** (idioma, nivel y el mensaje «esto no enseña el idioma, te hace practicarlo») no tiene anclajes, es lo más valioso y lo más barato: se puede hacer en cualquier momento. Los **tours con foco**, recién cuando la interfaz deje de moverse. **Al implementarlo, el tutorial entra en el checklist de cada ronda de Code**, como la guía de testers y la versión.
 
+## 45. Verificación del prompt 26 (tuteo en cadenas planas) y Code Ronda L
+
+**Verificado por Overview** sobre `origin/main` (HEAD `e34206bd`): compositor 606 / 56 / 0, R1–R11 en 0, autotest de R9/R10 con **39 casos y 0 fallos**, autotest de R11 sin fallos. **Auditoría independiente del residuo:** quedan 244 cadenas alemanas con `Sie`/`Ihnen`/`Ihr` en campos de instrucción, pero al descontar lo que va entre « » y entre `*…*` son **33**, y **las 33 son legítimas**, leídas una por una: o enseñan el contraste du/Sie (subtítulos «Du oder Sie…», autochequeos «Ist die Anrede konsequent?», notas «Sie wird immer grossgeschrieben»), o usan `Sie`/`sie` como pronombre de tercera persona («Sie zu verstehen ist…», «Sie funktioniert nur, wenn…»). **Ninguna trata de usted al usuario.** La corrección de Traducciones es correcta y completa.
+
+**Su conteo es mejor que el mío.** Midió 458 convertidas y 19 exentas sobre 477 detectadas; mi «~699» incluía ~201 cadenas de A2/B1 que no eran planas (ya estaban en `du` desde el prompt 19) y las 360 de `microtareas/dia` (`lun`, `mie`, `vie`), que no llevan trato. En B2/C1/C2 las dos mediciones coinciden casi celda por celda.
+
+**Lo que encontró leyendo a mano y ningún chequeo veía:** tres oraciones rotas por el transformador (`*Bildungsideal* vertritt?` sin sujeto, `hör den Unterschied?`, un auxiliar coordinado en plural). Ya no tenían `Sie`, así que ni R9 ni el script del diff podían marcarlas. Es el argumento para seguir pidiendo barrido a ojo en cada ronda de contenido.
+
+**Aviso que conviene recordar:** las excepciones de R9 y R10 van **por texto exacto**, así que cualquier pase que toque una cadena exenta tiene que actualizar la excepción en el mismo commit (le pasó con el `promptCorreccion` de `DE-V08-B2`, exento de R10 por hablar de «ss/ß»). El `--autotest` avisa cuando una excepción queda de más.
+
+**Assets regenerados por Overview** (el contenido cambió y el modelo de Kotlin no necesita nada nuevo: solo cambió texto).
+
+**Hallazgo de uso de Fer en la 0.2.7: la consigna del desafío se ve enorme y en negrita, y queda feo.** Causa: el prompt 25 pedía «el peso tipográfico más fuerte del bloque» y Code lo resolvió con `headlineSmall` + `Bold`. Para un titular estaría bien; la consigna es prosa de dos a cuatro renglones. **Error de Overview al escribir el prompt.** Ronda L: tamaño de cuerpo con peso medio, jerarquía por posición y aire, no por tamaño; y el encuadre de la línea oral sin el paréntesis «(aunque la consigna pida escribir)», para que la consigna se lea como tema y no como una orden que la línea desmiente. Versión 0.2.8.
+
+**Pendiente abierto, decisión de Code:** son ya **25 `promptCorreccion`** alemanes alargados (11 del prompt 19 y 14 del 26) porque el imperativo informal queda bajo el mínimo de 150 caracteres del esquema. Posición de Overview: dejarlo como está; el mínimo existe para que el prompt sea útil. Code opina en la Ronda L y se decide después.
+
