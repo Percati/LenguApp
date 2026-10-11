@@ -1120,3 +1120,16 @@ Cuatro commits, uno por tarea, sobre la Ronda H; contenido, esquema y assets sin
 **Elecciones donde el prompt no cerraba:** (1) la línea extra muestra el **nivel más bajo** en que aparece el verbo (no todos); el orden sigue alfabético, no por nivel; (2) la cuenta de cada chip es sobre todo el idioma, no baja al escribir en la búsqueda (como en la H); (3) en la búsqueda del léxico, el texto normalizado se cachea por ítem en vez de calcularse por pulsación; (4) no se tocó el `contentDescription` `"< Semana"` de las flechas (cosmético, fuera de alcance); (5) la propuesta de la sección 32 sobre el léxico se hizo tal cual, sin cambiar qué campos busca.
 
 **Sin revisar por nativo:** el nuevo estado vacío y «sin resultados» en fr / it / pt.
+
+## 36. Verificación de Code Ronda I (11-oct-2026)
+
+Verificado por Overview sobre `origin/main` (HEAD `b3b8a540`, 0.2.5 / versionCode 7): compositor 606 / 56 / 0, R1–R11 en 0, `aplicar_verbos.py` con 0 diferencias y 1229 apariciones, **assets idénticos a la salida del compositor** (el contenido no se tocó: no hizo falta regenerarlos), manifest sin `INTERNET`. Contados por Overview contra los packs, los números del informe de Code son exactos: **DE 305 formas, EN 368**; nivel más bajo en que aparece cada verbo, A2…C2, **DE 124 / 83 / 51 / 31 / 16** y **EN 102 / 111 / 47 / 56 / 52**. El caso que motivó la ronda queda cubierto por un test de pantalla con alemán B2 en Ajustes.
+
+**Guía de testers: `.pdf` regenerado por Overview** (0.2.5). La fila de Verbos que escribió Code llevaba el `.pdf` a **3 carillas**; Overview la acortó conservando lo que el test `TextosVerbosTest` exige («todos los niveles» y «no es exhaustiva») y la guía volvió a **una hoja (2 carillas)**. Al tocar esa fila, revisar el largo del PDF. **Cuando aterrice el prompt 23 hay que quitar el aviso «la lista no es exhaustiva»**, porque deja de ser cierto.
+
+**Nota menor sin arreglar:** el test `no hay filtro de nivel, ni chips ni selector de niveles en la vista` (`VistaVerbosTest`) comprueba que no aparecen los textos «A2», «B1», «C1» ni «C2», y pasa solo porque en su fixture todos los verbos son B2 — ahora la línea extra **sí** muestra el nivel de cada verbo. La conclusión del test es correcta (no hay filtro de nivel), pero no prueba lo que su nombre dice y se rompe en cuanto el fixture cambie. Que Code lo reescriba cuando vuelva a tocar esa pantalla: la forma correcta es comprobar que no existe un `GrupoChips` de niveles, no la ausencia de esas cadenas.
+
+**Decisiones de la I que se quedan:** la línea extra muestra solo el nivel más bajo; el orden es alfabético y no por nivel; la cuenta del chip no baja con la búsqueda; el `contentDescription` `"< Semana"` sigue sin tocar. La vista de léxico conserva su multi-selector de nivel y Verbos no tiene ninguno: es deliberado, no una inconsistencia.
+
+**Pendiente de nativo:** el estado vacío y el «sin resultados» en fr / it / pt, además de lo ya listado en 32 y 33.
+
