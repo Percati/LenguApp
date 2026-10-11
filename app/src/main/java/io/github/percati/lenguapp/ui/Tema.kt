@@ -13,6 +13,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.platform.LocalContext
 import io.github.percati.lenguapp.modelo.FamiliaTema
+import io.github.percati.lenguapp.modelo.FuenteTema
 import io.github.percati.lenguapp.modelo.ModoTema
 
 /**
@@ -111,7 +112,12 @@ fun familiasOfrecidas(): List<FamiliaTema> =
 
 /** "Segun el sistema" enmienda CLAUDE.md regla dura #2 (AJUSTES-FASE-6.md, bloque E): configuracion local, nada sale del dispositivo. */
 @Composable
-fun TemaLenguApp(familiaTema: FamiliaTema, modoTema: ModoTema, content: @Composable () -> Unit) {
+fun TemaLenguApp(
+    familiaTema: FamiliaTema,
+    modoTema: ModoTema,
+    fuente: FuenteTema = FuenteTema.SISTEMA,
+    content: @Composable () -> Unit,
+) {
     val oscuroDelSistema = isSystemInDarkTheme()
     val oscuro = when (modoTema) {
         ModoTema.CLARO -> false
@@ -124,5 +130,5 @@ fun TemaLenguApp(familiaTema: FamiliaTema, modoTema: ModoTema, content: @Composa
     } else {
         paletaPara(familiaTema, oscuro).aColorScheme(oscuro)
     }
-    MaterialTheme(colorScheme = esquema, typography = tipografiaProporcional(), content = content)
+    MaterialTheme(colorScheme = esquema, typography = tipografiaProporcional(familia = familiaTipografica(fuente)), content = content)
 }

@@ -29,6 +29,8 @@ data class Ajustes(
     val idiomaSegunSistema: Boolean = false,
     val familiaTema: FamiliaTema = FamiliaTema.PAPEL,
     val modoTema: ModoTema = ModoTema.SEGUN_SISTEMA,
+    // Tipografia (Ronda G): independiente del tema de color.
+    val fuente: FuenteTema = FuenteTema.SISTEMA,
 )
 
 /**
@@ -45,3 +47,10 @@ enum class FamiliaTema { PAPEL, TERRACOTA, MAR, GRAFITO, SISTEMA }
  * dispositivo.
  */
 enum class ModoTema { CLARO, OSCURO, SEGUN_SISTEMA }
+
+/**
+ * Tres tipografias seleccionables (Ronda G): SISTEMA (la del dispositivo, por defecto), LECTURA (Literata,
+ * serifa) y CLARA (Atkinson Hyperlegible Next, sans de alta legibilidad). Las dos ultimas vienen embebidas
+ * (res/font/, licencia OFL en LICENSES/): sin descarga ni proveedor en la nube.
+ */
+enum class FuenteTema { SISTEMA, LECTURA, CLARA }

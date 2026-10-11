@@ -60,7 +60,22 @@ fun espaciadoActual(): Espaciado {
 private fun TextStyle.conInterlineado(factor: Float): TextStyle =
     if (fontSize.isSp) copy(lineHeight = (fontSize.value * factor).sp) else this
 
-fun tipografiaProporcional(base: Typography = Typography()): Typography = base.copy(
+/**
+ * La escala de Material 3 con interlineado proporcional y, si `familia` no es null, esa familia en TODOS los
+ * estilos (no solo en las fichas). `null` deja la del sistema.
+ */
+fun tipografiaProporcional(base: Typography = Typography(), familia: androidx.compose.ui.text.font.FontFamily? = null): Typography =
+    tipografiaConInterlineado(if (familia == null) base else base.conFamilia(familia))
+
+private fun Typography.conFamilia(f: androidx.compose.ui.text.font.FontFamily): Typography = copy(
+    displayLarge = displayLarge.copy(fontFamily = f), displayMedium = displayMedium.copy(fontFamily = f), displaySmall = displaySmall.copy(fontFamily = f),
+    headlineLarge = headlineLarge.copy(fontFamily = f), headlineMedium = headlineMedium.copy(fontFamily = f), headlineSmall = headlineSmall.copy(fontFamily = f),
+    titleLarge = titleLarge.copy(fontFamily = f), titleMedium = titleMedium.copy(fontFamily = f), titleSmall = titleSmall.copy(fontFamily = f),
+    bodyLarge = bodyLarge.copy(fontFamily = f), bodyMedium = bodyMedium.copy(fontFamily = f), bodySmall = bodySmall.copy(fontFamily = f),
+    labelLarge = labelLarge.copy(fontFamily = f), labelMedium = labelMedium.copy(fontFamily = f), labelSmall = labelSmall.copy(fontFamily = f),
+)
+
+private fun tipografiaConInterlineado(base: Typography): Typography = base.copy(
     displayLarge = base.displayLarge.conInterlineado(1.2f),
     displayMedium = base.displayMedium.conInterlineado(1.2f),
     displaySmall = base.displaySmall.conInterlineado(1.2f),

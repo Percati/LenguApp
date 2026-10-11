@@ -4,6 +4,7 @@ import android.content.Context
 import androidx.test.core.app.ApplicationProvider
 import io.github.percati.lenguapp.modelo.Ajustes
 import io.github.percati.lenguapp.modelo.FamiliaTema
+import io.github.percati.lenguapp.modelo.FuenteTema
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.ModoTema
 import io.github.percati.lenguapp.modelo.Nivel
@@ -154,5 +155,31 @@ class RepositorioAjustesTest {
         assertEquals(Idioma.DE, a.idiomaInterfaz)
         assertEquals(ModoTema.OSCURO, a.modoTema)
         assertEquals(mapOf(Idioma.EN to Nivel.C1), a.idiomasAprendidos)
+    }
+
+    // --- Ronda G: tipografia ---
+
+    @Test
+    fun `la tipografia se guarda y se carga, por defecto es la del sistema, y es independiente del tema`() {
+        val contexto = contexto()
+        assertEquals(FuenteTema.SISTEMA, cargarAjustes(contexto).fuente)
+        val a = Ajustes(familiaTema = FamiliaTema.MAR, modoTema = ModoTema.CLARO, fuente = FuenteTema.CLARA)
+        guardarAjustes(contexto, a)
+        val b = cargarAjustes(contexto)
+        assertEquals(FuenteTema.CLARA, b.fuente)
+        assertEquals(FamiliaTema.MAR, b.familiaTema)
+        assertEquals(a, b)
+        // cambiar la fuente no toca el tema ni el modo
+        guardarAjustes(contexto, b.copy(fuente = FuenteTema.LECTURA))
+        assertEquals(FamiliaTema.MAR, cargarAjustes(contexto).familiaTema)
+        assertEquals(FuenteTema.LECTURA, cargarAjustes(contexto).fuente)
+    }
+
+    @Test
+    fun `una tipografia guardada desconocida cae a la del sistema`() {
+        val contexto = contexto()
+        guardarAjustes(contexto, Ajustes())
+        contexto.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit().putString("fuente_tema", "COMIC").apply()
+        assertEquals(FuenteTema.SISTEMA, cargarAjustes(contexto).fuente)
     }
 }

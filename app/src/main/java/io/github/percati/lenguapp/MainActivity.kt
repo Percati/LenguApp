@@ -351,7 +351,7 @@ internal fun LenguAppApp(
         onGuardarAjustes(nuevos)
     }
 
-    TemaLenguApp(familiaTema = ajustes.familiaTema, modoTema = ajustes.modoTema) {
+    TemaLenguApp(familiaTema = ajustes.familiaTema, modoTema = ajustes.modoTema, fuente = ajustes.fuente) {
         // AJUSTES-FASE-8.md, B.1: Surface() sin `color` pinta con
         // colorScheme.surface (el 30% de la regla 60-30-10), no con
         // colorScheme.background (el 60%) -- por eso las tarjetas del

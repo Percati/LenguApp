@@ -42,6 +42,7 @@ enum class ClaveTexto {
     GUARDADOS_EXPORTAR, GUARDADOS_IMPORTAR, GUARDADOS_EXPORTAR_ANKI, GUARDADOS_EXPORTAR_RESPALDO, GUARDADOS_MSG_EXPORTADO, GUARDADOS_MSG_IMPORTADO, GUARDADOS_ERR_INVALIDO, GUARDADOS_ERR_GRANDE, GUARDADOS_ERR_VERSION, GUARDADOS_ERR_ARCHIVO,
     BIBLIOTECA_VISTA_LEXICO, BIBLIOTECA_VISTA_HABILIDADES, HABILIDAD_SEMANAS,
     TEMA_PAPEL, TEMA_TERRACOTA, TEMA_MAR, TEMA_GRAFITO,
+    FUENTE_TITULO, FUENTE_LECTURA, FUENTE_CLARA, ACERCA_FUENTES_TEXTO,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
 }
 
@@ -370,6 +371,39 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "sem. {semanas}",
         Idioma.IT to "sett. {semanas}",
         Idioma.PT to "sem. {semanas}",
+    ),
+    // --- Tipografias (Ronda G) ---
+    ClaveTexto.FUENTE_TITULO to mapOf(
+        Idioma.ES to "Tipografía",
+        Idioma.EN to "Typeface",
+        Idioma.DE to "Schrift",
+        Idioma.FR to "Police",
+        Idioma.IT to "Carattere",
+        Idioma.PT to "Fonte",
+    ),
+    ClaveTexto.FUENTE_LECTURA to mapOf(
+        Idioma.ES to "Lectura",
+        Idioma.EN to "Reading",
+        Idioma.DE to "Lesen",
+        Idioma.FR to "Lecture",
+        Idioma.IT to "Lettura",
+        Idioma.PT to "Leitura",
+    ),
+    ClaveTexto.FUENTE_CLARA to mapOf(
+        Idioma.ES to "Clara",
+        Idioma.EN to "Clear",
+        Idioma.DE to "Klar",
+        Idioma.FR to "Claire",
+        Idioma.IT to "Chiara",
+        Idioma.PT to "Clara",
+    ),
+    ClaveTexto.ACERCA_FUENTES_TEXTO to mapOf(
+        Idioma.ES to "Las tipografías Literata y Atkinson Hyperlegible Next se distribuyen bajo la licencia SIL OFL 1.1.",
+        Idioma.EN to "The Literata and Atkinson Hyperlegible Next typefaces are distributed under the SIL OFL 1.1 licence.",
+        Idioma.DE to "Die Schriften Literata und Atkinson Hyperlegible Next werden unter der SIL OFL 1.1 verbreitet.",
+        Idioma.FR to "Les polices Literata et Atkinson Hyperlegible Next sont distribuées sous la licence SIL OFL 1.1.",
+        Idioma.IT to "I caratteri Literata e Atkinson Hyperlegible Next sono distribuiti con la licenza SIL OFL 1.1.",
+        Idioma.PT to "As fontes Literata e Atkinson Hyperlegible Next são distribuídas sob a licença SIL OFL 1.1.",
     ),
     // --- Temas de color (Ronda G) ---
     ClaveTexto.TEMA_PAPEL to mapOf(
@@ -831,6 +865,15 @@ fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.T
 fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
 fun etiquetaAcercaDe(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_DE, idiomaInterfaz)
+fun etiquetaFuente(idiomaInterfaz: Idioma): String = texto(ClaveTexto.FUENTE_TITULO, idiomaInterfaz)
+fun textoAcercaFuentes(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_FUENTES_TEXTO, idiomaInterfaz)
+
+/** Nombre de una opcion de tipografia en el idioma de app; SISTEMA reutiliza el rotulo "Sistema". */
+fun nombreFuente(fuente: io.github.percati.lenguapp.modelo.FuenteTema, idiomaInterfaz: Idioma): String = when (fuente) {
+    io.github.percati.lenguapp.modelo.FuenteTema.SISTEMA -> etiquetaSegunSistema(idiomaInterfaz)
+    io.github.percati.lenguapp.modelo.FuenteTema.LECTURA -> texto(ClaveTexto.FUENTE_LECTURA, idiomaInterfaz)
+    io.github.percati.lenguapp.modelo.FuenteTema.CLARA -> texto(ClaveTexto.FUENTE_CLARA, idiomaInterfaz)
+}
 
 /** Nombre de un tema de color en el idioma de app; SISTEMA reutiliza el rotulo "Sistema" de los selectores. */
 fun nombreTema(familia: io.github.percati.lenguapp.modelo.FamiliaTema, idiomaInterfaz: Idioma): String = when (familia) {

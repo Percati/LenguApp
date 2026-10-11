@@ -3,6 +3,7 @@ package io.github.percati.lenguapp.datos
 import android.content.Context
 import io.github.percati.lenguapp.modelo.Ajustes
 import io.github.percati.lenguapp.modelo.FamiliaTema
+import io.github.percati.lenguapp.modelo.FuenteTema
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.ModoTema
 import io.github.percati.lenguapp.modelo.Nivel
@@ -16,6 +17,7 @@ private const val CLAVE_IDIOMA_INTERFAZ = "idioma_interfaz"
 private const val CLAVE_IDIOMA_SEGUN_SISTEMA = "idioma_segun_sistema"
 private const val CLAVE_FAMILIA_TEMA = "familia_tema"
 private const val CLAVE_MODO_TEMA = "modo_tema"
+private const val CLAVE_FUENTE_TEMA = "fuente_tema"
 
 // Esquema viejo (Fases 3-5): un idioma y un nivel singulares. Se lee una
 // sola vez para migrar; nunca se vuelve a escribir en este formato.
@@ -52,6 +54,7 @@ fun cargarAjustes(context: Context): Ajustes {
             idiomaSegunSistema = prefs.getBoolean(CLAVE_IDIOMA_SEGUN_SISTEMA, false),
             familiaTema = migrarFamiliaTema(prefs.getString(CLAVE_FAMILIA_TEMA, null)),
             modoTema = nombreAEnum(prefs.getString(CLAVE_MODO_TEMA, null), ModoTema.SEGUN_SISTEMA),
+            fuente = nombreAEnum(prefs.getString(CLAVE_FUENTE_TEMA, null), FuenteTema.SISTEMA),
         )
     }
 
@@ -68,6 +71,7 @@ fun cargarAjustes(context: Context): Ajustes {
         idiomaSegunSistema = prefs.getBoolean(CLAVE_IDIOMA_SEGUN_SISTEMA, false),
         familiaTema = migrarFamiliaTema(prefs.getString(CLAVE_FAMILIA_TEMA, null)),
         modoTema = nombreAEnum(prefs.getString(CLAVE_MODO_TEMA, null), ModoTema.SEGUN_SISTEMA),
+        fuente = nombreAEnum(prefs.getString(CLAVE_FUENTE_TEMA, null), FuenteTema.SISTEMA),
     )
     guardarAjustes(context, migrado)
     return migrado
@@ -81,6 +85,7 @@ fun guardarAjustes(context: Context, ajustes: Ajustes) {
         .putBoolean(CLAVE_IDIOMA_SEGUN_SISTEMA, ajustes.idiomaSegunSistema)
         .putString(CLAVE_FAMILIA_TEMA, ajustes.familiaTema.name)
         .putString(CLAVE_MODO_TEMA, ajustes.modoTema.name)
+        .putString(CLAVE_FUENTE_TEMA, ajustes.fuente.name)
         .remove(CLAVE_VIEJA_IDIOMA_APRENDIDO)
         .remove(CLAVE_VIEJA_NIVEL)
         .apply()

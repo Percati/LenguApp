@@ -49,7 +49,7 @@ fun AcercaDeScreen(
             Bloque(etiquetaAcercaPrivacidadTitulo(idiomaInterfaz), textoAcercaPrivacidad(idiomaInterfaz))
             Bloque(
                 etiquetaAcercaLicenciasTitulo(idiomaInterfaz),
-                textoAcercaLicencias(idiomaInterfaz) + "\n" + textoAcercaCreditos(idiomaInterfaz),
+                textoAcercaLicencias(idiomaInterfaz) + "\n" + textoAcercaFuentes(idiomaInterfaz) + "\n" + textoAcercaCreditos(idiomaInterfaz),
             )
             Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
                 if (version.isNotBlank()) {
