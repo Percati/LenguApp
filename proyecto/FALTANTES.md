@@ -1071,3 +1071,14 @@ Pares flojos: **DE C2 con 24 verbos** y sin ningún `mit-Dativ` (el chip no apar
 **Sin revisar por nativo:** los nombres de las clases, de la vista, el estado vacío, el «sin resultados» y Contraer/Expandir en fr / it / pt.
 
 **Búsqueda en «Vocabulario y expresiones» (propuesta, no hecha):** ya la tiene (campo «Buscar», sobre original, traducción y función, sin diacríticos no: usa `lowercase()` plano). Costo de unificarla con la de Verbos: reemplazar `coincide()` de `Biblioteca.kt` por `normalizarBusqueda` (una línea, más sus tests) para que `uber` también encuentre *über…* ahí; bajo, y de paso las dos vistas se comportan igual.
+
+## 33. Verificación de Code Ronda H (11-oct-2026) y Ronda I
+
+Verificado por Overview sobre `origin/main` (HEAD `c5b4f726`): los 4 commits están, versionCode 6 / 0.2.4, `VistaBiblioteca { LEXICO, HABILIDADES, VERBOS }`, manifest sin `INTERNET`, contenido y assets sin tocar. La lógica de la vista (`presentacion/Verbos.kt`) está separada de la pantalla y bien cubierta; el test que barre el código fuente buscando `contentDescription` con texto fijo es una buena idea y se queda. **Guía de testers: `.pdf` regenerado por Overview** (2 carillas).
+
+**Defecto encontrado por Overview — motiva la Ronda I.** La vista quedó atada al **nivel actual del idioma en Ajustes**. «Sin filtro de nivel» se interpretó como «fijado en un nivel» en lugar de «el nivel no es una dimensión de esta vista», y eso **rompe la búsqueda de familias** (tarea 2 de la H), porque las familias viven repartidas entre niveles: *stellen* tiene 6 miembros en A2, B1, C1 y C2 (*bestellen* A2, *sich bestellen* / *sich vorstellen* B1, *nachbestellen* C1, *kaltstellen* / *richtigstellen* C2) y *steigen* está en A2 y B1. Buscar «stellen» en B1 muestra 2 de 6 sin avisar. Además la vista esconde la mayor parte del material (124 de 305 formas en DE A2) y el estado vacío manda a «probar con otro nivel», que en esa vista no se puede cambiar. **Ronda I (prompt 22):** verbos de todo el idioma, el nivel como dato en la línea extra y no como filtro, textos corregidos y la búsqueda del léxico unificada con `normalizarBusqueda` (propuesta de Code, aceptada). Versión 0.2.5.
+
+**Decisiones de la H que se quedan como están:** chips multi-selección con OR; la cuenta del chip no baja al escribir en la búsqueda; búsqueda y chips se vacían al cambiar de pestaña de idioma; en inglés la fila repite la separabilidad mientras no haya chip elegido.
+
+**Pares flojos de contenido (dato de Code, sin acción todavía):** DE C2 con 24 verbos y sin ningún `mit-Dativ`; `mit-Dativ` con 2 en B2 y 2 en C1; EN A2 con 4 `verbo-preposicion`; EN C2 con 6 `phrasal-separable` y 5 `verbo-preposicion`. Con la Ronda I el nivel deja de recortar la vista, así que esto deja de ser urgente: se decide si hace falta contenido nuevo recién si una **clase entera** de un idioma queda floja.
+
