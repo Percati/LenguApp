@@ -175,12 +175,12 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "Enregistrés", Idioma.IT to "Salvati", Idioma.PT to "Salvos",
     ),
     ClaveTexto.GUARDADOS_VACIO to mapOf(
-        Idioma.ES to "Todavía no guardaste nada. Toca la estrella junto a una palabra o expresión para guardarla.",
-        Idioma.EN to "You haven't saved anything yet. Tap the star next to a word or expression to save it.",
-        Idioma.DE to "Du hast noch nichts gespeichert. Tippe auf den Stern neben einem Wort oder Ausdruck, um ihn zu speichern.",
-        Idioma.FR to "Tu n'as encore rien enregistré. Appuie sur l'étoile à côté d'un mot ou d'une expression pour l'enregistrer.",
-        Idioma.IT to "Non hai ancora salvato nulla. Tocca la stella accanto a una parola o espressione per salvarla.",
-        Idioma.PT to "Você ainda não salvou nada. Toque na estrela ao lado de uma palavra ou expressão para salvá-la.",
+        Idioma.ES to "Aquí irán tus palabras y expresiones. Toca la estrella junto a una para guardarla.",
+        Idioma.EN to "Your words and expressions will live here. Tap the star next to one to save it.",
+        Idioma.DE to "Hier sammelst du Wörter und Ausdrücke. Tippe auf den Stern neben einem Eintrag, um ihn zu speichern.",
+        Idioma.FR to "Tes mots et expressions seront ici. Appuie sur l'étoile à côté de l'un d'eux pour l'enregistrer.",
+        Idioma.IT to "Qui troverai le tue parole ed espressioni. Tocca la stella accanto a una per salvarla.",
+        Idioma.PT to "Aqui ficam suas palavras e expressões. Toque na estrela ao lado de uma para salvá-la.",
     ),
     ClaveTexto.FILTRO_IDIOMA to mapOf(
         Idioma.ES to "Idioma", Idioma.EN to "Language", Idioma.DE to "Sprache",
@@ -635,12 +635,12 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "Padrões gramaticais",
     ),
     ClaveTexto.BIBLIOTECA_VACIO to mapOf(
-        Idioma.ES to "No hay nada para mostrar con estos filtros.",
-        Idioma.EN to "Nothing to show with these filters.",
-        Idioma.DE to "Mit diesen Filtern gibt es nichts anzuzeigen.",
-        Idioma.FR to "Rien à afficher avec ces filtres.",
-        Idioma.IT to "Niente da mostrare con questi filtri.",
-        Idioma.PT to "Nada para mostrar com estes filtros.",
+        Idioma.ES to "Prueba con otros filtros.",
+        Idioma.EN to "Try different filters.",
+        Idioma.DE to "Versuche es mit anderen Filtern.",
+        Idioma.FR to "Essaie avec d'autres filtres.",
+        Idioma.IT to "Prova con altri filtri.",
+        Idioma.PT to "Tente com outros filtros.",
     ),
     // --- Biblioteca/Guardados: limpiar filtros (Ronda C) ---
     ClaveTexto.QUITAR_FILTROS to mapOf(

@@ -36,6 +36,8 @@ import androidx.compose.material.icons.filled.SwapHoriz
 import androidx.compose.material.icons.filled.Timer
 import androidx.compose.ui.graphics.vector.ImageVector
 import io.github.percati.lenguapp.datos.NombresI18n
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -87,6 +89,9 @@ import java.time.LocalDate
  * corte entre secciones se note sin una regla. Un separador tenue en color
  * secundario queda como ultimo recurso si esto no alcanza -- no aplicado.
  */
+/** Ancho maximo comodo de la columna de lectura (pantallas anchas, tablets). */
+private val ANCHO_LECTURA = 640.dp
+
 /** Cuantas frases de la ficha se ofrecen en el reto del fin de semana. */
 private const val MAX_FRASES_RETO = 3
 
@@ -241,8 +246,10 @@ private fun FichaContenido(
         }
 
         SelectionContainer {
+          // Columna de lectura: en pantallas anchas el texto no se estira de borde a borde.
+          Box(Modifier.fillMaxSize(), contentAlignment = Alignment.TopCenter) {
             Column(
-                modifier = Modifier.verticalScroll(rememberScrollState()).padding(16.dp),
+                modifier = Modifier.widthIn(max = ANCHO_LECTURA).fillMaxWidth().verticalScroll(rememberScrollState()).padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones),
             ) {
                 Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -381,6 +388,7 @@ private fun FichaContenido(
 
                 onPlanilla?.let { BotonPlanilla(etiquetaPlanillaBoton(idiomaInterfaz)) { it(ficha) } }
             }
+          }
         }
     }
 }
@@ -456,8 +464,9 @@ private fun SemanaEspecialContenido(
     val traducido = idiomaTexto != especial.idioma
     val t: (TextoBilingue) -> String = { it.resolver(idiomaTexto, especial.idioma) }
     val et: (String) -> String = { etiquetaSeccion(it, idiomaTexto) }
+    Box(modifier.fillMaxSize(), contentAlignment = Alignment.TopCenter) {
     Column(
-        modifier = modifier.verticalScroll(rememberScrollState()).padding(16.dp),
+        modifier = Modifier.widthIn(max = ANCHO_LECTURA).fillMaxWidth().verticalScroll(rememberScrollState()).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones),
     ) {
         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
@@ -489,6 +498,7 @@ private fun SemanaEspecialContenido(
         }
 
         onPlanilla?.let { BotonPlanilla(etiquetaPlanillaBoton(idiomaInterfaz)) { it(especial) } }
+    }
     }
 }
 

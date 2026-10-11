@@ -145,7 +145,6 @@ fun GuardadosScreen(
             } else {
                 Column(
                     modifier = Modifier.verticalScroll(rememberScrollState()),
-                    verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreItems),
                 ) {
                     filtrados.forEach { item ->
                         FilaGuardado(

@@ -3,18 +3,18 @@ package io.github.percati.lenguapp.ui
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.outlined.StarBorder
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -45,14 +45,17 @@ fun FilaPalabra(
     onEstrella: () -> Unit,
     modifier: Modifier = Modifier,
     onClick: (() -> Unit)? = null,
+    // Linea opcional debajo de la funcion (la usara la vista Verbos: regimen / separabilidad). Por defecto no hay nada.
+    extra: (@Composable ColumnScope.() -> Unit)? = null,
 ) {
-    Surface(shape = RoundedCornerShape(8.dp), color = MaterialTheme.colorScheme.surfaceVariant, modifier = modifier.fillMaxWidth()) {
+    val espaciado = espaciadoActual()
+    Column(modifier.fillMaxWidth()) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Column(
                 (if (onClick != null) Modifier.clickable(onClick = onClick) else Modifier)
                     .weight(1f)
-                    .padding(start = 12.dp, top = 8.dp, bottom = 8.dp, end = 4.dp),
-                verticalArrangement = Arrangement.spacedBy(espaciadoActual().dentroDeItem),
+                    .padding(top = espaciado.entreItems, bottom = espaciado.entreItems, end = 4.dp),
+                verticalArrangement = Arrangement.spacedBy(espaciado.dentroDeItem),
             ) {
                 Text(original, style = MaterialTheme.typography.bodyLarge)
                 // La traduccion esta en idiomaBase: una cita *entre asteriscos* ahi adentro es una
@@ -67,14 +70,19 @@ fun FilaPalabra(
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
                 }
+                // Espacio para una linea extra (p.ej. regimen o separabilidad de un verbo, vista futura): hoy vacio.
+                extra?.invoke(this)
             }
-            IconButton(onClick = onEstrella, modifier = Modifier.size(40.dp).padding(end = 4.dp).testTag(tagEstrella)) {
+            // Estrella discreta: contorno fino en reposo, llena con el acento cuando esta guardada.
+            IconButton(onClick = onEstrella, modifier = Modifier.size(40.dp).testTag(tagEstrella)) {
                 Icon(
                     if (guardada) Icons.Filled.Star else Icons.Outlined.StarBorder,
                     contentDescription = descripcionEstrella,
-                    tint = if (guardada) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+                    tint = if (guardada) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
                 )
             }
         }
+        // Linea fina entre filas (en vez de tarjetas con fondo).
+        HorizontalDivider(thickness = 0.5.dp, color = MaterialTheme.colorScheme.outlineVariant)
     }
 }

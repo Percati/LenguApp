@@ -59,10 +59,10 @@ class EspaciadoEscalaTest {
     }
 
     @Test
-    fun `el interlineado del cuerpo es proporcional, 1,45 x el tamano, en sp`() {
+    fun `el interlineado del cuerpo es proporcional, 1,5 x el tamano, en sp`() {
         val t = tipografiaProporcional()
-        assertEquals(14f * 1.45f, t.bodyMedium.lineHeight.value, 0.01f)
-        assertEquals(16f * 1.45f, t.bodyLarge.lineHeight.value, 0.01f)
+        assertEquals(14f * 1.5f, t.bodyMedium.lineHeight.value, 0.01f)
+        assertEquals(16f * 1.5f, t.bodyLarge.lineHeight.value, 0.01f)
         assertTrue(t.bodyMedium.lineHeight.isSp)
     }
 

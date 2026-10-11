@@ -89,6 +89,9 @@ import io.github.percati.lenguapp.presentacion.construirIndiceHabilidades
 import io.github.percati.lenguapp.semana.CalendarioCargado
 import io.github.percati.lenguapp.ui.AcercaDeScreen
 import android.net.Uri
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import io.github.percati.lenguapp.datos.ErrorRespaldo
@@ -132,6 +135,7 @@ private const val DESTINO_BIBLIOTECA = "biblioteca"
 private const val DESTINO_ACERCA = "acerca"
 private const val DESTINO_FICHA_GUARDADA = "ficha_guardada"
 private const val VENTANA_DOBLE_ATRAS_MS = 3000L
+private const val DURACION_TRANSICION_MS = 180
 
 /**
  * Pantalla unica + ajustes + navegacion por semana + una pestaña por idioma
@@ -352,7 +356,17 @@ internal fun LenguAppApp(
         // (mapeado a la misma superficie), se volvian invisibles contra el
         // fondo de la pantalla. El fondo de la app tiene que ser `fondo`.
         Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-            NavHost(navController = navController, startDestination = DESTINO_PRINCIPAL) {
+            // Movimiento sutil: un fundido corto entre pantallas, sin deslizamientos. Compose escala sus
+            // animaciones con la configuracion del sistema "Quitar animaciones" (duracion 0 = cambio
+            // instantaneo): no hace falta leerla a mano.
+            NavHost(
+                navController = navController,
+                startDestination = DESTINO_PRINCIPAL,
+                enterTransition = { fadeIn(tween(DURACION_TRANSICION_MS)) },
+                exitTransition = { fadeOut(tween(DURACION_TRANSICION_MS)) },
+                popEnterTransition = { fadeIn(tween(DURACION_TRANSICION_MS)) },
+                popExitTransition = { fadeOut(tween(DURACION_TRANSICION_MS)) },
+            ) {
                 composable(DESTINO_PRINCIPAL) {
                     PantallaPrincipal(
                         ajustes = ajustes,

@@ -77,6 +77,20 @@ internal fun PaletaTema.aColorScheme(oscuro: Boolean): ColorScheme {
         surfaceVariant = superficie,
         onSurfaceVariant = secundario,
         outline = secundario,
+        // La linea fina de las listas (HorizontalDivider) y el resto de contenedores de Material 3,
+        // en tonos de la paleta: sin esto se filtrarian los grises violaceos por defecto.
+        outlineVariant = lerp(fondo, texto, 0.14f),
+        surfaceTint = acento,
+        surfaceDim = fondo,
+        surfaceBright = superficie,
+        surfaceContainerLowest = superficie,
+        surfaceContainerLow = superficie,
+        surfaceContainer = superficie,
+        surfaceContainerHigh = superficie,
+        surfaceContainerHighest = superficie,
+        inverseSurface = texto,
+        inverseOnSurface = fondo,
+        inversePrimary = acento,
     )
 }
 

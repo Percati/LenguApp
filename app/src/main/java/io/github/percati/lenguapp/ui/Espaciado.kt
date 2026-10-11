@@ -56,7 +56,7 @@ fun espaciadoActual(): Espaciado {
     return calcularEspaciado(t.bodyMedium.fontSize.value, t.bodyLarge.fontSize.value, LocalDensity.current)
 }
 
-/** Interlineado en sp = tamano x factor: cuerpo 1,45; etiquetas 1,35; titulos 1,3; headline 1,25; display 1,2. */
+/** Interlineado en sp = tamano x factor: cuerpo 1,5; etiquetas 1,35; titulos 1,3; headline 1,25; display 1,2. */
 private fun TextStyle.conInterlineado(factor: Float): TextStyle =
     if (fontSize.isSp) copy(lineHeight = (fontSize.value * factor).sp) else this
 
@@ -70,9 +70,9 @@ fun tipografiaProporcional(base: Typography = Typography()): Typography = base.c
     titleLarge = base.titleLarge.conInterlineado(1.3f),
     titleMedium = base.titleMedium.conInterlineado(1.3f),
     titleSmall = base.titleSmall.conInterlineado(1.3f),
-    bodyLarge = base.bodyLarge.conInterlineado(1.45f),
-    bodyMedium = base.bodyMedium.conInterlineado(1.45f),
-    bodySmall = base.bodySmall.conInterlineado(1.45f),
+    bodyLarge = base.bodyLarge.conInterlineado(1.5f),
+    bodyMedium = base.bodyMedium.conInterlineado(1.5f),
+    bodySmall = base.bodySmall.conInterlineado(1.5f),
     labelLarge = base.labelLarge.conInterlineado(1.35f),
     labelMedium = base.labelMedium.conInterlineado(1.35f),
     labelSmall = base.labelSmall.conInterlineado(1.35f),

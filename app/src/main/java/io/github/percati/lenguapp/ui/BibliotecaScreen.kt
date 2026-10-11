@@ -18,6 +18,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.outlined.StarBorder
 import androidx.compose.material3.FilterChip
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -132,9 +133,9 @@ fun BibliotecaScreen(
             return@Column
         }
 
-        LazyColumn(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreItems)) {
+        LazyColumn {
             item {
-                Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                Column(verticalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.padding(bottom = espaciadoActual().entreItems)) {
                     ScrollableTabRow(selectedTabIndex = idiomas.indexOf(idioma).coerceAtLeast(0)) {
                         idiomas.forEach { i ->
                             Tab(selected = i == idioma, onClick = { idiomaElegido = i }, text = { Text(nombreIdioma(i, idiomaInterfaz)) })
@@ -302,8 +303,11 @@ private enum class VistaBiblioteca { LEXICO, HABILIDADES }
 /** Una habilidad del indice: titulo y semanas del anio; un toque abre la ficha. */
 @Composable
 private fun FilaHabilidadIndice(fila: FilaHabilidad, idiomaInterfaz: Idioma, onClick: () -> Unit) {
-    Surface(shape = RoundedCornerShape(8.dp), color = MaterialTheme.colorScheme.surfaceVariant, modifier = Modifier.fillMaxWidth().clickable(onClick = onClick)) {
-        Row(Modifier.padding(start = 12.dp, top = 8.dp, bottom = 8.dp, end = 8.dp), verticalAlignment = Alignment.CenterVertically) {
+    Column(Modifier.fillMaxWidth()) {
+        Row(
+            Modifier.fillMaxWidth().clickable(onClick = onClick).padding(vertical = espaciadoActual().entreItems),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
             Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(espaciadoActual().dentroDeItem)) {
                 Text(fila.titulo, style = MaterialTheme.typography.bodyLarge)
                 Text(
@@ -312,7 +316,8 @@ private fun FilaHabilidadIndice(fila: FilaHabilidad, idiomaInterfaz: Idioma, onC
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
-            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)
         }
+        HorizontalDivider(thickness = 0.5.dp, color = MaterialTheme.colorScheme.outlineVariant)
     }
 }
