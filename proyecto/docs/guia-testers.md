@@ -1,4 +1,4 @@
-# LenguApp · guía rápida para testers (versión 0.2.6)
+# LenguApp · guía rápida para testers (versión 0.2.7)
 
 **Qué es.** Una app para practicar un idioma cada semana (alemán o inglés, de A2 a C2). **No es un curso:** sirve para fijar lo que ya aprendiste en uno. Funciona sin internet, sin cuenta y sin recopilar datos. Está en prueba y tu opinión ayuda mucho.
 
@@ -9,7 +9,7 @@
 | Palabras en otro idioma entre « » | Todo fragmento en un idioma distinto al del texto va entre comillas angulares. Si ves uno sin marcar, eso sí es un error: avísanos. |
 | Una habilidad o un tema vuelve más adelante | Es a propósito: las habilidades reaparecen varias veces al año con otra profundidad. |
 | Semanas especiales de Repaso | Cuatro veces al año hay una semana de repaso, con otro formato. |
-| El Desafío de fin de semana solo aparece sábado y domingo | Es hablar en voz alta, no repetir la misión: muestra tema, habilidad, condiciones y frases para usar. El interruptor arranca apagado cada vez que abres la app. No se guarda nada. |
+| El Desafío de fin de semana solo aparece sábado y domingo | Es hablar en voz alta, no repetir la misión: arriba la consigna con los minutos; debajo, tema, habilidad, condiciones y frases. Arranca apagado al abrir la app. No guarda nada. |
 | El nombre de la app y «Acerca de» están en Ajustes | La pantalla principal queda libre para el contenido. |
 | Guardados e importar/exportar | Guardados muestra lo mismo que la Biblioteca. Puedes exportar a Anki o hacer una copia de seguridad, e importarla después; eliges tú el archivo en ese momento. |
 | Habilidades en la Biblioteca | Es una lista de solo lectura: toca una habilidad para abrir su semana. |
