@@ -287,7 +287,7 @@ private fun FichaContenido(
                     Text(m(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge)
 
                     ficha.cuadroReferencia?.let { cuadro ->
-                        SeccionPlegable(titulo = t(cuadro.titulo).ifBlank { et("cuadroReferencia") }) {
+                        SeccionPlegable(titulo = t(cuadro.titulo).ifBlank { et("cuadroReferencia") }, idiomaInterfaz = idiomaInterfaz) {
                             CuadroReferenciaTabla(cuadro, t, traduccionActiva)
                         }
                     }
@@ -337,7 +337,7 @@ private fun FichaContenido(
                             .forEach { Vinieta(it) }
                     }
 
-                    SeccionPlegable(titulo = "${et("vocabulario")} (${ficha.vocabulario.size})") {
+                    SeccionPlegable(titulo = "${et("vocabulario")} (${ficha.vocabulario.size})", idiomaInterfaz = idiomaInterfaz) {
                         Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreItems)) {
                             // Las glosas siempre en el idioma de app: el switch
                             // cambia la prosa, no la traduccion del vocabulario.
@@ -345,7 +345,7 @@ private fun FichaContenido(
                         }
                     }
 
-                    SeccionPlegable(titulo = "${et("redemittel")} (${ficha.redemittel.size})") {
+                    SeccionPlegable(titulo = "${et("redemittel")} (${ficha.redemittel.size})", idiomaInterfaz = idiomaInterfaz) {
                         Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreItems)) {
                             ficha.redemittel.forEach {
                                 RedemittelFila(it, idiomaBase, idiomaMostrado, ficha.idioma, estadoGuardados)

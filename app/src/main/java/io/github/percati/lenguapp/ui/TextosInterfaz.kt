@@ -45,6 +45,7 @@ enum class ClaveTexto {
     FUENTE_TITULO, FUENTE_LECTURA, FUENTE_CLARA, ACERCA_FUENTES_TEXTO,
     BIBLIOTECA_VISTA_VERBOS, VERBO_REFLEXIVO, VERBO_TRENNBAR, VERBO_MIT_PRAPOSITION, VERBO_MIT_DATIV, VERBO_PHRASAL_SEPARABLE, VERBO_PHRASAL_INSEPARABLE, VERBO_VERBO_PREPOSICION, VERBOS_VACIO,
     VERBOS_SIN_RESULTADOS, BUSCAR_BORRAR,
+    SECCION_CONTRAER, SECCION_EXPANDIR,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
 }
 
@@ -373,6 +374,23 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "sem. {semanas}",
         Idioma.IT to "sett. {semanas}",
         Idioma.PT to "sem. {semanas}",
+    ),
+    // --- Descripciones para lectores de pantalla (TalkBack) ---
+    ClaveTexto.SECCION_CONTRAER to mapOf(
+        Idioma.ES to "Contraer",
+        Idioma.EN to "Collapse",
+        Idioma.DE to "Einklappen",
+        Idioma.FR to "Réduire",
+        Idioma.IT to "Comprimi",
+        Idioma.PT to "Recolher",
+    ),
+    ClaveTexto.SECCION_EXPANDIR to mapOf(
+        Idioma.ES to "Expandir",
+        Idioma.EN to "Expand",
+        Idioma.DE to "Ausklappen",
+        Idioma.FR to "Développer",
+        Idioma.IT to "Espandi",
+        Idioma.PT to "Expandir",
     ),
     // --- Vista Verbos (Ronda H) ---
     ClaveTexto.VERBOS_SIN_RESULTADOS to mapOf(
@@ -956,6 +974,8 @@ fun etiquetaTipoVocabulario(idiomaInterfaz: Idioma): String = texto(ClaveTexto.T
 fun etiquetaTipoExpresion(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TIPO_EXPRESION, idiomaInterfaz)
 fun etiquetaDesafioFinde(idiomaInterfaz: Idioma): String = texto(ClaveTexto.DESAFIO_FINDE, idiomaInterfaz)
 fun etiquetaAcercaDe(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_DE, idiomaInterfaz)
+fun descripcionSeccion(expandida: Boolean, idiomaInterfaz: Idioma): String =
+    texto(if (expandida) ClaveTexto.SECCION_CONTRAER else ClaveTexto.SECCION_EXPANDIR, idiomaInterfaz)
 fun etiquetaBibliotecaVistaVerbos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_VISTA_VERBOS, idiomaInterfaz)
 fun mensajeVerbosVacio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.VERBOS_VACIO, idiomaInterfaz)
 fun mensajeVerbosSinResultados(idiomaInterfaz: Idioma): String = texto(ClaveTexto.VERBOS_SIN_RESULTADOS, idiomaInterfaz)

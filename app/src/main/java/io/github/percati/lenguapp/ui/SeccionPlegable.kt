@@ -20,6 +20,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import io.github.percati.lenguapp.modelo.Idioma
 
 /**
  * Cuadro de referencia, vocabulario y Redemittel usan esto: plegados por
@@ -29,6 +30,8 @@ import androidx.compose.ui.unit.dp
 @Composable
 fun SeccionPlegable(
     titulo: String,
+    // Idioma de app: la descripcion del icono (Contraer / Expandir) la LEE TalkBack en voz alta.
+    idiomaInterfaz: Idioma,
     modifier: Modifier = Modifier,
     expandidaPorDefecto: Boolean = false,
     contenido: @Composable () -> Unit,
@@ -50,7 +53,7 @@ fun SeccionPlegable(
             )
             Icon(
                 imageVector = if (expandida) Icons.Filled.KeyboardArrowUp else Icons.Filled.KeyboardArrowDown,
-                contentDescription = if (expandida) "Contraer" else "Expandir",
+                contentDescription = descripcionSeccion(expandida, idiomaInterfaz),
             )
         }
         if (expandida) {
