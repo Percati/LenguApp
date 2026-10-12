@@ -29,6 +29,7 @@ import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -84,6 +85,11 @@ import io.github.percati.lenguapp.ui.ContenidoSemanalScreen
 import io.github.percati.lenguapp.ui.EstadoGuardados
 import io.github.percati.lenguapp.ui.GuardadosScreen
 import io.github.percati.lenguapp.ui.PantallaSemana
+import io.github.percati.lenguapp.audio.ControlAudio
+import io.github.percati.lenguapp.audio.LocalControlAudio
+import io.github.percati.lenguapp.audio.ReproductorAssets
+import io.github.percati.lenguapp.audio.SinAudio
+import io.github.percati.lenguapp.audio.cargarIndiceAudioDesdeAssets
 import io.github.percati.lenguapp.ui.AjustarIconosDeBarras
 import io.github.percati.lenguapp.ui.TemaLenguApp
 import io.github.percati.lenguapp.ui.margenesSuperiorYLateralesDelSistema
@@ -151,6 +157,8 @@ private const val DURACION_TRANSICION_MS = 180
  * (io.github.percati.lenguapp.ui.ContenidoSemanalScreen) no se toca aca.
  */
 class MainActivity : ComponentActivity() {
+    private var controlAudio: ControlAudio? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         // Pantalla de carga: tema Theme.LenguApp.Splash (fondo Papel, sin icono) -> Theme.LenguApp.
         installSplashScreen()
@@ -184,6 +192,10 @@ class MainActivity : ComponentActivity() {
         val planillaTextos = cargarPlanillaTextosDesdeAssets(this)
         val topicNombres = cargarTopicNombresDesdeAssets(this)
         val categoriasUso = cargarCategoriasUsoDesdeAssets(this)
+        // Audio (Ronda M): el indice se lee una vez; los clips suenan desde los assets, sin permisos ni red.
+        // El ingles queda detras del interruptor de compilacion BuildConfig.AUDIO_INGLES (apagado en release).
+        val audio = ControlAudio(cargarIndiceAudioDesdeAssets(this, BuildConfig.AUDIO_INGLES), ReproductorAssets(this))
+        controlAudio = audio
         val versionApp = runCatching { packageManager.getPackageInfo(packageName, 0).versionName }.getOrNull().orEmpty()
         setContent {
             LenguAppApp(
@@ -197,11 +209,23 @@ class MainActivity : ComponentActivity() {
                 topicNombres = topicNombres,
                 categoriasUso = categoriasUso,
                 versionApp = versionApp,
+                controlAudio = audio,
                 resolver = { idioma, nivel, fecha -> resolverSemana(this, contenidoPorId, idioma, nivel, fecha) },
                 calendarioDe = { anio, idioma, nivel -> cargarCalendarioDesdeAssets(this, anio, idioma, nivel) },
                 onGuardarAjustes = { guardarAjustes(this, it) },
             )
         }
+    }
+
+    /** Nada suena con la app en segundo plano. */
+    override fun onStop() {
+        controlAudio?.detener()
+        super.onStop()
+    }
+
+    override fun onDestroy() {
+        controlAudio?.liberar()
+        super.onDestroy()
     }
 }
 
@@ -235,6 +259,8 @@ internal fun LenguAppApp(
     versionApp: String = "",
     // Calendario de un (anio, idioma, nivel): lo usa el indice de habilidades de la Biblioteca.
     calendarioDe: (Int, Idioma, Nivel) -> CalendarioCargado = { _, _, _ -> CalendarioCargado.SinCalendarioParaIdiomaONivel },
+    // Audio de los textos (Ronda M): por omision no hay, y entonces ninguna pantalla dibuja el boton.
+    controlAudio: ControlAudio = SinAudio,
 ) {
     var ajustes by remember { mutableStateOf(ajustesIniciales) }
     var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
@@ -366,6 +392,7 @@ internal fun LenguAppApp(
         onGuardarAjustes(nuevos)
     }
 
+    CompositionLocalProvider(LocalControlAudio provides controlAudio) {
     TemaLenguApp(familiaTema = ajustes.familiaTema, modoTema = ajustes.modoTema, fuente = ajustes.fuente) {
         // Iconos de las barras del sistema legibles sobre el fondo del tema elegido (claro/oscuro, los 4 temas y el dinamico).
         AjustarIconosDeBarras(MaterialTheme.colorScheme.background)
@@ -506,6 +533,7 @@ internal fun LenguAppApp(
                 }
             }
         }
+    }
     }
 }
 

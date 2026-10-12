@@ -23,8 +23,16 @@ android {
     }
 
     buildTypes {
+        // AUDIO_INGLES: interruptor de COMPILACION (no un ajuste del usuario). Las dos voces inglesas actuales
+        // (en_US-ryan: CC BY-NC-SA 4.0; en_US-lessac: Blizzard 2013, solo investigacion) no se pueden publicar
+        // (proyecto/docs/licencias-voces.md): el audio en ingles suena en debug y NO en release hasta que se
+        // regeneren los clips con una voz de corpus limpio. Para encenderlo en release: cambiar "false" por "true".
+        debug {
+            buildConfigField("boolean", "AUDIO_INGLES", "true")
+        }
         release {
             isMinifyEnabled = false
+            buildConfigField("boolean", "AUDIO_INGLES", "false")
         }
     }
 
@@ -39,6 +47,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     testOptions {
