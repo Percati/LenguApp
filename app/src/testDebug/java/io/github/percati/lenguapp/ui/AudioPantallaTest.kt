@@ -47,7 +47,8 @@ import java.io.File
 private class ReproductorFalso(var abre: Boolean = true) : ReproductorAudio {
     val pedidos = mutableListOf<String>()
     var detenciones = 0
-    override fun reproducir(rutaAsset: String, alTerminar: (Boolean) -> Unit): Boolean { pedidos += rutaAsset; return abre }
+    val velocidades = mutableListOf<Float>()
+    override fun reproducir(rutaAsset: String, velocidad: Float, alTerminar: (Boolean) -> Unit): Boolean { pedidos += rutaAsset; velocidades += velocidad; return abre }
     override fun detener() { detenciones++ }
     override fun liberar() {}
 }

@@ -5,6 +5,7 @@ import android.media.AudioAttributes
 import android.media.AudioFocusRequest
 import android.media.AudioManager
 import android.media.MediaPlayer
+import android.media.PlaybackParams
 import android.util.Log
 
 /**
@@ -25,14 +26,23 @@ class ReproductorAssets(private val contexto: Context) : ReproductorAudio {
         .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
         .build()
 
-    override fun reproducir(rutaAsset: String, alTerminar: (Boolean) -> Unit): Boolean {
+    override fun reproducir(rutaAsset: String, velocidad: Float, alTerminar: (Boolean) -> Unit): Boolean {
         soltarJugador()
         return try {
             val p = MediaPlayer()
             jugador = p
             contexto.assets.openFd(rutaAsset).use { fd -> p.setDataSource(fd.fileDescriptor, fd.startOffset, fd.length) }
             p.setAudioAttributes(atributos)
-            p.setOnPreparedListener { if (jugador === it) { pedirFoco(); it.start() } }
+            // La velocidad se aplica AQUI, ya preparado y antes de start(): setPlaybackParams lanza IllegalStateException si el
+            // reproductor no esta en un estado valido, y antes de preparar no cambia nada. (Ojo si algun dia hay pausa:
+            // en varias versiones, setPlaybackParams sobre un reproductor pausado lo hace arrancar.)
+            p.setOnPreparedListener {
+                if (jugador === it) {
+                    aplicarVelocidadSegura(velocidad, { params -> it.playbackParams = params })
+                    pedirFoco()
+                    it.start()
+                }
+            }
             p.setOnCompletionListener {
                 if (jugador === it) { soltarJugador(); alTerminar(true) }
             }
@@ -81,5 +91,21 @@ class ReproductorAssets(private val contexto: Context) : ReproductorAudio {
         peticionFoco = null
         val gestor = contexto.getSystemService(Context.AUDIO_SERVICE) as? AudioManager ?: return
         runCatching { gestor.abandonAudioFocusRequest(peticion) }
+    }
+}
+
+/**
+ * Aplica `velocidad` con `PlaybackParams` (solo cambia la velocidad: el tono queda en 1,0, la voz no suena grave). Si no
+ * es 1,0 y el dispositivo la rechaza (IllegalArgumentException, IllegalStateException, lo que sea), no se rompe ni se calla:
+ * el clip suena a velocidad normal y queda una linea en el log de depuracion. Devuelve la velocidad que quedo efectiva.
+ */
+internal fun aplicarVelocidadSegura(velocidad: Float, aplicar: (PlaybackParams) -> Unit): Float {
+    if (velocidad == VELOCIDAD_NORMAL) return VELOCIDAD_NORMAL
+    return try {
+        aplicar(PlaybackParams().setSpeed(velocidad).setPitch(1.0f))
+        velocidad
+    } catch (e: Exception) {
+        runCatching { Log.d("LenguApp", "El dispositivo rechazo la velocidad $velocidad: ${e.message}; suena a velocidad normal") }
+        VELOCIDAD_NORMAL
     }
 }

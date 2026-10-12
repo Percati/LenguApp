@@ -25,8 +25,11 @@ private class ReproductorFalso(var abre: Boolean = true) : ReproductorAudio {
     var liberado = false
     private var alTerminar: ((Boolean) -> Unit)? = null
 
-    override fun reproducir(rutaAsset: String, alTerminar: (Boolean) -> Unit): Boolean {
+    val velocidades = mutableListOf<Float>()
+
+    override fun reproducir(rutaAsset: String, velocidad: Float, alTerminar: (Boolean) -> Unit): Boolean {
         pedidos += rutaAsset
+        velocidades += velocidad
         this.alTerminar = alTerminar
         return abre
     }
@@ -164,6 +167,21 @@ class ControlAudioTest {
     }
 
     @Test
+    fun `la velocidad vigente llega al reproductor, y por omision es normal`() {
+        val rep = ReproductorFalso()
+        val control = ControlAudio(indice, rep)
+        control.alternar("audio/DE/a.ogg")
+        control.detener()
+        control.alternar("audio/DE/a.ogg", 0.6f)
+        control.alternar("audio/DE/b.ogg", 0.75f)
+        assertEquals(listOf(1.0f, 0.6f, 0.75f), rep.velocidades)
+        // el control no recuerda la velocidad: la que cuenta es la de cada toque
+        control.detener()
+        control.alternar("audio/DE/a.ogg")
+        assertEquals(1.0f, rep.velocidades.last(), 0f)
+    }
+
+    @Test
     fun `detener y liberar sueltan el reproductor y dejan todo en reposo`() {
         val rep = ReproductorFalso()
         val control = ControlAudio(indice, rep)
@@ -192,10 +210,33 @@ class ReproductorAssetsTest {
     fun `un clip inexistente devuelve false, no lanza y no llama a alTerminar`() {
         val rep = ReproductorAssets(contexto)
         var llamado = false
-        assertFalse(rep.reproducir("audio/DE/no-existe.ogg") { llamado = true })
+        assertFalse(rep.reproducir("audio/DE/no-existe.ogg", 1.0f) { llamado = true })
         assertFalse(llamado)
         rep.detener()
         rep.liberar()
+    }
+
+    @Test
+    fun `la velocidad se aplica con PlaybackParams y conserva el tono`() {
+        var recibidos: android.media.PlaybackParams? = null
+        val efectiva = aplicarVelocidadSegura(0.6f, { recibidos = it })
+        assertEquals(0.6f, efectiva, 0f)
+        assertEquals(0.6f, recibidos!!.speed, 0.0001f)
+        assertEquals("el tono no cambia al bajar la velocidad", 1.0f, recibidos!!.pitch, 0.0001f)
+    }
+
+    @Test
+    fun `a velocidad normal no se toca nada`() {
+        var llamado = false
+        assertEquals(1.0f, aplicarVelocidadSegura(1.0f, { llamado = true }), 0f)
+        assertFalse(llamado)
+    }
+
+    @Test
+    fun `si el dispositivo rechaza la velocidad, suena a velocidad normal sin romper`() {
+        for (error in listOf<Exception>(IllegalArgumentException("no"), IllegalStateException("no"), UnsupportedOperationException("no"))) {
+            assertEquals(1.0f, aplicarVelocidadSegura(0.75f, { throw error }), 0f)
+        }
     }
 
     @Test
