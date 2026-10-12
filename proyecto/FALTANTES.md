@@ -1425,4 +1425,26 @@ Tres commits, uno por tarea, sobre la Ronda K y el tuteo de Traducciones (assets
 **Riesgo de fondo, sin plan todavía:** el contenido de 2028 en adelante y quién lo mantiene. Es el riesgo que Fer anotó al principio del proyecto («el proyecto muere en el año 2») y sigue sin respuesta.
 
 **Probar en el teléfono**: la 0.2.7 trajo edge-to-edge y **no se probó en ningún dispositivo real** (ni gestos contra botones, ni notch, ni horizontal). Lo primero que hay que mirar es el final de las listas de Biblioteca y Guardados.
+## 48. Audio, licencias de las voces y `mesero` (Overview, 12-oct-2026)
+
+**Decisiones de Fer (12-oct-2026):** `camarero` → **`mesero`** (o `mozo`, indistintamente); **ícono y pantalla de carga se posponen** hasta que haya un diseño que le guste; **los calendarios quedan como están** (resto de 2026 y todo 2027; el 2028 se arma durante 2027); el **edge-to-edge de la 0.2.7 probado en el teléfono y correcto**.
+
+**`mesero`:** hecho por Overview, 3 apariciones en 2 archivos (`de-A2-2027-T10-2`, `en-A2-2027` ×2). Cierra la decisión léxica abierta desde el prompt 14.
+
+### Por qué el audio nunca sonó
+No faltaba grabar: **los 8202 `.ogg` ya viajan en el APK** (51 MB) y `proyecto/audio-estado.json` sabía desde septiembre qué archivo corresponde a cada texto. Lo que faltaba era el **puente**: ese archivo es de trabajo y la app nunca lo leyó. Nadie lo notó porque el audio se produjo en una pista aparte y las rondas de Code siempre tuvieron otra cosa adelante.
+
+**Puente hecho por Overview:** `proyecto/tools/indice_audio.py` emite **`app/src/main/assets/audio/indice.json`** (544 KB, 8143 textos), con forma `{idioma: {clase: {texto exacto: archivo}}}`. `--comprobar` dice si quedó desactualizado. **Cobertura medida:** vocabulario 4055/4066 (DE) y 4088/4088 (EN); expresiones **100 %** en los dos; ejemplos 548/1066 (DE) y 477/1071 (EN), que son los marcados para audio. 59 `.ogg` quedaron huérfanos (textos editados después de grabar): inofensivos, el índice los ignora.
+
+### Licencias de las voces — deuda cerrada, con un problema
+Documentadas en `proyecto/docs/licencias-voces.md`. Piper es MIT y el repositorio de modelos también, **pero cada voz arrastra la licencia de su corpus**:
+- **`de_DE-thorsten-high` → CC0.** Limpia, se publica sin problema.
+- **`en_US-ryan-high` → CC BY-NC-SA 4.0.** La cláusula NC y la SA son **incompatibles con el CC BY-SA 4.0** del contenido.
+- **`en_US-lessac-high` → licencia de Blizzard 2013**: nominal, solo investigación, **sin uso comercial y sin redistribución**.
+
+**Consecuencia: los 4100 clips en inglés no se pueden publicar; los 4043 alemanes sí.** Candidata para regenerar el inglés: **`en_GB-alba`**, corpus **CC BY 4.0**, a cambio de acento británico. Antes de elegir hay que leer el `MODEL_CARD` de cada voz candidata, no el README: varias que parecen libres (`en_US-hfc_*`) también son CC BY-NC-SA.
+
+**Código Ronda M (prompt 28):** reproductor desde los assets sin permisos nuevos, botón de altavoz solo donde hay audio, y el **audio inglés detrás de un interruptor de compilación** (encendido en debug, apagado en release) hasta que se regeneren los clips. La velocidad lenta al 80 % existe pero **no está en el índice** (`audio-estado.json` guarda un archivo por texto): Code informa cuántos hay y Overview decide si amplía el índice.
+
+**Sobre el riesgo del «año 2»:** Fer lo corrige — el contenido no se congela, se sigue desarrollando durante el año 1 para tener el 2 y el 3. Queda como trabajo continuo, no como riesgo abierto.
 
