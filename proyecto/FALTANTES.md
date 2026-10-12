@@ -1397,3 +1397,32 @@ Tres commits, uno por tarea, sobre la Ronda K y el tuteo de Traducciones (assets
 **Tamaño del APK** (empaquetado limpio): **62 950 571 B**, **−1 260 B** sobre los 62 951 831 B de la Ronda K (el tuteo de Traducciones acortó algo los JSON; el código nuevo pesa lo mismo). Manifest sin `INTERNET` ni permisos nuevos. **1145 tests, 0 fallas.**
 
 **Opinión sobre el mínimo de 150 caracteres del `promptCorreccion` (no se tocó):** hay que **dejarlo**. Medido sobre los assets: la distribución de `promptCorreccion` en la lengua de cada ficha tiene su p10 entre 153 y 169 en 8 de los 10 pares (los otros dos, 188 y 165), **también en inglés** (EN A2 155, B1 150, C2 152), donde no hubo ningún cambio de registro; es decir, el mínimo funciona como piso de calidad parejo en los dos idiomas y los 25 alargados de alemán quedan dentro de esa misma banda baja (mediana de DE ~170 en A2/B1/C2). Bajar el piso no arregla nada, solo permitiría que cualquier prompt futuro se acorte hasta ser menos útil; alargar 25 frases en estilo de la casa fue el costo correcto. Lo que sí conviene vigilar es que los prompts más cortos (los 21 de DE A2 y 16 de DE C2 bajo 160) sigan siendo instrucciones completas y no solo piso cumplido.
+
+## 47. Verificación de Code Ronda L y estado de las deudas (12-oct-2026)
+
+**Verificación.** Sobre `origin/main` (HEAD `eec0fa7e`, 0.2.8 / versionCode 10): compositor 606 / 56 / 0, R1–R11 en 0, assets intactos e idénticos a la salida del compositor, manifest sin `INTERNET`. La ronda cierra los dos errores de los prompts 25 y 27 de Overview (el titular y el paréntesis). **Guía de testers: `.pdf` regenerado por Overview** (0.2.8, una hoja). `ConsignaDesafioEstiloTest` mira el `TextStyle` y no píxeles, y corre al 100 % y al 160 %: es la forma correcta de fijar una decisión de diseño sin atarla a un dispositivo.
+
+**La opinión de Code sobre el mínimo de 150 caracteres se acepta y la decisión queda cerrada:** se deja. Su argumento es mejor que el mío porque está medido — el p10 está entre 153 y 169 en 8 de los 10 pares, **también en inglés**, donde no hubo cambio de registro, así que el piso no es un artefacto del tuteo alemán. Los 25 `promptCorreccion` alargados se quedan. Queda su recomendación: vigilar que los más cortos (21 en DE A2 y 16 en DE C2, bajo 160) sigan siendo instrucciones completas.
+
+**Los títulos de sección en `titleLarge` negrita** (tres seguidos en el desafío) son lo único que queda pesado con la letra al 160 %. Code no los tocó porque son los de toda la app (`Seccion`). **Decisión de Overview: no se tocan por ahora**; si se aligeran, es una decisión de diseño para toda la app y va en una ronda propia, no colgada del desafío.
+
+### Estado de las deudas, al 12-oct-2026
+
+**Bloquean publicar:**
+- **Revisión por hablante nativo de fr, it y pt**: interfaz, textos de la tienda, nombres de las clases de verbo, estados vacíos y «sin resultados». Es la deuda más vieja y la única que no puede resolver ninguna conversación: necesita personas.
+- **Licencias de las voces Piper**: sin documentar en el repo. Las documenta Overview.
+- **Ícono y pantalla de carga**: Fer tiene que generar el arte con el prompt 16. El lugar donde se enchufan ya está documentado (25.1).
+- **Decisión léxica `camarero`** (`mesero` / `mozo`): abierta desde el prompt 14.
+
+**Funcionalidad incompleta, conocida y declarada:**
+- **Audio**: los `.ogg` están dentro del APK y no hay reproductor. «Acerca de» y la guía ya no lo prometen.
+- **Calendarios**: solo 2026 (parcial) y 2027. El índice de habilidades y la app lo reflejan.
+- **Tutorial y pantalla de bienvenida**: guion escrito (`docs/tutorial-guion.md`, sección 44), sin implementar.
+
+**Contenido, sin urgencia:**
+- Los ~9558 `*x*` sin « » (14.1), las 273 expresiones sin categoría, el maestro de traducción sin `erroresContrastivos` (20), los ejemplos con el verbo separado (5 de 108), los núcleos sin glosa propia (37), los 7 ítems con barra que pierden el segundo verbo (39), y `ein Hobby nachgehen` junto al correcto `einem Hobby nachgehen` (4 apariciones), que «Verbos» tiene que entregar en un parche aparte.
+
+**Riesgo de fondo, sin plan todavía:** el contenido de 2028 en adelante y quién lo mantiene. Es el riesgo que Fer anotó al principio del proyecto («el proyecto muere en el año 2») y sigue sin respuesta.
+
+**Probar en el teléfono**: la 0.2.7 trajo edge-to-edge y **no se probó en ningún dispositivo real** (ni gestos contra botones, ni notch, ni horizontal). Lo primero que hay que mirar es el final de las listas de Biblioteca y Guardados.
+
