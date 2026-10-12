@@ -34,6 +34,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
+import io.github.percati.lenguapp.audio.ClaseAudio
 import io.github.percati.lenguapp.datos.CategoriasUso
 import io.github.percati.lenguapp.datos.NombresI18n
 import io.github.percati.lenguapp.modelo.Idioma
@@ -101,6 +102,7 @@ fun GuardadosScreen(
     var criterioOrden by remember { mutableStateOf(CriterioOrdenGuardados.FECHA) }
     var direccionOrden by remember { mutableStateOf(DireccionOrden.DESCENDENTE) }
 
+    DetenerAudioAlSalir()
     val idioma = idiomaElegido
     val itemsIdioma = remember(items, idioma) { if (idioma == null) emptyList() else items.delIdioma(idioma) }
     val filtrosValidos = remember(itemsIdioma, filtros, indice) { itemsIdioma.normalizarFiltros(filtros, indice) }
@@ -304,6 +306,8 @@ private fun FilaGuardado(item: ItemGuardado, idiomaBase: Idioma, idiomaInterfaz:
         descripcionEstrella = etiquetaQuitarEstrella(idiomaInterfaz),
         onEstrella = onQuitar,
         onClick = if (enlazable) onClick else null,
+        claseAudio = if (item.tipo == TipoGuardado.VOCABULARIO) ClaseAudio.VOCABULARIO else ClaseAudio.EXPRESION,
+        idiomaInterfaz = idiomaInterfaz,
     )
 }
 

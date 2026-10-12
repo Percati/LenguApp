@@ -21,6 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
+import io.github.percati.lenguapp.audio.ClaseAudio
 import io.github.percati.lenguapp.modelo.Idioma
 
 /**
@@ -49,6 +50,9 @@ fun FilaPalabra(
     extra: (@Composable ColumnScope.() -> Unit)? = null,
     // false = fila de solo lectura, sin estrella (el nucleo verbal de la vista Verbos: no es un item, no se marca).
     conEstrella: Boolean = true,
+    // Audio (Ronda M): si el original tiene clip, un altavoz discreto justo a la izquierda de la estrella. null = sin audio.
+    claseAudio: ClaseAudio? = null,
+    idiomaInterfaz: Idioma = idiomaBase,
 ) {
     val espaciado = espaciadoActual()
     Column(modifier.fillMaxWidth()) {
@@ -76,6 +80,7 @@ fun FilaPalabra(
                 extra?.invoke(this)
             }
             // Estrella discreta: contorno fino en reposo, llena con el acento cuando esta guardada.
+            if (claseAudio != null) BotonAudio(idiomaAprendido, claseAudio, original, idiomaInterfaz)
             if (conEstrella) IconButton(onClick = onEstrella, modifier = Modifier.size(40.dp).testTag(tagEstrella)) {
                 Icon(
                     if (guardada) Icons.Filled.Star else Icons.Outlined.StarBorder,

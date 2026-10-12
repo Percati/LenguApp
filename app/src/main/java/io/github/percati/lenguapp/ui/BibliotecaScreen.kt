@@ -50,6 +50,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.unit.dp
+import io.github.percati.lenguapp.audio.ClaseAudio
 import io.github.percati.lenguapp.datos.CategoriasUso
 import io.github.percati.lenguapp.datos.NombresI18n
 import io.github.percati.lenguapp.modelo.Idioma
@@ -98,6 +99,7 @@ fun BibliotecaScreen(
     habilidades: (Idioma) -> IndiceHabilidades = { IndiceHabilidades.SinCalendario(0) },
     onAbrirFicha: (String) -> Unit = {},
 ) {
+    DetenerAudioAlSalir()
     val idiomas = remember(idiomasAprendidos) { idiomasAprendidos.keys.sortedBy { it.ordinal } }
     var idiomaElegido by remember(idiomas) { mutableStateOf(idiomas.firstOrNull()) }
     var nivelesPorIdioma by remember { mutableStateOf<Map<Idioma, Set<Nivel>>>(emptyMap()) }
@@ -323,6 +325,7 @@ fun BibliotecaScreen(
                 FilaBiblioteca(
                     item = item,
                     idiomaBase = idiomaBase,
+                    idiomaInterfaz = idiomaInterfaz,
                     guardada = claveBiblioteca(item.idioma, item.tipo, item.texto) in guardadas,
                     onAlternar = { onAlternar(item) },
                 )
@@ -359,6 +362,7 @@ private fun RamaCategorias(titulo: String, etiquetaQuitar: String, valores: List
 private fun FilaBiblioteca(
     item: ItemBiblioteca,
     idiomaBase: Idioma,
+    idiomaInterfaz: Idioma,
     guardada: Boolean,
     onAlternar: () -> Unit,
     extra: (@Composable ColumnScope.() -> Unit)? = null,
@@ -375,6 +379,8 @@ private fun FilaBiblioteca(
         descripcionEstrella = null,
         onEstrella = onAlternar,
         extra = extra,
+        claseAudio = if (item.tipo == TipoGuardado.VOCABULARIO) ClaseAudio.VOCABULARIO else ClaseAudio.EXPRESION,
+        idiomaInterfaz = idiomaInterfaz,
     )
 }
 
@@ -404,6 +410,7 @@ private fun FilaEntradaVerbo(
             FilaBiblioteca(
                 item = propio,
                 idiomaBase = idiomaBase,
+                idiomaInterfaz = idiomaInterfaz,
                 guardada = claveBiblioteca(propio.idioma, propio.tipo, propio.texto) in guardadas,
                 onAlternar = { onAlternar(propio) },
                 extra = extra,
@@ -421,6 +428,7 @@ private fun FilaEntradaVerbo(
                 FilaBiblioteca(
                     item = colocacion,
                     idiomaBase = idiomaBase,
+                    idiomaInterfaz = idiomaInterfaz,
                     guardada = claveBiblioteca(colocacion.idioma, colocacion.tipo, colocacion.texto) in guardadas,
                     onAlternar = { onAlternar(colocacion) },
                 )

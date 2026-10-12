@@ -45,7 +45,7 @@ enum class ClaveTexto {
     FUENTE_TITULO, FUENTE_LECTURA, FUENTE_CLARA, ACERCA_FUENTES_TEXTO,
     BIBLIOTECA_VISTA_VERBOS, VERBO_REFLEXIVO, VERBO_TRENNBAR, VERBO_MIT_PRAPOSITION, VERBO_MIT_DATIV, VERBO_PHRASAL_SEPARABLE, VERBO_PHRASAL_INSEPARABLE, VERBO_VERBO_PREPOSICION, VERBOS_VACIO,
     VERBOS_SIN_RESULTADOS, BUSCAR_BORRAR,
-    SECCION_CONTRAER, SECCION_EXPANDIR,
+    SECCION_CONTRAER, SECCION_EXPANDIR, AUDIO_ESCUCHAR, AUDIO_DETENER,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
 }
 
@@ -593,13 +593,24 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Le abilità più importanti di ogni livello ritornano durante l'anno con una profondità diversa, perché la ripetizione distanziata è la base del metodo. Quattro volte all'anno una settimana è dedicata al ripasso, e ogni fine settimana c'è una sfida di pratica orale. I contenuti vengono pubblicati in edizioni annuali. Puoi praticare tedesco o inglese, e l'interfaccia è disponibile in spagnolo, inglese, tedesco, francese, italiano e portoghese.",
         Idioma.PT to "As habilidades mais importantes de cada nível voltam ao longo do ano com profundidade diferente, porque a repetição espaçada é a base do método. Quatro vezes por ano uma semana é dedicada à revisão, e todo fim de semana há um desafio de prática oral. O conteúdo é publicado em edições anuais. Você pode praticar alemão ou inglês, e a interface está disponível em espanhol, inglês, alemão, francês, italiano e português.",
     ),
+    // Voces: solo se nombra la alemana (CC0). Las inglesas actuales no se pueden publicar (docs/licencias-voces.md) y su
+    // audio esta apagado en release; cuando se regeneren con una voz de corpus limpio hay que sumarla aca.
     ClaveTexto.ACERCA_CREDITOS_TEXTO to mapOf(
-        Idioma.ES to "Las voces sintéticas se generan con Piper: de_DE-thorsten-high (alemán) y en_US-ryan-high y en_US-lessac-high (inglés).",
-        Idioma.EN to "The synthetic voices are generated with Piper: de_DE-thorsten-high (German) and en_US-ryan-high and en_US-lessac-high (English).",
-        Idioma.DE to "Die synthetischen Stimmen werden mit Piper erzeugt: de_DE-thorsten-high (Deutsch) sowie en_US-ryan-high und en_US-lessac-high (Englisch).",
-        Idioma.FR to "Les voix synthétiques sont générées avec Piper : de_DE-thorsten-high (allemand) et en_US-ryan-high et en_US-lessac-high (anglais).",
-        Idioma.IT to "Le voci sintetiche sono generate con Piper: de_DE-thorsten-high (tedesco) e en_US-ryan-high e en_US-lessac-high (inglese).",
-        Idioma.PT to "As vozes sintéticas são geradas com o Piper: de_DE-thorsten-high (alemão) e en_US-ryan-high e en_US-lessac-high (inglês).",
+        Idioma.ES to "Audio generado con Piper (MIT). Voz alemana: Thorsten-Voice, CC0.",
+        Idioma.EN to "Audio generated with Piper (MIT). German voice: Thorsten-Voice, CC0.",
+        Idioma.DE to "Audio mit Piper (MIT) erzeugt. Deutsche Stimme: Thorsten-Voice, CC0.",
+        Idioma.FR to "Audio généré avec Piper (MIT). Voix allemande : Thorsten-Voice, CC0.",
+        Idioma.IT to "Audio generato con Piper (MIT). Voce tedesca: Thorsten-Voice, CC0.",
+        Idioma.PT to "Áudio gerado com o Piper (MIT). Voz alemã: Thorsten-Voice, CC0.",
+    ),
+    // --- Audio (Ronda M): contentDescription del boton de altavoz ---
+    ClaveTexto.AUDIO_ESCUCHAR to mapOf(
+        Idioma.ES to "Escuchar", Idioma.EN to "Listen", Idioma.DE to "Anhören",
+        Idioma.FR to "Écouter", Idioma.IT to "Ascolta", Idioma.PT to "Ouvir",
+    ),
+    ClaveTexto.AUDIO_DETENER to mapOf(
+        Idioma.ES to "Detener", Idioma.EN to "Stop", Idioma.DE to "Stopp",
+        Idioma.FR to "Arrêter", Idioma.IT to "Interrompi", Idioma.PT to "Parar",
     ),
     ClaveTexto.ACERCA_PRUEBA to mapOf(
         Idioma.ES to "Esta es una versión de prueba; tus comentarios ayudan a mejorarla.",
@@ -1038,6 +1049,8 @@ fun etiquetaAcercaQueEsTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto
 fun etiquetaAcercaComoTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TITULO, idiomaInterfaz)
 fun textoAcercaComo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TEXTO, idiomaInterfaz)
 fun textoAcercaCreditos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_CREDITOS_TEXTO, idiomaInterfaz)
+fun descripcionAudioEscuchar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.AUDIO_ESCUCHAR, idiomaInterfaz)
+fun descripcionAudioDetener(idiomaInterfaz: Idioma): String = texto(ClaveTexto.AUDIO_DETENER, idiomaInterfaz)
 fun textoAcercaPrueba(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_PRUEBA, idiomaInterfaz)
 fun textoAcercaQueEs(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_QUE_ES_TEXTO, idiomaInterfaz)
 fun etiquetaAcercaPrivacidadTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_PRIVACIDAD_TITULO, idiomaInterfaz)

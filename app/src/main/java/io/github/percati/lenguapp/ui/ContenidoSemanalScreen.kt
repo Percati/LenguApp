@@ -35,6 +35,7 @@ import androidx.compose.material.icons.filled.Replay
 import androidx.compose.material.icons.filled.SwapHoriz
 import androidx.compose.material.icons.filled.Timer
 import androidx.compose.ui.graphics.vector.ImageVector
+import io.github.percati.lenguapp.audio.ClaseAudio
 import io.github.percati.lenguapp.datos.NombresI18n
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.widthIn
@@ -227,6 +228,7 @@ private fun FichaContenido(
     // dura #13 explicita ("arranca en off, nunca se persiste"). Solo se
     // ofrece dentro de la ventana sabado-domingo.
     var modoDesafio by remember(ficha.id) { mutableStateOf(false) }
+    DetenerAudioAlSalir(ficha.id)
     val enFinDeSemana = esFinDeSemana(fecha)
 
     Column(modifier = modifier.fillMaxSize()) {
@@ -308,7 +310,7 @@ private fun FichaContenido(
                             } else {
                                 null
                             }
-                            EjemploFila(original, traduccion)
+                            EjemploFila(original, traduccion, ficha.idioma, idiomaInterfaz)
                         }
                     }
 
@@ -345,14 +347,14 @@ private fun FichaContenido(
                         Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreItems)) {
                             // Las glosas siempre en el idioma de app: el switch
                             // cambia la prosa, no la traduccion del vocabulario.
-                            ficha.vocabulario.forEach { VocabularioFila(it, idiomaBase, ficha.idioma, estadoGuardados) }
+                            ficha.vocabulario.forEach { VocabularioFila(it, idiomaBase, ficha.idioma, estadoGuardados, idiomaInterfaz) }
                         }
                     }
 
                     SeccionPlegable(titulo = "${et("redemittel")} (${ficha.redemittel.size})", idiomaInterfaz = idiomaInterfaz) {
                         Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreItems)) {
                             ficha.redemittel.forEach {
-                                RedemittelFila(it, idiomaBase, idiomaMostrado, ficha.idioma, estadoGuardados)
+                                RedemittelFila(it, idiomaBase, idiomaMostrado, ficha.idioma, estadoGuardados, idiomaInterfaz)
                             }
                         }
                     }
@@ -423,9 +425,13 @@ private fun SwitchTraduccion(activo: Boolean, idiomaInterfaz: Idioma, idiomaDest
  * (mas chica, color secundario, sin vineta propia).
  */
 @Composable
-private fun EjemploFila(original: String, traduccion: String?) {
+private fun EjemploFila(original: String, traduccion: String?, idiomaAprendido: Idioma, idiomaInterfaz: Idioma) {
     Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
-        Vinieta(original)
+        // Solo los ejemplos con clip llevan altavoz (los marcados para audio); los demas, la viñeta de siempre.
+        Row(verticalAlignment = Alignment.CenterVertically) {
+            Box(Modifier.weight(1f)) { Vinieta(original) }
+            BotonAudio(idiomaAprendido, ClaseAudio.EJEMPLO, original.trim(), idiomaInterfaz, tamano = 36.dp)
+        }
         if (traduccion != null) {
             Text(
                 textoConMarcado(traduccion, angulares = true),
@@ -637,7 +643,7 @@ private fun EtiquetaVariante(variante: String) {
 }
 
 @Composable
-private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma, idiomaAprendido: Idioma, estadoGuardados: EstadoGuardados) {
+private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma, idiomaAprendido: Idioma, estadoGuardados: EstadoGuardados, idiomaInterfaz: Idioma) {
     // Palabra y traduccion van pegadas (son una unidad); lo demas del item
     // (reccion, nota, insignias) tiene un poco mas de aire, y entre items la
     // separacion es mayor todavia (ESPACIO_ENTRE_ITEMS, en quien llama).
@@ -655,6 +661,7 @@ private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma, idiomaApr
                 fontWeight = if (item.prioridad == Prioridad.NUCLEO) FontWeight.Bold else FontWeight.Normal,
                 modifier = Modifier.weight(1f),
             )
+            BotonAudio(idiomaAprendido, ClaseAudio.VOCABULARIO, item.item.trim(), idiomaInterfaz, tamano = 36.dp)
             BotonGuardar(
                 guardado = claveGuardado(TipoGuardado.VOCABULARIO, item.item) in estadoGuardados.guardados,
                 onClick = {
@@ -698,6 +705,7 @@ private fun RedemittelFila(
     idiomaMostrado: Idioma,
     idiomaAprendido: Idioma,
     estadoGuardados: EstadoGuardados,
+    idiomaInterfaz: Idioma,
 ) {
     // Orden: expresion, su traduccion (pegadas), y la funcion debajo de la
     // traduccion -- antes la funcion quedaba en el medio, entre las dos.
@@ -710,6 +718,7 @@ private fun RedemittelFila(
                     fontWeight = FontWeight.Medium,
                     modifier = Modifier.weight(1f),
                 )
+                BotonAudio(idiomaAprendido, ClaseAudio.EXPRESION, item.expresion.trim(), idiomaInterfaz, tamano = 36.dp)
                 BotonGuardar(
                     guardado = claveGuardado(TipoGuardado.EXPRESION, item.expresion) in estadoGuardados.guardados,
                     onClick = {
