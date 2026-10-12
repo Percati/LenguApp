@@ -41,6 +41,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
@@ -59,6 +60,8 @@ import io.github.percati.lenguapp.presentacion.avisoGlosasSoloEnEspanol
  * sistema", sin nombres de campo en el texto visible (AJUSTES-FASE-6.md,
  * bloques A-C).
  */
+const val TAG_VER_BIENVENIDA = "ver-bienvenida"
+
 @Composable
 fun AjustesScreen(
     ajustes: Ajustes,
@@ -70,6 +73,8 @@ fun AjustesScreen(
     modifier: Modifier = Modifier,
     // Acerca de vive aca (no en la pantalla principal, que gana alto para el contenido).
     onAcercaDe: () -> Unit = {},
+    // Volver a ver la bienvenida (Ronda N): la fila va junto a «Acerca de».
+    onVerBienvenida: () -> Unit = {},
 ) {
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()).finDeScrollSobreBarras().padding(16.dp),
@@ -80,7 +85,7 @@ fun AjustesScreen(
             Text(etiquetaAjustes(idiomaAplicacionEfectivo), style = MaterialTheme.typography.headlineSmall)
         }
 
-        EncabezadoApp(idiomaAplicacionEfectivo, onAcercaDe)
+        EncabezadoApp(idiomaAplicacionEfectivo, onAcercaDe, onVerBienvenida)
 
         SelectorIdiomasAprendidos(
             idiomasAprendidos = ajustes.idiomasAprendidos,
@@ -140,7 +145,7 @@ fun AjustesScreen(
  * y C1 conviviendo hay que distinguir cuales existen de verdad.
  */
 @Composable
-private fun SelectorIdiomasAprendidos(
+internal fun SelectorIdiomasAprendidos(
     idiomasAprendidos: Map<Idioma, Nivel>,
     idiomasConContenido: Set<Idioma>,
     nivelesConContenido: Map<Idioma, Set<Nivel>>,
@@ -322,7 +327,7 @@ private fun SelectorModoTema(idiomaInterfaz: Idioma, modoElegido: ModoTema, onEl
  * curso: fija lo aprendido en uno) y la fila "Acerca de". Antes vivian en la pantalla principal.
  */
 @Composable
-private fun EncabezadoApp(idiomaInterfaz: Idioma, onAcercaDe: () -> Unit) {
+private fun EncabezadoApp(idiomaInterfaz: Idioma, onAcercaDe: () -> Unit, onVerBienvenida: () -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
         Text(NOMBRE_APP, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
         Text(
@@ -335,6 +340,13 @@ private fun EncabezadoApp(idiomaInterfaz: Idioma, onAcercaDe: () -> Unit) {
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Text(etiquetaAcercaDe(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
+        }
+        Row(
+            modifier = Modifier.fillMaxWidth().clickable(onClick = onVerBienvenida).padding(vertical = 8.dp).testTag(TAG_VER_BIENVENIDA),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text(etiquetaVerBienvenida(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
             Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
         }
     }

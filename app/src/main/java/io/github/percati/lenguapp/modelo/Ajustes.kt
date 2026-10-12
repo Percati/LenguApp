@@ -31,6 +31,10 @@ data class Ajustes(
     val modoTema: ModoTema = ModoTema.SEGUN_SISTEMA,
     // Tipografia (Ronda G): independiente del tema de color.
     val fuente: FuenteTema = FuenteTema.SISTEMA,
+    // Pantalla de bienvenida (Ronda N): es un AJUSTE (regla dura 4: ajustes si, progreso no), no viaja en la copia de
+    // seguridad de Guardados. El valor por omision del modelo es true para que las pantallas y los tests que arman un
+    // Ajustes() no abran la bienvenida; lo que decide el primer arranque es el repositorio: sin clave guardada, false.
+    val bienvenidaCompletada: Boolean = true,
 )
 
 /**

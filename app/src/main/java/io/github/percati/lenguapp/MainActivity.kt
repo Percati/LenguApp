@@ -91,6 +91,7 @@ import io.github.percati.lenguapp.audio.ReproductorAssets
 import io.github.percati.lenguapp.audio.SinAudio
 import io.github.percati.lenguapp.audio.cargarIndiceAudioDesdeAssets
 import io.github.percati.lenguapp.ui.AjustarIconosDeBarras
+import io.github.percati.lenguapp.ui.BienvenidaScreen
 import io.github.percati.lenguapp.ui.TemaLenguApp
 import io.github.percati.lenguapp.ui.margenesSuperiorYLateralesDelSistema
 import io.github.percati.lenguapp.ui.claveGuardado
@@ -266,6 +267,8 @@ internal fun LenguAppApp(
     var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
     var idiomaActivoElegido by rememberSaveable { mutableStateOf<String?>(null) }
     var fichaGuardadaAbiertaId by rememberSaveable { mutableStateOf<String?>(null) }
+    // «Ver la bienvenida otra vez»: el idioma ya se eligio una vez, asi que no se vuelve a forzar la eleccion.
+    var bienvenidaRepetida by rememberSaveable { mutableStateOf(false) }
     val fechaVista = remember(fechaVistaIso) { LocalDate.parse(fechaVistaIso) }
     val navController = rememberNavController()
 
@@ -407,7 +410,19 @@ internal fun LenguAppApp(
             // animaciones con la configuracion del sistema "Quitar animaciones" (duracion 0 = cambio
             // instantaneo): no hace falta leerla a mano.
             // Arriba y a los costados (barra de estado, notch): una vez, aca. Abajo lo resuelve cada scroll.
-            NavHost(
+            // Primer arranque (o «ver la bienvenida otra vez» desde Ajustes): la bienvenida ocupa el lugar de todo lo demas.
+            if (!ajustes.bienvenidaCompletada) {
+                BienvenidaScreen(
+                    ajustes = ajustes,
+                    idiomasConContenido = idiomasConContenido,
+                    nivelesConContenido = nivelesConContenido,
+                    idiomaAplicacionEfectivo = idiomaAplicacion,
+                    onAjustesCambiados = ::actualizarAjustes,
+                    onEmpezar = { actualizarAjustes(ajustes.copy(bienvenidaCompletada = true)) },
+                    modifier = Modifier.margenesSuperiorYLateralesDelSistema(),
+                    yaEligioIdioma = bienvenidaRepetida,
+                )
+            } else NavHost(
                 navController = navController,
                 startDestination = DESTINO_PRINCIPAL,
                 modifier = Modifier.margenesSuperiorYLateralesDelSistema(),
@@ -445,6 +460,10 @@ internal fun LenguAppApp(
                         idiomaAplicacionEfectivo = idiomaAplicacion,
                         onAjustesCambiados = ::actualizarAjustes,
                         onAcercaDe = { navController.navigate(DESTINO_ACERCA) },
+                        onVerBienvenida = {
+                            bienvenidaRepetida = true
+                            actualizarAjustes(ajustes.copy(bienvenidaCompletada = false))
+                        },
                         onVolver = { navController.popBackStack() },
                     )
                 }

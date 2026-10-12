@@ -380,7 +380,7 @@ class LenguAppAppTest {
         composeTestRule.onNodeWithText("Acerca de").performClick()
 
         composeTestRule.onNodeWithText("Qué es y qué no es").assertExists()
-        composeTestRule.onNode(hasText("No es un curso", substring = true)).assertExists()
+        composeTestRule.onNode(hasText("LenguApp no enseña un idioma", substring = true)).assertExists()
         composeTestRule.onNode(hasText("GPL-3.0", substring = true)).assertExists()
         composeTestRule.onNode(hasText("CC BY-SA 4.0", substring = true)).assertExists()
         composeTestRule.onNodeWithText("Versión 0.2.0").assertExists()

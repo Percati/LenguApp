@@ -46,6 +46,7 @@ enum class ClaveTexto {
     BIBLIOTECA_VISTA_VERBOS, VERBO_REFLEXIVO, VERBO_TRENNBAR, VERBO_MIT_PRAPOSITION, VERBO_MIT_DATIV, VERBO_PHRASAL_SEPARABLE, VERBO_PHRASAL_INSEPARABLE, VERBO_VERBO_PREPOSICION, VERBOS_VACIO,
     VERBOS_SIN_RESULTADOS, BUSCAR_BORRAR,
     SECCION_CONTRAER, SECCION_EXPANDIR, AUDIO_ESCUCHAR, AUDIO_DETENER,
+    BIENVENIDA_TITULO, BIENVENIDA_IDIOMA_INICIAL, BIENVENIDA_ELEGIR_PRACTICA, BIENVENIDA_EMPEZAR, BIENVENIDA_VER_DE_NUEVO,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
 }
 
@@ -644,13 +645,38 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Cosa è e cosa non è",
         Idioma.PT to "O que é e o que não é",
     ),
+    // «Que es esto y que no es»: el texto mas importante de la app. UNA sola clave para dos lugares: la pantalla de
+    // bienvenida (Ronda N) y «Acerca de». Con la Ronda N reemplaza al parrafo anterior de «Acerca de».
     ClaveTexto.ACERCA_QUE_ES_TEXTO to mapOf(
-        Idioma.ES to "LenguApp ofrece cada semana una ficha de práctica de alemán o de inglés, entre los niveles A2 y C2. Cada ficha propone una habilidad y un tema, con vocabulario y expresiones, una misión breve, microtareas y un texto para que una inteligencia artificial corrija tu producción. No es un curso: no enseña desde cero, sino que consolida lo que ya aprendiste en un curso de tu nivel.",
-        Idioma.EN to "LenguApp offers a weekly practice sheet in German or English, between levels A2 and C2. Each sheet proposes a skill and a topic, with vocabulary and expressions, a short mission, micro-tasks and a text for an artificial intelligence to correct your output. It is not a course: it does not teach from scratch, but consolidates what you already learned in a course at your level.",
-        Idioma.DE to "LenguApp bietet jede Woche ein Übungsblatt für Deutsch oder Englisch, zwischen den Niveaus A2 und C2. Jedes Blatt enthält eine Fähigkeit und ein Thema, mit Wortschatz und Redewendungen, einer kurzen Mission, Mikroaufgaben und einem Text, mit dem eine künstliche Intelligenz deine Sprachproduktion korrigieren kann. Es ist kein Kurs: Es vermittelt nichts von Grund auf, sondern festigt, was du in einem Kurs auf deinem Niveau schon gelernt hast.",
-        Idioma.FR to "LenguApp propose chaque semaine une fiche d'entraînement en allemand ou en anglais, entre les niveaux A2 et C2. Chaque fiche présente une compétence et un thème, avec du vocabulaire et des expressions, une courte mission, des microtâches et un texte permettant à une intelligence artificielle de corriger ta production. Ce n'est pas un cours : l'application n'enseigne pas à partir de zéro, elle consolide ce que tu as déjà appris dans un cours de ton niveau.",
-        Idioma.IT to "LenguApp propone ogni settimana una scheda di pratica di tedesco o di inglese, tra i livelli A2 e C2. Ogni scheda presenta un'abilità e un tema, con vocabolario ed espressioni, una breve missione, microattività e un testo con cui un'intelligenza artificiale può correggere la tua produzione. Non è un corso: non insegna da zero, ma consolida ciò che hai già imparato in un corso del tuo livello.",
-        Idioma.PT to "O LenguApp oferece toda semana uma ficha de prática de alemão ou de inglês, entre os níveis A2 e C2. Cada ficha propõe uma habilidade e um tema, com vocabulário e expressões, uma missão curta, microtarefas e um texto para que uma inteligência artificial corrija a sua produção. Não é um curso: não ensina do zero, mas consolida o que você já aprendeu em um curso do seu nível.",
+        Idioma.ES to "LenguApp no enseña un idioma: te hace practicar el que ya estás aprendiendo. Cada semana te propone un tema, una habilidad y un desafío para producir, no para estudiar. Si estás empezando un nivel, haz un curso de ese nivel; esta app es para que lo que aprendes ahí no se te quede en el cuaderno.",
+        Idioma.EN to "LenguApp doesn't teach you a language: it makes you practise the one you're already learning. Every week it gives you a topic, a skill and a challenge to produce language, not to study it. If you're just starting a level, take a course at that level; this app is there so that what you learn in it doesn't stay in your notebook.",
+        Idioma.DE to "LenguApp bringt dir keine Sprache bei: Es lässt dich die Sprache üben, die du schon lernst. Jede Woche schlägt es dir ein Thema, eine Fähigkeit und eine Herausforderung vor, bei der du Sprache selbst hervorbringst, statt zu lernen. Wenn du ein Niveau gerade erst beginnst, besuche einen Kurs auf diesem Niveau; diese App sorgt dafür, dass das, was du dort lernst, nicht im Heft stehen bleibt.",
+        Idioma.FR to "LenguApp n'enseigne pas une langue : elle te fait pratiquer celle que tu apprends déjà. Chaque semaine, elle te propose un thème, une compétence et un défi pour produire, pas pour étudier. Si tu débutes un niveau, suis un cours de ce niveau ; cette appli sert à ce que ce que tu y apprends ne reste pas dans ton cahier.",
+        Idioma.IT to "LenguApp non insegna una lingua: ti fa praticare quella che stai già imparando. Ogni settimana ti propone un tema, un'abilità e una sfida per produrre, non per studiare. Se stai iniziando un livello, segui un corso di quel livello; questa app serve a fare in modo che quello che impari lì non resti sul quaderno.",
+        Idioma.PT to "O LenguApp não ensina um idioma: ele faz você praticar o que já está aprendendo. Toda semana propõe um tema, uma habilidade e um desafio para produzir, não para estudar. Se você está começando um nível, faça um curso desse nível; este app existe para que o que você aprende lá não fique no caderno.",
+    ),
+    // --- Bienvenida (Ronda N) ---
+    ClaveTexto.BIENVENIDA_TITULO to mapOf(
+        Idioma.ES to "Te damos la bienvenida", Idioma.EN to "Welcome", Idioma.DE to "Willkommen",
+        Idioma.FR to "Bienvenue", Idioma.IT to "Ti diamo il benvenuto", Idioma.PT to "Boas-vindas",
+    ),
+    // Antes de elegir el idioma la app todavia no sabe en cual hablarte: el rotulo es el mismo en los 6.
+    ClaveTexto.BIENVENIDA_IDIOMA_INICIAL to Idioma.entries.associateWith { "Idioma · Language · Sprache · Langue · Lingua · Idioma" },
+    ClaveTexto.BIENVENIDA_ELEGIR_PRACTICA to mapOf(
+        Idioma.ES to "Elige al menos un idioma para practicar.",
+        Idioma.EN to "Choose at least one language to practise.",
+        Idioma.DE to "Wähle mindestens eine Sprache zum Üben.",
+        Idioma.FR to "Choisis au moins une langue à pratiquer.",
+        Idioma.IT to "Scegli almeno una lingua da praticare.",
+        Idioma.PT to "Escolha pelo menos um idioma para praticar.",
+    ),
+    ClaveTexto.BIENVENIDA_EMPEZAR to mapOf(
+        Idioma.ES to "Empezar", Idioma.EN to "Start", Idioma.DE to "Los geht's",
+        Idioma.FR to "Commencer", Idioma.IT to "Inizia", Idioma.PT to "Começar",
+    ),
+    ClaveTexto.BIENVENIDA_VER_DE_NUEVO to mapOf(
+        Idioma.ES to "Ver la bienvenida otra vez", Idioma.EN to "See the welcome screen again", Idioma.DE to "Willkommensbildschirm erneut ansehen",
+        Idioma.FR to "Revoir l'écran de bienvenue", Idioma.IT to "Rivedi la schermata di benvenuto", Idioma.PT to "Ver as boas-vindas de novo",
     ),
     ClaveTexto.ACERCA_PRIVACIDAD_TITULO to mapOf(
         Idioma.ES to "Privacidad",
@@ -1049,6 +1075,11 @@ fun etiquetaAcercaQueEsTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto
 fun etiquetaAcercaComoTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TITULO, idiomaInterfaz)
 fun textoAcercaComo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TEXTO, idiomaInterfaz)
 fun textoAcercaCreditos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_CREDITOS_TEXTO, idiomaInterfaz)
+fun etiquetaBienvenidaTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIENVENIDA_TITULO, idiomaInterfaz)
+fun etiquetaBienvenidaIdiomaInicial(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIENVENIDA_IDIOMA_INICIAL, idiomaInterfaz)
+fun etiquetaBienvenidaElegirPractica(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIENVENIDA_ELEGIR_PRACTICA, idiomaInterfaz)
+fun etiquetaBienvenidaEmpezar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIENVENIDA_EMPEZAR, idiomaInterfaz)
+fun etiquetaVerBienvenida(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIENVENIDA_VER_DE_NUEVO, idiomaInterfaz)
 fun descripcionAudioEscuchar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.AUDIO_ESCUCHAR, idiomaInterfaz)
 fun descripcionAudioDetener(idiomaInterfaz: Idioma): String = texto(ClaveTexto.AUDIO_DETENER, idiomaInterfaz)
 fun textoAcercaPrueba(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_PRUEBA, idiomaInterfaz)
