@@ -1547,3 +1547,15 @@ Verificado el parche anterior sobre `origin/main` (HEAD `d6d2435d`): las 6 descr
 
 **Sin revisión de nativo: fr, it y pt**, igual que el resto de los textos de esos idiomas. El inglés y el alemán los puede juzgar Fer. Es la misma deuda de la sección 52, ahora también en la guía.
 
+## 54. Velocidad del audio — la decisión de la sección 50 se revierte (12-oct-2026)
+
+Fer probó la 0.3.0 y pidió escuchar más lento, **entre el 60 % y el 100 %**.
+
+**La sección 50 decía que no se hacía, y estaba mal razonada.** El argumento era el costo: generar ~8143 clips lentos (~51 MB) sobre un APK de 63 MB. Eso vale para clips **pregrabados**, que es como lo planteó el manifiesto original, pero **no hace falta ninguno**: `MediaPlayer` cambia la velocidad en el momento con `setPlaybackParams(PlaybackParams().setSpeed(x))`, disponible desde **API 23**, y el `minSdk` del proyecto es **26**. Cero archivos nuevos, cero MB, sin tocar el índice ni el contenido. Ni Overview ni Code lo miraron en su momento: se discutió «generar clips» en vez de «cambiar la velocidad».
+
+**Ronda O (prompt 30):** velocidad variable en `ReproductorAssets` (con `PlaybackParams` aplicado **dentro de `setOnPreparedListener`**, porque antes de preparar lanza `IllegalStateException`), **cuatro pasos fijos — 60 %, 75 %, 90 % y 100 %**, por omisión 100 %, elegidos en **Ajustes** y guardados como un ajuste más (regla dura 4; no viaja en la copia de seguridad). Si el dispositivo rechaza la velocidad, se reproduce al 100 % en vez de callar. Versión **0.3.1**.
+
+**A confirmar en el informe de Code:** que el tono se conserve al bajar la velocidad, y **si al 60 % la voz sintética sigue siendo entendible** — si no, el paso más lento sube a 70 %.
+
+**Nota de proceso para la guía de testers:** ahora son seis archivos (sección 53). Code actualiza **solo el español**, que es el canónico y el que lee el test; **Overview retraduce los otros cinco y regenera los seis `.pdf`**. Si esto se olvida una vez, las cinco traducciones quedan desfasadas sin que nada avise.
+
