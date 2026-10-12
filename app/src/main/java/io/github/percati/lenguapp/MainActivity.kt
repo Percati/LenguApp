@@ -87,6 +87,7 @@ import io.github.percati.lenguapp.ui.GuardadosScreen
 import io.github.percati.lenguapp.ui.PantallaSemana
 import io.github.percati.lenguapp.audio.ControlAudio
 import io.github.percati.lenguapp.audio.LocalControlAudio
+import io.github.percati.lenguapp.audio.LocalVelocidadAudio
 import io.github.percati.lenguapp.audio.ReproductorAssets
 import io.github.percati.lenguapp.audio.SinAudio
 import io.github.percati.lenguapp.audio.cargarIndiceAudioDesdeAssets
@@ -395,7 +396,7 @@ internal fun LenguAppApp(
         onGuardarAjustes(nuevos)
     }
 
-    CompositionLocalProvider(LocalControlAudio provides controlAudio) {
+    CompositionLocalProvider(LocalControlAudio provides controlAudio, LocalVelocidadAudio provides ajustes.velocidadAudio) {
     TemaLenguApp(familiaTema = ajustes.familiaTema, modoTema = ajustes.modoTema, fuente = ajustes.fuente) {
         // Iconos de las barras del sistema legibles sobre el fondo del tema elegido (claro/oscuro, los 4 temas y el dinamico).
         AjustarIconosDeBarras(MaterialTheme.colorScheme.background)

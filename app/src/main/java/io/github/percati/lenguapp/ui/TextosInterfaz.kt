@@ -46,6 +46,7 @@ enum class ClaveTexto {
     BIBLIOTECA_VISTA_VERBOS, VERBO_REFLEXIVO, VERBO_TRENNBAR, VERBO_MIT_PRAPOSITION, VERBO_MIT_DATIV, VERBO_PHRASAL_SEPARABLE, VERBO_PHRASAL_INSEPARABLE, VERBO_VERBO_PREPOSICION, VERBOS_VACIO,
     VERBOS_SIN_RESULTADOS, BUSCAR_BORRAR,
     SECCION_CONTRAER, SECCION_EXPANDIR, AUDIO_ESCUCHAR, AUDIO_DETENER,
+    VELOCIDAD_AUDIO_TITULO, VELOCIDAD_AUDIO_AYUDA, VELOCIDAD_AUDIO_VALOR,
     BIENVENIDA_TITULO, BIENVENIDA_IDIOMA_INICIAL, BIENVENIDA_ELEGIR_PRACTICA, BIENVENIDA_EMPEZAR, BIENVENIDA_VER_DE_NUEVO,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
 }
@@ -655,6 +656,24 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "LenguApp non insegna una lingua: ti fa praticare quella che stai già imparando. Ogni settimana ti propone un tema, un'abilità e una sfida per produrre, non per studiare. Se stai iniziando un livello, segui un corso di quel livello; questa app serve a fare in modo che quello che impari lì non resti sul quaderno.",
         Idioma.PT to "O LenguApp não ensina um idioma: ele faz você praticar o que já está aprendendo. Toda semana propõe um tema, uma habilidade e um desafio para produzir, não para estudar. Se você está começando um nível, faça um curso desse nível; este app existe para que o que você aprende lá não fique no caderno.",
     ),
+    // --- Velocidad del audio (Ronda O) ---
+    ClaveTexto.VELOCIDAD_AUDIO_TITULO to mapOf(
+        Idioma.ES to "Velocidad del audio", Idioma.EN to "Audio speed", Idioma.DE to "Audiogeschwindigkeit",
+        Idioma.FR to "Vitesse de l'audio", Idioma.IT to "Velocità dell'audio", Idioma.PT to "Velocidade do áudio",
+    ),
+    ClaveTexto.VELOCIDAD_AUDIO_AYUDA to mapOf(
+        Idioma.ES to "Para escuchar las palabras y las frases más despacio.",
+        Idioma.EN to "To hear words and phrases more slowly.",
+        Idioma.DE to "Um Wörter und Sätze langsamer zu hören.",
+        Idioma.FR to "Pour écouter les mots et les phrases plus lentement.",
+        Idioma.IT to "Per ascoltare parole e frasi più lentamente.",
+        Idioma.PT to "Para ouvir as palavras e as frases mais devagar.",
+    ),
+    // El porcentaje se escribe como en cada idioma (con o sin espacio antes del %).
+    ClaveTexto.VELOCIDAD_AUDIO_VALOR to mapOf(
+        Idioma.ES to "{n}\u00A0%", Idioma.EN to "{n}%", Idioma.DE to "{n}\u00A0%",
+        Idioma.FR to "{n}\u00A0%", Idioma.IT to "{n}%", Idioma.PT to "{n}%",
+    ),
     // --- Bienvenida (Ronda N) ---
     ClaveTexto.BIENVENIDA_TITULO to mapOf(
         Idioma.ES to "Te damos la bienvenida", Idioma.EN to "Welcome", Idioma.DE to "Willkommen",
@@ -1075,6 +1094,10 @@ fun etiquetaAcercaQueEsTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto
 fun etiquetaAcercaComoTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TITULO, idiomaInterfaz)
 fun textoAcercaComo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TEXTO, idiomaInterfaz)
 fun textoAcercaCreditos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_CREDITOS_TEXTO, idiomaInterfaz)
+fun etiquetaVelocidadAudio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.VELOCIDAD_AUDIO_TITULO, idiomaInterfaz)
+fun ayudaVelocidadAudio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.VELOCIDAD_AUDIO_AYUDA, idiomaInterfaz)
+fun textoVelocidadAudio(velocidad: io.github.percati.lenguapp.modelo.VelocidadAudio, idiomaInterfaz: Idioma): String =
+    interpolar(texto(ClaveTexto.VELOCIDAD_AUDIO_VALOR, idiomaInterfaz), "n" to velocidad.porcentaje.toString())
 fun etiquetaBienvenidaTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIENVENIDA_TITULO, idiomaInterfaz)
 fun etiquetaBienvenidaIdiomaInicial(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIENVENIDA_IDIOMA_INICIAL, idiomaInterfaz)
 fun etiquetaBienvenidaElegirPractica(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIENVENIDA_ELEGIR_PRACTICA, idiomaInterfaz)

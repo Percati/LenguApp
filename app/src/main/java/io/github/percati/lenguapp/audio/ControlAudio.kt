@@ -5,6 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.staticCompositionLocalOf
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.VelocidadAudio
 
 /** Velocidad de reproduccion normal (100 %). */
 const val VELOCIDAD_NORMAL = 1.0f
@@ -74,6 +75,9 @@ open class ControlAudio(
 
 /** El audio de la app: lo provee `LenguAppApp`. Por omision no hay (ninguna pantalla dibuja un boton de audio). */
 val LocalControlAudio = staticCompositionLocalOf<ControlAudio> { SinAudio }
+
+/** La velocidad vigente del audio (el ajuste de Ajustes): la lee cada boton al tocarse y para mostrar si no es normal. */
+val LocalVelocidadAudio = staticCompositionLocalOf { VelocidadAudio.NORMAL }
 
 /** Sin audio: ningun texto tiene clip, asi que ninguna pantalla dibuja el boton. Es el valor por omision. */
 object SinAudio : ControlAudio()

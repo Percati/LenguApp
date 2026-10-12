@@ -35,7 +35,19 @@ data class Ajustes(
     // seguridad de Guardados. El valor por omision del modelo es true para que las pantallas y los tests que arman un
     // Ajustes() no abran la bienvenida; lo que decide el primer arranque es el repositorio: sin clave guardada, false.
     val bienvenidaCompletada: Boolean = true,
+    // Velocidad del audio (Ronda O): preferencia de uso, no progreso (regla dura 4). No viaja en la copia de seguridad.
+    val velocidadAudio: VelocidadAudio = VelocidadAudio.NORMAL,
 )
+
+/**
+ * Los cuatro pasos de la velocidad del audio: 60, 75, 90 y 100 %. Pasos fijos y no un deslizador: se toca una vez y se
+ * lee de un vistazo. `factor` es lo que recibe el reproductor (1,0 = normal; el tono se conserva).
+ */
+enum class VelocidadAudio(val porcentaje: Int) {
+    LENTA(60), MEDIA(75), CASI_NORMAL(90), NORMAL(100);
+
+    val factor: Float get() = porcentaje / 100f
+}
 
 /**
  * Ronda G: cuatro temas de color + SISTEMA (color dinamico de Material 3, solo API 31+). Familia y modo

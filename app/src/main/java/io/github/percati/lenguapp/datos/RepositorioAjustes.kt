@@ -7,6 +7,7 @@ import io.github.percati.lenguapp.modelo.FuenteTema
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.ModoTema
 import io.github.percati.lenguapp.modelo.Nivel
+import io.github.percati.lenguapp.modelo.VelocidadAudio
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 
@@ -19,6 +20,7 @@ private const val CLAVE_FAMILIA_TEMA = "familia_tema"
 private const val CLAVE_MODO_TEMA = "modo_tema"
 private const val CLAVE_FUENTE_TEMA = "fuente_tema"
 private const val CLAVE_BIENVENIDA_COMPLETADA = "bienvenida_completada"
+private const val CLAVE_VELOCIDAD_AUDIO = "velocidad_audio"
 
 // Esquema viejo (Fases 3-5): un idioma y un nivel singulares. Se lee una
 // sola vez para migrar; nunca se vuelve a escribir en este formato.
@@ -57,6 +59,7 @@ fun cargarAjustes(context: Context): Ajustes {
             modoTema = nombreAEnum(prefs.getString(CLAVE_MODO_TEMA, null), ModoTema.SEGUN_SISTEMA),
             fuente = nombreAEnum(prefs.getString(CLAVE_FUENTE_TEMA, null), FuenteTema.SISTEMA),
             bienvenidaCompletada = prefs.getBoolean(CLAVE_BIENVENIDA_COMPLETADA, false),
+            velocidadAudio = nombreAEnum(prefs.getString(CLAVE_VELOCIDAD_AUDIO, null), VelocidadAudio.NORMAL),
         )
     }
 
@@ -75,6 +78,7 @@ fun cargarAjustes(context: Context): Ajustes {
         modoTema = nombreAEnum(prefs.getString(CLAVE_MODO_TEMA, null), ModoTema.SEGUN_SISTEMA),
         fuente = nombreAEnum(prefs.getString(CLAVE_FUENTE_TEMA, null), FuenteTema.SISTEMA),
         bienvenidaCompletada = prefs.getBoolean(CLAVE_BIENVENIDA_COMPLETADA, false),
+        velocidadAudio = nombreAEnum(prefs.getString(CLAVE_VELOCIDAD_AUDIO, null), VelocidadAudio.NORMAL),
     )
     guardarAjustes(context, migrado)
     return migrado
@@ -90,6 +94,7 @@ fun guardarAjustes(context: Context, ajustes: Ajustes) {
         .putString(CLAVE_MODO_TEMA, ajustes.modoTema.name)
         .putString(CLAVE_FUENTE_TEMA, ajustes.fuente.name)
         .putBoolean(CLAVE_BIENVENIDA_COMPLETADA, ajustes.bienvenidaCompletada)
+        .putString(CLAVE_VELOCIDAD_AUDIO, ajustes.velocidadAudio.name)
         .remove(CLAVE_VIEJA_IDIOMA_APRENDIDO)
         .remove(CLAVE_VIEJA_NIVEL)
         .apply()

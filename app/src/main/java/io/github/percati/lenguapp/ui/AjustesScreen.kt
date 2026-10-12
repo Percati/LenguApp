@@ -49,6 +49,7 @@ import androidx.compose.ui.unit.dp
 import io.github.percati.lenguapp.modelo.Ajustes
 import io.github.percati.lenguapp.modelo.FamiliaTema
 import io.github.percati.lenguapp.modelo.Idioma
+import io.github.percati.lenguapp.modelo.VelocidadAudio
 import io.github.percati.lenguapp.modelo.ModoTema
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.presentacion.avisoGlosasSoloEnEspanol
@@ -61,6 +62,7 @@ import io.github.percati.lenguapp.presentacion.avisoGlosasSoloEnEspanol
  * bloques A-C).
  */
 const val TAG_VER_BIENVENIDA = "ver-bienvenida"
+const val TAG_VELOCIDAD_AUDIO_PREFIJO = "velocidad-audio-"
 
 @Composable
 fun AjustesScreen(
@@ -130,6 +132,12 @@ fun AjustesScreen(
             idiomaInterfaz = idiomaAplicacionEfectivo,
             fuenteElegida = ajustes.fuente,
             onElegir = { onAjustesCambiados(ajustes.copy(fuente = it)) },
+        )
+
+        SelectorVelocidadAudio(
+            idiomaInterfaz = idiomaAplicacionEfectivo,
+            elegida = ajustes.velocidadAudio,
+            onElegir = { onAjustesCambiados(ajustes.copy(velocidadAudio = it)) },
         )
     }
 }
@@ -365,6 +373,28 @@ private fun PuntoDeColor(color: Color) {
 }
 
 /** Tipografia: cada opcion escribe su nombre en su propia fuente, con una muestra corta ("Aa"). */
+/** Velocidad del audio: cuatro pasos fijos (60, 75, 90 y 100 %), un ajuste y no un control por fila. */
+@Composable
+private fun SelectorVelocidadAudio(idiomaInterfaz: Idioma, elegida: VelocidadAudio, onElegir: (VelocidadAudio) -> Unit) {
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Text(etiquetaVelocidadAudio(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
+        Row(
+            modifier = Modifier.horizontalScroll(rememberScrollState()),
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+        ) {
+            VelocidadAudio.entries.forEach { velocidad ->
+                FilterChip(
+                    selected = velocidad == elegida,
+                    onClick = { onElegir(velocidad) },
+                    label = { Text(textoVelocidadAudio(velocidad, idiomaInterfaz)) },
+                    modifier = Modifier.testTag(TAG_VELOCIDAD_AUDIO_PREFIJO + velocidad.porcentaje),
+                )
+            }
+        }
+        Text(ayudaVelocidadAudio(idiomaInterfaz), style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+    }
+}
+
 @Composable
 private fun SelectorFuente(idiomaInterfaz: Idioma, fuenteElegida: FuenteTema, onElegir: (FuenteTema) -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
