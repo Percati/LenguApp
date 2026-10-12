@@ -1526,3 +1526,24 @@ Tres commits, uno por tarea, sobre la Ronda M. Contenido, esquema y assets de co
 
 **Formulario de seguridad de los datos (Play):** la app no recoge ni comparte nada; todo en «no», apuntando a `legal/PRIVACY.md`.
 
+## 53. Guía de testers en los 6 idiomas (Overview, 12-oct-2026)
+
+Verificado el parche anterior sobre `origin/main` (HEAD `d6d2435d`): las 6 descripciones de la tienda ya dicen «con audio en alemán», `FALTANTES` 52 está, y el `LEEME.md` de publicación lleva la firma de la app, el formulario de seguridad de los datos y el aviso del audio inglés.
+
+**Guía traducida a los 6 idiomas de la app**, una por idioma, **dos carillas cada una** (una hoja a doble faz):
+
+| Archivo | PDF |
+|---|---|
+| `docs/guia-testers.md` (español, el canónico) | `guia-testers-lenguapp.pdf` y `-es.pdf` |
+| `docs/guia-testers-en.md` | `guia-testers-lenguapp-en.pdf` |
+| `docs/guia-testers-de.md` | `guia-testers-lenguapp-de.pdf` |
+| `docs/guia-testers-fr.md` | `guia-testers-lenguapp-fr.pdf` |
+| `docs/guia-testers-it.md` | `guia-testers-lenguapp-it.pdf` |
+| `docs/guia-testers-pt.md` | `guia-testers-lenguapp-pt.pdf` |
+
+**El español sigue siendo el original y el canónico:** es el que lee el test `TextosVerbosTest` (que vigila que la fila de Verbos no vuelva a mentir), y es el que hay que editar primero. **Al cambiar la guía hay que retraducir las otras cinco**, o quedan desfasadas sin que nada avise. Los PDF se generan con márgenes de 10 mm; con 12 mm el alemán se iba a tres carillas.
+
+**Alemán y francés están resumidos respecto del español** (son idiomas más largos): se acortaron las filas de Verbos, del desafío, de temas y tipografías, y de Guardados, sin perder ninguna información. El contenido es el mismo en las seis.
+
+**Sin revisión de nativo: fr, it y pt**, igual que el resto de los textos de esos idiomas. El inglés y el alemán los puede juzgar Fer. Es la misma deuda de la sección 52, ahora también en la guía.
+
