@@ -1503,3 +1503,26 @@ Tres commits, uno por tarea, sobre la Ronda M. Contenido, esquema y assets de co
 **Elecciones donde el prompt no cerraba:** (1) la exclusión por variante en vez de mover los archivos, por las herramientas de Overview (arriba); (2) las entradas inglesas del índice se dejan; (3) el idioma de la repetición desde Ajustes no se vuelve a forzar; (4) al menos un idioma para practicar es obligatorio; (5) el modelo `Ajustes` trae `bienvenidaCompletada = true` por omisión y es el repositorio el que arranca en `false`; (6) la bienvenida reemplaza el párrafo anterior de «Acerca de».
 
 **Para mirar en el teléfono:** la bienvenida con la letra al 160 % (el bloque entero es un scroll) y en horizontal; y que al elegir «Idioma del sistema» la pantalla pase al idioma del dispositivo.
+
+## 52. Verificación de Code Ronda N y qué falta para publicar (12-oct-2026)
+
+**Verificación.** Sobre `origin/main` (HEAD `156321e6`, 0.3.0 / versionCode 12): compositor 606 / 56 / 0, R1–R11 en 0, assets de contenido intactos, `indice_audio.py --comprobar` al día, manifest sin `INTERNET`. **Guía de testers: `.pdf` regenerado por Overview** (0.3.0, una hoja).
+
+**La decisión de no mover los archivos fue la correcta**, y por un motivo que Overview no había visto: `indice_audio.py`, `sincronizar_audio_estado.py` y `exportar_audio_maestro.py` leen `app/src/main/assets/audio/{DE,EN}`, así que moverlos al `sourceSet` de debug las habría roto **en silencio**. La exclusión por variante más la tarea `verificarReleaseSinAudioIngles`, que mira los **assets ya fusionados** y hace fallar el empaquetado, es más segura que mover: no depende de que nadie toque la configuración. Probada quitando la exclusión.
+
+**Corrección de Overview a su propia estimación:** el release ahorra **17,6 MB**, no 26. Los 26 salían de `du` sobre el disco, que redondea por bloques; dentro del APK los clips ocupan 17 643 412 B (van sin comprimir, que es lo que permite `openFd`). Release sin firmar: **37 731 702 B**.
+
+**Textos de la tienda corregidos por Overview.** Las 6 descripciones prometían «vocabulario y expresiones **con audio**» sin más, y el audio inglés no se publica: ahora dicen «con audio en alemán». Era publicidad engañosa esperando a pasar.
+
+### Qué falta para publicar (estado al 12-oct-2026)
+
+**Bloqueantes:**
+1. **Revisión por hablante nativo de fr, it y pt** (interfaz, tienda, clases de verbo, estados vacíos, el texto de la bienvenida). **Recomendación de Overview: publicar primero solo con es, en y de** — los tres que Fer puede juzgar él mismo — y sumar fr/it/pt cuando haya quien los revise. Desbloquea la publicación sin bajar la calidad y no tira nada: los textos quedan en el repo.
+2. **Firma de la app**: no hay `signingConfig`. Hay que crear el almacén de claves, guardarlo **fuera del repo** y decidir si se usa la firma gestionada por Google.
+3. **Ícono y pantalla de carga**: Fer los hará cuando tenga un diseño que le guste.
+4. **Capturas de pantalla** para la ficha de la tienda (4 a 6, en el idioma de cada ficha).
+
+**No bloqueantes, anotados:** regenerar el audio inglés con `en_GB-alba` (CC BY 4.0) y revertir entonces el interruptor y la exclusión; los tours del tutorial (`docs/tutorial-guion.md`); los clips lentos; las deudas de contenido de la sección 47.
+
+**Formulario de seguridad de los datos (Play):** la app no recoge ni comparte nada; todo en «no», apuntando a `legal/PRIVACY.md`.
+
