@@ -1,4 +1,4 @@
-# LenguApp · guía rápida para testers (versión 0.2.8)
+# LenguApp · guía rápida para testers (versión 0.2.9)
 
 **Qué es.** Una app para practicar un idioma cada semana (alemán o inglés, de A2 a C2). **No es un curso:** sirve para fijar lo que ya aprendiste en uno. Funciona sin internet, sin cuenta y sin recopilar datos. Está en prueba y tu opinión ayuda mucho.
 
@@ -20,7 +20,7 @@
 | La planilla en PDF sale en el idioma que aprendes y en una sola hoja | Es para mostrársela a quien te enseña ese idioma. |
 | En alemán no hay «ß» | Se usa la ortografía suiza: «ss». |
 | El español es neutro y de «tú» | El «usted» solo aparece en frases de situaciones formales, que es lo que se enseña. |
-| El audio todavía no suena en la app | Los archivos de voz sintética ya vienen dentro de la app, pero el reproductor aún no está hecho. Cuando lo esté, no será una persona grabando. |
+| El audio suena, por ahora solo en alemán | Toca el altavoz junto a una palabra o expresión (en los ejemplos, solo algunos): es voz sintética. Suena una a la vez. En inglés todavía no hay. |
 | Hay contenido de 2026 (desde la semana 41) y de 2027 | Lo demás se irá sumando. |
 | Puedes elegir el color y la letra | En Ajustes hay cuatro temas (Papel, Terracota, Mar, Grafito) y, en Android 12 o posterior, uno que sigue el color de tu fondo de pantalla. También tres tipografías: la del sistema, Lectura y Clara. |
 | Algunos signos (↔, ✗, →, ₂) se ven con otra letra | Las tipografías Lectura y Clara no traen esos signos, así que el teléfono los dibuja con la del sistema. |
