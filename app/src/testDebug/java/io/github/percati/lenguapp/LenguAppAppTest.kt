@@ -372,16 +372,19 @@ class LenguAppAppTest {
     }
 
     @Test
-    fun `Ajustes lleva al final el nombre de la app, la linea fija y la fila Acerca de, que se abre y se vuelve`() {
+    fun `Ajustes lleva al final el nombre de la app y la fila Acerca de, que se abre y se vuelve, y ya no lleva la linea fija`() {
         mostrarApp(Idioma.ES)
         composeTestRule.onNodeWithText("Ajustes").performClick()
 
         composeTestRule.onNodeWithText("LenguApp").assertExists()
-        composeTestRule.onNodeWithText("Para fijar lo que ya aprendiste en tu curso.").assertExists()
+        // la linea fija se quito de Ajustes (Ronda P): la dicen la bienvenida y «Acerca de»
+        composeTestRule.onAllNodesWithText("Para fijar lo que ya aprendiste en tu curso.").assertCountEquals(0)
         // «Acerca de» es la ultima fila de la pantalla: hay que desplazarse hasta ella
         composeTestRule.onNodeWithText("Acerca de").performScrollTo().performClick()
 
         composeTestRule.onNodeWithText("Qué es y qué no es").assertExists()
+        // «Acerca de» si conserva la linea fija
+        composeTestRule.onNodeWithText("Para fijar lo que ya aprendiste en tu curso.").assertExists()
         composeTestRule.onNode(hasText("LenguApp no enseña un idioma", substring = true)).assertExists()
         composeTestRule.onNode(hasText("GPL-3.0", substring = true)).assertExists()
         composeTestRule.onNode(hasText("CC BY-SA 4.0", substring = true)).assertExists()

@@ -8,9 +8,10 @@ El nombre "LenguApp" es provisorio.
 ## Cómo dejar claro que NO es un curso
 Tres lugares, de más a menos visible, sin guardar nada en el dispositivo (regla dura 4):
 1. **Tienda**: es lo primero que dice la descripción (línea con ⚠, en las tres versiones) y lo primero que dice la descripción corta.
-2. **Ajustes**: arriba del todo, el nombre de la app y una línea fija: «Para fijar lo que ya aprendiste en tu curso.» (los 6 idiomas), con una fila «Acerca de». Ya no está en la pantalla principal, que queda sin encabezado para dar el alto al contenido.
-3. **Acerca de**: pantalla estática con qué es y qué no es, cómo está pensada, privacidad, licencias y versión.
-4. **Bienvenida** (Ronda N, 0.3.0): en el primer arranque, después de elegir idioma y nivel, el mismo texto de «Acerca de» a la vista. Recordar que ya se vio es un **ajuste** (`bienvenidaCompletada`), que la regla dura 4 permite; no es progreso.
+2. **Bienvenida** (Ronda N, 0.3.0): en el primer arranque, después de elegir idioma y nivel, el texto de «qué es y qué no es» a la vista. Recordar que ya se vio es un **ajuste** (`bienvenidaCompletada`), que la regla dura 4 permite; no es progreso. Se puede volver a ver desde Ajustes.
+3. **Acerca de**: pantalla estática con qué es y qué no es (el mismo texto que la bienvenida), cómo está pensada, privacidad, licencias y versión. Es la última fila de Ajustes.
+
+(Hasta la 0.3.1 Ajustes llevaba, arriba del todo, una línea fija: «Para fijar lo que ya aprendiste en tu curso.»; se quitó en la 0.3.2 porque repetía lo que ya dicen la bienvenida y «Acerca de».)
 
 ## Mensajes clave (en este orden)
 1. No es un curso: fija lo que ya aprendiste.

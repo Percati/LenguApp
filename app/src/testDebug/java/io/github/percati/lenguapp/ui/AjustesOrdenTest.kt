@@ -1,7 +1,11 @@
 package io.github.percati.lenguapp.ui
 
 import androidx.activity.ComponentActivity
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.layout.boundsInRoot
+import androidx.compose.ui.test.assertCountEquals
+import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
@@ -60,5 +64,26 @@ class AjustesOrdenTest {
         val acerca = arribaDeTag(TAG_ACERCA_DE)
         val orden = listOf(titulo, idiomasQueSePractican, idiomaDeLaApp, tipografia, velocidad, nombre, bienvenida, acerca)
         assertTrue("orden vertical: $orden", orden == orden.sorted() && orden.toSet().size == orden.size)
+    }
+
+    @Test
+    fun `la linea fija ya no aparece en Ajustes, en ningun idioma, pero Acerca de la conserva`() {
+        var idioma by androidx.compose.runtime.mutableStateOf(Idioma.ES)
+        composeTestRule.setContent {
+            AjustesScreen(
+                ajustes = Ajustes(), idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
+                nivelesConContenido = mapOf(Idioma.DE to setOf(Nivel.B2)),
+                idiomaAplicacionEfectivo = idioma, onAjustesCambiados = {}, onVolver = {},
+            )
+        }
+        for (i in Idioma.entries) {
+            composeTestRule.runOnIdle { idioma = i }
+            composeTestRule.waitForIdle()
+            composeTestRule.onAllNodesWithText(textoLineaFija(i)).assertCountEquals(0)
+            // el nombre de la app si se queda, arriba de las dos filas finales
+            composeTestRule.onNodeWithText(NOMBRE_APP).assertExists()
+        }
+        // y la clave sigue existiendo porque «Acerca de» la usa
+        for (i in Idioma.entries) assertTrue(textoLineaFija(i).isNotBlank())
     }
 }

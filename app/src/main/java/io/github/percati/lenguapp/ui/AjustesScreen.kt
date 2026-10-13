@@ -336,18 +336,13 @@ private fun SelectorModoTema(idiomaInterfaz: Idioma, modoElegido: ModoTema, onEl
 }
 
 /**
- * Arriba del todo de Ajustes: el nombre de la app, la linea fija que dice para que es (no es un
- * curso: fija lo aprendido en uno) y la fila "Acerca de". Antes vivian en la pantalla principal.
+ * Al final de Ajustes: el nombre de la app y dos filas, «Ver la bienvenida otra vez» y, ultima de la pantalla, «Acerca de». La
+ * linea «Para fijar lo que ya aprendiste en tu curso» ya no esta aca (Ronda P): la dicen la bienvenida y «Acerca de».
  */
 @Composable
 private fun EncabezadoApp(idiomaInterfaz: Idioma, onAcercaDe: () -> Unit, onVerBienvenida: () -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
         Text(NOMBRE_APP, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
-        Text(
-            textoLineaFija(idiomaInterfaz),
-            style = MaterialTheme.typography.bodySmall,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-        )
         Row(
             modifier = Modifier.fillMaxWidth().clickable(onClick = onVerBienvenida).padding(vertical = 8.dp).testTag(TAG_VER_BIENVENIDA),
             verticalAlignment = Alignment.CenterVertically,
