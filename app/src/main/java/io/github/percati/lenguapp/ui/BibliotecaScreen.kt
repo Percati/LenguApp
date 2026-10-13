@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -56,6 +57,7 @@ import io.github.percati.lenguapp.datos.NombresI18n
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.TipoGuardado
+import io.github.percati.lenguapp.modelo.Tour
 import io.github.percati.lenguapp.modelo.resolver
 import io.github.percati.lenguapp.presentacion.ItemBiblioteca
 import io.github.percati.lenguapp.presentacion.datosFila
@@ -100,6 +102,7 @@ fun BibliotecaScreen(
     onAbrirFicha: (String) -> Unit = {},
 ) {
     DetenerAudioAlSalir()
+    LanzarTourAlEntrar(Tour.BIBLIOTECA)
     val idiomas = remember(idiomasAprendidos) { idiomasAprendidos.keys.sortedBy { it.ordinal } }
     var idiomaElegido by remember(idiomas) { mutableStateOf(idiomas.firstOrNull()) }
     var nivelesPorIdioma by remember { mutableStateOf<Map<Idioma, Set<Nivel>>>(emptyMap()) }
@@ -179,6 +182,7 @@ fun BibliotecaScreen(
                         ),
                         elegida = vista.name,
                         onElegir = { vista = VistaBiblioteca.valueOf(it) },
+                        modifier = Modifier.anclaTour("tour-biblioteca-vistas"),
                     )
 
                     if (vista == VistaBiblioteca.LEXICO) Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -209,7 +213,7 @@ fun BibliotecaScreen(
                         },
                     )
 
-                    if (tipo == TipoGuardado.VOCABULARIO) {
+                    if (tipo == TipoGuardado.VOCABULARIO) Column(Modifier.anclaTour("tour-biblioteca-filtros"), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                         Text(etiquetaBibliotecaTema(idiomaInterfaz), style = MaterialTheme.typography.labelMedium)
                         GrupoChips(
                             opciones = listOf(OpcionFiltro("", etiquetaFiltroTodos(idiomaInterfaz))) +
@@ -236,7 +240,7 @@ fun BibliotecaScreen(
                         onValueChange = { busqueda = it },
                         label = { Text(etiquetaBibliotecaBuscar(idiomaInterfaz)) },
                         singleLine = true,
-                        modifier = Modifier.fillMaxWidth(),
+                        modifier = Modifier.fillMaxWidth().anclaTour("tour-biblioteca-buscar"),
                     )
                     }
 
@@ -321,8 +325,9 @@ fun BibliotecaScreen(
             if (filtrados.isEmpty()) {
                 item { Text(etiquetaBibliotecaVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge) }
             }
-            items(filtrados, key = { claveBiblioteca(it.idioma, it.tipo, it.texto) }) { item ->
+            itemsIndexed(filtrados, key = { _, it -> claveBiblioteca(it.idioma, it.tipo, it.texto) }) { posicion, item ->
                 FilaBiblioteca(
+                    anclaEstrella = if (posicion == 0) "tour-biblioteca-estrella" else null,
                     item = item,
                     idiomaBase = idiomaBase,
                     idiomaInterfaz = idiomaInterfaz,
@@ -366,6 +371,7 @@ private fun FilaBiblioteca(
     guardada: Boolean,
     onAlternar: () -> Unit,
     extra: (@Composable ColumnScope.() -> Unit)? = null,
+    anclaEstrella: String? = null,
 ) {
     val d = item.datosFila(idiomaBase)
     FilaPalabra(
@@ -381,6 +387,7 @@ private fun FilaBiblioteca(
         extra = extra,
         claseAudio = if (item.tipo == TipoGuardado.VOCABULARIO) ClaseAudio.VOCABULARIO else ClaseAudio.EXPRESION,
         idiomaInterfaz = idiomaInterfaz,
+        anclaEstrella = anclaEstrella,
     )
 }
 

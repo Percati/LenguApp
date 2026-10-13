@@ -34,6 +34,8 @@ fun SeccionPlegable(
     idiomaInterfaz: Idioma,
     modifier: Modifier = Modifier,
     expandidaPorDefecto: Boolean = false,
+    // Ancla del tutorial sobre el ENCABEZADO (la caja cerrada no se senala: el tour explica el encabezado).
+    anclaEncabezado: String? = null,
     contenido: @Composable () -> Unit,
 ) {
     var expandida by rememberSaveable { mutableStateOf(expandidaPorDefecto) }
@@ -41,6 +43,7 @@ fun SeccionPlegable(
         Row(
             modifier = Modifier
                 .fillMaxWidth()
+                .then(if (anclaEncabezado != null) Modifier.anclaTour(anclaEncabezado) else Modifier)
                 .clickable { expandida = !expandida }
                 .padding(vertical = 12.dp),
             verticalAlignment = Alignment.CenterVertically,

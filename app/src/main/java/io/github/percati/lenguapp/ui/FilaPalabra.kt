@@ -2,6 +2,7 @@ package io.github.percati.lenguapp.ui
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
@@ -53,6 +54,8 @@ fun FilaPalabra(
     // Audio (Ronda M): si el original tiene clip, un altavoz discreto justo a la izquierda de la estrella. null = sin audio.
     claseAudio: ClaseAudio? = null,
     idiomaInterfaz: Idioma = idiomaBase,
+    // Ancla del tutorial sobre la estrella (solo la primera fila de la Biblioteca la lleva).
+    anclaEstrella: String? = null,
 ) {
     val espaciado = espaciadoActual()
     Column(modifier.fillMaxWidth()) {
@@ -81,12 +84,14 @@ fun FilaPalabra(
             }
             // Estrella discreta: contorno fino en reposo, llena con el acento cuando esta guardada.
             if (claseAudio != null) BotonAudio(idiomaAprendido, claseAudio, original, idiomaInterfaz)
-            if (conEstrella) IconButton(onClick = onEstrella, modifier = Modifier.size(40.dp).testTag(tagEstrella)) {
-                Icon(
-                    if (guardada) Icons.Filled.Star else Icons.Outlined.StarBorder,
-                    contentDescription = descripcionEstrella,
-                    tint = if (guardada) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
-                )
+            if (conEstrella) Box(if (anclaEstrella != null) Modifier.anclaTour(anclaEstrella) else Modifier) {
+                IconButton(onClick = onEstrella, modifier = Modifier.size(40.dp).testTag(tagEstrella)) {
+                    Icon(
+                        if (guardada) Icons.Filled.Star else Icons.Outlined.StarBorder,
+                        contentDescription = descripcionEstrella,
+                        tint = if (guardada) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
+                    )
+                }
             }
         }
         // Linea fina entre filas (en vez de tarjetas con fondo).

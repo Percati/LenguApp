@@ -19,6 +19,7 @@ import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.layout.boundsInRoot
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.testTag
+import io.github.percati.lenguapp.modelo.Tour
 
 /**
  * El tutorial con foco, por partes (Ronda Q; guion en docs/tutorial-guion.md). Cada seccion lanza su propio tour la primera vez
@@ -29,16 +30,6 @@ import androidx.compose.ui.platform.testTag
  * nada senalado, nunca se espera sin fin, nunca se rompe. Un test recorre todos los pasos de todos los tours y falla si alguna
  * ancla no existe en su pantalla, para que el tutorial no se pudra en silencio cuando cambie la interfaz.
  */
-enum class Tour { FICHA, BIBLIOTECA, GUARDADOS, AJUSTES, DESAFIO }
-
-/** Lo que el tour hace en la pantalla al llegar a un paso (ademas de senalar). */
-enum class EfectoPaso {
-    NINGUNO,
-
-    /** Enciende el interruptor del desafio para poder senalar su consigna; al terminar el tour lo deja como estaba. */
-    ABRIR_DESAFIO,
-}
-
 /**
  * Un paso: `ancla` es el testTag de lo que se senala (null = un paso sin foco, una tarjeta al centro); `titulo` y `cuerpo` son
  * claves de TextosInterfaz (6 idiomas); `cuerpoExtra` es un segundo parrafo opcional (tambien una clave).
@@ -48,7 +39,6 @@ data class PasoTour(
     val titulo: ClaveTexto,
     val cuerpo: ClaveTexto,
     val cuerpoExtra: ClaveTexto? = null,
-    val efecto: EfectoPaso = EfectoPaso.NINGUNO,
 )
 
 /** Cuanto se espera, como maximo, a que la pantalla componga el ancla de un paso antes de saltearlo. */
@@ -155,4 +145,14 @@ fun Modifier.anclaTour(id: String): Modifier = composed {
         .onGloballyPositioned { coordenadas ->
             if (coordenadas.isAttached) registro.registrar(id, coordenadas.boundsInRoot(), requester)
         }
+}
+
+/**
+ * Pide el tour de una seccion al ENTRAR a ella (Biblioteca, Guardados, Ajustes): se lanza solo si no se vio, no se salto todo y no hay
+ * otro en marcha. Sin gestor con pasos (pantallas sueltas, tests) no hace nada.
+ */
+@androidx.compose.runtime.Composable
+fun LanzarTourAlEntrar(tour: Tour) {
+    val gestor = LocalGestorTours.current
+    androidx.compose.runtime.LaunchedEffect(gestor, tour) { gestor.lanzar(tour) }
 }

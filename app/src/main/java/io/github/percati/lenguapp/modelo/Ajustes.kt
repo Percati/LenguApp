@@ -37,7 +37,15 @@ data class Ajustes(
     val bienvenidaCompletada: Boolean = true,
     // Velocidad del audio (Ronda O): preferencia de uso, no progreso (regla dura 4). No viaja en la copia de seguridad.
     val velocidadAudio: VelocidadAudio = VelocidadAudio.NORMAL,
+    // Tutorial con foco (Ronda Q): que tours ya se vieron y si se salto todo. Son ajustes, no progreso (regla dura 4), y no viajan
+    // en la copia de seguridad. El valor por omision del MODELO es «todos vistos» (las pantallas y los tests que arman un Ajustes() no
+    // lanzan tours); lo que decide el primer arranque es el repositorio: sin clave guardada, ninguno visto.
+    val toursVistos: Set<Tour> = Tour.entries.toSet(),
+    val toursSalteados: Boolean = false,
 )
+
+/** Las partes del tutorial: cada una se lanza sola la primera vez que se entra a su seccion (docs/tutorial-guion.md). */
+enum class Tour { FICHA, BIBLIOTECA, GUARDADOS, AJUSTES, DESAFIO }
 
 /**
  * Los cuatro pasos de la velocidad del audio: 60, 75, 90 y 100 %. Pasos fijos y no un deslizador: se toca una vez y se

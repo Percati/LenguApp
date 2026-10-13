@@ -30,8 +30,8 @@ class RepositorioAjustesTest {
 
     @Test
     fun `sin nada guardado, los valores por defecto son un combo que si tiene contenido`() {
-        // bienvenidaCompletada: el modelo trae true por omision; una instalacion nueva (sin clave guardada) arranca en false
-        assertEquals(Ajustes(bienvenidaCompletada = false), cargarAjustes(contexto()))
+        // bienvenidaCompletada y toursVistos: el modelo trae «completada/todos vistos» por omision; una instalacion nueva (sin clave guardada) arranca en false / ninguno
+        assertEquals(Ajustes(bienvenidaCompletada = false, toursVistos = emptySet()), cargarAjustes(contexto()))
     }
 
     @Test

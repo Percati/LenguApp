@@ -41,6 +41,7 @@ import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.ItemGuardado
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.TipoGuardado
+import io.github.percati.lenguapp.modelo.Tour
 import io.github.percati.lenguapp.modelo.resolver
 import io.github.percati.lenguapp.presentacion.CriterioOrdenGuardados
 import io.github.percati.lenguapp.presentacion.DireccionOrden
@@ -103,6 +104,7 @@ fun GuardadosScreen(
     var direccionOrden by remember { mutableStateOf(DireccionOrden.DESCENDENTE) }
 
     DetenerAudioAlSalir()
+    LanzarTourAlEntrar(Tour.GUARDADOS)
     val idioma = idiomaElegido
     val itemsIdioma = remember(items, idioma) { if (idioma == null) emptyList() else items.delIdioma(idioma) }
     val filtrosValidos = remember(itemsIdioma, filtros, indice) { itemsIdioma.normalizarFiltros(filtros, indice) }
@@ -117,8 +119,12 @@ fun GuardadosScreen(
             Text(etiquetaGuardados(idiomaInterfaz), style = MaterialTheme.typography.headlineSmall)
         }
 
-        BotonesArchivo(items.isNotEmpty(), idiomaInterfaz, onExportarAnki, onExportarRespaldo, onImportar)
+        Box(Modifier.anclaTour("tour-guardados-archivo")) {
+            BotonesArchivo(items.isNotEmpty(), idiomaInterfaz, onExportarAnki, onExportarRespaldo, onImportar)
+        }
 
+        // Todo lo de abajo (vacio, o solapas + filtros + lista) es el ancla de «aqui esta lo que marcaste».
+        Column(Modifier.anclaTour("tour-guardados-lista"), verticalArrangement = Arrangement.spacedBy(16.dp)) {
         if (idiomasDisponibles.isEmpty() || idioma == null) {
             Text(mensajeGuardadosVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge)
         } else {
@@ -160,6 +166,7 @@ fun GuardadosScreen(
                     }
                 }
             }
+        }
         }
     }
 }

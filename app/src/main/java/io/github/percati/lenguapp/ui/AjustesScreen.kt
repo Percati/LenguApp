@@ -54,6 +54,7 @@ import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.VelocidadAudio
 import io.github.percati.lenguapp.modelo.ModoTema
 import io.github.percati.lenguapp.modelo.Nivel
+import io.github.percati.lenguapp.modelo.Tour
 import io.github.percati.lenguapp.presentacion.avisoGlosasSoloEnEspanol
 
 /**
@@ -81,6 +82,7 @@ fun AjustesScreen(
     // Volver a ver la bienvenida (Ronda N): la fila va junto a «Acerca de».
     onVerBienvenida: () -> Unit = {},
 ) {
+    LanzarTourAlEntrar(Tour.AJUSTES)
     Column(
         modifier = modifier.verticalScroll(rememberScrollState()).finDeScrollSobreBarras().padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(24.dp),
@@ -90,6 +92,8 @@ fun AjustesScreen(
             Text(etiquetaAjustes(idiomaAplicacionEfectivo), style = MaterialTheme.typography.headlineSmall)
         }
 
+        // «Idioma de la app y que practicas» (ancla del tutorial): los dos selectores juntos.
+        Column(Modifier.anclaTour("tour-ajustes-idiomas"), verticalArrangement = Arrangement.spacedBy(24.dp)) {
         SelectorIdiomasAprendidos(
             idiomasAprendidos = ajustes.idiomasAprendidos,
             idiomasConContenido = idiomasConContenido,
@@ -115,7 +119,10 @@ fun AjustesScreen(
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
+        }
 
+        // «Tema y tipografia» (ancla del tutorial): tema, modo y tipografia juntos.
+        Column(Modifier.anclaTour("tour-ajustes-tema"), verticalArrangement = Arrangement.spacedBy(24.dp)) {
         SelectorFamiliaTema(
             idiomaInterfaz = idiomaAplicacionEfectivo,
             familiaElegida = ajustes.familiaTema,
@@ -134,6 +141,7 @@ fun AjustesScreen(
             fuenteElegida = ajustes.fuente,
             onElegir = { onAjustesCambiados(ajustes.copy(fuente = it)) },
         )
+        }
 
         SelectorVelocidadAudio(
             idiomaInterfaz = idiomaAplicacionEfectivo,
@@ -344,14 +352,14 @@ private fun EncabezadoApp(idiomaInterfaz: Idioma, onAcercaDe: () -> Unit, onVerB
     Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
         Text(NOMBRE_APP, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
         Row(
-            modifier = Modifier.fillMaxWidth().clickable(onClick = onVerBienvenida).padding(vertical = 8.dp).testTag(TAG_VER_BIENVENIDA),
+            modifier = Modifier.fillMaxWidth().clickable(onClick = onVerBienvenida).padding(vertical = 8.dp).anclaTour(TAG_VER_BIENVENIDA),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Text(etiquetaVerBienvenida(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
             Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
         }
         Row(
-            modifier = Modifier.fillMaxWidth().clickable(onClick = onAcercaDe).padding(vertical = 8.dp).testTag(TAG_ACERCA_DE),
+            modifier = Modifier.fillMaxWidth().clickable(onClick = onAcercaDe).padding(vertical = 8.dp).anclaTour(TAG_ACERCA_DE),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Text(etiquetaAcercaDe(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))

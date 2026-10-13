@@ -40,6 +40,7 @@ import io.github.percati.lenguapp.datos.NombresI18n
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -58,6 +59,7 @@ import io.github.percati.lenguapp.modelo.CuadroReferencia
 import io.github.percati.lenguapp.modelo.Ficha
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.Nivel
+import io.github.percati.lenguapp.modelo.Tour
 import io.github.percati.lenguapp.modelo.Prioridad
 import io.github.percati.lenguapp.modelo.RedemittelItem
 import io.github.percati.lenguapp.modelo.SemanaEspecial
@@ -130,10 +132,11 @@ fun PantallaSemana(
     promptsVoz: Map<String, String> = emptyMap(),
     onPlanilla: ((ContenidoSemanal) -> Unit)? = null,
     topicNombres: NombresI18n = NombresI18n(),
+    tourHabilitado: Boolean = false,
 ) {
     when (resultado) {
         is ResultadoSemana.Encontrado ->
-            ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, onPlanilla, topicNombres)
+            ContenidoSemanalScreen(resultado.contenido, idiomaBase, modifier, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, onPlanilla, topicNombres, tourHabilitado)
         is ResultadoSemana.SinContenido -> SinContenidoMensaje(resultado, idiomaInterfaz, modifier)
     }
 }
@@ -181,9 +184,11 @@ fun ContenidoSemanalScreen(
     onPlanilla: ((ContenidoSemanal) -> Unit)? = null,
     // Nombres de topic en 6 idiomas: el reto del fin de semana muestra el tema en el idioma de app.
     topicNombres: NombresI18n = NombresI18n(),
+    // El tutorial con foco solo se lanza desde la pantalla principal, no desde una ficha abierta desde Guardados o la Biblioteca.
+    tourHabilitado: Boolean = false,
 ) {
     when (contenido) {
-        is Ficha -> FichaContenido(contenido, idiomaBase, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, onPlanilla, topicNombres, modifier)
+        is Ficha -> FichaContenido(contenido, idiomaBase, idiomaInterfaz, fecha, estadoGuardados, promptsVoz, onPlanilla, topicNombres, modifier, tourHabilitado)
         is SemanaEspecial -> SemanaEspecialContenido(contenido, idiomaBase, idiomaInterfaz, onPlanilla, modifier)
     }
 }
@@ -203,6 +208,7 @@ private fun FichaContenido(
     onPlanilla: ((ContenidoSemanal) -> Unit)?,
     topicNombres: NombresI18n,
     modifier: Modifier = Modifier,
+    tourHabilitado: Boolean = false,
 ) {
     // Feature 1 (switch de traduccion en vivo): estado local, nunca
     // persistido -- "modo revista", igual criterio que regla dura #13. Se
@@ -231,6 +237,27 @@ private fun FichaContenido(
     DetenerAudioAlSalir(ficha.id)
     val enFinDeSemana = esFinDeSemana(fecha)
 
+    // Tutorial con foco (Ronda Q). El tour de la ficha se lanza solo desde la pantalla principal (tourHabilitado), la primera vez que
+    // HAY ficha (sin ficha esta pantalla no se compone y el tour queda pendiente: no se da por visto). El del desafio, la primera vez
+    // que el interruptor esta visible (fin de semana) y siempre despues del de la ficha, nunca encadenado en la misma visita.
+    val gestor = LocalGestorTours.current
+    if (tourHabilitado) {
+        LaunchedEffect(ficha.id, enFinDeSemana) {
+            if (!gestor.lanzar(Tour.FICHA) && enFinDeSemana && Tour.FICHA in gestor.vistos) gestor.lanzar(Tour.DESAFIO)
+        }
+    }
+    // Mientras dura el tour del desafio se enciende el interruptor para poder senalar su consigna, y al terminar se lo deja como estaba.
+    val tourDelDesafio = gestor.activo == Tour.DESAFIO
+    var abiertoPorElTour by remember { mutableStateOf(false) }
+    LaunchedEffect(tourDelDesafio) {
+        if (tourDelDesafio) {
+            if (!modoDesafio) { modoDesafio = true; abiertoPorElTour = true }
+        } else if (abiertoPorElTour) {
+            modoDesafio = false
+            abiertoPorElTour = false
+        }
+    }
+
     Column(modifier = modifier.fillMaxSize()) {
         if (puedeTraducir || enFinDeSemana) {
             Column(Modifier.padding(horizontal = 16.dp, vertical = 4.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
@@ -255,7 +282,7 @@ private fun FichaContenido(
                 modifier = Modifier.widthIn(max = ANCHO_LECTURA).fillMaxWidth().verticalScroll(rememberScrollState()).finDeScrollSobreBarras().padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones),
             ) {
-                Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                Column(verticalArrangement = Arrangement.spacedBy(6.dp), modifier = Modifier.anclaTour("tour-ficha-titulo")) {
                     ficha.variante?.let { EtiquetaVariante(it) }
                     Text(t(ficha.titulo), style = MaterialTheme.typography.headlineSmall)
                     Text(
@@ -290,7 +317,7 @@ private fun FichaContenido(
                         tema = topicNombres.nombre(ficha.topicId, idiomaInterfaz),
                     )
                 } else {
-                    Text(m(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge)
+                    Text(m(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge, modifier = Modifier.anclaTour("tour-ficha-descripcion"))
 
                     ficha.cuadroReferencia?.let { cuadro ->
                         SeccionPlegable(titulo = t(cuadro.titulo).ifBlank { et("cuadroReferencia") }, idiomaInterfaz = idiomaInterfaz) {
@@ -332,7 +359,7 @@ private fun FichaContenido(
                         }
                     }
 
-                    Seccion(et("errores")) {
+                    Seccion(et("errores"), Modifier.anclaTour("tour-ficha-errores")) {
                         // Los errores contrastivos son los de la lengua base
                         // (idiomaBase), no los del idioma que el switch muestra.
                         ficha.errores.forEach { Vinieta(t(it), traduccionActiva) }
@@ -343,7 +370,7 @@ private fun FichaContenido(
                             .forEach { Vinieta(it) }
                     }
 
-                    SeccionPlegable(titulo = "${et("vocabulario")} (${ficha.vocabulario.size})", idiomaInterfaz = idiomaInterfaz) {
+                    SeccionPlegable(titulo = "${et("vocabulario")} (${ficha.vocabulario.size})", idiomaInterfaz = idiomaInterfaz, anclaEncabezado = "tour-ficha-vocabulario") {
                         Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreItems)) {
                             // Las glosas siempre en el idioma de app: el switch
                             // cambia la prosa, no la traduccion del vocabulario.
@@ -359,7 +386,7 @@ private fun FichaContenido(
                         }
                     }
 
-                    Seccion(et("mision")) {
+                    Seccion(et("mision"), Modifier.anclaTour("tour-ficha-mision")) {
                         Text(m(t(ficha.mision.consigna)), style = MaterialTheme.typography.bodyLarge)
                         ficha.mision.requisitos.forEach { Vinieta(t(it), traduccionActiva) }
                     }
@@ -370,13 +397,15 @@ private fun FichaContenido(
                         }
                     }
 
-                    Seccion(et("autochequeo")) {
+                    Seccion(et("autochequeo"), Modifier.anclaTour("tour-ficha-autochequeo")) {
                         ficha.autochequeo.forEach { Vinieta(t(it), traduccionActiva) }
                     }
 
                     // Siempre en el idioma que se aprende (tabla 2 de REGLAS-PREVENCION), no sigue al switch;
                     // el titulo de la tarjeta si (es una seccion de la ficha).
-                    TarjetaPrompt(ficha.promptCorreccion.promptEnIdiomaAprendido(ficha.idioma), et("promptCorreccion"), idiomaInterfaz)
+                    Box(Modifier.anclaTour("tour-ficha-prompt")) {
+                        TarjetaPrompt(ficha.promptCorreccion.promptEnIdiomaAprendido(ficha.idioma), et("promptCorreccion"), idiomaInterfaz)
+                    }
 
                     // Prompt de voz: siempre en el idioma que se aprende (la IA
                     // tiene que hablarlo), sin switch de traduccion; solo si hay
@@ -449,6 +478,7 @@ private fun SwitchDesafioFinde(activo: Boolean, idiomaInterfaz: Idioma, onCambia
     FilterChip(
         selected = activo,
         onClick = { onCambiar(!activo) },
+        modifier = Modifier.anclaTour("tour-desafio-interruptor"),
         label = { Text(etiquetaDesafioFinde(idiomaInterfaz)) },
         leadingIcon = {
             Icon(
@@ -539,6 +569,7 @@ private fun iconosReto(nivel: Nivel): List<ImageVector> =
 private fun RetoFinDeSemana(ficha: Ficha, idiomaInterfaz: Idioma, consigna: AnnotatedString, habilidad: String, tema: String) {
     Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones)) {
         Seccion(etiquetaDesafioFinde(idiomaInterfaz)) {
+            Column(Modifier.anclaTour("tour-desafio-consigna"), verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
             // Lo primero que se lee: la tarea oral. La consigna es PROSA de dos a cuatro renglones, no un titular:
             // tamano de cuerpo (bodyLarge) con peso medio, sin negrita. La jerarquia la da la posicion, el aire
             // alrededor y el color pleno (onSurface) contra el onSurfaceVariant de la linea de encuadre que la precede.
@@ -554,6 +585,7 @@ private fun RetoFinDeSemana(ficha: Ficha, idiomaInterfaz: Idioma, consigna: Anno
                 color = MaterialTheme.colorScheme.onSurface,
                 modifier = Modifier.padding(vertical = 6.dp),
             )
+            }
             FilaDato(etiquetaBibliotecaTema(idiomaInterfaz), tema)
             FilaDato(etiquetaRetoHabilidad(idiomaInterfaz), habilidad)
         }
@@ -586,9 +618,9 @@ private fun FilaDato(etiqueta: String, valor: String) {
 }
 
 @Composable
-private fun Seccion(titulo: String, contenido: @Composable () -> Unit) {
+private fun Seccion(titulo: String, modifier: Modifier = Modifier, contenido: @Composable () -> Unit) {
     // El espacio entre viñetas / renglones de la lista es proporcional a la letra (ui/Espaciado.kt), no 8.dp fijos.
-    Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
+    Column(modifier, verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
         Text(titulo, style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
         contenido()
     }

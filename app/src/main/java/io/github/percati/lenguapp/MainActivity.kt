@@ -93,6 +93,9 @@ import io.github.percati.lenguapp.audio.SinAudio
 import io.github.percati.lenguapp.audio.cargarIndiceAudioDesdeAssets
 import io.github.percati.lenguapp.ui.AjustarIconosDeBarras
 import io.github.percati.lenguapp.ui.BienvenidaScreen
+import io.github.percati.lenguapp.ui.CATALOGO_TOURS
+import io.github.percati.lenguapp.ui.anclaTour
+import io.github.percati.lenguapp.modelo.Tour
 import io.github.percati.lenguapp.ui.GestorTours
 import io.github.percati.lenguapp.ui.LocalGestorTours
 import io.github.percati.lenguapp.ui.TutorialOverlay
@@ -267,7 +270,7 @@ internal fun LenguAppApp(
     // Audio de los textos (Ronda M): por omision no hay, y entonces ninguna pantalla dibuja el boton.
     controlAudio: ControlAudio = SinAudio,
     // El tutorial con foco (Ronda Q): quien sabe que tour esta en marcha. Por omision no hay pasos que lanzar.
-    gestorTours: GestorTours = remember { GestorTours() },
+    gestorTours: GestorTours = remember { GestorTours(CATALOGO_TOURS) },
 ) {
     var ajustes by remember { mutableStateOf(ajustesIniciales) }
     var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
@@ -401,6 +404,13 @@ internal fun LenguAppApp(
         onGuardarAjustes(nuevos)
     }
 
+    // Tutorial con foco: el estado persistente (que tours se vieron, si se salto todo) sale de los ajustes. Se vuelca al gestor en cada
+    // composicion, asi los avisos de abajo siempre ven el ajuste vigente. «Saltar» deja todos los tours como vistos y marca «salteado».
+    gestorTours.vistos = ajustes.toursVistos
+    gestorTours.salteados = ajustes.toursSalteados
+    gestorTours.alVerTour = { tour -> actualizarAjustes(ajustes.copy(toursVistos = ajustes.toursVistos + tour)) }
+    gestorTours.alSaltarTodos = { actualizarAjustes(ajustes.copy(toursVistos = Tour.entries.toSet(), toursSalteados = true)) }
+
     CompositionLocalProvider(
         LocalControlAudio provides controlAudio,
         LocalVelocidadAudio provides ajustes.velocidadAudio,
@@ -472,7 +482,8 @@ internal fun LenguAppApp(
                         onAcercaDe = { navController.navigate(DESTINO_ACERCA) },
                         onVerBienvenida = {
                             bienvenidaRepetida = true
-                            actualizarAjustes(ajustes.copy(bienvenidaCompletada = false))
+                            // Repetir tambien reinicia el tutorial: los tours vuelven a lanzarse en cada seccion.
+                            actualizarAjustes(ajustes.copy(bienvenidaCompletada = false, toursVistos = emptySet(), toursSalteados = false))
                         },
                         onVolver = { navController.popBackStack() },
                     )
@@ -626,7 +637,7 @@ private fun PantallaPrincipal(
             PantallaSemana(
                 resultado, ajustes.idiomaBase, idiomaAplicacion,
                 fecha = fechaVista, estadoGuardados = estadoGuardados, promptsVoz = promptsVoz, onPlanilla = onPlanilla,
-                topicNombres = topicNombres,
+                topicNombres = topicNombres, tourHabilitado = true,
             )
         }
     }
@@ -682,7 +693,7 @@ private fun BarraNavegacion(
     onBiblioteca: () -> Unit,
 ) {
     val textoSemana = etiquetaSemana(idiomaAplicacion)
-    Column(modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp)) {
+    Column(modifier = Modifier.fillMaxWidth().padding(horizontal = 4.dp, vertical = 4.dp).anclaTour("tour-barra-superior")) {
         Row(modifier = Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
             // AJUSTES-FASE-7.md, bloque 1: el acento se reserva para lo
             // accionable -- flechas de navegacion incluidas -- asi que se

@@ -7,6 +7,7 @@ import io.github.percati.lenguapp.modelo.FuenteTema
 import io.github.percati.lenguapp.modelo.Idioma
 import io.github.percati.lenguapp.modelo.ModoTema
 import io.github.percati.lenguapp.modelo.Nivel
+import io.github.percati.lenguapp.modelo.Tour
 import io.github.percati.lenguapp.modelo.VelocidadAudio
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
@@ -21,6 +22,8 @@ private const val CLAVE_MODO_TEMA = "modo_tema"
 private const val CLAVE_FUENTE_TEMA = "fuente_tema"
 private const val CLAVE_BIENVENIDA_COMPLETADA = "bienvenida_completada"
 private const val CLAVE_VELOCIDAD_AUDIO = "velocidad_audio"
+private const val CLAVE_TOURS_VISTOS = "tours_vistos"
+private const val CLAVE_TOURS_SALTEADOS = "tours_salteados"
 
 // Esquema viejo (Fases 3-5): un idioma y un nivel singulares. Se lee una
 // sola vez para migrar; nunca se vuelve a escribir en este formato.
@@ -60,6 +63,8 @@ fun cargarAjustes(context: Context): Ajustes {
             fuente = nombreAEnum(prefs.getString(CLAVE_FUENTE_TEMA, null), FuenteTema.SISTEMA),
             bienvenidaCompletada = prefs.getBoolean(CLAVE_BIENVENIDA_COMPLETADA, false),
             velocidadAudio = nombreAEnum(prefs.getString(CLAVE_VELOCIDAD_AUDIO, null), VelocidadAudio.NORMAL),
+            toursVistos = leerToursVistos(prefs.getString(CLAVE_TOURS_VISTOS, null)),
+            toursSalteados = prefs.getBoolean(CLAVE_TOURS_SALTEADOS, false),
         )
     }
 
@@ -79,6 +84,8 @@ fun cargarAjustes(context: Context): Ajustes {
         fuente = nombreAEnum(prefs.getString(CLAVE_FUENTE_TEMA, null), FuenteTema.SISTEMA),
         bienvenidaCompletada = prefs.getBoolean(CLAVE_BIENVENIDA_COMPLETADA, false),
         velocidadAudio = nombreAEnum(prefs.getString(CLAVE_VELOCIDAD_AUDIO, null), VelocidadAudio.NORMAL),
+        toursVistos = leerToursVistos(prefs.getString(CLAVE_TOURS_VISTOS, null)),
+        toursSalteados = prefs.getBoolean(CLAVE_TOURS_SALTEADOS, false),
     )
     guardarAjustes(context, migrado)
     return migrado
@@ -95,10 +102,19 @@ fun guardarAjustes(context: Context, ajustes: Ajustes) {
         .putString(CLAVE_FUENTE_TEMA, ajustes.fuente.name)
         .putBoolean(CLAVE_BIENVENIDA_COMPLETADA, ajustes.bienvenidaCompletada)
         .putString(CLAVE_VELOCIDAD_AUDIO, ajustes.velocidadAudio.name)
+        .putString(CLAVE_TOURS_VISTOS, ajustes.toursVistos.map { it.name }.sorted().joinToString(","))
+        .putBoolean(CLAVE_TOURS_SALTEADOS, ajustes.toursSalteados)
         .remove(CLAVE_VIEJA_IDIOMA_APRENDIDO)
         .remove(CLAVE_VIEJA_NIVEL)
         .apply()
 }
+
+/**
+ * Los tours vistos guardados («FICHA,AJUSTES»). Sin la clave (instalacion nueva o version anterior) ninguno esta visto; un nombre
+ * desconocido se ignora. Una cadena vacia es un valor valido: ninguno visto.
+ */
+internal fun leerToursVistos(guardado: String?): Set<Tour> =
+    guardado.orEmpty().split(',').mapNotNull { n -> Tour.entries.firstOrNull { it.name == n.trim() } }.toSet()
 
 /**
  * El tema guardado por versiones anteriores: ACADEMIA pasa a PAPEL, EDITORIAL a MAR, y cualquier
