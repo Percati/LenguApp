@@ -62,6 +62,7 @@ import io.github.percati.lenguapp.presentacion.avisoGlosasSoloEnEspanol
  * bloques A-C).
  */
 const val TAG_VER_BIENVENIDA = "ver-bienvenida"
+const val TAG_ACERCA_DE = "acerca-de"
 const val TAG_VELOCIDAD_AUDIO_PREFIJO = "velocidad-audio-"
 
 @Composable
@@ -86,8 +87,6 @@ fun AjustesScreen(
             TextButton(onClick = onVolver) { Text("< ${etiquetaVolver(idiomaAplicacionEfectivo)}") }
             Text(etiquetaAjustes(idiomaAplicacionEfectivo), style = MaterialTheme.typography.headlineSmall)
         }
-
-        EncabezadoApp(idiomaAplicacionEfectivo, onAcercaDe, onVerBienvenida)
 
         SelectorIdiomasAprendidos(
             idiomasAprendidos = ajustes.idiomasAprendidos,
@@ -139,6 +138,10 @@ fun AjustesScreen(
             elegida = ajustes.velocidadAudio,
             onElegir = { onAjustesCambiados(ajustes.copy(velocidadAudio = it)) },
         )
+
+        // Lo que se usa seguido va arriba (los ajustes); lo que se consulta una vez, al fondo: el nombre de la app, «Ver la
+        // bienvenida otra vez» y, ultima fila de la pantalla, «Acerca de».
+        EncabezadoApp(idiomaAplicacionEfectivo, onAcercaDe, onVerBienvenida)
     }
 }
 
@@ -344,17 +347,17 @@ private fun EncabezadoApp(idiomaInterfaz: Idioma, onAcercaDe: () -> Unit, onVerB
             color = MaterialTheme.colorScheme.onSurfaceVariant,
         )
         Row(
-            modifier = Modifier.fillMaxWidth().clickable(onClick = onAcercaDe).padding(vertical = 8.dp),
-            verticalAlignment = Alignment.CenterVertically,
-        ) {
-            Text(etiquetaAcercaDe(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
-            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
-        }
-        Row(
             modifier = Modifier.fillMaxWidth().clickable(onClick = onVerBienvenida).padding(vertical = 8.dp).testTag(TAG_VER_BIENVENIDA),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Text(etiquetaVerBienvenida(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
+            Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
+        }
+        Row(
+            modifier = Modifier.fillMaxWidth().clickable(onClick = onAcercaDe).padding(vertical = 8.dp).testTag(TAG_ACERCA_DE),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            Text(etiquetaAcercaDe(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
             Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, contentDescription = null)
         }
     }

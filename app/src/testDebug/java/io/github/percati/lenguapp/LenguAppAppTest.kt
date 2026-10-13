@@ -9,6 +9,7 @@ import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import io.github.percati.lenguapp.datos.parsearCalendario
 import io.github.percati.lenguapp.datos.parsearContenido
 import io.github.percati.lenguapp.modelo.Ajustes
@@ -371,13 +372,14 @@ class LenguAppAppTest {
     }
 
     @Test
-    fun `Ajustes lleva arriba el nombre de la app, la linea fija y la fila Acerca de, que se abre y se vuelve`() {
+    fun `Ajustes lleva al final el nombre de la app, la linea fija y la fila Acerca de, que se abre y se vuelve`() {
         mostrarApp(Idioma.ES)
         composeTestRule.onNodeWithText("Ajustes").performClick()
 
         composeTestRule.onNodeWithText("LenguApp").assertExists()
         composeTestRule.onNodeWithText("Para fijar lo que ya aprendiste en tu curso.").assertExists()
-        composeTestRule.onNodeWithText("Acerca de").performClick()
+        // «Acerca de» es la ultima fila de la pantalla: hay que desplazarse hasta ella
+        composeTestRule.onNodeWithText("Acerca de").performScrollTo().performClick()
 
         composeTestRule.onNodeWithText("Qué es y qué no es").assertExists()
         composeTestRule.onNode(hasText("LenguApp no enseña un idioma", substring = true)).assertExists()
