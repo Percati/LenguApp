@@ -46,7 +46,8 @@ enum class ClaveTexto {
     BIBLIOTECA_VISTA_VERBOS, VERBO_REFLEXIVO, VERBO_TRENNBAR, VERBO_MIT_PRAPOSITION, VERBO_MIT_DATIV, VERBO_PHRASAL_SEPARABLE, VERBO_PHRASAL_INSEPARABLE, VERBO_VERBO_PREPOSICION, VERBOS_VACIO,
     VERBOS_SIN_RESULTADOS, BUSCAR_BORRAR,
     SECCION_CONTRAER, SECCION_EXPANDIR, AUDIO_ESCUCHAR, AUDIO_DETENER,
-    TOUR_FICHA_1_T, TOUR_FICHA_1_C, TOUR_FICHA_2_T, TOUR_FICHA_2_C, TOUR_FICHA_3_T, TOUR_FICHA_3_C, TOUR_FICHA_4_T, TOUR_FICHA_4_C, TOUR_FICHA_5_T, TOUR_FICHA_5_C, TOUR_FICHA_6_T, TOUR_FICHA_6_C, TOUR_FICHA_7_T, TOUR_FICHA_7_C, TOUR_FICHA_8_T, TOUR_FICHA_8_C, TOUR_BIBLIOTECA_1_T, TOUR_BIBLIOTECA_1_C, TOUR_BIBLIOTECA_2_T, TOUR_BIBLIOTECA_2_C, TOUR_BIBLIOTECA_3_T, TOUR_BIBLIOTECA_3_C, TOUR_BIBLIOTECA_4_T, TOUR_BIBLIOTECA_4_C, TOUR_BIBLIOTECA_5_T, TOUR_BIBLIOTECA_5_C, TOUR_GUARDADOS_1_T, TOUR_GUARDADOS_1_C, TOUR_GUARDADOS_2_T, TOUR_GUARDADOS_2_C, TOUR_GUARDADOS_3_T, TOUR_GUARDADOS_3_C, TOUR_AJUSTES_1_T, TOUR_AJUSTES_1_C, TOUR_AJUSTES_2_T, TOUR_AJUSTES_2_C, TOUR_AJUSTES_3_T, TOUR_AJUSTES_3_C, TOUR_AJUSTES_4_T, TOUR_AJUSTES_4_C, TOUR_DESAFIO_1_T, TOUR_DESAFIO_1_C, TOUR_DESAFIO_2_T, TOUR_DESAFIO_2_C,
+    TOUR_FICHA_1_T, TOUR_FICHA_1_C, TOUR_FICHA_6_T, TOUR_FICHA_6_C, TOUR_FICHA_3_T, TOUR_FICHA_3_C, TOUR_FICHA_4_T, TOUR_FICHA_4_C, TOUR_FICHA_5_T, TOUR_FICHA_5_C, TOUR_FICHA_7_T, TOUR_FICHA_7_C, TOUR_FICHA_8_T, TOUR_FICHA_8_C, TOUR_FICHA_10_T, TOUR_FICHA_10_C, TOUR_BIBLIOTECA_1_T, TOUR_BIBLIOTECA_1_C, TOUR_BIBLIOTECA_2_T, TOUR_BIBLIOTECA_2_C, TOUR_BIBLIOTECA_3_T, TOUR_BIBLIOTECA_3_C, TOUR_BIBLIOTECA_4_T, TOUR_BIBLIOTECA_4_C, TOUR_BIBLIOTECA_5_T, TOUR_BIBLIOTECA_5_C, TOUR_GUARDADOS_1_T, TOUR_GUARDADOS_1_C, TOUR_GUARDADOS_2_T, TOUR_GUARDADOS_2_C, TOUR_GUARDADOS_3_T, TOUR_GUARDADOS_3_C, TOUR_AJUSTES_1_T, TOUR_AJUSTES_1_C, TOUR_AJUSTES_2_T, TOUR_AJUSTES_2_C, TOUR_AJUSTES_3_T, TOUR_AJUSTES_3_C, TOUR_AJUSTES_4_T, TOUR_AJUSTES_4_C, TOUR_DESAFIO_1_T, TOUR_DESAFIO_1_C, TOUR_DESAFIO_2_T, TOUR_DESAFIO_2_C,
+    TOUR_FICHA_2_T, TOUR_FICHA_2_C, TOUR_FICHA_9_T, TOUR_FICHA_9_C,
     TOUR_ATRAS, TOUR_ATRAS_CD, TOUR_SIGUIENTE, TOUR_SALTAR, TOUR_LISTO, TOUR_PASO, TOUR_SIGUIENTE_CD, TOUR_SALTAR_CD, TOUR_LISTO_CD,
     VELOCIDAD_AUDIO_TITULO, VELOCIDAD_AUDIO_AYUDA, VELOCIDAD_AUDIO_VALOR,
     BIENVENIDA_TITULO, BIENVENIDA_IDIOMA_INICIAL, BIENVENIDA_ELEGIR_PRACTICA, BIENVENIDA_EMPEZAR, BIENVENIDA_VER_DE_NUEVO,
@@ -716,7 +717,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Un tema e un'abilità, dal lunedì alla domenica. Non serve finire tutto: fai quello che puoi.",
         Idioma.PT to "Um tema e uma habilidade, de segunda a domingo. Não precisa terminar tudo: faça o que puder.",
     ),
-    ClaveTexto.TOUR_FICHA_2_T to mapOf(
+    ClaveTexto.TOUR_FICHA_6_T to mapOf(
         Idioma.ES to "La misión",
         Idioma.EN to "The mission",
         Idioma.DE to "Die Wochenaufgabe",
@@ -724,7 +725,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "La missione",
         Idioma.PT to "A missão",
     ),
-    ClaveTexto.TOUR_FICHA_2_C to mapOf(
+    ClaveTexto.TOUR_FICHA_6_C to mapOf(
         Idioma.ES to "Lo que te pedimos que produzcas esta semana, con sus requisitos y sus micro-tareas si quieres ir por partes.",
         Idioma.EN to "What we ask you to produce this week, with its requirements and micro-tasks if you want to go step by step.",
         Idioma.DE to "Das, was du diese Woche hervorbringen sollst, mit Anforderungen und Mikroaufgaben, falls du in Etappen vorgehen willst.",
@@ -780,7 +781,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Tocca l'intestazione per aprire l'elenco. Con la stella salvi ciò che ti serve; poi lo troverai in Salvati.",
         Idioma.PT to "Toque no cabeçalho para abrir a lista. Com a estrela você salva o que for útil; depois vai encontrar em Salvos.",
     ),
-    ClaveTexto.TOUR_FICHA_6_T to mapOf(
+    ClaveTexto.TOUR_FICHA_7_T to mapOf(
         Idioma.ES to "El autochequeo",
         Idioma.EN to "The self-check",
         Idioma.DE to "Die Selbstkontrolle",
@@ -788,7 +789,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "L'autoverifica",
         Idioma.PT to "A autoavaliação",
     ),
-    ClaveTexto.TOUR_FICHA_6_C to mapOf(
+    ClaveTexto.TOUR_FICHA_7_C to mapOf(
         Idioma.ES to "Antes de darla por hecha, mira si cumples esto.",
         Idioma.EN to "Before calling it done, check whether you meet this.",
         Idioma.DE to "Bevor du die Woche als erledigt betrachtest, prüfe, ob du das erfüllst.",
@@ -796,7 +797,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Prima di darla per conclusa, controlla se rispetti questo.",
         Idioma.PT to "Antes de dar a semana por concluída, veja se você cumpre isto.",
     ),
-    ClaveTexto.TOUR_FICHA_7_T to mapOf(
+    ClaveTexto.TOUR_FICHA_8_T to mapOf(
         Idioma.ES to "Los prompts y la planilla",
         Idioma.EN to "The prompts and the sheet",
         Idioma.DE to "Die Prompts und das Blatt",
@@ -804,7 +805,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "I prompt e la scheda",
         Idioma.PT to "Os prompts e a ficha",
     ),
-    ClaveTexto.TOUR_FICHA_7_C to mapOf(
+    ClaveTexto.TOUR_FICHA_8_C to mapOf(
         Idioma.ES to "Un texto listo para pegarle a una IA y que te corrija, y una hoja para imprimir y darle a quien te enseña. Van siempre en el idioma que estás aprendiendo, para que la respuesta también.",
         Idioma.EN to "A text ready to paste into an AI so it corrects you, and a sheet to print and hand to whoever teaches you. They are always in the language you're learning, so the reply is too.",
         Idioma.DE to "Ein Text, den du einer KI zum Korrigieren einfügen kannst, und ein Blatt zum Ausdrucken für alle, die dich unterrichten. Beide sind immer in der Sprache, die du lernst, damit auch die Antwort darin kommt.",
@@ -812,7 +813,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Un testo pronto da incollare in un'IA perché ti corregga, e una scheda da stampare e consegnare a chi ti insegna. Sono sempre nella lingua che stai imparando, così anche la risposta lo è.",
         Idioma.PT to "Um texto pronto para colar em uma IA e ela corrigir você, e uma folha para imprimir e entregar a quem ensina você. Ficam sempre no idioma que você está aprendendo, para que a resposta também fique.",
     ),
-    ClaveTexto.TOUR_FICHA_8_T to mapOf(
+    ClaveTexto.TOUR_FICHA_10_T to mapOf(
         Idioma.ES to "Biblioteca, Guardados y Ajustes",
         Idioma.EN to "Library, Saved and Settings",
         Idioma.DE to "Bibliothek, Gespeichert und Einstellungen",
@@ -820,7 +821,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Biblioteca, Salvati e Impostazioni",
         Idioma.PT to "Biblioteca, Salvos e Configurações",
     ),
-    ClaveTexto.TOUR_FICHA_8_C to mapOf(
+    ClaveTexto.TOUR_FICHA_10_C to mapOf(
         Idioma.ES to "Arriba tienes Biblioteca (todo el vocabulario y las expresiones del año), Guardados (lo que marcaste con la estrella) y Ajustes. Cada una se explica sola cuando entres.",
         Idioma.EN to "At the top you have Library (all of the year's vocabulary and expressions), Saved (what you starred) and Settings. Each one explains itself when you open it.",
         Idioma.DE to "Oben findest du Bibliothek (der gesamte Wortschatz und alle Redewendungen des Jahres), Gespeichert (was du mit dem Stern markiert hast) und Einstellungen. Jede erklärt sich selbst, wenn du sie öffnest.",
@@ -1051,6 +1052,39 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "À chaque ouverture de l'appli : rien n'est enregistré.",
         Idioma.IT to "A ogni apertura dell'app: non si salva nulla.",
         Idioma.PT to "Toda vez que você abre o app: nada é salvo.",
+    ),
+    // --- Tutorial: pasos nuevos de la ficha (Ronda R). TEXTO PROVISIONAL: Fer edita los textos en docs/tutorial-textos.md ---
+    ClaveTexto.TOUR_FICHA_2_T to mapOf(
+        Idioma.ES to "Ficha en tu idioma",
+        Idioma.EN to "Sheet in your language",
+        Idioma.DE to "Blatt in deiner Sprache",
+        Idioma.FR to "Fiche dans ta langue",
+        Idioma.IT to "Scheda nella tua lingua",
+        Idioma.PT to "Ficha no seu idioma",
+    ),
+    ClaveTexto.TOUR_FICHA_2_C to mapOf(
+        Idioma.ES to "En A2 y B1 puedes ver la ficha traducida a tu idioma o en el idioma que estás aprendiendo. Desde B2 ya no aparece: la ficha va siempre en el idioma que aprendes.",
+        Idioma.EN to "In A2 and B1 you can see the sheet translated into your language or in the language you're learning. From B2 on it no longer appears: the sheet is always in the language you're learning.",
+        Idioma.DE to "In A2 und B1 kannst du das Blatt in deine Sprache übersetzt oder in der Sprache sehen, die du lernst. Ab B2 erscheint dieser Schalter nicht mehr: Das Blatt ist immer in der Sprache, die du lernst.",
+        Idioma.FR to "En A2 et B1, tu peux voir la fiche traduite dans ta langue ou dans la langue que tu apprends. À partir de B2, cet interrupteur n'apparaît plus : la fiche est toujours dans la langue que tu apprends.",
+        Idioma.IT to "In A2 e B1 puoi vedere la scheda tradotta nella tua lingua o nella lingua che stai imparando. Da B2 questo interruttore non compare più: la scheda è sempre nella lingua che impari.",
+        Idioma.PT to "Em A2 e B1 você pode ver a ficha traduzida para o seu idioma ou no idioma que está aprendendo. A partir do B2 este interruptor não aparece mais: a ficha fica sempre no idioma que você aprende.",
+    ),
+    ClaveTexto.TOUR_FICHA_9_T to mapOf(
+        Idioma.ES to "La planilla para tu profesor",
+        Idioma.EN to "The sheet for your teacher",
+        Idioma.DE to "Das Blatt für deine Lehrperson",
+        Idioma.FR to "La fiche pour ton enseignant",
+        Idioma.IT to "La scheda per il tuo insegnante",
+        Idioma.PT to "A ficha para o seu professor",
+    ),
+    ClaveTexto.TOUR_FICHA_9_C to mapOf(
+        Idioma.ES to "Genera una hoja en PDF, en el idioma que aprendes y en una sola carilla, para imprimir y darle a quien te da clase.",
+        Idioma.EN to "It generates a PDF sheet, in the language you're learning and on a single page, to print and hand to whoever teaches you.",
+        Idioma.DE to "Es erzeugt ein PDF-Blatt in der Sprache, die du lernst, auf einer einzigen Seite, zum Ausdrucken und Weitergeben an die Person, die dich unterrichtet.",
+        Idioma.FR to "Elle génère une fiche en PDF, dans la langue que tu apprends et sur une seule page, à imprimer et à remettre à la personne qui t'enseigne.",
+        Idioma.IT to "Genera una scheda in PDF, nella lingua che impari e su una sola facciata, da stampare e consegnare a chi ti insegna.",
+        Idioma.PT to "Gera uma folha em PDF, no idioma que você aprende e em uma única página, para imprimir e entregar a quem dá aula para você.",
     ),
     // --- Velocidad del audio (Ronda O) ---
     ClaveTexto.VELOCIDAD_AUDIO_TITULO to mapOf(

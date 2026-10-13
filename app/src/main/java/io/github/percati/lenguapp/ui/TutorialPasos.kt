@@ -4,19 +4,24 @@ import io.github.percati.lenguapp.modelo.Tour
 
 /**
  * Los pasos de los cuatro tours y el del desafio (Ronda Q), en el orden y con el contenido de docs/tutorial-guion.md. Cada paso
- * nombra su ancla (un testTag que pone `anclaTour` en su pantalla); un test comprueba que todas existen. Ningun tour pasa de 8 pasos.
+ * nombra su ancla (un testTag que pone `anclaTour` en su pantalla); un test comprueba que todas existen. Ningun tour pasa de 10 pasos.
  * (El texto de «que es esto y que no es» vive en la bienvenida y en «Acerca de»; el cierre del tour de la ficha ya no lo repite.)
  */
 val CATALOGO_TOURS: Map<Tour, List<PasoTour>> = mapOf(
+    // En el orden de la pantalla, de arriba hacia abajo. Excepcion deliberada: el interruptor de traducir esta encima del titulo (en la
+    // franja fija) pero va en el paso 2, para abrir el tour con «Esta es tu semana» y no con un interruptor que solo existe en A2 y B1.
+    // El cierre senala la barra de arriba (se ve siempre). Los pasos 2 y 9 se saltean solos si su ancla no existe (B2+, sin planilla).
     Tour.FICHA to listOf(
         PasoTour("tour-ficha-titulo", ClaveTexto.TOUR_FICHA_1_T, ClaveTexto.TOUR_FICHA_1_C),
-        PasoTour("tour-ficha-mision", ClaveTexto.TOUR_FICHA_2_T, ClaveTexto.TOUR_FICHA_2_C),
+        PasoTour("tour-ficha-traducir", ClaveTexto.TOUR_FICHA_2_T, ClaveTexto.TOUR_FICHA_2_C),
         PasoTour("tour-ficha-descripcion", ClaveTexto.TOUR_FICHA_3_T, ClaveTexto.TOUR_FICHA_3_C),
         PasoTour("tour-ficha-errores", ClaveTexto.TOUR_FICHA_4_T, ClaveTexto.TOUR_FICHA_4_C),
         PasoTour("tour-ficha-vocabulario", ClaveTexto.TOUR_FICHA_5_T, ClaveTexto.TOUR_FICHA_5_C),
-        PasoTour("tour-ficha-autochequeo", ClaveTexto.TOUR_FICHA_6_T, ClaveTexto.TOUR_FICHA_6_C),
-        PasoTour("tour-ficha-prompt", ClaveTexto.TOUR_FICHA_7_T, ClaveTexto.TOUR_FICHA_7_C),
-        PasoTour("tour-barra-superior", ClaveTexto.TOUR_FICHA_8_T, ClaveTexto.TOUR_FICHA_8_C),
+        PasoTour("tour-ficha-mision", ClaveTexto.TOUR_FICHA_6_T, ClaveTexto.TOUR_FICHA_6_C),
+        PasoTour("tour-ficha-autochequeo", ClaveTexto.TOUR_FICHA_7_T, ClaveTexto.TOUR_FICHA_7_C),
+        PasoTour("tour-ficha-prompt", ClaveTexto.TOUR_FICHA_8_T, ClaveTexto.TOUR_FICHA_8_C),
+        PasoTour("tour-ficha-planilla", ClaveTexto.TOUR_FICHA_9_T, ClaveTexto.TOUR_FICHA_9_C),
+        PasoTour("tour-barra-superior", ClaveTexto.TOUR_FICHA_10_T, ClaveTexto.TOUR_FICHA_10_C),
     ),
     Tour.BIBLIOTECA to listOf(
         PasoTour("tour-biblioteca-vistas", ClaveTexto.TOUR_BIBLIOTECA_1_T, ClaveTexto.TOUR_BIBLIOTECA_1_C),
@@ -42,4 +47,5 @@ val CATALOGO_TOURS: Map<Tour, List<PasoTour>> = mapOf(
     ),
 )
 
-const val MAX_PASOS_POR_TOUR = 8
+/** Tope definitivo (Ronda R): diez pasos ya es un tour largo. Si alguna vez hace falta un paso 11, se parte el tour, no se sube el tope. */
+const val MAX_PASOS_POR_TOUR = 10

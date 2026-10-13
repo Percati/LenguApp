@@ -73,21 +73,23 @@ class TutorialPantallaTest {
 
     private val lunes = LocalDate.of(2026, 9, 7)
     private val sabado = LocalDate.of(2026, 9, 12)
+    private val lunesA2 = LocalDate.of(2026, 10, 5) // semana 41: la primera con contenido de A2
     private val sinContenido = LocalDate.of(2035, 1, 3)
 
     private val guardados = mutableListOf<Ajustes>()
     private lateinit var gestor: GestorTours
 
-    private fun mostrar(fecha: LocalDate, vistos: Set<Tour>, salteados: Boolean = false) {
+    private fun mostrar(fecha: LocalDate, vistos: Set<Tour>, salteados: Boolean = false, nivel: Nivel = Nivel.B2, conPlanilla: Boolean = false) {
         gestor = GestorTours(CATALOGO_TOURS)
         composeTestRule.setContent {
             LenguAppApp(
                 ajustesIniciales = Ajustes(
-                    idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2), idiomaBase = Idioma.ES, idiomaInterfaz = Idioma.ES,
+                    idiomasAprendidos = mapOf(Idioma.DE to nivel), idiomaBase = Idioma.ES, idiomaInterfaz = Idioma.ES,
                     bienvenidaCompletada = true, toursVistos = vistos, toursSalteados = salteados,
                 ),
                 idiomasConContenido = setOf(Idioma.DE, Idioma.EN),
-                nivelesConContenido = mapOf(Idioma.DE to setOf(Nivel.B2), Idioma.EN to setOf(Nivel.C1)),
+                nivelesConContenido = mapOf(Idioma.DE to setOf(Nivel.A2, Nivel.B2), Idioma.EN to setOf(Nivel.C1)),
+                planillaTextos = if (conPlanilla) io.github.percati.lenguapp.datos.cargarPlanillaTextosDesdeAssets(composeTestRule.activity) else emptyMap(),
                 resolver = ::resolverDePrueba,
                 fechaInicial = fecha,
                 onGuardarAjustes = { guardados += it },
@@ -100,7 +102,8 @@ class TutorialPantallaTest {
 
     private fun asentar() {
         composeTestRule.waitForIdle()
-        composeTestRule.mainClock.advanceTimeBy(300)
+        // lo bastante para que un paso sin ancla agote su espera (600 ms) y se saltee
+        composeTestRule.mainClock.advanceTimeBy(800)
         composeTestRule.waitForIdle()
     }
 
@@ -116,9 +119,33 @@ class TutorialPantallaTest {
     // ---------------- la red: todas las anclas existen ----------------
 
     @Test
-    fun `todas las anclas del tour de la ficha existen en la pantalla principal`() {
-        mostrar(lunes, todosVistos)
+    fun `todas las anclas del tour de la ficha existen en la pantalla principal, en una ficha A2 con planilla`() {
+        // A2: existe el interruptor de traducir; con planillaTextos existe el boton de la planilla
+        mostrar(lunesA2, todosVistos, nivel = Nivel.A2, conPlanilla = true)
         verificarAnclas(Tour.FICHA)
+    }
+
+    @Test
+    fun `las anclas de la ficha estan en el orden de la pantalla, sin zigzag`() {
+        mostrar(lunesA2, todosVistos, nivel = Nivel.A2, conPlanilla = true)
+        val arriba = listOf(
+            "tour-ficha-titulo", "tour-ficha-descripcion", "tour-ficha-errores", "tour-ficha-vocabulario",
+            "tour-ficha-mision", "tour-ficha-autochequeo", "tour-ficha-prompt", "tour-ficha-planilla",
+        ).map { gestor.registro.rectDe(it)!!.top }
+        assertEquals("de arriba hacia abajo: $arriba", arriba.sorted(), arriba)
+        assertEquals("sin repetir posiciones", arriba.size, arriba.toSet().size)
+        // el interruptor de traducir esta en la franja fija, encima del titulo, pero el tour lo toma en el paso 2
+        assertTrue(gestor.registro.rectDe("tour-ficha-traducir")!!.top < gestor.registro.rectDe("tour-ficha-titulo")!!.top)
+    }
+
+    @Test
+    fun `en B2 sin planilla el tour de la ficha se saltea el interruptor y la planilla, y cuenta 8 pasos sin saltar numeros`() {
+        mostrar(lunes, vistos = emptySet())
+        composeTestRule.onNodeWithText(etiquetaTourPaso(1, 8, Idioma.ES)).assertExists()
+        composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+        asentar()
+        // del paso 1 al 3 del catalogo (el interruptor no existe en B2): se muestra como «2 de 8»
+        composeTestRule.onNodeWithText(etiquetaTourPaso(2, 8, Idioma.ES)).assertExists()
     }
 
     @Test

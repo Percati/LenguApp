@@ -12,11 +12,36 @@ import org.junit.Test
 class TourCatalogoTest {
 
     @Test
-    fun `cada tour tiene los pasos del guion y ninguno pasa de 8`() {
-        assertEquals(mapOf(Tour.FICHA to 8, Tour.BIBLIOTECA to 5, Tour.GUARDADOS to 3, Tour.AJUSTES to 4, Tour.DESAFIO to 2),
+    fun `cada tour tiene sus pasos y ninguno pasa del tope de 10`() {
+        assertEquals(mapOf(Tour.FICHA to 10, Tour.BIBLIOTECA to 5, Tour.GUARDADOS to 3, Tour.AJUSTES to 4, Tour.DESAFIO to 2),
             CATALOGO_TOURS.mapValues { it.value.size })
         for ((tour, pasos) in CATALOGO_TOURS) assertTrue("$tour: ${pasos.size} pasos (tope $MAX_PASOS_POR_TOUR)", pasos.size <= MAX_PASOS_POR_TOUR)
-        assertEquals("unos 25 pasos en total", 22, CATALOGO_TOURS.values.sumOf { it.size })
+        assertEquals("unos 25 pasos en total", 24, CATALOGO_TOURS.values.sumOf { it.size })
+    }
+
+    @Test
+    fun `el tope es 10 y es el ultimo`() {
+        assertEquals(10, MAX_PASOS_POR_TOUR)
+    }
+
+    @Test
+    fun `el tour de la ficha va en el orden de la pantalla de arriba hacia abajo, con el cierre en la barra`() {
+        assertEquals(
+            listOf(
+                "tour-ficha-titulo", "tour-ficha-traducir", "tour-ficha-descripcion", "tour-ficha-errores", "tour-ficha-vocabulario",
+                "tour-ficha-mision", "tour-ficha-autochequeo", "tour-ficha-prompt", "tour-ficha-planilla", "tour-barra-superior",
+            ),
+            CATALOGO_TOURS.getValue(Tour.FICHA).map { it.ancla },
+        )
+    }
+
+    @Test
+    fun `las claves TOUR_FICHA siguen el orden nuevo, 1 a 10, sin huecos`() {
+        val pasos = CATALOGO_TOURS.getValue(Tour.FICHA)
+        for ((i, paso) in pasos.withIndex()) {
+            assertEquals("TOUR_FICHA_${i + 1}_T", paso.titulo.name)
+            assertEquals("TOUR_FICHA_${i + 1}_C", paso.cuerpo.name)
+        }
     }
 
     @Test

@@ -267,6 +267,7 @@ private fun FichaContenido(
                         idiomaInterfaz = idiomaInterfaz,
                         idiomaDestino = idiomaBase,
                         onCambiar = { traducir = it },
+                        modifier = Modifier.anclaTour("tour-ficha-traducir"),
                     )
                 }
                 if (enFinDeSemana) {
@@ -421,7 +422,7 @@ private fun FichaContenido(
                     }
                 }
 
-                onPlanilla?.let { BotonPlanilla(etiquetaPlanillaBoton(idiomaInterfaz)) { it(ficha) } }
+                onPlanilla?.let { BotonPlanilla(etiquetaPlanillaBoton(idiomaInterfaz), ancla = "tour-ficha-planilla") { it(ficha) } }
             }
           }
         }
@@ -436,11 +437,11 @@ private fun FichaContenido(
  * etiqueta dice que HACE ("Traducir al espanol"), no que idioma se ve.
  */
 @Composable
-private fun SwitchTraduccion(activo: Boolean, idiomaInterfaz: Idioma, idiomaDestino: Idioma, onCambiar: (Boolean) -> Unit) {
+private fun SwitchTraduccion(activo: Boolean, idiomaInterfaz: Idioma, idiomaDestino: Idioma, onCambiar: (Boolean) -> Unit, modifier: Modifier = Modifier) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(8.dp),
-        modifier = Modifier.clickable { onCambiar(!activo) },
+        modifier = modifier.clickable { onCambiar(!activo) },
     ) {
         Icon(Icons.Filled.Translate, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
         Text(etiquetaTraducirA(idiomaInterfaz, idiomaDestino), style = MaterialTheme.typography.labelLarge, modifier = Modifier.weight(1f))
@@ -544,9 +545,9 @@ private fun SemanaEspecialContenido(
 
 /** Boton de ancho completo al final de la semana: abre la planilla del profesor (PDF generado en el dispositivo). */
 @Composable
-private fun BotonPlanilla(texto: String, onClick: () -> Unit) {
+private fun BotonPlanilla(texto: String, ancla: String? = null, onClick: () -> Unit) {
     DisableSelection {
-        OutlinedButton(onClick = onClick, modifier = Modifier.fillMaxWidth()) { Text(texto) }
+        OutlinedButton(onClick = onClick, modifier = Modifier.fillMaxWidth().then(if (ancla != null) Modifier.anclaTour(ancla) else Modifier)) { Text(texto) }
     }
 }
 
