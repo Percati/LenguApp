@@ -47,7 +47,7 @@ enum class ClaveTexto {
     VERBOS_SIN_RESULTADOS, BUSCAR_BORRAR,
     SECCION_CONTRAER, SECCION_EXPANDIR, AUDIO_ESCUCHAR, AUDIO_DETENER,
     TOUR_FICHA_1_T, TOUR_FICHA_1_C, TOUR_FICHA_2_T, TOUR_FICHA_2_C, TOUR_FICHA_3_T, TOUR_FICHA_3_C, TOUR_FICHA_4_T, TOUR_FICHA_4_C, TOUR_FICHA_5_T, TOUR_FICHA_5_C, TOUR_FICHA_6_T, TOUR_FICHA_6_C, TOUR_FICHA_7_T, TOUR_FICHA_7_C, TOUR_FICHA_8_T, TOUR_FICHA_8_C, TOUR_BIBLIOTECA_1_T, TOUR_BIBLIOTECA_1_C, TOUR_BIBLIOTECA_2_T, TOUR_BIBLIOTECA_2_C, TOUR_BIBLIOTECA_3_T, TOUR_BIBLIOTECA_3_C, TOUR_BIBLIOTECA_4_T, TOUR_BIBLIOTECA_4_C, TOUR_BIBLIOTECA_5_T, TOUR_BIBLIOTECA_5_C, TOUR_GUARDADOS_1_T, TOUR_GUARDADOS_1_C, TOUR_GUARDADOS_2_T, TOUR_GUARDADOS_2_C, TOUR_GUARDADOS_3_T, TOUR_GUARDADOS_3_C, TOUR_AJUSTES_1_T, TOUR_AJUSTES_1_C, TOUR_AJUSTES_2_T, TOUR_AJUSTES_2_C, TOUR_AJUSTES_3_T, TOUR_AJUSTES_3_C, TOUR_AJUSTES_4_T, TOUR_AJUSTES_4_C, TOUR_DESAFIO_1_T, TOUR_DESAFIO_1_C, TOUR_DESAFIO_2_T, TOUR_DESAFIO_2_C,
-    TOUR_SIGUIENTE, TOUR_SALTAR, TOUR_LISTO, TOUR_PASO, TOUR_SIGUIENTE_CD, TOUR_SALTAR_CD, TOUR_LISTO_CD,
+    TOUR_ATRAS, TOUR_ATRAS_CD, TOUR_SIGUIENTE, TOUR_SALTAR, TOUR_LISTO, TOUR_PASO, TOUR_SIGUIENTE_CD, TOUR_SALTAR_CD, TOUR_LISTO_CD,
     VELOCIDAD_AUDIO_TITULO, VELOCIDAD_AUDIO_AYUDA, VELOCIDAD_AUDIO_VALOR,
     BIENVENIDA_TITULO, BIENVENIDA_IDIOMA_INICIAL, BIENVENIDA_ELEGIR_PRACTICA, BIENVENIDA_EMPEZAR, BIENVENIDA_VER_DE_NUEVO,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
@@ -659,6 +659,15 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "O LenguApp não ensina um idioma: ele faz você praticar o que já está aprendendo. Toda semana propõe um tema, uma habilidade e um desafio para produzir, não para estudar. Se você está começando um nível, faça um curso desse nível; este app existe para que o que você aprende lá não fique no caderno.",
     ),
     // --- Tutorial con foco (Ronda Q): botones y rotulos del recuadro ---
+    ClaveTexto.TOUR_ATRAS to mapOf(
+        Idioma.ES to "Atrás", Idioma.EN to "Back", Idioma.DE to "Zurück",
+        Idioma.FR to "Retour", Idioma.IT to "Indietro", Idioma.PT to "Voltar",
+    ),
+    ClaveTexto.TOUR_ATRAS_CD to mapOf(
+        Idioma.ES to "Volver al paso anterior del tutorial", Idioma.EN to "Go back to the previous tutorial step",
+        Idioma.DE to "Zum vorherigen Schritt des Tutorials", Idioma.FR to "Revenir à l'étape précédente du tutoriel",
+        Idioma.IT to "Torna al passo precedente del tutorial", Idioma.PT to "Voltar ao passo anterior do tutorial",
+    ),
     ClaveTexto.TOUR_SIGUIENTE to mapOf(
         Idioma.ES to "Siguiente", Idioma.EN to "Next", Idioma.DE to "Weiter",
         Idioma.FR to "Suivant", Idioma.IT to "Avanti", Idioma.PT to "Seguinte",
@@ -1484,6 +1493,8 @@ fun textoAcercaComo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_CO
 fun textoAcercaCreditos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_CREDITOS_TEXTO, idiomaInterfaz)
 /** Un texto del tutorial (titulo o cuerpo de un paso): las claves las nombra el catalogo de pasos. */
 fun textoTour(clave: ClaveTexto, idiomaInterfaz: Idioma): String = texto(clave, idiomaInterfaz)
+fun etiquetaTourAtras(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_ATRAS, idiomaInterfaz)
+fun descripcionTourAtras(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_ATRAS_CD, idiomaInterfaz)
 fun etiquetaTourSiguiente(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_SIGUIENTE, idiomaInterfaz)
 fun etiquetaTourSaltar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_SALTAR, idiomaInterfaz)
 fun etiquetaTourListo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_LISTO, idiomaInterfaz)

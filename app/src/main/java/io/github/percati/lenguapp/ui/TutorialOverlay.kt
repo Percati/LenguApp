@@ -1,4 +1,4 @@
-@file:OptIn(androidx.compose.foundation.ExperimentalFoundationApi::class)
+@file:OptIn(androidx.compose.foundation.ExperimentalFoundationApi::class, androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
 
 package io.github.percati.lenguapp.ui
 
@@ -7,6 +7,8 @@ import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
@@ -58,6 +60,7 @@ import kotlinx.coroutines.withTimeoutOrNull
 
 const val TAG_TOUR_TARJETA = "tour-tarjeta"
 const val TAG_TOUR_SIGUIENTE = "tour-siguiente"
+const val TAG_TOUR_ATRAS = "tour-atras"
 const val TAG_TOUR_SALTAR = "tour-saltar"
 const val TAG_TOUR_LISTO = "tour-listo"
 const val TAG_TOUR_FOCO = "tour-foco"
@@ -81,7 +84,8 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
     val paso = gestor.pasoActual ?: return
     val total = gestor.pasos(tour).size
 
-    BackHandler { gestor.terminar() }
+    // El boton atras del sistema hace lo mismo que «Atras» de la tarjeta: vuelve un paso; solo en el primero abandona el tour (cuenta como visto).
+    BackHandler { if (gestor.puedeVolver) gestor.atras() else gestor.terminar() }
 
     val margenAlTraer = with(LocalDensity.current) { MARGEN_AL_TRAER_DP.dp.toPx() }
     // Un paso con ancla espera a que la pantalla la componga (y la lleva a la vista); si no aparece, se saltea.
@@ -90,7 +94,7 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
         val ancla = paso.ancla ?: return@LaunchedEffect
         val rect = withTimeoutOrNull(ESPERA_ANCLA_MS) { snapshotFlow { gestor.registro.rectDe(ancla) }.filterNotNull().first() }
         if (rect == null) {
-            gestor.siguiente()
+            gestor.saltearSinAncla()
         } else {
             gestor.registro.traerALaVista(ancla, margenPx = margenAlTraer)
             listo = true
@@ -159,11 +163,22 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
                     paso.cuerpoExtra?.let { Text(textoTour(it, idiomaInterfaz), style = MaterialTheme.typography.bodyMedium) }
                 }
                 val ultimo = indice == total - 1
-                Row(
+                // Atras · Saltar · Siguiente/Listo. En una pantalla angosta los botones pasan a otra linea (FlowRow), no se achican.
+                FlowRow(
                     Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically,
+                    verticalArrangement = Arrangement.spacedBy(4.dp),
                 ) {
+                    // En el primer paso «Atras» no se muestra (no se deshabilita: un boton gris que no hace nada confunde mas que su ausencia).
+                    if (gestor.puedeVolver) {
+                        TextButton(
+                            onClick = { gestor.atras() },
+                            modifier = Modifier
+                                .heightIn(min = 48.dp)
+                                .semantics { contentDescription = descripcionTourAtras(idiomaInterfaz) }
+                                .testTag(TAG_TOUR_ATRAS),
+                        ) { Text(etiquetaTourAtras(idiomaInterfaz)) }
+                    }
                     TextButton(
                         onClick = { gestor.saltarTodo() },
                         modifier = Modifier

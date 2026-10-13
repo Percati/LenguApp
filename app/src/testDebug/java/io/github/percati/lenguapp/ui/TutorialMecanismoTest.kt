@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.layout.boundsInRoot
 import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.assertHeightIsAtLeast
 import androidx.compose.ui.test.assert
@@ -155,13 +156,76 @@ class TutorialMecanismoTest {
     }
 
     @Test
-    fun `abandonar con el boton atras cuenta como visto`() {
+    fun `el boton atras del sistema vuelve un paso, y solo en el primero abandona y cuenta como visto`() {
         val gestor = montar(listOf(paso("a1"), paso("a2")))
         lanzar(gestor)
+        composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+        composeTestRule.waitForIdle()
+        assertEquals(1, gestor.indice)
+        composeTestRule.runOnUiThread { composeTestRule.activity.onBackPressedDispatcher.onBackPressed() }
+        composeTestRule.waitForIdle()
+        assertEquals("el gesto vuelve un paso en vez de abandonar", 0, gestor.indice)
+        assertTrue(vistosAvisados.isEmpty())
         composeTestRule.runOnUiThread { composeTestRule.activity.onBackPressedDispatcher.onBackPressed() }
         composeTestRule.waitForIdle()
         assertNull(gestor.activo)
         assertEquals(listOf(Tour.FICHA), vistosAvisados)
+    }
+
+    @Test
+    fun `Atras de la tarjeta no se muestra en el primer paso, y despues vuelve al paso mostrado anterior`() {
+        val gestor = montar(listOf(paso("a1"), paso("a2"), paso("a1")))
+        lanzar(gestor)
+        composeTestRule.onAllNodesWithTag(TAG_TOUR_ATRAS).assertCountEquals(0)
+        composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+        composeTestRule.waitForIdle()
+        composeTestRule.onNodeWithTag(TAG_TOUR_ATRAS).assertExists()
+        composeTestRule.onNodeWithTag(TAG_TOUR_ATRAS).performClick()
+        composeTestRule.waitForIdle()
+        assertEquals(0, gestor.indice)
+        composeTestRule.onAllNodesWithTag(TAG_TOUR_ATRAS).assertCountEquals(0)
+        composeTestRule.onNodeWithText("Paso 1 de 3").assertExists()
+    }
+
+    @Test
+    fun `Atras vuelve al paso mostrado, no al indice anterior, y no vuelve a mostrar el que se salteo`() {
+        val gestor = montar(listOf(paso("a1"), paso("no-existe"), paso("a2")))
+        lanzar(gestor)
+        composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+        composeTestRule.waitForIdle()
+        pasarElTiempoDeEspera()
+        assertEquals("salto del 1 al 3", 2, gestor.indice)
+        composeTestRule.onNodeWithTag(TAG_TOUR_ATRAS).performClick()
+        composeTestRule.waitForIdle()
+        assertEquals("volvio al 1 (el 2 se saltea tambien al retroceder)", 0, gestor.indice)
+        composeTestRule.onAllNodesWithTag(TAG_TOUR_ATRAS).assertCountEquals(0)
+    }
+
+    @Test
+    fun `el boton Atras tiene 48 dp y su descripcion en el idioma de la app, y los textos estan en los 6 idiomas`() {
+        val gestor = montar(listOf(paso("a1"), paso("a2")), Idioma.FR)
+        lanzar(gestor)
+        composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+        composeTestRule.waitForIdle()
+        composeTestRule.onNodeWithTag(TAG_TOUR_ATRAS).assertHeightIsAtLeast(48.dp).assert(hasContentDescription(descripcionTourAtras(Idioma.FR)))
+        for (i in Idioma.entries) {
+            assertTrue(etiquetaTourAtras(i).isNotBlank() && descripcionTourAtras(i).isNotBlank())
+        }
+        assertEquals("Atrás", etiquetaTourAtras(Idioma.ES))
+        assertEquals("Back", etiquetaTourAtras(Idioma.EN))
+    }
+
+    @Test
+    @Config(qualifiers = "w140dp-h800dp")
+    fun `en una pantalla muy angosta los tres botones se reparten en lineas, ninguno sale de la pantalla`() {
+        val gestor = montar(listOf(paso("a1"), paso("a2")))
+        lanzar(gestor)
+        composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+        composeTestRule.waitForIdle()
+        for (tag in listOf(TAG_TOUR_ATRAS, TAG_TOUR_SALTAR, TAG_TOUR_LISTO)) {
+            val b = composeTestRule.onNodeWithTag(tag).fetchSemanticsNode().boundsInRoot
+            assertTrue("$tag fuera de la pantalla: $b", b.left >= -0.5f && b.right <= 140.5f)
+        }
     }
 
     @Test

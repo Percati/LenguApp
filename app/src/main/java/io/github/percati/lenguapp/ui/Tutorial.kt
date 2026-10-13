@@ -8,6 +8,7 @@ import androidx.compose.foundation.relocation.bringIntoViewRequester
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateMapOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -103,6 +104,13 @@ class GestorTours(val catalogo: Map<Tour, List<PasoTour>> = emptyMap()) {
     var indice by mutableIntStateOf(0)
         private set
 
+    // Los indices de los pasos MOSTRADOS antes del actual: «Atras» vuelve al paso mostrado anterior, no al indice anterior (un paso
+    // salteado por falta de ancla se vuelve a saltear al retroceder, porque nunca entro en la pila).
+    private val pila = mutableStateListOf<Int>()
+
+    /** Se puede volver un paso: hay un paso mostrado antes del actual (en el primero, «Atras» no se ofrece). */
+    val puedeVolver: Boolean get() = activo != null && pila.isNotEmpty()
+
     // Estado persistente, inyectado desde afuera (ajustes): no es estado de Compose, se lee al lanzar.
     var vistos: Set<Tour> = emptySet()
     var salteados: Boolean = false
@@ -119,13 +127,32 @@ class GestorTours(val catalogo: Map<Tour, List<PasoTour>> = emptyMap()) {
     fun lanzar(tour: Tour): Boolean {
         if (!puedeLanzar(tour)) return false
         indice = 0
+        pila.clear()
         activo = tour
         return true
     }
 
+    /** «Siguiente»: el paso actual queda en la pila de los mostrados y se pasa al que sigue (o se termina). */
     fun siguiente() {
         val tour = activo ?: return
+        if (indice + 1 >= pasos(tour).size) {
+            terminar()
+        } else {
+            pila.add(indice)
+            indice++
+        }
+    }
+
+    /** El ancla del paso actual no aparecio: se pasa al que sigue SIN apilarlo (al retroceder tampoco se vuelve a mostrar). */
+    fun saltearSinAncla() {
+        val tour = activo ?: return
         if (indice + 1 >= pasos(tour).size) terminar() else indice++
+    }
+
+    /** «Atras»: vuelve al paso mostrado anterior. Sin paso anterior (el primero) no hace nada. */
+    fun atras() {
+        if (activo == null || pila.isEmpty()) return
+        indice = pila.removeAt(pila.lastIndex)
     }
 
     /** Termina el tour (al llegar al final o al abandonarlo con atras): cuenta como visto. */
@@ -133,6 +160,7 @@ class GestorTours(val catalogo: Map<Tour, List<PasoTour>> = emptyMap()) {
         val tour = activo ?: return
         activo = null
         indice = 0
+        pila.clear()
         alVerTour(tour)
     }
 
@@ -141,6 +169,7 @@ class GestorTours(val catalogo: Map<Tour, List<PasoTour>> = emptyMap()) {
         if (activo == null) return
         activo = null
         indice = 0
+        pila.clear()
         alSaltarTodos()
     }
 }

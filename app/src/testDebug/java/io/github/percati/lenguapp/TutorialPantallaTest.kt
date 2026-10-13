@@ -198,10 +198,15 @@ class TutorialPantallaTest {
     }
 
     @Test
-    fun `abandonar con el boton atras cuenta como visto`() {
+    fun `el boton atras del sistema vuelve un paso y solo en el primero abandona, y eso cuenta como visto`() {
         mostrar(lunes, vistos = emptySet())
         composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
         asentar()
+        composeTestRule.onNodeWithText(etiquetaTourPaso(2, 8, Idioma.ES)).assertExists()
+        composeTestRule.runOnUiThread { composeTestRule.activity.onBackPressedDispatcher.onBackPressed() }
+        asentar()
+        composeTestRule.onNodeWithText(etiquetaTourPaso(1, 8, Idioma.ES)).assertExists()
+        assertTrue("todavia no se dio por visto", guardados.none { Tour.FICHA in it.toursVistos })
         composeTestRule.runOnUiThread { composeTestRule.activity.onBackPressedDispatcher.onBackPressed() }
         asentar()
         assertTrue(Tour.FICHA in guardados.last().toursVistos)
