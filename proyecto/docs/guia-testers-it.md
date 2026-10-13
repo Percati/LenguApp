@@ -1,4 +1,4 @@
-# LenguApp · guida rapida per chi prova l'app (versione 0.3.0)
+# LenguApp · guida rapida per chi prova l'app (versione 0.4.0)
 
 **Che cos'è.** Un'app per praticare una lingua una settimana alla volta (tedesco o inglese, da A2 a C2). **Non è un corso:** serve a fissare quello che hai già imparato in uno. Funziona senza internet, senza account e senza raccogliere dati. È in prova, e la tua opinione aiuta molto.
 
@@ -10,18 +10,18 @@
 | Un'abilità o un tema torna più avanti | È voluto: le abilità ricompaiono più volte all'anno con un'altra profondità. |
 | Settimane speciali di ripasso | Quattro volte all'anno c'è una settimana di ripasso, in un altro formato. |
 | La sfida del fine settimana appare solo sabato e domenica | Si tratta di parlare ad alta voce, non di rifare la missione: in alto la consegna con i minuti; sotto, tema, abilità, condizioni e frasi. All'apertura dell'app parte sempre spenta. Non si salva nulla. |
-| Il nome dell'app e «Informazioni» stanno in Impostazioni | Così la schermata principale resta libera per il contenuto. |
-| Schermata di benvenuto | La prima volta scegli lingua e livello, e ti si spiega che cos'è LenguApp. Si rivede dalle Impostazioni. |
+| «Informazioni» sta in fondo alle Impostazioni | Così la schermata principale resta libera per il contenuto. |
+| Benvenuto e tutorial | La prima volta scegli lingua e livello; poi ogni sezione mostra un percorso che oscura tutto tranne quello che spiega. «Salta» li salta tutti. Si rivede tutto dalle Impostazioni. |
 | Salvati, importazione ed esportazione | Salvati mostra le stesse cose della Biblioteca. Puoi esportare in Anki o fare una copia di sicurezza e reimportarla; il file lo scegli tu in quel momento. |
 | Abilità nella Biblioteca | Un elenco di sola lettura: tocca un'abilità per aprire la sua settimana. |
-| Verbi nella Biblioteca | Elenca i verbi della lingua, di tutti i livelli; sotto ciascuno vedi il livello più basso in cui compare e, in tedesco, la reggenza (von + Dat). Compaiono anche le espressioni in cui si usa (die Frage stellen), ognuna con la sua stella; un verbo che esiste solo dentro espressioni (stellen) non ce l'ha. Si filtra per classe, non per livello. La ricerca resta in alto e guarda anche traduzioni ed espressioni: «Frage» trova stellen. |
+| Verbi nella Biblioteca | Elenca i verbi della lingua, di tutti i livelli, con il livello più basso e, in tedesco, la reggenza (von + Dat). Compaiono anche le espressioni in cui si usano (die Frage stellen); un verbo che esiste solo dentro espressioni (stellen) non ha la stella. Si filtra per classe. La ricerca resta in alto e guarda anche traduzioni ed espressioni: «Frage» trova stellen. |
 | Niente statistiche, serie o progressi | È una scelta. L'app conserva solo le tue stelle (Salvati) e le tue impostazioni. |
 | Il prompt per parlare con un'IA esiste solo in inglese B2 e C1 | È una prova. Il prompt perché un'IA corregga il tuo testo c'è a tutti i livelli. |
 | I prompt per l'IA sono sempre nella lingua che impari | Così l'IA risponde in quella lingua, anche se l'app è nella tua. |
 | La scheda in PDF esce nella lingua che impari e in un foglio solo | Serve a mostrarla a chi ti insegna quella lingua. |
 | In tedesco non c'è la «ß» | Si usa l'ortografia svizzera: «ss». |
 | Lo spagnolo è neutro e dà del «tú» | Il «usted» compare solo in frasi di situazioni formali, che sono proprio ciò che si insegna. |
-| L'audio funziona, per ora solo in tedesco | Tocca l'altoparlante accanto a una parola o a un'espressione (negli esempi, solo alcuni): è una voce sintetica. Ne suona uno alla volta. In inglese non c'è ancora. |
+| L'audio funziona, solo in tedesco | Tocca l'altoparlante accanto a una parola o a un'espressione (negli esempi, solo alcuni): voce sintetica. In Impostazioni scegli la velocità (60–100 %). In inglese non c'è ancora. |
 | C'è contenuto del 2026 (dalla settimana 41) e del 2027 | Il resto si aggiungerà man mano. |
 | Puoi scegliere i colori e il carattere | In Impostazioni ci sono quattro temi (Carta, Terracotta, Mare, Grafite) e, da Android 12 in poi, uno che segue lo sfondo del telefono. E tre caratteri: quello di sistema, Lettura e Chiaro. |
 | Alcuni segni (↔, ✗, →, ₂) si vedono con un altro carattere | Lettura e Chiaro non hanno quei segni, perciò il telefono li disegna con quello di sistema. |
