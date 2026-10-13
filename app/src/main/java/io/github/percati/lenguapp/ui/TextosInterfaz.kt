@@ -46,6 +46,7 @@ enum class ClaveTexto {
     BIBLIOTECA_VISTA_VERBOS, VERBO_REFLEXIVO, VERBO_TRENNBAR, VERBO_MIT_PRAPOSITION, VERBO_MIT_DATIV, VERBO_PHRASAL_SEPARABLE, VERBO_PHRASAL_INSEPARABLE, VERBO_VERBO_PREPOSICION, VERBOS_VACIO,
     VERBOS_SIN_RESULTADOS, BUSCAR_BORRAR,
     SECCION_CONTRAER, SECCION_EXPANDIR, AUDIO_ESCUCHAR, AUDIO_DETENER,
+    TOUR_SIGUIENTE, TOUR_SALTAR, TOUR_LISTO, TOUR_PASO, TOUR_SIGUIENTE_CD, TOUR_SALTAR_CD, TOUR_LISTO_CD,
     VELOCIDAD_AUDIO_TITULO, VELOCIDAD_AUDIO_AYUDA, VELOCIDAD_AUDIO_VALOR,
     BIENVENIDA_TITULO, BIENVENIDA_IDIOMA_INICIAL, BIENVENIDA_ELEGIR_PRACTICA, BIENVENIDA_EMPEZAR, BIENVENIDA_VER_DE_NUEVO,
     ACERCA_DE, LINEA_FIJA, ACERCA_QUE_ES_TITULO, ACERCA_QUE_ES_TEXTO, ACERCA_PRIVACIDAD_TITULO, ACERCA_PRIVACIDAD_TEXTO, ACERCA_LICENCIAS_TITULO, ACERCA_LICENCIAS_TEXTO, ACERCA_VERSION,
@@ -656,6 +657,38 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "LenguApp non insegna una lingua: ti fa praticare quella che stai già imparando. Ogni settimana ti propone un tema, un'abilità e una sfida per produrre, non per studiare. Se stai iniziando un livello, segui un corso di quel livello; questa app serve a fare in modo che quello che impari lì non resti sul quaderno.",
         Idioma.PT to "O LenguApp não ensina um idioma: ele faz você praticar o que já está aprendendo. Toda semana propõe um tema, uma habilidade e um desafio para produzir, não para estudar. Se você está começando um nível, faça um curso desse nível; este app existe para que o que você aprende lá não fique no caderno.",
     ),
+    // --- Tutorial con foco (Ronda Q): botones y rotulos del recuadro ---
+    ClaveTexto.TOUR_SIGUIENTE to mapOf(
+        Idioma.ES to "Siguiente", Idioma.EN to "Next", Idioma.DE to "Weiter",
+        Idioma.FR to "Suivant", Idioma.IT to "Avanti", Idioma.PT to "Seguinte",
+    ),
+    ClaveTexto.TOUR_SALTAR to mapOf(
+        Idioma.ES to "Saltar", Idioma.EN to "Skip", Idioma.DE to "Überspringen",
+        Idioma.FR to "Passer", Idioma.IT to "Salta", Idioma.PT to "Pular",
+    ),
+    ClaveTexto.TOUR_LISTO to mapOf(
+        Idioma.ES to "Listo", Idioma.EN to "Done", Idioma.DE to "Fertig",
+        Idioma.FR to "Terminé", Idioma.IT to "Fatto", Idioma.PT to "Pronto",
+    ),
+    ClaveTexto.TOUR_PASO to mapOf(
+        Idioma.ES to "Paso {n} de {total}", Idioma.EN to "Step {n} of {total}", Idioma.DE to "Schritt {n} von {total}",
+        Idioma.FR to "Étape {n} sur {total}", Idioma.IT to "Passo {n} di {total}", Idioma.PT to "Passo {n} de {total}",
+    ),
+    ClaveTexto.TOUR_SIGUIENTE_CD to mapOf(
+        Idioma.ES to "Ir al paso siguiente del tutorial", Idioma.EN to "Go to the next tutorial step",
+        Idioma.DE to "Zum nächsten Schritt des Tutorials", Idioma.FR to "Passer à l'étape suivante du tutoriel",
+        Idioma.IT to "Vai al passo successivo del tutorial", Idioma.PT to "Ir para o próximo passo do tutorial",
+    ),
+    ClaveTexto.TOUR_SALTAR_CD to mapOf(
+        Idioma.ES to "Saltar todo el tutorial", Idioma.EN to "Skip the whole tutorial",
+        Idioma.DE to "Das ganze Tutorial überspringen", Idioma.FR to "Passer tout le tutoriel",
+        Idioma.IT to "Salta tutto il tutorial", Idioma.PT to "Pular todo o tutorial",
+    ),
+    ClaveTexto.TOUR_LISTO_CD to mapOf(
+        Idioma.ES to "Terminar este recorrido", Idioma.EN to "Finish this tour",
+        Idioma.DE to "Diese Tour beenden", Idioma.FR to "Terminer cette visite",
+        Idioma.IT to "Termina questo percorso", Idioma.PT to "Terminar este percurso",
+    ),
     // --- Velocidad del audio (Ronda O) ---
     ClaveTexto.VELOCIDAD_AUDIO_TITULO to mapOf(
         Idioma.ES to "Velocidad del audio", Idioma.EN to "Audio speed", Idioma.DE to "Audiogeschwindigkeit",
@@ -1094,6 +1127,16 @@ fun etiquetaAcercaQueEsTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto
 fun etiquetaAcercaComoTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TITULO, idiomaInterfaz)
 fun textoAcercaComo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TEXTO, idiomaInterfaz)
 fun textoAcercaCreditos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_CREDITOS_TEXTO, idiomaInterfaz)
+/** Un texto del tutorial (titulo o cuerpo de un paso): las claves las nombra el catalogo de pasos. */
+fun textoTour(clave: ClaveTexto, idiomaInterfaz: Idioma): String = texto(clave, idiomaInterfaz)
+fun etiquetaTourSiguiente(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_SIGUIENTE, idiomaInterfaz)
+fun etiquetaTourSaltar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_SALTAR, idiomaInterfaz)
+fun etiquetaTourListo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_LISTO, idiomaInterfaz)
+fun etiquetaTourPaso(n: Int, total: Int, idiomaInterfaz: Idioma): String =
+    interpolar(texto(ClaveTexto.TOUR_PASO, idiomaInterfaz), "n" to n.toString(), "total" to total.toString())
+fun descripcionTourSiguiente(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_SIGUIENTE_CD, idiomaInterfaz)
+fun descripcionTourSaltar(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_SALTAR_CD, idiomaInterfaz)
+fun descripcionTourListo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_LISTO_CD, idiomaInterfaz)
 fun etiquetaVelocidadAudio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.VELOCIDAD_AUDIO_TITULO, idiomaInterfaz)
 fun ayudaVelocidadAudio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.VELOCIDAD_AUDIO_AYUDA, idiomaInterfaz)
 fun textoVelocidadAudio(velocidad: io.github.percati.lenguapp.modelo.VelocidadAudio, idiomaInterfaz: Idioma): String =

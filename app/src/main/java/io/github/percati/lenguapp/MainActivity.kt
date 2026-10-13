@@ -93,6 +93,9 @@ import io.github.percati.lenguapp.audio.SinAudio
 import io.github.percati.lenguapp.audio.cargarIndiceAudioDesdeAssets
 import io.github.percati.lenguapp.ui.AjustarIconosDeBarras
 import io.github.percati.lenguapp.ui.BienvenidaScreen
+import io.github.percati.lenguapp.ui.GestorTours
+import io.github.percati.lenguapp.ui.LocalGestorTours
+import io.github.percati.lenguapp.ui.TutorialOverlay
 import io.github.percati.lenguapp.ui.TemaLenguApp
 import io.github.percati.lenguapp.ui.margenesSuperiorYLateralesDelSistema
 import io.github.percati.lenguapp.ui.claveGuardado
@@ -263,6 +266,8 @@ internal fun LenguAppApp(
     calendarioDe: (Int, Idioma, Nivel) -> CalendarioCargado = { _, _, _ -> CalendarioCargado.SinCalendarioParaIdiomaONivel },
     // Audio de los textos (Ronda M): por omision no hay, y entonces ninguna pantalla dibuja el boton.
     controlAudio: ControlAudio = SinAudio,
+    // El tutorial con foco (Ronda Q): quien sabe que tour esta en marcha. Por omision no hay pasos que lanzar.
+    gestorTours: GestorTours = remember { GestorTours() },
 ) {
     var ajustes by remember { mutableStateOf(ajustesIniciales) }
     var fechaVistaIso by rememberSaveable { mutableStateOf(fechaInicial.toString()) }
@@ -396,7 +401,11 @@ internal fun LenguAppApp(
         onGuardarAjustes(nuevos)
     }
 
-    CompositionLocalProvider(LocalControlAudio provides controlAudio, LocalVelocidadAudio provides ajustes.velocidadAudio) {
+    CompositionLocalProvider(
+        LocalControlAudio provides controlAudio,
+        LocalVelocidadAudio provides ajustes.velocidadAudio,
+        LocalGestorTours provides gestorTours,
+    ) {
     TemaLenguApp(familiaTema = ajustes.familiaTema, modoTema = ajustes.modoTema, fuente = ajustes.fuente) {
         // Iconos de las barras del sistema legibles sobre el fondo del tema elegido (claro/oscuro, los 4 temas y el dinamico).
         AjustarIconosDeBarras(MaterialTheme.colorScheme.background)
@@ -552,6 +561,8 @@ internal fun LenguAppApp(
                     }
                 }
             }
+            // El tutorial se dibuja encima de todo (oscurece la pantalla menos lo que senala).
+            TutorialOverlay(gestorTours, idiomaAplicacion)
         }
     }
     }
