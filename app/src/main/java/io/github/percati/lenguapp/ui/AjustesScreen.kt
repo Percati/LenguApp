@@ -1,13 +1,15 @@
+@file:OptIn(androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
+
 package io.github.percati.lenguapp.ui
 
 import android.content.Context
 import android.widget.Toast
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.combinedClickable
-import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
@@ -168,9 +170,9 @@ internal fun SelectorIdiomasAprendidos(
 
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Text(etiquetaIdiomasAprendidos(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
-        Row(
-            modifier = Modifier.horizontalScroll(rememberScrollState()),
+        FlowRow(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             Idioma.entries.forEach { idioma ->
                 val nivelActual = idiomasAprendidos[idioma]
@@ -254,9 +256,9 @@ private fun SelectorIdiomaAplicacion(
 ) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Text(etiquetaIdiomaApp(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
-        Row(
-            modifier = Modifier.horizontalScroll(rememberScrollState()),
+        FlowRow(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             FilterChip(
                 selected = idiomaSegunSistema,
@@ -290,9 +292,9 @@ private fun SelectorFamiliaTema(idiomaInterfaz: Idioma, familiaElegida: FamiliaT
     val oscuro = modoSeVeOscuro(modo)
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Text(etiquetaEstiloVisual(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
-        Row(
-            modifier = Modifier.horizontalScroll(rememberScrollState()),
+        FlowRow(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             familiasOfrecidas().forEach { familia ->
                 FilterChip(
@@ -318,9 +320,9 @@ private fun SelectorFamiliaTema(idiomaInterfaz: Idioma, familiaElegida: FamiliaT
 private fun SelectorModoTema(idiomaInterfaz: Idioma, modoElegido: ModoTema, onElegir: (ModoTema) -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Text(etiquetaModo(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
-        Row(
-            modifier = Modifier.horizontalScroll(rememberScrollState()),
+        FlowRow(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             ModoTema.entries.forEach { modo ->
                 FilterChip(
@@ -381,9 +383,9 @@ private fun PuntoDeColor(color: Color) {
 private fun SelectorVelocidadAudio(idiomaInterfaz: Idioma, elegida: VelocidadAudio, onElegir: (VelocidadAudio) -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Text(etiquetaVelocidadAudio(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
-        Row(
-            modifier = Modifier.horizontalScroll(rememberScrollState()),
+        FlowRow(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             VelocidadAudio.entries.forEach { velocidad ->
                 FilterChip(
@@ -402,9 +404,9 @@ private fun SelectorVelocidadAudio(idiomaInterfaz: Idioma, elegida: VelocidadAud
 private fun SelectorFuente(idiomaInterfaz: Idioma, fuenteElegida: FuenteTema, onElegir: (FuenteTema) -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
         Text(etiquetaFuente(idiomaInterfaz), style = MaterialTheme.typography.titleMedium)
-        Row(
-            modifier = Modifier.horizontalScroll(rememberScrollState()),
+        FlowRow(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             FuenteTema.entries.forEach { fuente ->
                 val familia = familiaTipografica(fuente) ?: FontFamily.Default
