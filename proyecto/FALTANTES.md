@@ -1575,3 +1575,26 @@ Tres commits, uno por tarea. Contenido, esquema, assets e índice de audio sin t
 - **Si al 60 % la voz sintética sigue siendo entendible.** No puedo juzgar audio desde acá. Lo que se sabe: el estirado temporal digital suele ser limpio hasta ~0,75× y a 0,6× empieza a notarse un timbre «metálico» o con artefactos en consonantes, y las voces Piper ya son un poco planas; es un riesgo real, no una certeza. **Prueba concreta para Fer:** escuchar una frase larga alemana (p. ej. un ejemplo de B2) a 60 % y a 75 %. Si el 60 % cuesta, el paso más lento sube a 70 %: es **un solo número** (`VelocidadAudio.LENTA(60)` → 70) más el texto de ayuda si lo menciona.
 
 **Decisiones donde el prompt no cerraba:** (1) la velocidad llega al botón por un `CompositionLocal` (`LocalVelocidadAudio`) provisto desde `LenguAppApp` con el ajuste vigente, en vez de pasarla por todas las pantallas; (2) el aviso es un numerito junto al icono y en la descripción, no un color ni un icono distinto (que ya se usa para «Detener»); (3) los chips de la fila de Ajustes llevan el porcentaje con la ortografía de cada idioma; (4) se aplica `setPitch(1.0f)` explícito, aunque es el valor por omisión, para que quede escrito qué se espera.
+
+## 57. Feedback de uso de la 0.3.1 (Fer, 13-oct-2026) — Ronda P
+
+- **«Acerca de» al final de Ajustes**, con «Ver la bienvenida otra vez» justo encima. Lo que se usa seguido arriba; lo que se consulta una vez, al fondo.
+- **Nada de deslizar a lo ancho en Ajustes.** Los seis grupos de opciones usan `horizontalScroll` y las opciones que quedan fuera de pantalla no las elige nadie. Pasan a `FlowRow` (el que ya existe en `FiltroChips.kt`), repartidos en las filas que hagan falta. **Lo mismo en la pantalla de bienvenida**, donde es más grave todavía: es lo primero que ve alguien que abre la app y no puede adivinar que hay más idiomas a la derecha. La Biblioteca **no se toca**: ahí el desplazamiento es deliberado.
+- **Quitar la línea «LenguApp · Para fijar lo que ya aprendiste en tu curso»** de Ajustes. Lo dicen la bienvenida y «Acerca de». Hay que actualizar `publicacion/LEEME.md`, que la nombra como uno de los tres lugares donde se aclara que no es un curso: ahora son la tienda, la bienvenida y «Acerca de».
+
+Versión **0.3.2** (prompt 31).
+
+## 58. El tutorial con foco se arranca ahora (Fer, 13-oct-2026) — Ronda Q
+
+Fer decide **empezar los tours con foco** sin esperar más. Overview había recomendado esperar a que la interfaz se asentara; el riesgo sigue siendo real, así que se compensa con dos cosas, ambas obligatorias en el prompt 32: **anclar por `testTag` y no por coordenadas**, y **un test que recorra todos los pasos y falle si alguna ancla no existe**. Sin ese test el tutorial se pudre en silencio la primera vez que alguien mueva un botón.
+
+**Orden: la Ronda P va primero.** Mueve «Acerca de» y cambia los grupos de opciones a `FlowRow`, que es justo lo que el tour de Ajustes tiene que señalar.
+
+**Decisiones que cierran los puntos abiertos del guion** (`docs/tutorial-guion.md`):
+- **Abandonar un tour cuenta como visto.** Nadie quiere que le vuelva a saltar lo mismo al día siguiente.
+- **Secciones plegadas de la ficha:** el paso las abre y las deja como estaban al terminar; si resulta frágil, se explica el encabezado.
+- **Primer arranque sin ficha:** el tour de la ficha no se lanza y **no se da por visto**; espera a la primera semana con contenido.
+- **El mensaje «esto no enseña un idioma» cierra el tour de la ficha** (pedido de Fer), **y además se queda en la bienvenida y en «Acerca de»**. Es la única redundancia deliberada de la app: quien saltea el tour tiene que haberlo leído igual.
+
+Versión **0.4.0**: el tutorial es una función nueva, no un retoque.
+
