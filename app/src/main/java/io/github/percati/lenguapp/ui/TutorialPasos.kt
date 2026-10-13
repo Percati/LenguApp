@@ -17,7 +17,7 @@ val CATALOGO_TOURS: Map<Tour, List<PasoTour>> = mapOf(
         PasoTour("tour-ficha-vocabulario", ClaveTexto.TOUR_FICHA_5_T, ClaveTexto.TOUR_FICHA_5_C),
         PasoTour("tour-ficha-autochequeo", ClaveTexto.TOUR_FICHA_6_T, ClaveTexto.TOUR_FICHA_6_C),
         PasoTour("tour-ficha-prompt", ClaveTexto.TOUR_FICHA_7_T, ClaveTexto.TOUR_FICHA_7_C),
-        PasoTour("tour-barra-superior", ClaveTexto.TOUR_FICHA_8_T, ClaveTexto.TOUR_FICHA_8_C),
+        PasoTour("tour-barra-superior", ClaveTexto.TOUR_FICHA_8_T, ClaveTexto.TOUR_FICHA_8_C, cuerpoExtra = ClaveTexto.ACERCA_QUE_ES_TEXTO),
     ),
     Tour.BIBLIOTECA to listOf(
         PasoTour("tour-biblioteca-vistas", ClaveTexto.TOUR_BIBLIOTECA_1_T, ClaveTexto.TOUR_BIBLIOTECA_1_C),

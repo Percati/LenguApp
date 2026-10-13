@@ -49,6 +49,19 @@ class TourCatalogoTest {
     }
 
     @Test
+    fun `solo el ultimo paso del tour de la ficha lleva el texto de que es esto, el mismo de la bienvenida y de Acerca de`() {
+        val ficha = CATALOGO_TOURS.getValue(Tour.FICHA)
+        assertEquals(ClaveTexto.ACERCA_QUE_ES_TEXTO, ficha.last().cuerpoExtra)
+        assertTrue(ficha.dropLast(1).all { it.cuerpoExtra == null })
+        for ((tour, pasos) in CATALOGO_TOURS) if (tour != Tour.FICHA) assertTrue(pasos.all { it.cuerpoExtra == null })
+        // es la clave que ya existe, sin reescribir: la bienvenida y «Acerca de» la leen por la misma funcion
+        for (idioma in Idioma.entries) {
+            assertEquals(textoAcercaQueEs(idioma), textoTour(ClaveTexto.ACERCA_QUE_ES_TEXTO, idioma))
+            assertTrue(textoAcercaQueEs(idioma).isNotBlank())
+        }
+    }
+
+    @Test
     fun `las anclas son testTags con nombre y el cierre de la ficha senala la barra de arriba`() {
         for ((tour, pasos) in CATALOGO_TOURS) for (paso in pasos) {
             val ancla = paso.ancla
