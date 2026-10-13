@@ -82,7 +82,6 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
     val tour = gestor.activo ?: return
     val indice = gestor.indice
     val paso = gestor.pasoActual ?: return
-    val total = gestor.pasos(tour).size
 
     // El boton atras del sistema hace lo mismo que «Atras» de la tarjeta: vuelve un paso; solo en el primero abandona el tour (cuenta como visto).
     BackHandler { if (gestor.puedeVolver) gestor.atras() else gestor.terminar() }
@@ -154,7 +153,7 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
                     verticalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
                     Text(
-                        etiquetaTourPaso(indice + 1, total, idiomaInterfaz),
+                        etiquetaTourPaso(gestor.posicion, gestor.totalEfectivo, idiomaInterfaz),
                         style = MaterialTheme.typography.labelMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
@@ -162,7 +161,7 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
                     Text(textoTour(paso.cuerpo, idiomaInterfaz), style = MaterialTheme.typography.bodyMedium)
                     paso.cuerpoExtra?.let { Text(textoTour(it, idiomaInterfaz), style = MaterialTheme.typography.bodyMedium) }
                 }
-                val ultimo = indice == total - 1
+                val ultimo = gestor.esUltimoPaso
                 // Atras · Saltar · Siguiente/Listo. En una pantalla angosta los botones pasan a otra linea (FlowRow), no se achican.
                 FlowRow(
                     Modifier.fillMaxWidth(),

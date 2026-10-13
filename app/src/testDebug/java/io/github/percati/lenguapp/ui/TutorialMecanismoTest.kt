@@ -126,9 +126,9 @@ class TutorialMecanismoTest {
         composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
         composeTestRule.waitForIdle()
         pasarElTiempoDeEspera()
-        // del paso 1 saltó al 3 (indice 2): el 2 no tenia ancla
+        // del paso 1 salto al 3 (indice 2): el 2 no tenia ancla, y el contador no salta numeros
         assertEquals(2, gestor.indice)
-        composeTestRule.onNodeWithText("Paso 3 de 3").assertExists()
+        composeTestRule.onNodeWithText("Paso 2 de 2").assertExists()
         composeTestRule.onNodeWithTag(TAG_TOUR_LISTO).assertExists()
     }
 
@@ -142,6 +142,34 @@ class TutorialMecanismoTest {
         assertNull(gestor.activo)
         assertEquals(listOf(Tour.FICHA), vistosAvisados)
         composeTestRule.onAllNodesWithTag(TAG_TOUR_FOCO).assertCountEquals(0)
+    }
+
+    @Test
+    fun `Paso n de total no salta numeros cuando se saltea un paso, y al retroceder baja`() {
+        val gestor = montar(listOf(paso("a1"), paso("no-existe"), paso("a2"), paso("a1")))
+        lanzar(gestor)
+        // el 2.o no tiene ancla: se sabe de entrada, asi que ya empieza en «1 de 3»
+        composeTestRule.onNodeWithText("Paso 1 de 3").assertExists()
+        composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+        composeTestRule.waitForIdle()
+        pasarElTiempoDeEspera()
+        composeTestRule.onNodeWithText("Paso 2 de 3").assertExists()
+        composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+        composeTestRule.waitForIdle()
+        composeTestRule.onNodeWithText("Paso 3 de 3").assertExists()
+        composeTestRule.onNodeWithTag(TAG_TOUR_LISTO).assertExists()
+        composeTestRule.onNodeWithTag(TAG_TOUR_ATRAS).performClick()
+        composeTestRule.waitForIdle()
+        composeTestRule.onNodeWithText("Paso 2 de 3").assertExists()
+        composeTestRule.onAllNodesWithTag(TAG_TOUR_LISTO).assertCountEquals(0)
+    }
+
+    @Test
+    fun `si los pasos que quedan no tienen ancla, el paso actual ya dice Listo`() {
+        val gestor = montar(listOf(paso("a1"), paso("no-existe-1"), paso("no-existe-2")))
+        lanzar(gestor)
+        composeTestRule.onNodeWithText("Paso 1 de 1").assertExists()
+        composeTestRule.onNodeWithTag(TAG_TOUR_LISTO).assertExists()
     }
 
     @Test

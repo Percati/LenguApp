@@ -111,6 +111,34 @@ class GestorTours(val catalogo: Map<Tour, List<PasoTour>> = emptyMap()) {
     /** Se puede volver un paso: hay un paso mostrado antes del actual (en el primero, «Atras» no se ofrece). */
     val puedeVolver: Boolean get() = activo != null && pila.isNotEmpty()
 
+    // Los pasos que se saltearon por falta de ancla (por indice): no cuentan en «Paso n de total».
+    private val omitidos = mutableStateListOf<Int>()
+
+    /** El numero de este paso entre los efectivamente mostrados (1, 2, 3… sin huecos); al retroceder baja. */
+    val posicion: Int get() = pila.size + 1
+
+    /**
+     * Cuantos pasos tiene el tour contando solo los que se van a mostrar: el catalogo menos los ya salteados y los que se
+     * ve que se van a saltear (su ancla no esta en pantalla ahora). En el caso normal es el tamano del catalogo, igual que antes.
+     */
+    val totalEfectivo: Int
+        get() {
+            val tour = activo ?: return 0
+            val pasos = pasos(tour)
+            val sinAncla = pasos.indices.count { i -> i in omitidos || (i > indice && !seMostrara(pasos[i])) }
+            return pasos.size - sinAncla
+        }
+
+    /** Es el ultimo paso que se mostrara: despues no queda ninguno cuya ancla este en pantalla. */
+    val esUltimoPaso: Boolean
+        get() {
+            val tour = activo ?: return true
+            val pasos = pasos(tour)
+            return (indice + 1 until pasos.size).none { i -> i !in omitidos && seMostrara(pasos[i]) }
+        }
+
+    private fun seMostrara(paso: PasoTour): Boolean = paso.ancla == null || registro.rectDe(paso.ancla) != null
+
     // Estado persistente, inyectado desde afuera (ajustes): no es estado de Compose, se lee al lanzar.
     var vistos: Set<Tour> = emptySet()
     var salteados: Boolean = false
@@ -128,6 +156,7 @@ class GestorTours(val catalogo: Map<Tour, List<PasoTour>> = emptyMap()) {
         if (!puedeLanzar(tour)) return false
         indice = 0
         pila.clear()
+        omitidos.clear()
         activo = tour
         return true
     }
@@ -146,6 +175,7 @@ class GestorTours(val catalogo: Map<Tour, List<PasoTour>> = emptyMap()) {
     /** El ancla del paso actual no aparecio: se pasa al que sigue SIN apilarlo (al retroceder tampoco se vuelve a mostrar). */
     fun saltearSinAncla() {
         val tour = activo ?: return
+        if (indice !in omitidos) omitidos.add(indice)
         if (indice + 1 >= pasos(tour).size) terminar() else indice++
     }
 
@@ -161,6 +191,7 @@ class GestorTours(val catalogo: Map<Tour, List<PasoTour>> = emptyMap()) {
         activo = null
         indice = 0
         pila.clear()
+        omitidos.clear()
         alVerTour(tour)
     }
 
@@ -170,6 +201,7 @@ class GestorTours(val catalogo: Map<Tour, List<PasoTour>> = emptyMap()) {
         activo = null
         indice = 0
         pila.clear()
+        omitidos.clear()
         alSaltarTodos()
     }
 }
