@@ -16,7 +16,8 @@ import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.geometry.Rect
-import androidx.compose.ui.layout.boundsInRoot
+import androidx.compose.ui.unit.toSize
+import androidx.compose.ui.layout.positionInRoot
 import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.platform.testTag
 import io.github.percati.lenguapp.modelo.Tour
@@ -66,12 +67,29 @@ class RegistroAnclas {
         }
     }
 
-    /** Lleva el ancla a la vista si esta dentro de un scroll (Ajustes, la ficha, listas de la Biblioteca). */
-    @OptIn(ExperimentalFoundationApi::class)
-    suspend fun traerALaVista(id: String) {
-        runCatching { requesters[id]?.bringIntoView() }
+    /**
+     * Lleva el ancla a la vista si esta dentro de un scroll (Ajustes, la ficha, listas de la Biblioteca). Pide el rectangulo del ancla
+     * INFLADO `margenPx` arriba y abajo ([rectanguloConMargen]), no el nodo pelado: el contenedor desplaza de mas y el ancla queda
+     * despegada del borde. Si ya esta entera a la vista y a esa distancia de los bordes, el contenedor no desplaza nada. Si el ancla
+     * es lo primero o lo ultimo del contenido, el margen no se puede cumplir y el contenedor hace lo que puede (no se inventa relleno).
+     * El agujero del foco no cambia: esto es desplazamiento, no dibujo. `pedir` existe para que un test vea el rectangulo pedido.
+     */
+    suspend fun traerALaVista(
+        id: String,
+        margenPx: Float = 0f,
+        pedir: suspend (BringIntoViewRequester, Rect) -> Unit = { requester, rect -> requester.bringIntoView(rect) },
+    ) {
+        val requester = requesters[id] ?: return
+        val rect = rects[id] ?: return
+        runCatching { pedir(requester, rectanguloConMargen(rect.width, rect.height, margenPx)) }
     }
 }
+
+/** Margen, en dp, con el que se trae un ancla a la vista (arriba y abajo). */
+const val MARGEN_AL_TRAER_DP = 32
+
+/** El rectangulo del ancla, en coordenadas del propio nodo, inflado `margen` arriba y abajo. */
+fun rectanguloConMargen(ancho: Float, alto: Float, margen: Float): Rect = Rect(0f, -margen, ancho, alto + margen)
 
 /**
  * Quien sabe que tour esta en marcha y en que paso. El estado persistente (que tours se vieron, si se salto todo) lo pone
@@ -143,7 +161,9 @@ fun Modifier.anclaTour(id: String): Modifier = composed {
         .testTag(id)
         .bringIntoViewRequester(requester)
         .onGloballyPositioned { coordenadas ->
-            if (coordenadas.isAttached) registro.registrar(id, coordenadas.boundsInRoot(), requester)
+            // Posicion y tamano SIN recortar: boundsInRoot() recorta contra los ancestros y devuelve un rectangulo vacio para un nodo que
+            // todavia esta fuera de la pantalla dentro de un scroll, justo el caso en que hay que traerlo a la vista.
+            if (coordenadas.isAttached) registro.registrar(id, Rect(coordenadas.positionInRoot(), coordenadas.size.toSize()), requester)
         }
 }
 

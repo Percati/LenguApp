@@ -5,6 +5,8 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.CompositionLocalProvider
@@ -38,6 +40,7 @@ import org.robolectric.annotation.Config
  */
 @RunWith(RobolectricTestRunner::class)
 @Config(qualifiers = "w400dp-h800dp")
+@androidx.compose.foundation.ExperimentalFoundationApi
 class TutorialMecanismoTest {
 
     @get:Rule
@@ -206,5 +209,71 @@ class TutorialMecanismoTest {
             assertTrue("$i: $paso", paso.contains("2") && paso.contains("7") && !paso.contains("{"))
         }
         assertEquals("Paso 2 de 7", etiquetaTourPaso(2, 7, Idioma.ES))
+    }
+
+    // ---------------- el margen al traer el ancla a la vista (Ronda R, tarea 1) ----------------
+
+    @Test
+    fun `se pide a la vista el rectangulo inflado arriba y abajo, no el nodo pelado`() {
+        val gestor = montar(listOf(paso("a1")))
+        lanzar(gestor)
+        var pedido: androidx.compose.ui.geometry.Rect? = null
+        composeTestRule.runOnIdle {
+            kotlinx.coroutines.runBlocking { gestor.registro.traerALaVista("a1", margenPx = 32f) { _, rect -> pedido = rect } }
+        }
+        val rect = pedido!!
+        assertEquals("el ancla mide 100 x 60", 100f, rect.width, 0.5f)
+        assertEquals("inflado 32 arriba y abajo: 60 + 64", 124f, rect.height, 0.5f)
+        assertEquals(-32f, rect.top, 0.01f)
+        assertEquals(92f, rect.bottom, 0.5f)
+        // la funcion pura, con otro margen
+        assertEquals(androidx.compose.ui.geometry.Rect(0f, -40f, 100f, 100f), rectanguloConMargen(100f, 60f, 40f))
+        assertEquals(32, MARGEN_AL_TRAER_DP)
+    }
+
+    @Test
+    fun `un ancla lejos, dentro de un scroll, queda despegada de los dos bordes al traerla`() {
+        val gestor = GestorTours(mapOf(Tour.FICHA to listOf(paso("lejos"), paso("cerca"))))
+        composeTestRule.setContent {
+            CompositionLocalProvider(LocalGestorTours provides gestor) {
+                Box(Modifier.size(400.dp, 600.dp)) {
+                    Column(Modifier.size(400.dp, 600.dp).verticalScroll(rememberScrollState())) {
+                        Box(Modifier.size(400.dp, 60.dp).anclaTour("cerca")) { Text("arriba") }
+                        Box(Modifier.size(400.dp, 1500.dp))
+                        Box(Modifier.size(400.dp, 60.dp).anclaTour("lejos")) { Text("lejos") }
+                        Box(Modifier.size(400.dp, 800.dp))
+                    }
+                    TutorialOverlay(gestor, Idioma.ES)
+                }
+            }
+        }
+        lanzar(gestor)
+        composeTestRule.mainClock.advanceTimeBy(2000)
+        composeTestRule.waitForIdle()
+        val rect = gestor.registro.rectDe("lejos")!!
+        assertTrue("el ancla no queda pegada arriba: top=${rect.top}", rect.top >= 32f - 1f)
+        assertTrue("el ancla no queda pegada abajo: bottom=${rect.bottom} de 600", rect.bottom <= 600f - 32f + 1f)
+    }
+
+    @Test
+    fun `un ancla que ya esta a la vista y despegada de los bordes no desplaza nada`() {
+        val gestor = GestorTours(mapOf(Tour.FICHA to listOf(paso("medio"))))
+        val estado = androidx.compose.foundation.ScrollState(0)
+        composeTestRule.setContent {
+            CompositionLocalProvider(LocalGestorTours provides gestor) {
+                Box(Modifier.size(400.dp, 600.dp)) {
+                    Column(Modifier.size(400.dp, 600.dp).verticalScroll(estado)) {
+                        Box(Modifier.size(400.dp, 250.dp))
+                        Box(Modifier.size(400.dp, 60.dp).anclaTour("medio")) { Text("medio") }
+                        Box(Modifier.size(400.dp, 1500.dp))
+                    }
+                    TutorialOverlay(gestor, Idioma.ES)
+                }
+            }
+        }
+        lanzar(gestor)
+        composeTestRule.mainClock.advanceTimeBy(1000)
+        composeTestRule.waitForIdle()
+        assertEquals("sin salto gratuito", 0, estado.value)
     }
 }

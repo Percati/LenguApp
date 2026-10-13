@@ -1,3 +1,5 @@
+@file:OptIn(androidx.compose.foundation.ExperimentalFoundationApi::class)
+
 package io.github.percati.lenguapp.ui
 
 import androidx.activity.compose.BackHandler
@@ -81,6 +83,7 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
 
     BackHandler { gestor.terminar() }
 
+    val margenAlTraer = with(LocalDensity.current) { MARGEN_AL_TRAER_DP.dp.toPx() }
     // Un paso con ancla espera a que la pantalla la componga (y la lleva a la vista); si no aparece, se saltea.
     var listo by remember(tour, indice) { mutableStateOf(paso.ancla == null) }
     LaunchedEffect(tour, indice) {
@@ -89,7 +92,7 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
         if (rect == null) {
             gestor.siguiente()
         } else {
-            gestor.registro.traerALaVista(ancla)
+            gestor.registro.traerALaVista(ancla, margenPx = margenAlTraer)
             listo = true
         }
     }
