@@ -5,7 +5,6 @@ import io.github.percati.lenguapp.modelo.Tour
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull
-import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -24,7 +23,7 @@ class TourCatalogoTest {
     fun `titulo y cuerpo de cada paso existen en los 6 idiomas, sin llaves ni vacios`() {
         for ((tour, pasos) in CATALOGO_TOURS) for ((i, paso) in pasos.withIndex()) {
             for (idioma in Idioma.entries) {
-                for (clave in listOfNotNull(paso.titulo, paso.cuerpo, paso.cuerpoExtra)) {
+                for (clave in listOf(paso.titulo, paso.cuerpo)) {
                     val t = textoTour(clave, idioma)
                     assertTrue("$tour paso ${i + 1} $clave en $idioma vacio", t.isNotBlank())
                     assertFalse("$tour paso ${i + 1} $clave en $idioma: llaves sueltas: $t", t.contains("{") || t.contains("}"))
@@ -49,13 +48,12 @@ class TourCatalogoTest {
     }
 
     @Test
-    fun `solo el ultimo paso del tour de la ficha lleva el texto de que es esto, el mismo de la bienvenida y de Acerca de`() {
-        val ficha = CATALOGO_TOURS.getValue(Tour.FICHA)
-        assertEquals(ClaveTexto.ACERCA_QUE_ES_TEXTO, ficha.last().cuerpoExtra)
-        assertTrue(ficha.dropLast(1).all { it.cuerpoExtra == null })
-        for ((tour, pasos) in CATALOGO_TOURS) if (tour != Tour.FICHA) assertTrue(pasos.all { it.cuerpoExtra == null })
-        // es la clave que ya existe, sin reescribir: la bienvenida y «Acerca de» la leen por la misma funcion
+    fun `el cierre del tour de la ficha ya no repite el texto de que es esto, que vive en la bienvenida y en Acerca de`() {
+        val cierre = CATALOGO_TOURS.getValue(Tour.FICHA).last()
         for (idioma in Idioma.entries) {
+            val cuerpo = textoTour(cierre.cuerpo, idioma)
+            assertFalse("$idioma: el cierre repite el parrafo", cuerpo.contains(textoAcercaQueEs(idioma).take(40)))
+            // el texto sigue existiendo, una sola vez, para la bienvenida y «Acerca de»
             assertEquals(textoAcercaQueEs(idioma), textoTour(ClaveTexto.ACERCA_QUE_ES_TEXTO, idioma))
             assertTrue(textoAcercaQueEs(idioma).isNotBlank())
         }
@@ -72,7 +70,6 @@ class TourCatalogoTest {
         // las filas de Ajustes reusan sus tags de siempre
         assertEquals("acerca-de", CATALOGO_TOURS.getValue(Tour.AJUSTES)[2].ancla)
         assertEquals("ver-bienvenida", CATALOGO_TOURS.getValue(Tour.AJUSTES)[3].ancla)
-        assertNull(CATALOGO_TOURS[Tour.FICHA]!!.first().cuerpoExtra)
     }
 
     @Test

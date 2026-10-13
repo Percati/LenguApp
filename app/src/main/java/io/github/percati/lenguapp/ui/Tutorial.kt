@@ -34,13 +34,12 @@ import io.github.percati.lenguapp.modelo.Tour
  */
 /**
  * Un paso: `ancla` es el testTag de lo que se senala (null = un paso sin foco, una tarjeta al centro); `titulo` y `cuerpo` son
- * claves de TextosInterfaz (6 idiomas); `cuerpoExtra` es un segundo parrafo opcional (tambien una clave).
+ * claves de TextosInterfaz (6 idiomas).
  */
 data class PasoTour(
     val ancla: String?,
     val titulo: ClaveTexto,
     val cuerpo: ClaveTexto,
-    val cuerpoExtra: ClaveTexto? = null,
 )
 
 /** Cuanto se espera, como maximo, a que la pantalla componga el ancla de un paso antes de saltearlo. */

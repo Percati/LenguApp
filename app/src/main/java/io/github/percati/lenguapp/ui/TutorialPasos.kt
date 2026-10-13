@@ -5,8 +5,7 @@ import io.github.percati.lenguapp.modelo.Tour
 /**
  * Los pasos de los cuatro tours y el del desafio (Ronda Q), en el orden y con el contenido de docs/tutorial-guion.md. Cada paso
  * nombra su ancla (un testTag que pone `anclaTour` en su pantalla); un test comprueba que todas existen. Ningun tour pasa de 8 pasos.
- * El ultimo paso del tour de la ficha lleva, ademas, el texto de «que es esto y que no es» (ACERCA_QUE_ES_TEXTO), el mismo de la
- * bienvenida y de «Acerca de», sin reescribir: es la unica redundancia deliberada de la app.
+ * (El texto de «que es esto y que no es» vive en la bienvenida y en «Acerca de»; el cierre del tour de la ficha ya no lo repite.)
  */
 val CATALOGO_TOURS: Map<Tour, List<PasoTour>> = mapOf(
     Tour.FICHA to listOf(
@@ -17,7 +16,7 @@ val CATALOGO_TOURS: Map<Tour, List<PasoTour>> = mapOf(
         PasoTour("tour-ficha-vocabulario", ClaveTexto.TOUR_FICHA_5_T, ClaveTexto.TOUR_FICHA_5_C),
         PasoTour("tour-ficha-autochequeo", ClaveTexto.TOUR_FICHA_6_T, ClaveTexto.TOUR_FICHA_6_C),
         PasoTour("tour-ficha-prompt", ClaveTexto.TOUR_FICHA_7_T, ClaveTexto.TOUR_FICHA_7_C),
-        PasoTour("tour-barra-superior", ClaveTexto.TOUR_FICHA_8_T, ClaveTexto.TOUR_FICHA_8_C, cuerpoExtra = ClaveTexto.ACERCA_QUE_ES_TEXTO),
+        PasoTour("tour-barra-superior", ClaveTexto.TOUR_FICHA_8_T, ClaveTexto.TOUR_FICHA_8_C),
     ),
     Tour.BIBLIOTECA to listOf(
         PasoTour("tour-biblioteca-vistas", ClaveTexto.TOUR_BIBLIOTECA_1_T, ClaveTexto.TOUR_BIBLIOTECA_1_C),

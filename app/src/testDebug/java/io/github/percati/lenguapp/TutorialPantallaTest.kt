@@ -174,8 +174,8 @@ class TutorialPantallaTest {
                 asentar()
             }
         }
-        // el ultimo paso lleva, ademas, el texto de «que es esto y que no es»
-        composeTestRule.onNodeWithText(textoTour(ClaveTexto.ACERCA_QUE_ES_TEXTO, Idioma.ES)).assertExists()
+        // el cierre ya no repite el parrafo de «que es esto y que no es» (vive en la bienvenida y en «Acerca de»)
+        composeTestRule.onAllNodesWithText(textoTour(ClaveTexto.ACERCA_QUE_ES_TEXTO, Idioma.ES)).assertCountEquals(0)
         composeTestRule.onNodeWithTag(TAG_TOUR_LISTO).performClick()
         asentar()
         assertTrue(Tour.FICHA in guardados.last().toursVistos)

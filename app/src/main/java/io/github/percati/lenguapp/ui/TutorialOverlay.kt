@@ -159,7 +159,6 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
                     )
                     Text(titulo, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.Bold)
                     Text(textoTour(paso.cuerpo, idiomaInterfaz), style = MaterialTheme.typography.bodyMedium)
-                    paso.cuerpoExtra?.let { Text(textoTour(it, idiomaInterfaz), style = MaterialTheme.typography.bodyMedium) }
                 }
                 val ultimo = gestor.esUltimoPaso
                 // Atras · Saltar · Siguiente/Listo. En una pantalla angosta los botones pasan a otra linea (FlowRow), no se achican.
