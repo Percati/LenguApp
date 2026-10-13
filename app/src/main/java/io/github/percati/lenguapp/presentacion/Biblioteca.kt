@@ -51,6 +51,8 @@ data class ItemBiblioteca(
 
     /** La traduccion al idioma de app, normalizada y cacheada por idioma. */
     internal fun traduccionBuscable(idiomaBase: Idioma): String = traduccionBuscablePorIdioma.getOrPut(idiomaBase) {
+        // Sin glosa si el idioma de la app es el que se aprende (ver datosFila): no hay nada que buscar ahi.
+        if (idiomaBase == idioma) return@getOrPut ""
         val traduccion = vocabulario?.traduccionParaMostrar(idiomaBase)
             ?: (redemittel?.traduccionParaMostrar(idiomaBase) as? TraduccionRedemittel.Disponible)?.texto
         traduccion?.let(::normalizarBusqueda) ?: ""

@@ -693,11 +693,14 @@ private fun VocabularioFila(item: VocabularioItem, idiomaBase: Idioma, idiomaApr
                 },
             )
         }
-        Text(
-            item.traduccionParaMostrar(idiomaBase),
-            style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-        )
+        // Sin glosa si el idioma de la app es el que se aprende (aleman con aleman): ni la de respaldo en espanol ni un guion suelto.
+        if (idiomaBase != idiomaAprendido) {
+            Text(
+                item.traduccionParaMostrar(idiomaBase),
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
         }
         item.reccion?.takeIf { it.isNotBlank() }?.let {
             Text(
@@ -757,12 +760,15 @@ private fun RedemittelFila(
             }
             // La traduccion de la expresion es la del idioma de app (idiomaBase),
             // siempre: el switch cambia la prosa de la ficha, no las glosas.
-            val texto = when (val traduccion = item.traduccionParaMostrar(idiomaBase)) {
-                is TraduccionRedemittel.Disponible -> traduccion.texto
-                TraduccionRedemittel.SinEquivalenciaDirecta -> "Sin equivalencia directa: se aprende por situación."
-                TraduccionRedemittel.SinTraducirTodavia -> "—"
+            // Sin glosa si el idioma de la app es el que se aprende: la linea no se dibuja (nada de «—» ni de un hueco).
+            if (idiomaBase != idiomaAprendido) {
+                val texto = when (val traduccion = item.traduccionParaMostrar(idiomaBase)) {
+                    is TraduccionRedemittel.Disponible -> traduccion.texto
+                    TraduccionRedemittel.SinEquivalenciaDirecta -> "Sin equivalencia directa: se aprende por situación."
+                    TraduccionRedemittel.SinTraducirTodavia -> "—"
+                }
+                Text(texto, style = MaterialTheme.typography.bodyMedium)
             }
-            Text(texto, style = MaterialTheme.typography.bodyMedium)
         }
         Text(
             textoConMarcado(item.funcion.resolver(idiomaMostrado, idiomaAprendido), angulares = idiomaMostrado != idiomaAprendido),

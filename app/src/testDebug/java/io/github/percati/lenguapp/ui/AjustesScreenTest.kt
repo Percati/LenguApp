@@ -129,13 +129,6 @@ class AjustesScreenTest {
         assertEquals(mensajeIdiomaNoDisponible(Idioma.EN, Idioma.ES), ShadowToast.getTextOfLatestToast())
     }
 
-    @Test
-    fun `el aviso de glosas en espanol aparece solo si el idioma de la aplicacion no es espanol`() {
-        montar(Ajustes(idiomaInterfaz = Idioma.DE, idiomaBase = Idioma.DE))
-
-        composeTestRule.onNodeWithText(avisoGlosasTexto(Idioma.DE)).assertExists()
-    }
-
     // --- AJUSTES-FASE-7.md, bloque 1: familia de tema y modo son dos ajustes separados ---
     //
     // Desde la Ronda P los chips estan en un FlowRow dentro del unico scroll vertical de la pantalla (ya no hay un
@@ -178,7 +171,6 @@ class AjustesScreenTest {
         composeTestRule.onAllNodesWithText(etiquetaSegunSistema(Idioma.FR)).onFirst().assertExists()
         composeTestRule.onNodeWithText(etiquetaEstiloVisual(Idioma.FR)).assertExists()
         composeTestRule.onNodeWithText(etiquetaModo(Idioma.FR)).assertExists()
-        composeTestRule.onNodeWithText(avisoGlosasTexto(Idioma.FR)).assertExists()
     }
 
     // --- Contenido nuevo (ingles B2, 2026): el menu de nivel solo ofrece lo que hay ---

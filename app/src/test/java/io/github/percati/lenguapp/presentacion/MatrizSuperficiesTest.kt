@@ -218,13 +218,14 @@ class MatrizSuperficiesTest {
 
         val dV = gV.datosFila(app)
         assertEquals("$aprendido $nivel app=$app", v.item, dV.original)
-        val esperadaV = (v.traducciones[codigo(app)]?.takeIf { it.isNotBlank() } ?: v.traducciones["es"]?.takeIf { it.isNotBlank() })?.takeIf { it != v.item }
+        // Ronda R: si el idioma de la app es el que se aprende (aleman con aleman) no hay glosa, ni la de respaldo en espanol.
+        val esperadaV = if (app == aprendido) null else (v.traducciones[codigo(app)]?.takeIf { it.isNotBlank() } ?: v.traducciones["es"]?.takeIf { it.isNotBlank() })?.takeIf { it != v.item }
         assertEquals(esperadaV, dV.traduccion)
         assertNull("el vocabulario no tiene funcion", dV.funcion)
 
         val dR = gR.datosFila(app)
         assertEquals(r.expresion, dR.original)
-        val propia = r.traducciones[codigo(app)]?.takeIf { it.isNotBlank() } ?: r.traducciones["es"]?.takeIf { it.isNotBlank() }
+        val propia = if (app == aprendido) null else r.traducciones[codigo(app)]?.takeIf { it.isNotBlank() } ?: r.traducciones["es"]?.takeIf { it.isNotBlank() }
         assertEquals(propia?.takeIf { it != r.expresion }, dR.traduccion)
         assertEquals(r.funcion.resolver(aprendido, aprendido).trim().takeIf { it.isNotEmpty() }, dR.funcion)
 

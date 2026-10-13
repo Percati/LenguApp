@@ -37,17 +37,4 @@ class IdiomaAplicacionTest {
         val ajustes = Ajustes(idiomaInterfaz = Idioma.IT, idiomaSegunSistema = true)
         assertEquals(Idioma.EN, idiomaAplicacionEfectivo(ajustes, codigoIdiomaSistema = null))
     }
-
-    // --- avisoGlosasSoloEnEspanol: correccion factual de AJUSTES-FASE-6.md, bloque C ---
-
-    @Test
-    fun `no avisa si el idioma de la aplicacion es espanol`() {
-        assertFalse(avisoGlosasSoloEnEspanol(Idioma.ES))
-    }
-
-    @Test
-    fun `avisa para cualquier otro idioma`() {
-        assertTrue(avisoGlosasSoloEnEspanol(Idioma.DE))
-        assertTrue(avisoGlosasSoloEnEspanol(Idioma.IT))
-    }
 }

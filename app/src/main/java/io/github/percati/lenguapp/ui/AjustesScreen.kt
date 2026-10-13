@@ -55,7 +55,6 @@ import io.github.percati.lenguapp.modelo.VelocidadAudio
 import io.github.percati.lenguapp.modelo.ModoTema
 import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.Tour
-import io.github.percati.lenguapp.presentacion.avisoGlosasSoloEnEspanol
 
 /**
  * Provisoria en su estetica (el rediseño visual de Fase 5 no toco esta
@@ -111,14 +110,6 @@ fun AjustesScreen(
             },
             onElegirSistema = { onAjustesCambiados(ajustes.copy(idiomaSegunSistema = true)) },
         )
-
-        if (avisoGlosasSoloEnEspanol(idiomaAplicacionEfectivo)) {
-            Text(
-                avisoGlosasTexto(idiomaAplicacionEfectivo),
-                style = MaterialTheme.typography.bodySmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
-        }
         }
 
         // «Tema y tipografia» (ancla del tutorial): tema, modo y tipografia juntos.

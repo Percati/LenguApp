@@ -15,15 +15,19 @@ data class DatosFila(val original: String, val traduccion: String?, val funcion:
 
 private fun String?.limpio(): String? = this?.trim()?.takeIf { it.isNotEmpty() }
 
-/** Traduccion en `idiomaBase` (si falta, la espanola, igual que el resto de la app); nunca el propio original. */
-private fun traduccionDe(porIdioma: Map<String, String?>, original: String, idiomaBase: Idioma): String? =
-    (porIdioma[idiomaBase.name.lowercase()].limpio() ?: porIdioma["es"].limpio())?.takeIf { it != original.trim() }
+/**
+ * Traduccion en `idiomaBase` (si falta, la espanola, igual que el resto de la app); nunca el propio original. Si el idioma de la app ES el
+ * que se aprende (aleman con aleman, ingles con ingles) no hay glosa que mostrar: null, y NO la espanola de respaldo (una glosa en otro
+ * idioma que el de la app, sobre una palabra que ya esta en el de la app, no ayuda a nadie).
+ */
+private fun traduccionDe(porIdioma: Map<String, String?>, original: String, idiomaBase: Idioma, idiomaAprendido: Idioma): String? =
+    if (idiomaBase == idiomaAprendido) null else (porIdioma[idiomaBase.name.lowercase()].limpio() ?: porIdioma["es"].limpio())?.takeIf { it != original.trim() }
 
 fun ItemBiblioteca.datosFila(idiomaBase: Idioma): DatosFila {
     val propios: Map<String, String?> = vocabulario?.traducciones ?: redemittel?.traducciones.orEmpty()
     return DatosFila(
         original = texto,
-        traduccion = traduccionDe(propios, texto, idiomaBase),
+        traduccion = traduccionDe(propios, texto, idiomaBase, idioma),
         funcion = funcion?.resolver(idioma, idioma).limpio(),
     )
 }
@@ -37,7 +41,7 @@ fun ItemGuardado.datosFila(idiomaBase: Idioma): DatosFila {
     val sinOriginal = (texto.porIdioma - idioma.name.lowercase())
     return DatosFila(
         original = original,
-        traduccion = traduccionDe(sinOriginal, original, idiomaBase),
+        traduccion = traduccionDe(sinOriginal, original, idiomaBase, idioma),
         funcion = funcion?.resolver(idioma, idioma).limpio(),
     )
 }

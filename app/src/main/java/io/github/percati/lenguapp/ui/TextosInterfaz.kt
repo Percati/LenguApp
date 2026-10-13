@@ -29,7 +29,7 @@ enum class ClaveTexto {
     SIN_CONTENIDO_TITULO, SIN_CONTENIDO_NIVEL, SIN_CONTENIDO_SEMANA, SIN_CALENDARIO,
     SALIR_CONFIRMAR,
     IDIOMAS_APRENDIDOS, IDIOMA_APP, SEGUN_SISTEMA, ESTILO_VISUAL, MODO, MODO_CLARO, MODO_OSCURO,
-    NIVEL, CAMBIAR_NIVEL, IDIOMA_NO_DISPONIBLE, AVISO_GLOSAS,
+    NIVEL, CAMBIAR_NIVEL, IDIOMA_NO_DISPONIBLE,
     GUARDADOS, GUARDADOS_VACIO, FILTRO_IDIOMA, FILTRO_TIPO, FILTRO_TODOS,
     TIPO_VOCABULARIO, TIPO_EXPRESION, DESAFIO_FINDE, TRADUCIR_A,
     SEMANA_REPASO, SEMANA_SURVIVAL, COPIAR_PORTAPAPELES, COPIADO, PROMPT_VOZ_TITULO, PROMPT_VOZ_AYUDA, PLANILLA_BOTON, PLANILLA_SIN_LECTOR,
@@ -169,14 +169,6 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "{idioma} n'est pas encore disponible",
         Idioma.IT to "{idioma} non è ancora disponibile",
         Idioma.PT to "{idioma} ainda não está disponível",
-    ),
-    ClaveTexto.AVISO_GLOSAS to mapOf(
-        Idioma.ES to "Las traducciones de vocabulario todavía solo existen en español.",
-        Idioma.EN to "Vocabulary translations only exist in Spanish so far.",
-        Idioma.DE to "Die Wortschatzübersetzungen liegen bisher nur auf Spanisch vor.",
-        Idioma.FR to "Les traductions du vocabulaire n'existent pour l'instant qu'en espagnol.",
-        Idioma.IT to "Le traduzioni del lessico esistono per ora solo in spagnolo.",
-        Idioma.PT to "As traduções de vocabulário só existem em espanhol por enquanto.",
     ),
     // --- Guardados (feature 3) ---
     ClaveTexto.GUARDADOS to mapOf(
@@ -1439,7 +1431,6 @@ fun mensajeIdiomaNoDisponible(idiomaInterfaz: Idioma, idiomaSinContenido: Idioma
     "idioma" to nombreIdioma(idiomaSinContenido, idiomaInterfaz),
 )
 
-fun avisoGlosasTexto(idiomaInterfaz: Idioma): String = texto(ClaveTexto.AVISO_GLOSAS, idiomaInterfaz)
 
 fun etiquetaGuardados(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS, idiomaInterfaz)
 fun mensajeGuardadosVacio(idiomaInterfaz: Idioma): String = texto(ClaveTexto.GUARDADOS_VACIO, idiomaInterfaz)

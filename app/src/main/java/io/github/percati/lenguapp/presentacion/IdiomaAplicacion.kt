@@ -31,13 +31,3 @@ fun idiomaAplicacionEfectivo(ajustes: Ajustes, codigoIdiomaSistema: String?): Id
     val delSistema = codigoIdiomaSistema?.let { runCatching { Idioma.valueOf(it.uppercase()) }.getOrNull() }
     return delSistema ?: Idioma.EN
 }
-
-/**
- * Las glosas de vocabulario solo existen en español en 2026: 392 items, y
- * todo el contenido actual es B2/C1 (ninguna ficha bilingue todavia) --
- * correccion factual de AJUSTES-FASE-6.md, bloque C. Si el idioma de la
- * aplicacion no es español, las glosas van a caer a español igual (ver
- * VocabularioItem.traduccionParaMostrar); esto solo dice si corresponde
- * avisarlo en Ajustes, para que el usuario no lo descubra solo.
- */
-fun avisoGlosasSoloEnEspanol(idiomaAplicacion: Idioma): Boolean = idiomaAplicacion != Idioma.ES
