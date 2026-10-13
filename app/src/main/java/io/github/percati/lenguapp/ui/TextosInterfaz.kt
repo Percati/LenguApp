@@ -46,7 +46,7 @@ enum class ClaveTexto {
     BIBLIOTECA_VISTA_VERBOS, VERBO_REFLEXIVO, VERBO_TRENNBAR, VERBO_MIT_PRAPOSITION, VERBO_MIT_DATIV, VERBO_PHRASAL_SEPARABLE, VERBO_PHRASAL_INSEPARABLE, VERBO_VERBO_PREPOSICION, VERBOS_VACIO,
     VERBOS_SIN_RESULTADOS, BUSCAR_BORRAR,
     SECCION_CONTRAER, SECCION_EXPANDIR, AUDIO_ESCUCHAR, AUDIO_DETENER,
-    TOUR_FICHA_1_T, TOUR_FICHA_1_C, TOUR_FICHA_6_T, TOUR_FICHA_6_C, TOUR_FICHA_3_T, TOUR_FICHA_3_C, TOUR_FICHA_4_T, TOUR_FICHA_4_C, TOUR_FICHA_5_T, TOUR_FICHA_5_C, TOUR_FICHA_7_T, TOUR_FICHA_7_C, TOUR_FICHA_8_T, TOUR_FICHA_8_C, TOUR_FICHA_10_T, TOUR_FICHA_10_C, TOUR_BIBLIOTECA_1_T, TOUR_BIBLIOTECA_1_C, TOUR_BIBLIOTECA_2_T, TOUR_BIBLIOTECA_2_C, TOUR_BIBLIOTECA_3_T, TOUR_BIBLIOTECA_3_C, TOUR_BIBLIOTECA_4_T, TOUR_BIBLIOTECA_4_C, TOUR_BIBLIOTECA_5_T, TOUR_BIBLIOTECA_5_C, TOUR_GUARDADOS_1_T, TOUR_GUARDADOS_1_C, TOUR_GUARDADOS_2_T, TOUR_GUARDADOS_2_C, TOUR_GUARDADOS_3_T, TOUR_GUARDADOS_3_C, TOUR_AJUSTES_1_T, TOUR_AJUSTES_1_C, TOUR_AJUSTES_2_T, TOUR_AJUSTES_2_C, TOUR_AJUSTES_3_T, TOUR_AJUSTES_3_C, TOUR_AJUSTES_4_T, TOUR_AJUSTES_4_C, TOUR_DESAFIO_1_T, TOUR_DESAFIO_1_C, TOUR_DESAFIO_2_T, TOUR_DESAFIO_2_C,
+    TOUR_FICHA_1_T, TOUR_FICHA_1_C, TOUR_FICHA_6_T, TOUR_FICHA_6_C, TOUR_FICHA_3_T, TOUR_FICHA_3_C, TOUR_FICHA_4_T, TOUR_FICHA_4_C, TOUR_FICHA_5_T, TOUR_FICHA_5_C, TOUR_FICHA_7_T, TOUR_FICHA_7_C, TOUR_FICHA_8_T, TOUR_FICHA_8_C, TOUR_FICHA_10_T, TOUR_FICHA_10_C, TOUR_BIBLIOTECA_1_T, TOUR_BIBLIOTECA_1_C, TOUR_BIBLIOTECA_2_T, TOUR_BIBLIOTECA_2_C, TOUR_BIBLIOTECA_3_T, TOUR_BIBLIOTECA_3_C, TOUR_BIBLIOTECA_4_T, TOUR_BIBLIOTECA_4_C, TOUR_BIBLIOTECA_5_T, TOUR_BIBLIOTECA_5_C, TOUR_GUARDADOS_1_T, TOUR_GUARDADOS_1_C, TOUR_GUARDADOS_2_T, TOUR_GUARDADOS_2_C, TOUR_AJUSTES_1_T, TOUR_AJUSTES_1_C, TOUR_AJUSTES_2_T, TOUR_AJUSTES_2_C, TOUR_AJUSTES_3_T, TOUR_AJUSTES_3_C, TOUR_AJUSTES_4_T, TOUR_AJUSTES_4_C, TOUR_DESAFIO_2_T, TOUR_DESAFIO_2_C, TOUR_DESAFIO_1_T, TOUR_DESAFIO_1_C,
     TOUR_FICHA_2_T, TOUR_FICHA_2_C, TOUR_FICHA_9_T, TOUR_FICHA_9_C,
     TOUR_ATRAS, TOUR_ATRAS_CD, TOUR_SIGUIENTE, TOUR_SALTAR, TOUR_LISTO, TOUR_PASO, TOUR_SIGUIENTE_CD, TOUR_SALTAR_CD, TOUR_LISTO_CD,
     VELOCIDAD_AUDIO_TITULO, VELOCIDAD_AUDIO_AYUDA, VELOCIDAD_AUDIO_VALOR,
@@ -925,37 +925,22 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Si vede come nella Biblioteca.",
         Idioma.PT to "Aparece como na Biblioteca.",
     ),
+    // Paso fusionado Exportar + Importar (Ronda R). TEXTO PROVISIONAL: Fer lo edita en docs/tutorial-textos.md.
     ClaveTexto.TOUR_GUARDADOS_2_T to mapOf(
-        Idioma.ES to "Exportar",
-        Idioma.EN to "Export",
-        Idioma.DE to "Exportieren",
-        Idioma.FR to "Exporter",
-        Idioma.IT to "Esporta",
-        Idioma.PT to "Exportar",
+        Idioma.ES to "Exportar e importar",
+        Idioma.EN to "Export and import",
+        Idioma.DE to "Exportieren und importieren",
+        Idioma.FR to "Exporter et importer",
+        Idioma.IT to "Esportare e importare",
+        Idioma.PT to "Exportar e importar",
     ),
     ClaveTexto.TOUR_GUARDADOS_2_C to mapOf(
-        Idioma.ES to "A Anki o como copia de seguridad, eligiendo tú el archivo.",
-        Idioma.EN to "To Anki or as a backup, with you choosing the file.",
-        Idioma.DE to "Nach Anki oder als Sicherungskopie; die Datei wählst du selbst.",
-        Idioma.FR to "Vers Anki ou en copie de sauvegarde, avec le fichier que tu choisis.",
-        Idioma.IT to "Verso Anki o come copia di sicurezza, scegliendo tu il file.",
-        Idioma.PT to "Para o Anki ou como cópia de segurança, escolhendo você o arquivo.",
-    ),
-    ClaveTexto.TOUR_GUARDADOS_3_T to mapOf(
-        Idioma.ES to "Importar",
-        Idioma.EN to "Import",
-        Idioma.DE to "Importieren",
-        Idioma.FR to "Importer",
-        Idioma.IT to "Importa",
-        Idioma.PT to "Importar",
-    ),
-    ClaveTexto.TOUR_GUARDADOS_3_C to mapOf(
-        Idioma.ES to "Une lo que traes con lo que ya tienes, sin duplicar.",
-        Idioma.EN to "It merges what you bring with what you already have, without duplicates.",
-        Idioma.DE to "Es führt zusammen, was du mitbringst und was du schon hast, ohne Duplikate.",
-        Idioma.FR to "Cela réunit ce que tu apportes et ce que tu as déjà, sans doublons.",
-        Idioma.IT to "Unisce ciò che porti con ciò che hai già, senza duplicati.",
-        Idioma.PT to "Une o que você traz com o que já tem, sem duplicar.",
+        Idioma.ES to "Puedes mandar tus guardados a Anki o guardar una copia de seguridad, y volver a importarla. El archivo lo eliges tú en el momento; al importar, lo que traes se suma a lo que ya tienes, sin duplicar.",
+        Idioma.EN to "You can send your saved items to Anki or keep a backup copy, and import it again. You choose the file at that moment; when importing, what you bring is added to what you already have, without duplicates.",
+        Idioma.DE to "Du kannst deine gespeicherten Einträge nach Anki schicken oder eine Sicherungskopie anlegen und sie wieder importieren. Die Datei wählst du jeweils selbst; beim Import wird das, was du mitbringst, zu dem hinzugefügt, was du schon hast, ohne Duplikate.",
+        Idioma.FR to "Tu peux envoyer tes éléments enregistrés vers Anki ou faire une copie de sauvegarde, puis la réimporter. Tu choisis le fichier à chaque fois ; à l'import, ce que tu apportes s'ajoute à ce que tu as déjà, sans doublons.",
+        Idioma.IT to "Puoi mandare i tuoi salvati ad Anki o fare una copia di sicurezza, e importarla di nuovo. Il file lo scegli tu di volta in volta; con l'importazione, ciò che porti si aggiunge a ciò che hai già, senza duplicati.",
+        Idioma.PT to "Você pode enviar seus salvos para o Anki ou fazer uma cópia de segurança, e importá-la de novo. O arquivo é você quem escolhe, na hora; ao importar, o que você traz se soma ao que já tem, sem duplicar.",
     ),
     ClaveTexto.TOUR_AJUSTES_1_T to mapOf(
         Idioma.ES to "Idioma de la app y qué practicas",
@@ -1021,7 +1006,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Da qui puoi rivedere la schermata di benvenuto e il tutorial quando vuoi.",
         Idioma.PT to "Daqui você pode rever as boas-vindas e o tutorial quando quiser.",
     ),
-    ClaveTexto.TOUR_DESAFIO_1_T to mapOf(
+    ClaveTexto.TOUR_DESAFIO_2_T to mapOf(
         Idioma.ES to "Esto es para hablar",
         Idioma.EN to "This is for speaking",
         Idioma.DE to "Das ist zum Sprechen",
@@ -1029,7 +1014,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Questo è per parlare",
         Idioma.PT to "Isto é para falar",
     ),
-    ClaveTexto.TOUR_DESAFIO_1_C to mapOf(
+    ClaveTexto.TOUR_DESAFIO_2_C to mapOf(
         Idioma.ES to "No para escribir. La consigna está arriba y las condiciones debajo.",
         Idioma.EN to "Not for writing. The task is at the top and the conditions below.",
         Idioma.DE to "Nicht zum Schreiben. Die Aufgabe steht oben, die Bedingungen darunter.",
@@ -1037,7 +1022,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Non per scrivere. La consegna è in alto e le condizioni sotto.",
         Idioma.PT to "Não é para escrever. O enunciado está em cima e as condições embaixo.",
     ),
-    ClaveTexto.TOUR_DESAFIO_2_T to mapOf(
+    ClaveTexto.TOUR_DESAFIO_1_T to mapOf(
         Idioma.ES to "El interruptor arranca apagado",
         Idioma.EN to "The switch starts off",
         Idioma.DE to "Der Schalter ist zu Beginn aus",
@@ -1045,7 +1030,7 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "L'interruttore parte spento",
         Idioma.PT to "O interruptor começa desligado",
     ),
-    ClaveTexto.TOUR_DESAFIO_2_C to mapOf(
+    ClaveTexto.TOUR_DESAFIO_1_C to mapOf(
         Idioma.ES to "Cada vez que abres la app: no se guarda nada.",
         Idioma.EN to "Every time you open the app: nothing is saved.",
         Idioma.DE to "Bei jedem Öffnen der App: Es wird nichts gespeichert.",

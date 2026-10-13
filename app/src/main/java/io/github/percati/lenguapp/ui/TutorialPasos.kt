@@ -27,13 +27,13 @@ val CATALOGO_TOURS: Map<Tour, List<PasoTour>> = mapOf(
         PasoTour("tour-biblioteca-vistas", ClaveTexto.TOUR_BIBLIOTECA_1_T, ClaveTexto.TOUR_BIBLIOTECA_1_C),
         PasoTour("tour-biblioteca-filtros", ClaveTexto.TOUR_BIBLIOTECA_2_T, ClaveTexto.TOUR_BIBLIOTECA_2_C),
         PasoTour("tour-biblioteca-buscar", ClaveTexto.TOUR_BIBLIOTECA_3_T, ClaveTexto.TOUR_BIBLIOTECA_3_C),
-        PasoTour("tour-biblioteca-vistas", ClaveTexto.TOUR_BIBLIOTECA_4_T, ClaveTexto.TOUR_BIBLIOTECA_4_C),
+        PasoTour("tour-biblioteca-vista-verbos", ClaveTexto.TOUR_BIBLIOTECA_4_T, ClaveTexto.TOUR_BIBLIOTECA_4_C),
         PasoTour("tour-biblioteca-estrella", ClaveTexto.TOUR_BIBLIOTECA_5_T, ClaveTexto.TOUR_BIBLIOTECA_5_C),
     ),
     Tour.GUARDADOS to listOf(
         PasoTour("tour-guardados-lista", ClaveTexto.TOUR_GUARDADOS_1_T, ClaveTexto.TOUR_GUARDADOS_1_C),
+        // Exportar e importar, en un solo paso (los dos botones comparten el ancla).
         PasoTour("tour-guardados-archivo", ClaveTexto.TOUR_GUARDADOS_2_T, ClaveTexto.TOUR_GUARDADOS_2_C),
-        PasoTour("tour-guardados-archivo", ClaveTexto.TOUR_GUARDADOS_3_T, ClaveTexto.TOUR_GUARDADOS_3_C),
     ),
     Tour.AJUSTES to listOf(
         PasoTour("tour-ajustes-idiomas", ClaveTexto.TOUR_AJUSTES_1_T, ClaveTexto.TOUR_AJUSTES_1_C),
@@ -42,8 +42,10 @@ val CATALOGO_TOURS: Map<Tour, List<PasoTour>> = mapOf(
         PasoTour("ver-bienvenida", ClaveTexto.TOUR_AJUSTES_4_T, ClaveTexto.TOUR_AJUSTES_4_C),
     ),
     Tour.DESAFIO to listOf(
-        PasoTour("tour-desafio-consigna", ClaveTexto.TOUR_DESAFIO_1_T, ClaveTexto.TOUR_DESAFIO_1_C),
-        PasoTour("tour-desafio-interruptor", ClaveTexto.TOUR_DESAFIO_2_T, ClaveTexto.TOUR_DESAFIO_2_C),
+        // El interruptor primero: la consigna solo existe con el interruptor ENCENDIDO y el tour no lo enciende (encenderlo seria la app
+        // aceptando el desafio en lugar del usuario: regla dura 13). Con el interruptor apagado el paso 2 se saltea solo.
+        PasoTour("tour-desafio-interruptor", ClaveTexto.TOUR_DESAFIO_1_T, ClaveTexto.TOUR_DESAFIO_1_C),
+        PasoTour("tour-desafio-consigna", ClaveTexto.TOUR_DESAFIO_2_T, ClaveTexto.TOUR_DESAFIO_2_C),
     ),
 )
 

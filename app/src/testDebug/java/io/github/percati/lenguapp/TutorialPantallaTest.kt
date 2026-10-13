@@ -269,18 +269,15 @@ class TutorialPantallaTest {
     }
 
     @Test
-    fun `el sabado, con la ficha ya vista, el tour del desafio enciende el interruptor y al terminar lo deja apagado`() {
+    fun `el sabado, con la ficha ya vista, el tour del desafio senala el interruptor y NO lo enciende (regla dura 13)`() {
         mostrar(sabado, vistos = setOf(Tour.FICHA))
-        composeTestRule.onNodeWithText(etiquetaTourPaso(1, 2, Idioma.ES)).assertExists()
-        // la consigna del desafio se ve porque el tour encendio el interruptor
-        assertTrue("tour-desafio-consigna" in gestor.registro.ids())
-        composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
-        asentar()
-        composeTestRule.onNodeWithText(etiquetaTourPaso(2, 2, Idioma.ES)).assertExists()
+        // el interruptor esta apagado: la consigna no existe, su paso se saltea y el contador lo sabe de entrada
+        composeTestRule.onNodeWithText(etiquetaTourPaso(1, 1, Idioma.ES)).assertExists()
+        assertFalse("la consigna no aparece: el tour no encendio el interruptor", "tour-desafio-consigna" in gestor.registro.ids())
         composeTestRule.onNodeWithTag(TAG_TOUR_LISTO).performClick()
         asentar()
         assertTrue(Tour.DESAFIO in guardados.last().toursVistos)
-        assertFalse("el interruptor vuelve a quedar apagado", "tour-desafio-consigna" in gestor.registro.ids())
+        assertFalse("sigue apagado", "tour-desafio-consigna" in gestor.registro.ids())
     }
 
     @Test
@@ -308,5 +305,31 @@ class TutorialPantallaTest {
         val respaldo = serializarRespaldo(emptyList()).lowercase()
         assertFalse(respaldo.contains("tour"))
         assertFalse(respaldo.contains("tutorial"))
+    }
+
+    @Test
+    fun `la opcion Verbos del selector de la Biblioteca es un ancla propia, y el selector sigue siendo el de siempre`() {
+        mostrar(lunes, todosVistos)
+        composeTestRule.onNodeWithText("Biblioteca").performClick()
+        asentar()
+        val ids = gestor.registro.ids()
+        assertTrue("tour-biblioteca-vista-verbos" in ids && "tour-biblioteca-vistas" in ids)
+        // los chips de las tres vistas siguen ahi, con su texto
+        composeTestRule.onNodeWithText("Verbos").assertExists()
+        composeTestRule.onNodeWithText("Habilidades").assertExists()
+    }
+
+    @Test
+    fun `con el interruptor encendido a mano, el tour del desafio muestra los dos pasos`() {
+        mostrar(sabado, todosVistos)
+        composeTestRule.onNodeWithText(etiquetaDesafioFinde(Idioma.ES)).performClick()
+        asentar()
+        assertTrue("tour-desafio-consigna" in gestor.registro.ids())
+        composeTestRule.runOnIdle { gestor.vistos = emptySet(); gestor.lanzar(Tour.DESAFIO) }
+        asentar()
+        composeTestRule.onNodeWithText(etiquetaTourPaso(1, 2, Idioma.ES)).assertExists()
+        composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+        asentar()
+        composeTestRule.onNodeWithText(etiquetaTourPaso(2, 2, Idioma.ES)).assertExists()
     }
 }

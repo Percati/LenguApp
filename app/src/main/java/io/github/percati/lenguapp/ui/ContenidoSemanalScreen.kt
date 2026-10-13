@@ -246,17 +246,8 @@ private fun FichaContenido(
             if (!gestor.lanzar(Tour.FICHA) && enFinDeSemana && Tour.FICHA in gestor.vistos) gestor.lanzar(Tour.DESAFIO)
         }
     }
-    // Mientras dura el tour del desafio se enciende el interruptor para poder senalar su consigna, y al terminar se lo deja como estaba.
-    val tourDelDesafio = gestor.activo == Tour.DESAFIO
-    var abiertoPorElTour by remember { mutableStateOf(false) }
-    LaunchedEffect(tourDelDesafio) {
-        if (tourDelDesafio) {
-            if (!modoDesafio) { modoDesafio = true; abiertoPorElTour = true }
-        } else if (abiertoPorElTour) {
-            modoDesafio = false
-            abiertoPorElTour = false
-        }
-    }
+    // El tour del desafio NO enciende el interruptor: encenderlo seria la app aceptando el desafio en lugar del usuario (regla dura 13).
+    // Si esta apagado, el paso de la consigna no encuentra su ancla y se saltea.
 
     Column(modifier = modifier.fillMaxSize()) {
         if (puedeTraducir || enFinDeSemana) {

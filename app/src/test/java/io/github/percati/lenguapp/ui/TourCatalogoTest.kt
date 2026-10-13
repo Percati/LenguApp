@@ -13,10 +13,29 @@ class TourCatalogoTest {
 
     @Test
     fun `cada tour tiene sus pasos y ninguno pasa del tope de 10`() {
-        assertEquals(mapOf(Tour.FICHA to 10, Tour.BIBLIOTECA to 5, Tour.GUARDADOS to 3, Tour.AJUSTES to 4, Tour.DESAFIO to 2),
+        assertEquals(mapOf(Tour.FICHA to 10, Tour.BIBLIOTECA to 5, Tour.GUARDADOS to 2, Tour.AJUSTES to 4, Tour.DESAFIO to 2),
             CATALOGO_TOURS.mapValues { it.value.size })
         for ((tour, pasos) in CATALOGO_TOURS) assertTrue("$tour: ${pasos.size} pasos (tope $MAX_PASOS_POR_TOUR)", pasos.size <= MAX_PASOS_POR_TOUR)
-        assertEquals("unos 25 pasos en total", 24, CATALOGO_TOURS.values.sumOf { it.size })
+        assertEquals("unos 25 pasos en total", 23, CATALOGO_TOURS.values.sumOf { it.size })
+    }
+
+    @Test
+    fun `Guardados fusiona exportar e importar en un paso, con el ancla de los dos botones, y la clave que sobra no existe`() {
+        val pasos = CATALOGO_TOURS.getValue(Tour.GUARDADOS)
+        assertEquals(listOf("tour-guardados-lista", "tour-guardados-archivo"), pasos.map { it.ancla })
+        assertEquals("Exportar e importar", textoTour(pasos[1].titulo, Idioma.ES))
+        assertTrue(textoTour(pasos[1].cuerpo, Idioma.ES).contains("Anki") && textoTour(pasos[1].cuerpo, Idioma.ES).contains("sin duplicar"))
+        assertTrue("la clave TOUR_GUARDADOS_3 se borro", ClaveTexto.entries.none { it.name.startsWith("TOUR_GUARDADOS_3") })
+    }
+
+    @Test
+    fun `el desafio senala primero el interruptor y despues la consigna, y la vista Verbos tiene su propia ancla en la Biblioteca`() {
+        assertEquals(listOf("tour-desafio-interruptor", "tour-desafio-consigna"), CATALOGO_TOURS.getValue(Tour.DESAFIO).map { it.ancla })
+        assertEquals("tour-biblioteca-vistas", CATALOGO_TOURS.getValue(Tour.BIBLIOTECA)[0].ancla)
+        assertEquals("tour-biblioteca-vista-verbos", CATALOGO_TOURS.getValue(Tour.BIBLIOTECA)[3].ancla)
+        // el interruptor conserva su texto de siempre y pasa a ser el paso 1
+        assertEquals("El interruptor arranca apagado", textoTour(CATALOGO_TOURS.getValue(Tour.DESAFIO)[0].titulo, Idioma.ES))
+        assertEquals("Esto es para hablar", textoTour(CATALOGO_TOURS.getValue(Tour.DESAFIO)[1].titulo, Idioma.ES))
     }
 
     @Test

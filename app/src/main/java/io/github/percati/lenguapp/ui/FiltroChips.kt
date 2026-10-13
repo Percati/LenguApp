@@ -21,9 +21,10 @@ import androidx.compose.ui.unit.dp
 /**
  * Una opcion de un grupo de chips: `clave` (identidad estable, lo que se compara) y `etiqueta` (lo que
  * se ve, ya en el idioma de app y con su contador si lo lleva). La lista la calcula quien llama desde
- * los datos del idioma (REGLAS-PREVENCION P3: ninguna lista de filtros es fija).
+ * los datos del idioma (REGLAS-PREVENCION P3: ninguna lista de filtros es fija). `ancla` (opcional) marca el chip como ancla del
+ * tutorial sin cambiar como se ve.
  */
-data class OpcionFiltro(val clave: String, val etiqueta: String)
+data class OpcionFiltro(val clave: String, val etiqueta: String, val ancla: String? = null)
 
 /** Como se acomodan los chips cuando son muchos. */
 enum class DisposicionChips {
@@ -55,7 +56,12 @@ fun GrupoChips(
     etiquetaVerMenos: String = "",
 ) {
     val chips: @Composable (OpcionFiltro) -> Unit = { opcion ->
-        FilterChip(selected = estaElegida(opcion), onClick = { onElegir(opcion) }, label = { Text(opcion.etiqueta) })
+        FilterChip(
+            selected = estaElegida(opcion),
+            onClick = { onElegir(opcion) },
+            label = { Text(opcion.etiqueta) },
+            modifier = if (opcion.ancla != null) Modifier.anclaTour(opcion.ancla) else Modifier,
+        )
     }
     when (disposicion) {
         DisposicionChips.DESPLAZABLE -> Row(

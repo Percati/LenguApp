@@ -178,7 +178,7 @@ fun BibliotecaScreen(
                         vistas = listOf(
                             OpcionFiltro(VistaBiblioteca.LEXICO.name, etiquetaBibliotecaVistaLexico(idiomaInterfaz)),
                             OpcionFiltro(VistaBiblioteca.HABILIDADES.name, etiquetaBibliotecaVistaHabilidades(idiomaInterfaz)),
-                            OpcionFiltro(VistaBiblioteca.VERBOS.name, etiquetaBibliotecaVistaVerbos(idiomaInterfaz)),
+                            OpcionFiltro(VistaBiblioteca.VERBOS.name, etiquetaBibliotecaVistaVerbos(idiomaInterfaz), ancla = "tour-biblioteca-vista-verbos"),
                         ),
                         elegida = vista.name,
                         onElegir = { vista = VistaBiblioteca.valueOf(it) },
