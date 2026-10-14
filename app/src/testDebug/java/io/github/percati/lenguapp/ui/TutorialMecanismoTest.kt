@@ -471,4 +471,42 @@ class TutorialMecanismoTest {
         val tarjeta = composeTestRule.onNodeWithTag(TAG_TOUR_TARJETA).fetchSemanticsNode().boundsInRoot
         assertTrue("la tarjeta esta abajo, no en el centro: top=${tarjeta.top}", tarjeta.top > 400f)
     }
+
+    private fun medirEnPantallaChica(altoAncla: Int, altoVisor: Int): androidx.compose.ui.geometry.Rect {
+        val gestor = GestorTours(mapOf(Tour.FICHA to listOf(paso("alta"))))
+        composeTestRule.setContent {
+            CompositionLocalProvider(LocalGestorTours provides gestor) {
+                Box(Modifier.size(360.dp, 640.dp)) {
+                    // un visor mas bajo que la pantalla, como en la app real (barra de arriba y barra de abajo se comen alto)
+                    Column(Modifier.offset(y = 100.dp).size(360.dp, altoVisor.dp).verticalScroll(rememberScrollState())) {
+                        Box(Modifier.size(360.dp, 1200.dp))
+                        Box(Modifier.size(360.dp, altoAncla.dp).anclaTour("alta")) { Text("alta") }
+                        Box(Modifier.size(360.dp, 1200.dp))
+                    }
+                    TutorialOverlay(gestor, Idioma.ES)
+                }
+            }
+        }
+        lanzar(gestor)
+        composeTestRule.mainClock.advanceTimeBy(2000)
+        composeTestRule.waitForIdle()
+        return gestor.registro.rectDe("alta")!!
+    }
+
+    @Test
+    @Config(qualifiers = "w360dp-h640dp")
+    fun `en 360 x 640 con un visor de 440 dp, un ancla alta de 400 queda con el comienzo a 96 dp del borde de arriba del visor`() {
+        val r = medirEnPantallaChica(altoAncla = 400, altoVisor = 440)
+        println("MEDIDA-visor440-ancla400 arriba=${r.top - 100f} abajo=${100f + 440f - r.bottom}")
+        assertEquals("el comienzo del ancla, a 96 dp del borde de arriba del visor", 96f, r.top - 100f, 2f)
+    }
+
+    @Test
+    @Config(qualifiers = "w360dp-h640dp")
+    fun `en 360 x 640 con un visor de 440 dp, un ancla de 150 queda a 96 dp o mas de los dos bordes`() {
+        val r = medirEnPantallaChica(altoAncla = 150, altoVisor = 440)
+        println("MEDIDA-visor440-ancla150 arriba=${r.top - 100f} abajo=${100f + 440f - r.bottom}")
+        assertTrue("arriba ${r.top - 100f}", r.top - 100f >= 95f)
+        assertTrue("abajo ${100f + 440f - r.bottom}", 100f + 440f - r.bottom >= 95f)
+    }
 }
