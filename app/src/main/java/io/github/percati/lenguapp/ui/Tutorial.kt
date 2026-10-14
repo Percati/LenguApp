@@ -93,6 +93,20 @@ class RegistroAnclas {
 const val MARGEN_AL_TRAER_DP = 96
 
 /**
+ * El rectangulo del ancla recortado a los limites del recuadro (0,0)-(ancho,alto), o null si no se cruzan. El ancla se registra SIN
+ * recortar (hace falta para traerla a la vista), asi que un ancla que se pasa de la pantalla daria un agujero que se sale del recuadro
+ * y una decision de lado de la tarjeta calculada con un centro que esta fuera de la pantalla. Con null el paso se trata como uno sin
+ * foco: tarjeta abajo y sin agujero.
+ */
+fun recortarAlRecuadro(rect: Rect, ancho: Float, alto: Float): Rect? {
+    val r = rect.intersect(Rect(0f, 0f, ancho, alto))
+    return if (r.width <= 0f || r.height <= 0f) null else r
+}
+
+/** La tarjeta va abajo si el foco (ya recortado) esta en la mitad de arriba del recuadro; si no, arriba. */
+fun focoEnLaMitadDeArriba(foco: Rect, alto: Float): Boolean = alto > 0f && foco.center.y < alto / 2f
+
+/**
  * El rectangulo del ancla, en coordenadas del propio nodo, inflado `margen` arriba y abajo. Si con los dos margenes no cabe en
  * `altoMaximo` (un ancla alta en una pantalla chica: 96 + 96 son ~190 dp), SE PRIORIZA EL DE ARRIBA: se recorta el de abajo, porque
  * quien lee un paso empieza por el principio del elemento y perder el final es menos malo que perder el comienzo. El contenedor hace

@@ -3,6 +3,7 @@ package io.github.percati.lenguapp.ui
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.rememberScrollState
@@ -408,5 +409,66 @@ class TutorialMecanismoTest {
         // 400 + 96 + 96 = 592 > 80 % de 640 (512): se prioriza el margen de arriba
         println("MEDIDA-360x640 top=${rect.top} bottom=${rect.bottom}")
         assertTrue("el comienzo del ancla queda a >= 96 dp del borde de arriba: top=${rect.top}", rect.top >= 96f - 1f)
+    }
+
+    // --- Ronda S, T2: el agujero y la decision del lado de la tarjeta, recortados a la pantalla ---
+
+    @Test
+    fun `recortarAlRecuadro recorta lo que se pasa y da null si no se cruza`() {
+        val r = androidx.compose.ui.geometry.Rect(-50f, 250f, 300f, 1250f)
+        assertEquals(androidx.compose.ui.geometry.Rect(0f, 250f, 300f, 600f), recortarAlRecuadro(r, 400f, 600f))
+        assertNull("debajo de la pantalla", recortarAlRecuadro(androidx.compose.ui.geometry.Rect(0f, 700f, 100f, 800f), 400f, 600f))
+        assertNull("arriba de la pantalla", recortarAlRecuadro(androidx.compose.ui.geometry.Rect(0f, -300f, 100f, -10f), 400f, 600f))
+        assertNull("justo en el borde, sin area", recortarAlRecuadro(androidx.compose.ui.geometry.Rect(0f, 600f, 100f, 700f), 400f, 600f))
+        // un ancla entera adentro queda igual
+        val entera = androidx.compose.ui.geometry.Rect(10f, 20f, 110f, 80f)
+        assertEquals(entera, recortarAlRecuadro(entera, 400f, 600f))
+    }
+
+    @Test
+    fun `el lado de la tarjeta se decide con el centro del foco recortado, no con el del ancla entera`() {
+        // el ancla entera tiene el centro en y = 600 (mitad de abajo en 800), pero lo que se ve es 100..800: centro 450, tambien abajo
+        // del medio; y uno que arranca arriba (-1000..300): sin recortar el centro es -350, recortado 150. Ambos lados se deciden con lo visible.
+        val a = recortarAlRecuadro(androidx.compose.ui.geometry.Rect(0f, 100f, 100f, 1100f), 400f, 800f)!!
+        assertEquals(450f, a.center.y, 0.01f)
+        assertFalse(focoEnLaMitadDeArriba(a, 800f))
+        val b = recortarAlRecuadro(androidx.compose.ui.geometry.Rect(0f, -1000f, 100f, 300f), 400f, 800f)!!
+        assertEquals(150f, b.center.y, 0.01f)
+        assertTrue(focoEnLaMitadDeArriba(b, 800f))
+        assertFalse("sin alto no hay mitad", focoEnLaMitadDeArriba(b, 0f))
+    }
+
+    private fun montarConAncla(topDp: Int, altoDp: Int): GestorTours {
+        val gestor = GestorTours(mapOf(Tour.FICHA to listOf(paso("fuera"))))
+        composeTestRule.setContent {
+            CompositionLocalProvider(LocalGestorTours provides gestor) {
+                Box(Modifier.size(400.dp, 800.dp)) {
+                    Box(Modifier.offset(y = topDp.dp).size(100.dp, altoDp.dp).anclaTour("fuera"))
+                    TutorialOverlay(gestor, Idioma.ES)
+                }
+            }
+        }
+        return gestor
+    }
+
+    @Test
+    fun `un ancla que se pasa de la pantalla pone la tarjeta del lado opuesto al pedazo que se ve`() {
+        // el pedazo visible es 500..800 (abajo): la tarjeta va arriba; el agujero se dibuja recortado a la pantalla
+        val gestor = montarConAncla(topDp = 500, altoDp = 1800)
+        lanzar(gestor)
+        pasarElTiempoDeEspera()
+        composeTestRule.onNodeWithTag(TAG_TOUR_TARJETA).assertIsDisplayed()
+        val tarjeta = composeTestRule.onNodeWithTag(TAG_TOUR_TARJETA).fetchSemanticsNode().boundsInRoot
+        assertTrue("la tarjeta esta arriba: top=${tarjeta.top}", tarjeta.top < 200f)
+    }
+
+    @Test
+    fun `un ancla completamente fuera de la pantalla se trata como un paso sin foco, con la tarjeta abajo`() {
+        val gestor = montarConAncla(topDp = 1000, altoDp = 60)
+        lanzar(gestor)
+        pasarElTiempoDeEspera()
+        composeTestRule.onNodeWithTag(TAG_TOUR_TARJETA).assertIsDisplayed()
+        val tarjeta = composeTestRule.onNodeWithTag(TAG_TOUR_TARJETA).fetchSemanticsNode().boundsInRoot
+        assertTrue("la tarjeta esta abajo, no en el centro: top=${tarjeta.top}", tarjeta.top > 400f)
     }
 }

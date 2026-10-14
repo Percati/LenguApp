@@ -124,9 +124,11 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
                 .graphicsLayer(compositingStrategy = CompositingStrategy.Offscreen)
                 .drawWithContent {
                     drawRect(ESCRIM)
-                    if (rect != null) {
-                        val arriba = Offset(rect.left - margen, rect.top - margen)
-                        val medida = Size(rect.width + 2 * margen, rect.height + 2 * margen)
+                    // El agujero se recorta a lo que se ve (el rect se registra sin recortar): nada de un hueco que se sale de la pantalla.
+                    val visible = rect?.let { recortarAlRecuadro(it, size.width, size.height) }
+                    if (visible != null) {
+                        val arriba = Offset(visible.left - margen, visible.top - margen)
+                        val medida = Size(visible.width + 2 * margen, visible.height + 2 * margen)
                         drawRoundRect(Color.Black, arriba, medida, CornerRadius(radio), blendMode = BlendMode.Clear)
                         drawRoundRect(BORDE_FOCO, arriba, medida, CornerRadius(radio), style = Stroke(borde))
                     }
@@ -134,10 +136,12 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
         )
 
         // La tarjeta va en la mitad opuesta al foco; sin foco, abajo.
-        val enLaMitadDeArriba = rect != null && tamano.height > 0 && rect.center.y < tamano.height / 2f
+        // Con el foco recortado a la pantalla; si el ancla no se cruza con ella, el paso se trata como uno sin foco pero con la tarjeta abajo.
+        val foco = rect?.let { recortarAlRecuadro(it, tamano.width.toFloat(), tamano.height.toFloat()) }
+        val enLaMitadDeArriba = foco != null && focoEnLaMitadDeArriba(foco, tamano.height.toFloat())
         Surface(
             modifier = Modifier
-                .align(if (enLaMitadDeArriba) Alignment.BottomCenter else if (rect == null) Alignment.Center else Alignment.TopCenter)
+                .align(if (enLaMitadDeArriba) Alignment.BottomCenter else if (rect == null) Alignment.Center else if (foco == null && tamano.height > 0) Alignment.BottomCenter else Alignment.TopCenter)
                 .windowInsetsPadding(WindowInsets.safeDrawing)
                 .padding(16.dp)
                 .fillMaxWidth()
