@@ -64,6 +64,15 @@ class TourCatalogoTest {
     }
 
     @Test
+    fun `el enum ClaveTexto declara las claves de cada tour en orden, 1 a n seguidas (Ronda S)`() {
+        fun orden(prefijo: String) = ClaveTexto.entries.filter { it.name.startsWith("${prefijo}_") && it.name.length <= prefijo.length + 5 }.map { it.name }
+        for ((prefijo, n) in listOf("TOUR_FICHA" to 10, "TOUR_BIBLIOTECA" to 5, "TOUR_GUARDADOS" to 2, "TOUR_AJUSTES" to 4, "TOUR_DESAFIO" to 2)) {
+            val esperado = (1..n).flatMap { listOf("${prefijo}_${it}_T", "${prefijo}_${it}_C") }
+            assertEquals(prefijo, esperado, orden(prefijo))
+        }
+    }
+
+    @Test
     fun `titulo y cuerpo de cada paso existen en los 6 idiomas, sin llaves ni vacios`() {
         for ((tour, pasos) in CATALOGO_TOURS) for ((i, paso) in pasos.withIndex()) {
             for (idioma in Idioma.entries) {

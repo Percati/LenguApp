@@ -68,7 +68,6 @@ import io.github.percati.lenguapp.presentacion.contarCategorias
 import io.github.percati.lenguapp.presentacion.contarTopics
 import io.github.percati.lenguapp.presentacion.filtrar
 import io.github.percati.lenguapp.presentacion.topicsDelIdioma
-import io.github.percati.lenguapp.presentacion.traduccionParaMostrar
 
 const val TAG_ESTRELLA_BIBLIOTECA = "estrella-biblioteca"
 
