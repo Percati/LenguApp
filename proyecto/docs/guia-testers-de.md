@@ -21,7 +21,7 @@
 | Das PDF-Blatt erscheint in der gelernten Sprache und auf einer Seite | Es ist dafür da, es der Person zu zeigen, die dich unterrichtet. |
 | Im Deutschen gibt es kein «ß» | Es gilt die Schweizer Rechtschreibung: «ss». |
 | Das Spanische ist neutral und per «tú» | «Usted» kommt nur in Wendungen aus förmlichen Situationen vor, und genau die werden dort gelehrt. |
-| Audio funktioniert, nur auf Deutsch | Tippe auf den Lautsprecher neben einem Wort oder einer Wendung (bei Beispielen nur bei manchen): synthetische Stimme. Tempo (60–100 %) in den Einstellungen. Auf Englisch noch keine. |
+| Audio: Deutsch, in dieser Testversion auch Englisch | Tippe auf den Lautsprecher neben einem Wort oder einer Wendung (bei Beispielen nur bei manchen): synthetische Stimme. Tempo (60–100 %) in den Einstellungen. Die englische Stimme fehlt noch in der veröffentlichten Version; Lizenzen unter «Über». |
 | Es gibt Inhalte für 2026 (ab Woche 41) und für 2027 | Der Rest kommt nach und nach dazu. |
 | Du kannst Farben und Schrift wählen | Vier Themes (Papier, Terrakotta, Meer, Graphit) und ab Android 12 eines nach deinem Hintergrundbild. Dazu drei Schriften: System, Lesen und Klar. |
 | Manche Zeichen (↔, ✗, →, ₂) in anderer Schrift | Lesen und Klar enthalten sie nicht, also zeichnet sie das Telefon mit der Systemschrift. |
