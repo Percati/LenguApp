@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.text.selection.SelectionContainer
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -49,8 +50,10 @@ fun AcercaDeScreen(
             Bloque(etiquetaAcercaPrivacidadTitulo(idiomaInterfaz), textoAcercaPrivacidad(idiomaInterfaz))
             Bloque(
                 etiquetaAcercaLicenciasTitulo(idiomaInterfaz),
-                textoAcercaLicencias(idiomaInterfaz) + "\n" + textoAcercaFuentes(idiomaInterfaz) + "\n" + textoAcercaCreditos(idiomaInterfaz),
+                textoAcercaLicencias(idiomaInterfaz) + "\n" + textoAcercaFuentes(idiomaInterfaz),
             )
+            // Las URL son texto que se selecciona y se copia: sin enlaces tocables ni salidas hacia otras apps (decision de Fer, Ronda S).
+            SelectionContainer { Bloque(etiquetaAcercaVocesTitulo(idiomaInterfaz), textoAcercaVoces(idiomaInterfaz)) }
             Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
                 if (version.isNotBlank()) {
                     Text(

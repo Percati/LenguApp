@@ -24,13 +24,14 @@ import io.github.percati.lenguapp.semana.semanaIsoDe
 import io.github.percati.lenguapp.ui.etiquetaAcercaComoTitulo
 import io.github.percati.lenguapp.ui.etiquetaAcercaDe
 import io.github.percati.lenguapp.ui.textoAcercaComo
-import io.github.percati.lenguapp.ui.textoAcercaCreditos
 import io.github.percati.lenguapp.ui.textoAcercaPrueba
 import io.github.percati.lenguapp.ui.etiquetaAcercaLicenciasTitulo
 import io.github.percati.lenguapp.ui.etiquetaAcercaPrivacidadTitulo
 import io.github.percati.lenguapp.ui.etiquetaAcercaQueEsTitulo
 import io.github.percati.lenguapp.ui.mensajeDobleAtrasParaSalir
 import io.github.percati.lenguapp.ui.textoAcercaLicencias
+import io.github.percati.lenguapp.ui.textoAcercaVoces
+import io.github.percati.lenguapp.ui.etiquetaAcercaVocesTitulo
 import io.github.percati.lenguapp.ui.textoAcercaPrivacidad
 import io.github.percati.lenguapp.ui.textoAcercaQueEs
 import io.github.percati.lenguapp.ui.textoAcercaVersion
@@ -409,7 +410,7 @@ class LenguAppAppTest {
                 etiquetaAcercaPrivacidadTitulo(idioma), textoAcercaPrivacidad(idioma),
                 etiquetaAcercaLicenciasTitulo(idioma), textoAcercaLicencias(idioma),
                 textoAcercaVersion(idioma, "0.2.0"),
-                etiquetaAcercaComoTitulo(idioma), textoAcercaComo(idioma), textoAcercaCreditos(idioma), textoAcercaPrueba(idioma),
+                etiquetaAcercaComoTitulo(idioma), textoAcercaComo(idioma), etiquetaAcercaVocesTitulo(idioma), textoAcercaVoces(idioma), textoAcercaPrueba(idioma),
             )
             assertTrue("$idioma: texto vacio", textos.all { it.isNotBlank() })
             assertTrue("$idioma: placeholder sin resolver", textos.none { it.contains("{") })

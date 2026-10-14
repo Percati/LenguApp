@@ -38,7 +38,7 @@ enum class ClaveTexto {
     ORDENAR_POR, ORDEN_ALFABETICO, ORDEN_FECHA, ASCENDENTE, DESCENDENTE, QUITAR_ESTRELLA,
     SIN_IDIOMA_TITULO, SIN_IDIOMA_TEXTO, SIN_IDIOMA_WIDGET,
     RETO_CONSIGNA_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_HABILIDAD, RETO_CONDICIONES, RETO_FRASES_TITULO, RETO_FRASES_AYUDA,
-    ACERCA_COMO_TITULO, ACERCA_COMO_TEXTO, ACERCA_CREDITOS_TEXTO, ACERCA_PRUEBA,
+    ACERCA_COMO_TITULO, ACERCA_COMO_TEXTO, ACERCA_VOCES_TITULO, ACERCA_VOCES_TEXTO, ACERCA_PRUEBA,
     GUARDADOS_EXPORTAR, GUARDADOS_IMPORTAR, GUARDADOS_EXPORTAR_ANKI, GUARDADOS_EXPORTAR_RESPALDO, GUARDADOS_MSG_EXPORTADO, GUARDADOS_MSG_IMPORTADO, GUARDADOS_ERR_INVALIDO, GUARDADOS_ERR_GRANDE, GUARDADOS_ERR_VERSION, GUARDADOS_ERR_ARCHIVO,
     BIBLIOTECA_VISTA_LEXICO, BIBLIOTECA_VISTA_HABILIDADES, HABILIDAD_SEMANAS,
     TEMA_PAPEL, TEMA_TERRACOTA, TEMA_MAR, TEMA_GRAFITO,
@@ -590,15 +590,22 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.IT to "Le abilità più importanti di ogni livello ritornano durante l'anno con una profondità diversa, perché la ripetizione distanziata è la base del metodo. Quattro volte all'anno una settimana è dedicata al ripasso, e ogni fine settimana c'è una sfida di pratica orale. I contenuti vengono pubblicati in edizioni annuali. Puoi praticare tedesco o inglese, e l'interfaccia è disponibile in spagnolo, inglese, tedesco, francese, italiano e portoghese.",
         Idioma.PT to "As habilidades mais importantes de cada nível voltam ao longo do ano com profundidade diferente, porque a repetição espaçada é a base do método. Quatro vezes por ano uma semana é dedicada à revisão, e todo fim de semana há um desafio de prática oral. O conteúdo é publicado em edições anuais. Você pode praticar alemão ou inglês, e a interface está disponível em espanhol, inglês, alemão, francês, italiano e português.",
     ),
-    // Voces: solo se nombra la alemana (CC0). Las inglesas actuales no se pueden publicar (docs/licencias-voces.md) y su
-    // audio esta apagado en release; cuando se regeneren con una voz de corpus limpio hay que sumarla aca.
-    ClaveTexto.ACERCA_CREDITOS_TEXTO to mapOf(
-        Idioma.ES to "Audio generado con Piper (MIT). Voz alemana: Thorsten-Voice, CC0.",
-        Idioma.EN to "Audio generated with Piper (MIT). German voice: Thorsten-Voice, CC0.",
-        Idioma.DE to "Audio mit Piper (MIT) erzeugt. Deutsche Stimme: Thorsten-Voice, CC0.",
-        Idioma.FR to "Audio généré avec Piper (MIT). Voix allemande : Thorsten-Voice, CC0.",
-        Idioma.IT to "Audio generato con Piper (MIT). Voce tedesca: Thorsten-Voice, CC0.",
-        Idioma.PT to "Áudio gerado com o Piper (MIT). Voz alemã: Thorsten-Voice, CC0.",
+    // Voces (Ronda S): las dos voces, siempre, con la licencia de cada corpus. Las URL van como texto seleccionable, sin enlace tocable.
+    ClaveTexto.ACERCA_VOCES_TITULO to mapOf(
+        Idioma.ES to "Voces",
+        Idioma.EN to "Voices",
+        Idioma.DE to "Stimmen",
+        Idioma.FR to "Voix",
+        Idioma.IT to "Voci",
+        Idioma.PT to "Vozes",
+    ),
+    ClaveTexto.ACERCA_VOCES_TEXTO to mapOf(
+        Idioma.ES to "El audio se generó con Piper (MIT), a partir de modelos de voz publicados en rhasspy/piper-voices.\n\nAlemán: de_DE-thorsten-high. Corpus Thorsten-Voice, CC0 1.0 (dominio público).\nhttps://github.com/thorstenMueller/Thorsten-Voice\n\nInglés: en_US-ryan-high. Corpus RyanSpeech, CC BY-NC-SA 4.0.\nhttps://www.kaggle.com/datasets/roholazandie/ryanspeech\n\nPiper: https://github.com/rhasspy/piper\nModelos: https://huggingface.co/rhasspy/piper-voices",
+        Idioma.EN to "The audio was generated with Piper (MIT), from voice models published in rhasspy/piper-voices.\n\nGerman: de_DE-thorsten-high. Thorsten-Voice corpus, CC0 1.0 (public domain).\nhttps://github.com/thorstenMueller/Thorsten-Voice\n\nEnglish: en_US-ryan-high. RyanSpeech corpus, CC BY-NC-SA 4.0.\nhttps://www.kaggle.com/datasets/roholazandie/ryanspeech\n\nPiper: https://github.com/rhasspy/piper\nModels: https://huggingface.co/rhasspy/piper-voices",
+        Idioma.DE to "Das Audio wurde mit Piper (MIT) erzeugt, aus Stimmmodellen aus rhasspy/piper-voices.\n\nDeutsch: de_DE-thorsten-high. Korpus Thorsten-Voice, CC0 1.0 (gemeinfrei).\nhttps://github.com/thorstenMueller/Thorsten-Voice\n\nEnglisch: en_US-ryan-high. Korpus RyanSpeech, CC BY-NC-SA 4.0.\nhttps://www.kaggle.com/datasets/roholazandie/ryanspeech\n\nPiper: https://github.com/rhasspy/piper\nModelle: https://huggingface.co/rhasspy/piper-voices",
+        Idioma.FR to "L'audio a été généré avec Piper (MIT), à partir de modèles de voix publiés dans rhasspy/piper-voices.\n\nAllemand : de_DE-thorsten-high. Corpus Thorsten-Voice, CC0 1.0 (domaine public).\nhttps://github.com/thorstenMueller/Thorsten-Voice\n\nAnglais : en_US-ryan-high. Corpus RyanSpeech, CC BY-NC-SA 4.0.\nhttps://www.kaggle.com/datasets/roholazandie/ryanspeech\n\nPiper : https://github.com/rhasspy/piper\nModèles : https://huggingface.co/rhasspy/piper-voices",
+        Idioma.IT to "L'audio è stato generato con Piper (MIT), a partire da modelli di voce pubblicati in rhasspy/piper-voices.\n\nTedesco: de_DE-thorsten-high. Corpus Thorsten-Voice, CC0 1.0 (dominio pubblico).\nhttps://github.com/thorstenMueller/Thorsten-Voice\n\nInglese: en_US-ryan-high. Corpus RyanSpeech, CC BY-NC-SA 4.0.\nhttps://www.kaggle.com/datasets/roholazandie/ryanspeech\n\nPiper: https://github.com/rhasspy/piper\nModelli: https://huggingface.co/rhasspy/piper-voices",
+        Idioma.PT to "O áudio foi gerado com o Piper (MIT), a partir de modelos de voz publicados em rhasspy/piper-voices.\n\nAlemão: de_DE-thorsten-high. Corpus Thorsten-Voice, CC0 1.0 (domínio público).\nhttps://github.com/thorstenMueller/Thorsten-Voice\n\nInglês: en_US-ryan-high. Corpus RyanSpeech, CC BY-NC-SA 4.0.\nhttps://www.kaggle.com/datasets/roholazandie/ryanspeech\n\nPiper: https://github.com/rhasspy/piper\nModelos: https://huggingface.co/rhasspy/piper-voices",
     ),
     // --- Audio (Ronda M): contentDescription del boton de altavoz ---
     ClaveTexto.AUDIO_ESCUCHAR to mapOf(
@@ -1500,7 +1507,8 @@ fun textoLineaFija(idiomaInterfaz: Idioma): String = texto(ClaveTexto.LINEA_FIJA
 fun etiquetaAcercaQueEsTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_QUE_ES_TITULO, idiomaInterfaz)
 fun etiquetaAcercaComoTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TITULO, idiomaInterfaz)
 fun textoAcercaComo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_COMO_TEXTO, idiomaInterfaz)
-fun textoAcercaCreditos(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_CREDITOS_TEXTO, idiomaInterfaz)
+fun etiquetaAcercaVocesTitulo(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_VOCES_TITULO, idiomaInterfaz)
+fun textoAcercaVoces(idiomaInterfaz: Idioma): String = texto(ClaveTexto.ACERCA_VOCES_TEXTO, idiomaInterfaz)
 /** Un texto del tutorial (titulo o cuerpo de un paso): las claves las nombra el catalogo de pasos. */
 fun textoTour(clave: ClaveTexto, idiomaInterfaz: Idioma): String = texto(clave, idiomaInterfaz)
 fun etiquetaTourAtras(idiomaInterfaz: Idioma): String = texto(ClaveTexto.TOUR_ATRAS, idiomaInterfaz)
