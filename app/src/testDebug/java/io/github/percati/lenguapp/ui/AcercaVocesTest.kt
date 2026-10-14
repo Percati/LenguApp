@@ -48,6 +48,18 @@ class AcercaVocesTest {
     }
 
     @Test
+    fun `la linea de licencias declara el audio aparte y remite al bloque Voces, con el nombre del bloque en cada idioma`() {
+        for (idioma in Idioma.entries) {
+            val t = textoAcercaLicencias(idioma)
+            assertTrue("$idioma: $t", t.contains("GPL-3.0") && t.contains("CC BY-SA 4.0"))
+            assertTrue("$idioma: remite a «${etiquetaAcercaVocesTitulo(idioma)}»: $t", t.contains(etiquetaAcercaVocesTitulo(idioma)))
+        }
+        assertEquals("Código: GPL-3.0. Contenido: CC BY-SA 4.0. Audio: la licencia de cada voz, en «Voces».", textoAcercaLicencias(Idioma.ES))
+        assertEquals("Code: GPL-3.0. Content: CC BY-SA 4.0. Audio: each voice's own licence, under «Voices».", textoAcercaLicencias(Idioma.EN))
+        assertEquals("Code : GPL-3.0. Contenu : CC BY-SA 4.0. Audio : la licence de chaque voix, dans « Voix ».", textoAcercaLicencias(Idioma.FR))
+    }
+
+    @Test
     fun `Acerca de muestra Voces entre Licencias y la version`() {
         composeTestRule.setContent { AcercaDeScreen(idiomaInterfaz = Idioma.ES, version = "0.4.2", onVolver = {}) }
         composeTestRule.waitForIdle()

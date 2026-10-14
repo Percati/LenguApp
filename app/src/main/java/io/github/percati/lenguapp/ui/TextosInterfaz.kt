@@ -1137,12 +1137,12 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.PT to "Licenças e créditos",
     ),
     ClaveTexto.ACERCA_LICENCIAS_TEXTO to mapOf(
-        Idioma.ES to "Código: GPL-3.0. Contenido: CC BY-SA 4.0.",
-        Idioma.EN to "Code: GPL-3.0. Content: CC BY-SA 4.0.",
-        Idioma.DE to "Code: GPL-3.0. Inhalt: CC BY-SA 4.0.",
-        Idioma.FR to "Code : GPL-3.0. Contenu : CC BY-SA 4.0.",
-        Idioma.IT to "Codice: GPL-3.0. Contenuti: CC BY-SA 4.0.",
-        Idioma.PT to "Código: GPL-3.0. Conteúdo: CC BY-SA 4.0.",
+        Idioma.ES to "Código: GPL-3.0. Contenido: CC BY-SA 4.0. Audio: la licencia de cada voz, en «Voces».",
+        Idioma.EN to "Code: GPL-3.0. Content: CC BY-SA 4.0. Audio: each voice's own licence, under «Voices».",
+        Idioma.DE to "Code: GPL-3.0. Inhalt: CC BY-SA 4.0. Audio: die Lizenz der jeweiligen Stimme, unter «Stimmen».",
+        Idioma.FR to "Code : GPL-3.0. Contenu : CC BY-SA 4.0. Audio : la licence de chaque voix, dans « Voix ».",
+        Idioma.IT to "Codice: GPL-3.0. Contenuti: CC BY-SA 4.0. Audio: la licenza di ogni voce, in «Voci».",
+        Idioma.PT to "Código: GPL-3.0. Conteúdo: CC BY-SA 4.0. Áudio: a licença de cada voz, em «Vozes».",
     ),
     ClaveTexto.ACERCA_VERSION to mapOf(
         Idioma.ES to "Versión {version}",
