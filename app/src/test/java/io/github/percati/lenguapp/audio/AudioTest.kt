@@ -98,8 +98,8 @@ class IndiceAudioTest {
     }
 
     @Test
-    fun `el interruptor del audio ingles esta encendido en debug y apagado en release`() {
-        assertEquals("AUDIO_INGLES debe valer lo mismo que DEBUG", BuildConfig.DEBUG, BuildConfig.AUDIO_INGLES)
+    fun `el interruptor del audio ingles esta encendido, en debug y en release`() {
+        assertTrue("AUDIO_INGLES debe estar encendido en las dos variantes (Ronda S)", BuildConfig.AUDIO_INGLES)
     }
 }
 

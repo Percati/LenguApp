@@ -23,16 +23,15 @@ android {
     }
 
     buildTypes {
-        // AUDIO_INGLES: interruptor de COMPILACION (no un ajuste del usuario). Las dos voces inglesas actuales
-        // (en_US-ryan: CC BY-NC-SA 4.0; en_US-lessac: Blizzard 2013, solo investigacion) no se pueden publicar
-        // (proyecto/docs/licencias-voces.md): el audio en ingles suena en debug y NO en release hasta que se
-        // regeneren los clips con una voz de corpus limpio. Para encenderlo en release: cambiar "false" por "true".
+        // AUDIO_INGLES: interruptor de COMPILACION (no un ajuste del usuario), encendido en las dos variantes desde la Ronda S.
+        // Las voces: de_DE-thorsten-high (corpus Thorsten-Voice, CC0 1.0) y en_US-ryan-high (corpus RyanSpeech, CC BY-NC-SA 4.0),
+        // las dos con Piper (MIT). La atribucion de cada una esta en «Acerca de», bloque «Voces» (proyecto/docs/licencias-voces.md).
         debug {
             buildConfigField("boolean", "AUDIO_INGLES", "true")
         }
         release {
             isMinifyEnabled = false
-            buildConfigField("boolean", "AUDIO_INGLES", "false")
+            buildConfigField("boolean", "AUDIO_INGLES", "true")
         }
     }
 
@@ -60,18 +59,6 @@ android {
         getByName("main") {
             assets.srcDirs("src/main/assets")
         }
-    }
-}
-
-// AUDIO INGLES FUERA DEL RELEASE (Ronda N). Las voces inglesas (en_US-ryan: CC BY-NC-SA 4.0; en_US-lessac: Blizzard 2013,
-// solo investigacion) NO se pueden redistribuir (proyecto/docs/licencias-voces.md): el interruptor AUDIO_INGLES evita que
-// suenen, y esto evita que VIAJEN. El release ignora la carpeta assets/audio/EN (los .ogg siguen en el repo y el debug los
-// empaqueta, asi Fer puede probar el audio ingles), y la tarea verificarReleaseSinAudioIngles hace FALLAR cualquier
-// release cuyo APK/AAB lleve un clip ingles. >>> Para revertirlo junto con el interruptor, cuando se regeneren los clips
-// con una voz de corpus limpio: borrar este bloque, la tarea de abajo y poner AUDIO_INGLES en "true" en release.
-androidComponents {
-    onVariants(selector().withBuildType("release")) { variant ->
-        variant.androidResources.ignoreAssetsPatterns.add("<dir>EN")
     }
 }
 
@@ -348,33 +335,6 @@ tasks.matching { it.name == "preBuild" }.configureEach {
     dependsOn(copiarCategoriasUsoAssets)
     dependsOn(verificarAssetsContenidoActualizados)
     dependsOn(verificarConsistenciaContenido)
-}
-
-// Guarda del audio ingles (ver el bloque androidComponents de arriba): ningun release puede llevar clips ingleses.
-// Mira los assets YA fusionados del release (lo que de verdad entra al APK/AAB), no la configuracion: si alguien
-// quita el ignoreAssetsPatterns o mueve los clips, el empaquetado de release falla en vez de publicar sin avisar.
-val verificarReleaseSinAudioIngles by tasks.registering {
-    group = "verification"
-    description = "Falla si los assets del release incluyen assets/audio/EN (voces inglesas sin licencia de redistribucion)."
-    val assetsRelease = layout.buildDirectory.dir("intermediates/assets/release/mergeReleaseAssets")
-    dependsOn(tasks.matching { it.name == "mergeReleaseAssets" })
-    inputs.dir(assetsRelease).optional()
-    doLast {
-        val raiz = assetsRelease.get().asFile
-        val ingles = raiz.resolve("audio/EN")
-        val clips = if (ingles.isDirectory) ingles.walkTopDown().count { it.isFile && it.extension == "ogg" } else 0
-        if (clips > 0) {
-            throw GradleException(
-                "El release lleva $clips clips de audio ingles en ${ingles.path}. Las voces en_US-ryan (CC BY-NC-SA 4.0) y " +
-                    "en_US-lessac (Blizzard 2013) no se pueden redistribuir: ver proyecto/docs/licencias-voces.md.",
-            )
-        }
-    }
-}
-
-// Corre antes de empaquetar cualquier release (APK o AAB).
-tasks.matching { it.name == "packageRelease" || it.name == "packageReleaseBundle" || it.name == "bundleRelease" }.configureEach {
-    dependsOn(verificarReleaseSinAudioIngles)
 }
 
 // assembleDebug debe fallar si el JSON de assets/ no valida contra el schema:

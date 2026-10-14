@@ -201,7 +201,7 @@ class MainActivity : ComponentActivity() {
         val topicNombres = cargarTopicNombresDesdeAssets(this)
         val categoriasUso = cargarCategoriasUsoDesdeAssets(this)
         // Audio (Ronda M): el indice se lee una vez; los clips suenan desde los assets, sin permisos ni red.
-        // El ingles queda detras del interruptor de compilacion BuildConfig.AUDIO_INGLES (apagado en release).
+        // El ingles queda detras del interruptor de compilacion BuildConfig.AUDIO_INGLES (encendido en debug y en release).
         val audio = ControlAudio(cargarIndiceAudioDesdeAssets(this, BuildConfig.AUDIO_INGLES), ReproductorAssets(this))
         controlAudio = audio
         val versionApp = runCatching { packageManager.getPackageInfo(packageName, 0).versionName }.getOrNull().orEmpty()
