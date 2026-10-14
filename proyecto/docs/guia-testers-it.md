@@ -21,7 +21,7 @@
 | La scheda in PDF esce nella lingua che impari e in un foglio solo | Serve a mostrarla a chi ti insegna quella lingua. |
 | In tedesco non c'è la «ß» | Si usa l'ortografia svizzera: «ss». |
 | Lo spagnolo è neutro e dà del «tú» | Il «usted» compare solo in frasi di situazioni formali, che sono proprio ciò che si insegna. |
-| L'audio funziona in tedesco e, in questa versione di prova, anche in inglese | Tocca l'altoparlante accanto a una parola o a un'espressione (negli esempi, solo alcuni): voce sintetica. In Impostazioni scegli la velocità (60–100 %). La voce inglese non è ancora nella versione pubblicata; le licenze sono in «Informazioni». |
+| L'audio funziona in tedesco e in inglese | Tocca l'altoparlante accanto a una parola o a un'espressione (negli esempi, solo alcuni): voce sintetica. In Impostazioni scegli la velocità (60–100 %). Le licenze delle due voci sono in «Informazioni». |
 | C'è contenuto del 2026 (dalla settimana 41) e del 2027 | Il resto si aggiungerà man mano. |
 | Puoi scegliere i colori e il carattere | In Impostazioni ci sono quattro temi (Carta, Terracotta, Mare, Grafite) e, da Android 12 in poi, uno che segue lo sfondo del telefono. E tre caratteri: quello di sistema, Lettura e Chiaro. |
 | Alcuni segni (↔, ✗, →, ₂) si vedono con un altro carattere | Lettura e Chiaro non hanno quei segni, perciò il telefono li disegna con quello di sistema. |

@@ -391,7 +391,7 @@ Los nombres de archivo son deterministas (hash del texto, la voz y la velocidad)
 
 ## Inglés (`en`)
 
-**Voz:** `en_US-ryan-high`, `en_US-lessac-high`  — dos voces seleccionables, se genera con las dos
+**Voz:** `en_US-ryan-high` — una sola voz (corregido el 14-oct-2026: la idea de dos voces seleccionables nunca se implementó y queda descartada; `en_US-lessac` no se usó y no se va a usar, ver `docs/licencias-voces.md`)
 
 **Velocidades:** normal y 80 % (para shadowing)
 

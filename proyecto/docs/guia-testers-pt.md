@@ -21,7 +21,7 @@
 | A planilha em PDF sai no idioma que você aprende e em uma folha só | É para mostrar a quem ensina esse idioma para você. |
 | Em alemão não há «ß» | Usa-se a ortografia suíça: «ss». |
 | O espanhol é neutro e trata por «tú» | O «usted» só aparece em frases de situações formais, que é justamente o que se ensina. |
-| O áudio funciona em alemão e, nesta versão de teste, também em inglês | Toque no alto-falante ao lado de uma palavra ou expressão (nos exemplos, só alguns): voz sintética. Nos Ajustes você escolhe a velocidade (60–100 %). A voz inglesa ainda não vai na versão publicada; as licenças estão em «Sobre». |
+| O áudio funciona em alemão e em inglês | Toque no alto-falante ao lado de uma palavra ou expressão (nos exemplos, só alguns): voz sintética. Nos Ajustes você escolhe a velocidade (60–100 %). As licenças das duas vozes estão em «Sobre». |
 | Há conteúdo de 2026 (a partir da semana 41) e de 2027 | O resto vai sendo acrescentado. |
 | Você pode escolher as cores e a letra | Em Ajustes há quatro temas (Papel, Terracota, Mar, Grafite) e, no Android 12 ou mais recente, um que segue o seu papel de parede. E três tipografias: a do sistema, Leitura e Clara. |
 | Alguns sinais (↔, ✗, →, ₂) aparecem com outra letra | Leitura e Clara não trazem esses sinais, então o celular os desenha com a do sistema. |

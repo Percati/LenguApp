@@ -23,7 +23,13 @@ El audio de la app se generó con **[Piper](https://github.com/rhasspy/piper)** 
 
 **Y una retractación:** el 13-oct anoté como hallazgo preocupante que `de_DE-thorsten` y `fr_FR-siwis` se afinaron sobre la voz `lessac` («Finetuned from U.S. English lessac voice»), y que por eso el alemán arrastraría la licencia de Blizzard. **Le di más peso del que merecía.** Es el mismo razonamiento de abajo (¿son los pesos y la salida obra derivada del corpus?), aplicado dos pasos más lejos, y **vale para casi todas las voces de Piper**. Si ese razonamiento se sostuviera, no se podría publicar nada generado con Piper en ningún idioma — y una conclusión tan fuerte es señal de que el razonamiento es demasiado fuerte. El dato queda anotado en «Fuentes» porque es cierto; la alarma, retirada.
 
-## El caso `en_US-lessac`, que sí es distinto
+## `en_US-lessac` no se usó: el caso no existe
+
+**Confirmado por Fer el 14-oct-2026: los 4100 clips ingleses son todos de `en_US-ryan-high`.** El manifiesto decía «dos voces seleccionables, se genera con las dos», pero eso era el plan y quedó sin implementar. **Así que la licencia de Blizzard no toca ningún archivo que la app distribuya**, y todo el análisis de abajo queda como registro de por qué esa voz **no se va a usar nunca**, no como un problema abierto.
+
+Vale la pena dejarlo escrito porque es el único criterio de descarte duro que encontramos, y sirve para el día que se evalúe una voz nueva.
+
+## Por qué `en_US-lessac` quedaría descartada si alguna vez se evaluara
 
 Acá la idea de «todas se pueden usar citando la fuente» **no aplica**, y conviene verlo con la licencia delante. La [licencia de Blizzard 2013](https://www.cstr.ed.ac.uk/projects/blizzard/2013/lessac_blizzard2013/license.html), leída el 14-oct-2026:
 
@@ -46,12 +52,15 @@ Dicho de otro modo: por contrato, Fer no está obligado; por derecho de autor, d
 1. **Atribuir todas las voces en «Acerca de»**, las de dominio público y las licenciadas: voz, corpus, licencia y enlace. Es lo que pidió Fer y es correcto: cierra la obligación de CC BY, satisface la de CC BY-NC-SA en su parte de atribución, y para CC0 es simple honestidad.
 2. **Declarar la licencia por componente**, no en bloque: código GPL-3.0, contenido CC BY-SA 4.0, **audio** con la licencia de cada voz. Si el audio inglés se queda como está, eso incluye decir que es CC BY-NC-SA 4.0.
 3. **El alemán se publica tal cual.** CC0, sin asterisco de ningún tipo.
-4. **Para el inglés hay dos caminos defendibles**, y la elección es de Fer:
-   - **Publicarlo como está, atribuyendo.** Cuesta cero. Deja el asterisco NC sobre la reutilización de la app y, en el caso `lessac`, depende del argumento de arriba.
-   - **Regenerarlo con `en_GB-alba`** ([CC BY 4.0](https://datashare.ed.ac.uk/handle/10283/3270)). Cuesta una tarde de generación por lote y **elimina los dos asteriscos de una vez**: atribución y nada más, sin NC, sin argumentos jurídicos pendientes, y la app vuelve a ser limpiamente reutilizable. El costo es aceptar acento británico — que para un proyecto cuyas listas de vocabulario salen de Cambridge e IELTS no es una pérdida.
+4. **DECIDIDO (Fer, 14-oct-2026): el inglés se publica como está, atribuyendo.** No se regeneran los clips. Consecuencias, que son las que se implementan en `prompts/37`: el bloque «Voces» nombra la voz inglesa **siempre** (no solo en debug), la línea de licencias se declara por componente, y **el audio inglés pasa a entrar en el release** — o sea que el interruptor `AUDIO_INGLES` se enciende y la guarda `verificarReleaseSinAudioIngles` se retira. El APK de release sube de ~37,8 MB a ~55 MB.
 
-   **Mi preferencia sigue siendo regenerar**, pero por una razón más débil que la que di antes: no porque lo otro sea ilegal, sino porque una tarde de cómputo compra no tener que explicar nada nunca.
-5. **Antes de decidir hay que confirmar un dato que no puedo ver desde acá:** el manifiesto dice «`en_US-ryan-high`, `en_US-lessac-high` — dos voces seleccionables, se genera con las dos», pero la app reproduce **un clip por texto** y hay **4100 clips ingleses** para 4100 textos. O sea que **los clips que existen son de una sola voz**, y el plan de las dos quedó sin implementar. **Si son todos de `ryan`, el caso `lessac` no existe** y el único asterisco es el NC, que es el discutible y el que se inclina a nuestro favor. Fer generó los clips localmente: lo sabe él.
+   Queda en pie el asterisco de la cláusula NC: la app deja de ser limpiamente reutilizable por quien la bifurque, y eso **hay que decirlo donde se publique el código**, no solo en «Acerca de». Fer lo sabe y lo acepta; mi preferencia era la otra y queda anotada abajo por si alguna vez cambia.
+
+### Lo que no se hizo, y queda anotado por si alguna vez cambia
+
+**Regenerar el inglés con `en_GB-alba`** ([CC BY 4.0](https://datashare.ed.ac.uk/handle/10283/3270)): costaba una tarde de generación por lote y eliminaba el asterisco NC de una vez — atribución y nada más, y la app limpiamente reutilizable. El costo era aceptar acento británico. **Mi preferencia era esa**, por una razón modesta: una tarde de cómputo compra no tener que explicar nada nunca. Fer prefirió no rehacer 4100 clips, que es una razón perfectamente buena. Si algún día aparece otro motivo para regenerar el audio inglés (una voz mejor, más velocidades, otro acento), **conviene aprovechar el viaje y usar una voz CC BY o CC0**: el trabajo de regenerar es el mismo y el asterisco se cae solo.
+
+**Nota de mantenimiento:** `audio-manifiesto.md` sigue diciendo «`en_US-ryan-high`, `en_US-lessac-high` — dos voces seleccionables, se genera con las dos». Eso nunca se implementó y ahora se sabe que no se va a implementar: **hay que corregir esa línea** para que diga la verdad (una sola voz, `en_US-ryan-high`).
 
 ## Cómo elegir una voz para un idioma nuevo
 

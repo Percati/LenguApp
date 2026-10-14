@@ -21,7 +21,7 @@
 | The PDF sheet comes out in the language you're learning, on a single page | It's to show to whoever teaches you that language. |
 | German has no «ß» | Swiss spelling is used: «ss». |
 | Spanish is neutral and uses «tú» | «Usted» only appears in phrases from formal situations, which is the thing being taught. |
-| Audio works in German and, in this test version, in English too | Tap the speaker next to a word or expression (in the examples, only some have it): a synthetic voice. In Settings you choose the speed (60–100 %). The English voice isn't in the published version yet; both licences are under «About». |
+| Audio works in German and in English | Tap the speaker next to a word or expression (in the examples, only some have it): a synthetic voice. In Settings you choose the speed (60–100 %). Both voices' licences are under «About». |
 | There's content for 2026 (from week 41) and for 2027 | The rest will be added over time. |
 | You can choose the colours and the type | Settings has four themes (Paper, Terracotta, Sea, Graphite) and, on Android 12 or later, one that follows your wallpaper. Also three typefaces: the system one, Reading and Clear. |
 | Some signs (↔, ✗, →, ₂) appear in another typeface | Reading and Clear don't include those glyphs, so the phone draws them with the system one. |

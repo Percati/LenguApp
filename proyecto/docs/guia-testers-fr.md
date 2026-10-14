@@ -21,7 +21,7 @@
 | La fiche PDF sort dans la langue que tu apprends, sur une seule page | Elle est faite pour être montrée à la personne qui t'enseigne cette langue. |
 | En allemand, pas de « ß » | On utilise l'orthographe suisse : « ss ». |
 | L'espagnol est neutre et tutoie | Le vouvoiement n'apparaît que dans des expressions de situations formelles, qui sont justement ce qu'on enseigne. |
-| L'audio fonctionne en allemand et, dans cette version de test, en anglais aussi | Touche le haut-parleur à côté d'un mot ou d'une expression (dans les exemples, seulement certains) : voix de synthèse. Dans Réglages, tu choisis la vitesse (60–100 %). La voix anglaise n'est pas encore dans la version publiée ; les licences sont dans « À propos ». |
+| L'audio fonctionne en allemand et en anglais | Touche le haut-parleur à côté d'un mot ou d'une expression (dans les exemples, seulement certains) : voix de synthèse. Dans Réglages, tu choisis la vitesse (60–100 %). Les licences des deux voix sont dans « À propos ». |
 | Il y a du contenu pour 2026 (à partir de la semaine 41) et pour 2027 | Le reste viendra petit à petit. |
 | Tu peux choisir couleurs et typographie | Quatre thèmes (Papier, Terre cuite, Mer, Graphite) et, sous Android 12+, un qui suit ton fond d'écran. Trois polices : système, Lecture et Claire. |
 | Certains signes (↔, ✗, →, ₂) s'affichent dans une autre police | Lecture et Claire ne contiennent pas ces signes, donc le téléphone les dessine avec celle du système. |
