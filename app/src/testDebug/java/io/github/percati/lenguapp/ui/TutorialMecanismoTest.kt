@@ -320,7 +320,7 @@ class TutorialMecanismoTest {
         assertEquals(92f, rect.bottom, 0.5f)
         // la funcion pura, con otro margen
         assertEquals(androidx.compose.ui.geometry.Rect(0f, -40f, 100f, 100f), rectanguloConMargen(100f, 60f, 40f))
-        assertEquals(32, MARGEN_AL_TRAER_DP)
+        assertEquals(96, MARGEN_AL_TRAER_DP)
     }
 
     @Test
@@ -343,8 +343,9 @@ class TutorialMecanismoTest {
         composeTestRule.mainClock.advanceTimeBy(2000)
         composeTestRule.waitForIdle()
         val rect = gestor.registro.rectDe("lejos")!!
-        assertTrue("el ancla no queda pegada arriba: top=${rect.top}", rect.top >= 32f - 1f)
-        assertTrue("el ancla no queda pegada abajo: bottom=${rect.bottom} de 600", rect.bottom <= 600f - 32f + 1f)
+        // 96 dp (~1,5 cm) de los dos bordes, porque en 600 dp de alto entra: 60 + 96 + 96 = 252
+        assertTrue("el ancla no queda pegada arriba: top=${rect.top}", rect.top >= 96f - 1f)
+        assertTrue("el ancla no queda pegada abajo: bottom=${rect.bottom} de 600", rect.bottom <= 600f - 96f + 1f)
     }
 
     @Test
@@ -367,5 +368,45 @@ class TutorialMecanismoTest {
         composeTestRule.mainClock.advanceTimeBy(1000)
         composeTestRule.waitForIdle()
         assertEquals("sin salto gratuito", 0, estado.value)
+    }
+
+    @Test
+    fun `si los dos margenes no caben se prioriza el de arriba y se recorta el de abajo`() {
+        // 400 de alto + 96 + 96 = 592, y solo caben 500: arriba se queda con los 96 enteros
+        val r = rectanguloConMargen(100f, 400f, 96f, altoMaximo = 500f)
+        assertEquals(-96f, r.top, 0.01f)
+        assertEquals(404f, r.bottom, 0.01f)
+        assertEquals(500f, r.height, 0.01f)
+        // si caben, nada cambia
+        assertEquals(androidx.compose.ui.geometry.Rect(0f, -96f, 100f, 496f), rectanguloConMargen(100f, 400f, 96f, altoMaximo = 700f))
+        // un ancla mas alta que todo lo que cabe: se pide el comienzo, con su margen de arriba
+        val alta = rectanguloConMargen(100f, 3000f, 96f, altoMaximo = 500f)
+        assertEquals(-96f, alta.top, 0.01f)
+        assertEquals(404f, alta.bottom, 0.01f)
+    }
+
+    @Test
+    @Config(qualifiers = "w360dp-h640dp")
+    fun `en una pantalla de 360 x 640 un ancla alta no entra con los dos margenes, y queda con el de arriba`() {
+        val gestor = GestorTours(mapOf(Tour.FICHA to listOf(paso("alta"))))
+        composeTestRule.setContent {
+            CompositionLocalProvider(LocalGestorTours provides gestor) {
+                Box(Modifier.size(360.dp, 640.dp)) {
+                    Column(Modifier.size(360.dp, 640.dp).verticalScroll(rememberScrollState())) {
+                        Box(Modifier.size(360.dp, 1200.dp))
+                        Box(Modifier.size(360.dp, 400.dp).anclaTour("alta")) { Text("alta") }
+                        Box(Modifier.size(360.dp, 1200.dp))
+                    }
+                    TutorialOverlay(gestor, Idioma.ES)
+                }
+            }
+        }
+        lanzar(gestor)
+        composeTestRule.mainClock.advanceTimeBy(2000)
+        composeTestRule.waitForIdle()
+        val rect = gestor.registro.rectDe("alta")!!
+        // 400 + 96 + 96 = 592 > 80 % de 640 (512): se prioriza el margen de arriba
+        println("MEDIDA-360x640 top=${rect.top} bottom=${rect.bottom}")
+        assertTrue("el comienzo del ancla queda a >= 96 dp del borde de arriba: top=${rect.top}", rect.top >= 96f - 1f)
     }
 }

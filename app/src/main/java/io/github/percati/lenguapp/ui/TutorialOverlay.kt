@@ -45,6 +45,7 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onSizeChanged
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.semantics.contentDescription
@@ -87,6 +88,8 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
     BackHandler { if (gestor.puedeVolver) gestor.atras() else gestor.terminar() }
 
     val margenAlTraer = with(LocalDensity.current) { MARGEN_AL_TRAER_DP.dp.toPx() }
+    // El rectangulo que se pide no pasa del 80 % de la pantalla: el resto es de las barras de arriba y de la tarjeta.
+    val altoMaximoPedido = with(LocalDensity.current) { LocalConfiguration.current.screenHeightDp.dp.toPx() } * 0.8f
     // Un paso con ancla espera a que la pantalla la componga (y la lleva a la vista); si no aparece, se saltea.
     var listo by remember(tour, indice) { mutableStateOf(paso.ancla == null) }
     LaunchedEffect(tour, indice) {
@@ -95,7 +98,7 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
         if (rect == null) {
             gestor.saltearSinAncla()
         } else {
-            gestor.registro.traerALaVista(ancla, margenPx = margenAlTraer)
+            gestor.registro.traerALaVista(ancla, margenPx = margenAlTraer, altoMaximoPx = altoMaximoPedido)
             listo = true
         }
     }

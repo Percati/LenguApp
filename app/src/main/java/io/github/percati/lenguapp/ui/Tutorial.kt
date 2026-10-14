@@ -77,19 +77,35 @@ class RegistroAnclas {
     suspend fun traerALaVista(
         id: String,
         margenPx: Float = 0f,
+        altoMaximoPx: Float = Float.MAX_VALUE,
         pedir: suspend (BringIntoViewRequester, Rect) -> Unit = { requester, rect -> requester.bringIntoView(rect) },
     ) {
         val requester = requesters[id] ?: return
         val rect = rects[id] ?: return
-        runCatching { pedir(requester, rectanguloConMargen(rect.width, rect.height, margenPx)) }
+        runCatching { pedir(requester, rectanguloConMargen(rect.width, rect.height, margenPx, altoMaximoPx)) }
     }
 }
 
-/** Margen, en dp, con el que se trae un ancla a la vista (arriba y abajo). */
-const val MARGEN_AL_TRAER_DP = 32
+/**
+ * Margen, en dp, con el que se trae un ancla a la vista (arriba y abajo). 96 dp ~ 1,5 cm (1 dp = 1/160 de pulgada): Fer rechazo 32 dp
+ * dos veces por verlo pegado al borde y pidio «al menos 1,5/2 cm». Es el extremo bajo de lo pedido; no bajarlo por cuenta propia.
+ */
+const val MARGEN_AL_TRAER_DP = 96
 
-/** El rectangulo del ancla, en coordenadas del propio nodo, inflado `margen` arriba y abajo. */
-fun rectanguloConMargen(ancho: Float, alto: Float, margen: Float): Rect = Rect(0f, -margen, ancho, alto + margen)
+/**
+ * El rectangulo del ancla, en coordenadas del propio nodo, inflado `margen` arriba y abajo. Si con los dos margenes no cabe en
+ * `altoMaximo` (un ancla alta en una pantalla chica: 96 + 96 son ~190 dp), SE PRIORIZA EL DE ARRIBA: se recorta el de abajo, porque
+ * quien lee un paso empieza por el principio del elemento y perder el final es menos malo que perder el comienzo. El contenedor hace
+ * lo que puede con lo que sobra, sin inventar relleno.
+ */
+fun rectanguloConMargen(ancho: Float, alto: Float, margen: Float, altoMaximo: Float = Float.MAX_VALUE): Rect {
+    val arriba = -margen
+    val abajoPedido = alto + margen
+    val abajoQueCabe = arriba + altoMaximo
+    // nunca menos que el borde de arriba del propio nodo + algo: el rectangulo no se invierte ni queda vacio
+    val abajo = if (abajoPedido <= abajoQueCabe) abajoPedido else maxOf(abajoQueCabe, 1f)
+    return Rect(0f, arriba, ancho, abajo)
+}
 
 /**
  * Quien sabe que tour esta en marcha y en que paso. El estado persistente (que tours se vieron, si se salto todo) lo pone
