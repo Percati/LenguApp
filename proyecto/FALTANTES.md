@@ -1714,3 +1714,31 @@ Ocho commits, uno por tarea (la 2 y la 3 juntas, ver abajo), sobre la Ronda Q. C
 **Guía de testers en español — filas cambiadas** (las otras cinco y los seis `.pdf`, a cargo de Overview): **solo el título**, «versión 0.4.0» → «versión 0.4.1». La fila «Bienvenida y tutorial» no menciona cantidad de pasos y la de Verbos no cambió: **ninguna otra**.
 
 **Decisiones donde el prompt no cerraba:** (1) la excepción del interruptor de traducir en el paso 2, tal cual; (2) el total de «Paso n de total» descuenta también los pasos cuya ancla **ya se ve ausente** (el prompt pedía «los ya salteados», pero para que «1 de 3» salga desde el primer paso hace falta mirar adelante); (3) `saltearSinAncla()` y `siguiente()` son funciones distintas del gestor: solo la segunda apila; (4) el ancla de la opción «Verbos» es un modificador en el chip, no un `Box`; (5) el paso fusionado de Guardados conserva la clave `TOUR_GUARDADOS_2` (la 3 se borró).
+
+## 64. Verificación de Code Ronda R y guías 0.4.1 (Overview, 14-oct-2026)
+
+**Todo lo que informó Code es cierto.** Verificado sobre `57ed1fe6`, corriendo las herramientas y leyendo los ocho parches, no el informe:
+
+| Comprobación | Resultado |
+|---|---|
+| `componer.py` + `verificar_consistencia.py` | **606 fichas, 56 semanas especiales, 0 con problemas**; 240 A2/B1, 0 problemas |
+| `diff -rq build assets/contenido` | **0 diferencias** |
+| `aplicar_verbos.py` | 0 packs con diferencias; 1229 apariciones, 1104 núcleos, 0 errores |
+| `indice_audio.py --comprobar` | índice al día |
+| `grep -c INTERNET` | **1** = solo el comentario |
+| `versionCode` / `versionName` | **16 / 0.4.1** |
+| Orden de la ficha | título → traducir → descripción → errores → vocabulario → misión → autochequeo → prompt → planilla → barra de arriba; tope 10 |
+| Guardados, desafío, Verbos | 2 pasos / interruptor antes que consigna / `tour-biblioteca-vista-verbos` en el chip, sin cambiar el aspecto |
+| Glosa en los cuatro caminos | la vista Verbos usa el mismo `FilaPalabra`/`datosFila` que la Biblioteca, así que **también queda cubierta** (no hace falta un cuarto test) |
+
+**El mejor hallazgo de la ronda es de Code y no estaba pedido:** las anclas registraban `boundsInRoot()`, que **recorta contra los ancestros** y devuelve un rectángulo **vacío** para un nodo que todavía está fuera de la pantalla dentro de un scroll — justo el caso en que hay que traerlo a la vista. Es decir: desde la Ronda Q, para un ancla lejos del scroll, el tour dibujaba un agujero de 0 × 0 y **nunca desplazaba**. Parte de «el foco queda pegado al borde» era esto, no el margen.
+
+**Pero el arreglo dejó una regresión visual, y la encontré leyendo el parche:** `rectDe()` es también la fuente de (1) el agujero del foco y su borde y (2) de qué lado va la tarjeta (`rect.center.y`). Con el rectángulo **sin recortar**, un ancla que no entra entera en la pantalla deja el agujero dibujado **también sobre lo que no se ve** (un rectángulo iluminado por encima de la barra de arriba o por debajo del borde) y puede poner la tarjeta **encima del foco**. El caso realista es **`tour-ajustes-tema`**, que agrupa tema, modo y tipografía: en un teléfono chico es más alto que media pantalla. Arreglo en `prompts/35` (Ronda S): recortar el rectángulo contra el recuadro **para dibujar y para ubicar la tarjeta**, y seguir usando el sin recortar para `traerALaVista`.
+
+**Lo que `totalEfectivo` supone, y por qué hoy funciona:** el total descuenta los pasos cuya ancla no está registrada **en este momento**. Eso es correcto porque la ficha, Ajustes y la cabecera de la Biblioteca son `verticalScroll`, que **compone todos sus hijos** estén visibles o no. El día que una pantalla del tour pase a `LazyColumn`, un ancla lejos de la ventana **no estará compuesta** y el total va a mentir (y `esUltimoPaso` puede decir «Listo» de más). No hay nada que arreglar hoy; queda anotado para el día que cambie una lista.
+
+**La decisión que Code dejó a Fer, con mi recomendación:** el tour del desafío dice «Paso 1 de 1» porque el interruptor arranca apagado, el tour no lo enciende y el recuadro bloquea los toques. Code propone cambiar el texto del paso 1 para invitar a encenderlo. **Hay algo mejor y arregla dos pasos a la vez: que el elemento con foco se pueda tocar** (los toques pasan solo dentro del agujero; el resto de la pantalla sigue bloqueada, y el tour **no avanza solo**). Eso desbloquea el paso del interruptor y también el del vocabulario, que hoy tiene que decir «el encabezado abre la lista cuando termines con esto». Es el patrón habitual de los tutoriales con foco. Está como tarea 1 de `prompts/35`, **condicionada a que Fer diga sí**.
+
+**Guías de testers:** las cinco traducidas y los seis `.pdf` a **0.4.1**. Code cambió solo el título en la española y ninguna otra fila, así que acá tampoco: **solo el título**. Los seis siguen en dos carillas.
+
+**Lo que sigue sin moverse, y ya van seis rondas:** revisión de nativo de fr / it / pt, clave de firma, ícono y pantalla de carga, capturas para la tienda y regenerar el audio inglés con `en_GB-alba`. El tutorial está terminado a los fines prácticos; **el camino crítico para publicar es ese otro, y no avanzó nada desde la sección 52**.
