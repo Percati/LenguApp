@@ -1,4 +1,4 @@
-# LenguApp · Kurzanleitung für Testerinnen und Tester (Version 0.4.1)
+# LenguApp · Kurzanleitung für Testerinnen und Tester (Version 0.4.2)
 
 **Was das ist.** Eine App, um eine Sprache Woche für Woche zu üben (Deutsch oder Englisch, A2 bis C2). **Kein Kurs:** Sie festigt, was du in einem Kurs schon gelernt hast. Sie läuft ohne Internet, ohne Konto und ohne Datensammlung. Sie ist im Test, und deine Rückmeldung hilft sehr.
 
