@@ -16,11 +16,15 @@ import org.robolectric.annotation.Config
 import java.io.File
 
 /**
+ * (Ronda T, tarea 2) Las URL se miden con graficos NATIVE de Robolectric: con el modo legacy el texto mide casi cero y no demuestra nada.
+ * Resultado: ya saltan bien (parten en la «/» y en el «-», nunca se cortan ni se salen), asi que no se toco el bloque.
+ *
  * El bloque «Voces» de «Acerca de» (Ronda S, tareas 4 y 5): las dos voces, siempre y en los 6 idiomas, con la licencia de cada corpus y las
  * URL como texto (seleccionable, nunca un enlace tocable), entre «Licencias» y la version; y la linea de licencias por componente.
  */
 @RunWith(RobolectricTestRunner::class)
 @Config(qualifiers = "w400dp-h4000dp")
+@org.robolectric.annotation.GraphicsMode(org.robolectric.annotation.GraphicsMode.Mode.NATIVE)
 class AcercaVocesTest {
 
     @get:Rule
@@ -83,5 +87,47 @@ class AcercaVocesTest {
     @Test
     fun `ya no existe el texto de creditos viejo`() {
         assertTrue(ClaveTexto.entries.none { it.name == "ACERCA_CREDITOS_TEXTO" })
+    }
+
+    // --- Ronda T, T2: las URL del bloque en una pantalla angosta ---
+
+    private fun medirVoces(idioma: Idioma): List<String> {
+        composeTestRule.setContent { AcercaDeScreen(idiomaInterfaz = idioma, version = "0.4.3", onVolver = {}) }
+        composeTestRule.waitForIdle()
+        val nodo = composeTestRule.onNode(hasText(textoAcercaVoces(idioma).lines().first(), substring = true)).fetchSemanticsNode()
+        val resultados = mutableListOf<androidx.compose.ui.text.TextLayoutResult>()
+        nodo.config[androidx.compose.ui.semantics.SemanticsActions.GetTextLayoutResult].action?.invoke(resultados)
+        val r = resultados.single()
+        val ancho = r.layoutInput.constraints.maxWidth.toFloat()
+        val problemas = mutableListOf<String>()
+        println("MEDIDA-URL ${idioma.name} anchoDisponible=$ancho nodo=${nodo.size.width} lineas=${r.lineCount} desborda=${r.didOverflowWidth}")
+        if (r.didOverflowWidth) problemas += "didOverflowWidth"
+        for (i in 0 until r.lineCount) if (r.getLineRight(i) > ancho + 0.5f) problemas += "linea $i: ${r.getLineRight(i)} > $ancho"
+        if (nodo.size.width > ancho + 0.5f) problemas += "el nodo es mas ancho que lo disponible"
+        // y todo el texto sigue ahi, sin puntos suspensivos
+        assertEquals(textoAcercaVoces(idioma), r.layoutInput.text.text)
+        assertFalse("sin truncar", r.hasVisualOverflow && r.layoutInput.maxLines != Int.MAX_VALUE)
+        return problemas
+    }
+
+    @Test
+    @Config(qualifiers = "w360dp-h4000dp")
+    fun `a 360 dp las URL largas del bloque Voces saltan de linea y no se pasan del ancho, en espanol`() {
+        val p = medirVoces(Idioma.ES)
+        assertTrue("$p", p.isEmpty())
+    }
+
+    @Test
+    @Config(qualifiers = "w360dp-h4000dp")
+    fun `a 360 dp las URL largas del bloque Voces saltan de linea y no se pasan del ancho, en aleman`() {
+        val p = medirVoces(Idioma.DE)
+        assertTrue("$p", p.isEmpty())
+    }
+
+    @Test
+    @Config(qualifiers = "w320dp-h4000dp", fontScale = 1.3f)
+    fun `a 320 dp con letra al 130 por ciento las URL tampoco se pasan del ancho`() {
+        val p = medirVoces(Idioma.ES)
+        assertTrue("$p", p.isEmpty())
     }
 }
