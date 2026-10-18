@@ -1948,3 +1948,67 @@ Descontando las 41 descartadas a mano —bien descartadas: `draussen`, `geboren`
 **Las dos conversaciones trabajaron sobre el mismo clon y se vieron.** Code informa «en el repo apareció un commit *Verbos: primera tanda…* que no es mío»; Verbos informa «hay otra sesión trabajando en `app/`… la rama tiene cuatro commits T1–T4 por delante de `origin/main`» y que commiteó **por ruta explícita** para no arrastrar nada ajeno. Las dos hicieron lo correcto y las dos entregaron parches limpios, pero **eso fue cuidado de ellas, no del montaje**. Mi plan del 18-oct decía «en paralelo, no se pisan» porque pensaba en archivos distintos; el archivo no era el problema, **el clon sí**.
 
 Para la próxima: o **una carpeta por conversación**, o **de a una por vez**. Y mientras eso no esté, la regla mínima es la que aplicaron solas: **commitear por ruta explícita, nunca `git add -A`**.
+
+## 72. Verbos de referencia: primera tanda cerrada y la cuenta reconciliada (19-oct-2026)
+
+Tandas 1 y 1b de la biblioteca de verbos de consulta (prompts 40 y 41). Entradas nuevas en `contenido/verbos/{de,en}.json` con `referencia: true`, traducción a los otros cinco idiomas, clase y régimen. **No anotan ningún ítem del contenido**, así que no se ven en la app hasta que una ronda de Code haga que la vista Verbos tome esta segunda fuente.
+
+**Total: 499 entradas de referencia.** DE 160 (A1 60, A2 100) y EN 339 (A1 141, A2 198). La tabla pasó de 305 a 465 entradas en alemán y de 360 a 699 en inglés.
+
+### La cuenta reconciliada (277 candidatos alemanes de A1 y A2)
+
+El filtro es verificable: lema de `data/vocab_de.json` con nivel A1 o A2, sin artículo delante, terminado en `-en`, `-rn` o `-ln`.
+
+| resultado | cuántos | A1 | A2 |
+|---|---|---|---|
+| escritos en la tanda 1 | 108 | 35 | 73 |
+| ya estaban en `verbos[]` (por `forma`, `item` o `base`) | 76 | 45 | 31 |
+| **solo existían como núcleo de una colocación** (prompt 23, **sin glosa propia**) | **45** | 24 | 21 |
+| basura del filtro (adverbios, participios, sustantivos, modales y auxiliares) | 41 | 19 | 22 |
+| solo coincidían tras quitar «sich» o «etwas» de una entrada reflexiva | 6 | 1 | 5 |
+| no figuraban de ninguna forma | 1 | 0 | 1 |
+| **suma** | **277** | 124 | 153 |
+
+**De dónde venía la discrepancia.** El informe de la tanda 1 dijo «128 ya en la tabla» y Overview midió 76. Las dos son correctas y miden cosas distintas: 76 + 45 + 6 + 1 = 128. Mi chequeo contaba como presente al que figuraba **como núcleo de colocación** (45) y al que coincidía **tras quitar el pronombre** de una entrada reflexiva (6). No era `raiz`: `raiz` nunca entró en el chequeo, y ningún candidato coincide solo por ahí. Overview atribuyó esos 45 a `raiz` porque su medición no miró `nucleos[]`, y esos verbos (*kommen*, *geben*, *halten*, *hören*, *fahren*) son además raíz de algún separable.
+
+**Pero la conclusión de Overview era la correcta, por otro camino:** esos 45 son entradas **sin traducción propia** —en el prompt 23 se decidió no inventar glosas para los núcleos—, y una lista de consulta existe justamente para contestar «¿qué quería decir esta palabra?». Así que la tanda 1b los escribe: **45 núcleos + 6 formas desnudas de verbos reflexivos** (*entschuldigen*, *aussprechen*, *informieren*, *organisieren*, *versuchen*, *öffnen*, que son otro verbo que su forma con «sich») **+ 1 que faltaba** (*sich umziehen*) = **52 entradas alemanas nuevas**.
+
+**El mismo agujero en inglés, y es más grande:** de los 147 lemas ingleses que la tanda 1 descartó por «ya en la tabla», **78 estaban solo como núcleo** (*take*, *make*, *go*, *keep*, *see*, *put*, *say*…) y por lo tanto sin glosa. Escritos también en la 1b. Más 2 de la tarea 3, abajo: **80 entradas inglesas nuevas**.
+
+**Consecuencia para Code, que crece:** FALTANTES 38 ya pedía fusionar por infinitivo los 32 casos en que un núcleo coincide con un verbo propio. Ahora son **77 en alemán y 80 en inglés**, porque cada una de estas entradas de referencia es el mismo infinitivo que un núcleo existente. La fusión deja de ser cosmética: sin ella la vista muestra dos filas del mismo verbo, una con glosa (la de referencia) y otra con las colocaciones (el núcleo). **Un solo desacuerdo de clase**, deliberado y anotado en la entrada: el núcleo *hören* quedó `mit-Praposition` por *auf seinen Körper hören*, y la entrada de referencia dice `simple`, que es la clase del verbo; `hören auf` es una valencia secundaria. R11 no lo toca porque solo verifica los packs.
+
+### La selección inglesa, cruzada contra las listas del proyecto (tarea 3)
+
+| lista | verbos | sin lema en `vocab_en.json` | nivel B1 o más | A1/A2 ya cubiertos | A1/A2 que faltaban |
+|---|---|---|---|---|---|
+| phrasal verbs (Cambridge G&V First, pág. 1: *burst out* … *set off*) | 111 | 104 | 7 | 0 | **0** |
+| irregulares (Cambridge G&V First, *broadcast* … *teach*) | 80 | 1 | 15 | 60 | **4** |
+
+Los 104 phrasal sin lema no son un olvido: CEFR-J lematiza por palabra, así que *pick up* o *give in* no existen como entrada y no pueden tener nivel. De los 4 irregulares que faltaban se escribieron 2: **`to light`** (el lema A1 de la lista de vocabulario es el sustantivo, el verbo entra por la lista de irregulares) y **`to deal`** (con nota de que el uso habitual, *deal with*, ya estaba). Los otros dos quedan fuera a propósito: **`to do`** es auxiliar, y **`spring`** es A1 como sustantivo (la estación), no como verbo.
+
+**Limitación del cruce, y es del material:** la capa de texto de los dos `.pdf` del proyecto está incompleta. La de phrasal verbs llega hasta *set off* (falta la página 2) y la de irregulares va de *broadcast* a *teach* (faltan el principio y el final del alfabeto). Lo que se cruzó es lo que se puede leer; con los `.pdf` completos habría que repetirlo.
+
+### `referencia: true` y por qué hubo que tocar `aplicar_verbos.py`
+
+La comprobación final de la herramienta recorre `list(tabla) + list(otros) + list(cols)` y marca error por cada clave que no apareció en ningún pack. Una entrada de referencia cae ahí por definición —no anota ningún ítem—, así que **el requisito de «0 errores» era imposible** hasta sacarlas del mapa. El cambio es una condición en `cargar_tablas`.
+
+**La trampa que eso abría, y cómo quedó cerrada.** Al quedar fuera del mapa, el día que un pack nuevo use un verbo que ya está en la lista de referencia, esa aparición **no se anotaría y nada avisaría**. Ahora la herramienta lo trata como **error**, con el criterio del resto de las guardas del proyecto: una regla que se incumple en silencio deja de ser una regla. El mensaje dice qué hacer (quitarle `referencia: true` y completar la anotación). Lo fija `aplicar_verbos.py --autotest`: dos casos, con y sin el ítem de referencia en el pack.
+
+**La guarda comparó mal en el primer intento y la primera corrida lo mostró:** la clave inglesa quita el «to», así que el verbo *to delay* chocaba con el sustantivo *delay*, y salieron 6 falsos positivos (*delay*, *rain*, *snow*, *exercise*, *clean*, *support*: los seis son sustantivos o adjetivos en el pack). La guarda compara ahora el **texto del ítem**, no la clave. Es el ejemplo de por qué la guarda tenía que ser error y no aviso: un aviso entre 600 líneas no se mira.
+
+### Decisiones donde el prompt 40 no cerraba
+
+- **Preposición regida en la `forma` frente a `nota`:** la lleva en la forma el verbo que sin ella significa otra cosa (`belong to`, `consist of`, `depend on`, `refer to`, `deal with`, `focus on`, `worry about`, clase `verbo-preposicion`); va en `nota` cuando el verbo existe solo (`care`, `point`, `apply`, `click`, `search`, clase `simple`). No se uniforma.
+- **Acepciones múltiples:** separadas por punto y coma, en el mismo orden en las cinco lenguas (*wählen* → «elegir; votar; marcar un número»). No se abre una entrada por acepción.
+- **`nota` es campo de trabajo**, como `base`, `raiz` y `nivelFuente`: no llega al contenido ni a la app. Se usa para el régimen secundario (*danken … für + Akk*), para avisar de inseparables que parecen separables (*unternehmen*, *übernachten*, *übersetzen*, *bekommen*, *beraten*, *untersuchen*, *versuchen*) y para las variantes ortográficas (se eligió la británica: *criticise*, *organise*, *realise*).
+- **`raiz` solo en los separables alemanes** (27 de las 160): es lo que hace que buscar «stellen» traiga la familia. En inglés no se usa.
+- **Ortografía suiza también en las glosas:** 0 `ß` en las 499 entradas, incluidas las glosas alemanas de los verbos ingleses (P10).
+- **Ninguna glosa al idioma que se aprende:** un verbo alemán lleva es/en/fr/it/pt y uno inglés es/de/fr/it/pt, porque desde la Ronda R la app no muestra glosa cuando el idioma de la app es el que se aprende.
+
+### Qué queda para la segunda tanda
+
+- **B1**: 414 candidatos alemanes sin cubrir, de los cuales habrá que descontar los que estén solo como núcleo. Nada de B2 ni C1: son 1924 y los cubre el contenido de esos niveles.
+- **Fusión por infinitivo en la app** (arriba): sin eso, estas 499 entradas se ven como filas duplicadas.
+- **La vista todavía no las muestra**: hace falta la ronda de Code que tome la tabla como segunda fuente de la vista Verbos.
+- **Nadie revisó fr / it / pt** de las 499 entradas. Alemán e inglés los juzga Fer.
+- **Los dos `.pdf` de Cambridge con la capa de texto completa**, para repetir el cruce de la tarea 3 sin huecos.

@@ -24,6 +24,12 @@ Reglas:
                             del nucleo. Nunca junto con claseVerbo: una colocacion no se lista. Si
                             ademas esta en reccionOtros, conserva esa reccion (es la del sintagma).
   - cualquier otro item con alguno de los cinco campos es un ERROR (nada se decide por heuristica).
+  - item que coincide con una entrada `referencia: true` -> ERROR: la entrada dejo de ser de consulta
+                            y hay que promoverla (quitarle `referencia` y completar su anotacion).
+                            Sin esta guarda la aparicion se quedaria sin anotar en silencio, porque
+                            la entrada de referencia no esta en el mapa que se aplica.
+
+  python3 -I proyecto/tools/aplicar_verbos.py --autotest   # prueba de la guarda de referencia
 """
 import argparse, json, re, sys, unicodedata
 from pathlib import Path
@@ -55,7 +61,11 @@ def cargar_tablas(base):
         # Las entradas de referencia (`referencia: true`) son verbos de consulta que NO anotan
         # ningun item del contenido: no se aplican a los packs ni se exige que aparezcan en uno.
         t[idi] = ({e["forma"]: e for e in d["verbos"] if not e.get("referencia")},
-                  d.get("reccionOtros", {}), cols)
+                  d.get("reccionOtros", {}), cols,
+                  # La guarda de referencia compara el TEXTO del item, no la clave: la clave
+                  # inglesa quita el «to», asi que el verbo «to delay» chocaria con el
+                  # sustantivo «delay», que es otro item.
+                  {norm(e["item"]): e for e in d["verbos"] if e.get("referencia")})
     return t
 
 
@@ -118,11 +128,12 @@ def cirugia_lineas(raw, eol, viejos, nuevos):
     return eol.join(lineas)
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--contenido", default="proyecto/contenido")
-    ap.add_argument("--escribir", action="store_true")
-    a = ap.parse_args()
+def revisar(contenido, escribir):
+    """Recorre los packs. Devuelve (packs con diferencias, items anotados, colocaciones, errores)."""
+    class _A:
+        pass
+    a = _A()
+    a.contenido, a.escribir = contenido, escribir
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
     tablas = cargar_tablas(a.contenido)
@@ -137,7 +148,7 @@ def main():
         if serializar(d, eol, final) != raw:
             modo = "compacto" if serializar(d, eol, final, True) == raw else "lineas"
         idi = d["idioma"]
-        tabla, otros, cols = tablas[idi]
+        tabla, otros, cols, refs = tablas[idi]
         nuevos = []
         for it in d["vocabulario"]:
             k = clave(idi, it["item"])
@@ -161,6 +172,11 @@ def main():
             elif k in otros:
                 vistos[idi].add(k)
                 nuevo = reordenar(it, {"reccion": otros[k]})
+            elif norm(it["item"]) in refs:
+                errores.append(f"{p.name}: «{it['item']}» es una entrada de referencia "
+                               f"(«{refs[norm(it['item'])]['forma']}») y ya aparece en un pack: quitale "
+                               "`referencia: true` y completa su anotacion")
+                nuevo = it
             else:
                 if any(c in it for c in CAMPOS):
                     errores.append(f"{p.name}: «{it['item']}» tiene {'/'.join(c for c in CAMPOS if c in it)} "
@@ -181,10 +197,67 @@ def main():
                     texto = serializar(d, eol, final, modo == "compacto")
                 p.write_bytes(texto.encode("utf-8"))
     for idi in ("de", "en"):
-        tabla, otros, cols = tablas[idi]
+        tabla, otros, cols, refs = tablas[idi]
         for k in list(tabla) + list(otros) + list(cols):
             if k not in vistos[idi]:
                 errores.append(f"{idi}: «{k}» esta en la tabla y no aparece en ningun pack")
+    return cambiados, items_tag, items_nuc, errores
+
+
+def autotest():
+    """La guarda de la tarea 2: un pack cuyo item coincide con una entrada de referencia tiene
+    que hacer saltar el error. Se arma un contenido minimo en un directorio temporal."""
+    import tempfile
+    fallos = []
+    tabla = {"idioma": "de", "version": 1, "verbos": [
+        {"forma": "aufstehen", "item": "aufstehen", "base": "aufstehen",
+         "claseVerbo": ["trennbar"], "raiz": "stehen", "referencia": True, "nivelFuente": "A1",
+         "traducciones": {"es": "levantarse", "en": "to get up", "fr": "se lever",
+                          "it": "alzarsi", "pt": "levantar-se"}},
+        {"forma": "abholen", "item": "abholen", "base": "abholen", "claseVerbo": ["trennbar"]},
+    ]}
+    vacia = {"idioma": "en", "version": 1, "verbos": []}
+    pack = {"idioma": "de", "nivel": "A2", "anio": 2027, "vocabulario": [
+        {"item": "abholen", "prioridad": "nucleo", "traducciones": {"es": "recoger"}}]}
+    for con_referencia, espera in ((True, 1), (False, 0)):
+        with tempfile.TemporaryDirectory() as d:
+            base = Path(d)
+            (base / "verbos").mkdir(); (base / "packs").mkdir()
+            voc = list(pack["vocabulario"])
+            if con_referencia:
+                voc.append({"item": "aufstehen", "prioridad": "ampliacion",
+                            "traducciones": {"es": "levantarse"}})
+            p = dict(pack, vocabulario=voc)
+            (base / "verbos" / "de.json").write_text(json.dumps(tabla, ensure_ascii=False, indent=1),
+                                                     encoding="utf-8")
+            (base / "verbos" / "en.json").write_text(json.dumps(vacia, ensure_ascii=False, indent=1),
+                                                     encoding="utf-8")
+            (base / "packs" / "de-A2-2027-T01-1.json").write_text(
+                json.dumps(p, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+            cambiados, tag, nuc, errores = revisar(str(base), False)
+            refs = [e for e in errores if "entrada de referencia" in e]
+            if len(refs) != espera:
+                fallos.append(f"con_referencia={con_referencia}: esperaba {espera} errores de "
+                              f"referencia y hubo {len(refs)}: {errores}")
+            if not con_referencia and errores:
+                fallos.append(f"sin el item de referencia no deberia haber errores: {errores}")
+    print(f"autotest de la guarda de referencia: 2 casos, {len(fallos)} fallos")
+    for f in fallos:
+        print("  !", f)
+    return len(fallos)
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--contenido", default="proyecto/contenido")
+    ap.add_argument("--escribir", action="store_true")
+    ap.add_argument("--autotest", action="store_true", help="prueba la guarda de `referencia: true`")
+    a = ap.parse_args()
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8")
+    if a.autotest:
+        sys.exit(1 if autotest() else 0)
+    cambiados, items_tag, items_nuc, errores = revisar(a.contenido, a.escribir)
     print(f"packs con diferencias: {cambiados}; apariciones etiquetadas: {items_tag}; "
           f"colocaciones con nucleo: {items_nuc}; errores: {len(errores)}")
     for e in errores:
