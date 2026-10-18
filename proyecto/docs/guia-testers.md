@@ -1,4 +1,4 @@
-# LenguApp · guía rápida para testers (versión 0.4.2)
+# LenguApp · guía rápida para testers (versión 0.4.3)
 
 **Qué es.** Una app para practicar un idioma cada semana (alemán o inglés, de A2 a C2). **No es un curso:** sirve para fijar lo que ya aprendiste en uno. Funciona sin internet, sin cuenta y sin recopilar datos. Está en prueba y tu opinión ayuda mucho.
 
@@ -11,10 +11,10 @@
 | Semanas especiales de Repaso | Cuatro veces al año hay una semana de repaso, con otro formato. |
 | El Desafío de fin de semana solo aparece sábado y domingo | Es hablar en voz alta, no repetir la misión: arriba la consigna con los minutos; debajo, tema, habilidad, condiciones y frases. Arranca apagado al abrir la app. No guarda nada. |
 | «Acerca de» está al final de Ajustes | La pantalla principal queda libre para el contenido. |
-| Bienvenida y tutorial | La primera vez eliges idioma y nivel; cada sección muestra un recorrido que oscurece todo menos lo que explica. «Saltar» los saltea. Se repite desde Ajustes. |
+| Bienvenida y tutorial | La primera vez eliges idioma y nivel; cada sección muestra un recorrido que oscurece todo menos lo que explica. En dos pasos (el encabezado del vocabulario y el interruptor del desafío) lo iluminado se puede tocar; el recorrido no avanza solo: sigue con «Siguiente». «Saltar» los saltea. Se repite desde Ajustes. |
 | Guardados e importar/exportar | Guardados muestra lo mismo que la Biblioteca. Puedes exportar a Anki o hacer una copia de seguridad, e importarla después; eliges tú el archivo en ese momento. |
-| Habilidades en la Biblioteca | Es una lista de solo lectura: toca una habilidad para abrir su semana. |
-| Verbos en la Biblioteca | Lista los verbos del idioma, de todos los niveles, con su nivel más bajo y, en alemán, el régimen (von + Dat). Salen también las frases donde se usan (die Frage stellen); si un verbo solo existe dentro de frases (stellen), no tiene estrella. Se filtra por clase. La búsqueda, fija arriba, mira también traducciones y frases: «Frage» encuentra stellen. |
+| Habilidades en la Biblioteca | Es una lista de solo lectura: toca una habilidad para abrir su semana. Se ordena por título (por omisión) o «Por semana», según su primera aparición. Solo se ven las semanas que ya llegaron; un año anterior se ve completo. |
+| Verbos en la Biblioteca | Lista los verbos del idioma, de todos los niveles; debajo de cada uno, en alemán, el régimen (von + Dat) y, en inglés, si el phrasal verb es separable. Salen también las frases donde se usan (die Frage stellen); si un verbo solo existe dentro de frases (stellen), no tiene estrella. Se filtra por clase. La búsqueda, fija arriba, mira también traducciones y frases: «Frage» encuentra stellen. |
 | No hay estadísticas, rachas ni progreso | Decisión de diseño. La app solo guarda tus estrellas (Guardados) y tus ajustes. |
 | El prompt para conversar por voz con una IA existe solo en inglés B2 y C1 | Es una prueba. El prompt para que una IA corrija tu texto sí está en todos los niveles. |
 | Los prompts para la IA están siempre en el idioma que aprendes | Así la IA responde en ese idioma, aunque la app esté en el tuyo. |
