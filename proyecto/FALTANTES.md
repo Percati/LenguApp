@@ -2012,3 +2012,56 @@ La comprobación final de la herramienta recorre `list(tabla) + list(otros) + li
 - **La vista todavía no las muestra**: hace falta la ronda de Code que tome la tabla como segunda fuente de la vista Verbos.
 - **Nadie revisó fr / it / pt** de las 499 entradas. Alemán e inglés los juzga Fer.
 - **Los dos `.pdf` de Cambridge con la capa de texto completa**, para repetir el cruce de la tarea 3 sin huecos.
+
+## 73. Verificación de la tanda 1b de Verbos y la ruta de la segunda fuente (Overview, 18-oct-2026)
+
+Verificación independiente de `cc7d949a` (ya en `origin/main`), más la decisión de **cómo** llegan a la app las 499 entradas de referencia, que es lo que estaba sin resolver.
+
+### La reconciliación, rehecha candidato por candidato
+
+Reconstruí la clasificación de los 277 candidatos alemanes contra la tabla anterior a la 1b (`92d09866`), por mi cuenta y sin mirar la del informe: **las 277 filas coinciden**. Mis tres discrepancias iniciales (`heissen`, `abschliessen`, `schliessen`) eran mías: busqué con `ß` contra una tabla que por P10 escribe `ss`.
+
+**Mi error de la ronda anterior, cerrado.** Atribuí 26 candidatos a «existen solo como `raiz` de otra entrada». Medidos los doce que nombré: **diez están en `nucleos[]`** —y además son raíz de un separable, que es lo que me confundió— y dos, `braten` y `kennen`, ya estaban escritos en la tanda 1. **Ninguno coincide solo por `raiz`.** Mi medición no miró `nucleos[]`. Es el segundo error del mismo tipo en dos rondas: leí el nombre de un campo en vez de medir qué contiene (el otro fue `angulares` en la Ronda T, FALTANTES 71).
+
+### La guarda de referencia, probada fuera de su propio autotest
+
+Inyecté a mano un ítem igual a una entrada de referencia (`abschliessen`) en un pack real: `aplicar_verbos.py` sale con **`rc=1`** y el mensaje accionable. Que sea error y no aviso es lo que hizo aparecer los 6 falsos positivos de la primera corrida.
+
+### El estado completo, desde el repo
+
+606 fichas / 56 semanas especiales / 0 con problemas; R1–R11 con 0 problemas en 240 fichas A2/B1; `diff -rq` 0 diferencias; `aplicar_verbos.py` 0 packs con diferencias, 1229 apariciones, 1104 colocaciones, 0 errores; `--autotest` 2 casos 0 fallos; packs 2026 y 2027 en verde; índice de audio al día; `INTERNET` = 1.
+
+Las 499 entradas de referencia, auditadas: traducciones completas en las cinco lenguas y **ninguna** glosa al idioma que se aprende; 0 `ß`; 0 clases desconocidas; 0 `mit-Praposition` sin `reccion`; 0 `trennbar` sin `raiz`; 0 formas duplicadas en `verbos[]`.
+
+### Por qué las 499 no se ven, con el mecanismo exacto
+
+`componer.py` **no menciona** la tabla de verbos: la tabla es entrada de `aplicar_verbos.py`, que escribe `claseVerbo` / `reccion` / `nucleoVerbal` **dentro de los packs**. A `assets/contenido/` llegan fichas. Y `verbosDe()` construye la vista desde `ItemBiblioteca`, o sea desde los ítems de las fichas. **Una entrada que no anota ningún ítem no existe para la app.**
+
+### La decisión: extracción en Gradle, no un archivo versionado ni un emisor nuevo
+
+No hace falta ninguna herramienta nueva en `proyecto/tools/`. **El patrón ya está en `app/build.gradle.kts`:** `extraerTopicNombres` lee `banco.json` y escribe solo la tabla que la app necesita en `assets/temas/topic-nombres.json` en cada build, sin versionar la copia. La segunda fuente es lo mismo, y queda **entera del lado de Code** (prompt 42, Ronda U).
+
+- **Extracción, no `Copy`.** El archivo completo pesa 319 KB y lleva `nivelFuente` y `nota`, que son campos de trabajo que por decisión del prompt 40 **no llegan a la app**. Un `Copy` los pondría físicamente dentro del APK para después ignorarlos: una decisión incumplida en silencio. Extraído son **92 KB** (`item`, `base`, `claseVerbo`, `traducciones`, y `raiz` y `reccion` cuando están). **`raiz` tiene que viajar**: es lo que hace que buscar «stellen» traiga la familia, la función que Fer más usa de la vista.
+- **`assets/verbos/`, nunca `assets/contenido/`.** `CargadorContenido` hace `assets.list("contenido").filter { endsWith(".json") }` y parsea **todos** como ficha o semana especial: un archivo con otra forma ahí rompe el cargador, y además aparecería como diferencia en el `diff -rq` y en la tarea `verificarAssetsContenido`.
+- **Sin estrella.** Una entrada de referencia no es ítem de ninguna ficha, así que un guardado daría una clave que ningún contenido puede volver a producir — el mismo motivo ya documentado para los núcleos puros, y además quedaría colgado el día que el verbo entre a un pack y se le quite `referencia`.
+
+### La fusión por infinitivo va en el mismo commit que la segunda fuente
+
+Medido, normalizando el «to » del inglés: **124 verbos** mostrarían dos filas en cuanto la fuente exista — 45 DE y 78 EN contra núcleos, más `deal with` contra una entrada de anotación. Son `aufstehen`, `kommen`, `machen`, `nehmen`, `take`, `make`, `go`, `put`: los más buscados. Hoy la duplicación es invisible porque la fuente no existe; el día que exista se ve de golpe. Por eso la Ronda U tiene una sola tarea grande y no se parte en dos.
+
+### El cruce de los PDF: deuda cerrada, no pendiente
+
+FALTANTES 72 la deja abierta («los dos `.pdf` con la capa de texto completa»). **La cerré con la lista canónica y no hay ningún hueco.**
+
+- **Irregulares, la mitad que el PDF no muestra** (antes de `broadcast`, después de `teach`): 29 cruzados. Ausentes de nivel A1/A2: **tres, los tres correctos** — `be` es auxiliar (regla del prompt 40), `wind` es A1 como sustantivo (igual que el caso `spring`) y `awake` es marginal con `wake` ya en la tabla.
+- **Phrasal, las dos páginas:** 111 + 42 cruzados, 15 con lema en `vocab_en.json` y **todos B2 o C1**. Cero de A1/A2.
+
+**Y el motivo que da FALTANTES 72 es errado:** no es que «CEFR-J lematiza por palabra» — `vocab_en.json` tiene **1021 lemas con espacio**, entre ellos `according to`, `bus stop` y quince phrasal verbs. El motivo real es más acotado: los phrasal están poco representados y los que están son de nivel alto. Importa porque la versión errada implicaría que un cruce contra una lista de phrasal nunca puede dar nada, y en B1 sí podría.
+
+### Dos desacuerdos de clase, no uno
+
+El informe declara uno (`hören`: núcleo `mit-Praposition` frente a referencia `simple`) y el criterio es correcto. **Hay un segundo que no se declaró:** `deal with` es `phrasal-inseparable` como anotación y `verbo-preposicion` como referencia, y además la entrada de referencia es redundante — `deal with something` ya se ve en la app con su traducción. Van al prompt 43 junto con la corrección de FALTANTES 72. A Code se le pidió explícitamente **no** resolverlos ni agregar una guarda que falle por ellos, así que no bloquean la Ronda U.
+
+### B1 espera, con un motivo nuevo
+
+El argumento del prompt 40 («si la forma está mal, se corrige con 200 y no con 600») se agotó: la forma está validada. El que queda es más fuerte: **nadie vio una de estas entradas en la pantalla**. Cómo se lee una glosa de referencia al lado de una con colocaciones, si la falta de estrella se entiende o parece un error, y si 499 entradas nuevas vuelven incómoda la lista alfabética — las tres cambian cómo se escriben los 414 candidatos de B1, y las tres se contestan recién con la Ronda U aplicada.
