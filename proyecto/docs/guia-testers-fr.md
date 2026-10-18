@@ -1,4 +1,4 @@
-# LenguApp · guide rapide pour les testeurs (version 0.4.2)
+# LenguApp · guide rapide pour les testeurs (version 0.4.3)
 
 **Ce que c'est.** Une appli pour pratiquer une langue une semaine à la fois (allemand ou anglais, de A2 à C2). **Ce n'est pas un cours :** elle sert à consolider ce que tu as déjà appris dans un cours. Elle fonctionne sans internet, sans compte et sans collecte de données. Elle est en test, et ton avis aide beaucoup.
 
@@ -9,12 +9,12 @@
 | Des mots dans une autre langue entre « » | Tout fragment dans une langue différente de celle du texte va entre guillemets. Si tu en vois un sans marque, c'est bien une erreur : dis-le-nous. |
 | Une compétence ou un thème revient plus tard | C'est voulu : les compétences reviennent plusieurs fois par an, à une autre profondeur. |
 | Semaines spéciales de révision | Quatre fois par an, une semaine de révision, dans un autre format. |
-| Le défi du week-end : samedi et dimanche | Parler à voix haute, pas refaire la mission : en haut la consigne avec les minutes ; dessous, thème, compétence, conditions et phrases. Désactivé à chaque ouverture ; rien n'est enregistré. |
+| Le défi du week-end : samedi et dimanche | Il s'agit de parler à voix haute, pas de refaire la mission. Dans la langue que tu apprends (ou traduit, avec l'interrupteur en A2 et B1). Il démarre éteint et n'enregistre rien. |
 | « À propos » est à la fin des Réglages | L'écran principal reste libre pour le contenu. |
-| Bienvenue et tutoriel | La première fois, tu choisis la langue et le niveau ; ensuite, chaque section montre un parcours qui assombrit tout sauf ce qu'il explique. « Passer » les passe tous. Tu peux tout revoir depuis Réglages. |
+| Bienvenue et tutoriel | La première fois, tu choisis la langue et le niveau ; ensuite, chaque section montre un parcours qui assombrit tout sauf ce qu'il explique. Dans deux étapes l'élément éclairé est touchable. « Passer » les passe tous ; tout se revoit depuis Réglages. |
 | Favoris, import et export | Même contenu que la Bibliothèque. Export vers Anki ou sauvegarde réimportable ; c'est toi qui choisis le fichier. |
-| Compétences dans la Bibliothèque | Une liste en lecture seule : touche une compétence pour ouvrir sa semaine. |
-| Verbes dans la Bibliothèque | Tous les verbes de la langue, tous niveaux, avec leur niveau le plus bas et, en allemand, le régime (von + Dat). Les expressions où ils s'emploient apparaissent aussi (die Frage stellen) ; un verbe qui n'existe qu'en expression (stellen) n'a pas d'étoile. Filtre par classe. La recherche, fixée en haut, voit aussi traductions et expressions : « Frage » trouve stellen. |
+| Compétences dans la Bibliothèque | Une liste en lecture seule : touche une compétence pour ouvrir sa semaine. Triée par titre ou par semaine ; seules les semaines déjà arrivées (une année précédente, en entier). |
+| Verbes dans la Bibliothèque | Tous les verbes de la langue, tous niveaux ; dessous, le régime (von + Dat). Les expressions où ils s'emploient apparaissent aussi (die Frage stellen) ; un verbe qui n'existe qu'en expression (stellen) n'a pas d'étoile. Filtre par classe ; la recherche trouve « Frage » → stellen. |
 | Pas de statistiques, de séries ni de progression | C'est un choix. L'appli ne garde que tes étoiles (Favoris) et tes réglages. |
 | L'invite pour parler avec une IA n'existe qu'en anglais B2 et C1 | C'est un essai. L'invite pour qu'une IA corrige ton texte existe à tous les niveaux. |
 | Les invites pour l'IA sont toujours dans la langue que tu apprends | Ainsi l'IA répond dans cette langue, même si l'appli est dans la tienne. |
@@ -24,7 +24,6 @@
 | L'audio fonctionne en allemand et en anglais | Touche le haut-parleur à côté d'un mot ou d'une expression (dans les exemples, seulement certains) : voix de synthèse. Dans Réglages, tu choisis la vitesse (60–100 %). Les licences des deux voix sont dans « À propos ». |
 | Il y a du contenu pour 2026 (à partir de la semaine 41) et pour 2027 | Le reste viendra petit à petit. |
 | Tu peux choisir couleurs et typographie | Quatre thèmes (Papier, Terre cuite, Mer, Graphite) et, sous Android 12+, un qui suit ton fond d'écran. Trois polices : système, Lecture et Claire. |
-| Certains signes (↔, ✗, →, ₂) s'affichent dans une autre police | Lecture et Claire ne contiennent pas ces signes, donc le téléphone les dessine avec celle du système. |
 | Icône et écran de démarrage | Encore provisoires : ils sont en cours de refonte. L'écran de démarrage n'affiche pas encore de logo. |
 
 ## Ce qu'on veut savoir

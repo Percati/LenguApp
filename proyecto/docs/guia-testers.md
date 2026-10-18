@@ -9,12 +9,12 @@
 | Palabras en otro idioma entre « » | Todo fragmento en un idioma distinto al del texto va entre comillas angulares. Si ves uno sin marcar, eso sí es un error: avísanos. |
 | Una habilidad o un tema vuelve más adelante | Es a propósito: las habilidades reaparecen varias veces al año con otra profundidad. |
 | Semanas especiales de Repaso | Cuatro veces al año hay una semana de repaso, con otro formato. |
-| El Desafío de fin de semana solo aparece sábado y domingo | Es hablar en voz alta, no repetir la misión: arriba la consigna con los minutos; debajo, tema, habilidad, condiciones y frases. Arranca apagado al abrir la app. No guarda nada. |
+| El Desafío de fin de semana solo aparece sábado y domingo | Es hablar en voz alta, no repetir la misión. Sale en el idioma que aprendes (o traducido, con el interruptor de A2 y B1). Arranca apagado y no guarda nada. |
 | «Acerca de» está al final de Ajustes | La pantalla principal queda libre para el contenido. |
-| Bienvenida y tutorial | La primera vez eliges idioma y nivel; cada sección muestra un recorrido que oscurece todo menos lo que explica. En dos pasos (el encabezado del vocabulario y el interruptor del desafío) lo iluminado se puede tocar; el recorrido no avanza solo: sigue con «Siguiente». «Saltar» los saltea. Se repite desde Ajustes. |
+| Bienvenida y tutorial | La primera vez eliges idioma y nivel; cada sección muestra un recorrido que oscurece todo menos lo que explica. En dos pasos lo iluminado se puede tocar, y el recorrido no avanza solo. «Saltar» los saltea. Se repite desde Ajustes. |
 | Guardados e importar/exportar | Guardados muestra lo mismo que la Biblioteca. Puedes exportar a Anki o hacer una copia de seguridad, e importarla después; eliges tú el archivo en ese momento. |
-| Habilidades en la Biblioteca | Es una lista de solo lectura: toca una habilidad para abrir su semana. Se ordena por título (por omisión) o «Por semana», según su primera aparición. Solo se ven las semanas que ya llegaron; un año anterior se ve completo. |
-| Verbos en la Biblioteca | Lista los verbos del idioma, de todos los niveles; debajo de cada uno, en alemán, el régimen (von + Dat) y, en inglés, si el phrasal verb es separable. Salen también las frases donde se usan (die Frage stellen); si un verbo solo existe dentro de frases (stellen), no tiene estrella. Se filtra por clase. La búsqueda, fija arriba, mira también traducciones y frases: «Frage» encuentra stellen. |
+| Habilidades en la Biblioteca | Lista de solo lectura: toca una habilidad para abrir su semana. Se ordena por título o por semana, y solo se ven las semanas que ya llegaron (un año anterior, completo). |
+| Verbos en la Biblioteca | Lista los verbos del idioma, de todos los niveles; debajo de cada uno, en alemán, el régimen (von + Dat) y, en inglés, si el phrasal verb es separable. Salen también las frases donde se usan (die Frage stellen); si un verbo solo existe dentro de frases (stellen), no tiene estrella. Se filtra por clase, y la búsqueda de arriba mira también traducciones y frases: «Frage» encuentra stellen. |
 | No hay estadísticas, rachas ni progreso | Decisión de diseño. La app solo guarda tus estrellas (Guardados) y tus ajustes. |
 | El prompt para conversar por voz con una IA existe solo en inglés B2 y C1 | Es una prueba. El prompt para que una IA corrija tu texto sí está en todos los niveles. |
 | Los prompts para la IA están siempre en el idioma que aprendes | Así la IA responde en ese idioma, aunque la app esté en el tuyo. |
@@ -24,7 +24,6 @@
 | El audio suena en alemán y en inglés | Toca el altavoz junto a una palabra o expresión (en los ejemplos, solo algunos): voz sintética. En Ajustes eliges la velocidad (60–100 %). Las licencias de las dos voces están en «Acerca de». |
 | Hay contenido de 2026 (desde la semana 41) y de 2027 | Lo demás se irá sumando. |
 | Puedes elegir el color y la letra | En Ajustes hay cuatro temas (Papel, Terracota, Mar, Grafito) y, en Android 12 o posterior, uno que sigue el color de tu fondo de pantalla. También tres tipografías: la del sistema, Lectura y Clara. |
-| Algunos signos (↔, ✗, →, ₂) se ven con otra letra | Las tipografías Lectura y Clara no traen esos signos, así que el teléfono los dibuja con la del sistema. |
 | Ícono y pantalla de carga | Siguen provisorios: se están rediseñando. La pantalla de carga no muestra logo todavía. |
 
 ## Sí queremos que nos avises de
