@@ -29,8 +29,9 @@ class IndiceHabilidadesTest {
     private fun calendario(idioma: Idioma, nivel: Nivel): CalendarioCargado.Encontrado =
         CalendarioCargado.Encontrado(parsearCalendario(File(assets(), "calendario/calendario_2026_${idioma.name.lowercase()}_${nivel.name}.json").readText()))
 
-    private fun indice(idioma: Idioma, nivel: Nivel, base: Idioma = Idioma.ES, semanaRef: Int = 1) =
-        construirIndiceHabilidades(calendario(idioma, nivel), 2026, idioma, nivel, contenido, base, semanaRef) as IndiceHabilidades.Filas
+    // Por omision el anio en curso es 2027: la edicion 2026 esta cerrada y se ve entera (los tests de la Ronda T pasan 2026 para cortar).
+    private fun indice(idioma: Idioma, nivel: Nivel, base: Idioma = Idioma.ES, semanaRef: Int = 1, anioEnCurso: Int = 2027) =
+        construirIndiceHabilidades(calendario(idioma, nivel), 2026, idioma, nivel, contenido, base, semanaRef, anioEnCurso) as IndiceHabilidades.Filas
 
     private val pares = listOf(Idioma.EN, Idioma.DE).flatMap { i -> Nivel.entries.map { n -> i to n } }
 
@@ -73,22 +74,65 @@ class IndiceHabilidadesTest {
     }
 
     @Test
-    fun `un toque abre la proxima aparicion desde la semana de referencia, o la ultima si ya pasaron todas`() {
-        val habilidadRepetida = Nivel.entries.flatMap { n -> listOf(Idioma.EN, Idioma.DE).map { it to n } }
-            .firstNotNullOfOrNull { (i, n) -> indice(i, n).filas.firstOrNull { it.apariciones.size >= 2 }?.let { Triple(i, n, it.skillId) } }
-        // en el calendario parcial de 2026 puede no haber repeticiones; entonces se prueba la regla con una sola aparicion
+    fun `un toque abre siempre la ultima aparicion de las que se muestran`() {
         val (idioma, nivel) = pares.first()
         val fila = indice(idioma, nivel).filas.first()
-        val ultima = fila.apariciones.last().fichaId
-        val primera = fila.apariciones.first().fichaId
-        assertEquals(primera, indice(idioma, nivel, semanaRef = 0).filas.first { it.skillId == fila.skillId }.fichaAAbrir)
-        assertEquals(ultima, indice(idioma, nivel, semanaRef = 99).filas.first { it.skillId == fila.skillId }.fichaAAbrir)
-        if (habilidadRepetida != null) {
-            val (i, n, skill) = habilidadRepetida
-            val f = indice(i, n).filas.first { it.skillId == skill }
-            val segunda = f.apariciones[1]
-            assertEquals(segunda.fichaId, indice(i, n, semanaRef = f.apariciones[0].semana + 1).filas.first { it.skillId == skill }.fichaAAbrir)
+        // edicion cerrada (se muestra entera): la ultima de todas, sin importar la semana de referencia
+        for (ref in listOf(0, 1, 40, 99)) {
+            assertEquals(fila.apariciones.last().fichaId, indice(idioma, nivel, semanaRef = ref).filas.first { it.skillId == fila.skillId }.fichaAAbrir)
         }
+        // anio en curso: la ultima ya pasada
+        val repetida = pares.firstNotNullOfOrNull { (i, n) -> indice(i, n).filas.firstOrNull { it.apariciones.size >= 2 }?.let { Triple(i, n, it) } }
+        if (repetida != null) {
+            val (i, n, f) = repetida
+            val primera = f.apariciones[0]
+            val r = indice(i, n, semanaRef = f.apariciones[1].semana - 1, anioEnCurso = 2026).filas.first { it.skillId == f.skillId }
+            assertEquals(listOf(primera.semana), r.semanas)
+            assertEquals(primera.fichaId, r.fichaAAbrir)
+        }
+    }
+
+    // --- Ronda T, tarea 3: sin semanas futuras, y orden por semana ---
+
+    @Test
+    fun `en el anio en curso no hay semanas futuras y una habilidad cuya primera aparicion es futura no esta`() {
+        val (idioma, nivel) = Idioma.DE to Nivel.B2
+        val todo = indice(idioma, nivel, anioEnCurso = 2027).filas
+        val semanas = todo.flatMap { it.semanas }.sorted().distinct()
+        val corte = semanas[semanas.size / 2]
+        val cortado = indice(idioma, nivel, semanaRef = corte, anioEnCurso = 2026).filas
+        assertTrue(cortado.isNotEmpty() && cortado.size < todo.size)
+        assertTrue("ninguna semana pasa de $corte", cortado.flatMap { it.semanas }.all { it <= corte })
+        val futuras = todo.filter { it.primeraSemana > corte }
+        assertTrue("el caso de prueba tiene habilidades futuras", futuras.isNotEmpty())
+        assertTrue(cortado.none { c -> futuras.any { it.skillId == c.skillId } })
+        // la semana de referencia misma SI se muestra
+        assertTrue(cortado.flatMap { it.semanas }.contains(corte))
+        // en la semana 0 (antes de todo) no hay nada, y eso no rompe
+        assertEquals(emptyList<FilaHabilidad>(), indice(idioma, nivel, semanaRef = 0, anioEnCurso = 2026).filas)
+    }
+
+    @Test
+    fun `en un anio anterior al en curso estan todas, aunque la semana de referencia sea la 1`() {
+        val (idioma, nivel) = Idioma.DE to Nivel.B2
+        val esperado = calendario(idioma, nivel).entradas.filter { it.tipo == TipoSemana.CONTENT && it.skillId != null }.mapNotNull { it.skillId }.toSet()
+        assertEquals(esperado, indice(idioma, nivel, semanaRef = 1, anioEnCurso = 2027).filas.map { it.skillId }.toSet())
+        // el anio en curso a secas (2026) con la semana 1 muestra casi nada: la diferencia es la que importa
+        assertTrue(indice(idioma, nivel, semanaRef = 1, anioEnCurso = 2026).filas.size < esperado.size)
+    }
+
+    @Test
+    fun `por semana ordena por la primera aparicion, con el titulo de desempate, y alfabetico por titulo`() {
+        val (idioma, nivel) = Idioma.DE to Nivel.B2
+        val filas = indice(idioma, nivel).filas
+        val porSemana = filas.ordenadas(OrdenHabilidades.POR_SEMANA)
+        assertEquals(porSemana.map { it.primeraSemana }, porSemana.map { it.primeraSemana }.sorted())
+        for ((a, b) in porSemana.zipWithNext()) if (a.primeraSemana == b.primeraSemana) assertTrue(a.titulo.lowercase() <= b.titulo.lowercase())
+        assertEquals(filas.map { it.skillId }.toSet(), porSemana.map { it.skillId }.toSet())
+        val alfa = porSemana.ordenadas(OrdenHabilidades.ALFABETICO)
+        assertEquals(alfa.map { it.titulo.lowercase() }, alfa.map { it.titulo.lowercase() }.sorted())
+        assertEquals("el orden de las filas del indice ya es el alfabetico", filas.map { it.skillId }, alfa.map { it.skillId })
+        assertTrue("el orden por semana no es el alfabetico (si no, la prueba no prueba nada)", porSemana.map { it.skillId } != alfa.map { it.skillId })
     }
 
     @Test
@@ -97,16 +141,16 @@ class IndiceHabilidadesTest {
         val filas = indice(idioma, nivel).filas
         val quitada = filas.first()
         val sinEsa = contenido - quitada.apariciones.map { it.fichaId }.toSet()
-        val r = construirIndiceHabilidades(calendario(idioma, nivel), 2026, idioma, nivel, sinEsa, Idioma.ES, 1) as IndiceHabilidades.Filas
+        val r = construirIndiceHabilidades(calendario(idioma, nivel), 2026, idioma, nivel, sinEsa, Idioma.ES, 1, 2027) as IndiceHabilidades.Filas
         assertTrue(r.filas.none { it.skillId == quitada.skillId })
         assertEquals(filas.size - 1, r.filas.size)
     }
 
     @Test
     fun `sin calendario para el anio no hay indice, se dice por que`() {
-        val r = construirIndiceHabilidades(CalendarioCargado.SinCalendarioParaElAnio, 2030, Idioma.EN, Nivel.B2, contenido, Idioma.ES, 1)
+        val r = construirIndiceHabilidades(CalendarioCargado.SinCalendarioParaElAnio, 2030, Idioma.EN, Nivel.B2, contenido, Idioma.ES, 1, 2030)
         assertEquals(IndiceHabilidades.SinCalendario(2030), r)
-        assertEquals(IndiceHabilidades.SinCalendario(2026), construirIndiceHabilidades(CalendarioCargado.SinCalendarioParaIdiomaONivel, 2026, Idioma.EN, Nivel.B2, contenido, Idioma.ES, 1))
+        assertEquals(IndiceHabilidades.SinCalendario(2026), construirIndiceHabilidades(CalendarioCargado.SinCalendarioParaIdiomaONivel, 2026, Idioma.EN, Nivel.B2, contenido, Idioma.ES, 1, 2026))
     }
 
     @Test

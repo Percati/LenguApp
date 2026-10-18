@@ -251,6 +251,8 @@ internal fun LenguAppApp(
     // reflejar la fecha inicial real, no una fecha distinta escondida
     // detras de un resolutor con trampa).
     fechaInicial: LocalDate = LocalDate.now(),
+    // El anio en curso (para el indice de habilidades: una edicion anterior se consulta entera, la actual solo hasta la semana vista).
+    anioEnCurso: Int = semanaIsoDe(LocalDate.now()).anio,
     // Guardados (feature 3): todo el contenido embebido, para poder buscar
     // la ficha de origen de un item guardado por skillId sin pasar por el
     // calendario. `repositorioGuardados` en null desactiva la feature entera
@@ -545,7 +547,7 @@ internal fun LenguAppApp(
                             } else {
                                 construirIndiceHabilidades(
                                     calendarioDe(semanaVista.anio, idioma, nivel), semanaVista.anio, idioma, nivel,
-                                    contenidoPorId, ajustes.idiomaBase, semanaVista.semana,
+                                    contenidoPorId, ajustes.idiomaBase, semanaVista.semana, anioEnCurso,
                                 )
                             }
                         },

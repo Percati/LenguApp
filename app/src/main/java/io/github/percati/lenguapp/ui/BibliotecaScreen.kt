@@ -35,6 +35,8 @@ import androidx.compose.foundation.clickable
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import io.github.percati.lenguapp.presentacion.FilaHabilidad
 import io.github.percati.lenguapp.presentacion.IndiceHabilidades
+import io.github.percati.lenguapp.presentacion.OrdenHabilidades
+import io.github.percati.lenguapp.presentacion.ordenadas
 import androidx.compose.foundation.layout.ColumnScope
 import io.github.percati.lenguapp.presentacion.BuscadorVerbos
 import io.github.percati.lenguapp.presentacion.contarClases
@@ -116,6 +118,8 @@ fun BibliotecaScreen(
     var busquedaVerbos by remember(idiomaElegido) { mutableStateOf("") }
     // Vista: palabras y expresiones (la de siempre) o indice de habilidades. Sin persistencia: cada apertura arranca en la primera.
     var vista by remember { mutableStateOf(VistaBiblioteca.LEXICO) }
+    // Orden de la lista de habilidades: cada entrada a la Biblioteca arranca en «Alfabetico». Sin persistencia (regla dura 4).
+    var ordenHabilidades by remember { mutableStateOf(OrdenHabilidades.ALFABETICO) }
 
     val idioma = idiomaElegido
     val nivelesDefault = idioma?.let { setOfNotNull(idiomasAprendidos[it]) } ?: emptySet()
@@ -312,8 +316,18 @@ fun BibliotecaScreen(
                                 style = MaterialTheme.typography.labelLarge,
                             )
                         }
+                        item {
+                            GrupoChips(
+                                opciones = listOf(
+                                    OpcionFiltro(OrdenHabilidades.ALFABETICO.name, etiquetaBibliotecaOrdenAlfabetico(idiomaInterfaz)),
+                                    OpcionFiltro(OrdenHabilidades.POR_SEMANA.name, etiquetaBibliotecaOrdenSemana(idiomaInterfaz)),
+                                ),
+                                estaElegida = { it.clave == ordenHabilidades.name },
+                                onElegir = { ordenHabilidades = OrdenHabilidades.valueOf(it.clave) },
+                            )
+                        }
                         if (indice.filas.isEmpty()) item { Text(etiquetaBibliotecaVacio(idiomaInterfaz), style = MaterialTheme.typography.bodyLarge) }
-                        items(indice.filas, key = { "habilidad|${it.skillId}" }) { fila ->
+                        items(indice.filas.ordenadas(ordenHabilidades), key = { "habilidad|${it.skillId}" }) { fila ->
                             FilaHabilidadIndice(fila, idiomaInterfaz) { onAbrirFicha(fila.fichaAAbrir) }
                         }
                     }

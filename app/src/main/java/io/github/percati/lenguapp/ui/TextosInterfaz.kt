@@ -40,7 +40,7 @@ enum class ClaveTexto {
     RETO_CONSIGNA_LINEA, RETO_REGLAS_BASICO, RETO_REGLAS_AVANZADO, RETO_HABILIDAD, RETO_CONDICIONES, RETO_FRASES_TITULO, RETO_FRASES_AYUDA,
     ACERCA_COMO_TITULO, ACERCA_COMO_TEXTO, ACERCA_VOCES_TITULO, ACERCA_VOCES_TEXTO, ACERCA_PRUEBA,
     GUARDADOS_EXPORTAR, GUARDADOS_IMPORTAR, GUARDADOS_EXPORTAR_ANKI, GUARDADOS_EXPORTAR_RESPALDO, GUARDADOS_MSG_EXPORTADO, GUARDADOS_MSG_IMPORTADO, GUARDADOS_ERR_INVALIDO, GUARDADOS_ERR_GRANDE, GUARDADOS_ERR_VERSION, GUARDADOS_ERR_ARCHIVO,
-    BIBLIOTECA_VISTA_LEXICO, BIBLIOTECA_VISTA_HABILIDADES, HABILIDAD_SEMANAS,
+    BIBLIOTECA_VISTA_LEXICO, BIBLIOTECA_VISTA_HABILIDADES, BIBLIOTECA_ORDEN_ALFABETICO, BIBLIOTECA_ORDEN_SEMANA, HABILIDAD_SEMANAS,
     TEMA_PAPEL, TEMA_TERRACOTA, TEMA_MAR, TEMA_GRAFITO,
     FUENTE_TITULO, FUENTE_LECTURA, FUENTE_CLARA, ACERCA_FUENTES_TEXTO,
     BIBLIOTECA_VISTA_VERBOS, VERBO_REFLEXIVO, VERBO_TRENNBAR, VERBO_MIT_PRAPOSITION, VERBO_MIT_DATIV, VERBO_PHRASAL_SEPARABLE, VERBO_PHRASAL_INSEPARABLE, VERBO_VERBO_PREPOSICION, VERBOS_VACIO,
@@ -358,6 +358,15 @@ private val TABLA_CHROME: Map<ClaveTexto, Map<Idioma, String>> = mapOf(
         Idioma.FR to "Vocabulaire et expressions",
         Idioma.IT to "Vocabolario ed espressioni",
         Idioma.PT to "Vocabulário e expressões",
+    ),
+    // Orden de la lista de habilidades (Ronda T).
+    ClaveTexto.BIBLIOTECA_ORDEN_ALFABETICO to mapOf(
+        Idioma.ES to "Alfabético", Idioma.EN to "Alphabetical", Idioma.DE to "Alphabetisch",
+        Idioma.FR to "Alphabétique", Idioma.IT to "Alfabetico", Idioma.PT to "Alfabética",
+    ),
+    ClaveTexto.BIBLIOTECA_ORDEN_SEMANA to mapOf(
+        Idioma.ES to "Por semana", Idioma.EN to "By week", Idioma.DE to "Nach Woche",
+        Idioma.FR to "Par semaine", Idioma.IT to "Per settimana", Idioma.PT to "Por semana",
     ),
     ClaveTexto.BIBLIOTECA_VISTA_HABILIDADES to mapOf(
         Idioma.ES to "Habilidades",
@@ -1484,6 +1493,8 @@ fun nombreTema(familia: io.github.percati.lenguapp.modelo.FamiliaTema, idiomaInt
     io.github.percati.lenguapp.modelo.FamiliaTema.SISTEMA -> etiquetaSegunSistema(idiomaInterfaz)
 }
 fun etiquetaBibliotecaVistaLexico(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_VISTA_LEXICO, idiomaInterfaz)
+fun etiquetaBibliotecaOrdenAlfabetico(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_ORDEN_ALFABETICO, idiomaInterfaz)
+fun etiquetaBibliotecaOrdenSemana(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_ORDEN_SEMANA, idiomaInterfaz)
 fun etiquetaBibliotecaVistaHabilidades(idiomaInterfaz: Idioma): String = texto(ClaveTexto.BIBLIOTECA_VISTA_HABILIDADES, idiomaInterfaz)
 fun textoHabilidadSemanas(idiomaInterfaz: Idioma, semanas: List<Int>): String =
     interpolar(texto(ClaveTexto.HABILIDAD_SEMANAS, idiomaInterfaz), "semanas" to semanas.joinToString(", "))

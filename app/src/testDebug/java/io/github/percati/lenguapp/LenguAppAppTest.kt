@@ -438,6 +438,7 @@ class LenguAppAppTest {
                 nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
                 fechaInicial = LocalDate.of(2026, 9, 7),
+                anioEnCurso = 2026,
                 onGuardarAjustes = {},
                 contenidoTodos = contenido.values.toList(),
                 calendarioDe = { anio, idioma, nivel ->
@@ -452,7 +453,7 @@ class LenguAppAppTest {
 
         // La primera fila del indice (por titulo): abre la ficha de esa habilidad
         val calendario = CalendarioCargado.Encontrado(parsearCalendario(File(carpetaAssets(), "calendario/calendario_2026_de_B2.json").readText()))
-        val indice = io.github.percati.lenguapp.presentacion.construirIndiceHabilidades(calendario, 2026, Idioma.DE, Nivel.B2, contenido, Idioma.ES, 37)
+        val indice = io.github.percati.lenguapp.presentacion.construirIndiceHabilidades(calendario, 2026, Idioma.DE, Nivel.B2, contenido, Idioma.ES, 37, 2026)
             as io.github.percati.lenguapp.presentacion.IndiceHabilidades.Filas
         val titulo = indice.filas.first().titulo
         composeTestRule.onNodeWithText(titulo).performClick()
