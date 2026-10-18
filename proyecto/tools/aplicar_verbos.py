@@ -3,6 +3,9 @@
 repeticiones del item en contenido/packs/*.json (prompt 20, paso 3).
 
 Toca cinco campos de vocabulario[]: `claseVerbo` y `reccion` (el verbo propio, opcion A) y
+Las entradas con `referencia: true` quedan fuera: son verbos de consulta de la biblioteca, no
+anotaciones de items del contenido, asi que no se aplican a ningun pack.
+
 `nucleoVerbal` + `claseNucleo` + `reccionNucleo` (el nucleo verbal de una colocacion,
 prompt 23). Todo lo demas
 (traducciones, notas, orden de los items, formato del archivo) queda igual byte
@@ -49,7 +52,10 @@ def cargar_tablas(base):
                     raise SystemExit(f"{idi}: «{c}» figura en dos nucleos ({cols[k]['nucleo']} y "
                                      f"{e['nucleo']}); un item lleva un solo nucleoVerbal")
                 cols[k] = e
-        t[idi] = ({e["forma"]: e for e in d["verbos"]}, d.get("reccionOtros", {}), cols)
+        # Las entradas de referencia (`referencia: true`) son verbos de consulta que NO anotan
+        # ningun item del contenido: no se aplican a los packs ni se exige que aparezcan en uno.
+        t[idi] = ({e["forma"]: e for e in d["verbos"] if not e.get("referencia")},
+                  d.get("reccionOtros", {}), cols)
     return t
 
 
