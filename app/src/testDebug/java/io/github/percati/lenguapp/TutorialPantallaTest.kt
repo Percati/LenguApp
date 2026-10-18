@@ -382,4 +382,46 @@ class TutorialPantallaTest {
         asentar()
         composeTestRule.onNodeWithText(etiquetaTourPaso(2, 2, Idioma.ES)).assertExists()
     }
+
+    // --- Ronda T, tarea 4: la planilla del profesor no va en el desafio ---
+
+    @Test
+    fun `el boton de la planilla esta en la ficha y no en el desafio del fin de semana`() {
+        mostrar(sabado, todosVistos, conPlanilla = true)
+        composeTestRule.onAllNodesWithTag("tour-ficha-planilla").assertCountEquals(1)
+        composeTestRule.onNodeWithTag("tour-desafio-interruptor").performClick()
+        asentar()
+        composeTestRule.onAllNodesWithTag("tour-ficha-planilla").assertCountEquals(0)
+        // el bloque de titulo (semana, insignias) se queda en los dos modos
+        composeTestRule.onAllNodesWithTag("tour-ficha-titulo").assertCountEquals(1)
+        // y al apagar el interruptor vuelve
+        composeTestRule.onNodeWithTag("tour-desafio-interruptor").performClick()
+        asentar()
+        composeTestRule.onAllNodesWithTag("tour-ficha-planilla").assertCountEquals(1)
+    }
+
+    @Test
+    fun `en el desafio el paso de la planilla del tour se saltea solo, sin dejar un agujero colgado`() {
+        mostrar(sabado, todosVistos, conPlanilla = true)
+        composeTestRule.onNodeWithTag("tour-desafio-interruptor").performClick()
+        asentar()
+        assertFalse("tour-ficha-planilla" in gestor.registro.ids())
+        composeTestRule.runOnIdle { gestor.vistos = emptySet(); gestor.lanzar(Tour.FICHA) }
+        asentar()
+        var seguridad = 0
+        while (seguridad++ < 12) {
+            assertTrue("nunca se muestra el paso de la planilla", gestor.pasoActual?.ancla != "tour-ficha-planilla")
+            val hayFoco = composeTestRule.onAllNodesWithTag(TAG_TOUR_FOCO).fetchSemanticsNodes().isNotEmpty()
+            if (!hayFoco) break
+            val siguiente = composeTestRule.onAllNodesWithTag(TAG_TOUR_SIGUIENTE).fetchSemanticsNodes()
+            if (siguiente.isEmpty()) {
+                composeTestRule.onNodeWithTag(TAG_TOUR_LISTO).performClick()
+                asentar()
+                break
+            }
+            composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+            asentar()
+        }
+        composeTestRule.onAllNodesWithTag(TAG_TOUR_FOCO).assertCountEquals(0)
+    }
 }

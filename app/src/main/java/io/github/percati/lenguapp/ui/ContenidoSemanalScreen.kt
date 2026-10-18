@@ -411,9 +411,11 @@ private fun FichaContenido(
                             ayuda = etiquetaPromptVozAyuda(idiomaInterfaz),
                         )
                     }
-                }
 
-                onPlanilla?.let { BotonPlanilla(etiquetaPlanillaBoton(idiomaInterfaz), ancla = "tour-ficha-planilla") { it(ficha) } }
+                    // La planilla del profesor es de la ficha, no del desafio: en el reto del fin de semana se ve el reto y nada mas.
+                    // (El paso «tour-ficha-planilla» del tutorial se saltea solo cuando este boton no esta.)
+                    onPlanilla?.let { BotonPlanilla(etiquetaPlanillaBoton(idiomaInterfaz), ancla = "tour-ficha-planilla") { it(ficha) } }
+                }
             }
           }
         }
