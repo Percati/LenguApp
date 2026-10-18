@@ -105,8 +105,9 @@ class ConsignaDesafioEstiloTest {
         assertNotEquals(FontWeight.Bold, estilo.fontWeight)
         assertEquals("color pleno", colores.onSurface, estilo.color)
 
+        // El andamiaje del reto va en el idioma MOSTRADO (Ronda T): en B2 es el que se aprende, no el de la app
         // la linea de encuadre que la precede es de apoyo: mas chica que la consigna
-        val lineaOral = textoRetoConsignaLinea(Idioma.ES, oralMinRedondeado(ficha.evidencia.oralMin))
+        val lineaOral = textoRetoConsignaLinea(ficha.idioma, oralMinRedondeado(ficha.evidencia.oralMin))
         val estiloLinea = estiloDe(lineaOral.take(20))
         assertEquals(tipografia.bodyMedium.fontSize, estiloLinea.fontSize)
         assertEquals("color de apoyo", colores.onSurfaceVariant, estiloLinea.color)
@@ -117,12 +118,12 @@ class ConsignaDesafioEstiloTest {
             .fetchSemanticsNodes().flatMap { n -> n.config.getOrNull(SemanticsProperties.Text).orEmpty().map { it.text } }
         val orden = listOf(
             lineaOral, ficha.mision.consigna.resolver(ficha.idioma, ficha.idioma).take(20).replace("*", ""),
-            "${etiquetaBibliotecaTema(Idioma.ES)}:", "${etiquetaRetoHabilidad(Idioma.ES)}:",
-            etiquetaRetoCondiciones(Idioma.ES), etiquetaRetoFrasesTitulo(Idioma.ES),
+            "${etiquetaBibliotecaTema(ficha.idioma)}:", "${etiquetaRetoHabilidad(ficha.idioma)}:",
+            etiquetaRetoCondiciones(ficha.idioma), etiquetaRetoFrasesTitulo(ficha.idioma),
         ).map { fragmento -> textos.indexOfFirst { it.contains(fragmento) } }
         assertTrue("faltan partes del bloque: $orden de $textos", orden.all { it >= 0 })
         assertEquals("orden del bloque", orden.sorted(), orden)
-        for (r in reglasReto(Idioma.ES, ficha.nivel, oralMinRedondeado(ficha.evidencia.oralMin))) assertTrue("falta la condicion $r", textos.contains(r))
+        for (r in reglasReto(ficha.idioma, ficha.nivel, oralMinRedondeado(ficha.evidencia.oralMin))) assertTrue("falta la condicion $r", textos.contains(r))
         for (f in expresionesDeLaFicha(ficha, 3)) assertTrue("falta la frase $f", textos.contains(f))
         assertTrue("la consigna en ${lineasDe(consigna)} renglones", lineasDe(consigna) <= if (escala > 1f) 14 else 8)
     }

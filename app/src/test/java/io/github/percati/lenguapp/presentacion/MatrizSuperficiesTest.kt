@@ -88,7 +88,7 @@ class MatrizSuperficiesTest {
     }
 
     @Test
-    fun `las reglas del reto salen en el idioma de app`() = matriz { _, app, nivel, _ ->
+    fun `reglasReto devuelve las reglas en el idioma pedido (la ficha pide el idioma mostrado, Ronda T)`() = matriz { _, app, nivel, _ ->
         val clave = if (nivel == Nivel.A2 || nivel == Nivel.B1) ClaveTexto.RETO_REGLAS_BASICO else ClaveTexto.RETO_REGLAS_AVANZADO
         val esperado = tablaChromeCruda().getValue(clave).getValue(app).replace("{oralMin}", "6").split('\n')
         assertEquals(esperado, reglasReto(app, nivel, 6))

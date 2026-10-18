@@ -12,6 +12,7 @@ import androidx.compose.ui.test.SemanticsMatcher
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
 import io.github.percati.lenguapp.datos.NombresI18n
 import io.github.percati.lenguapp.datos.parsearContenido
@@ -85,7 +86,7 @@ class RetoFinDeSemanaTest {
 
         // La consigna de la mision SI se muestra (en el idioma que se esta mostrando); sus requisitos y micro-tareas NO,
         // en ningun idioma posible
-        val mostrado = if (ficha.bilingue) idiomaApp else ficha.idioma
+        val mostrado = io.github.percati.lenguapp.presentacion.idiomaMostradoDeFicha(ficha.bilingue, ficha.idioma, idiomaApp)
         assertTrue("$nivel: falta la consigna: $unidos", visibles.any { it.contains(fragmentos(ficha.mision.consigna, ficha, mostrado)) })
         for (idioma in listOf(idiomaApp, ficha.idioma)) {
             for (req in ficha.mision.requisitos) {
@@ -99,42 +100,45 @@ class RetoFinDeSemanaTest {
         assertFalse(visibles.any { it.contains(fragmentos(ficha.descripcion, ficha, ficha.idioma)) })
 
         // Linea oral con los minutos de la ficha, y la consigna justo debajo, antes que todo lo demas
-        val lineaOral = textoRetoConsignaLinea(idiomaApp, oralMinRedondeado(ficha.evidencia.oralMin))
+        val lineaOral = textoRetoConsignaLinea(mostrado, oralMinRedondeado(ficha.evidencia.oralMin))
         assertTrue(unidos, conReto.contains(lineaOral))
         assertTrue("la linea lleva los minutos de la ficha", lineaOral.contains(oralMinRedondeado(ficha.evidencia.oralMin).toString()))
         val iLinea = conReto.indexOf(lineaOral)
         val iConsigna = conReto.indexOfFirst { limpio(it).contains(fragmentos(ficha.mision.consigna, ficha, mostrado)) }
-        val iTema = conReto.indexOf("${etiquetaBibliotecaTema(idiomaApp)}:")
-        val iHabilidad = conReto.indexOf("${etiquetaRetoHabilidad(idiomaApp)}:")
-        val iCondiciones = conReto.indexOf(etiquetaRetoCondiciones(idiomaApp))
-        val iFrases = conReto.indexOf(etiquetaRetoFrasesTitulo(idiomaApp))
+        val iTema = conReto.indexOf("${etiquetaBibliotecaTema(mostrado)}:")
+        val iHabilidad = conReto.indexOf("${etiquetaRetoHabilidad(mostrado)}:")
+        val iCondiciones = conReto.indexOf(etiquetaRetoCondiciones(mostrado))
+        val iFrases = conReto.indexOf(etiquetaRetoFrasesTitulo(mostrado))
         assertEquals("el orden del bloque: linea oral, consigna, tema, habilidad, condiciones, frases ($conReto)", listOf(iLinea, iConsigna, iTema, iHabilidad, iCondiciones, iFrases).sorted(), listOf(iLinea, iConsigna, iTema, iHabilidad, iCondiciones, iFrases))
         assertEquals("consigna justo despues de la linea", iLinea + 1, iConsigna)
-        assertTrue(conReto.contains(etiquetaDesafioFinde(idiomaApp)))
-        assertTrue(unidos, conReto.contains("${etiquetaBibliotecaTema(idiomaApp)}:"))
-        assertTrue(unidos, conReto.contains(topics.nombre(ficha.topicId, idiomaApp)))   // el tema, en el idioma de app
-        assertTrue(unidos, conReto.contains("${etiquetaRetoHabilidad(idiomaApp)}:"))
-        assertTrue("falta el titulo de la ficha como habilidad", visibles.any { it.isNotBlank() && it == limpio(ficha.titulo.resolver(if (ficha.bilingue) idiomaApp else ficha.idioma, ficha.idioma)) })
+        assertTrue(conReto.contains(etiquetaDesafioFinde(mostrado)))
+        assertTrue(unidos, conReto.contains("${etiquetaBibliotecaTema(mostrado)}:"))
+        assertTrue(unidos, conReto.contains(topics.nombre(ficha.topicId, mostrado)))   // el tema, en el idioma de app
+        assertTrue(unidos, conReto.contains("${etiquetaRetoHabilidad(mostrado)}:"))
+        assertTrue("falta el titulo de la ficha como habilidad", visibles.any { it.isNotBlank() && it == limpio(ficha.titulo.resolver(if (ficha.bilingue) mostrado else ficha.idioma, ficha.idioma)) })
 
         // Condiciones: 4 filas, una por regla, segun el nivel
-        assertTrue(unidos, conReto.contains(etiquetaRetoCondiciones(idiomaApp)))
-        val reglas = reglasReto(idiomaApp, nivel, oralMinRedondeado(ficha.evidencia.oralMin))
+        assertTrue(unidos, conReto.contains(etiquetaRetoCondiciones(mostrado)))
+        val reglas = reglasReto(mostrado, nivel, oralMinRedondeado(ficha.evidencia.oralMin))
         assertEquals(4, reglas.size)
         for (r in reglas) assertTrue("falta la condicion: $r", conReto.contains(r))
         assertFalse("quedo un placeholder sin resolver: $unidos", unidos.contains("{"))
         if (nivel == Nivel.A2 || nivel == Nivel.B1) {
-            assertEquals(reglasReto(idiomaApp, Nivel.A2, 6), reglas) // A2 y B1 comparten las condiciones
+            assertEquals(reglasReto(mostrado, Nivel.A2, 6), reglas) // A2 y B1 comparten las condiciones
         } else {
             assertTrue(reglas[1].contains(oralMinRedondeado(ficha.evidencia.oralMin).toString()))
-            assertNotEquals(reglasReto(idiomaApp, Nivel.A2, 6), reglas)
+            assertNotEquals(reglasReto(mostrado, Nivel.A2, 6), reglas)
         }
 
         // Frases para usar: hasta 3, en el idioma que se aprende, con el encabezado en idioma de app
-        assertTrue(unidos, conReto.contains(etiquetaRetoFrasesTitulo(idiomaApp)))
-        assertTrue(unidos, conReto.contains(textoRetoFrasesAyuda(idiomaApp)))
+        assertTrue(unidos, conReto.contains(etiquetaRetoFrasesTitulo(mostrado)))
+        assertTrue(unidos, conReto.contains(textoRetoFrasesAyuda(mostrado)))
         val frases = expresionesDeLaFicha(ficha, 3)
         assertEquals(3, frases.size)
-        for (fr in frases) assertTrue("falta la frase $fr", conReto.contains(fr))
+        // Ronda T: el andamiaje va en el idioma MOSTRADO; las frases son siempre del idioma que se aprende, y entre « » si lo mostrado es otro
+        val entreAngulares = mostrado != ficha.idioma
+        for (fr in frases) assertTrue("falta la frase $fr (entre angulares: $entreAngulares) en $conReto", conReto.contains(if (entreAngulares) "«$fr»" else fr))
+        if (!entreAngulares) for (fr in frases) assertFalse("la frase no lleva angulares si se muestra el idioma que se aprende", conReto.contains("«$fr»"))
         val cuarta = ficha.redemittel.getOrNull(3)?.expresion?.trim()
         if (cuarta != null && cuarta !in frases) assertFalse("no debe haber mas de 3 frases", conReto.contains(cuarta))
     }
@@ -186,7 +190,9 @@ class RetoFinDeSemanaTest {
     fun `una ficha sin expresiones no muestra la seccion de frases`() {
         val ficha = fichaDe(Nivel.B2).copy(redemittel = emptyList())
         activarReto(ficha, Idioma.ES)
-        composeTestRule.onAllNodesWithText(etiquetaRetoFrasesTitulo(Idioma.ES)).assertCountEqualsCero()
+        // B2: el andamiaje va en el idioma que se aprende
+        composeTestRule.onAllNodesWithText(etiquetaRetoFrasesTitulo(ficha.idioma)).assertCountEqualsCero()
+        assertTrue(textosEnPantalla().contains(etiquetaRetoCondiciones(ficha.idioma)))
     }
 
     private fun androidx.compose.ui.test.SemanticsNodeInteractionCollection.assertCountEqualsCero() {
@@ -204,11 +210,11 @@ class RetoFinDeSemanaTest {
         }
         composeTestRule.onNode(hasText(etiquetaDesafioFinde(Idioma.ES))).performClick()
         composeTestRule.waitForIdle()
-        assertTrue(textosEnPantalla().contains(etiquetaRetoCondiciones(Idioma.ES)))
+        assertTrue(textosEnPantalla().contains(etiquetaRetoCondiciones(ficha.idioma)))
 
         composeTestRule.runOnIdle(reabrir)
         composeTestRule.waitForIdle()
-        assertFalse(textosEnPantalla().contains(etiquetaRetoCondiciones(Idioma.ES)))
+        assertFalse(textosEnPantalla().contains(etiquetaRetoCondiciones(ficha.idioma)))
     }
 
     @Test
@@ -243,8 +249,8 @@ class RetoFinDeSemanaTest {
         val visibles = textosEnPantalla().map { limpio(it) }
         assertTrue("sin consigna ni descripcion de reemplazo: $visibles", visibles.any { it.contains(fragmentos(sinConsigna.descripcion, sinConsigna, sinConsigna.idioma)) })
         // la linea oral sigue, y el resto del bloque tambien
-        assertTrue(visibles.contains(textoRetoConsignaLinea(Idioma.ES, oralMinRedondeado(sinConsigna.evidencia.oralMin))))
-        assertTrue(visibles.contains(etiquetaRetoCondiciones(Idioma.ES)))
+        assertTrue(visibles.contains(textoRetoConsignaLinea(sinConsigna.idioma, oralMinRedondeado(sinConsigna.evidencia.oralMin))))
+        assertTrue(visibles.contains(etiquetaRetoCondiciones(sinConsigna.idioma)))
     }
 
     @Test
@@ -254,5 +260,58 @@ class RetoFinDeSemanaTest {
         assertEquals("desc", consignaDelDesafio("   ", " desc ", "titulo"))
         assertEquals("titulo", consignaDelDesafio("", " ", "titulo"))
         assertEquals("", consignaDelDesafio("", "", ""))
+    }
+
+    // --- Ronda T, tarea 5: el desafio va en el idioma que se aprende ---
+
+    private fun frasesDe(ficha: Ficha) = expresionesDeLaFicha(ficha, 3)
+
+    @Test
+    fun `en B2 el andamiaje del desafio esta en el idioma que se aprende aunque la app este en espanol, y las frases van sin angulares`() {
+        val ficha = fichaDe(Nivel.B2)
+        activarReto(ficha, Idioma.ES)
+        val t = textosEnPantalla()
+        for (e in listOf(etiquetaDesafioFinde(ficha.idioma), etiquetaRetoCondiciones(ficha.idioma), etiquetaRetoFrasesTitulo(ficha.idioma), etiquetaRetoHabilidad(ficha.idioma) + ":", etiquetaBibliotecaTema(ficha.idioma) + ":", textoRetoFrasesAyuda(ficha.idioma))) {
+            assertTrue("falta «$e» en ${ficha.idioma}: $t", t.contains(e))
+        }
+        // nada del andamiaje en espanol (salvo el interruptor de arriba, que es de la app)
+        for (e in listOf(etiquetaRetoCondiciones(Idioma.ES), etiquetaRetoFrasesTitulo(Idioma.ES), textoRetoFrasesAyuda(Idioma.ES))) assertFalse("sobra «$e»: $t", t.contains(e))
+        for (r in reglasReto(ficha.idioma, ficha.nivel, oralMinRedondeado(ficha.evidencia.oralMin))) assertTrue("falta la regla $r", t.contains(r))
+        for (fr in frasesDe(ficha)) { assertTrue(t.contains(fr)); assertFalse(t.contains("«$fr»")) }
+    }
+
+    @Test
+    fun `en A2 con el interruptor de traduccion encendido el andamiaje va en el idioma de la app y las frases entre angulares`() {
+        val ficha = fichaDe(Nivel.A2)
+        activarReto(ficha, Idioma.ES) // arranca traducido
+        val t = textosEnPantalla()
+        assertTrue(t.contains(etiquetaRetoCondiciones(Idioma.ES)))
+        assertTrue(t.contains(etiquetaRetoFrasesTitulo(Idioma.ES)))
+        assertFalse(t.contains(etiquetaRetoCondiciones(ficha.idioma)))
+        for (fr in frasesDe(ficha)) assertTrue("la frase va entre « »: $fr en $t", t.contains("«$fr»"))
+    }
+
+    @Test
+    fun `en A2 con el interruptor de traduccion apagado el andamiaje va en el idioma que se aprende y las frases sin angulares`() {
+        val ficha = fichaDe(Nivel.A2)
+        activarReto(ficha, Idioma.ES)
+        composeTestRule.onNodeWithTag("tour-ficha-traducir").performClick()
+        composeTestRule.waitForIdle()
+        val t = textosEnPantalla()
+        assertTrue("sin traducir el desafio sigue activo", t.contains(etiquetaRetoCondiciones(ficha.idioma)))
+        assertFalse(t.contains(etiquetaRetoCondiciones(Idioma.ES)))
+        for (fr in frasesDe(ficha)) { assertTrue(t.contains(fr)); assertFalse("sin angulares: $fr", t.contains("«$fr»")) }
+        assertTrue(t.contains(topics.nombre(ficha.topicId, ficha.idioma)))
+    }
+
+    @Test
+    fun `las claves del andamiaje del desafio existen en aleman y en ingles, que son los idiomas que se aprenden`() {
+        for (idioma in listOf(Idioma.DE, Idioma.EN)) {
+            val textos = listOf(
+                etiquetaDesafioFinde(idioma), textoRetoConsignaLinea(idioma, 6), etiquetaBibliotecaTema(idioma), etiquetaRetoHabilidad(idioma),
+                etiquetaRetoCondiciones(idioma), etiquetaRetoFrasesTitulo(idioma), textoRetoFrasesAyuda(idioma),
+            ) + Nivel.entries.flatMap { reglasReto(idioma, it, 6) }
+            assertTrue("$idioma: vacio o con llaves: $textos", textos.all { it.isNotBlank() && !it.contains("{") })
+        }
     }
 }

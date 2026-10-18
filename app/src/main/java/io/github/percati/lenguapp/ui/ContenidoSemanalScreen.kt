@@ -298,15 +298,17 @@ private fun FichaContenido(
                     // requisitos + micro-tareas + evidencia escrita; el reto reusa SOLO la consigna, como tarea
                     // oral concreta (con una linea de encuadre y los minutos de la ficha), y nunca los requisitos ni
                     // las micro-tareas. Despues: tema y habilidad, las condiciones (una idea por fila, con icono) y
-                    // hasta 3 frases de la ficha para usar. Rotulos y condiciones en el idioma de app; las frases
-                    // en el que se aprende. El resto de la ficha se oculta mientras el reto esta activo. Sin consigna
+                    // hasta 3 frases de la ficha para usar. Rotulos y condiciones en el idioma MOSTRADO (Ronda T: el reto
+                    // es una superficie para practicar el idioma, como el resto de la ficha; ver REGLAS-PREVENCION P1); las
+                    // frases siempre en el que se aprende, y entre « » cuando lo mostrado es otro idioma. El resto de la ficha se oculta mientras el reto esta activo. Sin consigna
                     // en la ficha, el encabezado cae a la descripcion (consignaDelDesafio).
                     RetoFinDeSemana(
                         ficha = ficha,
-                        idiomaInterfaz = idiomaInterfaz,
+                        idiomaMostrado = idiomaMostrado,
+                        idiomaAprendido = ficha.idioma,
                         consigna = m(consignaDelDesafio(t(ficha.mision.consigna), t(ficha.descripcion), t(ficha.titulo))),
                         habilidad = t(ficha.titulo),
-                        tema = topicNombres.nombre(ficha.topicId, idiomaInterfaz),
+                        tema = topicNombres.nombre(ficha.topicId, idiomaMostrado),
                     )
                 } else {
                     Text(m(t(ficha.descripcion)), style = MaterialTheme.typography.bodyLarge, modifier = Modifier.anclaTour("tour-ficha-descripcion"))
@@ -560,15 +562,23 @@ private fun iconosReto(nivel: Nivel): List<ImageVector> =
     }
 
 @Composable
-private fun RetoFinDeSemana(ficha: Ficha, idiomaInterfaz: Idioma, consigna: AnnotatedString, habilidad: String, tema: String) {
+private fun RetoFinDeSemana(
+    ficha: Ficha,
+    // Idioma en que se muestra la ficha (el que se aprende; el de la app solo con el interruptor de traduccion de A2/B1 encendido).
+    idiomaMostrado: Idioma,
+    idiomaAprendido: Idioma,
+    consigna: AnnotatedString,
+    habilidad: String,
+    tema: String,
+) {
     Column(verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreSecciones)) {
-        Seccion(etiquetaDesafioFinde(idiomaInterfaz)) {
+        Seccion(etiquetaDesafioFinde(idiomaMostrado)) {
             Column(Modifier.anclaTour("tour-desafio-consigna"), verticalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas)) {
             // Lo primero que se lee: la tarea oral. La consigna es PROSA de dos a cuatro renglones, no un titular:
             // tamano de cuerpo (bodyLarge) con peso medio, sin negrita. La jerarquia la da la posicion, el aire
             // alrededor y el color pleno (onSurface) contra el onSurfaceVariant de la linea de encuadre que la precede.
             Text(
-                textoRetoConsignaLinea(idiomaInterfaz, oralMinRedondeado(ficha.evidencia.oralMin)),
+                textoRetoConsignaLinea(idiomaMostrado, oralMinRedondeado(ficha.evidencia.oralMin)),
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
@@ -580,12 +590,12 @@ private fun RetoFinDeSemana(ficha: Ficha, idiomaInterfaz: Idioma, consigna: Anno
                 modifier = Modifier.padding(vertical = 6.dp),
             )
             }
-            FilaDato(etiquetaBibliotecaTema(idiomaInterfaz), tema)
-            FilaDato(etiquetaRetoHabilidad(idiomaInterfaz), habilidad)
+            FilaDato(etiquetaBibliotecaTema(idiomaMostrado), tema)
+            FilaDato(etiquetaRetoHabilidad(idiomaMostrado), habilidad)
         }
-        Seccion(etiquetaRetoCondiciones(idiomaInterfaz)) {
+        Seccion(etiquetaRetoCondiciones(idiomaMostrado)) {
             val iconos = iconosReto(ficha.nivel)
-            reglasReto(idiomaInterfaz, ficha.nivel, oralMinRedondeado(ficha.evidencia.oralMin)).forEachIndexed { i, regla ->
+            reglasReto(idiomaMostrado, ficha.nivel, oralMinRedondeado(ficha.evidencia.oralMin)).forEachIndexed { i, regla ->
                 Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(espaciadoActual().entreVinietas * 3)) {
                     Icon(iconos.getOrElse(i) { iconos.last() }, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
                     Text(regla, style = MaterialTheme.typography.bodyMedium)
@@ -595,9 +605,13 @@ private fun RetoFinDeSemana(ficha: Ficha, idiomaInterfaz: Idioma, consigna: Anno
         // Las mismas expresiones que el prompt de voz (expresionesDeLaFicha), en el idioma que se aprende.
         val frases = expresionesDeLaFicha(ficha, MAX_FRASES_RETO)
         if (frases.isNotEmpty()) {
-            Seccion(etiquetaRetoFrasesTitulo(idiomaInterfaz)) {
-                Text(textoRetoFrasesAyuda(idiomaInterfaz), style = MaterialTheme.typography.bodyMedium)
-                frases.forEach { Vinieta(it) }
+            Seccion(etiquetaRetoFrasesTitulo(idiomaMostrado)) {
+                Text(textoRetoFrasesAyuda(idiomaMostrado), style = MaterialTheme.typography.bodyMedium)
+                // Las frases son SIEMPRE del idioma que se aprende (las mismas del prompt de voz). Cuando lo mostrado es otro idioma
+                // van entre « » como texto ajeno. Se envuelve la frase entera: `angulares` solo marca las *citas* internas, y estas
+                // frases no traen ninguna; como ya va entera entre « », no se le pasa para no anidar.
+                val ajeno = idiomaMostrado != idiomaAprendido
+                frases.forEach { Vinieta(if (ajeno) "«$it»" else it) }
             }
         }
     }

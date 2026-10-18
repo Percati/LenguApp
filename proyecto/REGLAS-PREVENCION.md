@@ -31,7 +31,11 @@ idioma (español, francés, italiano, portugués) se recorre la sección 3.
 | Nombres de topic y de categoría en Biblioteca y Guardados | Idioma de app |
 | Planilla del profesor (todo, incluido el nombre del topic) | Idioma que se aprende |
 | Prompt de corrección y prompt de voz | Idioma que se aprende |
+| Desafío del fin de semana: rótulos, condiciones, tema, habilidad y consigna | Idioma mostrado de la ficha: el que se aprende; el de app solo con el switch de A2/B1 activo |
+| Desafío del fin de semana: frases de arranque | Idioma que se aprende, siempre; entre « » cuando lo mostrado es otro idioma |
 | Fragmento en otro idioma dentro de un texto | Entre « » |
+
+**Cambio de la tabla (Ronda T, 18-oct-2026): la superficie «desafío».** Hasta la Ronda S el andamiaje del desafío (rótulo, línea de encuadre, tema, habilidad, condiciones, título y ayuda de las frases) salía en el idioma de app, mientras la ficha normal pide sus títulos en el idioma mostrado: una incoherencia que notó Fer. El desafío es una superficie para practicar el idioma, así que pasó a seguir el idioma mostrado, igual que la ficha. No hacen falta cadenas nuevas (alemán e inglés ya son idiomas de la interfaz). El interruptor del desafío (arriba de la ficha) sigue siendo un control de la app, en idioma de app. Cubierto por `RetoFinDeSemanaTest`.
 
 ## 3. Antes de sumar un idioma
 
