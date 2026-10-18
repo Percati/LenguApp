@@ -14,6 +14,8 @@ import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
+import androidx.compose.foundation.layout.offset
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawing
 import androidx.compose.foundation.layout.windowInsetsPadding
@@ -52,12 +54,16 @@ import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.paneTitle
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import io.github.percati.lenguapp.modelo.Idioma
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withTimeoutOrNull
+import kotlin.math.roundToInt
 
 const val TAG_TOUR_TARJETA = "tour-tarjeta"
 const val TAG_TOUR_SIGUIENTE = "tour-siguiente"
@@ -102,6 +108,19 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
             listo = true
         }
     }
+
+    // Si el ancla desaparece con el paso ya mostrado (la pantalla cambio debajo), el paso se saltea con el mismo mecanismo de siempre. Un
+    // margen de ESPERA_ANCLA_MS evita saltear por una recomposicion que la saca y la vuelve a poner.
+    LaunchedEffect(tour, indice, listo) {
+        val ancla = paso.ancla ?: return@LaunchedEffect
+        if (!listo) return@LaunchedEffect
+        snapshotFlow { gestor.registro.rectDe(ancla) }.collectLatest { rect ->
+            if (rect == null) {
+                delay(ESPERA_ANCLA_MS)
+                gestor.saltearSinAncla()
+            }
+        }
+    }
     if (!listo) return
 
     val rect = paso.ancla?.let { gestor.registro.rectDe(it) }
@@ -115,7 +134,6 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
         modifier
             .fillMaxSize()
             .onSizeChanged { tamano = it }
-            .pointerInput(Unit) { detectTapGestures { } } // se come los toques: lo de abajo no se usa mientras dura el tour
             .testTag(TAG_TOUR_FOCO),
     ) {
         Box(
@@ -135,9 +153,24 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
                 },
         )
 
-        // La tarjeta va en la mitad opuesta al foco; sin foco, abajo.
         // Con el foco recortado a la pantalla; si el ancla no se cruza con ella, el paso se trata como uno sin foco pero con la tarjeta abajo.
         val foco = rect?.let { recortarAlRecuadro(it, tamano.width.toFloat(), tamano.height.toFloat()) }
+
+        // Los toques: el recuadro se los come, lo de abajo no se usa mientras dura el tour. Excepcion: en un paso `tocable` el elemento
+        // iluminado (el MISMO rectangulo recortado del agujero, sin su margen) los recibe, y el resto sigue bloqueado con cuatro franjas.
+        val hueco = if (paso.tocable) foco else null
+        if (hueco == null) {
+            Box(Modifier.fillMaxSize().pointerInput(Unit) { detectTapGestures { } })
+        } else {
+            val ancho = tamano.width.toFloat()
+            val alto = tamano.height.toFloat()
+            BloqueaToques(0f, 0f, ancho, hueco.top)
+            BloqueaToques(0f, hueco.bottom, ancho, alto)
+            BloqueaToques(0f, hueco.top, hueco.left, hueco.bottom)
+            BloqueaToques(hueco.right, hueco.top, ancho, hueco.bottom)
+        }
+
+        // La tarjeta va en la mitad opuesta al foco; sin foco, abajo.
         val enLaMitadDeArriba = foco != null && focoEnLaMitadDeArriba(foco, tamano.height.toFloat())
         Surface(
             modifier = Modifier
@@ -204,4 +237,17 @@ fun TutorialOverlay(gestor: GestorTours, idiomaInterfaz: Idioma, modifier: Modif
             }
         }
     }
+}
+
+/** Un rectangulo (en px del recuadro) que se come los toques. */
+@Composable
+private fun BloqueaToques(izquierda: Float, arriba: Float, derecha: Float, abajo: Float) {
+    if (derecha <= izquierda || abajo <= arriba) return
+    val densidad = LocalDensity.current
+    Box(
+        Modifier
+            .offset { IntOffset(izquierda.roundToInt(), arriba.roundToInt()) }
+            .size(with(densidad) { (derecha - izquierda).toDp() }, with(densidad) { (abajo - arriba).toDp() })
+            .pointerInput(Unit) { detectTapGestures { } },
+    )
 }

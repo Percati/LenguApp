@@ -3,6 +3,7 @@ package io.github.percati.lenguapp
 import androidx.activity.ComponentActivity
 import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
+import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithTag
@@ -30,6 +31,7 @@ import io.github.percati.lenguapp.ui.TAG_TOUR_SALTAR
 import io.github.percati.lenguapp.ui.TAG_TOUR_SIGUIENTE
 import io.github.percati.lenguapp.ui.TAG_TOUR_TARJETA
 import io.github.percati.lenguapp.ui.TAG_VER_BIENVENIDA
+import io.github.percati.lenguapp.ui.descripcionSeccion
 import io.github.percati.lenguapp.ui.etiquetaDesafioFinde
 import io.github.percati.lenguapp.ui.etiquetaTourPaso
 import io.github.percati.lenguapp.ui.textoTour
@@ -327,6 +329,54 @@ class TutorialPantallaTest {
         assertTrue("tour-desafio-consigna" in gestor.registro.ids())
         composeTestRule.runOnIdle { gestor.vistos = emptySet(); gestor.lanzar(Tour.DESAFIO) }
         asentar()
+        composeTestRule.onNodeWithText(etiquetaTourPaso(1, 2, Idioma.ES)).assertExists()
+        composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+        asentar()
+        composeTestRule.onNodeWithText(etiquetaTourPaso(2, 2, Idioma.ES)).assertExists()
+    }
+
+    // --- Ronda T, T1: el foco tocable sobre la app real ---
+
+    @Test
+    fun `en el paso del vocabulario el encabezado se puede tocar, la lista se abre, el foco sigue al encabezado y el tour no avanza`() {
+        mostrar(lunes, vistos = emptySet())
+        var seguridad = 0
+        while (gestor.pasoActual?.ancla != "tour-ficha-vocabulario" && seguridad++ < 10) {
+            composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
+            asentar()
+        }
+        assertEquals("tour-ficha-vocabulario", gestor.pasoActual?.ancla)
+        val indiceAntes = gestor.indice
+        val abiertasAntes = composeTestRule.onAllNodesWithContentDescription(descripcionSeccion(true, Idioma.ES)).fetchSemanticsNodes().size
+        val antes = gestor.registro.rectDe("tour-ficha-vocabulario")!!
+        composeTestRule.onNodeWithTag("tour-ficha-vocabulario").performClick()
+        asentar()
+        val abiertasDespues = composeTestRule.onAllNodesWithContentDescription(descripcionSeccion(true, Idioma.ES)).fetchSemanticsNodes().size
+        assertEquals("la lista se abrio", abiertasAntes + 1, abiertasDespues)
+        assertEquals("el tour sigue en el mismo paso", indiceAntes, gestor.indice)
+        val despues = gestor.registro.rectDe("tour-ficha-vocabulario")!!
+        // el foco sigue al encabezado (el ancla se vuelve a registrar donde esta ahora) y su alto no crecio con la lista
+        assertEquals(antes.height, despues.height, 1f)
+        composeTestRule.onNodeWithTag(TAG_TOUR_FOCO).assertExists()
+        composeTestRule.onNodeWithTag(TAG_TOUR_TARJETA).assertExists()
+        // lo que no es el encabezado sigue sin recibir toques: el boton de otra seccion no se abre
+        val ctrl = composeTestRule.onAllNodesWithContentDescription(descripcionSeccion(false, Idioma.ES))
+        if (ctrl.fetchSemanticsNodes().isNotEmpty()) {
+            ctrl[0].performClick()
+            asentar()
+            assertEquals(abiertasDespues, composeTestRule.onAllNodesWithContentDescription(descripcionSeccion(true, Idioma.ES)).fetchSemanticsNodes().size)
+        }
+    }
+
+    @Test
+    fun `el sabado el interruptor del desafio se puede encender desde su paso, y entonces aparece el segundo paso`() {
+        mostrar(sabado, vistos = setOf(Tour.FICHA))
+        composeTestRule.onNodeWithText(etiquetaTourPaso(1, 1, Idioma.ES)).assertExists()
+        assertFalse("tour-desafio-consigna" in gestor.registro.ids())
+        composeTestRule.onNodeWithTag("tour-desafio-interruptor").performClick()
+        asentar()
+        // el usuario lo encendio con su mano (el tour no lo hace por el): ahora la consigna existe y el contador la cuenta
+        assertTrue("tour-desafio-consigna" in gestor.registro.ids())
         composeTestRule.onNodeWithText(etiquetaTourPaso(1, 2, Idioma.ES)).assertExists()
         composeTestRule.onNodeWithTag(TAG_TOUR_SIGUIENTE).performClick()
         asentar()

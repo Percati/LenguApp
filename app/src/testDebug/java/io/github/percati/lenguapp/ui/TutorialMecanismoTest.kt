@@ -11,6 +11,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.layout.boundsInRoot
@@ -508,5 +509,82 @@ class TutorialMecanismoTest {
         println("MEDIDA-visor440-ancla150 arriba=${r.top - 100f} abajo=${100f + 440f - r.bottom}")
         assertTrue("arriba ${r.top - 100f}", r.top - 100f >= 95f)
         assertTrue("abajo ${100f + 440f - r.bottom}", 100f + 440f - r.bottom >= 95f)
+    }
+
+    // --- Ronda T, T1: el elemento iluminado se puede tocar (solo en los pasos `tocable`) ---
+
+    private var clicsAdentro = 0
+    private var clicsAfuera = 0
+    private var anclaVisible = mutableStateOf(true)
+
+    private fun montarConDosBotones(tocable: Boolean, pasos: List<PasoTour> = listOf(PasoTour("adentro", ClaveTexto.VELOCIDAD_AUDIO_TITULO, ClaveTexto.VELOCIDAD_AUDIO_AYUDA, tocable = tocable), paso(null))): GestorTours {
+        clicsAdentro = 0
+        clicsAfuera = 0
+        anclaVisible.value = true
+        val gestor = GestorTours(mapOf(Tour.FICHA to pasos))
+        composeTestRule.setContent {
+            CompositionLocalProvider(LocalGestorTours provides gestor) {
+                Box(Modifier.size(400.dp, 800.dp)) {
+                    Column {
+                        if (anclaVisible.value) Button(onClick = { clicsAdentro++ }, modifier = Modifier.anclaTour("adentro")) { Text("adentro") }
+                        Button(onClick = { clicsAfuera++ }) { Text("afuera") }
+                    }
+                    TutorialOverlay(gestor, Idioma.ES)
+                }
+            }
+        }
+        return gestor
+    }
+
+    @Test
+    fun `en un paso tocable el elemento iluminado recibe el toque y el resto de la pantalla no, y el tour no avanza`() {
+        val gestor = montarConDosBotones(tocable = true)
+        lanzar(gestor)
+        composeTestRule.onNodeWithText("Paso 1 de 2").assertExists()
+        composeTestRule.onNodeWithText("adentro").performClick()
+        composeTestRule.onNodeWithText("afuera").performClick()
+        composeTestRule.waitForIdle()
+        assertEquals("el toque en el foco llega", 1, clicsAdentro)
+        assertEquals("el toque fuera del foco no llega", 0, clicsAfuera)
+        composeTestRule.onNodeWithText("Paso 1 de 2").assertExists()
+        assertEquals("el tour no avanza solo", 0, gestor.indice)
+    }
+
+    @Test
+    fun `en un paso que no es tocable el elemento iluminado tampoco recibe toques`() {
+        val gestor = montarConDosBotones(tocable = false)
+        lanzar(gestor)
+        composeTestRule.onNodeWithText("adentro").performClick()
+        composeTestRule.onNodeWithText("afuera").performClick()
+        composeTestRule.waitForIdle()
+        assertEquals(0, clicsAdentro)
+        assertEquals(0, clicsAfuera)
+    }
+
+    @Test
+    fun `si el ancla de un paso tocable desaparece con el paso mostrado, el paso se saltea con el mecanismo de siempre`() {
+        val gestor = montarConDosBotones(tocable = true, pasos = listOf(
+            PasoTour("adentro", ClaveTexto.VELOCIDAD_AUDIO_TITULO, ClaveTexto.VELOCIDAD_AUDIO_AYUDA, tocable = true),
+            PasoTour("afuera-sin-ancla-registrada", ClaveTexto.VELOCIDAD_AUDIO_TITULO, ClaveTexto.VELOCIDAD_AUDIO_AYUDA),
+            paso(null),
+        ))
+        lanzar(gestor)
+        assertEquals(0, gestor.indice)
+        composeTestRule.runOnIdle { anclaVisible.value = false }
+        composeTestRule.waitForIdle()
+        pasarElTiempoDeEspera()
+        pasarElTiempoDeEspera()
+        // salteo el 1.o (se fue) y el 2.o (nunca tuvo ancla): queda el 3.o, sin ancla
+        assertEquals(2, gestor.indice)
+        composeTestRule.onNodeWithTag(TAG_TOUR_TARJETA).assertIsDisplayed()
+    }
+
+    @Test
+    fun `solo dos pasos del catalogo son tocables y ninguno es una ancla que navega`() {
+        val tocables = CATALOGO_TOURS.values.flatten().filter { it.tocable }.map { it.ancla }
+        assertEquals(listOf("tour-ficha-vocabulario", "tour-desafio-interruptor"), tocables)
+        val navegan = setOf("acerca-de", "ver-bienvenida", "tour-ajustes-idiomas")
+        assertTrue(tocables.none { it in navegan })
+        assertFalse("falso por omision", PasoTour("x", ClaveTexto.VELOCIDAD_AUDIO_TITULO, ClaveTexto.VELOCIDAD_AUDIO_AYUDA).tocable)
     }
 }

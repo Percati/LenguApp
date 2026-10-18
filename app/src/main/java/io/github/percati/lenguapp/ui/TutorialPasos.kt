@@ -16,7 +16,7 @@ val CATALOGO_TOURS: Map<Tour, List<PasoTour>> = mapOf(
         PasoTour("tour-ficha-traducir", ClaveTexto.TOUR_FICHA_2_T, ClaveTexto.TOUR_FICHA_2_C),
         PasoTour("tour-ficha-descripcion", ClaveTexto.TOUR_FICHA_3_T, ClaveTexto.TOUR_FICHA_3_C),
         PasoTour("tour-ficha-errores", ClaveTexto.TOUR_FICHA_4_T, ClaveTexto.TOUR_FICHA_4_C),
-        PasoTour("tour-ficha-vocabulario", ClaveTexto.TOUR_FICHA_5_T, ClaveTexto.TOUR_FICHA_5_C),
+        PasoTour("tour-ficha-vocabulario", ClaveTexto.TOUR_FICHA_5_T, ClaveTexto.TOUR_FICHA_5_C, tocable = true),
         PasoTour("tour-ficha-mision", ClaveTexto.TOUR_FICHA_6_T, ClaveTexto.TOUR_FICHA_6_C),
         PasoTour("tour-ficha-autochequeo", ClaveTexto.TOUR_FICHA_7_T, ClaveTexto.TOUR_FICHA_7_C),
         PasoTour("tour-ficha-prompt", ClaveTexto.TOUR_FICHA_8_T, ClaveTexto.TOUR_FICHA_8_C),
@@ -44,7 +44,7 @@ val CATALOGO_TOURS: Map<Tour, List<PasoTour>> = mapOf(
     Tour.DESAFIO to listOf(
         // El interruptor primero: la consigna solo existe con el interruptor ENCENDIDO y el tour no lo enciende (encenderlo seria la app
         // aceptando el desafio en lugar del usuario: regla dura 13). Con el interruptor apagado el paso 2 se saltea solo.
-        PasoTour("tour-desafio-interruptor", ClaveTexto.TOUR_DESAFIO_1_T, ClaveTexto.TOUR_DESAFIO_1_C),
+        PasoTour("tour-desafio-interruptor", ClaveTexto.TOUR_DESAFIO_1_T, ClaveTexto.TOUR_DESAFIO_1_C, tocable = true),
         PasoTour("tour-desafio-consigna", ClaveTexto.TOUR_DESAFIO_2_T, ClaveTexto.TOUR_DESAFIO_2_C),
     ),
 )

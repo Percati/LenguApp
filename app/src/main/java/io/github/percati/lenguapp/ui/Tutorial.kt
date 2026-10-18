@@ -40,6 +40,13 @@ data class PasoTour(
     val ancla: String?,
     val titulo: ClaveTexto,
     val cuerpo: ClaveTexto,
+    /**
+     * El elemento iluminado recibe los toques (Ronda T): el agujero los deja pasar y el resto de la pantalla sigue sin recibir nada.
+     * Falso por omision, y solo en los pasos cuyo ancla se explica mejor tocandola SIN salir de la pantalla (el encabezado del
+     * vocabulario, el interruptor del desafio). NUNCA en un ancla que navega a otra pantalla: el tour quedaria corriendo sobre una
+     * pantalla que no es la suya. El tour no avanza solo al tocar: sigue haciendo falta «Siguiente».
+     */
+    val tocable: Boolean = false,
 )
 
 /** Cuanto se espera, como maximo, a que la pantalla componga el ancla de un paso antes de saltearlo. */
