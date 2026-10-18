@@ -1,16 +1,16 @@
 package io.github.percati.lenguapp.presentacion
 
 import io.github.percati.lenguapp.modelo.Idioma
-import io.github.percati.lenguapp.modelo.Nivel
 import io.github.percati.lenguapp.modelo.TipoGuardado
 
 /**
  * Vista «Verbos» de la Biblioteca (Ronda H, corregida en la I): TODOS los items de `vocabulario` con
  * `claseVerbo` no vacio del idioma (contenido de «Verbos», FALTANTES 29/30), ya deduplicados por el
  * original (construirBiblioteca agrupa por idioma + tipo + texto: un verbo es UN item aunque este en varios
- * packs). El nivel NO es una dimension de la vista (decision de Fer): ni filtra ni se fija en el nivel de
- * Ajustes -- las familias de verbos separables viven repartidas entre niveles --; solo se muestra como dato
- * en la linea extra (el nivel mas bajo en que aparece). Un solo grupo de chips: la clase.
+ * packs). El nivel NO es una dimension de la vista (decision de Fer): ni filtra, ni se fija en el nivel de
+ * Ajustes, ni se muestra (Ronda T): no es una propiedad del verbo sino de nuestra cobertura -- el nivel mas bajo de los
+ * packs donde aparece --, la tabla maestra no lo tiene y los verbos de referencia que vendran no tendran ninguno. La linea
+ * extra lleva solo la clase (separabilidad del phrasal) y el regimen en aleman. Un solo grupo de chips: la clase.
  *
  * Ronda J (FALTANTES 37/38): la vista lista DOS clases de entrada juntas, por infinitivo y alfabeticamente:
  *  - el verbo propio (un item con `claseVerbo`; tiene traduccion y es marcable), y
@@ -67,17 +67,13 @@ data class EntradaVerbo(
     val clases: List<String>,
     val reccionNucleo: String?,
 ) {
-    /** El nivel mas bajo: el del verbo propio, o el de sus colocaciones si es un nucleo puro (dato, no filtro). */
-    val nivelMasBajo: Nivel?
-        get() = propio?.nivelMasBajo() ?: colocaciones.flatMap { it.niveles }.minOrNull()
-
     /** Las clases que son chip: conocidas y no `simple`. */
     fun clasesDeChip(): List<String> = clases.filter { it != CLASE_VERBO_SIMPLE && it in CLASES_VERBO_CONOCIDAS }
 
     /** Linea discreta de debajo de la entrada (ver [lineaExtraVerbo]). */
     fun lineaExtra(clasesElegidas: Set<String>, etiquetaDeClase: (String) -> String?): String {
         val reccion = propio?.vocabulario?.reccion?.trim()?.takeIf { it.isNotEmpty() } ?: reccionNucleo?.trim()?.takeIf { it.isNotEmpty() }
-        return lineaExtra(nivelMasBajo, reccion, clases, clasesElegidas, etiquetaDeClase)
+        return lineaExtra(reccion, clases, clasesElegidas, etiquetaDeClase)
     }
 }
 
@@ -113,9 +109,6 @@ fun List<ItemBiblioteca>.entradasVerbo(idioma: Idioma): List<EntradaVerbo> {
     return entradas.sortedBy { it.infinitivo.lowercase() }
 }
 
-/** El nivel mas bajo en que aparece el item (dato, no filtro). */
-fun ItemBiblioteca.nivelMasBajo(): Nivel? = niveles.minOrNull()
-
 /**
  * Cuantas entradas tiene cada clase de chip dentro de `entradas`, solo las que tienen al menos una (P3: nunca
  * un chip vacio). Un nucleo aporta su `claseNucleo`, igual que un verbo propio aporta su `claseVerbo`.
@@ -134,19 +127,19 @@ fun List<EntradaVerbo>.filtrarPorClases(elegidas: Set<String>): List<EntradaVerb
     if (elegidas.isEmpty()) this else filter { e -> e.clasesDeChip().any { it in elegidas } }
 
 /**
- * La linea discreta de debajo de un verbo (parametro `extra` de la fila): el nivel mas bajo en que aparece,
- * como dato (`A2`), seguido -- con « · » -- del regimen en aleman (`reccion`, p.ej. «von + Dat») cuando existe,
- * o en ingles de la separabilidad del phrasal verb, salvo que ya se desprenda de un chip elegido.
+ * La linea discreta de debajo de un verbo (parametro `extra` de la fila): el regimen en aleman (`reccion`, p.ej.
+ * «von + Dat») cuando existe, o en ingles la separabilidad del phrasal verb, salvo que ya se desprenda de un chip
+ * elegido. Sin nivel (Ronda T). Si no hay nada que decir es la cadena vacia y la fila no dibuja la linea.
  */
 fun ItemBiblioteca.lineaExtraVerbo(clasesElegidas: Set<String>, etiquetaDeClase: (String) -> String?): String =
-    lineaExtra(nivelMasBajo(), vocabulario?.reccion?.trim()?.takeIf { it.isNotEmpty() }, vocabulario?.claseVerbo.orEmpty(), clasesElegidas, etiquetaDeClase)
+    lineaExtra(vocabulario?.reccion?.trim()?.takeIf { it.isNotEmpty() }, vocabulario?.claseVerbo.orEmpty(), clasesElegidas, etiquetaDeClase)
 
-private fun lineaExtra(nivel: Nivel?, reccion: String?, clases: List<String>, clasesElegidas: Set<String>, etiquetaDeClase: (String) -> String?): String {
+private fun lineaExtra(reccion: String?, clases: List<String>, clasesElegidas: Set<String>, etiquetaDeClase: (String) -> String?): String {
     val detalle = reccion ?: run {
         val separabilidad = clases.firstOrNull { it == "phrasal-separable" || it == "phrasal-inseparable" }
         if (separabilidad == null || separabilidad in clasesElegidas) null else etiquetaDeClase(separabilidad)
     }
-    return listOfNotNull(nivel?.name, detalle).joinToString(" · ")
+    return detalle.orEmpty()
 }
 
 /**

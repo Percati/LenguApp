@@ -116,13 +116,12 @@ class NucleosVerbosPantallaTest {
     }
 
     @Test
-    fun `un nucleo aporta su clase al chip y la linea extra lleva el nivel mas bajo de sus colocaciones`() {
+    fun `un nucleo aporta su clase al chip, y su fila ya no lleva el nivel`() {
         val colocaciones = colocacionesDe("umstellen")
         mostrar(colocaciones)
         // umstellen es trennbar: un chip «Separable (1)» y su fila
         composeTestRule.onNodeWithText("Separable (1)").assertIsDisplayed()
-        val nivel = colocaciones.flatMap { it.niveles }.min().name
-        composeTestRule.onAllNodesWithText(nivel).onFirst().assertIsDisplayed()
+        for (nivel in io.github.percati.lenguapp.modelo.Nivel.entries) composeTestRule.onAllNodesWithText(nivel.name).assertCountEquals(0)
         composeTestRule.onNodeWithText("Separable (1)").performClick()
         composeTestRule.onNodeWithText("umstellen").assertIsDisplayed()
     }

@@ -419,7 +419,7 @@ private fun FilaEntradaVerbo(
     guardadas: Set<String>,
     onAlternar: (ItemBiblioteca) -> Unit,
 ) {
-    // La linea discreta: nivel mas bajo (dato, no filtro) + regimen en aleman o separabilidad en ingles.
+    // La linea discreta: regimen en aleman o separabilidad en ingles, sin nivel (Ronda T); sin nada que decir no se dibuja.
     val linea = entrada.lineaExtra(clasesElegidas) { etiquetaClaseVerbo(it, idiomaInterfaz) }.ifEmpty { null }
     val extra: (@Composable ColumnScope.() -> Unit)? = if (linea == null) null else ({
         Text(linea, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)

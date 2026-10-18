@@ -164,13 +164,12 @@ class NucleosVerbosTest {
     // --- linea extra ---
 
     @Test
-    fun `la linea extra de un nucleo puro lleva el nivel mas bajo de sus colocaciones y la reccionNucleo`() {
+    fun `la linea extra de un nucleo puro lleva solo la reccionNucleo, sin nivel`() {
         val entradas = items.entradasVerbo(Idioma.DE)
         val conReccion = entradas.first { it.propio == null && !it.reccionNucleo.isNullOrBlank() }
-        val bajo = conReccion.colocaciones.flatMap { it.niveles }.min().name
-        assertEquals("$bajo · ${conReccion.reccionNucleo!!.trim()}", conReccion.lineaExtra(emptySet()) { it })
+        assertEquals(conReccion.reccionNucleo!!.trim(), conReccion.lineaExtra(emptySet()) { it })
         val sinReccion = entradas.first { it.propio == null && it.reccionNucleo.isNullOrBlank() }
-        assertEquals(sinReccion.colocaciones.flatMap { it.niveles }.min().name, sinReccion.lineaExtra(emptySet()) { it })
+        assertEquals("", sinReccion.lineaExtra(emptySet()) { it })
     }
 
     @Test
@@ -183,9 +182,8 @@ class NucleosVerbosTest {
     @Test
     fun `en ingles la linea extra de un nucleo puro dice la separabilidad salvo que el chip ya la diga`() {
         val sep = items.entradasVerbo(Idioma.EN).first { it.propio == null && "phrasal-separable" in it.clases }
-        val n = sep.colocaciones.flatMap { it.niveles }.min().name
-        assertEquals("$n · phrasal-separable", sep.lineaExtra(emptySet()) { it })
-        assertEquals(n, sep.lineaExtra(setOf("phrasal-separable")) { it })
+        assertEquals("phrasal-separable", sep.lineaExtra(emptySet()) { it })
+        assertEquals("", sep.lineaExtra(setOf("phrasal-separable")) { it })
     }
 
     // --- busqueda ---

@@ -140,35 +140,28 @@ class VerbosTest {
     // --- la linea discreta de debajo del verbo ---
 
     @Test
-    fun `la linea extra lleva el nivel mas bajo como dato, y en aleman el regimen despues`() {
+    fun `la linea extra ya no lleva el nivel, solo en aleman el regimen`() {
         val conReccion = items.verbosDe(Idioma.DE).first { !it.vocabulario!!.reccion.isNullOrBlank() }
-        val bajo = conReccion.niveles.min().name
-        assertEquals("$bajo · ${conReccion.vocabulario!!.reccion!!.trim()}", conReccion.lineaExtraVerbo(emptySet()) { it })
+        assertEquals(conReccion.vocabulario!!.reccion!!.trim(), conReccion.lineaExtraVerbo(emptySet()) { it })
         val sinReccion = items.verbosDe(Idioma.DE).first { it.vocabulario!!.reccion.isNullOrBlank() }
-        assertEquals("sin regimen: solo el nivel", sinReccion.niveles.min().name, sinReccion.lineaExtraVerbo(emptySet()) { it })
+        assertEquals("sin regimen no hay linea", "", sinReccion.lineaExtraVerbo(emptySet()) { it })
+        // nunca un nivel (A1..C2), ni solo ni acompanando
+        for (verbo in items.verbosDe(Idioma.DE).take(300)) {
+            val linea = verbo.lineaExtraVerbo(emptySet()) { it }
+            assertTrue("«$linea» lleva un nivel", Nivel.entries.none { n -> linea == n.name || linea.startsWith(n.name + " ·") })
+        }
     }
 
     @Test
-    fun `el nivel de la linea extra es el mas bajo en que aparece el verbo`() {
-        val enVarios = items.verbosDe(Idioma.DE).first { it.niveles.size >= 2 }
-        assertEquals(enVarios.niveles.minOf { it.ordinal }, enVarios.nivelMasBajo()!!.ordinal)
-        assertTrue(enVarios.lineaExtraVerbo(emptySet()) { it }.startsWith(enVarios.nivelMasBajo()!!.name))
-        // nunca el nivel de Ajustes ni el primero que se cargo: el minimo del conjunto
-        val sintetico = enVarios.copy(niveles = setOf(Nivel.C2, Nivel.B1, Nivel.C1))
-        assertEquals(Nivel.B1, sintetico.nivelMasBajo())
-    }
-
-    @Test
-    fun `en ingles la linea extra es el nivel y la separabilidad, salvo que ya se desprenda del chip elegido`() {
+    fun `en ingles la linea extra es la separabilidad, salvo que ya se desprenda del chip elegido, y si no hay nada queda vacia`() {
         val sep = items.verbosDe(Idioma.EN).first { "phrasal-separable" in it.vocabulario!!.claseVerbo }
-        val n = sep.nivelMasBajo()!!.name
-        assertEquals("$n · phrasal-separable", sep.lineaExtraVerbo(emptySet()) { it })
-        assertEquals("$n · phrasal-separable", sep.lineaExtraVerbo(setOf("verbo-preposicion")) { it })
-        assertEquals("el chip elegido ya lo dice: queda el nivel", n, sep.lineaExtraVerbo(setOf("phrasal-separable")) { it })
+        assertEquals("phrasal-separable", sep.lineaExtraVerbo(emptySet()) { it })
+        assertEquals("phrasal-separable", sep.lineaExtraVerbo(setOf("verbo-preposicion")) { it })
+        assertEquals("el chip elegido ya lo dice: no queda nada", "", sep.lineaExtraVerbo(setOf("phrasal-separable")) { it })
         val prep = items.verbosDe(Idioma.EN).first { it.vocabulario!!.claseVerbo == listOf("verbo-preposicion") }
-        assertEquals("verbo + preposicion no es separabilidad", prep.nivelMasBajo()!!.name, prep.lineaExtraVerbo(emptySet()) { it })
+        assertEquals("verbo + preposicion no es separabilidad", "", prep.lineaExtraVerbo(emptySet()) { it })
         val simple = items.verbosDe(Idioma.EN).first { it.vocabulario!!.claseVerbo == listOf("simple") }
-        assertEquals(simple.nivelMasBajo()!!.name, simple.lineaExtraVerbo(emptySet()) { it })
+        assertEquals("", simple.lineaExtraVerbo(emptySet()) { it })
     }
 
     @Test

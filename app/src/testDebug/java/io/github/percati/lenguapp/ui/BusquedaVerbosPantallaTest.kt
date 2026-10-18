@@ -132,4 +132,19 @@ class BusquedaVerbosPantallaTest {
         composeTestRule.onAllNodesWithText("arbeiten").assertCountEquals(0)
         composeTestRule.onAllNodesWithText(mensajeVerbosSinResultados(Idioma.ES)).assertCountEquals(0)
     }
+
+    // --- Ronda T, tarea 6: la vista Verbos ya no muestra el nivel ---
+
+    @Test
+    fun `la vista Verbos no muestra el nivel, solo el regimen, y sin regimen no dibuja la linea`() {
+        val conRegimen = verbo("warten", listOf("verbo-preposicion")).let { it.copy(vocabulario = it.vocabulario!!.copy(reccion = "auf + Akk")) }
+        mostrar(listOf(conRegimen, verbo("arbeiten", listOf("simple"))))
+        composeTestRule.onNodeWithText("auf + Akk").assertExists()
+        for (n in Nivel.entries) {
+            composeTestRule.onAllNodesWithText(n.name).assertCountEquals(0)
+            composeTestRule.onAllNodesWithText("${n.name} · auf + Akk").assertCountEquals(0)
+        }
+        // el verbo sin regimen ni clase de chip se ve igual, sin linea extra
+        composeTestRule.onNodeWithText("arbeiten").assertExists()
+    }
 }

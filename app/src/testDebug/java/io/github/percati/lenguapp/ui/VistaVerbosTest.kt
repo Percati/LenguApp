@@ -124,12 +124,13 @@ class VistaVerbosTest {
     }
 
     @Test
-    fun `la linea discreta lleva el nivel y, en aleman, el regimen, y sin regimen solo el nivel`() {
+    fun `la linea discreta lleva en aleman el regimen, sin nivel, y sin regimen no se dibuja`() {
         mostrar(lista)
-        composeTestRule.onNodeWithText("B2 · über + Akk").assertExists()
+        composeTestRule.onNodeWithText("über + Akk").assertExists()
         composeTestRule.onAllNodes(hasText("+ Dat", substring = true)).assertCountEquals(0)
-        // los verbos sin regimen dibujan solo el nivel
-        composeTestRule.onAllNodesWithText("B2").assertCountEquals(lista.count { it.vocabulario?.claseVerbo?.isNotEmpty() == true } - 1)
+        // el nivel no se dibuja nunca, ni solo (verbos sin regimen) ni junto al regimen
+        composeTestRule.onAllNodesWithText("B2").assertCountEquals(0)
+        composeTestRule.onAllNodes(hasText("B2 ·", substring = true)).assertCountEquals(0)
     }
 
     @Test
@@ -139,13 +140,13 @@ class VistaVerbosTest {
             verbo("to get off", listOf("phrasal-inseparable"), idioma = Idioma.EN, nivel = Nivel.B1),
         )
         mostrar(en, aprendidos = mapOf(Idioma.EN to Nivel.B1))
-        // sin chip elegido: cada fila dice su nivel y su clase (ademas de estar en el chip, con su cuenta)
-        composeTestRule.onNodeWithText("B1 · Phrasal separable").assertExists()
-        composeTestRule.onNodeWithText("B1 · Phrasal inseparable").assertExists()
+        // sin chip elegido: cada fila dice su clase, sin nivel (ademas de estar en el chip, con su cuenta)
+        composeTestRule.onNodeWithText("Phrasal separable").assertExists()
+        composeTestRule.onNodeWithText("Phrasal inseparable").assertExists()
         composeTestRule.onNodeWithText("Phrasal separable (1)").performClick()
-        // con el chip: la fila ya no repite la clase (queda el nivel y el chip)
+        // con el chip: la fila ya no repite la clase (queda solo el chip), y nunca el nivel
         composeTestRule.onAllNodes(hasText("Phrasal separable", substring = true)).assertCountEquals(1)
-        composeTestRule.onNodeWithText("B1").assertExists()
+        composeTestRule.onAllNodesWithText("B1").assertCountEquals(0)
     }
 
     @Test
@@ -165,28 +166,29 @@ class VistaVerbosTest {
     }
 
     @Test
-    fun `el nivel de Ajustes no recorta, se ven los verbos de todos los niveles, cada uno con su nivel`() {
+    fun `el nivel de Ajustes no recorta, se ven los verbos de todos los niveles, sin mostrar ninguno`() {
         val otroNivel = verbo("hochladen", listOf("trennbar"), nivel = Nivel.C1)
         val a2 = verbo("anmelden", listOf("trennbar"), nivel = Nivel.A2)
         mostrar(lista + otroNivel + a2) // Ajustes: DE en B2
         composeTestRule.onNodeWithText("hochladen").assertExists()
         composeTestRule.onNodeWithText("anmelden").assertExists()
-        composeTestRule.onNodeWithText("C1").assertExists()
-        composeTestRule.onNodeWithText("A2").assertExists()
+        // Ronda T: el nivel no se muestra (no es una propiedad del verbo sino de nuestra cobertura)
+        composeTestRule.onAllNodesWithText("C1").assertCountEquals(0)
+        composeTestRule.onAllNodesWithText("A2").assertCountEquals(0)
         // y la vista ya no encabeza con un "Nivel B2"
         composeTestRule.onAllNodes(hasText("Nivel B2", substring = true)).assertCountEquals(0)
     }
 
     @Test
     fun `no hay filtro de nivel, ni chips ni selector de niveles en la vista`() {
-        // con verbos de varios niveles: la linea extra SI muestra el nivel (dato), pero ningun control lo ofrece como filtro
+        // con verbos de varios niveles: ni la linea extra muestra el nivel (Ronda T) ni ningun control lo ofrece como filtro
         val variados = listOf(
             verbo("anmelden", listOf("trennbar"), nivel = Nivel.A2), verbo("aufmachen", listOf("trennbar"), nivel = Nivel.B1),
             verbo("hochladen", listOf("trennbar"), nivel = Nivel.C1), verbo("beschweren", listOf("reflexivo"), nivel = Nivel.C2),
         )
         mostrar(variados)
         for (n in listOf("A2", "B1", "C1", "C2")) {
-            composeTestRule.onNodeWithText(n).assertExists() // como dato de la fila
+            composeTestRule.onAllNodesWithText(n).assertCountEquals(0) // ni como dato de la fila
             composeTestRule.onAllNodes(hasText(n) and hasClickAction()).assertCountEquals(0) // nunca como control (chip)
         }
         // los unicos controles de filtro son los de clase: el grupo de chips del lexico (niveles) no se compone aca
