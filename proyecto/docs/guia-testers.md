@@ -1,4 +1,4 @@
-# LenguApp · guía rápida para testers (versión 0.4.3)
+# LenguApp · guía rápida para testers (versión 0.4.4)
 
 **Qué es.** Una app para practicar un idioma cada semana (alemán o inglés, de A2 a C2). **No es un curso:** sirve para fijar lo que ya aprendiste en uno. Funciona sin internet, sin cuenta y sin recopilar datos. Está en prueba y tu opinión ayuda mucho.
 
@@ -14,7 +14,7 @@
 | Bienvenida y tutorial | La primera vez eliges idioma y nivel; cada sección muestra un recorrido que oscurece todo menos lo que explica. En dos pasos lo iluminado se puede tocar, y el recorrido no avanza solo. «Saltar» los saltea. Se repite desde Ajustes. |
 | Guardados e importar/exportar | Guardados muestra lo mismo que la Biblioteca. Puedes exportar a Anki o hacer una copia de seguridad, e importarla después; eliges tú el archivo en ese momento. |
 | Habilidades en la Biblioteca | Lista de solo lectura: toca una habilidad para abrir su semana. Se ordena por título o por semana, y solo se ven las semanas que ya llegaron (un año anterior, completo). |
-| Verbos en la Biblioteca | Lista los verbos del idioma, de todos los niveles; debajo de cada uno, en alemán, el régimen (von + Dat) y, en inglés, si el phrasal verb es separable. Salen también las frases donde se usan (die Frage stellen); si un verbo solo existe dentro de frases (stellen), no tiene estrella. Se filtra por clase, y la búsqueda de arriba mira también traducciones y frases: «Frage» encuentra stellen. |
+| Verbos en la Biblioteca | Lista los verbos del idioma, de todos los niveles; debajo de cada uno, en alemán, el régimen (von + Dat) y, en inglés, si el phrasal verb es separable. Incluye verbos de consulta (A1–A2) que no salen en ninguna ficha: con traducción, sin estrella. Salen también las frases donde se usan (die Frage stellen); si un verbo solo existe dentro de frases (stellen), no tiene estrella. Se filtra por clase, y la búsqueda de arriba mira también traducciones y frases: «Frage» encuentra stellen. |
 | No hay estadísticas, rachas ni progreso | Decisión de diseño. La app solo guarda tus estrellas (Guardados) y tus ajustes. |
 | El prompt para conversar por voz con una IA existe solo en inglés B2 y C1 | Es una prueba. El prompt para que una IA corrija tu texto sí está en todos los niveles. |
 | Los prompts para la IA están siempre en el idioma que aprendes | Así la IA responde en ese idioma, aunque la app esté en el tuyo. |
