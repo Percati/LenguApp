@@ -79,6 +79,7 @@ import io.github.percati.lenguapp.semana.ResultadoSemana
 import io.github.percati.lenguapp.semana.SemanaIso
 import io.github.percati.lenguapp.semana.idiomasConContenido
 import io.github.percati.lenguapp.semana.nivelesConContenido
+import io.github.percati.lenguapp.semana.anioEnCursoDe
 import io.github.percati.lenguapp.semana.semanaIsoDe
 import io.github.percati.lenguapp.ui.AjustesScreen
 import io.github.percati.lenguapp.ui.ContenidoSemanalScreen
@@ -256,8 +257,9 @@ internal fun LenguAppApp(
     // reflejar la fecha inicial real, no una fecha distinta escondida
     // detras de un resolutor con trampa).
     fechaInicial: LocalDate = LocalDate.now(),
-    // El anio en curso (para el indice de habilidades: una edicion anterior se consulta entera, la actual solo hasta la semana vista).
-    anioEnCurso: Int = semanaIsoDe(LocalDate.now()).anio,
+    // El anio en curso (para el indice de habilidades: una edicion anterior se consulta entera, la actual solo hasta la semana vista). Sale de
+    // `fechaInicial`, no de un segundo `LocalDate.now()`: un solo punto de lectura de la fecha, y los tests lo fijan sin tocar el reloj.
+    anioEnCurso: Int = anioEnCursoDe(fechaInicial),
     // Guardados (feature 3): todo el contenido embebido, para poder buscar
     // la ficha de origen de un item guardado por skillId sin pasar por el
     // calendario. `repositorioGuardados` en null desactiva la feature entera

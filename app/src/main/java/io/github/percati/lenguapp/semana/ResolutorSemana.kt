@@ -32,6 +32,12 @@ fun semanaIsoDe(fecha: LocalDate): SemanaIso = SemanaIso(
 )
 
 /**
+ * El anio ISO "en curso" del indice de habilidades: el de la fecha con la que arranca la app. ISO, no calendario: el 1-ene-2027 es la
+ * semana 53 de 2026, y el indice usa anios ISO (como los calendarios).
+ */
+fun anioEnCursoDe(fechaInicial: LocalDate): Int = semanaIsoDe(fechaInicial).anio
+
+/**
  * Que se encontro al buscar el calendario embebido de (anioIso, idioma,
  * nivel). Lo arma CargadorCalendario listando `assets/calendario/`: si el
  * archivo exacto no esta pero hay otros del mismo anio, la celda (idioma,

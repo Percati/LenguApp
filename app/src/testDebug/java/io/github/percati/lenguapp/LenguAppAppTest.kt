@@ -437,8 +437,7 @@ class LenguAppAppTest {
                 idiomasConContenido = setOf(Idioma.DE),
                 nivelesConContenido = nivelesDePrueba,
                 resolver = ::resolverDePrueba,
-                fechaInicial = LocalDate.of(2026, 9, 7),
-                anioEnCurso = 2026,
+                fechaInicial = LocalDate.of(2026, 9, 7), // el anio en curso (2026) sale de aca: sin `anioEnCurso` explicito
                 onGuardarAjustes = {},
                 contenidoTodos = contenido.values.toList(),
                 calendarioDe = { anio, idioma, nivel ->
