@@ -136,22 +136,31 @@ internal fun claveFusionVerbo(infinitivo: String, idioma: Idioma): String {
     return if (idioma == Idioma.EN && t.startsWith("to ")) t.removePrefix("to ").trim() else t
 }
 
-/** Objeto de relleno al final de un phrasal verb en los items de las fichas («to deal with something»): la tabla maestra lo anota como `base` sin el. */
+/**
+ * Objeto de relleno al final de un phrasal verb en los items de las fichas («to deal with something»): la tabla maestra lo anota como
+ * `base` sin el, y `base` no viaja a la app.
+ *
+ * HOY NO TIENE NINGUN CASO VIVO. Se agrego para `to deal with` (referencia) contra `to deal with something` (ficha), y esa referencia salio
+ * de la tabla. Se queda a proposito: es un tercer intento detras de dos claves que aciertan (item y base de la referencia), no estorba, y
+ * cuando entren los verbos de B1 va a volver a haber referencias cuya `base` difiera del item de la ficha. Si la buscas en los datos y no
+ * la encontras, es esto. Su mecanismo lo ejerce `VerbosReferenciaTest` con datos armados a mano, no con un verbo real.
+ */
 private val OBJETO_FINAL_EN = Regex("""\s+(something|someone|somebody|oneself|yourself)$""")
 
 /**
  * Mete la tercera fuente (los verbos de referencia) en la MISMA fusion por infinitivo: una referencia cuyo infinitivo ya es una entrada
  * (verbo propio o nucleo) se cuelga de ella (sin cambiar su propio, sus colocaciones ni su clase); una que no coincide con ninguna es una
  * entrada nueva, de solo referencia. Sin esto, 124 verbos (aufstehen, kommen, machen, take, make...) saldrian en dos filas: una con glosa y
- * sin colocaciones, otra con colocaciones y sin glosa. Dos desacuerdos de clase entre fuentes estan anotados a proposito (el nucleo `hoeren`
- * contra su referencia, `deal with` contra la suya): aca no se resuelven ni se vigilan, la clase del propio/nucleo manda y punto.
+ * sin colocaciones, otra con colocaciones y sin glosa. Los desacuerdos de clase entre fuentes estan anotados a proposito en la tabla (hoy el
+ * del nucleo `hören` contra su referencia): aca no se resuelven ni se vigilan, la clase del propio/nucleo manda y punto.
  */
 private fun fusionarReferencia(entradas: List<EntradaVerbo>, referencia: List<VerboReferencia>, idioma: Idioma): List<EntradaVerbo> {
     if (referencia.isEmpty()) return entradas
     val resultado = ArrayList<EntradaVerbo>(entradas.size + referencia.size)
     val posicion = HashMap<String, Int>(entradas.size * 2)
-    // Segunda clave, solo en ingles y solo si la primera no encuentra nada: el item de la ficha «to deal with something» es la anotacion de
-    // la referencia «to deal with» (la tabla los une por `base`, que en los assets no viaja). Una entrada que ya es «deal with» manda.
+    // Segunda clave, solo en ingles y solo si las otras no aciertan: un item de la ficha «to X with something» es la anotacion de la
+    // referencia «to X with» (la tabla los une por `base`, que en los assets no viaja). Una entrada que ya es «X with» manda. Sin casos
+    // vivos hoy (ver OBJETO_FINAL_EN).
     val posicionSinObjeto = HashMap<String, Int>()
     for (e in entradas) {
         val clave = claveFusionVerbo(e.infinitivo, idioma)
