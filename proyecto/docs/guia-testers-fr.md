@@ -1,4 +1,4 @@
-# LenguApp · guide rapide pour les testeurs (version 0.4.3)
+# LenguApp · guide rapide pour les testeurs (version 0.4.4)
 
 **Ce que c'est.** Une appli pour pratiquer une langue une semaine à la fois (allemand ou anglais, de A2 à C2). **Ce n'est pas un cours :** elle sert à consolider ce que tu as déjà appris dans un cours. Elle fonctionne sans internet, sans compte et sans collecte de données. Elle est en test, et ton avis aide beaucoup.
 
@@ -14,7 +14,7 @@
 | Bienvenue et tutoriel | La première fois, tu choisis la langue et le niveau ; ensuite, chaque section montre un parcours qui assombrit tout sauf ce qu'il explique. Dans deux étapes l'élément éclairé est touchable. « Passer » les passe tous ; tout se revoit depuis Réglages. |
 | Favoris, import et export | Même contenu que la Bibliothèque. Export vers Anki ou sauvegarde réimportable ; c'est toi qui choisis le fichier. |
 | Compétences dans la Bibliothèque | Une liste en lecture seule : touche une compétence pour ouvrir sa semaine. Triée par titre ou par semaine ; seules les semaines déjà arrivées (une année précédente, en entier). |
-| Verbes dans la Bibliothèque | Tous les verbes de la langue, tous niveaux ; dessous, le régime (von + Dat). Les expressions où ils s'emploient apparaissent aussi (die Frage stellen) ; un verbe qui n'existe qu'en expression (stellen) n'a pas d'étoile. Filtre par classe ; la recherche trouve « Frage » → stellen. |
+| Verbes dans la Bibliothèque | Tous les verbes de la langue, tous niveaux ; dessous, le régime (von + Dat). S'y ajoutent des verbes de consultation (A1–A2) absents de toute fiche : avec traduction, sans étoile. Les expressions où ils s'emploient apparaissent aussi (die Frage stellen) ; un verbe qui n'existe qu'en expression (stellen) n'a pas d'étoile. Filtre par classe ; la recherche trouve « Frage » → stellen. |
 | Pas de statistiques, de séries ni de progression | C'est un choix. L'appli ne garde que tes étoiles (Favoris) et tes réglages. |
 | L'invite pour parler avec une IA n'existe qu'en anglais B2 et C1 | C'est un essai. L'invite pour qu'une IA corrige ton texte existe à tous les niveaux. |
 | Les invites pour l'IA sont toujours dans la langue que tu apprends | Ainsi l'IA répond dans cette langue, même si l'appli est dans la tienne. |

@@ -2098,3 +2098,67 @@ Tres commits (las tareas 1 y 2 van juntas, como pedía el prompt; la 3 y la 4 su
 **Lo que no pude comprobar sin un teléfono (y el prompt lo pedía):** cómo se lee una glosa de referencia al lado de una fila con colocaciones; si la falta de estrella en un verbo de consulta se entiende o parece un error (la fila de núcleo ya no tenía estrella, pero ahí las colocaciones de abajo sí); y si 375 entradas más vuelven incómoda la lista alfabética (el desplazamiento y la búsqueda con hasta ~820 filas (inglés) en una sola `LazyColumn`: la búsqueda se calcula una vez por lista, pero no medí la fluidez).
 
 **Decisiones donde el prompt no cerraba:** (1) la segunda clave de `deal with` (arriba); (2) los 7 duplicados de inglés quedan como estaban; (3) la referencia nueva con el mismo infinitivo que un propio sin traducción propia **no** rellena la fila del propio (la fila del propio la dibuja `FilaBiblioteca`, que no sabe de la referencia; el prompt dice que la de referencia rellena «cuando no hay propio»); (4) el `base` de la referencia también se prueba como clave (sin diferencia hoy en los datos).
+
+## 75. La Ronda U y el parche de Verbos se rompen entre sí; icono y splash medidos (Overview, 19-oct-2026)
+
+### El build está rojo en `main`, y ninguna de las dos conversaciones hizo nada mal
+
+`778c577e` (Ronda U) y `62047119` (Verbos) se escribieron sobre la misma base, sin verse. Code corrió su suite sobre `778c577e` —1319 tests en debug, 0 fallas— y Verbos quitó después la entrada de referencia `to deal with`, que es exactamente lo que tres de esos tests fijan. **Verbos tenía prohibido tocar `app/` por el prompt 43 y Code no podía saber que la entrada iba a desaparecer.** El riesgo que se venía avisando desde la Ronda S (dos conversaciones sobre el mismo clon) se materializó acá, y no por descuido de nadie.
+
+En `app/src/test/java/io/github/percati/lenguapp/presentacion/VerbosReferenciaTest.kt`:
+
+| línea | qué fija | estado |
+|---|---|---|
+| 86 | `assertEquals(339, referencia(Idioma.EN).size)` | **rojo** — ahora son 338 |
+| 135 | `deal with se fusiona con su anotacion…`, que hace `.first { it.item == "to deal with" }` | **rojo** — `NoSuchElementException` |
+| 233 | `ESPERADO_EN = Esperado(559, 79, 819)` | **rojo en `colisiones`** — ahora son 78 |
+| 222 | `los dos desacuerdos de clase…`, que busca `single { contains("deal with") }` | pasa, pero quedó **vacío**: ya no hay referencia con la que desacordar |
+
+**El total de la vista no se mueve:** quitar una entrada que además fusionaba resta una referencia y una colisión a la vez, así que inglés sigue en 819 (559 + 338 − 78) y alemán en 585. Lo único que cambió son los dos números intermedios.
+
+**Y hay una consecuencia de diseño:** `OBJETO_FINAL_EN` (la segunda clave de fusión que quita `something`/`someone` del final) se agregó en la Ronda U **para un solo caso**, `to deal with`, y Code lo dijo así: «la probé contra los 339 verbos de referencia y solo `to deal with` coincide». Ese caso ya no existe, así que hoy es una rama sin ningún caso vivo. No es dañina —es un fallback detrás de dos claves que sí aciertan— pero no puede quedar sin explicación ni sin un test que la ejerza: en B1 va a volver a haber `base` que difieran del ítem de la ficha.
+
+### Icono y splash: lo que se puede hacer y lo que no
+
+Medido sobre los tres `.svg` que mandó Fer, contra la especificación de Android 12.
+
+**El splash del sistema no admite una imagen de fondo.** Solo un **color sólido** más un icono centrado. Los dos renders a página completa que mandó Fer no son reproducibles como splash: lo único que llega es la L recortada. Los `.svg` ya vienen en formato de icono (288×288), así que eso está bien resuelto de origen.
+
+**El icono del splash se recorta a un círculo**, no a un cuadrado: lienzo 288 dp, arte dentro de un círculo de 192 dp de diámetro (radio 96 desde el centro). Medido el radio máximo del trazo real, caps incluidos:
+
+| | radio máximo | margen |
+|---|---|---|
+| `splash_1.svg` | **87.5** | 8.5 dp |
+| `splash_2.svg` | **94.4** | 1.6 dp |
+
+**`splash_2` no sirve como icono de splash, y no es cuestión de gusto.** Simulado el recorte circular: los dos pliegues pálidos (`#DEE7EC`, `#EDE6D9`) son el **fondo** del render blanco continuado, no parte del glifo, así que flotando sobre un color sólido se leen como dos cuchillas blancas atravesando la L, y los dos trazos exteriores quedan rebanados en el borde de la máscara por esos 1.6 dp. La L se vuelve ilegible. Funciona como composición a página completa, que es justamente lo que el splash no puede hacer.
+
+**La paleta está diseñada para fondo oscuro.** Contraste del glifo contra los dos fondos de `fondo_papel`:
+
+| color | qué es | contra `#F7F6F2` (claro) | contra `#14171A` (oscuro) |
+|---|---|---|---|
+| `#B4D8F4` | asta de la L | **1.38** | 12.05 |
+| `#F4D6A9` | cola de la L | **1.29** | 12.88 |
+| `#D97A61` | terracota interior | 2.81 | 5.92 |
+
+Con `windowSplashScreenBackground` en `fondo_papel`, **en modo claro el splash mostraría una L casi invisible**: solo se vería la astilla terracota. Por eso el splash lleva **su propio fondo fijo `#253C52`** —el azul noche que `icono.svg` ya trae como fondo— en claro y en oscuro: es la decisión más barata, hace que el icono del launcher y el splash sean la misma marca, y es lo que muestran los tres renders.
+
+**El icono adaptativo entra sin tocar nada:** radio máximo del arte 32.9 sobre una zona segura de radio 36. Simulado bajo las tres máscaras de launcher (círculo, squircle, cuadrado), se lee bien en las tres.
+
+### Los tres vector drawables van en este parche, ya verificados
+
+`VectorDrawable` no tiene `<circle>` ni `<rect>`, y `splash_1.svg` trae **12 círculos** e `icono.svg` un `rect`. Convertidos a `path` (cada círculo, dos arcos `a`) y verificados **renderizando el original y el reconstruido y comparándolos píxel a píxel**:
+
+- `ic_launcher_foreground.xml` (6 paths, de `icono.svg` sin su fondo): **0 píxeles de diferencia**.
+- `splash_l.xml` (21 paths, de `splash_1.svg`): 639 píxeles de 1 048 576 (0.06 %), **máximo 17/255 por canal**, todos en el borde de los doce círculos convertidos. Antialiasing del arco contra el círculo nativo; geometría idéntica.
+- `ic_launcher_background.xml`: el `#253C52` como path.
+
+### Lo del splash aleatorio: no se puede, y además no hay dos
+
+Fer propuso dejar los dos splashes y alternarlos al azar. **El tema del splash lo resuelve el sistema antes de que corra una sola línea de la app** —por eso existe `postSplashScreenTheme`, al que `installSplashScreen()` salta *después*—, así que no hay dónde elegir. El rodeo conocido (varios `activity-alias` y `setComponentEnabledSetting`) persiste estado fuera de la app y hace parpadear el icono del launcher: no va en este proyecto. Una segunda pantalla de carga dibujada por Compose sí se podría alternar, pero agrega demora a una app cuyo punto es abrirla y ver la semana.
+
+Y por lo de arriba **no hay dos splashes usables, hay uno**. `splash_2` tiene su lugar como ilustración, no como icono: la cabecera de «Acerca de» es donde se la mira de verdad y no cuesta arranque. Si alguna vez hace falta variedad en el splash, el camino honesto es derivarla de la **semana ISO** —el único dato que la app ya lee— y no de un azar, pero eso necesita primero una pantalla de carga propia, que hoy no conviene.
+
+### Deuda menor, anotada
+
+`docs/guia-testers-lenguapp.pdf` y `docs/guia-testers-lenguapp-es.pdf` son **el mismo documento con dos nombres** (FALTANTES 1537 lo documenta). En la Ronda U el primero quedó en 0.4.3 un día entero mientras el segundo ya estaba en 0.4.4. Conviene dejar uno solo; por ahora se regeneran los dos.

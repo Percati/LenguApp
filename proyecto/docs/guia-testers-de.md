@@ -1,4 +1,4 @@
-# LenguApp · Kurzanleitung für Testerinnen und Tester (Version 0.4.3)
+# LenguApp · Kurzanleitung für Testerinnen und Tester (Version 0.4.4)
 
 **Was das ist.** Eine App, um eine Sprache Woche für Woche zu üben (Deutsch oder Englisch, A2 bis C2). **Kein Kurs:** Sie festigt, was du in einem Kurs schon gelernt hast. Sie läuft ohne Internet, ohne Konto und ohne Datensammlung. Sie ist im Test, und deine Rückmeldung hilft sehr.
 
@@ -14,7 +14,7 @@
 | Begrüßung und Tutorial | Beim ersten Start wählst du Sprache und Niveau; danach erklärt sich jeder Bereich selbst, mit abgedunkeltem Rest. Zweimal ist das Hervorgehobene antippbar. «Überspringen» überspringt alle; wiederholen in den Einstellungen. |
 | Gespeichert, Import und Export | Zeigt dasselbe wie die Bibliothek. Export nach Anki oder Sicherung, später wieder einlesbar; die Datei wählst du selbst. |
 | Fähigkeiten in der Bibliothek | Eine Liste zum Nachschlagen: Tippe auf eine Fähigkeit, um ihre Woche zu öffnen. Sortiert nach Titel oder Woche; nur schon erreichte Wochen (ein früheres Jahr ganz). |
-| Verben in der Bibliothek | Alle Verben der Sprache, aus allen Niveaus; darunter die Rektion (von + Dat). Auch die Wendungen erscheinen (die Frage stellen); ein Verb, das nur in Wendungen vorkommt (stellen), hat keinen Stern. Gefiltert wird nach Klasse; die Suche oben findet «Frage» → stellen. |
+| Verben in der Bibliothek | Alle Verben der Sprache, aus allen Niveaus; darunter die Rektion (von + Dat). Dazu Nachschlage-Verben (A1–A2), die in keiner Woche auftauchen: mit Übersetzung, ohne Stern. Auch die Wendungen erscheinen (die Frage stellen); ein Verb, das nur in Wendungen vorkommt (stellen), hat keinen Stern. Gefiltert wird nach Klasse; die Suche oben findet «Frage» → stellen. |
 | Keine Statistiken, Serien oder Fortschritte | Bewusste Entscheidung. Die App speichert nur deine Sterne (Gespeichert) und deine Einstellungen. |
 | Prompt zum Sprechen mit einer KI: nur Englisch B2 und C1 | Ein Versuch. Den Prompt, mit dem eine KI deinen Text korrigiert, gibt es auf allen Niveaus. |
 | Die Prompts für die KI sind immer in der Sprache, die du lernst | So antwortet die KI in dieser Sprache, auch wenn die App in deiner läuft. |

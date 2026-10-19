@@ -1,4 +1,4 @@
-# LenguApp · quick guide for testers (version 0.4.3)
+# LenguApp · quick guide for testers (version 0.4.4)
 
 **What it is.** An app to practise a language one week at a time (German or English, A2 to C2). **It is not a course:** it's for consolidating what you already learned in one. It works with no internet, no account and no data collection. It's in testing, and your feedback helps a lot.
 
@@ -14,7 +14,7 @@
 | Welcome and tutorial | The first time you pick language and level; each section then shows a walkthrough that dims everything except the thing it's explaining. In two steps you can tap what is lit up, and the walkthrough never moves on by itself. «Skip» skips them. You can see it all again from Settings. |
 | Saved, and import/export | Saved shows the same as the Library. You can export to Anki or make a backup and import it later; you choose the file yourself at that moment. |
 | Skills in the Library | A read-only list: tap a skill to open its week. Sorted by title or by week, and only the weeks that have already come round (a previous year, in full). |
-| Verbs in the Library | Lists the verbs of the language, from every level; under each one, in German, the case or preposition it takes (von + Dat) and, in English, whether the phrasal verb is separable. The phrases they're used in appear too (die Frage stellen); a verb that only exists inside phrases (stellen) has no star. You filter by class, and the search box at the top also looks at translations and phrases: «Frage» finds stellen. |
+| Verbs in the Library | Lists the verbs of the language, from every level; under each one, in German, the case or preposition it takes (von + Dat) and, in English, whether the phrasal verb is separable. It also includes reference verbs (A1–A2) that appear in no week: with a translation, without a star. The phrases they're used in appear too (die Frage stellen); a verb that only exists inside phrases (stellen) has no star. You filter by class, and the search box at the top also looks at translations and phrases: «Frage» finds stellen. |
 | No stats, streaks or progress | By design. The app only stores your stars (Saved) and your settings. |
 | The voice-conversation prompt for an AI exists only in English B2 and C1 | It's a trial. The prompt for an AI to correct your writing is there at every level. |
 | The AI prompts are always in the language you're learning | So the AI answers in that language, even if the app is in yours. |

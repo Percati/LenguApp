@@ -1,4 +1,4 @@
-# LenguApp · guida rapida per chi prova l'app (versione 0.4.3)
+# LenguApp · guida rapida per chi prova l'app (versione 0.4.4)
 
 **Che cos'è.** Un'app per praticare una lingua una settimana alla volta (tedesco o inglese, da A2 a C2). **Non è un corso:** serve a fissare quello che hai già imparato in uno. Funziona senza internet, senza account e senza raccogliere dati. È in prova, e la tua opinione aiuta molto.
 
@@ -14,7 +14,7 @@
 | Benvenuto e tutorial | La prima volta scegli lingua e livello; poi ogni sezione mostra un percorso che oscura tutto tranne quello che spiega. In due passi si può toccare ciò che è illuminato, e il percorso non avanza mai da solo. «Salta» li salta tutti. Si rivede tutto dalle Impostazioni. |
 | Salvati, importazione ed esportazione | Salvati mostra le stesse cose della Biblioteca. Puoi esportare in Anki o fare una copia di sicurezza e reimportarla; il file lo scegli tu in quel momento. |
 | Abilità nella Biblioteca | Un elenco di sola lettura: tocca un'abilità per aprire la sua settimana. Ordinato per titolo o per settimana, e solo le settimane già arrivate (un anno precedente, intero). |
-| Verbi nella Biblioteca | Elenca i verbi della lingua, di tutti i livelli; sotto ciascuno, in tedesco, la reggenza (von + Dat) e, in inglese, se il phrasal verb è separabile. Compaiono anche le espressioni in cui si usano (die Frage stellen); un verbo che esiste solo dentro espressioni (stellen) non ha la stella. Si filtra per classe; la ricerca in alto guarda anche traduzioni ed espressioni: «Frage» trova stellen. |
+| Verbi nella Biblioteca | Elenca i verbi della lingua, di tutti i livelli; sotto ciascuno, in tedesco, la reggenza (von + Dat) e, in inglese, se il phrasal verb è separabile. Ci sono anche verbi di consultazione (A1–A2) che non compaiono in nessuna scheda: con traduzione, senza stella. Compaiono anche le espressioni in cui si usano (die Frage stellen); un verbo che esiste solo dentro espressioni (stellen) non ha la stella. Si filtra per classe; la ricerca in alto guarda anche traduzioni ed espressioni: «Frage» trova stellen. |
 | Niente statistiche, serie o progressi | È una scelta. L'app conserva solo le tue stelle (Salvati) e le tue impostazioni. |
 | Il prompt per parlare con un'IA esiste solo in inglese B2 e C1 | È una prova. Il prompt perché un'IA corregga il tuo testo c'è a tutti i livelli. |
 | I prompt per l'IA sono sempre nella lingua che impari | Così l'IA risponde in quella lingua, anche se l'app è nella tua. |
