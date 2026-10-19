@@ -83,7 +83,7 @@ class VerbosReferenciaTest {
             assertEquals(fuente.count { "raiz" in it }, extraidas.count { it.raiz != null })
         }
         assertEquals(160, referencia(Idioma.DE).size)
-        assertEquals(339, referencia(Idioma.EN).size)
+        assertEquals(338, referencia(Idioma.EN).size)
     }
 
     // --- 1. solo referencia ---
@@ -131,16 +131,49 @@ class VerbosReferenciaTest {
         assertEquals(propio.clases, e.clases)
     }
 
+    // El mecanismo de la segunda clave (OBJETO_FINAL_EN) con datos ARMADOS A MANO: el caso real (`to deal with`) salio de la tabla y no hay
+    // otro; un test agarrado al dato de hoy se volveria a romper en B1. En B1 la referencia puede volver a diferir de la `base` del item.
+
     @Test
-    fun `deal with se fusiona con su anotacion to deal with something, una sola fila`() {
-        val r = referencia(Idioma.EN).first { it.item == "to deal with" }
-        val e = items.entradasVerbo(Idioma.EN, listOf(r)).filter { it.infinitivo.contains("deal with") }
+    fun `una referencia to X with se fusiona con un item to X with something, una sola fila, y manda la clase del item`() {
+        val propio = items.entradasVerbo(Idioma.EN).first { it.propio != null && it.infinitivo.startsWith("to ") }
+        val item = propio.propio!!.let { base ->
+            base.copy(
+                texto = "to blorp with something",
+                vocabulario = base.vocabulario!!.copy(item = "to blorp with something", claseVerbo = listOf("phrasal-inseparable"), nucleoVerbal = null),
+            )
+        }
+        val r = ref("to blorp with", clase = "verbo-preposicion", es = "blorpear con")
+        val e = (items + item).entradasVerbo(Idioma.EN, listOf(r)).filter { it.infinitivo.contains("blorp") }
         assertEquals(e.map { it.infinitivo }.toString(), 1, e.size)
-        assertEquals("to deal with something", e.single().infinitivo)
-        assertNotNull(e.single().propio)
-        // la clase de la anotacion manda: el desacuerdo con la referencia (verbo-preposicion) no se resuelve ni se vigila
-        assertEquals(listOf("phrasal-inseparable"), e.single().clases)
-        assertEquals("verbo-preposicion", r.claseVerbo.single())
+        assertEquals("to blorp with something", e.single().infinitivo)
+        assertNotNull("el item sigue siendo el propio (marcable)", e.single().propio)
+        assertEquals("la clase del item manda: el desacuerdo con la referencia no se resuelve ni se vigila", listOf("phrasal-inseparable"), e.single().clases)
+        assertEquals(r, e.single().referencia)
+        // sin la segunda clave serian dos filas; con ella no, y los objetos de relleno que ve son los cinco
+        for (objeto in listOf("something", "someone", "somebody", "oneself", "yourself")) {
+            val otro = item.copy(texto = "to blorp with $objeto", vocabulario = item.vocabulario!!.copy(item = "to blorp with $objeto"))
+            assertEquals(objeto, 1, (items + otro).entradasVerbo(Idioma.EN, listOf(r)).count { it.infinitivo.contains("blorp") })
+        }
+    }
+
+    @Test
+    fun `la segunda clave solo se prueba cuando las otras no aciertan y solo en ingles`() {
+        val propio = items.entradasVerbo(Idioma.EN).first { it.propio != null }
+        val item = propio.propio!!.let { base ->
+            base.copy(texto = "to blorp with something", vocabulario = base.vocabulario!!.copy(item = "to blorp with something", claseVerbo = listOf("simple"), nucleoVerbal = null))
+        }
+        // una referencia exacta (to blorp with something) acierta por la primera clave y no se cuelga por la segunda
+        val exacta = ref("to blorp with something")
+        assertEquals(1, (items + item).entradasVerbo(Idioma.EN, listOf(exacta)).count { it.infinitivo.contains("blorp") })
+        // una referencia que no se parece a nada es una fila nueva: la segunda clave no inventa fusiones
+        val ajena = ref("to zorp")
+        val filas = (items + item).entradasVerbo(Idioma.EN, listOf(ajena))
+        assertEquals(1, filas.count { it.infinitivo == "to zorp" })
+        assertEquals(1, filas.count { it.infinitivo == "to blorp with something" })
+        // en aleman no existe: «sich beschweren bei jemandem» no se fusiona con «sich beschweren» por quitar nada
+        val de = items.entradasVerbo(Idioma.DE, listOf(ref("blorpen something")))
+        assertEquals(1, de.count { it.infinitivo == "blorpen something" })
     }
 
     @Test
@@ -161,7 +194,7 @@ class VerbosReferenciaTest {
             val sin = items.entradasVerbo(idioma)
             val con = items.entradasVerbo(idioma, refs)
             val claves = sin.map { claveFusionVerbo(it.infinitivo, idioma) }.toSet()
-            // (en ingles tambien cuenta «to deal with» contra el item «to deal with something»: la tabla los une por `base`)
+            // (en ingles tambien cuenta la segunda clave, el objeto de relleno final: hoy sin casos vivos, 0 colisiones por esa via)
             val sinObjeto = claves.map { it.replace(Regex("""\s+(something|someone|somebody|oneself|yourself)$"""), "") }.toSet()
             val colisiones = refs.count {
                 claveFusionVerbo(it.item, idioma) in claves || claveFusionVerbo(it.base, idioma) in claves ||
@@ -215,14 +248,26 @@ class VerbosReferenciaTest {
     }
 
     @Test
-    fun `los dos desacuerdos de clase anotados a proposito no se tocan ni se vigilan`() {
-        // `hoeren`: el nucleo dice mit-Praposition, la referencia simple. Manda el nucleo; no hay ninguna guarda.
-        val de = items.entradasVerbo(Idioma.DE, referencia(Idioma.DE))
-        val horen = de.firstOrNull { it.infinitivo == "hören" && it.referencia != null }
-        if (horen != null && horen.propio == null) assertEquals(horen.clases, items.entradasVerbo(Idioma.DE).first { it.infinitivo == "hören" }.clases)
-        // `deal with`: anotacion phrasal-inseparable, referencia verbo-preposicion. Manda la anotacion (ver el test de deal with).
-        val deal = items.entradasVerbo(Idioma.EN, referencia(Idioma.EN)).single { it.infinitivo.contains("deal with") }
-        assertEquals(listOf("phrasal-inseparable"), deal.clases)
+    fun `el desacuerdo de clase de hoeren es real y no se toca ni se vigila, manda el nucleo`() {
+        // `hoeren`: el nucleo de «auf seinen Körper hören» dice mit-Praposition y la referencia simple, a proposito (valencia secundaria).
+        val sin = items.entradasVerbo(Idioma.DE).single { it.infinitivo == "hören" }
+        assertNull("es un nucleo puro", sin.propio)
+        assertEquals(listOf("mit-Praposition"), sin.clases)
+        val referencia = referencia(Idioma.DE).single { it.item == "hören" }
+        assertEquals(listOf("simple"), referencia.claseVerbo)
+        val con = items.entradasVerbo(Idioma.DE, listOf(referencia)).single { it.infinitivo == "hören" }
+        assertEquals("manda la clase del nucleo", listOf("mit-Praposition"), con.clases)
+        assertEquals(referencia, con.referencia)
+        assertEquals(sin.colocaciones, con.colocaciones)
+    }
+
+    @Test
+    fun `una referencia inventada que desacuerda en clase con su nucleo no cambia la clase del nucleo`() {
+        val nucleo = items.entradasVerbo(Idioma.DE).first { it.propio == null && it.colocaciones.isNotEmpty() && it.clases.isNotEmpty() }
+        val distinta = if (nucleo.clases == listOf("simple")) "trennbar" else "simple"
+        val con = items.entradasVerbo(Idioma.DE, listOf(ref(nucleo.infinitivo, clase = distinta))).single { it.infinitivo == nucleo.infinitivo }
+        assertEquals(nucleo.clases, con.clases)
+        assertEquals(distinta, con.referencia!!.claseVerbo.single())
     }
 
     private data class Esperado(val sin: Int, val colisiones: Int, val con: Int)
@@ -230,6 +275,6 @@ class VerbosReferenciaTest {
     private companion object {
         // Medidos con los assets reales (ver MEDIDA-U): si la fusion se rompe, el segundo numero se mueve.
         val ESPERADO_DE = Esperado(470, 45, 585)
-        val ESPERADO_EN = Esperado(559, 79, 819)
+        val ESPERADO_EN = Esperado(559, 78, 819)
     }
 }
