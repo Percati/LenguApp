@@ -7,15 +7,17 @@
     </style>
 
     <!--
-        PANTALLA DE CARGA (androidx.core:core-splashscreen). Fondo = fondo del tema Papel (claro/oscuro
-        segun el sistema), SIN icono propio: Fer todavia no tiene el arte.
-        >>> UN SOLO LUGAR para la ronda H: cuando llegue el icono, reemplazar `splash_vacio` (drawable)
-        >>> por el glifo de la splash, y en el manifest agregar android:icon / android:roundIcon con el
-        >>> adaptive icon (capa monocromatica para iconos tematicos). Ver FALTANTES.md, seccion 25.
+        PANTALLA DE CARGA (androidx.core:core-splashscreen), Ronda V. Fondo SOLIDO #253C52 (`fondo_splash`) en claro y en oscuro, NO
+        `fondo_papel` (ver colors.xml: sobre el papel claro la L no se ve). Icono = splash_l (bitmap, lienzo 288 dp, la L a radio 88 de
+        96), que el sistema recorta a un circulo de 192 dp: no hay que escalar nada. Estatico a proposito (`AnimatedIcon` acepta un
+        drawable fijo; una animacion alarga el arranque).
+        NO poner `windowSplashScreenIconBackgroundColor`: cambia el lienzo a 240 con circulo util de 160 y el arte dejaria de entrar.
+        Lo que no se puede: el splash del sistema no admite imagen de fondo (solo color solido + icono centrado), y no se puede alternar
+        al azar (el tema lo resuelve el sistema antes de que corra una linea de la app: ni activity-alias ni setComponentEnabledSetting).
     -->
     <style name="Theme.LenguApp.Splash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/fondo_papel</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_vacio</item>
+        <item name="windowSplashScreenBackground">@color/fondo_splash</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_l</item>
         <item name="postSplashScreenTheme">@style/Theme.LenguApp</item>
     </style>
 </resources>

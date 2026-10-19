@@ -2,4 +2,11 @@
 <resources>
     <!-- Fondo del tema Papel (claro): lo usan la pantalla de carga y la ventana antes de que Compose dibuje. -->
     <color name="fondo_papel">#F7F6F2</color>
+    <!--
+        Fondo de la pantalla de carga: el azul noche del propio render del icono, IGUAL en claro y en oscuro (no se redefine en
+        values-night). A proposito NO es fondo_papel: la L esta pensada para fondo oscuro, y sobre el papel claro (#F7F6F2) el asta
+        contrasta 1.38 y la cola 1.29, o sea una L casi invisible con solo la astilla terracota. Es tambien el fondo del icono del
+        launcher (ic_launcher_background), asi que splash e icono son la misma marca.
+    -->
+    <color name="fondo_splash">#253C52</color>
 </resources>

@@ -171,7 +171,7 @@ class MainActivity : ComponentActivity() {
     private var controlAudio: ControlAudio? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Pantalla de carga: tema Theme.LenguApp.Splash (fondo Papel, sin icono) -> Theme.LenguApp.
+        // Pantalla de carga: tema Theme.LenguApp.Splash (fondo #253C52 con la L) -> Theme.LenguApp.
         installSplashScreen()
         super.onCreate(savedInstanceState)
         // Pantalla completa (Ronda K): la app se dibuja bajo las barras del sistema y los insets se aplican en
