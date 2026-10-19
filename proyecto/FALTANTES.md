@@ -1953,7 +1953,7 @@ Para la próxima: o **una carpeta por conversación**, o **de a una por vez**. Y
 
 Tandas 1 y 1b de la biblioteca de verbos de consulta (prompts 40 y 41). Entradas nuevas en `contenido/verbos/{de,en}.json` con `referencia: true`, traducción a los otros cinco idiomas, clase y régimen. **No anotan ningún ítem del contenido**, así que no se ven en la app hasta que una ronda de Code haga que la vista Verbos tome esta segunda fuente.
 
-**Total: 499 entradas de referencia.** DE 160 (A1 60, A2 100) y EN 339 (A1 141, A2 198). La tabla pasó de 305 a 465 entradas en alemán y de 360 a 699 en inglés.
+**Total: 498 entradas de referencia.** DE 160 (A1 60, A2 100) y EN 338 (A1 141, A2 197). La tabla pasó de 305 a 465 entradas en alemán y de 360 a 698 en inglés. (Eran 499: la entrada de referencia `deal with` se quitó el 19-oct, ver el final de esta sección.)
 
 ### La cuenta reconciliada (277 candidatos alemanes de A1 y A2)
 
@@ -1984,9 +1984,14 @@ El filtro es verificable: lema de `data/vocab_de.json` con nivel A1 o A2, sin ar
 | phrasal verbs (Cambridge G&V First, pág. 1: *burst out* … *set off*) | 111 | 104 | 7 | 0 | **0** |
 | irregulares (Cambridge G&V First, *broadcast* … *teach*) | 80 | 1 | 15 | 60 | **4** |
 
-Los 104 phrasal sin lema no son un olvido: CEFR-J lematiza por palabra, así que *pick up* o *give in* no existen como entrada y no pueden tener nivel. De los 4 irregulares que faltaban se escribieron 2: **`to light`** (el lema A1 de la lista de vocabulario es el sustantivo, el verbo entra por la lista de irregulares) y **`to deal`** (con nota de que el uso habitual, *deal with*, ya estaba). Los otros dos quedan fuera a propósito: **`to do`** es auxiliar, y **`spring`** es A1 como sustantivo (la estación), no como verbo.
+Los 104 phrasal sin lema **no son una limitación de la lematización**, y la explicación que escribí primero («CEFR-J lematiza por palabra») era falsa: `vocab_en.json` tiene **1021 lemas con espacio**, entre ellos *according to*, *bus stop* y quince phrasal. El motivo real es más acotado: **los phrasal están poco representados en la lista, y los que están son todos de nivel alto.** La diferencia importa porque la versión equivocada implicaría que un cruce contra una lista de phrasal nunca puede dar nada, y en B1 podría darlo. De los 4 irregulares que faltaban se escribieron 2: **`to light`** (el lema A1 de la lista de vocabulario es el sustantivo, el verbo entra por la lista de irregulares) y **`to deal`** (con nota de que el uso habitual, *deal with*, ya estaba). Los otros dos quedan fuera a propósito: **`to do`** es auxiliar, y **`spring`** es A1 como sustantivo (la estación), no como verbo.
 
-**Limitación del cruce, y es del material:** la capa de texto de los dos `.pdf` del proyecto está incompleta. La de phrasal verbs llega hasta *set off* (falta la página 2) y la de irregulares va de *broadcast* a *teach* (faltan el principio y el final del alfabeto). Lo que se cruzó es lo que se puede leer; con los `.pdf` completos habría que repetirlo.
+**El hueco de los `.pdf` está cerrado (Overview, 18-oct-2026), y no hace falta repetir nada.** La capa de texto de los dos archivos está incompleta —la de phrasal llega hasta *set off* y la de irregulares va de *broadcast* a *teach*—, así que Overview cruzó el resto contra la lista canónica:
+
+- **Irregulares, la mitad que el `.pdf` no muestra:** 29 verbos. Presentes en la tabla 18 (*bear*, *become*, *begin*, *bend*, *bite*, *blow*, *break*, *bring*, *tear*, *tell*, *think*, *throw*, *understand*, *wake*, *wear*, *weep*, *win*, *write*); de nivel B1 o más, 7 (*arise*, *beat*, *bet*, *bind*, *bleed*, *breed*, *weave*); ausentes de A1/A2 solo 3, y los tres por buen motivo: **`be`** es auxiliar, **`wind`** es A1 como sustantivo (el viento, el mismo caso que *spring*) y **`awake`** es marginal con *wake* ya en la tabla.
+- **Phrasal, las dos páginas:** 111 de la página 1 y las 42 canónicas de la página 2. Con lema en `vocab_en.json`, 7 y 8; **los quince son B2 o C1** (*cut down*, *give up*, *run down*, *settle down*, *think over*, *wear off*, *wear out*; *fall for*, *fall out*, *pick up*, *set off*, *stand by*, *stand for*, *stand out*, *stand up for*).
+
+**Cero huecos de A1/A2 en las dos listas.** Queda como deuda solo si alguna vez hace falta cruzar B1 contra el material completo.
 
 ### `referencia: true` y por qué hubo que tocar `aplicar_verbos.py`
 
@@ -2002,16 +2007,20 @@ La comprobación final de la herramienta recorre `list(tabla) + list(otros) + li
 - **Acepciones múltiples:** separadas por punto y coma, en el mismo orden en las cinco lenguas (*wählen* → «elegir; votar; marcar un número»). No se abre una entrada por acepción.
 - **`nota` es campo de trabajo**, como `base`, `raiz` y `nivelFuente`: no llega al contenido ni a la app. Se usa para el régimen secundario (*danken … für + Akk*), para avisar de inseparables que parecen separables (*unternehmen*, *übernachten*, *übersetzen*, *bekommen*, *beraten*, *untersuchen*, *versuchen*) y para las variantes ortográficas (se eligió la británica: *criticise*, *organise*, *realise*).
 - **`raiz` solo en los separables alemanes** (27 de las 160): es lo que hace que buscar «stellen» traiga la familia. En inglés no se usa.
-- **Ortografía suiza también en las glosas:** 0 `ß` en las 499 entradas, incluidas las glosas alemanas de los verbos ingleses (P10).
+- **Ortografía suiza también en las glosas:** 0 `ß` en las 498 entradas, incluidas las glosas alemanas de los verbos ingleses (P10).
 - **Ninguna glosa al idioma que se aprende:** un verbo alemán lleva es/en/fr/it/pt y uno inglés es/de/fr/it/pt, porque desde la Ronda R la app no muestra glosa cuando el idioma de la app es el que se aprende.
 
 ### Qué queda para la segunda tanda
 
 - **B1**: 414 candidatos alemanes sin cubrir, de los cuales habrá que descontar los que estén solo como núcleo. Nada de B2 ni C1: son 1924 y los cubre el contenido de esos niveles.
-- **Fusión por infinitivo en la app** (arriba): sin eso, estas 499 entradas se ven como filas duplicadas.
+- **Fusión por infinitivo en la app** (arriba): sin eso, estas 498 entradas se ven como filas duplicadas.
 - **La vista todavía no las muestra**: hace falta la ronda de Code que tome la tabla como segunda fuente de la vista Verbos.
-- **Nadie revisó fr / it / pt** de las 499 entradas. Alemán e inglés los juzga Fer.
-- **Los dos `.pdf` de Cambridge con la capa de texto completa**, para repetir el cruce de la tarea 3 sin huecos.
+- **Nadie revisó fr / it / pt** de las 498 entradas. Alemán e inglés los juzga Fer.
+
+### Dos arreglos del 19-oct-2026 (prompt 43)
+
+- **`deal with` quedó una sola vez.** Era el único caso en que una entrada de referencia chocaba con una **entrada de anotación**: `deal with something` ya anota un ítem del contenido y por lo tanto ya se ve en la app con su traducción, que es justo lo que la lista de referencia viene a resolver. Se quitó la entrada de referencia `deal with`; queda la de anotación con su clase **`phrasal-inseparable`**, que es la correcta: *deal* solo significa «repartir», así que la partícula no es composicional, y la lista de phrasal verbs de Cambridge trae *deal with*. La entrada `deal` se queda, con la nota corregida (antes decía que *deal with* estaba como `verbo-preposicion`). **Las otras 123 colisiones son contra núcleos y las resuelve la fusión por infinitivo de Code, no se tocan.**
+- **El desacuerdo de `hören` quedó escrito en la entrada**, no solo acá: la `nota` de la entrada de referencia dice que el núcleo lleva `mit-Praposition` con `auf + Akk`, que esta entrada dice `simple` a propósito porque esa es la clase del verbo, y que no se uniforme sin decidirlo antes para todos los verbos con valencia secundaria. Era el único desacuerdo de clase entre una entrada de referencia y un núcleo.
 
 ## 73. Verificación de la tanda 1b de Verbos y la ruta de la segunda fuente (Overview, 18-oct-2026)
 
