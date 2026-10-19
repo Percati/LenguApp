@@ -4,6 +4,7 @@ import androidx.activity.ComponentActivity
 import androidx.compose.ui.test.assertCountEquals
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onAllNodesWithContentDescription
+import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
@@ -146,5 +147,50 @@ class BusquedaVerbosPantallaTest {
         }
         // el verbo sin regimen ni clase de chip se ve igual, sin linea extra
         composeTestRule.onNodeWithText("arbeiten").assertExists()
+    }
+
+    // --- Ronda U: la segunda fuente en pantalla ---
+
+    private fun mostrarConReferencia(referencia: List<io.github.percati.lenguapp.datos.VerboReferencia>, pedidos: MutableList<Idioma>? = null) {
+        composeTestRule.setContent {
+            BibliotecaScreen(
+                items = lista, idiomasAprendidos = mapOf(Idioma.DE to Nivel.B2), idiomaBase = Idioma.ES, idiomaInterfaz = Idioma.ES,
+                topicNombres = NombresI18n(), categorias = CategoriasUso(), guardadas = emptySet(), onAlternar = {}, onVolver = {},
+                verbosReferencia = { idioma -> pedidos?.add(idioma); referencia },
+            )
+        }
+    }
+
+    @Test
+    fun `un verbo de referencia se ve con su glosa y su regimen, sin estrella, mezclado en el orden alfabetico`() {
+        val ref = io.github.percati.lenguapp.datos.VerboReferencia(
+            item = "aufstehen", claseVerbo = listOf("trennbar"), traducciones = mapOf("es" to "levantarse"), raiz = "stehen", reccion = "gegen + Akk",
+        )
+        val pedidos = mutableListOf<Idioma>()
+        mostrarConReferencia(listOf(ref), pedidos)
+        // perezoso: mientras se mira el lexico no se pide nada
+        org.junit.Assert.assertTrue("no se pidio antes de entrar a Verbos: $pedidos", pedidos.isEmpty())
+        composeTestRule.onNodeWithText("Verbos").performClick()
+        composeTestRule.onNodeWithText("aufstehen").assertExists()
+        composeTestRule.onNodeWithText("levantarse").assertExists()
+        composeTestRule.onNodeWithText("gegen + Akk").assertExists()
+        // una estrella por verbo propio; la de referencia no tiene
+        composeTestRule.onAllNodesWithTag(TAG_ESTRELLA_BIBLIOTECA).assertCountEquals(lista.size)
+        // se encuentra buscando por la raiz o por la glosa
+        composeTestRule.onNodeWithText("Buscar").performTextInput("stehen")
+        composeTestRule.onNodeWithText("aufstehen").assertExists()
+        composeTestRule.onNodeWithText("Buscar").performTextReplacement("levant")
+        composeTestRule.onNodeWithText("aufstehen").assertExists()
+        composeTestRule.onAllNodesWithText("arbeiten").assertCountEquals(0)
+    }
+
+    @Test
+    fun `un verbo de referencia con el mismo infinitivo que un verbo propio sale una sola vez, con la traduccion del propio`() {
+        val ref = io.github.percati.lenguapp.datos.VerboReferencia(item = "zumachen", claseVerbo = listOf("trennbar"), traducciones = mapOf("es" to "GLOSA-DE-REFERENCIA"))
+        mostrarConReferencia(listOf(ref))
+        composeTestRule.onNodeWithText("Verbos").performClick()
+        composeTestRule.onAllNodesWithText("zumachen").assertCountEquals(1)
+        composeTestRule.onAllNodesWithText("GLOSA-DE-REFERENCIA").assertCountEquals(0)
+        composeTestRule.onNodeWithText("trad-zumachen").assertExists()
     }
 }

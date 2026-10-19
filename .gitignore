@@ -18,6 +18,10 @@ app/src/main/assets/plantillas/
 # Extraido por generarTopicNombresAssets de proyecto/data/banco.json en cada build.
 app/src/main/assets/temas/
 
+# Extraido por extraerVerbosReferenciaAssets de proyecto/contenido/verbos/{de,en}.json en cada build (solo las entradas `referencia`,
+# sin nivelFuente ni nota).
+app/src/main/assets/verbos/
+
 # Listas fuente de vocabulario (Goethe, DTZ, manuales, diccionario de frecuencia):
 # material con copyright, no se versiona. Ver proyecto/tools/fuentes.json.
 proyecto/fuentes/

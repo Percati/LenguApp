@@ -198,6 +198,42 @@ val generarTopicNombresAssets by tasks.registering {
     }
 }
 
+// Verbos de REFERENCIA (Ronda U): proyecto/contenido/verbos/{de,en}.json trae, ademas de las entradas que anotan items de las fichas, las
+// marcadas `referencia: true` (verbos de consulta de A1/A2 que no vienen de ninguna ficha). La app solo necesita esas, y solo cuatro cosas de
+// cada una (`item`, `base`, `claseVerbo`, `traducciones`, mas `raiz` y `reccion` si estan): `nivelFuente` y `nota` son campos de TRABAJO que
+// no pueden llegar a la app. Por eso se EXTRAE (igual que topic-nombres) en vez de copiar el archivo entero: un Copy pondria `nivelFuente`
+// fisicamente dentro del APK. Carpeta propia assets/verbos/ y NUNCA assets/contenido/: el cargador de contenido parsea todo lo que hay ahi
+// como ficha o semana especial. No se versiona la copia.
+val extraerVerbosReferenciaAssets by tasks.registering {
+    group = "build"
+    description = "Extrae las entradas `referencia` de contenido/verbos/{de,en}.json a assets/verbos/referencia-{de,en}.json (sin nivelFuente ni nota)."
+    val fuentes = listOf("de", "en").associateWith { File(rootDir, "proyecto/contenido/verbos/$it.json") }
+    val salida = File(projectDir, "src/main/assets/verbos")
+    inputs.files(fuentes.values)
+    outputs.dir(salida)
+    doLast {
+        salida.deleteRecursively()
+        salida.mkdirs()
+        for ((idioma, fuente) in fuentes) {
+            val raiz = groovy.json.JsonSlurper().parse(fuente) as Map<*, *>
+            val verbos = (raiz["verbos"] as? List<*> ?: error("${fuente.name} no tiene `verbos`"))
+                .filterIsInstance<Map<*, *>>()
+                .filter { it["referencia"] == true }
+                .map { v ->
+                    // Solo lo que la app necesita, en este orden. `nivelFuente` y `nota` NO viajan; `referencia` tampoco (todo lo extraido lo es).
+                    val salidaVerbo = linkedMapOf<String, Any?>()
+                    for (campo in listOf("item", "base", "claseVerbo", "traducciones", "raiz", "reccion")) {
+                        if (v[campo] != null) salidaVerbo[campo] = v[campo]
+                    }
+                    salidaVerbo
+                }
+            File(salida, "referencia-$idioma.json").writeText(
+                groovy.json.JsonOutput.toJson(linkedMapOf("idioma" to idioma, "verbos" to verbos)), Charsets.UTF_8,
+            )
+        }
+    }
+}
+
 // Lista cerrada de categoriasUso (funciones comunicativas + patrones gramaticales):
 // la Biblioteca filtra las expresiones por ella. Se copia a assets/temas/ en cada
 // build (no se versiona la copia).
@@ -333,6 +369,7 @@ tasks.matching { it.name == "preBuild" }.configureEach {
     dependsOn(copiarPlantillasAssets)
     dependsOn(generarTopicNombresAssets)
     dependsOn(copiarCategoriasUsoAssets)
+    dependsOn(extraerVerbosReferenciaAssets)
     dependsOn(verificarAssetsContenidoActualizados)
     dependsOn(verificarConsistenciaContenido)
 }

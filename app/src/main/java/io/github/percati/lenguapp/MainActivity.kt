@@ -138,7 +138,9 @@ import io.github.percati.lenguapp.ui.etiquetaBiblioteca
 import io.github.percati.lenguapp.presentacion.construirBiblioteca
 import io.github.percati.lenguapp.presentacion.textoOrigen
 import io.github.percati.lenguapp.datos.CategoriasUso
+import io.github.percati.lenguapp.datos.VerboReferencia
 import io.github.percati.lenguapp.datos.cargarCategoriasUsoDesdeAssets
+import io.github.percati.lenguapp.datos.cargarVerbosReferenciaDesdeAssets
 import io.github.percati.lenguapp.ui.etiquetaGuardados
 import io.github.percati.lenguapp.ui.etiquetaHoy
 import io.github.percati.lenguapp.ui.etiquetaSemana
@@ -204,6 +206,8 @@ class MainActivity : ComponentActivity() {
         // El ingles queda detras del interruptor de compilacion BuildConfig.AUDIO_INGLES (encendido en debug y en release).
         val audio = ControlAudio(cargarIndiceAudioDesdeAssets(this, BuildConfig.AUDIO_INGLES), ReproductorAssets(this))
         controlAudio = audio
+        // Los verbos de referencia se leen la primera vez que se entra a la vista Verbos de un idioma, no al arrancar.
+        val referenciaCache = HashMap<Idioma, List<VerboReferencia>>()
         val versionApp = runCatching { packageManager.getPackageInfo(packageName, 0).versionName }.getOrNull().orEmpty()
         setContent {
             LenguAppApp(
@@ -220,6 +224,7 @@ class MainActivity : ComponentActivity() {
                 controlAudio = audio,
                 resolver = { idioma, nivel, fecha -> resolverSemana(this, contenidoPorId, idioma, nivel, fecha) },
                 calendarioDe = { anio, idioma, nivel -> cargarCalendarioDesdeAssets(this, anio, idioma, nivel) },
+                verbosReferencia = { idioma -> referenciaCache.getOrPut(idioma) { cargarVerbosReferenciaDesdeAssets(this, idioma) } },
                 onGuardarAjustes = { guardarAjustes(this, it) },
             )
         }
@@ -269,6 +274,8 @@ internal fun LenguAppApp(
     versionApp: String = "",
     // Calendario de un (anio, idioma, nivel): lo usa el indice de habilidades de la Biblioteca.
     calendarioDe: (Int, Idioma, Nivel) -> CalendarioCargado = { _, _, _ -> CalendarioCargado.SinCalendarioParaIdiomaONivel },
+    // Verbos de referencia (Ronda U) de un idioma: la vista Verbos los pide al entrar. Por omision no hay.
+    verbosReferencia: (Idioma) -> List<VerboReferencia> = { emptyList() },
     // Audio de los textos (Ronda M): por omision no hay, y entonces ninguna pantalla dibuja el boton.
     controlAudio: ControlAudio = SinAudio,
     // El tutorial con foco (Ronda Q): quien sabe que tour esta en marcha. Por omision no hay pasos que lanzar.
@@ -538,6 +545,7 @@ internal fun LenguAppApp(
                             )
                         },
                         onVolver = { navController.popBackStack() },
+                        verbosReferencia = verbosReferencia,
                         // Indice de habilidades: el calendario del anio que se esta viendo, en el nivel actual del idioma.
                         habilidades = { idioma ->
                             val semanaVista = semanaIsoDe(fechaVista)

@@ -41,6 +41,7 @@ import androidx.compose.foundation.layout.ColumnScope
 import io.github.percati.lenguapp.presentacion.BuscadorVerbos
 import io.github.percati.lenguapp.presentacion.contarClases
 import io.github.percati.lenguapp.presentacion.filtrarPorClases
+import io.github.percati.lenguapp.datos.VerboReferencia
 import io.github.percati.lenguapp.presentacion.EntradaVerbo
 import io.github.percati.lenguapp.presentacion.entradasVerbo
 import androidx.compose.material.icons.filled.Close
@@ -101,6 +102,8 @@ fun BibliotecaScreen(
     // Segunda vista: indice de habilidades del idioma de la pestana (solo lectura) y como abrir una.
     habilidades: (Idioma) -> IndiceHabilidades = { IndiceHabilidades.SinCalendario(0) },
     onAbrirFicha: (String) -> Unit = {},
+    // Verbos de referencia (Ronda U) del idioma de la pestana: se piden SOLO al entrar a la vista Verbos.
+    verbosReferencia: (Idioma) -> List<VerboReferencia> = { emptyList() },
 ) {
     DetenerAudioAlSalir()
     LanzarTourAlEntrar(Tour.BIBLIOTECA)
@@ -141,9 +144,12 @@ fun BibliotecaScreen(
     }
 
     // Vista Verbos: TODAS las entradas del idioma de la pestana (verbos propios + nucleos verbales de las
-    // colocaciones, fusionados por infinitivo); el nivel no es una dimension de la vista (ni filtra ni se fija
+    // colocaciones + verbos de referencia, fusionados por infinitivo; se arman solo si se mira esa vista); el nivel no es una dimension de la vista (ni filtra ni se fija
     // en el de Ajustes). Chips de clase y cuentas sobre ese conjunto (P3).
-    val verbos = remember(items, idioma) { if (idioma == null) emptyList() else items.entradasVerbo(idioma) }
+    val referencia = if (idioma != null && vista == VistaBiblioteca.VERBOS) remember(idioma, verbosReferencia) { verbosReferencia(idioma) } else emptyList()
+    val verbos = remember(items, idioma, referencia, vista) {
+        if (idioma == null || vista != VistaBiblioteca.VERBOS) emptyList() else items.entradasVerbo(idioma, referencia)
+    }
     val conteoClases = remember(verbos) { verbos.contarClases() }
     // El texto normalizado de cada entrada y de sus colocaciones se calcula una vez, no en cada tecla.
     val buscadorVerbos = remember(verbos, idiomaBase) { BuscadorVerbos(verbos, idiomaBase) }
@@ -436,8 +442,9 @@ private fun FilaEntradaVerbo(
                 extra = extra,
             )
         } else {
+            // Nucleo puro o verbo de SOLO referencia: sin estrella (no es un item). Con referencia, su traduccion.
             FilaPalabra(
-                original = entrada.infinitivo, traduccion = null, funcion = null,
+                original = entrada.infinitivo, traduccion = entrada.traduccion(idiomaBase), funcion = null,
                 idiomaAprendido = idioma, idiomaBase = idiomaBase,
                 guardada = false, tagEstrella = TAG_ESTRELLA_BIBLIOTECA, descripcionEstrella = null, onEstrella = {},
                 extra = extra, conEstrella = false,
