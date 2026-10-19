@@ -2099,11 +2099,13 @@ Tres commits (las tareas 1 y 2 van juntas, como pedía el prompt; la 3 y la 4 su
 
 **Decisiones donde el prompt no cerraba:** (1) la segunda clave de `deal with` (arriba); (2) los 7 duplicados de inglés quedan como estaban; (3) la referencia nueva con el mismo infinitivo que un propio sin traducción propia **no** rellena la fila del propio (la fila del propio la dibuja `FilaBiblioteca`, que no sabe de la referencia; el prompt dice que la de referencia rellena «cuando no hay propio»); (4) el `base` de la referencia también se prueba como clave (sin diferencia hoy en los datos).
 
-## 75. La Ronda U y el parche de Verbos se rompen entre sí; icono y splash medidos (Overview, 19-oct-2026)
+## 75. La Ronda U y el parche de Verbos se rompen entre sí; icono y splash resueltos como bitmap (Overview, 19-oct-2026)
+
+> **Esta sección se reescribió el mismo día.** La primera versión (commit `a6465c72`) describía tres *vector drawables* verificados píxel a píxel, y estaba hecha sobre los `.svg` equivocados: eran una vectorización de los renders, no el arte. Lo que sigue reemplaza aquello; los tres `.xml` de arte que entraron con `a6465c72` se borran en este mismo commit. Lo del build rojo no cambió.
 
 ### El build está rojo en `main`, y ninguna de las dos conversaciones hizo nada mal
 
-`778c577e` (Ronda U) y `62047119` (Verbos) se escribieron sobre la misma base, sin verse. Code corrió su suite sobre `778c577e` —1319 tests en debug, 0 fallas— y Verbos quitó después la entrada de referencia `to deal with`, que es exactamente lo que tres de esos tests fijan. **Verbos tenía prohibido tocar `app/` por el prompt 43 y Code no podía saber que la entrada iba a desaparecer.** El riesgo que se venía avisando desde la Ronda S (dos conversaciones sobre el mismo clon) se materializó acá, y no por descuido de nadie.
+`778c577e` (Ronda U) y `62047119` (Verbos) se escribieron sobre la misma base, sin verse. Code corrió su suite sobre `778c577e` —1319 tests en debug, 0 fallas— y Verbos quitó después la entrada de referencia `to deal with`, que es exactamente lo que tres de esos tests fijan. **El prompt 43 le prohibía a Verbos tocar `app/` y Code no podía saber que la entrada iba a desaparecer.** El riesgo que se venía avisando desde la Ronda S (dos conversaciones sobre el mismo clon) se materializó acá, y no por descuido de nadie.
 
 En `app/src/test/java/io/github/percati/lenguapp/presentacion/VerbosReferenciaTest.kt`:
 
@@ -2116,48 +2118,49 @@ En `app/src/test/java/io/github/percati/lenguapp/presentacion/VerbosReferenciaTe
 
 **El total de la vista no se mueve:** quitar una entrada que además fusionaba resta una referencia y una colisión a la vez, así que inglés sigue en 819 (559 + 338 − 78) y alemán en 585. Lo único que cambió son los dos números intermedios.
 
-**Y hay una consecuencia de diseño:** `OBJETO_FINAL_EN` (la segunda clave de fusión que quita `something`/`someone` del final) se agregó en la Ronda U **para un solo caso**, `to deal with`, y Code lo dijo así: «la probé contra los 339 verbos de referencia y solo `to deal with` coincide». Ese caso ya no existe, así que hoy es una rama sin ningún caso vivo. No es dañina —es un fallback detrás de dos claves que sí aciertan— pero no puede quedar sin explicación ni sin un test que la ejerza: en B1 va a volver a haber `base` que difieran del ítem de la ficha.
+**Y hay una consecuencia de diseño:** `OBJETO_FINAL_EN` (la segunda clave de fusión que quita `something`/`someone` del final) se agregó en la Ronda U **para un solo caso**, `to deal with`, y Code lo dijo así: «la probé contra los 339 verbos de referencia y solo `to deal with` coincide». Ese caso ya no existe, así que hoy es una rama sin ningún caso vivo. No es dañina —es un fallback detrás de dos claves que sí aciertan— pero no puede quedar sin un test que la ejerza con datos armados: en B1 va a volver a haber `base` que difieran del ítem de la ficha.
 
-### Icono y splash: lo que se puede hacer y lo que no
+### El arte: lo que llegó y lo que se podía hacer con ello
 
-Medido sobre los tres `.svg` que mandó Fer, contra la especificación de Android 12.
+Llegaron dos tandas de archivos. La segunda, que es la buena según Fer, **no son SVG**: son tres PNG metidos dentro de una etiqueta `<svg>` con un solo `<image>` y los datos en base64. Cero geometría vectorial. Y no son assets, son los renders de presentación:
 
-**El splash del sistema no admite una imagen de fondo.** Solo un **color sólido** más un icono centrado. Los dos renders a página completa que mandó Fer no son reproducibles como splash: lo único que llega es la L recortada. Los `.svg` ya vienen en formato de icono (288×288), así que eso está bien resuelto de origen.
+| archivo | qué es de verdad |
+|---|---|
+| `icono.svg` | PNG de 1254×1254 con un **render de un icono**: un squircle azul de 553×554 px flotando sobre fondo gris claro con sombra proyectada. El arte ocupa el 44 % del archivo |
+| `splash_1.svg` | PNG de 941×1672: el render **a pantalla completa** sobre papel blanco, solo la L |
+| `splash_2.svg` | PNG de 941×1672: el render **a pantalla completa** sobre azul noche, con las trece marcas de puntuación en órbita |
 
-**El icono del splash se recorta a un círculo**, no a un cuadrado: lienzo 288 dp, arte dentro de un círculo de 192 dp de diámetro (radio 96 desde el centro). Medido el radio máximo del trazo real, caps incluidos:
+(Ojo: respecto de la primera tanda, `splash_1` y `splash_2` quedaron **intercambiados** — ahora el 1 es el blanco y el 2 el azul.)
 
-| | radio máximo | margen |
-|---|---|---|
-| `splash_1.svg` | **87.5** | 8.5 dp |
-| `splash_2.svg` | **94.4** | 1.6 dp |
+**Por qué el vector queda descartado.** El arte vive de degradados, sombreado suave y textura de papel. `VectorDrawable` soporta degradados lineales y radiales, pero no este tipo de iluminación; la primera tanda de `.svg` era precisamente un intento de vectorizar estos renders, y es lo que Fer vio mal. **La decisión es bitmap**, que para un icono de launcher es práctica normal de Android.
 
-**`splash_2` no sirve como icono de splash, y no es cuestión de gusto.** Simulado el recorte circular: los dos pliegues pálidos (`#DEE7EC`, `#EDE6D9`) son el **fondo** del render blanco continuado, no parte del glifo, así que flotando sobre un color sólido se leen como dos cuchillas blancas atravesando la L, y los dos trazos exteriores quedan rebanados en el borde de la máscara por esos 1.6 dp. La L se vuelve ilegible. Funciona como composición a página completa, que es justamente lo que el splash no puede hacer.
+### Lo que se midió, y por qué el render no se puede usar tal cual
 
-**La paleta está diseñada para fondo oscuro.** Contraste del glifo contra los dos fondos de `fondo_papel`:
+- **El icono adaptativo recorta.** Si el squircle del render se toma como el lienzo de 108 dp, la L queda con un **radio máximo de 46.3 dp sobre una zona segura de 36**: se recortaría en cualquier launcher de máscara circular. El mockup está dibujado como un icono terminado, y un icono adaptativo necesita el arte más chico porque la máscara la pone el sistema. **La L tiene que ir al 78 % de lo que muestra el mockup**, y el squircle y su sombra se descartan: los dibuja el launcher.
+- **El icono del splash se recorta a un círculo** de 192 dp sobre un lienzo de 288, y **el splash no admite imagen de fondo**, solo un color sólido. Así que de los renders a pantalla completa lo único que llega es la L centrada.
+- **Las marcas en órbita no entran a un precio razonable.** Medido sobre `splash_2`: la L sola tiene radio 249 px y el conjunto con las trece marcas, 361. Llevar el conjunto al círculo útil deja la L en **91 × 103 dp**; llevar solo la L la deja en **132 × 149 dp**. La órbita cuesta el 30 % del tamaño del glifo, que es lo único que tiene que leerse en un arranque de medio segundo.
+- **La paleta es para fondo oscuro.** Contraste del glifo contra los dos valores de `fondo_papel`: el asta (`#B4D8F4`) **1.38** en claro contra 12.05 en oscuro; la cola (`#F4D6A9`) **1.29** contra 12.88. Con `fondo_papel` el splash en modo claro mostraría una L casi invisible. Por eso lleva **`#253C52` fijo** en los dos temas: es el azul del render del icono (media medida del squircle `[48 66 85]`, del fondo de `splash_2` `[27 48 72]`, con `#253C52` = `[37 60 82]` entre los dos), y hace que el splash y el icono del launcher sean la misma marca.
 
-| color | qué es | contra `#F7F6F2` (claro) | contra `#14171A` (oscuro) |
+### Los assets que van en este commit
+
+**La L es una sola, la de `splash_2`**, en el icono y en el splash. Los dos renders traen L distintas —la del squircle es más cuadrada, 299×363; la del splash tiene la cola larga, 343×386— y conviene que la marca sea una. Recortada del fondo con un *matte* por distancia al navy y el color desmultiplicado; comprobado componiéndola sobre `#253C52` y sobre blanco: sobre el navy no deja halo, sobre blanco sí un fleco gris tenue. **Eso significa que esta L solo puede mostrarse sobre el navy**, que es el único sitio donde se usa.
+
+| archivo | lienzo | la L mide | escala desde la fuente |
 |---|---|---|---|
-| `#B4D8F4` | asta de la L | **1.38** | 12.05 |
-| `#F4D6A9` | cola de la L | **1.29** | 12.88 |
-| `#D97A61` | terracota interior | 2.81 | 5.92 |
+| `mipmap-xxxhdpi/ic_launcher_foreground.webp` | 432 px (108 dp) | 175×197 px, radio 33 de 36 | 0.511, reducción |
+| `mipmap-xxhdpi/ic_launcher_foreground.webp` | 324 px (108 dp) | 132×148 px | 0.383, reducción |
+| `drawable-xxhdpi/splash_l.webp` | 864 px (288 dp) | 351×395 px, radio 88 de 96 | 1.023, prácticamente nativo |
+| `drawable/ic_launcher_background.xml` | 108 dp | — | `#253C52` plano, vector |
 
-Con `windowSplashScreenBackground` en `fondo_papel`, **en modo claro el splash mostraría una L casi invisible**: solo se vería la astilla terracota. Por eso el splash lleva **su propio fondo fijo `#253C52`** —el azul noche que `icono.svg` ya trae como fondo— en claro y en oscuro: es la decisión más barata, hace que el icono del launcher y el splash sean la misma marca, y es lo que muestran los tres renders.
+WebP sin pérdida porque es un 35 % más chico que PNG con el mismo resultado (119 KB contra 187 KB en total). `minSdk = 26`, así que los iconos adaptativos son nativos y **no hace falta ningún respaldo de PNG por densidad**.
 
-**El icono adaptativo entra sin tocar nada:** radio máximo del arte 32.9 sobre una zona segura de radio 36. Simulado bajo las tres máscaras de launcher (círculo, squircle, cuadrado), se lee bien en las tres.
-
-### Los tres vector drawables van en este parche, ya verificados
-
-`VectorDrawable` no tiene `<circle>` ni `<rect>`, y `splash_1.svg` trae **12 círculos** e `icono.svg` un `rect`. Convertidos a `path` (cada círculo, dos arcos `a`) y verificados **renderizando el original y el reconstruido y comparándolos píxel a píxel**:
-
-- `ic_launcher_foreground.xml` (6 paths, de `icono.svg` sin su fondo): **0 píxeles de diferencia**.
-- `splash_l.xml` (21 paths, de `splash_1.svg`): 639 píxeles de 1 048 576 (0.06 %), **máximo 17/255 por canal**, todos en el borde de los doce círculos convertidos. Antialiasing del arco contra el círculo nativo; geometría idéntica.
-- `ic_launcher_background.xml`: el `#253C52` como path.
+**El techo de calidad y de dónde viene.** El splash sale a xxhdpi (864 px) porque a esa densidad la escala es 1.023 —resolución nativa, sin detalle inventado—; en un teléfono xxxhdpi el sistema lo amplía 1.33× en tiempo de ejecución, que no es peor que ampliarlo acá. La fuente son 343×386 px útiles de un render de 941×1672, y eso es todo lo que hay. **Si alguna vez se quiere arte sin ese techo, lo que hace falta no es «un SVG» sino el glifo a 1024 px o más con fondo transparente**, o el archivo vectorial de origen si existe.
 
 ### Lo del splash aleatorio: no se puede, y además no hay dos
 
-Fer propuso dejar los dos splashes y alternarlos al azar. **El tema del splash lo resuelve el sistema antes de que corra una sola línea de la app** —por eso existe `postSplashScreenTheme`, al que `installSplashScreen()` salta *después*—, así que no hay dónde elegir. El rodeo conocido (varios `activity-alias` y `setComponentEnabledSetting`) persiste estado fuera de la app y hace parpadear el icono del launcher: no va en este proyecto. Una segunda pantalla de carga dibujada por Compose sí se podría alternar, pero agrega demora a una app cuyo punto es abrirla y ver la semana.
+El tema del splash lo resuelve el sistema **antes de que corra una sola línea de la app** —por eso existe `postSplashScreenTheme`, al que `installSplashScreen()` salta *después*—, así que no hay dónde elegir. El rodeo conocido (varios `activity-alias` y `setComponentEnabledSetting`) persiste estado fuera de la app y hace parpadear el icono del launcher: no va en este proyecto. Una segunda pantalla de carga dibujada por Compose sí se podría alternar, pero agrega demora a una app cuyo punto es abrirla y ver la semana.
 
-Y por lo de arriba **no hay dos splashes usables, hay uno**. `splash_2` tiene su lugar como ilustración, no como icono: la cabecera de «Acerca de» es donde se la mira de verdad y no cuesta arranque. Si alguna vez hace falta variedad en el splash, el camino honesto es derivarla de la **semana ISO** —el único dato que la app ya lee— y no de un azar, pero eso necesita primero una pantalla de carga propia, que hoy no conviene.
+Y por lo de arriba **no hay dos splashes, hay un glifo y dos composiciones a pantalla completa**, y las composiciones son justo lo que el splash no puede mostrar. El render blanco y el de la órbita tienen su lugar como ilustración —la cabecera de «Acerca de» es donde se los mira de verdad y no cuestan arranque—, no como icono. Si alguna vez hace falta variedad en el splash, el camino honesto es derivarla de la **semana ISO**, el único dato que la app ya lee, y no de un azar; pero eso necesita primero una pantalla de carga propia, que hoy no conviene.
 
 ### Deuda menor, anotada
 

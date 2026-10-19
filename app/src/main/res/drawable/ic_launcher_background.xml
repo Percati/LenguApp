@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Fondo del icono adaptativo (Ronda V): el azul noche de icono.svg. Va aparte del primer plano porque un icono
-     adaptativo son dos capas; el launcher recorta la suya con la mascara del dispositivo (circulo, squircle, cuadrado). -->
+<!-- Fondo del icono adaptativo (Ronda V): el azul noche de la marca, plano. Va aparte del primer plano porque un
+     icono adaptativo son dos capas, y el launcher recorta la suya con la mascara del dispositivo. Plano a proposito:
+     el render original trae un degradado y un brillo interior muy suaves (media [48 66 85] contra el [37 60 82] de
+     este color), que la mascara y la sombra que dibuja el propio launcher vuelven invisibles. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
