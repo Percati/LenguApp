@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Icono adaptativo (Ronda V). minSdk = 26, asi que es NATIVO en todo el rango: no hay PNG cuadrados de respaldo ni un
+    ic_launcher bitmap suelto, y no hacen falta mas carpetas que esta. Fondo plano #253C52 (vector) y primer plano en bitmap
+    (xxhdpi y xxxhdpi; el sistema reduce solo para las densidades de abajo; ampliar desde la fuente que hay no agrega detalle).
+    El primer plano es bitmap y no vector a proposito: el arte original son renders con degradado, sombreado suave y textura de
+    papel, que un VectorDrawable no puede reproducir. La L ocupa un radio de 33 dp sobre una zona segura de 36 dp, asi que no se
+    recorta con ninguna mascara (circulo, squircle, cuadrado).
+
+    HUECO DOCUMENTADO, a proposito: falta la capa monochrome (iconos tematicos de Android 13). La L vive de tres colores superpuestos
+    con sombreado; aplanada a una tinta hay que decidir que forma sobrevive, y eso lo mira Fer. Cuando se decida, va aca como
+    una capa monochrome apuntando a un drawable de una sola tinta.
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@drawable/ic_launcher_background" />
+    <foreground android:drawable="@mipmap/ic_launcher_foreground" />
+</adaptive-icon>

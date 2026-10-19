@@ -33,8 +33,7 @@ class SplashRecursosTest {
         val vacio = res("drawable/splash_vacio.xml")
         assertTrue(vacio.contains("@android:color/transparent"))
         assertFalse("no se inventa un logo", vacio.contains("<path") || vacio.contains("<vector") || vacio.contains("bitmap"))
-        // y el manifest no declara un icono de lanzador inventado
-        assertFalse(manifest().contains("android:icon="))
+        // (el manifest ya declara el icono adaptativo desde la Ronda V: ver IconoAdaptativoTest)
     }
 
     @Test
