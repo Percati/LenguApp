@@ -2186,3 +2186,58 @@ Cinco commits sobre `1059dfe3` (el parche de Overview con los cuatro assets esta
 **Lo que no pude comprobar sin un teléfono (el APK de debug va justamente para eso):** (1) el icono en el launcher bajo **cada máscara** real (círculo, squircle, cuadrado, gota) y la L sin recorte; (2) el splash **en los dos temas**: que el fondo `#253C52` sea el mismo, que la L se vea entera dentro del círculo de 192 dp y su tamaño; (3) que no se vea un **halo claro** alrededor de la L sobre el azul: al abrir `splash_l.webp` sobre fondo blanco se nota un borde claro muy fino en el contorno del glifo (el render original traía un borde); sobre `#253C52` podría verse como un filo luminoso; (4) en Android 11 y anteriores el splash sale por el camino de compatibilidad de `core-splashscreen` (no por el nativo de Android 12) y la L puede verse distinta de tamaño; (5) que el icono temático de Android 13 (sin capa monocromática) no quede feo: el sistema usa el adaptativo tal cual.
 
 **Decisiones donde el prompt no cerraba:** (1) el test de `hören` pasa a estricto; (2) `SplashRecursosTest` se reescribió entero porque sus tres tests describían el placeholder; (3) la Tarea 5 es solo la propuesta de arriba; (4) las capas `<monochrome>` y las densidades de más, ni generadas ni preparadas.
+
+## 77. Verificación de la Ronda V, el halo descartado y un test que fija un pendiente (Overview, 20-oct-2026)
+
+Verificación independiente de los cinco commits de la Ronda V, más las seis guías a 0.4.5.
+
+### Lo que está bien
+
+**Los tres números de la tarea 1 coinciden con mi propia medición**, hechos sobre los assets reales: DE 160 referencias / 45 colisiones / 470 → 585, EN 338 / 78 / 559 → 819. El build está destrabado.
+
+**Los tests reescritos son del tipo correcto.** Los dos de `deal with` pasaron a datos armados (`to blorp with` contra el ítem `to blorp with something`, y una referencia que desacuerda en clase con su núcleo), que es lo que prueba el mecanismo sin depender de qué verbos haya en la tabla este mes. Y el de `hören` dejó de tener el `if` que lo hacía pasar en silencio si el dato cambiaba: ahora exige que el núcleo sea puro, que su clase sea `mit-Praposition`, que la referencia diga `simple`, que al fusionar mande la del núcleo y que las colocaciones no se pierdan. Es más estricto que antes de la ronda.
+
+**El splash y el icono están cableados como se pidió.** `fondo_splash` (`#253C52`) existe solo en `values/colors.xml` y `Theme.LenguApp.Splash` solo en `values/themes.xml`, así que es el mismo en claro y en oscuro por construcción, no por repetición. Sin `windowSplashScreenIconBackgroundColor`, sin animación, `splash_vacio.xml` borrado. El icono en `mipmap-anydpi-v26` con `icon` y `roundIcon`, sin respaldo heredado y sin densidades de más.
+
+**El resto, en verde:** 606 fichas / 0 problemas, R1–R11 con 0 problemas en 240 fichas A2/B1, `diff -rq` 0 diferencias, `aplicar_verbos.py` 0 packs con diferencias y 0 errores, `--autotest` 2 casos 0 fallos, índice de audio al día, `INTERNET` = 1, `versionName` 0.4.5 / `versionCode` 20.
+
+### El halo del splash: descartado, medido
+
+Code marcó como no comprobable «un posible halo claro fino alrededor de la L sobre el azul», que había visto al abrir `splash_l.webp` sobre blanco. **No hay halo sobre el azul, y es medible.** Compuesto el asset sobre `#253C52` exacto, el anillo de 3 px inmediatamente por fuera del glifo da **`[37.1 60.0 82.0]`** contra el `[37 60 82]` del fondo: una desviación por debajo de 0.1/255.
+
+Lo que Code vio es lo que FALTANTES 75 ya documenta: el *matte* se hizo por distancia al navy y el color se desmultiplicó, así que los píxeles del borde solo reconstruyen bien sobre ese fondo. **Sobre blanco deja un fleco gris tenue y sobre el navy no deja nada**, y el navy es el único sitio donde el asset se usa. No hay nada que arreglar; lo que no hay que hacer es poner esta L sobre cualquier otro fondo.
+
+### Un test que fija un pendiente en vez de vigilar una regresión
+
+`IconoAdaptativoTest` tiene dos afirmaciones que, en los dos `.xml` del icono, exigen que **el hueco del monocromo siga abierto**:
+
+```kotlin
+assertFalse("$nombre: sin <monochrome> (hueco documentado, lo decide Fer)", x.contains("<monochrome"))
+assertTrue("$nombre: el hueco del monocromo esta documentado", x.contains("HUECO DOCUMENTADO"))
+```
+
+El día que Fer decida el arte monocromo, quien lo agregue se encuentra con **dos tests rojos cuyos mensajes dicen que la capa no va**, y el segundo además obliga a dejar el comentario tal cual, así que tampoco se puede limpiar. Un test sirve para impedir una regresión, no para impedir que se complete algo que está anotado como pendiente; el comentario de los dos `.xml` ya documenta el hueco, que es donde corresponde. **Las dos afirmaciones se sacan** en la próxima ronda que toque `app/`; no justifica una ronda propia.
+
+La afirmación del conjunto de carpetas `mipmap` tiene la misma forma pero es defendible —vigila que no aparezcan densidades sueltas ni un respaldo heredado—; lo único que convendría es que el mensaje diga «si agregás una densidad, actualizá esta lista» en vez de dar a entender que está prohibido.
+
+### Lo que queda sin comprobar, y cuál importa
+
+De las cuatro cosas que Code no pudo mirar sin teléfono, tres las contesta el APK en cuanto Fer lo instale (el icono bajo su launcher, el splash en los dos temas, el tamaño de la L en el círculo) y el halo queda contestado arriba. Queda una abierta de verdad:
+
+**El splash en Android 8 a 11 (API 26–30), que sale por el camino de compatibilidad de `core-splashscreen`.** La documentación de Android no especifica cómo se dibuja el icono en ese camino —ni si se enmascara, ni si se escala—, y recomienda explícitamente comprobarlo en un dispositivo. Lo que sí se puede decir es que **el arte es seguro bajo las dos lecturas de la especificación**: los docs dan 288 dp de lienzo con 192 de círculo útil para un icono estático y 432 con 288 visible para un AVD, y las dos dejan el arte en los **dos tercios interiores** del lienzo, que es el invariante que `splash_l` respeta (radio 88 de 96). Si en un emulador de API 30 se viera mal igual, el arreglo es partir el tema del splash en `values-v31`, no tocar el asset. **Es un rato de emulador, no una ronda de trabajo.**
+
+### Deudas, con los números puestos al día
+
+Varias cifras que se venían repitiendo estaban viejas o no eran deudas:
+
+- **549 `redemittel` sin `categoriasUso`** de 6172, no 273: la cifra vieja era de antes del contenido de 2027.
+- **Los `*x*` sin « » NO son una deuda.** Son 31 601 en los assets de hoy, pero FALTANTES 780 y 1056 ya cierran la discusión: en este repo `*x*` es también énfasis en el idioma de destino, así que la mayoría no son fragmentos extranjeros, y la decisión tomada fue dejarlo. Sacarlo de la lista de pendientes.
+- **`ein Hobby nachgehen` sigue mal, y son cinco apariciones**, no una: `nachgehen` rige dativo, así que va `einem Hobby nachgehen`. Está mal en `de-B2-2027-T12-1`, `-2`, `-3`, `-4` y en `contenido/verbos/de.json`; la forma correcta ya existe en otros tres sitios, así que el contenido se contradice a sí mismo. Es trabajo de Verbos o de Packs, y es de minutos.
+- **Falta el icono de 512×512 de la tienda** y las capturas. Ahora es barato: el render de 1254×1254 sirve de origen.
+- **Nadie revisó fr / it / pt** de las 498 entradas de referencia de verbos, ni de buena parte del contenido.
+- `docs/guia-testers-lenguapp.pdf` sigue duplicando a `-es.pdf` (ver FALTANTES 75 y 1537).
+- **`roundIcon` y el icono adaptativo:** `mipmap-anydpi-v26/ic_launcher.xml` e `ic_launcher_round.xml` son **byte a byte idénticos**, lo que es un riesgo de desincronización barato (se cambia uno y se olvida el otro; por ahora el test mira los dos). Antes de simplificarlo hay que comprobar si algún launcher todavía necesita `roundIcon` cuando ya hay icono adaptativo — no lo verifiqué, así que queda anotado y no propuesto.
+
+### El proceso, que ya costó un build rojo
+
+El choque entre la Ronda U y el parche de Verbos (FALTANTES 75) no fue un descuido: las dos conversaciones trabajaron sobre el mismo clon, cada una respetando su alcance, y el resultado fue rojo. **Mientras sigan compartiendo carpeta va a volver a pasar**, y la próxima vez puede no ser un test que falla ruidosamente sino contenido que se pisa en silencio. Lo que hace falta es una carpeta por conversación, o una conversación por vez. Es la tercera vez que queda anotado.

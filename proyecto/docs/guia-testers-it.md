@@ -1,4 +1,4 @@
-# LenguApp · guida rapida per chi prova l'app (versione 0.4.4)
+# LenguApp · guida rapida per chi prova l'app (versione 0.4.5)
 
 **Che cos'è.** Un'app per praticare una lingua una settimana alla volta (tedesco o inglese, da A2 a C2). **Non è un corso:** serve a fissare quello che hai già imparato in uno. Funziona senza internet, senza account e senza raccogliere dati. È in prova, e la tua opinione aiuta molto.
 

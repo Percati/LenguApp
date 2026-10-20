@@ -1,4 +1,4 @@
-# LenguApp · quick guide for testers (version 0.4.4)
+# LenguApp · quick guide for testers (version 0.4.5)
 
 **What it is.** An app to practise a language one week at a time (German or English, A2 to C2). **It is not a course:** it's for consolidating what you already learned in one. It works with no internet, no account and no data collection. It's in testing, and your feedback helps a lot.
 
